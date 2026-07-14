@@ -57,6 +57,30 @@ evidence:
     visual_status: transcript_inferred
     review_status: approved
     source: {video_id: YUEaL2HiPIE, start_ms: 30866, end_ms: 39366, url: "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=30s", segment_ids: ["YUEaL2HiPIE:00005", "YUEaL2HiPIE:00006"]}
+  - id: loop-expanding-arcs-7
+    evidence_type: explanation
+    excerpt: The fingers create an arc, leading the arm, and then the body joins to create a larger arc.
+    reason: Describes a small-to-large coordination sequence for a forehand loop against backspin.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: 0E67TotjJFE, start_ms: 173200, end_ms: 182033, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=173s", segment_ids: ["0E67TotjJFE:00038", "0E67TotjJFE:00039"]}
+  - id: body-drives-arm-8
+    evidence_type: correction
+    excerpt: Initiate with body rotation; the arm should synchronize with that movement.
+    reason: Directly corrects an independently moving arm in the forehand loop.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: Cq6MbP6TEdc, start_ms: 32633, end_ms: 50766, url: "https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=32s", segment_ids: ["Cq6MbP6TEdc:00007", "Cq6MbP6TEdc:00008", "Cq6MbP6TEdc:00010"]}
+  - id: feet-to-waist-loop-chain-9
+    evidence_type: explanation
+    excerpt: The feet, legs, hips, and waist rotate together; the body drives the arm to execute the loop.
+    reason: Supplies a complete lower-body-to-arm kinetic-chain cue from a beginner forehand lesson.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: I99BjizeWeE, start_ms: 67766, end_ms: 83366, url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=67s", segment_ids: ["I99BjizeWeE:00028", "I99BjizeWeE:00029", "I99BjizeWeE:00031"]}
 relations:
   - relation_type: used_with
     target_concept_id: concept-serve-action-decomposition

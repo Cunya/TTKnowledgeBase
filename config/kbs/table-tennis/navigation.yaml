@@ -64,12 +64,12 @@ sections:
                   - id: forehand-loop-contact
                     label: Contact and racket path
                     description: Contact location, racket angle, brushing direction, and forward movement.
-                    concept_ids: [concept-forehand-loop-swing-path]
+                    concept_ids: [concept-forehand-loop-swing-path, concept-brush-around-the-ball]
                     children: []
                   - id: forehand-loop-acceleration
                     label: Timing, power, and release
                     description: Coordinate the body and arm, wait for the ball, accelerate late, and finish compactly.
-                    concept_ids: [concept-forehand-loop-timing, concept-forehand-loop-power-generation]
+                    concept_ids: [concept-forehand-loop-timing, concept-relax-then-accelerate-at-contact, concept-weight-transfer-through-stroke, concept-forehand-loop-power-generation]
                     children: []
               - id: forehand-loop-learning
                 label: Learning and correction
@@ -109,7 +109,7 @@ sections:
           - id: backhand-flick
             label: Backhand flick
             description: Backhand over-table attack timing, spacing, and spin contact.
-            concept_ids: [concept-backhand-flick-on-rise, concept-backhand-swing-arc-spacing, concept-loose-grip-backhand-friction]
+            concept_ids: [concept-backhand-flick-mechanics, concept-backhand-flick-on-rise, concept-backhand-swing-arc-spacing, concept-loose-grip-backhand-friction]
             children: []
       - id: serve
         label: Serve
@@ -129,12 +129,12 @@ sections:
       - id: body-organization
         label: Body organization
         description: Ground connection, usable spacing, and coordination through the kinetic chain.
-        concept_ids: [concept-loaded-legs, concept-body-hand-synchronization, concept-loose-back-tight-release]
+        concept_ids: [concept-loaded-legs, concept-weight-transfer-through-stroke, concept-body-hand-synchronization, concept-relax-then-accelerate-at-contact, concept-loose-back-tight-release]
         children: []
       - id: racket-ball-interaction
         label: Racket-ball interaction
         description: Reading the ball and controlling where, when, and how the racket contacts it.
-        concept_ids: [concept-ball-feel, concept-contact-point]
+        concept_ids: [concept-ball-feel, concept-contact-point, concept-contact-zone-on-ball, concept-brush-around-the-ball]
         children: []
   - id: training
     label: Training and drills
@@ -165,4 +165,9 @@ sections:
         label: Attack selection
         description: Match loop height, spin, pace, and risk to the incoming ball and tactical situation.
         concept_ids: []
+        children: []
+      - id: opponent-adaptation
+        label: Opponent adaptation
+        description: Change rhythm, spin, depth, and stroke length to disrupt the opponent's preferred pattern.
+        concept_ids: [concept-adapt-rally-rhythm-to-opponent]
         children: []

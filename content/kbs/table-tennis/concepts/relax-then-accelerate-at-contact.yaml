@@ -1,0 +1,56 @@
+id: concept-relax-then-accelerate-at-contact
+slug: relax-then-accelerate-at-contact
+label: Relax, then accelerate at contact
+aliases: [late-stage acceleration, relaxed lead-in, soft-to-fast release]
+short_definition: Stay loose during preparation and the early forward swing, then accelerate briefly as the racket reaches the ball.
+detailed_definition: Late acceleration preserves freedom in the arm and racket head while concentrating force near contact. Starting tense or applying force from the beginning can stiffen the stroke and disturb timing. The principle appears across both forehand and backhand technique.
+concept_type: timing-cue
+facets: {category: [stroke, fundamentals], side: [neutral], level: [intermediate]}
+difficulty: intermediate
+review_status: approved
+evidence:
+  - id: relaxed-until-contact-1
+    evidence_type: explanation
+    excerpt: Stay relaxed before touching the ball; accelerate and apply force only at contact.
+    reason: Separates the loose lead-in from the brief force-producing phase.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: dWZw3A0X-4A, start_ms: 539120, end_ms: 565000, url: "https://www.youtube.com/watch?v=dWZw3A0X-4A&t=539s", segment_ids: ["dWZw3A0X-4A:00179", "dWZw3A0X-4A:00180", "dWZw3A0X-4A:00181", "dWZw3A0X-4A:00182", "dWZw3A0X-4A:00183", "dWZw3A0X-4A:00186", "dWZw3A0X-4A:00187", "dWZw3A0X-4A:00188", "dWZw3A0X-4A:00189"]}
+  - id: late-stage-acceleration-2
+    evidence_type: explanation
+    excerpt: Apply force just as you are about to contact the ball—that is late-stage acceleration.
+    reason: Names the timing principle and locates acceleration relative to contact.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source: {video_id: qLT0MvwitZc, start_ms: 83533, end_ms: 106766, url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=83s", segment_ids: ["qLT0MvwitZc:00020", "qLT0MvwitZc:00024"]}
+  - id: relaxed-loop-progression-3
+    evidence_type: drill
+    excerpt: First get the feeling of a relaxed loop, then gradually add speed.
+    reason: Turns the timing principle into a progressive practice method.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: XfWXrGTlW5M, start_ms: 264433, end_ms: 287866, url: "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=264s", segment_ids: ["XfWXrGTlW5M:00063", "XfWXrGTlW5M:00068"]}
+  - id: slow-fast-friction-rhythm-4
+    evidence_type: explanation
+    excerpt: Use a relaxed backswing, then explosive acceleration at contact; accelerating too early prevents gripping the ball.
+    reason: Connects late acceleration to both pace change and effective friction against backspin.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: 0E67TotjJFE, start_ms: 457133, end_ms: 499900, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=457s", segment_ids: ["0E67TotjJFE:00102", "0E67TotjJFE:00104", "0E67TotjJFE:00108"]}
+relations:
+  - relation_type: used_with
+    target_concept_id: concept-forehand-loop-timing
+    confidence: 0.96
+    review_status: approved
+    sources:
+      - {video_id: qLT0MvwitZc, start_ms: 83533, end_ms: 106766, url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=83s", segment_ids: ["qLT0MvwitZc:00020", "qLT0MvwitZc:00024"]}
+  - relation_type: related_to
+    target_concept_id: concept-loose-back-tight-release
+    confidence: 0.9
+    review_status: approved
+    sources:
+      - {video_id: XfWXrGTlW5M, start_ms: 264433, end_ms: 287866, url: "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=264s", segment_ids: ["XfWXrGTlW5M:00063", "XfWXrGTlW5M:00068"]}

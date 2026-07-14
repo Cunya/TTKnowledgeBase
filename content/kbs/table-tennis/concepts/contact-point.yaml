@@ -50,4 +50,44 @@ evidence:
     visual_status: transcript_inferred
     review_status: approved
     source: {video_id: OcPo7MgSNVM, start_ms: 127466, end_ms: 135066, url: "https://www.youtube.com/watch?v=OcPo7MgSNVM&t=127s", segment_ids: ["OcPo7MgSNVM:00027", "OcPo7MgSNVM:00028"]}
+  - id: stable-body-at-contact-5
+    evidence_type: explanation
+    excerpt: Find the optimal contact point because a proper stroke requires a stable body.
+    reason: Connects usable contact position with arriving early enough to remain stable through the stroke.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source: {video_id: YUEaL2HiPIE, start_ms: 368233, end_ms: 377000, url: "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=368s", segment_ids: ["YUEaL2HiPIE:00077", "YUEaL2HiPIE:00078"]}
+  - id: backspin-after-peak-6
+    evidence_type: explanation
+    excerpt: For amateurs against backspin, let the ball start to drop after its peak.
+    reason: Gives a clear bounce-phase contact cue for looping backspin.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source: {video_id: 0E67TotjJFE, start_ms: 298933, end_ms: 317166, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=298s", segment_ids: ["0E67TotjJFE:00067", "0E67TotjJFE:00070"]}
+  - id: backhand-centered-contact-7
+    evidence_type: explanation
+    excerpt: Keep backhand contact in front of the body and do not let it drift too far from your center.
+    reason: "Adds side-specific spacing limits: too close jams the stroke, while too far removes power."
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: 3kC8KEl3iow, start_ms: 104200, end_ms: 118040, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=104s", segment_ids: ["3kC8KEl3iow:00039", "3kC8KEl3iow:00040", "3kC8KEl3iow:00041", "3kC8KEl3iow:00042", "3kC8KEl3iow:00043"]}
+  - id: close-table-rise-contact-8
+    evidence_type: explanation
+    excerpt: Close to the table, take the ball on the rise or at the peak; the rise supports the front-point flick.
+    reason: Explains how table distance constrains backhand contact timing.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: BToLYdKLIMM, start_ms: 414880, end_ms: 454520, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=414s", segment_ids: ["BToLYdKLIMM:00153", "BToLYdKLIMM:00154", "BToLYdKLIMM:00155", "BToLYdKLIMM:00166", "BToLYdKLIMM:00167"]}
+  - id: forehand-contact-near-thigh-9
+    evidence_type: explanation
+    excerpt: Let the ball come close to the front of your leg before striking so the body can transfer power.
+    reason: Adds a forehand-loop spatial reference that applies independently of bounce phase.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: V2YGbh829eU, start_ms: 406833, end_ms: 421000, url: "https://www.youtube.com/watch?v=V2YGbh829eU&t=406s", segment_ids: ["V2YGbh829eU:00094", "V2YGbh829eU:00095"]}
 relations: []

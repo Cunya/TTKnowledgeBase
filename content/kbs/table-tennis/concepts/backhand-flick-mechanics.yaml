@@ -1,0 +1,42 @@
+id: concept-backhand-flick-mechanics
+slug: backhand-flick-mechanics
+label: Backhand flick mechanics
+aliases: [finger-powered backhand flick, racket-head drop flick]
+short_definition: Drop the racket head and use coordinated thumb and middle-finger pressure to create a compact, spin-capable backhand flick.
+detailed_definition: "Starting with the racket head already raised limits the stroke to a drive-like push. Lowering the head gives the middle finger room to lift while the thumb and index finger guide forward pressure. Contact timing still depends on space: close to the table favors the rise, while backing away restores the option to contact near the peak."
+concept_type: stroke-mechanic
+facets: {category: [stroke], side: [backhand], level: [intermediate]}
+difficulty: intermediate
+review_status: approved
+evidence:
+  - id: flick-thumb-middle-finger-1
+    evidence_type: explanation
+    excerpt: Backhand flick power comes from the thumb and middle finger rather than the index finger.
+    reason: Identifies the primary finger-force mechanism for the stroke.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source: {video_id: BToLYdKLIMM, start_ms: 54800, end_ms: 69920, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=54s", segment_ids: ["BToLYdKLIMM:00019", "BToLYdKLIMM:00020", "BToLYdKLIMM:00021", "BToLYdKLIMM:00022", "BToLYdKLIMM:00023"]}
+  - id: flick-racket-head-drop-2
+    evidence_type: correction
+    excerpt: Drop the racket head before rotating through to gain spin, speed, and variation.
+    reason: Contrasts a flexible flick preparation with a raised-head, drive-only action.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: BToLYdKLIMM, start_ms: 24480, end_ms: 47120, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=24s", segment_ids: ["BToLYdKLIMM:00007", "BToLYdKLIMM:00008", "BToLYdKLIMM:00009", "BToLYdKLIMM:00010", "BToLYdKLIMM:00011", "BToLYdKLIMM:00012", "BToLYdKLIMM:00013", "BToLYdKLIMM:00014"]}
+  - id: flick-space-restores-peak-3
+    evidence_type: explanation
+    excerpt: Backing away about an arm's length restores the choice between taking the flick on the rise or at the peak.
+    reason: Connects stroke timing options to available working room.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: BToLYdKLIMM, start_ms: 478479, end_ms: 496440, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=478s", segment_ids: ["BToLYdKLIMM:00178", "BToLYdKLIMM:00179", "BToLYdKLIMM:00180", "BToLYdKLIMM:00181", "BToLYdKLIMM:00182", "BToLYdKLIMM:00183"]}
+relations:
+  - relation_type: used_with
+    target_concept_id: concept-backhand-flick-on-rise
+    confidence: 0.98
+    review_status: approved
+    sources:
+      - {video_id: BToLYdKLIMM, start_ms: 478479, end_ms: 496440, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=478s", segment_ids: ["BToLYdKLIMM:00178", "BToLYdKLIMM:00179", "BToLYdKLIMM:00180", "BToLYdKLIMM:00181", "BToLYdKLIMM:00182", "BToLYdKLIMM:00183"]}

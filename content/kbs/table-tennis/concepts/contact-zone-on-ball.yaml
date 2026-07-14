@@ -1,0 +1,34 @@
+id: concept-contact-zone-on-ball
+slug: contact-zone-on-ball
+label: Contact zone on the ball
+aliases: [ball contact region, contact point on the ball, contact zone map]
+short_definition: Choose which region of the ball the racket touches to control the direction and mixture of spin.
+detailed_definition: This is distinct from the player's spatial contact point. Touching lower regions favors backspin, while moving toward the back or side changes the spin mixture. A repeatable serve action still produces different outcomes when its ball-contact zone changes.
+concept_type: contact-mechanic
+facets: {category: [fundamentals, stroke], side: [neutral], spin: [topspin, backspin, sidespin, no-spin], level: [intermediate]}
+difficulty: intermediate
+review_status: approved
+evidence:
+  - id: serve-contact-zone-map-1
+    evidence_type: explanation
+    excerpt: Bottom contact produces backspin; the back and side regions produce different spin mixtures.
+    reason: Maps several ball-contact regions to their resulting serve spin.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source: {video_id: csJgHR7Daog, start_ms: 481680, end_ms: 520520, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=481s", segment_ids: ["csJgHR7Daog:00206", "csJgHR7Daog:00209", "csJgHR7Daog:00210", "csJgHR7Daog:00211", "csJgHR7Daog:00212", "csJgHR7Daog:00213", "csJgHR7Daog:00214", "csJgHR7Daog:00215", "csJgHR7Daog:00216", "csJgHR7Daog:00217", "csJgHR7Daog:00218", "csJgHR7Daog:00219", "csJgHR7Daog:00220", "csJgHR7Daog:00221", "csJgHR7Daog:00222"]}
+  - id: vertical-contact-zone-scale-2
+    evidence_type: explanation
+    excerpt: Bottom contact gives maximum spin; middle-lower gives strong spin; middle or upper gives minimum spin.
+    reason: Provides a compact vertical scale for comparing contact regions on the ball.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source: {video_id: csJgHR7Daog, start_ms: 541520, end_ms: 553120, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=541s", segment_ids: ["csJgHR7Daog:00232", "csJgHR7Daog:00233", "csJgHR7Daog:00234", "csJgHR7Daog:00235"]}
+relations:
+  - relation_type: related_to
+    target_concept_id: concept-contact-point
+    confidence: 0.95
+    review_status: approved
+    sources:
+      - {video_id: csJgHR7Daog, start_ms: 481680, end_ms: 520520, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=481s", segment_ids: ["csJgHR7Daog:00206", "csJgHR7Daog:00209", "csJgHR7Daog:00210", "csJgHR7Daog:00211", "csJgHR7Daog:00212", "csJgHR7Daog:00213", "csJgHR7Daog:00214", "csJgHR7Daog:00215", "csJgHR7Daog:00216", "csJgHR7Daog:00217", "csJgHR7Daog:00218", "csJgHR7Daog:00219", "csJgHR7Daog:00220", "csJgHR7Daog:00221", "csJgHR7Daog:00222"]}

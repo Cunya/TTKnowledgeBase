@@ -26,6 +26,14 @@ evidence:
       end_ms: 22000
       url: https://www.youtube.com/watch?v=demoTT00001&t=12s
       segment_ids: ["demoTT00001:00000", "demoTT00001:00001"]
+  - id: ready-position-shoulder-alignment-2
+    evidence_type: explanation
+    excerpt: In the ready position, your left shoulder is forward.
+    reason: Adds a real lesson cue for neutral shoulder alignment before the forehand backswing.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: Cq6MbP6TEdc, start_ms: 240900, end_ms: 245800, url: "https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=240s", segment_ids: ["Cq6MbP6TEdc:00059"]}
 relations:
   - relation_type: prerequisite_of
     target_concept_id: concept-forehand-loop

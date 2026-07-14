@@ -53,6 +53,30 @@ evidence:
     visual_status: not_visual
     review_status: approved
     source: {video_id: YUEaL2HiPIE, start_ms: 414200, end_ms: 427433, url: "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=414s", segment_ids: ["YUEaL2HiPIE:00087", "YUEaL2HiPIE:00088", "YUEaL2HiPIE:00089"]}
+  - id: backhand-wide-stance-center-6
+    evidence_type: explanation
+    excerpt: Widen the stance so the center of gravity can find balls across the backhand half.
+    reason: Explains how stance width reduces unnecessary foot movement during repeated backhands.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source: {video_id: 3kC8KEl3iow, start_ms: 36640, end_ms: 51040, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=36s", segment_ids: ["3kC8KEl3iow:00013", "3kC8KEl3iow:00014", "3kC8KEl3iow:00015", "3kC8KEl3iow:00016", "3kC8KEl3iow:00017", "3kC8KEl3iow:00018"]}
+  - id: backhand-shoulder-containment-7
+    evidence_type: correction
+    excerpt: Contain the shoulders inward on the backhand; opening them outward sends the ball wide.
+    reason: Connects upper-body organization to directional control.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: 3kC8KEl3iow, start_ms: 81360, end_ms: 102400, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=81s", segment_ids: ["3kC8KEl3iow:00032", "3kC8KEl3iow:00033", "3kC8KEl3iow:00034", "3kC8KEl3iow:00035", "3kC8KEl3iow:00036", "3kC8KEl3iow:00037", "3kC8KEl3iow:00038"]}
+  - id: backhand-spiral-rotation-8
+    evidence_type: drill
+    excerpt: Add a subtle left-side rotation—turn in, drive forward, and pull back as a small spiral.
+    reason: Extends the core-led backhand from a simple forward block into a spin-and-power action.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: 3kC8KEl3iow, start_ms: 147720, end_ms: 172360, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=147s", segment_ids: ["3kC8KEl3iow:00055", "3kC8KEl3iow:00056", "3kC8KEl3iow:00057", "3kC8KEl3iow:00058", "3kC8KEl3iow:00059", "3kC8KEl3iow:00060", "3kC8KEl3iow:00061", "3kC8KEl3iow:00062"]}
 relations:
   - relation_type: used_with
     target_concept_id: concept-body-hand-synchronization

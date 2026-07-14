@@ -49,6 +49,14 @@ evidence:
     visual_status: transcript_inferred
     review_status: approved
     source: {video_id: YUEaL2HiPIE, start_ms: 489300, end_ms: 501466, url: "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=489s", segment_ids: ["YUEaL2HiPIE:00105", "YUEaL2HiPIE:00106", "YUEaL2HiPIE:00107"]}
+  - id: anchored-loop-base-6
+    evidence_type: explanation
+    excerpt: Establish a solid base with your legs; the lower body must be stable when looping.
+    reason: Applies ground connection directly to maintaining a stable forehand-loop base.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: Cq6MbP6TEdc, start_ms: 106300, end_ms: 113233, url: "https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=106s", segment_ids: ["Cq6MbP6TEdc:00024", "Cq6MbP6TEdc:00025"]}
 relations:
   - relation_type: used_with
     target_concept_id: concept-body-hand-synchronization

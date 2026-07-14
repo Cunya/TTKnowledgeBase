@@ -164,6 +164,14 @@ evidence:
     review_status: approved
     source: {video_id: V__nqiNHeKE, start_ms: 267880, end_ms: 276360, url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=267s", segment_ids: ["V__nqiNHeKE:00100", "V__nqiNHeKE:00101", "V__nqiNHeKE:00102"]}
     spoken_context_end_ms: 293840
+  - id: loop-not-forward-drive-16
+    evidence_type: correction
+    excerpt: A forward push works for a forehand drive, but a loop must adjust the racket face and arm through the follow-through.
+    reason: Distinguishes loop mechanics from carrying drive mechanics unchanged into a higher-spin stroke.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: qLT0MvwitZc, start_ms: 651333, end_ms: 680566, url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=651s", segment_ids: ["qLT0MvwitZc:00146", "qLT0MvwitZc:00150"]}
 relations:
   - relation_type: used_with
     target_concept_id: concept-contact-point

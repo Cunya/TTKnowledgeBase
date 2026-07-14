@@ -1,0 +1,56 @@
+id: concept-brush-around-the-ball
+slug: brush-around-the-ball
+label: Brush around the ball
+aliases: [brushing the ball curvature, wrapping around the ball, curved brushing path]
+short_definition: Create friction by moving the racket along the ball's curved surface instead of pushing or lifting in a straight line.
+detailed_definition: The initial touch begins a short curved path across the ball. Fingers can lead the wrist and arm through that path, allowing the racket head to accelerate while maintaining tangential contact. The principle applies beyond one grip or stroke side.
+concept_type: contact-mechanic
+facets: {category: [stroke, fundamentals], side: [neutral], spin: [topspin], level: [intermediate]}
+difficulty: intermediate
+review_status: approved
+evidence:
+  - id: curved-brushing-path-1
+    evidence_type: explanation
+    excerpt: The initial contact begins the brush; the path then follows the ball's curve from one point to another.
+    reason: Defines friction as a path across the curved surface rather than a single impact point.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source: {video_id: 0E67TotjJFE, start_ms: 39233, end_ms: 76600, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=39s", segment_ids: ["0E67TotjJFE:00009", "0E67TotjJFE:00010", "0E67TotjJFE:00011", "0E67TotjJFE:00012", "0E67TotjJFE:00016"]}
+  - id: finger-led-brush-arc-2
+    evidence_type: explanation
+    excerpt: The fingers create the arc and lead the wrist and arm to accelerate the brush.
+    reason: Explains how the distal links initiate the curved racket-head action for both shakehand and penhold grips.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: 0E67TotjJFE, start_ms: 105033, end_ms: 162166, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=105s", segment_ids: ["0E67TotjJFE:00024", "0E67TotjJFE:00026", "0E67TotjJFE:00028", "0E67TotjJFE:00030", "0E67TotjJFE:00034", "0E67TotjJFE:00035"]}
+  - id: press-and-brush-spin-3
+    evidence_type: explanation
+    excerpt: Press and brush into the ball; only then can you generate spin.
+    reason: A second lesson supplies a compact application of friction at contact.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: V__nqiNHeKE, start_ms: 233800, end_ms: 240080, url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=233s", segment_ids: ["V__nqiNHeKE:00088", "V__nqiNHeKE:00089"]}
+  - id: shakehand-index-finger-down-4
+    evidence_type: explanation
+    excerpt: For shakehand, point the index finger down and rotate upward to create a fuller brushing arc.
+    reason: Adds a grip-specific preparation cue for wrapping around the ball instead of pushing sideways.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: 0E67TotjJFE, start_ms: 394733, end_ms: 423833, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=394s", segment_ids: ["0E67TotjJFE:00087", "0E67TotjJFE:00088", "0E67TotjJFE:00090", "0E67TotjJFE:00091", "0E67TotjJFE:00093"]}
+relations:
+  - relation_type: part_of
+    target_concept_id: concept-forehand-loop-swing-path
+    confidence: 0.94
+    review_status: approved
+    sources:
+      - {video_id: 0E67TotjJFE, start_ms: 39233, end_ms: 76600, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=39s", segment_ids: ["0E67TotjJFE:00009", "0E67TotjJFE:00010", "0E67TotjJFE:00011", "0E67TotjJFE:00012", "0E67TotjJFE:00016"]}
+  - relation_type: related_to
+    target_concept_id: concept-loose-grip-backhand-friction
+    confidence: 0.9
+    review_status: approved
+    sources:
+      - {video_id: V__nqiNHeKE, start_ms: 233800, end_ms: 240080, url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=233s", segment_ids: ["V__nqiNHeKE:00088", "V__nqiNHeKE:00089"]}
