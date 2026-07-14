@@ -8,7 +8,7 @@ interface Props {
 }
 
 const {
-  title = 'RallyGraph',
+  title = 'MomentGraph',
   description = 'Source-grounded concepts demonstrated by exact moments in video.',
   kbId,
 } = Astro.props;
@@ -22,23 +22,24 @@ const base = import.meta.env.BASE_URL;
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
-    <title>{title === 'RallyGraph' ? title : `${title} · RallyGraph`}</title>
+    <title>{title === 'MomentGraph' ? title : `${title} · MomentGraph`}</title>
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href={base} aria-label="RallyGraph home">
+      <a class="brand" href={base} aria-label="MomentGraph home">
         <span class="brand-mark">RG</span>
-        <span>RallyGraph</span>
+        <span>MomentGraph</span>
       </a>
       <nav aria-label="Primary navigation">
         <a href={kbId ? `${base}kb/${kbId}/concepts/` : base}>Knowledge bases</a>
         {kbId && <a href={`${base}kb/${kbId}/videos/`}>Videos</a>}
         <a href={`${base}methodology/`}>Method</a>
+        <a class="support-nav" href={`${base}support/`}>Support</a>
       </nav>
     </header>
     <main><slot /></main>
     <footer>
-      <p>Every knowledge item links back to its source moment. Independent educational project.</p>
+      <p>Every knowledge item links back to its source moment. Independent educational project. <a href={`${base}support/`}>Support its development</a>.</p>
     </footer>
   </body>
 </html>
