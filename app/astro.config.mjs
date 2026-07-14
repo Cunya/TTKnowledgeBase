@@ -5,7 +5,6 @@ const isProjectPages = process.env.GITHUB_ACTIONS === 'true' && repository && !r
 
 export default defineConfig({
   site: process.env.SITE_URL || 'https://example.github.io',
-  base: isProjectPages ? `/${repository}` : '/',
+  base: isProjectPages ? `/${repository}/` : '/',
   output: 'static',
 });
-
