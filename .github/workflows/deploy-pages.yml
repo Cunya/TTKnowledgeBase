@@ -23,9 +23,9 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
-      - run: pip install -e .
-      - run: python -m processors.cli demo --kb table-tennis
-      - run: python -m processors.cli validate --kb table-tennis --include-demo
+      - run: pip install -e ".[dev]"
+      - run: pytest
+      - run: ruff check .
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
@@ -37,6 +37,21 @@ jobs:
         working-directory: app
         env:
           SITE_URL: https://${{ github.repository_owner }}.github.io
+      - name: Prevent private artifacts from entering the site
+        shell: bash
+        run: |
+          if find app/dist -type f \( -iname '*.mp4' -o -iname '*.webm' -o -iname '*.mkv' -o -iname '*.mov' -o -iname '*.mp3' -o -iname '*.m4a' -o -iname '*.opus' -o -iname '*.wav' -o -iname '*.events.jsonl' -o -iname '*.response.json' -o -iname 'cookies*.txt' -o -iname '.env*' \) | grep -q .; then
+            echo "Private/media artifact found in Pages output"
+            exit 1
+          fi
+          if grep -R '"segments"[[:space:]]*:' app/dist; then
+            echo "Raw transcript segments found in Pages output"
+            exit 1
+          fi
+          if grep -R -E '(YTKB_WEBSHARE_PASSWORD|BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY|sk-[A-Za-z0-9_-]{20,})' app/dist; then
+            echo "Credential-like material found in Pages output"
+            exit 1
+          fi
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -26,3 +26,32 @@ Each KB is registered in `config/knowledge-bases.yaml` and owns matching folders
 To add another topic, add its registry entry, copy `config/kbs/table-tennis/` as a starting point, and create `content/kbs/<new-id>/concepts/`. All processing commands accept `--kb <new-id>`; publishing adds that corpus to the site catalog and generates isolated `/kb/<new-id>/` routes.
 
 See [how the pipeline works](docs/pipeline.md) for the automated and manual stages, commands, data lineage, and visual-timestamp workflow. See [the implementation plan](docs/youtube-knowledge-base-plan.md) for architecture, policy, and future offline-media scope.
+
+## Publish with GitHub Pages
+
+The repository includes separate CI and Pages deployment workflows. GitHub builds only the committed sanitized corpus in `app/public/data/`; it does not ingest YouTube, download media, run Codex, or require private transcripts.
+
+1. Commit the reviewed source and sanitized public data.
+2. Push the `main` branch to GitHub.
+3. In **Settings → Pages**, select **GitHub Actions** as the source.
+4. Run **Deploy GitHub Pages** manually or let the push to `main` trigger it.
+
+For the configured repository, the project URL will be:
+
+```text
+https://cunya.github.io/TTKnowledgeBase/
+```
+
+Astro derives `/TTKnowledgeBase` from `GITHUB_REPOSITORY` during Actions builds, while local development continues to use `/`. The workflow scans the generated site for raw transcript collections, media, cookies, environment files, and credential-like strings before upload.
+
+Before committing a new corpus, run the release checks from the repository root:
+
+```powershell
+$env:PYTHONUTF8='1'
+.\.venv\Scripts\python.exe -m processors.cli validate --kb table-tennis
+.\.venv\Scripts\python.exe -m processors.cli publish --kb table-tennis
+.\.venv\Scripts\python.exe -m pytest
+.\.venv\Scripts\ruff.exe check .
+Set-Location app
+npm run build
+```
