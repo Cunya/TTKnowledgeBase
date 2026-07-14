@@ -33,14 +33,51 @@ evidence:
     visual_status: transcript_inferred
     review_status: approved
     source: {video_id: XfWXrGTlW5M, start_ms: 264433, end_ms: 287866, url: "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=264s", segment_ids: ["XfWXrGTlW5M:00063", "XfWXrGTlW5M:00068"]}
-  - id: slow-fast-friction-rhythm-4
+  - id: slow-fast-friction-rhythm-4-part-1
     evidence_type: explanation
-    excerpt: Use a relaxed backswing, then explosive acceleration at contact; accelerating too early prevents gripping the ball.
+    excerpt: Use a relaxed backswing followed by explosive acceleration at contact.
     reason: Connects late acceleration to both pace change and effective friction against backspin.
     confidence: 0.99
     visual_status: transcript_inferred
     review_status: approved
-    source: {video_id: 0E67TotjJFE, start_ms: 457133, end_ms: 499900, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=457s", segment_ids: ["0E67TotjJFE:00102", "0E67TotjJFE:00104", "0E67TotjJFE:00108"]}
+    source: {video_id: 0E67TotjJFE, start_ms: 457133, end_ms: 463033, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=457s", segment_ids: ["0E67TotjJFE:00102"]}
+  - id: slow-fast-friction-rhythm-4-part-2
+    evidence_type: explanation
+    excerpt: The racket must be moving explosively at the moment of contact.
+    reason: Connects late acceleration to both pace change and effective friction against backspin.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source: {video_id: 0E67TotjJFE, start_ms: 478133, end_ms: 484733, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=478s", segment_ids: ["0E67TotjJFE:00104"]}
+  - id: slow-fast-friction-rhythm-4-part-3
+    evidence_type: explanation
+    excerpt: Do not accelerate too early, because it prevents the racket from gripping the ball.
+    reason: Connects late acceleration to both pace change and effective friction against backspin.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source: {video_id: 0E67TotjJFE, start_ms: 496400, end_ms: 499900, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=496s", segment_ids: ["0E67TotjJFE:00108"]}
+  - id: dWZw3A0X-4A-cand-finger-wrist-snap-on-slower-ball-1
+    evidence_type: definition
+    excerpt: When the incoming ball is slower and controllable, a slight finger-and-wrist press with a small racket-head snap can be added and coordinated with arm recovery.
+    reason: The speaker contrasts the fast-ball case with a slower-ball case where finger and wrist snap can be used.
+    confidence: 0.82
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: dWZw3A0X-4A
+      start_ms: 620680
+      end_ms: 644400
+      url: "https://www.youtube.com/watch?v=dWZw3A0X-4A&t=620s"
+      segment_ids:
+        - "dWZw3A0X-4A:00213"
+        - "dWZw3A0X-4A:00214"
+        - "dWZw3A0X-4A:00215"
+        - "dWZw3A0X-4A:00216"
+        - "dWZw3A0X-4A:00217"
+        - "dWZw3A0X-4A:00218"
+        - "dWZw3A0X-4A:00219"
+        - "dWZw3A0X-4A:00220"
 relations:
   - relation_type: used_with
     target_concept_id: concept-forehand-loop-timing

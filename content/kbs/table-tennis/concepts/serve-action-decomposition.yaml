@@ -32,4 +32,34 @@ evidence:
     visual_status: transcript_inferred
     review_status: approved
     source: {video_id: csJgHR7Daog, start_ms: 189400, end_ms: 197040, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=189s", segment_ids: ["csJgHR7Daog:00087", "csJgHR7Daog:00088", "csJgHR7Daog:00089"]}
+  - id: leQBUn8-4tw-cand-serve-toss-height-selection-1
+    evidence_type: definition
+    excerpt: A timing concept for serves that rejects medium-height tosses as awkward and inconsistent, especially under match pressure, favoring clearly low or high tosses instead.
+    reason: The speaker explicitly contrasts low/high tosses with the problematic medium toss.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: leQBUn8-4tw
+      start_ms: 47633
+      end_ms: 67200
+      url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=47s"
+      segment_ids:
+        - "leQBUn8-4tw:00010"
+        - "leQBUn8-4tw:00013"
+  - id: leQBUn8-4tw-cand-serve-toss-height-selection-2
+    evidence_type: explanation
+    excerpt: A timing concept for serves that rejects medium-height tosses as awkward and inconsistent, especially under match pressure, favoring clearly low or high tosses instead.
+    reason: Medium tosses are described as inconsistent because contact timing breaks down under nerves and pressure.
+    confidence: 0.92
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: leQBUn8-4tw
+      start_ms: 52000
+      end_ms: 72166
+      url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=52s"
+      segment_ids:
+        - "leQBUn8-4tw:00011"
+        - "leQBUn8-4tw:00014"
 relations: []

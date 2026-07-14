@@ -10,6 +10,9 @@ from .codex_engine import extract_with_codex
 from .models import Concept, ExtractionResponse, KnowledgeNavigation, PublishCorpus, Video
 from .utils import read_json, read_yaml, sha256_json, write_json, youtube_url
 
+MAX_SPOKEN_SOURCE_MS = 30_000
+MAX_CITED_SEGMENT_GAP_MS = 20_000
+
 roundtrip_yaml = YAML()
 roundtrip_yaml.preserve_quotes = True
 roundtrip_yaml.indent(mapping=2, sequence=4, offset=2)
@@ -121,6 +124,57 @@ def validate_graph(concepts: list[Concept]) -> list[str]:
     return errors
 
 
+def validate_review_queue(queue_data: dict, concepts: list[Concept]) -> list[str]:
+    """Ensure accepted queue items are represented by their exact cited evidence."""
+    errors: list[str] = []
+    concept_map = {concept.id: concept for concept in concepts}
+    for index, item in enumerate(queue_data.get("items", []), start=1):
+        if item.get("decision") != "accepted":
+            continue
+        canonical_id = item.get("canonical_concept_id")
+        canonical = concept_map.get(canonical_id)
+        if not canonical:
+            errors.append(f"review-queue/{index}: accepted item has unknown canonical concept")
+            continue
+        candidate_segments = {
+            segment_id
+            for evidence in item.get("candidate", {}).get("evidence", [])
+            for segment_id in evidence.get("segment_ids", [])
+        }
+        canonical_segments = {
+            segment_id
+            for evidence in canonical.evidence
+            if evidence.source.video_id == item.get("video_id")
+            for segment_id in evidence.source.segment_ids
+        }
+        if not candidate_segments.intersection(canonical_segments):
+            errors.append(
+                f"review-queue/{index}: accepted item has no cited segment in {canonical_id}"
+            )
+    return errors
+
+
+def validate_navigation(
+    navigation: KnowledgeNavigation, concepts: list[Concept]
+) -> list[str]:
+    errors: list[str] = []
+    known = {concept.id for concept in concepts}
+    referenced: set[str] = set()
+
+    def check_nodes(nodes) -> None:
+        for node in nodes:
+            for concept_id in node.concept_ids:
+                if concept_id not in known:
+                    errors.append(f"navigation/{node.id}: unknown concept {concept_id}")
+                referenced.add(concept_id)
+            check_nodes(node.children)
+
+    check_nodes(navigation.sections)
+    for concept_id in sorted(known - referenced):
+        errors.append(f"navigation: approved concept is not placed: {concept_id}")
+    return errors
+
+
 def validate_corpus(concepts: list[Concept], videos: list[Video]) -> list[str]:
     errors = validate_graph(concepts)
     video_map = {video.id: video for video in videos}
@@ -165,6 +219,22 @@ def validate_corpus(concepts: list[Concept], videos: list[Video]) -> list[str]:
                 errors.append(
                     f"{concept.id}/{evidence.id}: segments belong to another video {mismatched}"
                 )
+            if source.end_ms - source.start_ms > MAX_SPOKEN_SOURCE_MS:
+                errors.append(
+                    f"{concept.id}/{evidence.id}: spoken source exceeds "
+                    f"{MAX_SPOKEN_SOURCE_MS // 1000} seconds"
+                )
+            cited_segments = sorted(
+                (segment_map[segment_id][1] for segment_id in source.segment_ids if segment_id in segment_map),
+                key=lambda segment: segment.start_ms,
+            )
+            for previous, current in zip(cited_segments, cited_segments[1:], strict=False):
+                gap_ms = current.start_ms - previous.end_ms
+                if gap_ms > MAX_CITED_SEGMENT_GAP_MS:
+                    errors.append(
+                        f"{concept.id}/{evidence.id}: cited segments have a "
+                        f"{gap_ms / 1000:g}-second gap"
+                    )
             if source.url != youtube_url(source.video_id, source.start_ms):
                 errors.append(f"{concept.id}/{evidence.id}: noncanonical source URL")
             visual = evidence.visual_source
@@ -232,18 +302,7 @@ def publish(
     errors = validate_corpus(concepts, videos)
     parsed_navigation = KnowledgeNavigation.model_validate(navigation) if navigation else None
     if parsed_navigation:
-        known_concept_ids = {concept.id for concept in concepts}
-
-        def check_nodes(nodes) -> None:
-            for node in nodes:
-                for concept_id in node.concept_ids:
-                    if concept_id not in known_concept_ids:
-                        errors.append(
-                            f"navigation/{node.id}: unknown concept {concept_id}"
-                        )
-                check_nodes(node.children)
-
-        check_nodes(parsed_navigation.sections)
+        errors.extend(validate_navigation(parsed_navigation, concepts))
     if errors:
         raise ValueError("Publish validation failed:\n- " + "\n- ".join(errors))
     used_video_ids = {

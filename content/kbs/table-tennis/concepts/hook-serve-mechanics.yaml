@@ -1,0 +1,107 @@
+id: concept-hook-serve-mechanics
+slug: hook-serve-mechanics
+label: Hook serve mechanics
+aliases: [hook serve, hooked wrist serve]
+short_definition: Use a hooked racket action, forward force, and forearm extension to produce sidespin–topspin or sidespin–backspin.
+concept_type: serve-mechanic
+facets: {category: [stroke], side: [neutral], spin: [sidespin, topspin, backspin], level: [intermediate]}
+difficulty: intermediate
+review_status: approved
+evidence:
+  - id: hooked-action-1
+    evidence_type: explanation
+    excerpt: The hook serve uses a hooked action and is a simple route to sidespin–topspin.
+    reason: Defines the serve family and its characteristic racket action.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: leQBUn8-4tw, start_ms: 241233, end_ms: 262600, url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=241s", segment_ids: ["leQBUn8-4tw:00052", "leQBUn8-4tw:00056"]}
+  - id: back-to-front-force-2-part-1
+    evidence_type: correction
+    excerpt: Keep the racket closed and drive forward; a high-to-low action makes the serve easier to push.
+    reason: Establishes the forward force path that makes the topspin variation difficult to push.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source: {video_id: leQBUn8-4tw, start_ms: 477133, end_ms: 498400, url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=477s", segment_ids: ["leQBUn8-4tw:00106", "leQBUn8-4tw:00107", "leQBUn8-4tw:00108", "leQBUn8-4tw:00109"]}
+  - id: back-to-front-force-2-part-2
+    evidence_type: correction
+    excerpt: Generate serve force from back to front across the hook, backhand, and sidespin families.
+    reason: Establishes the forward force path that makes the topspin variation difficult to push.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source: {video_id: leQBUn8-4tw, start_ms: 498400, end_ms: 511733, url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=498s", segment_ids: ["leQBUn8-4tw:00110", "leQBUn8-4tw:00111", "leQBUn8-4tw:00112"]}
+  - id: forearm-extension-3
+    evidence_type: explanation
+    excerpt: Retract the forearm on the toss and extend it through contact to supply power.
+    reason: Separates the main power source from wrist action alone.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: leQBUn8-4tw, start_ms: 546500, end_ms: 562500, url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=546s", segment_ids: ["leQBUn8-4tw:00121", "leQBUn8-4tw:00123"]}
+  - id: leQBUn8-4tw-cand-lateral-force-for-sidespin-serves-1
+    evidence_type: definition
+    excerpt: A serve principle that sidespin serves should apply force sideways during backswing and contact rather than only forward and back.
+    reason: The speaker states that for sidespin-backspin the force must be directed sideways, not simply forward and back.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: leQBUn8-4tw
+      start_ms: 4500
+      end_ms: 17700
+      url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=4s"
+      segment_ids:
+        - "leQBUn8-4tw:00001"
+        - "leQBUn8-4tw:00002"
+        - "leQBUn8-4tw:00003"
+  - id: leQBUn8-4tw-cand-lateral-force-for-sidespin-serves-2
+    evidence_type: drill
+    excerpt: A serve principle that sidespin serves should apply force sideways during backswing and contact rather than only forward and back.
+    reason: Later advice repeats lateral force as a focal point in execution.
+    confidence: 0.88
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: leQBUn8-4tw
+      start_ms: 156100
+      end_ms: 160266
+      url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=156s"
+      segment_ids:
+        - "leQBUn8-4tw:00032"
+  - id: leQBUn8-4tw-cand-wrist-finger-rotation-heavy-serve-spin-1
+    evidence_type: definition
+    excerpt: A serve-spin generation concept where the fingers lead a flexible wrist rotation and accelerate through contact to create heavier spin.
+    reason: The speaker directly explains wrist rotation, finger lead, flexibility, and acceleration through contact as the source of heavy spin.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: leQBUn8-4tw
+      start_ms: 72166
+      end_ms: 91566
+      url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=72s"
+      segment_ids:
+        - "leQBUn8-4tw:00015"
+        - "leQBUn8-4tw:00018"
+  - id: leQBUn8-4tw-cand-wrist-finger-rotation-heavy-serve-spin-2
+    evidence_type: explanation
+    excerpt: A serve-spin generation concept where the fingers lead a flexible wrist rotation and accelerate through contact to create heavier spin.
+    reason: Heavy spin is explicitly attributed to this rotational action.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: leQBUn8-4tw
+      start_ms: 79333
+      end_ms: 82766
+      url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=79s"
+      segment_ids:
+        - "leQBUn8-4tw:00016"
+relations:
+  - relation_type: variation_of
+    target_concept_id: concept-sidespin-topspin-serve
+    confidence: 0.97
+    review_status: approved
+    sources: [{video_id: leQBUn8-4tw, start_ms: 241233, end_ms: 262600, url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=241s", segment_ids: ["leQBUn8-4tw:00052", "leQBUn8-4tw:00056"]}]

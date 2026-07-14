@@ -28,6 +28,10 @@ Codex runs in an ephemeral, read-only temporary directory using the configured l
 
 Review `content/kbs/<kb>/annotations/review-queue.yaml`. Approved canonical concepts are stored as individual YAML files under `content/kbs/<kb>/concepts/`. Each concept needs a stable ID/slug, approved status, and at least one evidence item with real segment IDs and a canonical timestamp URL. Use the committed table-tennis demo concepts as templates.
 
+Do not mark a queue item accepted merely because it resembles an existing concept. At least one exact candidate segment must be incorporated into that canonical concept; otherwise leave the item pending or explicitly reject it. Keep each spoken evidence window within 30 seconds and split non-contiguous explanations into separate moments at transcript topic boundaries.
+
+When adding candidates from newly processed videos, preserve existing queue decisions. The current `build-review-queue` command regenerates its output; do not run it over a manually reviewed queue without first arranging a merge or backup strategy.
+
 ## 5. Publish and verify
 
 ```powershell

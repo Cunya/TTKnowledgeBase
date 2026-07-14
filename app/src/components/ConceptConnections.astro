@@ -14,6 +14,12 @@ const flatten = (nodes: TopicNode[], path: TopicNode[] = [], prefix = '') => {
   });
 };
 flatten(navigation.sections);
+const primaryBranchByConcept = new Map<string, Branch>();
+for (const branch of branches) {
+  for (const conceptId of branch.node.concept_ids) {
+    if (!primaryBranchByConcept.has(conceptId)) primaryBranchByConcept.set(conceptId, branch);
+  }
+}
 const linksFor = (concept: Concept) => concept.relations.flatMap((relation) => conceptMap[relation.target_concept_id] ? [{ relation: relation.relation_type, target: conceptMap[relation.target_concept_id] }] : []);
 ---
 
@@ -29,8 +35,8 @@ const linksFor = (concept: Concept) => concept.relations.flatMap((relation) => c
       </header>
       <div class="atlas-content">
         {node.concept_ids.length === 0 ? <p class="atlas-branch-note">Contains {node.children.length} deeper section{node.children.length === 1 ? '' : 's'}.</p> : node.concept_ids.map((id) => conceptMap[id] && (
-          <article class="atlas-concept">
-            <a class="atlas-concept-title" href={`${root}/concepts/${conceptMap[id].slug}/`}><strong>{conceptMap[id].label}</strong><span>{conceptMap[id].concept_type}</span></a>
+          <article class:list={['atlas-concept', primaryBranchByConcept.get(id)?.node.id !== node.id && 'atlas-concept-crosslisted']}>
+            <a class="atlas-concept-title" href={`${root}/concepts/${conceptMap[id].slug}/`}><strong>{conceptMap[id].label}</strong><span>{primaryBranchByConcept.get(id)?.node.id === node.id ? conceptMap[id].concept_type : `Also appears here · primary: ${primaryBranchByConcept.get(id)?.node.label}`}</span></a>
             {linksFor(conceptMap[id]).length > 0 && <div class="atlas-links">{linksFor(conceptMap[id]).map(({ relation, target }) => <a href={`${root}/concepts/${target.slug}/`}><span>{relation.replaceAll('_', ' ')}</span><strong>{target.label}</strong><b aria-hidden="true">→</b></a>)}</div>}
           </article>
         ))}

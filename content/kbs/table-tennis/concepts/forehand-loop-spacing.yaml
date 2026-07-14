@@ -36,6 +36,185 @@ evidence:
     visual_source: {video_id: JmOI0L7SiG8, start_ms: 194000, end_ms: 207000, url: "https://www.youtube.com/watch?v=JmOI0L7SiG8&t=194s", selection_method: nearby_visual_inference, note: Ball placement examples show how landing depth changes hand-ball distance.}
     review_status: approved
     source: {video_id: JmOI0L7SiG8, start_ms: 187966, end_ms: 195233, url: "https://www.youtube.com/watch?v=JmOI0L7SiG8&t=187s", segment_ids: ["JmOI0L7SiG8:00065", "JmOI0L7SiG8:00066"]}
+  - id: G7eiadOxN8E-cand-forehand-centerline-base-1
+    evidence_type: definition
+    excerpt: A forehand spacing method where the player sets a fixed base with the right foot on the table centerline and the racket between center and forehand sideline, then adjusts with small weight shifts.
+    reason: The speaker gives a specific fixed-base method with foot and paddle reference points for forehand distance control.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: G7eiadOxN8E
+      start_ms: 915033
+      end_ms: 931600
+      url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=915s"
+      segment_ids:
+        - "G7eiadOxN8E:00209"
+        - "G7eiadOxN8E:00211"
+  - id: G7eiadOxN8E-cand-forehand-centerline-base-2
+    evidence_type: explanation
+    excerpt: A forehand spacing method where the player sets a fixed base with the right foot on the table centerline and the racket between center and forehand sideline, then adjusts with small weight shifts.
+    reason: Weight shifts left or right are described as the adjustment mechanism from that base position.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: G7eiadOxN8E
+      start_ms: 931600
+      end_ms: 954833
+      url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=931s"
+      segment_ids:
+        - "G7eiadOxN8E:00212"
+        - "G7eiadOxN8E:00216"
+  - id: i68OG8UzMyQ-cand-loop-distance-rhythm-spacing-1
+    evidence_type: explanation
+    excerpt: Moving farther from the table when learning or stabilizing the forehand loop gives more time to execute the full stroke and maintain correct rhythm.
+    reason: Speaker explicitly recommends standing farther back so there is enough time for the stroke and a clear pause in rhythm.
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: i68OG8UzMyQ
+      start_ms: 19320
+      end_ms: 32759
+      url: "https://www.youtube.com/watch?v=i68OG8UzMyQ&t=19s"
+      segment_ids:
+        - "i68OG8UzMyQ:00006"
+        - "i68OG8UzMyQ:00007"
+        - "i68OG8UzMyQ:00008"
+        - "i68OG8UzMyQ:00009"
+        - "i68OG8UzMyQ:00010"
+  - id: i68OG8UzMyQ-cand-loop-distance-rhythm-spacing-2
+    evidence_type: drill
+    excerpt: Moving farther from the table when learning or stabilizing the forehand loop gives more time to execute the full stroke and maintain correct rhythm.
+    reason: 'Progression is described: improve looping first, then move in and add power.'
+    confidence: 0.72
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: i68OG8UzMyQ
+      start_ms: 48400
+      end_ms: 54920
+      url: "https://www.youtube.com/watch?v=i68OG8UzMyQ&t=48s"
+      segment_ids:
+        - "i68OG8UzMyQ:00016"
+        - "i68OG8UzMyQ:00017"
+  - id: JmOI0L7SiG8-cand-half-long-no-backswing-1
+    evidence_type: explanation
+    excerpt: Against half-long balls, the player should avoid a full backswing because the ball drops quickly off the table; compact preparation preserves timing and contact accuracy.
+    reason: Speaker says players miss half-long balls when using a long-ball backswing because the ball loses power, drops, and the swing arrives late.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: JmOI0L7SiG8
+      start_ms: 234200
+      end_ms: 252666
+      url: "https://www.youtube.com/watch?v=JmOI0L7SiG8&t=234s"
+      segment_ids:
+        - "JmOI0L7SiG8:00077"
+        - "JmOI0L7SiG8:00078"
+        - "JmOI0L7SiG8:00079"
+        - "JmOI0L7SiG8:00080"
+        - "JmOI0L7SiG8:00081"
+        - "JmOI0L7SiG8:00082"
+        - "JmOI0L7SiG8:00083"
+        - "JmOI0L7SiG8:00084"
+        - "JmOI0L7SiG8:00085"
+  - id: JmOI0L7SiG8-cand-half-long-no-backswing-2
+    evidence_type: explanation
+    excerpt: Against half-long balls, the player should avoid a full backswing because the ball drops quickly off the table; compact preparation preserves timing and contact accuracy.
+    reason: 'Speaker generalizes the rule: on half-long balls that are not at the end line, do not backswing because the ball drops off the table quickly.'
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: JmOI0L7SiG8
+      start_ms: 256166
+      end_ms: 282633
+      url: "https://www.youtube.com/watch?v=JmOI0L7SiG8&t=256s"
+      segment_ids:
+        - "JmOI0L7SiG8:00086"
+        - "JmOI0L7SiG8:00087"
+        - "JmOI0L7SiG8:00088"
+        - "JmOI0L7SiG8:00089"
+        - "JmOI0L7SiG8:00090"
+        - "JmOI0L7SiG8:00091"
+        - "JmOI0L7SiG8:00092"
+        - "JmOI0L7SiG8:00093"
+        - "JmOI0L7SiG8:00094"
+        - "JmOI0L7SiG8:00095"
+  - id: JmOI0L7SiG8-cand-half-long-no-backswing-3
+    evidence_type: drill
+    excerpt: Against half-long balls, the player should avoid a full backswing because the ball drops quickly off the table; compact preparation preserves timing and contact accuracy.
+    reason: Finding the right compact preparation is presented as a repeatable method that improves accuracy and consistency.
+    confidence: 0.88
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: JmOI0L7SiG8
+      start_ms: 290766
+      end_ms: 296933
+      url: "https://www.youtube.com/watch?v=JmOI0L7SiG8&t=290s"
+      segment_ids:
+        - "JmOI0L7SiG8:00096"
+        - "JmOI0L7SiG8:00097"
+        - "JmOI0L7SiG8:00098"
+  - id: JmOI0L7SiG8-cand-jammed-by-fast-ball-1
+    evidence_type: explanation
+    excerpt: A common cause of netted loops on faster incoming balls is not excessive spin but being rushed so the player lacks time and space for normal brushing and swing mechanics.
+    reason: 'Speaker answers why the ball goes into the net: because the player was jammed.'
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: JmOI0L7SiG8
+      start_ms: 370300
+      end_ms: 376433
+      url: "https://www.youtube.com/watch?v=JmOI0L7SiG8&t=370s"
+      segment_ids:
+        - "JmOI0L7SiG8:00122"
+        - "JmOI0L7SiG8:00123"
+        - "JmOI0L7SiG8:00124"
+  - id: JmOI0L7SiG8-cand-jammed-by-fast-ball-2
+    evidence_type: correction
+    excerpt: A common cause of netted loops on faster incoming balls is not excessive spin but being rushed so the player lacks time and space for normal brushing and swing mechanics.
+    reason: Speaker corrects the mistaken belief that the error comes from spin and says the real cause is being jammed by the faster second ball.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: JmOI0L7SiG8
+      start_ms: 412400
+      end_ms: 427966
+      url: "https://www.youtube.com/watch?v=JmOI0L7SiG8&t=412s"
+      segment_ids:
+        - "JmOI0L7SiG8:00139"
+        - "JmOI0L7SiG8:00140"
+        - "JmOI0L7SiG8:00141"
+        - "JmOI0L7SiG8:00142"
+        - "JmOI0L7SiG8:00143"
+        - "JmOI0L7SiG8:00144"
+        - "JmOI0L7SiG8:00145"
+        - "JmOI0L7SiG8:00146"
+        - "JmOI0L7SiG8:00147"
+        - "JmOI0L7SiG8:00148"
+  - id: JmOI0L7SiG8-cand-jammed-by-fast-ball-3
+    evidence_type: explanation
+    excerpt: A common cause of netted loops on faster incoming balls is not excessive spin but being rushed so the player lacks time and space for normal brushing and swing mechanics.
+    reason: 'Speaker explains the mechanics of being jammed: no time to brush and no time to retract the arm.'
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: JmOI0L7SiG8
+      start_ms: 436866
+      end_ms: 443733
+      url: "https://www.youtube.com/watch?v=JmOI0L7SiG8&t=436s"
+      segment_ids:
+        - "JmOI0L7SiG8:00151"
+        - "JmOI0L7SiG8:00152"
+        - "JmOI0L7SiG8:00153"
 relations:
   - relation_type: used_with
     target_concept_id: concept-forehand-loop

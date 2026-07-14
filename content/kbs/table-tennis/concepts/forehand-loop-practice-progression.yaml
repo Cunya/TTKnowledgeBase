@@ -54,6 +54,72 @@ evidence:
     review_status: approved
     source: {video_id: G7eiadOxN8E, start_ms: 169666, end_ms: 195100, url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=169s", segment_ids: ["G7eiadOxN8E:00039", "G7eiadOxN8E:00040", "G7eiadOxN8E:00042", "G7eiadOxN8E:00043"]}
     spoken_context_end_ms: 207433
+  - id: I99BjizeWeE-cand-mid-far-brushing-drill-1
+    evidence_type: drill
+    excerpt: A drill where the player moves farther from the table, slows the rally, and uses wrist-driven brushing to build touch and feel for the loop.
+    reason: The speaker explicitly prescribes moving back and brushing without power to train feel.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: I99BjizeWeE
+      start_ms: 271000
+      end_ms: 296133
+      url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=271s"
+      segment_ids:
+        - "I99BjizeWeE:00085"
+        - "I99BjizeWeE:00086"
+        - "I99BjizeWeE:00087"
+        - "I99BjizeWeE:00089"
+        - "I99BjizeWeE:00090"
+  - id: I99BjizeWeE-cand-mid-far-brushing-drill-2
+    evidence_type: explanation
+    excerpt: A drill where the player moves farther from the table, slows the rally, and uses wrist-driven brushing to build touch and feel for the loop.
+    reason: The rationale is that slower ball speed at greater distance improves brushing awareness and basic touch before returning to normal position.
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: I99BjizeWeE
+      start_ms: 296600
+      end_ms: 308933
+      url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=296s"
+      segment_ids:
+        - "I99BjizeWeE:00091"
+        - "I99BjizeWeE:00093"
+        - "I99BjizeWeE:00094"
+  - id: I99BjizeWeE-cand-mid-far-brushing-drill-3
+    evidence_type: explanation
+    excerpt: A drill where the player moves farther from the table, slows the rally, and uses wrist-driven brushing to build touch and feel for the loop.
+    reason: The rationale is that slower ball speed at greater distance improves brushing awareness and basic touch before returning to normal position.
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: I99BjizeWeE
+      start_ms: 332033
+      end_ms: 338500
+      url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=332s"
+      segment_ids:
+        - "I99BjizeWeE:00103"
+        - "I99BjizeWeE:00104"
+  - id: I99BjizeWeE-cand-loop-acceleration-band-drill-1
+    evidence_type: drill
+    excerpt: A resistance-band drill used to improve arm-closing speed and acceleration for better forehand loop quality.
+    reason: The speaker offers a concrete equipment-based drill to fix slow arm closure.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: I99BjizeWeE
+      start_ms: 652233
+      end_ms: 666866
+      url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=652s"
+      segment_ids:
+        - "I99BjizeWeE:00199"
+        - "I99BjizeWeE:00200"
+        - "I99BjizeWeE:00201"
+        - "I99BjizeWeE:00202"
 relations:
   - relation_type: used_with
     target_concept_id: concept-forehand-loop

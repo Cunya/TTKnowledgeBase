@@ -96,6 +96,8 @@ python -m processors.cli build-review-queue --kb table-tennis
 
 The generated queue lives at `content/kbs/<kb>/annotations/review-queue.yaml`. It suggests whether a candidate resembles an already reviewed concept, but fuzzy similarity never performs an automatic merge by itself.
 
+An item may remain `accepted` only when at least one of its exact transcript segment IDs is present in evidence for the referenced canonical concept and video. A semantically similar candidate that was not incorporated stays `pending`; similarity alone is not evidence of editorial integration.
+
 Reviewed public knowledge is stored as tracked YAML under `content/kbs/<kb>/concepts/`. An approved evidence item contains:
 
 - `source`: the transcript-backed claim location, including segment IDs;
@@ -129,6 +131,8 @@ python -m processors.cli publish --kb table-tennis
 ```
 
 Validation checks concept IDs and slugs, graph targets/cycles, video existence, segment ownership, time bounds, and canonical URLs for both spoken and visual spans. Publishing includes approved concepts only, removes private transcripts from video metadata, excludes demo fixtures by default, and writes:
+
+Spoken evidence is also constrained to a focused window of at most 30 seconds, and citations with gaps greater than 20 seconds must be split into separate evidence moments. Navigation validation requires every approved concept to have at least one topic-tree placement; repeated placements are allowed as explicit cross-listings, with the first placement treated as the primary path.
 
 - `data/publish/kbs/<kb>/corpus.json` and `manifest.json`;
 - matching browser-safe files under `app/public/data/kbs/<kb>/`;
@@ -168,6 +172,10 @@ I did call the repository commands manually from Codex's terminal rather than by
 8. ran validation, publishing, Python tests, Ruff, Astro diagnostics, the static build, and local HTTP checks.
 
 This means the pipeline is repeatable, but it is intentionally not fully unattended. Collection, extraction, validation, and build are scripted; source curation, knowledge approval, and visual-example approval are editorial gates.
+
+As of 2026-07-14, the reviewed table-tennis corpus contains 65 approved concepts, 27 published source videos, and 687 non-demo evidence moments. The queue contains 284 accepted, 7 pending, and 1 rejected candidate. Recent coverage added structured push, block, backhand-rip, backhand-loop, footwork, post-serve, match-planning, serve-receive, counter-loop, forehand-drive, and equipment-friction branches. Exact accepted-candidate overlap, navigation coverage, the 30-second spoken-window limit, and large citation gaps are enforced during validation.
+
+Codex extraction does not request a service tier. Omitting the override uses the account's normal/default service and avoids the explicitly accelerated `fast` tier. The model and low reasoning setting remain controlled by `config/processors.yaml`, and automatic escalation remains disabled.
 
 ## Automation boundary
 

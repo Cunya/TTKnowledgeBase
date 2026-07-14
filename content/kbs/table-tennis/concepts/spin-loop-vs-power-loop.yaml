@@ -36,6 +36,109 @@ evidence:
     visual_source: {video_id: qLT0MvwitZc, start_ms: 549000, end_ms: 563000, url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=549s", selection_method: nearby_visual_inference, note: Racket-path demonstration separates brushing from forward drive.}
     review_status: approved
     source: {video_id: qLT0MvwitZc, start_ms: 554300, end_ms: 560900, url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=554s", segment_ids: ["qLT0MvwitZc:00127"]}
+  - id: I-_3TIjU4qI-candidate-spin-loop-vs-power-loop-1
+    evidence_type: explanation
+    excerpt: When consistency or the incoming ball is difficult, choose a slower, heavier spin loop; when the opportunity is good and preparation is complete, use a fuller power loop.
+    reason: The coach's instruction is to avoid explosive loops at first and use only spin loops.
+    confidence: 0.86
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: I-_3TIjU4qI
+      start_ms: 327000
+      end_ms: 336360
+      url: "https://www.youtube.com/watch?v=I-_3TIjU4qI&t=327s"
+      segment_ids:
+        - "I-_3TIjU4qI:00143"
+        - "I-_3TIjU4qI:00144"
+        - "I-_3TIjU4qI:00145"
+        - "I-_3TIjU4qI:00146"
+  - id: I-_3TIjU4qI-candidate-spin-loop-vs-power-loop-2
+    evidence_type: explanation
+    excerpt: When consistency or the incoming ball is difficult, choose a slower, heavier spin loop; when the opportunity is good and preparation is complete, use a fuller power loop.
+    reason: The speaker contrasts a stable close loop for difficult balls with pulling back and crushing the ball when the chance is good.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: I-_3TIjU4qI
+      start_ms: 488320
+      end_ms: 510600
+      url: "https://www.youtube.com/watch?v=I-_3TIjU4qI&t=488s"
+      segment_ids:
+        - "I-_3TIjU4qI:00215"
+        - "I-_3TIjU4qI:00216"
+        - "I-_3TIjU4qI:00217"
+        - "I-_3TIjU4qI:00218"
+        - "I-_3TIjU4qI:00219"
+        - "I-_3TIjU4qI:00220"
+        - "I-_3TIjU4qI:00221"
+        - "I-_3TIjU4qI:00222"
+  - id: I-_3TIjU4qI-candidate-spin-loop-vs-power-loop-3
+    evidence_type: explanation
+    excerpt: When consistency or the incoming ball is difficult, choose a slower, heavier spin loop; when the opportunity is good and preparation is complete, use a fuller power loop.
+    reason: The speaker contrasts a stable close loop for difficult balls with pulling back and crushing the ball when the chance is good.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: I-_3TIjU4qI
+      start_ms: 513200
+      end_ms: 518000
+      url: "https://www.youtube.com/watch?v=I-_3TIjU4qI&t=513s"
+      segment_ids:
+        - "I-_3TIjU4qI:00223"
+        - "I-_3TIjU4qI:00224"
+  - id: i68OG8UzMyQ-cand-loop-vs-drive-not-bigger-motion-1
+    evidence_type: definition
+    excerpt: The forehand loop should not be treated as a drive with larger amplitude; it uses a different swing path, contact behavior, and force application.
+    reason: Speaker explicitly states that drive and loop are not the same stroke with a bigger motion and follow different paths.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: i68OG8UzMyQ
+      start_ms: 286640
+      end_ms: 299240
+      url: "https://www.youtube.com/watch?v=i68OG8UzMyQ&t=286s"
+      segment_ids:
+        - "i68OG8UzMyQ:00097"
+        - "i68OG8UzMyQ:00098"
+        - "i68OG8UzMyQ:00099"
+        - "i68OG8UzMyQ:00100"
+        - "i68OG8UzMyQ:00101"
+  - id: i68OG8UzMyQ-cand-loop-vs-drive-not-bigger-motion-2
+    evidence_type: mistake
+    excerpt: The forehand loop should not be treated as a drive with larger amplitude; it uses a different swing path, contact behavior, and force application.
+    reason: He identifies a common mistake where players use the drive trajectory while trying to loop.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: i68OG8UzMyQ
+      start_ms: 245920
+      end_ms: 255480
+      url: "https://www.youtube.com/watch?v=i68OG8UzMyQ&t=245s"
+      segment_ids:
+        - "i68OG8UzMyQ:00080"
+        - "i68OG8UzMyQ:00082"
+  - id: i68OG8UzMyQ-cand-loop-vs-drive-not-bigger-motion-3
+    evidence_type: mistake
+    excerpt: The forehand loop should not be treated as a drive with larger amplitude; it uses a different swing path, contact behavior, and force application.
+    reason: He identifies a common mistake where players use the drive trajectory while trying to loop.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: i68OG8UzMyQ
+      start_ms: 277000
+      end_ms: 289080
+      url: "https://www.youtube.com/watch?v=i68OG8UzMyQ&t=277s"
+      segment_ids:
+        - "i68OG8UzMyQ:00093"
+        - "i68OG8UzMyQ:00094"
+        - "i68OG8UzMyQ:00095"
+        - "i68OG8UzMyQ:00096"
 relations:
   - relation_type: variation_of
     target_concept_id: concept-forehand-loop

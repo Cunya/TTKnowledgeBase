@@ -20,12 +20,15 @@ from .ingest import (
     ingest_video,
     video_id_from_url,
 )
+from .models import KnowledgeNavigation
 from .pipeline import (
     build_review_queue,
     extract_video,
     load_reviewed_concepts,
     load_videos,
     validate_corpus,
+    validate_navigation,
+    validate_review_queue,
 )
 from .pipeline import publish as publish_corpus
 from .utils import read_json, read_yaml, write_json
@@ -284,6 +287,13 @@ def validate(
             if any(item.source.video_id not in demo_ids for item in concept.evidence)
         ]
     errors = validate_corpus(concepts, videos)
+    navigation_path = paths.config / "navigation.yaml"
+    if navigation_path.exists():
+        navigation = KnowledgeNavigation.model_validate(read_yaml(navigation_path))
+        errors.extend(validate_navigation(navigation, concepts))
+    queue_path = paths.content / "annotations" / "review-queue.yaml"
+    if queue_path.exists():
+        errors.extend(validate_review_queue(read_yaml(queue_path), concepts))
     if errors:
         for error in errors:
             console.print(f"[red]ERROR[/red] {error}")

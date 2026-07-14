@@ -49,6 +49,82 @@ evidence:
     visual_status: transcript_inferred
     review_status: approved
     source: {video_id: YUEaL2HiPIE, start_ms: 229800, end_ms: 242766, url: "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=229s", segment_ids: ["YUEaL2HiPIE:00049", "YUEaL2HiPIE:00050", "YUEaL2HiPIE:00051"]}
+  - id: xWrDKGnqmBs-cand-pressure-causes-backhand-spacing-loss-1
+    evidence_type: mistake
+    excerpt: A common backhand rally problem where pressure from the incoming ball causes the player to back away from the table, increasing reach and making distance and power control harder.
+    reason: The speaker identifies unconsciously stepping back from the table as a main reason players hit long in backhand rallies.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: xWrDKGnqmBs
+      start_ms: 30733
+      end_ms: 54633
+      url: "https://www.youtube.com/watch?v=xWrDKGnqmBs&t=30s"
+      segment_ids:
+        - "xWrDKGnqmBs:00010"
+        - "xWrDKGnqmBs:00015"
+  - id: xWrDKGnqmBs-cand-pressure-causes-backhand-spacing-loss-2
+    evidence_type: mistake
+    excerpt: A common backhand rally problem where pressure from the incoming ball causes the player to back away from the table, increasing reach and making distance and power control harder.
+    reason: The speaker identifies unconsciously stepping back from the table as a main reason players hit long in backhand rallies.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: xWrDKGnqmBs
+      start_ms: 58800
+      end_ms: 75533
+      url: "https://www.youtube.com/watch?v=xWrDKGnqmBs&t=58s"
+      segment_ids:
+        - "xWrDKGnqmBs:00016"
+        - "xWrDKGnqmBs:00023"
+  - id: xWrDKGnqmBs-cand-pressure-causes-backhand-spacing-loss-3
+    evidence_type: explanation
+    excerpt: A common backhand rally problem where pressure from the incoming ball causes the player to back away from the table, increasing reach and making distance and power control harder.
+    reason: 'The speaker explains the causal chain: farther ball, stretched arm, harder distance judgment, and poor power control.'
+    confidence: 0.92
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: xWrDKGnqmBs
+      start_ms: 33866
+      end_ms: 48133
+      url: "https://www.youtube.com/watch?v=xWrDKGnqmBs&t=33s"
+      segment_ids:
+        - "xWrDKGnqmBs:00011"
+        - "xWrDKGnqmBs:00014"
+  - id: xWrDKGnqmBs-cand-pressure-causes-backhand-spacing-loss-4
+    evidence_type: explanation
+    excerpt: A common backhand rally problem where pressure from the incoming ball causes the player to back away from the table, increasing reach and making distance and power control harder.
+    reason: 'The speaker explains the causal chain: farther ball, stretched arm, harder distance judgment, and poor power control.'
+    confidence: 0.92
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: xWrDKGnqmBs
+      start_ms: 66700
+      end_ms: 73900
+      url: "https://www.youtube.com/watch?v=xWrDKGnqmBs&t=66s"
+      segment_ids:
+        - "xWrDKGnqmBs:00020"
+        - "xWrDKGnqmBs:00022"
+  - id: JcH1Nudznvk-cand-backhand-loop-create-space-by-moving-back-1
+    evidence_type: explanation
+    excerpt: When preparing the backhand loop, the player should not only lower the hand but also move slightly backward to make working room for the swing.
+    reason: The speaker explicitly says the body should move slightly backward while lowering the hand to create space.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: JcH1Nudznvk
+      start_ms: 143760
+      end_ms: 156600
+      url: "https://www.youtube.com/watch?v=JcH1Nudznvk&t=143s"
+      segment_ids:
+        - "JcH1Nudznvk:00056"
+        - "JcH1Nudznvk:00058"
+        - "JcH1Nudznvk:00059"
 relations:
   - relation_type: used_with
     target_concept_id: concept-backhand-flick-on-rise

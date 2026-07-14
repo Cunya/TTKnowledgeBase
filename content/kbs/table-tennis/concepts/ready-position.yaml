@@ -34,6 +34,39 @@ evidence:
     visual_status: transcript_inferred
     review_status: approved
     source: {video_id: Cq6MbP6TEdc, start_ms: 240900, end_ms: 245800, url: "https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=240s", segment_ids: ["Cq6MbP6TEdc:00059"]}
+  - id: QET6W3rjOxo-cand-ready-position-1
+    evidence_type: demonstration
+    excerpt: After serving, quickly recover with the hands positioned in front of the chest so the player can read and react before committing.
+    reason: The speaker gives a concrete recovery posture after serve with hands in front, consistent with ready position.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: QET6W3rjOxo
+      start_ms: 354280
+      end_ms: 381919
+      url: "https://www.youtube.com/watch?v=QET6W3rjOxo&t=354s"
+      segment_ids:
+        - "QET6W3rjOxo:00144"
+        - "QET6W3rjOxo:00145"
+        - "QET6W3rjOxo:00146"
+        - "QET6W3rjOxo:00154"
+        - "QET6W3rjOxo:00155"
+  - id: QET6W3rjOxo-cand-ready-position-2
+    evidence_type: demonstration
+    excerpt: After serving, quickly recover with the hands positioned in front of the chest so the player can read and react before committing.
+    reason: The speaker gives a concrete recovery posture after serve with hands in front, consistent with ready position.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: QET6W3rjOxo
+      start_ms: 379000
+      end_ms: 387760
+      url: "https://www.youtube.com/watch?v=QET6W3rjOxo&t=379s"
+      segment_ids:
+        - "QET6W3rjOxo:00156"
+        - "QET6W3rjOxo:00157"
 relations:
   - relation_type: prerequisite_of
     target_concept_id: concept-forehand-loop

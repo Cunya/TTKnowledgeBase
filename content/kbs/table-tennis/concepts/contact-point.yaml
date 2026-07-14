@@ -74,14 +74,22 @@ evidence:
     visual_status: transcript_inferred
     review_status: approved
     source: {video_id: 3kC8KEl3iow, start_ms: 104200, end_ms: 118040, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=104s", segment_ids: ["3kC8KEl3iow:00039", "3kC8KEl3iow:00040", "3kC8KEl3iow:00041", "3kC8KEl3iow:00042", "3kC8KEl3iow:00043"]}
-  - id: close-table-rise-contact-8
+  - id: close-table-rise-contact-8-part-1
     evidence_type: explanation
-    excerpt: Close to the table, take the ball on the rise or at the peak; the rise supports the front-point flick.
+    excerpt: Close to the table, the practical contact choices are on the rise or at the peak.
     reason: Explains how table distance constrains backhand contact timing.
     confidence: 0.97
     visual_status: transcript_inferred
     review_status: approved
-    source: {video_id: BToLYdKLIMM, start_ms: 414880, end_ms: 454520, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=414s", segment_ids: ["BToLYdKLIMM:00153", "BToLYdKLIMM:00154", "BToLYdKLIMM:00155", "BToLYdKLIMM:00166", "BToLYdKLIMM:00167"]}
+    source: {video_id: BToLYdKLIMM, start_ms: 414880, end_ms: 424639, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=414s", segment_ids: ["BToLYdKLIMM:00153", "BToLYdKLIMM:00154", "BToLYdKLIMM:00155"]}
+  - id: close-table-rise-contact-8-part-2
+    evidence_type: explanation
+    excerpt: At very close range, favor the earlier on-the-rise contact.
+    reason: Explains how table distance constrains backhand contact timing.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source: {video_id: BToLYdKLIMM, start_ms: 448720, end_ms: 454520, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=448s", segment_ids: ["BToLYdKLIMM:00166", "BToLYdKLIMM:00167"]}
   - id: forehand-contact-near-thigh-9
     evidence_type: explanation
     excerpt: Let the ball come close to the front of your leg before striking so the body can transfer power.
@@ -90,4 +98,270 @@ evidence:
     visual_status: transcript_inferred
     review_status: approved
     source: {video_id: V2YGbh829eU, start_ms: 406833, end_ms: 421000, url: "https://www.youtube.com/watch?v=V2YGbh829eU&t=406s", segment_ids: ["V2YGbh829eU:00094", "V2YGbh829eU:00095"]}
+  - id: p3hweUir1Mg-candidate-contact-point-1
+    evidence_type: explanation
+    excerpt: The position of racket and ball at impact must be adjusted to the incoming ball height so the intended part of the racket contacts the ball.
+    reason: The speaker explains adjusting racket position to different ball heights so contact occurs correctly.
+    confidence: 0.8
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: p3hweUir1Mg
+      start_ms: 233400
+      end_ms: 242766
+      url: "https://www.youtube.com/watch?v=p3hweUir1Mg&t=233s"
+      segment_ids:
+        - "p3hweUir1Mg:00060"
+        - "p3hweUir1Mg:00061"
+        - "p3hweUir1Mg:00062"
+  - id: p3hweUir1Mg-candidate-contact-point-2
+    evidence_type: explanation
+    excerpt: The position of racket and ball at impact must be adjusted to the incoming ball height so the intended part of the racket contacts the ball.
+    reason: The speaker explains adjusting racket position to different ball heights so contact occurs correctly.
+    confidence: 0.8
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: p3hweUir1Mg
+      start_ms: 269900
+      end_ms: 280566
+      url: "https://www.youtube.com/watch?v=p3hweUir1Mg&t=269s"
+      segment_ids:
+        - "p3hweUir1Mg:00067"
+        - "p3hweUir1Mg:00068"
+        - "p3hweUir1Mg:00069"
+        - "p3hweUir1Mg:00070"
+  - id: JcH1Nudznvk-cand-forehand-loop-contact-at-table-height-1
+    evidence_type: explanation
+    excerpt: 'The same contact-height principle applies on the forehand loop: brushing around table height or slightly lower produces a smoother loop, while brushing too high tends to send the ball into the net.'
+    reason: The speaker extends the same low contact-height rule to the forehand side and contrasts smooth low brushing with netting from high brushing.
+    confidence: 0.87
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: JcH1Nudznvk
+      start_ms: 637200
+      end_ms: 648960
+      url: "https://www.youtube.com/watch?v=JcH1Nudznvk&t=637s"
+      segment_ids:
+        - "JcH1Nudznvk:00245"
+        - "JcH1Nudznvk:00246"
+        - "JcH1Nudznvk:00248"
+        - "JcH1Nudznvk:00249"
+  - id: QET6W3rjOxo-cand-contact-point-1
+    evidence_type: definition
+    excerpt: The precise position and height at which the player meets the ball, especially after adjusting footwork and body height.
+    reason: The speaker frames the lesson around finding the precise hitting position and later asks why players cannot lock onto the hitting point.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: QET6W3rjOxo
+      start_ms: 6080
+      end_ms: 13800
+      url: "https://www.youtube.com/watch?v=QET6W3rjOxo&t=6s"
+      segment_ids:
+        - "QET6W3rjOxo:00003"
+        - "QET6W3rjOxo:00004"
+        - "QET6W3rjOxo:00005"
+  - id: QET6W3rjOxo-cand-contact-point-2
+    evidence_type: definition
+    excerpt: The precise position and height at which the player meets the ball, especially after adjusting footwork and body height.
+    reason: The speaker frames the lesson around finding the precise hitting position and later asks why players cannot lock onto the hitting point.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: QET6W3rjOxo
+      start_ms: 321480
+      end_ms: 328520
+      url: "https://www.youtube.com/watch?v=QET6W3rjOxo&t=321s"
+      segment_ids:
+        - "QET6W3rjOxo:00129"
+        - "QET6W3rjOxo:00130"
+        - "QET6W3rjOxo:00131"
+  - id: I-_3TIjU4qI-candidate-contact-point-locking-1
+    evidence_type: explanation
+    excerpt: Consistently fixing the timing and exact contact location is presented as essential for usable match play and reliable attack progression.
+    reason: The speaker identifies poor spatial sensitivity and inability to lock onto the point as a key problem.
+    confidence: 0.91
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: I-_3TIjU4qI
+      start_ms: 246480
+      end_ms: 257160
+      url: "https://www.youtube.com/watch?v=I-_3TIjU4qI&t=246s"
+      segment_ids:
+        - "I-_3TIjU4qI:00108"
+        - "I-_3TIjU4qI:00109"
+        - "I-_3TIjU4qI:00110"
+        - "I-_3TIjU4qI:00111"
+  - id: I-_3TIjU4qI-candidate-contact-point-locking-2
+    evidence_type: explanation
+    excerpt: Consistently fixing the timing and exact contact location is presented as essential for usable match play and reliable attack progression.
+    reason: The speaker says match ability will not improve unless timing and point are locked in.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: I-_3TIjU4qI
+      start_ms: 300760
+      end_ms: 311360
+      url: "https://www.youtube.com/watch?v=I-_3TIjU4qI&t=300s"
+      segment_ids:
+        - "I-_3TIjU4qI:00131"
+        - "I-_3TIjU4qI:00132"
+        - "I-_3TIjU4qI:00133"
+        - "I-_3TIjU4qI:00134"
+  - id: I-_3TIjU4qI-candidate-contact-point-locking-3
+    evidence_type: explanation
+    excerpt: Consistently fixing the timing and exact contact location is presented as essential for usable match play and reliable attack progression.
+    reason: The progression to stronger looping is gated by solid push consistency and a solid contact point.
+    confidence: 0.87
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: I-_3TIjU4qI
+      start_ms: 336640
+      end_ms: 346680
+      url: "https://www.youtube.com/watch?v=I-_3TIjU4qI&t=336s"
+      segment_ids:
+        - "I-_3TIjU4qI:00147"
+        - "I-_3TIjU4qI:00148"
+        - "I-_3TIjU4qI:00149"
+        - "I-_3TIjU4qI:00150"
+  - id: uag7n7hq3bM-cand-contact-point-1
+    evidence_type: explanation
+    excerpt: The precise height, distance, and ball position where the racket should meet the ball for a controlled return or attack.
+    reason: Speaker explicitly says players fail because they do not accurately find the correct contact point and recommends finding it before forcing power.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: uag7n7hq3bM
+      start_ms: 47040
+      end_ms: 53920
+      url: "https://www.youtube.com/watch?v=uag7n7hq3bM&t=47s"
+      segment_ids:
+        - "uag7n7hq3bM:00015"
+        - "uag7n7hq3bM:00016"
+  - id: uag7n7hq3bM-cand-contact-point-2
+    evidence_type: explanation
+    excerpt: The precise height, distance, and ball position where the racket should meet the ball for a controlled return or attack.
+    reason: Speaker explicitly says players fail because they do not accurately find the correct contact point and recommends finding it before forcing power.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: uag7n7hq3bM
+      start_ms: 77680
+      end_ms: 84600
+      url: "https://www.youtube.com/watch?v=uag7n7hq3bM&t=77s"
+      segment_ids:
+        - "uag7n7hq3bM:00028"
+        - "uag7n7hq3bM:00029"
+  - id: uag7n7hq3bM-cand-contact-point-3
+    evidence_type: drill
+    excerpt: The precise height, distance, and ball position where the racket should meet the ball for a controlled return or attack.
+    reason: Training progression repeatedly centers on first finding the correct contact point, then adding attack and quality.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: uag7n7hq3bM
+      start_ms: 215480
+      end_ms: 241880
+      url: "https://www.youtube.com/watch?v=uag7n7hq3bM&t=215s"
+      segment_ids:
+        - "uag7n7hq3bM:00083"
+        - "uag7n7hq3bM:00091"
+  - id: uag7n7hq3bM-cand-contact-point-4
+    evidence_type: drill
+    excerpt: The precise height, distance, and ball position where the racket should meet the ball for a controlled return or attack.
+    reason: Training progression repeatedly centers on first finding the correct contact point, then adding attack and quality.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: uag7n7hq3bM
+      start_ms: 397600
+      end_ms: 407880
+      url: "https://www.youtube.com/watch?v=uag7n7hq3bM&t=397s"
+      segment_ids:
+        - "uag7n7hq3bM:00157"
+        - "uag7n7hq3bM:00159"
+  - id: uag7n7hq3bM-cand-soft-ball-timing-1
+    evidence_type: explanation
+    excerpt: Against soft or slow incoming balls, delay the stroke slightly, let the ball come closer, and avoid rushing or taking it too early.
+    reason: Speaker identifies the common mistake as rushing and taking the ball too early against soft balls, then says to stay calm and slow down when the ball slows down.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: uag7n7hq3bM
+      start_ms: 519440
+      end_ms: 542160
+      url: "https://www.youtube.com/watch?v=uag7n7hq3bM&t=519s"
+      segment_ids:
+        - "uag7n7hq3bM:00207"
+        - "uag7n7hq3bM:00217"
+  - id: uag7n7hq3bM-cand-soft-ball-timing-2
+    evidence_type: demonstration
+    excerpt: Against soft or slow incoming balls, delay the stroke slightly, let the ball come closer, and avoid rushing or taking it too early.
+    reason: Speaker demonstrates waiting an extra moment, letting the ball get closer to the body, then pressing forward, and contrasts fast-then-slow timing.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: uag7n7hq3bM
+      start_ms: 543760
+      end_ms: 572360
+      url: "https://www.youtube.com/watch?v=uag7n7hq3bM&t=543s"
+      segment_ids:
+        - "uag7n7hq3bM:00218"
+        - "uag7n7hq3bM:00220"
+        - "uag7n7hq3bM:00228"
+  - id: uag7n7hq3bM-cand-soft-ball-timing-3
+    evidence_type: demonstration
+    excerpt: Against soft or slow incoming balls, delay the stroke slightly, let the ball come closer, and avoid rushing or taking it too early.
+    reason: Speaker demonstrates waiting an extra moment, letting the ball get closer to the body, then pressing forward, and contrasts fast-then-slow timing.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: uag7n7hq3bM
+      start_ms: 572360
+      end_ms: 575160
+      url: "https://www.youtube.com/watch?v=uag7n7hq3bM&t=572s"
+      segment_ids:
+        - "uag7n7hq3bM:00230"
+  - id: XfWXrGTlW5M-concept-contact-point-1
+    evidence_type: explanation
+    excerpt: The moment and position where the racket meets the ball; in this lesson, mistimed backswing can force contact too far in front and hurt continuous looping.
+    reason: The coach locates contact during the stroke and explains that an overly fast backswing pushes the contact point too far in front.
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: XfWXrGTlW5M
+      start_ms: 43166
+      end_ms: 49100
+      url: "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=43s"
+      segment_ids:
+        - "XfWXrGTlW5M:00010"
+  - id: XfWXrGTlW5M-concept-contact-point-2
+    evidence_type: explanation
+    excerpt: The moment and position where the racket meets the ball; in this lesson, mistimed backswing can force contact too far in front and hurt continuous looping.
+    reason: The coach locates contact during the stroke and explains that an overly fast backswing pushes the contact point too far in front.
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: XfWXrGTlW5M
+      start_ms: 224233
+      end_ms: 229266
+      url: "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=224s"
+      segment_ids:
+        - "XfWXrGTlW5M:00055"
 relations: []

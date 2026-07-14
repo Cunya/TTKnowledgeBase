@@ -3,8 +3,14 @@ from pathlib import Path
 from ruamel.yaml import YAML
 
 from processors.demo import write_demo_video
-from processors.models import Concept
-from processors.pipeline import load_reviewed_concepts, publish, validate_corpus
+from processors.models import Concept, KnowledgeNavigation
+from processors.pipeline import (
+    load_reviewed_concepts,
+    publish,
+    validate_corpus,
+    validate_navigation,
+    validate_review_queue,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -62,3 +68,42 @@ def test_publish_strips_full_transcript(tmp_path: Path) -> None:
     assert corpus.videos
     assert corpus.videos[0].transcript is None
     assert all(concept.review_status == "approved" for concept in corpus.concepts)
+
+
+def test_accepted_queue_item_requires_exact_canonical_evidence() -> None:
+    concept = demo_concepts()[0]
+    queue = {
+        "items": [
+            {
+                "video_id": "demoTT00001",
+                "decision": "accepted",
+                "canonical_concept_id": concept.id,
+                "candidate": {"evidence": [{"segment_ids": ["demoTT00001:99999"]}]},
+            }
+        ]
+    }
+    assert "no cited segment" in validate_review_queue(queue, [concept])[0]
+
+
+def test_navigation_requires_every_approved_concept() -> None:
+    concept = demo_concepts()[0]
+    navigation = KnowledgeNavigation(
+        title="Test", introduction="Test", sections=[]
+    )
+    assert validate_navigation(navigation, [concept]) == [
+        f"navigation: approved concept is not placed: {concept.id}"
+    ]
+
+
+def test_spoken_source_cannot_exceed_thirty_seconds(tmp_path: Path) -> None:
+    normalized = tmp_path / "normalized"
+    video = write_demo_video(normalized)
+    concept = demo_concepts()[0]
+    evidence = concept.evidence[0]
+    long_source = evidence.source.model_copy(
+        update={"end_ms": evidence.source.start_ms + 30_001}
+    )
+    long_concept = concept.model_copy(
+        update={"evidence": [evidence.model_copy(update={"source": long_source})]}
+    )
+    assert any("spoken source exceeds 30 seconds" in error for error in validate_corpus([long_concept], [video]))

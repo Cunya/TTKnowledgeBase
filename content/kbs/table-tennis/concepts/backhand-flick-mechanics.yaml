@@ -33,6 +33,21 @@ evidence:
     visual_status: transcript_inferred
     review_status: approved
     source: {video_id: BToLYdKLIMM, start_ms: 478479, end_ms: 496440, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=478s", segment_ids: ["BToLYdKLIMM:00178", "BToLYdKLIMM:00179", "BToLYdKLIMM:00180", "BToLYdKLIMM:00181", "BToLYdKLIMM:00182", "BToLYdKLIMM:00183"]}
+  - id: uag7n7hq3bM-cand-backhand-flick-opening-1
+    evidence_type: example
+    excerpt: A later-stage attacking receive or opening option that is introduced after the player can already control rhythm, spacing, and moderate-power attacks.
+    reason: Speaker says that at a higher level, players can start opening with a backhand flick and a forehand loop, still without forcing power.
+    confidence: 0.8
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: uag7n7hq3bM
+      start_ms: 333680
+      end_ms: 351680
+      url: "https://www.youtube.com/watch?v=uag7n7hq3bM&t=333s"
+      segment_ids:
+        - "uag7n7hq3bM:00128"
+        - "uag7n7hq3bM:00133"
 relations:
   - relation_type: used_with
     target_concept_id: concept-backhand-flick-on-rise

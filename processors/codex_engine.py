@@ -17,15 +17,19 @@ class CodexError(RuntimeError):
     pass
 
 
-def preflight(service_tier: str = "flex") -> tuple[str, str]:
+def preflight(service_tier: str | None = None) -> tuple[str, str]:
     executable = shutil.which("codex")
     if not executable:
         raise CodexError("Codex CLI is not installed or is not on PATH")
     version = subprocess.run([executable, "--version"], capture_output=True, text=True, timeout=20)
     if version.returncode != 0:
         raise CodexError(version.stderr.strip() or "Could not read Codex CLI version")
+    login_command = [executable]
+    if service_tier:
+        login_command.extend(["-c", f'service_tier="{service_tier}"'])
+    login_command.extend(["login", "status"])
     login = subprocess.run(
-        [executable, "-c", f'service_tier="{service_tier}"', "login", "status"],
+        login_command,
         capture_output=True,
         text=True,
         timeout=20,
@@ -70,7 +74,7 @@ def extract_with_codex(
     audit_dir: Path,
 ) -> tuple[ExtractionResponse, dict]:
     config = read_yaml(config_path)["codex"]
-    service_tier = config.get("service_tier", "flex")
+    service_tier = config.get("service_tier")
     executable, cli_version = preflight(service_tier)
     model = config["default_model"]
     reasoning = config.get("reasoning_effort", "low")
@@ -97,8 +101,6 @@ def extract_with_codex(
             model,
             "--config",
             f'model_reasoning_effort="{reasoning}"',
-            "--config",
-            f'service_tier="{service_tier}"',
             "--sandbox",
             "read-only",
             "--ephemeral",
@@ -108,6 +110,11 @@ def extract_with_codex(
             str(response_path),
             "--json",
         ]
+        if service_tier:
+            command[command.index("--sandbox"):command.index("--sandbox")] = [
+                "--config",
+                f'service_tier="{service_tier}"',
+            ]
         result = subprocess.run(
             command,
             input=prompt,

@@ -139,3 +139,14 @@ A change is complete only when its claims are source-grounded, visual windows ar
 - "p" ponder on your notes for the current problem and update it if you come up with something new
 - "v" review all local changes (both staged and unstaged) for possible cleanup and any issues for committing. create a new md about it.
 
+### DOCUMENTATION RULES
+- **Keep documentation updated**
+- **Keep and maintain a session log md file** with the current date and hour in the file name, and update it before modifying the code (Keep it in Docs/Session Logs)
+- **Keep and maintain a lessons learned md file** so you can avoid making the same mistakes
+- **Keep the session log and the lessons learned max 500 lines** and start a new when reaching the limit
+- **Organize the session log** so that the order of activities with time stamps can be followed
+- **Before making code changes check the session log** in many cases the process is going around in cirles, you should be aware of this
+- **Whenevery you find code that could be made more efficient, duplicate code refactored into common methods, etc, make a note in a refactorings.md file**
+- **Make notes for yourself in a session notes file** with the current date and hour in the file name and session notes in the file name.
+
+
