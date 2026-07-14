@@ -1,0 +1,44 @@
+id: concept-forehand-loop-common-errors
+slug: forehand-loop-common-errors
+label: Forehand loop common errors
+aliases: [loop corrections, push-brush error, vertical brushing error]
+short_definition: Common loop failures include pushing before brushing, lifting only upward, rotating the wrist in place, reaching, and using maximum power before the stroke is stable.
+detailed_definition: These errors break the intended sequence or contact geometry. Useful corrections preserve a curved racket path, cover the ball, move forward through contact, maintain spacing, and develop the stroke below maximum effort before adding speed.
+concept_type: troubleshooting
+facets: {category: [error-correction, mechanics], side: [forehand], spin: [topspin], level: [beginner, intermediate]}
+difficulty: beginner
+review_status: approved
+evidence:
+  - id: error-push-before-brush-global
+    evidence_type: mistake
+    excerpt: If the arm pushes first, the ball leaves the racket before the later brushing action can affect it.
+    reason: Explains why a push-then-wrist sequence does not create useful spin.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    visual_source: {video_id: V2YGbh829eU, start_ms: 135000, end_ms: 150000, url: "https://www.youtube.com/watch?v=V2YGbh829eU&t=135s", selection_method: nearby_visual_inference, note: Ball-on-racket demonstration contrasts pushing first with wrapping and brushing.}
+    review_status: approved
+    source: {video_id: V2YGbh829eU, start_ms: 145533, end_ms: 154800, url: "https://www.youtube.com/watch?v=V2YGbh829eU&t=145s", segment_ids: ["V2YGbh829eU:00034", "V2YGbh829eU:00035"]}
+  - id: error-brush-upward-global
+    evidence_type: correction
+    excerpt: Brush over the top of the ball; the path should not simply travel upward.
+    reason: Corrects loops that fly long because the action is too vertical.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    visual_source: {video_id: Cq6MbP6TEdc, start_ms: 378000, end_ms: 390000, url: "https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=378s", selection_method: nearby_visual_inference, note: Live loops demonstrate covering the ball from different table distances.}
+    review_status: approved
+    source: {video_id: Cq6MbP6TEdc, start_ms: 379266, end_ms: 387700, url: "https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=379s", segment_ids: ["Cq6MbP6TEdc:00094", "Cq6MbP6TEdc:00095"]}
+  - id: error-wrist-in-place-spinmaster
+    evidence_type: correction
+    excerpt: Racket rotation must combine with forward movement; rotating the wrist in place will not send the ball over.
+    reason: Corrects an isolated wrist action without forward travel.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    visual_source: {video_id: V__nqiNHeKE, start_ms: 260000, end_ms: 274000, url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=260s", selection_method: nearby_visual_inference, note: Close demonstration contrasts forward action with rotation in place.}
+    review_status: approved
+    source: {video_id: V__nqiNHeKE, start_ms: 267880, end_ms: 276360, url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=267s", segment_ids: ["V__nqiNHeKE:00100", "V__nqiNHeKE:00101", "V__nqiNHeKE:00102"]}
+relations:
+  - relation_type: corrects
+    target_concept_id: concept-forehand-loop
+    confidence: 0.96
+    review_status: approved
+    sources: [{video_id: Cq6MbP6TEdc, start_ms: 379266, end_ms: 387700, url: "https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=379s", segment_ids: ["Cq6MbP6TEdc:00094", "Cq6MbP6TEdc:00095"]}]

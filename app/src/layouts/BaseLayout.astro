@@ -1,0 +1,44 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  kbId?: string;
+}
+
+const {
+  title = 'RallyGraph',
+  description = 'Source-grounded concepts demonstrated by exact moments in video.',
+  kbId,
+} = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title === 'RallyGraph' ? title : `${title} · RallyGraph`}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href={base} aria-label="RallyGraph home">
+        <span class="brand-mark">RG</span>
+        <span>RallyGraph</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href={kbId ? `${base}kb/${kbId}/concepts/` : base}>Knowledge bases</a>
+        {kbId && <a href={`${base}kb/${kbId}/videos/`}>Videos</a>}
+        <a href={`${base}methodology/`}>Method</a>
+      </nav>
+    </header>
+    <main><slot /></main>
+    <footer>
+      <p>Every knowledge item links back to its source moment. Independent educational project.</p>
+    </footer>
+  </body>
+</html>

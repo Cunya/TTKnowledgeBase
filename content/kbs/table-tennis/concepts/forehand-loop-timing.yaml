@@ -1,0 +1,48 @@
+id: concept-forehand-loop-timing
+slug: forehand-loop-timing
+label: Forehand loop timing and rhythm
+aliases: [loop timing, wait-loop rhythm, late acceleration]
+short_definition: Time the forehand loop by waiting for the ball, staying loose through preparation, and accelerating at contact.
+detailed_definition: Incoming pace changes the tempo, but the player still avoids rushing the backswing. The body and racket prepare with the ball, remain relaxed, and release speed late at the chosen contact point.
+concept_type: principle
+facets:
+  category: [timing, stroke]
+  side: [forehand]
+  spin: [topspin]
+  level: [intermediate]
+difficulty: intermediate
+review_status: approved
+evidence:
+  - id: timing-late-acceleration-global
+    evidence_type: explanation
+    excerpt: Your swing should be relaxed until just before the contact point, not forceful from the beginning.
+    reason: Defines late-stage acceleration.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    visual_source: {video_id: qLT0MvwitZc, start_ms: 96000, end_ms: 106000, url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=96s", selection_method: nearby_visual_inference, note: Coach demonstrates the relaxed approach and late racket acceleration.}
+    review_status: approved
+    source: {video_id: qLT0MvwitZc, start_ms: 88866, end_ms: 94066, url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=88s", segment_ids: ["qLT0MvwitZc:00021"]}
+  - id: timing-wait-rhythm-global
+    evidence_type: demonstration
+    excerpt: "For a slow ball the rhythm is 'wait, loop'; for a fast ball it is 'wait, quick.'"
+    reason: Demonstrates pace-dependent rhythm.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    visual_source: {video_id: XfWXrGTlW5M, start_ms: 294000, end_ms: 306000, url: "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=294s", selection_method: nearby_visual_inference, note: Consecutive fed balls demonstrate waiting and changing the swing tempo.}
+    review_status: approved
+    source: {video_id: XfWXrGTlW5M, start_ms: 303966, end_ms: 309300, url: "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=303s", segment_ids: ["XfWXrGTlW5M:00074"]}
+  - id: timing-relax-contact-spinmaster
+    evidence_type: correction
+    excerpt: Stay relaxed before the ball; accelerate and apply force only at contact.
+    reason: Corrects premature tension and rushed acceleration.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    visual_source: {video_id: dWZw3A0X-4A, start_ms: 521000, end_ms: 533000, url: "https://www.youtube.com/watch?v=dWZw3A0X-4A&t=521s", selection_method: nearby_visual_inference, note: Live-ball strokes illustrate tension before contact and the late release.}
+    review_status: approved
+    source: {video_id: dWZw3A0X-4A, start_ms: 539120, end_ms: 548040, url: "https://www.youtube.com/watch?v=dWZw3A0X-4A&t=539s", segment_ids: ["dWZw3A0X-4A:00179", "dWZw3A0X-4A:00180", "dWZw3A0X-4A:00181"]}
+relations:
+  - relation_type: part_of
+    target_concept_id: concept-forehand-loop
+    confidence: 0.99
+    review_status: approved
+    sources: [{video_id: XfWXrGTlW5M, start_ms: 303966, end_ms: 309300, url: "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=303s", segment_ids: ["XfWXrGTlW5M:00074"]}]

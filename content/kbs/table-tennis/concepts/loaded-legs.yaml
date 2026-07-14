@@ -1,0 +1,57 @@
+id: concept-loaded-legs
+slug: loaded-legs
+label: Ground connection and loaded legs
+aliases: [loaded-spring stance, engaged legs, body-ground connection]
+short_definition: Keep the legs engaged and connect to the floor so force can travel from the ground into the stroke.
+detailed_definition: Ground connection is not limited to rally strokes. The same principle appears in serving, where weight transfer and a stomp can multiply the force delivered to the racket.
+concept_type: body-mechanics
+facets: {category: [stance, power, kinetic-chain], side: [neutral], level: [beginner, intermediate]}
+difficulty: beginner
+review_status: approved
+evidence:
+  - id: loaded-legs-spring-1
+    evidence_type: explanation
+    excerpt: Your legs must carry tension—engaged like loaded springs.
+    reason: Defines the intended leg engagement without locking the knees.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: 3kC8KEl3iow, start_ms: 48400, end_ms: 57040, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=48s", segment_ids: ["3kC8KEl3iow:00019", "3kC8KEl3iow:00020"]}
+  - id: loaded-legs-power-2
+    evidence_type: explanation
+    excerpt: When your legs are loaded, your upper body can actually generate power.
+    reason: Connects the base of support to upper-body power production.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: 3kC8KEl3iow, start_ms: 55280, end_ms: 63160, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=55s", segment_ids: ["3kC8KEl3iow:00021", "3kC8KEl3iow:00022", "3kC8KEl3iow:00023"]}
+  - id: serve-ground-connection-3
+    evidence_type: demonstration
+    excerpt: The stomp creates a body-ground connection. It's a force multiplier.
+    reason: Demonstrates the same ground-connection principle in a serve from another video.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: csJgHR7Daog, start_ms: 321480, end_ms: 331320, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=321s", segment_ids: ["csJgHR7Daog:00146", "csJgHR7Daog:00147", "csJgHR7Daog:00148", "csJgHR7Daog:00149"]}
+  - id: global-unengaged-legs-4
+    evidence_type: mistake
+    excerpt: The issue is your legs are not engaged; they're like wet noodles.
+    reason: Global TT Studio diagnoses the opposite of loaded legs.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: YUEaL2HiPIE, start_ms: 468233, end_ms: 477533, url: "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=468s", segment_ids: ["YUEaL2HiPIE:00100", "YUEaL2HiPIE:00101"]}
+  - id: global-spring-legs-5
+    evidence_type: correction
+    excerpt: Engage your legs. Think of your legs as springs that store energy to release.
+    reason: Provides the positive spring analogy from the new channel.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: YUEaL2HiPIE, start_ms: 489300, end_ms: 501466, url: "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=489s", segment_ids: ["YUEaL2HiPIE:00105", "YUEaL2HiPIE:00106", "YUEaL2HiPIE:00107"]}
+relations:
+  - relation_type: used_with
+    target_concept_id: concept-body-hand-synchronization
+    sources: [{video_id: 3kC8KEl3iow, start_ms: 55280, end_ms: 63160, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=55s", segment_ids: ["3kC8KEl3iow:00021", "3kC8KEl3iow:00022", "3kC8KEl3iow:00023"]}]
+    confidence: 0.93
+    review_status: approved

@@ -1,0 +1,40 @@
+id: concept-backspin-serve-under-ball-contact
+slug: backspin-serve-under-ball-contact
+label: Under-ball contact for backspin serve
+aliases: [bottom contact, heavy backspin contact]
+short_definition: Brush under the ball—rather than its back—to produce heavy backspin on the serve.
+concept_type: technique-cue
+facets: {category: [serve, spin, contact], side: [neutral], level: [beginner, intermediate]}
+difficulty: beginner
+review_status: approved
+evidence:
+  - id: backspin-wrong-contact-1
+    evidence_type: mistake
+    excerpt: Players contact the back of the ball, then wonder why it doesn't spin.
+    reason: Identifies the common contact-location error.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: csJgHR7Daog, start_ms: 523840, end_ms: 531400, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=523s", segment_ids: ["csJgHR7Daog:00226", "csJgHR7Daog:00227", "csJgHR7Daog:00228", "csJgHR7Daog:00229"]}
+  - id: backspin-under-ball-2
+    evidence_type: correction
+    excerpt: To create spin, you must be under the ball. That's how it grips.
+    reason: Corrects the contact location.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: csJgHR7Daog, start_ms: 533360, end_ms: 538600, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=533s", segment_ids: ["csJgHR7Daog:00230", "csJgHR7Daog:00231"]}
+  - id: backspin-contact-zones-3
+    evidence_type: demonstration
+    excerpt: Bottom contact, maximum spin. Middle-lower, strong spin.
+    reason: Compares two useful under-ball contact regions.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: csJgHR7Daog, start_ms: 541520, end_ms: 549520, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=541s", segment_ids: ["csJgHR7Daog:00232", "csJgHR7Daog:00233"]}
+relations:
+  - relation_type: used_with
+    target_concept_id: concept-loose-grip-backhand-friction
+    sources: [{video_id: csJgHR7Daog, start_ms: 533360, end_ms: 538600, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=533s", segment_ids: ["csJgHR7Daog:00230", "csJgHR7Daog:00231"]}]
+    confidence: 0.99
+    review_status: approved

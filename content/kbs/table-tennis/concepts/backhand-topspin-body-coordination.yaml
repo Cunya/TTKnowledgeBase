@@ -1,0 +1,66 @@
+id: concept-backhand-topspin-body-coordination
+slug: backhand-topspin-body-coordination
+label: Backhand topspin body coordination
+aliases: [backhand loop body mechanics, backhand coil and thrust, coordinated backhand topspin]
+short_definition: A coordinated backhand topspin uses a square, open stance and a core-led coil-and-thrust so the forearm can accelerate without becoming disconnected from the body.
+detailed_definition: Keep the feet nearly level, leave enough hip space for the backswing to remain inside the body line, and coil the abdomen inward with the preparation. Drive the core forward into contact while the forearm supplies the ordinary upward component. A static or permanently coiled body leaves the arm working alone and limits both power and consistency.
+concept_type: principle
+facets:
+  category: [mechanics, stroke]
+  side: [backhand]
+  spin: [topspin]
+  level: [intermediate]
+difficulty: intermediate
+review_status: approved
+evidence:
+  - id: backhand-square-stance-spinmaster
+    evidence_type: explanation
+    excerpt: Keep the feet nearly level, with the right foot at most slightly forward.
+    reason: Establishes a stable base for repeated backhand strokes.
+    confidence: 0.92
+    visual_status: not_visual
+    review_status: approved
+    source: {video_id: 3kC8KEl3iow, start_ms: 2280, end_ms: 16960, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=2s", segment_ids: ["3kC8KEl3iow:00000", "3kC8KEl3iow:00001", "3kC8KEl3iow:00002", "3kC8KEl3iow:00003", "3kC8KEl3iow:00004", "3kC8KEl3iow:00005"]}
+  - id: backhand-open-hips-spinmaster
+    evidence_type: correction
+    excerpt: Open the hips and keep the backswing inside the body line.
+    reason: Prevents the contact from drifting too far outside the body.
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source: {video_id: 3kC8KEl3iow, start_ms: 30760, end_ms: 39240, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=30s", segment_ids: ["3kC8KEl3iow:00010", "3kC8KEl3iow:00011", "3kC8KEl3iow:00012"]}
+  - id: backhand-core-coil-global
+    evidence_type: explanation
+    excerpt: Coil the abdomen inward before driving forward into the active backhand.
+    reason: Identifies the core action that connects preparation to forward acceleration.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source: {video_id: YUEaL2HiPIE, start_ms: 125100, end_ms: 150833, url: "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=125s", segment_ids: ["YUEaL2HiPIE:00025", "YUEaL2HiPIE:00027", "YUEaL2HiPIE:00030"]}
+  - id: backhand-static-body-error-global
+    evidence_type: mistake
+    excerpt: A static body disconnects the backswing and prevents useful power generation.
+    reason: Contrasts coordinated core movement with an arm-only backhand.
+    confidence: 0.91
+    visual_status: not_visual
+    review_status: approved
+    source: {video_id: YUEaL2HiPIE, start_ms: 150833, end_ms: 169266, url: "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=150s", segment_ids: ["YUEaL2HiPIE:00031", "YUEaL2HiPIE:00032", "YUEaL2HiPIE:00033", "YUEaL2HiPIE:00034"]}
+  - id: backhand-forearm-lift-global
+    evidence_type: correction
+    excerpt: For ordinary strokes, the forearm supplies lift after contact instead of the shoulder.
+    reason: Separates the forearm's upward role from the upper arm's forward drive.
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source: {video_id: YUEaL2HiPIE, start_ms: 414200, end_ms: 427433, url: "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=414s", segment_ids: ["YUEaL2HiPIE:00087", "YUEaL2HiPIE:00088", "YUEaL2HiPIE:00089"]}
+relations:
+  - relation_type: used_with
+    target_concept_id: concept-body-hand-synchronization
+    confidence: 0.96
+    review_status: approved
+    sources: [{video_id: YUEaL2HiPIE, start_ms: 180200, end_ms: 199400, url: "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=180s", segment_ids: ["YUEaL2HiPIE:00038", "YUEaL2HiPIE:00039", "YUEaL2HiPIE:00040", "YUEaL2HiPIE:00041"]}]
+  - relation_type: used_with
+    target_concept_id: concept-loaded-legs
+    confidence: 0.91
+    review_status: approved
+    sources: [{video_id: 3kC8KEl3iow, start_ms: 2280, end_ms: 16960, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=2s", segment_ids: ["3kC8KEl3iow:00000", "3kC8KEl3iow:00001", "3kC8KEl3iow:00002", "3kC8KEl3iow:00003", "3kC8KEl3iow:00004", "3kC8KEl3iow:00005"]}]

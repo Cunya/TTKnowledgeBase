@@ -1,0 +1,57 @@
+id: concept-backhand-swing-arc-spacing
+slug: backhand-swing-arc-spacing
+label: Creating space for the backhand
+aliases: [backhand swing-arc spacing, backhand working room, create space]
+short_definition: Adjust body-to-ball distance so the racket has room for a natural backswing and forward arc.
+detailed_definition: Spacing changes both the available stroke and contact timing. Too close produces a cramped push; roughly a racket or arm's length of working room permits acceleration and gives more timing options.
+concept_type: positioning
+facets: {category: [backhand, spacing, timing], side: [backhand], level: [beginner, intermediate]}
+difficulty: beginner
+review_status: approved
+evidence:
+  - id: spacing-too-close-1
+    evidence_type: mistake
+    excerpt: The player stands too close to the ball.
+    reason: Introduces body-to-ball distance as the cause of the cramped stroke.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: 3kC8KEl3iow, start_ms: 184120, end_ms: 194120, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=184s", segment_ids: ["3kC8KEl3iow:00068", "3kC8KEl3iow:00069", "3kC8KEl3iow:00070"]}
+  - id: spacing-cramped-push-2
+    evidence_type: mistake
+    excerpt: There's no space between hand and ball, so all the player can do is push forward from the chest.
+    reason: Shows the mechanical consequence of insufficient working room.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: 3kC8KEl3iow, start_ms: 191800, end_ms: 203239, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=191s", segment_ids: ["3kC8KEl3iow:00071", "3kC8KEl3iow:00072", "3kC8KEl3iow:00073", "3kC8KEl3iow:00074"]}
+  - id: spacing-racket-length-3
+    evidence_type: explanation
+    excerpt: The peak of the bounce and your forward swing need roughly one racket length between them.
+    reason: Supplies a practical spacing reference for forward acceleration.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: 3kC8KEl3iow, start_ms: 337840, end_ms: 349040, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=337s", segment_ids: ["3kC8KEl3iow:00128", "3kC8KEl3iow:00129", "3kC8KEl3iow:00130", "3kC8KEl3iow:00131", "3kC8KEl3iow:00132"]}
+  - id: spacing-arm-length-4
+    evidence_type: demonstration
+    excerpt: Give yourself an arm's length of space. Now you can choose peak or rising.
+    reason: A second video connects distance from the table to available contact timing.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: BToLYdKLIMM, start_ms: 478479, end_ms: 488120, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=478s", segment_ids: ["BToLYdKLIMM:00178", "BToLYdKLIMM:00179", "BToLYdKLIMM:00180"]}
+  - id: global-left-racket-space-5
+    evidence_type: correction
+    excerpt: Position the racket slightly left. This creates space for lateral force and a proper outside arc.
+    reason: Adds a Global TT Studio correction for creating backhand rotation room.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: YUEaL2HiPIE, start_ms: 229800, end_ms: 242766, url: "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=229s", segment_ids: ["YUEaL2HiPIE:00049", "YUEaL2HiPIE:00050", "YUEaL2HiPIE:00051"]}
+relations:
+  - relation_type: used_with
+    target_concept_id: concept-backhand-flick-on-rise
+    sources: [{video_id: BToLYdKLIMM, start_ms: 478479, end_ms: 488120, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=478s", segment_ids: ["BToLYdKLIMM:00178", "BToLYdKLIMM:00179", "BToLYdKLIMM:00180"]}]
+    confidence: 0.96
+    review_status: approved

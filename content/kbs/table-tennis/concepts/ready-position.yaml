@@ -1,0 +1,39 @@
+id: concept-ready-position
+slug: ready-position
+label: Ready position
+aliases:
+  - ready stance
+short_definition: A balanced neutral stance used to react and recover between strokes.
+detailed_definition: Keep the knees bent, weight toward the front of the feet, and return to the stance after each stroke.
+concept_type: fundamental
+facets:
+  category: [fundamentals]
+  side: [neutral]
+  level: [beginner]
+difficulty: beginner
+review_status: approved
+evidence:
+  - id: ready-position-demo-1
+    evidence_type: demonstration
+    excerpt: Start in a balanced ready position. Keep your knees bent and your weight on the front of your feet.
+    reason: Defines the stance and gives two observable body-position cues.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: demoTT00001
+      start_ms: 12000
+      end_ms: 22000
+      url: https://www.youtube.com/watch?v=demoTT00001&t=12s
+      segment_ids: ["demoTT00001:00000", "demoTT00001:00001"]
+relations:
+  - relation_type: prerequisite_of
+    target_concept_id: concept-forehand-loop
+    confidence: 0.85
+    review_status: approved
+    sources:
+      - video_id: demoTT00001
+        start_ms: 12000
+        end_ms: 26300
+        url: https://www.youtube.com/watch?v=demoTT00001&t=12s
+        segment_ids: ["demoTT00001:00000", "demoTT00001:00001", "demoTT00001:00002"]

@@ -1,0 +1,10 @@
+codex:
+  default_model: gpt-5.4
+  reasoning_effort: low
+  service_tier: fast
+  escalation_model: gpt-5.4
+  escalation_reasoning_effort: low
+  allow_automatic_escalation: false
+  timeout_seconds: 300
+  max_segments_per_job: 80
+  overlap_segments: 8

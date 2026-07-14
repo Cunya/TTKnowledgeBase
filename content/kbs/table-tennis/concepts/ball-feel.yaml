@@ -1,0 +1,49 @@
+id: concept-ball-feel
+slug: ball-feel
+label: Ball feel
+aliases: [touch, rhythm control, spatial awareness]
+short_definition: The combined ability to sense timing, space, contact, and tempo so the stroke adapts to each incoming ball.
+detailed_definition: Ball feel is developed through variation rather than one fixed contact. Training different phases of the bounce and deliberately changing tempo builds a wider timing window and more adaptable touch.
+concept_type: foundational-skill
+facets: {category: [timing, touch, awareness], side: [neutral], level: [beginner, intermediate, advanced]}
+difficulty: intermediate
+review_status: approved
+evidence:
+  - id: ball-feel-definition-1
+    evidence_type: definition
+    excerpt: Ball feel includes touch, spatial awareness, and rhythm.
+    reason: Global TT Studio explicitly defines the components of ball feel.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source: {video_id: G7eiadOxN8E, start_ms: 39433, end_ms: 49233, url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=39s", segment_ids: ["G7eiadOxN8E:00010", "G7eiadOxN8E:00011"]}
+  - id: rhythm-control-2
+    evidence_type: explanation
+    excerpt: The key is understanding rhythm. You must learn to control the tempo.
+    reason: Identifies rhythm control as a trainable component.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source: {video_id: G7eiadOxN8E, start_ms: 91000, end_ms: 98666, url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=91s", segment_ids: ["G7eiadOxN8E:00021", "G7eiadOxN8E:00022"]}
+  - id: two-timing-drill-3
+    evidence_type: drill
+    excerpt: Practice two timings—on the rise and at the start of the descent.
+    reason: Gives a concrete drill for expanding timing adaptability.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: G7eiadOxN8E, start_ms: 99666, end_ms: 108633, url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=99s", segment_ids: ["G7eiadOxN8E:00024", "G7eiadOxN8E:00025"]}
+  - id: timing-switch-4
+    evidence_type: demonstration
+    excerpt: Start on the rise, then switch to just after the peak.
+    reason: Demonstrates the timing variation in a short repeatable window.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: G7eiadOxN8E, start_ms: 108633, end_ms: 117733, url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=108s", segment_ids: ["G7eiadOxN8E:00026", "G7eiadOxN8E:00027"]}
+relations:
+  - relation_type: used_with
+    target_concept_id: concept-contact-point
+    sources: [{video_id: G7eiadOxN8E, start_ms: 99666, end_ms: 108633, url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=99s", segment_ids: ["G7eiadOxN8E:00024", "G7eiadOxN8E:00025"]}]
+    confidence: 0.99
+    review_status: approved

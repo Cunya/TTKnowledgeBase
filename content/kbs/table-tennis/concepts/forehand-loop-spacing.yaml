@@ -1,0 +1,49 @@
+id: concept-forehand-loop-spacing
+slug: forehand-loop-spacing
+label: Forehand loop spacing and contact zone
+aliases: [loop distance, hand-ball distance, forehand contact zone]
+short_definition: Preserve enough room from the table and body for the ball to enter a repeatable contact zone without reaching or getting jammed.
+detailed_definition: Good spacing is dynamic rather than a single fixed distance. Start far enough from the table to complete the stroke, adjust with the feet to the ball's depth, and let the ball approach the lead-leg area so body rotation can transfer power without overreaching.
+concept_type: principle
+facets: {category: [spacing, footwork, contact], side: [forehand], spin: [topspin], level: [beginner, intermediate]}
+difficulty: beginner
+review_status: approved
+evidence:
+  - id: spacing-table-distance-spinmaster
+    evidence_type: correction
+    excerpt: Leave at least one upper-arm's distance when playing a forehand topspin loop.
+    reason: Supplies a practical starting reference for table distance.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    visual_source: {video_id: I99BjizeWeE, start_ms: 49000, end_ms: 61000, url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=49s", selection_method: nearby_visual_inference, note: Coach demonstrates the space required between player and table.}
+    review_status: approved
+    source: {video_id: I99BjizeWeE, start_ms: 50533, end_ms: 56700, url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=50s", segment_ids: ["I99BjizeWeE:00022", "I99BjizeWeE:00023"]}
+  - id: spacing-near-thigh-global
+    evidence_type: demonstration
+    excerpt: Let the ball come close, near the front of the leg, before striking.
+    reason: Locates the body-relative contact zone.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    visual_source: {video_id: V2YGbh829eU, start_ms: 420000, end_ms: 432000, url: "https://www.youtube.com/watch?v=V2YGbh829eU&t=420s", selection_method: nearby_visual_inference, note: Live feeds contrast a close contact zone with reaching in front.}
+    review_status: approved
+    source: {video_id: V2YGbh829eU, start_ms: 406833, end_ms: 421000, url: "https://www.youtube.com/watch?v=V2YGbh829eU&t=406s", segment_ids: ["V2YGbh829eU:00094", "V2YGbh829eU:00095"]}
+  - id: spacing-hand-ball-distance-spinmaster
+    evidence_type: demonstration
+    excerpt: The distance between your hand and the ball is crucial.
+    reason: Shows that landing depth must be read before choosing the preparation size.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    visual_source: {video_id: JmOI0L7SiG8, start_ms: 194000, end_ms: 207000, url: "https://www.youtube.com/watch?v=JmOI0L7SiG8&t=194s", selection_method: nearby_visual_inference, note: Ball placement examples show how landing depth changes hand-ball distance.}
+    review_status: approved
+    source: {video_id: JmOI0L7SiG8, start_ms: 187966, end_ms: 195233, url: "https://www.youtube.com/watch?v=JmOI0L7SiG8&t=187s", segment_ids: ["JmOI0L7SiG8:00065", "JmOI0L7SiG8:00066"]}
+relations:
+  - relation_type: used_with
+    target_concept_id: concept-forehand-loop
+    confidence: 0.99
+    review_status: approved
+    sources: [{video_id: V2YGbh829eU, start_ms: 406833, end_ms: 421000, url: "https://www.youtube.com/watch?v=V2YGbh829eU&t=406s", segment_ids: ["V2YGbh829eU:00094", "V2YGbh829eU:00095"]}]
+  - relation_type: used_with
+    target_concept_id: concept-contact-point
+    confidence: 0.97
+    review_status: approved
+    sources: [{video_id: JmOI0L7SiG8, start_ms: 187966, end_ms: 195233, url: "https://www.youtube.com/watch?v=JmOI0L7SiG8&t=187s", segment_ids: ["JmOI0L7SiG8:00065", "JmOI0L7SiG8:00066"]}]

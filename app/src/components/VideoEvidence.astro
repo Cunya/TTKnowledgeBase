@@ -1,0 +1,102 @@
+---
+import type { Evidence, Video } from '../types';
+interface Props { evidence: Evidence[]; videos: Video[] }
+const { evidence, videos } = Astro.props;
+const videoMap = Object.fromEntries(videos.map((video) => [video.id, video]));
+const initial = evidence.find((item) => item.visual_source) ?? evidence[0];
+const initialClip = initial?.visual_source ?? initial?.source;
+const initialIndex = Math.max(0, evidence.indexOf(initial));
+const chapters = [
+  { id: 'understand', label: 'Understand the idea', description: 'Definitions and explanations that establish what the concept means.', types: ['definition', 'explanation'] },
+  { id: 'execute', label: 'Execute the technique', description: 'Demonstrations and corrections that turn the idea into an action.', types: ['demonstration', 'correction'] },
+  { id: 'practice', label: 'Practice and apply', description: 'Drills and examples for acquiring or using the concept.', types: ['drill', 'example'] },
+  { id: 'diagnose', label: 'Diagnose problems', description: 'Mistakes and failure patterns that clarify what to avoid.', types: ['mistake'] },
+].map((chapter) => {
+  const items = evidence.map((item, index) => ({ item, index })).filter(({ item }) => chapter.types.includes(item.evidence_type));
+  const sources = [...new Set(items.map(({ item }) => item.source.video_id))].map((videoId) => ({
+    videoId,
+    video: videoMap[videoId],
+    items: items.filter(({ item }) => item.source.video_id === videoId),
+  }));
+  return { ...chapter, items, sources };
+}).filter((chapter) => chapter.items.length > 0);
+const sourceCount = new Set(evidence.map((item) => item.source.video_id)).size;
+const formatTime = (milliseconds: number) => {
+  const total = Math.floor(milliseconds / 1000);
+  return `${Math.floor(total / 60)}:${String(total % 60).padStart(2, '0')}`;
+};
+---
+
+<section data-evidence-root data-initial-video={initialClip?.video_id} data-initial-start={initialClip?.start_ms ?? 0} data-initial-end={initialClip?.end_ms ?? 0} data-initial-loopable={String(Boolean(initial?.visual_source))}>
+  <nav class="evidence-outline" aria-label="Evidence sections">
+    <div><strong>{evidence.length} moments</strong><span>from {sourceCount} supporting video{sourceCount === 1 ? '' : 's'}</span></div>
+    <ol>{chapters.map((chapter, index) => <li><a href={`#evidence-${chapter.id}`}><span>{String(index + 1).padStart(2, '0')}</span><strong>{chapter.label}</strong><small>{chapter.items.length} moment{chapter.items.length === 1 ? '' : 's'} · {chapter.sources.length} video{chapter.sources.length === 1 ? '' : 's'}</small></a></li>)}</ol>
+  </nav>
+  <div class="evidence-layout">
+    <div class="player-column">
+      <div class="player-shell"><div id="yt-player"></div></div>
+      <div class="clip-toolbar">
+        <button type="button" class:list={['loop-toggle', { active: Boolean(initial?.visual_source) }]} data-loop-toggle aria-pressed={Boolean(initial?.visual_source)} disabled={!initial?.visual_source}><span aria-hidden="true">↻</span> Loop visual</button>
+        <span data-now-playing>{initialClip ? `${formatTime(initialClip.start_ms)}–${formatTime(initialClip.end_ms)}` : ''}</span>
+      </div>
+      <p class="player-note">One shared player switches between the cited sources. Only reviewed visual examples can loop.</p>
+    </div>
+    <div class="evidence-manuscript">
+      {chapters.map((chapter, chapterIndex) => <section class="evidence-chapter" id={`evidence-${chapter.id}`}>
+        <header><span>{String(chapterIndex + 1).padStart(2, '0')}</span><div><h3>{chapter.label}</h3><p>{chapter.description}</p></div></header>
+        {chapter.sources.map((source) => <section class="evidence-source">
+          <header><h4>{source.video?.title ?? source.videoId}</h4><p>{source.video?.channel_name} · {source.items.length} cited moment{source.items.length === 1 ? '' : 's'}</p></header>
+          <div class="evidence-rows">
+            {source.items.map(({ item, index }) => {
+              const clip = item.visual_source ?? { ...item.source, end_ms: item.spoken_context_end_ms ?? item.source.end_ms };
+              const spokenEnd = item.spoken_context_end_ms ?? item.source.end_ms;
+              const duration = Math.max(1, Math.round((clip.end_ms - clip.start_ms) / 1000));
+              return <article class:list={['evidence-row', { active: index === initialIndex }]} id={`moment-${item.source.video_id}-${Math.floor(item.source.start_ms / 1000)}`}>
+                <div class="evidence-row-meta"><span>{item.evidence_type.replaceAll('_', ' ')}</span><small>{duration}s</small></div>
+                <div><blockquote>{item.excerpt}</blockquote><p>{item.reason}</p><small>{item.visual_source ? `${item.visual_source.selection_method.replaceAll('_', ' ')} · ${item.visual_source.note}` : 'Spoken source; visual example not yet selected.'}</small></div>
+                <div class="evidence-row-actions">
+                  {item.visual_source && <button class="play-moment" data-video={clip.video_id} data-start={Math.floor(clip.start_ms / 1000)} data-end={Math.ceil(clip.end_ms / 1000)} data-loopable="true">Loop visual<span>{formatTime(clip.start_ms)}–{formatTime(clip.end_ms)}</span></button>}
+                  <button class="play-moment" data-video={item.source.video_id} data-start={Math.floor(item.source.start_ms / 1000)} data-end={Math.ceil(spokenEnd / 1000)} data-loopable="false">Play explanation<span>{formatTime(item.source.start_ms)}–{formatTime(spokenEnd)}</span></button>
+                  <a href={item.source.url} target="_blank" rel="noreferrer" aria-label={`Open spoken citation at ${formatTime(item.source.start_ms)}`}>↗</a>
+                </div>
+              </article>;
+            })}
+          </div>
+        </section>)}
+      </section>)}
+    </div>
+  </div>
+</section>
+
+<script>
+  type Clip = { videoId: string; startSeconds: number; endSeconds: number; loopable?: boolean };
+  type YouTubePlayer = { loadVideoById(options: Clip): void; getCurrentTime(): number; seekTo(seconds: number, allowSeekAhead: boolean): void; playVideo(): void };
+  type YouTubeNamespace = { Player: new (id: string, options: Record<string, unknown>) => YouTubePlayer };
+  declare global { interface Window { YT: YouTubeNamespace; onYouTubeIframeAPIReady: () => void } }
+  let player: YouTubePlayer | undefined;
+  const root = document.querySelector<HTMLElement>('[data-evidence-root]');
+  const loopButton = root?.querySelector<HTMLButtonElement>('[data-loop-toggle]');
+  const nowPlaying = root?.querySelector<HTMLElement>('[data-now-playing]');
+  let loopEnabled = root?.dataset.initialLoopable === 'true';
+  let activeClip: Clip | undefined = root?.dataset.initialVideo ? { videoId: root.dataset.initialVideo, startSeconds: Number(root.dataset.initialStart || 0) / 1000, endSeconds: Number(root.dataset.initialEnd || 0) / 1000, loopable: root.dataset.initialLoopable === 'true' } : undefined;
+  window.onYouTubeIframeAPIReady = () => {
+    if (!activeClip) return;
+    player = new window.YT.Player('yt-player', { host: 'https://www.youtube-nocookie.com', videoId: activeClip.videoId, playerVars: { start: Math.floor(activeClip.startSeconds), end: Math.ceil(activeClip.endSeconds), rel: 0, playsinline: 1 } });
+    window.setInterval(() => { if (loopEnabled && activeClip?.loopable && player && player.getCurrentTime() >= activeClip.endSeconds - 0.15) { player.seekTo(activeClip.startSeconds, true); player.playVideo(); } }, 150);
+  };
+  if (!document.querySelector('script[src="https://www.youtube.com/iframe_api"]')) { const script = document.createElement('script'); script.src = 'https://www.youtube.com/iframe_api'; document.head.appendChild(script); }
+  loopButton?.addEventListener('click', () => { if (!activeClip?.loopable) return; loopEnabled = !loopEnabled; loopButton.classList.toggle('active', loopEnabled); loopButton.setAttribute('aria-pressed', String(loopEnabled)); });
+  root?.addEventListener('click', (event) => {
+    const target = event.target;
+    if (!(target instanceof Element)) return;
+    const button = target.closest<HTMLButtonElement>('[data-video]');
+    if (!button?.dataset.video) return;
+    activeClip = { videoId: button.dataset.video, startSeconds: Number(button.dataset.start), endSeconds: Number(button.dataset.end), loopable: button.dataset.loopable === 'true' };
+    loopEnabled = Boolean(activeClip.loopable);
+    if (loopButton) { loopButton.disabled = !activeClip.loopable; loopButton.classList.toggle('active', loopEnabled); loopButton.setAttribute('aria-pressed', String(loopEnabled)); }
+    root.querySelectorAll('.evidence-row').forEach((row) => row.classList.remove('active'));
+    button.closest('.evidence-row')?.classList.add('active');
+    if (nowPlaying) nowPlaying.textContent = button.textContent?.replace('Play ', '') ?? '';
+    player?.loadVideoById(activeClip);
+  });
+</script>

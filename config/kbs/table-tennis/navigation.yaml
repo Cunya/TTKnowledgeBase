@@ -1,0 +1,168 @@
+title: Table tennis knowledge map
+introduction: Browse strokes, movement principles, training methods, and tactical patterns as a connected learning tree. Start with a shot family, then move into its motion parts, corrections, drills, and match use.
+sections:
+  - id: shots
+    label: Shots and strokes
+    description: The main actions used to serve, receive, attack, and rally.
+    concept_ids: []
+    children:
+      - id: push
+        label: Push
+        description: Backspin control strokes used to keep the ball low, receive serves, and prevent an easy attack.
+        concept_ids: []
+        children:
+          - id: forehand-push
+            label: Forehand push
+            description: Forehand-side push mechanics, placement, spin variation, and recovery.
+            concept_ids: []
+            children: []
+          - id: backhand-push
+            label: Backhand push
+            description: Backhand-side push mechanics, touch, placement, and receive use.
+            concept_ids: []
+            children: []
+      - id: counter
+        label: Counter
+        description: Compact counterhit and counterdrive strokes played against pace or topspin.
+        concept_ids: []
+        children:
+          - id: forehand-counter
+            label: Forehand counter
+            description: Forehand counter mechanics, timing, placement, and transition into stronger attacks.
+            concept_ids: []
+            children: []
+          - id: backhand-counter
+            label: Backhand counter
+            description: Backhand counter mechanics, timing, compactness, and rally use.
+            concept_ids: []
+            children: []
+      - id: loop
+        label: Loop
+        description: Topspin attacks that combine brushing, forward force, arc, and recovery.
+        concept_ids: []
+        children:
+          - id: forehand-loop-family
+            label: Forehand loop
+            description: Forehand loop fundamentals, variations, motion parts, corrections, and practice.
+            concept_ids: [concept-forehand-loop]
+            children:
+              - id: forehand-loop-variations
+                label: Variations and ball selection
+                description: Adjust the forehand loop to backspin, contact height, arc, power, and risk.
+                concept_ids: [concept-forehand-loop-against-backspin, concept-spin-loop-vs-power-loop]
+                children: []
+              - id: forehand-loop-motion
+                label: Motion parts
+                description: Preparation, spacing, contact, racket path, timing, acceleration, and finish.
+                concept_ids: []
+                children:
+                  - id: forehand-loop-preparation
+                    label: Preparation and spacing
+                    description: Create room, load the body, and place the ball in a usable contact zone.
+                    concept_ids: [concept-forehand-loop-spacing]
+                    children: []
+                  - id: forehand-loop-contact
+                    label: Contact and racket path
+                    description: Contact location, racket angle, brushing direction, and forward movement.
+                    concept_ids: [concept-forehand-loop-swing-path]
+                    children: []
+                  - id: forehand-loop-acceleration
+                    label: Timing, power, and release
+                    description: Coordinate the body and arm, wait for the ball, accelerate late, and finish compactly.
+                    concept_ids: [concept-forehand-loop-timing, concept-forehand-loop-power-generation]
+                    children: []
+              - id: forehand-loop-learning
+                label: Learning and correction
+                description: Progressions, controlled drills, and diagnosis of common failures.
+                concept_ids: [concept-forehand-loop-practice-progression, concept-forehand-loop-common-errors]
+                children: []
+          - id: backhand-loop-family
+            label: Backhand loop
+            description: Backhand loop fundamentals, variations, motion parts, corrections, and practice.
+            concept_ids: [concept-backhand-topspin-body-coordination]
+            children: []
+      - id: block
+        label: Block
+        description: Short defensive and countering strokes that redirect an opponent's topspin.
+        concept_ids: []
+        children:
+          - id: forehand-block
+            label: Forehand block
+            description: Forehand block angle, timing, absorption, placement, and active variations.
+            concept_ids: []
+            children: []
+          - id: backhand-block
+            label: Backhand block
+            description: Backhand block angle, compact structure, timing, and active variations.
+            concept_ids: []
+            children: []
+      - id: flick
+        label: Flick
+        description: Over-the-table attacks against short or half-long balls.
+        concept_ids: []
+        children:
+          - id: forehand-flick
+            label: Forehand flick
+            description: Forehand over-table attack mechanics and receive choices.
+            concept_ids: []
+            children: []
+          - id: backhand-flick
+            label: Backhand flick
+            description: Backhand over-table attack timing, spacing, and spin contact.
+            concept_ids: [concept-backhand-flick-on-rise, concept-backhand-swing-arc-spacing, concept-loose-grip-backhand-friction]
+            children: []
+      - id: serve
+        label: Serve
+        description: Starting strokes organized by spin, placement, and intended third-ball pattern.
+        concept_ids: [concept-serve-action-decomposition, concept-backspin-serve-under-ball-contact]
+        children:
+          - id: serve-third-ball-patterns
+            label: Serve and third-ball patterns
+            description: Use serve placement and spin to shape a predictable return for the next attack.
+            concept_ids: [concept-short-serve-third-ball-attack]
+            children: []
+  - id: fundamentals
+    label: Movement and contact fundamentals
+    description: Principles shared across several strokes rather than belonging to one shot only.
+    concept_ids: []
+    children:
+      - id: body-organization
+        label: Body organization
+        description: Ground connection, usable spacing, and coordination through the kinetic chain.
+        concept_ids: [concept-loaded-legs, concept-body-hand-synchronization, concept-loose-back-tight-release]
+        children: []
+      - id: racket-ball-interaction
+        label: Racket-ball interaction
+        description: Reading the ball and controlling where, when, and how the racket contacts it.
+        concept_ids: [concept-ball-feel, concept-contact-point]
+        children: []
+  - id: training
+    label: Training and drills
+    description: Ways to acquire, stabilize, diagnose, and pressure-test technique.
+    concept_ids: []
+    children:
+      - id: technique-acquisition
+        label: Technique acquisition
+        description: Shadow work, fixed-point feeding, moderate-power repetition, and progressive complexity.
+        concept_ids: []
+        children: []
+      - id: error-correction
+        label: Error correction
+        description: Contrast incorrect and correct movement patterns with short repeatable examples.
+        concept_ids: []
+        children: []
+  - id: strategy
+    label: Strategy and point patterns
+    description: Selecting shots and arranging earlier balls to create a favorable attack.
+    concept_ids: []
+    children:
+      - id: serve-attack
+        label: Serve and third-ball attack
+        description: Use serve placement and spin to shape a predictable return for the next attack.
+        concept_ids: []
+        children: []
+      - id: attack-selection
+        label: Attack selection
+        description: Match loop height, spin, pace, and risk to the incoming ball and tactical situation.
+        concept_ids: []
+        children: []

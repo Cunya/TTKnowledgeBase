@@ -1,0 +1,38 @@
+---
+import type { Concept } from '../types';
+interface Props { concepts: Concept[]; kbId: string }
+const { concepts, kbId } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+<section class="search-panel" data-search-root data-concepts={JSON.stringify(concepts)}>
+  <label for="concept-search">Find a topic</label>
+  <div class="search-row"><input id="concept-search" type="search" placeholder="Try “spacing” or “spin”" autocomplete="off" /><span class="key-hint" aria-hidden="true">/</span></div>
+  <p class="search-status" data-search-status aria-live="polite">Browse all {concepts.length} topics</p>
+  <div class="concept-grid" data-results>
+    {concepts.map((concept) => {
+      const sources = new Set(concept.evidence.map((item) => item.source.video_id)).size;
+      return <a class="concept-card" href={`${base}kb/${kbId}/concepts/${concept.slug}/`} data-concept-id={concept.id}>
+        <div class="card-meta"><span>{concept.concept_type}</span><span>{concept.evidence.length} moments</span></div><h3>{concept.label}</h3><p>{concept.short_definition}</p><div class="aliases">{sources} source video{sources === 1 ? '' : 's'} · {concept.aliases.slice(0, 2).join(' · ')}</div>
+      </a>;
+    })}
+  </div>
+</section>
+<script>
+  import MiniSearch from 'minisearch';
+  type SearchConcept = { id: string; label: string; aliases: string[]; short_definition: string; concept_type: string };
+  const root = document.querySelector<HTMLElement>('[data-search-root]');
+  const concepts = JSON.parse(root?.dataset.concepts ?? '[]') as SearchConcept[];
+  const input = root?.querySelector<HTMLInputElement>('input');
+  const status = root?.querySelector<HTMLElement>('[data-search-status]');
+  const cards = new Map([...(root?.querySelectorAll<HTMLElement>('[data-concept-id]') ?? [])].map((card) => [card.dataset.conceptId ?? '', card]));
+  const search = new MiniSearch({ fields: ['label', 'aliases', 'definition', 'type'], storeFields: ['id'], searchOptions: { boost: { label: 4, aliases: 2 }, fuzzy: 0.2, prefix: true } });
+  search.addAll(concepts.map((item) => ({ id: item.id, label: item.label, aliases: item.aliases.join(' '), definition: item.short_definition, type: item.concept_type })));
+  const render = () => {
+    const query = input?.value.trim() ?? '';
+    const ids = query ? search.search(query).map((item) => item.id) : concepts.map((item) => item.id);
+    const visible = new Set(ids); cards.forEach((card, id) => card.hidden = !visible.has(id));
+    if (status) status.textContent = query ? `${ids.length} result${ids.length === 1 ? '' : 's'} for “${query}”` : `Browse all ${concepts.length} topics`;
+  };
+  input?.addEventListener('input', render);
+  document.addEventListener('keydown', (event) => { if (event.key === '/' && document.activeElement !== input) { event.preventDefault(); input?.focus(); } });
+</script>

@@ -1,0 +1,17 @@
+---
+import { corpora } from '../../../corpora';
+import ConceptSearch from '../../../components/ConceptSearch.astro';
+import ConceptConnections from '../../../components/ConceptConnections.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import type { Corpus } from '../../../types';
+export function getStaticPaths() { return corpora.map((corpus) => ({ params: { kb: corpus.knowledge_base.id }, props: { corpus } })); }
+interface Props { corpus: Corpus }
+const { corpus } = Astro.props;
+const evidenceCount = corpus.concepts.reduce((sum, concept) => sum + concept.evidence.length, 0);
+const root = `${import.meta.env.BASE_URL}kb/${corpus.knowledge_base.id}`;
+---
+<BaseLayout title={corpus.knowledge_base.name} description={corpus.knowledge_base.description} kbId={corpus.knowledge_base.id}>
+  <section class="hero kb-hero"><div class="eyebrow">Knowledge base</div><h1>{corpus.knowledge_base.name}</h1><p class="hero-copy">{corpus.knowledge_base.description}</p><div class="hero-stats"><div><strong>{corpus.concepts.length}</strong><span>reviewed concepts</span></div><div><strong>{evidenceCount}</strong><span>source moments</span></div><div><strong>{corpus.videos.length}</strong><span>videos</span></div></div></section>
+  {corpus.navigation && <section class="knowledge-map"><div class="map-intro"><div class="eyebrow">Connected knowledge</div><h2>Relationship atlas</h2><p>Move from broad table-tennis areas into shot families, motion groups, and individual concepts. Each concept keeps its transcript-supported cross-links to related techniques.</p></div><ConceptConnections concepts={corpus.concepts} root={root} navigation={corpus.navigation} /></section>}
+  <section class="all-concepts"><div class="map-intro"><div class="eyebrow">A–Z reference</div><h2>Search every concept</h2><p>Use the structured guide above to learn by topic, or search the full reviewed index directly.</p></div><ConceptSearch concepts={corpus.concepts} kbId={corpus.knowledge_base.id} /></section>
+</BaseLayout>

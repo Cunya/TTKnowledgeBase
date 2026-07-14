@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e ".[dev]"
+      - run: pytest
+      - run: ruff check processors tests
+      - run: python -m processors.cli demo --kb table-tennis
+      - run: python -m processors.cli validate --kb table-tennis --include-demo
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+      - run: npm ci
+        working-directory: app
+      - run: npm run build
+        working-directory: app
+      - name: Prevent private artifacts from entering the site
+        shell: bash
+        run: |
+          if find app/dist -type f \( -iname '*.mp4' -o -iname '*.webm' -o -iname '*.mkv' -o -iname '*.events.jsonl' -o -iname '*.response.json' \) | grep -q .; then
+            echo "Private/media artifact found in Pages output"
+            exit 1
+          fi
+          if grep -R '"segments"[[:space:]]*:' app/dist; then
+            echo "Raw transcript segments found in Pages output"
+            exit 1
+          fi

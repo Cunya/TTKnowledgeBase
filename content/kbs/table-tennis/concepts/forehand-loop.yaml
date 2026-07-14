@@ -1,0 +1,182 @@
+id: concept-forehand-loop
+slug: forehand-loop
+label: Forehand loop
+aliases:
+  - forehand topspin
+  - forehand loop drive
+short_definition: A forehand topspin stroke that brushes the ball with forward-and-upward acceleration.
+detailed_definition: The racket brushes the upper back of the ball while accelerating forward and upward, with contact in front of the body.
+concept_type: stroke
+facets:
+  category: [stroke]
+  side: [forehand]
+  spin: [topspin]
+  level: [intermediate]
+difficulty: intermediate
+review_status: approved
+evidence:
+  - id: forehand-loop-demo-1
+    evidence_type: demonstration
+    excerpt: For the forehand loop, brush the upper back of the ball and accelerate forward and up.
+    reason: Gives the defining racket-ball interaction and swing direction.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: demoTT00001
+      start_ms: 41000
+      end_ms: 48200
+      url: https://www.youtube.com/watch?v=demoTT00001&t=41s
+      segment_ids: ["demoTT00001:00003"]
+  - id: global-loop-swing-radius-2
+    evidence_type: explanation
+    excerpt: For a loop, the backswing is much larger, creating a bigger swing radius.
+    reason: Global TT Studio contrasts loop mechanics with a compact drive.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: G7eiadOxN8E, start_ms: 395666, end_ms: 406433, url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=395s", segment_ids: ["G7eiadOxN8E:00090", "G7eiadOxN8E:00091"]}
+    spoken_context_end_ms: 421733
+  - id: global-loop-brush-path-3
+    evidence_type: correction
+    excerpt: To generate topspin and a proper arc, use a swing path that brushes up on the ball.
+    reason: Gives the purpose of the loop swing path.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: G7eiadOxN8E, start_ms: 421733, end_ms: 427133, url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=421s", segment_ids: ["G7eiadOxN8E:00096"]}
+    spoken_context_end_ms: 458566
+  - id: global-loop-forward-up-4
+    evidence_type: demonstration
+    excerpt: The direction is forward and upward. Drive forward into the ball as you brush.
+    reason: Adds a heavy-backspin loop example from another video.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: OcPo7MgSNVM, start_ms: 98866, end_ms: 109266, url: "https://www.youtube.com/watch?v=OcPo7MgSNVM&t=98s", segment_ids: ["OcPo7MgSNVM:00021", "OcPo7MgSNVM:00022"]}
+    spoken_context_end_ms: 146133
+  - id: loop-late-acceleration-global
+    evidence_type: explanation
+    excerpt: Your swing should be relaxed until just before the contact point, not forceful from the beginning.
+    reason: Explains late acceleration for a powerful, controllable loop.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    visual_source: {video_id: qLT0MvwitZc, start_ms: 96000, end_ms: 106000, url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=96s", selection_method: nearby_visual_inference, note: Coach demonstrates the relaxed approach and late racket acceleration.}
+    review_status: approved
+    source: {video_id: qLT0MvwitZc, start_ms: 88866, end_ms: 94066, url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=88s", segment_ids: ["qLT0MvwitZc:00021"]}
+    spoken_context_end_ms: 118800
+  - id: loop-three-downs-global
+    evidence_type: correction
+    excerpt: "Drop your shoulder, lower your legs, and drop your wrist."
+    reason: Summarizes the three-downs preparation for looping heavy backspin.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    visual_source: {video_id: 0E67TotjJFE, start_ms: 365000, end_ms: 373000, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=365s", selection_method: nearby_visual_inference, note: Coach demonstrates the lowered stance and shoulder-racket preparation.}
+    review_status: approved
+    source: {video_id: 0E67TotjJFE, start_ms: 376666, end_ms: 381766, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=376s", segment_ids: ["0E67TotjJFE:00082"]}
+  - id: loop-closed-face-global
+    evidence_type: demonstration
+    excerpt: Brushing over the ball with a closed racket generates spin.
+    reason: Demonstrates covering the ball instead of brushing only upward.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    visual_source: {video_id: Cq6MbP6TEdc, start_ms: 456000, end_ms: 468000, url: "https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=456s", selection_method: nearby_visual_inference, note: Live-ball forehand loops show the covered racket face.}
+    review_status: approved
+    source: {video_id: Cq6MbP6TEdc, start_ms: 476833, end_ms: 481333, url: "https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=476s", segment_ids: ["Cq6MbP6TEdc:00116"]}
+    spoken_context_end_ms: 520866
+  - id: loop-wait-rhythm-global
+    evidence_type: explanation
+    excerpt: "For a slow ball the rhythm is 'wait, loop'; for a fast ball it is 'wait, quick.'"
+    reason: Shows how timing changes with incoming pace while retaining a wait phase.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    visual_source: {video_id: XfWXrGTlW5M, start_ms: 294000, end_ms: 306000, url: "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=294s", selection_method: nearby_visual_inference, note: Consecutive fed balls demonstrate waiting and changing the swing tempo.}
+    review_status: approved
+    source: {video_id: XfWXrGTlW5M, start_ms: 303966, end_ms: 309300, url: "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=303s", segment_ids: ["XfWXrGTlW5M:00074"]}
+    spoken_context_end_ms: 342766
+  - id: loop-contact-thigh-global
+    evidence_type: demonstration
+    excerpt: The ideal contact point is as the ball is about to reach your leg, where you can transfer power.
+    reason: Locates the modern loop contact point relative to the body.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    visual_source: {video_id: V2YGbh829eU, start_ms: 420000, end_ms: 432000, url: "https://www.youtube.com/watch?v=V2YGbh829eU&t=420s", selection_method: nearby_visual_inference, note: Live feeds demonstrate letting the ball enter the contact zone near the lead leg.}
+    review_status: approved
+    source: {video_id: V2YGbh829eU, start_ms: 412733, end_ms: 421000, url: "https://www.youtube.com/watch?v=V2YGbh829eU&t=412s", segment_ids: ["V2YGbh829eU:00095"]}
+    spoken_context_end_ms: 458700
+  - id: loop-brushing-feel-spinmaster
+    evidence_type: drill
+    excerpt: When looping, focus more on the feeling of brushing the ball.
+    reason: Gives beginners a simple contact-feel priority.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    visual_source: {video_id: I99BjizeWeE, start_ms: 198000, end_ms: 210000, url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=198s", selection_method: nearby_visual_inference, note: Fixed-point forehand practice demonstrates brushing contact at reduced power.}
+    review_status: approved
+    source: {video_id: I99BjizeWeE, start_ms: 184966, end_ms: 187500, url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=184s", segment_ids: ["I99BjizeWeE:00060"]}
+    spoken_context_end_ms: 198166
+  - id: loop-outer-arc-spinmaster
+    evidence_type: demonstration
+    excerpt: Looping requires an outer-arc racket trajectory.
+    reason: Distinguishes the loop path from a larger drive.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    visual_source: {video_id: i68OG8UzMyQ, start_ms: 262000, end_ms: 276000, url: "https://www.youtube.com/watch?v=i68OG8UzMyQ&t=262s", selection_method: nearby_visual_inference, note: Front-view racket overlays compare the drive path with the outer loop arc.}
+    review_status: approved
+    source: {video_id: i68OG8UzMyQ, start_ms: 272640, end_ms: 276760, url: "https://www.youtube.com/watch?v=i68OG8UzMyQ&t=272s", segment_ids: ["i68OG8UzMyQ:00092"]}
+    spoken_context_end_ms: 349120
+  - id: loop-relax-accelerate-spinmaster
+    evidence_type: correction
+    excerpt: Stay relaxed before the ball; accelerate and apply force only at contact.
+    reason: Corrects premature tension in the forward swing.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    visual_source: {video_id: dWZw3A0X-4A, start_ms: 521000, end_ms: 533000, url: "https://www.youtube.com/watch?v=dWZw3A0X-4A&t=521s", selection_method: nearby_visual_inference, note: Live-ball strokes illustrate tension before contact and the late release.}
+    review_status: approved
+    source: {video_id: dWZw3A0X-4A, start_ms: 539120, end_ms: 548040, url: "https://www.youtube.com/watch?v=dWZw3A0X-4A&t=539s", segment_ids: ["dWZw3A0X-4A:00179", "dWZw3A0X-4A:00180", "dWZw3A0X-4A:00181"]}
+    spoken_context_end_ms: 565000
+  - id: loop-spin-vs-power-spinmaster
+    evidence_type: explanation
+    excerpt: A high-arc loop is essentially a power loop with extra safety added.
+    reason: Introduces the tradeoff between spin, power, arc, and consistency.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    visual_source: {video_id: m93pWt9MIZE, start_ms: 13000, end_ms: 28000, url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=13s", selection_method: nearby_visual_inference, note: Alternating live-ball examples compare the power loop and safer high-arc loop.}
+    review_status: approved
+    source: {video_id: m93pWt9MIZE, start_ms: 23519, end_ms: 32079, url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=23s", segment_ids: ["m93pWt9MIZE:00010", "m93pWt9MIZE:00011"]}
+    spoken_context_end_ms: 65960
+  - id: loop-contact-height-spinmaster
+    evidence_type: explanation
+    excerpt: Keep contact roughly level with the table for more brush; raise it somewhat for a forward power loop.
+    reason: Connects contact height to loop selection.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    visual_source: {video_id: JmOI0L7SiG8, start_ms: 44000, end_ms: 56000, url: "https://www.youtube.com/watch?v=JmOI0L7SiG8&t=44s", selection_method: nearby_visual_inference, note: Live-ball demonstrations compare contact heights for brushing and power looping.}
+    review_status: approved
+    source: {video_id: JmOI0L7SiG8, start_ms: 28133, end_ms: 37333, url: "https://www.youtube.com/watch?v=JmOI0L7SiG8&t=28s", segment_ids: ["JmOI0L7SiG8:00008", "JmOI0L7SiG8:00009", "JmOI0L7SiG8:00010", "JmOI0L7SiG8:00011"]}
+    spoken_context_end_ms: 132066
+  - id: loop-forward-through-contact-spinmaster
+    evidence_type: correction
+    excerpt: Combine racket rotation with forward movement through contact; rotating in place will not clear the net.
+    reason: Corrects an isolated wrist-only loop action.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    visual_source: {video_id: V__nqiNHeKE, start_ms: 260000, end_ms: 274000, url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=260s", selection_method: nearby_visual_inference, note: Close live demonstration contrasts forward movement with wrist rotation in place.}
+    review_status: approved
+    source: {video_id: V__nqiNHeKE, start_ms: 267880, end_ms: 276360, url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=267s", segment_ids: ["V__nqiNHeKE:00100", "V__nqiNHeKE:00101", "V__nqiNHeKE:00102"]}
+    spoken_context_end_ms: 293840
+relations:
+  - relation_type: used_with
+    target_concept_id: concept-contact-point
+    sources: [{video_id: G7eiadOxN8E, start_ms: 395666, end_ms: 410100, url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=395s", segment_ids: ["G7eiadOxN8E:00090", "G7eiadOxN8E:00091", "G7eiadOxN8E:00092"]}]
+    confidence: 0.96
+    review_status: approved
+  - relation_type: used_with
+    target_concept_id: concept-contact-point
+    confidence: 0.94
+    review_status: approved
+    sources:
+      - video_id: demoTT00001
+        start_ms: 41000
+        end_ms: 54300
+        url: https://www.youtube.com/watch?v=demoTT00001&t=41s
+        segment_ids: ["demoTT00001:00003", "demoTT00001:00004"]

@@ -1,0 +1,44 @@
+id: concept-forehand-loop-power-generation
+slug: forehand-loop-power-generation
+label: Forehand loop power generation
+aliases: [loop power, body-led loop, drive-snap rhythm]
+short_definition: Generate forehand-loop power with a relaxed body-led backswing, forward drive through contact, late acceleration, and a compact braking action.
+detailed_definition: Power is transferred through a coordinated sequence rather than by pulling the arm back or tensing early. The torso carries a relaxed arm into position; the racket drives into the ball, accelerates late, and the forearm's braking action helps turn linear speed into a fast, compact finish.
+concept_type: principle
+facets: {category: [mechanics, power], side: [forehand], spin: [topspin], level: [intermediate]}
+difficulty: intermediate
+review_status: approved
+evidence:
+  - id: power-body-led-backswing-global
+    evidence_type: demonstration
+    excerpt: Use body rotation to bring the arm back rather than deliberately pulling the arm backward.
+    reason: Establishes a relaxed body-led preparation.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    visual_source: {video_id: qLT0MvwitZc, start_ms: 57000, end_ms: 69000, url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=57s", selection_method: nearby_visual_inference, note: Shadow-stroke comparison shows body rotation carrying the arm.}
+    review_status: approved
+    source: {video_id: qLT0MvwitZc, start_ms: 57700, end_ms: 64733, url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=57s", segment_ids: ["qLT0MvwitZc:00013", "qLT0MvwitZc:00014"]}
+  - id: power-drive-snap-global
+    evidence_type: demonstration
+    excerpt: Drop down, drive forward into the ball, and then brake the arm quickly.
+    reason: Defines the drive-snap sequence used to transfer power through contact.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    visual_source: {video_id: qLT0MvwitZc, start_ms: 468000, end_ms: 483000, url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=468s", selection_method: nearby_visual_inference, note: Repeated shadow strokes show the forward drive and compact snap.}
+    review_status: approved
+    source: {video_id: qLT0MvwitZc, start_ms: 470333, end_ms: 478433, url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=470s", segment_ids: ["qLT0MvwitZc:00109"]}
+  - id: power-acceleration-braking-spinmaster
+    evidence_type: explanation
+    excerpt: Acceleration must be combined with forceful braking.
+    reason: Explains why acceleration without a controlled finish is insufficient.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    visual_source: {video_id: V__nqiNHeKE, start_ms: 340000, end_ms: 354000, url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=340s", selection_method: nearby_visual_inference, note: Live-ball and shadow comparisons show loose versus forceful finishing.}
+    review_status: approved
+    source: {video_id: V__nqiNHeKE, start_ms: 343200, end_ms: 351760, url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=343s", segment_ids: ["V__nqiNHeKE:00130", "V__nqiNHeKE:00131"]}
+relations:
+  - relation_type: part_of
+    target_concept_id: concept-forehand-loop
+    confidence: 0.99
+    review_status: approved
+    sources: [{video_id: qLT0MvwitZc, start_ms: 470333, end_ms: 478433, url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=470s", segment_ids: ["qLT0MvwitZc:00109"]}]

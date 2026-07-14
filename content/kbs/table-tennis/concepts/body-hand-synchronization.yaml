@@ -1,0 +1,65 @@
+id: concept-body-hand-synchronization
+slug: body-hand-synchronization
+label: Body-hand synchronization
+aliases: [connected stroke, synchronized stop, decomposed power chain]
+short_definition: Coordinate body, arm, wrist, and fingers so power is transferred in sequence without the stroke disconnecting.
+detailed_definition: Connection does not mean moving everything as one rigid block. A rally stroke should stop body and hand together, while a serve may deliberately sequence smaller links—fingers, wrist, forearm, then upper arm—to accelerate the racket.
+concept_type: coordination
+facets: {category: [coordination, kinetic-chain], side: [neutral], level: [intermediate]}
+difficulty: intermediate
+review_status: approved
+evidence:
+  - id: synchronized-stop-1
+    evidence_type: explanation
+    excerpt: Body and hand must stop together. When the body stops, the hand stops.
+    reason: Gives the positive cue for a connected rally stroke.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: 3kC8KEl3iow, start_ms: 607960, end_ms: 614640, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=607s", segment_ids: ["3kC8KEl3iow:00241", "3kC8KEl3iow:00242"]}
+  - id: disconnected-arm-2
+    evidence_type: mistake
+    excerpt: If the body stops but the hand still swings, that's disconnected.
+    reason: Provides a compact diagnostic for arm-body disconnection.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: 3kC8KEl3iow, start_ms: 610240, end_ms: 617800, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=610s", segment_ids: ["3kC8KEl3iow:00242", "3kC8KEl3iow:00243", "3kC8KEl3iow:00244"]}
+  - id: serve-chain-sequence-3
+    evidence_type: explanation
+    excerpt: Fingers move first, driving the wrist, then forearm, then upper arm.
+    reason: A second video shows coordinated sequencing for serve acceleration.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: csJgHR7Daog, start_ms: 173000, end_ms: 182160, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=173s", segment_ids: ["csJgHR7Daog:00080", "csJgHR7Daog:00081", "csJgHR7Daog:00082"]}
+  - id: one-block-error-4
+    evidence_type: mistake
+    excerpt: Amateurs swing through as one block. Without decomposition, there's no spin.
+    reason: Contrasts useful sequencing with rigid, simultaneous movement.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: csJgHR7Daog, start_ms: 177959, end_ms: 187640, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=177s", segment_ids: ["csJgHR7Daog:00082", "csJgHR7Daog:00083", "csJgHR7Daog:00084"]}
+  - id: global-three-body-segments-5
+    evidence_type: explanation
+    excerpt: Think of your body in three segments—the upper body, core, and lower body.
+    reason: Global TT Studio supplies a simple model for whole-body coordination.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: YUEaL2HiPIE, start_ms: 18333, end_ms: 33300, url: "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=18s", segment_ids: ["YUEaL2HiPIE:00003", "YUEaL2HiPIE:00004", "YUEaL2HiPIE:00005"]}
+  - id: global-disconnected-segments-6
+    evidence_type: mistake
+    excerpt: Movements are uncoordinated because these three segments are disconnected.
+    reason: Names disconnection between the body segments as the coordination failure.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: YUEaL2HiPIE, start_ms: 30866, end_ms: 39366, url: "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=30s", segment_ids: ["YUEaL2HiPIE:00005", "YUEaL2HiPIE:00006"]}
+relations:
+  - relation_type: used_with
+    target_concept_id: concept-serve-action-decomposition
+    sources: [{video_id: csJgHR7Daog, start_ms: 173000, end_ms: 182160, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=173s", segment_ids: ["csJgHR7Daog:00080", "csJgHR7Daog:00081", "csJgHR7Daog:00082"]}]
+    confidence: 0.98
+    review_status: approved

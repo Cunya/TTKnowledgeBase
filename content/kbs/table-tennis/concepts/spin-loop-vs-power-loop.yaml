@@ -1,0 +1,44 @@
+id: concept-spin-loop-vs-power-loop
+slug: spin-loop-vs-power-loop
+label: Spin loop versus power loop
+aliases: [high-arc loop, safe loop, power loop selection]
+short_definition: Choose the balance of brush, impact, arc, and forward speed according to the incoming ball and acceptable risk.
+detailed_definition: "A high-arc spin loop adds clearance and consistency; a power loop uses a more favorable contact height and greater forward impact. These are points on a continuum: brushing manages arc and incoming spin, while forward drive manages depth and speed."
+concept_type: tactic
+facets: {category: [stroke-selection, consistency], side: [forehand], spin: [topspin], level: [intermediate]}
+difficulty: intermediate
+review_status: approved
+evidence:
+  - id: selection-high-arc-safety-spinmaster
+    evidence_type: demonstration
+    excerpt: A high-arc loop is essentially a power loop with extra safety added.
+    reason: Frames spin and power loops as a safety-quality tradeoff.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    visual_source: {video_id: m93pWt9MIZE, start_ms: 13000, end_ms: 28000, url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=13s", selection_method: nearby_visual_inference, note: Alternating live-ball examples compare the power and high-arc loops.}
+    review_status: approved
+    source: {video_id: m93pWt9MIZE, start_ms: 23519, end_ms: 32079, url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=23s", segment_ids: ["m93pWt9MIZE:00010", "m93pWt9MIZE:00011"]}
+  - id: selection-contact-height-spinmaster
+    evidence_type: demonstration
+    excerpt: Keep contact roughly level with the table for more brush; raise it for a forward power loop.
+    reason: Connects loop choice to the available contact height.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    visual_source: {video_id: JmOI0L7SiG8, start_ms: 44000, end_ms: 56000, url: "https://www.youtube.com/watch?v=JmOI0L7SiG8&t=44s", selection_method: nearby_visual_inference, note: Live feeds compare contact heights and resulting loop trajectories.}
+    review_status: approved
+    source: {video_id: JmOI0L7SiG8, start_ms: 28133, end_ms: 37333, url: "https://www.youtube.com/watch?v=JmOI0L7SiG8&t=28s", segment_ids: ["JmOI0L7SiG8:00008", "JmOI0L7SiG8:00009", "JmOI0L7SiG8:00010", "JmOI0L7SiG8:00011"]}
+  - id: selection-height-depth-global
+    evidence_type: explanation
+    excerpt: Brushing controls the height of the arc, while driving forward controls its depth.
+    reason: Gives a usable rule for blending spin and forward impact.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    visual_source: {video_id: qLT0MvwitZc, start_ms: 549000, end_ms: 563000, url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=549s", selection_method: nearby_visual_inference, note: Racket-path demonstration separates brushing from forward drive.}
+    review_status: approved
+    source: {video_id: qLT0MvwitZc, start_ms: 554300, end_ms: 560900, url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=554s", segment_ids: ["qLT0MvwitZc:00127"]}
+relations:
+  - relation_type: variation_of
+    target_concept_id: concept-forehand-loop
+    confidence: 0.99
+    review_status: approved
+    sources: [{video_id: m93pWt9MIZE, start_ms: 23519, end_ms: 32079, url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=23s", segment_ids: ["m93pWt9MIZE:00010", "m93pWt9MIZE:00011"]}]

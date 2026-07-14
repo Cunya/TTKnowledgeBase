@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+coverage.xml
+htmlcov/
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+
+# Node / Astro
+node_modules/
+app/node_modules/
+app/dist/
+app/.astro/
+.npm/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+config/offline.local.yaml
+.codex/
+
+# Processing inputs and private work products
+data/raw/**
+!data/raw/.gitkeep
+data/normalized/**
+!data/normalized/.gitkeep
+!data/normalized/**/.gitkeep
+data/work/
+data/cache/
+data/derived/**
+!data/derived/.gitkeep
+!data/derived/**/.gitkeep
+data/manifests/local-*.json
+data/manifests/discovered-videos.json
+data/manifests/*.failure.json
+data/manifests/**/local-*.json
+data/manifests/**/discovered-videos.json
+data/manifests/**/*.failure.json
+data/manifests/**/ingest-retries.json
+*.response.json
+*.events.jsonl
+
+# Future offline media archive
+media/
+*.part
+*.ytdl
+cookies.txt
+cookies-*.txt
+*.cookies.txt
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

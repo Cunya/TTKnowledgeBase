@@ -1,0 +1,311 @@
+from __future__ import annotations
+
+import os
+import random
+import shutil
+import time
+from datetime import UTC, datetime, timedelta
+from pathlib import Path
+from typing import Annotated
+
+import typer
+from rich.console import Console
+from rich.table import Table
+
+from .demo import write_demo_video
+from .ingest import (
+    IngestOptions,
+    TranscriptBlockedError,
+    discover_videos,
+    ingest_video,
+    video_id_from_url,
+)
+from .pipeline import (
+    build_review_queue,
+    extract_video,
+    load_reviewed_concepts,
+    load_videos,
+    validate_corpus,
+)
+from .pipeline import publish as publish_corpus
+from .utils import read_json, read_yaml, write_json
+from .workspace import KnowledgeBasePaths, load_knowledge_base
+
+ROOT = Path(__file__).resolve().parents[1]
+console = Console()
+app = typer.Typer(help="Build source-grounded video knowledge bases.")
+KbOption = Annotated[str | None, typer.Option("--kb", help="Knowledge-base ID")]
+
+
+def kb_paths(kb: str | None) -> KnowledgeBasePaths:
+    try:
+        return load_knowledge_base(ROOT, kb)
+    except ValueError as error:
+        raise typer.BadParameter(str(error), param_hint="--kb") from error
+
+
+@app.command()
+def list_kbs() -> None:
+    """List configured knowledge bases."""
+    project = read_yaml(ROOT / "config" / "project.yaml")
+    registry = read_yaml(ROOT / "config" / "knowledge-bases.yaml")
+    table = Table("ID", "Name", "Default")
+    for item in registry["knowledge_bases"]:
+        if item.get("enabled", True):
+            table.add_row(
+                item["id"],
+                item["name"],
+                "yes" if item["id"] == project["default_knowledge_base"] else "",
+            )
+    console.print(table)
+
+
+@app.command()
+def discover(url: Annotated[str, typer.Argument()], kb: KbOption = None) -> None:
+    """Discover videos in a source and save a reviewable manifest."""
+    paths = kb_paths(kb)
+    with console.status(f"Discovering videos for {paths.name}"):
+        videos = discover_videos(url)
+    output = paths.data("manifests") / "discovered-videos.json"
+    write_json(output, {"knowledge_base": paths.id, "source_url": url, "videos": videos})
+    console.print(f"[green]Discovered {len(videos)} videos[/green] for {paths.name}")
+
+
+@app.command()
+def ingest(
+    urls: Annotated[list[str], typer.Argument()],
+    languages: Annotated[str, typer.Option()] = "en",
+    force: Annotated[bool, typer.Option(help="Refetch an existing normalized video")] = False,
+    request_delay: Annotated[
+        float, typer.Option(min=0, help="Seconds between network requests")
+    ] = 5.0,
+    jitter: Annotated[float, typer.Option(min=0, help="Random extra delay in seconds")] = 2.0,
+    caption_file: Annotated[
+        Path | None, typer.Option(help="Import a local VTT/SRT for one URL")
+    ] = None,
+    proxy_url: Annotated[
+        str | None, typer.Option(help="Explicit operator-supplied HTTP(S) proxy")
+    ] = None,
+    cookie_file: Annotated[
+        Path | None, typer.Option(help="Explicit yt-dlp Netscape cookie file")
+    ] = None,
+    js_runtime: Annotated[
+        str | None, typer.Option(help="yt-dlp runtime, e.g. node:C:\\path\\node.exe")
+    ] = None,
+    allow_audio_download: Annotated[
+        bool, typer.Option(help="Allow temporary audio for local ASR")
+    ] = False,
+    confirm_rights: Annotated[
+        bool, typer.Option(help="Confirm authorization to process source audio")
+    ] = False,
+    whisper_model: Annotated[str, typer.Option(help="faster-whisper model name")] = "small",
+    kb: KbOption = None,
+) -> None:
+    """Fetch metadata and timed transcripts using cache and controlled fallbacks."""
+    paths = kb_paths(kb)
+    if caption_file and len(urls) != 1:
+        raise typer.BadParameter("--caption-file requires exactly one video URL")
+    if caption_file and not caption_file.exists():
+        raise typer.BadParameter(f"Caption file does not exist: {caption_file}")
+    if cookie_file and not cookie_file.exists():
+        raise typer.BadParameter(f"Cookie file does not exist: {cookie_file}")
+    if allow_audio_download and not confirm_rights:
+        raise typer.BadParameter("--allow-audio-download also requires --confirm-rights")
+    options = IngestOptions(
+        proxy_url=proxy_url or os.getenv("YTKB_YOUTUBE_PROXY_URL"),
+        webshare_username=os.getenv("YTKB_WEBSHARE_USERNAME"),
+        webshare_password=os.getenv("YTKB_WEBSHARE_PASSWORD"),
+        cookie_file=cookie_file,
+        js_runtime=js_runtime or os.getenv("YTKB_YTDLP_JS_RUNTIME"),
+        supplied_caption=caption_file,
+        allow_audio_download=allow_audio_download,
+        rights_confirmed=confirm_rights,
+        whisper_model=whisper_model,
+    )
+    retry_path = paths.data("manifests") / "ingest-retries.json"
+    retry_state = (
+        read_json(retry_path) if retry_path.exists() else {"knowledge_base": paths.id, "items": {}}
+    )
+    failures: list[str] = []
+    for index, url in enumerate(urls):
+        cache_path = paths.data("normalized") / f"{video_id_from_url(url)}.json"
+        needs_network = force or not cache_path.exists()
+        if index and needs_network and request_delay + jitter > 0:
+            time.sleep(request_delay + random.uniform(0, jitter))
+        try:
+            video = ingest_video(
+                url, paths.data("normalized"), languages.split(","), options, force=force
+            )
+            retry_state["items"].pop(video.id, None)
+            console.print(f"[green]Saved[/green] {video.id}: {video.title}")
+        except Exception as error:
+            failures.append(url)
+            try:
+                video_id = video_id_from_url(url)
+            except ValueError:
+                video_id = url
+            previous = retry_state["items"].get(video_id, {})
+            attempts = int(previous.get("attempts", 0)) + 1
+            delay_hours = min(24 * (2 ** (attempts - 1)), 24 * 7)
+            retry_state["items"][video_id] = {
+                "url": url,
+                "attempts": attempts,
+                "last_attempt_at": datetime.now(UTC).isoformat(),
+                "next_retry_at": (datetime.now(UTC) + timedelta(hours=delay_hours)).isoformat(),
+                "error_type": type(error).__name__,
+                "message": str(error)[:1000],
+            }
+            console.print(f"[red]Failed[/red] {url}: {error}")
+            if isinstance(error, TranscriptBlockedError):
+                console.print(
+                    "[yellow]YouTube block detected; stopping this batch to avoid escalation.[/yellow]"
+                )
+                break
+    write_json(retry_path, retry_state)
+    if failures:
+        console.print(
+            f"[red]{len(failures)} video(s) failed; successful videos were retained.[/red]"
+        )
+        raise typer.Exit(1)
+
+
+@app.command("extract-concepts")
+def extract_concepts(
+    video_id: Annotated[str | None, typer.Option()] = None,
+    engine: Annotated[str, typer.Option()] = "codex",
+    kb: KbOption = None,
+) -> None:
+    """Extract concept candidates using Codex CLI."""
+    if engine != "codex":
+        raise typer.BadParameter("Only the Codex engine is implemented")
+    paths = kb_paths(kb)
+    videos = load_videos(paths.data("normalized"))
+    if video_id:
+        videos = [video for video in videos if video.id == video_id]
+    if not videos:
+        raise typer.BadParameter("No matching normalized videos found")
+    taxonomy = read_yaml(paths.config / "taxonomy.yaml")
+    known = [
+        {"id": c.id, "label": c.label, "aliases": c.aliases}
+        for c in load_reviewed_concepts(paths.content / "concepts")
+    ]
+    for video in videos:
+        path = extract_video(
+            video,
+            taxonomy,
+            known,
+            ROOT / "config" / "processors.yaml",
+            paths.data("derived"),
+            paths.data("manifests"),
+        )
+        console.print(f"[green]Saved candidates[/green] {path.name}")
+
+
+@app.command("build-review-queue")
+def review_queue(kb: KbOption = None) -> None:
+    """Create a deterministic YAML review queue."""
+    paths = kb_paths(kb)
+    count = build_review_queue(
+        paths.data("derived"),
+        paths.content / "annotations" / "review-queue.yaml",
+        load_reviewed_concepts(paths.content / "concepts"),
+    )
+    console.print(f"[green]{paths.name}: {count} candidates queued[/green]")
+
+
+def refresh_catalog() -> None:
+    registry = read_yaml(ROOT / "config" / "knowledge-bases.yaml")
+    entries = []
+    for item in registry["knowledge_bases"]:
+        corpus = ROOT / "data" / "publish" / "kbs" / item["id"] / "corpus.json"
+        if corpus.exists() and item.get("enabled", True):
+            payload = read_json(corpus)
+            entries.append(
+                {
+                    "id": item["id"],
+                    "name": item["name"],
+                    "description": item["description"],
+                    "concept_count": len(payload["concepts"]),
+                    "video_count": len(payload["videos"]),
+                }
+            )
+    catalog = {"knowledge_bases": entries}
+    write_json(ROOT / "data" / "publish" / "catalog.json", catalog)
+    write_json(ROOT / "app" / "public" / "data" / "catalog.json", catalog)
+
+
+@app.command()
+def publish(
+    kb: KbOption = None,
+    include_demo: Annotated[bool, typer.Option(help="Publish synthetic fixtures")] = False,
+) -> None:
+    """Build one sanitized static-site corpus and refresh the catalog."""
+    paths = kb_paths(kb)
+    output = ROOT / "data" / "publish" / "kbs" / paths.id
+    corpus = publish_corpus(
+        paths.content / "concepts",
+        paths.data("normalized"),
+        output,
+        {"id": paths.id, "name": paths.name, "description": paths.description},
+        navigation=read_yaml(paths.config / "navigation.yaml")
+        if (paths.config / "navigation.yaml").exists()
+        else None,
+        include_demo=include_demo,
+    )
+    public = ROOT / "app" / "public" / "data" / "kbs" / paths.id
+    public.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(output / "corpus.json", public / "corpus.json")
+    shutil.copy2(output / "manifest.json", public / "manifest.json")
+    refresh_catalog()
+    console.print(f"[green]Published {paths.name}: {len(corpus.concepts)} concepts[/green]")
+
+
+@app.command()
+def validate(
+    kb: KbOption = None,
+    include_demo: Annotated[bool, typer.Option(help="Validate synthetic fixtures")] = False,
+) -> None:
+    """Validate one knowledge base."""
+    paths = kb_paths(kb)
+    concepts = load_reviewed_concepts(paths.content / "concepts")
+    videos = load_videos(paths.data("normalized"))
+    if not include_demo:
+        demo_ids = {video.id for video in videos if video.availability == "demo_fixture"}
+        videos = [video for video in videos if video.id not in demo_ids]
+        concepts = [
+            concept.model_copy(
+                update={
+                    "evidence": [
+                        item for item in concept.evidence if item.source.video_id not in demo_ids
+                    ]
+                }
+            )
+            for concept in concepts
+            if any(item.source.video_id not in demo_ids for item in concept.evidence)
+        ]
+    errors = validate_corpus(concepts, videos)
+    if errors:
+        for error in errors:
+            console.print(f"[red]ERROR[/red] {error}")
+        raise typer.Exit(1)
+    table = Table(title=f"{paths.name} validation")
+    table.add_column("Item")
+    table.add_column("Count", justify="right")
+    table.add_row("Concepts", str(len(concepts)))
+    table.add_row("Videos", str(len(videos)))
+    table.add_row("Evidence", str(sum(len(c.evidence) for c in concepts)))
+    console.print(table)
+
+
+@app.command()
+def demo(kb: KbOption = None) -> None:
+    """Install the network-free fixture for a knowledge base and publish it."""
+    paths = kb_paths(kb)
+    if paths.id != "table-tennis":
+        raise typer.BadParameter("A demo fixture is currently available only for table-tennis")
+    write_demo_video(paths.data("normalized"))
+    publish(paths.id, include_demo=True)
+
+
+if __name__ == "__main__":
+    app()

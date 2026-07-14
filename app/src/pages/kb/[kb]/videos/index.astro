@@ -1,0 +1,10 @@
+---
+import { corpora } from '../../../../corpora';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import type { Corpus } from '../../../../types';
+export function getStaticPaths() { return corpora.map((corpus) => ({ params: { kb: corpus.knowledge_base.id }, props: { corpus } })); }
+interface Props { corpus: Corpus }
+const { corpus } = Astro.props;
+const root = `${import.meta.env.BASE_URL}kb/${corpus.knowledge_base.id}`;
+---
+<BaseLayout title={`${corpus.knowledge_base.name} videos`} kbId={corpus.knowledge_base.id}><section class="page-intro"><div class="eyebrow">Source library</div><h1>Videos in {corpus.knowledge_base.name}</h1></section><section class="video-grid">{corpus.videos.map((video) => { const concepts = corpus.concepts.filter((concept) => concept.evidence.some((item) => item.source.video_id === video.id)); return <article class="video-card"><div class="video-thumb"><span>{video.availability === 'demo_fixture' ? 'Demo fixture' : 'YouTube'}</span></div><div><p class="eyebrow">{video.channel_name}</p><h2>{video.title}</h2><p>{concepts.length} connected concepts</p><div class="relation-chips">{concepts.map((concept) => <a href={`${root}/concepts/${concept.slug}/`}>{concept.label}</a>)}</div></div></article>; })}</section></BaseLayout>

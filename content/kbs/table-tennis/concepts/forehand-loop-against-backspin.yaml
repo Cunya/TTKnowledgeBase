@@ -1,0 +1,80 @@
+id: concept-forehand-loop-against-backspin
+slug: forehand-loop-against-backspin
+label: Forehand loop against backspin
+aliases: [looping underspin, opening loop, loop against a push]
+short_definition: An opening forehand loop adjusted to lift and spin a backspin ball safely.
+detailed_definition: Get the body and racket below the ball, choose contact height according to the available ball, and combine brushing with enough forward movement. A lower ball favors a safer high-arc spin loop; a higher ball permits a more forward power loop.
+concept_type: stroke
+facets:
+  category: [stroke, receive]
+  side: [forehand]
+  spin: [topspin, against-backspin]
+  level: [intermediate]
+difficulty: intermediate
+review_status: approved
+evidence:
+  - id: backspin-closed-face-friction-global
+    evidence_type: explanation
+    excerpt: Close the racket angle to feel brushing contact instead of direct impact.
+    reason: Explains why a closed face supports friction when opening against backspin.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source: {video_id: 0E67TotjJFE, start_ms: 15366, end_ms: 39233, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=15s", segment_ids: ["0E67TotjJFE:00004", "0E67TotjJFE:00005", "0E67TotjJFE:00006", "0E67TotjJFE:00008"]}
+  - id: backspin-start-below-ball-global
+    evidence_type: explanation
+    excerpt: Against a falling backspin ball, begin with the racket lower than the ball.
+    reason: Gives a concrete vertical-position cue for clearing backspin.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source: {video_id: 0E67TotjJFE, start_ms: 317166, end_ms: 344000, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=317s", segment_ids: ["0E67TotjJFE:00071", "0E67TotjJFE:00075"]}
+  - id: backspin-outward-arc-global
+    evidence_type: explanation
+    excerpt: Draw the racket back, swing outward, then return inward in a small semicircle.
+    reason: Defines the outward arc and connects a larger arc with heavier incoming spin.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source: {video_id: OcPo7MgSNVM, start_ms: 474100, end_ms: 488266, url: "https://www.youtube.com/watch?v=OcPo7MgSNVM&t=474s", segment_ids: ["OcPo7MgSNVM:00111", "OcPo7MgSNVM:00112", "OcPo7MgSNVM:00113", "OcPo7MgSNVM:00114"]}
+  - id: backspin-forward-upward-drive-global
+    evidence_type: correction
+    excerpt: Brush forward and upward while driving into the ball, rather than lifting only vertically.
+    reason: Distinguishes a usable opening-loop direction from a purely upward action.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source: {video_id: OcPo7MgSNVM, start_ms: 98866, end_ms: 109266, url: "https://www.youtube.com/watch?v=OcPo7MgSNVM&t=98s", segment_ids: ["OcPo7MgSNVM:00021", "OcPo7MgSNVM:00022"]}
+  - id: backspin-three-downs-global
+    evidence_type: correction
+    excerpt: "Drop your shoulder, lower your legs, and drop your wrist."
+    reason: Summarizes preparation for a heavy-backspin opening loop.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    visual_source: {video_id: 0E67TotjJFE, start_ms: 365000, end_ms: 373000, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=365s", selection_method: nearby_visual_inference, note: Coach demonstrates the lowered stance and shoulder-racket preparation.}
+    review_status: approved
+    source: {video_id: 0E67TotjJFE, start_ms: 376666, end_ms: 381766, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=376s", segment_ids: ["0E67TotjJFE:00082"]}
+  - id: backspin-contact-height-spinmaster
+    evidence_type: explanation
+    excerpt: Keep contact roughly level with the table for more brush; raise it somewhat for a forward power loop.
+    reason: Connects the ball height to the safer or more forceful loop choice.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    visual_source: {video_id: JmOI0L7SiG8, start_ms: 44000, end_ms: 56000, url: "https://www.youtube.com/watch?v=JmOI0L7SiG8&t=44s", selection_method: nearby_visual_inference, note: Live-ball demonstrations compare contact heights for brushing and power looping.}
+    review_status: approved
+    source: {video_id: JmOI0L7SiG8, start_ms: 28133, end_ms: 37333, url: "https://www.youtube.com/watch?v=JmOI0L7SiG8&t=28s", segment_ids: ["JmOI0L7SiG8:00008", "JmOI0L7SiG8:00009", "JmOI0L7SiG8:00010", "JmOI0L7SiG8:00011"]}
+  - id: backspin-forward-action-spinmaster
+    evidence_type: correction
+    excerpt: Combine racket rotation with forward movement through contact; rotating in place will not clear the net.
+    reason: Prevents a brush-only action that lacks forward travel.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    visual_source: {video_id: V__nqiNHeKE, start_ms: 260000, end_ms: 274000, url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=260s", selection_method: nearby_visual_inference, note: Close live demonstration contrasts forward movement with wrist rotation in place.}
+    review_status: approved
+    source: {video_id: V__nqiNHeKE, start_ms: 267880, end_ms: 276360, url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=267s", segment_ids: ["V__nqiNHeKE:00100", "V__nqiNHeKE:00101", "V__nqiNHeKE:00102"]}
+relations:
+  - relation_type: variation_of
+    target_concept_id: concept-forehand-loop
+    confidence: 0.99
+    review_status: approved
+    sources: [{video_id: 0E67TotjJFE, start_ms: 376666, end_ms: 381766, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=376s", segment_ids: ["0E67TotjJFE:00082"]}]

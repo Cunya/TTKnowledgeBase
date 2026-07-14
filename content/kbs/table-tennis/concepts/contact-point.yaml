@@ -1,0 +1,53 @@
+id: concept-contact-point
+slug: contact-point
+label: Contact point
+aliases:
+  - ball contact
+short_definition: The position and timing at which the racket meets the ball.
+detailed_definition: For this forehand-loop example, contact is in front of the body near the top of the bounce; late contact reduces space and consistency.
+concept_type: technique-dimension
+facets:
+  category: [fundamentals]
+  side: [neutral]
+  level: [beginner, intermediate]
+difficulty: beginner
+review_status: approved
+evidence:
+  - id: contact-point-explanation-1
+    evidence_type: explanation
+    excerpt: Contact the ball in front of your body near the top of the bounce. If contact is late, the stroke loses space and consistency.
+    reason: Explains both the desired contact location/timing and the consequence of a common error.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: demoTT00001
+      start_ms: 48200
+      end_ms: 59400
+      url: https://www.youtube.com/watch?v=demoTT00001&t=48s
+      segment_ids: ["demoTT00001:00004", "demoTT00001:00005"]
+  - id: contact-point-three-timings-2
+    evidence_type: drill
+    excerpt: Practice different contact points—on the rise, at the peak, and on the fall.
+    reason: Global TT Studio turns contact timing into a deliberate practice variable.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: G7eiadOxN8E, start_ms: 207433, end_ms: 215966, url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=207s", segment_ids: ["G7eiadOxN8E:00047", "G7eiadOxN8E:00048"]}
+  - id: heavy-backspin-contact-3
+    evidence_type: explanation
+    excerpt: The optimal contact point for heavy backspin is at the very beginning of its descent.
+    reason: Adds a spin-specific timing example from another Global TT Studio lesson.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: OcPo7MgSNVM, start_ms: 67966, end_ms: 73933, url: "https://www.youtube.com/watch?v=OcPo7MgSNVM&t=67s", segment_ids: ["OcPo7MgSNVM:00014"]}
+  - id: heavy-backspin-summary-4
+    evidence_type: example
+    excerpt: Make contact in the early descending phase.
+    reason: A concise repeatable summary of the same timing cue.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: OcPo7MgSNVM, start_ms: 127466, end_ms: 135066, url: "https://www.youtube.com/watch?v=OcPo7MgSNVM&t=127s", segment_ids: ["OcPo7MgSNVM:00027", "OcPo7MgSNVM:00028"]}
+relations: []

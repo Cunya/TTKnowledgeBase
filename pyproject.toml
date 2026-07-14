@@ -1,0 +1,50 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "youtube-knowledge-base"
+version = "0.1.0"
+description = "Source-grounded concept knowledge base built from timestamped YouTube transcripts"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "pydantic>=2.11,<3",
+  "typer>=0.16,<1",
+  "rich>=14,<15",
+  "ruamel.yaml>=0.18,<0.19",
+  "rapidfuzz>=3.13,<4",
+  "youtube-transcript-api>=1.2,<2",
+  "yt-dlp>=2026.1.0",
+  "webvtt-py>=0.5,<1",
+  "srt>=3.5,<4",
+  "networkx>=3.5,<4",
+  "truststore>=0.10,<1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.4,<9",
+  "hypothesis>=6.138,<7",
+  "ruff>=0.12,<1",
+  "mypy>=1.17,<2",
+]
+asr = ["faster-whisper>=1.2,<2"]
+
+[project.scripts]
+ytkb = "processors.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["processors"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]

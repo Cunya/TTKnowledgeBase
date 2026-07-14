@@ -1,0 +1,73 @@
+id: concept-loose-grip-backhand-friction
+slug: loose-grip-backhand-friction
+label: Generating spin at contact
+aliases: [loose grip friction, racket-head acceleration, brushing contact]
+short_definition: Create spin by allowing the racket head to accelerate and brush the correct part of the ball instead of squeezing or pushing rigidly.
+detailed_definition: "Spin emerges from both freedom and precision: a relaxed grip permits last-moment racket-head speed, rotation adds brushing force, and the contact region determines the resulting spin."
+concept_type: technique-principle
+facets: {category: [spin, contact, acceleration], side: [neutral], level: [intermediate]}
+difficulty: intermediate
+review_status: approved
+evidence:
+  - id: loose-web-grip-1
+    evidence_type: demonstration
+    excerpt: The space between thumb and index finger is practically open. Then I whip through.
+    reason: Shows how localized grip relaxation permits racket acceleration.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: BToLYdKLIMM, start_ms: 275440, end_ms: 286320, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=275s", segment_ids: ["BToLYdKLIMM:00098", "BToLYdKLIMM:00099", "BToLYdKLIMM:00100"]}
+  - id: tight-grip-less-friction-2
+    evidence_type: explanation
+    excerpt: The tighter I hold, the less friction I can generate. The looser I hold, the more friction I create.
+    reason: States the grip-tension relationship directly.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: BToLYdKLIMM, start_ms: 307199, end_ms: 318360, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=307s", segment_ids: ["BToLYdKLIMM:00112", "BToLYdKLIMM:00113", "BToLYdKLIMM:00114"]}
+  - id: rotational-spin-3
+    evidence_type: demonstration
+    excerpt: I add a slight rotational twist to my left side in the backhand. This adds spin and power.
+    reason: A second video illustrates rotation as another source of brushing speed.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: 3kC8KEl3iow, start_ms: 147720, end_ms: 156760, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=147s", segment_ids: ["3kC8KEl3iow:00055", "3kC8KEl3iow:00056", "3kC8KEl3iow:00057", "3kC8KEl3iow:00058"]}
+  - id: racket-head-spin-4
+    evidence_type: explanation
+    excerpt: The faster the racket head rotates, the spinnier the ball.
+    reason: A third video isolates racket-head rotational speed as the spin generator.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: csJgHR7Daog, start_ms: 261799, end_ms: 275240, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=261s", segment_ids: ["csJgHR7Daog:00122", "csJgHR7Daog:00123", "csJgHR7Daog:00124", "csJgHR7Daog:00125", "csJgHR7Daog:00126"]}
+  - id: under-ball-backspin-5
+    evidence_type: example
+    excerpt: To create spin, you must be under the ball. Bottom contact, maximum spin.
+    reason: Shows that racket speed must be paired with the correct contact region.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: csJgHR7Daog, start_ms: 533360, end_ms: 547040, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=533s", segment_ids: ["csJgHR7Daog:00230", "csJgHR7Daog:00231", "csJgHR7Daog:00232"]}
+  - id: global-friction-first-6
+    evidence_type: explanation
+    excerpt: First, use your fingers to create friction. After friction is applied, tighten the grip and follow through.
+    reason: Global TT Studio separates brushing friction from the later grip-and-follow-through phase.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: YUEaL2HiPIE, start_ms: 0, end_ms: 12900, url: "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=0s", segment_ids: ["YUEaL2HiPIE:00000", "YUEaL2HiPIE:00001"]}
+  - id: global-loop-friction-7
+    evidence_type: demonstration
+    excerpt: Use your fingers to create friction, then tighten your grip to 80%.
+    reason: Repeats the sequence specifically for looping.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: YUEaL2HiPIE, start_ms: 777966, end_ms: 790566, url: "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=777s", segment_ids: ["YUEaL2HiPIE:00160", "YUEaL2HiPIE:00161"]}
+relations:
+  - relation_type: used_with
+    target_concept_id: concept-backspin-serve-under-ball-contact
+    sources: [{video_id: csJgHR7Daog, start_ms: 533360, end_ms: 547040, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=533s", segment_ids: ["csJgHR7Daog:00230", "csJgHR7Daog:00231", "csJgHR7Daog:00232"]}]
+    confidence: 0.99
+    review_status: approved

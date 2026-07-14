@@ -1,0 +1,10 @@
+---
+import { corpora } from '../../../../corpora';
+import ConceptSearch from '../../../../components/ConceptSearch.astro';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import type { Corpus } from '../../../../types';
+export function getStaticPaths() { return corpora.map((corpus) => ({ params: { kb: corpus.knowledge_base.id }, props: { corpus } })); }
+interface Props { corpus: Corpus }
+const { corpus } = Astro.props;
+---
+<BaseLayout title={`${corpus.knowledge_base.name} concepts`} kbId={corpus.knowledge_base.id}><section class="page-intro"><div class="eyebrow">Knowledge index</div><h1>Concepts, not just videos</h1><p>Browse canonical ideas and their strongest source moments.</p></section><ConceptSearch concepts={corpus.concepts} kbId={corpus.knowledge_base.id} /></BaseLayout>

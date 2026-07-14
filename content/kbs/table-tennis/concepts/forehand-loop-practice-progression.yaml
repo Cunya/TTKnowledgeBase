@@ -1,0 +1,62 @@
+id: concept-forehand-loop-practice-progression
+slug: forehand-loop-practice-progression
+label: Forehand loop practice progression
+aliases: [loop drills, low-power loop practice, loop shadow practice]
+short_definition: Build the loop from coordinated shadow movement to stable fixed-point strokes at moderate effort before adding speed, variation, and match pressure.
+detailed_definition: Early practice should reduce difficulty so the player can stabilize timing, contact, and body-arm structure. Shadow practice develops coordination without ball pressure; fixed-point feeding at roughly 30–50 percent effort makes the movement repeatable. After that base is stable, practice different contact timings and introduce variations in pace, height, depth, and placement before adding match pressure.
+concept_type: drill
+facets: {category: [practice, progression], side: [forehand], spin: [topspin], level: [beginner]}
+difficulty: beginner
+review_status: approved
+evidence:
+  - id: practice-moderate-power-spinmaster
+    evidence_type: drill
+    excerpt: Do not use full power; use about 40 to 50 percent strength.
+    reason: Establishes a controllable intensity for fixed-point learning.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    visual_source: {video_id: I99BjizeWeE, start_ms: 205000, end_ms: 220000, url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=205s", selection_method: nearby_visual_inference, note: Fixed-point feeding demonstrates stable moderate-power loops.}
+    review_status: approved
+    source: {video_id: I99BjizeWeE, start_ms: 208633, end_ms: 213900, url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=208s", segment_ids: ["I99BjizeWeE:00068", "I99BjizeWeE:00069"]}
+  - id: practice-thirty-forty-global
+    evidence_type: drill
+    excerpt: Use 30–40 percent power to establish a solid fundamental swing.
+    reason: A second coach independently recommends reduced effort for technique stability.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    visual_source: {video_id: Cq6MbP6TEdc, start_ms: 298000, end_ms: 312000, url: "https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=298s", selection_method: nearby_visual_inference, note: Controlled live loops demonstrate the recommended practice intensity.}
+    review_status: approved
+    source: {video_id: Cq6MbP6TEdc, start_ms: 309033, end_ms: 313666, url: "https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=309s", segment_ids: ["Cq6MbP6TEdc:00076"]}
+  - id: practice-shadow-coordination-spinmaster
+    evidence_type: drill
+    excerpt: Hold the racket and do shadow practice without hitting the ball to develop coordination.
+    reason: Places unloaded coordination work before ball drills.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    visual_source: {video_id: I99BjizeWeE, start_ms: 500000, end_ms: 514000, url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=500s", selection_method: nearby_visual_inference, note: Segmented shadow swings demonstrate the coordination exercise.}
+    review_status: approved
+    source: {video_id: I99BjizeWeE, start_ms: 503666, end_ms: 508400, url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=503s", segment_ids: ["I99BjizeWeE:00154"]}
+  - id: practice-multiple-contact-timings-global
+    evidence_type: drill
+    excerpt: Alternate between contacting the ball on the rise and just after the peak.
+    reason: Progresses a stable loop into deliberate timing adjustment.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source: {video_id: G7eiadOxN8E, start_ms: 99666, end_ms: 117733, url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=99s", segment_ids: ["G7eiadOxN8E:00024", "G7eiadOxN8E:00025", "G7eiadOxN8E:00027"]}
+    spoken_context_end_ms: 117733
+  - id: practice-variable-feed-rhythm-global
+    evidence_type: drill
+    excerpt: Ask for slower, higher, faster, and awkwardly placed balls instead of perfect feeds.
+    reason: Adds controlled variability so timing adapts to changing ball quality.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source: {video_id: G7eiadOxN8E, start_ms: 169666, end_ms: 195100, url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=169s", segment_ids: ["G7eiadOxN8E:00039", "G7eiadOxN8E:00040", "G7eiadOxN8E:00042", "G7eiadOxN8E:00043"]}
+    spoken_context_end_ms: 207433
+relations:
+  - relation_type: used_with
+    target_concept_id: concept-forehand-loop
+    confidence: 0.99
+    review_status: approved
+    sources: [{video_id: I99BjizeWeE, start_ms: 208633, end_ms: 213900, url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=208s", segment_ids: ["I99BjizeWeE:00068", "I99BjizeWeE:00069"]}]
