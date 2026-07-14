@@ -2,7 +2,7 @@ id: concept-opponent-targeting
 slug: opponent-targeting
 label: Opponent targeting
 aliases:
-  - 70?30 targeting
+  - 70–30 targeting
   - strength and weakness reading
 short_definition: Direct most play toward a reliable weakness while retaining enough variation to prevent anticipation.
 concept_type: strategy
@@ -28,7 +28,7 @@ evidence:
       start_ms: 65360
       end_ms: 77440
       url: "https://www.youtube.com/watch?v=rTQcgBBWKWg&t=65s"
-      segment_ids:
+      segment_ids: &id001
         - "rTQcgBBWKWg:00028"
         - "rTQcgBBWKWg:00030"
         - "rTQcgBBWKWg:00031"
@@ -263,4 +263,14 @@ evidence:
         - 0eMDTeOBR5A:00157
         - 0eMDTeOBR5A:00158
         - 0eMDTeOBR5A:00159
-relations: []
+relations:
+  - relation_type: used_with
+    target_concept_id: concept-direction-reading
+    sources:
+      - video_id: rTQcgBBWKWg
+        start_ms: 65360
+        end_ms: 77440
+        url: "https://www.youtube.com/watch?v=rTQcgBBWKWg&t=65s"
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

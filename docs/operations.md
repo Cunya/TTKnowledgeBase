@@ -37,6 +37,8 @@ When adding candidates from newly processed videos, `build-review-queue` regener
 ```powershell
 python -m processors.cli publish
 python -m processors.cli validate
+python -m processors.cli validate-published
+python -m processors.cli report-quality --output docs/quality-report-table-tennis.json --markdown-output docs/quality-report-table-tennis.md
 cd app
 npm run build
 ```

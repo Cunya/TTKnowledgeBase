@@ -28,7 +28,7 @@ evidence:
       start_ms: 258066
       end_ms: 282066
       url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=258s"
-      segment_ids:
+      segment_ids: &id001
         - "G7eiadOxN8E:00059"
         - "G7eiadOxN8E:00060"
         - "G7eiadOxN8E:00063"
@@ -94,4 +94,63 @@ evidence:
       segment_ids:
         - "I99BjizeWeE:00061"
         - "I99BjizeWeE:00062"
-relations: []
+  - id: t3HX8AEujWw-c2-1
+    evidence_type: definition
+    excerpt: Defines the forehand drive as simple because the distance from takeback to contact is short.
+    reason: A simple, compact forehand impact stroke with a short takeback-to-contact distance, typically played at the peak of the bounce.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: t3HX8AEujWw
+      start_ms: 9280
+      end_ms: 16840
+      url: https://www.youtube.com/watch?v=t3HX8AEujWw&t=9s
+      segment_ids:
+        - t3HX8AEujWw:00003
+        - t3HX8AEujWw:00004
+        - t3HX8AEujWw:00005
+  - id: t3HX8AEujWw-c2-2
+    evidence_type: explanation
+    excerpt: Specifies that the forehand drive should be executed at the peak of the bounce.
+    reason: A simple, compact forehand impact stroke with a short takeback-to-contact distance, typically played at the peak of the bounce.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: t3HX8AEujWw
+      start_ms: 15160
+      end_ms: 21320
+      url: https://www.youtube.com/watch?v=t3HX8AEujWw&t=15s
+      segment_ids:
+        - t3HX8AEujWw:00006
+        - t3HX8AEujWw:00007
+  - id: t3HX8AEujWw-c2-3
+    evidence_type: mistake
+    excerpt: Warns that if the ball feels too far away near the table, the takeback is too large and rhythm is off.
+    reason: A simple, compact forehand impact stroke with a short takeback-to-contact distance, typically played at the peak of the bounce.
+    confidence: 0.89
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: t3HX8AEujWw
+      start_ms: 19560
+      end_ms: 32200
+      url: https://www.youtube.com/watch?v=t3HX8AEujWw&t=19s
+      segment_ids:
+        - t3HX8AEujWw:00008
+        - t3HX8AEujWw:00009
+        - t3HX8AEujWw:00010
+        - t3HX8AEujWw:00011
+        - t3HX8AEujWw:00012
+relations:
+  - relation_type: contrasts_with
+    target_concept_id: concept-forehand-loop
+    sources:
+      - video_id: G7eiadOxN8E
+        start_ms: 258066
+        end_ms: 282066
+        url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=258s"
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

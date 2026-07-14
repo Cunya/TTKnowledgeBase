@@ -30,7 +30,7 @@ evidence:
       start_ms: 23080
       end_ms: 27840
       url: https://www.youtube.com/watch?v=p19HWlk7LGo&t=23s
-      segment_ids:
+      segment_ids: &id001
         - p19HWlk7LGo:00004
         - p19HWlk7LGo:00005
   - id: p19HWlk7LGo-concept-forehand-loop-down-the-line-2
@@ -271,4 +271,14 @@ evidence:
         - p19HWlk7LGo:00125
         - p19HWlk7LGo:00126
         - p19HWlk7LGo:00127
-relations: []
+relations:
+  - relation_type: variation_of
+    target_concept_id: concept-forehand-loop
+    sources:
+      - video_id: p19HWlk7LGo
+        start_ms: 23080
+        end_ms: 27840
+        url: https://www.youtube.com/watch?v=p19HWlk7LGo&t=23s
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

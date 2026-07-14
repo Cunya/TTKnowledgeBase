@@ -28,7 +28,7 @@ evidence:
       start_ms: 21320
       end_ms: 34240
       url: "https://www.youtube.com/watch?v=QET6W3rjOxo&t=21s"
-      segment_ids:
+      segment_ids: &id001
         - "QET6W3rjOxo:00011"
         - "QET6W3rjOxo:00012"
         - "QET6W3rjOxo:00013"
@@ -242,4 +242,14 @@ evidence:
         - "rTQcgBBWKWg:00233"
         - "rTQcgBBWKWg:00234"
         - "rTQcgBBWKWg:00237"
-relations: []
+relations:
+  - relation_type: used_with
+    target_concept_id: concept-ready-position
+    sources:
+      - video_id: QET6W3rjOxo
+        start_ms: 21320
+        end_ms: 34240
+        url: "https://www.youtube.com/watch?v=QET6W3rjOxo&t=21s"
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

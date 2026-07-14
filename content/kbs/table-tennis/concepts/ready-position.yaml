@@ -67,6 +67,72 @@ evidence:
       segment_ids:
         - "QET6W3rjOxo:00156"
         - "QET6W3rjOxo:00157"
+  - id: wF-YklKS7pI-cand-ready-position-1
+    evidence_type: definition
+    excerpt: The transcript explicitly refers to recovering to a normal ready position after serve.
+    reason: The neutral recovery stance after serving from which the player can judge the return and move into the correct next-ball position.
+    confidence: 0.84
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: wF-YklKS7pI
+      start_ms: 457280
+      end_ms: 479920
+      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=457s
+      segment_ids:
+        - wF-YklKS7pI:00180
+        - wF-YklKS7pI:00187
+        - wF-YklKS7pI:00188
+  - id: YUEaL2HiPIE-concept-continuous-ready-body-state-1
+    evidence_type: definition
+    excerpt: Speaker explicitly argues there is no time to relax during a point and defines the ready body state.
+    reason: Between shots, the whole body should remain compact, engaged, and ready rather than going slack, so strokes can link continuously and reaction speed stays high.
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: YUEaL2HiPIE
+      start_ms: 608766
+      end_ms: 638566
+      url: https://www.youtube.com/watch?v=YUEaL2HiPIE&t=608s
+      segment_ids:
+        - YUEaL2HiPIE:00127
+        - YUEaL2HiPIE:00128
+        - YUEaL2HiPIE:00129
+        - YUEaL2HiPIE:00130
+        - YUEaL2HiPIE:00131
+        - YUEaL2HiPIE:00132
+  - id: YUEaL2HiPIE-concept-continuous-ready-body-state-2
+    evidence_type: definition
+    excerpt: Speaker explicitly argues there is no time to relax during a point and defines the ready body state.
+    reason: Between shots, the whole body should remain compact, engaged, and ready rather than going slack, so strokes can link continuously and reaction speed stays high.
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: YUEaL2HiPIE
+      start_ms: 638566
+      end_ms: 647166
+      url: https://www.youtube.com/watch?v=YUEaL2HiPIE&t=638s
+      segment_ids:
+        - YUEaL2HiPIE:00133
+  - id: YUEaL2HiPIE-concept-continuous-ready-body-state-3
+    evidence_type: explanation
+    excerpt: Speaker explains why multi-ball is used to build this activated state and contrasts it with amateur looseness.
+    reason: Between shots, the whole body should remain compact, engaged, and ready rather than going slack, so strokes can link continuously and reaction speed stays high.
+    confidence: 0.88
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: YUEaL2HiPIE
+      start_ms: 647166
+      end_ms: 667633
+      url: https://www.youtube.com/watch?v=YUEaL2HiPIE&t=647s
+      segment_ids:
+        - YUEaL2HiPIE:00134
+        - YUEaL2HiPIE:00135
+        - YUEaL2HiPIE:00136
+        - YUEaL2HiPIE:00137
 relations:
   - relation_type: prerequisite_of
     target_concept_id: concept-forehand-loop

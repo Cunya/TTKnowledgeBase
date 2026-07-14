@@ -1,11 +1,22 @@
 ---
 import type { Evidence, Video } from '../types';
+import EvidenceRow from './EvidenceRow.astro';
 interface Props { evidence: Evidence[]; videos: Video[] }
 const { evidence, videos } = Astro.props;
 const videoMap = Object.fromEntries(videos.map((video) => [video.id, video]));
-const initial = evidence.find((item) => item.visual_source) ?? evidence[0];
+const isVerifiedVisual = (item: Evidence) => item.visual_status === 'verified_visual_demo' && item.visual_source?.selection_method === 'manual_review';
+const initial = evidence.find(isVerifiedVisual) ?? evidence.find((item) => item.visual_source) ?? evidence[0];
 const initialClip = initial?.visual_source ?? initial?.source;
 const initialIndex = Math.max(0, evidence.indexOf(initial));
+const initialLoopable = Boolean(initial && isVerifiedVisual(initial));
+const groupRepeatedEvidence = (items: Array<{ item: Evidence; index: number }>) => {
+  const groups = new Map<string, Array<{ item: Evidence; index: number }>>();
+  items.forEach((entry) => {
+    const key = [entry.item.evidence_type, entry.item.excerpt.trim(), entry.item.reason.trim()].join('\u0000');
+    groups.set(key, [...(groups.get(key) ?? []), entry]);
+  });
+  return [...groups.values()];
+};
 const chapters = [
   { id: 'understand', label: 'Understand the idea', description: 'Definitions and explanations that establish what the concept means.', types: ['definition', 'explanation'] },
   { id: 'execute', label: 'Execute the technique', description: 'Demonstrations and corrections that turn the idea into an action.', types: ['demonstration', 'correction'] },
@@ -17,6 +28,7 @@ const chapters = [
     videoId,
     video: videoMap[videoId],
     items: items.filter(({ item }) => item.source.video_id === videoId),
+    groups: groupRepeatedEvidence(items.filter(({ item }) => item.source.video_id === videoId)),
   }));
   return { ...chapter, items, sources };
 }).filter((chapter) => chapter.items.length > 0);
@@ -27,7 +39,7 @@ const formatTime = (milliseconds: number) => {
 };
 ---
 
-<section data-evidence-root data-initial-video={initialClip?.video_id} data-initial-start={initialClip?.start_ms ?? 0} data-initial-end={initialClip?.end_ms ?? 0} data-initial-loopable={String(Boolean(initial?.visual_source))}>
+<section data-evidence-root data-initial-video={initialClip?.video_id} data-initial-start={initialClip?.start_ms ?? 0} data-initial-end={initialClip?.end_ms ?? 0} data-initial-loopable={String(initialLoopable)}>
   <nav class="evidence-outline" aria-label="Evidence sections">
     <div><strong>{evidence.length} moments</strong><span>from {sourceCount} supporting video{sourceCount === 1 ? '' : 's'}</span></div>
     <ol>{chapters.map((chapter, index) => <li><a href={`#evidence-${chapter.id}`}><span>{String(index + 1).padStart(2, '0')}</span><strong>{chapter.label}</strong><small>{chapter.items.length} moment{chapter.items.length === 1 ? '' : 's'} · {chapter.sources.length} video{chapter.sources.length === 1 ? '' : 's'}</small></a></li>)}</ol>
@@ -36,31 +48,21 @@ const formatTime = (milliseconds: number) => {
     <div class="player-column">
       <div class="player-shell"><div id="yt-player"></div></div>
       <div class="clip-toolbar">
-        <button type="button" class:list={['loop-toggle', { active: Boolean(initial?.visual_source) }]} data-loop-toggle aria-pressed={Boolean(initial?.visual_source)} disabled={!initial?.visual_source}><span aria-hidden="true">↻</span> Loop visual</button>
+        <button type="button" class:list={['loop-toggle', { active: initialLoopable }]} data-loop-toggle aria-pressed={initialLoopable} disabled={!initialLoopable}><span aria-hidden="true">↻</span> Loop verified visual</button>
         <span data-now-playing>{initialClip ? `${formatTime(initialClip.start_ms)}–${formatTime(initialClip.end_ms)}` : ''}</span>
       </div>
-      <p class="player-note">One shared player switches between the cited sources. Only reviewed visual examples can loop.</p>
+      <p class="player-note">One shared player switches between cited explanations and proposed visuals. Only manually verified visual examples can loop.</p>
     </div>
     <div class="evidence-manuscript">
       {chapters.map((chapter, chapterIndex) => <section class="evidence-chapter" id={`evidence-${chapter.id}`}>
         <header><span>{String(chapterIndex + 1).padStart(2, '0')}</span><div><h3>{chapter.label}</h3><p>{chapter.description}</p></div></header>
         {chapter.sources.map((source) => <section class="evidence-source">
-          <header><h4>{source.video?.title ?? source.videoId}</h4><p>{source.video?.channel_name} · {source.items.length} cited moment{source.items.length === 1 ? '' : 's'}</p></header>
           <div class="evidence-rows">
-            {source.items.map(({ item, index }) => {
-              const clip = item.visual_source ?? { ...item.source, end_ms: item.spoken_context_end_ms ?? item.source.end_ms };
-              const spokenEnd = item.spoken_context_end_ms ?? item.source.end_ms;
-              const duration = Math.max(1, Math.round((clip.end_ms - clip.start_ms) / 1000));
-              return <article class:list={['evidence-row', { active: index === initialIndex }]} id={`moment-${item.source.video_id}-${Math.floor(item.source.start_ms / 1000)}`}>
-                <div class="evidence-row-meta"><span>{item.evidence_type.replaceAll('_', ' ')}</span><small>{duration}s</small></div>
-                <div><blockquote>{item.excerpt}</blockquote><p>{item.reason}</p><small>{item.visual_source ? `${item.visual_source.selection_method.replaceAll('_', ' ')} · ${item.visual_source.note}` : 'Spoken source; visual example not yet selected.'}</small></div>
-                <div class="evidence-row-actions">
-                  {item.visual_source && <button class="play-moment" data-video={clip.video_id} data-start={Math.floor(clip.start_ms / 1000)} data-end={Math.ceil(clip.end_ms / 1000)} data-loopable="true">Loop visual<span>{formatTime(clip.start_ms)}–{formatTime(clip.end_ms)}</span></button>}
-                  <button class="play-moment" data-video={item.source.video_id} data-start={Math.floor(item.source.start_ms / 1000)} data-end={Math.ceil(spokenEnd / 1000)} data-loopable="false">Play explanation<span>{formatTime(item.source.start_ms)}–{formatTime(spokenEnd)}</span></button>
-                  <a href={item.source.url} target="_blank" rel="noreferrer" aria-label={`Open spoken citation at ${formatTime(item.source.start_ms)}`}>↗</a>
-                </div>
-              </article>;
-            })}
+            {source.groups.slice(0, 3).map((citations) => <EvidenceRow citations={citations} video={source.video} initialIndex={initialIndex} />)}
+            {source.groups.length > 3 && <details class="more-evidence">
+              <summary>More supporting ideas <span>{source.groups.length - 3}</span></summary>
+              <div>{source.groups.slice(3).map((citations) => <EvidenceRow citations={citations} video={source.video} initialIndex={initialIndex} />)}</div>
+            </details>}
           </div>
         </section>)}
       </section>)}

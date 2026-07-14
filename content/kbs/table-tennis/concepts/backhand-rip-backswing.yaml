@@ -17,8 +17,8 @@ review_status: approved
 evidence:
   - id: xWrDKGnqmBs-cand-backhand-rip-backswing-height-1
     evidence_type: definition
-    excerpt: For the backhand rip, the backswing starts slightly lower than a backhand drive, around the lower abdomen, but should not drop so low that it turns into a loop.
-    reason: The speaker defines where the backswing should start for the rip and cautions against taking it too low near the table.
+    excerpt: The speaker defines where the backswing should start for the rip and cautions against taking it too low near the table.
+    reason: For the backhand rip, the backswing starts slightly lower than a backhand drive, around the lower abdomen, but should not drop so low that it turns into a loop.
     confidence: 0.94
     visual_status: not_visual
     review_status: approved
@@ -27,13 +27,13 @@ evidence:
       start_ms: 120433
       end_ms: 127466
       url: "https://www.youtube.com/watch?v=xWrDKGnqmBs&t=120s"
-      segment_ids:
+      segment_ids: &id001
         - "xWrDKGnqmBs:00039"
         - "xWrDKGnqmBs:00042"
   - id: xWrDKGnqmBs-cand-backhand-rip-backswing-height-2
     evidence_type: definition
-    excerpt: For the backhand rip, the backswing starts slightly lower than a backhand drive, around the lower abdomen, but should not drop so low that it turns into a loop.
-    reason: The speaker defines where the backswing should start for the rip and cautions against taking it too low near the table.
+    excerpt: The speaker defines where the backswing should start for the rip and cautions against taking it too low near the table.
+    reason: For the backhand rip, the backswing starts slightly lower than a backhand drive, around the lower abdomen, but should not drop so low that it turns into a loop.
     confidence: 0.94
     visual_status: not_visual
     review_status: approved
@@ -47,8 +47,8 @@ evidence:
         - "xWrDKGnqmBs:00052"
   - id: xWrDKGnqmBs-cand-backhand-rip-backswing-height-3
     evidence_type: definition
-    excerpt: For the backhand rip, the backswing starts slightly lower than a backhand drive, around the lower abdomen, but should not drop so low that it turns into a loop.
-    reason: The speaker defines where the backswing should start for the rip and cautions against taking it too low near the table.
+    excerpt: The speaker defines where the backswing should start for the rip and cautions against taking it too low near the table.
+    reason: For the backhand rip, the backswing starts slightly lower than a backhand drive, around the lower abdomen, but should not drop so low that it turns into a loop.
     confidence: 0.94
     visual_status: not_visual
     review_status: approved
@@ -62,8 +62,8 @@ evidence:
         - "xWrDKGnqmBs:00063"
   - id: xWrDKGnqmBs-cand-backhand-rip-backswing-height-4
     evidence_type: definition
-    excerpt: For the backhand rip, the backswing starts slightly lower than a backhand drive, around the lower abdomen, but should not drop so low that it turns into a loop.
-    reason: The speaker defines where the backswing should start for the rip and cautions against taking it too low near the table.
+    excerpt: The speaker defines where the backswing should start for the rip and cautions against taking it too low near the table.
+    reason: For the backhand rip, the backswing starts slightly lower than a backhand drive, around the lower abdomen, but should not drop so low that it turns into a loop.
     confidence: 0.94
     visual_status: not_visual
     review_status: approved
@@ -74,4 +74,56 @@ evidence:
       url: "https://www.youtube.com/watch?v=xWrDKGnqmBs&t=217s"
       segment_ids:
         - "xWrDKGnqmBs:00072"
-relations: []
+  - id: zd8tcVUWwK4-cand-backhand-rip-backswing-1
+    evidence_type: explanation
+    excerpt: Speaker repeatedly states that starting pressed down is the key to error-free power on backhand topspin.
+    reason: For powerful backhand topspin, the stroke should start with the racket face pressed down and the ball conceptually kept under the racket before release, instead of opening the backswing.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: zd8tcVUWwK4
+      start_ms: 156880
+      end_ms: 185680
+      url: https://www.youtube.com/watch?v=zd8tcVUWwK4&t=156s
+      segment_ids:
+        - zd8tcVUWwK4:00064
+        - zd8tcVUWwK4:00065
+        - zd8tcVUWwK4:00066
+        - zd8tcVUWwK4:00067
+        - zd8tcVUWwK4:00068
+        - zd8tcVUWwK4:00069
+        - zd8tcVUWwK4:00070
+        - zd8tcVUWwK4:00071
+        - zd8tcVUWwK4:00072
+        - zd8tcVUWwK4:00073
+        - zd8tcVUWwK4:00074
+        - zd8tcVUWwK4:00075
+        - zd8tcVUWwK4:00076
+  - id: zd8tcVUWwK4-cand-backhand-rip-backswing-2
+    evidence_type: explanation
+    excerpt: Speaker repeatedly states that starting pressed down is the key to error-free power on backhand topspin.
+    reason: For powerful backhand topspin, the stroke should start with the racket face pressed down and the ball conceptually kept under the racket before release, instead of opening the backswing.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: zd8tcVUWwK4
+      start_ms: 183400
+      end_ms: 191000
+      url: https://www.youtube.com/watch?v=zd8tcVUWwK4&t=183s
+      segment_ids:
+        - zd8tcVUWwK4:00077
+        - zd8tcVUWwK4:00078
+        - zd8tcVUWwK4:00079
+relations:
+  - relation_type: part_of
+    target_concept_id: concept-backhand-rip
+    sources:
+      - video_id: xWrDKGnqmBs
+        start_ms: 120433
+        end_ms: 127466
+        url: "https://www.youtube.com/watch?v=xWrDKGnqmBs&t=120s"
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

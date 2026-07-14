@@ -28,7 +28,7 @@ evidence:
       start_ms: 75633
       end_ms: 102066
       url: "https://www.youtube.com/watch?v=xWrDKGnqmBs&t=75s"
-      segment_ids:
+      segment_ids: &id001
         - "xWrDKGnqmBs:00024"
         - "xWrDKGnqmBs:00029"
         - "xWrDKGnqmBs:00032"
@@ -64,8 +64,8 @@ evidence:
         - "xWrDKGnqmBs:00028"
   - id: xWrDKGnqmBs-cand-backhand-rip-vs-drive-difference-1
     evidence_type: explanation
-    excerpt: A comparison concept distinguishing the backhand rip from the backhand drive by backswing height, motion structure, and friction emphasis.
-    reason: The speaker explicitly asks for the biggest difference between the two strokes and names backswing height and friction as key distinctions.
+    excerpt: The speaker explicitly asks for the biggest difference between the two strokes and names backswing height and friction as key distinctions.
+    reason: A comparison concept distinguishing the backhand rip from the backhand drive by backswing height, motion structure, and friction emphasis.
     confidence: 0.95
     visual_status: not_visual
     review_status: approved
@@ -79,8 +79,8 @@ evidence:
         - "xWrDKGnqmBs:00040"
   - id: xWrDKGnqmBs-cand-backhand-rip-vs-drive-difference-2
     evidence_type: explanation
-    excerpt: A comparison concept distinguishing the backhand rip from the backhand drive by backswing height, motion structure, and friction emphasis.
-    reason: The speaker explicitly asks for the biggest difference between the two strokes and names backswing height and friction as key distinctions.
+    excerpt: The speaker explicitly asks for the biggest difference between the two strokes and names backswing height and friction as key distinctions.
+    reason: A comparison concept distinguishing the backhand rip from the backhand drive by backswing height, motion structure, and friction emphasis.
     confidence: 0.95
     visual_status: not_visual
     review_status: approved
@@ -94,8 +94,8 @@ evidence:
         - "xWrDKGnqmBs:00060"
   - id: xWrDKGnqmBs-cand-backhand-rip-vs-drive-difference-3
     evidence_type: explanation
-    excerpt: A comparison concept distinguishing the backhand rip from the backhand drive by backswing height, motion structure, and friction emphasis.
-    reason: The speaker explicitly asks for the biggest difference between the two strokes and names backswing height and friction as key distinctions.
+    excerpt: The speaker explicitly asks for the biggest difference between the two strokes and names backswing height and friction as key distinctions.
+    reason: A comparison concept distinguishing the backhand rip from the backhand drive by backswing height, motion structure, and friction emphasis.
     confidence: 0.95
     visual_status: not_visual
     review_status: approved
@@ -109,8 +109,8 @@ evidence:
         - "xWrDKGnqmBs:00086"
   - id: xWrDKGnqmBs-cand-backhand-rip-vs-drive-difference-4
     evidence_type: demonstration
-    excerpt: A comparison concept distinguishing the backhand rip from the backhand drive by backswing height, motion structure, and friction emphasis.
-    reason: The speaker labels demonstrated examples as rip and drive.
+    excerpt: The speaker labels demonstrated examples as rip and drive.
+    reason: A comparison concept distinguishing the backhand rip from the backhand drive by backswing height, motion structure, and friction emphasis.
     confidence: 0.73
     visual_status: transcript_inferred
     review_status: approved
@@ -122,4 +122,14 @@ evidence:
       segment_ids:
         - "xWrDKGnqmBs:00053"
         - "xWrDKGnqmBs:00054"
-relations: []
+relations:
+  - relation_type: variation_of
+    target_concept_id: concept-backhand-loop
+    sources:
+      - video_id: xWrDKGnqmBs
+        start_ms: 75633
+        end_ms: 102066
+        url: "https://www.youtube.com/watch?v=xWrDKGnqmBs&t=75s"
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

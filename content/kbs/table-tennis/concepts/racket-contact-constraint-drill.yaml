@@ -27,7 +27,7 @@ evidence:
       start_ms: 839733
       end_ms: 851066
       url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=839s"
-      segment_ids:
+      segment_ids: &id001
         - "G7eiadOxN8E:00192"
         - "G7eiadOxN8E:00193"
   - id: G7eiadOxN8E-cand-racket-half-constraint-drill-2
@@ -45,4 +45,14 @@ evidence:
       segment_ids:
         - "G7eiadOxN8E:00194"
         - "G7eiadOxN8E:00195"
-relations: []
+relations:
+  - relation_type: used_with
+    target_concept_id: concept-contact-zone-on-ball
+    sources:
+      - video_id: G7eiadOxN8E
+        start_ms: 839733
+        end_ms: 851066
+        url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=839s"
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

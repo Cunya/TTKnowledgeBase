@@ -27,7 +27,7 @@ evidence:
       start_ms: 581400
       end_ms: 606640
       url: "https://www.youtube.com/watch?v=JcH1Nudznvk&t=581s"
-      segment_ids:
+      segment_ids: &id001
         - "JcH1Nudznvk:00223"
         - "JcH1Nudznvk:00226"
         - "JcH1Nudznvk:00227"
@@ -64,4 +64,44 @@ evidence:
       segment_ids:
         - "JcH1Nudznvk:00240"
         - "JcH1Nudznvk:00242"
-relations: []
+  - id: q9c2_hCwlhs-cand-5-1
+    evidence_type: explanation
+    excerpt: The speaker says to start when the ball is already near and not so early that the stroke is half spent at contact.
+    reason: For a powerful backhand, contact should happen after the ball has come close and begun descending, rather than too early when the stroke is already spent.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: q9c2_hCwlhs
+      start_ms: 248560
+      end_ms: 270760
+      url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=248s
+      segment_ids:
+        - q9c2_hCwlhs:00100
+        - q9c2_hCwlhs:00108
+  - id: q9c2_hCwlhs-cand-5-2
+    evidence_type: explanation
+    excerpt: He identifies the descending phase as the moment to connect for instant power.
+    reason: For a powerful backhand, contact should happen after the ball has come close and begun descending, rather than too early when the stroke is already spent.
+    confidence: 0.91
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: q9c2_hCwlhs
+      start_ms: 510160
+      end_ms: 520280
+      url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=510s
+      segment_ids:
+        - q9c2_hCwlhs:00198
+        - q9c2_hCwlhs:00202
+relations:
+  - relation_type: part_of
+    target_concept_id: concept-backhand-loop
+    sources:
+      - video_id: JcH1Nudznvk
+        start_ms: 581400
+        end_ms: 606640
+        url: "https://www.youtube.com/watch?v=JcH1Nudznvk&t=581s"
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

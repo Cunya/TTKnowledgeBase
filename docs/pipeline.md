@@ -84,7 +84,7 @@ To process only one normalized video:
 python -m processors.cli extract-concepts --kb table-tennis --engine codex --video-id VIDEO_ID
 ```
 
-The Python processor is the caller. It starts `codex exec` as a subprocess using the settings in `config/processors.yaml`. The current profile uses `gpt-5.4`, low reasoning, a strict Pydantic-generated JSON schema, a read-only sandbox, an ephemeral session, and a five-minute timeout. Codex receives transcript text and segment IDs, not downloaded video.
+The Python processor is the caller. It starts `codex exec` as a subprocess using the settings in `config/processors.yaml`. The default profile uses `gpt-5.4-mini`, low reasoning, a strict Pydantic-generated JSON schema, a read-only sandbox, an ephemeral session, and a five-minute timeout. The stronger `gpt-5.4` profile is configured only for an explicit editorial retry; automatic escalation remains disabled. Codex receives transcript text and segment IDs, not downloaded video.
 
 The response is validated before it is saved to `data/derived/<kb>/<video-id>.candidates.json`. The output records the Codex CLI version, model, reasoning setting, prompt/schema versions, and input hash. Invalid output or a failed command does not reach publishing.
 
@@ -173,7 +173,9 @@ I did call the repository commands manually from Codex's terminal rather than by
 
 This means the pipeline is repeatable, but it is intentionally not fully unattended. Collection, extraction, validation, and build are scripted; source curation, knowledge approval, and visual-example approval are editorial gates.
 
-As of 2026-07-14, the published table-tennis corpus contains 70 approved concepts, metadata for 42 source videos, and 950 non-demo evidence moments. Of 100 proposals selected from the latest extraction backlog, 99 were consolidated and one ambiguous framework stayed pending. The queue contains 383 accepted, 59 pending, and 1 rejected candidate. The batch added durable Backhand serve, Push variations, Push-rally strategy, Serve-and-attack patterns, and Forehand loop down the line articles while strengthening existing receive, recovery, timing, loop, push, and serve coverage. Exact accepted-candidate overlap, navigation coverage, the 30-second spoken-window limit, and large citation gaps are enforced during validation.
+As of 2026-07-14, the published table-tennis corpus contains 73 approved concepts, 42 supporting videos, and 1,110 non-demo evidence moments. The queue contains 442 accepted, no pending, and 1 rejected candidate. The final backlog pass added Backhand loop timing and release, Serve-receive reading and rhythm, and Short-ball receive decisions while correcting an erroneous forehand-timing match. Every concept now participates in the semantic relation graph. Exact accepted-candidate overlap, candidate fingerprints, navigation coverage, the 30-second spoken-window limit, large citation gaps, visual verification state, and public artifact consistency are enforced during validation.
+
+CI uses `validate-published` because private normalized transcripts are intentionally absent from Git. This checks the sanitized corpus model, graph, navigation, evidence windows, visual-review consistency, manifest hash/counts, queue overlap, encoding quality, and byte-for-byte equality between the canonical publish output and Astro public copy. Local maintainers still run the stronger transcript-backed `validate` command before publishing.
 
 Codex extraction does not request a service tier. Omitting the override uses the account's normal/default service and avoids the explicitly accelerated `fast` tier. The model and low reasoning setting remain controlled by `config/processors.yaml`, and automatic escalation remains disabled.
 

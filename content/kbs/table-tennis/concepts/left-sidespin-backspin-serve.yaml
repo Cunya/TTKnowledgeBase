@@ -1,6 +1,6 @@
 id: concept-left-sidespin-backspin-serve
 slug: left-sidespin-backspin-serve
-label: Left sidespin?backspin serve
+label: Left sidespin–backspin serve
 aliases:
   - left sidespin underspin serve
 short_definition: Combine lateral brushing with under-ball contact to produce a serve mixing left sidespin and backspin.
@@ -27,7 +27,7 @@ evidence:
       start_ms: 0
       end_ms: 17700
       url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=0s"
-      segment_ids:
+      segment_ids: &id001
         - "leQBUn8-4tw:00000"
         - "leQBUn8-4tw:00001"
         - "leQBUn8-4tw:00003"
@@ -48,8 +48,8 @@ evidence:
         - "leQBUn8-4tw:00032"
   - id: q7kEYGprLYo-candidate-elbow-anchoring-for-sidespin-backspin-serve-1
     evidence_type: explanation
-    excerpt: A serve mechanic for left sidespin-backspin in which the elbow drops and stays braced so the forearm can snap independently, producing a sharper acceleration point and heavier spin.
-    reason: The speaker introduces elbow anchoring as a recent discovery to make the left sidespin-backspin serve spinnier.
+    excerpt: The speaker introduces elbow anchoring as a recent discovery to make the left sidespin-backspin serve spinnier.
+    reason: A serve mechanic for left sidespin-backspin in which the elbow drops and stays braced so the forearm can snap independently, producing a sharper acceleration point and heavier spin.
     confidence: 0.94
     visual_status: not_visual
     review_status: approved
@@ -68,8 +68,8 @@ evidence:
         - q7kEYGprLYo:00022
   - id: q7kEYGprLYo-candidate-elbow-anchoring-for-sidespin-backspin-serve-2
     evidence_type: definition
-    excerpt: A serve mechanic for left sidespin-backspin in which the elbow drops and stays braced so the forearm can snap independently, producing a sharper acceleration point and heavier spin.
-    reason: These segments explain why a braced elbow and independent forearm snap increase concentrated acceleration and spin.
+    excerpt: These segments explain why a braced elbow and independent forearm snap increase concentrated acceleration and spin.
+    reason: A serve mechanic for left sidespin-backspin in which the elbow drops and stays braced so the forearm can snap independently, producing a sharper acceleration point and heavier spin.
     confidence: 0.96
     visual_status: transcript_inferred
     review_status: approved
@@ -93,8 +93,8 @@ evidence:
         - q7kEYGprLYo:00034
   - id: q7kEYGprLYo-candidate-elbow-anchoring-for-sidespin-backspin-serve-3
     evidence_type: definition
-    excerpt: A serve mechanic for left sidespin-backspin in which the elbow drops and stays braced so the forearm can snap independently, producing a sharper acceleration point and heavier spin.
-    reason: These segments explain why a braced elbow and independent forearm snap increase concentrated acceleration and spin.
+    excerpt: These segments explain why a braced elbow and independent forearm snap increase concentrated acceleration and spin.
+    reason: A serve mechanic for left sidespin-backspin in which the elbow drops and stays braced so the forearm can snap independently, producing a sharper acceleration point and heavier spin.
     confidence: 0.96
     visual_status: transcript_inferred
     review_status: approved
@@ -107,8 +107,8 @@ evidence:
         - q7kEYGprLYo:00035
   - id: q7kEYGprLYo-candidate-elbow-anchoring-for-sidespin-backspin-serve-4
     evidence_type: example
-    excerpt: A serve mechanic for left sidespin-backspin in which the elbow drops and stays braced so the forearm can snap independently, producing a sharper acceleration point and heavier spin.
-    reason: The speaker reports personal improvement and restates that moving the elbow with the forearm loses the snap.
+    excerpt: The speaker reports personal improvement and restates that moving the elbow with the forearm loses the snap.
+    reason: A serve mechanic for left sidespin-backspin in which the elbow drops and stays braced so the forearm can snap independently, producing a sharper acceleration point and heavier spin.
     confidence: 0.9
     visual_status: not_visual
     review_status: approved
@@ -194,4 +194,14 @@ evidence:
         - q7kEYGprLYo:00074
         - q7kEYGprLYo:00077
         - q7kEYGprLYo:00078
-relations: []
+relations:
+  - relation_type: variation_of
+    target_concept_id: concept-sidespin-topspin-serve
+    sources:
+      - video_id: leQBUn8-4tw
+        start_ms: 0
+        end_ms: 17700
+        url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=0s"
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

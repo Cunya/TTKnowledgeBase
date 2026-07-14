@@ -4,7 +4,7 @@ label: Direction reading
 aliases:
   - delayed commitment
   - read before moving
-short_definition: Delay commitment long enough to read the opponent?s direction, then move decisively into the selected position.
+short_definition: Delay commitment long enough to read the opponent's direction, then move decisively into the selected position.
 concept_type: perception
 facets:
   category:
@@ -28,7 +28,7 @@ evidence:
       start_ms: 321480
       end_ms: 350640
       url: "https://www.youtube.com/watch?v=QET6W3rjOxo&t=321s"
-      segment_ids:
+      segment_ids: &id001
         - "QET6W3rjOxo:00129"
         - "QET6W3rjOxo:00130"
         - "QET6W3rjOxo:00131"
@@ -206,4 +206,14 @@ evidence:
         - 0eMDTeOBR5A:00026
         - 0eMDTeOBR5A:00027
         - 0eMDTeOBR5A:00028
-relations: []
+relations:
+  - relation_type: used_with
+    target_concept_id: concept-ready-position
+    sources:
+      - video_id: QET6W3rjOxo
+        start_ms: 321480
+        end_ms: 350640
+        url: "https://www.youtube.com/watch?v=QET6W3rjOxo&t=321s"
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

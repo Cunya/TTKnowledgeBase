@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from collections import Counter
 from pathlib import Path
 
 import networkx as nx
@@ -12,6 +13,7 @@ from .utils import read_json, read_yaml, sha256_json, write_json, youtube_url
 
 MAX_SPOKEN_SOURCE_MS = 30_000
 MAX_CITED_SEGMENT_GAP_MS = 20_000
+MOJIBAKE_MARKERS = ("\ufffd", "Â", "â€", "â†", "ðŸ")
 
 roundtrip_yaml = YAML()
 roundtrip_yaml.preserve_quotes = True
@@ -75,6 +77,8 @@ def build_review_queue(
         payload = read_json(path)
         response = ExtractionResponse.model_validate(payload["response"])
         for concept in response.concepts:
+            candidate_payload = concept.model_dump(mode="json")
+            candidate_hash = sha256_json(candidate_payload).removeprefix("sha256:")
             candidate_segments = {
                 segment_id
                 for evidence in concept.evidence
@@ -99,20 +103,33 @@ def build_review_queue(
             )
             item = {
                 "video_id": payload["video_id"],
-                "candidate": concept.model_dump(mode="json"),
+                "candidate": candidate_payload,
+                "candidate_hash": candidate_hash,
                 "decision": "accepted" if approved else "pending",
                 "canonical_concept_id": approved.id if approved else None,
                 "review_notes": "",
             }
             existing = existing_items.get((payload["video_id"], concept.candidate_id))
             if existing:
-                item.update(
-                    decision=existing.get("decision", item["decision"]),
-                    canonical_concept_id=existing.get(
-                        "canonical_concept_id", item["canonical_concept_id"]
-                    ),
-                    review_notes=existing.get("review_notes", ""),
-                )
+                existing_hash = existing.get("candidate_hash")
+                if isinstance(existing_hash, dict):
+                    existing_hash = existing_hash.get("sha256")
+                if isinstance(existing_hash, str):
+                    existing_hash = existing_hash.removeprefix("sha256:")
+                if not existing_hash:
+                    existing_hash = sha256_json(existing.get("candidate", {})).removeprefix(
+                        "sha256:"
+                    )
+                if existing_hash == candidate_hash:
+                    item.update(
+                        decision=existing.get("decision", item["decision"]),
+                        canonical_concept_id=existing.get(
+                            "canonical_concept_id", item["canonical_concept_id"]
+                        ),
+                        review_notes=existing.get("review_notes", ""),
+                    )
+                else:
+                    item["review_notes"] = "Candidate content changed; previous decision requires review."
             queue.append(item)
     queue_path.parent.mkdir(parents=True, exist_ok=True)
     with queue_path.open("w", encoding="utf-8") as handle:
@@ -191,7 +208,9 @@ def validate_navigation(
     return errors
 
 
-def validate_corpus(concepts: list[Concept], videos: list[Video]) -> list[str]:
+def validate_corpus(
+    concepts: list[Concept], videos: list[Video], *, require_transcript_segments: bool = True
+) -> list[str]:
     errors = validate_graph(concepts)
     video_map = {video.id: video for video in videos}
     segment_map = {
@@ -223,9 +242,12 @@ def validate_corpus(concepts: list[Concept], videos: list[Video]) -> list[str]:
                 and evidence.spoken_context_end_ms > video.duration_ms
             ):
                 errors.append(f"{concept.id}/{evidence.id}: spoken context ends after video duration")
-            missing = [segment_id for segment_id in source.segment_ids if segment_id not in segment_map]
-            if missing:
-                errors.append(f"{concept.id}/{evidence.id}: missing segments {missing}")
+            if require_transcript_segments:
+                missing = [
+                    segment_id for segment_id in source.segment_ids if segment_id not in segment_map
+                ]
+                if missing:
+                    errors.append(f"{concept.id}/{evidence.id}: missing segments {missing}")
             mismatched = [
                 segment_id
                 for segment_id in source.segment_ids
@@ -268,7 +290,140 @@ def validate_corpus(concepts: list[Concept], videos: list[Video]) -> list[str]:
                     errors.append(
                         f"{concept.id}/{evidence.id}: noncanonical visual source URL"
                     )
+                if (
+                    visual.selection_method == "manual_review"
+                    and evidence.visual_status != "verified_visual_demo"
+                ):
+                    errors.append(
+                        f"{concept.id}/{evidence.id}: manually reviewed visual is not verified"
+                    )
+                if (
+                    visual.selection_method == "nearby_visual_inference"
+                    and evidence.visual_status == "verified_visual_demo"
+                ):
+                    errors.append(
+                        f"{concept.id}/{evidence.id}: inferred visual cannot be verified"
+                    )
+            elif evidence.visual_status == "verified_visual_demo":
+                errors.append(
+                    f"{concept.id}/{evidence.id}: verified visual has no visual source"
+                )
     return errors
+
+
+def validate_published_corpus(corpus: PublishCorpus) -> list[str]:
+    """Validate the sanitized artifact without requiring private transcripts."""
+    errors = validate_corpus(
+        corpus.concepts, corpus.videos, require_transcript_segments=False
+    )
+    if corpus.navigation:
+        errors.extend(validate_navigation(corpus.navigation, corpus.concepts))
+    errors.extend(validate_text_encoding(corpus.model_dump(mode="json")))
+    return errors
+
+
+def validate_text_encoding(value, path: str = "corpus") -> list[str]:
+    """Find common UTF-8/Windows-1252 mojibake in public strings."""
+    errors: list[str] = []
+    if isinstance(value, dict):
+        for key, item in value.items():
+            errors.extend(validate_text_encoding(item, f"{path}.{key}"))
+    elif isinstance(value, list):
+        for index, item in enumerate(value):
+            errors.extend(validate_text_encoding(item, f"{path}[{index}]"))
+    elif isinstance(value, str) and any(marker in value for marker in MOJIBAKE_MARKERS):
+        errors.append(f"{path}: possible encoding corruption")
+    return errors
+
+
+def build_quality_report(corpus: PublishCorpus, queue_data: dict | None = None) -> dict:
+    """Return editorial quality metrics without treating warnings as validity errors."""
+    evidence = [item for concept in corpus.concepts for item in concept.evidence]
+    source_counts = {
+        concept.id: len({item.source.video_id for item in concept.evidence})
+        for concept in corpus.concepts
+    }
+    excerpt_counts = Counter(item.excerpt for item in evidence)
+    visual_methods = Counter(
+        item.visual_source.selection_method
+        for item in evidence
+        if item.visual_source is not None
+    )
+    related_ids = {
+        concept_id
+        for concept in corpus.concepts
+        for concept_id in (
+            [concept.id, *(relation.target_concept_id for relation in concept.relations)]
+            if concept.relations
+            else []
+        )
+    }
+    pending = [
+        item for item in (queue_data or {}).get("items", []) if item.get("decision") == "pending"
+    ]
+    return {
+        "concept_count": len(corpus.concepts),
+        "published_video_count": len(corpus.videos),
+        "evidence_count": len(evidence),
+        "distinct_excerpt_count": len(excerpt_counts),
+        "moments_with_repeated_excerpt": sum(
+            count for count in excerpt_counts.values() if count > 1
+        ),
+        "concepts_without_relations": sorted(
+            concept.id for concept in corpus.concepts if concept.id not in related_ids
+        ),
+        "single_source_concepts": sorted(
+            concept_id for concept_id, count in source_counts.items() if count == 1
+        ),
+        "evidence_outliers": [
+            {"concept_id": concept.id, "label": concept.label, "evidence_count": len(concept.evidence)}
+            for concept in sorted(corpus.concepts, key=lambda item: len(item.evidence), reverse=True)
+            if len(concept.evidence) > 30
+        ],
+        "visual_sources": dict(sorted(visual_methods.items())),
+        "verified_visual_count": sum(
+            item.visual_status == "verified_visual_demo" for item in evidence
+        ),
+        "pending_candidate_count": len(pending),
+        "pending_by_video": dict(sorted(Counter(item["video_id"] for item in pending).items())),
+        "public_corpus_bytes": None,
+    }
+
+
+def render_quality_report_markdown(report: dict, title: str) -> str:
+    """Render a compact, reviewable Markdown companion to the JSON report."""
+    rows = [
+        ("Concepts", report["concept_count"]),
+        ("Published videos", report["published_video_count"]),
+        ("Evidence moments", report["evidence_count"]),
+        ("Distinct excerpts", report["distinct_excerpt_count"]),
+        ("Isolated concepts", len(report["concepts_without_relations"])),
+        ("Single-source concepts", len(report["single_source_concepts"])),
+        ("Verified visuals", report["verified_visual_count"]),
+        ("Pending candidates", report["pending_candidate_count"]),
+        ("Public corpus bytes", report["public_corpus_bytes"]),
+    ]
+    lines = [f"# {title} quality report", "", "| Signal | Count |", "|---|---:|"]
+    lines.extend(f"| {label} | {value} |" for label, value in rows)
+    lines.extend(["", "## Evidence outliers", ""])
+    if report["evidence_outliers"]:
+        lines.extend(
+            f"- {item['label']}: {item['evidence_count']} moments"
+            for item in report["evidence_outliers"]
+        )
+    else:
+        lines.append("- None")
+    lines.extend(["", "## Remaining quality work", ""])
+    lines.append(
+        f"- {report['visual_sources'].get('nearby_visual_inference', 0)} proposed visual clips still require manual review."
+    )
+    lines.append(
+        f"- {len(report['single_source_concepts'])} concepts still have evidence from only one source video."
+    )
+    lines.append(
+        f"- {report['moments_with_repeated_excerpt']} moments share excerpt text with another moment."
+    )
+    return "\n".join(lines) + "\n"
 
 
 def sanitized_video(video: Video) -> Video:

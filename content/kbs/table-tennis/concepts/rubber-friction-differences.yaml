@@ -27,10 +27,20 @@ evidence:
       start_ms: 124800
       end_ms: 145166
       url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=124s"
-      segment_ids:
+      segment_ids: &id001
         - "qLT0MvwitZc:00029"
         - "qLT0MvwitZc:00030"
         - "qLT0MvwitZc:00031"
         - "qLT0MvwitZc:00032"
         - "qLT0MvwitZc:00033"
-relations: []
+relations:
+  - relation_type: used_with
+    target_concept_id: concept-contact-zone-on-ball
+    sources:
+      - video_id: qLT0MvwitZc
+        start_ms: 124800
+        end_ms: 145166
+        url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=124s"
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

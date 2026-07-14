@@ -31,7 +31,7 @@ evidence:
       start_ms: 5160
       end_ms: 16600
       url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=5s
-      segment_ids:
+      segment_ids: &id001
         - nUotsfFiQqY:00002
         - nUotsfFiQqY:00004
         - nUotsfFiQqY:00005
@@ -302,4 +302,14 @@ evidence:
         - nUotsfFiQqY:00131
         - nUotsfFiQqY:00132
         - nUotsfFiQqY:00133
-relations: []
+relations:
+  - relation_type: used_with
+    target_concept_id: concept-push-variations
+    sources:
+      - video_id: nUotsfFiQqY
+        start_ms: 5160
+        end_ms: 16600
+        url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=5s
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

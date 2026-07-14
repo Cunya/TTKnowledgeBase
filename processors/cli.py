@@ -20,18 +20,21 @@ from .ingest import (
     ingest_video,
     video_id_from_url,
 )
-from .models import KnowledgeNavigation
+from .models import KnowledgeNavigation, PublishCorpus
 from .pipeline import (
+    build_quality_report,
     build_review_queue,
     extract_video,
     load_reviewed_concepts,
     load_videos,
+    render_quality_report_markdown,
     validate_corpus,
     validate_navigation,
+    validate_published_corpus,
     validate_review_queue,
 )
 from .pipeline import publish as publish_corpus
-from .utils import read_json, read_yaml, write_json
+from .utils import read_json, read_yaml, sha256_json, write_json
 from .workspace import KnowledgeBasePaths, load_knowledge_base
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -261,6 +264,88 @@ def publish(
     shutil.copy2(output / "manifest.json", public / "manifest.json")
     refresh_catalog()
     console.print(f"[green]Published {paths.name}: {len(corpus.concepts)} concepts[/green]")
+
+
+@app.command("validate-published")
+def validate_published(kb: KbOption = None) -> None:
+    """Validate committed public artifacts without private transcript files."""
+    paths = kb_paths(kb)
+    publish_dir = ROOT / "data" / "publish" / "kbs" / paths.id
+    corpus_path = publish_dir / "corpus.json"
+    manifest_path = publish_dir / "manifest.json"
+    public_dir = ROOT / "app" / "public" / "data" / "kbs" / paths.id
+    public_corpus_path = public_dir / "corpus.json"
+    public_manifest_path = public_dir / "manifest.json"
+    required = [corpus_path, manifest_path, public_corpus_path, public_manifest_path]
+    missing = [str(path.relative_to(ROOT)) for path in required if not path.exists()]
+    if missing:
+        raise typer.BadParameter(f"Missing published artifacts: {', '.join(missing)}")
+
+    corpus = PublishCorpus.model_validate(read_json(corpus_path))
+    manifest = read_json(manifest_path)
+    errors = validate_published_corpus(corpus)
+    if corpus_path.read_bytes() != public_corpus_path.read_bytes():
+        errors.append("published corpus differs from app/public copy")
+    if manifest_path.read_bytes() != public_manifest_path.read_bytes():
+        errors.append("published manifest differs from app/public copy")
+    if manifest.get("corpus_hash") != sha256_json(corpus.model_dump(mode="json")):
+        errors.append("published manifest corpus hash is stale")
+    if manifest.get("concept_count") != len(corpus.concepts):
+        errors.append("published manifest concept count is stale")
+    if manifest.get("video_count") != len(corpus.videos):
+        errors.append("published manifest video count is stale")
+    queue_path = paths.content / "annotations" / "review-queue.yaml"
+    if queue_path.exists():
+        errors.extend(validate_review_queue(read_yaml(queue_path), corpus.concepts))
+    if errors:
+        for error in errors:
+            console.print(f"[red]ERROR[/red] {error}")
+        raise typer.Exit(1)
+    console.print(
+        f"[green]{paths.name}: published artifacts valid[/green] "
+        f"({len(corpus.concepts)} concepts, {len(corpus.videos)} videos)"
+    )
+
+
+@app.command("report-quality")
+def report_quality(
+    kb: KbOption = None,
+    output: Annotated[Path | None, typer.Option(help="Optional JSON report path")] = None,
+    markdown_output: Annotated[
+        Path | None, typer.Option(help="Optional Markdown report path")
+    ] = None,
+) -> None:
+    """Report editorial quality signals for a published knowledge base."""
+    paths = kb_paths(kb)
+    corpus_path = ROOT / "data" / "publish" / "kbs" / paths.id / "corpus.json"
+    corpus = PublishCorpus.model_validate(read_json(corpus_path))
+    queue_path = paths.content / "annotations" / "review-queue.yaml"
+    queue = read_yaml(queue_path) if queue_path.exists() else {}
+    report = build_quality_report(corpus, queue)
+    report["public_corpus_bytes"] = corpus_path.stat().st_size
+    if output:
+        write_json(output, report)
+    if markdown_output:
+        markdown_output.parent.mkdir(parents=True, exist_ok=True)
+        markdown_output.write_text(
+            render_quality_report_markdown(report, paths.name), encoding="utf-8"
+        )
+    table = Table(title=f"{paths.name} quality report")
+    table.add_column("Signal")
+    table.add_column("Count", justify="right")
+    for label, key in [
+        ("Concepts", "concept_count"),
+        ("Published videos", "published_video_count"),
+        ("Evidence moments", "evidence_count"),
+        ("Distinct excerpts", "distinct_excerpt_count"),
+        ("Isolated concepts", "concepts_without_relations"),
+        ("Single-source concepts", "single_source_concepts"),
+        ("Verified visuals", "verified_visual_count"),
+        ("Pending candidates", "pending_candidate_count"),
+    ]:
+        value = report[key]
+        table.add_row(label, str(len(value) if isinstance(value, list) else value))
+    console.print(table)
 
 
 @app.command()

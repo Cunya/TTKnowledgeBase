@@ -1,6 +1,6 @@
 id: concept-push-spin-power-progression
 slug: push-spin-power-progression
-label: Push?spin?power progression
+label: Push–spin–power progression
 aliases:
   - push to loop progression
 short_definition: 'Develop rally control in stages: stabilize the push, add a safer spin loop, then progress to a stronger power loop.'
@@ -27,7 +27,7 @@ evidence:
       start_ms: 308960
       end_ms: 336360
       url: "https://www.youtube.com/watch?v=I-_3TIjU4qI&t=308s"
-      segment_ids:
+      segment_ids: &id001
         - "I-_3TIjU4qI:00135"
         - "I-_3TIjU4qI:00136"
         - "I-_3TIjU4qI:00137"
@@ -79,4 +79,14 @@ evidence:
       segment_ids:
         - "I-_3TIjU4qI:00158"
         - "I-_3TIjU4qI:00159"
-relations: []
+relations:
+  - relation_type: used_with
+    target_concept_id: concept-forehand-loop-against-backspin
+    sources:
+      - video_id: I-_3TIjU4qI
+        start_ms: 308960
+        end_ms: 336360
+        url: "https://www.youtube.com/watch?v=I-_3TIjU4qI&t=308s"
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

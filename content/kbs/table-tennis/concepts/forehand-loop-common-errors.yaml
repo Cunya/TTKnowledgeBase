@@ -36,6 +36,44 @@ evidence:
     visual_source: {video_id: V__nqiNHeKE, start_ms: 260000, end_ms: 274000, url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=260s", selection_method: nearby_visual_inference, note: Close demonstration contrasts forward action with rotation in place.}
     review_status: approved
     source: {video_id: V__nqiNHeKE, start_ms: 267880, end_ms: 276360, url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=267s", segment_ids: ["V__nqiNHeKE:00100", "V__nqiNHeKE:00101", "V__nqiNHeKE:00102"]}
+  - id: zd8tcVUWwK4-cand-forehand-loop-common-errors-1
+    evidence_type: explanation
+    excerpt: Speaker enumerates reasons forehand topspin goes long, centering on unstable contact and oversized or misdirected motion.
+    reason: Common causes of forehand topspin going long include excessive upper-arm use, unstable racket face or wrist at contact, an overly upward forearm path, and an oversized swing.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: zd8tcVUWwK4
+      start_ms: 4160
+      end_ms: 30480
+      url: https://www.youtube.com/watch?v=zd8tcVUWwK4&t=4s
+      segment_ids:
+        - zd8tcVUWwK4:00002
+        - zd8tcVUWwK4:00003
+        - zd8tcVUWwK4:00004
+        - zd8tcVUWwK4:00005
+        - zd8tcVUWwK4:00006
+        - zd8tcVUWwK4:00007
+        - zd8tcVUWwK4:00008
+        - zd8tcVUWwK4:00009
+  - id: zd8tcVUWwK4-cand-forehand-loop-common-errors-2
+    evidence_type: explanation
+    excerpt: Speaker enumerates reasons forehand topspin goes long, centering on unstable contact and oversized or misdirected motion.
+    reason: Common causes of forehand topspin going long include excessive upper-arm use, unstable racket face or wrist at contact, an overly upward forearm path, and an oversized swing.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: zd8tcVUWwK4
+      start_ms: 38640
+      end_ms: 61080
+      url: https://www.youtube.com/watch?v=zd8tcVUWwK4&t=38s
+      segment_ids:
+        - zd8tcVUWwK4:00014
+        - zd8tcVUWwK4:00015
+        - zd8tcVUWwK4:00022
+        - zd8tcVUWwK4:00023
 relations:
   - relation_type: corrects
     target_concept_id: concept-forehand-loop

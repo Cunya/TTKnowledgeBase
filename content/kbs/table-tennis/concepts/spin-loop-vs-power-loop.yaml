@@ -193,6 +193,73 @@ evidence:
         - nUotsfFiQqY:00119
         - nUotsfFiQqY:00120
         - nUotsfFiQqY:00121
+  - id: t3HX8AEujWw-c4-1
+    evidence_type: definition
+    excerpt: Directly distinguishes peak timing for power loops and early descending timing for spin loops.
+    reason: 'Different loop intentions use different timing: spin loops favor the early descending phase, while power loops and kill shots use the peak of the bounce; against backspin, players may progress from safe descending-phase loops to peak-timed power loops.'
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: t3HX8AEujWw
+      start_ms: 57400
+      end_ms: 64760
+      url: https://www.youtube.com/watch?v=t3HX8AEujWw&t=57s
+      segment_ids:
+        - t3HX8AEujWw:00025
+        - t3HX8AEujWw:00026
+        - t3HX8AEujWw:00027
+  - id: t3HX8AEujWw-c4-2
+    evidence_type: explanation
+    excerpt: Explains progression on backspin from stable descending-phase loops to peak-timed explosive power loops.
+    reason: 'Different loop intentions use different timing: spin loops favor the early descending phase, while power loops and kill shots use the peak of the bounce; against backspin, players may progress from safe descending-phase loops to peak-timed power loops.'
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: t3HX8AEujWw
+      start_ms: 275520
+      end_ms: 289600
+      url: https://www.youtube.com/watch?v=t3HX8AEujWw&t=275s
+      segment_ids:
+        - t3HX8AEujWw:00120
+        - t3HX8AEujWw:00121
+        - t3HX8AEujWw:00122
+        - t3HX8AEujWw:00123
+        - t3HX8AEujWw:00124
+        - t3HX8AEujWw:00125
+  - id: wF-YklKS7pI-cand-spin-loop-vs-power-loop-1
+    evidence_type: explanation
+    excerpt: The speaker explicitly recommends heavy-spin looping on the drop and warns against power looping from that contact timing.
+    reason: On lower or descending half-long balls, the safer attack is a heavy-spin loop rather than a power loop, because power looping late increases errors.
+    confidence: 0.91
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: wF-YklKS7pI
+      start_ms: 347920
+      end_ms: 370880
+      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=347s
+      segment_ids:
+        - wF-YklKS7pI:00137
+        - wF-YklKS7pI:00139
+        - wF-YklKS7pI:00140
+        - wF-YklKS7pI:00145
+  - id: wF-YklKS7pI-cand-spin-loop-vs-power-loop-2
+    evidence_type: explanation
+    excerpt: The speaker explicitly recommends heavy-spin looping on the drop and warns against power looping from that contact timing.
+    reason: On lower or descending half-long balls, the safer attack is a heavy-spin loop rather than a power loop, because power looping late increases errors.
+    confidence: 0.91
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: wF-YklKS7pI
+      start_ms: 373080
+      end_ms: 391720
+      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=373s
+      segment_ids:
+        - wF-YklKS7pI:00148
+        - wF-YklKS7pI:00152
 relations:
   - relation_type: variation_of
     target_concept_id: concept-forehand-loop

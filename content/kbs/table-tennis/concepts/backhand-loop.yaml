@@ -27,7 +27,7 @@ evidence:
       start_ms: 5800
       end_ms: 28640
       url: "https://www.youtube.com/watch?v=JcH1Nudznvk&t=5s"
-      segment_ids:
+      segment_ids: &id001
         - "JcH1Nudznvk:00002"
         - "JcH1Nudznvk:00004"
         - "JcH1Nudznvk:00008"
@@ -124,4 +124,14 @@ evidence:
       url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=539s
       segment_ids:
         - q9c2_hCwlhs:00209
-relations: []
+relations:
+  - relation_type: used_with
+    target_concept_id: concept-backhand-topspin-body-coordination
+    sources:
+      - video_id: JcH1Nudznvk
+        start_ms: 5800
+        end_ms: 28640
+        url: "https://www.youtube.com/watch?v=JcH1Nudznvk&t=5s"
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

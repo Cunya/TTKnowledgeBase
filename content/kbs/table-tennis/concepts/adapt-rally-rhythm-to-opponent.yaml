@@ -16,7 +16,7 @@ evidence:
     confidence: 0.98
     visual_status: not_visual
     review_status: approved
-    source: {video_id: BToLYdKLIMM, start_ms: 595120, end_ms: 618079, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=595s", segment_ids: ["BToLYdKLIMM:00221", "BToLYdKLIMM:00222", "BToLYdKLIMM:00223", "BToLYdKLIMM:00224", "BToLYdKLIMM:00225", "BToLYdKLIMM:00226", "BToLYdKLIMM:00227"]}
+    source: {video_id: BToLYdKLIMM, start_ms: 595120, end_ms: 618079, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=595s", segment_ids: &id001 ["BToLYdKLIMM:00221", "BToLYdKLIMM:00222", "BToLYdKLIMM:00223", "BToLYdKLIMM:00224", "BToLYdKLIMM:00225", "BToLYdKLIMM:00226", "BToLYdKLIMM:00227"]}
   - id: vary-rhythm-against-attacker-1-part-1-2
     evidence_type: explanation
     excerpt: Alternate heavy and light balls and change placement so the attacker cannot settle.
@@ -91,8 +91,8 @@ evidence:
     source: {video_id: BToLYdKLIMM, start_ms: 763600, end_ms: 790639, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=763s", segment_ids: ["BToLYdKLIMM:00277", "BToLYdKLIMM:00278", "BToLYdKLIMM:00279", "BToLYdKLIMM:00280", "BToLYdKLIMM:00281", "BToLYdKLIMM:00282", "BToLYdKLIMM:00283", "BToLYdKLIMM:00284"]}
   - id: 0eMDTeOBR5A-cand-adapt-rally-rhythm-to-opponent-1
     evidence_type: explanation
-    excerpt: The player should synchronize footwork, backswing, body tempo, and release with the opponent's incoming ball speed and rally tempo before trying to add power or variation.
-    reason: Defines rhythm as matching the opponent's tempo and gives fast-versus-slow examples.
+    excerpt: Defines rhythm as matching the opponent's tempo and gives fast-versus-slow examples.
+    reason: The player should synchronize footwork, backswing, body tempo, and release with the opponent's incoming ball speed and rally tempo before trying to add power or variation.
     confidence: 0.99
     visual_status: transcript_inferred
     review_status: approved
@@ -115,8 +115,8 @@ evidence:
         - 0eMDTeOBR5A:00041
   - id: 0eMDTeOBR5A-cand-adapt-rally-rhythm-to-opponent-2
     evidence_type: explanation
-    excerpt: The player should synchronize footwork, backswing, body tempo, and release with the opponent's incoming ball speed and rally tempo before trying to add power or variation.
-    reason: States that footwork, backswing, and release all need to sync with the opponent's return, and power comes after synchronization.
+    excerpt: States that footwork, backswing, and release all need to sync with the opponent's return, and power comes after synchronization.
+    reason: The player should synchronize footwork, backswing, body tempo, and release with the opponent's incoming ball speed and rally tempo before trying to add power or variation.
     confidence: 0.98
     visual_status: transcript_inferred
     review_status: approved
@@ -135,8 +135,8 @@ evidence:
         - 0eMDTeOBR5A:00080
   - id: 0eMDTeOBR5A-cand-adapt-rally-rhythm-to-opponent-3
     evidence_type: explanation
-    excerpt: The player should synchronize footwork, backswing, body tempo, and release with the opponent's incoming ball speed and rally tempo before trying to add power or variation.
-    reason: States that footwork, backswing, and release all need to sync with the opponent's return, and power comes after synchronization.
+    excerpt: States that footwork, backswing, and release all need to sync with the opponent's return, and power comes after synchronization.
+    reason: The player should synchronize footwork, backswing, body tempo, and release with the opponent's incoming ball speed and rally tempo before trying to add power or variation.
     confidence: 0.98
     visual_status: transcript_inferred
     review_status: approved
@@ -154,8 +154,8 @@ evidence:
         - 0eMDTeOBR5A:00095
   - id: 0eMDTeOBR5A-cand-adapt-rally-rhythm-to-opponent-4
     evidence_type: explanation
-    excerpt: The player should synchronize footwork, backswing, body tempo, and release with the opponent's incoming ball speed and rally tempo before trying to add power or variation.
-    reason: States that footwork, backswing, and release all need to sync with the opponent's return, and power comes after synchronization.
+    excerpt: States that footwork, backswing, and release all need to sync with the opponent's return, and power comes after synchronization.
+    reason: The player should synchronize footwork, backswing, body tempo, and release with the opponent's incoming ball speed and rally tempo before trying to add power or variation.
     confidence: 0.98
     visual_status: transcript_inferred
     review_status: approved
@@ -221,4 +221,14 @@ evidence:
         - f7uZPRPIwpU:00089
         - f7uZPRPIwpU:00091
         - f7uZPRPIwpU:00096
-relations: []
+relations:
+  - relation_type: used_with
+    target_concept_id: concept-ball-feel
+    sources:
+      - video_id: BToLYdKLIMM
+        start_ms: 595120
+        end_ms: 618079
+        url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=595s"
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

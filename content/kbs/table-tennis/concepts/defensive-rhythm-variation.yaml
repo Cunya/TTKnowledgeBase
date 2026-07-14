@@ -28,7 +28,7 @@ evidence:
       start_ms: 321440
       end_ms: 351000
       url: "https://www.youtube.com/watch?v=etKOmktKw1k&t=321s"
-      segment_ids:
+      segment_ids: &id001
         - "etKOmktKw1k:00116"
         - "etKOmktKw1k:00117"
         - "etKOmktKw1k:00118"
@@ -73,4 +73,14 @@ evidence:
         - "etKOmktKw1k:00131"
         - "etKOmktKw1k:00132"
         - "etKOmktKw1k:00133"
-relations: []
+relations:
+  - relation_type: variation_of
+    target_concept_id: concept-block-trajectory-and-placement
+    sources:
+      - video_id: etKOmktKw1k
+        start_ms: 321440
+        end_ms: 351000
+        url: "https://www.youtube.com/watch?v=etKOmktKw1k&t=321s"
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

@@ -11,7 +11,7 @@
 
 ## Batch processing
 
-- Preserve editorial queue state during deterministic rebuilds. Keying decisions by video and candidate ID prevents a new extraction batch from silently resetting accepted/rejected work, while a post-build diff still catches IDs changed by reruns.
+- Preserve editorial queue state during deterministic rebuilds, but require a content fingerprint as well as video and candidate ID. Reused IDs with changed definitions or evidence must return to pending review.
 - Treat requested batch sizes as upper bounds. Report the actual number of available candidates rather than padding the batch.
 - Process extraction jobs one video at a time when provenance and failure isolation matter. This makes retries and audits clearer.
 - Preserve prior queue decisions when adding new extraction results. Rebuilding the entire generated queue can erase editorial work.
@@ -27,6 +27,8 @@
 ## Tooling and verification
 
 - A successful static build does not substitute for visual browser inspection. When browser automation is unavailable, state that limitation explicitly.
+- Never call a transcript-inferred visual window reviewed or loopable. A proposed clip becomes a verified demonstration only after someone watches the complete interval and records manual review.
+- CI cannot use ignored private transcripts. Validate the sanitized public corpus, manifest, queue overlap, and publish-copy equality in CI, while retaining transcript-backed validation as a required local publishing step.
 - PowerShell piping can corrupt typographic punctuation in generated YAML. Use UTF-8 mode and prefer ASCII apostrophes in mechanically generated editorial text.
 - Round-trip YAML can emit trailing spaces and unquoted flow-style segment IDs. Run parsing, validation, and `git diff --check` after bulk content transformations.
 - Always cap caption-derived end times to the video duration because the final caption can slightly exceed container metadata.

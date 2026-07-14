@@ -28,7 +28,7 @@ evidence:
       start_ms: 550600
       end_ms: 576920
       url: "https://www.youtube.com/watch?v=3yx5OMDyM8c&t=550s"
-      segment_ids:
+      segment_ids: &id001
         - "3yx5OMDyM8c:00204"
         - "3yx5OMDyM8c:00205"
         - "3yx5OMDyM8c:00206"
@@ -138,4 +138,56 @@ evidence:
       segment_ids:
         - bUCFpvTlaMU:00058
         - bUCFpvTlaMU:00060
-relations: []
+  - id: wF-YklKS7pI-cand-short-vs-long-serve-receive-1
+    evidence_type: explanation
+    excerpt: The speaker organizes the entire decision process around distinguishing short, half-long, and long returns.
+    reason: The response after serving depends first on whether the return is short, half-long, or long, because each bounce length calls for a different family of techniques and timing.
+    confidence: 0.88
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: wF-YklKS7pI
+      start_ms: 39680
+      end_ms: 45080
+      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=39s
+      segment_ids:
+        - wF-YklKS7pI:00015
+  - id: wF-YklKS7pI-cand-short-vs-long-serve-receive-2
+    evidence_type: explanation
+    excerpt: The speaker organizes the entire decision process around distinguishing short, half-long, and long returns.
+    reason: The response after serving depends first on whether the return is short, half-long, or long, because each bounce length calls for a different family of techniques and timing.
+    confidence: 0.88
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: wF-YklKS7pI
+      start_ms: 154200
+      end_ms: 159080
+      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=154s
+      segment_ids:
+        - wF-YklKS7pI:00062
+  - id: wF-YklKS7pI-cand-short-vs-long-serve-receive-3
+    evidence_type: explanation
+    excerpt: The speaker organizes the entire decision process around distinguishing short, half-long, and long returns.
+    reason: The response after serving depends first on whether the return is short, half-long, or long, because each bounce length calls for a different family of techniques and timing.
+    confidence: 0.88
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: wF-YklKS7pI
+      start_ms: 369080
+      end_ms: 373080
+      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=369s
+      segment_ids:
+        - wF-YklKS7pI:00146
+relations:
+  - relation_type: part_of
+    target_concept_id: concept-serve-receive-principles
+    sources:
+      - video_id: 3yx5OMDyM8c
+        start_ms: 550600
+        end_ms: 576920
+        url: "https://www.youtube.com/watch?v=3yx5OMDyM8c&t=550s"
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

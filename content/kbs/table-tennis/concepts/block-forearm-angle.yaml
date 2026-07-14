@@ -28,7 +28,7 @@ evidence:
       start_ms: 55160
       end_ms: 84600
       url: "https://www.youtube.com/watch?v=etKOmktKw1k&t=55s"
-      segment_ids:
+      segment_ids: &id001
         - "etKOmktKw1k:00023"
         - "etKOmktKw1k:00024"
         - "etKOmktKw1k:00026"
@@ -90,4 +90,14 @@ evidence:
         - "etKOmktKw1k:00044"
         - "etKOmktKw1k:00045"
         - "etKOmktKw1k:00046"
-relations: []
+relations:
+  - relation_type: part_of
+    target_concept_id: concept-active-block
+    sources:
+      - video_id: etKOmktKw1k
+        start_ms: 55160
+        end_ms: 84600
+        url: "https://www.youtube.com/watch?v=etKOmktKw1k&t=55s"
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

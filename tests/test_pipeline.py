@@ -5,12 +5,16 @@ from ruamel.yaml import YAML
 from processors.demo import write_demo_video
 from processors.models import Concept, KnowledgeNavigation
 from processors.pipeline import (
+    build_quality_report,
     build_review_queue,
     load_reviewed_concepts,
     publish,
+    render_quality_report_markdown,
     validate_corpus,
     validate_navigation,
+    validate_published_corpus,
     validate_review_queue,
+    validate_text_encoding,
 )
 from processors.utils import read_yaml, write_json
 
@@ -60,6 +64,18 @@ def test_review_queue_rebuild_preserves_editorial_decisions(tmp_path: Path) -> N
     rebuilt = read_yaml(queue_path)["items"][0]
     assert rebuilt["decision"] == "rejected"
     assert rebuilt["review_notes"] == "Duplicate wording."
+    assert len(rebuilt["candidate_hash"]) == 64
+
+    changed = candidate | {"definition": "Materially changed candidate content."}
+    write_json(
+        derived / "video-1.candidates.json",
+        {"video_id": "video-1", "response": {"concepts": [changed], "batch_notes": []}},
+    )
+    build_review_queue(derived, queue_path)
+    changed_item = read_yaml(queue_path)["items"][0]
+    assert changed_item["decision"] == "pending"
+    assert changed_item["canonical_concept_id"] is None
+    assert "content changed" in changed_item["review_notes"]
 
 
 def demo_concepts() -> list[Concept]:
@@ -115,6 +131,19 @@ def test_publish_strips_full_transcript(tmp_path: Path) -> None:
     assert corpus.videos
     assert corpus.videos[0].transcript is None
     assert all(concept.review_status == "approved" for concept in corpus.concepts)
+    assert validate_published_corpus(corpus) == []
+    report = build_quality_report(corpus)
+    assert report["concept_count"] == len(corpus.concepts)
+    assert report["evidence_count"] == sum(len(concept.evidence) for concept in corpus.concepts)
+    assert "# Table Tennis quality report" in render_quality_report_markdown(
+        report | {"public_corpus_bytes": 123}, "Table Tennis"
+    )
+
+
+def test_text_encoding_validation_finds_mojibake() -> None:
+    assert validate_text_encoding({"label": "broken â€“ dash"}) == [
+        "corpus.label: possible encoding corruption"
+    ]
 
 
 def test_accepted_queue_item_requires_exact_canonical_evidence() -> None:

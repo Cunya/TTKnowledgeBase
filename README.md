@@ -2,7 +2,7 @@
 
 A source-grounded, concept-first platform for multiple independent knowledge bases generated from timestamped YouTube transcripts. The first configured KB covers table tennis. The MVP uses local Python processors and Codex CLI for structured extraction, then publishes a static Astro site to GitHub Pages.
 
-The current published table-tennis corpus contains 70 approved concepts, metadata for 42 source videos, and 950 evidence moments. The review queue contains 383 accepted, 59 pending, and 1 rejected candidate after a 100-proposal editorial batch consolidated 99 grounded proposals. Spoken evidence is limited to focused 30-second windows; accepted candidates must be traceable to exact segment IDs in canonical content.
+The current published table-tennis corpus contains 73 approved concepts, 42 supporting videos, and 1,110 evidence moments. The review queue contains 442 accepted, no pending, and 1 rejected candidate. Every concept participates in the semantic relation graph. Spoken evidence is limited to focused 30-second windows; accepted candidates must be traceable to exact segment IDs in canonical content. Proposed visual clips remain non-looping until they are manually verified.
 
 ## Quick start
 
@@ -27,7 +27,7 @@ Each KB is registered in `config/knowledge-bases.yaml` and owns matching folders
 
 To add another topic, add its registry entry, copy `config/kbs/table-tennis/` as a starting point, and create `content/kbs/<new-id>/concepts/`. All processing commands accept `--kb <new-id>`; publishing adds that corpus to the site catalog and generates isolated `/kb/<new-id>/` routes.
 
-See [how the pipeline works](docs/pipeline.md) for the automated and manual stages, commands, data lineage, and visual-timestamp workflow. See [the implementation plan](docs/youtube-knowledge-base-plan.md) for architecture, policy, and future offline-media scope.
+See [how the pipeline works](docs/pipeline.md) for the automated and manual stages, commands, data lineage, and visual-timestamp workflow. See [source video progress](docs/source-video-progress.md) for per-channel discovery, ingestion, extraction, review, publication, and visual-verification counts. See [the implementation plan](docs/youtube-knowledge-base-plan.md) for architecture, policy, and future offline-media scope.
 
 ## Publish with GitHub Pages
 
@@ -52,6 +52,8 @@ Before committing a new corpus, run the release checks from the repository root:
 $env:PYTHONUTF8='1'
 .\.venv\Scripts\python.exe -m processors.cli validate --kb table-tennis
 .\.venv\Scripts\python.exe -m processors.cli publish --kb table-tennis
+.\.venv\Scripts\python.exe -m processors.cli validate-published --kb table-tennis
+.\.venv\Scripts\python.exe -m processors.cli report-quality --kb table-tennis
 .\.venv\Scripts\python.exe -m pytest
 .\.venv\Scripts\ruff.exe check .
 Set-Location app

@@ -20,6 +20,7 @@ jobs:
       - run: pip install -e ".[dev]"
       - run: pytest
       - run: ruff check .
+      - run: python -m processors.cli validate-published --kb table-tennis
       - uses: actions/setup-node@v4
         with:
           node-version: "22"

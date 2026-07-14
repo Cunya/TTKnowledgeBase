@@ -28,7 +28,7 @@ evidence:
       start_ms: 454040
       end_ms: 479240
       url: "https://www.youtube.com/watch?v=I-_3TIjU4qI&t=454s"
-      segment_ids:
+      segment_ids: &id001
         - "I-_3TIjU4qI:00200"
         - "I-_3TIjU4qI:00201"
         - "I-_3TIjU4qI:00202"
@@ -335,4 +335,54 @@ evidence:
       segment_ids:
         - f7uZPRPIwpU:00172
         - f7uZPRPIwpU:00173
-relations: []
+  - id: zd8tcVUWwK4-cand-compact-response-to-fast-ball-1
+    evidence_type: explanation
+    excerpt: Speaker teaches that increased power and footwork require smaller, more compact motion rather than larger swings.
+    reason: When applying power or moving into position, the stroke should become more compact, with reduced backswing and swing size rather than a bigger motion.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: zd8tcVUWwK4
+      start_ms: 68880
+      end_ms: 97080
+      url: https://www.youtube.com/watch?v=zd8tcVUWwK4&t=68s
+      segment_ids:
+        - zd8tcVUWwK4:00024
+        - zd8tcVUWwK4:00025
+        - zd8tcVUWwK4:00026
+        - zd8tcVUWwK4:00030
+        - zd8tcVUWwK4:00031
+        - zd8tcVUWwK4:00032
+        - zd8tcVUWwK4:00033
+        - zd8tcVUWwK4:00034
+  - id: zd8tcVUWwK4-cand-compact-response-to-fast-ball-2
+    evidence_type: explanation
+    excerpt: Speaker teaches that increased power and footwork require smaller, more compact motion rather than larger swings.
+    reason: When applying power or moving into position, the stroke should become more compact, with reduced backswing and swing size rather than a bigger motion.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: zd8tcVUWwK4
+      start_ms: 94640
+      end_ms: 108160
+      url: https://www.youtube.com/watch?v=zd8tcVUWwK4&t=94s
+      segment_ids:
+        - zd8tcVUWwK4:00035
+        - zd8tcVUWwK4:00036
+        - zd8tcVUWwK4:00037
+        - zd8tcVUWwK4:00038
+        - zd8tcVUWwK4:00039
+        - zd8tcVUWwK4:00040
+relations:
+  - relation_type: used_with
+    target_concept_id: concept-control-before-power
+    sources:
+      - video_id: I-_3TIjU4qI
+        start_ms: 454040
+        end_ms: 479240
+        url: "https://www.youtube.com/watch?v=I-_3TIjU4qI&t=454s"
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

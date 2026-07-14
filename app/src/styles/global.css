@@ -129,9 +129,9 @@ h1 em { color: var(--green); font-weight: inherit; }
 .evidence-chapter > header p { margin: 7px 0 0; color: var(--muted); font-size: 13px; line-height: 1.5; }
 .evidence-chapter > .evidence-source { margin-left: 52px; padding-left: 24px; border-left: 1px solid var(--line); }
 .evidence-source + .evidence-source { margin-top: 34px; }
-.evidence-source > header { border-bottom: 1px solid var(--ink); padding-bottom: 10px; }
-.evidence-source h4 { margin: 0; font-size: 15px; line-height: 1.35; }
-.evidence-source > header p { margin: 4px 0 0; color: var(--muted); font-size: 11px; }
+.entry-source { display: flex; flex-wrap: wrap; gap: 5px 8px; align-items: baseline; margin: 12px 0 0 !important; color: var(--muted); font-size: 10px !important; line-height: 1.4 !important; }
+.entry-source > span { color: var(--green); font-family: var(--mono); font-size: 8px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.entry-source > small { color: var(--muted); font-size: 9px; }
 .evidence-row { display: grid; grid-template-columns: 76px minmax(0, 1fr) auto; gap: 16px; padding: 20px 0; border-bottom: 1px solid var(--line); transition: padding .15s ease; }
 .evidence-row.active { padding-left: 10px; box-shadow: inset 3px 0 var(--lime); }
 .evidence-row-meta { display: grid; align-content: start; gap: 5px; color: var(--green); font-size: 9px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
@@ -139,11 +139,18 @@ h1 em { color: var(--green); font-weight: inherit; }
 .evidence-row blockquote { margin: 0 0 8px; font-size: 18px; }
 .evidence-row blockquote + p { margin: 0 0 8px; color: var(--muted); font-size: 12px; line-height: 1.55; }
 .evidence-row blockquote ~ small { color: var(--muted); font-size: 10px; }
-.evidence-row-actions { display: flex; align-items: start; gap: 5px; }
+.evidence-row-actions { display: grid; align-items: start; gap: 6px; }
+.evidence-citation-actions { display: flex; align-items: start; gap: 5px; }
 .evidence-row-actions button, .evidence-row-actions a { border: 1px solid var(--line); background: transparent; color: var(--ink); padding: 8px 9px; font-size: 10px; text-decoration: none; cursor: pointer; }
 .evidence-row-actions button { display: grid; gap: 2px; text-align: left; }
+.evidence-row-actions .youtube-timestamp-link { display: grid; gap: 2px; white-space: nowrap; }
+.evidence-row-actions .youtube-timestamp-link span { color: var(--green); font-family: var(--mono); }
 .evidence-row-actions button span { color: var(--green); font-family: var(--mono); }
 .evidence-row-actions button:hover, .evidence-row-actions a:hover { border-color: var(--green); color: var(--green); }
+.more-evidence { border-bottom: 1px solid var(--line); }
+.more-evidence > summary { display: flex; justify-content: space-between; gap: 16px; padding: 14px 0; color: var(--green); cursor: pointer; font-size: 12px; font-weight: 750; }
+.more-evidence > summary span { color: var(--muted); font-family: var(--mono); font-weight: 400; }
+.more-evidence[open] > summary { border-bottom: 1px dashed var(--line); }
 .supporting-video-index { margin: 20px 0 28px; border-block: 1px solid var(--line); padding: 18px 0; }
 .supporting-video-index > div { display: flex; justify-content: space-between; gap: 20px; align-items: baseline; margin-bottom: 14px; }
 .supporting-video-index > div span { color: var(--muted); font-size: 13px; }

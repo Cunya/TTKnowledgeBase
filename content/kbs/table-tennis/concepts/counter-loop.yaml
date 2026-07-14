@@ -4,7 +4,7 @@ label: Counter-loop
 aliases:
   - counterloop
   - loop against topspin
-short_definition: Use the opponent?s topspin and timing while adding a compact forward-and-brushing action to counter-loop the next ball.
+short_definition: Use the opponent's topspin and timing while adding a compact forward-and-brushing action to counter-loop the next ball.
 concept_type: stroke-variation
 facets:
   category:
@@ -28,13 +28,13 @@ evidence:
       start_ms: 14633
       end_ms: 22566
       url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=14s"
-      segment_ids:
+      segment_ids: &id001
         - "G7eiadOxN8E:00004"
         - "G7eiadOxN8E:00005"
   - id: i68OG8UzMyQ-cand-rhythm-against-topspin-loop-1
     evidence_type: explanation
-    excerpt: A forehand loop against topspin uses a slowed rhythm with a clear pause so the player does not rush the stroke and has time to complete body rotation and power generation.
-    reason: Speaker says to slow down against topspin and create a clear pause in the loop rhythm.
+    excerpt: Speaker says to slow down against topspin and create a clear pause in the loop rhythm.
+    reason: A forehand loop against topspin uses a slowed rhythm with a clear pause so the player does not rush the stroke and has time to complete body rotation and power generation.
     confidence: 0.89
     visual_status: transcript_inferred
     review_status: approved
@@ -48,8 +48,8 @@ evidence:
         - "i68OG8UzMyQ:00010"
   - id: i68OG8UzMyQ-cand-rhythm-against-topspin-loop-2
     evidence_type: explanation
-    excerpt: A forehand loop against topspin uses a slowed rhythm with a clear pause so the player does not rush the stroke and has time to complete body rotation and power generation.
-    reason: Speaker says to slow down against topspin and create a clear pause in the loop rhythm.
+    excerpt: Speaker says to slow down against topspin and create a clear pause in the loop rhythm.
+    reason: A forehand loop against topspin uses a slowed rhythm with a clear pause so the player does not rush the stroke and has time to complete body rotation and power generation.
     confidence: 0.89
     visual_status: transcript_inferred
     review_status: approved
@@ -63,8 +63,8 @@ evidence:
         - "i68OG8UzMyQ:00015"
   - id: i68OG8UzMyQ-cand-rhythm-against-topspin-loop-3
     evidence_type: demonstration
-    excerpt: A forehand loop against topspin uses a slowed rhythm with a clear pause so the player does not rush the stroke and has time to complete body rotation and power generation.
-    reason: Timing and rhythm are demonstrated and emphasized as something to feel and wait for.
+    excerpt: Timing and rhythm are demonstrated and emphasized as something to feel and wait for.
+    reason: A forehand loop against topspin uses a slowed rhythm with a clear pause so the player does not rush the stroke and has time to complete body rotation and power generation.
     confidence: 0.77
     visual_status: transcript_inferred
     review_status: approved
@@ -78,8 +78,8 @@ evidence:
         - "i68OG8UzMyQ:00012"
   - id: i68OG8UzMyQ-cand-rhythm-against-topspin-loop-4
     evidence_type: demonstration
-    excerpt: A forehand loop against topspin uses a slowed rhythm with a clear pause so the player does not rush the stroke and has time to complete body rotation and power generation.
-    reason: Timing and rhythm are demonstrated and emphasized as something to feel and wait for.
+    excerpt: Timing and rhythm are demonstrated and emphasized as something to feel and wait for.
+    reason: A forehand loop against topspin uses a slowed rhythm with a clear pause so the player does not rush the stroke and has time to complete body rotation and power generation.
     confidence: 0.77
     visual_status: transcript_inferred
     review_status: approved
@@ -90,4 +90,14 @@ evidence:
       url: "https://www.youtube.com/watch?v=i68OG8UzMyQ&t=74s"
       segment_ids:
         - "i68OG8UzMyQ:00023"
-relations: []
+relations:
+  - relation_type: variation_of
+    target_concept_id: concept-forehand-loop
+    sources:
+      - video_id: G7eiadOxN8E
+        start_ms: 14633
+        end_ms: 22566
+        url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=14s"
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

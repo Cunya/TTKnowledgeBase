@@ -18,8 +18,8 @@ review_status: approved
 evidence:
   - id: JcH1Nudznvk-cand-backhand-loop-elbow-pivot-forearm-path-1
     evidence_type: explanation
-    excerpt: In the backhand loop, keep the elbow as the stable axis, with the forearm starting below the elbow in the backswing and finishing above it at contact and follow-through.
-    reason: The speaker explicitly defines the elbow as the pivot and describes the below-elbow to above-elbow forearm path as the key point of the backhand loop.
+    excerpt: The speaker explicitly defines the elbow as the pivot and describes the below-elbow to above-elbow forearm path as the key point of the backhand loop.
+    reason: In the backhand loop, keep the elbow as the stable axis, with the forearm starting below the elbow in the backswing and finishing above it at contact and follow-through.
     confidence: 0.98
     visual_status: transcript_inferred
     review_status: approved
@@ -28,15 +28,15 @@ evidence:
       start_ms: 428840
       end_ms: 445720
       url: "https://www.youtube.com/watch?v=JcH1Nudznvk&t=428s"
-      segment_ids:
+      segment_ids: &id001
         - "JcH1Nudznvk:00166"
         - "JcH1Nudznvk:00168"
         - "JcH1Nudznvk:00170"
         - "JcH1Nudznvk:00172"
   - id: JcH1Nudznvk-cand-backhand-loop-elbow-pivot-forearm-path-2
     evidence_type: explanation
-    excerpt: In the backhand loop, keep the elbow as the stable axis, with the forearm starting below the elbow in the backswing and finishing above it at contact and follow-through.
-    reason: The speaker explicitly defines the elbow as the pivot and describes the below-elbow to above-elbow forearm path as the key point of the backhand loop.
+    excerpt: The speaker explicitly defines the elbow as the pivot and describes the below-elbow to above-elbow forearm path as the key point of the backhand loop.
+    reason: In the backhand loop, keep the elbow as the stable axis, with the forearm starting below the elbow in the backswing and finishing above it at contact and follow-through.
     confidence: 0.98
     visual_status: transcript_inferred
     review_status: approved
@@ -51,8 +51,8 @@ evidence:
         - "JcH1Nudznvk:00190"
   - id: JcH1Nudznvk-cand-backhand-loop-elbow-pivot-forearm-path-3
     evidence_type: correction
-    excerpt: In the backhand loop, keep the elbow as the stable axis, with the forearm starting below the elbow in the backswing and finishing above it at contact and follow-through.
-    reason: 'Incorrect mechanics are contrasted: dropping the elbow and pushing produces a drive-like push rather than a true loop.'
+    excerpt: 'Incorrect mechanics are contrasted: dropping the elbow and pushing produces a drive-like push rather than a true loop.'
+    reason: 'In the backhand loop, keep the elbow as the stable axis, with the forearm starting below the elbow in the backswing and finishing above it at contact and follow-through.'
     confidence: 0.91
     visual_status: transcript_inferred
     review_status: approved
@@ -66,8 +66,8 @@ evidence:
         - "JcH1Nudznvk:00177"
   - id: JcH1Nudznvk-cand-backhand-loop-elbow-pivot-forearm-path-4
     evidence_type: correction
-    excerpt: In the backhand loop, keep the elbow as the stable axis, with the forearm starting below the elbow in the backswing and finishing above it at contact and follow-through.
-    reason: 'Incorrect mechanics are contrasted: dropping the elbow and pushing produces a drive-like push rather than a true loop.'
+    excerpt: 'Incorrect mechanics are contrasted: dropping the elbow and pushing produces a drive-like push rather than a true loop.'
+    reason: 'In the backhand loop, keep the elbow as the stable axis, with the forearm starting below the elbow in the backswing and finishing above it at contact and follow-through.'
     confidence: 0.91
     visual_status: transcript_inferred
     review_status: approved
@@ -126,4 +126,103 @@ evidence:
         - "JcH1Nudznvk:00214"
         - "JcH1Nudznvk:00218"
         - "JcH1Nudznvk:00220"
-relations: []
+  - id: q9c2_hCwlhs-cand-2-1
+    evidence_type: explanation
+    excerpt: The speaker explains that the stroke must open like a fan and curve sideways rather than push straight through the ball.
+    reason: The backhand loop should brush in a curved, fan-opening path rather than pushing straight forward or purely up and down, creating spin through sideways-curving friction.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: q9c2_hCwlhs
+      start_ms: 29240
+      end_ms: 36600
+      url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=29s
+      segment_ids:
+        - q9c2_hCwlhs:00011
+        - q9c2_hCwlhs:00013
+  - id: q9c2_hCwlhs-cand-2-2
+    evidence_type: explanation
+    excerpt: The speaker explains that the stroke must open like a fan and curve sideways rather than push straight through the ball.
+    reason: The backhand loop should brush in a curved, fan-opening path rather than pushing straight forward or purely up and down, creating spin through sideways-curving friction.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: q9c2_hCwlhs
+      start_ms: 67120
+      end_ms: 76320
+      url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=67s
+      segment_ids:
+        - q9c2_hCwlhs:00027
+        - q9c2_hCwlhs:00029
+  - id: q9c2_hCwlhs-cand-2-3
+    evidence_type: correction
+    excerpt: A common error is identified as forward pushing and straight-line friction that produces little spin.
+    reason: The backhand loop should brush in a curved, fan-opening path rather than pushing straight forward or purely up and down, creating spin through sideways-curving friction.
+    confidence: 0.92
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: q9c2_hCwlhs
+      start_ms: 54000
+      end_ms: 69640
+      url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=54s
+      segment_ids:
+        - q9c2_hCwlhs:00021
+        - q9c2_hCwlhs:00026
+  - id: zd8tcVUWwK4-cand-backhand-loop-swing-path-1
+    evidence_type: explanation
+    excerpt: Speaker explains that stepping back and reaching causes straight-arm pushing, while correct backhand power keeps a controlled bend and breaking action.
+    reason: Effective backhand topspin requires a controlled breaking action rather than a straight pushing extension of the arm, even when the player steps back to use more power.
+    confidence: 0.92
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: zd8tcVUWwK4
+      start_ms: 188720
+      end_ms: 210120
+      url: https://www.youtube.com/watch?v=zd8tcVUWwK4&t=188s
+      segment_ids:
+        - zd8tcVUWwK4:00080
+        - zd8tcVUWwK4:00081
+        - zd8tcVUWwK4:00082
+        - zd8tcVUWwK4:00083
+        - zd8tcVUWwK4:00084
+        - zd8tcVUWwK4:00085
+        - zd8tcVUWwK4:00086
+        - zd8tcVUWwK4:00087
+  - id: zd8tcVUWwK4-cand-backhand-loop-swing-path-2
+    evidence_type: explanation
+    excerpt: Speaker explains that stepping back and reaching causes straight-arm pushing, while correct backhand power keeps a controlled bend and breaking action.
+    reason: Effective backhand topspin requires a controlled breaking action rather than a straight pushing extension of the arm, even when the player steps back to use more power.
+    confidence: 0.92
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: zd8tcVUWwK4
+      start_ms: 215400
+      end_ms: 241120
+      url: https://www.youtube.com/watch?v=zd8tcVUWwK4&t=215s
+      segment_ids:
+        - zd8tcVUWwK4:00092
+        - zd8tcVUWwK4:00093
+        - zd8tcVUWwK4:00094
+        - zd8tcVUWwK4:00095
+        - zd8tcVUWwK4:00096
+        - zd8tcVUWwK4:00097
+        - zd8tcVUWwK4:00098
+        - zd8tcVUWwK4:00100
+        - zd8tcVUWwK4:00101
+        - zd8tcVUWwK4:00102
+relations:
+  - relation_type: part_of
+    target_concept_id: concept-backhand-loop
+    sources:
+      - video_id: JcH1Nudznvk
+        start_ms: 428840
+        end_ms: 445720
+        url: "https://www.youtube.com/watch?v=JcH1Nudznvk&t=428s"
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

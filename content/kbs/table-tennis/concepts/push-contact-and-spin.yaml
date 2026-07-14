@@ -28,7 +28,7 @@ evidence:
       start_ms: 213433
       end_ms: 231366
       url: "https://www.youtube.com/watch?v=p3hweUir1Mg&t=213s"
-      segment_ids:
+      segment_ids: &id001
         - "p3hweUir1Mg:00054"
         - "p3hweUir1Mg:00055"
         - "p3hweUir1Mg:00056"
@@ -69,8 +69,8 @@ evidence:
         - "p3hweUir1Mg:00062"
   - id: p3hweUir1Mg-candidate-generating-spin-at-contact-1
     evidence_type: definition
-    excerpt: High-quality pushing depends on producing friction at contact mainly through the wrist and fingers, with only a small assisting role from the forearm for direction.
-    reason: The speaker explicitly says the main force and friction come from the wrist and fingers, while the forearm mainly controls direction.
+    excerpt: The speaker explicitly says the main force and friction come from the wrist and fingers, while the forearm mainly controls direction.
+    reason: High-quality pushing depends on producing friction at contact mainly through the wrist and fingers, with only a small assisting role from the forearm for direction.
     confidence: 0.84
     visual_status: transcript_inferred
     review_status: approved
@@ -87,8 +87,8 @@ evidence:
         - "p3hweUir1Mg:00082"
   - id: p3hweUir1Mg-candidate-generating-spin-at-contact-2
     evidence_type: definition
-    excerpt: High-quality pushing depends on producing friction at contact mainly through the wrist and fingers, with only a small assisting role from the forearm for direction.
-    reason: The speaker explicitly says the main force and friction come from the wrist and fingers, while the forearm mainly controls direction.
+    excerpt: The speaker explicitly says the main force and friction come from the wrist and fingers, while the forearm mainly controls direction.
+    reason: High-quality pushing depends on producing friction at contact mainly through the wrist and fingers, with only a small assisting role from the forearm for direction.
     confidence: 0.84
     visual_status: transcript_inferred
     review_status: approved
@@ -103,8 +103,8 @@ evidence:
         - "p3hweUir1Mg:00088"
   - id: p3hweUir1Mg-candidate-generating-spin-at-contact-3
     evidence_type: definition
-    excerpt: High-quality pushing depends on producing friction at contact mainly through the wrist and fingers, with only a small assisting role from the forearm for direction.
-    reason: The speaker explicitly says the main force and friction come from the wrist and fingers, while the forearm mainly controls direction.
+    excerpt: The speaker explicitly says the main force and friction come from the wrist and fingers, while the forearm mainly controls direction.
+    reason: High-quality pushing depends on producing friction at contact mainly through the wrist and fingers, with only a small assisting role from the forearm for direction.
     confidence: 0.84
     visual_status: transcript_inferred
     review_status: approved
@@ -119,8 +119,8 @@ evidence:
         - "p3hweUir1Mg:00093"
   - id: p3hweUir1Mg-candidate-generating-spin-at-contact-4
     evidence_type: correction
-    excerpt: High-quality pushing depends on producing friction at contact mainly through the wrist and fingers, with only a small assisting role from the forearm for direction.
-    reason: The speaker corrects the common mistake of using the forearm or upper arm too much, which reduces friction quality and produces floaty, weak balls.
+    excerpt: The speaker corrects the common mistake of using the forearm or upper arm too much, which reduces friction quality and produces floaty, weak balls.
+    reason: High-quality pushing depends on producing friction at contact mainly through the wrist and fingers, with only a small assisting role from the forearm for direction.
     confidence: 0.87
     visual_status: transcript_inferred
     review_status: approved
@@ -135,8 +135,8 @@ evidence:
         - "p3hweUir1Mg:00086"
   - id: p3hweUir1Mg-candidate-generating-spin-at-contact-5
     evidence_type: correction
-    excerpt: High-quality pushing depends on producing friction at contact mainly through the wrist and fingers, with only a small assisting role from the forearm for direction.
-    reason: The speaker corrects the common mistake of using the forearm or upper arm too much, which reduces friction quality and produces floaty, weak balls.
+    excerpt: The speaker corrects the common mistake of using the forearm or upper arm too much, which reduces friction quality and produces floaty, weak balls.
+    reason: High-quality pushing depends on producing friction at contact mainly through the wrist and fingers, with only a small assisting role from the forearm for direction.
     confidence: 0.87
     visual_status: transcript_inferred
     review_status: approved
@@ -153,8 +153,8 @@ evidence:
         - "p3hweUir1Mg:00104"
   - id: 3yx5OMDyM8c-candidate-push-friction-neutralizes-sidespin-1
     evidence_type: explanation
-    excerpt: A push-receive concept that spin is controlled by actively brushing with friction and finger adjustment rather than merely touching the ball with the arm, which otherwise reproduces the opponent's sidespin.
-    reason: The speaker explains that amateurs get affected by spin because they only touch the ball and use the arm instead of finger-controlled friction.
+    excerpt: The speaker explains that amateurs get affected by spin because they only touch the ball and use the arm instead of finger-controlled friction.
+    reason: A push-receive concept that spin is controlled by actively brushing with friction and finger adjustment rather than merely touching the ball with the arm, which otherwise reproduces the opponent's sidespin.
     confidence: 0.98
     visual_status: not_visual
     review_status: approved
@@ -178,8 +178,8 @@ evidence:
         - "3yx5OMDyM8c:00233"
   - id: 3yx5OMDyM8c-candidate-push-friction-neutralizes-sidespin-2
     evidence_type: explanation
-    excerpt: A push-receive concept that spin is controlled by actively brushing with friction and finger adjustment rather than merely touching the ball with the arm, which otherwise reproduces the opponent's sidespin.
-    reason: The speaker explains that amateurs get affected by spin because they only touch the ball and use the arm instead of finger-controlled friction.
+    excerpt: The speaker explains that amateurs get affected by spin because they only touch the ball and use the arm instead of finger-controlled friction.
+    reason: A push-receive concept that spin is controlled by actively brushing with friction and finger adjustment rather than merely touching the ball with the arm, which otherwise reproduces the opponent's sidespin.
     confidence: 0.98
     visual_status: not_visual
     review_status: approved
@@ -201,8 +201,8 @@ evidence:
         - "3yx5OMDyM8c:00243"
   - id: 3yx5OMDyM8c-candidate-push-friction-neutralizes-sidespin-3
     evidence_type: demonstration
-    excerpt: A push-receive concept that spin is controlled by actively brushing with friction and finger adjustment rather than merely touching the ball with the arm, which otherwise reproduces the opponent's sidespin.
-    reason: 'The transcript gives a concrete push example: adjust racket head, brush more under the ball, extend the motion, and create fuller friction.'
+    excerpt: 'The transcript gives a concrete push example: adjust racket head, brush more under the ball, extend the motion, and create fuller friction.'
+    reason: 'A push-receive concept that spin is controlled by actively brushing with friction and finger adjustment rather than merely touching the ball with the arm, which otherwise reproduces the opponent''s sidespin.'
     confidence: 0.96
     visual_status: transcript_inferred
     review_status: approved
@@ -224,8 +224,8 @@ evidence:
         - "3yx5OMDyM8c:00253"
   - id: 3yx5OMDyM8c-candidate-push-friction-neutralizes-sidespin-4
     evidence_type: demonstration
-    excerpt: A push-receive concept that spin is controlled by actively brushing with friction and finger adjustment rather than merely touching the ball with the arm, which otherwise reproduces the opponent's sidespin.
-    reason: 'The transcript gives a concrete push example: adjust racket head, brush more under the ball, extend the motion, and create fuller friction.'
+    excerpt: 'The transcript gives a concrete push example: adjust racket head, brush more under the ball, extend the motion, and create fuller friction.'
+    reason: 'A push-receive concept that spin is controlled by actively brushing with friction and finger adjustment rather than merely touching the ball with the arm, which otherwise reproduces the opponent''s sidespin.'
     confidence: 0.96
     visual_status: transcript_inferred
     review_status: approved
@@ -248,8 +248,8 @@ evidence:
         - "3yx5OMDyM8c:00264"
   - id: 3yx5OMDyM8c-candidate-push-friction-neutralizes-sidespin-5
     evidence_type: demonstration
-    excerpt: A push-receive concept that spin is controlled by actively brushing with friction and finger adjustment rather than merely touching the ball with the arm, which otherwise reproduces the opponent's sidespin.
-    reason: 'The transcript gives a concrete push example: adjust racket head, brush more under the ball, extend the motion, and create fuller friction.'
+    excerpt: 'The transcript gives a concrete push example: adjust racket head, brush more under the ball, extend the motion, and create fuller friction.'
+    reason: 'A push-receive concept that spin is controlled by actively brushing with friction and finger adjustment rather than merely touching the ball with the arm, which otherwise reproduces the opponent''s sidespin.'
     confidence: 0.96
     visual_status: transcript_inferred
     review_status: approved
@@ -263,8 +263,8 @@ evidence:
         - "3yx5OMDyM8c:00266"
   - id: 3yx5OMDyM8c-candidate-push-friction-neutralizes-sidespin-6
     evidence_type: drill
-    excerpt: A push-receive concept that spin is controlled by actively brushing with friction and finger adjustment rather than merely touching the ball with the arm, which otherwise reproduces the opponent's sidespin.
-    reason: 'The speaker turns it into a practice emphasis: develop feel and use fingers to control how the spinning ball crosses the net.'
+    excerpt: 'The speaker turns it into a practice emphasis: develop feel and use fingers to control how the spinning ball crosses the net.'
+    reason: 'A push-receive concept that spin is controlled by actively brushing with friction and finger adjustment rather than merely touching the ball with the arm, which otherwise reproduces the opponent''s sidespin.'
     confidence: 0.9
     visual_status: not_visual
     review_status: approved
@@ -282,8 +282,8 @@ evidence:
         - "3yx5OMDyM8c:00272"
   - id: bUCFpvTlaMU-candidate-contact-behind-ball-on-push-1
     evidence_type: definition
-    excerpt: On short receives and pushes, contact should be made from behind or slightly below-behind the ball rather than directly underneath, which helps control arc and avoid popping the ball up.
-    reason: The speaker explicitly contrasts contacting behind the ball with contacting underneath and explains the consequence of popping the ball up.
+    excerpt: The speaker explicitly contrasts contacting behind the ball with contacting underneath and explains the consequence of popping the ball up.
+    reason: On short receives and pushes, contact should be made from behind or slightly below-behind the ball rather than directly underneath, which helps control arc and avoid popping the ball up.
     confidence: 0.96
     visual_status: not_visual
     review_status: approved
@@ -299,8 +299,8 @@ evidence:
         - bUCFpvTlaMU:00033
   - id: bUCFpvTlaMU-candidate-contact-behind-ball-on-push-2
     evidence_type: explanation
-    excerpt: On short receives and pushes, contact should be made from behind or slightly below-behind the ball rather than directly underneath, which helps control arc and avoid popping the ball up.
-    reason: The same principle is restated as the way to control the arc and avoid floating the return, even against heavy spin.
+    excerpt: The same principle is restated as the way to control the arc and avoid floating the return, even against heavy spin.
+    reason: On short receives and pushes, contact should be made from behind or slightly below-behind the ball rather than directly underneath, which helps control arc and avoid popping the ball up.
     confidence: 0.93
     visual_status: not_visual
     review_status: approved
@@ -316,8 +316,8 @@ evidence:
         - bUCFpvTlaMU:00077
   - id: bUCFpvTlaMU-candidate-contact-behind-ball-on-push-3
     evidence_type: explanation
-    excerpt: On short receives and pushes, contact should be made from behind or slightly below-behind the ball rather than directly underneath, which helps control arc and avoid popping the ball up.
-    reason: The same principle is restated as the way to control the arc and avoid floating the return, even against heavy spin.
+    excerpt: The same principle is restated as the way to control the arc and avoid floating the return, even against heavy spin.
+    reason: On short receives and pushes, contact should be made from behind or slightly below-behind the ball rather than directly underneath, which helps control arc and avoid popping the ball up.
     confidence: 0.93
     visual_status: not_visual
     review_status: approved
@@ -331,8 +331,8 @@ evidence:
         - bUCFpvTlaMU:00091
   - id: bUCFpvTlaMU-candidate-contact-behind-ball-on-push-4
     evidence_type: demonstration
-    excerpt: On short receives and pushes, contact should be made from behind or slightly below-behind the ball rather than directly underneath, which helps control arc and avoid popping the ball up.
-    reason: The speaker uses a visibility cue in the racket-ball relationship to illustrate proper behind-the-ball contact.
+    excerpt: The speaker uses a visibility cue in the racket-ball relationship to illustrate proper behind-the-ball contact.
+    reason: On short receives and pushes, contact should be made from behind or slightly below-behind the ball rather than directly underneath, which helps control arc and avoid popping the ball up.
     confidence: 0.84
     visual_status: transcript_inferred
     review_status: approved
@@ -385,4 +385,14 @@ evidence:
         - hZmEfLkbNI8:00139
         - hZmEfLkbNI8:00140
         - hZmEfLkbNI8:00141
-relations: []
+relations:
+  - relation_type: part_of
+    target_concept_id: concept-push-technique
+    sources:
+      - video_id: p3hweUir1Mg
+        start_ms: 213433
+        end_ms: 231366
+        url: "https://www.youtube.com/watch?v=p3hweUir1Mg&t=213s"
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

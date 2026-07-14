@@ -29,7 +29,7 @@ evidence:
       start_ms: 720
       end_ms: 9360
       url: https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=0s
-      segment_ids:
+      segment_ids: &id001
         - Ge6u_cFpfDU:00000
         - Ge6u_cFpfDU:00001
         - Ge6u_cFpfDU:00002
@@ -202,4 +202,14 @@ evidence:
         - Ge6u_cFpfDU:00043
         - Ge6u_cFpfDU:00044
         - Ge6u_cFpfDU:00045
-relations: []
+relations:
+  - relation_type: used_with
+    target_concept_id: concept-short-serve-third-ball-attack
+    sources:
+      - video_id: Ge6u_cFpfDU
+        start_ms: 720
+        end_ms: 9360
+        url: https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=0s
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

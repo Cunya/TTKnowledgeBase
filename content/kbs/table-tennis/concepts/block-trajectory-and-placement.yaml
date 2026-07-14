@@ -4,7 +4,7 @@ label: Block trajectory and placement
 aliases:
   - low block
   - trajectory control
-short_definition: Control the height, depth, and pace of the return to make the opponent?s next attack less comfortable.
+short_definition: Control the height, depth, and pace of the return to make the opponent's next attack less comfortable.
 concept_type: block-tactic
 facets:
   category:
@@ -28,7 +28,7 @@ evidence:
       start_ms: 17280
       end_ms: 43120
       url: "https://www.youtube.com/watch?v=etKOmktKw1k&t=17s"
-      segment_ids:
+      segment_ids: &id001
         - "etKOmktKw1k:00007"
         - "etKOmktKw1k:00008"
         - "etKOmktKw1k:00009"
@@ -76,4 +76,14 @@ evidence:
         - "etKOmktKw1k:00113"
         - "etKOmktKw1k:00114"
         - "etKOmktKw1k:00115"
-relations: []
+relations:
+  - relation_type: used_with
+    target_concept_id: concept-direction-reading
+    sources:
+      - video_id: etKOmktKw1k
+        start_ms: 17280
+        end_ms: 43120
+        url: "https://www.youtube.com/watch?v=etKOmktKw1k&t=17s"
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

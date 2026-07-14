@@ -28,7 +28,7 @@ evidence:
       start_ms: 6040
       end_ms: 28840
       url: "https://www.youtube.com/watch?v=rTQcgBBWKWg&t=6s"
-      segment_ids:
+      segment_ids: &id001
         - "rTQcgBBWKWg:00002"
         - "rTQcgBBWKWg:00005"
         - "rTQcgBBWKWg:00009"
@@ -88,8 +88,8 @@ evidence:
         - "rTQcgBBWKWg:00024"
   - id: m93pWt9MIZE-candidate-match-state-adjustment-1
     evidence_type: explanation
-    excerpt: Managing aggression and stroke quality based on match phase and score, using more brushing and safety early or at critical points to preserve rhythm and consistency.
-    reason: Speaker advises not to go all out at the start of a match and to use brushing to stabilize touch and rhythm.
+    excerpt: Speaker advises not to go all out at the start of a match and to use brushing to stabilize touch and rhythm.
+    reason: Managing aggression and stroke quality based on match phase and score, using more brushing and safety early or at critical points to preserve rhythm and consistency.
     confidence: 0.95
     visual_status: not_visual
     review_status: approved
@@ -102,8 +102,8 @@ evidence:
         - "m93pWt9MIZE:00105"
   - id: m93pWt9MIZE-candidate-match-state-adjustment-2
     evidence_type: explanation
-    excerpt: Managing aggression and stroke quality based on match phase and score, using more brushing and safety early or at critical points to preserve rhythm and consistency.
-    reason: Speaker advises not to go all out at the start of a match and to use brushing to stabilize touch and rhythm.
+    excerpt: Speaker advises not to go all out at the start of a match and to use brushing to stabilize touch and rhythm.
+    reason: Managing aggression and stroke quality based on match phase and score, using more brushing and safety early or at critical points to preserve rhythm and consistency.
     confidence: 0.95
     visual_status: not_visual
     review_status: approved
@@ -116,8 +116,8 @@ evidence:
         - "m93pWt9MIZE:00116"
   - id: m93pWt9MIZE-candidate-match-state-adjustment-3
     evidence_type: explanation
-    excerpt: Managing aggression and stroke quality based on match phase and score, using more brushing and safety early or at critical points to preserve rhythm and consistency.
-    reason: Speaker explains that at critical points players should increase brushing and accuracy rather than hit harder.
+    excerpt: Speaker explains that at critical points players should increase brushing and accuracy rather than hit harder.
+    reason: Managing aggression and stroke quality based on match phase and score, using more brushing and safety early or at critical points to preserve rhythm and consistency.
     confidence: 0.94
     visual_status: not_visual
     review_status: approved
@@ -130,8 +130,8 @@ evidence:
         - "m93pWt9MIZE:00127"
   - id: m93pWt9MIZE-candidate-match-state-adjustment-4
     evidence_type: explanation
-    excerpt: Managing aggression and stroke quality based on match phase and score, using more brushing and safety early or at critical points to preserve rhythm and consistency.
-    reason: Speaker explains that at critical points players should increase brushing and accuracy rather than hit harder.
+    excerpt: Speaker explains that at critical points players should increase brushing and accuracy rather than hit harder.
+    reason: Managing aggression and stroke quality based on match phase and score, using more brushing and safety early or at critical points to preserve rhythm and consistency.
     confidence: 0.94
     visual_status: not_visual
     review_status: approved
@@ -193,4 +193,51 @@ evidence:
         - p19HWlk7LGo:00158
         - p19HWlk7LGo:00159
         - p19HWlk7LGo:00160
-relations: []
+  - id: p19HWlk7LGo-concept-match-spin-response-framework-1
+    evidence_type: definition
+    excerpt: The coach presents a three-level framework for handling different incoming balls in match play.
+    reason: A match-play decision framework that sorts incoming topspin or backspin into force or spin levels and assigns a corresponding response such as heavy block, normal play, punch, or more brushing contact.
+    confidence: 0.84
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: p19HWlk7LGo
+      start_ms: 455520
+      end_ms: 474120
+      url: https://www.youtube.com/watch?v=p19HWlk7LGo&t=455s
+      segment_ids:
+        - p19HWlk7LGo:00153
+        - p19HWlk7LGo:00154
+        - p19HWlk7LGo:00155
+        - p19HWlk7LGo:00156
+        - p19HWlk7LGo:00157
+  - id: p19HWlk7LGo-concept-match-spin-response-framework-2
+    evidence_type: explanation
+    excerpt: The framework is explained as categorization leading to the right handling choice, with anticipation making the ball manageable.
+    reason: A match-play decision framework that sorts incoming topspin or backspin into force or spin levels and assigns a corresponding response such as heavy block, normal play, punch, or more brushing contact.
+    confidence: 0.83
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: p19HWlk7LGo
+      start_ms: 477800
+      end_ms: 494840
+      url: https://www.youtube.com/watch?v=p19HWlk7LGo&t=477s
+      segment_ids:
+        - p19HWlk7LGo:00158
+        - p19HWlk7LGo:00159
+        - p19HWlk7LGo:00160
+        - p19HWlk7LGo:00161
+        - p19HWlk7LGo:00162
+        - p19HWlk7LGo:00163
+relations:
+  - relation_type: used_with
+    target_concept_id: concept-opponent-targeting
+    sources:
+      - video_id: rTQcgBBWKWg
+        start_ms: 6040
+        end_ms: 28840
+        url: "https://www.youtube.com/watch?v=rTQcgBBWKWg&t=6s"
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

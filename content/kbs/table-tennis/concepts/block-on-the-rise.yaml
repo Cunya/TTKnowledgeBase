@@ -3,7 +3,7 @@ slug: block-on-the-rise
 label: Block on the rise
 aliases:
   - early block timing
-short_definition: Meet topspin early after the bounce to borrow pace and reduce the attacker?s recovery time.
+short_definition: Meet topspin early after the bounce to borrow pace and reduce the attacker's recovery time.
 concept_type: timing
 facets:
   category:
@@ -17,8 +17,8 @@ review_status: approved
 evidence:
   - id: etKOmktKw1k-candidate-block-on-the-rise-against-topspin-1
     evidence_type: explanation
-    excerpt: Against topspin, blocking is most reliable when the ball is contacted on the rising phase, before the spin fully develops, rather than at the peak or on the way down.
-    reason: The speaker identifies timing as the first cause of missed defensive blocks and states that contact on the rising phase will stay on the table.
+    excerpt: The speaker identifies timing as the first cause of missed defensive blocks and states that contact on the rising phase will stay on the table.
+    reason: Against topspin, blocking is most reliable when the ball is contacted on the rising phase, before the spin fully develops, rather than at the peak or on the way down.
     confidence: 0.97
     visual_status: transcript_inferred
     review_status: approved
@@ -27,7 +27,7 @@ evidence:
       start_ms: 198600
       end_ms: 226680
       url: "https://www.youtube.com/watch?v=etKOmktKw1k&t=198s"
-      segment_ids:
+      segment_ids: &id001
         - "etKOmktKw1k:00074"
         - "etKOmktKw1k:00075"
         - "etKOmktKw1k:00076"
@@ -41,8 +41,8 @@ evidence:
         - "etKOmktKw1k:00084"
   - id: etKOmktKw1k-candidate-block-on-the-rise-against-topspin-2
     evidence_type: explanation
-    excerpt: Against topspin, blocking is most reliable when the ball is contacted on the rising phase, before the spin fully develops, rather than at the peak or on the way down.
-    reason: The speaker generalizes that blocking depends on early timing and explicitly says only by taking the ball at the rising phase can he block it.
+    excerpt: The speaker generalizes that blocking depends on early timing and explicitly says only by taking the ball at the rising phase can he block it.
+    reason: Against topspin, blocking is most reliable when the ball is contacted on the rising phase, before the spin fully develops, rather than at the peak or on the way down.
     confidence: 0.96
     visual_status: transcript_inferred
     review_status: approved
@@ -61,8 +61,8 @@ evidence:
         - "etKOmktKw1k:00094"
   - id: etKOmktKw1k-candidate-block-on-the-rise-against-topspin-3
     evidence_type: explanation
-    excerpt: Against topspin, blocking is most reliable when the ball is contacted on the rising phase, before the spin fully develops, rather than at the peak or on the way down.
-    reason: The speaker generalizes that blocking depends on early timing and explicitly says only by taking the ball at the rising phase can he block it.
+    excerpt: The speaker generalizes that blocking depends on early timing and explicitly says only by taking the ball at the rising phase can he block it.
+    reason: Against topspin, blocking is most reliable when the ball is contacted on the rising phase, before the spin fully develops, rather than at the peak or on the way down.
     confidence: 0.96
     visual_status: transcript_inferred
     review_status: approved
@@ -79,8 +79,8 @@ evidence:
         - "etKOmktKw1k:00100"
   - id: etKOmktKw1k-candidate-block-on-the-rise-against-topspin-4
     evidence_type: explanation
-    excerpt: Against topspin, blocking is most reliable when the ball is contacted on the rising phase, before the spin fully develops, rather than at the peak or on the way down.
-    reason: The speaker generalizes that blocking depends on early timing and explicitly says only by taking the ball at the rising phase can he block it.
+    excerpt: The speaker generalizes that blocking depends on early timing and explicitly says only by taking the ball at the rising phase can he block it.
+    reason: Against topspin, blocking is most reliable when the ball is contacted on the rising phase, before the spin fully develops, rather than at the peak or on the way down.
     confidence: 0.96
     visual_status: transcript_inferred
     review_status: approved
@@ -109,4 +109,14 @@ evidence:
         - f7uZPRPIwpU:00175
         - f7uZPRPIwpU:00176
         - f7uZPRPIwpU:00177
-relations: []
+relations:
+  - relation_type: part_of
+    target_concept_id: concept-block-trajectory-and-placement
+    sources:
+      - video_id: etKOmktKw1k
+        start_ms: 198600
+        end_ms: 226680
+        url: "https://www.youtube.com/watch?v=etKOmktKw1k&t=198s"
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

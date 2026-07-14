@@ -35,7 +35,7 @@ evidence:
       start_ms: 2680
       end_ms: 26760
       url: https://www.youtube.com/watch?v=hZmEfLkbNI8&t=2s
-      segment_ids:
+      segment_ids: &id001
         - hZmEfLkbNI8:00000
         - hZmEfLkbNI8:00001
         - hZmEfLkbNI8:00002
@@ -47,8 +47,8 @@ evidence:
         - hZmEfLkbNI8:00008
   - id: hZmEfLkbNI8-cand-adaptive-pushing-1
     evidence_type: explanation
-    excerpt: Selecting push spin, speed, depth, and length based on the opponent's swing type, timing preference, and tactical weakness rather than using one standard push against every player.
-    reason: The speaker repeatedly says push choice depends on opponent type, especially whether they thrive on speed or spin.
+    excerpt: The speaker repeatedly says push choice depends on opponent type, especially whether they thrive on speed or spin.
+    reason: Selecting push spin, speed, depth, and length based on the opponent's swing type, timing preference, and tactical weakness rather than using one standard push against every player.
     confidence: 0.96
     visual_status: not_visual
     review_status: approved
@@ -68,8 +68,8 @@ evidence:
         - hZmEfLkbNI8:00021
   - id: hZmEfLkbNI8-cand-adaptive-pushing-2
     evidence_type: explanation
-    excerpt: Selecting push spin, speed, depth, and length based on the opponent's swing type, timing preference, and tactical weakness rather than using one standard push against every player.
-    reason: The speaker repeatedly says push choice depends on opponent type, especially whether they thrive on speed or spin.
+    excerpt: The speaker repeatedly says push choice depends on opponent type, especially whether they thrive on speed or spin.
+    reason: Selecting push spin, speed, depth, and length based on the opponent's swing type, timing preference, and tactical weakness rather than using one standard push against every player.
     confidence: 0.96
     visual_status: not_visual
     review_status: approved
@@ -84,8 +84,8 @@ evidence:
         - hZmEfLkbNI8:00030
   - id: hZmEfLkbNI8-cand-adaptive-pushing-3
     evidence_type: explanation
-    excerpt: Selecting push spin, speed, depth, and length based on the opponent's swing type, timing preference, and tactical weakness rather than using one standard push against every player.
-    reason: The speaker repeatedly says push choice depends on opponent type, especially whether they thrive on speed or spin.
+    excerpt: The speaker repeatedly says push choice depends on opponent type, especially whether they thrive on speed or spin.
+    reason: Selecting push spin, speed, depth, and length based on the opponent's swing type, timing preference, and tactical weakness rather than using one standard push against every player.
     confidence: 0.96
     visual_status: not_visual
     review_status: approved
@@ -100,8 +100,8 @@ evidence:
         - hZmEfLkbNI8:00095
   - id: hZmEfLkbNI8-cand-adaptive-pushing-4
     evidence_type: example
-    excerpt: Selecting push spin, speed, depth, and length based on the opponent's swing type, timing preference, and tactical weakness rather than using one standard push against every player.
-    reason: 'Multiple opponent archetypes are paired with different push responses: fast deep chop, dead long push, short push, and floating push.'
+    excerpt: 'Multiple opponent archetypes are paired with different push responses: fast deep chop, dead long push, short push, and floating push.'
+    reason: 'Selecting push spin, speed, depth, and length based on the opponent''s swing type, timing preference, and tactical weakness rather than using one standard push against every player.'
     confidence: 0.92
     visual_status: not_visual
     review_status: approved
@@ -118,8 +118,8 @@ evidence:
         - hZmEfLkbNI8:00045
   - id: hZmEfLkbNI8-cand-adaptive-pushing-5
     evidence_type: example
-    excerpt: Selecting push spin, speed, depth, and length based on the opponent's swing type, timing preference, and tactical weakness rather than using one standard push against every player.
-    reason: 'Multiple opponent archetypes are paired with different push responses: fast deep chop, dead long push, short push, and floating push.'
+    excerpt: 'Multiple opponent archetypes are paired with different push responses: fast deep chop, dead long push, short push, and floating push.'
+    reason: 'Selecting push spin, speed, depth, and length based on the opponent''s swing type, timing preference, and tactical weakness rather than using one standard push against every player.'
     confidence: 0.92
     visual_status: not_visual
     review_status: approved
@@ -296,4 +296,76 @@ evidence:
         - hZmEfLkbNI8:00201
         - hZmEfLkbNI8:00202
         - hZmEfLkbNI8:00203
-relations: []
+  - id: tWJXY0cUPRQ-cand-half-spin-sideways-push-1
+    evidence_type: explanation
+    excerpt: Speaker introduces the problem of mixed or half spin that amateurs misclassify.
+    reason: Against impure or mixed spin serves, use a lateral pushing action rather than an exaggerated downward or forward push to gain safer arc and longer contact.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: tWJXY0cUPRQ
+      start_ms: 463200
+      end_ms: 485440
+      url: https://www.youtube.com/watch?v=tWJXY0cUPRQ&t=463s
+      segment_ids:
+        - tWJXY0cUPRQ:00177
+        - tWJXY0cUPRQ:00178
+        - tWJXY0cUPRQ:00179
+        - tWJXY0cUPRQ:00180
+        - tWJXY0cUPRQ:00181
+        - tWJXY0cUPRQ:00182
+        - tWJXY0cUPRQ:00183
+        - tWJXY0cUPRQ:00184
+  - id: tWJXY0cUPRQ-cand-half-spin-sideways-push-2
+    evidence_type: correction
+    excerpt: Speaker corrects exaggerated down/forward pushing and recommends a sideways push because it creates a natural drop and longer contact.
+    reason: Against impure or mixed spin serves, use a lateral pushing action rather than an exaggerated downward or forward push to gain safer arc and longer contact.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: tWJXY0cUPRQ
+      start_ms: 493680
+      end_ms: 513520
+      url: https://www.youtube.com/watch?v=tWJXY0cUPRQ&t=493s
+      segment_ids:
+        - tWJXY0cUPRQ:00189
+        - tWJXY0cUPRQ:00190
+        - tWJXY0cUPRQ:00191
+        - tWJXY0cUPRQ:00192
+        - tWJXY0cUPRQ:00193
+        - tWJXY0cUPRQ:00194
+        - tWJXY0cUPRQ:00195
+  - id: tWJXY0cUPRQ-cand-half-spin-sideways-push-3
+    evidence_type: explanation
+    excerpt: Speaker ties the sideways push to handling impure spin and gives backhand body-height reference points.
+    reason: Against impure or mixed spin serves, use a lateral pushing action rather than an exaggerated downward or forward push to gain safer arc and longer contact.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: tWJXY0cUPRQ
+      start_ms: 514039
+      end_ms: 534480
+      url: https://www.youtube.com/watch?v=tWJXY0cUPRQ&t=514s
+      segment_ids:
+        - tWJXY0cUPRQ:00196
+        - tWJXY0cUPRQ:00197
+        - tWJXY0cUPRQ:00198
+        - tWJXY0cUPRQ:00199
+        - tWJXY0cUPRQ:00200
+        - tWJXY0cUPRQ:00201
+        - tWJXY0cUPRQ:00202
+        - tWJXY0cUPRQ:00203
+relations:
+  - relation_type: variation_of
+    target_concept_id: concept-push-technique
+    sources:
+      - video_id: hZmEfLkbNI8
+        start_ms: 2680
+        end_ms: 26760
+        url: https://www.youtube.com/watch?v=hZmEfLkbNI8&t=2s
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

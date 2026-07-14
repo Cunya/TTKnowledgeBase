@@ -28,7 +28,7 @@ evidence:
       start_ms: 5300
       end_ms: 7166
       url: "https://www.youtube.com/watch?v=p3hweUir1Mg&t=5s"
-      segment_ids:
+      segment_ids: &id001
         - "p3hweUir1Mg:00002"
   - id: p3hweUir1Mg-candidate-push-racket-angle-upright-2
     evidence_type: explanation
@@ -245,4 +245,14 @@ evidence:
         - hZmEfLkbNI8:00113
         - hZmEfLkbNI8:00114
         - hZmEfLkbNI8:00115
-relations: []
+relations:
+  - relation_type: used_with
+    target_concept_id: concept-push-contact-and-spin
+    sources:
+      - video_id: p3hweUir1Mg
+        start_ms: 5300
+        end_ms: 7166
+        url: "https://www.youtube.com/watch?v=p3hweUir1Mg&t=5s"
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

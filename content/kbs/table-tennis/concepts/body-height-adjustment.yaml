@@ -28,7 +28,7 @@ evidence:
       start_ms: 41200
       end_ms: 69280
       url: "https://www.youtube.com/watch?v=QET6W3rjOxo&t=41s"
-      segment_ids:
+      segment_ids: &id001
         - "QET6W3rjOxo:00021"
         - "QET6W3rjOxo:00022"
         - "QET6W3rjOxo:00023"
@@ -205,4 +205,14 @@ evidence:
         - f7uZPRPIwpU:00111
         - f7uZPRPIwpU:00113
         - f7uZPRPIwpU:00118
-relations: []
+relations:
+  - relation_type: used_with
+    target_concept_id: concept-contact-point
+    sources:
+      - video_id: QET6W3rjOxo
+        start_ms: 41200
+        end_ms: 69280
+        url: "https://www.youtube.com/watch?v=QET6W3rjOxo&t=41s"
+        segment_ids: *id001
+    confidence: 0.9
+    review_status: approved

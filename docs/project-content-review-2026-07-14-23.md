@@ -1,5 +1,21 @@
 # Project and content review — 2026-07-14 23:32 EEST
 
+## Remediation status — 2026-07-14 23:55 EEST
+
+- Fixed: CI-safe public corpus validation and publish-copy consistency checks were added.
+- Fixed: review decisions now require a matching candidate-content fingerprint.
+- Fixed: the default extraction model was changed to `gpt-5.4-mini`; stronger retries remain explicit.
+- Fixed safely: inferred visual clips are labeled as proposed and cannot loop until manually verified.
+- Improved: additional evidence is collapsed per source and 289 repeated visible summaries were localized.
+- Fixed: the full 59-candidate backlog was resolved, including the incorrect backhand-to-forehand timing match.
+- Fixed: 43 source-backed relations were added; no concepts remain isolated.
+- Fixed: corrupted public labels were corrected and public validation now scans for common mojibake.
+- Fixed: normalized, supporting, and published video metrics are distinguished; the current published count is 42.
+- Fixed: a JSON and Markdown quality-report command now measures graph, source, visual, repetition, backlog, outlier, and size signals.
+- Fixed: byte-for-byte equality between `data/publish` and `app/public/data` is enforced by `validate-published`.
+- Still requires human viewing: 35 proposed visual windows remain unverified. They are now presented honestly and non-looping.
+- Still requires new source material: 19 concepts remain supported by only one source video.
+
 ## Scope
 
 This review covers the repository architecture, GitHub Pages deployment path, ingestion and extraction safeguards, review queue, published table-tennis corpus, knowledge hierarchy, evidence presentation, and current editorial backlog.
@@ -164,7 +180,7 @@ Recommended change: add a reviewed `subtopic_id` or section field to evidence. U
 At least one canonical label is visibly corrupted:
 
 ```text
-Push?spin?power progression
+Push–spin–power progression
 ```
 
 The evidence component source also contains mojibake such as `Â·`, `â€“`, `â†’`-style sequences. These can appear as broken separators, ranges, and icons in the rendered site.

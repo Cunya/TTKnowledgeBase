@@ -132,6 +132,7 @@ def extract_with_codex(
             "schema_version": SCHEMA_VERSION,
             "input_hash": input_hash,
             "exit_code": result.returncode,
+            "usage": parse_codex_usage(result.stdout),
         }
         if result.returncode != 0 or not response_path.exists():
             audit_dir.mkdir(parents=True, exist_ok=True)
@@ -146,3 +147,19 @@ def extract_with_codex(
             raise CodexError(result.stderr.strip() or "Codex returned no response")
         response = ExtractionResponse.model_validate_json(response_path.read_text(encoding="utf-8"))
         return response, provenance
+
+
+def parse_codex_usage(stdout: str) -> dict | None:
+    """Extract the final token-usage object from Codex JSONL when available."""
+    usage = None
+    for line in stdout.splitlines():
+        try:
+            event = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        candidate = event.get("usage")
+        if not candidate and isinstance(event.get("turn"), dict):
+            candidate = event["turn"].get("usage")
+        if isinstance(candidate, dict):
+            usage = candidate
+    return usage
