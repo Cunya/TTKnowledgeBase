@@ -5,14 +5,61 @@ from ruamel.yaml import YAML
 from processors.demo import write_demo_video
 from processors.models import Concept, KnowledgeNavigation
 from processors.pipeline import (
+    build_review_queue,
     load_reviewed_concepts,
     publish,
     validate_corpus,
     validate_navigation,
     validate_review_queue,
 )
+from processors.utils import read_yaml, write_json
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def test_review_queue_rebuild_preserves_editorial_decisions(tmp_path: Path) -> None:
+    derived = tmp_path / "derived"
+    queue_path = tmp_path / "review-queue.yaml"
+    candidate = {
+        "candidate_id": "candidate-1",
+        "canonical_label": "Unreviewed test idea",
+        "aliases": [],
+        "definition": "A source-grounded test candidate.",
+        "concept_type": "technique",
+        "facets": [],
+        "difficulty": None,
+        "resolution": "new",
+        "matched_concept_id": None,
+        "confidence": 0.8,
+        "evidence": [{
+            "evidence_type": "explanation",
+            "segment_ids": ["video-1:00001"],
+            "reason": "The segment explains the idea.",
+            "confidence": 0.8,
+            "visual_status": "not_visual",
+        }],
+        "relations": [],
+        "uncertainty": [],
+    }
+    write_json(
+        derived / "video-1.candidates.json",
+        {"video_id": "video-1", "response": {"concepts": [candidate], "batch_notes": []}},
+    )
+    yaml = YAML()
+    with queue_path.open("w", encoding="utf-8") as handle:
+        yaml.dump({"items": [{
+            "video_id": "video-1",
+            "candidate": candidate,
+            "decision": "rejected",
+            "canonical_concept_id": None,
+            "review_notes": "Duplicate wording.",
+        }]}, handle)
+
+    build_review_queue(derived, queue_path)
+
+    rebuilt = read_yaml(queue_path)["items"][0]
+    assert rebuilt["decision"] == "rejected"
+    assert rebuilt["review_notes"] == "Duplicate wording."
 
 
 def demo_concepts() -> list[Concept]:

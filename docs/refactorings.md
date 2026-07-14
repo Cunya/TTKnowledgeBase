@@ -2,7 +2,7 @@
 
 ## Candidate promotion workflow
 
-- Add a first-class `merge-review-queue` or `import-candidate-batch` command. The current queue builder rewrites the queue, so preserving prior editorial decisions requires custom handling.
+- Consider a first-class `import-candidate-batch` command with explicit change reporting. Queue rebuilding now preserves existing editorial fields by video and candidate ID, but rerun extraction can still produce changed candidate IDs that need reviewer attention.
 - Move exact accepted-candidate reconciliation into a reusable typed queue model rather than validating untyped dictionaries.
 - Add a processor that proposes contiguous evidence clusters from candidate segment IDs using the same 30-second and 20-second-gap rules as validation.
 - Provide an editorial promotion helper that creates canonical evidence records from reviewed candidate clusters without hand-written one-off transformation code.

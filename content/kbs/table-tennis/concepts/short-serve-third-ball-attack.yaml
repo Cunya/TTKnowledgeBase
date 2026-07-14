@@ -48,4 +48,41 @@ evidence:
     visual_status: transcript_inferred
     review_status: approved
     source: {video_id: G7eiadOxN8E, start_ms: 22566, end_ms: 27533, url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=22s", segment_ids: ["G7eiadOxN8E:00006"]}
+  - id: p19HWlk7LGo-concept-short-serve-third-ball-rhythm-contrast-1
+    evidence_type: definition
+    excerpt: For third-ball attack, a short serve invites a slower push return that creates a timing contrast, letting the attacker accelerate suddenly on the next ball.
+    reason: The coach recommends short rather than long serves for third-ball attack because the push return arrives slower and creates rhythm contrast.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: p19HWlk7LGo
+      start_ms: 173720
+      end_ms: 186840
+      url: https://www.youtube.com/watch?v=p19HWlk7LGo&t=173s
+      segment_ids:
+        - p19HWlk7LGo:00057
+        - p19HWlk7LGo:00058
+        - p19HWlk7LGo:00059
+        - p19HWlk7LGo:00060
+        - p19HWlk7LGo:00061
+        - p19HWlk7LGo:00062
+  - id: p19HWlk7LGo-concept-short-serve-third-ball-rhythm-contrast-2
+    evidence_type: example
+    excerpt: For third-ball attack, a short serve invites a slower push return that creates a timing contrast, letting the attacker accelerate suddenly on the next ball.
+    reason: A concrete serve-short, get-push, attack-at-the-peak sequence is given as the high-percentage pattern.
+    confidence: 0.92
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: p19HWlk7LGo
+      start_ms: 222080
+      end_ms: 234920
+      url: https://www.youtube.com/watch?v=p19HWlk7LGo&t=222s
+      segment_ids:
+        - p19HWlk7LGo:00076
+        - p19HWlk7LGo:00077
+        - p19HWlk7LGo:00078
+        - p19HWlk7LGo:00079
+        - p19HWlk7LGo:00080
 relations: []

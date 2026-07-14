@@ -63,6 +63,14 @@ def build_review_queue(
 ) -> int:
     queue: list[dict] = []
     reviewed_concepts = reviewed_concepts or []
+    existing_items: dict[tuple[str, str], dict] = {}
+    if queue_path.exists():
+        existing_queue = read_yaml(queue_path) or {}
+        existing_items = {
+            (item.get("video_id", ""), item.get("candidate", {}).get("candidate_id", "")): item
+            for item in existing_queue.get("items", [])
+            if item.get("video_id") and item.get("candidate", {}).get("candidate_id")
+        }
     for path in sorted(derived_dir.glob("*.candidates.json")):
         payload = read_json(path)
         response = ExtractionResponse.model_validate(payload["response"])
@@ -89,15 +97,23 @@ def build_review_queue(
                 ),
                 None,
             )
-            queue.append(
-                {
-                    "video_id": payload["video_id"],
-                    "candidate": concept.model_dump(mode="json"),
-                    "decision": "accepted" if approved else "pending",
-                    "canonical_concept_id": approved.id if approved else None,
-                    "review_notes": "",
-                }
-            )
+            item = {
+                "video_id": payload["video_id"],
+                "candidate": concept.model_dump(mode="json"),
+                "decision": "accepted" if approved else "pending",
+                "canonical_concept_id": approved.id if approved else None,
+                "review_notes": "",
+            }
+            existing = existing_items.get((payload["video_id"], concept.candidate_id))
+            if existing:
+                item.update(
+                    decision=existing.get("decision", item["decision"]),
+                    canonical_concept_id=existing.get(
+                        "canonical_concept_id", item["canonical_concept_id"]
+                    ),
+                    review_notes=existing.get("review_notes", ""),
+                )
+            queue.append(item)
     queue_path.parent.mkdir(parents=True, exist_ok=True)
     with queue_path.open("w", encoding="utf-8") as handle:
         roundtrip_yaml.dump({"items": queue}, handle)

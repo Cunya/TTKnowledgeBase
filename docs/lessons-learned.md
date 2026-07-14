@@ -11,6 +11,7 @@
 
 ## Batch processing
 
+- Preserve editorial queue state during deterministic rebuilds. Keying decisions by video and candidate ID prevents a new extraction batch from silently resetting accepted/rejected work, while a post-build diff still catches IDs changed by reruns.
 - Treat requested batch sizes as upper bounds. Report the actual number of available candidates rather than padding the batch.
 - Process extraction jobs one video at a time when provenance and failure isolation matter. This makes retries and audits clearer.
 - Preserve prior queue decisions when adding new extraction results. Rebuilding the entire generated queue can erase editorial work.

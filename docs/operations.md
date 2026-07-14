@@ -30,7 +30,7 @@ Review `content/kbs/<kb>/annotations/review-queue.yaml`. Approved canonical conc
 
 Do not mark a queue item accepted merely because it resembles an existing concept. At least one exact candidate segment must be incorporated into that canonical concept; otherwise leave the item pending or explicitly reject it. Keep each spoken evidence window within 30 seconds and split non-contiguous explanations into separate moments at transcript topic boundaries.
 
-When adding candidates from newly processed videos, preserve existing queue decisions. The current `build-review-queue` command regenerates its output; do not run it over a manually reviewed queue without first arranging a merge or backup strategy.
+When adding candidates from newly processed videos, `build-review-queue` regenerates deterministic candidate content while preserving existing decisions, canonical mappings, and review notes by video and candidate ID. Review the diff after a rebuild, especially if extraction was rerun and candidate IDs may have changed.
 
 ## 5. Publish and verify
 

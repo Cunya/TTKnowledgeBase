@@ -9,7 +9,7 @@ sections:
       - id: push
         label: Push
         description: Backspin control strokes used to keep the ball low, receive serves, and prevent an easy attack.
-        concept_ids: [concept-push-technique, concept-push-contact-and-spin]
+        concept_ids: [concept-push-technique, concept-push-contact-and-spin, concept-push-variations]
         children:
           - id: forehand-push
             label: Forehand push
@@ -49,7 +49,7 @@ sections:
               - id: forehand-loop-variations
                 label: Variations and ball selection
                 description: Adjust the forehand loop to backspin, contact height, arc, power, and risk.
-                concept_ids: [concept-forehand-loop-against-backspin, concept-spin-loop-vs-power-loop, concept-counter-loop]
+                concept_ids: [concept-forehand-loop-against-backspin, concept-spin-loop-vs-power-loop, concept-counter-loop, concept-forehand-loop-down-the-line]
                 children: []
               - id: forehand-loop-motion
                 label: Motion parts
@@ -129,12 +129,12 @@ sections:
       - id: serve
         label: Serve
         description: Starting strokes organized by spin, placement, and intended third-ball pattern.
-        concept_ids: [concept-serve-action-decomposition, concept-backspin-serve-under-ball-contact, concept-sidespin-topspin-serve, concept-left-sidespin-backspin-serve, concept-hook-serve-mechanics]
+        concept_ids: [concept-serve-action-decomposition, concept-backspin-serve-under-ball-contact, concept-sidespin-topspin-serve, concept-left-sidespin-backspin-serve, concept-hook-serve-mechanics, concept-backhand-serve]
         children:
           - id: serve-third-ball-patterns
             label: Serve and third-ball patterns
             description: Use serve placement and spin to shape a predictable return for the next attack.
-            concept_ids: [concept-short-serve-third-ball-attack, concept-post-serve-recovery, concept-third-ball-adjustment]
+            concept_ids: [concept-short-serve-third-ball-attack, concept-post-serve-recovery, concept-third-ball-adjustment, concept-serve-and-attack-patterns]
             children: []
       - id: serve-receive
         label: Serve receive
@@ -184,7 +184,8 @@ sections:
       - id: attack-selection
         label: Attack selection
         description: Match loop height, spin, pace, and risk to the incoming ball and tactical situation.
-        concept_ids: []
+        concept_ids:
+          - concept-push-rally-strategy
         children: []
       - id: opponent-adaptation
         label: Opponent adaptation

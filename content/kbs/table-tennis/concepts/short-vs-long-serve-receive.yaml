@@ -93,4 +93,49 @@ evidence:
         - "3yx5OMDyM8c:00277"
         - "3yx5OMDyM8c:00278"
         - "3yx5OMDyM8c:00279"
+  - id: bUCFpvTlaMU-candidate-short-forehand-receive-body-position-1
+    evidence_type: definition
+    excerpt: For short forehand receive, move body weight forward, keep the forearm bent, and use forearm plus stable body weight to send the ball rather than reaching with the arm alone.
+    reason: The speaker gives explicit body-position instructions for handling short forehand receives.
+    confidence: 0.91
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: bUCFpvTlaMU
+      start_ms: 35320
+      end_ms: 47040
+      url: https://www.youtube.com/watch?v=bUCFpvTlaMU&t=35s
+      segment_ids:
+        - bUCFpvTlaMU:00014
+        - bUCFpvTlaMU:00018
+  - id: bUCFpvTlaMU-candidate-short-forehand-receive-body-position-2
+    evidence_type: mistake
+    excerpt: For short forehand receive, move body weight forward, keep the forearm bent, and use forearm plus stable body weight to send the ball rather than reaching with the arm alone.
+    reason: The failure mode is reaching without bringing feet and weight forward, which hurts first-ball quality.
+    confidence: 0.86
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: bUCFpvTlaMU
+      start_ms: 45560
+      end_ms: 57080
+      url: https://www.youtube.com/watch?v=bUCFpvTlaMU&t=45s
+      segment_ids:
+        - bUCFpvTlaMU:00019
+        - bUCFpvTlaMU:00023
+  - id: bUCFpvTlaMU-candidate-short-forehand-receive-body-position-3
+    evidence_type: correction
+    excerpt: For short forehand receive, move body weight forward, keep the forearm bent, and use forearm plus stable body weight to send the ball rather than reaching with the arm alone.
+    reason: The speaker clarifies that the forearm is the key while the racket head stays still and body weight presses the ball down.
+    confidence: 0.88
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: bUCFpvTlaMU
+      start_ms: 143959
+      end_ms: 152480
+      url: https://www.youtube.com/watch?v=bUCFpvTlaMU&t=143s
+      segment_ids:
+        - bUCFpvTlaMU:00058
+        - bUCFpvTlaMU:00060
 relations: []

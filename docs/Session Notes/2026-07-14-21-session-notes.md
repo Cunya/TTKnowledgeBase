@@ -3,10 +3,10 @@
 ## Current state
 
 - Knowledge base: `table-tennis`
-- Canonical concepts: 65 approved
+- Canonical concepts: 70 approved
 - Source videos in published corpus: 27
-- Published evidence moments: 687 excluding demo evidence
-- Review queue: 284 accepted, 7 pending, 1 rejected
+- Published evidence moments: 950 excluding demo evidence
+- Review queue: 383 accepted, 59 pending, 1 rejected
 - Queue-integrity errors: 0
 - Python tests: 17 passing
 - Static pages: 52
@@ -25,7 +25,7 @@
 
 ## Important limitations
 
-- The 107 pending candidates still require editorial resolution.
+- The latest editorial batch consolidated 99 of 100 selected proposals; 59 candidates remain pending.
 - New evidence is transcript-reviewed but does not yet have manually verified visual demonstration windows.
 - Visual status remains honest: transcript-inferred citations do not loop without a separate `visual_source`.
 - Eleven concepts were single-source before the latest batch; source-diversity statistics should be recalculated before prioritizing the next ingestion round.

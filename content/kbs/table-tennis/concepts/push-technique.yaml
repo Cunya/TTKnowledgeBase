@@ -174,4 +174,75 @@ evidence:
       url: "https://www.youtube.com/watch?v=p3hweUir1Mg&t=209s"
       segment_ids:
         - "p3hweUir1Mg:00053"
+  - id: bUCFpvTlaMU-candidate-push-technique-1
+    evidence_type: definition
+    excerpt: A short receive/push action that uses the forearm and body positioning to guide the ball with a controlled forward-down motion instead of a quick jab.
+    reason: The transcript names the feel of the receive and explains pushing the ball out through position with the forearm.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: bUCFpvTlaMU
+      start_ms: 30320
+      end_ms: 47040
+      url: https://www.youtube.com/watch?v=bUCFpvTlaMU&t=30s
+      segment_ids:
+        - bUCFpvTlaMU:00012
+        - bUCFpvTlaMU:00013
+        - bUCFpvTlaMU:00017
+        - bUCFpvTlaMU:00018
+  - id: bUCFpvTlaMU-candidate-push-technique-2
+    evidence_type: demonstration
+    excerpt: A short receive/push action that uses the forearm and body positioning to guide the ball with a controlled forward-down motion instead of a quick jab.
+    reason: Two push variants are compared, with the more stable version escorting the ball forward and down without a fast snap.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: bUCFpvTlaMU
+      start_ms: 97160
+      end_ms: 112040
+      url: https://www.youtube.com/watch?v=bUCFpvTlaMU&t=97s
+      segment_ids:
+        - bUCFpvTlaMU:00042
+        - bUCFpvTlaMU:00043
+        - bUCFpvTlaMU:00044
+        - bUCFpvTlaMU:00045
+  - id: hZmEfLkbNI8-cand-short-push-side-brush-1
+    evidence_type: definition
+    excerpt: A short-push receive for short or half-long serves that brushes the side of the ball rather than pushing straight through, helping the ball stay short and awkward.
+    reason: The transcript explicitly defines when to use the short push and how to execute it with side brushing.
+    confidence: 0.89
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: hZmEfLkbNI8
+      start_ms: 170640
+      end_ms: 194560
+      url: https://www.youtube.com/watch?v=hZmEfLkbNI8&t=170s
+      segment_ids:
+        - hZmEfLkbNI8:00069
+        - hZmEfLkbNI8:00070
+        - hZmEfLkbNI8:00071
+        - hZmEfLkbNI8:00072
+        - hZmEfLkbNI8:00073
+        - hZmEfLkbNI8:00074
+        - hZmEfLkbNI8:00075
+        - hZmEfLkbNI8:00076
+  - id: hZmEfLkbNI8-cand-short-push-side-brush-2
+    evidence_type: correction
+    excerpt: A short-push receive for short or half-long serves that brushes the side of the ball rather than pushing straight through, helping the ball stay short and awkward.
+    reason: The speaker contrasts side brushing with a straight push that goes high.
+    confidence: 0.84
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: hZmEfLkbNI8
+      start_ms: 273120
+      end_ms: 280840
+      url: https://www.youtube.com/watch?v=hZmEfLkbNI8&t=273s
+      segment_ids:
+        - hZmEfLkbNI8:00113
+        - hZmEfLkbNI8:00114
+        - hZmEfLkbNI8:00115
 relations: []

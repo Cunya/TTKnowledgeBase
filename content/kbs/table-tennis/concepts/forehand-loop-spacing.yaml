@@ -215,6 +215,23 @@ evidence:
         - "JmOI0L7SiG8:00151"
         - "JmOI0L7SiG8:00152"
         - "JmOI0L7SiG8:00153"
+  - id: p19HWlk7LGo-concept-create-space-against-topspin-1
+    evidence_type: correction
+    excerpt: Against incoming topspin, standing too close jams the stroke, so the player should back off enough to create working space.
+    reason: The coach says the player is too close on topspin balls, gets jammed, and must create space.
+    confidence: 0.89
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: p19HWlk7LGo
+      start_ms: 408000
+      end_ms: 420000
+      url: https://www.youtube.com/watch?v=p19HWlk7LGo&t=408s
+      segment_ids:
+        - p19HWlk7LGo:00143
+        - p19HWlk7LGo:00144
+        - p19HWlk7LGo:00145
+        - p19HWlk7LGo:00146
 relations:
   - relation_type: used_with
     target_concept_id: concept-forehand-loop
