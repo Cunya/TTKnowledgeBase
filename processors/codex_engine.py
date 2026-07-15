@@ -72,11 +72,12 @@ def extract_with_codex(
     known_concepts: list[dict],
     config_path: Path,
     audit_dir: Path,
+    model_override: str | None = None,
 ) -> tuple[ExtractionResponse, dict]:
     config = read_yaml(config_path)["codex"]
     service_tier = config.get("service_tier")
     executable, cli_version = preflight(service_tier)
-    model = config["default_model"]
+    model = model_override or config["default_model"]
     reasoning = config.get("reasoning_effort", "low")
     timeout = int(config.get("timeout_seconds", 300))
     schema = ExtractionResponse.model_json_schema()

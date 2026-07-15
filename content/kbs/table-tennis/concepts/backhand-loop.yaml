@@ -124,6 +124,14 @@ evidence:
       url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=539s
       segment_ids:
         - q9c2_hCwlhs:00209
+  - id: A4-lKRVwSFc-backhand-elbow-forearm-shape
+    evidence_type: explanation
+    excerpt: In the backhand-loop preparation, the elbow rises as the forearm drops.
+    reason: Gives a compact positional cue for forming the backhand-loop shape.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: A4-lKRVwSFc, start_ms: 353000, end_ms: 358080, url: "https://www.youtube.com/watch?v=A4-lKRVwSFc&t=353s", segment_ids: ["A4-lKRVwSFc:00134"]}
 relations:
   - relation_type: used_with
     target_concept_id: concept-backhand-topspin-body-coordination

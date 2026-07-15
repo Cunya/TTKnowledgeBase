@@ -1,10 +1,36 @@
 ---
 import { corpora } from '../../../../corpora';
+import VideoToc from '../../../../components/VideoToc.astro';
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import { buildVideoTocEntries } from '../../../../lib/videoToc';
 import type { Corpus } from '../../../../types';
+
 export function getStaticPaths() { return corpora.map((corpus) => ({ params: { kb: corpus.knowledge_base.id }, props: { corpus } })); }
 interface Props { corpus: Corpus }
 const { corpus } = Astro.props;
 const root = `${import.meta.env.BASE_URL}kb/${corpus.knowledge_base.id}`;
+const entries = buildVideoTocEntries(corpus);
 ---
-<BaseLayout title={`${corpus.knowledge_base.name} videos`} kbId={corpus.knowledge_base.id}><section class="page-intro"><div class="eyebrow">Source library</div><h1>Videos in {corpus.knowledge_base.name}</h1></section><section class="video-grid">{corpus.videos.map((video) => { const concepts = corpus.concepts.filter((concept) => concept.evidence.some((item) => item.source.video_id === video.id)); return <article class="video-card"><div class="video-thumb"><span>{video.availability === 'demo_fixture' ? 'Demo fixture' : 'YouTube'}</span></div><div><p class="eyebrow">{video.channel_name}</p><h2>{video.title}</h2><p>{concepts.length} connected concepts</p><div class="relation-chips">{concepts.map((concept) => <a href={`${root}/concepts/${concept.slug}/`}>{concept.label}</a>)}</div></div></article>; })}</section></BaseLayout>
+
+<BaseLayout title={`${corpus.knowledge_base.name} videos`} kbId={corpus.knowledge_base.id}>
+  <section class="page-intro">
+    <div class="eyebrow">Source library</div>
+    <h1>Videos in {corpus.knowledge_base.name}</h1>
+    <p>Browse the source lessons, then open an individual video for its complete chronological contents and linked moments.</p>
+  </section>
+  <section class="video-grid">
+    {entries.map((entry) => {
+      const detailHref = `${root}/videos/${entry.video.id}/`;
+      return <article class="video-card" id={`video-${entry.video.id}`}>
+        <div class="video-thumb"><span>{entry.video.availability === 'demo_fixture' ? 'Demo fixture' : 'YouTube'}</span></div>
+        <div class="video-card-content">
+          <p class="eyebrow">{entry.video.channel_name}</p>
+          <h2><a class="video-title-link" href={detailHref}>{entry.video.title}</a></h2>
+          <p>{entry.concepts.length} connected concept{entry.concepts.length === 1 ? '' : 's'} · {entry.moments.length} linked moment{entry.moments.length === 1 ? '' : 's'}</p>
+          <VideoToc entry={entry} root={root} detailHref={detailHref} compact />
+          <div class="relation-chips">{entry.concepts.slice(0, 8).map((concept) => <a href={`${root}/concepts/${concept.slug}/`}>{concept.label}</a>)}{entry.concepts.length > 8 && <span>+{entry.concepts.length - 8} more</span>}</div>
+        </div>
+      </article>;
+    })}
+  </section>
+</BaseLayout>

@@ -18,6 +18,7 @@ MOJIBAKE_MARKERS = ("\ufffd", "Â", "â€", "â†", "ðŸ")
 roundtrip_yaml = YAML()
 roundtrip_yaml.preserve_quotes = True
 roundtrip_yaml.indent(mapping=2, sequence=4, offset=2)
+roundtrip_yaml.width = 4096
 
 
 def load_videos(directory: Path) -> list[Video]:
@@ -40,6 +41,7 @@ def extract_video(
     processors_config: Path,
     output_dir: Path,
     audit_dir: Path,
+    model_override: str | None = None,
 ) -> Path:
     if not video.transcript:
         raise ValueError(f"Video {video.id} has no transcript")
@@ -49,6 +51,7 @@ def extract_video(
         known_concepts,
         processors_config,
         audit_dir,
+        model_override=model_override,
     )
     payload = {
         "video_id": video.id,
@@ -121,6 +124,8 @@ def build_review_queue(
                         "sha256:"
                     )
                 if existing_hash == candidate_hash:
+                    item["candidate"] = existing.get("candidate", candidate_payload)
+                    item["candidate_hash"] = existing.get("candidate_hash", candidate_hash)
                     item.update(
                         decision=existing.get("decision", item["decision"]),
                         canonical_concept_id=existing.get(

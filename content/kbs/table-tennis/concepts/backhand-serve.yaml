@@ -529,6 +529,14 @@ evidence:
       segment_ids:
         - hDXIuFwtrHE:00263
         - hDXIuFwtrHE:00271
+  - id: 9OxcCPWI-k8-backhand-serve-wrist
+    evidence_type: definition
+    excerpt: For a backhand serve, lower the wrist and control the racket angle.
+    reason: Introduces backhand-serve mechanics through the wrist position and changing racket face.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: 9OxcCPWI-k8, start_ms: 110033, end_ms: 121900, url: "https://www.youtube.com/watch?v=9OxcCPWI-k8&t=110s", segment_ids: ["9OxcCPWI-k8:00037", "9OxcCPWI-k8:00040"]}
 relations:
   - relation_type: variation_of
     target_concept_id: concept-sidespin-topspin-serve

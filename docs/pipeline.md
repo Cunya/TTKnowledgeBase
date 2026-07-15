@@ -66,7 +66,7 @@ The acquisition order is:
 4. try subtitle-only `yt-dlp` retrieval;
 5. optionally download temporary audio and run `faster-whisper`, but only when both `--allow-audio-download` and `--confirm-rights` are supplied.
 
-Network batches are sequential and paced by `--request-delay` plus randomized `--jitter`. A detected YouTube IP block opens a circuit breaker: ingestion records a private retry entry and stops the batch instead of sending more requests. Retry records use exponential backoff and live under `data/manifests/<kb>/ingest-retries.json`.
+Network batches are sequential and paced by `--request-delay` plus randomized `--jitter`. Defaults use 20–40 seconds between uncached videos and cap each invocation at 8 uncached videos. A detected YouTube IP block opens a circuit breaker: ingestion records a private retry entry and stops the batch instead of sending more requests. Retry records use exponential backoff and live under `data/manifests/<kb>/ingest-retries.json`.
 
 Ingestion continues after an individual video fails, retains successful results, and exits nonzero with a failure summary.
 
@@ -87,6 +87,24 @@ python -m processors.cli extract-concepts --kb table-tennis --engine codex --vid
 The Python processor is the caller. It starts `codex exec` as a subprocess using the settings in `config/processors.yaml`. The default profile uses `gpt-5.4-mini`, low reasoning, a strict Pydantic-generated JSON schema, a read-only sandbox, an ephemeral session, and a five-minute timeout. The stronger `gpt-5.4` profile is configured only for an explicit editorial retry; automatic escalation remains disabled. Codex receives transcript text and segment IDs, not downloaded video.
 
 The response is validated before it is saved to `data/derived/<kb>/<video-id>.candidates.json`. The output records the Codex CLI version, model, reasoning setting, prompt/schema versions, and input hash. Invalid output or a failed command does not reach publishing.
+
+### 3a. Compare extraction-model output quality before changing the default
+
+The model benchmark is deliberately separate from production extraction. It runs each requested model against a small, deterministic sample of cached transcripts and compares the result with reviewed, transcript-backed evidence:
+
+```powershell
+python -m processors.cli benchmark-models --kb table-tennis --sample-size 3
+```
+
+By default this compares the configured model with `gpt-5.4-nano`. To choose a different set or fixed videos:
+
+```powershell
+python -m processors.cli benchmark-models --kb table-tennis `
+  --models gpt-5.4-mini,gpt-5.4-nano `
+  --video-ids VIDEO_ID_1,VIDEO_ID_2
+```
+
+The report measures strict-schema success, whether evidence cites real input segment IDs, fuzzy overlap with reviewed concept names, and a conservative support proxy that also requires an exact overlap with reviewed evidence for the same video. It records Codex-reported token usage when available. These are screening signals, not automatic approvals; the benchmark writes only ignored files under `data/benchmarks/<kb>/latest.{json,md}` and never changes the production model, review queue, or published corpus. A model rejected by the current Codex account is reported as unavailable rather than scored as low quality.
 
 ### 4. Build and review the candidate queue
 
@@ -173,7 +191,7 @@ I did call the repository commands manually from Codex's terminal rather than by
 
 This means the pipeline is repeatable, but it is intentionally not fully unattended. Collection, extraction, validation, and build are scripted; source curation, knowledge approval, and visual-example approval are editorial gates.
 
-As of 2026-07-14, the published table-tennis corpus contains 73 approved concepts, 42 supporting videos, and 1,110 non-demo evidence moments. The queue contains 442 accepted, no pending, and 1 rejected candidate. The final backlog pass added Backhand loop timing and release, Serve-receive reading and rhythm, and Short-ball receive decisions while correcting an erroneous forehand-timing match. Every concept now participates in the semantic relation graph. Exact accepted-candidate overlap, candidate fingerprints, navigation coverage, the 30-second spoken-window limit, large citation gaps, visual verification state, and public artifact consistency are enforced during validation.
+As of 2026-07-15, the published table-tennis corpus contains 73 approved concepts, 50 supporting videos, and 1,118 non-demo evidence moments. The queue contains 450 accepted, 68 pending, and 1 rejected candidate. The latest batch extracted eight cached transcripts and incorporated one focused teaching point per video; the remaining proposals are deliberately awaiting editorial consolidation. Every concept participates in the semantic relation graph. Exact accepted-candidate overlap, candidate fingerprints, navigation coverage, the 30-second spoken-window limit, large citation gaps, visual verification state, and public artifact consistency are enforced during validation.
 
 CI uses `validate-published` because private normalized transcripts are intentionally absent from Git. This checks the sanitized corpus model, graph, navigation, evidence windows, visual-review consistency, manifest hash/counts, queue overlap, encoding quality, and byte-for-byte equality between the canonical publish output and Astro public copy. Local maintainers still run the stronger transcript-backed `validate` command before publishing.
 

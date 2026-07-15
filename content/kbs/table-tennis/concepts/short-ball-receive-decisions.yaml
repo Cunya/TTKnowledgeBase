@@ -420,6 +420,22 @@ evidence:
         - wF-YklKS7pI:00206
         - wF-YklKS7pI:00207
         - wF-YklKS7pI:00209
+  - id: mTnHV7k_Wes-three-short-receives
+    evidence_type: definition
+    excerpt: A short backspin or sidespin serve can be returned with a long push, short push, or flick.
+    reason: Names the three principal choices for receiving a short serve over the table.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: mTnHV7k_Wes, start_ms: 26560, end_ms: 42960, url: "https://www.youtube.com/watch?v=mTnHV7k_Wes&t=26s", segment_ids: ["mTnHV7k_Wes:00011", "mTnHV7k_Wes:00012", "mTnHV7k_Wes:00013", "mTnHV7k_Wes:00014", "mTnHV7k_Wes:00015", "mTnHV7k_Wes:00016"]}
+  - id: StQ86EhPFpo-short-ball-distance
+    evidence_type: explanation
+    excerpt: Stay close to a short ball; creating excess distance makes pushes and flicks run long.
+    reason: Connects receive selection to the spacing needed to keep short-table strokes controlled.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: StQ86EhPFpo, start_ms: 337960, end_ms: 363200, url: "https://www.youtube.com/watch?v=StQ86EhPFpo&t=337s", segment_ids: ["StQ86EhPFpo:00135", "StQ86EhPFpo:00136", "StQ86EhPFpo:00137", "StQ86EhPFpo:00138", "StQ86EhPFpo:00139", "StQ86EhPFpo:00140", "StQ86EhPFpo:00141"]}
 relations:
   - relation_type: part_of
     target_concept_id: concept-short-vs-long-serve-receive

@@ -8,6 +8,8 @@
 - Enforce evidence-window rules in validation. Editorial conventions alone drift during large processing batches.
 - Keep the spoken claim window separate from the visual demonstration window. Transcript-inferred evidence must never silently become a loopable visual example.
 - Treat candidate uncertainty literally. One candidate admitted that it inferred segment numbering and produced nonexistent IDs; exclude those IDs and publish only independently present transcript segments.
+- Audit public excerpts against their cited transcript segments before broad publication. Exact and near-verbatim matches need rephrasing or explicit, short quotation treatment, while the surrounding editorial reason should remain original.
+- Keep the prioritized backlog as the planning source of truth. Dated review reports explain findings, but actionable work also needs a priority, status, dependency, and acceptance criterion in `docs/prioritized-backlog-2026-07-15.md`.
 
 ## Batch processing
 
@@ -16,6 +18,9 @@
 - Process extraction jobs one video at a time when provenance and failure isolation matter. This makes retries and audits clearer.
 - Preserve prior queue decisions when adding new extraction results. Rebuilding the entire generated queue can erase editorial work.
 - Consolidate candidates into durable mechanics, timing, spacing, selection, error, and drill concepts instead of creating one article per LLM label.
+- Track extracted, fully reviewed, and published as independent states. A video can be published through one approved evidence moment while other candidates from that video remain pending.
+- A large candidate may cite useful segments scattered across several minutes. Incorporate only a focused contiguous cluster that independently supports the canonical wording; do not stretch one playback window across the complete candidate evidence list.
+- Long-running extraction loops may buffer child-process output until completion. Check subprocess start times and candidate-file timestamps before treating a quiet batch as stalled, while retaining the configured per-call timeout.
 
 ## YouTube ingestion
 
@@ -23,6 +28,7 @@
 - A genuine network-state change, such as the operator enabling a VPN, justifies a new controlled probe before resuming a paced batch.
 - Cache-first ingestion and sequential requests prevent already completed work from being lost when a later request fails.
 - Keep downloaded or normalized transcripts private even when the sanitized derived knowledge is public.
+- A private, non-sharing offline copy is a different risk category from public redistribution, but it does not authorize bypassing technical restrictions or silently disregard YouTube/platform terms. Keep public and private storage boundaries explicit.
 
 ## Tooling and verification
 

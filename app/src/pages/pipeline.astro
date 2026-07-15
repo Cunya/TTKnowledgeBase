@@ -1,0 +1,120 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const stages = [
+  { id: 'select', number: '01', name: 'Discover and select', actor: 'Script + editor', input: 'Channel, playlist, or video URLs', output: 'A curated source list', copy: 'Discovery collects titles and identifiers. A maintainer selects lessons that fill a knowledge gap; discovery alone never publishes or downloads a video.' },
+  { id: 'ingest', number: '02', name: 'Ingest timed captions', actor: 'Python processors', input: 'Selected public video URLs', output: 'Private normalized transcripts', copy: 'Metadata and available captions are normalized into stable segment IDs. Requests are cached, paced, capped, and stopped when YouTube reports an IP block.' },
+  { id: 'extract', number: '03', name: 'Extract knowledge proposals', actor: 'Codex CLI', input: 'Transcript segments + taxonomy', output: 'Private candidate JSON', copy: 'The configured low-cost model proposes concepts, definitions, aliases, relations, and evidence. It may cite only segment IDs supplied in the transcript and cannot edit or publish the project.' },
+  { id: 'resolve', number: '04', name: 'Resolve the review queue', actor: 'Script + editor', input: 'Candidates + existing concepts', output: 'Accepted, pending, or rejected decisions', copy: 'Deterministic matching suggests possible canonical concepts. Similar wording is only a hint: an item is accepted only after its exact evidence is incorporated into reviewed content.' },
+  { id: 'curate', number: '05', name: 'Curate canonical concepts', actor: 'Human review', input: 'Candidate evidence + surrounding transcript', output: 'Version-controlled concept YAML', copy: 'The editor merges duplicates, splits durable subtopics, checks wording, keeps citations focused, and connects the concept to the topic tree. This YAML is the editorial source of truth.' },
+  { id: 'visuals', number: '06', name: 'Separate speech from demonstration', actor: 'Human review', input: 'Spoken citation + nearby footage', output: 'Optional visual source window', copy: 'A timestamp where a coach explains an idea is not automatically where the movement is visible. Only a separately reviewed visual interval may become a repeatable demonstration loop.' },
+  { id: 'validate', number: '07', name: 'Validate and sanitize', actor: 'Python processors', input: 'Reviewed concepts + private transcripts', output: 'Browser-safe corpus JSON', copy: 'Validation checks segment ownership, timestamp bounds, evidence duration, graph links, review state, navigation placement, and public-data safety. Unreviewed candidates and full transcripts remain private.' },
+  { id: 'build', number: '08', name: 'Build and publish', actor: 'Astro + GitHub Actions', input: 'Sanitized public corpus', output: 'Static GitHub Pages website', copy: 'Astro generates the concept, video, progress, and documentation pages. GitHub builds committed public data only; it never scrapes YouTube or runs Codex.' },
+];
+
+const artifacts = [
+  ['Source configuration', 'config/kbs/<kb>/sources.yaml', 'Tracked', 'Selected sources and availability'],
+  ['Normalized transcripts', 'data/normalized/<kb>/', 'Private', 'Timed captions and metadata'],
+  ['Codex candidates', 'data/derived/<kb>/', 'Private', 'Schema-validated model proposals'],
+  ['Review queue', 'content/kbs/<kb>/annotations/', 'Tracked', 'Editorial decisions and mappings'],
+  ['Canonical concepts', 'content/kbs/<kb>/concepts/', 'Tracked', 'Approved knowledge and exact evidence'],
+  ['Review media', 'media/', 'Private', 'Temporary visual inspection copies'],
+  ['Publish corpus', 'data/publish/kbs/<kb>/', 'Tracked', 'Sanitized browser-safe data'],
+  ['Website data copy', 'app/public/data/', 'Tracked', 'Input consumed by the static site'],
+];
+
+const command = `$env:PYTHONUTF8='1'
+python -m processors.cli discover CHANNEL_URL --kb table-tennis
+python -m processors.cli ingest --kb table-tennis VIDEO_URLS
+python -m processors.cli extract-concepts --kb table-tennis --engine codex
+python -m processors.cli build-review-queue --kb table-tennis
+# Review and edit canonical concept YAML
+python -m processors.cli validate --kb table-tennis
+python -m processors.cli publish --kb table-tennis
+python -m processors.cli validate-published --kb table-tennis
+cd app
+npm run build`;
+---
+
+<BaseLayout title="Processing pipeline" description="How MomentGraph turns timed video transcripts into reviewed, source-grounded knowledge.">
+  <section class="page-intro pipeline-intro">
+    <div class="eyebrow">System documentation · end to end</div>
+    <h1>From video transcript to reviewed knowledge</h1>
+    <p>MomentGraph is a local, operator-run publishing pipeline. Scripts collect and normalize timed captions, Codex proposes structure, a reviewer controls what becomes knowledge, and Astro publishes only a sanitized static corpus.</p>
+    <div class="pipeline-status"><span>Current table-tennis run</span><strong>50 videos · 73 concepts · 1,118 evidence moments</strong><small>450 accepted · 68 pending · 1 rejected candidate</small></div>
+  </section>
+
+  <div class="pipeline-layout">
+    <aside class="pipeline-toc" aria-label="On this page">
+      <strong>Contents</strong>
+      <a href="#overview">Overview</a>
+      <a href="#stages">Eight stages</a>
+      <a href="#artifacts">Data and files</a>
+      <a href="#review">Review gates</a>
+      <a href="#commands">Run the pipeline</a>
+      <a href="#safety">Safety boundaries</a>
+    </aside>
+
+    <article class="pipeline-document">
+      <section id="overview" class="pipeline-section">
+        <div class="section-kicker">Overview</div><h2>One-way publication, traceable back to source</h2>
+        <div class="flow-strip" aria-label="Pipeline overview">
+          <span>YouTube</span><i>→</i><span>Timed transcript</span><i>→</i><span>Codex proposals</span><i>→</i><span>Human review</span><i>→</i><span>Static knowledge base</span>
+        </div>
+        <p>The public website does not scrape, store credentials, invoke an LLM, or serve downloaded media. All expensive and sensitive processing happens locally. The published corpus retains short evidence excerpts, canonical YouTube links, and exact time ranges so readers can inspect the original source.</p>
+        <div class="boundary-pair">
+          <div><strong>Automated</strong><p>Discovery, transcript normalization, schema-constrained extraction, queue matching, validation, sanitization, and static building.</p></div>
+          <div><strong>Editorial</strong><p>Source selection, concept merging, claim wording, relationship approval, topic placement, and visual-demonstration verification.</p></div>
+        </div>
+      </section>
+
+      <section id="stages" class="pipeline-section">
+        <div class="section-kicker">Data flow</div><h2>The eight processing stages</h2>
+        <div class="stage-list">
+          {stages.map((stage) => (
+            <section class="pipeline-stage" id={stage.id}>
+              <div class="stage-index">{stage.number}</div>
+              <div class="stage-body">
+                <div class="stage-heading"><h3>{stage.name}</h3><span>{stage.actor}</span></div>
+                <p>{stage.copy}</p>
+                <dl><div><dt>Input</dt><dd>{stage.input}</dd></div><div><dt>Output</dt><dd>{stage.output}</dd></div></dl>
+              </div>
+            </section>
+          ))}
+        </div>
+      </section>
+
+      <section id="artifacts" class="pipeline-section">
+        <div class="section-kicker">Data lineage</div><h2>What is stored where</h2>
+        <p>Private processing inputs are deliberately separated from reviewed and publishable artifacts. A GitHub Pages build needs only the tracked sanitized data.</p>
+        <div class="table-scroll"><table class="pipeline-table"><thead><tr><th>Artifact</th><th>Location</th><th>Visibility</th><th>Purpose</th></tr></thead><tbody>{artifacts.map(([name, path, visibility, purpose]) => <tr><th>{name}</th><td><code>{path}</code></td><td><span class:list={['visibility-label', visibility === 'Private' && 'private']}>{visibility}</span></td><td>{purpose}</td></tr>)}</tbody></table></div>
+      </section>
+
+      <section id="review" class="pipeline-section">
+        <div class="section-kicker">Editorial control</div><h2>Nothing becomes knowledge merely because a model proposed it</h2>
+        <div class="review-rule"><span>01</span><div><h3>Exact evidence</h3><p>An accepted candidate must share at least one exact transcript segment with its canonical concept. Semantic similarity alone is insufficient.</p></div></div>
+        <div class="review-rule"><span>02</span><div><h3>Focused moments</h3><p>Spoken citations are limited to short windows and split at topic changes. Sparse segments spread across minutes are never joined into one misleading clip.</p></div></div>
+        <div class="review-rule"><span>03</span><div><h3>Durable concepts</h3><p>Aliases and duplicates are consolidated into wiki-style articles organized around mechanics, timing, spacing, selection, errors, drills, and strategy.</p></div></div>
+        <div class="review-rule"><span>04</span><div><h3>Separate visual proof</h3><p>A spoken explanation remains non-looping unless the footage is inspected and a distinct visual interval is recorded. Inferred clips are labeled honestly.</p></div></div>
+      </section>
+
+      <section id="commands" class="pipeline-section">
+        <div class="section-kicker">Operator workflow</div><h2>The repeatable command sequence</h2>
+        <p>Commands are run from the repository root. The <code>--kb</code> option isolates every knowledge base, allowing the same processors to support unrelated topics.</p>
+        <pre class="pipeline-code"><code>{command}</code></pre>
+        <p class="code-note">The comment marks the intentional human gate. There is no command that silently bulk-promotes model output into published knowledge.</p>
+      </section>
+
+      <section id="safety" class="pipeline-section">
+        <div class="section-kicker">Boundaries</div><h2>Collection, publishing, and offline media stay separate</h2>
+        <ul class="safety-list">
+          <li><strong>YouTube access is conservative.</strong> Ingestion is cache-first, sequential, delayed with jitter, capped per run, and stopped on an IP block.</li>
+          <li><strong>Private data stays private.</strong> Full transcripts, Codex responses, cookies, credentials, temporary media, and retry state are gitignored.</li>
+          <li><strong>The public corpus is allowlisted.</strong> Publishing emits only approved concepts, short excerpts, timestamps, video metadata, and reviewed relationships.</li>
+          <li><strong>Offline preservation is future scope.</strong> Downloading and transcoding require explicit user control, rights checks, storage estimates, and separate local-only paths.</li>
+          <li><strong>Deployment is network-independent.</strong> GitHub Actions validates and builds committed public artifacts; it does not contact YouTube or OpenAI.</li>
+        </ul>
+      </section>
+    </article>
+  </div>
+</BaseLayout>

@@ -1,0 +1,51 @@
+---
+import { corpora } from '../../../../corpora';
+import VideoToc from '../../../../components/VideoToc.astro';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import { buildVideoTocEntry } from '../../../../lib/videoToc';
+import type { Corpus, Video } from '../../../../types';
+
+export function getStaticPaths() {
+  return corpora.flatMap((corpus) => corpus.videos.map((video) => ({
+    params: { kb: corpus.knowledge_base.id, videoId: video.id },
+    props: { corpus, video },
+  })));
+}
+
+interface Props { corpus: Corpus; video: Video }
+const { corpus, video } = Astro.props;
+const root = `${import.meta.env.BASE_URL}kb/${corpus.knowledge_base.id}`;
+const detailHref = `${root}/videos/${video.id}/`;
+const entry = buildVideoTocEntry(corpus, video);
+const formatDuration = (milliseconds: number) => {
+  const total = Math.floor(milliseconds / 1000);
+  const hours = Math.floor(total / 3600);
+  const minutes = Math.floor((total % 3600) / 60);
+  const seconds = String(total % 60).padStart(2, '0');
+  return hours > 0 ? `${hours}:${String(minutes).padStart(2, '0')}:${seconds}` : `${minutes}:${seconds}`;
+};
+---
+
+<BaseLayout title={video.title} description={`Contents and timestamped knowledge moments from ${video.title}.`} kbId={corpus.knowledge_base.id}>
+  <article class="video-detail-page">
+    <nav class="breadcrumbs"><a href={`${root}/`}>{corpus.knowledge_base.name}</a><span>/</span><a href={`${root}/videos/`}>Videos</a><span>/</span><span>{video.title}</span></nav>
+    <section class="video-detail-hero">
+      <div class="video-detail-player">
+        {video.availability === 'demo_fixture' ? <div class="video-thumb"><span>Demo fixture</span></div> : <iframe src={`https://www.youtube-nocookie.com/embed/${video.id}?rel=0&playsinline=1`} title={video.title} loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>}
+      </div>
+      <div class="video-detail-summary">
+        <div class="eyebrow">{video.channel_name}</div>
+        <h1>{video.title}</h1>
+        <p class="video-detail-meta">{formatDuration(video.duration_ms)} · {entry.concepts.length} connected concepts · {entry.moments.length} linked moments</p>
+        <p>This page is the complete contents for this source. Each timestamp opens the related concept article at the exact evidence row, with a direct YouTube link beside it.</p>
+        <a class="video-watch-link" href={video.canonical_url} target="_blank" rel="noreferrer">Open source video on YouTube <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+    <section id="contents" class="video-detail-contents">
+      <div class="section-kicker">Detailed contents</div>
+      <h2>Every linked moment</h2>
+      <p class="video-detail-intro">The sections are ordered by the first timestamp where each concept appears. Moment entries retain the approved excerpt and reason, so the index is useful for browsing without another model call.</p>
+      <VideoToc entry={entry} root={root} detailHref={detailHref} />
+    </section>
+  </article>
+</BaseLayout>

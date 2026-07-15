@@ -24,6 +24,14 @@ python -m processors.cli build-review-queue
 
 Codex runs in an ephemeral, read-only temporary directory using the configured low-cost model. Generated candidates appear under `data/derived/` and are not publishable by default.
 
+To compare a cheaper model before changing `config/processors.yaml`, run the isolated quality benchmark on cached transcripts:
+
+```powershell
+python -m processors.cli benchmark-models --kb table-tennis --sample-size 3
+```
+
+Read `data/benchmarks/table-tennis/latest.md`. If a model is unavailable through the current Codex account, the report labels it unavailable; that is a capability result, not a quality score.
+
 ## 4. Review
 
 Review `content/kbs/<kb>/annotations/review-queue.yaml`. Approved canonical concepts are stored as individual YAML files under `content/kbs/<kb>/concepts/`. Each concept needs a stable ID/slug, approved status, and at least one evidence item with real segment IDs and a canonical timestamp URL. Use the committed table-tennis demo concepts as templates.
@@ -54,6 +62,10 @@ python -m processors.cli ingest --kb table-tennis --request-delay 5 --jitter 2 V
 ```
 
 Existing normalized files are reused without network access. Use `--force` only when a transcript must be refreshed. When YouTube blocks the transcript endpoint, the command stops the batch and writes the next permitted retry time to the gitignored `data/manifests/<kb>/ingest-retries.json` file. Do not immediately rerun a blocked batch.
+
+The CLI enforces that cooldown before making another request. After changing to a genuinely different VPN or proxy route, pass `--retry-blocked` once to test the new route. Do not use the flag to retry the same blocked IP. Supplying `--proxy-url` or configured Webshare credentials also counts as an alternate route.
+
+Prevention defaults are deliberately conservative: uncached videos are spaced by 20 seconds plus up to 20 seconds of random jitter, and one invocation attempts at most 8 uncached videos. Cached videos do not consume that budget. Do not defeat the cap by immediately launching repeated batches; leave a substantial break between runs. There is no universally safe request rate, especially on shared VPN or datacenter exits whose reputation is affected by other users. For sustained ingestion, use an operator-controlled rotating residential proxy and retain the same pacing.
 
 To import captions supplied by a creator or exported from an authorized source:
 

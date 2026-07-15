@@ -94,6 +94,14 @@ evidence:
       segment_ids:
         - q9c2_hCwlhs:00198
         - q9c2_hCwlhs:00202
+  - id: 5JzSUTg_ojc-adjust-contact-to-spin
+    evidence_type: explanation
+    excerpt: Stay above table height for lighter spin, but lower the hand below the table against heavy backspin.
+    reason: Adjusts backhand-loop contact height to the strength of the incoming spin.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source: {video_id: 5JzSUTg_ojc, start_ms: 546760, end_ms: 565640, url: "https://www.youtube.com/watch?v=5JzSUTg_ojc&t=546s", segment_ids: ["5JzSUTg_ojc:00206", "5JzSUTg_ojc:00207", "5JzSUTg_ojc:00208", "5JzSUTg_ojc:00209", "5JzSUTg_ojc:00210", "5JzSUTg_ojc:00211"]}
 relations:
   - relation_type: part_of
     target_concept_id: concept-backhand-loop

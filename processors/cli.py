@@ -12,6 +12,7 @@ import typer
 from rich.console import Console
 from rich.table import Table
 
+from .benchmark import render_benchmark_markdown, run_quality_benchmark, select_benchmark_videos
 from .demo import write_demo_video
 from .ingest import (
     IngestOptions,
@@ -39,6 +40,21 @@ from .workspace import KnowledgeBasePaths, load_knowledge_base
 
 ROOT = Path(__file__).resolve().parents[1]
 console = Console()
+
+
+def retry_window_remaining(entry: dict, now: datetime | None = None) -> timedelta | None:
+    """Return the remaining block cooldown, or None when retrying is permitted."""
+    value = entry.get("next_retry_at")
+    if not value:
+        return None
+    try:
+        retry_at = datetime.fromisoformat(str(value))
+    except ValueError:
+        return None
+    if retry_at.tzinfo is None:
+        retry_at = retry_at.replace(tzinfo=UTC)
+    remaining = retry_at - (now or datetime.now(UTC))
+    return remaining if remaining.total_seconds() > 0 else None
 app = typer.Typer(help="Build source-grounded video knowledge bases.")
 KbOption = Annotated[str | None, typer.Option("--kb", help="Knowledge-base ID")]
 
@@ -83,9 +99,13 @@ def ingest(
     languages: Annotated[str, typer.Option()] = "en",
     force: Annotated[bool, typer.Option(help="Refetch an existing normalized video")] = False,
     request_delay: Annotated[
-        float, typer.Option(min=0, help="Seconds between network requests")
-    ] = 5.0,
-    jitter: Annotated[float, typer.Option(min=0, help="Random extra delay in seconds")] = 2.0,
+        float, typer.Option(min=0, help="Seconds between uncached videos")
+    ] = 20.0,
+    jitter: Annotated[float, typer.Option(min=0, help="Random extra delay in seconds")] = 20.0,
+    max_network_videos: Annotated[
+        int,
+        typer.Option(min=1, help="Maximum uncached videos attempted in one invocation"),
+    ] = 8,
     caption_file: Annotated[
         Path | None, typer.Option(help="Import a local VTT/SRT for one URL")
     ] = None,
@@ -103,6 +123,12 @@ def ingest(
     ] = False,
     confirm_rights: Annotated[
         bool, typer.Option(help="Confirm authorization to process source audio")
+    ] = False,
+    retry_blocked: Annotated[
+        bool,
+        typer.Option(
+            help="Retry during an active block cooldown only after changing VPN/proxy route"
+        ),
     ] = False,
     whisper_model: Annotated[str, typer.Option(help="faster-whisper model name")] = "small",
     kb: KbOption = None,
@@ -133,11 +159,34 @@ def ingest(
         read_json(retry_path) if retry_path.exists() else {"knowledge_base": paths.id, "items": {}}
     )
     failures: list[str] = []
+    network_attempts = 0
     for index, url in enumerate(urls):
-        cache_path = paths.data("normalized") / f"{video_id_from_url(url)}.json"
+        requested_video_id = video_id_from_url(url)
+        cache_path = paths.data("normalized") / f"{requested_video_id}.json"
         needs_network = force or not cache_path.exists()
+        if needs_network and network_attempts >= max_network_videos:
+            console.print(
+                f"[yellow]Stopped[/yellow] after {network_attempts} uncached video(s); "
+                "the conservative per-run request budget was reached."
+            )
+            break
+        active_retry = retry_window_remaining(retry_state["items"].get(requested_video_id, {}))
+        alternate_route = bool(
+            options.proxy_url or (options.webshare_username and options.webshare_password)
+        )
+        if needs_network and active_retry and not retry_blocked and not alternate_route:
+            hours = max(1, round(active_retry.total_seconds() / 3600))
+            failures.append(url)
+            console.print(
+                f"[yellow]Skipped[/yellow] {requested_video_id}: YouTube block cooldown has "
+                f"about {hours} hour(s) remaining. Change VPN/proxy route and pass "
+                "--retry-blocked, or wait for the recorded retry time."
+            )
+            break
         if index and needs_network and request_delay + jitter > 0:
             time.sleep(request_delay + random.uniform(0, jitter))
+        if needs_network:
+            network_attempts += 1
         try:
             video = ingest_video(
                 url, paths.data("normalized"), languages.split(","), options, force=force
@@ -205,6 +254,88 @@ def extract_concepts(
             paths.data("manifests"),
         )
         console.print(f"[green]Saved candidates[/green] {path.name}")
+
+
+@app.command("benchmark-models")
+def benchmark_models(
+    models: Annotated[
+        str | None,
+        typer.Option(
+            help="Comma-separated Codex model IDs; defaults to the configured model and gpt-5.4-nano"
+        ),
+    ] = None,
+    video_ids: Annotated[
+        str | None,
+        typer.Option(help="Optional comma-separated cached video IDs to benchmark"),
+    ] = None,
+    sample_size: Annotated[
+        int, typer.Option(min=1, help="Number of evidence-rich cached videos when IDs are omitted")
+    ] = 3,
+    output: Annotated[Path | None, typer.Option(help="Optional JSON report path")] = None,
+    markdown_output: Annotated[
+        Path | None, typer.Option(help="Optional Markdown report path")
+    ] = None,
+    kb: KbOption = None,
+) -> None:
+    """Compare Codex extraction models against reviewed transcript evidence."""
+    paths = kb_paths(kb)
+    config_path = ROOT / "config" / "processors.yaml"
+    processor_config = read_yaml(config_path)["codex"]
+    requested_models = [item.strip() for item in (models or "").split(",") if item.strip()]
+    if not requested_models:
+        requested_models = [processor_config["default_model"], "gpt-5.4-nano"]
+    requested_models = list(dict.fromkeys(requested_models))
+    all_videos = load_videos(paths.data("normalized"))
+    reviewed = load_reviewed_concepts(paths.content / "concepts")
+    if video_ids:
+        requested_ids = [item.strip() for item in video_ids.split(",") if item.strip()]
+        video_map = {video.id: video for video in all_videos}
+        missing = [video_id for video_id in requested_ids if video_id not in video_map]
+        if missing:
+            raise typer.BadParameter(
+                f"No normalized videos found for: {', '.join(missing)}", param_hint="--video-ids"
+            )
+        selected = [video_map[video_id] for video_id in requested_ids]
+    else:
+        selected = select_benchmark_videos(all_videos, reviewed, sample_size)
+    if not selected:
+        raise typer.BadParameter("No cached normalized transcripts are available for benchmarking")
+    taxonomy = read_yaml(paths.config / "taxonomy.yaml")
+    output_dir = paths.data("benchmarks")
+    json_path = output or output_dir / "latest.json"
+    markdown_path = markdown_output or output_dir / "latest.md"
+    report = run_quality_benchmark(
+        selected,
+        reviewed,
+        taxonomy,
+        config_path,
+        requested_models,
+        output_dir,
+    )
+    write_json(json_path, report)
+    markdown_path.parent.mkdir(parents=True, exist_ok=True)
+    markdown_path.write_text(render_benchmark_markdown(report, paths.name), encoding="utf-8")
+    table = Table(title=f"{paths.name} model quality benchmark")
+    table.add_column("Model")
+    table.add_column("Runs", justify="right")
+    table.add_column("Schema", justify="right")
+    table.add_column("Citation IDs", justify="right")
+    table.add_column("Supported overlap", justify="right")
+    for item in report["summary"]:
+        table.add_row(
+            item["model"],
+            str(item["run_count"]),
+            f"{item['schema_valid_rate']:.1%}",
+            _format_cli_rate(item["valid_citation_rate"]),
+            _format_cli_rate(item["overlap_support_rate"]),
+        )
+    console.print(table)
+    console.print(f"[green]JSON report[/green] {json_path}")
+    console.print(f"[green]Markdown report[/green] {markdown_path}")
+
+
+def _format_cli_rate(value: float | None) -> str:
+    return "n/a" if value is None else f"{value:.1%}"
 
 
 @app.command("build-review-queue")

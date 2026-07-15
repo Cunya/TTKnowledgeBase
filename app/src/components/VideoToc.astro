@@ -1,0 +1,48 @@
+---
+import type { VideoTocEntry } from '../lib/videoToc';
+import { formatTime, momentAnchor } from '../lib/videoToc';
+
+interface Props {
+  entry: VideoTocEntry;
+  root: string;
+  detailHref: string;
+  compact?: boolean;
+}
+
+const { entry, root, detailHref, compact = false } = Astro.props;
+const conceptHref = (slug: string) => `${root}/concepts/${slug}/`;
+---
+
+<nav class:list={['video-toc', { 'video-toc--compact': compact, 'video-toc--detail': !compact }]} aria-label={`Contents for ${entry.video.title}`}>
+  <div class="video-toc-heading">
+    <strong>{compact ? 'Contents preview' : 'Contents'}</strong>
+    <span>{entry.concepts.length} concept{entry.concepts.length === 1 ? '' : 's'} · {entry.moments.length} moment{entry.moments.length === 1 ? '' : 's'}</span>
+  </div>
+  {compact ? <>
+    <ol>
+      {entry.groups.slice(0, 8).map(({ concept, moments }) => <li>
+        <a class="video-toc-concept" href={`${conceptHref(concept.slug)}#video-moments`}>{concept.label}</a>
+        <span class="video-toc-preview-time">{formatTime(moments[0].item.source.start_ms)}</span>
+      </li>)}
+    </ol>
+    {entry.groups.length > 8 && <p class="video-toc-more">+{entry.groups.length - 8} more concepts</p>}
+    <a class="video-toc-open" href={detailHref}>Open full contents <span aria-hidden="true">↗</span></a>
+  </> : <ol class="video-toc-linear">
+    {entry.moments.map(({ concept, item }, index) => <li class="video-toc-detail-moment">
+      <div class="video-toc-detail-line">
+        <a class="video-toc-linear-main" href={`${conceptHref(concept.slug)}#${momentAnchor(item.id)}`}>
+          <span class="video-toc-linear-index">{String(index + 1).padStart(2, '0')}</span>
+          <span class="video-toc-linear-time">{formatTime(item.source.start_ms)}</span>
+          <span class="video-toc-linear-concept">{concept.label}</span>
+          <span class="video-toc-linear-type">{item.evidence_type.replaceAll('_', ' ')}</span>
+        </a>
+        <div class="video-toc-detail-links">
+          <a class="video-toc-concept-link" href={`${conceptHref(concept.slug)}#video-moments`}>Concept</a>
+          <a class="video-toc-youtube" href={item.source.url} target="_blank" rel="noreferrer">YouTube ↗</a>
+        </div>
+      </div>
+      <p>{item.excerpt}</p>
+      <small>{item.reason}</small>
+    </li>)}
+  </ol>}
+</nav>

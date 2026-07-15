@@ -7,6 +7,7 @@
 - Add a processor that proposes contiguous evidence clusters from candidate segment IDs using the same 30-second and 20-second-gap rules as validation.
 - Provide an editorial promotion helper that creates canonical evidence records from reviewed candidate clusters without hand-written one-off transformation code.
 - Validate every candidate segment ID against the normalized transcript immediately after Codex extraction so invented or mistyped IDs never reach the editorial queue.
+- Add a review-batch report that groups pending candidates by video, matched canonical concept, contiguous evidence cluster, and publication impact so partial review does not require ad hoc inspection scripts.
 
 ## Validation
 
@@ -18,7 +19,7 @@
 ## Ingestion
 
 - Generate `source-video-progress.md` from source-specific discovery manifests and pipeline artifacts instead of maintaining its snapshot tables manually.
-- Enforce `next_retry_at` inside the ingest command. The retry manifest currently records backoff state, but the command relies on operator discipline to honor it.
+- Keep retry-cooldown enforcement covered by CLI tests as ingestion options evolve; the command now enforces `next_retry_at` and permits an explicit override only after a route change.
 - Add an explicit single-video `probe-ingestion` command that does not imply a full batch restart.
 - Normalize video-title encoding when source metadata enters the pipeline so mojibake cannot persist in configuration.
 - Preserve separate discovery manifests per source. The current command overwrites `discovered-videos.json`, and some channel handles resolve only to invalid tab placeholders rather than video entries.
@@ -28,3 +29,11 @@
 - Add a visible badge for single-source concepts. Transcript-inferred visual moments are now labeled as proposed and cannot loop until verified.
 - Add a generated “Recently added” view based on reviewed content provenance or an editorial publication date.
 - Add browser-level tests for primary/cross-listed topic paths, base-path routing, and non-looping transcript-only evidence.
+# Review-queue YAML stability
+
+- The review-queue writer rebuilt plain dictionaries with ruamel.yaml's default narrow line width, creating thousands of formatting-only changes on a no-op queue refresh. Keep a wide output width so generated candidates remain readable and diffs stay focused on actual candidate changes.
+- Reuse the existing round-trip YAML candidate node when its fingerprint is unchanged; reconstructing it discarded quoting and reviewed presentation-only corrections even though the candidate itself had not changed.
+
+## Site TOC
+
+- Extract the deterministic per-video TOC join, sorting, de-duplication, and anchor validation into a shared helper if more site views need the same index; do not add an LLM call to the build path.

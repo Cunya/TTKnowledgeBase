@@ -13,6 +13,7 @@ const {
   kbId,
 } = Astro.props;
 const base = import.meta.env.BASE_URL;
+const showLocalDocumentation = import.meta.env.DEV || import.meta.env.PUBLIC_LOCAL_DOCS === 'true';
 ---
 
 <!doctype html>
@@ -31,9 +32,12 @@ const base = import.meta.env.BASE_URL;
         <span>MomentGraph</span>
       </a>
       <nav aria-label="Primary navigation">
-        <a href={kbId ? `${base}kb/${kbId}/concepts/` : base}>Knowledge bases</a>
+        <a href={kbId ? `${base}kb/${kbId}/` : base}>Knowledge bases</a>
         {kbId && <a href={`${base}kb/${kbId}/videos/`}>Videos</a>}
         <a href={`${base}methodology/`}>Method</a>
+        {showLocalDocumentation && <a href={`${base}pipeline/`}>Pipeline</a>}
+        {showLocalDocumentation && <a href={`${base}progress/`}>Progress</a>}
+        {showLocalDocumentation && <a href={`${base}recent/`}>Recent</a>}
         <a class="support-nav" href={`${base}support/`}>Support</a>
       </nav>
     </header>

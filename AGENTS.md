@@ -141,6 +141,10 @@ A change is complete only when its claims are source-grounded, visual windows ar
 
 ### DOCUMENTATION RULES
 - **Keep documentation updated**
+- **Maintain `docs/prioritized-backlog-2026-07-15.md` as the consolidated project backlog.** Treat it as the planning source of truth for findings from architecture reviews, legal/platform reviews, content audits, processing runs, and implementation work.
+- When a review or implementation pass discovers work, add or update a backlog item with its priority, status, source finding, dependencies, and acceptance criteria. Do not leave actionable findings only in a dated report.
+- Before starting a large scrape, extraction batch, or broad refactor, check the backlog and follow its priority order. After completing work, mark the affected items complete, deferred, blocked, or superseded and record the evidence.
+- Keep completed items in the backlog’s history/“completed” section when useful; do not silently delete unresolved work. If the backlog filename changes, update this rule and all references in the same change.
 - **Keep and maintain a session log md file** with the current date and hour in the file name, and update it before modifying the code (Keep it in Docs/Session Logs)
 - **Keep and maintain a lessons learned md file** so you can avoid making the same mistakes
 - **Keep the session log and the lessons learned max 500 lines** and start a new when reaching the limit
@@ -148,5 +152,4 @@ A change is complete only when its claims are source-grounded, visual windows ar
 - **Before making code changes check the session log** in many cases the process is going around in cirles, you should be aware of this
 - **Whenevery you find code that could be made more efficient, duplicate code refactored into common methods, etc, make a note in a refactorings.md file**
 - **Make notes for yourself in a session notes file** with the current date and hour in the file name and session notes in the file name.
-
 

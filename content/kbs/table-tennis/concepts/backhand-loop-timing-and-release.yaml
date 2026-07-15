@@ -149,6 +149,14 @@ evidence:
       segment_ids:
         - q9c2_hCwlhs:00048
         - q9c2_hCwlhs:00057
+  - id: bKtA240EvTQ-backhand-loop-timing-release
+    evidence_type: explanation
+    excerpt: Create the arc, brush, and then stop the compact backhand motion.
+    reason: The coach condenses the release into a brush-then-stop sequence instead of a continuously extending swing.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source: {video_id: bKtA240EvTQ, start_ms: 535760, end_ms: 552080, url: "https://www.youtube.com/watch?v=bKtA240EvTQ&t=535s", segment_ids: ["bKtA240EvTQ:00195", "bKtA240EvTQ:00196", "bKtA240EvTQ:00198"]}
 relations:
   - relation_type: part_of
     target_concept_id: concept-backhand-loop

@@ -1,0 +1,75 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import corpusData from '../../public/data/kbs/table-tennis/corpus.json';
+import type { Concept, Corpus, Video } from '../types';
+
+type DatedVideo = Video & { published_at?: string };
+const corpus = corpusData as Corpus;
+const videos = corpus.videos as DatedVideo[];
+const base = import.meta.env.BASE_URL;
+const videoById = new Map(videos.map((video) => [video.id, video]));
+const dateKey = (value?: string) => /^\d{8}$/.test(value ?? '') ? value as string : '00000000';
+const formatDate = (value?: string) => {
+  const key = dateKey(value);
+  return key === '00000000' ? 'Date not recorded' : `${key.slice(0, 4)}-${key.slice(4, 6)}-${key.slice(6, 8)}`;
+};
+const linkedConcepts = (videoId: string) => corpus.concepts.filter((concept) => concept.evidence.some((item) => item.source.video_id === videoId));
+const recentVideos = videos
+  .map((video) => ({ video, concepts: linkedConcepts(video.id) }))
+  .sort((a, b) => dateKey(b.video.published_at).localeCompare(dateKey(a.video.published_at)) || a.video.title.localeCompare(b.video.title))
+  .slice(0, 18);
+const recentConcepts = corpus.concepts
+  .map((concept: Concept) => {
+    const sources = [...new Set(concept.evidence.map((item) => item.source.video_id))]
+      .map((videoId) => videoById.get(videoId))
+      .filter((video): video is DatedVideo => Boolean(video))
+      .sort((a, b) => dateKey(b.published_at).localeCompare(dateKey(a.published_at)));
+    return { concept, latest: sources[0], sourceCount: sources.length };
+  })
+  .filter((item) => item.latest)
+  .sort((a, b) => dateKey(b.latest?.published_at).localeCompare(dateKey(a.latest?.published_at)) || a.concept.label.localeCompare(b.concept.label))
+  .slice(0, 18);
+---
+
+<BaseLayout title="Recent additions" description="Local review view of recent table-tennis source and concept additions.">
+  <section class="page-intro recent-intro">
+    <div class="eyebrow">Local editorial view</div>
+    <h1>Recent additions</h1>
+    <p>See which source lessons and concepts are connected to the newest dated videos in the current table-tennis corpus.</p>
+    <p class="recent-disclaimer">This is a development-only view. The corpus does not yet record editorial creation timestamps, so ordering uses the source video publication date as a transparent proxy.</p>
+  </section>
+
+  <section class="recent-section">
+    <div class="section-kicker">Source additions</div>
+    <h2>Newest lessons in the corpus</h2>
+    <div class="recent-list">
+      {recentVideos.map(({ video, concepts }, index) => <article class="recent-row">
+        <div class="recent-index">{String(index + 1).padStart(2, '0')}</div>
+        <div class="recent-main">
+          <div class="recent-meta"><span>{video.channel_name}</span><span>{formatDate(video.published_at)}</span></div>
+          <h3><a href={video.canonical_url} target="_blank" rel="noreferrer">{video.title}</a></h3>
+          <div class="recent-concepts" aria-label="Connected concepts">
+            {concepts.slice(0, 7).map((concept) => <a href={`${base}kb/table-tennis/concepts/${concept.slug}/`}>{concept.label}</a>)}
+            {concepts.length > 7 && <span>+{concepts.length - 7} more</span>}
+          </div>
+        </div>
+        <div class="recent-count"><strong>{concepts.length}</strong><span>concepts</span></div>
+      </article>)}
+    </div>
+  </section>
+
+  <section class="recent-section">
+    <div class="section-kicker">Knowledge additions</div>
+    <h2>Concepts connected to recent sources</h2>
+    <div class="recent-concept-list">
+      {recentConcepts.map(({ concept, latest, sourceCount }) => <article class="recent-concept-row">
+        <div>
+          <div class="recent-meta"><span>{formatDate(latest?.published_at)}</span><span>{sourceCount} supporting {sourceCount === 1 ? 'source' : 'sources'}</span></div>
+          <h3><a href={`${base}kb/table-tennis/concepts/${concept.slug}/`}>{concept.label}</a></h3>
+          <p>{concept.short_definition}</p>
+        </div>
+        <a class="recent-source" href={latest?.canonical_url} target="_blank" rel="noreferrer">Latest source <span aria-hidden="true">↗</span></a>
+      </article>)}
+    </div>
+  </section>
+</BaseLayout>

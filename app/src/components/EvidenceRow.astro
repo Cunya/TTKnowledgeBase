@@ -12,13 +12,16 @@ const formatTime = (milliseconds: number) => {
 };
 ---
 
-<article class:list={['evidence-row', { active }]} id={`moment-${item.source.video_id}-${Math.floor(item.source.start_ms / 1000)}`}>
-  <div class="evidence-row-meta"><span>{item.evidence_type.replaceAll('_', ' ')}</span><small>{citations.length} moment{citations.length === 1 ? '' : 's'}</small></div>
-  <div>
-    <blockquote>{item.excerpt}</blockquote>
-    <p>{item.reason}</p>
-    <small>{item.visual_source ? `${item.visual_status === 'verified_visual_demo' ? 'Verified visual' : 'Proposed visual — not yet reviewed'} · ${item.visual_source.note}` : 'Spoken source; visual example not yet selected.'}</small>
-    <p class="entry-source"><span>Source video</span>{video?.title ?? item.source.video_id}{video?.channel_name && <small>{video.channel_name}</small>}</p>
+<article class:list={['evidence-row', { active }]} id={`moment-${item.id}`}>
+  {citations.slice(1).map(({ item: citation }) => <span id={`moment-${citation.id}`} class="evidence-citation-anchor" aria-hidden="true"></span>)}
+  <div class="evidence-row-content">
+    <div class="evidence-row-meta"><span>{item.evidence_type.replaceAll('_', ' ')}</span><small>{citations.length} moment{citations.length === 1 ? '' : 's'}</small></div>
+    <div>
+      <blockquote>{item.excerpt}</blockquote>
+      <p>{item.reason}</p>
+      <small>{item.visual_source ? `${item.visual_status === 'verified_visual_demo' ? 'Verified visual' : 'Proposed visual — not yet reviewed'} · ${item.visual_source.note}` : 'Spoken source; visual example not yet selected.'}</small>
+      <p class="entry-source"><span>Source video</span>{video?.title ?? item.source.video_id}{video?.channel_name && <small>{video.channel_name}</small>}</p>
+    </div>
   </div>
   <div class="evidence-row-actions">
     {citations.map(({ item: citation }, citationIndex) => {

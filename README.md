@@ -2,7 +2,7 @@
 
 A source-grounded, concept-first platform for multiple independent knowledge bases generated from timestamped YouTube transcripts. The first configured KB covers table tennis. The MVP uses local Python processors and Codex CLI for structured extraction, then publishes a static Astro site to GitHub Pages.
 
-The current published table-tennis corpus contains 73 approved concepts, 42 supporting videos, and 1,110 evidence moments. The review queue contains 442 accepted, no pending, and 1 rejected candidate. Every concept participates in the semantic relation graph. Spoken evidence is limited to focused 30-second windows; accepted candidates must be traceable to exact segment IDs in canonical content. Proposed visual clips remain non-looping until they are manually verified.
+The current published table-tennis corpus contains 73 approved concepts, 50 supporting videos, and 1,118 evidence moments. The review queue contains 450 accepted, 68 pending, and 1 rejected candidate. Every concept participates in the semantic relation graph. Spoken evidence is limited to focused 30-second windows; accepted candidates must be traceable to exact segment IDs in canonical content. Proposed visual clips remain non-looping until they are manually verified.
 
 ## Quick start
 
@@ -18,6 +18,8 @@ npm run dev
 ```
 
 The committed demo corpus works without network access or Codex. For real table-tennis videos, edit `config/kbs/table-tennis/sources.yaml`, then run `ingest --kb table-tennis` and `extract-concepts --kb table-tennis --engine codex`. Generated candidates require review before `publish --kb table-tennis` includes them.
+
+Before changing the extraction model, compare cached transcript output with `benchmark-models --kb table-tennis --sample-size 3`; the private JSON and Markdown reports are written under `data/benchmarks/table-tennis/`.
 
 Ingestion is cache-first and supports paced requests, block-aware retry records, yt-dlp subtitle fallback, supplied VTT/SRT files, optional operator-provided proxy/cookie settings, and explicitly rights-gated local transcription. See [operations](docs/operations.md#resilient-transcript-ingestion) for the controls and safety boundaries.
 
