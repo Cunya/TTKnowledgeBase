@@ -11,6 +11,7 @@ This project is a **local, operator-run publishing pipeline**, not a website tha
 | Knowledge extraction | The processor invokes `codex exec` with the transcript, taxonomy, known concepts, and a strict output schema. | Authenticate Codex, choose the configured model, and rerun failed jobs. |
 | Candidate resolution | The review-queue builder proposes matches using names, aliases, fuzzy matching, and shared evidence. | Accept, reject, merge, rename, and edit concepts. No candidate becomes public merely because an LLM proposed it. |
 | Spoken evidence | Validation checks every approved claim against real transcript segment IDs and canonical YouTube timestamps. | Check that the excerpt supports the editorial wording. |
+| Excerpt safety | The deterministic overlap screen flags complete/high-ratio transcript matches; `rephrase-excerpts` or `publish --auto-rephrase-high-overlap` asks the configured low-cost Codex model for an editorial summary and verifies that the rewrite no longer has high overlap. | Review the rewrite when it changes a canonical excerpt; the source metadata and cited timestamps remain unchanged. |
 | Visual examples | The data model stores a `visual_source` separately from the spoken `source`. | Locate a nearby movement demonstration, set its window and selection method, and eventually mark it manually verified. This is currently reviewer-assisted, not a finished automatic processor. |
 | Publishing | Python validates and sanitizes the reviewed corpus, then copies only allowlisted data into the Astro public folder. | Run the publish command after review. |
 | Site build | Astro generates static concept, video, search, and KB pages. | Preview locally and deploy the generated site through GitHub Pages. |
@@ -26,7 +27,8 @@ flowchart LR
     N --> C["Codex CLI structured extraction"]
     C --> Q["local candidate files and review queue"]
     Q --> R["reviewed concept YAML"]
-    R --> V["validate and publish"]
+    R --> E["high-overlap excerpt guard"]
+    E --> V["validate and publish"]
     V --> P["sanitized public corpus"]
     P --> A["Astro static build"]
     A --> G["GitHub Pages"]
@@ -148,6 +150,18 @@ python -m processors.cli validate --kb table-tennis
 python -m processors.cli publish --kb table-tennis
 ```
 
+For an automatic high-overlap rewrite pass before publishing, opt in explicitly:
+
+```powershell
+python -m processors.cli publish --kb table-tennis --auto-rephrase-high-overlap
+```
+
+The same stage can be run independently with `rephrase-excerpts`. It calls the configured `gpt-5.4-mini`
+profile only for flagged excerpts, never escalates automatically, writes a private rewrite audit under
+`data/manifests/<kb>/`, and changes only the canonical `excerpt` field. If Codex is unavailable or a rewrite still
+has high overlap, the command fails rather than publishing an unverified result. Static builds and CI do not invoke
+the stage implicitly, so they remain deterministic and network-free.
+
 Validation checks concept IDs and slugs, graph targets/cycles, video existence, segment ownership, time bounds, and canonical URLs for both spoken and visual spans. Publishing includes approved concepts only, removes private transcripts from video metadata, excludes demo fixtures by default, and writes:
 
 Spoken evidence is also constrained to a focused window of at most 30 seconds, and citations with gaps greater than 20 seconds must be split into separate evidence moments. Navigation validation requires every approved concept to have at least one topic-tree placement; repeated placements are allowed as explicit cross-listings, with the first placement treated as the primary path.
@@ -191,7 +205,7 @@ I did call the repository commands manually from Codex's terminal rather than by
 
 This means the pipeline is repeatable, but it is intentionally not fully unattended. Collection, extraction, validation, and build are scripted; source curation, knowledge approval, and visual-example approval are editorial gates.
 
-As of 2026-07-15, the published table-tennis corpus contains 73 approved concepts, 50 supporting videos, and 1,118 non-demo evidence moments. The queue contains 450 accepted, 68 pending, and 1 rejected candidate. The latest batch extracted eight cached transcripts and incorporated one focused teaching point per video; the remaining proposals are deliberately awaiting editorial consolidation. Every concept participates in the semantic relation graph. Exact accepted-candidate overlap, candidate fingerprints, navigation coverage, the 30-second spoken-window limit, large citation gaps, visual verification state, and public artifact consistency are enforced during validation.
+As of 2026-07-15, the published table-tennis corpus contains 73 approved concepts, 68 supporting videos, and 1,321 non-demo evidence moments. The queue contains 653 accepted, 41 explicitly deferred, and 1 rejected candidate. The P1-02 cached review pass incorporated 145 focused transcript moments from 146 high-confidence matches; the controlled follow-up batch incorporated 57 more, while deferred items remain out of the public corpus until reviewed. Every concept participates in the semantic relation graph. Exact accepted-candidate overlap, candidate fingerprints, navigation coverage, the 30-second spoken-window limit, large citation gaps, visual verification state, and public artifact consistency are enforced during validation.
 
 CI uses `validate-published` because private normalized transcripts are intentionally absent from Git. This checks the sanitized corpus model, graph, navigation, evidence windows, visual-review consistency, manifest hash/counts, queue overlap, encoding quality, and byte-for-byte equality between the canonical publish output and Astro public copy. Local maintainers still run the stronger transcript-backed `validate` command before publishing.
 

@@ -97,7 +97,7 @@ For maintainability, the next useful automation is not another prompt. It is a s
 - a pure TypeScript helper shared by the video index and future search/recent pages; or
 - a publish-time `video-toc.json` artifact generated from the sanitized corpus, if several pages need the same precomputed index.
 
-The artifact is optional. The current corpus contains 50 published videos and 1,118 evidence moments, which is small enough for Astro to derive efficiently.
+The artifact is optional. The current corpus contains 68 published videos and 1,321 evidence moments, which is still small enough for Astro to derive efficiently.
 
 ## Suggested validation rules
 

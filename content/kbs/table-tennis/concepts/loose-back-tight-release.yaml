@@ -18,7 +18,7 @@ evidence:
     source: {video_id: BToLYdKLIMM, start_ms: 145040, end_ms: 158640, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=145s", segment_ids: ["BToLYdKLIMM:00050", "BToLYdKLIMM:00051", "BToLYdKLIMM:00052", "BToLYdKLIMM:00053"]}
   - id: tighten-release-2
     evidence_type: demonstration
-    excerpt: Relax on the way back, tighten on the way out.
+    excerpt: Stay relaxed during the backswing, then firm up through the forward action.
     reason: Compresses the full tension rhythm into one repeatable cue.
     confidence: 0.99
     visual_status: transcript_inferred
@@ -132,4 +132,61 @@ evidence:
       url: https://www.youtube.com/watch?v=f7uZPRPIwpU&t=129s
       segment_ids:
         - f7uZPRPIwpU:00050
+  - id: Jjd8Mu1s0S0-concept-loose-back-tight-release-reviewed
+    evidence_type: drill
+    excerpt: A serve should begin with a relaxed, slow backswing and end with a faster release or acceleration at contact.
+    reason: They frame the drill as learning a gentle start followed by faster release and repeated slow-fast rhythm.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Jjd8Mu1s0S0
+      start_ms: 622520
+      end_ms: 650920
+      url: https://www.youtube.com/watch?v=Jjd8Mu1s0S0&t=622s
+      segment_ids:
+        - Jjd8Mu1s0S0:00263
+        - Jjd8Mu1s0S0:00264
+        - Jjd8Mu1s0S0:00265
+        - Jjd8Mu1s0S0:00266
+        - Jjd8Mu1s0S0:00267
+        - Jjd8Mu1s0S0:00268
+        - Jjd8Mu1s0S0:00269
+        - Jjd8Mu1s0S0:00270
+        - Jjd8Mu1s0S0:00271
+        - Jjd8Mu1s0S0:00272
+        - Jjd8Mu1s0S0:00273
+  - id: UCyUdarqdJc-concept-loose-back-tight-release-reviewed
+    evidence_type: explanation
+    excerpt: Use a very relaxed backswing and then tighten only at release to generate speed while preserving control.
+    reason: The speaker repeatedly contrasts a loose backswing with a tighter release and explicitly says 'Relax then accelerate' and 'Slow and loose, fast and tight'.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: UCyUdarqdJc
+      start_ms: 25560
+      end_ms: 55480
+      url: https://www.youtube.com/watch?v=UCyUdarqdJc&t=25s
+      segment_ids:
+        - UCyUdarqdJc:00008
+        - UCyUdarqdJc:00009
+        - UCyUdarqdJc:00012
+        - UCyUdarqdJc:00016
+        - UCyUdarqdJc:00019
+  - id: ONXmZHozLTA-concept-loose-back-tight-release-reviewed
+    evidence_type: explanation
+    excerpt: Keep the hand relaxed during the lead-in, then tighten or accelerate only at the right moment of release/contact.
+    reason: The speaker describes a relaxed-to-accelerated motion and says relaxation is the foundation, with tightening only after contact.
+    confidence: 0.92
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ONXmZHozLTA
+      start_ms: 77320
+      end_ms: 87520
+      url: https://www.youtube.com/watch?v=ONXmZHozLTA&t=77s
+      segment_ids:
+        - ONXmZHozLTA:00027
+        - ONXmZHozLTA:00028
 relations: []

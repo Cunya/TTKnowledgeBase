@@ -17,10 +17,12 @@
 body { margin: 0; min-height: 100vh; background: radial-gradient(circle at 80% 0%, rgba(201,255,104,.24), transparent 25rem), var(--paper); }
 a { color: inherit; }
 button, input { font: inherit; }
-.site-header { width: 100%; max-width: none; margin: auto; padding: 22px clamp(18px, 2.5vw, 64px); display: flex; align-items: center; justify-content: space-between; }
-.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; text-decoration: none; letter-spacing: -.03em; }
+.site-header { width: 100%; max-width: none; margin: auto; padding: 22px clamp(18px, 2.5vw, 64px); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px clamp(24px, 4vw, 64px); }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; text-decoration: none; letter-spacing: -.03em; flex: 0 0 auto; }
 .brand-mark { display: grid; place-items: center; width: 36px; aspect-ratio: 1; border-radius: 50%; background: var(--ink); color: var(--lime); font-size: 12px; letter-spacing: 0; }
 nav { display: flex; gap: 24px; }
+.site-header nav { flex: 1 1 auto; min-width: min(100%, 420px); justify-content: flex-end; flex-wrap: wrap; gap: 12px 24px; }
+.site-header nav a { white-space: nowrap; }
 nav a { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 650; }
 nav a:hover, nav a:focus-visible { color: var(--green); }
 .support-nav { color: var(--green); }
@@ -28,6 +30,7 @@ main { width: 100%; max-width: none; margin: auto; padding: 0 clamp(18px, 2.5vw,
 footer { border-top: 1px solid var(--line); padding: 26px 28px; color: var(--muted); text-align: center; font-size: 13px; }
 footer a { color: var(--green); }
 .hero { min-height: 570px; display: flex; flex-direction: column; justify-content: center; max-width: 980px; padding: 60px 0; }
+.home-hero h1 { text-wrap: balance; }
 .eyebrow { color: var(--green); text-transform: uppercase; letter-spacing: .16em; font-size: 12px; font-weight: 800; }
 h1, h2, h3, p { margin-top: 0; }
 h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 500; letter-spacing: -.055em; font-size: clamp(52px, 8vw, 108px); line-height: .91; margin: 22px 0 28px; }
@@ -142,7 +145,7 @@ h1 em { color: var(--green); font-weight: inherit; }
 .evidence-outline a strong { font-size: 13px; }
 .evidence-outline a small { color: var(--muted); font-size: 11px; }
 .evidence-outline a:hover strong { color: var(--green); }
-.evidence-manuscript { min-width: 0; }
+.evidence-manuscript { min-width: 0; container-type: inline-size; }
 .evidence-chapter { scroll-margin-top: 20px; }
 .evidence-chapter + .evidence-chapter { margin-top: 54px; padding-top: 40px; border-top: 2px solid var(--ink); }
 .evidence-chapter > header { display: grid; grid-template-columns: 40px 1fr; gap: 12px; margin-bottom: 28px; padding-bottom: 16px; border-bottom: 1px solid var(--ink); }
@@ -171,6 +174,19 @@ h1 em { color: var(--green); font-weight: inherit; }
 .evidence-row-actions .youtube-timestamp-link span { color: var(--green); font-family: var(--mono); }
 .evidence-row-actions button span { color: var(--green); font-family: var(--mono); }
 .evidence-row-actions button:hover, .evidence-row-actions a:hover { border-color: var(--green); color: var(--green); }
+
+/* Respond to the width of the manuscript column, not only the browser viewport.
+   This keeps excerpts readable when the page is zoomed or shown in a narrow panel. */
+@container (max-width: 900px) {
+  .evidence-row { grid-template-columns: minmax(0, 1fr); }
+  .evidence-row-actions { grid-column: 1 / -1; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); width: 100%; }
+  .evidence-citation-actions { width: 100%; flex-wrap: wrap; }
+}
+@container (max-width: 560px) {
+  .evidence-row-content { grid-template-columns: 1fr; gap: 8px; }
+  .evidence-row-meta { display: flex; gap: 10px; align-items: baseline; }
+  .evidence-row-actions { grid-template-columns: 1fr; }
+}
 .more-evidence { border-bottom: 1px solid var(--line); }
 .more-evidence > summary { display: flex; justify-content: space-between; gap: 16px; padding: 14px 0; color: var(--green); cursor: pointer; font-size: 12px; font-weight: 750; }
 .more-evidence > summary span { color: var(--muted); font-family: var(--mono); font-weight: 400; }

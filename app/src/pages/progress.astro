@@ -12,20 +12,20 @@ const globalVideos = sourceVideos('GlobalTTStudio');
 const globalPublishedIds = new Set(globalVideos.map((video) => video.id));
 const globalInaccessibleIds = new Set(['2GWq4FdtSRU', 'c894uv9vOFk']);
 const globalCatalogVideos = globalCatalogData.videos;
-const sixthBatchVideos = sixthBatchData.videos;
+const sixthBatchVideos = sixthBatchData.videos.filter((video) => !globalPublishedIds.has(video.id) && !spinMasterVideos.some((published) => published.id === video.id));
 const globalCatalogState = (id: string) => globalPublishedIds.has(id) ? 'Published' : globalInaccessibleIds.has(id) ? 'Members-only' : 'Discovered';
 const percent = (value: number, total: number) => total ? Math.round((value / total) * 100) : 0;
 const sourceProgress = [
   {
     name: 'TT SpinMaster',
-    detail: '51 eligible videos',
+    detail: '59 eligible videos',
     stages: [
-      { label: 'Selected from discovery', value: 51, total: 304 },
-      { label: 'Eligible', value: 51, total: 51 },
-      { label: 'Ingested', value: 51, total: 51 },
-      { label: 'Extracted', value: 51, total: 51 },
-      { label: 'Fully reviewed', value: 33, total: 51 },
-      { label: 'Published', value: 41, total: 51 },
+      { label: 'Selected from discovery', value: 59, total: 304 },
+      { label: 'Eligible', value: 59, total: 59 },
+      { label: 'Ingested', value: 59, total: 59 },
+      { label: 'Extracted', value: 59, total: 59 },
+      { label: 'Fully reviewed', value: 40, total: 59 },
+      { label: 'Published', value: 59, total: 59 },
     ],
   },
   {
@@ -42,14 +42,14 @@ const sourceProgress = [
   },
   {
     name: 'Total configured',
-    detail: '60 eligible videos',
+    detail: '68 eligible videos',
     stages: [
-      { label: 'Selected from discovery', value: 62, total: 722 },
-      { label: 'Eligible', value: 60, total: 62 },
-      { label: 'Ingested', value: 60, total: 60 },
-      { label: 'Extracted', value: 60, total: 60 },
-      { label: 'Fully reviewed', value: 42, total: 60 },
-      { label: 'Published', value: 50, total: 60 },
+      { label: 'Selected from discovery', value: 70, total: 722 },
+      { label: 'Eligible', value: 68, total: 70 },
+      { label: 'Ingested', value: 68, total: 68 },
+      { label: 'Extracted', value: 68, total: 68 },
+      { label: 'Fully reviewed', value: 49, total: 68 },
+      { label: 'Published', value: 68, total: 68 },
     ],
   },
 ];
@@ -62,14 +62,14 @@ const sourceProgress = [
     <p>Discovery, transcript ingestion, Codex extraction, editorial review, and publication status for each configured table-tennis source.</p>
   </section>
 
-  <aside class="progress-alert success"><strong>Latest batch</strong><span>Ten additional public videos were ingested and extracted successfully with the configured low-cost Codex profile. Their 106 new candidates remain private for editorial review; 174 candidates are now pending overall.</span></aside>
+  <aside class="progress-alert success"><strong>Latest batch</strong><span>A controlled eight-video TT SpinMaster ingest and Codex extraction completed successfully. Pending triage accepted 57 high-confidence candidates, added 57 evidence moments, and left 13 weak or new-taxonomy candidates deferred.</span></aside>
 
   <section class="progress-section">
     <div class="section-kicker">Current corpus</div><h2>Source summary</h2>
     <div class="table-scroll"><table class="progress-table summary-table"><thead><tr><th>Source</th><th>Discovered</th><th>Configured</th><th>Eligible</th><th>Ingested</th><th>Extracted</th><th>Reviewed</th><th>Published</th><th>Accepted</th><th>Rejected</th><th>Evidence</th><th>Concepts</th><th>Visuals proposed</th><th>Visuals verified</th></tr></thead><tbody>
-      <tr><th>TT SpinMaster<br/><small>@FreeCoachBradHan</small></th><td>304</td><td>51</td><td>51</td><td>51</td><td>51</td><td>33</td><td>41</td><td>348 + 174 pending</td><td>0</td><td>887</td><td>70</td><td>19</td><td>0</td></tr>
+      <tr><th>TT SpinMaster<br/><small>@FreeCoachBradHan</small></th><td>304</td><td>59</td><td>59</td><td>59</td><td>59</td><td>40</td><td>59</td><td>551 + 41 deferred</td><td>0</td><td>1,090</td><td>72</td><td>19</td><td>0</td></tr>
       <tr><th>GlobalTTStudio<br/><small>@GlobalTTStudio</small></th><td>418</td><td>11</td><td>9</td><td>9</td><td>9</td><td>9</td><td>9</td><td>102</td><td>1</td><td>231</td><td>33</td><td>16</td><td>0</td></tr>
-      <tr class="total"><th>Total configured</th><td>—</td><td>62</td><td>60</td><td>60</td><td>60</td><td>42</td><td>50</td><td>450 + 174 pending</td><td>1</td><td>1,118</td><td>73 unique</td><td>35</td><td>0</td></tr>
+      <tr class="total"><th>Total configured</th><td>—</td><td>70</td><td>68</td><td>68</td><td>68</td><td>49</td><td>68</td><td>653 + 41 deferred</td><td>1</td><td>1,321</td><td>73 unique</td><td>35</td><td>0</td></tr>
     </tbody></table></div>
     <p class="table-note">Concept counts overlap between sources. Proposed visual intervals remain non-looping until a reviewer watches and verifies them.</p>
   </section>
@@ -108,12 +108,12 @@ const sourceProgress = [
   <section class="progress-section">
     <div class="section-kicker">Backlog</div><h2>Outstanding work</h2>
     <div class="table-scroll"><table class="progress-table"><thead><tr><th>Work item</th><th>Count</th><th>Recommended action</th></tr></thead><tbody>
-      <tr><th>Pending extracted candidates</th><td>174</td><td>Review exact evidence and merge only defensible additions into canonical concepts.</td></tr>
+      <tr><th>Deferred extracted candidates</th><td>41</td><td>Review new taxonomy proposals and weak matches before another expansion pass.</td></tr>
       <tr><th>Proposed visuals requiring viewing</th><td>35</td><td>Watch complete intervals and verify only genuine demonstrations.</td></tr>
-      <tr><th>Single-source concepts</th><td>19</td><td>Select independent supporting sources instead of duplicate moments.</td></tr>
+      <tr><th>Single-source concepts</th><td>9</td><td>Select independent supporting sources instead of duplicate moments.</td></tr>
       <tr><th>Members-only configured videos</th><td>2</td><td>Leave unprocessed unless access and processing rights are explicit.</td></tr>
-      <tr><th>Published videos with review backlog</th><td>18</td><td>Continue resolving candidates; only incorporated evidence is currently public.</td></tr>
-      <tr><th>Unselected TT SpinMaster discoveries</th><td>253</td><td>Curate by coverage gap; do not bulk-ingest automatically.</td></tr>
+      <tr><th>Published videos with review backlog</th><td>19</td><td>Continue resolving deferred candidates; only incorporated evidence is currently public.</td></tr>
+      <tr><th>Unselected TT SpinMaster discoveries</th><td>245</td><td>Curate by coverage gap; do not bulk-ingest automatically.</td></tr>
       <tr><th>Unselected GlobalTTStudio discoveries</th><td>407</td><td>Curate by missing topic, source diversity, or useful visual demonstration.</td></tr>
     </tbody></table></div>
   </section>
@@ -121,7 +121,7 @@ const sourceProgress = [
   <section class="progress-section inventories" id="videos-by-source">
     <div class="section-kicker">Source inventory</div><h2>Videos by source</h2>
     <p class="table-note">Each source includes its complete trustworthy discovery catalog where available. State labels distinguish public knowledge-base evidence from videos that are merely listed by the channel.</p>
-    <details><summary><strong>TT SpinMaster</strong><span>{spinMasterVideos.length} published · {sixthBatchVideos.length} extracted/reviewing · 253 unselected</span></summary><div class="table-scroll"><table class="progress-table"><thead><tr><th>State</th><th>Video</th><th>Title</th></tr></thead><tbody>{sixthBatchVideos.map((video) => <tr><td><span class="catalog-state extracted">Extracted · review</span></td><td><a href={`https://www.youtube.com/watch?v=${video.id}`} target="_blank" rel="noreferrer"><code>{video.id}</code></a></td><td>{video.title}</td></tr>)}{spinMasterVideos.map((video) => <tr><td><span class="catalog-state published">Published</span></td><td><a href={`https://www.youtube.com/watch?v=${video.id}`} target="_blank" rel="noreferrer"><code>{video.id}</code></a></td><td>{video.title}</td></tr>)}</tbody></table></div><p class="inventory-note">The 10 extracted rows are private candidates awaiting review. The 253 remaining channel discoveries are unselected and have not entered the processing pipeline.</p></details>
+    <details><summary><strong>TT SpinMaster</strong><span>{spinMasterVideos.length} published · {sixthBatchVideos.length} extracted/reviewing · 245 unselected</span></summary><div class="table-scroll"><table class="progress-table"><thead><tr><th>State</th><th>Video</th><th>Title</th></tr></thead><tbody>{sixthBatchVideos.map((video) => <tr><td><span class="catalog-state extracted">Extracted · review</span></td><td><a href={`https://www.youtube.com/watch?v=${video.id}`} target="_blank" rel="noreferrer"><code>{video.id}</code></a></td><td>{video.title}</td></tr>)}{spinMasterVideos.map((video) => <tr><td><span class="catalog-state published">Published</span></td><td><a href={`https://www.youtube.com/watch?v=${video.id}`} target="_blank" rel="noreferrer"><code>{video.id}</code></a></td><td>{video.title}</td></tr>)}</tbody></table></div><p class="inventory-note">P1-02 processed the latest candidate batch into the published inventory; no extracted rows remain awaiting review. The 245 remaining channel discoveries are unselected and have not entered the processing pipeline.</p></details>
     <details id="globalttstudio-videos"><summary><strong>GlobalTTStudio</strong><span>{globalCatalogVideos.length} discovered · 9 published · 2 members-only</span></summary>
       <p class="inventory-note">Metadata-only discovery on 15 July 2026. “Discovered” means listed by the channel; it does not mean selected, transcribed, extracted, or reviewed.</p>
       <div class="table-scroll"><table class="progress-table catalog-table"><thead><tr><th>State</th><th>Video</th><th>Title</th></tr></thead><tbody>{globalCatalogVideos.map((video) => <tr><td><span class:list={['catalog-state', globalCatalogState(video.id).toLowerCase()]}>{globalCatalogState(video.id)}</span></td><td><a href={video.url} target="_blank" rel="noreferrer"><code>{video.id}</code></a></td><td>{video.title}</td></tr>)}</tbody></table></div>

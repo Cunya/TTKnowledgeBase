@@ -157,6 +157,46 @@ evidence:
     visual_status: transcript_inferred
     review_status: approved
     source: {video_id: bKtA240EvTQ, start_ms: 535760, end_ms: 552080, url: "https://www.youtube.com/watch?v=bKtA240EvTQ&t=535s", segment_ids: ["bKtA240EvTQ:00195", "bKtA240EvTQ:00196", "bKtA240EvTQ:00198"]}
+  - id: UCyUdarqdJc-concept-backhand-loop-timing-and-release-reviewed
+    evidence_type: explanation
+    excerpt: Backhand loop power depends on hitting the peak or proper meeting point and releasing only at the right moment, not early.
+    reason: The speaker says contact timing must be nailed, power generation happens at the peak, and the stroke should be released only when the ball is in the correct spot.
+    confidence: 0.92
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: UCyUdarqdJc
+      start_ms: 295680
+      end_ms: 325440
+      url: https://www.youtube.com/watch?v=UCyUdarqdJc&t=295s
+      segment_ids:
+        - UCyUdarqdJc:00115
+        - UCyUdarqdJc:00116
+        - UCyUdarqdJc:00117
+        - UCyUdarqdJc:00118
+        - UCyUdarqdJc:00119
+        - UCyUdarqdJc:00120
+        - UCyUdarqdJc:00121
+        - UCyUdarqdJc:00122
+  - id: 8pUgdfqXPj4-concept-backhand-loop-timing-and-release-reviewed
+    evidence_type: explanation
+    excerpt: Preparing the backhand backswing early, matching it to the ball's rhythm, and releasing the stroke at the right moment instead of waiting until the bounce.
+    reason: Explicitly says not to wait for the bounce, that the backswing should already be prepared as the ball crosses the net, and that this timing is correct.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8pUgdfqXPj4
+      start_ms: 91520
+      end_ms: 119800
+      url: https://www.youtube.com/watch?v=8pUgdfqXPj4&t=91s
+      segment_ids:
+        - 8pUgdfqXPj4:00039
+        - 8pUgdfqXPj4:00040
+        - 8pUgdfqXPj4:00041
+        - 8pUgdfqXPj4:00048
+        - 8pUgdfqXPj4:00049
+        - 8pUgdfqXPj4:00050
 relations:
   - relation_type: part_of
     target_concept_id: concept-backhand-loop

@@ -15,7 +15,7 @@ review_status: approved
 evidence:
   - id: contact-point-explanation-1
     evidence_type: explanation
-    excerpt: Contact the ball in front of your body near the top of the bounce. If contact is late, the stroke loses space and consistency.
+    excerpt: Meet the ball in front of the body near the bounce apex; waiting too long removes working room and consistency.
     reason: Explains both the desired contact location/timing and the consequence of a common error.
     confidence: 0.99
     visual_status: not_visual
@@ -28,7 +28,7 @@ evidence:
       segment_ids: ["demoTT00001:00004", "demoTT00001:00005"]
   - id: contact-point-three-timings-2
     evidence_type: drill
-    excerpt: Practice different contact points—on the rise, at the peak, and on the fall.
+    excerpt: Practice contacts on the rise, at the apex, and during the falling phase.
     reason: Global TT Studio turns contact timing into a deliberate practice variable.
     confidence: 0.99
     visual_status: transcript_inferred
@@ -44,7 +44,7 @@ evidence:
     source: {video_id: OcPo7MgSNVM, start_ms: 67966, end_ms: 73933, url: "https://www.youtube.com/watch?v=OcPo7MgSNVM&t=67s", segment_ids: ["OcPo7MgSNVM:00014"]}
   - id: heavy-backspin-summary-4
     evidence_type: example
-    excerpt: Make contact in the early descending phase.
+    excerpt: Against heavy backspin, connect just after the ball begins its descent.
     reason: A concise repeatable summary of the same timing cue.
     confidence: 0.99
     visual_status: transcript_inferred
@@ -522,4 +522,315 @@ evidence:
         - YUEaL2HiPIE:00082
         - YUEaL2HiPIE:00083
         - YUEaL2HiPIE:00085
+  - id: 1fHWnt8IlbI-concept-contact-point-reviewed
+    evidence_type: explanation
+    excerpt: The point and height at which the racket meets the ball, including whether it is above or below the table or ball.
+    reason: The speaker explains that for looping at the drop, the hand must be below the table to meet the ball in time.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 1fHWnt8IlbI
+      start_ms: 81240
+      end_ms: 96960
+      url: https://www.youtube.com/watch?v=1fHWnt8IlbI&t=81s
+      segment_ids:
+        - 1fHWnt8IlbI:00033
+        - 1fHWnt8IlbI:00034
+        - 1fHWnt8IlbI:00035
+        - 1fHWnt8IlbI:00036
+        - 1fHWnt8IlbI:00037
+        - 1fHWnt8IlbI:00038
+  - id: 5JzSUTg_ojc-concept-contact-point-reviewed
+    evidence_type: explanation
+    excerpt: The point and orientation of racket-ball contact that determines whether the shot produces topspin, backspin, or a miss.
+    reason: The speaker ties contact height and direction to spin outcome, stating downward contact creates backspin and low-to-high contact creates topspin.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 5JzSUTg_ojc
+      start_ms: 26000
+      end_ms: 51160
+      url: https://www.youtube.com/watch?v=5JzSUTg_ojc&t=26s
+      segment_ids:
+        - 5JzSUTg_ojc:00009
+        - 5JzSUTg_ojc:00011
+        - 5JzSUTg_ojc:00012
+        - 5JzSUTg_ojc:00014
+        - 5JzSUTg_ojc:00017
+        - 5JzSUTg_ojc:00018
+  - id: A4-lKRVwSFc-concept-contact-point-reviewed
+    evidence_type: definition
+    excerpt: The point in the swing where the racket meets the ball.
+    reason: Speaker explicitly contrasts different contact points and says the racket appears at contact.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: A4-lKRVwSFc
+      start_ms: 273640
+      end_ms: 286440
+      url: https://www.youtube.com/watch?v=A4-lKRVwSFc&t=273s
+      segment_ids:
+        - A4-lKRVwSFc:00105
+        - A4-lKRVwSFc:00106
+        - A4-lKRVwSFc:00107
+        - A4-lKRVwSFc:00108
+  - id: Aaaxi0DOZzQ-concept-contact-point-reviewed
+    evidence_type: definition
+    excerpt: The exact moment and position where the racket meets the ball.
+    reason: The speaker repeatedly centers the lesson on how to contact the ball and how to meet it with the correct posture.
+    confidence: 0.92
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Aaaxi0DOZzQ
+      start_ms: 25240
+      end_ms: 31040
+      url: https://www.youtube.com/watch?v=Aaaxi0DOZzQ&t=25s
+      segment_ids:
+        - Aaaxi0DOZzQ:00010
+        - Aaaxi0DOZzQ:00011
+  - id: bKtA240EvTQ-concept-contact-point-reviewed
+    evidence_type: definition
+    excerpt: The point and moment where the racket meets the ball, which the learner must seek and control precisely.
+    reason: The coach tells the learner to use the bounce to find the contact point and repeatedly frames movement around locating contact on balls of different lengths.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: bKtA240EvTQ
+      start_ms: 610680
+      end_ms: 631560
+      url: https://www.youtube.com/watch?v=bKtA240EvTQ&t=610s
+      segment_ids:
+        - bKtA240EvTQ:00226
+        - bKtA240EvTQ:00227
+        - bKtA240EvTQ:00228
+        - bKtA240EvTQ:00232
+        - bKtA240EvTQ:00233
+  - id: fXOGFZD1MTY-concept-contact-point-reviewed
+    evidence_type: explanation
+    excerpt: The exact moment and place where the racket meets the ball; it must be found through correct body position and spacing.
+    reason: The coach says tight body position helps find the contact point while moving.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: fXOGFZD1MTY
+      start_ms: 327200
+      end_ms: 337840
+      url: https://www.youtube.com/watch?v=fXOGFZD1MTY&t=327s
+      segment_ids:
+        - fXOGFZD1MTY:00121
+        - fXOGFZD1MTY:00123
+  - id: Jjd8Mu1s0S0-concept-contact-point-reviewed
+    evidence_type: definition
+    excerpt: The specific spot on the racket face or blade that the ball meets, which determines whether spin can be generated effectively.
+    reason: The speaker says the first thing to focus on is the racket contact point and that position comes before motion.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Jjd8Mu1s0S0
+      start_ms: 67960
+      end_ms: 77160
+      url: https://www.youtube.com/watch?v=Jjd8Mu1s0S0&t=67s
+      segment_ids:
+        - Jjd8Mu1s0S0:00026
+        - Jjd8Mu1s0S0:00027
+        - Jjd8Mu1s0S0:00028
+  - id: lO0H9Cs6JEo-concept-contact-point-reviewed
+    evidence_type: definition
+    excerpt: Where the racket meets the ball, including whether the contact is above, below, or through the ball's path.
+    reason: The speaker distinguishes topspin and backspin by contact point and racket path during contact.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: lO0H9Cs6JEo
+      start_ms: 412440
+      end_ms: 436160
+      url: https://www.youtube.com/watch?v=lO0H9Cs6JEo&t=412s
+      segment_ids:
+        - lO0H9Cs6JEo:00119
+        - lO0H9Cs6JEo:00122
+        - lO0H9Cs6JEo:00123
+        - lO0H9Cs6JEo:00126
+  - id: mTnHV7k_Wes-concept-contact-point-reviewed
+    evidence_type: explanation
+    excerpt: The moment and location where the racket meets the ball, including the need to catch the ball on the rising phase for a short push.
+    reason: The speaker specifies the rising phase as the desired contact timing for a better short push.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: mTnHV7k_Wes
+      start_ms: 97840
+      end_ms: 117600
+      url: https://www.youtube.com/watch?v=mTnHV7k_Wes&t=97s
+      segment_ids:
+        - mTnHV7k_Wes:00039
+        - mTnHV7k_Wes:00040
+        - mTnHV7k_Wes:00041
+        - mTnHV7k_Wes:00044
+        - mTnHV7k_Wes:00045
+  - id: PFPu_pKZ9TI-concept-contact-point-reviewed
+    evidence_type: definition
+    excerpt: Choosing when on the ball's bounce cycle to strike, such as at the rising point, peak, early drop, or late drop.
+    reason: The speaker explicitly defines four contact points in the ball's bounce cycle and describes how each one is struck.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: PFPu_pKZ9TI
+      start_ms: 5480
+      end_ms: 34000
+      url: https://www.youtube.com/watch?v=PFPu_pKZ9TI&t=5s
+      segment_ids:
+        - PFPu_pKZ9TI:00002
+        - PFPu_pKZ9TI:00003
+        - PFPu_pKZ9TI:00004
+        - PFPu_pKZ9TI:00005
+        - PFPu_pKZ9TI:00006
+        - PFPu_pKZ9TI:00007
+        - PFPu_pKZ9TI:00008
+  - id: StQ86EhPFpo-concept-contact-point-reviewed
+    evidence_type: definition
+    excerpt: The point on the ball where the racket meets it, including distinctions such as lower half, middle, upper half, side, and upper-middle contact.
+    reason: 'The speaker gives explicit contact-location guidance: lower half for backspin, middle for heavier spin on flicks, upper half for lighter spin, and upper-middle for certain side-top cases.'
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: StQ86EhPFpo
+      start_ms: 390480
+      end_ms: 403960
+      url: https://www.youtube.com/watch?v=StQ86EhPFpo&t=390s
+      segment_ids:
+        - StQ86EhPFpo:00155
+        - StQ86EhPFpo:00156
+        - StQ86EhPFpo:00157
+        - StQ86EhPFpo:00160
+  - id: ti_YUZdHu3o-cand-2-reviewed
+    evidence_type: explanation
+    excerpt: The point and height where the racket meets the ball.
+    reason: The speaker explicitly discusses where to contact the ball and stresses staying lower than the ball to add spin.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ti_YUZdHu3o
+      start_ms: 39840
+      end_ms: 51440
+      url: https://www.youtube.com/watch?v=ti_YUZdHu3o&t=39s
+      segment_ids:
+        - ti_YUZdHu3o:00014
+        - ti_YUZdHu3o:00015
+        - ti_YUZdHu3o:00016
+        - ti_YUZdHu3o:00017
+        - ti_YUZdHu3o:00018
+  - id: UCyUdarqdJc-concept-contact-point-reviewed
+    evidence_type: explanation
+    excerpt: The moment and place where the racket meets the ball; it is a key determinant of power and control.
+    reason: The speaker repeatedly says power depends on where the racket meets the ball and emphasizes the 'optimal power point' and exact contact timing.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: UCyUdarqdJc
+      start_ms: 243440
+      end_ms: 259320
+      url: https://www.youtube.com/watch?v=UCyUdarqdJc&t=243s
+      segment_ids:
+        - UCyUdarqdJc:00094
+        - UCyUdarqdJc:00095
+        - UCyUdarqdJc:00099
+        - UCyUdarqdJc:00100
+  - id: WuN7bP8CIOs-concept-contact-point-reviewed
+    evidence_type: definition
+    excerpt: The moment and location of contact should be controlled precisely, with only a tiny explosive wrist action at impact rather than a large whipping motion.
+    reason: The speaker describes a tiny explosive snap and warns against large motion at contact, which grounds the concept of controlled contact.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: WuN7bP8CIOs
+      start_ms: 211920
+      end_ms: 227200
+      url: https://www.youtube.com/watch?v=WuN7bP8CIOs&t=211s
+      segment_ids:
+        - WuN7bP8CIOs:00097
+        - WuN7bP8CIOs:00102
+  - id: 8pUgdfqXPj4-concept-contact-point-reviewed
+    evidence_type: explanation
+    excerpt: The exact point and timing where the racket meets the ball, which must be found with the correct rhythm and body position.
+    reason: Says many players use the wrong timing for friction and cannot find the contact point when receiving a push.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8pUgdfqXPj4
+      start_ms: 520520
+      end_ms: 537280
+      url: https://www.youtube.com/watch?v=8pUgdfqXPj4&t=520s
+      segment_ids:
+        - 8pUgdfqXPj4:00213
+        - 8pUgdfqXPj4:00214
+        - 8pUgdfqXPj4:00215
+        - 8pUgdfqXPj4:00216
+        - 8pUgdfqXPj4:00217
+        - 8pUgdfqXPj4:00218
+  - id: 8yuRXgTWOxc-concept-contact-point-reviewed
+    evidence_type: explanation
+    excerpt: The exact place and moment where the racket meets the ball, which must be positioned correctly for effective topspin or power transfer.
+    reason: The speaker directly discusses the contact point and says body movement helps clear space for it.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8yuRXgTWOxc
+      start_ms: 122960
+      end_ms: 134400
+      url: https://www.youtube.com/watch?v=8yuRXgTWOxc&t=122s
+      segment_ids:
+        - 8yuRXgTWOxc:00047
+        - 8yuRXgTWOxc:00048
+        - 8yuRXgTWOxc:00049
+        - 8yuRXgTWOxc:00050
+  - id: ONXmZHozLTA-concept-contact-point-reviewed
+    evidence_type: definition
+    excerpt: The moment and location where the racket meets the ball, which must be managed carefully for spin and loop quality.
+    reason: The speaker explicitly centers the discussion on the moment of contact and the contact surface.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ONXmZHozLTA
+      start_ms: 387840
+      end_ms: 400000
+      url: https://www.youtube.com/watch?v=ONXmZHozLTA&t=387s
+      segment_ids:
+        - ONXmZHozLTA:00139
+        - ONXmZHozLTA:00140
+        - ONXmZHozLTA:00141
+        - ONXmZHozLTA:00142
+        - ONXmZHozLTA:00143
+        - ONXmZHozLTA:00144
+  - id: SF0Sv2ZzrRI-concept-contact-point-reviewed
+    evidence_type: definition
+    excerpt: The exact point where the racket meets the ball, used to control direction, depth, and spin.
+    reason: The speaker tells the learner to find the contact point first.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: SF0Sv2ZzrRI
+      start_ms: 284800
+      end_ms: 291280
+      url: https://www.youtube.com/watch?v=SF0Sv2ZzrRI&t=284s
+      segment_ids:
+        - SF0Sv2ZzrRI:00085
+        - SF0Sv2ZzrRI:00086
 relations: []

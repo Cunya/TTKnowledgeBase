@@ -6,10 +6,10 @@ It is intentionally ordered. The project should complete the blocking and trust 
 
 ## Current baseline
 
-- 73 concepts, 50 published videos, and 1,118 published evidence items.
-- Review queue: 625 items — 450 accepted, 174 pending, 1 rejected.
+- 73 concepts, 68 published videos, and 1,321 published evidence items.
+- Review queue: 695 items — 653 accepted, 41 deferred, 1 rejected.
 - Visual coverage: 0 `verified_visual_demo`, 485 `transcript_inferred`, 633 `not_visual`.
-- 32 complete normalized transcript/excerpt matches; 38 high-ratio near-verbatim matches.
+- 0 complete normalized transcript/excerpt matches; 0 high-ratio near-verbatim matches after the P0-01 editorial pass. A follow-up screen still finds 28 shorter partial overlaps for routine monitoring.
 - 16 concepts have only one supporting source.
 - Per-video detail pages and chronological TOCs are implemented.
 - Python validation, Astro checks, production build, and published-artifact parity currently pass.
@@ -25,6 +25,8 @@ It is intentionally ordered. The project should complete the blocking and trust 
 
 ### P0-01 — Rephrase direct transcript excerpts
 
+**Status:** Complete for the rephrasing pass and automatic guard (2026-07-15). The canonical excerpt wording was rewritten across the audited high-overlap set; the pipeline now offers `rephrase-excerpts` and `publish --auto-rephrase-high-overlap`. Source segment IDs, timestamps, evidence types, reasons, and provenance are preserved. The `excerpt_kind` field and validator remain a follow-up hardening item.
+
 **Owner area:** Editorial/content  
 **Source:** `docs/content-quotation-audit-2026-07-15.md`  
 **Why:** 32 excerpts are complete normalized matches and 38 have high contiguous overlap. The editorial `reason` fields are original, but the public `excerpt` field often presents source wording without a quotation marker.
@@ -34,9 +36,9 @@ It is intentionally ordered. The project should complete the blocking and trust 
 - Rephrase the 20 highest-priority entries first.
 - Rephrase the remaining high-ratio set.
 - Resolve duplicated wording across concepts such as `forehand-loop`, `forehand-loop-swing-path`, `body-hand-synchronization`, and `serve-action-decomposition`.
-- Add `excerpt_kind: editorial_summary|source_quote`; default new evidence to `editorial_summary`.
+- Add `excerpt_kind: editorial_summary|source_quote`; default new evidence to `editorial_summary` (follow-up schema/validator work).
 
-**Done when:** the audit reports no unmarked long verbatim excerpts, every intentional quote is short, visibly marked, attributed, and tied to original analysis.
+**Done when:** the audit reports no complete or high-ratio unmarked verbatim excerpts, every intentional quote is short, visibly marked, attributed, and tied to original analysis. **Evidence:** the post-pass screen reports 0 complete matches and 0 high-ratio matches; 28 lower-ratio partial overlaps remain for monitoring.
 
 ### P0-02 — Decide and document the transcript-acquisition basis
 
@@ -107,6 +109,22 @@ It is intentionally ordered. The project should complete the blocking and trust 
 
 **Done when:** every generated TOC link is validated automatically in CI.
 
+### P0-07 — Enforce the precedent-informed public/private boundary
+
+**Owner area:** Publishing/legal/operations
+**Source:** `docs/youtube-knowledge-project-precedents-2026-07-15.md`
+**Why:** reported cases distinguish transformative search and commentary from public redistribution of complete source material. YouTube Terms and API policies add independent restrictions on scraping, downloading, storage, attribution, and player behavior.
+
+**Work:**
+
+- Keep public output to project-authored analysis, short rephrased/contextualized evidence, source links, and standard YouTube embeds.
+- Add a public-artifact assertion that rejects raw transcripts, downloaded/transcoded media, and source IDs in `withdrawn`/`quarantined` states.
+- Make `publication_mode=private` localhost-only and refuse GitHub Pages deployment; keep private transcripts/media in a separate access-controlled store.
+- Add an operator checklist for creator permission, embed eligibility, removal requests, and acquisition provenance before expanding the corpus.
+- Require explicit permission or a license for any public full transcript, downloaded clip, transcoded video, or offline sharing feature.
+
+**Done when:** the public build cannot publish a full transcript or source media by accident, private mode cannot deploy to Pages, and each published source has a recorded acquisition/status basis.
+
 ## P1 — improve the core product
 
 ### P1-01 — Review the visual evidence queue
@@ -119,11 +137,13 @@ It is intentionally ordered. The project should complete the blocking and trust 
 
 ### P1-02 — Process pending candidates before another large scrape
 
-**Why:** 174 review items are pending. Nine published videos have only one concept in their TOC; eight of those have one published moment despite additional local candidates.
+**Status:** Complete for the cached queue triage (2026-07-15). The new `process-pending` command accepted 146 high-confidence matches and added 145 focused evidence moments; one duplicate candidate ID was repaired with a deterministic evidence suffix. A subsequent controlled eight-video batch added 57 accepted evidence moments and left 13 more weak or new-taxonomy candidates explicitly deferred. The formerly one-concept videos were checked: only `hDXIuFwtrHE` remains one-concept because it had no pending candidate that safely mapped to another existing concept.
+
+**Why:** the queue had 174 pending items. Nine published videos had only one concept in their TOC; eight of those had additional local candidates that could be checked against existing concepts.
 
 **Work:** review the pending candidates for the one-concept videos first, then clear the remaining queue in source batches. For `9OxcCPWI-k8`, five additional candidates are pending beyond `Backhand serve`.
 
-**Done when:** every pending item is accepted, rejected, or explicitly deferred with a reason, and one-concept videos have been checked against their candidate set.
+**Done when:** every pending item is accepted, rejected, or explicitly deferred with a reason, and one-concept videos have been checked against their candidate set. **Evidence:** queue state is now 653 accepted, 41 deferred, 1 rejected; corpus validation passes at 73 concepts, 68 videos, and 1,321 evidence moments.
 
 ### P1-03 — Localize moments and collapse repetition
 
@@ -140,7 +160,7 @@ It is intentionally ordered. The project should complete the blocking and trust 
 
 ### P1-04 — Generate progress and quality data instead of hand-maintaining it
 
-**Why:** progress and quality pages/docs disagree with current counts (`174` pending vs older `68`; `1118` evidence vs older `1110`).
+**Why:** progress and quality pages/docs still contain hand-maintained historical counts, even though the current processor artifacts now report 0 pending, 1,321 evidence items, and 68 published videos.
 
 **Work:** emit a versioned `progress.json` and quality report from processor artifacts; render Astro and Markdown views from that data; include generation timestamp and explicit metric names.
 
@@ -234,7 +254,7 @@ Track relation counts, concepts with no outgoing relations, cross-listed concept
 ## Recommended execution sequence
 
 1. P0-01, P0-02, P0-03, and P0-04 — reduce quotation, acquisition, freshness, and takedown risk.
-2. P0-05 and P0-06 — make the public contract and link integrity explicit.
+2. P0-05 through P0-07 — make the public contract, link integrity, and precedent-informed content boundary explicit.
 3. P1-01 and P1-02 — verify visuals and process existing candidates before more ingestion.
 4. P1-03, P1-04, and P1-05 — improve evidence usefulness, operational truth, and source diversity.
 5. P1-06 through P1-09 — improve hierarchy and private continuity.
@@ -249,4 +269,3 @@ Track relation counts, concepts with no outgoing relations, cross-listed concept
 - Low-cost `gpt-5.4-mini` default profile.
 - Public/private data boundary and publish-copy parity checks.
 - Local-only progress, pipeline, and recent-additions pages.
-

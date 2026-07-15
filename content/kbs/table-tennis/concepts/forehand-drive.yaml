@@ -143,6 +143,59 @@ evidence:
         - t3HX8AEujWw:00010
         - t3HX8AEujWw:00011
         - t3HX8AEujWw:00012
+  - id: pE5PLAr9iaA-concept-forehand-drive-reviewed
+    evidence_type: explanation
+    excerpt: A more compact forehand offensive stroke with a smaller backswing than a loop.
+    reason: The speaker names forehand drive feel and describes its shorter timing window and less completed backswing when players stand too close.
+    confidence: 0.87
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: pE5PLAr9iaA
+      start_ms: 188120
+      end_ms: 209680
+      url: https://www.youtube.com/watch?v=pE5PLAr9iaA&t=188s
+      segment_ids:
+        - pE5PLAr9iaA:00063
+        - pE5PLAr9iaA:00065
+        - pE5PLAr9iaA:00069
+  - id: WuN7bP8CIOs-concept-forehand-drive-reviewed
+    evidence_type: definition
+    excerpt: A forehand attacking stroke with a level forearm, forward meet to the ball, and an upper-arm-led motion to generate direct power.
+    reason: The speaker explicitly defines the forehand drive as a level forearm with forward impact and distinguishes it from the loop.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: WuN7bP8CIOs
+      start_ms: 92680
+      end_ms: 115200
+      url: https://www.youtube.com/watch?v=WuN7bP8CIOs&t=92s
+      segment_ids:
+        - WuN7bP8CIOs:00043
+        - WuN7bP8CIOs:00045
+        - WuN7bP8CIOs:00050
+        - WuN7bP8CIOs:00052
+  - id: _biE-Dzy0aM-concept-forehand-drive-reviewed
+    evidence_type: explanation
+    excerpt: A direct forehand hitting action used to send the ball through the opponent's spin or pace with solid contact.
+    reason: The speaker says a forehand drive can neutralize heavy backspin and emphasizes solid, direct impact rather than brushing.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: _biE-Dzy0aM
+      start_ms: 289480
+      end_ms: 307800
+      url: https://www.youtube.com/watch?v=_biE-Dzy0aM&t=289s
+      segment_ids:
+        - _biE-Dzy0aM:00114
+        - _biE-Dzy0aM:00115
+        - _biE-Dzy0aM:00116
+        - _biE-Dzy0aM:00117
+        - _biE-Dzy0aM:00118
+        - _biE-Dzy0aM:00119
+        - _biE-Dzy0aM:00120
 relations:
   - relation_type: contrasts_with
     target_concept_id: concept-forehand-loop

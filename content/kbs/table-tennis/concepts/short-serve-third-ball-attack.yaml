@@ -26,7 +26,7 @@ evidence:
     source: {video_id: csJgHR7Daog, start_ms: 7240, end_ms: 15600, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=7s", segment_ids: ["csJgHR7Daog:00003", "csJgHR7Daog:00004", "csJgHR7Daog:00005"]}
   - id: global-serve-follow-up-3
     evidence_type: explanation
-    excerpt: The best serve is one that sets up your strongest attack.
+    excerpt: Evaluate the serve by whether it creates the strongest available follow-up attack.
     reason: Global TT Studio reframes serve quality around the follow-up rather than the ace.
     confidence: 0.99
     visual_status: transcript_inferred
@@ -34,7 +34,7 @@ evidence:
     source: {video_id: leQBUn8-4tw, start_ms: 278600, end_ms: 292900, url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=278s", segment_ids: ["leQBUn8-4tw:00060", "leQBUn8-4tw:00061", "leQBUn8-4tw:00062"]}
   - id: global-follow-up-pressure-4
     evidence_type: explanation
-    excerpt: What they really fear is your follow-up attack.
+    excerpt: The main threat is the attack that follows the serve.
     reason: Explains the tactical pressure created by a planned next ball.
     confidence: 0.98
     visual_status: transcript_inferred
@@ -42,7 +42,7 @@ evidence:
     source: {video_id: leQBUn8-4tw, start_ms: 292900, end_ms: 301266, url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=292s", segment_ids: ["leQBUn8-4tw:00063", "leQBUn8-4tw:00064"]}
   - id: global-third-ball-example-5
     evidence_type: example
-    excerpt: After your serve, look for a weak return to set up a powerful third-ball attack.
+    excerpt: Use a weak return after the serve as the opening for the third-ball attack.
     reason: A second Global TT Studio video states the complete pattern in one clip.
     confidence: 0.98
     visual_status: transcript_inferred
@@ -141,4 +141,25 @@ evidence:
       url: https://www.youtube.com/watch?v=XfWXrGTlW5M&t=393s
       segment_ids:
         - XfWXrGTlW5M:00091
+  - id: XlGnK1z_7C0-concept-short-serve-third-ball-attack-reviewed
+    evidence_type: explanation
+    excerpt: Serving short, usually with backspin or deception, to provoke a predictable return that can be attacked on the third ball.
+    reason: The speaker gives a concrete example of a short backspin serve that most opponents push back, creating a ready-made third-ball loop or attack.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: XlGnK1z_7C0
+      start_ms: 69960
+      end_ms: 90320
+      url: https://www.youtube.com/watch?v=XlGnK1z_7C0&t=69s
+      segment_ids:
+        - XlGnK1z_7C0:00030
+        - XlGnK1z_7C0:00031
+        - XlGnK1z_7C0:00032
+        - XlGnK1z_7C0:00033
+        - XlGnK1z_7C0:00034
+        - XlGnK1z_7C0:00035
+        - XlGnK1z_7C0:00036
+        - XlGnK1z_7C0:00037
 relations: []

@@ -9,6 +9,8 @@
 - Keep the spoken claim window separate from the visual demonstration window. Transcript-inferred evidence must never silently become a loopable visual example.
 - Treat candidate uncertainty literally. One candidate admitted that it inferred segment numbering and produced nonexistent IDs; exclude those IDs and publish only independently present transcript segments.
 - Audit public excerpts against their cited transcript segments before broad publication. Exact and near-verbatim matches need rephrasing or explicit, short quotation treatment, while the surrounding editorial reason should remain original.
+- When rephrasing audited excerpts, change only the public editorial wording and preserve segment IDs, timestamps, evidence type, confidence, visual status, reasons, and provenance so every claim remains traceable.
+- Automatic LLM editorial transforms should be explicitly gated at publish time, schema-constrained, overlap-checked after generation, and fail closed; this keeps CI deterministic while making the local operator workflow repeatable.
 - Keep the prioritized backlog as the planning source of truth. Dated review reports explain findings, but actionable work also needs a priority, status, dependency, and acceptance criterion in `docs/prioritized-backlog-2026-07-15.md`.
 
 ## Batch processing
@@ -39,3 +41,6 @@
 - Round-trip YAML can emit trailing spaces and unquoted flow-style segment IDs. Run parsing, validation, and `git diff --check` after bulk content transformations.
 - Always cap caption-derived end times to the video duration because the final caption can slightly exceed container metadata.
 - Do not translate “not fast” into an explicit `flex` override without checking endpoint support. For the current Codex extraction path, omitting the service-tier setting is the compatible normal/default behavior.
+- Treat public-project precedent research as two separate checks: copyright outcomes for similar uses and the source platform’s contract/API rules. A favorable indexing case does not authorize scraping or public full-copy storage.
+- Conservative pending-candidate triage needs deterministic evidence-ID suffixes when one candidate appears in multiple distinct moments, and inferred citation ends must be capped to the source video duration before validation.
+- Responsive rules for nested evidence layouts should use the manuscript/container width as well as viewport breakpoints; browser zoom and split panels can make a wide viewport contain a narrow content column.

@@ -131,7 +131,7 @@ A change is complete only when its claims are source-grounded, visual windows ar
 ## SHORTCUT PROMPTS
 ### Common
 - "c" continue
-- "cp" continue processing the videos
+- "cp" continue processing the videos: first drain eligible cached transcripts/candidates; if no local work remains, select and ingest the next controlled batch from configured discovery catalogs, subject to backlog priority, source-policy checks, pacing, and the block circuit breaker. Do not start a large scrape while a backlog gate still defers expansion.
 - "u" update docs, including the session log, and notes; start with checking the current date and time
 - "rlc" - review local changes
 - "cm" - provide a commit message for the local changes, list features and state them in past tense as what was done
@@ -152,4 +152,3 @@ A change is complete only when its claims are source-grounded, visual windows ar
 - **Before making code changes check the session log** in many cases the process is going around in cirles, you should be aware of this
 - **Whenevery you find code that could be made more efficient, duplicate code refactored into common methods, etc, make a note in a refactorings.md file**
 - **Make notes for yourself in a session notes file** with the current date and hour in the file name and session notes in the file name.
-

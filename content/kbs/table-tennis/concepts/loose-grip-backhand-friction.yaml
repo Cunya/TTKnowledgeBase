@@ -11,7 +11,7 @@ review_status: approved
 evidence:
   - id: loose-web-grip-1
     evidence_type: demonstration
-    excerpt: The space between thumb and index finger is practically open. Then I whip through.
+    excerpt: Keep a small opening between thumb and index so the racket can whip through contact.
     reason: Shows how localized grip relaxation permits racket acceleration.
     confidence: 0.98
     visual_status: transcript_inferred
@@ -19,7 +19,7 @@ evidence:
     source: {video_id: BToLYdKLIMM, start_ms: 275440, end_ms: 286320, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=275s", segment_ids: ["BToLYdKLIMM:00098", "BToLYdKLIMM:00099", "BToLYdKLIMM:00100"]}
   - id: tight-grip-less-friction-2
     evidence_type: explanation
-    excerpt: The tighter I hold, the less friction I can generate. The looser I hold, the more friction I create.
+    excerpt: Excess grip tension reduces the friction available at contact; a relaxed grip allows more brushing.
     reason: States the grip-tension relationship directly.
     confidence: 0.99
     visual_status: transcript_inferred
@@ -35,7 +35,7 @@ evidence:
     source: {video_id: 3kC8KEl3iow, start_ms: 147720, end_ms: 156760, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=147s", segment_ids: ["3kC8KEl3iow:00055", "3kC8KEl3iow:00056", "3kC8KEl3iow:00057", "3kC8KEl3iow:00058"]}
   - id: racket-head-spin-4
     evidence_type: explanation
-    excerpt: The faster the racket head rotates, the spinnier the ball.
+    excerpt: More racket-head rotation generally produces a spinnier contact.
     reason: A third video isolates racket-head rotational speed as the spin generator.
     confidence: 0.99
     visual_status: transcript_inferred
@@ -43,7 +43,7 @@ evidence:
     source: {video_id: csJgHR7Daog, start_ms: 261799, end_ms: 275240, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=261s", segment_ids: ["csJgHR7Daog:00122", "csJgHR7Daog:00123", "csJgHR7Daog:00124", "csJgHR7Daog:00125", "csJgHR7Daog:00126"]}
   - id: under-ball-backspin-5
     evidence_type: example
-    excerpt: To create spin, you must be under the ball. Bottom contact, maximum spin.
+    excerpt: Get underneath the ball at contact so the racket can grip it and increase spin.
     reason: Shows that racket speed must be paired with the correct contact region.
     confidence: 0.99
     visual_status: transcript_inferred
@@ -218,6 +218,66 @@ evidence:
       segment_ids:
         - q9c2_hCwlhs:00206
         - q9c2_hCwlhs:00208
+  - id: D9ZAPb_65Hk-concept-loose-grip-backhand-friction-reviewed
+    evidence_type: explanation
+    excerpt: Creating spin by a quick racket-head snap and brushing contact rather than sweeping the whole arm.
+    reason: The speaker says spin comes from one snap and not from using the whole arm for up-and-down friction.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: D9ZAPb_65Hk
+      start_ms: 576320
+      end_ms: 590160
+      url: https://www.youtube.com/watch?v=D9ZAPb_65Hk&t=576s
+      segment_ids:
+        - D9ZAPb_65Hk:00197
+        - D9ZAPb_65Hk:00198
+        - D9ZAPb_65Hk:00199
+        - D9ZAPb_65Hk:00200
+        - D9ZAPb_65Hk:00201
+  - id: lO0H9Cs6JEo-concept-loose-grip-backhand-friction-reviewed
+    evidence_type: definition
+    excerpt: Producing spin by brushing the ball with friction and proper racket-head rotation rather than colliding with the ball.
+    reason: The speaker emphasizes compact motion with friction, warns against colliding with the ball, and defines acceleration as faster brushing with solid contact.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: lO0H9Cs6JEo
+      start_ms: 637960
+      end_ms: 666760
+      url: https://www.youtube.com/watch?v=lO0H9Cs6JEo&t=637s
+      segment_ids:
+        - lO0H9Cs6JEo:00206
+        - lO0H9Cs6JEo:00209
+        - lO0H9Cs6JEo:00212
+        - lO0H9Cs6JEo:00216
+  - id: ONXmZHozLTA-concept-loose-grip-backhand-friction-reviewed
+    evidence_type: explanation
+    excerpt: Create spin by keeping the hand relaxed, using finger-driven racket-head acceleration, and making effective brushing contact at the ball.
+    reason: The speaker repeatedly states that spin comes from finger activation, not gripping hard or using the wrist, and that soft touch plus quick acceleration creates spin.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ONXmZHozLTA
+      start_ms: 146000
+      end_ms: 175240
+      url: https://www.youtube.com/watch?v=ONXmZHozLTA&t=146s
+      segment_ids:
+        - ONXmZHozLTA:00051
+        - ONXmZHozLTA:00052
+        - ONXmZHozLTA:00053
+        - ONXmZHozLTA:00054
+        - ONXmZHozLTA:00055
+        - ONXmZHozLTA:00056
+        - ONXmZHozLTA:00057
+        - ONXmZHozLTA:00058
+        - ONXmZHozLTA:00059
+        - ONXmZHozLTA:00060
+        - ONXmZHozLTA:00061
+        - ONXmZHozLTA:00062
 relations:
   - relation_type: used_with
     target_concept_id: concept-backspin-serve-under-ball-contact

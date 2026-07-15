@@ -1,6 +1,6 @@
 # Source video progress
 
-Last updated: 2026-07-15 00:56 EEST
+Last updated: 2026-07-15 13:01 EEST
 
 This document tracks how far videos from each configured source have progressed through discovery, transcript ingestion, Codex extraction, editorial review, and publication. Counts are derived from the current local processing data and sanitized published corpus.
 
@@ -21,9 +21,9 @@ This document tracks how far videos from each configured source have progressed 
 
 | Source | Trustworthy discovered total | Configured | Eligible | Ingested | Extracted | Fully reviewed | Published | Accepted candidates | Rejected | Evidence moments | Concepts supported | Proposed visuals | Verified visuals |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| TT SpinMaster / `@FreeCoachBradHan` | 304 | 51 | 51 | 51 | 51 | 33 | 41 | 348 accepted / 174 pending | 0 | 887 | 70 | 19 | 0 |
+| TT SpinMaster / `@FreeCoachBradHan` | 304 | 59 | 59 | 59 | 59 | 40 | 59 | 551 accepted / 41 deferred | 0 | 1,090 | 72 | 19 | 0 |
 | GlobalTTStudio / `@GlobalTTStudio` | 418 | 11 | 9 | 9 | 9 | 9 | 9 | 102 | 1 | 231 | 33 | 16 | 0 |
-| **Total configured** | — | **62** | **60** | **60** | **60** | **42** | **50** | **450 accepted / 174 pending** | **1** | **1,118** | **73 unique overall** | **35** | **0** |
+| **Total configured** | — | **70** | **68** | **68** | **68** | **49** | **68** | **653 accepted / 41 deferred** | **1** | **1,321** | **73 unique overall** | **35** | **0** |
 
 Concept counts overlap across sources: a concept supported by both channels is counted once in each source row, so the source rows must not be added to obtain the 73 unique concepts.
 
@@ -32,11 +32,11 @@ Concept counts overlap across sources: a concept supported by both channels is c
 ### TT SpinMaster / Free Coach Brad Han
 
 - Channel catalog captured: 304 videos.
-- Configured corpus: 51 videos, or about 16.8% of the captured catalog.
-- Ingestion completion: 51 of 51 eligible videos are ingested.
-- Downstream completion: all 51 selected videos are extracted; 41 are published and 33 are fully reviewed, while 10 newly extracted videos remain in review.
-- Remaining discovered catalog: 253 videos have not been selected for this KB yet.
-- Editorial state: 348 candidates are accepted and 174 candidates are pending; none are rejected for this source.
+- Configured corpus: 59 videos, or about 19.4% of the captured catalog.
+- Ingestion completion: 59 of 59 eligible videos are ingested.
+- Downstream completion: all 59 selected videos are extracted and published; 40 are fully reviewed, while 19 videos retain explicitly deferred candidates for later taxonomy/weak-match review.
+- Remaining discovered catalog: 245 videos have not been selected for this KB yet.
+- Editorial state: 551 candidates are accepted, 41 are explicitly deferred, and none are rejected for this source.
 - Visual state: 19 proposed nearby visual windows exist, but none has been manually verified. They are non-looping on the public site.
 
 The 271-video remainder is a discovery backlog, not an automatic processing queue. Videos should be selected for missing concepts, second-source support, or visual demonstrations instead of processed only to increase volume.
@@ -54,7 +54,7 @@ The 271-video remainder is a discovery backlog, not an automatic processing queu
 
 ## Configured video state by source
 
-### TT SpinMaster / Free Coach Brad Han — 51 extracted, 41 published, 18 in review
+### TT SpinMaster / Free Coach Brad Han — 59 extracted, 59 published, 19 with deferred candidates
 
 The first 33 videos below are in the completed state **ingested → extracted → reviewed → published**. Each of the final 8 has one reviewed evidence addition and is now published, but its remaining candidates still await editorial review.
 
@@ -101,6 +101,14 @@ The first 33 videos below are in the completed state **ingested → extracted �
 | `5JzSUTg_ojc` | **Published / review pending:** backhand receive framework |
 | `lO0H9Cs6JEo` | **Published / review pending:** looping and receiving heavy backspin |
 | `StQ86EhPFpo` | **Published / review pending:** forehand push flick against short serves |
+| `15KzTMIx65s` | **Published / review pending:** power conditions and swing selection |
+| `8pUgdfqXPj4` | **Published / review pending:** stroke-feel and body-position correction |
+| `8yuRXgTWOxc` | **Published / review pending:** backspin-loop positioning and power transfer |
+| `-1uBDv1Aq7A` | **Published / review pending:** receiving side spin |
+| `SF0Sv2ZzrRI` | **Published / review pending:** vertical push against backspin |
+| `_biE-Dzy0aM` | **Published / review pending:** adding power without misses |
+| `XlGnK1z_7C0` | **Published / review pending:** serve-loop-smash point pattern |
+| `ONXmZHozLTA` | **Published / review pending:** acceleration for heavy-spin loops |
 
 ### GlobalTTStudio — 9 published, 2 inaccessible
 
@@ -122,17 +130,17 @@ The first 33 videos below are in the completed state **ingested → extracted �
 
 | Work item | Count | Recommended action |
 |---|---:|---|
-| Pending extracted candidates | 174 | Review exact transcript evidence, merge into durable concepts, and reject duplicates or weak proposals. |
+| Deferred extracted candidates | 41 | Review taxonomy proposals and weak matches before another expansion pass. |
 | Proposed visual intervals requiring viewing | 35 | Watch the complete intervals and mark only genuine demonstrations as `manual_review` / `verified_visual_demo`. |
-| Single-source concepts | 19 | Select videos that add an independent supporting source rather than more moments from the same lesson. |
-| Published videos with remaining review backlog | 18 | Continue reviewing the 174 candidates; publication currently includes only the incorporated evidence. |
+| Single-source concepts | 9 | Select videos that add an independent supporting source rather than more moments from the same lesson. |
+| Published videos with remaining review backlog | 19 | Resolve deferred candidates; publication currently includes only incorporated evidence. |
 | Members-only configured videos | 2 | Leave unprocessed unless access and processing rights are explicitly available. |
-| Unselected TT SpinMaster discoveries | 253 | Curate by coverage gap; do not bulk-ingest automatically. |
+| Unselected TT SpinMaster discoveries | 245 | Curate by coverage gap; do not bulk-ingest automatically. |
 | Unselected GlobalTTStudio discoveries | 407 | Curate by missing topic, independent support, or useful visual demonstration. |
 
-Latest ingestion attempt: after changing network route on 2026-07-15, one deliberate retry and seven conservatively paced follow-up videos succeeded. Eight videos entered the ingested state without another HTTP 429.
+Latest ingestion attempt: on 2026-07-15, one conservatively paced eight-video follow-up batch from the existing TT SpinMaster catalog succeeded. Eight videos entered the ingested state without an HTTP 429 or retry cooldown.
 
-Latest extraction batch: ten additional cached transcripts completed with `gpt-5.4-mini` at low reasoning, producing 106 new schema-validated candidates. They remain private for review; no candidates were bulk-published. No fast/flex tier or automatic stronger-model escalation was used.
+Latest extraction batch: eight newly ingested transcripts completed sequentially with `gpt-5.4-mini` at low reasoning, producing schema-validated candidates. The subsequent pending pass accepted 57 high-confidence candidates, added 57 focused evidence moments, and deferred 13 weak or new-taxonomy proposals. No fast/flex tier or automatic stronger-model escalation was used.
 
 ## Refresh procedure
 

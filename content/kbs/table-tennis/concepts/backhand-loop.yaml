@@ -132,6 +132,45 @@ evidence:
     visual_status: transcript_inferred
     review_status: approved
     source: {video_id: A4-lKRVwSFc, start_ms: 353000, end_ms: 358080, url: "https://www.youtube.com/watch?v=A4-lKRVwSFc&t=353s", segment_ids: ["A4-lKRVwSFc:00134"]}
+  - id: bKtA240EvTQ-concept-backhand-loop-reviewed
+    evidence_type: explanation
+    excerpt: A backhand topspin stroke performed with a compact, brush-oriented action and body-body coordination.
+    reason: The coach repeatedly discusses looping on the backhand side, including opening the racket angle, brushing, and coordinating body movement.
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: bKtA240EvTQ
+      start_ms: 383520
+      end_ms: 408919
+      url: https://www.youtube.com/watch?v=bKtA240EvTQ&t=383s
+      segment_ids:
+        - bKtA240EvTQ:00136
+        - bKtA240EvTQ:00140
+        - bKtA240EvTQ:00143
+        - bKtA240EvTQ:00144
+  - id: UCyUdarqdJc-concept-backhand-loop-reviewed
+    evidence_type: explanation
+    excerpt: A topspin loop executed on the backhand side, with timing and spacing keyed to the body and incoming ball height.
+    reason: The speaker introduces backhand topspin and describes the spacing and timing needed for the loop.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: UCyUdarqdJc
+      start_ms: 259320
+      end_ms: 288160
+      url: https://www.youtube.com/watch?v=UCyUdarqdJc&t=259s
+      segment_ids:
+        - UCyUdarqdJc:00102
+        - UCyUdarqdJc:00103
+        - UCyUdarqdJc:00104
+        - UCyUdarqdJc:00105
+        - UCyUdarqdJc:00106
+        - UCyUdarqdJc:00107
+        - UCyUdarqdJc:00108
+        - UCyUdarqdJc:00109
+        - UCyUdarqdJc:00110
 relations:
   - relation_type: used_with
     target_concept_id: concept-backhand-topspin-body-coordination

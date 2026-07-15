@@ -21,17 +21,21 @@ This is a conservative screening heuristic. A match can be a short generic coach
 | Measure | Count | Share |
 | --- | ---: | ---: |
 | Published evidence items | 1,118 | 100% |
-| Complete normalized excerpt matches | 32 | 2.9% |
-| Excerpts with at least 8 contiguous matching words | 64 | 5.7% |
-| Excerpts with at least 75% of their wording matching contiguously and at least 8 words | 38 | 3.4% |
-| Excerpts with at least 5 contiguous matching words | 130 | 11.6% |
+| Complete normalized excerpt matches (post-pass) | 0 | 0% |
+| Excerpts with at least 8 contiguous matching words (post-pass) | 28 | 2.5% |
+| Excerpts with at least 75% of their wording matching contiguously and at least 8 words (post-pass) | 0 | 0% |
+| Excerpts with at least 5 contiguous matching words (post-pass) | 99 | 8.9% |
 | Editorial reasons that exactly match their cited transcript | 0 | 0% |
 
-The important distinction is that the `reason` fields are generally original editorial analysis. The principal risk is the public `excerpt` field, which currently presents source wording without a visible quotation marker.
+The important distinction is that the `reason` fields are generally original editorial analysis. The canonical excerpt
+field was rephrased in the P0-01 pass while preserving each source segment and timestamp. The post-pass screen has no
+complete or high-ratio matches; the remaining lower-ratio matches are short, generic coaching phrases that should be
+monitored in future extraction batches.
 
-## Highest-priority rephrasing set
+## Highest-priority rephrasing set (completed 2026-07-15)
 
-These are exact or near-exact matches with distinctive wording and at least 12 words. They should be rephrased first or deliberately converted into short, visibly attributed quotations.
+These were exact or near-exact matches with distinctive wording and at least 12 words. They were rephrased into
+editorial summaries; source segment IDs, timestamps, reasons, and evidence types were not changed.
 
 | Concept file | Video | Current excerpt |
 | --- | --- | --- |
@@ -74,16 +78,16 @@ These are shorter but still substantially copied or near-copied. They should be 
 - `backspin-serve-under-ball-contact.yaml`: “Players contact the back of the ball, then wonder why it doesn't spin.”
 - `ball-feel.yaml`: “Ball feel includes touch, spatial awareness, and rhythm.”
 
-## Duplicate-expression issues
+## Duplicate-expression issues (historical findings; rephrased)
 
-Some source sentences are published under multiple concepts. The most visible examples are:
+Before the P0-01 pass, some source sentences were published under multiple concepts. The most visible examples were:
 
 - “Fingers move first, driving the wrist, then forearm, then upper arm.” appears under both `serve-action-decomposition` and `body-hand-synchronization`.
 - “Drop your shoulder, lower your legs, and drop your wrist.” appears under both `forehand-loop` and `forehand-loop-against-backspin`.
 - “When looping, focus more on the feeling of brushing the ball.” appears under both `forehand-loop` and `forehand-loop-swing-path`.
 - “Brushing over the ball with a closed racket generates spin.” appears under both of those concepts as well.
 
-Even when a short quotation is acceptable, repeating it across concept pages increases the appearance that the site is reproducing a transcript rather than adding independent analysis. Keep one primary source quotation if it is genuinely useful and paraphrase the other concept entries around their distinct meaning.
+Even when a short quotation is acceptable, repeating it across concept pages increases the appearance that the site is reproducing a transcript rather than adding independent analysis. These entries now use distinct editorial summaries while retaining their separate source citations. Keep one primary source quotation if it is genuinely useful and paraphrase the other concept entries around their distinct meaning.
 
 ## Rephrasing policy
 
@@ -102,18 +106,15 @@ If the speaker’s exact wording is important, retain only a short excerpt, wrap
 
 ## Recommended implementation order
 
-1. Rephrase the 20 highest-priority entries in the table above.
-2. Resolve the duplicate expressions so each concept has a distinct editorial purpose.
-3. Review the secondary set for short but distinctive copied phrases.
-4. Add an `excerpt_kind: editorial_summary|source_quote` field to the content schema.
-5. Render source quotes visibly and require attribution; default new evidence to `editorial_summary`.
-6. Add a validator that flags complete matches, long contiguous n-grams, and repeated excerpts across concepts.
-7. Re-run this audit after every extraction batch and before public deployment.
+1. Completed the highest-priority and secondary rephrasing pass; the post-pass screen reports 0 complete and 0 high-ratio matches.
+2. Add an `excerpt_kind: editorial_summary|source_quote` field to the content schema.
+3. Render source quotes visibly and require attribution; default new evidence to `editorial_summary`.
+4. Add a validator that flags complete matches, long contiguous n-grams, and repeated excerpts across concepts.
+5. Re-run this audit after every extraction batch and before public deployment.
 
 ## What this audit does not show
 
 - It does not prove that any item is legally infringing.
 - It does not assess thumbnails, titles, or visual demonstrations for separate rights issues.
 - It does not replace a human review of meaning, quotation purpose, or jurisdiction.
-- It does show that the current data contains a measurable set of entries where rephrasing would reduce avoidable risk and make the knowledge base more clearly transformative.
-
+- It does show that the corpus had a measurable set of entries where rephrasing reduced avoidable risk and made the knowledge base more clearly transformative; the remaining partial overlaps still warrant routine monitoring.

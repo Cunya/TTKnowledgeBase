@@ -15,7 +15,7 @@ review_status: approved
 evidence:
   - id: path-closed-face-global
     evidence_type: demonstration
-    excerpt: Brushing over the ball with a closed racket generates spin.
+    excerpt: Brushing over the ball with a closed racket face is the spin-producing contact action.
     reason: Demonstrates covering the ball rather than brushing vertically.
     confidence: 0.98
     visual_status: transcript_inferred
@@ -33,7 +33,7 @@ evidence:
     source: {video_id: i68OG8UzMyQ, start_ms: 272640, end_ms: 276760, url: "https://www.youtube.com/watch?v=i68OG8UzMyQ&t=272s", segment_ids: ["i68OG8UzMyQ:00092"]}
   - id: path-brushing-feel-spinmaster
     evidence_type: drill
-    excerpt: When looping, focus more on the feeling of brushing the ball.
+    excerpt: During the loop, use the sensation of brushing as the primary technical focus.
     reason: Provides a beginner-friendly way to develop loop contact.
     confidence: 0.97
     visual_status: transcript_inferred
@@ -1767,6 +1767,96 @@ evidence:
         - zd8tcVUWwK4:00019
         - zd8tcVUWwK4:00020
         - zd8tcVUWwK4:00021
+  - id: A4-lKRVwSFc-concept-forehand-loop-swing-path-reviewed
+    evidence_type: explanation
+    excerpt: A forehand loop is built with a closed racket angle and a brushing path that stays compact enough to avoid going long.
+    reason: Speaker explains the backswing angle is too open, then specifies closing it to around 1:30 and warns against overopening or overdoing the motion.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: A4-lKRVwSFc
+      start_ms: 87440
+      end_ms: 107480
+      url: https://www.youtube.com/watch?v=A4-lKRVwSFc&t=87s
+      segment_ids:
+        - A4-lKRVwSFc:00027
+        - A4-lKRVwSFc:00033
+  - id: pE5PLAr9iaA-concept-forehand-loop-swing-path-reviewed
+    evidence_type: explanation
+    excerpt: A looping forehand swing that travels on an arc rather than a straight push, with racket angle and path creating spin and curve.
+    reason: The speaker says generating friction and arc on the loop requires scooping an arc, and contrasts that with a forward push that lacks whip.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: pE5PLAr9iaA
+      start_ms: 309880
+      end_ms: 319560
+      url: https://www.youtube.com/watch?v=pE5PLAr9iaA&t=309s
+      segment_ids:
+        - pE5PLAr9iaA:00099
+        - pE5PLAr9iaA:00100
+        - pE5PLAr9iaA:00101
+        - pE5PLAr9iaA:00102
+        - pE5PLAr9iaA:00103
+  - id: ti_YUZdHu3o-cand-6-reviewed
+    evidence_type: explanation
+    excerpt: Using a controlled forehand loop path with a lower arc and a rotating racket tip to create spin and keep the ball on the table.
+    reason: Racket-tip rotation at contact is given as a key point.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ti_YUZdHu3o
+      start_ms: 444120
+      end_ms: 457040
+      url: https://www.youtube.com/watch?v=ti_YUZdHu3o&t=444s
+      segment_ids:
+        - ti_YUZdHu3o:00148
+        - ti_YUZdHu3o:00149
+        - ti_YUZdHu3o:00150
+        - ti_YUZdHu3o:00151
+        - ti_YUZdHu3o:00152
+  - id: WuN7bP8CIOs-concept-forehand-loop-swing-path-reviewed
+    evidence_type: explanation
+    excerpt: The loop path should drop downward rather than pull straight back, with the racket face adjusted by the wrist to brush and create arc.
+    reason: The speaker says the wrist adjusts racket angle while the loop drops downward and the face brushes.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: WuN7bP8CIOs
+      start_ms: 447880
+      end_ms: 470160
+      url: https://www.youtube.com/watch?v=WuN7bP8CIOs&t=447s
+      segment_ids:
+        - WuN7bP8CIOs:00197
+        - WuN7bP8CIOs:00205
+  - id: ONXmZHozLTA-concept-forehand-loop-swing-path-reviewed
+    evidence_type: explanation
+    excerpt: The loop should travel in an arc or circle around the ball rather than a right angle or straight push, so the ball can clear the net and dip onto the table.
+    reason: The speaker describes the loop as a circular/arc motion and warns against turning it into a right angle or forward push.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ONXmZHozLTA
+      start_ms: 454160
+      end_ms: 482880
+      url: https://www.youtube.com/watch?v=ONXmZHozLTA&t=454s
+      segment_ids:
+        - ONXmZHozLTA:00167
+        - ONXmZHozLTA:00168
+        - ONXmZHozLTA:00169
+        - ONXmZHozLTA:00170
+        - ONXmZHozLTA:00171
+        - ONXmZHozLTA:00172
+        - ONXmZHozLTA:00173
+        - ONXmZHozLTA:00174
+        - ONXmZHozLTA:00175
+        - ONXmZHozLTA:00176
+        - ONXmZHozLTA:00177
 relations:
   - relation_type: part_of
     target_concept_id: concept-forehand-loop

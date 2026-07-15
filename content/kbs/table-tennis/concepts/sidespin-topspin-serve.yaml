@@ -235,6 +235,40 @@ evidence:
         - q7kEYGprLYo:00178
         - q7kEYGprLYo:00179
         - q7kEYGprLYo:00180
+  - id: 9OxcCPWI-k8-concept-sidespin-topspin-serve-reviewed
+    evidence_type: definition
+    excerpt: A serve that combines sidespin with topspin, typically using a more upright racket angle and a fuller brushing-through action.
+    reason: The speaker repeatedly names the serve as sidespin with topspin and describes the associated racket angle and brushing-through motion.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 9OxcCPWI-k8
+      start_ms: 210633
+      end_ms: 237733
+      url: https://www.youtube.com/watch?v=9OxcCPWI-k8&t=210s
+      segment_ids:
+        - 9OxcCPWI-k8:00066
+        - 9OxcCPWI-k8:00068
+        - 9OxcCPWI-k8:00069
+        - 9OxcCPWI-k8:00070
+        - 9OxcCPWI-k8:00072
+        - 9OxcCPWI-k8:00074
+  - id: SF0Sv2ZzrRI-concept-sidespin-topspin-serve-reviewed
+    evidence_type: example
+    excerpt: A serve that combines sidespin and topspin, used to vary spin and create handling problems for the receiver.
+    reason: The speaker directly names a side spin top spin serve as a receive example.
+    confidence: 0.92
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: SF0Sv2ZzrRI
+      start_ms: 284800
+      end_ms: 291280
+      url: https://www.youtube.com/watch?v=SF0Sv2ZzrRI&t=284s
+      segment_ids:
+        - SF0Sv2ZzrRI:00085
+        - SF0Sv2ZzrRI:00086
 relations:
   - relation_type: used_with
     target_concept_id: concept-short-serve-third-ball-attack

@@ -40,10 +40,20 @@ Do not mark a queue item accepted merely because it resembles an existing concep
 
 When adding candidates from newly processed videos, `build-review-queue` regenerates deterministic candidate content while preserving existing decisions, canonical mappings, and review notes by video and candidate ID. Review the diff after a rebuild, especially if extraction was rerun and candidate IDs may have changed.
 
+For a cached review batch, use the conservative P1-02 triage command before scraping anything else:
+
+```powershell
+python -m processors.cli process-pending --kb table-tennis
+```
+
+It incorporates only high-confidence matches to existing concepts as one focused transcript moment. New taxonomy proposals, weak matches, and invalid spans are marked `deferred` with a reason; the command never creates a new public concept automatically. Review deferred items before the next expansion pass.
+
+The `cp` shortcut follows the same order: finish eligible cached transcripts and candidates first; when no local work remains, continue with the next small, controlled discovery/ingestion batch. It must still obey the prioritized backlog, acquisition-policy checks, pacing limits, and block circuit breaker. A cleared local queue does not authorize bypassing an active “no large scrape” gate.
+
 ## 5. Publish and verify
 
 ```powershell
-python -m processors.cli publish
+python -m processors.cli publish --auto-rephrase-high-overlap
 python -m processors.cli validate
 python -m processors.cli validate-published
 python -m processors.cli report-quality --output docs/quality-report-table-tennis.json --markdown-output docs/quality-report-table-tennis.md

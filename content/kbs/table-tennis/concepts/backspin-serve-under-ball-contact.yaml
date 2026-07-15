@@ -10,7 +10,7 @@ review_status: approved
 evidence:
   - id: backspin-wrong-contact-1
     evidence_type: mistake
-    excerpt: Players contact the back of the ball, then wonder why it doesn't spin.
+    excerpt: Contacting the ball from behind without getting underneath it is a common reason the backspin fails.
     reason: Identifies the common contact-location error.
     confidence: 0.99
     visual_status: transcript_inferred
@@ -18,7 +18,7 @@ evidence:
     source: {video_id: csJgHR7Daog, start_ms: 523840, end_ms: 531400, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=523s", segment_ids: ["csJgHR7Daog:00226", "csJgHR7Daog:00227", "csJgHR7Daog:00228", "csJgHR7Daog:00229"]}
   - id: backspin-under-ball-2
     evidence_type: correction
-    excerpt: To create spin, you must be under the ball. That's how it grips.
+    excerpt: Move the racket under the ball so the contact can grip it and create spin.
     reason: Corrects the contact location.
     confidence: 0.99
     visual_status: transcript_inferred
@@ -26,12 +26,61 @@ evidence:
     source: {video_id: csJgHR7Daog, start_ms: 533360, end_ms: 538600, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=533s", segment_ids: ["csJgHR7Daog:00230", "csJgHR7Daog:00231"]}
   - id: backspin-contact-zones-3
     evidence_type: demonstration
-    excerpt: Bottom contact, maximum spin. Middle-lower, strong spin.
+    excerpt: The lowest contact zone gives the strongest backspin, while a middle-lower contact gives a slightly milder result.
     reason: Compares two useful under-ball contact regions.
     confidence: 0.99
     visual_status: transcript_inferred
     review_status: approved
     source: {video_id: csJgHR7Daog, start_ms: 541520, end_ms: 549520, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=541s", segment_ids: ["csJgHR7Daog:00232", "csJgHR7Daog:00233"]}
+  - id: Jjd8Mu1s0S0-concept-backspin-serve-under-ball-contact-reviewed
+    evidence_type: definition
+    excerpt: To create strong backspin, the ball must be contacted on the lower half of the racket face, with the racket positioned high enough to strike upward into the ball rather than underneath it too late.
+    reason: The speaker explicitly says the ball should be placed on the lower half of the racket when brushing.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Jjd8Mu1s0S0
+      start_ms: 21640
+      end_ms: 28480
+      url: https://www.youtube.com/watch?v=Jjd8Mu1s0S0&t=21s
+      segment_ids:
+        - Jjd8Mu1s0S0:00007
+        - Jjd8Mu1s0S0:00008
+        - Jjd8Mu1s0S0:00009
+  - id: pE5PLAr9iaA-concept-backspin-serve-under-ball-contact-reviewed
+    evidence_type: explanation
+    excerpt: Contacting the lower part of the ball to produce backspin on serve and avoid popping the ball up.
+    reason: The speaker explains that upper-half contact pops the ball up while lower-half contact grips and lands, describing the mechanics of heavy backspin contact.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: pE5PLAr9iaA
+      start_ms: 490840
+      end_ms: 505960
+      url: https://www.youtube.com/watch?v=pE5PLAr9iaA&t=490s
+      segment_ids:
+        - pE5PLAr9iaA:00161
+        - pE5PLAr9iaA:00162
+        - pE5PLAr9iaA:00163
+        - pE5PLAr9iaA:00164
+        - pE5PLAr9iaA:00165
+  - id: StQ86EhPFpo-concept-backspin-serve-under-ball-contact-reviewed
+    evidence_type: definition
+    excerpt: Contacting the lower half of the ball to produce heavier backspin on a push or similar short-table stroke.
+    reason: The speaker says to brush under the ball to increase spin and contact the lower half of the ball.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: StQ86EhPFpo
+      start_ms: 60920
+      end_ms: 68480
+      url: https://www.youtube.com/watch?v=StQ86EhPFpo&t=60s
+      segment_ids:
+        - StQ86EhPFpo:00026
+        - StQ86EhPFpo:00027
 relations:
   - relation_type: used_with
     target_concept_id: concept-loose-grip-backhand-friction

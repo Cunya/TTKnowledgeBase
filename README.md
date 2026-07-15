@@ -2,7 +2,7 @@
 
 A source-grounded, concept-first platform for multiple independent knowledge bases generated from timestamped YouTube transcripts. The first configured KB covers table tennis. The MVP uses local Python processors and Codex CLI for structured extraction, then publishes a static Astro site to GitHub Pages.
 
-The current published table-tennis corpus contains 73 approved concepts, 50 supporting videos, and 1,118 evidence moments. The review queue contains 450 accepted, 68 pending, and 1 rejected candidate. Every concept participates in the semantic relation graph. Spoken evidence is limited to focused 30-second windows; accepted candidates must be traceable to exact segment IDs in canonical content. Proposed visual clips remain non-looping until they are manually verified.
+The current published table-tennis corpus contains 73 approved concepts, 68 supporting videos, and 1,321 evidence moments. The review queue contains 653 accepted, 41 explicitly deferred, and 1 rejected candidate. Every concept participates in the semantic relation graph. Spoken evidence is limited to focused 30-second windows; accepted candidates must be traceable to exact segment IDs in canonical content. Proposed visual clips remain non-looping until they are manually verified.
 
 ## Quick start
 

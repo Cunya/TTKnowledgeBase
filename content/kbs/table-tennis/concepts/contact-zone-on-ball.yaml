@@ -35,7 +35,7 @@ evidence:
     source: {video_id: csJgHR7Daog, start_ms: 514520, end_ms: 520520, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=514s", segment_ids: ["csJgHR7Daog:00221", "csJgHR7Daog:00222"]}
   - id: vertical-contact-zone-scale-2
     evidence_type: explanation
-    excerpt: Bottom contact gives maximum spin; middle-lower gives strong spin; middle or upper gives minimum spin.
+    excerpt: Use the lower contact zones for more spin; moving toward the middle or upper surface reduces the spin effect.
     reason: Provides a compact vertical scale for comparing contact regions on the ball.
     confidence: 0.99
     visual_status: not_visual
@@ -618,6 +618,73 @@ evidence:
         - zd8tcVUWwK4:00183
         - zd8tcVUWwK4:00184
         - zd8tcVUWwK4:00185
+  - id: A4-lKRVwSFc-concept-contact-zone-on-ball-reviewed
+    evidence_type: explanation
+    excerpt: The part of the ball you brush or strike to produce the desired spin and trajectory.
+    reason: Speaker identifies the upper-middle part of the ball as the intended brushing zone and contrasts it with incorrect contact on the back of the ball.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: A4-lKRVwSFc
+      start_ms: 209600
+      end_ms: 220480
+      url: https://www.youtube.com/watch?v=A4-lKRVwSFc&t=209s
+      segment_ids:
+        - A4-lKRVwSFc:00078
+        - A4-lKRVwSFc:00079
+  - id: pE5PLAr9iaA-concept-contact-zone-on-ball-reviewed
+    evidence_type: explanation
+    excerpt: The specific region of the ball you strike, which affects spin, speed, and landing quality.
+    reason: The speaker compares lower-half and upper-half contact on the racket and explains the resulting differences in spin, kick, and speed, which directly grounds contact-zone concepts.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: pE5PLAr9iaA
+      start_ms: 438160
+      end_ms: 461720
+      url: https://www.youtube.com/watch?v=pE5PLAr9iaA&t=438s
+      segment_ids:
+        - pE5PLAr9iaA:00143
+        - pE5PLAr9iaA:00144
+        - pE5PLAr9iaA:00146
+        - pE5PLAr9iaA:00147
+        - pE5PLAr9iaA:00149
+        - pE5PLAr9iaA:00150
+  - id: UCyUdarqdJc-concept-contact-zone-on-ball-reviewed
+    evidence_type: explanation
+    excerpt: The usable region on the ball for meeting it consistently, which varies by stroke and incoming ball type.
+    reason: The speaker gives different spatial references for backhand and forehand contact, including one racket length, one palm, belly, knee, and right front of the body.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: UCyUdarqdJc
+      start_ms: 259320
+      end_ms: 288160
+      url: https://www.youtube.com/watch?v=UCyUdarqdJc&t=259s
+      segment_ids:
+        - UCyUdarqdJc:00102
+        - UCyUdarqdJc:00103
+        - UCyUdarqdJc:00108
+        - UCyUdarqdJc:00109
+        - UCyUdarqdJc:00110
+  - id: SF0Sv2ZzrRI-concept-contact-zone-on-ball-reviewed
+    evidence_type: explanation
+    excerpt: The region on the ball you should strike, such as lower-middle, behind, under, or side contact depending on the shot.
+    reason: The speaker mentions contacting behind or under the ball and contacting the lower-middle part of the ball.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: SF0Sv2ZzrRI
+      start_ms: 104640
+      end_ms: 121240
+      url: https://www.youtube.com/watch?v=SF0Sv2ZzrRI&t=104s
+      segment_ids:
+        - SF0Sv2ZzrRI:00034
+        - SF0Sv2ZzrRI:00036
 relations:
   - relation_type: related_to
     target_concept_id: concept-contact-point

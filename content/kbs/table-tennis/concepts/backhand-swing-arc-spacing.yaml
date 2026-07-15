@@ -11,7 +11,7 @@ review_status: approved
 evidence:
   - id: spacing-too-close-1
     evidence_type: mistake
-    excerpt: The player stands too close to the ball.
+    excerpt: Standing too close removes the working room needed for a free backhand swing.
     reason: Introduces body-to-ball distance as the cause of the cramped stroke.
     confidence: 0.98
     visual_status: transcript_inferred
@@ -19,7 +19,7 @@ evidence:
     source: {video_id: 3kC8KEl3iow, start_ms: 184120, end_ms: 194120, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=184s", segment_ids: ["3kC8KEl3iow:00068", "3kC8KEl3iow:00069", "3kC8KEl3iow:00070"]}
   - id: spacing-cramped-push-2
     evidence_type: mistake
-    excerpt: There's no space between hand and ball, so all the player can do is push forward from the chest.
+    excerpt: With too little room between hand and ball, the stroke collapses into a chest-driven push.
     reason: Shows the mechanical consequence of insufficient working room.
     confidence: 0.99
     visual_status: transcript_inferred
@@ -168,6 +168,61 @@ evidence:
       url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=281s
       segment_ids:
         - q9c2_hCwlhs:00115
+  - id: Aaaxi0DOZzQ-concept-backhand-swing-arc-spacing-reviewed
+    evidence_type: explanation
+    excerpt: Keep the backhand action close enough to the body to generate power and avoid losing consistency.
+    reason: The speaker explicitly says on the backhand you should bring the ball into your body to generate power and that being far from the body gives no power.
+    confidence: 0.86
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Aaaxi0DOZzQ
+      start_ms: 746120
+      end_ms: 766440
+      url: https://www.youtube.com/watch?v=Aaaxi0DOZzQ&t=746s
+      segment_ids:
+        - Aaaxi0DOZzQ:00285
+        - Aaaxi0DOZzQ:00289
+  - id: bKtA240EvTQ-concept-backhand-swing-arc-spacing-reviewed
+    evidence_type: explanation
+    excerpt: Adjusting body position and step size to create enough room for the backhand swing and contact.
+    reason: The speaker explains that short balls require stepping in, long balls require looping while moving back, and the backhand especially needs space and an adjustment step.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: bKtA240EvTQ
+      start_ms: 621720
+      end_ms: 646800
+      url: https://www.youtube.com/watch?v=bKtA240EvTQ&t=621s
+      segment_ids:
+        - bKtA240EvTQ:00230
+        - bKtA240EvTQ:00231
+        - bKtA240EvTQ:00232
+        - bKtA240EvTQ:00233
+        - bKtA240EvTQ:00234
+        - bKtA240EvTQ:00235
+        - bKtA240EvTQ:00236
+        - bKtA240EvTQ:00238
+        - bKtA240EvTQ:00239
+        - bKtA240EvTQ:00240
+  - id: 8pUgdfqXPj4-concept-backhand-swing-arc-spacing-reviewed
+    evidence_type: explanation
+    excerpt: Keeping enough room between the body and the ball so the backhand can accelerate with power instead of being jammed.
+    reason: States that the ball should be brought into the hitting zone but not too close, or there will be no room to generate power.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8pUgdfqXPj4
+      start_ms: 205720
+      end_ms: 223040
+      url: https://www.youtube.com/watch?v=8pUgdfqXPj4&t=205s
+      segment_ids:
+        - 8pUgdfqXPj4:00086
+        - 8pUgdfqXPj4:00087
+        - 8pUgdfqXPj4:00088
+        - 8pUgdfqXPj4:00089
 relations:
   - relation_type: used_with
     target_concept_id: concept-backhand-flick-on-rise

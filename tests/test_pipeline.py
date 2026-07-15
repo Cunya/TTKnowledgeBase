@@ -7,9 +7,12 @@ from processors.models import Concept, KnowledgeNavigation
 from processors.pipeline import (
     build_quality_report,
     build_review_queue,
+    find_high_overlap_excerpts,
     load_reviewed_concepts,
+    longest_contiguous_overlap,
     publish,
     render_quality_report_markdown,
+    rephrase_high_overlap_excerpts,
     validate_corpus,
     validate_navigation,
     validate_published_corpus,
@@ -76,6 +79,46 @@ def test_review_queue_rebuild_preserves_editorial_decisions(tmp_path: Path) -> N
     assert changed_item["decision"] == "pending"
     assert changed_item["canonical_concept_id"] is None
     assert "content changed" in changed_item["review_notes"]
+
+
+def test_high_overlap_rephrase_preserves_source_metadata() -> None:
+    concept = next(
+        concept
+        for concept in demo_concepts()
+        if any("demoTT00001:00000" in item.source.segment_ids for item in concept.evidence)
+    )
+    evidence_index = next(
+        index
+        for index, item in enumerate(concept.evidence)
+        if "demoTT00001:00000" in item.source.segment_ids
+    )
+    evidence = concept.evidence[evidence_index]
+    direct = evidence.model_copy(update={"excerpt": "Start in a balanced ready position."})
+    evidence_items = list(concept.evidence)
+    evidence_items[evidence_index] = direct
+    concept = concept.model_copy(update={"evidence": evidence_items})
+    video = write_demo_video(Path(".pytest_cache") / "rephrase-demo")
+
+    findings = find_high_overlap_excerpts([concept], [video], min_words=5)
+    assert findings and findings[0]["complete_match"] is True
+    assert longest_contiguous_overlap(direct.excerpt, video.transcript.segments[0].text) == 6
+
+    updated, rewritten = rephrase_high_overlap_excerpts(
+        Path("."),
+        [concept],
+        [video],
+        Path("config/processors.yaml"),
+        Path(".pytest_cache"),
+        min_words=5,
+        rephrase=lambda _excerpt, _transcript, _limit: (
+            "Begin in a stable ready stance.",
+            {"model": "test"},
+        ),
+        persist=False,
+    )
+    assert len(rewritten) == 1
+    assert updated[0].evidence[evidence_index].excerpt == "Begin in a stable ready stance."
+    assert updated[0].evidence[evidence_index].source == evidence.source
 
 
 def demo_concepts() -> list[Concept]:

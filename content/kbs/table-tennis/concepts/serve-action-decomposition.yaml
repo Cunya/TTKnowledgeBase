@@ -10,7 +10,7 @@ review_status: approved
 evidence:
   - id: decomposition-principle-1
     evidence_type: explanation
-    excerpt: Spin comes from decomposition—separating your power sources.
+    excerpt: Separating the power sources makes the spin-producing sequence easier to control.
     reason: Introduces the principle.
     confidence: 0.99
     visual_status: transcript_inferred
@@ -18,7 +18,7 @@ evidence:
     source: {video_id: csJgHR7Daog, start_ms: 168000, end_ms: 175360, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=168s", segment_ids: ["csJgHR7Daog:00077", "csJgHR7Daog:00078", "csJgHR7Daog:00079"]}
   - id: decomposition-sequence-2
     evidence_type: demonstration
-    excerpt: Fingers move first, driving the wrist, then forearm, then upper arm.
+    excerpt: Build acceleration as a sequence from the fingers through the wrist and forearm to the upper arm.
     reason: Gives the explicit acceleration sequence.
     confidence: 0.99
     visual_status: transcript_inferred
@@ -62,4 +62,46 @@ evidence:
       segment_ids:
         - "leQBUn8-4tw:00011"
         - "leQBUn8-4tw:00014"
+  - id: 9OxcCPWI-k8-concept-serve-action-decomposition-reviewed
+    evidence_type: explanation
+    excerpt: Breaking the serve into separate action phases such as backswing, contact, wrist drop, and follow-through to control spin and disguise intent.
+    reason: The speaker breaks the serve down into backswing-to-contact mechanics and highlights how the racket head and wrist change through the motion.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 9OxcCPWI-k8
+      start_ms: 126100
+      end_ms: 147933
+      url: https://www.youtube.com/watch?v=9OxcCPWI-k8&t=126s
+      segment_ids:
+        - 9OxcCPWI-k8:00041
+        - 9OxcCPWI-k8:00042
+        - 9OxcCPWI-k8:00045
+        - 9OxcCPWI-k8:00048
+        - 9OxcCPWI-k8:00049
+  - id: Jjd8Mu1s0S0-concept-serve-action-decomposition-reviewed
+    evidence_type: explanation
+    excerpt: Serve power and spin should be built in stages, with a relaxed backswing, a controlled contact, and a sharper release or acceleration afterward.
+    reason: They explicitly recommend a slow backswing and fast release rhythm for serve training.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Jjd8Mu1s0S0
+      start_ms: 622520
+      end_ms: 650920
+      url: https://www.youtube.com/watch?v=Jjd8Mu1s0S0&t=622s
+      segment_ids:
+        - Jjd8Mu1s0S0:00263
+        - Jjd8Mu1s0S0:00264
+        - Jjd8Mu1s0S0:00265
+        - Jjd8Mu1s0S0:00266
+        - Jjd8Mu1s0S0:00267
+        - Jjd8Mu1s0S0:00268
+        - Jjd8Mu1s0S0:00269
+        - Jjd8Mu1s0S0:00270
+        - Jjd8Mu1s0S0:00271
+        - Jjd8Mu1s0S0:00272
+        - Jjd8Mu1s0S0:00273
 relations: []

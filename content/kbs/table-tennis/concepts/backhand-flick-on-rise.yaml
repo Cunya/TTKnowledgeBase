@@ -10,7 +10,7 @@ review_status: approved
 evidence:
   - id: flick-timing-choice-1
     evidence_type: explanation
-    excerpt: Close to the table, take it on the rise or at the peak.
+    excerpt: From close range, take the backhand flick early while the ball is rising or near its peak.
     reason: Frames the two available timing choices.
     confidence: 0.98
     visual_status: transcript_inferred
@@ -18,7 +18,7 @@ evidence:
     source: {video_id: BToLYdKLIMM, start_ms: 414880, end_ms: 424639, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=414s", segment_ids: ["BToLYdKLIMM:00153", "BToLYdKLIMM:00154", "BToLYdKLIMM:00155"]}
   - id: flick-peak-jammed-2
     evidence_type: mistake
-    excerpt: At the peak, after two or three shots, I'm jammed completely.
+    excerpt: Waiting for the bounce apex can leave the player jammed after only a few exchanges.
     reason: Shows the crowding problem created by waiting at close-table distance.
     confidence: 0.98
     visual_status: transcript_inferred
@@ -26,10 +26,27 @@ evidence:
     source: {video_id: BToLYdKLIMM, start_ms: 422479, end_ms: 432080, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=422s", segment_ids: ["BToLYdKLIMM:00156", "BToLYdKLIMM:00157", "BToLYdKLIMM:00158"]}
   - id: flick-rise-solution-3
     evidence_type: correction
-    excerpt: When you're close to the table, your only real choice is to flick on the rise.
+    excerpt: At close-table distance, the practical receive is an early flick taken on the rise.
     reason: States the corrective timing cue.
     confidence: 0.99
     visual_status: transcript_inferred
     review_status: approved
     source: {video_id: BToLYdKLIMM, start_ms: 442240, end_ms: 454520, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=442s", segment_ids: ["BToLYdKLIMM:00163", "BToLYdKLIMM:00164", "BToLYdKLIMM:00165", "BToLYdKLIMM:00166", "BToLYdKLIMM:00167"]}
+  - id: 1fHWnt8IlbI-concept-backhand-flick-on-rise-reviewed
+    evidence_type: example
+    excerpt: Using a backhand flick to attack a half-long ball, especially on the rising ball or before it drops too low.
+    reason: The speaker says backhand half-long is easiest to banana flick and easier than short balls.
+    confidence: 0.91
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 1fHWnt8IlbI
+      start_ms: 17920
+      end_ms: 27120
+      url: https://www.youtube.com/watch?v=1fHWnt8IlbI&t=17s
+      segment_ids:
+        - 1fHWnt8IlbI:00008
+        - 1fHWnt8IlbI:00009
+        - 1fHWnt8IlbI:00010
+        - 1fHWnt8IlbI:00011
 relations: []

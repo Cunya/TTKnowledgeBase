@@ -15,6 +15,7 @@
 - Add explicit validation that source bounds enclose their cited segments, allowing only the documented final-caption/video-duration clamp.
 - Return structured validation findings with severity and item identifiers instead of plain strings.
 - Add navigation diagnostics that distinguish missing placement, valid cross-listing, and accidental duplication.
+- Share the Codex subprocess runner between extraction and excerpt-rephrasing stages if additional structured editorial transforms are added; both currently preserve isolated, schema-constrained execution.
 
 ## Ingestion
 

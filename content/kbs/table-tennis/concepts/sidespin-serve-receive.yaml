@@ -198,6 +198,38 @@ evidence:
       segment_ids:
         - bUCFpvTlaMU:00181
         - bUCFpvTlaMU:00187
+  - id: -1uBDv1Aq7A-concept-sidespin-serve-receive-reviewed
+    evidence_type: explanation
+    excerpt: Adjusting the receive based on whether the serve carries left-side or right-side spin, including using the spin path instead of fighting it.
+    reason: The discussion contrasts hook serve topspin, left-side spin, and right-side spin, and gives receive advice for each.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: -1uBDv1Aq7A
+      start_ms: 20480
+      end_ms: 49640
+      url: https://www.youtube.com/watch?v=-1uBDv1Aq7A&t=20s
+      segment_ids:
+        - -1uBDv1Aq7A:00007
+        - -1uBDv1Aq7A:00008
+        - -1uBDv1Aq7A:00009
+        - -1uBDv1Aq7A:00016
+        - -1uBDv1Aq7A:00017
+  - id: SF0Sv2ZzrRI-concept-sidespin-serve-receive-reviewed
+    evidence_type: explanation
+    excerpt: Receiving serves with left or right sidespin by shifting contact point to match the ball’s drift.
+    reason: The speaker explains that left and right sidespin serves drift to the corresponding side and require contact adjustment.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: SF0Sv2ZzrRI
+      start_ms: 254400
+      end_ms: 259440
+      url: https://www.youtube.com/watch?v=SF0Sv2ZzrRI&t=254s
+      segment_ids:
+        - SF0Sv2ZzrRI:00072
 relations:
   - relation_type: variation_of
     target_concept_id: concept-serve-receive-principles

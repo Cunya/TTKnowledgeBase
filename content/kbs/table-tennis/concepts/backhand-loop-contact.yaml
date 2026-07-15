@@ -102,6 +102,45 @@ evidence:
     visual_status: not_visual
     review_status: approved
     source: {video_id: 5JzSUTg_ojc, start_ms: 546760, end_ms: 565640, url: "https://www.youtube.com/watch?v=5JzSUTg_ojc&t=546s", segment_ids: ["5JzSUTg_ojc:00206", "5JzSUTg_ojc:00207", "5JzSUTg_ojc:00208", "5JzSUTg_ojc:00209", "5JzSUTg_ojc:00210", "5JzSUTg_ojc:00211"]}
+  - id: bKtA240EvTQ-concept-backhand-loop-contact-reviewed
+    evidence_type: explanation
+    excerpt: The contact height, racket angle, and contact quality needed to brush the ball effectively on the backhand loop.
+    reason: The speaker details where to contact the ball on the backhand loop, how open the racket should be, and how to avoid soft contact on side-spin/backspin balls.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: bKtA240EvTQ
+      start_ms: 353240
+      end_ms: 374080
+      url: https://www.youtube.com/watch?v=bKtA240EvTQ&t=353s
+      segment_ids:
+        - bKtA240EvTQ:00123
+        - bKtA240EvTQ:00124
+        - bKtA240EvTQ:00126
+        - bKtA240EvTQ:00128
+        - bKtA240EvTQ:00130
+        - bKtA240EvTQ:00131
+  - id: UCyUdarqdJc-concept-backhand-loop-contact-reviewed
+    evidence_type: explanation
+    excerpt: The backhand loop should meet the ball at a specific forward space rather than snatching it close to the racket or body.
+    reason: The transcript specifies one racket length from the chest for optimal backhand loop contact, and closer spacing for backspin loop.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: UCyUdarqdJc
+      start_ms: 286080
+      end_ms: 310240
+      url: https://www.youtube.com/watch?v=UCyUdarqdJc&t=286s
+      segment_ids:
+        - UCyUdarqdJc:00111
+        - UCyUdarqdJc:00112
+        - UCyUdarqdJc:00113
+        - UCyUdarqdJc:00114
+        - UCyUdarqdJc:00117
+        - UCyUdarqdJc:00118
+        - UCyUdarqdJc:00119
 relations:
   - relation_type: part_of
     target_concept_id: concept-backhand-loop

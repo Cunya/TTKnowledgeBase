@@ -1,6 +1,16 @@
-# Session notes — 2026-07-15 01:03 EEST
+# Session notes — 2026-07-15 13:04 EEST
 
-## Current state refresh - 2026-07-15 11:40 EEST
+## Current state refresh - 2026-07-15 13:04 EEST
+
+- Canonical concepts: 73 approved; published corpus: 68 videos and 1,321 evidence moments.
+- Review queue: 653 accepted, 41 explicitly deferred, 1 rejected, and 0 pending decisions.
+- P1-02 processing is complete for the cached candidate queue; the controlled follow-up batch accepted 57 high-confidence candidates and added 57 focused evidence moments.
+- Eight of the nine previously one-concept videos gained additional concept links. `hDXIuFwtrHE` remains one-concept because no pending candidate safely mapped to an existing concept.
+- Quality report: 851 distinct excerpts, 0 isolated concepts, 9 single-source concepts, 35 proposed visual intervals, and 0 manually verified visuals.
+- Verification: 26 Python tests passed, Astro diagnostics passed with 0 errors/warnings/hints, the static build produced 150 pages, and `git diff --check` passed.
+- Reusable command: `.venv\Scripts\python.exe -m processors.cli process-pending --kb table-tennis`; it currently returns zero remaining candidates to process.
+
+## Historical state refresh - 2026-07-15 11:40 EEST
 
 - Canonical concepts: 73 approved.
 - Published corpus: 50 videos and 1,118 evidence moments.
@@ -11,6 +21,16 @@
 - Codex extraction profile: `gpt-5.4-mini`, low reasoning, normal/default service tier; no automatic escalation.
 - Maintained backlog: `docs/prioritized-backlog-2026-07-15.md`.
 - Highest-priority work is quotation rephrasing, acquisition-policy documentation, canonical publish freshness, quarantine controls, visual verification, and pending-candidate review before another large scrape.
+
+## Current state refresh - 2026-07-15 11:55 EEST
+
+- P0-01 rephrasing pass completed across the audited high-overlap evidence excerpts.
+- Source segment IDs, timestamps, evidence types, reasons, and provenance were preserved; only public excerpt wording changed.
+- Post-pass quotation screen: 0 complete normalized matches, 0 high-ratio matches, and 28 lower-ratio partial overlaps to monitor.
+- Canonical validation and publish completed: 73 concepts, 1,118 evidence items.
+- Verification: 25 Python tests passed, Ruff passed, Astro check passed with 0 diagnostics, and the 132-page static build passed.
+- Remaining follow-up: add `excerpt_kind` schema/validator and keep the quotation screen in the pre-publication checks.
+- Automatic guard now available: `rephrase-excerpts` or `publish --auto-rephrase-high-overlap` runs the configured low-cost Codex rewrite only for flagged excerpts and persists excerpt-only changes.
 
 ## Historical state snapshot
 
@@ -44,7 +64,7 @@
 
 ## Important limitations
 
-- Published does not mean fully reviewed: eight videos have approved public evidence but retain pending proposals.
+- Published does not mean fully reviewed: 11 videos have approved public evidence but retain explicitly deferred proposals.
 - Candidate extraction analyzes transcripts, not video frames. `transcript_inferred` moments remain non-looping until a separate visual interval is watched and verified.
 - The review queue currently has a large formatting diff because it was regenerated after new candidate files were added; the widened round-trip writer should keep future unchanged candidates stable.
 - The working tree also contains the earlier progress-page, workflow-name, ingestion-hardening, and queue-stability changes; preserve them together during review.
@@ -60,10 +80,10 @@
 ## Current next actions
 
 1. Follow `docs/prioritized-backlog-2026-07-15.md` as the maintained planning source of truth.
-2. Rephrase the 20 highest-overlap evidence excerpts, then add excerpt-kind validation.
+2. Add excerpt-kind schema/validator and keep the quotation screen in CI; the P0-01 rephrasing pass and automatic guard are complete.
 3. Document the lawful transcript-acquisition basis and add public source/removal handling.
 4. Add canonical-to-publish freshness and TOC/anchor validation to CI.
-5. Review pending candidates and visually verify high-value loop windows before processing another large batch.
+5. Review the 28 deferred candidates and visually verify high-value loop windows before processing another large batch.
 6. Implement public/private publication controls and a project-owned local export when the P0/P1 safeguards are ready.
 
 ## Video index navigation note

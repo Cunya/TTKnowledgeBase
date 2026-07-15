@@ -19,7 +19,7 @@ evidence:
     source: {video_id: 3kC8KEl3iow, start_ms: 48400, end_ms: 57040, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=48s", segment_ids: ["3kC8KEl3iow:00019", "3kC8KEl3iow:00020"]}
   - id: loaded-legs-power-2
     evidence_type: explanation
-    excerpt: When your legs are loaded, your upper body can actually generate power.
+    excerpt: A loaded leg base lets the upper body contribute to power.
     reason: Connects the base of support to upper-body power production.
     confidence: 0.99
     visual_status: transcript_inferred
@@ -27,7 +27,7 @@ evidence:
     source: {video_id: 3kC8KEl3iow, start_ms: 55280, end_ms: 63160, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=55s", segment_ids: ["3kC8KEl3iow:00021", "3kC8KEl3iow:00022", "3kC8KEl3iow:00023"]}
   - id: serve-ground-connection-3
     evidence_type: demonstration
-    excerpt: The stomp creates a body-ground connection. It's a force multiplier.
+    excerpt: A grounded stomp links the body to the floor and can amplify force.
     reason: Demonstrates the same ground-connection principle in a serve from another video.
     confidence: 0.97
     visual_status: transcript_inferred
@@ -35,7 +35,7 @@ evidence:
     source: {video_id: csJgHR7Daog, start_ms: 321480, end_ms: 331320, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=321s", segment_ids: ["csJgHR7Daog:00146", "csJgHR7Daog:00147", "csJgHR7Daog:00148", "csJgHR7Daog:00149"]}
   - id: global-unengaged-legs-4
     evidence_type: mistake
-    excerpt: The issue is your legs are not engaged; they're like wet noodles.
+    excerpt: Unengaged legs leave the stroke without a loaded base.
     reason: Global TT Studio diagnoses the opposite of loaded legs.
     confidence: 0.98
     visual_status: transcript_inferred
@@ -57,6 +57,78 @@ evidence:
     visual_status: transcript_inferred
     review_status: approved
     source: {video_id: Cq6MbP6TEdc, start_ms: 106300, end_ms: 113233, url: "https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=106s", segment_ids: ["Cq6MbP6TEdc:00024", "Cq6MbP6TEdc:00025"]}
+  - id: Aaaxi0DOZzQ-concept-loaded-legs-reviewed
+    evidence_type: explanation
+    excerpt: Use a loaded lower-body stance to store power before releasing it into the stroke.
+    reason: The speaker explicitly instructs the player to load the legs fully and store the power.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Aaaxi0DOZzQ
+      start_ms: 124479
+      end_ms: 130240
+      url: https://www.youtube.com/watch?v=Aaaxi0DOZzQ&t=124s
+      segment_ids:
+        - Aaaxi0DOZzQ:00043
+        - Aaaxi0DOZzQ:00044
+  - id: fXOGFZD1MTY-concept-loaded-legs-reviewed
+    evidence_type: explanation
+    excerpt: Using the legs and ground connection to generate power, rather than relying on the arms alone.
+    reason: The coach says the player was looping with the arms and zero body power.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: fXOGFZD1MTY
+      start_ms: 22520
+      end_ms: 29360
+      url: https://www.youtube.com/watch?v=fXOGFZD1MTY&t=22s
+      segment_ids:
+        - fXOGFZD1MTY:00005
+        - fXOGFZD1MTY:00006
+  - id: P9lUTLVEBPE-concept-loaded-legs-reviewed
+    evidence_type: explanation
+    excerpt: Using the ground, lowering the center of gravity, and pressing forward with weight instead of hopping to generate movement and power.
+    reason: The speaker explicitly instructs to drop the center of gravity, press forward with weight, stay grounded, and shift weight forward rather than hopping.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: P9lUTLVEBPE
+      start_ms: 221720
+      end_ms: 246880
+      url: https://www.youtube.com/watch?v=P9lUTLVEBPE&t=221s
+      segment_ids:
+        - P9lUTLVEBPE:00072
+        - P9lUTLVEBPE:00073
+        - P9lUTLVEBPE:00074
+        - P9lUTLVEBPE:00075
+        - P9lUTLVEBPE:00076
+        - P9lUTLVEBPE:00077
+        - P9lUTLVEBPE:00078
+        - P9lUTLVEBPE:00079
+        - P9lUTLVEBPE:00080
+        - P9lUTLVEBPE:00081
+  - id: 8yuRXgTWOxc-concept-loaded-legs-reviewed
+    evidence_type: explanation
+    excerpt: Using a stable lunge or loaded stance so the legs and ground connection can support forward power transfer.
+    reason: The speaker specifically recommends establishing a proper lunge stance before power can be transferred efficiently.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8yuRXgTWOxc
+      start_ms: 328680
+      end_ms: 358000
+      url: https://www.youtube.com/watch?v=8yuRXgTWOxc&t=328s
+      segment_ids:
+        - 8yuRXgTWOxc:00134
+        - 8yuRXgTWOxc:00141
+        - 8yuRXgTWOxc:00142
+        - 8yuRXgTWOxc:00143
+        - 8yuRXgTWOxc:00144
+        - 8yuRXgTWOxc:00145
 relations:
   - relation_type: used_with
     target_concept_id: concept-body-hand-synchronization

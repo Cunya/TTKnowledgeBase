@@ -537,6 +537,22 @@ evidence:
     visual_status: transcript_inferred
     review_status: approved
     source: {video_id: 9OxcCPWI-k8, start_ms: 110033, end_ms: 121900, url: "https://www.youtube.com/watch?v=9OxcCPWI-k8&t=110s", segment_ids: ["9OxcCPWI-k8:00037", "9OxcCPWI-k8:00040"]}
+  - id: 9OxcCPWI-k8-concept-backhand-serve-deception-reviewed
+    evidence_type: explanation
+    excerpt: Using fake finishing motion and disguise after contact so the serve is harder for the opponent to read.
+    reason: The speaker explicitly says deceptive motions can be added once consistent, explains the fake lifting motion, and notes that the backhand serve is hard to read and practical in matches.
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 9OxcCPWI-k8
+      start_ms: 201333
+      end_ms: 210433
+      url: https://www.youtube.com/watch?v=9OxcCPWI-k8&t=201s
+      segment_ids:
+        - 9OxcCPWI-k8:00063
+        - 9OxcCPWI-k8:00064
+        - 9OxcCPWI-k8:00065
 relations:
   - relation_type: variation_of
     target_concept_id: concept-sidespin-topspin-serve

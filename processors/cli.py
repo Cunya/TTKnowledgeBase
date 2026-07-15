@@ -28,7 +28,9 @@ from .pipeline import (
     extract_video,
     load_reviewed_concepts,
     load_videos,
+    process_pending_candidates,
     render_quality_report_markdown,
+    rephrase_high_overlap_excerpts,
     validate_corpus,
     validate_navigation,
     validate_published_corpus,
@@ -256,6 +258,37 @@ def extract_concepts(
         console.print(f"[green]Saved candidates[/green] {path.name}")
 
 
+@app.command("rephrase-excerpts")
+def rephrase_excerpts(
+    model: Annotated[str | None, typer.Option(help="Optional Codex model override")] = None,
+    kb: KbOption = None,
+) -> None:
+    """Rephrase high-overlap canonical excerpts before publication."""
+    paths = kb_paths(kb)
+    concepts = load_reviewed_concepts(paths.content / "concepts")
+    videos = load_videos(paths.data("normalized"))
+    publishing = read_yaml(paths.config / "kb.yaml").get("publishing", {})
+    _, findings = rephrase_high_overlap_excerpts(
+        paths.content / "concepts",
+        concepts,
+        videos,
+        ROOT / "config" / "processors.yaml",
+        paths.data("manifests"),
+        model_override=model,
+        max_chars=int(publishing.get("excerpt_max_chars", 420)),
+    )
+    report = {
+        "knowledge_base": paths.id,
+        "rephrased_count": len(findings),
+        "items": findings,
+    }
+    report_path = paths.data("manifests") / "excerpt-rephrasing.json"
+    write_json(report_path, report)
+    console.print(
+        f"[green]Rephrased {len(findings)} high-overlap excerpt(s)[/green]; report {report_path}"
+    )
+
+
 @app.command("benchmark-models")
 def benchmark_models(
     models: Annotated[
@@ -350,6 +383,30 @@ def review_queue(kb: KbOption = None) -> None:
     console.print(f"[green]{paths.name}: {count} candidates queued[/green]")
 
 
+@app.command("process-pending")
+def process_pending(
+    min_confidence: Annotated[
+        float, typer.Option(min=0, max=1, help="Minimum confidence for automatic acceptance")
+    ] = 0.85,
+    kb: KbOption = None,
+) -> None:
+    """Triage cached pending candidates before any new scrape."""
+    paths = kb_paths(kb)
+    concepts = load_reviewed_concepts(paths.content / "concepts")
+    counts = process_pending_candidates(
+        paths.content / "annotations" / "review-queue.yaml",
+        paths.content / "concepts",
+        paths.data("normalized"),
+        concepts,
+        min_confidence=min_confidence,
+    )
+    console.print(
+        f"[green]Processed pending candidates for {paths.name}[/green]: "
+        f"{counts['accepted']} accepted, {counts['deferred']} deferred, "
+        f"{counts['rejected']} rejected, {counts['evidence_added']} evidence moments added"
+    )
+
+
 def refresh_catalog() -> None:
     registry = read_yaml(ROOT / "config" / "knowledge-bases.yaml")
     entries = []
@@ -375,9 +432,33 @@ def refresh_catalog() -> None:
 def publish(
     kb: KbOption = None,
     include_demo: Annotated[bool, typer.Option(help="Publish synthetic fixtures")] = False,
+    auto_rephrase_high_overlap: Annotated[
+        bool,
+        typer.Option(
+            help="Run the low-cost Codex rephrase stage before publishing flagged excerpts"
+        ),
+    ] = False,
 ) -> None:
     """Build one sanitized static-site corpus and refresh the catalog."""
     paths = kb_paths(kb)
+    if auto_rephrase_high_overlap:
+        concepts = load_reviewed_concepts(paths.content / "concepts")
+        videos = load_videos(paths.data("normalized"))
+        publishing = read_yaml(paths.config / "kb.yaml").get("publishing", {})
+        _, findings = rephrase_high_overlap_excerpts(
+            paths.content / "concepts",
+            concepts,
+            videos,
+            ROOT / "config" / "processors.yaml",
+            paths.data("manifests"),
+            max_chars=int(publishing.get("excerpt_max_chars", 420)),
+        )
+        write_json(
+            paths.data("manifests") / "excerpt-rephrasing.json",
+            {"knowledge_base": paths.id, "rephrased_count": len(findings), "items": findings},
+        )
+        if findings:
+            console.print(f"[yellow]Auto-rephrased {len(findings)} high-overlap excerpt(s)[/yellow]")
     output = ROOT / "data" / "publish" / "kbs" / paths.id
     corpus = publish_corpus(
         paths.content / "concepts",

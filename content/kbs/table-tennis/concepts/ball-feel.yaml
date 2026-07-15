@@ -11,7 +11,7 @@ review_status: approved
 evidence:
   - id: ball-feel-definition-1
     evidence_type: definition
-    excerpt: Ball feel includes touch, spatial awareness, and rhythm.
+    excerpt: Treat touch, spatial awareness, and rhythm as the three parts of ball feel.
     reason: Global TT Studio explicitly defines the components of ball feel.
     confidence: 0.99
     visual_status: not_visual
@@ -19,7 +19,7 @@ evidence:
     source: {video_id: G7eiadOxN8E, start_ms: 39433, end_ms: 49233, url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=39s", segment_ids: ["G7eiadOxN8E:00010", "G7eiadOxN8E:00011"]}
   - id: rhythm-control-2
     evidence_type: explanation
-    excerpt: The key is understanding rhythm. You must learn to control the tempo.
+    excerpt: Ball feel develops through learning to regulate rhythm and tempo.
     reason: Identifies rhythm control as a trainable component.
     confidence: 0.99
     visual_status: not_visual
@@ -41,6 +41,37 @@ evidence:
     visual_status: transcript_inferred
     review_status: approved
     source: {video_id: G7eiadOxN8E, start_ms: 108633, end_ms: 117733, url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=108s", segment_ids: ["G7eiadOxN8E:00026", "G7eiadOxN8E:00027"]}
+  - id: lO0H9Cs6JEo-concept-ball-feel-reviewed
+    evidence_type: definition
+    excerpt: Sensitivity to the ball's spin, speed, and timing during receive and rally play.
+    reason: The speaker explicitly says sensitivity to the ball is the most important thing in receive and links it to rhythm sensitivity.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: lO0H9Cs6JEo
+      start_ms: 376640
+      end_ms: 383840
+      url: https://www.youtube.com/watch?v=lO0H9Cs6JEo&t=376s
+      segment_ids:
+        - lO0H9Cs6JEo:00107
+        - lO0H9Cs6JEo:00108
+  - id: pE5PLAr9iaA-concept-ball-feel-reviewed
+    evidence_type: definition
+    excerpt: The skill cluster of sensing the ball well enough to control touch, spacing, and rhythm in play and training.
+    reason: The speaker explicitly groups ball feel with touch, spacing, and rhythm as one of the three main areas.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: pE5PLAr9iaA
+      start_ms: 0
+      end_ms: 13200
+      url: https://www.youtube.com/watch?v=pE5PLAr9iaA&t=0s
+      segment_ids:
+        - pE5PLAr9iaA:00000
+        - pE5PLAr9iaA:00001
+        - pE5PLAr9iaA:00003
 relations:
   - relation_type: used_with
     target_concept_id: concept-contact-point

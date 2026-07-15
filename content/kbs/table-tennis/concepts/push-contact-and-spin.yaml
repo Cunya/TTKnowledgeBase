@@ -385,6 +385,38 @@ evidence:
         - hZmEfLkbNI8:00139
         - hZmEfLkbNI8:00140
         - hZmEfLkbNI8:00141
+  - id: 5JzSUTg_ojc-concept-push-contact-and-spin-reviewed
+    evidence_type: explanation
+    excerpt: Using brushing contact and controlled force on push or receive balls so the ball does not go long or into the net.
+    reason: The speaker says that for aggressive incoming balls you should reduce force, focus on brushing, and not fight the ball with power.
+    confidence: 0.87
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 5JzSUTg_ojc
+      start_ms: 300720
+      end_ms: 329720
+      url: https://www.youtube.com/watch?v=5JzSUTg_ojc&t=300s
+      segment_ids:
+        - 5JzSUTg_ojc:00116
+        - 5JzSUTg_ojc:00119
+        - 5JzSUTg_ojc:00120
+        - 5JzSUTg_ojc:00127
+  - id: SF0Sv2ZzrRI-concept-push-contact-and-spin-reviewed
+    evidence_type: explanation
+    excerpt: Using specific racket contact and touch to add spin in a push without overusing arm force.
+    reason: The speaker contrasts forearm force with a point push to add spin and a short explosive touch.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: SF0Sv2ZzrRI
+      start_ms: 133360
+      end_ms: 160680
+      url: https://www.youtube.com/watch?v=SF0Sv2ZzrRI&t=133s
+      segment_ids:
+        - SF0Sv2ZzrRI:00038
+        - SF0Sv2ZzrRI:00046
 relations:
   - relation_type: part_of
     target_concept_id: concept-push-technique

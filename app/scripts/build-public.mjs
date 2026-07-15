@@ -54,6 +54,7 @@ function runAstroBuild() {
 let exitCode = 1;
 try {
   if (productionBuild) {
+    process.env.PUBLIC_PRODUCTION_BUILD = 'true';
     await moveLocalPagesOutOfProduction();
   } else {
     process.env.PUBLIC_LOCAL_DOCS = 'true';

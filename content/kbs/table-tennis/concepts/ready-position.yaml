@@ -15,7 +15,7 @@ review_status: approved
 evidence:
   - id: ready-position-demo-1
     evidence_type: demonstration
-    excerpt: Start in a balanced ready position. Keep your knees bent and your weight on the front of your feet.
+    excerpt: Begin balanced with bent knees and weight toward the balls of the feet.
     reason: Defines the stance and gives two observable body-position cues.
     confidence: 0.98
     visual_status: transcript_inferred
@@ -28,7 +28,7 @@ evidence:
       segment_ids: ["demoTT00001:00000", "demoTT00001:00001"]
   - id: ready-position-shoulder-alignment-2
     evidence_type: explanation
-    excerpt: In the ready position, your left shoulder is forward.
+    excerpt: Set the ready position with the left shoulder slightly forward.
     reason: Adds a real lesson cue for neutral shoulder alignment before the forehand backswing.
     confidence: 0.96
     visual_status: transcript_inferred
@@ -133,6 +133,76 @@ evidence:
         - YUEaL2HiPIE:00135
         - YUEaL2HiPIE:00136
         - YUEaL2HiPIE:00137
+  - id: bKtA240EvTQ-seed-ready-position-reviewed
+    evidence_type: definition
+    excerpt: A balanced, match-like ready posture used before and during receive, with compact body position and early preparation.
+    reason: The speaker repeatedly tells the learner to get ready, use a match-like ready posture, lower the stance, and return to the normal ready position.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: bKtA240EvTQ
+      start_ms: 57360
+      end_ms: 69240
+      url: https://www.youtube.com/watch?v=bKtA240EvTQ&t=57s
+      segment_ids:
+        - bKtA240EvTQ:00016
+        - bKtA240EvTQ:00018
+  - id: PFPu_pKZ9TI-concept-ready-position-reviewed
+    evidence_type: explanation
+    excerpt: Being set with feet and hands ready before the ball bounces so the stroke can be made without being jammed.
+    reason: The speaker states that feet and hands must already be set before the bounce and that this prevents being jammed.
+    confidence: 0.89
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: PFPu_pKZ9TI
+      start_ms: 410880
+      end_ms: 427840
+      url: https://www.youtube.com/watch?v=PFPu_pKZ9TI&t=410s
+      segment_ids:
+        - PFPu_pKZ9TI:00155
+        - PFPu_pKZ9TI:00156
+        - PFPu_pKZ9TI:00157
+        - PFPu_pKZ9TI:00158
+        - PFPu_pKZ9TI:00159
+        - PFPu_pKZ9TI:00160
+        - PFPu_pKZ9TI:00161
+  - id: -1uBDv1Aq7A-concept-ready-position-reviewed
+    evidence_type: explanation
+    excerpt: A balanced, prepared stance that lets the player react quickly to the next ball, especially on serve receive.
+    reason: The speaker emphasizes staying balanced, getting ready for the short ball, and preparing for the long serve first.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: -1uBDv1Aq7A
+      start_ms: 210200
+      end_ms: 223440
+      url: https://www.youtube.com/watch?v=-1uBDv1Aq7A&t=210s
+      segment_ids:
+        - -1uBDv1Aq7A:00062
+        - -1uBDv1Aq7A:00065
+  - id: XlGnK1z_7C0-concept-ready-position-reviewed
+    evidence_type: definition
+    excerpt: A low, compact stance used immediately after serving so the player can react and attack without delay.
+    reason: The speaker explicitly names a low ready position and describes dropping into it quickly from a half squat after serving.
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: XlGnK1z_7C0
+      start_ms: 303480
+      end_ms: 332000
+      url: https://www.youtube.com/watch?v=XlGnK1z_7C0&t=303s
+      segment_ids:
+        - XlGnK1z_7C0:00122
+        - XlGnK1z_7C0:00123
+        - XlGnK1z_7C0:00124
+        - XlGnK1z_7C0:00125
+        - XlGnK1z_7C0:00126
+        - XlGnK1z_7C0:00127
+        - XlGnK1z_7C0:00131
 relations:
   - relation_type: prerequisite_of
     target_concept_id: concept-forehand-loop

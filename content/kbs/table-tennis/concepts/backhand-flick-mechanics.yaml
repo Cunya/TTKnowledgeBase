@@ -111,6 +111,40 @@ evidence:
         - zd8tcVUWwK4:00139
         - zd8tcVUWwK4:00140
         - zd8tcVUWwK4:00141
+  - id: 5JzSUTg_ojc-concept-backhand-flick-mechanics-reviewed
+    evidence_type: explanation
+    excerpt: A backhand flick that starts from a lower racket-tip position and rotates from about 7:00, with a stable wrist and adjusted height for spinny short balls.
+    reason: The speaker explicitly distinguishes backhand flick from backhand drive, saying the racket tip should point to 7:00, rotate from that position, and adjust to the opponent's spin.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 5JzSUTg_ojc
+      start_ms: 501400
+      end_ms: 528320
+      url: https://www.youtube.com/watch?v=5JzSUTg_ojc&t=501s
+      segment_ids:
+        - 5JzSUTg_ojc:00190
+        - 5JzSUTg_ojc:00191
+        - 5JzSUTg_ojc:00192
+        - 5JzSUTg_ojc:00194
+        - 5JzSUTg_ojc:00197
+        - 5JzSUTg_ojc:00199
+  - id: A4-lKRVwSFc-concept-backhand-flick-mechanics-reviewed
+    evidence_type: explanation
+    excerpt: A banana-flick-like backhand action that starts from a stable hand position, then slightly enlarges the motion and accelerates the forearm to create brushing.
+    reason: Speaker explicitly references the backhand banana flick, describes the hand position, and says to stabilize it before accelerating the forearm.
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: A4-lKRVwSFc
+      start_ms: 402160
+      end_ms: 424240
+      url: https://www.youtube.com/watch?v=A4-lKRVwSFc&t=402s
+      segment_ids:
+        - A4-lKRVwSFc:00154
+        - A4-lKRVwSFc:00160
 relations:
   - relation_type: used_with
     target_concept_id: concept-backhand-flick-on-rise

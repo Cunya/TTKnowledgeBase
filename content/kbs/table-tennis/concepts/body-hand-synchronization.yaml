@@ -11,7 +11,7 @@ review_status: approved
 evidence:
   - id: synchronized-stop-1
     evidence_type: explanation
-    excerpt: Body and hand must stop together. When the body stops, the hand stops.
+    excerpt: Stopping the hand with the body keeps the stroke connected.
     reason: Gives the positive cue for a connected rally stroke.
     confidence: 0.99
     visual_status: transcript_inferred
@@ -19,7 +19,7 @@ evidence:
     source: {video_id: 3kC8KEl3iow, start_ms: 607960, end_ms: 614640, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=607s", segment_ids: ["3kC8KEl3iow:00241", "3kC8KEl3iow:00242"]}
   - id: disconnected-arm-2
     evidence_type: mistake
-    excerpt: If the body stops but the hand still swings, that's disconnected.
+    excerpt: If the arm continues after the body stops, the stroke loses its connection.
     reason: Provides a compact diagnostic for arm-body disconnection.
     confidence: 0.99
     visual_status: transcript_inferred
@@ -27,7 +27,7 @@ evidence:
     source: {video_id: 3kC8KEl3iow, start_ms: 610240, end_ms: 617800, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=610s", segment_ids: ["3kC8KEl3iow:00242", "3kC8KEl3iow:00243", "3kC8KEl3iow:00244"]}
   - id: serve-chain-sequence-3
     evidence_type: explanation
-    excerpt: Fingers move first, driving the wrist, then forearm, then upper arm.
+    excerpt: The acceleration sequence runs from fingers through wrist and forearm to the upper arm.
     reason: A second video shows coordinated sequencing for serve acceleration.
     confidence: 0.99
     visual_status: transcript_inferred
@@ -35,7 +35,7 @@ evidence:
     source: {video_id: csJgHR7Daog, start_ms: 173000, end_ms: 182160, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=173s", segment_ids: ["csJgHR7Daog:00080", "csJgHR7Daog:00081", "csJgHR7Daog:00082"]}
   - id: one-block-error-4
     evidence_type: mistake
-    excerpt: Amateurs swing through as one block. Without decomposition, there's no spin.
+    excerpt: A rigid one-piece swing removes the sequential action needed to produce spin.
     reason: Contrasts useful sequencing with rigid, simultaneous movement.
     confidence: 0.97
     visual_status: transcript_inferred
@@ -634,6 +634,264 @@ evidence:
       url: https://www.youtube.com/watch?v=YUEaL2HiPIE&t=454s
       segment_ids:
         - YUEaL2HiPIE:00097
+  - id: 1fHWnt8IlbI-concept-body-hand-synchronization-reviewed
+    evidence_type: explanation
+    excerpt: Coordinating body rotation, hand motion, and footwork so the stroke and recovery happen together.
+    reason: He says the body rotation must sync the hand and left foot, and without rotation the player ends up pushing with only the arm.
+    confidence: 0.91
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 1fHWnt8IlbI
+      start_ms: 593800
+      end_ms: 623440
+      url: https://www.youtube.com/watch?v=1fHWnt8IlbI&t=593s
+      segment_ids:
+        - 1fHWnt8IlbI:00226
+        - 1fHWnt8IlbI:00227
+        - 1fHWnt8IlbI:00228
+        - 1fHWnt8IlbI:00229
+        - 1fHWnt8IlbI:00230
+        - 1fHWnt8IlbI:00231
+        - 1fHWnt8IlbI:00232
+        - 1fHWnt8IlbI:00233
+        - 1fHWnt8IlbI:00234
+        - 1fHWnt8IlbI:00235
+        - 1fHWnt8IlbI:00236
+        - 1fHWnt8IlbI:00237
+  - id: Aaaxi0DOZzQ-concept-body-hand-synchronization-reviewed
+    evidence_type: explanation
+    excerpt: Coordinate the body, arm, and hand so the stroke releases power only after contact and not as disconnected pieces.
+    reason: The speaker describes a sequence where the legs, hip, forearm, and racket head complete the stroke together after contact.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Aaaxi0DOZzQ
+      start_ms: 81240
+      end_ms: 90200
+      url: https://www.youtube.com/watch?v=Aaaxi0DOZzQ&t=81s
+      segment_ids:
+        - Aaaxi0DOZzQ:00028
+        - Aaaxi0DOZzQ:00031
+  - id: bKtA240EvTQ-concept-body-hand-synchronization-reviewed
+    evidence_type: explanation
+    excerpt: Using the body, hand, wrist, and fingers as a coordinated chain instead of moving the arm independently.
+    reason: The transcript explicitly describes power flowing from body to hand and later from fingers to wrist to forearm, which is a clear synchronization chain.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: bKtA240EvTQ
+      start_ms: 746480
+      end_ms: 761839
+      url: https://www.youtube.com/watch?v=bKtA240EvTQ&t=746s
+      segment_ids:
+        - bKtA240EvTQ:00277
+        - bKtA240EvTQ:00278
+        - bKtA240EvTQ:00280
+        - bKtA240EvTQ:00281
+  - id: D9ZAPb_65Hk-concept-body-hand-synchronization-reviewed
+    evidence_type: explanation
+    excerpt: Coordinating body motion, arm motion, and recovery so the stroke and reset remain smooth rather than jerky.
+    reason: The speaker ties smooth stroke sequence to conscious relaxation in recovery.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: D9ZAPb_65Hk
+      start_ms: 337600
+      end_ms: 360800
+      url: https://www.youtube.com/watch?v=D9ZAPb_65Hk&t=337s
+      segment_ids:
+        - D9ZAPb_65Hk:00109
+        - D9ZAPb_65Hk:00110
+        - D9ZAPb_65Hk:00111
+        - D9ZAPb_65Hk:00112
+        - D9ZAPb_65Hk:00113
+        - D9ZAPb_65Hk:00114
+        - D9ZAPb_65Hk:00115
+  - id: P9lUTLVEBPE-concept-body-hand-synchronization-reviewed
+    evidence_type: explanation
+    excerpt: Coordinating the body and hand together during opening, rotation, and step-in so power and control stay connected.
+    reason: The speaker explicitly says the left foot and right hand sync together and repeatedly ties open, rotate, and step-in into one coordinated sequence.
+    confidence: 0.92
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: P9lUTLVEBPE
+      start_ms: 546960
+      end_ms: 568880
+      url: https://www.youtube.com/watch?v=P9lUTLVEBPE&t=546s
+      segment_ids:
+        - P9lUTLVEBPE:00188
+        - P9lUTLVEBPE:00189
+        - P9lUTLVEBPE:00190
+        - P9lUTLVEBPE:00191
+        - P9lUTLVEBPE:00192
+        - P9lUTLVEBPE:00193
+        - P9lUTLVEBPE:00194
+        - P9lUTLVEBPE:00195
+  - id: PFPu_pKZ9TI-concept-body-hand-synchronization-reviewed
+    evidence_type: explanation
+    excerpt: Keeping the hand from starting the backswing too early and letting the body move first so the stroke stays connected.
+    reason: The speaker says the backswing should be the last thing you do and explicitly describes body leading the hand, which is a synchronization issue.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: PFPu_pKZ9TI
+      start_ms: 426240
+      end_ms: 456200
+      url: https://www.youtube.com/watch?v=PFPu_pKZ9TI&t=426s
+      segment_ids:
+        - PFPu_pKZ9TI:00162
+        - PFPu_pKZ9TI:00163
+        - PFPu_pKZ9TI:00164
+        - PFPu_pKZ9TI:00165
+        - PFPu_pKZ9TI:00166
+        - PFPu_pKZ9TI:00167
+        - PFPu_pKZ9TI:00168
+        - PFPu_pKZ9TI:00169
+        - PFPu_pKZ9TI:00170
+        - PFPu_pKZ9TI:00171
+        - PFPu_pKZ9TI:00172
+  - id: UCyUdarqdJc-concept-body-hand-synchronization-reviewed
+    evidence_type: explanation
+    excerpt: Power and control improve when the body and hand work together as one synchronized chain instead of the arm working in isolation.
+    reason: The speaker contrasts arm-only power with power generated by synergy and adding the body.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: UCyUdarqdJc
+      start_ms: 360
+      end_ms: 22160
+      url: https://www.youtube.com/watch?v=UCyUdarqdJc&t=0s
+      segment_ids:
+        - UCyUdarqdJc:00000
+        - UCyUdarqdJc:00001
+        - UCyUdarqdJc:00004
+        - UCyUdarqdJc:00005
+  - id: WuN7bP8CIOs-concept-body-hand-synchronization-reviewed
+    evidence_type: explanation
+    excerpt: The stroke should be coordinated so the upper arm leads the forearm and the hand framework stabilizes, allowing power to flow smoothly.
+    reason: The speaker ties the power framework to upper-arm-led motion and says the hand framework stabilizes only then.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: WuN7bP8CIOs
+      start_ms: 232720
+      end_ms: 255160
+      url: https://www.youtube.com/watch?v=WuN7bP8CIOs&t=232s
+      segment_ids:
+        - WuN7bP8CIOs:00106
+        - WuN7bP8CIOs:00116
+  - id: -1uBDv1Aq7A-concept-body-hand-synchronization-reviewed
+    evidence_type: explanation
+    excerpt: Coordinating the arm with the body and leg movement so the stroke is driven as one connected action.
+    reason: The speaker explicitly says the same-side arm and leg must move together and that arm and leg must be coordinated.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: -1uBDv1Aq7A
+      start_ms: 526960
+      end_ms: 547040
+      url: https://www.youtube.com/watch?v=-1uBDv1Aq7A&t=526s
+      segment_ids:
+        - -1uBDv1Aq7A:00147
+        - -1uBDv1Aq7A:00148
+        - -1uBDv1Aq7A:00151
+  - id: 15KzTMIx65s-concept-forward-drive-then-snap-reviewed
+    evidence_type: explanation
+    excerpt: A stroke power sequence in which the arm drives forward first and then adds a second acceleration through the forearm snap.
+    reason: The speaker explains that arm acceleration must include a forward drive followed by a second acceleration, and that the forces should be combined.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 15KzTMIx65s
+      start_ms: 576800
+      end_ms: 601160
+      url: https://www.youtube.com/watch?v=15KzTMIx65s&t=576s
+      segment_ids:
+        - 15KzTMIx65s:00224
+        - 15KzTMIx65s:00225
+        - 15KzTMIx65s:00226
+        - 15KzTMIx65s:00227
+        - 15KzTMIx65s:00228
+        - 15KzTMIx65s:00229
+        - 15KzTMIx65s:00230
+        - 15KzTMIx65s:00231
+        - 15KzTMIx65s:00232
+        - 15KzTMIx65s:00233
+        - 15KzTMIx65s:00234
+        - 15KzTMIx65s:00235
+  - id: 8pUgdfqXPj4-concept-body-hand-synchronization-reviewed
+    evidence_type: explanation
+    excerpt: Keeping the body action and hand action aligned so the stroke does not finish before contact and the full power chain reaches the ball.
+    reason: Says the stroke happening before contact leaves only wrist flick power and prevents upper-arm and forearm strength from reaching the ball.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8pUgdfqXPj4
+      start_ms: 260079
+      end_ms: 273640
+      url: https://www.youtube.com/watch?v=8pUgdfqXPj4&t=260s
+      segment_ids:
+        - 8pUgdfqXPj4:00109
+        - 8pUgdfqXPj4:00110
+        - 8pUgdfqXPj4:00111
+        - 8pUgdfqXPj4:00112
+        - 8pUgdfqXPj4:00113
+  - id: 8yuRXgTWOxc-concept-body-hand-synchronization-reviewed
+    evidence_type: explanation
+    excerpt: Coordinating the hand and torso so the body leads during the forward swing and the arm is not disconnected from the trunk.
+    reason: The speaker contrasts hand-leading in backswing with body-leading in the forward swing and says the body drives the arm efficiently.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8yuRXgTWOxc
+      start_ms: 295280
+      end_ms: 323240
+      url: https://www.youtube.com/watch?v=8yuRXgTWOxc&t=295s
+      segment_ids:
+        - 8yuRXgTWOxc:00118
+        - 8yuRXgTWOxc:00119
+        - 8yuRXgTWOxc:00120
+        - 8yuRXgTWOxc:00121
+        - 8yuRXgTWOxc:00122
+        - 8yuRXgTWOxc:00123
+        - 8yuRXgTWOxc:00124
+        - 8yuRXgTWOxc:00125
+        - 8yuRXgTWOxc:00126
+        - 8yuRXgTWOxc:00127
+        - 8yuRXgTWOxc:00128
+        - 8yuRXgTWOxc:00129
+        - 8yuRXgTWOxc:00130
+  - id: _biE-Dzy0aM-concept-body-hand-synchronization-reviewed
+    evidence_type: explanation
+    excerpt: Coordinating the hand and feet together so movement and striking happen in sync rather than letting the hand get ahead of the body.
+    reason: The speaker explicitly says the first key point is learning hand and foot synchronization and recommends moving feet and hands together, contrasting it with the hand moving first and feet following.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: _biE-Dzy0aM
+      start_ms: 14960
+      end_ms: 38320
+      url: https://www.youtube.com/watch?v=_biE-Dzy0aM&t=14s
+      segment_ids:
+        - _biE-Dzy0aM:00006
+        - _biE-Dzy0aM:00007
+        - _biE-Dzy0aM:00012
+        - _biE-Dzy0aM:00013
+        - _biE-Dzy0aM:00015
+        - _biE-Dzy0aM:00016
 relations:
   - relation_type: used_with
     target_concept_id: concept-serve-action-decomposition

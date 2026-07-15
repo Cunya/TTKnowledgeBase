@@ -140,6 +140,12 @@ class ExtractionResponse(StrictModel):
     batch_notes: list[str]
 
 
+class ExcerptRewriteResponse(StrictModel):
+    """A concise editorial summary for a source-backed evidence excerpt."""
+
+    excerpt: str = Field(min_length=1, max_length=420)
+
+
 class ConceptEvidence(BaseModel):
     id: str
     evidence_type: EvidenceType

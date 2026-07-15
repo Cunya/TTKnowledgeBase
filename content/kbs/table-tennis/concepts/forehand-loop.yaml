@@ -17,7 +17,7 @@ review_status: approved
 evidence:
   - id: forehand-loop-demo-1
     evidence_type: demonstration
-    excerpt: For the forehand loop, brush the upper back of the ball and accelerate forward and up.
+    excerpt: On a forehand loop, brush the upper-rear part of the ball while driving up and forward.
     reason: Gives the defining racket-ball interaction and swing direction.
     confidence: 0.99
     visual_status: transcript_inferred
@@ -30,7 +30,7 @@ evidence:
       segment_ids: ["demoTT00001:00003"]
   - id: global-loop-swing-radius-2
     evidence_type: explanation
-    excerpt: For a loop, the backswing is much larger, creating a bigger swing radius.
+    excerpt: A loop uses a larger backswing and therefore a wider swing radius than a drive.
     reason: Global TT Studio contrasts loop mechanics with a compact drive.
     confidence: 0.98
     visual_status: transcript_inferred
@@ -67,7 +67,7 @@ evidence:
     spoken_context_end_ms: 118800
   - id: loop-three-downs-global
     evidence_type: correction
-    excerpt: "Drop your shoulder, lower your legs, and drop your wrist."
+    excerpt: Prepare the opening loop by lowering the shoulder, legs, and wrist together.
     reason: Summarizes the three-downs preparation for looping heavy backspin.
     confidence: 0.98
     visual_status: transcript_inferred
@@ -76,7 +76,7 @@ evidence:
     source: {video_id: 0E67TotjJFE, start_ms: 376666, end_ms: 381766, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=376s", segment_ids: ["0E67TotjJFE:00082"]}
   - id: loop-closed-face-global
     evidence_type: demonstration
-    excerpt: Brushing over the ball with a closed racket generates spin.
+    excerpt: A closed racket face brushing over the ball supplies the spin-producing contact.
     reason: Demonstrates covering the ball instead of brushing only upward.
     confidence: 0.98
     visual_status: transcript_inferred
@@ -106,7 +106,7 @@ evidence:
     spoken_context_end_ms: 458700
   - id: loop-brushing-feel-spinmaster
     evidence_type: drill
-    excerpt: When looping, focus more on the feeling of brushing the ball.
+    excerpt: During the loop, prioritize the sensation of brushing rather than a forceful hit.
     reason: Gives beginners a simple contact-feel priority.
     confidence: 0.97
     visual_status: transcript_inferred
@@ -309,6 +309,71 @@ evidence:
       url: "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=119s"
       segment_ids:
         - "XfWXrGTlW5M:00029"
+  - id: A4-lKRVwSFc-concept-forehand-loop-reviewed
+    evidence_type: definition
+    excerpt: A forehand topspin stroke used to convert backspin into topspin with a brushing, forward motion.
+    reason: The speaker describes looping as turning backspin into topspin and emphasizes closing, brushing, and driving forward.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: A4-lKRVwSFc
+      start_ms: 117480
+      end_ms: 130920
+      url: https://www.youtube.com/watch?v=A4-lKRVwSFc&t=117s
+      segment_ids:
+        - A4-lKRVwSFc:00039
+        - A4-lKRVwSFc:00043
+  - id: pE5PLAr9iaA-concept-forehand-loop-reviewed
+    evidence_type: definition
+    excerpt: A forehand topspin attack stroke that uses a looping swing and contact suited to generating spin and speed.
+    reason: The speaker contrasts looping with driving and explains loop-specific contact and power generation.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: pE5PLAr9iaA
+      start_ms: 289440
+      end_ms: 296800
+      url: https://www.youtube.com/watch?v=pE5PLAr9iaA&t=289s
+      segment_ids:
+        - pE5PLAr9iaA:00094
+        - pE5PLAr9iaA:00095
+  - id: WuN7bP8CIOs-concept-forehand-loop-reviewed
+    evidence_type: definition
+    excerpt: A forehand topspin stroke where the forearm drops downward, the contact is made below the ball to create arc, and the motion uses brushing with controlled contact.
+    reason: The speaker explains that the loop requires the forearm to drop downward, unlike the drive.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: WuN7bP8CIOs
+      start_ms: 112800
+      end_ms: 129600
+      url: https://www.youtube.com/watch?v=WuN7bP8CIOs&t=112s
+      segment_ids:
+        - WuN7bP8CIOs:00053
+        - WuN7bP8CIOs:00058
+  - id: _biE-Dzy0aM-concept-forehand-loop-reviewed
+    evidence_type: explanation
+    excerpt: A forehand topspin stroke that uses brushing contact to generate spin and land the ball safely.
+    reason: The speaker explicitly contrasts looping with driving and says looping relies on brushing the ball and friction.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: _biE-Dzy0aM
+      start_ms: 115120
+      end_ms: 134400
+      url: https://www.youtube.com/watch?v=_biE-Dzy0aM&t=115s
+      segment_ids:
+        - _biE-Dzy0aM:00043
+        - _biE-Dzy0aM:00044
+        - _biE-Dzy0aM:00045
+        - _biE-Dzy0aM:00046
+        - _biE-Dzy0aM:00047
+        - _biE-Dzy0aM:00048
+        - _biE-Dzy0aM:00049
 relations:
   - relation_type: used_with
     target_concept_id: concept-contact-point

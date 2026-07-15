@@ -13,7 +13,9 @@ const {
   kbId,
 } = Astro.props;
 const base = import.meta.env.BASE_URL;
-const showLocalDocumentation = import.meta.env.DEV || import.meta.env.PUBLIC_LOCAL_DOCS === 'true';
+// Local dev and preview builds keep operational pages visible. The public build
+// sets PUBLIC_PRODUCTION_BUILD while it temporarily removes those page files.
+const showLocalDocumentation = import.meta.env.PUBLIC_PRODUCTION_BUILD !== 'true';
 ---
 
 <!doctype html>
