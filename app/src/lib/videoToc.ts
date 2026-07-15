@@ -16,6 +16,18 @@ export const formatTime = (milliseconds: number) => {
 
 export const momentAnchor = (evidenceId: string) => `moment-${evidenceId}`;
 
+// Candidate extraction often uses a transcript-reporting lead such as
+// “Speaker explains …”. Remove that lead so the remaining wording can stand
+// alone as a moment title rather than repeating a narrator label.
+export const editorialNarrative = (text: string) => {
+  const match = text.match(
+    /^(?:the )?speaker\s+(?:(?:explicitly|repeatedly|directly|clearly|also|then)\s+)*(?:explains?|says?|states?|describes?|gives?|demonstrates?|identifies?|teaches?|argues?|warns?|recommends?|prescribes?|introduces?|contrasts?|links?|specifies?|corrects?|frames?|adds?|provides?|appears?|names?|shows?|tells?|breaks?|maps?|centers?|reduces?|turns?|uses?|ties?|mentions?|notes?|emphasizes?|distinguishes?|references?|asks?|does?|makes?|keeps?|moves?)\s+(.*)$/i,
+  );
+  const capitalize = (value: string) => value ? `${value[0].toUpperCase()}${value.slice(1)}` : value;
+  if (match) return capitalize(match[1].trim());
+  return capitalize(text.replace(/^(?:the )?speaker\s+/i, '').trim());
+};
+
 export const buildVideoTocEntry = (corpus: Corpus, video: Video): VideoTocEntry => {
   const concepts = corpus.concepts.filter((concept) => concept.evidence.some((item) => item.source.video_id === video.id));
   const seen = new Set<string>();

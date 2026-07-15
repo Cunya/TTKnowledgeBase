@@ -50,6 +50,8 @@ It incorporates only high-confidence matches to existing concepts as one focused
 
 The `cp` shortcut follows the same order: finish eligible cached transcripts and candidates first; when no local work remains, continue with the next small, controlled discovery/ingestion batch. It must still obey the prioritized backlog, acquisition-policy checks, pacing limits, and block circuit breaker. A cleared local queue does not authorize bypassing an active “no large scrape” gate.
 
+The `cm` shortcut is message-only: review the current local changes and return a suggested commit message with completed features written in past tense. Do not stage files, run `git commit`, or create a commit; the operator commits manually.
+
 ## 5. Publish and verify
 
 ```powershell

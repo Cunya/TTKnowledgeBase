@@ -119,6 +119,7 @@ For content changes, verify representative live routes on `http://127.0.0.1:4321
 - Reviewed concept YAML, configuration, processors, tests, documentation, and sanitized publish data are legitimate tracked artifacts.
 - Preserve unrelated user changes in a dirty worktree.
 - Do not use destructive Git cleanup or reset commands.
+- Do not run `git commit` or create commits in response to shortcut prompts. The operator performs commits manually.
 
 ## Offline feature boundary
 
@@ -134,7 +135,7 @@ A change is complete only when its claims are source-grounded, visual windows ar
 - "cp" continue processing the videos: first drain eligible cached transcripts/candidates; if no local work remains, select and ingest the next controlled batch from configured discovery catalogs, subject to backlog priority, source-policy checks, pacing, and the block circuit breaker. Do not start a large scrape while a backlog gate still defers expansion.
 - "u" update docs, including the session log, and notes; start with checking the current date and time
 - "rlc" - review local changes
-- "cm" - provide a commit message for the local changes, list features and state them in past tense as what was done
+- "cm" - review the local changes and provide only a suggested commit message, listing completed features in past tense; never run `git commit`, stage files, or otherwise create a commit
 - "ggg" - go on with the current task and dont stop until it is done
 - "p" ponder on your notes for the current problem and update it if you come up with something new
 - "v" review all local changes (both staged and unstaged) for possible cleanup and any issues for committing. create a new md about it.

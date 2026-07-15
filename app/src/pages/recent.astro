@@ -47,7 +47,8 @@ const recentConcepts = corpus.concepts
         <div class="recent-index">{String(index + 1).padStart(2, '0')}</div>
         <div class="recent-main">
           <div class="recent-meta"><span>{video.channel_name}</span><span>{formatDate(video.published_at)}</span></div>
-          <h3><a href={video.canonical_url} target="_blank" rel="noreferrer">{video.title}</a></h3>
+          <h3><a href={`${base}kb/table-tennis/videos/${video.id}/`}>{video.title}</a></h3>
+          <a class="recent-source" href={video.canonical_url} target="_blank" rel="noreferrer">Watch on YouTube <span aria-hidden="true">&#8599;</span></a>
           <div class="recent-concepts" aria-label="Connected concepts">
             {concepts.slice(0, 7).map((concept) => <a href={`${base}kb/table-tennis/concepts/${concept.slug}/`}>{concept.label}</a>)}
             {concepts.length > 7 && <span>+{concepts.length - 7} more</span>}
@@ -68,7 +69,7 @@ const recentConcepts = corpus.concepts
           <h3><a href={`${base}kb/table-tennis/concepts/${concept.slug}/`}>{concept.label}</a></h3>
           <p>{concept.short_definition}</p>
         </div>
-        <a class="recent-source" href={latest?.canonical_url} target="_blank" rel="noreferrer">Latest source <span aria-hidden="true">↗</span></a>
+        <a class="recent-source" href={latest?.canonical_url} target="_blank" rel="noreferrer">Latest source <span aria-hidden="true">&#8599;</span></a>
       </article>)}
     </div>
   </section>

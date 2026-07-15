@@ -1,5 +1,6 @@
 ---
 import type { Evidence, Video } from '../types';
+import { editorialNarrative } from '../lib/videoToc';
 
 interface Citation { item: Evidence; index: number }
 interface Props { citations: Citation[]; video?: Video; initialIndex: number }
@@ -16,13 +17,11 @@ const formatTime = (milliseconds: number) => {
   {citations.slice(1).map(({ item: citation }) => <span id={`moment-${citation.id}`} class="evidence-citation-anchor" aria-hidden="true"></span>)}
   <div class="evidence-row-content">
     <div class="evidence-row-meta"><span>{item.evidence_type.replaceAll('_', ' ')}</span><small>{citations.length} moment{citations.length === 1 ? '' : 's'}</small></div>
-    <div>
-      <blockquote>{item.excerpt}</blockquote>
-      <p>{item.reason}</p>
+    <div class="evidence-row-main">
+      <blockquote>{editorialNarrative(item.excerpt)}</blockquote>
+      <p>{editorialNarrative(item.reason)}</p>
       <small>{item.visual_source ? `${item.visual_status === 'verified_visual_demo' ? 'Verified visual' : 'Proposed visual — not yet reviewed'} · ${item.visual_source.note}` : 'Spoken source; visual example not yet selected.'}</small>
       <p class="entry-source"><span>Source video</span>{video?.title ?? item.source.video_id}{video?.channel_name && <small>{video.channel_name}</small>}</p>
-    </div>
-  </div>
   <div class="evidence-row-actions">
     {citations.map(({ item: citation }, citationIndex) => {
       const verifiedVisual = citation.visual_status === 'verified_visual_demo' && citation.visual_source?.selection_method === 'manual_review';
@@ -34,5 +33,7 @@ const formatTime = (milliseconds: number) => {
         <a class="youtube-timestamp-link" href={citation.source.url} target="_blank" rel="noreferrer" aria-label={`Open this source timestamp on YouTube at ${formatTime(citation.source.start_ms)}`}>Open on YouTube<span>{formatTime(citation.source.start_ms)} ↗</span></a>
       </div>;
     })}
+  </div>
+    </div>
   </div>
 </article>

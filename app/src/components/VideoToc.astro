@@ -1,6 +1,6 @@
 ---
 import type { VideoTocEntry } from '../lib/videoToc';
-import { formatTime, momentAnchor } from '../lib/videoToc';
+import { editorialNarrative, formatTime, momentAnchor } from '../lib/videoToc';
 
 interface Props {
   entry: VideoTocEntry;
@@ -41,8 +41,8 @@ const conceptHref = (slug: string) => `${root}/concepts/${slug}/`;
           <a class="video-toc-youtube" href={item.source.url} target="_blank" rel="noreferrer">YouTube ↗</a>
         </div>
       </div>
-      <p>{item.excerpt}</p>
-      <small>{item.reason}</small>
+      <p class="video-toc-moment-title">{editorialNarrative(item.excerpt)}</p>
+      <small>{editorialNarrative(item.reason)}</small>
     </li>)}
   </ol>}
 </nav>
