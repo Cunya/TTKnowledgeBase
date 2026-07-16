@@ -21,6 +21,8 @@
 ## Ingestion
 
 - Generate `source-video-progress.md` from source-specific discovery manifests and pipeline artifacts instead of maintaining its snapshot tables manually.
+- Add a shared daily-run orchestrator around the CLI phases rather than duplicating scheduling policy in PowerShell, Task Scheduler, or future CI jobs. It should own locking, missing-artifact workset selection, run manifests, and machine-readable exit classes.
+- Make extraction workset selection hash-aware and idempotent so the timer never re-invokes Codex for an unchanged normalized transcript merely because `extract-concepts` was called without `--video-id`.
 - Keep retry-cooldown enforcement covered by CLI tests as ingestion options evolve; the command now enforces `next_retry_at` and permits an explicit override only after a route change.
 - Add an explicit single-video `probe-ingestion` command that does not imply a full batch restart.
 - Normalize video-title encoding when source metadata enters the pipeline so mojibake cannot persist in configuration.

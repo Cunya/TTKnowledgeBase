@@ -1,0 +1,158 @@
+---
+import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+type Priority = 'P0' | 'P1' | 'P2';
+type BacklogItem = {
+  id: string;
+  priority: Priority;
+  number: number;
+  title: string;
+  why: string;
+  work: string;
+  dependencies: string;
+  doneWhen: string;
+  status: string;
+  state: 'complete' | 'planned' | 'blocked' | 'open';
+};
+
+const backlogPath = fileURLToPath(new URL('../../../docs/prioritized-backlog-2026-07-15.md', import.meta.url));
+const backlogText = readFileSync(backlogPath, 'utf-8');
+const headingPattern = /^###\s+(P[012])-(\d+)\s+(.+)$/gm;
+const headings = [...backlogText.matchAll(headingPattern)];
+const cleanHeading = (value: string) => value
+  .replace(/^[\s-—–]+/, '')
+  .replace(/\s+\(new \d{4}-\d{2}-\d{2}\)$/, '')
+  .trim();
+const field = (block: string, label: string) => {
+  const match = block.match(new RegExp(`\\*\\*${label}:\\*\\*\\s*([^\\n]+)`, 'i'));
+  return match?.[1]?.replace(/\*\*/g, '').trim() ?? '';
+};
+const statusFor = (block: string) => field(block, 'Status') || 'Open';
+const stateFor = (status: string): BacklogItem['state'] => {
+  const normalized = status.toLowerCase();
+  if (normalized.includes('complete')) return 'complete';
+  if (normalized.includes('planned')) return 'planned';
+  if (normalized.includes('blocked')) return 'blocked';
+  return 'open';
+};
+const fallbackWhy = (block: string) => block
+  .split('\n')
+  .map((line) => line.trim())
+  .find((line) => line && !line.startsWith('**') && !line.startsWith('#')) ?? 'Work item recorded in the project backlog.';
+
+const items: BacklogItem[] = headings.map((heading, index) => {
+  const start = heading.index! + heading[0].length;
+  const end = headings[index + 1]?.index ?? backlogText.length;
+  const block = backlogText.slice(start, end);
+  const priority = heading[1] as Priority;
+  const number = Number(heading[2]);
+  const status = statusFor(block);
+  return {
+    id: `${priority}-${String(number).padStart(2, '0')}`,
+    priority,
+    number,
+    title: cleanHeading(heading[3]),
+    why: field(block, 'Why') || fallbackWhy(block),
+    work: field(block, 'Work'),
+    dependencies: field(block, 'Dependencies'),
+    doneWhen: field(block, 'Done when'),
+    status,
+    state: stateFor(status),
+  };
+});
+
+const featureDefinitions = [
+  {
+    id: 'trust-and-source-safety',
+    label: 'Trust and source safety',
+    description: 'Keep acquisition, quotation, takedown, and public/private boundaries defensible.',
+    ids: ['P0-01', 'P0-02', 'P0-04', 'P0-05', 'P0-07', 'P1-08', 'P1-09', 'P1-17'],
+  },
+  {
+    id: 'evidence-and-content-quality',
+    label: 'Evidence and content quality',
+    description: 'Make moments useful, complete, diverse, and meaningful instead of merely numerous.',
+    ids: ['P1-01', 'P1-03', 'P1-05', 'P1-06', 'P1-07', 'P1-13', 'P1-14'],
+  },
+  {
+    id: 'publishing-and-navigation',
+    label: 'Publishing and navigation',
+    description: 'Keep generated pages, links, encoding, and public artifacts reliable and calm to use.',
+    ids: ['P0-03', 'P0-06', 'P1-10', 'P1-11', 'P1-12', 'P2-01', 'P2-02', 'P2-04', 'P2-05', 'P2-06'],
+  },
+  {
+    id: 'operations-and-automation',
+    label: 'Operations and automation',
+    description: 'Turn processing, budgets, provenance, source monitoring, and daily runs into observable routines.',
+    ids: ['P1-02', 'P1-04', 'P1-15', 'P1-16', 'P2-03', 'P2-07', 'P2-08', 'P2-09'],
+  },
+];
+const featureGroups = featureDefinitions.map((feature) => {
+  const featureItems = feature.ids.map((id) => items.find((item) => item.id === id)).filter((item): item is BacklogItem => Boolean(item));
+  return { ...feature, items: featureItems, complete: featureItems.filter((item) => item.state === 'complete').length };
+});
+const completeCount = items.filter((item) => item.state === 'complete').length;
+const openCount = items.length - completeCount;
+const plannedCount = items.filter((item) => item.state === 'planned').length;
+const backlogDate = backlogText.match(/Last refreshed:\s*([^\n]+)/)?.[1]?.trim() ?? 'Not recorded';
+const stateLabel = (state: BacklogItem['state']) => ({ complete: 'Complete', planned: 'Planned', blocked: 'Blocked', open: 'Open' })[state];
+---
+
+<BaseLayout title="Prioritized backlog" description="Local-only view of the MomentGraph project backlog and next work. ">
+  <section class="page-intro backlog-intro">
+    <div class="eyebrow">Local operator view · planning source of truth</div>
+    <h1>What should happen next?</h1>
+    <p>A readable view of the prioritized backlog, organized around the product features and outcomes the work supports. This page is generated from <code>docs/prioritized-backlog-2026-07-15.md</code> and is intentionally excluded from the public GitHub Pages build.</p>
+    <div class="backlog-meta"><span>Last refreshed {backlogDate}</span><span>{items.length} tracked items</span><span>{openCount} still active</span></div>
+  </section>
+
+  <section class="backlog-summary" aria-label="Backlog summary">
+    <div><strong>{openCount}</strong><span>active items</span></div>
+    <div><strong>{completeCount}</strong><span>complete</span></div>
+    <div><strong>{plannedCount}</strong><span>planned</span></div>
+    <div><strong>{items.filter((item) => item.priority === 'P0' && item.state !== 'complete').length}</strong><span>open trust gates</span></div>
+  </section>
+
+  <section class="backlog-section">
+    <div class="section-kicker">At a glance</div>
+    <h2>Feature map</h2>
+    <p class="backlog-lead">The backlog is easier to act on when related work stays together. Priority remains visible on each item, but these feature areas are the main workstreams.</p>
+    <div class="backlog-lanes">
+      {featureGroups.map((group) => {
+        const percent = group.items.length ? Math.round((group.complete / group.items.length) * 100) : 0;
+        return <a class="backlog-lane" href={`#feature-${group.id}`}>
+          <div><span>Feature {String(featureGroups.indexOf(group) + 1).padStart(2, '0')}</span><strong>{group.label}</strong></div>
+          <p>{group.complete} of {group.items.length} complete</p>
+          <progress max={group.items.length || 1} value={group.complete} aria-label={`${group.label}: ${percent}% complete`}>{percent}%</progress>
+          <small>{percent}% complete</small>
+        </a>;
+      })}
+    </div>
+  </section>
+
+  <section class="backlog-section" id="active-work">
+    <div class="section-kicker">Feature workstreams</div>
+    <h2>Work grouped by outcome</h2>
+    <p class="backlog-lead">Expand an item for its reason, implementation boundary, dependencies, and acceptance criteria. Completed items remain visible as history, and every row retains its P0/P1/P2 priority.</p>
+    <div class="backlog-groups">
+      {featureGroups.map((group) => <section class="backlog-group backlog-feature" id={`feature-${group.id}`}>
+        <header class="backlog-group-heading"><div><span>Feature workstream</span><h3>{group.label}</h3><p>{group.description}</p></div><small>{group.complete}/{group.items.length} complete</small></header>
+        <div class="backlog-items">
+          {group.items.map((item) => <details class:list={['backlog-item', `backlog-item-${item.state}`]} open={item.priority === 'P0' && item.state !== 'complete'} id={item.id.toLowerCase()}>
+            <summary><span class="backlog-item-id">{item.id}</span><strong>{item.title}</strong><em>{item.priority} · {stateLabel(item.state)}</em></summary>
+            <div class="backlog-item-body">
+              <div class="backlog-copy"><span class="backlog-label">Why it matters</span><p>{item.why}</p></div>
+              {item.work && <div class="backlog-copy"><span class="backlog-label">Work</span><p>{item.work}</p></div>}
+              {item.dependencies && <div class="backlog-copy"><span class="backlog-label">Dependencies</span><p>{item.dependencies}</p></div>}
+              {item.doneWhen && <div class="backlog-copy backlog-acceptance"><span class="backlog-label">Acceptance</span><p>{item.doneWhen}</p></div>}
+            </div>
+          </details>)}
+        </div>
+      </section>)}
+    </div>
+  </section>
+
+  <aside class="backlog-notice"><strong>Local-only operator page</strong><span>The backlog can include private operational findings and unfinished work. It is available during local development at <code>/backlog/</code> and is removed before a production GitHub Pages build.</span></aside>
+</BaseLayout>

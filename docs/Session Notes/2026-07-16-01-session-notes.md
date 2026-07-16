@@ -20,6 +20,14 @@
 - Refreshed documentation after the GlobalTTStudio metric audit. The source state is 31 configured entries, 23 eligible/public entries, and 8 members-only entries; the local progress page now labels these stages separately.
 - Reworked `README.md` around the MomentGraph name and documented the current architecture, pipeline, LLM budget, public/private boundaries, GitHub Pages deployment, multi-KB workflow, future offline scope, and release checks.
 - Added denominator-aware percentages in parentheses to the progress summary's workflow-stage counts and documented the calculation in the table note.
+- Reviewed daily timer operation in `docs/daily-pipeline-automation-review-2026-07-16.md`. The individual Python stages and Codex CLI calls are usable without the ChatGPT app, but a timer-safe orchestrator is still missing. The review records the extraction idempotency gap, workset/lock/run-manifest needs, scheduler environment requirements, and the boundary around human review and public deployment.
+- Added a README section for the table-tennis KB: source channels and availability, forehand-loop-centered scope, shot hierarchy, evidence types, per-video TOCs, and editorial safeguards.
+- Reconciled recent studies into `docs/prioritized-backlog-2026-07-15.md`: added a study mapping table, expanded deterministic TOC follow-up, and added P1-17 for excerpt classification and overlap-regression protection. The recommended sequence now includes P1-14, P1-16, and P1-17.
+- Added the local-only `/backlog/` operator page. It parses the consolidated Markdown backlog into priority lanes, counts, status pills, expandable rationale/work/dependency/acceptance sections, and a production exclusion notice. Local and production-flagged Astro builds both pass; production omits the route.
+- Resolved the reported local `/backlog/` 404: port 4321 was serving Astro preview from the prior production artifact. Rebuilt the local artifact; the route now returns HTTP 200 and includes the backlog content.
+- Consolidated operator navigation into one local-only `/dashboard/` link. The dashboard links to Progress, Backlog, Pipeline, and Recent while the focused routes remain available directly. Production builds remove the dashboard and all operator pages.
+- Reworked the local-only `/backlog/` page around feature outcomes rather than separate P0/P1/P2 lanes. Four workstreams now group the related items, while every row keeps its priority and status badge; section spacing was tightened to reduce the gap between a feature and its subitems.
+- Added a study-to-backlog documentation contract to `AGENTS.md`, `docs/pipeline.md`, `docs/operations.md`, and `README.md`: studies must update the canonical Markdown backlog, rebuild/verify the generated local HTML backlog, and update relevant docs plus the session log/notes.
 
 ## Maintained planning sources
 
@@ -36,3 +44,4 @@
 5. Review the 139 deferred candidates and 35 proposed visual intervals before another expansion batch.
 6. Treat P1-14 as the next boundary-quality implementation item: measure mid-sentence and non-meaningful short moments before changing defaults.
 7. Review the new LLM budget defaults before the next extraction batch; adjust `config/processors.yaml` intentionally rather than bypassing the guard.
+8. Implement P1-16 in dry-run mode before registering any Windows Task Scheduler job; do not start unattended acquisition until the lock, workset, exit classes, and private run manifest exist.

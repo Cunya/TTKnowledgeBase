@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 const appRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const pagesRoot = path.join(appRoot, 'src', 'pages');
-const localOnlyPages = ['pipeline.astro', 'progress.astro', 'recent.astro'];
+const localOnlyPages = ['backlog.astro', 'dashboard.astro', 'pipeline.astro', 'progress.astro', 'recent.astro'];
 const movedPages = [];
 const productionBuild = process.env.GITHUB_ACTIONS === 'true' || process.env.PUBLIC_PRODUCTION_BUILD === 'true';
 

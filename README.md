@@ -17,6 +17,62 @@ The repository is currently named `TTKnowledgeBase`, but the product name is **M
 
 The current published table-tennis corpus contains 73 approved concepts, 121 supporting videos, and 1,814 evidence moments. Counts are maintained in the generated progress and quality reports; they will change as the corpus is reviewed.
 
+## Table Tennis knowledge base
+
+Table tennis is the first production knowledge base in MomentGraph. It is a source-grounded study guide for learning strokes, movement, timing, tactics, and practice methods from instructional video. The content is organized as a wiki rather than as a list of transcript summaries.
+
+### Sources and scope
+
+The initial source set is deliberately focused on two public YouTube channels:
+
+- **TT SpinMaster** (`@FreeCoachBradHan`, formerly configured as FreeCoachBradHan). The channel's coach attribution remains provisional; the repository does not assert an independently verified identity.
+- **GlobalTTStudio** (`@GlobalTTStudio`). Some configured entries are members-only or otherwise unavailable and are tracked as ineligible rather than retried indefinitely.
+
+The current collection emphasizes forehand-loop learning while also covering related table-tennis fundamentals: backhand and forehand strokes, serves and receive, spin, contact point, spacing, body coordination, weight transfer, recovery, errors, strategies, and drills. Source selection is recorded in `config/kbs/table-tennis/sources.yaml`; public availability and processing state are tracked separately from editorial approval.
+
+### Knowledge structure
+
+The table-tennis navigation uses a depth-aware topic tree. The main branches include:
+
+```text
+Table tennis
+├── Shots and strokes
+│   ├── Push
+│   │   ├── Forehand
+│   │   └── Backhand
+│   ├── Counter
+│   │   ├── Forehand
+│   │   └── Backhand
+│   ├── Loop
+│   │   ├── Forehand
+│   │   └── Backhand
+│   └── Block
+│       ├── Forehand
+│       └── Backhand
+├── Serves and receive
+├── Training and drills
+├── Tactics and strategies
+└── Mechanics, timing, spacing, and recovery
+```
+
+Shot-related concepts live beneath the relevant shot family, with durable subtopics such as mechanics, timing, contact, spacing, selection, common errors, and drills. A concept may be cross-listed when it genuinely belongs to more than one learning path, while its canonical YAML file remains the single editorial source of truth.
+
+### Evidence and video moments
+
+Each concept page combines a concise editorial explanation with traceable evidence:
+
+- **Spoken source** - a short transcript-backed citation with real segment IDs and a YouTube timestamp. It supports what the instructor says.
+- **Visual source** - a separately selected nearby window where the movement is actually visible. It may be inferred or manually verified and is the only source eligible for looping.
+- **Video moment** - a focused, repeatable clip grouped by meaning, with a link back to the source video and the corresponding concept.
+
+Per-video pages provide a chronological table of contents so a long lesson can be studied linearly. Concept pages collect moments from multiple videos when the corpus contains supporting evidence, making it possible to compare explanations and demonstrations without turning the site into a transcript mirror.
+
+### Editorial boundaries
+
+Codex CLI proposes concepts, evidence groupings, and wording from supplied transcripts; it does not approve public knowledge. Reviewed concept YAML under `content/kbs/table-tennis/concepts/` is required before publication. Transcript excerpts are kept short and high-overlap text is rephrased or deferred. Visual windows are never marked verified from transcript text alone, and unavailable or removed source videos are not bypassed.
+
+The table-tennis KB therefore remains useful even as the source catalog changes: it preserves original summaries, relationships, source links, and timestamps without copying a complete video transcript or hosting a public video archive.
+
 ## Architecture
 
 ```text
@@ -76,7 +132,7 @@ npm install
 npm run dev
 ```
 
-Open `http://127.0.0.1:4321/`. The local operator pages are available at `/progress/`, `/pipeline/`, and `/recent/`. They are intentionally removed from production builds.
+Open `http://127.0.0.1:4321/`. The local operator dashboard is available at `/dashboard/`; it links to the focused `/progress/`, `/backlog/`, `/pipeline/`, and `/recent/` management views. These operator routes are intentionally removed from production builds.
 
 To run the network-free fixture path from the repository root:
 
@@ -112,6 +168,8 @@ $env:PYTHONUTF8='1'
 ```
 
 The `cp` workflow drains eligible cached transcripts and candidates before selecting another controlled batch. It obeys the prioritized backlog, pacing, source-policy checks, and the block circuit breaker. Do not start a large scrape while a backlog gate is active.
+
+Every study or review also updates the canonical Markdown backlog, the generated local `/backlog/` view, and the relevant project documentation before it is considered complete. See [the study-to-backlog documentation contract](docs/pipeline.md#study-to-backlog-documentation-contract).
 
 Every published claim must cite real transcript segment IDs. Candidate JSON is a proposal, not public knowledge, and must be reviewed into canonical concept YAML. Spoken windows are kept short and focused; visual windows are separate and remain non-looping until a reviewer confirms that the footage actually demonstrates the concept.
 
@@ -160,7 +218,7 @@ For this repository, the project URL is:
 https://cunya.github.io/TTKnowledgeBase/
 ```
 
-Astro derives the project base path from `GITHUB_REPOSITORY` during Actions builds; local development uses `/`. Production builds remove `/progress/`, `/pipeline/`, and `/recent/`, along with their navigation links.
+Astro derives the project base path from `GITHUB_REPOSITORY` during Actions builds; local development uses `/`. Production builds remove `/dashboard/`, `/progress/`, `/backlog/`, `/pipeline/`, and `/recent/`, along with their navigation links.
 
 ## Multi-KB workflow
 

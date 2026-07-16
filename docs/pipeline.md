@@ -17,6 +17,17 @@ This project is a **local, operator-run publishing pipeline**, not a website tha
 | Publishing | Python validates and sanitizes the reviewed corpus, then copies only allowlisted data into the Astro public folder. | Run the publish command after review. |
 | Site build | Astro generates static concept, video, search, and KB pages. | Preview locally and deploy the generated site through GitHub Pages. |
 
+## Study-to-backlog documentation contract
+
+An analysis or study is not complete when its Markdown report is written. The result must be carried through the planning and operator surfaces:
+
+1. Record each actionable finding in `docs/prioritized-backlog-2026-07-15.md` with a priority, status, source study, dependencies, and acceptance criteria. Group related work under the appropriate feature workstream used by the local backlog page.
+2. Rebuild the Astro site locally so `/backlog/` renders the updated Markdown source. Verify that the feature summary, item status, and links are present; do not hand-edit generated HTML.
+3. Update the relevant operational documentation (`docs/pipeline.md`, `docs/operations.md`, README, or a domain/legal/content findings report) so the recommended process and the backlog item do not diverge.
+4. Add a dated entry to the session log and session notes, including the study-to-backlog IDs and verification performed.
+
+The Markdown backlog remains the planning source of truth. The HTML backlog is a generated local operator view and is intentionally excluded from the public GitHub Pages build.
+
 ## Data flow
 
 ```mermaid

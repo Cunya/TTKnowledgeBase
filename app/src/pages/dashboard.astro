@@ -1,0 +1,77 @@
+---
+import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import corpusData from '../../public/data/kbs/table-tennis/corpus.json';
+import type { Corpus } from '../types';
+
+const corpus = corpusData as Corpus;
+const backlogPath = fileURLToPath(new URL('../../../docs/prioritized-backlog-2026-07-15.md', import.meta.url));
+const backlogText = readFileSync(backlogPath, 'utf-8');
+const backlogItems = backlogText.match(/^###\s+P[012]-\d+/gm)?.length ?? 0;
+const completeBacklogItems = backlogText.match(/^\*\*Status:\*\*\s*Complete/gim)?.length ?? 0;
+const activeBacklogItems = Math.max(0, backlogItems - completeBacklogItems);
+const base = import.meta.env.BASE_URL;
+const managementPages = [
+  {
+    href: `${base}progress/`,
+    number: '01',
+    label: 'Progress',
+    description: 'Source inventory, workflow completion, LLM budget, and processing state.',
+    metric: `${corpus.videos.length} videos · ${corpus.concepts.length} concepts`,
+  },
+  {
+    href: `${base}backlog/`,
+    number: '02',
+    label: 'Backlog',
+    description: 'Prioritized trust, product, and scale work with acceptance criteria.',
+    metric: `${backlogItems} tracked items`,
+  },
+  {
+    href: `${base}pipeline/`,
+    number: '03',
+    label: 'Pipeline',
+    description: 'The full processing lineage from timed captions to reviewed static knowledge.',
+    metric: '8 processing stages',
+  },
+  {
+    href: `${base}recent/`,
+    number: '04',
+    label: 'Recent additions',
+    description: 'Newest source lessons and concepts connected to the current corpus.',
+    metric: 'Local editorial view',
+  },
+];
+---
+
+<BaseLayout title="Dashboard" description="Local-only management dashboard for the MomentGraph table-tennis knowledge base.">
+  <section class="page-intro dashboard-intro">
+    <div class="eyebrow">Local operator dashboard</div>
+    <h1>Keep the knowledge base moving.</h1>
+    <p>One place for the management views used while processing, reviewing, and publishing the table-tennis knowledge base. The public site has no dashboard or operator data.</p>
+    <div class="dashboard-meta"><span>{corpus.concepts.length} concepts</span><span>{corpus.videos.length} supporting videos</span><span>{activeBacklogItems} active backlog signals</span></div>
+  </section>
+
+  <section class="dashboard-section" aria-labelledby="management-pages">
+    <div class="section-kicker">Management views</div>
+    <h2 id="management-pages">Choose a workspace</h2>
+    <nav class="dashboard-index" aria-label="Management pages">
+      {managementPages.map((page) => <a href={page.href}>
+        <span class="dashboard-index-number">{page.number}</span>
+        <span class="dashboard-index-copy"><strong>{page.label}</strong><small>{page.description}</small></span>
+        <span class="dashboard-index-metric">{page.metric}<b aria-hidden="true">&#8594;</b></span>
+      </a>)}
+    </nav>
+  </section>
+
+  <section class="dashboard-section dashboard-boundary">
+    <div class="section-kicker">Operating boundary</div>
+    <h2>Local management, public knowledge</h2>
+    <div class="dashboard-boundary-grid">
+      <div><strong>Private work</strong><p>Progress, backlog, pipeline notes, recent-addition views, transcripts, candidates, budgets, and review media stay on the operator's machine.</p></div>
+      <div><strong>Public output</strong><p>GitHub Pages receives only reviewed, sanitized knowledge with source links and timestamped evidence. Management pages are removed before production builds.</p></div>
+    </div>
+  </section>
+
+  <aside class="dashboard-notice"><strong>Local-only page</strong><span>Use <code>/dashboard/</code> during local development. The route and its navigation link are excluded by the production build script.</span></aside>
+</BaseLayout>

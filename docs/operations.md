@@ -62,6 +62,16 @@ The `cp` shortcut follows the same order: finish eligible cached transcripts and
 
 The `cm` shortcut is message-only: review the current local changes and return a suggested commit message with completed features written in past tense. Do not stage files, run `git commit`, or create a commit; the operator commits manually.
 
+## Study and backlog synchronization
+
+Treat every architecture, legal/platform, content, pipeline, or quality study as an input to the project backlog. Before closing the study:
+
+- add or update its actionable findings in `docs/prioritized-backlog-2026-07-15.md`, including priority, status, source study, dependencies, and acceptance criteria;
+- rebuild the local site and verify `/backlog/`, which generates the feature-oriented HTML view from that Markdown file; and
+- update the relevant process or findings documentation and the dated session log/notes.
+
+The Markdown file is canonical; the HTML page is a generated local management view and is not published to GitHub Pages. If a study produces no actionable work, record that conclusion in the study and session notes instead of creating an empty backlog item.
+
 ## 5. Publish and verify
 
 ```powershell

@@ -4,7 +4,7 @@ This is the consolidated backlog from the architecture review, content review, l
 
 It is intentionally ordered. The project should complete the blocking and trust items before another large scrape or extraction batch.
 
-Last refreshed: 2026-07-16 10:19 EEST.
+Last refreshed: 2026-07-16 11:07 EEST.
 
 ## Current baseline
 
@@ -17,6 +17,21 @@ Last refreshed: 2026-07-16 10:19 EEST.
 - Per-video detail pages and chronological TOCs are implemented.
 - Python validation, Astro checks, production build, and published-artifact parity currently pass.
 - LLM tasks now use a private adjustable daily token budget with extraction, rephrase, and benchmark caps; exhausted work is deferred before Codex execution.
+
+## Recent study reconciliation - 2026-07-16
+
+The latest studies were checked against the backlog rather than left as standalone reports:
+
+| Study or review | Findings carried into the backlog | Current item(s) |
+| --- | --- | --- |
+| `docs/daily-pipeline-automation-review-2026-07-16.md` | ChatGPT app shortcuts are not a runtime dependency, but unattended runs need a lock, idempotent workset, run manifest, exit classes, scheduler environment, and explicit human gates. | P1-16 (planned) |
+| `docs/moment-boundary-analysis-study-2026-07-16.md` | Caption-derived moments can start/end mid-sentence or be too short; boundary flags, context separation, a gold set, and script-first/LLM-optional phases are required. | P1-14 |
+| `docs/toc-automation-review.md` | TOCs should remain deterministic and build-time LLM-free; creator chapters and pause/keyword grouping are optional inputs, while anchors and timestamps need permanent validation. | P0-06, P2-06 |
+| `docs/content-quotation-audit-2026-07-15.md` | Complete/high-ratio overlaps were cleared, but excerpt type, repeated-expression monitoring, and a regression validator remain needed. | P0-01 follow-up; new P1-17 |
+| `docs/legal-review-youtube-2026-07-15.md` and `docs/youtube-knowledge-project-precedents-2026-07-15.md` | Public output must remain source-linked analysis; withdrawal, acquisition provenance, private-mode boundaries, and public-artifact checks remain prerequisites for expansion. | P0-02, P0-04, P0-05, P0-07, P1-08, P1-09 |
+| `docs/project-review-2026-07-16-00.md` | The corpus is evidence-dense, visual verification is still zero, source diversity and empty leaves need attention, and generated status/encoding/URL checks should stay ahead of broad scraping. | P1-01, P1-03, P1-04, P1-05, P1-07, P1-10, P1-11, P1-12, P2-09 |
+
+The numerical baseline above reflects the latest published artifacts, not the older snapshot values quoted in individual dated reviews. When a study and the current artifacts differ, the generated corpus and quality reports remain authoritative for counts.
 
 ## Priority definitions
 
@@ -252,13 +267,33 @@ Last refreshed: 2026-07-16 10:19 EEST.
 
 **Done when:** mid-sentence and non-meaningful short-window rates are measured and reduced, every expanded/split window preserves segment-level provenance and the 30-second limit, and low-confidence cases are deferred rather than silently published. See `docs/moment-boundary-analysis-study-2026-07-16.md`.
 
-### P1-15 - Add an adjustable daily LLM budget and task deferral (complete 2026-07-16)
+### P1-15 — Add an adjustable daily LLM budget and task deferral (complete 2026-07-16)
 
 **Why:** extraction, rephrasing, and benchmarking all invoke Codex, but there was no shared daily guard or visible per-task allowance. A long local run could consume the operator's available usage before later, higher-priority work.
 
 **Work:** reserve a conservative prompt-plus-output estimate before each Codex call; reconcile it with reported usage; enforce daily and task caps; record a private per-KB ledger; defer extraction/rephrase/benchmark work when a cap is reached; expose `llm-budget --kb <id>` and keep limits adjustable in `config/processors.yaml`.
 
 **Done when:** no call starts beyond the configured daily or task allowance, deferred work is recorded without creating partial candidates, successful usage is visible by task and date, and disabling or changing the guard requires an explicit config edit. **Status:** Complete; covered by `tests/test_llm_budget.py`, processor tests, Ruff, CLI integration, and the local-only `/progress/` budget section.
+
+### P1-16 — Add an unattended daily-run orchestrator (new 2026-07-16)
+
+**Why:** the individual Python and Codex CLI stages are scriptable, but there is no timer-safe command that replaces the ChatGPT app's `cp` coordination. Running `extract-concepts` without a video ID can reprocess every normalized transcript, and a scheduled job has no single lock, workset, run manifest, or exit-class contract.
+
+**Work:** add a dry-run-first `daily-run` command and per-KB automation policy; acquire a single-run lock; drain cached work before network acquisition; select only eligible, selected, not-yet-complete videos; honor retry cooldowns, the block circuit breaker, the backlog gate, and the daily LLM budget; extract only missing/stale candidates; build the review queue; keep auto-triage, visual approval, auto-rephrase, commit, push, and deployment explicitly opt-in or disabled; write a private run manifest and machine-readable exit classes; provide a Windows Task Scheduler wrapper without registering it automatically.
+
+**Dependencies:** P1-02 cached candidate triage, P1-15 daily LLM budget, P0-04 source quarantine/removal controls, and a confirmed local Codex CLI authentication/runtime environment.
+
+**Done when:** a scheduled invocation runs without ChatGPT app assistance, two invocations cannot overlap, reruns are idempotent unless explicitly forced, blocks/budget/auth/validation failures defer or stop safely with a private manifest, and no unreviewed knowledge or private processing data is published. See `docs/daily-pipeline-automation-review-2026-07-16.md`. **Status:** Planned; review complete, implementation not started.
+
+### P1-17 - Add excerpt classification and overlap regression protection (new 2026-07-16)
+
+**Why:** the quotation audit cleared complete and high-ratio matches, but the public schema still does not distinguish an editorial summary from an intentional source quotation. Lower-ratio repeated phrases and duplicate expressions can recur as new extraction batches arrive, making the public corpus look more like transcript reproduction and weakening independent analysis.
+
+**Work:** add `excerpt_kind: editorial_summary|source_quote` with `editorial_summary` as the default; require visible attribution and short length for `source_quote`; run a deterministic overlap screen against cited transcript segments and across concepts; report new high-overlap, repeated-expression, and unresolved duplicate groups; block or defer publication when a new complete/high-ratio match lacks an explicit reviewed exception.
+
+**Dependencies:** P0-01 rephrasing policy, P0-02 acquisition provenance, and the existing candidate/review queue schema.
+
+**Done when:** every published excerpt has an explicit kind, intentional quotes render with attribution, a new extraction batch cannot reintroduce complete/high-ratio unmarked transcript matches, and repeated wording across related concepts is visible in the review report. **Status:** Planned; the post-pass audit is clean for complete/high-ratio matches but 28 shorter partial overlaps remain for monitoring. See `docs/content-quotation-audit-2026-07-15.md`.
 
 ## P2 — harden and scale
 
@@ -284,7 +319,9 @@ Evaluate `youtube-nocookie.com`, click-to-load players, consent behavior, and a 
 
 ### P2-06 — Use deterministic TOC inputs before optional LLM chapters
 
-Prefer creator chapters and transcript structure heuristics first. Consider LLM chapter proposals only during extraction/review, never as a required build-time call; validate all proposals against timestamps and source text.
+Prefer creator chapters and transcript structure heuristics first. Consider LLM chapter proposals only during extraction/review, never as a required build-time call; validate all proposals against timestamps and source text. Keep the current evidence-derived TOC as the zero-token fallback, and treat creator chapter labels as source metadata rather than new knowledge claims.
+
+**Done when:** creator chapters can be shown when available, deterministic pause/keyword grouping can provide secondary navigation when chapters are absent, and every generated section still passes the permanent route, anchor, ordering, timestamp, and public-data validation checks from P0-06. See `docs/toc-automation-review.md`.
 
 ### P2-07 — Add model-cost and extraction provenance reporting
 
@@ -312,7 +349,8 @@ Track relation counts, concepts with no outgoing relations, cross-listed concept
 3. P1-01 and P1-02 — verify visuals and process existing candidates before more ingestion.
 4. P1-03, P1-04, P1-05, and P1-07 — improve evidence usefulness, operational truth, source diversity, and navigation completeness.
 5. P1-06, P1-08, P1-09, P1-10, P1-11, and P1-12 — improve hierarchy, private continuity, deployment paths, encoding quality, and source-title presentation.
-6. P2 hardening and scale work.
+6. P1-14, P1-16, and P1-17 - improve moment boundaries, make daily processing timer-safe, and prevent quotation-risk regressions.
+7. P2 hardening and scale work, including the deterministic TOC input enhancements in P2-06.
 
 ## Completed work not to re-open as backlog
 

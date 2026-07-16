@@ -37,9 +37,7 @@ const showLocalDocumentation = import.meta.env.PUBLIC_PRODUCTION_BUILD !== 'true
         <a href={kbId ? `${base}kb/${kbId}/` : base}>Knowledge bases</a>
         {kbId && <a href={`${base}kb/${kbId}/videos/`}>Videos</a>}
         <a href={`${base}methodology/`}>Method</a>
-        {showLocalDocumentation && <a href={`${base}pipeline/`}>Pipeline</a>}
-        {showLocalDocumentation && <a href={`${base}progress/`}>Progress</a>}
-        {showLocalDocumentation && <a href={`${base}recent/`}>Recent</a>}
+        {showLocalDocumentation && <a href={`${base}dashboard/`}>Dashboard</a>}
         <a class="support-nav" href={`${base}support/`}>Support</a>
       </nav>
     </header>
