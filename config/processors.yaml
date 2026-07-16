@@ -7,3 +7,19 @@ codex:
   timeout_seconds: 300
   max_segments_per_job: 80
   overlap_segments: 8
+
+# Local, per-knowledge-base daily token guard for all Codex-backed tasks.
+# Adjust these values before a run; the private ledger is written under
+# data/manifests/<kb>/llm-budget.json and resets by the configured date.
+llm_budget:
+  enabled: true
+  timezone: Europe/Helsinki
+  daily_token_limit: 500000
+  task_token_limits:
+    extraction: 400000
+    rephrase: 100000
+    benchmark: 100000
+  estimated_output_tokens:
+    extraction: 8000
+    rephrase: 1000
+    benchmark: 8000

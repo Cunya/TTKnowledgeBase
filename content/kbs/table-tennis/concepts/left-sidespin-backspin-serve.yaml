@@ -209,6 +209,38 @@ evidence:
       segment_ids:
         - SF0Sv2ZzrRI:00180
         - SF0Sv2ZzrRI:00183
+  - id: E6sGbY4sQH0-concept-left-sidespin-backspin-serve-reviewed
+    evidence_type: definition
+    excerpt: A serve variation that combines sidespin and backspin, described as the hook push with a sideways hooking brush and weight transfer.
+    reason: Directly names the serve as side spin back spin and repeats that label later.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: E6sGbY4sQH0
+      start_ms: 125920
+      end_ms: 150720
+      url: https://www.youtube.com/watch?v=E6sGbY4sQH0&t=125s
+      segment_ids:
+        - E6sGbY4sQH0:00050
+        - E6sGbY4sQH0:00055
+        - E6sGbY4sQH0:00056
+  - id: RjgITcuxl5I-concept-left-sidespin-backspin-serve-reviewed
+    evidence_type: definition
+    excerpt: A serve that combines left sidespin with backspin by brushing laterally, so the ball curves and is difficult to flick or loop.
+    reason: The speaker explicitly says they will teach left side spin serves and describes them as producing side spin back spin.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: RjgITcuxl5I
+      start_ms: 178160
+      end_ms: 195800
+      url: https://www.youtube.com/watch?v=RjgITcuxl5I&t=178s
+      segment_ids:
+        - RjgITcuxl5I:00074
+        - RjgITcuxl5I:00077
+        - RjgITcuxl5I:00079
 relations:
   - relation_type: variation_of
     target_concept_id: concept-sidespin-topspin-serve

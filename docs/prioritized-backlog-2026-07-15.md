@@ -4,15 +4,19 @@ This is the consolidated backlog from the architecture review, content review, l
 
 It is intentionally ordered. The project should complete the blocking and trust items before another large scrape or extraction batch.
 
+Last refreshed: 2026-07-16 10:19 EEST.
+
 ## Current baseline
 
-- 73 concepts, 68 published videos, and 1,321 published evidence items.
-- Review queue: 695 items — 653 accepted, 41 deferred, 1 rejected.
-- Visual coverage: 0 `verified_visual_demo`, 485 `transcript_inferred`, 633 `not_visual`.
+- 73 concepts, 121 published videos, and 1,814 published evidence items.
+- Review queue: 1,200 resolved items — 1,060 accepted, 139 deferred, and 1 rejected; no candidates remain pending.
+- Visual coverage: 0 `verified_visual_demo`, 996 `transcript_inferred`, 788 `not_visual`.
+- Repetition screen: 1,258 distinct excerpt strings; 426 exact repeated-excerpt groups cover 982 moments.
 - 0 complete normalized transcript/excerpt matches; 0 high-ratio near-verbatim matches after the P0-01 editorial pass. A follow-up screen still finds 28 shorter partial overlaps for routine monitoring.
-- 16 concepts have only one supporting source.
+- 2 concepts have only one supporting source: `defensive-rhythm-variation` and `racket-contact-constraint-drill`.
 - Per-video detail pages and chronological TOCs are implemented.
 - Python validation, Astro checks, production build, and published-artifact parity currently pass.
+- LLM tasks now use a private adjustable daily token budget with extraction, rephrase, and benchmark caps; exhausted work is deferred before Codex execution.
 
 ## Priority definitions
 
@@ -137,17 +141,17 @@ It is intentionally ordered. The project should complete the blocking and trust 
 
 ### P1-02 — Process pending candidates before another large scrape
 
-**Status:** Complete for the cached queue triage (2026-07-15). The new `process-pending` command accepted 146 high-confidence matches and added 145 focused evidence moments; one duplicate candidate ID was repaired with a deterministic evidence suffix. A subsequent controlled eight-video batch added 57 accepted evidence moments and left 13 more weak or new-taxonomy candidates explicitly deferred. The formerly one-concept videos were checked: only `hDXIuFwtrHE` remains one-concept because it had no pending candidate that safely mapped to another existing concept.
+**Status:** Controlled expansion and cached queue triage are complete through batch 15 (2026-07-16). The `process-pending` command accepted 146 initial high-confidence matches and added 145 focused evidence moments; subsequent controlled batches accepted additional matches, including 23 candidates and 30 evidence moments from the latest two-public-video continuation. Four members-only entries were skipped. The current queue has 1,060 accepted, 139 deferred, and 1 rejected item, with no pending candidates. The formerly one-concept videos were checked: the new batch removed `push-spin-power-progression` from the single-source list.
 
 **Why:** the queue had 174 pending items. Nine published videos had only one concept in their TOC; eight of those had additional local candidates that could be checked against existing concepts.
 
 **Work:** review the pending candidates for the one-concept videos first, then clear the remaining queue in source batches. For `9OxcCPWI-k8`, five additional candidates are pending beyond `Backhand serve`.
 
-**Done when:** every pending item is accepted, rejected, or explicitly deferred with a reason, and one-concept videos have been checked against their candidate set. **Evidence:** queue state is now 653 accepted, 41 deferred, 1 rejected; corpus validation passes at 73 concepts, 68 videos, and 1,321 evidence moments.
+**Done when:** every pending item is accepted, rejected, or explicitly deferred with a reason, and one-concept videos have been checked against their candidate set. **Evidence:** published corpus validates at 73 concepts, 121 videos, and 1,814 evidence moments; all 1,200 queue items have explicit decisions.
 
 ### P1-03 — Localize moments and collapse repetition
 
-**Why:** evidence is concentrated and repetitive: 814 moments share repeated excerpt strings and some concepts have over 100 moments.
+**Why:** evidence is concentrated and repetitive: 426 exact repeated-excerpt groups cover 982 moments, and some concepts have over 100 moments. `forehand-loop-swing-path` is the largest outlier at 132 moments.
 
 **Work:**
 
@@ -160,15 +164,15 @@ It is intentionally ordered. The project should complete the blocking and trust 
 
 ### P1-04 — Generate progress and quality data instead of hand-maintaining it
 
-**Why:** progress and quality pages/docs still contain hand-maintained historical counts, even though the current processor artifacts now report 0 pending, 1,321 evidence items, and 68 published videos.
+**Why:** progress and quality pages/docs still contain hand-maintained historical counts, even though the current processor artifacts now report no pending candidates, 1,814 evidence items, and 121 published videos.
 
-**Work:** emit a versioned `progress.json` and quality report from processor artifacts; render Astro and Markdown views from that data; include generation timestamp and explicit metric names.
+**Work:** emit a versioned `progress.json` and quality report from processor artifacts; render Astro and Markdown views from that data; include generation timestamp and explicit metric names. The current local page now derives the GlobalTTStudio configured/eligible split from the corpus plus the explicit members-only set, labels the configured stage separately from eligibility, and shows denominator-aware percentages beside workflow-stage counts.
 
 **Done when:** README, progress, pipeline, source-progress, and quality reports cannot silently drift from the corpus manifest.
 
 ### P1-05 — Prioritize second-source coverage
 
-**Why:** 16 concepts have only one supporting source, and the published channel mix is uneven.
+**Why:** 2 concepts have only one supporting source, and the published channel mix is uneven.
 
 **Work:** make source diversity a review metric and prioritize another channel/video for single-source concepts before adding more moments to already concentrated concepts.
 
@@ -184,7 +188,7 @@ It is intentionally ordered. The project should complete the blocking and trust 
 
 ### P1-07 — Resolve taxonomy placeholders
 
-**Why:** seven leaf nodes currently have no concept content, including several push/block/flick leaves and Error correction.
+**Why:** seven leaf nodes currently have no concept content: forehand push, backhand push, backhand counter, forehand block, backhand block, forehand flick, and Error correction.
 
 **Work:** mark them as planned, populate them, or remove them until content exists.
 
@@ -205,6 +209,56 @@ It is intentionally ordered. The project should complete the blocking and trust 
 **Work:** export code, taxonomy, navigation, concept definitions, relationships, review decisions, source IDs/URLs, permissions, hashes, and status. Encrypt the local backup and keep it outside the public artifact.
 
 **Done when:** the export is reproducible, local-only, access-controlled, and clearly excludes unlicensed source redistribution by default.
+
+### P1-10 - Verify the project-qualified GitHub Pages URL
+
+**Why:** the deployment workflow sets `SITE_URL` to the owner root (`https://<owner>.github.io`) while the Astro base path is repository-qualified for project Pages. Canonical or metadata URLs can therefore omit `/TTKnowledgeBase/`, recreating the earlier 404/confusing-link failure mode.
+
+**Work:** derive `SITE_URL` from `github.repository` (or configure it explicitly), add a production-like build test with `GITHUB_REPOSITORY=cunya/TTKnowledgeBase`, and verify the root, KB, video, and concept routes under the project path.
+
+**Done when:** generated site metadata and all internal links resolve under `https://<owner>.github.io/<repository>/` in a production-like build, while local development remains rooted at `/`.
+
+### P1-11 - Remove UTF-8 mojibake from published UI and workflow labels
+
+**Why:** user-visible strings still contain corrupted sequences such as `Â·`, `â€”`, and `â€œ` in the shared layout, progress page, inventory data, and GitHub Actions run names. This reduces trust and makes timestamps, separators, and titles harder to read.
+
+**Work:** normalize affected tracked files as UTF-8, add a deterministic scan for replacement/mojibake sequences to CI, and verify rendered titles, labels, and source names in the production build.
+
+**Done when:** the scan is clean, the rendered site contains no known mojibake sequences, and source titles preserve intentional punctuation and emoji.
+
+### P1-12 - Separate source-title attribution from display styling
+
+**Why:** ten published source video titles contain promotional all-caps fragments, including `SUCKS`, `STOP`, `SMASH`, `FAST`, and one fully uppercase title. These are original YouTube metadata, not missed transcript rephrasing, but they dominate the visual hierarchy and can make the site feel like it is repeating promotional copy.
+
+**Work:** retain the exact source title in provenance and source inventories, add an optional normalized `display_title` for site headings and TOCs, and show the original title on the source detail/attribution view. Do not rewrite source metadata in canonical records without an explicit provenance field.
+
+**Done when:** source links and attribution preserve the exact original title, while concept/video indexes and TOCs use a readable display form for titles with promotional capitalization; titles without a meaningful change remain unchanged.
+
+### P1-13 - Remove transcript framing from moment titles (complete 2026-07-16)
+
+**Why:** evidence excerpts can begin with extraction scaffolding such as “The transcript explicitly defines ...”, which makes a visible moment title describe the pipeline instead of the table-tennis idea.
+
+**Work:** normalize transcript and speaker reporting leads at the shared display layer. Preserve the canonical excerpt, reason, source URL, and timestamp unchanged for provenance and review.
+
+**Done when:** visible TOC and evidence titles read as standalone editorial statements, including definition phrasing such as “Acceleration: a slow-soft backswing followed by a fast release,” with no transcript-reporting lead.
+
+**Status:** Complete. Implemented in `app/src/lib/videoToc.ts`; Astro diagnostics and the 201-page static build passed on 2026-07-16.
+
+### P1-14 - Align moment windows to sentence and meaningful-duration boundaries
+
+**Why:** the current span resolver uses the first and last cited caption segments. Caption cues can begin or end mid-sentence, and a technically valid three-second fragment may not contain enough instructional meaning to stand alone.
+
+**Work:** implement caption-only sentence-like unit merging and boundary snapping first; add `starts_mid_sentence`, `ends_mid_sentence`, `too_short`, and `needs_context` flags; keep claim-support citations separate from optional playback context; add review actions and a gold-set evaluation before enabling authorized local word/prosody alignment or semantic change-point proposals.
+
+**Done when:** mid-sentence and non-meaningful short-window rates are measured and reduced, every expanded/split window preserves segment-level provenance and the 30-second limit, and low-confidence cases are deferred rather than silently published. See `docs/moment-boundary-analysis-study-2026-07-16.md`.
+
+### P1-15 - Add an adjustable daily LLM budget and task deferral (complete 2026-07-16)
+
+**Why:** extraction, rephrasing, and benchmarking all invoke Codex, but there was no shared daily guard or visible per-task allowance. A long local run could consume the operator's available usage before later, higher-priority work.
+
+**Work:** reserve a conservative prompt-plus-output estimate before each Codex call; reconcile it with reported usage; enforce daily and task caps; record a private per-KB ledger; defer extraction/rephrase/benchmark work when a cap is reached; expose `llm-budget --kb <id>` and keep limits adjustable in `config/processors.yaml`.
+
+**Done when:** no call starts beyond the configured daily or task allowance, deferred work is recorded without creating partial candidates, successful usage is visible by task and date, and disabling or changing the guard requires an explicit config edit. **Status:** Complete; covered by `tests/test_llm_budget.py`, processor tests, Ruff, CLI integration, and the local-only `/progress/` budget section.
 
 ## P2 — harden and scale
 
@@ -242,7 +296,7 @@ Periodically check public/embedding status and display a neutral unavailable sta
 
 ### P2-09 — Add graph quality reporting
 
-Track relation counts, concepts with no outgoing relations, cross-listed concepts, prerequisite cycles, single-source concepts, and relation-review coverage. The current graph is connected, but some concepts still need semantic links.
+Track relation counts, concepts with no outgoing relations, cross-listed concepts, prerequisite cycles, single-source concepts, and relation-review coverage. Six concepts currently have no outgoing relation, so an overall connectedness signal is not enough to describe local graph quality.
 
 ## Deferred by design
 
@@ -256,8 +310,8 @@ Track relation counts, concepts with no outgoing relations, cross-listed concept
 1. P0-01, P0-02, P0-03, and P0-04 — reduce quotation, acquisition, freshness, and takedown risk.
 2. P0-05 through P0-07 — make the public contract, link integrity, and precedent-informed content boundary explicit.
 3. P1-01 and P1-02 — verify visuals and process existing candidates before more ingestion.
-4. P1-03, P1-04, and P1-05 — improve evidence usefulness, operational truth, and source diversity.
-5. P1-06 through P1-09 — improve hierarchy and private continuity.
+4. P1-03, P1-04, P1-05, and P1-07 — improve evidence usefulness, operational truth, source diversity, and navigation completeness.
+5. P1-06, P1-08, P1-09, P1-10, P1-11, and P1-12 — improve hierarchy, private continuity, deployment paths, encoding quality, and source-title presentation.
 6. P2 hardening and scale work.
 
 ## Completed work not to re-open as backlog
@@ -269,3 +323,4 @@ Track relation counts, concepts with no outgoing relations, cross-listed concept
 - Low-cost `gpt-5.4-mini` default profile.
 - Public/private data boundary and publish-copy parity checks.
 - Local-only progress, pipeline, and recent-additions pages.
+- Deterministic cleanup of transcript-reporting leads from visible moment titles.

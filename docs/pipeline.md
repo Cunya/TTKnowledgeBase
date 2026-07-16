@@ -9,6 +9,7 @@ This project is a **local, operator-run publishing pipeline**, not a website tha
 | Source discovery | `yt-dlp` lists channel or playlist videos. | Choose relevant videos and record them in the KB source configuration. |
 | Ingestion | Python fetches metadata and available timed captions and assigns stable segment IDs. | Supply video URLs, choose transcript languages, and investigate unavailable/member-only videos. |
 | Knowledge extraction | The processor invokes `codex exec` with the transcript, taxonomy, known concepts, and a strict output schema. | Authenticate Codex, choose the configured model, and rerun failed jobs. |
+| LLM budget | A private daily token ledger reserves an estimate before each extraction, rephrase, or benchmark call and records reported usage afterward. Exhausted daily or task caps defer work before subprocess execution. | Adjust `llm_budget` in `config/processors.yaml`, inspect `llm-budget --kb <id>`, and decide when deferred work should resume. |
 | Candidate resolution | The review-queue builder proposes matches using names, aliases, fuzzy matching, and shared evidence. | Accept, reject, merge, rename, and edit concepts. No candidate becomes public merely because an LLM proposed it. |
 | Spoken evidence | Validation checks every approved claim against real transcript segment IDs and canonical YouTube timestamps. | Check that the excerpt supports the editorial wording. |
 | Excerpt safety | The deterministic overlap screen flags complete/high-ratio transcript matches; `rephrase-excerpts` or `publish --auto-rephrase-high-overlap` asks the configured low-cost Codex model for an editorial summary and verifies that the rewrite no longer has high overlap. | Review the rewrite when it changes a canonical excerpt; the source metadata and cited timestamps remain unchanged. |
@@ -89,6 +90,33 @@ python -m processors.cli extract-concepts --kb table-tennis --engine codex --vid
 The Python processor is the caller. It starts `codex exec` as a subprocess using the settings in `config/processors.yaml`. The default profile uses `gpt-5.4-mini`, low reasoning, a strict Pydantic-generated JSON schema, a read-only sandbox, an ephemeral session, and a five-minute timeout. The stronger `gpt-5.4` profile is configured only for an explicit editorial retry; automatic escalation remains disabled. Codex receives transcript text and segment IDs, not downloaded video.
 
 The response is validated before it is saved to `data/derived/<kb>/<video-id>.candidates.json`. The output records the Codex CLI version, model, reasoning setting, prompt/schema versions, and input hash. Invalid output or a failed command does not reach publishing.
+
+### Daily LLM budget and deferral
+
+All Codex-backed production tasks share a local per-knowledge-base ledger at `data/manifests/<kb>/llm-budget.json`. The defaults are configured in `config/processors.yaml`:
+
+```yaml
+llm_budget:
+  enabled: true
+  timezone: Europe/Helsinki
+  daily_token_limit: 500000
+  task_token_limits:
+    extraction: 400000
+    rephrase: 100000
+    benchmark: 100000
+```
+
+The processor estimates prompt plus output tokens before starting Codex. It refuses the call when either the daily total or the task cap would be exceeded, records a deferred event, and lets the CLI continue without producing a partial candidate. Completed calls reconcile the reservation with Codex-reported `input_tokens` and `output_tokens`; when usage is unavailable, the estimate is charged conservatively. The ledger is private and ignored by Git.
+
+Use the status command to see the current day, remaining allowance, per-task usage, calls, and deferrals:
+
+```powershell
+python -m processors.cli llm-budget --kb table-tennis
+```
+
+To change the allowance, edit `config/processors.yaml` before the next run. Set `enabled: false` only for an explicit operator decision; the default is enabled. Deferred extraction videos are listed in the private `data/manifests/<kb>/llm-deferred.json` record. The budget is a guard against unplanned usage, not a billing estimate, and it does not alter the configured model or reasoning profile.
+
+If the optional auto-rephrase stage reaches its cap, `publish` records the deferral and exits before rebuilding the public corpus. This prevents the budget guard from weakening the excerpt-safety gate.
 
 ### 3a. Compare extraction-model output quality before changing the default
 
@@ -205,7 +233,7 @@ I did call the repository commands manually from Codex's terminal rather than by
 
 This means the pipeline is repeatable, but it is intentionally not fully unattended. Collection, extraction, validation, and build are scripted; source curation, knowledge approval, and visual-example approval are editorial gates.
 
-As of 2026-07-15, the published table-tennis corpus contains 73 approved concepts, 68 supporting videos, and 1,321 non-demo evidence moments. The queue contains 653 accepted, 41 explicitly deferred, and 1 rejected candidate. The P1-02 cached review pass incorporated 145 focused transcript moments from 146 high-confidence matches; the controlled follow-up batch incorporated 57 more, while deferred items remain out of the public corpus until reviewed. Every concept participates in the semantic relation graph. Exact accepted-candidate overlap, candidate fingerprints, navigation coverage, the 30-second spoken-window limit, large citation gaps, visual verification state, and public artifact consistency are enforced during validation.
+As of 2026-07-16, the published table-tennis corpus contains 73 approved concepts, 121 supporting videos, and 1,814 non-demo evidence moments. The review queue contains 1,060 accepted, 139 explicitly deferred, and 1 rejected candidate; no candidates remain pending. The P1-02 cached review pass and controlled follow-up batches continue to incorporate only explicitly accepted matches; the latest two-public-video GlobalTTStudio continuation added 23 accepted candidates and 30 focused evidence moments, while deferred items remain out of the public corpus until reviewed. Every concept participates in the semantic relation graph. Exact accepted-candidate overlap, candidate fingerprints, navigation coverage, the 30-second spoken-window limit, large citation gaps, visual verification state, and public artifact consistency are enforced during validation.
 
 CI uses `validate-published` because private normalized transcripts are intentionally absent from Git. This checks the sanitized corpus model, graph, navigation, evidence windows, visual-review consistency, manifest hash/counts, queue overlap, encoding quality, and byte-for-byte equality between the canonical publish output and Astro public copy. Local maintainers still run the stronger transcript-backed `validate` command before publishing.
 

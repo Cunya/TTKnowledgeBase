@@ -23,6 +23,7 @@
 - Track extracted, fully reviewed, and published as independent states. A video can be published through one approved evidence moment while other candidates from that video remain pending.
 - A large candidate may cite useful segments scattered across several minutes. Incorporate only a focused contiguous cluster that independently supports the canonical wording; do not stretch one playback window across the complete candidate evidence list.
 - Long-running extraction loops may buffer child-process output until completion. Check subprocess start times and candidate-file timestamps before treating a quiet batch as stalled, while retaining the configured per-call timeout.
+- A daily LLM allowance must reserve an estimate before spawning Codex, then reconcile with reported usage. Keeping the ledger private and per knowledge base lets exhausted work defer cleanly without creating partial candidates or mixing domains.
 
 ## YouTube ingestion
 
@@ -44,3 +45,4 @@
 - Treat public-project precedent research as two separate checks: copyright outcomes for similar uses and the source platform’s contract/API rules. A favorable indexing case does not authorize scraping or public full-copy storage.
 - Conservative pending-candidate triage needs deterministic evidence-ID suffixes when one candidate appears in multiple distinct moments, and inferred citation ends must be capped to the source video duration before validation.
 - Responsive rules for nested evidence layouts should use the manuscript/container width as well as viewport breakpoints; browser zoom and split panels can make a wide viewport contain a narrow content column.
+- Start a new dated session log when the calendar date changes, and append events in actual completion order so processing history remains auditable.

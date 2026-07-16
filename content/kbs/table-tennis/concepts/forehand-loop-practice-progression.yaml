@@ -120,6 +120,41 @@ evidence:
         - "I99BjizeWeE:00200"
         - "I99BjizeWeE:00201"
         - "I99BjizeWeE:00202"
+  - id: PDFXww03DHM-concept-forehand-loop-practice-progression-reviewed
+    evidence_type: explanation
+    excerpt: Train loop mechanics deliberately by focusing on arc control, lifting or pressing the arc for different spins, and avoiding rushed power application.
+    reason: 'The instruction gives a practice rule for underspin and topspin: lift the arc against underspin and press the arc against topspin, regardless of ball position.'
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: PDFXww03DHM
+      start_ms: 541240
+      end_ms: 559431
+      url: https://www.youtube.com/watch?v=PDFXww03DHM&t=541s
+      segment_ids:
+        - PDFXww03DHM:00180
+        - PDFXww03DHM:00181
+        - PDFXww03DHM:00182
+        - PDFXww03DHM:00183
+        - PDFXww03DHM:00184
+  - id: nENxAvinCe8-concept-forehand-loop-practice-progression-reviewed
+    evidence_type: drill
+    excerpt: A training sequence that starts with controlled looping, then adds footwork, then alternates controlled and power loops before full-power looping.
+    reason: 'The speaker gives an explicit progression: 20-30% power for consistency, add footwork, then alternate controlled and power loops, and only then move to full power.'
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: nENxAvinCe8
+      start_ms: 599566
+      end_ms: 627266
+      url: https://www.youtube.com/watch?v=nENxAvinCe8&t=599s
+      segment_ids:
+        - nENxAvinCe8:00129
+        - nENxAvinCe8:00130
+        - nENxAvinCe8:00131
+        - nENxAvinCe8:00133
 relations:
   - relation_type: used_with
     target_concept_id: concept-forehand-loop

@@ -436,6 +436,41 @@ evidence:
     visual_status: transcript_inferred
     review_status: approved
     source: {video_id: StQ86EhPFpo, start_ms: 337960, end_ms: 363200, url: "https://www.youtube.com/watch?v=StQ86EhPFpo&t=337s", segment_ids: ["StQ86EhPFpo:00135", "StQ86EhPFpo:00136", "StQ86EhPFpo:00137", "StQ86EhPFpo:00138", "StQ86EhPFpo:00139", "StQ86EhPFpo:00140", "StQ86EhPFpo:00141"]}
+  - id: TMrN47uIHiI-concept-short-ball-receive-decisions-reviewed
+    evidence_type: explanation
+    excerpt: Choosing how to deal with short or half-long balls, including whether to drop short, push, or attack early.
+    reason: The speaker explains how to drop short from a half-high ball, says drop shot is the same as short push, and notes not to stand too far away.
+    confidence: 0.89
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: TMrN47uIHiI
+      start_ms: 533839
+      end_ms: 556360
+      url: https://www.youtube.com/watch?v=TMrN47uIHiI&t=533s
+      segment_ids:
+        - TMrN47uIHiI:00159
+        - TMrN47uIHiI:00161
+        - TMrN47uIHiI:00163
+        - TMrN47uIHiI:00166
+  - id: h5jUJL_P82w-concept-short-ball-receive-decisions-reviewed
+    evidence_type: explanation
+    excerpt: Selecting among push, drop shot, flick, chop-push, or sidespin push depending on serve type and bounce timing.
+    reason: The speaker distinguishes short forehand receive choices by serve type, including topspin flicks and backspin pushes.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: h5jUJL_P82w
+      start_ms: 115233
+      end_ms: 141133
+      url: https://www.youtube.com/watch?v=h5jUJL_P82w&t=115s
+      segment_ids:
+        - h5jUJL_P82w:00025
+        - h5jUJL_P82w:00026
+        - h5jUJL_P82w:00027
+        - h5jUJL_P82w:00028
+        - h5jUJL_P82w:00029
 relations:
   - relation_type: part_of
     target_concept_id: concept-short-vs-long-serve-receive

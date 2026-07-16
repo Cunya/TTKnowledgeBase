@@ -122,6 +122,75 @@ evidence:
       segment_ids:
         - "xWrDKGnqmBs:00053"
         - "xWrDKGnqmBs:00054"
+  - id: oLxdGO8TY8s-cand-12-reviewed
+    evidence_type: definition
+    excerpt: A compact backhand attacking shot used on defense or quick transition, similar to a backhand punch with no independent wrist flick.
+    reason: The speaker explicitly names backhand rip and contrasts it with a wrist flick, placing it in the defensive-shot sequence.
+    confidence: 0.87
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: oLxdGO8TY8s
+      start_ms: 757560
+      end_ms: 774360
+      url: https://www.youtube.com/watch?v=oLxdGO8TY8s&t=757s
+      segment_ids:
+        - oLxdGO8TY8s:00297
+        - oLxdGO8TY8s:00298
+        - oLxdGO8TY8s:00299
+        - oLxdGO8TY8s:00300
+        - oLxdGO8TY8s:00301
+  - id: kv80YX__eJE-concept-backhand-rip-reviewed
+    evidence_type: definition
+    excerpt: An offensive backhand used to handle spin, especially when the incoming ball has topspin or heavy spin.
+    reason: The speaker contrasts the rip with the punch and says it is used to handle spin.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: kv80YX__eJE
+      start_ms: 32966
+      end_ms: 52333
+      url: https://www.youtube.com/watch?v=kv80YX__eJE&t=32s
+      segment_ids:
+        - kv80YX__eJE:00008
+        - kv80YX__eJE:00012
+  - id: eIKLgVChAdA-concept-backhand-rip-reviewed
+    evidence_type: definition
+    excerpt: A compact backhand attacking receive used to handle spinny, half-spin, and topspin serves by brushing the ball rather than pushing or blocking flat.
+    reason: The speaker explicitly names the backhand rip as the inverted-rubber solution for serve returns and explains its compact starting-height adjustments for different spins.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: eIKLgVChAdA
+      start_ms: 552700
+      end_ms: 581200
+      url: https://www.youtube.com/watch?v=eIKLgVChAdA&t=552s
+      segment_ids:
+        - eIKLgVChAdA:00113
+        - eIKLgVChAdA:00115
+        - eIKLgVChAdA:00116
+        - eIKLgVChAdA:00117
+        - eIKLgVChAdA:00118
+  - id: eIKLgVChAdA-concept-backhand-rip-reviewed-aea7d1c3
+    evidence_type: definition
+    excerpt: A compact backhand attacking receive used to handle spinny, half-spin, and topspin serves by brushing the ball rather than pushing or blocking flat.
+    reason: The speaker explicitly names the backhand rip as the inverted-rubber solution for serve returns and explains its compact starting-height adjustments for different spins.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: eIKLgVChAdA
+      start_ms: 552700
+      end_ms: 581200
+      url: https://www.youtube.com/watch?v=eIKLgVChAdA&t=552s
+      segment_ids:
+        - eIKLgVChAdA:00113
+        - eIKLgVChAdA:00115
+        - eIKLgVChAdA:00116
+        - eIKLgVChAdA:00117
+        - eIKLgVChAdA:00118
 relations:
   - relation_type: variation_of
     target_concept_id: concept-backhand-loop

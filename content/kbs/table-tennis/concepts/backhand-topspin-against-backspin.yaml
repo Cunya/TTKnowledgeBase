@@ -147,6 +147,77 @@ evidence:
     visual_status: not_visual
     review_status: approved
     source: {video_id: lO0H9Cs6JEo, start_ms: 571840, end_ms: 590560, url: "https://www.youtube.com/watch?v=lO0H9Cs6JEo&t=571s", segment_ids: ["lO0H9Cs6JEo:00184", "lO0H9Cs6JEo:00187", "lO0H9Cs6JEo:00189", "lO0H9Cs6JEo:00190", "lO0H9Cs6JEo:00191"]}
+  - id: yekYhw94rVI-concept-backhand-loop-against-backspin-reviewed
+    evidence_type: definition
+    excerpt: A backhand loop used to open against backspin, where adding power requires controlled body use and a lower, more stable finish.
+    reason: The speaker names the section as backhand loop against backspin and describes the common error of the ball going long when adding power.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: yekYhw94rVI
+      start_ms: 393480
+      end_ms: 403480
+      url: https://www.youtube.com/watch?v=yekYhw94rVI&t=393s
+      segment_ids:
+        - yekYhw94rVI:00128
+        - yekYhw94rVI:00131
+  - id: PDFXww03DHM-concept-backhand-topspin-against-backspin-reviewed
+    evidence_type: explanation
+    excerpt: Lift heavy backspin on the backhand by increasing arc, supporting the stroke with the arm and not applying power too abruptly at contact.
+    reason: The speaker explicitly says that against very spinny balls you must lift the arc and support it with the arm during the loop, which is the core backhand topspin-against-backspin idea.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: PDFXww03DHM
+      start_ms: 296320
+      end_ms: 325160
+      url: https://www.youtube.com/watch?v=PDFXww03DHM&t=296s
+      segment_ids:
+        - PDFXww03DHM:00089
+        - PDFXww03DHM:00090
+        - PDFXww03DHM:00091
+        - PDFXww03DHM:00092
+        - PDFXww03DHM:00093
+        - PDFXww03DHM:00094
+        - PDFXww03DHM:00095
+        - PDFXww03DHM:00096
+        - PDFXww03DHM:00097
+        - PDFXww03DHM:00098
+  - id: H0sbIUpUNLY-cand-8-reviewed
+    evidence_type: explanation
+    excerpt: A backhand looping response to backspin that may require a fuller stroke, lower center of gravity, and stronger brushing when the spin is heavy.
+    reason: The speaker states the backhand loop against backspin fails when the swing is too large or the brushing cannot keep up, and suggests switching to a full loop technique if needed.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: H0sbIUpUNLY
+      start_ms: 490840
+      end_ms: 511560
+      url: https://www.youtube.com/watch?v=H0sbIUpUNLY&t=490s
+      segment_ids:
+        - H0sbIUpUNLY:00160
+        - H0sbIUpUNLY:00163
+        - H0sbIUpUNLY:00166
+        - H0sbIUpUNLY:00169
+  - id: hp9OZTBD5JE-concept-backhand-topspin-against-backspin-reviewed
+    evidence_type: explanation
+    excerpt: A backhand looping action used to open against backspin or heavy push balls.
+    reason: The speaker explicitly discusses backhand contact against backspin and heavy pushes, and later lists backhand against backspin among the techniques under discussion.
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: hp9OZTBD5JE
+      start_ms: 136920
+      end_ms: 147120
+      url: https://www.youtube.com/watch?v=hp9OZTBD5JE&t=136s
+      segment_ids:
+        - hp9OZTBD5JE:00051
+        - hp9OZTBD5JE:00052
+        - hp9OZTBD5JE:00053
 relations:
   - relation_type: variation_of
     target_concept_id: concept-backhand-loop

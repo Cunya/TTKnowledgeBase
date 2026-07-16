@@ -223,6 +223,69 @@ evidence:
         - 8pUgdfqXPj4:00087
         - 8pUgdfqXPj4:00088
         - 8pUgdfqXPj4:00089
+  - id: OMgoeirhpyc-concept-backhand-swing-arc-spacing-reviewed
+    evidence_type: explanation
+    excerpt: Leaving enough room around the body and elbow to execute a backhand without getting jammed.
+    reason: The coach says the hand and elbow are too close to the body, causing jamming, and instructs the player to keep the elbow forward.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: OMgoeirhpyc
+      start_ms: 349600
+      end_ms: 361720
+      url: https://www.youtube.com/watch?v=OMgoeirhpyc&t=349s
+      segment_ids:
+        - OMgoeirhpyc:00118
+        - OMgoeirhpyc:00119
+        - OMgoeirhpyc:00120
+        - OMgoeirhpyc:00121
+        - OMgoeirhpyc:00122
+        - OMgoeirhpyc:00123
+  - id: yekYhw94rVI-concept-backhand-swing-arc-spacing-reviewed
+    evidence_type: explanation
+    excerpt: Adjusting the backhand swing space with the forearm while keeping the elbow position stable so the stroke is not jammed on fast balls.
+    reason: The speaker says backhand spacing is adjusted by the forearm, not the elbow, and frames this as the relationship between elbow and backswing.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: yekYhw94rVI
+      start_ms: 262480
+      end_ms: 267600
+      url: https://www.youtube.com/watch?v=yekYhw94rVI&t=262s
+      segment_ids:
+        - yekYhw94rVI:00081
+  - id: HCkIFKn0-Ds-concept-backhand-swing-arc-spacing-reviewed
+    evidence_type: explanation
+    excerpt: Adjusting distance and hand position so the backhand has enough room to swing, especially when the ball is deep or the incoming ball requires more space.
+    reason: The speaker gives distance-dependent adjustments, including leaving one arm's distance and creating more space for deep balls.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: HCkIFKn0-Ds
+      start_ms: 156160
+      end_ms: 162440
+      url: https://www.youtube.com/watch?v=HCkIFKn0-Ds&t=156s
+      segment_ids:
+        - HCkIFKn0-Ds:00052
+  - id: H0sbIUpUNLY-cand-6-reviewed
+    evidence_type: explanation
+    excerpt: Managing body and contact spacing so the backhand stroke has room to swing without being jammed.
+    reason: The speaker says the flick is done from around the stomach and works because the player is not jammed and has better space feeling.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: H0sbIUpUNLY
+      start_ms: 438680
+      end_ms: 450360
+      url: https://www.youtube.com/watch?v=H0sbIUpUNLY&t=438s
+      segment_ids:
+        - H0sbIUpUNLY:00140
+        - H0sbIUpUNLY:00142
+        - H0sbIUpUNLY:00143
 relations:
   - relation_type: used_with
     target_concept_id: concept-backhand-flick-on-rise

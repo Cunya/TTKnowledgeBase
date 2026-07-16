@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { existsSync, readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import corpusData from '../../public/data/kbs/table-tennis/corpus.json';
 import globalCatalogData from '../data/globalttstudio-videos.json';
 import sixthBatchData from '../data/tt-spinmaster-sixth-batch.json';
@@ -10,73 +12,153 @@ const sourceVideos = (channel: string) => corpus.videos.filter((video) => video.
 const spinMasterVideos = sourceVideos('TT SpinMaster');
 const globalVideos = sourceVideos('GlobalTTStudio');
 const globalPublishedIds = new Set(globalVideos.map((video) => video.id));
-const globalInaccessibleIds = new Set(['2GWq4FdtSRU', 'c894uv9vOFk']);
+const globalInaccessibleIds = new Set(['2GWq4FdtSRU', 'c894uv9vOFk', 'saJV_mSKHaw', 'MS5-0DaZ_h8', '6_GowxnyC94', 'gqVe2JURIY0', 'V9rDt4zBHKw', 'C03mgoF66a4']);
 const globalCatalogVideos = globalCatalogData.videos;
 const sixthBatchVideos = sixthBatchData.videos.filter((video) => !globalPublishedIds.has(video.id) && !spinMasterVideos.some((published) => published.id === video.id));
 const globalCatalogState = (id: string) => globalPublishedIds.has(id) ? 'Published' : globalInaccessibleIds.has(id) ? 'Members-only' : 'Discovered';
+const globalEligibleCount = globalVideos.length;
+const globalInaccessibleCount = globalInaccessibleIds.size;
+const globalConfiguredCount = globalEligibleCount + globalInaccessibleCount;
+const spinMasterConfiguredCount = spinMasterVideos.length + sixthBatchVideos.length;
+const totalEligibleCount = spinMasterConfiguredCount + globalEligibleCount;
+const totalConfiguredCount = spinMasterConfiguredCount + globalConfiguredCount;
 const percent = (value: number, total: number) => total ? Math.round((value / total) * 100) : 0;
+const summaryStage = (value: number, total: number) => `${value} (${percent(value, total)}%)`;
 const sourceProgress = [
   {
     name: 'TT SpinMaster',
-    detail: '59 eligible videos',
+    detail: `${spinMasterConfiguredCount} eligible videos`,
     stages: [
-      { label: 'Selected from discovery', value: 59, total: 304 },
-      { label: 'Eligible', value: 59, total: 59 },
-      { label: 'Ingested', value: 59, total: 59 },
-      { label: 'Extracted', value: 59, total: 59 },
-      { label: 'Fully reviewed', value: 40, total: 59 },
-      { label: 'Published', value: 59, total: 59 },
+      { label: 'Configured from discovery', value: spinMasterConfiguredCount, total: 304 },
+      { label: 'Eligible', value: spinMasterConfiguredCount, total: spinMasterConfiguredCount },
+      { label: 'Ingested', value: spinMasterConfiguredCount, total: spinMasterConfiguredCount },
+      { label: 'Extracted', value: spinMasterConfiguredCount, total: spinMasterConfiguredCount },
+      { label: 'Fully reviewed', value: 57, total: spinMasterConfiguredCount },
+      { label: 'Published', value: 98, total: spinMasterConfiguredCount },
     ],
   },
   {
     name: 'GlobalTTStudio',
-    detail: '9 eligible videos',
+    detail: `${globalEligibleCount} eligible · ${globalInaccessibleCount} members-only`,
     stages: [
-      { label: 'Selected from discovery', value: 11, total: 418 },
-      { label: 'Eligible', value: 9, total: 11 },
-      { label: 'Ingested', value: 9, total: 9 },
-      { label: 'Extracted', value: 9, total: 9 },
-      { label: 'Fully reviewed', value: 9, total: 9 },
-      { label: 'Published', value: 9, total: 9 },
+      { label: 'Configured from discovery', value: globalConfiguredCount, total: 418 },
+      { label: 'Eligible', value: globalEligibleCount, total: globalConfiguredCount },
+      { label: 'Ingested', value: globalEligibleCount, total: globalEligibleCount },
+      { label: 'Extracted', value: globalEligibleCount, total: globalEligibleCount },
+      { label: 'Fully reviewed', value: 13, total: globalEligibleCount },
+      { label: 'Published', value: globalEligibleCount, total: globalEligibleCount },
     ],
   },
   {
     name: 'Total configured',
-    detail: '68 eligible videos',
+    detail: `${totalEligibleCount} eligible videos`,
     stages: [
-      { label: 'Selected from discovery', value: 70, total: 722 },
-      { label: 'Eligible', value: 68, total: 70 },
-      { label: 'Ingested', value: 68, total: 68 },
-      { label: 'Extracted', value: 68, total: 68 },
-      { label: 'Fully reviewed', value: 49, total: 68 },
-      { label: 'Published', value: 68, total: 68 },
+      { label: 'Configured from discovery', value: totalConfiguredCount, total: 722 },
+      { label: 'Eligible', value: totalEligibleCount, total: totalConfiguredCount },
+      { label: 'Ingested', value: totalEligibleCount, total: totalEligibleCount },
+      { label: 'Extracted', value: totalEligibleCount, total: totalEligibleCount },
+      { label: 'Fully reviewed', value: 70, total: totalEligibleCount },
+      { label: 'Published', value: 121, total: totalEligibleCount },
     ],
   },
 ];
+
+const showLocalBudget = import.meta.env.PUBLIC_PRODUCTION_BUILD !== 'true';
+const budgetTaskNames = ['extraction', 'rephrase', 'benchmark'] as const;
+type BudgetTaskName = (typeof budgetTaskNames)[number];
+type BudgetTaskStatus = {
+  usedTokens: number;
+  limitTokens: number | null;
+  remainingTokens: number | null;
+  calls: number;
+  deferred: number;
+};
+
+const budgetConfigPath = fileURLToPath(new URL('../../../config/processors.yaml', import.meta.url));
+const budgetLedgerPath = fileURLToPath(new URL('../../../data/manifests/table-tennis/llm-budget.json', import.meta.url));
+const budgetConfig = existsSync(budgetConfigPath) ? readFileSync(budgetConfigPath, 'utf-8') : '';
+const configNumber = (pattern: RegExp, fallback: number) => {
+  const match = budgetConfig.match(pattern);
+  return match ? Number(match[1]) : fallback;
+};
+const configText = (pattern: RegExp, fallback: string) => budgetConfig.match(pattern)?.[1] ?? fallback;
+const budgetEnabled = configText(/^\s+enabled:\s*(true|false)\s*$/m, 'true') === 'true';
+const budgetTimezone = configText(/^\s+timezone:\s*([^\s#]+)\s*$/m, 'local');
+const budgetDailyLimit = configNumber(/^\s+daily_token_limit:\s*(\d+)\s*$/m, 500000);
+const taskLimit = (task: BudgetTaskName) =>
+  configNumber(new RegExp(`^\\s+${task}:\\s*(\\d+)\\s*$`, 'm'), 0);
+const emptyBudgetDay = { actual_tokens: 0, reserved_tokens: 0, tasks: {} as Record<string, Record<string, number>> };
+const readBudgetLedger = () => {
+  if (!existsSync(budgetLedgerPath)) return { days: {} as Record<string, typeof emptyBudgetDay> };
+  try {
+    return JSON.parse(readFileSync(budgetLedgerPath, 'utf-8')) as {
+      days?: Record<string, typeof emptyBudgetDay>;
+    };
+  } catch {
+    return { days: {} as Record<string, typeof emptyBudgetDay> };
+  }
+};
+const budgetLedger = readBudgetLedger();
+const budgetDate = new Intl.DateTimeFormat('en-CA', {
+  timeZone: budgetTimezone === 'local' || budgetTimezone === 'system' ? undefined : budgetTimezone,
+  year: 'numeric',
+  month: '2-digit',
+  day: '2-digit',
+}).format(new Date());
+const budgetDay = budgetLedger.days?.[budgetDate] ?? emptyBudgetDay;
+const budgetUsedTokens = Number(budgetDay.actual_tokens ?? 0) + Number(budgetDay.reserved_tokens ?? 0);
+const budgetRemainingTokens = Math.max(0, budgetDailyLimit - budgetUsedTokens);
+const budgetPercent = budgetDailyLimit ? Math.min(100, Math.round((budgetUsedTokens / budgetDailyLimit) * 100)) : 0;
+const formatTokens = (value: number) => value.toLocaleString('en-US');
+const budgetTasks: Record<BudgetTaskName, BudgetTaskStatus> = Object.fromEntries(
+  budgetTaskNames.map((task) => {
+    const record = budgetDay.tasks?.[task] ?? {};
+    const usedTokens = Number(record.actual_tokens ?? 0) + Number(record.reserved_tokens ?? 0);
+    const limitTokens = taskLimit(task) || null;
+    return [task, {
+      usedTokens,
+      limitTokens,
+      remainingTokens: limitTokens === null ? null : Math.max(0, limitTokens - usedTokens),
+      calls: Number(record.calls ?? 0),
+      deferred: Number(record.deferred ?? 0),
+    } satisfies BudgetTaskStatus];
+  }),
+) as Record<BudgetTaskName, BudgetTaskStatus>;
+const budgetRows = budgetTaskNames.map((task) => {
+  const item = budgetTasks[task];
+  const limit = item.limitTokens ?? 0;
+  return {
+    task,
+    ...item,
+    taskPercent: limit ? Math.min(100, Math.round((item.usedTokens / limit) * 100)) : 0,
+    progressLimit: limit || 1,
+    progressValue: Math.min(item.usedTokens, limit || 1),
+  };
+});
 ---
 
 <BaseLayout title="Source video progress" description="Processing progress by source for the table-tennis knowledge base.">
   <section class="page-intro progress-intro">
-    <div class="eyebrow">Pipeline status · updated 15 July 2026</div>
+    <div class="eyebrow">Pipeline status · updated 16 July 2026</div>
     <h1>Source video progress</h1>
     <p>Discovery, transcript ingestion, Codex extraction, editorial review, and publication status for each configured table-tennis source.</p>
   </section>
 
-  <aside class="progress-alert success"><strong>Latest batch</strong><span>A controlled eight-video TT SpinMaster ingest and Codex extraction completed successfully. Pending triage accepted 57 high-confidence candidates, added 57 evidence moments, and left 13 weak or new-taxonomy candidates deferred.</span></aside>
+  <aside class="progress-alert success"><strong>Latest batch</strong><span>A controlled six-video GlobalTTStudio selection found two public videos and four members-only entries. The two public transcripts were extracted with the configured low-cost Codex profile; triage accepted 23 candidates, added 30 focused evidence moments, and left 5 weak or new-taxonomy candidates deferred. The cached queue is now fully resolved.</span></aside>
 
   <section class="progress-section">
     <div class="section-kicker">Current corpus</div><h2>Source summary</h2>
     <div class="table-scroll"><table class="progress-table summary-table"><thead><tr><th>Source</th><th>Discovered</th><th>Configured</th><th>Eligible</th><th>Ingested</th><th>Extracted</th><th>Reviewed</th><th>Published</th><th>Accepted</th><th>Rejected</th><th>Evidence</th><th>Concepts</th><th>Visuals proposed</th><th>Visuals verified</th></tr></thead><tbody>
-      <tr><th>TT SpinMaster<br/><small>@FreeCoachBradHan</small></th><td>304</td><td>59</td><td>59</td><td>59</td><td>59</td><td>40</td><td>59</td><td>551 + 41 deferred</td><td>0</td><td>1,090</td><td>72</td><td>19</td><td>0</td></tr>
-      <tr><th>GlobalTTStudio<br/><small>@GlobalTTStudio</small></th><td>418</td><td>11</td><td>9</td><td>9</td><td>9</td><td>9</td><td>9</td><td>102</td><td>1</td><td>231</td><td>33</td><td>16</td><td>0</td></tr>
-      <tr class="total"><th>Total configured</th><td>—</td><td>70</td><td>68</td><td>68</td><td>68</td><td>49</td><td>68</td><td>653 + 41 deferred</td><td>1</td><td>1,321</td><td>73 unique</td><td>35</td><td>0</td></tr>
+      <tr><th>TT SpinMaster<br/><small>@FreeCoachBradHan</small></th><td>304</td><td>{summaryStage(spinMasterConfiguredCount, 304)}</td><td>{summaryStage(spinMasterConfiguredCount, spinMasterConfiguredCount)}</td><td>{summaryStage(spinMasterConfiguredCount, spinMasterConfiguredCount)}</td><td>{summaryStage(spinMasterConfiguredCount, spinMasterConfiguredCount)}</td><td>{summaryStage(57, spinMasterConfiguredCount)}</td><td>{summaryStage(98, spinMasterConfiguredCount)}</td><td>853 + 103 deferred</td><td>0</td><td>1,455</td><td>72</td><td>19</td><td>0</td></tr>
+      <tr><th>GlobalTTStudio<br/><small>@GlobalTTStudio</small></th><td>418</td><td>{summaryStage(globalConfiguredCount, 418)}</td><td>{summaryStage(globalEligibleCount, globalConfiguredCount)}</td><td>{summaryStage(globalEligibleCount, globalEligibleCount)}</td><td>{summaryStage(globalEligibleCount, globalEligibleCount)}</td><td>{summaryStage(13, globalEligibleCount)}</td><td>{summaryStage(globalEligibleCount, globalEligibleCount)}</td><td>207 + 36 deferred</td><td>1</td><td>359</td><td>58</td><td>16</td><td>0</td></tr>
+      <tr class="total"><th>Total configured</th><td>—</td><td>{summaryStage(totalConfiguredCount, 722)}</td><td>{summaryStage(totalEligibleCount, totalConfiguredCount)}</td><td>{summaryStage(totalEligibleCount, totalEligibleCount)}</td><td>{summaryStage(totalEligibleCount, totalEligibleCount)}</td><td>{summaryStage(70, totalEligibleCount)}</td><td>{summaryStage(121, totalEligibleCount)}</td><td>1,060 + 139 deferred</td><td>1</td><td>1,814</td><td>73 unique</td><td>35</td><td>0</td></tr>
     </tbody></table></div>
-    <p class="table-note">Concept counts overlap between sources. Proposed visual intervals remain non-looping until a reviewer watches and verifies them.</p>
+    <p class="table-note">Parenthesized percentages use the workflow denominator for that column: configured versus discovered, eligible versus configured, and downstream stages versus eligible. Concept counts overlap between sources. Proposed visual intervals remain non-looping until a reviewer watches and verifies them.</p>
   </section>
 
   <section class="progress-section">
     <div class="section-kicker">Completion</div><h2>Pipeline progress</h2>
-    <p class="progress-explainer">Each percentage shows how far that source has moved through the workflow. Selection is measured against discovered videos; later stages use the eligible or previously completed stage as their denominator.</p>
+    <p class="progress-explainer">Each percentage shows how far that source has moved through the workflow. Configuration is measured against discovered videos; eligible excludes configured members-only entries, and later stages use the eligible or previously completed stage as their denominator.</p>
     <div class="progress-groups">
       {sourceProgress.map((source) => <article class="progress-group">
         <div class="progress-group-heading"><h3>{source.name}</h3><span>{source.detail}</span></div>
@@ -91,12 +173,34 @@ const sourceProgress = [
     </div>
   </section>
 
+  {showLocalBudget && <section class="progress-section llm-budget-section">
+    <div class="section-kicker">Local operator guard</div><h2>LLM budget</h2>
+    <p class="progress-explainer">Private Codex usage for the current day. The ledger is local-only and never copied into the public corpus. Adjust the daily and task limits in <code>config/processors.yaml</code>.</p>
+    {!budgetEnabled && <aside class="progress-alert warning"><strong>Budget disabled</strong><span>The daily LLM guard is disabled in the processor configuration.</span></aside>}
+    <div class="llm-budget-summary">
+      <div class="llm-budget-total">
+        <div class="llm-budget-total-heading"><strong>{formatTokens(budgetUsedTokens)}</strong><span>of {formatTokens(budgetDailyLimit)} tokens used</span><em>{budgetPercent}%</em></div>
+        <progress max={budgetDailyLimit || 1} value={Math.min(budgetUsedTokens, budgetDailyLimit || 1)} aria-label={`LLM budget ${budgetPercent}% used`}>{budgetPercent}%</progress>
+        <p>{formatTokens(budgetRemainingTokens)} tokens remain for {budgetDate} ({budgetTimezone}). Reserved work is included so concurrent or interrupted runs do not overbook the allowance.</p>
+      </div>
+      <dl class="llm-budget-facts">
+        <div><dt>Ledger</dt><dd>{existsSync(budgetLedgerPath) ? 'Active' : 'No calls recorded'}</dd></div>
+        <div><dt>Scope</dt><dd>Table Tennis KB</dd></div>
+        <div><dt>Source</dt><dd>Local processor manifest</dd></div>
+      </dl>
+    </div>
+    <div class="table-scroll"><table class="progress-table llm-budget-table"><thead><tr><th>Task</th><th>Used</th><th>Limit</th><th>Remaining</th><th>Calls</th><th>Deferred</th></tr></thead><tbody>
+      {budgetRows.map((item) => <tr><th><span class="llm-budget-task-name">{item.task}</span><progress max={item.progressLimit} value={item.progressValue} aria-label={`${item.task} budget ${item.taskPercent}% used`}>{item.taskPercent}%</progress></th><td>{formatTokens(item.usedTokens)}</td><td>{item.limitTokens === null ? 'Unlimited' : formatTokens(item.limitTokens)}</td><td>{item.remainingTokens === null ? 'Unlimited' : formatTokens(item.remainingTokens)}</td><td>{item.calls}</td><td>{item.deferred}</td></tr>)}
+    </tbody></table></div>
+    <p class="table-note">Task calls are estimated before Codex starts and reconciled with reported usage afterward. When the allowance is exhausted, extraction, rephrasing, and benchmarking are deferred rather than started.</p>
+  </section>}
+
   <section class="progress-section">
     <div class="section-kicker">Definitions</div><h2>What each state means</h2>
     <dl class="state-definitions">
       <div><dt>Discovered</dt><dd>Metadata appeared in a channel manifest; relevance and caption availability are not guaranteed.</dd></div>
       <div><dt>Configured</dt><dd>The video is explicitly listed in the source configuration.</dd></div>
-      <div><dt>Eligible</dt><dd>The configured video is selected and publicly accessible enough to process.</dd></div>
+      <div><dt>Eligible</dt><dd>The configured video is selected and publicly accessible enough to process; members-only entries remain configured but are excluded from this stage.</dd></div>
       <div><dt>Ingested</dt><dd>A private normalized transcript and metadata file exist locally.</dd></div>
       <div><dt>Extracted</dt><dd>A private schema-validated Codex candidate artifact exists.</dd></div>
       <div><dt>Reviewed</dt><dd>Every extracted candidate has an accepted or rejected decision.</dd></div>
@@ -108,21 +212,21 @@ const sourceProgress = [
   <section class="progress-section">
     <div class="section-kicker">Backlog</div><h2>Outstanding work</h2>
     <div class="table-scroll"><table class="progress-table"><thead><tr><th>Work item</th><th>Count</th><th>Recommended action</th></tr></thead><tbody>
-      <tr><th>Deferred extracted candidates</th><td>41</td><td>Review new taxonomy proposals and weak matches before another expansion pass.</td></tr>
+      <tr><th>Deferred extracted candidates</th><td>139</td><td>Review new taxonomy proposals and weak matches before another expansion pass.</td></tr>
       <tr><th>Proposed visuals requiring viewing</th><td>35</td><td>Watch complete intervals and verify only genuine demonstrations.</td></tr>
-      <tr><th>Single-source concepts</th><td>9</td><td>Select independent supporting sources instead of duplicate moments.</td></tr>
-      <tr><th>Members-only configured videos</th><td>2</td><td>Leave unprocessed unless access and processing rights are explicit.</td></tr>
-      <tr><th>Published videos with review backlog</th><td>19</td><td>Continue resolving deferred candidates; only incorporated evidence is currently public.</td></tr>
-      <tr><th>Unselected TT SpinMaster discoveries</th><td>245</td><td>Curate by coverage gap; do not bulk-ingest automatically.</td></tr>
-      <tr><th>Unselected GlobalTTStudio discoveries</th><td>407</td><td>Curate by missing topic, source diversity, or useful visual demonstration.</td></tr>
+      <tr><th>Single-source concepts</th><td>2</td><td>Select independent supporting sources instead of duplicate moments.</td></tr>
+      <tr><th>Members-only configured videos</th><td>8</td><td>Leave unprocessed unless access and processing rights are explicit.</td></tr>
+      <tr><th>Published videos with review backlog</th><td>50</td><td>Continue resolving deferred candidates; only incorporated evidence is currently public.</td></tr>
+      <tr><th>Unselected TT SpinMaster discoveries</th><td>205</td><td>Curate by coverage gap; do not bulk-ingest automatically.</td></tr>
+      <tr><th>Unselected GlobalTTStudio discoveries</th><td>387</td><td>Curate by missing topic, source diversity, or useful visual demonstration.</td></tr>
     </tbody></table></div>
   </section>
 
   <section class="progress-section inventories" id="videos-by-source">
     <div class="section-kicker">Source inventory</div><h2>Videos by source</h2>
     <p class="table-note">Each source includes its complete trustworthy discovery catalog where available. State labels distinguish public knowledge-base evidence from videos that are merely listed by the channel.</p>
-    <details><summary><strong>TT SpinMaster</strong><span>{spinMasterVideos.length} published · {sixthBatchVideos.length} extracted/reviewing · 245 unselected</span></summary><div class="table-scroll"><table class="progress-table"><thead><tr><th>State</th><th>Video</th><th>Title</th></tr></thead><tbody>{sixthBatchVideos.map((video) => <tr><td><span class="catalog-state extracted">Extracted · review</span></td><td><a href={`https://www.youtube.com/watch?v=${video.id}`} target="_blank" rel="noreferrer"><code>{video.id}</code></a></td><td>{video.title}</td></tr>)}{spinMasterVideos.map((video) => <tr><td><span class="catalog-state published">Published</span></td><td><a href={`https://www.youtube.com/watch?v=${video.id}`} target="_blank" rel="noreferrer"><code>{video.id}</code></a></td><td>{video.title}</td></tr>)}</tbody></table></div><p class="inventory-note">P1-02 processed the latest candidate batch into the published inventory; no extracted rows remain awaiting review. The 245 remaining channel discoveries are unselected and have not entered the processing pipeline.</p></details>
-    <details id="globalttstudio-videos"><summary><strong>GlobalTTStudio</strong><span>{globalCatalogVideos.length} discovered · 9 published · 2 members-only</span></summary>
+    <details><summary><strong>TT SpinMaster</strong><span>{spinMasterVideos.length} published · {sixthBatchVideos.length} extracted/reviewing · 205 unselected</span></summary><div class="table-scroll"><table class="progress-table"><thead><tr><th>State</th><th>Video</th><th>Title</th></tr></thead><tbody>{sixthBatchVideos.map((video) => <tr><td><span class="catalog-state extracted">Extracted · review</span></td><td><a href={`https://www.youtube.com/watch?v=${video.id}`} target="_blank" rel="noreferrer"><code>{video.id}</code></a></td><td>{video.title}</td></tr>)}{spinMasterVideos.map((video) => <tr><td><span class="catalog-state published">Published</span></td><td><a href={`https://www.youtube.com/watch?v=${video.id}`} target="_blank" rel="noreferrer"><code>{video.id}</code></a></td><td>{video.title}</td></tr>)}</tbody></table></div><p class="inventory-note">P1-02 has incorporated all high-confidence matches from the latest batch; one earlier extracted row remains deferred for taxonomy review. The 205 remaining channel discoveries are unselected and have not entered the processing pipeline.</p></details>
+    <details id="globalttstudio-videos"><summary><strong>GlobalTTStudio</strong><span>{globalCatalogVideos.length} discovered · {globalEligibleCount} published · {globalInaccessibleCount} members-only</span></summary>
       <p class="inventory-note">Metadata-only discovery on 15 July 2026. “Discovered” means listed by the channel; it does not mean selected, transcribed, extracted, or reviewed.</p>
       <div class="table-scroll"><table class="progress-table catalog-table"><thead><tr><th>State</th><th>Video</th><th>Title</th></tr></thead><tbody>{globalCatalogVideos.map((video) => <tr><td><span class:list={['catalog-state', globalCatalogState(video.id).toLowerCase()]}>{globalCatalogState(video.id)}</span></td><td><a href={video.url} target="_blank" rel="noreferrer"><code>{video.id}</code></a></td><td>{video.title}</td></tr>)}</tbody></table></div>
     </details>

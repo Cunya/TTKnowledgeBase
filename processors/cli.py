@@ -21,6 +21,7 @@ from .ingest import (
     ingest_video,
     video_id_from_url,
 )
+from .llm_budget import LLMBudgetExceeded, LLMTokenBudget
 from .models import KnowledgeNavigation, PublishCorpus
 from .pipeline import (
     build_quality_report,
@@ -81,6 +82,42 @@ def list_kbs() -> None:
                 item["name"],
                 "yes" if item["id"] == project["default_knowledge_base"] else "",
             )
+    console.print(table)
+
+
+@app.command("llm-budget")
+def llm_budget(kb: KbOption = None) -> None:
+    """Show the current daily Codex token budget and per-task usage."""
+    paths = kb_paths(kb)
+    budget = LLMTokenBudget(
+        ROOT / "config" / "processors.yaml",
+        paths.data("manifests") / "llm-budget.json",
+    )
+    status = budget.status()
+    if not status["enabled"]:
+        console.print("[yellow]LLM budget is disabled in config/processors.yaml[/yellow]")
+        return
+    console.print(
+        f"[green]LLM budget[/green] {status['date']} ({status['timezone']}): "
+        f"{status['used_tokens']:,}/{status['daily_limit_tokens']:,} tokens used; "
+        f"{status['remaining_tokens']:,} remaining"
+    )
+    table = Table("Task", "Used", "Limit", "Remaining", "Calls", "Deferred")
+    for task, item in status["tasks"].items():
+        limit = "unlimited" if item["limit_tokens"] is None else f"{item['limit_tokens']:,}"
+        remaining = (
+            "unlimited"
+            if item["remaining_tokens"] is None
+            else f"{item['remaining_tokens']:,}"
+        )
+        table.add_row(
+            task,
+            f"{item['used_tokens']:,}",
+            limit,
+            remaining,
+            str(item["calls"]),
+            str(item["deferred"]),
+        )
     console.print(table)
 
 
@@ -246,16 +283,37 @@ def extract_concepts(
         {"id": c.id, "label": c.label, "aliases": c.aliases}
         for c in load_reviewed_concepts(paths.content / "concepts")
     ]
-    for video in videos:
-        path = extract_video(
-            video,
-            taxonomy,
-            known,
-            ROOT / "config" / "processors.yaml",
-            paths.data("derived"),
-            paths.data("manifests"),
-        )
+    deferred: list[str] = []
+    for index, video in enumerate(videos):
+        try:
+            path = extract_video(
+                video,
+                taxonomy,
+                known,
+                ROOT / "config" / "processors.yaml",
+                paths.data("derived"),
+                paths.data("manifests"),
+                budget_path=paths.data("manifests") / "llm-budget.json",
+            )
+        except LLMBudgetExceeded as error:
+            deferred = [item.id for item in videos[index:]]
+            console.print(f"[yellow]Deferred {len(deferred)} extraction task(s)[/yellow]: {error}")
+            break
         console.print(f"[green]Saved candidates[/green] {path.name}")
+    if deferred:
+        write_json(
+            paths.data("manifests") / "llm-deferred.json",
+            {
+                "knowledge_base": paths.id,
+                "task": "extraction",
+                "deferred_video_ids": deferred,
+                "reason": "daily or task LLM token budget exhausted",
+                "budget": LLMTokenBudget(
+                    ROOT / "config" / "processors.yaml",
+                    paths.data("manifests") / "llm-budget.json",
+                ).status(),
+            },
+        )
 
 
 @app.command("rephrase-excerpts")
@@ -268,25 +326,45 @@ def rephrase_excerpts(
     concepts = load_reviewed_concepts(paths.content / "concepts")
     videos = load_videos(paths.data("normalized"))
     publishing = read_yaml(paths.config / "kb.yaml").get("publishing", {})
-    _, findings = rephrase_high_overlap_excerpts(
-        paths.content / "concepts",
-        concepts,
-        videos,
-        ROOT / "config" / "processors.yaml",
-        paths.data("manifests"),
-        model_override=model,
-        max_chars=int(publishing.get("excerpt_max_chars", 420)),
-    )
-    report = {
-        "knowledge_base": paths.id,
-        "rephrased_count": len(findings),
-        "items": findings,
-    }
+    findings: list[dict] = []
+    try:
+        _, findings = rephrase_high_overlap_excerpts(
+            paths.content / "concepts",
+            concepts,
+            videos,
+            ROOT / "config" / "processors.yaml",
+            paths.data("manifests"),
+            budget_path=paths.data("manifests") / "llm-budget.json",
+            model_override=model,
+            max_chars=int(publishing.get("excerpt_max_chars", 420)),
+        )
+        report = {
+            "knowledge_base": paths.id,
+            "status": "complete",
+            "rephrased_count": len(findings),
+            "items": findings,
+        }
+    except LLMBudgetExceeded as error:
+        report = {
+            "knowledge_base": paths.id,
+            "status": "deferred",
+            "rephrased_count": 0,
+            "items": [],
+            "reason": str(error),
+            "budget": LLMTokenBudget(
+                ROOT / "config" / "processors.yaml",
+                paths.data("manifests") / "llm-budget.json",
+            ).status(),
+        }
+        console.print(f"[yellow]Deferred excerpt rephrasing[/yellow]: {error}")
     report_path = paths.data("manifests") / "excerpt-rephrasing.json"
     write_json(report_path, report)
-    console.print(
-        f"[green]Rephrased {len(findings)} high-overlap excerpt(s)[/green]; report {report_path}"
-    )
+    if report["status"] == "deferred":
+        console.print(f"[yellow]Rephrasing deferred[/yellow]; report {report_path}")
+    else:
+        console.print(
+            f"[green]Rephrased {len(findings)} high-overlap excerpt(s)[/green]; report {report_path}"
+        )
 
 
 @app.command("benchmark-models")
@@ -344,6 +422,7 @@ def benchmark_models(
         config_path,
         requested_models,
         output_dir,
+        budget_path=paths.data("manifests") / "llm-budget.json",
     )
     write_json(json_path, report)
     markdown_path.parent.mkdir(parents=True, exist_ok=True)
@@ -445,18 +524,38 @@ def publish(
         concepts = load_reviewed_concepts(paths.content / "concepts")
         videos = load_videos(paths.data("normalized"))
         publishing = read_yaml(paths.config / "kb.yaml").get("publishing", {})
-        _, findings = rephrase_high_overlap_excerpts(
-            paths.content / "concepts",
-            concepts,
-            videos,
-            ROOT / "config" / "processors.yaml",
-            paths.data("manifests"),
-            max_chars=int(publishing.get("excerpt_max_chars", 420)),
-        )
+        try:
+            _, findings = rephrase_high_overlap_excerpts(
+                paths.content / "concepts",
+                concepts,
+                videos,
+                ROOT / "config" / "processors.yaml",
+                paths.data("manifests"),
+                budget_path=paths.data("manifests") / "llm-budget.json",
+                max_chars=int(publishing.get("excerpt_max_chars", 420)),
+            )
+            rephrase_status = "complete"
+            rephrase_reason = None
+        except LLMBudgetExceeded as error:
+            findings = []
+            rephrase_status = "deferred"
+            rephrase_reason = str(error)
+            console.print(f"[yellow]Deferred auto-rephrasing[/yellow]: {error}")
         write_json(
             paths.data("manifests") / "excerpt-rephrasing.json",
-            {"knowledge_base": paths.id, "rephrased_count": len(findings), "items": findings},
+            {
+                "knowledge_base": paths.id,
+                "status": rephrase_status,
+                "rephrased_count": len(findings),
+                "items": findings,
+                **({"reason": rephrase_reason} if rephrase_reason else {}),
+            },
         )
+        if rephrase_status == "deferred":
+            console.print(
+                "[yellow]Publication was not started; rerun after the budget resets or is adjusted.[/yellow]"
+            )
+            raise typer.Exit(2)
         if findings:
             console.print(f"[yellow]Auto-rephrased {len(findings)} high-overlap excerpt(s)[/yellow]")
     output = ROOT / "data" / "publish" / "kbs" / paths.id

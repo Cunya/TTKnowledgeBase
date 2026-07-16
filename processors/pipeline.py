@@ -115,6 +115,7 @@ def rephrase_high_overlap_excerpts(
     config_path: Path,
     audit_dir: Path,
     *,
+    budget_path: Path | None = None,
     model_override: str | None = None,
     min_words: int = DEFAULT_REPHRASE_MIN_WORDS,
     min_ratio: float = DEFAULT_REPHRASE_MIN_RATIO,
@@ -136,6 +137,7 @@ def rephrase_high_overlap_excerpts(
             audit_dir,
             model_override=model_override,
             max_chars=limit,
+            budget_path=budget_path,
         )
     )
     updates: dict[tuple[str, str], str] = {}
@@ -217,6 +219,9 @@ def extract_video(
     output_dir: Path,
     audit_dir: Path,
     model_override: str | None = None,
+    *,
+    budget_path: Path | None = None,
+    task: str = "extraction",
 ) -> Path:
     if not video.transcript:
         raise ValueError(f"Video {video.id} has no transcript")
@@ -227,6 +232,8 @@ def extract_video(
         processors_config,
         audit_dir,
         model_override=model_override,
+        budget_path=budget_path,
+        task=task,
     )
     payload = {
         "video_id": video.id,

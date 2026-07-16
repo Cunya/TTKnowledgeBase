@@ -10,6 +10,7 @@ from typing import Any
 from rapidfuzz.fuzz import token_set_ratio
 
 from .codex_engine import extract_with_codex
+from .llm_budget import LLMBudgetExceeded
 from .models import Concept, ExtractionResponse, Video
 from .utils import write_json
 
@@ -136,6 +137,8 @@ def run_quality_benchmark(
     config_path: Path,
     models: list[str],
     output_dir: Path,
+    *,
+    budget_path: Path | None = None,
 ) -> dict[str, Any]:
     """Run model comparisons and write private per-run audit artifacts."""
 
@@ -145,11 +148,26 @@ def run_quality_benchmark(
         {"id": concept.id, "label": concept.label, "aliases": concept.aliases}
         for concept in reviewed_concepts
     ]
+    budget_blocked = False
     for model in models:
         model_slug = re.sub(r"[^a-zA-Z0-9_.-]+", "_", model)
         for video in videos:
             started = time.monotonic()
             base = {"model": model, "video_id": video.id, "video_title": video.title}
+            if budget_blocked:
+                run = {
+                    **base,
+                    "status": "deferred",
+                    "schema_valid": False,
+                    "elapsed_seconds": 0,
+                    "error": "LLM budget exhausted earlier in this benchmark",
+                }
+                write_json(
+                    output_dir / "runs" / f"{model_slug}-{video.id}.json",
+                    run,
+                )
+                runs.append(run)
+                continue
             try:
                 response, provenance = extract_with_codex(
                     video.transcript.segments,  # type: ignore[union-attr]
@@ -158,6 +176,8 @@ def run_quality_benchmark(
                     config_path,
                     output_dir / "audit" / model_slug,
                     model_override=model,
+                    budget_path=budget_path,
+                    task="benchmark",
                 )
                 metrics = score_response(response, video, reviewed_concepts)
                 run = {
@@ -167,6 +187,16 @@ def run_quality_benchmark(
                     "elapsed_seconds": round(time.monotonic() - started, 2),
                     "provenance": provenance,
                     "metrics": metrics,
+                }
+            except LLMBudgetExceeded as error:
+                budget_blocked = True
+                run = {
+                    **base,
+                    "status": "deferred",
+                    "schema_valid": False,
+                    "elapsed_seconds": round(time.monotonic() - started, 2),
+                    "error_type": type(error).__name__,
+                    "error": str(error)[:2000],
                 }
             except Exception as error:  # benchmark records failures instead of stopping the batch
                 run = {
@@ -198,6 +228,8 @@ def run_quality_benchmark(
         availability = (
             "available"
             if successful
+            else "deferred by LLM budget"
+            if any(run["status"] == "deferred" for run in model_runs)
             else "unsupported in Codex account"
             if any(reason == "model_not_supported" for reason in failure_reasons)
             else "failed"

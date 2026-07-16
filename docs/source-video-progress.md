@@ -1,6 +1,6 @@
 # Source video progress
 
-Last updated: 2026-07-15 13:01 EEST
+Last updated: 2026-07-16 01:14 EEST
 
 This document tracks how far videos from each configured source have progressed through discovery, transcript ingestion, Codex extraction, editorial review, and publication. Counts are derived from the current local processing data and sanitized published corpus.
 
@@ -21,9 +21,9 @@ This document tracks how far videos from each configured source have progressed 
 
 | Source | Trustworthy discovered total | Configured | Eligible | Ingested | Extracted | Fully reviewed | Published | Accepted candidates | Rejected | Evidence moments | Concepts supported | Proposed visuals | Verified visuals |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| TT SpinMaster / `@FreeCoachBradHan` | 304 | 59 | 59 | 59 | 59 | 40 | 59 | 551 accepted / 41 deferred | 0 | 1,090 | 72 | 19 | 0 |
-| GlobalTTStudio / `@GlobalTTStudio` | 418 | 11 | 9 | 9 | 9 | 9 | 9 | 102 | 1 | 231 | 33 | 16 | 0 |
-| **Total configured** | — | **70** | **68** | **68** | **68** | **49** | **68** | **653 accepted / 41 deferred** | **1** | **1,321** | **73 unique overall** | **35** | **0** |
+| TT SpinMaster / `@FreeCoachBradHan` | 304 | 99 | 99 | 99 | 99 | 57 | 98 | 853 accepted / 103 deferred | 0 | 1,455 | 72 | 19 | 0 |
+| GlobalTTStudio / `@GlobalTTStudio` | 418 | 31 | 23 | 23 | 23 | 13 | 23 | 207 accepted / 36 deferred | 1 | 359 | 58 | 16 | 0 |
+| **Total configured** | — | **130** | **122** | **122** | **122** | **70** | **121** | **1,060 accepted / 139 deferred** | **1** | **1,814** | **73 unique overall** | **35** | **0** |
 
 Concept counts overlap across sources: a concept supported by both channels is counted once in each source row, so the source rows must not be added to obtain the 73 unique concepts.
 
@@ -32,31 +32,35 @@ Concept counts overlap across sources: a concept supported by both channels is c
 ### TT SpinMaster / Free Coach Brad Han
 
 - Channel catalog captured: 304 videos.
-- Configured corpus: 59 videos, or about 19.4% of the captured catalog.
-- Ingestion completion: 59 of 59 eligible videos are ingested.
-- Downstream completion: all 59 selected videos are extracted and published; 40 are fully reviewed, while 19 videos retain explicitly deferred candidates for later taxonomy/weak-match review.
-- Remaining discovered catalog: 245 videos have not been selected for this KB yet.
-- Editorial state: 551 candidates are accepted, 41 are explicitly deferred, and none are rejected for this source.
+- Configured corpus: 99 videos, or about 32.6% of the captured catalog.
+- Ingestion completion: 99 of 99 eligible videos are ingested.
+- Downstream completion: 98 of 99 selected videos are published; 57 are fully reviewed, while 42 videos retain explicitly deferred candidates for later taxonomy/weak-match review. One extracted video currently has only deferred candidates and is not yet published.
+- Remaining discovered catalog: 205 videos have not been selected for this KB yet.
+- Editorial state: 853 candidates are accepted, 103 are explicitly deferred, and none are rejected for this source.
 - Visual state: 19 proposed nearby visual windows exist, but none has been manually verified. They are non-looping on the public site.
 
-The 271-video remainder is a discovery backlog, not an automatic processing queue. Videos should be selected for missing concepts, second-source support, or visual demonstrations instead of processed only to increase volume.
+The 205-video remainder is a discovery backlog, not an automatic processing queue. Videos should be selected for missing concepts, second-source support, or visual demonstrations instead of processed only to increase volume.
 
 ### GlobalTTStudio
 
 - Trustworthy channel total: 418 public videos from a metadata-only discovery of the explicit `/videos` tab on 2026-07-15.
-- Configured corpus: 11 videos.
-- Eligible corpus: 9 videos.
-- Pipeline completion: all 9 eligible videos are ingested, extracted, fully reviewed, and published.
-- Inaccessible items: 2 configured videos are members-only and remain unprocessed.
-- Remaining discovered catalog: 407 videos are not configured for processing.
-- Editorial state: 102 candidates are accepted, 1 is explicitly rejected, and none is pending.
+- Configured corpus: 31 videos.
+- Eligible corpus: 23 videos.
+- Pipeline completion: all 23 eligible videos are ingested, extracted, and published; 13 are fully reviewed and 10 retain explicitly deferred candidates.
+- Inaccessible items: 8 configured videos are members-only and remain unprocessed.
+- Remaining discovered catalog: 387 videos are not configured for processing.
+- Editorial state: 207 candidates are accepted, 36 are explicitly deferred, 1 is explicitly rejected, and no candidates remain pending.
 - Visual state: 16 proposed nearby visual windows exist, but none has been manually verified. They are non-looping on the public site.
 
 ## Configured video state by source
 
-### TT SpinMaster / Free Coach Brad Han — 59 extracted, 59 published, 19 with deferred candidates
+### GlobalTTStudio / Coach Han - controlled batch
 
-The first 33 videos below are in the completed state **ingested → extracted → reviewed → published**. Each of the final 8 has one reviewed evidence addition and is now published, but its remaining candidates still await editorial review.
+The latest controlled batch added six public videos: `sosNHzR8A9U`, `2Wk2xe0I1s8`, `kv80YX__eJE`, `wd_E9NZBVtU`, `6vwxmC36InY`, and `h5jUJL_P82w`. Two catalogued videos, `saJV_mSKHaw` and `MS5-0DaZ_h8`, were confirmed members-only and marked inaccessible without retrying. The six public videos contributed 46 accepted candidates/evidence moments and 11 explicitly deferred candidates.
+
+### TT SpinMaster / Free Coach Brad Han — 99 extracted, 98 published, 42 with deferred candidates
+
+All 99 videos below are ingested and extracted. Ninety-eight have published evidence; 57 have no deferred candidates and are fully reviewed, 42 retain explicitly deferred candidates, and one has no accepted evidence yet.
 
 | Video ID | Primary topic indicated by title |
 |---|---|
@@ -109,8 +113,40 @@ The first 33 videos below are in the completed state **ingested → extracted �
 | `_biE-Dzy0aM` | **Published / review pending:** adding power without misses |
 | `XlGnK1z_7C0` | **Published / review pending:** serve-loop-smash point pattern |
 | `ONXmZHozLTA` | **Published / review pending:** acceleration for heavy-spin loops |
+| `KpjJFdkUD54` | **Published / review pending:** hook serve corrections |
+| `L-m_mjGB5X0` | **Published / review pending:** universal push receive method |
+| `TMrN47uIHiI` | **Published / review pending:** high-ball smash decisions |
+| `ylfChS7Da-k` | **Published / review pending:** slow-soft-middle receive placement |
+| `OMgoeirhpyc` | **Published / review pending:** aggressive mindset and backhand technique |
+| `wyna7UXctZQ` | Published | Loop errors that send the ball into the net |
+| `xmQrJ5l5A9c` | **Published / review pending:** point push and lift push |
+| `yekYhw94rVI` | **Published / review pending:** backhand power hesitation |
+| `deTFdwcfnrE` | **Published / review pending:** forehand basic correction |
+| `Dj-oOxwQn1s` | **Published / review pending:** hook serve secrets |
+| `J_ra9qsXCxo` | **Published / review pending:** forehand friction |
+| `ODwFaYDY1co` | **Published / review pending:** third-ball attack |
+| `xwKSNLxVaBg` | **Published / review pending:** fast left sidespin serve |
+| `byk-MQTWbBs` | **Published / review pending:** backhand serve guide |
+| `DXL3ZnLNXqE` | **Published / review pending:** forehand-loop corrections |
+| `vXZPX5wybTY` | **Published / review pending:** smash after the loop |
+| `PDFXww03DHM` | **Published / review pending:** match-winning fundamentals |
+| `MV98YAD9lzs` | **Published / review pending:** all-purpose push against spin |
+| `13z0kO_hd0M` | **Published / review pending:** looping underspin adjustments |
+| `RjgITcuxl5I` | **Published / review pending:** curving left sidespin |
+| `HHVds_mLi3I` | **Published / review pending:** rally consistency corrections |
+| `zMP_ptkdNHk` | **Published / review pending:** brushing and compact response |
+| `E6sGbY4sQH0` | **Published / review pending:** hook-serve mechanics |
+| `3SvgpoJSW3o` | **Published / review pending:** reading and neutralizing spin |
+| `m44MwRy-sT8` | **Extracted / deferred:** forehand flick wrist control |
+| `vo26XE2LIjI` | **Published / review pending:** backhand flick correction |
+| `6NvlGVPIC6E` | **Published / review pending:** backspin hook serve |
+| `N3GieiMNE7Y` | **Published:** racket-angle correction |
+| `R9InWNDCJQM` | **Published / review pending:** curving half-long timing and footwork |
+| `Ad8Ox7xSvSU` | **Published:** forehand elbow stability |
+| `wpIxIvnuOac` | **Published:** efficient spin generation |
+| `HCkIFKn0-Ds` | **Published / review pending:** hook-serve wrist direction |
 
-### GlobalTTStudio — 9 published, 2 inaccessible
+### GlobalTTStudio — 23 published, 8 inaccessible
 
 | Video ID | State | Primary topic indicated by title |
 |---|---|---|
@@ -123,24 +159,44 @@ The first 33 videos below are in the completed state **ingested → extracted �
 | `Cq6MbP6TEdc` | Published | Forehand-loop trajectory correction |
 | `XfWXrGTlW5M` | Published | Second-loop timing |
 | `V2YGbh829eU` | Published | Forehand-loop contact point |
+| `2Wk2xe0I1s8` | Published | Forehand-loop braking against backspin |
+| `6vwxmC36InY` | Published | Banana-flick footwork and timing |
+| `6Xx11I8CB9M` | Published | Racket angle for blocking power loops |
+| `eIKLgVChAdA` | Published | Compact serve-receive rip |
+| `h5jUJL_P82w` | Published | Forehand push variation |
+| `kv80YX__eJE` | Published | Backhand punch mechanics |
+| `nENxAvinCe8` | Published | Forehand-loop error correction |
+| `nNLLuV_wY24` | Published | Forehand flick against heavy backspin |
+| `sosNHzR8A9U` | Published | Delayed forehand-loop backswing |
+| `TWv2MUl_64Q` | Published | Counter-topspin |
+| `wd_E9NZBVtU` | Published | Triangle block against fast drives |
+| `zAGc3h7gpxs` | Published | Forehand block correction |
+| `7jWqEsHtN3Y` | Published | Push-rally and looping strategy |
+| `hwT7cH6PbZQ` | Published | Push against different spin types |
 | `2GWq4FdtSRU` | Members-only; not ingested | Friction mechanics and equipment |
 | `c894uv9vOFk` | Members-only; not ingested | Advanced forehand-loop swing path |
+| `saJV_mSKHaw` | Members-only; not ingested | Advanced looping mechanics |
+| `MS5-0DaZ_h8` | Members-only; not ingested | Backhand kinetic chain |
+| `6_GowxnyC94` | Members-only; not ingested | Fixed-drill alternatives |
+| `gqVe2JURIY0` | Members-only; not ingested | Contact-point practice transfer |
+| `V9rDt4zBHKw` | Members-only; not ingested | Training drills for consistency |
+| `C03mgoF66a4` | Members-only; not ingested | Forehand flick principles |
 
 ## Outstanding work by state
 
 | Work item | Count | Recommended action |
 |---|---:|---|
-| Deferred extracted candidates | 41 | Review taxonomy proposals and weak matches before another expansion pass. |
+| Deferred extracted candidates | 139 | Review taxonomy proposals and weak matches before another expansion pass. |
 | Proposed visual intervals requiring viewing | 35 | Watch the complete intervals and mark only genuine demonstrations as `manual_review` / `verified_visual_demo`. |
-| Single-source concepts | 9 | Select videos that add an independent supporting source rather than more moments from the same lesson. |
-| Published videos with remaining review backlog | 19 | Resolve deferred candidates; publication currently includes only incorporated evidence. |
-| Members-only configured videos | 2 | Leave unprocessed unless access and processing rights are explicitly available. |
-| Unselected TT SpinMaster discoveries | 245 | Curate by coverage gap; do not bulk-ingest automatically. |
-| Unselected GlobalTTStudio discoveries | 407 | Curate by missing topic, independent support, or useful visual demonstration. |
+| Single-source concepts | 2 | Select videos that add an independent supporting source rather than more moments from the same lesson. |
+| Published videos with remaining review backlog | 50 | Resolve deferred candidates; publication currently includes only incorporated evidence. |
+| Members-only configured videos | 8 | Leave unprocessed unless access and processing rights are explicitly available. |
+| Unselected TT SpinMaster discoveries | 205 | Curate by coverage gap; do not bulk-ingest automatically. |
+| Unselected GlobalTTStudio discoveries | 387 | Curate by missing topic, independent support, or useful visual demonstration. |
 
-Latest ingestion attempt: on 2026-07-15, one conservatively paced eight-video follow-up batch from the existing TT SpinMaster catalog succeeded. Eight videos entered the ingested state without an HTTP 429 or retry cooldown.
+Latest ingestion attempt: on 2026-07-16, a conservatively paced six-video GlobalTTStudio batch found two public videos and four members-only entries. The two public videos entered the ingested state; the four inaccessible entries were marked members-only and were not retried.
 
-Latest extraction batch: eight newly ingested transcripts completed sequentially with `gpt-5.4-mini` at low reasoning, producing schema-validated candidates. The subsequent pending pass accepted 57 high-confidence candidates, added 57 focused evidence moments, and deferred 13 weak or new-taxonomy proposals. No fast/flex tier or automatic stronger-model escalation was used.
+Latest extraction batch: two newly ingested transcripts completed sequentially with `gpt-5.4-mini` at low reasoning, producing schema-validated candidates. The subsequent pending pass accepted 23 candidates, added 30 focused evidence moments, and deferred 5 weak or new-taxonomy proposals. No fast/flex tier or automatic stronger-model escalation was used.
 
 ## Refresh procedure
 

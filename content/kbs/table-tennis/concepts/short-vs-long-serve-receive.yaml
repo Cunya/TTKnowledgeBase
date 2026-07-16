@@ -264,6 +264,120 @@ evidence:
       segment_ids:
         - SF0Sv2ZzrRI:00026
         - SF0Sv2ZzrRI:00027
+  - id: 3SvgpoJSW3o-concept-short-vs-long-serve-receive-reviewed
+    evidence_type: explanation
+    excerpt: Judge whether a serve is short or long before moving, since misreading the bounce phase leads to missed or poor returns.
+    reason: Uses missed loop and missed reach examples to show that wrong short/long judgment breaks the receive.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 3SvgpoJSW3o
+      start_ms: 45440
+      end_ms: 66680
+      url: https://www.youtube.com/watch?v=3SvgpoJSW3o&t=45s
+      segment_ids:
+        - 3SvgpoJSW3o:00019
+        - 3SvgpoJSW3o:00020
+        - 3SvgpoJSW3o:00021
+        - 3SvgpoJSW3o:00022
+        - 3SvgpoJSW3o:00023
+        - 3SvgpoJSW3o:00024
+        - 3SvgpoJSW3o:00025
+        - 3SvgpoJSW3o:00026
+  - id: MV98YAD9lzs-concept-short-vs-long-serve-receive-reviewed
+    evidence_type: explanation
+    excerpt: Choosing between a short, peak-timed push and a long push taken early on the rise depending on the incoming ball and tactical need.
+    reason: The transcript contrasts peak-timed pushes with long pushes taken early on the rise and explains the placement and brushing differences.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: MV98YAD9lzs
+      start_ms: 424280
+      end_ms: 447160
+      url: https://www.youtube.com/watch?v=MV98YAD9lzs&t=424s
+      segment_ids:
+        - MV98YAD9lzs:00130
+        - MV98YAD9lzs:00131
+        - MV98YAD9lzs:00132
+        - MV98YAD9lzs:00133
+        - MV98YAD9lzs:00134
+        - MV98YAD9lzs:00135
+        - MV98YAD9lzs:00136
+  - id: R9InWNDCJQM-concept-short-vs-long-serve-receive-reviewed
+    evidence_type: explanation
+    excerpt: Adjusting receive timing and movement according to whether the ball is short, half-long, or longer after the bounce.
+    reason: The speaker repeatedly distinguishes half-long balls and short balls and gives different receive instructions for them.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: R9InWNDCJQM
+      start_ms: 248400
+      end_ms: 258440
+      url: https://www.youtube.com/watch?v=R9InWNDCJQM&t=248s
+      segment_ids:
+        - R9InWNDCJQM:00089
+        - R9InWNDCJQM:00090
+        - R9InWNDCJQM:00091
+  - id: zR5tddUgfGQ-concept-short-vs-long-serve-receive-reviewed
+    evidence_type: definition
+    excerpt: Choosing a different receive shape depending on whether the ball is short or long, staying close for short balls and using a backswing for long balls.
+    reason: 'The speaker explicitly contrasts short vs long balls: stay close for short balls, use a backswing for long balls, and take forehand receives on the rise when needed.'
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: zR5tddUgfGQ
+      start_ms: 368880
+      end_ms: 398640
+      url: https://www.youtube.com/watch?v=zR5tddUgfGQ&t=368s
+      segment_ids:
+        - zR5tddUgfGQ:00149
+        - zR5tddUgfGQ:00150
+        - zR5tddUgfGQ:00151
+        - zR5tddUgfGQ:00152
+        - zR5tddUgfGQ:00153
+        - zR5tddUgfGQ:00154
+        - zR5tddUgfGQ:00155
+        - zR5tddUgfGQ:00156
+        - zR5tddUgfGQ:00157
+        - zR5tddUgfGQ:00158
+        - zR5tddUgfGQ:00159
+        - zR5tddUgfGQ:00160
+  - id: 6vwxmC36InY-new-banana-flick-ball-selection-reviewed
+    evidence_type: explanation
+    excerpt: The banana flick is appropriate for short and half-long balls, but not for long serves, which do not leave enough time or space to load and swing.
+    reason: Directly contrasts long serves with in-table short and half-long balls and suggests blocking or looping long serves instead.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 6vwxmC36InY
+      start_ms: 403066
+      end_ms: 429433
+      url: https://www.youtube.com/watch?v=6vwxmC36InY&t=403s
+      segment_ids:
+        - 6vwxmC36InY:00093
+        - 6vwxmC36InY:00097
+        - 6vwxmC36InY:00099
+  - id: h5jUJL_P82w-concept-short-vs-long-serve-receive-reviewed
+    evidence_type: explanation
+    excerpt: Choosing the receive action based on whether the incoming short ball is on the rise, at the peak, or on the early descent.
+    reason: 'The speaker gives an explicit receive decision tree: rise for drop shot, peak for long push/chop-push, descent for sidespin push.'
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: h5jUJL_P82w
+      start_ms: 109100
+      end_ms: 134466
+      url: https://www.youtube.com/watch?v=h5jUJL_P82w&t=109s
+      segment_ids:
+        - h5jUJL_P82w:00024
+        - h5jUJL_P82w:00027
+        - h5jUJL_P82w:00028
 relations:
   - relation_type: part_of
     target_concept_id: concept-serve-receive-principles

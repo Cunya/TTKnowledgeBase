@@ -20,12 +20,22 @@ export const momentAnchor = (evidenceId: string) => `moment-${evidenceId}`;
 // “Speaker explains …”. Remove that lead so the remaining wording can stand
 // alone as a moment title rather than repeating a narrator label.
 export const editorialNarrative = (text: string) => {
-  const match = text.match(
+  const capitalize = (value: string) => value ? `${value[0].toUpperCase()}${value.slice(1)}` : value;
+  const transcriptDefinition = text.match(
+    /^(?:the )?transcript\s+(?:(?:explicitly|repeatedly|directly|clearly|also|then|specifically)\s+)*defines?\s+(.+?)\s+as\s+(.+)$/i,
+  );
+  if (transcriptDefinition) {
+    return `${capitalize(transcriptDefinition[1].trim())}: ${transcriptDefinition[2].trim()}`;
+  }
+  const transcriptLead = text.match(
+    /^(?:the )?transcript\s+(?:(?:explicitly|repeatedly|directly|clearly|also|then|specifically)\s+)*(?:defines?|explains?|says?|states?|describes?|gives?|demonstrates?|identifies?|teaches?|argues?|warns?|recommends?|prescribes?|introduces?|contrasts?|links?|specifies?|corrects?|frames?|adds?|provides?|appears?|names?|shows?|tells?|breaks?|maps?|centers?|reduces?|turns?|uses?|ties?|mentions?|notes?|emphasizes?|distinguishes?|references?|asks?|does?|makes?|keeps?|moves?|discusses?|details?|reinforces?|indicates?|highlights?|focuses?|outlines?|compares?|connects?)\s+(?:that\s+)?(.*)$/i,
+  );
+  if (transcriptLead) return capitalize(transcriptLead[1].trim());
+  const speakerLead = text.match(
     /^(?:the )?speaker\s+(?:(?:explicitly|repeatedly|directly|clearly|also|then)\s+)*(?:explains?|says?|states?|describes?|gives?|demonstrates?|identifies?|teaches?|argues?|warns?|recommends?|prescribes?|introduces?|contrasts?|links?|specifies?|corrects?|frames?|adds?|provides?|appears?|names?|shows?|tells?|breaks?|maps?|centers?|reduces?|turns?|uses?|ties?|mentions?|notes?|emphasizes?|distinguishes?|references?|asks?|does?|makes?|keeps?|moves?)\s+(.*)$/i,
   );
-  const capitalize = (value: string) => value ? `${value[0].toUpperCase()}${value.slice(1)}` : value;
-  if (match) return capitalize(match[1].trim());
-  return capitalize(text.replace(/^(?:the )?speaker\s+/i, '').trim());
+  if (speakerLead) return capitalize(speakerLead[1].trim());
+  return capitalize(text.replace(/^(?:the )?(?:speaker|transcript)\s+/i, '').trim());
 };
 
 export const buildVideoTocEntry = (corpus: Corpus, video: Video): VideoTocEntry => {

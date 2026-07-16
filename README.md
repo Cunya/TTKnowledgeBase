@@ -1,54 +1,186 @@
-# YouTube Knowledge Base
+# MomentGraph
 
-A source-grounded, concept-first platform for multiple independent knowledge bases generated from timestamped YouTube transcripts. The first configured KB covers table tennis. The MVP uses local Python processors and Codex CLI for structured extraction, then publishes a static Astro site to GitHub Pages.
+MomentGraph is a source-grounded knowledge extraction engine for video. It turns timestamped YouTube transcripts into browsable, wiki-style knowledge bases: concepts are organized into hierarchies, related ideas are linked, and every claim points back to a precise source moment.
 
-The current published table-tennis corpus contains 73 approved concepts, 68 supporting videos, and 1,321 evidence moments. The review queue contains 653 accepted, 41 explicitly deferred, and 1 rejected candidate. Every concept participates in the semantic relation graph. Spoken evidence is limited to focused 30-second windows; accepted candidates must be traceable to exact segment IDs in canonical content. Proposed visual clips remain non-looping until they are manually verified.
+The repository is currently named `TTKnowledgeBase`, but the product name is **MomentGraph**. Table tennis is the first knowledge base; the processors and site are designed to support additional domains without hard-coded table-tennis assumptions.
+
+## What it provides
+
+- Concept-first wiki pages instead of flat transcript summaries.
+- Hierarchies for shots, mechanics, timing, errors, tactics, and drills.
+- Per-video table-of-contents pages with linear, timestamped sections.
+- Cross-video concept pages with multiple supporting moments where available.
+- Separate spoken citations and visual demonstrations. A transcript citation is not treated as proof that the movement is visible.
+- YouTube links and standard embeds, with looping reserved for reviewed visual windows.
+- File-based review queues and canonical YAML so editorial decisions remain inspectable and versionable.
+- Independent knowledge bases isolated by KB ID, configuration, content, private processing data, and published routes.
+
+The current published table-tennis corpus contains 73 approved concepts, 121 supporting videos, and 1,814 evidence moments. Counts are maintained in the generated progress and quality reports; they will change as the corpus is reviewed.
+
+## Architecture
+
+```text
+YouTube channel / supplied captions
+              |
+              v
+     processors/ (Python CLI)
+       discovery -> ingestion -> normalization
+              |
+              v
+     Codex CLI extraction (local, budgeted)
+              |
+              v
+     private candidates + deterministic review queue
+              |
+              v
+     reviewed content/kbs/<kb>/concepts/*.yaml
+              |
+              v
+     validate -> publish -> app/public/data/
+              |
+              v
+     Astro static site -> GitHub Pages
+```
+
+The public site is a static artifact. GitHub Actions does not scrape YouTube, run Codex, download media, or require private transcripts. Only sanitized publish data is copied into `app/public/data/`.
+
+## Repository map
+
+- `processors/` - discovery, paced ingestion, Codex extraction, review-queue, validation, publishing, and budget controls.
+- `config/knowledge-bases.yaml` - registered knowledge bases.
+- `config/kbs/<kb>/` - sources, taxonomy, and KB settings.
+- `config/processors.yaml` - Codex model/profile and LLM budget settings.
+- `content/kbs/<kb>/concepts/` - reviewed canonical concept YAML, the editorial source of truth.
+- `content/kbs/<kb>/annotations/` - file-based review decisions and notes.
+- `data/normalized/` - private timed transcripts and metadata; generated and ignored.
+- `data/derived/` - private Codex candidates; generated and ignored.
+- `data/publish/` - sanitized publish output.
+- `app/` - Astro site and static build.
+- `app/public/data/` - browser-safe corpus data only.
+- `media/` - temporary review media or future offline media; always ignored.
 
 ## Quick start
 
+Prerequisites: Python 3.12+, Node.js 22+, and the Codex CLI for real extraction. The committed demo corpus can be built without network access or Codex.
+
 ```powershell
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-pip install -e ".[dev]"
-python -m processors.cli demo --kb table-tennis
-python -m processors.cli validate --kb table-tennis
-cd app
+git clone https://github.com/cunya/TTKnowledgeBase.git
+Set-Location TTKnowledgeBase
+
+py -3.12 -m venv .venv
+$env:PYTHONUTF8='1'
+.\.venv\Scripts\python.exe -m pip install -e ".[dev]"
+
+Set-Location app
 npm install
 npm run dev
 ```
 
-The committed demo corpus works without network access or Codex. For real table-tennis videos, edit `config/kbs/table-tennis/sources.yaml`, then run `ingest --kb table-tennis` and `extract-concepts --kb table-tennis --engine codex`. Generated candidates require review before `publish --kb table-tennis` includes them.
+Open `http://127.0.0.1:4321/`. The local operator pages are available at `/progress/`, `/pipeline/`, and `/recent/`. They are intentionally removed from production builds.
 
-Before changing the extraction model, compare cached transcript output with `benchmark-models --kb table-tennis --sample-size 3`; the private JSON and Markdown reports are written under `data/benchmarks/table-tennis/`.
+To run the network-free fixture path from the repository root:
 
-Ingestion is cache-first and supports paced requests, block-aware retry records, yt-dlp subtitle fallback, supplied VTT/SRT files, optional operator-provided proxy/cookie settings, and explicitly rights-gated local transcription. See [operations](docs/operations.md#resilient-transcript-ingestion) for the controls and safety boundaries.
+```powershell
+$env:PYTHONUTF8='1'
+.\.venv\Scripts\python.exe -m processors.cli demo --kb table-tennis
+.\.venv\Scripts\python.exe -m processors.cli validate --kb table-tennis
+```
 
-Normal publishing and validation exclude synthetic demo fixtures. Use `demo --kb table-tennis` for the network-free fixture, or pass `--include-demo` explicitly when validating fixture output.
+## Normal content pipeline
 
-Each KB is registered in `config/knowledge-bases.yaml` and owns matching folders under `config/kbs/` and `content/kbs/`. Private processing data and published corpora are also isolated by KB ID. Run `python -m processors.cli list-kbs` to inspect the registry.
+Run commands from the repository root with the checked virtual environment:
 
-To add another topic, add its registry entry, copy `config/kbs/table-tennis/` as a starting point, and create `content/kbs/<new-id>/concepts/`. All processing commands accept `--kb <new-id>`; publishing adds that corpus to the site catalog and generates isolated `/kb/<new-id>/` routes.
+```powershell
+$env:PYTHONUTF8='1'
 
-See [how the pipeline works](docs/pipeline.md) for the automated and manual stages, commands, data lineage, and visual-timestamp workflow. See [source video progress](docs/source-video-progress.md) for per-channel discovery, ingestion, extraction, review, publication, and visual-verification counts. See [the implementation plan](docs/youtube-knowledge-base-plan.md) for architecture, policy, and future offline-media scope.
+# 1. Discover metadata; discovery alone does not ingest or publish anything.
+.\.venv\Scripts\python.exe -m processors.cli discover CHANNEL_OR_PLAYLIST_URL --kb table-tennis
 
-## Publish with GitHub Pages
+# 2. Ingest a small, curated batch of videos.
+.\.venv\Scripts\python.exe -m processors.cli ingest --kb table-tennis VIDEO_URL_1 VIDEO_URL_2
 
-The repository includes separate CI and Pages deployment workflows. GitHub builds only the committed sanitized corpus in `app/public/data/`; it does not ingest YouTube, download media, run Codex, or require private transcripts.
+# 3. Extract transcript-grounded concept candidates with Codex CLI.
+.\.venv\Scripts\python.exe -m processors.cli extract-concepts --kb table-tennis --engine codex --video-id VIDEO_ID
 
-1. Commit the reviewed source and sanitized public data.
-2. Push the `main` branch to GitHub.
-3. In **Settings → Pages**, select **GitHub Actions** as the source.
-4. Run **Deploy GitHub Pages** manually or let the push to `main` trigger it.
+# 4. Build and inspect the review queue.
+.\.venv\Scripts\python.exe -m processors.cli build-review-queue --kb table-tennis
+.\.venv\Scripts\python.exe -m processors.cli process-pending --kb table-tennis
 
-For the configured repository, the project URL will be:
+# 5. Review candidates and edit canonical YAML, then validate and publish.
+.\.venv\Scripts\python.exe -m processors.cli validate --kb table-tennis
+.\.venv\Scripts\python.exe -m processors.cli publish --kb table-tennis
+```
+
+The `cp` workflow drains eligible cached transcripts and candidates before selecting another controlled batch. It obeys the prioritized backlog, pacing, source-policy checks, and the block circuit breaker. Do not start a large scrape while a backlog gate is active.
+
+Every published claim must cite real transcript segment IDs. Candidate JSON is a proposal, not public knowledge, and must be reviewed into canonical concept YAML. Spoken windows are kept short and focused; visual windows are separate and remain non-looping until a reviewer confirms that the footage actually demonstrates the concept.
+
+## Codex model and daily budget
+
+Codex-backed extraction, rephrasing, and benchmarking use the configured low-cost profile (`gpt-5.4-mini`, low reasoning by default). Automatic escalation is disabled. All of these tasks share an adjustable local budget in `config/processors.yaml`:
+
+```yaml
+llm_budget:
+  enabled: true
+  timezone: Europe/Helsinki
+  daily_token_limit: 500000
+  task_token_limits:
+    extraction: 400000
+    rephrase: 100000
+    benchmark: 100000
+```
+
+Check the private per-KB ledger with:
+
+```powershell
+.\.venv\Scripts\python.exe -m processors.cli llm-budget --kb table-tennis
+```
+
+The ledger and deferral records are ignored under `data/manifests/<kb>/`. A conservative estimate is reserved before a Codex call and reconciled afterward. When a daily or task limit is reached, new work is deferred instead of started. The local `/progress/` page shows usage, remaining allowance, calls, and deferrals; this section is not published.
+
+## Source and platform safeguards
+
+Ingestion is cache-first, sequential, and deliberately paced. Existing normalized transcripts are reused without network access. When a source blocks transcript requests, the processor records a cooldown and stops rather than repeatedly retrying the same route. Cookies, proxy settings, credentials, raw transcripts, Codex audit data, and downloaded media are private and never belong in Git or GitHub Pages.
+
+The public product is an independent study guide: original summaries, short attributed excerpts, source links, timestamps, and standard YouTube embeds. It is not a transcript mirror, video archive, or replacement player. Review [the legal/platform findings](docs/legal-review-youtube-2026-07-15.md) and [the precedent study](docs/youtube-knowledge-project-precedents-2026-07-15.md) before expanding acquisition or changing public content policy.
+
+## GitHub Pages deployment
+
+The repository includes validation and Pages deployment workflows. GitHub Pages publishes the committed sanitized corpus only.
+
+1. Review and publish the local corpus.
+2. Run the release checks below.
+3. Commit and push the reviewed source and sanitized data to `main`.
+4. In **Settings -> Pages**, select **GitHub Actions** as the source.
+5. Run the deployment workflow or let the push trigger it.
+
+For this repository, the project URL is:
 
 ```text
 https://cunya.github.io/TTKnowledgeBase/
 ```
 
-Astro derives `/TTKnowledgeBase` from `GITHUB_REPOSITORY` during Actions builds, while local development continues to use `/`. The workflow scans the generated site for raw transcript collections, media, cookies, environment files, and credential-like strings before upload.
+Astro derives the project base path from `GITHUB_REPOSITORY` during Actions builds; local development uses `/`. Production builds remove `/progress/`, `/pipeline/`, and `/recent/`, along with their navigation links.
 
-Before committing a new corpus, run the release checks from the repository root:
+## Multi-KB workflow
+
+To add another topic:
+
+1. Register it in `config/knowledge-bases.yaml`.
+2. Copy `config/kbs/table-tennis/` to `config/kbs/<new-id>/` and replace its sources/taxonomy.
+3. Create `content/kbs/<new-id>/concepts/` and its annotations directory.
+4. Run every processor command with `--kb <new-id>`.
+5. Validate and publish; the site will generate isolated `/kb/<new-id>/` routes.
+
+Shared processors and site routes must remain domain-neutral. Domain terminology belongs in the KB taxonomy and reviewed content, not in generic pipeline code.
+
+## Offline scope
+
+Downloading, preserving, and transcoding source videos are future, user-controlled features. They are not part of the public MVP. A future offline mode must be a separate local-only tool with explicit rights/policy checks, manifest-owned paths, storage estimates, safe cleanup previews, and no GitHub Pages or public object-storage output. Keep the current public build source-linked and media-free.
+
+## Release checks
+
+Run these checks before publishing a new corpus or site change:
 
 ```powershell
 $env:PYTHONUTF8='1'
@@ -56,8 +188,18 @@ $env:PYTHONUTF8='1'
 .\.venv\Scripts\python.exe -m processors.cli publish --kb table-tennis
 .\.venv\Scripts\python.exe -m processors.cli validate-published --kb table-tennis
 .\.venv\Scripts\python.exe -m processors.cli report-quality --kb table-tennis
-.\.venv\Scripts\python.exe -m pytest
+.\.venv\Scripts\pytest.exe
 .\.venv\Scripts\ruff.exe check .
+
 Set-Location app
 npm run build
 ```
+
+For the complete data lineage, scripted-versus-LLM responsibilities, review gates, timestamp rules, and troubleshooting, see:
+
+- [Pipeline documentation](docs/pipeline.md)
+- [Operations guide](docs/operations.md)
+- [Source video progress](docs/source-video-progress.md)
+- [Prioritized backlog](docs/prioritized-backlog-2026-07-15.md)
+- [Moment-boundary analysis study](docs/moment-boundary-analysis-study-2026-07-16.md)
+- [Architecture and product plan](docs/youtube-knowledge-base-plan.md)

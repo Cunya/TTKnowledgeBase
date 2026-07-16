@@ -363,6 +363,29 @@ blockquote { font-family: Georgia, serif; font-size: 21px; line-height: 1.42; ma
 .progress-item progress::-webkit-progress-bar { border-radius: 999px; background: var(--line); }
 .progress-item progress::-webkit-progress-value { border-radius: 999px; background: var(--green); }
 .progress-item progress::-moz-progress-bar { border-radius: 999px; background: var(--green); }
+.llm-budget-summary { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(240px, .6fr); gap: 36px; margin: 26px 0 30px; border-top: 1px solid var(--ink); }
+.llm-budget-total { padding: 24px 0 0; }
+.llm-budget-total-heading { display: flex; align-items: baseline; gap: 12px; }
+.llm-budget-total-heading strong { font-family: Georgia, serif; font-size: clamp(34px, 5vw, 56px); font-weight: 500; }
+.llm-budget-total-heading span { color: var(--muted); font-family: var(--mono); font-size: 11px; }
+.llm-budget-total-heading em { margin-left: auto; color: var(--green); font-family: var(--mono); font-size: 14px; font-style: normal; font-weight: 700; }
+.llm-budget-total > progress { width: 100%; height: 10px; margin-top: 18px; border: 0; border-radius: 999px; background: var(--line); accent-color: var(--green); }
+.llm-budget-total > progress::-webkit-progress-bar { border-radius: 999px; background: var(--line); }
+.llm-budget-total > progress::-webkit-progress-value { border-radius: 999px; background: var(--green); }
+.llm-budget-total > progress::-moz-progress-bar { border-radius: 999px; background: var(--green); }
+.llm-budget-total p { max-width: 720px; margin: 14px 0 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.llm-budget-facts { display: grid; align-content: start; gap: 0; margin: 0; border-left: 1px solid var(--line); }
+.llm-budget-facts div { display: grid; grid-template-columns: 90px 1fr; gap: 14px; padding: 14px 0 14px 20px; border-bottom: 1px solid var(--line); }
+.llm-budget-facts dt { color: var(--green); font-family: var(--mono); font-size: 9px; letter-spacing: .06em; text-transform: uppercase; }
+.llm-budget-facts dd { margin: 0; color: var(--muted); font-size: 12px; }
+.llm-budget-table { margin-top: 0; }
+.llm-budget-table th:first-child { min-width: 160px; }
+.llm-budget-task-name { display: block; margin-bottom: 9px; text-transform: capitalize; }
+.llm-budget-task-name + progress { width: 130px; height: 5px; border: 0; border-radius: 999px; background: var(--line); accent-color: var(--green); }
+.llm-budget-task-name + progress::-webkit-progress-bar { border-radius: 999px; background: var(--line); }
+.llm-budget-task-name + progress::-webkit-progress-value { border-radius: 999px; background: var(--green); }
+.llm-budget-task-name + progress::-moz-progress-bar { border-radius: 999px; background: var(--green); }
+.progress-alert.warning { border-left-color: var(--orange); }
 .inventories > p { max-width: 840px; margin-bottom: 28px; color: var(--muted); line-height: 1.65; }
 .catalog-table a { color: var(--green); text-decoration: none; }
 .catalog-table td:last-child { min-width: 440px; white-space: normal; }
@@ -455,11 +478,16 @@ blockquote { font-family: Georgia, serif; font-size: 21px; line-height: 1.42; ma
   .video-toc > ol { grid-template-columns: 1fr; }
   .video-detail-hero { grid-template-columns: 1fr; align-items: start; }
   .progress-bars { grid-template-columns: repeat(3, minmax(110px, 1fr)); }
+  .llm-budget-summary { grid-template-columns: 1fr; gap: 0; }
+  .llm-budget-facts { border-left: 0; }
+  .llm-budget-facts div { padding-left: 0; }
   .wiki-toc { position: static; grid-template-columns: repeat(3, 1fr); border-left: 0; border-bottom: 1px solid var(--line); padding: 0 0 14px; }
   .wiki-toc strong { grid-column: 1 / -1; }
 }
 @media (max-width: 560px) {
   .progress-alert { grid-template-columns: 1fr; gap: 5px; }
+  .llm-budget-total-heading { display: grid; gap: 4px; }
+  .llm-budget-total-heading em { margin-left: 0; }
   .recent-row { grid-template-columns: 30px minmax(0, 1fr); gap: 14px; }
   .recent-count { grid-column: 2; display: flex; justify-items: start; align-items: baseline; gap: 7px; }
   .recent-concept-row { grid-template-columns: 1fr; gap: 15px; }

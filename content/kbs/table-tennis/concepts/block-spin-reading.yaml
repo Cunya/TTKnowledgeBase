@@ -55,6 +55,71 @@ evidence:
         - "etKOmktKw1k:00071"
         - "etKOmktKw1k:00072"
         - "etKOmktKw1k:00073"
+  - id: 3SvgpoJSW3o-concept-block-spin-reading-reviewed
+    evidence_type: explanation
+    excerpt: Assess the spin by observing racket angle, backswing, contact acceleration, and follow-through before choosing a block or return.
+    reason: States that reading spin is necessary before handling it and before choosing the return.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 3SvgpoJSW3o
+      start_ms: 33600
+      end_ms: 42360
+      url: https://www.youtube.com/watch?v=3SvgpoJSW3o&t=33s
+      segment_ids:
+        - 3SvgpoJSW3o:00013
+        - 3SvgpoJSW3o:00014
+        - 3SvgpoJSW3o:00015
+  - id: wd_E9NZBVtU-concept-block-spin-reading-reviewed
+    evidence_type: explanation
+    excerpt: Judging whether an incoming topspin ball truly has heavy spin before choosing the blocking response.
+    reason: The speaker demonstrates that a fake loop with less spin should not be treated like a heavy-spin ball and says netted blocks often mean the attacker did not actually impart much spin.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: wd_E9NZBVtU
+      start_ms: 156433
+      end_ms: 184033
+      url: https://www.youtube.com/watch?v=wd_E9NZBVtU&t=156s
+      segment_ids:
+        - wd_E9NZBVtU:00035
+        - wd_E9NZBVtU:00036
+        - wd_E9NZBVtU:00037
+        - wd_E9NZBVtU:00038
+        - wd_E9NZBVtU:00039
+        - wd_E9NZBVtU:00040
+  - id: 6Xx11I8CB9M-concept-block-spin-reading-reviewed
+    evidence_type: explanation
+    excerpt: Judging whether the incoming ball is fast, spinny, or deceptive so the block technique and racket angle can be adjusted correctly.
+    reason: The speaker teaches that faster balls usually carry less spin, while deceptive loops can look similar but differ in spin.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 6Xx11I8CB9M
+      start_ms: 773366
+      end_ms: 785033
+      url: https://www.youtube.com/watch?v=6Xx11I8CB9M&t=773s
+      segment_ids:
+        - 6Xx11I8CB9M:00146
+        - 6Xx11I8CB9M:00147
+  - id: 6Xx11I8CB9M-concept-block-spin-reading-reviewed-125dbaac
+    evidence_type: explanation
+    excerpt: Judging whether the incoming ball is fast, spinny, or deceptive so the block technique and racket angle can be adjusted correctly.
+    reason: The speaker teaches that faster balls usually carry less spin, while deceptive loops can look similar but differ in spin.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 6Xx11I8CB9M
+      start_ms: 773366
+      end_ms: 785033
+      url: https://www.youtube.com/watch?v=6Xx11I8CB9M&t=773s
+      segment_ids:
+        - 6Xx11I8CB9M:00146
+        - 6Xx11I8CB9M:00147
 relations:
   - relation_type: used_with
     target_concept_id: concept-block-trajectory-and-placement

@@ -6,6 +6,7 @@ import subprocess
 import tempfile
 from pathlib import Path
 
+from .llm_budget import LLMTokenBudget
 from .models import ExcerptRewriteResponse, ExtractionResponse, Segment
 from .utils import read_yaml, sha256_json, write_json
 
@@ -74,6 +75,9 @@ def extract_with_codex(
     config_path: Path,
     audit_dir: Path,
     model_override: str | None = None,
+    *,
+    budget_path: Path | None = None,
+    task: str = "extraction",
 ) -> tuple[ExtractionResponse, dict]:
     config = read_yaml(config_path)["codex"]
     service_tier = config.get("service_tier")
@@ -84,6 +88,10 @@ def extract_with_codex(
     schema = ExtractionResponse.model_json_schema()
     prompt = build_prompt(segments, taxonomy, known_concepts)
     input_hash = sha256_json({"segments": [s.model_dump() for s in segments], "prompt": prompt})
+    budget = LLMTokenBudget(config_path, budget_path) if budget_path else None
+    reservation = (
+        budget.reserve(task, prompt, input_hash=input_hash) if budget else None
+    )
 
     with tempfile.TemporaryDirectory(prefix="ytkb-codex-") as temporary:
         job_dir = Path(temporary)
@@ -117,38 +125,49 @@ def extract_with_codex(
                 "--config",
                 f'service_tier="{service_tier}"',
             ]
-        result = subprocess.run(
-            command,
-            input=prompt,
-            capture_output=True,
-            text=True,
-            encoding="utf-8",
-            errors="replace",
-            timeout=timeout,
-        )
-        provenance = {
-            "cli_version": cli_version,
-            "model": model,
-            "reasoning_effort": reasoning,
-            "prompt_version": PROMPT_VERSION,
-            "schema_version": SCHEMA_VERSION,
-            "input_hash": input_hash,
-            "exit_code": result.returncode,
-            "usage": parse_codex_usage(result.stdout),
-        }
-        if result.returncode != 0 or not response_path.exists():
-            audit_dir.mkdir(parents=True, exist_ok=True)
-            write_json(
-                audit_dir / f"{input_hash.removeprefix('sha256:')}.failure.json",
-                {
-                    **provenance,
-                    "stderr": result.stderr[-4000:],
-                    "stdout": result.stdout[-8000:],
-                },
+        usage: dict | None = None
+        try:
+            result = subprocess.run(
+                command,
+                input=prompt,
+                capture_output=True,
+                text=True,
+                encoding="utf-8",
+                errors="replace",
+                timeout=timeout,
             )
-            raise CodexError(result.stderr.strip() or "Codex returned no response")
-        response = ExtractionResponse.model_validate_json(response_path.read_text(encoding="utf-8"))
-        return response, provenance
+            usage = parse_codex_usage(result.stdout)
+            provenance = {
+                "cli_version": cli_version,
+                "model": model,
+                "reasoning_effort": reasoning,
+                "prompt_version": PROMPT_VERSION,
+                "schema_version": SCHEMA_VERSION,
+                "input_hash": input_hash,
+                "exit_code": result.returncode,
+                "usage": usage,
+            }
+            if result.returncode != 0 or not response_path.exists():
+                audit_dir.mkdir(parents=True, exist_ok=True)
+                write_json(
+                    audit_dir / f"{input_hash.removeprefix('sha256:')}.failure.json",
+                    {
+                        **provenance,
+                        "stderr": result.stderr[-4000:],
+                        "stdout": result.stdout[-8000:],
+                    },
+                )
+                raise CodexError(result.stderr.strip() or "Codex returned no response")
+            response = ExtractionResponse.model_validate_json(
+                response_path.read_text(encoding="utf-8")
+            )
+            if reservation:
+                provenance["budget"] = reservation.finish(usage)
+            return response, provenance
+        except Exception:
+            if reservation:
+                reservation.finish(usage)
+            raise
 
 
 def parse_codex_usage(stdout: str) -> dict | None:
@@ -175,6 +194,8 @@ def rephrase_excerpt_with_codex(
     *,
     model_override: str | None = None,
     max_chars: int = 420,
+    budget_path: Path | None = None,
+    task: str = "rephrase",
 ) -> tuple[str, dict]:
     """Ask the configured Codex profile to turn a source excerpt into an editorial summary."""
     config = read_yaml(config_path)["codex"]
@@ -208,6 +229,10 @@ Cited transcript context:
             "max_chars": max_chars,
         }
     )
+    budget = LLMTokenBudget(config_path, budget_path) if budget_path else None
+    reservation = (
+        budget.reserve(task, prompt, input_hash=input_hash) if budget else None
+    )
     with tempfile.TemporaryDirectory(prefix="ytkb-rephrase-") as temporary:
         job_dir = Path(temporary)
         prompt_path = job_dir / "prompt.md"
@@ -240,44 +265,53 @@ Cited transcript context:
                 "--config",
                 f'service_tier="{service_tier}"',
             ]
-        result = subprocess.run(
-            command,
-            input=prompt,
-            capture_output=True,
-            text=True,
-            encoding="utf-8",
-            errors="replace",
-            timeout=timeout,
-        )
-        provenance = {
-            "cli_version": cli_version,
-            "model": model,
-            "reasoning_effort": reasoning,
-            "prompt_version": REPHRASE_PROMPT_VERSION,
-            "schema_version": SCHEMA_VERSION,
-            "input_hash": input_hash,
-            "exit_code": result.returncode,
-            "usage": parse_codex_usage(result.stdout),
-        }
-        if result.returncode != 0 or not response_path.exists():
-            audit_dir.mkdir(parents=True, exist_ok=True)
-            write_json(
-                audit_dir / f"{input_hash.removeprefix('sha256:')}.rephrase.failure.json",
-                {
-                    **provenance,
-                    "stderr": result.stderr[-4000:],
-                    "stdout": result.stdout[-8000:],
-                },
+        usage: dict | None = None
+        try:
+            result = subprocess.run(
+                command,
+                input=prompt,
+                capture_output=True,
+                text=True,
+                encoding="utf-8",
+                errors="replace",
+                timeout=timeout,
             )
-            raise CodexError(result.stderr.strip() or "Codex returned no rephrase")
-        response = ExcerptRewriteResponse.model_validate_json(
-            response_path.read_text(encoding="utf-8")
-        )
-        if len(response.excerpt) > max_chars:
-            raise CodexError("Codex returned an excerpt longer than the configured limit")
-        audit_dir.mkdir(parents=True, exist_ok=True)
-        write_json(
-            audit_dir / f"{input_hash.removeprefix('sha256:')}.rephrase.json",
-            {**provenance, "output_chars": len(response.excerpt)},
-        )
-        return response.excerpt, provenance
+            usage = parse_codex_usage(result.stdout)
+            provenance = {
+                "cli_version": cli_version,
+                "model": model,
+                "reasoning_effort": reasoning,
+                "prompt_version": REPHRASE_PROMPT_VERSION,
+                "schema_version": SCHEMA_VERSION,
+                "input_hash": input_hash,
+                "exit_code": result.returncode,
+                "usage": usage,
+            }
+            if result.returncode != 0 or not response_path.exists():
+                audit_dir.mkdir(parents=True, exist_ok=True)
+                write_json(
+                    audit_dir / f"{input_hash.removeprefix('sha256:')}.rephrase.failure.json",
+                    {
+                        **provenance,
+                        "stderr": result.stderr[-4000:],
+                        "stdout": result.stdout[-8000:],
+                    },
+                )
+                raise CodexError(result.stderr.strip() or "Codex returned no rephrase")
+            response = ExcerptRewriteResponse.model_validate_json(
+                response_path.read_text(encoding="utf-8")
+            )
+            if len(response.excerpt) > max_chars:
+                raise CodexError("Codex returned an excerpt longer than the configured limit")
+            audit_dir.mkdir(parents=True, exist_ok=True)
+            if reservation:
+                provenance["budget"] = reservation.finish(usage)
+            write_json(
+                audit_dir / f"{input_hash.removeprefix('sha256:')}.rephrase.json",
+                {**provenance, "output_chars": len(response.excerpt)},
+            )
+            return response.excerpt, provenance
+        except Exception:
+            if reservation:
+                reservation.finish(usage)
+            raise

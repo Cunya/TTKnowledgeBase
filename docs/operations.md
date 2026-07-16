@@ -24,6 +24,16 @@ python -m processors.cli build-review-queue
 
 Codex runs in an ephemeral, read-only temporary directory using the configured low-cost model. Generated candidates appear under `data/derived/` and are not publishable by default.
 
+All Codex-backed tasks share an adjustable daily token budget. The configured total and per-task caps live in `config/processors.yaml` under `llm_budget`; usage is kept in the private, gitignored `data/manifests/<kb>/llm-budget.json`. A call is estimated before `codex exec` starts, and extraction, rephrasing, or benchmarking is deferred when the daily or task cap would be exceeded. Inspect the current allowance with:
+
+```powershell
+python -m processors.cli llm-budget --kb table-tennis
+```
+
+Deferred extraction work is recorded in `data/manifests/<kb>/llm-deferred.json` and can be resumed on a later day or after adjusting the config. This ledger counts conservative token units reported by Codex (or the pre-call estimate when usage is unavailable); it is not a billing estimate.
+
+When `publish --auto-rephrase-high-overlap` reaches the budget, publication stops rather than silently shipping excerpts that still require rephrasing. Run the command again after the daily reset or after deliberately increasing the configured allowance.
+
 To compare a cheaper model before changing `config/processors.yaml`, run the isolated quality benchmark on cached transcripts:
 
 ```powershell

@@ -171,6 +171,37 @@ evidence:
         - UCyUdarqdJc:00108
         - UCyUdarqdJc:00109
         - UCyUdarqdJc:00110
+  - id: yekYhw94rVI-concept-backhand-loop-reviewed
+    evidence_type: definition
+    excerpt: A backhand topspin stroke used both in receive and in attack situations, with mechanics adjusted to ball speed and context.
+    reason: The speaker explicitly says backhand loops are used when receiving serve and contrasts them with third-ball attack backhand looping.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: yekYhw94rVI
+      start_ms: 360
+      end_ms: 8760
+      url: https://www.youtube.com/watch?v=yekYhw94rVI&t=0s
+      segment_ids:
+        - yekYhw94rVI:00000
+        - yekYhw94rVI:00002
+  - id: hp9OZTBD5JE-concept-backhand-loop-reviewed
+    evidence_type: definition
+    excerpt: A backhand topspin stroke that depends on correct contact, body coordination, and brushing quality rather than a pure lift or push.
+    reason: The speaker names the technique as a backhand loop and describes the conditions that make it a real loop with spin and quality.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: hp9OZTBD5JE
+      start_ms: 295600
+      end_ms: 323120
+      url: https://www.youtube.com/watch?v=hp9OZTBD5JE&t=295s
+      segment_ids:
+        - hp9OZTBD5JE:00110
+        - hp9OZTBD5JE:00111
+        - hp9OZTBD5JE:00119
 relations:
   - relation_type: used_with
     target_concept_id: concept-backhand-topspin-body-coordination
