@@ -21,6 +21,8 @@ The current published table-tennis corpus contains 73 approved concepts, 121 sup
 
 Table tennis is the first production knowledge base in MomentGraph. It is a source-grounded study guide for learning strokes, movement, timing, tactics, and practice methods from instructional video. The content is organized as a wiki rather than as a list of transcript summaries.
 
+Browse the [published table-tennis knowledge base](https://cunya.github.io/TTKnowledgeBase/kb/table-tennis/) or open the local version at `http://127.0.0.1:4321/kb/table-tennis/` during development.
+
 ### Sources and scope
 
 The initial source set is deliberately focused on two public YouTube channels:

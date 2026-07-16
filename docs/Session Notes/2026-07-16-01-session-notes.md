@@ -28,6 +28,7 @@
 - Consolidated operator navigation into one local-only `/dashboard/` link. The dashboard links to Progress, Backlog, Pipeline, and Recent while the focused routes remain available directly. Production builds remove the dashboard and all operator pages.
 - Reworked the local-only `/backlog/` page around feature outcomes rather than separate P0/P1/P2 lanes. Four workstreams now group the related items, while every row keeps its priority and status badge; section spacing was tightened to reduce the gap between a feature and its subitems.
 - Added a study-to-backlog documentation contract to `AGENTS.md`, `docs/pipeline.md`, `docs/operations.md`, and `README.md`: studies must update the canonical Markdown backlog, rebuild/verify the generated local HTML backlog, and update relevant docs plus the session log/notes.
+- Added published and local table-tennis KB links to the README for easier discovery.
 
 ## Maintained planning sources
 
