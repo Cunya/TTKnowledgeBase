@@ -21,6 +21,33 @@ export const momentAnchor = (evidenceId: string) => `moment-${evidenceId}`;
 // alone as a moment title rather than repeating a narrator label.
 export const editorialNarrative = (text: string) => {
   const capitalize = (value: string) => value ? `${value[0].toUpperCase()}${value.slice(1)}` : value;
+  const cleanEnd = (value: string) => value.trim().replace(/[.]+$/, '');
+
+  // Some candidate excerpts are grammatically valid but make poor TOC names
+  // because they repeat the extraction verb and the full explanatory clause.
+  // Keep this as a display-only transform: canonical excerpts remain unchanged
+  // for provenance, review, and overlap auditing.
+  const compactDefinition = text.match(
+    /^defines?\s+(?:the\s+)?(.+?)\s+as\s+.+?\s+because\s+the\s+distance\s+from\s+takeback\s+to\s+contact\s+is\s+short\.?$/i,
+  );
+  if (compactDefinition) return 'Short takeback-to-contact distance';
+
+  const peakTiming = text.match(
+    /^specifies?\s+that\s+(?:the\s+)?(.+?)\s+should\s+be\s+executed\s+at\s+the\s+peak\s+of\s+the\s+bounce\.?$/i,
+  );
+  if (peakTiming) return 'Peak-of-bounce timing';
+
+  const definitionLead = text.match(/^defines?\s+(?:the\s+)?(.+?)\s+as\s+(.+?)\s+because\s+(.+)$/i);
+  if (definitionLead) return `${capitalize(cleanEnd(definitionLead[1]))}: ${cleanEnd(definitionLead[2])}`;
+
+  const specifiesLead = text.match(/^specifies?\s+that\s+(?:the\s+)?(.+?)\s+should\s+be\s+(.+)$/i);
+  if (specifiesLead) return `${capitalize(cleanEnd(specifiesLead[1]))}: ${cleanEnd(specifiesLead[2])}`;
+
+  const bareEditorialLead = text.match(
+    /^(?:defines?|specifies?|warns?|explains?|describes?|states?|shows?|teaches?|recommends?|prescribes?|introduces?|contrasts?|links?|corrects?|frames?|provides?|identifies?|names?|demonstrates?|emphasizes?|distinguishes?|compares?|connects?|outlines?|details?|reinforces?|highlights?|focuses?|organizes?|diagnoses?|mentions?|notes?|adds?)\s+(?:that\s+)?(.+)$/i,
+  );
+  if (bareEditorialLead) return capitalize(cleanEnd(bareEditorialLead[1]));
+
   const transcriptDefinition = text.match(
     /^(?:the )?transcript\s+(?:(?:explicitly|repeatedly|directly|clearly|also|then|specifically)\s+)*defines?\s+(.+?)\s+as\s+(.+)$/i,
   );
@@ -32,7 +59,7 @@ export const editorialNarrative = (text: string) => {
   );
   if (transcriptLead) return capitalize(transcriptLead[1].trim());
   const speakerLead = text.match(
-    /^(?:the )?speaker\s+(?:(?:explicitly|repeatedly|directly|clearly|also|then)\s+)*(?:explains?|says?|states?|describes?|gives?|demonstrates?|identifies?|teaches?|argues?|warns?|recommends?|prescribes?|introduces?|contrasts?|links?|specifies?|corrects?|frames?|adds?|provides?|appears?|names?|shows?|tells?|breaks?|maps?|centers?|reduces?|turns?|uses?|ties?|mentions?|notes?|emphasizes?|distinguishes?|references?|asks?|does?|makes?|keeps?|moves?)\s+(.*)$/i,
+    /^(?:the )?speaker\s+(?:(?:explicitly|repeatedly|directly|clearly|also|then)\s+)*(?:defines?|explains?|says?|states?|describes?|gives?|demonstrates?|identifies?|teaches?|argues?|warns?|recommends?|prescribes?|introduces?|contrasts?|links?|specifies?|corrects?|frames?|adds?|provides?|appears?|names?|shows?|tells?|breaks?|maps?|centers?|reduces?|turns?|uses?|ties?|mentions?|notes?|emphasizes?|distinguishes?|references?|asks?|does?|makes?|keeps?|moves?)\s+(.*)$/i,
   );
   if (speakerLead) return capitalize(speakerLead[1].trim());
   return capitalize(text.replace(/^(?:the )?(?:speaker|transcript)\s+/i, '').trim());

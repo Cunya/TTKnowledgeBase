@@ -5,6 +5,14 @@ aliases:
   - compact push
   - short push action
 short_definition: Keep the push compact, close to the ball, and supported by an appropriate racket angle rather than a large backswing.
+evidence_summary: >-
+  A good push uses a slightly upright racket angle, compact forward-and-slightly-downward motion,
+  and firm contact under or behind the ball. The stroke should be placement-first and controlled,
+  with body weight and a concise action creating the main effect rather than a loose wrist or
+  overly flat face. Because the push is a high-frequency match shot, it must be treated seriously
+  and executed with consistency, spin, and enough compact force to be effective.
+evidence_summary_source_hash: "sha256:bfb0d9ade12ab92d4adfbc49a02f784bbea00e0f864f20d7c9c24ca9f00e1a6f"
+evidence_summary_generator: "codex"
 concept_type: push-mechanic
 facets:
   category:
@@ -466,6 +474,22 @@ evidence:
         - 7jWqEsHtN3Y:00018
         - 7jWqEsHtN3Y:00019
         - 7jWqEsHtN3Y:00020
+  - id: D1cBF0nsjKo-concept-push-technique-reviewed
+    evidence_type: definition
+    excerpt: A compact table-tennis push used on short and half-long balls, emphasizing close contact, controlled racket path, and adaptation to incoming spin.
+    reason: The speaker explicitly frames the push shot as a key, frequently used match shot that amateurs must take seriously.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: D1cBF0nsjKo
+      start_ms: 480
+      end_ms: 11440
+      url: https://www.youtube.com/watch?v=D1cBF0nsjKo&t=0s
+      segment_ids:
+        - D1cBF0nsjKo:00000
+        - D1cBF0nsjKo:00003
+        - D1cBF0nsjKo:00004
 relations:
   - relation_type: used_with
     target_concept_id: concept-push-contact-and-spin

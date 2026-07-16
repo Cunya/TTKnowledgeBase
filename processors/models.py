@@ -146,6 +146,21 @@ class ExcerptRewriteResponse(StrictModel):
     excerpt: str = Field(min_length=1, max_length=420)
 
 
+class EvidenceSummaryResponse(StrictModel):
+    """A coherent editorial synthesis of reviewed evidence reasons."""
+
+    summary: str = Field(min_length=120, max_length=1800)
+
+
+class EvidenceSummaryItem(StrictModel):
+    concept_id: str = Field(min_length=1)
+    summary: str = Field(min_length=120, max_length=1800)
+
+
+class EvidenceSummaryBatchResponse(StrictModel):
+    summaries: list[EvidenceSummaryItem] = Field(min_length=1)
+
+
 class ConceptEvidence(BaseModel):
     id: str
     evidence_type: EvidenceType
@@ -182,6 +197,9 @@ class Concept(BaseModel):
     aliases: list[str] = []
     short_definition: str
     detailed_definition: str | None = None
+    evidence_summary: str | None = None
+    evidence_summary_source_hash: str | None = None
+    evidence_summary_generator: str | None = None
     concept_type: str
     facets: dict[str, list[str]] = {}
     difficulty: str | None = None

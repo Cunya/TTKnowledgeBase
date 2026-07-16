@@ -39,6 +39,9 @@ export type Concept = {
   aliases: string[];
   short_definition: string;
   detailed_definition?: string;
+  evidence_summary?: string | null;
+  evidence_summary_source_hash?: string | null;
+  evidence_summary_generator?: string | null;
   concept_type: string;
   facets: Record<string, string[]>;
   difficulty?: string;

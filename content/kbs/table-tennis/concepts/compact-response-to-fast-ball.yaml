@@ -5,6 +5,14 @@ aliases:
   - no-backswing response
   - compact receive
 short_definition: Reduce or remove the backswing when time is limited, using the incoming pace and a compact contact action.
+evidence_summary: >-
+  A fast ball demands a very small, compact receive motion because the available reaction time is
+  limited. The racket should stay in front with no big backswing, the wrist kept controlled, and
+  the forearm used to lift or guide the ball onto the table. The contact is taken on the descent
+  with a closed angle and a forward drive, so the ball is handled by thin friction and direct
+  forward action rather than a large brushing swing.
+evidence_summary_source_hash: "sha256:f8f9c3593ee7af3eb7ad88074e1299ffcdf666d13ba7d3738f947cf4a8e1f81a"
+evidence_summary_generator: "codex"
 concept_type: timing
 facets:
   category:
@@ -734,6 +742,26 @@ evidence:
       segment_ids:
         - hwT7cH6PbZQ:00105
         - hwT7cH6PbZQ:00109
+  - id: Kg4hLYnEbAs-concept-compact-response-to-fast-ball-reviewed
+    evidence_type: explanation
+    excerpt: Using a very small, efficient motion on receive when the incoming ball is fast or heavy to stay controlled and avoid being jammed.
+    reason: The speaker contrasts a larger attacking backhand stroke with a much smaller receive motion and says the movement must be compact because receive requires high speed.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Kg4hLYnEbAs
+      start_ms: 190560
+      end_ms: 217280
+      url: https://www.youtube.com/watch?v=Kg4hLYnEbAs&t=190s
+      segment_ids:
+        - Kg4hLYnEbAs:00059
+        - Kg4hLYnEbAs:00060
+        - Kg4hLYnEbAs:00063
+        - Kg4hLYnEbAs:00064
+        - Kg4hLYnEbAs:00065
+        - Kg4hLYnEbAs:00066
+        - Kg4hLYnEbAs:00067
 relations:
   - relation_type: used_with
     target_concept_id: concept-control-before-power

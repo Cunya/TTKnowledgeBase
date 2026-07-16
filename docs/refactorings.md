@@ -33,6 +33,10 @@
 - Add a visible badge for single-source concepts. Transcript-inferred visual moments are now labeled as proposed and cannot loop until verified.
 - Add a generated “Recently added” view based on reviewed content provenance or an editorial publication date.
 - Add browser-level tests for primary/cross-listed topic paths, base-path routing, and non-looping transcript-only evidence.
+
+## Concept synthesis
+
+- Keep evidence-summary construction in `processors/evidence_summaries.py` and reuse it for future knowledge bases instead of duplicating prose assembly in Astro pages. The deterministic path remains a no-cost fallback; the explicit batched Codex path handles coherent prose, with attribution/paragraph validation shared by both.
 # Review-queue YAML stability
 
 - The review-queue writer rebuilt plain dictionaries with ruamel.yaml's default narrow line width, creating thousands of formatting-only changes on a no-op queue refresh. Keep a wide output width so generated candidates remain readable and diffs stay focused on actual candidate changes.
@@ -41,3 +45,12 @@
 ## Site TOC
 
 - Extract the deterministic per-video TOC join, sorting, de-duplication, and anchor validation into a shared helper if more site views need the same index; do not add an LLM call to the build path.
+
+## Progress reporting
+
+- Keep project/source count aggregation in `processors/progress.py` and expose one generated snapshot to local operator pages. Avoid duplicating count logic in Astro templates or documentation; a later quality report should consume the same snapshot.
+
+## Moment boundaries
+
+- Keep caption-unit derivation and boundary assessment in one shared module (`processors/boundaries.py`) so candidate triage and corpus reporting use identical gap, duration, and flag rules.
+- Keep proposed snapped playback bounds separate from cited segment IDs; publishing a wider interval without an explicit review would blur the claim-support boundary.

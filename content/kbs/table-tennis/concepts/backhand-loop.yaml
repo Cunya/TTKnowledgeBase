@@ -4,6 +4,14 @@ label: Backhand loop
 aliases:
   - backhand topspin loop
 short_definition: Coordinate spacing, backswing, and contact close enough to the body to produce a repeatable backhand topspin loop.
+evidence_summary: >-
+  The backhand loop is a topspin stroke that depends on letting the ball come into the body’s
+  space, loading the backswing with the incoming ball, and then brushing with the right racket
+  angle. Quality comes from coordinated body movement, forearm and wrist layering, and a racket
+  tip that drops before rotating upward into the ball. When these elements are timed well, the
+  backhand loop produces both spin and power rather than a simple lift or push.
+evidence_summary_source_hash: "sha256:7f6c97f593dd43d993b728532bdc31a68c2d31de99142fcacf6d5683fe36864e"
+evidence_summary_generator: "codex"
 concept_type: stroke
 facets:
   category:
@@ -202,6 +210,30 @@ evidence:
         - hp9OZTBD5JE:00110
         - hp9OZTBD5JE:00111
         - hp9OZTBD5JE:00119
+  - id: Kg4hLYnEbAs-concept-backhand-loop-racket-angle-structure-reviewed
+    evidence_type: demonstration
+    excerpt: Setting the racket, wrist, and forearm in a lowered structure before rotating through contact for a heavier-spinning backhand loop.
+    reason: The speaker demonstrates different racket angles, specifies the forearm/wrist/racket tip layering, and says the racket tip must drop before rotating to create heavy spin.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Kg4hLYnEbAs
+      start_ms: 512680
+      end_ms: 542240
+      url: https://www.youtube.com/watch?v=Kg4hLYnEbAs&t=512s
+      segment_ids:
+        - Kg4hLYnEbAs:00149
+        - Kg4hLYnEbAs:00150
+        - Kg4hLYnEbAs:00151
+        - Kg4hLYnEbAs:00152
+        - Kg4hLYnEbAs:00153
+        - Kg4hLYnEbAs:00154
+        - Kg4hLYnEbAs:00155
+        - Kg4hLYnEbAs:00156
+        - Kg4hLYnEbAs:00157
+        - Kg4hLYnEbAs:00158
+        - Kg4hLYnEbAs:00159
 relations:
   - relation_type: used_with
     target_concept_id: concept-backhand-topspin-body-coordination

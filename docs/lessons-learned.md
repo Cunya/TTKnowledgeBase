@@ -11,6 +11,7 @@
 - Audit public excerpts against their cited transcript segments before broad publication. Exact and near-verbatim matches need rephrasing or explicit, short quotation treatment, while the surrounding editorial reason should remain original.
 - When rephrasing audited excerpts, change only the public editorial wording and preserve segment IDs, timestamps, evidence type, confidence, visual status, reasons, and provenance so every claim remains traceable.
 - Automatic LLM editorial transforms should be explicitly gated at publish time, schema-constrained, overlap-checked after generation, and fail closed; this keeps CI deterministic while making the local operator workflow repeatable.
+- Caption timestamps are useful evidence anchors but are not sentence boundaries. Measure mid-sentence and short-window rates with a deterministic caption-unit pass, then defer flagged candidates for editorial decisions rather than widening public claims automatically.
 - Keep the prioritized backlog as the planning source of truth. Dated review reports explain findings, but actionable work also needs a priority, status, dependency, and acceptance criterion in `docs/prioritized-backlog-2026-07-15.md`.
 
 ## Batch processing
@@ -46,3 +47,7 @@
 - Conservative pending-candidate triage needs deterministic evidence-ID suffixes when one candidate appears in multiple distinct moments, and inferred citation ends must be capped to the source video duration before validation.
 - Responsive rules for nested evidence layouts should use the manuscript/container width as well as viewport breakpoints; browser zoom and split panels can make a wide viewport contain a narrow content column.
 - Start a new dated session log when the calendar date changes, and append events in actual completion order so processing history remains auditable.
+- Keep operational counts derived from one processor snapshot. Display names are for presentation; page code must join generated records by stable configured source IDs.
+- Generated editorial synthesis needs provenance of its inputs. Store a deterministic source hash so routine publishing can refresh stale generated text without overwriting hand-authored summaries or spending an LLM call.
+- A source-grounded essay should state the combined ideas directly. Strip attribution leads such as “the speaker,” “the source,” and “the evidence” from generated prose; keep those relationships in the evidence metadata instead.
+- Removing attribution words alone does not make prose coherent. Use a bounded synthesis prompt over reviewed reasons, require complete sentences in the output schema, and reject list-like or source-reporting output before writing it to canonical YAML.

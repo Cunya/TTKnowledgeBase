@@ -7,6 +7,15 @@ aliases:
   - floating push
   - flat push
 short_definition: Vary push speed, spin, depth, timing, and sideways contact to disrupt different opponents while keeping the ball low and reliable.
+evidence_summary: >-
+  Push variations depend on spin, speed, and depth, but the basic goal is to stay calm and
+  redirect the ball rather than force your own pace. Short compact pushes work well against little
+  or no spin, while heavier spin may call for steadier tempo or more forward motion, and fast or
+  low balls often require flatter, more controlled choices. Players can also mix long pushes,
+  short explosive touch pushes, slow chops, and drop-short options to control the rally and
+  exploit uncertainty in the incoming spin.
+evidence_summary_source_hash: "sha256:11755f2743676548f50d17a3e17fba38cf63ba365a5e08917d785c2dd2b82989"
+evidence_summary_generator: "codex"
 concept_type: stroke-variation
 facets:
   category:
@@ -500,6 +509,21 @@ evidence:
         - hwT7cH6PbZQ:00130
         - hwT7cH6PbZQ:00132
         - hwT7cH6PbZQ:00135
+  - id: D1cBF0nsjKo-concept-push-variations-reviewed
+    evidence_type: example
+    excerpt: Different push shapes and trajectories chosen according to ball placement, spin, and tactical need.
+    reason: The speaker explicitly distinguishes behavior for no/light spin versus heavier spin, recommending short compact motion for the former and more forward motion for the latter.
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: D1cBF0nsjKo
+      start_ms: 352960
+      end_ms: 371920
+      url: https://www.youtube.com/watch?v=D1cBF0nsjKo&t=352s
+      segment_ids:
+        - D1cBF0nsjKo:00139
+        - D1cBF0nsjKo:00146
 relations:
   - relation_type: variation_of
     target_concept_id: concept-push-technique

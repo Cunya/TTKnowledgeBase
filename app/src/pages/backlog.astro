@@ -32,11 +32,12 @@ const field = (block: string, label: string) => {
 const statusFor = (block: string) => field(block, 'Status') || 'Open';
 const stateFor = (status: string): BacklogItem['state'] => {
   const normalized = status.toLowerCase();
-  if (normalized.includes('complete')) return 'complete';
   if (normalized.includes('planned')) return 'planned';
   if (normalized.includes('blocked')) return 'blocked';
+  if (normalized.includes('complete')) return 'complete';
   return 'open';
 };
+const backlogItemOrder = (item: BacklogItem) => item.state === 'complete' ? 1 : 0;
 const fallbackWhy = (block: string) => block
   .split('\n')
   .map((line) => line.trim())
@@ -63,35 +64,58 @@ const items: BacklogItem[] = headings.map((heading, index) => {
   };
 });
 
-const featureDefinitions = [
+const featureAreaDefinitions = [
   {
     id: 'trust-and-source-safety',
     label: 'Trust and source safety',
     description: 'Keep acquisition, quotation, takedown, and public/private boundaries defensible.',
-    ids: ['P0-01', 'P0-02', 'P0-04', 'P0-05', 'P0-07', 'P1-08', 'P1-09', 'P1-17'],
+    features: [
+      { id: 'excerpt-and-attribution-safety', label: 'Excerpt and attribution safety', description: 'Keep editorial wording distinct from source language and preserve defensible attribution.', ids: ['P0-01', 'P1-17'] },
+      { id: 'source-governance', label: 'Source governance', description: 'Define acquisition, removal, permissions, and public/private boundaries.', ids: ['P0-02', 'P0-04', 'P0-05', 'P0-07'] },
+      { id: 'private-preservation-mode', label: 'Private preservation mode', description: 'Make a personal fallback possible without mixing offline material into the public site.', ids: ['P1-08', 'P1-09'] },
+    ],
   },
   {
     id: 'evidence-and-content-quality',
     label: 'Evidence and content quality',
     description: 'Make moments useful, complete, diverse, and meaningful instead of merely numerous.',
-    ids: ['P1-01', 'P1-03', 'P1-05', 'P1-06', 'P1-07', 'P1-13', 'P1-14'],
+    features: [
+      { id: 'moment-quality', label: 'Moment quality', description: 'Select complete, meaningful windows and remove repetition from the evidence library.', ids: ['P1-01', 'P1-03', 'P1-13', 'P1-14'] },
+      { id: 'evidence-coverage', label: 'Evidence coverage', description: 'Strengthen cross-video support and make each concept’s evidence hierarchy explicit.', ids: ['P1-05', 'P1-06'] },
+      { id: 'knowledge-structure', label: 'Knowledge structure', description: 'Resolve taxonomy placeholders into durable concepts and relationships.', ids: ['P1-07'] },
+    ],
   },
   {
     id: 'publishing-and-navigation',
     label: 'Publishing and navigation',
     description: 'Keep generated pages, links, encoding, and public artifacts reliable and calm to use.',
-    ids: ['P0-03', 'P0-06', 'P1-10', 'P1-11', 'P1-12', 'P2-01', 'P2-02', 'P2-04', 'P2-05', 'P2-06'],
+    features: [
+      { id: 'publish-integrity', label: 'Publish integrity', description: 'Keep canonical data fresh, allowlisted, deduplicated, and free of encoding regressions.', ids: ['P0-03', 'P1-11', 'P2-01', 'P2-02'] },
+      { id: 'navigation-and-toc', label: 'Navigation and table of contents', description: 'Make deployment routes, anchors, and deterministic video TOCs dependable.', ids: ['P0-06', 'P1-10', 'P2-06'] },
+      { id: 'viewer-experience', label: 'Viewer experience', description: 'Keep source attribution and embedded playback clear without over-emphasizing source titles.', ids: ['P1-12', 'P2-04', 'P2-05'] },
+    ],
   },
   {
     id: 'operations-and-automation',
     label: 'Operations and automation',
     description: 'Turn processing, budgets, provenance, source monitoring, and daily runs into observable routines.',
-    ids: ['P1-02', 'P1-04', 'P1-15', 'P1-16', 'P2-03', 'P2-07', 'P2-08', 'P2-09'],
+    features: [
+      { id: 'pipeline-orchestration', label: 'Pipeline orchestration', description: 'Drain pending work safely, budget model calls, and support unattended daily processing.', ids: ['P1-02', 'P1-15', 'P1-16'] },
+      { id: 'observability-and-reporting', label: 'Observability and reporting', description: 'Expose progress, extraction cost, provenance, and knowledge-graph quality.', ids: ['P1-04', 'P2-07', 'P2-09'] },
+      { id: 'maintenance-and-monitoring', label: 'Maintenance and source monitoring', description: 'Keep dependencies pinned and detect source availability changes before they surprise publishing.', ids: ['P2-03', 'P2-08'] },
+    ],
   },
 ];
-const featureGroups = featureDefinitions.map((feature) => {
-  const featureItems = feature.ids.map((id) => items.find((item) => item.id === id)).filter((item): item is BacklogItem => Boolean(item));
-  return { ...feature, items: featureItems, complete: featureItems.filter((item) => item.state === 'complete').length };
+const featureAreas = featureAreaDefinitions.map((area) => {
+  const features = area.features.map((feature) => {
+    const featureItems = feature.ids
+      .map((id) => items.find((item) => item.id === id))
+      .filter((item): item is BacklogItem => Boolean(item))
+      .sort((left, right) => backlogItemOrder(left) - backlogItemOrder(right));
+    return { ...feature, items: featureItems, complete: featureItems.filter((item) => item.state === 'complete').length };
+  });
+  const areaItems = features.flatMap((feature) => feature.items);
+  return { ...area, features, items: areaItems, complete: areaItems.filter((item) => item.state === 'complete').length };
 });
 const completeCount = items.filter((item) => item.state === 'complete').length;
 const openCount = items.length - completeCount;
@@ -117,15 +141,15 @@ const stateLabel = (state: BacklogItem['state']) => ({ complete: 'Complete', pla
 
   <section class="backlog-section">
     <div class="section-kicker">At a glance</div>
-    <h2>Feature map</h2>
-    <p class="backlog-lead">The backlog is easier to act on when related work stays together. Priority remains visible on each item, but these feature areas are the main workstreams.</p>
+    <h2>Feature-area map</h2>
+    <p class="backlog-lead">The backlog has three levels: broad feature areas, the features inside them, and the actionable P0/P1/P2 items that deliver each feature.</p>
     <div class="backlog-lanes">
-      {featureGroups.map((group) => {
-        const percent = group.items.length ? Math.round((group.complete / group.items.length) * 100) : 0;
-        return <a class="backlog-lane" href={`#feature-${group.id}`}>
-          <div><span>Feature {String(featureGroups.indexOf(group) + 1).padStart(2, '0')}</span><strong>{group.label}</strong></div>
-          <p>{group.complete} of {group.items.length} complete</p>
-          <progress max={group.items.length || 1} value={group.complete} aria-label={`${group.label}: ${percent}% complete`}>{percent}%</progress>
+      {featureAreas.map((area, index) => {
+        const percent = area.items.length ? Math.round((area.complete / area.items.length) * 100) : 0;
+        return <a class="backlog-lane" href={`#area-${area.id}`}>
+          <div><span>Area {String(index + 1).padStart(2, '0')}</span><strong>{area.label}</strong></div>
+          <p>{area.features.length} features · {area.complete} of {area.items.length} complete</p>
+          <progress max={area.items.length || 1} value={area.complete} aria-label={`${area.label}: ${percent}% complete`}>{percent}%</progress>
           <small>{percent}% complete</small>
         </a>;
       })}
@@ -133,14 +157,23 @@ const stateLabel = (state: BacklogItem['state']) => ({ complete: 'Complete', pla
   </section>
 
   <section class="backlog-section" id="active-work">
-    <div class="section-kicker">Feature workstreams</div>
+    <div class="section-kicker">Feature areas and features</div>
     <h2>Work grouped by outcome</h2>
-    <p class="backlog-lead">Expand an item for its reason, implementation boundary, dependencies, and acceptance criteria. Completed items remain visible as history, and every row retains its P0/P1/P2 priority.</p>
+    <p class="backlog-lead">Start with a feature area, choose one of its features, then expand a backlog item for its reason, implementation boundary, dependencies, and acceptance criteria. Completed items remain visible as history, and every row retains its P0/P1/P2 priority.</p>
+    <div class="backlog-status-key" aria-label="Backlog status colors">
+      <span class="backlog-key-open"><i></i>Open</span>
+      <span class="backlog-key-planned"><i></i>Planned</span>
+      <span class="backlog-key-blocked"><i></i>Blocked</span>
+      <span class="backlog-key-complete"><i></i>Complete</span>
+    </div>
     <div class="backlog-groups">
-      {featureGroups.map((group) => <section class="backlog-group backlog-feature" id={`feature-${group.id}`}>
-        <header class="backlog-group-heading"><div><span>Feature workstream</span><h3>{group.label}</h3><p>{group.description}</p></div><small>{group.complete}/{group.items.length} complete</small></header>
-        <div class="backlog-items">
-          {group.items.map((item) => <details class:list={['backlog-item', `backlog-item-${item.state}`]} open={item.priority === 'P0' && item.state !== 'complete'} id={item.id.toLowerCase()}>
+      {featureAreas.map((area) => <section class="backlog-group backlog-area" id={`area-${area.id}`}>
+        <header class="backlog-group-heading backlog-area-heading"><div><span>Feature area</span><h3>{area.label}</h3><p>{area.description}</p></div><small>{area.features.length} features · {area.complete}/{area.items.length} complete</small></header>
+        <div class="backlog-features">
+          {area.features.map((feature) => <section class="backlog-feature" id={`feature-${feature.id}`}>
+            <header class="backlog-feature-heading"><div><span>Feature</span><h4>{feature.label}</h4><p>{feature.description}</p></div><small>{feature.complete}/{feature.items.length} complete</small></header>
+            <div class="backlog-items">
+          {feature.items.map((item) => <details class:list={['backlog-item', `backlog-item-${item.state}`]} open={item.priority === 'P0' && item.state !== 'complete'} id={item.id.toLowerCase()}>
             <summary><span class="backlog-item-id">{item.id}</span><strong>{item.title}</strong><em>{item.priority} · {stateLabel(item.state)}</em></summary>
             <div class="backlog-item-body">
               <div class="backlog-copy"><span class="backlog-label">Why it matters</span><p>{item.why}</p></div>
@@ -149,6 +182,8 @@ const stateLabel = (state: BacklogItem['state']) => ({ complete: 'Complete', pla
               {item.doneWhen && <div class="backlog-copy backlog-acceptance"><span class="backlog-label">Acceptance</span><p>{item.doneWhen}</p></div>}
             </div>
           </details>)}
+            </div>
+          </section>)}
         </div>
       </section>)}
     </div>

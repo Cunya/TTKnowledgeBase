@@ -3,6 +3,14 @@ slug: loose-grip-backhand-friction
 label: Generating spin at contact
 aliases: [loose grip friction, racket-head acceleration, brushing contact]
 short_definition: Create spin by allowing the racket head to accelerate and brush the correct part of the ball instead of squeezing or pushing rigidly.
+evidence_summary: >-
+  Spin at contact comes from a relaxed grip that allows the racket head to accelerate quickly,
+  especially on short backhand exchanges. The wrist and fingers provide the sharpest snap, while
+  the forearm mainly supports the forward motion rather than generating the spin itself. Faster
+  racket-head rotation increases both spin and arc, and the brushing contact on the upper part of
+  the ball is what creates the friction needed for a ripping shot.
+evidence_summary_source_hash: "sha256:7e1cd7e6cc2fff1321c705aa39dd57271bf02911dee8249179ed99ad8d690d8f"
+evidence_summary_generator: "codex"
 detailed_definition: "Spin emerges from both freedom and precision: a relaxed grip permits last-moment racket-head speed, rotation adds brushing force, and the contact region determines the resulting spin."
 concept_type: technique-principle
 facets: {category: [spin, contact, acceleration], side: [neutral], level: [intermediate]}
@@ -398,6 +406,28 @@ evidence:
       url: https://www.youtube.com/watch?v=7jWqEsHtN3Y&t=425s
       segment_ids:
         - 7jWqEsHtN3Y:00093
+  - id: Kg4hLYnEbAs-concept-backhand-loop-racket-head-acceleration-reviewed
+    evidence_type: explanation
+    excerpt: Generating spin and arc in the backhand loop by accelerating the racket head through and after contact.
+    reason: The speaker says racket-head acceleration is the fastest way, that the faster the racket head rotates the more spin and arc you get, and that rotation continues after contact.
+    confidence: 0.86
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Kg4hLYnEbAs
+      start_ms: 557280
+      end_ms: 585800
+      url: https://www.youtube.com/watch?v=Kg4hLYnEbAs&t=557s
+      segment_ids:
+        - Kg4hLYnEbAs:00166
+        - Kg4hLYnEbAs:00167
+        - Kg4hLYnEbAs:00168
+        - Kg4hLYnEbAs:00169
+        - Kg4hLYnEbAs:00170
+        - Kg4hLYnEbAs:00171
+        - Kg4hLYnEbAs:00172
+        - Kg4hLYnEbAs:00174
+        - Kg4hLYnEbAs:00175
 relations:
   - relation_type: used_with
     target_concept_id: concept-backspin-serve-under-ball-contact

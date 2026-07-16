@@ -9,12 +9,17 @@ import networkx as nx
 from rapidfuzz.fuzz import token_set_ratio
 from ruamel.yaml import YAML
 
+from .boundaries import (
+    MAX_CITED_SEGMENT_GAP_MS,
+    MAX_SOURCE_DURATION_MS,
+    BoundaryAssessment,
+    assess_boundary,
+)
 from .codex_engine import extract_with_codex, rephrase_excerpt_with_codex
 from .models import Concept, ExtractionResponse, KnowledgeNavigation, PublishCorpus, Video
 from .utils import read_json, read_yaml, sha256_json, write_json, youtube_url
 
-MAX_SPOKEN_SOURCE_MS = 30_000
-MAX_CITED_SEGMENT_GAP_MS = 20_000
+MAX_SPOKEN_SOURCE_MS = MAX_SOURCE_DURATION_MS
 DEFAULT_REPHRASE_MIN_WORDS = 8
 DEFAULT_REPHRASE_MIN_RATIO = 0.75
 MOJIBAKE_MARKERS = ("\ufffd", "Â", "â€", "â†", "ðŸ")
@@ -347,39 +352,9 @@ def _best_existing_concept_for_candidate(
 
 def _candidate_source_span(
     video: Video, segment_ids: list[str]
-) -> tuple[list[str], int, int] | None:
+) -> BoundaryAssessment | None:
     """Choose the largest valid contiguous cluster from a candidate's cited segments."""
-    if not video.transcript:
-        return None
-    by_id = {segment.id: segment for segment in video.transcript.segments}
-    segments = sorted(
-        (by_id[segment_id] for segment_id in segment_ids if segment_id in by_id),
-        key=lambda segment: segment.start_ms,
-    )
-    if not segments:
-        return None
-    groups: list[list] = []
-    current: list = []
-    for segment in segments:
-        if not current:
-            current = [segment]
-            continue
-        first = current[0]
-        previous = current[-1]
-        if (
-            segment.start_ms - previous.end_ms > MAX_CITED_SEGMENT_GAP_MS
-            or segment.end_ms - first.start_ms > MAX_SPOKEN_SOURCE_MS
-        ):
-            groups.append(current)
-            current = [segment]
-        else:
-            current.append(segment)
-    groups.append(current)
-    selected = max(groups, key=lambda group: (len(group), group[-1].end_ms - group[0].start_ms))
-    start_ms = selected[0].start_ms
-    video_end = video.duration_ms or selected[-1].end_ms
-    end_ms = min(selected[-1].end_ms, start_ms + MAX_SPOKEN_SOURCE_MS, video_end)
-    return [segment.id for segment in selected], start_ms, end_ms
+    return assess_boundary(video, segment_ids)
 
 
 def process_pending_candidates(
@@ -452,7 +427,16 @@ def process_pending_candidates(
             item["review_notes"] = "P1-02 deferred: candidate cites no valid normalized transcript span."
             counts["deferred"] += 1
             continue
-        selected_ids, start_ms, end_ms = span
+        if span.needs_context:
+            item["decision"] = "deferred"
+            item["review_notes"] = (
+                "P1-14 deferred: caption boundary review required before acceptance; "
+                f"flags={','.join(span.flags)}; {span.reason}"
+            )
+            counts["deferred"] += 1
+            continue
+        selected_ids = list(span.segment_ids)
+        start_ms, end_ms = span.start_ms, span.end_ms
         evidence_id = f"{video_id}-{candidate.get('candidate_id')}-reviewed"
         if evidence_id in existing_evidence_ids:
             evidence_id = (

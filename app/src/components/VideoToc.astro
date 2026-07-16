@@ -27,7 +27,24 @@ const conceptHref = (slug: string) => `${root}/concepts/${slug}/`;
     </ol>
     {entry.groups.length > 8 && <p class="video-toc-more">+{entry.groups.length - 8} more concepts</p>}
     <a class="video-toc-open" href={detailHref}>Open full contents <span aria-hidden="true">↗</span></a>
-  </> : <ol class="video-toc-linear">
+  </> : <>
+    <section class="video-toc-summaries" aria-labelledby="video-toc-summaries-heading">
+      <div class="video-toc-summaries-heading">
+        <strong id="video-toc-summaries-heading">Concept summaries</strong>
+        <span>Definitions in the order they first appear</span>
+      </div>
+      <ol>
+        {entry.groups.map(({ concept, moments }) => <li>
+          <div class="video-toc-summary-title">
+            <a href={`${conceptHref(concept.slug)}#overview`}>{concept.label}</a>
+            <a class="video-toc-summary-time" href={`${conceptHref(concept.slug)}#${momentAnchor(moments[0].item.id)}`}>{formatTime(moments[0].item.source.start_ms)}</a>
+          </div>
+          <p>{concept.short_definition}</p>
+          {concept.detailed_definition && <p class="video-toc-summary-detail">{concept.detailed_definition}</p>}
+        </li>)}
+      </ol>
+    </section>
+    <ol class="video-toc-linear">
     {entry.moments.map(({ concept, item }, index) => <li class="video-toc-detail-moment">
       <div class="video-toc-detail-line">
         <a class="video-toc-linear-main" href={`${conceptHref(concept.slug)}#${momentAnchor(item.id)}`}>
@@ -44,5 +61,6 @@ const conceptHref = (slug: string) => `${root}/concepts/${slug}/`;
       <p class="video-toc-moment-title">{editorialNarrative(item.excerpt)}</p>
       <small>{editorialNarrative(item.reason)}</small>
     </li>)}
-  </ol>}
+    </ol>
+  </>}
 </nav>

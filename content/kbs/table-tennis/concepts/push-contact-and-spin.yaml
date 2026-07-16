@@ -5,6 +5,15 @@ aliases:
   - spinny push
   - push racket contact
 short_definition: Generate and control backspin in the push through the selected racket region, contact point, and short acceleration.
+evidence_summary: >-
+  Effective pushing depends on making contact with the lower half of the racket face and using
+  friction at the moment of contact. The wrist and fingers create most of the spin and control,
+  while the forearm mainly helps guide direction, so the ball should be contacted from behind or
+  slightly from below-behind rather than directly underneath. Adding brush and racket-head speed
+  increases spin and makes the return harder to attack, whereas reducing force and focusing on
+  brushing is safer against aggressive incoming balls.
+evidence_summary_source_hash: "sha256:dcbb2fb3fdbbfcd942c2e6540be19f7eabb7d542ce360b42ba319e5fd1768019"
+evidence_summary_generator: "codex"
 concept_type: push-mechanic
 facets:
   category:
@@ -486,6 +495,20 @@ evidence:
         - h5jUJL_P82w:00113
         - h5jUJL_P82w:00114
         - h5jUJL_P82w:00115
+  - id: D1cBF0nsjKo-concept-push-contact-and-spin-reviewed
+    evidence_type: explanation
+    excerpt: Using the racket path and contact zone to manage incoming spin, create friction, and keep the push low and controllable.
+    reason: The transcript contrasts direct-behind contact with slight side contact, then describes level-first-then-downward motion and brushing that generates friction to handle spin.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: D1cBF0nsjKo
+      start_ms: 636960
+      end_ms: 642120
+      url: https://www.youtube.com/watch?v=D1cBF0nsjKo&t=636s
+      segment_ids:
+        - D1cBF0nsjKo:00239
 relations:
   - relation_type: part_of
     target_concept_id: concept-push-technique

@@ -12,7 +12,9 @@ This project is a **local, operator-run publishing pipeline**, not a website tha
 | LLM budget | A private daily token ledger reserves an estimate before each extraction, rephrase, or benchmark call and records reported usage afterward. Exhausted daily or task caps defer work before subprocess execution. | Adjust `llm_budget` in `config/processors.yaml`, inspect `llm-budget --kb <id>`, and decide when deferred work should resume. |
 | Candidate resolution | The review-queue builder proposes matches using names, aliases, fuzzy matching, and shared evidence. | Accept, reject, merge, rename, and edit concepts. No candidate becomes public merely because an LLM proposed it. |
 | Spoken evidence | Validation checks every approved claim against real transcript segment IDs and canonical YouTube timestamps. | Check that the excerpt supports the editorial wording. |
+| Moment boundaries | `report-boundaries` derives caption-only sentence-like units, measures mid-sentence/short windows, and proposes snapped bounds without changing reviewed YAML. `process-pending` defers flagged new candidates. | Review merge, context, split, or defer actions; never treat a proposed playback boundary as new claim support without review. |
 | Excerpt safety | The deterministic overlap screen flags complete/high-ratio transcript matches; `rephrase-excerpts` or `publish --auto-rephrase-high-overlap` asks the configured low-cost Codex model for an editorial summary and verifies that the rewrite no longer has high overlap. | Review the rewrite when it changes a canonical excerpt; the source metadata and cited timestamps remain unchanged. |
+| Concept evidence essays | `build-evidence-summaries --kb <id> --engine deterministic --write` provides a no-cost fallback; `--engine codex --write --refresh-generated` batches approved evidence reasons through the configured low-cost Codex model and daily `summary` budget to produce coherent 2–4 sentence prose. Generated summaries carry an `evidence_summary_source_hash` and `evidence_summary_generator`; `publish` refreshes deterministic summaries only, while Codex summaries are refreshed explicitly when new evidence arrives. | Review generated paragraphs as canonical editorial content. The Codex prompt and validator require direct synthesis without source-reporting language, transcript quotation, bullets, or unsupported claims. Hand-authored summaries without a source hash remain untouched. |
 | Visual examples | The data model stores a `visual_source` separately from the spoken `source`. | Locate a nearby movement demonstration, set its window and selection method, and eventually mark it manually verified. This is currently reviewer-assisted, not a finished automatic processor. |
 | Publishing | Python validates and sanitizes the reviewed corpus, then copies only allowlisted data into the Astro public folder. | Run the publish command after review. |
 | Site build | Astro generates static concept, video, search, and KB pages. | Preview locally and deploy the generated site through GitHub Pages. |
@@ -157,6 +159,28 @@ The generated queue lives at `content/kbs/<kb>/annotations/review-queue.yaml`. I
 
 An item may remain `accepted` only when at least one of its exact transcript segment IDs is present in evidence for the referenced canonical concept and video. A semantically similar candidate that was not incorporated stays `pending`; similarity alone is not evidence of editorial integration.
 
+Before accepting a new candidate, the processor runs the caption-only boundary assessment. It merges nearby non-terminal cues into bounded sentence-like units, proposes complete-unit start/end times, and flags `starts_mid_sentence`, `ends_mid_sentence`, `too_short`, and `needs_context`. Flagged candidates are deferred with a review note; the cited segment IDs and the 30-second maximum remain authoritative. Measure the existing reviewed corpus with:
+
+```powershell
+python -m processors.cli report-boundaries --kb table-tennis `
+  --markdown-output docs/moment-boundary-report-table-tennis-YYYY-MM-DD.md
+```
+
+The report is script-only and does not call an LLM. It contains IDs, timestamps, rates, and duration statistics, not raw transcript text. A later context/audio/semantic pass may propose a merge or split, but it must preserve claim-support citations and require review before changing canonical YAML. See [the boundary study](moment-boundary-analysis-study-2026-07-16.md) and the current [baseline report](moment-boundary-report-table-tennis-2026-07-16.md).
+
+Export a deterministic, stratified gold-set worksheet before changing any reviewed evidence:
+
+```powershell
+python -m processors.cli prepare-boundary-review --kb table-tennis `
+  --markdown-output docs/moment-boundary-gold-set-table-tennis-YYYY-MM-DD.md
+python -m processors.cli validate-boundary-review --kb table-tennis
+```
+
+The worksheet is private JSON under `data/manifests/<kb>/boundary-review.json` and contains no transcript text. A
+reviewer records `keep`, `merge`, `split`, or `defer` only after inspecting the cited interval and proposed context.
+Validation checks segment provenance, source bounds, and the 30-second limit; it never applies decisions automatically.
+Only after the worksheet has reviewed decisions should a second boundary report be used to claim a reduction.
+
 Reviewed public knowledge is stored as tracked YAML under `content/kbs/<kb>/concepts/`. An approved evidence item contains:
 
 - `source`: the transcript-backed claim location, including segment IDs;
@@ -209,6 +233,13 @@ Spoken evidence is also constrained to a focused window of at most 30 seconds, a
 - matching browser-safe files under `app/public/data/kbs/<kb>/`;
 - the multi-KB catalog under `app/public/data/catalog.json`.
 
+Publishing also writes the deterministic local operator snapshot
+`app/src/data/generated/<kb>-progress.json`. `processors.progress` derives its counts from the KB source
+configuration, discovery manifests, normalized transcripts, derived candidate files, review decisions, and the
+sanitized corpus. It never calls an LLM and is regenerated on every publish, so progress pages and summaries do not
+depend on hand-edited numbers. The generated snapshot is consumed by the local `/progress/` page; it is management
+metadata and is not copied into the public corpus.
+
 Only videos referenced by published evidence enter the public corpus.
 
 ### 7. Test and build the site
@@ -244,7 +275,7 @@ I did call the repository commands manually from Codex's terminal rather than by
 
 This means the pipeline is repeatable, but it is intentionally not fully unattended. Collection, extraction, validation, and build are scripted; source curation, knowledge approval, and visual-example approval are editorial gates.
 
-As of 2026-07-16, the published table-tennis corpus contains 73 approved concepts, 121 supporting videos, and 1,814 non-demo evidence moments. The review queue contains 1,060 accepted, 139 explicitly deferred, and 1 rejected candidate; no candidates remain pending. The P1-02 cached review pass and controlled follow-up batches continue to incorporate only explicitly accepted matches; the latest two-public-video GlobalTTStudio continuation added 23 accepted candidates and 30 focused evidence moments, while deferred items remain out of the public corpus until reviewed. Every concept participates in the semantic relation graph. Exact accepted-candidate overlap, candidate fingerprints, navigation coverage, the 30-second spoken-window limit, large citation gaps, visual verification state, and public artifact consistency are enforced during validation.
+The current table-tennis counts are intentionally not duplicated in this narrative. Run `publish --kb table-tennis` to regenerate `app/src/data/generated/table-tennis-progress.json`; the local `/progress/` page reads that snapshot. This avoids stale hand-edited or LLM-edited totals while preserving the surrounding operational explanation. Every concept participates in the semantic relation graph, and validation continues to enforce accepted-candidate overlap, candidate fingerprints, navigation coverage, spoken-window limits, citation gaps, visual verification state, and public artifact consistency.
 
 CI uses `validate-published` because private normalized transcripts are intentionally absent from Git. This checks the sanitized corpus model, graph, navigation, evidence windows, visual-review consistency, manifest hash/counts, queue overlap, encoding quality, and byte-for-byte equality between the canonical publish output and Astro public copy. Local maintainers still run the stronger transcript-backed `validate` command before publishing.
 

@@ -3,6 +3,14 @@ slug: weight-transfer-through-stroke
 label: Weight transfer through the stroke
 aliases: [right-to-left weight transfer, load then transfer, downward press rotation]
 short_definition: Load the hitting-side leg, move through center during contact, and finish with weight transferred to the opposite side.
+evidence_summary: >-
+  Effective stroke power comes from transferring body weight through the shot, not from the arm
+  working alone. The sequence moves from back to front, with the center of gravity shifting with
+  the stepping foot so the body drives the ball forward and downward in a controlled arc. If the
+  player steps without actually transferring weight, the stroke loses force and the ball tends to
+  float long instead of dipping.
+evidence_summary_source_hash: "sha256:8223f5e9f921ad2e62b21406a2e4c61fd2f3459fa146e922aab4bed749129734"
+evidence_summary_generator: "codex"
 detailed_definition: "For a right-handed forehand, the sequence runs from the right leg through center toward the left. The load should include downward pressure before rotation rather than a flat turn. The amount of transfer changes by stroke: a loop generally uses a larger shift than a drive, while advanced execution becomes compact and stable."
 concept_type: body-mechanic
 facets: {category: [fundamentals, stroke], side: [neutral], level: [beginner, intermediate]}
@@ -424,6 +432,21 @@ evidence:
       segment_ids:
         - sosNHzR8A9U:00013
         - sosNHzR8A9U:00014
+  - id: D1cBF0nsjKo-concept-weight-transfer-through-stroke-reviewed
+    evidence_type: explanation
+    excerpt: Moving the body weight forward into the ball so the stroke reaches the short ball with control and extension.
+    reason: He identifies stepping in without transferring weight as the common problem and says the center of gravity must move with the stepping foot.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: D1cBF0nsjKo
+      start_ms: 74080
+      end_ms: 94040
+      url: https://www.youtube.com/watch?v=D1cBF0nsjKo&t=74s
+      segment_ids:
+        - D1cBF0nsjKo:00033
+        - D1cBF0nsjKo:00040
 relations:
   - relation_type: used_with
     target_concept_id: concept-loaded-legs

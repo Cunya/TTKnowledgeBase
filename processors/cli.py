@@ -13,7 +13,20 @@ from rich.console import Console
 from rich.table import Table
 
 from .benchmark import render_benchmark_markdown, run_quality_benchmark, select_benchmark_videos
+from .boundaries import (
+    build_boundary_report,
+    build_boundary_review_set,
+    render_boundary_report_markdown,
+    render_boundary_review_set_markdown,
+    validate_boundary_review_set,
+)
+from .codex_engine import CodexError
 from .demo import write_demo_video
+from .evidence_summaries import (
+    build_missing_summaries,
+    write_codex_summaries,
+    write_missing_summaries,
+)
 from .ingest import (
     IngestOptions,
     TranscriptBlockedError,
@@ -38,6 +51,7 @@ from .pipeline import (
     validate_review_queue,
 )
 from .pipeline import publish as publish_corpus
+from .progress import build_progress_report
 from .utils import read_json, read_yaml, sha256_json, write_json
 from .workspace import KnowledgeBasePaths, load_knowledge_base
 
@@ -130,6 +144,70 @@ def discover(url: Annotated[str, typer.Argument()], kb: KbOption = None) -> None
     output = paths.data("manifests") / "discovered-videos.json"
     write_json(output, {"knowledge_base": paths.id, "source_url": url, "videos": videos})
     console.print(f"[green]Discovered {len(videos)} videos[/green] for {paths.name}")
+
+
+@app.command("build-evidence-summaries")
+def build_evidence_summaries(
+    kb: KbOption = None,
+    engine: Annotated[
+        str,
+        typer.Option(help="Summary engine: deterministic or codex"),
+    ] = "deterministic",
+    write: Annotated[
+        bool,
+        typer.Option(help="Write summaries into concepts missing evidence_summary"),
+    ] = False,
+    max_points: Annotated[
+        int,
+        typer.Option(min=2, max=12, help="Maximum distinct evidence reasons per summary"),
+    ] = 8,
+    refresh_generated: Annotated[
+        bool,
+        typer.Option(help="Refresh summaries marked as generated when evidence changed"),
+    ] = False,
+    model: Annotated[str | None, typer.Option(help="Optional Codex model override")] = None,
+) -> None:
+    """Build essays from approved evidence reasons.
+
+    The deterministic engine is the default and never calls an LLM. Use
+    ``--engine codex --write --refresh-generated`` for coherent LLM synthesis
+    with the configured model and daily budget.
+    """
+    paths = kb_paths(kb)
+    if engine not in {"deterministic", "codex"}:
+        raise typer.BadParameter("engine must be deterministic or codex")
+    if engine == "codex" and not write:
+        raise typer.BadParameter("--engine codex requires --write")
+    if write:
+        if engine == "codex":
+            try:
+                files = write_codex_summaries(
+                    paths.content / "concepts",
+                    ROOT / "config" / "processors.yaml",
+                    paths.data("manifests") / "summary-audit",
+                    paths.data("manifests") / "llm-budget.json",
+                    max_points=max_points,
+                    refresh_generated=refresh_generated,
+                    model_override=model,
+                )
+            except LLMBudgetExceeded as error:
+                console.print(f"[yellow]Summary generation deferred[/yellow]: {error}")
+                raise typer.Exit(2) from None
+            except CodexError as error:
+                raise typer.BadParameter(str(error)) from error
+            console.print(f"[green]Wrote {len(files)} Codex evidence summaries[/green]")
+            return
+        files = write_missing_summaries(
+            paths.content / "concepts",
+            max_points=max_points,
+            refresh_generated=refresh_generated,
+        )
+        console.print(f"[green]Wrote {len(files)} evidence summaries[/green]")
+        return
+    previews = build_missing_summaries(paths.content / "concepts", max_points=max_points)
+    console.print(f"[yellow]Preview: {len(previews)} concepts need evidence summaries[/yellow]")
+    for path, summary in previews:
+        console.print(f"[bold]{path.stem}[/bold]: {summary}")
 
 
 @app.command()
@@ -520,6 +598,11 @@ def publish(
 ) -> None:
     """Build one sanitized static-site corpus and refresh the catalog."""
     paths = kb_paths(kb)
+    summary_updates = write_missing_summaries(
+        paths.content / "concepts", refresh_generated=True
+    )
+    if summary_updates:
+        console.print(f"[yellow]Refreshed {len(summary_updates)} generated concept summary(ies)[/yellow]")
     if auto_rephrase_high_overlap:
         concepts = load_reviewed_concepts(paths.content / "concepts")
         videos = load_videos(paths.data("normalized"))
@@ -574,6 +657,8 @@ def publish(
     shutil.copy2(output / "corpus.json", public / "corpus.json")
     shutil.copy2(output / "manifest.json", public / "manifest.json")
     refresh_catalog()
+    progress_path = ROOT / "app" / "src" / "data" / "generated" / f"{paths.id}-progress.json"
+    write_json(progress_path, build_progress_report(paths, corpus))
     console.print(f"[green]Published {paths.name}: {len(corpus.concepts)} concepts[/green]")
 
 
@@ -657,6 +742,101 @@ def report_quality(
         value = report[key]
         table.add_row(label, str(len(value) if isinstance(value, list) else value))
     console.print(table)
+
+
+@app.command("report-boundaries")
+def report_boundaries(
+    kb: KbOption = None,
+    output: Annotated[Path | None, typer.Option(help="Optional JSON report path")] = None,
+    markdown_output: Annotated[
+        Path | None, typer.Option(help="Optional Markdown report path")
+    ] = None,
+    include_demo: Annotated[bool, typer.Option(help="Include synthetic demo evidence")] = False,
+) -> None:
+    """Measure caption boundary quality without calling an LLM."""
+    paths = kb_paths(kb)
+    concepts = load_reviewed_concepts(paths.content / "concepts")
+    videos = load_videos(paths.data("normalized"))
+    if not include_demo:
+        demo_ids = {video.id for video in videos if video.availability == "demo_fixture"}
+        videos = [video for video in videos if video.id not in demo_ids]
+        concepts = [
+            concept.model_copy(
+                update={
+                    "evidence": [
+                        item for item in concept.evidence if item.source.video_id not in demo_ids
+                    ]
+                }
+            )
+            for concept in concepts
+            if any(item.source.video_id not in demo_ids for item in concept.evidence)
+        ]
+    report = build_boundary_report(concepts, videos, paths.id)
+    json_path = output or paths.data("manifests") / "boundary-report.json"
+    write_json(json_path, report)
+    if markdown_output:
+        markdown_output.parent.mkdir(parents=True, exist_ok=True)
+        markdown_output.write_text(
+            render_boundary_report_markdown(report, paths.name), encoding="utf-8"
+        )
+    rates = report["rates"]
+    console.print(
+        f"[green]{paths.name} boundary report[/green]: "
+        f"{report['evaluated_count']}/{report['evidence_count']} evaluated; "
+        f"mid-sentence {rates['starts_mid_sentence']:.1%}/{rates['ends_mid_sentence']:.1%}; "
+        f"too short {rates['too_short']:.1%}; "
+        f"needs context {rates['needs_context']:.1%}"
+    )
+    console.print(f"[green]JSON report[/green] {json_path}")
+
+
+@app.command("prepare-boundary-review")
+def prepare_boundary_review(
+    kb: KbOption = None,
+    sample_size: Annotated[int, typer.Option(min=1, help="Number of stratified flagged moments to export")] = 24,
+    output: Annotated[Path | None, typer.Option(help="Optional JSON worksheet path")] = None,
+    markdown_output: Annotated[Path | None, typer.Option(help="Optional Markdown worksheet path")] = None,
+) -> None:
+    """Export an undecided, stratified boundary gold-set worksheet."""
+    paths = kb_paths(kb)
+    concepts = load_reviewed_concepts(paths.content / "concepts")
+    videos = load_videos(paths.data("normalized"))
+    review_set = build_boundary_review_set(concepts, videos, paths.id, sample_size)
+    json_path = output or paths.data("manifests") / "boundary-review.json"
+    write_json(json_path, review_set)
+    if markdown_output:
+        markdown_output.parent.mkdir(parents=True, exist_ok=True)
+        markdown_output.write_text(
+            render_boundary_review_set_markdown(review_set, paths.name), encoding="utf-8"
+        )
+    console.print(
+        f"[green]{paths.name} boundary review worksheet[/green]: "
+        f"{review_set['sample_size']} sampled from {review_set['flagged_pool_size']} flagged moments"
+    )
+    console.print(f"[green]JSON worksheet[/green] {json_path}")
+
+
+@app.command("validate-boundary-review")
+def validate_boundary_review(
+    kb: KbOption = None,
+    input_path: Annotated[Path | None, typer.Option(help="Boundary review worksheet JSON path")] = None,
+) -> None:
+    """Validate an edited boundary worksheet without publishing its decisions."""
+    paths = kb_paths(kb)
+    json_path = input_path or paths.data("manifests") / "boundary-review.json"
+    if not json_path.exists():
+        raise typer.BadParameter(f"Boundary review worksheet does not exist: {json_path}")
+    review_set = read_json(json_path)
+    errors = validate_boundary_review_set(review_set, load_videos(paths.data("normalized")))
+    if errors:
+        for error in errors:
+            console.print(f"[red]{error}[/red]")
+        raise typer.Exit(1)
+    pending = sum(item.get("review_action") is None for item in review_set.get("items", []))
+    console.print(
+        f"[green]{paths.name} boundary worksheet valid[/green]: "
+        f"{len(review_set.get('items', []))} items, {pending} pending"
+    )
 
 
 @app.command()

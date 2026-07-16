@@ -15895,6 +15895,396 @@ items:
     decision: accepted
     canonical_concept_id: concept-backspin-serve-under-ball-contact
     review_notes: ''
+  - video_id: D1cBF0nsjKo
+    candidate:
+      candidate_id: concept-push-technique
+      canonical_label: Push technique
+      aliases:
+        - push shot
+        - pushing
+        - push well
+        - push technique
+        - push down the line
+      definition: A compact table-tennis push used on short and half-long balls, emphasizing close contact, controlled racket path, and adaptation to incoming spin.
+      concept_type: stroke
+      facets:
+        - name: category
+          values:
+            - stroke
+            - practice
+        - name: side
+          values:
+            - neutral
+        - name: spin
+          values:
+            - backspin
+            - no-spin
+            - sidespin
+        - name: distance
+          values:
+            - close
+        - name: level
+          values:
+            - beginner
+            - intermediate
+      difficulty: intermediate
+      resolution: match
+      matched_concept_id: concept-push-technique
+      confidence: 0.98
+      evidence:
+        - evidence_type: definition
+          segment_ids:
+            - D1cBF0nsjKo:00000
+            - D1cBF0nsjKo:00003
+            - D1cBF0nsjKo:00004
+          reason: The speaker explicitly frames the push shot as a key, frequently used match shot that amateurs must take seriously.
+          confidence: 0.96
+          visual_status: transcript_inferred
+        - evidence_type: explanation
+          segment_ids:
+            - D1cBF0nsjKo:00087
+            - D1cBF0nsjKo:00100
+            - D1cBF0nsjKo:00139
+            - D1cBF0nsjKo:00146
+          reason: The speaker explains that the push must stay close to the ball and be short and compact for lighter spin, while heavier spin requires more forward extension.
+          confidence: 0.96
+          visual_status: transcript_inferred
+        - evidence_type: demonstration
+          segment_ids:
+            - D1cBF0nsjKo:00147
+            - D1cBF0nsjKo:00183
+            - D1cBF0nsjKo:00234
+            - D1cBF0nsjKo:00239
+          reason: The transcript includes a slow-motion push demonstration, including down-the-line pushing and a layered method for handling heavy spin.
+          confidence: 0.95
+          visual_status: transcript_inferred
+      relations:
+        - relation_type: part_of
+          target_label: Contact point
+          segment_ids:
+            - D1cBF0nsjKo:00181
+            - D1cBF0nsjKo:00192
+            - D1cBF0nsjKo:00213
+          confidence: 0.82
+        - relation_type: used_with
+          target_label: Weight transfer through the stroke
+          segment_ids:
+            - D1cBF0nsjKo:00033
+            - D1cBF0nsjKo:00039
+            - D1cBF0nsjKo:00118
+          confidence: 0.86
+      uncertainty: []
+    candidate_hash: 6bf68d263d0d7e3ec62f67fc736c4ec84f24c4c6136a9168e64d06630be3d403
+    decision: accepted
+    canonical_concept_id: concept-push-technique
+    review_notes: 'P1-02 accepted: high-confidence match incorporated as one focused transcript moment; candidate relations remain subject to graph review.'
+  - video_id: D1cBF0nsjKo
+    candidate:
+      candidate_id: concept-weight-transfer-through-stroke
+      canonical_label: Weight transfer through the stroke
+      aliases:
+        - transfer your weight
+        - center of gravity
+        - weight comes forward
+        - step in
+      definition: Moving the body weight forward into the ball so the stroke reaches the short ball with control and extension.
+      concept_type: fundamentals
+      facets:
+        - name: category
+          values:
+            - fundamentals
+            - practice
+        - name: side
+          values:
+            - neutral
+        - name: distance
+          values:
+            - close
+        - name: level
+          values:
+            - beginner
+            - intermediate
+      difficulty: beginner
+      resolution: match
+      matched_concept_id: concept-weight-transfer-through-stroke
+      confidence: 0.97
+      evidence:
+        - evidence_type: explanation
+          segment_ids:
+            - D1cBF0nsjKo:00025
+            - D1cBF0nsjKo:00027
+            - D1cBF0nsjKo:00028
+          reason: The speaker says the real problem is the center of gravity and shows lowering it.
+          confidence: 0.95
+          visual_status: transcript_inferred
+        - evidence_type: explanation
+          segment_ids:
+            - D1cBF0nsjKo:00033
+            - D1cBF0nsjKo:00040
+          reason: He identifies stepping in without transferring weight as the common problem and says the center of gravity must move with the stepping foot.
+          confidence: 0.97
+          visual_status: transcript_inferred
+        - evidence_type: explanation
+          segment_ids:
+            - D1cBF0nsjKo:00043
+            - D1cBF0nsjKo:00051
+            - D1cBF0nsjKo:00113
+            - D1cBF0nsjKo:00119
+          reason: The transcript gives concrete examples of weight on the stepping foot and says the arm can extend fully only when weight comes forward.
+          confidence: 0.96
+          visual_status: transcript_inferred
+      relations:
+        - relation_type: prerequisite_of
+          target_label: Push technique
+          segment_ids:
+            - D1cBF0nsjKo:00033
+            - D1cBF0nsjKo:00118
+          confidence: 0.84
+        - relation_type: part_of
+          target_label: Efficient footwork
+          segment_ids:
+            - D1cBF0nsjKo:00020
+            - D1cBF0nsjKo:00064
+          confidence: 0.68
+      uncertainty: []
+    candidate_hash: 33cb6c6c40fc230eab94744f49c8785d4654922221b131238332b0107bfc8134
+    decision: accepted
+    canonical_concept_id: concept-weight-transfer-through-stroke
+    review_notes: 'P1-02 accepted: high-confidence match incorporated as one focused transcript moment; candidate relations remain subject to graph review.'
+  - video_id: D1cBF0nsjKo
+    candidate:
+      candidate_id: concept-contact-point
+      canonical_label: Contact point
+      aliases:
+        - ball contact
+        - contact point on the ball
+      definition: The precise location and timing of racket-ball contact, including whether contact is behind the ball, to the side, or on the lower middle/bottom portion.
+      concept_type: fundamentals
+      facets:
+        - name: category
+          values:
+            - fundamentals
+            - stroke
+        - name: side
+          values:
+            - neutral
+        - name: spin
+          values:
+            - backspin
+            - no-spin
+            - sidespin
+        - name: distance
+          values:
+            - close
+        - name: level
+          values:
+            - beginner
+            - intermediate
+      difficulty: beginner
+      resolution: match
+      matched_concept_id: concept-contact-point
+      confidence: 0.95
+      evidence:
+        - evidence_type: definition
+          segment_ids:
+            - D1cBF0nsjKo:00129
+            - D1cBF0nsjKo:00131
+          reason: The speaker warns not to stop the motion at ball contact, showing contact point as a key technical variable.
+          confidence: 0.88
+          visual_status: transcript_inferred
+        - evidence_type: explanation
+          segment_ids:
+            - D1cBF0nsjKo:00181
+            - D1cBF0nsjKo:00192
+            - D1cBF0nsjKo:00199
+            - D1cBF0nsjKo:00200
+          reason: He says contacting directly behind the ball causes errors and recommends contacting slightly left or right for control.
+          confidence: 0.97
+          visual_status: transcript_inferred
+        - evidence_type: explanation
+          segment_ids:
+            - D1cBF0nsjKo:00213
+            - D1cBF0nsjKo:00231
+          reason: The speaker describes lower-middle contact, then bottom contact, and says this lets him deal with heavy spin.
+          confidence: 0.96
+          visual_status: transcript_inferred
+      relations:
+        - relation_type: used_with
+          target_label: Brush around the ball
+          segment_ids:
+            - D1cBF0nsjKo:00213
+            - D1cBF0nsjKo:00215
+          confidence: 0.79
+        - relation_type: used_with
+          target_label: Push contact and spin
+          segment_ids:
+            - D1cBF0nsjKo:00199
+            - D1cBF0nsjKo:00215
+          confidence: 0.9
+      uncertainty: []
+    candidate_hash: 1ab2c66e3b7df06c57f502f35c1e88d27cec21d17aca7048a2192781313deccf
+    decision: accepted
+    canonical_concept_id: concept-contact-point
+    review_notes: 'P1-02 accepted: high-confidence match incorporated as one focused transcript moment; candidate relations remain subject to graph review.'
+  - video_id: D1cBF0nsjKo
+    candidate:
+      candidate_id: concept-push-contact-and-spin
+      canonical_label: Push contact and spin
+      aliases:
+        - spinny push
+        - cutting downward
+        - friction is generated
+        - bottom contact
+        - heavy spin contact
+      definition: Using the racket path and contact zone to manage incoming spin, create friction, and keep the push low and controllable.
+      concept_type: stroke
+      facets:
+        - name: category
+          values:
+            - stroke
+            - fundamentals
+        - name: side
+          values:
+            - neutral
+        - name: spin
+          values:
+            - backspin
+            - no-spin
+            - sidespin
+        - name: distance
+          values:
+            - close
+        - name: level
+          values:
+            - intermediate
+      difficulty: intermediate
+      resolution: match
+      matched_concept_id: concept-push-contact-and-spin
+      confidence: 0.97
+      evidence:
+        - evidence_type: explanation
+          segment_ids:
+            - D1cBF0nsjKo:00133
+            - D1cBF0nsjKo:00144
+          reason: The speaker ties spin to the need to send the ball forward and slightly downward, and says heavier spin requires more forearm extension.
+          confidence: 0.95
+          visual_status: transcript_inferred
+        - evidence_type: explanation
+          segment_ids:
+            - D1cBF0nsjKo:00147
+            - D1cBF0nsjKo:00163
+            - D1cBF0nsjKo:00174
+            - D1cBF0nsjKo:00180
+          reason: He uses the white line as a height reference to shape the arc and adjust racket angle and direction.
+          confidence: 0.92
+          visual_status: transcript_inferred
+        - evidence_type: explanation
+          segment_ids:
+            - D1cBF0nsjKo:00188
+            - D1cBF0nsjKo:00208
+            - D1cBF0nsjKo:00216
+            - D1cBF0nsjKo:00239
+          reason: The transcript contrasts direct-behind contact with slight side contact, then describes level-first-then-downward motion and brushing that generates friction to handle spin.
+          confidence: 0.98
+          visual_status: transcript_inferred
+      relations:
+        - relation_type: part_of
+          target_label: Push technique
+          segment_ids:
+            - D1cBF0nsjKo:00133
+            - D1cBF0nsjKo:00239
+          confidence: 0.93
+        - relation_type: corrects
+          target_label: Forehand loop common errors
+          segment_ids:
+            - D1cBF0nsjKo:00205
+            - D1cBF0nsjKo:00208
+          confidence: 0.49
+      uncertainty: []
+    candidate_hash: 5c44339a94dd8bc40ad4cd2588d95c73e81e5b1686b2a454ea2c7512ed7fa504
+    decision: accepted
+    canonical_concept_id: concept-push-contact-and-spin
+    review_notes: 'P1-02 accepted: high-confidence match incorporated as one focused transcript moment; candidate relations remain subject to graph review.'
+  - video_id: D1cBF0nsjKo
+    candidate:
+      candidate_id: concept-push-variations
+      canonical_label: Push variations
+      aliases:
+        - down-the-line push
+        - short forehand push
+        - forehand short triangle
+        - long spinny push
+        - light-spin push
+        - no-spin push
+      definition: Different push shapes and trajectories chosen according to ball placement, spin, and tactical need.
+      concept_type: tactic
+      facets:
+        - name: category
+          values:
+            - tactic
+            - stroke
+        - name: side
+          values:
+            - forehand
+            - backhand
+            - neutral
+        - name: spin
+          values:
+            - backspin
+            - no-spin
+            - sidespin
+        - name: distance
+          values:
+            - close
+        - name: level
+          values:
+            - intermediate
+      difficulty: intermediate
+      resolution: match
+      matched_concept_id: concept-push-variations
+      confidence: 0.91
+      evidence:
+        - evidence_type: example
+          segment_ids:
+            - D1cBF0nsjKo:00139
+            - D1cBF0nsjKo:00146
+          reason: The speaker explicitly distinguishes behavior for no/light spin versus heavier spin, recommending short compact motion for the former and more forward motion for the latter.
+          confidence: 0.94
+          visual_status: transcript_inferred
+        - evidence_type: example
+          segment_ids:
+            - D1cBF0nsjKo:00147
+            - D1cBF0nsjKo:00196
+          reason: He introduces a down-the-line push and demonstrates a straight, downward trajectory.
+          confidence: 0.92
+          visual_status: transcript_inferred
+        - evidence_type: example
+          segment_ids:
+            - D1cBF0nsjKo:00244
+            - D1cBF0nsjKo:00256
+            - D1cBF0nsjKo:00258
+          reason: He contrasts short forehand triangle handling with a horizontally biased forearm motion and notes resulting side deviation after contact.
+          confidence: 0.9
+          visual_status: transcript_inferred
+      relations:
+        - relation_type: variation_of
+          target_label: Push technique
+          segment_ids:
+            - D1cBF0nsjKo:00139
+            - D1cBF0nsjKo:00258
+          confidence: 0.93
+        - relation_type: used_with
+          target_label: Contact point
+          segment_ids:
+            - D1cBF0nsjKo:00187
+            - D1cBF0nsjKo:00215
+          confidence: 0.78
+      uncertainty:
+        - The transcript suggests both tactical and stroke-level variation; the exact boundary is somewhat ambiguous.
+    candidate_hash: 94cc2041efb76cb53588527035f01ecbcca131159d866ada404ffd0ca72e7934
+    decision: accepted
+    canonical_concept_id: concept-push-variations
+    review_notes: 'P1-02 accepted: high-confidence match incorporated as one focused transcript moment; candidate relations remain subject to graph review.'
   - video_id: D9ZAPb_65Hk
     candidate:
       candidate_id: concept-direction-reading
@@ -33715,6 +34105,698 @@ items:
     decision: accepted
     canonical_concept_id: concept-forehand-loop-spacing
     review_notes: Reviewed and integrated during the 100-candidate backlog batch.
+  - video_id: Kg4hLYnEbAs
+    candidate:
+      candidate_id: concept-backspin-serve-two-phase-brushing
+      canonical_label: Two-phase brushing in backspin serve
+      aliases:
+        - add another phase of brushing
+        - two phases of brushing
+        - continue brushing further
+      definition: Producing heavier backspin by continuing the brushing action after the initial contact phase so the racket creates extra friction and spin.
+      concept_type: technique
+      facets:
+        - name: category
+          values:
+            - stroke
+        - name: spin
+          values:
+            - backspin
+        - name: level
+          values:
+            - intermediate
+      difficulty: intermediate
+      resolution: new
+      matched_concept_id:
+      confidence: 0.97
+      evidence:
+        - evidence_type: explanation
+          segment_ids:
+            - Kg4hLYnEbAs:00011
+            - Kg4hLYnEbAs:00012
+            - Kg4hLYnEbAs:00015
+            - Kg4hLYnEbAs:00016
+            - Kg4hLYnEbAs:00017
+            - Kg4hLYnEbAs:00023
+            - Kg4hLYnEbAs:00025
+          reason: The speaker explains that the second serve has more spin because brushing continues after the usual stopping point, adding friction and making the spin extremely strong.
+          confidence: 0.98
+          visual_status: transcript_inferred
+      relations:
+        - relation_type: used_with
+          target_label: Backspin serve
+          segment_ids:
+            - Kg4hLYnEbAs:00013
+            - Kg4hLYnEbAs:00026
+            - Kg4hLYnEbAs:00030
+          confidence: 0.91
+      uncertainty: []
+    candidate_hash: e819afcf2f920b45c197f8a8cc25c801f8fc728bee67bdfbf00aa5fb46a901f7
+    decision: deferred
+    canonical_concept_id:
+    review_notes: 'P1-02 deferred: Candidate is marked new or ambiguous and needs explicit taxonomy review.'
+  - video_id: Kg4hLYnEbAs
+    candidate:
+      candidate_id: concept-serve-action-decomposition
+      canonical_label: Serve action decomposition
+      aliases:
+        - segment the serve into phases
+        - wrist drive sequence
+        - finger-wrist-arm sequence
+      definition: Breaking the serve into distinct acceleration and brushing phases to increase spin and control.
+      concept_type: technique
+      facets:
+        - name: category
+          values:
+            - stroke
+        - name: spin
+          values:
+            - backspin
+            - sidespin
+        - name: level
+          values:
+            - intermediate
+      difficulty: intermediate
+      resolution: match
+      matched_concept_id: concept-serve-action-decomposition
+      confidence: 0.98
+      evidence:
+        - evidence_type: explanation
+          segment_ids:
+            - Kg4hLYnEbAs:00013
+            - Kg4hLYnEbAs:00014
+            - Kg4hLYnEbAs:00015
+            - Kg4hLYnEbAs:00016
+            - Kg4hLYnEbAs:00019
+            - Kg4hLYnEbAs:00021
+            - Kg4hLYnEbAs:00023
+          reason: The speaker explicitly describes a standard serve being stopped early, then adding another brushing phase and more wrist drive to produce more spin.
+          confidence: 0.97
+          visual_status: transcript_inferred
+      relations:
+        - relation_type: used_with
+          target_label: Backspin serve
+          segment_ids:
+            - Kg4hLYnEbAs:00013
+            - Kg4hLYnEbAs:00026
+            - Kg4hLYnEbAs:00030
+          confidence: 0.93
+      uncertainty: []
+    candidate_hash: 12a3c0ce664588fe4ae3230f4cb152f76314a39d4a8a286be8b0fbca10986fc6
+    decision: accepted
+    canonical_concept_id: concept-serve-action-decomposition
+    review_notes: 'P1-02 accepted: high-confidence match incorporated as one focused transcript moment; candidate relations remain subject to graph review.'
+  - video_id: Kg4hLYnEbAs
+    candidate:
+      candidate_id: concept-backspin-serve-under-ball-contact
+      canonical_label: Under-ball contact for backspin serve
+      aliases:
+        - bottom contact
+        - heavy backspin contact
+      definition: Contacting the lower part of the ball to create heavy backspin.
+      concept_type: technique
+      facets:
+        - name: category
+          values:
+            - stroke
+        - name: spin
+          values:
+            - backspin
+        - name: level
+          values:
+            - beginner
+            - intermediate
+      difficulty: intermediate
+      resolution: match
+      matched_concept_id: concept-backspin-serve-under-ball-contact
+      confidence: 0.78
+      evidence:
+        - evidence_type: explanation
+          segment_ids:
+            - Kg4hLYnEbAs:00013
+            - Kg4hLYnEbAs:00030
+            - Kg4hLYnEbAs:00033
+            - Kg4hLYnEbAs:00036
+          reason: The speaker identifies the serve as a backspin serve and contrasts a standard version with a heavier one, indicating backspin-contact mechanics even though the exact underside wording is not spelled out in this clip.
+          confidence: 0.72
+          visual_status: transcript_inferred
+      relations:
+        - relation_type: used_with
+          target_label: Backspin serve
+          segment_ids:
+            - Kg4hLYnEbAs:00013
+            - Kg4hLYnEbAs:00026
+            - Kg4hLYnEbAs:00030
+          confidence: 0.83
+      uncertainty:
+        - The transcript does not explicitly say 'under the ball'; the match is inferred from the backspin-serve explanation.
+    candidate_hash: 288eb9af26692229b99ea2c14f4a5bf3d2d5e4ad1827d71a460153ecd6197ffb
+    decision: deferred
+    canonical_concept_id:
+    review_notes: 'P1-02 deferred: Confidence 0.78 is below the automatic review threshold 0.85.'
+  - video_id: Kg4hLYnEbAs
+    candidate:
+      candidate_id: concept-backhand-receive-step-in
+      canonical_label: Step in on backhand receive
+      aliases:
+        - right foot steps in
+        - step in
+      definition: Advancing the lead foot into the ball on backhand receive to avoid being jammed and to generate power and control.
+      concept_type: tactic
+      facets:
+        - name: category
+          values:
+            - fundamentals
+            - tactic
+        - name: side
+          values:
+            - backhand
+        - name: distance
+          values:
+            - close
+        - name: level
+          values:
+            - intermediate
+      difficulty: intermediate
+      resolution: new
+      matched_concept_id:
+      confidence: 0.98
+      evidence:
+        - evidence_type: explanation
+          segment_ids:
+            - Kg4hLYnEbAs:00048
+            - Kg4hLYnEbAs:00049
+            - Kg4hLYnEbAs:00050
+            - Kg4hLYnEbAs:00051
+            - Kg4hLYnEbAs:00052
+            - Kg4hLYnEbAs:00053
+            - Kg4hLYnEbAs:00054
+            - Kg4hLYnEbAs:00057
+            - Kg4hLYnEbAs:00080
+          reason: The speaker says that on a backhand receive the player should step in immediately, otherwise the stroke becomes jammed and powerless.
+          confidence: 0.98
+          visual_status: transcript_inferred
+      relations:
+        - relation_type: used_with
+          target_label: Compact response to a fast ball
+          segment_ids:
+            - Kg4hLYnEbAs:00059
+            - Kg4hLYnEbAs:00060
+            - Kg4hLYnEbAs:00065
+            - Kg4hLYnEbAs:00066
+          confidence: 0.86
+      uncertainty: []
+    candidate_hash: 2dab14127e54a686d33f3a1af0c4580c3f8f6a0e73eda34d77c8eaced339c180
+    decision: deferred
+    canonical_concept_id:
+    review_notes: 'P1-02 deferred: Candidate is marked new or ambiguous and needs explicit taxonomy review.'
+  - video_id: Kg4hLYnEbAs
+    candidate:
+      candidate_id: concept-compact-response-to-fast-ball
+      canonical_label: Compact response to a fast ball
+      aliases:
+        - compact receive
+        - no-backswing response
+      definition: Using a very small, efficient motion on receive when the incoming ball is fast or heavy to stay controlled and avoid being jammed.
+      concept_type: fundamentals
+      facets:
+        - name: category
+          values:
+            - fundamentals
+            - practice
+        - name: distance
+          values:
+            - close
+        - name: level
+          values:
+            - intermediate
+      difficulty: intermediate
+      resolution: match
+      matched_concept_id: concept-compact-response-to-fast-ball
+      confidence: 0.99
+      evidence:
+        - evidence_type: explanation
+          segment_ids:
+            - Kg4hLYnEbAs:00059
+            - Kg4hLYnEbAs:00060
+            - Kg4hLYnEbAs:00063
+            - Kg4hLYnEbAs:00064
+            - Kg4hLYnEbAs:00065
+            - Kg4hLYnEbAs:00066
+            - Kg4hLYnEbAs:00067
+            - Kg4hLYnEbAs:00139
+            - Kg4hLYnEbAs:00141
+          reason: The speaker contrasts a larger attacking backhand stroke with a much smaller receive motion and says the movement must be compact because receive requires high speed.
+          confidence: 0.98
+          visual_status: transcript_inferred
+      relations:
+        - relation_type: prerequisite_of
+          target_label: Backhand topspin body coordination
+          segment_ids:
+            - Kg4hLYnEbAs:00146
+            - Kg4hLYnEbAs:00147
+            - Kg4hLYnEbAs:00157
+          confidence: 0.6
+      uncertainty: []
+    candidate_hash: cc680e08a06cdffd4de4a23d35957a759a29a886e3638fff841aff7673b8332a
+    decision: accepted
+    canonical_concept_id: concept-compact-response-to-fast-ball
+    review_notes: 'P1-02 accepted: high-confidence match incorporated as one focused transcript moment; candidate relations remain subject to graph review.'
+  - video_id: Kg4hLYnEbAs
+    candidate:
+      candidate_id: concept-serve-receive-spin-reading
+      canonical_label: Spin reading on receive
+      aliases:
+        - read it properly
+        - misread the side spin
+        - read before moving
+      definition: Identifying the serve's spin early so the receiver can choose the correct contact and movement before committing.
+      concept_type: fundamentals
+      facets:
+        - name: category
+          values:
+            - fundamentals
+            - tactic
+        - name: level
+          values:
+            - intermediate
+      difficulty: intermediate
+      resolution: new
+      matched_concept_id:
+      confidence: 0.93
+      evidence:
+        - evidence_type: explanation
+          segment_ids:
+            - Kg4hLYnEbAs:00082
+            - Kg4hLYnEbAs:00083
+            - Kg4hLYnEbAs:00084
+            - Kg4hLYnEbAs:00085
+            - Kg4hLYnEbAs:00094
+            - Kg4hLYnEbAs:00095
+            - Kg4hLYnEbAs:00100
+          reason: The speaker says the player misread the sidespin, did not find the correct contact point, and moved too early before reading the ball clearly.
+          confidence: 0.96
+          visual_status: transcript_inferred
+      relations:
+        - relation_type: used_with
+          target_label: Direction reading
+          segment_ids:
+            - Kg4hLYnEbAs:00084
+            - Kg4hLYnEbAs:00085
+            - Kg4hLYnEbAs:00086
+          confidence: 0.84
+        - relation_type: used_with
+          target_label: Contact point
+          segment_ids:
+            - Kg4hLYnEbAs:00072
+            - Kg4hLYnEbAs:00083
+          confidence: 0.78
+      uncertainty: []
+    candidate_hash: 6ee2420664c5e9c906299f1ee815465a8f5079390dd15b8398a3cd63a84ce458
+    decision: deferred
+    canonical_concept_id:
+    review_notes: 'P1-02 deferred: Candidate is marked new or ambiguous and needs explicit taxonomy review.'
+  - video_id: Kg4hLYnEbAs
+    candidate:
+      candidate_id: concept-direction-reading
+      canonical_label: Direction reading
+      aliases:
+        - delayed commitment
+        - read before moving
+      definition: Waiting to confirm the ball's path and spin before moving, so the stroke is not rushed or misaligned.
+      concept_type: fundamentals
+      facets:
+        - name: category
+          values:
+            - fundamentals
+        - name: level
+          values:
+            - intermediate
+      difficulty: intermediate
+      resolution: match
+      matched_concept_id: concept-direction-reading
+      confidence: 0.95
+      evidence:
+        - evidence_type: explanation
+          segment_ids:
+            - Kg4hLYnEbAs:00084
+            - Kg4hLYnEbAs:00085
+            - Kg4hLYnEbAs:00086
+            - Kg4hLYnEbAs:00087
+            - Kg4hLYnEbAs:00088
+            - Kg4hLYnEbAs:00089
+            - Kg4hLYnEbAs:00100
+          reason: The speaker warns that if the body moves before the ball is properly read, the shot becomes rushed, and says to move only after reading the ball clearly.
+          confidence: 0.97
+          visual_status: transcript_inferred
+      relations:
+        - relation_type: used_with
+          target_label: Step in on backhand receive
+          segment_ids:
+            - Kg4hLYnEbAs:00053
+            - Kg4hLYnEbAs:00057
+          confidence: 0.84
+      uncertainty: []
+    candidate_hash: 31c356d220c9b1630255d5f08475054c9bfa904efd95c4a8195d3cc0dfe4baa2
+    decision: accepted
+    canonical_concept_id: concept-direction-reading
+    review_notes: 'P1-02 accepted: high-confidence match incorporated as one focused transcript moment; candidate relations remain subject to graph review.'
+  - video_id: Kg4hLYnEbAs
+    candidate:
+      candidate_id: concept-body-stability-and-low-center-of-gravity
+      canonical_label: Body stability and low center of gravity
+      aliases:
+        - keep the body stable
+        - stay low
+        - lower your center of gravity
+      definition: Keeping the body low, stable, and grounded to improve control, compactness, and stroke stability on fast balls.
+      concept_type: fundamentals
+      facets:
+        - name: category
+          values:
+            - fundamentals
+        - name: distance
+          values:
+            - mid
+            - close
+        - name: level
+          values:
+            - intermediate
+      difficulty: intermediate
+      resolution: new
+      matched_concept_id:
+      confidence: 0.98
+      evidence:
+        - evidence_type: explanation
+          segment_ids:
+            - Kg4hLYnEbAs:00112
+            - Kg4hLYnEbAs:00113
+            - Kg4hLYnEbAs:00114
+            - Kg4hLYnEbAs:00115
+            - Kg4hLYnEbAs:00116
+            - Kg4hLYnEbAs:00119
+            - Kg4hLYnEbAs:00120
+            - Kg4hLYnEbAs:00124
+            - Kg4hLYnEbAs:00125
+            - Kg4hLYnEbAs:00126
+            - Kg4hLYnEbAs:00127
+            - Kg4hLYnEbAs:00128
+            - Kg4hLYnEbAs:00129
+            - Kg4hLYnEbAs:00130
+            - Kg4hLYnEbAs:00133
+            - Kg4hLYnEbAs:00134
+          reason: The speaker explains that the body should not bounce, should stay low, and should avoid excessive rotation because the ball is fast.
+          confidence: 0.98
+          visual_status: transcript_inferred
+      relations:
+        - relation_type: prerequisite_of
+          target_label: Efficient footwork
+          segment_ids:
+            - Kg4hLYnEbAs:00136
+            - Kg4hLYnEbAs:00137
+            - Kg4hLYnEbAs:00141
+            - Kg4hLYnEbAs:00144
+          confidence: 0.63
+      uncertainty: []
+    candidate_hash: cd9043ba5bcada2b17ac81300ab2253d56c783fa1d1737bf053768ad9e22199b
+    decision: deferred
+    canonical_concept_id:
+    review_notes: 'P1-02 deferred: Candidate is marked new or ambiguous and needs explicit taxonomy review.'
+  - video_id: Kg4hLYnEbAs
+    candidate:
+      candidate_id: concept-weight-transfer-vs-rotation
+      canonical_label: Weight transfer versus body rotation
+      aliases:
+        - weight shifted, but I didn't rotate
+        - this is not body rotation
+        - this is just weight transfer
+      definition: Distinguishing linear weight shift from actual torso rotation during a loop or receive motion.
+      concept_type: fundamentals
+      facets:
+        - name: category
+          values:
+            - fundamentals
+            - stroke
+        - name: level
+          values:
+            - intermediate
+      difficulty: intermediate
+      resolution: new
+      matched_concept_id:
+      confidence: 0.97
+      evidence:
+        - evidence_type: explanation
+          segment_ids:
+            - Kg4hLYnEbAs:00113
+            - Kg4hLYnEbAs:00114
+            - Kg4hLYnEbAs:00115
+            - Kg4hLYnEbAs:00116
+            - Kg4hLYnEbAs:00117
+            - Kg4hLYnEbAs:00118
+          reason: The speaker explicitly contrasts weight transfer with body rotation and says the example shown is weight transfer rather than rotation.
+          confidence: 0.98
+          visual_status: transcript_inferred
+      relations:
+        - relation_type: used_with
+          target_label: Ground connection and loaded legs
+          segment_ids:
+            - Kg4hLYnEbAs:00118
+            - Kg4hLYnEbAs:00136
+            - Kg4hLYnEbAs:00137
+          confidence: 0.75
+      uncertainty: []
+    candidate_hash: 28e76c66a363f49b19b13f2c8450edf6ab4c5da20fdd6856e04d3a07b54637f9
+    decision: deferred
+    canonical_concept_id:
+    review_notes: 'P1-02 deferred: Candidate is marked new or ambiguous and needs explicit taxonomy review.'
+  - video_id: Kg4hLYnEbAs
+    candidate:
+      candidate_id: concept-grounded-legs-and-loaded-base
+      canonical_label: Grounded legs and loaded base
+      aliases:
+        - legs must feel grounded
+        - stay on your legs
+        - load on the right leg
+      definition: Using a grounded, loaded lower body as the base for stable and powerful looping or receiving.
+      concept_type: fundamentals
+      facets:
+        - name: category
+          values:
+            - fundamentals
+        - name: distance
+          values:
+            - mid
+            - far
+            - close
+        - name: level
+          values:
+            - intermediate
+      difficulty: intermediate
+      resolution: new
+      matched_concept_id: concept-loaded-legs
+      confidence: 0.95
+      evidence:
+        - evidence_type: explanation
+          segment_ids:
+            - Kg4hLYnEbAs:00118
+            - Kg4hLYnEbAs:00124
+            - Kg4hLYnEbAs:00125
+            - Kg4hLYnEbAs:00133
+            - Kg4hLYnEbAs:00134
+            - Kg4hLYnEbAs:00136
+            - Kg4hLYnEbAs:00137
+            - Kg4hLYnEbAs:00138
+            - Kg4hLYnEbAs:00142
+            - Kg4hLYnEbAs:00143
+            - Kg4hLYnEbAs:00144
+            - Kg4hLYnEbAs:00145
+          reason: The speaker says to load on the right leg, stay down on the legs, keep the body low, and keep the lower body compact and grounded so the stroke stays stable.
+          confidence: 0.97
+          visual_status: transcript_inferred
+      relations:
+        - relation_type: prerequisite_of
+          target_label: Body stability and low center of gravity
+          segment_ids:
+            - Kg4hLYnEbAs:00124
+            - Kg4hLYnEbAs:00125
+            - Kg4hLYnEbAs:00136
+          confidence: 0.8
+      uncertainty: []
+    candidate_hash: 753a0442a7c1f363ebf5aaabf8494877193f8d498f79ce9477d9c141ea2454cb
+    decision: accepted
+    canonical_concept_id: concept-loaded-legs
+    review_notes: 'P1-02 accepted: high-confidence match incorporated as one focused transcript moment; candidate relations remain subject to graph review.'
+  - video_id: Kg4hLYnEbAs
+    candidate:
+      candidate_id: concept-backhand-loop-racket-angle-structure
+      canonical_label: Backhand loop racket-angle structure
+      aliases:
+        - 3:00 position
+        - 5:00 position
+        - forearm lower than upper arm
+      definition: Setting the racket, wrist, and forearm in a lowered structure before rotating through contact for a heavier-spinning backhand loop.
+      concept_type: stroke
+      facets:
+        - name: category
+          values:
+            - stroke
+        - name: side
+          values:
+            - backhand
+        - name: spin
+          values:
+            - topspin
+        - name: level
+          values:
+            - advanced
+      difficulty: advanced
+      resolution: new
+      matched_concept_id:
+      confidence: 0.96
+      evidence:
+        - evidence_type: demonstration
+          segment_ids:
+            - Kg4hLYnEbAs:00149
+            - Kg4hLYnEbAs:00150
+            - Kg4hLYnEbAs:00151
+            - Kg4hLYnEbAs:00152
+            - Kg4hLYnEbAs:00153
+            - Kg4hLYnEbAs:00154
+            - Kg4hLYnEbAs:00155
+            - Kg4hLYnEbAs:00156
+            - Kg4hLYnEbAs:00157
+            - Kg4hLYnEbAs:00158
+            - Kg4hLYnEbAs:00159
+            - Kg4hLYnEbAs:00160
+            - Kg4hLYnEbAs:00161
+            - Kg4hLYnEbAs:00162
+            - Kg4hLYnEbAs:00163
+            - Kg4hLYnEbAs:00164
+            - Kg4hLYnEbAs:00165
+          reason: The speaker demonstrates different racket angles, specifies the forearm/wrist/racket tip layering, and says the racket tip must drop before rotating to create heavy spin.
+          confidence: 0.98
+          visual_status: transcript_inferred
+      relations:
+        - relation_type: used_with
+          target_label: Backhand loop contact
+          segment_ids:
+            - Kg4hLYnEbAs:00168
+            - Kg4hLYnEbAs:00173
+          confidence: 0.72
+        - relation_type: used_with
+          target_label: Backhand loop swing path
+          segment_ids:
+            - Kg4hLYnEbAs:00152
+            - Kg4hLYnEbAs:00164
+            - Kg4hLYnEbAs:00175
+          confidence: 0.74
+      uncertainty: []
+    candidate_hash: 6bb80be56020c6b161124a73015dd62a54054d5c92bab933b25af4ad3f8470d8
+    decision: accepted
+    canonical_concept_id: concept-backhand-loop
+    review_notes: 'P1-02 accepted: high-confidence match incorporated as one focused transcript moment; candidate relations remain subject to graph review.'
+  - video_id: Kg4hLYnEbAs
+    candidate:
+      candidate_id: concept-backhand-loop-racket-head-acceleration
+      canonical_label: Backhand loop racket-head acceleration
+      aliases:
+        - racket head acceleration
+        - rotate the racket head
+      definition: Generating spin and arc in the backhand loop by accelerating the racket head through and after contact.
+      concept_type: stroke
+      facets:
+        - name: category
+          values:
+            - stroke
+        - name: side
+          values:
+            - backhand
+        - name: spin
+          values:
+            - topspin
+        - name: level
+          values:
+            - advanced
+      difficulty: advanced
+      resolution: new
+      matched_concept_id: concept-loose-grip-backhand-friction
+      confidence: 0.86
+      evidence:
+        - evidence_type: explanation
+          segment_ids:
+            - Kg4hLYnEbAs:00166
+            - Kg4hLYnEbAs:00167
+            - Kg4hLYnEbAs:00168
+            - Kg4hLYnEbAs:00169
+            - Kg4hLYnEbAs:00170
+            - Kg4hLYnEbAs:00171
+            - Kg4hLYnEbAs:00172
+            - Kg4hLYnEbAs:00174
+            - Kg4hLYnEbAs:00175
+            - Kg4hLYnEbAs:00177
+            - Kg4hLYnEbAs:00178
+            - Kg4hLYnEbAs:00180
+            - Kg4hLYnEbAs:00186
+            - Kg4hLYnEbAs:00187
+          reason: The speaker says racket-head acceleration is the fastest way, that the faster the racket head rotates the more spin and arc you get, and that rotation continues after contact.
+          confidence: 0.97
+          visual_status: transcript_inferred
+      relations:
+        - relation_type: used_with
+          target_label: Backhand loop racket-angle structure
+          segment_ids:
+            - Kg4hLYnEbAs:00149
+            - Kg4hLYnEbAs:00162
+            - Kg4hLYnEbAs:00165
+          confidence: 0.76
+      uncertainty: []
+    candidate_hash: 9aaa4ef4bf0e72021fc476c2d642fc1eb03c8b537bcd34da0d9ff2cb785a3316
+    decision: accepted
+    canonical_concept_id: concept-loose-grip-backhand-friction
+    review_notes: 'P1-02 accepted: high-confidence match incorporated as one focused transcript moment; candidate relations remain subject to graph review.'
+  - video_id: Kg4hLYnEbAs
+    candidate:
+      candidate_id: concept-contact-point-identification
+      canonical_label: Contact point identification
+      aliases:
+        - locate the contact point early
+        - find the correct contact point
+      definition: Identifying the ball-contact point early enough to meet the curved serve or loop in the right place.
+      concept_type: fundamentals
+      facets:
+        - name: category
+          values:
+            - fundamentals
+        - name: level
+          values:
+            - intermediate
+      difficulty: intermediate
+      resolution: match
+      matched_concept_id: concept-contact-point
+      confidence: 0.93
+      evidence:
+        - evidence_type: explanation
+          segment_ids:
+            - Kg4hLYnEbAs:00072
+            - Kg4hLYnEbAs:00077
+            - Kg4hLYnEbAs:00078
+            - Kg4hLYnEbAs:00083
+          reason: The speaker directly tells the player to locate the contact point early and says the receiver failed to find the correct contact point.
+          confidence: 0.97
+          visual_status: transcript_inferred
+      relations:
+        - relation_type: used_with
+          target_label: Spin reading on receive
+          segment_ids:
+            - Kg4hLYnEbAs:00082
+            - Kg4hLYnEbAs:00083
+            - Kg4hLYnEbAs:00085
+          confidence: 0.79
+      uncertainty: []
+    candidate_hash: 891e61edc2bdd18cf0bcbaf885fb2f1ad682c745fcf08f371a37fc35d49c026f
+    decision: accepted
+    canonical_concept_id: concept-contact-point
+    review_notes: 'P1-02 accepted: high-confidence match incorporated as one focused transcript moment; candidate relations remain subject to graph review.'
   - video_id: KpjJFdkUD54
     candidate:
       candidate_id: concept-hook-serve-mechanics

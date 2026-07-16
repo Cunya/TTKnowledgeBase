@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 import corpusData from '../../public/data/kbs/table-tennis/corpus.json';
 import globalCatalogData from '../data/globalttstudio-videos.json';
 import sixthBatchData from '../data/tt-spinmaster-sixth-batch.json';
+import progressData from '../data/generated/table-tennis-progress.json';
 import type { Corpus } from '../types';
 
 const corpus = corpusData as Corpus;
@@ -12,53 +13,58 @@ const sourceVideos = (channel: string) => corpus.videos.filter((video) => video.
 const spinMasterVideos = sourceVideos('TT SpinMaster');
 const globalVideos = sourceVideos('GlobalTTStudio');
 const globalPublishedIds = new Set(globalVideos.map((video) => video.id));
-const globalInaccessibleIds = new Set(['2GWq4FdtSRU', 'c894uv9vOFk', 'saJV_mSKHaw', 'MS5-0DaZ_h8', '6_GowxnyC94', 'gqVe2JURIY0', 'V9rDt4zBHKw', 'C03mgoF66a4']);
+const generatedProgress = progressData as { generated_at: string; totals: Record<string, number>; sources: Array<Record<string, string | number>>; members_only_ids: string[] };
+const generatedTotals = generatedProgress.totals;
+const generatedSource = (id: string) => generatedProgress.sources.find((source) => source.id === id) ?? {};
+const spinMasterProgress = generatedSource('free-coach-brad-han');
+const globalProgress = generatedSource('global-tt-studio');
+const globalInaccessibleIds = new Set(generatedProgress.members_only_ids);
 const globalCatalogVideos = globalCatalogData.videos;
 const sixthBatchVideos = sixthBatchData.videos.filter((video) => !globalPublishedIds.has(video.id) && !spinMasterVideos.some((published) => published.id === video.id));
 const globalCatalogState = (id: string) => globalPublishedIds.has(id) ? 'Published' : globalInaccessibleIds.has(id) ? 'Members-only' : 'Discovered';
-const globalEligibleCount = globalVideos.length;
-const globalInaccessibleCount = globalInaccessibleIds.size;
-const globalConfiguredCount = globalEligibleCount + globalInaccessibleCount;
-const spinMasterConfiguredCount = spinMasterVideos.length + sixthBatchVideos.length;
-const totalEligibleCount = spinMasterConfiguredCount + globalEligibleCount;
-const totalConfiguredCount = spinMasterConfiguredCount + globalConfiguredCount;
+const globalEligibleCount = Number(globalProgress.eligible ?? globalVideos.length);
+const globalInaccessibleCount = Number(globalProgress.members_only ?? globalInaccessibleIds.size);
+const globalConfiguredCount = Number(globalProgress.configured ?? globalEligibleCount + globalInaccessibleCount);
+const spinMasterConfiguredCount = Number(spinMasterProgress.configured ?? spinMasterVideos.length + sixthBatchVideos.length);
+const totalEligibleCount = Number(generatedTotals.eligible ?? spinMasterConfiguredCount + globalEligibleCount);
+const totalConfiguredCount = Number(generatedTotals.configured ?? spinMasterConfiguredCount + globalConfiguredCount);
 const percent = (value: number, total: number) => total ? Math.round((value / total) * 100) : 0;
 const summaryStage = (value: number, total: number) => `${value} (${percent(value, total)}%)`;
 const sourceProgress = [
   {
-    name: 'TT SpinMaster',
-    detail: `${spinMasterConfiguredCount} eligible videos`,
+    name: String(spinMasterProgress.name ?? 'TT SpinMaster'),
+    detail: `${spinMasterProgress.eligible ?? spinMasterConfiguredCount} eligible videos`,
     stages: [
-      { label: 'Configured from discovery', value: spinMasterConfiguredCount, total: 304 },
-      { label: 'Eligible', value: spinMasterConfiguredCount, total: spinMasterConfiguredCount },
-      { label: 'Ingested', value: spinMasterConfiguredCount, total: spinMasterConfiguredCount },
-      { label: 'Extracted', value: spinMasterConfiguredCount, total: spinMasterConfiguredCount },
-      { label: 'Fully reviewed', value: 57, total: spinMasterConfiguredCount },
-      { label: 'Published', value: 98, total: spinMasterConfiguredCount },
+      { label: 'Configured from discovery', value: Number(spinMasterProgress.configured ?? spinMasterConfiguredCount), total: Number(spinMasterProgress.discovered ?? spinMasterConfiguredCount) },
+      { label: 'Eligible', value: Number(spinMasterProgress.eligible ?? spinMasterConfiguredCount), total: Number(spinMasterProgress.configured ?? spinMasterConfiguredCount) },
+      { label: 'Ingested', value: Number(spinMasterProgress.ingested ?? spinMasterConfiguredCount), total: Number(spinMasterProgress.eligible ?? spinMasterConfiguredCount) },
+      { label: 'Extracted', value: Number(spinMasterProgress.extracted ?? spinMasterConfiguredCount), total: Number(spinMasterProgress.eligible ?? spinMasterConfiguredCount) },
+      { label: 'Fully reviewed', value: Number(spinMasterProgress.reviewed ?? 0), total: Number(spinMasterProgress.eligible ?? spinMasterConfiguredCount) },
+      { label: 'Published', value: Number(spinMasterProgress.published ?? spinMasterVideos.length), total: Number(spinMasterProgress.eligible ?? spinMasterConfiguredCount) },
     ],
   },
   {
-    name: 'GlobalTTStudio',
+    name: String(globalProgress.name ?? 'GlobalTTStudio'),
     detail: `${globalEligibleCount} eligible · ${globalInaccessibleCount} members-only`,
     stages: [
-      { label: 'Configured from discovery', value: globalConfiguredCount, total: 418 },
+      { label: 'Configured from discovery', value: Number(globalProgress.configured ?? globalConfiguredCount), total: Number(globalProgress.discovered ?? globalConfiguredCount) },
       { label: 'Eligible', value: globalEligibleCount, total: globalConfiguredCount },
-      { label: 'Ingested', value: globalEligibleCount, total: globalEligibleCount },
-      { label: 'Extracted', value: globalEligibleCount, total: globalEligibleCount },
-      { label: 'Fully reviewed', value: 13, total: globalEligibleCount },
-      { label: 'Published', value: globalEligibleCount, total: globalEligibleCount },
+      { label: 'Ingested', value: Number(globalProgress.ingested ?? globalEligibleCount), total: globalEligibleCount },
+      { label: 'Extracted', value: Number(globalProgress.extracted ?? globalEligibleCount), total: globalEligibleCount },
+      { label: 'Fully reviewed', value: Number(globalProgress.reviewed ?? 0), total: globalEligibleCount },
+      { label: 'Published', value: Number(globalProgress.published ?? globalEligibleCount), total: globalEligibleCount },
     ],
   },
   {
     name: 'Total configured',
     detail: `${totalEligibleCount} eligible videos`,
     stages: [
-      { label: 'Configured from discovery', value: totalConfiguredCount, total: 722 },
+      { label: 'Configured from discovery', value: totalConfiguredCount, total: Number(generatedTotals.discovered ?? totalConfiguredCount) },
       { label: 'Eligible', value: totalEligibleCount, total: totalConfiguredCount },
-      { label: 'Ingested', value: totalEligibleCount, total: totalEligibleCount },
-      { label: 'Extracted', value: totalEligibleCount, total: totalEligibleCount },
-      { label: 'Fully reviewed', value: 70, total: totalEligibleCount },
-      { label: 'Published', value: 121, total: totalEligibleCount },
+      { label: 'Ingested', value: Number(generatedTotals.ingested ?? totalEligibleCount), total: totalEligibleCount },
+      { label: 'Extracted', value: Number(generatedTotals.extracted ?? totalEligibleCount), total: totalEligibleCount },
+      { label: 'Fully reviewed', value: Number(generatedTotals.reviewed_videos ?? 0), total: totalEligibleCount },
+      { label: 'Published', value: Number(generatedTotals.published_videos ?? corpus.videos.length), total: totalEligibleCount },
     ],
   },
 ];
@@ -144,14 +150,14 @@ const budgetRows = budgetTaskNames.map((task) => {
     <p>Discovery, transcript ingestion, Codex extraction, editorial review, and publication status for each configured table-tennis source.</p>
   </section>
 
-  <aside class="progress-alert success"><strong>Latest batch</strong><span>A controlled six-video GlobalTTStudio selection found two public videos and four members-only entries. The two public transcripts were extracted with the configured low-cost Codex profile; triage accepted 23 candidates, added 30 focused evidence moments, and left 5 weak or new-taxonomy candidates deferred. The cached queue is now fully resolved.</span></aside>
+  <aside class="progress-alert success"><strong>Generated snapshot</strong><span>Counts below are generated during publish from local processor artifacts. No LLM edits these project totals; the snapshot was generated at {generatedProgress.generated_at}.</span></aside>
 
   <section class="progress-section">
     <div class="section-kicker">Current corpus</div><h2>Source summary</h2>
     <div class="table-scroll"><table class="progress-table summary-table"><thead><tr><th>Source</th><th>Discovered</th><th>Configured</th><th>Eligible</th><th>Ingested</th><th>Extracted</th><th>Reviewed</th><th>Published</th><th>Accepted</th><th>Rejected</th><th>Evidence</th><th>Concepts</th><th>Visuals proposed</th><th>Visuals verified</th></tr></thead><tbody>
-      <tr><th>TT SpinMaster<br/><small>@FreeCoachBradHan</small></th><td>304</td><td>{summaryStage(spinMasterConfiguredCount, 304)}</td><td>{summaryStage(spinMasterConfiguredCount, spinMasterConfiguredCount)}</td><td>{summaryStage(spinMasterConfiguredCount, spinMasterConfiguredCount)}</td><td>{summaryStage(spinMasterConfiguredCount, spinMasterConfiguredCount)}</td><td>{summaryStage(57, spinMasterConfiguredCount)}</td><td>{summaryStage(98, spinMasterConfiguredCount)}</td><td>853 + 103 deferred</td><td>0</td><td>1,455</td><td>72</td><td>19</td><td>0</td></tr>
-      <tr><th>GlobalTTStudio<br/><small>@GlobalTTStudio</small></th><td>418</td><td>{summaryStage(globalConfiguredCount, 418)}</td><td>{summaryStage(globalEligibleCount, globalConfiguredCount)}</td><td>{summaryStage(globalEligibleCount, globalEligibleCount)}</td><td>{summaryStage(globalEligibleCount, globalEligibleCount)}</td><td>{summaryStage(13, globalEligibleCount)}</td><td>{summaryStage(globalEligibleCount, globalEligibleCount)}</td><td>207 + 36 deferred</td><td>1</td><td>359</td><td>58</td><td>16</td><td>0</td></tr>
-      <tr class="total"><th>Total configured</th><td>—</td><td>{summaryStage(totalConfiguredCount, 722)}</td><td>{summaryStage(totalEligibleCount, totalConfiguredCount)}</td><td>{summaryStage(totalEligibleCount, totalEligibleCount)}</td><td>{summaryStage(totalEligibleCount, totalEligibleCount)}</td><td>{summaryStage(70, totalEligibleCount)}</td><td>{summaryStage(121, totalEligibleCount)}</td><td>1,060 + 139 deferred</td><td>1</td><td>1,814</td><td>73 unique</td><td>35</td><td>0</td></tr>
+      <tr><th>TT SpinMaster<br/><small>@FreeCoachBradHan</small></th><td>{spinMasterProgress.discovered}</td><td>{summaryStage(Number(spinMasterProgress.configured), Number(spinMasterProgress.discovered))}</td><td>{summaryStage(Number(spinMasterProgress.eligible), Number(spinMasterProgress.configured))}</td><td>{summaryStage(Number(spinMasterProgress.ingested), Number(spinMasterProgress.eligible))}</td><td>{summaryStage(Number(spinMasterProgress.extracted), Number(spinMasterProgress.eligible))}</td><td>{summaryStage(Number(spinMasterProgress.reviewed), Number(spinMasterProgress.eligible))}</td><td>{summaryStage(Number(spinMasterProgress.published), Number(spinMasterProgress.eligible))}</td><td>{spinMasterProgress.accepted} + {spinMasterProgress.deferred} deferred</td><td>{spinMasterProgress.rejected}</td><td>{spinMasterProgress.evidence}</td><td>{spinMasterProgress.concepts}</td><td>{spinMasterProgress.visual_proposed}</td><td>{spinMasterProgress.visual_verified}</td></tr>
+      <tr><th>GlobalTTStudio<br/><small>@GlobalTTStudio</small></th><td>{globalProgress.discovered}</td><td>{summaryStage(Number(globalProgress.configured), Number(globalProgress.discovered))}</td><td>{summaryStage(Number(globalProgress.eligible), Number(globalProgress.configured))}</td><td>{summaryStage(Number(globalProgress.ingested), Number(globalProgress.eligible))}</td><td>{summaryStage(Number(globalProgress.extracted), Number(globalProgress.eligible))}</td><td>{summaryStage(Number(globalProgress.reviewed), Number(globalProgress.eligible))}</td><td>{summaryStage(Number(globalProgress.published), Number(globalProgress.eligible))}</td><td>{globalProgress.accepted} + {globalProgress.deferred} deferred</td><td>{globalProgress.rejected}</td><td>{globalProgress.evidence}</td><td>{globalProgress.concepts}</td><td>{globalProgress.visual_proposed}</td><td>{globalProgress.visual_verified}</td></tr>
+      <tr class="total"><th>Total configured</th><td>{generatedTotals.discovered}</td><td>{summaryStage(totalConfiguredCount, Number(generatedTotals.discovered))}</td><td>{summaryStage(Number(generatedTotals.eligible), totalConfiguredCount)}</td><td>{summaryStage(Number(generatedTotals.ingested), Number(generatedTotals.eligible))}</td><td>{summaryStage(Number(generatedTotals.extracted), Number(generatedTotals.eligible))}</td><td>{summaryStage(Number(generatedTotals.reviewed_videos), Number(generatedTotals.eligible))}</td><td>{summaryStage(Number(generatedTotals.published_videos), Number(generatedTotals.eligible))}</td><td>{generatedTotals.accepted} + {generatedTotals.deferred} deferred</td><td>{generatedTotals.rejected}</td><td>{generatedTotals.evidence}</td><td>{generatedTotals.concepts} unique</td><td>{generatedTotals.visual_proposed}</td><td>{generatedTotals.visual_verified}</td></tr>
     </tbody></table></div>
     <p class="table-note">Parenthesized percentages use the workflow denominator for that column: configured versus discovered, eligible versus configured, and downstream stages versus eligible. Concept counts overlap between sources. Proposed visual intervals remain non-looping until a reviewer watches and verifies them.</p>
   </section>
@@ -212,21 +218,21 @@ const budgetRows = budgetTaskNames.map((task) => {
   <section class="progress-section">
     <div class="section-kicker">Backlog</div><h2>Outstanding work</h2>
     <div class="table-scroll"><table class="progress-table"><thead><tr><th>Work item</th><th>Count</th><th>Recommended action</th></tr></thead><tbody>
-      <tr><th>Deferred extracted candidates</th><td>139</td><td>Review new taxonomy proposals and weak matches before another expansion pass.</td></tr>
-      <tr><th>Proposed visuals requiring viewing</th><td>35</td><td>Watch complete intervals and verify only genuine demonstrations.</td></tr>
-      <tr><th>Single-source concepts</th><td>2</td><td>Select independent supporting sources instead of duplicate moments.</td></tr>
-      <tr><th>Members-only configured videos</th><td>8</td><td>Leave unprocessed unless access and processing rights are explicit.</td></tr>
-      <tr><th>Published videos with review backlog</th><td>50</td><td>Continue resolving deferred candidates; only incorporated evidence is currently public.</td></tr>
-      <tr><th>Unselected TT SpinMaster discoveries</th><td>205</td><td>Curate by coverage gap; do not bulk-ingest automatically.</td></tr>
-      <tr><th>Unselected GlobalTTStudio discoveries</th><td>387</td><td>Curate by missing topic, source diversity, or useful visual demonstration.</td></tr>
+      <tr><th>Deferred extracted candidates</th><td>{generatedTotals.deferred}</td><td>Review new taxonomy proposals and weak matches before another expansion pass.</td></tr>
+      <tr><th>Proposed visuals requiring viewing</th><td>{generatedTotals.visual_proposed}</td><td>Watch complete intervals and verify only genuine demonstrations.</td></tr>
+      <tr><th>Single-source concepts</th><td>{generatedTotals.single_source_concepts}</td><td>Select independent supporting sources instead of duplicate moments.</td></tr>
+      <tr><th>Members-only configured videos</th><td>{globalProgress.members_only}</td><td>Leave unprocessed unless access and processing rights are explicit.</td></tr>
+      <tr><th>Published videos with review backlog</th><td>{generatedTotals.published_with_review_backlog}</td><td>Continue resolving deferred candidates; only incorporated evidence is currently public.</td></tr>
+      <tr><th>Unselected TT SpinMaster discoveries</th><td>{spinMasterProgress.unselected}</td><td>Curate by coverage gap; do not bulk-ingest automatically.</td></tr>
+      <tr><th>Unselected GlobalTTStudio discoveries</th><td>{globalProgress.unselected}</td><td>Curate by missing topic, source diversity, or useful visual demonstration.</td></tr>
     </tbody></table></div>
   </section>
 
   <section class="progress-section inventories" id="videos-by-source">
     <div class="section-kicker">Source inventory</div><h2>Videos by source</h2>
     <p class="table-note">Each source includes its complete trustworthy discovery catalog where available. State labels distinguish public knowledge-base evidence from videos that are merely listed by the channel.</p>
-    <details><summary><strong>TT SpinMaster</strong><span>{spinMasterVideos.length} published · {sixthBatchVideos.length} extracted/reviewing · 205 unselected</span></summary><div class="table-scroll"><table class="progress-table"><thead><tr><th>State</th><th>Video</th><th>Title</th></tr></thead><tbody>{sixthBatchVideos.map((video) => <tr><td><span class="catalog-state extracted">Extracted · review</span></td><td><a href={`https://www.youtube.com/watch?v=${video.id}`} target="_blank" rel="noreferrer"><code>{video.id}</code></a></td><td>{video.title}</td></tr>)}{spinMasterVideos.map((video) => <tr><td><span class="catalog-state published">Published</span></td><td><a href={`https://www.youtube.com/watch?v=${video.id}`} target="_blank" rel="noreferrer"><code>{video.id}</code></a></td><td>{video.title}</td></tr>)}</tbody></table></div><p class="inventory-note">P1-02 has incorporated all high-confidence matches from the latest batch; one earlier extracted row remains deferred for taxonomy review. The 205 remaining channel discoveries are unselected and have not entered the processing pipeline.</p></details>
-    <details id="globalttstudio-videos"><summary><strong>GlobalTTStudio</strong><span>{globalCatalogVideos.length} discovered · {globalEligibleCount} published · {globalInaccessibleCount} members-only</span></summary>
+    <details><summary><strong>TT SpinMaster</strong><span>{spinMasterProgress.published} published / {Number(spinMasterProgress.extracted) - Number(spinMasterProgress.published)} extracted/reviewing / {spinMasterProgress.unselected} unselected</span></summary><div class="table-scroll"><table class="progress-table"><thead><tr><th>State</th><th>Video</th><th>Title</th></tr></thead><tbody>{sixthBatchVideos.map((video) => <tr><td><span class="catalog-state extracted">Extracted / review</span></td><td><a href={`https://www.youtube.com/watch?v=${video.id}`} target="_blank" rel="noreferrer"><code>{video.id}</code></a></td><td>{video.title}</td></tr>)}{spinMasterVideos.map((video) => <tr><td><span class="catalog-state published">Published</span></td><td><a href={`https://www.youtube.com/watch?v=${video.id}`} target="_blank" rel="noreferrer"><code>{video.id}</code></a></td><td>{video.title}</td></tr>)}</tbody></table></div><p class="inventory-note">Counts are generated from local processor artifacts during publish. Unselected channel discoveries have not entered the processing pipeline.</p></details>
+    <details id="globalttstudio-videos"><summary><strong>GlobalTTStudio</strong><span>{globalProgress.discovered} discovered / {globalEligibleCount} published / {globalInaccessibleCount} members-only</span></summary>
       <p class="inventory-note">Metadata-only discovery on 15 July 2026. “Discovered” means listed by the channel; it does not mean selected, transcribed, extracted, or reviewed.</p>
       <div class="table-scroll"><table class="progress-table catalog-table"><thead><tr><th>State</th><th>Video</th><th>Title</th></tr></thead><tbody>{globalCatalogVideos.map((video) => <tr><td><span class:list={['catalog-state', globalCatalogState(video.id).toLowerCase()]}>{globalCatalogState(video.id)}</span></td><td><a href={video.url} target="_blank" rel="noreferrer"><code>{video.id}</code></a></td><td>{video.title}</td></tr>)}</tbody></table></div>
     </details>

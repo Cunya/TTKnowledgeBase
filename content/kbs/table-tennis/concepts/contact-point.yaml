@@ -4,6 +4,14 @@ label: Contact point
 aliases:
   - ball contact
 short_definition: The position and timing at which the racket meets the ball.
+evidence_summary: >-
+  Good shot quality depends on finding the correct contact point on the ball at the right phase of
+  its bounce cycle. Contact should be made on the intended part of the ball, not the side, and the
+  player must stay with the contact point by creating space for it instead of losing it through
+  poor movement. If the contact point is misread or the body moves away from it, the shot becomes
+  unstable and the ball is struck at the wrong moment or position.
+evidence_summary_source_hash: "sha256:739577c6cfdfcd954f7d281d6153b651cfff64373db55abe2e836578c0aac4d1"
+evidence_summary_generator: "codex"
 detailed_definition: For this forehand-loop example, contact is in front of the body near the top of the bounce; late contact reduces space and consistency.
 concept_type: technique-dimension
 facets:
@@ -1545,4 +1553,36 @@ evidence:
       segment_ids:
         - hwT7cH6PbZQ:00007
         - hwT7cH6PbZQ:00011
+  - id: D1cBF0nsjKo-concept-contact-point-reviewed
+    evidence_type: explanation
+    excerpt: The precise location and timing of racket-ball contact, including whether contact is behind the ball, to the side, or on the lower middle/bottom portion.
+    reason: He says contacting directly behind the ball causes errors and recommends contacting slightly left or right for control.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: D1cBF0nsjKo
+      start_ms: 484160
+      end_ms: 513960
+      url: https://www.youtube.com/watch?v=D1cBF0nsjKo&t=484s
+      segment_ids:
+        - D1cBF0nsjKo:00192
+        - D1cBF0nsjKo:00199
+        - D1cBF0nsjKo:00200
+  - id: Kg4hLYnEbAs-concept-contact-point-identification-reviewed
+    evidence_type: explanation
+    excerpt: Identifying the ball-contact point early enough to meet the curved serve or loop in the right place.
+    reason: The speaker directly tells the player to locate the contact point early and says the receiver failed to find the correct contact point.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Kg4hLYnEbAs
+      start_ms: 228280
+      end_ms: 245160
+      url: https://www.youtube.com/watch?v=Kg4hLYnEbAs&t=228s
+      segment_ids:
+        - Kg4hLYnEbAs:00072
+        - Kg4hLYnEbAs:00077
+        - Kg4hLYnEbAs:00078
 relations: []

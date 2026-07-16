@@ -1,8 +1,11 @@
 # Source video progress
 
-Last updated: 2026-07-16 01:14 EEST
+Last updated: 2026-07-16 16:22 EEST
 
-This document tracks how far videos from each configured source have progressed through discovery, transcript ingestion, Codex extraction, editorial review, and publication. Counts are derived from the current local processing data and sanitized published corpus.
+This document explains the source-progress metrics and preserves an editorial snapshot for reference. The live counts are
+not maintained here: run `python -m processors.cli publish --kb table-tennis` and read
+`app/src/data/generated/table-tennis-progress.json` (or the local `/progress/` page). The processor regenerates that
+snapshot from local artifacts; neither the LLM nor a page edit should update totals by hand.
 
 ## Progress-state definitions
 
@@ -21,9 +24,9 @@ This document tracks how far videos from each configured source have progressed 
 
 | Source | Trustworthy discovered total | Configured | Eligible | Ingested | Extracted | Fully reviewed | Published | Accepted candidates | Rejected | Evidence moments | Concepts supported | Proposed visuals | Verified visuals |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| TT SpinMaster / `@FreeCoachBradHan` | 304 | 99 | 99 | 99 | 99 | 57 | 98 | 853 accepted / 103 deferred | 0 | 1,455 | 72 | 19 | 0 |
+| TT SpinMaster / `@FreeCoachBradHan` | 304 | 101 | 101 | 101 | 101 | 57 | 100 | 865 accepted / 109 deferred | 0 | 1,467 | 72 | 19 | 0 |
 | GlobalTTStudio / `@GlobalTTStudio` | 418 | 31 | 23 | 23 | 23 | 13 | 23 | 207 accepted / 36 deferred | 1 | 359 | 58 | 16 | 0 |
-| **Total configured** | — | **130** | **122** | **122** | **122** | **70** | **121** | **1,060 accepted / 139 deferred** | **1** | **1,814** | **73 unique overall** | **35** | **0** |
+| **Total configured** | — | **132** | **124** | **124** | **124** | **70** | **123** | **1,072 accepted / 145 deferred** | **1** | **1,826** | **73 unique overall** | **35** | **0** |
 
 Concept counts overlap across sources: a concept supported by both channels is counted once in each source row, so the source rows must not be added to obtain the 73 unique concepts.
 
@@ -32,11 +35,11 @@ Concept counts overlap across sources: a concept supported by both channels is c
 ### TT SpinMaster / Free Coach Brad Han
 
 - Channel catalog captured: 304 videos.
-- Configured corpus: 99 videos, or about 32.6% of the captured catalog.
-- Ingestion completion: 99 of 99 eligible videos are ingested.
-- Downstream completion: 98 of 99 selected videos are published; 57 are fully reviewed, while 42 videos retain explicitly deferred candidates for later taxonomy/weak-match review. One extracted video currently has only deferred candidates and is not yet published.
-- Remaining discovered catalog: 205 videos have not been selected for this KB yet.
-- Editorial state: 853 candidates are accepted, 103 are explicitly deferred, and none are rejected for this source.
+- Configured corpus: 101 videos, or about 33.2% of the captured catalog.
+- Ingestion completion: 101 of 101 eligible videos are ingested.
+- Downstream completion: 100 of 101 selected videos are published; 57 are fully reviewed, while 44 videos retain explicitly deferred candidates for later taxonomy/weak-match review. One extracted video currently has only deferred candidates and is not yet published.
+- Remaining discovered catalog: 203 videos have not been selected for this KB yet.
+- Editorial state: 865 candidates are accepted, 109 are explicitly deferred, and none are rejected for this source.
 - Visual state: 19 proposed nearby visual windows exist, but none has been manually verified. They are non-looping on the public site.
 
 The 205-video remainder is a discovery backlog, not an automatic processing queue. Videos should be selected for missing concepts, second-source support, or visual demonstrations instead of processed only to increase volume.
@@ -58,9 +61,9 @@ The 205-video remainder is a discovery backlog, not an automatic processing queu
 
 The latest controlled batch added six public videos: `sosNHzR8A9U`, `2Wk2xe0I1s8`, `kv80YX__eJE`, `wd_E9NZBVtU`, `6vwxmC36InY`, and `h5jUJL_P82w`. Two catalogued videos, `saJV_mSKHaw` and `MS5-0DaZ_h8`, were confirmed members-only and marked inaccessible without retrying. The six public videos contributed 46 accepted candidates/evidence moments and 11 explicitly deferred candidates.
 
-### TT SpinMaster / Free Coach Brad Han — 99 extracted, 98 published, 42 with deferred candidates
+### TT SpinMaster / Free Coach Brad Han — 101 extracted, 100 published, 44 with deferred candidates
 
-All 99 videos below are ingested and extracted. Ninety-eight have published evidence; 57 have no deferred candidates and are fully reviewed, 42 retain explicitly deferred candidates, and one has no accepted evidence yet.
+All 101 videos below are ingested and extracted. One hundred have published evidence; 57 have no deferred candidates and are fully reviewed, 44 retain explicitly deferred candidates, and one has no accepted evidence yet.
 
 | Video ID | Primary topic indicated by title |
 |---|---|
@@ -145,6 +148,8 @@ All 99 videos below are ingested and extracted. Ninety-eight have published evid
 | `Ad8Ox7xSvSU` | **Published:** forehand elbow stability |
 | `wpIxIvnuOac` | **Published:** efficient spin generation |
 | `HCkIFKn0-Ds` | **Published / review pending:** hook-serve wrist direction |
+| `D1cBF0nsjKo` | **Published / review pending:** heavy backspin push |
+| `Kg4hLYnEbAs` | **Published / review pending:** backhand-loop training and error correction |
 
 ### GlobalTTStudio — 23 published, 8 inaccessible
 

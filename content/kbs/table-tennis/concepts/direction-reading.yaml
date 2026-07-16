@@ -5,6 +5,14 @@ aliases:
   - delayed commitment
   - read before moving
 short_definition: Delay commitment long enough to read the opponent's direction, then move decisively into the selected position.
+evidence_summary: >-
+  Direction reading must happen before the stroke is committed, because early movement without
+  clear information leads to rushed errors. The player should watch the opponent and the ball
+  first, then move and swing only after the direction and spin are understood. When spin is
+  uncertain, the safest response is to stay forward in intent and adjust the movement based on
+  what has been read.
+evidence_summary_source_hash: "sha256:ef9bc8dfd4133b2ce4119e54404ab9c553f480ba9fb91d7e1ad1b4e631d47622"
+evidence_summary_generator: "codex"
 concept_type: perception
 facets:
   category:
@@ -387,6 +395,25 @@ evidence:
         - R9InWNDCJQM:00006
         - R9InWNDCJQM:00008
         - R9InWNDCJQM:00009
+  - id: Kg4hLYnEbAs-concept-direction-reading-reviewed
+    evidence_type: explanation
+    excerpt: Waiting to confirm the ball's path and spin before moving, so the stroke is not rushed or misaligned.
+    reason: The speaker warns that if the body moves before the ball is properly read, the shot becomes rushed, and says to move only after reading the ball clearly.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Kg4hLYnEbAs
+      start_ms: 265640
+      end_ms: 283240
+      url: https://www.youtube.com/watch?v=Kg4hLYnEbAs&t=265s
+      segment_ids:
+        - Kg4hLYnEbAs:00084
+        - Kg4hLYnEbAs:00085
+        - Kg4hLYnEbAs:00086
+        - Kg4hLYnEbAs:00087
+        - Kg4hLYnEbAs:00088
+        - Kg4hLYnEbAs:00089
 relations:
   - relation_type: used_with
     target_concept_id: concept-ready-position

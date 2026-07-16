@@ -1,7 +1,7 @@
 # Study: better start and end boundaries for evidence moments
 
 **Date:** 2026-07-16  
-**Status:** Analysis complete; implementation not started  
+**Status:** Phase 1 caption-only baseline implemented; review controls and reduction work remain
 **Scope:** Transcript-backed moments, optional authorized local audio analysis, and separately reviewed visual demonstrations
 
 ## Executive summary
@@ -308,6 +308,12 @@ This study supports a focused implementation item:
 - Keep authorized local ASR optional and preserve claim citation separately from playback context.
 
 Done means the project can measure and reduce mid-sentence and non-meaningful short moments without losing segment-level provenance or violating the 30-second and public/private safeguards.
+
+### Phase 1 implementation evidence (2026-07-16)
+
+The script-only baseline is available as `processors.boundaries` and the CLI command `report-boundaries`. It derives bounded caption units, reports proposed snapped bounds, and does not modify reviewed evidence. `process-pending` now defers new candidates with `starts_mid_sentence`, `ends_mid_sentence`, `too_short`, or `needs_context` flags so an editorial decision is required before promotion.
+
+The first table-tennis baseline is recorded in `docs/moment-boundary-report-table-tennis-2026-07-16.md`: 1,826 of 1,826 non-demo evidence records were evaluable; 16.4% started mid-sentence, 17.5% ended mid-sentence, 3.5% were shorter than four seconds, and 31.9% required context review. These rates are measurement, not a completion claim. The deterministic worksheet exporter now creates a stratified 24-item gold-set sample from the 582 flagged moments at `data/manifests/table-tennis/boundary-review.json`; all 24 remain pending reviewer decisions. A second report must wait until those actions are recorded, so no reduction is claimed yet.
 
 ## Open decisions
 

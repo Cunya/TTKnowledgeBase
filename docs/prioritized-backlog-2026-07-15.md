@@ -8,7 +8,7 @@ Last refreshed: 2026-07-16 11:07 EEST.
 
 ## Current baseline
 
-- 73 concepts, 121 published videos, and 1,814 published evidence items.
+- 73 concepts, 123 published videos, and 1,826 reviewed evidence items.
 - Review queue: 1,200 resolved items — 1,060 accepted, 139 deferred, and 1 rejected; no candidates remain pending.
 - Visual coverage: 0 `verified_visual_demo`, 996 `transcript_inferred`, 788 `not_visual`.
 - Repetition screen: 1,258 distinct excerpt strings; 426 exact repeated-excerpt groups cover 982 moments.
@@ -156,13 +156,13 @@ The numerical baseline above reflects the latest published artifacts, not the ol
 
 ### P1-02 — Process pending candidates before another large scrape
 
-**Status:** Controlled expansion and cached queue triage are complete through batch 15 (2026-07-16). The `process-pending` command accepted 146 initial high-confidence matches and added 145 focused evidence moments; subsequent controlled batches accepted additional matches, including 23 candidates and 30 evidence moments from the latest two-public-video continuation. Four members-only entries were skipped. The current queue has 1,060 accepted, 139 deferred, and 1 rejected item, with no pending candidates. The formerly one-concept videos were checked: the new batch removed `push-spin-power-progression` from the single-source list.
+**Status:** Controlled expansion and cached queue triage are complete through batch 16 (2026-07-16). The `process-pending` command accepted 146 initial high-confidence matches and added 145 focused evidence moments; subsequent controlled batches accepted additional matches, including 23 candidates and 30 evidence moments from the previous two-public-video continuation. The latest two-video continuation accepted 12 candidates and added 12 evidence moments while deferring 6 weaker candidates. Four members-only entries were skipped. The current queue has 1,072 accepted, 145 deferred, and 1 rejected item, with no pending candidates. The formerly one-concept videos were checked: the new batch removed `push-spin-power-progression` from the single-source list.
 
 **Why:** the queue had 174 pending items. Nine published videos had only one concept in their TOC; eight of those had additional local candidates that could be checked against existing concepts.
 
 **Work:** review the pending candidates for the one-concept videos first, then clear the remaining queue in source batches. For `9OxcCPWI-k8`, five additional candidates are pending beyond `Backhand serve`.
 
-**Done when:** every pending item is accepted, rejected, or explicitly deferred with a reason, and one-concept videos have been checked against their candidate set. **Evidence:** published corpus validates at 73 concepts, 121 videos, and 1,814 evidence moments; all 1,200 queue items have explicit decisions.
+**Done when:** every pending item is accepted, rejected, or explicitly deferred with a reason, and one-concept videos have been checked against their candidate set. **Evidence:** published corpus validates at 73 concepts, 123 videos, and 1,826 evidence moments; all 1,218 queue items have explicit decisions.
 
 ### P1-03 — Localize moments and collapse repetition
 
@@ -179,9 +179,11 @@ The numerical baseline above reflects the latest published artifacts, not the ol
 
 ### P1-04 — Generate progress and quality data instead of hand-maintaining it
 
-**Why:** progress and quality pages/docs still contain hand-maintained historical counts, even though the current processor artifacts now report no pending candidates, 1,814 evidence items, and 121 published videos.
+**Why:** progress and quality pages previously contained hand-maintained historical counts that could drift from processor artifacts.
 
-**Work:** emit a versioned `progress.json` and quality report from processor artifacts; render Astro and Markdown views from that data; include generation timestamp and explicit metric names. The current local page now derives the GlobalTTStudio configured/eligible split from the corpus plus the explicit members-only set, labels the configured stage separately from eligibility, and shows denominator-aware percentages beside workflow-stage counts.
+**Work:** emit a versioned `progress.json` from processor artifacts during `publish`; render the local Astro progress page from that data; include generation timestamp and explicit metric names. Source discovery, configuration, extraction, review, publication, evidence, visual, backlog, and members-only counts are now generated without LLM calls. Quality-report generation remains a follow-up for this item.
+
+**Status:** Phase 1 complete (2026-07-16). `processors.progress` writes `app/src/data/generated/<kb>-progress.json` on every publish, and the local progress page consumes it. Remaining follow-up: generate the quality report from the same artifact and add a CI drift check.
 
 **Done when:** README, progress, pipeline, source-progress, and quality reports cannot silently drift from the corpus manifest.
 
@@ -253,17 +255,19 @@ The numerical baseline above reflects the latest published artifacts, not the ol
 
 **Why:** evidence excerpts can begin with extraction scaffolding such as “The transcript explicitly defines ...”, which makes a visible moment title describe the pipeline instead of the table-tennis idea.
 
-**Work:** normalize transcript and speaker reporting leads at the shared display layer. Preserve the canonical excerpt, reason, source URL, and timestamp unchanged for provenance and review.
+**Work:** normalize transcript and speaker reporting leads at the shared display layer, and collapse sentence-like definition/specification scaffolding into concise technique titles. Preserve the canonical excerpt, reason, source URL, and timestamp unchanged for provenance and review.
 
-**Done when:** visible TOC and evidence titles read as standalone editorial statements, including definition phrasing such as “Acceleration: a slow-soft backswing followed by a fast release,” with no transcript-reporting lead.
+**Done when:** visible TOC and evidence titles read as standalone editorial statements, including definition phrasing such as “Acceleration: a slow-soft backswing followed by a fast release,” concise titles such as “Short takeback-to-contact distance” and “Peak-of-bounce timing,” and no transcript-reporting lead.
 
 **Status:** Complete. Implemented in `app/src/lib/videoToc.ts`; Astro diagnostics and the 201-page static build passed on 2026-07-16.
 
 ### P1-14 - Align moment windows to sentence and meaningful-duration boundaries
 
+**Status:** Phase 1 caption-only baseline and Phase 2 review-worksheet tooling implemented (2026-07-16); reviewer decisions and measured reduction remain open. The `report-boundaries` command measured 1,826/1,826 local-caption-backed moments: 16.4% start mid-sentence, 17.5% end mid-sentence, 3.5% are under four seconds, and 31.9% require context review. `process-pending` defers newly flagged candidates with the boundary flags instead of silently accepting them. `prepare-boundary-review` exported a deterministic 24-item sample from the 582 flagged moments, and `validate-boundary-review` checks edited decisions without applying them. Baseline: `docs/moment-boundary-report-table-tennis-2026-07-16.md`.
+
 **Why:** the current span resolver uses the first and last cited caption segments. Caption cues can begin or end mid-sentence, and a technically valid three-second fragment may not contain enough instructional meaning to stand alone.
 
-**Work:** implement caption-only sentence-like unit merging and boundary snapping first; add `starts_mid_sentence`, `ends_mid_sentence`, `too_short`, and `needs_context` flags; keep claim-support citations separate from optional playback context; add review actions and a gold-set evaluation before enabling authorized local word/prosody alignment or semantic change-point proposals.
+**Work:** implement caption-only sentence-like unit merging and boundary snapping first; add `starts_mid_sentence`, `ends_mid_sentence`, `too_short`, and `needs_context` flags; keep claim-support citations separate from optional playback context; add review actions and a gold-set evaluation before enabling authorized local word/prosody alignment or semantic change-point proposals. The remaining operator step is to inspect the exported worksheet, record merge/context/split/defer decisions, apply only reviewed canonical changes, and publish a second report showing reduction.
 
 **Done when:** mid-sentence and non-meaningful short-window rates are measured and reduced, every expanded/split window preserves segment-level provenance and the 30-second limit, and low-confidence cases are deferred rather than silently published. See `docs/moment-boundary-analysis-study-2026-07-16.md`.
 
@@ -361,4 +365,8 @@ Track relation counts, concepts with no outgoing relations, cross-listed concept
 - Low-cost `gpt-5.4-mini` default profile.
 - Public/private data boundary and publish-copy parity checks.
 - Local-only progress, pipeline, and recent-additions pages.
+- Local-only dashboard management index with full-width, non-overlapping workspace rows.
+- Per-video contents pages now include reviewed concept summaries before the chronological moment list.
+- Concept articles expose the reviewed definition in an explicitly labeled Summary section before their evidence library.
+- All 73 published concepts now have a coherent direct `evidence_summary` paragraph. The 72 generated essays were rewritten in batched Codex calls from approved evidence reasons, pass paragraph/attribution checks, and carry source hashes plus generator metadata; hand-authored summaries remain protected.
 - Deterministic cleanup of transcript-reporting leads from visible moment titles.
