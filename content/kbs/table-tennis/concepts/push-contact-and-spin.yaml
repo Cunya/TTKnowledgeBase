@@ -509,6 +509,45 @@ evidence:
       url: https://www.youtube.com/watch?v=D1cBF0nsjKo&t=636s
       segment_ids:
         - D1cBF0nsjKo:00239
+  - id: Nmf0ZWP6dn0-cand-push-contact-and-spin-reviewed
+    evidence_type: explanation
+    excerpt: A push should brush with the incoming spin instead of hitting flat, so the ball carries enough spin and arc to avoid going into the net.
+    reason: They recommend brushing slightly on the right side of the ball for left side spin and note that this keeps the push from going into the net.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: Nmf0ZWP6dn0
+      start_ms: 33760
+      end_ms: 49040
+      url: https://www.youtube.com/watch?v=Nmf0ZWP6dn0&t=33s
+      segment_ids:
+        - Nmf0ZWP6dn0:00012
+        - Nmf0ZWP6dn0:00013
+        - Nmf0ZWP6dn0:00014
+        - Nmf0ZWP6dn0:00015
+        - Nmf0ZWP6dn0:00016
+        - Nmf0ZWP6dn0:00017
+  - id: wSzmpXHp64Q-concept-push-contact-and-spin-reviewed
+    evidence_type: explanation
+    excerpt: Generating the right amount of friction and trajectory in a push by using the opponent's spin rather than trying to neutralize spin completely.
+    reason: The speaker explains that a pushed ball may have little new spin, and that spinny balls require friction-based lifting while no-spin balls need a closing action.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: wSzmpXHp64Q
+      start_ms: 427033
+      end_ms: 443766
+      url: https://www.youtube.com/watch?v=wSzmpXHp64Q&t=427s
+      segment_ids:
+        - wSzmpXHp64Q:00128
+        - wSzmpXHp64Q:00129
+        - wSzmpXHp64Q:00130
+        - wSzmpXHp64Q:00131
+        - wSzmpXHp64Q:00132
+        - wSzmpXHp64Q:00133
+        - wSzmpXHp64Q:00134
 relations:
   - relation_type: part_of
     target_concept_id: concept-push-technique

@@ -31,7 +31,13 @@ const formatDuration = (milliseconds: number) => {
     <nav class="breadcrumbs"><a href={`${root}/`}>{corpus.knowledge_base.name}</a><span>/</span><a href={`${root}/videos/`}>Videos</a><span>/</span><span>{video.title}</span></nav>
     <section class="video-detail-hero">
       <div class="video-detail-player">
-        {video.availability === 'demo_fixture' ? <div class="video-thumb"><span>Demo fixture</span></div> : <iframe src={`https://www.youtube-nocookie.com/embed/${video.id}?rel=0&playsinline=1`} title={video.title} loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>}
+        {video.availability === 'demo_fixture' ? <div class="video-thumb"><span>Demo fixture</span></div> : <>
+          {video.thumbnail_url && <a class="video-player-poster" href={video.canonical_url} target="_blank" rel="noreferrer">
+            <img src={video.thumbnail_url} alt={`Thumbnail for ${video.title}`} />
+            <span>Watch on YouTube <span aria-hidden="true">↗</span></span>
+          </a>}
+          <iframe src={`https://www.youtube-nocookie.com/embed/${video.id}?rel=0&playsinline=1`} title={video.title} loading="eager" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </>}
       </div>
       <div class="video-detail-summary">
         <div class="eyebrow">{video.channel_name}</div>
@@ -49,3 +55,9 @@ const formatDuration = (milliseconds: number) => {
     </section>
   </article>
 </BaseLayout>
+
+<script>
+  document.querySelectorAll('.video-detail-player iframe').forEach((frame) => {
+    frame.addEventListener('load', () => frame.closest('.video-detail-player')?.classList.add('video-player-loaded'), { once: true });
+  });
+</script>

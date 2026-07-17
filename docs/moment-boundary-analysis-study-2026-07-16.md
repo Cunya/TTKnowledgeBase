@@ -1,7 +1,7 @@
 # Study: better start and end boundaries for evidence moments
 
 **Date:** 2026-07-16  
-**Status:** Phase 1 caption-only baseline implemented; review controls and reduction work remain
+**Status:** Phase 1 caption-only baseline and the first Phase 2 review pass are implemented; 9 safe context merges and 4 short-window keeps were recorded, while 11 ambiguous cases remain deferred for source/audio inspection.
 **Scope:** Transcript-backed moments, optional authorized local audio analysis, and separately reviewed visual demonstrations
 
 ## Executive summary
@@ -165,6 +165,10 @@ Add deterministic validation before publication:
 5. Show a confidence/flags column in the review queue and make low-confidence windows the first review target.
 
 The reviewer should be able to compare the baseline and proposed window on a waveform/transcript strip, play a short loop, and choose `accept`, `expand`, `split`, `merge`, or `defer` with a reason. The selected boundary and reason become training/evaluation data for later automation.
+
+### First worksheet pass (2026-07-16)
+
+The 24-item deterministic sample was reviewed using caption text and neighboring caption units only. Nine items were marked `merge` and received optional spoken playback context in canonical YAML; four complete, meaningful short captions were marked `keep` without widening; eleven cases were marked `defer` because the available metadata was not enough to choose a safe boundary. The merge decisions preserve the original cited segment IDs, and the context fields are playback aids rather than expanded claim provenance. A second report should be generated only after deferred cases are inspected with authorized source/audio context.
 
 ## Evaluation study
 

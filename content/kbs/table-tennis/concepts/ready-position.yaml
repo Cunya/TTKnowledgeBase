@@ -191,6 +191,7 @@ evidence:
       segment_ids:
         - -1uBDv1Aq7A:00062
         - -1uBDv1Aq7A:00065
+    spoken_context_start_ms: 208480
   - id: XlGnK1z_7C0-concept-ready-position-reviewed
     evidence_type: definition
     excerpt: A low, compact stance used immediately after serving so the player can react and attack without delay.
@@ -437,6 +438,81 @@ evidence:
       segment_ids:
         - 7jWqEsHtN3Y:00005
         - 7jWqEsHtN3Y:00006
+  - id: QFncUSkAVKU-cand-ready-position-reviewed
+    evidence_type: explanation
+    excerpt: The neutral recovery posture you return to after a stroke so the stroke is complete and the next ball can be played smoothly.
+    reason: Defines recovery as returning to the ready position after every shot and says the stroke truly ends there.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: QFncUSkAVKU
+      start_ms: 402800
+      end_ms: 429640
+      url: https://www.youtube.com/watch?v=QFncUSkAVKU&t=402s
+      segment_ids:
+        - QFncUSkAVKU:00160
+        - QFncUSkAVKU:00161
+        - QFncUSkAVKU:00162
+        - QFncUSkAVKU:00163
+        - QFncUSkAVKU:00164
+        - QFncUSkAVKU:00165
+  - id: e0_OSr2lvU4-concept-ready-position-reviewed
+    evidence_type: explanation
+    excerpt: A low, stable receiving stance that keeps you close to the table and ready to meet the ball early.
+    reason: The speaker explicitly instructs players to squat down, stay low and close to the table, and lower the center of gravity when dealing with the ball.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: e0_OSr2lvU4
+      start_ms: 431933
+      end_ms: 457200
+      url: https://www.youtube.com/watch?v=e0_OSr2lvU4&t=431s
+      segment_ids:
+        - e0_OSr2lvU4:00132
+        - e0_OSr2lvU4:00134
+        - e0_OSr2lvU4:00136
+  - id: jG1G3H7Fo_k-concept-ready-position-reviewed
+    evidence_type: definition
+    excerpt: A balanced, forward-leaning receiving posture with knees and hips forward, compact arms, and eye level matched to the opponent's contact height.
+    reason: The speaker defines the receiving posture with forward knees, lifted hips, forward lean, eye-level matching, and compact arms.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: jG1G3H7Fo_k
+      start_ms: 52000
+      end_ms: 81000
+      url: https://www.youtube.com/watch?v=jG1G3H7Fo_k&t=52s
+      segment_ids:
+        - jG1G3H7Fo_k:00008
+        - jG1G3H7Fo_k:00009
+        - jG1G3H7Fo_k:00010
+        - jG1G3H7Fo_k:00011
+        - jG1G3H7Fo_k:00012
+        - jG1G3H7Fo_k:00013
+        - jG1G3H7Fo_k:00014
+        - jG1G3H7Fo_k:00015
+        - jG1G3H7Fo_k:00016
+        - jG1G3H7Fo_k:00017
+  - id: ZJzWTwe-Nng-concept-ready-position-reviewed
+    evidence_type: definition
+    excerpt: A balanced finishing and transition posture that lets the player recover into a forehand drive-ready shape after looping backspin.
+    reason: The speaker says to rise into a forehand drive ready position and then follow up with topspin.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ZJzWTwe-Nng
+      start_ms: 28266
+      end_ms: 43033
+      url: https://www.youtube.com/watch?v=ZJzWTwe-Nng&t=28s
+      segment_ids:
+        - ZJzWTwe-Nng:00013
+        - ZJzWTwe-Nng:00016
+        - ZJzWTwe-Nng:00017
+        - ZJzWTwe-Nng:00018
 relations:
   - relation_type: prerequisite_of
     target_concept_id: concept-forehand-loop

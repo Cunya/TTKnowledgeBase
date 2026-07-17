@@ -6,7 +6,9 @@ const { evidence, videos } = Astro.props;
 const videoMap = Object.fromEntries(videos.map((video) => [video.id, video]));
 const isVerifiedVisual = (item: Evidence) => item.visual_status === 'verified_visual_demo' && item.visual_source?.selection_method === 'manual_review';
 const initial = evidence.find(isVerifiedVisual) ?? evidence.find((item) => item.visual_source) ?? evidence[0];
-const initialClip = initial?.visual_source ?? initial?.source;
+const spokenTailMs = 1200;
+const initialVideo = initial ? videoMap[initial.source.video_id] : undefined;
+const initialClip = initial?.visual_source ?? (initial ? { ...initial.source, start_ms: initial.spoken_context_start_ms ?? initial.source.start_ms, end_ms: initial.spoken_context_end_ms ?? Math.min(initial.source.end_ms + spokenTailMs, initialVideo?.duration_ms ?? initial.source.end_ms + spokenTailMs) } : null);
 const initialIndex = Math.max(0, evidence.indexOf(initial));
 const initialLoopable = Boolean(initial && isVerifiedVisual(initial));
 const groupRepeatedEvidence = (items: Array<{ item: Evidence; index: number }>) => {

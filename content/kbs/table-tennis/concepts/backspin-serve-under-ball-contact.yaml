@@ -348,6 +348,72 @@ evidence:
         - hwT7cH6PbZQ:00102
         - hwT7cH6PbZQ:00103
         - hwT7cH6PbZQ:00104
+  - id: QgG46RFoIcA-concept-backspin-serve-under-ball-contact-reviewed
+    evidence_type: definition
+    excerpt: To maximize backspin on a serve, contact the bottom of the ball with a slightly flatter brushing action rather than striking the side or hitting straight down.
+    reason: Speaker explicitly says the serve has more backspin and that the key is brushing the bottom of the ball with a slight angle.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: QgG46RFoIcA
+      start_ms: 49920
+      end_ms: 60080
+      url: https://www.youtube.com/watch?v=QgG46RFoIcA&t=49s
+      segment_ids:
+        - QgG46RFoIcA:00019
+        - QgG46RFoIcA:00020
+        - QgG46RFoIcA:00021
+        - QgG46RFoIcA:00022
+  - id: VCsrR_8ULG4-concept-backspin-serve-under-ball-contact-reviewed
+    evidence_type: explanation
+    excerpt: Contacting lower on the ball and cutting downward or upward from a low setup to create backspin or underspin variants.
+    reason: The speaker says the shoulder and elbow must stay low, the contact point should be extremely low, and the ball should be contacted lower to brush upward or cut downward for spin.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: VCsrR_8ULG4
+      start_ms: 198200
+      end_ms: 217933
+      url: https://www.youtube.com/watch?v=VCsrR_8ULG4&t=198s
+      segment_ids:
+        - VCsrR_8ULG4:00057
+        - VCsrR_8ULG4:00058
+        - VCsrR_8ULG4:00059
+        - VCsrR_8ULG4:00063
+  - id: VOX-e4IR2xg-concept-backspin-serve-under-ball-contact-reviewed
+    evidence_type: definition
+    excerpt: Producing backspin by striking the ball from above or with a downward motion so the racket contacts the ball underneath the center line.
+    reason: The speaker says the racket contacts the ball while moving downward and identifies the result as backspin.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: VOX-e4IR2xg
+      start_ms: 195239
+      end_ms: 206880
+      url: https://www.youtube.com/watch?v=VOX-e4IR2xg&t=195s
+      segment_ids:
+        - VOX-e4IR2xg:00064
+        - VOX-e4IR2xg:00065
+        - VOX-e4IR2xg:00066
+        - VOX-e4IR2xg:00067
+  - id: xBlnTfR0eOY-concept-backspin-serve-under-ball-contact-reviewed
+    evidence_type: explanation
+    excerpt: To produce a real curve in a hook serve, the contact must start from underneath the ball rather than brushing the back of the ball.
+    reason: He repeatedly instructs to brush from the bottom, notes that upward brushing yields sidespin-top, and downward brushing yields sidespin-backspin.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: xBlnTfR0eOY
+      start_ms: 492300
+      end_ms: 512600
+      url: https://www.youtube.com/watch?v=xBlnTfR0eOY&t=492s
+      segment_ids:
+        - xBlnTfR0eOY:00152
+        - xBlnTfR0eOY:00157
 relations:
   - relation_type: used_with
     target_concept_id: concept-loose-grip-backhand-friction

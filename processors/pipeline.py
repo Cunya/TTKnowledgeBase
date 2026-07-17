@@ -3,6 +3,7 @@ from __future__ import annotations
 import re
 from collections import Counter
 from collections.abc import Callable
+from datetime import UTC, datetime
 from pathlib import Path
 
 import networkx as nx
@@ -31,7 +32,15 @@ roundtrip_yaml.width = 4096
 
 
 def load_videos(directory: Path) -> list[Video]:
-    return [Video.model_validate(read_json(path)) for path in sorted(directory.glob("*.json"))]
+    videos = []
+    for path in sorted(directory.glob("*.json")):
+        video = Video.model_validate(read_json(path))
+        if video.ingested_at is None:
+            video = video.model_copy(
+                update={"ingested_at": datetime.fromtimestamp(path.stat().st_mtime, UTC)}
+            )
+        videos.append(video)
+    return videos
 
 
 def load_reviewed_concepts(directory: Path) -> list[Concept]:
@@ -584,6 +593,13 @@ def validate_corpus(
                 continue
             if video.duration_ms and source.end_ms > video.duration_ms:
                 errors.append(f"{concept.id}/{evidence.id}: source ends after video duration")
+            if (
+                evidence.spoken_context_start_ms is not None
+                and evidence.spoken_context_start_ms > source.start_ms
+            ):
+                errors.append(
+                    f"{concept.id}/{evidence.id}: spoken context starts after source"
+                )
             if (
                 evidence.spoken_context_end_ms
                 and video.duration_ms

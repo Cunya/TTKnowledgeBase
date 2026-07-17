@@ -23,6 +23,7 @@ export type Evidence = {
   confidence: number;
   visual_status: string;
   source: SourceSpan;
+  spoken_context_start_ms?: number;
   spoken_context_end_ms?: number;
   visual_source?: VisualSpan;
 };
@@ -56,6 +57,8 @@ export type Video = {
   canonical_url: string;
   channel_name: string;
   duration_ms: number;
+  published_at?: string;
+  ingested_at?: string;
   thumbnail_url?: string;
   availability: string;
 };

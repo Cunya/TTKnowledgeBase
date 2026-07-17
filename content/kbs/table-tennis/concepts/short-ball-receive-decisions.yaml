@@ -480,6 +480,84 @@ evidence:
         - h5jUJL_P82w:00027
         - h5jUJL_P82w:00028
         - h5jUJL_P82w:00029
+  - id: Nmf0ZWP6dn0-cand-short-ball-receive-decisions-reviewed
+    evidence_type: example
+    excerpt: On short balls, stay compact and push; if the ball turns out half-long, switch to a loop instead of preparing to loop too early.
+    reason: If the ball is half-long, they loop; if they mistakenly prepare to loop first on a short ball, they cannot reach it.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: Nmf0ZWP6dn0
+      start_ms: 612920
+      end_ms: 635000
+      url: https://www.youtube.com/watch?v=Nmf0ZWP6dn0&t=612s
+      segment_ids:
+        - Nmf0ZWP6dn0:00218
+        - Nmf0ZWP6dn0:00219
+        - Nmf0ZWP6dn0:00220
+        - Nmf0ZWP6dn0:00221
+        - Nmf0ZWP6dn0:00222
+        - Nmf0ZWP6dn0:00223
+        - Nmf0ZWP6dn0:00224
+        - Nmf0ZWP6dn0:00225
+  - id: gxWSApJI9E8-concept-short-ball-receive-decisions-reviewed
+    evidence_type: explanation
+    excerpt: Choosing whether to drop short, push, or attack based on whether the incoming ball is truly short or half-long, with half-long balls being harder to keep short.
+    reason: The speaker contrasts truly short balls with half-long balls and states that half-long balls are harder to drop short, while short balls are easiest to drop short.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: gxWSApJI9E8
+      start_ms: 480
+      end_ms: 30480
+      url: https://www.youtube.com/watch?v=gxWSApJI9E8&t=0s
+      segment_ids:
+        - gxWSApJI9E8:00000
+        - gxWSApJI9E8:00003
+        - gxWSApJI9E8:00004
+        - gxWSApJI9E8:00005
+        - gxWSApJI9E8:00006
+        - gxWSApJI9E8:00010
+        - gxWSApJI9E8:00011
+  - id: lii73aKvvkw-concept-short-forehand-serve-batch-reviewed
+    evidence_type: example
+    excerpt: Short serves to the forehand that stay low, short, and floating to make the receive awkward and reduce clean contact.
+    reason: The speaker explains how to make the short forehand serve float aggressively and drift outward after the bounce.
+    confidence: 0.86
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: lii73aKvvkw
+      start_ms: 574720
+      end_ms: 595519
+      url: https://www.youtube.com/watch?v=lii73aKvvkw&t=574s
+      segment_ids:
+        - lii73aKvvkw:00204
+        - lii73aKvvkw:00205
+        - lii73aKvvkw:00206
+        - lii73aKvvkw:00207
+        - lii73aKvvkw:00208
+        - lii73aKvvkw:00209
+        - lii73aKvvkw:00210
+  - id: wSzmpXHp64Q-concept-short-ball-receive-decisions-reviewed
+    evidence_type: explanation
+    excerpt: Choosing among push, chop long, drop short, flick, loop, or attack when receiving short or half-long serves.
+    reason: The speaker explicitly groups the receive options for short and half-long balls.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: wSzmpXHp64Q
+      start_ms: 42100
+      end_ms: 65033
+      url: https://www.youtube.com/watch?v=wSzmpXHp64Q&t=42s
+      segment_ids:
+        - wSzmpXHp64Q:00010
+        - wSzmpXHp64Q:00011
+        - wSzmpXHp64Q:00014
+        - wSzmpXHp64Q:00015
 relations:
   - relation_type: part_of
     target_concept_id: concept-short-vs-long-serve-receive

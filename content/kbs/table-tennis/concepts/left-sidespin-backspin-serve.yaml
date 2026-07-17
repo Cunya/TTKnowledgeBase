@@ -250,6 +250,66 @@ evidence:
         - RjgITcuxl5I:00074
         - RjgITcuxl5I:00077
         - RjgITcuxl5I:00079
+  - id: sUDQYcsXNDo-concept-left-sidespin-backspin-serve-reviewed
+    evidence_type: demonstration
+    excerpt: A deceptive left-sidespin serve that is presented as backspin but uses brushing and body motion to disguise the true spin.
+    reason: The serve is executed with forward-then-downward motion and is described as looking like heavy backspin before the opponent pushes it up.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: sUDQYcsXNDo
+      start_ms: 25600
+      end_ms: 55000
+      url: https://www.youtube.com/watch?v=sUDQYcsXNDo&t=25s
+      segment_ids:
+        - sUDQYcsXNDo:00010
+        - sUDQYcsXNDo:00011
+        - sUDQYcsXNDo:00012
+        - sUDQYcsXNDo:00013
+        - sUDQYcsXNDo:00014
+        - sUDQYcsXNDo:00015
+        - sUDQYcsXNDo:00016
+        - sUDQYcsXNDo:00017
+        - sUDQYcsXNDo:00018
+        - sUDQYcsXNDo:00019
+  - id: VCsrR_8ULG4-concept-left-sidespin-backspin-serve-reviewed
+    evidence_type: definition
+    excerpt: A serve variant combining sidespin with backspin/underspin, typically using a downward cut after forward drive.
+    reason: The transcript explicitly names sidespin-under/backspin and explains the downward cutting motion used for this serve type.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: VCsrR_8ULG4
+      start_ms: 567666
+      end_ms: 576633
+      url: https://www.youtube.com/watch?v=VCsrR_8ULG4&t=567s
+      segment_ids:
+        - VCsrR_8ULG4:00188
+        - VCsrR_8ULG4:00190
+  - id: VOX-e4IR2xg-concept-left-sidespin-backspin-serve-reviewed
+    evidence_type: definition
+    excerpt: A left-sidespin serve that also carries backspin, as identified by the swing direction and post-contact motion.
+    reason: The speaker explicitly introduces left side spin and explains how the visible motion corresponds to half spin with backspin emphasis.
+    confidence: 0.92
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: VOX-e4IR2xg
+      start_ms: 225959
+      end_ms: 250600
+      url: https://www.youtube.com/watch?v=VOX-e4IR2xg&t=225s
+      segment_ids:
+        - VOX-e4IR2xg:00074
+        - VOX-e4IR2xg:00075
+        - VOX-e4IR2xg:00076
+        - VOX-e4IR2xg:00077
+        - VOX-e4IR2xg:00078
+        - VOX-e4IR2xg:00079
+        - VOX-e4IR2xg:00080
+        - VOX-e4IR2xg:00081
+        - VOX-e4IR2xg:00082
 relations:
   - relation_type: variation_of
     target_concept_id: concept-sidespin-topspin-serve

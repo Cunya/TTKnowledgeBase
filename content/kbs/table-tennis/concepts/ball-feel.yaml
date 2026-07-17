@@ -193,6 +193,55 @@ evidence:
         - h5jUJL_P82w:00073
         - h5jUJL_P82w:00074
         - h5jUJL_P82w:00075
+  - id: PwbikZNn8Y0-concept-ball-feel-reviewed
+    evidence_type: explanation
+    excerpt: The ability to sense and judge the ball and its spin well enough to respond correctly.
+    reason: The transcript ties inaccurate judgment to insufficient ball reading and inability to identify spin.
+    confidence: 0.91
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: PwbikZNn8Y0
+      start_ms: 213080
+      end_ms: 223880
+      url: https://www.youtube.com/watch?v=PwbikZNn8Y0&t=213s
+      segment_ids:
+        - PwbikZNn8Y0:00088
+        - PwbikZNn8Y0:00089
+        - PwbikZNn8Y0:00090
+        - PwbikZNn8Y0:00091
+  - id: RxQ8PJFJKLs-concept-ball-feel-reviewed
+    evidence_type: explanation
+    excerpt: Developing a sensitive touch for the ball so the player can sense friction and contact quality during brushing and looping.
+    reason: The speaker says the drill trains hand feel and contact quality, and that the player should relax and feel the friction.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: RxQ8PJFJKLs
+      start_ms: 402966
+      end_ms: 415000
+      url: https://www.youtube.com/watch?v=RxQ8PJFJKLs&t=402s
+      segment_ids:
+        - RxQ8PJFJKLs:00098
+        - RxQ8PJFJKLs:00099
+  - id: XHqBj20_92Y-concept-ball-feel-reviewed
+    evidence_type: definition
+    excerpt: Develop a tactile sense for how the ball clears the net and how the stroke behaves through contact and recovery.
+    reason: The speaker describes a feeling of holding the ball over the net and then feeling it is safe.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: XHqBj20_92Y
+      start_ms: 56766
+      end_ms: 66833
+      url: https://www.youtube.com/watch?v=XHqBj20_92Y&t=56s
+      segment_ids:
+        - XHqBj20_92Y:00019
+        - XHqBj20_92Y:00020
+        - XHqBj20_92Y:00021
+        - XHqBj20_92Y:00022
 relations:
   - relation_type: used_with
     target_concept_id: concept-contact-point

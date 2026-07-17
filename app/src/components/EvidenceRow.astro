@@ -11,6 +11,9 @@ const formatTime = (milliseconds: number) => {
   const total = Math.floor(milliseconds / 1000);
   return `${Math.floor(total / 60)}:${String(total % 60).padStart(2, '0')}`;
 };
+// Caption end times can land on the final spoken word. Keep this small tail in
+// playback only; cited transcript intervals and provenance remain unchanged.
+const SPOKEN_TAIL_MS = 1200;
 ---
 
 <article class:list={['evidence-row', { active }]} id={`moment-${item.id}`}>
@@ -25,11 +28,12 @@ const formatTime = (milliseconds: number) => {
   <div class="evidence-row-actions">
     {citations.map(({ item: citation }, citationIndex) => {
       const verifiedVisual = citation.visual_status === 'verified_visual_demo' && citation.visual_source?.selection_method === 'manual_review';
-      const clip = citation.visual_source ?? { ...citation.source, end_ms: citation.spoken_context_end_ms ?? citation.source.end_ms };
-      const spokenEnd = citation.spoken_context_end_ms ?? citation.source.end_ms;
+      const clip = citation.visual_source ?? { ...citation.source, start_ms: citation.spoken_context_start_ms ?? citation.source.start_ms, end_ms: citation.spoken_context_end_ms ?? citation.source.end_ms };
+      const spokenEnd = citation.spoken_context_end_ms ?? Math.min(citation.source.end_ms + SPOKEN_TAIL_MS, video?.duration_ms ?? citation.source.end_ms + SPOKEN_TAIL_MS);
+      const spokenStart = citation.spoken_context_start_ms ?? citation.source.start_ms;
       return <div class="evidence-citation-actions">
         {citation.visual_source && <button class="play-moment" data-video={clip.video_id} data-start={Math.floor(clip.start_ms / 1000)} data-end={Math.ceil(clip.end_ms / 1000)} data-loopable={String(verifiedVisual)}>{verifiedVisual ? 'Play verified visual' : 'Play proposed visual'}<span>{formatTime(clip.start_ms)}–{formatTime(clip.end_ms)}</span></button>}
-        <button class="play-moment" data-video={citation.source.video_id} data-start={Math.floor(citation.source.start_ms / 1000)} data-end={Math.ceil(spokenEnd / 1000)} data-loopable="false">{citations.length > 1 ? `Play citation ${citationIndex + 1}` : 'Play explanation'}<span>{formatTime(citation.source.start_ms)}–{formatTime(spokenEnd)}</span></button>
+        <button class="play-moment" data-video={citation.source.video_id} data-start={Math.floor(spokenStart / 1000)} data-end={Math.ceil(spokenEnd / 1000)} data-loopable="false">{citations.length > 1 ? `Play citation ${citationIndex + 1}` : 'Play explanation'}<span>{formatTime(spokenStart)}–{formatTime(spokenEnd)}</span></button>
         <a class="youtube-timestamp-link" href={citation.source.url} target="_blank" rel="noreferrer" aria-label={`Open this source timestamp on YouTube at ${formatTime(citation.source.start_ms)}`}>Open on YouTube<span>{formatTime(citation.source.start_ms)} ↗</span></a>
       </div>;
     })}

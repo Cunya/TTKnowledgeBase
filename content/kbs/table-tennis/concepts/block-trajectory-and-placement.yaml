@@ -180,6 +180,67 @@ evidence:
       segment_ids:
         - 6Xx11I8CB9M:00076
         - 6Xx11I8CB9M:00078
+  - id: Qao0KS97Ysg-concept-block-trajectory-placement-heavy-spin-reviewed
+    evidence_type: explanation
+    excerpt: Controlling the blocking path so the ball travels low and down rather than arcing long, especially under heavy spin.
+    reason: The speaker repeatedly says to press the trajectory down and move the forearm straight, not upward, while blocking heavy spin.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: Qao0KS97Ysg
+      start_ms: 30040
+      end_ms: 57760
+      url: https://www.youtube.com/watch?v=Qao0KS97Ysg&t=30s
+      segment_ids:
+        - Qao0KS97Ysg:00013
+        - Qao0KS97Ysg:00021
+        - Qao0KS97Ysg:00023
+  - id: UgroLfi1YGY-concept-block-trajectory-and-placement-reviewed
+    evidence_type: explanation
+    excerpt: Controlling block trajectory and placement by keeping the stroke compact and the racket stable so the ball lands on the table.
+    reason: Advises hitting half-long balls solidly with stable motion from backswing through contact to racket exit.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: UgroLfi1YGY
+      start_ms: 685440
+      end_ms: 707800
+      url: https://www.youtube.com/watch?v=UgroLfi1YGY&t=685s
+      segment_ids:
+        - UgroLfi1YGY:00245
+        - UgroLfi1YGY:00246
+        - UgroLfi1YGY:00247
+        - UgroLfi1YGY:00248
+        - UgroLfi1YGY:00249
+        - UgroLfi1YGY:00250
+        - UgroLfi1YGY:00251
+        - UgroLfi1YGY:00252
+  - id: PwbikZNn8Y0-concept-block-trajectory-and-placement-reviewed
+    evidence_type: explanation
+    excerpt: Using racket shape and stopping action to keep the return trajectory controlled and prevent long balls.
+    reason: The speaker explains that keeping the racket more vertical and stopping the swing helps control the arc and avoid long returns.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: PwbikZNn8Y0
+      start_ms: 638160
+      end_ms: 665320
+      url: https://www.youtube.com/watch?v=PwbikZNn8Y0&t=638s
+      segment_ids:
+        - PwbikZNn8Y0:00252
+        - PwbikZNn8Y0:00253
+        - PwbikZNn8Y0:00254
+        - PwbikZNn8Y0:00255
+        - PwbikZNn8Y0:00256
+        - PwbikZNn8Y0:00257
+        - PwbikZNn8Y0:00258
+        - PwbikZNn8Y0:00259
+        - PwbikZNn8Y0:00260
+        - PwbikZNn8Y0:00261
+        - PwbikZNn8Y0:00262
 relations:
   - relation_type: used_with
     target_concept_id: concept-direction-reading

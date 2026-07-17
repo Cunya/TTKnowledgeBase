@@ -561,6 +561,80 @@ evidence:
         - nENxAvinCe8:00016
         - nENxAvinCe8:00017
         - nENxAvinCe8:00021
+  - id: QFncUSkAVKU-cand-forehand-loop-reviewed
+    evidence_type: explanation
+    excerpt: A forehand topspin stroke that shares the same forward-first principle as the forehand drive, but uses brushing and looping mechanics, including a different racket-head orientation.
+    reason: Contrasts looping with driving through racket-head orientation and opening.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: QFncUSkAVKU
+      start_ms: 458960
+      end_ms: 478440
+      url: https://www.youtube.com/watch?v=QFncUSkAVKU&t=458s
+      segment_ids:
+        - QFncUSkAVKU:00177
+        - QFncUSkAVKU:00178
+        - QFncUSkAVKU:00179
+        - QFncUSkAVKU:00180
+        - QFncUSkAVKU:00181
+        - QFncUSkAVKU:00182
+        - QFncUSkAVKU:00183
+  - id: Nmf0ZWP6dn0-cand-forehand-loop-half-long-receive-reviewed
+    evidence_type: explanation
+    excerpt: When a forehand receive is half-long, the player should loop it with a compact motion rather than using a large backswing.
+    reason: They explain that half-long balls need space less than long balls and that a big backswing mistimes the loop, while being closer makes looping easier.
+    confidence: 0.91
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: Nmf0ZWP6dn0
+      start_ms: 528080
+      end_ms: 554320
+      url: https://www.youtube.com/watch?v=Nmf0ZWP6dn0&t=528s
+      segment_ids:
+        - Nmf0ZWP6dn0:00187
+        - Nmf0ZWP6dn0:00188
+        - Nmf0ZWP6dn0:00189
+        - Nmf0ZWP6dn0:00194
+        - Nmf0ZWP6dn0:00195
+  - id: DaHEb394UtA-concept-forehand-loop-reviewed
+    evidence_type: definition
+    excerpt: A forehand topspin loop built around a brushing arc, with forward acceleration added after the initial arc.
+    reason: The speaker distinguishes loop shots from a drive hit and describes the loop as a small arc followed by explosive drive at contact while maintaining brushing feeling.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: DaHEb394UtA
+      start_ms: 72080
+      end_ms: 93280
+      url: https://www.youtube.com/watch?v=DaHEb394UtA&t=72s
+      segment_ids:
+        - DaHEb394UtA:00022
+        - DaHEb394UtA:00023
+        - DaHEb394UtA:00024
+        - DaHEb394UtA:00025
+        - DaHEb394UtA:00026
+        - DaHEb394UtA:00027
+        - DaHEb394UtA:00028
+  - id: Z5OyMPqDVmc-concept-forehand-loop-reviewed
+    evidence_type: definition
+    excerpt: A forehand topspin attack used to initiate against half-long balls, with compact mechanics and controlled angle.
+    reason: The speaker says to initiate with an active forehand loop on the forehand half-long ball.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Z5OyMPqDVmc
+      start_ms: 471520
+      end_ms: 489280
+      url: https://www.youtube.com/watch?v=Z5OyMPqDVmc&t=471s
+      segment_ids:
+        - Z5OyMPqDVmc:00176
+        - Z5OyMPqDVmc:00178
+        - Z5OyMPqDVmc:00181
 relations:
   - relation_type: used_with
     target_concept_id: concept-contact-point

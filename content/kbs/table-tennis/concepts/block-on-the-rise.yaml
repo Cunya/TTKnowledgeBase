@@ -199,6 +199,40 @@ evidence:
       segment_ids:
         - 6Xx11I8CB9M:00139
         - 6Xx11I8CB9M:00140
+  - id: Qao0KS97Ysg-concept-block-on-the-rise-heavy-spin-reviewed
+    evidence_type: explanation
+    excerpt: Taking a heavy-spin ball early in the rising phase so the spin has less time to act on the ball and the return is easier to control.
+    reason: The speaker directly compares descending, peak, and rising phases and says defending in the rising phase solves most of the problem.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: Qao0KS97Ysg
+      start_ms: 147680
+      end_ms: 170840
+      url: https://www.youtube.com/watch?v=Qao0KS97Ysg&t=147s
+      segment_ids:
+        - Qao0KS97Ysg:00057
+        - Qao0KS97Ysg:00059
+        - Qao0KS97Ysg:00060
+        - Qao0KS97Ysg:00061
+        - Qao0KS97Ysg:00062
+  - id: e0_OSr2lvU4-concept-block-on-the-rise-reviewed
+    evidence_type: explanation
+    excerpt: Taking the ball early, before it drops too low, to handle fast, floaty long-pips returns more safely.
+    reason: The speaker asks why to block early and says to place the racket in front of you, making the opponent uncomfortable by taking the ball early.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: e0_OSr2lvU4
+      start_ms: 60966
+      end_ms: 80600
+      url: https://www.youtube.com/watch?v=e0_OSr2lvU4&t=60s
+      segment_ids:
+        - e0_OSr2lvU4:00016
+        - e0_OSr2lvU4:00021
+        - e0_OSr2lvU4:00024
 relations:
   - relation_type: part_of
     target_concept_id: concept-block-trajectory-and-placement

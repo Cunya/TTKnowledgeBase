@@ -234,6 +234,36 @@ evidence:
         - Kg4hLYnEbAs:00157
         - Kg4hLYnEbAs:00158
         - Kg4hLYnEbAs:00159
+  - id: iNTkZQ-ZenY-concept-backhand-loop-jam-recovery-reviewed
+    evidence_type: explanation
+    excerpt: Recovering from a jammed backhand loop by finishing forward and minimizing backswing.
+    reason: The speaker says when the backhand loop gets jammed, finish the stroke in front.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: iNTkZQ-ZenY
+      start_ms: 502400
+      end_ms: 518320
+      url: https://www.youtube.com/watch?v=iNTkZQ-ZenY&t=502s
+      segment_ids:
+        - iNTkZQ-ZenY:00172
+        - iNTkZQ-ZenY:00176
+  - id: -QdTaX8ejCM-concept-backhand-loop-reviewed
+    evidence_type: definition
+    excerpt: A backhand topspin action that uses the racket head to create spin and, when needed, counter fast incoming topspin.
+    reason: The speaker explicitly says 'for backhand loop' and compares two motions for spin production.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: -QdTaX8ejCM
+      start_ms: 227760
+      end_ms: 247800
+      url: https://www.youtube.com/watch?v=-QdTaX8ejCM&t=227s
+      segment_ids:
+        - -QdTaX8ejCM:00088
+        - -QdTaX8ejCM:00095
 relations:
   - relation_type: used_with
     target_concept_id: concept-backhand-topspin-body-coordination

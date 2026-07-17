@@ -184,7 +184,7 @@ Only after the worksheet has reviewed decisions should a second boundary report 
 Reviewed public knowledge is stored as tracked YAML under `content/kbs/<kb>/concepts/`. An approved evidence item contains:
 
 - `source`: the transcript-backed claim location, including segment IDs;
-- optional `spoken_context_end_ms`: a reviewed playback boundary at the next transcript topic transition, without widening the claim citation;
+- optional `spoken_context_end_ms`: a reviewed playback boundary at the next transcript topic transition, without widening the claim citation. When no reviewed context end exists, the site adds a bounded 1.2-second playback-only tail to spoken citations to avoid trimming the final word; cited segment IDs and provenance are unchanged;
 - optional `visual_source`: a different window where the relevant movement is visible;
 - `visual_status`: whether the demonstration is absent, inferred, or verified;
 - editorial definition, evidence type, confidence, relations, and review status.

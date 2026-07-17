@@ -3,6 +3,7 @@ from __future__ import annotations
 import shutil
 import tempfile
 from dataclasses import dataclass
+from datetime import UTC, datetime
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
@@ -307,6 +308,7 @@ def ingest_video(
         channel_name=metadata.get("channel") or metadata.get("uploader") or "",
         duration_ms=round(duration_seconds * 1000),
         published_at=metadata.get("upload_date"),
+        ingested_at=datetime.now(UTC),
         thumbnail_url=metadata.get("thumbnail"),
         language=transcript.language_code,
         transcript=transcript,

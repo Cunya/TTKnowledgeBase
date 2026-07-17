@@ -8,7 +8,7 @@ import sixthBatchData from '../data/tt-spinmaster-sixth-batch.json';
 import progressData from '../data/generated/table-tennis-progress.json';
 import type { Corpus } from '../types';
 
-const corpus = corpusData as Corpus;
+const corpus = corpusData as unknown as Corpus;
 const sourceVideos = (channel: string) => corpus.videos.filter((video) => video.channel_name === channel);
 const spinMasterVideos = sourceVideos('TT SpinMaster');
 const globalVideos = sourceVideos('GlobalTTStudio');

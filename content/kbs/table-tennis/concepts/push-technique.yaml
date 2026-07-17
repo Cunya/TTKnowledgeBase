@@ -490,6 +490,38 @@ evidence:
         - D1cBF0nsjKo:00000
         - D1cBF0nsjKo:00003
         - D1cBF0nsjKo:00004
+  - id: bxRRxlAJnmc-concept-push-technique-reviewed
+    evidence_type: definition
+    excerpt: A push should keep the ball low, use a slightly vertical racket angle, and avoid a forward-only or secondary backswing motion so the ball stays short and controlled.
+    reason: 'The speaker defines the requirements of a good push: low ball, speed, and a more vertical racket angle, with forehand and backhand differences.'
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: bxRRxlAJnmc
+      start_ms: 90833
+      end_ms: 114133
+      url: https://www.youtube.com/watch?v=bxRRxlAJnmc&t=90s
+      segment_ids:
+        - bxRRxlAJnmc:00031
+        - bxRRxlAJnmc:00035
+        - bxRRxlAJnmc:00037
+  - id: wSzmpXHp64Q-concept-push-technique-reviewed
+    evidence_type: definition
+    excerpt: A compact short-ball receive action that uses controlled contact, minimal swing, and body support rather than arm extension.
+    reason: The speaker repeatedly discusses pushing as the short-ball receive and describes how it should be performed.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: wSzmpXHp64Q
+      start_ms: 42100
+      end_ms: 65033
+      url: https://www.youtube.com/watch?v=wSzmpXHp64Q&t=42s
+      segment_ids:
+        - wSzmpXHp64Q:00010
+        - wSzmpXHp64Q:00014
+        - wSzmpXHp64Q:00015
 relations:
   - relation_type: used_with
     target_concept_id: concept-push-contact-and-spin

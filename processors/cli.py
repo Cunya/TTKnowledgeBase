@@ -51,7 +51,7 @@ from .pipeline import (
     validate_review_queue,
 )
 from .pipeline import publish as publish_corpus
-from .progress import build_progress_report
+from .progress import build_progress_report, write_recent_snapshot
 from .utils import read_json, read_yaml, sha256_json, write_json
 from .workspace import KnowledgeBasePaths, load_knowledge_base
 
@@ -334,6 +334,7 @@ def ingest(
                 )
                 break
     write_json(retry_path, retry_state)
+    write_recent_snapshot(paths)
     if failures:
         console.print(
             f"[red]{len(failures)} video(s) failed; successful videos were retained.[/red]"
@@ -659,6 +660,7 @@ def publish(
     refresh_catalog()
     progress_path = ROOT / "app" / "src" / "data" / "generated" / f"{paths.id}-progress.json"
     write_json(progress_path, build_progress_report(paths, corpus))
+    write_recent_snapshot(paths)
     console.print(f"[green]Published {paths.name}: {len(corpus.concepts)} concepts[/green]")
 
 

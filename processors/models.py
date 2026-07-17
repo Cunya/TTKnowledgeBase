@@ -71,6 +71,7 @@ class Video(BaseModel):
     channel_name: str = ""
     duration_ms: int = Field(ge=0)
     published_at: str | None = None
+    ingested_at: datetime | None = None
     thumbnail_url: str | None = None
     language: str | None = None
     availability: str = "available_online"
@@ -171,12 +172,15 @@ class ConceptEvidence(BaseModel):
         "not_visual"
     )
     source: SourceSpan
+    spoken_context_start_ms: int | None = Field(default=None, ge=0)
     spoken_context_end_ms: int | None = Field(default=None, gt=0)
     visual_source: VisualSpan | None = None
     review_status: ReviewStatus = "approved"
 
     @model_validator(mode="after")
     def valid_spoken_context(self) -> ConceptEvidence:
+        if self.spoken_context_start_ms is not None and self.spoken_context_start_ms > self.source.start_ms:
+            raise ValueError("spoken_context_start_ms cannot start after the cited source")
         if self.spoken_context_end_ms is not None and self.spoken_context_end_ms < self.source.end_ms:
             raise ValueError("spoken_context_end_ms cannot end before the cited source")
         return self

@@ -414,6 +414,64 @@ evidence:
         - Kg4hLYnEbAs:00087
         - Kg4hLYnEbAs:00088
         - Kg4hLYnEbAs:00089
+  - id: jG1G3H7Fo_k-concept-direction-reading-reviewed
+    evidence_type: explanation
+    excerpt: Reading the landing point, trajectory, and motion before rising or committing to movement.
+    reason: The speaker instructs the player to read landing point, motion, and trajectory before rising and moving.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: jG1G3H7Fo_k
+      start_ms: 271360
+      end_ms: 289240
+      url: https://www.youtube.com/watch?v=jG1G3H7Fo_k&t=271s
+      segment_ids:
+        - jG1G3H7Fo_k:00088
+        - jG1G3H7Fo_k:00089
+        - jG1G3H7Fo_k:00090
+        - jG1G3H7Fo_k:00091
+        - jG1G3H7Fo_k:00092
+        - jG1G3H7Fo_k:00093
+        - jG1G3H7Fo_k:00094
+  - id: VOX-e4IR2xg-concept-direction-reading-reviewed
+    evidence_type: explanation
+    excerpt: Inferring serve direction from the forearm and shoulder rotation rather than from the racket face, which is too fast to read reliably.
+    reason: The speaker explains how to read serve placement by watching forearm direction and rotation angle instead of the racket face.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: VOX-e4IR2xg
+      start_ms: 393840
+      end_ms: 421919
+      url: https://www.youtube.com/watch?v=VOX-e4IR2xg&t=393s
+      segment_ids:
+        - VOX-e4IR2xg:00142
+        - VOX-e4IR2xg:00143
+        - VOX-e4IR2xg:00144
+        - VOX-e4IR2xg:00145
+        - VOX-e4IR2xg:00146
+        - VOX-e4IR2xg:00147
+        - VOX-e4IR2xg:00148
+        - VOX-e4IR2xg:00149
+        - VOX-e4IR2xg:00150
+        - VOX-e4IR2xg:00151
+  - id: 9BKPM_RMmtg-concept-direction-reading-reviewed
+    evidence_type: definition
+    excerpt: Reading the opponent's motion and the ball's spin early so you can predict the post-bounce direction before moving.
+    reason: The speaker explicitly says to read the opponent's motion clearly and train reading ability when judgment is weak.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 9BKPM_RMmtg
+      start_ms: 51400
+      end_ms: 75833
+      url: https://www.youtube.com/watch?v=9BKPM_RMmtg&t=51s
+      segment_ids:
+        - 9BKPM_RMmtg:00018
+        - 9BKPM_RMmtg:00025
 relations:
   - relation_type: used_with
     target_concept_id: concept-ready-position

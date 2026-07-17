@@ -14,9 +14,9 @@ codex:
 llm_budget:
   enabled: true
   timezone: Europe/Helsinki
-  daily_token_limit: 500000
+  daily_token_limit: 1500000
   task_token_limits:
-    extraction: 400000
+    extraction: 1200000
     rephrase: 100000
     benchmark: 100000
     summary: 400000

@@ -32,6 +32,8 @@ python -m processors.cli llm-budget --kb table-tennis
 
 Deferred extraction work is recorded in `data/manifests/<kb>/llm-deferred.json` and can be resumed on a later day or after adjusting the config. This ledger counts conservative token units reported by Codex (or the pre-call estimate when usage is unavailable); it is not a billing estimate.
 
+The local `/recent/` view orders lessons and connected concepts by `ingested_at`, so a newly processed older YouTube lesson appears as a recent addition. Both `ingest` and `publish` write a local-only normalized-video snapshot, allowing newly ingested videos with no extracted concepts yet to appear as **Awaiting extraction/review** without an LLM or manual edit. New normalized videos record this timestamp directly; legacy cached videos use their normalized-file modification time as a transparent fallback. The original YouTube publication date remains displayed separately.
+
 When `publish --auto-rephrase-high-overlap` reaches the budget, publication stops rather than silently shipping excerpts that still require rephrasing. Run the command again after the daily reset or after deliberately increasing the configured allowance.
 
 To compare a cheaper model before changing `config/processors.yaml`, run the isolated quality benchmark on cached transcripts:

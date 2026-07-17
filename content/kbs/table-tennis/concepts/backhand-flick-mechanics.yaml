@@ -228,6 +228,58 @@ evidence:
         - hwT7cH6PbZQ:00158
         - hwT7cH6PbZQ:00159
         - hwT7cH6PbZQ:00160
+  - id: QFncUSkAVKU-cand-backhand-flick-mechanics-reviewed
+    evidence_type: explanation
+    excerpt: The mechanics of a backhand flick, discussed as sharing the same hooked-wrist feeling and stable wrist position as other strong backhand strokes.
+    reason: Defines the required wrist orientation and forbids outward bending, inward collapse, or wiping motion.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: QFncUSkAVKU
+      start_ms: 684000
+      end_ms: 702480
+      url: https://www.youtube.com/watch?v=QFncUSkAVKU&t=684s
+      segment_ids:
+        - QFncUSkAVKU:00259
+        - QFncUSkAVKU:00260
+        - QFncUSkAVKU:00261
+        - QFncUSkAVKU:00262
+        - QFncUSkAVKU:00263
+        - QFncUSkAVKU:00264
+        - QFncUSkAVKU:00265
+  - id: b_kKpVRuU1Q-concept-backhand-flick-mechanics-reviewed
+    evidence_type: definition
+    excerpt: The wrist-led backhand flick action in which the racket head drops, the wrist is hooked, and the racket rotates through contact to create a solid forward-facing strike.
+    reason: The speaker describes the wrist hook, racket-face orientation, rotation at contact, and identifies the banana flick motion by name.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: b_kKpVRuU1Q
+      start_ms: 33966
+      end_ms: 53666
+      url: https://www.youtube.com/watch?v=b_kKpVRuU1Q&t=33s
+      segment_ids:
+        - b_kKpVRuU1Q:00008
+        - b_kKpVRuU1Q:00011
+        - b_kKpVRuU1Q:00012
+  - id: wSzmpXHp64Q-concept-backhand-flick-mechanics-reviewed
+    evidence_type: explanation
+    excerpt: Using a compact flick action on short balls, contrasted with pushing; the speaker warns against the banana flick here because the footwork distance is too long.
+    reason: Mentions flicking as a receive category and specifically references the backhand banana flick.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: wSzmpXHp64Q
+      start_ms: 47966
+      end_ms: 58166
+      url: https://www.youtube.com/watch?v=wSzmpXHp64Q&t=47s
+      segment_ids:
+        - wSzmpXHp64Q:00011
+        - wSzmpXHp64Q:00012
+        - wSzmpXHp64Q:00013
 relations:
   - relation_type: used_with
     target_concept_id: concept-backhand-flick-on-rise

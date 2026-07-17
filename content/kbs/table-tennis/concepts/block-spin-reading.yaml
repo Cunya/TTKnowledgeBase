@@ -127,6 +127,24 @@ evidence:
       segment_ids:
         - 6Xx11I8CB9M:00146
         - 6Xx11I8CB9M:00147
+  - id: 6iZaiabY2mw-concept-spin-reading-reviewed
+    evidence_type: definition
+    excerpt: Identify whether the incoming ball carries topspin or backspin before committing the receive stroke.
+    reason: The speaker tells the listener to make a firm decision about whether the ball is topspin or backspin and warns against hesitation and misreading spin.
+    confidence: 0.85
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 6iZaiabY2mw
+      start_ms: 449100
+      end_ms: 468366
+      url: https://www.youtube.com/watch?v=6iZaiabY2mw&t=449s
+      segment_ids:
+        - 6iZaiabY2mw:00032
+        - 6iZaiabY2mw:00033
+        - 6iZaiabY2mw:00034
+        - 6iZaiabY2mw:00035
+        - 6iZaiabY2mw:00038
 relations:
   - relation_type: used_with
     target_concept_id: concept-block-trajectory-and-placement

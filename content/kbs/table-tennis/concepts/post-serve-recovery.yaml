@@ -958,6 +958,38 @@ evidence:
         - 7jWqEsHtN3Y:00077
         - 7jWqEsHtN3Y:00081
         - 7jWqEsHtN3Y:00082
+  - id: e0_OSr2lvU4-concept-post-serve-recovery-reviewed
+    evidence_type: explanation
+    excerpt: Recovering quickly after serving so you are ready for the next ball without over-swinging.
+    reason: After serving, the speaker tells players to recover quickly and keep the motion small and compact.
+    confidence: 0.89
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: e0_OSr2lvU4
+      start_ms: 86500
+      end_ms: 95400
+      url: https://www.youtube.com/watch?v=e0_OSr2lvU4&t=86s
+      segment_ids:
+        - e0_OSr2lvU4:00026
+        - e0_OSr2lvU4:00027
+        - e0_OSr2lvU4:00028
+  - id: pIu3jfM0C6k-concept-post-serve-recovery-reviewed
+    evidence_type: explanation
+    excerpt: Recovering footwork and body position after serving or pushing so the next forehand attack has room and timing.
+    reason: Says proper recovery after the push is needed and that without it the player cannot loop on the forehand.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: pIu3jfM0C6k
+      start_ms: 17566
+      end_ms: 31333
+      url: https://www.youtube.com/watch?v=pIu3jfM0C6k&t=17s
+      segment_ids:
+        - pIu3jfM0C6k:00005
+        - pIu3jfM0C6k:00009
+        - pIu3jfM0C6k:00010
 relations:
   - relation_type: used_with
     target_concept_id: concept-short-serve-third-ball-attack

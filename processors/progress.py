@@ -3,10 +3,11 @@
 from __future__ import annotations
 
 from collections import Counter, defaultdict
+from datetime import UTC, datetime
 
 from .models import PublishCorpus
 from .pipeline import load_videos
-from .utils import read_json, read_yaml
+from .utils import read_json, read_yaml, write_json
 from .workspace import KnowledgeBasePaths
 
 
@@ -40,6 +41,25 @@ def _discovery_counts(paths: KnowledgeBasePaths, sources: list[dict]) -> dict[st
             if isinstance(videos, list):
                 counts[source_id] = max(counts.get(source_id, 0), len(videos))
     return counts
+
+
+def write_recent_snapshot(paths: KnowledgeBasePaths) -> None:
+    """Refresh the local-only Recent source inventory from normalized videos.
+
+    This is deliberately deterministic and does not call an LLM. Keeping it in
+    the processor layer means ingestion and publication cannot silently leave
+    the operator's Recent view stale when extraction is deferred.
+    """
+    videos = load_videos(paths.data("normalized"))
+    output = paths.root / "app" / "src" / "data" / "generated" / f"{paths.id}-recent.json"
+    write_json(
+        output,
+        {
+            "knowledge_base": paths.id,
+            "generated_at": datetime.now(UTC).isoformat(),
+            "videos": [video.model_dump(mode="json") for video in videos],
+        },
+    )
 
 
 def build_progress_report(paths: KnowledgeBasePaths, corpus: PublishCorpus) -> dict:

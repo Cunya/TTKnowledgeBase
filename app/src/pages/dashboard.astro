@@ -5,7 +5,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import corpusData from '../../public/data/kbs/table-tennis/corpus.json';
 import type { Corpus } from '../types';
 
-const corpus = corpusData as Corpus;
+const corpus = corpusData as unknown as Corpus;
 const backlogPath = fileURLToPath(new URL('../../../docs/prioritized-backlog-2026-07-15.md', import.meta.url));
 const backlogText = readFileSync(backlogPath, 'utf-8');
 const backlogItems = backlogText.match(/^###\s+P[012]-\d+/gm)?.length ?? 0;

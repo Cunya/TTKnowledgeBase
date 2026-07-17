@@ -239,6 +239,22 @@ evidence:
       url: https://www.youtube.com/watch?v=SF0Sv2ZzrRI&t=254s
       segment_ids:
         - SF0Sv2ZzrRI:00072
+  - id: 9BKPM_RMmtg-concept-receive-sidespin-serves-reviewed
+    evidence_type: explanation
+    excerpt: Receiving serves with heavy sidespin by reading whether the ball will curve left or right after the bounce and adjusting position accordingly.
+    reason: The speaker explains that heavy sidespin commonly causes missed balls and that left/right sidespin changes bounce direction laterally.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 9BKPM_RMmtg
+      start_ms: 13966
+      end_ms: 39566
+      url: https://www.youtube.com/watch?v=9BKPM_RMmtg&t=13s
+      segment_ids:
+        - 9BKPM_RMmtg:00006
+        - 9BKPM_RMmtg:00008
+        - 9BKPM_RMmtg:00013
 relations:
   - relation_type: variation_of
     target_concept_id: concept-serve-receive-principles

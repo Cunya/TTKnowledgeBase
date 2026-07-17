@@ -255,6 +255,7 @@ evidence:
         - 0eMDTeOBR5A:00153
         - 0eMDTeOBR5A:00154
         - 0eMDTeOBR5A:00155
+    spoken_context_start_ms: 439400
   - id: 0eMDTeOBR5A-cand-opponent-targeting-empty-space-3
     evidence_type: example
     excerpt: Placement should be chosen from the opponent's current position and movement, directing the loop into the open space rather than a fixed preselected location.
@@ -524,6 +525,45 @@ evidence:
         - 7jWqEsHtN3Y:00061
         - 7jWqEsHtN3Y:00062
         - 7jWqEsHtN3Y:00063
+  - id: 07gBJc2wQKY-concept-opponent-targeting-reviewed
+    evidence_type: explanation
+    excerpt: Picking serve and rally targets based on the opponent's weaker wing or weaker stroke pattern rather than playing generic balls.
+    reason: The speaker tells the player to identify whether the opponent is stronger in topspin, backspin, forehand, or backhand, then attack the weaker side repeatedly.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 07gBJc2wQKY
+      start_ms: 943480
+      end_ms: 969480
+      url: https://www.youtube.com/watch?v=07gBJc2wQKY&t=943s
+      segment_ids:
+        - 07gBJc2wQKY:00262
+        - 07gBJc2wQKY:00264
+        - 07gBJc2wQKY:00265
+        - 07gBJc2wQKY:00266
+        - 07gBJc2wQKY:00267
+        - 07gBJc2wQKY:00270
+        - 07gBJc2wQKY:00271
+        - 07gBJc2wQKY:00272
+  - id: lii73aKvvkw-concept-opponent-targeting-batch-reviewed
+    evidence_type: explanation
+    excerpt: Choosing serve placement based on the opponent's movement, weaknesses, and likely response patterns.
+    reason: The speaker says fast long serves are best when the opponent reacts slowly and does not move his feet.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: lii73aKvvkw
+      start_ms: 156879
+      end_ms: 175280
+      url: https://www.youtube.com/watch?v=lii73aKvvkw&t=156s
+      segment_ids:
+        - lii73aKvvkw:00061
+        - lii73aKvvkw:00063
+        - lii73aKvvkw:00064
+        - lii73aKvvkw:00065
+        - lii73aKvvkw:00066
 relations:
   - relation_type: used_with
     target_concept_id: concept-direction-reading
