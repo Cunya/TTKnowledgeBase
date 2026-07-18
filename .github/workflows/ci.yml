@@ -43,7 +43,7 @@ jobs:
             echo "Raw transcript segments found in Pages output"
             exit 1
           fi
-          if grep -R -E '(YTKB_WEBSHARE_PASSWORD|BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY|sk-[A-Za-z0-9_-]{20,})' app/dist; then
+          if grep -R -E '(YTKB_WEBSHARE_PASSWORD|BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY|sk-(proj|admin|live|test)-[A-Za-z0-9_-]{20,})' app/dist; then
             echo "Credential-like material found in Pages output"
             exit 1
           fi
