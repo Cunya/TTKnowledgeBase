@@ -164,10 +164,13 @@ $env:PYTHONUTF8='1'
 .\.venv\Scripts\python.exe -m processors.cli build-review-queue --kb table-tennis
 .\.venv\Scripts\python.exe -m processors.cli process-pending --kb table-tennis
 
-# 5. Review candidates and edit canonical YAML, then validate and publish.
+# 5. Automatic review promotes only high-confidence, source-grounded new concepts;
+#    ambiguous candidates remain deferred. Use --retry-deferred for a backfill.
 .\.venv\Scripts\python.exe -m processors.cli validate --kb table-tennis
 .\.venv\Scripts\python.exe -m processors.cli publish --kb table-tennis
 ```
+
+`process-pending` also refreshes the local `/concept-review/` diagnostics snapshot automatically.
 
 The `cp` workflow drains eligible cached transcripts and candidates before selecting another controlled batch. It obeys the prioritized backlog, pacing, source-policy checks, and the block circuit breaker. Do not start a large scrape while a backlog gate is active.
 

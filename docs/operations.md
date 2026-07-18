@@ -67,7 +67,7 @@ For a cached review batch, use the conservative P1-02 triage command before scra
 python -m processors.cli process-pending --kb table-tennis
 ```
 
-It incorporates only high-confidence matches to existing concepts as one focused transcript moment. New taxonomy proposals, weak matches, and invalid spans are marked `deferred` with a reason; the command never creates a new public concept automatically. Review deferred items before the next expansion pass.
+It incorporates high-confidence matches and can create a new canonical concept when the extractor explicitly marks it `new`, the confidence and definition gates pass, it is not a near-duplicate, and its cited transcript span validates. Ambiguous, weak, duplicate, and invalid candidates remain `deferred`. Use `process-pending --retry-deferred` to backfill candidates deferred by earlier runs.
 
 The `cp` shortcut follows the same order: finish eligible cached transcripts and candidates first; when no local work remains, continue with the next small, controlled discovery/ingestion batch. It must still obey the prioritized backlog, acquisition-policy checks, pacing limits, and block circuit breaker. A cleared local queue does not authorize bypassing an active “no large scrape” gate.
 

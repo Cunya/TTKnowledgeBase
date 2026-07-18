@@ -1492,6 +1492,39 @@ evidence:
         - dbT0DYG2Xac:00076
         - dbT0DYG2Xac:00080
         - dbT0DYG2Xac:00082
+  - id: 63bd4-iEh6Y-concept-body-hand-synchronization-reviewed
+    evidence_type: explanation
+    excerpt: Linking the arm action to the legs, hips, and shoulders so the stroke is driven as one coordinated chain instead of an isolated arm swing.
+    reason: The speaker explicitly says the arms are connected and that players should use coordinated body power, with legs and hips fully contributing.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 63bd4-iEh6Y
+      start_ms: 167133
+      end_ms: 181066
+      url: https://www.youtube.com/watch?v=63bd4-iEh6Y&t=167s
+      segment_ids:
+        - 63bd4-iEh6Y:00050
+        - 63bd4-iEh6Y:00052
+        - 63bd4-iEh6Y:00053
+  - id: ozEBjwyt674-concept-body-hand-synchronization-reviewed
+    evidence_type: explanation
+    excerpt: The stroke should separate joint roles so the wrist, forearm, elbow, and shoulder do not move as one rigid block; this improves spin and control.
+    reason: Describes the need to separate wrist, elbow, and shoulder rather than letting them fuse into one motion.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ozEBjwyt674
+      start_ms: 51533
+      end_ms: 63966
+      url: https://www.youtube.com/watch?v=ozEBjwyt674&t=51s
+      segment_ids:
+        - ozEBjwyt674:00016
+        - ozEBjwyt674:00017
+        - ozEBjwyt674:00018
+        - ozEBjwyt674:00019
 relations:
   - relation_type: used_with
     target_concept_id: concept-serve-action-decomposition

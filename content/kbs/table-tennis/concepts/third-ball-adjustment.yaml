@@ -556,6 +556,38 @@ evidence:
         - PFPu_pKZ9TI:00106
         - PFPu_pKZ9TI:00107
         - PFPu_pKZ9TI:00108
+  - id: -jaC--EWjFw-concept-third-ball-adjustment-reviewed
+    evidence_type: definition
+    excerpt: Choosing the next ball after serving based on the return and the opponent's position or reaction.
+    reason: The speaker describes serving short, observing the push back, and then deciding where to loop or play the next ball.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: -jaC--EWjFw
+      start_ms: 2266
+      end_ms: 13500
+      url: https://www.youtube.com/watch?v=-jaC--EWjFw&t=2s
+      segment_ids:
+        - -jaC--EWjFw:00001
+        - -jaC--EWjFw:00002
+  - id: r-t1t12EUKw-concept-third-ball-adjustment-reviewed
+    evidence_type: explanation
+    excerpt: Adjusting the next ball after the serve or first receive so the follow-up attack matches the opponent's response.
+    reason: The speaker discusses attacking after the opponent receives and having backup options like touch, push, chop, or block if the first attack does not work.
+    confidence: 0.85
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: r-t1t12EUKw
+      start_ms: 442300
+      end_ms: 454900
+      url: https://www.youtube.com/watch?v=r-t1t12EUKw&t=442s
+      segment_ids:
+        - r-t1t12EUKw:00155
+        - r-t1t12EUKw:00156
+        - r-t1t12EUKw:00157
+        - r-t1t12EUKw:00158
 relations:
   - relation_type: used_with
     target_concept_id: concept-serve-and-attack-patterns

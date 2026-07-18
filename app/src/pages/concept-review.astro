@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import reviewData from '../data/generated/table-tennis-concept-review.json';
+
+const data = reviewData as { generated_at: string; total: number; supporting_moments: number; supporting_videos: number; categories: Record<string, number>; items: Array<{ video_id: string; video_title: string; video_start_ms: number; video_end_ms: number; label: string; definition: string; resolution: string; confidence: number; category: string; reason: string; supporting_moments: number; supporting_segments: number; best_match: string; best_match_slug: string }> };
+const categoryLabel = (value: string) => value.replace(/\b\w/g, (letter) => letter.toUpperCase());
+const categoryOrder = ['probable new concept', 'evidence boundary', 'low confidence', 'ambiguous resolution', 'other deferred', 'likely duplicate'];
+const groups = categoryOrder
+  .map((category) => ({ category, items: data.items.filter((item) => item.category === category) }))
+  .filter((group) => group.items.length);
+---
+
+<BaseLayout title="Concept review diagnostics" description="Local-only diagnostics for deferred automatic concept review.">
+  <section class="page-intro">
+    <div class="eyebrow">Local automatic-review diagnostics</div>
+    <h1>Why candidates were not added</h1>
+    <p>This view shows candidates found in already processed videos that did not pass the automatic new-concept gates. It is diagnostic data, not public content.</p>
+    <p class="recent-disclaimer">Generated {new Date(data.generated_at).toLocaleString()} · {data.total} deferred candidates · {data.supporting_moments} proposal moments across {data.supporting_videos} videos</p>
+  </section>
+
+  <section class="dashboard-section">
+    <div class="diagnostic-cards">
+      {categoryOrder.filter((category) => data.categories[category]).map((category) => <div class={`diagnostic-card state-${category.replaceAll(' ', '-')}`}><strong>{data.categories[category]}</strong><span>{categoryLabel(category)}</span></div>)}
+    </div>
+  </section>
+
+  <section class="recent-section">
+    <div class="section-kicker">Candidate evidence</div>
+    <h2>Deferred candidates</h2>
+    {groups.map((group) => <div class={`review-group state-${group.category.replaceAll(' ', '-')}`}>
+      <div class="review-group-heading"><h3>{categoryLabel(group.category)}</h3><span>{group.items.length} candidates</span></div>
+      <div class="review-table-wrap">
+        <table class="review-table">
+          <thead><tr><th>Candidate</th><th>Automatic state</th><th>Closest existing concept</th><th>Why it was deferred</th></tr></thead>
+          <tbody>{group.items.map((item) => <tr>
+            <td><strong>{item.label}</strong><small>{item.definition}</small><small>{item.supporting_moments} supporting proposal moment{item.supporting_moments === 1 ? '' : 's'} · {item.video_title}</small></td>
+            <td><span class="review-badge">{item.category}</span><small>{item.resolution} · {(item.confidence * 100).toFixed(0)}% confidence</small></td>
+            <td>{item.best_match ? <span>{item.best_match}<small>{item.best_match_slug}</small></span> : 'None found'}</td>
+            <td>{item.reason}<details><summary>Watch source video</summary><iframe title={`Source video for ${item.label}`} src={`https://www.youtube.com/embed/${item.video_id}?start=${Math.floor(item.video_start_ms / 1000)}`} loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></details></td>
+          </tr>)}</tbody>
+        </table>
+      </div>
+    </div>)}
+  </section>
+</BaseLayout>
+
+<style>
+  .diagnostic-cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:1rem; }
+  .diagnostic-card { padding:1.2rem; border:1px solid var(--line); background:var(--paper); display:flex; flex-direction:column; gap:.3rem; }
+  .diagnostic-card, .review-group { border-left:4px solid var(--muted); }
+  .state-likely-duplicate { border-left-color:#b85c5c; }
+  .state-evidence-boundary { border-left-color:#c08a3e; }
+  .state-low-confidence { border-left-color:#8b6fb3; }
+  .state-ambiguous-resolution { border-left-color:#5d83a8; }
+  .state-other-deferred { border-left-color:#7b858c; }
+  .state-probable-new-concept { border-left-color:#3b8b65; }
+  .diagnostic-card strong { font-size:2rem; color:var(--ink); }
+  .diagnostic-card span, .review-table small { color:var(--muted); font-size:.78rem; display:block; margin-top:.35rem; }
+  .review-table-wrap { overflow:auto; border:1px solid var(--line); }
+  .review-group { margin-top:2rem; padding-left:1rem; }
+  .review-group-heading { display:flex; justify-content:space-between; align-items:baseline; gap:1rem; }
+  .review-group-heading h3 { margin:0 0 .7rem; }
+  .review-group-heading span { color:var(--muted); font-size:.8rem; }
+  details { margin-top:.7rem; }
+  summary { cursor:pointer; color:var(--ink); font-weight:600; }
+  iframe { display:block; width:320px; aspect-ratio:16/9; border:0; margin-top:.6rem; }
+  .review-table { width:100%; border-collapse:collapse; min-width:950px; }
+  .review-table th, .review-table td { padding:.85rem 1rem; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
+  .review-table th { font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); background:var(--paper); }
+  .review-table td { font-size:.88rem; line-height:1.45; }
+  .review-badge { display:inline-block; padding:.25rem .45rem; background:#eee7db; color:var(--ink); font-size:.75rem; }
+</style>

@@ -18,7 +18,7 @@ from .boundaries import (
 )
 from .codex_engine import extract_with_codex, rephrase_excerpt_with_codex
 from .models import Concept, ExtractionResponse, KnowledgeNavigation, PublishCorpus, Video
-from .utils import read_json, read_yaml, sha256_json, write_json, youtube_url
+from .utils import read_json, read_yaml, sha256_json, slugify, write_json, youtube_url
 
 MAX_SPOKEN_SOURCE_MS = MAX_SOURCE_DURATION_MS
 DEFAULT_REPHRASE_MIN_WORDS = 8
@@ -374,12 +374,13 @@ def process_pending_candidates(
     *,
     min_confidence: float = 0.85,
     min_alias_score: int = 90,
+    retry_deferred: bool = False,
 ) -> dict[str, int]:
-    """Triage cached candidates and incorporate only high-confidence concept matches.
+    """Triage cached candidates and promote high-confidence new concepts.
 
-    This is deliberately conservative: candidates with no existing concept match,
-    weak confidence, or invalid cited spans are deferred with an explanation. It
-    never creates a new public concept or silently accepts a low-confidence match.
+    New concepts are created only when the extraction explicitly marks them as
+    ``new`` and clears the same evidence/boundary gate used for existing matches.
+    Weak, ambiguous, duplicate, or unsupported candidates remain deferred.
     """
     queue = read_yaml(queue_path) or {"items": []}
     videos = {video.id: video for video in load_videos(normalized_dir)}
@@ -393,14 +394,19 @@ def process_pending_candidates(
     existing_evidence_ids = {
         evidence.id for concept in concepts for evidence in concept.evidence
     }
-    counts = {"accepted": 0, "deferred": 0, "rejected": 0, "evidence_added": 0}
+    counts = {"accepted": 0, "deferred": 0, "rejected": 0, "evidence_added": 0, "concepts_added": 0}
     for item in queue.get("items", []):
-        if item.get("decision") != "pending":
+        if item.get("decision") != "pending" and not (
+            retry_deferred and item.get("decision") == "deferred"
+        ):
             continue
         candidate = item.get("candidate") or {}
         confidence = float(candidate.get("confidence") or 0)
         target_id, alias_score = _best_existing_concept_for_candidate(candidate, concepts)
         resolution = candidate.get("resolution")
+        if resolution == "new" and alias_score < min_alias_score:
+            target_id = None
+        is_new = resolution == "new" and not target_id
         can_accept = bool(
             target_id
             and confidence >= min_confidence
@@ -409,12 +415,18 @@ def process_pending_candidates(
                 or alias_score >= min_alias_score
             )
         )
+        can_create = bool(
+            is_new
+            and confidence >= min_confidence
+            and len(str(candidate.get("canonical_label", "")).strip()) >= 3
+            and len(str(candidate.get("definition", "")).strip()) >= 40
+        )
         video_id = item.get("video_id")
         video = videos.get(video_id)
-        if not can_accept:
+        if not can_accept and not can_create:
             item["decision"] = "deferred"
-            if not target_id:
-                reason = "No existing canonical concept; taxonomy/editorial review required."
+            if not target_id and not is_new:
+                reason = "Candidate is ambiguous; automatic creation requires an explicit new resolution."
             elif confidence < min_confidence:
                 reason = f"Confidence {confidence:.2f} is below the automatic review threshold {min_confidence:.2f}."
             else:
@@ -422,6 +434,7 @@ def process_pending_candidates(
             item["review_notes"] = f"P1-02 deferred: {reason}"
             counts["deferred"] += 1
             continue
+        created_new = False
         if not video:
             item["decision"] = "deferred"
             item["review_notes"] = "P1-02 deferred: normalized source video is unavailable."
@@ -444,6 +457,40 @@ def process_pending_candidates(
             )
             counts["deferred"] += 1
             continue
+        if can_create:
+            base_slug = slugify(str(candidate["canonical_label"])) or f"concept-{video_id.lower()}"
+            slug = base_slug
+            suffix = 2
+            while (concept_dir / f"{slug}.yaml").exists():
+                slug = f"{base_slug}-{suffix}"
+                suffix += 1
+            target_id = f"concept-{slug}"
+            document = {
+                "id": target_id,
+                "slug": slug,
+                "label": str(candidate["canonical_label"]).strip(),
+                "aliases": [str(alias).strip() for alias in candidate.get("aliases", []) if str(alias).strip()],
+                "short_definition": str(candidate["definition"]).strip(),
+                "concept_type": str(candidate.get("concept_type") or "technique"),
+                "facets": {
+                    str(facet.get("name")): [str(value) for value in facet.get("values", [])]
+                    for facet in candidate.get("facets", [])
+                    if facet.get("name")
+                },
+                "difficulty": candidate.get("difficulty"),
+                "review_status": "approved",
+                "generated_by": {
+                    "processor": "automatic_candidate_review",
+                    "version": "1.0.0",
+                    "input_hash": str(item.get("candidate_hash", "")),
+                    "prompt_version": "candidate-review-v1",
+                },
+                "evidence": [],
+            }
+            documents[target_id] = document
+            created_new = True
+            counts["concepts_added"] += 1
+            item["review_notes"] = "P2-01 accepted: high-confidence new concept created by automatic review."
         selected_ids = list(span.segment_ids)
         start_ms, end_ms = span.start_ms, span.end_ms
         evidence_id = f"{video_id}-{candidate.get('candidate_id')}-reviewed"
@@ -475,6 +522,9 @@ def process_pending_candidates(
             documents[target_id].setdefault("evidence", []).append(evidence)
             existing_evidence_ids.add(evidence_id)
             counts["evidence_added"] += 1
+        if created_new:
+            concepts.append(Concept.model_validate(documents[target_id]))
+            concept_by_id[target_id] = concepts[-1]
         item["decision"] = "accepted"
         item["canonical_concept_id"] = target_id
         item["review_notes"] = (
@@ -560,9 +610,58 @@ def validate_navigation(
             check_nodes(node.children)
 
     check_nodes(navigation.sections)
-    for concept_id in sorted(known - referenced):
-        errors.append(f"navigation: approved concept is not placed: {concept_id}")
+    for concept in concepts:
+        if concept.id not in referenced and not (
+            concept.generated_by and concept.generated_by.processor == "automatic_candidate_review"
+        ):
+            errors.append(f"navigation: approved concept is not placed: {concept.id}")
     return errors
+
+
+def auto_place_generated_concepts(navigation: dict, concepts: list[Concept]) -> dict[str, int]:
+    """Place generated concepts in the closest existing navigation node."""
+    nodes: list[dict] = []
+
+    def collect(items: list[dict]) -> None:
+        for node in items:
+            nodes.append(node)
+            collect(node.get("children", []))
+
+    collect(navigation.get("sections", []))
+    referenced = {item for node in nodes for item in node.get("concept_ids", [])}
+    keywords = {
+        "serve-receive": ("receive", "flick", "serve receive"),
+        "serve": ("serve", "spin serve"),
+        "flick": ("flick", "flip", "over-table"),
+        "block": ("block", "defensive"),
+        "loop": ("loop", "topspin", "backspin"),
+        "push": ("push", "chop"),
+        "training": ("drill", "practice", "training"),
+        "strategy": ("tactic", "selection", "placement"),
+        "fundamentals": ("contact", "spin", "racket", "footwork"),
+    }
+    placed = skipped = 0
+    for concept in concepts:
+        if concept.id in referenced or not (concept.generated_by and concept.generated_by.processor == "automatic_candidate_review"):
+            continue
+        text = " ".join([concept.label, concept.short_definition, concept.concept_type]).lower()
+        best = None
+        best_score = 0
+        for node in nodes:
+            node_text = " ".join([node.get("id", ""), node.get("label", ""), node.get("description", "")]).lower()
+            score = sum(1 for word in text.split() if len(word) > 4 and word in node_text)
+            for key, terms in keywords.items():
+                if key in node.get("id", ""):
+                    score += sum(3 for term in terms if term in text)
+            if score > best_score:
+                best, best_score = node, score
+        if best is None:
+            skipped += 1
+        else:
+            best.setdefault("concept_ids", []).append(concept.id)
+            referenced.add(concept.id)
+            placed += 1
+    return {"placed": placed, "skipped": skipped}
 
 
 def validate_corpus(

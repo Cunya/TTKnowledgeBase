@@ -130,6 +130,57 @@ evidence:
         - U-z4PamhiUE:00139
         - U-z4PamhiUE:00140
         - U-z4PamhiUE:00141
+  - id: -jaC--EWjFw-concept-serve-planning-reviewed
+    evidence_type: explanation
+    excerpt: Selecting serves deliberately to test the opponent and set up the next shot sequence.
+    reason: The speaker describes using a short serve to test the opponent and then deciding the next tactical step.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: -jaC--EWjFw
+      start_ms: 191366
+      end_ms: 196033
+      url: https://www.youtube.com/watch?v=-jaC--EWjFw&t=191s
+      segment_ids:
+        - -jaC--EWjFw:00065
+        - -jaC--EWjFw:00066
+  - id: r-t1t12EUKw-concept-serve-planning-reviewed
+    evidence_type: definition
+    excerpt: Choosing a serve based on the desired next ball and setting up the attack rather than serving randomly.
+    reason: The speaker explicitly says the serve should be chosen according to how they want to play the next ball and that the serve is meant to set up the attack.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: r-t1t12EUKw
+      start_ms: 430333
+      end_ms: 442166
+      url: https://www.youtube.com/watch?v=r-t1t12EUKw&t=430s
+      segment_ids:
+        - r-t1t12EUKw:00150
+        - r-t1t12EUKw:00151
+        - r-t1t12EUKw:00152
+        - r-t1t12EUKw:00153
+        - r-t1t12EUKw:00154
+  - id: tz4gFEoTOTc-concept-serve-planning-reviewed
+    evidence_type: explanation
+    excerpt: Structuring serve development in stages and combining serves strategically before applying them in match play.
+    reason: The speaker lays out serve combinations, placement changes, feints, and integration into real matches as a progression plan.
+    confidence: 0.89
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: tz4gFEoTOTc
+      start_ms: 508266
+      end_ms: 525900
+      url: https://www.youtube.com/watch?v=tz4gFEoTOTc&t=508s
+      segment_ids:
+        - tz4gFEoTOTc:00166
+        - tz4gFEoTOTc:00167
+        - tz4gFEoTOTc:00168
+        - tz4gFEoTOTc:00169
+        - tz4gFEoTOTc:00171
 relations:
   - relation_type: used_with
     target_concept_id: concept-serve-selection-and-follow-up

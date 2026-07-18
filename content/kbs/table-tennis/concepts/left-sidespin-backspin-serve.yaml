@@ -310,6 +310,52 @@ evidence:
         - VOX-e4IR2xg:00080
         - VOX-e4IR2xg:00081
         - VOX-e4IR2xg:00082
+  - id: LfFnXX51qHw-concept-left-sidespin-backspin-serve-reviewed
+    evidence_type: definition
+    excerpt: A serve that combines left sidespin with backspin/underspin contact and relies on a brush-heavy motion.
+    reason: The speaker explicitly identifies the serve type as sidespin-underspin and tells listeners to practice left sidespin to find the feel.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: LfFnXX51qHw
+      start_ms: 258166
+      end_ms: 270966
+      url: https://www.youtube.com/watch?v=LfFnXX51qHw&t=258s
+      segment_ids:
+        - LfFnXX51qHw:00078
+        - LfFnXX51qHw:00081
+  - id: 03R-8mhgUUU-concept-left-sidespin-backspin-serve-reviewed
+    evidence_type: explanation
+    excerpt: A serve or receive situation involving left sidespin with backspin or mixed spin that changes the push response and placement choice.
+    reason: The speaker explicitly mentions left sidespin, half-spin, no-spin, and mixed backspin in the context of serve and push handling.
+    confidence: 0.89
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 03R-8mhgUUU
+      start_ms: 261666
+      end_ms: 287300
+      url: https://www.youtube.com/watch?v=03R-8mhgUUU&t=261s
+      segment_ids:
+        - 03R-8mhgUUU:00085
+        - 03R-8mhgUUU:00087
+        - 03R-8mhgUUU:00094
+  - id: tz4gFEoTOTc-concept-left-sidespin-backspin-serve-reviewed
+    evidence_type: explanation
+    excerpt: A left sidespin serve with backspin or underspin variation, produced by specific racket angle and brushing contact.
+    reason: The speaker identifies side-under and side-top as contrasted serves, then later names hook side-topspin and hook side-backspin as training targets.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: tz4gFEoTOTc
+      start_ms: 501133
+      end_ms: 506066
+      url: https://www.youtube.com/watch?v=tz4gFEoTOTc&t=501s
+      segment_ids:
+        - tz4gFEoTOTc:00163
+        - tz4gFEoTOTc:00164
 relations:
   - relation_type: variation_of
     target_concept_id: concept-sidespin-topspin-serve

@@ -370,3 +370,4 @@ Track relation counts, concepts with no outgoing relations, cross-listed concept
 - Concept articles expose the reviewed definition in an explicitly labeled Summary section before their evidence library.
 - All 73 published concepts now have a coherent direct `evidence_summary` paragraph. The 72 generated essays were rewritten in batched Codex calls from approved evidence reasons, pass paragraph/attribution checks, and carry source hashes plus generator metadata; hand-authored summaries remain protected.
 - Deterministic cleanup of transcript-reporting leads from visible moment titles.
+# Automatic new-concept promotion is now implemented: high-confidence explicit `new` candidates with valid evidence can create canonical YAML, while ambiguous and duplicate candidates remain deferred. `process-pending --retry-deferred` backfills previously processed videos.

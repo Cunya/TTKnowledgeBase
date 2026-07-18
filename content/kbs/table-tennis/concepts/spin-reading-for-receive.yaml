@@ -1,0 +1,70 @@
+id: concept-spin-reading-for-receive
+slug: spin-reading-for-receive
+label: Spin reading for receive
+aliases:
+  - spin reading isn't precise
+  - reading spin
+short_definition: Judging the incoming spin accurately before choosing a receive or flick action.
+evidence_summary: >-
+  Spin reading for receive brings together several connected ideas. Wrist movement can cause
+  errors if spin reading is not precise. The method works only without fake motions, that
+  deception makes the read harder, and that fake motion can cause misreads. Together, these
+  principles show how the topic is applied in practice while preserving the relevant distinctions
+  and constraints.
+evidence_summary_source_hash: "sha256:d50dec292634b6b6b41de66f0e8af989c57233186331782a9b3c121b62b50262"
+evidence_summary_generator: "deterministic"
+concept_type: fundamentals
+facets:
+  category:
+    - fundamentals
+    - tactic
+  side:
+    - neutral
+  spin:
+    - backspin
+    - topspin
+    - sidespin
+    - no-spin
+  distance:
+    - close
+  level:
+    - intermediate
+difficulty: intermediate
+review_status: approved
+generated_by:
+  processor: automatic_candidate_review
+  version: 1.0.0
+  input_hash: a14506c9ec201880525a275d1e59bb5c04149449c183a9a1a684665363216602
+  prompt_version: candidate-review-v1
+evidence:
+  - id: StQ86EhPFpo-concept-spin-reading-reviewed
+    evidence_type: explanation
+    excerpt: Judging the incoming spin accurately before choosing a receive or flick action.
+    reason: The speaker directly says wrist movement can cause errors if spin reading is not precise.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: StQ86EhPFpo
+      start_ms: 545960
+      end_ms: 553680
+      url: https://www.youtube.com/watch?v=StQ86EhPFpo&t=545s
+      segment_ids:
+        - StQ86EhPFpo:00200
+        - StQ86EhPFpo:00201
+        - StQ86EhPFpo:00202
+  - id: VRnCe4k1tmU-concept-deceptive-motion-and-fake-motions-in-spin-reading-reviewed
+    evidence_type: explanation
+    excerpt: Deceptive serve motion makes spin identification harder, so the reader must rely on the true forearm direction at contact rather than the visible fake motion.
+    reason: The speaker states that the method works only without fake motions, that deception makes the read harder, and that fake motion can cause misreads.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: VRnCe4k1tmU
+      start_ms: 98800
+      end_ms: 104733
+      url: https://www.youtube.com/watch?v=VRnCe4k1tmU&t=98s
+      segment_ids:
+        - VRnCe4k1tmU:00037
+        - VRnCe4k1tmU:00038

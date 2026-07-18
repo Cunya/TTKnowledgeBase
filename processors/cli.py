@@ -11,6 +11,7 @@ from typing import Annotated
 import typer
 from rich.console import Console
 from rich.table import Table
+from ruamel.yaml import YAML
 
 from .benchmark import render_benchmark_markdown, run_quality_benchmark, select_benchmark_videos
 from .boundaries import (
@@ -37,6 +38,7 @@ from .ingest import (
 from .llm_budget import LLMBudgetExceeded, LLMTokenBudget
 from .models import KnowledgeNavigation, PublishCorpus
 from .pipeline import (
+    auto_place_generated_concepts,
     build_quality_report,
     build_review_queue,
     extract_video,
@@ -52,11 +54,13 @@ from .pipeline import (
 )
 from .pipeline import publish as publish_corpus
 from .progress import build_progress_report, write_recent_snapshot
+from .review_diagnostics import build_review_diagnostics
 from .utils import read_json, read_yaml, sha256_json, write_json
 from .workspace import KnowledgeBasePaths, load_knowledge_base
 
 ROOT = Path(__file__).resolve().parents[1]
 console = Console()
+roundtrip_yaml = YAML()
 
 
 def retry_window_remaining(entry: dict, now: datetime | None = None) -> timedelta | None:
@@ -546,6 +550,9 @@ def process_pending(
     min_confidence: Annotated[
         float, typer.Option(min=0, max=1, help="Minimum confidence for automatic acceptance")
     ] = 0.85,
+    retry_deferred: Annotated[
+        bool, typer.Option(help="Re-evaluate previously deferred candidates, including the full backfill")
+    ] = False,
     kb: KbOption = None,
 ) -> None:
     """Triage cached pending candidates before any new scrape."""
@@ -557,12 +564,44 @@ def process_pending(
         paths.data("normalized"),
         concepts,
         min_confidence=min_confidence,
+        retry_deferred=retry_deferred,
     )
+    diagnostics_output = ROOT / "app" / "src" / "data" / "generated" / f"{paths.id}-concept-review.json"
+    diagnostics = build_review_diagnostics(
+        paths.content / "annotations" / "review-queue.yaml",
+        paths.content / "concepts",
+        diagnostics_output,
+    )
+    navigation_counts = {"placed": 0, "skipped": 0}
+    navigation_path = paths.config / "navigation.yaml"
+    if navigation_path.exists():
+        navigation = read_yaml(navigation_path)
+        navigation_counts = auto_place_generated_concepts(navigation, load_reviewed_concepts(paths.content / "concepts"))
+        temporary = navigation_path.with_suffix(".yaml.tmp")
+        with temporary.open("w", encoding="utf-8", newline="") as handle:
+            roundtrip_yaml.dump(navigation, handle)
+        temporary.replace(navigation_path)
     console.print(
         f"[green]Processed pending candidates for {paths.name}[/green]: "
         f"{counts['accepted']} accepted, {counts['deferred']} deferred, "
-        f"{counts['rejected']} rejected, {counts['evidence_added']} evidence moments added"
+        f"{counts['rejected']} rejected, {counts['evidence_added']} evidence moments added, "
+        f"{counts['concepts_added']} concepts added; diagnostics refreshed "
+        f"({diagnostics['total']} deferred candidates); navigation placed "
+        f"{navigation_counts['placed']} concepts"
     )
+
+
+@app.command("build-review-diagnostics")
+def review_diagnostics(kb: KbOption = None) -> None:
+    """Build the local-only deferred/new-concept diagnostic view data."""
+    paths = kb_paths(kb)
+    output = ROOT / "app" / "src" / "data" / "generated" / f"{paths.id}-concept-review.json"
+    payload = build_review_diagnostics(
+        paths.content / "annotations" / "review-queue.yaml",
+        paths.content / "concepts",
+        output,
+    )
+    console.print(f"[green]{paths.name}: {payload['total']} deferred candidates diagnosed[/green]")
 
 
 def refresh_catalog() -> None:

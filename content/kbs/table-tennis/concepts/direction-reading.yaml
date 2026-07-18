@@ -472,6 +472,54 @@ evidence:
       segment_ids:
         - 9BKPM_RMmtg:00018
         - 9BKPM_RMmtg:00025
+  - id: NFfY66W2PGM-concept-direction-reading-reviewed
+    evidence_type: explanation
+    excerpt: Reading the intended direction or spin of a serve or shot before committing to the return decision.
+    reason: The discussion centers on guessing the spin and making it hard to tell from the serve motion.
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: NFfY66W2PGM
+      start_ms: 33800
+      end_ms: 56033
+      url: https://www.youtube.com/watch?v=NFfY66W2PGM&t=33s
+      segment_ids:
+        - NFfY66W2PGM:00001
+        - NFfY66W2PGM:00004
+        - NFfY66W2PGM:00006
+  - id: -jaC--EWjFw-concept-direction-reading-reviewed
+    evidence_type: definition
+    excerpt: Using the opponent's contact, body position, and recovery to decide where to move and where to play next.
+    reason: The speaker says the opponent's contact determines positioning, footwork, timing, backswing, and power direction.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: -jaC--EWjFw
+      start_ms: 93866
+      end_ms: 102300
+      url: https://www.youtube.com/watch?v=-jaC--EWjFw&t=93s
+      segment_ids:
+        - -jaC--EWjFw:00028
+        - -jaC--EWjFw:00029
+        - -jaC--EWjFw:00030
+        - -jaC--EWjFw:00031
+        - -jaC--EWjFw:00032
+  - id: DSMYWiOahFU-concept-direction-reading-reviewed
+    evidence_type: definition
+    excerpt: Using the opponent's racket or paddle angle at the moment of contact to infer ball direction before the ball crosses the net, rather than guessing after the bounce.
+    reason: The speaker explicitly says tracking the ball means watching the opponent's racket, judging direction at contact, and reading left/right or forward/backward.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: DSMYWiOahFU
+      start_ms: 304600
+      end_ms: 308866
+      url: https://www.youtube.com/watch?v=DSMYWiOahFU&t=304s
+      segment_ids:
+        - DSMYWiOahFU:00096
 relations:
   - relation_type: used_with
     target_concept_id: concept-ready-position
