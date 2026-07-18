@@ -887,6 +887,44 @@ evidence:
       segment_ids:
         - z6TpyCclpJg:00027
         - z6TpyCclpJg:00028
+  - id: BAvk9myZ1qg-concept-brush-around-the-ball-reviewed
+    evidence_type: explanation
+    excerpt: Creating a curved brushing path rather than moving straight forward so the racket can lift and brush the ball cleanly.
+    reason: The speaker says a straight forward motion causes edge contact and that an arc is needed so proper brushing can happen.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: BAvk9myZ1qg
+      start_ms: 6500
+      end_ms: 24233
+      url: https://www.youtube.com/watch?v=BAvk9myZ1qg&t=6s
+      segment_ids:
+        - BAvk9myZ1qg:00002
+        - BAvk9myZ1qg:00003
+        - BAvk9myZ1qg:00004
+        - BAvk9myZ1qg:00005
+        - BAvk9myZ1qg:00006
+        - BAvk9myZ1qg:00007
+        - BAvk9myZ1qg:00008
+  - id: C2CBt2468oI-concept-brush-around-the-ball-reviewed
+    evidence_type: definition
+    excerpt: A curved brushing action that wraps around the ball rather than striking straight through it, creating a larger contact area and more arc.
+    reason: The speaker explains brushing as wrapping or covering the ball, with a curved path that increases the contact area and arc.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: C2CBt2468oI
+      start_ms: 468100
+      end_ms: 494800
+      url: https://www.youtube.com/watch?v=C2CBt2468oI&t=468s
+      segment_ids:
+        - C2CBt2468oI:00124
+        - C2CBt2468oI:00125
+        - C2CBt2468oI:00130
+        - C2CBt2468oI:00131
+        - C2CBt2468oI:00132
 relations:
   - relation_type: part_of
     target_concept_id: concept-forehand-loop-swing-path

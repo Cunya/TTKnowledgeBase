@@ -11,9 +11,12 @@ evidence_summary: >-
   incorrect. Difficulty hooking the wrist at the start of looping, then instructs keeping the
   index finger fixed, hooking the side, and driving forward and upward with wrist pressure at
   impact. A tight wrist blocks rotation space, shows wrist rotation, and instructs opening the
-  wrist and hooking inward through contact. Together, these principles show how the topic is
-  applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:943a15641c8154eefe66890b8d5752ede72916417ac5f18f4f4aaca4c3d1ed25"
+  wrist and hooking inward through contact. Wrist flipping, instructs to fix the wrist, and thumb
+  and finger pressure stabilize the racket face during contact and force generation. The wrist
+  must be hooked before contact and that hooking the wrist helps hit solidly and create friction.
+  To keep the wrist back and hooked. Together, these principles show how the topic is applied in
+  practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:c9f9a0ec8238637fa1d4817282e9180d055c17c30c7049951bde7d798e8ddad1"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -94,3 +97,56 @@ evidence:
         - 25Ohh2RJcWk:00041
         - 25Ohh2RJcWk:00042
         - 25Ohh2RJcWk:00043
+  - id: hwUcyGY2ApQ-concept-backhand-wrist-stability-and-hooking-reviewed
+    evidence_type: explanation
+    excerpt: The backhand needs a stable wrist and hand structure; uncontrolled wrist flipping causes errors, while firm hooking and pressure make the racket face stable.
+    reason: The speaker directly criticizes wrist flipping, instructs to fix the wrist, and explains that thumb and finger pressure stabilize the racket face during contact and force generation.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: hwUcyGY2ApQ
+      start_ms: 489766
+      end_ms: 518700
+      url: https://www.youtube.com/watch?v=hwUcyGY2ApQ&t=489s
+      segment_ids:
+        - hwUcyGY2ApQ:00129
+        - hwUcyGY2ApQ:00130
+        - hwUcyGY2ApQ:00131
+        - hwUcyGY2ApQ:00132
+        - hwUcyGY2ApQ:00133
+        - hwUcyGY2ApQ:00134
+        - hwUcyGY2ApQ:00135
+        - hwUcyGY2ApQ:00136
+        - hwUcyGY2ApQ:00137
+  - id: 3h7yvxJrCtM-concept-backhand-wrist-stability-and-hooking-reviewed
+    evidence_type: explanation
+    excerpt: Maintaining a hooked, stable wrist in the backhand so the stroke can generate solid contact and friction.
+    reason: The transcript explicitly says the wrist must be hooked before contact and that hooking the wrist helps hit solidly and create friction.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 3h7yvxJrCtM
+      start_ms: 236400
+      end_ms: 263199
+      url: https://www.youtube.com/watch?v=3h7yvxJrCtM&t=236s
+      segment_ids:
+        - 3h7yvxJrCtM:00084
+        - 3h7yvxJrCtM:00085
+        - 3h7yvxJrCtM:00091
+        - 3h7yvxJrCtM:00092
+  - id: PBYIXS9NP0s-concept-backhand-wrist-stability-and-hooking-reviewed
+    evidence_type: definition
+    excerpt: Keep the backhand wrist hooked or stable during the stroke rather than letting it collapse loosely.
+    reason: The speaker explicitly instructs to keep the wrist back and hooked.
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: PBYIXS9NP0s
+      start_ms: 572959
+      end_ms: 578560
+      url: https://www.youtube.com/watch?v=PBYIXS9NP0s&t=572s
+      segment_ids:
+        - PBYIXS9NP0s:00179

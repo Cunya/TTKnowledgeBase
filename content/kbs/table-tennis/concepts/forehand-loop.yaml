@@ -694,6 +694,86 @@ evidence:
       segment_ids:
         - Nj4ivxRAizs:00051
         - Nj4ivxRAizs:00059
+  - id: VPlWkjj9BjA-concept-forehand-loop-reviewed
+    evidence_type: example
+    excerpt: An attacking topspin stroke used here as the response after a short no-spin serve or push.
+    reason: The speaker gives the example of serving no-spin, waiting for a push, then looping it up, and later says to get ready to rally topspin.
+    confidence: 0.87
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: VPlWkjj9BjA
+      start_ms: 107400
+      end_ms: 114433
+      url: https://www.youtube.com/watch?v=VPlWkjj9BjA&t=107s
+      segment_ids:
+        - VPlWkjj9BjA:00040
+        - VPlWkjj9BjA:00042
+        - VPlWkjj9BjA:00044
+  - id: 3lTc51PYWSQ-concept-forehand-loop-reviewed
+    evidence_type: definition
+    excerpt: A forehand topspin stroke where the arm lowers and the racket head drops to create an arcing contact path.
+    reason: The transcript explicitly discusses looping a topspin ball, forehand topspin, and the resulting arc created by the lowered forearm and racket head drop.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 3lTc51PYWSQ
+      start_ms: 79066
+      end_ms: 100866
+      url: https://www.youtube.com/watch?v=3lTc51PYWSQ&t=79s
+      segment_ids:
+        - 3lTc51PYWSQ:00097
+        - 3lTc51PYWSQ:00105
+        - 3lTc51PYWSQ:00106
+  - id: oB03htaZU8A-concept-forehand-loop-reviewed
+    evidence_type: definition
+    excerpt: A forehand topspin looping stroke built from brushing, then driving forward, then braking to control the finish.
+    reason: The speaker explicitly breaks looping into brushing, forward drive, and braking, which matches the forehand loop concept.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: oB03htaZU8A
+      start_ms: 33
+      end_ms: 6333
+      url: https://www.youtube.com/watch?v=oB03htaZU8A&t=0s
+      segment_ids:
+        - oB03htaZU8A:00000
+        - oB03htaZU8A:00001
+  - id: 7LXrK-o5FmU-concept-forehand-loop-reviewed
+    evidence_type: explanation
+    excerpt: A forehand topspin action used against backspin, where the player prepares space, swings forward, and combines the stroke with the ball's motion to generate power.
+    reason: The speaker names 'drive forward' as a key point in the forehand stroke and explains it as swinging the racket forward.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 7LXrK-o5FmU
+      start_ms: 33
+      end_ms: 9666
+      url: https://www.youtube.com/watch?v=7LXrK-o5FmU&t=0s
+      segment_ids:
+        - 7LXrK-o5FmU:00000
+        - 7LXrK-o5FmU:00003
+  - id: C2CBt2468oI-concept-forehand-loop-reviewed
+    evidence_type: explanation
+    excerpt: A topspin loop stroke where the player can choose a more forceful, higher-impact action for power or a more brushed action for safety.
+    reason: The speaker explicitly contrasts looping with more impact for power and more brushing for safety.
+    confidence: 0.89
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: C2CBt2468oI
+      start_ms: 13766
+      end_ms: 23100
+      url: https://www.youtube.com/watch?v=C2CBt2468oI&t=13s
+      segment_ids:
+        - C2CBt2468oI:00003
+        - C2CBt2468oI:00004
+        - C2CBt2468oI:00005
+        - C2CBt2468oI:00006
+        - C2CBt2468oI:00007
 relations:
   - relation_type: used_with
     target_concept_id: concept-contact-point

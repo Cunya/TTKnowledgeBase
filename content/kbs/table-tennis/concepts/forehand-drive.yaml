@@ -292,6 +292,58 @@ evidence:
       segment_ids:
         - CnpJHOuT9zk:00009
         - CnpJHOuT9zk:00013
+  - id: 3HRfwQrevc4-concept-forehand-drive-reviewed
+    evidence_type: explanation
+    excerpt: A forehand drive performed with controlled rotation and compact backswing.
+    reason: The speaker explicitly names forehand drive and describes its controlled rotation, compact backswing, and body-led execution.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 3HRfwQrevc4
+      start_ms: 364700
+      end_ms: 376500
+      url: https://www.youtube.com/watch?v=3HRfwQrevc4&t=364s
+      segment_ids:
+        - 3HRfwQrevc4:00121
+        - 3HRfwQrevc4:00122
+        - 3HRfwQrevc4:00123
+        - 3HRfwQrevc4:00124
+        - 3HRfwQrevc4:00125
+        - 3HRfwQrevc4:00126
+  - id: 3lTc51PYWSQ-concept-forehand-drive-reviewed
+    evidence_type: definition
+    excerpt: A forehand drive stroke with a relatively flat forearm angle and compact forward strike path.
+    reason: The speaker names the forehand drive and describes its backswing and flatter forearm angle compared with looping.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 3lTc51PYWSQ
+      start_ms: 300
+      end_ms: 12433
+      url: https://www.youtube.com/watch?v=3lTc51PYWSQ&t=0s
+      segment_ids:
+        - 3lTc51PYWSQ:00078
+        - 3lTc51PYWSQ:00080
+        - 3lTc51PYWSQ:00081
+        - 3lTc51PYWSQ:00082
+  - id: aVdePPUaVP8-concept-forehand-drive-reviewed
+    evidence_type: definition
+    excerpt: A forehand driving stroke that contacts the ball from behind and emphasizes forward impact, crisp sound, and controlled forward motion.
+    reason: The speaker explicitly names the forehand drive and says the stroke is taken from behind the ball.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: aVdePPUaVP8
+      start_ms: 40719
+      end_ms: 53039
+      url: https://www.youtube.com/watch?v=aVdePPUaVP8&t=40s
+      segment_ids:
+        - aVdePPUaVP8:00017
+        - aVdePPUaVP8:00018
+        - aVdePPUaVP8:00019
 relations:
   - relation_type: contrasts_with
     target_concept_id: concept-forehand-loop

@@ -71,6 +71,16 @@ It incorporates high-confidence matches and can create a new canonical concept w
 
 The `cp` shortcut follows the same order: finish eligible cached transcripts and candidates first; when no local work remains, continue with the next small, controlled discovery/ingestion batch. It must still obey the prioritized backlog, acquisition-policy checks, pacing limits, and block circuit breaker. A cleared local queue does not authorize bypassing an active “no large scrape” gate.
 
+For a safe Windows Task Scheduler entry point, run:
+
+```powershell
+Set-Location D:\Code\AIAssistedProjects\TTKnowledgeBase
+.\scripts\run-daily-processing.ps1 -Kb table-tennis -DryRun
+.\scripts\run-daily-processing.ps1 -Kb table-tennis
+```
+
+The wrapper uses a private per-KB lock, writes `data/manifests/<kb>/daily-processing.latest.json`, and exits with code `10` when another run is active. It only runs `process-pending`; it does not scrape, commit, push, deploy, or publish unreviewed knowledge. The current local Task Scheduler registration runs daily at 21:00 Europe/Helsinki time; recreate it manually with `powershell.exe -NoProfile -ExecutionPolicy Bypass -File ...` if the workstation task is lost.
+
 The `cm` shortcut is message-only: review the current local changes and return a suggested commit message with completed features written in past tense. Do not stage files, run `git commit`, or create a commit; the operator commits manually.
 
 ## Study and backlog synchronization

@@ -264,6 +264,22 @@ evidence:
       segment_ids:
         - -QdTaX8ejCM:00088
         - -QdTaX8ejCM:00095
+  - id: PBYIXS9NP0s-concept-backhand-loop-reviewed
+    evidence_type: definition
+    excerpt: A backhand topspin action that expands the drive stroke with brushing and a larger arc, especially when looping against backspin.
+    reason: The loop is described as enlarging the drive stroke, adding brush, and becoming the next step against backspin.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: PBYIXS9NP0s
+      start_ms: 264560
+      end_ms: 284800
+      url: https://www.youtube.com/watch?v=PBYIXS9NP0s&t=264s
+      segment_ids:
+        - PBYIXS9NP0s:00087
+        - PBYIXS9NP0s:00088
+        - PBYIXS9NP0s:00091
 relations:
   - relation_type: used_with
     target_concept_id: concept-backhand-topspin-body-coordination

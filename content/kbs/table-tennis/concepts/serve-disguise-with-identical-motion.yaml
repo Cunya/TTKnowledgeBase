@@ -9,10 +9,12 @@ short_definition: A serve-disguise method where the start and finish of the moti
 evidence_summary: >-
   Serve disguise with identical motion brings together several connected ideas. The starting and
   finishing motions must look identical and a fake motion to hide spin. The earlier motion was too
-  obvious and that a later version creates deception and is more deceptive. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:2171deb108ead348648097d456af2f5e91d958cb862949d2eaac8ec605dec17f"
+  obvious and that a later version creates deception and is more deceptive. The serve becomes
+  useless if exposed and asks how to make topspin look like backspin, indicating disguise by
+  identical motion. Serves that look different to the receiver and players create serve patterns
+  to trick opponents. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:49c258569fadb5051c83e50945e7396b039a06fce38ffcb730b064bc72d575b2"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -73,3 +75,38 @@ evidence:
         - j90jCkrtITo:00240
         - j90jCkrtITo:00244
         - j90jCkrtITo:00245
+  - id: vxNq1b0J0bU-concept-serve-disguise-with-identical-motion-reviewed
+    evidence_type: explanation
+    excerpt: Using nearly identical serving motion to hide whether the serve carries topspin or backspin so the opponent cannot read it early.
+    reason: The speaker says the serve becomes useless if exposed and asks how to make topspin look like backspin, indicating disguise by identical motion.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: vxNq1b0J0bU
+      start_ms: 23333
+      end_ms: 38533
+      url: https://www.youtube.com/watch?v=vxNq1b0J0bU&t=23s
+      segment_ids:
+        - vxNq1b0J0bU:00006
+        - vxNq1b0J0bU:00007
+        - vxNq1b0J0bU:00008
+        - vxNq1b0J0bU:00009
+  - id: _P1j6GqbR7w-concept-serve-disguise-with-identical-motion-reviewed
+    evidence_type: explanation
+    excerpt: Deceiving the receiver by making serves look similar while varying spin or outcome.
+    reason: The speaker describes serves that look different to the receiver and says players create serve patterns to trick opponents.
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: _P1j6GqbR7w
+      start_ms: 302100
+      end_ms: 317733
+      url: https://www.youtube.com/watch?v=_P1j6GqbR7w&t=302s
+      segment_ids:
+        - _P1j6GqbR7w:00070
+        - _P1j6GqbR7w:00073
+        - _P1j6GqbR7w:00074
+        - _P1j6GqbR7w:00075
+        - _P1j6GqbR7w:00076

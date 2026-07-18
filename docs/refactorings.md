@@ -54,3 +54,4 @@
 
 - Keep caption-unit derivation and boundary assessment in one shared module (`processors/boundaries.py`) so candidate triage and corpus reporting use identical gap, duration, and flag rules.
 - Keep proposed snapped playback bounds separate from cited segment IDs; publishing a wider interval without an explicit review would blur the claim-support boundary.
+- Scheduled processing now has a reusable PowerShell wrapper for locking and run manifests; the eventual full daily-run orchestrator should reuse those concerns instead of duplicating them.

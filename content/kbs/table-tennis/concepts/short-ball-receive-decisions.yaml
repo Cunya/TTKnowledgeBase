@@ -558,6 +558,41 @@ evidence:
         - wSzmpXHp64Q:00011
         - wSzmpXHp64Q:00014
         - wSzmpXHp64Q:00015
+  - id: EtTzu7KvqNY-concept-short-ball-receive-decisions-reviewed
+    evidence_type: explanation
+    excerpt: Choosing between flicking and pushing on short or half-spin/no-spin balls based on the ball and opponent.
+    reason: The speaker explicitly discusses pushing or flicking short, half-spin, and no-spin balls as alternative receive choices.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: EtTzu7KvqNY
+      start_ms: 466466
+      end_ms: 487633
+      url: https://www.youtube.com/watch?v=EtTzu7KvqNY&t=466s
+      segment_ids:
+        - EtTzu7KvqNY:00156
+        - EtTzu7KvqNY:00162
+        - EtTzu7KvqNY:00163
+        - EtTzu7KvqNY:00165
+  - id: lcp99UuLuus-concept-short-ball-receive-decisions-reviewed
+    evidence_type: explanation
+    excerpt: Choose the receive action for short serves or short balls, typically push, flick, or flip, with flick emphasized as the best attack option.
+    reason: The speaker says the best way to handle short balls is the backhand flick because it can counter most types of spin.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: lcp99UuLuus
+      start_ms: 34066
+      end_ms: 43766
+      url: https://www.youtube.com/watch?v=lcp99UuLuus&t=34s
+      segment_ids:
+        - lcp99UuLuus:00013
+        - lcp99UuLuus:00014
+        - lcp99UuLuus:00015
+        - lcp99UuLuus:00016
+        - lcp99UuLuus:00017
 relations:
   - relation_type: part_of
     target_concept_id: concept-short-vs-long-serve-receive

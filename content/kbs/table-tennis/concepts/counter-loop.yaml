@@ -97,6 +97,36 @@ evidence:
       url: "https://www.youtube.com/watch?v=i68OG8UzMyQ&t=74s"
       segment_ids:
         - "i68OG8UzMyQ:00023"
+  - id: wpaKC8pALyQ-concept-counter-loop-reviewed
+    evidence_type: definition
+    excerpt: A topspin counterattack played back against an opponent's attacking loop.
+    reason: The speaker says the opponent will attack with a topspin loop and that we should counter-loop immediately.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: wpaKC8pALyQ
+      start_ms: 7033
+      end_ms: 15600
+      url: https://www.youtube.com/watch?v=wpaKC8pALyQ&t=7s
+      segment_ids:
+        - wpaKC8pALyQ:00002
+        - wpaKC8pALyQ:00005
+  - id: eWmcldqt4io-concept-counter-loop-reviewed
+    evidence_type: definition
+    excerpt: An attacking topspin response used against an incoming loop, especially a high-arc or strongly spinning loop.
+    reason: The speaker explicitly introduces the topic as counter-looping and frames it as defending against a high-arc loop.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: eWmcldqt4io
+      start_ms: 31566
+      end_ms: 39500
+      url: https://www.youtube.com/watch?v=eWmcldqt4io&t=31s
+      segment_ids:
+        - eWmcldqt4io:00001
+        - eWmcldqt4io:00002
 relations:
   - relation_type: variation_of
     target_concept_id: concept-forehand-loop

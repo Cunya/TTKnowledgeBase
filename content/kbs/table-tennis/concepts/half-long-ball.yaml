@@ -7,9 +7,13 @@ aliases:
 short_definition: A serve or return that lands on the table first and then bounces off the table, creating a mid-depth receive problem.
 evidence_summary: >-
   Half-long ball brings together several connected ideas. Explicitly defines half long as a ball
-  whose first bounce lands off the table. Together, these principles show how the topic is applied
-  in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:dab82f0ff3ec6551121a8f145b67060e654c11f2048411cb8a85f34245d2b0ca"
+  whose first bounce lands off the table. The halfway region and balls landing inside halfway are
+  half-long balls, while half-way balls will go long. A shot that looks like a short push but
+  whose high point is already deep, and the ball half-bounces out. The situation as half-long,
+  clarifies it is not full long, and labels it as a half-long (half-table) ball. Balls that go
+  long after one bounce and names them half-long balls. Together, these principles show how the
+  topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:1267462916c77010e74e93b128aa04f2041a35cf5a730112dfaee3798207a536"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -41,3 +45,71 @@ evidence:
         - 1fHWnt8IlbI:00003
         - 1fHWnt8IlbI:00004
         - 1fHWnt8IlbI:00005
+  - id: 1Z-HPOfS_f0-concept-half-long-ball-reviewed
+    evidence_type: definition
+    excerpt: A ball that lands inside the halfway region of the table and is long enough that it should usually be treated as a more offensive or looping opportunity.
+    reason: The speaker explicitly defines the halfway region and says balls landing inside halfway are half-long balls, while half-way balls will go long.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 1Z-HPOfS_f0
+      start_ms: 303966
+      end_ms: 331533
+      url: https://www.youtube.com/watch?v=1Z-HPOfS_f0&t=303s
+      segment_ids:
+        - 1Z-HPOfS_f0:00072
+        - 1Z-HPOfS_f0:00075
+        - 1Z-HPOfS_f0:00077
+        - 1Z-HPOfS_f0:00078
+        - 1Z-HPOfS_f0:00082
+        - 1Z-HPOfS_f0:00083
+  - id: 7LXrK-o5FmU-concept-half-long-ball-reviewed
+    evidence_type: definition
+    excerpt: A ball that lands and then carries deep enough to sit between short and long, making it easier to loop than a very short ball.
+    reason: The speaker describes a shot that looks like a short push but whose high point is already deep, and says the ball half-bounces out.
+    confidence: 0.92
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 7LXrK-o5FmU
+      start_ms: 103533
+      end_ms: 112133
+      url: https://www.youtube.com/watch?v=7LXrK-o5FmU&t=103s
+      segment_ids:
+        - 7LXrK-o5FmU:00039
+        - 7LXrK-o5FmU:00043
+  - id: b_F4I4x4dl0-concept-half-long-ball-reviewed
+    evidence_type: definition
+    excerpt: A ball that lands between short and long, often requiring early attack or special receive judgment.
+    reason: The speaker names the situation as half-long, clarifies it is not full long, and labels it as a half-long (half-table) ball.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: b_F4I4x4dl0
+      start_ms: 262600
+      end_ms: 280500
+      url: https://www.youtube.com/watch?v=b_F4I4x4dl0&t=262s
+      segment_ids:
+        - b_F4I4x4dl0:00087
+        - b_F4I4x4dl0:00089
+        - b_F4I4x4dl0:00091
+        - b_F4I4x4dl0:00092
+  - id: lcp99UuLuus-concept-half-long-ball-reviewed
+    evidence_type: definition
+    excerpt: A ball that lands on the table and then goes long after one bounce, making it attackable rather than safe to push.
+    reason: The speaker describes balls that go long after one bounce and names them half-long balls.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: lcp99UuLuus
+      start_ms: 64366
+      end_ms: 75733
+      url: https://www.youtube.com/watch?v=lcp99UuLuus&t=64s
+      segment_ids:
+        - lcp99UuLuus:00026
+        - lcp99UuLuus:00027
+        - lcp99UuLuus:00028
+        - lcp99UuLuus:00029

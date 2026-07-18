@@ -24,7 +24,7 @@ The latest studies were checked against the backlog rather than left as standalo
 
 | Study or review | Findings carried into the backlog | Current item(s) |
 | --- | --- | --- |
-| `docs/daily-pipeline-automation-review-2026-07-16.md` | ChatGPT app shortcuts are not a runtime dependency, but unattended runs need a lock, idempotent workset, run manifest, exit classes, scheduler environment, and explicit human gates. | P1-16 (planned) |
+| `docs/daily-pipeline-automation-review-2026-07-16.md` | ChatGPT app shortcuts are not a runtime dependency, but unattended runs need a lock, idempotent workset, run manifest, exit classes, scheduler environment, and explicit human gates. | P1-16 (in progress) |
 | `docs/moment-boundary-analysis-study-2026-07-16.md` | Caption-derived moments can start/end mid-sentence or be too short; boundary flags, context separation, a gold set, and script-first/LLM-optional phases are required. | P1-14 |
 | `docs/toc-automation-review.md` | TOCs should remain deterministic and build-time LLM-free; creator chapters and pause/keyword grouping are optional inputs, while anchors and timestamps need permanent validation. | P0-06, P2-06 |
 | `docs/content-quotation-audit-2026-07-15.md` | Complete/high-ratio overlaps were cleared, but excerpt type, repeated-expression monitoring, and a regression validator remain needed. | P0-01 follow-up; new P1-17 |
@@ -287,7 +287,7 @@ The numerical baseline above reflects the latest published artifacts, not the ol
 
 **Dependencies:** P1-02 cached candidate triage, P1-15 daily LLM budget, P0-04 source quarantine/removal controls, and a confirmed local Codex CLI authentication/runtime environment.
 
-**Done when:** a scheduled invocation runs without ChatGPT app assistance, two invocations cannot overlap, reruns are idempotent unless explicitly forced, blocks/budget/auth/validation failures defer or stop safely with a private manifest, and no unreviewed knowledge or private processing data is published. See `docs/daily-pipeline-automation-review-2026-07-16.md`. **Status:** Planned; review complete, implementation not started.
+**Done when:** a scheduled invocation runs without ChatGPT app assistance, two invocations cannot overlap, reruns are idempotent unless explicitly forced, blocks/budget/auth/validation failures defer or stop safely with a private manifest, and no unreviewed knowledge or private processing data is published. See `docs/daily-pipeline-automation-review-2026-07-16.md`. **Status:** In progress; cache-first Task Scheduler wrapper implemented, full unattended acquisition and daily-run CLI still pending.
 
 ### P1-17 - Add excerpt classification and overlap regression protection (new 2026-07-16)
 

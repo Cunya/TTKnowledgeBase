@@ -481,6 +481,48 @@ evidence:
         - Z5OyMPqDVmc:00166
         - Z5OyMPqDVmc:00170
         - Z5OyMPqDVmc:00171
+  - id: UknMVwzNNr8-concept-hook-serve-mechanics-reviewed
+    evidence_type: explanation
+    excerpt: A hook serve developed through staged training of push, side-under, and side-up actions.
+    reason: The speaker names the hook serve directly and describes its training progression from push to side-under, side-up, lift, and chop.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: UknMVwzNNr8
+      start_ms: 198100
+      end_ms: 221400
+      url: https://www.youtube.com/watch?v=UknMVwzNNr8&t=198s
+      segment_ids:
+        - UknMVwzNNr8:00072
+        - UknMVwzNNr8:00073
+        - UknMVwzNNr8:00074
+        - UknMVwzNNr8:00075
+        - UknMVwzNNr8:00076
+        - UknMVwzNNr8:00077
+        - UknMVwzNNr8:00078
+        - UknMVwzNNr8:00079
+        - UknMVwzNNr8:00080
+  - id: pRuBdX0ZLgg-concept-hook-serve-mechanics-reviewed
+    evidence_type: explanation
+    excerpt: Serve mechanics that start with a low racket, drop and hook the wrist, brush the ball forward or to the side, and finish downward to create a fast, spinny hook serve.
+    reason: 'The speaker gives the serving sequence explicitly: drop and hook the wrist, brush to the side, then whip forward.'
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: pRuBdX0ZLgg
+      start_ms: 135400
+      end_ms: 160533
+      url: https://www.youtube.com/watch?v=pRuBdX0ZLgg&t=135s
+      segment_ids:
+        - pRuBdX0ZLgg:00038
+        - pRuBdX0ZLgg:00039
+        - pRuBdX0ZLgg:00040
+        - pRuBdX0ZLgg:00041
+        - pRuBdX0ZLgg:00042
+        - pRuBdX0ZLgg:00043
+        - pRuBdX0ZLgg:00044
 relations:
   - relation_type: variation_of
     target_concept_id: concept-sidespin-topspin-serve

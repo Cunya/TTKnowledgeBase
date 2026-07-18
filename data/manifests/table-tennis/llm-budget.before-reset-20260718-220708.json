@@ -1,0 +1,658 @@
+{
+  "version": 1,
+  "timezone": "Europe/Helsinki",
+  "days": {
+    "2026-07-17": {
+      "reserved_tokens": 0,
+      "actual_tokens": 463438,
+      "tasks": {
+        "extraction": {
+          "reserved_tokens": 0,
+          "actual_tokens": 463438,
+          "calls": 19,
+          "deferred": 0
+        },
+        "benchmark": {
+          "reserved_tokens": 0,
+          "actual_tokens": 0,
+          "calls": 0,
+          "deferred": 0
+        },
+        "rephrase": {
+          "reserved_tokens": 0,
+          "actual_tokens": 0,
+          "calls": 0,
+          "deferred": 0
+        },
+        "summary": {
+          "reserved_tokens": 0,
+          "actual_tokens": 0,
+          "calls": 0,
+          "deferred": 0
+        }
+      },
+      "events": [
+        {
+          "at": "2026-07-17T22:27:56.209569+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 16060,
+          "input_hash": "sha256:94b98673f6d8d966b4c392e92213a1f9f46a26bdbcdb4783f5b4fe47f3b8ecc6",
+          "actual_tokens": 27200,
+          "usage_available": true,
+          "finished_at": "2026-07-17T22:29:02.432547+03:00"
+        },
+        {
+          "at": "2026-07-17T22:29:04.446191+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 14569,
+          "input_hash": "sha256:1a75567a1431a888243dd7e775f574c66cfcc2a089a059be507729d192f85f7a",
+          "actual_tokens": 24014,
+          "usage_available": true,
+          "finished_at": "2026-07-17T22:29:58.635715+03:00"
+        },
+        {
+          "at": "2026-07-17T22:30:00.877146+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 14493,
+          "input_hash": "sha256:9a18132ba520d8f187017cbc0de52842dcc4aa67004dc2bc8a75f2887c1e154a",
+          "actual_tokens": 25459,
+          "usage_available": true,
+          "finished_at": "2026-07-17T22:31:20.022162+03:00"
+        },
+        {
+          "at": "2026-07-17T22:31:21.965899+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 14432,
+          "input_hash": "sha256:e32b8702151bd1c8f60f74667ef9a441a22fccf4c11f128a4a3894ada688b587",
+          "actual_tokens": 23628,
+          "usage_available": true,
+          "finished_at": "2026-07-17T22:32:13.267140+03:00"
+        },
+        {
+          "at": "2026-07-17T22:32:15.251113+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 12153,
+          "input_hash": "sha256:bc394b29792a98e5e211e03708e3f2b411249c1757f2b986c65d585e1d7a3755",
+          "actual_tokens": 19007,
+          "usage_available": true,
+          "finished_at": "2026-07-17T22:32:55.196811+03:00"
+        },
+        {
+          "at": "2026-07-17T22:38:07.445674+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 16159,
+          "input_hash": "sha256:f92f936ebf47ce80f5d8b511e37a51f0ce9119aee3f34b4cd966181f4b362aec",
+          "actual_tokens": 28103,
+          "usage_available": true,
+          "finished_at": "2026-07-17T22:39:21.172587+03:00"
+        },
+        {
+          "at": "2026-07-17T22:39:23.115272+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 14014,
+          "input_hash": "sha256:be14da9b2332d146da4e4803ccfb1d0a1870a824e901e407d3a41909220e66fb",
+          "actual_tokens": 22962,
+          "usage_available": true,
+          "finished_at": "2026-07-17T22:40:15.973263+03:00"
+        },
+        {
+          "at": "2026-07-17T22:40:18.095750+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 14140,
+          "input_hash": "sha256:c807dee2d4dc167bbfed65f814a3e7d9edb0fdcb73c219de125c24f0bb06821f",
+          "actual_tokens": 22797,
+          "usage_available": true,
+          "finished_at": "2026-07-17T22:41:07.103538+03:00"
+        },
+        {
+          "at": "2026-07-17T22:41:09.176248+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 15279,
+          "input_hash": "sha256:c8d8250c9f5f19cc537640e5ad60fb4803737ca45d93328d540c0c923bc8d82b",
+          "actual_tokens": 25550,
+          "usage_available": true,
+          "finished_at": "2026-07-17T22:42:28.965150+03:00"
+        },
+        {
+          "at": "2026-07-17T22:42:31.045390+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 15023,
+          "input_hash": "sha256:f42168d9eec3ef68509f7b8a83aadfccbe6a81c02e7d6d9aa800e5e8e9209d4c",
+          "actual_tokens": 24475,
+          "usage_available": true,
+          "finished_at": "2026-07-17T22:43:38.329403+03:00"
+        },
+        {
+          "at": "2026-07-17T22:43:40.506434+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 14843,
+          "input_hash": "sha256:69ef1efe4084a24caaf5afaa1701b5586343de6db75b683d27e4fb4ea06bdc93",
+          "actual_tokens": 25033,
+          "usage_available": true,
+          "finished_at": "2026-07-17T22:44:44.873181+03:00"
+        },
+        {
+          "at": "2026-07-17T23:36:07.765636+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 14675,
+          "input_hash": "sha256:7686aab3f5f530c2c0dd714aa2e18a4f21e8225ea7d4d4b08e1169482d99ccbc",
+          "actual_tokens": 25491,
+          "usage_available": true,
+          "finished_at": "2026-07-17T23:37:29.339098+03:00"
+        },
+        {
+          "at": "2026-07-17T23:37:31.465781+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 14531,
+          "input_hash": "sha256:7e4a138fc9647c28a82d646cd9832c76f22e6b0c2ab436d429cb2f129f77b3d2",
+          "actual_tokens": 24342,
+          "usage_available": true,
+          "finished_at": "2026-07-17T23:38:28.610612+03:00"
+        },
+        {
+          "at": "2026-07-17T23:38:30.710406+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 13624,
+          "input_hash": "sha256:4ce7ff1ffdc6031c3f534ea9fac35e73efa9efb826995fc8fa81871a7df8b111",
+          "actual_tokens": 22420,
+          "usage_available": true,
+          "finished_at": "2026-07-17T23:39:25.043788+03:00"
+        },
+        {
+          "at": "2026-07-17T23:39:27.031538+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 14227,
+          "input_hash": "sha256:cb0212fe8df1dc6c05221a9091ae084032e9700ae9f98a99168c3a68e6b6e1f6",
+          "actual_tokens": 23503,
+          "usage_available": true,
+          "finished_at": "2026-07-17T23:40:28.633164+03:00"
+        },
+        {
+          "at": "2026-07-17T23:40:30.940206+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 15527,
+          "input_hash": "sha256:d88ba21d955c8966a82be4f618511a29f4b26e2bda18f7273c75f8fba9556c2f",
+          "actual_tokens": 26740,
+          "usage_available": true,
+          "finished_at": "2026-07-17T23:41:48.654624+03:00"
+        },
+        {
+          "at": "2026-07-17T23:41:50.859908+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 14541,
+          "input_hash": "sha256:35760b1474b29f597cb48f924e29512627f6cb2da72ff9eb9b1c022e36c53f7b",
+          "actual_tokens": 24570,
+          "usage_available": true,
+          "finished_at": "2026-07-17T23:42:58.545207+03:00"
+        },
+        {
+          "at": "2026-07-17T23:43:00.671040+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 14598,
+          "input_hash": "sha256:7086ab685fd9cfb70557754c76d07b6f3e7187799ec7aa90ffdc0368ca03280b",
+          "actual_tokens": 24366,
+          "usage_available": true,
+          "finished_at": "2026-07-17T23:44:03.538474+03:00"
+        },
+        {
+          "at": "2026-07-17T23:59:17.787026+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 14700,
+          "input_hash": "sha256:1a863ecb65bd0b313e766246591de22c22fd126e2b08981036cde202e877df60",
+          "actual_tokens": 23778,
+          "usage_available": true,
+          "finished_at": "2026-07-18T00:00:11.139447+03:00"
+        }
+      ]
+    },
+    "2026-07-18": {
+      "reserved_tokens": 0,
+      "actual_tokens": 1185764,
+      "tasks": {
+        "extraction": {
+          "reserved_tokens": 0,
+          "actual_tokens": 1185764,
+          "calls": 39,
+          "deferred": 1
+        },
+        "benchmark": {
+          "reserved_tokens": 0,
+          "actual_tokens": 0,
+          "calls": 0,
+          "deferred": 0
+        },
+        "rephrase": {
+          "reserved_tokens": 0,
+          "actual_tokens": 0,
+          "calls": 0,
+          "deferred": 0
+        },
+        "summary": {
+          "reserved_tokens": 0,
+          "actual_tokens": 0,
+          "calls": 0,
+          "deferred": 0
+        }
+      },
+      "events": [
+        {
+          "at": "2026-07-18T14:21:55.450687+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 19157,
+          "input_hash": "sha256:fcc1de33747d6a95035d24db3225da415262544e93bda1e9688d910ed8152307",
+          "actual_tokens": 28614,
+          "usage_available": true,
+          "finished_at": "2026-07-18T14:22:47.757220+03:00"
+        },
+        {
+          "at": "2026-07-18T14:22:49.900855+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 18977,
+          "input_hash": "sha256:96f2dfd14293ef7f507b793d0aa85371edd77fa233b6189b6d5cf9ea772a828e",
+          "actual_tokens": 29168,
+          "usage_available": true,
+          "finished_at": "2026-07-18T14:23:57.310466+03:00"
+        },
+        {
+          "at": "2026-07-18T14:23:59.643921+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 19856,
+          "input_hash": "sha256:621b9782462db8b6f0ce7c6feebce00ea9f652bf5340ef70e8994e1aa1276d0a",
+          "actual_tokens": 32452,
+          "usage_available": true,
+          "finished_at": "2026-07-18T14:25:31.662346+03:00"
+        },
+        {
+          "at": "2026-07-18T14:25:33.794824+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 19548,
+          "input_hash": "sha256:1e2228c155804a8e26d24c37fcd73cc983c44988c5cadb3c195fa8dc7afcfba4",
+          "actual_tokens": 30575,
+          "usage_available": true,
+          "finished_at": "2026-07-18T14:26:45.008976+03:00"
+        },
+        {
+          "at": "2026-07-18T14:26:47.081569+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 19303,
+          "input_hash": "sha256:1e446cddc36cfe5c0d0f1394449d0af1f8163eb275a27461c59cc67c974d31aa",
+          "actual_tokens": 29962,
+          "usage_available": true,
+          "finished_at": "2026-07-18T14:27:54.990047+03:00"
+        },
+        {
+          "at": "2026-07-18T14:27:57.140405+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 19712,
+          "input_hash": "sha256:fd69718958b358336017522a32195381321fd10c1005e818ccbeb8d788cfa956",
+          "actual_tokens": 30870,
+          "usage_available": true,
+          "finished_at": "2026-07-18T14:29:05.836136+03:00"
+        },
+        {
+          "at": "2026-07-18T14:29:07.915540+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 19513,
+          "input_hash": "sha256:d292f5f37e013b5c7e91ed05d28773cea712e21bcf9d23a651a2a0256ef37310",
+          "actual_tokens": 31631,
+          "usage_available": true,
+          "finished_at": "2026-07-18T14:30:22.456777+03:00"
+        },
+        {
+          "at": "2026-07-18T14:30:24.538393+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 19157,
+          "input_hash": "sha256:78c712208a9a11fdcc6fb2d39517e7eab133e4b8602e3f8d298ce171edf3a2f3",
+          "actual_tokens": 27707,
+          "usage_available": true,
+          "finished_at": "2026-07-18T14:31:02.663515+03:00"
+        },
+        {
+          "at": "2026-07-18T14:56:16.009579+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 18851,
+          "input_hash": "sha256:959e55a50bf927dbd5be8b145f1f5b5b3af411b1bc8159f3ea4780028ba13b5f",
+          "actual_tokens": 53649,
+          "usage_available": true,
+          "finished_at": "2026-07-18T14:56:59.304315+03:00"
+        },
+        {
+          "at": "2026-07-18T14:57:01.539543+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 20184,
+          "input_hash": "sha256:9fb160c19d018fd5b8d6713b8136352240d2348720280241a2dcc78b812d5ec4",
+          "actual_tokens": 31350,
+          "usage_available": true,
+          "finished_at": "2026-07-18T14:58:08.016885+03:00"
+        },
+        {
+          "at": "2026-07-18T14:58:10.321787+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 17841,
+          "input_hash": "sha256:8f7e5af9158315b7396685346f29e5ab692cdd8c54946e0d8209320421b1790f",
+          "actual_tokens": 27024,
+          "usage_available": true,
+          "finished_at": "2026-07-18T14:59:06.283991+03:00"
+        },
+        {
+          "at": "2026-07-18T14:59:08.424395+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 18591,
+          "input_hash": "sha256:f392e3148e5ec2abf9c8dd462c423bfa6732f2fa3a230506a434739113bbe4b8",
+          "actual_tokens": 27124,
+          "usage_available": true,
+          "finished_at": "2026-07-18T14:59:47.384954+03:00"
+        },
+        {
+          "at": "2026-07-18T14:59:49.721271+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 19064,
+          "input_hash": "sha256:227866b3e93305ef8c2bd0205cf82e820f6187294939db32e1085d033eeb9dfa",
+          "actual_tokens": 28868,
+          "usage_available": true,
+          "finished_at": "2026-07-18T15:00:45.386403+03:00"
+        },
+        {
+          "at": "2026-07-18T15:00:47.661328+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 18692,
+          "input_hash": "sha256:f2de0f6026797b2696e2bf0359658311e4a49bc9fcf1dc9e751c30ca6809e267",
+          "actual_tokens": 27282,
+          "usage_available": true,
+          "finished_at": "2026-07-18T15:01:34.608930+03:00"
+        },
+        {
+          "at": "2026-07-18T15:01:36.767850+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 19916,
+          "input_hash": "sha256:f82e774a704ef24356b6f0c007a3a75313197fb1868da2ea84aac139bf030b4c",
+          "actual_tokens": 31704,
+          "usage_available": true,
+          "finished_at": "2026-07-18T15:02:52.423608+03:00"
+        },
+        {
+          "at": "2026-07-18T15:02:54.503158+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 18751,
+          "input_hash": "sha256:d8f2afeb53879cdb2c6266f1eaf18e1067d4f5b808550177043856549d09e2f7",
+          "actual_tokens": 28453,
+          "usage_available": true,
+          "finished_at": "2026-07-18T15:03:49.971354+03:00"
+        },
+        {
+          "at": "2026-07-18T15:10:42.660776+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 17944,
+          "input_hash": "sha256:e5bc753bba34e03f642ddb8d2cd24a57abbbefc52f6b0c802b86a2fc3f6f24fb",
+          "actual_tokens": 26481,
+          "usage_available": true,
+          "finished_at": "2026-07-18T15:11:34.660048+03:00"
+        },
+        {
+          "at": "2026-07-18T15:11:36.905505+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 19345,
+          "input_hash": "sha256:0a16a7783fb3dad48278ff4c38fad4e206d8fa553a428b30b280f1c204c9c35d",
+          "actual_tokens": 30247,
+          "usage_available": true,
+          "finished_at": "2026-07-18T15:12:51.614221+03:00"
+        },
+        {
+          "at": "2026-07-18T15:12:53.727566+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 20148,
+          "input_hash": "sha256:888b80e4796d9995a97c96ac270a478df63d452b2cdafc8b6823f6757279955c",
+          "actual_tokens": 30795,
+          "usage_available": true,
+          "finished_at": "2026-07-18T15:13:55.441394+03:00"
+        },
+        {
+          "at": "2026-07-18T15:13:57.810374+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 20607,
+          "input_hash": "sha256:aa5d211709b258647868fb13eebcec3fc62ead7e6fe5af48df13b047b87394fd",
+          "actual_tokens": 32143,
+          "usage_available": true,
+          "finished_at": "2026-07-18T15:15:04.160563+03:00"
+        },
+        {
+          "at": "2026-07-18T15:15:06.534392+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 19433,
+          "input_hash": "sha256:1f811ba95191945f7df1b33ab2398ad293d8b981cafe7190e0528d6e9a7fecdf",
+          "actual_tokens": 28431,
+          "usage_available": true,
+          "finished_at": "2026-07-18T15:15:52.933657+03:00"
+        },
+        {
+          "at": "2026-07-18T15:15:55.021923+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 19773,
+          "input_hash": "sha256:c00245c8fd76976fdefe5dfd83b84c2f259dbf6b6ea3db2b14b3f4ab2d2926bf",
+          "actual_tokens": 30346,
+          "usage_available": true,
+          "finished_at": "2026-07-18T15:17:00.511992+03:00"
+        },
+        {
+          "at": "2026-07-18T15:17:02.570125+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 19045,
+          "input_hash": "sha256:8443f0f471bed40f54dfad5a21b3f6ba0100daafa64786c9487fb0034988776b",
+          "actual_tokens": 28007,
+          "usage_available": true,
+          "finished_at": "2026-07-18T15:17:50.890595+03:00"
+        },
+        {
+          "at": "2026-07-18T15:17:52.986069+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 19743,
+          "input_hash": "sha256:e22d583c410ef2855d2929e49d9de7749aee53f0c3362189396fce74346af0d0",
+          "actual_tokens": 28983,
+          "usage_available": true,
+          "finished_at": "2026-07-18T15:18:41.370556+03:00"
+        },
+        {
+          "at": "2026-07-18T17:04:19.234187+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 20553,
+          "input_hash": "sha256:8ef1c99cc9e3c2b18e41cc1eb7fd3ca473c4740f7a3a832f8e4bbfca40ab51d6",
+          "actual_tokens": 30947,
+          "usage_available": true,
+          "finished_at": "2026-07-18T17:05:20.559317+03:00"
+        },
+        {
+          "at": "2026-07-18T17:05:22.798888+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 20082,
+          "input_hash": "sha256:71500297040633622f410a1ac4cb043f51c4198462126dbae744ad8784a197fa",
+          "actual_tokens": 30414,
+          "usage_available": true,
+          "finished_at": "2026-07-18T17:06:23.754545+03:00"
+        },
+        {
+          "at": "2026-07-18T17:06:25.937349+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 20214,
+          "input_hash": "sha256:76f7d6eb519b2504cd5827853551c2f971e4b247ea33044fc430a0a50258d6d4",
+          "actual_tokens": 33056,
+          "usage_available": true,
+          "finished_at": "2026-07-18T17:07:53.223269+03:00"
+        },
+        {
+          "at": "2026-07-18T17:07:55.864598+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 20174,
+          "input_hash": "sha256:a80c1ff9a6c771b04548d5b882156541afcb6a3d9de4edff60abb2a79256aec4",
+          "actual_tokens": 31957,
+          "usage_available": true,
+          "finished_at": "2026-07-18T17:09:15.281977+03:00"
+        },
+        {
+          "at": "2026-07-18T17:09:17.428475+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 19019,
+          "input_hash": "sha256:3b6d30414e41fdef2a305fec7d73be18540afa7290a3c219429920d11f17c80f",
+          "actual_tokens": 27427,
+          "usage_available": true,
+          "finished_at": "2026-07-18T17:10:01.144520+03:00"
+        },
+        {
+          "at": "2026-07-18T17:10:03.442125+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 19250,
+          "input_hash": "sha256:598db06a0e03ba258b29487b0f77b812d7970b5766e11a25e8d98246131fe34d",
+          "actual_tokens": 29442,
+          "usage_available": true,
+          "finished_at": "2026-07-18T17:11:06.747399+03:00"
+        },
+        {
+          "at": "2026-07-18T17:11:09.152995+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 19449,
+          "input_hash": "sha256:28e7f478f31a8f81d6eb93759fa1e6a8fdd2099178348e0cacb0bd0d939cdf9c",
+          "actual_tokens": 29952,
+          "usage_available": true,
+          "finished_at": "2026-07-18T17:12:15.519947+03:00"
+        },
+        {
+          "at": "2026-07-18T17:12:17.647044+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 19710,
+          "input_hash": "sha256:16395586dc18b5d10909908f66b44636d4a1d1480b9bdb8d2a6b2817e2fdf9b2",
+          "actual_tokens": 30066,
+          "usage_available": true,
+          "finished_at": "2026-07-18T17:13:28.556162+03:00"
+        },
+        {
+          "at": "2026-07-18T17:19:57.268116+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 19960,
+          "input_hash": "sha256:044baed30cef875617d87ab194602d9e2f58f1b8e05d81861751736c3b60e004",
+          "actual_tokens": 28981,
+          "usage_available": true,
+          "finished_at": "2026-07-18T17:20:50.876586+03:00"
+        },
+        {
+          "at": "2026-07-18T17:20:53.484087+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 20132,
+          "input_hash": "sha256:db0be31c212fca4b6ffea32acfb7a7253ae61ec4365840291aa2e791d8d38991",
+          "actual_tokens": 29611,
+          "usage_available": true,
+          "finished_at": "2026-07-18T17:21:48.992529+03:00"
+        },
+        {
+          "at": "2026-07-18T17:21:51.786467+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 21144,
+          "input_hash": "sha256:da856ba099666b5212b8ba7f4728f9d468169cd67e436e0473c1cc26ae9878af",
+          "actual_tokens": 31551,
+          "usage_available": true,
+          "finished_at": "2026-07-18T17:22:54.343592+03:00"
+        },
+        {
+          "at": "2026-07-18T17:22:56.533686+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 21365,
+          "input_hash": "sha256:ebbc5f4b64c2437ef485f9149174566a03c5fa2eed0074396b0deb64b137733f",
+          "actual_tokens": 32484,
+          "usage_available": true,
+          "finished_at": "2026-07-18T17:24:09.702060+03:00"
+        },
+        {
+          "at": "2026-07-18T17:24:11.841961+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 19306,
+          "input_hash": "sha256:0ebf673b0212e7236b873d9e68aaa39fb77529ca7f52f384df457597477b0c98",
+          "actual_tokens": 29384,
+          "usage_available": true,
+          "finished_at": "2026-07-18T17:25:18.760909+03:00"
+        },
+        {
+          "at": "2026-07-18T17:25:20.928339+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 20354,
+          "input_hash": "sha256:58254c86f0c6cb8d4fb140cf1fb62c5cded4b2fc382bca8fdf7ad5d4142bb7ec",
+          "actual_tokens": 31320,
+          "usage_available": true,
+          "finished_at": "2026-07-18T17:26:31.236916+03:00"
+        },
+        {
+          "at": "2026-07-18T17:26:33.353840+03:00",
+          "task": "extraction",
+          "status": "completed",
+          "estimated_tokens": 18671,
+          "input_hash": "sha256:a906a580fc96f53b1a76a39303031fcbce9f49feba3491523c466e3fcfab245e",
+          "actual_tokens": 27306,
+          "usage_available": true,
+          "finished_at": "2026-07-18T17:27:25.377048+03:00"
+        },
+        {
+          "at": "2026-07-18T17:27:27.442215+03:00",
+          "task": "extraction",
+          "status": "deferred",
+          "estimated_tokens": 19242,
+          "input_hash": "sha256:bf5e4bcfb5b80ef7a347316a6b1a2448f6744b76903b3e98920b4fe56798e4e7",
+          "reason": "extraction task limit"
+        }
+      ]
+    }
+  }
+}

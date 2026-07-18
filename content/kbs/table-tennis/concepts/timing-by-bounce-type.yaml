@@ -10,9 +10,11 @@ evidence_summary: >-
   Timing by bounce type brings together several connected ideas. A useful contrast is between
   topspin timing and backspin timing and states when to start the swing for each. The preparation
   buys time to catch the ball at its drop or peak before swinging naturally. A short serve by
-  observing the first bounce. Together, these principles show how the topic is applied in practice
-  while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:5cf69771bdde453e0889188f0959a2456b570f684d05921031c5f95928c5f3c4"
+  observing the first bounce. Swing timing to hearing the bounce sound and starting only after the
+  ball hits the table. The preferred contact timing as the peak of the bounce, not the rising
+  phase. Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:47ead0a588b15e30477ceedcbbf18b9564cea2eae03ebc27237e7b6351c9573c"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -80,3 +82,35 @@ evidence:
       segment_ids:
         - Nj4ivxRAizs:00006
         - Nj4ivxRAizs:00007
+  - id: z7E2DuhsJmQ-concept-timing-by-bounce-type-reviewed
+    evidence_type: definition
+    excerpt: Time the swing based on the bounce, usually after the ball lands and the sound cues the start of the stroke.
+    reason: The speaker explicitly ties swing timing to hearing the bounce sound and starting only after the ball hits the table.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: z7E2DuhsJmQ
+      start_ms: 64933
+      end_ms: 82500
+      url: https://www.youtube.com/watch?v=z7E2DuhsJmQ&t=64s
+      segment_ids:
+        - z7E2DuhsJmQ:00014
+        - z7E2DuhsJmQ:00015
+        - z7E2DuhsJmQ:00016
+        - z7E2DuhsJmQ:00019
+  - id: Y02oMCu7Ppc-concept-timing-by-bounce-type-reviewed
+    evidence_type: explanation
+    excerpt: Time the next shot at the peak of the bounce rather than too early on the rise.
+    reason: The speaker identifies the preferred contact timing as the peak of the bounce, not the rising phase.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: Y02oMCu7Ppc
+      start_ms: 91433
+      end_ms: 96100
+      url: https://www.youtube.com/watch?v=Y02oMCu7Ppc&t=91s
+      segment_ids:
+        - Y02oMCu7Ppc:00034
+        - Y02oMCu7Ppc:00035

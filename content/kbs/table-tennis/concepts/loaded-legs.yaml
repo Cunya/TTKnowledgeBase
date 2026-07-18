@@ -345,6 +345,38 @@ evidence:
       segment_ids:
         - j90jCkrtITo:00000
         - j90jCkrtITo:00006
+  - id: 0Gg9ydieTTw-concept-loaded-legs-reviewed
+    evidence_type: explanation
+    excerpt: Keeping the legs loaded, connected to the ground, and ready to produce force through a squat-like stance.
+    reason: The speaker describes squatting, lifting the heels slightly, tightening the abs, and maintaining tension in the legs before looping.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 0Gg9ydieTTw
+      start_ms: 319300
+      end_ms: 331333
+      url: https://www.youtube.com/watch?v=0Gg9ydieTTw&t=319s
+      segment_ids:
+        - 0Gg9ydieTTw:00115
+        - 0Gg9ydieTTw:00116
+        - 0Gg9ydieTTw:00118
+        - 0Gg9ydieTTw:00120
+  - id: dOSO2ksI7uY-concept-loaded-legs-reviewed
+    evidence_type: explanation
+    excerpt: A stance where the legs are firmly planted, lowered, and used to load and transfer force upward and forward.
+    reason: The speaker tells the player to plant the legs firmly and lower the stance before rotating and pushing forward with the hips.
+    confidence: 0.92
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: dOSO2ksI7uY
+      start_ms: 208566
+      end_ms: 230233
+      url: https://www.youtube.com/watch?v=dOSO2ksI7uY&t=208s
+      segment_ids:
+        - dOSO2ksI7uY:00021
+        - dOSO2ksI7uY:00027
 relations:
   - relation_type: used_with
     target_concept_id: concept-body-hand-synchronization

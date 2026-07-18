@@ -196,6 +196,23 @@ evidence:
       segment_ids:
         - Nj4ivxRAizs:00061
         - Nj4ivxRAizs:00068
+  - id: 0hmF0UB_Oqc-concept-serve-planning-reviewed
+    evidence_type: explanation
+    excerpt: Planning serve choices based on opponent position, score state, and prior responses.
+    reason: The speaker explicitly says to decide the serve based on the opponent's position and gives examples of serving backhand, short half-long, forehand, and middle depending on stance.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 0hmF0UB_Oqc
+      start_ms: 0
+      end_ms: 23700
+      url: https://www.youtube.com/watch?v=0hmF0UB_Oqc&t=0s
+      segment_ids:
+        - 0hmF0UB_Oqc:00000
+        - 0hmF0UB_Oqc:00001
+        - 0hmF0UB_Oqc:00002
+        - 0hmF0UB_Oqc:00003
 relations:
   - relation_type: used_with
     target_concept_id: concept-serve-selection-and-follow-up

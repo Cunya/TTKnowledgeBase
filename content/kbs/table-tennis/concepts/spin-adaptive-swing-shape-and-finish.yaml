@@ -11,9 +11,11 @@ evidence_summary: >-
   Spin-adaptive swing shape and finish brings together several connected ideas. The swing
   differently for pips-out spin, small topspin loops, floating balls, and backspin, including the
   finish height and arm angle. Keeping the paddle head up and pushing the ball out/forward to
-  control the arc. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:153a34ed4888ef1505bdb0ed2bbddda993cfc4dd71d144162d165bc584c6dd5c"
+  control the arc. Different arc shapes for backspin, topspin, and the post-loop ball, explicitly
+  saying the next shot should be flat after lifting backspin and that using too much arc sends the
+  ball out. Together, these principles show how the topic is applied in practice while preserving
+  the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:85dc05f6b885b642cc8fc93fb9ea6a9e9495faaf42e03ef26b16877ce2d6ea07"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -76,3 +78,22 @@ evidence:
         - 4lGWYqgDLRM:00130
         - 4lGWYqgDLRM:00131
         - 4lGWYqgDLRM:00132
+  - id: hvwFtBB_HgM-concept-spin-adaptive-swing-shape-and-finish-reviewed
+    evidence_type: explanation
+    excerpt: Adjust the swing arc and finish based on the incoming spin and the next-ball situation, rather than reusing the same loop shape.
+    reason: The speaker contrasts different arc shapes for backspin, topspin, and the post-loop ball, explicitly saying the next shot should be flat after lifting backspin and that using too much arc sends the ball out.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: hvwFtBB_HgM
+      start_ms: 1633
+      end_ms: 22666
+      url: https://www.youtube.com/watch?v=hvwFtBB_HgM&t=1s
+      segment_ids:
+        - hvwFtBB_HgM:00000
+        - hvwFtBB_HgM:00001
+        - hvwFtBB_HgM:00003
+        - hvwFtBB_HgM:00004
+        - hvwFtBB_HgM:00005
+        - hvwFtBB_HgM:00008

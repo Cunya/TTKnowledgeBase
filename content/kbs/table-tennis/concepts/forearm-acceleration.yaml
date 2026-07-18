@@ -7,9 +7,11 @@ aliases:
 short_definition: Use forearm acceleration as the main power source to create maximum spin and proper arc over the table.
 evidence_summary: >-
   Forearm acceleration brings together several connected ideas. Forearm acceleration as of maximum
-  spin and the loop as forearm-dominant. Together, these principles show how the topic is applied
-  in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:a3aab291620892de6fdf23f9b49bbd7bdf2ecb5fccd4394a83ee16c62fd17c1c"
+  spin and the loop as forearm-dominant. Power comes from maintaining the brushing feeling and
+  speeding up the forearm swing. The forearm adds speed and that the main acceleration comes from
+  the second segment. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:986729fd556f5b101d71e3c26f313751f7553fcce6f03e09c096f36261d0d1c9"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -45,3 +47,39 @@ evidence:
         - ONXmZHozLTA:00152
         - ONXmZHozLTA:00153
         - ONXmZHozLTA:00154
+  - id: wqX8Wt7saIM-concept-forearm-acceleration-reviewed
+    evidence_type: explanation
+    excerpt: Generating additional power by increasing forearm swing speed while preserving brushing contact.
+    reason: The speaker says power comes from maintaining the brushing feeling and speeding up the forearm swing.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: wqX8Wt7saIM
+      start_ms: 411700
+      end_ms: 419033
+      url: https://www.youtube.com/watch?v=wqX8Wt7saIM&t=411s
+      segment_ids:
+        - wqX8Wt7saIM:00123
+        - wqX8Wt7saIM:00124
+        - wqX8Wt7saIM:00125
+        - wqX8Wt7saIM:00126
+  - id: PNhGSy_Dbg0-concept-forearm-acceleration-reviewed
+    evidence_type: explanation
+    excerpt: Using the forearm as the main accelerating segment after the upper arm initiates the motion.
+    reason: The speaker explicitly says the forearm adds speed and that the main acceleration comes from the second segment.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: PNhGSy_Dbg0
+      start_ms: 263600
+      end_ms: 291000
+      url: https://www.youtube.com/watch?v=PNhGSy_Dbg0&t=263s
+      segment_ids:
+        - PNhGSy_Dbg0:00085
+        - PNhGSy_Dbg0:00086
+        - PNhGSy_Dbg0:00089
+        - PNhGSy_Dbg0:00090
+        - PNhGSy_Dbg0:00091
+        - PNhGSy_Dbg0:00095

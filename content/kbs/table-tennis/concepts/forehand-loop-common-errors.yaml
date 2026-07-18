@@ -159,6 +159,45 @@ evidence:
         - PYpTLzDBuME:00109
         - PYpTLzDBuME:00110
         - PYpTLzDBuME:00111
+  - id: oB03htaZU8A-concept-forehand-loop-common-errors-reviewed
+    evidence_type: mistake
+    excerpt: 'The main mistakes in forehand looping: improper brushing, insufficient forward drive, and failing to brake the forearm.'
+    reason: The speaker explicitly lists the three common mistakes and their consequences.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: oB03htaZU8A
+      start_ms: 242100
+      end_ms: 260933
+      url: https://www.youtube.com/watch?v=oB03htaZU8A&t=242s
+      segment_ids:
+        - oB03htaZU8A:00089
+        - oB03htaZU8A:00090
+        - oB03htaZU8A:00091
+        - oB03htaZU8A:00092
+        - oB03htaZU8A:00093
+        - oB03htaZU8A:00094
+        - oB03htaZU8A:00095
+        - oB03htaZU8A:00096
+  - id: 5x1wVIb3Hog-concept-forehand-loop-common-errors-reviewed
+    evidence_type: mistake
+    excerpt: Typical looping mistakes such as over-constraining the stroke, keeping it too small, or withholding power.
+    reason: The speaker identifies a common mistake as being afraid to release power, making the loop too small and too tight, which reduces control.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 5x1wVIb3Hog
+      start_ms: 291666
+      end_ms: 317766
+      url: https://www.youtube.com/watch?v=5x1wVIb3Hog&t=291s
+      segment_ids:
+        - 5x1wVIb3Hog:00092
+        - 5x1wVIb3Hog:00093
+        - 5x1wVIb3Hog:00094
+        - 5x1wVIb3Hog:00096
+        - 5x1wVIb3Hog:00097
 relations:
   - relation_type: corrects
     target_concept_id: concept-forehand-loop

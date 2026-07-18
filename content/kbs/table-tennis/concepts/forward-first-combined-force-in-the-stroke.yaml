@@ -9,10 +9,12 @@ aliases:
 short_definition: Generate power by moving forward first and then adding the swing, rather than lifting straight upward or using an isolated arm motion.
 evidence_summary: >-
   Forward-first combined force in the stroke brings together several connected ideas. Power comes
-  from combining forward motion with the swing and against a purely upward action. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:e1cbbe89593a605a52f306439783f7f8c5049457a7a38755cf88fb425255cb26"
+  from combining forward motion with the swing and against a purely upward action. A useful
+  contrast is between lifting upward and pressing forward and says the body rotates first, then
+  the wrist adds spin. The force must go forward, and for these balls it should go forward first,
+  then upward, never downward. Together, these principles show how the topic is applied in
+  practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:8bb77bf9e430e2a26c2605c14eef2b87c7ab967f7b9292dbdc68d1865269b15c"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -51,3 +53,37 @@ evidence:
         - SS8y8BAmv-E:00083
         - SS8y8BAmv-E:00086
         - SS8y8BAmv-E:00087
+  - id: 5x1wVIb3Hog-concept-forward-first-combined-force-in-the-stroke-reviewed
+    evidence_type: explanation
+    excerpt: Using forward pressure as the base of the stroke, then adding rotation and spin on top of it.
+    reason: The speaker contrasts lifting upward with pressing forward and says the body rotates first, then the wrist adds spin.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 5x1wVIb3Hog
+      start_ms: 272933
+      end_ms: 282400
+      url: https://www.youtube.com/watch?v=5x1wVIb3Hog&t=272s
+      segment_ids:
+        - 5x1wVIb3Hog:00087
+        - 5x1wVIb3Hog:00088
+        - 5x1wVIb3Hog:00089
+        - 5x1wVIb3Hog:00090
+  - id: x3zw0baFM-I-concept-forward-first-combined-force-in-the-stroke-reviewed
+    evidence_type: definition
+    excerpt: When handling a half-high or backspin ball, direct the force forward first and only then upward, avoiding a downward hit.
+    reason: The speaker explicitly says the force must go forward, and for these balls it should go forward first, then upward, never downward.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: x3zw0baFM-I
+      start_ms: 378966
+      end_ms: 400633
+      url: https://www.youtube.com/watch?v=x3zw0baFM-I&t=378s
+      segment_ids:
+        - x3zw0baFM-I:00101
+        - x3zw0baFM-I:00102
+        - x3zw0baFM-I:00104
+        - x3zw0baFM-I:00105

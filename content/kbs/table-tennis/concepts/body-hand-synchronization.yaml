@@ -1557,6 +1557,55 @@ evidence:
       segment_ids:
         - YLEPm1oOV5U:00151
         - YLEPm1oOV5U:00153
+  - id: wqX8Wt7saIM-concept-body-hand-synchronization-reviewed
+    evidence_type: explanation
+    excerpt: Coordinating body position and arm motion so the body stays stable and the strike happens in a controlled, unified manner.
+    reason: The transcript says the center of gravity and arm are not coordinated and emphasizes that the body should be stable at the moment of impact.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: wqX8Wt7saIM
+      start_ms: 91400
+      end_ms: 119900
+      url: https://www.youtube.com/watch?v=wqX8Wt7saIM&t=91s
+      segment_ids:
+        - wqX8Wt7saIM:00029
+        - wqX8Wt7saIM:00030
+        - wqX8Wt7saIM:00037
+  - id: ubwy_VRFhPg-concept-body-hand-synchronization-reviewed
+    evidence_type: explanation
+    excerpt: Keeping the body movement, footwork, and stroke action coordinated so the swing remains natural and complete under pressure.
+    reason: The speaker explicitly calls the ability to adjust with space and rhythm 'coordination' and says the swing flows naturally when the footwork is right.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ubwy_VRFhPg
+      start_ms: 180066
+      end_ms: 207033
+      url: https://www.youtube.com/watch?v=ubwy_VRFhPg&t=180s
+      segment_ids:
+        - ubwy_VRFhPg:00071
+        - ubwy_VRFhPg:00075
+        - ubwy_VRFhPg:00081
+  - id: PBYIXS9NP0s-concept-body-hand-synchronization-reviewed
+    evidence_type: explanation
+    excerpt: Coordinate the body and arm into staged actions so the stroke flows smoothly instead of becoming a single broken movement.
+    reason: The speaker says connecting the steps makes the motion easier to understand and flow smoothly.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: PBYIXS9NP0s
+      start_ms: 576320
+      end_ms: 584000
+      url: https://www.youtube.com/watch?v=PBYIXS9NP0s&t=576s
+      segment_ids:
+        - PBYIXS9NP0s:00180
+        - PBYIXS9NP0s:00181
+        - PBYIXS9NP0s:00182
+        - PBYIXS9NP0s:00183
 relations:
   - relation_type: used_with
     target_concept_id: concept-serve-action-decomposition

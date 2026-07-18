@@ -8,10 +8,11 @@ aliases:
 short_definition: Keeping the ball and its trajectory low to force weaker, slower, or more error-prone opponent attacks.
 evidence_summary: >-
   Keep the ball low brings together several connected ideas. A high ball invites smashes, a low
-  ball slows the loop, and the trajectory should always be kept low. Together, these principles
-  show how the topic is applied in practice while preserving the relevant distinctions and
-  constraints.
-evidence_summary_source_hash: "sha256:a14eb827feae653dd0d66b8b2a9ab737ca56d308cd3865dd44433afe86c76497"
+  ball slows the loop, and the trajectory should always be kept low. To serve low and keep the arc
+  low. The arc and contact point must be low and close to the body. The finish is repeatedly
+  constrained to net height, low position, and downward motion. Together, these principles show
+  how the topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:d6cb898438c87cb84e472ca1ce35536482aaa2fd249fdb4327e55c1433ba922e"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -56,3 +57,52 @@ evidence:
         - wd_E9NZBVtU:00005
         - wd_E9NZBVtU:00006
         - wd_E9NZBVtU:00007
+  - id: rdMkkX_p7e0-concept-keep-the-ball-low-reviewed
+    evidence_type: explanation
+    excerpt: Keeping the serve trajectory low to make the return harder and limit the opponent's ability to attack or push well.
+    reason: The speaker repeatedly says to serve low and keep the arc low.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: rdMkkX_p7e0
+      start_ms: 350700
+      end_ms: 372166
+      url: https://www.youtube.com/watch?v=rdMkkX_p7e0&t=350s
+      segment_ids:
+        - rdMkkX_p7e0:00121
+        - rdMkkX_p7e0:00128
+        - rdMkkX_p7e0:00129
+        - rdMkkX_p7e0:00130
+  - id: JLGqLr-9-2w-concept-keep-the-ball-low-reviewed
+    evidence_type: explanation
+    excerpt: Keeping the contact and trajectory low to improve serve quality and deception.
+    reason: The transcript repeatedly states that the arc and contact point must be low and close to the body.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: JLGqLr-9-2w
+      start_ms: 279366
+      end_ms: 300366
+      url: https://www.youtube.com/watch?v=JLGqLr-9-2w&t=279s
+      segment_ids:
+        - JLGqLr-9-2w:00083
+        - JLGqLr-9-2w:00090
+  - id: pRuBdX0ZLgg-concept-keep-the-ball-low-reviewed
+    evidence_type: drill
+    excerpt: The serve action and finish should stay low, with no upward lifting, to preserve spin and disguise.
+    reason: The finish is repeatedly constrained to net height, low position, and downward motion.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: pRuBdX0ZLgg
+      start_ms: 493500
+      end_ms: 513133
+      url: https://www.youtube.com/watch?v=pRuBdX0ZLgg&t=493s
+      segment_ids:
+        - pRuBdX0ZLgg:00121
+        - pRuBdX0ZLgg:00124
+        - pRuBdX0ZLgg:00125
+        - pRuBdX0ZLgg:00126

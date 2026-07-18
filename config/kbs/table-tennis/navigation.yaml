@@ -8,6 +8,7 @@ sections:
   description: The main actions used to serve, receive, attack, and rally.
   concept_ids:
   - concept-elbow-stabilization-through-support-points
+  - concept-compact-stroke-under-fast-rallies
   children:
   - id: push
     label: Push
@@ -19,12 +20,17 @@ sections:
     - concept-push-variations
     - concept-push-chop
     - concept-push-flick
+    - concept-short-push
     children:
     - id: forehand-push
       label: Forehand push
       description: Forehand-side push mechanics, placement, spin variation, and 
         recovery.
-      concept_ids: []
+      concept_ids:
+      - concept-cross-step
+      - concept-middle-position
+      - concept-parallel-step
+      - concept-side-slide-step
       children: []
     - id: backhand-push
       label: Backhand push
@@ -76,6 +82,7 @@ sections:
         corrections, and practice.
       concept_ids:
       - concept-forehand-loop
+      - concept-ball-trajectory-classification
       children:
       - id: forehand-loop-variations
         label: Variations and ball selection
@@ -143,6 +150,7 @@ sections:
       - concept-backhand-wrist-stability-and-hooking
       - concept-hop-step
       - concept-post-shot-recovery-to-ready-position
+      - concept-body-angle-for-opening-the-backhand-position
       children:
       - id: backhand-loop-variations
         label: Variations and ball selection
@@ -150,6 +158,7 @@ sections:
         concept_ids:
         - concept-backhand-rip
         - concept-backhand-topspin-against-backspin
+        - concept-backspin-training-through-push-rallies
         children: []
       - id: backhand-loop-motion
         label: Motion parts
@@ -241,6 +250,10 @@ sections:
     - concept-curved-serve-trajectory
     - concept-serve-action-combination
     - concept-sidespinbackspin-serve
+    - concept-serve-variation-and-disguise
+    - concept-simplified-serve-selection-under-pressure
+    - concept-forehand-framework-with-complete-start-and-finish
+    - concept-backspin-serve
     children:
     - id: serve-third-ball-patterns
       label: Serve and third-ball patterns
@@ -276,6 +289,7 @@ sections:
     - concept-side-spin-topspin-flick
     - concept-spin-reading-for-receive
     - concept-fast-long-backspin-serve
+    - concept-mental-commitment-in-receive
     children: []
 - id: fundamentals
   label: Movement and contact fundamentals
@@ -303,6 +317,16 @@ sections:
   - concept-active-response-to-every-ball
   - concept-forearm-motion-as-spin-indicator
   - concept-racket-head-rotation-for-spin-generation
+  - concept-anticipate-early-to-avoid-rushing
+  - concept-control-rhythm-through-spacing-and-recovery
+  - concept-diagonal-push-through-side-orientation
+  - concept-forehand-push-lift-and-low-contact
+  - concept-jammed-by-insufficient-space
+  - concept-thumb-index-grip-focus-in-pushing
+  - concept-ball-tracking-for-footwork
+  - concept-footwork-drives-stroke-quality
+  - concept-footwork-over-hand-focus
+  - concept-footwork-serves-the-hands
   children:
   - id: body-organization
     label: Body organization
@@ -346,6 +370,10 @@ sections:
   concept_ids:
   - concept-defense-training-balance
   - concept-growth-mindset-in-training-to-match-play
+  - concept-practice-with-a-barrier-to-learn-spacing
+  - concept-avoid-forcing-early-in-training
+  - concept-muscle-memory-for-match-adjustment
+  - concept-swing-speed-drill
   children:
   - id: technique-acquisition
     label: Technique acquisition
@@ -374,6 +402,11 @@ sections:
   - concept-spin-adaptive-swing-shape-and-finish
   - concept-variation-over-pure-power-in-in-table-play
   - concept-keep-the-ball-low
+  - concept-probing-the-opponent
+  - concept-accurate-foot-placement-and-balance
+  - concept-add-power-when-the-return-is-weak
+  - concept-avoid-the-same-spot-on-consecutive-attacks
+  - concept-use-placement-to-move-the-opponent-and-lower-return-quality
   children:
   - id: serve-attack
     label: Serve and third-ball attack

@@ -587,6 +587,57 @@ evidence:
       segment_ids:
         - tiRcYBbJh-k:00088
         - tiRcYBbJh-k:00091
+  - id: UknMVwzNNr8-concept-push-technique-reviewed
+    evidence_type: explanation
+    excerpt: A compact push action that moves forward without simply stabbing through the ball, with the racket more upright.
+    reason: The speaker explicitly contrasts the correct push with hitting through the ball and says to stand the racket up.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: UknMVwzNNr8
+      start_ms: 2900
+      end_ms: 11866
+      url: https://www.youtube.com/watch?v=UknMVwzNNr8&t=2s
+      segment_ids:
+        - UknMVwzNNr8:00001
+        - UknMVwzNNr8:00002
+        - UknMVwzNNr8:00003
+        - UknMVwzNNr8:00004
+  - id: _P1j6GqbR7w-concept-push-technique-reviewed
+    evidence_type: explanation
+    excerpt: A receive push that changes racket angle and force based on incoming spin and ball length.
+    reason: The speaker explains how to drive the racket bottom forward, toward the table, or toward the net depending on spin, and says the racket should not face the opponent.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: _P1j6GqbR7w
+      start_ms: 25900
+      end_ms: 38833
+      url: https://www.youtube.com/watch?v=_P1j6GqbR7w&t=25s
+      segment_ids:
+        - _P1j6GqbR7w:00006
+        - _P1j6GqbR7w:00008
+        - _P1j6GqbR7w:00010
+  - id: j098z-YOm20-concept-close-to-ball-compact-push-reviewed
+    evidence_type: explanation
+    excerpt: A push approach that keeps the player close to the ball and uses a smaller, quicker motion to improve control and quality.
+    reason: The speaker contrasts a shorter brushing distance and smaller motion with staying closer to the ball, noting that this enables a direct chop.
+    confidence: 0.86
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: j098z-YOm20
+      start_ms: 264900
+      end_ms: 286166
+      url: https://www.youtube.com/watch?v=j098z-YOm20&t=264s
+      segment_ids:
+        - j098z-YOm20:00092
+        - j098z-YOm20:00095
+        - j098z-YOm20:00096
+        - j098z-YOm20:00097
+        - j098z-YOm20:00098
 relations:
   - relation_type: used_with
     target_concept_id: concept-push-contact-and-spin

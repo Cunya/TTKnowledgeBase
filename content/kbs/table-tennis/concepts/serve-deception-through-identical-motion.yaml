@@ -14,9 +14,11 @@ evidence_summary: >-
   sidespin, or a fast serve, with the change happening at contact. The added element a feint and
   shows a two-part motion with a different finish. The two actions should look identical and calls
   that the essence of the serves. The opponent must not be able to tell it is a long serve and
-  that body motion should create deception. Together, these principles show how the topic is
+  that body motion should create deception. To add fake motion and fakes at the end to make
+  returns harder and reading difficult. Disguising one serve as another and making the ball appear
+  to be one spin while behaving like another. Together, these principles show how the topic is
   applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:70bc8d628c4aec48e14868353922295d04e327b5ad7975513d6906039deeb30a"
+evidence_summary_source_hash: "sha256:7ef3633dc3c5089a64efd6668a7d56355d2615efa95a47356640bb93ec051fd3"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -123,3 +125,36 @@ evidence:
       segment_ids:
         - oWZx35U6iGI:00073
         - oWZx35U6iGI:00074
+  - id: UknMVwzNNr8-concept-serve-deception-through-identical-motion-reviewed
+    evidence_type: explanation
+    excerpt: Using deceptive serve motion so the action looks similar while producing different spin or outcomes.
+    reason: The speaker explicitly says to add fake motion and fakes at the end to make returns harder and reading difficult.
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: UknMVwzNNr8
+      start_ms: 179033
+      end_ms: 186500
+      url: https://www.youtube.com/watch?v=UknMVwzNNr8&t=179s
+      segment_ids:
+        - UknMVwzNNr8:00064
+        - UknMVwzNNr8:00065
+        - UknMVwzNNr8:00066
+        - UknMVwzNNr8:00067
+  - id: rdMkkX_p7e0-concept-serve-deception-through-identical-motion-reviewed
+    evidence_type: explanation
+    excerpt: Making different serves look similar so the opponent misreads the spin or intention.
+    reason: The speaker explicitly describes disguising one serve as another and making the ball appear to be one spin while behaving like another.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: rdMkkX_p7e0
+      start_ms: 453266
+      end_ms: 461266
+      url: https://www.youtube.com/watch?v=rdMkkX_p7e0&t=453s
+      segment_ids:
+        - rdMkkX_p7e0:00161
+        - rdMkkX_p7e0:00162
+        - rdMkkX_p7e0:00163

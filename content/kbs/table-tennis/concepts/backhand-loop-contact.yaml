@@ -185,6 +185,25 @@ evidence:
       segment_ids:
         - b_kKpVRuU1Q:00020
         - b_kKpVRuU1Q:00022
+  - id: 3h7yvxJrCtM-concept-backhand-loop-contact-reviewed
+    evidence_type: explanation
+    excerpt: Making backhand loop contact on the upper-middle part of the ball with forward motion and brushing action.
+    reason: The speaker specifies the upper-middle part of the ball and says to move forward first, then brush with the wrist, which is a contact-location instruction.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 3h7yvxJrCtM
+      start_ms: 77600
+      end_ms: 98400
+      url: https://www.youtube.com/watch?v=3h7yvxJrCtM&t=77s
+      segment_ids:
+        - 3h7yvxJrCtM:00026
+        - 3h7yvxJrCtM:00027
+        - 3h7yvxJrCtM:00028
+        - 3h7yvxJrCtM:00029
+        - 3h7yvxJrCtM:00030
+        - 3h7yvxJrCtM:00031
 relations:
   - relation_type: part_of
     target_concept_id: concept-backhand-loop

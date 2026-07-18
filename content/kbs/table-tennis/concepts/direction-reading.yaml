@@ -536,6 +536,44 @@ evidence:
         - Ji9_Etw6nvo:00163
         - Ji9_Etw6nvo:00164
         - Ji9_Etw6nvo:00165
+  - id: wpaKC8pALyQ-concept-direction-reading-reviewed
+    evidence_type: explanation
+    excerpt: Judging where the ball is going before committing to movement so the defender is not late.
+    reason: The speaker tells the listener to judge where the ball is going and not to assume forehand or backhand too early.
+    confidence: 0.88
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: wpaKC8pALyQ
+      start_ms: 255200
+      end_ms: 282033
+      url: https://www.youtube.com/watch?v=wpaKC8pALyQ&t=255s
+      segment_ids:
+        - wpaKC8pALyQ:00071
+        - wpaKC8pALyQ:00072
+        - wpaKC8pALyQ:00079
+        - wpaKC8pALyQ:00080
+        - wpaKC8pALyQ:00081
+        - wpaKC8pALyQ:00082
+        - wpaKC8pALyQ:00083
+  - id: x3zw0baFM-I-concept-direction-reading-reviewed
+    evidence_type: explanation
+    excerpt: Read the ball's direction before moving so you can get into the correct position first and avoid being caught standing still.
+    reason: The transcript repeatedly says to figure out the direction first, move to the right spot, and then strike after observing the opponent's stroke.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: x3zw0baFM-I
+      start_ms: 202466
+      end_ms: 217133
+      url: https://www.youtube.com/watch?v=x3zw0baFM-I&t=202s
+      segment_ids:
+        - x3zw0baFM-I:00054
+        - x3zw0baFM-I:00055
+        - x3zw0baFM-I:00056
+        - x3zw0baFM-I:00057
+        - x3zw0baFM-I:00058
 relations:
   - relation_type: used_with
     target_concept_id: concept-ready-position

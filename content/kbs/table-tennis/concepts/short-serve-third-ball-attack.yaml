@@ -348,4 +348,55 @@ evidence:
       segment_ids:
         - Ay0i8Sd78hM:00003
         - Ay0i8Sd78hM:00004
+  - id: rdMkkX_p7e0-concept-short-serve-third-ball-attack-reviewed
+    evidence_type: explanation
+    excerpt: Using a short or backspin serve to create a weak push or return, then attacking the next ball.
+    reason: The serve-backspin-push-loop sequence is described as a setup for attack on the next ball.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: rdMkkX_p7e0
+      start_ms: 23166
+      end_ms: 29566
+      url: https://www.youtube.com/watch?v=rdMkkX_p7e0&t=23s
+      segment_ids:
+        - rdMkkX_p7e0:00007
+        - rdMkkX_p7e0:00008
+        - rdMkkX_p7e0:00009
+  - id: rZY_SUer7Aw-concept-short-serve-third-ball-attack-reviewed
+    evidence_type: explanation
+    excerpt: Use a short serve to force a push return and then attack the predictable next ball.
+    reason: The speaker says a heavy underspin serve that stays short will force a push, and that ball should be practiced as an attack ball.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: rZY_SUer7Aw
+      start_ms: 375533
+      end_ms: 384000
+      url: https://www.youtube.com/watch?v=rZY_SUer7Aw&t=375s
+      segment_ids:
+        - rZY_SUer7Aw:00153
+        - rZY_SUer7Aw:00154
+        - rZY_SUer7Aw:00155
+        - rZY_SUer7Aw:00156
+  - id: bbZD31OGau8-concept-third-ball-attack-reviewed
+    evidence_type: example
+    excerpt: An attack pattern where the player prepares to loop on the third ball after the serve-receive exchange.
+    reason: The transcript explicitly mentions wanting to loop on the third ball and labels it as third ball loop.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: bbZD31OGau8
+      start_ms: 512800
+      end_ms: 526200
+      url: https://www.youtube.com/watch?v=bbZD31OGau8&t=512s
+      segment_ids:
+        - bbZD31OGau8:00161
+        - bbZD31OGau8:00162
+        - bbZD31OGau8:00163
+        - bbZD31OGau8:00164
+        - bbZD31OGau8:00165
 relations: []

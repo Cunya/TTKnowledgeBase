@@ -1034,6 +1034,67 @@ evidence:
       segment_ids:
         - Nj4ivxRAizs:00056
         - Nj4ivxRAizs:00059
+  - id: 7d1fUkOzCjM-concept-loop-up-then-recover-reviewed
+    evidence_type: explanation
+    excerpt: After looping, continue into recovery instead of pausing, so the next attack can follow smoothly.
+    reason: The transcript describes looping, then recovering, and warns against pausing after the loop.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 7d1fUkOzCjM
+      start_ms: 418900
+      end_ms: 447000
+      url: https://www.youtube.com/watch?v=7d1fUkOzCjM&t=418s
+      segment_ids:
+        - 7d1fUkOzCjM:00128
+        - 7d1fUkOzCjM:00129
+        - 7d1fUkOzCjM:00130
+        - 7d1fUkOzCjM:00131
+        - 7d1fUkOzCjM:00132
+        - 7d1fUkOzCjM:00133
+        - 7d1fUkOzCjM:00137
+        - 7d1fUkOzCjM:00138
+        - 7d1fUkOzCjM:00139
+        - 7d1fUkOzCjM:00140
+  - id: Mnse-nAfdO8-concept-forehand-loop-timing-reviewed
+    evidence_type: explanation
+    excerpt: Timing the forehand loop so the player makes space first, then releases the stroke forward.
+    reason: The speaker names the key phrase 'Wait, Space, then Attack forward' and pairs it with accelerating to store energy.
+    confidence: 0.89
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Mnse-nAfdO8
+      start_ms: 220833
+      end_ms: 227200
+      url: https://www.youtube.com/watch?v=Mnse-nAfdO8&t=220s
+      segment_ids:
+        - Mnse-nAfdO8:00054
+        - Mnse-nAfdO8:00055
+        - Mnse-nAfdO8:00056
+  - id: 5g8d38gLuq8-concept-forehand-loop-timing-reviewed
+    evidence_type: definition
+    excerpt: The decision of whether to contact early on the rise or later on the fall, depending on ball speed, depth, and spin.
+    reason: 'The speaker gives an explicit timing framework: very early for fast balls, later for slower dropping balls, and not at the peak.'
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 5g8d38gLuq8
+      start_ms: 487120
+      end_ms: 515919
+      url: https://www.youtube.com/watch?v=5g8d38gLuq8&t=487s
+      segment_ids:
+        - 5g8d38gLuq8:00154
+        - 5g8d38gLuq8:00155
+        - 5g8d38gLuq8:00156
+        - 5g8d38gLuq8:00157
+        - 5g8d38gLuq8:00158
+        - 5g8d38gLuq8:00159
+        - 5g8d38gLuq8:00160
+        - 5g8d38gLuq8:00161
+        - 5g8d38gLuq8:00162
 relations:
   - relation_type: part_of
     target_concept_id: concept-forehand-loop

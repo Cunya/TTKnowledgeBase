@@ -543,6 +543,55 @@ evidence:
       segment_ids:
         - Ji9_Etw6nvo:00166
         - Ji9_Etw6nvo:00167
+  - id: z7E2DuhsJmQ-concept-ready-position-reviewed
+    evidence_type: definition
+    excerpt: A neutral prepared posture you return to after serve or stroke so you can respond quickly to the next ball.
+    reason: The speaker says you should already be ready before the opponent hits and explicitly names 'ready position' after serve or receive.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: z7E2DuhsJmQ
+      start_ms: 391300
+      end_ms: 418766
+      url: https://www.youtube.com/watch?v=z7E2DuhsJmQ&t=391s
+      segment_ids:
+        - z7E2DuhsJmQ:00097
+        - z7E2DuhsJmQ:00103
+        - z7E2DuhsJmQ:00104
+        - z7E2DuhsJmQ:00105
+        - z7E2DuhsJmQ:00106
+  - id: VPlWkjj9BjA-concept-ready-position-reviewed
+    evidence_type: definition
+    excerpt: A pre-rally posture and mental state where the player keeps the body active, relaxed, and ready to start instantly.
+    reason: The speaker explicitly says to get yourself ready and keep yourself ready to start at any time.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: VPlWkjj9BjA
+      start_ms: 22266
+      end_ms: 35500
+      url: https://www.youtube.com/watch?v=VPlWkjj9BjA&t=22s
+      segment_ids:
+        - VPlWkjj9BjA:00006
+        - VPlWkjj9BjA:00011
+  - id: JLGqLr-9-2w-concept-ready-position-reviewed
+    evidence_type: explanation
+    excerpt: The recovery target after a stroke or serve where the player resets into the ready stance.
+    reason: The speaker explicitly says to return to ready position after the motion and emphasizes recovery.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: JLGqLr-9-2w
+      start_ms: 175066
+      end_ms: 188233
+      url: https://www.youtube.com/watch?v=JLGqLr-9-2w&t=175s
+      segment_ids:
+        - JLGqLr-9-2w:00052
+        - JLGqLr-9-2w:00054
+        - JLGqLr-9-2w:00055
 relations:
   - relation_type: prerequisite_of
     target_concept_id: concept-forehand-loop
