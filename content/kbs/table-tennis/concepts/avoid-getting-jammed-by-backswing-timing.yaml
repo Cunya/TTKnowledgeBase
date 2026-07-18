@@ -9,9 +9,12 @@ short_definition: A too-low or too-large backswing makes the ball arrive before 
 evidence_summary: >-
   Avoid getting jammed by backswing timing brings together several connected ideas. Getting jammed
   as a backswing/timing problem rather than a spin problem, especially on fast serves and backspin
-  returns. Together, these principles show how the topic is applied in practice while preserving
-  the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:8c2073c45b0bc07a81d20ce8bbda057c7dca2f75e19b91aadd58f84267c4c251"
+  returns. The pulling backswing problem, attributes it to shoulder and elbow movement, and
+  instructs the player to keep both controlled and aligned. Many players do not pull back enough,
+  fear getting jammed, and should practice barehanded to complete the full motion. Together, these
+  principles show how the topic is applied in practice while preserving the relevant distinctions
+  and constraints.
+evidence_summary_source_hash: "sha256:00255b4a8d068c5515b9e82278a24e02b8d2b3e8022a45644fcf3168021770a4"
 evidence_summary_generator: "deterministic"
 concept_type: practice
 facets:
@@ -45,3 +48,39 @@ evidence:
       segment_ids:
         - eIKLgVChAdA:00161
         - eIKLgVChAdA:00162
+  - id: QsrAQCy3POU-concept-avoid-pulling-backswing-by-fixing-shoulder-and-elbow-reviewed
+    evidence_type: explanation
+    excerpt: Prevent an over-pulled backswing by keeping the shoulder fixed and the elbow from drifting backward.
+    reason: The speaker identifies the pulling backswing problem, attributes it to shoulder and elbow movement, and instructs the player to keep both controlled and aligned.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: QsrAQCy3POU
+      start_ms: 242066
+      end_ms: 266466
+      url: https://www.youtube.com/watch?v=QsrAQCy3POU&t=242s
+      segment_ids:
+        - QsrAQCy3POU:00091
+        - QsrAQCy3POU:00092
+        - QsrAQCy3POU:00093
+        - QsrAQCy3POU:00094
+        - QsrAQCy3POU:00098
+        - QsrAQCy3POU:00099
+  - id: Ji9_Etw6nvo-concept-avoid-getting-jammed-by-backswing-timing-reviewed
+    evidence_type: mistake
+    excerpt: Preventing a cramped or delayed stroke by using sufficient backswing and moving quickly enough into the ball.
+    reason: The transcript says many players do not pull back enough, fear getting jammed, and should practice barehanded to complete the full motion.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Ji9_Etw6nvo
+      start_ms: 424766
+      end_ms: 442233
+      url: https://www.youtube.com/watch?v=Ji9_Etw6nvo&t=424s
+      segment_ids:
+        - Ji9_Etw6nvo:00156
+        - Ji9_Etw6nvo:00159
+        - Ji9_Etw6nvo:00160
+        - Ji9_Etw6nvo:00161

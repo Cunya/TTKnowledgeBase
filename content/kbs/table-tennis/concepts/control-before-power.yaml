@@ -1020,6 +1020,36 @@ evidence:
         - r-t1t12EUKw:00044
         - r-t1t12EUKw:00048
         - r-t1t12EUKw:00050
+  - id: ldoTdAje9n0-concept-control-before-power-reviewed
+    evidence_type: definition
+    excerpt: In table tennis, prioritize control, accurate decision-making, and suitable conditions before trying to hit with full power.
+    reason: The speaker explicitly says you cannot swing full power when conditions are unsuitable and says not to force it.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: ldoTdAje9n0
+      start_ms: 307600
+      end_ms: 315133
+      url: https://www.youtube.com/watch?v=ldoTdAje9n0&t=307s
+      segment_ids:
+        - ldoTdAje9n0:00103
+        - ldoTdAje9n0:00104
+  - id: Nj4ivxRAizs-concept-control-before-power-reviewed
+    evidence_type: explanation
+    excerpt: Prioritizing control, placement, and manageable force over raw power, especially in receive and opening play.
+    reason: The speaker states brushing is safer and gives much better control.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Nj4ivxRAizs
+      start_ms: 143466
+      end_ms: 147600
+      url: https://www.youtube.com/watch?v=Nj4ivxRAizs&t=143s
+      segment_ids:
+        - Nj4ivxRAizs:00048
+        - Nj4ivxRAizs:00049
 relations:
   - relation_type: used_with
     target_concept_id: concept-ball-feel

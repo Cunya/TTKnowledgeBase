@@ -7,9 +7,11 @@ aliases:
 short_definition: When late or poorly prepared, a player should redirect or borrow the incoming ball's force instead of forcing a full-power stroke.
 evidence_summary: >-
   Borrow incoming force brings together several connected ideas. Using the opponent's or incoming
-  power when preparation is late or incomplete. Together, these principles show how the topic is
-  applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:035001bed4b607ef005c4a811f72ea3668e85caaa040e6510243a7c8a65337e8"
+  power when preparation is late or incomplete. To use the ball's incoming force and borrow the
+  spin. To follow the spin's direction and send the ball back along its path to neutralize the
+  spin. Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:d8cfa9cb9c8ed010fb45f3502dc2427f1a85878dffdee4fc06f0d539a4318dc3"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -44,3 +46,36 @@ evidence:
         - 15KzTMIx65s:00096
         - 15KzTMIx65s:00097
         - 15KzTMIx65s:00098
+  - id: ldoTdAje9n0-concept-borrow-incoming-force-reviewed
+    evidence_type: definition
+    excerpt: Use the incoming ball's force and spin to help generate a safer, spinnier return instead of fighting it directly.
+    reason: The speaker explicitly says to use the ball's incoming force and borrow the spin.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: ldoTdAje9n0
+      start_ms: 85000
+      end_ms: 108333
+      url: https://www.youtube.com/watch?v=ldoTdAje9n0&t=85s
+      segment_ids:
+        - ldoTdAje9n0:00029
+        - ldoTdAje9n0:00035
+        - ldoTdAje9n0:00036
+  - id: tiRcYBbJh-k-concept-borrow-incoming-force-reviewed
+    evidence_type: explanation
+    excerpt: Using the incoming spin or pace to stabilize the return instead of forcing the ball forward aggressively.
+    reason: The speaker says to follow the spin's direction and send the ball back along its path to neutralize the spin.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: tiRcYBbJh-k
+      start_ms: 133500
+      end_ms: 144500
+      url: https://www.youtube.com/watch?v=tiRcYBbJh-k&t=133s
+      segment_ids:
+        - tiRcYBbJh-k:00049
+        - tiRcYBbJh-k:00050
+        - tiRcYBbJh-k:00053
+        - tiRcYBbJh-k:00054

@@ -9,9 +9,14 @@ short_definition: Generating stroke power primarily through coordinated body mov
 evidence_summary: >-
   Body-led power generation brings together several connected ideas. A useful contrast is between
   limited arm opening and power generated and transmitted through the body, then classifies power
-  generation types including combined power. Together, these principles show how the topic is
-  applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:b45b53aa98bd9cc89fbb551874ba596116f5080531f485d3ac0fe20d367f657b"
+  generation types including combined power. To push off for speed, have the left leg generate
+  lateral force, and let the right leg come over afterward. Serve speed can borrow power from the
+  body and be powered by the body's braking force. A useful contrast is between arm-only hitting
+  and using the body, says power comes from body movement, and links that to explosive loop
+  quality. The elbow as a power point and power is not just from the forearm or upper arm, but
+  from their combination as one unit. Together, these principles show how the topic is applied in
+  practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:3b9178569e74e178979c70f5c4916da6c474263668cca81aff2b0045602d3670"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -44,3 +49,75 @@ evidence:
         - 15KzTMIx65s:00127
         - 15KzTMIx65s:00128
         - 15KzTMIx65s:00129
+  - id: 0XhKjyXoCO4-concept-body-led-power-generation-reviewed
+    evidence_type: explanation
+    excerpt: Generate movement and stroke power by pushing through the legs and body instead of relying only on the arm.
+    reason: The speaker says to push off for speed, have the left leg generate lateral force, and let the right leg come over afterward.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 0XhKjyXoCO4
+      start_ms: 484300
+      end_ms: 506433
+      url: https://www.youtube.com/watch?v=0XhKjyXoCO4&t=484s
+      segment_ids:
+        - 0XhKjyXoCO4:00180
+        - 0XhKjyXoCO4:00181
+        - 0XhKjyXoCO4:00182
+        - 0XhKjyXoCO4:00183
+        - 0XhKjyXoCO4:00184
+        - 0XhKjyXoCO4:00187
+        - 0XhKjyXoCO4:00188
+  - id: oWZx35U6iGI-concept-body-led-power-generation-reviewed
+    evidence_type: explanation
+    excerpt: Generating serve power by borrowing force from the body rather than only the arm, including braking and transfer through the torso and legs.
+    reason: The speaker explicitly says serve speed can borrow power from the body and be powered by the body's braking force.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: oWZx35U6iGI
+      start_ms: 159200
+      end_ms: 163733
+      url: https://www.youtube.com/watch?v=oWZx35U6iGI&t=159s
+      segment_ids:
+        - oWZx35U6iGI:00065
+        - oWZx35U6iGI:00066
+  - id: Ji9_Etw6nvo-concept-body-led-power-generation-reviewed
+    evidence_type: explanation
+    excerpt: Generating stroke power primarily through coordinated body movement rather than the arm alone.
+    reason: The speaker contrasts arm-only hitting with using the body, says power comes from body movement, and links that to explosive loop quality.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Ji9_Etw6nvo
+      start_ms: 161566
+      end_ms: 186400
+      url: https://www.youtube.com/watch?v=Ji9_Etw6nvo&t=161s
+      segment_ids:
+        - Ji9_Etw6nvo:00060
+        - Ji9_Etw6nvo:00061
+        - Ji9_Etw6nvo:00062
+        - Ji9_Etw6nvo:00063
+        - Ji9_Etw6nvo:00064
+        - Ji9_Etw6nvo:00069
+        - Ji9_Etw6nvo:00070
+  - id: YLEPm1oOV5U-concept-body-led-power-generation-reviewed
+    evidence_type: explanation
+    excerpt: Generate stroke power through coordinated body support rather than relying on a single arm segment alone.
+    reason: The speaker describes the elbow as a power point and says power is not just from the forearm or upper arm, but from their combination as one unit.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: YLEPm1oOV5U
+      start_ms: 391500
+      end_ms: 408766
+      url: https://www.youtube.com/watch?v=YLEPm1oOV5U&t=391s
+      segment_ids:
+        - YLEPm1oOV5U:00147
+        - YLEPm1oOV5U:00149
+        - YLEPm1oOV5U:00152
+        - YLEPm1oOV5U:00153

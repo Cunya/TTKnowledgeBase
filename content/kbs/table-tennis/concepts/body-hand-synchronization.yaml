@@ -1525,6 +1525,38 @@ evidence:
         - ozEBjwyt674:00017
         - ozEBjwyt674:00018
         - ozEBjwyt674:00019
+  - id: AGLSC40_5dw-concept-body-hand-synchronization-reviewed
+    evidence_type: explanation
+    excerpt: A stroke pattern where the body, arm, wrist, and fingers work as a connected chain rather than as isolated pieces.
+    reason: The speaker says to hold and accelerate at the right moment, then add the body so the force becomes connected at contact.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: AGLSC40_5dw
+      start_ms: 324800
+      end_ms: 341300
+      url: https://www.youtube.com/watch?v=AGLSC40_5dw&t=324s
+      segment_ids:
+        - AGLSC40_5dw:00149
+        - AGLSC40_5dw:00152
+        - AGLSC40_5dw:00154
+        - AGLSC40_5dw:00155
+  - id: YLEPm1oOV5U-concept-body-hand-synchronization-reviewed
+    evidence_type: explanation
+    excerpt: Coordinate the body segments so they move and exert force together rather than letting one part work alone.
+    reason: The speaker says the force comes from the combination of upper arm, forearm, and elbow, and that they must move and exert force as one unit.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: YLEPm1oOV5U
+      start_ms: 401166
+      end_ms: 408766
+      url: https://www.youtube.com/watch?v=YLEPm1oOV5U&t=401s
+      segment_ids:
+        - YLEPm1oOV5U:00151
+        - YLEPm1oOV5U:00153
 relations:
   - relation_type: used_with
     target_concept_id: concept-serve-action-decomposition

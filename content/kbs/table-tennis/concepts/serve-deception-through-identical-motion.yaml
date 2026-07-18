@@ -12,9 +12,11 @@ evidence_summary: >-
   real motion, identical-looking motions, and deception as the core reason the serves are
   effective. Not to reveal intentions and that the same starting motion can produce backspin,
   sidespin, or a fast serve, with the change happening at contact. The added element a feint and
-  shows a two-part motion with a different finish. Together, these principles show how the topic
-  is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:d6490b28c22de8a5a2a44ef046384791967319efd5d6a788645d521d11155a70"
+  shows a two-part motion with a different finish. The two actions should look identical and calls
+  that the essence of the serves. The opponent must not be able to tell it is a long serve and
+  that body motion should create deception. Together, these principles show how the topic is
+  applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:70bc8d628c4aec48e14868353922295d04e327b5ad7975513d6906039deeb30a"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -91,3 +93,33 @@ evidence:
       segment_ids:
         - 4lGWYqgDLRM:00071
         - 4lGWYqgDLRM:00075
+  - id: Ay0i8Sd78hM-concept-serve-deception-through-identical-motion-reviewed
+    evidence_type: definition
+    excerpt: A disguise method where different serves are made to look the same so the opponent cannot distinguish them early.
+    reason: The speaker directly says the two actions should look identical and calls that the essence of the serves.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Ay0i8Sd78hM
+      start_ms: 379700
+      end_ms: 393566
+      url: https://www.youtube.com/watch?v=Ay0i8Sd78hM&t=379s
+      segment_ids:
+        - Ay0i8Sd78hM:00105
+        - Ay0i8Sd78hM:00106
+  - id: oWZx35U6iGI-concept-serve-deception-through-identical-motion-reviewed
+    evidence_type: definition
+    excerpt: A serving tactic that hides serve variation by keeping the motion nearly the same so the receiver misreads the intent.
+    reason: The speaker says the opponent must not be able to tell it is a long serve and that body motion should create deception.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: oWZx35U6iGI
+      start_ms: 188233
+      end_ms: 193566
+      url: https://www.youtube.com/watch?v=oWZx35U6iGI&t=188s
+      segment_ids:
+        - oWZx35U6iGI:00073
+        - oWZx35U6iGI:00074

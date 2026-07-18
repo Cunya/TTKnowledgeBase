@@ -983,6 +983,57 @@ evidence:
         - 63bd4-iEh6Y:00103
         - 63bd4-iEh6Y:00104
         - 63bd4-iEh6Y:00105
+  - id: ldoTdAje9n0-concept-forehand-loop-timing-reviewed
+    evidence_type: definition
+    excerpt: Timing for looping that favors waiting for the ball to descend or settle rather than rushing early.
+    reason: The speaker recommends waiting for the ball to drop before looping.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: ldoTdAje9n0
+      start_ms: 94266
+      end_ms: 105166
+      url: https://www.youtube.com/watch?v=ldoTdAje9n0&t=94s
+      segment_ids:
+        - ldoTdAje9n0:00031
+        - ldoTdAje9n0:00033
+        - ldoTdAje9n0:00034
+  - id: Ji9_Etw6nvo-concept-forehand-loop-timing-reviewed
+    evidence_type: explanation
+    excerpt: Timing the forehand loop by preparing early, staying fluid, and initiating the swing at the right phase of the incoming ball.
+    reason: The speaker emphasizes early judgment, fluid movement, and getting weight, rotation, and stroke ready before the ball arrives.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Ji9_Etw6nvo
+      start_ms: 398566
+      end_ms: 411700
+      url: https://www.youtube.com/watch?v=Ji9_Etw6nvo&t=398s
+      segment_ids:
+        - Ji9_Etw6nvo:00145
+        - Ji9_Etw6nvo:00146
+        - Ji9_Etw6nvo:00147
+        - Ji9_Etw6nvo:00148
+        - Ji9_Etw6nvo:00149
+        - Ji9_Etw6nvo:00150
+        - Ji9_Etw6nvo:00151
+  - id: Nj4ivxRAizs-concept-forehand-loop-timing-reviewed
+    evidence_type: explanation
+    excerpt: Timing the forehand loop so the motion is compact, well-timed, and coordinated with the incoming ball.
+    reason: The speaker recommends smaller motion and more brushing for better control on forehand loops.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Nj4ivxRAizs
+      start_ms: 166933
+      end_ms: 174900
+      url: https://www.youtube.com/watch?v=Nj4ivxRAizs&t=166s
+      segment_ids:
+        - Nj4ivxRAizs:00056
+        - Nj4ivxRAizs:00059
 relations:
   - relation_type: part_of
     target_concept_id: concept-forehand-loop

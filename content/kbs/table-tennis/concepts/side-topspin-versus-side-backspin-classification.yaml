@@ -10,9 +10,12 @@ short_definition: Classifying a serve's spin as side-topspin or side-backspin by
 evidence_summary: >-
   Side-topspin versus side-backspin classification brings together several connected ideas.
   Side-topspin and side-backspin and gives the cue that forward/upward forearm motion indicates
-  topspin while downward motion indicates backspin. Together, these principles show how the topic
-  is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:368368fed8bdd48fcda2691313c74ecf03c338e7ff4a0d9f438f237f093a53f6"
+  topspin while downward motion indicates backspin. Side-topspin from side-backspin and to train
+  each spin type separately. Sidespin-backspin and sidespin-topspin as different serve types and
+  people often find the spin blurry. Motions as side-topspin or side-backspin and the two by
+  forearm direction. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:84a7ed1c878da7b9e12c6cca3e9ad381513e20933b981538d432f990b1b75844"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -53,3 +56,53 @@ evidence:
         - VRnCe4k1tmU:00029
         - VRnCe4k1tmU:00032
         - VRnCe4k1tmU:00033
+  - id: Ay0i8Sd78hM-concept-side-topspin-versus-side-backspin-classification-reviewed
+    evidence_type: definition
+    excerpt: A serve-classification distinction between side-topspin and side-backspin, treated as different motions and trained separately.
+    reason: The speaker repeatedly separates side-topspin from side-backspin and says to train each spin type separately.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Ay0i8Sd78hM
+      start_ms: 86066
+      end_ms: 95833
+      url: https://www.youtube.com/watch?v=Ay0i8Sd78hM&t=86s
+      segment_ids:
+        - Ay0i8Sd78hM:00024
+        - Ay0i8Sd78hM:00027
+  - id: EVmXfWis1NM-concept-side-topspin-versus-side-backspin-classification-reviewed
+    evidence_type: example
+    excerpt: Separating serve spin into side-backspin and side-topspin cases for response planning.
+    reason: The speaker explicitly names sidespin-backspin and sidespin-topspin as different serve types and says people often find the spin blurry.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: EVmXfWis1NM
+      start_ms: 164666
+      end_ms: 175700
+      url: https://www.youtube.com/watch?v=EVmXfWis1NM&t=164s
+      segment_ids:
+        - EVmXfWis1NM:00059
+        - EVmXfWis1NM:00060
+        - EVmXfWis1NM:00061
+        - EVmXfWis1NM:00062
+        - EVmXfWis1NM:00063
+  - id: ecb87E_nqEc-concept-side-topspin-versus-side-backspin-classification-reviewed
+    evidence_type: explanation
+    excerpt: Classifying a serve or stroke by whether the forearm action signals topspin or backspin, often framed as side-top versus side-back.
+    reason: The speaker repeatedly labels motions as side-topspin or side-backspin and contrasts the two by forearm direction.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ecb87E_nqEc
+      start_ms: 33
+      end_ms: 21733
+      url: https://www.youtube.com/watch?v=ecb87E_nqEc&t=0s
+      segment_ids:
+        - ecb87E_nqEc:00000
+        - ecb87E_nqEc:00001
+        - ecb87E_nqEc:00004
+        - ecb87E_nqEc:00005

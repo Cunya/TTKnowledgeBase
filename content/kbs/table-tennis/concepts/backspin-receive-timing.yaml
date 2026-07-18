@@ -8,9 +8,11 @@ aliases:
 short_definition: On backspin or push receives, wait for the early descending phase instead of contacting too early at the peak.
 evidence_summary: >-
   Backspin receive timing brings together several connected ideas. To hit backspin in the early
-  descending phase and to wait until that phase for pushing. Together, these principles show how
-  the topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:09e0e42fe75ec3307adda9a20402d2d22122246c70ba256de250656e9c10462b"
+  descending phase and to wait until that phase for pushing. Taking the ball earlier, at the
+  rising point or top of the bounce, rather than waiting too long. To wait for the ball to drop
+  and then loop it back with more spin. Together, these principles show how the topic is applied
+  in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:17d332742e25ab2af2d3c93f740c0f988211d0fa75876fdccd91e99620aae8e3"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -46,3 +48,35 @@ evidence:
         - 9BKPM_RMmtg:00034
         - 9BKPM_RMmtg:00036
         - 9BKPM_RMmtg:00043
+  - id: AGLSC40_5dw-concept-backspin-receive-timing-reviewed
+    evidence_type: explanation
+    excerpt: Timing the receive of backspin so contact happens at the right phase of the ball's flight, often early enough to avoid being forced late by the spin.
+    reason: The speaker emphasizes taking the ball earlier, at the rising point or top of the bounce, rather than waiting too long.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: AGLSC40_5dw
+      start_ms: 519666
+      end_ms: 524433
+      url: https://www.youtube.com/watch?v=AGLSC40_5dw&t=519s
+      segment_ids:
+        - AGLSC40_5dw:00036
+        - AGLSC40_5dw:00037
+  - id: ldoTdAje9n0-concept-backspin-receive-timing-reviewed
+    evidence_type: definition
+    excerpt: On backspin or heavily spinny balls, wait for the ball to descend and finish curving before looping or attacking.
+    reason: The speaker says to wait for the ball to drop and then loop it back with more spin.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: ldoTdAje9n0
+      start_ms: 99666
+      end_ms: 108333
+      url: https://www.youtube.com/watch?v=ldoTdAje9n0&t=99s
+      segment_ids:
+        - ldoTdAje9n0:00033
+        - ldoTdAje9n0:00034
+        - ldoTdAje9n0:00035
+        - ldoTdAje9n0:00036

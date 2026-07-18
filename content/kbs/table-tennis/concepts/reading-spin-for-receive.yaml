@@ -8,9 +8,15 @@ aliases:
 short_definition: Recognizing how much spin a received ball has so the receiver can choose an appropriate response.
 evidence_summary: >-
   Reading spin for receive brings together several connected ideas. The learner on whether balls
-  have spin and classifies them by spin amount. Together, these principles show how the topic is
-  applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:1665faeb29077db948f9e842eb6099c8178e4b22802385a78e0503e4088380e2"
+  have spin and classifies them by spin amount. To read the opponent's push motion and judge spin
+  intensity from wrist use, speed, and acceleration. Receive as recognizing the spin and
+  responding to neutralize it. Light touch does not neutralize spin and explicitly tells the
+  listener to identify the spin type and read the opponent's intention. Spin judgment/read the
+  spin and evaluates correct and incorrect reads. To ignore tiny contact details and instead read
+  the forearm motion to identify spin and improve receive preparation. Together, these principles
+  show how the topic is applied in practice while preserving the relevant distinctions and
+  constraints.
+evidence_summary_source_hash: "sha256:52671c031cfe0825c030e1d7cf2833c3bbc95e4c601b1a37a0ad85528f29c165"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -50,3 +56,89 @@ evidence:
       segment_ids:
         - iNTkZQ-ZenY:00004
         - iNTkZQ-ZenY:00012
+  - id: kFH_JBpirTk-concept-reading-spin-for-receive-reviewed
+    evidence_type: explanation
+    excerpt: Inferring the amount of spin on a push or receive by observing the opponent's wrist, finger, and forward-motion cues.
+    reason: The speaker says to read the opponent's push motion and judge spin intensity from wrist use, speed, and acceleration.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: kFH_JBpirTk
+      start_ms: 268500
+      end_ms: 290866
+      url: https://www.youtube.com/watch?v=kFH_JBpirTk&t=268s
+      segment_ids:
+        - kFH_JBpirTk:00104
+        - kFH_JBpirTk:00105
+        - kFH_JBpirTk:00106
+        - kFH_JBpirTk:00108
+        - kFH_JBpirTk:00109
+        - kFH_JBpirTk:00111
+        - kFH_JBpirTk:00113
+        - kFH_JBpirTk:00114
+  - id: 4dKlFXYLZhc-concept-reading-spin-for-receive-reviewed
+    evidence_type: definition
+    excerpt: The receive skill of identifying the incoming spin and choosing an appropriate contact and motion to neutralize it.
+    reason: The speaker directly frames receive as recognizing the spin and responding to neutralize it.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 4dKlFXYLZhc
+      start_ms: 416733
+      end_ms: 422400
+      url: https://www.youtube.com/watch?v=4dKlFXYLZhc&t=416s
+      segment_ids:
+        - 4dKlFXYLZhc:00130
+        - 4dKlFXYLZhc:00131
+  - id: ldoTdAje9n0-concept-reading-spin-for-receive-reviewed
+    evidence_type: definition
+    excerpt: Interpreting the opponent's serve or push spin before deciding how to receive, rather than relying on a light touch or guessing.
+    reason: The speaker says light touch does not neutralize spin and explicitly tells the listener to identify the spin type and read the opponent's intention.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: ldoTdAje9n0
+      start_ms: 342633
+      end_ms: 367066
+      url: https://www.youtube.com/watch?v=ldoTdAje9n0&t=342s
+      segment_ids:
+        - ldoTdAje9n0:00114
+        - ldoTdAje9n0:00115
+        - ldoTdAje9n0:00123
+  - id: 8iEro-p2Q9c-concept-reading-spin-for-receive-reviewed
+    evidence_type: definition
+    excerpt: Assessing the spin on serve or receive early enough to choose the correct return.
+    reason: The speaker explicitly names spin judgment/read the spin and evaluates correct and incorrect reads.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8iEro-p2Q9c
+      start_ms: 361300
+      end_ms: 368833
+      url: https://www.youtube.com/watch?v=8iEro-p2Q9c&t=361s
+      segment_ids:
+        - 8iEro-p2Q9c:00099
+        - 8iEro-p2Q9c:00101
+  - id: ecb87E_nqEc-concept-reading-spin-for-receive-reviewed
+    evidence_type: explanation
+    excerpt: Using visible stroke cues, especially the forearm, to infer the spin on a serve or incoming ball before deciding the receive.
+    reason: The speaker says to ignore tiny contact details and instead read the forearm motion to identify spin and improve receive preparation.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ecb87E_nqEc
+      start_ms: 237766
+      end_ms: 267200
+      url: https://www.youtube.com/watch?v=ecb87E_nqEc&t=237s
+      segment_ids:
+        - ecb87E_nqEc:00078
+        - ecb87E_nqEc:00079
+        - ecb87E_nqEc:00080
+        - ecb87E_nqEc:00086
+        - ecb87E_nqEc:00089
+        - ecb87E_nqEc:00091

@@ -9,10 +9,11 @@ evidence_summary: >-
   Sidespin–backspin serve brings together several connected ideas. Sidespin with underspin, names
   the lower-right contact region, and the brushing and fake-lift motion used to produce it. Serves
   combining side spin and back spin and brushing with cutting downward for this effect. Chopping
-  the lower part and striking downward at a point as the mechanism for backspin. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:fa07f54ce855d7eb5b696953e7a29b1c9550bd0f2318507bd59387540b71fdb8"
+  the lower part and striking downward at a point as the mechanism for backspin.
+  Sidespin-backspin, gives its clock-face motion, and labels it side-underspin. Sidespin-backspin
+  and pure backspin or sidespin-backspin is easier to short-push. Together, these principles show
+  how the topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:e989cf434cc195250c9be40e8416ef11f0b584a403661ae82d6de425a49434bb"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -86,3 +87,34 @@ evidence:
         - KuYNs8gAU_U:00101
         - KuYNs8gAU_U:00102
         - KuYNs8gAU_U:00103
+  - id: Ay0i8Sd78hM-concept-sidespinbackspin-serve-reviewed
+    evidence_type: definition
+    excerpt: A serve that combines sidespin with backspin; the speaker teaches it after sidespin-topspin and contrasts its motion with the topspin version.
+    reason: The speaker explicitly teaches sidespin-backspin, gives its clock-face motion, and labels it side-underspin.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Ay0i8Sd78hM
+      start_ms: 296066
+      end_ms: 319033
+      url: https://www.youtube.com/watch?v=Ay0i8Sd78hM&t=296s
+      segment_ids:
+        - Ay0i8Sd78hM:00088
+        - Ay0i8Sd78hM:00092
+  - id: 8iEro-p2Q9c-concept-sidespinbackspin-serve-reviewed
+    evidence_type: definition
+    excerpt: A serve combining sidespin and backspin, described as easier to short-push than pure sidespin balls.
+    reason: The speaker names sidespin-backspin and says pure backspin or sidespin-backspin is easier to short-push.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8iEro-p2Q9c
+      start_ms: 601033
+      end_ms: 610366
+      url: https://www.youtube.com/watch?v=8iEro-p2Q9c&t=601s
+      segment_ids:
+        - 8iEro-p2Q9c:00173
+        - 8iEro-p2Q9c:00174
+        - 8iEro-p2Q9c:00175

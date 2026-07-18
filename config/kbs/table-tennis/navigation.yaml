@@ -6,7 +6,8 @@ sections:
 - id: shots
   label: Shots and strokes
   description: The main actions used to serve, receive, attack, and rally.
-  concept_ids: []
+  concept_ids:
+  - concept-elbow-stabilization-through-support-points
   children:
   - id: push
     label: Push
@@ -29,8 +30,7 @@ sections:
       label: Backhand push
       description: Backhand-side push mechanics, touch, placement, and receive 
         use.
-      concept_ids:
-      - concept-two-stage-backhand-power-generation
+      concept_ids: []
       children: []
   - id: counter
     label: Counter
@@ -42,8 +42,7 @@ sections:
       label: Forehand counter
       description: Forehand counter mechanics, timing, placement, and transition
         into stronger attacks.
-      concept_ids:
-      - concept-keep-the-ball-low
+      concept_ids: []
       children: []
     - id: backhand-counter
       label: Backhand counter
@@ -53,19 +52,23 @@ sections:
       children: []
   - id: drive
     label: Drive
-    description: Direct, compact hitting strokes that use forward impact rather than a large looping action.
+    description: Direct, compact hitting strokes that use forward impact rather 
+      than a large looping action.
     concept_ids: []
     children:
     - id: forehand-drive
       label: Forehand drive
-      description: Direct forehand hitting mechanics, timing, contact, and forward penetration.
-      concept_ids: [concept-forehand-drive]
+      description: Direct forehand hitting mechanics, timing, contact, and 
+        forward penetration.
+      concept_ids:
+      - concept-forehand-drive
       children: []
   - id: loop
     label: Loop
     description: Topspin attacks that combine brushing, forward force, arc, and 
       recovery.
-    concept_ids: []
+    concept_ids:
+    - concept-attack-first-over-conservative-play
     children:
     - id: forehand-loop-family
       label: Forehand loop
@@ -272,6 +275,7 @@ sections:
     - concept-serve-deception-through-identical-motion
     - concept-side-spin-topspin-flick
     - concept-spin-reading-for-receive
+    - concept-fast-long-backspin-serve
     children: []
 - id: fundamentals
   label: Movement and contact fundamentals
@@ -296,6 +300,9 @@ sections:
   - concept-open-rotate-step-in-formula
   - concept-serve-contact-zone-between-side-and-back
   - concept-serve-disguise-with-identical-motion
+  - concept-active-response-to-every-ball
+  - concept-forearm-motion-as-spin-indicator
+  - concept-racket-head-rotation-for-spin-generation
   children:
   - id: body-organization
     label: Body organization
@@ -313,6 +320,7 @@ sections:
     - concept-body-hand-synchronization
     - concept-relax-then-accelerate-at-contact
     - concept-loose-back-tight-release
+    - concept-two-stage-backhand-power-generation
     - concept-forearm-driven-motion
     - concept-body-rotation-through-the-stroke
     - concept-borrow-incoming-force
@@ -337,6 +345,7 @@ sections:
     technique.
   concept_ids:
   - concept-defense-training-balance
+  - concept-growth-mindset-in-training-to-match-play
   children:
   - id: technique-acquisition
     label: Technique acquisition
@@ -364,6 +373,7 @@ sections:
   - concept-rational-play
   - concept-spin-adaptive-swing-shape-and-finish
   - concept-variation-over-pure-power-in-in-table-play
+  - concept-keep-the-ball-low
   children:
   - id: serve-attack
     label: Serve and third-ball attack
@@ -397,26 +407,30 @@ sections:
     children: []
 - id: equipment
   label: Equipment and maintenance
-  description: Racket materials, rubber properties, glue, boosters, and equipment preparation.
+  description: Racket materials, rubber properties, glue, boosters, and 
+    equipment preparation.
   concept_ids: []
   children:
   - id: racket-and-blade-materials
     label: Racket and blade materials
-    description: Blade protection, construction, and equipment-control considerations.
+    description: Blade protection, construction, and equipment-control 
+      considerations.
     concept_ids:
     - concept-equipment-control-requirement
     - concept-wood-sealer-blade-protection
     children: []
   - id: rubber-and-booster
     label: Rubber and booster
-    description: Rubber aging, layer choices, tacky-rubber boosters, and related material properties.
+    description: Rubber aging, layer choices, tacky-rubber boosters, and related
+      material properties.
     concept_ids:
     - concept-rubber-layer-count-by-rubber-age
     - concept-booster-oil-for-tacky-rubbers
     children: []
   - id: glue-application
     label: Glue application
-    description: Glue types, brush technique, drying, and attaching rubber evenly.
+    description: Glue types, brush technique, drying, and attaching rubber 
+      evenly.
     concept_ids:
     - concept-organic-glue-properties-and-use
     - concept-water-based-glue-properties-and-use
@@ -426,7 +440,8 @@ sections:
     children: []
   - id: equipment-maintenance-mistakes
     label: Maintenance and common mistakes
-    description: Practical equipment-preparation shortcuts and failure modes to avoid.
+    description: Practical equipment-preparation shortcuts and failure modes to 
+      avoid.
     concept_ids:
     - concept-hair-dryer-shortcut-risks
     - concept-white-lump-avoidance

@@ -8,10 +8,11 @@ aliases:
 short_definition: 'Adjust swing timing based on whether the incoming ball is topspin or backspin: start on the bounce for topspin, and wait for the ball to land before swinging on backspin.'
 evidence_summary: >-
   Timing by bounce type brings together several connected ideas. A useful contrast is between
-  topspin timing and backspin timing and states when to start the swing for each. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:20e7ccd5d6f10097d7fa54b46d96180f711e27cce1090a52e3c7b306317c57d4"
+  topspin timing and backspin timing and states when to start the swing for each. The preparation
+  buys time to catch the ball at its drop or peak before swinging naturally. A short serve by
+  observing the first bounce. Together, these principles show how the topic is applied in practice
+  while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:5cf69771bdde453e0889188f0959a2456b570f684d05921031c5f95928c5f3c4"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -49,3 +50,33 @@ evidence:
         - SS8y8BAmv-E:00002
         - SS8y8BAmv-E:00005
         - SS8y8BAmv-E:00006
+  - id: Ji9_Etw6nvo-concept-timing-by-bounce-type-reviewed
+    evidence_type: explanation
+    excerpt: Selecting swing timing based on whether the ball is at the drop, peak, or just after the bounce.
+    reason: The speaker says the preparation buys time to catch the ball at its drop or peak before swinging naturally.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Ji9_Etw6nvo
+      start_ms: 478400
+      end_ms: 485466
+      url: https://www.youtube.com/watch?v=Ji9_Etw6nvo&t=478s
+      segment_ids:
+        - Ji9_Etw6nvo:00168
+        - Ji9_Etw6nvo:00169
+  - id: Nj4ivxRAizs-concept-timing-by-bounce-type-reviewed
+    evidence_type: explanation
+    excerpt: Adjusting shot timing according to whether the ball is short, long, or at a particular bounce phase.
+    reason: The speaker identifies a short serve by observing the first bounce.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Nj4ivxRAizs
+      start_ms: 15000
+      end_ms: 19333
+      url: https://www.youtube.com/watch?v=Nj4ivxRAizs&t=15s
+      segment_ids:
+        - Nj4ivxRAizs:00006
+        - Nj4ivxRAizs:00007

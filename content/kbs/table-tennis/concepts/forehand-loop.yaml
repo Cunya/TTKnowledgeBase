@@ -649,6 +649,51 @@ evidence:
       url: https://www.youtube.com/watch?v=2z594CL150c&t=339s
       segment_ids:
         - 2z594CL150c:00108
+  - id: ldoTdAje9n0-concept-forehand-loop-reviewed
+    evidence_type: example
+    excerpt: A topspin attacking stroke in which the player loops the ball, often with a high arc or added spin when conditions call for it.
+    reason: The speaker contrasts driving a high point ball with looping using extra spin and high arc.
+    confidence: 0.87
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: ldoTdAje9n0
+      start_ms: 182433
+      end_ms: 190900
+      url: https://www.youtube.com/watch?v=ldoTdAje9n0&t=182s
+      segment_ids:
+        - ldoTdAje9n0:00065
+        - ldoTdAje9n0:00067
+  - id: Ji9_Etw6nvo-concept-forehand-loop-reviewed
+    evidence_type: definition
+    excerpt: A forehand topspin loop used to attack underspin or rally balls with body-driven rotation.
+    reason: The speaker explicitly names looping and forehand loop practice as the core stroke being taught.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Ji9_Etw6nvo
+      start_ms: 219400
+      end_ms: 237766
+      url: https://www.youtube.com/watch?v=Ji9_Etw6nvo&t=219s
+      segment_ids:
+        - Ji9_Etw6nvo:00086
+        - Ji9_Etw6nvo:00093
+  - id: Nj4ivxRAizs-concept-forehand-loop-reviewed
+    evidence_type: explanation
+    excerpt: A forehand topspin opening or rally loop executed with brushing and body control rather than pure hitting.
+    reason: The speaker directly discusses forehand looping with smaller motion, more brush, and better control.
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Nj4ivxRAizs
+      start_ms: 154833
+      end_ms: 174900
+      url: https://www.youtube.com/watch?v=Nj4ivxRAizs&t=154s
+      segment_ids:
+        - Nj4ivxRAizs:00051
+        - Nj4ivxRAizs:00059
 relations:
   - relation_type: used_with
     target_concept_id: concept-contact-point

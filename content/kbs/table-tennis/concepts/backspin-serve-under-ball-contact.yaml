@@ -414,6 +414,21 @@ evidence:
       segment_ids:
         - xBlnTfR0eOY:00152
         - xBlnTfR0eOY:00157
+  - id: 25Ohh2RJcWk-concept-backspin-serve-under-ball-contact-reviewed
+    evidence_type: definition
+    excerpt: For a backspin or underspin serve, contact the lower part of the ball rather than the upper half so the serve can generate spin.
+    reason: The speaker explicitly says to contact the lower part of the ball for underspin and warns that upper-half contact will not spin.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 25Ohh2RJcWk
+      start_ms: 220066
+      end_ms: 229900
+      url: https://www.youtube.com/watch?v=25Ohh2RJcWk&t=220s
+      segment_ids:
+        - 25Ohh2RJcWk:00051
+        - 25Ohh2RJcWk:00053
 relations:
   - relation_type: used_with
     target_concept_id: concept-loose-grip-backhand-friction

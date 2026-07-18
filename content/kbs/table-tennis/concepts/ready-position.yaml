@@ -513,6 +513,36 @@ evidence:
         - ZJzWTwe-Nng:00016
         - ZJzWTwe-Nng:00017
         - ZJzWTwe-Nng:00018
+  - id: ldoTdAje9n0-concept-ready-position-reviewed
+    evidence_type: explanation
+    excerpt: A balanced recovery posture used after a shot so the player can react to the next ball.
+    reason: The speaker says to quickly reset body posture and be ready for the next ball.
+    confidence: 0.89
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: ldoTdAje9n0
+      start_ms: 299366
+      end_ms: 307066
+      url: https://www.youtube.com/watch?v=ldoTdAje9n0&t=299s
+      segment_ids:
+        - ldoTdAje9n0:00101
+        - ldoTdAje9n0:00102
+  - id: Ji9_Etw6nvo-concept-ready-position-reviewed
+    evidence_type: definition
+    excerpt: A low, prepared stance taken early so the player has time to react and swing naturally.
+    reason: The speaker explicitly says to speed up the ready position and lower the stance with the hand low.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Ji9_Etw6nvo
+      start_ms: 471733
+      end_ms: 478400
+      url: https://www.youtube.com/watch?v=Ji9_Etw6nvo&t=471s
+      segment_ids:
+        - Ji9_Etw6nvo:00166
+        - Ji9_Etw6nvo:00167
 relations:
   - relation_type: prerequisite_of
     target_concept_id: concept-forehand-loop

@@ -539,6 +539,54 @@ evidence:
         - 03R-8mhgUUU:00047
         - 03R-8mhgUUU:00048
         - 03R-8mhgUUU:00049
+  - id: 4dKlFXYLZhc-concept-push-technique-reviewed
+    evidence_type: example
+    excerpt: The receive stroke being discussed, with an emphasis on changing its mechanics rather than repeating an old habit.
+    reason: The speaker explicitly says he learned a pushing technique, practiced it, and then adjusted how he pushed.
+    confidence: 0.85
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 4dKlFXYLZhc
+      start_ms: 124933
+      end_ms: 138033
+      url: https://www.youtube.com/watch?v=4dKlFXYLZhc&t=124s
+      segment_ids:
+        - 4dKlFXYLZhc:00040
+        - 4dKlFXYLZhc:00043
+  - id: 8iEro-p2Q9c-concept-push-technique-reviewed
+    evidence_type: definition
+    excerpt: A forward push action used on short balls, with an emphasis on compactness and not pulling back with the hand.
+    reason: The speaker explicitly instructs not to pull and to simply push forward or the ball floats.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8iEro-p2Q9c
+      start_ms: 320266
+      end_ms: 328433
+      url: https://www.youtube.com/watch?v=8iEro-p2Q9c&t=320s
+      segment_ids:
+        - 8iEro-p2Q9c:00089
+        - 8iEro-p2Q9c:00090
+        - 8iEro-p2Q9c:00091
+        - 8iEro-p2Q9c:00092
+        - 8iEro-p2Q9c:00093
+  - id: tiRcYBbJh-k-concept-push-technique-reviewed
+    evidence_type: explanation
+    excerpt: A controlled push that uses angle, direction, and moderate force to keep the ball low, spinny, and stable instead of over-hitting long.
+    reason: The speaker explains pushing diagonally forward, using the forearm forward, and keeping the result long, spinny, and low.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: tiRcYBbJh-k
+      start_ms: 234800
+      end_ms: 253033
+      url: https://www.youtube.com/watch?v=tiRcYBbJh-k&t=234s
+      segment_ids:
+        - tiRcYBbJh-k:00088
+        - tiRcYBbJh-k:00091
 relations:
   - relation_type: used_with
     target_concept_id: concept-push-contact-and-spin

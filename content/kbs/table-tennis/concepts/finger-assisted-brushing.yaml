@@ -8,10 +8,13 @@ aliases:
 short_definition: Using the fingers to guide racket acceleration and contact direction, especially to increase brushing and create arc.
 evidence_summary: >-
   Finger-assisted brushing brings together several connected ideas. The learner to use the middle
-  and index fingers to press forward and upward and to press the racket forward with force.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:23162446d561eb2ce133c5af398fadbac517cf909595cb1382cbc498bb21f3de"
+  and index fingers to press forward and upward and to press the racket forward with force. The
+  fingers generate concentrated power, should press forward and upward, and create the friction at
+  the moment of contact. The fingers and wrist are shown as active contributors to the arc, not
+  just the forearm. Using only fingers and wrist, then says fingers and wrist speed up the
+  brushing and can produce both spin and speed. Together, these principles show how the topic is
+  applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:d1405a98c17ef515522321a17e78d007c509bd6002dfa63db27a111af43995bc"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -47,3 +50,53 @@ evidence:
       segment_ids:
         - iNTkZQ-ZenY:00112
         - iNTkZQ-ZenY:00116
+  - id: 2KQFI9yewD0-concept-finger-assisted-brushing-reviewed
+    evidence_type: definition
+    excerpt: Using the fingers, often with wrist participation, to generate a short, concentrated burst of force and brushing action at contact.
+    reason: The speaker repeatedly says the fingers generate concentrated power, should press forward and upward, and create the friction at the moment of contact.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 2KQFI9yewD0
+      start_ms: 101766
+      end_ms: 129400
+      url: https://www.youtube.com/watch?v=2KQFI9yewD0&t=101s
+      segment_ids:
+        - 2KQFI9yewD0:00027
+        - 2KQFI9yewD0:00032
+        - 2KQFI9yewD0:00033
+  - id: AGLSC40_5dw-concept-finger-assisted-brushing-reviewed
+    evidence_type: definition
+    excerpt: Using the fingers, together with the wrist, to assist brushing and acceleration at contact instead of relying only on the forearm.
+    reason: The fingers and wrist are shown as active contributors to the arc, not just the forearm.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: AGLSC40_5dw
+      start_ms: 275833
+      end_ms: 280466
+      url: https://www.youtube.com/watch?v=AGLSC40_5dw&t=275s
+      segment_ids:
+        - AGLSC40_5dw:00138
+        - AGLSC40_5dw:00139
+  - id: 25Ohh2RJcWk-concept-finger-assisted-brushing-reviewed
+    evidence_type: explanation
+    excerpt: Using the fingers, together with the wrist, to speed up the brushing action at contact.
+    reason: The speaker explicitly instructs using only fingers and wrist, then says fingers and wrist speed up the brushing and can produce both spin and speed.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 25Ohh2RJcWk
+      start_ms: 696700
+      end_ms: 715166
+      url: https://www.youtube.com/watch?v=25Ohh2RJcWk&t=696s
+      segment_ids:
+        - 25Ohh2RJcWk:00181
+        - 25Ohh2RJcWk:00182
+        - 25Ohh2RJcWk:00184
+        - 25Ohh2RJcWk:00185
+        - 25Ohh2RJcWk:00186
+        - 25Ohh2RJcWk:00187

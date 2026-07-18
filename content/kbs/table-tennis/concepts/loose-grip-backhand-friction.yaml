@@ -569,6 +569,23 @@ evidence:
       segment_ids:
         - 1yBxtuFfISg:00080
         - 1yBxtuFfISg:00086
+  - id: 25Ohh2RJcWk-concept-loose-grip-backhand-friction-reviewed
+    evidence_type: explanation
+    excerpt: Spin is created by a brief brushing contact with racket-head acceleration and enough looseness to let the racket head move freely.
+    reason: The transcript links free racket-head rotation and brief brushing contact to increased friction, spin, and speed.
+    confidence: 0.87
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 25Ohh2RJcWk
+      start_ms: 115100
+      end_ms: 128266
+      url: https://www.youtube.com/watch?v=25Ohh2RJcWk&t=115s
+      segment_ids:
+        - 25Ohh2RJcWk:00025
+        - 25Ohh2RJcWk:00026
+        - 25Ohh2RJcWk:00028
+        - 25Ohh2RJcWk:00029
 relations:
   - relation_type: used_with
     target_concept_id: concept-backspin-serve-under-ball-contact
