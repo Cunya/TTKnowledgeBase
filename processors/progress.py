@@ -52,12 +52,31 @@ def write_recent_snapshot(paths: KnowledgeBasePaths) -> None:
     """
     videos = load_videos(paths.data("normalized"))
     output = paths.root / "app" / "src" / "data" / "generated" / f"{paths.id}-recent.json"
+    # The snapshot is imported by Astro and therefore becomes public HTML.
+    # Keep only the metadata needed by the Recent page; normalized transcripts
+    # are private processing inputs and must never be serialized here.
+    browser_safe_videos = [
+        {
+            "id": video.id,
+            "title": video.title,
+            "canonical_url": video.canonical_url,
+            "channel_id": video.channel_id,
+            "channel_name": video.channel_name,
+            "duration_ms": video.duration_ms,
+            "published_at": video.published_at,
+            "ingested_at": video.ingested_at.isoformat() if video.ingested_at else None,
+            "thumbnail_url": video.thumbnail_url,
+            "language": video.language,
+            "availability": video.availability,
+        }
+        for video in videos
+    ]
     write_json(
         output,
         {
             "knowledge_base": paths.id,
             "generated_at": datetime.now(UTC).isoformat(),
-            "videos": [video.model_dump(mode="json") for video in videos],
+            "videos": browser_safe_videos,
         },
     )
 

@@ -49,6 +49,7 @@
 ## Progress reporting
 
 - Keep project/source count aggregation in `processors/progress.py` and expose one generated snapshot to local operator pages. Avoid duplicating count logic in Astro templates or documentation; a later quality report should consume the same snapshot.
+- Keep the Recent snapshot explicitly metadata-only. Normalized `Video` models include private transcript segments, so serializing them directly can fail the Pages artifact scan and leak raw transcripts into generated HTML.
 
 ## Moment boundaries
 
