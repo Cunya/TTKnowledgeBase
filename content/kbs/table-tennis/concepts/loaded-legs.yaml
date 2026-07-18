@@ -377,6 +377,21 @@ evidence:
       segment_ids:
         - dOSO2ksI7uY:00021
         - dOSO2ksI7uY:00027
+  - id: 8FDXnA8EO1M-concept-loaded-legs-batch-8fdxn-a8eo1m-reviewed
+    evidence_type: explanation
+    excerpt: Using the legs as support and loading the body weight into the stance before driving forward.
+    reason: The speaker describes the legs as support and says the body loads up before the hit.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8FDXnA8EO1M
+      start_ms: 164233
+      end_ms: 181833
+      url: https://www.youtube.com/watch?v=8FDXnA8EO1M&t=164s
+      segment_ids:
+        - 8FDXnA8EO1M:00041
+        - 8FDXnA8EO1M:00047
 relations:
   - relation_type: used_with
     target_concept_id: concept-body-hand-synchronization

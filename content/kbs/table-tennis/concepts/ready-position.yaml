@@ -592,6 +592,21 @@ evidence:
         - JLGqLr-9-2w:00052
         - JLGqLr-9-2w:00054
         - JLGqLr-9-2w:00055
+  - id: bzOU-EnMQbk-concept-ready-position-reviewed
+    evidence_type: definition
+    excerpt: A light, active stance that keeps the player prepared to move quickly into the next shot.
+    reason: The speaker explicitly says not to keep the feet planted and calls this an active ready position.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: bzOU-EnMQbk
+      start_ms: 331120
+      end_ms: 351000
+      url: https://www.youtube.com/watch?v=bzOU-EnMQbk&t=331s
+      segment_ids:
+        - bzOU-EnMQbk:00090
+        - bzOU-EnMQbk:00094
 relations:
   - relation_type: prerequisite_of
     target_concept_id: concept-forehand-loop

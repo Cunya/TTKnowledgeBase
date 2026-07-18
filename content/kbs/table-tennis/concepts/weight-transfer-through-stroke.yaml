@@ -637,6 +637,23 @@ evidence:
       segment_ids:
         - KQWSy-kQ30A:00141
         - KQWSy-kQ30A:00144
+  - id: bzOU-EnMQbk-concept-body-weight-transfer-through-stroke-reviewed
+    evidence_type: explanation
+    excerpt: Shifting body weight to support movement and power generation during play.
+    reason: The speaker warns against planting the body weight on one leg and notes a rally where the player's weight stays centered on the left leg, showing deliberate weight distribution and transfer control.
+    confidence: 0.86
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: bzOU-EnMQbk
+      start_ms: 503520
+      end_ms: 517360
+      url: https://www.youtube.com/watch?v=bzOU-EnMQbk&t=503s
+      segment_ids:
+        - bzOU-EnMQbk:00138
+        - bzOU-EnMQbk:00139
+        - bzOU-EnMQbk:00140
+        - bzOU-EnMQbk:00141
 relations:
   - relation_type: used_with
     target_concept_id: concept-loaded-legs

@@ -17,7 +17,7 @@ from .codex_engine import (
 from .models import Concept
 from .utils import normalize_text, read_yaml, sha256_json
 
-SUMMARY_FORMAT_VERSION = "direct-synthesis-v7"
+SUMMARY_FORMAT_VERSION = "direct-synthesis-v8"
 
 _REPORTING_PREFIX = re.compile(
     r"^(?:(?:the)\s+)?(?:speaker|coach|source|evidence|transcript|moments?|examples?)\s+"
@@ -42,6 +42,11 @@ def _editorial_reason(reason: str) -> str:
     value = re.sub(
         r"(?i)\b(?:the )?speaker\s+tells\s+players\s+to\s+",
         "players should ",
+        value,
+    )
+    value = re.sub(
+        r"(?i)\b(?:the )?(?:speaker|coach)\s+(?:again\s+)?(?:says?|states?|explains?)\s+",
+        "",
         value,
     )
     value = re.sub(

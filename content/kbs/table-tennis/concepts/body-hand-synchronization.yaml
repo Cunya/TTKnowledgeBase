@@ -1606,6 +1606,41 @@ evidence:
         - PBYIXS9NP0s:00181
         - PBYIXS9NP0s:00182
         - PBYIXS9NP0s:00183
+  - id: fpNFvJkdLnw-concept-body-hand-synchronization-reviewed
+    evidence_type: explanation
+    excerpt: Coordinate the hand, wrist, forearm, and elbow as one connected unit so the backhand motion is compact and natural.
+    reason: The speaker says the back of the hand, wrist, and forearm should be braced and work as one unit, which is exactly a connected motion.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: fpNFvJkdLnw
+      start_ms: 228959
+      end_ms: 253360
+      url: https://www.youtube.com/watch?v=fpNFvJkdLnw&t=228s
+      segment_ids:
+        - fpNFvJkdLnw:00081
+        - fpNFvJkdLnw:00082
+        - fpNFvJkdLnw:00083
+        - fpNFvJkdLnw:00084
+        - fpNFvJkdLnw:00085
+        - fpNFvJkdLnw:00086
+        - fpNFvJkdLnw:00087
+        - fpNFvJkdLnw:00088
+  - id: 8FDXnA8EO1M-concept-body-hand-synchronization-batch-8fdxn-a8eo1m-reviewed
+    evidence_type: explanation
+    excerpt: The body and arm should move as a coordinated unit rather than being used separately.
+    reason: The speaker directly says the body and hand must be driven together.
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8FDXnA8EO1M
+      start_ms: 288600
+      end_ms: 295000
+      url: https://www.youtube.com/watch?v=8FDXnA8EO1M&t=288s
+      segment_ids:
+        - 8FDXnA8EO1M:00072
 relations:
   - relation_type: used_with
     target_concept_id: concept-serve-action-decomposition

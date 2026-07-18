@@ -60,7 +60,8 @@ sections:
     label: Drive
     description: Direct, compact hitting strokes that use forward impact rather 
       than a large looping action.
-    concept_ids: []
+    concept_ids:
+    - concept-wrist-hook-and-stability
     children:
     - id: forehand-drive
       label: Forehand drive
@@ -75,6 +76,7 @@ sections:
       recovery.
     concept_ids:
     - concept-attack-first-over-conservative-play
+    - concept-forward-brushing-on-topspin
     children:
     - id: forehand-loop-family
       label: Forehand loop
@@ -83,6 +85,7 @@ sections:
       concept_ids:
       - concept-forehand-loop
       - concept-ball-trajectory-classification
+      - concept-wrist-position-for-forehand-loop
       children:
       - id: forehand-loop-variations
         label: Variations and ball selection
@@ -102,6 +105,7 @@ sections:
           acceleration, and finish.
         concept_ids:
         - concept-timing-by-bounce-type
+        - concept-forehand-attack-forearm-driven-motion
         children:
         - id: forehand-loop-preparation
           label: Preparation and spacing
@@ -374,6 +378,7 @@ sections:
   - concept-avoid-forcing-early-in-training
   - concept-muscle-memory-for-match-adjustment
   - concept-swing-speed-drill
+  - concept-shadow-practice
   children:
   - id: technique-acquisition
     label: Technique acquisition
