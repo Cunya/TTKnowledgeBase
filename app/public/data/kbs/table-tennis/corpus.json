@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T07:16:28.066226Z",
+  "generated_at": "2026-07-18T10:00:59.020108Z",
   "knowledge_base": {
     "id": "table-tennis",
     "name": "Table Tennis",
@@ -65282,9 +65282,7 @@
         "id": "shots",
         "label": "Shots and strokes",
         "description": "The main actions used to serve, receive, attack, and rally.",
-        "concept_ids": [
-          "concept-forearm-driven-motion"
-        ],
+        "concept_ids": [],
         "children": [
           {
             "id": "push",
@@ -65294,9 +65292,6 @@
               "concept-push-technique",
               "concept-push-contact-and-spin",
               "concept-push-variations",
-              "concept-backhand-attack",
-              "concept-backspin-receive-timing",
-              "concept-lateral-brushing-for-spin-generation",
               "concept-push-chop",
               "concept-push-flick"
             ],
@@ -65323,10 +65318,7 @@
             "id": "counter",
             "label": "Counter",
             "description": "Compact counterhit and counterdrive strokes played against pace or topspin.",
-            "concept_ids": [
-              "concept-body-rotation-through-the-stroke",
-              "concept-side-component-to-create-arc-and-friction"
-            ],
+            "concept_ids": [],
             "children": [
               {
                 "id": "forehand-counter",
@@ -65338,23 +65330,6 @@
                 "children": []
               },
               {
-                "id": "drive",
-                "label": "Drive",
-                "description": "Direct, compact hitting strokes that use forward impact rather than a large looping action.",
-                "concept_ids": [],
-                "children": [
-                  {
-                    "id": "forehand-drive",
-                    "label": "Forehand drive",
-                    "description": "Direct forehand hitting mechanics, timing, contact, and forward penetration.",
-                    "concept_ids": [
-                      "concept-forehand-drive"
-                    ],
-                    "children": []
-                  }
-                ]
-              },
-              {
                 "id": "backhand-counter",
                 "label": "Backhand counter",
                 "description": "Backhand counter mechanics, timing, compactness, and rally use.",
@@ -65364,14 +65339,27 @@
             ]
           },
           {
+            "id": "drive",
+            "label": "Drive",
+            "description": "Direct, compact hitting strokes that use forward impact rather than a large looping action.",
+            "concept_ids": [],
+            "children": [
+              {
+                "id": "forehand-drive",
+                "label": "Forehand drive",
+                "description": "Direct forehand hitting mechanics, timing, contact, and forward penetration.",
+                "concept_ids": [
+                  "concept-forehand-drive"
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
             "id": "loop",
             "label": "Loop",
             "description": "Topspin attacks that combine brushing, forward force, arc, and recovery.",
-            "concept_ids": [
-              "concept-borrow-incoming-force",
-              "concept-side-topspin-versus-side-backspin-classification",
-              "concept-spin-flick"
-            ],
+            "concept_ids": [],
             "children": [
               {
                 "id": "forehand-loop-family",
@@ -65511,9 +65499,7 @@
               "concept-block-forearm-angle",
               "concept-block-spin-reading",
               "concept-block-on-the-rise",
-              "concept-active-block",
-              "concept-defensive-rhythm-variation",
-              "concept-close-table-defensive-positioning"
+              "concept-active-block"
             ],
             "children": [
               {
@@ -65540,8 +65526,10 @@
             "description": "Over-the-table attacks against short or half-long balls.",
             "concept_ids": [
               "concept-deceptive-flick",
+              "concept-spin-flick",
               "concept-forearm-led-flick-control",
-              "concept-wrist-cocking-for-flicks"
+              "concept-wrist-cocking-for-flicks",
+              "concept-push-flick"
             ],
             "children": [
               {
@@ -65615,6 +65603,7 @@
               "concept-compact-response-to-fast-ball",
               "concept-serve-receive-reading-and-rhythm",
               "concept-short-ball-receive-decisions",
+              "concept-backspin-receive-timing",
               "concept-avoid-getting-jammed-by-backswing-timing",
               "concept-forehand-flick-for-short-balls",
               "concept-half-long-ball",
@@ -65671,7 +65660,10 @@
               "concept-weight-transfer-versus-body-rotation",
               "concept-body-hand-synchronization",
               "concept-relax-then-accelerate-at-contact",
-              "concept-loose-back-tight-release"
+              "concept-loose-back-tight-release",
+              "concept-forearm-driven-motion",
+              "concept-body-rotation-through-the-stroke",
+              "concept-borrow-incoming-force"
             ],
             "children": []
           },
@@ -65684,7 +65676,10 @@
               "concept-contact-point",
               "concept-contact-zone-on-ball",
               "concept-brush-around-the-ball",
-              "concept-rubber-friction-differences"
+              "concept-rubber-friction-differences",
+              "concept-lateral-brushing-for-spin-generation",
+              "concept-side-component-to-create-arc-and-friction",
+              "concept-side-topspin-versus-side-backspin-classification"
             ],
             "children": []
           }
@@ -65748,7 +65743,9 @@
             "label": "Attack selection",
             "description": "Match loop height, spin, pace, and risk to the incoming ball and tactical situation.",
             "concept_ids": [
-              "concept-push-rally-strategy"
+              "concept-push-rally-strategy",
+              "concept-backhand-attack",
+              "concept-close-table-defensive-positioning"
             ],
             "children": []
           },
@@ -65760,7 +65757,8 @@
               "concept-adapt-rally-rhythm-to-opponent",
               "concept-match-play-framework",
               "concept-opponent-targeting",
-              "concept-follow-the-ball-rhythm"
+              "concept-follow-the-ball-rhythm",
+              "concept-defensive-rhythm-variation"
             ],
             "children": []
           }

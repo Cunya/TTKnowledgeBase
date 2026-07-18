@@ -6,8 +6,7 @@ sections:
 - id: shots
   label: Shots and strokes
   description: The main actions used to serve, receive, attack, and rally.
-  concept_ids:
-  - concept-forearm-driven-motion
+  concept_ids: []
   children:
   - id: push
     label: Push
@@ -17,9 +16,6 @@ sections:
     - concept-push-technique
     - concept-push-contact-and-spin
     - concept-push-variations
-    - concept-backhand-attack
-    - concept-backspin-receive-timing
-    - concept-lateral-brushing-for-spin-generation
     - concept-push-chop
     - concept-push-flick
     children:
@@ -40,9 +36,7 @@ sections:
     label: Counter
     description: Compact counterhit and counterdrive strokes played against pace
       or topspin.
-    concept_ids:
-    - concept-body-rotation-through-the-stroke
-    - concept-side-component-to-create-arc-and-friction
+    concept_ids: []
     children:
     - id: forehand-counter
       label: Forehand counter
@@ -51,30 +45,27 @@ sections:
       concept_ids:
       - concept-keep-the-ball-low
       children: []
-    - id: drive
-      label: Drive
-      description: Direct, compact hitting strokes that use forward impact rather than a large looping action.
-      concept_ids: []
-      children:
-      - id: forehand-drive
-        label: Forehand drive
-        description: Direct forehand hitting mechanics, timing, contact, and forward penetration.
-        concept_ids: [concept-forehand-drive]
-        children: []
     - id: backhand-counter
       label: Backhand counter
       description: Backhand counter mechanics, timing, compactness, and rally 
         use.
       concept_ids: []
       children: []
+  - id: drive
+    label: Drive
+    description: Direct, compact hitting strokes that use forward impact rather than a large looping action.
+    concept_ids: []
+    children:
+    - id: forehand-drive
+      label: Forehand drive
+      description: Direct forehand hitting mechanics, timing, contact, and forward penetration.
+      concept_ids: [concept-forehand-drive]
+      children: []
   - id: loop
     label: Loop
     description: Topspin attacks that combine brushing, forward force, arc, and 
       recovery.
-    concept_ids:
-    - concept-borrow-incoming-force
-    - concept-side-topspin-versus-side-backspin-classification
-    - concept-spin-flick
+    concept_ids: []
     children:
     - id: forehand-loop-family
       label: Forehand loop
@@ -187,8 +178,6 @@ sections:
     - concept-block-spin-reading
     - concept-block-on-the-rise
     - concept-active-block
-    - concept-defensive-rhythm-variation
-    - concept-close-table-defensive-positioning
     children:
     - id: forehand-block
       label: Forehand block
@@ -208,8 +197,10 @@ sections:
     description: Over-the-table attacks against short or half-long balls.
     concept_ids:
     - concept-deceptive-flick
+    - concept-spin-flick
     - concept-forearm-led-flick-control
     - concept-wrist-cocking-for-flicks
+    - concept-push-flick
     children:
     - id: forehand-flick
       label: Forehand flick
@@ -269,6 +260,7 @@ sections:
     - concept-compact-response-to-fast-ball
     - concept-serve-receive-reading-and-rhythm
     - concept-short-ball-receive-decisions
+    - concept-backspin-receive-timing
     - concept-avoid-getting-jammed-by-backswing-timing
     - concept-forehand-flick-for-short-balls
     - concept-half-long-ball
@@ -321,6 +313,9 @@ sections:
     - concept-body-hand-synchronization
     - concept-relax-then-accelerate-at-contact
     - concept-loose-back-tight-release
+    - concept-forearm-driven-motion
+    - concept-body-rotation-through-the-stroke
+    - concept-borrow-incoming-force
     children: []
   - id: racket-ball-interaction
     label: Racket-ball interaction
@@ -332,6 +327,9 @@ sections:
     - concept-contact-zone-on-ball
     - concept-brush-around-the-ball
     - concept-rubber-friction-differences
+    - concept-lateral-brushing-for-spin-generation
+    - concept-side-component-to-create-arc-and-friction
+    - concept-side-topspin-versus-side-backspin-classification
     children: []
 - id: training
   label: Training and drills
@@ -383,6 +381,8 @@ sections:
       and tactical situation.
     concept_ids:
     - concept-push-rally-strategy
+    - concept-backhand-attack
+    - concept-close-table-defensive-positioning
     children: []
   - id: opponent-adaptation
     label: Opponent adaptation
@@ -393,6 +393,7 @@ sections:
     - concept-match-play-framework
     - concept-opponent-targeting
     - concept-follow-the-ball-rhythm
+    - concept-defensive-rhythm-variation
     children: []
 - id: equipment
   label: Equipment and maintenance

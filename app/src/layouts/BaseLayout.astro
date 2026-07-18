@@ -25,6 +25,10 @@ const showLocalDocumentation = import.meta.env.PUBLIC_PRODUCTION_BUILD !== 'true
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
+    <script is:inline>
+      const savedTheme = localStorage.getItem('momentgraph-theme');
+      if (savedTheme === 'dark' || (!savedTheme && matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.dataset.theme = 'dark';
+    </script>
     <title>{title === 'MomentGraph' ? title : `${title} · MomentGraph`}</title>
   </head>
   <body>
@@ -39,11 +43,18 @@ const showLocalDocumentation = import.meta.env.PUBLIC_PRODUCTION_BUILD !== 'true
         <a href={`${base}methodology/`}>Method</a>
         {showLocalDocumentation && <a href={`${base}dashboard/`}>Dashboard</a>}
         <a class="support-nav" href={`${base}support/`}>Support</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode" data-theme-toggle>Dark mode</button>
       </nav>
     </header>
     <main><slot /></main>
     <footer>
       <p>Every knowledge item links back to its source moment. Independent educational project. <a href={`${base}support/`}>Support its development</a>.</p>
     </footer>
+    <script is:inline>
+      const toggle = document.querySelector('[data-theme-toggle]');
+      const updateThemeLabel = () => { if (toggle) toggle.textContent = document.documentElement.dataset.theme === 'dark' ? 'Light mode' : 'Dark mode'; };
+      updateThemeLabel();
+      toggle?.addEventListener('click', () => { const dark = document.documentElement.dataset.theme !== 'dark'; document.documentElement.dataset.theme = dark ? 'dark' : 'light'; localStorage.setItem('momentgraph-theme', dark ? 'dark' : 'light'); updateThemeLabel(); });
+    </script>
   </body>
 </html>

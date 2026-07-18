@@ -13,6 +13,17 @@
   background: var(--paper);
   font-synthesis: none;
 }
+:root[data-theme="dark"] {
+  --ink: #edf3ea;
+  --muted: #aab7ad;
+  --paper: #121814;
+  --surface: #1b241e;
+  --line: #344138;
+  --green: #72d6a0;
+  --lime: #c9ff68;
+  --orange: #ff8a62;
+  --shadow: 0 18px 50px rgba(0, 0, 0, .28);
+}
 * { box-sizing: border-box; }
 body { margin: 0; min-height: 100vh; background: radial-gradient(circle at 80% 0%, rgba(201,255,104,.24), transparent 25rem), var(--paper); }
 a { color: inherit; }
@@ -25,6 +36,9 @@ nav { display: flex; gap: 24px; }
 .site-header nav a { white-space: nowrap; }
 nav a { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 650; }
 nav a:hover, nav a:focus-visible { color: var(--green); }
+.theme-toggle { border: 0; border-bottom: 1px solid transparent; padding: 2px 0; color: var(--ink); background: transparent; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; font-size: 10px; font-weight: 800; letter-spacing: .08em; line-height: 1.2; text-transform: uppercase; }
+.theme-toggle::before { content: '◐'; color: var(--green); font-size: 13px; letter-spacing: 0; }
+.theme-toggle:hover, .theme-toggle:focus-visible { border-bottom-color: var(--green); color: var(--green); }
 .support-nav { color: var(--green); }
 main { width: 100%; max-width: none; margin: auto; padding: 0 clamp(18px, 2.5vw, 64px) 80px; }
 footer { border-top: 1px solid var(--line); padding: 26px 28px; color: var(--muted); text-align: center; font-size: 13px; }
@@ -36,6 +50,7 @@ h1, h2, h3, p { margin-top: 0; }
 h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 500; letter-spacing: -.055em; font-size: clamp(52px, 8vw, 108px); line-height: .91; margin: 22px 0 28px; }
 h1 em { color: var(--green); font-weight: inherit; }
 .hero-copy { max-width: 680px; font-size: 20px; line-height: 1.6; color: #4d5c52; }
+:root[data-theme="dark"] .hero-copy { color: var(--muted); }
 .hero-stats { display: flex; gap: 12px; margin-top: 35px; }
 .hero-stats div { min-width: 150px; border-top: 2px solid var(--orange); padding: 10px 20px 4px 0; display: flex; flex-direction: column; }
 .hero-stats strong { font-family: Georgia, serif; font-size: 34px; font-weight: 500; }
