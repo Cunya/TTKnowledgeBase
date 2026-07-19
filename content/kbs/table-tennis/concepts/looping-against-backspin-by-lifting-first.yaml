@@ -14,10 +14,12 @@ evidence_summary: >-
   described lifting-into-topspin handling pattern. The sequence directly: impact first to
   neutralize spin, then brush the ball. Looping against backspin uses a take-off curve, describes
   backspin as a take-off curve, and very low balls require fully using that curve. Spin and loop
-  power come from borrowing the ball's downward force and combining it with an upward swing.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:3e146ef6d3a3b9cf2af52c02d61d17f5514b0dc78389a32214e01b7661b864a7"
+  power come from borrowing the ball's downward force and combining it with an upward swing. To
+  wait for the ball to drop from its highest point and the best hitting point is the initial
+  descent. With a very spinny ball, the hand should be low to lift the trajectory and handle the
+  ball appropriately. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:29486d6000718dd1b69fe824c7408ec28631609e67af7f5049ea194cf3bd0209"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -147,3 +149,37 @@ evidence:
         - 5g8d38gLuq8:00068
         - 5g8d38gLuq8:00069
         - 5g8d38gLuq8:00070
+  - id: 6Lw_HobLgSY-concept-looping-against-backspin-by-lifting-first-reviewed
+    evidence_type: explanation
+    excerpt: A topspin method that first lifts the incoming ball and contacts it as it begins to descend, rather than striking at the peak or on the way up.
+    reason: The speaker explicitly says to wait for the ball to drop from its highest point and states that the best hitting point is the initial descent.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 6Lw_HobLgSY
+      start_ms: 73733
+      end_ms: 89700
+      url: https://www.youtube.com/watch?v=6Lw_HobLgSY&t=73s
+      segment_ids:
+        - 6Lw_HobLgSY:00031
+        - 6Lw_HobLgSY:00033
+        - 6Lw_HobLgSY:00038
+  - id: 15ElcVXEJVU-concept-looping-against-backspin-by-lifting-first-reviewed
+    evidence_type: explanation
+    excerpt: To handle backspin, first lift the ball's trajectory and combine the upward force with the incoming spin rather than striking flat or rushing.
+    reason: The speaker explains that with a very spinny ball, the hand should be low to lift the trajectory and handle the ball appropriately.
+    confidence: 0.87
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 15ElcVXEJVU
+      start_ms: 911233
+      end_ms: 939400
+      url: https://www.youtube.com/watch?v=15ElcVXEJVU&t=911s
+      segment_ids:
+        - 15ElcVXEJVU:00209
+        - 15ElcVXEJVU:00210
+        - 15ElcVXEJVU:00211
+        - 15ElcVXEJVU:00213
+        - 15ElcVXEJVU:00214

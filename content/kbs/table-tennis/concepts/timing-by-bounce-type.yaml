@@ -12,9 +12,11 @@ evidence_summary: >-
   buys time to catch the ball at its drop or peak before swinging naturally. A short serve by
   observing the first bounce. Swing timing to hearing the bounce sound and starting only after the
   ball hits the table. The preferred contact timing as the peak of the bounce, not the rising
-  phase. Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:71ba807fb492bc12e47198db007af2f5806df48605f2299c884bb0e00192f8c4"
+  phase. The best hitting point as the initial descent and explicitly excludes the peak and upward
+  phase. To wait, let the ball fall, and start swinging during the downward phase or after the
+  bounce point. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:b55a4b214e8d125a776695097f321e362aca517f3a58453375e5206b8ba68d6c"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -114,3 +116,34 @@ evidence:
       segment_ids:
         - Y02oMCu7Ppc:00034
         - Y02oMCu7Ppc:00035
+  - id: LopC3UNnOXM-concept-timing-by-bounce-type-reviewed
+    evidence_type: definition
+    excerpt: Choosing the contact moment based on the bounce phase, especially waiting for the ball to descend after its peak rather than striking at the peak or on the way up.
+    reason: The speaker identifies the best hitting point as the initial descent and explicitly excludes the peak and upward phase.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: LopC3UNnOXM
+      start_ms: 76200
+      end_ms: 105600
+      url: https://www.youtube.com/watch?v=LopC3UNnOXM&t=76s
+      segment_ids:
+        - LopC3UNnOXM:00027
+        - LopC3UNnOXM:00031
+        - LopC3UNnOXM:00035
+        - LopC3UNnOXM:00036
+  - id: NMa0xKa1kpo-concept-timing-by-bounce-type-reviewed
+    evidence_type: explanation
+    excerpt: Timing the swing based on the bounce or descent phase of the ball instead of striking too early.
+    reason: The speaker repeatedly says to wait, let the ball fall, and start swinging during the downward phase or after the bounce point.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: NMa0xKa1kpo
+      start_ms: 413633
+      end_ms: 419733
+      url: https://www.youtube.com/watch?v=NMa0xKa1kpo&t=413s
+      segment_ids:
+        - NMa0xKa1kpo:00073

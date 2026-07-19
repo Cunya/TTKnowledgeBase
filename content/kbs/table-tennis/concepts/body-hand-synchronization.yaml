@@ -1724,6 +1724,40 @@ evidence:
       url: https://www.youtube.com/watch?v=tQ9LEV9f2IU&t=223s
       segment_ids:
         - tQ9LEV9f2IU:00029
+  - id: s2VuRO66usY-concept-body-hand-synchronization-reviewed
+    evidence_type: explanation
+    excerpt: Coordinating body movement and hand action so they work together at contact and through the stroke.
+    reason: The speaker states that after receiving the ball, body movement should synchronize with the hand and that the forearm then has room to rotate forward.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: s2VuRO66usY
+      start_ms: 581966
+      end_ms: 599066
+      url: https://www.youtube.com/watch?v=s2VuRO66usY&t=581s
+      segment_ids:
+        - s2VuRO66usY:00243
+        - s2VuRO66usY:00244
+        - s2VuRO66usY:00245
+        - s2VuRO66usY:00247
+        - s2VuRO66usY:00248
+  - id: HcUOmZ0sgI0-concept-body-hand-synchronization-reviewed
+    evidence_type: explanation
+    excerpt: Coordinating the upper arm, forearm, wrist, and racket so the stroke works as one connected chain instead of isolated parts.
+    reason: The speaker explicitly says the upper arm and forearm together create a powerful result and that coordination is essential.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: HcUOmZ0sgI0
+      start_ms: 228566
+      end_ms: 238866
+      url: https://www.youtube.com/watch?v=HcUOmZ0sgI0&t=228s
+      segment_ids:
+        - HcUOmZ0sgI0:00091
+        - HcUOmZ0sgI0:00095
+        - HcUOmZ0sgI0:00096
 relations:
   - relation_type: used_with
     target_concept_id: concept-serve-action-decomposition

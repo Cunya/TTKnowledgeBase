@@ -9,13 +9,15 @@ short_definition: Keeping the ball and its trajectory low to force weaker, slowe
 evidence_summary: >-
   Keep the ball low brings together several connected ideas. A high ball invites smashes, a low
   ball slows the loop, and the trajectory should always be kept low. To serve low and keep the arc
-  low. The arc and contact point must be low and close to the body. The finish is repeatedly
-  constrained to net height, low position, and downward motion. Low trajectory is the most
-  important element of the serve and why it improves effectiveness. Low trajectory as a primary
-  goal and how racket-tip and angle adjustments keep the return low. Together, these principles
-  show how the topic is applied in practice while preserving the relevant distinctions and
-  constraints.
-evidence_summary_source_hash: "sha256:aebf758f456d99f6f103b783b537ddadb0535109f07dfce1572ad3a85b82e561"
+  low. The finish is repeatedly constrained to net height, low position, and downward motion. Low
+  trajectory is the most important element of the serve and why it improves effectiveness. The
+  teacher directly says not to change the height and that the ball/action should stay small and
+  below the white line. The stroke height must be controlled and that the resulting ball should be
+  low and spinny. To keep the upper trajectory low and shorter is better when making heavy spin
+  serves. To lower the body, keep the body low, and stay crouched during receive and looping.
+  Additional points reinforce the same theme. Together, these principles show how the topic is
+  applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:f898e59becf77912bc80d0e911fd751483bb2e2fbd7b1ad79c24675a076bbce5"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -141,3 +143,82 @@ evidence:
       segment_ids:
         - WcQLHn2Fafw:00144
         - WcQLHn2Fafw:00146
+  - id: c1OUlMn9IFM-concept-keep-the-ball-low-reviewed
+    evidence_type: definition
+    excerpt: Maintain a stable, low ball path without unnecessary height changes during the stroke.
+    reason: The teacher directly says not to change the height and that the ball/action should stay small and below the white line.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: c1OUlMn9IFM
+      start_ms: 475266
+      end_ms: 480200
+      url: https://www.youtube.com/watch?v=c1OUlMn9IFM&t=475s
+      segment_ids:
+        - c1OUlMn9IFM:00161
+        - c1OUlMn9IFM:00162
+        - c1OUlMn9IFM:00163
+  - id: J6xE5nBqDeI-concept-keep-the-ball-low-reviewed
+    evidence_type: explanation
+    excerpt: The stroke should control height so the ball stays low while still carrying spin.
+    reason: The speaker says the stroke height must be controlled and that the resulting ball should be low and spinny.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: J6xE5nBqDeI
+      start_ms: 243566
+      end_ms: 257766
+      url: https://www.youtube.com/watch?v=J6xE5nBqDeI&t=243s
+      segment_ids:
+        - J6xE5nBqDeI:00088
+        - J6xE5nBqDeI:00090
+        - J6xE5nBqDeI:00091
+  - id: tqoyTAIjdEM-concept-keep-the-ball-low-reviewed
+    evidence_type: explanation
+    excerpt: Control the serve trajectory so the ball clears the net with a low arc and stays short.
+    reason: The speaker explicitly says to keep the ball's arc low and contact around net height.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: tqoyTAIjdEM
+      start_ms: 18033
+      end_ms: 22466
+      url: https://www.youtube.com/watch?v=tqoyTAIjdEM&t=18s
+      segment_ids:
+        - tqoyTAIjdEM:00006
+        - tqoyTAIjdEM:00008
+  - id: rP-4JEt9D5Q-concept-keep-the-ball-low-reviewed
+    evidence_type: explanation
+    excerpt: Maintain a low serve trajectory so the ball drops short and is harder to attack or lift.
+    reason: The speaker directly instructs to keep the upper trajectory low and says shorter is better when making heavy spin serves.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: rP-4JEt9D5Q
+      start_ms: 138280
+      end_ms: 148720
+      url: https://www.youtube.com/watch?v=rP-4JEt9D5Q&t=138s
+      segment_ids:
+        - rP-4JEt9D5Q:00057
+        - rP-4JEt9D5Q:00058
+        - rP-4JEt9D5Q:00059
+        - rP-4JEt9D5Q:00060
+  - id: 8fxjEROShs4-concept-keep-the-ball-low-reviewed
+    evidence_type: explanation
+    excerpt: Maintain a low body and low ball-control posture during receive or looping actions.
+    reason: The speaker explicitly instructs to lower the body, keep the body low, and stay crouched during receive and looping.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8fxjEROShs4
+      start_ms: 925666
+      end_ms: 941500
+      url: https://www.youtube.com/watch?v=8fxjEROShs4&t=925s
+      segment_ids:
+        - 8fxjEROShs4:00124
+        - 8fxjEROShs4:00125

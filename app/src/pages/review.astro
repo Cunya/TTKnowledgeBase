@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Local review queue" description="Local-only review marks for moments and concepts.">
+  <article class="operator-page local-review-page">
+    <div class="eyebrow">Local editorial workspace</div><h1>Review queue</h1>
+    <p class="hero-copy">Marks are stored only in this browser. Collect timestamp, atlas, visual, evidence, concept, and metadata fixes while browsing, then resolve or reopen them here.</p>
+    <div class="review-queue-toolbar"><span data-review-count>Loading…</span><button type="button" data-clear-resolved>Clear resolved</button></div>
+    <section data-review-list></section>
+  </article>
+</BaseLayout>
+<script>
+  // @ts-nocheck
+  const key = 'momentgraph-local-review-tasks';
+  const read = () => JSON.parse(localStorage.getItem(key) || '[]');
+  const write = (tasks) => localStorage.setItem(key, JSON.stringify(tasks));
+  const labels = { timestamp: 'Review timestamps', atlas: 'Review atlas position', visual: 'Review visual demonstration', evidence: 'Review evidence or excerpt', concept: 'Review concept identity', metadata: 'Review video metadata' };
+  const esc = (value) => String(value || '').replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
+  const taskCard = (task) => {
+    const source = `https://www.youtube.com/watch?v=${encodeURIComponent(task.videoId)}${task.startMs ? `&t=${Math.floor(task.startMs / 1000)}s` : ''}`;
+    return `<article class="review-queue-item ${task.status}"><header><strong>${esc(labels[task.type] || task.type)}</strong><span>${esc(task.status)}</span></header><small>Video ${esc(task.videoId)}${task.conceptId ? ` · concept ${esc(task.conceptId)}` : ''}${task.startMs ? ` · ${Math.round(task.startMs / 1000)}s` : ''}</small><p>${esc(task.note)}</p>${task.resolution ? `<p class="review-resolution"><strong>Resolution:</strong> ${esc(task.resolution)}</p>` : ''}<div><a href="${source}" target="_blank" rel="noreferrer">Open moment</a><button type="button" data-toggle="${esc(task.id)}">${task.status === 'open' ? 'Mark resolved' : 'Reopen'}</button>${task.status === 'open' ? `<button type="button" data-remove="${esc(task.id)}">Delete</button>` : ''}</div></article>`;
+  };
+  const render = () => {
+    const tasks = read();
+    document.querySelector('[data-review-count]').textContent = `${tasks.filter((task) => task.status === 'open').length} open · ${tasks.length} total`;
+    document.querySelector('[data-review-list]').innerHTML = tasks.length ? tasks.map(taskCard).join('') : '<p class="empty-state">No local review marks yet. Add one from a video or moment page.</p>';
+    document.querySelectorAll('[data-toggle]').forEach((node) => node.addEventListener('click', async () => { const task = read().find((item) => item.id === node.dataset.toggle); if (!task) return; task.status = task.status === 'open' ? 'resolved' : 'open'; task.updatedAt = new Date().toISOString(); task.resolution = task.status === 'resolved' ? (prompt('What was fixed?', '') || '') : null; const tasks = read(); write(tasks.map((item) => item.id === task.id ? task : item)); try { await fetch(`http://127.0.0.1:4322/api/review-tasks/${task.id}`, { method: 'PATCH', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ status: task.status, resolution: task.resolution }) }); } catch {} render(); }));
+    document.querySelectorAll('[data-remove]').forEach((node) => node.addEventListener('click', () => { write(read().filter((task) => task.id !== node.dataset.remove)); render(); }));
+  };
+  document.querySelector('[data-clear-resolved]')?.addEventListener('click', () => { write(read().filter((task) => task.status !== 'resolved')); render(); });
+  render(); fetch('http://127.0.0.1:4322/api/review-tasks').then((response) => response.ok ? response.json() : null).then(async (data) => { if (!data?.tasks) return; const localTasks = read(); const remoteIds = new Set(data.tasks.map((task) => task.id)); const unsynced = localTasks.filter((task) => !remoteIds.has(task.id)); await Promise.all(unsynced.map((task) => fetch('http://127.0.0.1:4322/api/review-tasks', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(task) }).catch(() => null))); const refreshed = await fetch('http://127.0.0.1:4322/api/review-tasks').then((response) => response.ok ? response.json() : null).catch(() => null); write(refreshed?.tasks || [...data.tasks, ...unsynced]); render(); }).catch(() => {});
+</script>

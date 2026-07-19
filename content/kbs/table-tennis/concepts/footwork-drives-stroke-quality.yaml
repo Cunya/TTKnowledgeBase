@@ -9,10 +9,12 @@ short_definition: Stroke quality depends heavily on leg movement and positioning
 evidence_summary: >-
   Footwork drives stroke quality brings together several connected ideas. Many stroke errors come
   from the legs and that the legs are the real cause of deformation. The big danger is starting
-  the backswing too early and that waiting gives time for footwork. Together, these principles
-  show how the topic is applied in practice while preserving the relevant distinctions and
-  constraints.
-evidence_summary_source_hash: "sha256:8fe8412a10aea92054e6a0c2845f27a797210f078f962032b39b1b2bb30ce2d1"
+  the backswing too early and that waiting gives time for footwork. Forehand issues to foot
+  movement and inability to retract the arm, indicating positioning affects stroke completion.
+  Weak legs create loose posture and that stable legs produce stable upper-body movement.
+  Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:4c7cf4693f8684aee3de7dd80b574b7864ae1d7093d896630d660431a2708556"
 evidence_summary_generator: "deterministic"
 concept_type: fundamental
 facets:
@@ -60,3 +62,40 @@ evidence:
         - K0eFBdIiBTQ:00069
         - K0eFBdIiBTQ:00070
         - K0eFBdIiBTQ:00073
+  - id: b3bRD1hQpe8-new-footwork-and-positioning-for-forehand-backhand-reviewed
+    evidence_type: explanation
+    excerpt: Stroke quality depends on getting the body into position; poor footwork or being out of position causes errors and reduces available options.
+    reason: The speaker connects forehand issues to foot movement and inability to retract the arm, indicating positioning affects stroke completion.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: b3bRD1hQpe8
+      start_ms: 199833
+      end_ms: 225100
+      url: https://www.youtube.com/watch?v=b3bRD1hQpe8&t=199s
+      segment_ids:
+        - b3bRD1hQpe8:00083
+        - b3bRD1hQpe8:00084
+        - b3bRD1hQpe8:00085
+        - b3bRD1hQpe8:00086
+        - b3bRD1hQpe8:00090
+        - b3bRD1hQpe8:00091
+        - b3bRD1hQpe8:00092
+        - b3bRD1hQpe8:00093
+        - b3bRD1hQpe8:00094
+  - id: tpY3SRVdBK8-concept-footwork-drives-stroke-quality-reviewed
+    evidence_type: explanation
+    excerpt: Stroke quality depends on lower-body stability and movement quality; weak legs reduce the effectiveness of the hands and upper body.
+    reason: The speaker explicitly says weak legs create loose posture and that stable legs produce stable upper-body movement.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: tpY3SRVdBK8
+      start_ms: 93800
+      end_ms: 108166
+      url: https://www.youtube.com/watch?v=tpY3SRVdBK8&t=93s
+      segment_ids:
+        - tpY3SRVdBK8:00007
+        - tpY3SRVdBK8:00010

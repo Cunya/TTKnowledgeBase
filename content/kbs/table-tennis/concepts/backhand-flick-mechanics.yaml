@@ -313,6 +313,53 @@ evidence:
         - hwUcyGY2ApQ:00055
         - hwUcyGY2ApQ:00056
         - hwUcyGY2ApQ:00057
+  - id: 9vowMQmr-pk-concept-backhand-flick-mechanics-reviewed
+    evidence_type: demonstration
+    excerpt: Executing a backhand flick with quick wrist and finger action to generate friction and lift the ball.
+    reason: The speaker attributes the lift to quick wrist action, matching the described mechanics of a flick that generates friction and lifts the ball.
+    confidence: 0.89
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 9vowMQmr-pk
+      start_ms: 349900
+      end_ms: 360466
+      url: https://www.youtube.com/watch?v=9vowMQmr-pk&t=349s
+      segment_ids:
+        - 9vowMQmr-pk:00144
+        - 9vowMQmr-pk:00145
+        - 9vowMQmr-pk:00146
+  - id: idAN8cPDZ7w-concept-backhand-flick-mechanics-reviewed
+    evidence_type: definition
+    excerpt: Backhand flick execution driven by finger action and controlled wrist mechanics to create spin with a compact motion.
+    reason: The speaker says flicking generates spin and emphasizes fingertip use, limited motion, and avoiding excessive wrist activity.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: idAN8cPDZ7w
+      start_ms: 547666
+      end_ms: 574700
+      url: https://www.youtube.com/watch?v=idAN8cPDZ7w&t=547s
+      segment_ids:
+        - idAN8cPDZ7w:00121
+        - idAN8cPDZ7w:00122
+        - idAN8cPDZ7w:00123
+        - idAN8cPDZ7w:00127
+  - id: Zrw_aJYKfhA-concept-backhand-flick-mechanics-reviewed
+    evidence_type: explanation
+    excerpt: A backhand flick driven by finger and wrist action, using a compact pivot-like motion to create speed and spin.
+    reason: The speaker explicitly ties backhand execution to thumb/finger pivoting, finger pressure, and finger-led acceleration.
+    confidence: 0.88
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: Zrw_aJYKfhA
+      start_ms: 557666
+      end_ms: 563066
+      url: https://www.youtube.com/watch?v=Zrw_aJYKfhA&t=557s
+      segment_ids:
+        - Zrw_aJYKfhA:00132
 relations:
   - relation_type: used_with
     target_concept_id: concept-backhand-flick-on-rise

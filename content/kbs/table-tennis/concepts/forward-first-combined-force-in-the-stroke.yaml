@@ -13,9 +13,11 @@ evidence_summary: >-
   contrast is between lifting upward and pressing forward and says the body rotates first, then
   the wrist adds spin. The force must go forward, and for these balls it should go forward first,
   then upward, never downward. A useful contrast is between purely upward force and the need for
-  both forward and upward force. Together, these principles show how the topic is applied in
-  practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:29f484b3cb10b8fd7d10ed61c6da56f5a6358eeaa47e48753a6a490704e3402f"
+  both forward and upward force. A useful contrast is between forward force and upward force and
+  says the forearm direction should be forward, not upward. All actions in table tennis should go
+  forward and that forward motion generates combined force. Together, these principles show how
+  the topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:489d2aa8af80c47e6f375386f7c5f381488f6b94d66f474e09bfaf8b624602d9"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -103,3 +105,37 @@ evidence:
       segment_ids:
         - dJJtJQvuwOY:00007
         - dJJtJQvuwOY:00008
+  - id: 2xGbue3FXIw-concept-forward-first-combined-force-in-the-stroke-reviewed
+    evidence_type: explanation
+    excerpt: Directing the main force forward in the stroke rather than upward, especially during serve receive.
+    reason: The speaker contrasts forward force with upward force and says the forearm direction should be forward, not upward.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 2xGbue3FXIw
+      start_ms: 328430
+      end_ms: 337735
+      url: https://www.youtube.com/watch?v=2xGbue3FXIw&t=328s
+      segment_ids:
+        - 2xGbue3FXIw:00101
+        - 2xGbue3FXIw:00102
+        - 2xGbue3FXIw:00103
+        - 2xGbue3FXIw:00104
+  - id: mpCV9-Cc1HE-concept-forward-first-combined-force-in-the-stroke-reviewed
+    evidence_type: explanation
+    excerpt: The stroke should travel forward first, with forward force combined with brushing, rather than being purely upward or downward.
+    reason: The speaker explicitly says all actions in table tennis should go forward and that forward motion generates combined force.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: mpCV9-Cc1HE
+      start_ms: 84933
+      end_ms: 103600
+      url: https://www.youtube.com/watch?v=mpCV9-Cc1HE&t=84s
+      segment_ids:
+        - mpCV9-Cc1HE:00026
+        - mpCV9-Cc1HE:00028
+        - mpCV9-Cc1HE:00032
+        - mpCV9-Cc1HE:00034

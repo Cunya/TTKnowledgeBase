@@ -289,6 +289,37 @@ evidence:
       segment_ids:
         - J7Lm5IL-ggs:00024
         - J7Lm5IL-ggs:00025
+  - id: Vpzyb2te4MA-concept-ball-feel-reviewed
+    evidence_type: definition
+    excerpt: The player's sensed understanding of contact quality, including friction and impact balance during strokes.
+    reason: The speaker explicitly frames the discussion around the sensation of friction and impact and asks students to remember that sensation.
+    confidence: 0.91
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: Vpzyb2te4MA
+      start_ms: 10300
+      end_ms: 21800
+      url: https://www.youtube.com/watch?v=Vpzyb2te4MA&t=10s
+      segment_ids:
+        - Vpzyb2te4MA:00002
+        - Vpzyb2te4MA:00006
+  - id: mpCV9-Cc1HE-concept-ball-feel-reviewed
+    evidence_type: explanation
+    excerpt: Develop a tactile sense for the ball and its friction so the stroke becomes repeatable and controlled.
+    reason: The speaker defines friction as a personal feel and as sensing the ball.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: mpCV9-Cc1HE
+      start_ms: 621233
+      end_ms: 629233
+      url: https://www.youtube.com/watch?v=mpCV9-Cc1HE&t=621s
+      segment_ids:
+        - mpCV9-Cc1HE:00285
+        - mpCV9-Cc1HE:00287
+        - mpCV9-Cc1HE:00288
 relations:
   - relation_type: used_with
     target_concept_id: concept-contact-point

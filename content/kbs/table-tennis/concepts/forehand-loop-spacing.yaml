@@ -784,6 +784,37 @@ evidence:
       segment_ids:
         - 7LXrK-o5FmU:00008
         - 7LXrK-o5FmU:00012
+  - id: idAN8cPDZ7w-concept-forehand-loop-spacing-reviewed
+    evidence_type: explanation
+    excerpt: Managing the distance between the body, racket, and ball so the loop can be executed without lifting too high or losing spin.
+    reason: The speaker links looping problems to raising the ball too high, keeping the ball below chest level, and creating space for acceleration.
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: idAN8cPDZ7w
+      start_ms: 377766
+      end_ms: 394766
+      url: https://www.youtube.com/watch?v=idAN8cPDZ7w&t=377s
+      segment_ids:
+        - idAN8cPDZ7w:00066
+        - idAN8cPDZ7w:00070
+        - idAN8cPDZ7w:00073
+  - id: FweaNVt8gA0-concept-forehand-loop-spacing-reviewed
+    evidence_type: explanation
+    excerpt: Maintaining the correct spacing between body, racket, and ball so the loop can generate force without getting jammed.
+    reason: The transcript says ample space is needed to generate power, to get closer to the ball, and to keep the ball closer to the racket while leaning on it.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: FweaNVt8gA0
+      start_ms: 897200
+      end_ms: 926900
+      url: https://www.youtube.com/watch?v=FweaNVt8gA0&t=897s
+      segment_ids:
+        - FweaNVt8gA0:00239
+        - FweaNVt8gA0:00244
 relations:
   - relation_type: used_with
     target_concept_id: concept-forehand-loop

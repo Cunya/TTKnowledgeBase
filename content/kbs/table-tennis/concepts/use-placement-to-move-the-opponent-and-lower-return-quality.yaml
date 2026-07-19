@@ -10,9 +10,11 @@ evidence_summary: >-
   Use placement to move the opponent and lower return quality brings together several connected
   ideas. Changing placement moves the opponent, lowers return quality, and increases the quality
   of the next shot. Varying placement to prevent recovery and using placement to make the opponent
-  uncomfortable and lower attack quality. Together, these principles show how the topic is applied
-  in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:08919b76828dc41c7bfd12c5b2eac0c7a42ba8f1bc8fac16415401cad622ece8"
+  uncomfortable and lower attack quality. The goal is to control and trouble the opponent, then
+  later emphasizes speed and placement to give the opponent less time to react. Together, these
+  principles show how the topic is applied in practice while preserving the relevant distinctions
+  and constraints.
+evidence_summary_source_hash: "sha256:5cc4d3967ba826dac5073762dbb96b57c82ea200c1e24071edff65fc6dca8d58"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -63,3 +65,19 @@ evidence:
       segment_ids:
         - WcQLHn2Fafw:00039
         - WcQLHn2Fafw:00040
+  - id: c1OUlMn9IFM-concept-use-placement-to-move-the-opponent-and-lower-return-quality-reviewed
+    evidence_type: definition
+    excerpt: Use speed and placement to reduce the opponent's reaction time and force difficult returns.
+    reason: The transcript explicitly says the goal is to control and trouble the opponent, then later emphasizes speed and placement to give the opponent less time to react.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: c1OUlMn9IFM
+      start_ms: 486966
+      end_ms: 510100
+      url: https://www.youtube.com/watch?v=c1OUlMn9IFM&t=486s
+      segment_ids:
+        - c1OUlMn9IFM:00168
+        - c1OUlMn9IFM:00173
+        - c1OUlMn9IFM:00176

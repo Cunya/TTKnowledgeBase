@@ -297,6 +297,54 @@ evidence:
         - vCa7A9gyOT8:00176
         - vCa7A9gyOT8:00177
         - vCa7A9gyOT8:00178
+  - id: T19jPlfHkVA-concept-backhand-loop-reviewed
+    evidence_type: explanation
+    excerpt: A backhand topspin action that relies on lowered body position, contact, and friction to produce a lifted spinning ball.
+    reason: The speaker describes a normal backhand topspin stroke with bent knees, lowered center of gravity, and contact that combines force and friction.
+    confidence: 0.87
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: T19jPlfHkVA
+      start_ms: 6966
+      end_ms: 16066
+      url: https://www.youtube.com/watch?v=T19jPlfHkVA&t=6s
+      segment_ids:
+        - T19jPlfHkVA:00000
+        - T19jPlfHkVA:00001
+        - T19jPlfHkVA:00002
+        - T19jPlfHkVA:00003
+        - T19jPlfHkVA:00004
+        - T19jPlfHkVA:00005
+  - id: tpY3SRVdBK8-concept-backhand-loop-reviewed
+    evidence_type: definition
+    excerpt: A backhand topspin stroke used to lift and spin the ball, often with brushing contact and forward acceleration.
+    reason: The speaker explicitly describes spinning the ball, looping downward, and performing a brush loop on the backhand.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: tpY3SRVdBK8
+      start_ms: 211066
+      end_ms: 218533
+      url: https://www.youtube.com/watch?v=tpY3SRVdBK8&t=211s
+      segment_ids:
+        - tpY3SRVdBK8:00030
+        - tpY3SRVdBK8:00032
+  - id: u2A5PNggIqg-concept-backhand-loop-reviewed
+    evidence_type: definition
+    excerpt: A topspin attack executed on the backhand side, used as the standard response against suitable incoming balls.
+    reason: The speaker explicitly mentions backhand loop drive and backhand topspin as the active stroke being discussed.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: u2A5PNggIqg
+      start_ms: 184100
+      end_ms: 188300
+      url: https://www.youtube.com/watch?v=u2A5PNggIqg&t=184s
+      segment_ids:
+        - u2A5PNggIqg:00033
 relations:
   - relation_type: used_with
     target_concept_id: concept-backhand-topspin-body-coordination

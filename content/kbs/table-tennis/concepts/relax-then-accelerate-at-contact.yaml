@@ -1165,6 +1165,74 @@ evidence:
         - J7Lm5IL-ggs:00066
         - J7Lm5IL-ggs:00067
         - J7Lm5IL-ggs:00068
+  - id: dMRsujoVIj4-concept-relax-then-accelerate-at-contact-reviewed
+    evidence_type: definition
+    excerpt: Starting relaxed, then speeding up at the moment of contact, and finally braking or stopping after the action finishes.
+    reason: The speaker explicitly describes the sequence relax, accelerate, and brake/stop.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: dMRsujoVIj4
+      start_ms: 599466
+      end_ms: 619466
+      url: https://www.youtube.com/watch?v=dMRsujoVIj4&t=599s
+      segment_ids:
+        - dMRsujoVIj4:00250
+        - dMRsujoVIj4:00251
+        - dMRsujoVIj4:00252
+        - dMRsujoVIj4:00261
+  - id: aStjJkTimhg-concept-relax-then-accelerate-at-contact-reviewed
+    evidence_type: explanation
+    excerpt: Use a relaxed backswing and then a sharp release so the shot accelerates at the end rather than starting fast.
+    reason: The speaker explicitly teaches relaxation and acceleration, contrasting slow-fast with fast-fast.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: aStjJkTimhg
+      start_ms: 403000
+      end_ms: 416680
+      url: https://www.youtube.com/watch?v=aStjJkTimhg&t=403s
+      segment_ids:
+        - aStjJkTimhg:00179
+        - aStjJkTimhg:00180
+        - aStjJkTimhg:00181
+        - aStjJkTimhg:00182
+        - aStjJkTimhg:00183
+        - aStjJkTimhg:00184
+  - id: NMa0xKa1kpo-concept-relax-then-accelerate-at-contact-reviewed
+    evidence_type: explanation
+    excerpt: A stroke rhythm where the player stays relaxed early and accelerates only at the point of contact, especially for generating friction and power.
+    reason: The speaker explicitly says to be relaxed, then create friction and power, and to descend and relax during the loop motion.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: NMa0xKa1kpo
+      start_ms: 1054100
+      end_ms: 1068700
+      url: https://www.youtube.com/watch?v=NMa0xKa1kpo&t=1054s
+      segment_ids:
+        - NMa0xKa1kpo:00221
+        - NMa0xKa1kpo:00222
+  - id: mpCV9-Cc1HE-concept-relax-then-accelerate-at-contact-reviewed
+    evidence_type: explanation
+    excerpt: Stay relaxed during preparation and accelerate at the moment of contact rather than tensing early.
+    reason: The speaker repeatedly tells the learner not to rush and to relax while moving forward.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: mpCV9-Cc1HE
+      start_ms: 105800
+      end_ms: 131933
+      url: https://www.youtube.com/watch?v=mpCV9-Cc1HE&t=105s
+      segment_ids:
+        - mpCV9-Cc1HE:00035
+        - mpCV9-Cc1HE:00043
+        - mpCV9-Cc1HE:00044
+        - mpCV9-Cc1HE:00050
 relations:
   - relation_type: used_with
     target_concept_id: concept-forehand-loop-timing

@@ -1020,6 +1020,53 @@ evidence:
       segment_ids:
         - eIsYt1sCPRI:00069
         - eIsYt1sCPRI:00071
+  - id: fi3p2TgKGHI-concept-post-serve-recovery-reviewed
+    evidence_type: explanation
+    excerpt: Recovering into position immediately after serving so the next ball can be played from balance.
+    reason: The coach explicitly instructs the player to recover quickly after serving and continue the rally, which is direct serve-recovery guidance.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: fi3p2TgKGHI
+      start_ms: 37966
+      end_ms: 43466
+      url: https://www.youtube.com/watch?v=fi3p2TgKGHI&t=37s
+      segment_ids:
+        - fi3p2TgKGHI:00010
+        - fi3p2TgKGHI:00011
+        - fi3p2TgKGHI:00012
+  - id: 9vowMQmr-pk-concept-post-serve-recovery-reviewed
+    evidence_type: explanation
+    excerpt: Recovering into position after a serve so the next shot can be played without hesitation.
+    reason: The speaker explains that after the opponent serves, the call is used to prepare for the shot and attack, and that the backswing and stroke must be followed up without hesitation.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 9vowMQmr-pk
+      start_ms: 229333
+      end_ms: 252400
+      url: https://www.youtube.com/watch?v=9vowMQmr-pk&t=229s
+      segment_ids:
+        - 9vowMQmr-pk:00100
+        - 9vowMQmr-pk:00108
+  - id: 7Zz_cVWrgng-concept-serve-recovery-reviewed
+    evidence_type: explanation
+    excerpt: The immediate reset after serving, where the player recovers into the next position instead of pausing after the serve.
+    reason: The speaker says not to worry about recovery before serving, then immediately focuses on recovery after the serve and links serve problems to recovery issues.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 7Zz_cVWrgng
+      start_ms: 193966
+      end_ms: 223800
+      url: https://www.youtube.com/watch?v=7Zz_cVWrgng&t=193s
+      segment_ids:
+        - 7Zz_cVWrgng:00033
+        - 7Zz_cVWrgng:00034
+        - 7Zz_cVWrgng:00038
 relations:
   - relation_type: used_with
     target_concept_id: concept-short-serve-third-ball-attack

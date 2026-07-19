@@ -11,9 +11,13 @@ evidence_summary: >-
   compact body movement, says there is no time to turn the waist, and compactness for linking to
   the next shot. When the ball is very fast, they use a shorter stroke and quicker tempo instead
   of the usual loop technique. Large side-to-side or up-down motions are not permitted and
-  repeatedly advises keeping the movement compact. Together, these principles show how the topic
-  is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:0f704af0c3061f4614f4c327439c3f6b747c7331b81a394a3f358a57dac33608"
+  repeatedly advises keeping the movement compact. Compact action and smaller movement in rallies.
+  Fast balls require body coordination to prevent form from scattering. A useful contrast is
+  between large swings and the need to be compact and not rush when dealing with fast or
+  pressuring balls and serves. To make the action smaller because it is a sidespin ball and the
+  distance is shorter. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:448d3c0e17aaf3a395907313469ec59b1ec334283616d1b197cd3df60ccd4126"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -81,3 +85,74 @@ evidence:
       segment_ids:
         - cSxeCkiMFFI:00045
         - cSxeCkiMFFI:00046
+  - id: W_HZPjEPpI8-concept-compact-stroke-under-fast-rallies-reviewed
+    evidence_type: definition
+    excerpt: In fast rallies, keep the stroke compact and controlled because there is little time for large motions.
+    reason: The speaker directly emphasizes compact action and smaller movement in rallies.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: W_HZPjEPpI8
+      start_ms: 252333
+      end_ms: 269700
+      url: https://www.youtube.com/watch?v=W_HZPjEPpI8&t=252s
+      segment_ids:
+        - W_HZPjEPpI8:00099
+        - W_HZPjEPpI8:00105
+        - W_HZPjEPpI8:00106
+        - W_HZPjEPpI8:00107
+        - W_HZPjEPpI8:00108
+  - id: aStjJkTimhg-concept-compact-stroke-under-fast-rallies-reviewed
+    evidence_type: explanation
+    excerpt: When the ball is fast, the stroke must stay compact and consistent because there is little time for larger body turns.
+    reason: Fast balls require body coordination to prevent form from scattering.
+    confidence: 0.86
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: aStjJkTimhg
+      start_ms: 533200
+      end_ms: 541360
+      url: https://www.youtube.com/watch?v=aStjJkTimhg&t=533s
+      segment_ids:
+        - aStjJkTimhg:00234
+        - aStjJkTimhg:00235
+        - aStjJkTimhg:00236
+  - id: T19jPlfHkVA-concept-compact-stroke-under-fast-rallies-reviewed
+    evidence_type: explanation
+    excerpt: Using a shorter, tighter stroke action when time is limited by fast incoming balls or serve pressure.
+    reason: The speaker explicitly contrasts large swings with the need to be compact and not rush when dealing with fast or pressuring balls and serves.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: T19jPlfHkVA
+      start_ms: 31400
+      end_ms: 54300
+      url: https://www.youtube.com/watch?v=T19jPlfHkVA&t=31s
+      segment_ids:
+        - T19jPlfHkVA:00011
+        - T19jPlfHkVA:00014
+        - T19jPlfHkVA:00023
+  - id: EKF6cYyDA1M-concept-compact-stroke-under-fast-rallies-reviewed
+    evidence_type: explanation
+    excerpt: Reducing stroke size and keeping movement compact when the rally is fast or the ball is close.
+    reason: The speaker says to make the action smaller because it is a sidespin ball and the distance is shorter.
+    confidence: 0.92
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: EKF6cYyDA1M
+      start_ms: 440933
+      end_ms: 455700
+      url: https://www.youtube.com/watch?v=EKF6cYyDA1M&t=440s
+      segment_ids:
+        - EKF6cYyDA1M:00223
+        - EKF6cYyDA1M:00224
+        - EKF6cYyDA1M:00225
+        - EKF6cYyDA1M:00226
+        - EKF6cYyDA1M:00227
+        - EKF6cYyDA1M:00228
+        - EKF6cYyDA1M:00229
+        - EKF6cYyDA1M:00230

@@ -12,9 +12,13 @@ evidence_summary: >-
   Ball trajectory classification brings together several connected ideas. By explicitly
   introducing three ball trajectories and naming them backspin, topspin, and half-high ball, each
   with a curve description. Curve, spin, and friction as mechanisms that affect trajectory and
-  opponent control. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:8ff2338814b71b4f52d18e44913279248ab07aed37ecd849cabb49faed8b489b"
+  opponent control. A high arc to slow or out-of-bounds balls and it with a low arc that is
+  faster. Different serve trajectories and they lead to different reactions and defensive
+  strategies. Left or right spin changes the trajectory to straight or diagonal and the ball will
+  curve. There are three types and discusses curved, downward, and non-upward trajectories.
+  Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:d799248b052040c542d802d72c319a0e199c0e342ad0d5283d79e53714b06646"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -63,3 +67,69 @@ evidence:
       segment_ids:
         - yF675Tey81g:00120
         - yF675Tey81g:00121
+  - id: 8uzW4bF4Oc8-concept-ball-trajectory-classification-reviewed
+    evidence_type: explanation
+    excerpt: Evaluating how trajectory shape affects serve speed and outcome, especially the relationship between high arc and slow, ineffective long balls.
+    reason: The speaker repeatedly links a high arc to slow or out-of-bounds balls and contrasts it with a low arc that is faster.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8uzW4bF4Oc8
+      start_ms: 251366
+      end_ms: 272366
+      url: https://www.youtube.com/watch?v=8uzW4bF4Oc8&t=251s
+      segment_ids:
+        - 8uzW4bF4Oc8:00118
+        - 8uzW4bF4Oc8:00119
+        - 8uzW4bF4Oc8:00126
+        - 8uzW4bF4Oc8:00127
+  - id: x5cNiaE61qg-concept-ball-trajectory-classification-reviewed
+    evidence_type: definition
+    excerpt: Classifying serve trajectories into different shapes such as high, flat, and low balls to change the opponent's response.
+    reason: The transcript names different serve trajectories and says they lead to different reactions and defensive strategies.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: x5cNiaE61qg
+      start_ms: 42100
+      end_ms: 53666
+      url: https://www.youtube.com/watch?v=x5cNiaE61qg&t=42s
+      segment_ids:
+        - x5cNiaE61qg:00017
+        - x5cNiaE61qg:00018
+        - x5cNiaE61qg:00019
+        - x5cNiaE61qg:00020
+        - x5cNiaE61qg:00021
+  - id: 8fxjEROShs4-concept-ball-trajectory-classification-reviewed
+    evidence_type: explanation
+    excerpt: Recognizing how spin changes the ball's path, including straight, diagonal, and curving trajectories.
+    reason: The speaker explains that left or right spin changes the trajectory to straight or diagonal and says the ball will curve.
+    confidence: 0.92
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8fxjEROShs4
+      start_ms: 590166
+      end_ms: 602366
+      url: https://www.youtube.com/watch?v=8fxjEROShs4&t=590s
+      segment_ids:
+        - 8fxjEROShs4:00081
+        - 8fxjEROShs4:00082
+  - id: zmYIxjHtg9Q-concept-ball-trajectory-classification-reviewed
+    evidence_type: explanation
+    excerpt: Classifying balls by trajectory or curve type, including the speaker's three-type breakdown used to decide the stroke height and direction.
+    reason: The speaker explicitly says there are three types and discusses curved, downward, and non-upward trajectories.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: zmYIxjHtg9Q
+      start_ms: 200933
+      end_ms: 211333
+      url: https://www.youtube.com/watch?v=zmYIxjHtg9Q&t=200s
+      segment_ids:
+        - zmYIxjHtg9Q:00042
+        - zmYIxjHtg9Q:00043
+        - zmYIxjHtg9Q:00044

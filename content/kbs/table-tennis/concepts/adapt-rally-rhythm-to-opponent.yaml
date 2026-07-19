@@ -333,6 +333,42 @@ evidence:
         - 0XhKjyXoCO4:00008
         - 0XhKjyXoCO4:00009
         - 0XhKjyXoCO4:00010
+  - id: 9WPYbE6DoTo-concept-adapt-rally-rhythm-to-opponent-reviewed
+    evidence_type: explanation
+    excerpt: Vary pace and rhythm to make the opponent uncomfortable and prevent them from settling into one pattern.
+    reason: The transcript explicitly describes keeping an opponent moving and practicing changing the rhythm so match shots can be handled.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 9WPYbE6DoTo
+      start_ms: 133966
+      end_ms: 153900
+      url: https://www.youtube.com/watch?v=9WPYbE6DoTo&t=133s
+      segment_ids:
+        - 9WPYbE6DoTo:00013
+        - 9WPYbE6DoTo:00015
+        - 9WPYbE6DoTo:00016
+  - id: U4ufFJg5s4A-concept-adapt-rally-rhythm-to-opponent-reviewed
+    evidence_type: explanation
+    excerpt: Changing pace or timing in response to the opponent's rhythm or intensity.
+    reason: The speaker says to change rhythm when the opponent suddenly increases power or speed, and to match the opponent's pace appropriately.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: U4ufFJg5s4A
+      start_ms: 236233
+      end_ms: 258333
+      url: https://www.youtube.com/watch?v=U4ufFJg5s4A&t=236s
+      segment_ids:
+        - U4ufFJg5s4A:00109
+        - U4ufFJg5s4A:00110
+        - U4ufFJg5s4A:00111
+        - U4ufFJg5s4A:00115
+        - U4ufFJg5s4A:00116
+        - U4ufFJg5s4A:00117
+        - U4ufFJg5s4A:00118
 relations:
   - relation_type: used_with
     target_concept_id: concept-ball-feel

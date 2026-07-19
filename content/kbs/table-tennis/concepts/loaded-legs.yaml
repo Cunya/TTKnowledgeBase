@@ -392,6 +392,36 @@ evidence:
       segment_ids:
         - 8FDXnA8EO1M:00041
         - 8FDXnA8EO1M:00047
+  - id: 8fxjEROShs4-concept-loaded-legs-reviewed
+    evidence_type: explanation
+    excerpt: Using bent, engaged legs as the base for stable body mechanics and force transfer.
+    reason: The speaker says to squat, stay low, engage legs, and notes the legs are now activated.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8fxjEROShs4
+      start_ms: 952266
+      end_ms: 976200
+      url: https://www.youtube.com/watch?v=8fxjEROShs4&t=952s
+      segment_ids:
+        - 8fxjEROShs4:00126
+        - 8fxjEROShs4:00127
+  - id: 4WWIQdr3R8g-concept-loaded-legs-reviewed
+    evidence_type: explanation
+    excerpt: Using bent, loaded legs and a low body position to connect with the ground and support the stroke.
+    reason: The speaker repeatedly instructs players to squat, bend the legs, and use the legs to create friction and combined force.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 4WWIQdr3R8g
+      start_ms: 385966
+      end_ms: 401700
+      url: https://www.youtube.com/watch?v=4WWIQdr3R8g&t=385s
+      segment_ids:
+        - 4WWIQdr3R8g:00054
+        - 4WWIQdr3R8g:00056
 relations:
   - relation_type: used_with
     target_concept_id: concept-body-hand-synchronization

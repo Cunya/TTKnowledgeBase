@@ -610,6 +610,38 @@ evidence:
         - -iWLwSvOJ2U:00010
         - -iWLwSvOJ2U:00012
         - -iWLwSvOJ2U:00013
+  - id: Zrw_aJYKfhA-concept-short-ball-receive-decisions-reviewed
+    evidence_type: explanation
+    excerpt: Choosing how to handle a short incoming ball, including whether to block, hit, or add spin depending on height and bounce.
+    reason: 'The transcript repeatedly discusses short-ball response options: make a short shot, block it, or step back and hit depending on ball length and bounce height.'
+    confidence: 0.86
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: Zrw_aJYKfhA
+      start_ms: 147866
+      end_ms: 172566
+      url: https://www.youtube.com/watch?v=Zrw_aJYKfhA&t=147s
+      segment_ids:
+        - Zrw_aJYKfhA:00031
+        - Zrw_aJYKfhA:00034
+  - id: U4ufFJg5s4A-concept-short-ball-receive-decisions-reviewed
+    evidence_type: explanation
+    excerpt: Deciding how to handle short or half-long balls, including stepping in and choosing a shorter response or initiative attack.
+    reason: The speaker discusses shorter balls, stepping in, and selecting initiative only when the ball is suitable and not too fast or too tight to the net.
+    confidence: 0.87
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: U4ufFJg5s4A
+      start_ms: 307000
+      end_ms: 314200
+      url: https://www.youtube.com/watch?v=U4ufFJg5s4A&t=307s
+      segment_ids:
+        - U4ufFJg5s4A:00151
+        - U4ufFJg5s4A:00152
+        - U4ufFJg5s4A:00153
+        - U4ufFJg5s4A:00154
 relations:
   - relation_type: part_of
     target_concept_id: concept-short-vs-long-serve-receive

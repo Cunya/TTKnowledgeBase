@@ -4,6 +4,7 @@ import VideoToc from '../../../../components/VideoToc.astro';
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import { buildVideoTocEntry } from '../../../../lib/videoToc';
 import type { Corpus, Video } from '../../../../types';
+import ReviewControls from '../../../../components/ReviewControls.astro';
 
 export function getStaticPaths() {
   return corpora.flatMap((corpus) => corpus.videos.map((video) => ({
@@ -45,6 +46,7 @@ const formatDuration = (milliseconds: number) => {
         <p class="video-detail-meta">{formatDuration(video.duration_ms)} · {entry.concepts.length} connected concepts · {entry.moments.length} linked moments</p>
         <p>This page is the complete contents for this source. Each timestamp opens the related concept article at the exact evidence row, with a direct YouTube link beside it.</p>
         <a class="video-watch-link" href={video.canonical_url} target="_blank" rel="noreferrer">Open source video on YouTube <span aria-hidden="true">↗</span></a>
+        <ReviewControls videoId={video.id} />
       </div>
     </section>
     <section id="contents" class="video-detail-contents">

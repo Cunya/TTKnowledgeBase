@@ -254,7 +254,7 @@ The numerical baseline above reflects the latest published artifacts, not the ol
 
 **Work:** review navigation assignments against each concept's label, definition, evidence summary, and facets after processing and before publication; keep shared principles in Fundamentals and stroke-specific concepts under the matching shot family.
 
-**Status:** Initial cleanup complete (2026-07-19): moved wrist stability to Fundamentals, flick mechanics to Flick, and forehand framework out of Serve. Added intermediate Serve, Serve receive, and Fundamentals groups to prevent overloaded parent lists. Continue auditing as new concepts are approved.
+**Status:** Ongoing audit (2026-07-19): moved wrist stability to Fundamentals, flick mechanics to Flick, forehand framework out of Serve, and removed the equipment-only Brush direction for gluing from Forehand loop contact while retaining it under Equipment → Glue application. Added intermediate Serve, Serve receive, and Fundamentals groups to prevent overloaded parent lists. Continue auditing as new concepts are approved.
 
 **Done when:** every published concept has a defensible primary atlas parent, duplicate cross-listings are intentional, automatic placement reads the evidence summary, and navigation validation is part of the publish gate.
 

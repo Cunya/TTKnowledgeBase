@@ -1112,6 +1112,57 @@ evidence:
         - vCa7A9gyOT8:00077
         - vCa7A9gyOT8:00079
         - vCa7A9gyOT8:00080
+  - id: LopC3UNnOXM-concept-forehand-loop-timing-reviewed
+    evidence_type: definition
+    excerpt: The timing and tempo adjustments used for forehand topspin, including slowing the rhythm and contacting during the ball's descent to increase spin.
+    reason: The speaker says rhythm is core to spin balls and ties it to waiting for the descending phase.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: LopC3UNnOXM
+      start_ms: 62833
+      end_ms: 89033
+      url: https://www.youtube.com/watch?v=LopC3UNnOXM&t=62s
+      segment_ids:
+        - LopC3UNnOXM:00021
+        - LopC3UNnOXM:00025
+        - LopC3UNnOXM:00026
+        - LopC3UNnOXM:00027
+        - LopC3UNnOXM:00031
+  - id: 6Lw_HobLgSY-concept-forehand-loop-timing-reviewed
+    evidence_type: explanation
+    excerpt: Timing for topspin that delays acceleration until the ball has begun to drop, using a controlled rhythm to improve spin generation.
+    reason: The speaker says the first core element of a spin ball is rhythm and recommends slowing the rhythm and waiting intentionally to generate more spin.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 6Lw_HobLgSY
+      start_ms: 63500
+      end_ms: 76666
+      url: https://www.youtube.com/watch?v=6Lw_HobLgSY&t=63s
+      segment_ids:
+        - 6Lw_HobLgSY:00027
+        - 6Lw_HobLgSY:00030
+        - 6Lw_HobLgSY:00032
+  - id: TtrTmkMdEzo-concept-forehand-loop-timing-reviewed
+    evidence_type: explanation
+    excerpt: Timing a forehand loop by waiting appropriately and matching the movement rhythm to the ball and distance.
+    reason: The speaker emphasizes waiting, rhythm, and adjusting the loop depending on distance from the table.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: TtrTmkMdEzo
+      start_ms: 441466
+      end_ms: 460466
+      url: https://www.youtube.com/watch?v=TtrTmkMdEzo&t=441s
+      segment_ids:
+        - TtrTmkMdEzo:00124
+        - TtrTmkMdEzo:00125
+        - TtrTmkMdEzo:00126
+        - TtrTmkMdEzo:00127
 relations:
   - relation_type: part_of
     target_concept_id: concept-forehand-loop

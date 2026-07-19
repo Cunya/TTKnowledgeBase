@@ -503,6 +503,25 @@ evidence:
         - Nj4ivxRAizs:00006
         - Nj4ivxRAizs:00007
         - Nj4ivxRAizs:00008
+  - id: 1DjyGrpOiVY-concept-short-vs-long-serve-receive-reviewed
+    evidence_type: definition
+    excerpt: 'Choose the receive stroke based on where the ball is in its bounce arc: on the rise, at the peak, or after the peak.'
+    reason: 'Explicitly maps bounce phase to receive choice: rise equals push short, peak equals chop long, early descent equals slice push.'
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 1DjyGrpOiVY
+      start_ms: 7440
+      end_ms: 23680
+      url: https://www.youtube.com/watch?v=1DjyGrpOiVY&t=7s
+      segment_ids:
+        - 1DjyGrpOiVY:00003
+        - 1DjyGrpOiVY:00004
+        - 1DjyGrpOiVY:00005
+        - 1DjyGrpOiVY:00006
+        - 1DjyGrpOiVY:00007
+        - 1DjyGrpOiVY:00008
 relations:
   - relation_type: part_of
     target_concept_id: concept-serve-receive-principles

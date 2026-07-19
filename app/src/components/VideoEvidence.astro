@@ -1,6 +1,7 @@
 ---
 import type { Evidence, Video } from '../types';
 import EvidenceRow from './EvidenceRow.astro';
+import ReviewControls from './ReviewControls.astro';
 interface Props { evidence: Evidence[]; videos: Video[] }
 const { evidence, videos } = Astro.props;
 const videoMap = Object.fromEntries(videos.map((video) => [video.id, video]));
@@ -54,6 +55,7 @@ const formatTime = (milliseconds: number) => {
         <span data-now-playing>{initialClip ? `${formatTime(initialClip.start_ms)}–${formatTime(initialClip.end_ms)}` : ''}</span>
       </div>
       <p class="player-note">One shared player switches between cited explanations and proposed visuals. Only manually verified visual examples can loop.</p>
+      {initial && <ReviewControls videoId={initial.source.video_id} startMs={initial.source.start_ms} endMs={initial.source.end_ms} compact />}
     </div>
     <div class="evidence-manuscript">
       {chapters.map((chapter, chapterIndex) => <section class="evidence-chapter" id={`evidence-${chapter.id}`}>

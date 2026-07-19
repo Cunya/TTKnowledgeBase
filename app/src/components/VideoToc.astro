@@ -1,6 +1,7 @@
 ---
 import type { VideoTocEntry } from '../lib/videoToc';
 import { editorialNarrative, formatTime, momentAnchor } from '../lib/videoToc';
+import ReviewControls from './ReviewControls.astro';
 
 interface Props {
   entry: VideoTocEntry;
@@ -60,6 +61,7 @@ const conceptHref = (slug: string) => `${root}/concepts/${slug}/`;
       </div>
       <p class="video-toc-moment-title">{editorialNarrative(item.excerpt)}</p>
       <small>{editorialNarrative(item.reason)}</small>
+      <ReviewControls videoId={item.source.video_id} conceptId={concept.id} startMs={item.source.start_ms} endMs={item.source.end_ms} compact />
     </li>)}
     </ol>
   </>}

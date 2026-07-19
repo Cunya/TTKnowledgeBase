@@ -102,6 +102,25 @@ async function readJson(relativePath) {
   }
 }
 
+async function readReviewTasks() {
+  return (await readJson(`data/manifests/${kb}/review-tasks.json`)) || { version: 1, tasks: [] };
+}
+
+async function writeReviewTasks(data) {
+  await writeFile(path.join(root, `data/manifests/${kb}/review-tasks.json`), `${JSON.stringify(data, null, 2)}\n`, 'utf8');
+}
+
+async function updateReviewTask(id, input) {
+  const data = await readReviewTasks();
+  const task = (data.tasks || []).find((item) => item.id === id);
+  if (!task) throw new Error('Review task not found.');
+  task.status = input.status === 'resolved' ? 'resolved' : 'open';
+  task.updatedAt = new Date().toISOString();
+  task.resolution = input.resolution?.trim() || null;
+  await writeReviewTasks(data);
+  return task;
+}
+
 async function resetBudget() {
   const relativePath = `data/manifests/${kb}/llm-budget.json`;
   const filePath = path.join(root, relativePath);
@@ -178,6 +197,8 @@ refreshCurrentOutput();setInterval(refreshCurrentOutput,5000);
 const server = http.createServer(async (request, response) => {
   const url = new URL(request.url, `http://${request.headers.host}`);
   response.setHeader('cache-control', 'no-store');
+  response.setHeader('access-control-allow-origin', 'http://127.0.0.1:4321');
+  response.setHeader('access-control-allow-headers', 'content-type');
   if (url.pathname === '/') { response.writeHead(200, { 'content-type': 'text/html; charset=utf-8' }); response.end(page.replace('</body>', `${liveOutputScript}</body>`)); return; }
   if (url.pathname === '/api/status') { response.writeHead(200, { 'content-type': 'application/json' }); response.end(JSON.stringify(await snapshot())); return; }
   if (url.pathname === '/api/start' && request.method === 'POST') {
@@ -187,6 +208,19 @@ const server = http.createServer(async (request, response) => {
   if (url.pathname === '/api/reset-budget' && request.method === 'POST') {
     try { await resetBudget(); response.writeHead(200, {'content-type':'application/json'}); response.end(JSON.stringify(await snapshot())); }
     catch (error) { response.writeHead(500, {'content-type':'application/json'}); response.end(JSON.stringify({ error: error.message })); }
+    return;
+  }
+  if (url.pathname === '/api/review-tasks' && request.method === 'GET') {
+    response.writeHead(200, {'content-type':'application/json'}); response.end(JSON.stringify(await readReviewTasks())); return;
+  }
+  if (url.pathname === '/api/review-tasks' && request.method === 'POST') {
+    try { let body=''; for await (const chunk of request) body += chunk; const input=JSON.parse(body||'{}'); if(!input.videoId || !input.note?.trim()) throw new Error('A video and note are required.'); const data=await readReviewTasks(); const task={id:`review-${Date.now()}-${Math.random().toString(36).slice(2,7)}`,createdAt:new Date().toISOString(),updatedAt:new Date().toISOString(),status:'open',type:input.type||'concept',videoId:input.videoId,conceptId:input.conceptId||null,startMs:Number(input.startMs||0),endMs:Number(input.endMs||0),note:input.note.trim(),resolution:null}; data.tasks=[task,...(data.tasks||[])]; await writeReviewTasks(data); response.writeHead(201,{'content-type':'application/json'}); response.end(JSON.stringify(task)); }
+    catch(error) { response.writeHead(400,{'content-type':'application/json'}); response.end(JSON.stringify({error:error.message})); }
+    return;
+  }
+  if (url.pathname.startsWith('/api/review-tasks/') && request.method === 'PATCH') {
+    try { let body=''; for await (const chunk of request) body += chunk; const task=await updateReviewTask(url.pathname.split('/').pop(),JSON.parse(body||'{}')); response.writeHead(200,{'content-type':'application/json'}); response.end(JSON.stringify(task)); }
+    catch(error) { response.writeHead(400,{'content-type':'application/json'}); response.end(JSON.stringify({error:error.message})); }
     return;
   }
   response.writeHead(404); response.end('Not found');

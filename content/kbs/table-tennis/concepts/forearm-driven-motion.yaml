@@ -7,17 +7,17 @@ aliases:
 short_definition: A stroke action driven primarily by the forearm folding and unfolding, without overusing the upper arm.
 evidence_summary: >-
   Forearm-driven motion brings together several connected ideas. A useful contrast is between
-  compact forearm folding and forearm-driven motion and lifting the upper arm too much. Players to
-  open the arm, open the paddle head, and open the forearm and body in sequence. To use mainly the
-  forearm and then apply force forward or forward and downward for heavy spin. To use the wrist to
-  drive the forearm and that this compact action improves consistency for brushing. The forward
-  rush spin comes from forearm swing. Backhand and forehand shapes, then directly instructs to
-  contract the forearm and avoid moving the upper arm or elbow. To use the forearm to accelerate
-  and later to retract the forearm after contact. To focus on controlling the forearm and wrist
-  and avoid using the upper arm. Additional points reinforce the same theme. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:c2aef9989c5c93151a89fd35202e39fe47c35ed48a621cd02e43385a2b034157"
+  compact forearm folding and forearm-driven motion and lifting the upper arm too much. To use
+  mainly the forearm and then apply force forward or forward and downward for heavy spin. To use
+  the wrist to drive the forearm and that this compact action improves consistency for brushing.
+  The forward rush spin comes from forearm swing. To use the forearm to accelerate and later to
+  retract the forearm after contact. The shoulder and elbow should be fixed/stable and that speed
+  or acceleration comes from the forearm. The stroke relies on the wrist and forearm to generate
+  the pull, and later describes using the forearm with the shoulder and elbow lowered. To use the
+  forearm to pull and control the power point, and explicitly transitions to a forearm-dominated
+  looping action. Additional points reinforce the same theme. Together, these principles show how
+  the topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:ff058203104f830283bcfa0fffc9a64300a0c73451d07a52fdbb059c46840379"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -181,3 +181,68 @@ evidence:
       segment_ids:
         - otQ5B7u8Q2I:00028
         - otQ5B7u8Q2I:00029
+  - id: nnBPQr5t_ag-concept-forearm-acceleration-with-fixed-shoulder-and-elbow-reviewed
+    evidence_type: explanation
+    excerpt: Generate stroke speed by keeping the shoulder and elbow stable while the forearm provides the acceleration at contact.
+    reason: The speaker repeatedly states that the shoulder and elbow should be fixed/stable and that speed or acceleration comes from the forearm.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: nnBPQr5t_ag
+      start_ms: 199666
+      end_ms: 217366
+      url: https://www.youtube.com/watch?v=nnBPQr5t_ag&t=199s
+      segment_ids:
+        - nnBPQr5t_ag:00072
+        - nnBPQr5t_ag:00078
+        - nnBPQr5t_ag:00079
+  - id: rSfonAiwrHk-concept-forearm-driven-motion-reviewed
+    evidence_type: explanation
+    excerpt: Using the forearm, together with the wrist, as the main moving segment to generate the pull or stroke action.
+    reason: The speaker says the stroke relies on the wrist and forearm to generate the pull, and later describes using the forearm with the shoulder and elbow lowered.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: rSfonAiwrHk
+      start_ms: 66133
+      end_ms: 71366
+      url: https://www.youtube.com/watch?v=rSfonAiwrHk&t=66s
+      segment_ids:
+        - rSfonAiwrHk:00028
+        - rSfonAiwrHk:00030
+        - rSfonAiwrHk:00031
+  - id: tpY3SRVdBK8-concept-forearm-driven-motion-reviewed
+    evidence_type: definition
+    excerpt: Using the forearm as the primary moving segment to create acceleration and control the stroke.
+    reason: The speaker directly instructs the player to avoid the upper arm and use/speed up the forearm.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: tpY3SRVdBK8
+      start_ms: 755633
+      end_ms: 760433
+      url: https://www.youtube.com/watch?v=tpY3SRVdBK8&t=755s
+      segment_ids:
+        - tpY3SRVdBK8:00091
+  - id: imcV_xGDaJ4-concept-forearm-driven-motion-reviewed
+    evidence_type: explanation
+    excerpt: A stroke pattern where the forearm provides the main control and drive, with the upper arm used less.
+    reason: The speaker says to use the forearm to pull and control the power point, and explicitly transitions to a forearm-dominated looping action.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: imcV_xGDaJ4
+      start_ms: 201466
+      end_ms: 214033
+      url: https://www.youtube.com/watch?v=imcV_xGDaJ4&t=201s
+      segment_ids:
+        - imcV_xGDaJ4:00078
+        - imcV_xGDaJ4:00079
+        - imcV_xGDaJ4:00080
+        - imcV_xGDaJ4:00081
+        - imcV_xGDaJ4:00082
+        - imcV_xGDaJ4:00083

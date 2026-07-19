@@ -13,9 +13,11 @@ evidence_summary: >-
   appears even when there is no spin, and later that adding friction gives both power and a proper
   arc. Creating or extending an arc, especially on low balls and spinning balls, as the key to
   avoiding errors. Against fast balls you should just create the arc and brush the ball, not add
-  power. Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:6b39f3f9645d8760388d5d2dae79f33fc1c4bff81f63bc774c2748ec7d49bea0"
+  power. The player needs to create the arc themselves, linking the concept to ball clearance and
+  the friction that brings the ball back down. Stabilizing the racket face and using the forearm
+  to control the arc so the ball does not go out. Together, these principles show how the topic is
+  applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:04ff9b04aac38a32ef17ec4d04eda7ed628e419cb37def0249d5dc4ea794673d"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -119,3 +121,35 @@ evidence:
         - K0eFBdIiBTQ:00101
         - K0eFBdIiBTQ:00103
         - K0eFBdIiBTQ:00106
+  - id: fi3p2TgKGHI-concept-create-arc-under-pressure-reviewed
+    evidence_type: explanation
+    excerpt: Producing enough lift and curve in the stroke to clear the net when the incoming ball is difficult or low.
+    reason: The speaker says the player needs to create the arc themselves, linking the concept to ball clearance and the friction that brings the ball back down.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: fi3p2TgKGHI
+      start_ms: 388533
+      end_ms: 395800
+      url: https://www.youtube.com/watch?v=fi3p2TgKGHI&t=388s
+      segment_ids:
+        - fi3p2TgKGHI:00165
+        - fi3p2TgKGHI:00166
+        - fi3p2TgKGHI:00167
+  - id: 4cbTW4pTCuM-concept-create-arc-under-pressure-reviewed
+    evidence_type: explanation
+    excerpt: Use the forearm and racket-face adjustments to keep the ball’s trajectory controlled and arcing under pressure.
+    reason: The speaker explains stabilizing the racket face and using the forearm to control the arc so the ball does not go out.
+    confidence: 0.87
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 4cbTW4pTCuM
+      start_ms: 435066
+      end_ms: 461033
+      url: https://www.youtube.com/watch?v=4cbTW4pTCuM&t=435s
+      segment_ids:
+        - 4cbTW4pTCuM:00214
+        - 4cbTW4pTCuM:00216
+        - 4cbTW4pTCuM:00221

@@ -1,6 +1,7 @@
 ---
 import type { Evidence, Video } from '../types';
 import { editorialNarrative } from '../lib/videoToc';
+import ReviewControls from './ReviewControls.astro';
 
 interface Citation { item: Evidence; index: number }
 interface Props { citations: Citation[]; video?: Video; initialIndex: number }
@@ -35,6 +36,7 @@ const SPOKEN_TAIL_MS = 1200;
         {citation.visual_source && <button class="play-moment" data-video={clip.video_id} data-start={Math.floor(clip.start_ms / 1000)} data-end={Math.ceil(clip.end_ms / 1000)} data-loopable={String(verifiedVisual)}>{verifiedVisual ? 'Play verified visual' : 'Play proposed visual'}<span>{formatTime(clip.start_ms)}–{formatTime(clip.end_ms)}</span></button>}
         <button class="play-moment" data-video={citation.source.video_id} data-start={Math.floor(spokenStart / 1000)} data-end={Math.ceil(spokenEnd / 1000)} data-loopable="false">{citations.length > 1 ? `Play citation ${citationIndex + 1}` : 'Play explanation'}<span>{formatTime(spokenStart)}–{formatTime(spokenEnd)}</span></button>
         <a class="youtube-timestamp-link" href={citation.source.url} target="_blank" rel="noreferrer" aria-label={`Open this source timestamp on YouTube at ${formatTime(citation.source.start_ms)}`}>Open on YouTube<span>{formatTime(citation.source.start_ms)} ↗</span></a>
+        <ReviewControls videoId={citation.source.video_id} startMs={citation.source.start_ms} endMs={citation.source.end_ms} compact label="Mark moment for review" />
       </div>;
     })}
   </div>

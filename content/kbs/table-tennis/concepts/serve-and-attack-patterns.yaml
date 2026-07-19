@@ -300,6 +300,40 @@ evidence:
         - q5sJuWPXRgo:00176
         - q5sJuWPXRgo:00183
         - q5sJuWPXRgo:00184
+  - id: xHCH_T6xjcc-concept-serve-and-attack-patterns-reviewed
+    evidence_type: explanation
+    excerpt: Build offense around the serve and plan to attack immediately after the serve or after forcing a weak reply.
+    reason: The speaker describes serving with spin to make the return hard, countering the push, not giving the opponent opportunities, and attacking at the end.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: xHCH_T6xjcc
+      start_ms: 260200
+      end_ms: 277466
+      url: https://www.youtube.com/watch?v=xHCH_T6xjcc&t=260s
+      segment_ids:
+        - xHCH_T6xjcc:00061
+        - xHCH_T6xjcc:00062
+        - xHCH_T6xjcc:00063
+        - xHCH_T6xjcc:00064
+        - xHCH_T6xjcc:00065
+  - id: u2A5PNggIqg-concept-serve-and-attack-patterns-reviewed
+    evidence_type: example
+    excerpt: A tactical sequence in which the player serves or creates spin and then attacks on the next ball or shortly after.
+    reason: The speaker describes looping first, switching to flick if looping fails, and then continuing continuous attacks.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: u2A5PNggIqg
+      start_ms: 859366
+      end_ms: 865133
+      url: https://www.youtube.com/watch?v=u2A5PNggIqg&t=859s
+      segment_ids:
+        - u2A5PNggIqg:00231
+        - u2A5PNggIqg:00232
+        - u2A5PNggIqg:00233
 relations:
   - relation_type: used_with
     target_concept_id: concept-short-serve-third-ball-attack

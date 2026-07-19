@@ -58,7 +58,8 @@ sections:
     label: Drive
     description: Direct, compact hitting strokes that use forward impact rather 
       than a large looping action.
-    concept_ids: []
+    concept_ids:
+    - concept-compact-spin-stroke-with-finger-lead
     children:
     - id: forehand-drive
       label: Forehand drive
@@ -66,6 +67,7 @@ sections:
         forward penetration.
       concept_ids:
       - concept-forehand-drive
+      - concept-forehand-stroke-position-envelope
       children: []
     - id: backhand-drive
       label: Backhand drive
@@ -90,6 +92,7 @@ sections:
       - concept-forehand-loop
       - concept-ball-trajectory-classification
       - concept-wrist-position-for-forehand-loop
+      - concept-stance-and-positioning-for-looping
       children:
       - id: forehand-loop-variations
         label: Variations and ball selection
@@ -102,6 +105,7 @@ sections:
         - concept-forehand-loop-down-the-line
         - concept-backspin-ball-timing
         - concept-looping-against-backspin-by-lifting-first
+        - concept-forehand-backspin-receive
         children: []
       - id: forehand-loop-motion
         label: Motion parts
@@ -126,7 +130,6 @@ sections:
           concept_ids:
           - concept-forehand-loop-swing-path
           - concept-brush-around-the-ball
-          - concept-brush-direction-for-gluing
           - concept-racket-angle-control-against-topspin
           children: []
         - id: forehand-loop-acceleration
@@ -244,6 +247,7 @@ sections:
       - concept-banana-flick-timing-and-rhythm
       - concept-flick-contact-at-the-top-of-the-bounce
       - concept-flick-timing-at-the-peak-of-the-bounce
+      - concept-backhand-racket-face-angle-adjustment
       children: []
   - id: serve
     label: Serve
@@ -259,6 +263,7 @@ sections:
       - concept-serve-action-combination
       - concept-backhand-serve
       - concept-serve-follow-through-for-disguise
+      - concept-close-to-the-table-serve-position
       children: []
     - id: serve-spin-and-trajectory
       label: Spin and trajectory
@@ -271,6 +276,7 @@ sections:
       - concept-sidespinbackspin-serve
       - concept-backspin-serve
       - concept-curved-serve-trajectory
+      - concept-sidespin-serve
       children: []
     - id: serve-variation-and-placement
       label: Variation and placement
@@ -298,7 +304,9 @@ sections:
     label: Serve receive
     description: Read serve depth, spin, rhythm, and bounce phase before 
       selecting a compact receive action.
-    concept_ids: []
+    concept_ids:
+    - concept-preparation-stroke-and-backswing-for-backhand-serve
+    - concept-serve-receive-practice
     children:
     - id: receive-reading-and-principles
       label: Reading and principles
@@ -343,7 +351,16 @@ sections:
   label: Movement and contact fundamentals
   description: Principles shared across several strokes rather than belonging to
     one shot only.
-  concept_ids: []
+  concept_ids:
+  - concept-avoid-pulling-the-hand-back
+  - concept-generate-spin-with-fingers-wrist-and-forearm
+  - concept-open-forearm-and-wrist-for-serve-preparation
+  - concept-low-contact-point-for-backhand-serve
+  - concept-racket-angle-and-wrist-snap-for-backhand-serve
+  - concept-upward-finishing-motion-in-sidespin-serve
+  - concept-delay-gripping-until-after-contact
+  - concept-backhand-grip-openness
+  - concept-racket-face-angle-adjustment
   children:
   - id: grip-and-wrist-control
     label: Grip and wrist control
@@ -454,6 +471,7 @@ sections:
   - concept-muscle-memory-for-match-adjustment
   - concept-swing-speed-drill
   - concept-shadow-practice
+  - concept-trajectory-practice
   children:
   - id: technique-acquisition
     label: Technique acquisition
@@ -487,6 +505,8 @@ sections:
   - concept-add-power-when-the-return-is-weak
   - concept-avoid-the-same-spot-on-consecutive-attacks
   - concept-use-placement-to-move-the-opponent-and-lower-return-quality
+  - concept-backhand-pressure-management
+  - concept-backhand-technique-selection-by-incoming-ball-type
   children:
   - id: serve-attack
     label: Serve and third-ball attack

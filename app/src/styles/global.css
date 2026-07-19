@@ -361,6 +361,22 @@ blockquote { font-family: Georgia, serif; font-size: 21px; line-height: 1.42; ma
 .concept-support p { max-width: 680px; margin: 0; color: var(--muted); line-height: 1.6; }
 .concept-support > a, .support-primary { display: inline-flex; align-items: center; gap: 14px; border-radius: 999px; background: var(--ink); color: var(--lime); padding: 14px 20px; font-weight: 750; text-decoration: none; white-space: nowrap; }
 .concept-support > a:hover, .support-primary:hover { background: var(--green); }
+.local-review-control { margin-top: 12px; border-top: 1px solid var(--line); padding-top: 8px; }
+.local-review-control summary { cursor: pointer; color: var(--green); font: 10px var(--mono); text-transform: uppercase; letter-spacing: .06em; }
+.local-review-control form { display: grid; gap: 9px; margin-top: 10px; max-width: 520px; }
+.local-review-control label { display: grid; gap: 4px; color: var(--muted); font: 10px var(--mono); text-transform: uppercase; }
+.local-review-control select, .local-review-control textarea { border: 1px solid var(--line); background: var(--paper); color: var(--ink); padding: 8px; font: inherit; }
+.local-review-control textarea { min-height: 60px; resize: vertical; text-transform: none; }
+.local-review-control button, .review-queue-toolbar button, .review-queue-item button { width: fit-content; border: 1px solid var(--ink); background: var(--ink); color: var(--paper); padding: 8px 12px; cursor: pointer; }
+.local-review-saved { color: var(--green); font-size: 11px; }
+.review-queue-toolbar { display: flex; justify-content: space-between; align-items: center; margin: 28px 0 14px; color: var(--muted); font: 12px var(--mono); }
+.review-queue-item { padding: 18px 0; border-top: 1px solid var(--line); }
+.review-queue-item header { display: flex; justify-content: space-between; gap: 20px; }
+.review-queue-item header span { color: var(--green); font: 10px var(--mono); text-transform: uppercase; }
+.review-queue-item small, .review-queue-item p { color: var(--muted); line-height: 1.5; }
+.review-queue-item > div { display: flex; gap: 10px; align-items: center; }
+.review-queue-item a { color: var(--green); font-size: 12px; }
+.review-queue-item.resolved { opacity: .62; }
 .support-hero { max-width: 1050px; padding: 100px 0 90px; }
 .support-hero > p { max-width: 760px; color: var(--muted); font-size: 19px; line-height: 1.7; }
 .support-primary { margin-top: 24px; }

@@ -832,6 +832,40 @@ evidence:
       segment_ids:
         - dJJtJQvuwOY:00054
         - dJJtJQvuwOY:00056
+  - id: 6Lw_HobLgSY-concept-forehand-loop-power-generation-reviewed
+    evidence_type: explanation
+    excerpt: Generating forehand loop power by balancing friction with impact, using quick arm retraction, and finishing with forward force.
+    reason: The speaker explains that a forehand loop needs a balance of friction and impact, quick retraction, forward arm motion, and a follow-up pressing motion to keep spin and curve.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 6Lw_HobLgSY
+      start_ms: 343166
+      end_ms: 369600
+      url: https://www.youtube.com/watch?v=6Lw_HobLgSY&t=343s
+      segment_ids:
+        - 6Lw_HobLgSY:00143
+        - 6Lw_HobLgSY:00144
+        - 6Lw_HobLgSY:00145
+        - 6Lw_HobLgSY:00149
+        - 6Lw_HobLgSY:00151
+  - id: FweaNVt8gA0-concept-forehand-loop-power-generation-reviewed
+    evidence_type: explanation
+    excerpt: Generating power in the forehand loop through coordinated forward motion, body drive, and release rather than pure arm force.
+    reason: The speaker links forward touch, release, and the generation of power, and later contrasts this with exaggerated big-arm looping and slow shots.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: FweaNVt8gA0
+      start_ms: 461466
+      end_ms: 471566
+      url: https://www.youtube.com/watch?v=FweaNVt8gA0&t=461s
+      segment_ids:
+        - FweaNVt8gA0:00112
+        - FweaNVt8gA0:00113
+        - FweaNVt8gA0:00114
 relations:
   - relation_type: part_of
     target_concept_id: concept-forehand-loop

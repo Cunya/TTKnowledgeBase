@@ -10,9 +10,12 @@ evidence_summary: >-
   Jammed by insufficient space brings together several connected ideas. The jammed feeling and its
   cause. Leaning back or stepping back too much will get you jammed by the ball. Directly states
   that the forward-and-back recovery can jam you and remove power. Being too close after a push
-  with getting jammed on the forehand loop. Together, these principles show how the topic is
-  applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:df0756cae1a036f64e53959662bb3c6841526c7ebc32ea732bbe367aeee60aeb"
+  with getting jammed on the forehand loop. If the upper arm keeps rising, there will be no space
+  to retract, describing the jammed condition directly. Pulling the ball, not allowing the ball to
+  push you back, and needing space to generate power, all pointing to jammed execution from poor
+  spacing. Together, these principles show how the topic is applied in practice while preserving
+  the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:f776984725101041f4e54bbcc0cee1c0ce0c35bc5a08f9e08ce0bab754e653cc"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -92,3 +95,39 @@ evidence:
         - K0eFBdIiBTQ:00005
         - K0eFBdIiBTQ:00007
         - K0eFBdIiBTQ:00009
+  - id: HcUOmZ0sgI0-concept-jammed-by-insufficient-space-reviewed
+    evidence_type: mistake
+    excerpt: A stroke fault where excessive upward or large-arm motion leaves no room to retract the arm cleanly, causing the swing to get stuck or blocked.
+    reason: The speaker says that if the upper arm keeps rising, there will be no space to retract, describing the jammed condition directly.
+    confidence: 0.86
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: HcUOmZ0sgI0
+      start_ms: 249866
+      end_ms: 261700
+      url: https://www.youtube.com/watch?v=HcUOmZ0sgI0&t=249s
+      segment_ids:
+        - HcUOmZ0sgI0:00102
+        - HcUOmZ0sgI0:00103
+        - HcUOmZ0sgI0:00104
+        - HcUOmZ0sgI0:00105
+        - HcUOmZ0sgI0:00106
+        - HcUOmZ0sgI0:00107
+        - HcUOmZ0sgI0:00108
+  - id: FweaNVt8gA0-concept-jammed-by-insufficient-space-reviewed
+    evidence_type: mistake
+    excerpt: A stroke failure caused by not having enough space to swing or by pulling back instead of moving into the ball.
+    reason: The speaker discusses pulling the ball, not allowing the ball to push you back, and needing space to generate power, all pointing to jammed execution from poor spacing.
+    confidence: 0.89
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: FweaNVt8gA0
+      start_ms: 784000
+      end_ms: 798166
+      url: https://www.youtube.com/watch?v=FweaNVt8gA0&t=784s
+      segment_ids:
+        - FweaNVt8gA0:00206
+        - FweaNVt8gA0:00208
+        - FweaNVt8gA0:00212

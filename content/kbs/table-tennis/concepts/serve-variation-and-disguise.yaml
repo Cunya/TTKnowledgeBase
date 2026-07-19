@@ -11,9 +11,11 @@ evidence_summary: >-
   overuse one tactic, and to keep switching serves, pushes, and technical variations. Mixing short
   and long serves, changing target zones, and using different serve types to disrupt the opponent.
   Varying speed and trajectory, maintaining multiple serve sets, and saving special serves for
-  critical moments. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:8cfd727ae7d36f26653a3c6fffeb65fe937e0172baab7a3abeb50e72e6e2c612"
+  critical moments. Alternating backhand and forehand, then using variations before returning to
+  the best serve, with the same setup making outcomes unpredictable. Changing serve spin from one
+  ball to the next so the opponent cannot predict it. Together, these principles show how the
+  topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:271f57bdad50c6eca1e6fd2ba0306be24c0fce485c5387dcb9fde87479f27e78"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -97,3 +99,41 @@ evidence:
         - VUCWueKYuE0:00162
         - VUCWueKYuE0:00164
         - VUCWueKYuE0:00165
+  - id: rP-4JEt9D5Q-concept-serve-variation-and-disguise-reviewed
+    evidence_type: explanation
+    excerpt: Varying serve placement, spin, and timing while disguising the differences with similar motion.
+    reason: The speaker advocates alternating backhand and forehand, then using variations before returning to the best serve, with the same setup making outcomes unpredictable.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: rP-4JEt9D5Q
+      start_ms: 598320
+      end_ms: 627360
+      url: https://www.youtube.com/watch?v=rP-4JEt9D5Q&t=598s
+      segment_ids:
+        - rP-4JEt9D5Q:00250
+        - rP-4JEt9D5Q:00251
+        - rP-4JEt9D5Q:00252
+        - rP-4JEt9D5Q:00253
+        - rP-4JEt9D5Q:00257
+        - rP-4JEt9D5Q:00259
+        - rP-4JEt9D5Q:00260
+        - rP-4JEt9D5Q:00261
+  - id: -J5iKei3MIQ-concept-serve-variation-and-disguise-reviewed
+    evidence_type: explanation
+    excerpt: Varying serve spin and quality to prevent the opponent from reading and adapting to repeated patterns.
+    reason: The speaker describes changing serve spin from one ball to the next so the opponent cannot predict it.
+    confidence: 0.86
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: -J5iKei3MIQ
+      start_ms: 387000
+      end_ms: 394100
+      url: https://www.youtube.com/watch?v=-J5iKei3MIQ&t=387s
+      segment_ids:
+        - -J5iKei3MIQ:00196
+        - -J5iKei3MIQ:00197
+        - -J5iKei3MIQ:00198
+        - -J5iKei3MIQ:00199

@@ -655,6 +655,57 @@ evidence:
         - -iWLwSvOJ2U:00021
         - -iWLwSvOJ2U:00023
         - -iWLwSvOJ2U:00024
+  - id: c1OUlMn9IFM-concept-push-technique-reviewed
+    evidence_type: definition
+    excerpt: A compact pushing action that moves forward with controlled height, short follow-through, and minimal arm excess to keep the ball fast and difficult.
+    reason: The transcript repeatedly instructs to push forward, go straight, avoid lifting, keep the action consistent, and not add extra arm pull.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: c1OUlMn9IFM
+      start_ms: 127066
+      end_ms: 144600
+      url: https://www.youtube.com/watch?v=c1OUlMn9IFM&t=127s
+      segment_ids:
+        - c1OUlMn9IFM:00041
+        - c1OUlMn9IFM:00046
+        - c1OUlMn9IFM:00047
+  - id: nnBPQr5t_ag-concept-push-technique-low-arc-downward-finish-reviewed
+    evidence_type: definition
+    excerpt: A push stroke characterized by a quick, compact action, strong spin, a low arc, and a downward racket-head finish toward the table.
+    reason: The speaker describes a push as a signature shot with speed, spin, a low arc, and a finish directed toward the table rather than forward.
+    confidence: 0.92
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: nnBPQr5t_ag
+      start_ms: 468533
+      end_ms: 486866
+      url: https://www.youtube.com/watch?v=nnBPQr5t_ag&t=468s
+      segment_ids:
+        - nnBPQr5t_ag:00180
+        - nnBPQr5t_ag:00182
+        - nnBPQr5t_ag:00184
+        - nnBPQr5t_ag:00185
+        - nnBPQr5t_ag:00187
+  - id: 9IzbAEYcS5A-concept-push-technique-reviewed
+    evidence_type: definition
+    excerpt: A compact pushing action used to control short or low balls, often by contacting the side of the ball and keeping the ball low and spinning.
+    reason: The later section explicitly discusses forehand short stroke / forehand short push, poking, and pushing the ball low and spinning while hitting the side of the ball.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 9IzbAEYcS5A
+      start_ms: 666333
+      end_ms: 690433
+      url: https://www.youtube.com/watch?v=9IzbAEYcS5A&t=666s
+      segment_ids:
+        - 9IzbAEYcS5A:00149
+        - 9IzbAEYcS5A:00150
+        - 9IzbAEYcS5A:00152
+        - 9IzbAEYcS5A:00154
 relations:
   - relation_type: used_with
     target_concept_id: concept-push-contact-and-spin

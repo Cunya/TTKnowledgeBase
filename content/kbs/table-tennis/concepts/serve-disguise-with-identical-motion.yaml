@@ -13,9 +13,12 @@ evidence_summary: >-
   useless if exposed and asks how to make topspin look like backspin, indicating disguise by
   identical motion. Serves that look different to the receiver and players create serve patterns
   to trick opponents. To use the exact same motion for different spin returns and compares it to
-  an advanced side-swipe motion used by top players. Together, these principles show how the topic
-  is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:b394c45aa98fec7fda64bd2edd3939a5a280f2892e6301427b935eb1680dd443"
+  an advanced side-swipe motion used by top players. The easiest way to confuse the opponent is to
+  make the starting action and ending action the same, and repeats that the start and finish must
+  be consistent. Says the action must be executed from the start to contact and maintained
+  consistently. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:a65d4673d7bbd052cb320ce02a2e355527aa743c0954784cc42b128e22529215"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -128,3 +131,34 @@ evidence:
         - WcQLHn2Fafw:00124
         - WcQLHn2Fafw:00125
         - WcQLHn2Fafw:00126
+  - id: _W96q2eYRRY-concept-serve-disguise-with-identical-motion-reviewed
+    evidence_type: definition
+    excerpt: A deceptive serve tactic where the start and finish of the motion are kept consistent so the opponent cannot easily read the serve intent.
+    reason: The speaker explicitly says the easiest way to confuse the opponent is to make the starting action and ending action the same, and repeats that the start and finish must be consistent.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: _W96q2eYRRY
+      start_ms: 82000
+      end_ms: 104266
+      url: https://www.youtube.com/watch?v=_W96q2eYRRY&t=82s
+      segment_ids:
+        - _W96q2eYRRY:00031
+        - _W96q2eYRRY:00038
+        - _W96q2eYRRY:00039
+  - id: P21-_dtUzE8-concept-serve-disguise-with-identical-motion-reviewed
+    evidence_type: explanation
+    excerpt: Keeping the serve motion consistent from preparation through follow-through so the opponent cannot easily read the spin or target.
+    reason: Says the action must be executed from the start to contact and maintained consistently.
+    confidence: 0.92
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: P21-_dtUzE8
+      start_ms: 341866
+      end_ms: 351600
+      url: https://www.youtube.com/watch?v=P21-_dtUzE8&t=341s
+      segment_ids:
+        - P21-_dtUzE8:00158
+        - P21-_dtUzE8:00160

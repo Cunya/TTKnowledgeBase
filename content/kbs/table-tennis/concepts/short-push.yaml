@@ -8,10 +8,12 @@ short_definition: A short receive push that keeps the ball short on the table an
 evidence_summary: >-
   Short push brings together several connected ideas. Short push from long push, says it must be
   soft and short, and very short balls must be pushed short. Short placement as useful to pull
-  farther-back loopers out of position and a short push as difficult for amateurs. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:6cdfbeb9967d2fbb8735431afb0d874f6b5402d1d42d59ce81ff0395d0fd3b74"
+  farther-back loopers out of position and a short push as difficult for amateurs. The shot relies
+  on fingers and wrist to produce a short ball and explicitly names this as the short ball
+  technique. Extremely short balls can be dropped short and that half-long balls can be pushed,
+  with both forehand and backhand able to push with heavy spin. Together, these principles show
+  how the topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:e86d0ab9d790a19ae88d6aeb17f23e475df8f96ac78b061819da62b454a1f703"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -63,3 +65,35 @@ evidence:
       segment_ids:
         - WcQLHn2Fafw:00047
         - WcQLHn2Fafw:00048
+  - id: 3MvI0Rm0mYg-concept-short-push-reviewed
+    evidence_type: definition
+    excerpt: A serve or touch that lands short, typically using finger-and-wrist friction rather than arm force to keep the ball short.
+    reason: The speaker says the shot relies on fingers and wrist to produce a short ball and explicitly names this as the short ball technique.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 3MvI0Rm0mYg
+      start_ms: 230200
+      end_ms: 256233
+      url: https://www.youtube.com/watch?v=3MvI0Rm0mYg&t=230s
+      segment_ids:
+        - 3MvI0Rm0mYg:00110
+        - 3MvI0Rm0mYg:00117
+  - id: vbzVfx-HWE4-concept-short-push-reviewed
+    evidence_type: explanation
+    excerpt: A short receive or reply that keeps the ball short on the table, used especially when the incoming ball is already short and does not need much energy absorbed.
+    reason: The speaker says extremely short balls can be dropped short and that half-long balls can be pushed, with both forehand and backhand able to push with heavy spin.
+    confidence: 0.92
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: vbzVfx-HWE4
+      start_ms: 245400
+      end_ms: 266760
+      url: https://www.youtube.com/watch?v=vbzVfx-HWE4&t=245s
+      segment_ids:
+        - vbzVfx-HWE4:00102
+        - vbzVfx-HWE4:00103
+        - vbzVfx-HWE4:00108
+        - vbzVfx-HWE4:00109

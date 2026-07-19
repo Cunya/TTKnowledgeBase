@@ -650,6 +650,53 @@ evidence:
       url: https://www.youtube.com/watch?v=K0eFBdIiBTQ&t=279s
       segment_ids:
         - K0eFBdIiBTQ:00064
+  - id: fi3p2TgKGHI-concept-ready-position-reviewed
+    evidence_type: explanation
+    excerpt: The neutral ready stance used to recover after a serve and continue the rally.
+    reason: The speaker says that after serving you should quickly get back into position and keep playing, which grounds the ready-position concept.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: fi3p2TgKGHI
+      start_ms: 37966
+      end_ms: 43466
+      url: https://www.youtube.com/watch?v=fi3p2TgKGHI&t=37s
+      segment_ids:
+        - fi3p2TgKGHI:00010
+        - fi3p2TgKGHI:00011
+        - fi3p2TgKGHI:00012
+  - id: 8fxjEROShs4-concept-ready-position-reviewed
+    evidence_type: explanation
+    excerpt: A stable neutral stance used before or between actions so the body can react efficiently.
+    reason: The speaker repeatedly instructs the listener to stand still, stand firm, stay stable, and position correctly before moving.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8fxjEROShs4
+      start_ms: 690366
+      end_ms: 718633
+      url: https://www.youtube.com/watch?v=8fxjEROShs4&t=690s
+      segment_ids:
+        - 8fxjEROShs4:00094
+        - 8fxjEROShs4:00096
+  - id: 7Zz_cVWrgng-concept-ready-position-reviewed
+    evidence_type: demonstration
+    excerpt: The neutral preparatory stance used before moving into the next action.
+    reason: The speaker explicitly says they are in the ready position while demonstrating curvature changes.
+    confidence: 0.92
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 7Zz_cVWrgng
+      start_ms: 867400
+      end_ms: 875700
+      url: https://www.youtube.com/watch?v=7Zz_cVWrgng&t=867s
+      segment_ids:
+        - 7Zz_cVWrgng:00173
+        - 7Zz_cVWrgng:00174
+        - 7Zz_cVWrgng:00175
 relations:
   - relation_type: prerequisite_of
     target_concept_id: concept-forehand-loop

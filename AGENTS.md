@@ -120,6 +120,7 @@ For content changes, verify representative live routes on `http://127.0.0.1:4321
 - Preserve unrelated user changes in a dirty worktree.
 - Do not use destructive Git cleanup or reset commands.
 - Do not run `git commit` or create commits in response to shortcut prompts. The operator performs commits manually.
+- Assume the local processor monitor loop may be running during any project work or shortcut. Check its status and latest run manifest before editing generated or runtime-owned files; avoid conflicting writes, preserve the monitor's private state, and use its per-KB lock rather than starting an overlapping processing cycle.
 
 ## Offline feature boundary
 
@@ -133,7 +134,7 @@ A change is complete only when its claims are source-grounded, visual windows ar
 ### Common
 - "c" continue
 - "cp" continue processing the videos: first drain eligible cached transcripts/candidates; if no local work remains, select and ingest the next controlled batch from configured discovery catalogs, subject to backlog priority, source-policy checks, pacing, and the block circuit breaker. Do not start a large scrape while a backlog gate still defers expansion.
-- "u" update docs, including the session log, and notes; start with checking the current date and time
+- "u" update docs, including the session log, README, and other relevant project documentation when needed; start with checking the current date and time
 - "rlc" - review local changes
 - "cm" - review the local changes and provide only a suggested commit message, listing completed features in past tense; never run `git commit`, stage files, or otherwise create a commit
 - "ggg" - go on with the current task and dont stop until it is done

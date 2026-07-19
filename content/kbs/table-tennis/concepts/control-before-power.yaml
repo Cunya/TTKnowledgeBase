@@ -1310,6 +1310,69 @@ evidence:
         - 2DXviJQOA5M:00094
         - 2DXviJQOA5M:00095
         - 2DXviJQOA5M:00096
+  - id: b3bRD1hQpe8-new-control-before-power-in-matches-reviewed
+    evidence_type: explanation
+    excerpt: Players should prioritize stability, ball control, and the right moment before applying force or pressure in matches.
+    reason: The speaker says pressure should only be applied when very confident and emphasizes finding the right moment.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: b3bRD1hQpe8
+      start_ms: 701366
+      end_ms: 717633
+      url: https://www.youtube.com/watch?v=b3bRD1hQpe8&t=701s
+      segment_ids:
+        - b3bRD1hQpe8:00319
+        - b3bRD1hQpe8:00325
+        - b3bRD1hQpe8:00326
+        - b3bRD1hQpe8:00327
+  - id: NMa0xKa1kpo-concept-control-before-power-reviewed
+    evidence_type: explanation
+    excerpt: Prioritizing control, waiting, and relaxed contact before trying to apply force or power.
+    reason: The speaker attributes errors to lack of control, rushing, and excessive power, and explicitly says to wait and relax a bit.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: NMa0xKa1kpo
+      start_ms: 409366
+      end_ms: 419733
+      url: https://www.youtube.com/watch?v=NMa0xKa1kpo&t=409s
+      segment_ids:
+        - NMa0xKa1kpo:00071
+        - NMa0xKa1kpo:00073
+  - id: 4WWIQdr3R8g-concept-control-before-power-reviewed
+    evidence_type: explanation
+    excerpt: Establishing control, balance, and rhythm before increasing force or speed.
+    reason: The speaker emphasizes being calm and composed, spinning steadily, and maintaining rhythm rather than rushing.
+    confidence: 0.92
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 4WWIQdr3R8g
+      start_ms: 487000
+      end_ms: 506833
+      url: https://www.youtube.com/watch?v=4WWIQdr3R8g&t=487s
+      segment_ids:
+        - 4WWIQdr3R8g:00077
+        - 4WWIQdr3R8g:00083
+  - id: mpCV9-Cc1HE-concept-control-before-power-reviewed
+    evidence_type: explanation
+    excerpt: Build the basic feel and control first before adding stronger power.
+    reason: The speaker says not to force it and separates technique from power.
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: mpCV9-Cc1HE
+      start_ms: 186400
+      end_ms: 191000
+      url: https://www.youtube.com/watch?v=mpCV9-Cc1HE&t=186s
+      segment_ids:
+        - mpCV9-Cc1HE:00077
+        - mpCV9-Cc1HE:00078
+        - mpCV9-Cc1HE:00079
 relations:
   - relation_type: used_with
     target_concept_id: concept-ball-feel

@@ -11,10 +11,14 @@ evidence_summary: >-
   unclear. The return is often topspin or no-spin and instructs the player to treat it as no-spin
   rather than using a backspin-like motion. How to handle unreadable short serves neutrally, with
   the racket between flat and upright and a focus on landing the ball first. A step-by-step
-  fallback for unclear spin: slow push, middle contact, then slight sideways forearm motion.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:948a2491be394ce2a0e7332dce893b2a4fade648f5f66d6f903b0bbaa50725e5"
+  fallback for unclear spin: slow push, middle contact, then slight sideways forearm motion. Not
+  being able to tell the spin clearly, yet still keeping the ball in play by using a stable
+  receive approach. A short, low, middle ball with no spin as especially difficult to receive. To
+  adjust based on ball type and focus on tracking the ball when many balls or difficult situations
+  make reading harder, which fits neutral/unclear receive handling. Together, these principles
+  show how the topic is applied in practice while preserving the relevant distinctions and
+  constraints.
+evidence_summary_source_hash: "sha256:6e1bee30203cbb685f9326be009933264b0ad1dce11323024d516f06bc11f935"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -102,3 +106,56 @@ evidence:
         - WcQLHn2Fafw:00097
         - WcQLHn2Fafw:00100
         - WcQLHn2Fafw:00103
+  - id: 2xGbue3FXIw-concept-neutral-ball-receive-handling-reviewed
+    evidence_type: explanation
+    excerpt: Handling serves when the spin is unclear or appears neutral by prioritizing a safe, stable receive.
+    reason: The speaker describes not being able to tell the spin clearly, yet still keeping the ball in play by using a stable receive approach.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 2xGbue3FXIw
+      start_ms: 291510
+      end_ms: 301230
+      url: https://www.youtube.com/watch?v=2xGbue3FXIw&t=291s
+      segment_ids:
+        - 2xGbue3FXIw:00089
+        - 2xGbue3FXIw:00090
+        - 2xGbue3FXIw:00091
+        - 2xGbue3FXIw:00092
+  - id: -J5iKei3MIQ-concept-neutral-ball-receive-handling-reviewed
+    evidence_type: explanation
+    excerpt: Handling balls with little or no obvious spin, especially short balls in the middle that are hard to read or attack cleanly.
+    reason: The speaker describes a short, low, middle ball with no spin as especially difficult to receive.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: -J5iKei3MIQ
+      start_ms: 512766
+      end_ms: 526300
+      url: https://www.youtube.com/watch?v=-J5iKei3MIQ&t=512s
+      segment_ids:
+        - -J5iKei3MIQ:00259
+        - -J5iKei3MIQ:00260
+        - -J5iKei3MIQ:00261
+        - -J5iKei3MIQ:00262
+        - -J5iKei3MIQ:00263
+        - -J5iKei3MIQ:00264
+        - -J5iKei3MIQ:00267
+  - id: FweaNVt8gA0-concept-neutral-ball-receive-handling-reviewed
+    evidence_type: explanation
+    excerpt: Handling balls with unclear or neutral spin by focusing on simple, decisive reception rather than over-reading the spin.
+    reason: The speaker says to adjust based on ball type and focus on tracking the ball when many balls or difficult situations make reading harder, which fits neutral/unclear receive handling.
+    confidence: 0.84
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: FweaNVt8gA0
+      start_ms: 1174600
+      end_ms: 1201300
+      url: https://www.youtube.com/watch?v=FweaNVt8gA0&t=1174s
+      segment_ids:
+        - FweaNVt8gA0:00305
+        - FweaNVt8gA0:00308
+        - FweaNVt8gA0:00312

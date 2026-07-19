@@ -10,9 +10,12 @@ evidence_summary: >-
   forehand flick for short balls and introduces multiple flick types. The best way is to flick if
   possible, and again says flicking is the best option for the ball in question. The forehand
   flick, says the wrist should have a pushing feeling, and repeatedly instructs to push the wrist
-  forward. Together, these principles show how the topic is applied in practice while preserving
-  the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:756a48dd5b661beb86f778f49d9f0657f07445382067304332ce7bb54190f35c"
+  forward. The teacher connects short balls and backhand flicks to the same close-table principle
+  and then discusses flicking as a specialized short-ball action. Short forehand balls can be
+  flicked, with closer balls allowing more power and wrist release, while longer short balls
+  require a compact push-flick. Together, these principles show how the topic is applied in
+  practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:2668b307c8b0335edd3aa063530eeadeeeede521901690093517fd6bc2475d34"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -84,3 +87,42 @@ evidence:
         - _P1j6GqbR7w:00047
         - _P1j6GqbR7w:00048
         - _P1j6GqbR7w:00050
+  - id: c1OUlMn9IFM-concept-forehand-flick-for-short-balls-reviewed
+    evidence_type: example
+    excerpt: A flick used on short balls, especially when the ball is close to the table and should be attacked with a quick, specialized action.
+    reason: The teacher connects short balls and backhand flicks to the same close-table principle and then discusses flicking as a specialized short-ball action.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: c1OUlMn9IFM
+      start_ms: 245700
+      end_ms: 260200
+      url: https://www.youtube.com/watch?v=c1OUlMn9IFM&t=245s
+      segment_ids:
+        - c1OUlMn9IFM:00086
+        - c1OUlMn9IFM:00087
+        - c1OUlMn9IFM:00089
+        - c1OUlMn9IFM:00090
+  - id: vbzVfx-HWE4-concept-forehand-flick-for-short-balls-reviewed
+    evidence_type: explanation
+    excerpt: A forehand receive used on very short balls, with more wrist release possible when the ball is shorter and closer to the net.
+    reason: The speaker explains that short forehand balls can be flicked, with closer balls allowing more power and wrist release, while longer short balls require a compact push-flick.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: vbzVfx-HWE4
+      start_ms: 203120
+      end_ms: 228400
+      url: https://www.youtube.com/watch?v=vbzVfx-HWE4&t=203s
+      segment_ids:
+        - vbzVfx-HWE4:00084
+        - vbzVfx-HWE4:00085
+        - vbzVfx-HWE4:00086
+        - vbzVfx-HWE4:00087
+        - vbzVfx-HWE4:00088
+        - vbzVfx-HWE4:00089
+        - vbzVfx-HWE4:00090
+        - vbzVfx-HWE4:00091
+        - vbzVfx-HWE4:00092

@@ -1040,6 +1040,105 @@ evidence:
       url: https://www.youtube.com/watch?v=tQ9LEV9f2IU&t=383s
       segment_ids:
         - tQ9LEV9f2IU:00051
+  - id: 8uzW4bF4Oc8-concept-body-height-adjustment-reviewed
+    evidence_type: explanation
+    excerpt: Lowering the upper body or center of gravity so the stroke can be executed from a lower starting position and produce a lower angle of incidence.
+    reason: The coach says the stance is too high, recommends waiting for the ball to drop, and explains that lowering the center of gravity lowers the arc and angle of incidence.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8uzW4bF4Oc8
+      start_ms: 185266
+      end_ms: 206933
+      url: https://www.youtube.com/watch?v=8uzW4bF4Oc8&t=185s
+      segment_ids:
+        - 8uzW4bF4Oc8:00087
+        - 8uzW4bF4Oc8:00088
+        - 8uzW4bF4Oc8:00093
+  - id: W_HZPjEPpI8-concept-body-height-adjustment-reviewed
+    evidence_type: definition
+    excerpt: Adjust body height or center of gravity to support the stroke and keep the arc from floating out.
+    reason: The speaker tells the player to lower the center of gravity and press down on the arc so the ball does not go out.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: W_HZPjEPpI8
+      start_ms: 442066
+      end_ms: 468866
+      url: https://www.youtube.com/watch?v=W_HZPjEPpI8&t=442s
+      segment_ids:
+        - W_HZPjEPpI8:00181
+        - W_HZPjEPpI8:00182
+        - W_HZPjEPpI8:00183
+        - W_HZPjEPpI8:00184
+        - W_HZPjEPpI8:00185
+        - W_HZPjEPpI8:00186
+  - id: 6Lw_HobLgSY-concept-body-height-adjustment-reviewed
+    evidence_type: explanation
+    excerpt: Lowering the body and center of gravity to create better leverage and spin for topspin strokes.
+    reason: The speaker says the center of gravity should be compressed/lowered and that a lower body position is necessary to generate spin effectively.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 6Lw_HobLgSY
+      start_ms: 159366
+      end_ms: 169466
+      url: https://www.youtube.com/watch?v=6Lw_HobLgSY&t=159s
+      segment_ids:
+        - 6Lw_HobLgSY:00065
+        - 6Lw_HobLgSY:00066
+        - 6Lw_HobLgSY:00068
+  - id: 4WWIQdr3R8g-concept-body-height-adjustment-reviewed
+    evidence_type: explanation
+    excerpt: Adjusting body height by lowering the center of gravity so the player can contact and lift the ball more effectively.
+    reason: The speaker repeatedly says to lower the hand and center of gravity, step back if needed, and move lower toward the ball.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 4WWIQdr3R8g
+      start_ms: 775233
+      end_ms: 782566
+      url: https://www.youtube.com/watch?v=4WWIQdr3R8g&t=775s
+      segment_ids:
+        - 4WWIQdr3R8g:00150
+        - 4WWIQdr3R8g:00151
+        - 4WWIQdr3R8g:00152
+  - id: mpCV9-Cc1HE-concept-body-height-adjustment-reviewed
+    evidence_type: explanation
+    excerpt: Lower the center of gravity and body height to make contact and maintain stability.
+    reason: The speaker explicitly tells the learner to lower the center of gravity for stability.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: mpCV9-Cc1HE
+      start_ms: 264466
+      end_ms: 272133
+      url: https://www.youtube.com/watch?v=mpCV9-Cc1HE&t=264s
+      segment_ids:
+        - mpCV9-Cc1HE:00116
+        - mpCV9-Cc1HE:00117
+        - mpCV9-Cc1HE:00118
+        - mpCV9-Cc1HE:00119
+  - id: TtrTmkMdEzo-concept-body-height-adjustment-reviewed
+    evidence_type: explanation
+    excerpt: Lowering the body position to match ball height and improve stroke execution.
+    reason: The speaker tells the learner to lower their position before completing the movement.
+    confidence: 0.88
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: TtrTmkMdEzo
+      start_ms: 434633
+      end_ms: 448466
+      url: https://www.youtube.com/watch?v=TtrTmkMdEzo&t=434s
+      segment_ids:
+        - TtrTmkMdEzo:00123
+        - TtrTmkMdEzo:00124
 relations:
   - relation_type: used_with
     target_concept_id: concept-contact-point

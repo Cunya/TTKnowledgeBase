@@ -1,0 +1,19 @@
+---
+interface Props { videoId: string; conceptId?: string; startMs?: number; endMs?: number; compact?: boolean; label?: string }
+const { videoId, conceptId = '', startMs = 0, endMs = 0, compact = false, label = 'Mark for local review' } = Astro.props;
+const showLocalReview = import.meta.env.PUBLIC_PRODUCTION_BUILD !== 'true';
+if (!showLocalReview) return;
+---
+<details class:list={['local-review-control', compact && 'local-review-control-compact']} data-review-control data-video-id={videoId} data-concept-id={conceptId} data-start-ms={startMs} data-end-ms={endMs}>
+  <summary>{label}</summary>
+  <form data-review-form>
+    <label>Issue type<select data-review-type><option value="timestamp">Review timestamps</option><option value="atlas">Review atlas position</option><option value="visual">Review visual demonstration</option><option value="evidence">Review evidence or excerpt</option><option value="concept">Review concept identity</option><option value="metadata">Review video metadata</option></select></label>
+    <label>Note<textarea data-review-note required placeholder="What needs fixing?"></textarea></label>
+    <button type="submit">Save review mark</button><span class="local-review-saved" data-review-saved role="status"></span>
+  </form>
+</details>
+<script>
+  // @ts-nocheck
+  const reviewKey = 'momentgraph-local-review-tasks'; const readReviewTasks = () => JSON.parse(localStorage.getItem(reviewKey) || '[]'); const saveReviewTask = async (task) => { try { const response = await fetch('http://127.0.0.1:4322/api/review-tasks', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(task) }); if (response.ok) return true; } catch {} localStorage.setItem(reviewKey, JSON.stringify([task, ...readReviewTasks()])); return false; };
+  document.querySelectorAll('[data-review-control]').forEach((node) => { const control = node as HTMLElement; const form = control.querySelector('[data-review-form]') as HTMLFormElement | null; if (!form || form.dataset.bound) return; form.dataset.bound = 'true'; form.addEventListener('submit', async (event) => { event.preventDefault(); const note = (control.querySelector('[data-review-note]') as HTMLTextAreaElement | null)?.value.trim(); if (!note) return; const task = { id: `review-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString(), status: 'open', type: (control.querySelector('[data-review-type]') as HTMLSelectElement | null)?.value || 'concept', videoId: control.dataset.videoId, conceptId: control.dataset.conceptId || null, startMs: Number(control.dataset.startMs || 0), endMs: Number(control.dataset.endMs || 0), note, resolution: null }; const synced = await saveReviewTask(task); const saved = control.querySelector('[data-review-saved]'); if (saved) saved.textContent = synced ? 'Saved to the Codex-readable local review queue.' : 'Saved in this browser only; start the local monitor to sync it.'; form.reset(); }); });
+</script>

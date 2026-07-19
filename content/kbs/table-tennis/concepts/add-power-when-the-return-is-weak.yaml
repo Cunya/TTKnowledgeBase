@@ -10,9 +10,10 @@ evidence_summary: >-
   should be used only when the opponent's return is low quality, and not first during high-quality
   exchanges. Against soft or slow pushes you must generate your own forward power and drive into
   the ball. To add power only when certain of the spin, and uses a 6-vs-4 power rating example to
-  keep the ball on the table. Together, these principles show how the topic is applied in practice
+  keep the ball on the table. To adjust power based on return quality and attack actively when the
+  return is low quality. Together, these principles show how the topic is applied in practice
   while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:0c069faf1914a9e0a1819faa8504c07542510f49294530a85eaffec521bf4960"
+evidence_summary_source_hash: "sha256:116c7e23ecddaf5fa06df84c1c5e1307f18b2b769fcc94799fff0dec98cdca8d"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -80,3 +81,19 @@ evidence:
       segment_ids:
         - -iWLwSvOJ2U:00050
         - -iWLwSvOJ2U:00051
+  - id: W_HZPjEPpI8-concept-add-power-when-the-return-is-weak-reviewed
+    evidence_type: definition
+    excerpt: Increase your own attacking power when the opponent's return is weak or low quality.
+    reason: The speaker directly says to adjust power based on return quality and attack actively when the return is low quality.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: W_HZPjEPpI8
+      start_ms: 138300
+      end_ms: 144833
+      url: https://www.youtube.com/watch?v=W_HZPjEPpI8&t=138s
+      segment_ids:
+        - W_HZPjEPpI8:00050
+        - W_HZPjEPpI8:00051
+        - W_HZPjEPpI8:00052

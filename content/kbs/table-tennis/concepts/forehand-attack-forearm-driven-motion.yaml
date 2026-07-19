@@ -14,10 +14,16 @@ evidence_summary: >-
   is dominated by the forearm, including acceleration and power generation, and that the forearm
   completes the remaining movement. To push forward with the forearm and against the ball, and to
   fully extend the forearm after the arc is formed. 'I'm essentially forehand attacking' and it
-  with looping. To engage the forearm, attack the ball, and generate power forward. Together,
-  these principles show how the topic is applied in practice while preserving the relevant
-  distinctions and constraints.
-evidence_summary_source_hash: "sha256:fe31fc2334e565fe081f55f317712caa2af6c37c44c52344451671e1d1c049e4"
+  with looping. To engage the forearm, attack the ball, and generate power forward. Forehand
+  attack as opening the forearm to the side, then pushing forward, and later describes pushing the
+  forearm forward. The basic framework of the forehand attack requires retracting the arm and
+  without this, there will be no explosive power later. The difference is about body rotation and
+  forearm speed, and that the right side drives the arm to align the hitting angle. The sequence
+  from fingers and wrist to forearm, then states that forward force is essential for forehand and
+  backhand strokes and that forearm acceleration should be trained. Together, these principles
+  show how the topic is applied in practice while preserving the relevant distinctions and
+  constraints.
+evidence_summary_source_hash: "sha256:6bd4d996649f459ef7a66f33b542263acc13824045d35aff72bd0082f02d761a"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -104,3 +110,67 @@ evidence:
       url: https://www.youtube.com/watch?v=tQ9LEV9f2IU&t=461s
       segment_ids:
         - tQ9LEV9f2IU:00061
+  - id: pAEvvtlrSVY-concept-forehand-attack-forearm-driven-motion-reviewed
+    evidence_type: explanation
+    excerpt: A forehand attack driven primarily by forearm movement, with forward-and-upward force generation.
+    reason: The speaker explicitly explains forehand attack as opening the forearm to the side, then pushing forward, and later describes pushing the forearm forward.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: pAEvvtlrSVY
+      start_ms: 308800
+      end_ms: 328900
+      url: https://www.youtube.com/watch?v=pAEvvtlrSVY&t=308s
+      segment_ids:
+        - pAEvvtlrSVY:00118
+        - pAEvvtlrSVY:00121
+        - pAEvvtlrSVY:00124
+        - pAEvvtlrSVY:00125
+  - id: TY-0V45X1kE-concept-forehand-attack-forearm-driven-motion-reviewed
+    evidence_type: explanation
+    excerpt: A forehand attacking motion that emphasizes using the forearm to generate acceleration and power rather than relying on the upper arm alone.
+    reason: The speaker says the basic framework of the forehand attack requires retracting the arm and explains that without this, there will be no explosive power later.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: TY-0V45X1kE
+      start_ms: 13866
+      end_ms: 33900
+      url: https://www.youtube.com/watch?v=TY-0V45X1kE&t=13s
+      segment_ids:
+        - TY-0V45X1kE:00001
+        - TY-0V45X1kE:00003
+        - TY-0V45X1kE:00004
+        - TY-0V45X1kE:00005
+  - id: ijU-Kk98Gto-concept-forehand-attack-forearm-driven-motion-reviewed
+    evidence_type: explanation
+    excerpt: On forehand attacks, the forearm accelerates the final strike and helps align the impact direction after the body rotates.
+    reason: The speaker says the difference is about body rotation and forearm speed, and that the right side drives the arm to align the hitting angle.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ijU-Kk98Gto
+      start_ms: 108100
+      end_ms: 115900
+      url: https://www.youtube.com/watch?v=ijU-Kk98Gto&t=108s
+      segment_ids:
+        - ijU-Kk98Gto:00048
+        - ijU-Kk98Gto:00049
+  - id: FweaNVt8gA0-concept-forehand-attack-forearm-driven-motion-reviewed
+    evidence_type: explanation
+    excerpt: A forehand attack pattern that emphasizes forearm acceleration and forward-upward driving force.
+    reason: The speaker describes the sequence from fingers and wrist to forearm, then states that forward force is essential for forehand and backhand strokes and that forearm acceleration should be trained.
+    confidence: 0.92
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: FweaNVt8gA0
+      start_ms: 518066
+      end_ms: 526100
+      url: https://www.youtube.com/watch?v=FweaNVt8gA0&t=518s
+      segment_ids:
+        - FweaNVt8gA0:00125
+        - FweaNVt8gA0:00126

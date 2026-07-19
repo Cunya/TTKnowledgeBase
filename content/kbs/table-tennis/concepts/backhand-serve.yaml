@@ -623,6 +623,55 @@ evidence:
         - GOAyEFoSibE:00157
         - GOAyEFoSibE:00158
         - GOAyEFoSibE:00159
+  - id: R_iezR5GGwY-concept-backhand-sidespin-serve-reviewed
+    evidence_type: definition
+    excerpt: A backhand serve technique that uses a slightly sideways racket face, wrist snap, and a brushing contact to produce sidespin.
+    reason: The speaker explicitly frames the topic as how to serve a backhand sidespin ball and describes the racket angle needed for right-side spin on a backhand serve.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: R_iezR5GGwY
+      start_ms: 6966
+      end_ms: 36233
+      url: https://www.youtube.com/watch?v=R_iezR5GGwY&t=6s
+      segment_ids:
+        - R_iezR5GGwY:00000
+        - R_iezR5GGwY:00005
+        - R_iezR5GGwY:00006
+        - R_iezR5GGwY:00010
+  - id: TtrTmkMdEzo-concept-backhand-serve-reviewed
+    evidence_type: example
+    excerpt: A serve executed from the backhand side, discussed here as a common amateur serve choice.
+    reason: The speaker explicitly says they will serve a backhand and asks the learner to perform a backhand serve.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: TtrTmkMdEzo
+      start_ms: 86033
+      end_ms: 90200
+      url: https://www.youtube.com/watch?v=TtrTmkMdEzo&t=86s
+      segment_ids:
+        - TtrTmkMdEzo:00019
+  - id: P21-_dtUzE8-concept-backhand-serve-reviewed
+    evidence_type: example
+    excerpt: A backhand serve is presented as an early learning serve pattern, with emphasis on body proximity, wrist/finger action, and a curved follow-through.
+    reason: Gives the classic backhand-serve setup and notes that the swing path favors sidespin.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: P21-_dtUzE8
+      start_ms: 795100
+      end_ms: 809000
+      url: https://www.youtube.com/watch?v=P21-_dtUzE8&t=795s
+      segment_ids:
+        - P21-_dtUzE8:00380
+        - P21-_dtUzE8:00381
+        - P21-_dtUzE8:00382
+        - P21-_dtUzE8:00383
+        - P21-_dtUzE8:00384
 relations:
   - relation_type: variation_of
     target_concept_id: concept-sidespin-topspin-serve
