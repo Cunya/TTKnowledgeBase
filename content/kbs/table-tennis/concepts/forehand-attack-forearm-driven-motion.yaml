@@ -12,9 +12,12 @@ short_definition: In forehand attack, the forearm should do the main acceleratio
 evidence_summary: >-
   Forehand attack forearm-driven motion brings together several connected ideas. Forehand attack
   is dominated by the forearm, including acceleration and power generation, and that the forearm
-  completes the remaining movement. Together, these principles show how the topic is applied in
-  practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:90eba36a20ee290d2440651a69cea4c704884c2cb718f718c5e789089dda9c5b"
+  completes the remaining movement. To push forward with the forearm and against the ball, and to
+  fully extend the forearm after the arc is formed. 'I'm essentially forehand attacking' and it
+  with looping. To engage the forearm, attack the ball, and generate power forward. Together,
+  these principles show how the topic is applied in practice while preserving the relevant
+  distinctions and constraints.
+evidence_summary_source_hash: "sha256:fe31fc2334e565fe081f55f317712caa2af6c37c44c52344451671e1d1c049e4"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -52,3 +55,52 @@ evidence:
         - kES7yDFMZTA:00027
         - kES7yDFMZTA:00028
         - kES7yDFMZTA:00029
+  - id: lt6uVnA3mmg-concept-forehand-attack-forearm-driven-motion-reviewed
+    evidence_type: explanation
+    excerpt: A forehand attacking action where the forearm drives the stroke forward and contributes directly to power generation.
+    reason: The speaker repeatedly says to push forward with the forearm and against the ball, and to fully extend the forearm after the arc is formed.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: lt6uVnA3mmg
+      start_ms: 160
+      end_ms: 28160
+      url: https://www.youtube.com/watch?v=lt6uVnA3mmg&t=0s
+      segment_ids:
+        - lt6uVnA3mmg:00000
+        - lt6uVnA3mmg:00001
+        - lt6uVnA3mmg:00002
+        - lt6uVnA3mmg:00003
+        - lt6uVnA3mmg:00004
+        - lt6uVnA3mmg:00005
+        - lt6uVnA3mmg:00006
+  - id: TbJCmatwqG8-concept-forehand-attack-forearm-driven-motion-reviewed
+    evidence_type: definition
+    excerpt: A forehand attacking action that relies on forearm-driven acceleration rather than a looping brushing motion.
+    reason: The speaker explicitly says 'I'm essentially forehand attacking' and contrasts it with looping.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: TbJCmatwqG8
+      start_ms: 899666
+      end_ms: 916766
+      url: https://www.youtube.com/watch?v=TbJCmatwqG8&t=899s
+      segment_ids:
+        - TbJCmatwqG8:00174
+        - TbJCmatwqG8:00175
+  - id: tQ9LEV9f2IU-concept-forehand-attack-forearm-driven-motion-reviewed
+    evidence_type: explanation
+    excerpt: A forehand attacking action in which the forearm actively drives acceleration and power.
+    reason: The speaker explicitly says to engage the forearm, attack the ball, and generate power forward.
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: tQ9LEV9f2IU
+      start_ms: 461040
+      end_ms: 479120
+      url: https://www.youtube.com/watch?v=tQ9LEV9f2IU&t=461s
+      segment_ids:
+        - tQ9LEV9f2IU:00061

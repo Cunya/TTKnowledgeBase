@@ -8,10 +8,11 @@ aliases:
 short_definition: A stroke becomes cramped when the player stands too close or lacks room to swing and rotate.
 evidence_summary: >-
   Jammed by insufficient space brings together several connected ideas. The jammed feeling and its
-  cause. Leaning back or stepping back too much will get you jammed by the ball. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:488532c47f822c78fc1a32ef348311151479b405c2ef7af75eb1bab2184eeeb2"
+  cause. Leaning back or stepping back too much will get you jammed by the ball. Directly states
+  that the forward-and-back recovery can jam you and remove power. Being too close after a push
+  with getting jammed on the forehand loop. Together, these principles show how the topic is
+  applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:df0756cae1a036f64e53959662bb3c6841526c7ebc32ea732bbe367aeee60aeb"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -59,3 +60,35 @@ evidence:
       segment_ids:
         - wpaKC8pALyQ:00025
         - wpaKC8pALyQ:00026
+  - id: ExJnwgcKEsU-concept-jammed-by-insufficient-space-reviewed
+    evidence_type: explanation
+    excerpt: A blocked or cramped stroke caused by poor spacing or an overly forward-and-back recovery path.
+    reason: Directly states that the forward-and-back recovery can jam you and remove power.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ExJnwgcKEsU
+      start_ms: 266833
+      end_ms: 277433
+      url: https://www.youtube.com/watch?v=ExJnwgcKEsU&t=266s
+      segment_ids:
+        - ExJnwgcKEsU:00057
+        - ExJnwgcKEsU:00059
+  - id: K0eFBdIiBTQ-concept-jammed-by-insufficient-space-reviewed
+    evidence_type: explanation
+    excerpt: Being too close to the table or failing to create room prevents a full forehand preparation and makes the stroke feel jammed.
+    reason: The speaker repeatedly links being too close after a push with getting jammed on the forehand loop.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: K0eFBdIiBTQ
+      start_ms: 17666
+      end_ms: 43933
+      url: https://www.youtube.com/watch?v=K0eFBdIiBTQ&t=17s
+      segment_ids:
+        - K0eFBdIiBTQ:00004
+        - K0eFBdIiBTQ:00005
+        - K0eFBdIiBTQ:00007
+        - K0eFBdIiBTQ:00009

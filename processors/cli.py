@@ -7,6 +7,7 @@ import time
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
 from typing import Annotated
+from urllib.parse import parse_qs, urlparse
 
 import typer
 from rich.console import Console
@@ -145,7 +146,9 @@ def discover(url: Annotated[str, typer.Argument()], kb: KbOption = None) -> None
     paths = kb_paths(kb)
     with console.status(f"Discovering videos for {paths.name}"):
         videos = discover_videos(url)
-    output = paths.data("manifests") / "discovered-videos.json"
+    playlist_id = parse_qs(urlparse(url).query).get("list", [None])[0]
+    output_name = f"discovered-{playlist_id}.json" if playlist_id else "discovered-videos.json"
+    output = paths.data("manifests") / output_name
     write_json(output, {"knowledge_base": paths.id, "source_url": url, "videos": videos})
     console.print(f"[green]Discovered {len(videos)} videos[/green] for {paths.name}")
 
@@ -303,7 +306,10 @@ def ingest(
                 f"about {hours} hour(s) remaining. Change VPN/proxy route and pass "
                 "--retry-blocked, or wait for the recorded retry time."
             )
-            break
+            # A cooldown is scoped to this video/route. Continue with other
+            # batch entries rather than letting one blocked item starve the
+            # remaining eligible catalog.
+            continue
         if index and needs_network and request_delay + jitter > 0:
             time.sleep(request_delay + random.uniform(0, jitter))
         if needs_network:

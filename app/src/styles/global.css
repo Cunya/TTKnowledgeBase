@@ -430,6 +430,13 @@ blockquote { font-family: Georgia, serif; font-size: 21px; line-height: 1.42; ma
 .catalog-state.published { color: var(--green); }
 .catalog-state.extracted { color: var(--orange); }
 .catalog-state.members-only { color: #b46d49; }
+:root[data-theme="dark"] .progress-table .total { background: var(--surface); color: var(--ink); box-shadow: inset 0 2px 0 var(--green); }
+:root[data-theme="dark"] .progress-group { border-top-color: var(--line); }
+:root[data-theme="dark"] .progress-table thead th { color: var(--lime); }
+:root[data-theme="dark"] .catalog-state.members-only { color: #ffb08d; }
+:root[data-theme="dark"] .progress-item progress::-webkit-progress-bar,
+:root[data-theme="dark"] .llm-budget-total > progress::-webkit-progress-bar,
+:root[data-theme="dark"] .llm-budget-task-name + progress::-webkit-progress-bar { background: #29352d; }
 
 /* Local backlog view */
 .backlog-intro { max-width: 1060px; padding-bottom: 48px; }

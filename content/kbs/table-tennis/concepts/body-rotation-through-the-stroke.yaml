@@ -9,18 +9,19 @@ aliases:
 short_definition: Using torso and body rotation to drive the stroke, then returning to neutral after the shot.
 evidence_summary: >-
   Body rotation through the stroke brings together several connected ideas. Rotating the body and
-  explicitly says the motion is driven by the body. Explicit foot and hip alignment cues so the
-  hips open and the body rotates naturally through the stroke. Body power should go forward and
-  frames the feeling as rotate, push, rotate, push. When rotation is possible, when it causes
-  jamming, and repeatedly says to rotate first and let the body drive the side movement. Full body
-  rotation and explicitly contrasts torso use with arm-only motion. Adding body rotation, and
-  involving other body parts can make the contact point wrong and break the stroke. Small rotation
-  for hitting from large rotation for looping and the rotation chain from feet to shoulders, with
-  the hips driving rotation. Not to face the table directly, but to turn sideways and rotate the
-  waist to create room. Additional points reinforce the same theme. Together, these principles
-  show how the topic is applied in practice while preserving the relevant distinctions and
-  constraints.
-evidence_summary_source_hash: "sha256:93a972f1d2e468375405ddf0564b1a3006fac43cf2dcfde152c94322a2b1135d"
+  explicitly says the motion is driven by the body. Turning motion, says rotation is possible only
+  after the left foot lifts, and later warns against over-rotating the body. When rotation is
+  possible, when it causes jamming, and repeatedly says to rotate first and let the body drive the
+  side movement. Full body rotation and explicitly contrasts torso use with arm-only motion. Small
+  rotation for hitting from large rotation for looping and the rotation chain from feet to
+  shoulders, with the hips driving rotation. Explains that body rotation is required for timing
+  and that a preparatory turn syncs arm and foot movement. A useful contrast is between looping
+  and loop-driving and explains that loop driving uses a larger body rotation range, with stepping
+  across and rotating while bowing. The body won't move forward without pivoting, then instructs
+  rotating the hips and shoulders. Additional points reinforce the same theme. Together, these
+  principles show how the topic is applied in practice while preserving the relevant distinctions
+  and constraints.
+evidence_summary_source_hash: "sha256:9b63dbaf85466c63af5254481e713fc8c1f94877b2acb61633c2f88943dd010e"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -223,3 +224,84 @@ evidence:
         - 8FDXnA8EO1M:00024
         - 8FDXnA8EO1M:00026
         - 8FDXnA8EO1M:00027
+  - id: eIsYt1sCPRI-concept-body-rotation-through-the-stroke-reviewed
+    evidence_type: explanation
+    excerpt: Use torso rotation and coordinated body turn to execute the shot effectively, especially when moving in for a half-long ball.
+    reason: Explains that body rotation is required for timing and that a preparatory turn syncs arm and foot movement.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: eIsYt1sCPRI
+      start_ms: 372233
+      end_ms: 396266
+      url: https://www.youtube.com/watch?v=eIsYt1sCPRI&t=372s
+      segment_ids:
+        - eIsYt1sCPRI:00078
+        - eIsYt1sCPRI:00080
+        - eIsYt1sCPRI:00082
+  - id: 2DXviJQOA5M-concept-body-rotation-through-the-stroke-reviewed
+    evidence_type: explanation
+    excerpt: Using waist and hip rotation in the stroke, then recovering to neutral after contact.
+    reason: The transcript explicitly calls for fast waist and hip rotation, rotating toward the forehand, and shifting force forward and then releasing it after contact.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 2DXviJQOA5M
+      start_ms: 352640
+      end_ms: 379040
+      url: https://www.youtube.com/watch?v=2DXviJQOA5M&t=352s
+      segment_ids:
+        - 2DXviJQOA5M:00045
+        - 2DXviJQOA5M:00047
+        - 2DXviJQOA5M:00048
+  - id: lpiuaVgCbK4-concept-body-rotation-through-the-stroke-reviewed
+    evidence_type: explanation
+    excerpt: Use torso and whole-body rotation as part of the stroke, especially when transitioning from a small looping action to a larger loop-drive action.
+    reason: The speaker contrasts looping with loop-driving and explains that loop driving uses a larger body rotation range, with stepping across and rotating while bowing.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: lpiuaVgCbK4
+      start_ms: 369800
+      end_ms: 399320
+      url: https://www.youtube.com/watch?v=lpiuaVgCbK4&t=369s
+      segment_ids:
+        - lpiuaVgCbK4:00051
+        - lpiuaVgCbK4:00052
+        - lpiuaVgCbK4:00053
+        - lpiuaVgCbK4:00054
+        - lpiuaVgCbK4:00055
+  - id: yF675Tey81g-concept-body-stability-in-serve-reviewed
+    evidence_type: explanation
+    excerpt: Maintaining a still torso and avoiding waist rotation during the serve to preserve control and disguise.
+    reason: The speaker directly instructs to avoid waist rotation and keep the body still during the serve.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: yF675Tey81g
+      start_ms: 100520
+      end_ms: 109380
+      url: https://www.youtube.com/watch?v=yF675Tey81g&t=100s
+      segment_ids:
+        - yF675Tey81g:00017
+        - yF675Tey81g:00018
+  - id: tQ9LEV9f2IU-concept-body-rotation-through-the-stroke-reviewed
+    evidence_type: explanation
+    excerpt: Using pivoting and coordinated hip/shoulder rotation to drive the stroke forward.
+    reason: The speaker says the body won't move forward without pivoting, then instructs rotating the hips and shoulders.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: tQ9LEV9f2IU
+      start_ms: 509360
+      end_ms: 534960
+      url: https://www.youtube.com/watch?v=tQ9LEV9f2IU&t=509s
+      segment_ids:
+        - tQ9LEV9f2IU:00065
+        - tQ9LEV9f2IU:00066
+        - tQ9LEV9f2IU:00067

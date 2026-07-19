@@ -1,6 +1,6 @@
 import pytest
 
-from processors.ingest import transcript_from_caption, video_id_from_url
+from processors.ingest import discover_videos, transcript_from_caption, video_id_from_url
 
 
 @pytest.mark.parametrize(
@@ -19,6 +19,34 @@ def test_video_id_from_url(value: str, expected: str) -> None:
 def test_invalid_video_url() -> None:
     with pytest.raises(ValueError):
         video_id_from_url("https://example.com/nope")
+
+
+def test_discover_videos_prioritizes_view_count(monkeypatch) -> None:
+    class FakeYoutubeDL:
+        def __init__(self, options):
+            pass
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *args):
+            return False
+
+        def extract_info(self, url, download=False):
+            return {
+                "entries": [
+                    {"id": "low", "title": "Low", "view_count": 10},
+                    {"id": "unknown", "title": "Unknown"},
+                    {"id": "high", "title": "High", "view_count": 100},
+                ]
+            }
+
+    monkeypatch.setattr("processors.ingest.yt_dlp.YoutubeDL", FakeYoutubeDL)
+    assert [item["id"] for item in discover_videos("https://example.com/channel")] == [
+        "high",
+        "low",
+        "unknown",
+    ]
 
 
 def test_supplied_vtt_is_normalized(tmp_path) -> None:

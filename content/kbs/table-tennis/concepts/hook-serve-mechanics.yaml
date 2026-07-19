@@ -523,6 +523,121 @@ evidence:
         - pRuBdX0ZLgg:00042
         - pRuBdX0ZLgg:00043
         - pRuBdX0ZLgg:00044
+  - id: GOAyEFoSibE-concept-hook-serve-mechanics-reviewed
+    evidence_type: definition
+    excerpt: A hooked-motion serve that can create sidespin-topspin through a forward-upward drive and sideways brushing action.
+    reason: The speaker uses hook serve as a main example and explains its motion, contact, arc, and deception.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: GOAyEFoSibE
+      start_ms: 699066
+      end_ms: 728500
+      url: https://www.youtube.com/watch?v=GOAyEFoSibE&t=699s
+      segment_ids:
+        - GOAyEFoSibE:00160
+        - GOAyEFoSibE:00161
+        - GOAyEFoSibE:00162
+        - GOAyEFoSibE:00163
+        - GOAyEFoSibE:00164
+        - GOAyEFoSibE:00165
+  - id: VUCWueKYuE0-concept-hook-serve-reviewed
+    evidence_type: definition
+    excerpt: A serve variation that uses a deceptive hook-like action to disguise spin and placement, often combining side-topspin and side-underspin options.
+    reason: The speaker explicitly introduces and defines the hook serve and states deception is its key feature.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: VUCWueKYuE0
+      start_ms: 6466
+      end_ms: 23833
+      url: https://www.youtube.com/watch?v=VUCWueKYuE0&t=6s
+      segment_ids:
+        - VUCWueKYuE0:00001
+        - VUCWueKYuE0:00004
+  - id: VUCWueKYuE0-concept-side-underspin-vs-side-topspin-hook-serve-reviewed
+    evidence_type: explanation
+    excerpt: The two key spin variants of the hook serve, one produced with a downward chop and the other with a brushing or push-and-brush motion.
+    reason: The speaker directly contrasts side-underspin and side-topspin and explains the different motion for each.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: VUCWueKYuE0
+      start_ms: 267500
+      end_ms: 291433
+      url: https://www.youtube.com/watch?v=VUCWueKYuE0&t=267s
+      segment_ids:
+        - VUCWueKYuE0:00060
+        - VUCWueKYuE0:00064
+        - VUCWueKYuE0:00065
+  - id: VUCWueKYuE0-concept-sideways-force-in-hook-serve-reviewed
+    evidence_type: explanation
+    excerpt: A hook serve mechanic where the main force direction is sideways rather than strictly forward, upward, or downward.
+    reason: The speaker explicitly says the motion needs to be sideways and shows a slight dip then flick up at contact.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: VUCWueKYuE0
+      start_ms: 637966
+      end_ms: 656466
+      url: https://www.youtube.com/watch?v=VUCWueKYuE0&t=637s
+      segment_ids:
+        - VUCWueKYuE0:00148
+        - VUCWueKYuE0:00149
+        - VUCWueKYuE0:00150
+        - VUCWueKYuE0:00151
+  - id: VUCWueKYuE0-concept-forearm-and-finger-power-in-hook-serve-reviewed
+    evidence_type: explanation
+    excerpt: The hook serve generates spin and power through coordinated forearm action, finger snap, and hand-web engagement.
+    reason: The speaker identifies the forearm and fingers as key power sources and describes a hidden finger snap at impact.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: VUCWueKYuE0
+      start_ms: 365366
+      end_ms: 377200
+      url: https://www.youtube.com/watch?v=VUCWueKYuE0&t=365s
+      segment_ids:
+        - VUCWueKYuE0:00082
+        - VUCWueKYuE0:00083
+        - VUCWueKYuE0:00084
+        - VUCWueKYuE0:00085
+  - id: WcQLHn2Fafw-concept-hook-serve-mechanics-reviewed
+    evidence_type: demonstration
+    excerpt: A hook-like wrist and racket motion that can be repurposed on receive, especially for short forehand balls, to direct placement to either side.
+    reason: The speaker explicitly says a short forehand receive can be returned with a hook-serve motion and then placed to either side.
+    confidence: 0.92
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: WcQLHn2Fafw
+      start_ms: 576633
+      end_ms: 590833
+      url: https://www.youtube.com/watch?v=WcQLHn2Fafw&t=576s
+      segment_ids:
+        - WcQLHn2Fafw:00130
+        - WcQLHn2Fafw:00131
+        - WcQLHn2Fafw:00132
+  - id: TbJCmatwqG8-concept-hook-serve-mechanics-reviewed
+    evidence_type: definition
+    excerpt: A serve action that uses a hooked racket path and horizontal/lateral force to generate side spin and curved trajectory.
+    reason: The speaker explicitly says to hook the racket, understand the principle of hooking when serving, and emphasizes hooking to generate lateral force.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: TbJCmatwqG8
+      start_ms: 305766
+      end_ms: 313000
+      url: https://www.youtube.com/watch?v=TbJCmatwqG8&t=305s
+      segment_ids:
+        - TbJCmatwqG8:00050
+        - TbJCmatwqG8:00051
 relations:
   - relation_type: variation_of
     target_concept_id: concept-sidespin-topspin-serve

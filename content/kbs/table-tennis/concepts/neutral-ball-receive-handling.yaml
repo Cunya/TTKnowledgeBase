@@ -10,10 +10,11 @@ evidence_summary: >-
   semi-spin or no-spin balls and also recommends a general forward flick when the incoming spin is
   unclear. The return is often topspin or no-spin and instructs the player to treat it as no-spin
   rather than using a backspin-like motion. How to handle unreadable short serves neutrally, with
-  the racket between flat and upright and a focus on landing the ball first. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:adc1b65f156328f533e6a96b649d89fbb4b374790e54edce08e18f438a264f16"
+  the racket between flat and upright and a focus on landing the ball first. A step-by-step
+  fallback for unclear spin: slow push, middle contact, then slight sideways forearm motion.
+  Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:948a2491be394ce2a0e7332dce893b2a4fade648f5f66d6f903b0bbaa50725e5"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -85,3 +86,19 @@ evidence:
         - 35D9jnnwYtw:00065
         - 35D9jnnwYtw:00066
         - 35D9jnnwYtw:00067
+  - id: WcQLHn2Fafw-concept-neutral-ball-receive-handling-reviewed
+    evidence_type: definition
+    excerpt: 'A receive method for balls with unclear or light spin: slow down, contact the middle, and use a controlled sideways forearm adjustment to keep the return low.'
+    reason: 'The transcript gives a step-by-step fallback for unclear spin: slow push, middle contact, then slight sideways forearm motion.'
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: WcQLHn2Fafw
+      start_ms: 432266
+      end_ms: 462133
+      url: https://www.youtube.com/watch?v=WcQLHn2Fafw&t=432s
+      segment_ids:
+        - WcQLHn2Fafw:00097
+        - WcQLHn2Fafw:00100
+        - WcQLHn2Fafw:00103

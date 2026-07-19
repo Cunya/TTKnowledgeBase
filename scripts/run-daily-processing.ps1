@@ -23,7 +23,7 @@ $started = [DateTimeOffset]::Now
 $status = "completed"
 $exitCode = 0
 try {
-    $args = @("-m", "processors.cli", "process-pending", "--kb", $Kb)
+    $args = @("scripts/run-cp.py", "--kb", $Kb)
     if ($DryRun) {
         Write-Output "Dry run: would execute $Python $($args -join ' ')"
     } else {
@@ -43,7 +43,7 @@ try {
         finished_at = $finished.ToString("o")
         status = if ($DryRun) { "dry_run" } else { $status }
         exit_code = $exitCode
-        command = "$Python -m processors.cli process-pending --kb $Kb"
+        command = "$Python scripts/run-cp.py --kb $Kb"
     } | ConvertTo-Json | Set-Content -LiteralPath $ManifestPath -Encoding utf8
     if ($Lock) { $Lock.Dispose() }
     Remove-Item -LiteralPath $LockPath -Force -ErrorAction SilentlyContinue

@@ -304,6 +304,41 @@ evidence:
         - hwUcyGY2ApQ:00017
         - hwUcyGY2ApQ:00018
         - hwUcyGY2ApQ:00019
+  - id: ExJnwgcKEsU-concept-backhand-loop-swing-path-reviewed
+    evidence_type: explanation
+    excerpt: Use the elbow as a pivot and a small circular or arcing recovery rather than a rigid forward-and-back motion on the backhand side.
+    reason: Says a slight arc makes power smoother and avoids a push-like back-and-forth motion.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ExJnwgcKEsU
+      start_ms: 227466
+      end_ms: 243200
+      url: https://www.youtube.com/watch?v=ExJnwgcKEsU&t=227s
+      segment_ids:
+        - ExJnwgcKEsU:00049
+        - ExJnwgcKEsU:00050
+        - ExJnwgcKEsU:00051
+  - id: vCa7A9gyOT8-concept-backhand-loop-swing-path-reviewed
+    evidence_type: definition
+    excerpt: A backhand loop path that uses an outside arc, not a straight forward motion, to generate more spin and better quality.
+    reason: The speaker contrasts backhand arc control with forehand and states that a slight outside arc produces more spin than a straight motion.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: vCa7A9gyOT8
+      start_ms: 921033
+      end_ms: 949833
+      url: https://www.youtube.com/watch?v=vCa7A9gyOT8&t=921s
+      segment_ids:
+        - vCa7A9gyOT8:00204
+        - vCa7A9gyOT8:00205
+        - vCa7A9gyOT8:00206
+        - vCa7A9gyOT8:00209
+        - vCa7A9gyOT8:00210
+        - vCa7A9gyOT8:00211
 relations:
   - relation_type: part_of
     target_concept_id: concept-backhand-loop

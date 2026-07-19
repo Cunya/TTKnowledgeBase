@@ -6,6 +6,11 @@ It is intentionally ordered. The project should complete the blocking and trust 
 
 Last refreshed: 2026-07-16 11:07 EEST.
 
+## Research reconciliation — 2026-07-19
+
+- Added a local `/research/` comparison page covering glossaries, drill databases, coaching academies, structured training programs, and AI coaching tools.
+- Key follow-up: consider adding drill metadata and progression links to reviewed concepts while keeping personalization and match-analysis features separate from the public corpus.
+
 ## Current baseline
 
 - 73 concepts, 123 published videos, and 1,826 reviewed evidence items.
@@ -243,6 +248,16 @@ The numerical baseline above reflects the latest published artifacts, not the ol
 
 **Done when:** the scan is clean, the rendered site contains no known mojibake sequences, and source titles preserve intentional punctuation and emoji.
 
+### P1-12 - Keep atlas parents semantically aligned
+
+**Why:** recurring navigation edits had placed stroke-specific concepts under unrelated parents such as Serve, Drive, and Fundamentals, making the relationship atlas misleading.
+
+**Work:** review navigation assignments against each concept's label, definition, evidence summary, and facets after processing and before publication; keep shared principles in Fundamentals and stroke-specific concepts under the matching shot family.
+
+**Status:** Initial cleanup complete (2026-07-19): moved wrist stability to Fundamentals, flick mechanics to Flick, and forehand framework out of Serve. Added intermediate Serve, Serve receive, and Fundamentals groups to prevent overloaded parent lists. Continue auditing as new concepts are approved.
+
+**Done when:** every published concept has a defensible primary atlas parent, duplicate cross-listings are intentional, automatic placement reads the evidence summary, and navigation validation is part of the publish gate.
+
 ### P1-12 - Separate source-title attribution from display styling
 
 **Why:** ten published source video titles contain promotional all-caps fragments, including `SUCKS`, `STOP`, `SMASH`, `FAST`, and one fully uppercase title. These are original YouTube metadata, not missed transcript rephrasing, but they dominate the visual hierarchy and can make the site feel like it is repeating promotional copy.
@@ -287,7 +302,7 @@ The numerical baseline above reflects the latest published artifacts, not the ol
 
 **Dependencies:** P1-02 cached candidate triage, P1-15 daily LLM budget, P0-04 source quarantine/removal controls, and a confirmed local Codex CLI authentication/runtime environment.
 
-**Done when:** a scheduled invocation runs without ChatGPT app assistance, two invocations cannot overlap, reruns are idempotent unless explicitly forced, blocks/budget/auth/validation failures defer or stop safely with a private manifest, and no unreviewed knowledge or private processing data is published. See `docs/daily-pipeline-automation-review-2026-07-16.md`. **Status:** In progress; cache-first Task Scheduler wrapper implemented, full unattended acquisition and daily-run CLI still pending.
+**Done when:** a scheduled invocation runs without ChatGPT app assistance, two invocations cannot overlap, reruns are idempotent unless explicitly forced, blocks/budget/auth/validation failures defer or stop safely with a private manifest, and no unreviewed knowledge or private processing data is published. See `docs/daily-pipeline-automation-review-2026-07-16.md`. **Status:** Phase 1 complete (2026-07-19): shared `scripts/run-cp.py` orchestrator, selected-batch acquisition, discovered-catalog continuation, private `cp.latest.json` manifest, Windows 21:00 task action, and local start/stop monitor implemented. Remaining hardening: explicit dry-run/exit-class reporting and broader unattended environment checks.
 
 ### P1-17 - Add excerpt classification and overlap regression protection (new 2026-07-16)
 

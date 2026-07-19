@@ -607,6 +607,49 @@ evidence:
       segment_ids:
         - bzOU-EnMQbk:00090
         - bzOU-EnMQbk:00094
+  - id: ExJnwgcKEsU-concept-ready-position-reviewed
+    evidence_type: definition
+    excerpt: The neutral state you recover into so you can respond to the next ball.
+    reason: The speaker explicitly names recovery back to the ready position and normal ready position after serve.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ExJnwgcKEsU
+      start_ms: 553833
+      end_ms: 561366
+      url: https://www.youtube.com/watch?v=ExJnwgcKEsU&t=553s
+      segment_ids:
+        - ExJnwgcKEsU:00120
+  - id: J7Lm5IL-ggs-concept-ready-position-reviewed
+    evidence_type: explanation
+    excerpt: The neutral recovery position to return to after a stroke so the player can be prepared for the next ball.
+    reason: The speaker contrasts circular recovery with bringing the arm back to the ready position and defines in-place recovery as returning along the swing path.
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: J7Lm5IL-ggs
+      start_ms: 268833
+      end_ms: 280166
+      url: https://www.youtube.com/watch?v=J7Lm5IL-ggs&t=268s
+      segment_ids:
+        - J7Lm5IL-ggs:00061
+        - J7Lm5IL-ggs:00062
+  - id: K0eFBdIiBTQ-concept-ready-position-reviewed
+    evidence_type: explanation
+    excerpt: A reset stance used before the next stroke so the body and arm are ready to move.
+    reason: The speaker explicitly says to keep it in the ready position and only drop the arm after setting position.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: K0eFBdIiBTQ
+      start_ms: 279266
+      end_ms: 283833
+      url: https://www.youtube.com/watch?v=K0eFBdIiBTQ&t=279s
+      segment_ids:
+        - K0eFBdIiBTQ:00064
 relations:
   - relation_type: prerequisite_of
     target_concept_id: concept-forehand-loop

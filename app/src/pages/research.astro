@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const base = import.meta.env.BASE_URL;
+const resources = [
+  { name: 'Expert Table Tennis Drill Database', type: 'Drill library', coverage: 'Basic, footwork, irregular, multiball, serve/return, solo, and robot drills.', lesson: 'A drill-first index is a strong complement to concept articles; connect each drill to skill, level, pattern, and progression.', url: 'https://www.experttabletennis.com/table-tennis-drills/' },
+  { name: 'Table Tennis Clubs Glossary', type: 'Glossary', coverage: '194 terms with alphabetic browsing and categories such as rules, style, tactics, and equipment.', lesson: 'A compact term index helps discovery, but MomentGraph should retain evidence and source provenance for each definition.', url: 'https://www.tabletennisclubs.com/glossary' },
+  { name: 'All About Table Tennis Terminology', type: 'Glossary and reference', coverage: 'Large terminology reference covering strokes, equipment, styles, and rules.', lesson: 'Aliases and vocabulary normalization are valuable for search and should remain distinct from canonical concepts.', url: 'https://www.allabouttabletennis.com/table-tennis-terminology.html' },
+  { name: 'Tom Lodziak Table Tennis Coaching', type: 'Coaching academy', coverage: 'Technique, service, receive, tactics, match play, mindset, drills, and equipment.', lesson: 'A progression view can connect foundational mechanics to tactical use and practice plans.', url: 'https://www.tabletenniscoach.me.uk/' },
+  { name: 'Table Tennis University', type: 'Structured training program', coverage: 'Large drill-demonstration catalog organized around lessons and training schedules.', lesson: 'Practice content benefits from explicit sequences, dosage, and prerequisites—not only isolated technique pages.', url: 'https://courses.tabletennisuniversity.com/p/ttu-drills' },
+  { name: 'TTMatchAnalyzer', type: 'AI coaching tool', coverage: 'Score-based tactical takeaways, weakness patterns, drill suggestions, and short-clip feedback.', lesson: 'A future MomentGraph layer could connect corpus concepts to personal match observations without changing the reviewed corpus.', url: 'https://ttmatchanalyzer.com/' },
+];
+---
+<BaseLayout title="TT knowledge-base research" description="Local research on comparable table-tennis knowledge and coaching resources.">
+  <section class="page-intro">
+    <div class="eyebrow">Local research workspace</div>
+    <h1>Comparable TT knowledge bases</h1>
+    <p>A landscape scan of table-tennis glossaries, drill databases, coaching academies, structured training programs, and AI coaching tools. These are reference models, not source approvals.</p>
+    <div class="dashboard-meta"><span>{resources.length} resources reviewed</span><span>KB: table-tennis</span><span>Research date: 2026-07-19</span></div>
+  </section>
+  <section class="dashboard-section">
+    <div class="section-kicker">Landscape</div>
+    <h2>What other resources optimize for</h2>
+    <div class="dashboard-index">
+      {resources.map((resource, index) => <article class="dashboard-index-row">
+        <span class="dashboard-index-number">{String(index + 1).padStart(2, '0')}</span>
+        <span class="dashboard-index-copy"><strong>{resource.name}</strong><small>{resource.type} · {resource.coverage}</small></span>
+        <span class="dashboard-index-metric">{resource.lesson}</span>
+        <a href={resource.url} target="_blank" rel="noreferrer">Open reference ↗</a>
+      </article>)}
+    </div>
+  </section>
+  <section class="dashboard-section dashboard-boundary">
+    <div class="section-kicker">Implications for MomentGraph</div>
+    <h2>Where this KB can be distinct</h2>
+    <div class="dashboard-boundary-grid">
+      <div><strong>Evidence chain</strong><p>Keep every public concept tied to reviewed transcript moments and separate spoken evidence from verified visual demonstrations.</p></div>
+      <div><strong>Connected mechanics</strong><p>Use the atlas to connect mechanics, timing, selection, errors, equipment, and drills rather than presenting a flat glossary.</p></div>
+      <div><strong>Practice layer</strong><p>Add drill metadata—goal, pattern, level, dosage, and progression—when the corpus has enough grounded evidence.</p></div>
+      <div><strong>Personalization boundary</strong><p>Keep future match-analysis or training-plan features separate from the reviewed public knowledge graph.</p></div>
+    </div>
+  </section>
+  <p><a href={`${base}dashboard/`}>← Back to dashboard</a></p>
+</BaseLayout>

@@ -174,6 +174,14 @@ $env:PYTHONUTF8='1'
 
 The `cp` workflow drains eligible cached transcripts and candidates before selecting another controlled batch. It obeys the prioritized backlog, pacing, source-policy checks, and the block circuit breaker. Do not start a large scrape while a backlog gate is active.
 
+For the unattended/local full cycle, run the shared orchestrator from the repository root:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\run-cp.py --kb table-tennis
+```
+
+It refreshes pending work, ingests and extracts the next controlled batch, rebuilds review diagnostics, writes eligible evidence summaries, and publishes the reviewed corpus. When the configured selected backlog is empty, it discovers enabled sources and chooses the most-viewed unseen videos where view counts are available. The Windows Task Scheduler entry runs this workflow daily at 21:00 Europe/Helsinki time. For an interactive start/stop loop with live output and local budget reset, run `node scripts/processor-monitor.mjs` and open `http://127.0.0.1:4322/`.
+
 Every study or review also updates the canonical Markdown backlog, the generated local `/backlog/` view, and the relevant project documentation before it is considered complete. See [the study-to-backlog documentation contract](docs/pipeline.md#study-to-backlog-documentation-contract).
 
 Every published claim must cite real transcript segment IDs. Candidate JSON is a proposal, not public knowledge, and must be reviewed into canonical concept YAML. Spoken windows are kept short and focused; visual windows are separate and remain non-looping until a reviewer confirms that the footage actually demonstrates the concept.

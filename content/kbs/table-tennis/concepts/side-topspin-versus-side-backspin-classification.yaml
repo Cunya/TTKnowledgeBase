@@ -11,16 +11,16 @@ evidence_summary: >-
   Side-topspin versus side-backspin classification brings together several connected ideas.
   Side-topspin and side-backspin and gives the cue that forward/upward forearm motion indicates
   topspin while downward motion indicates backspin. Side-topspin from side-backspin and to train
-  each spin type separately. Sidespin-backspin and sidespin-topspin as different serve types and
-  people often find the spin blurry. Motions as side-topspin or side-backspin and the two by
-  forearm direction. A useful contrast is between sidespin-backspin and pure backspin and explains
-  that adding sidespin makes the return float more and drift unpredictably. Sidespin-underspin and
-  sidespin-topspin serves and the disguise between them. Side-spin half-high balls from back-spin
-  half-high balls and gives different handling cues for each. A useful contrast is between
-  sidespin-backspin and sidespin-topspin and links them to different racket-face shapes.
-  Additional points reinforce the same theme. Together, these principles show how the topic is
-  applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:facd5e6753ea6199969db88237572d980b6e7f09a6247e3bb79162dd4d537697"
+  each spin type separately. Motions as side-topspin or side-backspin and the two by forearm
+  direction. Side-under and side-up while training serve variations, which maps cleanly to a
+  side-topspin versus side-backspin distinction. Sidespin-underspin and sidespin-topspin serves
+  and the disguise between them. Side-spin half-high balls from back-spin half-high balls and
+  gives different handling cues for each. Side-topspin requires impact, speed, and forward pace,
+  and explicitly tells the viewer to prioritize speed over spin. Side top spin, side back spin,
+  side spin, and side underspin by trajectory and bounce behavior. Additional points reinforce the
+  same theme. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:6723376e6a1df01f9da63864860e03d3d85136ae4f0a686d249e073d6f7f1396"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -200,3 +200,36 @@ evidence:
         - KM-gOmX2AeU:00059
         - KM-gOmX2AeU:00060
         - KM-gOmX2AeU:00061
+  - id: VUCWueKYuE0-concept-serve-speed-over-spin-for-side-topspin-reviewed
+    evidence_type: explanation
+    excerpt: For side-topspin serves, speed and impact are emphasized more than prolonged brushing, because pace creates the danger and deception.
+    reason: The speaker repeatedly says side-topspin requires impact, speed, and forward pace, and explicitly tells the viewer to prioritize speed over spin.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: VUCWueKYuE0
+      start_ms: 566033
+      end_ms: 589233
+      url: https://www.youtube.com/watch?v=VUCWueKYuE0&t=566s
+      segment_ids:
+        - VUCWueKYuE0:00131
+        - VUCWueKYuE0:00132
+        - VUCWueKYuE0:00135
+        - VUCWueKYuE0:00136
+  - id: sklepyRctyI-concept-side-topspin-versus-side-backspin-classification-reviewed
+    evidence_type: explanation
+    excerpt: Classifying an incoming ball by whether the side component is combined with topspin or backspin.
+    reason: The transcript explicitly distinguishes side top spin, side back spin, side spin, and side underspin by trajectory and bounce behavior.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: sklepyRctyI
+      start_ms: 737200
+      end_ms: 765600
+      url: https://www.youtube.com/watch?v=sklepyRctyI&t=737s
+      segment_ids:
+        - sklepyRctyI:00104
+        - sklepyRctyI:00105
+        - sklepyRctyI:00106

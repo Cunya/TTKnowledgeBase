@@ -11,9 +11,10 @@ short_definition: A simple classification of incoming ball paths into backspin, 
 evidence_summary: >-
   Ball trajectory classification brings together several connected ideas. By explicitly
   introducing three ball trajectories and naming them backspin, topspin, and half-high ball, each
-  with a curve description. Together, these principles show how the topic is applied in practice
-  while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:93bca63d6b0597e47191fe08624ad6d4f5eac4426d54cdc5a973f3a2d5e5a46e"
+  with a curve description. Curve, spin, and friction as mechanisms that affect trajectory and
+  opponent control. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:8ff2338814b71b4f52d18e44913279248ab07aed37ecd849cabb49faed8b489b"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -47,3 +48,18 @@ evidence:
         - xXz9BRSdSsk:00004
         - xXz9BRSdSsk:00006
         - xXz9BRSdSsk:00007
+  - id: yF675Tey81g-concept-spin-creates-curve-and-trajectory-reviewed
+    evidence_type: explanation
+    excerpt: Using spin and friction to make the ball curve, change trajectory, and become harder to control or block.
+    reason: The speaker repeatedly notes curve, spin, and friction as mechanisms that affect trajectory and opponent control.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: yF675Tey81g
+      start_ms: 596230
+      end_ms: 610010
+      url: https://www.youtube.com/watch?v=yF675Tey81g&t=596s
+      segment_ids:
+        - yF675Tey81g:00120
+        - yF675Tey81g:00121

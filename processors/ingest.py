@@ -83,21 +83,30 @@ def discover_videos(url: str) -> list[dict]:
         "skip_download": True,
         "extract_flat": True,
         "ignoreerrors": True,
+        "nocheckcertificate": True,
     }
     with yt_dlp.YoutubeDL(options) as ydl:
         result = ydl.extract_info(url, download=False)
     entries = (result or {}).get("entries") or []
-    return [
+    videos = [
         {
             "id": entry.get("id"),
             "title": entry.get("title") or entry.get("id"),
             "url": entry.get("url")
             if str(entry.get("url", "")).startswith("http")
             else f"https://www.youtube.com/watch?v={entry.get('id')}",
+            "view_count": entry.get("view_count"),
         }
         for entry in entries
         if entry and entry.get("id")
     ]
+    return sorted(
+        videos,
+        key=lambda video: (
+            video["view_count"] is None,
+            -(int(video["view_count"]) if video["view_count"] is not None else 0),
+        ),
+    )
 
 
 def _proxy_config(options: IngestOptions):

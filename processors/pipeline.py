@@ -644,7 +644,21 @@ def auto_place_generated_concepts(navigation: dict, concepts: list[Concept]) -> 
     for concept in concepts:
         if concept.id in referenced or not (concept.generated_by and concept.generated_by.processor == "automatic_candidate_review"):
             continue
-        text = " ".join([concept.label, concept.short_definition, concept.concept_type]).lower()
+        # The evidence summary is an editorial synthesis of the moments, so it
+        # often names the actual action or context more accurately than the
+        # candidate label alone. Keep it in the placement signal to avoid
+        # assigning concepts to a broad parent from title keywords only.
+        text = " ".join(
+            filter(
+                None,
+                [
+                    concept.label,
+                    concept.short_definition,
+                    concept.evidence_summary or "",
+                    concept.concept_type,
+                ],
+            )
+        ).lower()
         best = None
         best_score = 0
         for node in nodes:

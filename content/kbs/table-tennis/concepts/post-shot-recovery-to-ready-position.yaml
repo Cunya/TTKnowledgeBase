@@ -14,9 +14,11 @@ evidence_summary: >-
   next ball. Quick recovery, not rushing, staying low, and leaning forward. Rushing happens when
   recovery is incomplete and full motion and full recovery after every shot. After serving you
   should stay focused and balanced, and when receiving the body must stay firm and loaded with
-  power. Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:467f10ad7b7a8e34b087115add894b5e3efd342ac0aaf57386e3e5173f84ffc5"
+  power. To pull the right foot back, create space after every push, and recover into position
+  before the arm drops. Blocking during the toss and then recovering close to the body with wrist
+  and finger brushing. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:88ed4a693cc0c8a44831a3f038bae445d48d8b320798a5fa72ae17906f8d3702"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -139,3 +141,33 @@ evidence:
         - rZY_SUer7Aw:00011
         - rZY_SUer7Aw:00012
         - rZY_SUer7Aw:00013
+  - id: K0eFBdIiBTQ-concept-post-shot-recovery-to-ready-position-reviewed
+    evidence_type: explanation
+    excerpt: After a push or shot, recover the feet and body back into a ready stance before the next attack decision.
+    reason: The speaker says to pull the right foot back, create space after every push, and recover into position before the arm drops.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: K0eFBdIiBTQ
+      start_ms: 32566
+      end_ms: 43933
+      url: https://www.youtube.com/watch?v=K0eFBdIiBTQ&t=32s
+      segment_ids:
+        - K0eFBdIiBTQ:00008
+        - K0eFBdIiBTQ:00009
+  - id: yF675Tey81g-concept-block-and-brush-recovery-after-serve-reviewed
+    evidence_type: demonstration
+    excerpt: A post-contact recovery pattern where the player blocks, then keeps the racket close and adds brushing action with wrist and fingers.
+    reason: The speaker demonstrates blocking during the toss and then recovering close to the body with wrist and finger brushing.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: yF675Tey81g
+      start_ms: 556290
+      end_ms: 572550
+      url: https://www.youtube.com/watch?v=yF675Tey81g&t=556s
+      segment_ids:
+        - yF675Tey81g:00114
+        - yF675Tey81g:00115

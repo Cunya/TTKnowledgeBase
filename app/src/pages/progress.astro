@@ -18,6 +18,7 @@ const generatedTotals = generatedProgress.totals;
 const generatedSource = (id: string) => generatedProgress.sources.find((source) => source.id === id) ?? {};
 const spinMasterProgress = generatedSource('free-coach-brad-han');
 const globalProgress = generatedSource('global-tt-studio');
+const xiaohanProgress = generatedSource('pingsunday-xiaohan-playlist');
 const globalInaccessibleIds = new Set(generatedProgress.members_only_ids);
 const globalCatalogVideos = globalCatalogData.videos;
 const sixthBatchVideos = sixthBatchData.videos.filter((video) => !globalPublishedIds.has(video.id) && !spinMasterVideos.some((published) => published.id === video.id));
@@ -31,6 +32,18 @@ const totalConfiguredCount = Number(generatedTotals.configured ?? spinMasterConf
 const percent = (value: number, total: number) => total ? Math.round((value / total) * 100) : 0;
 const summaryStage = (value: number, total: number) => `${value} (${percent(value, total)}%)`;
 const sourceProgress = [
+  {
+    name: String(xiaohanProgress.name ?? 'PingSunday — coach XiaoHan playlist'),
+    detail: `${xiaohanProgress.eligible ?? 0} eligible videos`,
+    stages: [
+      { label: 'Configured from playlist', value: Number(xiaohanProgress.configured ?? 0), total: Number(xiaohanProgress.discovered ?? xiaohanProgress.configured ?? 0) },
+      { label: 'Eligible', value: Number(xiaohanProgress.eligible ?? 0), total: Number(xiaohanProgress.configured ?? 0) },
+      { label: 'Ingested', value: Number(xiaohanProgress.ingested ?? 0), total: Number(xiaohanProgress.eligible ?? 0) },
+      { label: 'Extracted', value: Number(xiaohanProgress.extracted ?? 0), total: Number(xiaohanProgress.eligible ?? 0) },
+      { label: 'Fully reviewed', value: Number(xiaohanProgress.reviewed ?? 0), total: Number(xiaohanProgress.eligible ?? 0) },
+      { label: 'Published', value: Number(xiaohanProgress.published ?? 0), total: Number(xiaohanProgress.eligible ?? 0) },
+    ],
+  },
   {
     name: String(spinMasterProgress.name ?? 'TT SpinMaster'),
     detail: `${spinMasterProgress.eligible ?? spinMasterConfiguredCount} eligible videos`,
@@ -157,6 +170,7 @@ const budgetRows = budgetTaskNames.map((task) => {
     <div class="table-scroll"><table class="progress-table summary-table"><thead><tr><th>Source</th><th>Discovered</th><th>Configured</th><th>Eligible</th><th>Ingested</th><th>Extracted</th><th>Reviewed</th><th>Published</th><th>Accepted</th><th>Rejected</th><th>Evidence</th><th>Concepts</th><th>Visuals proposed</th><th>Visuals verified</th></tr></thead><tbody>
       <tr><th>TT SpinMaster<br/><small>@FreeCoachBradHan</small></th><td>{spinMasterProgress.discovered}</td><td>{summaryStage(Number(spinMasterProgress.configured), Number(spinMasterProgress.discovered))}</td><td>{summaryStage(Number(spinMasterProgress.eligible), Number(spinMasterProgress.configured))}</td><td>{summaryStage(Number(spinMasterProgress.ingested), Number(spinMasterProgress.eligible))}</td><td>{summaryStage(Number(spinMasterProgress.extracted), Number(spinMasterProgress.eligible))}</td><td>{summaryStage(Number(spinMasterProgress.reviewed), Number(spinMasterProgress.eligible))}</td><td>{summaryStage(Number(spinMasterProgress.published), Number(spinMasterProgress.eligible))}</td><td>{spinMasterProgress.accepted} + {spinMasterProgress.deferred} deferred</td><td>{spinMasterProgress.rejected}</td><td>{spinMasterProgress.evidence}</td><td>{spinMasterProgress.concepts}</td><td>{spinMasterProgress.visual_proposed}</td><td>{spinMasterProgress.visual_verified}</td></tr>
       <tr><th>GlobalTTStudio<br/><small>@GlobalTTStudio</small></th><td>{globalProgress.discovered}</td><td>{summaryStage(Number(globalProgress.configured), Number(globalProgress.discovered))}</td><td>{summaryStage(Number(globalProgress.eligible), Number(globalProgress.configured))}</td><td>{summaryStage(Number(globalProgress.ingested), Number(globalProgress.eligible))}</td><td>{summaryStage(Number(globalProgress.extracted), Number(globalProgress.eligible))}</td><td>{summaryStage(Number(globalProgress.reviewed), Number(globalProgress.eligible))}</td><td>{summaryStage(Number(globalProgress.published), Number(globalProgress.eligible))}</td><td>{globalProgress.accepted} + {globalProgress.deferred} deferred</td><td>{globalProgress.rejected}</td><td>{globalProgress.evidence}</td><td>{globalProgress.concepts}</td><td>{globalProgress.visual_proposed}</td><td>{globalProgress.visual_verified}</td></tr>
+      <tr><th>PingSunday — coach XiaoHan<br/><small>playlist-only source</small></th><td>{xiaohanProgress.discovered}</td><td>{summaryStage(Number(xiaohanProgress.configured), Number(xiaohanProgress.discovered))}</td><td>{summaryStage(Number(xiaohanProgress.eligible), Number(xiaohanProgress.configured))}</td><td>{summaryStage(Number(xiaohanProgress.ingested), Number(xiaohanProgress.eligible))}</td><td>{summaryStage(Number(xiaohanProgress.extracted), Number(xiaohanProgress.eligible))}</td><td>{summaryStage(Number(xiaohanProgress.reviewed), Number(xiaohanProgress.eligible))}</td><td>{summaryStage(Number(xiaohanProgress.published), Number(xiaohanProgress.eligible))}</td><td>{xiaohanProgress.accepted} + {xiaohanProgress.deferred} deferred</td><td>{xiaohanProgress.rejected}</td><td>{xiaohanProgress.evidence}</td><td>{xiaohanProgress.concepts}</td><td>{xiaohanProgress.visual_proposed}</td><td>{xiaohanProgress.visual_verified}</td></tr>
       <tr class="total"><th>Total configured</th><td>{generatedTotals.discovered}</td><td>{summaryStage(totalConfiguredCount, Number(generatedTotals.discovered))}</td><td>{summaryStage(Number(generatedTotals.eligible), totalConfiguredCount)}</td><td>{summaryStage(Number(generatedTotals.ingested), Number(generatedTotals.eligible))}</td><td>{summaryStage(Number(generatedTotals.extracted), Number(generatedTotals.eligible))}</td><td>{summaryStage(Number(generatedTotals.reviewed_videos), Number(generatedTotals.eligible))}</td><td>{summaryStage(Number(generatedTotals.published_videos), Number(generatedTotals.eligible))}</td><td>{generatedTotals.accepted} + {generatedTotals.deferred} deferred</td><td>{generatedTotals.rejected}</td><td>{generatedTotals.evidence}</td><td>{generatedTotals.concepts} unique</td><td>{generatedTotals.visual_proposed}</td><td>{generatedTotals.visual_verified}</td></tr>
     </tbody></table></div>
     <p class="table-note">Parenthesized percentages use the workflow denominator for that column: configured versus discovered, eligible versus configured, and downstream stages versus eligible. Concept counts overlap between sources. Proposed visual intervals remain non-looping until a reviewer watches and verifies them.</p>

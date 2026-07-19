@@ -10,17 +10,17 @@ evidence_summary: >-
   Finger-assisted brushing brings together several connected ideas. The learner to use the middle
   and index fingers to press forward and upward and to press the racket forward with force. The
   fingers generate concentrated power, should press forward and upward, and create the friction at
-  the moment of contact. The fingers and wrist are shown as active contributors to the arc, not
-  just the forearm. Using only fingers and wrist, then says fingers and wrist speed up the
-  brushing and can produce both spin and speed. To learn finger power and that faster brushing at
-  contact produces more spin. A backspin return has weight and spin and 'a slight outward release
-  of power with your fingers,' which supports finger-assisted stroke control. The invisible action
-  makes serves harder to read and notes that contact relies on finger and wrist brushing. A
-  normal-speed ball should use the full motion including fingers and wrist, and that slower balls
-  allow fuller brushing with finger and wrist action. Additional points reinforce the same theme.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:e1b35d5e7478722ddaf9278e06d639a62e5a88c79e5c6e7ed4159d66c859bbd6"
+  the moment of contact. Using only fingers and wrist, then says fingers and wrist speed up the
+  brushing and can produce both spin and speed. The fingers and thumb pressure firm up the grip,
+  apply force at contact, and keep the racket face stable, which is the finger-assisted control
+  idea. A backspin return has weight and spin and 'a slight outward release of power with your
+  fingers,' which supports finger-assisted stroke control. The invisible action makes serves
+  harder to read and notes that contact relies on finger and wrist brushing. The fingers as the
+  initial driver and the point where friction is created to generate spin. A useful contrast is
+  between arm-driven motion and fingers and wrist, saying fingers and wrist create more speed and
+  spin. Additional points reinforce the same theme. Together, these principles show how the topic
+  is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:9b28301a9e18ca59582a29bdedef2bc16652c19a5a19de17644a871c2adfc42f"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -193,3 +193,36 @@ evidence:
         - xWIrCAvkegQ:00106
         - xWIrCAvkegQ:00107
         - xWIrCAvkegQ:00108
+  - id: GOAyEFoSibE-concept-finger-assisted-brushing-reviewed
+    evidence_type: definition
+    excerpt: Using the fingers to initiate the action and create friction/spin at contact, with the arm supporting pace.
+    reason: The speaker identifies the fingers as the initial driver and the point where friction is created to generate spin.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: GOAyEFoSibE
+      start_ms: 351733
+      end_ms: 381433
+      url: https://www.youtube.com/watch?v=GOAyEFoSibE&t=351s
+      segment_ids:
+        - GOAyEFoSibE:00080
+        - GOAyEFoSibE:00084
+        - GOAyEFoSibE:00085
+  - id: yF675Tey81g-concept-finger-and-wrist-driven-explosiveness-reviewed
+    evidence_type: explanation
+    excerpt: Using fingers and wrist, rather than large arm motion, to create quick and explosive racket action.
+    reason: The speaker contrasts arm-driven motion with fingers and wrist, saying fingers and wrist create more speed and spin.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: yF675Tey81g
+      start_ms: 348580
+      end_ms: 378040
+      url: https://www.youtube.com/watch?v=yF675Tey81g&t=348s
+      segment_ids:
+        - yF675Tey81g:00075
+        - yF675Tey81g:00076
+        - yF675Tey81g:00078
+        - yF675Tey81g:00079

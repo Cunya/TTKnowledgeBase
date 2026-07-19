@@ -212,6 +212,21 @@ evidence:
       url: https://www.youtube.com/watch?v=6Xx11I8CB9M&t=304s
       segment_ids:
         - 6Xx11I8CB9M:00058
+  - id: sklepyRctyI-concept-active-block-reviewed
+    evidence_type: definition
+    excerpt: A proactive blocking action rather than a passive touch, using a controlled block to end or redirect the ball.
+    reason: The speaker explicitly says to perform an active block and actively block during the demonstration.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: sklepyRctyI
+      start_ms: 633440
+      end_ms: 648640
+      url: https://www.youtube.com/watch?v=sklepyRctyI&t=633s
+      segment_ids:
+        - sklepyRctyI:00089
+        - sklepyRctyI:00090
 relations:
   - relation_type: variation_of
     target_concept_id: concept-block-trajectory-and-placement

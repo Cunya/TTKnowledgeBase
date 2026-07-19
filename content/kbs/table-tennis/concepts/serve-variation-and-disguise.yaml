@@ -8,10 +8,12 @@ short_definition: Vary serve placement and spin so the opponent cannot settle in
 evidence_summary: >-
   Serve variation and disguise brings together several connected ideas. Not to repeat the same
   serve location or spin because the opponent adapts. Not to repeat the same disguise, not to
-  overuse one tactic, and to keep switching serves, pushes, and technical variations. Together,
-  these principles show how the topic is applied in practice while preserving the relevant
-  distinctions and constraints.
-evidence_summary_source_hash: "sha256:c8d45849aad30fe976211714f6dcea42d0e85da44dfec2b776aabd5577eb6841"
+  overuse one tactic, and to keep switching serves, pushes, and technical variations. Mixing short
+  and long serves, changing target zones, and using different serve types to disrupt the opponent.
+  Varying speed and trajectory, maintaining multiple serve sets, and saving special serves for
+  critical moments. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:8cfd727ae7d36f26653a3c6fffeb65fe937e0172baab7a3abeb50e72e6e2c612"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -60,3 +62,38 @@ evidence:
         - 0hmF0UB_Oqc:00160
         - 0hmF0UB_Oqc:00164
         - 0hmF0UB_Oqc:00166
+  - id: GOAyEFoSibE-concept-serve-variation-and-disguise-reviewed
+    evidence_type: explanation
+    excerpt: Varying serve placement, spin, and sequence to make the receive harder and reduce the opponent's ability to adapt.
+    reason: The speaker recommends mixing short and long serves, changing target zones, and using different serve types to disrupt the opponent.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: GOAyEFoSibE
+      start_ms: 98033
+      end_ms: 120900
+      url: https://www.youtube.com/watch?v=GOAyEFoSibE&t=98s
+      segment_ids:
+        - GOAyEFoSibE:00023
+        - GOAyEFoSibE:00024
+        - GOAyEFoSibE:00026
+        - GOAyEFoSibE:00027
+  - id: VUCWueKYuE0-concept-serve-variation-and-disguise-reviewed
+    evidence_type: explanation
+    excerpt: A serving strategy that varies spin, speed, trajectory, and placement, while hiding best serves for important moments.
+    reason: The speaker recommends varying speed and trajectory, maintaining multiple serve sets, and saving special serves for critical moments.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: VUCWueKYuE0
+      start_ms: 687900
+      end_ms: 715033
+      url: https://www.youtube.com/watch?v=VUCWueKYuE0&t=687s
+      segment_ids:
+        - VUCWueKYuE0:00160
+        - VUCWueKYuE0:00161
+        - VUCWueKYuE0:00162
+        - VUCWueKYuE0:00164
+        - VUCWueKYuE0:00165

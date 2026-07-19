@@ -654,6 +654,21 @@ evidence:
         - bzOU-EnMQbk:00139
         - bzOU-EnMQbk:00140
         - bzOU-EnMQbk:00141
+  - id: GOAyEFoSibE-concept-weight-transfer-through-stroke-reviewed
+    evidence_type: definition
+    excerpt: Transferring body weight during the stroke to help generate force and spin.
+    reason: The speaker directly says the serve lacks spin because weight is not being transferred and then summarizes weight transfer as a key point.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: GOAyEFoSibE
+      start_ms: 466966
+      end_ms: 489633
+      url: https://www.youtube.com/watch?v=GOAyEFoSibE&t=466s
+      segment_ids:
+        - GOAyEFoSibE:00106
+        - GOAyEFoSibE:00110
 relations:
   - relation_type: used_with
     target_concept_id: concept-loaded-legs

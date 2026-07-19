@@ -429,6 +429,69 @@ evidence:
       segment_ids:
         - 25Ohh2RJcWk:00051
         - 25Ohh2RJcWk:00053
+  - id: GOAyEFoSibE-concept-backspin-serve-under-ball-contact-reviewed
+    evidence_type: definition
+    excerpt: Contacting the lower half or bottom of the ball to produce backspin.
+    reason: The speaker explicitly says bottom or lower-middle contact imparts backspin.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: GOAyEFoSibE
+      start_ms: 632700
+      end_ms: 645900
+      url: https://www.youtube.com/watch?v=GOAyEFoSibE&t=632s
+      segment_ids:
+        - GOAyEFoSibE:00147
+        - GOAyEFoSibE:00149
+  - id: WcQLHn2Fafw-concept-backspin-serve-under-ball-contact-reviewed
+    evidence_type: definition
+    excerpt: Contacting the lower part of the ball to create heavy backspin on a push or serve-like motion.
+    reason: The transcript directly identifies bottom-half contact as the way to produce heavy backspin and links it to contacting the bottom of the ball at the end of the stroke.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: WcQLHn2Fafw
+      start_ms: 321033
+      end_ms: 346833
+      url: https://www.youtube.com/watch?v=WcQLHn2Fafw&t=321s
+      segment_ids:
+        - WcQLHn2Fafw:00074
+        - WcQLHn2Fafw:00075
+        - WcQLHn2Fafw:00078
+  - id: -iWLwSvOJ2U-concept-backspin-serve-under-ball-contact-reviewed
+    evidence_type: explanation
+    excerpt: Contacting under the ball to create or handle backspin, while recognizing that careless under-contact on receive makes the ball pop up.
+    reason: The speaker warns that contacting from below makes the ball pop up and later says for heavy backspin your hand must be lower than the ball.
+    confidence: 0.88
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: -iWLwSvOJ2U
+      start_ms: 70366
+      end_ms: 77566
+      url: https://www.youtube.com/watch?v=-iWLwSvOJ2U&t=70s
+      segment_ids:
+        - -iWLwSvOJ2U:00017
+        - -iWLwSvOJ2U:00018
+  - id: yF675Tey81g-concept-downward-pressure-and-friction-on-serve-reviewed
+    evidence_type: explanation
+    excerpt: Using downward pressure at contact to increase friction, curve the ball, and make the serve more dangerous.
+    reason: The speaker repeatedly states that more friction and downward pressure create curve, while lack of friction makes the ball flat and easy to block.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: yF675Tey81g
+      start_ms: 154220
+      end_ms: 181520
+      url: https://www.youtube.com/watch?v=yF675Tey81g&t=154s
+      segment_ids:
+        - yF675Tey81g:00027
+        - yF675Tey81g:00028
+        - yF675Tey81g:00029
+        - yF675Tey81g:00033
 relations:
   - relation_type: used_with
     target_concept_id: concept-loose-grip-backhand-friction

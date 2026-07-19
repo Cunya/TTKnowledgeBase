@@ -7,9 +7,12 @@ aliases:
 short_definition: A serve whose main objective is to generate spin, especially backspin, rather than simply to place the ball.
 evidence_summary: >-
   Backspin serve brings together several connected ideas. The key goal of a backspin serve as
-  making the ball spin. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:c520b64b695b93e64d9c020a9a2f2237efc0f11630232fadb114189c5935d69e"
+  making the ball spin. Backspin serve and how certain contact positions and forearm positions
+  create backspin. Backspin and heavy backspin serves and their receive effects. The preparation
+  as side spin racket shape, then adjusting racket angle and applying downward pressure for
+  sidespin or underspin. Together, these principles show how the topic is applied in practice
+  while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:a1ff8a08605210aa652345a4016b9636998110208b9354c2fea9e02680c2f963"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -45,3 +48,50 @@ evidence:
         - bQTenTT3bz0:00000
         - bQTenTT3bz0:00001
         - bQTenTT3bz0:00002
+  - id: GOAyEFoSibE-concept-backspin-serve-reviewed
+    evidence_type: definition
+    excerpt: A serve that imparts backspin, often produced by contacting the lower half of the ball or using an incorrect forearm angle.
+    reason: The speaker directly names backspin serve and explains how certain contact positions and forearm positions create backspin.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: GOAyEFoSibE
+      start_ms: 602766
+      end_ms: 625466
+      url: https://www.youtube.com/watch?v=GOAyEFoSibE&t=602s
+      segment_ids:
+        - GOAyEFoSibE:00139
+        - GOAyEFoSibE:00144
+  - id: -iWLwSvOJ2U-concept-backspin-serve-reviewed
+    evidence_type: definition
+    excerpt: A serve that uses backspin or heavy underspin to force a weak or mistimed receive.
+    reason: The speaker explicitly discusses backspin and heavy backspin serves and their receive effects.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: -iWLwSvOJ2U
+      start_ms: 392600
+      end_ms: 408766
+      url: https://www.youtube.com/watch?v=-iWLwSvOJ2U&t=392s
+      segment_ids:
+        - -iWLwSvOJ2U:00088
+        - -iWLwSvOJ2U:00091
+  - id: yF675Tey81g-concept-sidespin-or-underspin-serve-preparation-reviewed
+    evidence_type: definition
+    excerpt: A serve setup where the player prepares for sidespin or underspin before contact and adjusts the racket angle at the toss.
+    reason: The speaker explains the preparation as side spin racket shape, then adjusting racket angle and applying downward pressure for sidespin or underspin.
+    confidence: 0.92
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: yF675Tey81g
+      start_ms: 170760
+      end_ms: 198440
+      url: https://www.youtube.com/watch?v=yF675Tey81g&t=170s
+      segment_ids:
+        - yF675Tey81g:00032
+        - yF675Tey81g:00033
+        - yF675Tey81g:00039
+        - yF675Tey81g:00040

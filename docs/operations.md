@@ -71,6 +71,8 @@ It incorporates high-confidence matches and can create a new canonical concept w
 
 The `cp` shortcut follows the same order: finish eligible cached transcripts and candidates first; when no local work remains, continue with the next small, controlled discovery/ingestion batch. It must still obey the prioritized backlog, acquisition-policy checks, pacing limits, and block circuit breaker. A cleared local queue does not authorize bypassing an active “no large scrape” gate.
 
+When discovery supplies `view_count`, batches are ordered from most viewed to least viewed within that channel; entries without a view count are processed afterward in discovery order.
+
 For a safe Windows Task Scheduler entry point, run:
 
 ```powershell
@@ -79,7 +81,9 @@ Set-Location D:\Code\AIAssistedProjects\TTKnowledgeBase
 .\scripts\run-daily-processing.ps1 -Kb table-tennis
 ```
 
-The wrapper uses a private per-KB lock, writes `data/manifests/<kb>/daily-processing.latest.json`, and exits with code `10` when another run is active. It only runs `process-pending`; it does not scrape, commit, push, deploy, or publish unreviewed knowledge. The current local Task Scheduler registration runs daily at 21:00 Europe/Helsinki time; recreate it manually with `powershell.exe -NoProfile -ExecutionPolicy Bypass -File ...` if the workstation task is lost.
+The wrapper uses a private per-KB lock, writes `data/manifests/<kb>/daily-processing.latest.json`, and exits with code `10` when another run is active. The scheduled task now invokes the shared `scripts/run-cp.py` full-cycle orchestrator, which also acquires the next controlled batch and publishes only validated/reviewed output. It does not commit, push, deploy, or publish unreviewed knowledge. The current local Task Scheduler registration runs daily at 21:00 Europe/Helsinki time; recreate it manually with `powershell.exe -NoProfile -ExecutionPolicy Bypass -File ...` if the workstation task is lost.
+
+For an interactive local monitor, run `node scripts/processor-monitor.mjs` from the repository root and open `http://127.0.0.1:4322/`. It provides Start loop, Stop loop, and Reset budget controls and invokes the same full `scripts/run-cp.py` orchestrator as the Windows scheduler. The loop processes cached work, ingests the next configured selected batch, extracts within budget, refreshes review data, and publishes reviewed output; when that batch is empty it discovers enabled sources for the next controlled selection. It prevents overlapping child processes and displays run output, loop state, budget counters, deferred candidates, and corpus totals. Reset budget clears only the current day’s local ledger counters after confirmation; it does not change configured limits or historical days. The interval defaults to 15 minutes and can be changed in the UI. `PROCESSOR_MONITOR_KB` and `PROCESSOR_MONITOR_PORT` customize the local KB and port.
 
 The `cm` shortcut is message-only: review the current local changes and return a suggested commit message with completed features written in past tense. Do not stage files, run `git commit`, or create a commit; the operator commits manually.
 

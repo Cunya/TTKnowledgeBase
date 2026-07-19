@@ -11,9 +11,11 @@ evidence_summary: >-
   combining side spin and back spin and brushing with cutting downward for this effect. Chopping
   the lower part and striking downward at a point as the mechanism for backspin.
   Sidespin-backspin, gives its clock-face motion, and labels it side-underspin. Sidespin-backspin
-  and pure backspin or sidespin-backspin is easier to short-push. Together, these principles show
-  how the topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:c37cbc85d3bdb9e2b5db3113454d3a421fdb3bc0d211542565eae59f52847fb6"
+  and pure backspin or sidespin-backspin is easier to short-push. A sidespin-backspin serve
+  directly and it with sidespin-topspin and backhand serve errors. Side-underspin as a chopping
+  motion and labels the motion side-underspin. Together, these principles show how the topic is
+  applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:29aec4d3873c5b4b254f787b891d11dee747038ceaa271bb2de5abb8e6fca53b"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -118,3 +120,33 @@ evidence:
         - 8iEro-p2Q9c:00173
         - 8iEro-p2Q9c:00174
         - 8iEro-p2Q9c:00175
+  - id: GOAyEFoSibE-concept-sidespinbackspin-serve-reviewed
+    evidence_type: definition
+    excerpt: A serve combining sidespin and backspin, presented as a different serving option from sidespin-topspin.
+    reason: The speaker names a sidespin-backspin serve directly and contrasts it with sidespin-topspin and backhand serve errors.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: GOAyEFoSibE
+      start_ms: 688366
+      end_ms: 699066
+      url: https://www.youtube.com/watch?v=GOAyEFoSibE&t=688s
+      segment_ids:
+        - GOAyEFoSibE:00158
+        - GOAyEFoSibE:00159
+  - id: VUCWueKYuE0-concept-sidespinbackspin-serve-reviewed
+    evidence_type: definition
+    excerpt: A serve that combines sidespin with backspin/underspin, produced through a chopping action.
+    reason: The speaker explicitly describes side-underspin as a chopping motion and labels the motion side-underspin.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: VUCWueKYuE0
+      start_ms: 249000
+      end_ms: 274266
+      url: https://www.youtube.com/watch?v=VUCWueKYuE0&t=249s
+      segment_ids:
+        - VUCWueKYuE0:00056
+        - VUCWueKYuE0:00060

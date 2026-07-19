@@ -13,12 +13,14 @@ evidence_summary: >-
   effective. Not to reveal intentions and that the same starting motion can produce backspin,
   sidespin, or a fast serve, with the change happening at contact. The added element a feint and
   shows a two-part motion with a different finish. The two actions should look identical and calls
-  that the essence of the serves. The opponent must not be able to tell it is a long serve and
-  that body motion should create deception. To add fake motion and fakes at the end to make
-  returns harder and reading difficult. Disguising one serve as another and making the ball appear
-  to be one spin while behaving like another. Together, these principles show how the topic is
+  that the essence of the serves. To add fake motion and fakes at the end to make returns harder
+  and reading difficult. Disguising one serve as another and making the ball appear to be one spin
+  while behaving like another. The key is deception and that the main goal is producing two spins
+  with the same motion. To avoid telling the opponent whether it is topspin or chop, to avoid
+  unnecessary movement, and to use an initially non-deceptive motion to control the opponent.
+  Additional points reinforce the same theme. Together, these principles show how the topic is
   applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:ccf394924fbe025ef5788001ff2d12c3894d11dcfc25f7bdac9ebace91b28c7f"
+evidence_summary_source_hash: "sha256:16a98ebbf7c711b36e0da60b06d679cef1ee9fe68389caccf9d92781e7cc57eb"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -158,3 +160,35 @@ evidence:
         - rdMkkX_p7e0:00161
         - rdMkkX_p7e0:00162
         - rdMkkX_p7e0:00163
+  - id: VUCWueKYuE0-concept-serve-deception-through-identical-motion-reviewed
+    evidence_type: definition
+    excerpt: A serve tactic where different spins are disguised with nearly identical motion so the receiver cannot reliably read the serve.
+    reason: The speaker says the key is deception and that the main goal is producing two spins with the same motion.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: VUCWueKYuE0
+      start_ms: 176133
+      end_ms: 184000
+      url: https://www.youtube.com/watch?v=VUCWueKYuE0&t=176s
+      segment_ids:
+        - VUCWueKYuE0:00040
+        - VUCWueKYuE0:00041
+  - id: yF675Tey81g-concept-serve-disguise-through-limited-prep-motion-reviewed
+    evidence_type: explanation
+    excerpt: A deceptive serve principle that limits visible preparatory motion so the opponent cannot read the incoming spin or shot type.
+    reason: The speaker says to avoid telling the opponent whether it is topspin or chop, to avoid unnecessary movement, and to use an initially non-deceptive motion to control the opponent.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: yF675Tey81g
+      start_ms: 501150
+      end_ms: 526290
+      url: https://www.youtube.com/watch?v=yF675Tey81g&t=501s
+      segment_ids:
+        - yF675Tey81g:00104
+        - yF675Tey81g:00105
+        - yF675Tey81g:00106
+        - yF675Tey81g:00107

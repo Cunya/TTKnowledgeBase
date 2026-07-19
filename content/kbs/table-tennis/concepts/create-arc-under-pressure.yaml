@@ -12,9 +12,10 @@ evidence_summary: >-
   arc when flicking, including against sidespin-topspin and half-spin/no-spin balls. The arc
   appears even when there is no spin, and later that adding friction gives both power and a proper
   arc. Creating or extending an arc, especially on low balls and spinning balls, as the key to
-  avoiding errors. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:1fd3fa1c9755c2ad00d6b85ac9cdf1282d22d8b2197906db9d9a65e53cf8bf4b"
+  avoiding errors. Against fast balls you should just create the arc and brush the ball, not add
+  power. Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:6b39f3f9645d8760388d5d2dae79f33fc1c4bff81f63bc774c2748ec7d49bea0"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -102,3 +103,19 @@ evidence:
         - xXz9BRSdSsk:00055
         - xXz9BRSdSsk:00056
         - xXz9BRSdSsk:00057
+  - id: K0eFBdIiBTQ-concept-create-arc-under-pressure-reviewed
+    evidence_type: explanation
+    excerpt: When the incoming ball already has pace, the player should prioritize arc and spin rather than adding more force.
+    reason: The speaker says that against fast balls you should just create the arc and brush the ball, not add power.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: K0eFBdIiBTQ
+      start_ms: 443800
+      end_ms: 469000
+      url: https://www.youtube.com/watch?v=K0eFBdIiBTQ&t=443s
+      segment_ids:
+        - K0eFBdIiBTQ:00101
+        - K0eFBdIiBTQ:00103
+        - K0eFBdIiBTQ:00106

@@ -1262,6 +1262,54 @@ evidence:
         - eWmcldqt4io:00051
         - eWmcldqt4io:00052
         - eWmcldqt4io:00055
+  - id: K0eFBdIiBTQ-concept-control-before-power-reviewed
+    evidence_type: explanation
+    excerpt: Consistency and correct positioning come before forcing power in the stroke choice.
+    reason: The speaker directly says to make consistency the main goal and that higher-level play is about adjusting to the specific ball rather than perfect power technique.
+    confidence: 0.91
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: K0eFBdIiBTQ
+      start_ms: 111833
+      end_ms: 120533
+      url: https://www.youtube.com/watch?v=K0eFBdIiBTQ&t=111s
+      segment_ids:
+        - K0eFBdIiBTQ:00026
+        - K0eFBdIiBTQ:00027
+  - id: -iWLwSvOJ2U-concept-control-before-power-reviewed
+    evidence_type: definition
+    excerpt: Prioritizing consistency, stability, and controlled racket speed before adding power on receive.
+    reason: The speaker says to use smooth consistent speed when unsure, add power only when the spin is clear, and that serve receive is primarily about consistency.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: -iWLwSvOJ2U
+      start_ms: 124666
+      end_ms: 152900
+      url: https://www.youtube.com/watch?v=-iWLwSvOJ2U&t=124s
+      segment_ids:
+        - -iWLwSvOJ2U:00029
+        - -iWLwSvOJ2U:00030
+        - -iWLwSvOJ2U:00033
+        - -iWLwSvOJ2U:00034
+  - id: 2DXviJQOA5M-concept-control-before-power-reviewed
+    evidence_type: explanation
+    excerpt: Prioritizing stable mechanics and normal motion before adding force or exaggeration.
+    reason: The speaker advises remembering the original action, avoiding exaggeration, and playing normally before exerting force.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 2DXviJQOA5M
+      start_ms: 745840
+      end_ms: 764160
+      url: https://www.youtube.com/watch?v=2DXviJQOA5M&t=745s
+      segment_ids:
+        - 2DXviJQOA5M:00094
+        - 2DXviJQOA5M:00095
+        - 2DXviJQOA5M:00096
 relations:
   - relation_type: used_with
     target_concept_id: concept-ball-feel

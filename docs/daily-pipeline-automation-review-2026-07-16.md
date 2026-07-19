@@ -166,3 +166,7 @@ Do not use GitHub Actions for daily YouTube acquisition or Codex extraction. Pub
 ## Review conclusion
 
 The project is close to timer-capable at the individual-command level, but not at the orchestration level. The next implementation should focus on a small, auditable `daily-run` command and idempotent workset selection rather than adding more scraping capacity. Until those controls exist, continue using the documented manual/assistant-led sequence for acquisition and editorial review.
+
+## Phase 1 implementation update — 2026-07-19
+
+The Phase 1 recommendation is now implemented under the shared `scripts/run-cp.py` workflow. The local monitor and the Windows 21:00 task use the same cache-first orchestration, controlled selected/discovered batch acquisition, per-video extraction, review refresh, publication, and private `cp.latest.json` manifest. The remaining acceptance work is hardening: explicit dry-run and exit classes, stale-run recovery, and broader unattended environment checks.

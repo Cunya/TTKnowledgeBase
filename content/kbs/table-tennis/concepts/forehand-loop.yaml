@@ -789,6 +789,81 @@ evidence:
       segment_ids:
         - 8FDXnA8EO1M:00097
         - 8FDXnA8EO1M:00105
+  - id: 2WWpJEdhO9U-concept-forehand-loop-reviewed
+    evidence_type: definition
+    excerpt: A forehand topspin attack shot played from forehand side positions.
+    reason: The speaker explicitly names the technique as a topspin forehand shot.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 2WWpJEdhO9U
+      start_ms: 160
+      end_ms: 8800
+      url: https://www.youtube.com/watch?v=2WWpJEdhO9U&t=0s
+      segment_ids:
+        - 2WWpJEdhO9U:00000
+        - 2WWpJEdhO9U:00001
+  - id: vCa7A9gyOT8-concept-forehand-loop-reviewed
+    evidence_type: definition
+    excerpt: A forehand topspin loop that drops the forearm, uses an outside arc, and drives the ball forward while finishing upward.
+    reason: 'The speaker lays out the core mechanics of the forehand loop against topspin: forearm drop, outside arc, and meeting the ball properly.'
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: vCa7A9gyOT8
+      start_ms: 227400
+      end_ms: 254733
+      url: https://www.youtube.com/watch?v=vCa7A9gyOT8&t=227s
+      segment_ids:
+        - vCa7A9gyOT8:00053
+        - vCa7A9gyOT8:00057
+  - id: J7Lm5IL-ggs-concept-forehand-loop-reviewed
+    evidence_type: explanation
+    excerpt: A forehand topspin stroke used to sustain rallies and attack, with emphasis on coordinated swing, relaxation, acceleration, and recovery.
+    reason: The speaker explicitly describes the loop as a stroke requiring relaxation, acceleration, and a complete swing path.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: J7Lm5IL-ggs
+      start_ms: 347633
+      end_ms: 357966
+      url: https://www.youtube.com/watch?v=J7Lm5IL-ggs&t=347s
+      segment_ids:
+        - J7Lm5IL-ggs:00080
+        - J7Lm5IL-ggs:00081
+  - id: K0eFBdIiBTQ-concept-forehand-loop-reviewed
+    evidence_type: explanation
+    excerpt: A forehand topspin attack used here against pushed balls, especially from a prepared position.
+    reason: The speaker describes creating room to execute a loop and specifically references the forehand loop multiple times.
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: K0eFBdIiBTQ
+      start_ms: 43933
+      end_ms: 51300
+      url: https://www.youtube.com/watch?v=K0eFBdIiBTQ&t=43s
+      segment_ids:
+        - K0eFBdIiBTQ:00010
+        - K0eFBdIiBTQ:00011
+  - id: TbJCmatwqG8-concept-forehand-loop-reviewed
+    evidence_type: definition
+    excerpt: A forehand topspin stroke used to generate spin, contrasted here with a forehand attacking hit.
+    reason: The speaker directly contrasts forehand attacking with forehand looping and names the forehand loop.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: TbJCmatwqG8
+      start_ms: 899666
+      end_ms: 916766
+      url: https://www.youtube.com/watch?v=TbJCmatwqG8&t=899s
+      segment_ids:
+        - TbJCmatwqG8:00174
+        - TbJCmatwqG8:00175
 relations:
   - relation_type: used_with
     target_concept_id: concept-contact-point

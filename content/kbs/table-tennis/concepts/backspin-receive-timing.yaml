@@ -11,9 +11,12 @@ evidence_summary: >-
   descending phase and to wait until that phase for pushing. Taking the ball earlier, at the
   rising point or top of the bounce, rather than waiting too long. To wait for the ball to drop
   and then loop it back with more spin. Backspin problems to rhythm constraints, slow recovery,
-  and rushing on the next ball after backspin. Together, these principles show how the topic is
-  applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:11448c1fcdd8c510a7d2fca69c9a1f3c31d2ee22eb86072158fc8437efcaba19"
+  and rushing on the next ball after backspin. The player to wait for the ball, loop in the
+  descending phase, and wait for it to drop lower. Heavy spin gives a very small reaction window,
+  so stroke execution must be condensed and ordinary timing will fail. Together, these principles
+  show how the topic is applied in practice while preserving the relevant distinctions and
+  constraints.
+evidence_summary_source_hash: "sha256:335a2f68ed9d62a4fa3ad91a5b8b604bad0121e1afd041a44ee7ed92ce960516"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -96,3 +99,35 @@ evidence:
       segment_ids:
         - z7E2DuhsJmQ:00052
         - z7E2DuhsJmQ:00055
+  - id: K0eFBdIiBTQ-concept-backspin-receive-timing-reviewed
+    evidence_type: explanation
+    excerpt: When receiving a heavy pushed ball, wait for it to descend before looping or contacting it.
+    reason: The speaker tells the player to wait for the ball, loop in the descending phase, and wait for it to drop lower.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: K0eFBdIiBTQ
+      start_ms: 321200
+      end_ms: 349033
+      url: https://www.youtube.com/watch?v=K0eFBdIiBTQ&t=321s
+      segment_ids:
+        - K0eFBdIiBTQ:00074
+        - K0eFBdIiBTQ:00078
+        - K0eFBdIiBTQ:00081
+  - id: -iWLwSvOJ2U-concept-backspin-receive-timing-reviewed
+    evidence_type: explanation
+    excerpt: Timing a return against backspin by waiting for the right phase and adjusting to the ball's downward action instead of using ordinary timing.
+    reason: The speaker says heavy spin gives a very small reaction window, so stroke execution must be condensed and ordinary timing will fail.
+    confidence: 0.87
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: -iWLwSvOJ2U
+      start_ms: 450200
+      end_ms: 463166
+      url: https://www.youtube.com/watch?v=-iWLwSvOJ2U&t=450s
+      segment_ids:
+        - -iWLwSvOJ2U:00103
+        - -iWLwSvOJ2U:00104
+        - -iWLwSvOJ2U:00105

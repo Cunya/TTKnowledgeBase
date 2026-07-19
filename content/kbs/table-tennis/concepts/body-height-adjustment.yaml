@@ -1012,6 +1012,34 @@ evidence:
         - UzX-e54GxIo:00007
         - UzX-e54GxIo:00008
         - UzX-e54GxIo:00009
+  - id: otQ5B7u8Q2I-concept-body-height-adjustment-reviewed
+    evidence_type: explanation
+    excerpt: Lower the body position to better align with the ball and support the brushing stroke.
+    reason: The speaker says to lower the center of gravity and squat down to aim at the ball.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: otQ5B7u8Q2I
+      start_ms: 63280
+      end_ms: 72320
+      url: https://www.youtube.com/watch?v=otQ5B7u8Q2I&t=63s
+      segment_ids:
+        - otQ5B7u8Q2I:00008
+  - id: tQ9LEV9f2IU-concept-body-height-adjustment-reviewed
+    evidence_type: explanation
+    excerpt: Lowering the body or stance to maintain an effective hitting height.
+    reason: The speaker says the key is to lower the stance and shows a downward shift in center of gravity before continuing forward.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: tQ9LEV9f2IU
+      start_ms: 383760
+      end_ms: 394560
+      url: https://www.youtube.com/watch?v=tQ9LEV9f2IU&t=383s
+      segment_ids:
+        - tQ9LEV9f2IU:00051
 relations:
   - relation_type: used_with
     target_concept_id: concept-contact-point

@@ -990,6 +990,36 @@ evidence:
         - pIu3jfM0C6k:00005
         - pIu3jfM0C6k:00009
         - pIu3jfM0C6k:00010
+  - id: ExJnwgcKEsU-concept-post-serve-recovery-reviewed
+    evidence_type: explanation
+    excerpt: The recovery action immediately after serving, including foot movement, body turn, and ready-position preparation based on likely return quality and location.
+    reason: Explains recovery as a swing-out motion with right leg turn, left foot stepping back, and maintaining table distance.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ExJnwgcKEsU
+      start_ms: 609733
+      end_ms: 624333
+      url: https://www.youtube.com/watch?v=ExJnwgcKEsU&t=609s
+      segment_ids:
+        - ExJnwgcKEsU:00132
+        - ExJnwgcKEsU:00135
+  - id: eIsYt1sCPRI-concept-post-serve-recovery-reviewed
+    evidence_type: explanation
+    excerpt: After serving, you should recover first rather than commit forward immediately, so you are prepared for a long return or a half-long ball.
+    reason: Explicitly instructs the player to recover to ready position after serving before engaging the next ball.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: eIsYt1sCPRI
+      start_ms: 330433
+      end_ms: 347500
+      url: https://www.youtube.com/watch?v=eIsYt1sCPRI&t=330s
+      segment_ids:
+        - eIsYt1sCPRI:00069
+        - eIsYt1sCPRI:00071
 relations:
   - relation_type: used_with
     target_concept_id: concept-short-serve-third-ball-attack

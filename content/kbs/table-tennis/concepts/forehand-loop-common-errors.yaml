@@ -198,6 +198,21 @@ evidence:
         - 5x1wVIb3Hog:00094
         - 5x1wVIb3Hog:00096
         - 5x1wVIb3Hog:00097
+  - id: dJJtJQvuwOY-concept-forehand-loop-common-errors-reviewed
+    evidence_type: mistake
+    excerpt: Common faults in looping include a vertical-only stroke, insufficient forward drive, and trying to force power too early.
+    reason: The speaker names vertical hitting and tension as reasons the player cannot generate spin or power.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: dJJtJQvuwOY
+      start_ms: 640800
+      end_ms: 668700
+      url: https://www.youtube.com/watch?v=dJJtJQvuwOY&t=640s
+      segment_ids:
+        - dJJtJQvuwOY:00086
+        - dJJtJQvuwOY:00087
 relations:
   - relation_type: corrects
     target_concept_id: concept-forehand-loop

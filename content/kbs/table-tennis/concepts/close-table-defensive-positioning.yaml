@@ -13,9 +13,14 @@ evidence_summary: >-
   advice to lower the stance and prepare professionally before serve supports close-table
   readiness and defensive positioning. Not to stay inside the table, but also not to retreat
   backward immediately after pushing, which is about close-table defensive positioning and
-  recovery balance. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:c7cadb31eefec2d33091cf9e3632d5f44bfc80f0f1c0775b49ab78c447966770"
+  recovery balance. Says to stand closer against pips and not back up to scoop or lift the ball.
+  Repeatedly emphasized as key to explosiveness and threat, across forehand/backhand and straight
+  shots. Closeness to the body makes the shot more explosive and repeatedly instructs to avoid
+  extending the hand or arm too far. Many balls are played near the table edge and explicitly
+  recommends staying closer to the table for receiving and blocking. Together, these principles
+  show how the topic is applied in practice while preserving the relevant distinctions and
+  constraints.
+evidence_summary_source_hash: "sha256:66cc8348c1fdffc838d5d8546ddfed96c3593104dc18ac7e7584488da2920eaa"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -103,3 +108,65 @@ evidence:
         - wpaKC8pALyQ:00047
         - wpaKC8pALyQ:00048
         - wpaKC8pALyQ:00049
+  - id: ExJnwgcKEsU-concept-close-table-defensive-positioning-reviewed
+    evidence_type: explanation
+    excerpt: Stay close enough to the table to handle dead, short, or blocking returns without getting jammed or needing to back up excessively.
+    reason: Says to stand closer against pips and not back up to scoop or lift the ball.
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ExJnwgcKEsU
+      start_ms: 702133
+      end_ms: 724500
+      url: https://www.youtube.com/watch?v=ExJnwgcKEsU&t=702s
+      segment_ids:
+        - ExJnwgcKEsU:00157
+        - ExJnwgcKEsU:00160
+        - ExJnwgcKEsU:00161
+  - id: yF675Tey81g-concept-keep-racket-close-to-body-in-serve-reviewed
+    evidence_type: explanation
+    excerpt: A serve mechanic that keeps the racket and hand near the body to increase explosiveness and disguise.
+    reason: Repeatedly emphasized as key to explosiveness and threat, across forehand/backhand and straight shots.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: yF675Tey81g
+      start_ms: 64020
+      end_ms: 89800
+      url: https://www.youtube.com/watch?v=yF675Tey81g&t=64s
+      segment_ids:
+        - yF675Tey81g:00011
+        - yF675Tey81g:00012
+        - yF675Tey81g:00014
+  - id: yF675Tey81g-concept-forehand-and-backhand-close-to-body-explosiveness-reviewed
+    evidence_type: explanation
+    excerpt: Keeping the racket close to the body increases shot explosiveness in both forehand and backhand actions.
+    reason: The speaker explicitly says closeness to the body makes the shot more explosive and repeatedly instructs to avoid extending the hand or arm too far.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: yF675Tey81g
+      start_ms: 309160
+      end_ms: 319360
+      url: https://www.youtube.com/watch?v=yF675Tey81g&t=309s
+      segment_ids:
+        - yF675Tey81g:00068
+        - yF675Tey81g:00069
+  - id: cSxeCkiMFFI-concept-close-table-defensive-positioning-reviewed
+    evidence_type: explanation
+    excerpt: Maintaining a position close to the table for quick defensive or receive actions rather than retreating.
+    reason: The speaker says many balls are played near the table edge and explicitly recommends staying closer to the table for receiving and blocking.
+    confidence: 0.86
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: cSxeCkiMFFI
+      start_ms: 166960
+      end_ms: 183840
+      url: https://www.youtube.com/watch?v=cSxeCkiMFFI&t=166s
+      segment_ids:
+        - cSxeCkiMFFI:00021
+        - cSxeCkiMFFI:00022

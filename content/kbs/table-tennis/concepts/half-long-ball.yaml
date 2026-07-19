@@ -11,9 +11,11 @@ evidence_summary: >-
   half-long balls, while half-way balls will go long. A shot that looks like a short push but
   whose high point is already deep, and the ball half-bounces out. The situation as half-long,
   clarifies it is not full long, and labels it as a half-long (half-table) ball. Balls that go
-  long after one bounce and names them half-long balls. Together, these principles show how the
-  topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:8f006d1391f092dfe66398f70b7bfb0a44a5e922b7bebc0dabc0e656754ced19"
+  long after one bounce and names them half-long balls. Directly defines the half-long ball.
+  Connects mastery of half-long balls with taking initiative and notes that falling-point contact
+  reflects slower anticipation and footwork. Together, these principles show how the topic is
+  applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:6711ff01467fd6a1b3a236b320d7f22e1c028e78aa322d6379bbef17dbfc1365"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -113,3 +115,32 @@ evidence:
         - lcp99UuLuus:00027
         - lcp99UuLuus:00028
         - lcp99UuLuus:00029
+  - id: eIsYt1sCPRI-concept-half-long-ball-reviewed
+    evidence_type: definition
+    excerpt: A ball that bounces once on your side and then just goes over the end line, often requiring active initiative rather than passive play.
+    reason: Directly defines the half-long ball.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: eIsYt1sCPRI
+      start_ms: 15166
+      end_ms: 19833
+      url: https://www.youtube.com/watch?v=eIsYt1sCPRI&t=15s
+      segment_ids:
+        - eIsYt1sCPRI:00003
+  - id: eIsYt1sCPRI-concept-half-long-ball-reviewed-25c940a2
+    evidence_type: explanation
+    excerpt: Choosing the correct response to a half-long ball based on location, timing, and position, rather than defaulting to passive play or full-power hitting.
+    reason: Connects mastery of half-long balls with taking initiative and notes that falling-point contact reflects slower anticipation and footwork.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: eIsYt1sCPRI
+      start_ms: 52433
+      end_ms: 63200
+      url: https://www.youtube.com/watch?v=eIsYt1sCPRI&t=52s
+      segment_ids:
+        - eIsYt1sCPRI:00012
+        - eIsYt1sCPRI:00013

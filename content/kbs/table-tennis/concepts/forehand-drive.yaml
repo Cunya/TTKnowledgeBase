@@ -344,6 +344,37 @@ evidence:
         - aVdePPUaVP8:00017
         - aVdePPUaVP8:00018
         - aVdePPUaVP8:00019
+  - id: GOAyEFoSibE-concept-forehand-drive-reviewed
+    evidence_type: example
+    excerpt: A basic forehand driving motion used as a motion template that can be adapted into serves.
+    reason: The speaker says to toss and hit a simple forehand drive, then adapt that motion into a hook or left-sidespin serve.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: GOAyEFoSibE
+      start_ms: 543466
+      end_ms: 551500
+      url: https://www.youtube.com/watch?v=GOAyEFoSibE&t=543s
+      segment_ids:
+        - GOAyEFoSibE:00125
+        - GOAyEFoSibE:00126
+  - id: vCa7A9gyOT8-concept-forehand-drive-reviewed
+    evidence_type: definition
+    excerpt: A forehand drive built from body-led motion, a controlled backswing and follow-through, and a forward contact with an upward finish.
+    reason: The speaker introduces the forehand drive and defines its core mechanics as body-led arm action and a drive-and-snap feeling.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: vCa7A9gyOT8
+      start_ms: 6466
+      end_ms: 36366
+      url: https://www.youtube.com/watch?v=vCa7A9gyOT8&t=6s
+      segment_ids:
+        - vCa7A9gyOT8:00002
+        - vCa7A9gyOT8:00003
+        - vCa7A9gyOT8:00008
 relations:
   - relation_type: contrasts_with
     target_concept_id: concept-forehand-loop

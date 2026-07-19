@@ -372,6 +372,22 @@ evidence:
         - U-z4PamhiUE:00218
         - U-z4PamhiUE:00219
         - U-z4PamhiUE:00220
+  - id: WcQLHn2Fafw-concept-push-rally-strategy-reviewed
+    evidence_type: explanation
+    excerpt: Choosing push length, speed, and spin based on the opponent's stroke style and position to control the rally before a loop is initiated.
+    reason: The transcript frames push choice as a strategic response to different looper types and explicitly says pushes need variation.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: WcQLHn2Fafw
+      start_ms: 14100
+      end_ms: 36133
+      url: https://www.youtube.com/watch?v=WcQLHn2Fafw&t=14s
+      segment_ids:
+        - WcQLHn2Fafw:00004
+        - WcQLHn2Fafw:00005
+        - WcQLHn2Fafw:00007
 relations:
   - relation_type: used_with
     target_concept_id: concept-push-variations

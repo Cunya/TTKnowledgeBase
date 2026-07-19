@@ -465,6 +465,39 @@ evidence:
       segment_ids:
         - vxNq1b0J0bU:00059
         - vxNq1b0J0bU:00060
+  - id: VUCWueKYuE0-concept-sidespin-topspin-serve-reviewed
+    evidence_type: definition
+    excerpt: A serve that combines sidespin with topspin, created with a brushing or push-and-brush motion and often emphasizing speed and impact.
+    reason: The speaker identifies side-topspin as the brushing version and later emphasizes speed and impact for it.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: VUCWueKYuE0
+      start_ms: 267500
+      end_ms: 287366
+      url: https://www.youtube.com/watch?v=VUCWueKYuE0&t=267s
+      segment_ids:
+        - VUCWueKYuE0:00060
+        - VUCWueKYuE0:00061
+        - VUCWueKYuE0:00064
+  - id: WcQLHn2Fafw-concept-sidespin-topspin-serve-reviewed
+    evidence_type: demonstration
+    excerpt: A serve or return motion that combines sidespin and topspin-like action, often by reusing the serve motion to disguise the return and make the opponent misread it.
+    reason: The speaker demonstrates a sidespin-topspin push/return using a serve-like motion and explains its awkward attack outcome.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: WcQLHn2Fafw
+      start_ms: 504600
+      end_ms: 533500
+      url: https://www.youtube.com/watch?v=WcQLHn2Fafw&t=504s
+      segment_ids:
+        - WcQLHn2Fafw:00113
+        - WcQLHn2Fafw:00115
+        - WcQLHn2Fafw:00117
+        - WcQLHn2Fafw:00118
 relations:
   - relation_type: used_with
     target_concept_id: concept-short-serve-third-ball-attack

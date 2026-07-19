@@ -11,9 +11,11 @@ evidence_summary: >-
   spin. To follow the spin's direction and send the ball back along its path to neutralize the
   spin. Borrowing power from the ball's rise or fall and combining it with the player's own
   effort. To borrow the opponent's power and use combined force while making very small movements.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:93bd2c36b31b51c60ca3fa1dd452474177dc8bfda0c71279e1e411b1e8e6b772"
+  Against a fast push you can use its pace and that the opponent has already supplied the power.
+  Using the ball's existing friction/pressure to make the loop work, which is effectively
+  borrowing incoming force. Together, these principles show how the topic is applied in practice
+  while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:9ad39dd06b71df9f280d558d291ef2cfca892ec056475dc2fa0f4f832b0e35c5"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -117,3 +119,33 @@ evidence:
         - jhAaEbQ9ytM:00047
         - jhAaEbQ9ytM:00048
         - jhAaEbQ9ytM:00049
+  - id: K0eFBdIiBTQ-concept-borrow-incoming-force-reviewed
+    evidence_type: explanation
+    excerpt: Use the pace of a fast incoming ball instead of generating all the power yourself.
+    reason: The speaker says that against a fast push you can use its pace and that the opponent has already supplied the power.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: K0eFBdIiBTQ
+      start_ms: 167100
+      end_ms: 175700
+      url: https://www.youtube.com/watch?v=K0eFBdIiBTQ&t=167s
+      segment_ids:
+        - K0eFBdIiBTQ:00038
+        - K0eFBdIiBTQ:00039
+  - id: dJJtJQvuwOY-concept-borrow-incoming-force-reviewed
+    evidence_type: explanation
+    excerpt: Use the incoming ball's momentum and spin as part of your own stroke rather than trying to create everything from scratch.
+    reason: The speaker describes using the ball's existing friction/pressure to make the loop work, which is effectively borrowing incoming force.
+    confidence: 0.84
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: dJJtJQvuwOY
+      start_ms: 28033
+      end_ms: 44766
+      url: https://www.youtube.com/watch?v=dJJtJQvuwOY&t=28s
+      segment_ids:
+        - dJJtJQvuwOY:00002
+        - dJJtJQvuwOY:00003

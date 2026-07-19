@@ -1,0 +1,119 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import progressData from '../data/generated/table-tennis-progress.json';
+
+const progress = progressData as { sources: Array<{ id: string; name: string; url: string; discovered: number; configured: number; ingested: number; evidence: number; concepts: number }> };
+const base = import.meta.env.BASE_URL;
+const candidates = progress.sources
+  .map((source) => ({
+    ...source,
+    score: Math.round((source.concepts / Math.max(1, progress.sources.reduce((total, item) => total + item.concepts, 0))) * 100),
+    reason: source.id === 'global-tt-studio'
+      ? 'Adds a second instructional source and broadens coverage beyond the primary channel.'
+      : 'Primary source with the largest existing evidence base and broad technique coverage.',
+  }))
+  .sort((a, b) => b.evidence - a.evidence);
+const checkedRecommendations = [
+  {
+    name: 'PingSkills',
+    focus: 'Beginner fundamentals, drills, technique, tactics, and psychology',
+    basis: 'Established coaching resource with broad instructional coverage; verify current YouTube channel and transcript availability before ingestion.',
+    url: 'https://www.pingskills.com/',
+  },
+  {
+    name: 'Tom Lodziak Table Tennis Coaching',
+    focus: 'Technique, coaching lessons, training, and match improvement',
+    basis: 'Professional coach with an active instructional video channel and supporting coaching site.',
+    url: 'https://www.tabletenniscoach.me.uk/',
+  },
+  {
+    name: 'EmRatThich Table Tennis Coach',
+    focus: 'Technique, tactics, equipment, and Chinese-style loop instruction',
+    basis: 'Dedicated table-tennis coaching creator with a stated focus on free instructional videos.',
+    url: 'https://www.patreon.com/emratthich/about',
+  },
+];
+const recommendations = [
+  {
+    name: 'TableTennisDaily',
+    focus: 'Technique, tactics, coaching lessons, and structured player development',
+    basis: 'Established table-tennis platform with an official YouTube channel and a dedicated coaching academy.',
+    url: 'https://www.youtube.com/@TableTennisDaily/videos',
+  },
+  {
+    name: 'eBaTT — Eli Baraty Academy of Table Tennis',
+    focus: 'Performance coaching, technique, tactics, mindset, and physical preparation',
+    basis: 'Professional table-tennis academy led by coach Eli Baraty; verify the public video catalog and transcript availability.',
+    url: 'https://ebatt.co.uk/',
+  },
+  {
+    name: 'Ti Long',
+    focus: 'Technique development and practical improvement for amateur players',
+    basis: 'Frequently cited as an instructional table-tennis channel; verify creator identity, content rights, and source consistency.',
+    url: 'https://www.youtube.com/results?search_query=Ti+Long+table+tennis',
+  },
+];
+---
+
+<BaseLayout title="Source discovery" description="Local source discovery workspace for the table-tennis knowledge base.">
+  <section class="page-intro">
+    <div class="eyebrow">Local operator workspace</div>
+    <h1>Discover source channels</h1>
+    <p>Rank and inspect YouTube channels before adding them to the table-tennis knowledge base. This page does not automatically authorize, ingest, or publish a source.</p>
+    <div class="dashboard-meta"><span>{candidates.length} registered channels</span><span>KB: table-tennis</span><span>Selection remains operator-controlled</span></div>
+  </section>
+
+  <section class="dashboard-section">
+    <div class="section-kicker">Checked history</div>
+    <h2>Previously checked candidates</h2>
+    <p>These candidates were reviewed as source possibilities and remain available for future reconsideration; checking does not mean they were approved or ingested.</p>
+    <div class="dashboard-index">
+      {checkedRecommendations.map((source, index) => <article class="dashboard-index-row">
+        <span class="dashboard-index-number">✓{index + 1}</span>
+        <span class="dashboard-index-copy"><strong>{source.name}</strong><small>{source.focus}</small></span>
+        <span class="dashboard-index-metric">Checked · not automatically approved</span>
+        <a href={source.url} target="_blank" rel="noreferrer">Reopen source ↗</a>
+      </article>)}
+    </div>
+  </section>
+
+  <section class="dashboard-section">
+    <div class="section-kicker">Current recommendations</div>
+    <h2>Channels with source value</h2>
+    <div class="dashboard-index">
+      {candidates.map((source, index) => <article class="dashboard-index-row">
+        <span class="dashboard-index-number">{String(index + 1).padStart(2, '0')}</span>
+        <span class="dashboard-index-copy"><strong>{source.name}</strong><small>{source.reason}</small></span>
+        <span class="dashboard-index-metric">{source.evidence} moments · {source.concepts} concepts · {source.configured}/{source.discovered} configured <b>{source.score}%</b></span>
+        <a href={source.url} target="_blank" rel="noreferrer">Open channel ↗</a>
+      </article>)}
+    </div>
+  </section>
+
+  <section class="dashboard-section">
+    <div class="section-kicker">Recommended candidates</div>
+    <h2>Channels to investigate next</h2>
+    <p>These are research candidates, not approved sources. They were surfaced from external coaching references and still require channel identity, rights/acquisition, availability, and transcript-quality checks.</p>
+    <div class="dashboard-index">
+      {recommendations.map((source, index) => <article class="dashboard-index-row">
+        <span class="dashboard-index-number">R{index + 1}</span>
+        <span class="dashboard-index-copy"><strong>{source.name}</strong><small>{source.focus}</small></span>
+        <span class="dashboard-index-metric">{source.basis}</span>
+        <a href={source.url} target="_blank" rel="noreferrer">Inspect source ↗</a>
+      </article>)}
+    </div>
+  </section>
+
+  <section class="dashboard-section dashboard-boundary">
+    <div class="section-kicker">Find another channel</div>
+    <h2>Search by KB coverage</h2>
+    <p>Use the taxonomy terms below when looking for a creator whose lessons fill a coverage gap. Review rights, availability, source quality, and transcript access before adding a channel to <code>sources.yaml</code>.</p>
+    <div class="dashboard-boundary-grid">
+      <div><strong>Technique terms</strong><p>forehand loop · backhand flick · serve receive · push · block · footwork · spin</p></div>
+      <div><strong>Review gate</strong><p>Prefer an identifiable channel with sustained instructional content, public videos, useful demonstrations, and a clear acquisition basis.</p></div>
+    </div>
+    <p><a href={`https://www.youtube.com/results?search_query=${encodeURIComponent('table tennis coaching forehand backhand serve receive footwork')}`} target="_blank" rel="noreferrer">Open a YouTube topic search ↗</a></p>
+  </section>
+
+  <p><a href={`${base}dashboard/`}>← Back to dashboard</a></p>
+</BaseLayout>

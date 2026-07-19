@@ -19,6 +19,8 @@ This project is a **local, operator-run publishing pipeline**, not a website tha
 | Publishing | Python validates and sanitizes the reviewed corpus, then copies only allowlisted data into the Astro public folder. | Run the publish command after review. |
 | Site build | Astro generates static concept, video, search, and KB pages. | Preview locally and deploy the generated site through GitHub Pages. |
 
+The repeatable unattended path is `scripts/run-cp.py --kb <id>`. It drains eligible cached work first, then processes a small configured selection; when that selection is exhausted, it discovers enabled catalogs and continues with the highest-viewed unseen videos available under the source policy. The same entry point is used by the Windows 21:00 scheduled task and by the local monitor at `http://127.0.0.1:4322/`. The monitor can start or stop the loop, show live output, and reset only the current day's private local budget ledger.
+
 ## Study-to-backlog documentation contract
 
 An analysis or study is not complete when its Markdown report is written. The result must be carried through the planning and operator surfaces:

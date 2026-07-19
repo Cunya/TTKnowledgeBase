@@ -1126,6 +1126,45 @@ evidence:
         - KM-gOmX2AeU:00177
         - KM-gOmX2AeU:00179
         - KM-gOmX2AeU:00180
+  - id: 8AuzTZTmrf4-concept-relax-then-accelerate-at-contact-reviewed
+    evidence_type: explanation
+    excerpt: Delay the forward-force phase until the brushing/friction phase is complete, then accelerate through the ball.
+    reason: The speaker says to wait until friction has passed and only then apply forward force, warning that forcing too early increases net errors.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8AuzTZTmrf4
+      start_ms: 253519
+      end_ms: 280000
+      url: https://www.youtube.com/watch?v=8AuzTZTmrf4&t=253s
+      segment_ids:
+        - 8AuzTZTmrf4:00096
+        - 8AuzTZTmrf4:00097
+        - 8AuzTZTmrf4:00098
+        - 8AuzTZTmrf4:00099
+        - 8AuzTZTmrf4:00100
+        - 8AuzTZTmrf4:00101
+        - 8AuzTZTmrf4:00102
+        - 8AuzTZTmrf4:00103
+        - 8AuzTZTmrf4:00104
+        - 8AuzTZTmrf4:00105
+  - id: J7Lm5IL-ggs-concept-relax-then-accelerate-at-contact-reviewed
+    evidence_type: definition
+    excerpt: Keep the backswing relaxed and only tighten or accelerate at the instant of the stroke contact.
+    reason: The speaker says both recovery methods require relaxation and that the crucial point is relaxation and acceleration.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: J7Lm5IL-ggs
+      start_ms: 293033
+      end_ms: 307533
+      url: https://www.youtube.com/watch?v=J7Lm5IL-ggs&t=293s
+      segment_ids:
+        - J7Lm5IL-ggs:00066
+        - J7Lm5IL-ggs:00067
+        - J7Lm5IL-ggs:00068
 relations:
   - relation_type: used_with
     target_concept_id: concept-forehand-loop-timing
