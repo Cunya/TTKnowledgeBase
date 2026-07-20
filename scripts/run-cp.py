@@ -19,8 +19,16 @@ def cmd(kb: str, *args: str) -> list[str]:
 
 def run(name: str, args: list[str], report: dict) -> int:
     print(f"\n=== {name} ===", flush=True)
-    result = subprocess.run(args, cwd=ROOT, text=True)
-    report.setdefault("stages", []).append({"name": name, "exit_code": result.returncode})
+    result = subprocess.run(args, cwd=ROOT, text=True, capture_output=True)
+    output = "\n".join(part for part in (result.stdout, result.stderr) if part).strip()
+    if output:
+        print(output, flush=True)
+    report.setdefault("stages", []).append({
+        "name": name,
+        "exit_code": result.returncode,
+        "output": output[-4000:],
+        "exit_class": "success" if result.returncode == 0 else "stage_failed",
+    })
     return result.returncode
 
 def selected_batch(kb: str, limit: int) -> list[dict]:
@@ -41,26 +49,26 @@ def main() -> int:
     try:
         status = run("process-pending before acquisition", cmd(args.kb, "process-pending"), report)
         if status not in (0, 2):
-            raise RuntimeError(f"cached triage failed: {status}")
+            raise RuntimeError(f"cached triage failed (exit {status}; see stage output)")
         batch = selected_batch(args.kb, args.batch_size)
         report["selected_batch"] = [{"id": x["id"], "title": x.get("title", "")} for x in batch]
         if batch:
             urls = [f"https://www.youtube.com/watch?v={quote(str(x['id']))}" for x in batch]
             status = run("ingest selected batch", cmd(args.kb, "ingest", *urls), report)
             if status not in (0, 1):
-                raise RuntimeError(f"ingest failed: {status}")
+                raise RuntimeError(f"ingest failed (exit {status}; see stage output)")
             for item in batch:
                 if (ROOT / "data" / "normalized" / args.kb / f"{item['id']}.json").exists():
                     status = run(f"extract {item['id']}", cmd(args.kb, "extract-concepts", "--video-id", str(item["id"])), report)
                     if status not in (0, 2):
-                        raise RuntimeError(f"extraction failed: {status}")
+                        raise RuntimeError(f"extraction failed (exit {status}; see stage output)")
         elif not args.no_discover_when_empty:
             discovered: list[dict] = []
             for source in (read_yaml(ROOT / "config" / "kbs" / args.kb / "sources.yaml") or {}).get("sources", []):
                 if source.get("enabled"):
                     status = run(f"discover {source['id']}", cmd(args.kb, "discover", str(source["url"])), report)
                     if status != 0:
-                        raise RuntimeError(f"discovery failed: {status}")
+                        raise RuntimeError(f"discovery failed (exit {status}; see stage output)")
                     playlist_id = parse_qs(urlparse(str(source["url"])).query).get("list", [None])[0]
                     filename = f"discovered-{playlist_id}.json" if playlist_id else "discovered-videos.json"
                     manifest = ROOT / "data" / "manifests" / args.kb / filename
@@ -81,20 +89,20 @@ def main() -> int:
                 urls = [str(x.get("url") or f"https://www.youtube.com/watch?v={quote(str(x['id']))}") for x in batch]
                 status = run("ingest discovered batch", cmd(args.kb, "ingest", *urls), report)
                 if status not in (0, 1):
-                    raise RuntimeError(f"ingest failed: {status}")
+                    raise RuntimeError(f"ingest failed (exit {status}; see stage output)")
                 for item in batch:
                     if (normalized / f"{item['id']}.json").exists():
                         status = run(f"extract {item['id']}", cmd(args.kb, "extract-concepts", "--video-id", str(item["id"])), report)
                         if status not in (0, 2):
-                            raise RuntimeError(f"extraction failed: {status}")
+                            raise RuntimeError(f"extraction failed (exit {status}; see stage output)")
         for name, stage in (("process-pending after extraction", ("process-pending",)), ("build review queue", ("build-review-queue",)), ("refresh summaries", ("build-evidence-summaries", "--write")), ("publish reviewed corpus", ("publish",))):
             status = run(name, cmd(args.kb, *stage), report)
             if status not in (0, 2):
-                raise RuntimeError(f"{name} failed: {status}")
+                raise RuntimeError(f"{name} failed (exit {status}; see stage output)")
         report["status"] = "completed"
         return 0
     except Exception as error:
-        report.update(status="stopped", error=str(error))
+        report.update(status="stopped", exit_class="stage_failed", error=str(error))
         print(f"cp stopped safely: {error}", file=sys.stderr)
         return 1
     finally:

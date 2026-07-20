@@ -1139,6 +1139,21 @@ evidence:
       segment_ids:
         - TtrTmkMdEzo:00123
         - TtrTmkMdEzo:00124
+  - id: rPrv4iWdE4w-concept-body-height-adjustment-reviewed
+    evidence_type: explanation
+    excerpt: Lowering the body or center of gravity to improve visibility, stability, and power generation during serve or attack.
+    reason: The speaker repeatedly instructs keeping the body low, lowering the center of gravity, and notes that the neck lowers the upper body while generating power.
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: rPrv4iWdE4w
+      start_ms: 671533
+      end_ms: 684833
+      url: https://www.youtube.com/watch?v=rPrv4iWdE4w&t=671s
+      segment_ids:
+        - rPrv4iWdE4w:00129
+        - rPrv4iWdE4w:00130
 relations:
   - relation_type: used_with
     target_concept_id: concept-contact-point

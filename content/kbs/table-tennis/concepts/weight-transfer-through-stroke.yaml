@@ -669,6 +669,21 @@ evidence:
       segment_ids:
         - GOAyEFoSibE:00106
         - GOAyEFoSibE:00110
+  - id: HlTqPv-MpGI-concept-weight-transfer-through-stroke-reviewed
+    evidence_type: explanation
+    excerpt: Shifting body weight during stroke execution to improve reach, stability, and effectiveness.
+    reason: The speaker says 70% of weight on the left leg makes the forehand stance more agile and that a slight weight shift helps cover the ball.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: HlTqPv-MpGI
+      start_ms: 41466
+      end_ms: 48100
+      url: https://www.youtube.com/watch?v=HlTqPv-MpGI&t=41s
+      segment_ids:
+        - HlTqPv-MpGI:00005
+        - HlTqPv-MpGI:00006
 relations:
   - relation_type: used_with
     target_concept_id: concept-loaded-legs

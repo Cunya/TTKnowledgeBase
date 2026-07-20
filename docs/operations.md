@@ -148,3 +148,4 @@ python -m processors.cli ingest --kb table-tennis --allow-audio-download --confi
 ```
 
 Both flags are mandatory. Audio is downloaded into a temporary directory, transcribed locally, and removed when the operation exits. Do not use this path without authorization to download and process the source.
+Each completed monitor run records the child exit code, outcome, reason, and bounded stage output in the private `cp.latest.json` manifest. Failed runs expose a consecutive-failure retry counter; a successful run resets it.

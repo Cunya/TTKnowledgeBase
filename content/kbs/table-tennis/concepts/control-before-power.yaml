@@ -1373,6 +1373,39 @@ evidence:
         - mpCV9-Cc1HE:00077
         - mpCV9-Cc1HE:00078
         - mpCV9-Cc1HE:00079
+  - id: TYMU3wQ3-sw-concept-control-before-power-reviewed
+    evidence_type: explanation
+    excerpt: In pressured or low-quality situations, prioritize stability, rhythm, and control rather than forcing power too early.
+    reason: The speaker says to prioritize stability when the power point is hard to find and to establish a steady rhythm.
+    confidence: 0.87
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: TYMU3wQ3-sw
+      start_ms: 835800
+      end_ms: 860400
+      url: https://www.youtube.com/watch?v=TYMU3wQ3-sw&t=835s
+      segment_ids:
+        - TYMU3wQ3-sw:00197
+        - TYMU3wQ3-sw:00199
+        - TYMU3wQ3-sw:00200
+        - TYMU3wQ3-sw:00202
+  - id: Whmhzk845aA-concept-control-before-power-reviewed
+    evidence_type: explanation
+    excerpt: Prioritizing stability, table safety, and proper decision-making before adding full force.
+    reason: The coach explicitly advises prioritizing quality and table safety over force in crucial moments like 9-9.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Whmhzk845aA
+      start_ms: 558466
+      end_ms: 581466
+      url: https://www.youtube.com/watch?v=Whmhzk845aA&t=558s
+      segment_ids:
+        - Whmhzk845aA:00147
+        - Whmhzk845aA:00149
+        - Whmhzk845aA:00153
 relations:
   - relation_type: used_with
     target_concept_id: concept-ball-feel

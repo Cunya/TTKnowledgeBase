@@ -1758,6 +1758,23 @@ evidence:
         - HcUOmZ0sgI0:00091
         - HcUOmZ0sgI0:00095
         - HcUOmZ0sgI0:00096
+  - id: 44MN0MejyPI-concept-body-hand-synchronization-reviewed
+    evidence_type: explanation
+    excerpt: The stroke should coordinate body rotation with hand movement instead of separating them, especially through recovery and follow-through.
+    reason: The transcript says there should be body rotation, hand movements for recovery, and a complete recovery involving body and hands.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 44MN0MejyPI
+      start_ms: 109633
+      end_ms: 133233
+      url: https://www.youtube.com/watch?v=44MN0MejyPI&t=109s
+      segment_ids:
+        - 44MN0MejyPI:00036
+        - 44MN0MejyPI:00037
+        - 44MN0MejyPI:00038
+        - 44MN0MejyPI:00050
 relations:
   - relation_type: used_with
     target_concept_id: concept-serve-action-decomposition

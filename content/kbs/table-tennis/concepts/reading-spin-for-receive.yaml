@@ -9,16 +9,17 @@ short_definition: Recognizing how much spin a received ball has so the receiver 
 evidence_summary: >-
   Reading spin for receive brings together several connected ideas. The learner on whether balls
   have spin and classifies them by spin amount. Spin judgment/read the spin and evaluates correct
-  and incorrect reads. How the opponent reads spin and how that reduces the serve's threat. To
-  judge quickly after the ball lands, check distance and arc, and notes that many players cannot
-  tell sidespin-topspin from sidespin-backspin when receiving serves. You must first assess the
-  serve and distinguish spin types before receiving. The first bounce and net-crossing moment the
-  window to determine spin and placement, then says to call whether it is backspin or topspin.
-  Receive as a spin-reading problem and wrong spin judgment makes receiving harder. Judging
-  whether the serve is sidespin and whether the hand judgment matches that reading. Additional
-  points reinforce the same theme. Together, these principles show how the topic is applied in
-  practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:227ce6714fdb3caf900047002c54e77044e48fb88ed6d9f135716fcf32ffc1a9"
+  and incorrect reads. Heavy backspin, sidespin-topspin, half-spin, and no-spin as different
+  receive situations. They mention fake loops and balls with no spin at all, which requires
+  recognizing the incoming spin before choosing a response. Serve receive around being unable to
+  tell spin types apart and improving judgment of the incoming ball. The key receive skill is
+  judging spin, including when spin is unclear or deceptive, and contrasting topspin, backspin,
+  and sidespin. Balls as semi-spin, says the spin is not neutralized, and failing to sense the
+  spin as a core error. Receive success around identifying whether the ball is sidespin, backspin,
+  or topspin, and calls misjudgment a major error. Additional points reinforce the same theme.
+  Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:945974fb43c64e449a6e5aca4ea4dfef584d535c7d74e0a9dda31f548683b2c3"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -555,3 +556,33 @@ evidence:
         - u2A5PNggIqg:00025
         - u2A5PNggIqg:00026
         - u2A5PNggIqg:00027
+  - id: 4gMbiB6mrrY-concept-reading-spin-for-receive-reviewed
+    evidence_type: explanation
+    excerpt: Judging incoming spin before or during receive so the player can choose the right racket angle and stroke direction.
+    reason: The speaker explicitly tells learners to sense the ball, judge the spin, watch the spin, and adjust when the ball has no spin or little spin.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 4gMbiB6mrrY
+      start_ms: 474666
+      end_ms: 499633
+      url: https://www.youtube.com/watch?v=4gMbiB6mrrY&t=474s
+      segment_ids:
+        - 4gMbiB6mrrY:00079
+        - 4gMbiB6mrrY:00083
+  - id: Whmhzk845aA-concept-reading-spin-for-receive-reviewed
+    evidence_type: definition
+    excerpt: Identifying the spin on an incoming ball so the receiver can choose the correct response.
+    reason: The speaker repeatedly frames receive success around identifying whether the ball is sidespin, backspin, or topspin, and calls misjudgment a major error.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Whmhzk845aA
+      start_ms: 973033
+      end_ms: 993633
+      url: https://www.youtube.com/watch?v=Whmhzk845aA&t=973s
+      segment_ids:
+        - Whmhzk845aA:00278
+        - Whmhzk845aA:00282

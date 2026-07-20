@@ -1,63 +1,61 @@
 {
   "knowledge_base": "table-tennis",
-  "started_at": "2026-07-19T21:45:28.777852+00:00",
+  "started_at": "2026-07-20T06:55:43.505370+00:00",
   "status": "completed",
   "stages": [
     {
       "name": "process-pending before acquisition",
-      "exit_code": 0
+      "exit_code": 0,
+      "output": "Processed pending candidates for Table Tennis: 0 accepted, 0 deferred, 0 \nrejected, 0 evidence moments added, 0 concepts added; diagnostics refreshed \n(1203 deferred candidates); navigation placed 0 concepts",
+      "exit_class": "success"
     },
     {
       "name": "discover free-coach-brad-han",
-      "exit_code": 0
+      "exit_code": 0,
+      "output": "Discovered 308 videos for Table Tennis",
+      "exit_class": "success"
     },
     {
       "name": "discover global-tt-studio",
-      "exit_code": 0
+      "exit_code": 0,
+      "output": "Discovered 2 videos for Table Tennis",
+      "exit_class": "success"
     },
     {
       "name": "discover pingsunday-xiaohan-playlist",
-      "exit_code": 0
+      "exit_code": 0,
+      "output": "Discovered 95 videos for Table Tennis",
+      "exit_class": "success"
     },
     {
       "name": "ingest discovered batch",
-      "exit_code": 1
-    },
-    {
-      "name": "extract QTI4evyXCLM",
-      "exit_code": 0
-    },
-    {
-      "name": "extract rPrv4iWdE4w",
-      "exit_code": 0
-    },
-    {
-      "name": "extract 4gMbiB6mrrY",
-      "exit_code": 0
-    },
-    {
-      "name": "extract 44MN0MejyPI",
-      "exit_code": 0
-    },
-    {
-      "name": "extract Da2vVwtco1w",
-      "exit_code": 0
+      "exit_code": 1,
+      "output": "Skipped J4ZTcPlOmto: YouTube block cooldown has about 38 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped IQJagpLfWoE: YouTube block cooldown has about 38 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped UAlmlB1nU8o: YouTube block cooldown has about 38 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped UCLdwDMdtrcW_WlhXI0Kli9Q: YouTube block cooldown has about 24 hour(s) \nremaining. Change VPN/proxy route and pass --retry-blocked, or wait for the \nrecorded retry time.\n4 video(s) failed; successful videos were retained.",
+      "exit_class": "stage_failed"
     },
     {
       "name": "process-pending after extraction",
-      "exit_code": 0
+      "exit_code": 0,
+      "output": "Processed pending candidates for Table Tennis: 0 accepted, 0 deferred, 0 \nrejected, 0 evidence moments added, 0 concepts added; diagnostics refreshed \n(1203 deferred candidates); navigation placed 0 concepts",
+      "exit_class": "success"
     },
     {
       "name": "build review queue",
-      "exit_code": 0
+      "exit_code": 0,
+      "output": "Table Tennis: 3637 candidates queued",
+      "exit_class": "success"
     },
     {
       "name": "refresh summaries",
-      "exit_code": 0
+      "exit_code": 0,
+      "output": "Wrote 0 evidence summaries",
+      "exit_class": "success"
     },
     {
       "name": "publish reviewed corpus",
-      "exit_code": 0
+      "exit_code": 0,
+      "output": "Published Table Tennis: 245 concepts",
+      "exit_class": "success"
     }
   ],
   "selected_batch": [],
@@ -75,25 +73,9 @@
       "title": "The Triangle Theory of the Forehand"
     },
     {
-      "id": "QTI4evyXCLM",
-      "title": "coach XiaoHan 34b - How to play doubles in table tennis?"
-    },
-    {
-      "id": "rPrv4iWdE4w",
-      "title": "Why Your Serve and First Attack Fail"
-    },
-    {
-      "id": "4gMbiB6mrrY",
-      "title": "Coach Xiao Han Explains How to Control Spin and Direction in Modern Table Tennis"
-    },
-    {
-      "id": "44MN0MejyPI",
-      "title": "How to Control Rhythm and Recovery in Your Forehand Attack"
-    },
-    {
-      "id": "Da2vVwtco1w",
-      "title": "coach XiaoHan 32b - learn backhand serve (basic table tennis serve)"
+      "id": "UCLdwDMdtrcW_WlhXI0Kli9Q",
+      "title": "GlobalTTStudio - Videos"
     }
   ],
-  "finished_at": "2026-07-19T21:54:56.780944+00:00"
+  "finished_at": "2026-07-20T06:57:39.198740+00:00"
 }

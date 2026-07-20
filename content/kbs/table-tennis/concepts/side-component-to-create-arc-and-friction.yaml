@@ -12,10 +12,12 @@ evidence_summary: >-
   component creates arc and increases friction, and ties it to hip drive and forearm swing.
   Pushing sideways with side force so the ball does not fly long and power is absorbed. Applying
   force sideways makes the shot more stable and creates strong spin with control. Applying force
-  from the outside to the inside, which is a sideways component used to generate friction.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:d69237f1932934d7669dacc9780aba1c2b86cebd8cf1c7b3dab6d204e11f655e"
+  from the outside to the inside, which is a sideways component used to generate friction. The
+  lesson names 'arching' and friction must be applied promptly, with finger force and racket-face
+  angle to make it effective. The ball needs a sideways component in addition to forward force in
+  order to curve and generate friction. Together, these principles show how the topic is applied
+  in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:0fdc052ceb8b364de37ce6397b310aa4947f4fe393a52dea7511843fb6400e66"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -116,3 +118,34 @@ evidence:
         - mujrVgy34sE:00041
         - mujrVgy34sE:00042
         - mujrVgy34sE:00046
+  - id: 8S2YprEr6XA-concept-side-component-to-create-arc-and-friction-reviewed
+    evidence_type: explanation
+    excerpt: Using a sideward component together with friction to create an effective arching path.
+    reason: The lesson names 'arching' and says friction must be applied promptly, with finger force and racket-face angle to make it effective.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8S2YprEr6XA
+      start_ms: 710700
+      end_ms: 734033
+      url: https://www.youtube.com/watch?v=8S2YprEr6XA&t=710s
+      segment_ids:
+        - 8S2YprEr6XA:00140
+        - 8S2YprEr6XA:00141
+        - 8S2YprEr6XA:00143
+  - id: pxxgpWNbXSM-concept-side-component-to-create-arc-and-friction-reviewed
+    evidence_type: explanation
+    excerpt: Adding a sideways component to the stroke to create more friction and a curved ball path.
+    reason: The speaker repeatedly says the ball needs a sideways component in addition to forward force in order to curve and generate friction.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: pxxgpWNbXSM
+      start_ms: 728766
+      end_ms: 743433
+      url: https://www.youtube.com/watch?v=pxxgpWNbXSM&t=728s
+      segment_ids:
+        - pxxgpWNbXSM:00145
+        - pxxgpWNbXSM:00146

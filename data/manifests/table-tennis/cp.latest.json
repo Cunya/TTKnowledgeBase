@@ -1,41 +1,13 @@
 {
   "knowledge_base": "table-tennis",
-  "started_at": "2026-07-19T15:26:51.536561+00:00",
-  "status": "completed",
+  "started_at": "2026-07-20T06:06:10.953442+00:00",
+  "status": "stopped",
   "stages": [
     {
       "name": "process-pending before acquisition",
-      "exit_code": 0
-    },
-    {
-      "name": "discover free-coach-brad-han",
-      "exit_code": 0
-    },
-    {
-      "name": "discover global-tt-studio",
-      "exit_code": 0
-    },
-    {
-      "name": "discover pingsunday-xiaohan-playlist",
-      "exit_code": 0
-    },
-    {
-      "name": "process-pending after extraction",
-      "exit_code": 0
-    },
-    {
-      "name": "build review queue",
-      "exit_code": 0
-    },
-    {
-      "name": "refresh summaries",
-      "exit_code": 0
-    },
-    {
-      "name": "publish reviewed corpus",
-      "exit_code": 0
+      "exit_code": 1
     }
   ],
-  "selected_batch": [],
-  "finished_at": "2026-07-19T15:28:26.834879+00:00"
+  "error": "cached triage failed: 1",
+  "finished_at": "2026-07-20T06:06:22.276221+00:00"
 }

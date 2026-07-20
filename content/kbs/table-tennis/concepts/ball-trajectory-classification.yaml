@@ -15,10 +15,11 @@ evidence_summary: >-
   opponent control. A high arc to slow or out-of-bounds balls and it with a low arc that is
   faster. Different serve trajectories and they lead to different reactions and defensive
   strategies. Left or right spin changes the trajectory to straight or diagonal and the ball will
-  curve. There are three types and discusses curved, downward, and non-upward trajectories.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:d799248b052040c542d802d72c319a0e199c0e342ad0d5283d79e53714b06646"
+  curve. There are three types and discusses curved, downward, and non-upward trajectories. Balls
+  into near-net, on-table, mid-table, half-table, baseline, and explicitly names short, half-long,
+  and long balls. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:d37a96381c764c4c8fa6dc56002fb51891b1ffbda9099b29929d4b55cc692d6c"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -133,3 +134,19 @@ evidence:
         - zmYIxjHtg9Q:00042
         - zmYIxjHtg9Q:00043
         - zmYIxjHtg9Q:00044
+  - id: QTI4evyXCLM-concept-ball-length-classification-reviewed
+    evidence_type: definition
+    excerpt: Incoming balls are classified by depth and table section, including short, half-long, long, and four table zones.
+    reason: The transcript divides balls into near-net, on-table, mid-table, half-table, baseline, and explicitly names short, half-long, and long balls.
+    confidence: 0.91
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: QTI4evyXCLM
+      start_ms: 110366
+      end_ms: 121600
+      url: https://www.youtube.com/watch?v=QTI4evyXCLM&t=110s
+      segment_ids:
+        - QTI4evyXCLM:00022
+        - QTI4evyXCLM:00023
+        - QTI4evyXCLM:00024

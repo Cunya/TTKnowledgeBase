@@ -356,6 +356,16 @@ Track relation counts, concepts with no outgoing relations, cross-listed concept
 
 ## Deferred by design
 
+### P1-16 hardening — clarify stage failures and monitor retries
+
+**Status:** Complete (2026-07-20).
+
+**Finding:** A `process-pending` child returned exit 1, but the orchestrator recorded only `cached triage failed: 1`; child output was not captured.
+
+**Acceptance:** Capture bounded stdout/stderr per stage, record an explicit failed outcome/reason, and expose a consecutive-failure retry count that resets after success.
+
+**Evidence:** `scripts/run-cp.py`, `scripts/processor-monitor.mjs`, and the 2026-07-20 session log.
+
 - Public offline video hosting or transcoded mirrors without explicit permission/licensing.
 - Another large scrape before the pending queue, quotation audit, and visual-review queue are under control.
 - LLM-generated TOCs during every site build.

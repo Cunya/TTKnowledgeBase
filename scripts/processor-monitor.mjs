@@ -20,6 +20,7 @@ const state = {
   log: [],
   child: null,
   timer: null,
+  retryCount: 0,
 };
 
 function addLog(message) {
@@ -50,15 +51,20 @@ function runProcessor() {
   child.stdout.on('data', collect);
   child.stderr.on('data', collect);
   child.on('close', (code, signal) => {
+    const failed = Boolean(signal) || code !== 0;
+    if (failed) state.retryCount += 1; else state.retryCount = 0;
     state.lastRun = {
       startedAt: state.activeRun?.startedAt,
       finishedAt: new Date().toISOString(),
       durationMs: Date.now() - started,
       code,
       signal,
+      outcome: failed ? 'failed' : 'completed',
+      retryCount: state.retryCount,
+      reason: failed ? (signal ? `terminated by ${signal}` : `run-cp exited ${code}`) : null,
       output: output.trim(),
     };
-    addLog(`Processor finished with ${signal || `exit ${code}`}.`);
+    addLog(failed ? `Processor failed: ${signal || `exit ${code}`}; consecutive failures ${state.retryCount}.` : 'Processor completed successfully; retry counter reset.');
     state.child = null;
     state.activeRun = null;
     if (state.running) scheduleNext();
@@ -159,6 +165,7 @@ async function snapshot() {
     startedAt: state.startedAt,
     nextRunAt: state.nextRunAt,
     intervalMs: state.intervalMs,
+    retryCount: state.retryCount,
     budget: budget ? {
       used,
       dailyLimit: 1_500_000,

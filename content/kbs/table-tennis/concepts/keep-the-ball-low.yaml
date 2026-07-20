@@ -8,16 +8,16 @@ aliases:
 short_definition: Keeping the ball and its trajectory low to force weaker, slower, or more error-prone opponent attacks.
 evidence_summary: >-
   Keep the ball low brings together several connected ideas. A high ball invites smashes, a low
-  ball slows the loop, and the trajectory should always be kept low. To serve low and keep the arc
-  low. The finish is repeatedly constrained to net height, low position, and downward motion. Low
-  trajectory is the most important element of the serve and why it improves effectiveness. The
-  teacher directly says not to change the height and that the ball/action should stay small and
-  below the white line. The stroke height must be controlled and that the resulting ball should be
-  low and spinny. To keep the upper trajectory low and shorter is better when making heavy spin
-  serves. To lower the body, keep the body low, and stay crouched during receive and looping.
-  Additional points reinforce the same theme. Together, these principles show how the topic is
-  applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:f898e59becf77912bc80d0e911fd751483bb2e2fbd7b1ad79c24675a076bbce5"
+  ball slows the loop, and the trajectory should always be kept low. The arc and contact point
+  must be low and close to the body. The finish is repeatedly constrained to net height, low
+  position, and downward motion. Low trajectory as a primary goal and how racket-tip and angle
+  adjustments keep the return low. The stroke height must be controlled and that the resulting
+  ball should be low and spinny. To keep the upper trajectory low and shorter is better when
+  making heavy spin serves. To lower the body, keep the body low, and stay crouched during receive
+  and looping. The learner to aim lower and repeatedly emphasizes that the ball should stay low
+  and stable. Additional points reinforce the same theme. Together, these principles show how the
+  topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:faf1dd6c19651a94154ca13eaed9a9ad23f93933516c94fd96330fa95bea29fe"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -222,3 +222,36 @@ evidence:
       segment_ids:
         - 8fxjEROShs4:00124
         - 8fxjEROShs4:00125
+  - id: QTI4evyXCLM-concept-keep-the-ball-low-in-doubles-reviewed
+    evidence_type: explanation
+    excerpt: In doubles, keeping the ball low reduces the opponent's attacking quality and helps the partner feel secure.
+    reason: The speaker says the ball need not be high, that quality drops if it is, and that dropping the ball first lowers the opponent's attacking quality.
+    confidence: 0.92
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: QTI4evyXCLM
+      start_ms: 195866
+      end_ms: 225566
+      url: https://www.youtube.com/watch?v=QTI4evyXCLM&t=195s
+      segment_ids:
+        - QTI4evyXCLM:00043
+        - QTI4evyXCLM:00044
+        - QTI4evyXCLM:00045
+        - QTI4evyXCLM:00049
+        - QTI4evyXCLM:00050
+  - id: pxxgpWNbXSM-concept-keep-the-ball-low-reviewed
+    evidence_type: explanation
+    excerpt: Keep the ball's trajectory low to make the serve or shot harder to attack and more stable.
+    reason: The speaker tells the learner to aim lower and repeatedly emphasizes that the ball should stay low and stable.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: pxxgpWNbXSM
+      start_ms: 282200
+      end_ms: 299600
+      url: https://www.youtube.com/watch?v=pxxgpWNbXSM&t=282s
+      segment_ids:
+        - pxxgpWNbXSM:00058
+        - pxxgpWNbXSM:00061

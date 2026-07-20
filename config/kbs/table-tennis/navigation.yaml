@@ -253,7 +253,8 @@ sections:
     label: Serve
     description: Starting strokes organized by spin, placement, and intended 
       third-ball pattern.
-    concept_ids: []
+    concept_ids:
+    - concept-half-out-serve-as-scoring-pattern
     children:
     - id: serve-mechanics
       label: Serve mechanics
@@ -307,6 +308,9 @@ sections:
     concept_ids:
     - concept-preparation-stroke-and-backswing-for-backhand-serve
     - concept-serve-receive-practice
+    - concept-doubles-side-shift-after-receive
+    - concept-front-back-distance-prioritization-in-receive-reading
+    - concept-short-versus-long-receive-planning
     children:
     - id: receive-reading-and-principles
       label: Reading and principles
@@ -361,6 +365,7 @@ sections:
   - concept-delay-gripping-until-after-contact
   - concept-backhand-grip-openness
   - concept-racket-face-angle-adjustment
+  - concept-horizontal-force-for-hooking
   children:
   - id: grip-and-wrist-control
     label: Grip and wrist control

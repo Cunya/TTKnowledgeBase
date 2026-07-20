@@ -10,13 +10,14 @@ evidence_summary: >-
   power when preparation is late or incomplete. To use the ball's incoming force and borrow the
   spin. To follow the spin's direction and send the ball back along its path to neutralize the
   spin. Borrowing power from the ball's rise or fall and combining it with the player's own
-  effort. To borrow the opponent's power and use combined force while making very small movements.
-  Against a fast push you can use its pace and that the opponent has already supplied the power.
-  Using the ball's existing friction/pressure to make the loop work, which is effectively
+  effort. Against a fast push you can use its pace and that the opponent has already supplied the
+  power. Using the ball's existing friction/pressure to make the loop work, which is effectively
   borrowing incoming force. When using topspin technique against underspin, players rely on
-  borrowed power and leverage the incoming ball. Together, these principles show how the topic is
-  applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:1317405fe026a75f82d94fb5c9661d132aca46acdbf3e0ebebdf6c94755563c5"
+  borrowed power and leverage the incoming ball. Multiple segments state that the player should
+  use or borrow the opponent's power to create the return. Additional points reinforce the same
+  theme. Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:dac29d4f61dc72c2be9ece0a2a84b4caed2947d33522120ab8c3c1995ab8851a"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -166,3 +167,19 @@ evidence:
         - 15ElcVXEJVU:00027
         - 15ElcVXEJVU:00029
         - 15ElcVXEJVU:00030
+  - id: TYMU3wQ3-sw-concept-borrow-incoming-force-reviewed
+    evidence_type: explanation
+    excerpt: Use the opponent's incoming pace or force to generate your own return instead of supplying all the power yourself.
+    reason: Multiple segments state that the player should use or borrow the opponent's power to create the return.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: TYMU3wQ3-sw
+      start_ms: 224100
+      end_ms: 248733
+      url: https://www.youtube.com/watch?v=TYMU3wQ3-sw&t=224s
+      segment_ids:
+        - TYMU3wQ3-sw:00051
+        - TYMU3wQ3-sw:00053
+        - TYMU3wQ3-sw:00056
