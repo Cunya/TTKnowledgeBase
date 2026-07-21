@@ -24,7 +24,7 @@ from .boundaries import (
     validate_boundary_review_set,
 )
 from .codex_engine import CodexError
-from .demo import write_demo_video
+from .demo import DEMO_VIDEO_ID, write_demo_video
 from .evidence_summaries import (
     build_missing_summaries,
     write_codex_summaries,
@@ -91,6 +91,13 @@ def kb_paths(kb: str | None) -> KnowledgeBasePaths:
         return load_knowledge_base(ROOT, kb)
     except ValueError as error:
         raise typer.BadParameter(str(error), param_hint="--kb") from error
+
+
+def _demo_video_ids(videos: list) -> set[str]:
+    """Return synthetic fixture IDs even when private normalized data is absent."""
+    return {video.id for video in videos if video.availability == "demo_fixture"} | {
+        DEMO_VIDEO_ID
+    }
 
 
 @app.command()
@@ -855,9 +862,7 @@ def validate_published(kb: KbOption = None) -> None:
     queue_path = paths.content / "annotations" / "review-queue.yaml"
     if queue_path.exists():
         normalized_videos = load_videos(paths.data("normalized"))
-        demo_ids = {
-            video.id for video in normalized_videos if video.availability == "demo_fixture"
-        }
+        demo_ids = _demo_video_ids(normalized_videos)
         errors.extend(
             validate_review_queue(
                 read_yaml(queue_path), corpus.concepts, ignored_video_ids=demo_ids
@@ -928,7 +933,7 @@ def report_boundaries(
     concepts = load_reviewed_concepts(paths.content / "concepts")
     videos = load_videos(paths.data("normalized"))
     if not include_demo:
-        demo_ids = {video.id for video in videos if video.availability == "demo_fixture"}
+        demo_ids = _demo_video_ids(videos)
         videos = [video for video in videos if video.id not in demo_ids]
         concepts = [
             concept.model_copy(
@@ -1019,7 +1024,7 @@ def validate(
     concepts = load_reviewed_concepts(paths.content / "concepts")
     videos = load_videos(paths.data("normalized"))
     if not include_demo:
-        demo_ids = {video.id for video in videos if video.availability == "demo_fixture"}
+        demo_ids = _demo_video_ids(videos)
         videos = [video for video in videos if video.id not in demo_ids]
         concepts = [
             concept.model_copy(

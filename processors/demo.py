@@ -5,9 +5,11 @@ from pathlib import Path
 from .models import Segment, TranscriptTrack, Video
 from .utils import write_json
 
+DEMO_VIDEO_ID = "demoTT00001"
+
 
 def write_demo_video(output_dir: Path) -> Video:
-    video_id = "demoTT00001"
+    video_id = DEMO_VIDEO_ID
     segments = [
         Segment(
             id=f"{video_id}:00000",
