@@ -4,7 +4,7 @@ This is the consolidated backlog from the architecture review, content review, l
 
 It is intentionally ordered. The project should complete the blocking and trust items before another large scrape or extraction batch.
 
-Last refreshed: 2026-07-16 11:07 EEST.
+Last refreshed: 2026-07-21 15:25 EEST.
 
 ## Research reconciliation — 2026-07-19
 
@@ -378,13 +378,15 @@ Track relation counts, concepts with no outgoing relations, cross-listed concept
 
 ### P1-18 — Audit atlas parent assignments
 
-**Status:** In progress; the 2026-07-21 summary-aware pass corrected seven misleading assignments.
+**Status:** Complete (2026-07-21); the full 371-concept navigation audit corrected eight additional misleading assignments.
+
+**Audit update:** The 2026-07-21 pass corrected `Close-step`, `Backhand system body-led ripping`, `Flat-hit swing size control`, `Open shoulder and pivot for forehand transition`, `Post-shot recovery to ready position`, `Rhythm, spacing, and recovery for backhand rip`, `Forearm position relative to the elbow`, and `Push-flick close-distance control`. Reviewed remaining serve/receive, flick/receive, and shared-mechanics placements were retained where the evidence supported them. See `docs/concept-navigation-audit-2026-07-21.md`.
 
 **Finding:** `Hop step` was listed under Backhand loop even though its evidence describes a footwork adjustment between strokes. `Preparation stroke and backswing for backhand serve` was listed under Serve receive despite describing serve mechanics.
 
 **Completed:** Moved `Hop step` to Fundamentals → Footwork and spacing, and moved the backhand-serve preparation concept to Serve → Serve mechanics. The summary-aware pass also moved `Definition of a good shot`, `Defense is crucial`, and `Accurate foot placement and balance` out of specific shot/strategy placements into shared fundamentals or strategy; moved `Self-review through recording` to Training; and moved `Aggressive push only against weak spin`, `Push-flick timing and contact`, and `Forehand backspin receive` to the push/serve-receive paths supported by their summaries. Reviewed the remaining obvious serve/receive and flick/receive label conflicts; the remaining receive placements describe incoming-ball or receive-shot decisions.
 
-**Done when:** every atlas placement is defensible from the concept label, definition, evidence summary, and facets, with navigation validation included in the publication checks.
+**Done when:** every atlas placement is defensible from the concept label, definition, evidence summary, and facets, with navigation validation included in the publication checks. **Evidence:** full 371-concept audit report in `docs/concept-navigation-audit-2026-07-21.md` and release-gate verification on 2026-07-21.
 
 - Public offline video hosting or transcoded mirrors without explicit permission/licensing.
 - Another large scrape before the pending queue, quotation audit, and visual-review queue are under control.

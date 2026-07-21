@@ -28,7 +28,6 @@ sections:
     - concept-forearm-and-body-drop-for-spin
     - concept-side-spin-push-benefits-and-match-use
     - concept-forearm-follow-through-in-push-receive
-    - concept-flat-hit-swing-size-control
     - concept-heavy-backspin-and-no-spin-push-variation
     - concept-flat-push
     - concept-aggressive-push-only-against-weak-spin
@@ -38,7 +37,6 @@ sections:
       description: Forehand-side push mechanics, placement, spin variation, and 
         recovery.
       concept_ids:
-      - concept-close-step
       - concept-forearm-driven-push-on-the-forehand
       children: []
     - id: backhand-push
@@ -46,7 +44,6 @@ sections:
       description: Backhand-side push mechanics, touch, placement, and receive 
         use.
       concept_ids:
-      - concept-backhand-system-body-led-ripping
       - concept-shakehand-backhand-push-racket-face-stability
       children: []
   - id: counter
@@ -60,8 +57,7 @@ sections:
       label: Forehand counter
       description: Forehand counter mechanics, timing, placement, and transition
         into stronger attacks.
-      concept_ids:
-      - concept-open-shoulder-and-pivot-for-forehand-transition
+      concept_ids: []
       children: []
     - id: backhand-counter
       label: Backhand counter
@@ -77,6 +73,7 @@ sections:
     - concept-compact-spin-stroke-with-finger-lead
     - concept-finger-led-brush-and-drive-through
     - concept-distance-dependent-stroke-size
+    - concept-flat-hit-swing-size-control
     children:
     - id: forehand-drive
       label: Forehand drive
@@ -118,7 +115,6 @@ sections:
       - concept-ball-trajectory-classification
       - concept-wrist-position-for-forehand-loop
       - concept-stance-and-positioning-for-looping
-      - concept-forearm-position-relative-to-the-elbow
       - concept-stable-center-of-gravity-and-bent-knees
       - concept-shoulder-dip-during-forehand-loop
       children:
@@ -192,7 +188,7 @@ sections:
       - concept-backhand-loop
       - concept-backhand-topspin-body-coordination
       - concept-backhand-wrist-stability-and-hooking
-      - concept-post-shot-recovery-to-ready-position
+      - concept-backhand-system-body-led-ripping
       - concept-body-angle-for-opening-the-backhand-position
       - concept-forearm-led-motion-in-backhand
       - concept-ankle-driven-backhand-rhythm
@@ -287,8 +283,6 @@ sections:
       - concept-flick-contact-at-the-top-of-the-bounce
       - concept-flick-timing-at-the-peak-of-the-bounce
       - concept-backhand-racket-face-angle-adjustment
-      - concept-push-flick-close-distance-control
-      - concept-rhythm-spacing-and-recovery-for-backhand-rip
       - concept-banana-flick-timing-pause
       children: []
   - id: serve
@@ -459,6 +453,7 @@ sections:
       - concept-avoid-pulling-the-hand-on-side-spin-receive
       - concept-bounce-phase-shot-timing
       - concept-push-flick-timing-and-contact
+      - concept-push-flick-close-distance-control
       children: []
     - id: receive-shot-selection
       label: Receive shot selection
@@ -497,6 +492,7 @@ sections:
   - concept-counter-rip
   - concept-finger-strength-for-spin-generation
   - concept-footwork-step-types-for-transition
+  - concept-forearm-position-relative-to-the-elbow
   - concept-forehand-backhand-transition-footwork-timing
   - concept-swing-stopping-point
   - concept-variation-in-spin
@@ -544,6 +540,10 @@ sections:
       contact space.
     concept_ids:
     - concept-hop-step
+    - concept-close-step
+    - concept-open-shoulder-and-pivot-for-forehand-transition
+    - concept-post-shot-recovery-to-ready-position
+    - concept-rhythm-spacing-and-recovery-for-backhand-rip
     - concept-banana-flick-footwork-and-positioning
     - concept-distance-management-for-flicks
     - concept-footwork-patterns

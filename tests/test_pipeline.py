@@ -229,6 +229,32 @@ def test_navigation_requires_every_approved_concept() -> None:
     ]
 
 
+def test_navigation_keeps_audited_concepts_under_semantic_parents() -> None:
+    navigation = read_yaml(ROOT / "config" / "kbs" / "table-tennis" / "navigation.yaml")
+    paths: dict[str, list[str]] = {}
+
+    def walk(nodes: list[dict], parent_path: tuple[str, ...] = ()) -> None:
+        for node in nodes:
+            path = parent_path + (node.get("label", node.get("id", "")),)
+            for concept_id in node.get("concept_ids", []) or []:
+                paths.setdefault(concept_id, []).append(" > ".join(path))
+            walk(node.get("children", []) or [], path)
+
+    walk(navigation["sections"])
+    expected = {
+        "concept-close-step": "Footwork and spacing",
+        "concept-backhand-system-body-led-ripping": "Backhand loop",
+        "concept-flat-hit-swing-size-control": "Drive",
+        "concept-open-shoulder-and-pivot-for-forehand-transition": "Footwork and spacing",
+        "concept-post-shot-recovery-to-ready-position": "Footwork and spacing",
+        "concept-rhythm-spacing-and-recovery-for-backhand-rip": "Footwork and spacing",
+        "concept-forearm-position-relative-to-the-elbow": "Movement and contact fundamentals",
+        "concept-push-flick-close-distance-control": "Timing and spacing",
+    }
+    for concept_id, parent in expected.items():
+        assert any(parent in path for path in paths[concept_id]), concept_id
+
+
 def test_spoken_source_cannot_exceed_thirty_seconds(tmp_path: Path) -> None:
     normalized = tmp_path / "normalized"
     video = write_demo_video(normalized)
