@@ -457,10 +457,12 @@ Track relation counts, concepts with no outgoing relations, cross-listed concept
 
 ### P2-10 — Prototype an authorized media-download and ASR transcript route
 
-**Status:** Planned experiment (2026-07-21); not enabled in `cp`, the monitor, or the scheduler.
+**Status:** In progress — one-video smoke test implemented (2026-07-21); not enabled in `cp`, the monitor, or the scheduler.
 
 **Finding:** Caption-first ingestion cannot process videos with no usable captions and cannot independently verify caption accuracy. The current optional audio fallback is temporary and does not yet define a full media retention, video-to-audio, ASR provenance, comparison, or review workflow.
 
 **Acceptance:** Implement the separate route described in `docs/experimental-media-asr-route-plan-2026-07-21.md`: storage gates; bounded private video download retained by default for the initial experiment; audio extraction; pinned local ASR with stable private segment IDs; caption-vs-ASR comparison; explicit transcript-origin values distinguishing `local_asr` from `youtube_manual` and `youtube_generated`; and validation that prevents unreviewed ASR evidence or media from reaching public output. Start with a one-video smoke test before expanding to the 10–20-video gold set. Add cleanup previews and deletion/retention controls later, then make an explicit go/no-go decision before any production enablement.
 
 **Dependencies:** P0-02, P0-04, P0-07, P1-14, and an operator-approved acquisition/cleanup policy. Expiry tracking is intentionally deferred for now. This route must remain separate from normal caption ingestion and unattended processing.
+
+**Evidence:** `processors/ingest.py`, `processors/cli.py`, `processors/models.py`, `tests/test_ingest.py`, and `docs/experimental-media-asr-route-plan-2026-07-21.md`. The one-video route retains private media and writes local-ASR provenance; caption comparison, review-state validation, cleanup controls, and the 10–20-video evaluation remain incomplete.

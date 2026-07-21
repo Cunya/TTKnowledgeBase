@@ -1,12 +1,15 @@
 import pytest
 
 from processors.ingest import (
+    IngestOptions,
     MembersOnlyError,
     discover_videos,
+    ingest_media_asr,
     is_members_only_error,
     transcript_from_caption,
     video_id_from_url,
 )
+from processors.models import Segment, TranscriptTrack
 
 
 @pytest.mark.parametrize(
@@ -98,3 +101,64 @@ def test_supplied_srt_is_normalized(tmp_path) -> None:
 
     assert track.segments[0].start_ms == 2000
     assert track.segments[0].duration_ms == 2000
+
+
+def test_media_asr_retains_artifacts_and_marks_local_origin(tmp_path, monkeypatch) -> None:
+    video_id = "dQw4w9WgXcQ"
+    video_path = tmp_path / "media" / video_id / "video.mp4"
+
+    def fake_download(url, media_dir, options):
+        media_dir.mkdir(parents=True)
+        video_path.write_bytes(b"video-bytes")
+        return video_path, {
+            "id": video_id,
+            "title": "ASR smoke test",
+            "duration": 4,
+            "channel_id": "channel",
+            "channel": "Channel",
+        }
+
+    def fake_audio(video, audio):
+        audio.write_bytes(b"audio-bytes")
+        return {"sample_rate": 16000, "channels": 1, "codec": "pcm_s16le"}
+
+    def fake_transcribe(audio, current_video_id, language, options):
+        return TranscriptTrack(
+            video_id=current_video_id,
+            language=language,
+            language_code=language,
+            is_generated=True,
+            acquisition_method="faster-whisper:tiny",
+            transcript_origin="local_asr",
+            segments=[
+                Segment(
+                    id=f"{current_video_id}:asr:00000",
+                    video_id=current_video_id,
+                    text="Start below the ball.",
+                    normalized_text="Start below the ball.",
+                    start_ms=1000,
+                    duration_ms=1500,
+                )
+            ],
+        )
+
+    monkeypatch.setattr("processors.ingest._download_media_video", fake_download)
+    monkeypatch.setattr("processors.ingest._extract_asr_audio", fake_audio)
+    monkeypatch.setattr("processors.ingest.transcribe_authorized_audio_file", fake_transcribe)
+
+    result = ingest_media_asr(
+        f"https://www.youtube.com/watch?v={video_id}",
+        tmp_path / "normalized",
+        tmp_path / "media",
+        tmp_path / "manifests",
+        ["en"],
+        IngestOptions(allow_video_download=True),
+    )
+
+    assert result.video.transcript.transcript_origin == "local_asr"
+    assert result.video.transcript.segments[0].id == f"{video_id}:asr:00000"
+    assert video_path.exists()
+    assert (video_path.parent / "audio.wav").exists()
+    assert (video_path.parent / "asr.vtt").exists()
+    assert result.manifest["retained_media"] is True
+    assert result.manifest["transcript_origin"] == "local_asr"

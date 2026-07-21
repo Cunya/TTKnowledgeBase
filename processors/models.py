@@ -9,6 +9,7 @@ ReviewStatus = Literal["unreviewed", "approved", "rejected"]
 EvidenceType = Literal[
     "definition", "explanation", "demonstration", "example", "mistake", "correction", "drill"
 ]
+TranscriptOrigin = Literal["supplied", "youtube_manual", "youtube_generated", "local_asr"]
 
 
 class SourceSpan(BaseModel):
@@ -59,6 +60,7 @@ class TranscriptTrack(BaseModel):
     language_code: str
     is_generated: bool
     acquisition_method: str
+    transcript_origin: TranscriptOrigin = "youtube_manual"
     retrieved_at: datetime = Field(default_factory=lambda: datetime.now(UTC))
     segments: list[Segment]
 

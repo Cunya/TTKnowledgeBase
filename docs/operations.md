@@ -151,7 +151,13 @@ python -m processors.cli ingest --kb table-tennis --allow-audio-download --confi
 
 Both flags are mandatory. The current audio fallback remains temporary. The planned expanded media-ASR route will retain its downloaded video in the private ignored media workspace initially; do not expose or commit it, and do not use either path without authorization to download and process the source.
 
-The planned expanded route that temporarily downloads video, extracts audio, generates private ASR subtitles, compares them with available captions, and supports videos with no captions is documented in the [experimental media-ASR route plan](experimental-media-asr-route-plan-2026-07-21.md). It is not part of the normal monitor or scheduler workflow and must remain explicitly operator-triggered until its rights, accuracy, storage, and cleanup evaluation passes.
+The retained-media ASR smoke test is a separate one-video command and is not part of the normal monitor or scheduler workflow:
+
+```powershell
+python -m processors.cli ingest-media-asr --kb table-tennis --allow-video-download VIDEO_URL
+```
+
+It keeps `media/<kb>/<video-id>/video.*`, `audio.wav`, private ASR subtitles, and a private provenance manifest locally. Use `--dry-run` to inspect metadata without downloading. The route is documented in the [experimental media-ASR route plan](experimental-media-asr-route-plan-2026-07-21.md); cleanup and deletion controls are deferred.
 Each completed monitor run records the child exit code, outcome, reason, and bounded stage output in the private `cp.latest.json` manifest. Failed runs expose a consecutive-failure retry counter; a successful run resets it.
 
 The monitor's Stop control terminates the full Windows processor process tree, including nested discovery and ingestion workers. The shared cp orchestrator applies bounded stage limits: discovery stages stop after 20 minutes and ingestion or other stages stop after 45 minutes. A timeout is recorded as a distinct `timeout` exit class with the affected stage and limit in the private manifest.

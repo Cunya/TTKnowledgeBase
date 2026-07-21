@@ -45,6 +45,12 @@ def _editorial_reason(reason: str) -> str:
         value,
     )
     value = re.sub(
+        r"(?i)\s+with\s+(?:the )?(?:speaker|coach)\s+"
+        r"(?:noting|saying|stating|explaining|describing)\s+that\s+",
+        " because ",
+        value,
+    )
+    value = re.sub(
         r"(?i)\b(?:the )?(?:speaker|coach)\s+(?:again\s+)?(?:says?|states?|explains?)\s+",
         "",
         value,

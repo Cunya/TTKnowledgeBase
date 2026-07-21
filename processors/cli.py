@@ -35,6 +35,8 @@ from .ingest import (
     MembersOnlyError,
     TranscriptBlockedError,
     discover_videos,
+    fetch_metadata,
+    ingest_media_asr,
     ingest_video,
     video_id_from_url,
 )
@@ -392,6 +394,77 @@ def ingest(
             f"[red]{len(failures)} video(s) failed; successful videos were retained.[/red]"
         )
         raise typer.Exit(1)
+
+
+@app.command("ingest-media-asr")
+def ingest_media_asr_command(
+    url: Annotated[str, typer.Argument(help="One YouTube video URL")],
+    languages: Annotated[str, typer.Option()] = "en",
+    allow_video_download: Annotated[
+        bool, typer.Option(help="Allow retaining a private local video copy for ASR")
+    ] = False,
+    force: Annotated[bool, typer.Option(help="Rerun the retained-media ASR job")] = False,
+    dry_run: Annotated[bool, typer.Option(help="Inspect metadata without downloading media")] = False,
+    max_video_bytes: Annotated[
+        int, typer.Option(min=1, help="Maximum retained video size in bytes")
+    ] = 2_000_000_000,
+    max_duration: Annotated[
+        int, typer.Option(min=1, help="Maximum video duration in seconds")
+    ] = 7_200,
+    proxy_url: Annotated[
+        str | None, typer.Option(help="Explicit operator-supplied HTTP(S) proxy")
+    ] = None,
+    cookie_file: Annotated[
+        Path | None, typer.Option(help="yt-dlp Netscape cookie file")
+    ] = None,
+    js_runtime: Annotated[
+        str | None, typer.Option(help="yt-dlp runtime, e.g. node:C:\\path\\node.exe")
+    ] = None,
+    whisper_model: Annotated[str, typer.Option(help="faster-whisper model name")] = "small",
+    kb: KbOption = None,
+) -> None:
+    """Run the one-video retained-media ASR smoke test outside normal ingestion."""
+    paths = kb_paths(kb)
+    if cookie_file and not cookie_file.exists():
+        raise typer.BadParameter(f"Cookie file does not exist: {cookie_file}")
+    video_id = video_id_from_url(url)
+    options = IngestOptions(
+        proxy_url=proxy_url or os.getenv("YTKB_YOUTUBE_PROXY_URL"),
+        webshare_username=os.getenv("YTKB_WEBSHARE_USERNAME"),
+        webshare_password=os.getenv("YTKB_WEBSHARE_PASSWORD"),
+        cookie_file=cookie_file,
+        js_runtime=js_runtime or os.getenv("YTKB_YTDLP_JS_RUNTIME"),
+        allow_video_download=allow_video_download,
+        whisper_model=whisper_model,
+    )
+    if dry_run:
+        metadata = fetch_metadata(url, options)
+        duration = int(metadata.get("duration") or 0)
+        console.print(
+            f"[yellow]Dry run[/yellow] {video_id}: {metadata.get('title') or video_id}; "
+            f"duration={duration}s; max_duration={max_duration}s; "
+            f"max_video_bytes={max_video_bytes:,}"
+        )
+        return
+    try:
+        result = ingest_media_asr(
+            url,
+            paths.data("normalized"),
+            ROOT / "media" / paths.id,
+            paths.data("manifests") / "media-asr",
+            languages.split(","),
+            options,
+            force=force,
+            max_video_bytes=max_video_bytes,
+            max_duration_seconds=max_duration,
+        )
+    except (PermissionError, ValueError, RuntimeError) as error:
+        raise typer.BadParameter(str(error)) from error
+    console.print(
+        f"[green]Saved ASR transcript[/green] {result.video.id}: "
+        f"{len(result.video.transcript.segments if result.video.transcript else [])} segments; "
+        f"retained media at {result.manifest['media_dir']}"
+    )
 
 
 @app.command("extract-concepts")

@@ -1,6 +1,6 @@
 # Experimental media download and ASR route
 
-Status: planned, local-only experiment  
+Status: implemented smoke test, local-only experiment
 Scope: optional per-video processing for authorized source material
 
 ## Purpose
@@ -23,7 +23,7 @@ This is an alternate input, not a replacement for the normal caption-first path.
    - Accept explicit video URLs or a reviewed configured workset; do not expand a whole channel implicitly.
    - Show the estimated storage and expected network volume before starting.
 
-2. **Acquire temporary video**
+2. **Acquire and retain video**
    - Use the existing paced downloader adapter with a media-specific timeout and bounded retries.
    - Save source metadata, exact URL, format, duration, byte count, checksum, and downloader provenance beside the temporary file.
    - Fail closed when the requested format, duration, or size is not acceptable.
@@ -55,10 +55,10 @@ This is an alternate input, not a replacement for the normal caption-first path.
    - Later add a manifest-owned cleanup preview listing video, audio, VTT, JSON, comparison reports, and disk usage, followed by explicit operator-controlled deletion or retention actions for both video and audio.
    - Preserve failed-run diagnostics and never infer deletion from process completion or failure.
 
-## Data-model and CLI changes needed later
+## Implemented smoke-test data model and CLI
 
-- Add `transcript_origin` and `transcript_provenance` to normalized video metadata and publish-safe source metadata without exposing raw ASR text. Use an explicit origin enum (`supplied`, `youtube_manual`, `youtube_generated`, `local_asr`) so local ASR is distinguishable from subtitles downloaded from YouTube.
-- Add ASR model/version, language, confidence summary, source hash, and review state to private manifests and candidate provenance.
+- Added `transcript_origin` to normalized transcript metadata with an explicit origin enum (`supplied`, `youtube_manual`, `youtube_generated`, `local_asr`) so local ASR is distinguishable from subtitles downloaded from YouTube.
+- The smoke test records ASR model, language, source hashes, retained-media paths, and provenance in a private per-video manifest. Review-state enforcement and caption comparison remain later phases.
 - Add an explicit route rather than overloading the current caption fallback, for example:
 
   ```powershell
@@ -68,7 +68,7 @@ This is an alternate input, not a replacement for the normal caption-first path.
   ```
 
 - Keep ordinary `ingest` unchanged. A separate command or explicit `--transcript-source asr` is safer than silently replacing available captions.
-- Add `--dry-run`, `--estimate-storage`, `--max-media-videos`, `--max-video-bytes`, and `--max-duration` controls. Defer `--cleanup-preview`, deletion, and retention/expiry controls until after the initial retained-media experiment.
+- Added `--dry-run`, `--max-video-bytes`, and `--max-duration` controls. Defer `--cleanup-preview`, deletion, and retention/expiry controls until after the initial retained-media experiment.
 - Extend validation so ASR-backed citations require valid ASR segment IDs, a matching normalized input hash, a recorded model/provenance record, and the required review state.
 
 ## Experimental evaluation
@@ -97,7 +97,7 @@ The route should remain experimental until it improves verified transcript usefu
 
 - The normal caption path remains unchanged and cache-first.
 - No media or raw ASR transcript reaches Git, `data/publish/`, `app/public/`, or GitHub Pages.
-- Every download has an explicit operator action, bounded resource policy, provenance, and an explicit retained-media state. Cleanup outcome is deferred until cleanup controls are implemented.
+- Every download has a bounded resource policy, provenance, and an explicit retained-media state. Cleanup outcome is deferred until cleanup controls are implemented.
 - ASR-only videos can enter extraction with stable private segment IDs and can be reviewed without inventing timestamps.
 - ASR-backed evidence cannot become approved or public without the required transcript and boundary review.
 - A reproducible experiment report compares ASR with available captions and records a go/no-go decision.

@@ -1,9 +1,12 @@
 from __future__ import annotations
 
 import shutil
+import subprocess
 import tempfile
 from dataclasses import dataclass
 from datetime import UTC, datetime
+from hashlib import sha256
+from importlib.util import find_spec
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
@@ -14,7 +17,7 @@ import yt_dlp
 from youtube_transcript_api import YouTubeTranscriptApi
 from youtube_transcript_api.proxies import GenericProxyConfig, WebshareProxyConfig
 
-from .models import Segment, TranscriptTrack, Video
+from .models import Segment, TranscriptOrigin, TranscriptTrack, Video
 from .utils import normalize_text, read_json, write_json
 
 truststore.inject_into_ssl()
@@ -52,8 +55,15 @@ class IngestOptions:
     js_runtime: str | None = None
     supplied_caption: Path | None = None
     allow_audio_download: bool = False
+    allow_video_download: bool = False
     rights_confirmed: bool = False
     whisper_model: str = "small"
+
+
+@dataclass(frozen=True)
+class MediaAsrResult:
+    video: Video
+    manifest: dict
 
 
 def video_id_from_url(value: str) -> str:
@@ -182,12 +192,17 @@ def fetch_transcript(
         language_code=transcript.language_code,
         is_generated=transcript.is_generated,
         acquisition_method="youtube-transcript-api",
+        transcript_origin=("youtube_generated" if transcript.is_generated else "youtube_manual"),
         segments=segments,
     )
 
 
 def transcript_from_caption(
-    path: Path, video_id: str, language: str, method: str
+    path: Path,
+    video_id: str,
+    language: str,
+    method: str,
+    transcript_origin: TranscriptOrigin | None = None,
 ) -> TranscriptTrack:
     def vtt_seconds(value: str) -> float:
         parts = value.replace(",", ".").split(":")
@@ -232,6 +247,9 @@ def transcript_from_caption(
         language_code=language,
         is_generated=False,
         acquisition_method=method,
+        transcript_origin=transcript_origin or (
+            "supplied" if method == "supplied-caption" else "youtube_manual"
+        ),
         segments=segments,
     )
 
@@ -258,6 +276,9 @@ def fetch_yt_dlp_subtitles(
         if not files:
             raise RuntimeError("yt-dlp returned no matching subtitle track")
         language = next((code for code in languages if f".{code}." in files[0].name), languages[0])
+        # yt-dlp does not expose the selected track type in the filename. The
+        # normalized origin is therefore conservative until the media-ASR
+        # route adds a track-selection manifest of its own.
         return transcript_from_caption(files[0], video_id, language, "yt-dlp-subtitles")
 
 
@@ -268,12 +289,10 @@ def transcribe_authorized_audio(
         raise PermissionError(
             "Local transcription requires --allow-audio-download and --confirm-rights"
         )
-    try:
-        from faster_whisper import WhisperModel
-    except ImportError as error:
+    if find_spec("faster_whisper") is None:
         raise RuntimeError(
             'Install the optional ASR dependencies with pip install -e ".[asr]"'
-        ) from error
+        )
     with tempfile.TemporaryDirectory(prefix="ytkb-audio-") as directory:
         template = str(Path(directory) / "%(id)s.%(ext)s")
         settings = _ydl_options(options)
@@ -281,30 +300,212 @@ def transcribe_authorized_audio(
         with yt_dlp.YoutubeDL(settings) as ydl:
             info = ydl.extract_info(url, download=True)
             audio_path = Path(ydl.prepare_filename(info))
-        model = WhisperModel(options.whisper_model, device="auto", compute_type="int8")
-        generated, info = model.transcribe(str(audio_path), language=language)
-        segments = []
-        for index, item in enumerate(generated):
-            text = normalize_text(item.text)
-            if text:
-                segments.append(
-                    Segment(
-                        id=f"{video_id}:{index:05d}",
-                        video_id=video_id,
-                        text=item.text,
-                        normalized_text=text,
-                        start_ms=round(item.start * 1000),
-                        duration_ms=max(1, round((item.end - item.start) * 1000)),
-                    )
-                )
-        return TranscriptTrack(
-            video_id=video_id,
-            language=info.language,
-            language_code=info.language,
-            is_generated=True,
-            acquisition_method=f"faster-whisper:{options.whisper_model}",
-            segments=segments,
+        return transcribe_authorized_audio_file(audio_path, video_id, language, options)
+
+
+def transcribe_authorized_audio_file(
+    audio_path: Path, video_id: str, language: str, options: IngestOptions
+) -> TranscriptTrack:
+    if find_spec("faster_whisper") is None:
+        raise RuntimeError(
+            'Install the optional ASR dependencies with pip install -e ".[asr]"'
         )
+    from faster_whisper import WhisperModel
+
+    model = WhisperModel(options.whisper_model, device="auto", compute_type="int8")
+    generated, info = model.transcribe(str(audio_path), language=language)
+    segments = []
+    for index, item in enumerate(generated):
+        text = normalize_text(item.text)
+        if text:
+            segments.append(
+                Segment(
+                    id=f"{video_id}:asr:{index:05d}",
+                    video_id=video_id,
+                    text=item.text,
+                    normalized_text=text,
+                    start_ms=round(item.start * 1000),
+                    duration_ms=max(1, round((item.end - item.start) * 1000)),
+                )
+            )
+    return TranscriptTrack(
+        video_id=video_id,
+        language=info.language,
+        language_code=info.language,
+        is_generated=True,
+        acquisition_method=f"faster-whisper:{options.whisper_model}",
+        transcript_origin="local_asr",
+        segments=segments,
+    )
+
+
+def _sha256_file(path: Path) -> str:
+    digest = sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return "sha256:" + digest.hexdigest()
+
+
+def _write_asr_vtt(path: Path, segments: list[Segment]) -> None:
+    def timestamp(milliseconds: int) -> str:
+        hours, remainder = divmod(milliseconds, 3_600_000)
+        minutes, remainder = divmod(remainder, 60_000)
+        seconds, milliseconds = divmod(remainder, 1_000)
+        return f"{hours:02d}:{minutes:02d}:{seconds:02d}.{milliseconds:03d}"
+
+    lines = ["WEBVTT", ""]
+    for segment in segments:
+        lines.extend(
+            [
+                segment.id,
+                f"{timestamp(segment.start_ms)} --> {timestamp(segment.end_ms)}",
+                segment.text.replace("\n", " "),
+                "",
+            ]
+        )
+    path.write_text("\n".join(lines), encoding="utf-8")
+
+
+def _download_media_video(
+    url: str, media_dir: Path, options: IngestOptions
+) -> tuple[Path, dict]:
+    media_dir.mkdir(parents=True, exist_ok=True)
+    settings = _ydl_options(options)
+    settings.update(
+        {
+            "format": "best[ext=mp4]/best",
+            "outtmpl": str(media_dir / "video.%(ext)s"),
+            "noplaylist": True,
+        }
+    )
+    with yt_dlp.YoutubeDL(settings) as ydl:
+        info = ydl.extract_info(url, download=True)
+        prepared = Path(ydl.prepare_filename(info))
+    candidates = [prepared, *sorted(media_dir.glob("video.*"))]
+    video_path = next((path for path in candidates if path.is_file()), None)
+    if video_path is None:
+        raise RuntimeError("yt-dlp completed without producing a video file")
+    return video_path, info
+
+
+def _extract_asr_audio(video_path: Path, audio_path: Path) -> dict:
+    ffmpeg = shutil.which("ffmpeg")
+    if not ffmpeg:
+        raise RuntimeError("ffmpeg is required for the media-ASR smoke test")
+    command = [
+        ffmpeg,
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-y",
+        "-i",
+        str(video_path),
+        "-vn",
+        "-ac",
+        "1",
+        "-ar",
+        "16000",
+        "-c:a",
+        "pcm_s16le",
+        str(audio_path),
+    ]
+    subprocess.run(command, check=True, capture_output=True, text=True)
+    return {"command": command, "sample_rate": 16000, "channels": 1, "codec": "pcm_s16le"}
+
+
+def ingest_media_asr(
+    url: str,
+    normalized_dir: Path,
+    media_root: Path,
+    manifest_dir: Path,
+    languages: list[str],
+    options: IngestOptions,
+    *,
+    force: bool = False,
+    max_video_bytes: int | None = None,
+    max_duration_seconds: int | None = None,
+) -> MediaAsrResult:
+    """Download one private video, retain media, and normalize local ASR output."""
+    if not options.allow_video_download:
+        raise PermissionError("Media ASR requires --allow-video-download")
+    video_id = video_id_from_url(url)
+    media_dir = media_root / video_id
+    normalized_path = normalized_dir / f"{video_id}.json"
+    manifest_path = manifest_dir / f"{video_id}.json"
+    if manifest_path.exists() and normalized_path.exists() and not force:
+        return MediaAsrResult(
+            video=Video.model_validate(read_json(normalized_path)),
+            manifest=read_json(manifest_path),
+        )
+
+    video_path, metadata = _download_media_video(url, media_dir, options)
+    duration_seconds = int(metadata.get("duration") or 0)
+    if max_video_bytes is not None and video_path.stat().st_size > max_video_bytes:
+        raise ValueError(f"Downloaded video exceeds --max-video-bytes ({max_video_bytes})")
+    if max_duration_seconds is not None and duration_seconds > max_duration_seconds:
+        raise ValueError(f"Video exceeds --max-duration ({max_duration_seconds}s)")
+
+    audio_path = media_dir / "audio.wav"
+    audio_details = _extract_asr_audio(video_path, audio_path)
+    try:
+        transcript = transcribe_authorized_audio_file(audio_path, video_id, languages[0], options)
+    except Exception:
+        # Keep both retained artifacts for later operator inspection.
+        raise
+    vtt_path = media_dir / "asr.vtt"
+    json_path = media_dir / "asr.json"
+    _write_asr_vtt(vtt_path, transcript.segments)
+    source_hash = _sha256_file(video_path)
+    audio_hash = _sha256_file(audio_path)
+    video = Video(
+        id=video_id,
+        title=metadata.get("title") or video_id,
+        canonical_url=f"https://www.youtube.com/watch?v={video_id}",
+        channel_id=metadata.get("channel_id") or "",
+        channel_name=metadata.get("channel") or metadata.get("uploader") or "",
+        duration_ms=round(duration_seconds * 1000),
+        published_at=metadata.get("upload_date"),
+        ingested_at=datetime.now(UTC),
+        thumbnail_url=metadata.get("thumbnail"),
+        language=transcript.language_code,
+        transcript=transcript,
+    )
+    write_json(normalized_path, video)
+    write_json(
+        json_path,
+        {
+            "video_id": video_id,
+            "transcript_origin": "local_asr",
+            "model": options.whisper_model,
+            "language": transcript.language_code,
+            "segments": [segment.model_dump(mode="json") for segment in transcript.segments],
+        },
+    )
+    manifest = {
+        "video_id": video_id,
+        "source_url": url,
+        "retained_media": True,
+        "media_dir": str(media_dir),
+        "video_path": str(video_path),
+        "audio_path": str(audio_path),
+        "subtitle_path": str(vtt_path),
+        "asr_json_path": str(json_path),
+        "video_sha256": source_hash,
+        "audio_sha256": audio_hash,
+        "video_bytes": video_path.stat().st_size,
+        "duration_ms": video.duration_ms,
+        "audio": audio_details,
+        "transcript_origin": "local_asr",
+        "transcript_provenance": {
+            "engine": "faster-whisper",
+            "model": options.whisper_model,
+            "language": transcript.language_code,
+        },
+        "created_at": datetime.now(UTC).isoformat(),
+    }
+    write_json(manifest_path, manifest)
+    return MediaAsrResult(video=video, manifest=manifest)
 
 
 def ingest_video(
