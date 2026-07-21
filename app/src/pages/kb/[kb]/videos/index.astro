@@ -25,7 +25,7 @@ const channels = [...new Set(corpus.videos.map((video) => video.channel_name.tri
       return <article class="video-channel-card">
         <div>
           <p class="eyebrow">Channel</p>
-          <h2><a href={`${channelRoot}/`}>{channel}</a></h2>
+          <h2><a href={`${channelRoot}/1/`}>{channel}</a></h2>
           <p>{videos.length} source video{videos.length === 1 ? '' : 's'} · {pages} batch{pages === 1 ? '' : 'es'}</p>
         </div>
         <nav aria-label={`Batches for ${channel}`} class="video-batch-links">

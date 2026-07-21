@@ -4,7 +4,10 @@ import progressData from '../data/generated/table-tennis-progress.json';
 
 const progress = progressData as { sources: Array<{ id: string; name: string; url: string; discovered: number; configured: number; ingested: number; evidence: number; concepts: number }> };
 const base = import.meta.env.BASE_URL;
+const acceptedSourceIds = new Set(['kakaluser-playlists']);
+const acceptedCandidates = progress.sources.filter((source) => acceptedSourceIds.has(source.id));
 const candidates = progress.sources
+  .filter((source) => !acceptedSourceIds.has(source.id))
   .map((source) => ({
     ...source,
     score: Math.round((source.concepts / Math.max(1, progress.sources.reduce((total, item) => total + item.concepts, 0))) * 100),
@@ -60,7 +63,21 @@ const recommendations = [
     <div class="eyebrow">Local operator workspace</div>
     <h1>Discover source channels</h1>
     <p>Rank and inspect YouTube channels before adding them to the table-tennis knowledge base. This page does not automatically authorize, ingest, or publish a source.</p>
-    <div class="dashboard-meta"><span>{candidates.length} registered channels</span><span>KB: table-tennis</span><span>Selection remains operator-controlled</span></div>
+    <div class="dashboard-meta"><span>{progress.sources.length} registered sources</span><span>KB: table-tennis</span><span>Selection remains operator-controlled</span></div>
+  </section>
+
+  <section class="dashboard-section">
+    <div class="section-kicker">Accepted, not activated</div>
+    <h2>Sources deferred for future processing</h2>
+    <p>These sources were accepted as candidates but remain disabled. They will not be discovered, ingested, or processed until explicitly activated in the source configuration.</p>
+    <div class="dashboard-index">
+      {acceptedCandidates.map((source, index) => <article class="dashboard-index-row">
+        <span class="dashboard-index-number">A{index + 1}</span>
+        <span class="dashboard-index-copy"><strong>{source.name}</strong><small>Accepted source candidate · processing disabled</small></span>
+        <span class="dashboard-index-metric">Deferred · {source.discovered} discovered · {source.ingested} ingested</span>
+        <a href={source.url} target="_blank" rel="noreferrer">Inspect playlists â†—</a>
+      </article>)}
+    </div>
   </section>
 
   <section class="dashboard-section">

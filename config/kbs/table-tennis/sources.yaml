@@ -20,6 +20,12 @@ sources:
     observed_channel_name: PingSunday — coach XiaoHan playlist
     featured_coach: Xiao Han (playlist title attribution; not independently verified)
     notes: Ingest only entries from this playlist. Do not ingest the rest of the PingSunday channel.
+  - id: kakaluser-playlists
+    type: channel-playlists
+    url: https://www.youtube.com/@kakaluser/playlists
+    enabled: false
+    status: accepted_candidate
+    notes: Accepted future source candidate. Keep disabled until an explicit expansion decision; do not discover or process this source yet.
 videos:
   - id: TbJCmatwqG8
     source_id: pingsunday-xiaohan-playlist

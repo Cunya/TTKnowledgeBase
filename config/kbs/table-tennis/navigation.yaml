@@ -29,6 +29,7 @@ sections:
     - concept-flat-hit-swing-size-control
     - concept-heavy-backspin-and-no-spin-push-variation
     - concept-flat-push
+    - concept-aggressive-push-only-against-weak-spin
     children:
     - id: forehand-push
       label: Forehand push
@@ -98,7 +99,6 @@ sections:
     - concept-brush-then-accelerate
     - concept-hook-loop
     - concept-guiding-the-ball-forward-and-down-on-heavy-backspin
-    - concept-defense-is-crucial
     - concept-side-cut
     - concept-upward-forward-force-for-topspin
     children:
@@ -113,7 +113,6 @@ sections:
       - concept-stance-and-positioning-for-looping
       - concept-forearm-position-relative-to-the-elbow
       - concept-stable-center-of-gravity-and-bent-knees
-      - concept-definition-of-a-good-shot
       - concept-shoulder-dip-during-forehand-loop
       children:
       - id: forehand-loop-variations
@@ -127,10 +126,8 @@ sections:
         - concept-forehand-loop-down-the-line
         - concept-backspin-ball-timing
         - concept-looping-against-backspin-by-lifting-first
-        - concept-forehand-backspin-receive
         - concept-compact-motion-for-heavy-backspin
         - concept-control-power-rather-than-maxing-out
-        - concept-aggressive-push-only-against-weak-spin
         children: []
       - id: forehand-loop-motion
         label: Motion parts
@@ -140,7 +137,6 @@ sections:
         - concept-timing-by-bounce-type
         - concept-forehand-attack-forearm-driven-motion
         - concept-forehand-contact-spacing-and-racket-distance
-        - concept-push-flick-timing-and-contact
         children:
         - id: forehand-loop-preparation
           label: Preparation and spacing
@@ -295,6 +291,50 @@ sections:
     - concept-finger-and-forearm-spin-generation
     - concept-fast-long-forehand-serve
     children:
+    - id: serve-types
+      label: Serve types
+      description: Named serve families and their characteristic mechanics, spin variants, and tactical uses.
+      concept_ids: []
+      children:
+      - id: forehand-serves
+        label: Forehand serves
+        description: Forehand-side serve families organized by racket path, spin production, disguise, and placement.
+        concept_ids: []
+        children:
+        - id: hook-serve
+          label: Hook serve
+          description: A compact hooked serve family built around lateral brushing, deceptive contact, and sidespin variations.
+          concept_ids:
+          - concept-hook-serve-types
+          - concept-hook-serve-mechanics
+          - concept-hook-serve-deception-and-placement
+          - concept-curved-serve-trajectory
+          - concept-hook-tip-first-contact
+          - concept-backspin-serve-under-ball-contact
+          - concept-side-underspin-contact-on-lower-half-of-racket
+          children: []
+        - id: pendulum-serve
+          label: Pendulum serve
+          description: Named serve family awaiting directly reviewed pendulum-specific material; generic sidespin concepts remain in shared Serve sections.
+          concept_ids: []
+          children: []
+        - id: reverse-pendulum-serve
+          label: Reverse pendulum serve
+          description: Directly comparative material currently comes from the backhand-serve article; generic serving concepts remain in shared Serve sections.
+          concept_ids:
+          - concept-backhand-serve
+          children: []
+      - id: backhand-serves
+        label: Backhand serves
+        description: Backhand-side serving mechanics and shared spin-generation principles; named subtypes can be added when directly supported by reviewed evidence.
+        concept_ids:
+        - concept-backhand-serve
+        - concept-preparation-stroke-and-backswing-for-backhand-serve
+        - concept-low-contact-point-for-backhand-serve
+        - concept-racket-angle-and-wrist-snap-for-backhand-serve
+        - concept-open-forearm-and-wrist-for-serve-preparation
+        - concept-serve-action-decomposition
+        children: []
     - id: serve-mechanics
       label: Serve mechanics
       description: Build a repeatable serve action, contact, and follow-through.
@@ -394,6 +434,7 @@ sections:
       - concept-mental-commitment-in-receive
       - concept-avoid-pulling-the-hand-on-side-spin-receive
       - concept-bounce-phase-shot-timing
+      - concept-push-flick-timing-and-contact
       children: []
     - id: receive-shot-selection
       label: Receive shot selection
@@ -405,6 +446,7 @@ sections:
       - concept-neutral-ball-receive-handling
       - concept-power-flick
       - concept-side-spin-topspin-flick
+      - concept-forehand-backspin-receive
       children: []
 - id: fundamentals
   label: Movement and contact fundamentals
@@ -447,6 +489,7 @@ sections:
   - concept-backhand-push-wrist-cocked-down
   - concept-short-receive-preparation-and-finish
   - concept-wrapping-racket-path-around-the-ball
+  - concept-definition-of-a-good-shot
   children:
   - id: grip-and-wrist-control
     label: Grip and wrist control
@@ -481,6 +524,7 @@ sections:
     - concept-middle-position
     - concept-parallel-step
     - concept-side-slide-step
+    - concept-accurate-foot-placement-and-balance
     children: []
   - id: power-and-coordination
     label: Power and coordination
@@ -530,7 +574,6 @@ sections:
     - concept-forearm-driven-motion
     - concept-body-rotation-through-the-stroke
     - concept-borrow-incoming-force
-    - concept-self-review-through-recording
     children: []
   - id: racket-ball-interaction
     label: Racket-ball interaction
@@ -563,6 +606,7 @@ sections:
   - concept-random-placement-drills
   - concept-short-game-as-a-secret-weapon
   - concept-training-as-a-process-of-adjustment
+  - concept-self-review-through-recording
   children:
   - id: technique-acquisition
     label: Technique acquisition
@@ -592,7 +636,6 @@ sections:
   - concept-variation-over-pure-power-in-in-table-play
   - concept-keep-the-ball-low
   - concept-probing-the-opponent
-  - concept-accurate-foot-placement-and-balance
   - concept-add-power-when-the-return-is-weak
   - concept-avoid-the-same-spot-on-consecutive-attacks
   - concept-use-placement-to-move-the-opponent-and-lower-return-quality
@@ -610,6 +653,7 @@ sections:
   - concept-safe-return-first-then-attack
   - concept-speed-and-placement-over-spin-or-power-on-third-ball
   - concept-variation-in-pace-or-tempo
+  - concept-defense-is-crucial
   children:
   - id: serve-attack
     label: Serve and third-ball attack

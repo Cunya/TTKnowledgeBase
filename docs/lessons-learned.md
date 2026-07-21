@@ -8,3 +8,4 @@
 ## 2026-07-21
 
 - On Windows, terminating the monitor's parent cp process does not reliably terminate nested Python discovery workers. Stop handling must terminate the verified process tree and discovery stages need bounded timeouts after sleep/network resumes.
+- Atlas placement needs to be checked against the full editorial context: label, definition, facets, evidence summary, and evidence reasons. A concept can pass label-based checks while its summary clearly belongs to a receive, push, fundamentals, or practice branch.

@@ -378,11 +378,11 @@ Track relation counts, concepts with no outgoing relations, cross-listed concept
 
 ### P1-18 — Audit atlas parent assignments
 
-**Status:** In progress; this pass corrected two misleading assignments.
+**Status:** In progress; the 2026-07-21 summary-aware pass corrected seven misleading assignments.
 
 **Finding:** `Hop step` was listed under Backhand loop even though its evidence describes a footwork adjustment between strokes. `Preparation stroke and backswing for backhand serve` was listed under Serve receive despite describing serve mechanics.
 
-**Completed:** Moved `Hop step` to Fundamentals → Footwork and spacing, and moved the backhand-serve preparation concept to Serve → Serve mechanics. Reviewed the remaining obvious serve/receive and flick/receive label conflicts; the remaining receive placements describe incoming-ball or receive-shot decisions.
+**Completed:** Moved `Hop step` to Fundamentals → Footwork and spacing, and moved the backhand-serve preparation concept to Serve → Serve mechanics. The summary-aware pass also moved `Definition of a good shot`, `Defense is crucial`, and `Accurate foot placement and balance` out of specific shot/strategy placements into shared fundamentals or strategy; moved `Self-review through recording` to Training; and moved `Aggressive push only against weak spin`, `Push-flick timing and contact`, and `Forehand backspin receive` to the push/serve-receive paths supported by their summaries. Reviewed the remaining obvious serve/receive and flick/receive label conflicts; the remaining receive placements describe incoming-ball or receive-shot decisions.
 
 **Done when:** every atlas placement is defensible from the concept label, definition, evidence summary, and facets, with navigation validation included in the publication checks.
 
@@ -432,3 +432,15 @@ Track relation counts, concepts with no outgoing relations, cross-listed concept
 
 **Acceptance:** Stop terminates the verified Windows process tree; discovery and ingest have bounded per-stage/per-request timeouts; the monitor records an explicit timeout/interrupted outcome and leaves no processor descendants running. Implementation is present in `scripts/processor-monitor.mjs` and `scripts/run-cp.py`; a forced timeout smoke test passed.
 # Automatic new-concept promotion is now implemented: high-confidence explicit `new` candidates with valid evidence can create canonical YAML, while ambiguous and duplicate candidates remain deferred. `process-pending --retry-deferred` backfills previously processed videos.
+
+### P1-21 — Expose serve-type hierarchy in the atlas
+
+**Status:** Implemented (2026-07-21).
+
+**Finding:** Generic Serve sections existed, but named serve families were not visible as navigation branches, making Hook, Pendulum, and Reverse Pendulum material difficult to browse by type. Backhand serve is an execution-side/mechanics category rather than a named serve family.
+
+**Acceptance:** Add a Serve types branch with Forehand serves and Backhand serves parent groups; place named serve-family children and related existing concepts beneath the supported parent; preserve generic mechanics, spin, placement, and third-ball sections as shared cross-links; do not invent unsupported concepts or evidence.
+
+**Evidence:** `config/kbs/table-tennis/navigation.yaml` and the 2026-07-21 session log. Full site build and navigation validation remain required after this change.
+
+**Audit note:** The first grouping pass over-associated generic sidespin/disguise concepts with Pendulum and Reverse Pendulum. Those links were removed; Pendulum remains empty until direct reviewed evidence is available, and Reverse Pendulum retains only the directly comparative backhand-serve concept.
