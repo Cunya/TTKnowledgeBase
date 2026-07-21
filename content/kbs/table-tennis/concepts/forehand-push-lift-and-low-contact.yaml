@@ -10,9 +10,13 @@ evidence_summary: >-
   Forehand push lift and low contact brings together several connected ideas. Forehand pushing
   needs the hand lifted to reach the lower half of the ball and that the stroke should drag and
   scoop from below. Forehand push mechanics as extending the forearm forward through the ball to
-  avoid the ball stopping on the racket. Together, these principles show how the topic is applied
-  in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:205bbc6dd24956b6dee8a929923191a984815d1dbe350cf3408900a4dc482f59"
+  avoid the ball stopping on the racket. The player to get the center of gravity forward, keep the
+  racket angle closed, and extend the forearm forward then down so the ball clears the net. The
+  same principle to forehand pushes, warns against scooping short forehand balls, and recommends
+  stepping in and targeting the back of the ball with a higher hand on side-topspin. Together,
+  these principles show how the topic is applied in practice while preserving the relevant
+  distinctions and constraints.
+evidence_summary_source_hash: "sha256:7ccfd809b88a1fb38b6ed855df6018fd7c46dbb8cee3f06461de0c17bcd78815"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -82,3 +86,38 @@ evidence:
         - 1DjyGrpOiVY:00043
         - 1DjyGrpOiVY:00044
         - 1DjyGrpOiVY:00045
+  - id: IgnpsIZW3tM-concept-forehand-push-lift-and-low-contact-reviewed
+    evidence_type: explanation
+    excerpt: For forehand pushes, keep the racket angle closed, contact low, and extend forward and down through the ball to avoid netting or popping up.
+    reason: The speaker instructs the player to get the center of gravity forward, keep the racket angle closed, and extend the forearm forward then down so the ball clears the net.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: IgnpsIZW3tM
+      start_ms: 663433
+      end_ms: 690266
+      url: https://www.youtube.com/watch?v=IgnpsIZW3tM&t=663s
+      segment_ids:
+        - IgnpsIZW3tM:00142
+        - IgnpsIZW3tM:00145
+        - IgnpsIZW3tM:00146
+  - id: 2HMLpiaJLL0-concept-forehand-push-lift-and-low-contact-reviewed
+    evidence_type: explanation
+    excerpt: On forehand push receives, contact should be controlled by ball height and spin, often using the back or lower half of the ball rather than scooping underneath.
+    reason: The speaker explicitly applies the same principle to forehand pushes, warns against scooping short forehand balls, and recommends stepping in and targeting the back of the ball with a higher hand on side-topspin.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 2HMLpiaJLL0
+      start_ms: 224466
+      end_ms: 251200
+      url: https://www.youtube.com/watch?v=2HMLpiaJLL0&t=224s
+      segment_ids:
+        - 2HMLpiaJLL0:00046
+        - 2HMLpiaJLL0:00047
+        - 2HMLpiaJLL0:00048
+        - 2HMLpiaJLL0:00049
+        - 2HMLpiaJLL0:00050
+        - 2HMLpiaJLL0:00051

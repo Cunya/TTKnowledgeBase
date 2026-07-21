@@ -375,6 +375,53 @@ evidence:
         - vCa7A9gyOT8:00002
         - vCa7A9gyOT8:00003
         - vCa7A9gyOT8:00008
+  - id: 87-UYdrPEEc-concept-forehand-drive-reviewed
+    evidence_type: explanation
+    excerpt: A forehand drive uses a compact, fast motion and is distinct from looping because it emphasizes direct hitting rather than relaxed brush-then-accelerate timing.
+    reason: Directly identifies the drive and says it emphasizes a compact overall motion and tight body movement.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 87-UYdrPEEc
+      start_ms: 548533
+      end_ms: 566433
+      url: https://www.youtube.com/watch?v=87-UYdrPEEc&t=548s
+      segment_ids:
+        - 87-UYdrPEEc:00120
+        - 87-UYdrPEEc:00121
+        - 87-UYdrPEEc:00123
+        - 87-UYdrPEEc:00124
+  - id: uL8In-_NToM-concept-forehand-drive-reviewed
+    evidence_type: explanation
+    excerpt: A compact forehand attacking stroke that emphasizes short motion, speed, and stopping the swing early near the table.
+    reason: The speaker explicitly applies the 'short, fast, stop' principle to the forehand, describing compact motion and early stop near the table.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: uL8In-_NToM
+      start_ms: 731533
+      end_ms: 760800
+      url: https://www.youtube.com/watch?v=uL8In-_NToM&t=731s
+      segment_ids:
+        - uL8In-_NToM:00164
+        - uL8In-_NToM:00169
+  - id: qLCA9OYSFl4-concept-forehand-drive-reviewed
+    evidence_type: definition
+    excerpt: A forehand stroke intended as a clean hit with minimal friction and forward driving through the ball.
+    reason: The speaker defines a proper forehand drive as a clean hit with minimal friction, driven forward through the ball.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: qLCA9OYSFl4
+      start_ms: 33500
+      end_ms: 50666
+      url: https://www.youtube.com/watch?v=qLCA9OYSFl4&t=33s
+      segment_ids:
+        - qLCA9OYSFl4:00008
+        - qLCA9OYSFl4:00010
 relations:
   - relation_type: contrasts_with
     target_concept_id: concept-forehand-loop

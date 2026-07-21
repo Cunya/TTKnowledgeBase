@@ -14,9 +14,11 @@ evidence_summary: >-
   ball hits the table. The preferred contact timing as the peak of the bounce, not the rising
   phase. The best hitting point as the initial descent and explicitly excludes the peak and upward
   phase. To wait, let the ball fall, and start swinging during the downward phase or after the
-  bounce point. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:b55a4b214e8d125a776695097f321e362aca517f3a58453375e5206b8ba68d6c"
+  bounce point. Whiffs happen when the toss and swing are out of sync and that serve quality
+  depends on placing the first bounce in the correct zone for short and long serves. Together,
+  these principles show how the topic is applied in practice while preserving the relevant
+  distinctions and constraints.
+evidence_summary_source_hash: "sha256:4aa9b537f4d96ab29dd01c6cde1c9b1aa670032359fdc04eb7f4ca79f2817a8a"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -147,3 +149,22 @@ evidence:
       url: https://www.youtube.com/watch?v=NMa0xKa1kpo&t=413s
       segment_ids:
         - NMa0xKa1kpo:00073
+  - id: phTj82vlVqs-concept-timing-by-bounce-type-reviewed
+    evidence_type: explanation
+    excerpt: Coordinating swing timing with the ball's bounce and descent so contact happens at the right phase.
+    reason: The speaker explains that whiffs happen when the toss and swing are out of sync and that serve quality depends on placing the first bounce in the correct zone for short and long serves.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: phTj82vlVqs
+      start_ms: 291000
+      end_ms: 313766
+      url: https://www.youtube.com/watch?v=phTj82vlVqs&t=291s
+      segment_ids:
+        - phTj82vlVqs:00064
+        - phTj82vlVqs:00065
+        - phTj82vlVqs:00066
+        - phTj82vlVqs:00067
+        - phTj82vlVqs:00068
+        - phTj82vlVqs:00069

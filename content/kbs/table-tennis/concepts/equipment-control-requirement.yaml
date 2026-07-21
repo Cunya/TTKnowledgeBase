@@ -9,9 +9,11 @@ evidence_summary: >-
   Equipment control requirement brings together several connected ideas. The best racket is the
   one that suits you and must be controllable in match play, warning against rackets that are too
   bouncy or too powerful. To choose the right paddle and stiffness affects ball height and spin
-  control. Together, these principles show how the topic is applied in practice while preserving
-  the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:bc580188980045005b324180208025aab65e9ba29e98ae828511431cbe25aeff"
+  control. A useful contrast is between springy rubbers and tacky or hybrid rubbers and says
+  overly bouncy rubbers release the ball too quickly. Instability and errors to very light rackets
+  and recommends a standard or slightly heavier blade for control. Together, these principles show
+  how the topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:b104fcd5d2c0e2d459b27d80b4c9c4d4849e5961fced25d3407aabd902157359"
 evidence_summary_generator: "deterministic"
 concept_type: equipment
 facets:
@@ -67,3 +69,39 @@ evidence:
         - x5cNiaE61qg:00009
         - x5cNiaE61qg:00010
         - x5cNiaE61qg:00011
+  - id: W8EqqK7wNKY-concept-equipment-control-requirement-reviewed
+    evidence_type: explanation
+    excerpt: The idea that backhand looping requires rubber that can grip the ball and avoid excessive catapult, rather than an overly bouncy setup.
+    reason: The speaker contrasts springy rubbers with tacky or hybrid rubbers and says overly bouncy rubbers release the ball too quickly.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: W8EqqK7wNKY
+      start_ms: 3700
+      end_ms: 30533
+      url: https://www.youtube.com/watch?v=W8EqqK7wNKY&t=3s
+      segment_ids:
+        - W8EqqK7wNKY:00001
+        - W8EqqK7wNKY:00002
+        - W8EqqK7wNKY:00003
+        - W8EqqK7wNKY:00004
+        - W8EqqK7wNKY:00005
+  - id: qLCA9OYSFl4-concept-equipment-control-requirement-reviewed
+    evidence_type: explanation
+    excerpt: A racket or blade should have enough weight and stability to keep the face steady during impact; too-light setups reduce control.
+    reason: The speaker attributes instability and errors to very light rackets and recommends a standard or slightly heavier blade for control.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: qLCA9OYSFl4
+      start_ms: 267133
+      end_ms: 290166
+      url: https://www.youtube.com/watch?v=qLCA9OYSFl4&t=267s
+      segment_ids:
+        - qLCA9OYSFl4:00061
+        - qLCA9OYSFl4:00062
+        - qLCA9OYSFl4:00063
+        - qLCA9OYSFl4:00064
+        - qLCA9OYSFl4:00065

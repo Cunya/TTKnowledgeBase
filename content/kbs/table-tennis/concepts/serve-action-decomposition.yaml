@@ -536,4 +536,20 @@ evidence:
       segment_ids:
         - P21-_dtUzE8:00296
         - P21-_dtUzE8:00307
+  - id: 6teuLAHljCk-concept-serve-action-decomposition-reviewed
+    evidence_type: explanation
+    excerpt: Breaking the serve into distinct phases so spin, speed, and follow-through can be trained separately and then combined.
+    reason: The speaker repeatedly divides the motion into phases/segments and maps contact, brushing, speed, and follow-through onto those segments.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 6teuLAHljCk
+      start_ms: 223466
+      end_ms: 251666
+      url: https://www.youtube.com/watch?v=6teuLAHljCk&t=223s
+      segment_ids:
+        - 6teuLAHljCk:00050
+        - 6teuLAHljCk:00054
+        - 6teuLAHljCk:00057
 relations: []

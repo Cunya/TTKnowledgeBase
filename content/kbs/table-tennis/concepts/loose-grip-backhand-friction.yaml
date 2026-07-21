@@ -685,6 +685,69 @@ evidence:
       segment_ids:
         - u2A5PNggIqg:00000
         - u2A5PNggIqg:00004
+  - id: x8OSRSRukeI-concept-loose-grip-backhand-friction-reviewed
+    evidence_type: definition
+    excerpt: Create spin by making the racket face move quickly and brush the ball at contact, rather than muscling through with the arm.
+    reason: The speaker defines friction as racket-face rotation and concentrated speed at the moment of friction, not whole-stroke brute force.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: x8OSRSRukeI
+      start_ms: 311100
+      end_ms: 338766
+      url: https://www.youtube.com/watch?v=x8OSRSRukeI&t=311s
+      segment_ids:
+        - x8OSRSRukeI:00079
+        - x8OSRSRukeI:00080
+        - x8OSRSRukeI:00083
+  - id: phTj82vlVqs-concept-generating-spin-at-contact-reviewed
+    evidence_type: explanation
+    excerpt: Creating spin through compact brushing, fast acceleration, and an abrupt stop at impact.
+    reason: 'The speaker gives three secrets for maximum friction: compact motion, fast acceleration, and a sharp stop, then says fingers generate friction and the motion should be whip-like.'
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: phTj82vlVqs
+      start_ms: 177066
+      end_ms: 204366
+      url: https://www.youtube.com/watch?v=phTj82vlVqs&t=177s
+      segment_ids:
+        - phTj82vlVqs:00042
+        - phTj82vlVqs:00043
+        - phTj82vlVqs:00044
+        - phTj82vlVqs:00046
+  - id: EjtP5uCaULU-concept-loose-grip-backhand-friction-reviewed
+    evidence_type: explanation
+    excerpt: Using relaxed fingers and a controlled brushing contact at the instant of contact to create friction and spin before arm power takes over.
+    reason: The speaker repeatedly says the arm must stay relaxed so the fingers can grip the ball first, then the arm accelerates afterward.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: EjtP5uCaULU
+      start_ms: 616066
+      end_ms: 635033
+      url: https://www.youtube.com/watch?v=EjtP5uCaULU&t=616s
+      segment_ids:
+        - EjtP5uCaULU:00145
+        - EjtP5uCaULU:00148
+  - id: VYMqgnrDAhk-candidate-5-reviewed
+    evidence_type: explanation
+    excerpt: Applying friction through brushing contact rather than relying on passive touch or hard impact.
+    reason: He states that errors come from not enough friction and that the solution is to master brushing the ball.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: VYMqgnrDAhk
+      start_ms: 416666
+      end_ms: 438866
+      url: https://www.youtube.com/watch?v=VYMqgnrDAhk&t=416s
+      segment_ids:
+        - VYMqgnrDAhk:00086
+        - VYMqgnrDAhk:00090
 relations:
   - relation_type: used_with
     target_concept_id: concept-backspin-serve-under-ball-contact

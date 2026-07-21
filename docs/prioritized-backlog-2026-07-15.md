@@ -356,6 +356,16 @@ Track relation counts, concepts with no outgoing relations, cross-listed concept
 
 ## Deferred by design
 
+### P1-03 follow-up — rank concept evidence moments by relevance
+
+**Status:** Complete (2026-07-20).
+
+**Finding:** Concept pages exposed all supporting moments in processing order, making the strongest examples harder to find as evidence volume grew.
+
+**Acceptance:** Apply a deterministic, review-grounded relevance ranking; show the internal numeric score only in local development; keep production ordering useful without publishing internal scoring details; display no more than the top 20 moments per concept and no more than 5 in each of the four evidence subsections.
+
+**Evidence:** `app/src/lib/evidenceRelevance.ts`, the concept page and evidence components, and the 2026-07-20 session log. Astro build passed with 0 diagnostics.
+
 ### P1-16 hardening — clarify stage failures and monitor retries
 
 **Status:** Complete (2026-07-20).
@@ -365,6 +375,16 @@ Track relation counts, concepts with no outgoing relations, cross-listed concept
 **Acceptance:** Capture bounded stdout/stderr per stage, record an explicit failed outcome/reason, and expose a consecutive-failure retry count that resets after success.
 
 **Evidence:** `scripts/run-cp.py`, `scripts/processor-monitor.mjs`, and the 2026-07-20 session log.
+
+### P1-18 — Audit atlas parent assignments
+
+**Status:** In progress; this pass corrected two misleading assignments.
+
+**Finding:** `Hop step` was listed under Backhand loop even though its evidence describes a footwork adjustment between strokes. `Preparation stroke and backswing for backhand serve` was listed under Serve receive despite describing serve mechanics.
+
+**Completed:** Moved `Hop step` to Fundamentals → Footwork and spacing, and moved the backhand-serve preparation concept to Serve → Serve mechanics. Reviewed the remaining obvious serve/receive and flick/receive label conflicts; the remaining receive placements describe incoming-ball or receive-shot decisions.
+
+**Done when:** every atlas placement is defensible from the concept label, definition, evidence summary, and facets, with navigation validation included in the publication checks.
 
 - Public offline video hosting or transcoded mirrors without explicit permission/licensing.
 - Another large scrape before the pending queue, quotation audit, and visual-review queue are under control.
@@ -395,4 +415,20 @@ Track relation counts, concepts with no outgoing relations, cross-listed concept
 - Concept articles expose the reviewed definition in an explicitly labeled Summary section before their evidence library.
 - All 73 published concepts now have a coherent direct `evidence_summary` paragraph. The 72 generated essays were rewritten in batched Codex calls from approved evidence reasons, pass paragraph/attribution checks, and carry source hashes plus generator metadata; hand-authored summaries remain protected.
 - Deterministic cleanup of transcript-reporting leads from visible moment titles.
+
+### P1-19  Separate discovery inventory from the controlled processing workset
+
+**Status:** In progress (2026-07-20).
+
+**Finding:** The local inventory reports 822 discovered entries versus 148 configured entries, which can be mistaken for 674 immediately processable videos. The current controlled cp policy intentionally processes only selected configured entries until backlog-gated expansion is approved. A separate bug in `scripts/run-cp.py` also allowed the cp report path to be overwritten by a discovery manifest path, leaving stale monitor reporting.
+
+**Acceptance:** Keep discovery counts, configured selection, normalized state, retry state, and eligible workset counts distinct in the local progress and monitor views; preserve `cp.latest.json` as the authoritative latest-run manifest; add an explicit expansion workflow before processing unconfigured catalog entries.
+
+### P1-20  Make sleep/network interruption cleanup bounded on Windows
+
+**Status:** Implementation complete; production monitor restart/runtime verification pending (2026-07-21).
+
+**Finding:** After a sleep/resume interruption, the monitor's SIGTERM stopped the cp parent but left nested discovery workers running. A GlobalTTStudio discovery worker also remained in a yt-dlp retry state for approximately 100 minutes after an access-violation/connection-aborted warning.
+
+**Acceptance:** Stop terminates the verified Windows process tree; discovery and ingest have bounded per-stage/per-request timeouts; the monitor records an explicit timeout/interrupted outcome and leaves no processor descendants running. Implementation is present in `scripts/processor-monitor.mjs` and `scripts/run-cp.py`; a forced timeout smoke test passed.
 # Automatic new-concept promotion is now implemented: high-confidence explicit `new` candidates with valid evidence can create canonical YAML, while ambiguous and duplicate candidates remain deferred. `process-pending --retry-deferred` backfills previously processed videos.

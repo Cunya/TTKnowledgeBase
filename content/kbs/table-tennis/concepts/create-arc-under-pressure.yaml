@@ -8,17 +8,18 @@ aliases:
 short_definition: Making a stable upward-curving ball path when receiving difficult spin or weak spin, rather than forcing a sharp or flat action.
 evidence_summary: >-
   Create arc under pressure brings together several connected ideas. The trajectory should flatten
-  after the bounce and that controlling the arc gives high consistency. To create or compress an
-  arc when flicking, including against sidespin-topspin and half-spin/no-spin balls. The arc
-  appears even when there is no spin, and later that adding friction gives both power and a proper
-  arc. Creating or extending an arc, especially on low balls and spinning balls, as the key to
-  avoiding errors. Against fast balls you should just create the arc and brush the ball, not add
-  power. The player needs to create the arc themselves, linking the concept to ball clearance and
-  the friction that brings the ball back down. Stabilizing the racket face and using the forearm
-  to control the arc so the ball does not go out. You must make an arc or the ball will pass by
-  and the action will be futile. Together, these principles show how the topic is applied in
-  practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:c92a21bb7d06162cfa2cea5932adc01dab9729fa1892c13d563a42bff6c8f661"
+  after the bounce and that controlling the arc gives high consistency. The arc appears even when
+  there is no spin, and later that adding friction gives both power and a proper arc. Creating or
+  extending an arc, especially on low balls and spinning balls, as the key to avoiding errors. The
+  player needs to create the arc themselves, linking the concept to ball clearance and the
+  friction that brings the ball back down. Stabilizing the racket face and using the forearm to
+  control the arc so the ball does not go out. Where the arc would come from if the swing is only
+  a short forward drive and otherwise the ball is hit flat. Backspin requires an outer arc and not
+  to push at the ball. Most receives require a controlled arc and that heavy friction lets you
+  create your own trajectory. Additional points reinforce the same theme. Together, these
+  principles show how the topic is applied in practice while preserving the relevant distinctions
+  and constraints.
+evidence_summary_source_hash: "sha256:17e96ab2bae2a53978b4de57af26ddc3945c2488b32586d25a55774c8867f1e1"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -169,3 +170,63 @@ evidence:
       segment_ids:
         - rPrv4iWdE4w:00121
         - rPrv4iWdE4w:00122
+  - id: qFwE0n-bspQ-concept-create-arc-under-pressure-reviewed
+    evidence_type: explanation
+    excerpt: Use the correct low posture and brushing conditions to create a looping trajectory rather than a flat hit.
+    reason: The speaker asks where the arc would come from if the swing is only a short forward drive and says that otherwise the ball is hit flat.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: qFwE0n-bspQ
+      start_ms: 421600
+      end_ms: 433866
+      url: https://www.youtube.com/watch?v=qFwE0n-bspQ&t=421s
+      segment_ids:
+        - qFwE0n-bspQ:00098
+        - qFwE0n-bspQ:00099
+  - id: 00GaHkH4rfQ-concept-create-arc-under-pressure-reviewed
+    evidence_type: explanation
+    excerpt: Shape the stroke so the ball travels on an arcing trajectory rather than a direct hit, especially when dealing with backspin.
+    reason: The speaker says backspin requires an outer arc and warns not to push at the ball.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 00GaHkH4rfQ
+      start_ms: 783266
+      end_ms: 789200
+      url: https://www.youtube.com/watch?v=00GaHkH4rfQ&t=783s
+      segment_ids:
+        - 00GaHkH4rfQ:00177
+  - id: uL8In-_NToM-concept-create-arc-under-pressure-reviewed
+    evidence_type: explanation
+    excerpt: Managing stroke arc to keep the ball on the table when speed, spin, or pressure make control difficult.
+    reason: The speaker repeatedly emphasizes arc length/height control and says the arc dictates the shot.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: uL8In-_NToM
+      start_ms: 1021366
+      end_ms: 1038500
+      url: https://www.youtube.com/watch?v=uL8In-_NToM&t=1021s
+      segment_ids:
+        - uL8In-_NToM:00233
+        - uL8In-_NToM:00234
+        - uL8In-_NToM:00236
+  - id: VYMqgnrDAhk-candidate-6-reviewed
+    evidence_type: explanation
+    excerpt: Using brushing and spin to create a controlled return arc that clears the net and lands on the table.
+    reason: The speaker says most receives require a controlled arc and that heavy friction lets you create your own trajectory.
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: VYMqgnrDAhk
+      start_ms: 425766
+      end_ms: 432866
+      url: https://www.youtube.com/watch?v=VYMqgnrDAhk&t=425s
+      segment_ids:
+        - VYMqgnrDAhk:00088
+        - VYMqgnrDAhk:00089

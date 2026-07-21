@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import os
 import random
 import shutil
@@ -147,7 +148,8 @@ def discover(url: Annotated[str, typer.Argument()], kb: KbOption = None) -> None
     with console.status(f"Discovering videos for {paths.name}"):
         videos = discover_videos(url)
     playlist_id = parse_qs(urlparse(url).query).get("list", [None])[0]
-    output_name = f"discovered-{playlist_id}.json" if playlist_id else "discovered-videos.json"
+    source_key = playlist_id or hashlib.sha256(url.encode("utf-8")).hexdigest()[:12]
+    output_name = f"discovered-{source_key}.json"
     output = paths.data("manifests") / output_name
     write_json(output, {"knowledge_base": paths.id, "source_url": url, "videos": videos})
     console.print(f"[green]Discovered {len(videos)} videos[/green] for {paths.name}")
@@ -228,8 +230,8 @@ def ingest(
     jitter: Annotated[float, typer.Option(min=0, help="Random extra delay in seconds")] = 20.0,
     max_network_videos: Annotated[
         int,
-        typer.Option(min=1, help="Maximum uncached videos attempted in one invocation"),
-    ] = 8,
+        typer.Option(min=1, help="Maximum successful uncached videos in one invocation"),
+    ] = 10,
     caption_file: Annotated[
         Path | None, typer.Option(help="Import a local VTT/SRT for one URL")
     ] = None,
@@ -284,14 +286,15 @@ def ingest(
     )
     failures: list[str] = []
     network_attempts = 0
+    successful_network_videos = 0
     for index, url in enumerate(urls):
         requested_video_id = video_id_from_url(url)
         cache_path = paths.data("normalized") / f"{requested_video_id}.json"
         needs_network = force or not cache_path.exists()
-        if needs_network and network_attempts >= max_network_videos:
+        if needs_network and successful_network_videos >= max_network_videos:
             console.print(
-                f"[yellow]Stopped[/yellow] after {network_attempts} uncached video(s); "
-                "the conservative per-run request budget was reached."
+                f"[yellow]Stopped[/yellow] after {successful_network_videos} successful "
+                "uncached video(s); the conservative per-run success budget was reached."
             )
             break
         active_retry = retry_window_remaining(retry_state["items"].get(requested_video_id, {}))
@@ -319,6 +322,8 @@ def ingest(
                 url, paths.data("normalized"), languages.split(","), options, force=force
             )
             retry_state["items"].pop(video.id, None)
+            if needs_network:
+                successful_network_videos += 1
             console.print(f"[green]Saved[/green] {video.id}: {video.title}")
         except Exception as error:
             failures.append(url)
@@ -328,13 +333,19 @@ def ingest(
                 video_id = url
             previous = retry_state["items"].get(video_id, {})
             attempts = int(previous.get("attempts", 0)) + 1
-            delay_hours = min(24 * (2 ** (attempts - 1)), 24 * 7)
+            blocked = isinstance(error, TranscriptBlockedError)
+            delay_hours = (
+                min(24 * (2 ** (attempts - 1)), 24 * 7)
+                if blocked
+                else min(0.25 * (2 ** (attempts - 1)), 1)
+            )
             retry_state["items"][video_id] = {
                 "url": url,
                 "attempts": attempts,
                 "last_attempt_at": datetime.now(UTC).isoformat(),
                 "next_retry_at": (datetime.now(UTC) + timedelta(hours=delay_hours)).isoformat(),
                 "error_type": type(error).__name__,
+                "blocked": blocked,
                 "message": str(error)[:1000],
             }
             console.print(f"[red]Failed[/red] {url}: {error}")

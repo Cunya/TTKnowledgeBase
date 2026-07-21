@@ -51,6 +51,7 @@ npm run build`;
       <a href="#stages">Eight stages</a>
       <a href="#artifacts">Data and files</a>
       <a href="#review">Review gates</a>
+      <a href="#review-pages">Review pages</a>
       <a href="#commands">Run the pipeline</a>
       <a href="#safety">Safety boundaries</a>
     </aside>
@@ -96,6 +97,16 @@ npm run build`;
         <div class="review-rule"><span>02</span><div><h3>Focused moments</h3><p>Spoken citations are limited to short windows and split at topic changes. Sparse segments spread across minutes are never joined into one misleading clip.</p></div></div>
         <div class="review-rule"><span>03</span><div><h3>Durable concepts</h3><p>Aliases and duplicates are consolidated into wiki-style articles organized around mechanics, timing, spacing, selection, errors, drills, and strategy.</p></div></div>
         <div class="review-rule"><span>04</span><div><h3>Separate visual proof</h3><p>A spoken explanation remains non-looping unless the footage is inspected and a distinct visual interval is recorded. Inferred clips are labeled honestly.</p></div></div>
+      </section>
+
+      <section id="review-pages" class="pipeline-section review-pages-section">
+        <div class="section-kicker">Local operator tools</div><h2>Review pages now available</h2>
+        <p>Use the focused pages below to work through candidates and source-grounding tasks. Their actions remain local review records until the underlying queue is explicitly updated and reprocessed.</p>
+        <div class="review-page-links">
+          <a href={`${import.meta.env.BASE_URL}concept-review/`}><strong>Concept review diagnostics</strong><span>See why candidates were deferred, including low confidence, ambiguity, duplicates, and boundary issues.</span></a>
+          <a href={`${import.meta.env.BASE_URL}boundary-review/`}><strong>Caption boundary review</strong><span>Review P1-14 windows with source playback and mark keep, expand, split, or defer.</span></a>
+          <a href={`${import.meta.env.BASE_URL}review/`}><strong>General review queue</strong><span>Track local timestamp, visual, evidence, concept, and metadata follow-up tasks.</span></a>
+        </div>
       </section>
 
       <section id="commands" class="pipeline-section">

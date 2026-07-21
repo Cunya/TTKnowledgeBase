@@ -1,0 +1,66 @@
+id: concept-push-flick-timing-and-contact
+slug: push-flick-timing-and-contact
+label: Push-flick timing and contact
+aliases:
+  - rising point
+  - contact on the rise
+  - peak of the bounce
+short_definition: 'Select contact timing based on the incoming spin: rising point for topspin, peak for no-spin, and falling contact for dipping backspin.'
+evidence_summary: >-
+  Push-flick timing and contact brings together several connected ideas. Rising point, peak, and
+  falling contact as ideal timings for different ball types. They contact at the peak and avoid
+  the rise or the drop for consistency. Together, these principles show how the topic is applied
+  in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:fbb644aa9e213e1c0c0bdfb0a88c55d7c7aac0d651af66f1b21076a9511b6a9e"
+evidence_summary_generator: "deterministic"
+concept_type: fundamentals
+facets:
+  category:
+    - fundamentals
+    - stroke
+  side:
+    - neutral
+  spin:
+    - topspin
+    - backspin
+    - no-spin
+  distance:
+    - close
+  level:
+    - intermediate
+difficulty: intermediate
+review_status: approved
+generated_by:
+  processor: automatic_candidate_review
+  version: 1.0.0
+  input_hash: bc18e7c18d9ec85e655fc07294eaa14b29226c67e1c97f530bad4254e40bf891
+  prompt_version: candidate-review-v1
+evidence:
+  - id: suG8AopFBIc-concept-push-flick-timing-and-contact-reviewed
+    evidence_type: definition
+    excerpt: 'Select contact timing based on the incoming spin: rising point for topspin, peak for no-spin, and falling contact for dipping backspin.'
+    reason: The speaker explicitly contrasts rising point, peak, and falling contact as ideal timings for different ball types.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: suG8AopFBIc
+      start_ms: 254133
+      end_ms: 259533
+      url: https://www.youtube.com/watch?v=suG8AopFBIc&t=254s
+      segment_ids:
+        - suG8AopFBIc:00060
+  - id: mPRFTyZICY4-concept-push-flick-timing-and-contact-reviewed
+    evidence_type: definition
+    excerpt: For faster pushing, take the ball at the rise or peak of the bounce instead of waiting for it to drop.
+    reason: The speaker says they contact at the peak and avoid the rise or the drop for consistency.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: mPRFTyZICY4
+      start_ms: 25666
+      end_ms: 31566
+      url: https://www.youtube.com/watch?v=mPRFTyZICY4&t=25s
+      segment_ids:
+        - mPRFTyZICY4:00006

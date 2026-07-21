@@ -13,9 +13,11 @@ evidence_summary: >-
   can go long unless brush is added for safety. The backhand drive and gives the key mechanics of
   wrist position and drive-through motion. To treat deep top-spin serves like a forehand drive and
   to use a compact forward stroke with no backswing or rotation; the same compact logic is
-  extended to side-backspin deep serves. Together, these principles show how the topic is applied
-  in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:15ccb536b480ad4cda1d4010bfcf20c92d85b71c77659576c981d8a8da1bf924"
+  extended to side-backspin deep serves. The backhand drive as a small-motion shot that hits the
+  back of the ball with forward impact. The backhand drive form and its two-step mechanism:
+  forward push, then forearm rotation after contact. Together, these principles show how the topic
+  is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:6776e3d51d4a93af88d1e2e51b7329791cbe81f49f901d5a70ee902f6bc54c57"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -125,3 +127,34 @@ evidence:
         - vbzVfx-HWE4:00197
         - vbzVfx-HWE4:00198
         - vbzVfx-HWE4:00199
+  - id: YR4GEvuI9Vc-concept-backhand-drive-reviewed
+    evidence_type: definition
+    excerpt: A compact backhand stroke characterized by a small motion, hitting the back of the ball, and primarily using forward impact rather than heavy brushing.
+    reason: The speaker directly defines the backhand drive as a small-motion shot that hits the back of the ball with forward impact.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: YR4GEvuI9Vc
+      start_ms: 52366
+      end_ms: 59966
+      url: https://www.youtube.com/watch?v=YR4GEvuI9Vc&t=52s
+      segment_ids:
+        - YR4GEvuI9Vc:00013
+        - YR4GEvuI9Vc:00014
+  - id: JfZ-7fgsF-o-concept-backhand-drive-reviewed
+    evidence_type: definition
+    excerpt: A compact backhand stroke that uses a forward push to meet the ball first, then a forearm rotation after contact.
+    reason: 'The speaker explicitly defines the backhand drive form and describes its two-step mechanism: forward push, then forearm rotation after contact.'
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: JfZ-7fgsF-o
+      start_ms: 80533
+      end_ms: 109166
+      url: https://www.youtube.com/watch?v=JfZ-7fgsF-o&t=80s
+      segment_ids:
+        - JfZ-7fgsF-o:00019
+        - JfZ-7fgsF-o:00020
+        - JfZ-7fgsF-o:00023

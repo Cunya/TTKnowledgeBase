@@ -13,11 +13,14 @@ evidence_summary: >-
   Pushing sideways with side force so the ball does not fly long and power is absorbed. Applying
   force sideways makes the shot more stable and creates strong spin with control. Applying force
   from the outside to the inside, which is a sideways component used to generate friction. The
-  lesson names 'arching' and friction must be applied promptly, with finger force and racket-face
-  angle to make it effective. The ball needs a sideways component in addition to forward force in
-  order to curve and generate friction. Together, these principles show how the topic is applied
-  in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:0fdc052ceb8b364de37ce6397b310aa4947f4fe393a52dea7511843fb6400e66"
+  ball needs a sideways component in addition to forward force in order to curve and generate
+  friction. Extending the ball sideways and using a sideways method to increase spin and create a
+  low arc with strong spin. The contact should be on the side of the ball and brushing and lifting
+  it to make a true sidespin topspin serve. The spinny loop as having a curved arc and contacting
+  from the side creates the wrapping action around the ball. Additional points reinforce the same
+  theme. Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:89f0fc025f21c7348827b3dab26f4b360a0edc9674d24bd2e357576ba47bac42"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -149,3 +152,49 @@ evidence:
       segment_ids:
         - pxxgpWNbXSM:00145
         - pxxgpWNbXSM:00146
+  - id: CkByQLPJMZs-concept-side-component-to-create-arc-and-friction-reviewed
+    evidence_type: explanation
+    excerpt: Adding sideways motion increases friction and helps the ball arc or curve instead of traveling straight.
+    reason: The speaker describes extending the ball sideways and using a sideways method to increase spin and create a low arc with strong spin.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: CkByQLPJMZs
+      start_ms: 584000
+      end_ms: 593040
+      url: https://www.youtube.com/watch?v=CkByQLPJMZs&t=584s
+      segment_ids:
+        - CkByQLPJMZs:00078
+  - id: qx-2KikrDs8-concept-side-component-to-create-arc-and-friction-reviewed
+    evidence_type: explanation
+    excerpt: Using a sideways contact component to generate the intended spin rather than contacting the back or lower half of the ball.
+    reason: The speaker says the contact should be on the side of the ball and describes brushing and lifting it to make a true sidespin topspin serve.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: qx-2KikrDs8
+      start_ms: 528300
+      end_ms: 553000
+      url: https://www.youtube.com/watch?v=qx-2KikrDs8&t=528s
+      segment_ids:
+        - qx-2KikrDs8:00106
+        - qx-2KikrDs8:00107
+        - qx-2KikrDs8:00109
+  - id: 8143qxSjk5A-concept-side-component-to-create-arc-and-friction-reviewed
+    evidence_type: explanation
+    excerpt: Introduce a sideways component to the brushing path so the shot wraps the ball, increases arc, and creates more friction and spin.
+    reason: The speaker describes the spinny loop as having a curved arc and explains that contacting from the side creates the wrapping action around the ball.
+    confidence: 0.87
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8143qxSjk5A
+      start_ms: 426466
+      end_ms: 451100
+      url: https://www.youtube.com/watch?v=8143qxSjk5A&t=426s
+      segment_ids:
+        - 8143qxSjk5A:00094
+        - 8143qxSjk5A:00096
+        - 8143qxSjk5A:00098

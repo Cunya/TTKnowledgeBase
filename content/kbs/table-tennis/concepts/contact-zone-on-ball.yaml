@@ -971,6 +971,54 @@ evidence:
         - xBlnTfR0eOY:00084
         - xBlnTfR0eOY:00086
         - xBlnTfR0eOY:00089
+  - id: nukEclWHWn4-concept-contact-zone-on-ball-reviewed
+    evidence_type: explanation
+    excerpt: The specific region of the ball you contact to match incoming spin and intended shot shape.
+    reason: The speaker repeatedly gives ball-position contact targets such as 2:30, 1:30, 1:00, and top/center contact depending on spin.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: nukEclWHWn4
+      start_ms: 60966
+      end_ms: 87866
+      url: https://www.youtube.com/watch?v=nukEclWHWn4&t=60s
+      segment_ids:
+        - nukEclWHWn4:00013
+        - nukEclWHWn4:00016
+        - nukEclWHWn4:00018
+  - id: ezGVESU0Rp0-concept-side-contact-point-in-receive-reviewed
+    evidence_type: definition
+    excerpt: When dealing with heavy spin, the ball should be contacted on the side rather than directly from behind to avoid the strongest part of the spin.
+    reason: The speaker identifies side contact as the correct contact zone for heavy spin and side push execution.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ezGVESU0Rp0
+      start_ms: 343033
+      end_ms: 360133
+      url: https://www.youtube.com/watch?v=ezGVESU0Rp0&t=343s
+      segment_ids:
+        - ezGVESU0Rp0:00073
+        - ezGVESU0Rp0:00074
+        - ezGVESU0Rp0:00075
+  - id: 0D6FzvP33Xs-concept-contact-zone-on-ball-reviewed
+    evidence_type: definition
+    excerpt: 'Choosing different contact zones on the ball depending on spin: middle for more spin, upper part for less spin, and middle-upper for sidespin-topspin.'
+    reason: The speaker explains how more spin calls for middle contact while less spin calls for upper-ball contact.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 0D6FzvP33Xs
+      start_ms: 476966
+      end_ms: 498166
+      url: https://www.youtube.com/watch?v=0D6FzvP33Xs&t=476s
+      segment_ids:
+        - 0D6FzvP33Xs:00102
+        - 0D6FzvP33Xs:00105
+        - 0D6FzvP33Xs:00106
 relations:
   - relation_type: related_to
     target_concept_id: concept-contact-point

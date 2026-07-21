@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import reviewData from '../data/generated/table-tennis-concept-review.json';
+
+const data = reviewData as { generated_at: string; items: Array<{ video_id: string; video_title: string; video_start_ms: number; video_end_ms: number; label: string; definition: string; reason: string; confidence: number; category: string }> };
+const allItems = data.items.filter((item) => item.category === 'evidence boundary');
+const pageSize = 20;
+const page = Math.max(1, Number(Astro.url.searchParams.get('page') || 1));
+const pageCount = Math.max(1, Math.ceil(allItems.length / pageSize));
+const currentPage = Math.min(page, pageCount);
+const items = allItems.slice((currentPage - 1) * pageSize, currentPage * pageSize);
+const formatTimestamp = (milliseconds: number) => { const total = Math.floor(milliseconds / 1000); return String(Math.floor(total / 60)) + ':' + String(total % 60).padStart(2, '0'); };
+---
+
+<BaseLayout title="Caption boundary review" description="Local-only manual review of deferred caption boundaries.">
+  <section class="page-intro">
+    <div class="eyebrow">Local manual review</div>
+    <h1>Caption boundary review</h1>
+    <p>Review deferred candidate windows and record whether the cited caption span should be kept, expanded, split, or deferred. These marks are review notes only; they do not promote candidates automatically.</p>
+    <p class="recent-disclaimer">Showing {items.length} of {allItems.length} boundary candidates · page {currentPage} of {pageCount} · generated {new Date(data.generated_at).toLocaleString()}</p>
+  </section>
+  <section class="recent-section">
+    <div class="section-kicker">P1-14 review queue</div>
+    <h2>Boundary candidates</h2>
+    <div class="boundary-review-list" data-boundary-list>
+      {items.map((item) => <article class="boundary-review-item" data-review-id={`${item.video_id}-${item.video_start_ms}-${item.label}`} data-video-id={item.video_id} data-start-ms={item.video_start_ms} data-end-ms={item.video_end_ms}>
+        <div><span class="review-badge">{Math.round(item.confidence * 100)}% confidence</span><h3>{item.label}</h3><p>{item.definition}</p><small>{item.video_title} · {formatTimestamp(item.video_start_ms)}–{formatTimestamp(item.video_end_ms)}</small><p class="boundary-reason">{item.reason}</p></div>
+        <div class="boundary-review-actions" data-actions>
+          <button data-action="keep">Keep span</button><button data-action="expand">Expand span</button><button data-action="split">Split claim</button><button data-action="defer">Defer</button>
+        </div>
+        <details><summary>Watch source</summary><iframe title={`Source video for ${item.label}`} data-video-id={item.video_id} data-start-seconds={item.video_start_ms / 1000} data-end-seconds={item.video_end_ms / 1000} src={`https://www.youtube.com/embed/${item.video_id}?start=${Math.floor(item.video_start_ms / 1000)}&enablejsapi=1&origin=http%3A%2F%2F127.0.0.1%3A4321`} loading="lazy" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></details>
+      </article>)}
+    </div>
+    <nav class="boundary-pagination" aria-label="Boundary review pages">
+      {currentPage !== 1 && <a href={`?page=${currentPage - 1}`}>Previous 20</a>}
+      <span>Page {currentPage} of {pageCount}</span>
+      {currentPage !== pageCount && <a href={`?page=${currentPage + 1}`}>Next 20</a>}
+    </nav>
+  </section>
+</BaseLayout>
+
+<script is:inline src="/boundary-review.js"></script>
+
+<script>
+  const storageKey = 'momentgraph-boundary-review-actions';
+  const readActions = () => JSON.parse(localStorage.getItem(storageKey) || '{}');
+  const saveAction = async (id: string, action: string, item: { label: string; videoId: string; startMs: number; endMs: number }) => {
+    const actions = readActions(); actions[id] = { action, updatedAt: new Date().toISOString(), ...item }; localStorage.setItem(storageKey, JSON.stringify(actions));
+    try { await fetch('http://127.0.0.1:4322/api/review-tasks', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ type: 'caption_boundary', videoId: item.videoId, startMs: item.startMs, endMs: item.endMs, conceptId: item.label, note: 'Caption boundary decision: ' + action }) }); } catch {}
+  };
+  document.querySelectorAll<HTMLElement>('[data-review-id]').forEach((card) => {
+    const id = card.dataset.reviewId || ''; const actions = card.querySelector('[data-actions]');
+    actions?.querySelectorAll('button').forEach((button) => button.addEventListener('click', async () => {
+      const action = button.dataset.action || 'defer';
+      await saveAction(id, action, { label: card.querySelector('h3')?.textContent || '', videoId: card.dataset.videoId || '', startMs: Number(card.dataset.startMs || 0), endMs: Number(card.dataset.endMs || 0) });
+      actions.querySelectorAll('button').forEach((node) => node.classList.toggle('selected', node === button));
+      card.classList.add('reviewed');
+    }));
+  });
+</script>

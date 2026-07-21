@@ -21,6 +21,8 @@ This project is a **local, operator-run publishing pipeline**, not a website tha
 
 The repeatable unattended path is `scripts/run-cp.py --kb <id>`. It drains eligible cached work first, then processes a small configured selection; when that selection is exhausted, it discovers enabled catalogs and continues with the highest-viewed unseen videos available under the source policy. The same entry point is used by the Windows 21:00 scheduled task and by the local monitor at `http://127.0.0.1:4322/`. The monitor can start or stop the loop, show live output, and reset only the current day's private local budget ledger.
 
+The orchestrator streams each child stage's output as it arrives and bounds stage execution after process-tree-safe cleanup: discovery stages have a 20-minute limit, while ingestion and other stages have a 45-minute limit. A timeout exits with code 124 and records `exit_class: timeout`; the monitor Stop control uses Windows process-tree termination so nested yt-dlp/Python workers do not survive a sleep/resume interruption.
+
 ## Study-to-backlog documentation contract
 
 An analysis or study is not complete when its Markdown report is written. The result must be carried through the planning and operator surfaces:
@@ -114,7 +116,7 @@ All Codex-backed production tasks share a local per-knowledge-base ledger at `da
 llm_budget:
   enabled: true
   timezone: Europe/Helsinki
-  daily_token_limit: 500000
+  daily_token_limit: 30000000
   task_token_limits:
     extraction: 400000
     rephrase: 100000

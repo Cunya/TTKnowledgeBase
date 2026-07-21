@@ -360,6 +360,36 @@ evidence:
       url: https://www.youtube.com/watch?v=Zrw_aJYKfhA&t=557s
       segment_ids:
         - Zrw_aJYKfhA:00132
+  - id: igaH-B1hrmY-concept-backhand-flick-mechanics-reviewed
+    evidence_type: definition
+    excerpt: Backhand flick execution emphasizing hand positioning and pressure control.
+    reason: The speaker explicitly says the backhand flick primarily involves hand positioning and downward pressure.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: igaH-B1hrmY
+      start_ms: 20560
+      end_ms: 29120
+      url: https://www.youtube.com/watch?v=igaH-B1hrmY&t=20s
+      segment_ids:
+        - igaH-B1hrmY:00000
+        - igaH-B1hrmY:00001
+  - id: uyS2qSAPuYM-concept-backhand-flick-mechanics-reviewed
+    evidence_type: definition
+    excerpt: The mechanics of a backhand flick or banana flick, where the cocked wrist helps generate more spin and control.
+    reason: The speaker says the cocked wrist makes it easier to generate spin, especially with the banana flick.
+    confidence: 0.88
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: uyS2qSAPuYM
+      start_ms: 494066
+      end_ms: 504000
+      url: https://www.youtube.com/watch?v=uyS2qSAPuYM&t=494s
+      segment_ids:
+        - uyS2qSAPuYM:00105
+        - uyS2qSAPuYM:00106
 relations:
   - relation_type: used_with
     target_concept_id: concept-backhand-flick-on-rise

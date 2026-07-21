@@ -429,6 +429,38 @@ evidence:
         - jrGOn6gpIa8:00000
         - jrGOn6gpIa8:00002
         - jrGOn6gpIa8:00005
+  - id: I-luBOL9IxI-concept-front-back-distance-and-jamming-reviewed
+    evidence_type: definition
+    excerpt: Maintain enough front-back spacing to avoid being jammed and to find an effective hitting point for the stroke.
+    reason: The speaker frames the issue as front-to-back distance, jamming, and finding the optimal hitting point.
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: I-luBOL9IxI
+      start_ms: 674400
+      end_ms: 699100
+      url: https://www.youtube.com/watch?v=I-luBOL9IxI&t=674s
+      segment_ids:
+        - I-luBOL9IxI:00151
+        - I-luBOL9IxI:00153
+        - I-luBOL9IxI:00154
+        - I-luBOL9IxI:00155
+  - id: uyS2qSAPuYM-concept-backhand-swing-arc-spacing-reviewed
+    evidence_type: definition
+    excerpt: Creating enough room to execute a backhand drive without getting jammed, especially on deeper balls.
+    reason: The speaker says a backhand drive requires space and gives forearm-length versus full-arm-length examples.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: uyS2qSAPuYM
+      start_ms: 113166
+      end_ms: 136100
+      url: https://www.youtube.com/watch?v=uyS2qSAPuYM&t=113s
+      segment_ids:
+        - uyS2qSAPuYM:00024
+        - uyS2qSAPuYM:00028
 relations:
   - relation_type: used_with
     target_concept_id: concept-backhand-flick-on-rise

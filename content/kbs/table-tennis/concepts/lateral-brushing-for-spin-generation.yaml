@@ -14,10 +14,11 @@ evidence_summary: >-
   up-down motion is insufficient. 'lateral friction' as the key and brushing sideways increases
   spin. Brushing the side of the ball creates left or right spin and that the friction point
   determines spin direction. A useful contrast is between straight forward force and lateral
-  friction and says the stroke should involve more lateral friction. Together, these principles
-  show how the topic is applied in practice while preserving the relevant distinctions and
-  constraints.
-evidence_summary_source_hash: "sha256:0d86bdc7beeff2fce05cb0c2cb65e15b63ce9c221dc454a49c9ca4f86ff4ecf9"
+  friction and says the stroke should involve more lateral friction. Brushing from the left side
+  around to the right side and this creates the needed friction for spin. Together, these
+  principles show how the topic is applied in practice while preserving the relevant distinctions
+  and constraints.
+evidence_summary_source_hash: "sha256:37a073ccd0a30ffc8ab40da0146d2a264e12fe5459ed4bb07686a5a3d1672eba"
 evidence_summary_generator: "deterministic"
 concept_type: technique
 facets:
@@ -143,3 +144,19 @@ evidence:
       url: https://www.youtube.com/watch?v=pxxgpWNbXSM&t=29s
       segment_ids:
         - pxxgpWNbXSM:00003
+  - id: dg0kTVGE8qQ-concept-lateral-brushing-for-spin-generation-reviewed
+    evidence_type: explanation
+    excerpt: Side spin is created by a long lateral brushing path that goes around the ball rather than a short direct push.
+    reason: The speaker describes brushing from the left side around to the right side and says this creates the needed friction for spin.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: dg0kTVGE8qQ
+      start_ms: 68400
+      end_ms: 81766
+      url: https://www.youtube.com/watch?v=dg0kTVGE8qQ&t=68s
+      segment_ids:
+        - dg0kTVGE8qQ:00018
+        - dg0kTVGE8qQ:00019
+        - dg0kTVGE8qQ:00020

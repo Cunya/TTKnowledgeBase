@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+import os
 import re
+import time
 from collections import Counter
 from collections.abc import Callable
 from datetime import UTC, datetime
@@ -28,6 +30,21 @@ MOJIBAKE_MARKERS = ("\ufffd", "Â", "â€", "â†", "ðŸ")
 roundtrip_yaml = YAML()
 roundtrip_yaml.preserve_quotes = True
 roundtrip_yaml.indent(mapping=2, sequence=4, offset=2)
+
+
+def _replace_with_retry(source: Path, target: Path) -> None:
+    """Replace a generated file while tolerating short Windows file locks."""
+    last_error: PermissionError | None = None
+    for attempt in range(5):
+        try:
+            source.replace(target)
+            return
+        except PermissionError as error:
+            last_error = error
+            if attempt == 4:
+                break
+            time.sleep(0.25 * (attempt + 1))
+    raise last_error or PermissionError(f"Could not replace {target}")
 roundtrip_yaml.width = 4096
 
 
@@ -533,14 +550,14 @@ def process_pending_candidates(
         )
         counts["accepted"] += 1
     for concept_id, document in documents.items():
-        temporary = concept_dir / f"{concept_by_id[concept_id].slug}.yaml.tmp"
+        temporary = concept_dir / f".{concept_by_id[concept_id].slug}.{os.getpid()}.yaml.tmp"
         with temporary.open("w", encoding="utf-8", newline="") as handle:
             roundtrip_yaml.dump(document, handle)
-        temporary.replace(concept_dir / f"{concept_by_id[concept_id].slug}.yaml")
-    queue_temporary = queue_path.with_suffix(queue_path.suffix + ".tmp")
+        _replace_with_retry(temporary, concept_dir / f"{concept_by_id[concept_id].slug}.yaml")
+    queue_temporary = queue_path.with_name(f".{queue_path.name}.{os.getpid()}.tmp")
     with queue_temporary.open("w", encoding="utf-8", newline="") as handle:
         roundtrip_yaml.dump(queue, handle)
-    queue_temporary.replace(queue_path)
+    _replace_with_retry(queue_temporary, queue_path)
     return counts
 
 

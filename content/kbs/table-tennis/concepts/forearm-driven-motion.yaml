@@ -9,15 +9,15 @@ evidence_summary: >-
   Forearm-driven motion brings together several connected ideas. A useful contrast is between
   compact forearm folding and forearm-driven motion and lifting the upper arm too much. To use
   mainly the forearm and then apply force forward or forward and downward for heavy spin. The
-  forearm determines backswing height and that the backswing is led by the forearm. Backhand and
-  forehand shapes, then directly instructs to contract the forearm and avoid moving the upper arm
-  or elbow. To use the forearm to accelerate and later to retract the forearm after contact. The
-  shoulder and elbow should be fixed/stable and that speed or acceleration comes from the forearm.
-  The player to avoid the upper arm and use/speed up the forearm. Not to generate spin with the
-  forearm in one way, then instructs the learner to fold the forearm and shows the forearm as the
-  key moving part. Additional points reinforce the same theme. Together, these principles show how
-  the topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:4ea050858a4b88117a73f0aa87f7771cfc546632cee57aeaabe29baa5b09b8b0"
+  forward rush spin comes from forearm swing. To use the forearm to accelerate and later to
+  retract the forearm after contact. The shoulder and elbow should be fixed/stable and that speed
+  or acceleration comes from the forearm. The player to avoid the upper arm and use/speed up the
+  forearm. To separate the forearm and upper arm and use a whip-like forearm action for power. To
+  use the forearm and upper arm separately, make the arm feel like a whip, and not let the whole
+  arm move as one unit. Additional points reinforce the same theme. Together, these principles
+  show how the topic is applied in practice while preserving the relevant distinctions and
+  constraints.
+evidence_summary_source_hash: "sha256:1f2bab8945c6e79c57b1e153b9ac93bf093214d6286be3f286c673032709b40b"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -261,3 +261,53 @@ evidence:
       segment_ids:
         - Da2vVwtco1w:00067
         - Da2vVwtco1w:00071
+  - id: T40bWiitfAU-concept-backhand-forearm-whip-transcript-reviewed
+    evidence_type: definition
+    excerpt: Generate backhand power by separating the forearm from the upper arm and using a whip-like forearm acceleration instead of swinging the whole arm.
+    reason: The speaker explicitly says to separate the forearm and upper arm and use a whip-like forearm action for power.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: T40bWiitfAU
+      start_ms: 381766
+      end_ms: 404533
+      url: https://www.youtube.com/watch?v=T40bWiitfAU&t=381s
+      segment_ids:
+        - T40bWiitfAU:00080
+        - T40bWiitfAU:00081
+        - T40bWiitfAU:00082
+        - T40bWiitfAU:00083
+  - id: qLCA9OYSFl4-concept-forearm-driven-motion-reviewed
+    evidence_type: explanation
+    excerpt: A stroke pattern where the forearm, not the whole arm, provides the main motion after the upper arm is stabilized.
+    reason: The speaker instructs to keep the forearm level and let it drop/open to generate power, rather than moving the entire arm together.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: qLCA9OYSFl4
+      start_ms: 491366
+      end_ms: 504833
+      url: https://www.youtube.com/watch?v=qLCA9OYSFl4&t=491s
+      segment_ids:
+        - qLCA9OYSFl4:00111
+        - qLCA9OYSFl4:00112
+        - qLCA9OYSFl4:00113
+  - id: Yw2l-2WitOs-concept-forearm-driven-motion-in-looping-reviewed
+    evidence_type: explanation
+    excerpt: Loop speed increases when the forearm and upper arm act with separation and whip-like sequencing rather than as one unit.
+    reason: The speaker says to use the forearm and upper arm separately, make the arm feel like a whip, and not let the whole arm move as one unit.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Yw2l-2WitOs
+      start_ms: 525600
+      end_ms: 540733
+      url: https://www.youtube.com/watch?v=Yw2l-2WitOs&t=525s
+      segment_ids:
+        - Yw2l-2WitOs:00114
+        - Yw2l-2WitOs:00115
+        - Yw2l-2WitOs:00116
+        - Yw2l-2WitOs:00117

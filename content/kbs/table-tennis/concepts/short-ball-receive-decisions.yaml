@@ -642,6 +642,37 @@ evidence:
         - U4ufFJg5s4A:00152
         - U4ufFJg5s4A:00153
         - U4ufFJg5s4A:00154
+  - id: suG8AopFBIc-concept-short-ball-receive-decisions-reviewed
+    evidence_type: explanation
+    excerpt: Choose placement against short balls based on spin, length, and the opponent's weaknesses, with different targets for short, long, and sidespin balls.
+    reason: The speaker gives explicit placement choices for short pushes, long pushes, and sidespin pushes.
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: suG8AopFBIc
+      start_ms: 588833
+      end_ms: 592866
+      url: https://www.youtube.com/watch?v=suG8AopFBIc&t=588s
+      segment_ids:
+        - suG8AopFBIc:00137
+  - id: 2HMLpiaJLL0-concept-short-ball-receive-decisions-reviewed
+    evidence_type: explanation
+    excerpt: Choosing different receive actions for short balls, including pushing, digging, side-brushing, flicking, or looping depending on height, timing, and confidence.
+    reason: The speaker contrasts short-ball responses with long-ball responses and says to take short balls early, avoid late digging, and choose push or flick based on match situation.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 2HMLpiaJLL0
+      start_ms: 54433
+      end_ms: 77300
+      url: https://www.youtube.com/watch?v=2HMLpiaJLL0&t=54s
+      segment_ids:
+        - 2HMLpiaJLL0:00010
+        - 2HMLpiaJLL0:00011
+        - 2HMLpiaJLL0:00013
+        - 2HMLpiaJLL0:00014
 relations:
   - relation_type: part_of
     target_concept_id: concept-short-vs-long-serve-receive

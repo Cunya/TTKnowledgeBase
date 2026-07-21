@@ -241,6 +241,22 @@ evidence:
         - PwbikZNn8Y0:00260
         - PwbikZNn8Y0:00261
         - PwbikZNn8Y0:00262
+  - id: Mpfr1981UiQ-concept-block-trajectory-and-placement-reviewed
+    evidence_type: explanation
+    excerpt: Control the block's trajectory and placement so the return stays low and difficult to attack.
+    reason: The transcript emphasizes low-arc returns and placement to awkward locations as defensive tools.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Mpfr1981UiQ
+      start_ms: 105666
+      end_ms: 123000
+      url: https://www.youtube.com/watch?v=Mpfr1981UiQ&t=105s
+      segment_ids:
+        - Mpfr1981UiQ:00023
+        - Mpfr1981UiQ:00024
+        - Mpfr1981UiQ:00025
 relations:
   - relation_type: used_with
     target_concept_id: concept-direction-reading

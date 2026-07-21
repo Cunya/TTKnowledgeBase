@@ -11,9 +11,11 @@ evidence_summary: >-
   farther-back loopers out of position and a short push as difficult for amateurs. The shot relies
   on fingers and wrist to produce a short ball and explicitly names this as the short ball
   technique. Extremely short balls can be dropped short and that half-long balls can be pushed,
-  with both forehand and backhand able to push with heavy spin. Together, these principles show
-  how the topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:e86d0ab9d790a19ae88d6aeb17f23e475df8f96ac78b061819da62b454a1f703"
+  with both forehand and backhand able to push with heavy spin. This serve pattern, the forced
+  return, and the wide-angle follow-up attack. The short backhand corner ball and to handle it
+  with a push. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:7978f11cc0dc3c179eab8cfb521e1e0197750d0917592d6fb587b71d67c65ae4"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -97,3 +99,36 @@ evidence:
         - vbzVfx-HWE4:00103
         - vbzVfx-HWE4:00108
         - vbzVfx-HWE4:00109
+  - id: 256zUqx30Zo-concept-no-spin-or-sidespin-topspin-short-serve-to-force-high-push-reviewed
+    evidence_type: explanation
+    excerpt: A short no-spin or sidespin-topspin serve is used to force a predictable high push or flick, creating an opening for a wide-angle attack.
+    reason: The speaker explicitly describes this serve pattern, the forced return, and the wide-angle follow-up attack.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 256zUqx30Zo
+      start_ms: 406966
+      end_ms: 435266
+      url: https://www.youtube.com/watch?v=256zUqx30Zo&t=406s
+      segment_ids:
+        - 256zUqx30Zo:00091
+        - 256zUqx30Zo:00092
+        - 256zUqx30Zo:00093
+        - 256zUqx30Zo:00094
+        - 256zUqx30Zo:00095
+        - 256zUqx30Zo:00096
+  - id: ihrv3kBFb-U-concept-short-backhand-corner-push-receive-reviewed
+    evidence_type: definition
+    excerpt: Receiving a short ball to the backhand corner with a push-based response.
+    reason: The speaker directly introduces the short backhand corner ball and says to handle it with a push.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ihrv3kBFb-U
+      start_ms: 22000
+      end_ms: 27166
+      url: https://www.youtube.com/watch?v=ihrv3kBFb-U&t=22s
+      segment_ids:
+        - ihrv3kBFb-U:00006

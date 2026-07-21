@@ -8,9 +8,11 @@ evidence_summary: >-
   Push flick brings together several connected ideas. Explicitly names push flick, gives its
   target ball types, and it prioritizes control of arc and placement. The shot and it actively
   turns backspin into topspin. The wrist stays pressed, the racket face stays consistent, and the
-  shot relies on the forearm with lower error rate. Together, these principles show how the topic
-  is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:1e218f8f1c303d954aa2de60301574f2d7b204e7e3c9f95c0d188f3f0acd3182"
+  shot relies on the forearm with lower error rate. Push-flick as an over-the-table option against
+  semi-spin and even backspin serves. The push-flick and it as turning backspin into topspin on
+  short balls. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:81d160ba427cb842d188fa8b49f06ef12d48f8fb25e96884439c877a1ffcf928"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -87,3 +89,35 @@ evidence:
         - StQ86EhPFpo:00226
         - StQ86EhPFpo:00228
         - StQ86EhPFpo:00229
+  - id: ywhpUTdXW7I-cand-8-reviewed
+    evidence_type: example
+    excerpt: An over-the-table receive option that flicks a semi-spin or even backspin ball instead of only pushing it.
+    reason: The speaker names push-flick as an over-the-table option against semi-spin and even backspin serves.
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ywhpUTdXW7I
+      start_ms: 832200
+      end_ms: 849800
+      url: https://www.youtube.com/watch?v=ywhpUTdXW7I&t=832s
+      segment_ids:
+        - ywhpUTdXW7I:00187
+        - ywhpUTdXW7I:00188
+        - ywhpUTdXW7I:00189
+        - ywhpUTdXW7I:00190
+  - id: 0D6FzvP33Xs-concept-push-flick-reviewed
+    evidence_type: definition
+    excerpt: A short-ball receive stroke that combines a push-like action with a flicking motion to turn backspin into topspin or neutralize spin with a compact action.
+    reason: The speaker explicitly introduces the push-flick and explains it as turning backspin into topspin on short balls.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 0D6FzvP33Xs
+      start_ms: 302233
+      end_ms: 322566
+      url: https://www.youtube.com/watch?v=0D6FzvP33Xs&t=302s
+      segment_ids:
+        - 0D6FzvP33Xs:00064
+        - 0D6FzvP33Xs:00069

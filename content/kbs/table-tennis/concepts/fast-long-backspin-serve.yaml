@@ -8,10 +8,11 @@ aliases:
 short_definition: A long underspin delivery or incoming ball that is fast and heavy enough to change the receiver's timing and contact choices.
 evidence_summary: >-
   Fast long backspin serve brings together several connected ideas. The ball kicks more, becomes
-  spinnier while dropping, and is harder to arc when it is fast and long. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:8d104b2712726581866797ea562a66436871d6a3ec0b68900e21398c8714e0c8"
+  spinnier while dropping, and is harder to arc when it is fast and long. The fast long push, its
+  speed, backspin, and follow-through requirements. Long fast serves as a foundational serve type
+  and a long serve should be driven forward rather than lifted. Together, these principles show
+  how the topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:5ce7d195fc1d4b6a9ea17d95daba81bb101e9cdeb2bf56c2711bc5ff5ebeb3f7"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -50,3 +51,33 @@ evidence:
         - AGLSC40_5dw:00010
         - AGLSC40_5dw:00011
         - AGLSC40_5dw:00012
+  - id: ezGVESU0Rp0-concept-fast-long-push-reviewed
+    evidence_type: definition
+    excerpt: A fast push that sends the ball deep with heavy backspin, using a downward and forward force with continued racket-head acceleration after contact.
+    reason: The speaker describes the fast long push, its speed, backspin, and follow-through requirements.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ezGVESU0Rp0
+      start_ms: 93666
+      end_ms: 110033
+      url: https://www.youtube.com/watch?v=ezGVESU0Rp0&t=93s
+      segment_ids:
+        - ezGVESU0Rp0:00019
+        - ezGVESU0Rp0:00021
+  - id: phKJvL-8VbQ-concept-long-fast-serve-reviewed
+    evidence_type: explanation
+    excerpt: A serve hit with speed and forward drive that is difficult for the receiver to push back effectively.
+    reason: The speaker identifies long fast serves as a foundational serve type and says a long serve should be driven forward rather than lifted.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: phKJvL-8VbQ
+      start_ms: 460733
+      end_ms: 472200
+      url: https://www.youtube.com/watch?v=phKJvL-8VbQ&t=460s
+      segment_ids:
+        - phKJvL-8VbQ:00109
+        - phKJvL-8VbQ:00111

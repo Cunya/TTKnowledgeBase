@@ -9,7 +9,9 @@ from .utils import read_yaml, write_json
 def build_review_diagnostics(queue_path: Path, concept_dir: Path, output_path: Path) -> dict:
     concepts = load_reviewed_concepts(concept_dir)
     queue = read_yaml(queue_path) or {"items": []}
-    video_dir = output_path.parents[3] / "data" / "normalized" / "table-tennis"
+    # output_path is app/src/data/generated/<kb>-concept-review.json;
+    # normalized transcripts live at the repository root under data/.
+    video_dir = output_path.parents[4] / "data" / "normalized" / "table-tennis"
     videos = {video.id: video for video in load_videos(video_dir)} if video_dir.exists() else {}
     rows = []
     for item in queue.get("items", []):

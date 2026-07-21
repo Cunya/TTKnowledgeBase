@@ -8,9 +8,13 @@ aliases:
 short_definition: Prepare for the ball in advance so you do not rush your movement or stroke timing.
 evidence_summary: >-
   Anticipate early to avoid rushing brings together several connected ideas. Rushing happens
-  because the player did not anticipate in advance. Together, these principles show how the topic
-  is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:1649a6bfba7e3bbfd5845400b4d34e8b3fb1ee2068ef720d618b1e85d8addd41"
+  because the player did not anticipate in advance. Rushing when the ball gets close reduces power
+  and that you should wait until it is closer before initiating power. Elite players rise before
+  contact because they anticipate the spin and shying away slows reactions and anticipation.
+  Return difficulty comes from not anticipating, and explicitly tells players to practice
+  anticipation and train it seriously. Together, these principles show how the topic is applied in
+  practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:c2620103606816d31fd1564f8db647f9e71247aa8e0c1d38a48ee9434be0232f"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -42,3 +46,47 @@ evidence:
         - 7d1fUkOzCjM:00002
         - 7d1fUkOzCjM:00003
         - 7d1fUkOzCjM:00006
+  - id: qFwE0n-bspQ-concept-anticipate-early-to-avoid-rushing-reviewed
+    evidence_type: mistake
+    excerpt: Prepare the stroke before the ball reaches you so you do not rush the contact as the ball gets close.
+    reason: The speaker says rushing when the ball gets close reduces power and that you should wait until it is closer before initiating power.
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: qFwE0n-bspQ
+      start_ms: 155400
+      end_ms: 160866
+      url: https://www.youtube.com/watch?v=qFwE0n-bspQ&t=155s
+      segment_ids:
+        - qFwE0n-bspQ:00036
+  - id: qTmwWFOeuBA-concept-anticipate-early-to-avoid-rushing-reviewed
+    evidence_type: explanation
+    excerpt: Reading the serve early so the receiver can move and prepare without panicking or being late.
+    reason: The speaker says elite players rise before contact because they anticipate the spin and warns that shying away slows reactions and anticipation.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: qTmwWFOeuBA
+      start_ms: 292933
+      end_ms: 301866
+      url: https://www.youtube.com/watch?v=qTmwWFOeuBA&t=292s
+      segment_ids:
+        - qTmwWFOeuBA:00073
+        - qTmwWFOeuBA:00074
+  - id: yIBhoQsBD9k-concept-anticipate-early-to-avoid-rushing-reviewed
+    evidence_type: explanation
+    excerpt: Train anticipation and avoid rushing the return so you can meet serves at the right time.
+    reason: The speaker says return difficulty comes from not anticipating, and explicitly tells players to practice anticipation and train it seriously.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: yIBhoQsBD9k
+      start_ms: 40566
+      end_ms: 47766
+      url: https://www.youtube.com/watch?v=yIBhoQsBD9k&t=40s
+      segment_ids:
+        - yIBhoQsBD9k:00010
+        - yIBhoQsBD9k:00011

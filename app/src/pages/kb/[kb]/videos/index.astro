@@ -1,35 +1,36 @@
 ---
 import { corpora } from '../../../../corpora';
-import VideoToc from '../../../../components/VideoToc.astro';
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
-import { buildVideoTocEntries } from '../../../../lib/videoToc';
 import type { Corpus } from '../../../../types';
 
 export function getStaticPaths() { return corpora.map((corpus) => ({ params: { kb: corpus.knowledge_base.id }, props: { corpus } })); }
 interface Props { corpus: Corpus }
 const { corpus } = Astro.props;
 const root = `${import.meta.env.BASE_URL}kb/${corpus.knowledge_base.id}`;
-const entries = buildVideoTocEntries(corpus);
+const slugify = (value: string) => value.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const channels = [...new Set(corpus.videos.map((video) => video.channel_name.trim()))].sort((a, b) => a.localeCompare(b));
 ---
 
-<BaseLayout title={`${corpus.knowledge_base.name} videos`} kbId={corpus.knowledge_base.id}>
+<BaseLayout title={`${corpus.knowledge_base.name} video sources`} kbId={corpus.knowledge_base.id}>
   <section class="page-intro">
     <div class="eyebrow">Source library</div>
-    <h1>Videos in {corpus.knowledge_base.name}</h1>
-    <p>Browse the source lessons, then open an individual video for its complete chronological contents and linked moments.</p>
+    <h1>Video sources</h1>
+    <p>Choose a channel, then browse its lessons in batches of 20.</p>
   </section>
-  <section class="video-grid">
-    {entries.map((entry) => {
-      const detailHref = `${root}/videos/${entry.video.id}/`;
-      return <article class="video-card" id={`video-${entry.video.id}`}>
-        <div class="video-thumb"><span>{entry.video.availability === 'demo_fixture' ? 'Demo fixture' : 'YouTube'}</span></div>
-        <div class="video-card-content">
-          <p class="eyebrow">{entry.video.channel_name}</p>
-          <h2><a class="video-title-link" href={detailHref}>{entry.video.title}</a></h2>
-          <p>{entry.concepts.length} connected concept{entry.concepts.length === 1 ? '' : 's'} · {entry.moments.length} linked moment{entry.moments.length === 1 ? '' : 's'}</p>
-          <VideoToc entry={entry} root={root} detailHref={detailHref} compact />
-          <div class="relation-chips">{entry.concepts.slice(0, 8).map((concept) => <a href={`${root}/concepts/${concept.slug}/`}>{concept.label}</a>)}{entry.concepts.length > 8 && <span>+{entry.concepts.length - 8} more</span>}</div>
+  <section class="video-channel-directory" aria-label="Video channels">
+    {channels.map((channel) => {
+      const videos = corpus.videos.filter((video) => video.channel_name.trim() === channel);
+      const pages = Math.ceil(videos.length / 20);
+      const channelRoot = `${root}/videos/${slugify(channel)}`;
+      return <article class="video-channel-card">
+        <div>
+          <p class="eyebrow">Channel</p>
+          <h2><a href={`${channelRoot}/`}>{channel}</a></h2>
+          <p>{videos.length} source video{videos.length === 1 ? '' : 's'} · {pages} batch{pages === 1 ? '' : 'es'}</p>
         </div>
+        <nav aria-label={`Batches for ${channel}`} class="video-batch-links">
+          {Array.from({ length: pages }, (_, index) => <a href={`${channelRoot}/${index + 1}/`}>Batch {index + 1}</a>)}
+        </nav>
       </article>;
     })}
   </section>

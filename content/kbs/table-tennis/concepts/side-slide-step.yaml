@@ -8,9 +8,11 @@ short_definition: A lateral recovery step where both feet move together, used fo
 evidence_summary: >-
   Side slide step brings together several connected ideas. And repeatedly explains the side slide
   step as the preferred small-distance movement. The movement as a side step while demonstrating
-  the lateral adjustment and repeat reps. Together, these principles show how the topic is applied
-  in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:128bc419467d524ae69bdf205be1aa68020cf9ca28d4323f8d2ef4c63a9a2fd0"
+  the lateral adjustment and repeat reps. The side-shuffle step and both legs move together.
+  Stepping with the right leg while the left leg slides along the ground and not to hop. Together,
+  these principles show how the topic is applied in practice while preserving the relevant
+  distinctions and constraints.
+evidence_summary_source_hash: "sha256:fab67f172e00e90996b8e53e6e0eb0baf66924ddaabc6aea44542ee9699bc139"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -61,3 +63,36 @@ evidence:
         - Da2vVwtco1w:00127
         - Da2vVwtco1w:00128
         - Da2vVwtco1w:00129
+  - id: 7N1IChCbVjk-concept-side-slide-step-reviewed
+    evidence_type: definition
+    excerpt: A lateral footwork pattern where both legs move together to cover a slightly wider angle.
+    reason: The transcript explicitly names the side-shuffle step and says both legs move together.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 7N1IChCbVjk
+      start_ms: 11966
+      end_ms: 17033
+      url: https://www.youtube.com/watch?v=7N1IChCbVjk&t=11s
+      segment_ids:
+        - 7N1IChCbVjk:00006
+        - 7N1IChCbVjk:00007
+        - 7N1IChCbVjk:00008
+  - id: HVPF38PxXvI-concept-side-slide-step-reviewed
+    evidence_type: explanation
+    excerpt: A lateral sliding recovery step used with a decisive lead step instead of hopping.
+    reason: The speaker describes stepping with the right leg while the left leg slides along the ground and warns not to hop.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: HVPF38PxXvI
+      start_ms: 27433
+      end_ms: 44366
+      url: https://www.youtube.com/watch?v=HVPF38PxXvI&t=27s
+      segment_ids:
+        - HVPF38PxXvI:00007
+        - HVPF38PxXvI:00008
+        - HVPF38PxXvI:00009
+        - HVPF38PxXvI:00010

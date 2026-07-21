@@ -320,6 +320,37 @@ evidence:
         - mpCV9-Cc1HE:00285
         - mpCV9-Cc1HE:00287
         - mpCV9-Cc1HE:00288
+  - id: 60_qpMsHRvQ-concept-ball-feel-reviewed
+    evidence_type: definition
+    excerpt: The subjective sensation of contact and motion that guides the player to generate spin and land the shot, even if the form is not perfect.
+    reason: The speaker explicitly calls the sensation of lifting then driving forward a type of ball feel and asks for the golden feeling of biting the ball.
+    confidence: 0.88
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 60_qpMsHRvQ
+      start_ms: 363300
+      end_ms: 383500
+      url: https://www.youtube.com/watch?v=60_qpMsHRvQ&t=363s
+      segment_ids:
+        - 60_qpMsHRvQ:00087
+        - 60_qpMsHRvQ:00089
+        - 60_qpMsHRvQ:00090
+  - id: R_MLRGrJlsM-concept-soft-touch-and-delayed-contact-reviewed
+    evidence_type: explanation
+    excerpt: On difficult serves, wait for the ball to descend and receive with a soft, relaxed touch instead of rushing the contact.
+    reason: "The speaker explicitly instructs to push late, not rush, mimic a chopper's timing, and use a relaxed soft touch with three summary rules: wait for it, soft touch, aim for the middle."
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: R_MLRGrJlsM
+      start_ms: 406133
+      end_ms: 414766
+      url: https://www.youtube.com/watch?v=R_MLRGrJlsM&t=406s
+      segment_ids:
+        - R_MLRGrJlsM:00088
+        - R_MLRGrJlsM:00089
 relations:
   - relation_type: used_with
     target_concept_id: concept-contact-point

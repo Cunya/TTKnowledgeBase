@@ -8,18 +8,18 @@ aliases:
 short_definition: Using the fingers to guide racket acceleration and contact direction, especially to increase brushing and create arc.
 evidence_summary: >-
   Finger-assisted brushing brings together several connected ideas. The learner to use the middle
-  and index fingers to press forward and upward and to press the racket forward with force. The
-  fingers and wrist are shown as active contributors to the arc, not just the forearm. The fingers
-  and thumb pressure firm up the grip, apply force at contact, and keep the racket face stable,
-  which is the finger-assisted control idea. A backspin return has weight and spin and 'a slight
-  outward release of power with your fingers,' which supports finger-assisted stroke control. The
-  invisible action makes serves harder to read and notes that contact relies on finger and wrist
-  brushing. The fingers as the initial driver and the point where friction is created to generate
-  spin. Not to use the upper arm too much and to brush with the wrist horizontally. Looping is
+  and index fingers to press forward and upward and to press the racket forward with force. Using
+  only fingers and wrist, then says fingers and wrist speed up the brushing and can produce both
+  spin and speed. To learn finger power and that faster brushing at contact produces more spin. A
+  normal-speed ball should use the full motion including fingers and wrist, and that slower balls
+  allow fuller brushing with finger and wrist action. A useful contrast is between arm-driven
+  motion and fingers and wrist, saying fingers and wrist create more speed and spin. Looping is
   applied with the fingers, advises using fingertips, and instructs to push forward with the
-  fingers. Additional points reinforce the same theme. Together, these principles show how the
-  topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:34f48d6a7b44efdb8209a3574abf9a755ba4958f422f2df929afb8fef38b523c"
+  fingers. The racket tip brush is driven by fingers and that fingers are of spin, not a large arm
+  swing. The fingers create the arc, transition the racket angle, and control the brush.
+  Additional points reinforce the same theme. Together, these principles show how the topic is
+  applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:5de40d9cb75df8f2f8035f46e6c079a5273ea5113e5cd160d5d830c8a59cadca"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -286,3 +286,83 @@ evidence:
         - idAN8cPDZ7w:00038
         - idAN8cPDZ7w:00042
         - idAN8cPDZ7w:00044
+  - id: FNFUZTBq2yQ-concept-finger-assisted-brushing-reviewed
+    evidence_type: definition
+    excerpt: Using finger action to initiate and control the brushing and racket-head acceleration needed for spin.
+    reason: The speaker contrasts wrist and finger use, then states that fingers must initiate racket-head rotation and provide the fastest brushing motion.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: FNFUZTBq2yQ
+      start_ms: 669233
+      end_ms: 688333
+      url: https://www.youtube.com/watch?v=FNFUZTBq2yQ&t=669s
+      segment_ids:
+        - FNFUZTBq2yQ:00154
+        - FNFUZTBq2yQ:00156
+        - FNFUZTBq2yQ:00157
+  - id: 8143qxSjk5A-concept-finger-assisted-brushing-reviewed
+    evidence_type: definition
+    excerpt: Use finger action to initiate and guide the brushing motion, with the fingers creating the fine spin-producing force at the racket tip.
+    reason: The speaker repeatedly says the racket tip brush is driven by fingers and that fingers are the source of spin, not a large arm swing.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8143qxSjk5A
+      start_ms: 182833
+      end_ms: 207166
+      url: https://www.youtube.com/watch?v=8143qxSjk5A&t=182s
+      segment_ids:
+        - 8143qxSjk5A:00041
+        - 8143qxSjk5A:00042
+        - 8143qxSjk5A:00044
+  - id: phTj82vlVqs-concept-finger-assisted-brushing-reviewed
+    evidence_type: definition
+    excerpt: Using the fingers to drive wrist rotation and contribute to brushing spin at contact.
+    reason: The speaker says to use the fingers to drive the wrist into fast rotation and that friction is generated primarily by the fingers.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: phTj82vlVqs
+      start_ms: 210666
+      end_ms: 236733
+      url: https://www.youtube.com/watch?v=phTj82vlVqs&t=210s
+      segment_ids:
+        - phTj82vlVqs:00048
+        - phTj82vlVqs:00049
+        - phTj82vlVqs:00050
+        - phTj82vlVqs:00051
+        - phTj82vlVqs:00052
+  - id: yIBhoQsBD9k-concept-finger-assisted-brushing-reviewed
+    evidence_type: explanation
+    excerpt: Use the fingers to initiate and drive racket action, especially when lifting against heavy spin.
+    reason: The speaker states that force comes from the fingers and that wrist rotation is initiated and driven by the fingers.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: yIBhoQsBD9k
+      start_ms: 192100
+      end_ms: 210800
+      url: https://www.youtube.com/watch?v=yIBhoQsBD9k&t=192s
+      segment_ids:
+        - yIBhoQsBD9k:00042
+        - yIBhoQsBD9k:00043
+        - yIBhoQsBD9k:00045
+  - id: f7Bf-QRn-9Q-concept-finger-assisted-brushing-reviewed
+    evidence_type: explanation
+    excerpt: Using the fingers to create and control the curved arc of the loop, especially at the moment of contact, rather than trying to swing the whole arm through the adjustment.
+    reason: The speaker explicitly says the fingers create the arc, transition the racket angle, and control the brush.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: f7Bf-QRn-9Q
+      start_ms: 168133
+      end_ms: 173000
+      url: https://www.youtube.com/watch?v=f7Bf-QRn-9Q&t=168s
+      segment_ids:
+        - f7Bf-QRn-9Q:00038

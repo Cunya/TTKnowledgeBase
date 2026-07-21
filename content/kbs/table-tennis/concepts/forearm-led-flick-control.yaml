@@ -9,10 +9,13 @@ evidence_summary: >-
   Forearm-led flick control brings together several connected ideas. The power and trajectory
   adjustments come from the forearm, not the wrist, across the flick variations. To make the upper
   arm movement smaller, use more forearm, and use the wrist to drive the forearm for the hook
-  serve. To pull or move the forearm forward and explicitly says not to go upward or lift.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:7478001375999d21433fadc660391708d20d0369cd124f5660c9a7cd6b702c27"
+  serve. To pull or move the forearm forward and explicitly says not to go upward or lift. The
+  forearm path to forward and then slightly downward, explicitly rejecting an upward arm path.
+  After brushing, the player to move the forearm forward and explicitly warns against lifting
+  upward, making forward forearm direction the main continuation of the stroke. The fast push
+  should be guided forward and down, not upward. Together, these principles show how the topic is
+  applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:b47ab0fc6edc3fdde077e1bd331a5cd67c6ff91d2201e1916f57c184c7abaab8"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -82,3 +85,52 @@ evidence:
         - 2xGbue3FXIw:00057
         - 2xGbue3FXIw:00060
         - 2xGbue3FXIw:00061
+  - id: igaH-B1hrmY-concept-forearm-led-flick-control-reviewed
+    evidence_type: explanation
+    excerpt: Using the forearm to guide the flick's direction and trajectory instead of letting it rise upward.
+    reason: The speaker corrects the forearm path to forward and then slightly downward, explicitly rejecting an upward arm path.
+    confidence: 0.87
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: igaH-B1hrmY
+      start_ms: 170160
+      end_ms: 199520
+      url: https://www.youtube.com/watch?v=igaH-B1hrmY&t=170s
+      segment_ids:
+        - igaH-B1hrmY:00021
+        - igaH-B1hrmY:00022
+        - igaH-B1hrmY:00023
+        - igaH-B1hrmY:00024
+  - id: zNga_K6A7F0-concept-forearm-led-flick-control-reviewed
+    evidence_type: explanation
+    excerpt: Using the forearm to direct the ball forward after initial brush contact, while avoiding excessive upward lifting.
+    reason: After brushing, the speaker instructs the player to move the forearm forward and explicitly warns against lifting upward, making forward forearm direction the main continuation of the stroke.
+    confidence: 0.91
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: zNga_K6A7F0
+      start_ms: 168160
+      end_ms: 190240
+      url: https://www.youtube.com/watch?v=zNga_K6A7F0&t=168s
+      segment_ids:
+        - zNga_K6A7F0:00023
+        - zNga_K6A7F0:00024
+        - zNga_K6A7F0:00025
+        - zNga_K6A7F0:00026
+  - id: mPRFTyZICY4-concept-forearm-led-flick-control-reviewed
+    evidence_type: explanation
+    excerpt: Forearm direction and forward finish are used to control push direction and trajectory, especially on faster or spinny receives.
+    reason: The speaker says the fast push should be guided forward and down, not upward.
+    confidence: 0.88
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: mPRFTyZICY4
+      start_ms: 300100
+      end_ms: 306733
+      url: https://www.youtube.com/watch?v=mPRFTyZICY4&t=300s
+      segment_ids:
+        - mPRFTyZICY4:00065
+        - mPRFTyZICY4:00066

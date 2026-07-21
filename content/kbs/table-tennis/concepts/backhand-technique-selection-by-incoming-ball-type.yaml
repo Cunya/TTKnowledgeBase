@@ -8,18 +8,18 @@ aliases:
 short_definition: Backhand play should change according to the opponent's ball speed, height, and pressure rather than using one fixed motion for every shot.
 evidence_summary: >-
   Backhand technique selection by incoming ball type brings together several connected ideas. You
-  must adjust based on the incoming ball and know when to use different backhand techniques.
-  Racket face angle for backhand slice, non-spinning or heavy backspin balls, and low-net balls.
-  To backhand technique improvement and explicitly says to differentiate flicking and looping
-  skills. What approach to take against fast spin shots and to adapt to the ball. Whether to use
-  forehand or backhand for different incoming serves and the same logic applies to the backhand.
-  To use only the forearm, pivot around the elbow, and drop the forearm only against heavy fast
-  backspin. Brushing for underspin, freely hitting topspin, and using a standard backhand loop for
-  a given spin type. Multiple serve/ball types and the key difference is the upward direction of
-  the forearm swing, indicating technique selection by incoming spin type. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:754baf7dbb3164ebd645a3a1becb10dbab23e33e063d03cd6e2dfdc2ab251338"
+  must adjust based on the incoming ball and know when to use different backhand techniques. To
+  backhand technique improvement and explicitly says to differentiate flicking and looping skills.
+  What approach to take against fast spin shots and to adapt to the ball. To use only the forearm,
+  pivot around the elbow, and drop the forearm only against heavy fast backspin. Brushing for
+  underspin, freely hitting topspin, and using a standard backhand loop for a given spin type.
+  Against heavy spin you lift with the upper arm, while against light spin you wipe sideways. The
+  backhand rip as a solution, then explains the fallback of using the forearm to push forward and
+  upward and create arc, including against low-spin and heavy-spin balls. Slow serves and fast
+  deep backspin serves and the preparation changes accordingly. Additional points reinforce the
+  same theme. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:774d401ed64fb9853cf6f1b2b25b16808b5e505c1506cc5778d9ccd837c6b3b3"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -168,3 +168,69 @@ evidence:
         - rPrv4iWdE4w:00032
         - rPrv4iWdE4w:00033
         - rPrv4iWdE4w:00034
+  - id: W8EqqK7wNKY-concept-backhand-technique-selection-by-incoming-ball-type-reviewed
+    evidence_type: explanation
+    excerpt: Backhand response changes depending on incoming spin and speed, such as lifting heavy spin, wiping sideways on light spin, or making a compact snap on fast balls.
+    reason: The speaker says against heavy spin you lift with the upper arm, while against light spin you wipe sideways.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: W8EqqK7wNKY
+      start_ms: 574300
+      end_ms: 586800
+      url: https://www.youtube.com/watch?v=W8EqqK7wNKY&t=574s
+      segment_ids:
+        - W8EqqK7wNKY:00130
+        - W8EqqK7wNKY:00131
+        - W8EqqK7wNKY:00132
+  - id: ihrv3kBFb-U-concept-backhand-technique-selection-by-serve-spin-and-speed-reviewed
+    evidence_type: definition
+    excerpt: 'On backhand receives, technique changes with incoming spin and speed: rip when possible, otherwise use a forearm-led lift that creates arc.'
+    reason: The speaker introduces the backhand rip as a solution, then explains the fallback of using the forearm to push forward and upward and create arc, including against low-spin and heavy-spin balls.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ihrv3kBFb-U
+      start_ms: 353833
+      end_ms: 381366
+      url: https://www.youtube.com/watch?v=ihrv3kBFb-U&t=353s
+      segment_ids:
+        - ihrv3kBFb-U:00072
+        - ihrv3kBFb-U:00073
+        - ihrv3kBFb-U:00075
+        - ihrv3kBFb-U:00076
+  - id: q70a9LCojco-concept-forearm-path-adapts-to-incoming-ball-reviewed
+    evidence_type: explanation
+    excerpt: 'The forearm path should change based on the incoming ball type: a backspin loop may use a down-and-up path, while heavy spin defense uses a forward-and-down guide.'
+    reason: The speaker explicitly says the forearm path must adapt to the incoming ball and gives different paths for different balls.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: q70a9LCojco
+      start_ms: 777300
+      end_ms: 807300
+      url: https://www.youtube.com/watch?v=q70a9LCojco&t=777s
+      segment_ids:
+        - q70a9LCojco:00169
+        - q70a9LCojco:00170
+        - q70a9LCojco:00173
+        - q70a9LCojco:00174
+  - id: XF5bM7-VQGU-concept-backhand-technique-selection-by-incoming-ball-type-reviewed
+    evidence_type: explanation
+    excerpt: Receive and loop choices must change with serve speed and type; slow balls call for slower preparation, while fast deep serves demand earlier, more compact preparation.
+    reason: The speaker contrasts slow serves and fast deep backspin serves and says the preparation changes accordingly.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: XF5bM7-VQGU
+      start_ms: 709766
+      end_ms: 729233
+      url: https://www.youtube.com/watch?v=XF5bM7-VQGU&t=709s
+      segment_ids:
+        - XF5bM7-VQGU:00161
+        - XF5bM7-VQGU:00163
+        - XF5bM7-VQGU:00165

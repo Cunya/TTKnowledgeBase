@@ -422,6 +422,40 @@ evidence:
       segment_ids:
         - 4WWIQdr3R8g:00054
         - 4WWIQdr3R8g:00056
+  - id: nL5W5P6d_OA-concept-loaded-legs-reviewed
+    evidence_type: explanation
+    excerpt: Using the legs as a lightly loaded spring rather than squatting deeply, so the body can move and generate force efficiently.
+    reason: The speaker says players engage hands, body, and legs to generate force, keep the hips up, and avoid squatting down.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: nL5W5P6d_OA
+      start_ms: 463633
+      end_ms: 474266
+      url: https://www.youtube.com/watch?v=nL5W5P6d_OA&t=463s
+      segment_ids:
+        - nL5W5P6d_OA:00098
+        - nL5W5P6d_OA:00099
+  - id: w25weWSp_Zo-concept-loaded-legs-reviewed
+    evidence_type: explanation
+    excerpt: Use a loaded stance and coordinated leg drive so force can travel from the ground into the stroke.
+    reason: The speaker emphasizes crouching, coiling, stomping, and dropping weight to engage the body and ground together.
+    confidence: 0.92
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: w25weWSp_Zo
+      start_ms: 679533
+      end_ms: 709333
+      url: https://www.youtube.com/watch?v=w25weWSp_Zo&t=679s
+      segment_ids:
+        - w25weWSp_Zo:00143
+        - w25weWSp_Zo:00145
+        - w25weWSp_Zo:00147
+        - w25weWSp_Zo:00148
+        - w25weWSp_Zo:00149
+        - w25weWSp_Zo:00150
 relations:
   - relation_type: used_with
     target_concept_id: concept-body-hand-synchronization

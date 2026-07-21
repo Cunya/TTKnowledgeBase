@@ -10,18 +10,18 @@ short_definition: Classifying a serve's spin as side-topspin or side-backspin by
 evidence_summary: >-
   Side-topspin versus side-backspin classification brings together several connected ideas.
   Side-topspin and side-backspin and gives the cue that forward/upward forearm motion indicates
-  topspin while downward motion indicates backspin. Sidespin-backspin and sidespin-topspin as
-  different serve types and people often find the spin blurry. A useful contrast is between
-  sidespin-backspin and pure backspin and explains that adding sidespin makes the return float
-  more and drift unpredictably. Side-spin half-high balls from back-spin half-high balls and gives
-  different handling cues for each. Side-topspin requires impact, speed, and forward pace, and
-  explicitly tells the viewer to prioritize speed over spin. The serves into upward/downward
-  side-spin types and names them side spin up/down. Side-top spin and side-backspin and discusses
-  producing half backspin versus other spin mixtures. Side spin, side-top, and side-under outcomes
-  and asks the learner to identify them. Additional points reinforce the same theme. Together,
-  these principles show how the topic is applied in practice while preserving the relevant
-  distinctions and constraints.
-evidence_summary_source_hash: "sha256:99d18504d4592d779dc379ca96f947c3b63b9f032427b8035e1b32bf600917ef"
+  topspin while downward motion indicates backspin. Motions as side-topspin or side-backspin and
+  the two by forearm direction. A useful contrast is between sidespin-backspin and pure backspin
+  and explains that adding sidespin makes the return float more and drift unpredictably. A useful
+  contrast is between sidespin-backspin and sidespin-topspin and links them to different
+  racket-face shapes. Side top spin, side back spin, side spin, and side underspin by trajectory
+  and bounce behavior. Left sidespin and repeatedly talks about left-side spin and changing racket
+  face to handle it. Side top spin and side under spin and the distinction comes from the upward
+  direction of the forearm swing. A useful contrast is between brushing and chopping and states
+  the resulting spins explicitly. Additional points reinforce the same theme. Together, these
+  principles show how the topic is applied in practice while preserving the relevant distinctions
+  and constraints.
+evidence_summary_source_hash: "sha256:af28956b5229671ea54a7290a92ebcb034825c4a3863d7e85f203aa93f038d8b"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -331,3 +331,36 @@ evidence:
       segment_ids:
         - Whmhzk845aA:00308
         - Whmhzk845aA:00309
+  - id: lTnBxGKdH2g-concept-side-topspin-versus-side-backspin-classification-reviewed
+    evidence_type: explanation
+    excerpt: A serve-spin classification that distinguishes whether the serve produces side-topspin or side-backspin, and notes different mechanics for each side-spin direction.
+    reason: The speaker contrasts side-backspin with side-topspin repeatedly and distinguishes left-sidespin mechanics from right-sidespin mechanics.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: lTnBxGKdH2g
+      start_ms: 138900
+      end_ms: 166266
+      url: https://www.youtube.com/watch?v=lTnBxGKdH2g&t=138s
+      segment_ids:
+        - lTnBxGKdH2g:00032
+        - lTnBxGKdH2g:00033
+        - lTnBxGKdH2g:00034
+        - lTnBxGKdH2g:00035
+        - lTnBxGKdH2g:00037
+  - id: 1IeU5XUDCKA-concept-side-topspin-versus-side-backspin-classification-reviewed
+    evidence_type: explanation
+    excerpt: A classification of serve spin where brushing around the ball produces sidespin-topspin, while cutting or chopping through a single contact point produces sidespin-backspin.
+    reason: The speaker repeatedly contrasts brushing with chopping and states the resulting spins explicitly.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 1IeU5XUDCKA
+      start_ms: 99133
+      end_ms: 125466
+      url: https://www.youtube.com/watch?v=1IeU5XUDCKA&t=99s
+      segment_ids:
+        - 1IeU5XUDCKA:00020
+        - 1IeU5XUDCKA:00024

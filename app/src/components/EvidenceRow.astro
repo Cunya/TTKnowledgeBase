@@ -4,8 +4,8 @@ import { editorialNarrative } from '../lib/videoToc';
 import ReviewControls from './ReviewControls.astro';
 
 interface Citation { item: Evidence; index: number }
-interface Props { citations: Citation[]; video?: Video; initialIndex: number }
-const { citations, video, initialIndex } = Astro.props;
+interface Props { citations: Citation[]; video?: Video; initialIndex: number; relevanceScore?: number }
+const { citations, video, initialIndex, relevanceScore } = Astro.props;
 const item = citations[0].item;
 const active = citations.some(({ index }) => index === initialIndex);
 const formatTime = (milliseconds: number) => {
@@ -20,7 +20,7 @@ const SPOKEN_TAIL_MS = 1200;
 <article class:list={['evidence-row', { active }]} id={`moment-${item.id}`}>
   {citations.slice(1).map(({ item: citation }) => <span id={`moment-${citation.id}`} class="evidence-citation-anchor" aria-hidden="true"></span>)}
   <div class="evidence-row-content">
-    <div class="evidence-row-meta"><span>{item.evidence_type.replaceAll('_', ' ')}</span><small>{citations.length} moment{citations.length === 1 ? '' : 's'}</small></div>
+    <div class="evidence-row-meta"><span>{item.evidence_type.replaceAll('_', ' ')}</span>{relevanceScore !== undefined && <small>Relevance {relevanceScore}%</small>}<small>{citations.length} moment{citations.length === 1 ? '' : 's'}</small></div>
     <div class="evidence-row-main">
       <blockquote>{editorialNarrative(item.excerpt)}</blockquote>
       <p>{editorialNarrative(item.reason)}</p>

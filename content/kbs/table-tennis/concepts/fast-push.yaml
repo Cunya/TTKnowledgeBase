@@ -9,9 +9,12 @@ short_definition: A push executed with speed and a compact motion, often used to
 evidence_summary: >-
   Fast push brings together several connected ideas. A useful contrast is between fast push and
   heavy or spinny pushes and recommends it against certain loopers and slow-footwork opponents.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:cba241be13a431076d07285920fe5425ff0ffb8e022aeacadfa0db3c92b90c79"
+  Fast push as locking the racket angle and driving forward/down rather than brushing, and ties it
+  to slow incoming balls. A useful contrast is between safe wide pushes and fast pushes on the
+  rise and says not to add friction, instead using pace to jam the opponent. Together, these
+  principles show how the topic is applied in practice while preserving the relevant distinctions
+  and constraints.
+evidence_summary_source_hash: "sha256:71a75f75f29f09a9b055ac9774fb332bc212a8bfe5bcfb4d16d52e9363610968"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -51,3 +54,35 @@ evidence:
       segment_ids:
         - WcQLHn2Fafw:00090
         - WcQLHn2Fafw:00091
+  - id: uAOIQu7TT0g-concept-fast-push-reviewed
+    evidence_type: definition
+    excerpt: A push receive or counter-push played with a locked racket angle and a forward-down driving motion instead of brushing, especially when the incoming ball is relatively slow.
+    reason: The speaker explicitly defines fast push as locking the racket angle and driving forward/down rather than brushing, and ties it to slow incoming balls.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: uAOIQu7TT0g
+      start_ms: 254500
+      end_ms: 272633
+      url: https://www.youtube.com/watch?v=uAOIQu7TT0g&t=254s
+      segment_ids:
+        - uAOIQu7TT0g:00058
+        - uAOIQu7TT0g:00060
+  - id: ySM92aDSRPo-concept-fast-push-to-jam-opponent-reviewed
+    evidence_type: explanation
+    excerpt: Use a fast push that takes the ball on the rise and relies on speed, not added friction, to jam the opponent.
+    reason: The speaker contrasts safe wide pushes with fast pushes on the rise and says not to add friction, instead using pace to jam the opponent.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: ySM92aDSRPo
+      start_ms: 836633
+      end_ms: 866100
+      url: https://www.youtube.com/watch?v=ySM92aDSRPo&t=836s
+      segment_ids:
+        - ySM92aDSRPo:00190
+        - ySM92aDSRPo:00191
+        - ySM92aDSRPo:00195
+        - ySM92aDSRPo:00196

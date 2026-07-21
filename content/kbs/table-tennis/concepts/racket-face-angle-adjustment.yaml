@@ -9,11 +9,18 @@ short_definition: Adjusting the racket face angle so the contact can occur on th
 evidence_summary: >-
   Racket face angle adjustment brings together several connected ideas. The racket face must be
   angled correctly and bad angle as a primary cause of failed curve generation. Explicitly says
-  the racket must face left for left-side spin and that the ball will curve when angled left. To
-  keep the position, adjust the angle slightly, and that the movement stays the same while the
-  racket face changes. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:629d8092a14a7e233f242ad972553fdc7eda93f3ce30e2a61383e89b83285f4b"
+  the racket must face left for left-side spin and that the ball will curve when angled left. The
+  racket angle should change only minimally and that the racket face must remain stable throughout
+  the motion. Spin to changing racket head or racket face angle during the serve motion. The serve
+  changes into side-topspin by changing the grip to a hook position and only altering racket
+  angle, with contact on the side of the ball. The racket face opens after contact and should
+  instead remain closed while brushing through the ball. A slight hooking wrist motion, notes that
+  too much hook against right sidespin causes errors, and recommends opening the face slightly or
+  wrapping around the ball. A useful contrast is between a flatter, slightly angled racket and a
+  vertical racket, linking angle choice to brushing and spin generation. Additional points
+  reinforce the same theme. Together, these principles show how the topic is applied in practice
+  while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:d22eccb17260782625f85c2e5df00ad6aff9943e9ffc17182814ba8405c997ed"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -80,3 +87,130 @@ evidence:
       segment_ids:
         - 4gMbiB6mrrY:00023
         - 4gMbiB6mrrY:00025
+  - id: lTnBxGKdH2g-concept-racket-face-angle-adjustment-reviewed
+    evidence_type: explanation
+    excerpt: Keeping the racket face stable with only slight angle changes so the serve does not flip or lose spin.
+    reason: The speaker says the racket angle should change only minimally and that the racket face must remain stable throughout the motion.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: lTnBxGKdH2g
+      start_ms: 353666
+      end_ms: 382133
+      url: https://www.youtube.com/watch?v=lTnBxGKdH2g&t=353s
+      segment_ids:
+        - lTnBxGKdH2g:00077
+        - lTnBxGKdH2g:00078
+        - lTnBxGKdH2g:00079
+        - lTnBxGKdH2g:00082
+        - lTnBxGKdH2g:00084
+  - id: Nq0Wek82V6k-concept-racket-face-angle-adjustment-reviewed
+    evidence_type: explanation
+    excerpt: Adjusting racket-face or racket-head orientation through the serve motion to create friction and spin instead of a flat push.
+    reason: The speaker repeatedly ties spin to changing racket head or racket face angle during the serve motion.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: Nq0Wek82V6k
+      start_ms: 301933
+      end_ms: 327566
+      url: https://www.youtube.com/watch?v=Nq0Wek82V6k&t=301s
+      segment_ids:
+        - Nq0Wek82V6k:00061
+        - Nq0Wek82V6k:00065
+  - id: 1IeU5XUDCKA-concept-racket-face-angle-adjustment-reviewed
+    evidence_type: explanation
+    excerpt: Adjusting the racket face angle to disguise or shape spin, including keeping a flat or vertical-looking face while producing different spins.
+    reason: The speaker discusses flattening the racket angle, holding it high and flat, and notes that flat or vertical angles can still produce different spins.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 1IeU5XUDCKA
+      start_ms: 389933
+      end_ms: 416300
+      url: https://www.youtube.com/watch?v=1IeU5XUDCKA&t=389s
+      segment_ids:
+        - 1IeU5XUDCKA:00087
+        - 1IeU5XUDCKA:00091
+  - id: T5hgo9D7c7A-concept-racket-face-angle-adjustment-reviewed
+    evidence_type: explanation
+    excerpt: Adjusting the racket face angle to change the serve's spin while keeping the motion similar.
+    reason: The speaker says the serve changes into side-topspin by changing the grip to a hook position and only altering racket angle, with contact on the side of the ball.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: T5hgo9D7c7A
+      start_ms: 106733
+      end_ms: 131533
+      url: https://www.youtube.com/watch?v=T5hgo9D7c7A&t=106s
+      segment_ids:
+        - T5hgo9D7c7A:00025
+        - T5hgo9D7c7A:00028
+        - T5hgo9D7c7A:00029
+  - id: xo9M8v9k564-concept-racket-face-angle-adjustment-reviewed
+    evidence_type: explanation
+    excerpt: Controlling racket-face orientation during the swing so the face stays closed through the brush instead of opening into a push.
+    reason: The speaker says the racket face opens after contact and should instead remain closed while brushing through the ball.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: xo9M8v9k564
+      start_ms: 123900
+      end_ms: 139400
+      url: https://www.youtube.com/watch?v=xo9M8v9k564&t=123s
+      segment_ids:
+        - xo9M8v9k564:00027
+        - xo9M8v9k564:00029
+  - id: dg0kTVGE8qQ-concept-racket-face-angle-adjustment-reviewed
+    evidence_type: explanation
+    excerpt: Serve spin and trajectory depend on keeping the racket face oriented correctly, including whether the bottom edge is above or below the top edge at contact and after contact.
+    reason: The speaker contrasts a low bottom edge that sends the ball forward with a higher bottom edge that wraps upward and creates true friction, emphasizing racket-face orientation.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: dg0kTVGE8qQ
+      start_ms: 528400
+      end_ms: 554233
+      url: https://www.youtube.com/watch?v=dg0kTVGE8qQ&t=528s
+      segment_ids:
+        - dg0kTVGE8qQ:00122
+        - dg0kTVGE8qQ:00128
+  - id: ihrv3kBFb-U-concept-hooking-wrist-and-racket-face-adjustment-reviewed
+    evidence_type: explanation
+    excerpt: Against sidespin, the loop uses a slight hook with the wrist and a racket face adjustment that wraps around the ball rather than staying flat.
+    reason: The speaker describes a slight hooking wrist motion, notes that too much hook against right sidespin causes errors, and recommends opening the face slightly or wrapping around the ball.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ihrv3kBFb-U
+      start_ms: 677900
+      end_ms: 696733
+      url: https://www.youtube.com/watch?v=ihrv3kBFb-U&t=677s
+      segment_ids:
+        - ihrv3kBFb-U:00142
+        - ihrv3kBFb-U:00143
+        - ihrv3kBFb-U:00144
+        - ihrv3kBFb-U:00145
+  - id: phTj82vlVqs-concept-racket-face-angle-adjustment-reviewed
+    evidence_type: explanation
+    excerpt: Changing racket face orientation to match the desired spin and friction, rather than keeping a vertical face.
+    reason: The speaker contrasts a flatter, slightly angled racket with a vertical racket, linking angle choice to brushing and spin generation.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: phTj82vlVqs
+      start_ms: 32166
+      end_ms: 58033
+      url: https://www.youtube.com/watch?v=phTj82vlVqs&t=32s
+      segment_ids:
+        - phTj82vlVqs:00008
+        - phTj82vlVqs:00010
+        - phTj82vlVqs:00014

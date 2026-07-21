@@ -2,8 +2,9 @@
 import type { Evidence, Video } from '../types';
 import EvidenceRow from './EvidenceRow.astro';
 import ReviewControls from './ReviewControls.astro';
-interface Props { evidence: Evidence[]; videos: Video[] }
-const { evidence, videos } = Astro.props;
+import { evidenceRelevance } from '../lib/evidenceRelevance';
+interface Props { evidence: Evidence[]; videos: Video[]; showRelevance?: boolean; conceptLabel?: string; maxPerChapter?: number }
+const { evidence, videos, showRelevance = false, conceptLabel = '', maxPerChapter = 5 } = Astro.props;
 const videoMap = Object.fromEntries(videos.map((video) => [video.id, video]));
 const isVerifiedVisual = (item: Evidence) => item.visual_status === 'verified_visual_demo' && item.visual_source?.selection_method === 'manual_review';
 const initial = evidence.find(isVerifiedVisual) ?? evidence.find((item) => item.visual_source) ?? evidence[0];
@@ -26,7 +27,8 @@ const chapters = [
   { id: 'practice', label: 'Practice and apply', description: 'Drills and examples for acquiring or using the concept.', types: ['drill', 'example'] },
   { id: 'diagnose', label: 'Diagnose problems', description: 'Mistakes and failure patterns that clarify what to avoid.', types: ['mistake'] },
 ].map((chapter) => {
-  const items = evidence.map((item, index) => ({ item, index })).filter(({ item }) => chapter.types.includes(item.evidence_type));
+  const chapterItems = evidence.map((item, index) => ({ item, index })).filter(({ item }) => chapter.types.includes(item.evidence_type));
+  const items = maxPerChapter > 0 ? chapterItems.slice(0, maxPerChapter) : chapterItems;
   const sources = [...new Set(items.map(({ item }) => item.source.video_id))].map((videoId) => ({
     videoId,
     video: videoMap[videoId],
@@ -35,6 +37,7 @@ const chapters = [
   }));
   return { ...chapter, items, sources };
 }).filter((chapter) => chapter.items.length > 0);
+const displayedEvidenceCount = chapters.reduce((total, chapter) => total + chapter.items.length, 0);
 const sourceCount = new Set(evidence.map((item) => item.source.video_id)).size;
 const formatTime = (milliseconds: number) => {
   const total = Math.floor(milliseconds / 1000);
@@ -44,9 +47,10 @@ const formatTime = (milliseconds: number) => {
 
 <section data-evidence-root data-initial-video={initialClip?.video_id} data-initial-start={initialClip?.start_ms ?? 0} data-initial-end={initialClip?.end_ms ?? 0} data-initial-loopable={String(initialLoopable)}>
   <nav class="evidence-outline" aria-label="Evidence sections">
-    <div><strong>{evidence.length} moments</strong><span>from {sourceCount} supporting video{sourceCount === 1 ? '' : 's'}</span></div>
-    <ol>{chapters.map((chapter, index) => <li><a href={`#evidence-${chapter.id}`}><span>{String(index + 1).padStart(2, '0')}</span><strong>{chapter.label}</strong><small>{chapter.items.length} moment{chapter.items.length === 1 ? '' : 's'} · {chapter.sources.length} video{chapter.sources.length === 1 ? '' : 's'}</small></a></li>)}</ol>
+    <div><strong>{displayedEvidenceCount} evidence item{displayedEvidenceCount === 1 ? '' : 's'}</strong><span>from {sourceCount} supporting video{sourceCount === 1 ? '' : 's'}</span></div>
+    <ol>{chapters.map((chapter, index) => <li><a href={`#evidence-${chapter.id}`}><span>{String(index + 1).padStart(2, '0')}</span><strong>{chapter.label}</strong><small>{chapter.items.length} evidence item{chapter.items.length === 1 ? '' : 's'} · {chapter.sources.length} video{chapter.sources.length === 1 ? '' : 's'}</small></a></li>)}</ol>
   </nav>
+  <slot name="evidence-toggle" />
   <div class="evidence-layout">
     <div class="player-column">
       <div class="player-shell"><div id="yt-player"></div></div>
@@ -62,10 +66,10 @@ const formatTime = (milliseconds: number) => {
         <header><span>{String(chapterIndex + 1).padStart(2, '0')}</span><div><h3>{chapter.label}</h3><p>{chapter.description}</p></div></header>
         {chapter.sources.map((source) => <section class="evidence-source">
           <div class="evidence-rows">
-            {source.groups.slice(0, 3).map((citations) => <EvidenceRow citations={citations} video={source.video} initialIndex={initialIndex} />)}
+            {source.groups.slice(0, 3).map((citations) => <EvidenceRow citations={citations} video={source.video} initialIndex={initialIndex} relevanceScore={showRelevance ? evidenceRelevance(citations[0].item, conceptLabel) : undefined} />)}
             {source.groups.length > 3 && <details class="more-evidence">
               <summary>More supporting ideas <span>{source.groups.length - 3}</span></summary>
-              <div>{source.groups.slice(3).map((citations) => <EvidenceRow citations={citations} video={source.video} initialIndex={initialIndex} />)}</div>
+              <div>{source.groups.slice(3).map((citations) => <EvidenceRow citations={citations} video={source.video} initialIndex={initialIndex} relevanceScore={showRelevance ? evidenceRelevance(citations[0].item, conceptLabel) : undefined} />)}</div>
             </details>}
           </div>
         </section>)}

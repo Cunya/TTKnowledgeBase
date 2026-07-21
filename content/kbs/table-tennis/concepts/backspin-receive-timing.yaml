@@ -8,18 +8,17 @@ aliases:
 short_definition: On backspin or push receives, wait for the early descending phase instead of contacting too early at the peak.
 evidence_summary: >-
   Backspin receive timing brings together several connected ideas. To hit backspin in the early
-  descending phase and to wait until that phase for pushing. To wait for the ball to drop and then
-  loop it back with more spin. Backspin problems to rhythm constraints, slow recovery, and rushing
-  on the next ball after backspin. Heavy spin gives a very small reaction window, so stroke
-  execution must be condensed and ordinary timing will fail. You cannot wait until after the
-  opponent strikes and that reacting after the ball arrives is too late, which grounds receive
-  timing against backspin and serve return. Not to rush, to wait, and then spin after the ball
-  finishes its curve or after it lifts. Not to rush, to let the ball come to you, and to keep
-  position steady while waiting to spot the ball. The rising, peak, and downward phases of
-  underspin and the early descending phase is the most stable to attack. Additional points
-  reinforce the same theme. Together, these principles show how the topic is applied in practice
-  while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:dd7b8dd388af1c239597d6a82b18cbefc8867b76154f55a10758f3876d6c1a44"
+  descending phase and to wait until that phase for pushing. Backspin problems to rhythm
+  constraints, slow recovery, and rushing on the next ball after backspin. You cannot wait until
+  after the opponent strikes and that reacting after the ball arrives is too late, which grounds
+  receive timing against backspin and serve return. Not to rush, to let the ball come to you, and
+  to keep position steady while waiting to spot the ball. Against rushing and to stay steady when
+  returning backspin balls. To wait, brush, and contact during the descending phase for heavy-spin
+  balls. Not to rush, to let the ball cross the net, and to time the backswing to the serve speed.
+  Not to rush, to slow the rhythm, and to wait a fraction longer for a safer return on these
+  balls. Additional points reinforce the same theme. Together, these principles show how the topic
+  is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:0b5ec1cd0706b1072b6eeffa0d9668d18df32703257210496b7d13f05de97c9e"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -273,3 +272,203 @@ evidence:
         - 15ElcVXEJVU:00062
         - 15ElcVXEJVU:00064
         - 15ElcVXEJVU:00066
+  - id: CD09LNI2fYk-concept-early-descending-phase-contact-reviewed
+    evidence_type: definition
+    excerpt: For spin-oriented strokes, the swing may start near the peak of the ball's arc, but the contact should occur as the ball begins to descend.
+    reason: The speaker defines rising, peak, and early descent phases and says the true peak-phase timing is to start at peak and contact on early descent.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: CD09LNI2fYk
+      start_ms: 121080
+      end_ms: 139600
+      url: https://www.youtube.com/watch?v=CD09LNI2fYk&t=121s
+      segment_ids:
+        - CD09LNI2fYk:00046
+        - CD09LNI2fYk:00047
+        - CD09LNI2fYk:00048
+        - CD09LNI2fYk:00052
+        - CD09LNI2fYk:00053
+        - CD09LNI2fYk:00054
+  - id: Wyw3AX31H_s-concept-backspin-receive-timing-reviewed
+    evidence_type: explanation
+    excerpt: Timing and body response when receiving backspin, including not rushing and staying steady as the ball arrives and curves down.
+    reason: The speaker warns against rushing and says to stay steady when returning backspin balls.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Wyw3AX31H_s
+      start_ms: 658880
+      end_ms: 678960
+      url: https://www.youtube.com/watch?v=Wyw3AX31H_s&t=658s
+      segment_ids:
+        - Wyw3AX31H_s:00088
+        - Wyw3AX31H_s:00089
+        - Wyw3AX31H_s:00090
+  - id: FNFUZTBq2yQ-concept-backspin-receive-timing-reviewed
+    evidence_type: explanation
+    excerpt: Timing a receive against backspin so the player does not rush and instead waits for the correct contact moment and racket-head setup.
+    reason: The speaker says backspin serve receive is the key case and warns that rushing leaves the racket head pointed up at contact.
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: FNFUZTBq2yQ
+      start_ms: 305666
+      end_ms: 335300
+      url: https://www.youtube.com/watch?v=FNFUZTBq2yQ&t=305s
+      segment_ids:
+        - FNFUZTBq2yQ:00076
+        - FNFUZTBq2yQ:00079
+        - FNFUZTBq2yQ:00081
+        - FNFUZTBq2yQ:00082
+  - id: suG8AopFBIc-concept-backspin-receive-timing-reviewed
+    evidence_type: definition
+    excerpt: Against dipping backspin, wait longer and contact closer to the peak or falling phase so the ball can be lifted safely.
+    reason: The speaker directly asks about peak, rise, or falling contact and answers that the peak is easiest for lifting the ball, warning not to rush on the rise.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: suG8AopFBIc
+      start_ms: 444000
+      end_ms: 460366
+      url: https://www.youtube.com/watch?v=suG8AopFBIc&t=444s
+      segment_ids:
+        - suG8AopFBIc:00103
+        - suG8AopFBIc:00106
+  - id: 02wQgAIcHKY-concept-backspin-receive-timing-reviewed
+    evidence_type: explanation
+    excerpt: Against heavy spin, wait for the ball to descend before looping or brushing it.
+    reason: The speaker repeatedly says to wait, brush, and contact during the descending phase for heavy-spin balls.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 02wQgAIcHKY
+      start_ms: 102900
+      end_ms: 123966
+      url: https://www.youtube.com/watch?v=02wQgAIcHKY&t=102s
+      segment_ids:
+        - 02wQgAIcHKY:00022
+        - 02wQgAIcHKY:00023
+        - 02wQgAIcHKY:00024
+        - 02wQgAIcHKY:00025
+        - 02wQgAIcHKY:00026
+        - 02wQgAIcHKY:00027
+  - id: qTmwWFOeuBA-concept-backspin-receive-timing-reviewed
+    evidence_type: explanation
+    excerpt: Timing the receive against backspin by reading the arc and meeting the ball after its trajectory becomes clear, rather than rushing in early.
+    reason: The speaker says to get low to read the arc, focus on the bounce-side trajectory, and then rise to meet the ball, which is the receive timing for backspin.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: qTmwWFOeuBA
+      start_ms: 163300
+      end_ms: 185600
+      url: https://www.youtube.com/watch?v=qTmwWFOeuBA&t=163s
+      segment_ids:
+        - qTmwWFOeuBA:00040
+        - qTmwWFOeuBA:00041
+        - qTmwWFOeuBA:00042
+        - qTmwWFOeuBA:00043
+        - qTmwWFOeuBA:00044
+  - id: x8OSRSRukeI-concept-backspin-receive-timing-reviewed
+    evidence_type: explanation
+    excerpt: Receive heavy backspin by waiting for the right phase of the ball's flight instead of rushing the contact.
+    reason: Incorrect contact timing is identified as brushing too late or too early, which supports the receive-timing concept even though the exact phrase is not used here.
+    confidence: 0.78
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: x8OSRSRukeI
+      start_ms: 122500
+      end_ms: 134166
+      url: https://www.youtube.com/watch?v=x8OSRSRukeI&t=122s
+      segment_ids:
+        - x8OSRSRukeI:00031
+        - x8OSRSRukeI:00032
+        - x8OSRSRukeI:00033
+  - id: yIBhoQsBD9k-concept-backspin-receive-timing-reviewed
+    evidence_type: explanation
+    excerpt: Against heavy backspin or sidespin-backspin, delay the stroke until the ball finishes breaking rather than rushing it.
+    reason: The speaker instructs players to wait for the break to finish and then execute the stroke.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: yIBhoQsBD9k
+      start_ms: 421833
+      end_ms: 435900
+      url: https://www.youtube.com/watch?v=yIBhoQsBD9k&t=421s
+      segment_ids:
+        - yIBhoQsBD9k:00094
+        - yIBhoQsBD9k:00095
+  - id: XF5bM7-VQGU-concept-backspin-receive-timing-reviewed
+    evidence_type: explanation
+    excerpt: Against slower or backspin serves, the receiver should wait for the ball to cross the net or finish curving before starting the backswing and contact preparation.
+    reason: The transcript says not to rush, to let the ball cross the net, and to time the backswing to the serve speed.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: XF5bM7-VQGU
+      start_ms: 725333
+      end_ms: 751633
+      url: https://www.youtube.com/watch?v=XF5bM7-VQGU&t=725s
+      segment_ids:
+        - XF5bM7-VQGU:00165
+        - XF5bM7-VQGU:00169
+  - id: DBEaBAv16Y8-concept-backspin-receive-timing-reviewed
+    evidence_type: definition
+    excerpt: Adjust the timing and speed of your backswing to the incoming ball, especially on pushes and serves, so you do not get jammed.
+    reason: The speaker explicitly says to time the backswing with the incoming ball and to match swing tempo to the opponent's push or serve speed.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: DBEaBAv16Y8
+      start_ms: 8133
+      end_ms: 31200
+      url: https://www.youtube.com/watch?v=DBEaBAv16Y8&t=8s
+      segment_ids:
+        - DBEaBAv16Y8:00001
+        - DBEaBAv16Y8:00002
+        - DBEaBAv16Y8:00003
+        - DBEaBAv16Y8:00004
+        - DBEaBAv16Y8:00005
+  - id: krlH8_UzRRM-concept-backspin-receive-timing-reviewed
+    evidence_type: explanation
+    excerpt: For backspin, the receiver should wait for the ball to begin descending before initiating the swing, rather than rushing into an early contact.
+    reason: States that for backspin you should wait for the ball to start dropping before swinging, and that rushing is the error.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: krlH8_UzRRM
+      start_ms: 42333
+      end_ms: 67233
+      url: https://www.youtube.com/watch?v=krlH8_UzRRM&t=42s
+      segment_ids:
+        - krlH8_UzRRM:00012
+        - krlH8_UzRRM:00013
+        - krlH8_UzRRM:00014
+        - krlH8_UzRRM:00016
+  - id: FOPBXdIaKFA-concept-backspin-receive-timing-reviewed
+    evidence_type: explanation
+    excerpt: For backspin and other slow or deceptive serves, delay contact slightly rather than rushing, and use timing that matches the ball's descent or curve.
+    reason: The speaker advises not to rush, to slow the rhythm, and to wait a fraction longer for a safer return on these balls.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: FOPBXdIaKFA
+      start_ms: 233433
+      end_ms: 257266
+      url: https://www.youtube.com/watch?v=FOPBXdIaKFA&t=233s
+      segment_ids:
+        - FOPBXdIaKFA:00046
+        - FOPBXdIaKFA:00048

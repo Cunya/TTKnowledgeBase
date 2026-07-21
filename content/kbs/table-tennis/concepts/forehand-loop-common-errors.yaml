@@ -213,6 +213,24 @@ evidence:
       segment_ids:
         - dJJtJQvuwOY:00086
         - dJJtJQvuwOY:00087
+  - id: 8143qxSjk5A-concept-forehand-loop-common-errors-reviewed
+    evidence_type: mistake
+    excerpt: Common looping mistakes such as pushing forward, brushing from directly behind, or using the wrong contact path that reduces spin.
+    reason: The speaker calls out fake brushing, pushing forward, and contacting straight from behind as incorrect loop mechanics.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8143qxSjk5A
+      start_ms: 160733
+      end_ms: 182833
+      url: https://www.youtube.com/watch?v=8143qxSjk5A&t=160s
+      segment_ids:
+        - 8143qxSjk5A:00036
+        - 8143qxSjk5A:00037
+        - 8143qxSjk5A:00038
+        - 8143qxSjk5A:00039
+        - 8143qxSjk5A:00040
 relations:
   - relation_type: corrects
     target_concept_id: concept-forehand-loop

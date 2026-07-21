@@ -10,9 +10,11 @@ evidence_summary: >-
   lands on the opponent's side, you should stand as close to the table as possible during the
   serve. Serving close to the table and the problems that arise when standing too close. Short
   backhand returns require keeping the body close to the ball and repeats that for backspin you
-  should stay close. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:24b412d11e051aba945bae7ec5b236a5c292e013426d5b30245baf3025744196"
+  should stay close. Being too far from the table harms control and recommends standing right
+  against the edge. Hitting the edge is usually caused by standing too far back and advises
+  standing close to eliminate that angle. Together, these principles show how the topic is applied
+  in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:f29b3d011e494892e55926e67b74c2b262f0a0cd7934c088fe00b275e983a810"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -81,3 +83,34 @@ evidence:
         - 1DjyGrpOiVY:00000
         - 1DjyGrpOiVY:00001
         - 1DjyGrpOiVY:00002
+  - id: qx-2KikrDs8-concept-close-to-the-table-serve-position-reviewed
+    evidence_type: explanation
+    excerpt: Serving from very close to the table to better control the first bounce and execution speed.
+    reason: The speaker states that being too far from the table harms control and recommends standing right against the edge.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: qx-2KikrDs8
+      start_ms: 38633
+      end_ms: 52566
+      url: https://www.youtube.com/watch?v=qx-2KikrDs8&t=38s
+      segment_ids:
+        - qx-2KikrDs8:00008
+        - qx-2KikrDs8:00009
+        - qx-2KikrDs8:00010
+  - id: phTj82vlVqs-concept-close-to-the-table-serve-position-reviewed
+    evidence_type: explanation
+    excerpt: Serving from a position close to the table to reduce edge errors and improve control of the first bounce.
+    reason: The speaker says hitting the edge is usually caused by standing too far back and advises standing close to eliminate that angle.
+    confidence: 0.92
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: phTj82vlVqs
+      start_ms: 319500
+      end_ms: 329000
+      url: https://www.youtube.com/watch?v=phTj82vlVqs&t=319s
+      segment_ids:
+        - phTj82vlVqs:00071
+        - phTj82vlVqs:00072

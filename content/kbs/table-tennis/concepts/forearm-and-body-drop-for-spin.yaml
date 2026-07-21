@@ -8,10 +8,12 @@ short_definition: A chopping mechanic where the forearm drops below the elbow an
 evidence_summary: >-
   Forearm and body drop for spin brings together several connected ideas. Forearm dropping, body
   lowering, and spin generation together as the mechanism behind the chop and serve power. The
-  body as transmitting ground force through the chain into the ball to create power. Together,
-  these principles show how the topic is applied in practice while preserving the relevant
-  distinctions and constraints.
-evidence_summary_source_hash: "sha256:b755dc9a492d9957c608cd590df597003b48b2f7beb04a38bba84d1f39f87361"
+  body as transmitting ground force through the chain into the ball to create power. Climbing up
+  from the bottom for heavy spin and using more vertical friction, which matches a
+  dropping/ascending spin path. Dropping the racket head, getting under the ball, and brushing the
+  bottom to lift it over the net. Together, these principles show how the topic is applied in
+  practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:40736a1cdca8793161ddeabff96981e194ddbfe62cdc37643276b5767ed09fe5"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -69,3 +71,35 @@ evidence:
         - aStjJkTimhg:00238
         - aStjJkTimhg:00239
         - aStjJkTimhg:00240
+  - id: R_MLRGrJlsM-concept-forearm-and-body-drop-for-spin-reviewed
+    evidence_type: explanation
+    excerpt: To add spin, the stroke can begin higher and finish lower with coordinated body and forearm action, especially for heavier spin.
+    reason: The speaker describes climbing up from the bottom for heavy spin and using more vertical friction, which matches a dropping/ascending spin path.
+    confidence: 0.77
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: R_MLRGrJlsM
+      start_ms: 158700
+      end_ms: 166400
+      url: https://www.youtube.com/watch?v=R_MLRGrJlsM&t=158s
+      segment_ids:
+        - R_MLRGrJlsM:00035
+  - id: p-8pxqMG0kw-concept-forearm-and-body-drop-for-spin-reviewed
+    evidence_type: demonstration
+    excerpt: When handling heavy sidespin backspin, lower the racket head and use a slight lift and follow-through to clear the net.
+    reason: The speaker demonstrates dropping the racket head, getting under the ball, and brushing the bottom to lift it over the net.
+    confidence: 0.92
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: p-8pxqMG0kw
+      start_ms: 567366
+      end_ms: 591566
+      url: https://www.youtube.com/watch?v=p-8pxqMG0kw&t=567s
+      segment_ids:
+        - p-8pxqMG0kw:00122
+        - p-8pxqMG0kw:00123
+        - p-8pxqMG0kw:00124
+        - p-8pxqMG0kw:00125
+        - p-8pxqMG0kw:00126

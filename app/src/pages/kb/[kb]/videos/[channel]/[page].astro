@@ -1,0 +1,54 @@
+---
+import { corpora } from '../../../../../corpora';
+import VideoToc from '../../../../../components/VideoToc.astro';
+import BaseLayout from '../../../../../layouts/BaseLayout.astro';
+import { buildVideoTocEntries } from '../../../../../lib/videoToc';
+import type { Corpus } from '../../../../../types';
+
+const slugify = (value: string) => value.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const batchSize = 20;
+export function getStaticPaths() {
+  const pageSize = 20;
+  const pathSlugify = (value: string) => value.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  return corpora.flatMap((corpus) => {
+    const channels = [...new Set(corpus.videos.map((video) => video.channel_name.trim()))];
+    return channels.flatMap((channel) => {
+      const count = Math.ceil(corpus.videos.filter((video) => video.channel_name.trim() === channel).length / pageSize);
+      return Array.from({ length: count }, (_, index) => ({ params: { kb: corpus.knowledge_base.id, channel: pathSlugify(channel), page: String(index + 1) }, props: { corpus, channel, page: index + 1 } }));
+    });
+  });
+}
+interface Props { corpus: Corpus; channel: string; page: number }
+const { corpus, channel, page } = Astro.props;
+const root = `${import.meta.env.BASE_URL}kb/${corpus.knowledge_base.id}`;
+const videos = corpus.videos.filter((video) => video.channel_name.trim() === channel);
+const entries = buildVideoTocEntries({ ...corpus, videos }).slice((page - 1) * batchSize, page * batchSize);
+const totalPages = Math.ceil(videos.length / batchSize);
+const channelRoot = `${root}/videos/${slugify(channel)}`;
+---
+
+<BaseLayout title={`${channel} · batch ${page}`} kbId={corpus.knowledge_base.id}>
+  <section class="page-intro">
+    <div class="eyebrow"><a href={`${root}/videos/`}>Video sources</a> / {channel}</div>
+    <h1>{channel}</h1>
+    <p>Batch {page} of {totalPages} · {videos.length} source videos, shown 20 at a time.</p>
+    <nav class="video-pagination" aria-label="Video batches">
+      {Array.from({ length: totalPages }, (_, index) => <a class:list={{ active: index + 1 === page }} href={`${channelRoot}/${index + 1}/`}>Batch {index + 1}</a>)}
+    </nav>
+  </section>
+  <section class="video-grid">
+    {entries.map((entry) => {
+      const detailHref = `${root}/videos/${entry.video.id}/`;
+      return <article class="video-card" id={`video-${entry.video.id}`}>
+        <div class="video-thumb"><span>{entry.video.availability === 'demo_fixture' ? 'Demo fixture' : 'YouTube'}</span></div>
+        <div class="video-card-content">
+          <p class="eyebrow">{entry.video.channel_name}</p>
+          <h2><a class="video-title-link" href={detailHref}>{entry.video.title}</a></h2>
+          <p>{entry.concepts.length} connected concept{entry.concepts.length === 1 ? '' : 's'} · {entry.moments.length} linked moment{entry.moments.length === 1 ? '' : 's'}</p>
+          <VideoToc entry={entry} root={root} detailHref={detailHref} compact />
+          <div class="relation-chips">{entry.concepts.slice(0, 8).map((concept) => <a href={`${root}/concepts/${concept.slug}/`}>{concept.label}</a>)}{entry.concepts.length > 8 && <span>+{entry.concepts.length - 8} more</span>}</div>
+        </div>
+      </article>;
+    })}
+  </section>
+</BaseLayout>

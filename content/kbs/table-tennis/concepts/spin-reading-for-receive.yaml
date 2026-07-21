@@ -8,10 +8,11 @@ short_definition: Judging the incoming spin accurately before choosing a receive
 evidence_summary: >-
   Spin reading for receive brings together several connected ideas. Wrist movement can cause
   errors if spin reading is not precise. The method works only without fake motions, that
-  deception makes the read harder, and that fake motion can cause misreads. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:5d360f3fa5d0973588dcf2c8b3251f64c1cdc2825cec75e77f0dcba6caa4429e"
+  deception makes the read harder, and that fake motion can cause misreads. The serve
+  follow-through is the most deceptive phase and should be ignored completely when reading spin.
+  Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:c52d2bb567f81b09127b939dbd11916edcf80a70882f9b3ca057ab26ed97a160"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -68,3 +69,19 @@ evidence:
       segment_ids:
         - VRnCe4k1tmU:00037
         - VRnCe4k1tmU:00038
+  - id: ywhpUTdXW7I-cand-3-reviewed
+    evidence_type: correction
+    excerpt: Do not use the follow-through as the main cue for judging serve spin because it is the easiest phase to fake.
+    reason: The speaker says the serve follow-through is the most deceptive phase and should be ignored completely when reading spin.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ywhpUTdXW7I
+      start_ms: 100500
+      end_ms: 126666
+      url: https://www.youtube.com/watch?v=ywhpUTdXW7I&t=100s
+      segment_ids:
+        - ywhpUTdXW7I:00021
+        - ywhpUTdXW7I:00022
+        - ywhpUTdXW7I:00025

@@ -9,16 +9,18 @@ evidence_summary: >-
   Neutral-ball receive handling brings together several connected ideas. The push-flick is for
   semi-spin or no-spin balls and also recommends a general forward flick when the incoming spin is
   unclear. The return is often topspin or no-spin and instructs the player to treat it as no-spin
-  rather than using a backspin-like motion. How to handle unreadable short serves neutrally, with
-  the racket between flat and upright and a focus on landing the ball first. A step-by-step
-  fallback for unclear spin: slow push, middle contact, then slight sideways forearm motion. Not
-  being able to tell the spin clearly, yet still keeping the ball in play by using a stable
-  receive approach. A short, low, middle ball with no spin as especially difficult to receive. To
-  adjust based on ball type and focus on tracking the ball when many balls or difficult situations
-  make reading harder, which fits neutral/unclear receive handling. Together, these principles
-  show how the topic is applied in practice while preserving the relevant distinctions and
-  constraints.
-evidence_summary_source_hash: "sha256:6e1bee30203cbb685f9326be009933264b0ad1dce11323024d516f06bc11f935"
+  rather than using a backspin-like motion. A step-by-step fallback for unclear spin: slow push,
+  middle contact, then slight sideways forearm motion. Not being able to tell the spin clearly,
+  yet still keeping the ball in play by using a stable receive approach. To adjust based on ball
+  type and focus on tracking the ball when many balls or difficult situations make reading harder,
+  which fits neutral/unclear receive handling. The receive is described as uncertain, with the
+  speaker noting that the ball may not have very heavy underspin and that the player can still
+  make a controlled shot without precise spin recognition. No-spin is simple, semi-spin is the
+  real challenge, and recommends a neutral middle-ground response. The neutral or semi-spin ball
+  and recommends treating unreadable balls as neutral. Additional points reinforce the same theme.
+  Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:307926ecda7e1a04aa9d452ce6dc044957541e1b87983b30f21b7c0e8e2df7af"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -159,3 +161,66 @@ evidence:
         - FweaNVt8gA0:00305
         - FweaNVt8gA0:00308
         - FweaNVt8gA0:00312
+  - id: zNga_K6A7F0-concept-neutral-ball-receive-handling-reviewed
+    evidence_type: explanation
+    excerpt: Handling an incoming ball when the spin is unclear or weakly spun, using a safe receive action rather than an aggressive one.
+    reason: The receive is described as uncertain, with the speaker noting that the ball may not have very heavy underspin and that the player can still make a controlled shot without precise spin recognition.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: zNga_K6A7F0
+      start_ms: 81600
+      end_ms: 95520
+      url: https://www.youtube.com/watch?v=zNga_K6A7F0&t=81s
+      segment_ids:
+        - zNga_K6A7F0:00011
+        - zNga_K6A7F0:00012
+  - id: DShIvrh0Yss-concept-neutral-ball-receive-handling-reviewed
+    evidence_type: example
+    excerpt: Using a neutral receive method when the incoming spin is hard to identify or is effectively neutral.
+    reason: The speaker says that if you cannot read the spin, it is likely a neutral-spin ball and you should use a neutral return method.
+    confidence: 0.89
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: DShIvrh0Yss
+      start_ms: 587866
+      end_ms: 593200
+      url: https://www.youtube.com/watch?v=DShIvrh0Yss&t=587s
+      segment_ids:
+        - DShIvrh0Yss:00136
+  - id: 02wQgAIcHKY-concept-neutral-ball-receive-handling-reviewed
+    evidence_type: explanation
+    excerpt: When the spin is neutral or hard to read, use a middle-ground receive rather than treating it as pure topspin or pure backspin.
+    reason: The speaker says no-spin is simple, semi-spin is the real challenge, and recommends a neutral middle-ground response.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 02wQgAIcHKY
+      start_ms: 302566
+      end_ms: 324466
+      url: https://www.youtube.com/watch?v=02wQgAIcHKY&t=302s
+      segment_ids:
+        - 02wQgAIcHKY:00069
+        - 02wQgAIcHKY:00070
+        - 02wQgAIcHKY:00071
+        - 02wQgAIcHKY:00072
+        - 02wQgAIcHKY:00073
+        - 02wQgAIcHKY:00074
+  - id: ywhpUTdXW7I-cand-5-reviewed
+    evidence_type: definition
+    excerpt: Handling ambiguous or semi-spin serves by using a neutral receive technique instead of guessing topspin or backspin.
+    reason: The speaker explicitly names the neutral or semi-spin ball and recommends treating unreadable balls as neutral.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ywhpUTdXW7I
+      start_ms: 735566
+      end_ms: 761633
+      url: https://www.youtube.com/watch?v=ywhpUTdXW7I&t=735s
+      segment_ids:
+        - ywhpUTdXW7I:00165
+        - ywhpUTdXW7I:00169

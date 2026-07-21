@@ -8,10 +8,13 @@ aliases:
 short_definition: Receivers should decide in advance how to handle short, half-long, and long serves instead of reacting late.
 evidence_summary: >-
   Short versus long receive planning brings together several connected ideas. You must have a plan
-  for the three length types and should not wait until the ball arrives before deciding. Together,
-  these principles show how the topic is applied in practice while preserving the relevant
-  distinctions and constraints.
-evidence_summary_source_hash: "sha256:80097b9ad63145f03fa0860c04392e3129f2be5a2d843e8824f259f600fb6f29"
+  for the three length types and should not wait until the ball arrives before deciding.
+  Short-ball and long-ball responses and planning and adaptation rather than reacting late. You
+  must know your serve plan, where to place the next ball, and how to adjust if the return is
+  short, long, or mixed. Short, half-long, and long balls and the response should change by
+  length. Together, these principles show how the topic is applied in practice while preserving
+  the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:8f42c70e4cb59ae1cbb527af5feee7f2b00b2e032eebc63da39d435bcbc36e86"
 evidence_summary_generator: "deterministic"
 concept_type: practice
 facets:
@@ -46,3 +49,51 @@ evidence:
         - QTI4evyXCLM:00034
         - QTI4evyXCLM:00035
         - QTI4evyXCLM:00036
+  - id: 02wQgAIcHKY-concept-short-versus-long-receive-planning-reviewed
+    evidence_type: explanation
+    excerpt: Receive decisions should be planned in advance based on expected ball length and bounce rather than improvised late.
+    reason: The speaker contrasts short-ball and long-ball responses and emphasizes planning and adaptation rather than reacting late.
+    confidence: 0.88
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 02wQgAIcHKY
+      start_ms: 473966
+      end_ms: 492233
+      url: https://www.youtube.com/watch?v=02wQgAIcHKY&t=473s
+      segment_ids:
+        - 02wQgAIcHKY:00107
+        - 02wQgAIcHKY:00108
+        - 02wQgAIcHKY:00109
+        - 02wQgAIcHKY:00110
+  - id: NgfykAQZCpw-concept-short-versus-long-receive-planning-reviewed
+    evidence_type: explanation
+    excerpt: Planning in advance for different incoming ball lengths and choosing the appropriate response before the ball arrives.
+    reason: The speaker says you must know your serve plan, where to place the next ball, and how to adjust if the return is short, long, or mixed.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: NgfykAQZCpw
+      start_ms: 583666
+      end_ms: 595800
+      url: https://www.youtube.com/watch?v=NgfykAQZCpw&t=583s
+      segment_ids:
+        - NgfykAQZCpw:00131
+        - NgfykAQZCpw:00132
+        - NgfykAQZCpw:00133
+  - id: 0D6FzvP33Xs-concept-short-versus-long-receive-planning-reviewed
+    evidence_type: definition
+    excerpt: Receive decisions should be planned by ball length, with different responses for short, half-long, and long balls.
+    reason: The speaker explicitly distinguishes short, half-long, and long balls and says the response should change by length.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 0D6FzvP33Xs
+      start_ms: 684500
+      end_ms: 691733
+      url: https://www.youtube.com/watch?v=0D6FzvP33Xs&t=684s
+      segment_ids:
+        - 0D6FzvP33Xs:00142
+        - 0D6FzvP33Xs:00143

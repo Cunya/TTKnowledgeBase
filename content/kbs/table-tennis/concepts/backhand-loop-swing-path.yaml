@@ -339,6 +339,53 @@ evidence:
         - vCa7A9gyOT8:00209
         - vCa7A9gyOT8:00210
         - vCa7A9gyOT8:00211
+  - id: 60_qpMsHRvQ-concept-backhand-loop-swing-path-reviewed
+    evidence_type: explanation
+    excerpt: A swing-path idea in which the elbow stays stable as a pivot so the forearm can accelerate the stroke efficiently.
+    reason: The speaker says the elbow should stay stable and act as a pivot so the forearm can accelerate.
+    confidence: 0.88
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 60_qpMsHRvQ
+      start_ms: 285500
+      end_ms: 303466
+      url: https://www.youtube.com/watch?v=60_qpMsHRvQ&t=285s
+      segment_ids:
+        - 60_qpMsHRvQ:00069
+        - 60_qpMsHRvQ:00072
+  - id: qLCA9OYSFl4-concept-backhand-loop-swing-path-reviewed
+    evidence_type: demonstration
+    excerpt: The backhand stroke path starts with the racket head at about 10 o'clock, then drives forward before the forearm rotates outward or whips through.
+    reason: "The speaker gives a specific backhand path: racket head at 10 o'clock, keep a V-angle, drive forward, then rotate the forearm outward."
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: qLCA9OYSFl4
+      start_ms: 603433
+      end_ms: 632533
+      url: https://www.youtube.com/watch?v=qLCA9OYSFl4&t=603s
+      segment_ids:
+        - qLCA9OYSFl4:00133
+        - qLCA9OYSFl4:00135
+        - qLCA9OYSFl4:00137
+  - id: EjtP5uCaULU-concept-backhand-loop-swing-path-reviewed
+    evidence_type: explanation
+    excerpt: The backhand loop uses an elbow-pivoted arm structure with the forearm dropping and rotating to create a spinny path through the ball.
+    reason: He states that the elbow acts as a pivot, should stay stable, and the forearm should accelerate and rotate for a spinny loop.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: EjtP5uCaULU
+      start_ms: 515766
+      end_ms: 543066
+      url: https://www.youtube.com/watch?v=EjtP5uCaULU&t=515s
+      segment_ids:
+        - EjtP5uCaULU:00122
+        - EjtP5uCaULU:00124
+        - EjtP5uCaULU:00126
 relations:
   - relation_type: part_of
     target_concept_id: concept-backhand-loop

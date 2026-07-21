@@ -11,9 +11,13 @@ evidence_summary: >-
   is between conservative play and actively looping and attacking first as a path to improvement.
   To focus on your own attack, take the initiative every time, and open up first. Pushing is
   stable for amateurs but still recommends making offense the main focus because certain serves
-  cannot be safely pushed. Together, these principles show how the topic is applied in practice
-  while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:b381a07a07f75ae1b248ea5f2177bf40ff0e6587fe1b89ad5c92376a1d80e0af"
+  cannot be safely pushed. He asks how to break push rallies or strong loops and answers that you
+  should take the initiative and turn the ball into topspin. The best way to handle the half-long
+  forehand ball is to attack it, step around to loop, and practice attacking half-long balls all
+  over the table. The technique is attacking and explicitly describes turning a defensive
+  situation into an offensive one. Together, these principles show how the topic is applied in
+  practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:304f81f6519db40384913871e4b7249a4e5dcc02c60e604e4bb560445a4e63ba"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -83,3 +87,52 @@ evidence:
         - rZY_SUer7Aw:00173
         - rZY_SUer7Aw:00174
         - rZY_SUer7Aw:00176
+  - id: suG8AopFBIc-concept-attack-first-over-conservative-play-reviewed
+    evidence_type: explanation
+    excerpt: Prefer initiating topspin attack rather than staying in passive pushing exchanges.
+    reason: He asks how to break push rallies or strong loops and answers that you should take the initiative and turn the ball into topspin.
+    confidence: 0.88
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: suG8AopFBIc
+      start_ms: 33700
+      end_ms: 45533
+      url: https://www.youtube.com/watch?v=suG8AopFBIc&t=33s
+      segment_ids:
+        - suG8AopFBIc:00008
+        - suG8AopFBIc:00010
+  - id: ihrv3kBFb-U-concept-half-long-forehand-attack-and-step-around-reviewed
+    evidence_type: definition
+    excerpt: Half-long balls to the forehand should be attacked proactively, often with step-around footwork and follow-up placement.
+    reason: The speaker says the best way to handle the half-long forehand ball is to attack it, step around to loop, and practice attacking half-long balls all over the table.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ihrv3kBFb-U
+      start_ms: 709366
+      end_ms: 736266
+      url: https://www.youtube.com/watch?v=ihrv3kBFb-U&t=709s
+      segment_ids:
+        - ihrv3kBFb-U:00149
+        - ihrv3kBFb-U:00150
+        - ihrv3kBFb-U:00151
+        - ihrv3kBFb-U:00153
+        - ihrv3kBFb-U:00154
+  - id: zZ_B1Xg7Pjs-concept-banana-flick-advance-from-defense-to-attack-reviewed
+    evidence_type: explanation
+    excerpt: The Banana Flick is presented as an attacking technique that converts a defensive receive situation into offense.
+    reason: The speaker says the technique is attacking and explicitly describes turning a defensive situation into an offensive one.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: zZ_B1Xg7Pjs
+      start_ms: 63033
+      end_ms: 74200
+      url: https://www.youtube.com/watch?v=zZ_B1Xg7Pjs&t=63s
+      segment_ids:
+        - zZ_B1Xg7Pjs:00013
+        - zZ_B1Xg7Pjs:00014
+        - zZ_B1Xg7Pjs:00015

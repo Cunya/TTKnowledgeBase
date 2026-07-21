@@ -1,13 +1,234 @@
 {
   "knowledge_base": "table-tennis",
-  "started_at": "2026-07-20T06:06:10.953442+00:00",
-  "status": "stopped",
+  "started_at": "2026-07-21T03:15:21.567714+00:00",
+  "status": "completed",
   "stages": [
     {
       "name": "process-pending before acquisition",
-      "exit_code": 1
+      "exit_code": 0,
+      "output": "Processed pending candidates for Table Tennis: 6 accepted, 4 deferred, 0 \nrejected, 6 evidence moments added, 0 concepts added; diagnostics refreshed \n(1404 deferred candidates); navigation placed 0 concepts",
+      "exit_class": "success"
+    },
+    {
+      "name": "discover free-coach-brad-han",
+      "exit_code": 0,
+      "output": "Discovered 309 videos for Table Tennis",
+      "exit_class": "success"
+    },
+    {
+      "name": "discover global-tt-studio",
+      "exit_code": 0,
+      "output": "Discovered 2 videos for Table Tennis",
+      "exit_class": "success"
+    },
+    {
+      "name": "discover pingsunday-xiaohan-playlist",
+      "exit_code": 0,
+      "output": "Discovered 95 videos for Table Tennis",
+      "exit_class": "success"
+    },
+    {
+      "name": "ingest discovered batch",
+      "exit_code": 1,
+      "output": "oin this channel to get access to members-only content and other exclusive perks.\nFailed https://www.youtube.com/watch?v=HRgvfIwnRKo: ERROR:  HRgvfIwnRKo: This \nvideo is available to this channel's members on level: Silver Member (or any \nhigher level). Join this channel to get access to members-only content and \nother exclusive perks.\nSkipped E7x31h6oqUg: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped SJngKl76ilI: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped nfuu1GdEsdc: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nERROR: [youtube] vBGpIA6MnHI: This video is available to this channel's members on level: Silver Member (or any higher level). Join this channel to get access to members-only content and other exclusive perks.\nFailed https://www.youtube.com/watch?v=vBGpIA6MnHI: ERROR:  vBGpIA6MnHI: This \nvideo is available to this channel's members on level: Silver Member (or any \nhigher level). Join this channel to get access to members-only content and \nother exclusive perks.\nERROR: [youtube] ZmaJNX5Glx8: Join this channel to get access to members-only content like this video, and other exclusive perks.\nFailed https://www.youtube.com/watch?v=ZmaJNX5Glx8: ERROR:  ZmaJNX5Glx8: Join \nthis channel to get access to members-only content like this video, and other \nexclusive perks.\nERROR: [youtube] iBFAcbu0bfs: This video is available to this channel's members on level: Silver Member (or any higher level). Join this channel to get access to members-only content and other exclusive perks.\nFailed https://www.youtube.com/watch?v=iBFAcbu0bfs: ERROR:  iBFAcbu0bfs: This \nvideo is available to this channel's members on level: Silver Member (or any \nhigher level). Join this channel to get access to members-only content and \nother exclusive perks.\nSkipped Ax33_mJyEus: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped NL2Fk8Kx6ms: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped WpMzokDPTKY: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped sdKwbYsf1ZY: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped 3WL365YKrxk: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped L0hadnRtWKA: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped mOByuWu4kFw: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped Td_gWd92dx0: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped uaIlXXAxNig: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped KZtA9ywZles: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped e-xj12ipLKE: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSaved Xho60DR74X0: Stop Popping Up Your Push! 4 Golden Rules for a Heavy Push \n(A Step-by-Step Tutorial)\n39 video(s) failed; successful videos were retained.",
+      "exit_class": "stage_failed"
+    },
+    {
+      "name": "extract Xho60DR74X0",
+      "exit_code": 0,
+      "output": "Saved candidates Xho60DR74X0.candidates.json",
+      "exit_class": "success"
+    },
+    {
+      "name": "process-pending after extraction",
+      "exit_code": 0,
+      "output": "Processed pending candidates for Table Tennis: 0 accepted, 0 deferred, 0 \nrejected, 0 evidence moments added, 0 concepts added; diagnostics refreshed \n(1404 deferred candidates); navigation placed 0 concepts",
+      "exit_class": "success"
+    },
+    {
+      "name": "build review queue",
+      "exit_code": 0,
+      "output": "Table Tennis: 4644 candidates queued",
+      "exit_class": "success"
+    },
+    {
+      "name": "refresh summaries",
+      "exit_code": 0,
+      "output": "Wrote 0 evidence summaries",
+      "exit_class": "success"
+    },
+    {
+      "name": "publish reviewed corpus",
+      "exit_code": 0,
+      "output": "Refreshed 5 generated concept summary(ies)\nPublished Table Tennis: 345 concepts",
+      "exit_class": "success"
     }
   ],
-  "error": "cached triage failed: 1",
-  "finished_at": "2026-07-20T06:06:22.276221+00:00"
+  "cached_unextracted": [],
+  "selected_batch": [],
+  "discovered_inventory_count": 823,
+  "discovered_unprocessed_count": 40,
+  "discovered_batch": [
+    {
+      "id": "J4ZTcPlOmto",
+      "title": "Slow-motion of Forehand Loops VS Backspin"
+    },
+    {
+      "id": "IQJagpLfWoE",
+      "title": "The Ultimate Easy Serve Return Tip"
+    },
+    {
+      "id": "UAlmlB1nU8o",
+      "title": "The Triangle Theory of the Forehand"
+    },
+    {
+      "id": "UCLdwDMdtrcW_WlhXI0Kli9Q",
+      "title": "GlobalTTStudio - Videos"
+    },
+    {
+      "id": "w8kmYhKX_ls",
+      "title": "The Table Tennis Bible: Your Serve Return Cheat Sheet (Part 1)"
+    },
+    {
+      "id": "MS5-0DaZ_h8",
+      "title": "A Special Lesson from Coach Han's Junior | Unlocking the Backhand's Kinetic Chain"
+    },
+    {
+      "id": "y7RLpQCzdP0",
+      "title": "A Special Lesson from Coach Han's Junior | A Fresh Perspective on Forehand Body Mechanics"
+    },
+    {
+      "id": "2GWq4FdtSRU",
+      "title": "Close-Up Friction Mechanics | Coach's Rubber Picks & New Racket Break-In Guide"
+    },
+    {
+      "id": "c894uv9vOFk",
+      "title": "Advanced Forehand Loop Tutorial: The Secrets of Swing Path & Racket Head Power"
+    },
+    {
+      "id": "V8rXu8nQJQc",
+      "title": "Advanced Serve Tutorial: Master the Fast Kicking Topspin & Long Sinking Serves"
+    },
+    {
+      "id": "u3NU28uCW0Y",
+      "title": "Backhand Loop Masterclass: Conquering the Down-the-Line Shot"
+    },
+    {
+      "id": "saJV_mSKHaw",
+      "title": "Advanced Looping Mechanics: The Pro Secret to a Deep, Heavy Topspin Forehand Loop"
+    },
+    {
+      "id": "0pqtwwpo8c4",
+      "title": "Hybrid Hook Serve: Combining Filing and Chopping for Maximum Deception"
+    },
+    {
+      "id": "913koLomSbo",
+      "title": "Neutralize Any Attacker: Advanced Tactics for Elite Service Returns"
+    },
+    {
+      "id": "H8c9G_yb4Co",
+      "title": "Backhand Evolution 2.0: Mechanics of the Modern Power Loop"
+    },
+    {
+      "id": "u2oEhZjrB5o",
+      "title": "The \"Dragon's Tail\" Whip: The Complete Breakdown of the Backhand Serve"
+    },
+    {
+      "id": "iSvEgont4qk",
+      "title": "Easiest Advanced Serve: Kong Linghui Style & Deceptive chopping Hook Serve"
+    },
+    {
+      "id": "BTi-e1oq94Y",
+      "title": "The Real Shortcut to Winning Matches: Coach Han's Most Valuable Lesson in 5 Years"
+    },
+    {
+      "id": "Z1-d1RQooNQ",
+      "title": "Advanced Pips Strategy: Handling the Sinking Effect & Lifted Returns"
+    },
+    {
+      "id": "6K-fR7bTpx0",
+      "title": "Coach Han’s Serving Clinic: Spin Disguise & Racket Tip Acceleration"
+    },
+    {
+      "id": "6_GowxnyC94",
+      "title": "Stop Doing Fixed Drills: Pro Training Secrets for Amateurs"
+    },
+    {
+      "id": "HRgvfIwnRKo",
+      "title": "The Middle-Game Masterclass: Pro Secrets for Footwork, Tactics & Weak Spots"
+    },
+    {
+      "id": "E7x31h6oqUg",
+      "title": "The \"Dragon Palm\" Serve: Master the Heavy \"Rush\" & Unreadable Side-Spin Secrets"
+    },
+    {
+      "id": "SJngKl76ilI",
+      "title": "The Tactical Mindset: Pro-Level Placement Secrets to Outsmart Any Opponent"
+    },
+    {
+      "id": "nfuu1GdEsdc",
+      "title": "Power vs. Control: A Tactical Guide to Winning Rallies"
+    },
+    {
+      "id": "vBGpIA6MnHI",
+      "title": "The 4 Lethal Variations of the Left Sidespin Serve"
+    },
+    {
+      "id": "ZmaJNX5Glx8",
+      "title": "The Tactical Masterclass: A Deep Dive into Advanced Match Strategy"
+    },
+    {
+      "id": "iBFAcbu0bfs",
+      "title": "Match Play Masterclass: The Simple 4-Step Plan to Master Your Serve & Attack"
+    },
+    {
+      "id": "Ax33_mJyEus",
+      "title": "2 Pro-Level 'Cheat Codes': The Rubber Boosting Hack & The Deceptive Snap Serve"
+    },
+    {
+      "id": "NL2Fk8Kx6ms",
+      "title": "Exclusive Lesson: 3 Essential Footwork Drills for Match Play"
+    },
+    {
+      "id": "WpMzokDPTKY",
+      "title": "The 2+1 Serve System: 2 Left Sidespin Variations & 1 Daily Off-Table Drill"
+    },
+    {
+      "id": "sdKwbYsf1ZY",
+      "title": "The Ma Long Secret Weapon: Turn Any Push into a Surprise Attack (Deceptive Flick & Short Push)"
+    },
+    {
+      "id": "3WL365YKrxk",
+      "title": "Fix Your Serve & Attack: Bridging the Gap Between Practice and Match Performance"
+    },
+    {
+      "id": "L0hadnRtWKA",
+      "title": "Flick, Don't Loop! The Secret to Destroying Half-Long & Lefty Serves"
+    },
+    {
+      "id": "mOByuWu4kFw",
+      "title": "The Shrimp Defense: 5 Game-Changing Secrets for a Rock-Solid Block"
+    },
+    {
+      "id": "Td_gWd92dx0",
+      "title": "Coach's Serve System: The Fake 'Loop' Serve & 5 Surprise Attacks (Part 2)"
+    },
+    {
+      "id": "uaIlXXAxNig",
+      "title": "Coach's Serve System: Kong Linghui's Secret & 4 Killer Left Sidespin Tactics (Part 1)"
+    },
+    {
+      "id": "KZtA9ywZles",
+      "title": "The ‘Small-to-Large’ Secret: Unlock Vicious Serve Spin with Finger Power & Wrist Snap"
+    },
+    {
+      "id": "e-xj12ipLKE",
+      "title": "Jam Your Opponent! The 3 Golden Rules of Hitting Down the Line (Forehand & Backhand)"
+    },
+    {
+      "id": "Xho60DR74X0",
+      "title": "Stop Popping Up Your Push! 4 Golden Rules for a Heavy Push (A Step-by-Step Tutorial)"
+    }
+  ],
+  "finished_at": "2026-07-21T03:22:24.366969+00:00"
 }

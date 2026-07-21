@@ -634,6 +634,43 @@ evidence:
         - HlTqPv-MpGI:00322
         - HlTqPv-MpGI:00323
         - HlTqPv-MpGI:00324
+  - id: HVPF38PxXvI-concept-direction-reading-reviewed
+    evidence_type: definition
+    excerpt: Reading the ball's direction early enough to choose the correct movement and shot direction.
+    reason: The speaker says to watch the ball's trajectory immediately after contact and after the bounce, and summarizes this as a three-watch rule for reading the play.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: HVPF38PxXvI
+      start_ms: 178000
+      end_ms: 204900
+      url: https://www.youtube.com/watch?v=HVPF38PxXvI&t=178s
+      segment_ids:
+        - HVPF38PxXvI:00043
+        - HVPF38PxXvI:00044
+        - HVPF38PxXvI:00045
+        - HVPF38PxXvI:00048
+        - HVPF38PxXvI:00049
+  - id: q70a9LCojco-concept-read-opponent-patterns-and-technical-flaws-reviewed
+    evidence_type: explanation
+    excerpt: Players should study opponents' technical flaws and patterns to predict where balls will go and adjust positioning accordingly.
+    reason: The transcript explains concrete prediction rules based on common technical flaws and explicitly says to observe the opponent.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: q70a9LCojco
+      start_ms: 899766
+      end_ms: 922866
+      url: https://www.youtube.com/watch?v=q70a9LCojco&t=899s
+      segment_ids:
+        - q70a9LCojco:00198
+        - q70a9LCojco:00199
+        - q70a9LCojco:00200
+        - q70a9LCojco:00201
+        - q70a9LCojco:00202
+        - q70a9LCojco:00203
 relations:
   - relation_type: used_with
     target_concept_id: concept-ready-position

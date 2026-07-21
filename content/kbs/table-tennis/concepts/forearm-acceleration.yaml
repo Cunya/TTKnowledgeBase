@@ -9,9 +9,13 @@ evidence_summary: >-
   Forearm acceleration brings together several connected ideas. Forearm acceleration as of maximum
   spin and the loop as forearm-dominant. Power comes from maintaining the brushing feeling and
   speeding up the forearm swing. The forearm adds speed and that the main acceleration comes from
-  the second segment. Together, these principles show how the topic is applied in practice while
+  the second segment. The elbow is the pivot, the upper arm should not move, and the forearm is
+  the main of power. The power comes mainly from the forearm and that it should accelerate at
+  contact. The forearm provides depth and drives the ball forward when the ball is short. The
+  secondary acceleration is accomplished by the forearm and that this is primarily forearm
+  acceleration. Together, these principles show how the topic is applied in practice while
   preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:9dc1468c733e8a49c38ae9b51f62f354e0b4fcca1f52598c0f2f3b0ec8c01b48"
+evidence_summary_source_hash: "sha256:92b0849acb4414789dd18b75579d93f75881dbe8d183b43883f1aa0381e7496c"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -83,3 +87,66 @@ evidence:
         - PNhGSy_Dbg0:00090
         - PNhGSy_Dbg0:00091
         - PNhGSy_Dbg0:00095
+  - id: wuXCwKRFM4k-concept-forearm-acceleration-in-backhand-rip-reviewed
+    evidence_type: explanation
+    excerpt: The main source of power in the backhand rip, produced by keeping the upper arm quiet and accelerating the forearm through contact.
+    reason: The speaker says the elbow is the pivot, the upper arm should not move, and the forearm is the main source of power.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: wuXCwKRFM4k
+      start_ms: 184700
+      end_ms: 199633
+      url: https://www.youtube.com/watch?v=wuXCwKRFM4k&t=184s
+      segment_ids:
+        - wuXCwKRFM4k:00042
+        - wuXCwKRFM4k:00043
+        - wuXCwKRFM4k:00044
+  - id: mPRFTyZICY4-concept-forearm-acceleration-reviewed
+    evidence_type: explanation
+    excerpt: Fast push speed is generated primarily by accelerating the forearm rather than the whole arm or upper arm.
+    reason: The speaker explicitly says the power comes mainly from the forearm and that it should accelerate at contact.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: mPRFTyZICY4
+      start_ms: 103133
+      end_ms: 123633
+      url: https://www.youtube.com/watch?v=mPRFTyZICY4&t=103s
+      segment_ids:
+        - mPRFTyZICY4:00025
+        - mPRFTyZICY4:00027
+        - mPRFTyZICY4:00028
+  - id: yIBhoQsBD9k-concept-forearm-acceleration-reviewed
+    evidence_type: explanation
+    excerpt: Use the forearm to add forward depth and drive the ball long after finger lift at contact.
+    reason: The speaker says the forearm provides depth and drives the ball forward when the ball is short.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: yIBhoQsBD9k
+      start_ms: 252566
+      end_ms: 280533
+      url: https://www.youtube.com/watch?v=yIBhoQsBD9k&t=252s
+      segment_ids:
+        - yIBhoQsBD9k:00057
+        - yIBhoQsBD9k:00059
+        - yIBhoQsBD9k:00061
+  - id: f7Bf-QRn-9Q-concept-forearm-acceleration-reviewed
+    evidence_type: explanation
+    excerpt: A rapid forearm snap after the initial forward drive that adds speed, quality, and extra acceleration to the loop.
+    reason: The speaker states that the secondary acceleration is accomplished by the forearm and that this is primarily forearm acceleration.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: f7Bf-QRn-9Q
+      start_ms: 654400
+      end_ms: 679333
+      url: https://www.youtube.com/watch?v=f7Bf-QRn-9Q&t=654s
+      segment_ids:
+        - f7Bf-QRn-9Q:00139
+        - f7Bf-QRn-9Q:00144

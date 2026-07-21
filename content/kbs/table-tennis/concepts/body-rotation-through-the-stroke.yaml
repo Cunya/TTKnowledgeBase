@@ -9,18 +9,17 @@ aliases:
 short_definition: Using torso and body rotation to drive the stroke, then returning to neutral after the shot.
 evidence_summary: >-
   Body rotation through the stroke brings together several connected ideas. Rotating the body and
-  explicitly says the motion is driven by the body. When rotation is possible, when it causes
-  jamming, and repeatedly says to rotate first and let the body drive the side movement. Adding
-  body rotation, and involving other body parts can make the contact point wrong and break the
-  stroke. Explains that body rotation is required for timing and that a preparatory turn syncs arm
-  and foot movement. To avoid waist rotation and keep the body still during the serve. The
-  shoulder should be carried by body rotation, not swing independently. Body twisting and
-  explosive rotation, along with shifting the center of gravity onto the right leg and driving
-  forward. Players to avoid rotating or moving vertically, keep the body low and still, and body
-  rotation is not needed in reasonable serving motions. Additional points reinforce the same
-  theme. Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:e42e1977f35711872d82bc103913579c3e409ae02327642164a1732bd9818659"
+  explicitly says the motion is driven by the body. The motion is rotational and specifically
+  discusses hip and shoulder rotation as part of the stroke. Not to face the table directly, but
+  to turn sideways and rotate the waist to create room. The body won't move forward without
+  pivoting, then instructs rotating the hips and shoulders. Body twisting and explosive rotation,
+  along with shifting the center of gravity onto the right leg and driving forward. The body must
+  rotate and against only shifting weight and stopping rotation. The body must first turn sideways
+  before rotating forward, and that this is required for offensive shots. The backhand section
+  distinguishes coiling and forward drive from side-to-side rotation. Additional points reinforce
+  the same theme. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:a524209457662b80055f239622514f03d8068561943ace4460404d5afc47f523"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -478,3 +477,184 @@ evidence:
         - rPrv4iWdE4w:00136
         - rPrv4iWdE4w:00137
         - rPrv4iWdE4w:00138
+  - id: 7N1IChCbVjk-concept-body-rotation-through-the-stroke-reviewed
+    evidence_type: definition
+    excerpt: Rotating the torso during the transition so the forehand threat stays strong and the stroke does not become a simple weight shift.
+    reason: The speaker explicitly says the body must rotate and warns against only shifting weight and stopping rotation.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 7N1IChCbVjk
+      start_ms: 213033
+      end_ms: 224700
+      url: https://www.youtube.com/watch?v=7N1IChCbVjk&t=213s
+      segment_ids:
+        - 7N1IChCbVjk:00071
+        - 7N1IChCbVjk:00072
+        - 7N1IChCbVjk:00073
+  - id: KG90HOykXCs-concept-body-rotation-through-the-stroke-reviewed
+    evidence_type: explanation
+    excerpt: Rotating the torso through the stroke to create space, load, and power transfer, then returning toward neutral after contact.
+    reason: The transcript repeatedly emphasizes torso/hip rotation in sync with the arm and the need to coil before executing the shot.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: KG90HOykXCs
+      start_ms: 257833
+      end_ms: 279766
+      url: https://www.youtube.com/watch?v=KG90HOykXCs&t=257s
+      segment_ids:
+        - KG90HOykXCs:00057
+  - id: slH2CHDYasA-concept-body-rotation-through-the-stroke-reviewed
+    evidence_type: explanation
+    excerpt: Using coordinated torso rotation rather than isolated arm action to drive the stroke through contact and recovery.
+    reason: The speaker identifies lack of body rotation as the biggest issue and says the non-playing hand helps initiate rotation and adjust body height.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: slH2CHDYasA
+      start_ms: 27066
+      end_ms: 40200
+      url: https://www.youtube.com/watch?v=slH2CHDYasA&t=27s
+      segment_ids:
+        - slH2CHDYasA:00008
+        - slH2CHDYasA:00010
+  - id: T40bWiitfAU-concept-body-rotation-in-backhand-loop-transcript-reviewed
+    evidence_type: explanation
+    excerpt: A small body rotation used in backhand attacks on pushed balls to generate power, while avoiding full waist turning.
+    reason: The speaker says attacking a push needs slight body rotation, small range, and forward drive from the ground.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: T40bWiitfAU
+      start_ms: 52633
+      end_ms: 78566
+      url: https://www.youtube.com/watch?v=T40bWiitfAU&t=52s
+      segment_ids:
+        - T40bWiitfAU:00011
+        - T40bWiitfAU:00012
+        - T40bWiitfAU:00013
+        - T40bWiitfAU:00015
+  - id: U4ItRZHe_-A-concept-body-rotation-through-the-stroke-reviewed
+    evidence_type: explanation
+    excerpt: Use torso rotation to prepare, meet the ball, and recover, rather than relying only on arm reach.
+    reason: The transcript repeatedly explains rotating back to square, turning the torso sideways, moving the body to the ball, and using rotation to create correct position and power.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: U4ItRZHe_-A
+      start_ms: 582366
+      end_ms: 611833
+      url: https://www.youtube.com/watch?v=U4ItRZHe_-A&t=582s
+      segment_ids:
+        - U4ItRZHe_-A:00137
+        - U4ItRZHe_-A:00138
+        - U4ItRZHe_-A:00140
+        - U4ItRZHe_-A:00141
+        - U4ItRZHe_-A:00142
+  - id: VEjSu1GhArI-concept-body-rotation-through-the-stroke-reviewed
+    evidence_type: explanation
+    excerpt: For offensive forehands, the body should turn sideways first and then rotate forward into the ball as one connected action.
+    reason: The speaker explains that the body must first turn sideways before rotating forward, and that this is required for offensive shots.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: VEjSu1GhArI
+      start_ms: 301833
+      end_ms: 323766
+      url: https://www.youtube.com/watch?v=VEjSu1GhArI&t=301s
+      segment_ids:
+        - VEjSu1GhArI:00063
+        - VEjSu1GhArI:00064
+        - VEjSu1GhArI:00065
+        - VEjSu1GhArI:00066
+  - id: nukEclWHWn4-concept-body-rotation-through-the-stroke-reviewed
+    evidence_type: explanation
+    excerpt: Using coordinated torso rotation and body sequencing to generate and then stop power through the stroke.
+    reason: The non-playing arm must follow the body, the torso closes and braces, and power is locked by body rotation stopping after the drive.
+    confidence: 0.89
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: nukEclWHWn4
+      start_ms: 441400
+      end_ms: 464566
+      url: https://www.youtube.com/watch?v=nukEclWHWn4&t=441s
+      segment_ids:
+        - nukEclWHWn4:00094
+        - nukEclWHWn4:00095
+        - nukEclWHWn4:00096
+        - nukEclWHWn4:00097
+  - id: 16tgKRqrb8A-concept-body-rotation-through-the-stroke-reviewed
+    evidence_type: explanation
+    excerpt: Use body rotation in a controlled sequence where the body stops before the arm accelerates.
+    reason: The speaker states it is not about twisting the waist, and that body rotation must stop before the arm accelerates.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 16tgKRqrb8A
+      start_ms: 179966
+      end_ms: 200400
+      url: https://www.youtube.com/watch?v=16tgKRqrb8A&t=179s
+      segment_ids:
+        - 16tgKRqrb8A:00038
+        - 16tgKRqrb8A:00039
+        - 16tgKRqrb8A:00040
+        - 16tgKRqrb8A:00041
+  - id: HHyaeCbQ_ec-concept-body-rotation-through-the-stroke-reviewed
+    evidence_type: explanation
+    excerpt: Use torso rotation through the stroke, moving from sideways preparation to forward finish while keeping rotation level rather than vertical.
+    reason: The transcript describes the stroke starting sideways, rotating forward, and keeping body rotation on a horizontal plane.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: HHyaeCbQ_ec
+      start_ms: 54100
+      end_ms: 69700
+      url: https://www.youtube.com/watch?v=HHyaeCbQ_ec&t=54s
+      segment_ids:
+        - HHyaeCbQ_ec:00014
+        - HHyaeCbQ_ec:00015
+        - HHyaeCbQ_ec:00016
+  - id: DBEaBAv16Y8-concept-body-rotation-through-the-stroke-reviewed
+    evidence_type: explanation
+    excerpt: Rotate the body in coordination with the stroke so the swing follows the same arc as the arm and contributes to a stable shot.
+    reason: The speaker explains synchronization between arm and body and says the body must follow the same arc rather than just rotating sideways.
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: DBEaBAv16Y8
+      start_ms: 320133
+      end_ms: 346033
+      url: https://www.youtube.com/watch?v=DBEaBAv16Y8&t=320s
+      segment_ids:
+        - DBEaBAv16Y8:00069
+        - DBEaBAv16Y8:00070
+        - DBEaBAv16Y8:00071
+        - DBEaBAv16Y8:00072
+        - DBEaBAv16Y8:00073
+        - DBEaBAv16Y8:00074
+  - id: U3PEiARb5fk-concept-body-rotation-through-the-stroke-reviewed
+    evidence_type: explanation
+    excerpt: The stroke should use coordinated body opening and forward drive rather than isolated arm motion or improper side-to-side rotation.
+    reason: The backhand section distinguishes coiling and forward drive from side-to-side rotation.
+    confidence: 0.92
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: U3PEiARb5fk
+      start_ms: 185766
+      end_ms: 207133
+      url: https://www.youtube.com/watch?v=U3PEiARb5fk&t=185s
+      segment_ids:
+        - U3PEiARb5fk:00041
+        - U3PEiARb5fk:00043

@@ -221,6 +221,21 @@ evidence:
         - mxmDhD9M83c:00008
         - mxmDhD9M83c:00010
         - mxmDhD9M83c:00011
+  - id: mchHxJnHUzE-concept-backhand-loop-contact-reviewed
+    evidence_type: explanation
+    excerpt: The point on the ball where the backhand loop contacts it, including the recommended 2 o'clock and thinner 1 o'clock contacts for different spins.
+    reason: The speaker specifies 2 o'clock as the minimum contact point and contrasts it with 3 o'clock contact.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: mchHxJnHUzE
+      start_ms: 454166
+      end_ms: 477300
+      url: https://www.youtube.com/watch?v=mchHxJnHUzE&t=454s
+      segment_ids:
+        - mchHxJnHUzE:00102
+        - mchHxJnHUzE:00107
 relations:
   - relation_type: part_of
     target_concept_id: concept-backhand-loop

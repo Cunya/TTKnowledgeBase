@@ -122,7 +122,7 @@ Existing normalized files are reused without network access. Use `--force` only 
 
 The CLI enforces that cooldown before making another request. After changing to a genuinely different VPN or proxy route, pass `--retry-blocked` once to test the new route. Do not use the flag to retry the same blocked IP. Supplying `--proxy-url` or configured Webshare credentials also counts as an alternate route.
 
-Prevention defaults are deliberately conservative: uncached videos are spaced by 20 seconds plus up to 20 seconds of random jitter, and one invocation attempts at most 8 uncached videos. Cached videos do not consume that budget. Do not defeat the cap by immediately launching repeated batches; leave a substantial break between runs. There is no universally safe request rate, especially on shared VPN or datacenter exits whose reputation is affected by other users. For sustained ingestion, use an operator-controlled rotating residential proxy and retain the same pacing.
+Prevention defaults are deliberately conservative: uncached videos are spaced by 20 seconds plus up to 20 seconds of random jitter, and one invocation stops after 10 successful uncached videos. Failed or cooling-down entries do not consume that success target, within a bounded candidate window. Cached videos do not consume that budget. Do not defeat the cap by immediately launching repeated batches; leave a substantial break between runs. There is no universally safe request rate, especially on shared VPN or datacenter exits whose reputation is affected by other users. For sustained ingestion, use an operator-controlled rotating residential proxy and retain the same pacing.
 
 To import captions supplied by a creator or exported from an authorized source:
 
@@ -149,3 +149,5 @@ python -m processors.cli ingest --kb table-tennis --allow-audio-download --confi
 
 Both flags are mandatory. Audio is downloaded into a temporary directory, transcribed locally, and removed when the operation exits. Do not use this path without authorization to download and process the source.
 Each completed monitor run records the child exit code, outcome, reason, and bounded stage output in the private `cp.latest.json` manifest. Failed runs expose a consecutive-failure retry counter; a successful run resets it.
+
+The monitor's Stop control terminates the full Windows processor process tree, including nested discovery and ingestion workers. The shared cp orchestrator applies bounded stage limits: discovery stages stop after 20 minutes and ingestion or other stages stop after 45 minutes. A timeout is recorded as a distinct `timeout` exit class with the affected stage and limit in the private manifest.

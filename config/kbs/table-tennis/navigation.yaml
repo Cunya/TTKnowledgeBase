@@ -9,6 +9,7 @@ sections:
   concept_ids:
   - concept-elbow-stabilization-through-support-points
   - concept-compact-stroke-under-fast-rallies
+  - concept-joint-bracing-for-stable-power
   children:
   - id: push
     label: Push
@@ -23,18 +24,27 @@ sections:
     - concept-short-push
     - concept-fast-push
     - concept-forearm-and-body-drop-for-spin
+    - concept-side-spin-push-benefits-and-match-use
+    - concept-forearm-follow-through-in-push-receive
+    - concept-flat-hit-swing-size-control
+    - concept-heavy-backspin-and-no-spin-push-variation
+    - concept-flat-push
     children:
     - id: forehand-push
       label: Forehand push
       description: Forehand-side push mechanics, placement, spin variation, and 
         recovery.
-      concept_ids: []
+      concept_ids:
+      - concept-close-step
+      - concept-forearm-driven-push-on-the-forehand
       children: []
     - id: backhand-push
       label: Backhand push
       description: Backhand-side push mechanics, touch, placement, and receive 
         use.
-      concept_ids: []
+      concept_ids:
+      - concept-backhand-system-body-led-ripping
+      - concept-shakehand-backhand-push-racket-face-stability
       children: []
   - id: counter
     label: Counter
@@ -46,7 +56,8 @@ sections:
       label: Forehand counter
       description: Forehand counter mechanics, timing, placement, and transition
         into stronger attacks.
-      concept_ids: []
+      concept_ids:
+      - concept-open-shoulder-and-pivot-for-forehand-transition
       children: []
     - id: backhand-counter
       label: Backhand counter
@@ -60,6 +71,7 @@ sections:
       than a large looping action.
     concept_ids:
     - concept-compact-spin-stroke-with-finger-lead
+    - concept-finger-led-brush-and-drive-through
     children:
     - id: forehand-drive
       label: Forehand drive
@@ -83,6 +95,12 @@ sections:
     concept_ids:
     - concept-attack-first-over-conservative-play
     - concept-forward-brushing-on-topspin
+    - concept-brush-then-accelerate
+    - concept-hook-loop
+    - concept-guiding-the-ball-forward-and-down-on-heavy-backspin
+    - concept-defense-is-crucial
+    - concept-side-cut
+    - concept-upward-forward-force-for-topspin
     children:
     - id: forehand-loop-family
       label: Forehand loop
@@ -93,6 +111,10 @@ sections:
       - concept-ball-trajectory-classification
       - concept-wrist-position-for-forehand-loop
       - concept-stance-and-positioning-for-looping
+      - concept-forearm-position-relative-to-the-elbow
+      - concept-stable-center-of-gravity-and-bent-knees
+      - concept-definition-of-a-good-shot
+      - concept-shoulder-dip-during-forehand-loop
       children:
       - id: forehand-loop-variations
         label: Variations and ball selection
@@ -106,6 +128,9 @@ sections:
         - concept-backspin-ball-timing
         - concept-looping-against-backspin-by-lifting-first
         - concept-forehand-backspin-receive
+        - concept-compact-motion-for-heavy-backspin
+        - concept-control-power-rather-than-maxing-out
+        - concept-aggressive-push-only-against-weak-spin
         children: []
       - id: forehand-loop-motion
         label: Motion parts
@@ -115,6 +140,7 @@ sections:
         - concept-timing-by-bounce-type
         - concept-forehand-attack-forearm-driven-motion
         - concept-forehand-contact-spacing-and-racket-distance
+        - concept-push-flick-timing-and-contact
         children:
         - id: forehand-loop-preparation
           label: Preparation and spacing
@@ -131,6 +157,8 @@ sections:
           - concept-forehand-loop-swing-path
           - concept-brush-around-the-ball
           - concept-racket-angle-control-against-topspin
+          - concept-elbow-vertical-movement-in-forehand-loop
+          - concept-wait-for-the-ball-in-the-loop
           children: []
         - id: forehand-loop-acceleration
           label: Timing, power, and release
@@ -141,6 +169,7 @@ sections:
           - concept-relax-then-accelerate-at-contact
           - concept-weight-transfer-through-stroke
           - concept-forehand-loop-power-generation
+          - concept-friction-then-propulsion-then-power
           children: []
       - id: forehand-loop-learning
         label: Learning and correction
@@ -159,9 +188,10 @@ sections:
       - concept-backhand-loop
       - concept-backhand-topspin-body-coordination
       - concept-backhand-wrist-stability-and-hooking
-      - concept-hop-step
       - concept-post-shot-recovery-to-ready-position
       - concept-body-angle-for-opening-the-backhand-position
+      - concept-forearm-led-motion-in-backhand
+      - concept-ankle-driven-backhand-rhythm
       children:
       - id: backhand-loop-variations
         label: Variations and ball selection
@@ -170,6 +200,8 @@ sections:
         - concept-backhand-rip
         - concept-backhand-topspin-against-backspin
         - concept-backspin-training-through-push-rallies
+        - concept-backhand-uses-little-self-generated-power
+        - concept-loop-from-a-backspin-rally
         children: []
       - id: backhand-loop-motion
         label: Motion parts
@@ -205,7 +237,8 @@ sections:
       label: Forehand block
       description: Forehand block angle, timing, absorption, placement, and 
         active variations.
-      concept_ids: []
+      concept_ids:
+      - concept-active-placement-in-defense
       children: []
     - id: backhand-block
       label: Backhand block
@@ -225,6 +258,7 @@ sections:
     - concept-push-flick
     - concept-flip-flick
     - concept-racket-angle-control-for-flicking
+    - concept-attack-from-the-front-of-the-table
     children:
     - id: forehand-flick
       label: Forehand flick
@@ -248,6 +282,9 @@ sections:
       - concept-flick-contact-at-the-top-of-the-bounce
       - concept-flick-timing-at-the-peak-of-the-bounce
       - concept-backhand-racket-face-angle-adjustment
+      - concept-push-flick-close-distance-control
+      - concept-rhythm-spacing-and-recovery-for-backhand-rip
+      - concept-banana-flick-timing-pause
       children: []
   - id: serve
     label: Serve
@@ -255,6 +292,8 @@ sections:
       third-ball pattern.
     concept_ids:
     - concept-half-out-serve-as-scoring-pattern
+    - concept-finger-and-forearm-spin-generation
+    - concept-fast-long-forehand-serve
     children:
     - id: serve-mechanics
       label: Serve mechanics
@@ -263,8 +302,11 @@ sections:
       - concept-serve-action-decomposition
       - concept-serve-action-combination
       - concept-backhand-serve
+      - concept-preparation-stroke-and-backswing-for-backhand-serve
       - concept-serve-follow-through-for-disguise
       - concept-close-to-the-table-serve-position
+      - concept-deceptive-follow-through
+      - concept-serve-from-the-middle
       children: []
     - id: serve-spin-and-trajectory
       label: Spin and trajectory
@@ -306,11 +348,23 @@ sections:
     description: Read serve depth, spin, rhythm, and bounce phase before 
       selecting a compact receive action.
     concept_ids:
-    - concept-preparation-stroke-and-backswing-for-backhand-serve
     - concept-serve-receive-practice
     - concept-doubles-side-shift-after-receive
     - concept-front-back-distance-prioritization-in-receive-reading
     - concept-short-versus-long-receive-planning
+    - concept-feet-first-then-hands
+    - concept-misjudging-position-not-spin
+    - concept-side-swipe-receive
+    - concept-stance-and-weight-distribution-for-receive
+    - concept-borrowing-power
+    - concept-counter-drive-after-flick
+    - concept-serve-and-attack-depends-on-post-serve-positioning-and-spin-awareness
+    - concept-serve-receive-for-short-and-half-long-balls
+    - concept-serve-receive-often-uses-borrowed-power
+    - concept-short-serve-pressure-on-receive
+    - concept-spin-as-the-primary-element
+    - concept-compact-spin-drive
+    - concept-receive-spin-and-pace-adaptation
     children:
     - id: receive-reading-and-principles
       label: Reading and principles
@@ -339,6 +393,7 @@ sections:
       - concept-fast-long-backspin-serve
       - concept-mental-commitment-in-receive
       - concept-avoid-pulling-the-hand-on-side-spin-receive
+      - concept-bounce-phase-shot-timing
       children: []
     - id: receive-shot-selection
       label: Receive shot selection
@@ -366,6 +421,32 @@ sections:
   - concept-backhand-grip-openness
   - concept-racket-face-angle-adjustment
   - concept-horizontal-force-for-hooking
+  - concept-friction-improves-spin-and-consistency
+  - concept-friction-vs-impact
+  - concept-aim-middle-to-handle-sidespin
+  - concept-backhand-wrist-cocking-and-racket-head-drop
+  - concept-racket-angle-closed-during-rallies
+  - concept-racket-face-stability
+  - concept-close-distance-control-for-pushes
+  - concept-counter-rip
+  - concept-finger-strength-for-spin-generation
+  - concept-footwork-step-types-for-transition
+  - concept-forehand-backhand-transition-footwork-timing
+  - concept-swing-stopping-point
+  - concept-variation-in-spin
+  - concept-heavy-spin-loop-versus-high-loop
+  - concept-left-foot-entry-and-hand-forward-position-for-short-balls
+  - concept-side-adjusted-push-against-sidespin
+  - concept-spin-competition-backfires
+  - concept-backhand-arc-trajectory
+  - concept-low-contact-and-downward-motion-for-pushes
+  - concept-side-push
+  - concept-serve-spin-depends-on-backswing-contact-angle-and-contact-point
+  - concept-compact-explosive-contact-and-stop
+  - concept-backhand-push-finger-pinch-at-contact
+  - concept-backhand-push-wrist-cocked-down
+  - concept-short-receive-preparation-and-finish
+  - concept-wrapping-racket-path-around-the-ball
   children:
   - id: grip-and-wrist-control
     label: Grip and wrist control
@@ -385,6 +466,7 @@ sections:
     description: Positioning, distance, and movement patterns that create usable
       contact space.
     concept_ids:
+    - concept-hop-step
     - concept-banana-flick-footwork-and-positioning
     - concept-distance-management-for-flicks
     - concept-footwork-patterns
@@ -477,6 +559,10 @@ sections:
   - concept-swing-speed-drill
   - concept-shadow-practice
   - concept-trajectory-practice
+  - concept-practice-and-drill-progression
+  - concept-random-placement-drills
+  - concept-short-game-as-a-secret-weapon
+  - concept-training-as-a-process-of-adjustment
   children:
   - id: technique-acquisition
     label: Technique acquisition
@@ -512,6 +598,18 @@ sections:
   - concept-use-placement-to-move-the-opponent-and-lower-return-quality
   - concept-backhand-pressure-management
   - concept-backhand-technique-selection-by-incoming-ball-type
+  - concept-aggressive-forward-driving
+  - concept-create-wide-angle-then-accelerate
+  - concept-force-the-opponent-to-move-before-attacking
+  - concept-pace-adjustment-based-on-incoming-ball-quality
+  - concept-variation-in-placement
+  - concept-variation-in-rhythm-or-tempo
+  - concept-backhand-to-backhand-rally-importance
+  - concept-placement-rhythm-and-spin-as-tactical-variables
+  - concept-reduce-unforced-errors-before-chasing-variation
+  - concept-safe-return-first-then-attack
+  - concept-speed-and-placement-over-spin-or-power-on-third-ball
+  - concept-variation-in-pace-or-tempo
   children:
   - id: serve-attack
     label: Serve and third-ball attack
@@ -531,6 +629,7 @@ sections:
     - concept-push-rally-strategy
     - concept-backhand-attack
     - concept-close-table-defensive-positioning
+    - concept-forehand-stroke-height-adjustment
     children: []
   - id: opponent-adaptation
     label: Opponent adaptation
@@ -564,6 +663,7 @@ sections:
     concept_ids:
     - concept-rubber-layer-count-by-rubber-age
     - concept-booster-oil-for-tacky-rubbers
+    - concept-tacky-rubber-as-the-preferred-forehand-choice-for-spin
     children: []
   - id: glue-application
     label: Glue application

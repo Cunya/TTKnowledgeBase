@@ -13,9 +13,11 @@ evidence_summary: >-
   instructs the player to keep both controlled and aligned. Many players do not pull back enough,
   fear getting jammed, and should practice barehanded to complete the full motion. Pulling the arm
   early or making the backswing too big causes players to feel jammed, especially against fast
-  balls. Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:2bcdaf860553eba25d6baa985e71984a6b31df9d836225063c8c86cc3ea887e5"
+  balls. These segments describe the mistake of waiting too long to start the backswing and it
+  leads to getting jammed. The backswing-turn-swing pattern will 'jam yourself up within two
+  shots,' directly matching the concept. Together, these principles show how the topic is applied
+  in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:379ea8fc13553ce6fe7e29539594de13c6cd3a6b297735d5f6d3a729433f7bed"
 evidence_summary_generator: "deterministic"
 concept_type: practice
 facets:
@@ -104,3 +106,33 @@ evidence:
         - 3HRfwQrevc4:00145
         - 3HRfwQrevc4:00146
         - 3HRfwQrevc4:00147
+  - id: qFwE0n-bspQ-concept-avoid-getting-jammed-by-backswing-timing-reviewed
+    evidence_type: mistake
+    excerpt: Do not begin the backswing only when the ball has already landed or reached your side; prepare earlier to avoid being jammed.
+    reason: These segments describe the mistake of waiting too long to start the backswing and explain that it leads to getting jammed.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: qFwE0n-bspQ
+      start_ms: 12300
+      end_ms: 35933
+      url: https://www.youtube.com/watch?v=qFwE0n-bspQ&t=12s
+      segment_ids:
+        - qFwE0n-bspQ:00003
+        - qFwE0n-bspQ:00006
+        - qFwE0n-bspQ:00007
+  - id: U4ItRZHe_-A-concept-avoid-getting-jammed-by-backswing-timing-reviewed
+    evidence_type: explanation
+    excerpt: Avoid separating or timing the backswing in a way that makes the stroke tight, delayed, or self-obstructed.
+    reason: The speaker says the backswing-turn-swing pattern will 'jam yourself up within two shots,' directly matching the concept.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: U4ItRZHe_-A
+      start_ms: 3166
+      end_ms: 9233
+      url: https://www.youtube.com/watch?v=U4ItRZHe_-A&t=3s
+      segment_ids:
+        - U4ItRZHe_-A:00001

@@ -546,6 +546,38 @@ evidence:
         - wSzmpXHp64Q:00131
         - wSzmpXHp64Q:00133
         - wSzmpXHp64Q:00134
+  - id: DShIvrh0Yss-concept-push-variations-reviewed
+    evidence_type: explanation
+    excerpt: Different push forms chosen by ball length, spin, and tactical goal.
+    reason: The transcript distinguishes long push, short push, soft push, and side-swipe as different receive patterns with different tempos and effects.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: DShIvrh0Yss
+      start_ms: 171200
+      end_ms: 193133
+      url: https://www.youtube.com/watch?v=DShIvrh0Yss&t=171s
+      segment_ids:
+        - DShIvrh0Yss:00039
+        - DShIvrh0Yss:00040
+        - DShIvrh0Yss:00043
+  - id: uAOIQu7TT0g-concept-push-variations-reviewed
+    evidence_type: definition
+    excerpt: Deliberately varying push speed, spin, placement, and timing to make the push harder to read and more dangerous in receive situations.
+    reason: The speaker frames the lesson around making pushes more threatening and varied, explicitly calling out push variations from serve receive.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: uAOIQu7TT0g
+      start_ms: 12233
+      end_ms: 22600
+      url: https://www.youtube.com/watch?v=uAOIQu7TT0g&t=12s
+      segment_ids:
+        - uAOIQu7TT0g:00003
+        - uAOIQu7TT0g:00004
+        - uAOIQu7TT0g:00005
 relations:
   - relation_type: variation_of
     target_concept_id: concept-push-technique

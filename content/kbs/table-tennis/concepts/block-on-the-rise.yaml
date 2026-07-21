@@ -281,6 +281,22 @@ evidence:
       segment_ids:
         - egRHNdxZbYo:00092
         - egRHNdxZbYo:00093
+  - id: q70a9LCojco-concept-block-on-the-rise-reviewed
+    evidence_type: definition
+    excerpt: Blocking the ball on its rise is presented as the easiest and safest defensive timing, especially against spinny loops.
+    reason: The transcript explicitly says blocking on the rise is easiest and uses it as the core timing solution.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: q70a9LCojco
+      start_ms: 337700
+      end_ms: 362000
+      url: https://www.youtube.com/watch?v=q70a9LCojco&t=337s
+      segment_ids:
+        - q70a9LCojco:00079
+        - q70a9LCojco:00082
+        - q70a9LCojco:00083
 relations:
   - relation_type: part_of
     target_concept_id: concept-block-trajectory-and-placement

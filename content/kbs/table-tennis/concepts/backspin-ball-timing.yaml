@@ -7,10 +7,14 @@ short_definition: Timing a loop or attack against backspin based on the bounce p
 evidence_summary: >-
   Backspin ball timing brings together several connected ideas. From topspin timing to backspin
   receive/loop timing and waiting too long causes jamming, especially on receive to the forehand.
-  Rising point, peak, and falling point timing and links each to different push choices. Together,
-  these principles show how the topic is applied in practice while preserving the relevant
-  distinctions and constraints.
-evidence_summary_source_hash: "sha256:9e78d11fb694beed1c38c9f3091b1da948060afeb0abb6bc6b551d23d48c2591"
+  Rising point, peak, and falling point timing and links each to different push choices. How low
+  to let the ball drop and answers to wait for it to drop more before contact. Incoming backspin
+  changes how you should time the loop, and that rushing against heavy spin leads to errors.
+  Proper timing means intercepting the ball during the stroke and meeting it in the middle of the
+  motion. Push rhythm must be mastered for topspin and backspin balls and recommends contacting
+  during the early descent instead of rushing. Together, these principles show how the topic is
+  applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:2f331178707ab223e0ec9bc9753f260698e0cd98df95468b57903bc2ba19bf13"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -68,3 +72,71 @@ evidence:
         - WcQLHn2Fafw:00095
         - WcQLHn2Fafw:00097
         - WcQLHn2Fafw:00098
+  - id: 60_qpMsHRvQ-concept-backspin-ball-timing-reviewed
+    evidence_type: definition
+    excerpt: Timing for backspin balls should be slowed down so contact happens later in the ball's descent rather than at the peak or early descent.
+    reason: The speaker directly asks how low to let the ball drop and answers to wait for it to drop more before contact.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 60_qpMsHRvQ
+      start_ms: 54133
+      end_ms: 63733
+      url: https://www.youtube.com/watch?v=60_qpMsHRvQ&t=54s
+      segment_ids:
+        - 60_qpMsHRvQ:00012
+        - 60_qpMsHRvQ:00013
+        - 60_qpMsHRvQ:00014
+  - id: 8143qxSjk5A-concept-backspin-ball-timing-reviewed
+    evidence_type: explanation
+    excerpt: Adapting loop timing to a backspin ball by waiting for the appropriate descending phase instead of rushing the ball.
+    reason: The speaker says incoming backspin changes how you should time the loop, and that rushing against heavy spin leads to errors.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8143qxSjk5A
+      start_ms: 118800
+      end_ms: 140700
+      url: https://www.youtube.com/watch?v=8143qxSjk5A&t=118s
+      segment_ids:
+        - 8143qxSjk5A:00026
+        - 8143qxSjk5A:00027
+        - 8143qxSjk5A:00028
+        - 8143qxSjk5A:00029
+        - 8143qxSjk5A:00031
+  - id: EjtP5uCaULU-concept-backspin-ball-timing-reviewed
+    evidence_type: explanation
+    excerpt: Timing the loop against backspin by meeting the ball during the swing path rather than colliding from behind it.
+    reason: The speaker says proper timing means intercepting the ball during the stroke and meeting it in the middle of the motion.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: EjtP5uCaULU
+      start_ms: 262066
+      end_ms: 278566
+      url: https://www.youtube.com/watch?v=EjtP5uCaULU&t=262s
+      segment_ids:
+        - EjtP5uCaULU:00061
+        - EjtP5uCaULU:00063
+        - EjtP5uCaULU:00064
+  - id: Xho60DR74X0-concept-backspin-ball-timing-reviewed
+    evidence_type: explanation
+    excerpt: Timing the push on a backspin ball during the early descent rather than rushing contact too early.
+    reason: The speaker says push rhythm must be mastered for topspin and backspin balls and recommends contacting during the early descent instead of rushing.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Xho60DR74X0
+      start_ms: 16400
+      end_ms: 44733
+      url: https://www.youtube.com/watch?v=Xho60DR74X0&t=16s
+      segment_ids:
+        - Xho60DR74X0:00004
+        - Xho60DR74X0:00006
+        - Xho60DR74X0:00007
+        - Xho60DR74X0:00008
+        - Xho60DR74X0:00009

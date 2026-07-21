@@ -10,13 +10,14 @@ evidence_summary: >-
   curved motion driven by body rotation, explicitly rejecting a straight forward-then-downward
   path. The ball as fast and curving, which directly supports the curved trajectory concept. A
   distinct sideways curve and a heavy arc as part of the serve's effect and disguise. A curved
-  flick, a long arc, and a curved trajectory. A useful contrast is between a straight ball and a
-  curved sidespin ball and explains that correct friction placement produces the curve. The serve
-  must curve and follow an arc, not a linear forward-downward path. A useful contrast is between
-  straight balls and balls that curve to the side and become difficult to return. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:1453648fc5602225e6a9c40055f9393df987a435b55ca132acfdf85e93b5622a"
+  flick, a long arc, and a curved trajectory. The serve must curve and follow an arc, not a linear
+  forward-downward path. A useful contrast is between straight balls and balls that curve to the
+  side and become difficult to return. High arc, floating arc, and curved brushing/trajectory
+  descriptions as part of serve reading and spin generation. The pulling feel makes the ball curve
+  aggressively and it with a high, predictable bounce from more forceful chopping. Additional
+  points reinforce the same theme. Together, these principles show how the topic is applied in
+  practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:1355edd226e148cb976d83f509bc96a4d84f3046f3dd62a3437b0fa2ee92dd1e"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -150,3 +151,34 @@ evidence:
         - pxxgpWNbXSM:00044
         - pxxgpWNbXSM:00045
         - pxxgpWNbXSM:00047
+  - id: kF3mAZD3GHs-concept-curved-serve-trajectory-reviewed
+    evidence_type: explanation
+    excerpt: A serve trajectory that curves rather than traveling flat, often used as a sign of spin and disguise.
+    reason: The speaker contrasts high arc, floating arc, and curved brushing/trajectory descriptions as part of serve reading and spin generation.
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: kF3mAZD3GHs
+      start_ms: 231333
+      end_ms: 239033
+      url: https://www.youtube.com/watch?v=kF3mAZD3GHs&t=231s
+      segment_ids:
+        - kF3mAZD3GHs:00044
+  - id: dg0kTVGE8qQ-concept-curved-serve-trajectory-reviewed
+    evidence_type: explanation
+    excerpt: Proper brushing and friction make the serve curve aggressively rather than travel forward in a flat, predictable way.
+    reason: The speaker says the pulling feel makes the ball curve aggressively and contrasts it with a high, predictable bounce from more forceful chopping.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: dg0kTVGE8qQ
+      start_ms: 597333
+      end_ms: 621500
+      url: https://www.youtube.com/watch?v=dg0kTVGE8qQ&t=597s
+      segment_ids:
+        - dg0kTVGE8qQ:00141
+        - dg0kTVGE8qQ:00142
+        - dg0kTVGE8qQ:00144
+        - dg0kTVGE8qQ:00145

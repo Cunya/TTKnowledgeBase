@@ -2,6 +2,7 @@
 import { corpora } from '../../../../corpora';
 import VideoEvidence from '../../../../components/VideoEvidence.astro';
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import { sortEvidenceByRelevance } from '../../../../lib/evidenceRelevance';
 import type { Concept, Corpus, TopicNode } from '../../../../types';
 export function getStaticPaths() { return corpora.flatMap((corpus) => corpus.concepts.map((concept) => ({ params: { kb: corpus.knowledge_base.id, slug: concept.slug }, props: { corpus, concept } }))); }
 interface Props { corpus: Corpus; concept: Concept }
@@ -11,6 +12,11 @@ const incoming = corpus.concepts.flatMap((item) => item.relations.filter((r) => 
 const connections = [...incoming.map(({ source, relation }) => ({ concept: source, type: relation.relation_type })), ...concept.relations.flatMap((relation) => conceptMap[relation.target_concept_id] ? [{ concept: conceptMap[relation.target_concept_id], type: relation.relation_type }] : [])];
 const root = `${import.meta.env.BASE_URL}kb/${corpus.knowledge_base.id}`;
 const sourceCount = new Set(concept.evidence.map((item) => item.source.video_id)).size;
+const rankedAllEvidence = sortEvidenceByRelevance(concept.evidence, concept.label);
+const overflowEvidence = rankedAllEvidence.slice(20);
+const displayedMomentCount = concept.evidence.length > 20 ? '20+' : String(concept.evidence.length);
+const subsectionTypes = [['definition', 'explanation'], ['demonstration', 'correction'], ['drill', 'example'], ['mistake']];
+const displayedEvidenceTotal = subsectionTypes.reduce((total, types) => total + Math.min(5, rankedAllEvidence.filter((item) => types.includes(item.evidence_type)).length), 0);
 const topicPaths: TopicNode[][] = [];
 const collectTopicPaths = (nodes: TopicNode[], trail: TopicNode[] = []) => {
   for (const node of nodes) {
@@ -25,12 +31,12 @@ if (corpus.navigation) collectTopicPaths(corpus.navigation.sections);
   <article class="wiki-page">
     <nav class="breadcrumbs"><a href={`${root}/`}>{corpus.knowledge_base.name}</a><span>/</span><a href={`${root}/concepts/`}>Concepts</a><span>/</span><span>{concept.label}</span></nav>
     <div class="wiki-shell">
-      <aside class="wiki-toc" aria-label="Contents"><strong>Contents</strong><a href="#overview">Overview</a><a href="#summary">Summary</a>{topicPaths.length > 0 && <a href="#topic-tree">Topic tree <span>{topicPaths.length}</span></a>}<a href="#video-moments">Video moments <span>{concept.evidence.length}</span></a>{connections.length > 0 && <a href="#related">Related topics <span>{connections.length}</span></a>}<a href="#sources">Source notes</a></aside>
+      <aside class="wiki-toc" aria-label="Contents"><strong>Contents</strong><a href="#overview">Overview</a><a href="#summary">Summary</a>{topicPaths.length > 0 && <a href="#topic-tree">Topic tree <span>{topicPaths.length}</span></a>}<a href="#video-moments">Video moments <span>{displayedMomentCount}</span></a>{connections.length > 0 && <a href="#related">Related topics <span>{connections.length}</span></a>}<a href="#sources">Source notes</a></aside>
       <div class="wiki-article">
-        <header id="overview" class="wiki-header"><div class="eyebrow">{concept.concept_type} · {concept.difficulty}</div><h1>{concept.label}</h1><p class="definition">{concept.short_definition}</p>{concept.detailed_definition && <p class="wiki-lead">{concept.detailed_definition}</p>}<div class="wiki-summary"><div><span>Also known as</span><strong>{concept.aliases.join(', ') || '—'}</strong></div>{Object.entries(concept.facets).map(([key, values]) => <div><span>{key}</span><strong>{values.join(', ')}</strong></div>)}<div><span>Evidence</span><strong>{concept.evidence.length} moments in {sourceCount} video{sourceCount === 1 ? '' : 's'}</strong></div></div></header>
+        <header id="overview" class="wiki-header"><div class="eyebrow">{concept.concept_type} · {concept.difficulty}</div><h1>{concept.label}</h1><p class="definition">{concept.short_definition}</p>{concept.detailed_definition && <p class="wiki-lead">{concept.detailed_definition}</p>}<div class="wiki-summary"><div><span>Also known as</span><strong>{concept.aliases.join(', ') || '—'}</strong></div>{Object.entries(concept.facets).map(([key, values]) => <div><span>{key}</span><strong>{values.join(', ')}</strong></div>)}<div><span>Evidence</span><strong>{displayedMomentCount} moments in {sourceCount} video{sourceCount === 1 ? '' : 's'}</strong></div></div></header>
         {topicPaths.length > 0 && <section id="topic-tree" class="wiki-section topic-paths"><div class="section-kicker">Where this belongs</div><h2>Topic tree</h2><p>The first path is the concept’s primary home. Additional paths show where the same idea is reused without duplicating the article.</p>{topicPaths.map((path, pathIndex) => <nav aria-label={`${pathIndex === 0 ? 'Primary' : 'Additional'} topic path for ${concept.label}`}><strong class="topic-path-kind">{pathIndex === 0 ? 'Primary path' : 'Also appears in'}</strong>{path.map((node, index) => <><a href={`${root}/#topic-${node.id}`}>{node.label}</a>{index < path.length - 1 && <span>›</span>}</>)}</nav>)}</section>}
         <section id="summary" class="wiki-section concept-summary"><div class="section-kicker">Knowledge synthesis</div><h2>Summary</h2>{concept.evidence_summary ? <><p class="concept-summary-lead">{concept.evidence_summary}</p><p class="concept-summary-definition"><strong>Core concept:</strong> {concept.short_definition}</p></> : <><p class="concept-summary-lead">{concept.short_definition}</p>{concept.detailed_definition && <p>{concept.detailed_definition}</p>}<p class="concept-summary-note">A moment-level synthesis has not been authored for this concept yet; the source moments below remain the detailed evidence.</p></>}</section>
-        <section id="video-moments" class="wiki-section"><div class="section-kicker">Evidence library</div><h2>Video moments</h2><p>Short, repeatable source clips illustrating this topic. Each window is tied to reviewed transcript segments.</p><VideoEvidence evidence={concept.evidence} videos={corpus.videos} /></section>
+        <section id="video-moments" class="wiki-section"><div class="section-kicker">Evidence library</div><h2>Video moments</h2><p>Top {displayedEvidenceTotal} ranked evidence items, capped at 20 per concept. Individual items may contain multiple cited source moments. The four subsections each show up to 5 best related items.</p><VideoEvidence evidence={rankedAllEvidence} videos={corpus.videos} showRelevance={!import.meta.env.PROD} conceptLabel={concept.label}>{concept.evidence.length > displayedEvidenceTotal && <><button slot="evidence-toggle" class="evidence-display-toggle" type="button" data-evidence-toggle aria-expanded="false">Show all moments ({concept.evidence.length})</button><div slot="evidence-toggle" class="all-evidence-panel" data-all-evidence hidden><VideoEvidence evidence={rankedAllEvidence} videos={corpus.videos} showRelevance={!import.meta.env.PROD} conceptLabel={concept.label} maxPerChapter={0} /></div></>}</VideoEvidence>{!import.meta.env.PROD && overflowEvidence.length > 0 && <details class="local-evidence-overflow"><summary>Additional local moments ({overflowEvidence.length})</summary><VideoEvidence evidence={overflowEvidence} videos={corpus.videos} showRelevance conceptLabel={concept.label} maxPerChapter={0} /></details>}</section>
         {connections.length > 0 && <section id="related" class="wiki-section related-index"><div class="section-kicker">Knowledge graph</div><h2>Related topics</h2>{connections.map(({ concept: linked, type }) => <a href={`${root}/concepts/${linked.slug}/`}><span>{type.replaceAll('_', ' ')}</span><strong>{linked.label}</strong><p>{linked.short_definition}</p></a>)}</section>}
         <section id="sources" class="wiki-section source-notes"><div class="section-kicker">Editorial status</div><h2>Source notes</h2><p>Definitions are synthesized from timed captions and reviewed against the cited transcript windows. “Transcript inferred” means the visual action still needs explicit human video verification.</p></section>
         <aside class="concept-support" aria-label="Support this project"><div><div class="section-kicker">Keep the library growing</div><h2>Support more reviewed lessons</h2><p>Contributions help fund transcript processing, visual verification, and continued development of the open knowledge base.</p></div><a href="https://ko-fi.com/tamasmartinec" target="_blank" rel="noreferrer">Support on Ko-fi <span aria-hidden="true">↗</span></a></aside>
@@ -38,3 +44,16 @@ if (corpus.navigation) collectTopicPaths(corpus.navigation.sections);
     </div>
   </article>
 </BaseLayout>
+
+<script>
+  const evidenceToggle = document.querySelector<HTMLButtonElement>('[data-evidence-toggle]');
+  const allEvidencePanel = document.querySelector<HTMLElement>('[data-all-evidence]');
+  const topEvidencePanel = evidenceToggle?.closest('[data-evidence-root]')?.querySelector<HTMLElement>('.evidence-layout');
+  evidenceToggle?.addEventListener('click', () => {
+    const showingAll = evidenceToggle.getAttribute('aria-expanded') === 'true';
+    evidenceToggle.setAttribute('aria-expanded', String(!showingAll));
+    evidenceToggle.textContent = showingAll ? 'Show all moments' : 'Show top moments only';
+    if (allEvidencePanel) allEvidencePanel.hidden = showingAll;
+    if (topEvidencePanel) topEvidencePanel.hidden = !showingAll;
+  });
+</script>

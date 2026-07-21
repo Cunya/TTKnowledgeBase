@@ -10,9 +10,10 @@ short_definition: Using a firm wrist that presses forward instead of bending upw
 evidence_summary: >-
   Backhand wrist hook and forward press brings together several connected ideas. The essence of
   backhand lies in the wrist hook, with the wrist pressed forward to keep the racket angle stable.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:7b48e5aea5c6cd69691309cb6cb00ec814f9fb98daffc57ffec59365d14e012e"
+  He states the key is to lock the wrist and use the forearm to drive forward. The wrist should
+  lead forward into the ball to create friction, not pull back. Together, these principles show
+  how the topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:ac6c9e60a0f72225d06ab96906e459b327e467239030ab51ee20156e3a0049a1"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -43,3 +44,33 @@ evidence:
       segment_ids:
         - HCkIFKn0-Ds:00146
         - HCkIFKn0-Ds:00153
+  - id: suG8AopFBIc-concept-backhand-wrist-hook-and-forward-press-reviewed
+    evidence_type: correction
+    excerpt: Use a bent-back or hooked wrist to stabilize the flick, then press forward rather than using loose wrist action.
+    reason: He states the key is to lock the wrist and use the forearm to drive forward.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: suG8AopFBIc
+      start_ms: 321666
+      end_ms: 329933
+      url: https://www.youtube.com/watch?v=suG8AopFBIc&t=321s
+      segment_ids:
+        - suG8AopFBIc:00074
+        - suG8AopFBIc:00075
+  - id: mchHxJnHUzE-concept-backhand-wrist-hook-and-forward-press-reviewed
+    evidence_type: explanation
+    excerpt: Using the wrist to lead forward into the ball, rather than pulling it back, so the backhand can engage the ball and generate friction and rotation.
+    reason: The speaker says the wrist should lead forward into the ball to create friction, not pull back.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: mchHxJnHUzE
+      start_ms: 596333
+      end_ms: 613600
+      url: https://www.youtube.com/watch?v=mchHxJnHUzE&t=596s
+      segment_ids:
+        - mchHxJnHUzE:00134
+        - mchHxJnHUzE:00136

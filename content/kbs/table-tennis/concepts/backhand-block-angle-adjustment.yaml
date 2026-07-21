@@ -10,9 +10,12 @@ evidence_summary: >-
   tends to go into the net, open the backhand racket angle more. They describe switching to a more
   vertical punch block or quick counter and keeping the racket angled forward and slightly
   downward to pin the ball down. Using the racket head to block and adjusting the backhand-side
-  racket angle. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:0492936ef990e6fa45d643c4a4f8100b05682a38c0e77ce6747d7b6653ccb8d6"
+  racket angle. The exact arm shape and it controls the ball's arc against heavy spin. The
+  receiver to keep the racket open, vertical, or flat depending on the serve angle, which is the
+  core of backhand angle adjustment even though the examples are framed as pushes. Together, these
+  principles show how the topic is applied in practice while preserving the relevant distinctions
+  and constraints.
+evidence_summary_source_hash: "sha256:22590569db58ab949f29387f01d35410debae89fde7b6cbffeb4bb1474217364"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -96,3 +99,36 @@ evidence:
       segment_ids:
         - 4gMbiB6mrrY:00012
         - 4gMbiB6mrrY:00013
+  - id: q70a9LCojco-concept-elbow-low-forearm-high-block-shape-reviewed
+    evidence_type: definition
+    excerpt: Against heavy spin, the blocker should keep the elbow low and forearm high to control the arc and press the ball down.
+    reason: The speaker gives the exact arm shape and states it controls the ball's arc against heavy spin.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: q70a9LCojco
+      start_ms: 418633
+      end_ms: 447366
+      url: https://www.youtube.com/watch?v=q70a9LCojco&t=418s
+      segment_ids:
+        - q70a9LCojco:00097
+        - q70a9LCojco:00099
+        - q70a9LCojco:00101
+  - id: 2HMLpiaJLL0-concept-backhand-block-angle-adjustment-reviewed
+    evidence_type: explanation
+    excerpt: Changing the racket face angle on the backhand block or push to match the incoming spin and avoid popping the ball up or netting it.
+    reason: The speaker repeatedly instructs the receiver to keep the racket open, vertical, or flat depending on the serve angle, which is the core of backhand angle adjustment even though the examples are framed as pushes.
+    confidence: 0.88
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 2HMLpiaJLL0
+      start_ms: 145733
+      end_ms: 170366
+      url: https://www.youtube.com/watch?v=2HMLpiaJLL0&t=145s
+      segment_ids:
+        - 2HMLpiaJLL0:00029
+        - 2HMLpiaJLL0:00032
+        - 2HMLpiaJLL0:00033
+        - 2HMLpiaJLL0:00034

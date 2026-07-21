@@ -1067,6 +1067,70 @@ evidence:
         - 7Zz_cVWrgng:00033
         - 7Zz_cVWrgng:00034
         - 7Zz_cVWrgng:00038
+  - id: NvQgMvevIPY-concept-post-serve-recovery-reviewed
+    evidence_type: explanation
+    excerpt: After serving, recover immediately to a ready position before the opponent contacts the ball.
+    reason: The speaker says not to wait after serving and to finish recovery before the opponent contacts the ball.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: NvQgMvevIPY
+      start_ms: 627333
+      end_ms: 651700
+      url: https://www.youtube.com/watch?v=NvQgMvevIPY&t=627s
+      segment_ids:
+        - NvQgMvevIPY:00141
+        - NvQgMvevIPY:00145
+  - id: NgfykAQZCpw-concept-post-serve-recovery-reviewed
+    evidence_type: explanation
+    excerpt: Recovering position after a serve so you are ready to handle the return and next shot.
+    reason: The speaker repeatedly says to serve, recover, and then adjust position, emphasizing that position should be corrected before looping the return.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: NgfykAQZCpw
+      start_ms: 554866
+      end_ms: 568966
+      url: https://www.youtube.com/watch?v=NgfykAQZCpw&t=554s
+      segment_ids:
+        - NgfykAQZCpw:00125
+        - NgfykAQZCpw:00127
+  - id: q70a9LCojco-concept-serve-return-positioning-to-cover-likely-angle-reviewed
+    evidence_type: explanation
+    excerpt: After serving or pushing to a side, the player should immediately shift to the position that covers the opponent's most likely return angle.
+    reason: The transcript links serve placement to immediate recovery positioning and coverage of the likely return lane.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: q70a9LCojco
+      start_ms: 829966
+      end_ms: 859166
+      url: https://www.youtube.com/watch?v=q70a9LCojco&t=829s
+      segment_ids:
+        - q70a9LCojco:00180
+        - q70a9LCojco:00181
+        - q70a9LCojco:00182
+        - q70a9LCojco:00183
+        - q70a9LCojco:00184
+        - q70a9LCojco:00187
+  - id: OQ7fB6yS8Fk-concept-post-serve-recovery-reviewed
+    evidence_type: definition
+    excerpt: The movement and repositioning immediately after serving so the player is ready for the next ball.
+    reason: The speaker explicitly discusses recovery after the serve, immediate return to ready position, and completing the motion before recovering on short serves.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: OQ7fB6yS8Fk
+      start_ms: 122366
+      end_ms: 135300
+      url: https://www.youtube.com/watch?v=OQ7fB6yS8Fk&t=122s
+      segment_ids:
+        - OQ7fB6yS8Fk:00028
+        - OQ7fB6yS8Fk:00030
 relations:
   - relation_type: used_with
     target_concept_id: concept-short-serve-third-ball-attack

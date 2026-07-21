@@ -12,9 +12,12 @@ evidence_summary: >-
   mechanics: side approach, full backswing, forearm/elbow use, and brushing contact. Side entry,
   shoulder drive, and not being square to the table with having enough backswing space. The
   backhand flick as the best way to handle short balls. The backhand banana flick directly and it
-  is very difficult for amateurs. Together, these principles show how the topic is applied in
-  practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:639a88aa05f51ecbcdd15ed7790396cb2fc3cf4fe444d1a31d7f05478a87eb9f"
+  is very difficult for amateurs. The backhand banana flick and it is typically used on serve
+  returns against sidespin or side-backspin, mostly for short or half-long balls. The technique
+  and its use on short and half-long balls as an attacking response. The banana flick and it is
+  more stable than a short push, even without perfect judgment. Together, these principles show
+  how the topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:300bc85a434b1f55340bf2906d22eb0266d5025e529e17948de62c7c942ff0f3"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -111,3 +114,48 @@ evidence:
         - GOAyEFoSibE:00009
         - GOAyEFoSibE:00010
         - GOAyEFoSibE:00011
+  - id: YR4GEvuI9Vc-concept-backhand-banana-flick-reviewed
+    evidence_type: definition
+    excerpt: A short-ball or half-long serve-return technique on the backhand side, used against sidespin or side-backspin.
+    reason: The speaker names the backhand banana flick and says it is typically used on serve returns against sidespin or side-backspin, mostly for short or half-long balls.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: YR4GEvuI9Vc
+      start_ms: 96033
+      end_ms: 104933
+      url: https://www.youtube.com/watch?v=YR4GEvuI9Vc&t=96s
+      segment_ids:
+        - YR4GEvuI9Vc:00024
+        - YR4GEvuI9Vc:00025
+  - id: zZ_B1Xg7Pjs-concept-backhand-banana-flick-reviewed
+    evidence_type: definition
+    excerpt: A backhand receive/attack technique for short, half-long, and spinny balls that uses an outward arcing brushing motion rather than a straight push.
+    reason: The speaker explicitly names the technique and explains its use on short and half-long balls as an attacking response.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: zZ_B1Xg7Pjs
+      start_ms: 45266
+      end_ms: 67166
+      url: https://www.youtube.com/watch?v=zZ_B1Xg7Pjs&t=45s
+      segment_ids:
+        - zZ_B1Xg7Pjs:00010
+        - zZ_B1Xg7Pjs:00013
+  - id: 0D6FzvP33Xs-concept-backhand-banana-flick-reviewed
+    evidence_type: definition
+    excerpt: A more stable short-ball receive option than a short push, used when precise judgment is difficult.
+    reason: The speaker names the banana flick and says it is more stable than a short push, even without perfect judgment.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 0D6FzvP33Xs
+      start_ms: 8866
+      end_ms: 23000
+      url: https://www.youtube.com/watch?v=0D6FzvP33Xs&t=8s
+      segment_ids:
+        - 0D6FzvP33Xs:00002
+        - 0D6FzvP33Xs:00004

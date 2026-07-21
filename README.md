@@ -182,6 +182,8 @@ For the unattended/local full cycle, run the shared orchestrator from the reposi
 
 It refreshes pending work, ingests and extracts the next controlled batch, rebuilds review diagnostics, writes eligible evidence summaries, and publishes the reviewed corpus. When the configured selected backlog is empty, it discovers enabled sources and chooses the most-viewed unseen videos where view counts are available. The Windows Task Scheduler entry runs this workflow daily at 21:00 Europe/Helsinki time. For an interactive start/stop loop with live output and local budget reset, run `node scripts/processor-monitor.mjs` and open `http://127.0.0.1:4322/`.
 
+The monitor streams stage output while work is running. Discovery is bounded to 20 minutes and ingestion/other stages to 45 minutes; a timeout is recorded explicitly and Windows Stop terminates nested processor workers as well as the parent.
+
 Every study or review also updates the canonical Markdown backlog, the generated local `/backlog/` view, and the relevant project documentation before it is considered complete. See [the study-to-backlog documentation contract](docs/pipeline.md#study-to-backlog-documentation-contract).
 
 Every published claim must cite real transcript segment IDs. Candidate JSON is a proposal, not public knowledge, and must be reviewed into canonical concept YAML. Spoken windows are kept short and focused; visual windows are separate and remain non-looping until a reviewer confirms that the footage actually demonstrates the concept.
@@ -194,7 +196,7 @@ Codex-backed extraction, rephrasing, and benchmarking use the configured low-cos
 llm_budget:
   enabled: true
   timezone: Europe/Helsinki
-  daily_token_limit: 500000
+  daily_token_limit: 30000000
   task_token_limits:
     extraction: 400000
     rephrase: 100000
@@ -211,7 +213,7 @@ The ledger and deferral records are ignored under `data/manifests/<kb>/`. A cons
 
 ## Source and platform safeguards
 
-Ingestion is cache-first, sequential, and deliberately paced. Existing normalized transcripts are reused without network access. When a source blocks transcript requests, the processor records a cooldown and stops rather than repeatedly retrying the same route. Cookies, proxy settings, credentials, raw transcripts, Codex audit data, and downloaded media are private and never belong in Git or GitHub Pages.
+Ingestion is cache-first, sequential, and deliberately paced. Existing normalized transcripts are reused without network access. Each invocation targets up to 10 successful uncached videos; failed or cooling-down entries are skipped without consuming that success target, within a bounded candidate window. When a source blocks transcript requests, the processor records a cooldown and stops rather than repeatedly retrying the same route. Cookies, proxy settings, credentials, raw transcripts, Codex audit data, and downloaded media are private and never belong in Git or GitHub Pages.
 
 The public product is an independent study guide: original summaries, short attributed excerpts, source links, timestamps, and standard YouTube embeds. It is not a transcript mirror, video archive, or replacement player. Review [the legal/platform findings](docs/legal-review-youtube-2026-07-15.md) and [the precedent study](docs/youtube-knowledge-project-precedents-2026-07-15.md) before expanding acquisition or changing public content policy.
 

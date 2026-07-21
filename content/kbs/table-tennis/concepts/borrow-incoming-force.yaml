@@ -7,17 +7,17 @@ aliases:
 short_definition: When late or poorly prepared, a player should redirect or borrow the incoming ball's force instead of forcing a full-power stroke.
 evidence_summary: >-
   Borrow incoming force brings together several connected ideas. Using the opponent's or incoming
-  power when preparation is late or incomplete. To use the ball's incoming force and borrow the
-  spin. To follow the spin's direction and send the ball back along its path to neutralize the
-  spin. Borrowing power from the ball's rise or fall and combining it with the player's own
-  effort. Against a fast push you can use its pace and that the opponent has already supplied the
-  power. Using the ball's existing friction/pressure to make the loop work, which is effectively
-  borrowing incoming force. When using topspin technique against underspin, players rely on
-  borrowed power and leverage the incoming ball. Multiple segments state that the player should
-  use or borrow the opponent's power to create the return. Additional points reinforce the same
-  theme. Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:dac29d4f61dc72c2be9ece0a2a84b4caed2947d33522120ab8c3c1995ab8851a"
+  power when preparation is late or incomplete. To follow the spin's direction and send the ball
+  back along its path to neutralize the spin. Borrowing power from the ball's rise or fall and
+  combining it with the player's own effort. Against a fast push you can use its pace and that the
+  opponent has already supplied the power. Using the ball's existing friction/pressure to make the
+  loop work, which is effectively borrowing incoming force. Multiple segments state that the
+  player should use or borrow the opponent's power to create the return. Whether to rely on own
+  power or the opponent's power, then explains borrowing power and labels it borrowing force. To
+  use the opponent's pace/power and brush over the ball with racket tip, wrist, and forearm.
+  Additional points reinforce the same theme. Together, these principles show how the topic is
+  applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:a84f99908e6606100539c99d740eb8d5982e88fa2dc99c930063b52f733765c8"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -183,3 +183,51 @@ evidence:
         - TYMU3wQ3-sw:00051
         - TYMU3wQ3-sw:00053
         - TYMU3wQ3-sw:00056
+  - id: u5UlupA51vg-concept-borrow-incoming-force-reviewed
+    evidence_type: definition
+    excerpt: Using the opponent's incoming power rather than generating all power independently.
+    reason: The speaker directly asks whether to rely on own power or the opponent's power, then explains borrowing power and labels it borrowing force.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: u5UlupA51vg
+      start_ms: 601920
+      end_ms: 625600
+      url: https://www.youtube.com/watch?v=u5UlupA51vg&t=601s
+      segment_ids:
+        - u5UlupA51vg:00079
+        - u5UlupA51vg:00080
+        - u5UlupA51vg:00081
+        - u5UlupA51vg:00082
+  - id: qFwE0n-bspQ-concept-borrow-incoming-force-reviewed
+    evidence_type: explanation
+    excerpt: Let the ball come into your space so you can absorb its incoming force and then return it with your own force.
+    reason: The speaker says to let the ball get closer, let it push into your space, then push back and let the ball's force meet your force.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: qFwE0n-bspQ
+      start_ms: 160866
+      end_ms: 171933
+      url: https://www.youtube.com/watch?v=qFwE0n-bspQ&t=160s
+      segment_ids:
+        - qFwE0n-bspQ:00037
+        - qFwE0n-bspQ:00038
+        - qFwE0n-bspQ:00039
+  - id: uL8In-_NToM-concept-borrow-incoming-force-reviewed
+    evidence_type: explanation
+    excerpt: Using the opponent's incoming pace and power as part of your own stroke instead of generating everything yourself.
+    reason: The speaker explicitly says to use the opponent's pace/power and brush over the ball with racket tip, wrist, and forearm.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: uL8In-_NToM
+      start_ms: 321400
+      end_ms: 331233
+      url: https://www.youtube.com/watch?v=uL8In-_NToM&t=321s
+      segment_ids:
+        - uL8In-_NToM:00071
+        - uL8In-_NToM:00072

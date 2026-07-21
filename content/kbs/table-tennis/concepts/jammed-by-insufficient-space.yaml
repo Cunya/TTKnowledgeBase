@@ -13,9 +13,10 @@ evidence_summary: >-
   with getting jammed on the forehand loop. If the upper arm keeps rising, there will be no space
   to retract, describing the jammed condition directly. Pulling the ball, not allowing the ball to
   push you back, and needing space to generate power, all pointing to jammed execution from poor
-  spacing. Together, these principles show how the topic is applied in practice while preserving
-  the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:f776984725101041f4e54bbcc0cee1c0ce0c35bc5a08f9e08ce0bab754e653cc"
+  spacing. Large backwards or downward backswing leads to getting jammed and that large strokes
+  get jammed. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:c8649242d6e1b7e75a5ddef1bb687efbd6f7f39db0aca7c4515f1bd914ca89e7"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -131,3 +132,18 @@ evidence:
         - FweaNVt8gA0:00206
         - FweaNVt8gA0:00208
         - FweaNVt8gA0:00212
+  - id: R_MLRGrJlsM-concept-jammed-by-insufficient-space-reviewed
+    evidence_type: mistake
+    excerpt: A receive stroke fails because the swing has too much backswing or not enough room to handle the incoming ball.
+    reason: The speaker directly says large backwards or downward backswing leads to getting jammed and that large strokes get jammed.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: R_MLRGrJlsM
+      start_ms: 120666
+      end_ms: 134533
+      url: https://www.youtube.com/watch?v=R_MLRGrJlsM&t=120s
+      segment_ids:
+        - R_MLRGrJlsM:00027
+        - R_MLRGrJlsM:00029

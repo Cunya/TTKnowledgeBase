@@ -1108,6 +1108,101 @@ evidence:
       segment_ids:
         - TYMU3wQ3-sw:00031
         - TYMU3wQ3-sw:00036
+  - id: 02wQgAIcHKY-concept-compact-response-to-fast-ball-reviewed
+    evidence_type: explanation
+    excerpt: Against a fast incoming ball, reduce stroke size to avoid being jammed and keep the motion compact.
+    reason: The speaker says faster push speed requires a smaller stroke and that rushing the technique causes jammed errors.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 02wQgAIcHKY
+      start_ms: 68866
+      end_ms: 98333
+      url: https://www.youtube.com/watch?v=02wQgAIcHKY&t=68s
+      segment_ids:
+        - 02wQgAIcHKY:00015
+        - 02wQgAIcHKY:00019
+        - 02wQgAIcHKY:00020
+  - id: HVPF38PxXvI-concept-compact-response-to-fast-ball-reviewed
+    evidence_type: explanation
+    excerpt: Using a short, quick, low-backswung action against fast incoming balls instead of taking a large swing.
+    reason: The speaker repeatedly says that heavy spin and fast topspin serves require a short, compact stroke and that a large backswing causes errors.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: HVPF38PxXvI
+      start_ms: 388333
+      end_ms: 417333
+      url: https://www.youtube.com/watch?v=HVPF38PxXvI&t=388s
+      segment_ids:
+        - HVPF38PxXvI:00089
+        - HVPF38PxXvI:00090
+        - HVPF38PxXvI:00091
+        - HVPF38PxXvI:00092
+        - HVPF38PxXvI:00093
+        - HVPF38PxXvI:00094
+  - id: ihrv3kBFb-U-concept-compact-backhand-response-for-fast-or-spinny-balls-reviewed
+    evidence_type: explanation
+    excerpt: When the incoming serve is fast or highly spun, the backhand response should shrink into a compact motion and use the incoming pace.
+    reason: The speaker explicitly recommends smaller motion against fast serves, says more spin requires smaller motion, and notes that closer-to-table play needs a compact stroke.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ihrv3kBFb-U
+      start_ms: 201866
+      end_ms: 227700
+      url: https://www.youtube.com/watch?v=ihrv3kBFb-U&t=201s
+      segment_ids:
+        - ihrv3kBFb-U:00040
+        - ihrv3kBFb-U:00044
+  - id: yIBhoQsBD9k-concept-compact-response-to-fast-ball-reviewed
+    evidence_type: explanation
+    excerpt: When returning fast serves, reduce backswing and keep the response compact.
+    reason: The speaker explicitly advises minimizing backswing and summarizes fast-serve return with no backswing.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: yIBhoQsBD9k
+      start_ms: 103433
+      end_ms: 109466
+      url: https://www.youtube.com/watch?v=yIBhoQsBD9k&t=103s
+      segment_ids:
+        - yIBhoQsBD9k:00025
+  - id: phKJvL-8VbQ-concept-defensive-block-against-fast-serves-reviewed
+    evidence_type: explanation
+    excerpt: A receiving strategy for long fast serves that prioritizes absorbing pace and using a compact block rather than adding personal power.
+    reason: The speaker directly recommends blocking long fast serves like a defensive shot and warns against trying to add your own power.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: phKJvL-8VbQ
+      start_ms: 221833
+      end_ms: 240400
+      url: https://www.youtube.com/watch?v=phKJvL-8VbQ&t=221s
+      segment_ids:
+        - phKJvL-8VbQ:00053
+        - phKJvL-8VbQ:00054
+        - phKJvL-8VbQ:00056
+  - id: VYMqgnrDAhk-candidate-4-reviewed
+    evidence_type: definition
+    excerpt: Using a compact, efficient motion rather than a big backswing when the incoming serve is fast or jams the player.
+    reason: The speaker says fast, jamming serves leave no time for a full swing and that the contact must be compact and efficient.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: VYMqgnrDAhk
+      start_ms: 443900
+      end_ms: 451500
+      url: https://www.youtube.com/watch?v=VYMqgnrDAhk&t=443s
+      segment_ids:
+        - VYMqgnrDAhk:00092
+        - VYMqgnrDAhk:00093
 relations:
   - relation_type: used_with
     target_concept_id: concept-control-before-power

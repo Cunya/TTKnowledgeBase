@@ -13,9 +13,12 @@ evidence_summary: >-
   Varying speed and trajectory, maintaining multiple serve sets, and saving special serves for
   critical moments. Alternating backhand and forehand, then using variations before returning to
   the best serve, with the same setup making outcomes unpredictable. Changing serve spin from one
-  ball to the next so the opponent cannot predict it. Together, these principles show how the
-  topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:271f57bdad50c6eca1e6fd2ba0306be24c0fce485c5387dcb9fde87479f27e78"
+  ball to the next so the opponent cannot predict it. Serve placement examples and the variation
+  caused trouble and had a clear strategy. Serves fail when they only have one spin type and no
+  variation, and that deceptive motions can be added after mastering the basic drive feeling.
+  Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:56d4874cbf05f69e84a632eaf280d2bcbb06d7b20a6c4876d5278c3e4f813d85"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -137,3 +140,38 @@ evidence:
         - -J5iKei3MIQ:00197
         - -J5iKei3MIQ:00198
         - -J5iKei3MIQ:00199
+  - id: q70a9LCojco-concept-serve-placement-variation-as-major-weapon-reviewed
+    evidence_type: example
+    excerpt: Varying serve placement to different zones is presented as a major weapon that creates trouble and sets up later attack patterns.
+    reason: The speaker gives serve placement examples and says the variation caused trouble and had a clear strategy.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: q70a9LCojco
+      start_ms: 22633
+      end_ms: 52233
+      url: https://www.youtube.com/watch?v=q70a9LCojco&t=22s
+      segment_ids:
+        - q70a9LCojco:00005
+        - q70a9LCojco:00006
+        - q70a9LCojco:00007
+        - q70a9LCojco:00008
+        - q70a9LCojco:00009
+        - q70a9LCojco:00011
+  - id: phKJvL-8VbQ-concept-serve-variation-and-disguise-reviewed
+    evidence_type: explanation
+    excerpt: Varying spin types and adding deceptive motion so the opponent cannot adapt quickly to a single predictable serve pattern.
+    reason: The speaker says serves fail when they only have one spin type and no variation, and that deceptive motions can be added after mastering the basic drive feeling.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: phKJvL-8VbQ
+      start_ms: 13933
+      end_ms: 32766
+      url: https://www.youtube.com/watch?v=phKJvL-8VbQ&t=13s
+      segment_ids:
+        - phKJvL-8VbQ:00003
+        - phKJvL-8VbQ:00005
+        - phKJvL-8VbQ:00007

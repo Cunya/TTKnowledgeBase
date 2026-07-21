@@ -2,9 +2,12 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
+import os
 import subprocess
 import sys
+import threading
 from datetime import UTC, datetime
 from pathlib import Path
 from urllib.parse import parse_qs, quote, urlparse
@@ -13,23 +16,88 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from processors.utils import read_yaml, write_json  # noqa: E402
 
+STAGE_TIMEOUTS_SECONDS = {
+    "discover": 20 * 60,
+    "ingest": 45 * 60,
+    "default": 45 * 60,
+}
+
 
 def cmd(kb: str, *args: str) -> list[str]:
     return [sys.executable, "-m", "processors.cli", *args, "--kb", kb]
 
+
+def stage_timeout_seconds(name: str) -> int:
+    if name.startswith("discover "):
+        return STAGE_TIMEOUTS_SECONDS["discover"]
+    if name.startswith("ingest "):
+        return STAGE_TIMEOUTS_SECONDS["ingest"]
+    return STAGE_TIMEOUTS_SECONDS["default"]
+
+
+def terminate_process_tree(pid: int) -> None:
+    if os.name == "nt":
+        subprocess.run(
+            ["taskkill.exe", "/PID", str(pid), "/T", "/F"],
+            capture_output=True,
+            check=False,
+        )
+    else:
+        try:
+            os.kill(pid, 9)
+        except ProcessLookupError:
+            pass
+
+
 def run(name: str, args: list[str], report: dict) -> int:
     print(f"\n=== {name} ===", flush=True)
-    result = subprocess.run(args, cwd=ROOT, text=True, capture_output=True)
-    output = "\n".join(part for part in (result.stdout, result.stderr) if part).strip()
-    if output:
-        print(output, flush=True)
+    child_env = os.environ.copy()
+    child_env["PYTHONUNBUFFERED"] = "1"
+    result = subprocess.Popen(
+        args,
+        cwd=ROOT,
+        env=child_env,
+        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        bufsize=1,
+    )
+    timeout_seconds = stage_timeout_seconds(name)
+    timed_out = False
+    captured: list[str] = []
+
+    def timeout_stage() -> None:
+        nonlocal timed_out
+        timed_out = True
+        message = (
+            f"TIMEOUT: {name} exceeded the {timeout_seconds // 60}-minute stage limit; "
+            "terminating its process tree."
+        )
+        print(message, flush=True)
+        captured.append(message + "\n")
+        terminate_process_tree(result.pid)
+
+    timeout_timer = threading.Timer(timeout_seconds, timeout_stage)
+    timeout_timer.daemon = True
+    timeout_timer.start()
+    try:
+        if result.stdout is not None:
+            for line in result.stdout:
+                print(line, end="", flush=True)
+                captured.append(line)
+        result.wait()
+    finally:
+        timeout_timer.cancel()
+    return_code = 124 if timed_out else result.returncode
+    output = "".join(captured).strip()
     report.setdefault("stages", []).append({
         "name": name,
-        "exit_code": result.returncode,
+        "exit_code": return_code,
         "output": output[-4000:],
-        "exit_class": "success" if result.returncode == 0 else "stage_failed",
+        "exit_class": "timeout" if timed_out else ("success" if return_code == 0 else "stage_failed"),
+        "timeout_seconds": timeout_seconds,
     })
-    return result.returncode
+    return return_code
 
 def selected_batch(kb: str, limit: int) -> list[dict]:
     config = read_yaml(ROOT / "config" / "kbs" / kb / "sources.yaml") or {}
@@ -38,10 +106,35 @@ def selected_batch(kb: str, limit: int) -> list[dict]:
             if item.get("selected") and item.get("availability") != "members_only"
             and item.get("id") and not (normalized / f"{item['id']}.json").exists()][:limit]
 
+
+def cached_unextracted(kb: str) -> list[str]:
+    normalized = ROOT / "data" / "normalized" / kb
+    derived = ROOT / "data" / "derived" / kb
+    extracted_ids = {path.name.removesuffix(".candidates.json") for path in derived.glob("*.candidates.json")}
+    return sorted(path.stem for path in normalized.glob("*.json") if path.stem not in extracted_ids)
+
+
+def catalog_videos(kb: str) -> list[dict]:
+    """Load existing local discovery catalogs for controlled expansion."""
+    paths = [
+        *(ROOT / "data" / "manifests" / kb).glob("discovered*.json"),
+        *(ROOT / "app" / "src" / "data").glob("*.json"),
+    ]
+    videos: list[dict] = []
+    for path in paths:
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        entries = payload.get("videos") if isinstance(payload, dict) else None
+        if isinstance(entries, list):
+            videos.extend(item for item in entries if isinstance(item, dict))
+    return videos
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--kb", default="table-tennis")
-    parser.add_argument("--batch-size", type=int, default=8)
+    parser.add_argument("--batch-size", type=int, default=10)
     parser.add_argument("--no-discover-when-empty", action="store_true")
     args = parser.parse_args()
     report = {"knowledge_base": args.kb, "started_at": datetime.now(UTC).isoformat(), "status": "running"}
@@ -50,7 +143,16 @@ def main() -> int:
         status = run("process-pending before acquisition", cmd(args.kb, "process-pending"), report)
         if status not in (0, 2):
             raise RuntimeError(f"cached triage failed (exit {status}; see stage output)")
-        batch = selected_batch(args.kb, args.batch_size)
+        cached = cached_unextracted(args.kb)
+        report["cached_unextracted"] = cached
+        for video_id in cached:
+            status = run(f"extract cached {video_id}", cmd(args.kb, "extract-concepts", "--video-id", video_id), report)
+            if status not in (0, 2):
+                raise RuntimeError(f"cached extraction failed (exit {status}; see stage output)")
+        # Supply a larger candidate window because ingest now targets successful
+        # uncached videos rather than limiting total attempts. This lets failed
+        # or cooling-down entries be skipped without shrinking the work batch.
+        batch = selected_batch(args.kb, args.batch_size * 4)
         report["selected_batch"] = [{"id": x["id"], "title": x.get("title", "")} for x in batch]
         if batch:
             urls = [f"https://www.youtube.com/watch?v={quote(str(x['id']))}" for x in batch]
@@ -70,11 +172,13 @@ def main() -> int:
                     if status != 0:
                         raise RuntimeError(f"discovery failed (exit {status}; see stage output)")
                     playlist_id = parse_qs(urlparse(str(source["url"])).query).get("list", [None])[0]
-                    filename = f"discovered-{playlist_id}.json" if playlist_id else "discovered-videos.json"
-                    manifest = ROOT / "data" / "manifests" / args.kb / filename
-                    if manifest.exists():
-                        payload = json.loads(manifest.read_text(encoding="utf-8"))
+                    source_key = playlist_id or hashlib.sha256(str(source["url"]).encode("utf-8")).hexdigest()[:12]
+                    filename = f"discovered-{source_key}.json"
+                    discovery_manifest = ROOT / "data" / "manifests" / args.kb / filename
+                    if discovery_manifest.exists():
+                        payload = json.loads(discovery_manifest.read_text(encoding="utf-8"))
                         discovered.extend(payload.get("videos", []))
+            discovered.extend(catalog_videos(args.kb))
             normalized = ROOT / "data" / "normalized" / args.kb
             seen: set[str] = set()
             batch = []
@@ -83,8 +187,15 @@ def main() -> int:
                 if video_id and video_id not in seen and not (normalized / f"{video_id}.json").exists():
                     seen.add(video_id)
                     batch.append(item)
-            batch = batch[: args.batch_size]
+            batch = batch[: args.batch_size * 4]
+            report["discovered_inventory_count"] = len({str(item.get("id")) for item in discovered if item.get("id")})
+            report["discovered_unprocessed_count"] = len(batch)
             report["discovered_batch"] = [{"id": x["id"], "title": x.get("title", "")} for x in batch]
+            print(
+                f"Discovered inventory: {report['discovered_inventory_count']} unique; "
+                f"eligible unprocessed window: {report['discovered_unprocessed_count']}",
+                flush=True,
+            )
             if batch:
                 urls = [str(x.get("url") or f"https://www.youtube.com/watch?v={quote(str(x['id']))}") for x in batch]
                 status = run("ingest discovered batch", cmd(args.kb, "ingest", *urls), report)
@@ -102,7 +213,8 @@ def main() -> int:
         report["status"] = "completed"
         return 0
     except Exception as error:
-        report.update(status="stopped", exit_class="stage_failed", error=str(error))
+        timed_out = any(stage.get("exit_class") == "timeout" for stage in report.get("stages", []))
+        report.update(status="stopped", exit_class="timeout" if timed_out else "stage_failed", error=str(error))
         print(f"cp stopped safely: {error}", file=sys.stderr)
         return 1
     finally:

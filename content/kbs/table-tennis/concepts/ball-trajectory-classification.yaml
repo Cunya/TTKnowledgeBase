@@ -12,14 +12,15 @@ evidence_summary: >-
   Ball trajectory classification brings together several connected ideas. By explicitly
   introducing three ball trajectories and naming them backspin, topspin, and half-high ball, each
   with a curve description. Curve, spin, and friction as mechanisms that affect trajectory and
-  opponent control. A high arc to slow or out-of-bounds balls and it with a low arc that is
-  faster. Different serve trajectories and they lead to different reactions and defensive
-  strategies. Left or right spin changes the trajectory to straight or diagonal and the ball will
-  curve. There are three types and discusses curved, downward, and non-upward trajectories. Balls
-  into near-net, on-table, mid-table, half-table, baseline, and explicitly names short, half-long,
-  and long balls. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:d37a96381c764c4c8fa6dc56002fb51891b1ffbda9099b29929d4b55cc692d6c"
+  opponent control. Different serve trajectories and they lead to different reactions and
+  defensive strategies. Left or right spin changes the trajectory to straight or diagonal and the
+  ball will curve. Balls into near-net, on-table, mid-table, half-table, baseline, and explicitly
+  names short, half-long, and long balls. The curved brushing motion and arc creation to the
+  fingers. Table tennis is about three arcs and names them pressing, flat, and looping. He started
+  focusing on the ball's trajectory and mentions arc as one of the key cues. Additional points
+  reinforce the same theme. Together, these principles show how the topic is applied in practice
+  while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:6a745509ba00c49db1f7a18fd0bd60fa437b46150552a07de69d093d6f9c9e9c"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -150,3 +151,69 @@ evidence:
         - QTI4evyXCLM:00022
         - QTI4evyXCLM:00023
         - QTI4evyXCLM:00024
+  - id: I-luBOL9IxI-concept-finger-led-loop-curve-reviewed
+    evidence_type: explanation
+    excerpt: The curve and arc in the loop are created primarily by the fingers rather than the upper arm, forearm, or wrist.
+    reason: The speaker directly attributes the curved brushing motion and arc creation to the fingers.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: I-luBOL9IxI
+      start_ms: 525500
+      end_ms: 554366
+      url: https://www.youtube.com/watch?v=I-luBOL9IxI&t=525s
+      segment_ids:
+        - I-luBOL9IxI:00119
+        - I-luBOL9IxI:00120
+        - I-luBOL9IxI:00121
+        - I-luBOL9IxI:00122
+        - I-luBOL9IxI:00123
+  - id: ywhpUTdXW7I-cand-4-reviewed
+    evidence_type: explanation
+    excerpt: Using the ball's flight path, skid, bounce height, and first bounce location as secondary cues for identifying spin.
+    reason: The speaker says to watch the arc, skid, bounce height, and first bounce location when the motion is hard to read.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ywhpUTdXW7I
+      start_ms: 580766
+      end_ms: 606200
+      url: https://www.youtube.com/watch?v=ywhpUTdXW7I&t=580s
+      segment_ids:
+        - ywhpUTdXW7I:00130
+        - ywhpUTdXW7I:00133
+        - ywhpUTdXW7I:00134
+  - id: krlH8_UzRRM-concept-ball-trajectory-classification-reviewed
+    evidence_type: definition
+    excerpt: A simple model that classifies incoming balls by their post-bounce trajectory, including pressing, flat, and looping arcs, to guide the swing path.
+    reason: The speaker explicitly says table tennis is about three arcs and names them pressing, flat, and looping.
+    confidence: 0.92
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: krlH8_UzRRM
+      start_ms: 158566
+      end_ms: 183900
+      url: https://www.youtube.com/watch?v=krlH8_UzRRM&t=158s
+      segment_ids:
+        - krlH8_UzRRM:00038
+        - krlH8_UzRRM:00039
+        - krlH8_UzRRM:00040
+        - krlH8_UzRRM:00042
+  - id: VYMqgnrDAhk-candidate-2-reviewed
+    evidence_type: explanation
+    excerpt: Using the ball's flight path, speed, and curve as cues for judging serve spin and timing receive contact.
+    reason: The speaker says he started focusing on the ball's trajectory and mentions arc as one of the key cues.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: VYMqgnrDAhk
+      start_ms: 41166
+      end_ms: 66266
+      url: https://www.youtube.com/watch?v=VYMqgnrDAhk&t=41s
+      segment_ids:
+        - VYMqgnrDAhk:00009
+        - VYMqgnrDAhk:00013

@@ -706,6 +706,67 @@ evidence:
         - 9IzbAEYcS5A:00150
         - 9IzbAEYcS5A:00152
         - 9IzbAEYcS5A:00154
+  - id: mPRFTyZICY4-concept-push-technique-reviewed
+    evidence_type: explanation
+    excerpt: A push should be compact, controlled, and guided forward rather than executed as a brushing looping motion.
+    reason: They describe the goal as a low, stable, compact, controlled push with good pace.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: mPRFTyZICY4
+      start_ms: 47533
+      end_ms: 59133
+      url: https://www.youtube.com/watch?v=mPRFTyZICY4&t=47s
+      segment_ids:
+        - mPRFTyZICY4:00010
+        - mPRFTyZICY4:00011
+        - mPRFTyZICY4:00012
+  - id: IgnpsIZW3tM-concept-push-technique-reviewed
+    evidence_type: definition
+    excerpt: A push receive should use controlled contact, proper angle, and a forward-through motion rather than a passive poke or straight chop.
+    reason: The speaker frames push as a defensive transitional shot and describes the mechanics of a long push down the line, including contact point, downward motion, and using the lower half of the paddle face.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: IgnpsIZW3tM
+      start_ms: 254133
+      end_ms: 260833
+      url: https://www.youtube.com/watch?v=IgnpsIZW3tM&t=254s
+      segment_ids:
+        - IgnpsIZW3tM:00058
+  - id: ywhpUTdXW7I-cand-6-reviewed
+    evidence_type: explanation
+    excerpt: A push receive should imitate a chopper's sideways cutting stroke rather than a straight up-or-down motion.
+    reason: The speaker explicitly describes the push as a smaller chopper-like sideways cutting motion and calls it a neutral return.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ywhpUTdXW7I
+      start_ms: 761633
+      end_ms: 776233
+      url: https://www.youtube.com/watch?v=ywhpUTdXW7I&t=761s
+      segment_ids:
+        - ywhpUTdXW7I:00170
+        - ywhpUTdXW7I:00171
+        - ywhpUTdXW7I:00172
+  - id: Xho60DR74X0-concept-push-technique-reviewed
+    evidence_type: definition
+    excerpt: A push stroke performed with controlled contact, stable arm structure, and friction-driven racket-tip action rather than a loose, flat-handed poke.
+    reason: The speaker explicitly frames the lesson as the push and names the key spin-oriented 'point push' method.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Xho60DR74X0
+      start_ms: 218866
+      end_ms: 246100
+      url: https://www.youtube.com/watch?v=Xho60DR74X0&t=218s
+      segment_ids:
+        - Xho60DR74X0:00043
+        - Xho60DR74X0:00048
 relations:
   - relation_type: used_with
     target_concept_id: concept-push-contact-and-spin
