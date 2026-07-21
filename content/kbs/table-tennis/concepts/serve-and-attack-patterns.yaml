@@ -407,6 +407,26 @@ evidence:
       url: https://www.youtube.com/watch?v=2HMLpiaJLL0&t=435s
       segment_ids:
         - 2HMLpiaJLL0:00091
+  - id: lXTZ5lpaWXE-concept-serve-as-setup-for-attack-reviewed
+    evidence_type: definition
+    excerpt: A serve should be designed to prepare the next attack rather than aim only for an outright point.
+    reason: The speaker says an effective serve sets up the next attack and should complement follow-up patterns.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: lXTZ5lpaWXE
+      start_ms: 331366
+      end_ms: 361000
+      url: https://www.youtube.com/watch?v=lXTZ5lpaWXE&t=331s
+      segment_ids:
+        - lXTZ5lpaWXE:00072
+        - lXTZ5lpaWXE:00073
+        - lXTZ5lpaWXE:00074
+        - lXTZ5lpaWXE:00075
+        - lXTZ5lpaWXE:00076
+        - lXTZ5lpaWXE:00077
+        - lXTZ5lpaWXE:00078
 relations:
   - relation_type: used_with
     target_concept_id: concept-short-serve-third-ball-attack

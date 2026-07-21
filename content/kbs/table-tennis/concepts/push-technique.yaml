@@ -767,6 +767,23 @@ evidence:
       segment_ids:
         - Xho60DR74X0:00043
         - Xho60DR74X0:00048
+  - id: j4tQrFa7iSQ-concept-push-technique-reviewed
+    evidence_type: demonstration
+    excerpt: A spinny push uses downward brushing contact, starts slightly above the ball, and finishes below the ball's initial arc.
+    reason: The transcript defines the push spin mechanics as downward brushing, bottom-half contact, and finishing under the ball.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: j4tQrFa7iSQ
+      start_ms: 61433
+      end_ms: 89333
+      url: https://www.youtube.com/watch?v=j4tQrFa7iSQ&t=61s
+      segment_ids:
+        - j4tQrFa7iSQ:00012
+        - j4tQrFa7iSQ:00013
+        - j4tQrFa7iSQ:00014
+        - j4tQrFa7iSQ:00017
 relations:
   - relation_type: used_with
     target_concept_id: concept-push-contact-and-spin

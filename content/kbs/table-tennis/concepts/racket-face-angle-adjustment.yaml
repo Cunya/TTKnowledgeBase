@@ -8,19 +8,20 @@ aliases:
 short_definition: Adjusting the racket face angle so the contact can occur on the correct side of the ball and preserve the desired curve.
 evidence_summary: >-
   Racket face angle adjustment brings together several connected ideas. The racket face must be
-  angled correctly and bad angle as a primary cause of failed curve generation. Explicitly says
-  the racket must face left for left-side spin and that the ball will curve when angled left. The
-  racket angle should change only minimally and that the racket face must remain stable throughout
-  the motion. Spin to changing racket head or racket face angle during the serve motion. The serve
-  changes into side-topspin by changing the grip to a hook position and only altering racket
-  angle, with contact on the side of the ball. The racket face opens after contact and should
-  instead remain closed while brushing through the ball. A slight hooking wrist motion, notes that
-  too much hook against right sidespin causes errors, and recommends opening the face slightly or
-  wrapping around the ball. A useful contrast is between a flatter, slightly angled racket and a
-  vertical racket, linking angle choice to brushing and spin generation. Additional points
-  reinforce the same theme. Together, these principles show how the topic is applied in practice
-  while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:d22eccb17260782625f85c2e5df00ad6aff9943e9ffc17182814ba8405c997ed"
+  angled correctly and bad angle as a primary cause of failed curve generation. To keep the
+  position, adjust the angle slightly, and that the movement stays the same while the racket face
+  changes. The racket angle should change only minimally and that the racket face must remain
+  stable throughout the motion. Flattening the racket angle, holding it high and flat, and notes
+  that flat or vertical angles can still produce different spins. The serve changes into
+  side-topspin by changing the grip to a hook position and only altering racket angle, with
+  contact on the side of the ball. A useful contrast is between a low bottom edge that sends the
+  ball forward and a higher bottom edge that wraps upward and creates true friction, emphasizing
+  racket-face orientation. A slight hooking wrist motion, notes that too much hook against right
+  sidespin causes errors, and recommends opening the face slightly or wrapping around the ball.
+  Side-underspin requires a low approach and an open racket face with the bottom edge higher than
+  the top edge. Additional points reinforce the same theme. Together, these principles show how
+  the topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:fc75313f322315163200f5e4ae79f38138a1a9fa201937cf8ed40cabab82a518"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -214,3 +215,19 @@ evidence:
         - phTj82vlVqs:00008
         - phTj82vlVqs:00010
         - phTj82vlVqs:00014
+  - id: QrbeXVhiLKg-concept-open-racket-face-for-side-under-serve-reviewed
+    evidence_type: definition
+    excerpt: A serve angle where the racket face is open, with the bottom edge higher than the top edge, to produce side-under spin.
+    reason: The speaker explicitly states that side-underspin requires a low approach and an open racket face with the bottom edge higher than the top edge.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: QrbeXVhiLKg
+      start_ms: 42900
+      end_ms: 67766
+      url: https://www.youtube.com/watch?v=QrbeXVhiLKg&t=42s
+      segment_ids:
+        - QrbeXVhiLKg:00009
+        - QrbeXVhiLKg:00014
+        - QrbeXVhiLKg:00015

@@ -1272,6 +1272,38 @@ evidence:
       segment_ids:
         - 3EtitCzSYqY:00000
         - 3EtitCzSYqY:00001
+  - id: j4tQrFa7iSQ-concept-forehand-loop-reviewed
+    evidence_type: demonstration
+    excerpt: A looping motion is shown from the forehand position with a wrapping follow-through and added body rotation.
+    reason: The speaker explicitly practices from the forehand position and describes the loop's wrap-around finish and body turn.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: j4tQrFa7iSQ
+      start_ms: 462533
+      end_ms: 483400
+      url: https://www.youtube.com/watch?v=j4tQrFa7iSQ&t=462s
+      segment_ids:
+        - j4tQrFa7iSQ:00092
+        - j4tQrFa7iSQ:00093
+        - j4tQrFa7iSQ:00094
+        - j4tQrFa7iSQ:00095
+  - id: Mo-eWN8_354-concept-forehand-loop-reviewed
+    evidence_type: explanation
+    excerpt: A forehand attacking loop on backspin that relies on footwork, brushing, a compact swing, and correct racket-face orientation.
+    reason: The lesson starts with forehand before backhand, and the forearm is identified as the key hitting action for the close-table attack.
+    confidence: 0.83
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: Mo-eWN8_354
+      start_ms: 106200
+      end_ms: 115333
+      url: https://www.youtube.com/watch?v=Mo-eWN8_354&t=106s
+      segment_ids:
+        - Mo-eWN8_354:00023
+        - Mo-eWN8_354:00024
 relations:
   - relation_type: used_with
     target_concept_id: concept-contact-point

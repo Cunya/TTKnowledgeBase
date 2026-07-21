@@ -8,18 +8,19 @@ aliases:
 short_definition: Backhand striking power and finishing action should be driven primarily by the forearm, with the upper arm staying limited and controlled.
 evidence_summary: >-
   Forearm-led motion in backhand brings together several connected ideas. The upper arm should not
-  dominate, the forearm should lead, and the rest of the motion is completed by the forearm. The
-  forearm must pull back horizontally, then drive through the ball, using the elbow as a pivot.
-  The forearm drives the shot forward, the elbow is the pivot, and the elbow should not move with
-  the arm. The forearm presses the ball, controls the arc, and should be used more than the wrist
-  when the incoming ball is spinny. A two-stage backhand motion: move forward together, then let
-  the forearm accelerate through the ball. The racket is led down by the forearm and that both
-  backhand and forehand attacks require forearm-driven adjustment. The forearm drives the backhand
-  and the push-forward-plus-external-rotation sequence around the elbow. A useful contrast is
-  between wrist-driven flicks and a forearm-driven return and says the forearm adds lift or power
-  after contact. Additional points reinforce the same theme. Together, these principles show how
-  the topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:ab5ebada1d3d872a2b867c7258c07961a64f2255e893011448a299a5f522a1a1"
+  dominate, the forearm should lead, and the rest of the motion is completed by the forearm. He
+  says to press the wrist forward using the forearm, not just the wrist, and that wrist control is
+  required. The forearm drives the shot forward, the elbow is the pivot, and the elbow should not
+  move with the arm. A two-stage backhand motion: move forward together, then let the forearm
+  accelerate through the ball. The racket is led down by the forearm and that both backhand and
+  forehand attacks require forearm-driven adjustment. The forearm drives the backhand and the
+  push-forward-plus-external-rotation sequence around the elbow. A useful contrast is between
+  wrist-driven flicks and a forearm-driven return and says the forearm adds lift or power after
+  contact. To lock the wrist and let the forearm drive forward, then says to drive forward into
+  the ball on the backhand loop. Additional points reinforce the same theme. Together, these
+  principles show how the topic is applied in practice while preserving the relevant distinctions
+  and constraints.
+evidence_summary_source_hash: "sha256:f65439311bab7679d87f3dbcdce0a7663905e793618ad7a4a7cfebd6111fa099"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -203,3 +204,33 @@ evidence:
         - 0D6FzvP33Xs:00114
         - 0D6FzvP33Xs:00116
         - 0D6FzvP33Xs:00117
+  - id: Mo-eWN8_354-concept-forearm-led-motion-in-backhand-reviewed
+    evidence_type: definition
+    excerpt: On the backhand loop, the forearm should provide the main forward action while the shoulder and elbow stay relaxed and the wrist remains stable.
+    reason: The speaker explicitly instructs external forearm rotation, a stable wrist, and forearm-driven forward motion.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: Mo-eWN8_354
+      start_ms: 459333
+      end_ms: 474633
+      url: https://www.youtube.com/watch?v=Mo-eWN8_354&t=459s
+      segment_ids:
+        - Mo-eWN8_354:00095
+        - Mo-eWN8_354:00097
+        - Mo-eWN8_354:00098
+  - id: qoK510cwjes-concept-forearm-led-motion-in-backhand-reviewed
+    evidence_type: explanation
+    excerpt: On the backhand, the forearm should take over the final drive after setup, especially during compact receive attacks.
+    reason: The speaker explicitly says to lock the wrist and let the forearm drive forward, then says to drive forward into the ball on the backhand loop.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: qoK510cwjes
+      start_ms: 238833
+      end_ms: 244866
+      url: https://www.youtube.com/watch?v=qoK510cwjes&t=238s
+      segment_ids:
+        - qoK510cwjes:00053

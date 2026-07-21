@@ -99,6 +99,14 @@ The Markdown file is canonical; the HTML page is a generated local management vi
 
 ## 5. Publish and verify
 
+Use the single release gate after the processor monitor is stopped:
+
+```powershell
+.\scripts\verify-release.ps1 -Kb table-tennis
+```
+
+It runs reviewed validation, publish, published-artifact validation, tests, Ruff, and the Astro build in order. If it refuses to start, stop the active monitor/cp run and rerun it against the stable review queue.
+
 ```powershell
 python -m processors.cli publish --auto-rephrase-high-overlap
 python -m processors.cli validate

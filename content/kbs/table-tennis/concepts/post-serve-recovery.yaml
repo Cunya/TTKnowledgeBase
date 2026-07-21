@@ -1131,6 +1131,24 @@ evidence:
       segment_ids:
         - OQ7fB6yS8Fk:00028
         - OQ7fB6yS8Fk:00030
+  - id: lXTZ5lpaWXE-concept-short-forced-position-recovery-after-serve-reviewed
+    evidence_type: explanation
+    excerpt: After a short serve, recover close to the table instead of retreating, with a stance that covers both sides.
+    reason: The speaker explicitly instructs not to step back after the short forehand serve and to hold a close recovery stance.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: lXTZ5lpaWXE
+      start_ms: 599700
+      end_ms: 627800
+      url: https://www.youtube.com/watch?v=lXTZ5lpaWXE&t=599s
+      segment_ids:
+        - lXTZ5lpaWXE:00131
+        - lXTZ5lpaWXE:00132
+        - lXTZ5lpaWXE:00133
+        - lXTZ5lpaWXE:00134
+        - lXTZ5lpaWXE:00135
 relations:
   - relation_type: used_with
     target_concept_id: concept-short-serve-third-ball-attack

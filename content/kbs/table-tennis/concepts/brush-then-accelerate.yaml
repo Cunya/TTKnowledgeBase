@@ -8,10 +8,13 @@ short_definition: For looping, the stroke should brush the ball first and then a
 evidence_summary: >-
   Brush then accelerate brings together several connected ideas. The sequence: brush the ball,
   then accelerate. States the first phase is brushing the ball at contact and calls it crucial.
-  The motion as brushing for spin first and then pushing/accelerating for speed. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:e368488cbea4227ef2ef912ba1116a0318472328dca6c1cb2686ce1b78d33b9d"
+  The motion as brushing for spin first and then pushing/accelerating for speed. A useful contrast
+  is between brushing and a later burst of acceleration and says spin creation is short and
+  explosive. Brushing is the second key element and flat hitting backspin is not acceptable.
+  Excessive brushing is the problem and explicitly states the correct sequence is to establish
+  friction, then drive forward. Together, these principles show how the topic is applied in
+  practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:9b08eabd4f94356641487b3da6cff0eef80cd5bcc2e90c0943788a5d543ba427"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -76,3 +79,50 @@ evidence:
         - w25weWSp_Zo:00062
         - w25weWSp_Zo:00063
         - w25weWSp_Zo:00064
+  - id: j4tQrFa7iSQ-concept-brush-then-accelerate-reviewed
+    evidence_type: explanation
+    excerpt: Create spin with a brief brushing contact, then add acceleration after the brush rather than pushing through the whole ball.
+    reason: The speaker repeatedly contrasts brushing with a later burst of acceleration and says spin creation is short and explosive.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: j4tQrFa7iSQ
+      start_ms: 636200
+      end_ms: 659866
+      url: https://www.youtube.com/watch?v=j4tQrFa7iSQ&t=636s
+      segment_ids:
+        - j4tQrFa7iSQ:00127
+        - j4tQrFa7iSQ:00130
+        - j4tQrFa7iSQ:00131
+  - id: Mo-eWN8_354-concept-brush-then-accelerate-reviewed
+    evidence_type: definition
+    excerpt: On half-high backspin balls, the contact should brush the ball first rather than hit flat, and power comes from a compact, controlled brushing action.
+    reason: The speaker says brushing is the second key element and flat hitting backspin is not acceptable.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: Mo-eWN8_354
+      start_ms: 62633
+      end_ms: 88833
+      url: https://www.youtube.com/watch?v=Mo-eWN8_354&t=62s
+      segment_ids:
+        - Mo-eWN8_354:00014
+        - Mo-eWN8_354:00018
+  - id: qsY3S06fjgA-concept-brush-then-accelerate-reviewed
+    evidence_type: definition
+    excerpt: Establish friction or contact first, then transition into forward acceleration rather than staying in a pure brushing motion.
+    reason: The speaker says excessive brushing is the problem and explicitly states the correct sequence is to establish friction, then drive forward.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: qsY3S06fjgA
+      start_ms: 109666
+      end_ms: 121800
+      url: https://www.youtube.com/watch?v=qsY3S06fjgA&t=109s
+      segment_ids:
+        - qsY3S06fjgA:00021
+        - qsY3S06fjgA:00022
+        - qsY3S06fjgA:00023

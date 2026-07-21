@@ -97,9 +97,12 @@ After Python, model, schema, or content changes, run from the repository root:
 $env:PYTHONUTF8='1'
 .\.venv\Scripts\python.exe -m processors.cli validate --kb table-tennis
 .\.venv\Scripts\python.exe -m processors.cli publish --kb table-tennis
+.\.venv\Scripts\python.exe -m processors.cli validate-published --kb table-tennis
 .\.venv\Scripts\python.exe -m pytest
 .\.venv\Scripts\ruff.exe check .
 ```
+
+For a single final release gate, run `.\scripts\verify-release.ps1 -Kb table-tennis` from the repository root. It refuses to run while the processor monitor or `run-cp.py` is active, then runs `validate`, `publish`, `validate-published`, pytest, Ruff, and the Astro build in order. Treat a failure in any stage as a failed verification; do not report the publish as verified from the Astro build alone.
 
 After site, types, public data, or reviewed content changes, also run:
 
@@ -120,7 +123,7 @@ For content changes, verify representative live routes on `http://127.0.0.1:4321
 - Preserve unrelated user changes in a dirty worktree.
 - Do not use destructive Git cleanup or reset commands.
 - Do not run `git commit` or create commits in response to shortcut prompts. The operator performs commits manually.
-- Assume the local processor monitor loop may be running during any project work or shortcut. Check its status and latest run manifest before editing generated or runtime-owned files; avoid conflicting writes, preserve the monitor's private state, and use its per-KB lock rather than starting an overlapping processing cycle.
+- Assume the local processor monitor loop may be running during any project work or shortcut. Check its status and latest run manifest before editing generated or runtime-owned files; avoid conflicting writes, preserve the monitor's private state, and use its per-KB lock rather than starting an overlapping processing cycle. The final release gate must run only after the monitor and `run-cp.py` are idle.
 
 ## Offline feature boundary
 

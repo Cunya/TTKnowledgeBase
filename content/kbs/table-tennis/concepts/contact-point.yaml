@@ -3022,4 +3022,35 @@ evidence:
       segment_ids:
         - f7Bf-QRn-9Q:00047
         - f7Bf-QRn-9Q:00051
+  - id: PVNp35T9kL4-cand-contact-position-behind-ball-reviewed
+    evidence_type: explanation
+    excerpt: For the transition, backspin is contacted from below and topspin from behind, with the racket reaching the correct height at the moment of contact.
+    reason: The speaker defines the ball contact position for backspin and topspin and states the racket must be at ball height at contact.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: PVNp35T9kL4
+      start_ms: 277433
+      end_ms: 290466
+      url: https://www.youtube.com/watch?v=PVNp35T9kL4&t=277s
+      segment_ids:
+        - PVNp35T9kL4:00054
+        - PVNp35T9kL4:00055
+        - PVNp35T9kL4:00056
+  - id: qoK510cwjes-concept-contact-point-reviewed
+    evidence_type: definition
+    excerpt: The specific moment and location where the racket meets the ball, which must be timed differently depending on serve type.
+    reason: The speaker explicitly contrasts early versus late contact point depending on whether the serve is topspin or backspin.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: qoK510cwjes
+      start_ms: 108900
+      end_ms: 119833
+      url: https://www.youtube.com/watch?v=qoK510cwjes&t=108s
+      segment_ids:
+        - qoK510cwjes:00022
+        - qoK510cwjes:00023
 relations: []

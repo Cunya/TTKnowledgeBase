@@ -935,6 +935,21 @@ evidence:
         - FOPBXdIaKFA:00122
         - FOPBXdIaKFA:00124
         - FOPBXdIaKFA:00126
+  - id: 9bLlHR-vBAU-concept-ready-position-reviewed
+    evidence_type: definition
+    excerpt: The neutral stance a player returns to immediately after a shot so they are prepared for the next ball.
+    reason: The speaker explicitly references recovering to the ready position and shows shoulders square in ready position before pivoting.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 9bLlHR-vBAU
+      start_ms: 973533
+      end_ms: 998133
+      url: https://www.youtube.com/watch?v=9bLlHR-vBAU&t=973s
+      segment_ids:
+        - 9bLlHR-vBAU:00199
+        - 9bLlHR-vBAU:00202
 relations:
   - relation_type: prerequisite_of
     target_concept_id: concept-forehand-loop

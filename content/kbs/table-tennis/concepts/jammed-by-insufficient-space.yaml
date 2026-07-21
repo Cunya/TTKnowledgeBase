@@ -14,9 +14,10 @@ evidence_summary: >-
   to retract, describing the jammed condition directly. Pulling the ball, not allowing the ball to
   push you back, and needing space to generate power, all pointing to jammed execution from poor
   spacing. Large backwards or downward backswing leads to getting jammed and that large strokes
-  get jammed. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:c8649242d6e1b7e75a5ddef1bb687efbd6f7f39db0aca7c4515f1bd914ca89e7"
+  get jammed. 'jammed' to describe balls at the side or behind the body and the priority is to get
+  the ball back immediately. Together, these principles show how the topic is applied in practice
+  while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:3f32e896eaa792162a9b7aa25c3d71a8bd0a3df4287e4aca814e614d1dbc33a4"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -147,3 +148,19 @@ evidence:
       segment_ids:
         - R_MLRGrJlsM:00027
         - R_MLRGrJlsM:00029
+  - id: qsY3S06fjgA-concept-jammed-by-insufficient-space-reviewed
+    evidence_type: example
+    excerpt: A situation where the incoming ball or movement timing leaves too little room to make a normal stroke, forcing an immediate return.
+    reason: The speaker explicitly uses 'jammed' to describe balls at the side or behind the body and says the priority is to get the ball back immediately.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: qsY3S06fjgA
+      start_ms: 610833
+      end_ms: 640166
+      url: https://www.youtube.com/watch?v=qsY3S06fjgA&t=610s
+      segment_ids:
+        - qsY3S06fjgA:00122
+        - qsY3S06fjgA:00127
+        - qsY3S06fjgA:00128

@@ -8,17 +8,19 @@ aliases:
 short_definition: On backspin or push receives, wait for the early descending phase instead of contacting too early at the peak.
 evidence_summary: >-
   Backspin receive timing brings together several connected ideas. To hit backspin in the early
-  descending phase and to wait until that phase for pushing. Backspin problems to rhythm
-  constraints, slow recovery, and rushing on the next ball after backspin. You cannot wait until
-  after the opponent strikes and that reacting after the ball arrives is too late, which grounds
-  receive timing against backspin and serve return. Not to rush, to let the ball come to you, and
-  to keep position steady while waiting to spot the ball. Against rushing and to stay steady when
-  returning backspin balls. To wait, brush, and contact during the descending phase for heavy-spin
-  balls. Not to rush, to let the ball cross the net, and to time the backswing to the serve speed.
-  Not to rush, to slow the rhythm, and to wait a fraction longer for a safer return on these
-  balls. Additional points reinforce the same theme. Together, these principles show how the topic
-  is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:0b5ec1cd0706b1072b6eeffa0d9668d18df32703257210496b7d13f05de97c9e"
+  descending phase and to wait until that phase for pushing. The player to wait for the ball, loop
+  in the descending phase, and wait for it to drop lower. You cannot wait until after the opponent
+  strikes and that reacting after the ball arrives is too late, which grounds receive timing
+  against backspin and serve return. Not to rush and to let the ball drop / wait for the arc
+  before generating force. Backspin serve receive is the key case and rushing leaves the racket
+  head pointed up at contact. Incorrect contact timing is identified as brushing too late or too
+  early, which supports the receive-timing concept even though the exact phrase is not used here.
+  To time the backswing with the incoming ball and to match swing tempo to the opponent's push or
+  serve speed. Backspin receive requires generating your own forward force and that poor timing
+  against spinny balls leads to errors. Additional points reinforce the same theme. Together,
+  these principles show how the topic is applied in practice while preserving the relevant
+  distinctions and constraints.
+evidence_summary_source_hash: "sha256:3bfe8dbdaad0cada08cad27bb60b78bcf4fb478e107d90b670352479f5c6ae63"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -472,3 +474,38 @@ evidence:
       segment_ids:
         - FOPBXdIaKFA:00046
         - FOPBXdIaKFA:00048
+  - id: qoK510cwjes-concept-backspin-receive-timing-reviewed
+    evidence_type: explanation
+    excerpt: For backspin returns, delay contact until the ball travels closer to the body and avoid rushing the stroke.
+    reason: The speaker contrasts topspin timing with backspin timing and says backspin requires later contact closer to the body.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: qoK510cwjes
+      start_ms: 53466
+      end_ms: 77100
+      url: https://www.youtube.com/watch?v=qoK510cwjes&t=53s
+      segment_ids:
+        - qoK510cwjes:00011
+        - qoK510cwjes:00013
+        - qoK510cwjes:00014
+  - id: r75F4gsFaoQ-concept-backspin-receive-timing-reviewed
+    evidence_type: explanation
+    excerpt: When receiving backspin, time the push to match the incoming ball's pace and use the right phase of the motion rather than reacting late.
+    reason: The speaker explains that backspin receive requires generating your own forward force and that poor timing against spinny balls leads to errors.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: r75F4gsFaoQ
+      start_ms: 161133
+      end_ms: 187000
+      url: https://www.youtube.com/watch?v=r75F4gsFaoQ&t=161s
+      segment_ids:
+        - r75F4gsFaoQ:00034
+        - r75F4gsFaoQ:00035
+        - r75F4gsFaoQ:00036
+        - r75F4gsFaoQ:00037
+        - r75F4gsFaoQ:00038
+        - r75F4gsFaoQ:00039

@@ -8,9 +8,11 @@ short_definition: Adjust your own power in relation to the opponent's incoming b
 evidence_summary: >-
   Pace adjustment based on incoming ball quality brings together several connected ideas. A 'Sum
   of 10' formula: if the incoming ball is strong, return with less power; if it is weak, you can
-  add more power, so the total stays within control. Together, these principles show how the topic
-  is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:46926bc051d4bccd03425b86def596f9661787f9a1dd367b776cc825ebab4366"
+  add more power, so the total stays within control. Rushed or jammed contact can come from the
+  opponent's shot quality and explicitly recommends less power on fast balls and more power on
+  slow balls. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:5795576c00fb7a7cda60bb70603483663a8c04447e90d499f1616891d4dee5cb"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -44,3 +46,18 @@ evidence:
         - ZVPHX5Av9Cw:00150
         - ZVPHX5Av9Cw:00152
         - ZVPHX5Av9Cw:00153
+  - id: qsY3S06fjgA-concept-pace-adjustment-based-on-incoming-ball-quality-reviewed
+    evidence_type: explanation
+    excerpt: Adjusting your own power output according to the speed and quality of the incoming ball to avoid getting jammed.
+    reason: The transcript says rushed or jammed contact can come from the opponent's shot quality and explicitly recommends less power on fast balls and more power on slow balls.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: qsY3S06fjgA
+      start_ms: 652900
+      end_ms: 662000
+      url: https://www.youtube.com/watch?v=qsY3S06fjgA&t=652s
+      segment_ids:
+        - qsY3S06fjgA:00132
+        - qsY3S06fjgA:00133

@@ -15,9 +15,11 @@ evidence_summary: >-
   to use a compact forward stroke with no backswing or rotation; the same compact logic is
   extended to side-backspin deep serves. The backhand drive as a small-motion shot that hits the
   back of the ball with forward impact. The backhand drive form and its two-step mechanism:
-  forward push, then forearm rotation after contact. Together, these principles show how the topic
-  is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:6776e3d51d4a93af88d1e2e51b7329791cbe81f49f901d5a70ee902f6bc54c57"
+  forward push, then forearm rotation after contact. A flat rush serve uses a standard backhand
+  drive, while a kicking serve requires closing the angle and raising contact height. Together,
+  these principles show how the topic is applied in practice while preserving the relevant
+  distinctions and constraints.
+evidence_summary_source_hash: "sha256:071b8101e7acc766ceeeab50848c5ca5af016830cb9d3a292e27f2371a9c10d1"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -158,3 +160,18 @@ evidence:
         - JfZ-7fgsF-o:00019
         - JfZ-7fgsF-o:00020
         - JfZ-7fgsF-o:00023
+  - id: qoK510cwjes-concept-backhand-drive-reviewed
+    evidence_type: example
+    excerpt: A forward-driving backhand return used against flatter or faster serves, with angle and contact-height adjustments for kickier spins.
+    reason: The speaker says a flat rush serve uses a standard backhand drive, while a kicking serve requires closing the angle and raising contact height.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: qoK510cwjes
+      start_ms: 521200
+      end_ms: 546033
+      url: https://www.youtube.com/watch?v=qoK510cwjes&t=521s
+      segment_ids:
+        - qoK510cwjes:00114
+        - qoK510cwjes:00118

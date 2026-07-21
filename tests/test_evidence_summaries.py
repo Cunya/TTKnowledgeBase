@@ -52,6 +52,13 @@ def test_generated_summaries_are_direct_syntheses() -> None:
             assert data.get("evidence_summary_generator") in {"codex", "deterministic"}, path.name
 
 
+def test_editorial_reason_removes_possessive_speaker_reference() -> None:
+    concept = Concept.model_validate(read_yaml(CONCEPTS / "compact-explosive-contact-and-stop.yaml"))
+    summary = build_evidence_summary(concept)
+    assert summary is not None
+    assert not re.search(r"\b(?:speaker|coach)\b", summary, re.I)
+
+
 def test_write_missing_summaries_only_fills_missing_files(tmp_path: Path) -> None:
     source = CONCEPTS / "active-block.yaml"
     target = tmp_path / source.name

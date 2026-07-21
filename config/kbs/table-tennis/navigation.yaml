@@ -10,6 +10,8 @@ sections:
   - concept-elbow-stabilization-through-support-points
   - concept-compact-stroke-under-fast-rallies
   - concept-joint-bracing-for-stable-power
+  - concept-braking-action-for-control
+  - concept-low-center-of-gravity-during-transition-play
   children:
   - id: push
     label: Push
@@ -51,7 +53,8 @@ sections:
     label: Counter
     description: Compact counterhit and counterdrive strokes played against pace
       or topspin.
-    concept_ids: []
+    concept_ids:
+    - concept-shoulders-held-compact-through-the-stroke
     children:
     - id: forehand-counter
       label: Forehand counter
@@ -73,6 +76,7 @@ sections:
     concept_ids:
     - concept-compact-spin-stroke-with-finger-lead
     - concept-finger-led-brush-and-drive-through
+    - concept-distance-dependent-stroke-size
     children:
     - id: forehand-drive
       label: Forehand drive
@@ -101,6 +105,9 @@ sections:
     - concept-guiding-the-ball-forward-and-down-on-heavy-backspin
     - concept-side-cut
     - concept-upward-forward-force-for-topspin
+    - concept-follow-up-shot-selection-loop-versus-drive
+    - concept-limit-upper-arm-use-in-close-table-topspin-rallies
+    - concept-step-forward-on-middle-backspin
     children:
     - id: forehand-loop-family
       label: Forehand loop
@@ -128,6 +135,7 @@ sections:
         - concept-looping-against-backspin-by-lifting-first
         - concept-compact-motion-for-heavy-backspin
         - concept-control-power-rather-than-maxing-out
+        - concept-cross-court-loop-to-forehand-from-middle
         children: []
       - id: forehand-loop-motion
         label: Motion parts
@@ -198,6 +206,7 @@ sections:
         - concept-backspin-training-through-push-rallies
         - concept-backhand-uses-little-self-generated-power
         - concept-loop-from-a-backspin-rally
+        - concept-middle-finger-engagement-for-looping-backspin
         children: []
       - id: backhand-loop-motion
         label: Motion parts
@@ -290,6 +299,9 @@ sections:
     - concept-half-out-serve-as-scoring-pattern
     - concept-finger-and-forearm-spin-generation
     - concept-fast-long-forehand-serve
+    - concept-pendulum-serve
+    - concept-rush-serve
+    - concept-side-under-serve-keeping-the-ball-short
     children:
     - id: serve-types
       label: Serve types
@@ -301,7 +313,8 @@ sections:
         label: Forehand serves
         description: Forehand-side serve families organized by racket path, spin
           production, disguise, and placement.
-        concept_ids: []
+        concept_ids:
+        - concept-initiate-from-the-forehand-side
         children:
         - id: hook-serve
           label: Hook serve
@@ -315,6 +328,7 @@ sections:
           - concept-hook-tip-first-contact
           - concept-backspin-serve-under-ball-contact
           - concept-side-underspin-contact-on-lower-half-of-racket
+          - concept-sideways-inward-brushing-for-short-serves
           children: []
         - id: pendulum-serve
           label: Pendulum serve
@@ -414,6 +428,7 @@ sections:
     - concept-spin-as-the-primary-element
     - concept-compact-spin-drive
     - concept-receive-spin-and-pace-adaptation
+    - concept-anticipation-and-read-the-serve
     children:
     - id: receive-reading-and-principles
       label: Reading and principles
@@ -499,6 +514,16 @@ sections:
   - concept-short-receive-preparation-and-finish
   - concept-wrapping-racket-path-around-the-ball
   - concept-definition-of-a-good-shot
+  - concept-active-rip
+  - concept-avoid-early-tension-in-strokes
+  - concept-backhand-to-forehand-transition-timing
+  - concept-braking-motion-and-swing-stop-point
+  - concept-footwork-foundation
+  - concept-forehand-backhand-stroke-mechanics-with-independent-arm-segments
+  - concept-hybrid-loop-drive-technique
+  - concept-outside-in-swing-path
+  - concept-side-shuffle-footwork
+  - concept-single-step-footwork-for-backhand-to-forehand
   children:
   - id: grip-and-wrist-control
     label: Grip and wrist control
@@ -616,6 +641,7 @@ sections:
   - concept-short-game-as-a-secret-weapon
   - concept-training-as-a-process-of-adjustment
   - concept-self-review-through-recording
+  - concept-practice-match-disconnect
   children:
   - id: technique-acquisition
     label: Technique acquisition

@@ -11,16 +11,17 @@ evidence_summary: >-
   Backhand racket-face angle adjustment brings together several connected ideas. Racket-face
   accuracy and a slight leftward angle when adjusting the line. He says he can execute the flick
   by opening the racket angle, and later instructs bending the wrist back and opening the racket
-  face. Open racket face alone does not cause the ball to go long; the main issue is an overly
-  upward trajectory and high contact/blocking angle. More spin requires a flatter racket angle,
-  while less spin needs a more vertical one. Opening the racket slightly to make looping easier,
-  then closing it to improve spin and table control. The racket face is too open, then recommends
-  closing it slightly and using that angle as the contact point. Elbow-down and racket-head-down
-  positions, including the 10 o'clock reference and the racket head being lower than the wrist.
-  Fixing the racket angle and keeping it consistent from preparation through follow-through for
-  stability. Additional points reinforce the same theme. Together, these principles show how the
-  topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:6da444a7190ddfd4d2c18ba31f097b86f9a2b65f9c5a5e8420f38bba7f7419a3"
+  face. The receive racket face should mirror the incoming face angle, using vertical, flat, or
+  more vertical angles to control the trajectory. These lines identify racket face instability,
+  especially from elbow and grip issues, and recommend a firm, secure pinch grip. Backspin loop
+  mistakes often hit the lower half when the upper half is correct, and that the upper half is
+  needed for spin. Elbow-down and racket-head-down positions, including the 10 o'clock reference
+  and the racket head being lower than the wrist. Fixing the racket angle and keeping it
+  consistent from preparation through follow-through for stability. Closing or keeping the racket
+  face fairly vertical for the backhand loop. Additional points reinforce the same theme.
+  Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:6a494d50cf38db02ef7427b8cbc845933c5249a40107e99b4f066a4c7b834d32"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -249,3 +250,34 @@ evidence:
       segment_ids:
         - 0D6FzvP33Xs:00111
         - 0D6FzvP33Xs:00112
+  - id: jTCRnIWq0lI-concept-backhand-racket-face-angle-adjustment-reviewed
+    evidence_type: definition
+    excerpt: For a backhand rip, the racket face should stay consistently closed throughout backswing, contact, and finish to avoid errors when power increases.
+    reason: The speaker directly states the racket angle should always be closed and remain consistent through the full motion.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: jTCRnIWq0lI
+      start_ms: 194800
+      end_ms: 215800
+      url: https://www.youtube.com/watch?v=jTCRnIWq0lI&t=194s
+      segment_ids:
+        - jTCRnIWq0lI:00043
+        - jTCRnIWq0lI:00044
+        - jTCRnIWq0lI:00046
+  - id: Mo-eWN8_354-concept-backhand-racket-face-angle-adjustment-reviewed
+    evidence_type: definition
+    excerpt: The backhand on backspin requires a controlled, fairly vertical or closed racket face so the ball can be brushed and driven forward without going into the net.
+    reason: The speaker repeatedly emphasizes closing or keeping the racket face fairly vertical for the backhand loop.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: Mo-eWN8_354
+      start_ms: 429933
+      end_ms: 456600
+      url: https://www.youtube.com/watch?v=Mo-eWN8_354&t=429s
+      segment_ids:
+        - Mo-eWN8_354:00089
+        - Mo-eWN8_354:00093

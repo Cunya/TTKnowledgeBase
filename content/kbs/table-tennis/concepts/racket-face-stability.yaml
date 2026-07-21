@@ -12,9 +12,10 @@ evidence_summary: >-
   is between brushing and flat hitting and says the wrist and forearm must act as one fixed unit,
   with the grip firm and the wrist locked. A useful contrast is between unstable snake-like
   contact and a unified one-piece action and says the arm and racket face must be locked and
-  stable. Together, these principles show how the topic is applied in practice while preserving
-  the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:0a973eda1a9f523c1af3b4733b0318a80d35e308d6d8691b709e6534ef220692"
+  stable. Power errors to an unstable racket face and the wrist, fingers, and racket face must not
+  rotate at impact. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:e507cfa49df8f932d4d8712f3b5cdc2a1770b0b654e3922836dd9ef5922bf964"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -85,3 +86,19 @@ evidence:
         - nukEclWHWn4:00113
         - nukEclWHWn4:00114
         - nukEclWHWn4:00115
+  - id: qsY3S06fjgA-concept-racket-face-stability-reviewed
+    evidence_type: definition
+    excerpt: Keeping the racket face and wrist stable at contact so the shot stays controlled and does not wobble open or closed.
+    reason: The transcript directly links power errors to an unstable racket face and says the wrist, fingers, and racket face must not rotate at impact.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: qsY3S06fjgA
+      start_ms: 428033
+      end_ms: 446200
+      url: https://www.youtube.com/watch?v=qsY3S06fjgA&t=428s
+      segment_ids:
+        - qsY3S06fjgA:00086
+        - qsY3S06fjgA:00087
+        - qsY3S06fjgA:00088

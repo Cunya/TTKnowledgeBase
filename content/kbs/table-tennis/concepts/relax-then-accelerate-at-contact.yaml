@@ -1455,6 +1455,40 @@ evidence:
       url: https://www.youtube.com/watch?v=f7Bf-QRn-9Q&t=752s
       segment_ids:
         - f7Bf-QRn-9Q:00161
+  - id: QrbeXVhiLKg-concept-relax-then-explode-in-serve-motion-reviewed
+    evidence_type: explanation
+    excerpt: A serve tempo pattern that begins relaxed and then accelerates explosively at contact.
+    reason: The speaker summarizes the motion as starting relaxed and then transitioning into explosive acceleration, repeated as a key cue.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: QrbeXVhiLKg
+      start_ms: 409666
+      end_ms: 426866
+      url: https://www.youtube.com/watch?v=QrbeXVhiLKg&t=409s
+      segment_ids:
+        - QrbeXVhiLKg:00090
+        - QrbeXVhiLKg:00091
+        - QrbeXVhiLKg:00092
+  - id: r75F4gsFaoQ-concept-relax-then-accelerate-at-contact-reviewed
+    evidence_type: explanation
+    excerpt: Begin the stroke relaxed, then accelerate at contact or immediately after contact instead of tightening first.
+    reason: The speaker explicitly frames the stroke sequence as relaxation first, then acceleration, then braking.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: r75F4gsFaoQ
+      start_ms: 731333
+      end_ms: 759200
+      url: https://www.youtube.com/watch?v=r75F4gsFaoQ&t=731s
+      segment_ids:
+        - r75F4gsFaoQ:00146
+        - r75F4gsFaoQ:00147
+        - r75F4gsFaoQ:00148
+        - r75F4gsFaoQ:00149
+        - r75F4gsFaoQ:00150
 relations:
   - relation_type: used_with
     target_concept_id: concept-forehand-loop-timing

@@ -489,6 +489,37 @@ evidence:
         - Mpfr1981UiQ:00226
         - Mpfr1981UiQ:00228
         - Mpfr1981UiQ:00229
+  - id: jTCRnIWq0lI-concept-backhand-rip-reviewed
+    evidence_type: definition
+    excerpt: A compact backhand topspin-style attack against topspin balls, distinct from a backhand drive and designed to generate friction with a mostly forward force.
+    reason: The speaker explicitly names and defines the backhand rip as the topic and contrasts it with the backhand drive and loop.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: jTCRnIWq0lI
+      start_ms: 16133
+      end_ms: 41500
+      url: https://www.youtube.com/watch?v=jTCRnIWq0lI&t=16s
+      segment_ids:
+        - jTCRnIWq0lI:00004
+        - jTCRnIWq0lI:00005
+        - jTCRnIWq0lI:00009
+  - id: qoK510cwjes-concept-backhand-rip-reviewed
+    evidence_type: example
+    excerpt: A compact backhand attacking return that can be adapted into a drive or rip depending on serve quality and trajectory.
+    reason: The speaker explicitly names backhand rip and says to lower the racket and execute a drive or rip.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: qoK510cwjes
+      start_ms: 396700
+      end_ms: 419166
+      url: https://www.youtube.com/watch?v=qoK510cwjes&t=396s
+      segment_ids:
+        - qoK510cwjes:00086
+        - qoK510cwjes:00090
 relations:
   - relation_type: variation_of
     target_concept_id: concept-backhand-loop
