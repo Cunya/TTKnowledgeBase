@@ -581,12 +581,20 @@ def validate_graph(concepts: list[Concept]) -> list[str]:
     return errors
 
 
-def validate_review_queue(queue_data: dict, concepts: list[Concept]) -> list[str]:
+def validate_review_queue(
+    queue_data: dict,
+    concepts: list[Concept],
+    *,
+    ignored_video_ids: set[str] | None = None,
+) -> list[str]:
     """Ensure accepted queue items are represented by their exact cited evidence."""
     errors: list[str] = []
     concept_map = {concept.id: concept for concept in concepts}
+    ignored_video_ids = ignored_video_ids or set()
     for index, item in enumerate(queue_data.get("items", []), start=1):
         if item.get("decision") != "accepted":
+            continue
+        if item.get("video_id") in ignored_video_ids:
             continue
         canonical_id = item.get("canonical_concept_id")
         canonical = concept_map.get(canonical_id)

@@ -59,6 +59,7 @@ This is an alternate input, not a replacement for the normal caption-first path.
 
 - Added `transcript_origin` to normalized transcript metadata with an explicit origin enum (`supplied`, `youtube_manual`, `youtube_generated`, `local_asr`) so local ASR is distinguishable from subtitles downloaded from YouTube.
 - The smoke test records ASR model, language, source hashes, retained-media paths, and provenance in a private per-video manifest. Review-state enforcement and caption comparison remain later phases.
+- ASR normalized videos are isolated under `data/normalized/<kb>/asr/`; the ordinary caption-backed normalized cache is never overwritten.
 - Add an explicit route rather than overloading the current caption fallback, for example:
 
   ```powershell

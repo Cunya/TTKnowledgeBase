@@ -312,7 +312,9 @@ def transcribe_authorized_audio_file(
         )
     from faster_whisper import WhisperModel
 
-    model = WhisperModel(options.whisper_model, device="auto", compute_type="int8")
+    # Keep the smoke test portable on machines without the CUDA runtime. A
+    # later benchmark can add an explicit device/profile choice.
+    model = WhisperModel(options.whisper_model, device="cpu", compute_type="int8")
     generated, info = model.transcribe(str(audio_path), language=language)
     segments = []
     for index, item in enumerate(generated):

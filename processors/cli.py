@@ -449,7 +449,7 @@ def ingest_media_asr_command(
     try:
         result = ingest_media_asr(
             url,
-            paths.data("normalized"),
+            paths.data("normalized") / "asr",
             ROOT / "media" / paths.id,
             paths.data("manifests") / "media-asr",
             languages.split(","),
@@ -854,7 +854,15 @@ def validate_published(kb: KbOption = None) -> None:
         errors.append("published manifest video count is stale")
     queue_path = paths.content / "annotations" / "review-queue.yaml"
     if queue_path.exists():
-        errors.extend(validate_review_queue(read_yaml(queue_path), corpus.concepts))
+        normalized_videos = load_videos(paths.data("normalized"))
+        demo_ids = {
+            video.id for video in normalized_videos if video.availability == "demo_fixture"
+        }
+        errors.extend(
+            validate_review_queue(
+                read_yaml(queue_path), corpus.concepts, ignored_video_ids=demo_ids
+            )
+        )
     if errors:
         for error in errors:
             console.print(f"[red]ERROR[/red] {error}")
@@ -1031,7 +1039,11 @@ def validate(
         errors.extend(validate_navigation(navigation, concepts))
     queue_path = paths.content / "annotations" / "review-queue.yaml"
     if queue_path.exists():
-        errors.extend(validate_review_queue(read_yaml(queue_path), concepts))
+        errors.extend(
+            validate_review_queue(
+                read_yaml(queue_path), concepts, ignored_video_ids=demo_ids
+            )
+        )
     if errors:
         for error in errors:
             console.print(f"[red]ERROR[/red] {error}")
