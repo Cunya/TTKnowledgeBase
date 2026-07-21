@@ -8,9 +8,13 @@ short_definition: Stroke quality depends on separating upper-arm and forearm fun
 evidence_summary: >-
   Forehand/backhand stroke mechanics with independent arm segments brings together several
   connected ideas. Upper arm and forearm must work independently to preserve power and trajectory
-  control. Together, these principles show how the topic is applied in practice while preserving
-  the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:79f8b0815597a45b8443cb402116de7188fcd2679cf3af7adc7544f0efc8b340"
+  control. Forehand and backhand mechanics and stresses that the backhand needs forward extension
+  and committed body-arm coordination. Elbow, forearm, and body rotation roles and criticizes
+  treating the arm as one unstable unit. Using the upper arm is the problem and that the whole arm
+  moving together removes power and speed, implying separated segment roles. Together, these
+  principles show how the topic is applied in practice while preserving the relevant distinctions
+  and constraints.
+evidence_summary_source_hash: "sha256:6b71a9034ede7850819d3c34f1df0d66ca69ad2f5bb8fa1d54aa101b7f70919c"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -44,3 +48,52 @@ evidence:
         - lXTZ5lpaWXE:00015
         - lXTZ5lpaWXE:00016
         - lXTZ5lpaWXE:00017
+  - id: hDpdmRuaLMY-concept-backhand-stroke-mechanics-with-independent-arm-segments-reviewed
+    evidence_type: explanation
+    excerpt: Stroke quality depends on coordinating arm segments independently rather than moving the arm as one rigid unit, especially on the backhand where forward commitment is critical.
+    reason: The speaker contrasts forehand and backhand mechanics and stresses that the backhand needs forward extension and committed body-arm coordination.
+    confidence: 0.87
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: hDpdmRuaLMY
+      start_ms: 967700
+      end_ms: 996666
+      url: https://www.youtube.com/watch?v=hDpdmRuaLMY&t=967s
+      segment_ids:
+        - hDpdmRuaLMY:00191
+        - hDpdmRuaLMY:00192
+        - hDpdmRuaLMY:00193
+        - hDpdmRuaLMY:00194
+        - hDpdmRuaLMY:00195
+        - hDpdmRuaLMY:00197
+  - id: Xt5RyN3qkSA-concept-forehand-backhand-stroke-mechanics-with-independent-arm-segments-reviewed
+    evidence_type: explanation
+    excerpt: Separating upper-arm and forearm roles so the forearm can accelerate while the rest of the framework stays controlled.
+    reason: The speaker distinguishes elbow, forearm, and body rotation roles and criticizes treating the arm as one unstable unit.
+    confidence: 0.87
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Xt5RyN3qkSA
+      start_ms: 624800
+      end_ms: 638900
+      url: https://www.youtube.com/watch?v=Xt5RyN3qkSA&t=624s
+      segment_ids:
+        - Xt5RyN3qkSA:00125
+        - Xt5RyN3qkSA:00126
+  - id: HYdN-7CIYww-concept-forehand-backhand-stroke-mechanics-with-independent-arm-segments-reviewed
+    evidence_type: explanation
+    excerpt: The upper arm and forearm should not act as a single rigid unit; separating their roles improves power and trajectory control.
+    reason: The speaker says using the upper arm is the problem and that the whole arm moving together removes power and speed, implying separated segment roles.
+    confidence: 0.86
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: HYdN-7CIYww
+      start_ms: 822566
+      end_ms: 831166
+      url: https://www.youtube.com/watch?v=HYdN-7CIYww&t=822s
+      segment_ids:
+        - HYdN-7CIYww:00165
+        - HYdN-7CIYww:00166

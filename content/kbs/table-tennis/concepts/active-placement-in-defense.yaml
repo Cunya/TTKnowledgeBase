@@ -7,10 +7,13 @@ aliases:
 short_definition: Using placement proactively on defense to make the opponent uncomfortable rather than just returning the ball.
 evidence_summary: >-
   Active placement in defense brings together several connected ideas. Good placement as an active
-  strategy and blocking to the middle or wide corners to create difficulty. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:c6a476bd03ba911c455c72364f730d87407d4d60495897dd8da7f82bc0e960dc"
+  strategy and blocking to the middle or wide corners to create difficulty. The side-cut
+  neutralizes the serve and that aiming middle or backhand is safe because the purpose of receive
+  is to control the opponent. Placement is repeatedly called out as a key stage and then specified
+  as short backhand corner, fast long to the backhand, short middle, and serving from the middle.
+  Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:dd2ee4361d47fb70185cf56ebbc67e9e2f5406738fa45d01020f603700f5eeb2"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -41,3 +44,32 @@ evidence:
       segment_ids:
         - Mpfr1981UiQ:00092
         - Mpfr1981UiQ:00094
+  - id: _TIBQOXT3cw-concept-receive-safety-through-placement-reviewed
+    evidence_type: explanation
+    excerpt: A receive principle that prioritizes safe placement to the middle or backhand side to reduce attack opportunities and control the opponent.
+    reason: The speaker says the side-cut neutralizes the serve and that aiming middle or backhand is safe because the purpose of receive is to control the opponent.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: _TIBQOXT3cw
+      start_ms: 42600
+      end_ms: 47900
+      url: https://www.youtube.com/watch?v=_TIBQOXT3cw&t=42s
+      segment_ids:
+        - _TIBQOXT3cw:00008
+  - id: xWE01GQepLE-concept-serve-placement-reviewed
+    evidence_type: definition
+    excerpt: Serve effectiveness depends heavily on placement, including first-bounce control, short placements, and targeting specific zones like the backhand corner or middle.
+    reason: Placement is repeatedly called out as a key stage and then specified as short backhand corner, fast long to the backhand, short middle, and serving from the middle.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: xWE01GQepLE
+      start_ms: 927766
+      end_ms: 939100
+      url: https://www.youtube.com/watch?v=xWE01GQepLE&t=927s
+      segment_ids:
+        - xWE01GQepLE:00197
+        - xWE01GQepLE:00198

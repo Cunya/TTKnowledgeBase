@@ -9,9 +9,13 @@ short_definition: In push receive, continue the forearm through contact instead 
 evidence_summary: >-
   Forearm follow-through in push receive brings together several connected ideas. Errors to the
   forearm stopping and the fix is to follow through with the forearm. A spin phase followed by a
-  forward push with the forearm, and not to cut the motion short. Together, these principles show
-  how the topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:064756f982098c69d5c5b20871e9c53513d2737ba58ec32ac3c6303ca969a854"
+  forward push with the forearm, and not to cut the motion short. Friction to fingers/wrist and
+  acceleration to the forearm, then says to drive forward and down and stop when the forearm
+  points at the table. A useful contrast is between a short jab and a longer push that uses the
+  forearm to guide the ball and keep the arc alive. To let the forearm follow through to get spin.
+  Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:6884badcd757591febff8f5a025d996105f54cc546d0d28279a277d6b6c782d6"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -72,3 +76,48 @@ evidence:
         - w25weWSp_Zo:00088
         - w25weWSp_Zo:00089
         - w25weWSp_Zo:00090
+  - id: rf-9lmjigbs-concept-forearm-follow-through-in-push-receive-reviewed
+    evidence_type: explanation
+    excerpt: In push receive, the forearm should continue through the ball and stop in a controlled end position rather than cutting the motion short or adding a backswing.
+    reason: The speaker assigns friction to fingers/wrist and acceleration to the forearm, then says to drive forward and down and stop when the forearm points at the table.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: rf-9lmjigbs
+      start_ms: 716600
+      end_ms: 737966
+      url: https://www.youtube.com/watch?v=rf-9lmjigbs&t=716s
+      segment_ids:
+        - rf-9lmjigbs:00142
+        - rf-9lmjigbs:00144
+        - rf-9lmjigbs:00146
+  - id: QD9mHcPrHSU-concept-forearm-follow-through-in-push-receive-reviewed
+    evidence_type: explanation
+    excerpt: On long pushes or push-like receives, extend the forearm forward so the stroke continues through contact instead of stopping at the ball.
+    reason: The speaker contrasts a short jab with a longer push that uses the forearm to guide the ball and keep the arc alive.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: QD9mHcPrHSU
+      start_ms: 133400
+      end_ms: 159566
+      url: https://www.youtube.com/watch?v=QD9mHcPrHSU&t=133s
+      segment_ids:
+        - QD9mHcPrHSU:00026
+        - QD9mHcPrHSU:00029
+  - id: jFuVRHkNWg4-concept-forearm-follow-through-in-push-receive-reviewed
+    evidence_type: explanation
+    excerpt: The forearm should continue through contact rather than stopping abruptly, helping produce spin and control in the receive and serve motion.
+    reason: The speaker explicitly says to let the forearm follow through to get spin.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: jFuVRHkNWg4
+      start_ms: 100633
+      end_ms: 107666
+      url: https://www.youtube.com/watch?v=jFuVRHkNWg4&t=100s
+      segment_ids:
+        - jFuVRHkNWg4:00021

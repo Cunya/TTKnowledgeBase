@@ -10,17 +10,17 @@ evidence_summary: >-
   Generate spin with fingers, wrist, and forearm brings together several connected ideas. Friction
   to the fingers and wrist and acceleration to the forearm, then repeats that this creates strong
   spin and control. Fingers are especially important, that high-level players use fingers to
-  control final friction, and that without finger action the loop is empty. Wrist-centered
-  rotation, says to add friction, and notes wrist-as-axis slows the shot and hurts precision.
-  Fingers apply force first and that the fingers must actively accelerate the racket. The loop
-  drive is powered by specific fingers and that gripping should only happen at the end of the
-  follow-through. Fingers start the spin, the arm/body supply power, and the wrist should not be
-  the main driver of spin production. They say friction is being generated with the arm and should
-  instead come from fingers and wrist. These segments explicitly separate arm acceleration from
-  finger acceleration and fingers leading racket-face rotation while the forearm and arm drive the
-  swing. Additional points reinforce the same theme. Together, these principles show how the topic
-  is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:55e8a8900ae7d0746925e8167ad99a818918af2eec61162fc1a4c513839f07c0"
+  control final friction, and that without finger action the loop is empty. Wrist flick and finger
+  friction create the serve spin, and to use fingers and wrists rather than the arm. Finger snap,
+  relaxed grip, and rapid acceleration at contact to massive spin. The loop drive is powered by
+  specific fingers and that gripping should only happen at the end of the follow-through. Fingers
+  start the spin, the arm/body supply power, and the wrist should not be the main driver of spin
+  production. Finger pressure, thumb-index coordination, and forearm motion generate the push's
+  power and spin. A useful contrast is between full-body action and a contact-focused finger snap
+  and says the force comes from friction, not bigger arm motion. Additional points reinforce the
+  same theme. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:51068fa95386c2a8d679809d06effc0dcd1647e0f514095689ccd4ebff7193f8"
 evidence_summary_generator: "deterministic"
 concept_type: technique
 facets:
@@ -310,3 +310,51 @@ evidence:
         - xLgMzYNRwa8:00010
         - xLgMzYNRwa8:00013
         - xLgMzYNRwa8:00014
+  - id: ps9aOE0YKE8-concept-generate-spin-with-fingers-wrist-and-forearm-reviewed
+    evidence_type: explanation
+    excerpt: Using small, concentrated hand action at contact to generate the needed friction or spin instead of relying on large whole-arm swings.
+    reason: The speaker contrasts full-body action with a contact-focused finger snap and says the force comes from friction, not bigger arm motion.
+    confidence: 0.92
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ps9aOE0YKE8
+      start_ms: 1001133
+      end_ms: 1023233
+      url: https://www.youtube.com/watch?v=ps9aOE0YKE8&t=1001s
+      segment_ids:
+        - ps9aOE0YKE8:00217
+        - ps9aOE0YKE8:00218
+        - ps9aOE0YKE8:00221
+  - id: D02EFJijJiU-concept-generate-spin-with-fingers-wrist-and-forearm-reviewed
+    evidence_type: definition
+    excerpt: Use the fingers and wrist to create friction, with the forearm supplying acceleration and forward drive, rather than relying on an upward brushing motion.
+    reason: The speaker explicitly says to use the index and middle fingers to accelerate forward, not upward, and to drive through the ball with forward friction using a slight wrist adjustment.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: D02EFJijJiU
+      start_ms: 452133
+      end_ms: 476033
+      url: https://www.youtube.com/watch?v=D02EFJijJiU&t=452s
+      segment_ids:
+        - D02EFJijJiU:00101
+        - D02EFJijJiU:00102
+        - D02EFJijJiU:00105
+  - id: LWx10iPhjxU-concept-generate-spin-with-fingers-wrist-and-forearm-reviewed
+    evidence_type: explanation
+    excerpt: A spin-generation sequence where the fingers initiate force, the wrist snaps or brakes to lock in spin, and the forearm adds an explosive follow-through.
+    reason: The speaker states the sequence is fingers first, then wrist snapping/braking, then an explosive forearm snap to create heavier spin and power.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: LWx10iPhjxU
+      start_ms: 562766
+      end_ms: 590500
+      url: https://www.youtube.com/watch?v=LWx10iPhjxU&t=562s
+      segment_ids:
+        - LWx10iPhjxU:00120
+        - LWx10iPhjxU:00121
+        - LWx10iPhjxU:00125

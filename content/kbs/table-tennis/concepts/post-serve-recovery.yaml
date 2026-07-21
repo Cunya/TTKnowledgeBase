@@ -1149,6 +1149,68 @@ evidence:
         - lXTZ5lpaWXE:00133
         - lXTZ5lpaWXE:00134
         - lXTZ5lpaWXE:00135
+  - id: rOMRGvlgAAU-concept-post-serve-recovery-reviewed
+    evidence_type: explanation
+    excerpt: Resetting position and footing immediately after serving so the next ball can be played from a stable base.
+    reason: The speaker emphasizes recovering quickly after the serve, establishing footing, and returning to a standard backhand position.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: rOMRGvlgAAU
+      start_ms: 90200
+      end_ms: 108900
+      url: https://www.youtube.com/watch?v=rOMRGvlgAAU&t=90s
+      segment_ids:
+        - rOMRGvlgAAU:00019
+        - rOMRGvlgAAU:00022
+  - id: evEaxXmwJ2E-candidate-outside-contact-and-inside-follow-through-reviewed
+    evidence_type: explanation
+    excerpt: Contacting the ball outside the table and following through into the table area to preserve legality while extending the motion.
+    reason: The speaker explicitly says contact should occur outside the table and force should then continue inside the table through follow-through.
+    confidence: 0.91
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: evEaxXmwJ2E
+      start_ms: 752633
+      end_ms: 777366
+      url: https://www.youtube.com/watch?v=evEaxXmwJ2E&t=752s
+      segment_ids:
+        - evEaxXmwJ2E:00151
+        - evEaxXmwJ2E:00152
+        - evEaxXmwJ2E:00154
+  - id: a9wtW1BV-6M-concept-post-serve-recovery-reviewed
+    evidence_type: explanation
+    excerpt: Preparing for the next ball immediately after serving, because the hook serve can produce a faster, tricky return.
+    reason: The speaker notes the hook serve often returns faster and trickier, so recovery and the next shot matter; later they describe serving and then moving to the middle to block the return.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: a9wtW1BV-6M
+      start_ms: 61966
+      end_ms: 76833
+      url: https://www.youtube.com/watch?v=a9wtW1BV-6M&t=61s
+      segment_ids:
+        - a9wtW1BV-6M:00012
+        - a9wtW1BV-6M:00013
+        - a9wtW1BV-6M:00014
+  - id: WuWV6MlZQ_Q-concept-post-serve-recovery-reviewed
+    evidence_type: definition
+    excerpt: Resetting the body and racket position immediately after serving so you can attack or cover the next ball.
+    reason: The speaker explicitly introduces recovery after the serve and says you must reset to a neutral or offensive ready stance.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: WuWV6MlZQ_Q
+      start_ms: 115133
+      end_ms: 138433
+      url: https://www.youtube.com/watch?v=WuWV6MlZQ_Q&t=115s
+      segment_ids:
+        - WuWV6MlZQ_Q:00022
+        - WuWV6MlZQ_Q:00026
 relations:
   - relation_type: used_with
     target_concept_id: concept-short-serve-third-ball-attack

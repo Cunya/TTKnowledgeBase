@@ -9,10 +9,12 @@ evidence_summary: >-
   Deceptive follow-through brings together several connected ideas. To add a deceptive
   follow-through after the core motion and later describes dropping the racket downward to
   disguise the actual direction of force. A useful contrast is between a relaxed follow-through
-  and a sharp stop and explicitly defines braking as stopping the motion abruptly after contact.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:a21b465c7de531973984cb45cdb0c1f9bcc14aacfdc67b927da2dadad537b2c4"
+  and a sharp stop and explicitly defines braking as stopping the motion abruptly after contact. A
+  deceptive follow-through as the visible part after the real work is done at contact. A deceptive
+  follow-through that changes how the serve looks while preserving the actual spin-producing
+  action. Together, these principles show how the topic is applied in practice while preserving
+  the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:c9b64152dc9707e0e5c932f84fa9cc739a78320ccb6a51c4d36968dce1177f53"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -61,3 +63,49 @@ evidence:
         - phTj82vlVqs:00054
         - phTj82vlVqs:00056
         - phTj82vlVqs:00058
+  - id: jFuVRHkNWg4-concept-deceptive-follow-through-reviewed
+    evidence_type: explanation
+    excerpt: The visible follow-through is used to hide the true contact action, especially by making topspin and backspin serves finish with similar motion.
+    reason: The speaker explicitly defines a deceptive follow-through as the visible part after the real work is done at contact.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: jFuVRHkNWg4
+      start_ms: 505266
+      end_ms: 534300
+      url: https://www.youtube.com/watch?v=jFuVRHkNWg4&t=505s
+      segment_ids:
+        - jFuVRHkNWg4:00095
+        - jFuVRHkNWg4:00096
+        - jFuVRHkNWg4:00099
+  - id: evEaxXmwJ2E-candidate-deceptive-follow-through-on-serve-reviewed
+    evidence_type: explanation
+    excerpt: A follow-through that disguises the true contact mechanics by making the motion appear different from the actual spin-producing action.
+    reason: The speaker directly describes a deceptive follow-through that changes how the serve looks while preserving the actual spin-producing action.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: evEaxXmwJ2E
+      start_ms: 371266
+      end_ms: 383866
+      url: https://www.youtube.com/watch?v=evEaxXmwJ2E&t=371s
+      segment_ids:
+        - evEaxXmwJ2E:00076
+        - evEaxXmwJ2E:00077
+  - id: pQcxGOu4wEE-concept-deceptive-follow-through-reviewed
+    evidence_type: explanation
+    excerpt: A follow-through that continues downward after the brushing action to disguise the true topspin-producing force.
+    reason: The speaker explicitly says the brushing action is followed by a downward follow-through as a deceptive motion, and later emphasizes the follow-through direction.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: pQcxGOu4wEE
+      start_ms: 514300
+      end_ms: 538433
+      url: https://www.youtube.com/watch?v=pQcxGOu4wEE&t=514s
+      segment_ids:
+        - pQcxGOu4wEE:00107
+        - pQcxGOu4wEE:00112

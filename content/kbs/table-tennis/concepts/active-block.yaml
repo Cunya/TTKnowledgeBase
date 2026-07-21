@@ -241,6 +241,55 @@ evidence:
       url: https://www.youtube.com/watch?v=q70a9LCojco&t=818s
       segment_ids:
         - q70a9LCojco:00178
+  - id: rR9HWla28Sc-concept-active-block-reviewed
+    evidence_type: definition
+    excerpt: A proactive blocking action that meets the ball early with firmness and a short, compact motion rather than passive touch.
+    reason: The speaker defines the correct response to power and spinny loops as blocking or punching with a compact motion, and contrasts it with slower, passive contact.
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: rR9HWla28Sc
+      start_ms: 340866
+      end_ms: 353500
+      url: https://www.youtube.com/watch?v=rR9HWla28Sc&t=340s
+      segment_ids:
+        - rR9HWla28Sc:00071
+        - rR9HWla28Sc:00072
+        - rR9HWla28Sc:00073
+  - id: qr632K778Cc-concept-punch-block-reviewed
+    evidence_type: definition
+    excerpt: A compact defensive shot against spinny loops that is hit with a firm wrist and racket angle, but is less stable than a counter-drive.
+    reason: The speaker names punch-block repeatedly, explains it as one of the defensive types, and describes its mechanics and stability.
+    confidence: 0.92
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: qr632K778Cc
+      start_ms: 591433
+      end_ms: 604466
+      url: https://www.youtube.com/watch?v=qr632K778Cc&t=591s
+      segment_ids:
+        - qr632K778Cc:00123
+        - qr632K778Cc:00124
+        - qr632K778Cc:00125
+        - qr632K778Cc:00126
+  - id: qr632K778Cc-concept-passive-block-reviewed
+    evidence_type: definition
+    excerpt: A defensive block that absorbs and redirects the opponent's pace without generating much own power.
+    reason: The speaker directly defines passive block and explains that it absorbs and redirects energy rather than generating power.
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: qr632K778Cc
+      start_ms: 57733
+      end_ms: 78000
+      url: https://www.youtube.com/watch?v=qr632K778Cc&t=57s
+      segment_ids:
+        - qr632K778Cc:00013
+        - qr632K778Cc:00015
+        - qr632K778Cc:00016
 relations:
   - relation_type: variation_of
     target_concept_id: concept-block-trajectory-and-placement

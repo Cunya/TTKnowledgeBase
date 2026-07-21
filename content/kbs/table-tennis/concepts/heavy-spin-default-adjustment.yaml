@@ -14,9 +14,10 @@ evidence_summary: >-
   combined force should not exceed a threshold, so you must reduce your own pace. The ball is
   often more spinny than expected and recommends increasing friction and spin to keep the ball on
   the table. To treat every serve as maximum spin and handle medium-to-heavy side-underspin the
-  same way. Together, these principles show how the topic is applied in practice while preserving
-  the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:c78451e58e913008792559e176093c91cd8970c62516fc19f7295340cfcedc8c"
+  same way. Spin variation as a core problem and the solution is to counter with your own spin
+  against any incoming spin. Together, these principles show how the topic is applied in practice
+  while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:1c971ccbbb50bb124fbe470e0cc4842e3899fbef6c264315abe2b16e35564b54"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -131,3 +132,19 @@ evidence:
       segment_ids:
         - R_MLRGrJlsM:00004
         - R_MLRGrJlsM:00009
+  - id: pF8kIVSRExg-concept-heavy-spin-default-adjustment-reviewed
+    evidence_type: explanation
+    excerpt: A receiving mindset that assumes incoming spin is significant and responds by adding your own brushing action instead of passive blocking.
+    reason: The speaker frames spin variation as a core problem and says the solution is to counter with your own spin against any incoming spin.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: pF8kIVSRExg
+      start_ms: 313300
+      end_ms: 333900
+      url: https://www.youtube.com/watch?v=pF8kIVSRExg&t=313s
+      segment_ids:
+        - pF8kIVSRExg:00063
+        - pF8kIVSRExg:00065
+        - pF8kIVSRExg:00066

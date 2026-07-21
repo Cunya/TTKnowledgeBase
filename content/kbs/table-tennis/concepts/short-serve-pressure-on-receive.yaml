@@ -8,9 +8,13 @@ aliases:
 short_definition: A short serve is valuable because it constrains the receiver's options, making aggressive pushes, flicks, and banana flicks difficult.
 evidence_summary: >-
   Short serve pressure on receive brings together several connected ideas. Directly states the
-  short-serve pressure claim and the restricted receive options. Together, these principles show
-  how the topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:6ffb9041eaa4c0c7649073072a53d0547f3eebeaf37d6bfbeecedd3dfd620d73"
+  short-serve pressure claim and the restricted receive options. The key to a good short serve is
+  keeping trajectory low, because a high arc makes flicks and long pushes easy. Certain
+  kicker/hook serves make pushing impossible and flicking from a distance unreliable, creating
+  pressure on receive. This serve is difficult to flick and forces the opponent into weak or
+  confused returns. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:bec4356888453524059aacb26cf29ab4bc761dbbf986a6d2746eb4a9021d06f7"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -42,3 +46,69 @@ evidence:
       url: https://www.youtube.com/watch?v=256zUqx30Zo&t=0s
       segment_ids:
         - 256zUqx30Zo:00000
+  - id: rf-9lmjigbs-concept-short-serve-pressure-on-receive-reviewed
+    evidence_type: explanation
+    excerpt: A short serve is effective when its low trajectory forces awkward, low-quality receiving options.
+    reason: The speaker says the key to a good short serve is keeping trajectory low, because a high arc makes flicks and long pushes easy.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: rf-9lmjigbs
+      start_ms: 148133
+      end_ms: 177000
+      url: https://www.youtube.com/watch?v=rf-9lmjigbs&t=148s
+      segment_ids:
+        - rf-9lmjigbs:00028
+        - rf-9lmjigbs:00030
+        - rf-9lmjigbs:00032
+        - rf-9lmjigbs:00033
+        - rf-9lmjigbs:00034
+  - id: QKc7uSJo9mM-concept-short-serve-pressure-on-receive-reviewed
+    evidence_type: explanation
+    excerpt: A short serve can pressure the receiver by making both push and flick options difficult, especially when it kicks up or has deceptive topspin.
+    reason: The speaker explains that certain kicker/hook serves make pushing impossible and flicking from a distance unreliable, creating pressure on receive.
+    confidence: 0.88
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: QKc7uSJo9mM
+      start_ms: 677233
+      end_ms: 700133
+      url: https://www.youtube.com/watch?v=QKc7uSJo9mM&t=677s
+      segment_ids:
+        - QKc7uSJo9mM:00125
+        - QKc7uSJo9mM:00126
+        - QKc7uSJo9mM:00127
+  - id: zvQxT-Dkrkg-concept-short-serve-pressure-on-receive-reviewed
+    evidence_type: example
+    excerpt: A well-executed short serve that pressures the receiver by making aggressive push or flick returns difficult.
+    reason: The speaker says this serve is difficult to flick and forces the opponent into weak or confused returns.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: zvQxT-Dkrkg
+      start_ms: 483533
+      end_ms: 498433
+      url: https://www.youtube.com/watch?v=zvQxT-Dkrkg&t=483s
+      segment_ids:
+        - zvQxT-Dkrkg:00100
+        - zvQxT-Dkrkg:00101
+        - zvQxT-Dkrkg:00102
+        - zvQxT-Dkrkg:00103
+  - id: BpKGpKwopDE-concept-short-serve-reviewed
+    evidence_type: definition
+    excerpt: A short serve is presented as easier to execute, slower, and more readable, so it requires deception.
+    reason: The transcript states the short serve is easier to execute, travels slower, and is easier for the opponent to read.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: BpKGpKwopDE
+      start_ms: 33
+      end_ms: 11666
+      url: https://www.youtube.com/watch?v=BpKGpKwopDE&t=0s
+      segment_ids:
+        - BpKGpKwopDE:00000
+        - BpKGpKwopDE:00001

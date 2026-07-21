@@ -213,6 +213,36 @@ evidence:
         - 0hmF0UB_Oqc:00001
         - 0hmF0UB_Oqc:00002
         - 0hmF0UB_Oqc:00003
+  - id: _sHbPePmV9k-concept-serve-planning-reviewed
+    evidence_type: explanation
+    excerpt: A staged approach to improving serves by first controlling bounce location, then building the mechanical framework, and only after that adding spin and body integration.
+    reason: 'The transcript lays out a clear progression for serving practice: first bounce location, then overall mechanical framework, then spin and explosive contact.'
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: _sHbPePmV9k
+      start_ms: 515800
+      end_ms: 539266
+      url: https://www.youtube.com/watch?v=_sHbPePmV9k&t=515s
+      segment_ids:
+        - _sHbPePmV9k:00107
+        - _sHbPePmV9k:00109
+        - _sHbPePmV9k:00111
+  - id: xWE01GQepLE-concept-serve-planning-reviewed
+    evidence_type: explanation
+    excerpt: Serve decisions should be planned strategically, including which placements to master and when to use deceptive serves in important moments.
+    reason: The speaker lays out staged learning, recommends saving deceptive serves for key points, and stresses planning with placements.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: xWE01GQepLE
+      start_ms: 1098400
+      end_ms: 1103866
+      url: https://www.youtube.com/watch?v=xWE01GQepLE&t=1098s
+      segment_ids:
+        - xWE01GQepLE:00234
 relations:
   - relation_type: used_with
     target_concept_id: concept-serve-selection-and-follow-up

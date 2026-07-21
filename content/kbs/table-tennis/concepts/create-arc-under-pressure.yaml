@@ -9,17 +9,16 @@ short_definition: Making a stable upward-curving ball path when receiving diffic
 evidence_summary: >-
   Create arc under pressure brings together several connected ideas. The trajectory should flatten
   after the bounce and that controlling the arc gives high consistency. The arc appears even when
-  there is no spin, and later that adding friction gives both power and a proper arc. Creating or
-  extending an arc, especially on low balls and spinning balls, as the key to avoiding errors. The
-  player needs to create the arc themselves, linking the concept to ball clearance and the
-  friction that brings the ball back down. Stabilizing the racket face and using the forearm to
-  control the arc so the ball does not go out. Where the arc would come from if the swing is only
-  a short forward drive and otherwise the ball is hit flat. Backspin requires an outer arc and not
+  there is no spin, and later that adding friction gives both power and a proper arc. Against fast
+  balls you should just create the arc and brush the ball, not add power. Stabilizing the racket
+  face and using the forearm to control the arc so the ball does not go out. You must make an arc
+  or the ball will pass by and the action will be futile. Backspin requires an outer arc and not
   to push at the ball. Most receives require a controlled arc and that heavy friction lets you
-  create your own trajectory. Additional points reinforce the same theme. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:d6e5628576e6ba15133b28aaf4d20a92837a954951e8c6fd15768899feafb9e8"
+  create your own trajectory. Fingers and wrist provide the fine arc first, then the forearm and
+  body are added later, and explicitly gives the force sequence from fingers onward. Additional
+  points reinforce the same theme. Together, these principles show how the topic is applied in
+  practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:e0c6c516d38484b5551f313d73588b0995527261d30bba8200f01298a0c34c71"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -230,3 +229,36 @@ evidence:
       segment_ids:
         - VYMqgnrDAhk:00088
         - VYMqgnrDAhk:00089
+  - id: y7Xd49MgdbQ-concept-safe-arc-first-in-looping-reviewed
+    evidence_type: definition
+    excerpt: In looping, the first priority is to create a safe arc over the net before trying to add additional power or variation.
+    reason: The speaker repeatedly says the priority is to create a safe arc over the net, especially under pressure, before other adjustments matter.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: y7Xd49MgdbQ
+      start_ms: 879933
+      end_ms: 900000
+      url: https://www.youtube.com/watch?v=y7Xd49MgdbQ&t=879s
+      segment_ids:
+        - y7Xd49MgdbQ:00174
+        - y7Xd49MgdbQ:00175
+        - y7Xd49MgdbQ:00176
+        - y7Xd49MgdbQ:00177
+  - id: iXzVADGsLLU-cand-4-reviewed
+    evidence_type: explanation
+    excerpt: The stroke should begin with the fingers creating the initial arc, then pass through the wrist and forearm before the body contributes more power.
+    reason: The speaker states that fingers and wrist provide the fine arc first, then the forearm and body are added later, and explicitly gives the force sequence from fingers onward.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: iXzVADGsLLU
+      start_ms: 558400
+      end_ms: 569766
+      url: https://www.youtube.com/watch?v=iXzVADGsLLU&t=558s
+      segment_ids:
+        - iXzVADGsLLU:00114
+        - iXzVADGsLLU:00115
+        - iXzVADGsLLU:00116

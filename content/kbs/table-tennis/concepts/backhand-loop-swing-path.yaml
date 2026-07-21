@@ -401,6 +401,74 @@ evidence:
       segment_ids:
         - jTCRnIWq0lI:00100
         - jTCRnIWq0lI:00102
+  - id: CLBNvB5gemk-concept-backhand-loop-swing-path-reviewed
+    evidence_type: definition
+    excerpt: The backhand swing path created by a stable elbow and forearm rotation, producing a natural arc with the racket head.
+    reason: 'The transcript explains the mechanical framework: stable elbow, forearm rotation, and a natural arc traced by the racket head.'
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: CLBNvB5gemk
+      start_ms: 646333
+      end_ms: 665400
+      url: https://www.youtube.com/watch?v=CLBNvB5gemk&t=646s
+      segment_ids:
+        - CLBNvB5gemk:00136
+        - CLBNvB5gemk:00139
+  - id: wj87pK5547g-concept-backhand-loop-swing-path-reviewed
+    evidence_type: explanation
+    excerpt: The backhand loop should travel on a compact arc, starting slightly to the side and moving into an outside-in whipping path rather than a straight line.
+    reason: The speaker contrasts linear motion with a curved arc, says the backswing should start slightly to the side, and ties the final rotation to the whip through the ball.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: wj87pK5547g
+      start_ms: 744800
+      end_ms: 770800
+      url: https://www.youtube.com/watch?v=wj87pK5547g&t=744s
+      segment_ids:
+        - wj87pK5547g:00142
+        - wj87pK5547g:00143
+        - wj87pK5547g:00144
+        - wj87pK5547g:00145
+        - wj87pK5547g:00146
+        - wj87pK5547g:00147
+  - id: qfB1tscK4xk-concept-backhand-loop-swing-path-reviewed
+    evidence_type: explanation
+    excerpt: The backhand flick uses a curved racket path that first brushes from 5 to 10 o'clock, then drives through from 10 to 2 o'clock.
+    reason: The speaker repeatedly maps the stroke onto a 5-to-10 brushing phase and a 10-to-2 power phase.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: qfB1tscK4xk
+      start_ms: 345233
+      end_ms: 368533
+      url: https://www.youtube.com/watch?v=qfB1tscK4xk&t=345s
+      segment_ids:
+        - qfB1tscK4xk:00070
+        - qfB1tscK4xk:00072
+        - qfB1tscK4xk:00073
+  - id: Yf_uKs6cZ38-concept-backhand-loop-swing-path-reviewed
+    evidence_type: demonstration
+    excerpt: The backhand loop should start to the left side of the body and brush in a 7 o'clock to 10 o'clock path to create spin and space for rotation.
+    reason: The speaker demonstrates a left-side backswing and a 7-to-10 o'clock brushing path as the workable swing path for the backhand loop.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Yf_uKs6cZ38
+      start_ms: 214266
+      end_ms: 239766
+      url: https://www.youtube.com/watch?v=Yf_uKs6cZ38&t=214s
+      segment_ids:
+        - Yf_uKs6cZ38:00050
+        - Yf_uKs6cZ38:00051
+        - Yf_uKs6cZ38:00052
+        - Yf_uKs6cZ38:00054
+        - Yf_uKs6cZ38:00055
 relations:
   - relation_type: part_of
     target_concept_id: concept-backhand-loop

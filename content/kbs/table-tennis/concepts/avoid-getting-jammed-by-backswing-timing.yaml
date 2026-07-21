@@ -9,15 +9,18 @@ short_definition: A too-low or too-large backswing makes the ball arrive before 
 evidence_summary: >-
   Avoid getting jammed by backswing timing brings together several connected ideas. Getting jammed
   as a backswing/timing problem rather than a spin problem, especially on fast serves and backspin
-  returns. The pulling backswing problem, attributes it to shoulder and elbow movement, and
-  instructs the player to keep both controlled and aligned. Many players do not pull back enough,
-  fear getting jammed, and should practice barehanded to complete the full motion. Pulling the arm
-  early or making the backswing too big causes players to feel jammed, especially against fast
-  balls. These segments describe the mistake of waiting too long to start the backswing and it
-  leads to getting jammed. The backswing-turn-swing pattern will 'jam yourself up within two
-  shots,' directly matching the concept. Together, these principles show how the topic is applied
-  in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:83548769a228423906c91d9b3fcff9b42f3e251b982e3f2f615785b034ddcd55"
+  returns. Many players do not pull back enough, fear getting jammed, and should practice
+  barehanded to complete the full motion. Pulling the arm early or making the backswing too big
+  causes players to feel jammed, especially against fast balls. The backswing-turn-swing pattern
+  will 'jam yourself up within two shots,' directly matching the concept. Getting jammed as the
+  first common problem and directly links it to standing too close to the table. Square entry and
+  late racket drop cause jamming and that the hand should already be dropping as the foot steps
+  into position. Standing too close restricts backswing and body rotation, causes jamming, and
+  recommends maintaining about one arm's length from the table. Against excessive backswing,
+  keeping the racket too close to the body, and position as jammed. Additional points reinforce
+  the same theme. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:fa28eb6dbde8bf0c2d9efcb570de72fe73e1f68d69802861a2242bc22d90c039"
 evidence_summary_generator: "deterministic"
 concept_type: practice
 facets:
@@ -136,3 +139,103 @@ evidence:
       url: https://www.youtube.com/watch?v=U4ItRZHe_-A&t=3s
       segment_ids:
         - U4ItRZHe_-A:00001
+  - id: A56gHfnvSCc-concept-avoid-getting-jammed-by-backswing-timing-reviewed
+    evidence_type: explanation
+    excerpt: Preventing a cramped or jammed stroke by creating enough room and timing the backswing correctly.
+    reason: The transcript names getting jammed as the first common problem and directly links it to standing too close to the table.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: A56gHfnvSCc
+      start_ms: 9100
+      end_ms: 23233
+      url: https://www.youtube.com/watch?v=A56gHfnvSCc&t=9s
+      segment_ids:
+        - A56gHfnvSCc:00002
+        - A56gHfnvSCc:00003
+        - A56gHfnvSCc:00004
+  - id: bmK4umFK2Gs-concept-avoid-getting-jammed-by-backswing-timing-reviewed
+    evidence_type: explanation
+    excerpt: Do not crowd the incoming ball or position too close to a deep return, or the stroke will be cramped and ineffective.
+    reason: The transcript explicitly warns that standing too close after a sidespin-backspin serve will trap you and jam your loop.
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: bmK4umFK2Gs
+      start_ms: 169200
+      end_ms: 188166
+      url: https://www.youtube.com/watch?v=bmK4umFK2Gs&t=169s
+      segment_ids:
+        - bmK4umFK2Gs:00034
+        - bmK4umFK2Gs:00036
+        - bmK4umFK2Gs:00037
+  - id: QD9mHcPrHSU-concept-avoid-getting-jammed-by-backswing-timing-reviewed
+    evidence_type: explanation
+    excerpt: Do not delay the backswing on middle balls; if the racket drops too late, the body blocks the swing and contact becomes cramped or jammed.
+    reason: The speaker says square entry and late racket drop cause jamming and that the hand should already be dropping as the foot steps into position.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: QD9mHcPrHSU
+      start_ms: 748700
+      end_ms: 777966
+      url: https://www.youtube.com/watch?v=QD9mHcPrHSU&t=748s
+      segment_ids:
+        - QD9mHcPrHSU:00159
+        - QD9mHcPrHSU:00160
+        - QD9mHcPrHSU:00161
+        - QD9mHcPrHSU:00162
+        - QD9mHcPrHSU:00163
+  - id: y7Xd49MgdbQ-concept-backspin-loop-spacing-and-jam-prevention-reviewed
+    evidence_type: explanation
+    excerpt: Keeping enough distance from the table when looping backspin so the stroke has room for backswing, rotation, and proper arc.
+    reason: The speaker says standing too close restricts backswing and body rotation, causes jamming, and recommends maintaining about one arm's length from the table.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: y7Xd49MgdbQ
+      start_ms: 21833
+      end_ms: 48866
+      url: https://www.youtube.com/watch?v=y7Xd49MgdbQ&t=21s
+      segment_ids:
+        - y7Xd49MgdbQ:00005
+        - y7Xd49MgdbQ:00006
+        - y7Xd49MgdbQ:00007
+        - y7Xd49MgdbQ:00008
+        - y7Xd49MgdbQ:00009
+        - y7Xd49MgdbQ:00010
+  - id: wj87pK5547g-concept-avoid-getting-jammed-by-backswing-timing-reviewed
+    evidence_type: mistake
+    excerpt: If the backswing is too delayed or too large relative to the incoming ball, the backhand gets jammed and loses space.
+    reason: The speaker explicitly warns that waiting too long or using a deep backswing on the backhand will get the player jammed.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: wj87pK5547g
+      start_ms: 196433
+      end_ms: 204233
+      url: https://www.youtube.com/watch?v=wj87pK5547g&t=196s
+      segment_ids:
+        - wj87pK5547g:00038
+  - id: HYdN-7CIYww-concept-avoid-getting-jammed-by-backswing-timing-reviewed
+    evidence_type: definition
+    excerpt: Keep the backswing compact and the racket in front of the body so the stroke has space to accelerate and is not jammed.
+    reason: The speaker warns against excessive backswing, keeping the racket too close to the body, and describes that position as jammed.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: HYdN-7CIYww
+      start_ms: 277000
+      end_ms: 305900
+      url: https://www.youtube.com/watch?v=HYdN-7CIYww&t=277s
+      segment_ids:
+        - HYdN-7CIYww:00054
+        - HYdN-7CIYww:00055
+        - HYdN-7CIYww:00056
+        - HYdN-7CIYww:00059

@@ -9,10 +9,12 @@ short_definition: Interpreting the forearm's direction and sequence of movement 
 evidence_summary: >-
   Forearm motion as spin indicator brings together several connected ideas. The forearm reveals
   the true spin and that smaller finger/wrist motions are harder to see. To pay attention to the
-  forearm and judge spin by its downward, forward, or upward direction. Together, these principles
-  show how the topic is applied in practice while preserving the relevant distinctions and
-  constraints.
-evidence_summary_source_hash: "sha256:bb74f786fbef3dfc8b40c84427f7a025ef6b43cc4ba3b0e5156fa164fc9b3365"
+  forearm and judge spin by its downward, forward, or upward direction. To watch the server's
+  forearm and gives explicit down/forward/up rules for underspin, float, and topspin. A clear
+  cue-based method for reading attack direction from the contact point and forearm wrap. Together,
+  these principles show how the topic is applied in practice while preserving the relevant
+  distinctions and constraints.
+evidence_summary_source_hash: "sha256:86e8f6ba8c4e76ccfd65d8288effae07e27423b76ab5dc46ffc140d4f2b91955"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -68,3 +70,38 @@ evidence:
         - ktqZFufz2SM:00027
         - ktqZFufz2SM:00028
         - ktqZFufz2SM:00029
+  - id: ps9aOE0YKE8-concept-forearm-motion-as-spin-indicator-reviewed
+    evidence_type: explanation
+    excerpt: Using the server's forearm direction and vertical change to infer serve spin.
+    reason: The speaker says to watch the server's forearm and gives explicit down/forward/up rules for underspin, float, and topspin.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ps9aOE0YKE8
+      start_ms: 58300
+      end_ms: 87000
+      url: https://www.youtube.com/watch?v=ps9aOE0YKE8&t=58s
+      segment_ids:
+        - ps9aOE0YKE8:00014
+        - ps9aOE0YKE8:00015
+        - ps9aOE0YKE8:00016
+        - ps9aOE0YKE8:00017
+  - id: qr632K778Cc-concept-attack-cross-court-read-contact-point-reviewed
+    evidence_type: explanation
+    excerpt: Infer whether an attack will go down the line or cross-court by observing the contact point and forearm path.
+    reason: The speaker gives a clear cue-based method for reading attack direction from the contact point and forearm wrap.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: qr632K778Cc
+      start_ms: 271166
+      end_ms: 299300
+      url: https://www.youtube.com/watch?v=qr632K778Cc&t=271s
+      segment_ids:
+        - qr632K778Cc:00060
+        - qr632K778Cc:00061
+        - qr632K778Cc:00062
+        - qr632K778Cc:00063
+        - qr632K778Cc:00064

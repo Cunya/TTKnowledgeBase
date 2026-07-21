@@ -7,10 +7,12 @@ aliases:
 short_definition: The preparatory wrist position that stabilizes racket angle and supports flick power and control.
 evidence_summary: >-
   Wrist cocking for flicks brings together several connected ideas. To cock the wrist back and
-  ties it to stable racket angle, force generation, and short-ball flick execution. Together,
-  these principles show how the topic is applied in practice while preserving the relevant
-  distinctions and constraints.
-evidence_summary_source_hash: "sha256:680db45f347c0cb20cb67354c09904a01dfd42cd8a37c2a7955c766630c78ab4"
+  ties it to stable racket angle, force generation, and short-ball flick execution. The wrist
+  should be dropped and relaxed rather than forced down, and that tensing ruins spin generation.
+  The first step is to drop the wrist and then lift, with wrist-lift and forearm retraction
+  generating spin. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:5f37012ae6a04485fae9bf5f07c279a61f793d6cea2694aa500c058d6eba8f10"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -43,3 +45,35 @@ evidence:
         - nNLLuV_wY24:00017
         - nNLLuV_wY24:00018
         - nNLLuV_wY24:00020
+  - id: DfQ_yBSS_bk-concept-wrist-cocking-for-flicks-reviewed
+    evidence_type: explanation
+    excerpt: Keeping the wrist dropped, relaxed, or hooked inward to enable brushing and spin generation without forcing the hand upward.
+    reason: The speaker instructs that the wrist should be dropped and relaxed rather than forced down, and that tensing ruins spin generation.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: DfQ_yBSS_bk
+      start_ms: 132533
+      end_ms: 148600
+      url: https://www.youtube.com/watch?v=DfQ_yBSS_bk&t=132s
+      segment_ids:
+        - DfQ_yBSS_bk:00027
+        - DfQ_yBSS_bk:00028
+        - DfQ_yBSS_bk:00029
+        - DfQ_yBSS_bk:00030
+  - id: xWE01GQepLE-concept-wrist-cocking-for-flicks-reviewed
+    evidence_type: explanation
+    excerpt: For the sidespin topspin serve, the wrist is dropped or cocked before lifting upward to generate spin.
+    reason: The transcript says the first step is to drop the wrist and then lift, with wrist-lift and forearm retraction generating spin.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: xWE01GQepLE
+      start_ms: 231933
+      end_ms: 240800
+      url: https://www.youtube.com/watch?v=xWE01GQepLE&t=231s
+      segment_ids:
+        - xWE01GQepLE:00051
+        - xWE01GQepLE:00052

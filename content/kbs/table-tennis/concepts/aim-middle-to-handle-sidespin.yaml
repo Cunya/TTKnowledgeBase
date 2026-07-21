@@ -10,9 +10,13 @@ evidence_summary: >-
   Aim middle to handle sidespin brings together several connected ideas. Returning difficult
   serves to the middle, explaining that it counters sidespin's sideways kick and reduces net
   errors. Looping to the backhand goes into the net, while aiming middle lands on the table more
-  easily and avoids the strongest spin effect. Together, these principles show how the topic is
-  applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:76492f104e88b5f1bf8ed56211a0cd3ac43484d702d21ee79f389076c49323bf"
+  easily and avoids the strongest spin effect. Looping to the forehand or middle is easier than
+  forcing the ball to the backhand against the spin. Aiming toward the center line or middle for
+  controlled, low returns against unclear-spin serves. Recovery toward the middle and straddling
+  the center line lets an adult cover the whole table, which is a middle-oriented defensive
+  principle. Together, these principles show how the topic is applied in practice while preserving
+  the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:0ba4db8bb5e3dd1e5ca248d1e60bb5a3beaf62d5e7f57c7cf9eb06b7577a77e2"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -66,3 +70,51 @@ evidence:
         - ihrv3kBFb-U:00051
         - ihrv3kBFb-U:00052
         - ihrv3kBFb-U:00053
+  - id: QD9mHcPrHSU-concept-aim-middle-to-handle-sidespin-reviewed
+    evidence_type: explanation
+    excerpt: When facing sidespin-heavy balls from the middle, direct the loop or return toward the middle or forehand side instead of forcing it to the backhand side.
+    reason: The speaker explicitly says looping to the forehand or middle is easier than forcing the ball to the backhand against the spin.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: QD9mHcPrHSU
+      start_ms: 592566
+      end_ms: 619066
+      url: https://www.youtube.com/watch?v=QD9mHcPrHSU&t=592s
+      segment_ids:
+        - QD9mHcPrHSU:00126
+        - QD9mHcPrHSU:00127
+        - QD9mHcPrHSU:00128
+        - QD9mHcPrHSU:00129
+        - QD9mHcPrHSU:00130
+  - id: QKc7uSJo9mM-concept-aim-middle-to-handle-sidespin-reviewed
+    evidence_type: explanation
+    excerpt: Aim the receive toward the middle or center line when spin is unclear or sidespin is difficult to read, to increase control and reduce popping up.
+    reason: The speaker explicitly recommends aiming toward the center line or middle for controlled, low returns against unclear-spin serves.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: QKc7uSJo9mM
+      start_ms: 93766
+      end_ms: 108333
+      url: https://www.youtube.com/watch?v=QKc7uSJo9mM&t=93s
+      segment_ids:
+        - QKc7uSJo9mM:00014
+        - QKc7uSJo9mM:00015
+  - id: rR9HWla28Sc-concept-aim-middle-to-handle-sidespin-reviewed
+    evidence_type: explanation
+    excerpt: When defending or receiving spin, aiming to the middle simplifies coverage and reduces the effect of wide-angle pressure.
+    reason: The speaker emphasizes recovery toward the middle and says straddling the center line lets an adult cover the whole table, which is a middle-oriented defensive principle.
+    confidence: 0.88
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: rR9HWla28Sc
+      start_ms: 110966
+      end_ms: 120100
+      url: https://www.youtube.com/watch?v=rR9HWla28Sc&t=110s
+      segment_ids:
+        - rR9HWla28Sc:00025
+        - rR9HWla28Sc:00026

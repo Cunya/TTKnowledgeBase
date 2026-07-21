@@ -284,7 +284,7 @@ The numerical baseline above reflects the latest published artifacts, not the ol
 
 **Work:** implement caption-only sentence-like unit merging and boundary snapping first; add `starts_mid_sentence`, `ends_mid_sentence`, `too_short`, and `needs_context` flags; keep claim-support citations separate from optional playback context; add review actions and a gold-set evaluation before enabling authorized local word/prosody alignment or semantic change-point proposals. The first worksheet pass is recorded; the remaining operator step is to inspect the 11 deferred cases, apply only further reviewed canonical changes, and publish a second report showing reduction.
 
-**Done when:** mid-sentence and non-meaningful short-window rates are measured and reduced, every expanded/split window preserves segment-level provenance and the 30-second limit, and low-confidence cases are deferred rather than silently published. See `docs/moment-boundary-analysis-study-2026-07-16.md`.
+**Done when:** mid-sentence and non-meaningful short-window rates are measured and reduced, every expanded/split window preserves segment-level provenance and the 30-second limit, and low-confidence cases are deferred rather than silently published. See `docs/moment-boundary-analysis-study-2026-07-16.md`. **Next study:** use private ASR word timing and confidence only as an audio-boundary signal, as specified in `docs/asr-audio-boundary-verification-2026-07-21.md`; do not replace caption segment provenance.
 
 ### P1-15 — Add an adjustable daily LLM budget and task deferral (complete 2026-07-16)
 

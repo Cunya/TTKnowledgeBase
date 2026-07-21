@@ -756,6 +756,52 @@ evidence:
       segment_ids:
         - dm3dhRiTMZ4:00002
         - dm3dhRiTMZ4:00003
+  - id: xWE01GQepLE-concept-backhand-serve-reviewed
+    evidence_type: definition
+    excerpt: A short-serve focused backhand serve is taught as a core service option, with emphasis on spin, disguise, and placement.
+    reason: The speaker explicitly frames the transcript as a breakdown of the backhand serve and says it will be taught in stages.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: xWE01GQepLE
+      start_ms: 29366
+      end_ms: 46266
+      url: https://www.youtube.com/watch?v=xWE01GQepLE&t=29s
+      segment_ids:
+        - xWE01GQepLE:00009
+        - xWE01GQepLE:00012
+  - id: xWE01GQepLE-concept-backhand-serve-spin-reading-and-disguise-reviewed
+    evidence_type: explanation
+    excerpt: A teaching point that opponents must read the serve spin correctly, but deception can cause them to misjudge whether the serve is topspin, backspin, or sidespin-topspin.
+    reason: The transcript repeatedly tests serve-spin identification and explains that deceptive motion makes the opponent misjudge spin.
+    confidence: 0.92
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: xWE01GQepLE
+      start_ms: 2966
+      end_ms: 23900
+      url: https://www.youtube.com/watch?v=xWE01GQepLE&t=2s
+      segment_ids:
+        - xWE01GQepLE:00001
+        - xWE01GQepLE:00004
+        - xWE01GQepLE:00007
+  - id: xWE01GQepLE-concept-backhand-serve-deception-through-follow-through-reviewed
+    evidence_type: explanation
+    excerpt: A deceptive backhand serve method where the follow-through is made to look like an upward lift even when the actual spin-producing action differs.
+    reason: The speaker says the follow-through must always look like an upward lift and that identical follow-through is the core deceptive mechanism.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: xWE01GQepLE
+      start_ms: 780300
+      end_ms: 810033
+      url: https://www.youtube.com/watch?v=xWE01GQepLE&t=780s
+      segment_ids:
+        - xWE01GQepLE:00163
+        - xWE01GQepLE:00168
 relations:
   - relation_type: variation_of
     target_concept_id: concept-sidespin-topspin-serve

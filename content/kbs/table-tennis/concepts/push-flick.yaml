@@ -10,9 +10,12 @@ evidence_summary: >-
   turns backspin into topspin. The wrist stays pressed, the racket face stays consistent, and the
   shot relies on the forearm with lower error rate. Push-flick as an over-the-table option against
   semi-spin and even backspin serves. The push-flick and it as turning backspin into topspin on
-  short balls. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:0009ffc752807201e6a667f600e0c20e46709bda37c8e09980083889efb13fa3"
+  short balls. The push-flick is easier when close to the ball, uses the forearm, and keeps the
+  racket face fixed through contact. The push-flick as the stable way to handle short balls and it
+  applies to half-spin or no-spin balls by driving forward. The push-flick as a distinct stroke
+  that pushes first and flicks late. Together, these principles show how the topic is applied in
+  practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:8d0248a65e9a1940347945d1ef0e8c3245974a5133b7a53520c98b8c5e44672e"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -121,3 +124,52 @@ evidence:
       segment_ids:
         - 0D6FzvP33Xs:00064
         - 0D6FzvP33Xs:00069
+  - id: RXl1tDl8BRw-concept-push-flick-reviewed
+    evidence_type: explanation
+    excerpt: A compact in-table flick variation that starts from a push-like angle, stays close to the ball, uses a fixed racket face, and is powered mainly by the forearm rather than the wrist.
+    reason: The speaker explains that the push-flick is easier when close to the ball, uses the forearm, and keeps the racket face fixed through contact.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: RXl1tDl8BRw
+      start_ms: 708200
+      end_ms: 734266
+      url: https://www.youtube.com/watch?v=RXl1tDl8BRw&t=708s
+      segment_ids:
+        - RXl1tDl8BRw:00146
+        - RXl1tDl8BRw:00147
+        - RXl1tDl8BRw:00148
+        - RXl1tDl8BRw:00149
+        - RXl1tDl8BRw:00150
+  - id: QKc7uSJo9mM-concept-push-flick-reviewed
+    evidence_type: definition
+    excerpt: A stable short-ball response that combines push-like structure with a forward-driving flick action, especially for half-spin or no-spin balls.
+    reason: The speaker explicitly names the push-flick as the stable way to handle short balls and says it applies to half-spin or no-spin balls by driving forward.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: QKc7uSJo9mM
+      start_ms: 625633
+      end_ms: 637733
+      url: https://www.youtube.com/watch?v=QKc7uSJo9mM&t=625s
+      segment_ids:
+        - QKc7uSJo9mM:00114
+        - QKc7uSJo9mM:00115
+  - id: nvQeXUtF2CM-concept-push-flick-reviewed
+    evidence_type: definition
+    excerpt: A compact close-to-the-ball flick variant that begins with a pushing action, uses late-stage acceleration, and does not rely on wrist motion.
+    reason: The speaker explicitly defines the push-flick as a distinct stroke that pushes first and flicks late.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: nvQeXUtF2CM
+      start_ms: 513600
+      end_ms: 541833
+      url: https://www.youtube.com/watch?v=nvQeXUtF2CM&t=513s
+      segment_ids:
+        - nvQeXUtF2CM:00104
+        - nvQeXUtF2CM:00107
+        - nvQeXUtF2CM:00108

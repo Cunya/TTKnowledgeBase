@@ -7,9 +7,11 @@ aliases:
 short_definition: A cut-based receive that handles right-sidespin or left-sidespin by contacting and brushing the ball with a sideways-forward or sideways-upward motion, often producing topspin or side-backspin depending on path.
 evidence_summary: >-
   Side cut brings together several connected ideas. Side cut, explains its use against
-  right-sidespin, and how motion determines spin outcome. Together, these principles show how the
-  topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:2d2879aab30686c42af7fcb9bd865ddfc9b830c0f87a41012d04373a16602e78"
+  right-sidespin, and how motion determines spin outcome. Side-cut, explains its purpose, and the
+  brushing motion used to execute it. The hook push and its hook-serve-like sideways brushing
+  mechanics and close forearm position. Together, these principles show how the topic is applied
+  in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:774eda91943f212abf8ed91132398cb32f82359f79bbd10280b74923fab83fd5"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -45,3 +47,36 @@ evidence:
         - ezGVESU0Rp0:00104
         - ezGVESU0Rp0:00105
         - ezGVESU0Rp0:00106
+  - id: _TIBQOXT3cw-concept-side-cut-reviewed
+    evidence_type: definition
+    excerpt: A receive technique that brushes the side of the ball with a retract-and-extend forearm motion to neutralize spin and control placement.
+    reason: The speaker explicitly names side-cut, explains its purpose, and describes the brushing motion used to execute it.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: _TIBQOXT3cw
+      start_ms: 18366
+      end_ms: 47900
+      url: https://www.youtube.com/watch?v=_TIBQOXT3cw&t=18s
+      segment_ids:
+        - _TIBQOXT3cw:00003
+        - _TIBQOXT3cw:00005
+        - _TIBQOXT3cw:00008
+  - id: YpA2d0yrM1U-concept-hook-push-reviewed
+    evidence_type: definition
+    excerpt: A receive technique that uses a hook-serve-like motion to return the ball, creating sideways friction and awkward placement.
+    reason: The speaker explicitly introduces the hook push and explains its hook-serve-like sideways brushing mechanics and close forearm position.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: YpA2d0yrM1U
+      start_ms: 771433
+      end_ms: 799733
+      url: https://www.youtube.com/watch?v=YpA2d0yrM1U&t=771s
+      segment_ids:
+        - YpA2d0yrM1U:00144
+        - YpA2d0yrM1U:00145
+        - YpA2d0yrM1U:00147
+        - YpA2d0yrM1U:00148

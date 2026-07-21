@@ -10,9 +10,11 @@ evidence_summary: >-
   Sidespin serve brings together several connected ideas. To spin the ball left or right you need
   to curve it when serving, and that this state is what qualifies as a sidespin serve. Describes
   the spin path and labels it pure sidespin. The serve as generating side spin and producing a
-  curve. Lebrun's left sidespin as a major weapon. Together, these principles show how the topic
-  is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:190eb2a88fefe6d673fa34dc3478c965ddf2f3e59f3a236d401a1f7ac8742c5c"
+  curve. Lebrun's left sidespin as a major weapon. The topic as the left sidespin serve and fixed
+  racket angle, brushing angle, and force direction as the key mechanics. Together, these
+  principles show how the topic is applied in practice while preserving the relevant distinctions
+  and constraints.
+evidence_summary_source_hash: "sha256:73ba18f7cf8c59f37deadb498e065ad96110c4221a02768e96f19bac449b06d8"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -91,3 +93,39 @@ evidence:
       url: https://www.youtube.com/watch?v=q70a9LCojco&t=27s
       segment_ids:
         - q70a9LCojco:00006
+  - id: evEaxXmwJ2E-candidate-left-sidespin-serve-reviewed
+    evidence_type: definition
+    excerpt: A serve pattern focused on generating left sidespin with a fixed racket angle, correct brushing angle, and a force direction that produces spin rather than a flat push.
+    reason: The speaker names the topic as the left sidespin serve and emphasizes fixed racket angle, brushing angle, and force direction as the key mechanics.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: evEaxXmwJ2E
+      start_ms: 0
+      end_ms: 22766
+      url: https://www.youtube.com/watch?v=evEaxXmwJ2E&t=0s
+      segment_ids:
+        - evEaxXmwJ2E:00000
+        - evEaxXmwJ2E:00003
+        - evEaxXmwJ2E:00004
+  - id: dIq6T-PMx0k-concept-high-kicking-topspin-sidespin-serve-reviewed
+    evidence_type: example
+    excerpt: A topspin-sidespin serve whose second bounce peaks well beyond the end line, making the return difficult to use aggressively.
+    reason: Defines the quality benchmark as the peak of the second bounce landing about one meter past the end of the table.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: dIq6T-PMx0k
+      start_ms: 608533
+      end_ms: 636866
+      url: https://www.youtube.com/watch?v=dIq6T-PMx0k&t=608s
+      segment_ids:
+        - dIq6T-PMx0k:00130
+        - dIq6T-PMx0k:00131
+        - dIq6T-PMx0k:00132
+        - dIq6T-PMx0k:00133
+        - dIq6T-PMx0k:00136
+        - dIq6T-PMx0k:00137
+        - dIq6T-PMx0k:00138

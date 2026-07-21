@@ -10,9 +10,10 @@ evidence_summary: >-
   Weight transfer versus body rotation brings together several connected ideas. A useful contrast
   is between weight transfer and body rotation and says the example shown is weight transfer
   rather than rotation. A useful contrast is between rotation and mere weight shift and says the
-  issue is weight transfer, not body rotation. Together, these principles show how the topic is
-  applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:fe7023e6cdd198a13b0ee51335a9f9c976e7e1100feae4f6f144be4707772f27"
+  issue is weight transfer, not body rotation. A useful contrast is between tucking the hip and
+  rotating it and says rotation will jam the stroke. Together, these principles show how the topic
+  is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:a9d8969b0b17591251fcae9deac71aefeebc148465cc1df9ec88a4888be7e160"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -63,3 +64,19 @@ evidence:
       segment_ids:
         - 8fxjEROShs4:00113
         - 8fxjEROShs4:00114
+  - id: jvt-6VNmBzs-cand-4-reviewed
+    evidence_type: explanation
+    excerpt: A distinction where the player should tuck the hip and transfer weight rather than rotate the hip, because rotation jams the stroke.
+    reason: The speaker repeatedly contrasts tucking the hip with rotating it and says rotation will jam the stroke.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: jvt-6VNmBzs
+      start_ms: 92266
+      end_ms: 121566
+      url: https://www.youtube.com/watch?v=jvt-6VNmBzs&t=92s
+      segment_ids:
+        - jvt-6VNmBzs:00017
+        - jvt-6VNmBzs:00020
+        - jvt-6VNmBzs:00023

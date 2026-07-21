@@ -8,16 +8,17 @@ aliases:
 short_definition: A stroke becomes cramped when the player stands too close or lacks room to swing and rotate.
 evidence_summary: >-
   Jammed by insufficient space brings together several connected ideas. The jammed feeling and its
-  cause. Leaning back or stepping back too much will get you jammed by the ball. Directly states
-  that the forward-and-back recovery can jam you and remove power. Being too close after a push
-  with getting jammed on the forehand loop. If the upper arm keeps rising, there will be no space
-  to retract, describing the jammed condition directly. Pulling the ball, not allowing the ball to
-  push you back, and needing space to generate power, all pointing to jammed execution from poor
-  spacing. Large backwards or downward backswing leads to getting jammed and that large strokes
-  get jammed. 'jammed' to describe balls at the side or behind the body and the priority is to get
-  the ball back immediately. Together, these principles show how the topic is applied in practice
-  while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:3f32e896eaa792162a9b7aa25c3d71a8bd0a3df4287e4aca814e614d1dbc33a4"
+  cause. Leaning back or stepping back too much will get you jammed by the ball. Being too close
+  after a push with getting jammed on the forehand loop. If the upper arm keeps rising, there will
+  be no space to retract, describing the jammed condition directly. Large backwards or downward
+  backswing leads to getting jammed and that large strokes get jammed. 'jammed' to describe balls
+  at the side or behind the body and the priority is to get the ball back immediately. The spacing
+  is wrong, the player is reaching, and getting jammed because the ball is coming too deep or the
+  player is squatting down. Getting jammed when too close, and recommends staying close to the
+  table only in specific short-ball cases. Additional points reinforce the same theme. Together,
+  these principles show how the topic is applied in practice while preserving the relevant
+  distinctions and constraints.
+evidence_summary_source_hash: "sha256:7532ccb60a40ee0a5438b86c7189a917d5be469194076a15b424656c3a9b6fbc"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -164,3 +165,97 @@ evidence:
         - qsY3S06fjgA:00122
         - qsY3S06fjgA:00127
         - qsY3S06fjgA:00128
+  - id: 4oXvbNfXK8U-concept-jammed-by-insufficient-space-reviewed
+    evidence_type: mistake
+    excerpt: A timing and spacing failure where the player moves too early or lacks room, causing the stroke to feel stuck and powerless.
+    reason: The speaker says players often feel jammed and unable to generate force when the ball is short and timing is wrong.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 4oXvbNfXK8U
+      start_ms: 886400
+      end_ms: 899333
+      url: https://www.youtube.com/watch?v=4oXvbNfXK8U&t=886s
+      segment_ids:
+        - 4oXvbNfXK8U:00177
+        - 4oXvbNfXK8U:00179
+  - id: rOMRGvlgAAU-concept-jammed-by-insufficient-space-reviewed
+    evidence_type: explanation
+    excerpt: A stroke failure caused by being too close to the ball or lacking room to swing.
+    reason: The speaker repeatedly says the spacing is wrong, the player is reaching, and getting jammed because the ball is coming too deep or the player is squatting down.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: rOMRGvlgAAU
+      start_ms: 306766
+      end_ms: 333366
+      url: https://www.youtube.com/watch?v=rOMRGvlgAAU&t=306s
+      segment_ids:
+        - rOMRGvlgAAU:00063
+        - rOMRGvlgAAU:00067
+  - id: 3wbUKV585F8-concept-jammed-by-insufficient-space-reviewed
+    evidence_type: explanation
+    excerpt: A stroke gets jammed when the player is too close to the ball or has not managed the spacing between backswing and incoming ball correctly.
+    reason: The transcript explicitly describes getting jammed when too close, and recommends staying close to the table only in specific short-ball cases.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 3wbUKV585F8
+      start_ms: 985033
+      end_ms: 1002033
+      url: https://www.youtube.com/watch?v=3wbUKV585F8&t=985s
+      segment_ids:
+        - 3wbUKV585F8:00225
+        - 3wbUKV585F8:00227
+        - 3wbUKV585F8:00228
+        - 3wbUKV585F8:00229
+  - id: HLmkP4I2jqM-concept-jammed-by-insufficient-space-reviewed
+    evidence_type: definition
+    excerpt: Being unable to execute a stroke because the incoming ball arrives too fast or too close for the available swing space.
+    reason: The speaker explicitly says a hard feed will jam the player and break technique down.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: HLmkP4I2jqM
+      start_ms: 263933
+      end_ms: 274400
+      url: https://www.youtube.com/watch?v=HLmkP4I2jqM&t=263s
+      segment_ids:
+        - HLmkP4I2jqM:00055
+        - HLmkP4I2jqM:00056
+  - id: pWQROAi8uWw-concept-6-reviewed
+    evidence_type: explanation
+    excerpt: A cramped arm position with insufficient space prevents a clean loop or fast attack and causes the player to be jammed by the ball's pace.
+    reason: The speaker says the motion is too cramped, that you cannot loop from that position, and that forcing power there gets you jammed by the ball's pace.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: pWQROAi8uWw
+      start_ms: 390633
+      end_ms: 408500
+      url: https://www.youtube.com/watch?v=pWQROAi8uWw&t=390s
+      segment_ids:
+        - pWQROAi8uWw:00084
+        - pWQROAi8uWw:00085
+        - pWQROAi8uWw:00086
+  - id: Yf_uKs6cZ38-concept-jammed-by-insufficient-space-reviewed
+    evidence_type: explanation
+    excerpt: A stroke becomes jammed when the backswing is too far behind the body or too straight back to allow a proper looping path.
+    reason: The speaker explains that starting in the middle or pulling straight back can make the player feel jammed, especially against a fast ball.
+    confidence: 0.92
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Yf_uKs6cZ38
+      start_ms: 440533
+      end_ms: 454633
+      url: https://www.youtube.com/watch?v=Yf_uKs6cZ38&t=440s
+      segment_ids:
+        - Yf_uKs6cZ38:00092
+        - Yf_uKs6cZ38:00093
+        - Yf_uKs6cZ38:00094

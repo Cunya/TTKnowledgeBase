@@ -9,16 +9,15 @@ short_definition: 'Adjust swing timing based on whether the incoming ball is top
 evidence_summary: >-
   Timing by bounce type brings together several connected ideas. A useful contrast is between
   topspin timing and backspin timing and states when to start the swing for each. The preparation
-  buys time to catch the ball at its drop or peak before swinging naturally. A short serve by
-  observing the first bounce. Swing timing to hearing the bounce sound and starting only after the
-  ball hits the table. The preferred contact timing as the peak of the bounce, not the rising
-  phase. The best hitting point as the initial descent and explicitly excludes the peak and upward
-  phase. To wait, let the ball fall, and start swinging during the downward phase or after the
-  bounce point. Whiffs happen when the toss and swing are out of sync and that serve quality
-  depends on placing the first bounce in the correct zone for short and long serves. Together,
-  these principles show how the topic is applied in practice while preserving the relevant
-  distinctions and constraints.
-evidence_summary_source_hash: "sha256:8085119edfbb6eef4f844dbd5294e37c33f239b5e26bfdf68a0c136a732b2447"
+  buys time to catch the ball at its drop or peak before swinging naturally. Swing timing to
+  hearing the bounce sound and starting only after the ball hits the table. The preferred contact
+  timing as the peak of the bounce, not the rising phase. The best hitting point as the initial
+  descent and explicitly excludes the peak and upward phase. To wait, let the ball fall, and start
+  swinging during the downward phase or after the bounce point. Timing as when to initiate the
+  swing at rise, peak, or fall. Multiple strokes to rise, apex, and fall contact timing.
+  Additional points reinforce the same theme. Together, these principles show how the topic is
+  applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:f18b96b66432cd6f8c3daf4d2f79e956ceffccc22947fa8a5610dda5d0fe812a"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -168,3 +167,36 @@ evidence:
         - phTj82vlVqs:00067
         - phTj82vlVqs:00068
         - phTj82vlVqs:00069
+  - id: z8-8IXQ-GaU-concept-timing-by-bounce-type-reviewed
+    evidence_type: definition
+    excerpt: Initiating the swing according to the ball's bounce phase rather than contacting the ball at that exact instant.
+    reason: The speaker defines timing as when to initiate the swing at rise, peak, or fall.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: z8-8IXQ-GaU
+      start_ms: 333933
+      end_ms: 356233
+      url: https://www.youtube.com/watch?v=z8-8IXQ-GaU&t=333s
+      segment_ids:
+        - z8-8IXQ-GaU:00069
+        - z8-8IXQ-GaU:00070
+        - z8-8IXQ-GaU:00071
+        - z8-8IXQ-GaU:00072
+  - id: CGidweVwLYw-concept-timing-by-bounce-type-reviewed
+    evidence_type: definition
+    excerpt: A timing principle that adjusts contact to the rise, apex, or fall of the bounce depending on the stroke.
+    reason: The transcript explicitly ties multiple strokes to rise, apex, and fall contact timing.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: CGidweVwLYw
+      start_ms: 530800
+      end_ms: 545600
+      url: https://www.youtube.com/watch?v=CGidweVwLYw&t=530s
+      segment_ids:
+        - CGidweVwLYw:00116
+        - CGidweVwLYw:00117
+        - CGidweVwLYw:00118

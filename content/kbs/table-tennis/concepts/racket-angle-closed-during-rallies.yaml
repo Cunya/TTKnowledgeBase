@@ -9,10 +9,11 @@ aliases:
 short_definition: Maintain a closed racket angle throughout the stroke during rallies so added power does not send the ball long or create errors.
 evidence_summary: >-
   Racket angle closed during rallies brings together several connected ideas. To keep the racket
-  angle closed during rallies, including when adding power and through the finish. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:f8b1aa51148350371ebdfcfed9f64855b658f2cf4a8ff9a24a9183f2cb071301"
+  angle closed during rallies, including when adding power and through the finish. An open face
+  makes the ball go long and that a closed angle is required for the rush serve. To keep the
+  racket angle closed and opening the face causes errors. Together, these principles show how the
+  topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:35daba5c12374ffe3d4933fed380dcefbbd1ebbe34bd590d0f51ca6a5ba3a4b6"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -44,3 +45,38 @@ evidence:
         - ucqkkVNB3J4:00003
         - ucqkkVNB3J4:00004
         - ucqkkVNB3J4:00006
+  - id: xsJ6JJAeTVc-concept-racket-angle-closed-during-rallies-reviewed
+    evidence_type: explanation
+    excerpt: Keeping the racket face closed so the ball can be brushed forward with control and speed rather than sent long.
+    reason: The speaker directly states that an open face makes the ball go long and that a closed angle is required for the rush serve.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: xsJ6JJAeTVc
+      start_ms: 559700
+      end_ms: 589433
+      url: https://www.youtube.com/watch?v=xsJ6JJAeTVc&t=559s
+      segment_ids:
+        - xsJ6JJAeTVc:00113
+        - xsJ6JJAeTVc:00114
+        - xsJ6JJAeTVc:00116
+        - xsJ6JJAeTVc:00117
+  - id: dCjFkTKTH7I-concept-racket-angle-closed-during-rallies-reviewed
+    evidence_type: definition
+    excerpt: During the loop, the racket face should stay closed throughout the stroke rather than opening up.
+    reason: The speaker repeatedly instructs to keep the racket angle closed and warns that opening the face causes errors.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: dCjFkTKTH7I
+      start_ms: 334200
+      end_ms: 364166
+      url: https://www.youtube.com/watch?v=dCjFkTKTH7I&t=334s
+      segment_ids:
+        - dCjFkTKTH7I:00068
+        - dCjFkTKTH7I:00069
+        - dCjFkTKTH7I:00070
+        - dCjFkTKTH7I:00072
+        - dCjFkTKTH7I:00073

@@ -10,16 +10,17 @@ evidence_summary: >-
   Backhand technique selection by incoming ball type brings together several connected ideas. You
   must adjust based on the incoming ball and know when to use different backhand techniques. To
   backhand technique improvement and explicitly says to differentiate flicking and looping skills.
-  What approach to take against fast spin shots and to adapt to the ball. To use only the forearm,
-  pivot around the elbow, and drop the forearm only against heavy fast backspin. Brushing for
-  underspin, freely hitting topspin, and using a standard backhand loop for a given spin type.
-  Against heavy spin you lift with the upper arm, while against light spin you wipe sideways. The
-  backhand rip as a solution, then explains the fallback of using the forearm to push forward and
-  upward and create arc, including against low-spin and heavy-spin balls. Slow serves and fast
-  deep backspin serves and the preparation changes accordingly. Additional points reinforce the
-  same theme. Together, these principles show how the topic is applied in practice while
+  Whether to use forehand or backhand for different incoming serves and the same logic applies to
+  the backhand. Brushing for underspin, freely hitting topspin, and using a standard backhand loop
+  for a given spin type. Multiple serve/ball types and the key difference is the upward direction
+  of the forearm swing, indicating technique selection by incoming spin type. The backhand rip as
+  a solution, then explains the fallback of using the forearm to push forward and upward and
+  create arc, including against low-spin and heavy-spin balls. Slow serves and fast deep backspin
+  serves and the preparation changes accordingly. A detailed rule set for slow, even, and fast
+  balls, including when to retract, hold forward, or brush in front. Additional points reinforce
+  the same theme. Together, these principles show how the topic is applied in practice while
   preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:ff9fc97ca6cfd3e1bd212c34855746e08fb69afba7f6725d0ce950a20ff7d2ad"
+evidence_summary_source_hash: "sha256:191a91c78e2aaa5a5110d5016b679bebe8b5606eede7701d644fd0b72b52470e"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -234,3 +235,37 @@ evidence:
         - XF5bM7-VQGU:00161
         - XF5bM7-VQGU:00163
         - XF5bM7-VQGU:00165
+  - id: pF8kIVSRExg-concept-backhand-technique-selection-by-incoming-ball-type-reviewed
+    evidence_type: explanation
+    excerpt: Choosing the appropriate backhand stroke shape and angle based on whether the incoming ball is fast, deep, pips-based, or spinny.
+    reason: The speaker changes advice depending on pips-out incoming balls, including opening the angle and using forearm-driven lift when needed.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: pF8kIVSRExg
+      start_ms: 396600
+      end_ms: 406466
+      url: https://www.youtube.com/watch?v=pF8kIVSRExg&t=396s
+      segment_ids:
+        - pF8kIVSRExg:00081
+  - id: 3wbUKV585F8-concept-backhand-technique-selection-by-incoming-ball-type-reviewed
+    evidence_type: explanation
+    excerpt: Backhand technique should change based on whether the incoming ball is slow, average, fast, or high-quality, with different backswing and contact decisions for each case.
+    reason: The speaker gives a detailed rule set for slow, even, and fast balls, including when to retract, hold forward, or brush in front.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 3wbUKV585F8
+      start_ms: 836033
+      end_ms: 865733
+      url: https://www.youtube.com/watch?v=3wbUKV585F8&t=836s
+      segment_ids:
+        - 3wbUKV585F8:00192
+        - 3wbUKV585F8:00193
+        - 3wbUKV585F8:00194
+        - 3wbUKV585F8:00195
+        - 3wbUKV585F8:00196
+        - 3wbUKV585F8:00197
+        - 3wbUKV585F8:00198

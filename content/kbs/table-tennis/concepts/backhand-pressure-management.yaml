@@ -8,18 +8,17 @@ aliases:
 short_definition: When the opponent presses the backhand, the player must stabilize, adjust to the incoming shot, and avoid forcing power that will end in net errors.
 evidence_summary: >-
   Backhand pressure management brings together several connected ideas. Pressure, lack of space,
-  and net errors on the backhand. Long balls struggle against serves because the player is under
-  pressure, has not prepared properly, and needs a compact swing with forward brushing. Lowering
-  the center of gravity, creating room for extension and impact, keeping the arms close, and
-  pausing in front of the body to avoid loss of power. Keeping the racket in front and creating a
-  body C-shape prevents jamming and makes the backhand solid under pressure. A firm wrist and
-  simple forward motion to get the ball back over the table. A set wrist prevents jamming and
-  helps handle fast or heavy-spin balls. The racket face must be stabilized and kept closed when
-  the opponent's ball is fast. A square stance, forward center of gravity, and avoiding sitting
-  down, leaning back, and retreating because those patterns cause jamming. Additional points
-  reinforce the same theme. Together, these principles show how the topic is applied in practice
-  while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:f21cb79d0ccd1c2c69cea11f51260f5fc01e454a3f1343bc3037f2ca3d2b022f"
+  and net errors on the backhand. The backhand example stresses not pulling back too much, not
+  going too low, and staying below the ball without being too high. Pressure on forehand/backhand
+  play and to keep the ball low and stay stable under pressure. Staying low, keeping center of
+  gravity stable, engaging the legs, and using compact motion on fast returns. A set wrist
+  prevents jamming and helps handle fast or heavy-spin balls. The racket face must be stabilized
+  and kept closed when the opponent's ball is fast. Looping backhand in a fast rally gets you
+  jammed and that a rip, block, or quick counter-drive is more stable. Match errors to a soft
+  hand, late timing, and stiffness in the body and grip. Additional points reinforce the same
+  theme. Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:b52dbee9bf6ae5d96c4ce7a1454ebaa1f3e01ab59f5dec4138c05f8fef63a039"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -349,3 +348,72 @@ evidence:
       segment_ids:
         - nL5W5P6d_OA:00078
         - nL5W5P6d_OA:00080
+  - id: CLBNvB5gemk-concept-backhand-pressure-management-reviewed
+    evidence_type: explanation
+    excerpt: Maintaining a workable backhand structure under pressure by keeping the body compact, the wrist stable, and the stroke recoverable.
+    reason: The transcript says looping backhand in a fast rally gets you jammed and that a rip, block, or quick counter-drive is more stable.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: CLBNvB5gemk
+      start_ms: 156166
+      end_ms: 172566
+      url: https://www.youtube.com/watch?v=CLBNvB5gemk&t=156s
+      segment_ids:
+        - CLBNvB5gemk:00033
+        - CLBNvB5gemk:00034
+        - CLBNvB5gemk:00035
+        - CLBNvB5gemk:00036
+  - id: hDpdmRuaLMY-concept-backhand-pressure-management-reviewed
+    evidence_type: explanation
+    excerpt: When late or under pressure, reduce rotation and simplify the backhand by facing forward and using the arm directly to reach the contact point.
+    reason: 'The speaker gives a clear rule for late timing: do not rotate, square the body, and use the arm directly.'
+    confidence: 0.86
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: hDpdmRuaLMY
+      start_ms: 535133
+      end_ms: 562633
+      url: https://www.youtube.com/watch?v=hDpdmRuaLMY&t=535s
+      segment_ids:
+        - hDpdmRuaLMY:00101
+        - hDpdmRuaLMY:00102
+        - hDpdmRuaLMY:00103
+        - hDpdmRuaLMY:00104
+        - hDpdmRuaLMY:00105
+  - id: 3wbUKV585F8-concept-backhand-pressure-management-reviewed
+    evidence_type: explanation
+    excerpt: Under pressure or high pace, the backhand must stay stable in spacing and body position so the stroke does not jam or fall apart.
+    reason: The speaker says the problem is often spacing and timing under pressure, where the player is too far, too close, or rushed by pace.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 3wbUKV585F8
+      start_ms: 958900
+      end_ms: 985033
+      url: https://www.youtube.com/watch?v=3wbUKV585F8&t=958s
+      segment_ids:
+        - 3wbUKV585F8:00219
+        - 3wbUKV585F8:00220
+        - 3wbUKV585F8:00221
+        - 3wbUKV585F8:00224
+  - id: HYdN-7CIYww-concept-backhand-pressure-management-reviewed
+    evidence_type: explanation
+    excerpt: Managing tension, timing, and body stiffness so the backhand does not break down in matches under pressure.
+    reason: The speaker attributes match errors to a soft hand, late timing, and stiffness in the body and grip.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: HYdN-7CIYww
+      start_ms: 112966
+      end_ms: 139366
+      url: https://www.youtube.com/watch?v=HYdN-7CIYww&t=112s
+      segment_ids:
+        - HYdN-7CIYww:00023
+        - HYdN-7CIYww:00024
+        - HYdN-7CIYww:00025
+        - HYdN-7CIYww:00027

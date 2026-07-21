@@ -11,9 +11,15 @@ evidence_summary: >-
   not enough; the ball must be brushed forward, and spinning comes from active brushing rather
   than touching. To add forward movement and brush forward when hitting the ball. A useful
   contrast is between pure upward brushing and brushing forward and says the forward version
-  creates more spin. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:89c92c8f0afd6b2eea74f97aacd65f354615e6dff01ab1db6b17f464521f8e1d"
+  creates more spin. An underspin ball requires forward drive, not just lifting it up, and power
+  with brushing direction. Every stroke needs forward momentum, with topspin requiring
+  forward-and-closing motion and backspin requiring forward brushing. You must cover the ball,
+  brush over the top, and brush aggressively to create heavy friction and spin. The forearm should
+  drive forward, avoid upward finishing motions, and use a compact direct hit or brushing friction
+  depending on stroke size. Vertical brushing is ineffective and insists the brush must be
+  directed forward into and through the ball. Together, these principles show how the topic is
+  applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:52e1482e763481f2bd5f17b62251ba500829ae09813305a7e49ef57cece0219e"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -83,3 +89,103 @@ evidence:
         - 60_qpMsHRvQ:00060
         - 60_qpMsHRvQ:00061
         - 60_qpMsHRvQ:00062
+  - id: hPK9ArHmWmk-concept-forward-brushing-on-topspin-reviewed
+    evidence_type: explanation
+    excerpt: Using an active brushing motion with forward intent rather than a purely upward lift when attacking underspin or high-spin balls.
+    reason: The speaker says an underspin ball requires forward drive, not just lifting it up, and contrasts power with brushing direction.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: hPK9ArHmWmk
+      start_ms: 83466
+      end_ms: 108933
+      url: https://www.youtube.com/watch?v=hPK9ArHmWmk&t=83s
+      segment_ids:
+        - hPK9ArHmWmk:00020
+        - hPK9ArHmWmk:00023
+  - id: hDpdmRuaLMY-concept-forward-brushing-on-topspin-reviewed
+    evidence_type: explanation
+    excerpt: Topspin and backspin strokes should still drive forward, with topspin adding a closing/forward brush action rather than only lifting upward.
+    reason: The transcript states that every stroke needs forward momentum, with topspin requiring forward-and-closing motion and backspin requiring forward brushing.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: hDpdmRuaLMY
+      start_ms: 818633
+      end_ms: 844700
+      url: https://www.youtube.com/watch?v=hDpdmRuaLMY&t=818s
+      segment_ids:
+        - hDpdmRuaLMY:00159
+        - hDpdmRuaLMY:00160
+        - hDpdmRuaLMY:00161
+        - hDpdmRuaLMY:00162
+        - hDpdmRuaLMY:00163
+        - hDpdmRuaLMY:00164
+  - id: a1vta4dOA2Q-concept-forward-brushing-on-topspin-reviewed
+    evidence_type: explanation
+    excerpt: Generate topspin by brushing over the ball with an active forward-upward brushing action rather than only striking flat.
+    reason: The speaker says you must cover the ball, brush over the top, and brush aggressively to create heavy friction and spin.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: a1vta4dOA2Q
+      start_ms: 496100
+      end_ms: 510166
+      url: https://www.youtube.com/watch?v=a1vta4dOA2Q&t=496s
+      segment_ids:
+        - a1vta4dOA2Q:00102
+        - a1vta4dOA2Q:00103
+  - id: yGWrxxrcvN4-concept-forward-brushing-on-topspin-reviewed
+    evidence_type: explanation
+    excerpt: In topspin rallies, the stroke should emphasize forward drive or compact brushing rather than excessive wrist action.
+    reason: The speaker says the forearm should drive forward, avoid upward finishing motions, and use a compact direct hit or brushing friction depending on stroke size.
+    confidence: 0.87
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: yGWrxxrcvN4
+      start_ms: 237900
+      end_ms: 265900
+      url: https://www.youtube.com/watch?v=yGWrxxrcvN4&t=237s
+      segment_ids:
+        - yGWrxxrcvN4:00047
+        - yGWrxxrcvN4:00049
+        - yGWrxxrcvN4:00050
+        - yGWrxxrcvN4:00052
+  - id: D596gPtN634-concept-forward-brushing-on-topspin-reviewed
+    evidence_type: definition
+    excerpt: Brushing the ball with a forward component rather than only vertically, so the stroke produces arc and spin.
+    reason: The speaker says vertical brushing is ineffective and insists the brush must be directed forward into and through the ball.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: D596gPtN634
+      start_ms: 907966
+      end_ms: 937866
+      url: https://www.youtube.com/watch?v=D596gPtN634&t=907s
+      segment_ids:
+        - D596gPtN634:00202
+        - D596gPtN634:00203
+        - D596gPtN634:00204
+        - D596gPtN634:00205
+        - D596gPtN634:00206
+        - D596gPtN634:00207
+  - id: D02EFJijJiU-concept-forward-brushing-on-topspin-reviewed
+    evidence_type: definition
+    excerpt: When looping or attacking topspin/backspin balls, apply friction in a forward direction rather than relying on an upward lift alone.
+    reason: The speaker warns against only lifting upward and says the ball must be contacted and friction applied in a forward direction for a successful loop.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: D02EFJijJiU
+      start_ms: 597366
+      end_ms: 614033
+      url: https://www.youtube.com/watch?v=D02EFJijJiU&t=597s
+      segment_ids:
+        - D02EFJijJiU:00128
+        - D02EFJijJiU:00129

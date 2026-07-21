@@ -11,9 +11,14 @@ evidence_summary: >-
   cocking, keeping it cocked, and dropping the racket head because it generates more spin. A firm,
   inward-cocked wrist and a tiny finger-pressure action at contact. A cocked wrist that remains
   set through the backswing, contact, and finish. The backhand requires a firm, cocked wrist
-  throughout the stroke and against collapse or wobble. Together, these principles show how the
-  topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:3724ee292660833f3b1274eb858878720b5ddd021cafd10f662fc4904a647387"
+  throughout the stroke and against collapse or wobble. On wrist rotation through contact,
+  including an upward snap at the end of the motion and the importance of that final snap for
+  spin. A dropped wrist on the backswing is required, that amateurs often keep the wrist stiff,
+  and that the racket head should point down toward the floor/calf. Whether the racket head is
+  rotating and it must snap at contact. The player to drop the forearm, not just the wrist, and
+  against a flat backswing. Together, these principles show how the topic is applied in practice
+  while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:faf6df4004c3afb4061ac37ba82adae479cf14888bfacae33c102e7e7251620b"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -97,3 +102,68 @@ evidence:
         - qLCA9OYSFl4:00161
         - qLCA9OYSFl4:00163
         - qLCA9OYSFl4:00164
+  - id: 5Qj-cdmcjio-concept-backhand-wrist-cocking-and-racket-head-drop-reviewed
+    evidence_type: explanation
+    excerpt: The speaker describes the wrist as starting down in the backswing, moving forward, and snapping upward at contact to create more spin.
+    reason: The speaker focuses on wrist rotation through contact, including an upward snap at the end of the motion and the importance of that final snap for spin.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 5Qj-cdmcjio
+      start_ms: 227500
+      end_ms: 257466
+      url: https://www.youtube.com/watch?v=5Qj-cdmcjio&t=227s
+      segment_ids:
+        - 5Qj-cdmcjio:00045
+        - 5Qj-cdmcjio:00046
+        - 5Qj-cdmcjio:00048
+        - 5Qj-cdmcjio:00049
+  - id: hRHJawAZzNc-concept-backhand-wrist-cocking-and-racket-head-drop-reviewed
+    evidence_type: definition
+    excerpt: Dropping the wrist and pointing the racket head downward on the backswing to improve brushing and spin.
+    reason: The transcript states that a dropped wrist on the backswing is required, that amateurs often keep the wrist stiff, and that the racket head should point down toward the floor/calf.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: hRHJawAZzNc
+      start_ms: 21433
+      end_ms: 49600
+      url: https://www.youtube.com/watch?v=hRHJawAZzNc&t=21s
+      segment_ids:
+        - hRHJawAZzNc:00005
+        - hRHJawAZzNc:00008
+        - hRHJawAZzNc:00009
+        - hRHJawAZzNc:00010
+  - id: 4oXvbNfXK8U-concept-backhand-wrist-cocking-and-racket-head-drop-reviewed
+    evidence_type: explanation
+    excerpt: A backhand brush preparation where the wrist and racket head are set, then snap forward at contact and stop instead of rotating continuously.
+    reason: The speaker repeatedly asks whether the racket head is rotating and says it must snap at contact.
+    confidence: 0.89
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 4oXvbNfXK8U
+      start_ms: 52866
+      end_ms: 68300
+      url: https://www.youtube.com/watch?v=4oXvbNfXK8U&t=52s
+      segment_ids:
+        - 4oXvbNfXK8U:00012
+        - 4oXvbNfXK8U:00015
+  - id: wj87pK5547g-concept-backhand-wrist-cocking-and-racket-head-drop-reviewed
+    evidence_type: explanation
+    excerpt: In the backhand loading phase, the forearm and wrist drop into position rather than the whole arm being flat or rigid.
+    reason: The speaker instructs the player to drop the forearm, not just the wrist, and warns against a flat backswing.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: wj87pK5547g
+      start_ms: 603900
+      end_ms: 616933
+      url: https://www.youtube.com/watch?v=wj87pK5547g&t=603s
+      segment_ids:
+        - wj87pK5547g:00115
+        - wj87pK5547g:00116
+        - wj87pK5547g:00117

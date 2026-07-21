@@ -11,11 +11,13 @@ evidence_summary: >-
   farther-back loopers out of position and a short push as difficult for amateurs. The shot relies
   on fingers and wrist to produce a short ball and explicitly names this as the short ball
   technique. Extremely short balls can be dropped short and that half-long balls can be pushed,
-  with both forehand and backhand able to push with heavy spin. This serve pattern, the forced
-  return, and the wide-angle follow-up attack. The short backhand corner ball and to handle it
-  with a push. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:9383c7b620df106bc3c28205654fcdb901df069c60acc5ef006f1cd9a68dae99"
+  with both forehand and backhand able to push with heavy spin. The short backhand corner ball and
+  to handle it with a push. The short push around early timing, close contact distance, compact
+  motion, and a slight downward touch, all of which match the known short-push concept. Short push
+  timing and touch contact. Using a short push when the ball can be taken on the rise. Additional
+  points reinforce the same theme. Together, these principles show how the topic is applied in
+  practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:37993203d113822ca90ca8ffeaf0a9692704a70ad0c9713be1b3d58cb3eae69a"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -132,3 +134,51 @@ evidence:
       url: https://www.youtube.com/watch?v=ihrv3kBFb-U&t=22s
       segment_ids:
         - ihrv3kBFb-U:00006
+  - id: VGXheTB1akM-concept-short-push-timing-and-spacing-reviewed
+    evidence_type: definition
+    excerpt: A short-push receive pattern that requires early contact, close spacing to the ball, compact motion, and a downward touch to keep the return short and low.
+    reason: The speaker defines the short push around early timing, close contact distance, compact motion, and a slight downward touch, all of which match the known short-push concept.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: VGXheTB1akM
+      start_ms: 616366
+      end_ms: 638600
+      url: https://www.youtube.com/watch?v=VGXheTB1akM&t=616s
+      segment_ids:
+        - VGXheTB1akM:00120
+        - VGXheTB1akM:00121
+        - VGXheTB1akM:00122
+        - VGXheTB1akM:00123
+  - id: CGidweVwLYw-concept-short-push-reviewed
+    evidence_type: definition
+    excerpt: A short push played on the rise with quick touch-point contact to keep the ball short and develop soft feel and touch.
+    reason: The speaker explicitly defines short push timing and touch contact.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: CGidweVwLYw
+      start_ms: 688866
+      end_ms: 717533
+      url: https://www.youtube.com/watch?v=CGidweVwLYw&t=688s
+      segment_ids:
+        - CGidweVwLYw:00148
+        - CGidweVwLYw:00151
+        - CGidweVwLYw:00152
+        - CGidweVwLYw:00154
+  - id: YS3IObI6Gaw-concept-short-push-reviewed
+    evidence_type: example
+    excerpt: A short return played when the ball can be taken on the rise during receive.
+    reason: The speaker explicitly recommends using a short push when the ball can be taken on the rise.
+    confidence: 0.89
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: YS3IObI6Gaw
+      start_ms: 466766
+      end_ms: 473133
+      url: https://www.youtube.com/watch?v=YS3IObI6Gaw&t=466s
+      segment_ids:
+        - YS3IObI6Gaw:00093

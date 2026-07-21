@@ -673,6 +673,41 @@ evidence:
         - 2HMLpiaJLL0:00011
         - 2HMLpiaJLL0:00013
         - 2HMLpiaJLL0:00014
+  - id: rf-9lmjigbs-concept-short-ball-receive-decisions-reviewed
+    evidence_type: explanation
+    excerpt: Choosing different responses to short balls based on trajectory, bounce height, and arrival point, especially for short forehand serves.
+    reason: The speaker identifies the short forehand as the hardest return and discusses when to long push, flick, or avoid lifting into attackable half-high balls.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: rf-9lmjigbs
+      start_ms: 361666
+      end_ms: 379466
+      url: https://www.youtube.com/watch?v=rf-9lmjigbs&t=361s
+      segment_ids:
+        - rf-9lmjigbs:00073
+        - rf-9lmjigbs:00075
+        - rf-9lmjigbs:00076
+  - id: qfB1tscK4xk-concept-short-ball-receive-decisions-reviewed
+    evidence_type: explanation
+    excerpt: On receive, half-long balls are especially important because they are common and offer a chance to flick first to seize initiative.
+    reason: The speaker emphasizes half-long balls as the key receive target and recommends flicking them first to attack proactively.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: qfB1tscK4xk
+      start_ms: 711400
+      end_ms: 735400
+      url: https://www.youtube.com/watch?v=qfB1tscK4xk&t=711s
+      segment_ids:
+        - qfB1tscK4xk:00149
+        - qfB1tscK4xk:00150
+        - qfB1tscK4xk:00151
+        - qfB1tscK4xk:00152
+        - qfB1tscK4xk:00153
+        - qfB1tscK4xk:00154
 relations:
   - relation_type: part_of
     target_concept_id: concept-short-vs-long-serve-receive

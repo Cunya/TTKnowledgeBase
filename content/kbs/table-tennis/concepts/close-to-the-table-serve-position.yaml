@@ -12,9 +12,11 @@ evidence_summary: >-
   backhand returns require keeping the body close to the ball and repeats that for backspin you
   should stay close. Being too far from the table harms control and recommends standing right
   against the edge. Hitting the edge is usually caused by standing too far back and advises
-  standing close to eliminate that angle. Together, these principles show how the topic is applied
-  in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:22d4bbcbeab6fd0c1be4a413132b9c940346a8ad33d76ace3967d5b40f2694fa"
+  standing close to eliminate that angle. Many amateurs stand too far back and recommends standing
+  right against the table to control the first bounce. The body must be positioned right up
+  against the table and close to the body. Together, these principles show how the topic is
+  applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:7fc262e729caecaae20e4eabcb6910e306b7d99dc0df37fb09b81dfb8a8c3dae"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -114,3 +116,34 @@ evidence:
       segment_ids:
         - phTj82vlVqs:00071
         - phTj82vlVqs:00072
+  - id: evEaxXmwJ2E-candidate-close-to-table-serve-position-reviewed
+    evidence_type: explanation
+    excerpt: Serving from very close to the table to control the first bounce and keep enough room for a low, fast, spinny motion.
+    reason: The speaker says many amateurs stand too far back and recommends standing right against the table to control the first bounce.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: evEaxXmwJ2E
+      start_ms: 519866
+      end_ms: 539433
+      url: https://www.youtube.com/watch?v=evEaxXmwJ2E&t=519s
+      segment_ids:
+        - evEaxXmwJ2E:00104
+        - evEaxXmwJ2E:00106
+        - evEaxXmwJ2E:00107
+  - id: zvQxT-Dkrkg-concept-close-to-the-table-serve-position-reviewed
+    evidence_type: explanation
+    excerpt: Serving from a position very close to the table and close to the body to support deceptive straight and short serves.
+    reason: The speaker explicitly says the body must be positioned right up against the table and close to the body.
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: zvQxT-Dkrkg
+      start_ms: 847766
+      end_ms: 860200
+      url: https://www.youtube.com/watch?v=zvQxT-Dkrkg&t=847s
+      segment_ids:
+        - zvQxT-Dkrkg:00173
+        - zvQxT-Dkrkg:00174

@@ -10,12 +10,14 @@ evidence_summary: >-
   spin and the loop as forearm-dominant. Power comes from maintaining the brushing feeling and
   speeding up the forearm swing. The forearm adds speed and that the main acceleration comes from
   the second segment. The elbow is the pivot, the upper arm should not move, and the forearm is
-  the main of power. The power comes mainly from the forearm and that it should accelerate at
-  contact. The forearm provides depth and drives the ball forward when the ball is short. The
-  secondary acceleration is accomplished by the forearm and that this is primarily forearm
-  acceleration. Together, these principles show how the topic is applied in practice while
+  the main of power. The forearm provides depth and drives the ball forward when the ball is
+  short. The secondary acceleration is accomplished by the forearm and that this is primarily
+  forearm acceleration. To accelerate the forearm forward, snap the forearm after the upper arm
+  stops, and use forearm drive into the ball. The power and acceleration come from the forearm,
+  after separating upper-arm movement from forearm acceleration. Additional points reinforce the
+  same theme. Together, these principles show how the topic is applied in practice while
   preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:73338f6197903281066fd9fc8855d8adeb8c9667f67c37e632916cd0e7527d50"
+evidence_summary_source_hash: "sha256:b1a1fbb3b4350ddcc306f92a6b32c40d296cad19a9737d8c4e06f4d5c366f83c"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -150,3 +152,34 @@ evidence:
       segment_ids:
         - f7Bf-QRn-9Q:00139
         - f7Bf-QRn-9Q:00144
+  - id: D596gPtN634-concept-forearm-acceleration-reviewed
+    evidence_type: explanation
+    excerpt: Using the forearm to accelerate the stroke and generate the main forward speed after the brushing contact is prepared.
+    reason: The speaker says to accelerate the forearm forward, snap the forearm after the upper arm stops, and use forearm drive into the ball.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: D596gPtN634
+      start_ms: 195166
+      end_ms: 214366
+      url: https://www.youtube.com/watch?v=D596gPtN634&t=195s
+      segment_ids:
+        - D596gPtN634:00041
+        - D596gPtN634:00043
+  - id: WZnZIhZkkRo-concept-forearm-acceleration-reviewed
+    evidence_type: explanation
+    excerpt: The forearm supplies the main accelerating action after the upper arm has stopped or been stabilized.
+    reason: The speaker explicitly says the power and acceleration come from the forearm, after separating upper-arm movement from forearm acceleration.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: WZnZIhZkkRo
+      start_ms: 343333
+      end_ms: 356966
+      url: https://www.youtube.com/watch?v=WZnZIhZkkRo&t=343s
+      segment_ids:
+        - WZnZIhZkkRo:00072
+        - WZnZIhZkkRo:00074
+        - WZnZIhZkkRo:00076

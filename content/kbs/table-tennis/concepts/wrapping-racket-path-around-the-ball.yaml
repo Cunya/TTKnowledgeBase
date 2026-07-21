@@ -8,10 +8,14 @@ aliases:
 short_definition: A racket path that arcs around the ball instead of striking straight through it, allowing the rubber to bite and create hook spin.
 evidence_summary: >-
   Wrapping racket path around the ball brings together several connected ideas. To use an arcing
-  racket path, wrap around the ball, and not stop at contact or pull straight to the side.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:acc007da395c43c28f2c20edebd81cf84f8ac9368122f557a688c5bac905195d"
+  racket path, wrap around the ball, and not stop at contact or pull straight to the side. The
+  correct loop as wrapping around the ball, hugging/embracing it, and following an outer arc
+  rather than pushing straight forward. The key motion as wrapping or gripping the ball with a
+  subtle curve, and this creates friction and the loop trajectory. A linear push cannot create the
+  arcing motion needed to wrap around the ball and generate heavy topspin. Together, these
+  principles show how the topic is applied in practice while preserving the relevant distinctions
+  and constraints.
+evidence_summary_source_hash: "sha256:6265ba39c9fad7f14ff1fbc7ad9094cb5ab57ea52d671b1bd79213de2db913be"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -47,3 +51,50 @@ evidence:
         - b8ivXEfdO7c:00084
         - b8ivXEfdO7c:00087
         - b8ivXEfdO7c:00088
+  - id: cPooD0HRRAc-concept-wrapping-racket-path-around-the-ball-reviewed
+    evidence_type: definition
+    excerpt: A looping motion that arcs around the ball instead of pushing straight through it, creating friction, power, and a better trajectory.
+    reason: The speaker explicitly describes the correct loop as wrapping around the ball, hugging/embracing it, and following an outer arc rather than pushing straight forward.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: cPooD0HRRAc
+      start_ms: 301266
+      end_ms: 321700
+      url: https://www.youtube.com/watch?v=cPooD0HRRAc&t=301s
+      segment_ids:
+        - cPooD0HRRAc:00065
+        - cPooD0HRRAc:00066
+        - cPooD0HRRAc:00068
+  - id: 0QxW3Un68gg-concept-wrapping-racket-path-around-the-ball-reviewed
+    evidence_type: definition
+    excerpt: A curved racket path that wraps around the ball to create friction and spin rather than a flat lifting motion.
+    reason: The speaker defines the key motion as wrapping or gripping the ball with a subtle curve, and says this creates friction and the loop trajectory.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 0QxW3Un68gg
+      start_ms: 740833
+      end_ms: 753700
+      url: https://www.youtube.com/watch?v=0QxW3Un68gg&t=740s
+      segment_ids:
+        - 0QxW3Un68gg:00142
+        - 0QxW3Un68gg:00143
+        - 0QxW3Un68gg:00144
+  - id: UhJHyel0ogQ-concept-wrapping-racket-path-around-the-ball-reviewed
+    evidence_type: definition
+    excerpt: A looping swing path that arcs around the ball rather than moving linearly forward, producing topspin and quality.
+    reason: The speaker explicitly says a linear push cannot create the arcing motion needed to wrap around the ball and generate heavy topspin.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: UhJHyel0ogQ
+      start_ms: 794666
+      end_ms: 804566
+      url: https://www.youtube.com/watch?v=UhJHyel0ogQ&t=794s
+      segment_ids:
+        - UhJHyel0ogQ:00153
+        - UhJHyel0ogQ:00154

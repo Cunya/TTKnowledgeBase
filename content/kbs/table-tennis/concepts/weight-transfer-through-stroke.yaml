@@ -684,6 +684,21 @@ evidence:
       segment_ids:
         - HlTqPv-MpGI:00005
         - HlTqPv-MpGI:00006
+  - id: jvt-6VNmBzs-cand-3-reviewed
+    evidence_type: definition
+    excerpt: Loading weight onto one leg, then shifting the center of gravity through the stroke to channel power into the shot.
+    reason: The teacher identifies incorrect weight placement as the problem and then explains the correct left-leg loading and center-of-gravity shift.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: jvt-6VNmBzs
+      start_ms: 28766
+      end_ms: 53066
+      url: https://www.youtube.com/watch?v=jvt-6VNmBzs&t=28s
+      segment_ids:
+        - jvt-6VNmBzs:00003
+        - jvt-6VNmBzs:00008
 relations:
   - relation_type: used_with
     target_concept_id: concept-loaded-legs

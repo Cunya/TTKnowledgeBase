@@ -7,10 +7,11 @@ aliases:
 short_definition: A good forehand loop requires waiting for the ball to descend into the correct contact window rather than rushing at it.
 evidence_summary: >-
   Wait for the ball in the loop brings together several connected ideas. Failing to wait for the
-  ball is the biggest problem and that a good loop requires waiting. Together, these principles
-  show how the topic is applied in practice while preserving the relevant distinctions and
-  constraints.
-evidence_summary_source_hash: "sha256:e5d36a181ffe4335693157977186854fbf47446f253c43fb3d349f6d67fe14d8"
+  ball is the biggest problem and that a good loop requires waiting. To slow the overall rhythm,
+  wait for the ball, and let speed come from acceleration at contact. Rushing causes immediate
+  errors and that pro timing is after the peak of the bounce. Together, these principles show how
+  the topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:3aea7258c663e8b169c5409feb8c87d899d5f00d2b38a3028d4f384c8b5af4cc"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -45,3 +46,36 @@ evidence:
       segment_ids:
         - Myj_Ros1xV8:00127
         - Myj_Ros1xV8:00129
+  - id: a1vta4dOA2Q-concept-wait-for-the-ball-in-the-loop-reviewed
+    evidence_type: explanation
+    excerpt: Delay the swing until the ball is ready, then accelerate through contact instead of rushing early.
+    reason: The speaker repeatedly says to slow the overall rhythm, wait for the ball, and let speed come from acceleration at contact.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: a1vta4dOA2Q
+      start_ms: 570233
+      end_ms: 595600
+      url: https://www.youtube.com/watch?v=a1vta4dOA2Q&t=570s
+      segment_ids:
+        - a1vta4dOA2Q:00114
+        - a1vta4dOA2Q:00115
+        - a1vta4dOA2Q:00116
+        - a1vta4dOA2Q:00117
+        - a1vta4dOA2Q:00118
+  - id: swjcy483f2w-concept-wait-for-the-ball-in-the-loop-reviewed
+    evidence_type: explanation
+    excerpt: Do not rush the loop; let the ball come deeper before striking.
+    reason: The speaker says rushing causes immediate errors and that pro timing is after the peak of the bounce.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: swjcy483f2w
+      start_ms: 357566
+      end_ms: 371533
+      url: https://www.youtube.com/watch?v=swjcy483f2w&t=357s
+      segment_ids:
+        - swjcy483f2w:00072
+        - swjcy483f2w:00074

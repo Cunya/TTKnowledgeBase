@@ -8,18 +8,18 @@ aliases:
 short_definition: A serve-disguise method where the start and finish of the motion look identical even though the contact and spin differ.
 evidence_summary: >-
   Serve disguise with identical motion brings together several connected ideas. The starting and
-  finishing motions must look identical and a fake motion to hide spin. The earlier motion was too
-  obvious and that a later version creates deception and is more deceptive. Serves that look
-  different to the receiver and players create serve patterns to trick opponents. To use the exact
-  same motion for different spin returns and compares it to an advanced side-swipe motion used by
-  top players. Says the action must be executed from the start to contact and maintained
-  consistently. The motion for backspin and topspin can be identical and that deceptive motion
-  makes the serve difficult to read. Making the motion look identical while disguising the real
-  serve direction and follow-through. Sidespin-backspin and sidespin-topspin can be served with
-  the exact same motion and that the threat comes from deception. Additional points reinforce the
-  same theme. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:a1b3b533f8ab6fba8558217272365b58ee03dcc66565d7341d8c9be333ad2894"
+  finishing motions must look identical and a fake motion to hide spin. The serve becomes useless
+  if exposed and asks how to make topspin look like backspin, indicating disguise by identical
+  motion. To use the exact same motion for different spin returns and compares it to an advanced
+  side-swipe motion used by top players. Says the action must be executed from the start to
+  contact and maintained consistently. The motion for backspin and topspin can be identical and
+  that deceptive motion makes the serve difficult to read. Making the motion look identical while
+  disguising the real serve direction and follow-through. Identical toss, backswing, and contact
+  point reduce read time and make the serve deceptive. He demonstrates that side-top and
+  side-under motions should look the same, including identical follow-through. Additional points
+  reinforce the same theme. Together, these principles show how the topic is applied in practice
+  while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:9e1af7e09b8442f66c6efca0cfa91cace17438bedf351aebbb1322ac90da3bfb"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -228,3 +228,49 @@ evidence:
       segment_ids:
         - b8ivXEfdO7c:00012
         - b8ivXEfdO7c:00014
+  - id: xsJ6JJAeTVc-concept-serve-disguise-with-identical-motion-reviewed
+    evidence_type: definition
+    excerpt: A serving method that keeps toss height, backswing size, and contact point the same so the opponent cannot read the serve early.
+    reason: The speaker explains that identical toss, backswing, and contact point reduce read time and make the serve deceptive.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: xsJ6JJAeTVc
+      start_ms: 203033
+      end_ms: 230533
+      url: https://www.youtube.com/watch?v=xsJ6JJAeTVc&t=203s
+      segment_ids:
+        - xsJ6JJAeTVc:00039
+        - xsJ6JJAeTVc:00040
+        - xsJ6JJAeTVc:00041
+        - xsJ6JJAeTVc:00044
+  - id: 8QSCtikekto-concept-serve-disguise-with-identical-motion-reviewed
+    evidence_type: explanation
+    excerpt: Using a serve motion that appears the same while producing different spins or outcomes.
+    reason: The speaker explicitly describes deceptive serves where the motion looks like one spin but is actually another.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 8QSCtikekto
+      start_ms: 720500
+      end_ms: 749400
+      url: https://www.youtube.com/watch?v=8QSCtikekto&t=720s
+      segment_ids:
+        - 8QSCtikekto:00140
+        - 8QSCtikekto:00143
+  - id: jFuVRHkNWg4-concept-serve-disguise-with-identical-motion-reviewed
+    evidence_type: demonstration
+    excerpt: The server should make different spins look nearly identical so the opponent cannot read the serve.
+    reason: He demonstrates that side-top and side-under motions should look the same, including identical follow-through.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: jFuVRHkNWg4
+      start_ms: 463966
+      end_ms: 473266
+      url: https://www.youtube.com/watch?v=jFuVRHkNWg4&t=463s
+      segment_ids:
+        - jFuVRHkNWg4:00088

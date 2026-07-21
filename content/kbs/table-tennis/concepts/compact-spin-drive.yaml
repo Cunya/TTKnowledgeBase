@@ -8,10 +8,12 @@ aliases:
 short_definition: A compact hybrid receive/attack stroke that blends brushing and driving when the incoming ball is unclear.
 evidence_summary: >-
   Compact spin-drive brings together several connected ideas. A compact spin-drive as the neutral
-  solution between a pure loop and a pure drive, for both backhand and forehand. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:e2cbb38fe034395a1f25cf0e7d764d7e8a4dcf74e83b78732feb3e7871ae67b1"
+  solution between a pure loop and a pure drive, for both backhand and forehand. The stroke into
+  phases, with brushing first and arm-driven power afterward, and names this a proper loop-drive.
+  The compact loop is described as a topspin stroke focused on power and speed, not friction,
+  which matches a compact spin-drive concept. Together, these principles show how the topic is
+  applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:9841dc1d27942383c01c65679bc68b479d3f787646916117e2746fa6b27899f5"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -49,3 +51,33 @@ evidence:
         - ywhpUTdXW7I:00177
         - ywhpUTdXW7I:00178
         - ywhpUTdXW7I:00179
+  - id: 4oXvbNfXK8U-concept-compact-spin-drive-reviewed
+    evidence_type: explanation
+    excerpt: A stroke structure that first brushes for spin, then accelerates forward with the arm to add power and create a loop-drive.
+    reason: The speaker breaks the stroke into phases, with brushing first and arm-driven power afterward, and names this a proper loop-drive.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 4oXvbNfXK8U
+      start_ms: 1027433
+      end_ms: 1045000
+      url: https://www.youtube.com/watch?v=4oXvbNfXK8U&t=1027s
+      segment_ids:
+        - 4oXvbNfXK8U:00206
+        - 4oXvbNfXK8U:00208
+  - id: yGWrxxrcvN4-concept-compact-spin-drive-reviewed
+    evidence_type: definition
+    excerpt: A compact topspin stroke that prioritizes power and speed over added friction, with forearm-led execution and minimal wrist involvement.
+    reason: The compact loop is described as a topspin stroke focused on power and speed, not friction, which matches a compact spin-drive concept.
+    confidence: 0.86
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: yGWrxxrcvN4
+      start_ms: 352766
+      end_ms: 363800
+      url: https://www.youtube.com/watch?v=yGWrxxrcvN4&t=352s
+      segment_ids:
+        - yGWrxxrcvN4:00071
+        - yGWrxxrcvN4:00072

@@ -8,9 +8,14 @@ aliases:
 short_definition: The mismatch between practice drills and actual match situations, requiring training that transfers to real play.
 evidence_summary: >-
   Practice-match disconnect brings together several connected ideas. The mismatch between practice
-  and real-game scenarios. Together, these principles show how the topic is applied in practice
-  while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:1375d91a9bf3e82d7f3c09abad9f807afaa5e52c7a391901c12b8845095a5ed4"
+  and real-game scenarios. The rushed drill rhythm will not work in a match and that real-match
+  serve-and-attack or receive cannot be practiced by simply playing out points. By contrasting
+  simple drills with complex match situations and later repeats the same theme directly. A useful
+  contrast is between unstable rally execution and multi-ball training and says single-ball
+  rallies should prioritize consistency while multi-ball can emphasize quality and power.
+  Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:fb89eebbdde58645c0716a8c93b98bb821a26f5a57c4970145021acd063af2ad"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -43,3 +48,51 @@ evidence:
         - lXTZ5lpaWXE:00000
         - lXTZ5lpaWXE:00001
         - lXTZ5lpaWXE:00002
+  - id: -uuSx6fU8yY-concept-practice-match-disconnect-reviewed
+    evidence_type: explanation
+    excerpt: The mismatch between cooperative practice and actual match conditions, which makes real-game execution difficult if training is not structured correctly.
+    reason: The speaker says the rushed drill rhythm will not work in a match and that real-match serve-and-attack or receive cannot be practiced by simply playing out points.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: -uuSx6fU8yY
+      start_ms: 487600
+      end_ms: 499866
+      url: https://www.youtube.com/watch?v=-uuSx6fU8yY&t=487s
+      segment_ids:
+        - -uuSx6fU8yY:00091
+        - -uuSx6fU8yY:00092
+        - -uuSx6fU8yY:00093
+  - id: bmK4umFK2Gs-concept-practice-match-disconnect-reviewed
+    evidence_type: definition
+    excerpt: The gap between simple practice patterns and the complex, variable situations encountered in matches.
+    reason: The transcript opens by contrasting simple drills with complex match situations and later repeats the same theme directly.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: bmK4umFK2Gs
+      start_ms: 0
+      end_ms: 15000
+      url: https://www.youtube.com/watch?v=bmK4umFK2Gs&t=0s
+      segment_ids:
+        - bmK4umFK2Gs:00000
+        - bmK4umFK2Gs:00001
+  - id: V9r3Z6D3skI-concept-practice-match-disconnect-reviewed
+    evidence_type: explanation
+    excerpt: The gap between what can be trained in controlled practice and what remains stable in a real rally or match.
+    reason: The speaker contrasts unstable rally execution with multi-ball training and says single-ball rallies should prioritize consistency while multi-ball can emphasize quality and power.
+    confidence: 0.86
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: V9r3Z6D3skI
+      start_ms: 158166
+      end_ms: 180666
+      url: https://www.youtube.com/watch?v=V9r3Z6D3skI&t=158s
+      segment_ids:
+        - V9r3Z6D3skI:00027
+        - V9r3Z6D3skI:00028
+        - V9r3Z6D3skI:00029
+        - V9r3Z6D3skI:00031

@@ -8,10 +8,11 @@ aliases:
 short_definition: Better brushing friction increases consistency, on-table success, and spin generation.
 evidence_summary: >-
   Friction improves spin and consistency brings together several connected ideas. Friction
-  directly raises consistency and spin-handling ability and can solve spin problems. Together,
-  these principles show how the topic is applied in practice while preserving the relevant
-  distinctions and constraints.
-evidence_summary_source_hash: "sha256:563d077dd2f53aa551bce71be2f8f4173897adebdb42b78b73c90dba67283f70"
+  directly raises consistency and spin-handling ability and can solve spin problems. A good loop
+  combines impact and friction, and that pure friction or pure impact produces weaker or less
+  consistent results. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:c213bc5e2e482e5d66039e7eac8da3c44317801b8cd5b2a068abee953ac9baae"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -47,3 +48,34 @@ evidence:
         - CD09LNI2fYk:00010
         - CD09LNI2fYk:00011
         - CD09LNI2fYk:00012
+  - id: y7Xd49MgdbQ-concept-loop-quality-depends-on-friction-and-solid-contact-reviewed
+    evidence_type: definition
+    excerpt: A reliable loop needs both friction and solid contact so the shot can clear the net and maintain consistency.
+    reason: The speaker states that a good loop combines impact and friction, and that pure friction or pure impact produces weaker or less consistent results.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: y7Xd49MgdbQ
+      start_ms: 508433
+      end_ms: 528533
+      url: https://www.youtube.com/watch?v=y7Xd49MgdbQ&t=508s
+      segment_ids:
+        - y7Xd49MgdbQ:00104
+        - y7Xd49MgdbQ:00105
+        - y7Xd49MgdbQ:00106
+  - id: HLmkP4I2jqM-concept-friction-improves-spin-and-consistency-reviewed
+    evidence_type: definition
+    excerpt: Improving brushing friction increases spin and makes the shot more stable and reliable.
+    reason: The speaker directly links creating friction with more spin and better stability.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: HLmkP4I2jqM
+      start_ms: 25366
+      end_ms: 34500
+      url: https://www.youtube.com/watch?v=HLmkP4I2jqM&t=25s
+      segment_ids:
+        - HLmkP4I2jqM:00005
+        - HLmkP4I2jqM:00006

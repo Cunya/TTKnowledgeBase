@@ -439,6 +439,57 @@ evidence:
       segment_ids:
         - EMHCC5XbkvY:00126
         - EMHCC5XbkvY:00129
+  - id: a9wtW1BV-6M-concept-serve-selection-and-follow-up-reviewed
+    evidence_type: explanation
+    excerpt: Choosing serve types based on the game plan, then sequencing follow-up serves to shape the opponent's response and open later attacks.
+    reason: 'The speaker lays out serve sequencing: start with backspin to set up topspin, use short or long serves first depending on the intended attack, and use opening serves to control focus rather than as the main strategy.'
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: a9wtW1BV-6M
+      start_ms: 427100
+      end_ms: 454066
+      url: https://www.youtube.com/watch?v=a9wtW1BV-6M&t=427s
+      segment_ids:
+        - a9wtW1BV-6M:00085
+        - a9wtW1BV-6M:00088
+        - a9wtW1BV-6M:00089
+        - a9wtW1BV-6M:00090
+        - a9wtW1BV-6M:00091
+  - id: VQlnNbgMmR8-concept-serve-selection-and-follow-up-reviewed
+    evidence_type: explanation
+    excerpt: The idea that serve choice and the serve itself are central because the server controls the shot and can use the next ball to attack.
+    reason: The speaker explicitly says the serve and receive are the two crucial skills, then states the serve is the most important and that it sets up the attack.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: VQlnNbgMmR8
+      start_ms: 8333
+      end_ms: 25066
+      url: https://www.youtube.com/watch?v=VQlnNbgMmR8&t=8s
+      segment_ids:
+        - VQlnNbgMmR8:00002
+        - VQlnNbgMmR8:00004
+  - id: pQcxGOu4wEE-concept-serve-selection-and-follow-up-reviewed
+    evidence_type: explanation
+    excerpt: 'Serve choices should be staged across the match: use conventional backspin early, then introduce the deceptive topspin version at key points after setting it up.'
+    reason: The speaker recommends using the deceptive serve only at crucial points after establishing the backspin motion first, which is serve sequencing and follow-up planning.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: pQcxGOu4wEE
+      start_ms: 753700
+      end_ms: 778966
+      url: https://www.youtube.com/watch?v=pQcxGOu4wEE&t=753s
+      segment_ids:
+        - pQcxGOu4wEE:00158
+        - pQcxGOu4wEE:00159
+        - pQcxGOu4wEE:00160
+        - pQcxGOu4wEE:00161
+        - pQcxGOu4wEE:00162
 relations:
   - relation_type: related_to
     target_concept_id: concept-short-serve-third-ball-attack

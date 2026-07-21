@@ -10,17 +10,18 @@ evidence_summary: >-
   Use placement to move the opponent and lower return quality brings together several connected
   ideas. Changing placement moves the opponent, lowers return quality, and increases the quality
   of the next shot. The goal is to control and trouble the opponent, then later emphasizes speed
-  and placement to give the opponent less time to react. The goal is to disguise placement, force
-  movement, observe positioning, and create an attack opportunity. To prioritize placement, aim at
-  awkward locations, and force the opponent to move so their attack quality falls. Aiming to the
-  opponent's wide sideline to force large movement and lower the chance of a strong forehand
-  attack. The tactic explicitly in sequence: pressure backhand, then attack the wide angle.
-  Defensive positioning as locking down the cross-court and adjusting stance based on serve
-  location and predicted reply. Steering wide serves to the opponent's backhand, jamming them, and
-  placing returns deep to a targeted wing to restrict their next attack. Additional points
-  reinforce the same theme. Together, these principles show how the topic is applied in practice
-  while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:365e2d79e228e65b42353927c961eb871780031575301c227ead63f4a893dd22"
+  and placement to give the opponent less time to react. Aiming long to the opponent's middle
+  because it is awkward and leads to weak returns that set up a loop. Aiming to the opponent's
+  wide sideline to force large movement and lower the chance of a strong forehand attack. Mindful
+  placement, explicitly avoiding the forehand and returning to the backhand side for better
+  control. Defensive positioning as locking down the cross-court and adjusting stance based on
+  serve location and predicted reply. Steering wide serves to the opponent's backhand, jamming
+  them, and placing returns deep to a targeted wing to restrict their next attack. Placement to
+  exploit stance, center of gravity, and reach, and the table corner acts as a barrier that
+  stretches the opponent and shapes the return. Additional points reinforce the same theme.
+  Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:e032e927ccba08584994c29069cefdd2241acb20ab3000d3f9a9c18144d3783c"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -238,3 +239,36 @@ evidence:
         - 2HMLpiaJLL0:00084
         - 2HMLpiaJLL0:00085
         - 2HMLpiaJLL0:00086
+  - id: JxbUnbUD_OY-concept-use-placement-to-move-the-opponent-and-lower-return-quality-reviewed
+    evidence_type: example
+    excerpt: Winning by changing placement to move the opponent and exploit their position rather than relying on maximum power.
+    reason: He instructs the player to attack based on opponent weight shift and says he won by outplacing the opponent, not by power.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: JxbUnbUD_OY
+      start_ms: 500366
+      end_ms: 520566
+      url: https://www.youtube.com/watch?v=JxbUnbUD_OY&t=500s
+      segment_ids:
+        - JxbUnbUD_OY:00105
+        - JxbUnbUD_OY:00108
+        - JxbUnbUD_OY:00109
+  - id: a9wtW1BV-6M-concept-use-placement-to-move-the-opponent-and-lower-return-quality-reviewed
+    evidence_type: explanation
+    excerpt: Use serve placement to stretch the opponent, disrupt balance, and force weaker returns.
+    reason: The speaker repeatedly uses placement to exploit stance, center of gravity, and reach, and says the table corner acts as a barrier that stretches the opponent and shapes the return.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: a9wtW1BV-6M
+      start_ms: 294700
+      end_ms: 319666
+      url: https://www.youtube.com/watch?v=a9wtW1BV-6M&t=294s
+      segment_ids:
+        - a9wtW1BV-6M:00060
+        - a9wtW1BV-6M:00061
+        - a9wtW1BV-6M:00062
+        - a9wtW1BV-6M:00063

@@ -8,9 +8,11 @@ short_definition: Changing racket height and backswing height to match the incom
 evidence_summary: >-
   Forehand stroke height adjustment brings together several connected ideas. Racket height should
   be adjusted to the ball's height and that lowering the backswing helps get low balls over the
-  net. Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:ca9f945f481fb744f12b65b7ee2f866e6023b76b637478483b7c12f0c6fb15b5"
+  net. Higher balls need a higher backswing and low balls require lowering the racket, with
+  adjustment based on incoming ball height. Closer or shorter balls require more compact control
+  and that farther balls require more space. Together, these principles show how the topic is
+  applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:4c1fc2dbc9e4d29f3ee80e00c76956792abb0498f74e7b9690b5fed4c809f67f"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -45,3 +47,39 @@ evidence:
         - 1Issn-5noM4:00008
         - 1Issn-5noM4:00009
         - 1Issn-5noM4:00010
+  - id: VR1gORHDMeQ-concept-forehand-stroke-height-adjustment-reviewed
+    evidence_type: explanation
+    excerpt: Changing racket height and backswing height to match the incoming ball height.
+    reason: The speaker explains that higher balls need a higher backswing and low balls require lowering the racket, with adjustment based on incoming ball height.
+    confidence: 0.92
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: VR1gORHDMeQ
+      start_ms: 22200
+      end_ms: 51233
+      url: https://www.youtube.com/watch?v=VR1gORHDMeQ&t=22s
+      segment_ids:
+        - VR1gORHDMeQ:00005
+        - VR1gORHDMeQ:00006
+        - VR1gORHDMeQ:00009
+        - VR1gORHDMeQ:00011
+  - id: fX0-3KtEzUY-concept-forehand-stroke-height-adjustment-reviewed
+    evidence_type: explanation
+    excerpt: Changing racket height and stroke shape according to the incoming ball height and distance, especially for short balls and high balls.
+    reason: The speaker explains that closer or shorter balls require more compact control and that farther balls require more space.
+    confidence: 0.85
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: fX0-3KtEzUY
+      start_ms: 645300
+      end_ms: 674333
+      url: https://www.youtube.com/watch?v=fX0-3KtEzUY&t=645s
+      segment_ids:
+        - fX0-3KtEzUY:00130
+        - fX0-3KtEzUY:00131
+        - fX0-3KtEzUY:00132
+        - fX0-3KtEzUY:00133
+        - fX0-3KtEzUY:00134
+        - fX0-3KtEzUY:00135

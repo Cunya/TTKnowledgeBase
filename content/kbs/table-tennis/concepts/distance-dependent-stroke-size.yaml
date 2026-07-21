@@ -9,9 +9,16 @@ aliases:
 short_definition: 'Stroke size should scale with distance from the table: compact close in, fuller at mid-distance, and very large farther away.'
 evidence_summary: >-
   Distance-dependent stroke size brings together several connected ideas. Swing size and body
-  mechanics to distance from the table. Together, these principles show how the topic is applied
-  in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:5a4a2c4c452fbb9441d853947aa25545f0af11ff8c41652bf06f7fb9c8de4e34"
+  mechanics to distance from the table. Half-long balls should be looped while moving forward to
+  close the distance, and a reasonable range is enough for amateurs. Multiple segments state that
+  distance determines swing size, forearm height, and whether upper arm contribution is needed.
+  Being too close jams the stroke and that looping needs about one meter of distance to allow a
+  proper stroke. A concrete rule: arm's length for deep balls and forearm's length for short or
+  half-long balls. Balls by depth and ties each depth to different spacing requirements. Rushing
+  often comes from standing too close, that players need at least arm's length, and that short
+  balls can be handled by stepping in. Together, these principles show how the topic is applied in
+  practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:8a6bfa60d46a97b64c315542cf06dd53e2618cbbe26538915a788a104b683b42"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -50,3 +57,100 @@ evidence:
         - PVNp35T9kL4:00051
         - PVNp35T9kL4:00052
         - PVNp35T9kL4:00053
+  - id: wTQKSbQndR8-concept-distance-dependent-stroke-size-reviewed
+    evidence_type: explanation
+    excerpt: Stroke choice and size should change with distance and ball length; close or fast situations require compact movement, while other balls allow more time.
+    reason: The speaker says half-long balls should be looped while moving forward to close the distance, and a reasonable range is enough for amateurs.
+    confidence: 0.9
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: wTQKSbQndR8
+      start_ms: 315933
+      end_ms: 326900
+      url: https://www.youtube.com/watch?v=wTQKSbQndR8&t=315s
+      segment_ids:
+        - wTQKSbQndR8:00066
+        - wTQKSbQndR8:00067
+  - id: hDpdmRuaLMY-concept-distance-dependent-stroke-size-reviewed
+    evidence_type: explanation
+    excerpt: 'Stroke size and arm involvement should scale with distance from the table: compact near the table, larger and more arm-driven from mid to far distance.'
+    reason: Multiple segments state that distance determines swing size, forearm height, and whether upper arm contribution is needed.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: hDpdmRuaLMY
+      start_ms: 675033
+      end_ms: 700900
+      url: https://www.youtube.com/watch?v=hDpdmRuaLMY&t=675s
+      segment_ids:
+        - hDpdmRuaLMY:00128
+        - hDpdmRuaLMY:00129
+        - hDpdmRuaLMY:00132
+        - hDpdmRuaLMY:00133
+  - id: UhJHyel0ogQ-concept-distance-dependent-stroke-size-reviewed
+    evidence_type: explanation
+    excerpt: Stroke size and shape should change with distance from the table, with looping requiring more space and a larger backswing than close-table driving.
+    reason: The speaker says being too close jams the stroke and that looping needs about one meter of distance to allow a proper stroke.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: UhJHyel0ogQ
+      start_ms: 80133
+      end_ms: 104133
+      url: https://www.youtube.com/watch?v=UhJHyel0ogQ&t=80s
+      segment_ids:
+        - UhJHyel0ogQ:00017
+        - UhJHyel0ogQ:00020
+        - UhJHyel0ogQ:00021
+  - id: xAxrT5EE-mY-concept-distance-dependent-stroke-size-reviewed
+    evidence_type: definition
+    excerpt: Adjust stroke spacing and effective reach based on whether the incoming ball is short, half-long, or deep.
+    reason: "The speaker gives a concrete rule: arm's length for deep balls and forearm's length for short or half-long balls."
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: xAxrT5EE-mY
+      start_ms: 144666
+      end_ms: 171666
+      url: https://www.youtube.com/watch?v=xAxrT5EE-mY&t=144s
+      segment_ids:
+        - xAxrT5EE-mY:00029
+        - xAxrT5EE-mY:00033
+  - id: AJeZkjOEJkk-concept-distance-dependent-stroke-size-reviewed
+    evidence_type: definition
+    excerpt: Adjust your stroke spacing and size according to whether the ball is short, half-long, or deep.
+    reason: Speaker explicitly classifies balls by depth and ties each depth to different spacing requirements.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: AJeZkjOEJkk
+      start_ms: 525000
+      end_ms: 550200
+      url: https://www.youtube.com/watch?v=AJeZkjOEJkk&t=525s
+      segment_ids:
+        - AJeZkjOEJkk:00114
+        - AJeZkjOEJkk:00117
+        - AJeZkjOEJkk:00118
+        - AJeZkjOEJkk:00119
+  - id: oFlDgbWYjyk-concept-distance-dependent-stroke-size-reviewed
+    evidence_type: explanation
+    excerpt: Adjusting stroke preparation and contact distance according to ball depth and table distance so you are not jammed.
+    reason: The transcript says rushing often comes from standing too close, that players need at least arm's length, and that short balls can be handled by stepping in.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: oFlDgbWYjyk
+      start_ms: 293233
+      end_ms: 315333
+      url: https://www.youtube.com/watch?v=oFlDgbWYjyk&t=293s
+      segment_ids:
+        - oFlDgbWYjyk:00062
+        - oFlDgbWYjyk:00063
+        - oFlDgbWYjyk:00066
+        - oFlDgbWYjyk:00067

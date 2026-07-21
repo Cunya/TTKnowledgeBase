@@ -9,19 +9,18 @@ aliases:
 short_definition: A distinction between brushing contact that creates spin and percussive contact that is mainly impact with little spin.
 evidence_summary: >-
   Friction vs impact brings together several connected ideas. A useful contrast is between
-  friction and impact and describes each with tactile and motion cues. Friction as the main topic
-  and generating friction is harder than generating power. A useful contrast is between minimizing
-  flat impact and increasing friction and describes curved brushing as the solution to heavy spin
-  and trajectory control. The hardest part is combining friction and power, and distinguishes spin
-  generation from power generation. A useful contrast is between a flat push and brushing to
-  create friction and says the racket face must create enough friction. Directly says that
-  brushing without forward drive causes slipping and that drive is needed to create friction. A
-  useful contrast is between brushing/friction and hitting/impact and explains how each affects
-  spin and speed. A useful contrast is between brushing friction and flat impact and says true
-  friction is the harder, real skill. Additional points reinforce the same theme. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:5cba044fb2b01df08d738ad0d27d97c983631d56a814df311f48a65da3fbeb79"
+  friction and impact and describes each with tactile and motion cues. A useful contrast is
+  between brushing/friction and pushing/impact and says spin depends on concentrated friction. The
+  hardest part is combining friction and power, and distinguishes spin generation from power
+  generation. Directly says that brushing without forward drive causes slipping and that drive is
+  needed to create friction. A useful contrast is between brushing friction and flat impact and
+  says true friction is the harder, real skill. Practicing pure friction first and maximum
+  friction and brushing the bottom of the ball generate spin. Adjusting the ratio of hitting to
+  brushing and labels the extremes as friction-dominant and hit-dominant loops. A useful contrast
+  is between friction and impact and says to actively add friction to kill the spin and control it
+  yourself. Additional points reinforce the same theme. Together, these principles show how the
+  topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:cbd215cd853ff8cb5fa8e6afc6992c2a8beac25e7f14dfbecc041f6b5110c258"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -199,3 +198,95 @@ evidence:
         - jTCRnIWq0lI:00078
         - jTCRnIWq0lI:00079
         - jTCRnIWq0lI:00080
+  - id: CGidweVwLYw-concept-friction-development-reviewed
+    evidence_type: explanation
+    excerpt: Training the touch and brushing sensation needed for spin-based strokes, especially pushes, quick counters, and advanced friction techniques.
+    reason: The transcript directly frames friction feel as a central training objective.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: CGidweVwLYw
+      start_ms: 239733
+      end_ms: 247300
+      url: https://www.youtube.com/watch?v=CGidweVwLYw&t=239s
+      segment_ids:
+        - CGidweVwLYw:00050
+        - CGidweVwLYw:00051
+  - id: evEaxXmwJ2E-candidate-pure-friction-training-reviewed
+    evidence_type: drill
+    excerpt: Training the brushing contact so the racket produces strong friction and spin before trying to add speed or other refinements.
+    reason: The speaker recommends practicing pure friction first and says maximum friction and brushing the bottom of the ball generate spin.
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: evEaxXmwJ2E
+      start_ms: 41133
+      end_ms: 52133
+      url: https://www.youtube.com/watch?v=evEaxXmwJ2E&t=41s
+      segment_ids:
+        - evEaxXmwJ2E:00009
+        - evEaxXmwJ2E:00010
+  - id: Xt5RyN3qkSA-concept-friction-vs-impact-reviewed
+    evidence_type: definition
+    excerpt: The balance between solid impact and brushing friction in a forehand loop or drive.
+    reason: The speaker contrasts brushing with pure impact and explicitly names the impact-to-friction ratio as a high-level loop concern.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Xt5RyN3qkSA
+      start_ms: 377800
+      end_ms: 396666
+      url: https://www.youtube.com/watch?v=Xt5RyN3qkSA&t=377s
+      segment_ids:
+        - Xt5RyN3qkSA:00075
+        - Xt5RyN3qkSA:00076
+        - Xt5RyN3qkSA:00078
+  - id: D2hk2kkCdfI-concept-friction-vs-impact-reviewed
+    evidence_type: definition
+    excerpt: Choosing between more brushing friction and more forward impact in the loop depending on the spin and desired ball outcome.
+    reason: The speaker explicitly explains adjusting the ratio of hitting to brushing and labels the extremes as friction-dominant and hit-dominant loops.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: D2hk2kkCdfI
+      start_ms: 388266
+      end_ms: 394033
+      url: https://www.youtube.com/watch?v=D2hk2kkCdfI&t=388s
+      segment_ids:
+        - D2hk2kkCdfI:00081
+  - id: 4hnrmSJ_Ayg-concept-friction-vs-impact-reviewed
+    evidence_type: explanation
+    excerpt: The contrast between spin-producing frictional brushing and spin-reducing impact-driven hitting.
+    reason: The speaker repeatedly contrasts thin frictional brushing with thick/heavy impact, saying force at impact reduces spin while friction creates it.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 4hnrmSJ_Ayg
+      start_ms: 319500
+      end_ms: 343500
+      url: https://www.youtube.com/watch?v=4hnrmSJ_Ayg&t=319s
+      segment_ids:
+        - 4hnrmSJ_Ayg:00065
+        - 4hnrmSJ_Ayg:00067
+        - 4hnrmSJ_Ayg:00070
+  - id: qr632K778Cc-concept-use-friction-to-control-spin-reviewed
+    evidence_type: definition
+    excerpt: Use brushing friction, rather than pure impact, to neutralize and control incoming spin.
+    reason: The speaker explicitly contrasts friction with impact and says to actively add friction to kill the spin and control it yourself.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: qr632K778Cc
+      start_ms: 604466
+      end_ms: 628233
+      url: https://www.youtube.com/watch?v=qr632K778Cc&t=604s
+      segment_ids:
+        - qr632K778Cc:00127
+        - qr632K778Cc:00130
+        - qr632K778Cc:00131

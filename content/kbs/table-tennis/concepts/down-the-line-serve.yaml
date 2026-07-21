@@ -10,9 +10,11 @@ evidence_summary: >-
   Down the line serve brings together several connected ideas. A down-the-line serve and it is
   used at the start of a game and in critical moments. The opponent assuming the serve cannot go
   down the line and later says to hook it down the line. Serving down the line and the
-  follow-through direction that makes it happen. Together, these principles show how the topic is
-  applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:771c1c633936b41e0dd87000ee07f98f5d6a3ae472da983d5a46587e0efb3e49"
+  follow-through direction that makes it happen. Directly describes the serve, its mechanics, and
+  its power/timing constraints. The straight serve and keeping the follow-through parallel to the
+  end line for deception. Together, these principles show how the topic is applied in practice
+  while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:822a52389586a7cbf04d52f45610ebb058308928904b9e0fb0e7a601d30bb114"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -82,3 +84,34 @@ evidence:
         - kF3mAZD3GHs:00012
         - kF3mAZD3GHs:00014
         - kF3mAZD3GHs:00015
+  - id: Msruv1p5jp4-concept-down-the-line-serve-reviewed
+    evidence_type: definition
+    excerpt: A serve directed very straight along the line, requiring a close body contact point, controlled power, minimal body rotation, and earlier swing stop to keep the ball on the table.
+    reason: Directly describes the serve, its mechanics, and its power/timing constraints.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Msruv1p5jp4
+      start_ms: 601966
+      end_ms: 627433
+      url: https://www.youtube.com/watch?v=Msruv1p5jp4&t=601s
+      segment_ids:
+        - Msruv1p5jp4:00128
+        - Msruv1p5jp4:00129
+        - Msruv1p5jp4:00133
+  - id: zvQxT-Dkrkg-concept-straight-serve-reviewed
+    evidence_type: explanation
+    excerpt: A serve sent straight down the line, with follow-through controlled so the opponent cannot easily read the direction.
+    reason: The speaker explicitly labels the straight serve and describes keeping the follow-through parallel to the end line for deception.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: zvQxT-Dkrkg
+      start_ms: 780666
+      end_ms: 794766
+      url: https://www.youtube.com/watch?v=zvQxT-Dkrkg&t=780s
+      segment_ids:
+        - zvQxT-Dkrkg:00158
+        - zvQxT-Dkrkg:00160

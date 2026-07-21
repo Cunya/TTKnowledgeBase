@@ -8,18 +8,17 @@ aliases:
 short_definition: A compact backhand stroke built on correct timing, spacing, and coordinated upper-arm/forearm action, with a stable wrist and forward press rather than an active wrist flick.
 evidence_summary: >-
   Backhand drive brings together several connected ideas. The backhand drive as the topic and
-  timing and spacing must be correct first. States the backhand drive is forearm-generated, not
-  wrist-driven. A useful contrast is between backhand drives and riping and says backhand drives
-  can go long unless brush is added for safety. The backhand drive and gives the key mechanics of
-  wrist position and drive-through motion. To treat deep top-spin serves like a forehand drive and
-  to use a compact forward stroke with no backswing or rotation; the same compact logic is
-  extended to side-backspin deep serves. The backhand drive as a small-motion shot that hits the
-  back of the ball with forward impact. The backhand drive form and its two-step mechanism:
-  forward push, then forearm rotation after contact. A flat rush serve uses a standard backhand
-  drive, while a kicking serve requires closing the angle and raising contact height. Together,
-  these principles show how the topic is applied in practice while preserving the relevant
-  distinctions and constraints.
-evidence_summary_source_hash: "sha256:071b8101e7acc766ceeeab50848c5ca5af016830cb9d3a292e27f2371a9c10d1"
+  timing and spacing must be correct first. A useful contrast is between backhand drives and
+  riping and says backhand drives can go long unless brush is added for safety. The backhand drive
+  and gives the key mechanics of wrist position and drive-through motion. The backhand drive as a
+  small-motion shot that hits the back of the ball with forward impact. A flat rush serve uses a
+  standard backhand drive, while a kicking serve requires closing the angle and raising contact
+  height. The lesson as fundamentals of the backhand drive and its stance and table distance
+  requirements. The backhand drive and stance, backswing, and power . The backhand drive, then
+  defines it as forward drive first, forearm rotation after contact, and no wrist action.
+  Additional points reinforce the same theme. Together, these principles show how the topic is
+  applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:68c40ea3662c442c06540ba9a1e8cd7d260759bde0bc7a6a9308f92c7c770f7f"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -175,3 +174,82 @@ evidence:
       segment_ids:
         - qoK510cwjes:00114
         - qoK510cwjes:00118
+  - id: vzLW5MAX7gA-backhand-drive-timing-reviewed
+    evidence_type: explanation
+    excerpt: A backhand drive should be timed so the forward swing starts as the ball reaches its peak, not after the peak, to preserve power and avoid rushing the contact.
+    reason: The speaker explicitly names the backhand drive and explains its correct timing relative to the bounce peak and forward swing.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: vzLW5MAX7gA
+      start_ms: 12666
+      end_ms: 40566
+      url: https://www.youtube.com/watch?v=vzLW5MAX7gA&t=12s
+      segment_ids:
+        - vzLW5MAX7gA:00002
+        - vzLW5MAX7gA:00003
+        - vzLW5MAX7gA:00004
+        - vzLW5MAX7gA:00008
+  - id: CLBNvB5gemk-concept-backhand-drive-reviewed
+    evidence_type: definition
+    excerpt: A compact backhand stroke played close to the table, using forearm-led motion and a firm wrist to produce a stable, fast return.
+    reason: The transcript explicitly introduces the lesson as fundamentals of the backhand drive and explains its stance and table distance requirements.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: CLBNvB5gemk
+      start_ms: 0
+      end_ms: 12533
+      url: https://www.youtube.com/watch?v=CLBNvB5gemk&t=0s
+      segment_ids:
+        - CLBNvB5gemk:00000
+        - CLBNvB5gemk:00001
+        - CLBNvB5gemk:00002
+  - id: CGidweVwLYw-concept-backhand-drive-reviewed
+    evidence_type: definition
+    excerpt: A standard backhand stroke played from a stable angled stance with a firm wrist, elbow pivot, and forward arm-driven power.
+    reason: The speaker explicitly names the backhand drive and explains stance, backswing, and power source.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: CGidweVwLYw
+      start_ms: 311700
+      end_ms: 332533
+      url: https://www.youtube.com/watch?v=CGidweVwLYw&t=311s
+      segment_ids:
+        - CGidweVwLYw:00068
+        - CGidweVwLYw:00071
+  - id: pF8kIVSRExg-concept-backhand-drive-reviewed
+    evidence_type: example
+    excerpt: A more direct backhand attacking stroke that uses a slightly closed angle and a forward contact position compared with a rip.
+    reason: The speaker explicitly labels a demonstration as a backhand drive and gives angle/contact guidance for it.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: pF8kIVSRExg
+      start_ms: 607233
+      end_ms: 627733
+      url: https://www.youtube.com/watch?v=pF8kIVSRExg&t=607s
+      segment_ids:
+        - pF8kIVSRExg:00120
+        - pF8kIVSRExg:00122
+        - pF8kIVSRExg:00124
+  - id: ZwTDfALP1lk-concept-backhand-drive-reviewed
+    evidence_type: definition
+    excerpt: A backhand stroke built around driving forward first, with a stable wrist, compact motion, and forearm-led rotation at the end.
+    reason: The speaker explicitly names the backhand drive, then defines it as forward drive first, forearm rotation after contact, and no wrist action.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ZwTDfALP1lk
+      start_ms: 345833
+      end_ms: 373066
+      url: https://www.youtube.com/watch?v=ZwTDfALP1lk&t=345s
+      segment_ids:
+        - ZwTDfALP1lk:00073
+        - ZwTDfALP1lk:00077

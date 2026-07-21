@@ -10,9 +10,11 @@ evidence_summary: >-
   the stroke stiff with no acceleration, and that you should only grip at the end of the motion
   after the friction. To grip tightly only at the very end and not at contact. Early tension and
   early gripping with stiff, poor strokes and instructs a relaxed backswing with contact-time
-  acceleration. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:0408549637b3e9ba64c9aeef16de645e29beb10c0212b745dd176372a945688f"
+  acceleration. Gripping at contact is the wrong idea and that gripping happens after the brush.
+  Late gripping as the reason the flick fails and repeatedly says the grip must occur at the
+  instant of brushing, not after the forearm has finished moving. Together, these principles show
+  how the topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:50cdd44f51ba12bd6d6f727806241bf50f3a12af2e4eb70af9aaed4cc8dfc87d"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -77,3 +79,35 @@ evidence:
         - r75F4gsFaoQ:00100
         - r75F4gsFaoQ:00104
         - r75F4gsFaoQ:00105
+  - id: 4oXvbNfXK8U-concept-delay-gripping-until-after-contact-reviewed
+    evidence_type: definition
+    excerpt: Keeping the hand relaxed through contact and tightening the grip only after the brush is completed to stabilize the stroke.
+    reason: The speaker says gripping at contact is the wrong idea and that gripping happens after the brush.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 4oXvbNfXK8U
+      start_ms: 548933
+      end_ms: 572300
+      url: https://www.youtube.com/watch?v=4oXvbNfXK8U&t=548s
+      segment_ids:
+        - 4oXvbNfXK8U:00106
+        - 4oXvbNfXK8U:00109
+        - 4oXvbNfXK8U:00111
+  - id: cSDOaQqEtTQ-concept-delay-gripping-until-after-contact-reviewed
+    evidence_type: mistake
+    excerpt: Do not wait until the end of the swing to tighten the grip; the grip action must happen at impact to create braking and acceleration.
+    reason: The speaker identifies late gripping as the reason the flick fails and repeatedly says the grip must occur at the instant of brushing, not after the forearm has finished moving.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: cSDOaQqEtTQ
+      start_ms: 810033
+      end_ms: 830266
+      url: https://www.youtube.com/watch?v=cSDOaQqEtTQ&t=810s
+      segment_ids:
+        - cSDOaQqEtTQ:00167
+        - cSDOaQqEtTQ:00168
+        - cSDOaQqEtTQ:00170

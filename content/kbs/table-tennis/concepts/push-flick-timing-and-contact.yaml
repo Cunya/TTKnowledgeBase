@@ -9,9 +9,11 @@ short_definition: 'Select contact timing based on the incoming spin: rising poin
 evidence_summary: >-
   Push-flick timing and contact brings together several connected ideas. Rising point, peak, and
   falling contact as ideal timings for different ball types. They contact at the peak and avoid
-  the rise or the drop for consistency. Together, these principles show how the topic is applied
-  in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:1cfdd82ced8ff0f40d4a439d9a4b8513734ce148c55d39b82d6a107ce58b1db9"
+  the rise or the drop for consistency. Flicks should be taken on the rise or at the peak of the
+  bounce, never on the descent, and specifically says half-long flicks must be contacted over the
+  table. Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:dc8cc34785b020c44558b53be42dc94b359b124e24bea715289bbfe237045178"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -64,3 +66,20 @@ evidence:
       url: https://www.youtube.com/watch?v=mPRFTyZICY4&t=25s
       segment_ids:
         - mPRFTyZICY4:00006
+  - id: cSDOaQqEtTQ-concept-backhand-flick-timing-and-contact-reviewed
+    evidence_type: explanation
+    excerpt: The backhand flick should be contacted at the peak of the bounce or on the rise, over the table rather than on the descent.
+    reason: The speaker states that flicks should be taken on the rise or at the peak of the bounce, never on the descent, and specifically says half-long flicks must be contacted over the table.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: cSDOaQqEtTQ
+      start_ms: 592400
+      end_ms: 611166
+      url: https://www.youtube.com/watch?v=cSDOaQqEtTQ&t=592s
+      segment_ids:
+        - cSDOaQqEtTQ:00127
+        - cSDOaQqEtTQ:00129
+        - cSDOaQqEtTQ:00130
+        - cSDOaQqEtTQ:00131

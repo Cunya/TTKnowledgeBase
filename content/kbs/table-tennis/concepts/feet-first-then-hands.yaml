@@ -8,10 +8,13 @@ short_definition: Use the feet and center of gravity to get into position before
 evidence_summary: >-
   Feet first, then hands brings together several connected ideas. The player to let the feet move
   first and only then begin the backswing or hand action. In drills you should move your feet
-  first, then hit, and frames feet-first mechanics as the textbook ideal. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:5055dd61842af3a9d3d1d865cdfeb5e5db19e399b5351951bb65f322cec49d27"
+  first, then hit, and frames feet-first mechanics as the textbook ideal. The 'feet first, then
+  stroke' method and foot movement must initiate before the hand/stroke action. The correct
+  sequence is body and feet move first, then backswing, and demonstrates the same order. The 'land
+  and hit' technique and it with the ideal of moving feet first before hitting. To move the feet
+  first and then the hand when dealing with short balls. Together, these principles show how the
+  topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:005b7bca94070cd4a0ee2322499a7c98e81927ba170a725bc7c8e42438270347"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -60,3 +63,63 @@ evidence:
       segment_ids:
         - qsY3S06fjgA:00120
         - qsY3S06fjgA:00121
+  - id: wTQKSbQndR8-concept-feet-first-then-hands-reviewed
+    evidence_type: definition
+    excerpt: A movement sequence where the feet must get into position before initiating the stroke or swing.
+    reason: The transcript names the 'feet first, then stroke' method and explains that foot movement must initiate before the hand/stroke action.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: wTQKSbQndR8
+      start_ms: 590233
+      end_ms: 597533
+      url: https://www.youtube.com/watch?v=wTQKSbQndR8&t=590s
+      segment_ids:
+        - wTQKSbQndR8:00124
+  - id: JxbUnbUD_OY-concept-feet-first-then-hands-reviewed
+    evidence_type: definition
+    excerpt: In receive and transition play, move the body and feet into position before starting the swing or backswing.
+    reason: The speaker states the correct sequence is body and feet move first, then backswing, and demonstrates the same order.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: JxbUnbUD_OY
+      start_ms: 268000
+      end_ms: 297600
+      url: https://www.youtube.com/watch?v=JxbUnbUD_OY&t=268s
+      segment_ids:
+        - JxbUnbUD_OY:00054
+        - JxbUnbUD_OY:00060
+  - id: pF8kIVSRExg-concept-feet-first-then-hands-reviewed
+    evidence_type: explanation
+    excerpt: A timing pattern where the player moves the feet first, or at minimum synchronizes stepping with the stroke when reactions are late.
+    reason: The speaker names the 'land and hit' technique and contrasts it with the ideal of moving feet first before hitting.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: pF8kIVSRExg
+      start_ms: 180600
+      end_ms: 205400
+      url: https://www.youtube.com/watch?v=pF8kIVSRExg&t=180s
+      segment_ids:
+        - pF8kIVSRExg:00039
+        - pF8kIVSRExg:00041
+  - id: oFlDgbWYjyk-concept-feet-first-then-hands-reviewed
+    evidence_type: definition
+    excerpt: For short balls and rushed situations, establish foot position before beginning the hand stroke.
+    reason: The speaker explicitly instructs to move the feet first and then the hand when dealing with short balls.
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: oFlDgbWYjyk
+      start_ms: 411466
+      end_ms: 430933
+      url: https://www.youtube.com/watch?v=oFlDgbWYjyk&t=411s
+      segment_ids:
+        - oFlDgbWYjyk:00089
+        - oFlDgbWYjyk:00090
+        - oFlDgbWYjyk:00091

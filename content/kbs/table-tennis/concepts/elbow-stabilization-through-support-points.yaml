@@ -11,17 +11,17 @@ short_definition: Stabilize the elbow by fixing its position, keeping the should
 evidence_summary: >-
   Elbow stabilization through support points brings together several connected ideas. The elbow
   must stay fixed, the shoulder must stay firm, and the elbow should brake and stop as the forearm
-  retracts. The elbow as the pivot and the forearm should rotate around it for a smooth backhand
-  stroke. How to stabilize the elbow with the left hand, pressing in the middle and directing
-  force downward. The elbow acts as a pivot, should remain stable, should not drift, and that
-  moving it with the arm causes jamming. The elbow must stay outside the body, act as a fixed
-  pivot, and point down to prevent going long. The elbow should guide downward, stay near the
-  waist, face the ground, and not lead or flare. The elbow must remain fixed and act as a pivot,
-  warning that dropping the elbow causes failure. The elbow is the most important joint, should
-  stay positioned, and must not move with the swing. Additional points reinforce the same theme.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:4089760987229650315f10d617c1faf7d55c2c760737666965e2f56ad44b4369"
+  retracts. The wrist, forearm, or elbow bending makes power generation difficult and explicitly
+  says to support the elbow. The elbow is a key point for contact, instructs keeping it down, and
+  against placing the paddle and forearm on top. The elbow must stay outside the body, act as a
+  fixed pivot, and point down to prevent going long. The elbow should guide downward, stay near
+  the waist, face the ground, and not lead or flare. The elbow drops with the forearm and
+  recommends keeping the elbow set in place. The elbow must be stationary, treated as a pivot, and
+  stabilized by body alignment. The elbow must be braced and stable, and links that stability to
+  speed and consistency. Additional points reinforce the same theme. Together, these principles
+  show how the topic is applied in practice while preserving the relevant distinctions and
+  constraints.
+evidence_summary_source_hash: "sha256:38275e4473d728452ef8e56c42a524846530a01c18ee981a0458e44e58756cf5"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -325,3 +325,93 @@ evidence:
         - jTCRnIWq0lI:00026
         - jTCRnIWq0lI:00028
         - jTCRnIWq0lI:00029
+  - id: vzLW5MAX7gA-elbow-stability-backhand-reviewed
+    evidence_type: explanation
+    excerpt: For backhand drive-like shots, the elbow should stay fixed and act as a pivot so the forearm can swing faster and the racket angle stays stable.
+    reason: The speaker repeatedly says the elbow must be stationary, treated as a pivot, and stabilized by body alignment.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: vzLW5MAX7gA
+      start_ms: 97233
+      end_ms: 126466
+      url: https://www.youtube.com/watch?v=vzLW5MAX7gA&t=97s
+      segment_ids:
+        - vzLW5MAX7gA:00020
+        - vzLW5MAX7gA:00021
+        - vzLW5MAX7gA:00022
+        - vzLW5MAX7gA:00024
+        - vzLW5MAX7gA:00026
+  - id: cPooD0HRRAc-concept-elbow-stabilization-through-support-points-reviewed
+    evidence_type: definition
+    excerpt: Keeping the upper arm and elbow stable and positioned out to create room for the loop arc and avoid a tucked-in, straight-line stroke.
+    reason: The transcript repeatedly states that the upper arm and elbow must stay stable and out, and that tucking the elbow causes a straight-line push instead of a proper loop arc.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: cPooD0HRRAc
+      start_ms: 228266
+      end_ms: 255533
+      url: https://www.youtube.com/watch?v=cPooD0HRRAc&t=228s
+      segment_ids:
+        - cPooD0HRRAc:00049
+        - cPooD0HRRAc:00051
+        - cPooD0HRRAc:00052
+        - cPooD0HRRAc:00053
+        - cPooD0HRRAc:00054
+  - id: ZW9bduR7FXk-concept-elbow-stabilization-through-support-points-reviewed
+    evidence_type: definition
+    excerpt: Keeping the elbow controlled and directed downward/forward rather than letting it fly back or up, so the arm structure remains stable through the stroke.
+    reason: The speaker emphasizes that the elbow should not fly up or point backward and that racket-angle changes should come from the wrist, not elbow movement.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ZW9bduR7FXk
+      start_ms: 660433
+      end_ms: 687533
+      url: https://www.youtube.com/watch?v=ZW9bduR7FXk&t=660s
+      segment_ids:
+        - ZW9bduR7FXk:00146
+        - ZW9bduR7FXk:00147
+        - ZW9bduR7FXk:00149
+        - ZW9bduR7FXk:00150
+  - id: 3wbUKV585F8-concept-elbow-stabilization-through-support-points-reviewed
+    evidence_type: explanation
+    excerpt: Stabilizing the elbow and shoulder provides a fixed support structure that improves backhand speed, consistency, and control.
+    reason: The speaker repeatedly says the elbow must be braced and stable, and links that stability to speed and consistency.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 3wbUKV585F8
+      start_ms: 105166
+      end_ms: 135166
+      url: https://www.youtube.com/watch?v=3wbUKV585F8&t=105s
+      segment_ids:
+        - 3wbUKV585F8:00028
+        - 3wbUKV585F8:00029
+        - 3wbUKV585F8:00030
+        - 3wbUKV585F8:00031
+        - 3wbUKV585F8:00032
+        - 3wbUKV585F8:00033
+        - 3wbUKV585F8:00034
+  - id: LWx10iPhjxU-concept-elbow-stabilization-through-support-points-reviewed
+    evidence_type: explanation
+    excerpt: Using the elbow as a brace or support point to stabilize the whole arm structure during powerful strokes.
+    reason: The speaker says to brace the elbow to stabilize the entire structure, reduce wobble, and improve consistency and power.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: LWx10iPhjxU
+      start_ms: 781766
+      end_ms: 807266
+      url: https://www.youtube.com/watch?v=LWx10iPhjxU&t=781s
+      segment_ids:
+        - LWx10iPhjxU:00161
+        - LWx10iPhjxU:00162
+        - LWx10iPhjxU:00163
+        - LWx10iPhjxU:00165

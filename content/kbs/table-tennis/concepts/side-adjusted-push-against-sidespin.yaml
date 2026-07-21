@@ -14,9 +14,13 @@ evidence_summary: >-
   friction by brushing sideways. To add sideways motion on pushes, match the server's racket
   angle, and adjust the hand height and direction against sidespin and side-topspin. The mirror
   principle and shows slight angle, off-center contact, and going with the spin. To always contact
-  the side of the ball and slightly off-center when pushing. Together, these principles show how
-  the topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:14454318f11809622f9cf8af6b7230a217734cbb82b539f4738db6f26d041816"
+  the side of the ball and slightly off-center when pushing. A direct rule for unclear spin: push
+  sideways, slightly down, to kill upward trajectory and keep the ball low. The solution is to
+  push forward and sideways, aim toward the center line, and use sideways motion to lower the arc,
+  especially when spin is hard to read. To adjust the racket angle and contact the side of the
+  ball rather than the direct back. Together, these principles show how the topic is applied in
+  practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:ee401b8504adb70d8316a0a07fdd00c36866150c7e391f0781142f21c72493c1"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -119,3 +123,56 @@ evidence:
       segment_ids:
         - VYMqgnrDAhk:00060
         - VYMqgnrDAhk:00061
+  - id: ps9aOE0YKE8-concept-side-adjusted-push-against-sidespin-reviewed
+    evidence_type: explanation
+    excerpt: Handling unclear or sidespin-heavy balls by pushing sideways, often with a slight downward component, to keep the ball low and neutralize curve.
+    reason: 'The speaker gives a direct rule for unclear spin: push sideways, slightly down, to kill upward trajectory and keep the ball low.'
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ps9aOE0YKE8
+      start_ms: 934300
+      end_ms: 962166
+      url: https://www.youtube.com/watch?v=ps9aOE0YKE8&t=934s
+      segment_ids:
+        - ps9aOE0YKE8:00202
+        - ps9aOE0YKE8:00203
+        - ps9aOE0YKE8:00204
+        - ps9aOE0YKE8:00205
+        - ps9aOE0YKE8:00206
+        - ps9aOE0YKE8:00207
+  - id: QKc7uSJo9mM-concept-side-adjusted-push-against-sidespin-reviewed
+    evidence_type: explanation
+    excerpt: A receive push against sidespin or ambiguous spin that adds a sideways component to stabilize the return and lower the trajectory.
+    reason: The speaker says the solution is to push forward and sideways, aim toward the center line, and use sideways motion to lower the arc, especially when spin is hard to read.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: QKc7uSJo9mM
+      start_ms: 44000
+      end_ms: 73733
+      url: https://www.youtube.com/watch?v=QKc7uSJo9mM&t=44s
+      segment_ids:
+        - QKc7uSJo9mM:00006
+        - QKc7uSJo9mM:00007
+        - QKc7uSJo9mM:00010
+  - id: KEOmLdUTC-g-concept-side-adjusted-push-against-sidespin-reviewed
+    evidence_type: definition
+    excerpt: A push receive against sidespin that contacts the side of the ball and slightly adjusts the racket angle instead of striking straight into the back of the ball.
+    reason: The speaker says to adjust the racket angle and contact the side of the ball rather than the direct back.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: KEOmLdUTC-g
+      start_ms: 465400
+      end_ms: 492300
+      url: https://www.youtube.com/watch?v=KEOmLdUTC-g&t=465s
+      segment_ids:
+        - KEOmLdUTC-g:00104
+        - KEOmLdUTC-g:00105
+        - KEOmLdUTC-g:00106
+        - KEOmLdUTC-g:00107
+        - KEOmLdUTC-g:00109

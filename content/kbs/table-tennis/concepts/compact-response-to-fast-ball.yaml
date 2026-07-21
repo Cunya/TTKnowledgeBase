@@ -1203,6 +1203,38 @@ evidence:
       segment_ids:
         - VYMqgnrDAhk:00092
         - VYMqgnrDAhk:00093
+  - id: ps9aOE0YKE8-concept-compact-response-to-fast-ball-reviewed
+    evidence_type: explanation
+    excerpt: Reducing swing size and using a short, compact motion to handle difficult or fast service returns.
+    reason: The speaker repeatedly says the swing should be cut in half, compact, and short/sharp for service return, especially against heavy spin.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ps9aOE0YKE8
+      start_ms: 621900
+      end_ms: 642000
+      url: https://www.youtube.com/watch?v=ps9aOE0YKE8&t=621s
+      segment_ids:
+        - ps9aOE0YKE8:00134
+        - ps9aOE0YKE8:00136
+        - ps9aOE0YKE8:00137
+  - id: KEOmLdUTC-g-concept-compact-response-to-fast-ball-reviewed
+    evidence_type: definition
+    excerpt: A receive response that uses a short, compact swing so pace and spin have less opportunity to disrupt the contact.
+    reason: The speaker repeatedly recommends a compact motion and says it is less affected by spin.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: KEOmLdUTC-g
+      start_ms: 929100
+      end_ms: 939933
+      url: https://www.youtube.com/watch?v=KEOmLdUTC-g&t=929s
+      segment_ids:
+        - KEOmLdUTC-g:00204
+        - KEOmLdUTC-g:00205
+        - KEOmLdUTC-g:00206
 relations:
   - relation_type: used_with
     target_concept_id: concept-control-before-power

@@ -12,9 +12,11 @@ evidence_summary: >-
   Short-ball and long-ball responses and planning and adaptation rather than reacting late. You
   must know your serve plan, where to place the next ball, and how to adjust if the return is
   short, long, or mixed. Short, half-long, and long balls and the response should change by
-  length. Together, these principles show how the topic is applied in practice while preserving
-  the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:3052e8c21bb90566a4c817e9311c48dacd26097cb831e582bd44b4bfc45e3e53"
+  length. Short, half-long, and deep balls and each requires a different positional response.
+  Against waiting for the ball and later asks whether you attack after a long serve or a short
+  serve, emphasizing the need for planned responses. Together, these principles show how the topic
+  is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:10510ea7912d1e670d9489fd3c4fd2bb554870a6497f83c25c37ee0a15277959"
 evidence_summary_generator: "deterministic"
 concept_type: practice
 facets:
@@ -97,3 +99,33 @@ evidence:
       segment_ids:
         - 0D6FzvP33Xs:00142
         - 0D6FzvP33Xs:00143
+  - id: AJeZkjOEJkk-concept-short-versus-long-receive-planning-reviewed
+    evidence_type: explanation
+    excerpt: Pre-plan responses for different incoming ball depths instead of reacting late.
+    reason: Speaker distinguishes short, half-long, and deep balls and says each requires a different positional response.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: AJeZkjOEJkk
+      start_ms: 490066
+      end_ms: 503900
+      url: https://www.youtube.com/watch?v=AJeZkjOEJkk&t=490s
+      segment_ids:
+        - AJeZkjOEJkk:00107
+        - AJeZkjOEJkk:00109
+  - id: WuWV6MlZQ_Q-concept-short-versus-long-receive-planning-reviewed
+    evidence_type: explanation
+    excerpt: Pre-planning the response based on whether the incoming ball is short, half-long, or long.
+    reason: The speaker warns against waiting for the ball and later asks whether you attack after a long serve or a short serve, emphasizing the need for planned responses.
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: WuWV6MlZQ_Q
+      start_ms: 273366
+      end_ms: 282766
+      url: https://www.youtube.com/watch?v=WuWV6MlZQ_Q&t=273s
+      segment_ids:
+        - WuWV6MlZQ_Q:00058
+        - WuWV6MlZQ_Q:00059

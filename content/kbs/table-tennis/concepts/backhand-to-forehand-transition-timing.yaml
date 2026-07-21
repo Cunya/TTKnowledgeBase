@@ -9,9 +9,12 @@ short_definition: When transitioning from backhand to forehand, the available fo
 evidence_summary: >-
   Backhand-to-forehand transition timing brings together several connected ideas. More foot
   movement means a smaller swing, and that in rushed backhand-to-forehand transitions you may need
-  to hit as the foot lands. Together, these principles show how the topic is applied in practice
-  while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:34db366e21e4a215bed27405cd554cffb4766ebd1c88cef4e2077d4fd2f7ed8e"
+  to hit as the foot lands. They later discuss moving from forehand back to backhand and the
+  body's center of gravity must move across first. The same sequence applies to backhand-forehand
+  transitions: feet land first, then the forehand backswing starts. Together, these principles
+  show how the topic is applied in practice while preserving the relevant distinctions and
+  constraints.
+evidence_summary_source_hash: "sha256:0a05dd3d2ad2e1e478113d0f4a11d112dadb3a0ff9e857a7fdbc63006e8a213b"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -49,3 +52,35 @@ evidence:
         - qsY3S06fjgA:00109
         - qsY3S06fjgA:00110
         - qsY3S06fjgA:00111
+  - id: wTQKSbQndR8-concept-backhand-to-forehand-transition-timing-reviewed
+    evidence_type: explanation
+    excerpt: Timing the transition so the body and feet arrive before or with the stroke, especially when moving from the backhand side toward the forehand.
+    reason: They later discuss moving from forehand back to backhand and emphasize that the body's center of gravity must move across first.
+    confidence: 0.92
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: wTQKSbQndR8
+      start_ms: 533533
+      end_ms: 560400
+      url: https://www.youtube.com/watch?v=wTQKSbQndR8&t=533s
+      segment_ids:
+        - wTQKSbQndR8:00113
+        - wTQKSbQndR8:00118
+  - id: 8-BJZbcKdlE-concept-backhand-to-forehand-transition-timing-reviewed
+    evidence_type: explanation
+    excerpt: In backhand-to-forehand transitions, the feet must land in position before the forehand backswing begins; the timing is coordinated rather than rushed.
+    reason: 'The speaker directly says the same sequence applies to backhand-forehand transitions: feet land first, then the forehand backswing starts.'
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 8-BJZbcKdlE
+      start_ms: 212000
+      end_ms: 232766
+      url: https://www.youtube.com/watch?v=8-BJZbcKdlE&t=212s
+      segment_ids:
+        - 8-BJZbcKdlE:00040
+        - 8-BJZbcKdlE:00041
+        - 8-BJZbcKdlE:00042
+        - 8-BJZbcKdlE:00043

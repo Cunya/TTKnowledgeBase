@@ -13,16 +13,16 @@ evidence_summary: >-
   Forehand attack forearm-driven motion brings together several connected ideas. Forehand attack
   is dominated by the forearm, including acceleration and power generation, and that the forearm
   completes the remaining movement. To engage the forearm, attack the ball, and generate power
-  forward. The basic framework of the forehand attack requires retracting the arm and without
-  this, there will be no explosive power later. The instructor emphasizes forward force, avoiding
-  sideways force, and hitting the ball forward in forehand topspin. A useful contrast is between
-  forehand attacking and forehand looping and links the action to spin generation through the
-  forearm. Forearm-driven acceleration, especially for close-to-table attacks and blocks. The
-  racket head is the key speed and must accelerate after forearm contact. The push as two phases,
-  with acceleration delayed until the end to preserve quality and control depth. Additional points
+  forward. The difference is about body rotation and forearm speed, and that the right side drives
+  the arm to align the hitting angle. A forehand attacking grip and to push forward with the
+  fingers, using minimal range to generate friction and spin. Forearm-driven acceleration,
+  especially for close-to-table attacks and blocks. The forearm is the primary driver and the
+  backward-then-forward sequence with a final snap. A useful contrast is between uniform swing
+  speed and a slow-to-fast pattern and calls that change of pace essential for power generation.
+  The wrist is the primary power and that fingers only help transfer energy. Additional points
   reinforce the same theme. Together, these principles show how the topic is applied in practice
   while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:3fa80c03c0456c92ef93d326456c647f4b4de0b5f256645de1370924f8fe97bc"
+evidence_summary_source_hash: "sha256:58cbc6635860d7210dfacca69bd78964cc47e9a5baf92fd66b7f358d6ff549c0"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -398,3 +398,82 @@ evidence:
         - ae9urokFAJM:00116
         - ae9urokFAJM:00117
         - ae9urokFAJM:00118
+  - id: xDwUKE-WjL0-concept-slow-to-fast-acceleration-reviewed
+    evidence_type: definition
+    excerpt: Effective power comes from a relaxed, slower backswing that accelerates explosively into contact.
+    reason: The speaker contrasts uniform swing speed with a slow-to-fast pattern and calls that change of pace essential for power generation.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: xDwUKE-WjL0
+      start_ms: 467366
+      end_ms: 481000
+      url: https://www.youtube.com/watch?v=xDwUKE-WjL0&t=467s
+      segment_ids:
+        - xDwUKE-WjL0:00099
+        - xDwUKE-WjL0:00100
+  - id: xDwUKE-WjL0-concept-backhand-topspin-power-generation-reviewed
+    evidence_type: definition
+    excerpt: Generating power on the backhand topspin is a compact, stable, timing-based action built from body structure, relaxed acceleration, and contact at the right bounce phase.
+    reason: The lesson states it is teaching how to generate power on backhand topspin and focuses on actively generating power against topspin.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: xDwUKE-WjL0
+      start_ms: 744966
+      end_ms: 756200
+      url: https://www.youtube.com/watch?v=xDwUKE-WjL0&t=744s
+      segment_ids:
+        - xDwUKE-WjL0:00151
+        - xDwUKE-WjL0:00153
+  - id: VR1gORHDMeQ-concept-late-acceleration-reviewed
+    evidence_type: explanation
+    excerpt: Delaying the main acceleration until the moment of contact instead of using a large pre-loaded swing.
+    reason: The speaker contrasts late acceleration with a full backswing and says to keep the racket near the ball, then execute quickly at contact.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: VR1gORHDMeQ
+      start_ms: 717966
+      end_ms: 741633
+      url: https://www.youtube.com/watch?v=VR1gORHDMeQ&t=717s
+      segment_ids:
+        - VR1gORHDMeQ:00148
+        - VR1gORHDMeQ:00149
+        - VR1gORHDMeQ:00150
+        - VR1gORHDMeQ:00151
+  - id: nvQeXUtF2CM-concept-strength-from-wrist-reviewed
+    evidence_type: explanation
+    excerpt: In the standard forehand flick, power comes primarily from the wrist opening on the backswing and snapping forward at contact, with fingers assisting energy transfer.
+    reason: The speaker explicitly states the wrist is the primary power source and that fingers only help transfer energy.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: nvQeXUtF2CM
+      start_ms: 475866
+      end_ms: 496833
+      url: https://www.youtube.com/watch?v=nvQeXUtF2CM&t=475s
+      segment_ids:
+        - nvQeXUtF2CM:00097
+        - nvQeXUtF2CM:00098
+        - nvQeXUtF2CM:00099
+        - nvQeXUtF2CM:00100
+  - id: Yf_uKs6cZ38-concept-forehand-attack-forearm-driven-motion-reviewed
+    evidence_type: explanation
+    excerpt: On the forehand, keep the stroke compact if you only need to land the ball, and add a forearm whip when you want more power.
+    reason: The speaker explicitly contrasts a simple forward stop with added whip for power on the forehand.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Yf_uKs6cZ38
+      start_ms: 0
+      end_ms: 11866
+      url: https://www.youtube.com/watch?v=Yf_uKs6cZ38&t=0s
+      segment_ids:
+        - Yf_uKs6cZ38:00000
+        - Yf_uKs6cZ38:00001

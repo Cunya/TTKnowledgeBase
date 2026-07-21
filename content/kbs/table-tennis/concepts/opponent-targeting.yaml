@@ -830,6 +830,38 @@ evidence:
         - R_MLRGrJlsM:00121
         - R_MLRGrJlsM:00122
         - R_MLRGrJlsM:00123
+  - id: xsJ6JJAeTVc-concept-opponent-targeting-reviewed
+    evidence_type: explanation
+    excerpt: Directing serves to specific zones such as forehand, backhand, body, or wide corners based on where the opponent is standing.
+    reason: 'The speaker repeatedly gives placement rules: forehand for some opponents, backhand for middle position, body for indecisive stance, and wide corners for others.'
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: xsJ6JJAeTVc
+      start_ms: 990766
+      end_ms: 1017966
+      url: https://www.youtube.com/watch?v=xsJ6JJAeTVc&t=990s
+      segment_ids:
+        - xsJ6JJAeTVc:00197
+        - xsJ6JJAeTVc:00198
+        - xsJ6JJAeTVc:00200
+        - xsJ6JJAeTVc:00201
+  - id: YKuNt_fynhY-concept-opponent-targeting-reviewed
+    evidence_type: definition
+    excerpt: Target specific body zones or table zones based on the opponent's stance and preferred stroke patterns.
+    reason: The speaker repeatedly describes aiming at the elbow, thigh, leg, or middle based on opponent position and stroke preference.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: YKuNt_fynhY
+      start_ms: 389533
+      end_ms: 413933
+      url: https://www.youtube.com/watch?v=YKuNt_fynhY&t=389s
+      segment_ids:
+        - YKuNt_fynhY:00085
+        - YKuNt_fynhY:00088
 relations:
   - relation_type: used_with
     target_concept_id: concept-direction-reading

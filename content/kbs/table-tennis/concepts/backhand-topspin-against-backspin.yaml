@@ -357,6 +357,35 @@ evidence:
         - xyHpkrGgZbI:00073
         - xyHpkrGgZbI:00075
         - xyHpkrGgZbI:00076
+  - id: jvt-6VNmBzs-cand-1-reviewed
+    evidence_type: definition
+    excerpt: A backhand topspin loop used specifically to open against backspin, with a snapping, arcing motion rather than a straight push.
+    reason: The speaker explicitly states the topic is the backhand loop against backspin.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: jvt-6VNmBzs
+      start_ms: 16433
+      end_ms: 28766
+      url: https://www.youtube.com/watch?v=jvt-6VNmBzs&t=16s
+      segment_ids:
+        - jvt-6VNmBzs:00002
+  - id: mWehvleIbTk-concept-backhand-topspin-against-backspin-reviewed
+    evidence_type: explanation
+    excerpt: Using the backhand loop to lift and counter heavy backspin with an initial brushing lift before transitioning into power.
+    reason: The speaker repeatedly explains that heavy backspin must be lifted first, brushed with the 7-to-10 motion, then driven through with power.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: mWehvleIbTk
+      start_ms: 599200
+      end_ms: 628000
+      url: https://www.youtube.com/watch?v=mWehvleIbTk&t=599s
+      segment_ids:
+        - mWehvleIbTk:00118
+        - mWehvleIbTk:00124
 relations:
   - relation_type: variation_of
     target_concept_id: concept-backhand-loop

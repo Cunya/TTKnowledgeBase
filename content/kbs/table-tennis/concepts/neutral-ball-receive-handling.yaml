@@ -8,19 +8,18 @@ short_definition: A receive approach for balls whose spin is unclear or neutral,
 evidence_summary: >-
   Neutral-ball receive handling brings together several connected ideas. The push-flick is for
   semi-spin or no-spin balls and also recommends a general forward flick when the incoming spin is
-  unclear. The return is often topspin or no-spin and instructs the player to treat it as no-spin
-  rather than using a backspin-like motion. A step-by-step fallback for unclear spin: slow push,
-  middle contact, then slight sideways forearm motion. Not being able to tell the spin clearly,
-  yet still keeping the ball in play by using a stable receive approach. To adjust based on ball
-  type and focus on tracking the ball when many balls or difficult situations make reading harder,
+  unclear. How to handle unreadable short serves neutrally, with the racket between flat and
+  upright and a focus on landing the ball first. Not being able to tell the spin clearly, yet
+  still keeping the ball in play by using a stable receive approach. To adjust based on ball type
+  and focus on tracking the ball when many balls or difficult situations make reading harder,
   which fits neutral/unclear receive handling. The receive is described as uncertain, because the
   ball may not have very heavy underspin and that the player can still make a controlled shot
   without precise spin recognition. No-spin is simple, semi-spin is the real challenge, and
-  recommends a neutral middle-ground response. The neutral or semi-spin ball and recommends
-  treating unreadable balls as neutral. Additional points reinforce the same theme. Together,
-  these principles show how the topic is applied in practice while preserving the relevant
-  distinctions and constraints.
-evidence_summary_source_hash: "sha256:ffb495259169d372daaa7bf47d62318eadc8c0e179fba82abbb6fa4a67459c7f"
+  recommends a neutral middle-ground response. Many amateur serves are light-spin or neutral and
+  require a neutral return. The problem as awkward half-long balls with unclear or ambiguous spin.
+  Additional points reinforce the same theme. Together, these principles show how the topic is
+  applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:6e75a55161e4998fb1fa8c836967ea36f36c8003a6002cefd85ac7b750a5be59"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -224,3 +223,51 @@ evidence:
       segment_ids:
         - ywhpUTdXW7I:00165
         - ywhpUTdXW7I:00169
+  - id: rf-9lmjigbs-concept-neutral-ball-receive-handling-reviewed
+    evidence_type: definition
+    excerpt: A receive response suited to light-spin or neutral-spin serves, where the ball should be handled without overcommitting to a heavy-spin assumption.
+    reason: The transcript explains that many amateur serves are light-spin or neutral and require a neutral return.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: rf-9lmjigbs
+      start_ms: 107066
+      end_ms: 120700
+      url: https://www.youtube.com/watch?v=rf-9lmjigbs&t=107s
+      segment_ids:
+        - rf-9lmjigbs:00019
+        - rf-9lmjigbs:00020
+        - rf-9lmjigbs:00021
+  - id: 8QSCtikekto-concept-neutral-ball-receive-handling-reviewed
+    evidence_type: definition
+    excerpt: Adjusting the receive when the incoming ball is ambiguous, semi-spin, or no-spin-like.
+    reason: The speaker identifies half-spin, half-no-spin as a common tricky serve with difficult push and flick outcomes.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 8QSCtikekto
+      start_ms: 414766
+      end_ms: 426533
+      url: https://www.youtube.com/watch?v=8QSCtikekto&t=414s
+      segment_ids:
+        - 8QSCtikekto:00081
+        - 8QSCtikekto:00082
+        - 8QSCtikekto:00083
+  - id: QKc7uSJo9mM-concept-neutral-ball-receive-handling-reviewed
+    evidence_type: definition
+    excerpt: Receive handling for balls with ambiguous or unclear spin, where the correct response depends on controlling the return instead of overcommitting to a pure push or flick.
+    reason: The speaker explicitly frames the problem as awkward half-long balls with unclear or ambiguous spin.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: QKc7uSJo9mM
+      start_ms: 268100
+      end_ms: 279166
+      url: https://www.youtube.com/watch?v=QKc7uSJo9mM&t=268s
+      segment_ids:
+        - QKc7uSJo9mM:00048
+        - QKc7uSJo9mM:00049
+        - QKc7uSJo9mM:00050

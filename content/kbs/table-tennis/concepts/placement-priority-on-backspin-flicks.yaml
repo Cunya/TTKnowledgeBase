@@ -10,9 +10,12 @@ evidence_summary: >-
   focus on topspin balls, but for backspin the focus is placement, especially for very heavy
   backspin serves. Placement and short balls cannot rely on speed or power, but can make the
   return weaker. Short serves should prioritize placement and arc before spin, and later
-  reiterates focusing on placement, arc, and spin variation. Together, these principles show how
-  the topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:e27c9656bfe6e59e8be2486dc6edb743d0fed8afe2e512606c43cda69f8d6e6c"
+  reiterates focusing on placement, arc, and spin variation. Placement variation, serving wide to
+  the corner, and later says he now focuses on speed and placement rather than friction. If spin
+  is not great yet, the player must first master placement and treat misses as failed reps.
+  Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:6ef7ce0695d83e27c7ff5c905ed1519060fda9f02f812b9f8f68affa6ae91fa9"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -83,3 +86,36 @@ evidence:
         - rdMkkX_p7e0:00181
         - rdMkkX_p7e0:00182
         - rdMkkX_p7e0:00183
+  - id: a9wtW1BV-6M-concept-placement-priority-on-backspin-flicks-reviewed
+    evidence_type: explanation
+    excerpt: Prioritizing serve placement over trying to maximize spin alone, especially to create uncomfortable returns and open attacking options.
+    reason: The speaker repeatedly emphasizes placement variation, serving wide to the corner, and later says he now focuses on speed and placement rather than friction.
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: a9wtW1BV-6M
+      start_ms: 116033
+      end_ms: 136333
+      url: https://www.youtube.com/watch?v=a9wtW1BV-6M&t=116s
+      segment_ids:
+        - a9wtW1BV-6M:00022
+        - a9wtW1BV-6M:00023
+        - a9wtW1BV-6M:00024
+        - a9wtW1BV-6M:00025
+  - id: VQlnNbgMmR8-concept-placement-priority-on-backspin-flicks-reviewed
+    evidence_type: explanation
+    excerpt: A training emphasis that prioritizes accurate placement before spin quality when serves are not yet reliable.
+    reason: The speaker says that if spin is not great yet, the player must first master placement and treat misses as failed reps.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: VQlnNbgMmR8
+      start_ms: 306366
+      end_ms: 321966
+      url: https://www.youtube.com/watch?v=VQlnNbgMmR8&t=306s
+      segment_ids:
+        - VQlnNbgMmR8:00070
+        - VQlnNbgMmR8:00071
+        - VQlnNbgMmR8:00072

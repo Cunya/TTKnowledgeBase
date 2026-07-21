@@ -390,6 +390,71 @@ evidence:
       segment_ids:
         - uyS2qSAPuYM:00105
         - uyS2qSAPuYM:00106
+  - id: RXl1tDl8BRw-new-backhand-flick-forward-first-mechanics-reviewed
+    evidence_type: explanation
+    excerpt: A backhand flick should begin with forward motion before any upward lift; going straight upward reduces forward force and sends the ball long.
+    reason: The speaker explicitly says flicks must go forward first, then upward, and warns against going directly upward.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: RXl1tDl8BRw
+      start_ms: 139300
+      end_ms: 160066
+      url: https://www.youtube.com/watch?v=RXl1tDl8BRw&t=139s
+      segment_ids:
+        - RXl1tDl8BRw:00030
+        - RXl1tDl8BRw:00031
+        - RXl1tDl8BRw:00032
+        - RXl1tDl8BRw:00033
+  - id: eDDICo0Damw-concept-backhand-flick-mechanics-reviewed
+    evidence_type: definition
+    excerpt: The mechanics of the standard backhand flick, emphasizing racket-face rotation, wrist use, and forward force generation.
+    reason: Describes the backhand flick as mostly racket-face rotation with little upper-arm or forearm use.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: eDDICo0Damw
+      start_ms: 65500
+      end_ms: 91666
+      url: https://www.youtube.com/watch?v=eDDICo0Damw&t=65s
+      segment_ids:
+        - eDDICo0Damw:00016
+        - eDDICo0Damw:00018
+        - eDDICo0Damw:00019
+  - id: QKc7uSJo9mM-concept-backhand-flick-mechanics-reviewed
+    evidence_type: explanation
+    excerpt: The mechanics of flicking short balls on the backhand side, emphasizing racket angle, forward contact, forearm speed, and wrist stability.
+    reason: 'The speaker gives detailed instructions for flicking half-spin balls: contact the back of the ball, use the forearm for speed, flick forward through the ball, and keep the motion consistent.'
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: QKc7uSJo9mM
+      start_ms: 461200
+      end_ms: 484866
+      url: https://www.youtube.com/watch?v=QKc7uSJo9mM&t=461s
+      segment_ids:
+        - QKc7uSJo9mM:00085
+        - QKc7uSJo9mM:00087
+        - QKc7uSJo9mM:00088
+  - id: qfB1tscK4xk-concept-backhand-flick-mechanics-reviewed
+    evidence_type: explanation
+    excerpt: A backhand flick is generated through coordinated body and arm action, using a compact coil-and-drive motion rather than arm-only motion.
+    reason: The speaker explicitly frames the topic as the backhand flick and explains its mechanics as body-assisted rather than arm-only.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: qfB1tscK4xk
+      start_ms: 0
+      end_ms: 27666
+      url: https://www.youtube.com/watch?v=qfB1tscK4xk&t=0s
+      segment_ids:
+        - qfB1tscK4xk:00000
+        - qfB1tscK4xk:00003
+        - qfB1tscK4xk:00005
 relations:
   - relation_type: used_with
     target_concept_id: concept-backhand-flick-on-rise

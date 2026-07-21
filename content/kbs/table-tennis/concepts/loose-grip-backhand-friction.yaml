@@ -748,6 +748,54 @@ evidence:
       segment_ids:
         - VYMqgnrDAhk:00086
         - VYMqgnrDAhk:00090
+  - id: hRHJawAZzNc-concept-generating-spin-at-contact-reviewed
+    evidence_type: definition
+    excerpt: Creating spin through high-quality friction at the exact contact moment, so the ball feels gripped rather than slipping off the racket.
+    reason: The speaker repeatedly frames spin generation as a friction problem at contact and describes the desired sensation as gripping the ball instead of letting it slip.
+    confidence: 0.89
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: hRHJawAZzNc
+      start_ms: 476200
+      end_ms: 486466
+      url: https://www.youtube.com/watch?v=hRHJawAZzNc&t=476s
+      segment_ids:
+        - hRHJawAZzNc:00094
+        - hRHJawAZzNc:00095
+  - id: cSDOaQqEtTQ-concept-generating-spin-at-contact-reviewed
+    evidence_type: explanation
+    excerpt: Spin is created by firm, well-timed contact that produces friction; gripping too late or too softly prevents the ball from lifting spin.
+    reason: The speaker explicitly ties contact location and friction to spin generation and says the flick is a friction-based shot that fails when gripping happens too late.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: cSDOaQqEtTQ
+      start_ms: 694133
+      end_ms: 712900
+      url: https://www.youtube.com/watch?v=cSDOaQqEtTQ&t=694s
+      segment_ids:
+        - cSDOaQqEtTQ:00147
+        - cSDOaQqEtTQ:00148
+        - cSDOaQqEtTQ:00149
+  - id: yGWrxxrcvN4-concept-loose-grip-backhand-friction-reviewed
+    evidence_type: explanation
+    excerpt: Spin is produced by short, concentrated brushing contact driven by the fingers and wrist, not by a large wrist rotation.
+    reason: The speaker defines friction as a short sequential movement from fingers to wrist to paddle face, with concentrated brushing contact and no need for active wrist rotation.
+    confidence: 0.92
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: yGWrxxrcvN4
+      start_ms: 525333
+      end_ms: 554933
+      url: https://www.youtube.com/watch?v=yGWrxxrcvN4&t=525s
+      segment_ids:
+        - yGWrxxrcvN4:00106
+        - yGWrxxrcvN4:00107
+        - yGWrxxrcvN4:00108
+        - yGWrxxrcvN4:00111
 relations:
   - relation_type: used_with
     target_concept_id: concept-backspin-serve-under-ball-contact

@@ -9,15 +9,16 @@ short_definition: A close-table backhand flick used on short and half-long balls
 evidence_summary: >-
   Backhand banana flick brings together several connected ideas. Introduces the stroke and its
   usable ball types. The banana flick, distinguishes it from the backhand flip, and its key
-  mechanics: side approach, full backswing, forearm/elbow use, and brushing contact. Side entry,
-  shoulder drive, and not being square to the table with having enough backswing space. The
-  backhand flick as the best way to handle short balls. The backhand banana flick directly and it
-  is very difficult for amateurs. The backhand banana flick and it is typically used on serve
-  returns against sidespin or side-backspin, mostly for short or half-long balls. The technique
-  and its use on short and half-long balls as an attacking response. The banana flick and it is
-  more stable than a short push, even without perfect judgment. Together, these principles show
-  how the topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:2fd66c302138f4e383cca6faa0c68e5feb96f63d8bca8c5db598ac1e2da0ca48"
+  mechanics: side approach, full backswing, forearm/elbow use, and brushing contact. The backhand
+  flick as the best way to handle short balls. The backhand banana flick directly and it is very
+  difficult for amateurs. The technique and its use on short and half-long balls as an attacking
+  response. The banana flick and it is more stable than a short push, even without perfect
+  judgment. The lesson is about the backhand flick, describes it as an offensive technique, and
+  frames it as needing correct timing and execution. The banana flick is named directly and
+  described as a high-difficulty, high-reward aggressive attack. Additional points reinforce the
+  same theme. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:57786c691205a3f3883e561ec56a530f179d61c9a6e8d61e07019503d1c4caef"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -159,3 +160,49 @@ evidence:
       segment_ids:
         - 0D6FzvP33Xs:00002
         - 0D6FzvP33Xs:00004
+  - id: RXl1tDl8BRw-concept-backhand-banana-flick-reviewed
+    evidence_type: explanation
+    excerpt: A backhand flick variation used especially against half-long or short balls and sometimes against backspin, typically involving brushing friction.
+    reason: The speaker says professional players primarily use the banana flick and that it requires friction; it can be used on semi-spin balls when choosing to flick.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: RXl1tDl8BRw
+      start_ms: 231733
+      end_ms: 250900
+      url: https://www.youtube.com/watch?v=RXl1tDl8BRw&t=231s
+      segment_ids:
+        - RXl1tDl8BRw:00049
+        - RXl1tDl8BRw:00051
+        - RXl1tDl8BRw:00052
+  - id: cSDOaQqEtTQ-concept-backhand-flick-reviewed
+    evidence_type: definition
+    excerpt: An offensive close-table receive shot used together with pushing, with placement and timing adapted to the incoming ball and opponent.
+    reason: The speaker explicitly says the lesson is about the backhand flick, describes it as an offensive technique, and frames it as needing correct timing and execution.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: cSDOaQqEtTQ
+      start_ms: 12833
+      end_ms: 21933
+      url: https://www.youtube.com/watch?v=cSDOaQqEtTQ&t=12s
+      segment_ids:
+        - cSDOaQqEtTQ:00003
+        - cSDOaQqEtTQ:00004
+  - id: eDDICo0Damw-concept-backhand-banana-flick-reviewed
+    evidence_type: definition
+    excerpt: An aggressive over-the-table backhand flick technique used against sidespin, half-spin, and related serves.
+    reason: The banana flick is named directly and described as a high-difficulty, high-reward aggressive attack.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: eDDICo0Damw
+      start_ms: 35533
+      end_ms: 47100
+      url: https://www.youtube.com/watch?v=eDDICo0Damw&t=35s
+      segment_ids:
+        - eDDICo0Damw:00009
+        - eDDICo0Damw:00011

@@ -784,6 +784,72 @@ evidence:
         - j4tQrFa7iSQ:00013
         - j4tQrFa7iSQ:00014
         - j4tQrFa7iSQ:00017
+  - id: rf-9lmjigbs-concept-push-technique-reviewed
+    evidence_type: definition
+    excerpt: A downward-cutting receive used to keep the ball low and produce spin on short or low serves, with a fixed racket angle and controlled follow-through.
+    reason: 'The transcript explains the mechanics of a long push: high-to-low contact, always above the ball, fixed racket angle, and cutting downward to generate spin.'
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: rf-9lmjigbs
+      start_ms: 379466
+      end_ms: 401800
+      url: https://www.youtube.com/watch?v=rf-9lmjigbs&t=379s
+      segment_ids:
+        - rf-9lmjigbs:00077
+        - rf-9lmjigbs:00079
+        - rf-9lmjigbs:00081
+  - id: CGidweVwLYw-concept-push-technique-reviewed
+    evidence_type: definition
+    excerpt: A basic backspin-handling stroke that should begin with soft brushing, relaxed control, and friction development rather than force.
+    reason: The speaker introduces pushing as a foundational short-game skill and explains its core brushing action.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: CGidweVwLYw
+      start_ms: 557966
+      end_ms: 586633
+      url: https://www.youtube.com/watch?v=CGidweVwLYw&t=557s
+      segment_ids:
+        - CGidweVwLYw:00122
+        - CGidweVwLYw:00124
+        - CGidweVwLYw:00125
+        - CGidweVwLYw:00128
+  - id: QKc7uSJo9mM-concept-push-technique-reviewed
+    evidence_type: definition
+    excerpt: A pushing receive used against backspin or other short balls, with a stable contact point and a controlled downward/forward motion.
+    reason: The speaker repeatedly describes the standard push, its contact position, and how to execute it on backspin and half-spin balls.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: QKc7uSJo9mM
+      start_ms: 283933
+      end_ms: 308733
+      url: https://www.youtube.com/watch?v=QKc7uSJo9mM&t=283s
+      segment_ids:
+        - QKc7uSJo9mM:00052
+        - QKc7uSJo9mM:00054
+        - QKc7uSJo9mM:00055
+  - id: KEOmLdUTC-g-concept-push-technique-reviewed
+    evidence_type: definition
+    excerpt: A push receive that uses the opponent's pace, stays compact, and follows through to produce a deep, low, threatening return.
+    reason: The speaker defines the push as guiding the ball forward, using pace, following through, and aiming for a low, long return.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: KEOmLdUTC-g
+      start_ms: 281666
+      end_ms: 300800
+      url: https://www.youtube.com/watch?v=KEOmLdUTC-g&t=281s
+      segment_ids:
+        - KEOmLdUTC-g:00068
+        - KEOmLdUTC-g:00069
+        - KEOmLdUTC-g:00070
+        - KEOmLdUTC-g:00071
 relations:
   - relation_type: used_with
     target_concept_id: concept-push-contact-and-spin

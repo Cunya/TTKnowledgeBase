@@ -11,16 +11,17 @@ evidence_summary: >-
   Forward-first combined force in the stroke brings together several connected ideas. Power comes
   from combining forward motion with the swing and against a purely upward action. A useful
   contrast is between lifting upward and pressing forward and says the body rotates first, then
-  the wrist adds spin. The force must go forward, and for these balls it should go forward first,
-  then upward, never downward. A useful contrast is between purely upward force and the need for
-  both forward and upward force. A useful contrast is between forward force and upward force and
-  says the forearm direction should be forward, not upward. All actions in table tennis should go
-  forward and that forward motion generates combined force. The forearm path should not be too
-  upward and specifies the correct force direction as forward first, then upward. On 'combining
-  forces' and the ball and racket moving forward together create a powerful collision, followed by
-  a forearm snap. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:cd6ad2037d7cef928dd87fec2c4ef251b9d34497d1635b750eca1e1d194a1090"
+  the wrist adds spin. A useful contrast is between purely upward force and the need for both
+  forward and upward force. A useful contrast is between forward force and upward force and says
+  the forearm direction should be forward, not upward. The forearm path should not be too upward
+  and specifies the correct force direction as forward first, then upward. On 'combining forces'
+  and the ball and racket moving forward together create a powerful collision, followed by a
+  forearm snap. The swing must be forward-then-up, not up-then-forward, and that heavy spin may
+  require a bit more lift after forward contact. Every shot must have a forward component and that
+  loops need to drive through the ball to create a long enough trajectory. Additional points
+  reinforce the same theme. Together, these principles show how the topic is applied in practice
+  while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:d186366bb6b707b02337f234b809790f6b96eab42e9d547f08b0b5aa4ed42dcf"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -177,3 +178,75 @@ evidence:
         - qsY3S06fjgA:00050
         - qsY3S06fjgA:00051
         - qsY3S06fjgA:00052
+  - id: z8-8IXQ-GaU-concept-forward-first-combined-force-in-the-stroke-reviewed
+    evidence_type: explanation
+    excerpt: A stroke sequence that emphasizes forward drive before upward finishing, especially when looping heavy backspin.
+    reason: The speaker says to drive into the ball, adjust power direction, and that the proper sequence is forward then upward.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: z8-8IXQ-GaU
+      start_ms: 447533
+      end_ms: 466300
+      url: https://www.youtube.com/watch?v=z8-8IXQ-GaU&t=447s
+      segment_ids:
+        - z8-8IXQ-GaU:00093
+        - z8-8IXQ-GaU:00094
+        - z8-8IXQ-GaU:00095
+        - z8-8IXQ-GaU:00096
+  - id: Q-V95wNbaP0-concept-forward-first-combined-force-in-the-stroke-reviewed
+    evidence_type: definition
+    excerpt: The stroke should move forward first and only then add upward lift, especially when looping backspin, so the ball clears the net without losing forward momentum.
+    reason: The speaker explicitly states that the swing must be forward-then-up, not up-then-forward, and that heavy spin may require a bit more lift after forward contact.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Q-V95wNbaP0
+      start_ms: 510966
+      end_ms: 538166
+      url: https://www.youtube.com/watch?v=Q-V95wNbaP0&t=510s
+      segment_ids:
+        - Q-V95wNbaP0:00108
+        - Q-V95wNbaP0:00109
+        - Q-V95wNbaP0:00111
+        - Q-V95wNbaP0:00112
+        - Q-V95wNbaP0:00113
+  - id: y7Xd49MgdbQ-concept-forward-drive-is-required-for-looping-reviewed
+    evidence_type: definition
+    excerpt: A loop must include forward momentum, not only upward brushing, or the ball will fail to clear the net and lack arc length.
+    reason: The speaker explicitly says every shot must have a forward component and that loops need to drive through the ball to create a long enough trajectory.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: y7Xd49MgdbQ
+      start_ms: 384500
+      end_ms: 411033
+      url: https://www.youtube.com/watch?v=y7Xd49MgdbQ&t=384s
+      segment_ids:
+        - y7Xd49MgdbQ:00079
+        - y7Xd49MgdbQ:00080
+        - y7Xd49MgdbQ:00081
+        - y7Xd49MgdbQ:00082
+        - y7Xd49MgdbQ:00083
+  - id: pWQROAi8uWw-concept-7-reviewed
+    evidence_type: explanation
+    excerpt: The forehand should actively go forward into the ball instead of merely placing the racket or moving passively.
+    reason: The speaker repeatedly emphasizes meeting the ball forward, driving into it, and keeping the block forward rather than passive or backward-absorbing.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: pWQROAi8uWw
+      start_ms: 854466
+      end_ms: 875400
+      url: https://www.youtube.com/watch?v=pWQROAi8uWw&t=854s
+      segment_ids:
+        - pWQROAi8uWw:00188
+        - pWQROAi8uWw:00189
+        - pWQROAi8uWw:00190
+        - pWQROAi8uWw:00191
+        - pWQROAi8uWw:00192
+        - pWQROAi8uWw:00193

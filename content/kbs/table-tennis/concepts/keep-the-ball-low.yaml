@@ -9,16 +9,16 @@ short_definition: Keeping the ball and its trajectory low to force weaker, slowe
 evidence_summary: >-
   Keep the ball low brings together several connected ideas. A high ball invites smashes, a low
   ball slows the loop, and the trajectory should always be kept low. The finish is repeatedly
-  constrained to net height, low position, and downward motion. Low trajectory as a primary goal
-  and how racket-tip and angle adjustments keep the return low. To keep the ball's arc low and
-  contact around net height. The ball need not be high, that quality drops if it is, and that
-  dropping the ball first lowers the opponent's attacking quality. Popped-up pushes get attacked
-  and repeatedly instructs to keep the trajectory low and brush the very bottom to stay out of the
-  net. High, slow, or spinless pushes get attacked and that a low trajectory prevents direct
-  attack. A truly low ball is difficult to attack and that low short serves are safer to receive
-  and attack from. Additional points reinforce the same theme. Together, these principles show how
-  the topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:9c959b43d6c0d8d37b9212a2aaf11576def891ec68c94b9dd67d871917aa2dd8"
+  constrained to net height, low position, and downward motion. The teacher directly says not to
+  change the height and that the ball/action should stay small and below the white line. To keep
+  the upper trajectory low and shorter is better when making heavy spin serves. The learner to aim
+  lower and repeatedly emphasizes that the ball should stay low and stable. To control arc height,
+  make the arc shorter when long, higher when into the net, and specifically keep the ball low and
+  long. To use the white tape as a height reference, avoid popping the ball up, and notes that the
+  described return stays very low and dead. The primary goal when pushing is to keep the ball low,
+  skimming the net. Additional points reinforce the same theme. Together, these principles show
+  how the topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:baa6584522dedbc983ce031399eacaa9a985d45540c177e9f2622affbfd5f841"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -367,3 +367,36 @@ evidence:
         - OQ7fB6yS8Fk:00014
         - OQ7fB6yS8Fk:00015
         - OQ7fB6yS8Fk:00016
+  - id: evEaxXmwJ2E-candidate-forward-downward-force-for-low-spinny-serve-reviewed
+    evidence_type: definition
+    excerpt: A serve force path that combines forward and downward direction so the ball stays low while still producing spin and speed.
+    reason: The speaker repeatedly states the serve must go forward and downward together to stay low and spinny.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: evEaxXmwJ2E
+      start_ms: 566966
+      end_ms: 596400
+      url: https://www.youtube.com/watch?v=evEaxXmwJ2E&t=566s
+      segment_ids:
+        - evEaxXmwJ2E:00114
+        - evEaxXmwJ2E:00115
+        - evEaxXmwJ2E:00116
+        - evEaxXmwJ2E:00118
+  - id: qr632K778Cc-concept-keep-the-ball-low-reviewed
+    evidence_type: definition
+    excerpt: In pushing and defense, send the ball low over the net to reduce the opponent's attacking options.
+    reason: The speaker explicitly says the primary goal when pushing is to keep the ball low, skimming the net.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: qr632K778Cc
+      start_ms: 212200
+      end_ms: 239633
+      url: https://www.youtube.com/watch?v=qr632K778Cc&t=212s
+      segment_ids:
+        - qr632K778Cc:00045
+        - qr632K778Cc:00048
+        - qr632K778Cc:00049

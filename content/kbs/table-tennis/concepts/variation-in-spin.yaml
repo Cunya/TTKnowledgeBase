@@ -9,9 +9,13 @@ short_definition: Alternating spin types to force errors and uncomfortable retur
 evidence_summary: >-
   Variation in spin brings together several connected ideas. Spin variation and gives heavy
   backspin, no-spin, topspin, and backspin alternations as examples. Alternating heavy backspin,
-  no-spin, and different directional contacts to change spin type. Together, these principles show
-  how the topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:355bb991ad6313ec451ca3dda1d28a385c1ccebf4279b464d0c2790aba051845"
+  no-spin, and different directional contacts to change spin type. Short push, flick, half-long
+  no-spin, and later explicitly says to reduce push spin or use half-long balls so the opponent
+  cannot load up on spin as easily. More spin is not always better, recommends simplifying spin,
+  and suggests using heavy backspin, topspin, or no-spin depending on the opponent. Together,
+  these principles show how the topic is applied in practice while preserving the relevant
+  distinctions and constraints.
+evidence_summary_source_hash: "sha256:52a7911e3229cc2d035fdfee7071bddf813c4d09902a4952b573aacc12ec398f"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -61,3 +65,35 @@ evidence:
         - ezGVESU0Rp0:00150
         - ezGVESU0Rp0:00151
         - ezGVESU0Rp0:00154
+  - id: rR9HWla28Sc-concept-variation-in-spin-reviewed
+    evidence_type: explanation
+    excerpt: Using different spin levels, including reducing spin, to control the opponent's ability to counterattack.
+    reason: The speaker recommends short push, flick, half-long no-spin, and later explicitly says to reduce push spin or use half-long balls so the opponent cannot load up on spin as easily.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: rR9HWla28Sc
+      start_ms: 596800
+      end_ms: 617366
+      url: https://www.youtube.com/watch?v=rR9HWla28Sc&t=596s
+      segment_ids:
+        - rR9HWla28Sc:00129
+        - rR9HWla28Sc:00130
+        - rR9HWla28Sc:00133
+  - id: VQlnNbgMmR8-concept-variation-in-spin-reviewed
+    evidence_type: explanation
+    excerpt: Adjusting spin amount and type based on opponent quality and match situation rather than always maximizing spin.
+    reason: The speaker explains that more spin is not always better, recommends simplifying spin, and suggests using heavy backspin, topspin, or no-spin depending on the opponent.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: VQlnNbgMmR8
+      start_ms: 617433
+      end_ms: 645333
+      url: https://www.youtube.com/watch?v=VQlnNbgMmR8&t=617s
+      segment_ids:
+        - VQlnNbgMmR8:00140
+        - VQlnNbgMmR8:00141
+        - VQlnNbgMmR8:00146

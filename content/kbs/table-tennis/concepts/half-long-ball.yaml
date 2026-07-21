@@ -8,16 +8,17 @@ short_definition: A serve or return that lands on the table first and then bounc
 evidence_summary: >-
   Half-long ball brings together several connected ideas. Explicitly defines half long as a ball
   whose first bounce lands off the table. A shot that looks like a short push but whose high point
-  is already deep, and the ball half-bounces out. The situation as half-long, clarifies it is not
-  full long, and labels it as a half-long (half-table) ball. Directly defines the half-long ball.
-  Connects mastery of half-long balls with taking initiative and notes that falling-point contact
-  reflects slower anticipation and footwork. Trouble hitting half-long balls and the temptation to
-  lift the ball. The half-out ball and it as between a non-out ball and an out ball, with an
-  edge-of-table arc. The half-long ball as a distinct scenario and pushing is difficult while
-  looping is often preferable. Additional points reinforce the same theme. Together, these
+  is already deep, and the ball half-bounces out. Balls that go long after one bounce and names
+  them half-long balls. Connects mastery of half-long balls with taking initiative and notes that
+  falling-point contact reflects slower anticipation and footwork. Half-long balls as landing once
+  and sitting near the edge, then explains they are common in matches. The half-out ball and it as
+  between a non-out ball and an out ball, with an edge-of-table arc. The half-long ball as a
+  distinct scenario and pushing is difficult while looping is often preferable. Half-long balls
+  from short balls, says to flick them over the table, keep the elbow by the side, stay low and
+  forward, and brake earlier. Additional points reinforce the same theme. Together, these
   principles show how the topic is applied in practice while preserving the relevant distinctions
   and constraints.
-evidence_summary_source_hash: "sha256:c5aac88e1c3c95cceb719f79b59677f680a96abf6b4f34cf62ca9256e66fb1ed"
+evidence_summary_source_hash: "sha256:039e5651e7683e96dc1d23d51fdea215eecf8b4f667d62a272b423c2d813a879"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -239,3 +240,34 @@ evidence:
         - FOPBXdIaKFA:00139
         - FOPBXdIaKFA:00140
         - FOPBXdIaKFA:00141
+  - id: _TIBQOXT3cw-concept-half-long-ball-reviewed
+    evidence_type: explanation
+    excerpt: A receive-length ball that is harder to handle than a short ball and gives the opponent time to attack if left too passive.
+    reason: The speaker explicitly compares short and half-long balls and describes half-long balls as more difficult and attackable if handled passively.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: _TIBQOXT3cw
+      start_ms: 647033
+      end_ms: 665333
+      url: https://www.youtube.com/watch?v=_TIBQOXT3cw&t=647s
+      segment_ids:
+        - _TIBQOXT3cw:00125
+        - _TIBQOXT3cw:00126
+        - _TIBQOXT3cw:00128
+  - id: cSDOaQqEtTQ-concept-half-long-ball-flick-handling-reviewed
+    evidence_type: explanation
+    excerpt: A half-long ball should be flicked over the table with forward-leaning, low body position, a side-held preparation, and earlier braking than a short-ball flick.
+    reason: The speaker distinguishes half-long balls from short balls, says to flick them over the table, keep the elbow by the side, stay low and forward, and brake earlier.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: cSDOaQqEtTQ
+      start_ms: 361966
+      end_ms: 389533
+      url: https://www.youtube.com/watch?v=cSDOaQqEtTQ&t=361s
+      segment_ids:
+        - cSDOaQqEtTQ:00081
+        - cSDOaQqEtTQ:00086

@@ -10,9 +10,12 @@ evidence_summary: >-
   Aggressive forward driving brings together several connected ideas. Aggressive forward play for
   both forehand and backhand and instructs moving forward while hitting. To combine brushing and
   slicing/drive-through, describing the serve as 'brush then slice' for one case and 'brush and
-  then drive forward' for the sidespin-topspin version. Together, these principles show how the
-  topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:89758f25e317341b307f9ad6106c88223ab2a9c80da3d748af6ea3530a5da7f2"
+  then drive forward' for the sidespin-topspin version. Forward movement and attacking as the
+  preferred rally behavior and rejects retreating. The shoulders should face forward, then the
+  right shoulder should drive toward the diagonal corner instead of twisting the waist. Together,
+  these principles show how the topic is applied in practice while preserving the relevant
+  distinctions and constraints.
+evidence_summary_source_hash: "sha256:025762ff9dc73d55e4a48b4964e8b5ec1961ed209cf65d673496dcb00ec1987d"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -59,3 +62,35 @@ evidence:
         - phKJvL-8VbQ:00082
         - phKJvL-8VbQ:00083
         - phKJvL-8VbQ:00085
+  - id: hDpdmRuaLMY-concept-aggressive-forward-driving-reviewed
+    evidence_type: definition
+    excerpt: A rally mindset and stroke habit of staying forward and attacking instead of backing away.
+    reason: The speaker explicitly frames forward movement and attacking as the preferred rally behavior and rejects retreating.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: hDpdmRuaLMY
+      start_ms: 0
+      end_ms: 11766
+      url: https://www.youtube.com/watch?v=hDpdmRuaLMY&t=0s
+      segment_ids:
+        - hDpdmRuaLMY:00000
+        - hDpdmRuaLMY:00001
+        - hDpdmRuaLMY:00002
+  - id: evEaxXmwJ2E-candidate-shoulder-drive-and-forward-body-line-reviewed
+    evidence_type: explanation
+    excerpt: Keeping the shoulders forward and driving the shoulder and body line through the serve so the motion does not leak sideways.
+    reason: The speaker explains that the shoulders should face forward, then the right shoulder should drive toward the diagonal corner instead of twisting the waist.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: evEaxXmwJ2E
+      start_ms: 670600
+      end_ms: 689466
+      url: https://www.youtube.com/watch?v=evEaxXmwJ2E&t=670s
+      segment_ids:
+        - evEaxXmwJ2E:00133
+        - evEaxXmwJ2E:00134
+        - evEaxXmwJ2E:00135

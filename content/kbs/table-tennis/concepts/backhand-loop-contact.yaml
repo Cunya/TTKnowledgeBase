@@ -236,6 +236,38 @@ evidence:
       segment_ids:
         - mchHxJnHUzE:00102
         - mchHxJnHUzE:00107
+  - id: mWehvleIbTk-concept-backhand-loop-contact-reviewed
+    evidence_type: definition
+    excerpt: The contact and brushing phase of the backhand loop, including the racket-head path from 7 o'clock to 10 o'clock and the need to brush the ball properly.
+    reason: The speaker explains the racket-head angle at backswing and contact and says only the 7 o'clock position allows proper brushing.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: mWehvleIbTk
+      start_ms: 583266
+      end_ms: 613000
+      url: https://www.youtube.com/watch?v=mWehvleIbTk&t=583s
+      segment_ids:
+        - mWehvleIbTk:00114
+        - mWehvleIbTk:00120
+  - id: wj87pK5547g-concept-backhand-loop-contact-reviewed
+    evidence_type: explanation
+    excerpt: Backhand loop contact should be positioned so the player can brush and lift the ball, with the forearm lowered appropriately against heavier spin.
+    reason: The speaker refers to contact positions, says more spin requires a lower forearm, and stresses a lowered forearm for a good brushing angle.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: wj87pK5547g
+      start_ms: 552366
+      end_ms: 578433
+      url: https://www.youtube.com/watch?v=wj87pK5547g&t=552s
+      segment_ids:
+        - wj87pK5547g:00105
+        - wj87pK5547g:00106
+        - wj87pK5547g:00107
+        - wj87pK5547g:00108
 relations:
   - relation_type: part_of
     target_concept_id: concept-backhand-loop

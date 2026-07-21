@@ -10,10 +10,14 @@ evidence_summary: >-
   Variation in placement brings together several connected ideas. Placement as the first key
   variation and the player should actively control placement. Varying depth and width, pushing to
   the middle, and varying placement within three shots before attacking decisively. The latter
-  part of non-predictable placement, target variation, and forcing opponent movement. Together,
+  part of non-predictable placement, target variation, and forcing opponent movement. States that
+  overusing one placement is ineffective and that serves should vary by target zone. Varying
+  placement, height, depth, and speed so drills resemble match conditions. To vary placement and
+  avoid repeatedly hitting the same spot. Opponents use your pace to change placement, then
+  recommends changing placement to attack angles and disturb the opponent's rhythm. Together,
   these principles show how the topic is applied in practice while preserving the relevant
   distinctions and constraints.
-evidence_summary_source_hash: "sha256:78531371a88e157aeb5b893f1dd3a2914ed95798baeee23b792a17a69d5c10ec"
+evidence_summary_source_hash: "sha256:0f774be9afeb0fda3cf087a02be6d4bae24e610b809960bc5cba5fd1a6230af1"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -77,3 +81,67 @@ evidence:
         - PVNp35T9kL4:00161
         - PVNp35T9kL4:00162
         - PVNp35T9kL4:00163
+  - id: Msruv1p5jp4-concept-variation-in-placement-reviewed
+    evidence_type: definition
+    excerpt: The practice of varying serve location instead of repeatedly targeting one area, especially using middle and down-the-line placements to become less predictable.
+    reason: States that overusing one placement is ineffective and that serves should vary by target zone.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Msruv1p5jp4
+      start_ms: 20433
+      end_ms: 48366
+      url: https://www.youtube.com/watch?v=Msruv1p5jp4&t=20s
+      segment_ids:
+        - Msruv1p5jp4:00004
+        - Msruv1p5jp4:00005
+        - Msruv1p5jp4:00006
+        - Msruv1p5jp4:00007
+        - Msruv1p5jp4:00008
+        - Msruv1p5jp4:00009
+  - id: -uuSx6fU8yY-concept-variation-in-placement-reviewed
+    evidence_type: explanation
+    excerpt: Changing where the ball lands so the drill better simulates a real match and forces movement adjustments.
+    reason: The coach explicitly recommends varying placement, height, depth, and speed so drills resemble match conditions.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: -uuSx6fU8yY
+      start_ms: 833266
+      end_ms: 848600
+      url: https://www.youtube.com/watch?v=-uuSx6fU8yY&t=833s
+      segment_ids:
+        - -uuSx6fU8yY:00167
+        - -uuSx6fU8yY:00168
+        - -uuSx6fU8yY:00169
+  - id: YKuNt_fynhY-concept-variation-in-placement-reviewed
+    evidence_type: definition
+    excerpt: Changing where shots land to keep the opponent uncomfortable and prevent predictability.
+    reason: The speaker explicitly says to vary placement and avoid repeatedly hitting the same spot.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: YKuNt_fynhY
+      start_ms: 15233
+      end_ms: 30066
+      url: https://www.youtube.com/watch?v=YKuNt_fynhY&t=15s
+      segment_ids:
+        - YKuNt_fynhY:00003
+        - YKuNt_fynhY:00005
+  - id: rR9HWla28Sc-concept-variation-in-placement-reviewed
+    evidence_type: explanation
+    excerpt: Changing target locations to disrupt the opponent's setup and prevent them from using a predictable strength.
+    reason: The speaker says opponents use your pace to change placement, then recommends changing placement to attack angles and disturb the opponent's rhythm.
+    confidence: 0.92
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: rR9HWla28Sc
+      start_ms: 7733
+      end_ms: 14433
+      url: https://www.youtube.com/watch?v=rR9HWla28Sc&t=7s
+      segment_ids:
+        - rR9HWla28Sc:00002
