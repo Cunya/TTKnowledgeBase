@@ -293,17 +293,20 @@ sections:
     children:
     - id: serve-types
       label: Serve types
-      description: Named serve families and their characteristic mechanics, spin variants, and tactical uses.
+      description: Named serve families and their characteristic mechanics, spin
+        variants, and tactical uses.
       concept_ids: []
       children:
       - id: forehand-serves
         label: Forehand serves
-        description: Forehand-side serve families organized by racket path, spin production, disguise, and placement.
+        description: Forehand-side serve families organized by racket path, spin
+          production, disguise, and placement.
         concept_ids: []
         children:
         - id: hook-serve
           label: Hook serve
-          description: A compact hooked serve family built around lateral brushing, deceptive contact, and sidespin variations.
+          description: A compact hooked serve family built around lateral 
+            brushing, deceptive contact, and sidespin variations.
           concept_ids:
           - concept-hook-serve-types
           - concept-hook-serve-mechanics
@@ -315,18 +318,24 @@ sections:
           children: []
         - id: pendulum-serve
           label: Pendulum serve
-          description: Named serve family awaiting directly reviewed pendulum-specific material; generic sidespin concepts remain in shared Serve sections.
+          description: Named serve family awaiting directly reviewed 
+            pendulum-specific material; generic sidespin concepts remain in 
+            shared Serve sections.
           concept_ids: []
           children: []
         - id: reverse-pendulum-serve
           label: Reverse pendulum serve
-          description: Directly comparative material currently comes from the backhand-serve article; generic serving concepts remain in shared Serve sections.
+          description: Directly comparative material currently comes from the 
+            backhand-serve article; generic serving concepts remain in shared 
+            Serve sections.
           concept_ids:
           - concept-backhand-serve
           children: []
       - id: backhand-serves
         label: Backhand serves
-        description: Backhand-side serving mechanics and shared spin-generation principles; named subtypes can be added when directly supported by reviewed evidence.
+        description: Backhand-side serving mechanics and shared spin-generation 
+          principles; named subtypes can be added when directly supported by 
+          reviewed evidence.
         concept_ids:
         - concept-backhand-serve
         - concept-preparation-stroke-and-backswing-for-backhand-serve

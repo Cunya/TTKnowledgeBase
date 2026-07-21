@@ -444,3 +444,23 @@ Track relation counts, concepts with no outgoing relations, cross-listed concept
 **Evidence:** `config/kbs/table-tennis/navigation.yaml` and the 2026-07-21 session log. Full site build and navigation validation remain required after this change.
 
 **Audit note:** The first grouping pass over-associated generic sidespin/disguise concepts with Pendulum and Reverse Pendulum. Those links were removed; Pendulum remains empty until direct reviewed evidence is available, and Reverse Pendulum retains only the directly comparative backhand-serve concept.
+
+### P1-22 — Cool down newly detected members-only videos
+
+**Status:** Implemented (2026-07-21).
+
+**Finding:** Known `members_only` configuration entries were excluded, but a video newly identified as members-only during ingestion was recorded as a generic failure and could be selected again on every cp cycle.
+
+**Acceptance:** Classify members-only acquisition errors explicitly, record `availability: members_only` and a three-day `next_retry_at` in the private retry manifest, skip without counting the item as a batch failure during the cooldown, and exclude it from both configured and discovered cp selection until the cooldown expires.
+
+**Evidence:** `processors/ingest.py`, `processors/cli.py`, `scripts/run-cp.py`, and the 2026-07-21 session log. Targeted tests and Ruff passed.
+
+### P2-10 — Prototype an authorized media-download and ASR transcript route
+
+**Status:** Planned experiment (2026-07-21); not enabled in `cp`, the monitor, or the scheduler.
+
+**Finding:** Caption-first ingestion cannot process videos with no usable captions and cannot independently verify caption accuracy. The current optional audio fallback is temporary and does not yet define a full media retention, video-to-audio, ASR provenance, comparison, or review workflow.
+
+**Acceptance:** Implement the separate route described in `docs/experimental-media-asr-route-plan-2026-07-21.md`: storage gates; bounded private video download retained by default for the initial experiment; audio extraction; pinned local ASR with stable private segment IDs; caption-vs-ASR comparison; explicit transcript-origin values distinguishing `local_asr` from `youtube_manual` and `youtube_generated`; and validation that prevents unreviewed ASR evidence or media from reaching public output. Start with a one-video smoke test before expanding to the 10–20-video gold set. Add cleanup previews and deletion/retention controls later, then make an explicit go/no-go decision before any production enablement.
+
+**Dependencies:** P0-02, P0-04, P0-07, P1-14, and an operator-approved acquisition/cleanup policy. Expiry tracking is intentionally deferred for now. This route must remain separate from normal caption ingestion and unattended processing.

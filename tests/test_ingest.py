@@ -1,6 +1,12 @@
 import pytest
 
-from processors.ingest import discover_videos, transcript_from_caption, video_id_from_url
+from processors.ingest import (
+    MembersOnlyError,
+    discover_videos,
+    is_members_only_error,
+    transcript_from_caption,
+    video_id_from_url,
+)
 
 
 @pytest.mark.parametrize(
@@ -19,6 +25,22 @@ def test_video_id_from_url(value: str, expected: str) -> None:
 def test_invalid_video_url() -> None:
     with pytest.raises(ValueError):
         video_id_from_url("https://example.com/nope")
+
+
+@pytest.mark.parametrize(
+    "message",
+    [
+        "Join this channel to get access to members-only content",
+        "This video is only available to members",
+    ],
+)
+def test_members_only_errors_are_classified(message: str) -> None:
+    assert is_members_only_error(RuntimeError(message))
+
+
+def test_members_only_error_is_distinct() -> None:
+    error = MembersOnlyError("members-only video")
+    assert isinstance(error, RuntimeError)
 
 
 def test_discover_videos_prioritizes_view_count(monkeypatch) -> None:

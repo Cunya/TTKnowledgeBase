@@ -120,6 +120,8 @@ python -m processors.cli ingest --kb table-tennis --request-delay 5 --jitter 2 V
 
 Existing normalized files are reused without network access. Use `--force` only when a transcript must be refreshed. When YouTube blocks the transcript endpoint, the command stops the batch and writes the next permitted retry time to the gitignored `data/manifests/<kb>/ingest-retries.json` file. Do not immediately rerun a blocked batch.
 
+When ingestion discovers that a video is members-only, it records `classification: members_only` and `availability: members_only` in the same private retry manifest, marks the video as skipped, and schedules the next check three days later. The cp selector also excludes that video during the cooldown, so it does not repeatedly consume ingestion attempts.
+
 The CLI enforces that cooldown before making another request. After changing to a genuinely different VPN or proxy route, pass `--retry-blocked` once to test the new route. Do not use the flag to retry the same blocked IP. Supplying `--proxy-url` or configured Webshare credentials also counts as an alternate route.
 
 Prevention defaults are deliberately conservative: uncached videos are spaced by 20 seconds plus up to 20 seconds of random jitter, and one invocation stops after 10 successful uncached videos. Failed or cooling-down entries do not consume that success target, within a bounded candidate window. Cached videos do not consume that budget. Do not defeat the cap by immediately launching repeated batches; leave a substantial break between runs. There is no universally safe request rate, especially on shared VPN or datacenter exits whose reputation is affected by other users. For sustained ingestion, use an operator-controlled rotating residential proxy and retain the same pacing.
@@ -147,7 +149,9 @@ pip install -e ".[asr]"
 python -m processors.cli ingest --kb table-tennis --allow-audio-download --confirm-rights --whisper-model small VIDEO_URL
 ```
 
-Both flags are mandatory. Audio is downloaded into a temporary directory, transcribed locally, and removed when the operation exits. Do not use this path without authorization to download and process the source.
+Both flags are mandatory. The current audio fallback remains temporary. The planned expanded media-ASR route will retain its downloaded video in the private ignored media workspace initially; do not expose or commit it, and do not use either path without authorization to download and process the source.
+
+The planned expanded route that temporarily downloads video, extracts audio, generates private ASR subtitles, compares them with available captions, and supports videos with no captions is documented in the [experimental media-ASR route plan](experimental-media-asr-route-plan-2026-07-21.md). It is not part of the normal monitor or scheduler workflow and must remain explicitly operator-triggered until its rights, accuracy, storage, and cleanup evaluation passes.
 Each completed monitor run records the child exit code, outcome, reason, and bounded stage output in the private `cp.latest.json` manifest. Failed runs expose a consecutive-failure retry counter; a successful run resets it.
 
 The monitor's Stop control terminates the full Windows processor process tree, including nested discovery and ingestion workers. The shared cp orchestrator applies bounded stage limits: discovery stages stop after 20 minutes and ingestion or other stages stop after 45 minutes. A timeout is recorded as a distinct `timeout` exit class with the affected stage and limit in the private manifest.

@@ -1,67 +1,70 @@
 {
   "knowledge_base": "table-tennis",
-  "started_at": "2026-07-21T03:15:21.567714+00:00",
+  "started_at": "2026-07-21T06:46:28.700464+00:00",
   "status": "completed",
   "stages": [
     {
       "name": "process-pending before acquisition",
       "exit_code": 0,
-      "output": "Processed pending candidates for Table Tennis: 6 accepted, 4 deferred, 0 \nrejected, 6 evidence moments added, 0 concepts added; diagnostics refreshed \n(1404 deferred candidates); navigation placed 0 concepts",
-      "exit_class": "success"
+      "output": "Processed pending candidates for Table Tennis: 0 accepted, 0 deferred, 0 \nrejected, 0 evidence moments added, 0 concepts added; diagnostics refreshed \n(1404 deferred candidates); navigation placed 0 concepts",
+      "exit_class": "success",
+      "timeout_seconds": 2700
     },
     {
       "name": "discover free-coach-brad-han",
       "exit_code": 0,
       "output": "Discovered 309 videos for Table Tennis",
-      "exit_class": "success"
+      "exit_class": "success",
+      "timeout_seconds": 1200
     },
     {
       "name": "discover global-tt-studio",
       "exit_code": 0,
       "output": "Discovered 2 videos for Table Tennis",
-      "exit_class": "success"
+      "exit_class": "success",
+      "timeout_seconds": 1200
     },
     {
       "name": "discover pingsunday-xiaohan-playlist",
       "exit_code": 0,
       "output": "Discovered 95 videos for Table Tennis",
-      "exit_class": "success"
+      "exit_class": "success",
+      "timeout_seconds": 1200
     },
     {
       "name": "ingest discovered batch",
       "exit_code": 1,
-      "output": "oin this channel to get access to members-only content and other exclusive perks.\nFailed https://www.youtube.com/watch?v=HRgvfIwnRKo: ERROR:  HRgvfIwnRKo: This \nvideo is available to this channel's members on level: Silver Member (or any \nhigher level). Join this channel to get access to members-only content and \nother exclusive perks.\nSkipped E7x31h6oqUg: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped SJngKl76ilI: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped nfuu1GdEsdc: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nERROR: [youtube] vBGpIA6MnHI: This video is available to this channel's members on level: Silver Member (or any higher level). Join this channel to get access to members-only content and other exclusive perks.\nFailed https://www.youtube.com/watch?v=vBGpIA6MnHI: ERROR:  vBGpIA6MnHI: This \nvideo is available to this channel's members on level: Silver Member (or any \nhigher level). Join this channel to get access to members-only content and \nother exclusive perks.\nERROR: [youtube] ZmaJNX5Glx8: Join this channel to get access to members-only content like this video, and other exclusive perks.\nFailed https://www.youtube.com/watch?v=ZmaJNX5Glx8: ERROR:  ZmaJNX5Glx8: Join \nthis channel to get access to members-only content like this video, and other \nexclusive perks.\nERROR: [youtube] iBFAcbu0bfs: This video is available to this channel's members on level: Silver Member (or any higher level). Join this channel to get access to members-only content and other exclusive perks.\nFailed https://www.youtube.com/watch?v=iBFAcbu0bfs: ERROR:  iBFAcbu0bfs: This \nvideo is available to this channel's members on level: Silver Member (or any \nhigher level). Join this channel to get access to members-only content and \nother exclusive perks.\nSkipped Ax33_mJyEus: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped NL2Fk8Kx6ms: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped WpMzokDPTKY: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped sdKwbYsf1ZY: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped 3WL365YKrxk: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped L0hadnRtWKA: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped mOByuWu4kFw: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped Td_gWd92dx0: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped uaIlXXAxNig: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped KZtA9ywZles: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped e-xj12ipLKE: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSaved Xho60DR74X0: Stop Popping Up Your Push! 4 Golden Rules for a Heavy Push \n(A Step-by-Step Tutorial)\n39 video(s) failed; successful videos were retained.",
-      "exit_class": "stage_failed"
-    },
-    {
-      "name": "extract Xho60DR74X0",
-      "exit_code": 0,
-      "output": "Saved candidates Xho60DR74X0.candidates.json",
-      "exit_class": "success"
+      "output": "l's members on level: Silver Member (or any higher level). Join this channel to get access to members-only content and other exclusive perks.\nFailed https://www.youtube.com/watch?v=WpMzokDPTKY: ERROR:  WpMzokDPTKY: This \nvideo is available to this channel's members on level: Silver Member (or any \nhigher level). Join this channel to get access to members-only content and \nother exclusive perks.\nERROR: [youtube] sdKwbYsf1ZY: This video is available to this channel's members on level: Bronze Member (or any higher level). Join this channel to get access to members-only content and other exclusive perks.\nFailed https://www.youtube.com/watch?v=sdKwbYsf1ZY: ERROR:  sdKwbYsf1ZY: This \nvideo is available to this channel's members on level: Bronze Member (or any \nhigher level). Join this channel to get access to members-only content and \nother exclusive perks.\nERROR: [youtube] 3WL365YKrxk: This video is available to this channel's members on level: Silver Member (or any higher level). Join this channel to get access to members-only content and other exclusive perks.\nFailed https://www.youtube.com/watch?v=3WL365YKrxk: ERROR:  3WL365YKrxk: This \nvideo is available to this channel's members on level: Silver Member (or any \nhigher level). Join this channel to get access to members-only content and \nother exclusive perks.\nERROR: [youtube] L0hadnRtWKA: Join this channel to get access to members-only content like this video, and other exclusive perks.\nFailed https://www.youtube.com/watch?v=L0hadnRtWKA: ERROR:  L0hadnRtWKA: Join \nthis channel to get access to members-only content like this video, and other \nexclusive perks.\nERROR: [youtube] mOByuWu4kFw: This video is available to this channel's members on level: Silver Member (or any higher level). Join this channel to get access to members-only content and other exclusive perks.\nFailed https://www.youtube.com/watch?v=mOByuWu4kFw: ERROR:  mOByuWu4kFw: This \nvideo is available to this channel's members on level: Silver Member (or any \nhigher level). Join this channel to get access to members-only content and \nother exclusive perks.\nERROR: [youtube] Td_gWd92dx0: Join this channel to get access to members-only content like this video, and other exclusive perks.\nFailed https://www.youtube.com/watch?v=Td_gWd92dx0: ERROR:  Td_gWd92dx0: Join \nthis channel to get access to members-only content like this video, and other \nexclusive perks.\nERROR: [youtube] uaIlXXAxNig: This video is available to this channel's members on level: Silver Member (or any higher level). Join this channel to get access to members-only content and other exclusive perks.\nFailed https://www.youtube.com/watch?v=uaIlXXAxNig: ERROR:  uaIlXXAxNig: This \nvideo is available to this channel's members on level: Silver Member (or any \nhigher level). Join this channel to get access to members-only content and \nother exclusive perks.\nERROR: [youtube] KZtA9ywZles: Join this channel to get access to members-only content like this video, and other exclusive perks.\nFailed https://www.youtube.com/watch?v=KZtA9ywZles: ERROR:  KZtA9ywZles: Join \nthis channel to get access to members-only content like this video, and other \nexclusive perks.\nERROR: [youtube] e-xj12ipLKE: This video is available to this channel's members on level: Silver Member (or any higher level). Join this channel to get access to members-only content and other exclusive perks.\nFailed https://www.youtube.com/watch?v=e-xj12ipLKE: ERROR:  e-xj12ipLKE: This \nvideo is available to this channel's members on level: Silver Member (or any \nhigher level). Join this channel to get access to members-only content and \nother exclusive perks.\nERROR: [youtube] jCYDG5zKcLI: Join this channel to get access to members-only content like this video, and other exclusive perks.\nFailed https://www.youtube.com/watch?v=jCYDG5zKcLI: ERROR:  jCYDG5zKcLI: Join \nthis channel to get access to members-only content like this video, and other \nexclusive perks.\n40 video(s) failed; successful videos were retained.",
+      "exit_class": "stage_failed",
+      "timeout_seconds": 2700
     },
     {
       "name": "process-pending after extraction",
       "exit_code": 0,
       "output": "Processed pending candidates for Table Tennis: 0 accepted, 0 deferred, 0 \nrejected, 0 evidence moments added, 0 concepts added; diagnostics refreshed \n(1404 deferred candidates); navigation placed 0 concepts",
-      "exit_class": "success"
+      "exit_class": "success",
+      "timeout_seconds": 2700
     },
     {
       "name": "build review queue",
       "exit_code": 0,
       "output": "Table Tennis: 4644 candidates queued",
-      "exit_class": "success"
+      "exit_class": "success",
+      "timeout_seconds": 2700
     },
     {
       "name": "refresh summaries",
       "exit_code": 0,
       "output": "Wrote 0 evidence summaries",
-      "exit_class": "success"
+      "exit_class": "success",
+      "timeout_seconds": 2700
     },
     {
       "name": "publish reviewed corpus",
       "exit_code": 0,
-      "output": "Refreshed 5 generated concept summary(ies)\nPublished Table Tennis: 345 concepts",
-      "exit_class": "success"
+      "output": "Published Table Tennis: 345 concepts",
+      "exit_class": "success",
+      "timeout_seconds": 2700
     }
   ],
   "cached_unextracted": [],
@@ -226,9 +229,9 @@
       "title": "Jam Your Opponent! The 3 Golden Rules of Hitting Down the Line (Forehand & Backhand)"
     },
     {
-      "id": "Xho60DR74X0",
-      "title": "Stop Popping Up Your Push! 4 Golden Rules for a Heavy Push (A Step-by-Step Tutorial)"
+      "id": "jCYDG5zKcLI",
+      "title": "Stop Snapping Your Wrist! An Advanced Deep Dive into the Backhand Banana Flick"
     }
   ],
-  "finished_at": "2026-07-21T03:22:24.366969+00:00"
+  "finished_at": "2026-07-21T07:09:24.771775+00:00"
 }

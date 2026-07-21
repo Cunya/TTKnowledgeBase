@@ -24,6 +24,25 @@ class TranscriptBlockedError(RuntimeError):
     """Stop a batch when YouTube starts rejecting transcript requests."""
 
 
+class MembersOnlyError(RuntimeError):
+    """The source reports that the requested video is members-only."""
+
+
+def is_members_only_error(error: BaseException) -> bool:
+    message = str(error).lower()
+    return any(
+        marker in message
+        for marker in (
+            "members-only",
+            "members only",
+            "available to channel members",
+            "only available to members",
+            "join this channel",
+            "join the channel",
+        )
+    )
+
+
 @dataclass(frozen=True)
 class IngestOptions:
     proxy_url: str | None = None
@@ -72,8 +91,17 @@ def _ydl_options(options: IngestOptions) -> dict:
 def fetch_metadata(url: str, options: IngestOptions | None = None) -> dict:
     settings = _ydl_options(options or IngestOptions())
     settings.update({"skip_download": True})
-    with yt_dlp.YoutubeDL(settings) as ydl:
-        return ydl.sanitize_info(ydl.extract_info(url, download=False))
+    try:
+        with yt_dlp.YoutubeDL(settings) as ydl:
+            metadata = ydl.sanitize_info(ydl.extract_info(url, download=False))
+    except Exception as error:
+        if is_members_only_error(error):
+            raise MembersOnlyError(str(error)) from error
+        raise
+    availability = str(metadata.get("availability") or "").lower()
+    if availability in {"members_only", "subscriber_only"}:
+        raise MembersOnlyError(f"Video availability reported as {availability}")
+    return metadata
 
 
 def discover_videos(url: str) -> list[dict]:
@@ -301,9 +329,13 @@ def ingest_video(
         try:
             transcript = fetch_transcript(video_id, languages, options)
         except Exception as primary_error:
+            if is_members_only_error(primary_error):
+                raise MembersOnlyError(str(primary_error)) from primary_error
             try:
                 transcript = fetch_yt_dlp_subtitles(url, video_id, languages, options)
-            except Exception:
+            except Exception as subtitle_error:
+                if is_members_only_error(subtitle_error):
+                    raise MembersOnlyError(str(subtitle_error)) from subtitle_error
                 if options.allow_audio_download:
                     transcript = transcribe_authorized_audio(url, video_id, languages[0], options)
                 else:

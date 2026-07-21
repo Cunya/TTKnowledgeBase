@@ -84,9 +84,9 @@ The acquisition order is:
 2. import an operator-supplied VTT/SRT when `--caption-file` is supplied;
 3. try `youtube-transcript-api`;
 4. try subtitle-only `yt-dlp` retrieval;
-5. optionally download temporary audio and run `faster-whisper`, but only when both `--allow-audio-download` and `--confirm-rights` are supplied.
+5. optionally download/process local media and run `faster-whisper`, but only when both `--allow-audio-download` and `--confirm-rights` are supplied. The planned media-ASR route retains downloaded video in the private ignored media workspace initially; cleanup controls are deferred.
 
-Network batches are sequential and paced by `--request-delay` plus randomized `--jitter`. Defaults use 20–40 seconds between uncached videos and cap each invocation at 8 uncached videos. A detected YouTube IP block opens a circuit breaker: ingestion records a private retry entry and stops the batch instead of sending more requests. Retry records use exponential backoff and live under `data/manifests/<kb>/ingest-retries.json`.
+Network batches are sequential and paced by `--request-delay` plus randomized `--jitter`. Defaults use 20–40 seconds between uncached videos and cap each invocation at 8 uncached videos. A detected YouTube IP block opens a circuit breaker: ingestion records a private retry entry and stops the batch instead of sending more requests. A newly detected members-only video is marked in the same private retry manifest and skipped for three days before it is checked again. Retry records use exponential backoff and live under `data/manifests/<kb>/ingest-retries.json`.
 
 Ingestion continues after an individual video fails, retains successful results, and exits nonzero with a failure summary.
 

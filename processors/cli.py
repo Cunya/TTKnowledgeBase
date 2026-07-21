@@ -32,6 +32,7 @@ from .evidence_summaries import (
 )
 from .ingest import (
     IngestOptions,
+    MembersOnlyError,
     TranscriptBlockedError,
     discover_videos,
     ingest_video,
@@ -63,6 +64,7 @@ from .workspace import KnowledgeBasePaths, load_knowledge_base
 ROOT = Path(__file__).resolve().parents[1]
 console = Console()
 roundtrip_yaml = YAML()
+MEMBERS_ONLY_COOLDOWN = timedelta(days=3)
 
 
 def retry_window_remaining(entry: dict, now: datetime | None = None) -> timedelta | None:
@@ -297,10 +299,22 @@ def ingest(
                 "uncached video(s); the conservative per-run success budget was reached."
             )
             break
-        active_retry = retry_window_remaining(retry_state["items"].get(requested_video_id, {}))
+        retry_item = retry_state["items"].get(requested_video_id, {})
+        active_retry = retry_window_remaining(retry_item)
         alternate_route = bool(
             options.proxy_url or (options.webshare_username and options.webshare_password)
         )
+        if (
+            needs_network
+            and retry_item.get("classification") == "members_only"
+            and active_retry
+        ):
+            days = max(1, round(active_retry.total_seconds() / 86400))
+            console.print(
+                f"[yellow]Skipped[/yellow] {requested_video_id}: marked members-only; "
+                f"cooldown has about {days} day(s) remaining."
+            )
+            continue
         if needs_network and active_retry and not retry_blocked and not alternate_route:
             hours = max(1, round(active_retry.total_seconds() / 3600))
             failures.append(url)
@@ -326,13 +340,30 @@ def ingest(
                 successful_network_videos += 1
             console.print(f"[green]Saved[/green] {video.id}: {video.title}")
         except Exception as error:
-            failures.append(url)
             try:
                 video_id = video_id_from_url(url)
             except ValueError:
                 video_id = url
             previous = retry_state["items"].get(video_id, {})
             attempts = int(previous.get("attempts", 0)) + 1
+            now = datetime.now(UTC)
+            if isinstance(error, MembersOnlyError):
+                retry_state["items"][video_id] = {
+                    "url": url,
+                    "attempts": attempts,
+                    "last_attempt_at": now.isoformat(),
+                    "next_retry_at": (now + MEMBERS_ONLY_COOLDOWN).isoformat(),
+                    "error_type": type(error).__name__,
+                    "classification": "members_only",
+                    "availability": "members_only",
+                    "message": str(error)[:1000],
+                }
+                console.print(
+                    f"[yellow]Marked[/yellow] {video_id} as members-only; "
+                    "will retry after the three-day cooldown."
+                )
+                continue
+            failures.append(url)
             blocked = isinstance(error, TranscriptBlockedError)
             delay_hours = (
                 min(24 * (2 ** (attempts - 1)), 24 * 7)
@@ -342,8 +373,8 @@ def ingest(
             retry_state["items"][video_id] = {
                 "url": url,
                 "attempts": attempts,
-                "last_attempt_at": datetime.now(UTC).isoformat(),
-                "next_retry_at": (datetime.now(UTC) + timedelta(hours=delay_hours)).isoformat(),
+                "last_attempt_at": now.isoformat(),
+                "next_retry_at": (now + timedelta(hours=delay_hours)).isoformat(),
                 "error_type": type(error).__name__,
                 "blocked": blocked,
                 "message": str(error)[:1000],

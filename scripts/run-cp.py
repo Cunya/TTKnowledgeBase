@@ -35,6 +35,30 @@ def stage_timeout_seconds(name: str) -> int:
     return STAGE_TIMEOUTS_SECONDS["default"]
 
 
+def active_members_only_ids(kb: str) -> set[str]:
+    retry_path = ROOT / "data" / "manifests" / kb / "ingest-retries.json"
+    if not retry_path.exists():
+        return set()
+    try:
+        payload = json.loads(retry_path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return set()
+    now = datetime.now(UTC)
+    active: set[str] = set()
+    for video_id, item in (payload.get("items") or {}).items():
+        if item.get("classification") != "members_only":
+            continue
+        try:
+            retry_at = datetime.fromisoformat(str(item.get("next_retry_at")))
+        except (TypeError, ValueError):
+            continue
+        if retry_at.tzinfo is None:
+            retry_at = retry_at.replace(tzinfo=UTC)
+        if retry_at > now:
+            active.add(str(video_id))
+    return active
+
+
 def terminate_process_tree(pid: int) -> None:
     if os.name == "nt":
         subprocess.run(
@@ -102,9 +126,11 @@ def run(name: str, args: list[str], report: dict) -> int:
 def selected_batch(kb: str, limit: int) -> list[dict]:
     config = read_yaml(ROOT / "config" / "kbs" / kb / "sources.yaml") or {}
     normalized = ROOT / "data" / "normalized" / kb
+    members_only_cooldown = active_members_only_ids(kb)
     return [item for item in config.get("videos", [])
             if item.get("selected") and item.get("availability") != "members_only"
-            and item.get("id") and not (normalized / f"{item['id']}.json").exists()][:limit]
+            and item.get("id") and str(item["id"]) not in members_only_cooldown
+            and not (normalized / f"{item['id']}.json").exists()][:limit]
 
 
 def cached_unextracted(kb: str) -> list[str]:
@@ -180,11 +206,17 @@ def main() -> int:
                         discovered.extend(payload.get("videos", []))
             discovered.extend(catalog_videos(args.kb))
             normalized = ROOT / "data" / "normalized" / args.kb
+            members_only_cooldown = active_members_only_ids(args.kb)
             seen: set[str] = set()
             batch = []
             for item in sorted(discovered, key=lambda value: value.get("view_count") or 0, reverse=True):
                 video_id = str(item.get("id", ""))
-                if video_id and video_id not in seen and not (normalized / f"{video_id}.json").exists():
+                if (
+                    video_id
+                    and video_id not in seen
+                    and video_id not in members_only_cooldown
+                    and not (normalized / f"{video_id}.json").exists()
+                ):
                     seen.add(video_id)
                     batch.append(item)
             batch = batch[: args.batch_size * 4]
