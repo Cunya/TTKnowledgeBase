@@ -861,11 +861,10 @@ def validate_published(kb: KbOption = None) -> None:
         errors.append("published manifest video count is stale")
     queue_path = paths.content / "annotations" / "review-queue.yaml"
     if queue_path.exists():
-        normalized_videos = load_videos(paths.data("normalized"))
-        demo_ids = _demo_video_ids(normalized_videos)
+        reviewed_concepts = load_reviewed_concepts(paths.content / "concepts")
         errors.extend(
             validate_review_queue(
-                read_yaml(queue_path), corpus.concepts, ignored_video_ids=demo_ids
+                read_yaml(queue_path), reviewed_concepts
             )
         )
     if errors:

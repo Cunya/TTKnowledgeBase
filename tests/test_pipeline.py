@@ -2,7 +2,6 @@ from pathlib import Path
 
 from ruamel.yaml import YAML
 
-from processors.cli import _demo_video_ids
 from processors.demo import DEMO_VIDEO_ID, write_demo_video
 from processors.models import Concept, KnowledgeNavigation
 from processors.pipeline import (
@@ -205,20 +204,19 @@ def test_accepted_queue_item_requires_exact_canonical_evidence() -> None:
     assert "no cited segment" in validate_review_queue(queue, [concept])[0]
 
 
-def test_demo_queue_items_are_ignored_without_private_video_metadata() -> None:
-    concept = demo_concepts()[0]
+def test_published_queue_validation_uses_reviewed_demo_evidence() -> None:
+    concept = next(concept for concept in demo_concepts() if concept.id == "concept-ready-position")
     queue = {
         "items": [
             {
                 "video_id": DEMO_VIDEO_ID,
                 "decision": "accepted",
                 "canonical_concept_id": concept.id,
-                "candidate": {"evidence": [{"segment_ids": [f"{DEMO_VIDEO_ID}:99999"]}]},
+                "candidate": {"evidence": [{"segment_ids": [f"{DEMO_VIDEO_ID}:00000"]}]},
             }
         ]
     }
-    assert _demo_video_ids([]) == {DEMO_VIDEO_ID}
-    assert validate_review_queue(queue, [concept], ignored_video_ids=_demo_video_ids([])) == []
+    assert validate_review_queue(queue, [concept]) == []
 
 
 def test_navigation_requires_every_approved_concept() -> None:

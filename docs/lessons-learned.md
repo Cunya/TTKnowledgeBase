@@ -11,4 +11,4 @@
 - Atlas placement needs to be checked against the full editorial context: label, definition, facets, evidence summary, and evidence reasons. A concept can pass label-based checks while its summary clearly belongs to a receive, push, fundamentals, or practice branch.
 - Deterministic evidence-summary cleanup must cover reporting constructions embedded mid-sentence, not only prefixes; run the repository-wide generated-summary assertion after changing sanitizer rules.
 - Alternate transcript routes must use a separate normalized-data namespace; overwriting a caption cache can invalidate reviewed segment references even when video IDs match.
-- Published-only CI cannot infer synthetic fixture metadata from private normalized files; fixture IDs used by queue validation must be declared in tracked code and covered by a published-only regression test.
+- Published-only queue validation must compare accepted queue citations with reviewed canonical concepts, not sanitized published concepts that intentionally remove demo/private evidence.
