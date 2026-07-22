@@ -6,6 +6,12 @@ It is intentionally ordered. The project should complete the blocking and trust 
 
 Last refreshed: 2026-07-21 15:25 EEST.
 
+## Atlas classification audit - 2026-07-22
+
+- Moved four receive/point-selection tactics out of the Push shot branch: `loop-against-half-long-ball` and `deceptive-service-return-variation` now live under Serve receive, while `one-push-one-hit` and `push-first-then-drive-is-incorrect` now live under Strategy and point patterns.
+- The Push branch retains concepts whose primary subject is push execution, spin, contact, or push-specific match use.
+- Acceptance evidence: navigation validation reports no unknown concept IDs and each moved concept appears in its intended learning path.
+
 ## Research reconciliation — 2026-07-19
 
 - Added a local `/research/` comparison page covering glossaries, drill databases, coaching academies, structured training programs, and AI coaching tools.
