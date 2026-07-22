@@ -217,6 +217,7 @@ def build_progress_report(paths: KnowledgeBasePaths, corpus: PublishCorpus) -> d
         "extracted": sum(record["extracted"] for record in records),
         "concepts": len(corpus.concepts),
         "published_videos": len(corpus.videos),
+        "published_configured_videos": sum(record["published"] for record in records),
         "evidence": sum(len(concept.evidence) for concept in corpus.concepts),
         "visual_proposed": sum(record["visual_proposed"] for record in records),
         "visual_verified": sum(record["visual_verified"] for record in records),

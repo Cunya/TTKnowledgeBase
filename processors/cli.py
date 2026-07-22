@@ -82,6 +82,16 @@ def retry_window_remaining(entry: dict, now: datetime | None = None) -> timedelt
         retry_at = retry_at.replace(tzinfo=UTC)
     remaining = retry_at - (now or datetime.now(UTC))
     return remaining if remaining.total_seconds() > 0 else None
+
+
+def block_cooldown_remaining(retry_state: dict, now: datetime | None = None) -> timedelta | None:
+    """Return the longest active route-wide transcript block cooldown."""
+    active = [
+        retry_window_remaining(item, now)
+        for item in (retry_state.get("items", {}) or {}).values()
+        if item.get("blocked")
+    ]
+    return max((item for item in active if item is not None), default=None)
 app = typer.Typer(help="Build source-grounded video knowledge bases.")
 KbOption = Annotated[str | None, typer.Option("--kb", help="Knowledge-base ID")]
 
@@ -298,6 +308,16 @@ def ingest(
     failures: list[str] = []
     network_attempts = 0
     successful_network_videos = 0
+    alternate_route = bool(options.proxy_url or (options.webshare_username and options.webshare_password))
+    block_cooldown = block_cooldown_remaining(retry_state)
+    if block_cooldown and not retry_blocked and not alternate_route:
+        hours = max(1, round(block_cooldown.total_seconds() / 3600))
+        console.print(
+            f"[yellow]Stopped[/yellow] before network access: YouTube block cooldown is "
+            f"active for about {hours} hour(s). Change VPN/proxy route, pass "
+            "--retry-blocked, or wait for the recorded retry time."
+        )
+        raise typer.Exit(1)
     for index, url in enumerate(urls):
         requested_video_id = video_id_from_url(url)
         cache_path = paths.data("normalized") / f"{requested_video_id}.json"

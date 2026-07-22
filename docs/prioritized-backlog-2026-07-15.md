@@ -13,6 +13,12 @@ Last refreshed: 2026-07-21 15:25 EEST.
 - Acceptance evidence: navigation validation reports no unknown concept IDs and each moved concept appears in its intended learning path.
 - Extended the audit across all 514 atlas concepts. Corrected additional clear mismatches: receive actions moved out of Loop/Push, serve-spin variation moved out of Forehand loop, backspin-push training moved to Training and drills, a push error moved to Push, and forehand-transition footwork moved to Footwork and spacing.
 - Process finding: automatic placement previously accepted any highest keyword score, including weak or near-tied matches. Added a strong-match and margin gate so ambiguous generated concepts stay unplaced for editorial review.
+- Progress-page finding: the workflow total used the full public corpus count as “published” while source rows used configured eligible videos, producing impossible percentages. Added an explicit configured-published total and dynamic snapshot timestamp.
+- Clarified the operator page’s primary outcome: show the published knowledge corpus first, counting videos with available approved concepts and evidence moments; keep configured workflow progress as a separate operational view.
+- Progress-table clarity: renamed mixed-unit columns to identify whether they count videos, transcripts, candidates, evidence moments, concepts, proposed visual windows, or reviewer-verified visual demonstrations, and added a unit legend.
+- Acquisition safety finding: an active transcript block was treated as video-specific, so cp could continue network attempts against other videos on the same route. The ingest circuit breaker now treats active blocked retry windows as route-wide and stops before any request unless an alternate route or explicit retry override is supplied.
+- The route-wide gate is limited to `blocked: true`; ordinary unavailable, transient, and members-only failures remain per-video skips so unaffected videos can continue processing.
+- Monitor usability: expose the active route-wide block deadline from the same retry manifest used by ingest, so operators can see when the current route is safe to retry.
 - Process finding: automatic placement previously accepted any highest keyword score, including weak or near-tied matches. Added a strong-match and margin gate so ambiguous generated concepts stay unplaced for editorial review.
 
 ## Research reconciliation — 2026-07-19

@@ -218,13 +218,24 @@ async function resetBudget() {
   addLog(`Reset local LLM budget counters for ${dayKey}.`);
 }
 
+function routeLockout(retryState) {
+  const deadlines = Object.values(retryState?.items || {})
+    .filter((item) => item.blocked === true && item.next_retry_at)
+    .map((item) => new Date(item.next_retry_at).getTime())
+    .filter((value) => Number.isFinite(value) && value > Date.now());
+  if (!deadlines.length) return null;
+  const until = new Date(Math.max(...deadlines));
+  return { until: until.toISOString(), remainingMs: until.getTime() - Date.now() };
+}
+
 async function snapshot() {
-  const [budget, progress, daily, cp, processes] = await Promise.all([
+  const [budget, progress, daily, cp, processes, retries] = await Promise.all([
     readJson(`data/manifests/${kb}/llm-budget.json`),
     readJson(`app/src/data/generated/${kb}-progress.json`),
     readJson(`data/manifests/${kb}/daily-processing.latest.json`),
     readJson(`data/manifests/${kb}/cp.latest.json`),
     readProcessList(),
+    readJson(`data/manifests/${kb}/ingest-retries.json`),
   ]);
   const day = budget?.days?.[new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Helsinki' }).format(new Date())];
   const used = day?.actual_tokens || 0;
@@ -242,6 +253,7 @@ async function snapshot() {
     nextRunAt: state.nextRunAt,
     intervalMs: state.intervalMs,
     retryCount: state.retryCount,
+    routeLockout: routeLockout(retries),
     budget: budget ? {
       used,
       dailyLimit: 30_000_000,
@@ -284,6 +296,9 @@ const latestHeading=document.querySelector('h2');latestHeading.parentNode.insert
 const fmtTime=s=>s?new Date(s).toLocaleString():'—';const fmtBytes=n=>n==null?'—':(Number(n)/1024/1024).toFixed(0)+' MB';
 async function refreshCurrentOutput(){const response=await fetch('/api/status');const state=await response.json();const active=state.activeRun;currentOutput.textContent=active?.output||'No active run.';const current=state.currentStage;stage.innerHTML=current?'<strong>'+current.name+'</strong><p>'+current.explanation+'</p>':'<strong>Waiting for a run</strong><p>No pipeline stage is active. The monitor will start the next cycle at the scheduled time.</p>';document.querySelector('#live-processes').innerHTML=(state.processes||[]).map(p=>'<tr><td>'+p.name+'</td><td>'+p.pid+'</td><td>'+Number(p.cpuSeconds||0).toFixed(1)+' s</td><td>'+fmtBytes(p.memoryBytes)+'</td><td>'+fmtTime(p.startedAt)+'</td></tr>').join('')||'<tr><td colspan="5" class="muted">No Python or Node processes found.</td></tr>'}
 refreshCurrentOutput();setInterval(refreshCurrentOutput,5000);
+const lockoutMetric=document.createElement('div');lockoutMetric.className='metric';lockoutMetric.innerHTML='<small>Route lockout</small><b id="route-lockout">-</b><span id="route-lockout-sub">YouTube transcript access</span>';document.querySelector('.metrics')?.appendChild(lockoutMetric);
+async function refreshRouteLockout(){const state=await (await fetch('/api/status')).json();const lock=state.routeLockout;const value=document.querySelector('#route-lockout');const detail=document.querySelector('#route-lockout-sub');if(!value||!detail)return;if(lock){value.textContent=fmtTime(lock.until);detail.textContent='blocked until '+new Date(lock.until).toLocaleString();}else{value.textContent='None';detail.textContent='no active route-wide block';}}
+refreshRouteLockout();setInterval(refreshRouteLockout,5000);
 async function refreshProgress(){const state=await (await fetch('/api/status')).json();const run=state.runProgress||{percent:0,label:'Waiting for a run',detail:'The next cycle has not started.'};document.querySelector('#live-percent').textContent=run.percent+'%';document.querySelector('#live-bar').style.width=run.percent+'%';document.querySelector('#live-progress-detail').textContent=run.label+' · '+run.detail}
 refreshProgress();setInterval(refreshProgress,5000);
 </script>`;
@@ -308,12 +323,17 @@ $('reset').onclick=async()=>{if(confirm("Reset today's local LLM budget counters
 refresh();setInterval(refresh,5000);
 </script></body></html>`;
 
+const monitorPage = dashboardPage.replace('</body></html>', `<script>
+const routeLockoutMetric=document.createElement('section');routeLockoutMetric.className='panel pad';routeLockoutMetric.innerHTML='<div class="section-head"><h2>Route lockout</h2><span class="meta">YouTube transcript access</span></div><p class="meta" id="route-lockout-status">Checking blocked retry windows...</p>';document.querySelector('.side-stack')?.prepend(routeLockoutMetric);
+async function refreshRouteLockout(){const state=await (await fetch('/api/status')).json();const lock=state.routeLockout;const target=document.querySelector('#route-lockout-status');if(!target)return;if(lock){target.textContent='Blocked until '+new Date(lock.until).toLocaleString()+' (route-wide IP cooldown).';}else{target.textContent='No active route-wide block.';}}refreshRouteLockout();setInterval(refreshRouteLockout,5000);
+</script></body></html>`);
+
 const server = http.createServer(async (request, response) => {
   const url = new URL(request.url, `http://${request.headers.host}`);
   response.setHeader('cache-control', 'no-store');
   response.setHeader('access-control-allow-origin', 'http://127.0.0.1:4321');
   response.setHeader('access-control-allow-headers', 'content-type');
-  if (url.pathname === '/') { response.writeHead(200, { 'content-type': 'text/html; charset=utf-8' }); response.end(dashboardPage); return; }
+  if (url.pathname === '/') { response.writeHead(200, { 'content-type': 'text/html; charset=utf-8' }); response.end(monitorPage); return; }
   if (url.pathname === '/api/status') { response.writeHead(200, { 'content-type': 'application/json' }); response.end(JSON.stringify(await snapshot())); return; }
   if (url.pathname === '/api/start' && request.method === 'POST') {
     let body=''; for await (const chunk of request) body += chunk; const input=JSON.parse(body||'{}'); start(Number(input.minutes)*60*1000); response.writeHead(200, {'content-type':'application/json'}); response.end(JSON.stringify(await snapshot())); return;
