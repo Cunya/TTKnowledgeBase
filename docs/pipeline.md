@@ -32,6 +32,14 @@ An analysis or study is not complete when its Markdown report is written. The re
 3. Update the relevant operational documentation (`docs/pipeline.md`, `docs/operations.md`, README, or a domain/legal/content findings report) so the recommended process and the backlog item do not diverge.
 4. Add a dated entry to the session log and session notes, including the study-to-backlog IDs and verification performed.
 
+### Navigation placement safety
+
+The atlas is editorial structure, not a keyword index. Automatic placement may place a generated concept only when its lexical match to one navigation node is strong and clearly better than the runner-up; weak or near-tied matches remain unplaced for explicit review. This prevents words such as “loop,” “push,” or “serve” in a definition from silently selecting the wrong deep branch. `validate` still requires every approved concept to be represented, so skipped placement becomes a visible review task.
+
+### Navigation placement safety
+
+The atlas is editorial structure, not a keyword index. Automatic placement may place a generated concept only when its lexical match to one navigation node is strong and clearly better than the runner-up; weak or near-tied matches remain unplaced for explicit review. This prevents words such as “loop,” “push,” or “serve” in a definition from silently selecting the wrong deep branch. `validate` still requires every approved concept to be represented, so skipped placement becomes a visible review task.
+
 The Markdown backlog remains the planning source of truth. The HTML backlog is a generated local operator view and is intentionally excluded from the public GitHub Pages build.
 
 ## Data flow

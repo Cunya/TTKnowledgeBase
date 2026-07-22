@@ -644,7 +644,12 @@ def validate_navigation(
 
 
 def auto_place_generated_concepts(navigation: dict, concepts: list[Concept]) -> dict[str, int]:
-    """Place generated concepts in the closest existing navigation node."""
+    """Place generated concepts only when the navigation match is unambiguous.
+
+    Navigation is editorial structure, so a weak keyword match must not silently
+    choose a deep shot branch. Concepts without a strong, clearly better match
+    remain unplaced for review and are reported by navigation validation.
+    """
     nodes: list[dict] = []
 
     def collect(items: list[dict]) -> None:
@@ -684,17 +689,20 @@ def auto_place_generated_concepts(navigation: dict, concepts: list[Concept]) -> 
                 ],
             )
         ).lower()
-        best = None
-        best_score = 0
+        ranked: list[tuple[int, dict]] = []
         for node in nodes:
             node_text = " ".join([node.get("id", ""), node.get("label", ""), node.get("description", "")]).lower()
             score = sum(1 for word in text.split() if len(word) > 4 and word in node_text)
+            label_words = [word for word in re.findall(r"[a-z0-9]+", node.get("label", "").lower()) if len(word) > 3]
+            score += sum(8 for word in label_words if word in text)
             for key, terms in keywords.items():
                 if key in node.get("id", ""):
                     score += sum(3 for term in terms if term in text)
-            if score > best_score:
-                best, best_score = node, score
-        if best is None:
+            ranked.append((score, node))
+        ranked.sort(key=lambda item: item[0], reverse=True)
+        best_score, best = ranked[0] if ranked else (0, None)
+        runner_up = ranked[1][0] if len(ranked) > 1 else 0
+        if best is None or best_score < 8 or best_score - runner_up < 2:
             skipped += 1
         else:
             best.setdefault("concept_ids", []).append(concept.id)

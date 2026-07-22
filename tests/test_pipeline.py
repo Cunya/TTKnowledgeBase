@@ -1,10 +1,12 @@
 from pathlib import Path
+from types import SimpleNamespace
 
 from ruamel.yaml import YAML
 
 from processors.demo import DEMO_VIDEO_ID, write_demo_video
 from processors.models import Concept, KnowledgeNavigation
 from processors.pipeline import (
+    auto_place_generated_concepts,
     build_quality_report,
     build_review_queue,
     find_high_overlap_excerpts,
@@ -227,6 +229,25 @@ def test_navigation_requires_every_approved_concept() -> None:
     assert validate_navigation(navigation, [concept]) == [
         f"navigation: approved concept is not placed: {concept.id}"
     ]
+
+
+def test_auto_navigation_skips_weak_or_ambiguous_matches() -> None:
+    navigation = {
+        "sections": [
+            {"id": "loop", "label": "Loop", "description": "Topspin attacks.", "concept_ids": []},
+            {"id": "push", "label": "Push", "description": "Backspin control strokes.", "concept_ids": []},
+        ]
+    }
+    concept = SimpleNamespace(
+        id="concept-ambiguous",
+        label="Ball selection",
+        short_definition="Choose the right response to the incoming ball.",
+        evidence_summary="A decision depends on timing and placement.",
+        concept_type="tactic",
+        generated_by=SimpleNamespace(processor="automatic_candidate_review"),
+    )
+    assert auto_place_generated_concepts(navigation, [concept]) == {"placed": 0, "skipped": 1}
+    assert all(not node["concept_ids"] for node in navigation["sections"])
 
 
 def test_navigation_keeps_audited_concepts_under_semantic_parents() -> None:

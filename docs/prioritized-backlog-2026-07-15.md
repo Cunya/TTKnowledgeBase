@@ -11,6 +11,9 @@ Last refreshed: 2026-07-21 15:25 EEST.
 - Moved four receive/point-selection tactics out of the Push shot branch: `loop-against-half-long-ball` and `deceptive-service-return-variation` now live under Serve receive, while `one-push-one-hit` and `push-first-then-drive-is-incorrect` now live under Strategy and point patterns.
 - The Push branch retains concepts whose primary subject is push execution, spin, contact, or push-specific match use.
 - Acceptance evidence: navigation validation reports no unknown concept IDs and each moved concept appears in its intended learning path.
+- Extended the audit across all 514 atlas concepts. Corrected additional clear mismatches: receive actions moved out of Loop/Push, serve-spin variation moved out of Forehand loop, backspin-push training moved to Training and drills, a push error moved to Push, and forehand-transition footwork moved to Footwork and spacing.
+- Process finding: automatic placement previously accepted any highest keyword score, including weak or near-tied matches. Added a strong-match and margin gate so ambiguous generated concepts stay unplaced for editorial review.
+- Process finding: automatic placement previously accepted any highest keyword score, including weak or near-tied matches. Added a strong-match and margin gate so ambiguous generated concepts stay unplaced for editorial review.
 
 ## Research reconciliation — 2026-07-19
 
