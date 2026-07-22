@@ -13,9 +13,10 @@ evidence_summary: >-
   hard to attack, should be kept low, and forces the opponent to step in. Short forehand or middle
   serves create third-ball attack opportunities and that low serves are hard to return. Explicit
   receive behavior for short balls and half-long balls, including stepping in or not retreating.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:10fc79f888b751b2e1d7883e643f29f1bce3fa12eb5d70ce53771351d8f2752c"
+  Not to drop the hand too low, start higher, and avoid getting jammed or hitting wide. Together,
+  these principles show how the topic is applied in practice while preserving the relevant
+  distinctions and constraints.
+evidence_summary_source_hash: "sha256:fca986dfbf06591f9431750008fdba5b91e906d06eac06f8678b03d52b607599"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -99,3 +100,20 @@ evidence:
       segment_ids:
         - AJeZkjOEJkk:00107
         - AJeZkjOEJkk:00109
+  - id: _U8F62ukqK4-concept-sidespin-topspin-serve-receive-posture-reviewed
+    evidence_type: explanation
+    excerpt: When receiving a sidespin-topspin serve, the racket should start higher rather than dropping too low to avoid jamming and wide errors.
+    reason: The speaker says not to drop the hand too low, start higher, and avoid getting jammed or hitting wide.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: _U8F62ukqK4
+      start_ms: 31833
+      end_ms: 51600
+      url: https://www.youtube.com/watch?v=_U8F62ukqK4&t=31s
+      segment_ids:
+        - _U8F62ukqK4:00006
+        - _U8F62ukqK4:00007
+        - _U8F62ukqK4:00008
+        - _U8F62ukqK4:00009

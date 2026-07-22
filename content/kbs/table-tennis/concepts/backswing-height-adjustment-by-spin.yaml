@@ -7,10 +7,12 @@ aliases:
 short_definition: 'Adjusting racket height in the backswing according to incoming spin: lower for heavier spin and higher for lighter spin.'
 evidence_summary: >-
   Backswing height adjustment by spin brings together several connected ideas. Directly that more
-  spin requires a lower racket and less spin allows a higher hand position. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:03d0b8707596c4906f8989f1dc6f5f276677d3517a5f0a65b863fa04ebf414b3"
+  spin requires a lower racket and less spin allows a higher hand position. Specific backswing
+  adjustments for backspin, topspin, and forearm distance, all tied to incoming spin and ball
+  type. Drive, topspin loop, and backspin loop backswing positions and the consequences of getting
+  the height wrong. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:e35deb667b2855875ee9b24ab7f5177832a18df1c453931c7f7aa8ab17c5f0c7"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -47,3 +49,36 @@ evidence:
       url: https://www.youtube.com/watch?v=D2hk2kkCdfI&t=322s
       segment_ids:
         - D2hk2kkCdfI:00067
+  - id: M8fzQvShrx8-concept-backswing-height-adjustment-by-spin-reviewed
+    evidence_type: explanation
+    excerpt: Adjusting backswing height and depth according to the spin and quality of the incoming ball.
+    reason: The speaker gives specific backswing adjustments for backspin, topspin, and forearm distance, all tied to incoming spin and ball type.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: M8fzQvShrx8
+      start_ms: 278333
+      end_ms: 304833
+      url: https://www.youtube.com/watch?v=M8fzQvShrx8&t=278s
+      segment_ids:
+        - M8fzQvShrx8:00054
+        - M8fzQvShrx8:00055
+        - M8fzQvShrx8:00056
+        - M8fzQvShrx8:00057
+  - id: _f9fVMm2_Gs-cand-4-reviewed
+    evidence_type: definition
+    excerpt: Adjust backswing height to match the incoming spin and stroke choice; too low against topspin or too high against backspin causes errors.
+    reason: The speaker contrasts drive, topspin loop, and backspin loop backswing positions and explains the consequences of getting the height wrong.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: _f9fVMm2_Gs
+      start_ms: 214266
+      end_ms: 231466
+      url: https://www.youtube.com/watch?v=_f9fVMm2_Gs&t=214s
+      segment_ids:
+        - _f9fVMm2_Gs:00033
+        - _f9fVMm2_Gs:00035
+        - _f9fVMm2_Gs:00036

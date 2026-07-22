@@ -12,9 +12,13 @@ evidence_summary: >-
   and a sharp stop and explicitly defines braking as stopping the motion abruptly after contact. A
   deceptive follow-through as the visible part after the real work is done at contact. A deceptive
   follow-through that changes how the serve looks while preserving the actual spin-producing
-  action. Together, these principles show how the topic is applied in practice while preserving
-  the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:c9b64152dc9707e0e5c932f84fa9cc739a78320ccb6a51c4d36968dce1177f53"
+  action. The brushing action is followed by a downward follow-through as a deceptive motion, and
+  later emphasizes the follow-through direction. Approaching straight and then changing angle at
+  contact, saying even slight hesitation causes late footwork, which is presented as deceptive.
+  Deceptive motions exist and you need to watch the moment of contact to detect deception. A fake
+  motion after the serve to hide the real action. Together, these principles show how the topic is
+  applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:6f2fb3e48fd2563bc624e08bb1f75e2a8f753c61a2f1d9ed267cf1cf54de4ed6"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -109,3 +113,50 @@ evidence:
       segment_ids:
         - pQcxGOu4wEE:00107
         - pQcxGOu4wEE:00112
+  - id: 1XgvgkJ8EfM-concept-deceptive-follow-through-reviewed
+    evidence_type: demonstration
+    excerpt: Use a swing approach that disguises the real target until contact or the final moment.
+    reason: The speaker describes approaching straight and then changing angle at contact, saying even slight hesitation causes late footwork, which is presented as deceptive.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 1XgvgkJ8EfM
+      start_ms: 240
+      end_ms: 14080
+      url: https://www.youtube.com/watch?v=1XgvgkJ8EfM&t=0s
+      segment_ids:
+        - 1XgvgkJ8EfM:00000
+        - 1XgvgkJ8EfM:00004
+  - id: Ejc6KqZDRKs-concept-0012-reviewed
+    evidence_type: explanation
+    excerpt: When the server uses deceptive motion, the receiver must watch the moment of contact rather than trusting the visible swing path alone.
+    reason: The speaker explicitly notes that deceptive motions exist and says you need to watch the moment of contact to detect deception.
+    confidence: 0.86
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Ejc6KqZDRKs
+      start_ms: 360066
+      end_ms: 374633
+      url: https://www.youtube.com/watch?v=Ejc6KqZDRKs&t=360s
+      segment_ids:
+        - Ejc6KqZDRKs:00067
+        - Ejc6KqZDRKs:00069
+        - Ejc6KqZDRKs:00070
+  - id: s6lj1otqR90-concept-deceptive-follow-through-reviewed
+    evidence_type: definition
+    excerpt: A finishing motion added after serve contact to disguise what the actual spin or direction was.
+    reason: The speaker explicitly recommends a fake motion after the serve to hide the real action.
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: s6lj1otqR90
+      start_ms: 374533
+      end_ms: 383833
+      url: https://www.youtube.com/watch?v=s6lj1otqR90&t=374s
+      segment_ids:
+        - s6lj1otqR90:00119
+        - s6lj1otqR90:00120
+        - s6lj1otqR90:00121

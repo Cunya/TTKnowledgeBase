@@ -12,14 +12,15 @@ evidence_summary: >-
   Ball trajectory classification brings together several connected ideas. By explicitly
   introducing three ball trajectories and naming them backspin, topspin, and half-high ball, each
   with a curve description. A high arc to slow or out-of-bounds balls and it with a low arc that
-  is faster. Different serve trajectories and they lead to different reactions and defensive
-  strategies. There are three types and discusses curved, downward, and non-upward trajectories.
-  The curved brushing motion and arc creation to the fingers. Table tennis is about three arcs and
-  names them pressing, flat, and looping. He started focusing on the ball's trajectory and
-  mentions arc as one of the key cues. The rise, apex, and drop as different contact situations.
-  Additional points reinforce the same theme. Together, these principles show how the topic is
-  applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:277a05f88d19080ae8e7f35bd35b927a6fb581f1da95d3127ea68db507d96358"
+  is faster. Left or right spin changes the trajectory to straight or diagonal and the ball will
+  curve. Balls into near-net, on-table, mid-table, half-table, baseline, and explicitly names
+  short, half-long, and long balls. The curved brushing motion and arc creation to the fingers.
+  Table tennis is about three arcs and names them pressing, flat, and looping. Speed and
+  trajectory differ, and that trajectory is the most basic tell. There are fundamentally three
+  trajectories and names them through flick examples. Additional points reinforce the same theme.
+  Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:e6decf549bebfa3067bc483afe1ec9b3228b50a45ab7306a931b881ee24eaa32"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -249,3 +250,19 @@ evidence:
         - fX0-3KtEzUY:00005
         - fX0-3KtEzUY:00008
         - fX0-3KtEzUY:00009
+  - id: vLLKF8m8J1U-concept-ball-trajectory-classification-reviewed
+    evidence_type: definition
+    excerpt: 'Incoming balls and returns can be handled with three basic trajectories: looping/high arc, pressing/downward arc, and flat/direct arc.'
+    reason: The speaker states there are fundamentally three trajectories and names them through flick examples.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: vLLKF8m8J1U
+      start_ms: 170733
+      end_ms: 192900
+      url: https://www.youtube.com/watch?v=vLLKF8m8J1U&t=170s
+      segment_ids:
+        - vLLKF8m8J1U:00029
+        - vLLKF8m8J1U:00030
+        - vLLKF8m8J1U:00031

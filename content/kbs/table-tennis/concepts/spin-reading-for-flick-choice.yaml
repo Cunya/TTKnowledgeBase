@@ -10,9 +10,12 @@ short_definition: 'Correct flick choice depends on reading the incoming spin: cl
 evidence_summary: >-
   Spin reading for flick choice brings together several connected ideas. Backspin,
   semi-topspin/no-spin, true sidespin-topspin, and left-sidespin or hook serves, then assigns
-  different racket-face and stroke choices to each. Together, these principles show how the topic
-  is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:52d181769336f9f9974e2be4f08c8a39ceda07d73d9e33c3147bfde318e6d455"
+  different racket-face and stroke choices to each. The flick can handle multiple spin types
+  without a precise read and that the motion stays the same. Neutral, topspin, and impure spin
+  balls and ties each to a different receive action. Only certain spin types should be flicked and
+  heavy backspin is nearly impossible or low percentage. Together, these principles show how the
+  topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:6e7454fe007eec275d60aac787ca7ab6aae649af8766e90774048bf228544655"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -69,3 +72,36 @@ evidence:
       segment_ids:
         - qfB1tscK4xk:00128
         - qfB1tscK4xk:00131
+  - id: 4NxMY3eb7U8-concept-spin-reading-for-flick-choice-reviewed
+    evidence_type: explanation
+    excerpt: Selecting flick mechanics based on whether the incoming serve has heavy spin, neutral spin, or topspin-side hybrid spin.
+    reason: The speaker distinguishes neutral, topspin, and impure spin balls and ties each to a different receive action.
+    confidence: 0.91
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 4NxMY3eb7U8
+      start_ms: 345233
+      end_ms: 361000
+      url: https://www.youtube.com/watch?v=4NxMY3eb7U8&t=345s
+      segment_ids:
+        - 4NxMY3eb7U8:00069
+        - 4NxMY3eb7U8:00071
+        - 4NxMY3eb7U8:00072
+  - id: ku3pB8FPhtM-concept-spin-reading-for-flick-choice-reviewed
+    evidence_type: definition
+    excerpt: Before flicking, the player should assess the incoming spin and only choose the flick on favorable balls such as no-spin, light-spin, or sidespin-topspin; heavy backspin is a poor flick target.
+    reason: The speaker says only certain spin types should be flicked and heavy backspin is nearly impossible or low percentage.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ku3pB8FPhtM
+      start_ms: 817300
+      end_ms: 836200
+      url: https://www.youtube.com/watch?v=ku3pB8FPhtM&t=817s
+      segment_ids:
+        - ku3pB8FPhtM:00160
+        - ku3pB8FPhtM:00161
+        - ku3pB8FPhtM:00162
+        - ku3pB8FPhtM:00163

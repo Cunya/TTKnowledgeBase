@@ -578,6 +578,38 @@ evidence:
         - uAOIQu7TT0g:00003
         - uAOIQu7TT0g:00004
         - uAOIQu7TT0g:00005
+  - id: T6kwb4YehYA-concept-push-variations-reviewed
+    evidence_type: explanation
+    excerpt: A push should vary in speed and placement; in this transcript, the speaker emphasizes the fast long push as the effective version and rejects a slow, passive push.
+    reason: The speaker contrasts a too-slow push with a fast, long push and says speed and placement matter more than spin.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: T6kwb4YehYA
+      start_ms: 135200
+      end_ms: 163166
+      url: https://www.youtube.com/watch?v=T6kwb4YehYA&t=135s
+      segment_ids:
+        - T6kwb4YehYA:00027
+        - T6kwb4YehYA:00031
+  - id: PCRCB9FGBPg-concept-push-variations-reviewed
+    evidence_type: explanation
+    excerpt: Adapting the push tempo and force based on incoming spin, using smooth control against heavy spin and acceleration against weak spin.
+    reason: "The speaker describes three push behaviors: absorb when spin is strong, attack when weak, and use smooth even-paced or accelerated motion depending on the serve's spin and quality."
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: PCRCB9FGBPg
+      start_ms: 208633
+      end_ms: 237700
+      url: https://www.youtube.com/watch?v=PCRCB9FGBPg&t=208s
+      segment_ids:
+        - PCRCB9FGBPg:00040
+        - PCRCB9FGBPg:00043
+        - PCRCB9FGBPg:00044
+        - PCRCB9FGBPg:00045
 relations:
   - relation_type: variation_of
     target_concept_id: concept-push-technique

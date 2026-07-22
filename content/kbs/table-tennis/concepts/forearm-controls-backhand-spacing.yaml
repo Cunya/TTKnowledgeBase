@@ -9,9 +9,11 @@ evidence_summary: >-
   Forearm controls backhand spacing brings together several connected ideas. No matter how the
   opponent pushes, the elbow does not change and the forearm adjusts backhand spacing. Spacing is
   adjusted with the forearm, backswing size comes from the forearm, and the elbow remains fixed.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:8780dd5546fbcd98253303d8f37e283fe9b9b46c2cdae87f0eb099bf31c82f4f"
+  The backhand problem is contact in front of the body and repeatedly emphasizes maintaining a
+  forearm's distance between racket and body. Maintaining a forearm-length distance and recovering
+  to the same spot. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:86ce1853dbbdaa47f9c07e554dd7c348cbf435847e96d658093f831deee58267"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -61,3 +63,35 @@ evidence:
         - T40bWiitfAU:00039
         - T40bWiitfAU:00040
         - T40bWiitfAU:00041
+  - id: ZyicUbuebjU-concept-forearm-controls-backhand-spacing-reviewed
+    evidence_type: explanation
+    excerpt: On the backhand, keep the racket about a forearm's length from the body so the swing has room to generate power without getting jammed.
+    reason: The speaker says the backhand problem is contact in front of the body and repeatedly emphasizes maintaining a forearm's distance between racket and body.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: ZyicUbuebjU
+      start_ms: 252600
+      end_ms: 278733
+      url: https://www.youtube.com/watch?v=ZyicUbuebjU&t=252s
+      segment_ids:
+        - ZyicUbuebjU:00056
+        - ZyicUbuebjU:00058
+        - ZyicUbuebjU:00059
+  - id: 82C2Zhfyq0s-concept-forearm-controls-backhand-spacing-reviewed
+    evidence_type: definition
+    excerpt: Backhand spacing should be managed by keeping the forearm at a workable distance from the body, instead of pulling the whole arm too close.
+    reason: The speaker repeatedly recommends maintaining a forearm-length distance and recovering to the same spot.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 82C2Zhfyq0s
+      start_ms: 247133
+      end_ms: 275433
+      url: https://www.youtube.com/watch?v=82C2Zhfyq0s&t=247s
+      segment_ids:
+        - 82C2Zhfyq0s:00046
+        - 82C2Zhfyq0s:00048
+        - 82C2Zhfyq0s:00050

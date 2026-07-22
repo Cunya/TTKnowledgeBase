@@ -8,16 +8,18 @@ aliases:
 short_definition: 'Adjust swing timing based on whether the incoming ball is topspin or backspin: start on the bounce for topspin, and wait for the ball to land before swinging on backspin.'
 evidence_summary: >-
   Timing by bounce type brings together several connected ideas. A useful contrast is between
-  topspin timing and backspin timing and states when to start the swing for each. The preparation
-  buys time to catch the ball at its drop or peak before swinging naturally. Swing timing to
-  hearing the bounce sound and starting only after the ball hits the table. The preferred contact
-  timing as the peak of the bounce, not the rising phase. The best hitting point as the initial
-  descent and explicitly excludes the peak and upward phase. To wait, let the ball fall, and start
-  swinging during the downward phase or after the bounce point. Timing as when to initiate the
-  swing at rise, peak, or fall. Multiple strokes to rise, apex, and fall contact timing.
-  Additional points reinforce the same theme. Together, these principles show how the topic is
-  applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:f18b96b66432cd6f8c3daf4d2f79e956ceffccc22947fa8a5610dda5d0fe812a"
+  topspin timing and backspin timing and states when to start the swing for each. A short serve by
+  observing the first bounce. Swing timing to hearing the bounce sound and starting only after the
+  ball hits the table. The best hitting point as the initial descent and explicitly excludes the
+  peak and upward phase. Whiffs happen when the toss and swing are out of sync and that serve
+  quality depends on placing the first bounce in the correct zone for short and long serves.
+  Multiple strokes to rise, apex, and fall contact timing. The first bounce is used to judge serve
+  length and distinguishes short or half-long from long based on bounce zone. The lesson
+  repeatedly centers on the first and second bounce, including the path between them, as the
+  decision window for identifying spin and timing the receive. Additional points reinforce the
+  same theme. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:13095dcfd8cd862d0cc0adb4d82ff795ade2b06f583198ee1a8f00132d5a109c"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -200,3 +202,52 @@ evidence:
         - CGidweVwLYw:00116
         - CGidweVwLYw:00117
         - CGidweVwLYw:00118
+  - id: Ejc6KqZDRKs-concept-0005-reviewed
+    evidence_type: explanation
+    excerpt: Serve length can be identified by where the first bounce lands, separating short or half-long balls from long serves.
+    reason: The speaker says the first bounce is used to judge serve length and distinguishes short or half-long from long based on bounce zone.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Ejc6KqZDRKs
+      start_ms: 62233
+      end_ms: 84433
+      url: https://www.youtube.com/watch?v=Ejc6KqZDRKs&t=62s
+      segment_ids:
+        - Ejc6KqZDRKs:00014
+        - Ejc6KqZDRKs:00015
+        - Ejc6KqZDRKs:00016
+        - Ejc6KqZDRKs:00017
+  - id: IXRPhM4Pjzc-concept-timing-by-bounce-type-reviewed
+    evidence_type: explanation
+    excerpt: Timing the stroke according to the ball's bounce phase, such as striking on the early falling phase instead of rushing at the peak.
+    reason: The speaker contrasts hitting at the peak with waiting for the early falling phase and explicitly tells the viewer to let the ball peak, start to fall, then swing.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: IXRPhM4Pjzc
+      start_ms: 271433
+      end_ms: 292700
+      url: https://www.youtube.com/watch?v=IXRPhM4Pjzc&t=271s
+      segment_ids:
+        - IXRPhM4Pjzc:00051
+        - IXRPhM4Pjzc:00052
+        - IXRPhM4Pjzc:00053
+  - id: 2_kzpEUImHk-concept-timing-by-bounce-type-reviewed
+    evidence_type: explanation
+    excerpt: Judging serve spin from the ball's bounce pattern and trajectory segment between bounces, rather than relying only on contact moment or ball speed.
+    reason: The lesson repeatedly centers on the first and second bounce, including the path between them, as the decision window for identifying spin and timing the receive.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 2_kzpEUImHk
+      start_ms: 98000
+      end_ms: 118433
+      url: https://www.youtube.com/watch?v=2_kzpEUImHk&t=98s
+      segment_ids:
+        - 2_kzpEUImHk:00021
+        - 2_kzpEUImHk:00022
+        - 2_kzpEUImHk:00024

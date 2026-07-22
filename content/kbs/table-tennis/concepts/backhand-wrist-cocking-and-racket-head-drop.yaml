@@ -9,16 +9,16 @@ short_definition: Keeping the wrist cocked and the racket head dropped through t
 evidence_summary: >-
   Backhand wrist cocking and racket-head drop brings together several connected ideas. Inward
   cocking, keeping it cocked, and dropping the racket head because it generates more spin. A firm,
-  inward-cocked wrist and a tiny finger-pressure action at contact. A cocked wrist that remains
-  set through the backswing, contact, and finish. The backhand requires a firm, cocked wrist
-  throughout the stroke and against collapse or wobble. On wrist rotation through contact,
-  including an upward snap at the end of the motion and the importance of that final snap for
-  spin. A dropped wrist on the backswing is required, that amateurs often keep the wrist stiff,
-  and that the racket head should point down toward the floor/calf. Whether the racket head is
-  rotating and it must snap at contact. The player to drop the forearm, not just the wrist, and
-  against a flat backswing. Together, these principles show how the topic is applied in practice
-  while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:faf6df4004c3afb4061ac37ba82adae479cf14888bfacae33c102e7e7251620b"
+  inward-cocked wrist and a tiny finger-pressure action at contact. The backhand requires a firm,
+  cocked wrist throughout the stroke and against collapse or wobble. On wrist rotation through
+  contact, including an upward snap at the end of the motion and the importance of that final snap
+  for spin. Whether the racket head is rotating and it must snap at contact. The player to drop
+  the forearm, not just the wrist, and against a flat backswing. The A-to-B motion includes a
+  dropped racket head and a fully cocked inward wrist. The backhand requires a cocked wrist that
+  stays stable throughout the motion. Additional points reinforce the same theme. Together, these
+  principles show how the topic is applied in practice while preserving the relevant distinctions
+  and constraints.
+evidence_summary_source_hash: "sha256:9cffece7d3ad279c2e4ab34b29c4190907ff8a8f2d340f1465ced71adbc643e8"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -167,3 +167,49 @@ evidence:
         - wj87pK5547g:00115
         - wj87pK5547g:00116
         - wj87pK5547g:00117
+  - id: O0jOeCzzcZA-concept-backhand-wrist-cocking-and-racket-head-drop-reviewed
+    evidence_type: mistake
+    excerpt: A wrist position error where the wrist is cocked upward, causing low contact and weakening the ability to loop or lift spin.
+    reason: The speaker identifies a cocked-up wrist as a major cause of low contact and inability to lift backspin.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: O0jOeCzzcZA
+      start_ms: 356233
+      end_ms: 372833
+      url: https://www.youtube.com/watch?v=O0jOeCzzcZA&t=356s
+      segment_ids:
+        - O0jOeCzzcZA:00071
+        - O0jOeCzzcZA:00073
+  - id: SUIth1DgWbg-concept-backhand-wrist-cocking-and-racket-head-drop-reviewed
+    evidence_type: explanation
+    excerpt: The backhand flick starts from a cocked-in wrist and a dropped racket head before the swing releases upward and through.
+    reason: The A-to-B motion includes a dropped racket head and a fully cocked inward wrist.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: SUIth1DgWbg
+      start_ms: 582066
+      end_ms: 593066
+      url: https://www.youtube.com/watch?v=SUIth1DgWbg&t=582s
+      segment_ids:
+        - SUIth1DgWbg:00123
+        - SUIth1DgWbg:00124
+  - id: 1UthOchBWWc-concept-backhand-wrist-cocking-and-racket-head-drop-reviewed
+    evidence_type: definition
+    excerpt: On the backhand, keep the wrist cocked and stable through the motion rather than breaking or flipping it.
+    reason: The speaker explicitly says the backhand requires a cocked wrist that stays stable throughout the motion.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 1UthOchBWWc
+      start_ms: 3766
+      end_ms: 28666
+      url: https://www.youtube.com/watch?v=1UthOchBWWc&t=3s
+      segment_ids:
+        - 1UthOchBWWc:00001
+        - 1UthOchBWWc:00003
+        - 1UthOchBWWc:00005

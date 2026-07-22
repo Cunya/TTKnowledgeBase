@@ -1595,6 +1595,37 @@ evidence:
         - 7JSZZSSjCqo:00025
         - 7JSZZSSjCqo:00026
         - 7JSZZSSjCqo:00027
+  - id: T6kwb4YehYA-concept-control-before-power-reviewed
+    evidence_type: explanation
+    excerpt: The transcript frames speed and placement as the first priority in the push, with spin as secondary, which is a control-first approach rather than a power-first one.
+    reason: The speaker says spin should not be the top priority; speed and placement should be, and the quality of the return depends on the previous ball's quality.
+    confidence: 0.88
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: T6kwb4YehYA
+      start_ms: 135200
+      end_ms: 163166
+      url: https://www.youtube.com/watch?v=T6kwb4YehYA&t=135s
+      segment_ids:
+        - T6kwb4YehYA:00027
+        - T6kwb4YehYA:00031
+  - id: hw8RsLGOARs-concept-control-before-power-reviewed
+    evidence_type: explanation
+    excerpt: During serve receive, prioritize safe control and margin for error before trying to add power, spin, or aggressive placement.
+    reason: The speaker says the first goal is simply to get the ball over the net and only then think about quality and spin.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: hw8RsLGOARs
+      start_ms: 872333
+      end_ms: 901066
+      url: https://www.youtube.com/watch?v=hw8RsLGOARs&t=872s
+      segment_ids:
+        - hw8RsLGOARs:00170
+        - hw8RsLGOARs:00171
+        - hw8RsLGOARs:00177
 relations:
   - relation_type: used_with
     target_concept_id: concept-ball-feel

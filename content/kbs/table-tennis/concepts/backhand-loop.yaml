@@ -675,6 +675,79 @@ evidence:
         - Yf_uKs6cZ38:00059
         - Yf_uKs6cZ38:00060
         - Yf_uKs6cZ38:00061
+  - id: 1XgvgkJ8EfM-concept-backhand-loop-reviewed
+    evidence_type: explanation
+    excerpt: A topspin attack executed on the backhand side, requiring proper body framing and contact spacing.
+    reason: The speaker explicitly says the backhand loop breaks down when contact gets outside the body's frame and explains how to loop effectively from wide balls.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 1XgvgkJ8EfM
+      start_ms: 28960
+      end_ms: 50879
+      url: https://www.youtube.com/watch?v=1XgvgkJ8EfM&t=28s
+      segment_ids:
+        - 1XgvgkJ8EfM:00014
+        - 1XgvgkJ8EfM:00023
+  - id: fYJgxN1x7QM-concept-backhand-loop-reviewed
+    evidence_type: definition
+    excerpt: A looping stroke used from the backhand side, preferred for deep backhand corner balls.
+    reason: The speaker explicitly recommends the backhand loop for deep backhand corner balls and calls it the direct option in that position.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: fYJgxN1x7QM
+      start_ms: 629200
+      end_ms: 646966
+      url: https://www.youtube.com/watch?v=fYJgxN1x7QM&t=629s
+      segment_ids:
+        - fYJgxN1x7QM:00141
+        - fYJgxN1x7QM:00144
+  - id: 82C2Zhfyq0s-concept-backhand-loop-reviewed
+    evidence_type: explanation
+    excerpt: The full backhand loop uses the same small arc and forearm-driven rotation as the flick and rip, but with a complete swing path and sufficient friction to lift backspin or topspin.
+    reason: They say the habit of drawing the small circle lets the full loop develop naturally and that the spin comes from the swing path.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 82C2Zhfyq0s
+      start_ms: 558866
+      end_ms: 573566
+      url: https://www.youtube.com/watch?v=82C2Zhfyq0s&t=558s
+      segment_ids:
+        - 82C2Zhfyq0s:00104
+        - 82C2Zhfyq0s:00105
+  - id: F0HvzL1Wk3w-concept-backhand-loop-against-backspin-reviewed
+    evidence_type: definition
+    excerpt: A backhand topspin/loop used specifically to attack backspin, with emphasis on quality, arc, and controlled power.
+    reason: The speaker explicitly introduces the topic as the backhand loop against backspin and says the goal is to improve its quality.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: F0HvzL1Wk3w
+      start_ms: 23333
+      end_ms: 28866
+      url: https://www.youtube.com/watch?v=F0HvzL1Wk3w&t=23s
+      segment_ids:
+        - F0HvzL1Wk3w:00004
+  - id: 6aJ-BC4QnTU-concept-backhand-loop-reviewed
+    evidence_type: definition
+    excerpt: A backhand topspin attack used to lift or counter fast backspin balls with a compact motion.
+    reason: The transcript is explicitly about looping fast backspin on the backhand and describes the core backhand loop response.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 6aJ-BC4QnTU
+      start_ms: 65933
+      end_ms: 78700
+      url: https://www.youtube.com/watch?v=6aJ-BC4QnTU&t=65s
+      segment_ids:
+        - 6aJ-BC4QnTU:00011
 relations:
   - relation_type: used_with
     target_concept_id: concept-backhand-topspin-body-coordination

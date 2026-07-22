@@ -11,9 +11,12 @@ evidence_summary: >-
   or forward-upward rotation, and small motion size as the core of the flick. The technique as a
   locked wrist push flick and it is the most stable and easiest to keep on the table. Enough
   inward wrist rotation is required to generate friction and that the racket face should angle to
-  the side, not straight ahead. Together, these principles show how the topic is applied in
-  practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:bfd024323e3203adde3b3725d5849448f07748bdd95765abbd5f8888da03eff4"
+  the side, not straight ahead. A useful contrast is between standard flick wrist action and
+  push-flick wrist fixation and says the wrist must be closed or locked depending on the ball. The
+  forehand index finger to brushing motion, wrist rotation, and forward pushing on drives.
+  Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:169658474ae2dcacd01df84d27fb73f2d0006208901b5237eb9d7b4b32b249b3"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -95,3 +98,33 @@ evidence:
         - zZ_B1Xg7Pjs:00077
         - zZ_B1Xg7Pjs:00078
         - zZ_B1Xg7Pjs:00079
+  - id: kaeWe3HbD8I-concept-forehand-flick-wrist-control-reviewed
+    evidence_type: explanation
+    excerpt: Using wrist control to shape and execute a forehand flick, especially when choosing between standard flick and push-flick mechanics.
+    reason: The speaker contrasts standard flick wrist action with push-flick wrist fixation and says the wrist must be closed or locked depending on the ball.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: kaeWe3HbD8I
+      start_ms: 872333
+      end_ms: 889066
+      url: https://www.youtube.com/watch?v=kaeWe3HbD8I&t=872s
+      segment_ids:
+        - kaeWe3HbD8I:00149
+        - kaeWe3HbD8I:00152
+  - id: Cf-EPAWd_zQ-new-forehand-finger-driven-brushing-reviewed
+    evidence_type: explanation
+    excerpt: On the forehand, the index finger helps drive brushing motion and wrist rotation, and pushes forward during drives.
+    reason: The speaker specifically links the forehand index finger to brushing motion, wrist rotation, and forward pushing on drives.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Cf-EPAWd_zQ
+      start_ms: 561533
+      end_ms: 571433
+      url: https://www.youtube.com/watch?v=Cf-EPAWd_zQ&t=561s
+      segment_ids:
+        - Cf-EPAWd_zQ:00078
+        - Cf-EPAWd_zQ:00079

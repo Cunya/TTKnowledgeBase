@@ -11,9 +11,12 @@ evidence_summary: >-
   the variation and to push past their comfort zone in training. Single-ball drills, multi-ball
   training, and later specialized drill structures like power shots and third-ball practice. A
   progression for training snap and 60,000 to 100,000 reps are needed for real serve development.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:498e7aaecdab4289451913b5a811427bb302c1fd96c8b2f53efd70eb8b110cd3"
+  Explicitly says to train wide movements so a match push becomes easy to handle. A specific drill
+  with robot or partner multi-ball feeding and multi-ball is essential for amateurs and more
+  efficient than single-ball practice. They lay out the progression in order: wrist motion,
+  forearm rotation, friction, then rip, flick, and loop. Together, these principles show how the
+  topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:af8956f6d8dcd923fa23e15c1520b6c025ea72a0dd7de9c96f27d95d3570b961"
 evidence_summary_generator: "deterministic"
 concept_type: practice
 facets:
@@ -91,3 +94,34 @@ evidence:
         - McwvbLZZQmA:00090
         - McwvbLZZQmA:00092
         - McwvbLZZQmA:00093
+  - id: mvVfwjdxe34-concept-practice-and-drill-progression-reviewed
+    evidence_type: definition
+    excerpt: A training progression that uses repeated multi-ball feeding, sometimes with a robot or partner, to build a specific stroke pattern and improve faster than isolated single-ball practice.
+    reason: The speaker recommends a specific drill with robot or partner multi-ball feeding and says multi-ball is essential for amateurs and more efficient than single-ball practice.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: mvVfwjdxe34
+      start_ms: 540833
+      end_ms: 557533
+      url: https://www.youtube.com/watch?v=mvVfwjdxe34&t=540s
+      segment_ids:
+        - mvVfwjdxe34:00101
+        - mvVfwjdxe34:00103
+        - mvVfwjdxe34:00104
+  - id: 82C2Zhfyq0s-concept-practice-and-drill-progression-reviewed
+    evidence_type: explanation
+    excerpt: 'The lesson uses a step-by-step progression: start with simple short-ball flick motion, then add forearm rotation, then add friction, and only then build the full drive and loop.'
+    reason: 'They lay out the progression in order: wrist motion, forearm rotation, friction, then rip, flick, and loop.'
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 82C2Zhfyq0s
+      start_ms: 678800
+      end_ms: 697166
+      url: https://www.youtube.com/watch?v=82C2Zhfyq0s&t=678s
+      segment_ids:
+        - 82C2Zhfyq0s:00124
+        - 82C2Zhfyq0s:00125

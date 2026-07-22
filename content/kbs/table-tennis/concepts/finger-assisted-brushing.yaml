@@ -10,16 +10,16 @@ evidence_summary: >-
   Finger-assisted brushing brings together several connected ideas. The learner to use the middle
   and index fingers to press forward and upward and to press the racket forward with force. Using
   only fingers and wrist, then says fingers and wrist speed up the brushing and can produce both
-  spin and speed. To learn finger power and that faster brushing at contact produces more spin. A
-  normal-speed ball should use the full motion including fingers and wrist, and that slower balls
-  allow fuller brushing with finger and wrist action. Not to use the upper arm too much and to
-  brush with the wrist horizontally. Wrist and finger use, then states that fingers must initiate
-  racket-head rotation and provide the fastest brushing motion. To use the fingers to drive the
-  wrist into fast rotation and that friction is generated primarily by the fingers. The brushing
-  action relies on the fingers and that pressing and driving forward produces the brushing motion.
-  Additional points reinforce the same theme. Together, these principles show how the topic is
-  applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:367fd499083ce3330e5d68f351a56eeccab2bbd78714bbe58fbfe23fccb9f16c"
+  spin and speed. A backspin return has weight and spin and 'a slight outward release of power
+  with your fingers,' which supports finger-assisted stroke control. The fingers as the initial
+  driver and the point where friction is created to generate spin. Looping is applied with the
+  fingers, advises using fingertips, and instructs to push forward with the fingers. To use the
+  fingers to drive the wrist into fast rotation and that friction is generated primarily by the
+  fingers. The brushing action relies on the fingers and that pressing and driving forward
+  produces the brushing motion. To use fingers and wrist to brush the ball and reduce reliance on
+  larger arm motion. Additional points reinforce the same theme. Together, these principles show
+  how the topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:b27becdfae326769aaf197872cdfe523392661c25eae63ecc782140ad1ca5e48"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -382,3 +382,50 @@ evidence:
         - Xt5RyN3qkSA:00162
         - Xt5RyN3qkSA:00164
         - Xt5RyN3qkSA:00165
+  - id: ySisgDGZvDw-concept-finger-assisted-brushing-reviewed
+    evidence_type: definition
+    excerpt: Fingers should initiate and guide the brushing force, applying pressure forward or forward-and-up depending on ball type.
+    reason: The speaker directly teaches finger-led pressure as the core element for brushing, flicking, and creating arc, with different directions for topspin and backspin.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ySisgDGZvDw
+      start_ms: 372333
+      end_ms: 401500
+      url: https://www.youtube.com/watch?v=ySisgDGZvDw&t=372s
+      segment_ids:
+        - ySisgDGZvDw:00066
+        - ySisgDGZvDw:00068
+        - ySisgDGZvDw:00070
+  - id: tFXmtu4Egw8-concept-finger-assisted-wrist-snap-at-contact-reviewed
+    evidence_type: explanation
+    excerpt: Use the fingers to trigger a quick wrist snap at the moment of contact to create sharp friction and power.
+    reason: The speaker connects maximum friction with acceleration through contact and explicitly says to use the fingers to execute a quick wrist snap for power.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: tFXmtu4Egw8
+      start_ms: 47533
+      end_ms: 61333
+      url: https://www.youtube.com/watch?v=tFXmtu4Egw8&t=47s
+      segment_ids:
+        - tFXmtu4Egw8:00011
+        - tFXmtu4Egw8:00012
+  - id: 6K2G7nKr6nU-concept-finger-assisted-brushing-reviewed
+    evidence_type: definition
+    excerpt: Generating brushing contact and spin with the fingers and wrist rather than a large arm swing.
+    reason: The speaker directly says to use fingers and wrist to brush the ball and reduce reliance on larger arm motion.
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 6K2G7nKr6nU
+      start_ms: 131966
+      end_ms: 161666
+      url: https://www.youtube.com/watch?v=6K2G7nKr6nU&t=131s
+      segment_ids:
+        - 6K2G7nKr6nU:00021
+        - 6K2G7nKr6nU:00027
+        - 6K2G7nKr6nU:00028

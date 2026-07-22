@@ -8,17 +8,17 @@ aliases:
 short_definition: A compact backhand stroke built on correct timing, spacing, and coordinated upper-arm/forearm action, with a stable wrist and forward press rather than an active wrist flick.
 evidence_summary: >-
   Backhand drive brings together several connected ideas. The backhand drive as the topic and
-  timing and spacing must be correct first. A useful contrast is between backhand drives and
-  riping and says backhand drives can go long unless brush is added for safety. The backhand drive
-  and gives the key mechanics of wrist position and drive-through motion. The backhand drive as a
-  small-motion shot that hits the back of the ball with forward impact. A flat rush serve uses a
-  standard backhand drive, while a kicking serve requires closing the angle and raising contact
-  height. The lesson as fundamentals of the backhand drive and its stance and table distance
-  requirements. The backhand drive and stance, backswing, and power . The backhand drive, then
-  defines it as forward drive first, forearm rotation after contact, and no wrist action.
-  Additional points reinforce the same theme. Together, these principles show how the topic is
-  applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:68c40ea3662c442c06540ba9a1e8cd7d260759bde0bc7a6a9308f92c7c770f7f"
+  timing and spacing must be correct first. The backhand drive and gives the key mechanics of
+  wrist position and drive-through motion. The backhand drive as a small-motion shot that hits the
+  back of the ball with forward impact. The backhand drive and its correct timing relative to the
+  bounce peak and forward swing. The backhand drive and stance, backswing, and power . A useful
+  contrast is between the drive and the rip and describes it as simply hitting through the ball.
+  The backhand drive trajectory as forward with an upward angle and some sideways component for
+  cross-court shots, and rejects a straight push or push-then-turn model. Backhand drive as the
+  example for early contact and hitting should be done close to the table using the opponent's
+  power. Additional points reinforce the same theme. Together, these principles show how the topic
+  is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:42cddb778b99e4063149dae0335463c895929e0fbf651d3debacca3fc41ef321"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -253,3 +253,100 @@ evidence:
       segment_ids:
         - ZwTDfALP1lk:00073
         - ZwTDfALP1lk:00077
+  - id: PaymojMhuzU-concept-backhand-drive-reviewed
+    evidence_type: definition
+    excerpt: A standard backhand hitting action that tends to go long when used against spinny incoming balls.
+    reason: The speaker contrasts the drive with the rip and describes it as simply hitting through the ball.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: PaymojMhuzU
+      start_ms: 366033
+      end_ms: 372433
+      url: https://www.youtube.com/watch?v=PaymojMhuzU&t=366s
+      segment_ids:
+        - PaymojMhuzU:00065
+  - id: 1E475xXl9HA-concept-backhand-drive-reviewed
+    evidence_type: explanation
+    excerpt: A compact forward-hitting backhand stroke used from close to the table with stable body structure and controlled racket angle.
+    reason: The speaker describes the drive as a forward-hitting motion with a proper contact zone and no downward motion.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 1E475xXl9HA
+      start_ms: 448600
+      end_ms: 464266
+      url: https://www.youtube.com/watch?v=1E475xXl9HA&t=448s
+      segment_ids:
+        - 1E475xXl9HA:00083
+        - 1E475xXl9HA:00084
+  - id: ijgsxXt4kvk-backhand-drive-trajectory-and-swing-path-reviewed
+    evidence_type: definition
+    excerpt: A backhand drive uses a forward swing with an upward-angled, slightly sideways trajectory rather than a straight push or a late sideways turn.
+    reason: The speaker explicitly defines the backhand drive trajectory as forward with an upward angle and some sideways component for cross-court shots, and rejects a straight push or push-then-turn model.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ijgsxXt4kvk
+      start_ms: 145833
+      end_ms: 171066
+      url: https://www.youtube.com/watch?v=ijgsxXt4kvk&t=145s
+      segment_ids:
+        - ijgsxXt4kvk:00026
+        - ijgsxXt4kvk:00027
+        - ijgsxXt4kvk:00028
+        - ijgsxXt4kvk:00029
+  - id: ijgsxXt4kvk-stable-elbow-and-fixed-wrist-in-backhand-drive-reviewed
+    evidence_type: definition
+    excerpt: A backhand drive should be hit with a stable elbow and a fixed, stable wrist; large elbow movement or wrist rotation reduces consistency and power.
+    reason: The speaker says the wrist should be fixed or completely stable, the elbow should be kept relatively fixed, and large elbow motion should be avoided to preserve power and consistency.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ijgsxXt4kvk
+      start_ms: 624500
+      end_ms: 649233
+      url: https://www.youtube.com/watch?v=ijgsxXt4kvk&t=624s
+      segment_ids:
+        - ijgsxXt4kvk:00102
+        - ijgsxXt4kvk:00103
+        - ijgsxXt4kvk:00104
+        - ijgsxXt4kvk:00105
+        - ijgsxXt4kvk:00106
+  - id: ijgsxXt4kvk-backhand-drive-follow-through-height-reviewed
+    evidence_type: definition
+    excerpt: The backhand drive should finish around the right shoulder, lower than the forehand finish, not at the face or chest, and not far outside that zone.
+    reason: 'The speaker gives a concrete follow-through target for the backhand drive: around the right shoulder and about two-thirds the height of the forehand finish.'
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ijgsxXt4kvk
+      start_ms: 649300
+      end_ms: 679000
+      url: https://www.youtube.com/watch?v=ijgsxXt4kvk&t=649s
+      segment_ids:
+        - ijgsxXt4kvk:00107
+        - ijgsxXt4kvk:00108
+        - ijgsxXt4kvk:00109
+        - ijgsxXt4kvk:00110
+        - ijgsxXt4kvk:00112
+  - id: XBi28mLBv7Q-concept-backhand-drive-reviewed
+    evidence_type: definition
+    excerpt: A close-to-table backhand hitting stroke that contacts early, on the rise or peak, and uses the opponent's pace.
+    reason: The speaker explicitly gives backhand drive as the example for early contact and says hitting should be done close to the table using the opponent's power.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: XBi28mLBv7Q
+      start_ms: 543800
+      end_ms: 569766
+      url: https://www.youtube.com/watch?v=XBi28mLBv7Q&t=543s
+      segment_ids:
+        - XBi28mLBv7Q:00082
+        - XBi28mLBv7Q:00084

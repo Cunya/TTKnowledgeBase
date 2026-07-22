@@ -957,6 +957,116 @@ evidence:
         - WZnZIhZkkRo:00001
         - WZnZIhZkkRo:00003
         - WZnZIhZkkRo:00004
+  - id: 0TzTsSHudF8-concept-hook-serve-reviewed
+    evidence_type: example
+    excerpt: A serve using a hooked sidespin action, often used crosscourt or deep to the backhand.
+    reason: The speaker names hook serve as the go-to serve and gives placement examples.
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 0TzTsSHudF8
+      start_ms: 16500
+      end_ms: 20900
+      url: https://www.youtube.com/watch?v=0TzTsSHudF8&t=16s
+      segment_ids:
+        - 0TzTsSHudF8:00004
+  - id: 4t2Y1_zWPdI-concept-hook-serve-mechanics-reviewed
+    evidence_type: definition
+    excerpt: A hook serve is executed with a sideways, looping motion that produces topspin or sidespin-topspin behavior rather than a simple pushable ball.
+    reason: The speaker defines the hook serve as a sideways motion and says it behaves like a loop right after the first bounce, producing topspin-heavy returns.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 4t2Y1_zWPdI
+      start_ms: 692866
+      end_ms: 720633
+      url: https://www.youtube.com/watch?v=4t2Y1_zWPdI&t=692s
+      segment_ids:
+        - 4t2Y1_zWPdI:00152
+        - 4t2Y1_zWPdI:00155
+        - 4t2Y1_zWPdI:00156
+  - id: iUwrE230SAY-concept-hook-serve-mechanics-reviewed
+    evidence_type: example
+    excerpt: The hook serve is treated as a distinct serve family that relies on effective spin generation and can be used as a primary tactical serve.
+    reason: The hook serve is named directly, described as popular, and used as the primary example for serve quality and deception.
+    confidence: 0.86
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: iUwrE230SAY
+      start_ms: 367566
+      end_ms: 374100
+      url: https://www.youtube.com/watch?v=iUwrE230SAY&t=367s
+      segment_ids:
+        - iUwrE230SAY:00073
+        - iUwrE230SAY:00074
+  - id: CW2rvujI5hM-concept-scraping-hook-serve-reviewed
+    evidence_type: definition
+    excerpt: A short serve that uses a horizontal racket, a backswing, inward hooking, and sideways brushing to generate spin and disguise the serve type.
+    reason: The speaker explicitly names the stroke being taught and frames it as a short serve for more sidespin.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: CW2rvujI5hM
+      start_ms: 0
+      end_ms: 11466
+      url: https://www.youtube.com/watch?v=CW2rvujI5hM&t=0s
+      segment_ids:
+        - CW2rvujI5hM:00000
+        - CW2rvujI5hM:00001
+  - id: CW2rvujI5hM-concept-horizontal-racket-orientation-in-hook-serve-reviewed
+    evidence_type: explanation
+    excerpt: Keeping the racket face and forearm horizontal rather than vertical during the hook serve preparation.
+    reason: The speaker says the key point is horizontal racket orientation and contrasts it with a vertical racket used for chopping hook serves.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: CW2rvujI5hM
+      start_ms: 11466
+      end_ms: 30300
+      url: https://www.youtube.com/watch?v=CW2rvujI5hM&t=11s
+      segment_ids:
+        - CW2rvujI5hM:00002
+        - CW2rvujI5hM:00003
+        - CW2rvujI5hM:00004
+  - id: CW2rvujI5hM-concept-close-contact-point-on-hook-serve-reviewed
+    evidence_type: explanation
+    excerpt: Keeping the toss and contact close to the body so the racket can contact the correct side of the ball and complete the hook motion cleanly.
+    reason: The speaker explicitly says to toss the ball closer to the body so the racket can contact the right side of the ball and finish the serve correctly.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: CW2rvujI5hM
+      start_ms: 267233
+      end_ms: 289133
+      url: https://www.youtube.com/watch?v=CW2rvujI5hM&t=267s
+      segment_ids:
+        - CW2rvujI5hM:00041
+        - CW2rvujI5hM:00042
+        - CW2rvujI5hM:00043
+        - CW2rvujI5hM:00044
+        - CW2rvujI5hM:00045
+  - id: KNhwuuZ6Vpo-concept-hook-serve-mechanics-reviewed
+    evidence_type: explanation
+    excerpt: A hook serve relies on maintaining a hooked racket face and sideways brushing motion to create sidespin.
+    reason: The speaker says the hook serve depends on maintaining the correct racket angle and a hooked racket face to establish right sidespin.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: KNhwuuZ6Vpo
+      start_ms: 657333
+      end_ms: 670833
+      url: https://www.youtube.com/watch?v=KNhwuuZ6Vpo&t=657s
+      segment_ids:
+        - KNhwuuZ6Vpo:00129
+        - KNhwuuZ6Vpo:00130
+        - KNhwuuZ6Vpo:00131
 relations:
   - relation_type: variation_of
     target_concept_id: concept-sidespin-topspin-serve

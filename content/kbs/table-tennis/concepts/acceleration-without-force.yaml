@@ -9,9 +9,12 @@ short_definition: Generating serve spin by accelerating the motion while staying
 evidence_summary: >-
   Acceleration without force brings together several connected ideas. A useful contrast is between
   acceleration and brute force and repeatedly says the serve should be relaxed and accelerated,
-  not forced. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:00eb1ca04337d935c05164d735f00f7aea586fa06b7d5a2037c53c20ab2d82af"
+  not forced. A useful contrast is between backswing power and late acceleration and repeatedly
+  emphasizes accelerating through contact instead of just touching the ball. The loop should feel
+  effortless, clean, and friction-based, with the remaining swing becoming effective acceleration
+  instead of wasted early effort. Together, these principles show how the topic is applied in
+  practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:37dfcfccc67afcb341c961b13ae0054fba963e41a631e5154d5e2ed9f0c83c7d"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -50,3 +53,35 @@ evidence:
       segment_ids:
         - evEaxXmwJ2E:00039
         - evEaxXmwJ2E:00043
+  - id: itzB36f9_R0-concept-acceleration-without-force-reviewed
+    evidence_type: explanation
+    excerpt: Generate quality by accelerating through contact rather than relying on a large backswing or passive touch.
+    reason: The speaker contrasts backswing power with late acceleration and repeatedly emphasizes accelerating through contact instead of just touching the ball.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: itzB36f9_R0
+      start_ms: 518033
+      end_ms: 542733
+      url: https://www.youtube.com/watch?v=itzB36f9_R0&t=518s
+      segment_ids:
+        - itzB36f9_R0:00098
+        - itzB36f9_R0:00100
+        - itzB36f9_R0:00102
+        - itzB36f9_R0:00103
+  - id: IXRPhM4Pjzc-concept-acceleration-without-force-reviewed
+    evidence_type: explanation
+    excerpt: Generate quality by staying relaxed, timing the stroke well, and accelerating through contact rather than forcing early effort.
+    reason: The speaker says the loop should feel effortless, clean, and friction-based, with the remaining swing becoming effective acceleration instead of wasted early effort.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: IXRPhM4Pjzc
+      start_ms: 342833
+      end_ms: 350533
+      url: https://www.youtube.com/watch?v=IXRPhM4Pjzc&t=342s
+      segment_ids:
+        - IXRPhM4Pjzc:00065
+        - IXRPhM4Pjzc:00066

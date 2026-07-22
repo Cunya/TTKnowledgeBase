@@ -12,9 +12,12 @@ evidence_summary: >-
   keeping trajectory low, because a high arc makes flicks and long pushes easy. Certain
   kicker/hook serves make pushing impossible and flicking from a distance unreliable, creating
   pressure on receive. This serve is difficult to flick and forces the opponent into weak or
-  confused returns. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:bec4356888453524059aacb26cf29ab4bc761dbbf986a6d2746eb4a9021d06f7"
+  confused returns. The short serve is easier to execute, travels slower, and is easier for the
+  opponent to read. Short serves should stay short and low so they are difficult to push, flick,
+  or banana-flick aggressively. The serve makes a push pop up, a flick go long, and leaves only a
+  soft block as the safe option. Together, these principles show how the topic is applied in
+  practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:f79aa5022768f6ed1c79ce1857cf13618c19870baf1dde746c0b6187983b1349"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -112,3 +115,33 @@ evidence:
       segment_ids:
         - BpKGpKwopDE:00000
         - BpKGpKwopDE:00001
+  - id: 4t2Y1_zWPdI-concept-short-serve-pressure-on-receive-reviewed
+    evidence_type: explanation
+    excerpt: A well-executed short serve should be hard to attack or flick because it is short, low, and awkward to receive.
+    reason: The transcript explains that short serves should stay short and low so they are difficult to push, flick, or banana-flick aggressively.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 4t2Y1_zWPdI
+      start_ms: 203000
+      end_ms: 215466
+      url: https://www.youtube.com/watch?v=4t2Y1_zWPdI&t=203s
+      segment_ids:
+        - 4t2Y1_zWPdI:00044
+        - 4t2Y1_zWPdI:00046
+  - id: GmC5XCY9aU4-concept-short-serve-pressure-on-receive-reviewed
+    evidence_type: explanation
+    excerpt: A short, spinny serve that limits the receiver's options and forces a weak return.
+    reason: The speaker says the serve makes a push pop up, a flick go long, and leaves only a soft block as the safe option.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: GmC5XCY9aU4
+      start_ms: 350266
+      end_ms: 366633
+      url: https://www.youtube.com/watch?v=GmC5XCY9aU4&t=350s
+      segment_ids:
+        - GmC5XCY9aU4:00072
+        - GmC5XCY9aU4:00074

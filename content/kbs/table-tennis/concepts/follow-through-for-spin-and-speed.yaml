@@ -10,9 +10,12 @@ evidence_summary: >-
   combining spin and speed and to controlling serve depth. The backswing must start downward, the
   stroke must be forward and upward, and the follow-through should resemble a topspin shot. An
   accelerated stop, abrupt braking after contact, and finishing in front of the chest as essential
-  for heavy spin. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:f0a033ccb4818ede95a1353e9067fc678d8eba3b0a898ed2f6699f7bee8e385d"
+  for heavy spin. Contact is only the beginning, follow-through is longer, and you must complete
+  the full motion for real spin. Poor arm/elbow positioning prevents correct follow-through and
+  concludes by instructing players to accelerate through the ball after making solid contact.
+  Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:75b07450e0c61c99c4023aa649eaf86ca69386740a06daa678a7368dafef0327"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -83,3 +86,34 @@ evidence:
         - 4hnrmSJ_Ayg:00138
         - 4hnrmSJ_Ayg:00139
         - 4hnrmSJ_Ayg:00140
+  - id: GmC5XCY9aU4-concept-follow-through-for-spin-and-speed-reviewed
+    evidence_type: explanation
+    excerpt: Maintaining motion after contact to increase spin quality and control, rather than stopping abruptly.
+    reason: The speaker says contact is only the beginning, follow-through is longer, and you must complete the full motion for real spin.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: GmC5XCY9aU4
+      start_ms: 297633
+      end_ms: 326133
+      url: https://www.youtube.com/watch?v=GmC5XCY9aU4&t=297s
+      segment_ids:
+        - GmC5XCY9aU4:00062
+        - GmC5XCY9aU4:00063
+        - GmC5XCY9aU4:00065
+        - GmC5XCY9aU4:00066
+  - id: hQAxpSuplGM-concept-follow-through-for-spin-and-speed-reviewed
+    evidence_type: explanation
+    excerpt: Finishing the stroke cleanly after contact so the motion transfers speed and produces a technically sound shot.
+    reason: The speaker says poor arm/elbow positioning prevents correct follow-through and concludes by instructing players to accelerate through the ball after making solid contact.
+    confidence: 0.88
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: hQAxpSuplGM
+      start_ms: 773366
+      end_ms: 781866
+      url: https://www.youtube.com/watch?v=hQAxpSuplGM&t=773s
+      segment_ids:
+        - hQAxpSuplGM:00135

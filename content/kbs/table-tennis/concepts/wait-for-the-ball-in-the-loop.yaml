@@ -9,9 +9,11 @@ evidence_summary: >-
   Wait for the ball in the loop brings together several connected ideas. Failing to wait for the
   ball is the biggest problem and that a good loop requires waiting. To slow the overall rhythm,
   wait for the ball, and let speed come from acceleration at contact. Rushing causes immediate
-  errors and that pro timing is after the peak of the bounce. Together, these principles show how
-  the topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:3aea7258c663e8b169c5409feb8c87d899d5f00d2b38a3028d4f384c8b5af4cc"
+  errors and that pro timing is after the peak of the bounce. The issue is rushing and not waiting
+  for the ball, then explains that early timing makes the ball drop under the racket. Together,
+  these principles show how the topic is applied in practice while preserving the relevant
+  distinctions and constraints.
+evidence_summary_source_hash: "sha256:81db752ee1130b5d59dca742badcb7f71f24e4d2cd3d6f1dbe3846766fdec6b8"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -79,3 +81,18 @@ evidence:
       segment_ids:
         - swjcy483f2w:00072
         - swjcy483f2w:00074
+  - id: 01-q1cswVVs-concept-wait-for-the-ball-in-the-loop-reviewed
+    evidence_type: explanation
+    excerpt: When looping backspin, the player must time contact after the ball has dropped enough instead of rushing in early.
+    reason: The speaker explicitly says the issue is rushing and not waiting for the ball, then explains that early timing makes the ball drop under the racket.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 01-q1cswVVs
+      start_ms: 22166
+      end_ms: 40966
+      url: https://www.youtube.com/watch?v=01-q1cswVVs&t=22s
+      segment_ids:
+        - 01-q1cswVVs:00004
+        - 01-q1cswVVs:00007

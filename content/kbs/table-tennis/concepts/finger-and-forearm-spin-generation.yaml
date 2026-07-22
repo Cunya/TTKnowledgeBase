@@ -14,9 +14,12 @@ evidence_summary: >-
   forward, then the fingers engage and lift, and that faster fingers make the ball kick more.
   Finger strength is key, fingers must initiate the wrist snap, and wrist movement should result
   from finger pressure. The snapping motion comes from the fingers and palm gripping the racket,
-  not from the forearm muscle itself. Together, these principles show how the topic is applied in
-  practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:18ea91c2dec248f3259c737b576f85760e1f225d66c90e3f313f46427e580209"
+  not from the forearm muscle itself. Defensive pressure as finger-driven, separating thumb for
+  backhand and index finger for forehand, and later states that power comes primarily from fingers
+  and wrist with forearm drive. Friction comes from the arm framework and then from adding fingers
+  and wrist, which makes the spin stronger. Together, these principles show how the topic is
+  applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:76fa2c9ac49b8c0661d85a42012f85b1032927b0e9cad15d0b8e05632d33c78c"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -131,3 +134,38 @@ evidence:
         - Wedp5osPbN0:00000
         - Wedp5osPbN0:00001
         - Wedp5osPbN0:00002
+  - id: XWV_G9VPqL8-concept-finger-and-forearm-spin-generation-reviewed
+    evidence_type: explanation
+    excerpt: Generating the shot with finger and wrist pressure, supported by forward forearm drive.
+    reason: The speaker frames defensive pressure as finger-driven, separating thumb for backhand and index finger for forehand, and later states that power comes primarily from fingers and wrist with forearm drive.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: XWV_G9VPqL8
+      start_ms: 27100
+      end_ms: 51700
+      url: https://www.youtube.com/watch?v=XWV_G9VPqL8&t=27s
+      segment_ids:
+        - XWV_G9VPqL8:00004
+        - XWV_G9VPqL8:00005
+        - XWV_G9VPqL8:00006
+        - XWV_G9VPqL8:00008
+  - id: s6lj1otqR90-concept-finger-and-forearm-spin-generation-reviewed
+    evidence_type: explanation
+    excerpt: Spin generation that increases when fingers and wrist are added to arm motion, and when the forearm contributes to the brushing action.
+    reason: The speaker says friction comes from the arm framework and then from adding fingers and wrist, which makes the spin stronger.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: s6lj1otqR90
+      start_ms: 12466
+      end_ms: 30366
+      url: https://www.youtube.com/watch?v=s6lj1otqR90&t=12s
+      segment_ids:
+        - s6lj1otqR90:00004
+        - s6lj1otqR90:00006
+        - s6lj1otqR90:00007
+        - s6lj1otqR90:00008
+        - s6lj1otqR90:00009

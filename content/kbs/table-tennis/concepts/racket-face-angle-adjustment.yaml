@@ -10,17 +10,18 @@ evidence_summary: >-
   Racket face angle adjustment brings together several connected ideas. The racket face must be
   angled correctly and bad angle as a primary cause of failed curve generation. The racket angle
   should change only minimally and that the racket face must remain stable throughout the motion.
-  Flattening the racket angle, holding it high and flat, and notes that flat or vertical angles
-  can still produce different spins. A useful contrast is between a low bottom edge that sends the
-  ball forward and a higher bottom edge that wraps upward and creates true friction, emphasizing
-  racket-face orientation. A useful contrast is between a flatter, slightly angled racket and a
-  vertical racket, linking angle choice to brushing and spin generation. Not to change racket
-  angle mid-stroke and to lock in a fundamental angle, adjusting arm height instead. He explains
-  that overly different racket angles reveal the serve and recommends a neutral, unified angle. On
-  closed racket angle, pressing down, and keeping the V of the hand facing forward for
-  consistency. Additional points reinforce the same theme. Together, these principles show how the
-  topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:90e5e62618e3ff74cceb6db228b9372bf432b7f5dc61fc1815f7e4addbf15c91"
+  The serve changes into side-topspin by changing the grip to a hook position and only altering
+  racket angle, with contact on the side of the ball. A slight hooking wrist motion, notes that
+  too much hook against right sidespin causes errors, and recommends opening the face slightly or
+  wrapping around the ball. Side-underspin requires a low approach and an open racket face with
+  the bottom edge higher than the top edge. Contact direction is controlled by the racket face and
+  tip orientation toward the target area, and that rotating the face forward makes the ball go
+  long. The player to keep the racket angle neutral and identical for the short sidespin serves.
+  Detailed racket-head and wrist orientation cues, including a neutral wrist turning toward a
+  cross-court angle during the backswing. Additional points reinforce the same theme. Together,
+  these principles show how the topic is applied in practice while preserving the relevant
+  distinctions and constraints.
+evidence_summary_source_hash: "sha256:5135ab55069eb63b789d57d83667b959f7470841c0c138f3b3ef0ceb19ff0b26"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -349,3 +350,35 @@ evidence:
         - HYdN-7CIYww:00155
         - HYdN-7CIYww:00156
         - HYdN-7CIYww:00159
+  - id: IXRPhM4Pjzc-concept-racket-face-angle-adjustment-reviewed
+    evidence_type: explanation
+    excerpt: Controlling the racket face angle at contact so the ball is contacted on the intended part of the blade and the stroke works properly.
+    reason: The speaker shows that the racket angle at contact matters, warns against the hand changing the angle when rushing, and says not to open the racket face too much.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: IXRPhM4Pjzc
+      start_ms: 445633
+      end_ms: 472500
+      url: https://www.youtube.com/watch?v=IXRPhM4Pjzc&t=445s
+      segment_ids:
+        - IXRPhM4Pjzc:00084
+        - IXRPhM4Pjzc:00087
+        - IXRPhM4Pjzc:00088
+  - id: M8fzQvShrx8-concept-racket-face-angle-adjustment-reviewed
+    evidence_type: explanation
+    excerpt: Changing racket-face orientation and wrist angle to produce the desired loop trajectory and brush direction.
+    reason: The speaker gives detailed racket-head and wrist orientation cues, including a neutral wrist turning toward a cross-court angle during the backswing.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: M8fzQvShrx8
+      start_ms: 655233
+      end_ms: 675800
+      url: https://www.youtube.com/watch?v=M8fzQvShrx8&t=655s
+      segment_ids:
+        - M8fzQvShrx8:00121
+        - M8fzQvShrx8:00122
+        - M8fzQvShrx8:00123

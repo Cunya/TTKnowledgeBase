@@ -12,15 +12,15 @@ evidence_summary: >-
   backhand technique improvement and explicitly says to differentiate flicking and looping skills.
   Whether to use forehand or backhand for different incoming serves and the same logic applies to
   the backhand. Brushing for underspin, freely hitting topspin, and using a standard backhand loop
-  for a given spin type. Multiple serve/ball types and the key difference is the upward direction
-  of the forearm swing, indicating technique selection by incoming spin type. The backhand rip as
-  a solution, then explains the fallback of using the forearm to push forward and upward and
-  create arc, including against low-spin and heavy-spin balls. Slow serves and fast deep backspin
-  serves and the preparation changes accordingly. A detailed rule set for slow, even, and fast
-  balls, including when to retract, hold forward, or brush in front. Additional points reinforce
-  the same theme. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:191a91c78e2aaa5a5110d5016b679bebe8b5606eede7701d644fd0b72b52470e"
+  for a given spin type. The backhand rip as a solution, then explains the fallback of using the
+  forearm to push forward and upward and create arc, including against low-spin and heavy-spin
+  balls. Slow serves and fast deep backspin serves and the preparation changes accordingly. A
+  detailed rule set for slow, even, and fast balls, including when to retract, hold forward, or
+  brush in front. Multiple segments explain different setups for sidespin-topspin,
+  sidespin-backspin, heavy backspin, long serves, top-of-bounce contact, and early descending
+  phase timing. Additional points reinforce the same theme. Together, these principles show how
+  the topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:8cce91171beaaa61bff72f5301a25154c3241063b43319f47992d6ec62726408"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -269,3 +269,34 @@ evidence:
         - 3wbUKV585F8:00196
         - 3wbUKV585F8:00197
         - 3wbUKV585F8:00198
+  - id: SUIth1DgWbg-concept-backhand-technique-selection-by-incoming-ball-type-reviewed
+    evidence_type: explanation
+    excerpt: The receive technique and finish change depending on whether the incoming ball is topspin or backspin, and whether the ball is short or half-long.
+    reason: Point C differs for topspin versus backspin, with press-down for topspin and a held finish for backspin.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: SUIth1DgWbg
+      start_ms: 870966
+      end_ms: 879066
+      url: https://www.youtube.com/watch?v=SUIth1DgWbg&t=870s
+      segment_ids:
+        - SUIth1DgWbg:00184
+  - id: 2LkVpDM69vo-concept-adjust-backhand-positioning-by-ball-speed-and-spin-reviewed
+    evidence_type: explanation
+    excerpt: Change backhand spacing, arm extension, and stance depending on serve speed, length, and spin type.
+    reason: Multiple segments explain different setups for sidespin-topspin, sidespin-backspin, heavy backspin, long serves, top-of-bounce contact, and early descending phase timing.
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 2LkVpDM69vo
+      start_ms: 816333
+      end_ms: 840733
+      url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=816s
+      segment_ids:
+        - 2LkVpDM69vo:00156
+        - 2LkVpDM69vo:00157
+        - 2LkVpDM69vo:00158
+        - 2LkVpDM69vo:00159

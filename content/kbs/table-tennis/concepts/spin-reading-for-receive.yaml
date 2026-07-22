@@ -9,10 +9,11 @@ evidence_summary: >-
   Spin reading for receive brings together several connected ideas. Wrist movement can cause
   errors if spin reading is not precise. The method works only without fake motions, that
   deception makes the read harder, and that fake motion can cause misreads. The serve
-  follow-through is the most deceptive phase and should be ignored completely when reading spin.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:1a7b750a4f5974226b89f6c2f9e0b32d4ec06bb793f8fd793a7914336255bd37"
+  follow-through is the most deceptive phase and should be ignored completely when reading spin. A
+  systematic read: downward motion means get lower, forward means get behind the ball, upward
+  means get on top or to the upper-middle part of the ball. Together, these principles show how
+  the topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:106784465f3f24184432f43bb773725afd6b9fa2d5ba8bd471df6866d62a6007"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -85,3 +86,19 @@ evidence:
         - ywhpUTdXW7I:00021
         - ywhpUTdXW7I:00022
         - ywhpUTdXW7I:00025
+  - id: Ejc6KqZDRKs-concept-0011-reviewed
+    evidence_type: explanation
+    excerpt: "The receiver adjusts racket position based on the server's motion: lower for downward motion, behind for forward motion, and above or on top for upward motion."
+    reason: 'The speaker gives a systematic read: downward motion means get lower, forward means get behind the ball, upward means get on top or to the upper-middle part of the ball.'
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Ejc6KqZDRKs
+      start_ms: 224833
+      end_ms: 253233
+      url: https://www.youtube.com/watch?v=Ejc6KqZDRKs&t=224s
+      segment_ids:
+        - Ejc6KqZDRKs:00047
+        - Ejc6KqZDRKs:00049
+        - Ejc6KqZDRKs:00050

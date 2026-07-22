@@ -10,18 +10,17 @@ evidence_summary: >-
   Use placement to move the opponent and lower return quality brings together several connected
   ideas. Changing placement moves the opponent, lowers return quality, and increases the quality
   of the next shot. The goal is to control and trouble the opponent, then later emphasizes speed
-  and placement to give the opponent less time to react. Aiming long to the opponent's middle
-  because it is awkward and leads to weak returns that set up a loop. Aiming to the opponent's
-  wide sideline to force large movement and lower the chance of a strong forehand attack. Mindful
-  placement, explicitly avoiding the forehand and returning to the backhand side for better
-  control. Defensive positioning as locking down the cross-court and adjusting stance based on
-  serve location and predicted reply. Steering wide serves to the opponent's backhand, jamming
-  them, and placing returns deep to a targeted wing to restrict their next attack. Placement to
-  exploit stance, center of gravity, and reach, and the table corner acts as a barrier that
-  stretches the opponent and shapes the return. Additional points reinforce the same theme.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:e032e927ccba08584994c29069cefdd2241acb20ab3000d3f9a9c18144d3783c"
+  and placement to give the opponent less time to react. To prioritize placement, aim at awkward
+  locations, and force the opponent to move so their attack quality falls. Mindful placement,
+  explicitly avoiding the forehand and returning to the backhand side for better control.
+  Defensive positioning as locking down the cross-court and adjusting stance based on serve
+  location and predicted reply. Steering wide serves to the opponent's backhand, jamming them, and
+  placing returns deep to a targeted wing to restrict their next attack. A wider serve jams the
+  opponent, forces weak returns, and makes the return harder to direct. The focus should be on
+  moving the opponent, forcing movement with placement, and attacking open spots. Additional
+  points reinforce the same theme. Together, these principles show how the topic is applied in
+  practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:d6e168cc9e049303a10e144eca78a3caf7225f4ffe655821739d2cfb1129d8a1"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -272,3 +271,52 @@ evidence:
         - a9wtW1BV-6M:00061
         - a9wtW1BV-6M:00062
         - a9wtW1BV-6M:00063
+  - id: 0TzTsSHudF8-concept-use-placement-to-move-the-opponent-and-lower-return-quality-reviewed
+    evidence_type: explanation
+    excerpt: Use serve placement to pull the opponent into awkward positions so their return is weaker or more predictable.
+    reason: The speaker says a wider serve jams the opponent, forces weak returns, and makes the return harder to direct.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 0TzTsSHudF8
+      start_ms: 120800
+      end_ms: 135300
+      url: https://www.youtube.com/watch?v=0TzTsSHudF8&t=120s
+      segment_ids:
+        - 0TzTsSHudF8:00026
+        - 0TzTsSHudF8:00027
+  - id: t3iPasg0y_Y-candidate-use-placement-to-move-the-opponent-and-lower-return-quality-reviewed
+    evidence_type: definition
+    excerpt: Using serve placement to force a weaker return and create a better attacking opportunity.
+    reason: The speaker contrasts serve directions based on the opponent's footwork and explains that serving wide to the backhand opens an attack for the forehand, while short to the forehand can be disadvantageous.
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: t3iPasg0y_Y
+      start_ms: 237666
+      end_ms: 259833
+      url: https://www.youtube.com/watch?v=t3iPasg0y_Y&t=237s
+      segment_ids:
+        - t3iPasg0y_Y:00044
+        - t3iPasg0y_Y:00045
+        - t3iPasg0y_Y:00046
+        - t3iPasg0y_Y:00047
+        - t3iPasg0y_Y:00048
+  - id: U6iP2eWxCDA-concept-opponent-movement-via-placement-against-long-pips-reviewed
+    evidence_type: explanation
+    excerpt: The tactic is not merely to return the ball, but to use push placement and follow-up attacks to move the long-pips player around the table.
+    reason: The speaker explicitly says the focus should be on moving the opponent, forcing movement with placement, and attacking open spots.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: U6iP2eWxCDA
+      start_ms: 386533
+      end_ms: 408866
+      url: https://www.youtube.com/watch?v=U6iP2eWxCDA&t=386s
+      segment_ids:
+        - U6iP2eWxCDA:00072
+        - U6iP2eWxCDA:00073
+        - U6iP2eWxCDA:00075

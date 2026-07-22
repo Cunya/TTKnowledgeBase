@@ -8,9 +8,12 @@ aliases:
 short_definition: The stroke needs a pause after stepping in, with the correct sequence of step in, set the racket, then flick; rushing the motion causes errors.
 evidence_summary: >-
   Banana flick timing and rhythm brings together several connected ideas. States that the motion
-  needs a pause and the step-in-before-backswing sequence. Together, these principles show how the
-  topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:fe9b67590d505ebf7c613119349db17c756c599fbc7e0e3b86c4fb680db14cc8"
+  needs a pause and the step-in-before-backswing sequence. Multiple segments state the rhythm as
+  moving in fast, waiting, then flicking, with an explicit pause required for synchronization.
+  Stepping in, pausing, and then flicking to create surprise and throw off timing. Together, these
+  principles show how the topic is applied in practice while preserving the relevant distinctions
+  and constraints.
+evidence_summary_source_hash: "sha256:5d12c2dbf3cc89e4d7e18cd3107d751772a0d7329bfe0489c58989726f8c6f8e"
 evidence_summary_generator: "deterministic"
 concept_type: practice
 facets:
@@ -44,3 +47,34 @@ evidence:
         - 6vwxmC36InY:00057
         - 6vwxmC36InY:00059
         - 6vwxmC36InY:00063
+  - id: _GxKApOkTiw-concept-banana-flick-timing-and-rhythm-reviewed
+    evidence_type: definition
+    excerpt: The banana flick should be entered quickly, then paused for the right moment before striking, rather than swinging immediately on arrival.
+    reason: Multiple segments state the rhythm as moving in fast, waiting, then flicking, with an explicit pause required for synchronization.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: _GxKApOkTiw
+      start_ms: 402366
+      end_ms: 429800
+      url: https://www.youtube.com/watch?v=_GxKApOkTiw&t=402s
+      segment_ids:
+        - _GxKApOkTiw:00077
+        - _GxKApOkTiw:00081
+  - id: ku3pB8FPhtM-concept-banana-flick-timing-and-rhythm-reviewed
+    evidence_type: definition
+    excerpt: "The flick should be delayed after stepping in: pause briefly, then execute the shot to disrupt the opponent's timing."
+    reason: The speaker explicitly recommends stepping in, pausing, and then flicking to create surprise and throw off timing.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ku3pB8FPhtM
+      start_ms: 707433
+      end_ms: 732666
+      url: https://www.youtube.com/watch?v=ku3pB8FPhtM&t=707s
+      segment_ids:
+        - ku3pB8FPhtM:00141
+        - ku3pB8FPhtM:00143
+        - ku3pB8FPhtM:00145

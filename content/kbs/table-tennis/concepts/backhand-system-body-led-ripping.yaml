@@ -13,9 +13,12 @@ evidence_summary: >-
   power-generation structure with stable joints and sequential forearm acceleration. A
   finger-assisted contact followed by forearm-driven follow-through, while warning against loose
   wrist action. Three backhand power methods, then emphasizes a compact core-led drive with the
-  elbow as a pivot and braced support for power and recovery. Together, these principles show how
-  the topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:10eafbfed5c988a5f59a30c490f069e58e94b8eb701fd012c93aecbc89cf9e1b"
+  elbow as a pivot and braced support for power and recovery. They explicitly describe the forearm
+  as the second section of a whip and to treat it like a whip for secondary acceleration. The
+  secret to backhand power is separating upper arm and forearm motion into a sequential one-two
+  action with whip-like acceleration. Together, these principles show how the topic is applied in
+  practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:528a90e3aae680e14f3b7a2d7621de5969dfdb6b9e1d1f44967170f359428216"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -119,3 +122,34 @@ evidence:
         - ZwTDfALP1lk:00054
         - ZwTDfALP1lk:00057
         - ZwTDfALP1lk:00058
+  - id: 82C2Zhfyq0s-concept-backhand-system-body-led-ripping-reviewed
+    evidence_type: explanation
+    excerpt: A backhand framework in which the hand skill, forearm rotation, and a whip-like forearm action create speed, arc, and ripping power.
+    reason: They explicitly describe the forearm as the second section of a whip and say to treat it like a whip for secondary acceleration.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 82C2Zhfyq0s
+      start_ms: 707866
+      end_ms: 721400
+      url: https://www.youtube.com/watch?v=82C2Zhfyq0s&t=707s
+      segment_ids:
+        - 82C2Zhfyq0s:00128
+        - 82C2Zhfyq0s:00130
+  - id: PaymojMhuzU-concept-backhand-system-body-led-ripping-reviewed
+    evidence_type: explanation
+    excerpt: A backhand power model that sequences the upper arm and forearm rather than moving them as one rigid unit.
+    reason: The speaker explicitly says the secret to backhand power is separating upper arm and forearm motion into a sequential one-two action with whip-like acceleration.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: PaymojMhuzU
+      start_ms: 689300
+      end_ms: 714300
+      url: https://www.youtube.com/watch?v=PaymojMhuzU&t=689s
+      segment_ids:
+        - PaymojMhuzU:00130
+        - PaymojMhuzU:00131
+        - PaymojMhuzU:00133

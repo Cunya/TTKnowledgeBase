@@ -802,6 +802,22 @@ evidence:
       segment_ids:
         - xWE01GQepLE:00163
         - xWE01GQepLE:00168
+  - id: GmC5XCY9aU4-concept-backhand-serve-reviewed
+    evidence_type: definition
+    excerpt: A backhand service motion used to generate spin and force a weak reply.
+    reason: The speaker explicitly says they are focusing on the backhand serve and describes its motion and visibility.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: GmC5XCY9aU4
+      start_ms: 12566
+      end_ms: 25066
+      url: https://www.youtube.com/watch?v=GmC5XCY9aU4&t=12s
+      segment_ids:
+        - GmC5XCY9aU4:00002
+        - GmC5XCY9aU4:00003
+        - GmC5XCY9aU4:00004
 relations:
   - relation_type: variation_of
     target_concept_id: concept-sidespin-topspin-serve

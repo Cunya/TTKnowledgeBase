@@ -455,6 +455,53 @@ evidence:
         - qfB1tscK4xk:00000
         - qfB1tscK4xk:00003
         - qfB1tscK4xk:00005
+  - id: ku3pB8FPhtM-concept-backhand-flick-mechanics-reviewed
+    evidence_type: definition
+    excerpt: The backhand flick should be powered mainly by the wrist in a back-to-front snap, not by the forearm or fingers alone.
+    reason: The speaker says fingers alone are limited, the forearm loses control, and the real power source is the wrist with a sharp snap forward.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ku3pB8FPhtM
+      start_ms: 875133
+      end_ms: 900466
+      url: https://www.youtube.com/watch?v=ku3pB8FPhtM&t=875s
+      segment_ids:
+        - ku3pB8FPhtM:00172
+        - ku3pB8FPhtM:00175
+        - ku3pB8FPhtM:00176
+  - id: 82C2Zhfyq0s-concept-backhand-flick-mechanics-reviewed
+    evidence_type: definition
+    excerpt: A backhand flick is taught as a small arcing motion that begins with the racket head turned sideways and finishes upward, with the wrist and forearm coordinating the rotation.
+    reason: The speaker introduces backhand flicks on short balls and describes the racket-head rotation from sideways to upward.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 82C2Zhfyq0s
+      start_ms: 573566
+      end_ms: 593500
+      url: https://www.youtube.com/watch?v=82C2Zhfyq0s&t=573s
+      segment_ids:
+        - 82C2Zhfyq0s:00106
+        - 82C2Zhfyq0s:00108
+  - id: 9EcoI6PnOzE-concept-backhand-flick-mechanics-reviewed
+    evidence_type: explanation
+    excerpt: Mechanics of the backhand flick emphasizing starting position, brushing phase, stable elbow, and acceleration phase.
+    reason: The speaker specifies where Point A should start, what A-to-B and B-to-C do, and how the elbow/wrist/forearm should behave.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 9EcoI6PnOzE
+      start_ms: 92033
+      end_ms: 113033
+      url: https://www.youtube.com/watch?v=9EcoI6PnOzE&t=92s
+      segment_ids:
+        - 9EcoI6PnOzE:00020
+        - 9EcoI6PnOzE:00023
+        - 9EcoI6PnOzE:00024
 relations:
   - relation_type: used_with
     target_concept_id: concept-backhand-flick-on-rise

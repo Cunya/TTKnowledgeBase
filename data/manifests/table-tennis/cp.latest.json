@@ -1,12 +1,12 @@
 {
   "knowledge_base": "table-tennis",
-  "started_at": "2026-07-21T19:36:44.812046+00:00",
+  "started_at": "2026-07-22T06:17:55.967429+00:00",
   "status": "completed",
   "stages": [
     {
       "name": "process-pending before acquisition",
       "exit_code": 0,
-      "output": "Processed pending candidates for Table Tennis: 84 accepted, 20 deferred, 0 \nrejected, 84 evidence moments added, 0 concepts added; diagnostics refreshed \n(1580 deferred candidates); navigation placed 0 concepts",
+      "output": "Processed pending candidates for Table Tennis: 0 accepted, 1 deferred, 0 \nrejected, 0 evidence moments added, 0 concepts added; diagnostics refreshed \n(1730 deferred candidates); navigation placed 0 concepts",
       "exit_class": "success",
       "timeout_seconds": 2700
     },
@@ -34,91 +34,21 @@
     {
       "name": "ingest discovered batch",
       "exit_code": 1,
-      "output": "Skipped J4ZTcPlOmto: YouTube block cooldown has about 2 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped IQJagpLfWoE: YouTube block cooldown has about 2 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped UAlmlB1nU8o: YouTube block cooldown has about 2 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nERROR: [youtube] UCLdwDMdtrc: Video unavailable\nFailed https://www.youtube.com/watch?v=UCLdwDMdtrcW_WlhXI0Kli9Q: ERROR:  \nUCLdwDMdtrc: Video unavailable\nSaved dIq6T-PMx0k: The \"Back-Side\" Secret to a Killer Topspin Serve (Pendulum &\nHook)\nSaved McwvbLZZQmA: The 3 Footwork Mistakes Ruining Your Third-Ball Attack (And \nHow to Fix Them)\nWARNING: [youtube] [jsc] Remote component challenge solver script (node) was skipped. It may be required to solve JS challenges. You can enable the download with  --remote-components ejs:github  (recommended). For more information and alternatives, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS\nWARNING: [youtube] HLmkP4I2jqM: n challenge solving failed: Some formats may be missing. Ensure you have a supported JavaScript runtime and challenge solver script distribution installed. Review any warnings presented before this message. For more details, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS\nSaved HLmkP4I2jqM: Stop backswing backwards! | A deep dive into modern \nevolution of forehand topspin loop\nERROR: [youtube] sbIjb930iWY: Join this channel to get access to members-only content like this video, and other exclusive perks.\nMarked sbIjb930iWY as members-only; will retry after the three-day cooldown.\nSaved qfB1tscK4xk: Unlock a Killer Backhand flick | The \"Body Spring\" Secret to\nUltimate Power (Part 2)\nERROR: [youtube] m1RsLeoBivk: This video is available to this channel's members on level: Silver Member (or any higher level). Join this channel to get access to members-only content and other exclusive perks.\nMarked m1RsLeoBivk as members-only; will retry after the three-day cooldown.\nWARNING: [youtube] [jsc] Remote component challenge solver script (node) was skipped. It may be required to solve JS challenges. You can enable the download with  --remote-components ejs:github  (recommended). For more information and alternatives, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS\nWARNING: [youtube] Yf_uKs6cZ38: n challenge solving failed: Some formats may be missing. Ensure you have a supported JavaScript runtime and challenge solver script distribution installed. Review any warnings presented before this message. For more details, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS\nSaved Yf_uKs6cZ38: Unlock a Killer Backhand Loop | The \"Two External Rotations\"\nSecret\nSaved D02EFJijJiU: Unlock Forehand Power: The 'Left-Hand' Secret\nSaved LWx10iPhjxU: Unlock Vicious Spin: The 3-Stage Snap for a Killer Forehand \nLoop\nSaved pQcxGOu4wEE: The '+2' SECRETS to a Killer Chopping Hook Serve (3+2 \nMethod, Part 2)\nSaved BpKGpKwopDE: The Easiest Chopping Hook Serve Tutorial for Beginners (3+2 \nMethod, Part 1)\nSaved pWQROAi8uWw: Why Your Forehand-Backhand Transition is SLOW (And How to \nFix It)\nStopped after 10 successful uncached video(s); the conservative per-run success\nbudget was reached.\n4 video(s) failed; successful videos were retained.",
+      "output": "Skipped J4ZTcPlOmto: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped IQJagpLfWoE: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped UAlmlB1nU8o: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nERROR: [youtube] UCLdwDMdtrc: Video unavailable\nFailed https://www.youtube.com/watch?v=UCLdwDMdtrcW_WlhXI0Kli9Q: ERROR:  \nUCLdwDMdtrc: Video unavailable\nSkipped qPpVIKNWMwY: YouTube block cooldown has about 21 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped hoLSxXKl2L0: YouTube block cooldown has about 22 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped mQdrXMukRSY: YouTube block cooldown has about 22 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped XaU6LtcP_n0: YouTube block cooldown has about 23 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped PsZfazXZXEA: YouTube block cooldown has about 23 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nWARNING: The extractor specified to use impersonation for this download, but no impersonate target is available. If you encounter errors, then see  https://github.com/yt-dlp/yt-dlp#impersonation  for information on installing the required dependencies\nERROR: Unable to download video subtitles for 'en': HTTP Error 429: Too Many Requests\nFailed https://www.youtube.com/watch?v=GBudN8i0C1Y: \nCould not retrieve a transcript for the video \nhttps://www.youtube.com/watch?v=GBudN8i0C1Y! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the \nfollowing reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, \nGoogle Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud \nproviders are blocked by YouTube.\n\nWays to work around this are explained in the \"Working around IP bans\" section \nof the README \n(https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-a\nround-ip-bans-requestblocked-or-ipblocked-exception).\n\n\nIf you are sure that the described cause is not responsible for this error and \nthat a transcript should be retrievable, please create an issue at \nhttps://github.com/jdepoix/youtube-transcript-api/issues. Please add which \nversion of youtube_transcript_api you are using and provide the information \nneeded to replicate the error. Also make sure that there are no open issues \nwhich already describe your problem!\nYouTube block detected; stopping this batch to avoid escalation.\n10 video(s) failed; successful videos were retained.",
       "exit_class": "stage_failed",
-      "timeout_seconds": 2700
-    },
-    {
-      "name": "extract dIq6T-PMx0k",
-      "exit_code": 0,
-      "output": "Saved candidates dIq6T-PMx0k.candidates.json",
-      "exit_class": "success",
-      "timeout_seconds": 2700
-    },
-    {
-      "name": "extract McwvbLZZQmA",
-      "exit_code": 0,
-      "output": "Saved candidates McwvbLZZQmA.candidates.json",
-      "exit_class": "success",
-      "timeout_seconds": 2700
-    },
-    {
-      "name": "extract HLmkP4I2jqM",
-      "exit_code": 0,
-      "output": "Saved candidates HLmkP4I2jqM.candidates.json",
-      "exit_class": "success",
-      "timeout_seconds": 2700
-    },
-    {
-      "name": "extract qfB1tscK4xk",
-      "exit_code": 0,
-      "output": "Saved candidates qfB1tscK4xk.candidates.json",
-      "exit_class": "success",
-      "timeout_seconds": 2700
-    },
-    {
-      "name": "extract Yf_uKs6cZ38",
-      "exit_code": 0,
-      "output": "Saved candidates Yf_uKs6cZ38.candidates.json",
-      "exit_class": "success",
-      "timeout_seconds": 2700
-    },
-    {
-      "name": "extract D02EFJijJiU",
-      "exit_code": 0,
-      "output": "Saved candidates D02EFJijJiU.candidates.json",
-      "exit_class": "success",
-      "timeout_seconds": 2700
-    },
-    {
-      "name": "extract LWx10iPhjxU",
-      "exit_code": 0,
-      "output": "Saved candidates LWx10iPhjxU.candidates.json",
-      "exit_class": "success",
-      "timeout_seconds": 2700
-    },
-    {
-      "name": "extract pQcxGOu4wEE",
-      "exit_code": 0,
-      "output": "Saved candidates pQcxGOu4wEE.candidates.json",
-      "exit_class": "success",
-      "timeout_seconds": 2700
-    },
-    {
-      "name": "extract BpKGpKwopDE",
-      "exit_code": 0,
-      "output": "Saved candidates BpKGpKwopDE.candidates.json",
-      "exit_class": "success",
-      "timeout_seconds": 2700
-    },
-    {
-      "name": "extract pWQROAi8uWw",
-      "exit_code": 0,
-      "output": "Saved candidates pWQROAi8uWw.candidates.json",
-      "exit_class": "success",
       "timeout_seconds": 2700
     },
     {
       "name": "process-pending after extraction",
       "exit_code": 0,
-      "output": "Processed pending candidates for Table Tennis: 0 accepted, 0 deferred, 0 \nrejected, 0 evidence moments added, 0 concepts added; diagnostics refreshed \n(1580 deferred candidates); navigation placed 0 concepts",
+      "output": "Processed pending candidates for Table Tennis: 0 accepted, 0 deferred, 0 \nrejected, 0 evidence moments added, 0 concepts added; diagnostics refreshed \n(1730 deferred candidates); navigation placed 0 concepts",
       "exit_class": "success",
       "timeout_seconds": 2700
     },
     {
       "name": "build review queue",
       "exit_code": 0,
-      "output": "Table Tennis: 5821 candidates queued",
+      "output": "Table Tennis: 6564 candidates queued",
       "exit_class": "success",
       "timeout_seconds": 2700
     },
@@ -132,7 +62,7 @@
     {
       "name": "publish reviewed corpus",
       "exit_code": 0,
-      "output": "Refreshed 51 generated concept summary(ies)\nPublished Table Tennis: 419 concepts",
+      "output": "Published Table Tennis: 514 concepts",
       "exit_class": "success",
       "timeout_seconds": 2700
     }
@@ -140,7 +70,7 @@
   "cached_unextracted": [],
   "selected_batch": [],
   "discovered_inventory_count": 824,
-  "discovered_unprocessed_count": 40,
+  "discovered_unprocessed_count": 29,
   "discovered_batch": [
     {
       "id": "J4ZTcPlOmto",
@@ -159,149 +89,105 @@
       "title": "GlobalTTStudio - Videos"
     },
     {
-      "id": "dIq6T-PMx0k",
-      "title": "The \"Back-Side\" Secret to a Killer Topspin Serve (Pendulum & Hook)"
+      "id": "qPpVIKNWMwY",
+      "title": "How to Find Your Golden Contact Point for Maximum Coordinated Force"
     },
     {
-      "id": "McwvbLZZQmA",
-      "title": "The 3 Footwork Mistakes Ruining Your Third-Ball Attack (And How to Fix Them)"
+      "id": "hoLSxXKl2L0",
+      "title": "How to Open Up Your Forearm to Generate Explosive Forehand Power"
     },
     {
-      "id": "HLmkP4I2jqM",
-      "title": "Stop backswing backwards! | A deep dive into modern evolution of forehand topspin loop"
+      "id": "mQdrXMukRSY",
+      "title": "The Ultimate Backhand Breakdown: Achieving Both Power and Consistency"
     },
     {
-      "id": "sbIjb930iWY",
-      "title": "Serve Masterclass: The Mechanics of Heavy Sidespin Topspin & Backspin"
+      "id": "XaU6LtcP_n0",
+      "title": "Fixing the Amateur Third Ball Attack: An In-Depth On-Court Coaching Session"
     },
     {
-      "id": "qfB1tscK4xk",
-      "title": "Unlock a Killer Backhand flick | The \"Body Spring\" Secret to Ultimate Power (Part 2)"
+      "id": "PsZfazXZXEA",
+      "title": "Fix the 4 Biggest Mistakes in Your Forehand Drive"
     },
     {
-      "id": "m1RsLeoBivk",
-      "title": "Third-Ball Attack vs. Serve Return: Why You Need Two Different Backspin Loops"
+      "id": "GBudN8i0C1Y",
+      "title": "Stop Rushing Your Backhand: How to Improve Your Backhand Rhythm"
     },
     {
-      "id": "Yf_uKs6cZ38",
-      "title": "Unlock a Killer Backhand Loop | The \"Two External Rotations\" Secret"
+      "id": "OVkH-47SvqE",
+      "title": "Fixing Hook Serve Mistakes: A Breakdown of the Topspin-Sidespin Serve"
     },
     {
-      "id": "D02EFJijJiU",
-      "title": "Unlock Forehand Power: The 'Left-Hand' Secret"
+      "id": "UqXqp8saFbU",
+      "title": "The 2 Word Mental Hack That Unlocks Pro Level Serve Receive"
     },
     {
-      "id": "LWx10iPhjxU",
-      "title": "Unlock Vicious Spin: The 3-Stage Snap for a Killer Forehand Loop"
+      "id": "wytyHpyZr9A",
+      "title": "Fix Your Backhand Against Backspin: Your 4-Step Solution(Penhold+Shakehand)"
     },
     {
-      "id": "pQcxGOu4wEE",
-      "title": "The '+2' SECRETS to a Killer Chopping Hook Serve (3+2 Method, Part 2)"
+      "id": "czp2jsURYQk",
+      "title": "Getting Jammed on Your Forehand? Here's the Permanent Fix."
     },
     {
-      "id": "BpKGpKwopDE",
-      "title": "The Easiest Chopping Hook Serve Tutorial for Beginners (3+2 Method, Part 1)"
+      "id": "IHQASHkdLYk",
+      "title": "Sidespin Serve to Backhand Attack Tactic: Step-by-Step Breakdown"
     },
     {
-      "id": "pWQROAi8uWw",
-      "title": "Why Your Forehand-Backhand Transition is SLOW (And How to Fix It)"
+      "id": "rLrnvlDBmTs",
+      "title": "How to Loop Heavy Backspin – The Ultimate Breakdown with 4P Formula"
     },
     {
-      "id": "YAbN1BDXWb8",
-      "title": "Pro Breakdown: The Art of the Push and Loop Transition"
+      "id": "_77LMM6s1cw",
+      "title": "Stop Getting Stuck: How to Fix Your Footwork on Serve Receive"
     },
     {
-      "id": "_GxKApOkTiw",
-      "title": "The Backhand Flick Blueprint: 3 Golden Rules of Footwork, Timing & Spacing (Part 1)"
+      "id": "SmYaJcYqaqo",
+      "title": "Fix This Forehand Mistake: How to Meet the Ball in Front for MASSIVE Power"
     },
     {
-      "id": "G2ZGqfXS3SI",
-      "title": "The Complete Guide to Offensive Consistency: From Stroke Finish to Shot Selection"
+      "id": "ATd38ewLMqs",
+      "title": "How to Correct Your Backhand Drive Form"
     },
     {
-      "id": "1XgvgkJ8EfM",
-      "title": "The \"Be Decisive\" Rule: How to Confidently Return Any Serve (Short & Wide)"
+      "id": "3wQrxObpgxM",
+      "title": "Fix Your Forehand Loop: How to Transition from Drive to Loop"
     },
     {
-      "id": "4t2Y1_zWPdI",
-      "title": "Stop Pushing, Start Winning: The Power of the Third-Ball Attack"
+      "id": "hi0AJuu60eE",
+      "title": "Fix Slow Forehand–Backhand Transitions"
     },
     {
-      "id": "ku3pB8FPhtM",
-      "title": "Destroy Backhand Short Serves: The ‘Awkward Spin’ Secret of the Side-Chop & Side-Push"
+      "id": "yqSECRch8WM",
+      "title": "How to Brush and Drive the Ball on the Backhand"
     },
     {
-      "id": "94blYMY54ZI",
-      "title": "Master the Short Hook Serve: The 'Chop Method' & Exclusive Training Tip"
+      "id": "spoumRQdZHc",
+      "title": "Fix Your Stance in 10 Minutes: The Foundation of a Stable Forehand"
     },
     {
-      "id": "mvVfwjdxe34",
-      "title": "Stop Lifting, Start Driving! | The Modern Backspin Loop REVOLUTION"
+      "id": "pbILplLUhnI",
+      "title": "How to Fix Your Backhand Swing Path and Spacing"
     },
     {
-      "id": "Q3-HuvSHrw0",
-      "title": "V-Shaped Serve Masterclass: Make Your Opponent Helpless with a \"Jamming\" Backspin Serve"
+      "id": "0KcRfTXRcsY",
+      "title": "How to Read Spin and Adjust Your Racket Angle"
     },
     {
-      "id": "ZyicUbuebjU",
-      "title": "Stop Swinging Up, Start Driving FORWARD! | The 'Crack Shot' Secret That Unlocks Explosive Power"
+      "id": "SBpcji5Ah_w",
+      "title": "How to Use Thumb Power, Step-In, and Hip Thrust for a Better Backhand"
     },
     {
-      "id": "fYJgxN1x7QM",
-      "title": "The 3 Backspin Loops That Separate Practice Heroes from Winners"
+      "id": "9sU_T8b5UoQ",
+      "title": "How to Fix Your Unstable Forehand: Master the 3 Pivot Points for Perfect Consistency"
     },
     {
-      "id": "gV-iuz4JnXc",
-      "title": "The 'Lazy' Player's Shortcut to a Killer Forehand Loop Without Perfect Footwork"
+      "id": "tQSnBjtseLI",
+      "title": "Fix Your Weak Forehand: Why a Stable Elbow is the Key to Power"
     },
     {
-      "id": "4NxMY3eb7U8",
-      "title": "Destroy Forehand Short Serves: Return Serves Like You're SERVING!"
-    },
-    {
-      "id": "0TzTsSHudF8",
-      "title": "The \"Golden Move\" After Every Down-the-Line Attack | Pro 3rd Ball Attack Tactic"
-    },
-    {
-      "id": "hKQbi0Kk_Gs",
-      "title": "Why Your Backhand is Outdated: A Deep Dive into its Modern Evolution"
-    },
-    {
-      "id": "OL0Y8UdFKcg",
-      "title": "The ‘Forward V’ Principle: Unlock Pro-Level Consistency in High-Speed Rallies"
-    },
-    {
-      "id": "O0jOeCzzcZA",
-      "title": "Can't Lift Heavy Backspin? The Real Secret to Looping Backspin is in Your FINGERS"
-    },
-    {
-      "id": "OSfqukeeo_I",
-      "title": "The Secret to a Killer Left Sidespin Serve: It's All About the \"Elbow Pivot\""
-    },
-    {
-      "id": "mQPlGN-Wkuo",
-      "title": "The #1 Mistake That Kills Your Tricky Sidespin Serve (It's Your Ball Toss)"
-    },
-    {
-      "id": "oBopLyMjrio",
-      "title": "Advanced Deception Tactics: Unreadable Serves & Misdirection Pushes"
-    },
-    {
-      "id": "SUIth1DgWbg",
-      "title": "The Secret to a Killer Backhand Flick: It's All About the \"Pause\""
-    },
-    {
-      "id": "fgtk9fxGTUw",
-      "title": "Swing LESS, Spin MORE: The \"Brush, Drive, STOP\" Formula for a Vicious Forehand Loop"
-    },
-    {
-      "id": "TLXGDLGzZt8",
-      "title": "Stop Reaching With Your Arm! The 3 Essential Footwork Patterns ALL Amateurs MUST Master"
-    },
-    {
-      "id": "GmC5XCY9aU4",
-      "title": "It's a Setup, Not an Ace! The Backhand Serve That FORCES a Weak Return"
+      "id": "AoJq7UfIhp8",
+      "title": "How to Add INSANE Spin to Your Backhand Fast Loop"
     }
   ],
-  "finished_at": "2026-07-21T20:17:45.758328+00:00"
+  "finished_at": "2026-07-22T06:40:22.514410+00:00"
 }

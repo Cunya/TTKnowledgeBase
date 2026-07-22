@@ -12,9 +12,14 @@ evidence_summary: >-
   loop's arc and a push's straight line and explains that all good backhand techniques have an arc
   or semi-circle path. The rip must create an arc, describing clock-face and fan-like paths. The
   instructor compares the motion to drawing a sword, emphasizes a continuous forward arc, and the
-  racket head must snap through. Together, these principles show how the topic is applied in
-  practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:a254db953f3bd4376af56e4a02f5f0d321f6df40f0192ac7529285d88d748574"
+  racket head must snap through. The backhand as drawing a circle and then a small arc, with a
+  bigger arc for slower balls and a smaller forearm-only arc for faster balls. The motion is
+  described as a natural arc with the racket head dropping then swinging up, and you need to
+  create an arc. Both wings follow an outside-in arc and that the backhand needs a small outside
+  arc. Arc awareness, describes the racket moving like a fan, and the trajectory follows the edge
+  of an opening fan. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:09b13dfa1841c0823a9bb14ff345929c41b23af975d27d2d69c691a52bd2956c"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -84,3 +89,65 @@ evidence:
       segment_ids:
         - jvt-6VNmBzs:00089
         - jvt-6VNmBzs:00092
+  - id: hKQbi0Kk_Gs-concept-backhand-forearm-driven-arc-reviewed
+    evidence_type: definition
+    excerpt: A backhand stroke shape that uses a small circular or arcing forearm motion, with minimal upper-arm movement.
+    reason: The speaker explicitly describes the backhand as drawing a circle and then a small arc, with a bigger arc for slower balls and a smaller forearm-only arc for faster balls.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: hKQbi0Kk_Gs
+      start_ms: 654366
+      end_ms: 677666
+      url: https://www.youtube.com/watch?v=hKQbi0Kk_Gs&t=654s
+      segment_ids:
+        - hKQbi0Kk_Gs:00136
+        - hKQbi0Kk_Gs:00138
+        - hKQbi0Kk_Gs:00139
+        - hKQbi0Kk_Gs:00140
+  - id: SUIth1DgWbg-concept-backhand-arc-trajectory-reviewed
+    evidence_type: explanation
+    excerpt: The backhand flick uses an arcing swing path rather than a straight push, creating room for spin and clearance over the net.
+    reason: The motion is described as a natural arc with the racket head dropping then swinging up, and the speaker says you need to create an arc.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: SUIth1DgWbg
+      start_ms: 577500
+      end_ms: 593066
+      url: https://www.youtube.com/watch?v=SUIth1DgWbg&t=577s
+      segment_ids:
+        - SUIth1DgWbg:00122
+        - SUIth1DgWbg:00124
+  - id: 82C2Zhfyq0s-concept-backhand-arc-trajectory-reviewed
+    evidence_type: definition
+    excerpt: The backhand should travel on a small outside arc or circular path rather than straight back-to-front, creating space and friction for shots like flicks, rips, and loops.
+    reason: The speaker states that both wings follow an outside-in arc and that the backhand needs a small outside arc.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 82C2Zhfyq0s
+      start_ms: 301366
+      end_ms: 312466
+      url: https://www.youtube.com/watch?v=82C2Zhfyq0s&t=301s
+      segment_ids:
+        - 82C2Zhfyq0s:00055
+        - 82C2Zhfyq0s:00056
+  - id: 1UthOchBWWc-concept-backhand-arc-trajectory-reviewed
+    evidence_type: definition
+    excerpt: The backhand uses a small arc or fan-shaped trajectory, rather than a straight push or wrist break.
+    reason: The speaker directly names arc awareness, describes the racket moving like a fan, and says the trajectory follows the edge of an opening fan.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 1UthOchBWWc
+      start_ms: 289966
+      end_ms: 318066
+      url: https://www.youtube.com/watch?v=1UthOchBWWc&t=289s
+      segment_ids:
+        - 1UthOchBWWc:00047
+        - 1UthOchBWWc:00048

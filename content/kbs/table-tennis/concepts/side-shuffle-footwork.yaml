@@ -10,10 +10,11 @@ evidence_summary: >-
   Side-shuffle footwork brings together several connected ideas. The side-shuffle as the primary
   half-table footwork and it with a single step in some drills. Small side-shuffle steps, two-foot
   movement, and a low-glide pattern as the correct footwork approach. Small shuffle steps for
-  half-court movements and demonstrates shuffling to different positions. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:6ad0771f49bffa8bd1edf2818aaffae614e4b21f7848010a44f0898ccf7e1c11"
+  half-court movements and demonstrates shuffling to different positions. Small side-steps and
+  moving both feet together for forehand-side adjustments and out-of-reach balls. To avoid shuffle
+  steps and left-right shuffle makes the player a step too slow. Together, these principles show
+  how the topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:15bd8dbb894a85a08f614d72b5e909473306166e0c15eb0242e7178f993c6dda"
 evidence_summary_generator: "deterministic"
 concept_type: practice
 facets:
@@ -77,3 +78,35 @@ evidence:
       segment_ids:
         - fX0-3KtEzUY:00032
         - fX0-3KtEzUY:00037
+  - id: TLXGDLGzZt8-concept-side-shuffle-footwork-reviewed
+    evidence_type: demonstration
+    excerpt: Use lateral side-step movements, often with both feet together, to adjust position on the forehand side or when a ball is too wide for a lunge.
+    reason: The coach repeatedly prescribes small side-steps and moving both feet together for forehand-side adjustments and out-of-reach balls.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: TLXGDLGzZt8
+      start_ms: 621866
+      end_ms: 644000
+      url: https://www.youtube.com/watch?v=TLXGDLGzZt8&t=621s
+      segment_ids:
+        - TLXGDLGzZt8:00120
+        - TLXGDLGzZt8:00121
+        - TLXGDLGzZt8:00123
+  - id: T6kwb4YehYA-concept-side-shuffle-footwork-reviewed
+    evidence_type: mistake
+    excerpt: A small repeated side-shuffle is criticized here because it adds unnecessary steps, slows recovery, and can prevent power generation on fast balls.
+    reason: The speaker says to avoid shuffle steps and explains that left-right shuffle makes the player a step too slow.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: T6kwb4YehYA
+      start_ms: 592433
+      end_ms: 619300
+      url: https://www.youtube.com/watch?v=T6kwb4YehYA&t=592s
+      segment_ids:
+        - T6kwb4YehYA:00115
+        - T6kwb4YehYA:00116
+        - T6kwb4YehYA:00117

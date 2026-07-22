@@ -9,10 +9,15 @@ evidence_summary: >-
   Backswing behind the body brings together several connected ideas. The racket should go behind
   the body and that this creates space and the proper hitting zone. The backswing as dropping
   toward the hip/upper thigh and hiding the racket by the right thigh rather than going straight
-  back. The forehand loop backswing is behind the body and should not be from the side. Together,
+  back. The forehand loop backswing is behind the body and should not be from the side. The serve
+  requires a drawn-back backswing with shoulder and elbow pulled behind the body, and that
+  starting in the backswing position simplifies practice. The backswing should finish behind the
+  body, with a specific compact position for topspin and a close-to-body position for backspin.
+  After looping, the backswing should go backwards, not downwards. A huge backswing and one that
+  goes behind the body as a common mistake that causes jamming and loss of control. Together,
   these principles show how the topic is applied in practice while preserving the relevant
   distinctions and constraints.
-evidence_summary_source_hash: "sha256:afa536626d08e77d51cad61ad63e8ae273b211eb056fd291ededff64338aafbb"
+evidence_summary_source_hash: "sha256:e985c247768315a6d8d7e2dc3fdfd0e995f687482ce67874e22972a63f885a0d"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -77,3 +82,66 @@ evidence:
       segment_ids:
         - HEQjcWoP87I:00110
         - HEQjcWoP87I:00114
+  - id: CW2rvujI5hM-concept-draw-the-bow-backswing-reviewed
+    evidence_type: explanation
+    excerpt: A backswing action in which the shoulder and elbow are pulled back before contact to create space and load the serve.
+    reason: The coach repeatedly explains that the serve requires a drawn-back backswing with shoulder and elbow pulled behind the body, and that starting in the backswing position simplifies practice.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: CW2rvujI5hM
+      start_ms: 30300
+      end_ms: 53133
+      url: https://www.youtube.com/watch?v=CW2rvujI5hM&t=30s
+      segment_ids:
+        - CW2rvujI5hM:00005
+        - CW2rvujI5hM:00006
+        - CW2rvujI5hM:00007
+        - CW2rvujI5hM:00008
+  - id: vLLKF8m8J1U-concept-backswing-behind-the-body-reviewed
+    evidence_type: definition
+    excerpt: A forehand backswing should finish behind the body, with topspin backswings kept more compact and backspin backswings drawn farther back but still close to the body.
+    reason: The speaker says the backswing should finish behind the body, with a specific compact position for topspin and a close-to-body position for backspin.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: vLLKF8m8J1U
+      start_ms: 42600
+      end_ms: 63800
+      url: https://www.youtube.com/watch?v=vLLKF8m8J1U&t=42s
+      segment_ids:
+        - vLLKF8m8J1U:00008
+        - vLLKF8m8J1U:00011
+  - id: geGebDni2TU-concept-backwards-backswing-after-loop-reviewed
+    evidence_type: explanation
+    excerpt: After looping, the next swing should travel backward rather than dropping downward.
+    reason: The speaker repeatedly states that after looping, the backswing should go backwards, not downwards.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: geGebDni2TU
+      start_ms: 14633
+      end_ms: 44100
+      url: https://www.youtube.com/watch?v=geGebDni2TU&t=14s
+      segment_ids:
+        - geGebDni2TU:00003
+        - geGebDni2TU:00008
+        - geGebDni2TU:00009
+  - id: HWIiN1i0_oM-concept-backswing-behind-the-body-reviewed
+    evidence_type: mistake
+    excerpt: Pulling the backswing behind the body creates excess distance and hurts control and timing.
+    reason: The speaker identifies a huge backswing and one that goes behind the body as a common mistake that causes jamming and loss of control.
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: HWIiN1i0_oM
+      start_ms: 221300
+      end_ms: 231333
+      url: https://www.youtube.com/watch?v=HWIiN1i0_oM&t=221s
+      segment_ids:
+        - HWIiN1i0_oM:00031
+        - HWIiN1i0_oM:00032

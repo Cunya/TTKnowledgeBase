@@ -559,6 +559,54 @@ evidence:
         - swjcy483f2w:00005
         - swjcy483f2w:00007
         - swjcy483f2w:00008
+  - id: U3o7_ad82dk-concept-forehand-weight-transfer-and-hip-drive-reviewed
+    evidence_type: explanation
+    excerpt: On the forehand, load weight into the turning side, keep the front foot and knee stable, and transfer weight forward as the hips drive the stroke.
+    reason: The speaker gives explicit loading guidance for the forehand and says the front foot and knee must remain stable.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: U3o7_ad82dk
+      start_ms: 594200
+      end_ms: 619033
+      url: https://www.youtube.com/watch?v=U3o7_ad82dk&t=594s
+      segment_ids:
+        - U3o7_ad82dk:00108
+        - U3o7_ad82dk:00109
+        - U3o7_ad82dk:00110
+        - U3o7_ad82dk:00111
+  - id: hQAxpSuplGM-concept-forehand-drive-reviewed
+    evidence_type: definition
+    excerpt: A forehand stroke in which the upper arm drives forward and the forearm completes acceleration, with a stable racket face at contact.
+    reason: The speaker names the forehand drive directly and explains how upper-arm and forearm roles differ by distance and shot type.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: hQAxpSuplGM
+      start_ms: 128333
+      end_ms: 140800
+      url: https://www.youtube.com/watch?v=hQAxpSuplGM&t=128s
+      segment_ids:
+        - hQAxpSuplGM:00025
+        - hQAxpSuplGM:00026
+  - id: o_lngzbIPnA-concept-forehand-drive-reviewed
+    evidence_type: definition
+    excerpt: A forehand stroke that emphasizes pure impact rather than brushing, with a stable racket face and a parallel arm path.
+    reason: The speaker explicitly distinguishes the forehand drive from the loop and describes the drive as back-to-front power with a parallel arm plane and no added brushing friction.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: o_lngzbIPnA
+      start_ms: 363233
+      end_ms: 387233
+      url: https://www.youtube.com/watch?v=o_lngzbIPnA&t=363s
+      segment_ids:
+        - o_lngzbIPnA:00072
+        - o_lngzbIPnA:00074
+        - o_lngzbIPnA:00075
 relations:
   - relation_type: contrasts_with
     target_concept_id: concept-forehand-loop

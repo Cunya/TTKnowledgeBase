@@ -9,16 +9,17 @@ evidence_summary: >-
   Racket angle control against topspin brings together several connected ideas. Says the same
   force sends the ball long with one angle, while a slightly closed angle keeps it on the table.
   To adjust racket angle, comparing vertical-to-open versus too-vertical trajectories to manage
-  heavy backspin and pop-ups. Sideways power direction and a closed racket face to correct
-  placement and fewer mistakes. To keep the racket face closed and maintain the angle throughout
-  the stroke. The racket angle should be closed for these attacking shots against topspin and that
-  openness causes errors. The racket angle must change with the intensity and type of incoming
-  spin, with examples for backspin, side-topspin, and heavy spin. The learner to close the racket
-  angle and drive forward on the kicking topspin serve. Against topspin the racket angle should be
-  slightly closed and explicitly says to close the angle and brush it back. Additional points
-  reinforce the same theme. Together, these principles show how the topic is applied in practice
-  while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:e5ee29bd9bbf1056d158648e9b75f2b2fee793e65522f072bf4989553589591a"
+  heavy backspin and pop-ups. Topspin requires a more controlled, not overly open face, and that
+  pressing down helps bring the ball down under pressure. Going long to an open racket face and
+  more power requires a more closed face, especially on the forehand. Topspin requires a more
+  closed racket angle, and that an open face sends the ball out. The learner to close the racket
+  angle and drive forward on the kicking topspin serve. The player to keep the racket face closed
+  and press down the arc of a topspin ball, especially when the incoming ball is fast. Seeing the
+  ball means the racket angle is set for a flat hit, and that the angle must be adjusted based on
+  incoming spin and desired impact. Additional points reinforce the same theme. Together, these
+  principles show how the topic is applied in practice while preserving the relevant distinctions
+  and constraints.
+evidence_summary_source_hash: "sha256:8ad414f9120599a477f7606f5e38337da59927d78ac57455b199f3879b66efb3"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -474,3 +475,82 @@ evidence:
         - qr632K778Cc:00027
         - qr632K778Cc:00028
         - qr632K778Cc:00029
+  - id: 6-ZAaH5-oR0-concept-racket-angle-control-against-topspin-reviewed
+    evidence_type: explanation
+    excerpt: Close the racket face when receiving a topspin ball so the ball is pressed down instead of lifted out.
+    reason: The speaker instructs the player to keep the racket face closed and press down the arc of a topspin ball, especially when the incoming ball is fast.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 6-ZAaH5-oR0
+      start_ms: 184766
+      end_ms: 205166
+      url: https://www.youtube.com/watch?v=6-ZAaH5-oR0&t=184s
+      segment_ids:
+        - 6-ZAaH5-oR0:00040
+        - 6-ZAaH5-oR0:00041
+        - 6-ZAaH5-oR0:00042
+  - id: 2LkVpDM69vo-concept-read-spin-from-racket-angle-reviewed
+    evidence_type: explanation
+    excerpt: In serve receive, judge the incoming spin from the opponent's racket face and match your racket angle accordingly.
+    reason: The speaker explicitly says to read the opponent's racket angle and mirror it, with different angle matches for flat, open, and vertical faces.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 2LkVpDM69vo
+      start_ms: 2700
+      end_ms: 26400
+      url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=2s
+      segment_ids:
+        - 2LkVpDM69vo:00001
+        - 2LkVpDM69vo:00002
+        - 2LkVpDM69vo:00003
+        - 2LkVpDM69vo:00004
+  - id: 2LkVpDM69vo-concept-mirror-racket-angle-on-receive-reviewed
+    evidence_type: explanation
+    excerpt: Return with a racket angle similar to the opponent's incoming racket angle to handle the serve more safely.
+    reason: The instructions are directly about mirroring the opponent's angle and matching flat or open faces with the same shape.
+    confidence: 0.91
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 2LkVpDM69vo
+      start_ms: 8000
+      end_ms: 26400
+      url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=8s
+      segment_ids:
+        - 2LkVpDM69vo:00002
+        - 2LkVpDM69vo:00003
+        - 2LkVpDM69vo:00004
+  - id: geGebDni2TU-concept-racket-angle-control-against-spin-in-rallies-reviewed
+    evidence_type: explanation
+    excerpt: When the incoming ball carries spin, the racket angle must be closed more than on a flat ball to avoid errors and keep the ball on the table.
+    reason: The speaker contrasts flat balls with spinny balls and repeatedly says the racket must be closed against spin, on both forehand and backhand.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: geGebDni2TU
+      start_ms: 476800
+      end_ms: 506500
+      url: https://www.youtube.com/watch?v=geGebDni2TU&t=476s
+      segment_ids:
+        - geGebDni2TU:00102
+        - geGebDni2TU:00105
+        - geGebDni2TU:00106
+  - id: tFRfcMo8Stw-concept-racket-angle-control-against-topspin-reviewed
+    evidence_type: explanation
+    excerpt: Adjusting racket face angle according to incoming topspin so the ball can be controlled rather than launched long or flat.
+    reason: The speaker says seeing the ball means the racket angle is set for a flat hit, and that the angle must be adjusted based on incoming spin and desired impact.
+    confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: tFRfcMo8Stw
+      start_ms: 103133
+      end_ms: 111733
+      url: https://www.youtube.com/watch?v=tFRfcMo8Stw&t=103s
+      segment_ids:
+        - tFRfcMo8Stw:00017

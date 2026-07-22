@@ -393,6 +393,24 @@ evidence:
         - sBF131BmxwM:00121
         - sBF131BmxwM:00122
         - sBF131BmxwM:00123
+  - id: tFXmtu4Egw8-concept-loop-trajectory-adapts-to-spin-reviewed
+    evidence_type: explanation
+    excerpt: Change the loop trajectory based on how spinny the ball is, driving more upward for heavy spin and more forward for a power loop.
+    reason: The speaker contrasts a high loop against heavy backspin with a power loop, explaining that spinny balls need more upward energy while less spinny balls should be driven more forward.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: tFXmtu4Egw8
+      start_ms: 588966
+      end_ms: 617033
+      url: https://www.youtube.com/watch?v=tFXmtu4Egw8&t=588s
+      segment_ids:
+        - tFXmtu4Egw8:00096
+        - tFXmtu4Egw8:00097
+        - tFXmtu4Egw8:00098
+        - tFXmtu4Egw8:00099
+        - tFXmtu4Egw8:00100
 relations:
   - relation_type: variation_of
     target_concept_id: concept-forehand-loop

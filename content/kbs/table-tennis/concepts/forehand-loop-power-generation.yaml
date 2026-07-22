@@ -998,6 +998,21 @@ evidence:
         - 3EtitCzSYqY:00082
         - 3EtitCzSYqY:00084
         - 3EtitCzSYqY:00085
+  - id: pFKneacfGiY-concept-forehand-loop-power-generation-reviewed
+    evidence_type: explanation
+    excerpt: Generating forehand loop power through coordinated body rotation, rather than arm-only swinging.
+    reason: The speaker explicitly frames the video around a powerful forehand and says the power comes from body-led swing plus core and hip rotation.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: pFKneacfGiY
+      start_ms: 9066
+      end_ms: 21766
+      url: https://www.youtube.com/watch?v=pFKneacfGiY&t=9s
+      segment_ids:
+        - pFKneacfGiY:00001
+        - pFKneacfGiY:00002
 relations:
   - relation_type: part_of
     target_concept_id: concept-forehand-loop

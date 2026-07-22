@@ -14,9 +14,10 @@ evidence_summary: >-
   forcing the ball to the backhand against the spin. Aiming toward the center line or middle for
   controlled, low returns against unclear-spin serves. Recovery toward the middle and straddling
   the center line lets an adult cover the whole table, which is a middle-oriented defensive
-  principle. Together, these principles show how the topic is applied in practice while preserving
-  the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:0ba4db8bb5e3dd1e5ca248d1e60bb5a3beaf62d5e7f57c7cf9eb06b7577a77e2"
+  principle. A left-facing paddle angle and using the opponent's spin to guide the return.
+  Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:59dba3fc34cf7e8962c5ae60d47772f7cbc93568c668babf02cb982e4efb077b"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -118,3 +119,19 @@ evidence:
       segment_ids:
         - rR9HWla28Sc:00025
         - rR9HWla28Sc:00026
+  - id: _U8F62ukqK4-concept-sidespin-receive-angle-left-reviewed
+    evidence_type: explanation
+    excerpt: Against left sidespin, angle the paddle slightly left and let the incoming spin help return the ball.
+    reason: The speaker recommends a left-facing paddle angle and using the opponent's spin to guide the return.
+    confidence: 0.86
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: _U8F62ukqK4
+      start_ms: 150566
+      end_ms: 176566
+      url: https://www.youtube.com/watch?v=_U8F62ukqK4&t=150s
+      segment_ids:
+        - _U8F62ukqK4:00028
+        - _U8F62ukqK4:00029
+        - _U8F62ukqK4:00030

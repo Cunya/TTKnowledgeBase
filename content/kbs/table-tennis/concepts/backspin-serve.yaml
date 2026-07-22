@@ -8,15 +8,17 @@ short_definition: A serve whose main objective is to generate spin, especially b
 evidence_summary: >-
   Backspin serve brings together several connected ideas. The key goal of a backspin serve as
   making the ball spin. The preparation as side spin racket shape, then adjusting racket angle and
-  applying downward pressure for sidespin or underspin. Serving underspin and facing a backspin
-  ball from the opponent. Underspin serve technique and how the ball should behave with underspin.
-  A fast, heavy backspin serve and the lesson is about handling it. Out the full serve-follow-up
-  pattern and distinguishes the low, spinny loop from a high loop or power loop. Directly to heavy
-  backspin, low-spin or no-spin serves, and half-spin/no-spin as setup choices in the
-  serve-and-attack context. Backspin serves and classifies them into heavy, medium, and light spin
-  levels. Additional points reinforce the same theme. Together, these principles show how the
-  topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:0dc8a2a8c764c952e47f80b91c6c0d3a31630e89fd6a6b0e7ed58c50b23a55c0"
+  applying downward pressure for sidespin or underspin. To prepare like a backspin serve and to
+  set up like a normal backspin serve before changing at the last moment. Backspin is named
+  explicitly, contrasted with topspin, and discussed as a serve type with characteristic
+  appearance and force. Serving sidespin-backspin and making a topspin serve look like a backspin
+  serve. To backspin, says the racket must be higher than the ball, and brushing downward from
+  above the ball to make it spin. Spin comes from brushing the bottom of the ball and side or back
+  brushing leads to weak spin. Backspin by a low first bounce, high arc over the net, and a
+  downward brushing motion. Additional points reinforce the same theme. Together, these principles
+  show how the topic is applied in practice while preserving the relevant distinctions and
+  constraints.
+evidence_summary_source_hash: "sha256:cbd0df750b548074a6275dea1354c75f12128837dfd8410b79879a26883eca24"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -400,3 +402,34 @@ evidence:
       url: https://www.youtube.com/watch?v=4IHxQUdSvio&t=174s
       segment_ids:
         - 4IHxQUdSvio:00039
+  - id: hw8RsLGOARs-concept-backspin-serve-reviewed
+    evidence_type: definition
+    excerpt: A serve characterized by downward cutting or wrist-and-finger action that produces backspin, with heavier spin coming from faster wrist and finger acceleration through contact.
+    reason: The speaker identifies slow wrist-and-finger motion or a plain downward chop as still creating backspin, with varying spin levels.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: hw8RsLGOARs
+      start_ms: 13433
+      end_ms: 35100
+      url: https://www.youtube.com/watch?v=hw8RsLGOARs&t=13s
+      segment_ids:
+        - hw8RsLGOARs:00002
+        - hw8RsLGOARs:00003
+        - hw8RsLGOARs:00005
+  - id: 2_kzpEUImHk-concept-backspin-serve-reviewed
+    evidence_type: definition
+    excerpt: A serve whose bounce stays low or dies after the bounce, often with downward forearm motion and a low trajectory over the net.
+    reason: The transcript repeatedly defines backspin by a low first bounce, high arc over the net, and a downward brushing motion.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 2_kzpEUImHk
+      start_ms: 111100
+      end_ms: 139833
+      url: https://www.youtube.com/watch?v=2_kzpEUImHk&t=111s
+      segment_ids:
+        - 2_kzpEUImHk:00024
+        - 2_kzpEUImHk:00028

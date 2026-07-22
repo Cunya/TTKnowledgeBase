@@ -699,6 +699,22 @@ evidence:
       segment_ids:
         - jvt-6VNmBzs:00003
         - jvt-6VNmBzs:00008
+  - id: fYJgxN1x7QM-concept-weight-transfer-through-stroke-reviewed
+    evidence_type: explanation
+    excerpt: Maintaining and transferring body weight forward through the stroke so the next ball can be attacked without falling back.
+    reason: The speaker says shots go long because weight is on the heels, then demonstrates keeping the center of gravity forward after the loop.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: fYJgxN1x7QM
+      start_ms: 779566
+      end_ms: 806300
+      url: https://www.youtube.com/watch?v=fYJgxN1x7QM&t=779s
+      segment_ids:
+        - fYJgxN1x7QM:00172
+        - fYJgxN1x7QM:00174
+        - fYJgxN1x7QM:00177
 relations:
   - relation_type: used_with
     target_concept_id: concept-loaded-legs

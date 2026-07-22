@@ -9,18 +9,19 @@ short_definition: Create spin with finger and wrist friction while the forearm s
 evidence_summary: >-
   Generate spin with fingers, wrist, and forearm brings together several connected ideas. Friction
   to the fingers and wrist and acceleration to the forearm, then repeats that this creates strong
-  spin and control. Fingers are especially important, that high-level players use fingers to
-  control final friction, and that without finger action the loop is empty. Wrist flick and finger
-  friction create the serve spin, and to use fingers and wrists rather than the arm. Finger snap,
-  relaxed grip, and rapid acceleration at contact to massive spin. The loop drive is powered by
-  specific fingers and that gripping should only happen at the end of the follow-through. Fingers
-  start the spin, the arm/body supply power, and the wrist should not be the main driver of spin
-  production. Finger pressure, thumb-index coordination, and forearm motion generate the push's
-  power and spin. A useful contrast is between full-body action and a contact-focused finger snap
-  and says the force comes from friction, not bigger arm motion. Additional points reinforce the
-  same theme. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:51068fa95386c2a8d679809d06effc0dcd1647e0f514095689ccd4ebff7193f8"
+  spin and control. Spin comes from relaxed wrist motion, then wrist, forearm, and paddle
+  rotation, with the racket head creating friction through contact. Finger snap, relaxed grip, and
+  rapid acceleration at contact to massive spin. A useful contrast is between no finger/wrist
+  action and adding finger and wrist action, says to use fingers at contact, and describes a crisp
+  snap to create arc and lift. They say friction is being generated with the arm and should
+  instead come from fingers and wrist. A useful contrast is between full-body action and a
+  contact-focused finger snap and says the force comes from friction, not bigger arm motion.
+  Finger and wrist action is small, the forearm adds power, and the upper arm, forearm, fingers,
+  and wrist must cooperate. Finger power as a key spin , says fingers increase contact speed,
+  demonstrates wrist-only versus finger-driven looping, and adding forearm and body for greater
+  quality. Additional points reinforce the same theme. Together, these principles show how the
+  topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:a974f1d831d73e2ad61e81527b14b409d942ed0b58a464cb800121aa31a32778"
 evidence_summary_generator: "deterministic"
 concept_type: technique
 facets:
@@ -358,3 +359,87 @@ evidence:
         - LWx10iPhjxU:00120
         - LWx10iPhjxU:00121
         - LWx10iPhjxU:00125
+  - id: CW2rvujI5hM-concept-subtle-finger-driven-contact-in-hook-serve-reviewed
+    evidence_type: explanation
+    excerpt: A very small finger action at contact that differentiates topspin from backspin while keeping the serve hard to read.
+    reason: The coach says the motion at contact is tiny, the finger action is subtle, and the difference between topspin and backspin is only a small lift or drop.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: CW2rvujI5hM
+      start_ms: 598133
+      end_ms: 616366
+      url: https://www.youtube.com/watch?v=CW2rvujI5hM&t=598s
+      segment_ids:
+        - CW2rvujI5hM:00098
+        - CW2rvujI5hM:00099
+        - CW2rvujI5hM:00100
+  - id: iDtbFPNdNBc-concept-generate-spin-with-fingers-wrist-and-forearm-reviewed
+    evidence_type: definition
+    excerpt: Using fingers and wrist for friction while the forearm supplies acceleration, with all arm segments working together.
+    reason: The speaker explains that finger and wrist action is small, the forearm adds power, and the upper arm, forearm, fingers, and wrist must cooperate.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: iDtbFPNdNBc
+      start_ms: 504166
+      end_ms: 533300
+      url: https://www.youtube.com/watch?v=iDtbFPNdNBc&t=504s
+      segment_ids:
+        - iDtbFPNdNBc:00099
+        - iDtbFPNdNBc:00100
+        - iDtbFPNdNBc:00102
+        - iDtbFPNdNBc:00103
+        - iDtbFPNdNBc:00104
+        - iDtbFPNdNBc:00105
+  - id: Gd_NwMPeTJk-concept-finger-wrist-serve-power-reviewed
+    evidence_type: definition
+    excerpt: Short serves should be powered primarily by the fingers and wrist rather than the arm.
+    reason: The transcript states the short serve is executed with fingers and wrist, not the upper arm or forearm.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: Gd_NwMPeTJk
+      start_ms: 42966
+      end_ms: 64466
+      url: https://www.youtube.com/watch?v=Gd_NwMPeTJk&t=42s
+      segment_ids:
+        - Gd_NwMPeTJk:00009
+        - Gd_NwMPeTJk:00010
+        - Gd_NwMPeTJk:00012
+  - id: _f9fVMm2_Gs-cand-8-reviewed
+    evidence_type: explanation
+    excerpt: Use the fingers and wrist to shape the arc and contact, while the forearm and hips deliver power.
+    reason: The speaker says he adjusts the ratio using fingers and wrist, then says the forearm and hips deliver power, and that fingers and wrist add only a little brush on less-spin balls.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: _f9fVMm2_Gs
+      start_ms: 609100
+      end_ms: 627400
+      url: https://www.youtube.com/watch?v=_f9fVMm2_Gs&t=609s
+      segment_ids:
+        - _f9fVMm2_Gs:00094
+        - _f9fVMm2_Gs:00095
+        - _f9fVMm2_Gs:00096
+        - _f9fVMm2_Gs:00097
+  - id: Xj55m2HY2YY-concept-generate-spin-with-fingers-wrist-and-forearm-reviewed
+    evidence_type: definition
+    excerpt: Use finger power as the primary source of contact-speed and add wrist, forearm, and body in increasing amounts to raise shot quality and spin.
+    reason: The speaker identifies finger power as a key spin source, says fingers increase contact speed, demonstrates wrist-only versus finger-driven looping, and describes adding forearm and body for greater quality.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Xj55m2HY2YY
+      start_ms: 493933
+      end_ms: 523300
+      url: https://www.youtube.com/watch?v=Xj55m2HY2YY&t=493s
+      segment_ids:
+        - Xj55m2HY2YY:00101
+        - Xj55m2HY2YY:00103
+        - Xj55m2HY2YY:00105

@@ -1129,6 +1129,39 @@ evidence:
       segment_ids:
         - pQcxGOu4wEE:00052
         - pQcxGOu4wEE:00058
+  - id: I3_-LFqMWgA-concept-brush-around-the-ball-reviewed
+    evidence_type: explanation
+    excerpt: Generate topspin by curving the racket path around the ball instead of hitting through it flat.
+    reason: The speaker says misses come from hitting flat, not brushing properly, and explicitly describes the correct motion as outside-in and wrapping inward around the ball.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: I3_-LFqMWgA
+      start_ms: 30033
+      end_ms: 49333
+      url: https://www.youtube.com/watch?v=I3_-LFqMWgA&t=30s
+      segment_ids:
+        - I3_-LFqMWgA:00005
+        - I3_-LFqMWgA:00006
+        - I3_-LFqMWgA:00007
+        - I3_-LFqMWgA:00008
+  - id: M8fzQvShrx8-concept-brush-around-the-ball-reviewed
+    evidence_type: explanation
+    excerpt: Creating an arcing brushing motion around the ball rather than driving straight through it, to generate spin and better contact.
+    reason: The speaker contrasts straight-through hitting with the brushing arc needed for spin and later describes the feeling of 'wrapping' the ball.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: M8fzQvShrx8
+      start_ms: 580266
+      end_ms: 608766
+      url: https://www.youtube.com/watch?v=M8fzQvShrx8&t=580s
+      segment_ids:
+        - M8fzQvShrx8:00109
+        - M8fzQvShrx8:00113
+        - M8fzQvShrx8:00114
 relations:
   - relation_type: part_of
     target_concept_id: concept-forehand-loop-swing-path

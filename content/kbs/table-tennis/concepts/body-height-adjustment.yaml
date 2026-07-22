@@ -1343,6 +1343,35 @@ evidence:
         - KEOmLdUTC-g:00146
         - KEOmLdUTC-g:00148
         - KEOmLdUTC-g:00150
+  - id: F0HvzL1Wk3w-concept-backswing-below-the-ball-reviewed
+    evidence_type: definition
+    excerpt: For backhand looping against backspin, the backswing should start below the ball to create an arc and lift the ball effectively.
+    reason: The speaker states this as a key principle and repeats that the backswing must be lower than the ball.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: F0HvzL1Wk3w
+      start_ms: 28866
+      end_ms: 36700
+      url: https://www.youtube.com/watch?v=F0HvzL1Wk3w&t=28s
+      segment_ids:
+        - F0HvzL1Wk3w:00005
+  - id: fILPmFV3eyQ-concept-body-height-adjustment-reviewed
+    evidence_type: definition
+    excerpt: Lowering the body or shoulder to match the ball height, especially for contact near the top of the bounce.
+    reason: The speaker explicitly recommends dropping the shoulder to contact the ball at the ideal height and says this is necessary to get lower to backspin balls.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: fILPmFV3eyQ
+      start_ms: 694633
+      end_ms: 711733
+      url: https://www.youtube.com/watch?v=fILPmFV3eyQ&t=694s
+      segment_ids:
+        - fILPmFV3eyQ:00142
+        - fILPmFV3eyQ:00145
 relations:
   - relation_type: used_with
     target_concept_id: concept-contact-point

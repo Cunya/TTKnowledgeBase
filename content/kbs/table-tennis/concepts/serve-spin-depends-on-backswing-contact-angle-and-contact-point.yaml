@@ -12,10 +12,13 @@ evidence_summary: >-
   backspin, and neutral spin outcomes. Poor serve spin in terms of excessive brush length,
   too-slow brushing, and failing to brush at contact with the right angle. Explains backswing
   limits, racket-face angle, and tip orientation as determinants of serve placement. Serve type to
-  backswing height, contact timing, and racket-face angle consistency. Together, these principles
-  show how the topic is applied in practice while preserving the relevant distinctions and
-  constraints.
-evidence_summary_source_hash: "sha256:f3c2c3251589e3ba8edad9af1b2b9088da99219001a46aaa2e0c5e87ebce74e6"
+  backswing height, contact timing, and racket-face angle consistency. Successful flicking to a
+  full backswing, correct contact path, and brushing with a closed face. Serve quality changes
+  with racket angle, racket-head rotation, and post-contact rotation, which directly describes
+  spin generation mechanics. Many players struggle because they cannot maintain the correct racket
+  angle and uses a contact-point alignment drill to check it. Together, these principles show how
+  the topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:f6e682611a97ba3ee72f88c52ffbe7e60683662e2149bb0592175d26b259614e"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -119,3 +122,35 @@ evidence:
         - qfB1tscK4xk:00135
         - qfB1tscK4xk:00137
         - qfB1tscK4xk:00140
+  - id: iUwrE230SAY-concept-serve-spin-depends-on-backswing-contact-angle-and-contact-point-reviewed
+    evidence_type: explanation
+    excerpt: Serve spin is determined by the backswing, the contact angle at impact, and the exact contact point on the ball.
+    reason: The speaker says serve quality changes with racket angle, racket-head rotation, and post-contact rotation, which directly describes spin generation mechanics.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: iUwrE230SAY
+      start_ms: 603366
+      end_ms: 631300
+      url: https://www.youtube.com/watch?v=iUwrE230SAY&t=603s
+      segment_ids:
+        - iUwrE230SAY:00128
+        - iUwrE230SAY:00129
+        - iUwrE230SAY:00133
+  - id: KNhwuuZ6Vpo-concept-serve-spin-depends-on-backswing-contact-angle-and-contact-point-reviewed
+    evidence_type: explanation
+    excerpt: Serve spin is determined by the backswing shape, racket-face angle at contact, and where the racket meets the ball.
+    reason: The speaker says many players struggle because they cannot maintain the correct racket angle and uses a contact-point alignment drill to check it.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: KNhwuuZ6Vpo
+      start_ms: 614966
+      end_ms: 638900
+      url: https://www.youtube.com/watch?v=KNhwuuZ6Vpo&t=614s
+      segment_ids:
+        - KNhwuuZ6Vpo:00123
+        - KNhwuuZ6Vpo:00124
+        - KNhwuuZ6Vpo:00125

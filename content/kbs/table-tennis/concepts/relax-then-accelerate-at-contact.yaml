@@ -1684,6 +1684,53 @@ evidence:
       url: https://www.youtube.com/watch?v=D02EFJijJiU&t=310s
       segment_ids:
         - D02EFJijJiU:00070
+  - id: ZyicUbuebjU-concept-relax-then-accelerate-at-contact-reviewed
+    evidence_type: explanation
+    excerpt: Stay relaxed during preparation, then tense and accelerate sharply at the bounce/contact moment to create speed and power.
+    reason: The speaker explicitly instructs players to stay loose first, then tense up and accelerate when the ball bounces on their side of the table.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: ZyicUbuebjU
+      start_ms: 463366
+      end_ms: 493300
+      url: https://www.youtube.com/watch?v=ZyicUbuebjU&t=463s
+      segment_ids:
+        - ZyicUbuebjU:00101
+        - ZyicUbuebjU:00105
+  - id: pFKneacfGiY-concept-relax-then-accelerate-at-contact-reviewed
+    evidence_type: explanation
+    excerpt: Staying relaxed in the lead-in and focusing power at the end of the stroke/contact rather than tensing too early.
+    reason: The speaker emphasizes that power should be focused at the end of the stroke rather than released all at once.
+    confidence: 0.91
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: pFKneacfGiY
+      start_ms: 735733
+      end_ms: 750100
+      url: https://www.youtube.com/watch?v=pFKneacfGiY&t=735s
+      segment_ids:
+        - pFKneacfGiY:00141
+        - pFKneacfGiY:00142
+  - id: Ay4vk9XXAfM-concept-relax-then-accelerate-at-contact-reviewed
+    evidence_type: definition
+    excerpt: Generate spin by staying loose through the backswing and approach, then accelerating sharply at contact and following through.
+    reason: The speaker explicitly defines the principle as relaxing until contact, then accelerating sharply and following through.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: Ay4vk9XXAfM
+      start_ms: 8400
+      end_ms: 31433
+      url: https://www.youtube.com/watch?v=Ay4vk9XXAfM&t=8s
+      segment_ids:
+        - Ay4vk9XXAfM:00002
+        - Ay4vk9XXAfM:00004
+        - Ay4vk9XXAfM:00005
+        - Ay4vk9XXAfM:00006
 relations:
   - relation_type: used_with
     target_concept_id: concept-forehand-loop-timing

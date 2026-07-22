@@ -2706,6 +2706,36 @@ evidence:
       segment_ids:
         - HLmkP4I2jqM:00100
         - HLmkP4I2jqM:00101
+  - id: F0HvzL1Wk3w-concept-create-arc-in-backhand-loop-reviewed
+    evidence_type: explanation
+    excerpt: A looping motion that rises around the ball rather than striking straight through it, producing a higher-quality, spinny backhand loop.
+    reason: The speaker says the goal is to create an arc and explicitly says to consciously intend to create one.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: F0HvzL1Wk3w
+      start_ms: 36700
+      end_ms: 47100
+      url: https://www.youtube.com/watch?v=F0HvzL1Wk3w&t=36s
+      segment_ids:
+        - F0HvzL1Wk3w:00006
+  - id: fAEn9wkWGd8-concept-forehand-loop-swing-path-reviewed
+    evidence_type: explanation
+    excerpt: A forehand looping pattern where the swing path and racket face change depending on whether the shot is cross-court or down-the-line, including wrapping around the ball or driving through it.
+    reason: The speaker says the racket angle preparation differs, cross-court uses a wrap-around motion, and down-the-line uses a slightly open face with a drive-through contact.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: fAEn9wkWGd8
+      start_ms: 50300
+      end_ms: 77300
+      url: https://www.youtube.com/watch?v=fAEn9wkWGd8&t=50s
+      segment_ids:
+        - fAEn9wkWGd8:00008
+        - fAEn9wkWGd8:00009
+        - fAEn9wkWGd8:00010
 relations:
   - relation_type: part_of
     target_concept_id: concept-forehand-loop

@@ -10,16 +10,16 @@ evidence_summary: >-
   Backspin receive timing brings together several connected ideas. To hit backspin in the early
   descending phase and to wait until that phase for pushing. Heavy spin gives a very small
   reaction window, so stroke execution must be condensed and ordinary timing will fail. Not to
-  rush, to let the ball come to you, and to keep position steady while waiting to spot the ball.
-  Backspin serve receive is the key case and rushing leaves the racket head pointed up at contact.
-  Incorrect contact timing is identified as brushing too late or too early, which supports the
-  receive-timing concept even though the exact phrase is not used here. Not to rush, to slow the
-  rhythm, and to wait a fraction longer for a safer return on these balls. Waiting for slow balls
-  to get close before starting the stroke and against rushing forward to hit on the rise.
-  Contacting the heavy backspin ball just after the peak and waiting for the falling phase.
-  Additional points reinforce the same theme. Together, these principles show how the topic is
-  applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:74a0f78a59a84aeba8e811d81a77096eee06ba6fea787d31e8ea18a6d3e57141"
+  rush and to let the ball drop / wait for the arc before generating force. About peak, rise, or
+  falling contact and answers that the peak is easiest for lifting the ball, warning not to rush
+  on the rise. Not to rush, to let the ball cross the net, and to time the backswing to the serve
+  speed. Backspin receive requires generating your own forward force and that poor timing against
+  spinny balls leads to errors. To stand further back, wait for the descending phase, and notes
+  that spin is heaviest right after the bounce. Waiting, pausing, and making contact just after
+  the peak in the early descending phase. Additional points reinforce the same theme. Together,
+  these principles show how the topic is applied in practice while preserving the relevant
+  distinctions and constraints.
+evidence_summary_source_hash: "sha256:aa2bf0176c467d167769f1b709fe33f6b4acf8b848e720e8d1dde669cee343c6"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -642,3 +642,50 @@ evidence:
         - D596gPtN634:00015
         - D596gPtN634:00016
         - D596gPtN634:00019
+  - id: iDtbFPNdNBc-concept-backspin-receive-timing-reviewed
+    evidence_type: definition
+    excerpt: For backspin, wait for the ball to drop from its peak before initiating the swing or loop.
+    reason: The transcript gives direct instruction to let the ball bounce and swing as it starts to drop, specifically for backspin.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: iDtbFPNdNBc
+      start_ms: 157033
+      end_ms: 163766
+      url: https://www.youtube.com/watch?v=iDtbFPNdNBc&t=157s
+      segment_ids:
+        - iDtbFPNdNBc:00034
+        - iDtbFPNdNBc:00035
+  - id: hw8RsLGOARs-concept-backspin-receive-timing-reviewed
+    evidence_type: explanation
+    excerpt: For backspin or sidespin-backspin serves, wait for the ball to descend or finish curving before contacting it, unless attacking a topspin-biased serve early.
+    reason: The transcript explicitly says backspin should be contacted at the start of descent or after the curve finishes, while sidespin-backspin should be waited on longer.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: hw8RsLGOARs
+      start_ms: 166566
+      end_ms: 179733
+      url: https://www.youtube.com/watch?v=hw8RsLGOARs&t=166s
+      segment_ids:
+        - hw8RsLGOARs:00030
+        - hw8RsLGOARs:00031
+        - hw8RsLGOARs:00032
+  - id: U6iP2eWxCDA-concept-wait-for-the-ball-and-contact-on-the-descending-phase-reviewed
+    evidence_type: explanation
+    excerpt: When receiving long-pips returns, the player should wait for the ball to drop and contact it in the early descending phase after the peak of the bounce.
+    reason: The speaker explicitly recommends waiting, pausing, and making contact just after the peak in the early descending phase.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: U6iP2eWxCDA
+      start_ms: 153533
+      end_ms: 178600
+      url: https://www.youtube.com/watch?v=U6iP2eWxCDA&t=153s
+      segment_ids:
+        - U6iP2eWxCDA:00028
+        - U6iP2eWxCDA:00030
+        - U6iP2eWxCDA:00031

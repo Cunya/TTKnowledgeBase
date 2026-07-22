@@ -13,15 +13,14 @@ evidence_summary: >-
   Hitting before the peak causes a push-like motion with no arc, and the optimal contact point for
   topspin is the peak of the bounce. The weakest spin is on the rise or early descent and that the
   peak of the bounce is most potent. Explains that 'at the peak' means start the swing there, and
-  distinguishes peak, falling, and rising contact timing. A useful contrast is between hitting at
-  the peak and hitting on the rise and frames timing as the key variable. The ball should still be
-  rising or at its peak as it crosses the net and that in pressure situations he focuses on
-  securing the arc first. Not to swing the instant the ball touches the table and instead start
-  the forward swing at the peak or early descent, including against backspin. Rising phase, peak,
-  and falling phase, and the ideal topspin contact is at the peak of the bounce. Additional points
-  reinforce the same theme. Together, these principles show how the topic is applied in practice
-  while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:ee9c2c8a63271cbccb7e872470adbba2fcf5c44f74072ef05365e81b33a7a299"
+  distinguishes peak, falling, and rising contact timing. To stand back, let the ball drop, loop
+  as it starts to fall, and move the contact point to the falling phase. On-the-rise contact, peak
+  contact, and falling-ball contact, assigning different tactical uses to each phase. To time the
+  ball on the rise and waiting for the peak increases errors. Contacting backspin just after the
+  peak and it with trying to hit the spinniest point. Additional points reinforce the same theme.
+  Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:efd7914b03f27b6ade2c6b6e5bab295da4323ab3d3b78cb0f2d8f64425440b37"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -517,3 +516,34 @@ evidence:
         - oFlDgbWYjyk:00078
         - oFlDgbWYjyk:00081
         - oFlDgbWYjyk:00082
+  - id: hKQbi0Kk_Gs-concept-aggressive-pacing-and-timing-on-the-rise-reviewed
+    evidence_type: definition
+    excerpt: A timing choice where the ball is contacted on the rise or at the top of the bounce to support a compact, speed-based attack.
+    reason: The speaker says the aggressive looping style requires taking the ball on the rise or at the peak of the bounce, and not waiting for it to drop.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: hKQbi0Kk_Gs
+      start_ms: 487633
+      end_ms: 503900
+      url: https://www.youtube.com/watch?v=hKQbi0Kk_Gs&t=487s
+      segment_ids:
+        - hKQbi0Kk_Gs:00101
+        - hKQbi0Kk_Gs:00104
+  - id: yZKBUBBBSEw-concept-contact-timing-after-bounce-peak-for-amateurs-reviewed
+    evidence_type: definition
+    excerpt: For amateur players, a backspin ball should be contacted just after the top of the bounce rather than at the spinniest point.
+    reason: The speaker directly recommends contacting backspin just after the peak and contrasts it with trying to hit the spinniest point.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: yZKBUBBBSEw
+      start_ms: 503933
+      end_ms: 526800
+      url: https://www.youtube.com/watch?v=yZKBUBBBSEw&t=503s
+      segment_ids:
+        - yZKBUBBBSEw:00086
+        - yZKBUBBBSEw:00087
+        - yZKBUBBBSEw:00089

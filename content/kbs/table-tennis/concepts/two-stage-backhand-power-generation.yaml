@@ -8,9 +8,10 @@ short_definition: 'Generating backhand power in two segments: first lowering and
 evidence_summary: >-
   Two-stage backhand power generation brings together several connected ideas. Lowering the
   finish, dropping the center of gravity, separating upper arm and forearm, and then using forearm
-  whip as a two-stage process. Together, these principles show how the topic is applied in
-  practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:f513cd0ec2c8385f1f46845c75c629eae44b25877a51656dd37b8be5e61f6d48"
+  whip as a two-stage process. The motion as 'one, then two' and a second acceleration creates
+  power. Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:6777e0a1ec4b0b7d4f930f21fa53bcdfde99db71945bfb8b80fc842ca0567b41"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -42,3 +43,18 @@ evidence:
       url: https://www.youtube.com/watch?v=yekYhw94rVI&t=485s
       segment_ids:
         - yekYhw94rVI:00156
+  - id: PaymojMhuzU-concept-two-stage-backhand-power-generation-reviewed
+    evidence_type: explanation
+    excerpt: Generating backhand power by splitting the motion into two sequential acceleration phases rather than one continuous movement.
+    reason: The speaker repeatedly describes the motion as 'one, then two' and says a second acceleration creates power.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: PaymojMhuzU
+      start_ms: 725466
+      end_ms: 747866
+      url: https://www.youtube.com/watch?v=PaymojMhuzU&t=725s
+      segment_ids:
+        - PaymojMhuzU:00136
+        - PaymojMhuzU:00139

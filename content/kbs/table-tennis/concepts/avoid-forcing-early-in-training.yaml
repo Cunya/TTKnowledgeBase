@@ -12,9 +12,12 @@ evidence_summary: >-
   stabilize the action properly. Beginners to slow down and avoid applying too much force while
   completing the motion. Reliable, high-percentage techniques and against dependence on good form.
   To slow the hand down, feel each shot, and not use power in robot practice. Brute force causes
-  loss of control and the serve should not rely on it. Together, these principles show how the
-  topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:2fe32846030876946e3e645bf5f2bbdf3aa8b736877326fe5528367a42bc7273"
+  loss of control and the serve should not rely on it. If the body is not ready, do not force the
+  power, and that power should only be generated once the body is properly set. Tensing up and
+  forcing the shot is painful and ineffective for amateur players, and recommends fluid power
+  instead. Together, these principles show how the topic is applied in practice while preserving
+  the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:a3c4f161b9519c1bbabcf226def851b1f8a3e77fb6b254c87dfba474237f3c0c"
 evidence_summary_generator: "deterministic"
 concept_type: practice
 facets:
@@ -135,3 +138,34 @@ evidence:
         - 2Qv6Oa6mm1M:00144
         - 2Qv6Oa6mm1M:00147
         - 2Qv6Oa6mm1M:00148
+  - id: fYJgxN1x7QM-concept-avoid-forcing-early-in-training-reviewed
+    evidence_type: correction
+    excerpt: Do not try to force power when the body is not set or when the incoming ball already provides pace.
+    reason: The speaker directly says that if the body is not ready, do not force the power, and that power should only be generated once the body is properly set.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: fYJgxN1x7QM
+      start_ms: 908433
+      end_ms: 916766
+      url: https://www.youtube.com/watch?v=fYJgxN1x7QM&t=908s
+      segment_ids:
+        - fYJgxN1x7QM:00200
+        - fYJgxN1x7QM:00201
+  - id: _f9fVMm2_Gs-cand-3-reviewed
+    evidence_type: explanation
+    excerpt: Use fluid, relaxed power instead of tensing up or forcing the stroke, especially for amateur players.
+    reason: The speaker warns that tensing up and forcing the shot is painful and ineffective for amateur players, and recommends fluid power instead.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: _f9fVMm2_Gs
+      start_ms: 57200
+      end_ms: 78900
+      url: https://www.youtube.com/watch?v=_f9fVMm2_Gs&t=57s
+      segment_ids:
+        - _f9fVMm2_Gs:00010
+        - _f9fVMm2_Gs:00011
+        - _f9fVMm2_Gs:00013

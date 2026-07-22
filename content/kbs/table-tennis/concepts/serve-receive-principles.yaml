@@ -668,6 +668,40 @@ evidence:
       segment_ids:
         - p-8pxqMG0kw:00003
         - p-8pxqMG0kw:00004
+  - id: Ejc6KqZDRKs-concept-0010-reviewed
+    evidence_type: definition
+    excerpt: When receiving sidespin, the racket should be angled on the same side as the incoming spin direction to mirror and neutralize it.
+    reason: The speaker states the mirror principle directly and gives left-sidespin/right-sidespin examples.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Ejc6KqZDRKs
+      start_ms: 180400
+      end_ms: 197433
+      url: https://www.youtube.com/watch?v=Ejc6KqZDRKs&t=180s
+      segment_ids:
+        - Ejc6KqZDRKs:00036
+        - Ejc6KqZDRKs:00037
+        - Ejc6KqZDRKs:00038
+        - Ejc6KqZDRKs:00039
+  - id: hw8RsLGOARs-concept-serve-receive-principles-reviewed
+    evidence_type: explanation
+    excerpt: On receive, first cushion or block the ball’s energy and spin with a relaxed hand, then follow through to add quality, friction, flick, loop, or hit.
+    reason: The speaker repeatedly frames receive contact as a block/cushion first, not a hard hit, followed by a second-stage stroke that adds quality.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: hw8RsLGOARs
+      start_ms: 235866
+      end_ms: 261200
+      url: https://www.youtube.com/watch?v=hw8RsLGOARs&t=235s
+      segment_ids:
+        - hw8RsLGOARs:00043
+        - hw8RsLGOARs:00044
+        - hw8RsLGOARs:00045
+        - hw8RsLGOARs:00046
 relations:
   - relation_type: used_with
     target_concept_id: concept-short-vs-long-serve-receive

@@ -12,17 +12,18 @@ short_definition: In forehand attack, the forearm should do the main acceleratio
 evidence_summary: >-
   Forehand attack forearm-driven motion brings together several connected ideas. Forehand attack
   is dominated by the forearm, including acceleration and power generation, and that the forearm
-  completes the remaining movement. To engage the forearm, attack the ball, and generate power
-  forward. The difference is about body rotation and forearm speed, and that the right side drives
-  the arm to align the hitting angle. A forehand attacking grip and to push forward with the
-  fingers, using minimal range to generate friction and spin. Forearm-driven acceleration,
-  especially for close-to-table attacks and blocks. The forearm is the primary driver and the
-  backward-then-forward sequence with a final snap. A useful contrast is between uniform swing
-  speed and a slow-to-fast pattern and calls that change of pace essential for power generation.
-  The wrist is the primary power and that fingers only help transfer energy. Additional points
-  reinforce the same theme. Together, these principles show how the topic is applied in practice
-  while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:58cbc6635860d7210dfacca69bd78964cc47e9a5baf92fd66b7f358d6ff549c0"
+  completes the remaining movement. Forehand attack as opening the forearm to the side, then
+  pushing forward, and later describes pushing the forearm forward. The instructor emphasizes
+  forward force, avoiding sideways force, and hitting the ball forward in forehand topspin. The
+  forearm is used for long balls and power is transferred from the arm with fingers and wrist. The
+  racket head is the key speed and must accelerate after forearm contact. A useful contrast is
+  between uniform swing speed and a slow-to-fast pattern and calls that change of pace essential
+  for power generation. A useful contrast is between a simple forward stop and added whip for
+  power on the forehand. A useful contrast is between active power and borrowing power and says
+  active power uses a slightly larger motion with deliberate force. Additional points reinforce
+  the same theme. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:7438701c79b0980a80958828d729cd5761b0e03f1713d3231d7df3bd61137772"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -477,3 +478,65 @@ evidence:
       segment_ids:
         - Yf_uKs6cZ38:00000
         - Yf_uKs6cZ38:00001
+  - id: hKQbi0Kk_Gs-concept-compact-power-generation-reviewed
+    evidence_type: definition
+    excerpt: A modern attacking style that generates speed with a compact motion, early contact, and a short, explosive stroke instead of a large backswing.
+    reason: The speaker explicitly defines the style as compact and late power generation, with a very compact and explosive stroke and sudden forearm acceleration instead of a long backswing.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: hKQbi0Kk_Gs
+      start_ms: 54000
+      end_ms: 68733
+      url: https://www.youtube.com/watch?v=hKQbi0Kk_Gs&t=54s
+      segment_ids:
+        - hKQbi0Kk_Gs:00010
+        - hKQbi0Kk_Gs:00011
+        - hKQbi0Kk_Gs:00012
+  - id: 01-q1cswVVs-concept-forehand-attack-forearm-driven-motion-reviewed
+    evidence_type: explanation
+    excerpt: The forward motion in the loop starts with the racket head driven by the fingers, then the forearm engages, then the follow-through completes the shot.
+    reason: The speaker repeatedly states that the racket head is initiated first by the fingers, not the wrist or forearm, and that the forearm and follow-through come afterward.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 01-q1cswVVs
+      start_ms: 282500
+      end_ms: 307333
+      url: https://www.youtube.com/watch?v=01-q1cswVVs&t=282s
+      segment_ids:
+        - 01-q1cswVVs:00049
+        - 01-q1cswVVs:00050
+        - 01-q1cswVVs:00051
+        - 01-q1cswVVs:00052
+  - id: U3o7_ad82dk-concept-forehand-attack-forearm-driven-motion-reviewed
+    evidence_type: explanation
+    excerpt: On the forehand, separate upper-arm and forearm action so the forearm can accelerate and create speed in the attack.
+    reason: The speaker explicitly says the upper arm and forearm action must be separable for speed.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: U3o7_ad82dk
+      start_ms: 417233
+      end_ms: 421233
+      url: https://www.youtube.com/watch?v=U3o7_ad82dk&t=417s
+      segment_ids:
+        - U3o7_ad82dk:00076
+  - id: tFRfcMo8Stw-concept-active-power-generation-reviewed
+    evidence_type: definition
+    excerpt: A more forceful stroke mode where the player deliberately applies force and uses a larger motion than when borrowing power.
+    reason: The speaker contrasts active power with borrowing power and says active power uses a slightly larger motion with deliberate force.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: tFRfcMo8Stw
+      start_ms: 0
+      end_ms: 14833
+      url: https://www.youtube.com/watch?v=tFRfcMo8Stw&t=0s
+      segment_ids:
+        - tFRfcMo8Stw:00000
+        - tFRfcMo8Stw:00002

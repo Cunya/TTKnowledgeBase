@@ -9,16 +9,18 @@ aliases:
 short_definition: 'Stroke size should scale with distance from the table: compact close in, fuller at mid-distance, and very large farther away.'
 evidence_summary: >-
   Distance-dependent stroke size brings together several connected ideas. Swing size and body
-  mechanics to distance from the table. Half-long balls should be looped while moving forward to
-  close the distance, and a reasonable range is enough for amateurs. Multiple segments state that
-  distance determines swing size, forearm height, and whether upper arm contribution is needed.
-  Being too close jams the stroke and that looping needs about one meter of distance to allow a
-  proper stroke. A concrete rule: arm's length for deep balls and forearm's length for short or
-  half-long balls. Balls by depth and ties each depth to different spacing requirements. Rushing
-  often comes from standing too close, that players need at least arm's length, and that short
-  balls can be handled by stepping in. Together, these principles show how the topic is applied in
-  practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:8a6bfa60d46a97b64c315542cf06dd53e2618cbbe26538915a788a104b683b42"
+  mechanics to distance from the table. Multiple segments state that distance determines swing
+  size, forearm height, and whether upper arm contribution is needed. Being too close jams the
+  stroke and that looping needs about one meter of distance to allow a proper stroke. Balls by
+  depth and ties each depth to different spacing requirements. Rushing often comes from standing
+  too close, that players need at least arm's length, and that short balls can be handled by
+  stepping in. Standing too close leads to getting jammed and you must maintain distance from the
+  table to receive long serves. Fast balls and close-table situations require compact backswing,
+  while mid- and far-distance situations allow progressively larger swings. About close, medium,
+  or larger spacing, then states that closer spacing supports consistency while more space
+  supports power. Additional points reinforce the same theme. Together, these principles show how
+  the topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:c1e6df55601849efc5159261b5e91a2d354d93306e7a8e5a73b4ded959d1f8f2"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -154,3 +156,83 @@ evidence:
         - oFlDgbWYjyk:00063
         - oFlDgbWYjyk:00066
         - oFlDgbWYjyk:00067
+  - id: ZyicUbuebjU-concept-distance-dependent-stroke-size-reviewed
+    evidence_type: explanation
+    excerpt: Stroke size and contact timing depend on keeping appropriate space from the ball and body; standing or swinging too close jams the stroke and reduces power.
+    reason: The speaker repeatedly says you need proper distance from the ball, gives a forearm's length or one arm's distance, and explains that being too close jams the stroke and prevents power.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: ZyicUbuebjU
+      start_ms: 271700
+      end_ms: 297933
+      url: https://www.youtube.com/watch?v=ZyicUbuebjU&t=271s
+      segment_ids:
+        - ZyicUbuebjU:00059
+        - ZyicUbuebjU:00063
+  - id: Ejc6KqZDRKs-concept-0008-reviewed
+    evidence_type: explanation
+    excerpt: When expecting or defending against long serves, the receiver should maintain more distance from the table to avoid getting jammed.
+    reason: The speaker warns that standing too close leads to getting jammed and says you must maintain distance from the table to receive long serves.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Ejc6KqZDRKs
+      start_ms: 122200
+      end_ms: 140266
+      url: https://www.youtube.com/watch?v=Ejc6KqZDRKs&t=122s
+      segment_ids:
+        - Ejc6KqZDRKs:00024
+        - Ejc6KqZDRKs:00025
+        - Ejc6KqZDRKs:00026
+        - Ejc6KqZDRKs:00027
+  - id: M8fzQvShrx8-concept-distance-dependent-stroke-size-reviewed
+    evidence_type: explanation
+    excerpt: Changing swing size based on table distance, ball speed, and movement demands, with smaller swings when closer or moving more.
+    reason: The speaker says fast balls and close-table situations require compact backswing, while mid- and far-distance situations allow progressively larger swings.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: M8fzQvShrx8
+      start_ms: 383600
+      end_ms: 411533
+      url: https://www.youtube.com/watch?v=M8fzQvShrx8&t=383s
+      segment_ids:
+        - M8fzQvShrx8:00075
+        - M8fzQvShrx8:00076
+        - M8fzQvShrx8:00077
+        - M8fzQvShrx8:00078
+        - M8fzQvShrx8:00079
+  - id: 6aJ-BC4QnTU-concept-distance-dependent-stroke-size-reviewed
+    evidence_type: explanation
+    excerpt: Adjust stroke size and positioning based on how close, deep, or fast the incoming ball is.
+    reason: The speaker contrasts close, short, and deep/long balls and says each requires a different distance and stroke size.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 6aJ-BC4QnTU
+      start_ms: 240766
+      end_ms: 266366
+      url: https://www.youtube.com/watch?v=6aJ-BC4QnTU&t=240s
+      segment_ids:
+        - 6aJ-BC4QnTU:00038
+        - 6aJ-BC4QnTU:00040
+  - id: HWIiN1i0_oM-concept-distance-dependent-stroke-size-reviewed
+    evidence_type: definition
+    excerpt: 'Stroke size and spacing should change with the shot goal: stay closer for control and consistency, and create more space for power.'
+    reason: The speaker explicitly asks about close, medium, or larger spacing, then states that closer spacing supports consistency while more space supports power.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: HWIiN1i0_oM
+      start_ms: 121066
+      end_ms: 138700
+      url: https://www.youtube.com/watch?v=HWIiN1i0_oM&t=121s
+      segment_ids:
+        - HWIiN1i0_oM:00019
+        - HWIiN1i0_oM:00020

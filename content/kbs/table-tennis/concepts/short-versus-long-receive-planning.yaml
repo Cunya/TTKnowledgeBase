@@ -14,9 +14,12 @@ evidence_summary: >-
   short, long, or mixed. Short, half-long, and long balls and the response should change by
   length. Short, half-long, and deep balls and each requires a different positional response.
   Against waiting for the ball and later asks whether you attack after a long serve or a short
-  serve, emphasizing the need for planned responses. Together, these principles show how the topic
-  is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:10510ea7912d1e670d9489fd3c4fd2bb554870a6497f83c25c37ee0a15277959"
+  serve, emphasizing the need for planned responses. To keep the return on the table first, then
+  vary placement, spin, speed, and only later go all out, while also warning that third-ball
+  attacks and service-return loops are different systems that require different spacing and stroke
+  size. Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:693b717d7e9c850279e87512ad44cefdbdc7075f9df2d87e2e29b81f88f10557"
 evidence_summary_generator: "deterministic"
 concept_type: practice
 facets:
@@ -129,3 +132,21 @@ evidence:
       segment_ids:
         - WuWV6MlZQ_Q:00058
         - WuWV6MlZQ_Q:00059
+  - id: PCRCB9FGBPg-concept-short-versus-long-receive-planning-reviewed
+    evidence_type: explanation
+    excerpt: Choose receive actions in advance according to ball length instead of reacting late or using one default response.
+    reason: The transcript says to keep the return on the table first, then vary placement, spin, speed, and only later go all out, while also warning that third-ball attacks and service-return loops are different systems that require different spacing and stroke size.
+    confidence: 0.92
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: PCRCB9FGBPg
+      start_ms: 597366
+      end_ms: 624933
+      url: https://www.youtube.com/watch?v=PCRCB9FGBPg&t=597s
+      segment_ids:
+        - PCRCB9FGBPg:00124
+        - PCRCB9FGBPg:00125
+        - PCRCB9FGBPg:00126
+        - PCRCB9FGBPg:00127
+        - PCRCB9FGBPg:00128

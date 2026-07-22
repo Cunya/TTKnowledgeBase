@@ -11,9 +11,11 @@ evidence_summary: >-
   stepping in, leaning over the table, and the need to be inside the table. Errors are caused by
   positioning, balance, anticipation, and slow footwork rather than the spin itself. Positioning
   and creating space as the first key point, then describes moving in before waiting and striking.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:12690d4699cac6cb0c1f33e697e62e21ab67090c5ffcd1b42b4c7ab4067b4c9e"
+  A large step in, sideways body turn, shoulder orientation, and forward weight shift for the
+  flick. Players must step in far enough, move weight forward, and stay close to the ball for
+  push, flick, or banana flick. Together, these principles show how the topic is applied in
+  practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:84b21091e996a108b0ed189e0a60e0916e9019f247a687d6339752e16166f5d0"
 evidence_summary_generator: "deterministic"
 concept_type: practice
 facets:
@@ -78,3 +80,35 @@ evidence:
       segment_ids:
         - zZ_B1Xg7Pjs:00023
         - zZ_B1Xg7Pjs:00025
+  - id: _GxKApOkTiw-concept-banana-flick-footwork-and-positioning-reviewed
+    evidence_type: definition
+    excerpt: Effective banana flick footwork requires a large committed step into the ball and a sideways body orientation rather than a square stance.
+    reason: The speaker repeatedly instructs a large step in, sideways body turn, shoulder orientation, and forward weight shift for the flick.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: _GxKApOkTiw
+      start_ms: 87266
+      end_ms: 114466
+      url: https://www.youtube.com/watch?v=_GxKApOkTiw&t=87s
+      segment_ids:
+        - _GxKApOkTiw:00019
+        - _GxKApOkTiw:00020
+        - _GxKApOkTiw:00021
+        - _GxKApOkTiw:00022
+  - id: SUIth1DgWbg-concept-banana-flick-footwork-and-positioning-reviewed
+    evidence_type: explanation
+    excerpt: For short or half-long balls, the player must step in close and bring body weight forward over the table before executing the flick.
+    reason: The speaker says players must step in far enough, move weight forward, and stay close to the ball for push, flick, or banana flick.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: SUIth1DgWbg
+      start_ms: 88100
+      end_ms: 108133
+      url: https://www.youtube.com/watch?v=SUIth1DgWbg&t=88s
+      segment_ids:
+        - SUIth1DgWbg:00019
+        - SUIth1DgWbg:00022

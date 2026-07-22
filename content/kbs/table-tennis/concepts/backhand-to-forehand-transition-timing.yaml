@@ -11,10 +11,15 @@ evidence_summary: >-
   movement means a smaller swing, and that in rushed backhand-to-forehand transitions you may need
   to hit as the foot lands. They later discuss moving from forehand back to backhand and the
   body's center of gravity must move across first. The same sequence applies to backhand-forehand
-  transitions: feet land first, then the forehand backswing starts. Together, these principles
-  show how the topic is applied in practice while preserving the relevant distinctions and
-  constraints.
-evidence_summary_source_hash: "sha256:0a05dd3d2ad2e1e478113d0f4a11d112dadb3a0ff9e857a7fdbc63006e8a213b"
+  transitions: feet land first, then the forehand backswing starts. The racket angle must change
+  quickly during the backhand-to-forehand transition and that the hand must adjust while the feet
+  are moving. The backhand-to-forehand move as the problem and later states that all such footwork
+  follows the same principle. Left-then-right movement as the timing mistake and it creates
+  same-arm, same-leg timing on fast balls. Compact backswing control on the side of the body
+  during the backhand-to-forehand transition and names getting jammed as the failure mode.
+  Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:d59a4c1ec3c101f2554e733146c8f816d8d2c190a49e67a29b186529b2b36491"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -84,3 +89,67 @@ evidence:
         - 8-BJZbcKdlE:00041
         - 8-BJZbcKdlE:00042
         - 8-BJZbcKdlE:00043
+  - id: 6-ZAaH5-oR0-concept-backhand-to-forehand-transition-timing-reviewed
+    evidence_type: explanation
+    excerpt: Move the hand and racket into position while the feet are moving so the forehand return can happen immediately on arrival.
+    reason: The speaker explicitly says the racket angle must change quickly during the backhand-to-forehand transition and that the hand must adjust while the feet are moving.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 6-ZAaH5-oR0
+      start_ms: 422566
+      end_ms: 449500
+      url: https://www.youtube.com/watch?v=6-ZAaH5-oR0&t=422s
+      segment_ids:
+        - 6-ZAaH5-oR0:00087
+        - 6-ZAaH5-oR0:00088
+        - 6-ZAaH5-oR0:00089
+        - 6-ZAaH5-oR0:00090
+  - id: T6kwb4YehYA-concept-backhand-to-forehand-transition-footwork-timing-reviewed
+    evidence_type: example
+    excerpt: Transition footwork from backhand to forehand should be timed so the player reaches the ball early enough to attack or loop backspin without rushing.
+    reason: The transcript names the backhand-to-forehand move as the problem and later states that all such footwork follows the same principle.
+    confidence: 0.92
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: T6kwb4YehYA
+      start_ms: 0
+      end_ms: 6300
+      url: https://www.youtube.com/watch?v=T6kwb4YehYA&t=0s
+      segment_ids:
+        - T6kwb4YehYA:00000
+  - id: T6kwb4YehYA-concept-backhand-to-forehand-transition-timing-reviewed
+    evidence_type: mistake
+    excerpt: Transition timing is wrong when the player moves left foot first and arrives late; the correction is to lead with the right leg and step across efficiently.
+    reason: The speaker identifies left-then-right movement as the timing mistake and says it creates same-arm, same-leg timing on fast balls.
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: T6kwb4YehYA
+      start_ms: 519400
+      end_ms: 531066
+      url: https://www.youtube.com/watch?v=T6kwb4YehYA&t=519s
+      segment_ids:
+        - T6kwb4YehYA:00100
+        - T6kwb4YehYA:00101
+  - id: ppsVi3rr2Nk-concept-backhand-to-forehand-transition-timing-reviewed
+    evidence_type: definition
+    excerpt: Keeping the swing compact and to the side during backhand-to-forehand transition so the player can attack without being jammed.
+    reason: The speaker directly teaches compact backswing control on the side of the body during the backhand-to-forehand transition and names getting jammed as the failure mode.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: ppsVi3rr2Nk
+      start_ms: 614800
+      end_ms: 643300
+      url: https://www.youtube.com/watch?v=ppsVi3rr2Nk&t=614s
+      segment_ids:
+        - ppsVi3rr2Nk:00095
+        - ppsVi3rr2Nk:00096
+        - ppsVi3rr2Nk:00097
+        - ppsVi3rr2Nk:00098
+        - ppsVi3rr2Nk:00099

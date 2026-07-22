@@ -8,9 +8,14 @@ aliases:
 short_definition: Fully finish the stroke instead of cutting it short; stay calm, allow the movement to complete, and avoid rushing the contact and finish.
 evidence_summary: >-
   Complete motion brings together several connected ideas. To avoid rushing, complete the motion,
-  and finish the entire stroke in a calm, unhurried way. Together, these principles show how the
-  topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:e82acebe94885ccc72dabca8a7e4abeee913ce71433b747d9cf87cb738ca6a2a"
+  and finish the entire stroke in a calm, unhurried way. The follow-through and stop are distinct
+  and that the stroke should be completed before the final abrupt stop. Completing the full stroke
+  improves spin handling and gives directional rules for different spin types. The stroke must be
+  completed and criticizes short, showy follow-through that does not affect the ball. To complete
+  every stroke and execute the full swing from backswing to follow-through. Together, these
+  principles show how the topic is applied in practice while preserving the relevant distinctions
+  and constraints.
+evidence_summary_source_hash: "sha256:3c7ff0d4ccd131328d3346d67fb6ea417dd82b806b10c66430838d45256e1fa0"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -44,3 +49,66 @@ evidence:
         - Q-V95wNbaP0:00057
         - Q-V95wNbaP0:00059
         - Q-V95wNbaP0:00060
+  - id: mQPlGN-Wkuo-complete-motion-with-final-stop-reviewed
+    evidence_type: definition
+    excerpt: The stroke should be completed in full, with a powerful stop only at the very end rather than an instant stop at contact.
+    reason: The speaker says the follow-through and stop are distinct and that the stroke should be completed before the final abrupt stop.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: mQPlGN-Wkuo
+      start_ms: 591566
+      end_ms: 617700
+      url: https://www.youtube.com/watch?v=mQPlGN-Wkuo&t=591s
+      segment_ids:
+        - mQPlGN-Wkuo:00102
+        - mQPlGN-Wkuo:00104
+        - mQPlGN-Wkuo:00106
+        - mQPlGN-Wkuo:00107
+  - id: _U8F62ukqK4-concept-complete-stroke-for-receive-reviewed
+    evidence_type: explanation
+    excerpt: A full, committed stroke is required to handle spin well on receive.
+    reason: The speaker says completing the full stroke improves spin handling and gives directional rules for different spin types.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: _U8F62ukqK4
+      start_ms: 223800
+      end_ms: 249600
+      url: https://www.youtube.com/watch?v=_U8F62ukqK4&t=223s
+      segment_ids:
+        - _U8F62ukqK4:00038
+        - _U8F62ukqK4:00039
+        - _U8F62ukqK4:00040
+        - _U8F62ukqK4:00041
+  - id: lqla0_ORKNA-concept-complete-motion-reviewed
+    evidence_type: definition
+    excerpt: Executing the full stroke through contact instead of cutting the action short or using only a brief touch at the ball.
+    reason: The speaker repeatedly says the stroke must be completed and criticizes short, showy follow-through that does not affect the ball.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: lqla0_ORKNA
+      start_ms: 20066
+      end_ms: 45033
+      url: https://www.youtube.com/watch?v=lqla0_ORKNA&t=20s
+      segment_ids:
+        - lqla0_ORKNA:00003
+        - lqla0_ORKNA:00005
+  - id: XBi28mLBv7Q-concept-complete-motion-reviewed
+    evidence_type: definition
+    excerpt: Finishing the full stroke path instead of cutting it short, so rhythm stays controlled and rushed errors are reduced.
+    reason: The speaker repeatedly says to complete every stroke and execute the full swing from backswing to follow-through.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: XBi28mLBv7Q
+      start_ms: 393666
+      end_ms: 405666
+      url: https://www.youtube.com/watch?v=XBi28mLBv7Q&t=393s
+      segment_ids:
+        - XBi28mLBv7Q:00060

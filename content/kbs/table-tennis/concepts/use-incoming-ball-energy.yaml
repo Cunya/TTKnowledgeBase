@@ -1,0 +1,87 @@
+id: concept-use-incoming-ball-energy
+slug: use-incoming-ball-energy
+label: Use incoming ball energy
+aliases:
+  - use the energy of the incoming ball
+  - use the incoming spin
+  - borrow its momentum
+short_definition: A contact strategy that relies on the opponent's incoming pace or spin instead of generating everything from a large backswing.
+evidence_summary: >-
+  Use incoming ball energy brings together several connected ideas. To use the energy of the
+  incoming backspin and not rely on the backswing for power. To begin the swing as the ball falls
+  and to combine force with the ball's energy. The easiest way to return a long backhand serve is
+  to use the opponent's pace and incoming pace. Together, these principles show how the topic is
+  applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:bd4f3cc6a357b2ee3653562d804f0cde7be2769a36a96c66f64988ddfaa894fa"
+evidence_summary_generator: "deterministic"
+concept_type: tactic
+facets:
+  category:
+    - tactic
+    - fundamentals
+  side:
+    - neutral
+    - forehand
+    - backhand
+  spin:
+    - backspin
+    - topspin
+    - no-spin
+  distance:
+    - close
+    - mid
+  level:
+    - beginner
+    - intermediate
+difficulty: intermediate
+review_status: approved
+generated_by:
+  processor: automatic_candidate_review
+  version: 1.0.0
+  input_hash: ffa75c4f70b140002644860aa640205020bafc84c08b32914ac6230cd0470c72
+  prompt_version: candidate-review-v1
+evidence:
+  - id: mvVfwjdxe34-concept-use-incoming-ball-energy-reviewed
+    evidence_type: explanation
+    excerpt: A contact strategy that relies on the opponent's incoming pace or spin instead of generating everything from a large backswing.
+    reason: The speaker explicitly says to use the energy of the incoming backspin and not rely on the backswing for power.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: mvVfwjdxe34
+      start_ms: 183666
+      end_ms: 194933
+      url: https://www.youtube.com/watch?v=mvVfwjdxe34&t=183s
+      segment_ids:
+        - mvVfwjdxe34:00036
+        - mvVfwjdxe34:00037
+  - id: O0jOeCzzcZA-concept-use-incoming-ball-energy-reviewed
+    evidence_type: explanation
+    excerpt: A striking principle where the player times contact to exploit the ball's downward motion and momentum instead of forcing the shot independently.
+    reason: The speaker says to begin the swing as the ball falls and to combine force with the ball's energy.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: O0jOeCzzcZA
+      start_ms: 248700
+      end_ms: 263133
+      url: https://www.youtube.com/watch?v=O0jOeCzzcZA&t=248s
+      segment_ids:
+        - O0jOeCzzcZA:00052
+        - O0jOeCzzcZA:00053
+  - id: 2LkVpDM69vo-concept-use-opponent-pace-on-long-serve-receive-reviewed
+    evidence_type: explanation
+    excerpt: On long serves, use the incoming pace to help keep the return on the table instead of forcing the ball.
+    reason: The speaker says the easiest way to return a long backhand serve is to use the opponent's pace and incoming pace.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 2LkVpDM69vo
+      start_ms: 351633
+      end_ms: 360500
+      url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=351s
+      segment_ids:
+        - 2LkVpDM69vo:00069

@@ -708,6 +708,37 @@ evidence:
         - qfB1tscK4xk:00152
         - qfB1tscK4xk:00153
         - qfB1tscK4xk:00154
+  - id: 1XgvgkJ8EfM-concept-short-ball-receive-decisions-reviewed
+    evidence_type: explanation
+    excerpt: Choosing the proper response to short and half-long balls based on distance, body position, and reliable shot selection.
+    reason: The transcript defines short and half-long balls, explains the distance constraints for each, and summarizes that short balls need compact finesse while deep balls use longer relaxed swings.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 1XgvgkJ8EfM
+      start_ms: 935040
+      end_ms: 963000
+      url: https://www.youtube.com/watch?v=1XgvgkJ8EfM&t=935s
+      segment_ids:
+        - 1XgvgkJ8EfM:00413
+        - 1XgvgkJ8EfM:00424
+  - id: 4NxMY3eb7U8-concept-short-ball-receive-decisions-reviewed
+    evidence_type: explanation
+    excerpt: Choosing among receive options based on serve length, spin, and target placement.
+    reason: The speaker compares down-the-line versus cross-court, and later flick versus chop depending on serve type and opponent strength.
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 4NxMY3eb7U8
+      start_ms: 322466
+      end_ms: 350800
+      url: https://www.youtube.com/watch?v=4NxMY3eb7U8&t=322s
+      segment_ids:
+        - 4NxMY3eb7U8:00064
+        - 4NxMY3eb7U8:00068
+        - 4NxMY3eb7U8:00069
 relations:
   - relation_type: part_of
     target_concept_id: concept-short-vs-long-serve-receive

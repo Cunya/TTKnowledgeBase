@@ -509,6 +509,53 @@ evidence:
         - Xt5RyN3qkSA:00035
         - Xt5RyN3qkSA:00036
         - Xt5RyN3qkSA:00039
+  - id: gV-iuz4JnXc-concept-loaded-legs-reviewed
+    evidence_type: explanation
+    excerpt: A grounded stance with loaded legs that stores and releases force into the stroke.
+    reason: The coach describes loading the right leg, using a spring-like rebound, and keeping a compact squat-based base before rotating and driving.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: gV-iuz4JnXc
+      start_ms: 353433
+      end_ms: 377600
+      url: https://www.youtube.com/watch?v=gV-iuz4JnXc&t=353s
+      segment_ids:
+        - gV-iuz4JnXc:00075
+        - gV-iuz4JnXc:00076
+        - gV-iuz4JnXc:00079
+  - id: T6kwb4YehYA-concept-loaded-legs-reviewed
+    evidence_type: explanation
+    excerpt: Good transition footwork requires staying low and loading the body while stepping, so the legs can generate power and support the shot.
+    reason: The speaker says the player loses lower center of gravity and power loading when moving incorrectly, and should step across while loading the body and getting low.
+    confidence: 0.91
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: T6kwb4YehYA
+      start_ms: 705300
+      end_ms: 730600
+      url: https://www.youtube.com/watch?v=T6kwb4YehYA&t=705s
+      segment_ids:
+        - T6kwb4YehYA:00135
+        - T6kwb4YehYA:00136
+        - T6kwb4YehYA:00139
+  - id: lqla0_ORKNA-concept-loaded-legs-reviewed
+    evidence_type: definition
+    excerpt: Use a low, loaded lower body so the legs can store and release power into the stroke.
+    reason: The speaker describes getting into a stable low stance, loading the right leg first, and staying low and compressed with bent legs.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: lqla0_ORKNA
+      start_ms: 884900
+      end_ms: 901733
+      url: https://www.youtube.com/watch?v=lqla0_ORKNA&t=884s
+      segment_ids:
+        - lqla0_ORKNA:00099
+        - lqla0_ORKNA:00100
 relations:
   - relation_type: used_with
     target_concept_id: concept-body-hand-synchronization

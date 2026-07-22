@@ -8,16 +8,17 @@ short_definition: Use forearm acceleration as the main power source to create ma
 evidence_summary: >-
   Forearm acceleration brings together several connected ideas. Forearm acceleration as of maximum
   spin and the loop as forearm-dominant. Power comes from maintaining the brushing feeling and
-  speeding up the forearm swing. The forearm adds speed and that the main acceleration comes from
-  the second segment. The elbow is the pivot, the upper arm should not move, and the forearm is
-  the main of power. The forearm provides depth and drives the ball forward when the ball is
-  short. The secondary acceleration is accomplished by the forearm and that this is primarily
-  forearm acceleration. To accelerate the forearm forward, snap the forearm after the upper arm
-  stops, and use forearm drive into the ball. The power and acceleration come from the forearm,
-  after separating upper-arm movement from forearm acceleration. Additional points reinforce the
-  same theme. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:b1a1fbb3b4350ddcc306f92a6b32c40d296cad19a9737d8c4e06f4d5c366f83c"
+  speeding up the forearm swing. The elbow is the pivot, the upper arm should not move, and the
+  forearm is the main of power. The power comes mainly from the forearm and that it should
+  accelerate at contact. The secondary acceleration is accomplished by the forearm and that this
+  is primarily forearm acceleration. To accelerate the forearm forward, snap the forearm after the
+  upper arm stops, and use forearm drive into the ball. Force should come from the forearm, with
+  the elbow used as an axis and the forearm accelerated for speed and quality. Brushing must be
+  combined with a forward-moving forearm, and demonstrates the forearm moving forward first while
+  the wrist snaps at contact. Additional points reinforce the same theme. Together, these
+  principles show how the topic is applied in practice while preserving the relevant distinctions
+  and constraints.
+evidence_summary_source_hash: "sha256:34663262f910daffab484d73730cd54d1b4209fab9a0ad259d4fcde95c03639b"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -183,3 +184,34 @@ evidence:
         - WZnZIhZkkRo:00072
         - WZnZIhZkkRo:00074
         - WZnZIhZkkRo:00076
+  - id: OSfqukeeo_I-concept-forearm-acceleration-reviewed
+    evidence_type: explanation
+    excerpt: A serve or stroke power pattern where the forearm is the main accelerating segment, rather than the whole arm moving together.
+    reason: The speaker explicitly says force should come from the forearm, with the elbow used as an axis and the forearm accelerated for speed and quality.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: OSfqukeeo_I
+      start_ms: 488633
+      end_ms: 508766
+      url: https://www.youtube.com/watch?v=OSfqukeeo_I&t=488s
+      segment_ids:
+        - OSfqukeeo_I:00087
+        - OSfqukeeo_I:00090
+  - id: tFXmtu4Egw8-concept-forearm-forward-movement-in-looping-reviewed
+    evidence_type: demonstration
+    excerpt: Use a forward-moving forearm to locate and contact the ball during looping, rather than relying on the arm as a rigid unit.
+    reason: The speaker says brushing must be combined with a forward-moving forearm, and demonstrates the forearm moving forward first while the wrist snaps at contact.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: tFXmtu4Egw8
+      start_ms: 435333
+      end_ms: 455133
+      url: https://www.youtube.com/watch?v=tFXmtu4Egw8&t=435s
+      segment_ids:
+        - tFXmtu4Egw8:00074
+        - tFXmtu4Egw8:00075
+        - tFXmtu4Egw8:00076

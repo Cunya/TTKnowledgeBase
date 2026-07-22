@@ -13,11 +13,15 @@ evidence_summary: >-
   with the grip firm and the wrist locked. A useful contrast is between unstable snake-like
   contact and a unified one-piece action and says the arm and racket face must be locked and
   stable. Power errors to an unstable racket face and the wrist, fingers, and racket face must not
-  rotate at impact. The racket cannot wobble and must remain fixed through contact for power and
-  control. The back of the hand must remain firm, the wrist should be locked, and in fast rallies
-  the wrist should stay stable. Together, these principles show how the topic is applied in
-  practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:3831bab936603def992180d95fe3cf1ad0f73fe8a28e87523192db3f1efce445"
+  rotate at impact. The back of the hand must remain firm, the wrist should be locked, and in fast
+  rallies the wrist should stay stable. A flat thumb makes the racket unstable, the racket face
+  opens when the elbow flares, and the racket face must be controlled during backswing and
+  downward motion. Wobbling racket face causes unforced errors and instructs keeping the racket
+  face stable during forehand backswing and contact. The racket face angle must stay absolutely
+  stable from backswing to contact and that wrist flipping is wrong. Additional points reinforce
+  the same theme. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:6e764a60d985c988cb0740a064aab9a648a03f0929a4f6273084628225552e7e"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -137,3 +141,47 @@ evidence:
       segment_ids:
         - yGWrxxrcvN4:00038
         - yGWrxxrcvN4:00042
+  - id: OSfqukeeo_I-concept-racket-face-stability-reviewed
+    evidence_type: explanation
+    excerpt: Keeping the racket face stable through grip and wrist control so the blade does not wobble or open unintentionally.
+    reason: The speaker says a flat thumb makes the racket unstable, the racket face opens when the elbow flares, and the racket face must be controlled during backswing and downward motion.
+    confidence: 0.91
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: OSfqukeeo_I
+      start_ms: 34466
+      end_ms: 48966
+      url: https://www.youtube.com/watch?v=OSfqukeeo_I&t=34s
+      segment_ids:
+        - OSfqukeeo_I:00007
+        - OSfqukeeo_I:00008
+  - id: o_lngzbIPnA-concept-racket-face-stability-reviewed
+    evidence_type: definition
+    excerpt: Keeping the racket face steady through the forehand drive so it does not wobble at backswing or contact.
+    reason: The speaker says wobbling racket face causes unforced errors and instructs keeping the racket face stable during forehand backswing and contact.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: o_lngzbIPnA
+      start_ms: 16733
+      end_ms: 24533
+      url: https://www.youtube.com/watch?v=o_lngzbIPnA&t=16s
+      segment_ids:
+        - o_lngzbIPnA:00004
+  - id: ySisgDGZvDw-concept-racket-face-stability-reviewed
+    evidence_type: definition
+    excerpt: The racket face angle should remain stable from backswing through contact and during the brush, without flipping or snapping unintentionally.
+    reason: The transcript repeatedly emphasizes that the racket face angle must stay absolutely stable from backswing to contact and that wrist flipping is wrong.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ySisgDGZvDw
+      start_ms: 336433
+      end_ms: 357733
+      url: https://www.youtube.com/watch?v=ySisgDGZvDw&t=336s
+      segment_ids:
+        - ySisgDGZvDw:00061
+        - ySisgDGZvDw:00063

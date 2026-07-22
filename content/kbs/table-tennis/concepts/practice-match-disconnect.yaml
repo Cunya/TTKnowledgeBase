@@ -12,10 +12,12 @@ evidence_summary: >-
   serve-and-attack or receive cannot be practiced by simply playing out points. By contrasting
   simple drills with complex match situations and later repeats the same theme directly. A useful
   contrast is between unstable rally execution and multi-ball training and says single-ball
-  rallies should prioritize consistency while multi-ball can emphasize quality and power.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:fb89eebbdde58645c0716a8c93b98bb821a26f5a57c4970145021acd063af2ad"
+  rallies should prioritize consistency while multi-ball can emphasize quality and power. Practice
+  to a greenhouse and matches to a stormy ocean, then says matches alone do not improve the game
+  without problem-solving goals. Explicitly states that varied drills prepare you for real matches
+  and names the disconnect between training and match performance. Together, these principles show
+  how the topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:00ead2ea68ccf17814efac399e96bb4f9a24e1b64ee1574b03cf007258ca7d5e"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -96,3 +98,33 @@ evidence:
         - V9r3Z6D3skI:00028
         - V9r3Z6D3skI:00029
         - V9r3Z6D3skI:00031
+  - id: KYqNsz4vOmI-concept-practice-match-disconnect-reviewed
+    evidence_type: definition
+    excerpt: The gap between controlled practice conditions and the much harder, less predictable reality of match play.
+    reason: The speaker directly compares practice to a greenhouse and matches to a stormy ocean, then says matches alone do not improve the game without problem-solving goals.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: KYqNsz4vOmI
+      start_ms: 688500
+      end_ms: 695933
+      url: https://www.youtube.com/watch?v=KYqNsz4vOmI&t=688s
+      segment_ids:
+        - KYqNsz4vOmI:00141
+        - KYqNsz4vOmI:00142
+  - id: Pym9pNWaowA-concept-practice-match-disconnect-reviewed
+    evidence_type: definition
+    excerpt: A gap between repetitive training and the variability and pressure of actual matches.
+    reason: Explicitly states that varied drills prepare you for real matches and names the disconnect between training and match performance.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: Pym9pNWaowA
+      start_ms: 11533
+      end_ms: 22133
+      url: https://www.youtube.com/watch?v=Pym9pNWaowA&t=11s
+      segment_ids:
+        - Pym9pNWaowA:00002
+        - Pym9pNWaowA:00003

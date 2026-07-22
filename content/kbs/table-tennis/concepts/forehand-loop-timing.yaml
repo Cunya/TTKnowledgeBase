@@ -1417,6 +1417,38 @@ evidence:
         - HLmkP4I2jqM:00012
         - HLmkP4I2jqM:00016
         - HLmkP4I2jqM:00017
+  - id: iDtbFPNdNBc-concept-forehand-loop-timing-reviewed
+    evidence_type: explanation
+    excerpt: Using a controlled wait-and-swing rhythm for looping, especially starting the motion as the ball reaches peak or begins to descend.
+    reason: The speaker says you can wait, then power loop, and that the timing should support a powerful forward stroke and rhythm in rally play.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: iDtbFPNdNBc
+      start_ms: 78966
+      end_ms: 94566
+      url: https://www.youtube.com/watch?v=iDtbFPNdNBc&t=78s
+      segment_ids:
+        - iDtbFPNdNBc:00018
+        - iDtbFPNdNBc:00019
+        - iDtbFPNdNBc:00020
+        - iDtbFPNdNBc:00021
+  - id: 52Lq-QQGqpw-concept-forehand-loop-timing-and-rhythm-reviewed
+    evidence_type: explanation
+    excerpt: Timing for the forehand loop that uses a phased A-B-C motion, brushes first, then accelerates into the finish, and preserves rhythm through a longer backswing.
+    reason: The speaker explicitly describes three points in the loop, a whipping phase, and acceleration after brushing the ball to finish the stroke.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 52Lq-QQGqpw
+      start_ms: 539933
+      end_ms: 549300
+      url: https://www.youtube.com/watch?v=52Lq-QQGqpw&t=539s
+      segment_ids:
+        - 52Lq-QQGqpw:00087
+        - 52Lq-QQGqpw:00088
 relations:
   - relation_type: part_of
     target_concept_id: concept-forehand-loop

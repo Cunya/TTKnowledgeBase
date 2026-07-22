@@ -10,15 +10,14 @@ evidence_summary: >-
   whose first bounce lands off the table. A shot that looks like a short push but whose high point
   is already deep, and the ball half-bounces out. Balls that go long after one bounce and names
   them half-long balls. Connects mastery of half-long balls with taking initiative and notes that
-  falling-point contact reflects slower anticipation and footwork. Half-long balls as landing once
-  and sitting near the edge, then explains they are common in matches. The half-out ball and it as
-  between a non-out ball and an out ball, with an edge-of-table arc. The half-long ball as a
-  distinct scenario and pushing is difficult while looping is often preferable. Half-long balls
-  from short balls, says to flick them over the table, keep the elbow by the side, stay low and
-  forward, and brake earlier. Additional points reinforce the same theme. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:039e5651e7683e96dc1d23d51fdea215eecf8b4f667d62a272b423c2d813a879"
+  falling-point contact reflects slower anticipation and footwork. Trouble hitting half-long balls
+  and the temptation to lift the ball. A half-long ball has little spin, doesn't kick, and is
+  easier to loop, and also notes the slick competition table surface makes the ball run off the
+  end more easily. Short and half-long balls and half-long balls as more difficult and attackable
+  if handled passively. A ball just off the edge of the table as a half-long ball. Additional
+  points reinforce the same theme. Together, these principles show how the topic is applied in
+  practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:3fe13c24db3556c0a6d56f0041bbd7c30acbf2477d0cb851e59bb193fb3d3b82"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -271,3 +270,17 @@ evidence:
       segment_ids:
         - cSDOaQqEtTQ:00081
         - cSDOaQqEtTQ:00086
+  - id: _U8F62ukqK4-concept-half-long-ball-reviewed
+    evidence_type: definition
+    excerpt: A ball that lands near the table edge and is shorter than a long ball but longer than a short ball.
+    reason: The speaker directly defines a ball just off the edge of the table as a half-long ball.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: _U8F62ukqK4
+      start_ms: 0
+      end_ms: 5500
+      url: https://www.youtube.com/watch?v=_U8F62ukqK4&t=0s
+      segment_ids:
+        - _U8F62ukqK4:00000

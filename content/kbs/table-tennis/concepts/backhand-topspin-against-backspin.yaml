@@ -386,6 +386,36 @@ evidence:
       segment_ids:
         - mWehvleIbTk:00118
         - mWehvleIbTk:00124
+  - id: 82C2Zhfyq0s-concept-backhand-topspin-against-backspin-reviewed
+    evidence_type: definition
+    excerpt: When handling backspin on the backhand, the player should create a small arc and lift with the correct path instead of trying to lift straight up.
+    reason: The speaker says against backspin you cannot just lift straight up and must create the proper trajectory over the net.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 82C2Zhfyq0s
+      start_ms: 533366
+      end_ms: 546300
+      url: https://www.youtube.com/watch?v=82C2Zhfyq0s&t=533s
+      segment_ids:
+        - 82C2Zhfyq0s:00100
+        - 82C2Zhfyq0s:00101
+  - id: 2LkVpDM69vo-concept-compact-backhand-loop-for-heavy-backspin-reviewed
+    evidence_type: explanation
+    excerpt: Against heavy backspin, keep the motion compact and the elbow forward to loop safely.
+    reason: The speaker explicitly says that against heavy backspin on the backhand you keep the elbow forward and use a very compact motion to loop.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 2LkVpDM69vo
+      start_ms: 670466
+      end_ms: 687866
+      url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=670s
+      segment_ids:
+        - 2LkVpDM69vo:00127
+        - 2LkVpDM69vo:00128
 relations:
   - relation_type: variation_of
     target_concept_id: concept-backhand-loop

@@ -10,9 +10,11 @@ evidence_summary: >-
   location to control, confidence, and keeping the serve in bounds. Amateurs miss serves because
   they ignore the first bounce, and repeatedly instructs the listener to master and control it
   first. Regardless of power, the first bounce must be aimed toward the server's own end line.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:c13cc615c9bd65d570ce70153237e6a864c05f2df64a2b4f132705d3b03b74dd"
+  Cross-court serves have a more forward contact point and that a bounce closer to the body
+  usually indicates a down-the-line serve. Positioning the bounce on your side allows better
+  control of the first bounce point and reduces service errors. Together, these principles show
+  how the topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:a5505be67924b99413445bd5995e357328a13d56a3f9bd9e0238e0a1af2751af"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -78,3 +80,38 @@ evidence:
         - zvQxT-Dkrkg:00164
         - zvQxT-Dkrkg:00165
         - zvQxT-Dkrkg:00168
+  - id: Ejc6KqZDRKs-concept-0002-reviewed
+    evidence_type: explanation
+    excerpt: "A serve's direction can be inferred from where the first bounce lands: a more forward contact and bounce suggests cross-court, while a bounce closer to the body suggests down-the-line."
+    reason: The speaker explains that cross-court serves have a more forward contact point and that a bounce closer to the body usually indicates a down-the-line serve.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Ejc6KqZDRKs
+      start_ms: 3300
+      end_ms: 29800
+      url: https://www.youtube.com/watch?v=Ejc6KqZDRKs&t=3s
+      segment_ids:
+        - Ejc6KqZDRKs:00001
+        - Ejc6KqZDRKs:00002
+        - Ejc6KqZDRKs:00003
+        - Ejc6KqZDRKs:00004
+        - Ejc6KqZDRKs:00005
+  - id: KNhwuuZ6Vpo-concept-first-bounce-control-near-end-line-reviewed
+    evidence_type: explanation
+    excerpt: Controlling where the serve bounces first is key to reducing service errors.
+    reason: The speaker explicitly says positioning the bounce on your side allows better control of the first bounce point and reduces service errors.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: KNhwuuZ6Vpo
+      start_ms: 255700
+      end_ms: 279400
+      url: https://www.youtube.com/watch?v=KNhwuuZ6Vpo&t=255s
+      segment_ids:
+        - KNhwuuZ6Vpo:00050
+        - KNhwuuZ6Vpo:00051
+        - KNhwuuZ6Vpo:00052
+        - KNhwuuZ6Vpo:00053

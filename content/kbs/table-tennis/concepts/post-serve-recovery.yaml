@@ -1211,6 +1211,36 @@ evidence:
       segment_ids:
         - WuWV6MlZQ_Q:00022
         - WuWV6MlZQ_Q:00026
+  - id: fYJgxN1x7QM-concept-post-serve-recovery-reviewed
+    evidence_type: explanation
+    excerpt: The movement and attention reset after serving so you can respond to the opponent's return.
+    reason: The speaker describes serving, recovering, and then watching the opponent's preparation with intense focus on the next ball.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: fYJgxN1x7QM
+      start_ms: 85600
+      end_ms: 97866
+      url: https://www.youtube.com/watch?v=fYJgxN1x7QM&t=85s
+      segment_ids:
+        - fYJgxN1x7QM:00018
+        - fYJgxN1x7QM:00020
+  - id: t3iPasg0y_Y-candidate-post-serve-recovery-reviewed
+    evidence_type: definition
+    excerpt: Recovering immediately after serving so the player is ready for the next ball.
+    reason: The speaker states that after you serve, you must focus on a quick recovery and that recovery should happen after the serve is complete, not before.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: t3iPasg0y_Y
+      start_ms: 590700
+      end_ms: 619800
+      url: https://www.youtube.com/watch?v=t3iPasg0y_Y&t=590s
+      segment_ids:
+        - t3iPasg0y_Y:00110
+        - t3iPasg0y_Y:00115
 relations:
   - relation_type: used_with
     target_concept_id: concept-short-serve-third-ball-attack

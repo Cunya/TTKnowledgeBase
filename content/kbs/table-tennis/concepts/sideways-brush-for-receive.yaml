@@ -11,9 +11,10 @@ evidence_summary: >-
   sideways brushing and straight-down chopping and says the sideways brush is safer and disperses
   forward momentum. Tricky half-spin serves should be handled with a sideways push and soft touch.
   Late receive contact on the side of the ball as a side-swipe motion that controls arc and keeps
-  it low. Together, these principles show how the topic is applied in practice while preserving
-  the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:b6a95472361366de3dd43025da00f1e2729eb750c0d8643b269421e2aef741c7"
+  it low. To brush sideways and sideways force must exceed forward force. Together, these
+  principles show how the topic is applied in practice while preserving the relevant distinctions
+  and constraints.
+evidence_summary_source_hash: "sha256:b77e867b4fc6bbb30265dfd2ed73dd54dc41f0fef05340a90dfdc2b988af5beb"
 evidence_summary_generator: "deterministic"
 concept_type: technique
 facets:
@@ -84,3 +85,19 @@ evidence:
       segment_ids:
         - YS3IObI6Gaw:00095
         - YS3IObI6Gaw:00096
+  - id: ku3pB8FPhtM-concept-sideways-brush-for-receive-reviewed
+    evidence_type: definition
+    excerpt: For side-chop and side-push receives, the ball should be brushed sideways rather than driven straight forward, with the side component larger than the forward component.
+    reason: The speaker repeatedly instructs to brush sideways and says sideways force must exceed forward force.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ku3pB8FPhtM
+      start_ms: 61866
+      end_ms: 86300
+      url: https://www.youtube.com/watch?v=ku3pB8FPhtM&t=61s
+      segment_ids:
+        - ku3pB8FPhtM:00013
+        - ku3pB8FPhtM:00014
+        - ku3pB8FPhtM:00016

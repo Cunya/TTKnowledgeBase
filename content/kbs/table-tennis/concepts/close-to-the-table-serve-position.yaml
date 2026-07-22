@@ -11,12 +11,13 @@ evidence_summary: >-
   serve. Serving close to the table and the problems that arise when standing too close. Short
   backhand returns require keeping the body close to the ball and repeats that for backspin you
   should stay close. Being too far from the table harms control and recommends standing right
-  against the edge. Hitting the edge is usually caused by standing too far back and advises
-  standing close to eliminate that angle. Many amateurs stand too far back and recommends standing
-  right against the table to control the first bounce. The body must be positioned right up
-  against the table and close to the body. Together, these principles show how the topic is
-  applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:7fc262e729caecaae20e4eabcb6910e306b7d99dc0df37fb09b81dfb8a8c3dae"
+  against the edge. Many amateurs stand too far back and recommends standing right against the
+  table to control the first bounce. The body must be positioned right up against the table and
+  close to the body. To stand closer to the table because the ball drops too low if you stay back.
+  Distance from the ball is critical, then recommends getting your body close to the table to
+  stabilize the serve. Additional points reinforce the same theme. Together, these principles show
+  how the topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:42772464e2c21e32dbebe8de764c7241ebf585bfd9e02ef8a77ce8021608faa0"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -147,3 +148,33 @@ evidence:
       segment_ids:
         - zvQxT-Dkrkg:00173
         - zvQxT-Dkrkg:00174
+  - id: itzB36f9_R0-concept-close-to-the-table-serve-position-reviewed
+    evidence_type: explanation
+    excerpt: Position yourself close to the table so sinking or short-returning balls can be handled before they drop too low.
+    reason: The speaker explicitly says to stand closer to the table because the ball drops too low if you stay back.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: itzB36f9_R0
+      start_ms: 49900
+      end_ms: 61733
+      url: https://www.youtube.com/watch?v=itzB36f9_R0&t=49s
+      segment_ids:
+        - itzB36f9_R0:00009
+        - itzB36f9_R0:00010
+  - id: KNhwuuZ6Vpo-concept-close-to-the-table-serve-position-reviewed
+    evidence_type: explanation
+    excerpt: Serving closer to the table helps control the bounce and reduce errors.
+    reason: The speaker says distance from the ball is critical, then recommends getting your body close to the table to stabilize the serve.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: KNhwuuZ6Vpo
+      start_ms: 226766
+      end_ms: 239166
+      url: https://www.youtube.com/watch?v=KNhwuuZ6Vpo&t=226s
+      segment_ids:
+        - KNhwuuZ6Vpo:00044
+        - KNhwuuZ6Vpo:00045
