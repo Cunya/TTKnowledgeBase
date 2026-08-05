@@ -12,10 +12,12 @@ evidence_summary: >-
   accelerated stop, abrupt braking after contact, and finishing in front of the chest as essential
   for heavy spin. Contact is only the beginning, follow-through is longer, and you must complete
   the full motion for real spin. Poor arm/elbow positioning prevents correct follow-through and
-  concludes by instructing players to accelerate through the ball after making solid contact.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:75b07450e0c61c99c4023aa649eaf86ca69386740a06daa678a7368dafef0327"
+  concludes by instructing players to accelerate through the ball after making solid contact. The
+  problem as improper follow-through and moving the whole arm as one stiff unit prevents power
+  generation. The finish point between the eyebrows and this should become a habit. Together,
+  these principles show how the topic is applied in practice while preserving the relevant
+  distinctions and constraints.
+evidence_summary_source_hash: "sha256:a245b7f9a03826a28d4bb8e77d4da445e280caec31bf987ab6b2c19fea448b84"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -117,3 +119,33 @@ evidence:
       url: https://www.youtube.com/watch?v=hQAxpSuplGM&t=773s
       segment_ids:
         - hQAxpSuplGM:00135
+  - id: hoLSxXKl2L0-concept-improper-arm-follow-through-reviewed
+    evidence_type: definition
+    excerpt: A stroke error where the arm moves as one stiff unit and the follow-through prevents power generation and quality.
+    reason: The speaker explicitly identifies the problem as improper follow-through and explains that moving the whole arm as one stiff unit prevents power generation.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: hoLSxXKl2L0
+      start_ms: 106433
+      end_ms: 119166
+      url: https://www.youtube.com/watch?v=hoLSxXKl2L0&t=106s
+      segment_ids:
+        - hoLSxXKl2L0:00017
+        - hoLSxXKl2L0:00018
+  - id: 9sU_T8b5UoQ-concept-follow-through-to-browline-reviewed
+    evidence_type: definition
+    excerpt: The stroke should finish at a controlled endpoint near the browline, about a palm's width from between the eyebrows.
+    reason: The speaker repeatedly specifies the finish point between the eyebrows and says this should become a habit.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 9sU_T8b5UoQ
+      start_ms: 32066
+      end_ms: 57066
+      url: https://www.youtube.com/watch?v=9sU_T8b5UoQ&t=32s
+      segment_ids:
+        - 9sU_T8b5UoQ:00004
+        - 9sU_T8b5UoQ:00005

@@ -12,13 +12,14 @@ evidence_summary: >-
   the arc. Modern strokes are compact with good braking motion and recommends shortening the
   stroke after contact. An instantaneous stop, bracing the structure, and a compact finish with no
   drift. Braking, shortening the swing, and setting an earlier stopping point for down-the-line
-  and half-long situations. Braking as a core concept and the problem as failing to stop motion
-  after contact. Braking as stopping the motion at the end of the swing and you must be able to
-  stop the motion before using real power. Every motion must have a braking point and not to hold
-  the ball on the racket. Braking motion and stopping sharply increases spin. Additional points
-  reinforce the same theme. Together, these principles show how the topic is applied in practice
-  while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:a5f118effeb9042965b62b36d4908065320938035f892d062fe9eb67baaeb5ad"
+  and half-long situations. Braking as stopping the motion at the end of the swing and you must be
+  able to stop the motion before using real power. The wrap is not an active motion but a braking
+  mechanism after the forward drive, and that the motion should feel like a quick snap. Braking
+  motion and stopping sharply increases spin. Braking directly and stopping the motion right after
+  contact keeps the arc low. Additional points reinforce the same theme. Together, these
+  principles show how the topic is applied in practice while preserving the relevant distinctions
+  and constraints.
+evidence_summary_source_hash: "sha256:3283ed7080d15e213f26f110e9d13e9f5752b691da2a463b3a0efa075a71668c"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -198,3 +199,19 @@ evidence:
         - fgtk9fxGTUw:00004
         - fgtk9fxGTUw:00006
         - fgtk9fxGTUw:00007
+  - id: OVkH-47SvqE-concept-braking-motion-and-swing-stop-point-reviewed
+    evidence_type: definition
+    excerpt: A controlled stop of the motion immediately after contact to keep the trajectory low and reduce predictability.
+    reason: The transcript names braking directly and explains that stopping the motion right after contact keeps the arc low.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: OVkH-47SvqE
+      start_ms: 605333
+      end_ms: 630466
+      url: https://www.youtube.com/watch?v=OVkH-47SvqE&t=605s
+      segment_ids:
+        - OVkH-47SvqE:00101
+        - OVkH-47SvqE:00102
+        - OVkH-47SvqE:00105

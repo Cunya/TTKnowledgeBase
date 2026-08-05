@@ -40,6 +40,7 @@ from .ingest import (
     ingest_video,
     video_id_from_url,
 )
+from .inventory import build_inventory_ledger
 from .llm_budget import LLMBudgetExceeded, LLMTokenBudget
 from .models import KnowledgeNavigation, PublishCorpus
 from .pipeline import (
@@ -101,6 +102,18 @@ def kb_paths(kb: str | None) -> KnowledgeBasePaths:
         return load_knowledge_base(ROOT, kb)
     except ValueError as error:
         raise typer.BadParameter(str(error), param_hint="--kb") from error
+
+
+def resolve_transcript_languages(raw: str, paths: KnowledgeBasePaths) -> list[str]:
+    explicit = [item.strip() for item in raw.split(",") if item.strip()]
+    if explicit:
+        return explicit
+    config = read_yaml(paths.config / "kb.yaml") or {}
+    configured = ((config.get("language") or {}).get("transcript_priority") or [])
+    if isinstance(configured, str):
+        configured = [configured]
+    languages = [str(item).strip() for item in configured if str(item).strip()]
+    return languages or ["en"]
 
 
 def _demo_video_ids(videos: list) -> set[str]:
@@ -243,7 +256,7 @@ def build_evidence_summaries(
 @app.command()
 def ingest(
     urls: Annotated[list[str], typer.Argument()],
-    languages: Annotated[str, typer.Option()] = "en",
+    languages: Annotated[str, typer.Option(help="Comma-separated transcript language priorities; defaults to KB config")] = "",
     force: Annotated[bool, typer.Option(help="Refetch an existing normalized video")] = False,
     request_delay: Annotated[
         float, typer.Option(min=0, help="Seconds between uncached videos")
@@ -282,6 +295,7 @@ def ingest(
 ) -> None:
     """Fetch metadata and timed transcripts using cache and controlled fallbacks."""
     paths = kb_paths(kb)
+    language_codes = resolve_transcript_languages(languages, paths)
     if caption_file and len(urls) != 1:
         raise typer.BadParameter("--caption-file requires exactly one video URL")
     if caption_file and not caption_file.exists():
@@ -362,7 +376,7 @@ def ingest(
             network_attempts += 1
         try:
             video = ingest_video(
-                url, paths.data("normalized"), languages.split(","), options, force=force
+                url, paths.data("normalized"), language_codes, options, force=force
             )
             retry_state["items"].pop(video.id, None)
             if needs_network:
@@ -426,7 +440,7 @@ def ingest(
 @app.command("ingest-media-asr")
 def ingest_media_asr_command(
     url: Annotated[str, typer.Argument(help="One YouTube video URL")],
-    languages: Annotated[str, typer.Option()] = "en",
+    languages: Annotated[str, typer.Option(help="Comma-separated transcript language priorities; defaults to KB config")] = "",
     allow_video_download: Annotated[
         bool, typer.Option(help="Allow retaining a private local video copy for ASR")
     ] = False,
@@ -452,6 +466,7 @@ def ingest_media_asr_command(
 ) -> None:
     """Run the one-video retained-media ASR smoke test outside normal ingestion."""
     paths = kb_paths(kb)
+    language_codes = resolve_transcript_languages(languages, paths)
     if cookie_file and not cookie_file.exists():
         raise typer.BadParameter(f"Cookie file does not exist: {cookie_file}")
     video_id = video_id_from_url(url)
@@ -479,7 +494,7 @@ def ingest_media_asr_command(
             paths.data("normalized") / "asr",
             ROOT / "media" / paths.id,
             paths.data("manifests") / "media-asr",
-            languages.split(","),
+            language_codes,
             options,
             force=force,
             max_video_bytes=max_video_bytes,
@@ -701,6 +716,15 @@ def process_pending(
     retry_deferred: Annotated[
         bool, typer.Option(help="Re-evaluate previously deferred candidates, including the full backfill")
     ] = False,
+    max_adjudication_attempts: Annotated[
+        int, typer.Option(min=1, help="Assign unchanged ambiguity to human review after this many attempts")
+    ] = 2,
+    max_candidates: Annotated[
+        int | None, typer.Option(min=1, help="Bound candidates considered in this adjudication pass")
+    ] = None,
+    video_ids: Annotated[
+        str | None, typer.Option(help="Optional comma-separated video IDs that define this pass")
+    ] = None,
     kb: KbOption = None,
 ) -> None:
     """Triage cached pending candidates before any new scrape."""
@@ -713,6 +737,9 @@ def process_pending(
         concepts,
         min_confidence=min_confidence,
         retry_deferred=retry_deferred,
+        max_adjudication_attempts=max_adjudication_attempts,
+        max_candidates=max_candidates,
+        video_ids={value for value in (video_ids or "").split(",") if value} or None,
     )
     diagnostics_output = ROOT / "app" / "src" / "data" / "generated" / f"{paths.id}-concept-review.json"
     diagnostics = build_review_diagnostics(
@@ -732,10 +759,25 @@ def process_pending(
     console.print(
         f"[green]Processed pending candidates for {paths.name}[/green]: "
         f"{counts['accepted']} accepted, {counts['deferred']} deferred, "
+        f"{counts['human_review']} assigned to human review, "
         f"{counts['rejected']} rejected, {counts['evidence_added']} evidence moments added, "
         f"{counts['concepts_added']} concepts added; diagnostics refreshed "
         f"({diagnostics['total']} deferred candidates); navigation placed "
         f"{navigation_counts['placed']} concepts"
+    )
+
+
+@app.command("build-inventory-ledger")
+def inventory_ledger(kb: KbOption = None) -> None:
+    """Build the private full-source eligibility and completion ledger."""
+    paths = kb_paths(kb)
+    summary = build_inventory_ledger(paths)["summary"]
+    console.print(
+        f"[green]{paths.name}: {summary['inventory']} inventory videos[/green]; "
+        f"{summary['eligible_complete']} complete, "
+        f"{summary['automated_work_remaining']} automated work remaining, "
+        f"{summary['human_review_videos']} assigned to human review, "
+        f"{summary['excluded']} excluded"
     )
 
 

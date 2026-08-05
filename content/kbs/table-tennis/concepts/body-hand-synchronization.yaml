@@ -2065,6 +2065,22 @@ evidence:
       segment_ids:
         - pFKneacfGiY:00018
         - pFKneacfGiY:00019
+  - id: qPpVIKNWMwY-candidate-body-hand-synchronization-reviewed
+    evidence_type: definition
+    excerpt: The hand stroke and body movement should stay synchronized so the body follows the hand through the shot instead of lagging behind or opposing it.
+    reason: The speaker says the body and hand are disconnected, that the body must truly follow through, and that the body should move with the hand in both forehand and backhand strokes.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: qPpVIKNWMwY
+      start_ms: 102400
+      end_ms: 125466
+      url: https://www.youtube.com/watch?v=qPpVIKNWMwY&t=102s
+      segment_ids:
+        - qPpVIKNWMwY:00017
+        - qPpVIKNWMwY:00019
+        - qPpVIKNWMwY:00020
 relations:
   - relation_type: used_with
     target_concept_id: concept-serve-action-decomposition

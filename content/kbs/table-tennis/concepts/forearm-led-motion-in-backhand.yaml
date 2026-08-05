@@ -10,17 +10,16 @@ evidence_summary: >-
   Forearm-led motion in backhand brings together several connected ideas. The upper arm should not
   dominate, the forearm should lead, and the rest of the motion is completed by the forearm. The
   forearm drives the shot forward, the elbow is the pivot, and the elbow should not move with the
-  arm. The racket is led down by the forearm and that both backhand and forehand attacks require
-  forearm-driven adjustment. A useful contrast is between wrist-driven flicks and a forearm-driven
-  return and says the forearm adds lift or power after contact. The forearm should accelerate, the
-  upper arm should stabilize, and initial drills should isolate forearm motion. To stay over the
-  ball, use a compact motion, and that the forearm is mainly driving forward with limited
-  upper-arm and wrist use. The upper arm should point down and remain stable while the forearm and
-  wrist handle the fine adjustments. The return becomes easy through forearm and wrist power, with
-  less arm in the backswing and a wrist turn to send the ball back. Additional points reinforce
-  the same theme. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:79b95391363134747e3dce3826deb2e6fc6945d4ab7d4ff224b71c5f6ef821d1"
+  arm. Using the upper arm and elbow as a stable pivot and then letting the forearm rotate.
+  External forearm rotation, a stable wrist, and forearm-driven forward motion. After the lifting
+  phase, forearm power becomes primary, with outward forearm rotation and wrist tightening in the
+  final power phase. The forearm should drive forward for the rip and loop, and that wrist-only
+  motion is wrong. Right-sidespin serves do not use much wrist action and are mostly forearm, with
+  the forearm lifting upwards. Not to use the upper arm or elbow, and that the force comes from
+  the wrist-forearm connection, pressed down and forward through the ball. Additional points
+  reinforce the same theme. Together, these principles show how the topic is applied in practice
+  while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:de8e2691e22a8379735d7553c2d783568b190779576ab235061a17619b039d5b"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -398,3 +397,34 @@ evidence:
         - 6aJ-BC4QnTU:00074
         - 6aJ-BC4QnTU:00075
         - 6aJ-BC4QnTU:00076
+  - id: CCb9qkkVxNQ-concept-forearm-led-motion-in-backhand-reviewed
+    evidence_type: explanation
+    excerpt: In backhand receive and looping, the forearm determines the release direction and adapts the stroke path to the incoming ball.
+    reason: The speaker says the forearm direction changes with every ball, the release direction adapts to the ball, and the forearm is the decision maker.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: CCb9qkkVxNQ
+      start_ms: 215560
+      end_ms: 234720
+      url: https://www.youtube.com/watch?v=CCb9qkkVxNQ&t=215s
+      segment_ids:
+        - CCb9qkkVxNQ:00087
+        - CCb9qkkVxNQ:00094
+  - id: IHQASHkdLYk-concept-forearm-led-motion-in-backhand-reviewed
+    evidence_type: definition
+    excerpt: Backhand mechanics where the forearm, not the whole arm, supplies the main controlled force and direction.
+    reason: The speaker says not to use the upper arm or elbow, and that the force comes from the wrist-forearm connection, pressed down and forward through the ball.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: IHQASHkdLYk
+      start_ms: 797100
+      end_ms: 822666
+      url: https://www.youtube.com/watch?v=IHQASHkdLYk&t=797s
+      segment_ids:
+        - IHQASHkdLYk:00104
+        - IHQASHkdLYk:00105
+        - IHQASHkdLYk:00106

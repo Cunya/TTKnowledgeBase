@@ -731,6 +731,21 @@ evidence:
       segment_ids:
         - s6lj1otqR90:00013
         - s6lj1otqR90:00016
+  - id: IHQASHkdLYk-concept-sidespin-topspin-serve-reviewed
+    evidence_type: definition
+    excerpt: A spin combination serve used to provoke a topspin return and set up an attacking rally.
+    reason: The speaker says to initiate a topspin rally by serving sidespin-topspin and frames it as the opening of a third-ball attack sequence.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: IHQASHkdLYk
+      start_ms: 17200
+      end_ms: 40533
+      url: https://www.youtube.com/watch?v=IHQASHkdLYk&t=17s
+      segment_ids:
+        - IHQASHkdLYk:00003
+        - IHQASHkdLYk:00005
 relations:
   - relation_type: used_with
     target_concept_id: concept-short-serve-third-ball-attack

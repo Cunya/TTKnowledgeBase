@@ -1,54 +1,276 @@
 {
   "knowledge_base": "table-tennis",
-  "started_at": "2026-07-22T07:37:15.493239+00:00",
+  "started_at": "2026-08-04T22:13:14.635705+00:00",
   "status": "completed",
+  "inventory_before": {
+    "inventory": 838,
+    "published": 729,
+    "eligible_complete": 174,
+    "automated_work_remaining": 578,
+    "human_review_videos": 0,
+    "retry_wait": 0,
+    "excluded": 86,
+    "states": {
+      "needs_adjudication": 578,
+      "complete": 174,
+      "excluded": 86
+    },
+    "availability": {
+      "public": 753,
+      "members_only": 85
+    },
+    "captions": {
+      "selected_source_track": 752,
+      "no_usable_subtitles": 1,
+      "ineligible": 85
+    },
+    "candidates": {
+      "total": 6930,
+      "pending": 1,
+      "deferred": 1815,
+      "accepted": 5113,
+      "rejected": 1,
+      "human_review": 0,
+      "accepted_unincorporated": 0
+    },
+    "sources": {
+      "free-coach-brad-han": {
+        "inventory": 325,
+        "needs_adjudication": 252,
+        "complete": 72,
+        "excluded": 1
+      },
+      "global-tt-studio": {
+        "inventory": 418,
+        "complete": 97,
+        "excluded": 85,
+        "needs_adjudication": 236
+      },
+      "pingsunday-xiaohan-playlist": {
+        "inventory": 95,
+        "needs_adjudication": 90,
+        "complete": 5
+      }
+    }
+  },
+  "workset": {
+    "extraction": [],
+    "adjudication": [
+      {
+        "id": "lii73aKvvkw",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "xBlnTfR0eOY",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "JLGqLr-9-2w",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "pRuBdX0ZLgg",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "QkR3weNCn48",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "iNTkZQ-ZenY",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "CFfErzr4cEQ",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "oWZx35U6iGI",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "PBYIXS9NP0s",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "S7U1u6oU2zQ",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "fpNFvJkdLnw",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "5JzSUTg_ojc",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "bQTenTT3bz0",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "EIlmaLc-eFw",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "KuYNs8gAU_U",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "OFOjjffyzms",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "ZDsNRAsC9pY",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "ggaBOPI4Nwc",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "xGna6RBljCg",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "sU4uTg-0qvM",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "g5LaTXWtgBw",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "Mnse-nAfdO8",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "lcp99UuLuus",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "rN337KbRJt0",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "ubwy_VRFhPg",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "RxQ8PJFJKLs",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "j90jCkrtITo",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "4VtanUONrZc",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "CpcAha7BZGA",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "j098z-YOm20",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "13z0kO_hd0M",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "3SacINVWteM",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "A_hvhZM5dc4",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "GKfKcAQ-guU",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "VOX-e4IR2xg",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "vxNq1b0J0bU",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "-1uBDv1Aq7A",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "25Ohh2RJcWk",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "QsrAQCy3POU",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "RIAorR-Xv_Q",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "RwbDGQSqM8g",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "SS2i7rmrjZI",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "b_F4I4x4dl0",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "i-n17lWXlSo",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "2WWpJEdhO9U",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "3lTc51PYWSQ",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "8YnliONxP4U",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "K0ljmeUVK1Q",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "KM-gOmX2AeU",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "Nj4ivxRAizs",
+        "reason": "extracted candidates still have retryable decisions"
+      }
+    ],
+    "acquisition": []
+  },
   "stages": [
     {
-      "name": "process-pending before acquisition",
+      "name": "bounded deferred adjudication before acquisition",
       "exit_code": 0,
-      "output": "Processed pending candidates for Table Tennis: 0 accepted, 1 deferred, 0 \nrejected, 0 evidence moments added, 0 concepts added; diagnostics refreshed \n(1730 deferred candidates); navigation placed 0 concepts",
-      "exit_class": "success",
-      "timeout_seconds": 2700
-    },
-    {
-      "name": "discover free-coach-brad-han",
-      "exit_code": 0,
-      "output": "Discovered 310 videos for Table Tennis",
-      "exit_class": "success",
-      "timeout_seconds": 1200
-    },
-    {
-      "name": "discover global-tt-studio",
-      "exit_code": 0,
-      "output": "Discovered 2 videos for Table Tennis",
-      "exit_class": "success",
-      "timeout_seconds": 1200
-    },
-    {
-      "name": "discover pingsunday-xiaohan-playlist",
-      "exit_code": 0,
-      "output": "Discovered 95 videos for Table Tennis",
-      "exit_class": "success",
-      "timeout_seconds": 1200
-    },
-    {
-      "name": "ingest discovered batch",
-      "exit_code": 1,
-      "output": "Skipped J4ZTcPlOmto: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped IQJagpLfWoE: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped UAlmlB1nU8o: YouTube block cooldown has about 1 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nERROR: [youtube] UCLdwDMdtrc: Video unavailable\nFailed https://www.youtube.com/watch?v=UCLdwDMdtrcW_WlhXI0Kli9Q: ERROR:  \nUCLdwDMdtrc: Video unavailable\nSkipped qPpVIKNWMwY: YouTube block cooldown has about 20 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped hoLSxXKl2L0: YouTube block cooldown has about 20 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped mQdrXMukRSY: YouTube block cooldown has about 21 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped XaU6LtcP_n0: YouTube block cooldown has about 21 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped PsZfazXZXEA: YouTube block cooldown has about 22 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped GBudN8i0C1Y: YouTube block cooldown has about 23 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped OVkH-47SvqE: YouTube block cooldown has about 23 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nSkipped UqXqp8saFbU: YouTube block cooldown has about 24 hour(s) remaining. \nChange VPN/proxy route and pass --retry-blocked, or wait for the recorded retry\ntime.\nWARNING: The extractor specified to use impersonation for this download, but no impersonate target is available. If you encounter errors, then see  https://github.com/yt-dlp/yt-dlp#impersonation  for information on installing the required dependencies\nERROR: Unable to download video subtitles for 'en': HTTP Error 429: Too Many Requests\nFailed https://www.youtube.com/watch?v=wytyHpyZr9A: \nCould not retrieve a transcript for the video \nhttps://www.youtube.com/watch?v=wytyHpyZr9A! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the \nfollowing reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, \nGoogle Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud \nproviders are blocked by YouTube.\n\nWays to work around this are explained in the \"Working around IP bans\" section \nof the README \n(https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-a\nround-ip-bans-requestblocked-or-ipblocked-exception).\n\n\nIf you are sure that the described cause is not responsible for this error and \nthat a transcript should be retrievable, please create an issue at \nhttps://github.com/jdepoix/youtube-transcript-api/issues. Please add which \nversion of youtube_transcript_api you are using and provide the information \nneeded to replicate the error. Also make sure that there are no open issues \nwhich already describe your problem!\nYouTube block detected; stopping this batch to avoid escalation.\n13 video(s) failed; successful videos were retained.",
-      "exit_class": "stage_failed",
-      "timeout_seconds": 2700
-    },
-    {
-      "name": "process-pending after extraction",
-      "exit_code": 0,
-      "output": "Processed pending candidates for Table Tennis: 0 accepted, 0 deferred, 0 \nrejected, 0 evidence moments added, 0 concepts added; diagnostics refreshed \n(1730 deferred candidates); navigation placed 0 concepts",
+      "output": "Processed pending candidates for Table Tennis: 0 accepted, 185 deferred, 0 \nassigned to human review, 4 rejected, 0 evidence moments added, 0 concepts \nadded; diagnostics refreshed (1811 deferred candidates); navigation placed 0 \nconcepts",
       "exit_class": "success",
       "timeout_seconds": 2700
     },
     {
       "name": "build review queue",
       "exit_code": 0,
-      "output": "Table Tennis: 6564 candidates queued",
+      "output": "Table Tennis: 6934 candidates queued",
       "exit_class": "success",
       "timeout_seconds": 2700
     },
@@ -62,132 +284,66 @@
     {
       "name": "publish reviewed corpus",
       "exit_code": 0,
-      "output": "Published Table Tennis: 514 concepts",
+      "output": "Published Table Tennis: 533 concepts",
       "exit_class": "success",
       "timeout_seconds": 2700
     }
   ],
   "cached_unextracted": [],
   "selected_batch": [],
-  "discovered_inventory_count": 824,
-  "discovered_unprocessed_count": 29,
-  "discovered_batch": [
-    {
-      "id": "J4ZTcPlOmto",
-      "title": "Slow-motion of Forehand Loops VS Backspin"
+  "discovered_inventory_count": 838,
+  "discovered_unprocessed_count": 0,
+  "discovered_batch": [],
+  "finished_at": "2026-08-04T22:15:06.672064+00:00",
+  "inventory_after": {
+    "inventory": 838,
+    "published": 729,
+    "eligible_complete": 175,
+    "automated_work_remaining": 577,
+    "human_review_videos": 0,
+    "retry_wait": 0,
+    "excluded": 86,
+    "states": {
+      "needs_adjudication": 577,
+      "complete": 175,
+      "excluded": 86
     },
-    {
-      "id": "IQJagpLfWoE",
-      "title": "The Ultimate Easy Serve Return Tip"
+    "availability": {
+      "public": 753,
+      "members_only": 85
     },
-    {
-      "id": "UAlmlB1nU8o",
-      "title": "The Triangle Theory of the Forehand"
+    "captions": {
+      "selected_source_track": 752,
+      "no_usable_subtitles": 1,
+      "ineligible": 85
     },
-    {
-      "id": "UCLdwDMdtrcW_WlhXI0Kli9Q",
-      "title": "GlobalTTStudio - Videos"
+    "candidates": {
+      "total": 6930,
+      "pending": 1,
+      "deferred": 1811,
+      "accepted": 5113,
+      "rejected": 5,
+      "human_review": 0,
+      "accepted_unincorporated": 0
     },
-    {
-      "id": "qPpVIKNWMwY",
-      "title": "How to Find Your Golden Contact Point for Maximum Coordinated Force"
-    },
-    {
-      "id": "hoLSxXKl2L0",
-      "title": "How to Open Up Your Forearm to Generate Explosive Forehand Power"
-    },
-    {
-      "id": "mQdrXMukRSY",
-      "title": "The Ultimate Backhand Breakdown: Achieving Both Power and Consistency"
-    },
-    {
-      "id": "XaU6LtcP_n0",
-      "title": "Fixing the Amateur Third Ball Attack: An In-Depth On-Court Coaching Session"
-    },
-    {
-      "id": "PsZfazXZXEA",
-      "title": "Fix the 4 Biggest Mistakes in Your Forehand Drive"
-    },
-    {
-      "id": "GBudN8i0C1Y",
-      "title": "Stop Rushing Your Backhand: How to Improve Your Backhand Rhythm"
-    },
-    {
-      "id": "OVkH-47SvqE",
-      "title": "Fixing Hook Serve Mistakes: A Breakdown of the Topspin-Sidespin Serve"
-    },
-    {
-      "id": "UqXqp8saFbU",
-      "title": "The 2 Word Mental Hack That Unlocks Pro Level Serve Receive"
-    },
-    {
-      "id": "wytyHpyZr9A",
-      "title": "Fix Your Backhand Against Backspin: Your 4-Step Solution(Penhold+Shakehand)"
-    },
-    {
-      "id": "czp2jsURYQk",
-      "title": "Getting Jammed on Your Forehand? Here's the Permanent Fix."
-    },
-    {
-      "id": "IHQASHkdLYk",
-      "title": "Sidespin Serve to Backhand Attack Tactic: Step-by-Step Breakdown"
-    },
-    {
-      "id": "rLrnvlDBmTs",
-      "title": "How to Loop Heavy Backspin – The Ultimate Breakdown with 4P Formula"
-    },
-    {
-      "id": "_77LMM6s1cw",
-      "title": "Stop Getting Stuck: How to Fix Your Footwork on Serve Receive"
-    },
-    {
-      "id": "SmYaJcYqaqo",
-      "title": "Fix This Forehand Mistake: How to Meet the Ball in Front for MASSIVE Power"
-    },
-    {
-      "id": "ATd38ewLMqs",
-      "title": "How to Correct Your Backhand Drive Form"
-    },
-    {
-      "id": "3wQrxObpgxM",
-      "title": "Fix Your Forehand Loop: How to Transition from Drive to Loop"
-    },
-    {
-      "id": "hi0AJuu60eE",
-      "title": "Fix Slow Forehand–Backhand Transitions"
-    },
-    {
-      "id": "yqSECRch8WM",
-      "title": "How to Brush and Drive the Ball on the Backhand"
-    },
-    {
-      "id": "spoumRQdZHc",
-      "title": "Fix Your Stance in 10 Minutes: The Foundation of a Stable Forehand"
-    },
-    {
-      "id": "pbILplLUhnI",
-      "title": "How to Fix Your Backhand Swing Path and Spacing"
-    },
-    {
-      "id": "0KcRfTXRcsY",
-      "title": "How to Read Spin and Adjust Your Racket Angle"
-    },
-    {
-      "id": "SBpcji5Ah_w",
-      "title": "How to Use Thumb Power, Step-In, and Hip Thrust for a Better Backhand"
-    },
-    {
-      "id": "9sU_T8b5UoQ",
-      "title": "How to Fix Your Unstable Forehand: Master the 3 Pivot Points for Perfect Consistency"
-    },
-    {
-      "id": "tQSnBjtseLI",
-      "title": "Fix Your Weak Forehand: Why a Stable Elbow is the Key to Power"
-    },
-    {
-      "id": "AoJq7UfIhp8",
-      "title": "How to Add INSANE Spin to Your Backhand Fast Loop"
+    "sources": {
+      "free-coach-brad-han": {
+        "inventory": 325,
+        "needs_adjudication": 251,
+        "complete": 73,
+        "excluded": 1
+      },
+      "global-tt-studio": {
+        "inventory": 418,
+        "complete": 97,
+        "excluded": 85,
+        "needs_adjudication": 236
+      },
+      "pingsunday-xiaohan-playlist": {
+        "inventory": 95,
+        "needs_adjudication": 90,
+        "complete": 5
+      }
     }
-  ],
-  "finished_at": "2026-07-22T07:43:02.386438+00:00"
+  }
 }

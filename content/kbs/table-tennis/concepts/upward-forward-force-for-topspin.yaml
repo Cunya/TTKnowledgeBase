@@ -12,9 +12,11 @@ evidence_summary: >-
   forward and upward at contact. By saying to focus on rotating the racket head to lift spin, then
   explains that the rotation creates the friction needed to lift heavy spin and that a fixed
   racket angle fails. The shot as upward first, then forward, including the ramp analogy and the
-  70% upward / 30% forward guidance on heavy spin. Together, these principles show how the topic
-  is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:ce66e20a7b3fd504f4218b5fac39a1cac3cc4c4214678b46ecd79f94cadee17d"
+  70% upward / 30% forward guidance on heavy spin. Forward alone cannot lift heavy spin and that
+  the correct solution is forward and upward force. Players to press the foot down, lift the heel,
+  pivot, and rotate the foot tip so power can move forward. Together, these principles show how
+  the topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:da88a4c82790c57172f618a1398e8235b52f8fd0e538c8c571415c3342014eb1"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -81,3 +83,35 @@ evidence:
         - _f9fVMm2_Gs:00083
         - _f9fVMm2_Gs:00084
         - _f9fVMm2_Gs:00085
+  - id: CCb9qkkVxNQ-concept-forward-and-upward-lift-reviewed
+    evidence_type: explanation
+    excerpt: 'The response needed against heavy spinny balls: do not drive forward only; add upward force while also moving forward to lift the ball.'
+    reason: The speaker explains that forward alone cannot lift heavy spin and that the correct solution is forward and upward force.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: CCb9qkkVxNQ
+      start_ms: 193320
+      end_ms: 217320
+      url: https://www.youtube.com/watch?v=CCb9qkkVxNQ&t=193s
+      segment_ids:
+        - CCb9qkkVxNQ:00077
+        - CCb9qkkVxNQ:00082
+        - CCb9qkkVxNQ:00083
+        - CCb9qkkVxNQ:00086
+  - id: SmYaJcYqaqo-new-foot-pivot-and-heel-lift-for-power-transfer-reviewed
+    evidence_type: definition
+    excerpt: A footwork action where the back heel lifts and the foot pivots to create an efficient axis for transferring force from the ground through the body.
+    reason: The speaker instructs players to press the foot down, lift the heel, pivot, and rotate the foot tip so power can move forward.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: SmYaJcYqaqo
+      start_ms: 339433
+      end_ms: 366533
+      url: https://www.youtube.com/watch?v=SmYaJcYqaqo&t=339s
+      segment_ids:
+        - SmYaJcYqaqo:00037
+        - SmYaJcYqaqo:00040

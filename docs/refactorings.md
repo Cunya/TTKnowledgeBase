@@ -20,6 +20,7 @@
 
 ## Ingestion
 
+- Share ordered source-caption language matching between transcript adapters so exact configured codes remain preferred while regional fallback behavior stays deterministic and testable.
 - Generate `source-video-progress.md` from source-specific discovery manifests and pipeline artifacts instead of maintaining its snapshot tables manually.
 - Add a shared daily-run orchestrator around the CLI phases rather than duplicating scheduling policy in PowerShell, Task Scheduler, or future CI jobs. It should own locking, missing-artifact workset selection, run manifests, and machine-readable exit classes.
 - Make extraction workset selection hash-aware and idempotent so the timer never re-invokes Codex for an unchanged normalized transcript merely because `extract-concepts` was called without `--video-id`.
@@ -51,6 +52,7 @@
 - Keep project/source count aggregation in `processors/progress.py` and expose one generated snapshot to local operator pages. Avoid duplicating count logic in Astro templates or documentation; a later quality report should consume the same snapshot.
 - Keep the Recent snapshot explicitly metadata-only. Normalized `Video` models include private transcript segments, so serializing them directly can fail the Pages artifact scan and leak raw transcripts into generated HTML.
 - Keep Pages credential scans specific to known secret prefixes; a broad `sk-` pattern falsely classified legitimate concept slugs as API keys.
+- Keep system resource telemetry separate from the detailed process list: total CPU/memory percentages and rolling browser history make the monitor actionable, while cumulative process CPU time remains a diagnostic detail.
 
 ## Moment boundaries
 

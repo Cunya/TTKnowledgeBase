@@ -1286,6 +1286,38 @@ evidence:
         - _U8F62ukqK4:00048
         - _U8F62ukqK4:00049
         - _U8F62ukqK4:00050
+  - id: CCb9qkkVxNQ-concept-compact-response-to-fast-ball-reviewed
+    evidence_type: definition
+    excerpt: A short, compact receive action used against fast serves instead of a full swing, because the opponent is trying to jam the receiver.
+    reason: The speaker describes fast serves as jamming the receiver and recommends a small action with a compact brush, not a full forehand.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: CCb9qkkVxNQ
+      start_ms: 390760
+      end_ms: 416680
+      url: https://www.youtube.com/watch?v=CCb9qkkVxNQ&t=390s
+      segment_ids:
+        - CCb9qkkVxNQ:00141
+        - CCb9qkkVxNQ:00145
+        - CCb9qkkVxNQ:00149
+        - CCb9qkkVxNQ:00150
+  - id: _77LMM6s1cw-concept-compact-response-to-fast-ball-reviewed
+    evidence_type: explanation
+    excerpt: A shortened, compact motion used when the incoming serve or ball is too fast for a full backswing.
+    reason: The speaker says close-to-the-table pressure requires compact arm swing, short explosive rotation, and no large backswing on faster balls.
+    confidence: 0.89
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: _77LMM6s1cw
+      start_ms: 839533
+      end_ms: 862566
+      url: https://www.youtube.com/watch?v=_77LMM6s1cw&t=839s
+      segment_ids:
+        - _77LMM6s1cw:00101
+        - _77LMM6s1cw:00090
 relations:
   - relation_type: used_with
     target_concept_id: concept-control-before-power

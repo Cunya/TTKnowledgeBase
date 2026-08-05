@@ -14,9 +14,11 @@ evidence_summary: >-
   jammed. Feeling jammed is fixed by positioning further from the table and keeping the backhand
   compact in front of the body. To create space so the ball does not jam the stroke and that poor
   positioning prevents power generation. Bending over gets you jammed and that mid-distance is
-  needed to create enough space. Together, these principles show how the topic is applied in
-  practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:fce54760c4480ee8d8694e50a6b056cd66f5d8c3db0f43f5d93a479b66fc5399"
+  needed to create enough space. To keep the backswing in front of you with forearm distance so
+  you have space to attack the incoming ball. Too much stroke close to the table leads to getting
+  jammed, and that stepping back creates enough space. Together, these principles show how the
+  topic is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:a2c6af040a1c508ac751eee54aeb081a6a1e98482e4434dc37e83120e22c8265"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -113,3 +115,32 @@ evidence:
       segment_ids:
         - XBi28mLBv7Q:00001
         - XBi28mLBv7Q:00003
+  - id: XaU6LtcP_n0-concept-create-space-and-avoid-jamming-reviewed
+    evidence_type: definition
+    excerpt: Create enough working room between the body, racket, and ball so the stroke can be timed and executed cleanly.
+    reason: The speaker says to keep the backswing in front of you with forearm distance so you have space to attack the incoming ball.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: XaU6LtcP_n0
+      start_ms: 67133
+      end_ms: 79000
+      url: https://www.youtube.com/watch?v=XaU6LtcP_n0&t=67s
+      segment_ids:
+        - XaU6LtcP_n0:00012
+  - id: 3wQrxObpgxM-concept-create-space-and-avoid-jamming-reviewed
+    evidence_type: explanation
+    excerpt: Use distance, timing, and body position to create room for the swing so the ball does not crowd the body and interrupt the stroke.
+    reason: The speaker says too much stroke close to the table leads to getting jammed, and that stepping back creates enough space.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 3wQrxObpgxM
+      start_ms: 14400
+      end_ms: 32166
+      url: https://www.youtube.com/watch?v=3wQrxObpgxM&t=14s
+      segment_ids:
+        - 3wQrxObpgxM:00003
+        - 3wQrxObpgxM:00005

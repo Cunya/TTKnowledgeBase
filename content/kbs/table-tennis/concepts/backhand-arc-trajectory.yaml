@@ -11,15 +11,16 @@ evidence_summary: >-
   Backhand arc trajectory brings together several connected ideas. A useful contrast is between a
   loop's arc and a push's straight line and explains that all good backhand techniques have an arc
   or semi-circle path. The rip must create an arc, describing clock-face and fan-like paths. The
-  instructor compares the motion to drawing a sword, emphasizes a continuous forward arc, and the
-  racket head must snap through. The backhand as drawing a circle and then a small arc, with a
-  bigger arc for slower balls and a smaller forearm-only arc for faster balls. The motion is
-  described as a natural arc with the racket head dropping then swinging up, and you need to
-  create an arc. Both wings follow an outside-in arc and that the backhand needs a small outside
-  arc. Arc awareness, describes the racket moving like a fan, and the trajectory follows the edge
-  of an opening fan. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:09b13dfa1841c0823a9bb14ff345929c41b23af975d27d2d69c691a52bd2956c"
+  backhand as drawing a circle and then a small arc, with a bigger arc for slower balls and a
+  smaller forearm-only arc for faster balls. The motion is described as a natural arc with the
+  racket head dropping then swinging up, and you need to create an arc. Arc awareness, describes
+  the racket moving like a fan, and the trajectory follows the edge of an opening fan. The
+  backhand drive trajectory as opening a fan and straight paths are incorrect; an arc is required.
+  The backhand arc should be like opening a fan and ties that arc to flicks and loops. A useful
+  contrast is between a straight front-to-back motion and a left-to-front-to-right arc. Additional
+  points reinforce the same theme. Together, these principles show how the topic is applied in
+  practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:c8d6634cc4b576e993b16c594ddacef097803e431581b441a9a8c27f4826663a"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -151,3 +152,68 @@ evidence:
       segment_ids:
         - 1UthOchBWWc:00047
         - 1UthOchBWWc:00048
+  - id: mQdrXMukRSY-concept-backhand-arc-trajectory-reviewed
+    evidence_type: definition
+    excerpt: The backhand swing path should follow a curved arc rather than straight lines in order to generate spin and maintain quality.
+    reason: The speaker directly names the backhand drive trajectory as opening a fan and says straight paths are incorrect; an arc is required.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: mQdrXMukRSY
+      start_ms: 130766
+      end_ms: 149633
+      url: https://www.youtube.com/watch?v=mQdrXMukRSY&t=130s
+      segment_ids:
+        - mQdrXMukRSY:00020
+        - mQdrXMukRSY:00022
+  - id: ATd38ewLMqs-c5-reviewed
+    evidence_type: definition
+    excerpt: The backhand drive uses a compact fan-like arc that moves forward and sideways instead of a straight push.
+    reason: The speaker repeatedly describes the stroke as a fan-like arc or outside arc, explicitly contrasting it with a straight push.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: ATd38ewLMqs
+      start_ms: 407633
+      end_ms: 435600
+      url: https://www.youtube.com/watch?v=ATd38ewLMqs&t=407s
+      segment_ids:
+        - ATd38ewLMqs:00057
+        - ATd38ewLMqs:00058
+        - ATd38ewLMqs:00060
+        - ATd38ewLMqs:00061
+  - id: pbILplLUhnI-concept-backhand-arc-trajectory-reviewed
+    evidence_type: definition
+    excerpt: The backhand swing should open into an arc rather than travel as a straight line, especially when preparing for flicks and loops.
+    reason: The speaker directly says the backhand arc should be like opening a fan and ties that arc to flicks and loops.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: pbILplLUhnI
+      start_ms: 231400
+      end_ms: 253166
+      url: https://www.youtube.com/watch?v=pbILplLUhnI&t=231s
+      segment_ids:
+        - pbILplLUhnI:00040
+        - pbILplLUhnI:00041
+        - pbILplLUhnI:00042
+  - id: urfOsNEfkYg-urfOsNEfkYg-concept-1-reviewed
+    evidence_type: explanation
+    excerpt: A backhand swing path that curves from left to front to right rather than moving straight front-to-back.
+    reason: The speaker explicitly contrasts a straight front-to-back motion with a left-to-front-to-right arc.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: urfOsNEfkYg
+      start_ms: 54760
+      end_ms: 65040
+      url: https://www.youtube.com/watch?v=urfOsNEfkYg&t=54s
+      segment_ids:
+        - urfOsNEfkYg:00020
+        - urfOsNEfkYg:00021
+        - urfOsNEfkYg:00022
+        - urfOsNEfkYg:00023

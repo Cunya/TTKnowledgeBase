@@ -12,10 +12,12 @@ evidence_summary: >-
   and that the stroke should be completed before the final abrupt stop. Completing the full stroke
   improves spin handling and gives directional rules for different spin types. The stroke must be
   completed and criticizes short, showy follow-through that does not affect the ball. To complete
-  every stroke and execute the full swing from backswing to follow-through. Together, these
+  every stroke and execute the full swing from backswing to follow-through. The motion stops too
+  early, so the stroke cannot be completed, and accelerating through the ball rather than
+  retracting immediately. Completing the full motion and against stopping halfway. Together, these
   principles show how the topic is applied in practice while preserving the relevant distinctions
   and constraints.
-evidence_summary_source_hash: "sha256:3c7ff0d4ccd131328d3346d67fb6ea417dd82b806b10c66430838d45256e1fa0"
+evidence_summary_source_hash: "sha256:55217284d6ac85a5a4e6c91efba661f8a0501d5850218c5c1dd6c41c7aa94b69"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -112,3 +114,33 @@ evidence:
       url: https://www.youtube.com/watch?v=XBi28mLBv7Q&t=393s
       segment_ids:
         - XBi28mLBv7Q:00060
+  - id: SmYaJcYqaqo-concept-complete-motion-reviewed
+    evidence_type: definition
+    excerpt: The requirement to let the stroke continue through contact instead of stopping at impact, so the motion remains complete and powered through the ball.
+    reason: The speaker says the motion stops too early, so the stroke cannot be completed, and emphasizes accelerating through the ball rather than retracting immediately.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: SmYaJcYqaqo
+      start_ms: 24100
+      end_ms: 41133
+      url: https://www.youtube.com/watch?v=SmYaJcYqaqo&t=24s
+      segment_ids:
+        - SmYaJcYqaqo:00003
+        - SmYaJcYqaqo:00097
+  - id: 9sU_T8b5UoQ-concept-complete-motion-reviewed
+    evidence_type: definition
+    excerpt: A beginner should complete the entire stroke motion rather than stopping halfway or reducing it to a push.
+    reason: The speaker explicitly emphasizes completing the full motion and warns against stopping halfway.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 9sU_T8b5UoQ
+      start_ms: 137400
+      end_ms: 157333
+      url: https://www.youtube.com/watch?v=9sU_T8b5UoQ&t=137s
+      segment_ids:
+        - 9sU_T8b5UoQ:00012
+        - 9sU_T8b5UoQ:00013

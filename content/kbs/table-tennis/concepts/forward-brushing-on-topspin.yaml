@@ -12,15 +12,15 @@ evidence_summary: >-
   than touching. To add forward movement and brush forward when hitting the ball. An underspin
   ball requires forward drive, not just lifting it up, and power with brushing direction. Every
   stroke needs forward momentum, with topspin requiring forward-and-closing motion and backspin
-  requiring forward brushing. You must cover the ball, brush over the top, and brush aggressively
-  to create heavy friction and spin. The forearm should drive forward, avoid upward finishing
-  motions, and use a compact direct hit or brushing friction depending on stroke size. Against
-  only lifting upward and the ball must be contacted and friction applied in a forward direction
-  for a successful loop. Spin requires an arcing motion and explicitly contrasts it with flat
-  forward movement, then repeats that the correct trajectory is forward and upward like a rainbow.
+  requiring forward brushing. The forearm should drive forward, avoid upward finishing motions,
+  and use a compact direct hit or brushing friction depending on stroke size. Vertical brushing is
+  ineffective and insists the brush must be directed forward into and through the ball. Spin
+  requires an arcing motion and explicitly contrasts it with flat forward movement, then repeats
+  that the correct trajectory is forward and upward like a rainbow. The serve depends on brushing
+  from low to high and forward, and explicitly labels that as the topspin-sidespin motion.
   Additional points reinforce the same theme. Together, these principles show how the topic is
   applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:a8ca3d9356739fb181213b9f8859b2a984bd4f9d40b33f760612fc38a1bbf466"
+evidence_summary_source_hash: "sha256:a830ea9a9f45c014656796d3d736d0663851f9417cbc3044c35f931025febcfd"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -205,3 +205,18 @@ evidence:
       segment_ids:
         - Xj55m2HY2YY:00008
         - Xj55m2HY2YY:00012
+  - id: OVkH-47SvqE-concept-forward-brushing-on-topspin-reviewed
+    evidence_type: definition
+    excerpt: A topspin contact path that brushes from low to high while also moving forward to generate spin and kick.
+    reason: The speaker says the serve depends on brushing from low to high and forward, and explicitly labels that as the topspin-sidespin motion.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: OVkH-47SvqE
+      start_ms: 155233
+      end_ms: 179700
+      url: https://www.youtube.com/watch?v=OVkH-47SvqE&t=155s
+      segment_ids:
+        - OVkH-47SvqE:00027
+        - OVkH-47SvqE:00030

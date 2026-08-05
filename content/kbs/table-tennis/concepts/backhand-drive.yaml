@@ -9,16 +9,16 @@ short_definition: A compact backhand stroke built on correct timing, spacing, an
 evidence_summary: >-
   Backhand drive brings together several connected ideas. The backhand drive as the topic and
   timing and spacing must be correct first. The backhand drive and gives the key mechanics of
-  wrist position and drive-through motion. The backhand drive as a small-motion shot that hits the
-  back of the ball with forward impact. The backhand drive and its correct timing relative to the
-  bounce peak and forward swing. The backhand drive and stance, backswing, and power . A useful
-  contrast is between the drive and the rip and describes it as simply hitting through the ball.
-  The backhand drive trajectory as forward with an upward angle and some sideways component for
-  cross-court shots, and rejects a straight push or push-then-turn model. Backhand drive as the
-  example for early contact and hitting should be done close to the table using the opponent's
-  power. Additional points reinforce the same theme. Together, these principles show how the topic
-  is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:42cddb778b99e4063149dae0335463c895929e0fbf651d3debacca3fc41ef321"
+  wrist position and drive-through motion. A flat rush serve uses a standard backhand drive, while
+  a kicking serve requires closing the angle and raising contact height. The backhand drive and
+  stance, backswing, and power . The drive as a forward-hitting motion with a proper contact zone
+  and no downward motion. A concrete follow-through target for the backhand drive: around the
+  right shoulder and about two-thirds the height of the forehand finish. And repeatedly defines
+  the backhand drive as a standard stroke that must be learned correctly from the start. The
+  backhand drive swing path as crucial and it with straight push/block errors. Additional points
+  reinforce the same theme. Together, these principles show how the topic is applied in practice
+  while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:e0ee81f3b47cb13c75677253bc6dcfb5c842b3be83b3c2f938ca01393f806464"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -350,3 +350,92 @@ evidence:
       segment_ids:
         - XBi28mLBv7Q:00082
         - XBi28mLBv7Q:00084
+  - id: GBudN8i0C1Y-concept-backhand-drive-reviewed
+    evidence_type: definition
+    excerpt: A compact backhand stroke used to handle topspin and fast exchanges, with timing and control emphasized over rushing.
+    reason: The speaker explicitly frames the lesson around the backhand drive and says the rhythm should hit at the peak of the bounce.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: GBudN8i0C1Y
+      start_ms: 140800
+      end_ms: 147800
+      url: https://www.youtube.com/watch?v=GBudN8i0C1Y&t=140s
+      segment_ids:
+        - GBudN8i0C1Y:00018
+  - id: mQdrXMukRSY-concept-backhand-drive-reviewed
+    evidence_type: definition
+    excerpt: A foundational backhand stroke that uses a controlled arc, stable racket face, and mainly forearm-led motion rather than wrist twisting.
+    reason: The speaker explicitly contrasts the basic backhand drive with spin strokes, gives its arc trajectory, and describes its starting height and racket-face stability.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: mQdrXMukRSY
+      start_ms: 423866
+      end_ms: 431433
+      url: https://www.youtube.com/watch?v=mQdrXMukRSY&t=423s
+      segment_ids:
+        - mQdrXMukRSY:00069
+  - id: ATd38ewLMqs-c1-reviewed
+    evidence_type: definition
+    excerpt: A standard backhand stroke executed as a full rotational drive, not as a push forward.
+    reason: The speaker explicitly introduces and repeatedly defines the backhand drive as a standard stroke that must be learned correctly from the start.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: ATd38ewLMqs
+      start_ms: 0
+      end_ms: 19966
+      url: https://www.youtube.com/watch?v=ATd38ewLMqs&t=0s
+      segment_ids:
+        - ATd38ewLMqs:00000
+        - ATd38ewLMqs:00003
+  - id: ATd38ewLMqs-c7-reviewed
+    evidence_type: explanation
+    excerpt: The backhand drive is the base motion that makes later flicks and loops easier to develop.
+    reason: The speaker says the basic backhand drive is the foundation or 'chassis' for flicks and loops, and that starting with a push makes later correction harder.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: ATd38ewLMqs
+      start_ms: 29933
+      end_ms: 59900
+      url: https://www.youtube.com/watch?v=ATd38ewLMqs&t=29s
+      segment_ids:
+        - ATd38ewLMqs:00006
+        - ATd38ewLMqs:00083
+        - ATd38ewLMqs:00009
+  - id: IHQASHkdLYk-concept-backhand-drive-reviewed
+    evidence_type: definition
+    excerpt: A direct backhand attacking return that uses a firm, compact motion rather than a wristy flick.
+    reason: The speaker explicitly contrasts backhand drive or punch with flicking, and says the shot should use pace with a compact block/punch motion.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: IHQASHkdLYk
+      start_ms: 748533
+      end_ms: 774733
+      url: https://www.youtube.com/watch?v=IHQASHkdLYk&t=748s
+      segment_ids:
+        - IHQASHkdLYk:00100
+        - IHQASHkdLYk:00101
+  - id: pbILplLUhnI-concept-backhand-drive-reviewed
+    evidence_type: definition
+    excerpt: A backhand drive should use a structured forward swing path rather than a straight push or block, with the motion built on a correct foundation.
+    reason: The speaker explicitly identifies the backhand drive swing path as crucial and contrasts it with straight push/block errors.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: pbILplLUhnI
+      start_ms: 0
+      end_ms: 10233
+      url: https://www.youtube.com/watch?v=pbILplLUhnI&t=0s
+      segment_ids:
+        - pbILplLUhnI:00000
+        - pbILplLUhnI:00002

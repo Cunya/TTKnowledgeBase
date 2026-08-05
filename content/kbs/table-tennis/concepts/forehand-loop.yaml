@@ -1886,6 +1886,38 @@ evidence:
       segment_ids:
         - XBi28mLBv7Q:00102
         - XBi28mLBv7Q:00103
+  - id: XaU6LtcP_n0-concept-forehand-loop-reviewed
+    evidence_type: explanation
+    excerpt: A forehand topspin attacking stroke used to add spin and power, especially when waiting for the ball and using the forearm effectively.
+    reason: The speaker references the forehand, says to wait for the ball and add spin, and emphasizes forearm acceleration and relaxation before exploding.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: XaU6LtcP_n0
+      start_ms: 266700
+      end_ms: 296600
+      url: https://www.youtube.com/watch?v=XaU6LtcP_n0&t=266s
+      segment_ids:
+        - XaU6LtcP_n0:00050
+        - XaU6LtcP_n0:00052
+        - XaU6LtcP_n0:00054
+  - id: dGUGcaM8EOc-concept-forehand-loop-reviewed
+    evidence_type: definition
+    excerpt: A forehand topspin attack used here in continuous single-ball practice.
+    reason: The speaker explicitly introduces the topic as continuous forehand looping in single-ball practice.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: dGUGcaM8EOc
+      start_ms: 880
+      end_ms: 8480
+      url: https://www.youtube.com/watch?v=dGUGcaM8EOc&t=0s
+      segment_ids:
+        - dGUGcaM8EOc:00000
+        - dGUGcaM8EOc:00001
+        - dGUGcaM8EOc:00002
 relations:
   - relation_type: used_with
     target_concept_id: concept-contact-point

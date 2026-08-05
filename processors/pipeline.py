@@ -346,6 +346,14 @@ def build_review_queue(
                         ),
                         review_notes=existing.get("review_notes", ""),
                     )
+                    for key in (
+                        "adjudication_attempts",
+                        "adjudication_method",
+                        "adjudication_reason",
+                        "last_adjudicated_at",
+                    ):
+                        if key in existing:
+                            item[key] = existing[key]
                 else:
                     item["review_notes"] = "Candidate content changed; previous decision requires review."
             queue.append(item)
@@ -392,6 +400,9 @@ def process_pending_candidates(
     min_confidence: float = 0.85,
     min_alias_score: int = 90,
     retry_deferred: bool = False,
+    max_adjudication_attempts: int = 2,
+    max_candidates: int | None = None,
+    video_ids: set[str] | None = None,
 ) -> dict[str, int]:
     """Triage cached candidates and promote high-confidence new concepts.
 
@@ -411,12 +422,53 @@ def process_pending_candidates(
     existing_evidence_ids = {
         evidence.id for concept in concepts for evidence in concept.evidence
     }
-    counts = {"accepted": 0, "deferred": 0, "rejected": 0, "evidence_added": 0, "concepts_added": 0}
+    counts = {
+        "accepted": 0,
+        "deferred": 0,
+        "human_review": 0,
+        "rejected": 0,
+        "evidence_added": 0,
+        "concepts_added": 0,
+        "considered": 0,
+    }
+
+    def defer(item: dict, reason: str) -> None:
+        attempts = int(item.get("adjudication_attempts") or 0)
+        item["adjudication_method"] = "deterministic_candidate_review_v2"
+        item["adjudication_reason"] = reason
+        item["last_adjudicated_at"] = datetime.now(UTC).isoformat()
+        if attempts >= max_adjudication_attempts:
+            item["decision"] = "human_review"
+            item["review_notes"] = (
+                f"Human review required after {attempts} unchanged automated adjudication "
+                f"attempts: {reason}"
+            )
+            counts["human_review"] += 1
+        else:
+            item["decision"] = "deferred"
+            item["review_notes"] = f"Deferred automated adjudication: {reason}"
+            counts["deferred"] += 1
+
+    def reject(item: dict, reason: str) -> None:
+        item["decision"] = "rejected"
+        item["canonical_concept_id"] = None
+        item["adjudication_method"] = "deterministic_candidate_review_v2"
+        item["adjudication_reason"] = reason
+        item["last_adjudicated_at"] = datetime.now(UTC).isoformat()
+        item["review_notes"] = f"Rejected automatically: {reason}"
+        counts["rejected"] += 1
+
     for item in queue.get("items", []):
+        if video_ids is not None and str(item.get("video_id") or "") not in video_ids:
+            continue
         if item.get("decision") != "pending" and not (
             retry_deferred and item.get("decision") == "deferred"
         ):
             continue
+        if max_candidates is not None and counts["considered"] >= max_candidates:
+            break
+        counts["considered"] += 1
+        item["adjudication_attempts"] = int(item.get("adjudication_attempts") or 0) + 1
         candidate = item.get("candidate") or {}
         confidence = float(candidate.get("confidence") or 0)
         target_id, alias_score = _best_existing_concept_for_candidate(candidate, concepts)
@@ -441,38 +493,31 @@ def process_pending_candidates(
         video_id = item.get("video_id")
         video = videos.get(video_id)
         if not can_accept and not can_create:
-            item["decision"] = "deferred"
             if not target_id and not is_new:
                 reason = "Candidate is ambiguous; automatic creation requires an explicit new resolution."
             elif confidence < min_confidence:
                 reason = f"Confidence {confidence:.2f} is below the automatic review threshold {min_confidence:.2f}."
             else:
                 reason = "Candidate is marked new or ambiguous and needs explicit taxonomy review."
-            item["review_notes"] = f"P1-02 deferred: {reason}"
-            counts["deferred"] += 1
+            defer(item, reason)
             continue
         created_new = False
         if not video:
-            item["decision"] = "deferred"
-            item["review_notes"] = "P1-02 deferred: normalized source video is unavailable."
-            counts["deferred"] += 1
+            reject(item, "The candidate has no normalized source video.")
             continue
         candidate_evidence = max(
             candidate.get("evidence", []), key=lambda evidence: evidence.get("confidence", 0)
         )
         span = _candidate_source_span(video, candidate_evidence.get("segment_ids", []))
         if not span:
-            item["decision"] = "deferred"
-            item["review_notes"] = "P1-02 deferred: candidate cites no valid normalized transcript span."
-            counts["deferred"] += 1
+            reject(item, "The candidate cites no valid normalized transcript span.")
             continue
         if span.needs_context:
-            item["decision"] = "deferred"
-            item["review_notes"] = (
-                "P1-14 deferred: caption boundary review required before acceptance; "
-                f"flags={','.join(span.flags)}; {span.reason}"
+            defer(
+                item,
+                "Caption boundary review is required before acceptance; "
+                f"flags={','.join(span.flags)}; {span.reason}",
             )
-            counts["deferred"] += 1
             continue
         if can_create:
             base_slug = slugify(str(candidate["canonical_label"])) or f"concept-{video_id.lower()}"
@@ -544,6 +589,9 @@ def process_pending_candidates(
             concept_by_id[target_id] = concepts[-1]
         item["decision"] = "accepted"
         item["canonical_concept_id"] = target_id
+        item["adjudication_method"] = "deterministic_candidate_review_v2"
+        item["adjudication_reason"] = "Source-grounded candidate passed confidence and boundary gates."
+        item["last_adjudicated_at"] = datetime.now(UTC).isoformat()
         item["review_notes"] = (
             "P1-02 accepted: high-confidence match incorporated as one focused transcript moment; "
             "candidate relations remain subject to graph review."

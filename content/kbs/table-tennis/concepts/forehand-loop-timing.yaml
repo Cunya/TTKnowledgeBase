@@ -1449,6 +1449,39 @@ evidence:
       segment_ids:
         - 52Lq-QQGqpw:00087
         - 52Lq-QQGqpw:00088
+  - id: XaU6LtcP_n0-concept-forehand-loop-timing-reviewed
+    evidence_type: explanation
+    excerpt: Forehand looping should be timed by waiting for the ball, then accelerating with correct rhythm instead of rushing.
+    reason: The speaker tells the player to wait for the ball, not rush, and to find the ball before starting the stroke.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: XaU6LtcP_n0
+      start_ms: 235700
+      end_ms: 248233
+      url: https://www.youtube.com/watch?v=XaU6LtcP_n0&t=235s
+      segment_ids:
+        - XaU6LtcP_n0:00047
+  - id: dGUGcaM8EOc-concept-forehand-loop-timing-reviewed
+    evidence_type: explanation
+    excerpt: The pace and timing pattern needed to sustain repeated forehand loops.
+    reason: The speaker says continuous looping is about finding rhythm and contact point and instructs the student to slow the rhythm first.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: dGUGcaM8EOc
+      start_ms: 10880
+      end_ms: 30480
+      url: https://www.youtube.com/watch?v=dGUGcaM8EOc&t=10s
+      segment_ids:
+        - dGUGcaM8EOc:00005
+        - dGUGcaM8EOc:00006
+        - dGUGcaM8EOc:00008
+        - dGUGcaM8EOc:00009
+        - dGUGcaM8EOc:00012
+        - dGUGcaM8EOc:00013
 relations:
   - relation_type: part_of
     target_concept_id: concept-forehand-loop

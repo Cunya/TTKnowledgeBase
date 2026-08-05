@@ -1241,6 +1241,21 @@ evidence:
       segment_ids:
         - t3iPasg0y_Y:00110
         - t3iPasg0y_Y:00115
+  - id: XaU6LtcP_n0-concept-post-serve-recovery-reviewed
+    evidence_type: definition
+    excerpt: After serving, the player should recover immediately into a usable position before the next ball arrives.
+    reason: The speaker explicitly repeats 'Serve, recover' and says after serving you must recover before hitting again.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: XaU6LtcP_n0
+      start_ms: 144233
+      end_ms: 150900
+      url: https://www.youtube.com/watch?v=XaU6LtcP_n0&t=144s
+      segment_ids:
+        - XaU6LtcP_n0:00025
+        - XaU6LtcP_n0:00026
 relations:
   - relation_type: used_with
     target_concept_id: concept-short-serve-third-ball-attack

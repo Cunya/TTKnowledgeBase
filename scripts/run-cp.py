@@ -2,7 +2,6 @@
 from __future__ import annotations
 
 import argparse
-import hashlib
 import json
 import os
 import subprocess
@@ -10,11 +9,13 @@ import sys
 import threading
 from datetime import UTC, datetime
 from pathlib import Path
-from urllib.parse import parse_qs, quote, urlparse
+from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+from processors.inventory import build_inventory_ledger, select_ledger_worksets  # noqa: E402
 from processors.utils import read_yaml, write_json  # noqa: E402
+from processors.workspace import load_knowledge_base  # noqa: E402
 
 STAGE_TIMEOUTS_SECONDS = {
     "discover": 20 * 60,
@@ -166,79 +167,77 @@ def main() -> int:
     report = {"knowledge_base": args.kb, "started_at": datetime.now(UTC).isoformat(), "status": "running"}
     manifest = ROOT / "data" / "manifests" / args.kb / "cp.latest.json"
     try:
-        status = run("process-pending before acquisition", cmd(args.kb, "process-pending"), report)
-        if status not in (0, 2):
-            raise RuntimeError(f"cached triage failed (exit {status}; see stage output)")
-        cached = cached_unextracted(args.kb)
+        paths = load_knowledge_base(ROOT, args.kb)
+        ledger = build_inventory_ledger(paths)
+        workset = select_ledger_worksets(ledger, args.batch_size * 4, 50)
+        report["inventory_before"] = ledger["summary"]
+        report["workset"] = workset
+        write_json(manifest, report)
+
+        if workset["adjudication"]:
+            status = run(
+                "bounded deferred adjudication before acquisition",
+                cmd(
+                    args.kb,
+                    "process-pending",
+                    "--retry-deferred",
+                    "--max-adjudication-attempts",
+                    "2",
+                    "--video-ids",
+                    ",".join(item["id"] for item in workset["adjudication"]),
+                ),
+                report,
+            )
+            if status not in (0, 2):
+                raise RuntimeError(f"cached triage failed (exit {status}; see stage output)")
+        cached = [item["id"] for item in workset["extraction"]]
         report["cached_unextracted"] = cached
         for video_id in cached:
             status = run(f"extract cached {video_id}", cmd(args.kb, "extract-concepts", "--video-id", video_id), report)
             if status not in (0, 2):
                 raise RuntimeError(f"cached extraction failed (exit {status}; see stage output)")
-        # Supply a larger candidate window because ingest now targets successful
-        # uncached videos rather than limiting total attempts. This lets failed
-        # or cooling-down entries be skipped without shrinking the work batch.
-        batch = selected_batch(args.kb, args.batch_size * 4)
-        report["selected_batch"] = [{"id": x["id"], "title": x.get("title", "")} for x in batch]
+        catalog = {item["video_id"]: item for item in ledger.get("videos", [])}
+        batch = [catalog[item["id"]] for item in workset["acquisition"]]
+        report["selected_batch"] = []
+        report["discovered_inventory_count"] = ledger["summary"]["inventory"]
+        report["discovered_unprocessed_count"] = len(batch)
+        report["discovered_batch"] = [
+            {"id": item["video_id"], "title": item.get("title", ""), "reason": "eligibility or transcript acquisition is due"}
+            for item in batch
+        ]
         if batch:
-            urls = [f"https://www.youtube.com/watch?v={quote(str(x['id']))}" for x in batch]
-            status = run("ingest selected batch", cmd(args.kb, "ingest", *urls), report)
+            urls = [str(item.get("url") or f"https://www.youtube.com/watch?v={quote(str(item['video_id']))}") for item in batch]
+            status = run("ingest ledger acquisition workset", cmd(args.kb, "ingest", *urls), report)
             if status not in (0, 1):
                 raise RuntimeError(f"ingest failed (exit {status}; see stage output)")
             for item in batch:
-                if (ROOT / "data" / "normalized" / args.kb / f"{item['id']}.json").exists():
-                    status = run(f"extract {item['id']}", cmd(args.kb, "extract-concepts", "--video-id", str(item["id"])), report)
+                video_id = str(item["video_id"])
+                if (ROOT / "data" / "normalized" / args.kb / f"{video_id}.json").exists():
+                    status = run(f"extract {video_id}", cmd(args.kb, "extract-concepts", "--video-id", video_id), report)
                     if status not in (0, 2):
                         raise RuntimeError(f"extraction failed (exit {status}; see stage output)")
-        elif not args.no_discover_when_empty:
-            discovered: list[dict] = []
-            for source in (read_yaml(ROOT / "config" / "kbs" / args.kb / "sources.yaml") or {}).get("sources", []):
-                if source.get("enabled"):
-                    status = run(f"discover {source['id']}", cmd(args.kb, "discover", str(source["url"])), report)
-                    if status != 0:
-                        raise RuntimeError(f"discovery failed (exit {status}; see stage output)")
-                    playlist_id = parse_qs(urlparse(str(source["url"])).query).get("list", [None])[0]
-                    source_key = playlist_id or hashlib.sha256(str(source["url"]).encode("utf-8")).hexdigest()[:12]
-                    filename = f"discovered-{source_key}.json"
-                    discovery_manifest = ROOT / "data" / "manifests" / args.kb / filename
-                    if discovery_manifest.exists():
-                        payload = json.loads(discovery_manifest.read_text(encoding="utf-8"))
-                        discovered.extend(payload.get("videos", []))
-            discovered.extend(catalog_videos(args.kb))
-            normalized = ROOT / "data" / "normalized" / args.kb
-            members_only_cooldown = active_members_only_ids(args.kb)
-            seen: set[str] = set()
-            batch = []
-            for item in sorted(discovered, key=lambda value: value.get("view_count") or 0, reverse=True):
-                video_id = str(item.get("id", ""))
-                if (
-                    video_id
-                    and video_id not in seen
-                    and video_id not in members_only_cooldown
-                    and not (normalized / f"{video_id}.json").exists()
-                ):
-                    seen.add(video_id)
-                    batch.append(item)
-            batch = batch[: args.batch_size * 4]
-            report["discovered_inventory_count"] = len({str(item.get("id")) for item in discovered if item.get("id")})
-            report["discovered_unprocessed_count"] = len(batch)
-            report["discovered_batch"] = [{"id": x["id"], "title": x.get("title", "")} for x in batch]
-            print(
-                f"Discovered inventory: {report['discovered_inventory_count']} unique; "
-                f"eligible unprocessed window: {report['discovered_unprocessed_count']}",
-                flush=True,
+        newly_extracted_ids = [*cached, *(str(item["video_id"]) for item in batch)]
+        final_stages = [("build review queue", ("build-review-queue",))]
+        if newly_extracted_ids:
+            final_stages.append(
+                (
+                    "process pending after extraction",
+                    (
+                        "process-pending",
+                        "--max-adjudication-attempts",
+                        "2",
+                        "--video-ids",
+                        ",".join(newly_extracted_ids),
+                    ),
+                )
             )
-            if batch:
-                urls = [str(x.get("url") or f"https://www.youtube.com/watch?v={quote(str(x['id']))}") for x in batch]
-                status = run("ingest discovered batch", cmd(args.kb, "ingest", *urls), report)
-                if status not in (0, 1):
-                    raise RuntimeError(f"ingest failed (exit {status}; see stage output)")
-                for item in batch:
-                    if (normalized / f"{item['id']}.json").exists():
-                        status = run(f"extract {item['id']}", cmd(args.kb, "extract-concepts", "--video-id", str(item["id"])), report)
-                        if status not in (0, 2):
-                            raise RuntimeError(f"extraction failed (exit {status}; see stage output)")
-        for name, stage in (("process-pending after extraction", ("process-pending",)), ("build review queue", ("build-review-queue",)), ("refresh summaries", ("build-evidence-summaries", "--write")), ("publish reviewed corpus", ("publish",))):
+        final_stages.extend(
+            [
+                ("refresh summaries", ("build-evidence-summaries", "--write")),
+                ("publish reviewed corpus", ("publish",)),
+            ]
+        )
+        for name, stage in final_stages:
             status = run(name, cmd(args.kb, *stage), report)
             if status not in (0, 2):
                 raise RuntimeError(f"{name} failed (exit {status}; see stage output)")
@@ -251,6 +250,11 @@ def main() -> int:
         return 1
     finally:
         report["finished_at"] = datetime.now(UTC).isoformat()
+        try:
+            paths = load_knowledge_base(ROOT, args.kb)
+            report["inventory_after"] = build_inventory_ledger(paths)["summary"]
+        except Exception as ledger_error:
+            report["inventory_refresh_error"] = str(ledger_error)
         write_json(manifest, report)
 
 if __name__ == "__main__":

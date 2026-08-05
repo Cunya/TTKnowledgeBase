@@ -11,11 +11,13 @@ def build_review_diagnostics(queue_path: Path, concept_dir: Path, output_path: P
     queue = read_yaml(queue_path) or {"items": []}
     # output_path is app/src/data/generated/<kb>-concept-review.json;
     # normalized transcripts live at the repository root under data/.
-    video_dir = output_path.parents[4] / "data" / "normalized" / "table-tennis"
+    kb_id = output_path.stem.removesuffix("-concept-review")
+    video_dir = output_path.parents[4] / "data" / "normalized" / kb_id
     videos = {video.id: video for video in load_videos(video_dir)} if video_dir.exists() else {}
     rows = []
     for item in queue.get("items", []):
-        if item.get("decision") != "deferred":
+        decision = str(item.get("decision") or "pending")
+        if decision not in {"deferred", "human_review"}:
             continue
         candidate = item.get("candidate") or {}
         label = str(candidate.get("canonical_label", "")).strip()
@@ -40,7 +42,9 @@ def build_review_diagnostics(queue_path: Path, concept_dir: Path, output_path: P
             if cited:
                 start_ms = min(segment.start_ms for segment in cited)
                 end_ms = max(segment.end_ms for segment in cited)
-        if "boundary" in note or "span" in note:
+        if decision == "human_review":
+            category = "human review"
+        elif "boundary" in note or "span" in note:
             category = "evidence boundary"
         elif best_score >= 90:
             category = "likely duplicate"
@@ -61,6 +65,8 @@ def build_review_diagnostics(queue_path: Path, concept_dir: Path, output_path: P
             "definition": str(candidate.get("definition", "")),
             "resolution": candidate.get("resolution", ""),
             "confidence": candidate.get("confidence", 0),
+            "decision": decision,
+            "adjudication_attempts": int(item.get("adjudication_attempts") or 0),
             "category": category,
             "reason": note,
             "supporting_moments": len(evidence),

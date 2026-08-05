@@ -1441,6 +1441,79 @@ evidence:
         - _U8F62ukqK4:00017
         - _U8F62ukqK4:00018
         - _U8F62ukqK4:00019
+  - id: UqXqp8saFbU-concept-ready-position-reviewed
+    evidence_type: definition
+    excerpt: The ready stance used before receive, with posture and racket prepared for the incoming serve.
+    reason: The speaker explicitly says to perfect the ready stance and describes the racket angle in that position.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: UqXqp8saFbU
+      start_ms: 331633
+      end_ms: 357700
+      url: https://www.youtube.com/watch?v=UqXqp8saFbU&t=331s
+      segment_ids:
+        - UqXqp8saFbU:00057
+        - UqXqp8saFbU:00061
+  - id: _77LMM6s1cw-concept-ready-position-reviewed
+    evidence_type: definition
+    excerpt: A prepared stance with relaxed feet, balanced weight, and readiness to move immediately for serve receive or rally play.
+    reason: The speaker explicitly describes the ready stance as feet wide, weight forward, heels up, and body in a constant state of readiness.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: _77LMM6s1cw
+      start_ms: 397133
+      end_ms: 406433
+      url: https://www.youtube.com/watch?v=_77LMM6s1cw&t=397s
+      segment_ids:
+        - _77LMM6s1cw:00044
+  - id: hi0AJuu60eE-cand-2-reviewed
+    evidence_type: definition
+    excerpt: A neutral prepared stance held in front of the body, with the racket up, that lets the player react quickly to the next ball.
+    reason: The speaker refers directly to the ready position, says to keep the racket up, and describes recovering in front of the body and above the table.
+    confidence: 0.95
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: hi0AJuu60eE
+      start_ms: 253033
+      end_ms: 263766
+      url: https://www.youtube.com/watch?v=hi0AJuu60eE&t=253s
+      segment_ids:
+        - hi0AJuu60eE:00029
+  - id: IHQASHkdLYk-concept-ready-position-reviewed
+    evidence_type: definition
+    excerpt: The balanced recovery stance used immediately after serving or between shots so the player can react quickly.
+    reason: The speaker explicitly names the ready position and describes it as feet wide, center of gravity low, and weight balanced evenly.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: IHQASHkdLYk
+      start_ms: 53500
+      end_ms: 70433
+      url: https://www.youtube.com/watch?v=IHQASHkdLYk&t=53s
+      segment_ids:
+        - IHQASHkdLYk:00006
+        - IHQASHkdLYk:00008
+  - id: spoumRQdZHc-concept-ready-position-reviewed
+    evidence_type: definition
+    excerpt: The balanced starting stance used before and during play, including foot placement, stance width, table distance, and body coordination.
+    reason: The speaker defines the right-handed ready stance, ideal stance width, and the elements that make up the complete ready position.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: spoumRQdZHc
+      start_ms: 48533
+      end_ms: 76133
+      url: https://www.youtube.com/watch?v=spoumRQdZHc&t=48s
+      segment_ids:
+        - spoumRQdZHc:00008
+        - spoumRQdZHc:00013
 relations:
   - relation_type: prerequisite_of
     target_concept_id: concept-forehand-loop

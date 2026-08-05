@@ -8,17 +8,17 @@ aliases:
 short_definition: A stroke becomes cramped when the player stands too close or lacks room to swing and rotate.
 evidence_summary: >-
   Jammed by insufficient space brings together several connected ideas. The jammed feeling and its
-  cause. Directly states that the forward-and-back recovery can jam you and remove power. If the
-  upper arm keeps rising, there will be no space to retract, describing the jammed condition
-  directly. Large backwards or downward backswing leads to getting jammed and that large strokes
-  get jammed. The spacing is wrong, the player is reaching, and getting jammed because the ball is
-  coming too deep or the player is squatting down. A hard feed will jam the player and break
-  technique down. Starting in the middle or pulling straight back can make the player feel jammed,
-  especially against a fast ball. Standing too close or facing a deep ball causes the stroke to be
-  jammed and prevents proper rotation and contact. Additional points reinforce the same theme.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:7fa34a785cabd10660bc1f877e3293eb156f964143e495f0f28b97d205bc5c4c"
+  cause. Being too close after a push with getting jammed on the forehand loop. Pulling the ball,
+  not allowing the ball to push you back, and needing space to generate power, all pointing to
+  jammed execution from poor spacing. Players often feel jammed and unable to generate force when
+  the ball is short and timing is wrong. Getting jammed when too close, and recommends staying
+  close to the table only in specific short-ball cases. Starting in the middle or pulling straight
+  back can make the player feel jammed, especially against a fast ball. Standing too close or
+  facing a deep ball causes the stroke to be jammed and prevents proper rotation and contact. A
+  close contact point causes jamming and later says the player got jammed. Additional points
+  reinforce the same theme. Together, these principles show how the topic is applied in practice
+  while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:fb3aa97f8db937319da701aafa630dd5469f28bb8d3895b01b0a683f59084b14"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -292,3 +292,47 @@ evidence:
         - o_lngzbIPnA:00113
         - o_lngzbIPnA:00114
         - o_lngzbIPnA:00115
+  - id: GBudN8i0C1Y-concept-jammed-by-insufficient-space-reviewed
+    evidence_type: definition
+    excerpt: Being unable to execute proper swing mechanics because the ball is too fast or the stroke space is too limited.
+    reason: The speaker explicitly defines being jammed as the opponent's pace preventing proper swing mechanics and forward momentum.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: GBudN8i0C1Y
+      start_ms: 254200
+      end_ms: 283533
+      url: https://www.youtube.com/watch?v=GBudN8i0C1Y&t=254s
+      segment_ids:
+        - GBudN8i0C1Y:00033
+        - GBudN8i0C1Y:00034
+        - GBudN8i0C1Y:00036
+  - id: PsZfazXZXEA-concept-jammed-by-insufficient-space-reviewed
+    evidence_type: explanation
+    excerpt: A stroke becomes jammed when there is not enough space near the body to complete the motion cleanly.
+    reason: The speaker says standing too close causes immediate jamming and describes the resulting squeezed feeling.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: PsZfazXZXEA
+      start_ms: 288833
+      end_ms: 295033
+      url: https://www.youtube.com/watch?v=PsZfazXZXEA&t=288s
+      segment_ids:
+        - PsZfazXZXEA:00058
+  - id: XaU6LtcP_n0-concept-jammed-by-insufficient-space-reviewed
+    evidence_type: definition
+    excerpt: A stroke is jammed when there is not enough space to swing or contact the ball cleanly, often because the backswing is too long or timing is late.
+    reason: The speaker explicitly says that a close contact point causes jamming and later says the player got jammed.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: XaU6LtcP_n0
+      start_ms: 40766
+      end_ms: 45633
+      url: https://www.youtube.com/watch?v=XaU6LtcP_n0&t=40s
+      segment_ids:
+        - XaU6LtcP_n0:00007

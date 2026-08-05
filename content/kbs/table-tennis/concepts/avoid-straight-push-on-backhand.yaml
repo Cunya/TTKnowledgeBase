@@ -7,10 +7,12 @@ aliases:
 short_definition: A straight back-to-front pushing action is criticized as ineffective, especially against backspin, because it limits power and blocks later development into flicks and loops.
 evidence_summary: >-
   Avoid straight push on backhand brings together several connected ideas. The old-school
-  back-and-forth push as ineffective and especially bad against backspin. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:af57012cc000b05f1d198ac57cf5ee7b855232460d9c35a2a2f3040da3e7aeb2"
+  back-and-forth push as ineffective and especially bad against backspin. A useful contrast is
+  between pushing and looping, saying the forward motion becomes a push when the arm does not open
+  and that pushing has limited force. Straight push/block as a common error and not to just push
+  straight forward. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:3471a20d8d10fe842ad4821dd6f0517900f9a190901d7299c95121ba9a70843b"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -47,3 +49,34 @@ evidence:
       segment_ids:
         - 82C2Zhfyq0s:00028
         - 82C2Zhfyq0s:00030
+  - id: hoLSxXKl2L0-concept-push-motion-is-inferior-on-topspin-reviewed
+    evidence_type: explanation
+    excerpt: A push-like stroke is the wrong response for topspin and produces limited force and quality compared with a loop arc.
+    reason: The speaker repeatedly contrasts pushing with looping, saying the forward motion becomes a push when the arm does not open and that pushing has limited force.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: hoLSxXKl2L0
+      start_ms: 556966
+      end_ms: 569766
+      url: https://www.youtube.com/watch?v=hoLSxXKl2L0&t=556s
+      segment_ids:
+        - hoLSxXKl2L0:00092
+        - hoLSxXKl2L0:00093
+        - hoLSxXKl2L0:00094
+  - id: pbILplLUhnI-concept-avoid-straight-push-on-backhand-reviewed
+    evidence_type: mistake
+    excerpt: A backhand stroke should not be reduced to a straight forward push; that removes spin and weakens the technique.
+    reason: The speaker names straight push/block as a common error and says not to just push straight forward.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: pbILplLUhnI
+      start_ms: 33266
+      end_ms: 46066
+      url: https://www.youtube.com/watch?v=pbILplLUhnI&t=33s
+      segment_ids:
+        - pbILplLUhnI:00008
+        - pbILplLUhnI:00009

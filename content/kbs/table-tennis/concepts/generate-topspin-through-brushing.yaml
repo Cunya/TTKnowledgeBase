@@ -1,0 +1,64 @@
+id: concept-generate-topspin-through-brushing
+slug: generate-topspin-through-brushing
+label: Generate topspin through brushing
+aliases:
+  - brush the ball
+  - brushing contact
+  - friction
+short_definition: Topspin is produced by brushing the ball with an arc and sideways component, not by a flat push.
+evidence_summary: >-
+  Generate topspin through brushing brings together several connected ideas. You whip rather than
+  push, and explicitly links brushing/friction to topspin and higher margin for error. To start
+  with pure friction and to learn to brush the ball. Together, these principles show how the topic
+  is applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:c5b065a4d4168a0c6020f622878c17cf6ea4d798efd7438c8740b71764195efd"
+evidence_summary_generator: "deterministic"
+concept_type: stroke
+facets:
+  category:
+    - stroke
+    - fundamentals
+  spin:
+    - topspin
+  level:
+    - beginner
+    - intermediate
+difficulty: intermediate
+review_status: approved
+generated_by:
+  processor: automatic_candidate_review
+  version: 1.0.0
+  input_hash: a0404dd53e77ae30a021fa65e110d4b40bcb578cd4844730fd07547a892957e2
+  prompt_version: candidate-review-v1
+evidence:
+  - id: ATd38ewLMqs-c6-reviewed
+    evidence_type: explanation
+    excerpt: Topspin is produced by brushing the ball with an arc and sideways component, not by a flat push.
+    reason: The speaker says you whip rather than push, and explicitly links brushing/friction to topspin and higher margin for error.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: ATd38ewLMqs
+      start_ms: 440900
+      end_ms: 461733
+      url: https://www.youtube.com/watch?v=ATd38ewLMqs&t=440s
+      segment_ids:
+        - ATd38ewLMqs:00063
+        - ATd38ewLMqs:00064
+        - ATd38ewLMqs:00089
+  - id: AoJq7UfIhp8-concept-generate-topspin-through-brushing-reviewed
+    evidence_type: definition
+    excerpt: Create spin by brushing the ball with friction rather than driving through it with a flat hit.
+    reason: The speaker says to start with pure friction and to learn to brush the ball.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: AoJq7UfIhp8
+      start_ms: 6200
+      end_ms: 20766
+      url: https://www.youtube.com/watch?v=AoJq7UfIhp8&t=6s
+      segment_ids:
+        - AoJq7UfIhp8:00001
+        - AoJq7UfIhp8:00003

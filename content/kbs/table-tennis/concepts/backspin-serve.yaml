@@ -7,18 +7,16 @@ aliases:
 short_definition: A serve whose main objective is to generate spin, especially backspin, rather than simply to place the ball.
 evidence_summary: >-
   Backspin serve brings together several connected ideas. The key goal of a backspin serve as
-  making the ball spin. The preparation as side spin racket shape, then adjusting racket angle and
-  applying downward pressure for sidespin or underspin. To prepare like a backspin serve and to
-  set up like a normal backspin serve before changing at the last moment. Backspin is named
-  explicitly, contrasted with topspin, and discussed as a serve type with characteristic
-  appearance and force. Serving sidespin-backspin and making a topspin serve look like a backspin
-  serve. To backspin, says the racket must be higher than the ball, and brushing downward from
-  above the ball to make it spin. Spin comes from brushing the bottom of the ball and side or back
-  brushing leads to weak spin. Backspin by a low first bounce, high arc over the net, and a
-  downward brushing motion. Additional points reinforce the same theme. Together, these principles
-  show how the topic is applied in practice while preserving the relevant distinctions and
-  constraints.
-evidence_summary_source_hash: "sha256:cbd0df750b548074a6275dea1354c75f12128837dfd8410b79879a26883eca24"
+  making the ball spin. The topic as serving a backspin ball and the basic execution. To prepare
+  like a backspin serve and to set up like a normal backspin serve before changing at the last
+  moment. Chopping or cutting through a single point creates heavy backspin. Out the full
+  serve-follow-up pattern and distinguishes the low, spinny loop from a high loop or power loop.
+  Backspin serves as examples in the receive strategy discussion. Slow wrist-and-finger motion or
+  a plain downward chop as still creating backspin, with varying spin levels. The serve as
+  backspin and bottom-brushing with a relaxed wrist. Additional points reinforce the same theme.
+  Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:916957bd75ffce086f32123e981a7217c92f4b3a46a6eec016841150d8e9b1f9"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -433,3 +431,48 @@ evidence:
       segment_ids:
         - 2_kzpEUImHk:00024
         - 2_kzpEUImHk:00028
+  - id: OVkH-47SvqE-concept-backspin-serve-reviewed
+    evidence_type: explanation
+    excerpt: A serve that uses a downward brushing motion to produce backspin rather than topspin-sidespin.
+    reason: The speaker contrasts topspin-sidespin with a backspin serve that requires downward brushing.
+    confidence: 0.88
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: OVkH-47SvqE
+      start_ms: 144600
+      end_ms: 155233
+      url: https://www.youtube.com/watch?v=OVkH-47SvqE&t=144s
+      segment_ids:
+        - OVkH-47SvqE:00025
+        - OVkH-47SvqE:00026
+  - id: IHQASHkdLYk-concept-backspin-serve-reviewed
+    evidence_type: definition
+    excerpt: A serve with backspin, here used as a sidespin-backspin serve that often leads to a push return.
+    reason: The speaker explicitly discusses serving sidespin-backspin and says the opponent will probably push it back, with long-serve pushes being tricky.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: IHQASHkdLYk
+      start_ms: 133
+      end_ms: 17200
+      url: https://www.youtube.com/watch?v=IHQASHkdLYk&t=0s
+      segment_ids:
+        - IHQASHkdLYk:00000
+        - IHQASHkdLYk:00001
+        - IHQASHkdLYk:00002
+  - id: 0KcRfTXRcsY-concept-backspin-serve-reviewed
+    evidence_type: definition
+    excerpt: A serve where the racket brushes under the ball with a relaxed wrist and bottom contact, producing heavy backspin.
+    reason: The transcript identifies the serve as backspin and describes bottom-brushing with a relaxed wrist.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 0KcRfTXRcsY
+      start_ms: 72666
+      end_ms: 80466
+      url: https://www.youtube.com/watch?v=0KcRfTXRcsY&t=72s
+      segment_ids:
+        - 0KcRfTXRcsY:00015

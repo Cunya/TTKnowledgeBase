@@ -284,6 +284,36 @@ evidence:
         - rLVOt37bQfk:00088
         - rLVOt37bQfk:00089
         - rLVOt37bQfk:00090
+  - id: wytyHpyZr9A-concept-backhand-loop-contact-reviewed
+    evidence_type: explanation
+    excerpt: The brushing action at the moment of contact that starts the loop and determines whether the ball is lifted and spun correctly.
+    reason: The speaker says contact is the start of the brush and emphasizes the instant of contact as critical.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: wytyHpyZr9A
+      start_ms: 976833
+      end_ms: 998000
+      url: https://www.youtube.com/watch?v=wytyHpyZr9A&t=976s
+      segment_ids:
+        - wytyHpyZr9A:00153
+        - wytyHpyZr9A:00156
+  - id: yqSECRch8WM-concept-backhand-loop-contact-reviewed
+    evidence_type: definition
+    excerpt: Backhand loop contact should be made on the upper half or back of the ball with solid contact, not a light tap or sideways pry.
+    reason: The speaker specifies upper-half contact, solid contact, and says weak contact becomes a light tap or fails to lift the ball.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: yqSECRch8WM
+      start_ms: 99400
+      end_ms: 122933
+      url: https://www.youtube.com/watch?v=yqSECRch8WM&t=99s
+      segment_ids:
+        - yqSECRch8WM:00012
+        - yqSECRch8WM:00013
 relations:
   - relation_type: part_of
     target_concept_id: concept-backhand-loop

@@ -607,6 +607,82 @@ evidence:
         - o_lngzbIPnA:00072
         - o_lngzbIPnA:00074
         - o_lngzbIPnA:00075
+  - id: PsZfazXZXEA-concept-forehand-drive-reviewed
+    evidence_type: definition
+    excerpt: A compact forehand drive stroke with a small range, using the upper arm to initiate and the forearm to finish.
+    reason: The speaker explicitly defines the drive and contrasts it with larger motions.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: PsZfazXZXEA
+      start_ms: 3200
+      end_ms: 28500
+      url: https://www.youtube.com/watch?v=PsZfazXZXEA&t=3s
+      segment_ids:
+        - PsZfazXZXEA:00001
+        - PsZfazXZXEA:00005
+  - id: 9sU_T8b5UoQ-concept-forehand-drive-reviewed
+    evidence_type: definition
+    excerpt: A basic forehand stroke that emphasizes a standardized forward hitting motion with stable shoulder, elbow, and wrist mechanics.
+    reason: The speaker explicitly says forehand and backhand drives form the foundation, then breaks down forehand drive mechanics.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 9sU_T8b5UoQ
+      start_ms: 330766
+      end_ms: 360666
+      url: https://www.youtube.com/watch?v=9sU_T8b5UoQ&t=330s
+      segment_ids:
+        - 9sU_T8b5UoQ:00026
+        - 9sU_T8b5UoQ:00028
+  - id: 9sU_T8b5UoQ-concept-forehand-drive-pivot-points-reviewed
+    evidence_type: definition
+    excerpt: A forehand drive should stabilize the shoulder, elbow, and wrist so the stroke does not become inconsistent or arming-based.
+    reason: 'The speaker explicitly says the forehand drive has three key pivot points: shoulder, elbow, and wrist, and summarizes that all three must be stable.'
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 9sU_T8b5UoQ
+      start_ms: 821666
+      end_ms: 851666
+      url: https://www.youtube.com/watch?v=9sU_T8b5UoQ&t=821s
+      segment_ids:
+        - 9sU_T8b5UoQ:00058
+  - id: spoumRQdZHc-concept-forehand-drive-reviewed
+    evidence_type: explanation
+    excerpt: A forehand attacking drive played from an appropriate distance, often near the center line rather than from the forehand corner, to preserve space and rotation.
+    reason: The speaker says the forehand drive should be hit from near the center line rather than the forehand corner to avoid a cramped stroke and maximize hitting space.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: spoumRQdZHc
+      start_ms: 306133
+      end_ms: 319233
+      url: https://www.youtube.com/watch?v=spoumRQdZHc&t=306s
+      segment_ids:
+        - spoumRQdZHc:00049
+        - spoumRQdZHc:00050
+        - spoumRQdZHc:00051
+        - spoumRQdZHc:00052
+  - id: tQSnBjtseLI-concept-forehand-drive-reviewed
+    evidence_type: definition
+    excerpt: A forehand stroke built on a stable frame and a correct arm-closing path so the player can generate power and speed.
+    reason: The speaker explicitly names the forehand drive and links it to the same frame used for looping.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: tQSnBjtseLI
+      start_ms: 128000
+      end_ms: 141666
+      url: https://www.youtube.com/watch?v=tQSnBjtseLI&t=128s
+      segment_ids:
+        - tQSnBjtseLI:00015
+        - tQSnBjtseLI:00016
 relations:
   - relation_type: contrasts_with
     target_concept_id: concept-forehand-loop

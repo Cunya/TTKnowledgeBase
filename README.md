@@ -163,6 +163,7 @@ $env:PYTHONUTF8='1'
 # 4. Build and inspect the review queue.
 .\.venv\Scripts\python.exe -m processors.cli build-review-queue --kb table-tennis
 .\.venv\Scripts\python.exe -m processors.cli process-pending --kb table-tennis
+.\.venv\Scripts\python.exe -m processors.cli build-inventory-ledger --kb table-tennis
 
 # 5. Automatic review promotes only high-confidence, source-grounded new concepts;
 #    ambiguous candidates remain deferred. Use --retry-deferred for a backfill.
@@ -170,9 +171,11 @@ $env:PYTHONUTF8='1'
 .\.venv\Scripts\python.exe -m processors.cli publish --kb table-tennis
 ```
 
-`process-pending` also refreshes the local `/concept-review/` diagnostics snapshot automatically.
+`process-pending` also refreshes the local `/concept-review/` diagnostics snapshot automatically. Automated monitor passes retry deferred candidates for an exact bounded video workset; unchanged ambiguity becomes explicit human review after two attempts. `build-inventory-ledger` writes the private, gitignored per-video eligibility/completion ledger used by the orchestrator and operator dashboards.
 
-The `cp` workflow drains eligible cached transcripts and candidates before selecting another controlled batch. It obeys the prioritized backlog, pacing, source-policy checks, and the block circuit breaker. Do not start a large scrape while a backlog gate is active.
+Ingestion honors each KB's ordered `language.transcript_priority` setting. It prefers an exact source-caption code such as `en`, then falls back to a regional source track such as `en-US` only when the exact code is unavailable; translation-language listings are not treated as source captions.
+
+The `cp` workflow drains eligible cached transcripts and candidates before generating another bounded run workset. It first tries configured batch-history entries that still need acquisition, then continues automatically from unseen discovery-catalog entries. The configured video list is not the complete processing history or the live workset. Every run obeys the prioritized backlog, pacing, source-policy checks, and the block circuit breaker.
 
 For the unattended/local full cycle, run the shared orchestrator from the repository root:
 
@@ -180,7 +183,7 @@ For the unattended/local full cycle, run the shared orchestrator from the reposi
 .\.venv\Scripts\python.exe scripts\run-cp.py --kb table-tennis
 ```
 
-It refreshes pending work, ingests and extracts the next controlled batch, rebuilds review diagnostics, writes eligible evidence summaries, and publishes the reviewed corpus. When the configured selected backlog is empty, it discovers enabled sources and chooses the most-viewed unseen videos where view counts are available. The Windows Task Scheduler entry runs this workflow daily at 21:00 Europe/Helsinki time. For an interactive start/stop loop with live output and local budget reset, run `node scripts/processor-monitor.mjs` and open `http://127.0.0.1:4322/`.
+It refreshes pending work, generates and processes the next bounded workset, rebuilds review diagnostics, writes eligible evidence summaries, and publishes the reviewed corpus. When configured batch-history entries are exhausted, it discovers enabled sources and chooses the most-viewed unseen videos where view counts are available; those continuation videos are not appended to `sources.yaml`. The private run manifest records the actual cached, configured, and discovered selections. The Windows Task Scheduler entry runs this workflow daily at 21:00 Europe/Helsinki time. For an interactive start/stop loop with live output and local budget reset, run `node scripts/processor-monitor.mjs` and open `http://127.0.0.1:4322/`.
 
 The monitor streams stage output while work is running. Discovery is bounded to 20 minutes and ingestion/other stages to 45 minutes; a timeout is recorded explicitly and Windows Stop terminates nested processor workers as well as the parent.
 
@@ -273,6 +276,7 @@ For the complete data lineage, scripted-versus-LLM responsibilities, review gate
 - [Pipeline documentation](docs/pipeline.md)
 - [Operations guide](docs/operations.md)
 - [Source video progress](docs/source-video-progress.md)
+- [Exhaustive source-completion plan](docs/exhaustive-source-completion-plan-2026-08-05.md)
 - [Prioritized backlog](docs/prioritized-backlog-2026-07-15.md)
 - [Moment-boundary analysis study](docs/moment-boundary-analysis-study-2026-07-16.md)
 - [Architecture and product plan](docs/youtube-knowledge-base-plan.md)

@@ -8,17 +8,17 @@ aliases:
 short_definition: Keeping the wrist cocked and the racket head dropped through the backswing, contact, and finish to increase spin and enable the backhand rip.
 evidence_summary: >-
   Backhand wrist cocking and racket-head drop brings together several connected ideas. Inward
-  cocking, keeping it cocked, and dropping the racket head because it generates more spin. A firm,
-  inward-cocked wrist and a tiny finger-pressure action at contact. The backhand requires a firm,
-  cocked wrist throughout the stroke and against collapse or wobble. On wrist rotation through
-  contact, including an upward snap at the end of the motion and the importance of that final snap
-  for spin. Whether the racket head is rotating and it must snap at contact. The player to drop
-  the forearm, not just the wrist, and against a flat backswing. The A-to-B motion includes a
-  dropped racket head and a fully cocked inward wrist. The backhand requires a cocked wrist that
-  stays stable throughout the motion. Additional points reinforce the same theme. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:9cffece7d3ad279c2e4ab34b29c4190907ff8a8f2d340f1465ced71adbc643e8"
+  cocking, keeping it cocked, and dropping the racket head because it generates more spin. A
+  cocked wrist that remains set through the backswing, contact, and finish. The backhand requires
+  a firm, cocked wrist throughout the stroke and against collapse or wobble. A dropped wrist on
+  the backswing is required, that amateurs often keep the wrist stiff, and that the racket head
+  should point down toward the floor/calf. The player to drop the forearm, not just the wrist, and
+  against a flat backswing. The A-to-B motion includes a dropped racket head and a fully cocked
+  inward wrist. The backhand requires a cocked wrist that stays stable throughout the motion. A
+  relaxed wrist cocked inward and slightly down and a raised wrist cannot execute the fast loop.
+  Additional points reinforce the same theme. Together, these principles show how the topic is
+  applied in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:36f6badef13f7e7b05fc1b2ed94585c8f19577eae3d823fa8eeae31c25df59df"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -213,3 +213,35 @@ evidence:
         - 1UthOchBWWc:00001
         - 1UthOchBWWc:00003
         - 1UthOchBWWc:00005
+  - id: U1zg0xsCqMc-concept-wrist-cocking-and-racket-head-drop-reviewed
+    evidence_type: explanation
+    excerpt: A serve mechanic where the wrist drops first and then snaps upward to generate spin and kick.
+    reason: Describes the wrist drooping, then cocking upward, with the wrist snapping up after the forearm stays still.
+    confidence: 0.93
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: U1zg0xsCqMc
+      start_ms: 66200
+      end_ms: 76160
+      url: https://www.youtube.com/watch?v=U1zg0xsCqMc&t=66s
+      segment_ids:
+        - U1zg0xsCqMc:00028
+        - U1zg0xsCqMc:00029
+        - U1zg0xsCqMc:00030
+  - id: AoJq7UfIhp8-concept-backhand-wrist-cocking-and-racket-head-drop-reviewed
+    evidence_type: explanation
+    excerpt: Keep the wrist relaxed, cocked inward and slightly down, rather than raised or stiff, to support the fast loop.
+    reason: The speaker directly instructs a relaxed wrist cocked inward and slightly down and says a raised wrist cannot execute the fast loop.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: AoJq7UfIhp8
+      start_ms: 484066
+      end_ms: 494566
+      url: https://www.youtube.com/watch?v=AoJq7UfIhp8&t=484s
+      segment_ids:
+        - AoJq7UfIhp8:00102
+        - AoJq7UfIhp8:00103
+        - AoJq7UfIhp8:00104

@@ -16,10 +16,11 @@ evidence_summary: >-
   are moving. The backhand-to-forehand move as the problem and later states that all such footwork
   follows the same principle. Left-then-right movement as the timing mistake and it creates
   same-arm, same-leg timing on fast balls. Compact backswing control on the side of the body
-  during the backhand-to-forehand transition and names getting jammed as the failure mode.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:d59a4c1ec3c101f2554e733146c8f816d8d2c190a49e67a29b186529b2b36491"
+  during the backhand-to-forehand transition and names getting jammed as the failure mode. Why
+  topspin balls go long during the backhand-to-forehand transition and attributes it to an
+  unlocked elbow. Together, these principles show how the topic is applied in practice while
+  preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:1399bf839720ca7ed0646248a31812fd64ff641db910a8e5adec94f6748f5a07"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -153,3 +154,19 @@ evidence:
         - ppsVi3rr2Nk:00097
         - ppsVi3rr2Nk:00098
         - ppsVi3rr2Nk:00099
+  - id: tQSnBjtseLI-concept-backhand-to-forehand-transition-timing-reviewed
+    evidence_type: explanation
+    excerpt: The timing and stability requirements when switching from backhand to forehand, where an unlocked elbow makes the motion larger, looser, and slower.
+    reason: The speaker explicitly analyzes why topspin balls go long during the backhand-to-forehand transition and attributes it to an unlocked elbow.
+    confidence: 0.86
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: tQSnBjtseLI
+      start_ms: 669900
+      end_ms: 689233
+      url: https://www.youtube.com/watch?v=tQSnBjtseLI&t=669s
+      segment_ids:
+        - tQSnBjtseLI:00097
+        - tQSnBjtseLI:00098
+        - tQSnBjtseLI:00099

@@ -13,10 +13,11 @@ evidence_summary: >-
   hard to attack, should be kept low, and forces the opponent to step in. Short forehand or middle
   serves create third-ball attack opportunities and that low serves are hard to return. Explicit
   receive behavior for short balls and half-long balls, including stepping in or not retreating.
-  Not to drop the hand too low, start higher, and avoid getting jammed or hitting wide. Together,
-  these principles show how the topic is applied in practice while preserving the relevant
-  distinctions and constraints.
-evidence_summary_source_hash: "sha256:fca986dfbf06591f9431750008fdba5b91e906d06eac06f8678b03d52b607599"
+  Not to drop the hand too low, start higher, and avoid getting jammed or hitting wide. The
+  vertical-then-flatter method works for half-spin balls and not pure heavy spin or pure no-spin.
+  Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:dc40c271574611247c75fdb858d101b5bf944de336bd2f7ff7e7787a7bd8068c"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -117,3 +118,21 @@ evidence:
         - _U8F62ukqK4:00007
         - _U8F62ukqK4:00008
         - _U8F62ukqK4:00009
+  - id: AxcoalL81cA-concept-serve-receive-for-short-and-half-long-balls-reviewed
+    evidence_type: explanation
+    excerpt: Receive decision-making for balls that are short, half-spin, or half-long, where the player uses different contact shapes depending on whether the ball is ambiguous, neutral, or spinny.
+    reason: The speaker says the vertical-then-flatter method works for half-spin balls and not pure heavy spin or pure no-spin.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: AxcoalL81cA
+      start_ms: 344919
+      end_ms: 362120
+      url: https://www.youtube.com/watch?v=AxcoalL81cA&t=344s
+      segment_ids:
+        - AxcoalL81cA:00124
+        - AxcoalL81cA:00125
+        - AxcoalL81cA:00126
+        - AxcoalL81cA:00127
+        - AxcoalL81cA:00128

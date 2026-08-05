@@ -10,17 +10,18 @@ short_definition: 'Stroke size should scale with distance from the table: compac
 evidence_summary: >-
   Distance-dependent stroke size brings together several connected ideas. Swing size and body
   mechanics to distance from the table. Multiple segments state that distance determines swing
-  size, forearm height, and whether upper arm contribution is needed. Being too close jams the
-  stroke and that looping needs about one meter of distance to allow a proper stroke. Balls by
-  depth and ties each depth to different spacing requirements. Rushing often comes from standing
-  too close, that players need at least arm's length, and that short balls can be handled by
-  stepping in. Standing too close leads to getting jammed and you must maintain distance from the
-  table to receive long serves. Fast balls and close-table situations require compact backswing,
-  while mid- and far-distance situations allow progressively larger swings. About close, medium,
-  or larger spacing, then states that closer spacing supports consistency while more space
-  supports power. Additional points reinforce the same theme. Together, these principles show how
-  the topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:c1e6df55601849efc5159261b5e91a2d354d93306e7a8e5a73b4ded959d1f8f2"
+  size, forearm height, and whether upper arm contribution is needed. A concrete rule: arm's
+  length for deep balls and forearm's length for short or half-long balls. Rushing often comes
+  from standing too close, that players need at least arm's length, and that short balls can be
+  handled by stepping in. You need proper distance from the ball, gives a forearm's length or one
+  arm's distance, and being too close jams the stroke and prevents power. Fast balls and
+  close-table situations require compact backswing, while mid- and far-distance situations allow
+  progressively larger swings. About close, medium, or larger spacing, then states that closer
+  spacing supports consistency while more space supports power. Fast balls as one of the hard
+  cases and to make the stroke smaller and match the rhythm. Additional points reinforce the same
+  theme. Together, these principles show how the topic is applied in practice while preserving the
+  relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:39a2a4f992086c9e571a971b4c94ab01bd29b74f1d5635520a66a569d7e4b55b"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -236,3 +237,34 @@ evidence:
       segment_ids:
         - HWIiN1i0_oM:00019
         - HWIiN1i0_oM:00020
+  - id: 3wQrxObpgxM-concept-distance-dependent-stroke-size-reviewed
+    evidence_type: explanation
+    excerpt: 'The optimal stroke size changes with distance from the table: a compact drive fits close-to-table play, while looping needs more space and a larger motion from mid-distance.'
+    reason: The speaker says you must step back, and that about one meter gives enough room for a full backswing and body rotation.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 3wQrxObpgxM
+      start_ms: 7100
+      end_ms: 32166
+      url: https://www.youtube.com/watch?v=3wQrxObpgxM&t=7s
+      segment_ids:
+        - 3wQrxObpgxM:00002
+        - 3wQrxObpgxM:00003
+        - 3wQrxObpgxM:00004
+        - 3wQrxObpgxM:00005
+  - id: -8Nnu9zUAP8-concept-distance-dependent-stroke-size-reviewed
+    evidence_type: explanation
+    excerpt: Adjust stroke size to the ball speed and distance; fast balls require a shorter, more compact swing.
+    reason: The speaker identifies fast balls as one of the hard cases and says to make the stroke smaller and match the rhythm.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: -8Nnu9zUAP8
+      start_ms: 605360
+      end_ms: 609640
+      url: https://www.youtube.com/watch?v=-8Nnu9zUAP8&t=605s
+      segment_ids:
+        - -8Nnu9zUAP8:00270

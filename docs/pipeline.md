@@ -6,7 +6,7 @@ This project is a **local, operator-run publishing pipeline**, not a website tha
 
 | Stage | Automated by the repository | Operator or reviewer responsibility |
 |---|---|---|
-| Source discovery | `yt-dlp` lists channel or playlist videos. | Choose relevant videos and record them in the KB source configuration. |
+| Source discovery | `yt-dlp` lists channel or playlist videos. `run-cp.py` can continue automatically from unseen discovery entries after configured batch entries are exhausted. | Define enabled source policy and audit exclusions; `sources.yaml` video entries are configured batch history, not an exhaustive catalog or the live run workset. |
 | Ingestion | Python fetches metadata and available timed captions and assigns stable segment IDs. | Supply video URLs, choose transcript languages, and investigate unavailable/member-only videos. |
 | Knowledge extraction | The processor invokes `codex exec` with the transcript, taxonomy, known concepts, and a strict output schema. | Authenticate Codex, choose the configured model, and rerun failed jobs. |
 | LLM budget | A private daily token ledger reserves an estimate before each extraction, rephrase, or benchmark call and records reported usage afterward. Exhausted daily or task caps defer work before subprocess execution. | Adjust `llm_budget` in `config/processors.yaml`, inspect `llm-budget --kb <id>`, and decide when deferred work should resume. |
@@ -19,7 +19,9 @@ This project is a **local, operator-run publishing pipeline**, not a website tha
 | Publishing | Python validates and sanitizes the reviewed corpus, then copies only allowlisted data into the Astro public folder. | Run the publish command after review. |
 | Site build | Astro generates static concept, video, search, and KB pages. | Preview locally and deploy the generated site through GitHub Pages. |
 
-The repeatable unattended path is `scripts/run-cp.py --kb <id>`. It drains eligible cached work first, then processes a small configured selection; when that selection is exhausted, it discovers enabled catalogs and continues with the highest-viewed unseen videos available under the source policy. The same entry point is used by the Windows 21:00 scheduled task and by the local monitor at `http://127.0.0.1:4322/`. The monitor can start or stop the loop, show live output, and reset only the current day's private local budget ledger.
+The repeatable unattended path is `scripts/run-cp.py --kb <id>`. It rebuilds the private full-inventory ledger, records an exact workset, and drains missing extraction, bounded retryable adjudication, then due transcript acquisition. View count orders otherwise-equal acquisition work but cannot permanently exclude an eligible video. `sources.yaml` remains batch-history provenance; it is not the live boundary. The same entry point is used by the Windows 21:00 scheduled task and by the local monitor at `http://127.0.0.1:4322/`.
+
+The ledger lives at `data/manifests/<kb>/inventory-ledger.json` and is gitignored. It contains no transcript text. A video is complete only after allowed source captions are normalized, current schema-valid candidates exist, every candidate is accepted/rejected/explicitly human-review, and accepted citations are incorporated into canonical YAML. Ordinary pending and deferred states remain automated work.
 
 The orchestrator streams each child stage's output as it arrives and bounds stage execution after process-tree-safe cleanup: discovery stages have a 20-minute limit, while ingestion and other stages have a 45-minute limit. A timeout exits with code 124 and records `exit_class: timeout`; the monitor Stop control uses Windows process-tree termination so nested yt-dlp/Python workers do not survive a sleep/resume interruption.
 
@@ -74,9 +76,9 @@ python -m processors.cli discover https://www.youtube.com/@GlobalTTStudio --kb t
 
 This writes a local discovery manifest. Discovery does not ingest transcripts or publish anything.
 
-### 2. Select and ingest videos
+### 2. Ingest videos manually or through the generated run workset
 
-Record the editorial selection in `config/kbs/<kb>/sources.yaml`, then pass the selected public URLs to ingestion:
+For a deliberate one-off configured batch, record its provenance in `config/kbs/<kb>/sources.yaml` and pass the public URLs to ingestion. This is not required for discovery-continuation videos selected automatically by `run-cp.py`:
 
 ```powershell
 python -m processors.cli ingest --kb table-tennis `
@@ -85,6 +87,8 @@ python -m processors.cli ingest --kb table-tennis `
 ```
 
 `processors/ingest.py` uses `yt-dlp` for video metadata and a cache-first adapter chain for timed captions. It writes one private normalized JSON document per video under `data/normalized/<kb>/`. Each caption receives an ID such as `VIDEO_ID:00042`; later evidence cites these IDs instead of inventing timestamps.
+
+Transcript language priorities come from `config/kbs/<kb>/kb.yaml` unless the operator supplies `--languages`. Selection preserves the configured order: an exact track such as `en` wins, and only when it is absent does the adapter choose a regional track with the same base language, such as `en-US`. The subtitle fallback uses the same priority when choosing among downloaded VTT files. A translation-language listing is not treated as an original caption track.
 
 The acquisition order is:
 

@@ -9,19 +9,17 @@ short_definition: Create spin with finger and wrist friction while the forearm s
 evidence_summary: >-
   Generate spin with fingers, wrist, and forearm brings together several connected ideas. Friction
   to the fingers and wrist and acceleration to the forearm, then repeats that this creates strong
-  spin and control. Spin comes from relaxed wrist motion, then wrist, forearm, and paddle
-  rotation, with the racket head creating friction through contact. Finger snap, relaxed grip, and
-  rapid acceleration at contact to massive spin. A useful contrast is between no finger/wrist
-  action and adding finger and wrist action, says to use fingers at contact, and describes a crisp
-  snap to create arc and lift. They say friction is being generated with the arm and should
-  instead come from fingers and wrist. A useful contrast is between full-body action and a
-  contact-focused finger snap and says the force comes from friction, not bigger arm motion.
-  Finger and wrist action is small, the forearm adds power, and the upper arm, forearm, fingers,
-  and wrist must cooperate. Finger power as a key spin , says fingers increase contact speed,
-  demonstrates wrist-only versus finger-driven looping, and adding forearm and body for greater
-  quality. Additional points reinforce the same theme. Together, these principles show how the
-  topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:a974f1d831d73e2ad61e81527b14b409d942ed0b58a464cb800121aa31a32778"
+  spin and control. Wrist-centered rotation, says to add friction, and notes wrist-as-axis slows
+  the shot and hurts precision. Finger snap, relaxed grip, and rapid acceleration at contact to
+  massive spin. Fingers start the spin, the arm/body supply power, and the wrist should not be the
+  main driver of spin production. Finger pressure, thumb-index coordination, and forearm motion
+  generate the push's power and spin. The sequence is fingers first, then wrist snapping/braking,
+  then an explosive forearm snap to create heavier spin and power. The short serve is executed
+  with fingers and wrist, not the upper arm or forearm. Friction and spin to finger snap, wrist
+  action, and a compact forearm follow-on rather than a big forearm push. Additional points
+  reinforce the same theme. Together, these principles show how the topic is applied in practice
+  while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:afcf933d0d461c8685d66323845a368dab0cd03bbabb76a929527d6dc247bb8a"
 evidence_summary_generator: "deterministic"
 concept_type: technique
 facets:
@@ -443,3 +441,38 @@ evidence:
         - Xj55m2HY2YY:00101
         - Xj55m2HY2YY:00103
         - Xj55m2HY2YY:00105
+  - id: rLrnvlDBmTs-concept-generate-spin-with-fingers-wrist-and-forearm-reviewed
+    evidence_type: explanation
+    excerpt: Using a small final flick from the fingers and wrist to rotate the racket head and create friction that lifts the ball over the net.
+    reason: The speaker teaches dropping the wrist, then using fingers to flick the racket head so it rotates and creates friction, which is the final ingredient for clearing heavy backspin.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: rLrnvlDBmTs
+      start_ms: 730666
+      end_ms: 759600
+      url: https://www.youtube.com/watch?v=rLrnvlDBmTs&t=730s
+      segment_ids:
+        - rLrnvlDBmTs:00098
+        - rLrnvlDBmTs:00099
+        - rLrnvlDBmTs:00132
+  - id: xiNV3H-GPy0-concept-generate-spin-with-fingers-wrist-and-forearm-reviewed
+    evidence_type: definition
+    excerpt: Spin comes primarily from fast finger action that drives the wrist, while the forearm should not be the main pushing engine.
+    reason: The speaker repeatedly attributes friction and spin to finger snap, wrist action, and a compact forearm follow-on rather than a big forearm push.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: xiNV3H-GPy0
+      start_ms: 310800
+      end_ms: 339960
+      url: https://www.youtube.com/watch?v=xiNV3H-GPy0&t=310s
+      segment_ids:
+        - xiNV3H-GPy0:00141
+        - xiNV3H-GPy0:00144
+        - xiNV3H-GPy0:00145
+        - xiNV3H-GPy0:00151
+        - xiNV3H-GPy0:00152
+        - xiNV3H-GPy0:00153

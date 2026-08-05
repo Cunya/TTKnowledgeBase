@@ -8,11 +8,11 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const port = Number(process.env.PROCESSOR_MONITOR_PORT || 4322);
 const kb = process.env.PROCESSOR_MONITOR_KB || 'table-tennis';
 const python = path.join(root, '.venv', 'Scripts', 'python.exe');
-const defaultIntervalMs = 15 * 60 * 1000;
+const defaultCooldownMs = 15 * 60 * 1000;
 
 const state = {
   running: false,
-  intervalMs: defaultIntervalMs,
+  cooldownMs: defaultCooldownMs,
   startedAt: null,
   nextRunAt: null,
   activeRun: null,
@@ -74,16 +74,29 @@ function runProcessor() {
 
 function scheduleNext() {
   clearTimeout(state.timer);
-  state.nextRunAt = new Date(Date.now() + state.intervalMs).toISOString();
-  state.timer = setTimeout(runProcessor, state.intervalMs);
+  state.nextRunAt = new Date(Date.now() + state.cooldownMs).toISOString();
+  state.timer = setTimeout(runProcessor, state.cooldownMs);
 }
 
-function start(intervalMs) {
-  state.intervalMs = Math.max(60_000, Math.min(24 * 60 * 60 * 1000, intervalMs || defaultIntervalMs));
-  if (state.running) return;
+function start(cooldownMs) {
+  const previousCooldownMs = state.cooldownMs;
+  state.cooldownMs = Math.max(60_000, Math.min(24 * 60 * 60 * 1000, cooldownMs || defaultCooldownMs));
+  if (state.running) {
+    if (state.child) {
+      if (state.cooldownMs !== previousCooldownMs) {
+        addLog(`Cooldown changed to ${Math.round(state.cooldownMs / 60000)} minutes; it will apply after the active cycle finishes.`);
+      }
+      return;
+    }
+    if (state.cooldownMs !== previousCooldownMs || !state.timer) {
+      scheduleNext();
+      addLog(`Cooldown changed to ${Math.round(state.cooldownMs / 60000)} minutes; next cycle rescheduled for ${state.nextRunAt}.`);
+    }
+    return;
+  }
   state.running = true;
   state.startedAt = new Date().toISOString();
-  addLog(`Loop started; interval ${Math.round(state.intervalMs / 60000)} minutes.`);
+  addLog(`Loop started; cooldown between runs ${Math.round(state.cooldownMs / 60000)} minutes.`);
   runProcessor();
 }
 
@@ -122,20 +135,24 @@ async function readJson(relativePath) {
   }
 }
 
-async function readProcessList() {
-  if (process.platform !== 'win32') return [];
+async function readProcessSnapshot() {
+  if (process.platform !== 'win32') return { processes: [], resources: null };
   return new Promise((resolve) => {
     execFile('powershell.exe', ['-NoProfile', '-Command',
-      "Get-Process python,node -ErrorAction SilentlyContinue | Select-Object Id,ProcessName,CPU,WorkingSet64,StartTime | ConvertTo-Json -Compress"],
+      "$os = Get-CimInstance Win32_OperatingSystem; $cpu = @(Get-CimInstance Win32_PerfFormattedData_PerfOS_Processor -ErrorAction SilentlyContinue | Where-Object { $_.Name -eq '_Total' } | Select-Object -First 1); $processes = @(Get-Process python,node -ErrorAction SilentlyContinue | Select-Object Id,ProcessName,CPU,WorkingSet64,StartTime); [pscustomobject]@{ resources = [pscustomobject]@{ cpuPercent = if ($cpu) { [double]$cpu[0].PercentProcessorTime } else { $null }; memoryTotalBytes = [double]$os.TotalVisibleMemorySize * 1024; memoryAvailableBytes = [double]$os.FreePhysicalMemory * 1024 }; processes = $processes } | ConvertTo-Json -Compress"],
       { windowsHide: true, timeout: 4000 }, (error, stdout) => {
-        if (error || !stdout.trim()) return resolve([]);
+        if (error || !stdout.trim()) return resolve({ processes: [], resources: null });
         try {
-          const value = JSON.parse(stdout);
-          resolve((Array.isArray(value) ? value : [value]).map((item) => ({
-            pid: item.Id, name: item.ProcessName, cpuSeconds: item.CPU || 0,
-            memoryBytes: item.WorkingSet64 || 0, startedAt: item.StartTime || null,
-          })));
-        } catch { resolve([]); }
+          const snapshot = JSON.parse(stdout);
+          const items = Array.isArray(snapshot.processes) ? snapshot.processes : snapshot.processes ? [snapshot.processes] : [];
+          resolve({
+            resources: snapshot.resources || null,
+            processes: items.map((item) => ({
+              pid: item.Id, name: item.ProcessName, cpuSeconds: item.CPU || 0,
+              memoryBytes: item.WorkingSet64 || 0, startedAt: item.StartTime || null,
+            })),
+          });
+        } catch { resolve({ processes: [], resources: null }); }
       });
   });
 }
@@ -229,13 +246,14 @@ function routeLockout(retryState) {
 }
 
 async function snapshot() {
-  const [budget, progress, daily, cp, processes, retries] = await Promise.all([
+  const [budget, progress, daily, cp, processSnapshot, retries, inventory] = await Promise.all([
     readJson(`data/manifests/${kb}/llm-budget.json`),
     readJson(`app/src/data/generated/${kb}-progress.json`),
     readJson(`data/manifests/${kb}/daily-processing.latest.json`),
     readJson(`data/manifests/${kb}/cp.latest.json`),
-    readProcessList(),
+    readProcessSnapshot(),
     readJson(`data/manifests/${kb}/ingest-retries.json`),
+    readJson(`data/manifests/${kb}/inventory-ledger.json`),
   ]);
   const day = budget?.days?.[new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Helsinki' }).format(new Date())];
   const used = day?.actual_tokens || 0;
@@ -247,11 +265,12 @@ async function snapshot() {
     activeRun: state.activeRun,
     currentStage: currentStage(state.activeRun?.output),
     runProgress: runProgress(state.activeRun?.output),
-    processes,
+    processes: processSnapshot.processes,
+    resources: processSnapshot.resources,
     lastRun: state.lastRun,
     startedAt: state.startedAt,
     nextRunAt: state.nextRunAt,
-    intervalMs: state.intervalMs,
+    cooldownMs: state.cooldownMs,
     retryCount: state.retryCount,
     routeLockout: routeLockout(retries),
     budget: budget ? {
@@ -267,6 +286,7 @@ async function snapshot() {
       evidence: totals.evidence,
       generatedAt: progress.generated_at || progress.generatedAt,
     } : null,
+    inventory: inventory?.summary || null,
     latest: cp || daily,
     log: state.log,
   };
@@ -279,7 +299,7 @@ const $=id=>document.getElementById(id);const fmt=n=>n==null?'—':Number(n).toL
 async function api(url,options){const r=await fetch(url,options);return r.json()}
 async function refresh(){const s=await api('/api/status');$('status').textContent=s.running?(s.activeRun?'Running now · started '+time(s.activeRun.startedAt):'Loop active · next run '+time(s.nextRunAt)):'Stopped';$('status').className='status '+(s.lastRun&&s.lastRun.code?'warn':'');const b=s.budget||{};$('daily').textContent=fmt(b.used)+' / '+fmt(b.dailyLimit);$('extract').textContent=fmt(b.extractionUsed)+' / '+fmt(b.extractionLimit);$('deferred').textContent=fmt(b.deferred);const p=s.progress||{};$('corpus').textContent=fmt(p.concepts)+' concepts · '+fmt(p.videos)+' videos';if(s.lastRun){const {output,...summary}=s.lastRun;$('latest').textContent=JSON.stringify(summary,null,2)+'\\n\\n'+(output||'')}else{$('latest').textContent='No run completed yet.'}$('log').textContent=(s.log||[]).join('\\n')||'No monitor events yet.';$('updated').textContent='Updated '+new Date().toLocaleTimeString()}
 $('start').onclick=async()=>{await api('/api/start',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({minutes:Number($('interval').value)})});refresh()};$('stop').onclick=async()=>{await api('/api/stop',{method:'POST'});refresh()};$('reset').onclick=async()=>{if(confirm("Reset today's local LLM budget counters? This does not change configured limits.")){await api('/api/reset-budget',{method:'POST'});refresh()}};refresh();setInterval(refresh,5000);
-</script></body></html>`;
+</script></body></html>`.replaceAll('Interval (minutes)', 'Cooldown between runs (minutes)').replaceAll('Start loop', 'Start / apply cooldown');
 
 const liveOutputScript = `<script>
 document.body.style.width='100%';document.body.style.maxWidth='none';document.body.style.boxSizing='border-box';document.body.style.margin='0';document.body.style.padding='32px clamp(24px,4vw,72px)';
@@ -305,8 +325,9 @@ refreshProgress();setInterval(refreshProgress,5000);
 
 const dashboardPage = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Processor monitor</title><style>
 :root{color-scheme:light;--ink:#17211b;--muted:#617066;--soft:#f4f1e9;--panel:#fffdf7;--line:#d6ddcf;--accent:#22613f;--accent-2:#2f6f8e;--warn:#b3462f;--console:#101713;--console-text:#d9e8db;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--soft)}*{box-sizing:border-box}body{margin:0;min-height:100vh;padding:24px clamp(20px,3vw,56px) 36px}.shell{width:100%;display:grid;gap:18px}.topbar{display:grid;grid-template-columns:minmax(320px,1fr) auto;gap:20px;align-items:end}.eyebrow{font:11px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.12em;text-transform:uppercase;color:#2e7d54}h1{font:500 clamp(34px,4vw,56px)/1.02 Georgia,serif;margin:7px 0 8px}h2{font:700 15px/1.2 system-ui,sans-serif;margin:0}.intro{max-width:900px;color:var(--muted);line-height:1.55;margin:0}.controls{display:flex;gap:10px;align-items:end;justify-content:flex-end;flex-wrap:wrap}.controls label{display:grid;gap:5px;font:10px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace;text-transform:uppercase;color:var(--muted)}.controls input{width:120px;padding:9px 10px;border:1px solid var(--line);background:white;color:var(--ink)}button{min-height:38px;padding:9px 14px;border:1px solid var(--accent);background:var(--accent);color:white;cursor:pointer;font-weight:650}button.secondary{background:white;color:var(--accent)}button.danger{background:white;color:var(--warn);border-color:var(--warn)}.progress-panel{padding:18px 20px;background:var(--panel);border:1px solid var(--line)}.progress-head,.section-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px}.status-pill{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;background:#e5eee3;color:#1d5b3b;font-weight:700;font-size:13px}.status-pill.warn{background:#f7e3dc;color:var(--warn)}.dot{width:9px;height:9px;border-radius:50%;background:currentColor}.progress-title{font-size:16px;font-weight:750;margin-top:8px}.progress-percent{font:650 28px/1 Georgia,serif}.bar{height:16px;margin:14px 0 10px;background:#dce5dc;border-radius:999px;overflow:hidden}.bar-fill{height:100%;width:0%;background:linear-gradient(90deg,var(--accent),var(--accent-2));transition:width .35s ease}.meta{color:var(--muted);font:12px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace}.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.metric{padding:14px 15px;background:var(--panel);border:1px solid var(--line)}.metric small{display:block;color:var(--muted);font-size:12px}.metric b{display:block;margin-top:7px;font:650 23px/1.1 Georgia,serif}.metric span{display:block;margin-top:5px;color:var(--muted);font-size:12px}.main-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(310px,360px);gap:18px;align-items:start}.panel{background:var(--panel);border:1px solid var(--line);min-width:0}.panel.pad{padding:16px}.stage{display:grid;grid-template-columns:minmax(180px,.7fr) 1fr;gap:16px;padding:16px 18px;background:#e7eee3;border-bottom:1px solid var(--line)}.stage strong{font:650 22px/1.2 Georgia,serif}.stage p{margin:0;color:#46564a;line-height:1.5}.output{height:clamp(430px,58vh,760px);white-space:pre-wrap;overflow:auto;margin:0;padding:16px 18px;background:var(--console);color:var(--console-text);font:12px/1.52 ui-monospace,SFMono-Regular,Consolas,monospace}.side-stack{display:grid;gap:14px}.process-list{display:grid;gap:8px;max-height:190px;overflow:auto}.process-row{display:grid;grid-template-columns:1fr auto;gap:8px;padding:9px 10px;background:white;border:1px solid #e3e8df}.process-name{font-weight:750}.process-sub{color:var(--muted);font:11px/1.35 ui-monospace,SFMono-Regular,Consolas,monospace}.log,.latest{overflow:auto;white-space:pre-wrap;margin:0;padding:12px;background:#fbfaf5;border:1px solid #e3e8df;color:#435045;font:11px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace}.log{max-height:190px}.latest{max-height:270px}.footer-panels{display:grid;grid-template-columns:1fr 1fr;gap:18px}.muted{color:var(--muted)}@media(max-width:1050px){.topbar,.main-grid,.footer-panels{grid-template-columns:1fr}.controls{justify-content:flex-start}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.output{height:460px}}@media(max-width:620px){body{padding:18px 14px}.metrics{grid-template-columns:1fr}.stage{grid-template-columns:1fr}.controls{display:grid;grid-template-columns:1fr 1fr}.controls label{grid-column:1/-1}.controls input{width:100%}}
-</style></head><body><main class="shell"><header class="topbar"><div><div class="eyebrow">Local operator tool</div><h1>Processor monitor</h1><p class="intro">Cache-first processing for <b>${kb}</b>. Each tick runs the controlled cp cycle, keeps the run non-overlapping, and reports enough context to tell whether it is working, waiting, or blocked.</p></div><section class="controls"><button id="start">Start loop</button><button class="danger" id="stop">Stop loop</button><button class="secondary" id="reset">Reset budget</button><label>Interval (minutes)<input id="interval" type="number" min="1" max="1440" value="15"></label></section></header><section class="progress-panel"><div class="progress-head"><div><span id="status-pill" class="status-pill"><span class="dot"></span><span id="status-text">Loading</span></span><div class="progress-title" id="progress-label">Preparing the cycle</div></div><div class="progress-percent" id="progress-percent">0%</div></div><div class="bar"><div class="bar-fill" id="progress-bar"></div></div><div class="meta" id="progress-detail">Waiting for status...</div></section><section class="metrics"><div class="metric"><small>Daily LLM usage</small><b id="daily">-</b><span id="daily-sub">local budget</span></div><div class="metric"><small>Extraction usage</small><b id="extract">-</b><span id="extract-sub">candidate generation</span></div><div class="metric"><small>Deferred candidates</small><b id="deferred">-</b><span>waiting on review or stronger evidence</span></div><div class="metric"><small>Published corpus</small><b id="corpus">-</b><span id="corpus-sub">latest publish snapshot</span></div></section><section class="main-grid"><article class="panel"><div class="stage" id="stage"><strong>Waiting for a run</strong><p>No pipeline stage is active yet.</p></div><pre class="output" id="current-output">No active run.</pre></article><aside class="side-stack"><section class="panel pad"><div class="section-head"><h2>Run State</h2><span class="meta" id="updated">-</span></div><p class="meta" id="schedule">Loading...</p><p class="meta" id="last-outcome">No completed run yet.</p></section><section class="panel pad"><div class="section-head"><h2>Resources</h2><span class="meta">python/node</span></div><div class="process-list" id="processes"><div class="muted">Loading...</div></div></section><section class="panel pad"><div class="section-head"><h2>Monitor Log</h2><span class="meta">latest events</span></div><pre class="log" id="log">-</pre></section></aside></section><section class="footer-panels"><section class="panel pad"><div class="section-head"><h2>Latest Completed Run</h2><span class="meta">summary</span></div><pre class="latest" id="latest">No run completed yet.</pre></section><section class="panel pad"><div class="section-head"><h2>Latest Manifest</h2><span class="meta">cp.latest</span></div><pre class="latest" id="manifest">No manifest loaded.</pre></section></section></main><script>
+</style></head><body><main class="shell"><header class="topbar"><div><div class="eyebrow">Local operator tool</div><h1>Processor monitor</h1><p class="intro">Cache-first processing for <b>${kb}</b>. Each tick runs the controlled cp cycle, keeps the run non-overlapping, and reports enough context to tell whether it is working, waiting, or blocked.</p></div><section class="controls"><button id="start">Start loop</button><button class="danger" id="stop">Stop loop</button><button class="secondary" id="reset">Reset budget</button><label>Interval (minutes)<input id="interval" type="number" min="1" max="1440" value="15"></label></section></header><section class="progress-panel"><div class="progress-head"><div><span id="status-pill" class="status-pill"><span class="dot"></span><span id="status-text">Loading</span></span><div class="progress-title" id="progress-label">Preparing the cycle</div></div><div class="progress-percent" id="progress-percent">0%</div></div><div class="bar"><div class="bar-fill" id="progress-bar"></div></div><div class="meta" id="progress-detail">Waiting for status...</div></section><section class="metrics"><div class="metric"><small>Daily LLM usage</small><b id="daily">-</b><span id="daily-sub">local budget</span></div><div class="metric"><small>Extraction usage</small><b id="extract">-</b><span id="extract-sub">candidate generation</span></div><div class="metric"><small>Deferred candidates</small><b id="deferred">-</b><span>retryable automated review</span></div><div class="metric"><small>Published corpus</small><b id="corpus">-</b><span id="corpus-sub">latest publish snapshot</span></div><div class="metric"><small>Inventory completion</small><b id="inventory-complete">-</b><span id="inventory-sub">private completion ledger</span></div></section><section class="main-grid"><article class="panel"><div class="stage" id="stage"><strong>Waiting for a run</strong><p>No pipeline stage is active yet.</p></div><pre class="output" id="current-output">No active run.</pre></article><aside class="side-stack"><section class="panel pad"><div class="section-head"><h2>Run State</h2><span class="meta" id="updated">-</span></div><p class="meta" id="schedule">Loading...</p><p class="meta" id="last-outcome">No completed run yet.</p></section><section class="panel pad"><div class="section-head"><h2>Resources</h2><span class="meta">python/node</span></div><div class="process-list" id="processes"><div class="muted">Loading...</div></div></section><section class="panel pad"><div class="section-head"><h2>Monitor Log</h2><span class="meta">latest events</span></div><pre class="log" id="log">-</pre></section></aside></section><section class="footer-panels"><section class="panel pad"><div class="section-head"><h2>Latest Completed Run</h2><span class="meta">summary</span></div><pre class="latest" id="latest">No run completed yet.</pre></section><section class="panel pad"><div class="section-head"><h2>Latest Manifest</h2><span class="meta">cp.latest</span></div><pre class="latest" id="manifest">No manifest loaded.</pre></section></section></main><script>
 const $=id=>document.getElementById(id);
+const cooldownLabel=document.querySelector('#interval')?.parentElement;if(cooldownLabel?.firstChild)cooldownLabel.firstChild.textContent='Cooldown between runs (minutes)';
 const fmt=n=>n==null?'-':Number(n).toLocaleString();
 const pct=(used,limit)=>limit?Math.round((Number(used||0)/Number(limit))*1000)/10:0;
 const time=s=>{if(!s)return '-';const match=String(s).match(/^\\/Date\\((\\d+)\\)\\/$/);const value=match?Number(match[1]):s;const date=new Date(value);return Number.isNaN(date.getTime())?String(s):date.toLocaleString()};
@@ -314,18 +335,35 @@ const bytes=n=>n==null?'-':(Number(n)/1024/1024).toFixed(0)+' MB';
 async function api(url,options){const r=await fetch(url,options);if(!r.ok)throw new Error(await r.text());return r.json()}
 function setText(id,value){$(id).textContent=value}
 function runStatus(state){if(state.activeRun)return ['Running now','warn'];if(state.running)return ['Loop active',''];return ['Stopped','warn']}
+let latestState=null;
+function countdown(iso){const remaining=Math.max(0,new Date(iso).getTime()-Date.now());const seconds=Math.ceil(remaining/1000);const hours=Math.floor(seconds/3600);const minutes=Math.floor((seconds%3600)/60);const secs=seconds%60;return hours?hours+'h '+String(minutes).padStart(2,'0')+'m '+String(secs).padStart(2,'0')+'s':minutes?minutes+'m '+String(secs).padStart(2,'0')+'s':secs+'s'}
+function renderSchedule(state){const target=document.querySelector('#schedule');if(!target)return;if(!state?.running){target.textContent='Loop is stopped.';return}if(state.activeRun){target.textContent='Process running · started '+time(state.activeRun.startedAt);return}if(!state.nextRunAt){target.textContent='Loop active · next process start pending';return}target.textContent='Next process start in '+countdown(state.nextRunAt)+' · '+time(state.nextRunAt)}
+async function refreshSchedule(){try{const state=await api('/api/status');latestState=state;renderSchedule(state)}catch(error){} }
 function renderProcesses(items){const rows=(items||[]).filter(p=>Number(p.memoryBytes||0)>1024*1024).sort((a,b)=>Number(b.memoryBytes||0)-Number(a.memoryBytes||0)).slice(0,8);$('processes').innerHTML=rows.map(p=>'<div class="process-row"><div><div class="process-name">'+p.name+' <span class="muted">#'+p.pid+'</span></div><div class="process-sub">CPU '+Number(p.cpuSeconds||0).toFixed(1)+' s - started '+time(p.startedAt)+'</div></div><div class="process-sub">'+bytes(p.memoryBytes)+'</div></div>').join('')||'<div class="muted">No relevant Python or Node processes found.</div>'}
 function renderLatest(lastRun){if(!lastRun){setText('latest','No run completed yet.');return}const {output,...summary}=lastRun;setText('latest',JSON.stringify(summary,null,2)+'\\n\\n'+(output||''))}
-async function refresh(){try{const state=await api('/api/status');const [label,mode]=runStatus(state);$('status-pill').className='status-pill '+mode;setText('status-text',label);const run=state.runProgress||{percent:0,label:'Waiting for a run',detail:'The next cycle has not started.'};setText('progress-percent',run.percent+'%');$('progress-bar').style.width=run.percent+'%';setText('progress-label',run.label||'Waiting for a run');setText('progress-detail',run.detail||'No run detail yet.');const b=state.budget||{};setText('daily',fmt(b.used)+' / '+fmt(b.dailyLimit));setText('daily-sub',pct(b.used,b.dailyLimit)+'% used today');setText('extract',fmt(b.extractionUsed)+' / '+fmt(b.extractionLimit));setText('extract-sub',pct(b.extractionUsed,b.extractionLimit)+'% extraction budget');setText('deferred',fmt(b.deferred));const p=state.progress||{};setText('corpus',fmt(p.concepts)+' concepts');setText('corpus-sub',fmt(p.videos)+' videos - '+fmt(p.evidence)+' evidence items');const current=state.currentStage;$('stage').innerHTML=current?'<strong>'+current.name+'</strong><p>'+current.explanation+'</p>':'<strong>Waiting for a run</strong><p>No pipeline stage is active. The next scheduled cycle will start automatically while the loop is active.</p>';setText('current-output',state.activeRun?.output||'No active run.');setText('schedule',state.running?(state.activeRun?'Started '+time(state.activeRun.startedAt):'Next run '+time(state.nextRunAt)):'Loop is stopped.');setText('last-outcome',state.lastRun?'Last run '+state.lastRun.outcome+' at '+time(state.lastRun.finishedAt)+(state.lastRun.reason?' - '+state.lastRun.reason:''):'No completed run yet.');renderProcesses(state.processes);renderLatest(state.lastRun);setText('manifest',state.latest?JSON.stringify(state.latest,null,2):'No manifest loaded.');setText('log',(state.log||[]).join('\\n')||'No monitor events yet.');setText('updated','Updated '+new Date().toLocaleTimeString())}catch(error){$('status-pill').className='status-pill warn';setText('status-text','Status error');setText('progress-detail',error.message)}}
-$('start').onclick=async()=>{await api('/api/start',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({minutes:Number($('interval').value)})});refresh()};
+async function refresh(){try{const state=await api('/api/status');const [label,mode]=runStatus(state);$('status-pill').className='status-pill '+mode;setText('status-text',label);const run=state.runProgress||{percent:0,label:'Waiting for a run',detail:'The next cycle has not started.'};setText('progress-percent',run.percent+'%');$('progress-bar').style.width=run.percent+'%';setText('progress-label',run.label||'Waiting for a run');setText('progress-detail',run.detail||'No run detail yet.');const b=state.budget||{};setText('daily',fmt(b.used)+' / '+fmt(b.dailyLimit));setText('daily-sub',pct(b.used,b.dailyLimit)+'% used today');setText('extract',fmt(b.extractionUsed)+' / '+fmt(b.extractionLimit));setText('extract-sub',pct(b.extractionUsed,b.extractionLimit)+'% extraction budget');const inv=state.inventory||{};setText('deferred',fmt(inv.candidates?.deferred ?? b.deferred));setText('inventory-complete',fmt(inv.eligible_complete)+' / '+fmt(inv.inventory));setText('inventory-sub',fmt(inv.automated_work_remaining)+' automated · '+fmt(inv.human_review_videos)+' human · '+fmt(inv.excluded)+' excluded');const p=state.progress||{};setText('corpus',fmt(p.concepts)+' concepts');setText('corpus-sub',fmt(p.videos)+' videos - '+fmt(p.evidence)+' evidence items');const current=state.currentStage;$('stage').innerHTML=current?'<strong>'+current.name+'</strong><p>'+current.explanation+'</p>':'<strong>Waiting for a run</strong><p>No pipeline stage is active. The next scheduled cycle will start automatically while the loop is active.</p>';setText('current-output',state.activeRun?.output||'No active run.');setText('schedule',state.running?(state.activeRun?'Started '+time(state.activeRun.startedAt):'Next run '+time(state.nextRunAt)):'Loop is stopped.');setText('last-outcome',state.lastRun?'Last run '+state.lastRun.outcome+' at '+time(state.lastRun.finishedAt)+(state.lastRun.reason?' - '+state.lastRun.reason:''):'No completed run yet.');renderProcesses(state.processes);renderLatest(state.lastRun);setText('manifest',state.latest?JSON.stringify(state.latest,null,2):'No manifest loaded.');setText('log',(state.log||[]).join('\\n')||'No monitor events yet.');setText('updated','Updated '+new Date().toLocaleTimeString())}catch(error){$('status-pill').className='status-pill warn';setText('status-text','Status error');setText('progress-detail',error.message)}}
+$('start').onclick=async()=>{const state=await api('/api/start',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({cooldownMinutes:Number($('interval').value)})});latestState=state;renderSchedule(state);refresh()};
 $('stop').onclick=async()=>{await api('/api/stop',{method:'POST'});refresh()};
 $('reset').onclick=async()=>{if(confirm("Reset today's local LLM budget counters? This does not change configured limits.")){await api('/api/reset-budget',{method:'POST'});refresh()}};
-refresh();setInterval(refresh,5000);
-</script></body></html>`;
+refresh();refreshSchedule();setInterval(refresh,5000);setInterval(refreshSchedule,1000);
+</script></body></html>`.replaceAll('Interval (minutes)', 'Cooldown between runs (minutes)').replaceAll('Start loop', 'Start / apply cooldown');
 
 const monitorPage = dashboardPage.replace('</body></html>', `<script>
 const routeLockoutMetric=document.createElement('section');routeLockoutMetric.className='panel pad';routeLockoutMetric.innerHTML='<div class="section-head"><h2>Route lockout</h2><span class="meta">YouTube transcript access</span></div><p class="meta" id="route-lockout-status">Checking blocked retry windows...</p>';document.querySelector('.side-stack')?.prepend(routeLockoutMetric);
 async function refreshRouteLockout(){const state=await (await fetch('/api/status')).json();const lock=state.routeLockout;const target=document.querySelector('#route-lockout-status');if(!target)return;if(lock){target.textContent='Blocked until '+new Date(lock.until).toLocaleString()+' (route-wide IP cooldown).';}else{target.textContent='No active route-wide block.';}}refreshRouteLockout();setInterval(refreshRouteLockout,5000);
+const resourcePanel=document.querySelector('#processes')?.closest('.panel');
+if(resourcePanel){
+  const resourceStyle=document.createElement('style');resourceStyle.textContent='.resource-summary{margin:12px 0 14px;padding:12px;background:#f7faf5;border:1px solid #e1e8df;border-radius:10px}.resource-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.resource-stat{min-width:0}.resource-stat-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px;color:#526156;font:11px ui-monospace,SFMono-Regular,Consolas,monospace}.resource-stat-head strong{font:700 20px Georgia,serif;color:#17211b}.resource-track{height:8px;margin-top:8px;background:#dce5dc;border-radius:999px;overflow:hidden}.resource-track i{display:block;height:100%;width:0;background:linear-gradient(90deg,#22613f,#2f6f8e);border-radius:inherit;transition:width .45s ease}.resource-track.memory i{background:linear-gradient(90deg,#2f6f8e,#7a5ea8)}.resource-spark{height:32px;margin-top:7px;display:flex;align-items:end;gap:3px}.resource-spark span{flex:1;min-width:2px;height:4%;background:#b8cdbb;border-radius:2px 2px 0 0}.resource-spark.memory span{background:#c1b7d6}.resource-meta{margin:10px 0 0;color:#718078;font:11px/1.4 ui-monospace,SFMono-Regular,Consolas,monospace}.resource-list-heading{display:flex;justify-content:space-between;align-items:baseline;margin:8px 0 6px;color:#68766d;font:10px ui-monospace,SFMono-Regular,Consolas,monospace;text-transform:uppercase;letter-spacing:.08em}@media(max-width:620px){.resource-grid{grid-template-columns:1fr}}';document.head.append(resourceStyle);
+  const summary=document.createElement('div');summary.className='resource-summary';summary.innerHTML='<div class="resource-grid"><article class="resource-stat"><div class="resource-stat-head"><span>CPU load</span><strong id="resource-cpu-value">-</strong></div><div class="resource-track"><i id="resource-cpu-bar"></i></div><div class="resource-spark" id="resource-cpu-spark" aria-label="Recent CPU load"></div></article><article class="resource-stat"><div class="resource-stat-head"><span>Memory used</span><strong id="resource-memory-value">-</strong></div><div class="resource-track memory"><i id="resource-memory-bar"></i></div><div class="resource-spark memory" id="resource-memory-spark" aria-label="Recent memory load"></div></article></div><p class="resource-meta" id="resource-meta">Waiting for system snapshot...</p>';resourcePanel.querySelector('.section-head')?.after(summary);
+  const listHeading=document.createElement('div');listHeading.className='resource-list-heading';listHeading.innerHTML='<span>Process details</span><span id="resource-process-count">Waiting...</span>';document.querySelector('#processes')?.before(listHeading);
+}
+const resourceHistory={cpu:[],memory:[]};
+const resourcePercent=value=>Math.max(0,Math.min(100,Number(value)||0));
+const resourceBytes=value=>{const bytes=Number(value)||0;if(bytes<1024*1024)return Math.round(bytes/1024)+' KB';return (bytes/1024/1024/1024).toFixed(1)+' GB'};
+function renderResourceSpark(id,values){const target=document.querySelector('#'+id);if(!target)return;target.innerHTML=values.map(value=>'<span style="height:'+Math.max(4,Math.round(value))+'%"></span>').join('')}
+function renderResources(resources,processes){const meta=document.querySelector('#resource-meta');if(!meta)return;if(!resources){meta.textContent='System performance snapshot unavailable; process details remain available below.';return}const cpu=resourcePercent(resources.cpuPercent);const total=Number(resources.memoryTotalBytes)||0;const available=Number(resources.memoryAvailableBytes)||0;const used=Math.max(0,total-available);const memory=total?resourcePercent(used/total*100):0;resourceHistory.cpu=[...resourceHistory.cpu,cpu].slice(-24);resourceHistory.memory=[...resourceHistory.memory,memory].slice(-24);document.querySelector('#resource-cpu-value').textContent=cpu.toFixed(0)+'%';document.querySelector('#resource-memory-value').textContent=memory.toFixed(0)+'%';document.querySelector('#resource-cpu-bar').style.width=cpu+'%';document.querySelector('#resource-memory-bar').style.width=memory+'%';renderResourceSpark('resource-cpu-spark',resourceHistory.cpu);renderResourceSpark('resource-memory-spark',resourceHistory.memory);document.querySelector('#resource-process-count').textContent=(processes||[]).length+' tracked';meta.textContent=resourceBytes(used)+' used of '+resourceBytes(total)+' · '+new Date().toLocaleTimeString()}
+async function refreshResources(){try{const state=await (await fetch('/api/status')).json();renderResources(state.resources,state.processes)}catch(error){const meta=document.querySelector('#resource-meta');if(meta)meta.textContent='Resource snapshot error: '+error.message}}
+refreshResources();setInterval(refreshResources,5000);
 </script></body></html>`);
 
 const server = http.createServer(async (request, response) => {
@@ -336,7 +374,7 @@ const server = http.createServer(async (request, response) => {
   if (url.pathname === '/') { response.writeHead(200, { 'content-type': 'text/html; charset=utf-8' }); response.end(monitorPage); return; }
   if (url.pathname === '/api/status') { response.writeHead(200, { 'content-type': 'application/json' }); response.end(JSON.stringify(await snapshot())); return; }
   if (url.pathname === '/api/start' && request.method === 'POST') {
-    let body=''; for await (const chunk of request) body += chunk; const input=JSON.parse(body||'{}'); start(Number(input.minutes)*60*1000); response.writeHead(200, {'content-type':'application/json'}); response.end(JSON.stringify(await snapshot())); return;
+    let body=''; for await (const chunk of request) body += chunk; const input=JSON.parse(body||'{}'); const cooldownMinutes=Number(input.cooldownMinutes ?? input.minutes); start(cooldownMinutes*60*1000); response.writeHead(200, {'content-type':'application/json'}); response.end(JSON.stringify(await snapshot())); return;
   }
   if (url.pathname === '/api/stop' && request.method === 'POST') { stop(); response.writeHead(200, {'content-type':'application/json'}); response.end(JSON.stringify(await snapshot())); return; }
   if (url.pathname === '/api/reset-budget' && request.method === 'POST') {

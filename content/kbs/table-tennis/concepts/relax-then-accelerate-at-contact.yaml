@@ -1731,6 +1731,41 @@ evidence:
         - Ay4vk9XXAfM:00004
         - Ay4vk9XXAfM:00005
         - Ay4vk9XXAfM:00006
+  - id: 010JqWWNUV8-concept-relax-then-accelerate-at-contact-reviewed
+    evidence_type: explanation
+    excerpt: Keep the lead-in relaxed, then accelerate sharply at the release/contact phase to preserve quality across shots.
+    reason: The speaker directly describes a relaxed backswing followed by explosive acceleration.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 010JqWWNUV8
+      start_ms: 147440
+      end_ms: 164080
+      url: https://www.youtube.com/watch?v=010JqWWNUV8&t=147s
+      segment_ids:
+        - 010JqWWNUV8:00057
+        - 010JqWWNUV8:00058
+        - 010JqWWNUV8:00059
+        - 010JqWWNUV8:00060
+        - 010JqWWNUV8:00061
+  - id: OVkH-47SvqE-concept-relax-then-accelerate-at-contact-reviewed
+    evidence_type: definition
+    excerpt: Keep the backswing loose and relaxed, then produce a sudden explosive acceleration at contact.
+    reason: The speaker explicitly states that the backswing should be relaxed and the forward swing at contact should be fast and explosive.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: OVkH-47SvqE
+      start_ms: 434500
+      end_ms: 463366
+      url: https://www.youtube.com/watch?v=OVkH-47SvqE&t=434s
+      segment_ids:
+        - OVkH-47SvqE:00073
+        - OVkH-47SvqE:00074
+        - OVkH-47SvqE:00075
+        - OVkH-47SvqE:00076
 relations:
   - relation_type: used_with
     target_concept_id: concept-forehand-loop-timing

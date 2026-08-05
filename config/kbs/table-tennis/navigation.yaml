@@ -88,6 +88,7 @@ sections:
     - concept-step-by-step-stroke-learning-progression
     - concept-backswing-behind-the-body
     - concept-forearm-and-upper-arm-independence
+    - concept-forearm-retraction-in-the-drive
     children:
     - id: forehand-drive
       label: Forehand drive
@@ -105,6 +106,7 @@ sections:
       concept_ids:
       - concept-backhand-drive
       - concept-backhand-body-orientation-and-framework
+      - concept-forward-and-upward-force-for-backhand-loop
       children: []
   - id: loop
     label: Loop
@@ -159,6 +161,7 @@ sections:
         - concept-light-spin-versus-heavy-backspin-decision-making
         - concept-forward-drive-against-backspin
         - concept-shoulder-hip-connection-for-looping
+        - concept-ball-type-dependent-stroke-selection
         children: []
       - id: forehand-loop-motion
         label: Motion parts
@@ -200,6 +203,7 @@ sections:
           - concept-friction-then-propulsion-then-power
           - concept-compact-arm-position-for-power
           - concept-lift-first-then-accelerate
+          - concept-loop-power-comes-from-arc-and-opening
           children: []
       - id: forehand-loop-learning
         label: Learning and correction
@@ -226,6 +230,7 @@ sections:
       - concept-backhand-stance-and-body-angle
       - concept-weight-transfer-and-center-of-gravity-in-looping
       - concept-left-foot-entry-for-short-backhand-ball
+      - concept-right-foot-forward-for-backhand-adjustment
       children:
       - id: backhand-loop-variations
         label: Variations and ball selection
@@ -442,6 +447,7 @@ sections:
       - concept-backspin-serve
       - concept-curved-serve-trajectory
       - concept-sidespin-serve
+      - concept-kicking-topspin-serve
       children: []
     - id: serve-variation-and-placement
       label: Variation and placement
@@ -508,6 +514,8 @@ sections:
     - concept-spin-adaptive-receive-choice-by-ball-type
     - concept-arm-length-distance-on-long-backhand-receive
     - concept-jamming-is-caused-by-slow-anticipation-not-poor-positioning
+    - concept-borrowing-speed-and-energy-on-fast-serves
+    - concept-parallel-line-theory
     children:
     - id: receive-reading-and-principles
       label: Reading and principles
@@ -523,6 +531,7 @@ sections:
       - concept-spin-reading-for-receive
       - concept-serve-deception-through-identical-motion
       - concept-prepared-before-the-bounce
+      - concept-attentive-decisive-receive-mindset
       children: []
     - id: receive-timing-and-spacing
       label: Timing and spacing
@@ -649,6 +658,11 @@ sections:
   - concept-finger-engagement-for-power-and-feel
   - concept-firm-palm-contact-on-the-handle
   - concept-long-pips-returns-have-low-spin-and-a-sinking-trajectory
+  - concept-low-center-of-gravity-for-looping
+  - concept-meet-the-ball-in-front
+  - concept-split-step
+  - concept-avoid-push-block-on-backhand
+  - concept-bent-arm-contact-angle
   children:
   - id: grip-and-wrist-control
     label: Grip and wrist control
@@ -662,6 +676,7 @@ sections:
     - concept-flick-with-pressed-wrist
     - concept-hook-tip-first-contact
     - concept-thumb-index-grip-focus-in-pushing
+    - concept-shoulder-elbow-and-wrist-stability
     children: []
   - id: footwork-and-spacing
     label: Footwork and spacing
@@ -720,6 +735,9 @@ sections:
     - concept-diagonal-push-through-side-orientation
     - concept-forehand-push-lift-and-low-contact
     - concept-side-underspin-contact-on-lower-half-of-racket
+    - concept-compact-body-framework
+    - concept-generate-topspin-through-brushing
+    - concept-controlled-lowering-of-the-center-of-gravity
   - id: body-organization
     label: Body organization
     description: Ground connection, usable spacing, and coordination through the

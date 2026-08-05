@@ -7,18 +7,17 @@ aliases:
 short_definition: Use forearm acceleration as the main power source to create maximum spin and proper arc over the table.
 evidence_summary: >-
   Forearm acceleration brings together several connected ideas. Forearm acceleration as of maximum
-  spin and the loop as forearm-dominant. Power comes from maintaining the brushing feeling and
-  speeding up the forearm swing. The elbow is the pivot, the upper arm should not move, and the
-  forearm is the main of power. The power comes mainly from the forearm and that it should
-  accelerate at contact. The secondary acceleration is accomplished by the forearm and that this
-  is primarily forearm acceleration. To accelerate the forearm forward, snap the forearm after the
-  upper arm stops, and use forearm drive into the ball. Force should come from the forearm, with
-  the elbow used as an axis and the forearm accelerated for speed and quality. Brushing must be
-  combined with a forward-moving forearm, and demonstrates the forearm moving forward first while
-  the wrist snaps at contact. Additional points reinforce the same theme. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:34663262f910daffab484d73730cd54d1b4209fab9a0ad259d4fcde95c03639b"
+  spin and the loop as forearm-dominant. The forearm adds speed and that the main acceleration
+  comes from the second segment. The elbow is the pivot, the upper arm should not move, and the
+  forearm is the main of power. The forearm provides depth and drives the ball forward when the
+  ball is short. To accelerate the forearm forward, snap the forearm after the upper arm stops,
+  and use forearm drive into the ball. Force should come from the forearm, with the elbow used as
+  an axis and the forearm accelerated for speed and quality. Brushing must be combined with a
+  forward-moving forearm, and demonstrates the forearm moving forward first while the wrist snaps
+  at contact. Forearm acceleration and it as a whip after the elbow brakes. Additional points
+  reinforce the same theme. Together, these principles show how the topic is applied in practice
+  while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:4e71d88284ce9a00eed93b7dcba42ed79452ff483db0c2c369f37be81eaf88bd"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -215,3 +214,33 @@ evidence:
         - tFXmtu4Egw8:00074
         - tFXmtu4Egw8:00075
         - tFXmtu4Egw8:00076
+  - id: AoJq7UfIhp8-concept-forearm-acceleration-reviewed
+    evidence_type: explanation
+    excerpt: After friction and wrist preparation, the forearm contributes acceleration to the fast loop.
+    reason: The speaker explicitly says a flick relies mainly on the forearm and that the fast loop is driven by finger and wrist friction that engages the forearm.
+    confidence: 0.86
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: AoJq7UfIhp8
+      start_ms: 630266
+      end_ms: 641066
+      url: https://www.youtube.com/watch?v=AoJq7UfIhp8&t=630s
+      segment_ids:
+        - AoJq7UfIhp8:00135
+        - AoJq7UfIhp8:00136
+  - id: tQSnBjtseLI-concept-forearm-acceleration-reviewed
+    evidence_type: definition
+    excerpt: A late acceleration of the forearm after the elbow or shoulder has stopped, producing a whip-like burst of power.
+    reason: The speaker directly names forearm acceleration and describes it as a whip after the elbow brakes.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: tQSnBjtseLI
+      start_ms: 506733
+      end_ms: 526066
+      url: https://www.youtube.com/watch?v=tQSnBjtseLI&t=506s
+      segment_ids:
+        - tQSnBjtseLI:00076
+        - tQSnBjtseLI:00077

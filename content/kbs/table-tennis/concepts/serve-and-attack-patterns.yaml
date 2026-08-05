@@ -522,6 +522,24 @@ evidence:
       url: https://www.youtube.com/watch?v=WuWV6MlZQ_Q&t=66s
       segment_ids:
         - WuWV6MlZQ_Q:00014
+  - id: U1zg0xsCqMc-concept-serve-and-attack-patterns-reviewed
+    evidence_type: explanation
+    excerpt: A tactical structure where the serve is chosen together with a planned third-ball response.
+    reason: Explicitly states that serve and third ball must be linked, with a plan for the next ball, which distinguishes match tactics from random hitting.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: U1zg0xsCqMc
+      start_ms: 108840
+      end_ms: 121240
+      url: https://www.youtube.com/watch?v=U1zg0xsCqMc&t=108s
+      segment_ids:
+        - U1zg0xsCqMc:00047
+        - U1zg0xsCqMc:00048
+        - U1zg0xsCqMc:00049
+        - U1zg0xsCqMc:00050
+        - U1zg0xsCqMc:00051
 relations:
   - relation_type: used_with
     target_concept_id: concept-short-serve-third-ball-attack

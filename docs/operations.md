@@ -67,9 +67,9 @@ For a cached review batch, use the conservative P1-02 triage command before scra
 python -m processors.cli process-pending --kb table-tennis
 ```
 
-It incorporates high-confidence matches and can create a new canonical concept when the extractor explicitly marks it `new`, the confidence and definition gates pass, it is not a near-duplicate, and its cited transcript span validates. Ambiguous, weak, duplicate, and invalid candidates remain `deferred`. Use `process-pending --retry-deferred` to backfill candidates deferred by earlier runs.
+It incorporates high-confidence matches and can create a new canonical concept when the extractor explicitly marks it `new`, the confidence and definition gates pass, it is not a near-duplicate, and its cited transcript span validates. Invalid source references are rejected. Weak or ambiguous candidates remain retryable only until the adjudication-attempt limit, then become explicit `human_review`. The monitor uses `--retry-deferred`, an exact comma-separated `--video-ids` workset, and a two-attempt limit.
 
-The `cp` shortcut follows the same order: finish eligible cached transcripts and candidates first; when no local work remains, continue with the next small, controlled discovery/ingestion batch. It must still obey the prioritized backlog, acquisition-policy checks, pacing limits, and block circuit breaker. A cleared local queue does not authorize bypassing an active “no large scrape” gate.
+The `cp` shortcut follows the private inventory ledger: missing extraction first, up to 50 videos of retryable adjudication, then due acquisition candidates. `run-cp.py` writes the exact IDs and selection reasons to `cp.latest.json` before mutation. The 148 current `sources.yaml` entries remain accumulated batch history. Build or inspect the ledger with `python -m processors.cli build-inventory-ledger --kb table-tennis`.
 
 When discovery supplies `view_count`, batches are ordered from most viewed to least viewed within that channel; entries without a view count are processed afterward in discovery order.
 
@@ -83,7 +83,7 @@ Set-Location D:\Code\AIAssistedProjects\TTKnowledgeBase
 
 The wrapper uses a private per-KB lock, writes `data/manifests/<kb>/daily-processing.latest.json`, and exits with code `10` when another run is active. The scheduled task now invokes the shared `scripts/run-cp.py` full-cycle orchestrator, which also acquires the next controlled batch and publishes only validated/reviewed output. It does not commit, push, deploy, or publish unreviewed knowledge. The current local Task Scheduler registration runs daily at 21:00 Europe/Helsinki time; recreate it manually with `powershell.exe -NoProfile -ExecutionPolicy Bypass -File ...` if the workstation task is lost.
 
-For an interactive local monitor, run `node scripts/processor-monitor.mjs` from the repository root and open `http://127.0.0.1:4322/`. It provides Start loop, Stop loop, and Reset budget controls and invokes the same full `scripts/run-cp.py` orchestrator as the Windows scheduler. The loop processes cached work, ingests the next configured selected batch, extracts within budget, refreshes review data, and publishes reviewed output; when that batch is empty it discovers enabled sources for the next controlled selection. It prevents overlapping child processes and displays run output, loop state, budget counters, deferred candidates, and corpus totals. Reset budget clears only the current day’s local ledger counters after confirmation; it does not change configured limits or historical days. The interval defaults to 15 minutes and can be changed in the UI. `PROCESSOR_MONITOR_KB` and `PROCESSOR_MONITOR_PORT` customize the local KB and port.
+For an interactive local monitor, run `node scripts/processor-monitor.mjs` from the repository root and open `http://127.0.0.1:4322/`. It provides Start / apply cooldown, Stop loop, and Reset budget controls and invokes the same full `scripts/run-cp.py` orchestrator as the Windows scheduler. It displays full-inventory completion, automated and human work, exclusions, the exact latest workset, budget counters, current output, and task-manager-style CPU/memory telemetry. Reset budget clears only the current dayâ€™s local counters. The cooldown between runs defaults to 15 minutes and starts after each cycle finishes; applying a new value while idle reschedules immediately.
 
 The `cm` shortcut is message-only: review the current local changes and return a suggested commit message with completed features written in past tense. Do not stage files, run `git commit`, or create a commit; the operator commits manually.
 
@@ -127,6 +127,8 @@ python -m processors.cli ingest --kb table-tennis --request-delay 5 --jitter 2 V
 ```
 
 Existing normalized files are reused without network access. Use `--force` only when a transcript must be refreshed. When YouTube blocks the transcript endpoint, the command stops the batch and writes the next permitted retry time to the gitignored `data/manifests/<kb>/ingest-retries.json` file. Do not immediately rerun a blocked batch.
+
+Language selection is ordered and source-track based. The default comes from `language.transcript_priority` in the KB's `kb.yaml`; an explicit `--languages` list overrides it. The exact requested code is preferred, while a same-base regional code is used only when the exact track is missing—for example, `en` can fall back to manually created `en-US`. A language shown only under YouTube's translation languages is not considered an original subtitle track.
 
 When ingestion discovers that a video is members-only, it records `classification: members_only` and `availability: members_only` in the same private retry manifest, marks the video as skipped, and schedules the next check three days later. The cp selector also excludes that video during the cooldown, so it does not repeatedly consume ingestion attempts.
 

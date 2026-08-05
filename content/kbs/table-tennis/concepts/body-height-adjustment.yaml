@@ -1372,6 +1372,23 @@ evidence:
       segment_ids:
         - fILPmFV3eyQ:00142
         - fILPmFV3eyQ:00145
+  - id: dGUGcaM8EOc-concept-body-height-adjustment-reviewed
+    evidence_type: explanation
+    excerpt: Adjusting body height to the incoming ball instead of staying at one fixed level.
+    reason: "The coach explains that the player's weight/body height should change with ball height: low ball drop, high ball rise."
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: dGUGcaM8EOc
+      start_ms: 350760
+      end_ms: 365760
+      url: https://www.youtube.com/watch?v=dGUGcaM8EOc&t=350s
+      segment_ids:
+        - dGUGcaM8EOc:00126
+        - dGUGcaM8EOc:00127
+        - dGUGcaM8EOc:00129
+        - dGUGcaM8EOc:00130
 relations:
   - relation_type: used_with
     target_concept_id: concept-contact-point

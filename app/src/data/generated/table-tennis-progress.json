@@ -1,33 +1,34 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "knowledge_base": "table-tennis",
-  "generated_at": "2026-07-22T09:20:21.076233+00:00",
+  "generated_at": "2026-08-04T22:14:55.002209+00:00",
   "totals": {
-    "discovered": 823,
+    "discovered": 838,
     "configured": 148,
     "eligible": 140,
     "ingested": 140,
     "extracted": 140,
-    "concepts": 514,
-    "published_videos": 687,
+    "concepts": 533,
+    "published_videos": 729,
     "published_configured_videos": 140,
-    "evidence": 5608,
+    "evidence": 5892,
     "visual_proposed": 35,
     "visual_verified": 0,
-    "accepted": 4833,
-    "deferred": 1730,
-    "rejected": 1,
-    "pending": 0,
+    "accepted": 5117,
+    "deferred": 1811,
+    "rejected": 5,
+    "pending": 1,
+    "human_review": 0,
     "reviewed_videos": 81,
     "published_with_review_backlog": 59,
-    "single_source_concepts": 164
+    "single_source_concepts": 156
   },
   "sources": [
     {
       "id": "free-coach-brad-han",
       "name": "TT SpinMaster",
       "url": "https://www.youtube.com/@FreeCoachBradHan",
-      "discovered": 310,
+      "discovered": 325,
       "configured": 101,
       "eligible": 101,
       "ingested": 101,
@@ -39,12 +40,12 @@
       "rejected": 0,
       "pending": 0,
       "evidence": 1501,
-      "concepts": 508,
+      "concepts": 527,
       "visual_proposed": 19,
       "visual_verified": 0,
       "published_with_review_backlog": 38,
       "members_only": 0,
-      "unselected": 209
+      "unselected": 224
     },
     {
       "id": "global-tt-studio",
@@ -114,6 +115,29 @@
       "published_with_review_backlog": 0,
       "members_only": 0,
       "unselected": 0
+    },
+    {
+      "id": "future-playlist-pltzwcwilt2wxtvv3h-xpk6rxoxttke3c",
+      "name": "future-playlist-pltzwcwilt2wxtvv3h-xpk6rxoxttke3c",
+      "url": "https://www.youtube.com/playlist?list=PLoTZwCwIlt2WXTvv3h-Xpk6rxoXttkE3C",
+      "discovered": 0,
+      "configured": 0,
+      "eligible": 0,
+      "ingested": 0,
+      "extracted": 0,
+      "reviewed": 0,
+      "published": 0,
+      "accepted": 0,
+      "deferred": 0,
+      "rejected": 0,
+      "pending": 0,
+      "evidence": 0,
+      "concepts": 0,
+      "visual_proposed": 0,
+      "visual_verified": 0,
+      "published_with_review_backlog": 0,
+      "members_only": 0,
+      "unselected": 0
     }
   ],
   "members_only_ids": [
@@ -125,5 +149,262 @@
     "c894uv9vOFk",
     "gqVe2JURIY0",
     "saJV_mSKHaw"
-  ]
+  ],
+  "inventory": {
+    "inventory": 838,
+    "published": 729,
+    "eligible_complete": 175,
+    "automated_work_remaining": 577,
+    "human_review_videos": 0,
+    "retry_wait": 0,
+    "excluded": 86,
+    "states": {
+      "needs_adjudication": 577,
+      "complete": 175,
+      "excluded": 86
+    },
+    "availability": {
+      "public": 753,
+      "members_only": 85
+    },
+    "captions": {
+      "selected_source_track": 752,
+      "no_usable_subtitles": 1,
+      "ineligible": 85
+    },
+    "candidates": {
+      "total": 6930,
+      "pending": 1,
+      "deferred": 1811,
+      "accepted": 5113,
+      "rejected": 5,
+      "human_review": 0,
+      "accepted_unincorporated": 0
+    },
+    "sources": {
+      "free-coach-brad-han": {
+        "inventory": 325,
+        "needs_adjudication": 251,
+        "complete": 73,
+        "excluded": 1
+      },
+      "global-tt-studio": {
+        "inventory": 418,
+        "complete": 97,
+        "excluded": 85,
+        "needs_adjudication": 236
+      },
+      "pingsunday-xiaohan-playlist": {
+        "inventory": 95,
+        "needs_adjudication": 90,
+        "complete": 5
+      }
+    }
+  },
+  "latest_workset": {
+    "extraction": [],
+    "adjudication": [
+      {
+        "id": "lii73aKvvkw",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "xBlnTfR0eOY",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "JLGqLr-9-2w",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "pRuBdX0ZLgg",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "QkR3weNCn48",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "iNTkZQ-ZenY",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "CFfErzr4cEQ",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "oWZx35U6iGI",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "PBYIXS9NP0s",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "S7U1u6oU2zQ",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "fpNFvJkdLnw",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "5JzSUTg_ojc",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "bQTenTT3bz0",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "EIlmaLc-eFw",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "KuYNs8gAU_U",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "OFOjjffyzms",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "ZDsNRAsC9pY",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "ggaBOPI4Nwc",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "xGna6RBljCg",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "sU4uTg-0qvM",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "g5LaTXWtgBw",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "Mnse-nAfdO8",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "lcp99UuLuus",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "rN337KbRJt0",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "ubwy_VRFhPg",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "RxQ8PJFJKLs",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "j90jCkrtITo",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "4VtanUONrZc",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "CpcAha7BZGA",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "j098z-YOm20",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "13z0kO_hd0M",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "3SacINVWteM",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "A_hvhZM5dc4",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "GKfKcAQ-guU",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "VOX-e4IR2xg",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "vxNq1b0J0bU",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "-1uBDv1Aq7A",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "25Ohh2RJcWk",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "QsrAQCy3POU",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "RIAorR-Xv_Q",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "RwbDGQSqM8g",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "SS2i7rmrjZI",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "b_F4I4x4dl0",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "i-n17lWXlSo",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "2WWpJEdhO9U",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "3lTc51PYWSQ",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "8YnliONxP4U",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "K0ljmeUVK1Q",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "KM-gOmX2AeU",
+        "reason": "extracted candidates still have retryable decisions"
+      },
+      {
+        "id": "Nj4ivxRAizs",
+        "reason": "extracted candidates still have retryable decisions"
+      }
+    ],
+    "acquisition": []
+  }
 }

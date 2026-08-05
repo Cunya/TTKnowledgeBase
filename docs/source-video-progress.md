@@ -20,6 +20,13 @@ snapshot from local artifacts; neither the LLM nor a page edit should update tot
 | Published | At least one approved evidence moment from the video appears in the sanitized public corpus. |
 | Visual verified | A reviewer watched a selected visual interval and marked it as a verified demonstration. This is separate from transcript review. |
 
+For the live page, interpret these as two separate views:
+
+- **Content status:** a known video is either on the site because it contributes at least one approved moment, or not on the site because it contributes none.
+- **Operator provenance:** configured video entries are accumulated controlled-batch history. They do not define the live workset or control whether content remains public. `run-cp.py` generates the actual workset for each run from cached missing stages, configured entries still needing acquisition, and unseen discovery entries.
+
+The `/progress/` page leads with content status and keeps configured-batch provenance, pipeline completion, candidate review, and visual review as explicitly labeled operator detail. The exhaustive completion target is documented in `docs/exhaustive-source-completion-plan-2026-08-05.md`.
+
 ## Source summary
 
 | Source | Trustworthy discovered total | Configured | Eligible | Ingested | Extracted | Fully reviewed | Published | Accepted candidates | Rejected | Evidence moments | Concepts supported | Proposed visuals | Verified visuals |
@@ -189,13 +196,13 @@ All 101 videos below are ingested and extracted. One hundred have published evid
 
 ## Outstanding work by state
 
-| Work item | Count | Recommended action |
-|---|---:|---|
-| Deferred extracted candidates | 139 | Review taxonomy proposals and weak matches before another expansion pass. |
-| Proposed visual intervals requiring viewing | 35 | Watch the complete intervals and mark only genuine demonstrations as `manual_review` / `verified_visual_demo`. |
-| Single-source concepts | 2 | Select videos that add an independent supporting source rather than more moments from the same lesson. |
-| Published videos with remaining review backlog | 50 | Resolve deferred candidates; publication currently includes only incorporated evidence. |
-| Members-only configured videos | 8 | Leave unprocessed unless access and processing rights are explicitly available. |
+| Work item | Count | Owner | How to complete |
+|---|---:|---|---|
+| Deferred extracted candidates | 139 | Human editorial reviewer, Codex-assisted | Compare each proposal with its cited transcript segments, decide whether to accept, reject, merge, or defer it, update canonical concept YAML for accepted work, and run validation. |
+| Proposed visual intervals requiring viewing | 35 | Human visual reviewer | Watch each complete interval in the source video and mark only a genuine demonstration as `manual_review` / `verified_visual_demo`; adjust or reject unsuitable windows. |
+| Single-source concepts | 2 | Source curator plus human editorial reviewer | Select and process an independent video, then add its evidence only when the cited transcript supports the existing claim. |
+| Published videos with remaining review backlog | 50 | Human editorial reviewer, Codex-assisted | Filter the review queue by affected video, resolve deferred candidates, update canonical concepts where warranted, then validate and republish. |
+| Members-only configured videos | 8 | Human project owner or authorized rights operator | Leave unprocessed unless legitimate access and processing rights are confirmed and recorded before an explicit ingestion attempt. |
 | Unselected TT SpinMaster discoveries | 205 | Curate by coverage gap; do not bulk-ingest automatically. |
 | Unselected GlobalTTStudio discoveries | 387 | Curate by missing topic, independent support, or useful visual demonstration. |
 

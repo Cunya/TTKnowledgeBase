@@ -8,9 +8,12 @@ aliases:
 short_definition: A match-winning principle that emphasizes repeated, reliable execution over shortcuts or sporadic effort.
 evidence_summary: >-
   Consistency brings together several connected ideas. Consistency as the most crucial principle
-  and there are no shortcuts. Together, these principles show how the topic is applied in practice
-  while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:6f4f64e0046543ed478882e88d2a593d28bfb2c6ac691b69e9d5d147fe0f7f5e"
+  and there are no shortcuts. A fixed backswing position and repeated home base to consistency and
+  stable shot execution. A useful contrast is between table tennis and single-shot force and
+  explicitly says the game is about continuity and consistency, not brute force. Together, these
+  principles show how the topic is applied in practice while preserving the relevant distinctions
+  and constraints.
+evidence_summary_source_hash: "sha256:d7e975dd856e099ef2598e01efbc5320a4a1782a43a4c976688db8656cbe4984"
 evidence_summary_generator: "deterministic"
 concept_type: fundamental
 facets:
@@ -41,3 +44,33 @@ evidence:
       segment_ids:
         - YS3IObI6Gaw:00002
         - YS3IObI6Gaw:00006
+  - id: 3wQrxObpgxM-concept-consistency-reviewed
+    evidence_type: definition
+    excerpt: A stroke is consistent when the preparatory position, body mechanics, and contact remain repeatable from ball to ball.
+    reason: The speaker explicitly ties a fixed backswing position and repeated home base to consistency and stable shot execution.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 3wQrxObpgxM
+      start_ms: 671233
+      end_ms: 699566
+      url: https://www.youtube.com/watch?v=3wQrxObpgxM&t=671s
+      segment_ids:
+        - 3wQrxObpgxM:00095
+        - 3wQrxObpgxM:00096
+        - 3wQrxObpgxM:00110
+  - id: hi0AJuu60eE-cand-4-reviewed
+    evidence_type: definition
+    excerpt: Winning play depends on sustaining rally continuity and consistent movement rather than relying on brute force or one-shot power.
+    reason: The speaker contrasts table tennis with single-shot force and explicitly says the game is about continuity and consistency, not brute force.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: hi0AJuu60eE
+      start_ms: 607333
+      end_ms: 632933
+      url: https://www.youtube.com/watch?v=hi0AJuu60eE&t=607s
+      segment_ids:
+        - hi0AJuu60eE:00062

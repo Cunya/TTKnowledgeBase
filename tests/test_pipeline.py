@@ -12,6 +12,7 @@ from processors.pipeline import (
     find_high_overlap_excerpts,
     load_reviewed_concepts,
     longest_contiguous_overlap,
+    process_pending_candidates,
     publish,
     render_quality_report_markdown,
     rephrase_high_overlap_excerpts,
@@ -81,6 +82,51 @@ def test_review_queue_rebuild_preserves_editorial_decisions(tmp_path: Path) -> N
     assert changed_item["decision"] == "pending"
     assert changed_item["canonical_concept_id"] is None
     assert "content changed" in changed_item["review_notes"]
+
+
+def test_unchanged_deferred_candidate_becomes_explicit_human_review(tmp_path: Path) -> None:
+    queue_path = tmp_path / "review-queue.yaml"
+    concept_dir = tmp_path / "concepts"
+    normalized_dir = tmp_path / "normalized"
+    concept_dir.mkdir()
+    normalized_dir.mkdir()
+    yaml = YAML()
+    with queue_path.open("w", encoding="utf-8") as handle:
+        yaml.dump(
+            {
+                "items": [
+                    {
+                        "video_id": "abcdefghijk",
+                        "candidate": {
+                            "candidate_id": "candidate-1",
+                            "canonical_label": "Ambiguous idea",
+                            "definition": "A deliberately ambiguous candidate.",
+                            "resolution": "ambiguous",
+                            "matched_concept_id": None,
+                            "confidence": 0.4,
+                            "evidence": [],
+                        },
+                        "decision": "deferred",
+                        "adjudication_attempts": 1,
+                    }
+                ]
+            },
+            handle,
+        )
+
+    counts = process_pending_candidates(
+        queue_path,
+        concept_dir,
+        normalized_dir,
+        [],
+        retry_deferred=True,
+        max_adjudication_attempts=2,
+    )
+
+    item = read_yaml(queue_path)["items"][0]
+    assert counts["human_review"] == 1
+    assert item["decision"] == "human_review"
+    assert item["adjudication_attempts"] == 2
 
 
 def test_high_overlap_rephrase_preserves_source_metadata() -> None:

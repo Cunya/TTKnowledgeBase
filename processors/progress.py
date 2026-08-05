@@ -5,6 +5,7 @@ from __future__ import annotations
 from collections import Counter, defaultdict
 from datetime import UTC, datetime
 
+from .inventory import build_inventory_ledger
 from .models import PublishCorpus
 from .pipeline import load_videos
 from .utils import read_json, read_yaml, write_json
@@ -156,7 +157,7 @@ def build_progress_report(paths: KnowledgeBasePaths, corpus: PublishCorpus) -> d
             video_id
             for video_id in extracted_ids
             if queue_by_video[video_id] and all(
-                item.get("decision") in {"accepted", "rejected"}
+                item.get("decision") in {"accepted", "rejected", "human_review"}
                 for item in queue_by_video[video_id]
             )
         }
@@ -225,6 +226,7 @@ def build_progress_report(paths: KnowledgeBasePaths, corpus: PublishCorpus) -> d
         "deferred": queue_counts["deferred"],
         "rejected": queue_counts["rejected"],
         "pending": queue_counts["pending"],
+        "human_review": queue_counts["human_review"],
         "reviewed_videos": sum(record["reviewed"] for record in records),
         "published_with_review_backlog": sum(record["published_with_review_backlog"] for record in records),
         "single_source_concepts": sum(
@@ -235,11 +237,16 @@ def build_progress_report(paths: KnowledgeBasePaths, corpus: PublishCorpus) -> d
     }
     for record in records:
         record["concepts"] = len(source_concept_sets.get(record["id"], set()))
+    inventory = build_inventory_ledger(paths, corpus)
+    latest_path = paths.data("manifests") / "cp.latest.json"
+    latest = read_json(latest_path) if latest_path.exists() else {}
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "knowledge_base": paths.id,
         "generated_at": corpus.generated_at.isoformat(),
         "totals": totals,
         "sources": records,
         "members_only_ids": sorted(inaccessible_ids),
+        "inventory": inventory["summary"],
+        "latest_workset": latest.get("workset") or {},
     }

@@ -11,18 +11,17 @@ evidence_summary: >-
   Backhand racket-face angle adjustment brings together several connected ideas. Racket-face
   accuracy and a slight leftward angle when adjusting the line. The receive racket face should
   mirror the incoming face angle, using vertical, flat, or more vertical angles to control the
-  trajectory. Backspin loop mistakes often hit the lower half when the upper half is correct, and
-  that the upper half is needed for spin. Fixing the racket angle and keeping it consistent from
-  preparation through follow-through for stability. Against pointing the racket toward yourself,
-  says the face should angle to the right side, and insists the angle be maintained through
-  contact. A too-forward racket causes rushing on a high-arc loop, that slower balls require
-  bringing the hand back, and that on slow spinny loops you should close the racket angle. A
-  consistent 2 o'clock racket angle, explains that closing the racket too much causes edge hits,
-  and stresses that the face should stay stable through contact and follow-through. To open the
-  racket face and keep the racket vertical when handling long-pips returns. Additional points
-  reinforce the same theme. Together, these principles show how the topic is applied in practice
-  while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:fd6c2fdb6e34cc987970934dbffdd95f2b6ed10cea1421099098aa76cd6d4921"
+  trajectory. The racket face is too open, then recommends closing it slightly and using that
+  angle as the contact point. The racket angle should always be closed and remain consistent
+  through the full motion. The racket face should not be square, should hook slightly inward, and
+  should be slightly closed to wrap around the ball. Against backspin and topspin the racket angle
+  should stay closed, and that opening it kills friction and quality. Although on hook serve, the
+  specific issue described is racket-face angle control and checking whether it stays aligned
+  after follow-through. To keep the racket angle closed and an open face causes long balls and
+  prevents real spin generation. Additional points reinforce the same theme. Together, these
+  principles show how the topic is applied in practice while preserving the relevant distinctions
+  and constraints.
+evidence_summary_source_hash: "sha256:36bc358009648971f54fc8081861b0afa62eab2a6bdd2ad060b768b322a7d742"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -523,3 +522,34 @@ evidence:
       segment_ids:
         - U6iP2eWxCDA:00085
         - U6iP2eWxCDA:00087
+  - id: XaU6LtcP_n0-concept-backhand-racket-face-angle-adjustment-reviewed
+    evidence_type: explanation
+    excerpt: Adjust the backhand racket face angle so the ball can be controlled and directed correctly without wobble.
+    reason: The speaker says the racket face must follow the ball to aim properly and the wrist must stay firm.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: XaU6LtcP_n0
+      start_ms: 130933
+      end_ms: 144233
+      url: https://www.youtube.com/watch?v=XaU6LtcP_n0&t=130s
+      segment_ids:
+        - XaU6LtcP_n0:00023
+        - XaU6LtcP_n0:00024
+  - id: yqSECRch8WM-concept-backhand-racket-face-angle-adjustment-reviewed
+    evidence_type: definition
+    excerpt: The backhand needs a closed racket face; an open face leads to long shots or flat hits instead of real spin generation.
+    reason: The speaker explicitly says to keep the racket angle closed and explains that an open face causes long balls and prevents real spin generation.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: yqSECRch8WM
+      start_ms: 292566
+      end_ms: 316433
+      url: https://www.youtube.com/watch?v=yqSECRch8WM&t=292s
+      segment_ids:
+        - yqSECRch8WM:00032
+        - yqSECRch8WM:00033
+        - yqSECRch8WM:00034

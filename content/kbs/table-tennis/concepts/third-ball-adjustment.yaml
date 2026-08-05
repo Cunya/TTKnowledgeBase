@@ -623,6 +623,21 @@ evidence:
       url: https://www.youtube.com/watch?v=GmC5XCY9aU4&t=713s
       segment_ids:
         - GmC5XCY9aU4:00152
+  - id: GBudN8i0C1Y-concept-third-ball-adjustment-reviewed
+    evidence_type: explanation
+    excerpt: After a serve, immediately choosing an appropriate follow-up based on the return quality, such as attacking, flicking, or changing placement.
+    reason: He states that on the third ball you must be proactive with power, a flick, or placement change.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: GBudN8i0C1Y
+      start_ms: 567466
+      end_ms: 585666
+      url: https://www.youtube.com/watch?v=GBudN8i0C1Y&t=567s
+      segment_ids:
+        - GBudN8i0C1Y:00081
+        - GBudN8i0C1Y:00082
 relations:
   - relation_type: used_with
     target_concept_id: concept-serve-and-attack-patterns

@@ -12,9 +12,10 @@ evidence_summary: >-
   light-spin/float serves as of several receive mistakes. A flat forward poke as a no-spin ball
   and notes it lands with almost no spin. No-spin as a simple contact push and it with brushing
   and spinny versions. Topspin kicks upward or forward after the bounce, has a high first bounce,
-  and travels low over the net. Together, these principles show how the topic is applied in
-  practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:ec140d42ecdae118470974faf04ffb22a374fc2e17e64e76219c3fcd98bf8810"
+  and travels low over the net. No spin is made by twisting rather than brushing. Together, these
+  principles show how the topic is applied in practice while preserving the relevant distinctions
+  and constraints.
+evidence_summary_source_hash: "sha256:b73b47593591c5fd5dba893aa893f8b757a3989f6fa803e28d4eb08396131b6f"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -109,3 +110,18 @@ evidence:
       segment_ids:
         - 2_kzpEUImHk:00047
         - 2_kzpEUImHk:00054
+  - id: noBTmV6oAFI-concept-no-spin-reviewed
+    evidence_type: definition
+    excerpt: A serve produced by twisting or levering the ball without brushing, so the ball carries little or no spin.
+    reason: The speaker explicitly says no spin is made by twisting rather than brushing.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: noBTmV6oAFI
+      start_ms: 504440
+      end_ms: 511840
+      url: https://www.youtube.com/watch?v=noBTmV6oAFI&t=504s
+      segment_ids:
+        - noBTmV6oAFI:00210
+        - noBTmV6oAFI:00212

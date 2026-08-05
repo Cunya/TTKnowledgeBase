@@ -4,7 +4,7 @@ This is the consolidated backlog from the architecture review, content review, l
 
 It is intentionally ordered. The project should complete the blocking and trust items before another large scrape or extraction batch.
 
-Last refreshed: 2026-07-21 15:25 EEST.
+Last refreshed: 2026-08-05 00:50 EEST.
 
 ## Atlas classification audit - 2026-07-22
 
@@ -19,6 +19,9 @@ Last refreshed: 2026-07-21 15:25 EEST.
 - Acquisition safety finding: an active transcript block was treated as video-specific, so cp could continue network attempts against other videos on the same route. The ingest circuit breaker now treats active blocked retry windows as route-wide and stops before any request unless an alternate route or explicit retry override is supplied.
 - The route-wide gate is limited to `blocked: true`; ordinary unavailable, transient, and members-only failures remain per-video skips so unaffected videos can continue processing.
 - Monitor usability: expose the active route-wide block deadline from the same retry manifest used by ingest, so operators can see when the current route is safe to retry.
+- Documentation: added `docs/codex-cli-usage.md`, documenting the local Codex extraction, review, summary, budget, audit, failure, and publishing controls.
+- Added `docs/codex-cli-python-integration.md`, documenting the general Python subprocess pattern used to call Codex CLI, including preflight, schemas, temporary files, timeouts, provenance, budgets, and failure handling.
+- Recorded the operator-provided playlist `PLoTZwCwIlt2WXTvv3h-Xpk6rxoXttkE3C` as a disabled future source candidate.
 - Process finding: automatic placement previously accepted any highest keyword score, including weak or near-tied matches. Added a strong-match and margin gate so ambiguous generated concepts stay unplaced for editorial review.
 
 ## Research reconciliation — 2026-07-19
@@ -433,13 +436,13 @@ Track relation counts, concepts with no outgoing relations, cross-listed concept
 - All 73 published concepts now have a coherent direct `evidence_summary` paragraph. The 72 generated essays were rewritten in batched Codex calls from approved evidence reasons, pass paragraph/attribution checks, and carry source hashes plus generator metadata; hand-authored summaries remain protected.
 - Deterministic cleanup of transcript-reporting leads from visible moment titles.
 
-### P1-19  Separate discovery inventory from the controlled processing workset
+### P1-19  Separate discovery inventory from configured batch history
 
-**Status:** In progress (2026-07-20).
+**Status:** Superseded by P1-28 after runtime-history clarification (2026-08-05).
 
-**Finding:** The local inventory reports 822 discovered entries versus 148 configured entries, which can be mistaken for 674 immediately processable videos. The current controlled cp policy intentionally processes only selected configured entries until backlog-gated expansion is approved. A separate bug in `scripts/run-cp.py` also allowed the cp report path to be overwritten by a discovery manifest path, leaving stale monitor reporting.
+**Finding:** The original review treated the configured entries as the controlled live workset. The later implementation and documentation show that these entries are accumulated controlled-batch history: after exhausting them, `run-cp.py` continued automatically through highest-viewed unseen discovery entries without appending those videos to `sources.yaml`. The actual workset is generated per run and stored in private manifest fields. A separate bug in `scripts/run-cp.py` also allowed the cp report path to be overwritten by a discovery manifest path, leaving stale monitor reporting.
 
-**Acceptance:** Keep discovery counts, configured selection, normalized state, retry state, and eligible workset counts distinct in the local progress and monitor views; preserve `cp.latest.json` as the authoritative latest-run manifest; add an explicit expansion workflow before processing unconfigured catalog entries.
+**Acceptance:** Retain configured entries as provenance, preserve `cp.latest.json` as the authoritative latest-run manifest, and implement the full-inventory eligibility/completion ledger and generated-workset reporting defined by P1-28.
 
 ### P1-20  Make sleep/network interruption cleanup bounded on Windows
 
@@ -471,6 +474,72 @@ Track relation counts, concepts with no outgoing relations, cross-listed concept
 **Acceptance:** Classify members-only acquisition errors explicitly, record `availability: members_only` and a three-day `next_retry_at` in the private retry manifest, skip without counting the item as a batch failure during the cooldown, and exclude it from both configured and discovered cp selection until the cooldown expires.
 
 **Evidence:** `processors/ingest.py`, `processors/cli.py`, `scripts/run-cp.py`, and the 2026-07-21 session log. Targeted tests and Ruff passed.
+
+### P1-23 — Preserve base-language caption coverage with regional fallback
+
+**Status:** Implemented (2026-08-04).
+
+**Finding:** The ingest default correctly requests `en` and succeeds for many videos, but `youtube-transcript-api` performs exact language matching. Videos exposing only manually created `en-US` tracks were rejected even though `en-US` is the same source language; `en` listed only under translation languages was not a usable original track.
+
+**Acceptance:** Keep exact configured language priorities first; when an exact track is absent, select a same-base regional source track deterministically for both transcript adapters. Read the default priority from the KB configuration, preserve explicit `--languages` overrides, reject unrelated languages, and cover the behavior with offline tests.
+
+**Evidence:** `processors/ingest.py`, `processors/cli.py`, `tests/test_ingest.py`, and the 2026-08-04 session log. The fallback is source-track based and does not request or publish translated captions as if they were originals.
+
+### P1-24 — Add task-manager-style resource telemetry to the processor monitor
+
+**Status:** Implemented (2026-08-04).
+
+**Finding:** The monitor's Resources panel showed a long process list with cumulative CPU seconds and memory values but no current system load context, making it difficult to see whether a run was CPU-, memory-, or network-bound.
+
+**Acceptance:** Expose Windows total CPU percentage and used/total memory percentage with compact rolling history and load bars, keep the process detail list available, and degrade clearly when a system snapshot is unavailable.
+
+**Evidence:** `scripts/processor-monitor.mjs` and the 2026-08-04 session log. Live `/api/status` and monitor-page checks passed after a safe service restart.
+
+### P1-25 — Show the next processor start countdown
+
+**Status:** Implemented (2026-08-04).
+
+**Finding:** The monitor API retained `nextRunAt`, but the Run State panel originally showed only a fixed local timestamp. A follow-up found that changing the cooldown while the loop was already active updated the stored value but did not rebuild the existing idle timer, leaving the displayed next-run time unchanged.
+
+**Acceptance:** Show a live countdown to the next process start alongside the exact local time, label the configurable delay as “Cooldown between runs (minutes),” and expose a clear Start / apply cooldown action. Applying a cooldown while idle must immediately rebuild the timer and update `nextRunAt`; applying it during a run must preserve that run and use the new delay after completion. Show the active process start time while a cycle is running and retain the stopped/pending states.
+
+**Evidence:** `scripts/processor-monitor.mjs` and the 2026-08-04 session logs. `node --check` passed; live API checks verified active-run deferral and exact idle rescheduling, and browser checks verified the apply control and updated countdown.
+
+### P1-26 — Visualize Source summary state relationships
+
+**Status:** Implemented (2026-08-04).
+
+**Finding:** The Source summary table mixed video stages, candidate decisions, public knowledge outputs, and visual-review counts in one wide row. Percentages identified denominators, but the table did not make sequential stages, exclusion branches, review branches, or differing units visually clear. The first graph iteration also labeled all 690 videos outside the current configuration as “Not selected,” obscuring that 589 were already in the public corpus.
+
+**Acceptance:** Lead with the user-facing content split: 838 known source videos = 729 on the site + 109 not on the site, with 101 not published and 8 members-only. Define “on the site” as providing at least one approved moment. Preserve configured batch-history stages, discovery-continuation provenance, fully-reviewed versus review-backlog split, full-corpus candidate decisions, detailed source metrics, and separate visual-verification counts as explicitly labeled operator detail. Make clear that `sources.yaml` entries are accumulated batch history and that `run-cp.py` generates the live workset per run.
+
+**Evidence:** `app/src/pages/progress.astro`, `app/src/styles/global.css`, `docs/source-video-progress.md`, and the 2026-08-04 22:00 and 2026-08-05 00:00 session logs. Astro diagnostics/build passed with 0 findings. Live local verification confirmed the primary 838 = 729 on-site + 109 not-on-site content split, its 101 not-published + 8 members-only breakdown, and the subordinate 148 configured-batch-history + 690 discovery-continuation provenance split render clearly in dark mode.
+
+### P1-27 — Assign ownership and completion guidance to outstanding work
+
+**Status:** Implemented (2026-08-04).
+
+**Finding:** The progress page named outstanding work and recommended broad actions, but it did not identify which operational role should act or describe the concrete review, curation, rights, validation, and publishing steps needed to finish each state.
+
+**Acceptance:** Add an explicit owner and actionable completion procedure to every Outstanding work row. Distinguish editorial review, visual review, source curation, and access/rights decisions, and mirror the guidance in the source-progress documentation.
+
+**Evidence:** `app/src/pages/progress.astro`, `docs/source-video-progress.md`, and the 2026-08-04 22:00 session log.
+
+### P1-28 — Complete every eligible video in the three-source inventory
+
+**Status:** Implemented; exhaustive adjudication is now draining through bounded monitor cycles (2026-08-05).
+
+**Finding:** Automatic discovery-catalog continuation already processed hundreds of videos beyond the 148 entries accumulated in `sources.yaml`, so replacing a supposedly manual workset is not the required change. The remaining gaps are a durable eligibility result for all 838 inventory entries, strict completion accounting across configured and continuation videos, automated resolution of retryable deferred candidates, and an explicit human-review state for genuine ambiguity. The current snapshot has 729 public videos; all 589 public continuation videos are normalized and extracted, but only 93 have every candidate decided and 496 retain deferred candidates. The 101 known videos not on the site lack a complete durable eligibility classification.
+
+**Acceptance:** Implement the phased plan in `docs/exhaustive-source-completion-plan-2026-08-05.md`: build a private full-inventory ledger; generate run worksets from incomplete eligible states; define strict completion; add bounded deferred adjudication and explicit human review; classify the 101 non-public entries; and report the actual latest run workset from `cp.latest.json`. Preserve source-grounding, visual-review honesty, private-data boundaries, pacing, cooldowns, budget guards, and the route-wide block circuit breaker.
+
+**Dependencies:** Existing discovery manifests, ingest retry state, language fallback, Codex budget, review queue, canonical validation, P1-16 orchestration, P1-22 members-only cooldown, and P1-23 regional caption fallback.
+
+**Done when:** All 838 inventory entries have a durable eligibility result; every eligible video is complete or explicitly assigned to human review; no eligible video remains generically pending, deferred, or unclassified; exclusion reasons are specific; progress and monitor views use the ledger plus latest run manifest; and the full release gate passes while the processor is idle.
+
+**Implementation evidence:** `processors/inventory.py` builds the ignored private 838-video ledger; `scripts/run-cp.py` records and executes ledger-selected extraction, adjudication, and acquisition worksets; `process-pending` now records adjudication provenance and assigns unchanged ambiguity to explicit `human_review` after two attempts; progress and monitor views consume ledger and latest-workset summaries. The initial ledger classified the full 109-video not-on-site group as 23 processed videos with no approved moments, 85 members-only videos, and one repeatedly subtitle-disabled public video. This corrects the earlier configuration-only count of eight members-only entries.
+
+**Evidence:** `docs/exhaustive-source-completion-plan-2026-08-05.md`, `processors/inventory.py`, `scripts/run-cp.py`, `scripts/processor-monitor.mjs`, `app/src/pages/progress.astro`, `tests/test_inventory.py`, and the 2026-08-05 session log.
 
 ### P2-10 — Prototype an authorized media-download and ASR transcript route
 

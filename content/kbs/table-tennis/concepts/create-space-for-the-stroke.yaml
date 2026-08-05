@@ -11,9 +11,14 @@ evidence_summary: >-
   is having enough space, and standing too close jams the stroke and forces a block. Needing
   distance and proper positioning to avoid jams and complete the backswing and body rotation. A
   kill shot requires more space, and that a bigger backswing and more body rotation are used to
-  create it. Together, these principles show how the topic is applied in practice while preserving
-  the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:5857397759dba8a7eb714c59db7cc4f8ca33ccb357526fe874cc4b857da6cabe"
+  create it. A preferred distance from the table and being too close causes jamming. Stepping back
+  gives enough space for a full backswing and more complex loop motion. Body rotation creates
+  space, keeps the contact point in front, and prevents jamming that occurs when the hand is
+  pulled back. The forehand has more space, while the backhand has limited space and requires more
+  precision. The space for the backhand is of utmost importance and that you must find the right
+  sense of space between hand and body. Together, these principles show how the topic is applied
+  in practice while preserving the relevant distinctions and constraints.
+evidence_summary_source_hash: "sha256:4933586c3eab34ed47871d89521238fd23d11fe502c8b4c50e177f28288d829c"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -83,3 +88,79 @@ evidence:
       segment_ids:
         - HWIiN1i0_oM:00016
         - HWIiN1i0_oM:00018
+  - id: PsZfazXZXEA-concept-create-space-for-the-stroke-reviewed
+    evidence_type: definition
+    excerpt: Maintain enough room between the body and the ball/racket so the stroke can accelerate freely without getting jammed.
+    reason: The speaker gives a preferred distance from the table and explains that being too close causes jamming.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: PsZfazXZXEA
+      start_ms: 247966
+      end_ms: 267900
+      url: https://www.youtube.com/watch?v=PsZfazXZXEA&t=247s
+      segment_ids:
+        - PsZfazXZXEA:00051
+        - PsZfazXZXEA:00055
+  - id: 3wQrxObpgxM-concept-create-space-for-the-stroke-reviewed
+    evidence_type: explanation
+    excerpt: Position your body far enough from the table to allow a full backswing, body rotation, and unjammed stroke path.
+    reason: The speaker says stepping back gives enough space for a full backswing and more complex loop motion.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 3wQrxObpgxM
+      start_ms: 14400
+      end_ms: 32166
+      url: https://www.youtube.com/watch?v=3wQrxObpgxM&t=14s
+      segment_ids:
+        - 3wQrxObpgxM:00003
+        - 3wQrxObpgxM:00005
+  - id: czp2jsURYQk-concept-create-space-for-the-stroke-reviewed
+    evidence_type: explanation
+    excerpt: Body rotation and preparation should create room for the stroke so the contact stays in front and the arm does not get jammed behind the body.
+    reason: The transcript directly states that body rotation creates space, keeps the contact point in front, and prevents jamming that occurs when the hand is pulled back.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: czp2jsURYQk
+      start_ms: 571833
+      end_ms: 589266
+      url: https://www.youtube.com/watch?v=czp2jsURYQk&t=571s
+      segment_ids:
+        - czp2jsURYQk:00087
+        - czp2jsURYQk:00088
+        - czp2jsURYQk:00089
+  - id: wytyHpyZr9A-concept-create-space-for-the-stroke-reviewed
+    evidence_type: explanation
+    excerpt: A loop needs enough swing room, especially on the backhand where space is limited compared with the forehand.
+    reason: The forehand has more space, while the backhand has limited space and requires more precision.
+    confidence: 0.94
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: wytyHpyZr9A
+      start_ms: 797933
+      end_ms: 820566
+      url: https://www.youtube.com/watch?v=wytyHpyZr9A&t=797s
+      segment_ids:
+        - wytyHpyZr9A:00128
+        - wytyHpyZr9A:00131
+  - id: pbILplLUhnI-concept-create-space-for-the-stroke-reviewed
+    evidence_type: definition
+    excerpt: A usable backhand stroke requires enough space between the hand and the body so the swing can happen cleanly without jamming.
+    reason: The speaker says the space for the backhand is of utmost importance and that you must find the right sense of space between hand and body.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: pbILplLUhnI
+      start_ms: 269833
+      end_ms: 279766
+      url: https://www.youtube.com/watch?v=pbILplLUhnI&t=269s
+      segment_ids:
+        - pbILplLUhnI:00047
+        - pbILplLUhnI:00048

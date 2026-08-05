@@ -155,13 +155,84 @@ def _proxy_config(options: IngestOptions):
     return None
 
 
+def _language_code(value: object) -> str:
+    return str(value or "").strip().replace("_", "-").casefold()
+
+
+def _language_base(value: object) -> str:
+    return _language_code(value).split("-", 1)[0]
+
+
+def select_transcript_track(transcript_list, languages: list[str]):
+    """Select an exact requested track, then a regional track with the same base code."""
+    requested = [str(language).strip() for language in languages if str(language).strip()]
+    available = list(transcript_list)
+    for language in requested:
+        code = _language_code(language)
+        exact = next(
+            (track for track in available if _language_code(track.language_code) == code),
+            None,
+        )
+        if exact is not None:
+            return exact
+        base = _language_base(language)
+        regional = [
+            track for track in available if _language_base(track.language_code) == base
+        ]
+        if regional:
+            return min(
+                regional,
+                key=lambda track: (
+                    bool(getattr(track, "is_generated", False)),
+                    _language_code(track.language_code),
+                ),
+            )
+    # Preserve youtube-transcript-api's detailed NoTranscriptFound error when
+    # neither an exact nor a same-language regional track is available.
+    return transcript_list.find_transcript(requested)
+
+
+def subtitle_language_patterns(languages: list[str]) -> list[str]:
+    """Return yt-dlp language selectors that preserve exact and regional priority."""
+    patterns: list[str] = []
+    for language in languages:
+        code = str(language).strip()
+        if not code or code in patterns:
+            continue
+        patterns.append(code)
+        base = _language_base(code)
+        regional_pattern = f"{base}.*" if base and "*" not in code else ""
+        if regional_pattern and regional_pattern not in patterns:
+            patterns.append(regional_pattern)
+    return patterns
+
+
+def select_subtitle_file(files: list[Path], video_id: str, languages: list[str]) -> Path:
+    """Select an exact subtitle filename, then a same-language regional filename."""
+    parsed = [(path, path.stem[len(f"{video_id}.") :]) for path in files if path.stem.startswith(f"{video_id}.")]
+    for language in languages:
+        code = _language_code(language)
+        exact = next((path for path, track_code in parsed if _language_code(track_code) == code), None)
+        if exact is not None:
+            return exact
+        base = _language_base(language)
+        regional = [
+            (path, track_code)
+            for path, track_code in parsed
+            if _language_base(track_code) == base
+        ]
+        if regional:
+            return min(regional, key=lambda item: _language_code(item[1]))[0]
+    return files[0]
+
+
 def fetch_transcript(
     video_id: str, languages: list[str], options: IngestOptions
 ) -> TranscriptTrack:
     try:
         api = YouTubeTranscriptApi(proxy_config=_proxy_config(options))
         transcript_list = api.list(video_id)
-        transcript = transcript_list.find_transcript(languages)
+        transcript = select_transcript_track(transcript_list, languages)
         fetched = transcript.fetch()
     except Exception as error:
         message = str(error).lower()
@@ -265,7 +336,7 @@ def fetch_yt_dlp_subtitles(
                 "skip_download": True,
                 "writesubtitles": True,
                 "writeautomaticsub": True,
-                "subtitleslangs": languages,
+                "subtitleslangs": subtitle_language_patterns(languages),
                 "subtitlesformat": "vtt",
                 "outtmpl": output,
             }
@@ -275,7 +346,8 @@ def fetch_yt_dlp_subtitles(
         files = list(Path(directory).glob(f"{video_id}*.vtt"))
         if not files:
             raise RuntimeError("yt-dlp returned no matching subtitle track")
-        language = next((code for code in languages if f".{code}." in files[0].name), languages[0])
+        selected = select_subtitle_file(files, video_id, languages)
+        language = selected.stem[len(f"{video_id}.") :] if selected.stem.startswith(f"{video_id}.") else languages[0]
         # yt-dlp does not expose the selected track type in the filename. The
         # normalized origin is therefore conservative until the media-ASR
         # route adds a track-selection manifest of its own.
