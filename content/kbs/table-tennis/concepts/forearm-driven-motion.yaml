@@ -2,443 +2,502 @@ id: concept-forearm-driven-motion
 slug: forearm-driven-motion
 label: Forearm-driven motion
 aliases:
-  - forearm folding
-  - compact forearm action
-short_definition: A stroke action driven primarily by the forearm folding and unfolding, without overusing the upper arm.
+- forearm-dominated action
+- wrist-driven forearm action
+short_definition: A stroke action in which the forearm controls the force point while the upper arm is used less.
 evidence_summary: >-
-  Forearm-driven motion brings together several connected ideas. A useful contrast is between
-  compact forearm folding and forearm-driven motion and lifting the upper arm too much. To use the
-  wrist to drive the forearm and that this compact action improves consistency for brushing. To
-  use the forearm to accelerate and later to retract the forearm after contact. The stroke relies
-  on the wrist and forearm to generate the pull, and later describes using the forearm with the
-  shoulder and elbow lowered. To separate the forearm and upper arm and use a whip-like forearm
-  action for power. To open only the forearm, keep the elbow and upper arm close, and accelerate
-  mainly with the forearm for speed. To use the forearm to loop and drive forward into the ball.
-  The forearm should remain dropped and loose, then rotate through the ball before accelerating
-  forward and through the shot. Additional points reinforce the same theme. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:765149b6de601decf16f8deff350b4f7cc9db0adcd4920c5c629f5684b2ac3a6"
-evidence_summary_generator: "deterministic"
+  A stroke action that uses the forearm as the primary force and control point, with less emphasis on the upper arm.
 concept_type: stroke
 facets:
   category:
-    - stroke
-  side:
-    - neutral
-  level:
-    - intermediate
-difficulty: intermediate
+  - stroke
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 8a36c3834827ead4e867c18e519e90e798b758416a949444325a197263b24c8b
-  prompt_version: candidate-review-v1
+  input_hash: sha256:079f7f19077b3e3d8fa02a1ee0aa3856ac73f0ff55ef8cf3013e122b7f73dd11
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: TMrN47uIHiI-concept-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: A stroke action driven primarily by the forearm folding and unfolding, without overusing the upper arm.
-    reason: The speaker contrasts compact forearm folding and forearm-driven motion with lifting the upper arm too much.
-    confidence: 0.88
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: TMrN47uIHiI
-      start_ms: 469040
-      end_ms: 481480
-      url: https://www.youtube.com/watch?v=TMrN47uIHiI&t=469s
-      segment_ids:
-        - TMrN47uIHiI:00139
-        - TMrN47uIHiI:00143
-  - id: dOSO2ksI7uY-concept-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: Using the forearm as a primary moving segment in the forehand preparation and release.
-    reason: The speaker explicitly instructs players to open the arm, open the paddle head, and open the forearm and body in sequence.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: dOSO2ksI7uY
-      start_ms: 111266
-      end_ms: 130966
-      url: https://www.youtube.com/watch?v=dOSO2ksI7uY&t=111s
-      segment_ids:
-        - dOSO2ksI7uY:00175
-        - dOSO2ksI7uY:00182
-  - id: wpaKC8pALyQ-concept-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: Using the forearm as the main moving segment in a defensive or countering stroke.
-    reason: The speaker explicitly says to use mainly the forearm and then apply force forward or forward and downward for heavy spin.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: wpaKC8pALyQ
-      start_ms: 82966
-      end_ms: 91600
-      url: https://www.youtube.com/watch?v=wpaKC8pALyQ&t=82s
-      segment_ids:
-        - wpaKC8pALyQ:00037
-        - wpaKC8pALyQ:00038
-        - wpaKC8pALyQ:00039
-        - wpaKC8pALyQ:00040
-  - id: C2CBt2468oI-concept-forearm-driven-motion-reviewed
-    evidence_type: definition
-    excerpt: A compact stroke pattern in which wrist action drives the forearm to create acceleration, often used to keep the motion consistent and reduce errors.
-    reason: The speaker repeatedly says to use the wrist to drive the forearm and that this compact action improves consistency for brushing.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: C2CBt2468oI
-      start_ms: 691933
-      end_ms: 705233
-      url: https://www.youtube.com/watch?v=C2CBt2468oI&t=691s
-      segment_ids:
-        - C2CBt2468oI:00184
-        - C2CBt2468oI:00185
-        - C2CBt2468oI:00186
-        - C2CBt2468oI:00187
-        - C2CBt2468oI:00188
-  - id: KM-gOmX2AeU-concept-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: Using the forearm as the primary driver of the backswing and serve preparation.
-    reason: The speaker states that the forearm determines backswing height and that the backswing is led by the forearm.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: KM-gOmX2AeU
-      start_ms: 626933
-      end_ms: 648333
-      url: https://www.youtube.com/watch?v=KM-gOmX2AeU&t=626s
-      segment_ids:
-        - KM-gOmX2AeU:00163
-        - KM-gOmX2AeU:00164
-        - KM-gOmX2AeU:00166
-        - KM-gOmX2AeU:00167
-  - id: pRuBdX0ZLgg-concept-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: Spin and serve speed are generated primarily through the forearm swing rather than the upper arm.
-    reason: The speaker states that the forward rush spin comes from forearm swing.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: pRuBdX0ZLgg
-      start_ms: 277466
-      end_ms: 282366
-      url: https://www.youtube.com/watch?v=pRuBdX0ZLgg&t=277s
-      segment_ids:
-        - pRuBdX0ZLgg:00072
-        - pRuBdX0ZLgg:00073
-  - id: YJzwlL7EEM8-concept-forearm-driven-motion-for-speed-reviewed
-    evidence_type: explanation
-    excerpt: A compact stroke action where speed comes mainly from the forearm while the upper arm and elbow stay quiet.
-    reason: The speaker contrasts backhand and forehand shapes, then directly instructs to contract the forearm and avoid moving the upper arm or elbow.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: YJzwlL7EEM8
-      start_ms: 148700
-      end_ms: 159366
-      url: https://www.youtube.com/watch?v=YJzwlL7EEM8&t=148s
-      segment_ids:
-        - YJzwlL7EEM8:00042
-        - YJzwlL7EEM8:00043
-        - YJzwlL7EEM8:00044
-        - YJzwlL7EEM8:00045
-        - YJzwlL7EEM8:00046
-        - YJzwlL7EEM8:00047
-  - id: RwbDGQSqM8g-concept-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: Using the forearm to generate or control speed in the stroke.
-    reason: The speaker says to use the forearm to accelerate and later to retract the forearm after contact.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: RwbDGQSqM8g
-      start_ms: 262240
-      end_ms: 285639
-      url: https://www.youtube.com/watch?v=RwbDGQSqM8g&t=262s
-      segment_ids:
-        - RwbDGQSqM8g:00080
-        - RwbDGQSqM8g:00087
-  - id: otQ5B7u8Q2I-concept-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: Use the forearm, with wrist coordination, as the primary moving segment rather than the upper arm.
-    reason: The speaker says to focus on controlling the forearm and wrist and avoid using the upper arm.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: otQ5B7u8Q2I
-      start_ms: 211600
-      end_ms: 225200
-      url: https://www.youtube.com/watch?v=otQ5B7u8Q2I&t=211s
-      segment_ids:
-        - otQ5B7u8Q2I:00028
-        - otQ5B7u8Q2I:00029
-  - id: nnBPQr5t_ag-concept-forearm-acceleration-with-fixed-shoulder-and-elbow-reviewed
-    evidence_type: explanation
-    excerpt: Generate stroke speed by keeping the shoulder and elbow stable while the forearm provides the acceleration at contact.
-    reason: The speaker repeatedly states that the shoulder and elbow should be fixed/stable and that speed or acceleration comes from the forearm.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: nnBPQr5t_ag
-      start_ms: 199666
-      end_ms: 217366
-      url: https://www.youtube.com/watch?v=nnBPQr5t_ag&t=199s
-      segment_ids:
-        - nnBPQr5t_ag:00072
-        - nnBPQr5t_ag:00078
-        - nnBPQr5t_ag:00079
-  - id: rSfonAiwrHk-concept-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: Using the forearm, together with the wrist, as the main moving segment to generate the pull or stroke action.
-    reason: The speaker says the stroke relies on the wrist and forearm to generate the pull, and later describes using the forearm with the shoulder and elbow lowered.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: rSfonAiwrHk
-      start_ms: 66133
-      end_ms: 71366
-      url: https://www.youtube.com/watch?v=rSfonAiwrHk&t=66s
-      segment_ids:
-        - rSfonAiwrHk:00028
-        - rSfonAiwrHk:00030
-        - rSfonAiwrHk:00031
-  - id: tpY3SRVdBK8-concept-forearm-driven-motion-reviewed
-    evidence_type: definition
-    excerpt: Using the forearm as the primary moving segment to create acceleration and control the stroke.
-    reason: The speaker directly instructs the player to avoid the upper arm and use/speed up the forearm.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: tpY3SRVdBK8
-      start_ms: 755633
-      end_ms: 760433
-      url: https://www.youtube.com/watch?v=tpY3SRVdBK8&t=755s
-      segment_ids:
-        - tpY3SRVdBK8:00091
-  - id: imcV_xGDaJ4-concept-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: A stroke pattern where the forearm provides the main control and drive, with the upper arm used less.
-    reason: The speaker says to use the forearm to pull and control the power point, and explicitly transitions to a forearm-dominated looping action.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: imcV_xGDaJ4
-      start_ms: 201466
-      end_ms: 214033
-      url: https://www.youtube.com/watch?v=imcV_xGDaJ4&t=201s
-      segment_ids:
-        - imcV_xGDaJ4:00078
-        - imcV_xGDaJ4:00079
-        - imcV_xGDaJ4:00080
-        - imcV_xGDaJ4:00081
-        - imcV_xGDaJ4:00082
-        - imcV_xGDaJ4:00083
-  - id: Da2vVwtco1w-concept-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: Using the forearm as the main moving segment in the stroke, often with a folding motion.
-    reason: The speaker warns not to generate spin with the forearm in one way, then instructs the learner to fold the forearm and shows the forearm as the key moving part.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: Da2vVwtco1w
-      start_ms: 368766
-      end_ms: 391966
-      url: https://www.youtube.com/watch?v=Da2vVwtco1w&t=368s
-      segment_ids:
-        - Da2vVwtco1w:00067
-        - Da2vVwtco1w:00071
-  - id: T40bWiitfAU-concept-backhand-forearm-whip-transcript-reviewed
-    evidence_type: definition
-    excerpt: Generate backhand power by separating the forearm from the upper arm and using a whip-like forearm acceleration instead of swinging the whole arm.
-    reason: The speaker explicitly says to separate the forearm and upper arm and use a whip-like forearm action for power.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: T40bWiitfAU
-      start_ms: 381766
-      end_ms: 404533
-      url: https://www.youtube.com/watch?v=T40bWiitfAU&t=381s
-      segment_ids:
-        - T40bWiitfAU:00080
-        - T40bWiitfAU:00081
-        - T40bWiitfAU:00082
-        - T40bWiitfAU:00083
-  - id: qLCA9OYSFl4-concept-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: A stroke pattern where the forearm, not the whole arm, provides the main motion after the upper arm is stabilized.
-    reason: The speaker instructs to keep the forearm level and let it drop/open to generate power, rather than moving the entire arm together.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: qLCA9OYSFl4
-      start_ms: 491366
-      end_ms: 504833
-      url: https://www.youtube.com/watch?v=qLCA9OYSFl4&t=491s
-      segment_ids:
-        - qLCA9OYSFl4:00111
-        - qLCA9OYSFl4:00112
-        - qLCA9OYSFl4:00113
-  - id: Yw2l-2WitOs-concept-forearm-driven-motion-in-looping-reviewed
-    evidence_type: explanation
-    excerpt: Loop speed increases when the forearm and upper arm act with separation and whip-like sequencing rather than as one unit.
-    reason: The speaker says to use the forearm and upper arm separately, make the arm feel like a whip, and not let the whole arm move as one unit.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: Yw2l-2WitOs
-      start_ms: 525600
-      end_ms: 540733
-      url: https://www.youtube.com/watch?v=Yw2l-2WitOs&t=525s
-      segment_ids:
-        - Yw2l-2WitOs:00114
-        - Yw2l-2WitOs:00115
-        - Yw2l-2WitOs:00116
-        - Yw2l-2WitOs:00117
-  - id: QrbeXVhiLKg-concept-forearm-led-serve-acceleration-reviewed
-    evidence_type: explanation
-    excerpt: Generating serve speed primarily through the forearm while keeping the shoulder and upper arm compact.
-    reason: The speaker says to open only the forearm, keep the elbow and upper arm close, and accelerate mainly with the forearm for speed.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: QrbeXVhiLKg
-      start_ms: 111833
-      end_ms: 141400
-      url: https://www.youtube.com/watch?v=QrbeXVhiLKg&t=111s
-      segment_ids:
-        - QrbeXVhiLKg:00027
-        - QrbeXVhiLKg:00028
-        - QrbeXVhiLKg:00029
-        - QrbeXVhiLKg:00030
-        - QrbeXVhiLKg:00031
-        - QrbeXVhiLKg:00032
-  - id: A56gHfnvSCc-concept-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: Using the forearm as a major driver of loop power, with the arm opening up and whipping through the ball instead of staying closed or pushing as one unit.
-    reason: The speaker says the forearm must open at the peak of the backswing, generate power from the open position, and whip like a nunchuck rather than pushing with one lever.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: A56gHfnvSCc
-      start_ms: 584866
-      end_ms: 611000
-      url: https://www.youtube.com/watch?v=A56gHfnvSCc&t=584s
-      segment_ids:
-        - A56gHfnvSCc:00121
-        - A56gHfnvSCc:00122
-        - A56gHfnvSCc:00123
-        - A56gHfnvSCc:00124
-        - A56gHfnvSCc:00125
-        - A56gHfnvSCc:00126
-        - A56gHfnvSCc:00127
-  - id: 8TtaPJW3_94-concept-forearm-driven-motion-reviewed
-    evidence_type: definition
-    excerpt: Using the forearm as the main moving segment to raise, accelerate, and complete the stroke, especially close to the table.
-    reason: The speaker says to raise the forearm, not the whole arm, and that high balls are hit by the forearm while the upper arm stays down.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 8TtaPJW3_94
-      start_ms: 575366
-      end_ms: 585400
-      url: https://www.youtube.com/watch?v=8TtaPJW3_94&t=575s
-      segment_ids:
-        - 8TtaPJW3_94:00122
-  - id: ZW9bduR7FXk-concept-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: Using the forearm to complete the stroke after the upper arm and elbow establish position, rather than moving the whole arm as one piece.
-    reason: The speaker says the upper arm and elbow drive forward and the forearm snaps to finish the motion, while the backswing opens the forearm rather than pulling the elbow back.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: ZW9bduR7FXk
-      start_ms: 715166
-      end_ms: 740200
-      url: https://www.youtube.com/watch?v=ZW9bduR7FXk&t=715s
-      segment_ids:
-        - ZW9bduR7FXk:00157
-        - ZW9bduR7FXk:00161
-  - id: Q-V95wNbaP0-concept-forearm-driven-motion-reviewed
-    evidence_type: definition
-    excerpt: A looping action where the forearm supplies the main motion and drive, while the upper arm is minimized or stabilized.
-    reason: The speaker directly instructs to use the forearm to loop and drive forward into the ball.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: Q-V95wNbaP0
-      start_ms: 234100
-      end_ms: 259800
-      url: https://www.youtube.com/watch?v=Q-V95wNbaP0&t=234s
-      segment_ids:
-        - Q-V95wNbaP0:00049
-        - Q-V95wNbaP0:00050
-        - Q-V95wNbaP0:00054
-  - id: xWE01GQepLE-concept-forearm-driven-motion-reviewed
-    evidence_type: definition
-    excerpt: Forearm contraction and controlled forearm movement are used to lift the serve and generate spin, especially on topspin serves.
-    reason: The speaker explicitly instructs using the forearm rather than wrist flicking and says to retract/contract the forearm close to the body.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: xWE01GQepLE
-      start_ms: 608933
-      end_ms: 632566
-      url: https://www.youtube.com/watch?v=xWE01GQepLE&t=608s
-      segment_ids:
-        - xWE01GQepLE:00129
-        - xWE01GQepLE:00132
-  - id: 4hnrmSJ_Ayg-concept-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: Using the forearm as the main active segment to open, drop, and accelerate the stroke instead of keeping the arm locked or rigid.
-    reason: The transcript explains that the forearm drops, opens the arm, and then adds speed in the second phase; this is presented as the core motion behind the shot.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 4hnrmSJ_Ayg
-      start_ms: 290566
-      end_ms: 319466
-      url: https://www.youtube.com/watch?v=4hnrmSJ_Ayg&t=290s
-      segment_ids:
-        - 4hnrmSJ_Ayg:00060
-        - 4hnrmSJ_Ayg:00063
-        - 4hnrmSJ_Ayg:00064
-  - id: IXRPhM4Pjzc-concept-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: Using the forearm as an important moving segment while keeping it loose and dropped through the preparation and swing.
-    reason: The speaker says the forearm should remain dropped and loose, then rotate through the ball before accelerating forward and through the shot.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: IXRPhM4Pjzc
-      start_ms: 502166
-      end_ms: 520733
-      url: https://www.youtube.com/watch?v=IXRPhM4Pjzc&t=502s
-      segment_ids:
-        - IXRPhM4Pjzc:00093
-        - IXRPhM4Pjzc:00094
+- id: TMrN47uIHiI-concept-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: A stroke action driven primarily by the forearm folding and unfolding, without overusing the upper arm.
+  reason: The speaker contrasts compact forearm folding and forearm-driven motion with lifting the upper arm too much.
+  confidence: 0.88
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: TMrN47uIHiI
+    start_ms: 469040
+    end_ms: 481480
+    url: https://www.youtube.com/watch?v=TMrN47uIHiI&t=469s
+    segment_ids:
+    - TMrN47uIHiI:00139
+    - TMrN47uIHiI:00143
+- id: dOSO2ksI7uY-concept-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: Using the forearm as a primary moving segment in the forehand preparation and release.
+  reason: The speaker explicitly instructs players to open the arm, open the paddle head, and open the forearm and body in sequence.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: dOSO2ksI7uY
+    start_ms: 111266
+    end_ms: 130966
+    url: https://www.youtube.com/watch?v=dOSO2ksI7uY&t=111s
+    segment_ids:
+    - dOSO2ksI7uY:00175
+    - dOSO2ksI7uY:00182
+- id: wpaKC8pALyQ-concept-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: Using the forearm as the main moving segment in a defensive or countering stroke.
+  reason: The speaker explicitly says to use mainly the forearm and then apply force forward or forward and downward for heavy spin.
+  confidence: 0.93
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: wpaKC8pALyQ
+    start_ms: 82966
+    end_ms: 91600
+    url: https://www.youtube.com/watch?v=wpaKC8pALyQ&t=82s
+    segment_ids:
+    - wpaKC8pALyQ:00037
+    - wpaKC8pALyQ:00038
+    - wpaKC8pALyQ:00039
+    - wpaKC8pALyQ:00040
+- id: C2CBt2468oI-concept-forearm-driven-motion-reviewed
+  evidence_type: definition
+  excerpt: A compact stroke pattern in which wrist action drives the forearm to create acceleration, often used to keep the motion consistent and reduce errors.
+  reason: The speaker repeatedly says to use the wrist to drive the forearm and that this compact action improves consistency for brushing.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: C2CBt2468oI
+    start_ms: 691933
+    end_ms: 705233
+    url: https://www.youtube.com/watch?v=C2CBt2468oI&t=691s
+    segment_ids:
+    - C2CBt2468oI:00184
+    - C2CBt2468oI:00185
+    - C2CBt2468oI:00186
+    - C2CBt2468oI:00187
+    - C2CBt2468oI:00188
+- id: KM-gOmX2AeU-concept-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: Using the forearm as the primary driver of the backswing and serve preparation.
+  reason: The speaker states that the forearm determines backswing height and that the backswing is led by the forearm.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: KM-gOmX2AeU
+    start_ms: 626933
+    end_ms: 648333
+    url: https://www.youtube.com/watch?v=KM-gOmX2AeU&t=626s
+    segment_ids:
+    - KM-gOmX2AeU:00163
+    - KM-gOmX2AeU:00164
+    - KM-gOmX2AeU:00166
+    - KM-gOmX2AeU:00167
+- id: pRuBdX0ZLgg-concept-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: Spin and serve speed are generated primarily through the forearm swing rather than the upper arm.
+  reason: The speaker states that the forward rush spin comes from forearm swing.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: pRuBdX0ZLgg
+    start_ms: 277466
+    end_ms: 282366
+    url: https://www.youtube.com/watch?v=pRuBdX0ZLgg&t=277s
+    segment_ids:
+    - pRuBdX0ZLgg:00072
+    - pRuBdX0ZLgg:00073
+- id: YJzwlL7EEM8-concept-forearm-driven-motion-for-speed-reviewed
+  evidence_type: explanation
+  excerpt: A compact stroke action where speed comes mainly from the forearm while the upper arm and elbow stay quiet.
+  reason: The speaker contrasts backhand and forehand shapes, then directly instructs to contract the forearm and avoid moving the upper arm or elbow.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: YJzwlL7EEM8
+    start_ms: 148700
+    end_ms: 159366
+    url: https://www.youtube.com/watch?v=YJzwlL7EEM8&t=148s
+    segment_ids:
+    - YJzwlL7EEM8:00042
+    - YJzwlL7EEM8:00043
+    - YJzwlL7EEM8:00044
+    - YJzwlL7EEM8:00045
+    - YJzwlL7EEM8:00046
+    - YJzwlL7EEM8:00047
+- id: RwbDGQSqM8g-concept-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: Using the forearm to generate or control speed in the stroke.
+  reason: The speaker says to use the forearm to accelerate and later to retract the forearm after contact.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: RwbDGQSqM8g
+    start_ms: 262240
+    end_ms: 285639
+    url: https://www.youtube.com/watch?v=RwbDGQSqM8g&t=262s
+    segment_ids:
+    - RwbDGQSqM8g:00080
+    - RwbDGQSqM8g:00087
+- id: otQ5B7u8Q2I-concept-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: Use the forearm, with wrist coordination, as the primary moving segment rather than the upper arm.
+  reason: The speaker says to focus on controlling the forearm and wrist and avoid using the upper arm.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: otQ5B7u8Q2I
+    start_ms: 211600
+    end_ms: 225200
+    url: https://www.youtube.com/watch?v=otQ5B7u8Q2I&t=211s
+    segment_ids:
+    - otQ5B7u8Q2I:00028
+    - otQ5B7u8Q2I:00029
+- id: nnBPQr5t_ag-concept-forearm-acceleration-with-fixed-shoulder-and-elbow-reviewed
+  evidence_type: explanation
+  excerpt: Generate stroke speed by keeping the shoulder and elbow stable while the forearm provides the acceleration at contact.
+  reason: The speaker repeatedly states that the shoulder and elbow should be fixed/stable and that speed or acceleration comes from the forearm.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: nnBPQr5t_ag
+    start_ms: 199666
+    end_ms: 217366
+    url: https://www.youtube.com/watch?v=nnBPQr5t_ag&t=199s
+    segment_ids:
+    - nnBPQr5t_ag:00072
+    - nnBPQr5t_ag:00078
+    - nnBPQr5t_ag:00079
+- id: rSfonAiwrHk-concept-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: Using the forearm, together with the wrist, as the main moving segment to generate the pull or stroke action.
+  reason: The speaker says the stroke relies on the wrist and forearm to generate the pull, and later describes using the forearm with the shoulder and elbow lowered.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: rSfonAiwrHk
+    start_ms: 66133
+    end_ms: 71366
+    url: https://www.youtube.com/watch?v=rSfonAiwrHk&t=66s
+    segment_ids:
+    - rSfonAiwrHk:00028
+    - rSfonAiwrHk:00030
+    - rSfonAiwrHk:00031
+- id: tpY3SRVdBK8-concept-forearm-driven-motion-reviewed
+  evidence_type: definition
+  excerpt: Using the forearm as the primary moving segment to create acceleration and control the stroke.
+  reason: The speaker directly instructs the player to avoid the upper arm and use/speed up the forearm.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: tpY3SRVdBK8
+    start_ms: 755633
+    end_ms: 760433
+    url: https://www.youtube.com/watch?v=tpY3SRVdBK8&t=755s
+    segment_ids:
+    - tpY3SRVdBK8:00091
+- id: imcV_xGDaJ4-concept-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: A stroke pattern where the forearm provides the main control and drive, with the upper arm used less.
+  reason: The speaker says to use the forearm to pull and control the power point, and explicitly transitions to a forearm-dominated looping action.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: imcV_xGDaJ4
+    start_ms: 201466
+    end_ms: 214033
+    url: https://www.youtube.com/watch?v=imcV_xGDaJ4&t=201s
+    segment_ids:
+    - imcV_xGDaJ4:00078
+    - imcV_xGDaJ4:00079
+    - imcV_xGDaJ4:00080
+    - imcV_xGDaJ4:00081
+    - imcV_xGDaJ4:00082
+    - imcV_xGDaJ4:00083
+- id: Da2vVwtco1w-concept-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: Using the forearm as the main moving segment in the stroke, often with a folding motion.
+  reason: The speaker warns not to generate spin with the forearm in one way, then instructs the learner to fold the forearm and shows the forearm as the key moving part.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Da2vVwtco1w
+    start_ms: 368766
+    end_ms: 391966
+    url: https://www.youtube.com/watch?v=Da2vVwtco1w&t=368s
+    segment_ids:
+    - Da2vVwtco1w:00067
+    - Da2vVwtco1w:00071
+- id: T40bWiitfAU-concept-backhand-forearm-whip-transcript-reviewed
+  evidence_type: definition
+  excerpt: Generate backhand power by separating the forearm from the upper arm and using a whip-like forearm acceleration instead of swinging the whole arm.
+  reason: The speaker explicitly says to separate the forearm and upper arm and use a whip-like forearm action for power.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: T40bWiitfAU
+    start_ms: 381766
+    end_ms: 404533
+    url: https://www.youtube.com/watch?v=T40bWiitfAU&t=381s
+    segment_ids:
+    - T40bWiitfAU:00080
+    - T40bWiitfAU:00081
+    - T40bWiitfAU:00082
+    - T40bWiitfAU:00083
+- id: qLCA9OYSFl4-concept-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: A stroke pattern where the forearm, not the whole arm, provides the main motion after the upper arm is stabilized.
+  reason: The speaker instructs to keep the forearm level and let it drop/open to generate power, rather than moving the entire arm together.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: qLCA9OYSFl4
+    start_ms: 491366
+    end_ms: 504833
+    url: https://www.youtube.com/watch?v=qLCA9OYSFl4&t=491s
+    segment_ids:
+    - qLCA9OYSFl4:00111
+    - qLCA9OYSFl4:00112
+    - qLCA9OYSFl4:00113
+- id: Yw2l-2WitOs-concept-forearm-driven-motion-in-looping-reviewed
+  evidence_type: explanation
+  excerpt: Loop speed increases when the forearm and upper arm act with separation and whip-like sequencing rather than as one unit.
+  reason: The speaker says to use the forearm and upper arm separately, make the arm feel like a whip, and not let the whole arm move as one unit.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Yw2l-2WitOs
+    start_ms: 525600
+    end_ms: 540733
+    url: https://www.youtube.com/watch?v=Yw2l-2WitOs&t=525s
+    segment_ids:
+    - Yw2l-2WitOs:00114
+    - Yw2l-2WitOs:00115
+    - Yw2l-2WitOs:00116
+    - Yw2l-2WitOs:00117
+- id: QrbeXVhiLKg-concept-forearm-led-serve-acceleration-reviewed
+  evidence_type: explanation
+  excerpt: Generating serve speed primarily through the forearm while keeping the shoulder and upper arm compact.
+  reason: The speaker says to open only the forearm, keep the elbow and upper arm close, and accelerate mainly with the forearm for speed.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: QrbeXVhiLKg
+    start_ms: 111833
+    end_ms: 141400
+    url: https://www.youtube.com/watch?v=QrbeXVhiLKg&t=111s
+    segment_ids:
+    - QrbeXVhiLKg:00027
+    - QrbeXVhiLKg:00028
+    - QrbeXVhiLKg:00029
+    - QrbeXVhiLKg:00030
+    - QrbeXVhiLKg:00031
+    - QrbeXVhiLKg:00032
+- id: A56gHfnvSCc-concept-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: Using the forearm as a major driver of loop power, with the arm opening up and whipping through the ball instead of staying closed or pushing as one unit.
+  reason: The speaker says the forearm must open at the peak of the backswing, generate power from the open position, and whip like a nunchuck rather than pushing with one lever.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: A56gHfnvSCc
+    start_ms: 584866
+    end_ms: 611000
+    url: https://www.youtube.com/watch?v=A56gHfnvSCc&t=584s
+    segment_ids:
+    - A56gHfnvSCc:00121
+    - A56gHfnvSCc:00122
+    - A56gHfnvSCc:00123
+    - A56gHfnvSCc:00124
+    - A56gHfnvSCc:00125
+    - A56gHfnvSCc:00126
+    - A56gHfnvSCc:00127
+- id: 8TtaPJW3_94-concept-forearm-driven-motion-reviewed
+  evidence_type: definition
+  excerpt: Using the forearm as the main moving segment to raise, accelerate, and complete the stroke, especially close to the table.
+  reason: The speaker says to raise the forearm, not the whole arm, and that high balls are hit by the forearm while the upper arm stays down.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 8TtaPJW3_94
+    start_ms: 575366
+    end_ms: 585400
+    url: https://www.youtube.com/watch?v=8TtaPJW3_94&t=575s
+    segment_ids:
+    - 8TtaPJW3_94:00122
+- id: ZW9bduR7FXk-concept-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: Using the forearm to complete the stroke after the upper arm and elbow establish position, rather than moving the whole arm as one piece.
+  reason: The speaker says the upper arm and elbow drive forward and the forearm snaps to finish the motion, while the backswing opens the forearm rather than pulling the elbow back.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: ZW9bduR7FXk
+    start_ms: 715166
+    end_ms: 740200
+    url: https://www.youtube.com/watch?v=ZW9bduR7FXk&t=715s
+    segment_ids:
+    - ZW9bduR7FXk:00157
+    - ZW9bduR7FXk:00161
+- id: Q-V95wNbaP0-concept-forearm-driven-motion-reviewed
+  evidence_type: definition
+  excerpt: A looping action where the forearm supplies the main motion and drive, while the upper arm is minimized or stabilized.
+  reason: The speaker directly instructs to use the forearm to loop and drive forward into the ball.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Q-V95wNbaP0
+    start_ms: 234100
+    end_ms: 259800
+    url: https://www.youtube.com/watch?v=Q-V95wNbaP0&t=234s
+    segment_ids:
+    - Q-V95wNbaP0:00049
+    - Q-V95wNbaP0:00050
+    - Q-V95wNbaP0:00054
+- id: xWE01GQepLE-concept-forearm-driven-motion-reviewed
+  evidence_type: definition
+  excerpt: Forearm contraction and controlled forearm movement are used to lift the serve and generate spin, especially on topspin serves.
+  reason: The speaker explicitly instructs using the forearm rather than wrist flicking and says to retract/contract the forearm close to the body.
+  confidence: 0.93
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: xWE01GQepLE
+    start_ms: 608933
+    end_ms: 632566
+    url: https://www.youtube.com/watch?v=xWE01GQepLE&t=608s
+    segment_ids:
+    - xWE01GQepLE:00129
+    - xWE01GQepLE:00132
+- id: 4hnrmSJ_Ayg-concept-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: Using the forearm as the main active segment to open, drop, and accelerate the stroke instead of keeping the arm locked or rigid.
+  reason: The transcript explains that the forearm drops, opens the arm, and then adds speed in the second phase; this is presented as the core motion behind the shot.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 4hnrmSJ_Ayg
+    start_ms: 290566
+    end_ms: 319466
+    url: https://www.youtube.com/watch?v=4hnrmSJ_Ayg&t=290s
+    segment_ids:
+    - 4hnrmSJ_Ayg:00060
+    - 4hnrmSJ_Ayg:00063
+    - 4hnrmSJ_Ayg:00064
+- id: IXRPhM4Pjzc-concept-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: Using the forearm as an important moving segment while keeping it loose and dropped through the preparation and swing.
+  reason: The speaker says the forearm should remain dropped and loose, then rotate through the ball before accelerating forward and through the shot.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: IXRPhM4Pjzc
+    start_ms: 502166
+    end_ms: 520733
+    url: https://www.youtube.com/watch?v=IXRPhM4Pjzc&t=502s
+    segment_ids:
+    - IXRPhM4Pjzc:00093
+    - IXRPhM4Pjzc:00094
+- id: 8uzW4bF4Oc8-concept-forearm-driven-motion-codex-reviewed
+  evidence_type: explanation
+  excerpt: 'The upper arm stops first, creating swinging space for the forearm. The forearm''s swing stops before the fingers and wrist complete the final braking action.'
+  reason: Allow the upper arm to stop first so the forearm has swinging space. After that swing stops, use the fingers and wrist to complete the final braking action.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 8uzW4bF4Oc8
+    start_ms: 445666
+    end_ms: 460366
+    url: https://www.youtube.com/watch?v=8uzW4bF4Oc8&t=445s
+    segment_ids:
+    - 8uzW4bF4Oc8:00208
+    - 8uzW4bF4Oc8:00209
+    - 8uzW4bF4Oc8:00210
+    - 8uzW4bF4Oc8:00211
+    - 8uzW4bF4Oc8:00212
+    - 8uzW4bF4Oc8:00213
+- id: C2CBt2468oI-concept-forearm-driven-motion-codex-reviewed
+  evidence_type: explanation
+  excerpt: Brush with the wrist driving the forearm for greater consistency and fewer chances for mistakes than a larger arm motion. This practice may lack quality, but it helps develop the feeling of wrapping the ball.
+  reason: Practice brushing with the wrist driving the forearm for greater consistency and fewer chances for mistakes than a larger arm motion. This practice may lack quality, but it helps develop the feeling of wrapping the ball.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: C2CBt2468oI
+    start_ms: 688466
+    end_ms: 705233
+    url: https://www.youtube.com/watch?v=C2CBt2468oI&t=688s
+    segment_ids:
+    - C2CBt2468oI:00182
+    - C2CBt2468oI:00183
+    - C2CBt2468oI:00184
+    - C2CBt2468oI:00185
+    - C2CBt2468oI:00186
+    - C2CBt2468oI:00187
+    - C2CBt2468oI:00188
+- id: imcV_xGDaJ4-concept-forearm-driven-motion-codex-reviewed
+  evidence_type: explanation
+  excerpt: 'The point of force is in the forearm: use the forearm to control it, use the upper arm less, and transition into a forearm-dominated looping action.'
+  reason: Use the forearm to control the force point, use the upper arm less, and transition into a forearm-dominated looping action.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: imcV_xGDaJ4
+    start_ms: 201466
+    end_ms: 214033
+    url: https://www.youtube.com/watch?v=imcV_xGDaJ4&t=201s
+    segment_ids:
+    - imcV_xGDaJ4:00078
+    - imcV_xGDaJ4:00079
+    - imcV_xGDaJ4:00080
+    - imcV_xGDaJ4:00081
+    - imcV_xGDaJ4:00082
+    - imcV_xGDaJ4:00083
+- id: otQ5B7u8Q2I-concept-forearm-driven-motion-codex-reviewed
+  evidence_type: explanation
+  excerpt: Focus on the force direction of the fingers, wrist, and forearm as the primary focus, avoiding use of the upper arm.
+  reason: Focus on the force direction of the fingers, wrist, and forearm; keep the upper arm secondary.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: otQ5B7u8Q2I
+    start_ms: 211600
+    end_ms: 225200
+    url: https://www.youtube.com/watch?v=otQ5B7u8Q2I&t=211s
+    segment_ids:
+    - otQ5B7u8Q2I:00028
+    - otQ5B7u8Q2I:00029

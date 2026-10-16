@@ -7,11 +7,9 @@ aliases:
   - detached thumb mistake
 short_definition: Placing the thumb firmly on the forehand rubber to stabilize the racket and support power generation on the backhand side.
 evidence_summary: >-
-  Thumb support on the forehand rubber brings together several connected ideas. A detached thumb
-  as a mistake and the thumb must rest firmly on the rubber to secure the racket and drive
-  backhand power. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:0d06538cc76f800f95f1a57875e341c1b303cbe1bf5da416ed75965714c17f07"
+  Placing the thumb firmly on the forehand rubber to stabilize the racket and support power
+  generation on the backhand side.
+evidence_summary_source_hash: "sha256:45ad3944db54c190a97e4f88525c6f4deb44db1b47358314b39b1c40978b67c3"
 evidence_summary_generator: "deterministic"
 concept_type: technique
 facets:
@@ -26,16 +24,36 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 058477390e5c7af79e5f27985ba5a8d2d065d81cc83e7d16b7d2b9e3edc3ab72
-  prompt_version: candidate-review-v1
+  input_hash: sha256:ccd4890999526afd44412fc9df77dc9131bdc91731973b2140d1ed7357b93417
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: Cf-EPAWd_zQ-new-thumb-on-forehand-rubber-reviewed
     evidence_type: definition
     excerpt: Placing the thumb firmly on the forehand rubber to stabilize the racket and support power generation on the backhand side.
     reason: The speaker identifies a detached thumb as a mistake and says the thumb must rest firmly on the rubber to secure the racket and drive backhand power.
     confidence: 0.91
+    visual_status: transcript_inferred
+    review_status: unreviewed
+    source:
+      video_id: Cf-EPAWd_zQ
+      start_ms: 113900
+      end_ms: 136266
+      url: https://www.youtube.com/watch?v=Cf-EPAWd_zQ&t=113s
+      segment_ids:
+        - Cf-EPAWd_zQ:00018
+        - Cf-EPAWd_zQ:00019
+        - Cf-EPAWd_zQ:00020
+        - Cf-EPAWd_zQ:00021
+  - id: Cf-EPAWd_zQ-new-thumb-on-forehand-rubber-codex-reviewed
+    evidence_type: definition
+    excerpt: A common mistake with the thumb is leaving it detached, which prevents backhand power and makes the racket head unstable. Therefore, the thumb must rest firmly on the rubber to secure it.
+    reason: The contiguous span directly identifies the detached-thumb mistake and explicitly instructs placing the thumb firmly on the rubber to stabilize the racket and support backhand power.
+    confidence: 0.99
     visual_status: transcript_inferred
     review_status: approved
     source:

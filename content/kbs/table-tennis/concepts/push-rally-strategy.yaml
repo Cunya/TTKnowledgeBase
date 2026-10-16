@@ -316,7 +316,7 @@ evidence:
     reason: Says the push should add spin so the opponent's reply becomes an attack opportunity.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: mYzbo93Nkps
       start_ms: 387320
@@ -340,7 +340,7 @@ evidence:
     reason: The speaker explicitly names the push rally and frames the lesson around improving push quality, variation, and adaptation to spin.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hwT7cH6PbZQ
       start_ms: 9666
@@ -356,7 +356,7 @@ evidence:
     reason: The speaker describes a push-to-loop sequence after a backspin push, with fallback to a controlled middle ball, then block or loop again depending on the opponent's next ball.
     confidence: 0.92
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: U-z4PamhiUE
       start_ms: 473160
@@ -378,7 +378,7 @@ evidence:
     reason: The transcript frames push choice as a strategic response to different looper types and explicitly says pushes need variation.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: WcQLHn2Fafw
       start_ms: 14100
@@ -388,6 +388,27 @@ evidence:
         - WcQLHn2Fafw:00004
         - WcQLHn2Fafw:00005
         - WcQLHn2Fafw:00007
+  - id: mYzbo93Nkps-concept-push-rally-strategy-codex-reviewed
+    evidence_type: explanation
+    excerpt: Vary push depth, including drop-short and one- or two-bounce pushes, to make the opponent step in and create a chance to loop the next ball.
+    reason: This contiguous 24.88-second span explains adjusting push depth to bring the opponent in and set up the next-ball loop, directly supporting the existing push-rally strategy concept.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: mYzbo93Nkps
+      start_ms: 420200
+      end_ms: 445080
+      url: https://www.youtube.com/watch?v=mYzbo93Nkps&t=420s
+      segment_ids:
+        - mYzbo93Nkps:00157
+        - mYzbo93Nkps:00158
+        - mYzbo93Nkps:00159
+        - mYzbo93Nkps:00160
+        - mYzbo93Nkps:00161
+        - mYzbo93Nkps:00162
+        - mYzbo93Nkps:00163
+        - mYzbo93Nkps:00164
 relations:
   - relation_type: used_with
     target_concept_id: concept-push-variations

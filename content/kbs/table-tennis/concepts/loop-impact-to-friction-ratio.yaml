@@ -2,78 +2,87 @@ id: concept-loop-impact-to-friction-ratio
 slug: loop-impact-to-friction-ratio
 label: Loop impact-to-friction ratio
 aliases:
-  - ratio
-  - impact-to-friction ratio
-short_definition: The balance between solid impact and brushing friction that determines loop quality and consistency.
+- ratio
+- impact-to-friction ratio
+short_definition: The balance between hitting and brushing; beginners can practice the ratio of upward to forward force.
 evidence_summary: >-
-  Loop impact-to-friction ratio brings together several connected ideas. Loop quality as a ratio
-  between impact and friction, and links good ratio control to fewer unforced errors and better
-  consistency. A useful contrast is between power and friction and says the mistake is generating
-  power before properly gripping the ball and friction. Adjusting the ratio between impact and
-  brush, with examples like 70% upward / 30% forward and more brushing for heavy spin balls.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:1e05b84c67c504362fa8ae1e38cc9d4159146709d11ef45377c784543901de66"
-evidence_summary_generator: "deterministic"
+  Players should adjust the ratio between hitting and brushing. Beginners can practice the ratio of upward versus forward force.
 concept_type: fundamentals
 facets:
   category:
-    - fundamentals
-  level:
-    - intermediate
-difficulty: intermediate
+  - fundamentals
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 243e6500b328169a96204bf09e532207c54e169d1fbf2b21958f74b8a25cc970
-  prompt_version: candidate-review-v1
+  input_hash: sha256:31680ed58ad5e71aaa9981643dd91fcc9bbc22f6a4e31449a12b1172f246b850
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: y7Xd49MgdbQ-concept-loop-impact-to-friction-ratio-reviewed
-    evidence_type: definition
-    excerpt: The balance between solid impact and brushing friction that determines loop quality and consistency.
-    reason: The speaker repeatedly frames loop quality as a ratio between impact and friction, and links good ratio control to fewer unforced errors and better consistency.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: y7Xd49MgdbQ
-      start_ms: 720666
-      end_ms: 748333
-      url: https://www.youtube.com/watch?v=y7Xd49MgdbQ&t=720s
-      segment_ids:
-        - y7Xd49MgdbQ:00144
-        - y7Xd49MgdbQ:00148
-  - id: iXzVADGsLLU-cand-2-reviewed
-    evidence_type: explanation
-    excerpt: The balance between brushing friction and forward impact used to make a loop both spinny and powerful.
-    reason: The speaker contrasts power and friction and says the mistake is generating power before properly gripping the ball with friction.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: iXzVADGsLLU
-      start_ms: 188766
-      end_ms: 206100
-      url: https://www.youtube.com/watch?v=iXzVADGsLLU&t=188s
-      segment_ids:
-        - iXzVADGsLLU:00038
-        - iXzVADGsLLU:00039
-        - iXzVADGsLLU:00040
-  - id: _f9fVMm2_Gs-cand-6-reviewed
-    evidence_type: definition
-    excerpt: Tune the stroke by balancing brushing and hitting, especially changing the upward-versus-forward ratio based on spin and situation.
-    reason: The speaker explicitly describes adjusting the ratio between impact and brush, with examples like 70% upward / 30% forward and more brushing for heavy spin balls.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: _f9fVMm2_Gs
-      start_ms: 523366
-      end_ms: 550566
-      url: https://www.youtube.com/watch?v=_f9fVMm2_Gs&t=523s
-      segment_ids:
-        - _f9fVMm2_Gs:00081
-        - _f9fVMm2_Gs:00083
-        - _f9fVMm2_Gs:00084
-        - _f9fVMm2_Gs:00085
+- id: y7Xd49MgdbQ-concept-loop-impact-to-friction-ratio-reviewed
+  evidence_type: definition
+  excerpt: The balance between solid impact and brushing friction that determines loop quality and consistency.
+  reason: The speaker repeatedly frames loop quality as a ratio between impact and friction, and links good ratio control to fewer unforced errors and better consistency.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: y7Xd49MgdbQ
+    start_ms: 720666
+    end_ms: 748333
+    url: https://www.youtube.com/watch?v=y7Xd49MgdbQ&t=720s
+    segment_ids:
+    - y7Xd49MgdbQ:00144
+    - y7Xd49MgdbQ:00148
+- id: iXzVADGsLLU-cand-2-reviewed
+  evidence_type: explanation
+  excerpt: The balance between brushing friction and forward impact used to make a loop both spinny and powerful.
+  reason: The speaker contrasts power and friction and says the mistake is generating power before properly gripping the ball with friction.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: iXzVADGsLLU
+    start_ms: 188766
+    end_ms: 206100
+    url: https://www.youtube.com/watch?v=iXzVADGsLLU&t=188s
+    segment_ids:
+    - iXzVADGsLLU:00038
+    - iXzVADGsLLU:00039
+    - iXzVADGsLLU:00040
+- id: _f9fVMm2_Gs-cand-6-reviewed
+  evidence_type: definition
+  excerpt: Tune the stroke by balancing brushing and hitting, especially changing the upward-versus-forward ratio based on spin and situation.
+  reason: The speaker explicitly describes adjusting the ratio between impact and brush, with examples like 70% upward / 30% forward and more brushing for heavy spin balls.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: _f9fVMm2_Gs
+    start_ms: 523366
+    end_ms: 550566
+    url: https://www.youtube.com/watch?v=_f9fVMm2_Gs&t=523s
+    segment_ids:
+    - _f9fVMm2_Gs:00081
+    - _f9fVMm2_Gs:00083
+    - _f9fVMm2_Gs:00084
+    - _f9fVMm2_Gs:00085
+- id: _f9fVMm2_Gs-cand-6-codex-reviewed
+  evidence_type: explanation
+  excerpt: This is all about the ratio of impact versus brush.
+  reason: Players should adjust the ratio between hitting and brushing. Beginners can practice the ratio of upward versus forward force.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: _f9fVMm2_Gs
+    start_ms: 436033
+    end_ms: 456400
+    url: https://www.youtube.com/watch?v=_f9fVMm2_Gs&t=436s
+    segment_ids:
+    - _f9fVMm2_Gs:00069
+    - _f9fVMm2_Gs:00070
+    - _f9fVMm2_Gs:00071

@@ -6,16 +6,8 @@ aliases:
   - already prepared before the bounce
 short_definition: Preparing the stroke before the ball bounces reduces rushing and makes power generation easier.
 evidence_summary: >-
-  Prepared before the bounce brings together several connected ideas. Starting backswing only
-  after the bounce prevents power and that the body should already be prepared before the ball
-  arrives. The key is to get weight, rotation, and stroke ready early so the swing becomes a
-  natural reaction. All adjustments should be made during the backswing, not at the moment of
-  contact. To prepare before executing the shot and not to land, then prepare, because there is no
-  time for that. Waiting for the ball to bounce before starting and the racket must be ready
-  before contact. Starting the backswing and foot movement during mid-flight after opponent
-  contact, before the bounce, to avoid rushing and getting jammed. Together, these principles show
-  how the topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:87c2a7034d8cf2c3aa08c6935ef844d0de8d11876fd0982f0a66e2ba3489c239"
+  Preparing the stroke before the ball bounces reduces rushing and makes power generation easier.
+evidence_summary_source_hash: "sha256:5b0dc38fd20a53ed296a67f9b7a0f3212c33c0e8cd5502ea147f1e9af0d4d45d"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -25,10 +17,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 21037095ea42477923584988c49614f0f378950418ca1fac3a11c5c9b486dc95
-  prompt_version: candidate-review-v1
+  input_hash: sha256:222bddad46961fc83c26b9a4e5c3fa1ce549aefe289fb6374c288b40529da93f
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: 15KzTMIx65s-concept-prepared-before-bounce-reviewed
     evidence_type: explanation
@@ -36,7 +31,7 @@ evidence:
     reason: The speaker says starting backswing only after the bounce prevents power and that the body should already be prepared before the ball arrives.
     confidence: 0.92
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 15KzTMIx65s
       start_ms: 180040
@@ -58,7 +53,7 @@ evidence:
     reason: The speaker says the key is to get weight, rotation, and stroke ready early so the swing becomes a natural reaction.
     confidence: 0.91
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Ji9_Etw6nvo
       start_ms: 406066
@@ -75,7 +70,7 @@ evidence:
     reason: The speaker says all adjustments should be made during the backswing, not at the moment of contact.
     confidence: 0.88
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: J7Lm5IL-ggs
       start_ms: 614133
@@ -89,7 +84,7 @@ evidence:
     reason: The speaker directly says to prepare before executing the shot and not to land, then prepare, because there is no time for that.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: FweaNVt8gA0
       start_ms: 168466
@@ -105,7 +100,7 @@ evidence:
     reason: The speaker directly criticizes waiting for the ball to bounce before starting and says the racket must be ready before contact.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: mvVfwjdxe34
       start_ms: 239233
@@ -120,6 +115,66 @@ evidence:
     excerpt: Preparing your stroke and footwork before the ball bounces on your side so you are not late or jammed.
     reason: The speaker recommends starting the backswing and foot movement during mid-flight after opponent contact, before the bounce, to avoid rushing and getting jammed.
     confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: unreviewed
+    source:
+      video_id: M8fzQvShrx8
+      start_ms: 453833
+      end_ms: 476833
+      url: https://www.youtube.com/watch?v=M8fzQvShrx8&t=453s
+      segment_ids:
+        - M8fzQvShrx8:00085
+        - M8fzQvShrx8:00086
+        - M8fzQvShrx8:00087
+        - M8fzQvShrx8:00088
+  - id: 15KzTMIx65s-concept-prepared-before-bounce-codex-reviewed
+    evidence_type: explanation
+    excerpt: If I only start my backswing after a topspin ball bounces on my side, I won't be able to generate power and I'll feel rushed. Before the ball reaches you, your body is already prepared. Then power comes easily.
+    reason: This contiguous 25.8-second span directly explains that backswing preparation must occur before the bounce or before the ball reaches the player, because waiting causes rushing and prevents easy power generation.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 15KzTMIx65s
+      start_ms: 180040
+      end_ms: 205840
+      url: https://www.youtube.com/watch?v=15KzTMIx65s&t=180s
+      segment_ids:
+        - 15KzTMIx65s:00072
+        - 15KzTMIx65s:00073
+        - 15KzTMIx65s:00074
+        - 15KzTMIx65s:00075
+        - 15KzTMIx65s:00076
+        - 15KzTMIx65s:00077
+        - 15KzTMIx65s:00078
+        - 15KzTMIx65s:00079
+        - 15KzTMIx65s:00080
+        - 15KzTMIx65s:00081
+        - 15KzTMIx65s:00082
+        - 15KzTMIx65s:00083
+  - id: FweaNVt8gA0-concept-prepared-before-the-bounce-codex-reviewed
+    evidence_type: explanation
+    excerpt: Prepare the stroke before executing it; once your footwork is in place, the stroke should already be prepared. Do not land and then prepare, because that takes too much time and power.
+    reason: This contiguous span directly explains that stroke preparation should be completed with the footwork before landing, and that preparing afterward is too slow and power-intensive.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: FweaNVt8gA0
+      start_ms: 168466
+      end_ms: 185900
+      url: https://www.youtube.com/watch?v=FweaNVt8gA0&t=168s
+      segment_ids:
+        - FweaNVt8gA0:00038
+        - FweaNVt8gA0:00039
+        - FweaNVt8gA0:00040
+        - FweaNVt8gA0:00041
+        - FweaNVt8gA0:00042
+  - id: M8fzQvShrx8-concept-prepared-before-the-bounce-codex-reviewed
+    evidence_type: explanation
+    excerpt: Initiate the backswing mid-flight, before the ball bounces, so you have plenty of time and do not rush your timing.
+    reason: These contiguous segments directly explain initiating the backswing during the ball’s flight before the bounce and its benefit for timing. The span is under 30 seconds.
+    confidence: 0.99
     visual_status: transcript_inferred
     review_status: approved
     source:

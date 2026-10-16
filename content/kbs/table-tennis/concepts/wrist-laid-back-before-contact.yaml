@@ -7,11 +7,9 @@ aliases:
   - wrist locked by flared elbow
 short_definition: Keeping the wrist extended or laid back before ball contact so the serve can accelerate and brush effectively.
 evidence_summary: >-
-  Wrist laid back before contact brings together several connected ideas. A flared elbow locks the
-  wrist and that the wrist must be laid back before contact. The wrist should still be laid back
-  and open when the ball is contacted. Together, these principles show how the topic is applied in
-  practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:818e883e1d0de1ef64ddff81a6443a1461c01d06760c3a3717296196b94ad752"
+  Keeping the wrist extended or laid back before ball contact so the serve can accelerate and
+  brush effectively.
+evidence_summary_source_hash: "sha256:8ef0a2ae139572e96173ca4f9db6ad5f99403eaf176b4d9b785e3b9467584d15"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -24,10 +22,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: e73a8dfa83b6134f410cec4c62a3e1ca549ec292a5a359201c103b454520f3b5
-  prompt_version: candidate-review-v1
+  input_hash: sha256:d4f780e2af41df62d52741466ea30b5f7c6ad1f94424cf44024cc09bd79e12d9
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: OSfqukeeo_I-new-wrist-laid-back-before-contact-reviewed
     evidence_type: explanation
@@ -35,7 +36,7 @@ evidence:
     reason: The speaker says a flared elbow locks the wrist and that the wrist must be laid back before contact.
     confidence: 0.9
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: OSfqukeeo_I
       start_ms: 134966
@@ -50,7 +51,7 @@ evidence:
     reason: The speaker directly says the wrist should still be laid back and open when the ball is contacted.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Gd_NwMPeTJk
       start_ms: 409733
@@ -61,3 +62,18 @@ evidence:
         - Gd_NwMPeTJk:00083
         - Gd_NwMPeTJk:00084
         - Gd_NwMPeTJk:00086
+  - id: OSfqukeeo_I-new-wrist-laid-back-before-contact-codex-reviewed
+    evidence_type: explanation
+    excerpt: Your wrist must be laid back (extended) before contact; if your forearm points down, you cannot lay your wrist back.
+    reason: These contiguous segments directly state that the wrist must be laid back before contact and identify a downward-pointing forearm as preventing that position.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: OSfqukeeo_I
+      start_ms: 420266
+      end_ms: 428966
+      url: https://www.youtube.com/watch?v=OSfqukeeo_I&t=420s
+      segment_ids:
+        - OSfqukeeo_I:00076
+        - OSfqukeeo_I:00077

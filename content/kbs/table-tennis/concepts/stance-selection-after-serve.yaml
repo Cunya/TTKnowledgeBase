@@ -1,0 +1,44 @@
+id: concept-stance-selection-after-serve
+slug: stance-selection-after-serve
+label: Stance selection after serve
+aliases: []
+short_definition: Choose a square or side-on recovery stance after serving based on the serve’s spin and the intended next attack.
+evidence_summary: >-
+  Choose a square or side-on recovery stance after serving based on the serve’s spin and the
+  intended next attack.
+evidence_summary_source_hash: "sha256:6609fce4a3453747896b0973649f775ce8bcbeffbedfd50615ad2bba93557e5f"
+evidence_summary_generator: "deterministic"
+concept_type: fundamentals
+facets:
+  category:
+    - fundamentals
+  side:
+    - neutral
+difficulty:
+review_status: approved
+generated_by:
+  processor: codex_semantic_adjudication
+  version: 1.0.0
+  input_hash: sha256:dba2a5450ea9c4149f9d8b3862b4183f5d58888ebb1dbdeca4a1e5c924e19ce0
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
+evidence:
+  - id: McwvbLZZQmA-concept-stance-selection-after-serve-codex-reviewed
+    evidence_type: explanation
+    excerpt: After a heavy-spin serve, use a square stance to facilitate a backhand loop; after a low-spin serve, adopt a side-on stance to step around and attack. Do not use the same recovery stance for every serve.
+    reason: This contiguous 22.1-second span directly explains choosing the post-serve recovery stance according to serve spin and the planned attack. It is a distinct, more specific topic than the broader existing concept about post-serve positioning and spin awareness.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: McwvbLZZQmA
+      start_ms: 50366
+      end_ms: 72500
+      url: https://www.youtube.com/watch?v=McwvbLZZQmA&t=50s
+      segment_ids:
+        - McwvbLZZQmA:00011
+        - McwvbLZZQmA:00012
+        - McwvbLZZQmA:00013
+        - McwvbLZZQmA:00014

@@ -10,12 +10,12 @@ const groups = categoryOrder
   .filter((group) => group.items.length);
 ---
 
-<BaseLayout title="Concept review diagnostics" description="Local-only diagnostics for deferred automatic concept review.">
+<BaseLayout title="Concept review diagnostics" description="Local-only diagnostics for candidates waiting for an automatic or human decision.">
   <section class="page-intro">
     <div class="eyebrow">Local automatic-review diagnostics</div>
     <h1>Why candidates were not added</h1>
-    <p>This view shows candidates found in already processed videos that did not pass the automatic new-concept gates. It is diagnostic data, not public content.</p>
-    <p class="recent-disclaimer">Generated {new Date(data.generated_at).toLocaleString()} · {data.total} deferred candidates · {data.supporting_moments} proposal moments across {data.supporting_videos} videos</p>
+    <p>This view shows candidates found in already processed videos that did not pass the automatic new-concept checks. It is diagnostic data, not public content.</p>
+    <p class="recent-disclaimer">Generated {new Date(data.generated_at).toLocaleString()} · {data.total} candidates waiting for a decision · {data.supporting_moments} proposal moments across {data.supporting_videos} videos</p>
   </section>
 
   <section class="dashboard-section">
@@ -26,12 +26,12 @@ const groups = categoryOrder
 
   <section class="recent-section">
     <div class="section-kicker">Candidate evidence</div>
-    <h2>Deferred candidates</h2>
+    <h2>Candidates waiting for a decision</h2>
     {groups.map((group) => <div class={`review-group state-${group.category.replaceAll(' ', '-')}`}>
       <div class="review-group-heading"><h3>{categoryLabel(group.category)}</h3><span>{group.items.length} candidates</span></div>
       <div class="review-table-wrap">
         <table class="review-table">
-          <thead><tr><th>Candidate</th><th>Automatic state</th><th>Closest existing concept</th><th>Why it was deferred</th></tr></thead>
+          <thead><tr><th>Candidate</th><th>Automatic state</th><th>Closest existing concept</th><th>Why it is waiting</th></tr></thead>
           <tbody>{group.items.map((item) => <tr>
             <td><strong>{item.label}</strong><small>{item.definition}</small><small>{item.supporting_moments} supporting proposal moment{item.supporting_moments === 1 ? '' : 's'} · {item.video_title}</small></td>
             <td><span class="review-badge">{item.category}</span><small>{item.resolution} · {(item.confidence * 100).toFixed(0)}% confidence</small></td>

@@ -13,10 +13,13 @@ const sourceVideos = (channel: string) => corpus.videos.filter((video) => video.
 const spinMasterVideos = sourceVideos('TT SpinMaster');
 const globalVideos = sourceVideos('GlobalTTStudio');
 const globalPublishedIds = new Set(globalVideos.map((video) => video.id));
-type WorksetItem = { id: string; reason: string };
-type InventorySummary = { inventory: number; published: number; eligible_complete: number; automated_work_remaining: number; human_review_videos: number; retry_wait: number; excluded: number; states: Record<string, number>; availability: Record<string, number>; captions: Record<string, number>; candidates: Record<string, number> };
-const generatedProgress = progressData as { generated_at: string; totals: Record<string, number>; sources: Array<Record<string, string | number>>; members_only_ids: string[]; inventory?: InventorySummary; latest_workset?: Record<string, WorksetItem[]> };
+type WorksetItem = { id: string; source_id?: string; reason: string };
+type InventorySummary = { inventory: number; published: number; eligible_total?: number; eligible_complete: number; fully_processed_percent?: number; automation_triaged?: number; automation_triaged_percent?: number; automated_work_remaining: number; human_review_videos: number; retry_wait: number; excluded: number; states: Record<string, number>; availability: Record<string, number>; captions: Record<string, number>; candidates: Record<string, number> };
+type SnapshotCounts = { concepts: number; videos?: number; evidence_moments: number; generated_at?: string };
+const generatedProgress = progressData as { generated_at: string; totals: Record<string, number>; public_snapshot?: SnapshotCounts; quarantined_history?: { concepts: number; evidence_moments: number }; canonical_concept_files?: number; last_successful_publish_at?: string; sources: Array<Record<string, string | number>>; members_only_ids: string[]; inventory?: InventorySummary; latest_workset?: Record<string, WorksetItem[]> };
 const generatedTotals = generatedProgress.totals;
+const publicSnapshot = generatedProgress.public_snapshot ?? { concepts: Number(generatedTotals.concepts ?? corpus.concepts.length), videos: Number(generatedTotals.published_videos ?? corpus.videos.length), evidence_moments: Number(generatedTotals.evidence ?? 0) };
+const quarantinedHistory = generatedProgress.quarantined_history ?? { concepts: 0, evidence_moments: 0 };
 const inventory = generatedProgress.inventory;
 const latestWorkset = generatedProgress.latest_workset ?? {};
 const publishedConfiguredVideos = Number(generatedTotals.published_configured_videos ?? generatedTotals.published_videos ?? 0);
@@ -178,10 +181,20 @@ const generatedDate = new Intl.DateTimeFormat('en-GB', { dateStyle: 'long', time
     <div class="eyebrow">Pipeline status · updated 16 July 2026</div>
     <h1>Source video progress</h1><p class="table-note">Snapshot: {generatedDate} EEST</p>
     <p>Discovery, transcript ingestion, Codex extraction, editorial review, and publication status for each configured table-tennis source.</p>
-    <div class="progress-alert success"><strong>Published knowledge corpus</strong><span>{generatedTotals.published_videos} videos with {generatedTotals.concepts} concepts and {generatedTotals.evidence} approved evidence moments are currently available on the site.</span></div>
+    <div class="progress-alert success"><strong>Published knowledge corpus</strong><span>{publicSnapshot.videos} videos with {publicSnapshot.concepts} concepts and {publicSnapshot.evidence_moments} approved evidence moments are currently available on the site.</span></div>
   </section>
 
   <aside class="progress-alert success"><strong>Generated snapshot</strong><span>Counts below are generated during publish from local processor artifacts. No LLM edits these project totals; the snapshot was generated at {generatedProgress.generated_at}.</span></aside>
+
+  <section class="progress-section count-layers" aria-labelledby="count-layers-title">
+    <div class="section-kicker">Count layers</div><h2 id="count-layers-title">Public content, quarantined history, and inventory are different states</h2>
+    <div class="source-flow-outcomes">
+      <article class="accepted"><span>Safe public snapshot</span><strong>{publicSnapshot.concepts} concepts · {publicSnapshot.videos} videos</strong><small>{publicSnapshot.evidence_moments} approved moments · last successful publish {generatedProgress.last_successful_publish_at ?? generatedProgress.generated_at}</small></article>
+      <article class="deferred"><span>Quarantined history</span><strong>{quarantinedHistory.concepts} concepts</strong><small>{quarantinedHistory.evidence_moments} legacy moments retained privately for re-adjudication; not public</small></article>
+      <article><span>Full inventory</span><strong>{inventory?.inventory ?? totalDiscoveredCount} videos</strong><small>{inventory?.eligible_total ?? totalEligibleCount} eligible · {inventory?.automated_work_remaining ?? 0} automated work remaining · {inventory?.excluded ?? 0} excluded</small></article>
+    </div>
+    <p class="source-flow-workset-note">A failed processing cycle does not create a new public snapshot. The published timestamp above remains the last complete publish until validation and publication succeed.</p>
+  </section>
 
   <section class="progress-section">
     <div class="section-kicker">Current corpus</div><h2>Source summary</h2>
@@ -212,27 +225,28 @@ const generatedDate = new Intl.DateTimeFormat('en-GB', { dateStyle: 'long', time
       {inventory && <section class="source-flow-workset" aria-labelledby="completion-ledger-title">
         <div class="source-flow-workset-heading"><span>Full-inventory ledger</span><strong id="completion-ledger-title">What work actually remains?</strong><p>These states cover all {inventory.inventory} catalog videos. “Complete” requires a usable timed transcript, current extraction, final candidate decisions, and incorporation of every accepted candidate.</p></div>
         <div class="source-flow-outcomes">
-          <article class="accepted"><span>Complete automatically</span><strong>{inventory.eligible_complete}</strong></article>
-          <article class="deferred"><span>Automated work remaining</span><strong>{inventory.automated_work_remaining}</strong></article>
-          <article><span>Explicit human review</span><strong>{inventory.human_review_videos}</strong></article>
+          <article class="accepted"><span>Fully processed</span><strong>{inventory.eligible_complete} / {inventory.eligible_total ?? inventory.inventory - inventory.excluded}</strong><small>{inventory.fully_processed_percent ?? 0}% of eligible inventory</small></article>
+          <article><span>Codex decisions complete</span><strong>{inventory.automation_triaged ?? inventory.eligible_complete}</strong><small>fully incorporated source-grounded decisions</small></article>
+          <article class="deferred"><span>Automatic work left</span><strong>{inventory.automated_work_remaining}</strong></article>
+          <article><span>Optional human advisories</span><strong>{inventory.human_review_videos}</strong></article>
           <article><span>Waiting for retry</span><strong>{inventory.retry_wait}</strong></article>
           <article><span>Excluded with reason</span><strong>{inventory.excluded}</strong></article>
         </div>
-        <p class="source-flow-workset-note">Latest recorded run workset: {latestWorksetCount} video assignments — {latestWorkset.extraction?.length ?? 0} extraction, {latestWorkset.adjudication?.length ?? 0} adjudication, and {latestWorkset.acquisition?.length ?? 0} acquisition. The private ledger, not sources.yaml membership, now determines selection.</p>
-        {latestWorksetCount > 0 && <details><summary>Show latest selected video IDs and reasons</summary><div class="table-scroll"><table class="progress-table"><thead><tr><th>Stage</th><th>Video</th><th>Why selected</th></tr></thead><tbody>{Object.entries(latestWorkset).flatMap(([stage, items]) => (items ?? []).map((item) => <tr><td>{stage}</td><td><code>{item.id}</code></td><td>{item.reason}</td></tr>))}</tbody></table></div></details>}
+        <p class="source-flow-workset-note">Latest selected batch: {latestWorksetCount} video assignments — {latestWorkset.extraction?.length ?? 0} extraction, {latestWorkset.adjudication?.length ?? 0} automatic review, and {latestWorkset.acquisition?.length ?? 0} acquisition. The private ledger, not sources.yaml membership, now determines selection.</p>
+        {latestWorksetCount > 0 && <details><summary>Show latest selected video IDs and reasons</summary><div class="table-scroll"><table class="progress-table"><thead><tr><th>Stage</th><th>Source</th><th>Video</th><th>Why selected</th></tr></thead><tbody>{Object.entries(latestWorkset).flatMap(([stage, items]) => (items ?? []).map((item) => <tr><td>{stage === 'adjudication' ? 'automatic review' : stage}</td><td><code>{item.source_id ?? 'unknown source'}</code></td><td><code>{item.id}</code></td><td>{item.reason}</td></tr>))}</tbody></table></div></details>}
       </section>}
 
       <section class="source-flow-workset" aria-labelledby="workset-title">
-        <div class="source-flow-workset-heading"><span>Operator detail</span><strong id="workset-title">How processing reached the inventory</strong><p>The 148 configured entries are accumulated batch history, not a user-selected or live workset. After those batches were exhausted, the processor continued automatically through unseen discovery-catalog videos.</p></div>
+        <div class="source-flow-workset-heading"><span>Operator detail</span><strong id="workset-title">How processing reached the inventory</strong><p>The 148 configured entries are accumulated batch history, not a user-selected or live batch. After those batches were exhausted, the processor continued automatically through unseen discovery-catalog videos.</p></div>
         <div class="source-flow-workset-grid">
           <article class="configured"><span>Configured batch history</span><strong>{totalConfiguredCount}</strong><small>entries accumulated in sources.yaml during controlled project batches</small><div><em><b>{publishedConfiguredVideos}</b> on the site</em><em><b>{totalMembersOnlyCount}</b> members-only</em></div></article>
           <b>+</b>
           <article class="outside"><span>Discovery-catalog continuation</span><strong>{totalUnconfiguredCount}</strong><small>catalog entries not written to sources.yaml; unseen IDs are selected dynamically</small><div><em><b>{publishedOutsideConfiguredCount}</b> on the site</em><em><b>{notPublicOutsideConfiguredCount}</b> not on the site</em></div></article>
         </div>
-        <p class="source-flow-workset-note">These cards explain processing provenance, not current activity. The real workset is generated afresh by each run from cached missing stages, configured entries still needing acquisition, and unseen eligible discovery entries; it is recorded in the private run manifest.</p>
+        <p class="source-flow-workset-note">These cards explain processing history, not current activity. Each run selects its own videos from cached stages that are missing, configured entries still needing acquisition, and unseen allowed discovery entries; it records that selection in the private run manifest.</p>
       </section>
 
-      <div class="source-flow-subheading"><strong>Configured batch-history stages</strong><span>These counts describe only the {totalConfiguredCount} entries retained in sources.yaml, not the dynamically generated live workset.</span></div>
+      <div class="source-flow-subheading"><strong>Configured batch-history stages</strong><span>These counts describe only the {totalConfiguredCount} entries retained in sources.yaml, not the dynamically selected current batch.</span></div>
       <div class="source-flow-scroll">
         <ol class="source-flow-track" aria-label="Configured batch-history workflow">
           <li><span>Configured</span><strong>{totalConfiguredCount}</strong><small>videos selected into this workflow</small></li>
@@ -245,15 +259,15 @@ const generatedDate = new Intl.DateTimeFormat('en-GB', { dateStyle: 'long', time
 
       <div class="source-flow-branches review" aria-label="Configured batch publication review states">
         <article><span>Published and fully reviewed</span><strong>{generatedTotals.reviewed_videos}</strong><p>Published configured videos with every candidate decided.</p></article>
-        <article><span>Published with review backlog</span><strong>{generatedTotals.published_with_review_backlog}</strong><p>Published configured videos that still have deferred candidates.</p></article>
+        <article><span>Published with review backlog</span><strong>{generatedTotals.published_with_review_backlog}</strong><p>Published configured videos that still have candidates waiting for review.</p></article>
       </div>
 
       <div class="source-flow-lane source-flow-editorial">
         <div class="source-flow-lane-heading"><span>Full-corpus candidate review</span><strong>{totalCandidateCount} candidate proposals</strong><small>The review queue spans configured batches and discovery continuation; counts below are candidates, not videos.</small></div>
         <div class="source-flow-outcomes">
           <article class="accepted"><span>Accepted</span><strong>{generatedTotals.accepted}</strong></article>
-          <article class="deferred"><span>Deferred</span><strong>{generatedTotals.deferred}</strong></article>
-          <article><span>Human review</span><strong>{generatedTotals.human_review ?? 0}</strong></article>
+          <article class="deferred"><span>Awaiting Codex adjudication</span><strong>{generatedTotals.deferred}</strong></article>
+          <article><span>Legacy human queue</span><strong>{generatedTotals.human_review ?? 0}</strong></article>
           <article><span>Rejected</span><strong>{generatedTotals.rejected}</strong></article>
           <article><span>Pending</span><strong>{generatedTotals.pending}</strong></article>
         </div>
@@ -279,7 +293,7 @@ const generatedDate = new Intl.DateTimeFormat('en-GB', { dateStyle: 'long', time
 
   <section class="progress-section">
     <div class="section-kicker">Operator processing detail</div><h2>Configured batch-history progress</h2>
-    <p class="progress-explainer">These percentages describe the entries accumulated in sources.yaml, not the live workset generated by run-cp.py and not the size of the public site. Configuration is measured against known source videos, eligible excludes configured members-only entries, and later stages use the eligible or previously completed stage as their denominator.</p>
+    <p class="progress-explainer">These percentages describe the entries accumulated in sources.yaml, not the current batch selected by run-cp.py and not the size of the public site. Configuration is measured against known source videos, eligible excludes configured members-only entries, and later stages use the eligible or previously completed stage as their denominator.</p>
     <div class="progress-groups">
       {sourceProgress.map((source) => <article class="progress-group">
         <div class="progress-group-heading"><h3>{source.name}</h3><span>{source.detail}</span></div>
@@ -324,7 +338,7 @@ const generatedDate = new Intl.DateTimeFormat('en-GB', { dateStyle: 'long', time
       <div><dt>Eligible</dt><dd>The configured video is selected and publicly accessible enough to process; members-only entries remain configured but are excluded from this stage.</dd></div>
       <div><dt>Ingested</dt><dd>A private normalized transcript and metadata file exist locally.</dd></div>
       <div><dt>Extracted</dt><dd>A private schema-validated Codex candidate artifact exists.</dd></div>
-      <div><dt>Reviewed</dt><dd>Every extracted candidate is accepted, rejected, or explicitly assigned to human review. Ordinary deferred work is not complete.</dd></div>
+      <div><dt>Codex complete</dt><dd>Every extracted candidate has a final accepted or rejected semantic decision. Pending, deferred, and legacy human-assigned work are not complete.</dd></div>
       <div><dt>Published</dt><dd>At least one approved evidence moment appears in the public corpus.</dd></div>
       <div><dt>Visual verified</dt><dd>A reviewer watched the interval and confirmed it demonstrates the concept.</dd></div>
     </dl>
@@ -332,15 +346,15 @@ const generatedDate = new Intl.DateTimeFormat('en-GB', { dateStyle: 'long', time
 
   <section class="progress-section">
     <div class="section-kicker">Backlog</div><h2>Outstanding work</h2>
-    <p class="table-note">Owner identifies both the responsible role and whether human judgment is required. Codex/operator assistance may prepare pipeline work, but a named human reviewer makes editorial, visual, and rights decisions. “How to complete” describes the required action.</p>
+    <p class="table-note">Codex CLI is the default semantic adjudicator for content. Human input is optional advice or an explicit override; visual verification and rights decisions still require a person with the necessary access or authority.</p>
     <div class="table-scroll"><table class="progress-table"><thead><tr><th>Work item</th><th>Count</th><th>Owner</th><th>How to complete</th></tr></thead><tbody>
-      <tr><th>Automated candidate adjudication</th><td>{generatedTotals.deferred}</td><td>Processor first; human editorial reviewer only after the attempt limit</td><td>The monitor retries a bounded group against source, confidence, taxonomy, and caption-boundary gates. An unchanged ambiguous item is assigned to explicit human review after two attempts instead of remaining generically deferred forever.</td></tr>
-      <tr><th>Explicit human-review candidates</th><td>{generatedTotals.human_review ?? 0}</td><td>Human editorial reviewer</td><td>Open the concept review view, inspect the cited transcript context, then accept, reject, merge, or document an exceptional policy decision. Accepted work must be incorporated into canonical YAML and validated.</td></tr>
+      <tr><th>Codex semantic adjudication</th><td>{generatedTotals.deferred}</td><td>Codex CLI under deterministic validators</td><td>The monitor sends bounded transcript context and a short canonical-concept list to schema-constrained Codex. Publication still requires a contiguous supported span, controlled facets, complete time bounds, and recorded model provenance.</td></tr>
+      <tr><th>Optional human advisories</th><td>{generatedTotals.human_review ?? 0}</td><td>Optional editorial advisor</td><td>The local workspace may annotate or explicitly override a Codex decision when desired. It is not the default queue and does not block ordinary automated processing.</td></tr>
       <tr><th>Proposed visuals requiring viewing</th><td>{generatedTotals.visual_proposed}</td><td>Human visual reviewer</td><td>Watch each complete proposed interval from the source video. Mark it verified only when the footage genuinely demonstrates the concept; otherwise adjust or reject the visual window.</td></tr>
       <tr><th>Single-source concepts</th><td>{generatedTotals.single_source_concepts}</td><td>Source curator plus human editorial reviewer</td><td>Select an independent video that addresses the same concept, process it through ingestion and review, and add the evidence only when its transcript supports the existing claim.</td></tr>
       <tr><th>Members-only inventory videos</th><td>{inventoryMembersOnlyCount}</td><td>Human project owner or authorized rights operator</td><td>Leave these videos excluded from ordinary retries unless legitimate access and processing rights are confirmed. Their durable ledger classification persists across monitor cycles.</td></tr>
-      <tr><th>Published videos with review backlog</th><td>{generatedTotals.published_with_review_backlog}</td><td>Human editorial reviewer, Codex-assisted</td><td>Filter the review queue to each affected video, resolve its deferred candidates, update canonical concepts where warranted, then validate and republish the sanitized corpus.</td></tr>
-      <tr><th>Ledger-driven automated work</th><td>{inventory?.automated_work_remaining ?? 0}</td><td>Processor monitor</td><td>Continue bounded cache-first cycles. The run selects missing extraction, retryable adjudication, and due acquisition directly from the full inventory ledger until each eligible video is complete or assigned to human review.</td></tr>
+      <tr><th>Published videos with adjudication backlog</th><td>{generatedTotals.published_with_review_backlog}</td><td>Codex CLI pipeline</td><td>Process each video's deferred proposals through exact source-grounded adjudication, incorporate accepted evidence, then validate and republish the sanitized corpus.</td></tr>
+      <tr><th>Automatic work still queued</th><td>{inventory?.automated_work_remaining ?? 0}</td><td>Processor monitor</td><td>Continue small cache-first cycles. The run selects missing extraction, candidates ready for Codex adjudication, and due acquisition directly from the full inventory ledger until each allowed video is complete.</td></tr>
     </tbody></table></div>
   </section>
 

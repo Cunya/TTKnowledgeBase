@@ -47,7 +47,7 @@ evidence:
     reason: The speaker attributes spin and arc to where the ball contacts the rubber, distinguishing real friction on the upper half from less effective lower-half contact.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: pE5PLAr9iaA
       start_ms: 520719
@@ -64,7 +64,7 @@ evidence:
     reason: The speaker directly contrasts grippy and tacky rubber properties and says tacky rubber is ideal for friction-based strokes while grippy rubber suits blocking and flat hits.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ae9urokFAJM
       start_ms: 6000
@@ -76,6 +76,22 @@ evidence:
         - ae9urokFAJM:00003
         - ae9urokFAJM:00004
         - ae9urokFAJM:00005
+  - id: ae9urokFAJM-concept-rubber-friction-differences-codex-reviewed
+    evidence_type: explanation
+    excerpt: Tacky rubbers are ideal for friction-based strokes, including lifting backspin, banana flicks, serves, and pushes.
+    reason: These contiguous segments directly state that tacky rubbers are suited to friction-based strokes and identify the relevant stroke examples.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: ae9urokFAJM
+      start_ms: 48566
+      end_ms: 61266
+      url: https://www.youtube.com/watch?v=ae9urokFAJM&t=48s
+      segment_ids:
+        - ae9urokFAJM:00010
+        - ae9urokFAJM:00011
+        - ae9urokFAJM:00012
 relations:
   - relation_type: used_with
     target_concept_id: concept-contact-zone-on-ball

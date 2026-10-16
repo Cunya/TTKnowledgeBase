@@ -3,20 +3,19 @@
 from __future__ import annotations
 
 import re
+import warnings
 from collections import Counter, defaultdict
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
+from .bucket_history import record_bucket_history
 from .models import PublishCorpus
-from .pipeline import load_videos
+from .pipeline import candidate_citation_ids, load_videos
 from .utils import read_json, read_yaml, write_json
 from .workspace import KnowledgeBasePaths
 
 YOUTUBE_VIDEO_ID = re.compile(r"^[A-Za-z0-9_-]{11}$")
-FINAL_DECISIONS = {"accepted", "rejected", "human_review"}
-
-
 def _normalized_url(value: object) -> str:
     return str(value or "").rstrip("/").removesuffix("/videos")
 
@@ -84,7 +83,7 @@ def load_inventory_catalog(paths: KnowledgeBasePaths) -> dict[str, dict[str, Any
                 }
             )
 
-    # Configuration is provenance, not the live workset. It is only a fallback
+    # Configuration is provenance, not the current run selection. It is only a fallback
     # for a valid historical ID absent from the currently retained catalogs.
     default_source = str(sources[0]["id"]) if sources else "unassigned"
     for item in config.get("videos", []):
@@ -115,6 +114,21 @@ def _parse_deadline(value: object) -> datetime | None:
     except (TypeError, ValueError):
         return None
     return result.replace(tzinfo=UTC) if result.tzinfo is None else result
+
+
+def _adjudication_history(items: list[dict[str, Any]]) -> dict[str, Any]:
+    attempts = [int(item.get("adjudication_attempts") or 0) for item in items]
+    timestamps = [
+        parsed
+        for parsed in (_parse_deadline(item.get("last_adjudicated_at")) for item in items)
+        if parsed is not None
+    ]
+    return {
+        "pending": sum(item.get("decision") in {None, "pending"} for item in items),
+        "deferred": sum(item.get("decision") == "deferred" for item in items),
+        "attempts": max(attempts, default=0),
+        "last_attempt_at": max(timestamps).isoformat() if timestamps else None,
+    }
 
 
 def _retry_classification(retry: dict[str, Any], now: datetime) -> tuple[str, str, str]:
@@ -187,16 +201,13 @@ def build_inventory_ledger(
 
         items = queue_by_video.get(video_id, [])
         decisions = Counter(str(item.get("decision") or "pending") for item in items)
+        adjudication_history = _adjudication_history(items)
         accepted_unincorporated = 0
         for item in items:
             if item.get("decision") != "accepted":
                 continue
             concept_id = str(item.get("canonical_concept_id") or "")
-            segment_ids = {
-                str(segment_id)
-                for evidence in (item.get("candidate") or {}).get("evidence", [])
-                for segment_id in evidence.get("segment_ids", [])
-            }
+            segment_ids = candidate_citation_ids(item)
             if not any((concept_id, video_id, segment_id) in incorporated for segment_id in segment_ids):
                 accepted_unincorporated += 1
 
@@ -215,12 +226,14 @@ def build_inventory_ledger(
         elif not derived:
             completion_state = "needs_extraction"
             completion_reason = "normalized transcript exists but candidate artifact is missing"
-        elif decisions["pending"] or decisions["deferred"] or accepted_unincorporated:
+        elif (
+            decisions["pending"]
+            or decisions["deferred"]
+            or decisions["human_review"]
+            or accepted_unincorporated
+        ):
             completion_state = "needs_adjudication"
-            completion_reason = "candidate decisions or canonical incorporation remain"
-        elif decisions["human_review"]:
-            completion_state = "human_review"
-            completion_reason = "all remaining ambiguity is explicitly assigned to a person"
+            completion_reason = "Codex semantic decisions or canonical incorporation remain"
         else:
             completion_state = "complete"
             completion_reason = "all extracted candidates have final incorporated decisions"
@@ -242,12 +255,13 @@ def build_inventory_ledger(
                 "human_review": decisions["human_review"],
                 "accepted_unincorporated": accepted_unincorporated,
             },
+            "adjudication_history": adjudication_history,
             "published": video_id in public_ids,
             "public_moments": moments[video_id],
             "retry": ({key: retry.get(key) for key in ("attempts", "classification", "error_type", "blocked", "last_attempt_at", "next_retry_at") if retry.get(key) is not None} if retry else None),
             "completion_state": completion_state,
             "completion_reason": completion_reason,
-            "human_review_required": completion_state == "human_review",
+            "human_review_required": False,
         }
         output_records.append(record)
         for source_id in base["source_ids"]:
@@ -261,16 +275,22 @@ def build_inventory_ledger(
     candidate_totals: Counter[str] = Counter()
     for item in output_records:
         candidate_totals.update(item["candidate_counts"])
+    eligible_total = len(output_records) - states["excluded"]
+    automation_triaged = states["complete"]
     ledger = {
-        "schema_version": 1,
+        "schema_version": 2,
         "knowledge_base": paths.id,
         "generated_at": now.isoformat(),
         "summary": {
             "inventory": len(output_records),
             "published": sum(item["published"] for item in output_records),
+            "eligible_total": eligible_total,
             "eligible_complete": states["complete"],
+            "fully_processed_percent": round(states["complete"] / eligible_total * 100, 1) if eligible_total else 100.0,
+            "automation_triaged": automation_triaged,
+            "automation_triaged_percent": round(automation_triaged / eligible_total * 100, 1) if eligible_total else 100.0,
             "automated_work_remaining": states["needs_acquisition"] + states["needs_extraction"] + states["needs_adjudication"],
-            "human_review_videos": states["human_review"],
+            "human_review_videos": 0,
             "retry_wait": states["retry_wait"],
             "excluded": states["excluded"],
             "states": dict(states),
@@ -283,30 +303,99 @@ def build_inventory_ledger(
     }
     if write:
         write_json(paths.data("manifests") / "inventory-ledger.json", ledger)
+        try:
+            record_bucket_history(paths.data("manifests"), ledger, now=now)
+        except (OSError, ValueError, TypeError) as error:
+            warnings.warn(f"Could not record private bucket history: {error}", RuntimeWarning, stacklevel=2)
     return ledger
 
 
+def select_source_balanced(
+    items: list[dict[str, Any]], limit: int
+) -> list[dict[str, Any]]:
+    """Select a deterministic round-robin batch across primary source IDs."""
+    if limit <= 0:
+        return []
+    buckets: defaultdict[str, list[dict[str, Any]]] = defaultdict(list)
+    for item in items:
+        source_ids = item.get("source_ids") or ["unassigned"]
+        buckets[str(source_ids[0])].append(item)
+    for bucket in buckets.values():
+        bucket.sort(key=_work_priority)
+    source_ids = sorted(buckets)
+    selected: list[dict[str, Any]] = []
+    indexes = {source_id: 0 for source_id in source_ids}
+    while len(selected) < limit:
+        added = False
+        for source_id in source_ids:
+            index = indexes[source_id]
+            if index >= len(buckets[source_id]):
+                continue
+            selected.append(buckets[source_id][index])
+            indexes[source_id] += 1
+            added = True
+            if len(selected) >= limit:
+                break
+        if not added:
+            break
+    return selected
+
+
+def _work_priority(item: dict[str, Any]) -> tuple[int, int, str, int, str]:
+    """Prioritize untouched/older adjudication work before repeated retries."""
+    history = item.get("adjudication_history") or {}
+    pending = int(history.get("pending") or 0)
+    attempts = int(history.get("attempts") or 0)
+    last_attempt = str(history.get("last_attempt_at") or "")
+    return (
+        0 if pending else 1,
+        attempts,
+        last_attempt,
+        -int(item.get("view_count") or 0),
+        str(item.get("video_id") or ""),
+    )
+
+
 def select_ledger_worksets(
-    ledger: dict[str, Any], acquisition_limit: int, adjudication_limit: int = 50
+    ledger: dict[str, Any], acquisition_limit: int, adjudication_limit: int = 50,
+    extraction_limit: int = 50,
 ) -> dict[str, list[dict[str, str]]]:
-    """Select deterministic cache-first work and explain every selected ID."""
+    """Select deterministic cache-first batches that rotate fairly across sources."""
     videos = ledger.get("videos", [])
+    extraction_items = select_source_balanced(
+        [item for item in videos if item.get("completion_state") == "needs_extraction"],
+        extraction_limit,
+    )
     extraction = [
-        {"id": item["video_id"], "reason": "normalized transcript is missing candidate extraction"}
-        for item in videos
-        if item.get("completion_state") == "needs_extraction"
+        {
+            "id": item["video_id"],
+            "source_id": str((item.get("source_ids") or ["unassigned"])[0]),
+            "reason": "normalized transcript is missing candidate extraction",
+        }
+        for item in extraction_items
     ]
+    adjudication_items = select_source_balanced(
+        [item for item in videos if item.get("completion_state") == "needs_adjudication"],
+        adjudication_limit,
+    )
     adjudication = [
-        {"id": item["video_id"], "reason": "extracted candidates still have retryable decisions"}
-        for item in videos
-        if item.get("completion_state") == "needs_adjudication"
-    ][:adjudication_limit]
-    acquisition_items = sorted(
-        (item for item in videos if item.get("completion_state") == "needs_acquisition"),
-        key=lambda item: (-int(item.get("view_count") or 0), item["video_id"]),
-    )[:acquisition_limit]
+        {
+            "id": item["video_id"],
+            "source_id": str((item.get("source_ids") or ["unassigned"])[0]),
+            "reason": "extracted candidates still have retryable decisions",
+        }
+        for item in adjudication_items
+    ]
+    acquisition_items = select_source_balanced(
+        [item for item in videos if item.get("completion_state") == "needs_acquisition"],
+        acquisition_limit,
+    )
     acquisition = [
-        {"id": item["video_id"], "reason": item.get("completion_reason", "transcript acquisition is due")}
+        {
+            "id": item["video_id"],
+            "source_id": str((item.get("source_ids") or ["unassigned"])[0]),
+            "reason": item.get("completion_reason", "transcript acquisition is due"),
+        }
         for item in acquisition_items
     ]
     return {"extraction": extraction, "adjudication": adjudication, "acquisition": acquisition}

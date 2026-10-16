@@ -2,58 +2,69 @@ id: concept-joint-bracing-for-stable-power
 slug: joint-bracing-for-stable-power
 label: Joint bracing for stable power
 aliases:
-  - braced joints
-  - stable joints
-short_definition: Keep the shoulder, elbow, wrist, and overall frame braced and stable when striking so the stroke does not wobble or break down.
+- braced joints
+- stable joints
+short_definition: Brace your joints when generating power; wobbling in your joints when you hit causes an error.
 evidence_summary: >-
-  Joint bracing for stable power brings together several connected ideas. Joints must be braced
-  and stable when generating power and that wobbling causes errors. The repeated instruction is to
-  lock or brace the joint; when it moves, the power disappears. Together, these principles show
-  how the topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:4e5cb4e36ae73987523d9b3cfc9c84b00c2521336dd3cd0c31c817365e5bdf7b"
-evidence_summary_generator: "deterministic"
+  The instruction is to brace the joints when generating power and avoid wobbling when hitting, which causes an error.
 concept_type: skill
 facets:
   category:
-    - fundamentals
-    - stroke
-  level:
-    - intermediate
-difficulty: intermediate
+  - fundamentals
+  - stroke
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: cfa911ec92bd35d9ba28ed413914efc1f47b4a537e5fcf752e3afe16a52c651a
-  prompt_version: candidate-review-v1
+  input_hash: sha256:be6855006ff0463b53b3442035810478c302e095c0a17f0adfad70605998d46c
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: 16tgKRqrb8A-concept-joint-bracing-for-stable-power-reviewed
-    evidence_type: definition
-    excerpt: Keep the shoulder, elbow, wrist, and overall frame braced and stable when striking so the stroke does not wobble or break down.
-    reason: The speaker says joints must be braced and stable when generating power and that wobbling causes errors.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 16tgKRqrb8A
-      start_ms: 0
-      end_ms: 13066
-      url: https://www.youtube.com/watch?v=16tgKRqrb8A&t=0s
-      segment_ids:
-        - 16tgKRqrb8A:00000
-        - 16tgKRqrb8A:00001
-  - id: tQSnBjtseLI-concept-bracing-joints-for-stable-power-reviewed
-    evidence_type: explanation
-    excerpt: Bracing the shoulder and elbow to prevent wobble so the stroke produces a concentrated, explosive output.
-    reason: The repeated instruction is to lock or brace the joint; when it moves, the power disappears.
-    confidence: 0.89
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: tQSnBjtseLI
-      start_ms: 331633
-      end_ms: 358100
-      url: https://www.youtube.com/watch?v=tQSnBjtseLI&t=331s
-      segment_ids:
-        - tQSnBjtseLI:00048
-        - tQSnBjtseLI:00052
+- id: 16tgKRqrb8A-concept-joint-bracing-for-stable-power-reviewed
+  evidence_type: definition
+  excerpt: Keep the shoulder, elbow, wrist, and overall frame braced and stable when striking so the stroke does not wobble or break down.
+  reason: The speaker says joints must be braced and stable when generating power and that wobbling causes errors.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 16tgKRqrb8A
+    start_ms: 0
+    end_ms: 13066
+    url: https://www.youtube.com/watch?v=16tgKRqrb8A&t=0s
+    segment_ids:
+    - 16tgKRqrb8A:00000
+    - 16tgKRqrb8A:00001
+- id: tQSnBjtseLI-concept-bracing-joints-for-stable-power-reviewed
+  evidence_type: explanation
+  excerpt: Bracing the shoulder and elbow to prevent wobble so the stroke produces a concentrated, explosive output.
+  reason: The repeated instruction is to lock or brace the joint; when it moves, the power disappears.
+  confidence: 0.89
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: tQSnBjtseLI
+    start_ms: 331633
+    end_ms: 358100
+    url: https://www.youtube.com/watch?v=tQSnBjtseLI&t=331s
+    segment_ids:
+    - tQSnBjtseLI:00048
+    - tQSnBjtseLI:00052
+- id: 16tgKRqrb8A-concept-joint-bracing-for-stable-power-codex-reviewed
+  evidence_type: definition
+  excerpt: Whenever you generate power, your joints must be braced and stable. If there's any wobbling in your joints when you hit, you will make an error.
+  reason: Brace your joints when generating power; wobbling in your joints when you hit causes an error.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: 16tgKRqrb8A
+    start_ms: 0
+    end_ms: 13066
+    url: https://www.youtube.com/watch?v=16tgKRqrb8A&t=0s
+    segment_ids:
+    - 16tgKRqrb8A:00000
+    - 16tgKRqrb8A:00001

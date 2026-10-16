@@ -229,7 +229,7 @@ evidence:
     reason: Directly contrasts the correct forward drive with the errors of lifting upward and brushing sideways.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8pUgdfqXPj4
       start_ms: 176440
@@ -248,7 +248,7 @@ evidence:
     reason: 'The transcript specifies the elbow as the axis and details the forearm path: downward, forward, external rotation, then sideways finish and outside arc.'
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hp9OZTBD5JE
       start_ms: 213040
@@ -271,7 +271,7 @@ evidence:
     reason: The speaker lists faulty and correct forearm paths and contrasts them with mixing up drive and loop.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: o-65pV_y0O0
       start_ms: 220560
@@ -294,7 +294,7 @@ evidence:
     reason: The speaker explicitly contrasts straight forward motion with an opening fan shape and outward arc, describing the correct backhand path as a small circle/arc.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hwUcyGY2ApQ
       start_ms: 61800
@@ -310,7 +310,7 @@ evidence:
     reason: Says a slight arc makes power smoother and avoids a push-like back-and-forth motion.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ExJnwgcKEsU
       start_ms: 227466
@@ -326,7 +326,7 @@ evidence:
     reason: The speaker contrasts backhand arc control with forehand and states that a slight outside arc produces more spin than a straight motion.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: vCa7A9gyOT8
       start_ms: 921033
@@ -345,7 +345,7 @@ evidence:
     reason: The speaker says the elbow should stay stable and act as a pivot so the forearm can accelerate.
     confidence: 0.88
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 60_qpMsHRvQ
       start_ms: 285500
@@ -360,7 +360,7 @@ evidence:
     reason: "The speaker gives a specific backhand path: racket head at 10 o'clock, keep a V-angle, drive forward, then rotate the forearm outward."
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: qLCA9OYSFl4
       start_ms: 603433
@@ -376,7 +376,7 @@ evidence:
     reason: He states that the elbow acts as a pivot, should stay stable, and the forearm should accelerate and rotate for a spinny loop.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: EjtP5uCaULU
       start_ms: 515766
@@ -392,7 +392,7 @@ evidence:
     reason: The speaker identifies forearm-driven follow-through after a small contact motion and frames this as the core swing path.
     confidence: 0.91
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: jTCRnIWq0lI
       start_ms: 465233
@@ -407,7 +407,7 @@ evidence:
     reason: 'The transcript explains the mechanical framework: stable elbow, forearm rotation, and a natural arc traced by the racket head.'
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: CLBNvB5gemk
       start_ms: 646333
@@ -422,7 +422,7 @@ evidence:
     reason: The speaker contrasts linear motion with a curved arc, says the backswing should start slightly to the side, and ties the final rotation to the whip through the ball.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: wj87pK5547g
       start_ms: 744800
@@ -441,7 +441,7 @@ evidence:
     reason: The speaker repeatedly maps the stroke onto a 5-to-10 brushing phase and a 10-to-2 power phase.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: qfB1tscK4xk
       start_ms: 345233
@@ -457,7 +457,7 @@ evidence:
     reason: The speaker demonstrates a left-side backswing and a 7-to-10 o'clock brushing path as the workable swing path for the backhand loop.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Yf_uKs6cZ38
       start_ms: 214266
@@ -475,7 +475,7 @@ evidence:
     reason: The speaker explains the wrapping feeling, cross-court racket-head orientation, and using the full looping arc as the stroke path.
     confidence: 0.91
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: M8fzQvShrx8
       start_ms: 720633
@@ -490,7 +490,7 @@ evidence:
     reason: The speaker uses a windshield-wiper analogy and says the forearm must rotate outward to find direction and angle, not the wrist.
     confidence: 0.87
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: iLx4lLc6w4I
       start_ms: 590959
@@ -506,6 +506,39 @@ evidence:
         - iLx4lLc6w4I:00260
         - iLx4lLc6w4I:00261
         - iLx4lLc6w4I:00266
+  - id: EjtP5uCaULU-concept-backhand-loop-swing-path-codex-reviewed
+    evidence_type: explanation
+    excerpt: In the backswing, let the shoulder, elbow, and forearm drop. Once the structure is set, keep the elbow stable as a pivot and accelerate the forearm to loop the ball.
+    reason: 'This contiguous 15.5-second span directly explains the backhand loop swing structure: the arm drops into position, the elbow remains a stable pivot, and the forearm accelerates to generate friction.'
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: EjtP5uCaULU
+      start_ms: 515766
+      end_ms: 531300
+      url: https://www.youtube.com/watch?v=EjtP5uCaULU&t=515s
+      segment_ids:
+        - EjtP5uCaULU:00122
+        - EjtP5uCaULU:00123
+        - EjtP5uCaULU:00124
+  - id: jTCRnIWq0lI-concept-backhand-loop-swing-path-codex-reviewed
+    evidence_type: explanation
+    excerpt: After contact, forearm rotation brings the racket through; the wrist does not independently lead the stroke.
+    reason: This contiguous span directly explains the backhand follow-through as forearm-driven and distinguishes it from independent wrist action. It supports the existing backhand loop swing-path concept, but does not support claims about a closed or stable racket face.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: jTCRnIWq0lI
+      start_ms: 450266
+      end_ms: 477166
+      url: https://www.youtube.com/watch?v=jTCRnIWq0lI&t=450s
+      segment_ids:
+        - jTCRnIWq0lI:00097
+        - jTCRnIWq0lI:00098
+        - jTCRnIWq0lI:00099
+        - jTCRnIWq0lI:00100
 relations:
   - relation_type: part_of
     target_concept_id: concept-backhand-loop

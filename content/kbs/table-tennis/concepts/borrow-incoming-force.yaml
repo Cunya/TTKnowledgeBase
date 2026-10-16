@@ -2,232 +2,260 @@ id: concept-borrow-incoming-force
 slug: borrow-incoming-force
 label: Borrow incoming force
 aliases:
-  - use the opponent's power
-  - use the incoming power
-short_definition: When late or poorly prepared, a player should redirect or borrow the incoming ball's force instead of forcing a full-power stroke.
+- use the opponent's power
+- use the incoming power
+short_definition: When late, borrow the incoming force; if preparation is complete after the bounce, attack with power.
 evidence_summary: >-
-  Borrow incoming force brings together several connected ideas. Using the opponent's or incoming
-  power when preparation is late or incomplete. To follow the spin's direction and send the ball
-  back along its path to neutralize the spin. Borrowing power from the ball's rise or fall and
-  combining it with the player's own effort. Against a fast push you can use its pace and that the
-  opponent has already supplied the power. Using the ball's existing friction/pressure to make the
-  loop work, which is effectively borrowing incoming force. Multiple segments state that the
-  player should use or borrow the opponent's power to create the return. Whether to rely on own
-  power or the opponent's power, then explains borrowing power and labels it borrowing force. To
-  use the opponent's pace/power and brush over the ball with racket tip, wrist, and forearm.
-  Additional points reinforce the same theme. Together, these principles show how the topic is
-  applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:8238d606895316a30173f00a0289624b77b72c436bd78842a0b1f53283d7a475"
-evidence_summary_generator: "deterministic"
+  When late, borrow the incoming force; if preparation is complete after the bounce, attack with power. In topspin against underspin, players are described as tending to rely on borrowed power rather than actively applying force.
 concept_type: concept
 facets:
   category:
-    - tactic
-    - fundamentals
-difficulty: intermediate
+  - tactic
+  - fundamentals
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 896d3c595f06af75ae8e38d5255923455efdaf90d7f272a1ac59d5a9db2084b0
-  prompt_version: candidate-review-v1
+  input_hash: sha256:2f3a96fe149b3b5d63289ed59d8dc424d1008473151489d8350a4575ed883b68
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: 15KzTMIx65s-concept-borrow-incoming-force-reviewed
-    evidence_type: explanation
-    excerpt: When late or poorly prepared, a player should redirect or borrow the incoming ball's force instead of forcing a full-power stroke.
-    reason: The speaker explicitly recommends using the opponent's or incoming power when preparation is late or incomplete.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 15KzTMIx65s
-      start_ms: 231600
-      end_ms: 254680
-      url: https://www.youtube.com/watch?v=15KzTMIx65s&t=231s
-      segment_ids:
-        - 15KzTMIx65s:00092
-        - 15KzTMIx65s:00093
-        - 15KzTMIx65s:00094
-        - 15KzTMIx65s:00095
-        - 15KzTMIx65s:00096
-        - 15KzTMIx65s:00097
-        - 15KzTMIx65s:00098
-  - id: ldoTdAje9n0-concept-borrow-incoming-force-reviewed
-    evidence_type: definition
-    excerpt: Use the incoming ball's force and spin to help generate a safer, spinnier return instead of fighting it directly.
-    reason: The speaker explicitly says to use the ball's incoming force and borrow the spin.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: ldoTdAje9n0
-      start_ms: 85000
-      end_ms: 108333
-      url: https://www.youtube.com/watch?v=ldoTdAje9n0&t=85s
-      segment_ids:
-        - ldoTdAje9n0:00029
-        - ldoTdAje9n0:00035
-        - ldoTdAje9n0:00036
-  - id: tiRcYBbJh-k-concept-borrow-incoming-force-reviewed
-    evidence_type: explanation
-    excerpt: Using the incoming spin or pace to stabilize the return instead of forcing the ball forward aggressively.
-    reason: The speaker says to follow the spin's direction and send the ball back along its path to neutralize the spin.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: tiRcYBbJh-k
-      start_ms: 133500
-      end_ms: 144500
-      url: https://www.youtube.com/watch?v=tiRcYBbJh-k&t=133s
-      segment_ids:
-        - tiRcYBbJh-k:00049
-        - tiRcYBbJh-k:00050
-        - tiRcYBbJh-k:00053
-        - tiRcYBbJh-k:00054
-  - id: 5g8d38gLuq8-concept-borrow-incoming-force-reviewed
-    evidence_type: definition
-    excerpt: Use the ball's incoming rise or fall momentum to make the loop easier and more effective instead of generating everything from your own swing.
-    reason: The speaker directly explains borrowing power from the ball's rise or fall and combining it with the player's own effort.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 5g8d38gLuq8
-      start_ms: 520959
-      end_ms: 539880
-      url: https://www.youtube.com/watch?v=5g8d38gLuq8&t=520s
-      segment_ids:
-        - 5g8d38gLuq8:00165
-        - 5g8d38gLuq8:00166
-        - 5g8d38gLuq8:00167
-        - 5g8d38gLuq8:00168
-        - 5g8d38gLuq8:00169
-        - 5g8d38gLuq8:00170
-  - id: jhAaEbQ9ytM-concept-borrow-incoming-force-reviewed
-    evidence_type: explanation
-    excerpt: Using the opponent's incoming force or spin to make your own loop easier and more efficient.
-    reason: The speaker explicitly says to borrow the opponent's power and use combined force while making very small movements.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: jhAaEbQ9ytM
-      start_ms: 180000
-      end_ms: 192680
-      url: https://www.youtube.com/watch?v=jhAaEbQ9ytM&t=180s
-      segment_ids:
-        - jhAaEbQ9ytM:00046
-        - jhAaEbQ9ytM:00047
-        - jhAaEbQ9ytM:00048
-        - jhAaEbQ9ytM:00049
-  - id: K0eFBdIiBTQ-concept-borrow-incoming-force-reviewed
-    evidence_type: explanation
-    excerpt: Use the pace of a fast incoming ball instead of generating all the power yourself.
-    reason: The speaker says that against a fast push you can use its pace and that the opponent has already supplied the power.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: K0eFBdIiBTQ
-      start_ms: 167100
-      end_ms: 175700
-      url: https://www.youtube.com/watch?v=K0eFBdIiBTQ&t=167s
-      segment_ids:
-        - K0eFBdIiBTQ:00038
-        - K0eFBdIiBTQ:00039
-  - id: dJJtJQvuwOY-concept-borrow-incoming-force-reviewed
-    evidence_type: explanation
-    excerpt: Use the incoming ball's momentum and spin as part of your own stroke rather than trying to create everything from scratch.
-    reason: The speaker describes using the ball's existing friction/pressure to make the loop work, which is effectively borrowing incoming force.
-    confidence: 0.84
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: dJJtJQvuwOY
-      start_ms: 28033
-      end_ms: 44766
-      url: https://www.youtube.com/watch?v=dJJtJQvuwOY&t=28s
-      segment_ids:
-        - dJJtJQvuwOY:00002
-        - dJJtJQvuwOY:00003
-  - id: 15ElcVXEJVU-concept-borrow-incoming-force-reviewed
-    evidence_type: explanation
-    excerpt: Against underspin, the speaker recommends using the incoming ball's momentum or power rather than forcing the shot too early.
-    reason: The speaker says that when using topspin technique against underspin, players rely on borrowed power and leverage the incoming ball.
-    confidence: 0.89
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 15ElcVXEJVU
-      start_ms: 182200
-      end_ms: 202666
-      url: https://www.youtube.com/watch?v=15ElcVXEJVU&t=182s
-      segment_ids:
-        - 15ElcVXEJVU:00027
-        - 15ElcVXEJVU:00029
-        - 15ElcVXEJVU:00030
-  - id: TYMU3wQ3-sw-concept-borrow-incoming-force-reviewed
-    evidence_type: explanation
-    excerpt: Use the opponent's incoming pace or force to generate your own return instead of supplying all the power yourself.
-    reason: Multiple segments state that the player should use or borrow the opponent's power to create the return.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: TYMU3wQ3-sw
-      start_ms: 224100
-      end_ms: 248733
-      url: https://www.youtube.com/watch?v=TYMU3wQ3-sw&t=224s
-      segment_ids:
-        - TYMU3wQ3-sw:00051
-        - TYMU3wQ3-sw:00053
-        - TYMU3wQ3-sw:00056
-  - id: u5UlupA51vg-concept-borrow-incoming-force-reviewed
-    evidence_type: definition
-    excerpt: Using the opponent's incoming power rather than generating all power independently.
-    reason: The speaker directly asks whether to rely on own power or the opponent's power, then explains borrowing power and labels it borrowing force.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: u5UlupA51vg
-      start_ms: 601920
-      end_ms: 625600
-      url: https://www.youtube.com/watch?v=u5UlupA51vg&t=601s
-      segment_ids:
-        - u5UlupA51vg:00079
-        - u5UlupA51vg:00080
-        - u5UlupA51vg:00081
-        - u5UlupA51vg:00082
-  - id: qFwE0n-bspQ-concept-borrow-incoming-force-reviewed
-    evidence_type: explanation
-    excerpt: Let the ball come into your space so you can absorb its incoming force and then return it with your own force.
-    reason: The speaker says to let the ball get closer, let it push into your space, then push back and let the ball's force meet your force.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: qFwE0n-bspQ
-      start_ms: 160866
-      end_ms: 171933
-      url: https://www.youtube.com/watch?v=qFwE0n-bspQ&t=160s
-      segment_ids:
-        - qFwE0n-bspQ:00037
-        - qFwE0n-bspQ:00038
-        - qFwE0n-bspQ:00039
-  - id: uL8In-_NToM-concept-borrow-incoming-force-reviewed
-    evidence_type: explanation
-    excerpt: Using the opponent's incoming pace and power as part of your own stroke instead of generating everything yourself.
-    reason: The speaker explicitly says to use the opponent's pace/power and brush over the ball with racket tip, wrist, and forearm.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: uL8In-_NToM
-      start_ms: 321400
-      end_ms: 331233
-      url: https://www.youtube.com/watch?v=uL8In-_NToM&t=321s
-      segment_ids:
-        - uL8In-_NToM:00071
-        - uL8In-_NToM:00072
+- id: 15KzTMIx65s-concept-borrow-incoming-force-reviewed
+  evidence_type: explanation
+  excerpt: When late or poorly prepared, a player should redirect or borrow the incoming ball's force instead of forcing a full-power stroke.
+  reason: The speaker explicitly recommends using the opponent's or incoming power when preparation is late or incomplete.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 15KzTMIx65s
+    start_ms: 231600
+    end_ms: 254680
+    url: https://www.youtube.com/watch?v=15KzTMIx65s&t=231s
+    segment_ids:
+    - 15KzTMIx65s:00092
+    - 15KzTMIx65s:00093
+    - 15KzTMIx65s:00094
+    - 15KzTMIx65s:00095
+    - 15KzTMIx65s:00096
+    - 15KzTMIx65s:00097
+    - 15KzTMIx65s:00098
+- id: ldoTdAje9n0-concept-borrow-incoming-force-reviewed
+  evidence_type: definition
+  excerpt: Use the incoming ball's force and spin to help generate a safer, spinnier return instead of fighting it directly.
+  reason: The speaker explicitly says to use the ball's incoming force and borrow the spin.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ldoTdAje9n0
+    start_ms: 85000
+    end_ms: 108333
+    url: https://www.youtube.com/watch?v=ldoTdAje9n0&t=85s
+    segment_ids:
+    - ldoTdAje9n0:00029
+    - ldoTdAje9n0:00035
+    - ldoTdAje9n0:00036
+- id: tiRcYBbJh-k-concept-borrow-incoming-force-reviewed
+  evidence_type: explanation
+  excerpt: Using the incoming spin or pace to stabilize the return instead of forcing the ball forward aggressively.
+  reason: The speaker says to follow the spin's direction and send the ball back along its path to neutralize the spin.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: tiRcYBbJh-k
+    start_ms: 133500
+    end_ms: 144500
+    url: https://www.youtube.com/watch?v=tiRcYBbJh-k&t=133s
+    segment_ids:
+    - tiRcYBbJh-k:00049
+    - tiRcYBbJh-k:00050
+    - tiRcYBbJh-k:00053
+    - tiRcYBbJh-k:00054
+- id: 5g8d38gLuq8-concept-borrow-incoming-force-reviewed
+  evidence_type: definition
+  excerpt: Use the ball's incoming rise or fall momentum to make the loop easier and more effective instead of generating everything from your own swing.
+  reason: The speaker directly explains borrowing power from the ball's rise or fall and combining it with the player's own effort.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 5g8d38gLuq8
+    start_ms: 520959
+    end_ms: 539880
+    url: https://www.youtube.com/watch?v=5g8d38gLuq8&t=520s
+    segment_ids:
+    - 5g8d38gLuq8:00165
+    - 5g8d38gLuq8:00166
+    - 5g8d38gLuq8:00167
+    - 5g8d38gLuq8:00168
+    - 5g8d38gLuq8:00169
+    - 5g8d38gLuq8:00170
+- id: jhAaEbQ9ytM-concept-borrow-incoming-force-reviewed
+  evidence_type: explanation
+  excerpt: Using the opponent's incoming force or spin to make your own loop easier and more efficient.
+  reason: The speaker explicitly says to borrow the opponent's power and use combined force while making very small movements.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: jhAaEbQ9ytM
+    start_ms: 180000
+    end_ms: 192680
+    url: https://www.youtube.com/watch?v=jhAaEbQ9ytM&t=180s
+    segment_ids:
+    - jhAaEbQ9ytM:00046
+    - jhAaEbQ9ytM:00047
+    - jhAaEbQ9ytM:00048
+    - jhAaEbQ9ytM:00049
+- id: K0eFBdIiBTQ-concept-borrow-incoming-force-reviewed
+  evidence_type: explanation
+  excerpt: Use the pace of a fast incoming ball instead of generating all the power yourself.
+  reason: The speaker says that against a fast push you can use its pace and that the opponent has already supplied the power.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: K0eFBdIiBTQ
+    start_ms: 167100
+    end_ms: 175700
+    url: https://www.youtube.com/watch?v=K0eFBdIiBTQ&t=167s
+    segment_ids:
+    - K0eFBdIiBTQ:00038
+    - K0eFBdIiBTQ:00039
+- id: dJJtJQvuwOY-concept-borrow-incoming-force-reviewed
+  evidence_type: explanation
+  excerpt: Use the incoming ball's momentum and spin as part of your own stroke rather than trying to create everything from scratch.
+  reason: The speaker describes using the ball's existing friction/pressure to make the loop work, which is effectively borrowing incoming force.
+  confidence: 0.84
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: dJJtJQvuwOY
+    start_ms: 28033
+    end_ms: 44766
+    url: https://www.youtube.com/watch?v=dJJtJQvuwOY&t=28s
+    segment_ids:
+    - dJJtJQvuwOY:00002
+    - dJJtJQvuwOY:00003
+- id: 15ElcVXEJVU-concept-borrow-incoming-force-reviewed
+  evidence_type: explanation
+  excerpt: Against underspin, the speaker recommends using the incoming ball's momentum or power rather than forcing the shot too early.
+  reason: The speaker says that when using topspin technique against underspin, players rely on borrowed power and leverage the incoming ball.
+  confidence: 0.89
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 15ElcVXEJVU
+    start_ms: 182200
+    end_ms: 202666
+    url: https://www.youtube.com/watch?v=15ElcVXEJVU&t=182s
+    segment_ids:
+    - 15ElcVXEJVU:00027
+    - 15ElcVXEJVU:00029
+    - 15ElcVXEJVU:00030
+- id: TYMU3wQ3-sw-concept-borrow-incoming-force-reviewed
+  evidence_type: explanation
+  excerpt: Use the opponent's incoming pace or force to generate your own return instead of supplying all the power yourself.
+  reason: Multiple segments state that the player should use or borrow the opponent's power to create the return.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: TYMU3wQ3-sw
+    start_ms: 224100
+    end_ms: 248733
+    url: https://www.youtube.com/watch?v=TYMU3wQ3-sw&t=224s
+    segment_ids:
+    - TYMU3wQ3-sw:00051
+    - TYMU3wQ3-sw:00053
+    - TYMU3wQ3-sw:00056
+- id: u5UlupA51vg-concept-borrow-incoming-force-reviewed
+  evidence_type: definition
+  excerpt: Using the opponent's incoming power rather than generating all power independently.
+  reason: The speaker directly asks whether to rely on own power or the opponent's power, then explains borrowing power and labels it borrowing force.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: u5UlupA51vg
+    start_ms: 601920
+    end_ms: 625600
+    url: https://www.youtube.com/watch?v=u5UlupA51vg&t=601s
+    segment_ids:
+    - u5UlupA51vg:00079
+    - u5UlupA51vg:00080
+    - u5UlupA51vg:00081
+    - u5UlupA51vg:00082
+- id: qFwE0n-bspQ-concept-borrow-incoming-force-reviewed
+  evidence_type: explanation
+  excerpt: Let the ball come into your space so you can absorb its incoming force and then return it with your own force.
+  reason: The speaker says to let the ball get closer, let it push into your space, then push back and let the ball's force meet your force.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: qFwE0n-bspQ
+    start_ms: 160866
+    end_ms: 171933
+    url: https://www.youtube.com/watch?v=qFwE0n-bspQ&t=160s
+    segment_ids:
+    - qFwE0n-bspQ:00037
+    - qFwE0n-bspQ:00038
+    - qFwE0n-bspQ:00039
+- id: uL8In-_NToM-concept-borrow-incoming-force-reviewed
+  evidence_type: explanation
+  excerpt: Using the opponent's incoming pace and power as part of your own stroke instead of generating everything yourself.
+  reason: The speaker explicitly says to use the opponent's pace/power and brush over the ball with racket tip, wrist, and forearm.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: uL8In-_NToM
+    start_ms: 321400
+    end_ms: 331233
+    url: https://www.youtube.com/watch?v=uL8In-_NToM&t=321s
+    segment_ids:
+    - uL8In-_NToM:00071
+    - uL8In-_NToM:00072
+- id: 15ElcVXEJVU-concept-borrow-incoming-force-codex-reviewed
+  evidence_type: explanation
+  excerpt: When using topspin against underspin, players tend to rely on borrowed power and do not actively apply force.
+  reason: During topspin against underspin, players are described as tending to rely on borrowed power rather than actively applying force.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 15ElcVXEJVU
+    start_ms: 182200
+    end_ms: 202666
+    url: https://www.youtube.com/watch?v=15ElcVXEJVU&t=182s
+    segment_ids:
+    - 15ElcVXEJVU:00027
+    - 15ElcVXEJVU:00028
+    - 15ElcVXEJVU:00029
+    - 15ElcVXEJVU:00030
+- id: 15KzTMIx65s-concept-borrow-incoming-force-codex-reviewed
+  evidence_type: explanation
+  excerpt: If your preparation is complete after the bounce, you can attack with power; if you realize you're late, borrow the incoming force.
+  reason: When preparation is complete after the bounce, attack with power; when late, borrow the incoming force.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 15KzTMIx65s
+    start_ms: 231600
+    end_ms: 254680
+    url: https://www.youtube.com/watch?v=15KzTMIx65s&t=231s
+    segment_ids:
+    - 15KzTMIx65s:00092
+    - 15KzTMIx65s:00093
+    - 15KzTMIx65s:00094
+    - 15KzTMIx65s:00095
+    - 15KzTMIx65s:00096
+    - 15KzTMIx65s:00097
+    - 15KzTMIx65s:00098

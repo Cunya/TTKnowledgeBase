@@ -5,11 +5,9 @@ aliases:
   - it's friction, then propulsion, then power
 short_definition: 'A sequencing principle for backhand ripping: first create friction on the ball, then let the forearm propel the shot, and only then add power.'
 evidence_summary: >-
-  Friction then propulsion then power brings together several connected ideas. The opening line
-  states the sequence directly, and later lines restate it as the core execution model. Together,
-  these principles show how the topic is applied in practice while preserving the relevant
-  distinctions and constraints.
-evidence_summary_source_hash: "sha256:bc21de56ddd9b1c303e41143412a9fa411e3ce94efa2cf6cd61acaac60f69618"
+  A sequencing principle for backhand ripping: first create friction on the ball, then let the
+  forearm propel the shot, and only then add power.
+evidence_summary_source_hash: "sha256:3fa4601afa5561ac6efb6fa7b0bf0f98ae5978ec8349e7a14419be17079b6adc"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -23,10 +21,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: b567136a243b942c8843c1132fe1d9b41f3631805a5448e06375fab0a11c2aa5
-  prompt_version: candidate-review-v1
+  input_hash: sha256:eb2e24e24ee8bd11b0a14a6ef24df535a8f08d6c4632a8009d79b901e2e4bd1f
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: wuXCwKRFM4k-concept-friction-then-propulsion-then-power-reviewed
     evidence_type: definition
@@ -34,7 +35,7 @@ evidence:
     reason: The opening line states the sequence directly, and later lines restate it as the core execution model.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: wuXCwKRFM4k
       start_ms: 393333
@@ -43,3 +44,26 @@ evidence:
       segment_ids:
         - wuXCwKRFM4k:00086
         - wuXCwKRFM4k:00087
+  - id: CD09LNI2fYk-concept-friction-phase-with-full-stroke-follow-through-codex-reviewed
+    evidence_type: explanation
+    excerpt: The rest is follow through. After that friction phase, the forearm and body take over. No more finger and wrist force needed. Friction is a phased action within the full stroke, a stage act within the play. That phase needs acceleration and compactness. Then it's finished. The rest arm body carries the force forward.
+    reason: This contiguous span directly explains friction as a brief phase within the full stroke, followed by the forearm and body carrying the force forward; it matches the existing friction-to-propulsion sequence concept.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: CD09LNI2fYk
+      start_ms: 460200
+      end_ms: 483160
+      url: https://www.youtube.com/watch?v=CD09LNI2fYk&t=460s
+      segment_ids:
+        - CD09LNI2fYk:00180
+        - CD09LNI2fYk:00181
+        - CD09LNI2fYk:00182
+        - CD09LNI2fYk:00183
+        - CD09LNI2fYk:00184
+        - CD09LNI2fYk:00185
+        - CD09LNI2fYk:00186
+        - CD09LNI2fYk:00187
+        - CD09LNI2fYk:00188
+        - CD09LNI2fYk:00189

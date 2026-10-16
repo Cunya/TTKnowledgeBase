@@ -1,0 +1,41 @@
+id: concept-outside-table-contact-with-inside-follow-through
+slug: outside-table-contact-with-inside-follow-through
+label: Outside-table contact with inside follow-through
+aliases: []
+short_definition: Contact the ball outside the table, then continue the racket and force into the table area; this is legal.
+evidence_summary: >-
+  Contact the ball outside the table, then continue the racket and force into the table area; this
+  is legal.
+evidence_summary_source_hash: "sha256:649a2665da265da8b0fe935ca1fff20ab9593945e2b24265ddaac853aa10c350"
+evidence_summary_generator: "deterministic"
+concept_type: tactic
+facets:
+  category:
+    - tactic
+difficulty:
+review_status: approved
+generated_by:
+  processor: codex_semantic_adjudication
+  version: 1.0.0
+  input_hash: sha256:8fd1524a8885e6e1ed86c5d792ddd319ed03e4ec961a5069df49fc23a3c7cd68
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
+evidence:
+  - id: evEaxXmwJ2E-candidate-outside-contact-and-inside-follow-through-codex-reviewed
+    evidence_type: explanation
+    excerpt: Contact the ball outside the table, then finish the racket inside the table area. This is legal.
+    reason: These contiguous segments directly explain the outside-table contact point, the inside-table finish, and its legality. This is a distinct legality-and-motion tactic, not merely generic follow-through or deceptive follow-through.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: evEaxXmwJ2E
+      start_ms: 498466
+      end_ms: 512833
+      url: https://www.youtube.com/watch?v=evEaxXmwJ2E&t=498s
+      segment_ids:
+        - evEaxXmwJ2E:00100
+        - evEaxXmwJ2E:00101
+        - evEaxXmwJ2E:00102

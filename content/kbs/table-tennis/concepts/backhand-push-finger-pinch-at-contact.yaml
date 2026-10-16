@@ -7,13 +7,9 @@ aliases:
   - sharp tap
 short_definition: The push is powered by a brief pinch or squeeze at the moment of contact, especially with the thumb and index finger, rather than by a long brushing motion.
 evidence_summary: >-
-  Backhand push finger pinch at contact brings together several connected ideas. Compact friction,
-  finger pressure at the tip, and two-finger pinching exactly at contact. A full explanation of
-  the backhand push, including its use on short and long balls, its two-part motion, and its
-  spin-producing finish. Explicit backhand-push mechanics and practice advice. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:304d67a4046fe68325f7d247214c8dbf61a2a528003435ed97ba48392b9a1996"
+  The push is powered by a brief pinch or squeeze at the moment of contact, especially with the
+  thumb and index finger, rather than by a long brushing motion.
+evidence_summary_source_hash: "sha256:41f9bb32ca0fc547634f230124a8d5dc3899958021b2ca38ee59e4606e937967"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -27,10 +23,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: a13eafb7244b38e3e8c62170f0aea5909e9577b5cec80cf7d9e590f93702b98c
-  prompt_version: candidate-review-v1
+  input_hash: sha256:649ae82bd14849fcab644555e5e3abf25bbcb74ba265b50580d4cf3074d0bc49
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: ae9urokFAJM-new-backhand-push-finger-pinch-at-contact-reviewed
     evidence_type: explanation
@@ -38,7 +37,7 @@ evidence:
     reason: The speaker repeatedly emphasizes compact friction, finger pressure at the tip, and two-finger pinching exactly at contact.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ae9urokFAJM
       start_ms: 289000
@@ -58,7 +57,7 @@ evidence:
     reason: The transcript gives a full explanation of the backhand push, including its use on short and long balls, its two-part motion, and its spin-producing finish.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: _TIBQOXT3cw
       start_ms: 644766
@@ -74,7 +73,7 @@ evidence:
     reason: The speaker gives explicit backhand-push mechanics and practice advice.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: CGidweVwLYw
       start_ms: 567400
@@ -83,3 +82,21 @@ evidence:
       segment_ids:
         - CGidweVwLYw:00125
         - CGidweVwLYw:00128
+  - id: ae9urokFAJM-new-backhand-push-finger-pinch-at-contact-codex-reviewed
+    evidence_type: explanation
+    excerpt: For the push, power comes from the thumb and index finger. At the exact moment of contact, they apply downward pressure and distinctly pinch the racket; pinching means the two fingers press together.
+    reason: This contiguous 24.9-second span directly explains thumb-and-index-finger pressure at contact and distinguishes the required two-finger pinch.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: ae9urokFAJM
+      start_ms: 277900
+      end_ms: 302833
+      url: https://www.youtube.com/watch?v=ae9urokFAJM&t=277s
+      segment_ids:
+        - ae9urokFAJM:00061
+        - ae9urokFAJM:00062
+        - ae9urokFAJM:00063
+        - ae9urokFAJM:00064
+        - ae9urokFAJM:00065

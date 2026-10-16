@@ -7,16 +7,9 @@ aliases:
   - keep the shoulders down
 short_definition: Keeping the hitting shoulder lowered, relaxed, and tucked in during forehand preparation and rotation so the stroke stays stable and standard.
 evidence_summary: >-
-  Shoulder lowering and tuck-in for forehand mechanics brings together several connected ideas.
-  The player to drop and tuck the hitting shoulder, keep it relaxed, and avoid shrugging or
-  bobbing. To drop the shoulder for in-table shots and flicks, and later states that a more tucked
-  shoulder and elbow produce higher quality and faster recovery. The shoulder has to drop,
-  especially for lower-bouncing heavy backspin balls. The shoulder as the main of stiffness and
-  recommends dropping it slightly so the arm relaxes. The player to relax and lower the right
-  shoulder, connect shoulder and hip, and use a compact low body position to generate power.
-  Shrugged or tense shoulders as a common mistake. Together, these principles show how the topic
-  is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:81d5ea7f94db812bc07ab3278bb325fc578c6a3a5c53d9a1751c83323732f1d0"
+  Keeping the hitting shoulder lowered, relaxed, and tucked in during forehand preparation and
+  rotation so the stroke stays stable and standard.
+evidence_summary_source_hash: "sha256:047c10478bf580dbe8ce40f75f7b2da50b83685fe41f13944f8ae112aca4dccb"
 evidence_summary_generator: "deterministic"
 concept_type: fundamental
 facets:
@@ -30,10 +23,13 @@ facets:
 difficulty: beginner
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: d4465d5921d5aa9c9e1e56e3e06f59e598257d1195aa1a2246262af3e6c46901
-  prompt_version: candidate-review-v1
+  input_hash: sha256:4a4971a96930a9e25cc48b318619fa625e98a1fed0892b351665633b2da5e301
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: ZW9bduR7FXk-concept-shrugged-shoulders-reviewed
     evidence_type: explanation
@@ -41,7 +37,7 @@ evidence:
     reason: The transcript repeatedly instructs the player to drop and tuck the hitting shoulder, keep it relaxed, and avoid shrugging or bobbing.
     confidence: 0.91
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ZW9bduR7FXk
       start_ms: 551700
@@ -57,7 +53,7 @@ evidence:
     reason: The speaker repeatedly says to drop the shoulder for in-table shots and flicks, and later states that a more tucked shoulder and elbow produce higher quality and faster recovery.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 1XgvgkJ8EfM
       start_ms: 874959
@@ -71,7 +67,7 @@ evidence:
     reason: The speaker directly instructs that the shoulder has to drop, especially for lower-bouncing heavy backspin balls.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 01-q1cswVVs
       start_ms: 146700
@@ -88,7 +84,7 @@ evidence:
     reason: The speaker identifies the shoulder as the main source of stiffness and recommends dropping it slightly so the arm relaxes.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: pFKneacfGiY
       start_ms: 258100
@@ -103,7 +99,7 @@ evidence:
     reason: The speaker repeatedly instructs the player to relax and lower the right shoulder, connect shoulder and hip, and use a compact low body position to generate power.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hL_nXrojZT0
       start_ms: 417300
@@ -121,7 +117,7 @@ evidence:
     reason: The speaker identifies shrugged or tense shoulders as a common mistake.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: PsZfazXZXEA
       start_ms: 78633
@@ -130,3 +126,21 @@ evidence:
       segment_ids:
         - PsZfazXZXEA:00015
         - PsZfazXZXEA:00018
+  - id: 01-q1cswVVs-concept-shoulder-lowering-and-tuck-in-for-forehand-mechanics-codex-reviewed
+    evidence_type: explanation
+    excerpt: For a low-bouncing backspin ball, your shoulder has to drop—even more as the ball bounces lower. Rotating horizontally is a topspin movement, not a backspin one.
+    reason: These contiguous segments directly explain dropping the shoulder more for low-bouncing, heavy backspin and contrast it with horizontal rotation for topspin. They do not support the proposal's tuck-in wording, so the excerpt is limited to shoulder lowering.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 01-q1cswVVs
+      start_ms: 146700
+      end_ms: 170666
+      url: https://www.youtube.com/watch?v=01-q1cswVVs&t=146s
+      segment_ids:
+        - 01-q1cswVVs:00027
+        - 01-q1cswVVs:00028
+        - 01-q1cswVVs:00029
+        - 01-q1cswVVs:00030
+        - 01-q1cswVVs:00031

@@ -1,0 +1,50 @@
+id: concept-loop-up-then-recover
+slug: loop-up-then-recover
+label: Loop up then recover
+aliases: []
+short_definition: After the first loop, recover immediately to maintain rhythm for the next stroke.
+evidence_summary: >-
+  After the first loop, recover immediately to maintain rhythm for the next stroke.
+evidence_summary_source_hash: "sha256:44af5b3dd494dd6872648e39f1df089e71123515f141d2aed6eca388b2531ae5"
+evidence_summary_generator: "deterministic"
+concept_type: stroke
+facets:
+  category:
+    - stroke
+  side:
+    - forehand
+  spin:
+    - topspin
+    - backspin
+  level:
+    - intermediate
+difficulty:
+review_status: approved
+generated_by:
+  processor: codex_semantic_adjudication
+  version: 1.0.0
+  input_hash: sha256:d107aa9833e6d8b63c283650c8f46d4fbcd5a6965044e75d8007a7a582d69152
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
+evidence:
+  - id: 7d1fUkOzCjM-concept-loop-up-then-recover-codex-reviewed
+    evidence_type: explanation
+    excerpt: When looping underspin and then topspin, recover after the first loop to maintain the rhythm.
+    reason: This contiguous 10.8-second span directly describes looping underspin and then topspin, failing to recover, and recovering after the loop to maintain rhythm.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 7d1fUkOzCjM
+      start_ms: 418900
+      end_ms: 429700
+      url: https://www.youtube.com/watch?v=7d1fUkOzCjM&t=418s
+      segment_ids:
+        - 7d1fUkOzCjM:00128
+        - 7d1fUkOzCjM:00129
+        - 7d1fUkOzCjM:00130
+        - 7d1fUkOzCjM:00131
+        - 7d1fUkOzCjM:00132
+        - 7d1fUkOzCjM:00133

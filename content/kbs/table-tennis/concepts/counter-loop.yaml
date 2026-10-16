@@ -103,7 +103,7 @@ evidence:
     reason: The speaker says the opponent will attack with a topspin loop and that we should counter-loop immediately.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: wpaKC8pALyQ
       start_ms: 7033
@@ -118,7 +118,7 @@ evidence:
     reason: The speaker explicitly introduces the topic as counter-looping and frames it as defending against a high-arc loop.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: eWmcldqt4io
       start_ms: 31566
@@ -133,7 +133,7 @@ evidence:
     reason: The speaker directly contrasts topspin and counter-loop and describes counter-loop as a forward spin shot for higher-quality incoming balls.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 6Lw_HobLgSY
       start_ms: 47666
@@ -150,7 +150,7 @@ evidence:
     reason: The speaker explicitly identifies the shot as a counter-loop using the opponent's pace.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: uL8In-_NToM
       start_ms: 937100
@@ -165,7 +165,7 @@ evidence:
     reason: The speaker defines the shot as using the opponent's power and says it is the recommended option for amateurs.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: KYqNsz4vOmI
       start_ms: 110866
@@ -174,6 +174,44 @@ evidence:
       segment_ids:
         - KYqNsz4vOmI:00023
         - KYqNsz4vOmI:00026
+  - id: 6Lw_HobLgSY-concept-counter-loop-codex-reviewed
+    evidence_type: definition
+    excerpt: For this type of ball, the force is generated from back to front; the counter-loop is a forward spin shot. The biggest difference between the counter-loop and the topspin loop is the direction of force in the counter-loop.
+    reason: The contiguous selected span directly describes the counter-loop’s forward force direction and contrasts it with the topspin loop, supporting the supplied existing concept.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 6Lw_HobLgSY
+      start_ms: 297066
+      end_ms: 317200
+      url: https://www.youtube.com/watch?v=6Lw_HobLgSY&t=297s
+      segment_ids:
+        - 6Lw_HobLgSY:00123
+        - 6Lw_HobLgSY:00124
+        - 6Lw_HobLgSY:00125
+        - 6Lw_HobLgSY:00126
+        - 6Lw_HobLgSY:00127
+        - 6Lw_HobLgSY:00128
+        - 6Lw_HobLgSY:00129
+  - id: LopC3UNnOXM-concept-counter-loop-codex-reviewed
+    evidence_type: explanation
+    excerpt: When choosing between topspin and a counter-loop, a high and slow ball with low quality should be counter-looped, while a low and fast ball is better suited to topspin.
+    reason: This contiguous 15-second span directly names the counter-loop and explains the incoming-ball condition for using it. The existing Counter-loop concept is the same durable stroke topic.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: LopC3UNnOXM
+      start_ms: 47000
+      end_ms: 58900
+      url: https://www.youtube.com/watch?v=LopC3UNnOXM&t=47s
+      segment_ids:
+        - LopC3UNnOXM:00015
+        - LopC3UNnOXM:00016
+        - LopC3UNnOXM:00017
+        - LopC3UNnOXM:00018
+        - LopC3UNnOXM:00019
 relations:
   - relation_type: variation_of
     target_concept_id: concept-forehand-loop

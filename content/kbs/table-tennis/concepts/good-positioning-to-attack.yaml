@@ -1,100 +1,110 @@
 id: concept-good-positioning-to-attack
 slug: good-positioning-to-attack
-label: Good positioning to attack
+label: Good positioning
 aliases:
-  - good positioning
-  - ability to use power
-short_definition: Using power is only appropriate when the ball is positioned so the player can reach it comfortably, typically without extra footwork.
+- reach without moving feet
+short_definition: Good positioning is when you don't need to move your feet and can reach by simply extending your arm.
 evidence_summary: >-
-  Good positioning to attack brings together several connected ideas. Good positioning is the
-  first condition for using power and it as reaching the ball by simply extending the arm. A good
-  position, especially being ready to step around and attack, is ideal in matches. Continuous
-  forehand attacks require precise positioning and exact placement. A useful contrast is between
-  poor posture and stepping in and pushing the center of gravity forward so a ball in a good
-  position can be looped effectively. Together, these principles show how the topic is applied in
-  practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:2bbb2f61fe3cd9973601b5ac4bd2982ead92f7ab014cdcb9a79c53de1b379935"
-evidence_summary_generator: "deterministic"
+  Good positioning is when you don't need to move your feet and can reach by simply extending your arm.
 concept_type: concept
 facets:
   category:
-    - fundamentals
-  distance:
-    - close
-    - mid
-difficulty: beginner
+  - fundamentals
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 0fb0f528462046885929c31e55fc9b8b2a37a77d5e231b5ecf3332e8b3f72c38
-  prompt_version: candidate-review-v1
+  input_hash: sha256:828ee20d1c255dfa95d2c944a959075d81660e89a74b80a7486b75e14d040071
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: 15KzTMIx65s-concept-good-positioning-to-attack-reviewed
-    evidence_type: definition
-    excerpt: Using power is only appropriate when the ball is positioned so the player can reach it comfortably, typically without extra footwork.
-    reason: The speaker says good positioning is the first condition for using power and defines it as reaching the ball by simply extending the arm.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 15KzTMIx65s
-      start_ms: 32840
-      end_ms: 50680
-      url: https://www.youtube.com/watch?v=15KzTMIx65s&t=32s
-      segment_ids:
-        - 15KzTMIx65s:00012
-        - 15KzTMIx65s:00013
-        - 15KzTMIx65s:00014
-        - 15KzTMIx65s:00015
-        - 15KzTMIx65s:00016
-        - 15KzTMIx65s:00017
-  - id: ldoTdAje9n0-concept-good-positioning-to-attack-reviewed
-    evidence_type: definition
-    excerpt: Being in a favorable body position relative to the ball so that you can attack decisively, step around, or hit powerfully.
-    reason: The speaker says a good position, especially being ready to step around and attack, is ideal in matches.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: ldoTdAje9n0
-      start_ms: 198233
-      end_ms: 208933
-      url: https://www.youtube.com/watch?v=ldoTdAje9n0&t=198s
-      segment_ids:
-        - ldoTdAje9n0:00070
-        - ldoTdAje9n0:00072
-        - ldoTdAje9n0:00073
-  - id: 7N1IChCbVjk-concept-good-positioning-to-attack-reviewed
-    evidence_type: explanation
-    excerpt: Arriving in the right place before attacking so the forehand can be used effectively.
-    reason: The speaker says continuous forehand attacks require precise positioning and exact placement.
-    confidence: 0.86
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 7N1IChCbVjk
-      start_ms: 363966
-      end_ms: 373666
-      url: https://www.youtube.com/watch?v=7N1IChCbVjk&t=363s
-      segment_ids:
-        - 7N1IChCbVjk:00113
-        - 7N1IChCbVjk:00115
-        - 7N1IChCbVjk:00116
-  - id: rOMRGvlgAAU-concept-good-positioning-to-attack-reviewed
-    evidence_type: explanation
-    excerpt: Being in a balanced, forward-ready position that allows an effective attacking shot.
-    reason: The speaker contrasts poor posture with stepping in and pushing the center of gravity forward so a ball in a good position can be looped effectively.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: rOMRGvlgAAU
-      start_ms: 11766
-      end_ms: 41100
-      url: https://www.youtube.com/watch?v=rOMRGvlgAAU&t=11s
-      segment_ids:
-        - rOMRGvlgAAU:00003
-        - rOMRGvlgAAU:00004
-        - rOMRGvlgAAU:00007
-        - rOMRGvlgAAU:00008
+- id: 15KzTMIx65s-concept-good-positioning-to-attack-reviewed
+  evidence_type: definition
+  excerpt: Using power is only appropriate when the ball is positioned so the player can reach it comfortably, typically without extra footwork.
+  reason: The speaker says good positioning is the first condition for using power and defines it as reaching the ball by simply extending the arm.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 15KzTMIx65s
+    start_ms: 32840
+    end_ms: 50680
+    url: https://www.youtube.com/watch?v=15KzTMIx65s&t=32s
+    segment_ids:
+    - 15KzTMIx65s:00012
+    - 15KzTMIx65s:00013
+    - 15KzTMIx65s:00014
+    - 15KzTMIx65s:00015
+    - 15KzTMIx65s:00016
+    - 15KzTMIx65s:00017
+- id: ldoTdAje9n0-concept-good-positioning-to-attack-reviewed
+  evidence_type: definition
+  excerpt: Being in a favorable body position relative to the ball so that you can attack decisively, step around, or hit powerfully.
+  reason: The speaker says a good position, especially being ready to step around and attack, is ideal in matches.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ldoTdAje9n0
+    start_ms: 198233
+    end_ms: 208933
+    url: https://www.youtube.com/watch?v=ldoTdAje9n0&t=198s
+    segment_ids:
+    - ldoTdAje9n0:00070
+    - ldoTdAje9n0:00072
+    - ldoTdAje9n0:00073
+- id: 7N1IChCbVjk-concept-good-positioning-to-attack-reviewed
+  evidence_type: explanation
+  excerpt: Arriving in the right place before attacking so the forehand can be used effectively.
+  reason: The speaker says continuous forehand attacks require precise positioning and exact placement.
+  confidence: 0.86
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 7N1IChCbVjk
+    start_ms: 363966
+    end_ms: 373666
+    url: https://www.youtube.com/watch?v=7N1IChCbVjk&t=363s
+    segment_ids:
+    - 7N1IChCbVjk:00113
+    - 7N1IChCbVjk:00115
+    - 7N1IChCbVjk:00116
+- id: rOMRGvlgAAU-concept-good-positioning-to-attack-reviewed
+  evidence_type: explanation
+  excerpt: Being in a balanced, forward-ready position that allows an effective attacking shot.
+  reason: The speaker contrasts poor posture with stepping in and pushing the center of gravity forward so a ball in a good position can be looped effectively.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: rOMRGvlgAAU
+    start_ms: 11766
+    end_ms: 41100
+    url: https://www.youtube.com/watch?v=rOMRGvlgAAU&t=11s
+    segment_ids:
+    - rOMRGvlgAAU:00003
+    - rOMRGvlgAAU:00004
+    - rOMRGvlgAAU:00007
+    - rOMRGvlgAAU:00008
+- id: 15KzTMIx65s-concept-good-positioning-to-attack-codex-reviewed
+  evidence_type: definition
+  excerpt: You don't need to move your feet. If you can reach it by simply extending your arm, that's good positioning.
+  reason: Good positioning is when you can reach by extending your arm without moving your feet.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 15KzTMIx65s
+    start_ms: 32840
+    end_ms: 50680
+    url: https://www.youtube.com/watch?v=15KzTMIx65s&t=32s
+    segment_ids:
+    - 15KzTMIx65s:00012
+    - 15KzTMIx65s:00013
+    - 15KzTMIx65s:00014
+    - 15KzTMIx65s:00015
+    - 15KzTMIx65s:00016
+    - 15KzTMIx65s:00017

@@ -2,43 +2,53 @@ id: concept-heavy-spin-serve-disrupts-step-around
 slug: heavy-spin-serve-disrupts-step-around
 label: Heavy-spin serve disrupts step-around
 aliases:
-  - heavy spin serve
-  - get jammed
-short_definition: Serving heavy spin can make step-around footwork awkward and trap the server in a jammed position.
+- heavy spin serve
+- get jammed
+short_definition: A player serving with heavy spin can get caught by their own spin and become jammed when trying to step around.
 evidence_summary: >-
-  Heavy-spin serve disrupts step-around brings together several connected ideas. Explicitly says
-  heavy spin makes step-around impossible or jammed. Together, these principles show how the topic
-  is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:6143bf7ab664ae15d3c86afebf6d1956c5ee2b15f414b2a1bb0f977aad605740"
-evidence_summary_generator: "deterministic"
+  A player serving with heavy spin can get caught by their own spin and become jammed when trying to step around.
 concept_type: tactic
 facets:
   category:
-    - tactic
-  spin:
-    - topspin
-    - backspin
-    - sidespin
-difficulty: intermediate
+  - tactic
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: b4327904d9ab6a85fe368c320a536bdae14a876d075c91d704d65c9bca1b9462
-  prompt_version: candidate-review-v1
+  input_hash: sha256:20c8810c948035152ed8fbbc21472f49435f79f3293b31bf41eb50da57f6cb84
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: McwvbLZZQmA-concept-heavy-spin-serve-disrupts-step-around-reviewed
-    evidence_type: explanation
-    excerpt: Serving heavy spin can make step-around footwork awkward and trap the server in a jammed position.
-    reason: Explicitly says heavy spin makes step-around impossible or jammed.
-    confidence: 0.92
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: McwvbLZZQmA
-      start_ms: 72500
-      end_ms: 80633
-      url: https://www.youtube.com/watch?v=McwvbLZZQmA&t=72s
-      segment_ids:
-        - McwvbLZZQmA:00015
-        - McwvbLZZQmA:00016
+- id: McwvbLZZQmA-concept-heavy-spin-serve-disrupts-step-around-reviewed
+  evidence_type: explanation
+  excerpt: Serving heavy spin can make step-around footwork awkward and trap the server in a jammed position.
+  reason: Explicitly says heavy spin makes step-around impossible or jammed.
+  confidence: 0.92
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: McwvbLZZQmA
+    start_ms: 72500
+    end_ms: 80633
+    url: https://www.youtube.com/watch?v=McwvbLZZQmA&t=72s
+    segment_ids:
+    - McwvbLZZQmA:00015
+    - McwvbLZZQmA:00016
+- id: McwvbLZZQmA-concept-heavy-spin-serve-disrupts-step-around-codex-reviewed
+  evidence_type: explanation
+  excerpt: Amateur players often serve with heavy spin, only to get caught by their own spin and jammed when they try to step around.
+  reason: A player serving with heavy spin can get caught by their own spin and become jammed when trying to step around.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: McwvbLZZQmA
+    start_ms: 72500
+    end_ms: 80633
+    url: https://www.youtube.com/watch?v=McwvbLZZQmA&t=72s
+    segment_ids:
+    - McwvbLZZQmA:00015
+    - McwvbLZZQmA:00016

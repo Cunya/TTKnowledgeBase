@@ -1,113 +1,122 @@
 id: concept-delay-gripping-until-after-contact
 slug: delay-gripping-until-after-contact
-label: Delay gripping until after contact
+label: Grip firmly at contact on the flick
 aliases:
-  - do not grip early
-  - grip at the end of the motion
-short_definition: Keeping the hand relaxed through the swing and only tightening after friction/contact so the stroke stays fast and stable.
+- grip firmly when brushing the ball
+- gripping action at contact
+short_definition: For the flick, grip the racket firmly the instant you brush the ball; squeezing only at the very end is too late.
 evidence_summary: >-
-  Delay gripping until after contact brings together several connected ideas. Gripping early makes
-  the stroke stiff with no acceleration, and that you should only grip at the end of the motion
-  after the friction. To grip tightly only at the very end and not at contact. Early tension and
-  early gripping with stiff, poor strokes and instructs a relaxed backswing with contact-time
-  acceleration. Gripping at contact is the wrong idea and that gripping happens after the brush.
-  Late gripping as the reason the flick fails and repeatedly says the grip must occur at the
-  instant of brushing, not after the forearm has finished moving. Together, these principles show
-  how the topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:50cdd44f51ba12bd6d6f727806241bf50f3a12af2e4eb70af9aaed4cc8dfc87d"
-evidence_summary_generator: "deterministic"
+  For a flick, grip the racket firmly as you brush the ball. Squeezing only at the very end is too late and will send the ball into the net.
 concept_type: fundamentals
 facets:
   category:
-    - fundamentals
-    - stroke
-  level:
-    - intermediate
-difficulty: intermediate
+  - fundamentals
+  - stroke
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 7550c1bb3cdc7264426277ca87b616e8486f0ba08c25259fb0cbff2e6d23e3dc
-  prompt_version: candidate-review-v1
+  input_hash: sha256:a19e92a4b23d8a48e1c83c590f881ea3a0da4c6f718817aae5b97550e98b403b
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: QYNr9YELOSs-concept-delay-grip-until-after-contact-reviewed
-    evidence_type: explanation
-    excerpt: Keeping the hand relaxed through the swing and only tightening after friction/contact so the stroke stays fast and stable.
-    reason: The speaker states that gripping early makes the stroke stiff with no acceleration, and that you should only grip at the end of the motion after the friction.
-    confidence: 0.91
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: QYNr9YELOSs
-      start_ms: 37920
-      end_ms: 57360
-      url: https://www.youtube.com/watch?v=QYNr9YELOSs&t=37s
-      segment_ids:
-        - QYNr9YELOSs:00006
-        - QYNr9YELOSs:00007
-        - QYNr9YELOSs:00008
-        - QYNr9YELOSs:00009
-  - id: slH2CHDYasA-concept-delay-gripping-until-after-contact-reviewed
-    evidence_type: correction
-    excerpt: Keeping the grip relaxed through contact and only tightening at the end of the swing to preserve speed and friction.
-    reason: The speaker explicitly says to grip tightly only at the very end and not at contact.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: slH2CHDYasA
-      start_ms: 542700
-      end_ms: 570200
-      url: https://www.youtube.com/watch?v=slH2CHDYasA&t=542s
-      segment_ids:
-        - slH2CHDYasA:00131
-        - slH2CHDYasA:00136
-  - id: r75F4gsFaoQ-concept-delay-gripping-until-after-contact-reviewed
-    evidence_type: definition
-    excerpt: Keep the hand relaxed during the backswing and only increase grip or tension at contact or after contact, rather than gripping early.
-    reason: The speaker explicitly links early tension and early gripping with stiff, poor strokes and instructs a relaxed backswing with contact-time acceleration.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: r75F4gsFaoQ
-      start_ms: 501000
-      end_ms: 529233
-      url: https://www.youtube.com/watch?v=r75F4gsFaoQ&t=501s
-      segment_ids:
-        - r75F4gsFaoQ:00100
-        - r75F4gsFaoQ:00104
-        - r75F4gsFaoQ:00105
-  - id: 4oXvbNfXK8U-concept-delay-gripping-until-after-contact-reviewed
-    evidence_type: definition
-    excerpt: Keeping the hand relaxed through contact and tightening the grip only after the brush is completed to stabilize the stroke.
-    reason: The speaker says gripping at contact is the wrong idea and that gripping happens after the brush.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 4oXvbNfXK8U
-      start_ms: 548933
-      end_ms: 572300
-      url: https://www.youtube.com/watch?v=4oXvbNfXK8U&t=548s
-      segment_ids:
-        - 4oXvbNfXK8U:00106
-        - 4oXvbNfXK8U:00109
-        - 4oXvbNfXK8U:00111
-  - id: cSDOaQqEtTQ-concept-delay-gripping-until-after-contact-reviewed
-    evidence_type: mistake
-    excerpt: Do not wait until the end of the swing to tighten the grip; the grip action must happen at impact to create braking and acceleration.
-    reason: The speaker identifies late gripping as the reason the flick fails and repeatedly says the grip must occur at the instant of brushing, not after the forearm has finished moving.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: cSDOaQqEtTQ
-      start_ms: 810033
-      end_ms: 830266
-      url: https://www.youtube.com/watch?v=cSDOaQqEtTQ&t=810s
-      segment_ids:
-        - cSDOaQqEtTQ:00167
-        - cSDOaQqEtTQ:00168
-        - cSDOaQqEtTQ:00170
+- id: QYNr9YELOSs-concept-delay-grip-until-after-contact-reviewed
+  evidence_type: explanation
+  excerpt: Keeping the hand relaxed through the swing and only tightening after friction/contact so the stroke stays fast and stable.
+  reason: The speaker states that gripping early makes the stroke stiff with no acceleration, and that you should only grip at the end of the motion after the friction.
+  confidence: 0.91
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: QYNr9YELOSs
+    start_ms: 37920
+    end_ms: 57360
+    url: https://www.youtube.com/watch?v=QYNr9YELOSs&t=37s
+    segment_ids:
+    - QYNr9YELOSs:00006
+    - QYNr9YELOSs:00007
+    - QYNr9YELOSs:00008
+    - QYNr9YELOSs:00009
+- id: slH2CHDYasA-concept-delay-gripping-until-after-contact-reviewed
+  evidence_type: correction
+  excerpt: Keeping the grip relaxed through contact and only tightening at the end of the swing to preserve speed and friction.
+  reason: The speaker explicitly says to grip tightly only at the very end and not at contact.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: slH2CHDYasA
+    start_ms: 542700
+    end_ms: 570200
+    url: https://www.youtube.com/watch?v=slH2CHDYasA&t=542s
+    segment_ids:
+    - slH2CHDYasA:00131
+    - slH2CHDYasA:00136
+- id: r75F4gsFaoQ-concept-delay-gripping-until-after-contact-reviewed
+  evidence_type: definition
+  excerpt: Keep the hand relaxed during the backswing and only increase grip or tension at contact or after contact, rather than gripping early.
+  reason: The speaker explicitly links early tension and early gripping with stiff, poor strokes and instructs a relaxed backswing with contact-time acceleration.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: r75F4gsFaoQ
+    start_ms: 501000
+    end_ms: 529233
+    url: https://www.youtube.com/watch?v=r75F4gsFaoQ&t=501s
+    segment_ids:
+    - r75F4gsFaoQ:00100
+    - r75F4gsFaoQ:00104
+    - r75F4gsFaoQ:00105
+- id: 4oXvbNfXK8U-concept-delay-gripping-until-after-contact-reviewed
+  evidence_type: definition
+  excerpt: Keeping the hand relaxed through contact and tightening the grip only after the brush is completed to stabilize the stroke.
+  reason: The speaker says gripping at contact is the wrong idea and that gripping happens after the brush.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 4oXvbNfXK8U
+    start_ms: 548933
+    end_ms: 572300
+    url: https://www.youtube.com/watch?v=4oXvbNfXK8U&t=548s
+    segment_ids:
+    - 4oXvbNfXK8U:00106
+    - 4oXvbNfXK8U:00109
+    - 4oXvbNfXK8U:00111
+- id: cSDOaQqEtTQ-concept-delay-gripping-until-after-contact-reviewed
+  evidence_type: mistake
+  excerpt: Do not wait until the end of the swing to tighten the grip; the grip action must happen at impact to create braking and acceleration.
+  reason: The speaker identifies late gripping as the reason the flick fails and repeatedly says the grip must occur at the instant of brushing, not after the forearm has finished moving.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: cSDOaQqEtTQ
+    start_ms: 810033
+    end_ms: 830266
+    url: https://www.youtube.com/watch?v=cSDOaQqEtTQ&t=810s
+    segment_ids:
+    - cSDOaQqEtTQ:00167
+    - cSDOaQqEtTQ:00168
+    - cSDOaQqEtTQ:00170
+- id: cSDOaQqEtTQ-concept-delay-gripping-until-after-contact-codex-reviewed
+  evidence_type: mistake
+  excerpt: For a flick, grip firmly as you brush the ball; squeezing only at the end of the swing is too late.
+  reason: For a flick, grip firmly as you brush the ball. If you wait until the end of the swing to squeeze, the ball will hit the net.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: cSDOaQqEtTQ
+    start_ms: 810033
+    end_ms: 830266
+    url: https://www.youtube.com/watch?v=cSDOaQqEtTQ&t=810s
+    segment_ids:
+    - cSDOaQqEtTQ:00167
+    - cSDOaQqEtTQ:00168
+    - cSDOaQqEtTQ:00169
+    - cSDOaQqEtTQ:00170

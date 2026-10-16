@@ -64,6 +64,14 @@ class TranscriptTrack(BaseModel):
     retrieved_at: datetime = Field(default_factory=lambda: datetime.now(UTC))
     segments: list[Segment]
 
+    @model_validator(mode="before")
+    @classmethod
+    def legacy_provider_origin(cls, value):
+        if isinstance(value, dict) and "transcript_origin" not in value and value.get("acquisition_method") == "youtube-transcript-api":
+            if isinstance(value.get("is_generated"), bool):
+                return {**value, "transcript_origin": "youtube_generated" if value["is_generated"] else "youtube_manual"}
+        return value
+
 
 class Video(BaseModel):
     id: str
@@ -137,10 +145,53 @@ class ConceptCandidate(StrictModel):
     relations: list[RelationCandidate]
     uncertainty: list[str]
 
+    @model_validator(mode="after")
+    def resolution_matches_target(self) -> ConceptCandidate:
+        if self.resolution == "match" and not self.matched_concept_id:
+            raise ValueError("match resolution requires matched_concept_id")
+        if self.resolution != "match" and self.matched_concept_id is not None:
+            raise ValueError("only match resolution may provide matched_concept_id")
+        return self
+
 
 class ExtractionResponse(StrictModel):
     concepts: list[ConceptCandidate]
     batch_notes: list[str]
+
+
+class CandidateAdjudicationResponse(StrictModel):
+    """A Codex semantic decision scoped to one explicit transcript span."""
+
+    decision: Literal["accept_existing", "create_new", "reject", "defer"]
+    canonical_concept_id: str | None
+    canonical_label: str | None
+    definition: str | None
+    concept_type: str | None
+    facets: list[FacetCandidate]
+    evidence_type: EvidenceType | None
+    segment_ids: list[str]
+    excerpt: str | None = Field(max_length=420)
+    reason: str
+    confidence: float = Field(ge=0, le=1)
+    uncertainty: list[str]
+
+    @model_validator(mode="after")
+    def decision_fields_are_consistent(self) -> CandidateAdjudicationResponse:
+        if self.decision == "accept_existing":
+            if not self.canonical_concept_id:
+                raise ValueError("accept_existing requires canonical_concept_id")
+        elif self.canonical_concept_id is not None:
+            raise ValueError("only accept_existing may provide canonical_concept_id")
+        if self.decision == "create_new" and not (
+            self.canonical_label and self.definition and self.concept_type
+        ):
+            raise ValueError("create_new requires canonical label, definition, and concept type")
+        if self.decision in {"accept_existing", "create_new"}:
+            if not self.segment_ids or not self.evidence_type or not self.excerpt:
+                raise ValueError("accepted decisions require evidence fields and segment IDs")
+        elif self.segment_ids:
+            raise ValueError("reject/defer decisions cannot cite a publication span")
+        return self
 
 
 class ExcerptRewriteResponse(StrictModel):

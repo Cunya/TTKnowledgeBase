@@ -5,38 +5,24 @@ aliases:
   - acceleration, not brute force
   - accelerate, don't force it
   - relaxed acceleration
-short_definition: Generating serve spin by accelerating the motion while staying relaxed instead of muscling the ball with stiffness or brute force.
+short_definition: Generate spin by accelerating the motion while staying relaxed instead of adding muscular force.
 evidence_summary: >-
-  Acceleration without force brings together several connected ideas. A useful contrast is between
-  acceleration and brute force and repeatedly says the serve should be relaxed and accelerated,
-  not forced. A useful contrast is between backswing power and late acceleration and repeatedly
-  emphasizes accelerating through contact instead of just touching the ball. The loop should feel
-  effortless, clean, and friction-based, with the remaining swing becoming effective acceleration
-  instead of wasted early effort. Together, these principles show how the topic is applied in
-  practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:37dfcfccc67afcb341c961b13ae0054fba963e41a631e5154d5e2ed9f0c83c7d"
-evidence_summary_generator: "deterministic"
+  Generate spin through faster motion while staying relaxed. Maintain constant pressure rather than increasing force, and complete the brushing action with acceleration. The examples contrast faster movement with greater muscular force.
 concept_type: fundamentals
 facets:
   category:
     - fundamentals
   side:
     - neutral
-  spin:
-    - sidespin
-    - backspin
-  distance:
-    - close
-  level:
-    - beginner
-    - intermediate
-difficulty: beginner
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: ed1a1e8bfafa03b4ea1e6b20769a4a87c6b6812212307d22dff493b9b5715072
-  prompt_version: candidate-review-v1
+  input_hash: sha256:1daafa8a83af8268c9c3f8ab0be7cf0821081d7563b7a578788736981ebd3835
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: evEaxXmwJ2E-candidate-acceleration-without-force-reviewed
     evidence_type: definition
@@ -44,7 +30,7 @@ evidence:
     reason: The speaker directly contrasts acceleration with brute force and repeatedly says the serve should be relaxed and accelerated, not forced.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: evEaxXmwJ2E
       start_ms: 175066
@@ -59,7 +45,7 @@ evidence:
     reason: The speaker contrasts backswing power with late acceleration and repeatedly emphasizes accelerating through contact instead of just touching the ball.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: itzB36f9_R0
       start_ms: 518033
@@ -76,7 +62,7 @@ evidence:
     reason: The speaker says the loop should feel effortless, clean, and friction-based, with the remaining swing becoming effective acceleration instead of wasted early effort.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: IXRPhM4Pjzc
       start_ms: 342833
@@ -85,3 +71,63 @@ evidence:
       segment_ids:
         - IXRPhM4Pjzc:00065
         - IXRPhM4Pjzc:00066
+  - id: CD09LNI2fYk-concept-fingertip-frequency-over-force-codex-reviewed
+    evidence_type: explanation
+    excerpt: Maintain constant pressure, accelerate through the motion, and add frequency rather than force; fast frequency produces more spin.
+    reason: 'Maintain constant pressure, accelerate through the motion, and add frequency rather than force; fast frequency produces more spin.'
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: CD09LNI2fYk
+      start_ms: 387919
+      end_ms: 416680
+      url: https://www.youtube.com/watch?v=CD09LNI2fYk&t=387s
+      segment_ids:
+        - CD09LNI2fYk:00150
+        - CD09LNI2fYk:00151
+        - CD09LNI2fYk:00152
+        - CD09LNI2fYk:00153
+        - CD09LNI2fYk:00154
+        - CD09LNI2fYk:00155
+        - CD09LNI2fYk:00156
+        - CD09LNI2fYk:00157
+        - CD09LNI2fYk:00158
+        - CD09LNI2fYk:00159
+  - id: evEaxXmwJ2E-candidate-acceleration-without-force-codex-reviewed
+    evidence_type: explanation
+    excerpt: Stay relaxed and increase the motion’s speed to generate more spin; use a relaxed arm rather than forcing the shot.
+    reason: Stay relaxed and increase the motion’s speed to generate more spin; use a relaxed arm rather than forcing the shot.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: evEaxXmwJ2E
+      start_ms: 253966
+      end_ms: 274133
+      url: https://www.youtube.com/watch?v=evEaxXmwJ2E&t=253s
+      segment_ids:
+        - evEaxXmwJ2E:00053
+        - evEaxXmwJ2E:00054
+        - evEaxXmwJ2E:00055
+        - evEaxXmwJ2E:00056
+        - evEaxXmwJ2E:00057
+  - id: itzB36f9_R0-concept-acceleration-without-force-codex-reviewed
+    evidence_type: explanation
+    excerpt: Against long pips, accelerate through the ball and generate power through contact rather than from the backswing.
+    reason: This contiguous 26.4-second span directly explains accelerating through contact, contrasting it with generating power from a backswing.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: unreviewed
+    source:
+      video_id: itzB36f9_R0
+      start_ms: 485666
+      end_ms: 512733
+      url: https://www.youtube.com/watch?v=itzB36f9_R0&t=485s
+      segment_ids:
+        - itzB36f9_R0:00091
+        - itzB36f9_R0:00092
+        - itzB36f9_R0:00093
+        - itzB36f9_R0:00094
+        - itzB36f9_R0:00095
+        - itzB36f9_R0:00096

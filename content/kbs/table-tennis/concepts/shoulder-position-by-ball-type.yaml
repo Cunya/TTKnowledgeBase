@@ -1,0 +1,49 @@
+id: concept-shoulder-position-by-ball-type
+slug: shoulder-position-by-ball-type
+label: Shoulder position by ball type
+aliases: []
+short_definition: Use a forward left shoulder for the contrasted shot, but keep the shoulders parallel for backhand and middle balls.
+evidence_summary: >-
+  Use a forward left shoulder for the contrasted shot, but keep the shoulders parallel for
+  backhand and middle balls.
+evidence_summary_source_hash: "sha256:3a83b8d08aaa41d5b3d43e15803d274fbe50c516ec9abf4d52166323e39f3e7e"
+evidence_summary_generator: "deterministic"
+concept_type: fundamentals
+facets:
+  category:
+    - fundamentals
+  side:
+    - backhand
+    - neutral
+  distance:
+    - close
+    - mid
+  level:
+    - beginner
+difficulty:
+review_status: approved
+generated_by:
+  processor: codex_semantic_adjudication
+  version: 1.0.0
+  input_hash: sha256:824efbaf357cdbecde7209fd48c3ea2fbab2d2e60cc6ba70bd912f752004823c
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
+evidence:
+  - id: 2LkVpDM69vo-concept-shoulder-position-by-ball-type-codex-reviewed
+    evidence_type: explanation
+    excerpt: A forward left shoulder is key for that shot. For backhand and middle balls, keep your shoulders parallel.
+    reason: This contiguous 16.1-second span directly explains the shoulder-orientation distinction for backhand and middle balls. It is a distinct durable body-orientation topic, not a duplicate of existing technique-selection or stance concepts.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 2LkVpDM69vo
+      start_ms: 296066
+      end_ms: 312166
+      url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=296s
+      segment_ids:
+        - 2LkVpDM69vo:00056
+        - 2LkVpDM69vo:00057
+        - 2LkVpDM69vo:00058

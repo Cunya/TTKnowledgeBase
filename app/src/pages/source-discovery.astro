@@ -68,13 +68,13 @@ const recommendations = [
 
   <section class="dashboard-section">
     <div class="section-kicker">Accepted, not activated</div>
-    <h2>Sources deferred for future processing</h2>
+    <h2>Sources waiting for future processing</h2>
     <p>These sources were accepted as candidates but remain disabled. They will not be discovered, ingested, or processed until explicitly activated in the source configuration.</p>
     <div class="dashboard-index">
       {acceptedCandidates.map((source, index) => <article class="dashboard-index-row">
         <span class="dashboard-index-number">A{index + 1}</span>
         <span class="dashboard-index-copy"><strong>{source.name}</strong><small>Accepted source candidate · processing disabled</small></span>
-        <span class="dashboard-index-metric">Deferred · {source.discovered} discovered · {source.ingested} ingested</span>
+        <span class="dashboard-index-metric">Waiting · {source.discovered} discovered · {source.ingested} ingested</span>
         <a href={source.url} target="_blank" rel="noreferrer">Inspect playlists â†—</a>
       </article>)}
     </div>

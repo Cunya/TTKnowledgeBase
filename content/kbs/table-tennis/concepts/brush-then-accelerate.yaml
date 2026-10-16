@@ -2,534 +2,585 @@ id: concept-brush-then-accelerate
 slug: brush-then-accelerate
 label: Brush then accelerate
 aliases:
-  - first brush, then accelerate
-  - brush and then finish with acceleration
-short_definition: For looping, the stroke should brush the ball first and then accelerate through the contact.
+- first brush, then accelerate
+- brush and then finish with acceleration
+short_definition: Brush the ball, then continue driving forward through and after contact.
 evidence_summary: >-
-  Brush then accelerate brings together several connected ideas. The sequence: brush the ball,
-  then accelerate. Brushing is the second key element and flat hitting backspin is not acceptable.
-  Solid brushing contact led by the forearm and moving forward while brushing, which matches
-  brush-then-accelerate mechanics. A useful contrast is between brushing for spin and later
-  acceleration and shows the relax-then-explode pattern. Brushing and hitting happen together,
-  then recommends mastering the brushing phase before adding power in the second half. The motion
-  into two parts: use fingers and wrist to create friction and a small lift, then let the arm
-  drive the ball. He explicitly names this a brush-hit contact. To first grip/brush the ball to
-  generate spin, then add a bit of forward impact, and finally create the arc by rolling the ball.
-  To brush forward while simultaneously driving forward, and that this combined action is the
-  essence of the loop. Additional points reinforce the same theme. Together, these principles show
-  how the topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:d65c87e5b60b91f1f7350916e0ca2b5fed3d63365642b32477360c896b1fe9ed"
-evidence_summary_generator: "deterministic"
+  Brush the ball, then continue driving forward through and after contact.
 concept_type: stroke
 facets:
   category:
-    - stroke
-  side:
-    - forehand
-  spin:
-    - topspin
-difficulty: intermediate
+  - stroke
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: e6b0507a413ccf5218556bb1de89a6f1e562c0001147e43d3c36e252ddaf48d2
-  prompt_version: candidate-review-v1
+  input_hash: sha256:6f34b530ef87b1c4c524174d2ca86e1e3eaf0c4e4aca15de2f26abf635e47749
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: I-luBOL9IxI-concept-brush-then-accelerate-reviewed
-    evidence_type: definition
-    excerpt: For looping, the stroke should brush the ball first and then accelerate through the contact.
-    reason: 'The speaker explicitly states the sequence: brush the ball, then accelerate.'
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: I-luBOL9IxI
-      start_ms: 570333
-      end_ms: 580733
-      url: https://www.youtube.com/watch?v=I-luBOL9IxI&t=570s
-      segment_ids:
-        - I-luBOL9IxI:00127
-        - I-luBOL9IxI:00128
-  - id: BnjNVl_gssU-concept-brush-then-accelerate-reviewed
-    evidence_type: definition
-    excerpt: A two-phase forehand loop sequence where the player first brushes or lifts the ball with spin, then drives forward with power.
-    reason: States the first phase is brushing the ball at contact and calls it crucial.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: BnjNVl_gssU
-      start_ms: 48400
-      end_ms: 57733
-      url: https://www.youtube.com/watch?v=BnjNVl_gssU&t=48s
-      segment_ids:
-        - BnjNVl_gssU:00009
-        - BnjNVl_gssU:00010
-  - id: w25weWSp_Zo-concept-brush-then-accelerate-reviewed
-    evidence_type: explanation
-    excerpt: Use a short brushing phase first to create spin, then accelerate or push forward to add speed and power.
-    reason: The speaker repeatedly frames the motion as brushing for spin first and then pushing/accelerating for speed.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: w25weWSp_Zo
-      start_ms: 284700
-      end_ms: 302633
-      url: https://www.youtube.com/watch?v=w25weWSp_Zo&t=284s
-      segment_ids:
-        - w25weWSp_Zo:00061
-        - w25weWSp_Zo:00062
-        - w25weWSp_Zo:00063
-        - w25weWSp_Zo:00064
-  - id: j4tQrFa7iSQ-concept-brush-then-accelerate-reviewed
-    evidence_type: explanation
-    excerpt: Create spin with a brief brushing contact, then add acceleration after the brush rather than pushing through the whole ball.
-    reason: The speaker repeatedly contrasts brushing with a later burst of acceleration and says spin creation is short and explosive.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: j4tQrFa7iSQ
-      start_ms: 636200
-      end_ms: 659866
-      url: https://www.youtube.com/watch?v=j4tQrFa7iSQ&t=636s
-      segment_ids:
-        - j4tQrFa7iSQ:00127
-        - j4tQrFa7iSQ:00130
-        - j4tQrFa7iSQ:00131
-  - id: Mo-eWN8_354-concept-brush-then-accelerate-reviewed
-    evidence_type: definition
-    excerpt: On half-high backspin balls, the contact should brush the ball first rather than hit flat, and power comes from a compact, controlled brushing action.
-    reason: The speaker says brushing is the second key element and flat hitting backspin is not acceptable.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: Mo-eWN8_354
-      start_ms: 62633
-      end_ms: 88833
-      url: https://www.youtube.com/watch?v=Mo-eWN8_354&t=62s
-      segment_ids:
-        - Mo-eWN8_354:00014
-        - Mo-eWN8_354:00018
-  - id: qsY3S06fjgA-concept-brush-then-accelerate-reviewed
-    evidence_type: definition
-    excerpt: Establish friction or contact first, then transition into forward acceleration rather than staying in a pure brushing motion.
-    reason: The speaker says excessive brushing is the problem and explicitly states the correct sequence is to establish friction, then drive forward.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: qsY3S06fjgA
-      start_ms: 109666
-      end_ms: 121800
-      url: https://www.youtube.com/watch?v=qsY3S06fjgA&t=109s
-      segment_ids:
-        - qsY3S06fjgA:00021
-        - qsY3S06fjgA:00022
-        - qsY3S06fjgA:00023
-  - id: Msruv1p5jp4-concept-brush-then-accelerate-reviewed
-    evidence_type: definition
-    excerpt: A serve action sequence where the player first brushes the ball to create spin, then sends or drives it forward to generate speed.
-    reason: Explicitly states the two-step sequence and its purpose for speed.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: Msruv1p5jp4
-      start_ms: 33
-      end_ms: 14833
-      url: https://www.youtube.com/watch?v=Msruv1p5jp4&t=0s
-      segment_ids:
-        - Msruv1p5jp4:00000
-        - Msruv1p5jp4:00001
-        - Msruv1p5jp4:00002
-  - id: hRHJawAZzNc-concept-brush-then-accelerate-reviewed
-    evidence_type: definition
-    excerpt: Create friction with brushing contact first, then add acceleration and power afterward.
-    reason: The speaker directly says looping is about friction first and power second, and later summarizes the stroke as 'first brush, then drive through.'
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: hRHJawAZzNc
-      start_ms: 471366
-      end_ms: 486466
-      url: https://www.youtube.com/watch?v=hRHJawAZzNc&t=471s
-      segment_ids:
-        - hRHJawAZzNc:00093
-        - hRHJawAZzNc:00094
-        - hRHJawAZzNc:00095
-  - id: xsJ6JJAeTVc-concept-brush-then-accelerate-reviewed
-    evidence_type: explanation
-    excerpt: Generate friction through a brushing action while still keeping the serve fast and forward-directed.
-    reason: The speaker says to add friction by brushing forward while keeping the racket closed, not merely hitting flat.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: xsJ6JJAeTVc
-      start_ms: 464800
-      end_ms: 494366
-      url: https://www.youtube.com/watch?v=xsJ6JJAeTVc&t=464s
-      segment_ids:
-        - xsJ6JJAeTVc:00093
-        - xsJ6JJAeTVc:00094
-        - xsJ6JJAeTVc:00097
-  - id: z8-8IXQ-GaU-concept-brush-then-accelerate-reviewed
-    evidence_type: explanation
-    excerpt: Using brushing contact first and then adding acceleration through the finish, rather than trying to force the ball early.
-    reason: The speaker emphasizes solid brushing contact led by the forearm and moving forward while brushing, which matches brush-then-accelerate mechanics.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: z8-8IXQ-GaU
-      start_ms: 492900
-      end_ms: 522166
-      url: https://www.youtube.com/watch?v=z8-8IXQ-GaU&t=492s
-      segment_ids:
-        - z8-8IXQ-GaU:00103
-        - z8-8IXQ-GaU:00105
-        - z8-8IXQ-GaU:00108
-        - z8-8IXQ-GaU:00109
-  - id: DfQ_yBSS_bk-concept-brush-then-accelerate-reviewed
-    evidence_type: explanation
-    excerpt: A stroke sequence where the player first makes a compact brushing contact, then drives forward afterward for additional quality and power.
-    reason: The speaker describes a short, explosive brush, then a later forward drive after the brush.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: DfQ_yBSS_bk
-      start_ms: 651000
-      end_ms: 679600
-      url: https://www.youtube.com/watch?v=DfQ_yBSS_bk&t=651s
-      segment_ids:
-        - DfQ_yBSS_bk:00131
-        - DfQ_yBSS_bk:00136
-  - id: pF8kIVSRExg-concept-brush-then-accelerate-reviewed
-    evidence_type: explanation
-    excerpt: Use brushing contact to create the ball's arc and spin rather than relying on a flat blocking or pushing action.
-    reason: The speaker explicitly says the solution is to counter with your own spin and that brushing the ball solves everything.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: pF8kIVSRExg
-      start_ms: 323100
-      end_ms: 336900
-      url: https://www.youtube.com/watch?v=pF8kIVSRExg&t=323s
-      segment_ids:
-        - pF8kIVSRExg:00065
-        - pF8kIVSRExg:00066
-        - pF8kIVSRExg:00067
-  - id: 5-fClb3FOp8-concept-brush-then-accelerate-reviewed
-    evidence_type: definition
-    excerpt: First make solid contact with the ball, then brush forward to generate spin.
-    reason: The speaker states that a good loop is not just brushing up, but engaging the ball and then brushing forward, and later says to make solid contact before brushing.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 5-fClb3FOp8
-      start_ms: 518233
-      end_ms: 534333
-      url: https://www.youtube.com/watch?v=5-fClb3FOp8&t=518s
-      segment_ids:
-        - 5-fClb3FOp8:00101
-        - 5-fClb3FOp8:00102
-  - id: AJeZkjOEJkk-concept-brush-then-accelerate-reviewed
-    evidence_type: explanation
-    excerpt: Use a brushing phase for spin and then accelerate through the ball to finish the stroke with power.
-    reason: Speaker explicitly contrasts brushing for spin with later acceleration and shows the relax-then-explode pattern.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: AJeZkjOEJkk
-      start_ms: 162633
-      end_ms: 183766
-      url: https://www.youtube.com/watch?v=AJeZkjOEJkk&t=162s
-      segment_ids:
-        - AJeZkjOEJkk:00036
-        - AJeZkjOEJkk:00040
-  - id: iXzVADGsLLU-cand-1-reviewed
-    evidence_type: explanation
-    excerpt: Use an initial brushing phase to create friction and a second forward acceleration phase to add speed and power.
-    reason: The speaker explicitly describes a two-stage motion where the first stage is for friction and the second stage is a forward acceleration.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: iXzVADGsLLU
-      start_ms: 213433
-      end_ms: 226333
-      url: https://www.youtube.com/watch?v=iXzVADGsLLU&t=213s
-      segment_ids:
-        - iXzVADGsLLU:00043
-        - iXzVADGsLLU:00044
-        - iXzVADGsLLU:00045
-  - id: 4hnrmSJ_Ayg-concept-brush-then-accelerate-reviewed
-    evidence_type: definition
-    excerpt: Generate spin by making light brushing contact first and then accelerating through or after contact rather than forcing the impact.
-    reason: The talk repeatedly frames spin generation as light brushing contact followed by acceleration, including the explicit phrasing 'brush, then accelerate' and 'first brush... then accelerate'.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 4hnrmSJ_Ayg
-      start_ms: 705633
-      end_ms: 731700
-      url: https://www.youtube.com/watch?v=4hnrmSJ_Ayg&t=705s
-      segment_ids:
-        - 4hnrmSJ_Ayg:00138
-        - 4hnrmSJ_Ayg:00139
-        - 4hnrmSJ_Ayg:00142
-        - 4hnrmSJ_Ayg:00143
-  - id: D596gPtN634-concept-brush-then-accelerate-reviewed
-    evidence_type: definition
-    excerpt: Make solid brushing contact first, then add forearm acceleration afterward.
-    reason: The speaker explicitly sequences the action as gripping/brushing first and accelerating afterward.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: D596gPtN634
-      start_ms: 63066
-      end_ms: 78666
-      url: https://www.youtube.com/watch?v=D596gPtN634&t=63s
-      segment_ids:
-        - D596gPtN634:00012
-        - D596gPtN634:00013
-  - id: Yf_uKs6cZ38-concept-brush-then-accelerate-reviewed
-    evidence_type: explanation
-    excerpt: 'Build the stroke in two phases: first create brushing contact and feel, then add acceleration and power afterward.'
-    reason: The speaker repeatedly says brushing and hitting happen together, then recommends mastering the brushing phase before adding power in the second half.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: Yf_uKs6cZ38
-      start_ms: 659966
-      end_ms: 676666
-      url: https://www.youtube.com/watch?v=Yf_uKs6cZ38&t=659s
-      segment_ids:
-        - Yf_uKs6cZ38:00135
-        - Yf_uKs6cZ38:00136
-        - Yf_uKs6cZ38:00137
-        - Yf_uKs6cZ38:00138
-  - id: fgtk9fxGTUw-concept-brush-then-accelerate-reviewed
-    evidence_type: definition
-    excerpt: A backspin loop should begin with brushing to lift or grip the ball, then transition into forward acceleration or drive.
-    reason: The speaker explicitly summarizes the method as brush first, then drive.
-    confidence: 0.88
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: fgtk9fxGTUw
-      start_ms: 436200
-      end_ms: 448500
-      url: https://www.youtube.com/watch?v=fgtk9fxGTUw&t=436s
-      segment_ids:
-        - fgtk9fxGTUw:00086
-        - fgtk9fxGTUw:00088
-  - id: 01-q1cswVVs-concept-brush-then-accelerate-reviewed
-    evidence_type: explanation
-    excerpt: Effective looping uses brushing contact as part of a forward-driving stroke, not a stationary brush in place.
-    reason: The speaker explicitly says the brush must happen while driving forward and that the motion should remain continuous through contact and after the brush.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 01-q1cswVVs
-      start_ms: 547733
-      end_ms: 576233
-      url: https://www.youtube.com/watch?v=01-q1cswVVs&t=547s
-      segment_ids:
-        - 01-q1cswVVs:00098
-        - 01-q1cswVVs:00101
-        - 01-q1cswVVs:00103
-  - id: I3_-LFqMWgA-concept-brush-then-accelerate-reviewed
-    evidence_type: explanation
-    excerpt: Sequence the stroke so brushing comes first, then forward drive and follow-through are added after the brushing action is established.
-    reason: 'The speaker explicitly lays out a three-step progression: brush first, then add forward drive, then follow-through, and later restates that moving forward and brushing should happen simultaneously.'
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: I3_-LFqMWgA
-      start_ms: 126333
-      end_ms: 145466
-      url: https://www.youtube.com/watch?v=I3_-LFqMWgA&t=126s
-      segment_ids:
-        - I3_-LFqMWgA:00022
-        - I3_-LFqMWgA:00023
-        - I3_-LFqMWgA:00024
-        - I3_-LFqMWgA:00025
-  - id: QRHidBrS09M-concept-brush-then-accelerate-reviewed
-    evidence_type: explanation
-    excerpt: First create friction with the fingers and wrist, then add arm power through the ball.
-    reason: 'The speaker breaks the motion into two parts: use fingers and wrist to create friction and a small lift, then let the arm drive the ball. He explicitly names this a brush-hit contact.'
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: QRHidBrS09M
-      start_ms: 495566
-      end_ms: 524633
-      url: https://www.youtube.com/watch?v=QRHidBrS09M&t=495s
-      segment_ids:
-        - QRHidBrS09M:00079
-        - QRHidBrS09M:00080
-        - QRHidBrS09M:00082
-        - QRHidBrS09M:00083
-  - id: 2LkVpDM69vo-concept-brush-for-friction-on-loop-reviewed
-    evidence_type: explanation
-    excerpt: Use brushing contact to create friction, spin, and control when looping or receiving heavy spin.
-    reason: The speaker explicitly identifies brushing contact as the key to friction, spin, and control, and links it to a thinner contact on the ball.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 2LkVpDM69vo
-      start_ms: 583233
-      end_ms: 606833
-      url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=583s
-      segment_ids:
-        - 2LkVpDM69vo:00113
-        - 2LkVpDM69vo:00114
-        - 2LkVpDM69vo:00115
-  - id: 9EcoI6PnOzE-concept-brush-then-accelerate-reviewed
-    evidence_type: explanation
-    excerpt: Execute the brushing/gripping phase first, then accelerate through the shot afterward.
-    reason: The speaker explicitly contrasts the brushing phase with the acceleration phase and says to adjust the ratio by incoming ball quality.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 9EcoI6PnOzE
-      start_ms: 148766
-      end_ms: 159466
-      url: https://www.youtube.com/watch?v=9EcoI6PnOzE&t=148s
-      segment_ids:
-        - 9EcoI6PnOzE:00030
-        - 9EcoI6PnOzE:00031
-  - id: KNhwuuZ6Vpo-concept-brush-then-accelerate-reviewed
-    evidence_type: explanation
-    excerpt: Make the brushing contact first, then add forward push or follow-through afterward.
-    reason: The speaker states that for a long serve you brush first, then push, and summarizes it as brush, then push.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: KNhwuuZ6Vpo
-      start_ms: 349400
-      end_ms: 377266
-      url: https://www.youtube.com/watch?v=KNhwuuZ6Vpo&t=349s
-      segment_ids:
-        - KNhwuuZ6Vpo:00068
-        - KNhwuuZ6Vpo:00073
-  - id: Pym9pNWaowA-concept-brush-then-accelerate-reviewed
-    evidence_type: definition
-    excerpt: Use a thin brushing contact first, then accelerate through the ball after contact begins.
-    reason: The speaker explicitly says the initial contact should be soft, then you accelerate, and that thinner brushing yields more spin.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: Pym9pNWaowA
-      start_ms: 393400
-      end_ms: 407800
-      url: https://www.youtube.com/watch?v=Pym9pNWaowA&t=393s
-      segment_ids:
-        - Pym9pNWaowA:00063
-        - Pym9pNWaowA:00064
-  - id: Xj55m2HY2YY-concept-brush-then-accelerate-reviewed
-    evidence_type: explanation
-    excerpt: Generate spin first through brushing contact, then add forward acceleration or impact after the brush is established.
-    reason: The speaker says to first grip/brush the ball to generate spin, then add a bit of forward impact, and finally create the arc by rolling the ball.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: Xj55m2HY2YY
-      start_ms: 643566
-      end_ms: 663500
-      url: https://www.youtube.com/watch?v=Xj55m2HY2YY&t=643s
-      segment_ids:
-        - Xj55m2HY2YY:00128
-        - Xj55m2HY2YY:00129
-        - Xj55m2HY2YY:00131
-  - id: 3wQrxObpgxM-concept-brush-then-accelerate-reviewed
-    evidence_type: definition
-    excerpt: Use brushing contact to grip the ball and create topspin, rather than a direct hit, with acceleration coming through the brush.
-    reason: The speaker identifies brushing as the third key difference from drive and says it creates heavy topspin and a diving trajectory.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 3wQrxObpgxM
-      start_ms: 155666
-      end_ms: 175233
-      url: https://www.youtube.com/watch?v=3wQrxObpgxM&t=155s
-      segment_ids:
-        - 3wQrxObpgxM:00026
-        - 3wQrxObpgxM:00104
-  - id: rLrnvlDBmTs-concept-brush-then-accelerate-reviewed
-    evidence_type: explanation
-    excerpt: A contact pattern where the racket first brushes the ball to create friction and spin, then accelerates through the shot to finish the loop.
-    reason: The transcript says friction completes the arc and that the rapid acceleration of the racket head brushes the ball to impart topspin against backspin.
-    confidence: 0.87
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: rLrnvlDBmTs
-      start_ms: 748366
-      end_ms: 759600
-      url: https://www.youtube.com/watch?v=rLrnvlDBmTs&t=748s
-      segment_ids:
-        - rLrnvlDBmTs:00132
-  - id: ec-XHw2Locs-concept-brush-then-accelerate-reviewed
-    evidence_type: explanation
-    excerpt: On contact, maintain friction and then continue with acceleration rather than slowing down or stopping the stroke.
-    reason: The speaker says not to soften on contact, to keep friction speed from dropping, and to actively accelerate the forearm after contact.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: ec-XHw2Locs
-      start_ms: 462400
-      end_ms: 489160
-      url: https://www.youtube.com/watch?v=ec-XHw2Locs&t=462s
-      segment_ids:
-        - ec-XHw2Locs:00184
-        - ec-XHw2Locs:00185
-        - ec-XHw2Locs:00186
-        - ec-XHw2Locs:00187
-        - ec-XHw2Locs:00188
-        - ec-XHw2Locs:00189
-        - ec-XHw2Locs:00190
-        - ec-XHw2Locs:00191
-        - ec-XHw2Locs:00192
-        - ec-XHw2Locs:00193
-  - id: IYIjNtXE3CE-concept-brush-then-accelerate-reviewed
-    evidence_type: definition
-    excerpt: A stroke principle where the player combines brushing with forward drive, rather than separating spin and power into different motions.
-    reason: The speaker explicitly says to brush forward while simultaneously driving forward, and that this combined action is the essence of the loop.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: IYIjNtXE3CE
-      start_ms: 479720
-      end_ms: 502400
-      url: https://www.youtube.com/watch?v=IYIjNtXE3CE&t=479s
-      segment_ids:
-        - IYIjNtXE3CE:00214
-        - IYIjNtXE3CE:00215
-        - IYIjNtXE3CE:00216
-        - IYIjNtXE3CE:00221
-        - IYIjNtXE3CE:00222
+- id: I-luBOL9IxI-concept-brush-then-accelerate-reviewed
+  evidence_type: definition
+  excerpt: For looping, the stroke should brush the ball first and then accelerate through the contact.
+  reason: 'The speaker explicitly states the sequence: brush the ball, then accelerate.'
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: I-luBOL9IxI
+    start_ms: 570333
+    end_ms: 580733
+    url: https://www.youtube.com/watch?v=I-luBOL9IxI&t=570s
+    segment_ids:
+    - I-luBOL9IxI:00127
+    - I-luBOL9IxI:00128
+- id: BnjNVl_gssU-concept-brush-then-accelerate-reviewed
+  evidence_type: definition
+  excerpt: A two-phase forehand loop sequence where the player first brushes or lifts the ball with spin, then drives forward with power.
+  reason: States the first phase is brushing the ball at contact and calls it crucial.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: BnjNVl_gssU
+    start_ms: 48400
+    end_ms: 57733
+    url: https://www.youtube.com/watch?v=BnjNVl_gssU&t=48s
+    segment_ids:
+    - BnjNVl_gssU:00009
+    - BnjNVl_gssU:00010
+- id: w25weWSp_Zo-concept-brush-then-accelerate-reviewed
+  evidence_type: explanation
+  excerpt: Use a short brushing phase first to create spin, then accelerate or push forward to add speed and power.
+  reason: The speaker repeatedly frames the motion as brushing for spin first and then pushing/accelerating for speed.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: w25weWSp_Zo
+    start_ms: 284700
+    end_ms: 302633
+    url: https://www.youtube.com/watch?v=w25weWSp_Zo&t=284s
+    segment_ids:
+    - w25weWSp_Zo:00061
+    - w25weWSp_Zo:00062
+    - w25weWSp_Zo:00063
+    - w25weWSp_Zo:00064
+- id: j4tQrFa7iSQ-concept-brush-then-accelerate-reviewed
+  evidence_type: explanation
+  excerpt: Create spin with a brief brushing contact, then add acceleration after the brush rather than pushing through the whole ball.
+  reason: The speaker repeatedly contrasts brushing with a later burst of acceleration and says spin creation is short and explosive.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: j4tQrFa7iSQ
+    start_ms: 636200
+    end_ms: 659866
+    url: https://www.youtube.com/watch?v=j4tQrFa7iSQ&t=636s
+    segment_ids:
+    - j4tQrFa7iSQ:00127
+    - j4tQrFa7iSQ:00130
+    - j4tQrFa7iSQ:00131
+- id: Mo-eWN8_354-concept-brush-then-accelerate-reviewed
+  evidence_type: definition
+  excerpt: On half-high backspin balls, the contact should brush the ball first rather than hit flat, and power comes from a compact, controlled brushing action.
+  reason: The speaker says brushing is the second key element and flat hitting backspin is not acceptable.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: Mo-eWN8_354
+    start_ms: 62633
+    end_ms: 88833
+    url: https://www.youtube.com/watch?v=Mo-eWN8_354&t=62s
+    segment_ids:
+    - Mo-eWN8_354:00014
+    - Mo-eWN8_354:00018
+- id: qsY3S06fjgA-concept-brush-then-accelerate-reviewed
+  evidence_type: definition
+  excerpt: Establish friction or contact first, then transition into forward acceleration rather than staying in a pure brushing motion.
+  reason: The speaker says excessive brushing is the problem and explicitly states the correct sequence is to establish friction, then drive forward.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: qsY3S06fjgA
+    start_ms: 109666
+    end_ms: 121800
+    url: https://www.youtube.com/watch?v=qsY3S06fjgA&t=109s
+    segment_ids:
+    - qsY3S06fjgA:00021
+    - qsY3S06fjgA:00022
+    - qsY3S06fjgA:00023
+- id: Msruv1p5jp4-concept-brush-then-accelerate-reviewed
+  evidence_type: definition
+  excerpt: A serve action sequence where the player first brushes the ball to create spin, then sends or drives it forward to generate speed.
+  reason: Explicitly states the two-step sequence and its purpose for speed.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Msruv1p5jp4
+    start_ms: 33
+    end_ms: 14833
+    url: https://www.youtube.com/watch?v=Msruv1p5jp4&t=0s
+    segment_ids:
+    - Msruv1p5jp4:00000
+    - Msruv1p5jp4:00001
+    - Msruv1p5jp4:00002
+- id: hRHJawAZzNc-concept-brush-then-accelerate-reviewed
+  evidence_type: definition
+  excerpt: Create friction with brushing contact first, then add acceleration and power afterward.
+  reason: The speaker directly says looping is about friction first and power second, and later summarizes the stroke as 'first brush, then drive through.'
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: hRHJawAZzNc
+    start_ms: 471366
+    end_ms: 486466
+    url: https://www.youtube.com/watch?v=hRHJawAZzNc&t=471s
+    segment_ids:
+    - hRHJawAZzNc:00093
+    - hRHJawAZzNc:00094
+    - hRHJawAZzNc:00095
+- id: xsJ6JJAeTVc-concept-brush-then-accelerate-reviewed
+  evidence_type: explanation
+  excerpt: Generate friction through a brushing action while still keeping the serve fast and forward-directed.
+  reason: The speaker says to add friction by brushing forward while keeping the racket closed, not merely hitting flat.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: xsJ6JJAeTVc
+    start_ms: 464800
+    end_ms: 494366
+    url: https://www.youtube.com/watch?v=xsJ6JJAeTVc&t=464s
+    segment_ids:
+    - xsJ6JJAeTVc:00093
+    - xsJ6JJAeTVc:00094
+    - xsJ6JJAeTVc:00097
+- id: z8-8IXQ-GaU-concept-brush-then-accelerate-reviewed
+  evidence_type: explanation
+  excerpt: Using brushing contact first and then adding acceleration through the finish, rather than trying to force the ball early.
+  reason: The speaker emphasizes solid brushing contact led by the forearm and moving forward while brushing, which matches brush-then-accelerate mechanics.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: z8-8IXQ-GaU
+    start_ms: 492900
+    end_ms: 522166
+    url: https://www.youtube.com/watch?v=z8-8IXQ-GaU&t=492s
+    segment_ids:
+    - z8-8IXQ-GaU:00103
+    - z8-8IXQ-GaU:00105
+    - z8-8IXQ-GaU:00108
+    - z8-8IXQ-GaU:00109
+- id: DfQ_yBSS_bk-concept-brush-then-accelerate-reviewed
+  evidence_type: explanation
+  excerpt: A stroke sequence where the player first makes a compact brushing contact, then drives forward afterward for additional quality and power.
+  reason: The speaker describes a short, explosive brush, then a later forward drive after the brush.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: DfQ_yBSS_bk
+    start_ms: 651000
+    end_ms: 679600
+    url: https://www.youtube.com/watch?v=DfQ_yBSS_bk&t=651s
+    segment_ids:
+    - DfQ_yBSS_bk:00131
+    - DfQ_yBSS_bk:00136
+- id: pF8kIVSRExg-concept-brush-then-accelerate-reviewed
+  evidence_type: explanation
+  excerpt: Use brushing contact to create the ball's arc and spin rather than relying on a flat blocking or pushing action.
+  reason: The speaker explicitly says the solution is to counter with your own spin and that brushing the ball solves everything.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: pF8kIVSRExg
+    start_ms: 323100
+    end_ms: 336900
+    url: https://www.youtube.com/watch?v=pF8kIVSRExg&t=323s
+    segment_ids:
+    - pF8kIVSRExg:00065
+    - pF8kIVSRExg:00066
+    - pF8kIVSRExg:00067
+- id: 5-fClb3FOp8-concept-brush-then-accelerate-reviewed
+  evidence_type: definition
+  excerpt: First make solid contact with the ball, then brush forward to generate spin.
+  reason: The speaker states that a good loop is not just brushing up, but engaging the ball and then brushing forward, and later says to make solid contact before brushing.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 5-fClb3FOp8
+    start_ms: 518233
+    end_ms: 534333
+    url: https://www.youtube.com/watch?v=5-fClb3FOp8&t=518s
+    segment_ids:
+    - 5-fClb3FOp8:00101
+    - 5-fClb3FOp8:00102
+- id: AJeZkjOEJkk-concept-brush-then-accelerate-reviewed
+  evidence_type: explanation
+  excerpt: Use a brushing phase for spin and then accelerate through the ball to finish the stroke with power.
+  reason: Speaker explicitly contrasts brushing for spin with later acceleration and shows the relax-then-explode pattern.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: AJeZkjOEJkk
+    start_ms: 162633
+    end_ms: 183766
+    url: https://www.youtube.com/watch?v=AJeZkjOEJkk&t=162s
+    segment_ids:
+    - AJeZkjOEJkk:00036
+    - AJeZkjOEJkk:00040
+- id: iXzVADGsLLU-cand-1-reviewed
+  evidence_type: explanation
+  excerpt: Use an initial brushing phase to create friction and a second forward acceleration phase to add speed and power.
+  reason: The speaker explicitly describes a two-stage motion where the first stage is for friction and the second stage is a forward acceleration.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: iXzVADGsLLU
+    start_ms: 213433
+    end_ms: 226333
+    url: https://www.youtube.com/watch?v=iXzVADGsLLU&t=213s
+    segment_ids:
+    - iXzVADGsLLU:00043
+    - iXzVADGsLLU:00044
+    - iXzVADGsLLU:00045
+- id: 4hnrmSJ_Ayg-concept-brush-then-accelerate-reviewed
+  evidence_type: definition
+  excerpt: Generate spin by making light brushing contact first and then accelerating through or after contact rather than forcing the impact.
+  reason: The talk repeatedly frames spin generation as light brushing contact followed by acceleration, including the explicit phrasing 'brush, then accelerate' and 'first brush... then accelerate'.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 4hnrmSJ_Ayg
+    start_ms: 705633
+    end_ms: 731700
+    url: https://www.youtube.com/watch?v=4hnrmSJ_Ayg&t=705s
+    segment_ids:
+    - 4hnrmSJ_Ayg:00138
+    - 4hnrmSJ_Ayg:00139
+    - 4hnrmSJ_Ayg:00142
+    - 4hnrmSJ_Ayg:00143
+- id: D596gPtN634-concept-brush-then-accelerate-reviewed
+  evidence_type: definition
+  excerpt: Make solid brushing contact first, then add forearm acceleration afterward.
+  reason: The speaker explicitly sequences the action as gripping/brushing first and accelerating afterward.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: D596gPtN634
+    start_ms: 63066
+    end_ms: 78666
+    url: https://www.youtube.com/watch?v=D596gPtN634&t=63s
+    segment_ids:
+    - D596gPtN634:00012
+    - D596gPtN634:00013
+- id: Yf_uKs6cZ38-concept-brush-then-accelerate-reviewed
+  evidence_type: explanation
+  excerpt: 'Build the stroke in two phases: first create brushing contact and feel, then add acceleration and power afterward.'
+  reason: The speaker repeatedly says brushing and hitting happen together, then recommends mastering the brushing phase before adding power in the second half.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Yf_uKs6cZ38
+    start_ms: 659966
+    end_ms: 676666
+    url: https://www.youtube.com/watch?v=Yf_uKs6cZ38&t=659s
+    segment_ids:
+    - Yf_uKs6cZ38:00135
+    - Yf_uKs6cZ38:00136
+    - Yf_uKs6cZ38:00137
+    - Yf_uKs6cZ38:00138
+- id: fgtk9fxGTUw-concept-brush-then-accelerate-reviewed
+  evidence_type: definition
+  excerpt: A backspin loop should begin with brushing to lift or grip the ball, then transition into forward acceleration or drive.
+  reason: The speaker explicitly summarizes the method as brush first, then drive.
+  confidence: 0.88
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: fgtk9fxGTUw
+    start_ms: 436200
+    end_ms: 448500
+    url: https://www.youtube.com/watch?v=fgtk9fxGTUw&t=436s
+    segment_ids:
+    - fgtk9fxGTUw:00086
+    - fgtk9fxGTUw:00088
+- id: 01-q1cswVVs-concept-brush-then-accelerate-reviewed
+  evidence_type: explanation
+  excerpt: Effective looping uses brushing contact as part of a forward-driving stroke, not a stationary brush in place.
+  reason: The speaker explicitly says the brush must happen while driving forward and that the motion should remain continuous through contact and after the brush.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 01-q1cswVVs
+    start_ms: 547733
+    end_ms: 576233
+    url: https://www.youtube.com/watch?v=01-q1cswVVs&t=547s
+    segment_ids:
+    - 01-q1cswVVs:00098
+    - 01-q1cswVVs:00101
+    - 01-q1cswVVs:00103
+- id: I3_-LFqMWgA-concept-brush-then-accelerate-reviewed
+  evidence_type: explanation
+  excerpt: Sequence the stroke so brushing comes first, then forward drive and follow-through are added after the brushing action is established.
+  reason: 'The speaker explicitly lays out a three-step progression: brush first, then add forward drive, then follow-through, and later restates that moving forward and brushing should happen simultaneously.'
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: I3_-LFqMWgA
+    start_ms: 126333
+    end_ms: 145466
+    url: https://www.youtube.com/watch?v=I3_-LFqMWgA&t=126s
+    segment_ids:
+    - I3_-LFqMWgA:00022
+    - I3_-LFqMWgA:00023
+    - I3_-LFqMWgA:00024
+    - I3_-LFqMWgA:00025
+- id: QRHidBrS09M-concept-brush-then-accelerate-reviewed
+  evidence_type: explanation
+  excerpt: First create friction with the fingers and wrist, then add arm power through the ball.
+  reason: 'The speaker breaks the motion into two parts: use fingers and wrist to create friction and a small lift, then let the arm drive the ball. He explicitly names this a brush-hit contact.'
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: QRHidBrS09M
+    start_ms: 495566
+    end_ms: 524633
+    url: https://www.youtube.com/watch?v=QRHidBrS09M&t=495s
+    segment_ids:
+    - QRHidBrS09M:00079
+    - QRHidBrS09M:00080
+    - QRHidBrS09M:00082
+    - QRHidBrS09M:00083
+- id: 2LkVpDM69vo-concept-brush-for-friction-on-loop-reviewed
+  evidence_type: explanation
+  excerpt: Use brushing contact to create friction, spin, and control when looping or receiving heavy spin.
+  reason: The speaker explicitly identifies brushing contact as the key to friction, spin, and control, and links it to a thinner contact on the ball.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 2LkVpDM69vo
+    start_ms: 583233
+    end_ms: 606833
+    url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=583s
+    segment_ids:
+    - 2LkVpDM69vo:00113
+    - 2LkVpDM69vo:00114
+    - 2LkVpDM69vo:00115
+- id: 9EcoI6PnOzE-concept-brush-then-accelerate-reviewed
+  evidence_type: explanation
+  excerpt: Execute the brushing/gripping phase first, then accelerate through the shot afterward.
+  reason: The speaker explicitly contrasts the brushing phase with the acceleration phase and says to adjust the ratio by incoming ball quality.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 9EcoI6PnOzE
+    start_ms: 148766
+    end_ms: 159466
+    url: https://www.youtube.com/watch?v=9EcoI6PnOzE&t=148s
+    segment_ids:
+    - 9EcoI6PnOzE:00030
+    - 9EcoI6PnOzE:00031
+- id: KNhwuuZ6Vpo-concept-brush-then-accelerate-reviewed
+  evidence_type: explanation
+  excerpt: Make the brushing contact first, then add forward push or follow-through afterward.
+  reason: The speaker states that for a long serve you brush first, then push, and summarizes it as brush, then push.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: KNhwuuZ6Vpo
+    start_ms: 349400
+    end_ms: 377266
+    url: https://www.youtube.com/watch?v=KNhwuuZ6Vpo&t=349s
+    segment_ids:
+    - KNhwuuZ6Vpo:00068
+    - KNhwuuZ6Vpo:00073
+- id: Pym9pNWaowA-concept-brush-then-accelerate-reviewed
+  evidence_type: definition
+  excerpt: Use a thin brushing contact first, then accelerate through the ball after contact begins.
+  reason: The speaker explicitly says the initial contact should be soft, then you accelerate, and that thinner brushing yields more spin.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: Pym9pNWaowA
+    start_ms: 393400
+    end_ms: 407800
+    url: https://www.youtube.com/watch?v=Pym9pNWaowA&t=393s
+    segment_ids:
+    - Pym9pNWaowA:00063
+    - Pym9pNWaowA:00064
+- id: Xj55m2HY2YY-concept-brush-then-accelerate-reviewed
+  evidence_type: explanation
+  excerpt: Generate spin first through brushing contact, then add forward acceleration or impact after the brush is established.
+  reason: The speaker says to first grip/brush the ball to generate spin, then add a bit of forward impact, and finally create the arc by rolling the ball.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Xj55m2HY2YY
+    start_ms: 643566
+    end_ms: 663500
+    url: https://www.youtube.com/watch?v=Xj55m2HY2YY&t=643s
+    segment_ids:
+    - Xj55m2HY2YY:00128
+    - Xj55m2HY2YY:00129
+    - Xj55m2HY2YY:00131
+- id: 3wQrxObpgxM-concept-brush-then-accelerate-reviewed
+  evidence_type: definition
+  excerpt: Use brushing contact to grip the ball and create topspin, rather than a direct hit, with acceleration coming through the brush.
+  reason: The speaker identifies brushing as the third key difference from drive and says it creates heavy topspin and a diving trajectory.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 3wQrxObpgxM
+    start_ms: 155666
+    end_ms: 175233
+    url: https://www.youtube.com/watch?v=3wQrxObpgxM&t=155s
+    segment_ids:
+    - 3wQrxObpgxM:00026
+    - 3wQrxObpgxM:00104
+- id: rLrnvlDBmTs-concept-brush-then-accelerate-reviewed
+  evidence_type: explanation
+  excerpt: A contact pattern where the racket first brushes the ball to create friction and spin, then accelerates through the shot to finish the loop.
+  reason: The transcript says friction completes the arc and that the rapid acceleration of the racket head brushes the ball to impart topspin against backspin.
+  confidence: 0.87
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: rLrnvlDBmTs
+    start_ms: 748366
+    end_ms: 759600
+    url: https://www.youtube.com/watch?v=rLrnvlDBmTs&t=748s
+    segment_ids:
+    - rLrnvlDBmTs:00132
+- id: ec-XHw2Locs-concept-brush-then-accelerate-reviewed
+  evidence_type: explanation
+  excerpt: On contact, maintain friction and then continue with acceleration rather than slowing down or stopping the stroke.
+  reason: The speaker says not to soften on contact, to keep friction speed from dropping, and to actively accelerate the forearm after contact.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ec-XHw2Locs
+    start_ms: 462400
+    end_ms: 489160
+    url: https://www.youtube.com/watch?v=ec-XHw2Locs&t=462s
+    segment_ids:
+    - ec-XHw2Locs:00184
+    - ec-XHw2Locs:00185
+    - ec-XHw2Locs:00186
+    - ec-XHw2Locs:00187
+    - ec-XHw2Locs:00188
+    - ec-XHw2Locs:00189
+    - ec-XHw2Locs:00190
+    - ec-XHw2Locs:00191
+    - ec-XHw2Locs:00192
+    - ec-XHw2Locs:00193
+- id: IYIjNtXE3CE-concept-brush-then-accelerate-reviewed
+  evidence_type: definition
+  excerpt: A stroke principle where the player combines brushing with forward drive, rather than separating spin and power into different motions.
+  reason: The speaker explicitly says to brush forward while simultaneously driving forward, and that this combined action is the essence of the loop.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: IYIjNtXE3CE
+    start_ms: 479720
+    end_ms: 502400
+    url: https://www.youtube.com/watch?v=IYIjNtXE3CE&t=479s
+    segment_ids:
+    - IYIjNtXE3CE:00214
+    - IYIjNtXE3CE:00215
+    - IYIjNtXE3CE:00216
+    - IYIjNtXE3CE:00221
+    - IYIjNtXE3CE:00222
+- id: 01-q1cswVVs-concept-brush-then-accelerate-codex-reviewed
+  evidence_type: explanation
+  excerpt: Brush while driving into the ball; keep the forward swing moving through contact and continue driving after the brush in one fluid motion.
+  reason: Keep your fingers and wrist firm as the arm swings forward, and continue pushing after contact.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 01-q1cswVVs
+    start_ms: 559633
+    end_ms: 587066
+    url: https://www.youtube.com/watch?v=01-q1cswVVs&t=559s
+    segment_ids:
+    - 01-q1cswVVs:00101
+    - 01-q1cswVVs:00102
+    - 01-q1cswVVs:00103
+    - 01-q1cswVVs:00104
+    - 01-q1cswVVs:00105
+    - 01-q1cswVVs:00106
+- id: BnjNVl_gssU-concept-brush-then-accelerate-codex-reviewed
+  evidence_type: explanation
+  excerpt: Brush the ball at contact for the lift phase, then move into the drive phase.
+  reason: Use the brush for the lift, then add the drive as the next phase.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: BnjNVl_gssU
+    start_ms: 48400
+    end_ms: 64366
+    url: https://www.youtube.com/watch?v=BnjNVl_gssU&t=48s
+    segment_ids:
+    - BnjNVl_gssU:00009
+    - BnjNVl_gssU:00010
+    - BnjNVl_gssU:00011
+- id: D596gPtN634-concept-brush-then-accelerate-codex-reviewed
+  evidence_type: explanation
+  excerpt: “First, ‘grip’ the ball with your rubber, brush it thickly, then think about accelerating your forearm forward.”
+  reason: Brush the ball thickly, then think about accelerating your forearm forward.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: D596gPtN634
+    start_ms: 134566
+    end_ms: 140833
+    url: https://www.youtube.com/watch?v=D596gPtN634&t=134s
+    segment_ids:
+    - D596gPtN634:00028
+- id: fgtk9fxGTUw-concept-brush-then-accelerate-codex-reviewed
+  evidence_type: explanation
+  excerpt: Brush first, then drive forward; brushing lifts the ball over the net, while driving provides power.
+  reason: Use brushing to get the ball over the net and forward drive to add power.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: fgtk9fxGTUw
+    start_ms: 436200
+    end_ms: 448500
+    url: https://www.youtube.com/watch?v=fgtk9fxGTUw&t=436s
+    segment_ids:
+    - fgtk9fxGTUw:00086
+    - fgtk9fxGTUw:00087
+    - fgtk9fxGTUw:00088

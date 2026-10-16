@@ -1,8 +1,8 @@
 codex:
-  default_model: gpt-5.4-mini
-  reasoning_effort: low
-  escalation_model: gpt-5.4
-  escalation_reasoning_effort: low
+  default_model: gpt-6-luna
+  reasoning_effort: high
+  escalation_model: gpt-6-luna
+  escalation_reasoning_effort: high
   allow_automatic_escalation: false
   timeout_seconds: 300
   max_segments_per_job: 80
@@ -13,15 +13,21 @@ codex:
 # data/manifests/<kb>/llm-budget.json and resets by the configured date.
 llm_budget:
   enabled: true
+  account_quota:
+    enabled: true
+    stop_at_used_percent: 80
+    five_hour_reset_grace_minutes: 10
   timezone: Europe/Helsinki
-  daily_token_limit: 30000000
+  daily_token_limit: 90000000
   task_token_limits:
     extraction: 24000000
+    adjudication: 60000000
     rephrase: 2000000
     benchmark: 2000000
     summary: 8000000
   estimated_output_tokens:
     extraction: 8000
+    adjudication: 2000
     rephrase: 1000
     benchmark: 8000
     summary: 1200

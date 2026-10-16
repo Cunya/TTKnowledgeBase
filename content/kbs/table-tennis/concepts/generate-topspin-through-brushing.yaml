@@ -2,63 +2,88 @@ id: concept-generate-topspin-through-brushing
 slug: generate-topspin-through-brushing
 label: Generate topspin through brushing
 aliases:
-  - brush the ball
-  - brushing contact
-  - friction
-short_definition: Topspin is produced by brushing the ball with an arc and sideways component, not by a flat push.
+- brush the ball
+- brushing contact
+- friction
+short_definition: Topspin is produced by brushing the ball with sideways-and-forward racket movement, not by a flat push.
 evidence_summary: >-
-  Generate topspin through brushing brings together several connected ideas. You whip rather than
-  push, and explicitly links brushing/friction to topspin and higher margin for error. To start
-  with pure friction and to learn to brush the ball. Together, these principles show how the topic
-  is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:c5b065a4d4168a0c6020f622878c17cf6ea4d798efd7438c8740b71764195efd"
-evidence_summary_generator: "deterministic"
+  Use a thinner brushing contact to create friction; against backspin, close the racket angle and brush the upper-middle part of the ball. At contact, move the racket sideways and forward to brush the ball and create topspin; a straight push has no brush.
 concept_type: stroke
 facets:
   category:
-    - stroke
-    - fundamentals
+  - stroke
+  - fundamentals
   spin:
-    - topspin
-  level:
-    - beginner
-    - intermediate
-difficulty: intermediate
+  - topspin
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: a0404dd53e77ae30a021fa65e110d4b40bcb578cd4844730fd07547a892957e2
-  prompt_version: candidate-review-v1
+  input_hash: sha256:78026f54a611ae9492047892b758b4fb99e1010994fadb41e2140ec79ba72364
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: ATd38ewLMqs-c6-reviewed
-    evidence_type: explanation
-    excerpt: Topspin is produced by brushing the ball with an arc and sideways component, not by a flat push.
-    reason: The speaker says you whip rather than push, and explicitly links brushing/friction to topspin and higher margin for error.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: ATd38ewLMqs
-      start_ms: 440900
-      end_ms: 461733
-      url: https://www.youtube.com/watch?v=ATd38ewLMqs&t=440s
-      segment_ids:
-        - ATd38ewLMqs:00063
-        - ATd38ewLMqs:00064
-        - ATd38ewLMqs:00089
-  - id: AoJq7UfIhp8-concept-generate-topspin-through-brushing-reviewed
-    evidence_type: definition
-    excerpt: Create spin by brushing the ball with friction rather than driving through it with a flat hit.
-    reason: The speaker says to start with pure friction and to learn to brush the ball.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: AoJq7UfIhp8
-      start_ms: 6200
-      end_ms: 20766
-      url: https://www.youtube.com/watch?v=AoJq7UfIhp8&t=6s
-      segment_ids:
-        - AoJq7UfIhp8:00001
-        - AoJq7UfIhp8:00003
+- id: ATd38ewLMqs-c6-reviewed
+  evidence_type: explanation
+  excerpt: Topspin is produced by brushing the ball with an arc and sideways component, not by a flat push.
+  reason: The speaker says you whip rather than push, and explicitly links brushing/friction to topspin and higher margin for error.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ATd38ewLMqs
+    start_ms: 440900
+    end_ms: 461733
+    url: https://www.youtube.com/watch?v=ATd38ewLMqs&t=440s
+    segment_ids:
+    - ATd38ewLMqs:00063
+    - ATd38ewLMqs:00064
+    - ATd38ewLMqs:00089
+- id: AoJq7UfIhp8-concept-generate-topspin-through-brushing-reviewed
+  evidence_type: definition
+  excerpt: Create spin by brushing the ball with friction rather than driving through it with a flat hit.
+  reason: The speaker says to start with pure friction and to learn to brush the ball.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: AoJq7UfIhp8
+    start_ms: 6200
+    end_ms: 20766
+    url: https://www.youtube.com/watch?v=AoJq7UfIhp8&t=6s
+    segment_ids:
+    - AoJq7UfIhp8:00001
+    - AoJq7UfIhp8:00003
+- id: 2LkVpDM69vo-concept-brush-for-friction-on-loop-codex-reviewed
+  evidence_type: explanation
+  excerpt: To create proper friction, get a thinner, brushing contact on the ball. Against backspin, close your racket angle and brush the upper-middle part of the ball.
+  reason: Use a thinner brushing contact. Against backspin, close your racket angle and brush the upper-middle part of the ball.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: 2LkVpDM69vo
+    start_ms: 583233
+    end_ms: 606833
+    url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=583s
+    segment_ids:
+    - 2LkVpDM69vo:00113
+    - 2LkVpDM69vo:00114
+    - 2LkVpDM69vo:00115
+- id: ATd38ewLMqs-c6-codex-reviewed
+  evidence_type: explanation
+  excerpt: The fan motion moves the racket sideways as well as forwards, brushing the ball to create topspin; a straight push has no brush.
+  reason: Move the racket sideways and forward at contact to brush the ball and create topspin; a straight push has no brush.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: ATd38ewLMqs
+    start_ms: 384066
+    end_ms: 397066
+    url: https://www.youtube.com/watch?v=ATd38ewLMqs&t=384s
+    segment_ids:
+    - ATd38ewLMqs:00088

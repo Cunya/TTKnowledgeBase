@@ -400,7 +400,7 @@ evidence:
     reason: The speaker says that for aggressive incoming balls you should reduce force, focus on brushing, and not fight the ball with power.
     confidence: 0.87
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 5JzSUTg_ojc
       start_ms: 300720
@@ -417,7 +417,7 @@ evidence:
     reason: The speaker contrasts forearm force with a point push to add spin and a short explosive touch.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: SF0Sv2ZzrRI
       start_ms: 133360
@@ -432,7 +432,7 @@ evidence:
     reason: The speaker links finding the contact point with pressing downward, and then says to drive the ball down into the body from above.
     confidence: 0.88
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: TMrN47uIHiI
       start_ms: 498680
@@ -448,7 +448,7 @@ evidence:
     reason: The speaker says to open more against no-spin and keep the racket flatter against heavy spin, while still aiming to the base of the net.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: H0sbIUpUNLY
       start_ms: 383840
@@ -464,7 +464,7 @@ evidence:
     reason: The speaker explains that pulling the racket backward at contact increases spin, and that no-spin is created by sending the ball without adding friction.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: o6OyHBmkF2U
       start_ms: 15240
@@ -481,7 +481,7 @@ evidence:
     reason: The speaker explains contact-zone selection, bounce-height matching, and how under-ball brushing creates heavy, sinking backspin.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: h5jUJL_P82w
       start_ms: 496200
@@ -501,7 +501,7 @@ evidence:
     reason: The transcript contrasts direct-behind contact with slight side contact, then describes level-first-then-downward motion and brushing that generates friction to handle spin.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: D1cBF0nsjKo
       start_ms: 636960
@@ -515,7 +515,7 @@ evidence:
     reason: They recommend brushing slightly on the right side of the ball for left side spin and note that this keeps the push from going into the net.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Nmf0ZWP6dn0
       start_ms: 33760
@@ -534,7 +534,7 @@ evidence:
     reason: The speaker explains that a pushed ball may have little new spin, and that spinny balls require friction-based lifting while no-spin balls need a closing action.
     confidence: 0.9
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: wSzmpXHp64Q
       start_ms: 427033
@@ -554,7 +554,7 @@ evidence:
     reason: The speaker lists friction, peak-of-bounce timing, no pullback, and placement variations as the core of the modified push.
     confidence: 0.94
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 4dKlFXYLZhc
       start_ms: 160733
@@ -571,7 +571,7 @@ evidence:
     reason: The speaker says to contact behind the ball and to prioritize brushing/friction so spin is neutralized.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: -iWLwSvOJ2U
       start_ms: 66300
@@ -581,6 +581,23 @@ evidence:
         - -iWLwSvOJ2U:00016
         - -iWLwSvOJ2U:00018
         - -iWLwSvOJ2U:00021
+  - id: h5jUJL_P82w-concept-push-contact-and-spin-codex-reviewed
+    evidence_type: explanation
+    excerpt: Control push trajectory by contacting with the bottom half of the racket and brushing the ball to create effective friction.
+    reason: This contiguous 18.4-second span directly explains how racket contact location controls push trajectory and why brushing with the bottom half creates friction. The broader evidence claims about bounce height, forehand serves, and chopping are excluded because they fall outside the selected publication span.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: h5jUJL_P82w
+      start_ms: 436900
+      end_ms: 455300
+      url: https://www.youtube.com/watch?v=h5jUJL_P82w&t=436s
+      segment_ids:
+        - h5jUJL_P82w:00096
+        - h5jUJL_P82w:00097
+        - h5jUJL_P82w:00098
+        - h5jUJL_P82w:00099
 relations:
   - relation_type: part_of
     target_concept_id: concept-push-technique

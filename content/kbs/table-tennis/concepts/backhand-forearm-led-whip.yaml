@@ -7,21 +7,9 @@ aliases:
   - snap like a whip
 short_definition: The backhand loop should use a forearm-led whip action after contact, producing a small but concentrated burst of acceleration instead of a large full-arm swing.
 evidence_summary: >-
-  Backhand forearm-led whip brings together several connected ideas. Secondary acceleration as
-  another burst after contact and to whip through the ball with the forearm, not push forward. The
-  serve motion is described as whip-like, with separate sequential joint action and the forearm
-  following through after the elbow and upper arm. To use the forearm to swing back and drive
-  forward, and that keeping the elbow fixed makes the ball land consistently. The correct way is
-  to keep the wrist cocked and use the forearm to drive the racket forward, then adjust angle by
-  rotating the forearm. To use and accelerate the forearm, separate the upper and lower arm, and
-  explode with the forearm. A fixed elbow prevents wrist rotation, but an elbow that drops and
-  leads makes the forearm rotate automatically and be whipped through the ball. To rotate the
-  forearm and wrist, snap the wrist forward, and fully rotate through the shot. A useful contrast
-  is between a prying wrist motion and a rotational motion and says to rotate from the cocked
-  position and release the forearm. Additional points reinforce the same theme. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:f038c41cc8e33615d4fe4a2fc2d5c856088b3659e1edd27513445c29aa5365b3"
+  The backhand loop should use a forearm-led whip action after contact, producing a small but
+  concentrated burst of acceleration instead of a large full-arm swing.
+evidence_summary_source_hash: "sha256:8130522f794e5ccaa1a32f3992294bf503cc324424533f2a1a7a11ca24716e5b"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -41,10 +29,13 @@ facets:
 difficulty: advanced
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: bab56d03d083e9b66a2c232590772dd8084e54399aa17acd624c9cd835daa3bf
-  prompt_version: candidate-review-v1
+  input_hash: sha256:7a4e3e439c93a4d26d67b652a0f32f85fb1cc8b697a4f2fb2b3ae1137dd6f72d
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: F0HvzL1Wk3w-concept-backhand-forearm-led-whip-reviewed
     evidence_type: definition
@@ -52,7 +43,7 @@ evidence:
     reason: The speaker explains secondary acceleration as another burst after contact and says to whip through the ball with the forearm, not push forward.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: F0HvzL1Wk3w
       start_ms: 624000
@@ -66,7 +57,7 @@ evidence:
     reason: The serve motion is described as whip-like, with separate sequential joint action and the forearm following through after the elbow and upper arm.
     confidence: 0.93
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Pym9pNWaowA
       start_ms: 519566
@@ -81,7 +72,7 @@ evidence:
     reason: The speaker says to use the forearm to swing back and drive forward, and that keeping the elbow fixed makes the ball land consistently.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: rLVOt37bQfk
       start_ms: 153566
@@ -97,7 +88,7 @@ evidence:
     reason: The speaker says the correct way is to keep the wrist cocked and use the forearm to drive the racket forward, then adjust angle by rotating the forearm.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 1UthOchBWWc
       start_ms: 50200
@@ -112,7 +103,7 @@ evidence:
     reason: The speaker explicitly describes a small-to-large kinetic chain, starting spin with the racket head and then adding forearm and upper arm.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: mQdrXMukRSY
       start_ms: 55300
@@ -127,7 +118,7 @@ evidence:
     reason: The speaker repeatedly says to use and accelerate the forearm, separate the upper and lower arm, and explode with the forearm.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: XaU6LtcP_n0
       start_ms: 290633
@@ -142,7 +133,7 @@ evidence:
     reason: The speaker says a fixed elbow prevents wrist rotation, but an elbow that drops and leads makes the forearm rotate automatically and be whipped through the ball.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: wytyHpyZr9A
       start_ms: 269333
@@ -157,7 +148,7 @@ evidence:
     reason: The speaker says to rotate the forearm and wrist, snap the wrist forward, and fully rotate through the shot.
     confidence: 0.88
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: AoJq7UfIhp8
       start_ms: 536533
@@ -172,7 +163,7 @@ evidence:
     reason: The speaker contrasts a prying wrist motion with a rotational motion and says to rotate from the cocked position and release the forearm.
     confidence: 0.93
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: yqSECRch8WM
       start_ms: 75733
@@ -181,3 +172,19 @@ evidence:
       segment_ids:
         - yqSECRch8WM:00010
         - yqSECRch8WM:00011
+  - id: mQdrXMukRSY-concept-backhand-forearm-led-whip-codex-reviewed
+    evidence_type: explanation
+    excerpt: 'For any shot with spin, go from small to large: get the racket head rotating first, then engage the forearm, and finally the upper arm.'
+    reason: These contiguous segments explicitly describe the small-to-large sequence of racket-head rotation, forearm engagement, and upper-arm engagement for spin shots.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: mQdrXMukRSY
+      start_ms: 101866
+      end_ms: 120700
+      url: https://www.youtube.com/watch?v=mQdrXMukRSY&t=101s
+      segment_ids:
+        - mQdrXMukRSY:00015
+        - mQdrXMukRSY:00016
+        - mQdrXMukRSY:00017

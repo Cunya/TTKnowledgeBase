@@ -4,13 +4,7 @@ label: Contact zone on the ball
 aliases: [ball contact region, contact point on the ball, contact zone map]
 short_definition: Choose which region of the ball the racket touches to control the direction and mixture of spin.
 evidence_summary: >-
-  Different contact zones on the ball produce different outcomes, so the impact point must match
-  the intended shot. Higher contact on the ball generally supports more brushing, stronger arc,
-  and more spin, while lower or center contact is better for flatter, more direct hitting. The
-  racket and hand must align so the stroke reaches the right zone at contact, with the body,
-  forearm, fingers, and wrist all contributing at that moment.
-evidence_summary_source_hash: "sha256:88a4a622f7481a7d86c53182e9c6c52768cd848dcdde352614c87595d51c1b8e"
-evidence_summary_generator: "codex"
+  Choose the region touched on the ball to match the intended shot. The serve examples distinguish bottom or lower-middle contact for backspin from back-and-side contact for sidespin without added backspin. Ball-surface regions are separate from contact locations on the racket and from the ball’s position relative to the table.
 detailed_definition: This is distinct from the player's spatial contact point. Touching lower regions favors backspin, while moving toward the back or side changes the spin mixture. A repeatable serve action still produces different outcomes when its ball-contact zone changes.
 concept_type: contact-mechanic
 facets: {category: [fundamentals, stroke], side: [neutral], spin: [topspin, backspin, sidespin, no-spin], level: [intermediate]}
@@ -55,7 +49,7 @@ evidence:
     reason: For a topspin loop, the player should approach from below the ball, swing forward and upward, and contact using the upper half of the racket to produce spin and power.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: dWZw3A0X-4A
       start_ms: 429800
@@ -74,7 +68,7 @@ evidence:
     reason: For a topspin loop, the player should approach from below the ball, swing forward and upward, and contact using the upper half of the racket to produce spin and power.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: dWZw3A0X-4A
       start_ms: 489720
@@ -93,7 +87,7 @@ evidence:
     reason: For a topspin loop, the player should approach from below the ball, swing forward and upward, and contact using the upper half of the racket to produce spin and power.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: dWZw3A0X-4A
       start_ms: 516200
@@ -108,7 +102,7 @@ evidence:
     reason: For a topspin loop, the player should approach from below the ball, swing forward and upward, and contact using the upper half of the racket to produce spin and power.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: dWZw3A0X-4A
       start_ms: 471640
@@ -127,7 +121,7 @@ evidence:
     reason: The speaker states that even on a half-long forehand drive, contact must be off the end of the table, not over it.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: G7eiadOxN8E
       start_ms: 366933
@@ -144,7 +138,7 @@ evidence:
     reason: Crowding the ball and reaching over the table are identified as reasons players cannot generate force.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: G7eiadOxN8E
       start_ms: 302866
@@ -159,7 +153,7 @@ evidence:
     reason: Crowding the ball and reaching over the table are identified as reasons players cannot generate force.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: G7eiadOxN8E
       start_ms: 386400
@@ -174,7 +168,7 @@ evidence:
     reason: On spinny loops, especially against backspin, initial contact on the upper half of the racket face increases friction distance and produces a stronger arc and more spin.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: G7eiadOxN8E
       start_ms: 564833
@@ -188,7 +182,7 @@ evidence:
     reason: On spinny loops, especially against backspin, initial contact on the upper half of the racket face increases friction distance and produces a stronger arc and more spin.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: G7eiadOxN8E
       start_ms: 588300
@@ -202,7 +196,7 @@ evidence:
     reason: On spinny loops, especially against backspin, initial contact on the upper half of the racket face increases friction distance and produces a stronger arc and more spin.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: G7eiadOxN8E
       start_ms: 595033
@@ -216,7 +210,7 @@ evidence:
     reason: On spinny loops, especially against backspin, initial contact on the upper half of the racket face increases friction distance and produces a stronger arc and more spin.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: G7eiadOxN8E
       start_ms: 620400
@@ -230,7 +224,7 @@ evidence:
     reason: The speaker states that the racket tip has the highest linear velocity and that contact there produces more explosive shots.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: G7eiadOxN8E
       start_ms: 627633
@@ -245,7 +239,7 @@ evidence:
     reason: A same-swing-speed comparison is described between middle contact and tip contact.
     confidence: 0.91
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: G7eiadOxN8E
       start_ms: 634300
@@ -260,7 +254,7 @@ evidence:
     reason: The speaker explains that top-half push contact pops the ball up, while bottom-half contact keeps it low.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: G7eiadOxN8E
       start_ms: 674533
@@ -275,7 +269,7 @@ evidence:
     reason: The friction-path explanation shows why bottom-half contact controls the ball better on the push.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: G7eiadOxN8E
       start_ms: 730400
@@ -290,7 +284,7 @@ evidence:
     reason: Speaker explains that if contact is only table height or lower, a forward power loop loses arc and becomes dangerous.
     confidence: 0.92
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: JmOI0L7SiG8
       start_ms: 78900
@@ -308,7 +302,7 @@ evidence:
     reason: Low contact is paired with focusing on spin and using a higher-arc loop.
     confidence: 0.91
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: JmOI0L7SiG8
       start_ms: 95233
@@ -323,7 +317,7 @@ evidence:
     reason: If the ball has dropped, the player should switch to a loop with more arc.
     confidence: 0.94
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: JmOI0L7SiG8
       start_ms: 165533
@@ -334,54 +328,29 @@ evidence:
         - "JmOI0L7SiG8:00058"
   - id: leQBUn8-4tw-cand-half-back-half-side-contact-1
     evidence_type: definition
-    excerpt: A contact-point reference for driven sidespin-topspin serves where the racket drives through a point midway between the back and side of the ball.
-    reason: The speaker pinpoints a specific serve contact location between the back and side of the ball.
+    excerpt: For the driven serve in this example, contact halfway between the back and side of the ball, then add the deceptive follow-through. The contact instruction applies to both penhold and shakehand.
+    reason: For the driven serve in this example, contact halfway between the back and side of the ball, then add the deceptive follow-through. The contact instruction applies to both penhold and shakehand.
     confidence: 0.95
     visual_status: transcript_inferred
     review_status: approved
     source:
       video_id: leQBUn8-4tw
-      start_ms: 787066
-      end_ms: 794033
-      url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=787s"
-      segment_ids:
-        - "leQBUn8-4tw:00170"
-        - "leQBUn8-4tw:00171"
-  - id: leQBUn8-4tw-cand-half-back-half-side-contact-2
-    evidence_type: demonstration
-    excerpt: A contact-point reference for driven sidespin-topspin serves where the racket drives through a point midway between the back and side of the ball.
-    reason: The instruction appears as part of a described demonstration of driving through the ball and then adding deception.
-    confidence: 0.84
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: leQBUn8-4tw
-      start_ms: 765333
-      end_ms: 784033
-      url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=765s"
-      segment_ids:
-        - "leQBUn8-4tw:00168"
-  - id: leQBUn8-4tw-cand-half-back-half-side-contact-3
-    evidence_type: demonstration
-    excerpt: A contact-point reference for driven sidespin-topspin serves where the racket drives through a point midway between the back and side of the ball.
-    reason: The instruction appears as part of a described demonstration of driving through the ball and then adding deception.
-    confidence: 0.84
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: leQBUn8-4tw
-      start_ms: 796933
+      start_ms: 784033
       end_ms: 800833
-      url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=796s"
+      url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=784s"
       segment_ids:
-        - "leQBUn8-4tw:00173"
+        - leQBUn8-4tw:00169
+        - leQBUn8-4tw:00170
+        - leQBUn8-4tw:00171
+        - leQBUn8-4tw:00172
+        - leQBUn8-4tw:00173
   - id: V__nqiNHeKE-cand-thumb-web-forward-1
     evidence_type: definition
     excerpt: The speaker repeatedly states that the thumb web should face forward and explains that otherwise forward acceleration and brushing are compromised.
     reason: A racket-hand orientation cue where the thumb web faces forward during the stroke so the racket can travel forward and brush effectively.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: V__nqiNHeKE
       start_ms: 64040
@@ -396,7 +365,7 @@ evidence:
     reason: A racket-hand orientation cue where the thumb web faces forward during the stroke so the racket can travel forward and brush effectively.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: V__nqiNHeKE
       start_ms: 186400
@@ -411,7 +380,7 @@ evidence:
     reason: A racket-hand orientation cue where the thumb web faces forward during the stroke so the racket can travel forward and brush effectively.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: V__nqiNHeKE
       start_ms: 250520
@@ -425,7 +394,7 @@ evidence:
     reason: A racket-hand orientation cue where the thumb web faces forward during the stroke so the racket can travel forward and brush effectively.
     confidence: 0.85
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: V__nqiNHeKE
       start_ms: 189960
@@ -440,7 +409,7 @@ evidence:
     reason: The speaker explicitly states that contact must move forward with the ball and warns that wrist rotation in place will not carry the ball over the net.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: V__nqiNHeKE
       start_ms: 260120
@@ -457,7 +426,7 @@ evidence:
     reason: The speaker says impact and brushing happen together, describes the first-contact feel as soft, then adds quick finger force and contrasts this with a stiff hand.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: V__nqiNHeKE
       start_ms: 288520
@@ -474,7 +443,7 @@ evidence:
     reason: The speaker says impact and brushing happen together, describes the first-contact feel as soft, then adds quick finger force and contrasts this with a stiff hand.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: V__nqiNHeKE
       start_ms: 326760
@@ -489,7 +458,7 @@ evidence:
     reason: The speaker asks the learner to touch and hold the hand, relax, and feel the ball, framing the sensation as something to be trained directly.
     confidence: 0.78
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: V__nqiNHeKE
       start_ms: 274840
@@ -505,7 +474,7 @@ evidence:
     reason: The speaker lists brush, finger pressure, relax-accelerate timing, and racket-head rotation as the main contact cues.
     confidence: 0.94
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: bUCFpvTlaMU
       start_ms: 518680
@@ -520,7 +489,7 @@ evidence:
     reason: The transcript describes concentrating forearm, upper arm, core, fingers, and wrist into the moment of contact.
     confidence: 0.81
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: bUCFpvTlaMU
       start_ms: 537000
@@ -535,7 +504,7 @@ evidence:
     reason: In friction-based strokes, spin is created by active finger action that rotates or drives the blade face at contact, while larger body parts add power after that spin-producing action is established.
     confidence: 0.91
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: t3HX8AEujWw
       start_ms: 378440
@@ -554,7 +523,7 @@ evidence:
     reason: In friction-based strokes, spin is created by active finger action that rotates or drives the blade face at contact, while larger body parts add power after that spin-producing action is established.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: t3HX8AEujWw
       start_ms: 413840
@@ -574,7 +543,7 @@ evidence:
     reason: In friction-based strokes, spin is created by active finger action that rotates or drives the blade face at contact, while larger body parts add power after that spin-producing action is established.
     confidence: 0.92
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: t3HX8AEujWw
       start_ms: 441720
@@ -632,7 +601,7 @@ evidence:
     reason: Speaker identifies the upper-middle part of the ball as the intended brushing zone and contrasts it with incorrect contact on the back of the ball.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: A4-lKRVwSFc
       start_ms: 209600
@@ -647,7 +616,7 @@ evidence:
     reason: The speaker compares lower-half and upper-half contact on the racket and explains the resulting differences in spin, kick, and speed, which directly grounds contact-zone concepts.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: pE5PLAr9iaA
       start_ms: 438160
@@ -666,7 +635,7 @@ evidence:
     reason: The speaker gives different spatial references for backhand and forehand contact, including one racket length, one palm, belly, knee, and right front of the body.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: UCyUdarqdJc
       start_ms: 259320
@@ -684,7 +653,7 @@ evidence:
     reason: The speaker mentions contacting behind or under the ball and contacting the lower-middle part of the ball.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: SF0Sv2ZzrRI
       start_ms: 104640
@@ -699,7 +668,7 @@ evidence:
     reason: The speaker repeatedly distinguishes lower-half versus upper-half contact and ties it directly to whether the ball behaves like backspin or topspin.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: KpjJFdkUD54
       start_ms: 451360
@@ -714,7 +683,7 @@ evidence:
     reason: The speaker says that contacting slightly to the side reduces errors compared with pushing directly behind the ball.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: L-m_mjGB5X0
       start_ms: 52440
@@ -730,7 +699,7 @@ evidence:
     reason: The speaker distinguishes contact on the upper half versus lower half and ties that to brushing quality and arc.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: wyna7UXctZQ
       start_ms: 28920
@@ -745,7 +714,7 @@ evidence:
     reason: Defines different impact zones and recommends 2:00 for hitting, while 1:00 drives the ball into the net.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: deTFdwcfnrE
       start_ms: 245920
@@ -767,7 +736,7 @@ evidence:
     reason: The speaker distinguishes lower versus upper ball contact zones and their spin effects.
     confidence: 0.89
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Dj-oOxwQn1s
       start_ms: 377200
@@ -784,7 +753,7 @@ evidence:
     reason: Defines different impact zones and recommends 2:00 for hitting, while 1:00 drives the ball into the net.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: deTFdwcfnrE
       start_ms: 245920
@@ -806,7 +775,7 @@ evidence:
     reason: The speaker distinguishes lower versus upper ball contact zones and their spin effects.
     confidence: 0.89
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Dj-oOxwQn1s
       start_ms: 377200
@@ -823,7 +792,7 @@ evidence:
     reason: The racket is divided into thirds and the top third is used to press toward a specific target zone, showing deliberate contact-zone selection.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: PDFXww03DHM
       start_ms: 142680
@@ -844,7 +813,7 @@ evidence:
     reason: The speaker specifies brushing the upper middle part of the ball, which is a concrete contact-zone instruction.
     confidence: 0.9
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: N3GieiMNE7Y
       start_ms: 140480
@@ -859,7 +828,7 @@ evidence:
     reason: The speaker focuses on the exact point of contact on the ball and distinguishes between side contact and lower-middle contact.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Fe4y6uzl5GU
       start_ms: 56240
@@ -876,7 +845,7 @@ evidence:
     reason: The speaker distinguishes center contact for direct hits from upper-ball contact for brushing spin.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: kv80YX__eJE
       start_ms: 254233
@@ -893,7 +862,7 @@ evidence:
     reason: The speaker contrasts side contact with brushing the bottom of the ball.
     confidence: 0.92
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: QgG46RFoIcA
       start_ms: 28280
@@ -910,7 +879,7 @@ evidence:
     reason: The speaker contrasts contact that grips the ball with contact that goes into the net.
     confidence: 0.86
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: -QdTaX8ejCM
       start_ms: 169800
@@ -925,7 +894,7 @@ evidence:
     reason: The transcript repeatedly identifies lower-half contact as the reason for low, downward trajectory and net errors, even when the swing moves upward.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: GKfKcAQ-guU
       start_ms: 372640
@@ -946,7 +915,7 @@ evidence:
     reason: The speaker says the relevant point is between the side and back of the ball and that serving through that middle point combines brushing and driving.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: sU4uTg-0qvM
       start_ms: 587920
@@ -961,7 +930,7 @@ evidence:
     reason: The speaker emphasizes a closer toss, a low contact point, and finding the right side of the ball for true sidespin.
     confidence: 0.9
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: xBlnTfR0eOY
       start_ms: 233666
@@ -977,7 +946,7 @@ evidence:
     reason: The speaker repeatedly gives ball-position contact targets such as 2:30, 1:30, 1:00, and top/center contact depending on spin.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: nukEclWHWn4
       start_ms: 60966
@@ -993,7 +962,7 @@ evidence:
     reason: The speaker identifies side contact as the correct contact zone for heavy spin and side push execution.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ezGVESU0Rp0
       start_ms: 343033
@@ -1009,7 +978,7 @@ evidence:
     reason: The speaker explains how more spin calls for middle contact while less spin calls for upper-ball contact.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 0D6FzvP33Xs
       start_ms: 476966
@@ -1019,10 +988,25 @@ evidence:
         - 0D6FzvP33Xs:00102
         - 0D6FzvP33Xs:00105
         - 0D6FzvP33Xs:00106
+  - id: N3GieiMNE7Y-concept-contact-zone-on-ball-codex-reviewed
+    evidence_type: explanation
+    excerpt: You must brush the upper middle part of the ball.
+    reason: The selected contiguous span directly specifies brushing the ball’s upper-middle region, supporting the existing contact-zone concept.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: N3GieiMNE7Y
+      start_ms: 140480
+      end_ms: 144760
+      url: https://www.youtube.com/watch?v=N3GieiMNE7Y&t=140s
+      segment_ids:
+        - N3GieiMNE7Y:00054
+        - N3GieiMNE7Y:00055
 relations:
   - relation_type: related_to
     target_concept_id: concept-contact-point
     confidence: 0.95
-    review_status: approved
+    review_status: unreviewed # Citation exceeds 30 seconds; reselect with editorial review.
     sources:
       - {video_id: csJgHR7Daog, start_ms: 481680, end_ms: 520520, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=481s", segment_ids: ["csJgHR7Daog:00206", "csJgHR7Daog:00209", "csJgHR7Daog:00210", "csJgHR7Daog:00211", "csJgHR7Daog:00212", "csJgHR7Daog:00213", "csJgHR7Daog:00214", "csJgHR7Daog:00215", "csJgHR7Daog:00216", "csJgHR7Daog:00217", "csJgHR7Daog:00218", "csJgHR7Daog:00219", "csJgHR7Daog:00220", "csJgHR7Daog:00221", "csJgHR7Daog:00222"]}

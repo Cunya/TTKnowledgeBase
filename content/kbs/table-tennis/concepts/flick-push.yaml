@@ -2,55 +2,61 @@ id: concept-flick-push
 slug: flick-push
 label: Flick-push
 aliases:
-  - flick-push
-short_definition: A fast receive that uses an open wrist thrust forward to neutralize spin, with optional downward thrust for more backspin or forward thrust for speed.
+- flick-push
+short_definition: A flick-push is described as fast, with a return that can be a dead ball with backspin or light topspin. The speaker says it can be at least twice as fast as a regular push, and identifies neutralizing spin as its chief advantage.
 evidence_summary: >-
-  Flick-push brings together several connected ideas. Flick-push, explains its speed and
-  spin-neutralizing function, and the wrist direction variants for spin or speed. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:c3856f8de48ed5c15f2735c3ca983d8e1a67d127b2051032d505659fe2b6777a"
-evidence_summary_generator: "deterministic"
+  The speaker describes the flick-push as fast enough to give the opponent no time to apply heavy friction. Its return can be a dead ball with backspin or light topspin; the speaker says it can be at least twice as fast as a regular push and identifies neutralizing spin as its chief advantage.
 concept_type: technique
 facets:
   category:
-    - stroke
-    - tactic
-  side:
-    - forehand
-    - backhand
-    - neutral
+  - stroke
+  - tactic
   spin:
-    - backspin
-    - no-spin
-    - topspin
-  distance:
-    - close
-  level:
-    - intermediate
-    - advanced
-difficulty: advanced
+  - backspin
+  - topspin
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: e6790bbfb224cab99c9fc265325df5e820134a12c72222d8d15baa53c4e5e5bc
-  prompt_version: candidate-review-v1
+  input_hash: sha256:3b7814ba51a30f80025d933ddc0f22827f3bb69c19d9e83f5cf99225683c1bc2
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: _TIBQOXT3cw-concept-flick-push-reviewed
-    evidence_type: definition
-    excerpt: A fast receive that uses an open wrist thrust forward to neutralize spin, with optional downward thrust for more backspin or forward thrust for speed.
-    reason: The speaker names flick-push, explains its speed and spin-neutralizing function, and describes the wrist direction variants for spin or speed.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: _TIBQOXT3cw
-      start_ms: 466500
-      end_ms: 495166
-      url: https://www.youtube.com/watch?v=_TIBQOXT3cw&t=466s
-      segment_ids:
-        - _TIBQOXT3cw:00088
-        - _TIBQOXT3cw:00090
-        - _TIBQOXT3cw:00092
-        - _TIBQOXT3cw:00093
+- id: _TIBQOXT3cw-concept-flick-push-reviewed
+  evidence_type: definition
+  excerpt: A fast receive that uses an open wrist thrust forward to neutralize spin, with optional downward thrust for more backspin or forward thrust for speed.
+  reason: The speaker names flick-push, explains its speed and spin-neutralizing function, and describes the wrist direction variants for spin or speed.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: _TIBQOXT3cw
+    start_ms: 466500
+    end_ms: 495166
+    url: https://www.youtube.com/watch?v=_TIBQOXT3cw&t=466s
+    segment_ids:
+    - _TIBQOXT3cw:00088
+    - _TIBQOXT3cw:00090
+    - _TIBQOXT3cw:00092
+    - _TIBQOXT3cw:00093
+- id: _TIBQOXT3cw-concept-flick-push-codex-reviewed
+  evidence_type: definition
+  excerpt: This is the perfect situation for the flick-push. A flick-push is fast, giving the opponent no time to apply heavy friction. The return can be a dead ball with backspin or a light topspin ball, but either way, it's at least twice as fast as a regular push. Its greatest advantage is that it neutralizes spin.
+  reason: The flick-push is fast, returns a dead ball with backspin or light topspin, and is at least twice as fast as a regular push. Its chief advantage is neutralizing spin.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: _TIBQOXT3cw
+    start_ms: 439466
+    end_ms: 460766
+    url: https://www.youtube.com/watch?v=_TIBQOXT3cw&t=439s
+    segment_ids:
+    - _TIBQOXT3cw:00082
+    - _TIBQOXT3cw:00083
+    - _TIBQOXT3cw:00084
+    - _TIBQOXT3cw:00085
+    - _TIBQOXT3cw:00086

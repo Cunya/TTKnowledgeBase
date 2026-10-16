@@ -8,20 +8,9 @@ aliases:
   - early contact point
 short_definition: Timing a shot on the rising or falling phase of the bounce rather than at the peak, often to increase tempo and make the return harder to time.
 evidence_summary: >-
-  Bounce-phase shot timing brings together several connected ideas. The shot should be taken on
-  the rise or fall, never at the peak, and later reinforces early contact as a modern trend.
-  Hitting before the peak causes a push-like motion with no arc, and the optimal contact point for
-  topspin is the peak of the bounce. Hitting at the peak, starting too early, and waiting until
-  the ball starts dropping from its peak. A useful contrast is between early descending-phase
-  contact and peak contact and rise contact, and frames this as a core timing skill. Hitting on
-  the rise, at the peak, and in the early descending phase, and ties each phase to different shot
-  intentions. Whether to hit on the rise or at the top of the bounce and on-the-rise is only
-  suitable for certain balls. Rising phase, peak, and falling phase, and the ideal topspin contact
-  is at the peak of the bounce. Beginners should not hit at the peak or on the rise, but wait for
-  the ball to begin falling to gain time and consistency. Additional points reinforce the same
-  theme. Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:41af1f636655a3754e2a23a530a13184a48966a6d39e7dd2b351d8bf2794f0f1"
+  Timing a shot on the rising or falling phase of the bounce rather than at the peak, often to
+  increase tempo and make the return harder to time.
+evidence_summary_source_hash: "sha256:b16cd88f2a9edd0bec9266fd1d24ac2edc01ad80532bbb6808cb3101dd0c60e8"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -44,10 +33,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 47d82da1be5d8845c7bc37326c99dd4ff22b1bab19d0d48ad7207c9a8cf7dce9
-  prompt_version: candidate-review-v1
+  input_hash: sha256:64183fbacaa7c91e3ea370563e4acbc13ac82ec32f225be9e6db09a611b2bc47
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: fTyA1fjEOIk-concept-bounce-phase-shot-timing-reviewed
     evidence_type: definition
@@ -55,7 +47,7 @@ evidence:
     reason: The speaker states the shot should be taken on the rise or fall, never at the peak, and later reinforces early contact as a modern trend.
     confidence: 0.88
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: fTyA1fjEOIk
       start_ms: 115200
@@ -72,7 +64,7 @@ evidence:
     reason: The transcript warns against hitting at the peak and recommends waiting until the descending phase or using different timing based on the ball's path.
     confidence: 0.88
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 02wQgAIcHKY
       start_ms: 109933
@@ -90,7 +82,7 @@ evidence:
     reason: The speaker explicitly distinguishes rising, peak, and falling contact and ties each phase to different outcomes for speed, power, and spin.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8143qxSjk5A
       start_ms: 71566
@@ -107,7 +99,7 @@ evidence:
     reason: The speaker distinguishes taking the ball on the rise versus at the peak of the bounce depending on incoming pace.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: wuXCwKRFM4k
       start_ms: 428933
@@ -124,7 +116,7 @@ evidence:
     reason: The speaker explains that hitting before the peak causes a push-like motion with no arc, and states the optimal contact point for topspin is the peak of the bounce.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 1Issn-5noM4
       start_ms: 70333
@@ -141,7 +133,7 @@ evidence:
     reason: The transcript repeatedly describes early contact, on the rise, and at the peak of the bounce as the desired timing.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: sBF131BmxwM
       start_ms: 445033
@@ -155,7 +147,7 @@ evidence:
     reason: The speaker says to contact slightly later on the ball's descent and summarizes that spin requires contacting the ball on its descent.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: xo9M8v9k564
       start_ms: 154066
@@ -169,7 +161,7 @@ evidence:
     reason: 'The transcript gives multiple timing rules: early off the bounce or early descent for pushes, highest point for digging a long push, and waiting for the ball to drop for wide serves.'
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 2HMLpiaJLL0
       start_ms: 32800
@@ -187,7 +179,7 @@ evidence:
     reason: The transcript states the weakest spin is on the rise or early descent and that the peak of the bounce is most potent.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: p-8pxqMG0kw
       start_ms: 294600
@@ -205,7 +197,7 @@ evidence:
     reason: The speaker contrasts hitting at the peak, starting too early, and waiting until the ball starts dropping from its peak.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: DBEaBAv16Y8
       start_ms: 107200
@@ -221,7 +213,7 @@ evidence:
     reason: The speaker contrasts contact on the rise with contact at the apex/high point of the bounce.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: nL5W5P6d_OA
       start_ms: 14666
@@ -238,7 +230,7 @@ evidence:
     reason: The speaker contrasts peak-of-bounce timing with rise timing and recommends peak contact for several receive shots.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 0D6FzvP33Xs
       start_ms: 162900
@@ -255,7 +247,7 @@ evidence:
     reason: Explains that 'at the peak' means start the swing there, and distinguishes peak, falling, and rising contact timing.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: krlH8_UzRRM
       start_ms: 20000
@@ -271,7 +263,7 @@ evidence:
     reason: The transcript explicitly contrasts early descending-phase contact with peak contact and rise contact, and frames this as a core timing skill.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 3EtitCzSYqY
       start_ms: 940766
@@ -289,7 +281,7 @@ evidence:
     reason: The speaker states that side-topspin should be taken on the rise and side-underspin just after the peak, and warns against hitting at the highest point.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ps9aOE0YKE8
       start_ms: 464000
@@ -305,7 +297,7 @@ evidence:
     reason: The speaker contrasts hitting at the peak with hitting on the rise and frames timing as the key variable.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: vzLW5MAX7gA
       start_ms: 19666
@@ -323,7 +315,7 @@ evidence:
     reason: The coach corrects rushing before the peak and repeatedly emphasizes waiting for the ball and contacting on the rise for looping and blocking.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: -uuSx6fU8yY
       start_ms: 512466
@@ -338,7 +330,7 @@ evidence:
     reason: The speaker says to stand back, let the ball drop, loop as it starts to fall, and move the contact point to the falling phase.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 0QxW3Un68gg
       start_ms: 567133
@@ -353,7 +345,7 @@ evidence:
     reason: The speaker distinguishes hitting on the rise, at the peak, and in the early descending phase, and ties each phase to different shot intentions.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: rOMRGvlgAAU
       start_ms: 169733
@@ -371,7 +363,7 @@ evidence:
     reason: The speaker says the ball should still be rising or at its peak as it crosses the net and that in pressure situations he focuses on securing the arc first.
     confidence: 0.89
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: y7Xd49MgdbQ
       start_ms: 468833
@@ -388,7 +380,7 @@ evidence:
     reason: The speaker contrasts swinging as the ball drops with hitting at the top of the bounce or just after peak, making timing a central concept.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: DfQ_yBSS_bk
       start_ms: 178233
@@ -405,7 +397,7 @@ evidence:
     reason: The speaker contrasts on-the-rise contact, peak contact, and falling-ball contact, assigning different tactical uses to each phase.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hNnojmq7CqU
       start_ms: 459466
@@ -423,7 +415,7 @@ evidence:
     reason: The speaker explicitly discusses whether to hit on the rise or at the top of the bounce and says on-the-rise is only suitable for certain balls.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: a1vta4dOA2Q
       start_ms: 535900
@@ -439,7 +431,7 @@ evidence:
     reason: The speaker says not to swing the instant the ball touches the table and instead start the forward swing at the peak or early descent, including against backspin.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: VDmGm94Awm4
       start_ms: 583866
@@ -456,7 +448,7 @@ evidence:
     reason: The transcript contrasts the top of the bounce with the descending phase and says the spin is heaviest right after the bounce.
     confidence: 0.93
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 4IHxQUdSvio
       start_ms: 772766
@@ -473,7 +465,7 @@ evidence:
     reason: The speaker says to time the ball on the rise and warns that waiting for the peak increases errors.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: yGWrxxrcvN4
       start_ms: 170400
@@ -489,7 +481,7 @@ evidence:
     reason: The speaker explicitly says the ideal moment is after the peak, in the early descending phase, and contrasts it with peak/on-the-rise contact.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 4hnrmSJ_Ayg
       start_ms: 28666
@@ -507,7 +499,7 @@ evidence:
     reason: The transcript explicitly contrasts rising phase, peak, and falling phase, and states the ideal topspin contact is at the peak of the bounce.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: oFlDgbWYjyk
       start_ms: 365300
@@ -523,7 +515,7 @@ evidence:
     reason: The speaker says the aggressive looping style requires taking the ball on the rise or at the peak of the bounce, and not waiting for it to drop.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hKQbi0Kk_Gs
       start_ms: 487633
@@ -538,7 +530,7 @@ evidence:
     reason: The speaker directly recommends contacting backspin just after the peak and contrasts it with trying to hit the spinniest point.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: yZKBUBBBSEw
       start_ms: 503933
@@ -554,7 +546,7 @@ evidence:
     reason: The speaker directly says to hit the ball at the peak of its bounce and warns that hitting on the way down causes more errors.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: GBudN8i0C1Y
       start_ms: 0
@@ -570,7 +562,7 @@ evidence:
     reason: The speaker explicitly says beginners should not hit at the peak or on the rise, but wait for the ball to begin falling to gain time and consistency.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: rLrnvlDBmTs
       start_ms: 571900
@@ -581,3 +573,70 @@ evidence:
         - rLrnvlDBmTs:00131
         - rLrnvlDBmTs:00078
         - rLrnvlDBmTs:00079
+  - id: 0QxW3Un68gg-concept-forehand-loop-contact-timing-on-the-fall-codex-reviewed
+    evidence_type: explanation
+    excerpt: Contacting the ball at the top of the bounce makes it harder to generate heavy spin; instead, loop on the fall and use that contact point to practice friction.
+    reason: This contiguous span directly explains that peak contact makes heavy spin harder and instructs practicing the loop during the falling phase. It matches the existing bounce-phase timing concept; the proposed forehand-specific concept would be redundant and the transcript does not explicitly identify the stroke as forehand.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 0QxW3Un68gg
+      start_ms: 596833
+      end_ms: 619033
+      url: https://www.youtube.com/watch?v=0QxW3Un68gg&t=596s
+      segment_ids:
+        - 0QxW3Un68gg:00113
+        - 0QxW3Un68gg:00114
+        - 0QxW3Un68gg:00115
+        - 0QxW3Un68gg:00116
+  - id: 1Issn-5noM4-concept-bounce-phase-shot-timing-codex-reviewed
+    evidence_type: explanation
+    excerpt: For a topspin ball, begin the forward swing at the peak of the bounce, not at the moment of contact.
+    reason: These contiguous segments define the peak as the optimal topspin contact point and clarify that it marks the start of the forward swing rather than contact itself.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 1Issn-5noM4
+      start_ms: 91066
+      end_ms: 102600
+      url: https://www.youtube.com/watch?v=1Issn-5noM4&t=91s
+      segment_ids:
+        - 1Issn-5noM4:00022
+        - 1Issn-5noM4:00023
+        - 1Issn-5noM4:00024
+  - id: krlH8_UzRRM-concept-bounce-phase-shot-timing-codex-reviewed
+    evidence_type: explanation
+    excerpt: Contacting the ball at its peak is rushing the shot; with backspin, wait for it to start dropping before initiating the swing. Falling contact means the swing started earlier, while peak contact is effectively on the rise.
+    reason: These contiguous segments directly explain the bounce-phase timing distinction and support the existing durable concept. The selected span is under 30 seconds.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: krlH8_UzRRM
+      start_ms: 37833
+      end_ms: 59566
+      url: https://www.youtube.com/watch?v=krlH8_UzRRM&t=37s
+      segment_ids:
+        - krlH8_UzRRM:00011
+        - krlH8_UzRRM:00012
+        - krlH8_UzRRM:00013
+        - krlH8_UzRRM:00014
+  - id: nL5W5P6d_OA-concept-bounce-phase-shot-timing-codex-reviewed
+    evidence_type: definition
+    excerpt: The speaker distinguishes contacting the ball during the rising phase immediately after the bounce from contacting it at the peak, also called the high point or apex.
+    reason: Segments 00003–00006 form one contiguous 22.7-second topic moment that directly defines and contrasts rising-phase and apex contact. The supplied existing concept is the same durable bounce-phase timing topic, so its exact ID is retained.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: nL5W5P6d_OA
+      start_ms: 14666
+      end_ms: 37333
+      url: https://www.youtube.com/watch?v=nL5W5P6d_OA&t=14s
+      segment_ids:
+        - nL5W5P6d_OA:00003
+        - nL5W5P6d_OA:00004
+        - nL5W5P6d_OA:00005
+        - nL5W5P6d_OA:00006

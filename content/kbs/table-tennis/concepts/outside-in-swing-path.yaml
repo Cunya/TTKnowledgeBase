@@ -2,61 +2,78 @@ id: concept-outside-in-swing-path
 slug: outside-in-swing-path
 label: Outside-in swing path
 aliases:
-  - outside-in swing path for both forehand and backhand
+- outside-in swing path for both forehand and backhand
 short_definition: A stroke structure where the racket travels on an outside-in path rather than relying on a generic or rigid racket angle.
 evidence_summary: >-
-  Outside-in swing path brings together several connected ideas. The outside-in path as the
-  correct stroke structure and it should be memorized. The player lacks an outside-in swing path
-  and must wrap the racket around the ball, swinging inward. Together, these principles show how
-  the topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:5a63551b22c385ee3e45a34b00c3d772850e71ee30b5ba789394b66842d3be32"
+  Segments 00019–00022 directly identify the correct stroke structure as an outside-in swing path for both forehand and backhand and distinguish it from relying on a standard movement or specific racket angle.
+evidence_summary_source_hash: "sha256:24a6130e8e3160589e9d2a4988f82b9d2f21bae10252bc6fbd3636c633b30ae4"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
   category:
-    - stroke
+  - stroke
   side:
-    - forehand
-    - backhand
+  - forehand
+  - backhand
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 606784af9b5b52deb69fd0d9b90eea990268cbad3f2d91ff51f3a8124c64a6bb
-  prompt_version: candidate-review-v1
+  input_hash: sha256:bae9e33b351c18134a851e972c26beeff48ad8969a57d25cda8a36347f933d0f
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: lXTZ5lpaWXE-concept-outside-in-swing-path-reviewed
-    evidence_type: definition
-    excerpt: A stroke structure where the racket travels on an outside-in path rather than relying on a generic or rigid racket angle.
-    reason: The speaker identifies the outside-in path as the correct stroke structure and says it should be memorized.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: lXTZ5lpaWXE
-      start_ms: 91766
-      end_ms: 106933
-      url: https://www.youtube.com/watch?v=lXTZ5lpaWXE&t=91s
-      segment_ids:
-        - lXTZ5lpaWXE:00019
-        - lXTZ5lpaWXE:00020
-        - lXTZ5lpaWXE:00021
-        - lXTZ5lpaWXE:00022
-  - id: ps9aOE0YKE8-concept-outside-in-swing-path-reviewed
-    evidence_type: explanation
-    excerpt: Using an outward-to-inward swing path to handle balls that break away from the body, especially right sidespin.
-    reason: The speaker explicitly says the player lacks an outside-in swing path and must wrap the racket around the ball, swinging inward.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: ps9aOE0YKE8
-      start_ms: 535800
-      end_ms: 562000
-      url: https://www.youtube.com/watch?v=ps9aOE0YKE8&t=535s
-      segment_ids:
-        - ps9aOE0YKE8:00115
-        - ps9aOE0YKE8:00118
-        - ps9aOE0YKE8:00119
-        - ps9aOE0YKE8:00120
+- id: lXTZ5lpaWXE-concept-outside-in-swing-path-reviewed
+  evidence_type: definition
+  excerpt: A stroke structure where the racket travels on an outside-in path rather than relying on a generic or rigid racket angle.
+  reason: The speaker identifies the outside-in path as the correct stroke structure and says it should be memorized.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: lXTZ5lpaWXE
+    start_ms: 91766
+    end_ms: 106933
+    url: https://www.youtube.com/watch?v=lXTZ5lpaWXE&t=91s
+    segment_ids:
+    - lXTZ5lpaWXE:00019
+    - lXTZ5lpaWXE:00020
+    - lXTZ5lpaWXE:00021
+    - lXTZ5lpaWXE:00022
+- id: ps9aOE0YKE8-concept-outside-in-swing-path-reviewed
+  evidence_type: explanation
+  excerpt: Using an outward-to-inward swing path to handle balls that break away from the body, especially right sidespin.
+  reason: The speaker explicitly says the player lacks an outside-in swing path and must wrap the racket around the ball, swinging inward.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: ps9aOE0YKE8
+    start_ms: 535800
+    end_ms: 562000
+    url: https://www.youtube.com/watch?v=ps9aOE0YKE8&t=535s
+    segment_ids:
+    - ps9aOE0YKE8:00115
+    - ps9aOE0YKE8:00118
+    - ps9aOE0YKE8:00119
+    - ps9aOE0YKE8:00120
+- id: lXTZ5lpaWXE-concept-outside-in-swing-path-codex-reviewed
+  evidence_type: definition
+  excerpt: Third, develop a correct stroke structure, focusing on a proper outside-in swing path for both your forehand and backhand. It isn't about how standard the movement is or a specific racket angle, but you must commit that outside-in swing path to memory.
+  reason: Segments 00019–00022 directly identify the correct stroke structure as an outside-in swing path for both forehand and backhand and distinguish it from relying on a standard movement or specific racket angle.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: lXTZ5lpaWXE
+    start_ms: 91766
+    end_ms: 106933
+    url: https://www.youtube.com/watch?v=lXTZ5lpaWXE&t=91s
+    segment_ids:
+    - lXTZ5lpaWXE:00019
+    - lXTZ5lpaWXE:00020
+    - lXTZ5lpaWXE:00021
+    - lXTZ5lpaWXE:00022

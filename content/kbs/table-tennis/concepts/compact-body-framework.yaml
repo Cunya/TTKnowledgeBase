@@ -8,16 +8,9 @@ aliases:
   - knees bent and core engaged
 short_definition: A compact posture with bent knees, engaged core, and controlled upper body helps keep the stroke stable and prevents form collapse.
 evidence_summary: >-
-  Compact body framework brings together several connected ideas. To keep the body compact, knees
-  bent, chest slightly in, and core engaged so the form stays intact. A useful contrast is between
-  a compact, spring-loaded body and a relaxed or upright one and says the form must not fall
-  apart. A useful contrast is between a loose, wobbly body and a compact, grounded one and says
-  compact motion is required in topspin rallies. Compact strokes, compact body movement, solid
-  form, balance, and avoiding oversized motions. Lowering the center of gravity, keeping knees
-  bent, engaging the core, and holding the shoulders contained as the basis of a compact and
-  efficient stroke. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:f168facb2e8b1c589e0968bb9a37d288d02bcaceb296f3cb568533684e951e8b"
+  A compact posture with bent knees, engaged core, and controlled upper body helps keep the stroke
+  stable and prevents form collapse.
+evidence_summary_source_hash: "sha256:453bcc0d3b326f0d0765878ede2012c88bd8eb9410f2d18410bbb993700a8d64"
 evidence_summary_generator: "deterministic"
 concept_type: new
 facets:
@@ -28,10 +21,13 @@ facets:
 difficulty: beginner
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: b4799b7668b5a488641167ccf8d0094edf3c1dec2563c083a7a2ca2ae4266992
-  prompt_version: candidate-review-v1
+  input_hash: sha256:401def82294eb547e53b4fa9c16c6d2b4b21ff7666fb5064be5b24bf660aaf33
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: qPpVIKNWMwY-candidate-compact-body-framework-reviewed
     evidence_type: definition
@@ -39,7 +35,7 @@ evidence:
     reason: The speaker repeatedly says to keep the body compact, knees bent, chest slightly in, and core engaged so the form stays intact.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: qPpVIKNWMwY
       start_ms: 141866
@@ -55,7 +51,7 @@ evidence:
     reason: The speaker explicitly contrasts a compact, spring-loaded body with a relaxed or upright one and says the form must not fall apart.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: _77LMM6s1cw
       start_ms: 448933
@@ -71,7 +67,7 @@ evidence:
     reason: The transcript contrasts a loose, wobbly body with a compact, grounded one and says compact motion is required in topspin rallies.
     confidence: 0.91
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: czp2jsURYQk
       start_ms: 375800
@@ -86,7 +82,7 @@ evidence:
     reason: The speaker repeatedly emphasizes compact strokes, compact body movement, solid form, balance, and avoiding oversized motions.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hi0AJuu60eE
       start_ms: 476433
@@ -102,7 +98,7 @@ evidence:
     reason: The speaker repeatedly emphasizes lowering the center of gravity, keeping knees bent, engaging the core, and holding the shoulders contained as the basis of a compact and efficient stroke.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: spoumRQdZHc
       start_ms: 431233
@@ -115,3 +111,34 @@ evidence:
         - spoumRQdZHc:00072
         - spoumRQdZHc:00073
         - spoumRQdZHc:00074
+  - id: czp2jsURYQk-concept-compact-body-framework-codex-reviewed
+    evidence_type: explanation
+    excerpt: Driving with your body means rotating your hips and shoulders, but the motion must be compact. You can use a bigger swing against backspin, but not in a topspin rally.
+    reason: This contiguous 11-second span directly explains compact body rotation and contrasts it with a larger backspin swing, matching the existing compact-body topic.
+    confidence: 0.9
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: czp2jsURYQk
+      start_ms: 745400
+      end_ms: 756633
+      url: https://www.youtube.com/watch?v=czp2jsURYQk&t=745s
+      segment_ids:
+        - czp2jsURYQk:00108
+        - czp2jsURYQk:00109
+  - id: hi0AJuu60eE-cand-3-codex-reviewed
+    evidence_type: explanation
+    excerpt: Professional players keep their movements compact; even in mid-distance topspin rallies, they maintain solid form, preserve their center of gravity, and avoid oversized motions.
+    reason: These contiguous segments directly support the existing compact-body topic by explaining compact movement, stable form, balance, and avoiding oversized motions during mid-distance topspin rallies.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: hi0AJuu60eE
+      start_ms: 476433
+      end_ms: 497733
+      url: https://www.youtube.com/watch?v=hi0AJuu60eE&t=476s
+      segment_ids:
+        - hi0AJuu60eE:00050
+        - hi0AJuu60eE:00051
+        - hi0AJuu60eE:00052

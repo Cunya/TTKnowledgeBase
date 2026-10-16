@@ -6,11 +6,9 @@ aliases:
   - serve return framework
 short_definition: A receive framework that prioritizes getting the first ball over the net, then using the first few returns to judge spin and adjust quality and power.
 evidence_summary: >-
-  Serve return principles brings together several connected ideas. With serve return as the focus
-  and later summarizes the receive principle: get the ball over the net first, then add quality
-  after observing early returns. Together, these principles show how the topic is applied in
-  practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:d99901aafc9dd2add8e9846dd26cea214f2368c469fbf8fe585d7af613254a81"
+  A receive framework that prioritizes getting the first ball over the net, then using the first
+  few returns to judge spin and adjust quality and power.
+evidence_summary_source_hash: "sha256:5336ed68a254a6b2daeeb3de637b12dd20b88d66ad8da66943d4783b1aabc5c9"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -25,10 +23,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 985c58b36b29c3d5960a2a2a374830e99648b93fed402eb8ab0ad65eb3a0f2c9
-  prompt_version: candidate-review-v1
+  input_hash: sha256:d58e88a05fec4e6cb05b92ba2865aca10a77c6d6f563eeece9287255a5b4d614
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: hw8RsLGOARs-concept-serve-return-principles-reviewed
     evidence_type: explanation
@@ -36,7 +37,7 @@ evidence:
     reason: 'The transcript opens with serve return as the focus and later summarizes the receive principle: get the ball over the net first, then add quality after observing early returns.'
     confidence: 0.94
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hw8RsLGOARs
       start_ms: 962433
@@ -45,3 +46,19 @@ evidence:
       segment_ids:
         - hw8RsLGOARs:00190
         - hw8RsLGOARs:00192
+  - id: hw8RsLGOARs-concept-serve-return-principles-codex-reviewed
+    evidence_type: explanation
+    excerpt: The principle for returning serve is to first get the ball over the net with enough spin and avoid using power, then observe the first few returns.
+    reason: These contiguous segments explicitly introduce the serve-return principle, state the priority of a safe return without power, and describe observing the first few returns. The supplied concept is the same durable topic as the existing concept.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: hw8RsLGOARs
+      start_ms: 898333
+      end_ms: 909433
+      url: https://www.youtube.com/watch?v=hw8RsLGOARs&t=898s
+      segment_ids:
+        - hw8RsLGOARs:00177
+        - hw8RsLGOARs:00178
+        - hw8RsLGOARs:00179

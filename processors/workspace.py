@@ -9,6 +9,10 @@ from .utils import read_yaml
 KB_ID = re.compile(r"^[a-z0-9][a-z0-9-]*$")
 
 
+def processing_is_paused(manifest_dir: Path) -> bool:
+    return (manifest_dir / "published-audit-pause.json").exists()
+
+
 @dataclass(frozen=True)
 class KnowledgeBasePaths:
     root: Path

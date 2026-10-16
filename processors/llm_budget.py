@@ -4,9 +4,11 @@ from dataclasses import dataclass
 from datetime import UTC, datetime
 from math import ceil
 from pathlib import Path
+from subprocess import SubprocessError
 from typing import Any
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
+from .account_quota import quota_block_reason, read_account_rate_limits
 from .utils import read_json, read_yaml, write_json
 
 DEFAULT_DAILY_TOKEN_LIMIT = 500_000
@@ -88,6 +90,12 @@ class LLMTokenBudget:
         config = read_yaml(config_path) or {}
         raw = config.get("llm_budget", {}) or {}
         self.enabled = bool(raw.get("enabled", True))
+        quota = raw.get("account_quota", {}) or {}
+        self.quota_enabled = bool(quota.get("enabled", False))
+        self.quota_threshold = float(quota.get("stop_at_used_percent", 80))
+        self.quota_grace = float(quota.get("five_hour_reset_grace_minutes", 10))
+        if not 0 < self.quota_threshold <= 100 or not 0 <= self.quota_grace <= 300:
+            raise ValueError("Invalid account quota threshold or reset grace")
         self.timezone_name = str(raw.get("timezone", "local"))
         self.daily_limit = int(raw.get("daily_token_limit", DEFAULT_DAILY_TOKEN_LIMIT))
         if self.daily_limit < 0:
@@ -202,6 +210,13 @@ class LLMTokenBudget:
         input_hash: str | None = None,
         output_tokens: int | None = None,
     ) -> BudgetReservation:
+        if self.quota_enabled:
+            try:
+                reason = quota_block_reason(read_account_rate_limits(), self.quota_threshold, self.quota_grace)
+            except (OSError, ValueError, TimeoutError, SubprocessError) as error:
+                reason = f"account quota unavailable: {error}"
+            if reason:
+                raise LLMBudgetExceeded(task, 0, self.status(), reason)
         if not self.enabled:
             return BudgetReservation(self, "", task, 0, None, input_hash, disabled=True)
         if task not in self.output_limits:

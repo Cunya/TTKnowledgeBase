@@ -8,20 +8,9 @@ aliases:
   - stable wrist
 short_definition: Controlling backhand direction by setting the racket face angle precisely rather than depending on wrist flicking.
 evidence_summary: >-
-  Backhand racket-face angle adjustment brings together several connected ideas. Racket-face
-  accuracy and a slight leftward angle when adjusting the line. The receive racket face should
-  mirror the incoming face angle, using vertical, flat, or more vertical angles to control the
-  trajectory. The racket face is too open, then recommends closing it slightly and using that
-  angle as the contact point. The racket angle should always be closed and remain consistent
-  through the full motion. The racket face should not be square, should hook slightly inward, and
-  should be slightly closed to wrap around the ball. Against backspin and topspin the racket angle
-  should stay closed, and that opening it kills friction and quality. Although on hook serve, the
-  specific issue described is racket-face angle control and checking whether it stays aligned
-  after follow-through. To keep the racket angle closed and an open face causes long balls and
-  prevents real spin generation. Additional points reinforce the same theme. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:36bc358009648971f54fc8081861b0afa62eab2a6bdd2ad060b768b322a7d742"
+  Controlling backhand direction by setting the racket face angle precisely rather than depending
+  on wrist flicking.
+evidence_summary_source_hash: "sha256:b1e98e846ba9a4394c611433ced14cc3b23e8d6bd671789cf2a1dedbd3cea3c0"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -32,10 +21,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 2c12d96c11853ebba9d005ccd689291fff3f7e32e3e23a54714e9992edbb0fbf
-  prompt_version: candidate-review-v1
+  input_hash: sha256:de7d5e0b721f62bb000ab26a91c5b7bcafe0577f5f82b86620748370c922781e
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: too3B9ITqqU-concept-backhand-racket-face-angle-adjustment-reviewed
     evidence_type: explanation
@@ -43,7 +35,7 @@ evidence:
     reason: The speaker emphasizes racket-face accuracy and a slight leftward angle when adjusting the line.
     confidence: 0.91
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: too3B9ITqqU
       start_ms: 235833
@@ -62,7 +54,7 @@ evidence:
     reason: The speaker explains opening the racket face and adjusting racket angle to receive and loop the ball.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: TtrTmkMdEzo
       start_ms: 197000
@@ -78,7 +70,7 @@ evidence:
     reason: He says he can execute the flick by opening the racket angle, and later instructs bending the wrist back and opening the racket face.
     confidence: 0.92
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: suG8AopFBIc
       start_ms: 152633
@@ -92,7 +84,7 @@ evidence:
     reason: The speaker says open racket face alone does not cause the ball to go long; the main issue is an overly upward trajectory and high contact/blocking angle.
     confidence: 0.89
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: T40bWiitfAU
       start_ms: 279133
@@ -109,7 +101,7 @@ evidence:
     reason: The speaker explains that the receive racket face should mirror the incoming face angle, using vertical, flat, or more vertical angles to control the trajectory.
     confidence: 0.89
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: uAOIQu7TT0g
       start_ms: 81133
@@ -128,7 +120,7 @@ evidence:
     reason: The speaker states that more spin requires a flatter racket angle, while less spin needs a more vertical one.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: mPRFTyZICY4
       start_ms: 673200
@@ -143,7 +135,7 @@ evidence:
     reason: These lines identify racket face instability, especially from elbow and grip issues, and recommend a firm, secure pinch grip.
     confidence: 0.87
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: nukEclWHWn4
       start_ms: 569166
@@ -162,7 +154,7 @@ evidence:
     reason: The speaker recommends opening the racket slightly to make looping easier, then closing it to improve spin and table control.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ySM92aDSRPo
       start_ms: 402966
@@ -179,7 +171,7 @@ evidence:
     reason: The speaker states that backspin loop mistakes often hit the lower half when the upper half is correct, and that the upper half is needed for spin.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Myj_Ros1xV8
       start_ms: 523266
@@ -194,7 +186,7 @@ evidence:
     reason: The speaker says the racket face is too open, then recommends closing it slightly and using that angle as the contact point.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: EjtP5uCaULU
       start_ms: 101366
@@ -210,7 +202,7 @@ evidence:
     reason: The speaker specifies elbow-down and racket-head-down positions, including the 10 o'clock reference and the racket head being lower than the wrist.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: JfZ-7fgsF-o
       start_ms: 42400
@@ -226,7 +218,7 @@ evidence:
     reason: The speaker says they are analyzing racket angle and notes that many players fail to adjust it enough for the backhand rip.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: nL5W5P6d_OA
       start_ms: 141533
@@ -241,7 +233,7 @@ evidence:
     reason: The speaker stresses fixing the racket angle and keeping it consistent from preparation through follow-through for stability.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 0D6FzvP33Xs
       start_ms: 520166
@@ -256,7 +248,7 @@ evidence:
     reason: The speaker directly states the racket angle should always be closed and remain consistent through the full motion.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: jTCRnIWq0lI
       start_ms: 194800
@@ -272,7 +264,7 @@ evidence:
     reason: The speaker repeatedly emphasizes closing or keeping the racket face fairly vertical for the backhand loop.
     confidence: 0.94
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Mo-eWN8_354
       start_ms: 429933
@@ -287,7 +279,7 @@ evidence:
     reason: The speaker directly states that when the racket face gets too vertical, the correction should come from wrist rotation, not from moving the whole arm.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ZW9bduR7FXk
       start_ms: 756366
@@ -305,7 +297,7 @@ evidence:
     reason: The speaker notes that opening the racket angle causes a push to go long and that a standard push can go high.
     confidence: 0.89
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8QSCtikekto
       start_ms: 0
@@ -319,7 +311,7 @@ evidence:
     reason: The speaker warns against pointing the racket toward yourself, says the face should angle to the right side, and insists the angle be maintained through contact.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: cSDOaQqEtTQ
       start_ms: 83800
@@ -335,7 +327,7 @@ evidence:
     reason: The speaker says the racket face should not be square, should hook slightly inward, and should be slightly closed to wrap around the ball.
     confidence: 0.89
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: DfQ_yBSS_bk
       start_ms: 103466
@@ -354,7 +346,7 @@ evidence:
     reason: The speaker repeatedly attributes missing or sending balls long to racket-angle instability and emphasizes keeping the racket face stable and more closed than open.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: V9r3Z6D3skI
       start_ms: 352100
@@ -371,7 +363,7 @@ evidence:
     reason: The racket face should point straight ahead, and later the speaker says only the wrist should be used to adjust racket angle.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: nvQeXUtF2CM
       start_ms: 758233
@@ -388,7 +380,7 @@ evidence:
     reason: The speaker explains that a too-forward racket causes rushing on a high-arc loop, that slower balls require bringing the hand back, and that on slow spinny loops you should close the racket angle.
     confidence: 0.86
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: rR9HWla28Sc
       start_ms: 308066
@@ -403,7 +395,7 @@ evidence:
     reason: The speaker directly says against backspin and topspin the racket angle should stay closed, and that opening it kills friction and quality.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: qfB1tscK4xk
       start_ms: 491466
@@ -419,7 +411,7 @@ evidence:
     reason: The speaker says to keep the racket angle fixed and not use the wrist.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ku3pB8FPhtM
       start_ms: 108200
@@ -434,7 +426,7 @@ evidence:
     reason: The speaker repeatedly identifies opening the racket face as the key technique for receiving the sinking long-pips ball and looping it.
     confidence: 0.89
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: itzB36f9_R0
       start_ms: 61733
@@ -451,7 +443,7 @@ evidence:
     reason: The speaker prescribes a consistent 2 o'clock racket angle, explains that closing the racket too much causes edge hits, and stresses that the face should stay stable through contact and follow-through.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 1E475xXl9HA
       start_ms: 555600
@@ -467,7 +459,7 @@ evidence:
     reason: The speaker repeatedly attributes errors to racket-face wobble and says the face must remain stable from backswing to contact.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hQAxpSuplGM
       start_ms: 676933
@@ -483,7 +475,7 @@ evidence:
     reason: Although the transcript centers on hook serve, the specific issue described is racket-face angle control and checking whether it stays aligned after follow-through.
     confidence: 0.89
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: KNhwuuZ6Vpo
       start_ms: 619833
@@ -498,7 +490,7 @@ evidence:
     reason: The speaker repeatedly instructs a vertical racket angle for pushing on these serves.
     confidence: 0.92
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 6K2G7nKr6nU
       start_ms: 215766
@@ -513,7 +505,7 @@ evidence:
     reason: The speaker says to open the racket face and keep the racket vertical when handling long-pips returns.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: U6iP2eWxCDA
       start_ms: 451833
@@ -528,7 +520,7 @@ evidence:
     reason: The speaker says the racket face must follow the ball to aim properly and the wrist must stay firm.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: XaU6LtcP_n0
       start_ms: 130933
@@ -543,7 +535,7 @@ evidence:
     reason: The speaker explicitly says to keep the racket angle closed and explains that an open face causes long balls and prevents real spin generation.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: yqSECRch8WM
       start_ms: 292566
@@ -553,3 +545,110 @@ evidence:
         - yqSECRch8WM:00032
         - yqSECRch8WM:00033
         - yqSECRch8WM:00034
+  - id: cSDOaQqEtTQ-concept-backhand-racket-face-angle-adjustment-codex-reviewed
+    evidence_type: explanation
+    excerpt: For the backhand flick, do not point the racket face toward yourself; angle it toward your right side and maintain that angle from the backswing through contact.
+    reason: The contiguous selected span identifies the incorrect racket orientation, gives the required rightward angle, and states that it must be maintained through contact for the backhand flick.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: cSDOaQqEtTQ
+      start_ms: 83800
+      end_ms: 107166
+      url: https://www.youtube.com/watch?v=cSDOaQqEtTQ&t=83s
+      segment_ids:
+        - cSDOaQqEtTQ:00018
+        - cSDOaQqEtTQ:00019
+        - cSDOaQqEtTQ:00020
+        - cSDOaQqEtTQ:00021
+        - cSDOaQqEtTQ:00022
+  - id: hQAxpSuplGM-concept-backhand-racket-face-angle-adjustment-codex-reviewed
+    evidence_type: explanation
+    excerpt: It's often because your racket face is unstable at contact. From backswing to contact, your racket face must remain stable. This is for a drive, but it's also true for a loop. In a loop, there's just a slight brushing motion from the wrist, but the overall racket face must be stable upon contact.
+    reason: This contiguous 23.5-second span directly explains racket-face stability through contact and distinguishes it from the slight wrist brushing used in a loop, matching the existing durable concept.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: hQAxpSuplGM
+      start_ms: 589433
+      end_ms: 612900
+      url: https://www.youtube.com/watch?v=hQAxpSuplGM&t=589s
+      segment_ids:
+        - hQAxpSuplGM:00105
+        - hQAxpSuplGM:00106
+        - hQAxpSuplGM:00107
+        - hQAxpSuplGM:00108
+  - id: mchHxJnHUzE-concept-backhand-racket-face-angle-adjustment-codex-reviewed
+    evidence_type: explanation
+    excerpt: When backhand looping against backspin, close the racket angle; starting with a closed racket face prevents the ball from flying off the table, and the correct motion is “closed first, then open.”
+    reason: This contiguous 15-second span directly explains closing the racket face for a backhand loop against backspin and starting closed before opening naturally.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: mchHxJnHUzE
+      start_ms: 295433
+      end_ms: 320366
+      url: https://www.youtube.com/watch?v=mchHxJnHUzE&t=295s
+      segment_ids:
+        - mchHxJnHUzE:00065
+        - mchHxJnHUzE:00066
+        - mchHxJnHUzE:00067
+        - mchHxJnHUzE:00068
+        - mchHxJnHUzE:00069
+        - mchHxJnHUzE:00070
+  - id: nL5W5P6d_OA-concept-backhand-racket-face-angle-adjustment-codex-reviewed
+    evidence_type: explanation
+    excerpt: From the start of the backswing, keep the racket angle closed over the ball; this covering action allows acceleration through the second half of the stroke.
+    reason: These contiguous segments directly explain that the backhand racket angle should close over the ball from backswing through contact, with a closed angle enabling acceleration and a covering action.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: nL5W5P6d_OA
+      start_ms: 225800
+      end_ms: 251933
+      url: https://www.youtube.com/watch?v=nL5W5P6d_OA&t=225s
+      segment_ids:
+        - nL5W5P6d_OA:00047
+        - nL5W5P6d_OA:00048
+        - nL5W5P6d_OA:00049
+        - nL5W5P6d_OA:00050
+        - nL5W5P6d_OA:00051
+  - id: nvQeXUtF2CM-concept-backhand-racket-face-angle-adjustment-codex-reviewed
+    evidence_type: explanation
+    excerpt: Keep the upper arm pointing down and forearm level; use only the wrist to adjust racket angle—down to close the face and up to open it—while keeping the arm relationship stable.
+    reason: The selected contiguous 20.3-second span directly explains that racket-face angle should be adjusted with the wrist rather than by lifting the elbow, while the arm structure remains stable. It matches the supplied existing concept.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: nvQeXUtF2CM
+      start_ms: 758233
+      end_ms: 782500
+      url: https://www.youtube.com/watch?v=nvQeXUtF2CM&t=758s
+      segment_ids:
+        - nvQeXUtF2CM:00155
+        - nvQeXUtF2CM:00156
+        - nvQeXUtF2CM:00157
+        - nvQeXUtF2CM:00158
+        - nvQeXUtF2CM:00159
+        - nvQeXUtF2CM:00160
+  - id: JfZ-7fgsF-o-concept-backhand-racket-face-angle-adjustment-codex-reviewed
+    evidence_type: explanation
+    excerpt: For your backhand drive, your elbow must point downwards, and the racket head should point to 10 o'clock. With your elbow down, the backswing position should be around the height of your belly button.
+    reason: These contiguous segments directly explain the backhand racket and elbow alignment, including the 10 o'clock racket-head position and backswing height.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: JfZ-7fgsF-o
+      start_ms: 42400
+      end_ms: 59300
+      url: https://www.youtube.com/watch?v=JfZ-7fgsF-o&t=42s
+      segment_ids:
+        - JfZ-7fgsF-o:00010
+        - JfZ-7fgsF-o:00011
+        - JfZ-7fgsF-o:00012

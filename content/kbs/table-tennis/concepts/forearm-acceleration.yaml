@@ -2,245 +2,272 @@ id: concept-forearm-acceleration
 slug: forearm-acceleration
 label: Forearm acceleration
 aliases:
-  - forearm-driven spin
-  - forearm dominant spin action
+- forearm-driven spin
+- forearm dominant spin action
 short_definition: Use forearm acceleration as the main power source to create maximum spin and proper arc over the table.
 evidence_summary: >-
-  Forearm acceleration brings together several connected ideas. Forearm acceleration as of maximum
-  spin and the loop as forearm-dominant. The forearm adds speed and that the main acceleration
-  comes from the second segment. The elbow is the pivot, the upper arm should not move, and the
-  forearm is the main of power. The forearm provides depth and drives the ball forward when the
-  ball is short. To accelerate the forearm forward, snap the forearm after the upper arm stops,
-  and use forearm drive into the ball. Force should come from the forearm, with the elbow used as
-  an axis and the forearm accelerated for speed and quality. Brushing must be combined with a
-  forward-moving forearm, and demonstrates the forearm moving forward first while the wrist snaps
-  at contact. Forearm acceleration and it as a whip after the elbow brakes. Additional points
-  reinforce the same theme. Together, these principles show how the topic is applied in practice
-  while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:4e71d88284ce9a00eed93b7dcba42ed79452ff483db0c2c369f37be81eaf88bd"
+  This contiguous segment directly explains forearm acceleration as the forward phase after brushing contact. This contiguous segment directly explains that the shoulder and elbow should remain fixed and that forearm action generates speed, matching the existing concept of forearm acceleration.
+evidence_summary_source_hash: "sha256:3443fb62ae53e1f72eed625daf7d95e682384faff0130267b96f344d9facf2bf"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
   category:
-    - stroke
+  - stroke
   level:
-    - intermediate
+  - intermediate
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 4d63a4f03846e71d21d99e501686151f8de79f39b644f378a43a96847536aa7f
-  prompt_version: candidate-review-v1
+  input_hash: sha256:291d429a0b6f1e5f70e9238c9c21f78be663d49e7479d25ee4a2227b9177f3de
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: ONXmZHozLTA-concept-forearm-acceleration-reviewed
-    evidence_type: explanation
-    excerpt: Use forearm acceleration as the main power source to create maximum spin and proper arc over the table.
-    reason: The speaker directly identifies forearm acceleration as the source of maximum spin and describes the loop as forearm-dominant.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: ONXmZHozLTA
-      start_ms: 400400
-      end_ms: 426760
-      url: https://www.youtube.com/watch?v=ONXmZHozLTA&t=400s
-      segment_ids:
-        - ONXmZHozLTA:00145
-        - ONXmZHozLTA:00146
-        - ONXmZHozLTA:00147
-        - ONXmZHozLTA:00151
-        - ONXmZHozLTA:00152
-        - ONXmZHozLTA:00153
-        - ONXmZHozLTA:00154
-  - id: wqX8Wt7saIM-concept-forearm-acceleration-reviewed
-    evidence_type: explanation
-    excerpt: Generating additional power by increasing forearm swing speed while preserving brushing contact.
-    reason: The speaker says power comes from maintaining the brushing feeling and speeding up the forearm swing.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: wqX8Wt7saIM
-      start_ms: 411700
-      end_ms: 419033
-      url: https://www.youtube.com/watch?v=wqX8Wt7saIM&t=411s
-      segment_ids:
-        - wqX8Wt7saIM:00123
-        - wqX8Wt7saIM:00124
-        - wqX8Wt7saIM:00125
-        - wqX8Wt7saIM:00126
-  - id: PNhGSy_Dbg0-concept-forearm-acceleration-reviewed
-    evidence_type: explanation
-    excerpt: Using the forearm as the main accelerating segment after the upper arm initiates the motion.
-    reason: The speaker explicitly says the forearm adds speed and that the main acceleration comes from the second segment.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: PNhGSy_Dbg0
-      start_ms: 263600
-      end_ms: 291000
-      url: https://www.youtube.com/watch?v=PNhGSy_Dbg0&t=263s
-      segment_ids:
-        - PNhGSy_Dbg0:00085
-        - PNhGSy_Dbg0:00086
-        - PNhGSy_Dbg0:00089
-        - PNhGSy_Dbg0:00090
-        - PNhGSy_Dbg0:00091
-        - PNhGSy_Dbg0:00095
-  - id: wuXCwKRFM4k-concept-forearm-acceleration-in-backhand-rip-reviewed
-    evidence_type: explanation
-    excerpt: The main source of power in the backhand rip, produced by keeping the upper arm quiet and accelerating the forearm through contact.
-    reason: The speaker says the elbow is the pivot, the upper arm should not move, and the forearm is the main source of power.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: wuXCwKRFM4k
-      start_ms: 184700
-      end_ms: 199633
-      url: https://www.youtube.com/watch?v=wuXCwKRFM4k&t=184s
-      segment_ids:
-        - wuXCwKRFM4k:00042
-        - wuXCwKRFM4k:00043
-        - wuXCwKRFM4k:00044
-  - id: mPRFTyZICY4-concept-forearm-acceleration-reviewed
-    evidence_type: explanation
-    excerpt: Fast push speed is generated primarily by accelerating the forearm rather than the whole arm or upper arm.
-    reason: The speaker explicitly says the power comes mainly from the forearm and that it should accelerate at contact.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: mPRFTyZICY4
-      start_ms: 103133
-      end_ms: 123633
-      url: https://www.youtube.com/watch?v=mPRFTyZICY4&t=103s
-      segment_ids:
-        - mPRFTyZICY4:00025
-        - mPRFTyZICY4:00027
-        - mPRFTyZICY4:00028
-  - id: yIBhoQsBD9k-concept-forearm-acceleration-reviewed
-    evidence_type: explanation
-    excerpt: Use the forearm to add forward depth and drive the ball long after finger lift at contact.
-    reason: The speaker says the forearm provides depth and drives the ball forward when the ball is short.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: yIBhoQsBD9k
-      start_ms: 252566
-      end_ms: 280533
-      url: https://www.youtube.com/watch?v=yIBhoQsBD9k&t=252s
-      segment_ids:
-        - yIBhoQsBD9k:00057
-        - yIBhoQsBD9k:00059
-        - yIBhoQsBD9k:00061
-  - id: f7Bf-QRn-9Q-concept-forearm-acceleration-reviewed
-    evidence_type: explanation
-    excerpt: A rapid forearm snap after the initial forward drive that adds speed, quality, and extra acceleration to the loop.
-    reason: The speaker states that the secondary acceleration is accomplished by the forearm and that this is primarily forearm acceleration.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: f7Bf-QRn-9Q
-      start_ms: 654400
-      end_ms: 679333
-      url: https://www.youtube.com/watch?v=f7Bf-QRn-9Q&t=654s
-      segment_ids:
-        - f7Bf-QRn-9Q:00139
-        - f7Bf-QRn-9Q:00144
-  - id: D596gPtN634-concept-forearm-acceleration-reviewed
-    evidence_type: explanation
-    excerpt: Using the forearm to accelerate the stroke and generate the main forward speed after the brushing contact is prepared.
-    reason: The speaker says to accelerate the forearm forward, snap the forearm after the upper arm stops, and use forearm drive into the ball.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: D596gPtN634
-      start_ms: 195166
-      end_ms: 214366
-      url: https://www.youtube.com/watch?v=D596gPtN634&t=195s
-      segment_ids:
-        - D596gPtN634:00041
-        - D596gPtN634:00043
-  - id: WZnZIhZkkRo-concept-forearm-acceleration-reviewed
-    evidence_type: explanation
-    excerpt: The forearm supplies the main accelerating action after the upper arm has stopped or been stabilized.
-    reason: The speaker explicitly says the power and acceleration come from the forearm, after separating upper-arm movement from forearm acceleration.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: WZnZIhZkkRo
-      start_ms: 343333
-      end_ms: 356966
-      url: https://www.youtube.com/watch?v=WZnZIhZkkRo&t=343s
-      segment_ids:
-        - WZnZIhZkkRo:00072
-        - WZnZIhZkkRo:00074
-        - WZnZIhZkkRo:00076
-  - id: OSfqukeeo_I-concept-forearm-acceleration-reviewed
-    evidence_type: explanation
-    excerpt: A serve or stroke power pattern where the forearm is the main accelerating segment, rather than the whole arm moving together.
-    reason: The speaker explicitly says force should come from the forearm, with the elbow used as an axis and the forearm accelerated for speed and quality.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: OSfqukeeo_I
-      start_ms: 488633
-      end_ms: 508766
-      url: https://www.youtube.com/watch?v=OSfqukeeo_I&t=488s
-      segment_ids:
-        - OSfqukeeo_I:00087
-        - OSfqukeeo_I:00090
-  - id: tFXmtu4Egw8-concept-forearm-forward-movement-in-looping-reviewed
-    evidence_type: demonstration
-    excerpt: Use a forward-moving forearm to locate and contact the ball during looping, rather than relying on the arm as a rigid unit.
-    reason: The speaker says brushing must be combined with a forward-moving forearm, and demonstrates the forearm moving forward first while the wrist snaps at contact.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: tFXmtu4Egw8
-      start_ms: 435333
-      end_ms: 455133
-      url: https://www.youtube.com/watch?v=tFXmtu4Egw8&t=435s
-      segment_ids:
-        - tFXmtu4Egw8:00074
-        - tFXmtu4Egw8:00075
-        - tFXmtu4Egw8:00076
-  - id: AoJq7UfIhp8-concept-forearm-acceleration-reviewed
-    evidence_type: explanation
-    excerpt: After friction and wrist preparation, the forearm contributes acceleration to the fast loop.
-    reason: The speaker explicitly says a flick relies mainly on the forearm and that the fast loop is driven by finger and wrist friction that engages the forearm.
-    confidence: 0.86
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: AoJq7UfIhp8
-      start_ms: 630266
-      end_ms: 641066
-      url: https://www.youtube.com/watch?v=AoJq7UfIhp8&t=630s
-      segment_ids:
-        - AoJq7UfIhp8:00135
-        - AoJq7UfIhp8:00136
-  - id: tQSnBjtseLI-concept-forearm-acceleration-reviewed
-    evidence_type: definition
-    excerpt: A late acceleration of the forearm after the elbow or shoulder has stopped, producing a whip-like burst of power.
-    reason: The speaker directly names forearm acceleration and describes it as a whip after the elbow brakes.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: tQSnBjtseLI
-      start_ms: 506733
-      end_ms: 526066
-      url: https://www.youtube.com/watch?v=tQSnBjtseLI&t=506s
-      segment_ids:
-        - tQSnBjtseLI:00076
-        - tQSnBjtseLI:00077
+- id: ONXmZHozLTA-concept-forearm-acceleration-reviewed
+  evidence_type: explanation
+  excerpt: Use forearm acceleration as the main power source to create maximum spin and proper arc over the table.
+  reason: The speaker directly identifies forearm acceleration as the source of maximum spin and describes the loop as forearm-dominant.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: ONXmZHozLTA
+    start_ms: 400400
+    end_ms: 426760
+    url: https://www.youtube.com/watch?v=ONXmZHozLTA&t=400s
+    segment_ids:
+    - ONXmZHozLTA:00145
+    - ONXmZHozLTA:00146
+    - ONXmZHozLTA:00147
+    - ONXmZHozLTA:00151
+    - ONXmZHozLTA:00152
+    - ONXmZHozLTA:00153
+    - ONXmZHozLTA:00154
+- id: wqX8Wt7saIM-concept-forearm-acceleration-reviewed
+  evidence_type: explanation
+  excerpt: Generating additional power by increasing forearm swing speed while preserving brushing contact.
+  reason: The speaker says power comes from maintaining the brushing feeling and speeding up the forearm swing.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: wqX8Wt7saIM
+    start_ms: 411700
+    end_ms: 419033
+    url: https://www.youtube.com/watch?v=wqX8Wt7saIM&t=411s
+    segment_ids:
+    - wqX8Wt7saIM:00123
+    - wqX8Wt7saIM:00124
+    - wqX8Wt7saIM:00125
+    - wqX8Wt7saIM:00126
+- id: PNhGSy_Dbg0-concept-forearm-acceleration-reviewed
+  evidence_type: explanation
+  excerpt: Using the forearm as the main accelerating segment after the upper arm initiates the motion.
+  reason: The speaker explicitly says the forearm adds speed and that the main acceleration comes from the second segment.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: PNhGSy_Dbg0
+    start_ms: 263600
+    end_ms: 291000
+    url: https://www.youtube.com/watch?v=PNhGSy_Dbg0&t=263s
+    segment_ids:
+    - PNhGSy_Dbg0:00085
+    - PNhGSy_Dbg0:00086
+    - PNhGSy_Dbg0:00089
+    - PNhGSy_Dbg0:00090
+    - PNhGSy_Dbg0:00091
+    - PNhGSy_Dbg0:00095
+- id: wuXCwKRFM4k-concept-forearm-acceleration-in-backhand-rip-reviewed
+  evidence_type: explanation
+  excerpt: The main source of power in the backhand rip, produced by keeping the upper arm quiet and accelerating the forearm through contact.
+  reason: The speaker says the elbow is the pivot, the upper arm should not move, and the forearm is the main source of power.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: wuXCwKRFM4k
+    start_ms: 184700
+    end_ms: 199633
+    url: https://www.youtube.com/watch?v=wuXCwKRFM4k&t=184s
+    segment_ids:
+    - wuXCwKRFM4k:00042
+    - wuXCwKRFM4k:00043
+    - wuXCwKRFM4k:00044
+- id: mPRFTyZICY4-concept-forearm-acceleration-reviewed
+  evidence_type: explanation
+  excerpt: Fast push speed is generated primarily by accelerating the forearm rather than the whole arm or upper arm.
+  reason: The speaker explicitly says the power comes mainly from the forearm and that it should accelerate at contact.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: mPRFTyZICY4
+    start_ms: 103133
+    end_ms: 123633
+    url: https://www.youtube.com/watch?v=mPRFTyZICY4&t=103s
+    segment_ids:
+    - mPRFTyZICY4:00025
+    - mPRFTyZICY4:00027
+    - mPRFTyZICY4:00028
+- id: yIBhoQsBD9k-concept-forearm-acceleration-reviewed
+  evidence_type: explanation
+  excerpt: Use the forearm to add forward depth and drive the ball long after finger lift at contact.
+  reason: The speaker says the forearm provides depth and drives the ball forward when the ball is short.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: yIBhoQsBD9k
+    start_ms: 252566
+    end_ms: 280533
+    url: https://www.youtube.com/watch?v=yIBhoQsBD9k&t=252s
+    segment_ids:
+    - yIBhoQsBD9k:00057
+    - yIBhoQsBD9k:00059
+    - yIBhoQsBD9k:00061
+- id: f7Bf-QRn-9Q-concept-forearm-acceleration-reviewed
+  evidence_type: explanation
+  excerpt: A rapid forearm snap after the initial forward drive that adds speed, quality, and extra acceleration to the loop.
+  reason: The speaker states that the secondary acceleration is accomplished by the forearm and that this is primarily forearm acceleration.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: f7Bf-QRn-9Q
+    start_ms: 654400
+    end_ms: 679333
+    url: https://www.youtube.com/watch?v=f7Bf-QRn-9Q&t=654s
+    segment_ids:
+    - f7Bf-QRn-9Q:00139
+    - f7Bf-QRn-9Q:00144
+- id: D596gPtN634-concept-forearm-acceleration-reviewed
+  evidence_type: explanation
+  excerpt: Using the forearm to accelerate the stroke and generate the main forward speed after the brushing contact is prepared.
+  reason: The speaker says to accelerate the forearm forward, snap the forearm after the upper arm stops, and use forearm drive into the ball.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: D596gPtN634
+    start_ms: 195166
+    end_ms: 214366
+    url: https://www.youtube.com/watch?v=D596gPtN634&t=195s
+    segment_ids:
+    - D596gPtN634:00041
+    - D596gPtN634:00043
+- id: WZnZIhZkkRo-concept-forearm-acceleration-reviewed
+  evidence_type: explanation
+  excerpt: The forearm supplies the main accelerating action after the upper arm has stopped or been stabilized.
+  reason: The speaker explicitly says the power and acceleration come from the forearm, after separating upper-arm movement from forearm acceleration.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: WZnZIhZkkRo
+    start_ms: 343333
+    end_ms: 356966
+    url: https://www.youtube.com/watch?v=WZnZIhZkkRo&t=343s
+    segment_ids:
+    - WZnZIhZkkRo:00072
+    - WZnZIhZkkRo:00074
+    - WZnZIhZkkRo:00076
+- id: OSfqukeeo_I-concept-forearm-acceleration-reviewed
+  evidence_type: explanation
+  excerpt: A serve or stroke power pattern where the forearm is the main accelerating segment, rather than the whole arm moving together.
+  reason: The speaker explicitly says force should come from the forearm, with the elbow used as an axis and the forearm accelerated for speed and quality.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: OSfqukeeo_I
+    start_ms: 488633
+    end_ms: 508766
+    url: https://www.youtube.com/watch?v=OSfqukeeo_I&t=488s
+    segment_ids:
+    - OSfqukeeo_I:00087
+    - OSfqukeeo_I:00090
+- id: tFXmtu4Egw8-concept-forearm-forward-movement-in-looping-reviewed
+  evidence_type: demonstration
+  excerpt: Use a forward-moving forearm to locate and contact the ball during looping, rather than relying on the arm as a rigid unit.
+  reason: The speaker says brushing must be combined with a forward-moving forearm, and demonstrates the forearm moving forward first while the wrist snaps at contact.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: tFXmtu4Egw8
+    start_ms: 435333
+    end_ms: 455133
+    url: https://www.youtube.com/watch?v=tFXmtu4Egw8&t=435s
+    segment_ids:
+    - tFXmtu4Egw8:00074
+    - tFXmtu4Egw8:00075
+    - tFXmtu4Egw8:00076
+- id: AoJq7UfIhp8-concept-forearm-acceleration-reviewed
+  evidence_type: explanation
+  excerpt: After friction and wrist preparation, the forearm contributes acceleration to the fast loop.
+  reason: The speaker explicitly says a flick relies mainly on the forearm and that the fast loop is driven by finger and wrist friction that engages the forearm.
+  confidence: 0.86
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: AoJq7UfIhp8
+    start_ms: 630266
+    end_ms: 641066
+    url: https://www.youtube.com/watch?v=AoJq7UfIhp8&t=630s
+    segment_ids:
+    - AoJq7UfIhp8:00135
+    - AoJq7UfIhp8:00136
+- id: tQSnBjtseLI-concept-forearm-acceleration-reviewed
+  evidence_type: definition
+  excerpt: A late acceleration of the forearm after the elbow or shoulder has stopped, producing a whip-like burst of power.
+  reason: The speaker directly names forearm acceleration and describes it as a whip after the elbow brakes.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: tQSnBjtseLI
+    start_ms: 506733
+    end_ms: 526066
+    url: https://www.youtube.com/watch?v=tQSnBjtseLI&t=506s
+    segment_ids:
+    - tQSnBjtseLI:00076
+    - tQSnBjtseLI:00077
+- id: D596gPtN634-concept-forearm-acceleration-codex-reviewed
+  evidence_type: explanation
+  excerpt: Brush the ball thickly, then accelerate your forearm forward.
+  reason: This contiguous segment directly explains forearm acceleration as the forward phase after brushing contact.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: D596gPtN634
+    start_ms: 134566
+    end_ms: 140833
+    url: https://www.youtube.com/watch?v=D596gPtN634&t=134s
+    segment_ids:
+    - D596gPtN634:00028
+- id: nnBPQr5t_ag-concept-forearm-acceleration-with-fixed-shoulder-and-elbow-codex-reviewed
+  evidence_type: explanation
+  excerpt: With a fixed shoulder and fixed elbow, the speed comes from the forearm.
+  reason: This contiguous segment directly explains that the shoulder and elbow should remain fixed and that forearm action generates speed, matching the existing concept of forearm acceleration.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: nnBPQr5t_ag
+    start_ms: 199666
+    end_ms: 217366
+    url: https://www.youtube.com/watch?v=nnBPQr5t_ag&t=199s
+    segment_ids:
+    - nnBPQr5t_ag:00072
+    - nnBPQr5t_ag:00073
+    - nnBPQr5t_ag:00074
+    - nnBPQr5t_ag:00076
+    - nnBPQr5t_ag:00077
+    - nnBPQr5t_ag:00078
+    - nnBPQr5t_ag:00079

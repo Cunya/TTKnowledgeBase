@@ -2,80 +2,90 @@ id: concept-backhand-push-wrist-cocked-down
 slug: backhand-push-wrist-cocked-down
 label: Backhand push wrist cocked down
 aliases:
-  - chicken's claw
-  - drop the wrist
-short_definition: For a controlled backhand push, the wrist should be cocked down rather than held flat, so the contact can cut the ball with the right angle and arc.
+- chicken's claw
+- drop the wrist
+short_definition: For a controlled backhand push, cock the wrist down rather than hold it flat.
 evidence_summary: >-
-  Backhand push wrist cocked down brings together several connected ideas. The backhand push
-  begins with a cocked-down wrist and compares it to a chicken's claw. The wrist posture as
-  cocked, compares it to a chicken's claw, and against wrist collapse in backhand pushing. To hang
-  the wrist and it with a pressed wrist. Together, these principles show how the topic is applied
-  in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:ed4ecac8a359b5adcb148dc3e58cfb754a42c0d1c51e60ad60e21e445b776aee"
-evidence_summary_generator: "deterministic"
+  The instruction is to cock the wrist down for a controlled backhand push, rather than push with a flat wrist.
 concept_type: stroke
 facets:
   category:
-    - stroke
+  - stroke
   side:
-    - backhand
-  level:
-    - beginner
-    - intermediate
-difficulty: intermediate
+  - backhand
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 08186a45843247af592164f7f50732de396c8e4f578281a6ff60aa680a954fde
-  prompt_version: candidate-review-v1
+  input_hash: sha256:2287575c1582650e688cd0387a8e890a2938b2e2a6499abb6bb2d87c1d7067b9
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: ae9urokFAJM-new-backhand-push-wrist-cocked-down-reviewed
-    evidence_type: definition
-    excerpt: For a controlled backhand push, the wrist should be cocked down rather than held flat, so the contact can cut the ball with the right angle and arc.
-    reason: The speaker says the backhand push begins with a cocked-down wrist and compares it to a chicken's claw.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: ae9urokFAJM
-      start_ms: 187166
-      end_ms: 216200
-      url: https://www.youtube.com/watch?v=ae9urokFAJM&t=187s
-      segment_ids:
-        - ae9urokFAJM:00041
-        - ae9urokFAJM:00042
-        - ae9urokFAJM:00043
-        - ae9urokFAJM:00044
-        - ae9urokFAJM:00045
-        - ae9urokFAJM:00046
-  - id: _TIBQOXT3cw-concept-backhand-push-wrist-cocked-down-reviewed
-    evidence_type: definition
-    excerpt: A backhand push posture where the wrist stays cocked rather than collapsing, supporting a stable, spinny receive.
-    reason: The speaker directly describes the wrist posture as cocked, compares it to a chicken's claw, and warns against wrist collapse in backhand pushing.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: _TIBQOXT3cw
-      start_ms: 747466
-      end_ms: 766266
-      url: https://www.youtube.com/watch?v=_TIBQOXT3cw&t=747s
-      segment_ids:
-        - _TIBQOXT3cw:00145
-        - _TIBQOXT3cw:00147
-  - id: ku3pB8FPhtM-concept-backhand-push-wrist-cocked-down-reviewed
-    evidence_type: definition
-    excerpt: For short backhand pushes, the wrist should stay hung or cocked down rather than pressed, so the player can contact the lower half of the ball and keep the return low and spinny.
-    reason: The speaker explicitly says to hang the wrist and contrasts it with a pressed wrist.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: ku3pB8FPhtM
-      start_ms: 394500
-      end_ms: 404866
-      url: https://www.youtube.com/watch?v=ku3pB8FPhtM&t=394s
-      segment_ids:
-        - ku3pB8FPhtM:00081
-        - ku3pB8FPhtM:00082
+- id: ae9urokFAJM-new-backhand-push-wrist-cocked-down-reviewed
+  evidence_type: definition
+  excerpt: For a controlled backhand push, the wrist should be cocked down rather than held flat, so the contact can cut the ball with the right angle and arc.
+  reason: The speaker says the backhand push begins with a cocked-down wrist and compares it to a chicken's claw.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ae9urokFAJM
+    start_ms: 187166
+    end_ms: 216200
+    url: https://www.youtube.com/watch?v=ae9urokFAJM&t=187s
+    segment_ids:
+    - ae9urokFAJM:00041
+    - ae9urokFAJM:00042
+    - ae9urokFAJM:00043
+    - ae9urokFAJM:00044
+    - ae9urokFAJM:00045
+    - ae9urokFAJM:00046
+- id: _TIBQOXT3cw-concept-backhand-push-wrist-cocked-down-reviewed
+  evidence_type: definition
+  excerpt: A backhand push posture where the wrist stays cocked rather than collapsing, supporting a stable, spinny receive.
+  reason: The speaker directly describes the wrist posture as cocked, compares it to a chicken's claw, and warns against wrist collapse in backhand pushing.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: _TIBQOXT3cw
+    start_ms: 747466
+    end_ms: 766266
+    url: https://www.youtube.com/watch?v=_TIBQOXT3cw&t=747s
+    segment_ids:
+    - _TIBQOXT3cw:00145
+    - _TIBQOXT3cw:00147
+- id: ku3pB8FPhtM-concept-backhand-push-wrist-cocked-down-reviewed
+  evidence_type: definition
+  excerpt: For short backhand pushes, the wrist should stay hung or cocked down rather than pressed, so the player can contact the lower half of the ball and keep the return low and spinny.
+  reason: The speaker explicitly says to hang the wrist and contrasts it with a pressed wrist.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: ku3pB8FPhtM
+    start_ms: 394500
+    end_ms: 404866
+    url: https://www.youtube.com/watch?v=ku3pB8FPhtM&t=394s
+    segment_ids:
+    - ku3pB8FPhtM:00081
+    - ku3pB8FPhtM:00082
+- id: ae9urokFAJM-new-backhand-push-wrist-cocked-down-codex-reviewed
+  evidence_type: definition
+  excerpt: For a controlled backhand push, the wrist should be cocked down like a “chicken’s claw,” not held flat.
+  reason: For a controlled backhand push, cock the wrist down; pushing with a flat wrist is discouraged.
+  confidence: 1.0
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: ae9urokFAJM
+    start_ms: 194033
+    end_ms: 209766
+    url: https://www.youtube.com/watch?v=ae9urokFAJM&t=194s
+    segment_ids:
+    - ae9urokFAJM:00043
+    - ae9urokFAJM:00044
+    - ae9urokFAJM:00045

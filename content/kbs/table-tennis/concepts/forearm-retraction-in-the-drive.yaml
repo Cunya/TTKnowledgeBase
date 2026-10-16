@@ -7,11 +7,9 @@ aliases:
   - bent forearm snap
 short_definition: The forearm should bend and retract rather than staying straight, so the stroke can finish correctly and generate explosive power.
 evidence_summary: >-
-  Forearm retraction in the drive brings together several connected ideas. A proper stroke
-  requires forearm retraction and links it to explosive power and looping backspin. Together,
-  these principles show how the topic is applied in practice while preserving the relevant
-  distinctions and constraints.
-evidence_summary_source_hash: "sha256:96eddfdfb8b2cb787f52ee8e911afcfdcbff831f760eac0f60edf152d9df6b5a"
+  The forearm should bend and retract rather than staying straight, so the stroke can finish
+  correctly and generate explosive power.
+evidence_summary_source_hash: "sha256:b36231ba5be203d647b008b2128994f87ed0846e397aa88b7eaba40bc4e63d5d"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -26,16 +24,34 @@ facets:
 difficulty: beginner
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 39cb4df751a2429601b0c789cda97d69cff6fff60f403dc57cc26e379cd88092
-  prompt_version: candidate-review-v1
+  input_hash: sha256:48c070ef3c57229654315e203d64427701af8f84a286fd50e9a47bdc4fc2f8dc
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: 9sU_T8b5UoQ-concept-forearm-retraction-in-drive-reviewed
     evidence_type: definition
     excerpt: The forearm should bend and retract rather than staying straight, so the stroke can finish correctly and generate explosive power.
     reason: The speaker says a proper stroke requires forearm retraction and links it to explosive power and looping backspin.
     confidence: 0.98
+    visual_status: not_visual
+    review_status: unreviewed
+    source:
+      video_id: 9sU_T8b5UoQ
+      start_ms: 0
+      end_ms: 24100
+      url: https://www.youtube.com/watch?v=9sU_T8b5UoQ&t=0s
+      segment_ids:
+        - 9sU_T8b5UoQ:00000
+        - 9sU_T8b5UoQ:00002
+  - id: 9sU_T8b5UoQ-concept-forearm-retraction-in-drive-codex-reviewed
+    evidence_type: definition
+    excerpt: It's crucial to retract your forearm. You can't execute a proper stroke with a completely straight arm. Without proper forearm retraction, you'll lack explosive power and struggle to effectively loop backspin balls.
+    reason: This contiguous 24.1-second span directly defines forearm retraction, explains its role in power, and connects it to looping backspin balls. The supplied concept is an exact durable-topic match.
+    confidence: 0.99
     visual_status: not_visual
     review_status: approved
     source:
@@ -45,4 +61,5 @@ evidence:
       url: https://www.youtube.com/watch?v=9sU_T8b5UoQ&t=0s
       segment_ids:
         - 9sU_T8b5UoQ:00000
+        - 9sU_T8b5UoQ:00001
         - 9sU_T8b5UoQ:00002

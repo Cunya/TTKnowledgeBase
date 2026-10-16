@@ -7,20 +7,9 @@ aliases:
   - fully rotate my racket head
 short_definition: A serve generates more spin when the racket head rotates freely through contact instead of staying rigid or blocked.
 evidence_summary: >-
-  Racket head rotation for spin generation brings together several connected ideas. Lack of
-  racket-head rotation causes weak spin and that rotating the racket head increases friction,
-  spin, and speed. Racket-head rotation and acceleration as the key to producing spin, with a
-  direct demonstration of weak versus explosive acceleration. Racket-head rotation as a first key
-  point and as part of creating friction on the ball. Attention to racket-head direction,
-  rotation, and the need to lift after contact rather than remaining downward, showing racket-head
-  rotation as part of the stroke mechanics. A specific racket-head path from 7:00 to 2:00 and
-  rotation makes heavy spin become light. Professionals rotate the racket head and that any
-  friction-based technique requires racket-head rotation to generate spin. Friction depends on
-  racket-head rotation and acceleration, not just arm motion. A useful contrast is between a
-  vertical, impact-only motion and a rotating racket head and says rotation is required for spin
-  and intensity. Additional points reinforce the same theme. Together, these principles show how
-  the topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:40b53ef9cbc86159ae50f27d03a8a6c840ebadaeae6eac01f582032fedb60fd8"
+  A serve generates more spin when the racket head rotates freely through contact instead of
+  staying rigid or blocked.
+evidence_summary_source_hash: "sha256:aea57ee46baae6dc0480870d5a1e38742da3c79d7c3f6e8344bf609c22a61989"
 evidence_summary_generator: "deterministic"
 concept_type: skill
 facets:
@@ -34,10 +23,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 903413c343a61bea61f035c11ebf18ea6ff70971a55804dc64a54ace7dcc9a1c
-  prompt_version: candidate-review-v1
+  input_hash: sha256:06c188e54c3f879193364dfd3811e1fdacc2a54d62487a9342b2cda5030092dc
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: 25Ohh2RJcWk-concept-racket-head-rotation-for-spin-reviewed
     evidence_type: explanation
@@ -45,7 +37,7 @@ evidence:
     reason: The transcript explains that lack of racket-head rotation causes weak spin and that rotating the racket head increases friction, spin, and speed.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 25Ohh2RJcWk
       start_ms: 90033
@@ -61,7 +53,7 @@ evidence:
     reason: The speaker explicitly says the push should use the racket head and that racket-head rotation naturally generates forward motion and power.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: j098z-YOm20
       start_ms: 102266
@@ -77,7 +69,7 @@ evidence:
     reason: The speaker identifies racket-head rotation and acceleration as the key to producing spin, with a direct demonstration of weak versus explosive acceleration.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: GOAyEFoSibE
       start_ms: 412133
@@ -96,7 +88,7 @@ evidence:
     reason: The speaker directly identifies racket-head rotation as a first key point and as part of creating friction on the ball.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 2xGbue3FXIw
       start_ms: 77715
@@ -112,7 +104,7 @@ evidence:
     reason: The transcript repeatedly instructs the viewer to watch the racket head direction and describes it rotating during the stroke.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: lRAoXPoYOBk
       start_ms: 71033
@@ -132,7 +124,7 @@ evidence:
     reason: The speaker directs attention to racket-head direction, rotation, and the need to lift after contact rather than remaining downward, showing racket-head rotation as part of the stroke mechanics.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: MIpLW4erUk4
       start_ms: 171966
@@ -153,7 +145,7 @@ evidence:
     reason: The speaker explicitly says the racket head must spin/rotate and links that rotation to ball spin generation.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: GuuYa4REyQw
       start_ms: 58933
@@ -170,7 +162,7 @@ evidence:
     reason: The speaker gives a specific racket-head path from 7:00 to 2:00 and says rotation makes heavy spin become light.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 1DjyGrpOiVY
       start_ms: 355960
@@ -192,7 +184,7 @@ evidence:
     reason: The speaker says the arc and spin come from the racket head, and that the motion should be very small, compact, explosive, and quick.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: FNFUZTBq2yQ
       start_ms: 276966
@@ -207,7 +199,7 @@ evidence:
     reason: The speaker states that professionals rotate the racket head and that any friction-based technique requires racket-head rotation to generate spin.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: phTj82vlVqs
       start_ms: 75733
@@ -224,7 +216,7 @@ evidence:
     reason: The transcript directly states that friction depends on racket-head rotation and acceleration, not just arm motion.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: p-8pxqMG0kw
       start_ms: 888633
@@ -241,7 +233,7 @@ evidence:
     reason: The speaker says racket-head power comes from rotating the racket head, with the forearm opening and snapping back in, and that the racket face must create friction.
     confidence: 0.92
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Yw2l-2WitOs
       start_ms: 154833
@@ -258,7 +250,7 @@ evidence:
     reason: The speaker contrasts a vertical, impact-only motion with a rotating racket head and says rotation is required for spin and intensity.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: iUwrE230SAY
       start_ms: 575700
@@ -269,3 +261,74 @@ evidence:
         - iUwrE230SAY:00124
         - iUwrE230SAY:00125
         - iUwrE230SAY:00126
+  - id: 2xGbue3FXIw-concept-racket-head-rotation-for-spin-generation-codex-reviewed
+    evidence_type: explanation
+    excerpt: After the incoming ball, use the racket head to lead contact and generate friction.
+    reason: These contiguous segments describe the incoming ball and explicitly state that the racket head should lead contact and generate friction.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 2xGbue3FXIw
+      start_ms: 133890
+      end_ms: 146075
+      url: https://www.youtube.com/watch?v=2xGbue3FXIw&t=133s
+      segment_ids:
+        - 2xGbue3FXIw:00042
+        - 2xGbue3FXIw:00043
+        - 2xGbue3FXIw:00044
+        - 2xGbue3FXIw:00045
+  - id: GuuYa4REyQw-concept-racket-head-rotation-for-spin-generation-codex-reviewed
+    evidence_type: explanation
+    excerpt: The racket head must rotate for the serve to generate spin; without rotation, the serve has no spin.
+    reason: These contiguous segments directly state that racket-head rotation is required for serve spin generation and that no rotation produces no spin.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: GuuYa4REyQw
+      start_ms: 193533
+      end_ms: 201600
+      url: https://www.youtube.com/watch?v=GuuYa4REyQw&t=193s
+      segment_ids:
+        - GuuYa4REyQw:00064
+        - GuuYa4REyQw:00065
+        - GuuYa4REyQw:00066
+        - GuuYa4REyQw:00067
+  - id: FNFUZTBq2yQ-concept-racket-head-rotation-for-spin-generation-codex-reviewed
+    evidence_type: explanation
+    excerpt: Against heavier backspin, accelerate and rotate the racket head with a very small, compact movement.
+    reason: This contiguous 19.0-second span directly explains that heavier backspin requires accelerating and rotating the racket head, then characterizes the motion as very small and compact. The supplied concept matches the existing durable topic.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: FNFUZTBq2yQ
+      start_ms: 504300
+      end_ms: 524633
+      url: https://www.youtube.com/watch?v=FNFUZTBq2yQ&t=504s
+      segment_ids:
+        - FNFUZTBq2yQ:00121
+        - FNFUZTBq2yQ:00122
+        - FNFUZTBq2yQ:00123
+        - FNFUZTBq2yQ:00124
+  - id: lRAoXPoYOBk-concept-racket-head-rotation-for-spin-generation-codex-reviewed
+    evidence_type: explanation
+    excerpt: During the stroke, the racket head turns through external and internal rotation while moving downward to pull the ball.
+    reason: This contiguous span directly describes the racket head turning during ball contact and identifies the motion as external and internal rotation. It matches the supplied durable concept.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: lRAoXPoYOBk
+      start_ms: 71033
+      end_ms: 85566
+      url: https://www.youtube.com/watch?v=lRAoXPoYOBk&t=71s
+      segment_ids:
+        - lRAoXPoYOBk:00024
+        - lRAoXPoYOBk:00025
+        - lRAoXPoYOBk:00026
+        - lRAoXPoYOBk:00027
+        - lRAoXPoYOBk:00028
+        - lRAoXPoYOBk:00029
+        - lRAoXPoYOBk:00030

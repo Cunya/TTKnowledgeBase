@@ -117,7 +117,7 @@ evidence:
     reason: The speaker details where to contact the ball on the backhand loop, how open the racket should be, and how to avoid soft contact on side-spin/backspin balls.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: bKtA240EvTQ
       start_ms: 353240
@@ -136,7 +136,7 @@ evidence:
     reason: The transcript specifies one racket length from the chest for optimal backhand loop contact, and closer spacing for backspin loop.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: UCyUdarqdJc
       start_ms: 286080
@@ -156,7 +156,7 @@ evidence:
     reason: The speaker gives a detailed backhand contact map, saying to contact at 7 o'clock, below table level, brush, extend, and stop lower rather than lifting the ball.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: A_hvhZM5dc4
       start_ms: 475400
@@ -176,7 +176,7 @@ evidence:
     reason: The speaker emphasizes brushing contact, friction, and that backhand requires more brushing and precision.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: b_kKpVRuU1Q
       start_ms: 74533
@@ -191,7 +191,7 @@ evidence:
     reason: The speaker specifies the upper-middle part of the ball and says to move forward first, then brush with the wrist, which is a contact-location instruction.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 3h7yvxJrCtM
       start_ms: 77600
@@ -210,7 +210,7 @@ evidence:
     reason: The speaker says the first contact position is wrong because the impact is too low and insufficient friction makes it easy to miss the ball.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: mxmDhD9M83c
       start_ms: 48866
@@ -227,7 +227,7 @@ evidence:
     reason: The speaker specifies 2 o'clock as the minimum contact point and contrasts it with 3 o'clock contact.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: mchHxJnHUzE
       start_ms: 454166
@@ -242,7 +242,7 @@ evidence:
     reason: The speaker explains the racket-head angle at backswing and contact and says only the 7 o'clock position allows proper brushing.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: mWehvleIbTk
       start_ms: 583266
@@ -257,7 +257,7 @@ evidence:
     reason: The speaker refers to contact positions, says more spin requires a lower forearm, and stresses a lowered forearm for a good brushing angle.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: wj87pK5547g
       start_ms: 552366
@@ -274,7 +274,7 @@ evidence:
     reason: The speaker explains the beginner-friendly brushing motion as going from 7 o'clock past 8 and 9 and stopping at 10 o'clock.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: rLVOt37bQfk
       start_ms: 502066
@@ -290,7 +290,7 @@ evidence:
     reason: The speaker says contact is the start of the brush and emphasizes the instant of contact as critical.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: wytyHpyZr9A
       start_ms: 976833
@@ -305,7 +305,7 @@ evidence:
     reason: The speaker specifies upper-half contact, solid contact, and says weak contact becomes a light tap or fails to lift the ball.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: yqSECRch8WM
       start_ms: 99400
@@ -314,6 +314,39 @@ evidence:
       segment_ids:
         - yqSECRch8WM:00012
         - yqSECRch8WM:00013
+  - id: b_kKpVRuU1Q-concept-backhand-loop-contact-codex-reviewed
+    evidence_type: explanation
+    excerpt: The backhand tends to lift during brushing contact, making it easier to lose friction.
+    reason: These contiguous segments directly describe backhand brushing contact and the resulting loss of friction, matching the existing durable concept.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: b_kKpVRuU1Q
+      start_ms: 74533
+      end_ms: 86300
+      url: https://www.youtube.com/watch?v=b_kKpVRuU1Q&t=74s
+      segment_ids:
+        - b_kKpVRuU1Q:00020
+        - b_kKpVRuU1Q:00021
+        - b_kKpVRuU1Q:00022
+  - id: mxmDhD9M83c-concept-backhand-loop-contact-codex-reviewed
+    evidence_type: explanation
+    excerpt: The first contact position is incorrect because the impact occurs too low; insufficient friction makes it easy to miss the ball.
+    reason: This contiguous span directly explains that the first backhand topspin contact position is too low and lacks sufficient friction, matching the existing Backhand loop contact concept.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: mxmDhD9M83c
+      start_ms: 48866
+      end_ms: 58033
+      url: https://www.youtube.com/watch?v=mxmDhD9M83c&t=48s
+      segment_ids:
+        - mxmDhD9M83c:00007
+        - mxmDhD9M83c:00008
+        - mxmDhD9M83c:00010
+        - mxmDhD9M83c:00011
 relations:
   - relation_type: part_of
     target_concept_id: concept-backhand-loop

@@ -2,69 +2,104 @@ id: concept-backspin-training-through-push-rallies
 slug: backspin-training-through-push-rallies
 label: Backspin training through push rallies
 aliases:
-  - start with pushing
-  - push rallies under 10 shots
-  - practice pushing mixed with looping
+- start with pushing
+- push rallies under 10 shots
+- practice pushing mixed with looping
 short_definition: A training method for backspin play that begins with pushes, then transitions into looping and rhythm work.
 evidence_summary: >-
-  Backspin training through push rallies brings together several connected ideas. A drill sequence
-  that starts with pushing, then uses push rallies and mixed push-loop practice to train backspin
-  situations. To master pushing first, slow the tempo, and use push rallies to build backspin
-  handling. Together, these principles show how the topic is applied in practice while preserving
-  the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:334e0086c9c47d6a1b47e2c72400dd647f21fdc186e8643a6ab220ea39f4feb0"
-evidence_summary_generator: "deterministic"
+  Start with a few pushes. Within ten pushes, a ball may come to the forehand; use that as one set, then practice looping against backspin. Keep push rallies under ten shots before switching. To handle backspin, master the push first, slow the push-rally tempo, practice pushing just after the bounce peak, and build feel and pace control to improve later looping.
 concept_type: practice
 facets:
   category:
-    - practice
+  - practice
   spin:
-    - backspin
-  level:
-    - intermediate
-difficulty: intermediate
+  - backspin
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 4de8d9cb8ac3685a32199b11930575ff02a9c396e2a44956025ae29de20ae628
-  prompt_version: candidate-review-v1
+  input_hash: sha256:fa8ab60f8f5b36af0d36add2fad9a9d91ea4ceb4e5e47014253f97d5cb5ec182
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: bbZD31OGau8-concept-backspin-training-through-push-rallies-reviewed
-    evidence_type: demonstration
-    excerpt: A training method for backspin play that begins with pushes, then transitions into looping and rhythm work.
-    reason: The speaker describes a drill sequence that starts with pushing, then uses push rallies and mixed push-loop practice to train backspin situations.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: bbZD31OGau8
-      start_ms: 388433
-      end_ms: 407733
-      url: https://www.youtube.com/watch?v=bbZD31OGau8&t=388s
-      segment_ids:
-        - bbZD31OGau8:00116
-        - bbZD31OGau8:00117
-        - bbZD31OGau8:00118
-        - bbZD31OGau8:00121
-        - bbZD31OGau8:00122
-        - bbZD31OGau8:00123
-  - id: lXTZ5lpaWXE-concept-backspin-training-through-push-rallies-reviewed
-    evidence_type: explanation
-    excerpt: Learn to handle backspin by first mastering push rallies and slower tempo before trying to loop it.
-    reason: The speaker says to master pushing first, slow the tempo, and use push rallies to build backspin handling.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: lXTZ5lpaWXE
-      start_ms: 106933
-      end_ms: 136500
-      url: https://www.youtube.com/watch?v=lXTZ5lpaWXE&t=106s
-      segment_ids:
-        - lXTZ5lpaWXE:00023
-        - lXTZ5lpaWXE:00024
-        - lXTZ5lpaWXE:00025
-        - lXTZ5lpaWXE:00026
-        - lXTZ5lpaWXE:00027
-        - lXTZ5lpaWXE:00028
+- id: bbZD31OGau8-concept-backspin-training-through-push-rallies-reviewed
+  evidence_type: demonstration
+  excerpt: A training method for backspin play that begins with pushes, then transitions into looping and rhythm work.
+  reason: The speaker describes a drill sequence that starts with pushing, then uses push rallies and mixed push-loop practice to train backspin situations.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: bbZD31OGau8
+    start_ms: 388433
+    end_ms: 407733
+    url: https://www.youtube.com/watch?v=bbZD31OGau8&t=388s
+    segment_ids:
+    - bbZD31OGau8:00116
+    - bbZD31OGau8:00117
+    - bbZD31OGau8:00118
+    - bbZD31OGau8:00121
+    - bbZD31OGau8:00122
+    - bbZD31OGau8:00123
+- id: lXTZ5lpaWXE-concept-backspin-training-through-push-rallies-reviewed
+  evidence_type: explanation
+  excerpt: Learn to handle backspin by first mastering push rallies and slower tempo before trying to loop it.
+  reason: The speaker says to master pushing first, slow the tempo, and use push rallies to build backspin handling.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: lXTZ5lpaWXE
+    start_ms: 106933
+    end_ms: 136500
+    url: https://www.youtube.com/watch?v=lXTZ5lpaWXE&t=106s
+    segment_ids:
+    - lXTZ5lpaWXE:00023
+    - lXTZ5lpaWXE:00024
+    - lXTZ5lpaWXE:00025
+    - lXTZ5lpaWXE:00026
+    - lXTZ5lpaWXE:00027
+    - lXTZ5lpaWXE:00028
+- id: bbZD31OGau8-concept-backspin-training-through-push-rallies-codex-reviewed
+  evidence_type: explanation
+  excerpt: Start with pushing, do a few pushes, then practice looping against backspin; use push rallies under 10 shots before suddenly switching.
+  reason: Start with a few pushes. Within ten pushes, a ball may come to the forehand; use that as one set, then practice looping against backspin. Keep push rallies under ten shots before switching.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: bbZD31OGau8
+    start_ms: 388433
+    end_ms: 407733
+    url: https://www.youtube.com/watch?v=bbZD31OGau8&t=388s
+    segment_ids:
+    - bbZD31OGau8:00116
+    - bbZD31OGau8:00117
+    - bbZD31OGau8:00118
+    - bbZD31OGau8:00119
+    - bbZD31OGau8:00120
+    - bbZD31OGau8:00121
+    - bbZD31OGau8:00122
+    - bbZD31OGau8:00123
+- id: lXTZ5lpaWXE-concept-backspin-training-through-push-rallies-codex-reviewed
+  evidence_type: explanation
+  excerpt: To handle backspin, first master the push and become comfortable with a slower push-rally rhythm. Practice contacting the ball just after the bounce peak, building feel and pace control that will improve later looping.
+  reason: Master the push before trying to loop against backspin. Use a slower push-rally rhythm, push just after the bounce peak, and build feel and pace control to improve later looping.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: lXTZ5lpaWXE
+    start_ms: 106933
+    end_ms: 136500
+    url: https://www.youtube.com/watch?v=lXTZ5lpaWXE&t=106s
+    segment_ids:
+    - lXTZ5lpaWXE:00023
+    - lXTZ5lpaWXE:00024
+    - lXTZ5lpaWXE:00025
+    - lXTZ5lpaWXE:00026
+    - lXTZ5lpaWXE:00027
+    - lXTZ5lpaWXE:00028

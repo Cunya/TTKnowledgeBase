@@ -46,7 +46,7 @@ The extraction prompt requires Codex to cite only supplied segment IDs. It must 
 
 Private extraction artifacts are written below `data/derived/<kb>/` and are not publishable. They may contain transcript context, model responses, prompts, schemas, and audit metadata.
 
-## Candidate review
+## Candidate semantic adjudication
 
 Build the file-based queue and process eligible cached candidates:
 
@@ -55,7 +55,7 @@ Build the file-based queue and process eligible cached candidates:
 .\.venv\Scripts\python.exe -m processors.cli process-pending --kb table-tennis
 ```
 
-Automatic review can accept only candidates meeting the configured source-grounding and editorial rules. Ambiguous candidates remain deferred. The review queue is not a substitute for canonical editorial review; inspect and correct promoted YAML before release.
+`process-pending` sends bounded candidate context and a short canonical-concept list to schema-constrained Codex CLI. Codex decides accept-existing, create-new, reject, or defer; deterministic code separately rejects invented IDs, dispersed support, incomplete boundaries, invalid taxonomy values, and incomplete timestamp envelopes. Every accepted moment records the configured model and prompt/schema provenance. Unclear candidates stay in the automated deferred queue for a later bounded pass. Human input is optional advice or an explicit audited override, not the default workflow.
 
 ## Evidence summaries and rephrasing
 
@@ -108,7 +108,7 @@ Each Codex-backed operation is:
 - recorded with task, model/profile, prompt/schema provenance, and response metadata;
 - subject to deterministic validation before it can enter review.
 
-The processor preserves failed and deferred work for inspection. A failed Codex call must not be treated as an approved concept. Retry only after inspecting the failure and respecting the configured budget and source locks.
+The processor preserves failed and set-aside work for inspection. A failed Codex call must not be treated as an approved concept. Retry only after inspecting the failure and respecting the configured budget and source locks.
 
 The unattended cycle is:
 

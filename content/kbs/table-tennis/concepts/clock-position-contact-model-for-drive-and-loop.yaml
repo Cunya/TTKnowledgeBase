@@ -1,48 +1,64 @@
 id: concept-clock-position-contact-model-for-drive-and-loop
 slug: clock-position-contact-model-for-drive-and-loop
-label: Clock-position contact model for drive and loop
+label: Clock-position contact and brushing model
 aliases:
-  - 2 o'clock
-  - 1 o'clock
-  - 1:30
-  - 2:30
-  - 4:00
-short_definition: The speaker uses clock-face racket positions to describe contact and brushing angles for drives, loops, and backspin lifts.
+- Clock-face contact and brushing model
+short_definition: A 3:00 start may or may not leave room to brush. Start contact at 2:30; for a more open face against backspin, start at least at 2:30 and move through 1:30 to 1:00.
 evidence_summary: >-
-  Clock-position contact model for drive and loop brings together several connected ideas.
-  Approximate clock positions to drive and loop contact and how they change for heavy backspin and
-  power looping. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:443d6e70d15d33ba9ab0c7fb34fc5f806df3cb884e8882ab0f10fc1ffb5de169"
-evidence_summary_generator: "deterministic"
+  A 3:00 start may or may not leave room to brush. Start contact at 2:30; for a more open face against backspin, start at least at 2:30 and move through 1:30 and 1:00.
 concept_type: fundamentals
 facets:
   category:
-    - fundamentals
-  level:
-    - intermediate
-difficulty: intermediate
+  - fundamentals
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 9ee2632b7747e7b4adf332d128915ee0f901c0ace823ec53168a5e96214a45b7
-  prompt_version: candidate-review-v1
+  input_hash: sha256:7d645b3112954a66894be53e89ca0fe1ef0414e1add7cd41f17822872e8a2a03
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: geGebDni2TU-concept-clock-position-contact-model-for-drive-and-loop-reviewed
-    evidence_type: explanation
-    excerpt: The speaker uses clock-face racket positions to describe contact and brushing angles for drives, loops, and backspin lifts.
-    reason: The speaker assigns approximate clock positions to drive and loop contact and explains how they change for heavy backspin and power looping.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: geGebDni2TU
-      start_ms: 866266
-      end_ms: 894066
-      url: https://www.youtube.com/watch?v=geGebDni2TU&t=866s
-      segment_ids:
-        - geGebDni2TU:00175
-        - geGebDni2TU:00176
-        - geGebDni2TU:00177
-        - geGebDni2TU:00178
+- id: geGebDni2TU-concept-clock-position-contact-model-for-drive-and-loop-reviewed
+  evidence_type: explanation
+  excerpt: The speaker uses clock-face racket positions to describe contact and brushing angles for drives, loops, and backspin lifts.
+  reason: The speaker assigns approximate clock positions to drive and loop contact and explains how they change for heavy backspin and power looping.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: geGebDni2TU
+    start_ms: 866266
+    end_ms: 894066
+    url: https://www.youtube.com/watch?v=geGebDni2TU&t=866s
+    segment_ids:
+    - geGebDni2TU:00175
+    - geGebDni2TU:00176
+    - geGebDni2TU:00177
+    - geGebDni2TU:00178
+- id: CD09LNI2fYk-concept-contact-zone-start-position-codex-reviewed
+  evidence_type: explanation
+  excerpt: Many players start at 3:00. Sometimes there is room to brush, sometimes there isn't. Start contact at 2:30. For a more open face against backspin, use at least 2:30, then move through to 1:30 and 1:00.
+  reason: A 3:00 start may or may not leave room to brush. Start contact at 2:30; for a more open face against backspin, start at least at 2:30 and move through 1:30 to 1:00.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: CD09LNI2fYk
+    start_ms: 591640
+    end_ms: 619440
+    url: https://www.youtube.com/watch?v=CD09LNI2fYk&t=591s
+    segment_ids:
+    - CD09LNI2fYk:00236
+    - CD09LNI2fYk:00237
+    - CD09LNI2fYk:00238
+    - CD09LNI2fYk:00239
+    - CD09LNI2fYk:00240
+    - CD09LNI2fYk:00241
+    - CD09LNI2fYk:00242
+    - CD09LNI2fYk:00243
+    - CD09LNI2fYk:00244
+    - CD09LNI2fYk:00245
+    - CD09LNI2fYk:00246

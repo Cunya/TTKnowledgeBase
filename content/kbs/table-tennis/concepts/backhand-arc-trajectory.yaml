@@ -2,218 +2,265 @@ id: concept-backhand-arc-trajectory
 slug: backhand-arc-trajectory
 label: Backhand arc trajectory
 aliases:
-  - arcing motion
-  - semi-circle motion
-  - fan opening motion
-  - clock-face arc
-short_definition: Good backhand strokes use an arcing racket-head path rather than a straight line, including semi-circle and fan-like trajectories.
+- arcing motion
+- fan opening motion
+- clock-face arc
+short_definition: Backhand movement can follow a continuous arc rather than a straight path, with fan-like and clock-hand cues for the racket and a small-arc cue for the forearm.
 evidence_summary: >-
-  Backhand arc trajectory brings together several connected ideas. A useful contrast is between a
-  loop's arc and a push's straight line and explains that all good backhand techniques have an arc
-  or semi-circle path. The rip must create an arc, describing clock-face and fan-like paths. The
-  backhand as drawing a circle and then a small arc, with a bigger arc for slower balls and a
-  smaller forearm-only arc for faster balls. The motion is described as a natural arc with the
-  racket head dropping then swinging up, and you need to create an arc. Arc awareness, describes
-  the racket moving like a fan, and the trajectory follows the edge of an opening fan. The
-  backhand drive trajectory as opening a fan and straight paths are incorrect; an arc is required.
-  The backhand arc should be like opening a fan and ties that arc to flicks and loops. A useful
-  contrast is between a straight front-to-back motion and a left-to-front-to-right arc. Additional
-  points reinforce the same theme. Together, these principles show how the topic is applied in
-  practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:c8d6634cc4b576e993b16c594ddacef097803e431581b441a9a8c27f4826663a"
-evidence_summary_generator: "deterministic"
+  For the backhand drive, follow a continuous arc like opening a fan instead of moving straight forward, upward or to the right. Other backhand cues describe a small arc felt in the forearm and a clock-like rotation of the racket head.
 concept_type: stroke
 facets:
   category:
-    - stroke
+  - stroke
   side:
-    - backhand
-  distance:
-    - close
-    - mid
-  level:
-    - intermediate
-difficulty: intermediate
+  - backhand
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 41f80f2a3e20e64496aa9168a0067f534aac7f855aac22257e59a7b4a8088fbc
-  prompt_version: candidate-review-v1
+  input_hash: sha256:e8371605f6ed68e756d23300c472b8e1ee022d9a861718bcd9a35e79111b2d5f
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: zZ_B1Xg7Pjs-concept-backhand-arc-trajectory-reviewed
-    evidence_type: definition
-    excerpt: Good backhand strokes use an arcing racket-head path rather than a straight line, including semi-circle and fan-like trajectories.
-    reason: The speaker repeatedly contrasts a loop's arc with a push's straight line and explains that all good backhand techniques have an arc or semi-circle path.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: zZ_B1Xg7Pjs
-      start_ms: 0
-      end_ms: 15600
-      url: https://www.youtube.com/watch?v=zZ_B1Xg7Pjs&t=0s
-      segment_ids:
-        - zZ_B1Xg7Pjs:00000
-        - zZ_B1Xg7Pjs:00001
-        - zZ_B1Xg7Pjs:00002
-        - zZ_B1Xg7Pjs:00003
-  - id: JfZ-7fgsF-o-concept-backhand-arc-trajectory-reviewed
-    evidence_type: definition
-    excerpt: The backhand rip should travel along a visible arc rather than moving straight forward.
-    reason: The speaker repeatedly says the rip must create an arc, describing clock-face and fan-like paths.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: JfZ-7fgsF-o
-      start_ms: 262966
-      end_ms: 288666
-      url: https://www.youtube.com/watch?v=JfZ-7fgsF-o&t=262s
-      segment_ids:
-        - JfZ-7fgsF-o:00058
-        - JfZ-7fgsF-o:00059
-        - JfZ-7fgsF-o:00060
-        - JfZ-7fgsF-o:00061
-  - id: jvt-6VNmBzs-cand-6-reviewed
-    evidence_type: explanation
-    excerpt: A backhand stroke path that follows a continuous forward arc with racket-head acceleration and a whip-like finish.
-    reason: The instructor compares the motion to drawing a sword, emphasizes a continuous forward arc, and says the racket head must snap through.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: jvt-6VNmBzs
-      start_ms: 423133
-      end_ms: 443800
-      url: https://www.youtube.com/watch?v=jvt-6VNmBzs&t=423s
-      segment_ids:
-        - jvt-6VNmBzs:00089
-        - jvt-6VNmBzs:00092
-  - id: hKQbi0Kk_Gs-concept-backhand-forearm-driven-arc-reviewed
-    evidence_type: definition
-    excerpt: A backhand stroke shape that uses a small circular or arcing forearm motion, with minimal upper-arm movement.
-    reason: The speaker explicitly describes the backhand as drawing a circle and then a small arc, with a bigger arc for slower balls and a smaller forearm-only arc for faster balls.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: hKQbi0Kk_Gs
-      start_ms: 654366
-      end_ms: 677666
-      url: https://www.youtube.com/watch?v=hKQbi0Kk_Gs&t=654s
-      segment_ids:
-        - hKQbi0Kk_Gs:00136
-        - hKQbi0Kk_Gs:00138
-        - hKQbi0Kk_Gs:00139
-        - hKQbi0Kk_Gs:00140
-  - id: SUIth1DgWbg-concept-backhand-arc-trajectory-reviewed
-    evidence_type: explanation
-    excerpt: The backhand flick uses an arcing swing path rather than a straight push, creating room for spin and clearance over the net.
-    reason: The motion is described as a natural arc with the racket head dropping then swinging up, and the speaker says you need to create an arc.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: SUIth1DgWbg
-      start_ms: 577500
-      end_ms: 593066
-      url: https://www.youtube.com/watch?v=SUIth1DgWbg&t=577s
-      segment_ids:
-        - SUIth1DgWbg:00122
-        - SUIth1DgWbg:00124
-  - id: 82C2Zhfyq0s-concept-backhand-arc-trajectory-reviewed
-    evidence_type: definition
-    excerpt: The backhand should travel on a small outside arc or circular path rather than straight back-to-front, creating space and friction for shots like flicks, rips, and loops.
-    reason: The speaker states that both wings follow an outside-in arc and that the backhand needs a small outside arc.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 82C2Zhfyq0s
-      start_ms: 301366
-      end_ms: 312466
-      url: https://www.youtube.com/watch?v=82C2Zhfyq0s&t=301s
-      segment_ids:
-        - 82C2Zhfyq0s:00055
-        - 82C2Zhfyq0s:00056
-  - id: 1UthOchBWWc-concept-backhand-arc-trajectory-reviewed
-    evidence_type: definition
-    excerpt: The backhand uses a small arc or fan-shaped trajectory, rather than a straight push or wrist break.
-    reason: The speaker directly names arc awareness, describes the racket moving like a fan, and says the trajectory follows the edge of an opening fan.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 1UthOchBWWc
-      start_ms: 289966
-      end_ms: 318066
-      url: https://www.youtube.com/watch?v=1UthOchBWWc&t=289s
-      segment_ids:
-        - 1UthOchBWWc:00047
-        - 1UthOchBWWc:00048
-  - id: mQdrXMukRSY-concept-backhand-arc-trajectory-reviewed
-    evidence_type: definition
-    excerpt: The backhand swing path should follow a curved arc rather than straight lines in order to generate spin and maintain quality.
-    reason: The speaker directly names the backhand drive trajectory as opening a fan and says straight paths are incorrect; an arc is required.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: mQdrXMukRSY
-      start_ms: 130766
-      end_ms: 149633
-      url: https://www.youtube.com/watch?v=mQdrXMukRSY&t=130s
-      segment_ids:
-        - mQdrXMukRSY:00020
-        - mQdrXMukRSY:00022
-  - id: ATd38ewLMqs-c5-reviewed
-    evidence_type: definition
-    excerpt: The backhand drive uses a compact fan-like arc that moves forward and sideways instead of a straight push.
-    reason: The speaker repeatedly describes the stroke as a fan-like arc or outside arc, explicitly contrasting it with a straight push.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: ATd38ewLMqs
-      start_ms: 407633
-      end_ms: 435600
-      url: https://www.youtube.com/watch?v=ATd38ewLMqs&t=407s
-      segment_ids:
-        - ATd38ewLMqs:00057
-        - ATd38ewLMqs:00058
-        - ATd38ewLMqs:00060
-        - ATd38ewLMqs:00061
-  - id: pbILplLUhnI-concept-backhand-arc-trajectory-reviewed
-    evidence_type: definition
-    excerpt: The backhand swing should open into an arc rather than travel as a straight line, especially when preparing for flicks and loops.
-    reason: The speaker directly says the backhand arc should be like opening a fan and ties that arc to flicks and loops.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: pbILplLUhnI
-      start_ms: 231400
-      end_ms: 253166
-      url: https://www.youtube.com/watch?v=pbILplLUhnI&t=231s
-      segment_ids:
-        - pbILplLUhnI:00040
-        - pbILplLUhnI:00041
-        - pbILplLUhnI:00042
-  - id: urfOsNEfkYg-urfOsNEfkYg-concept-1-reviewed
-    evidence_type: explanation
-    excerpt: A backhand swing path that curves from left to front to right rather than moving straight front-to-back.
-    reason: The speaker explicitly contrasts a straight front-to-back motion with a left-to-front-to-right arc.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: urfOsNEfkYg
-      start_ms: 54760
-      end_ms: 65040
-      url: https://www.youtube.com/watch?v=urfOsNEfkYg&t=54s
-      segment_ids:
-        - urfOsNEfkYg:00020
-        - urfOsNEfkYg:00021
-        - urfOsNEfkYg:00022
-        - urfOsNEfkYg:00023
+- id: zZ_B1Xg7Pjs-concept-backhand-arc-trajectory-reviewed
+  evidence_type: definition
+  excerpt: Good backhand strokes use an arcing racket-head path rather than a straight line, including semi-circle and fan-like trajectories.
+  reason: The speaker repeatedly contrasts a loop's arc with a push's straight line and explains that all good backhand techniques have an arc or semi-circle path.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: zZ_B1Xg7Pjs
+    start_ms: 0
+    end_ms: 15600
+    url: https://www.youtube.com/watch?v=zZ_B1Xg7Pjs&t=0s
+    segment_ids:
+    - zZ_B1Xg7Pjs:00000
+    - zZ_B1Xg7Pjs:00001
+    - zZ_B1Xg7Pjs:00002
+    - zZ_B1Xg7Pjs:00003
+- id: JfZ-7fgsF-o-concept-backhand-arc-trajectory-reviewed
+  evidence_type: definition
+  excerpt: The backhand rip should travel along a visible arc rather than moving straight forward.
+  reason: The speaker repeatedly says the rip must create an arc, describing clock-face and fan-like paths.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: JfZ-7fgsF-o
+    start_ms: 262966
+    end_ms: 288666
+    url: https://www.youtube.com/watch?v=JfZ-7fgsF-o&t=262s
+    segment_ids:
+    - JfZ-7fgsF-o:00058
+    - JfZ-7fgsF-o:00059
+    - JfZ-7fgsF-o:00060
+    - JfZ-7fgsF-o:00061
+- id: jvt-6VNmBzs-cand-6-reviewed
+  evidence_type: explanation
+  excerpt: A backhand stroke path that follows a continuous forward arc with racket-head acceleration and a whip-like finish.
+  reason: The instructor compares the motion to drawing a sword, emphasizes a continuous forward arc, and says the racket head must snap through.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: jvt-6VNmBzs
+    start_ms: 423133
+    end_ms: 443800
+    url: https://www.youtube.com/watch?v=jvt-6VNmBzs&t=423s
+    segment_ids:
+    - jvt-6VNmBzs:00089
+    - jvt-6VNmBzs:00092
+- id: hKQbi0Kk_Gs-concept-backhand-forearm-driven-arc-reviewed
+  evidence_type: definition
+  excerpt: A backhand stroke shape that uses a small circular or arcing forearm motion, with minimal upper-arm movement.
+  reason: The speaker explicitly describes the backhand as drawing a circle and then a small arc, with a bigger arc for slower balls and a smaller forearm-only arc for faster balls.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: hKQbi0Kk_Gs
+    start_ms: 654366
+    end_ms: 677666
+    url: https://www.youtube.com/watch?v=hKQbi0Kk_Gs&t=654s
+    segment_ids:
+    - hKQbi0Kk_Gs:00136
+    - hKQbi0Kk_Gs:00138
+    - hKQbi0Kk_Gs:00139
+    - hKQbi0Kk_Gs:00140
+- id: SUIth1DgWbg-concept-backhand-arc-trajectory-reviewed
+  evidence_type: explanation
+  excerpt: The backhand flick uses an arcing swing path rather than a straight push, creating room for spin and clearance over the net.
+  reason: The motion is described as a natural arc with the racket head dropping then swinging up, and the speaker says you need to create an arc.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: SUIth1DgWbg
+    start_ms: 577500
+    end_ms: 593066
+    url: https://www.youtube.com/watch?v=SUIth1DgWbg&t=577s
+    segment_ids:
+    - SUIth1DgWbg:00122
+    - SUIth1DgWbg:00124
+- id: 82C2Zhfyq0s-concept-backhand-arc-trajectory-reviewed
+  evidence_type: definition
+  excerpt: The backhand should travel on a small outside arc or circular path rather than straight back-to-front, creating space and friction for shots like flicks, rips, and loops.
+  reason: The speaker states that both wings follow an outside-in arc and that the backhand needs a small outside arc.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 82C2Zhfyq0s
+    start_ms: 301366
+    end_ms: 312466
+    url: https://www.youtube.com/watch?v=82C2Zhfyq0s&t=301s
+    segment_ids:
+    - 82C2Zhfyq0s:00055
+    - 82C2Zhfyq0s:00056
+- id: 1UthOchBWWc-concept-backhand-arc-trajectory-reviewed
+  evidence_type: definition
+  excerpt: The backhand uses a small arc or fan-shaped trajectory, rather than a straight push or wrist break.
+  reason: The speaker directly names arc awareness, describes the racket moving like a fan, and says the trajectory follows the edge of an opening fan.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 1UthOchBWWc
+    start_ms: 289966
+    end_ms: 318066
+    url: https://www.youtube.com/watch?v=1UthOchBWWc&t=289s
+    segment_ids:
+    - 1UthOchBWWc:00047
+    - 1UthOchBWWc:00048
+- id: mQdrXMukRSY-concept-backhand-arc-trajectory-reviewed
+  evidence_type: definition
+  excerpt: The backhand swing path should follow a curved arc rather than straight lines in order to generate spin and maintain quality.
+  reason: The speaker directly names the backhand drive trajectory as opening a fan and says straight paths are incorrect; an arc is required.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: mQdrXMukRSY
+    start_ms: 130766
+    end_ms: 149633
+    url: https://www.youtube.com/watch?v=mQdrXMukRSY&t=130s
+    segment_ids:
+    - mQdrXMukRSY:00020
+    - mQdrXMukRSY:00022
+- id: ATd38ewLMqs-c5-reviewed
+  evidence_type: definition
+  excerpt: The backhand drive uses a compact fan-like arc that moves forward and sideways instead of a straight push.
+  reason: The speaker repeatedly describes the stroke as a fan-like arc or outside arc, explicitly contrasting it with a straight push.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ATd38ewLMqs
+    start_ms: 407633
+    end_ms: 435600
+    url: https://www.youtube.com/watch?v=ATd38ewLMqs&t=407s
+    segment_ids:
+    - ATd38ewLMqs:00057
+    - ATd38ewLMqs:00058
+    - ATd38ewLMqs:00060
+    - ATd38ewLMqs:00061
+- id: pbILplLUhnI-concept-backhand-arc-trajectory-reviewed
+  evidence_type: definition
+  excerpt: The backhand swing should open into an arc rather than travel as a straight line, especially when preparing for flicks and loops.
+  reason: The speaker directly says the backhand arc should be like opening a fan and ties that arc to flicks and loops.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: pbILplLUhnI
+    start_ms: 231400
+    end_ms: 253166
+    url: https://www.youtube.com/watch?v=pbILplLUhnI&t=231s
+    segment_ids:
+    - pbILplLUhnI:00040
+    - pbILplLUhnI:00041
+    - pbILplLUhnI:00042
+- id: urfOsNEfkYg-urfOsNEfkYg-concept-1-reviewed
+  evidence_type: explanation
+  excerpt: A backhand swing path that curves from left to front to right rather than moving straight front-to-back.
+  reason: The speaker explicitly contrasts a straight front-to-back motion with a left-to-front-to-right arc.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: urfOsNEfkYg
+    start_ms: 54760
+    end_ms: 65040
+    url: https://www.youtube.com/watch?v=urfOsNEfkYg&t=54s
+    segment_ids:
+    - urfOsNEfkYg:00020
+    - urfOsNEfkYg:00021
+    - urfOsNEfkYg:00022
+    - urfOsNEfkYg:00023
+- id: 1UthOchBWWc-concept-backhand-arc-trajectory-codex-reviewed
+  evidence_type: explanation
+  excerpt: You can visualize the motion like a windshield wiper... It's about making solid forward contact while brushing horizontally, creating that fan-like motion.
+  reason: Use solid forward contact while brushing horizontally to create a fan-like backhand motion; avoid repeatedly breaking the wrist back and forth.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 1UthOchBWWc
+    start_ms: 279866
+    end_ms: 299466
+    url: https://www.youtube.com/watch?v=1UthOchBWWc&t=279s
+    segment_ids:
+    - 1UthOchBWWc:00046
+    - 1UthOchBWWc:00047
+- id: hKQbi0Kk_Gs-concept-backhand-forearm-driven-arc-codex-reviewed
+  evidence_type: correction
+  excerpt: The backhand should feel like drawing a small arc with the forearm.
+  reason: Feel the backhand motion as drawing a small arc with the forearm.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: hKQbi0Kk_Gs
+    start_ms: 654366
+    end_ms: 669333
+    url: https://www.youtube.com/watch?v=hKQbi0Kk_Gs&t=654s
+    segment_ids:
+    - hKQbi0Kk_Gs:00136
+    - hKQbi0Kk_Gs:00137
+    - hKQbi0Kk_Gs:00138
+- id: mQdrXMukRSY-concept-backhand-arc-trajectory-codex-reviewed
+  evidence_type: definition
+  excerpt: The trajectory of a backhand drive should be like opening a fan. From the backswing, the swing should follow an arc continuously rather than moving straight forward, up, or to the right.
+  reason: From the backswing, follow a continuous arc like opening a fan instead of moving straight forward, up, or to the right.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: mQdrXMukRSY
+    start_ms: 130766
+    end_ms: 154666
+    url: https://www.youtube.com/watch?v=mQdrXMukRSY&t=130s
+    segment_ids:
+    - mQdrXMukRSY:00020
+    - mQdrXMukRSY:00021
+    - mQdrXMukRSY:00022
+    - mQdrXMukRSY:00023
+- id: JfZ-7fgsF-o-concept-backhand-arc-trajectory-codex-reviewed
+  evidence_type: definition
+  excerpt: 'To generate friction on the backhand, the racket head must move like the hand of a clock: 8, 9, 10, 11, 12, 1, 2. The racket head needs to rotate.'
+  reason: To generate backhand friction, rotate the racket head along a clock-like path from 8 through 2.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: JfZ-7fgsF-o
+    start_ms: 362100
+    end_ms: 374566
+    url: https://www.youtube.com/watch?v=JfZ-7fgsF-o&t=362s
+    segment_ids:
+    - JfZ-7fgsF-o:00074
+    - JfZ-7fgsF-o:00075

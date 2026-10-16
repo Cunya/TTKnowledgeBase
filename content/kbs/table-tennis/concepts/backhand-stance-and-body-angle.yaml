@@ -2,46 +2,62 @@ id: concept-backhand-stance-and-body-angle
 slug: backhand-stance-and-body-angle
 label: Backhand stance and body angle
 aliases:
-  - slightly angled body stance
-  - backhand stance
+- slightly angled body stance
+- backhand stance
 short_definition: A backhand stance should be slightly angled, with the left side of the body braced toward the ball rather than facing squarely forward.
 evidence_summary: >-
-  Backhand stance and body angle brings together several connected ideas. The backhand side should
-  be braced by the left side of the body and that the stance should be slightly angled, not
-  square. Together, these principles show how the topic is applied in practice while preserving
-  the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:6ec37e88a6651f4efe8a3965998f70dd29ee2615e1bca9143377c41d99833e85"
+  These contiguous directly describe a backhand stance cue and staying centered, matching the existing backhand stance topic. The proposed claims about expanded coverage and avoiding retreating are omitted because this span does not directly support them.
+evidence_summary_source_hash: "sha256:213670f262861e03b7503a09db2e2bac6061cd21b0abae3b3573639d30ef0915"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
   category:
-    - fundamentals
+  - fundamentals
   side:
-    - backhand
+  - backhand
   distance:
-    - close
+  - close
   level:
-    - intermediate
+  - intermediate
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 13c6d09d49e16d65f7e75676257e80a18ba407d8a76522f5d989710d899643df
-  prompt_version: candidate-review-v1
+  input_hash: sha256:c7a3f7f036ef6ecc31a951d5f6f6da95ad39149c7eb0082b2323c9168773e197
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: 82C2Zhfyq0s-concept-backhand-stance-and-body-angle-reviewed
-    evidence_type: definition
-    excerpt: A backhand stance should be slightly angled, with the left side of the body braced toward the ball rather than facing squarely forward.
-    reason: The speaker says the backhand side should be braced by the left side of the body and that the stance should be slightly angled, not square.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 82C2Zhfyq0s
-      start_ms: 56933
-      end_ms: 81100
-      url: https://www.youtube.com/watch?v=82C2Zhfyq0s&t=56s
-      segment_ids:
-        - 82C2Zhfyq0s:00009
-        - 82C2Zhfyq0s:00012
+- id: 82C2Zhfyq0s-concept-backhand-stance-and-body-angle-reviewed
+  evidence_type: definition
+  excerpt: A backhand stance should be slightly angled, with the left side of the body braced toward the ball rather than facing squarely forward.
+  reason: The speaker says the backhand side should be braced by the left side of the body and that the stance should be slightly angled, not square.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 82C2Zhfyq0s
+    start_ms: 56933
+    end_ms: 81100
+    url: https://www.youtube.com/watch?v=82C2Zhfyq0s&t=56s
+    segment_ids:
+    - 82C2Zhfyq0s:00009
+    - 82C2Zhfyq0s:00012
+- id: HlTqPv-MpGI-concept-backhand-stance-codex-reviewed
+  evidence_type: explanation
+  excerpt: Open up your backhand's center of gravity, follow the ball, and stay in the middle.
+  reason: These contiguous transcript segments directly describe a backhand stance cue and staying centered, matching the existing backhand stance topic. The proposed claims about expanded coverage and avoiding retreating are omitted because this span does not directly support them.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: HlTqPv-MpGI
+    start_ms: 326233
+    end_ms: 332533
+    url: https://www.youtube.com/watch?v=HlTqPv-MpGI&t=326s
+    segment_ids:
+    - HlTqPv-MpGI:00156
+    - HlTqPv-MpGI:00157
+    - HlTqPv-MpGI:00158

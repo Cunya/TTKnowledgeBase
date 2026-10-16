@@ -6,20 +6,9 @@ aliases:
   - can't read the spin clearly
 short_definition: A receive approach for balls whose spin is unclear or neutral, typically using a push-flick or straight forward motion for stability.
 evidence_summary: >-
-  Neutral-ball receive handling brings together several connected ideas. The push-flick is for
-  semi-spin or no-spin balls and also recommends a general forward flick when the incoming spin is
-  unclear. How to handle unreadable short serves neutrally, with the racket between flat and
-  upright and a focus on landing the ball first. Not being able to tell the spin clearly, yet
-  still keeping the ball in play by using a stable receive approach. To adjust based on ball type
-  and focus on tracking the ball when many balls or difficult situations make reading harder,
-  which fits neutral/unclear receive handling. If you cannot read the spin, it is likely a
-  neutral-spin ball and you should use a neutral return method. The neutral or semi-spin ball and
-  recommends treating unreadable balls as neutral. Half-spin, half-no-spin as a common tricky
-  serve with difficult push and flick outcomes. These as neutral-spin balls and to treat them as
-  neutral rather than heavy-spin balls. Additional points reinforce the same theme. Together,
-  these principles show how the topic is applied in practice while preserving the relevant
-  distinctions and constraints.
-evidence_summary_source_hash: "sha256:ce773baa1fe97c8dca28ad89476564e99562effc0c7f67723328086cf2b206bb"
+  A receive approach for balls whose spin is unclear or neutral, typically using a push-flick or
+  straight forward motion for stability.
+evidence_summary_source_hash: "sha256:85f6d6ebed43840c06c28d174582289ce050f9ec6145e3fa6789723c12a354d1"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -33,10 +22,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: bfb4645cc48dc0fae99592cbf1a869858a96a55b2eb94a04a877806f811d8b4d
-  prompt_version: candidate-review-v1
+  input_hash: sha256:e839bcd9678426ff5b60678ece4765986d99e52424af0c7be3012357a093311d
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: nNLLuV_wY24-concept-no-spin-and-semi-spin-receive-reviewed
     evidence_type: definition
@@ -44,7 +36,7 @@ evidence:
     reason: The speaker says the push-flick is for semi-spin or no-spin balls and also recommends a general forward flick when the incoming spin is unclear.
     confidence: 0.92
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: nNLLuV_wY24
       start_ms: 175300
@@ -59,7 +51,7 @@ evidence:
     reason: The speaker again says the return is often topspin or no-spin and instructs the player to treat it as no-spin rather than using a backspin-like motion.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: HWy3VGWHE5Q
       start_ms: 296633
@@ -76,7 +68,7 @@ evidence:
     reason: The speaker describes how to handle unreadable short serves neutrally, with the racket between flat and upright and a focus on landing the ball first.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 35D9jnnwYtw
       start_ms: 182239
@@ -97,7 +89,7 @@ evidence:
     reason: 'The transcript gives a step-by-step fallback for unclear spin: slow push, middle contact, then slight sideways forearm motion.'
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: WcQLHn2Fafw
       start_ms: 432266
@@ -113,7 +105,7 @@ evidence:
     reason: The speaker describes not being able to tell the spin clearly, yet still keeping the ball in play by using a stable receive approach.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 2xGbue3FXIw
       start_ms: 291510
@@ -130,7 +122,7 @@ evidence:
     reason: The speaker describes a short, low, middle ball with no spin as especially difficult to receive.
     confidence: 0.94
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: -J5iKei3MIQ
       start_ms: 512766
@@ -150,7 +142,7 @@ evidence:
     reason: The speaker says to adjust based on ball type and focus on tracking the ball when many balls or difficult situations make reading harder, which fits neutral/unclear receive handling.
     confidence: 0.84
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: FweaNVt8gA0
       start_ms: 1174600
@@ -166,7 +158,7 @@ evidence:
     reason: The receive is described as uncertain, with the speaker noting that the ball may not have very heavy underspin and that the player can still make a controlled shot without precise spin recognition.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: zNga_K6A7F0
       start_ms: 81600
@@ -181,7 +173,7 @@ evidence:
     reason: The speaker says that if you cannot read the spin, it is likely a neutral-spin ball and you should use a neutral return method.
     confidence: 0.89
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: DShIvrh0Yss
       start_ms: 587866
@@ -195,7 +187,7 @@ evidence:
     reason: The speaker says no-spin is simple, semi-spin is the real challenge, and recommends a neutral middle-ground response.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 02wQgAIcHKY
       start_ms: 302566
@@ -214,7 +206,7 @@ evidence:
     reason: The speaker explicitly names the neutral or semi-spin ball and recommends treating unreadable balls as neutral.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ywhpUTdXW7I
       start_ms: 735566
@@ -229,7 +221,7 @@ evidence:
     reason: The transcript explains that many amateur serves are light-spin or neutral and require a neutral return.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: rf-9lmjigbs
       start_ms: 107066
@@ -245,7 +237,7 @@ evidence:
     reason: The speaker identifies half-spin, half-no-spin as a common tricky serve with difficult push and flick outcomes.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8QSCtikekto
       start_ms: 414766
@@ -261,7 +253,7 @@ evidence:
     reason: The speaker explicitly frames the problem as awkward half-long balls with unclear or ambiguous spin.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: QKc7uSJo9mM
       start_ms: 268100
@@ -277,7 +269,7 @@ evidence:
     reason: The speaker explicitly frames these as neutral-spin balls and says to treat them as neutral rather than heavy-spin balls.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 6K2G7nKr6nU
       start_ms: 178600
@@ -286,3 +278,59 @@ evidence:
       segment_ids:
         - 6K2G7nKr6nU:00033
         - 6K2G7nKr6nU:00035
+  - id: -J5iKei3MIQ-concept-neutral-ball-receive-handling-codex-reviewed
+    evidence_type: explanation
+    excerpt: A short, low ball in the middle with no spin is challenging because its spin is difficult to handle.
+    reason: These contiguous segments directly describe a short, low middle ball with no spin as challenging and difficult to handle.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: -J5iKei3MIQ
+      start_ms: 512766
+      end_ms: 521333
+      url: https://www.youtube.com/watch?v=-J5iKei3MIQ&t=512s
+      segment_ids:
+        - -J5iKei3MIQ:00259
+        - -J5iKei3MIQ:00260
+        - -J5iKei3MIQ:00261
+        - -J5iKei3MIQ:00262
+        - -J5iKei3MIQ:00263
+        - -J5iKei3MIQ:00264
+  - id: 2xGbue3FXIw-concept-neutral-ball-receive-handling-codex-reviewed
+    evidence_type: explanation
+    excerpt: Even without judging the spin accurately, the player can handle the shot steadily, get the ball onto the table, and keep it in play; the key is how contact is made.
+    reason: This contiguous 19.7-second span directly states that inaccurate spin judgment can still be managed with a steady receive that lands on the table and remains in play, identifying ball contact as the key.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 2xGbue3FXIw
+      start_ms: 291510
+      end_ms: 306686
+      url: https://www.youtube.com/watch?v=2xGbue3FXIw&t=291s
+      segment_ids:
+        - 2xGbue3FXIw:00089
+        - 2xGbue3FXIw:00090
+        - 2xGbue3FXIw:00091
+        - 2xGbue3FXIw:00092
+        - 2xGbue3FXIw:00093
+        - 2xGbue3FXIw:00094
+  - id: HWy3VGWHE5Q-concept-neutral-ball-receive-handling-codex-reviewed
+    evidence_type: explanation
+    excerpt: Serve a backspin to the backhand corner, wait for the long-pips return, and prepare to handle it as a no-spin ball rather than reacting as if it were still a backspin rally.
+    reason: The selected contiguous span directly instructs the player to treat the long-pips return as no-spin and avoid responding as if the backspin rally continued.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: HWy3VGWHE5Q
+      start_ms: 308166
+      end_ms: 320633
+      url: https://www.youtube.com/watch?v=HWy3VGWHE5Q&t=308s
+      segment_ids:
+        - HWy3VGWHE5Q:00141
+        - HWy3VGWHE5Q:00142
+        - HWy3VGWHE5Q:00143
+        - HWy3VGWHE5Q:00144
+        - HWy3VGWHE5Q:00145

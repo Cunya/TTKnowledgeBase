@@ -52,10 +52,19 @@ data/manifests/*.failure.json
 data/manifests/**/local-*.json
 data/manifests/**/discovered-videos.json
 data/manifests/**/*.failure.json
+data/manifests/**/*.adjudication.json
+data/manifests/**/*.summary.json
+data/manifests/**/*.summary-batch.json
+data/manifests/**/llm-budget.*.json
+data/manifests/**/cp.*.json
+data/manifests/**/cp.lock
+data/manifests/**/*.tmp
 data/manifests/**/ingest-retries.json
 data/manifests/**/excerpt-rephrasing.json
 data/manifests/**/boundary-report.json
 data/manifests/**/boundary-review.json
+data/manifests/**/published-audit*.json
+data/manifests/**/published-audit-model/
 data/manifests/**/*.rephrase.json
 data/manifests/**/*.rephrase.failure.json
 data/manifests/**/llm-budget.json
@@ -63,11 +72,14 @@ data/manifests/**/llm-deferred.json
 data/manifests/**/daily-processing.lock
 data/manifests/**/daily-processing.latest.json
 data/manifests/**/inventory-ledger.json
+data/manifests/**/bucket-history.json
+data/manifests/**/bucket-history.json.*.tmp
 data/manifests/**/media-asr/
 *.response.json
 *.events.jsonl
 
 # Future offline media archive
+data/manifests/**/published-repair*
 media/
 *.part
 *.ytdl

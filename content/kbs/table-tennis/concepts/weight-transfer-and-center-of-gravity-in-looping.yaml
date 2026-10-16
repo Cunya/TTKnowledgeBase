@@ -6,11 +6,9 @@ aliases:
   - weight transfer into the shot
 short_definition: A backhand loop should use the body's center of gravity and weight transfer into and out of the shot rather than relying on the arm alone.
 evidence_summary: >-
-  Weight transfer and center of gravity in looping brings together several connected ideas. To use
-  the center of gravity, transfer weight into the shot and back out, and not lift with the arm
-  alone. Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:a270c1d7fe92a416e9b808ac32e2499d82a4b493787323c67a4730b6559c9df4"
+  A backhand loop should use the body's center of gravity and weight transfer into and out of the
+  shot rather than relying on the arm alone.
+evidence_summary_source_hash: "sha256:07745d90c478c24f40bbbf71a86eeb3c02f9ef9a90b637a4cfb3e1e9c44ceb61"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -27,16 +25,34 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 01fcd058e8f969d2fdcb40567cd8a6e3ec29530340e68cb40435c9db0847cd11
-  prompt_version: candidate-review-v1
+  input_hash: sha256:eae87a843af7241ef75a890c273892f42ad7205e04abd3b64c996fc9d7dd2b2d
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: F0HvzL1Wk3w-concept-weight-transfer-and-center-of-gravity-in-looping-reviewed
     evidence_type: explanation
     excerpt: A backhand loop should use the body's center of gravity and weight transfer into and out of the shot rather than relying on the arm alone.
     reason: The speaker explicitly says to use the center of gravity, transfer weight into the shot and back out, and not lift with the arm alone.
     confidence: 0.96
+    visual_status: not_visual
+    review_status: unreviewed
+    source:
+      video_id: F0HvzL1Wk3w
+      start_ms: 372200
+      end_ms: 396166
+      url: https://www.youtube.com/watch?v=F0HvzL1Wk3w&t=372s
+      segment_ids:
+        - F0HvzL1Wk3w:00072
+        - F0HvzL1Wk3w:00076
+  - id: F0HvzL1Wk3w-concept-weight-transfer-and-center-of-gravity-in-looping-codex-reviewed
+    evidence_type: explanation
+    excerpt: For a backhand loop, use your center of gravity and transfer your weight into the shot and back out. Even when the ball is a bit short, bring your center of gravity forward; you cannot lift the ball with your arm alone.
+    reason: These contiguous segments directly explain using the center of gravity, transferring weight into and out of the backhand loop, moving forward for shorter balls, and avoiding arm-only lifting.
+    confidence: 0.99
     visual_status: not_visual
     review_status: approved
     source:
@@ -46,4 +62,7 @@ evidence:
       url: https://www.youtube.com/watch?v=F0HvzL1Wk3w&t=372s
       segment_ids:
         - F0HvzL1Wk3w:00072
+        - F0HvzL1Wk3w:00073
+        - F0HvzL1Wk3w:00074
+        - F0HvzL1Wk3w:00075
         - F0HvzL1Wk3w:00076

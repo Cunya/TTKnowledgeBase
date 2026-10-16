@@ -7,20 +7,9 @@ aliases:
   - actively brush the ball
 short_definition: Creating topspin by brushing the ball in a forward direction rather than only lifting upward or merely touching it.
 evidence_summary: >-
-  Forward brushing on topspin brings together several connected ideas. Brushing upward alone is
-  not enough; the ball must be brushed forward, and spinning comes from active brushing rather
-  than touching. To add forward movement and brush forward when hitting the ball. An underspin
-  ball requires forward drive, not just lifting it up, and power with brushing direction. Every
-  stroke needs forward momentum, with topspin requiring forward-and-closing motion and backspin
-  requiring forward brushing. The forearm should drive forward, avoid upward finishing motions,
-  and use a compact direct hit or brushing friction depending on stroke size. Vertical brushing is
-  ineffective and insists the brush must be directed forward into and through the ball. Spin
-  requires an arcing motion and explicitly contrasts it with flat forward movement, then repeats
-  that the correct trajectory is forward and upward like a rainbow. The serve depends on brushing
-  from low to high and forward, and explicitly labels that as the topspin-sidespin motion.
-  Additional points reinforce the same theme. Together, these principles show how the topic is
-  applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:a830ea9a9f45c014656796d3d736d0663851f9417cbc3044c35f931025febcfd"
+  Creating topspin by brushing the ball in a forward direction rather than only lifting upward or
+  merely touching it.
+evidence_summary_source_hash: "sha256:24840fd50be7c0319d005ad6b023eea6ec651023fb5b29fddd9ad361dda5418b"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -34,10 +23,13 @@ facets:
 difficulty: beginner
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: df72e4bf0b961e0be7de12e8a34d0c79f7da4b6231afef84b17b420120b0ea74
-  prompt_version: candidate-review-v1
+  input_hash: sha256:cce18813d83ed4cde58aeb33924ee133204e674d4559f0ee825d6995830e2e2a
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: ggaBOPI4Nwc-concept-forward-brushing-on-topspin-reviewed
     evidence_type: explanation
@@ -45,7 +37,7 @@ evidence:
     reason: The speaker repeatedly says brushing upward alone is not enough; the ball must be brushed forward, and spinning comes from active brushing rather than touching.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ggaBOPI4Nwc
       start_ms: 317600
@@ -64,7 +56,7 @@ evidence:
     reason: The speaker repeatedly instructs to add forward movement and brush forward when hitting the ball.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: idAN8cPDZ7w
       start_ms: 169566
@@ -79,7 +71,7 @@ evidence:
     reason: The speaker contrasts pure upward brushing with brushing forward and says the forward version creates more spin.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 60_qpMsHRvQ
       start_ms: 240000
@@ -96,7 +88,7 @@ evidence:
     reason: The speaker says an underspin ball requires forward drive, not just lifting it up, and contrasts power with brushing direction.
     confidence: 0.88
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hPK9ArHmWmk
       start_ms: 83466
@@ -111,7 +103,7 @@ evidence:
     reason: The transcript states that every stroke needs forward momentum, with topspin requiring forward-and-closing motion and backspin requiring forward brushing.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hDpdmRuaLMY
       start_ms: 818633
@@ -130,7 +122,7 @@ evidence:
     reason: The speaker says you must cover the ball, brush over the top, and brush aggressively to create heavy friction and spin.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: a1vta4dOA2Q
       start_ms: 496100
@@ -145,7 +137,7 @@ evidence:
     reason: The speaker says the forearm should drive forward, avoid upward finishing motions, and use a compact direct hit or brushing friction depending on stroke size.
     confidence: 0.87
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: yGWrxxrcvN4
       start_ms: 237900
@@ -162,7 +154,7 @@ evidence:
     reason: The speaker says vertical brushing is ineffective and insists the brush must be directed forward into and through the ball.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: D596gPtN634
       start_ms: 907966
@@ -181,7 +173,7 @@ evidence:
     reason: The speaker warns against only lifting upward and says the ball must be contacted and friction applied in a forward direction for a successful loop.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: D02EFJijJiU
       start_ms: 597366
@@ -196,7 +188,7 @@ evidence:
     reason: The speaker explains that spin requires an arcing motion and explicitly contrasts it with flat forward movement, then repeats that the correct trajectory is forward and upward like a rainbow.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Xj55m2HY2YY
       start_ms: 41233
@@ -211,7 +203,7 @@ evidence:
     reason: The speaker says the serve depends on brushing from low to high and forward, and explicitly labels that as the topspin-sidespin motion.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: OVkH-47SvqE
       start_ms: 155233
@@ -220,3 +212,34 @@ evidence:
       segment_ids:
         - OVkH-47SvqE:00027
         - OVkH-47SvqE:00030
+  - id: FweaNVt8gA0-concept-forward-brushing-on-topspin-codex-reviewed
+    evidence_type: explanation
+    excerpt: After contacting and brushing the ball, the movement forms an arc, with the forearm continuing forward and then moving upward. Forward force is essential for both forehand and backhand strokes.
+    reason: These contiguous segments explicitly describe brushing contact, an arcing motion, and continued forward then upward forearm movement for both forehand and backhand strokes. The span is under 30 seconds and directly supports the concept.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: FweaNVt8gA0
+      start_ms: 513333
+      end_ms: 526100
+      url: https://www.youtube.com/watch?v=FweaNVt8gA0&t=513s
+      segment_ids:
+        - FweaNVt8gA0:00124
+        - FweaNVt8gA0:00125
+        - FweaNVt8gA0:00126
+  - id: idAN8cPDZ7w-concept-forward-brushing-on-topspin-codex-reviewed
+    evidence_type: explanation
+    excerpt: Add forward movement when hitting the ball; strike forward and brush the ball.
+    reason: These contiguous segments directly instruct the player to add forward movement and brush the ball, supporting the existing forward-brushing stroke concept.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: idAN8cPDZ7w
+      start_ms: 169566
+      end_ms: 185900
+      url: https://www.youtube.com/watch?v=idAN8cPDZ7w&t=169s
+      segment_ids:
+        - idAN8cPDZ7w:00022
+        - idAN8cPDZ7w:00023

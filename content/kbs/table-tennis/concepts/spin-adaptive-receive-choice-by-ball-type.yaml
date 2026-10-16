@@ -6,11 +6,8 @@ aliases:
   - adjust based on incoming ball
 short_definition: Technique choice and brush ratio should change according to the incoming ball's spin and speed.
 evidence_summary: >-
-  Spin-adaptive receive choice by ball type brings together several connected ideas. To vary the
-  brushing-versus-acceleration ratio depending on the incoming ball and to flick along with
-  natural rotation on certain serves. Together, these principles show how the topic is applied in
-  practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:d2a64845acb5bef9a995428edd886002862e5b47799bf97e92146d6a69f8972a"
+  Technique choice and brush ratio should change according to the incoming ball's spin and speed.
+evidence_summary_source_hash: "sha256:68c6dc82b7433d12060e0347410c91ffc9344efac4aa4fe12bc6cb6333ae1236"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -24,10 +21,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 73ede2312bac2f84a6df6a022b90a2519165abaf7a89bfe85dba59cc8fb9aa10
-  prompt_version: candidate-review-v1
+  input_hash: sha256:79f6d0af2db479522e52df280c2ea1198d498c4fe2406e0c9917e11b0f065fd0
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: 9EcoI6PnOzE-concept-forehand-or-backhand-neutral-targeting-reviewed
     evidence_type: explanation
@@ -35,7 +35,7 @@ evidence:
     reason: The speaker says to vary the brushing-versus-acceleration ratio depending on the incoming ball and to flick along with natural rotation on certain serves.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 9EcoI6PnOzE
       start_ms: 148766
@@ -45,3 +45,21 @@ evidence:
         - 9EcoI6PnOzE:00030
         - 9EcoI6PnOzE:00033
         - 9EcoI6PnOzE:00034
+  - id: ezGVESU0Rp0-concept-spin-adaptive-receive-codex-reviewed
+    evidence_type: explanation
+    excerpt: 'Adjust the receive contact point and push direction to the incoming spin: contact the side against heavy spin, push the back against little or no spin, and use a side push or side cut against greater spin.'
+    reason: The contiguous 28.5-second span explicitly explains how receive contact and push choice change with incoming spin. It directly supports the existing spin-adaptive receive-choice concept.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ezGVESU0Rp0
+      start_ms: 37866
+      end_ms: 66400
+      url: https://www.youtube.com/watch?v=ezGVESU0Rp0&t=37s
+      segment_ids:
+        - ezGVESU0Rp0:00008
+        - ezGVESU0Rp0:00009
+        - ezGVESU0Rp0:00010
+        - ezGVESU0Rp0:00011
+        - ezGVESU0Rp0:00012

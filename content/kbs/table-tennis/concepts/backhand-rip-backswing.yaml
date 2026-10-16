@@ -5,13 +5,7 @@ aliases:
   - backhand rip preparation
 short_definition: Adjust backswing height and size to the incoming ball while preserving room for forward acceleration.
 evidence_summary: >-
-  The backhand rip begins from a slightly lower backswing than a backhand drive, usually around
-  the lower abdomen, but it should stay compact and never drop so far that it becomes a looping
-  action. For stronger topspin, the racket face starts closed and the ball is treated as if it
-  stays underneath the racket before release, which preserves the friction-oriented shape of the
-  stroke.
-evidence_summary_source_hash: "sha256:bfaef38180c9c52205b1bfdc9e4e5ffe13242b817d06c04e8e7c2bc089b2a3ee"
-evidence_summary_generator: "codex"
+  Adjust the backswing to the incoming ball and available space. The cited drive-versus-rip comparison uses a backward pull for the drive and a slightly lower start for the rip. The near-table warning is a separate source moment.
 concept_type: stroke-mechanic
 facets:
   category:
@@ -70,18 +64,19 @@ evidence:
         - "xWrDKGnqmBs:00063"
   - id: xWrDKGnqmBs-cand-backhand-rip-backswing-height-4
     evidence_type: definition
-    excerpt: The speaker defines where the backswing should start for the rip and cautions against taking it too low near the table.
-    reason: For the backhand rip, the backswing starts slightly lower than a backhand drive, around the lower abdomen, but should not drop so low that it turns into a loop.
+    excerpt: Pull back for the drive; dip slightly lower for the rip.
+    reason: Pull back for the drive; dip slightly lower for the rip.
     confidence: 0.94
     visual_status: not_visual
     review_status: approved
     source:
       video_id: xWrDKGnqmBs
-      start_ms: 217866
+      start_ms: 213600
       end_ms: 219933
-      url: "https://www.youtube.com/watch?v=xWrDKGnqmBs&t=217s"
+      url: https://www.youtube.com/watch?v=xWrDKGnqmBs&t=213s
       segment_ids:
-        - "xWrDKGnqmBs:00072"
+        - xWrDKGnqmBs:00071
+        - xWrDKGnqmBs:00072
   - id: zd8tcVUWwK4-cand-backhand-rip-backswing-1
     evidence_type: explanation
     excerpt: Speaker repeatedly states that starting pressed down is the key to error-free power on backhand topspin.
@@ -130,7 +125,7 @@ evidence:
     reason: The speaker says to press over the ball, load the stroke, and keep pressure through contact.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Pm10kSVw_Ks
       start_ms: 286960

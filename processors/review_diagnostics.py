@@ -43,7 +43,7 @@ def build_review_diagnostics(queue_path: Path, concept_dir: Path, output_path: P
                 start_ms = min(segment.start_ms for segment in cited)
                 end_ms = max(segment.end_ms for segment in cited)
         if decision == "human_review":
-            category = "human review"
+            category = "legacy human assignment"
         elif "boundary" in note or "span" in note:
             category = "evidence boundary"
         elif best_score >= 90:

@@ -42,7 +42,7 @@ from .ingest import (
 )
 from .inventory import build_inventory_ledger
 from .llm_budget import LLMBudgetExceeded, LLMTokenBudget
-from .models import KnowledgeNavigation, PublishCorpus
+from .models import Concept, KnowledgeNavigation, PublishCorpus, SourceSpan
 from .pipeline import (
     auto_place_generated_concepts,
     build_quality_report,
@@ -51,7 +51,9 @@ from .pipeline import (
     load_reviewed_concepts,
     load_videos,
     process_pending_candidates,
+    quarantine_legacy_automatic_promotions,
     render_quality_report_markdown,
+    repair_source_envelopes,
     rephrase_high_overlap_excerpts,
     validate_corpus,
     validate_navigation,
@@ -60,14 +62,107 @@ from .pipeline import (
 )
 from .pipeline import publish as publish_corpus
 from .progress import build_progress_report, write_recent_snapshot
+from .published_audit import (
+    audit_dossier,
+    audit_summary,
+    build_published_audit,
+    next_audit_items,
+    record_audit_reviews,
+    render_audit_report,
+)
+from .published_audit_runner import run_audit_jobs
+from .published_repair import (
+    REPAIR_VERSION,
+    apply_reviewed_plan,
+    reconcile_primary_reviews,
+    render_repair_plans,
+    review_findings,
+    reviewed_rating_removal_plan,
+    rollback_repair_transaction,
+    run_repair_campaign,
+    summary_format_plan,
+    timing_quarantine_plan,
+)
 from .review_diagnostics import build_review_diagnostics
-from .utils import read_json, read_yaml, sha256_json, write_json
-from .workspace import KnowledgeBasePaths, load_knowledge_base
+from .run_lock import KnowledgeBaseRunLock
+from .utils import read_json, read_yaml, set_current_process_idle_priority, sha256_json, write_json
+from .workspace import KnowledgeBasePaths, load_knowledge_base, processing_is_paused
 
 ROOT = Path(__file__).resolve().parents[1]
 console = Console()
 roundtrip_yaml = YAML()
 MEMBERS_ONLY_COOLDOWN = timedelta(days=3)
+
+
+def adjudication_progress_position(event: dict) -> str:
+    index = event.get("index")
+    total = event.get("total")
+    backlog_remaining = event.get("backlog_remaining")
+    backlog_total = event.get("backlog_total")
+    full_remaining = event.get("full_backlog_remaining")
+    full_total = event.get("full_backlog_total")
+    scope = []
+    if backlog_remaining is not None and backlog_total is not None:
+        scope.append(f"eligible in selected videos: {backlog_total}")
+    if full_remaining is not None and full_total is not None:
+        scope.append(f"full adjudication backlog: {full_remaining}/{full_total}")
+    suffix = f" ({'; '.join(scope)})" if scope else ""
+    return f"{index}/{total} selected this pass{suffix}"
+
+
+def adjudication_backlog_suffix(event: dict) -> str:
+    remaining = event.get("backlog_remaining")
+    total = event.get("backlog_total")
+    if remaining is None or total is None:
+        return ""
+    full_remaining = event.get("full_backlog_remaining")
+    full_total = event.get("full_backlog_total")
+    full = (
+        f"; full adjudication backlog {full_remaining}/{full_total}"
+        if full_remaining is not None and full_total is not None
+        else ""
+    )
+    return f"; selected-video pool {remaining}/{total} remaining{full}"
+
+
+def print_adjudication_progress(event: dict) -> None:
+    """Print bounded, source-text-free progress for the local monitor."""
+    kind = str(event.get("event") or "")
+    index = event.get("index")
+    total = event.get("total")
+    video_id = str(event.get("video_id") or "unknown").replace("\n", " ")[:80]
+    candidate_id = str(event.get("candidate_id") or "unknown").replace("\n", " ")[:80]
+    if kind == "candidate_started":
+        print(
+            f"[adjudication] {adjudication_progress_position(event)} · video {video_id} · candidate {candidate_id}: "
+            "waiting for the configured language model",
+            flush=True,
+        )
+    elif kind == "candidate_heartbeat":
+        print(
+            f"[adjudication] {adjudication_progress_position(event)} · video {video_id} · candidate {candidate_id}: "
+            f"still waiting for the configured language model ({event.get('elapsed_seconds', 0)}s)",
+            flush=True,
+        )
+    elif kind == "candidate_finished":
+        print(
+            f"[adjudication] {adjudication_progress_position(event)} · video {video_id} · candidate {candidate_id}: "
+            f"finished with {event.get('outcome', 'finished')} in {event.get('elapsed_seconds', 0)}s",
+            flush=True,
+        )
+    elif kind == "candidate_error":
+        print(
+            f"[adjudication] {adjudication_progress_position(event)} · video {video_id} · candidate {candidate_id}: "
+            f"error ({event.get('error_type', 'unknown')}) after {event.get('elapsed_seconds', 0)}s",
+            flush=True,
+        )
+    elif kind == "checkpoint":
+        print(
+            f"[adjudication] checkpoint {index}/{total} persisted "
+            f"(batch {event.get('batch', 0)}/{event.get('batch_total', 0)})"
+            f"{adjudication_backlog_suffix(event)}",
+            flush=True,
+        )
 
 
 def retry_window_remaining(entry: dict, now: datetime | None = None) -> timedelta | None:
@@ -94,6 +189,11 @@ def block_cooldown_remaining(retry_state: dict, now: datetime | None = None) -> 
     ]
     return max((item for item in active if item is not None), default=None)
 app = typer.Typer(help="Build source-grounded video knowledge bases.")
+
+
+@app.callback()
+def configure_runtime_priority() -> None:
+    set_current_process_idle_priority()
 KbOption = Annotated[str | None, typer.Option("--kb", help="Knowledge-base ID")]
 
 
@@ -217,6 +317,18 @@ def build_evidence_summaries(
     with the configured model and daily budget.
     """
     paths = kb_paths(kb)
+    if write:
+        with KnowledgeBaseRunLock(paths.data("manifests") / "cp.lock"):
+            if processing_is_paused(paths.data("manifests")):
+                raise typer.BadParameter("Summary writes are paused during the published-content audit")
+            return _build_evidence_summaries(paths, engine, write, max_points, refresh_generated, model)
+    return _build_evidence_summaries(paths, engine, write, max_points, refresh_generated, model)
+
+
+def _build_evidence_summaries(
+    paths: KnowledgeBasePaths, engine: str, write: bool, max_points: int,
+    refresh_generated: bool, model: str | None,
+) -> None:
     if engine not in {"deterministic", "codex"}:
         raise typer.BadParameter("engine must be deterministic or codex")
     if engine == "codex" and not write:
@@ -232,6 +344,7 @@ def build_evidence_summaries(
                     max_points=max_points,
                     refresh_generated=refresh_generated,
                     model_override=model,
+                    videos=load_videos(paths.data("normalized")),
                 )
             except LLMBudgetExceeded as error:
                 console.print(f"[yellow]Summary generation deferred[/yellow]: {error}")
@@ -332,8 +445,12 @@ def ingest(
             "--retry-blocked, or wait for the recorded retry time."
         )
         raise typer.Exit(1)
+    try:
+        requested_video_ids = [video_id_from_url(url) for url in urls]
+    except ValueError as error:
+        raise typer.BadParameter(str(error), param_hint="urls") from error
     for index, url in enumerate(urls):
-        requested_video_id = video_id_from_url(url)
+        requested_video_id = requested_video_ids[index]
         cache_path = paths.data("normalized") / f"{requested_video_id}.json"
         needs_network = force or not cache_path.exists()
         if needs_network and successful_network_videos >= max_network_videos:
@@ -469,7 +586,10 @@ def ingest_media_asr_command(
     language_codes = resolve_transcript_languages(languages, paths)
     if cookie_file and not cookie_file.exists():
         raise typer.BadParameter(f"Cookie file does not exist: {cookie_file}")
-    video_id = video_id_from_url(url)
+    try:
+        video_id = video_id_from_url(url)
+    except ValueError as error:
+        raise typer.BadParameter(str(error), param_hint="url") from error
     options = IngestOptions(
         proxy_url=proxy_url or os.getenv("YTKB_YOUTUBE_PROXY_URL"),
         webshare_username=os.getenv("YTKB_WEBSHARE_USERNAME"),
@@ -618,7 +738,7 @@ def benchmark_models(
     models: Annotated[
         str | None,
         typer.Option(
-            help="Comma-separated Codex model IDs; defaults to the configured model and gpt-5.4-nano"
+            help="Comma-separated Codex model IDs; defaults to the configured model and escalation model"
         ),
     ] = None,
     video_ids: Annotated[
@@ -640,7 +760,10 @@ def benchmark_models(
     processor_config = read_yaml(config_path)["codex"]
     requested_models = [item.strip() for item in (models or "").split(",") if item.strip()]
     if not requested_models:
-        requested_models = [processor_config["default_model"], "gpt-5.4-nano"]
+        requested_models = [
+            processor_config["default_model"],
+            processor_config.get("escalation_model", processor_config["default_model"]),
+        ]
     requested_models = list(dict.fromkeys(requested_models))
     all_videos = load_videos(paths.data("normalized"))
     reviewed = load_reviewed_concepts(paths.content / "concepts")
@@ -714,20 +837,21 @@ def process_pending(
         float, typer.Option(min=0, max=1, help="Minimum confidence for automatic acceptance")
     ] = 0.85,
     retry_deferred: Annotated[
-        bool, typer.Option(help="Re-evaluate previously deferred candidates, including the full backfill")
+        bool, typer.Option(help="Check candidates previously set aside, including the full backfill")
     ] = False,
     max_adjudication_attempts: Annotated[
-        int, typer.Option(min=1, help="Assign unchanged ambiguity to human review after this many attempts")
+        int, typer.Option(min=1, help="Annotate repeated Codex deferrals after this many checks")
     ] = 2,
     max_candidates: Annotated[
-        int | None, typer.Option(min=1, help="Bound candidates considered in this adjudication pass")
+        int | None, typer.Option(min=1, help="Limit the candidates checked in this automatic review pass")
     ] = None,
     video_ids: Annotated[
         str | None, typer.Option(help="Optional comma-separated video IDs that define this pass")
     ] = None,
+    model: Annotated[str | None, typer.Option(help="Optional Codex model override")] = None,
     kb: KbOption = None,
 ) -> None:
-    """Triage cached pending candidates before any new scrape."""
+    """Review cached candidates before starting any new download."""
     paths = kb_paths(kb)
     concepts = load_reviewed_concepts(paths.content / "concepts")
     counts = process_pending_candidates(
@@ -740,6 +864,12 @@ def process_pending(
         max_adjudication_attempts=max_adjudication_attempts,
         max_candidates=max_candidates,
         video_ids={value for value in (video_ids or "").split(",") if value} or None,
+        processors_config=ROOT / "config" / "processors.yaml",
+        audit_dir=paths.data("manifests"),
+        budget_path=paths.data("manifests") / "llm-budget.json",
+        model_override=model,
+        taxonomy=read_yaml(paths.config / "taxonomy.yaml"),
+        progress_callback=print_adjudication_progress,
     )
     diagnostics_output = ROOT / "app" / "src" / "data" / "generated" / f"{paths.id}-concept-review.json"
     diagnostics = build_review_diagnostics(
@@ -747,7 +877,7 @@ def process_pending(
         paths.content / "concepts",
         diagnostics_output,
     )
-    navigation_counts = {"placed": 0, "skipped": 0}
+    navigation_counts = {"placed": 0, "skipped": 0, "holding": 0}
     navigation_path = paths.config / "navigation.yaml"
     if navigation_path.exists():
         navigation = read_yaml(navigation_path)
@@ -759,11 +889,42 @@ def process_pending(
     console.print(
         f"[green]Processed pending candidates for {paths.name}[/green]: "
         f"{counts['accepted']} accepted, {counts['deferred']} deferred, "
-        f"{counts['human_review']} assigned to human review, "
+        f"{counts['human_review']} optional human advisories, "
         f"{counts['rejected']} rejected, {counts['evidence_added']} evidence moments added, "
-        f"{counts['concepts_added']} concepts added; diagnostics refreshed "
-        f"({diagnostics['total']} deferred candidates); navigation placed "
+        f"{counts['concepts_added']} concepts added, "
+        f"{counts['concepts_restored']} quarantined concepts restored; diagnostics refreshed "
+        f"({diagnostics['total']} candidates waiting for a decision); navigation placed "
         f"{navigation_counts['placed']} concepts"
+        f" ({navigation_counts['holding']} awaiting editorial placement)"
+    )
+
+
+@app.command("repair-source-envelopes")
+def repair_envelopes(kb: KbOption = None) -> None:
+    """Expand spoken bounds so every cited caption segment is fully enclosed."""
+    paths = kb_paths(kb)
+    counts = repair_source_envelopes(
+        paths.content / "concepts", load_videos(paths.data("normalized"))
+    )
+    console.print(
+        f"[green]{paths.name}: repaired {counts['evidence']} source envelope(s) "
+        f"across {counts['files']} concept file(s); {counts['blocked']} overlong "
+        f"span(s) require Codex re-adjudication[/green]"
+    )
+
+
+@app.command("quarantine-legacy-promotions")
+def quarantine_legacy_promotions(kb: KbOption = None) -> None:
+    """Requeue heuristic promotions for default Codex semantic adjudication."""
+    paths = kb_paths(kb)
+    counts = quarantine_legacy_automatic_promotions(
+        paths.content / "annotations" / "review-queue.yaml",
+        paths.content / "concepts",
+    )
+    console.print(
+        f"[yellow]{paths.name}: requeued {counts['requeued']} legacy promotion(s), "
+        f"quarantined {counts['evidence']} evidence moment(s) and "
+        f"{counts['concepts']} automatic concept(s)[/yellow]"
     )
 
 
@@ -776,7 +937,7 @@ def inventory_ledger(kb: KbOption = None) -> None:
         f"[green]{paths.name}: {summary['inventory']} inventory videos[/green]; "
         f"{summary['eligible_complete']} complete, "
         f"{summary['automated_work_remaining']} automated work remaining, "
-        f"{summary['human_review_videos']} assigned to human review, "
+        f"{summary['human_review_videos']} optional human advisories, "
         f"{summary['excluded']} excluded"
     )
 
@@ -791,7 +952,7 @@ def review_diagnostics(kb: KbOption = None) -> None:
         paths.content / "concepts",
         output,
     )
-    console.print(f"[green]{paths.name}: {payload['total']} deferred candidates diagnosed[/green]")
+    console.print(f"[green]{paths.name}: {payload['total']} candidates waiting for a decision diagnosed[/green]")
 
 
 def refresh_catalog() -> None:
@@ -828,7 +989,10 @@ def publish(
 ) -> None:
     """Build one sanitized static-site corpus and refresh the catalog."""
     paths = kb_paths(kb)
-    summary_updates = write_missing_summaries(
+    paused = processing_is_paused(paths.data("manifests"))
+    if paused and auto_rephrase_high_overlap:
+        raise typer.BadParameter("Automatic rephrasing is paused during the published-content audit")
+    summary_updates = [] if paused else write_missing_summaries(
         paths.content / "concepts", refresh_generated=True
     )
     if summary_updates:
@@ -1026,6 +1190,389 @@ def report_boundaries(
     console.print(f"[green]JSON report[/green] {json_path}")
 
 
+def _published_audit_inputs(paths: KnowledgeBasePaths, videos: list | None = None) -> tuple[list, list, dict]:
+    videos = load_videos(paths.data("normalized")) if videos is None else videos
+    demo_ids = _demo_video_ids(videos)
+    concepts = []
+    for concept in load_reviewed_concepts(paths.content / "concepts"):
+        evidence = [
+            e for e in concept.evidence
+            if e.review_status == "approved" and e.source.video_id not in demo_ids
+        ]
+        if concept.review_status != "approved" or not evidence:
+            continue
+        relations = [
+            relation.model_copy(update={"sources": [
+                source for source in relation.sources if source.video_id not in demo_ids
+            ]})
+            for relation in concept.relations if relation.review_status == "approved"
+            and any(source.video_id not in demo_ids for source in relation.sources)
+        ]
+        concepts.append(concept.model_copy(update={"evidence": evidence, "relations": relations}))
+    ledger_path = paths.data("manifests") / "published-audit.json"
+    previous = read_json(ledger_path) if ledger_path.exists() else None
+    return concepts, videos, build_published_audit(concepts, videos, paths.id, previous)
+
+
+@app.command("prepare-published-audit")
+def prepare_published_audit(
+    kb: KbOption = None,
+    markdown_output: Annotated[Path | None, typer.Option(help="Optional coverage report; no captions")] = None,
+) -> None:
+    """Inventory every publishable article and review unit, preserving fresh decisions."""
+    paths = kb_paths(kb)
+    with KnowledgeBaseRunLock(paths.data("manifests") / "cp.lock"):
+        _, _, audit = _published_audit_inputs(paths)
+        write_json(paths.data("manifests") / "published-audit.json", audit)
+        if markdown_output:
+            markdown_output.parent.mkdir(parents=True, exist_ok=True)
+            markdown_output.write_text(render_audit_report(audit), encoding="utf-8")
+    console.print(audit_summary(audit))
+
+
+@app.command("next-published-audit")
+def next_published_audit(
+    kb: KbOption = None,
+    limit: Annotated[int, typer.Option(min=1, help="Next articles in stable exhaustive order")] = 1,
+) -> None:
+    """Export private full-article dossiers and strict review templates; no sampling."""
+    paths = kb_paths(kb)
+    with KnowledgeBaseRunLock(paths.data("manifests") / "cp.lock"):
+        concepts, videos, audit = _published_audit_inputs(paths)
+        selected = next_audit_items(audit, limit)
+        concept_map = {concept.id: concept for concept in concepts}
+        video_map = {video.id: video for video in videos}
+        output = paths.data("manifests") / "published-audit-next.json"
+        write_json(output, {
+            "knowledge_base": paths.id,
+            "reviews": [{
+                "concept_id": item["concept_id"], "fingerprint": item["fingerprint"],
+                "reviewer": item["reviewer"], "decisions": item["decisions"],
+            } for item in selected],
+            "dossiers": [audit_dossier(concept_map[item["concept_id"]], video_map, concept_map) for item in selected],
+            "machine_proposals": [{
+                "concept_id": item["concept_id"],
+                "jobs": [item["machine_jobs"][job_id] for job_id in item.get("machine_job_ids", [])],
+            } for item in selected],
+        })
+        write_json(paths.data("manifests") / "published-audit.json", audit)
+    console.print(audit_summary(audit))
+    console.print(f"Private dossiers: {output}")
+    console.print([item["concept_id"] for item in selected])
+
+
+@app.command("record-published-audit")
+def record_published_audit(
+    input_path: Annotated[Path, typer.Argument(help="Completed private dossier review JSON")],
+    kb: KbOption = None,
+) -> None:
+    """Record complete, fresh editorial reviews; never change or publish canonical content."""
+    paths = kb_paths(kb)
+    with KnowledgeBaseRunLock(paths.data("manifests") / "cp.lock"):
+        _, _, audit = _published_audit_inputs(paths)
+        review = read_json(input_path)
+        if review.get("knowledge_base") != paths.id:
+            raise typer.BadParameter("Review belongs to a different KB")
+        try:
+            audit = record_audit_reviews(audit, review["reviews"])
+        except (KeyError, TypeError, ValueError) as error:
+            raise typer.BadParameter(str(error)) from error
+        write_json(paths.data("manifests") / "published-audit.json", audit)
+    console.print(audit_summary(audit))
+
+
+@app.command("run-published-audit")
+def run_published_audit(
+    kb: KbOption = None,
+    max_calls: Annotated[int, typer.Option(min=1, help="Maximum budgeted Codex calls; saved progress resumes")] = 10,
+    retry_failed: Annotated[bool, typer.Option(help="Retry recorded failures after inspecting their cause")] = False,
+) -> None:
+    """Execute exhaustive private machine checks; never approve or publish their proposals."""
+    paths = kb_paths(kb)
+    with KnowledgeBaseRunLock(paths.data("manifests") / "cp.lock"):
+        concepts, videos, audit = _published_audit_inputs(paths)
+        concept_map = {concept.id: concept for concept in concepts}
+        video_map = {video.id: video for video in videos}
+        dossiers = {concept.id: audit_dossier(concept, video_map, concept_map) for concept in concepts}
+        report = run_audit_jobs(
+            audit, dossiers, ROOT / "config" / "processors.yaml",
+            paths.data("manifests") / "published-audit-model", paths.data("manifests") / "llm-budget.json",
+            paths.data("manifests") / "published-audit.json", max_calls=max_calls,
+            retry_failed=retry_failed, progress=lambda message: console.print(message, markup=False),
+        )
+    console.print(report)
+    console.print(audit_summary(audit))
+    if report["machine_job_status"].get("failed"):
+        raise typer.Exit(1)
+
+
+@app.command("validate-published-audit")
+def validate_published_audit(kb: KbOption = None) -> None:
+    """Fail the full-audit gate while coverage, fixes, footage or metadata remain open."""
+    paths = kb_paths(kb)
+    _, _, audit = _published_audit_inputs(paths)
+    summary = audit_summary(audit)
+    console.print(summary)
+    if not summary["complete"]:
+        raise typer.Exit(1)
+    try:
+        record_audit_reviews(audit, [{
+            "concept_id": item["concept_id"], "fingerprint": item["fingerprint"],
+            "reviewer": item["reviewer"], "decisions": item["decisions"],
+        } for item in audit["items"]])
+    except (KeyError, TypeError, ValueError) as error:
+        raise typer.BadParameter(f"Invalid saved audit decisions: {error}") from error
+    console.print("Complete published audit verified for unchanged inputs.")
+
+
+@app.command("plan-published-repairs")
+def plan_published_repairs(
+    kb: KbOption = None,
+    max_calls: Annotated[int, typer.Option(min=0, max=20, help="At most 20 audit/targeted repair calls; zero imports reviews only")] = 20,
+    retry_failed: Annotated[bool, typer.Option(help="Retry inspected failures")] = False,
+    repair_confirmed: Annotated[bool, typer.Option(help="Repair confirmed failures once instead of coverage-only audit")] = False,
+    max_articles: Annotated[int, typer.Option(min=1, max=20, help="Release planning lock after this article batch")] = 10,
+    concept_ids: Annotated[str, typer.Option(help="Optional explicit comma-separated article selection")] = "",
+    primary_review_file: Annotated[list[Path] | None, typer.Option(help="Import exact plan-bound private reviews (repeatable)")] = None,
+) -> None:
+    """Draft and separately verify private article repairs; never approve or publish them."""
+    paths = kb_paths(kb)
+    with KnowledgeBaseRunLock(paths.data("manifests") / "cp.lock"):
+        concepts, videos, audit = _published_audit_inputs(paths)
+        concept_map = {concept.id: concept for concept in concepts}
+        video_map = {video.id: video for video in videos}
+        dossiers = {concept.id: audit_dossier(concept, video_map, concept_map) for concept in concepts}
+        checkpoint = paths.data("manifests") / "published-repair-plans.json"
+        if primary_review_file:
+            reviews = [review for path in primary_review_file for review in read_json(path)]
+            try:
+                plans = reconcile_primary_reviews(read_json(checkpoint), audit, reviews)
+            except (ValueError, KeyError, TypeError) as error:
+                raise typer.BadParameter(f"Invalid primary reviews: {error}") from error
+            write_json(checkpoint, plans)
+            console.print(f"Reconciled {len(reviews)} private primary reviews; no public approval.")
+        if concept_ids:
+            ids = [value.strip() for value in concept_ids.split(",") if value.strip()]
+            known = {item["concept_id"] for item in audit["items"]}
+            if len(ids) != len(set(ids)) or set(ids) - known:
+                raise typer.BadParameter("Select unique currently published article IDs")
+            audit = {**audit, "items": [item for item in audit["items"] if item["concept_id"] in ids]}
+        report = run_repair_campaign(
+            audit, dossiers, ROOT / "config/processors.yaml", paths.data("manifests") / "published-audit-model",
+            paths.data("manifests") / "llm-budget.json", checkpoint, max_calls=max_calls,
+            retry_failed=retry_failed, progress=lambda message: console.print(message, markup=False),
+            repair_confirmed=repair_confirmed, max_articles=max_articles,
+            facet_vocabulary=(read_yaml(paths.config / "taxonomy.yaml") or {}).get("facets", {}),
+        ) if max_calls else {"calls": 0, "stopped": "review_import_only"}
+        plans = read_json(checkpoint)
+        preview = paths.data("manifests") / "published-repair-plans.md"
+        preview.write_text(render_repair_plans(plans), encoding="utf-8")
+    console.print(report)
+    console.print(f"Private reviewable plans: {preview}")
+    if report.get("stopped") == "transport_failure_circuit":
+        raise typer.Exit(1)
+
+
+@app.command("plan-reviewed-rating-removals")
+def plan_reviewed_rating_removals(
+    concept_ids: Annotated[str, typer.Option(help="Explicit articles whose complete primary review rejects only difficulty")],
+    reviewer: Annotated[str, typer.Option(help="Editor authorizing removal, not replacement, of the unsupported rating")],
+    kb: KbOption = None,
+) -> None:
+    """Create exact reviewed null-removal plans without calling an LLM or publishing."""
+    ids = [value.strip() for value in concept_ids.split(",") if value.strip()]
+    if not ids or len(ids) != len(set(ids)) or not reviewer.strip():
+        raise typer.BadParameter("Unique article IDs and explicit reviewer are required")
+    paths = kb_paths(kb)
+    with KnowledgeBaseRunLock(paths.data("manifests") / "cp.lock"):
+        concepts, videos, _ = _published_audit_inputs(paths)
+        concept_map = {c.id: c for c in concepts}
+        video_map = {v.id: v for v in videos}
+        checkpoint = paths.data("manifests") / "published-repair-plans.json"
+        plans = read_json(checkpoint)
+        replacements = {}
+        try:
+            for cid in ids:
+                replacements[cid] = reviewed_rating_removal_plan(
+                    plans["items"][cid], audit_dossier(concept_map[cid], video_map, concept_map), reviewer)
+        except (KeyError, ValueError) as error:
+            raise typer.BadParameter(str(error)) from error
+        for cid, item in replacements.items():
+            plans["history"].append(plans["items"][cid])
+            plans["items"][cid] = item
+        write_json(checkpoint, plans)
+        (paths.data("manifests") / "published-repair-plans.md").write_text(render_repair_plans(plans), encoding="utf-8")
+    console.print({"reviewed_rating_removal_plans": len(ids), "model_calls": 0, "published": False})
+
+
+def _audit_file_signature(paths: KnowledgeBasePaths) -> tuple:
+    """Detect external writes before reusing the previous post-application snapshot."""
+    files = [*paths.content.glob("concepts/*.yaml"), *paths.data("normalized").glob("*.json")]
+    files.append(paths.data("manifests") / "published-audit.json")
+    return tuple((str(p), p.stat().st_mtime_ns, p.stat().st_size) for p in sorted(files) if p.exists())
+
+
+@app.command("apply-published-repairs")
+def apply_published_repairs(
+    concept_ids: Annotated[str, typer.Option(help="Explicit comma-separated verified article IDs")],
+    reviewer: Annotated[str, typer.Option(help="Reviewer who inspected the concrete plans")],
+    kb: KbOption = None,
+) -> None:
+    """Apply only explicitly reviewed, separately verified fresh plans, preserving originals."""
+    ids = [value.strip() for value in concept_ids.split(",") if value.strip()]
+    if not ids or len(ids) != len(set(ids)) or not reviewer.strip():
+        raise typer.BadParameter("Unique explicit article IDs and reviewer provenance are required")
+    paths = kb_paths(kb)
+    with KnowledgeBaseRunLock(paths.data("manifests") / "cp.lock"):
+        checkpoint = paths.data("manifests") / "published-repair-plans.json"
+        plans = read_json(checkpoint)
+        videos = None
+        snapshot = None
+        signature = None
+        for cid in ids:
+            if cid not in plans["items"]:
+                raise typer.BadParameter(f"No repair plan: {cid}")
+            item = plans["items"][cid]
+            current_signature = _audit_file_signature(paths)
+            if snapshot is None or current_signature != signature:
+                # External transcript edits must reload videos as well as concepts.
+                snapshot = _published_audit_inputs(paths)
+                signature = _audit_file_signature(paths)
+                if signature != current_signature:
+                    raise typer.BadParameter("Audit inputs changed while loading; retry the batch")
+            concepts, videos, audit = snapshot
+            current = next((article for article in audit["items"] if article["concept_id"] == cid), None)
+            if item["status"] == "applied":
+                if (current or {}).get("fingerprint") != item.get("applied_fingerprint"):
+                    raise typer.BadParameter(f"Previously applied article changed: {cid}")
+                console.print(f"Already applied: {cid}")
+                continue
+            journal = paths.data("manifests") / "published-repair-transaction.json"
+            recovery = read_json(journal) if journal.exists() else {}
+            recovering = recovery.get("state") in {"prepared", "applied"} and recovery.get("plan_hash") == item.get("plan_hash")
+            if not recovering and (current or {}).get("fingerprint") != item["fingerprint"]:
+                raise typer.BadParameter(f"Stale repair plan: {cid}")
+            if (not recovering and item.get("scope") not in {"duration_conflicts", "summary_format"}
+                    and review_findings(current) != item.get("review_findings", {})):
+                raise typer.BadParameter(f"Review findings changed; refresh the repair plan: {cid}")
+            original = Concept.model_validate(item["concept"])
+            concept_map = {concept.id: concept for concept in concepts}
+            concept_map[cid] = original
+            dossier = audit_dossier(original, {v.id: v for v in videos}, concept_map)
+            from .published_audit import AUDIT_VERSION
+
+            if sha256_json({"version": AUDIT_VERSION, "dossier": dossier}) != item["fingerprint"]:
+                raise typer.BadParameter(f"Repair source/target inputs changed: {cid}")
+            try:
+                if item.get("scope") == "owned_source_correction":
+                    apply_reviewed_plan(paths, item, dossier, reviewer, source_context=(videos, concepts))
+                else:
+                    apply_reviewed_plan(paths, item, dossier, reviewer)
+            except ValueError as error:
+                raise typer.BadParameter(str(error)) from error
+            post_signature = _audit_file_signature(paths)
+            normalized = paths.data("normalized")
+            sources_before = tuple(row for row in signature if Path(row[0]).parent == normalized)
+            sources_after = tuple(row for row in post_signature if Path(row[0]).parent == normalized)
+            concepts, videos, fresh = _published_audit_inputs(paths, videos if sources_before == sources_after else None)
+            if _audit_file_signature(paths) != post_signature:
+                raise typer.BadParameter("Audit inputs changed after application; retain journal and retry")
+            revised = next((concept for concept in concepts if concept.id == cid), None)
+            new_item = next((article for article in fresh["items"] if article["concept_id"] == cid), None)
+            if revised and new_item and item.get("scope") not in {"duration_conflicts", "summary_format"}:
+                verification = {unit["key"]: unit for unit in item["verification"]["units"]}
+                corrected_sources = {change["evidence_id"]: SourceSpan.model_validate(change["source"])
+                                     for change in item.get("source_corrections", [])}
+                decisions = {}
+                for key in new_item["decisions"]:
+                    kind, index, *_ = key.split(":", 2)
+                    old_key = key
+                    if kind in {"evidence", "visual"}:
+                        evidence = revised.evidence[int(index)]
+                        old_index = next(i for i, old in enumerate(original.evidence)
+                                         if old.id == evidence.id and corrected_sources.get(old.id, old.source) == evidence.source
+                                         and old.visual_source == evidence.visual_source)
+                        old_key = f"{kind}:{old_index}:{evidence.id}"
+                    elif kind == "relation":
+                        relation = revised.relations[int(index)]
+                        old_index = next(i for i, old in enumerate(original.relations) if old == relation)
+                        old_key = f"relation:{old_index}"
+                    decision = verification[old_key]
+                    decisions[key] = {"status": decision["status"], "note": decision["note"]}
+                fresh = record_audit_reviews(fresh, [{"concept_id": cid, "fingerprint": new_item["fingerprint"],
+                                                     "reviewer": reviewer, "decisions": decisions}])
+            write_json(paths.data("manifests") / "published-audit.json", fresh)
+            item.update(status="applied", applied_fingerprint=(new_item or {}).get("fingerprint"))
+            write_json(checkpoint, plans)
+            snapshot = (concepts, videos, fresh)
+            signature = _audit_file_signature(paths)
+            console.print(f"Applied reviewed plan: {cid}")
+
+
+@app.command("plan-duration-quarantines")
+def plan_duration_quarantines(kb: KbOption = None) -> None:
+    """Draft reversible exclusions for measured caption-duration conflicts, without model calls."""
+    paths = kb_paths(kb)
+    with KnowledgeBaseRunLock(paths.data("manifests") / "cp.lock"):
+        concepts, videos, audit = _published_audit_inputs(paths)
+        concept_map = {concept.id: concept for concept in concepts}
+        video_map = {video.id: video for video in videos}
+        checkpoint = paths.data("manifests") / "published-repair-plans.json"
+        plans = read_json(checkpoint) if checkpoint.exists() else {"version": REPAIR_VERSION, "items": {}, "history": []}
+        selected = []
+        for article in audit["items"]:
+            dossier = audit_dossier(concept_map[article["concept_id"]], video_map, concept_map)
+            item = timing_quarantine_plan(article, dossier)
+            if item is None:
+                continue
+            prior = plans["items"].get(item["concept_id"])
+            if prior and prior.get("plan_hash") != item["plan_hash"]:
+                plans["history"].append(prior)
+            plans["items"][item["concept_id"]] = item
+            selected.append(item["concept_id"])
+        write_json(checkpoint, plans)
+        (paths.data("manifests") / "published-repair-plans.md").write_text(render_repair_plans(plans), encoding="utf-8")
+    console.print({"duration_quarantine_plans": selected, "semantic_reviews_added": 0})
+
+
+@app.command("rollback-published-repair")
+def rollback_published_repair(kb: KbOption = None) -> None:
+    """Recover the current known repair transaction without replacing unrelated edits."""
+    paths = kb_paths(kb)
+    with KnowledgeBaseRunLock(paths.data("manifests") / "cp.lock"):
+        try:
+            rollback_repair_transaction(paths)
+        except ValueError as error:
+            raise typer.BadParameter(str(error)) from error
+    console.print("Original canonical file restored; repair/recovery history retained.")
+
+
+@app.command("plan-summary-format-repairs")
+def plan_summary_format_repairs(kb: KbOption = None) -> None:
+    """Draft exact deterministic boilerplate deletion, preserving hand/Codex summaries and claims."""
+    paths = kb_paths(kb)
+    with KnowledgeBaseRunLock(paths.data("manifests") / "cp.lock"):
+        concepts, videos, audit = _published_audit_inputs(paths)
+        concept_map = {concept.id: concept for concept in concepts}
+        video_map = {video.id: video for video in videos}
+        checkpoint = paths.data("manifests") / "published-repair-plans.json"
+        plans = read_json(checkpoint) if checkpoint.exists() else {"version": REPAIR_VERSION, "items": {}, "history": []}
+        selected = []
+        for article in audit["items"]:
+            dossier = audit_dossier(concept_map[article["concept_id"]], video_map, concept_map)
+            item = summary_format_plan(article, dossier)
+            if item is None:
+                continue
+            prior = plans["items"].get(item["concept_id"])
+            if prior and prior.get("plan_hash") != item["plan_hash"]:
+                plans["history"].append(prior)
+            plans["items"][item["concept_id"]] = item
+            selected.append(item["concept_id"])
+        write_json(checkpoint, plans)
+        (paths.data("manifests") / "published-repair-plans.md").write_text(render_repair_plans(plans), encoding="utf-8")
+    console.print({"summary_format_plans": len(selected), "semantic_reviews_added": 0})
+
+
 @app.command("prepare-boundary-review")
 def prepare_boundary_review(
     kb: KbOption = None,
@@ -1084,6 +1631,7 @@ def validate(
     paths = kb_paths(kb)
     concepts = load_reviewed_concepts(paths.content / "concepts")
     videos = load_videos(paths.data("normalized"))
+    demo_ids: set[str] = set()
     if not include_demo:
         demo_ids = _demo_video_ids(videos)
         videos = [video for video in videos if video.id not in demo_ids]
@@ -1092,7 +1640,16 @@ def validate(
                 update={
                     "evidence": [
                         item for item in concept.evidence if item.source.video_id not in demo_ids
-                    ]
+                    ],
+                    "relations": [
+                        relation.model_copy(update={
+                            "sources": [source for source in relation.sources
+                                        if source.video_id not in demo_ids],
+                        })
+                        for relation in concept.relations
+                        if any(source.video_id not in demo_ids for source in relation.sources)
+                        or not relation.sources
+                    ],
                 }
             )
             for concept in concepts

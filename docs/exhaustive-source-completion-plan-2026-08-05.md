@@ -13,7 +13,7 @@ An eligible video is public, not members-only, and has a usable source-caption t
 
 ## Corrected current-state model
 
-The 148 video entries in `config/kbs/table-tennis/sources.yaml` are not a user-selected current workset. They accumulated during early project-generated controlled batches. `scripts/run-cp.py` first drains cached work and configured entries that still need acquisition, then automatically continues through unseen discovery-catalog entries ordered by view count where available. Continuation videos are processed without being appended to `sources.yaml`.
+The 148 video entries in `config/kbs/table-tennis/sources.yaml` are not a user-selected current batch. They accumulated during early project-generated controlled batches. `scripts/run-cp.py` first drains cached work and configured entries that still need acquisition, then automatically continues through unseen discovery-catalog entries ordered by view count where available. Continuation videos are processed without being appended to `sources.yaml`.
 
 Therefore:
 
@@ -23,7 +23,7 @@ Therefore:
 - Normalized, derived, review-queue, canonical, and published artifacts record stage completion.
 - No existing artifact provides one durable per-video eligibility and completion ledger across all 838 entries.
 
-The current snapshot has 729 videos on the site. All 589 published videos outside `sources.yaml` are normalized and extracted; 93 have every candidate decided, while 496 still have deferred candidates. The remaining 109 known videos consist of 8 members-only entries and 101 entries that are not on the site, but those 101 do not yet have a complete durable eligibility classification.
+The current snapshot has 729 videos on the site. All 589 published videos outside `sources.yaml` are normalized and extracted; 93 have every candidate decided, while 496 still have candidates waiting for a decision. The remaining 109 known videos consist of 8 members-only entries and 101 entries that are not on the site, but those 101 do not yet have a complete durable eligibility classification.
 
 ## Revised implementation approach
 
@@ -41,49 +41,49 @@ Record at least:
 - canonical incorporation and public-moment counts;
 - retry deadline and failure classification;
 - completion state and reason;
-- whether explicit human review is required.
+- whether automated Codex adjudication remains, plus any optional human advisory state.
 
 Do not duplicate raw transcripts, credentials, cookies, or Codex audit output in this ledger.
 
-### 2. Generate run worksets from incomplete eligible states
+### 2. Generate run batches from incomplete eligible states
 
-Refactor `run-cp.py` to use the ledger rather than treating `sources.yaml` membership as the primary workset boundary. Preserve the existing cache-first order, lock, cooldowns, pacing, LLM budget, and route-wide block circuit breaker.
+Refactor `run-cp.py` to use the ledger rather than treating `sources.yaml` membership as the primary batch boundary. Preserve the existing cache-first order, lock, cooldowns, pacing, LLM budget, and route-wide block circuit breaker.
 
 The run priority should be:
 
 1. normalized videos missing current candidate artifacts;
 2. extracted videos with retryable automated review work;
 3. discovered videos with confirmed or unknown eligibility that still need acquisition;
-4. bounded retry probes whose deadlines have arrived;
-5. no work when every eligible video is complete or assigned to human review.
+4. limited retry checks whose deadlines have arrived;
+5. no work when every eligible video has final Codex decisions or a durable exclusion.
 
-View count may order otherwise-equal acquisition candidates, but it must not decide whether an eligible video is eventually processed. Write the exact selected IDs and reasons to the private run manifest before each mutating stage.
+Select each bounded stage by deterministic round-robin across sources that currently have eligible work. Preserve view-count priority within each source, but never let source ordering starve another catalog. Write each selected ID, source ID, and reason to the private run manifest before mutation.
 
 ### 3. Define strict video completion
 
-An eligible video is complete only when:
+An eligible video is fully processed only when:
 
 - a normalized timed transcript exists using an allowed source-caption language;
 - a current schema-validated candidate artifact exists;
-- every candidate is accepted, rejected, or explicitly assigned to human review;
+- every candidate has a final Codex accepted or rejected decision;
 - every accepted candidate is incorporated into tracked canonical YAML with valid segment IDs and timestamps;
 - deterministic validation and sanitized publication succeed;
 - proposed visual windows remain honestly separate from spoken evidence.
 
-Ordinary `pending` and generic `deferred` decisions are incomplete states. Introduce an explicit human-review classification so genuine ambiguity is not confused with retryable automated backlog.
+Ordinary `pending`, `deferred`, and legacy `human_review` decisions are incomplete states for full-processing reporting. Legacy human assignments return to the automated Codex queue; optional human advice or an explicit override is recorded separately and does not define completion.
 
 ### 4. Drain the existing deferred backlog automatically
 
-Extend the existing `process-pending --retry-deferred` route into an auditable adjudication pass:
+Extend the existing `process-pending --retry-deferred` route into an auditable automatic review pass:
 
 - accept only source-grounded, validated matches or defensible new concepts;
 - reject unsupported, duplicate, invalid, or non-durable proposals;
-- send taxonomy ambiguity, conflicting evidence, uncertain merges, and boundary/context uncertainty to human review;
+- defer taxonomy ambiguity, conflicting evidence, uncertain merges, and boundary/context uncertainty for a later bounded Codex pass;
 - never invent source metadata or mark inferred visuals as verified;
-- record the adjudication method and reason;
-- stop retrying an unchanged ambiguous item automatically after the configured adjudication attempt limit.
+- record the automatic-review method and reason;
+- retain an unchanged unclear item as visible automated work after the configured check limit rather than silently promoting it or assigning it to a person.
 
-Start with the 496 published continuation videos that still contain deferred candidates, then drain deferred work from configured batch-history entries.
+Start with the 496 published continuation videos that still contain candidates waiting for review, then drain the same waiting work from configured batch-history entries.
 
 ### 5. Audit the 101 known videos not currently on the site
 
@@ -105,10 +105,10 @@ Keep the public-content summary simple: known videos, on-site videos, and not-on
 - full inventory eligibility classification;
 - complete eligible videos;
 - automated work remaining by stage;
-- human-review videos and candidate counts;
+- videos and candidate counts awaiting Codex adjudication, plus optional human advisory counts;
 - retry/cooldown and permanent-exclusion counts;
-- the actual current or latest run workset from `cp.latest.json`;
-- configured batch history only as provenance, never as the live workset.
+- the actual current or latest selected batch from `cp.latest.json`;
+- configured batch history only as provenance, never as the current run selection.
 
 ### 7. Preserve safety boundaries
 
@@ -124,7 +124,7 @@ Keep the public-content summary simple: known videos, on-site videos, and not-on
 The exhaustive pass is complete when:
 
 - all 838 inventory entries have a durable eligibility result;
-- every eligible video satisfies the strict completion definition or is explicitly assigned to human review;
+- every eligible video satisfies the strict full-processing definition with final Codex decisions;
 - no eligible video remains in ordinary pending, generic deferred, or unclassified state;
 - all permanent exclusions have a specific reason;
 - the progress page and monitor derive counts from the full-inventory ledger and latest run manifest;
@@ -134,13 +134,13 @@ The exhaustive pass is complete when:
 
 1. Ledger schema, deterministic builder, and tests.
 2. Full-inventory eligibility reporting without changing acquisition behavior.
-3. Ledger-driven run-workset selection and manifest reasons.
-4. Explicit human-review state and bounded deferred adjudication.
+3. Ledger-driven run-batch selection and manifest reasons.
+4. Schema-constrained Codex adjudication of unclear candidates with optional human advice/override.
 5. Eligibility audit of the 101 non-public entries.
 6. Progress/monitor integration and full release verification.
 
-## Implemented state â€” 2026-08-05
+## Implemented state — updated 2026-08-12
 
-The architecture in steps 1â€“6 is implemented. The private ledger resolves exactly 838 valid video IDs, rejects malformed channel placeholders, persists eligibility and completion reasons, and drives exact per-run worksets. Candidate adjudication is bounded to 50 selected videos per cycle, records method/reason/attempt metadata, rejects candidates with invalid source spans, and sends unchanged ambiguity to explicit human review after two attempts. Progress and monitor views now use ledger summaries and the latest recorded workset.
+The architecture in steps 1–6 is implemented. The private ledger resolves exactly 838 valid video IDs, rejects malformed channel placeholders, persists eligibility and completion reasons, and drives exact per-run batches. Codex adjudication checks bounded source-balanced work, records model/reason/schema provenance, rejects candidates with invalid source spans, and retains unchanged uncertainty as automated work. Progress and monitor views use ledger summaries and the latest recorded batch.
 
-The initial full-ledger audit corrected the earlier configuration-derived exclusion model. The 109 videos without public moments are currently 23 normalized/processed videos with no approved moments, 85 members-only videos, and one public video repeatedly reported as having subtitles disabled. The automated review backlog remains intentionally in progress and will drain through monitor cycles; implementation completion does not mean the corpus-wide adjudication run has already finished.
+The initial full-ledger audit corrected the earlier configuration-derived exclusion model. The 109 videos without public moments are currently 23 normalized/processed videos with no approved moments, 85 members-only videos, and one public video repeatedly reported as having subtitles disabled. The automatic-review backlog remains intentionally in progress and will drain through monitor cycles; implementation completion does not mean the full-corpus review has already finished.

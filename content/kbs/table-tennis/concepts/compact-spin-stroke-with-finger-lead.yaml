@@ -8,15 +8,9 @@ aliases:
   - power is generated from the fingers
 short_definition: A compact stroke pattern where the fingers and wrist lead the action, the motion stays small, and spin comes from precise acceleration rather than a large swing.
 evidence_summary: >-
-  Compact spin stroke with finger lead brings together several connected ideas. The forehand
-  stroke is guided by the fingers, power is generated from the fingers, and the movement should be
-  small with the fingers leading. Quick and fluid racket-head rotation matters and that a small
-  range of motion is enough, while larger rotation reduces concentration of force. An explosive
-  compact motion with a sharp racket-tip snap and a finger burst at contact. Spin increasing from
-  upper arm to forearm to fingers and wrist, with fingers and wrist producing the most spin.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:df9eba7b3e59e04ee16dc58bc1937fcc0ccd528c15f01080acbe71750791dc13"
+  A compact stroke pattern where the fingers and wrist lead the action, the motion stays small,
+  and spin comes from precise acceleration rather than a large swing.
+evidence_summary_source_hash: "sha256:2f04e68bc7cdd9c4829204562b766b5d1f035c6cbd6f8737f9e48073cd99de91"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -30,10 +24,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: d77ee8a096789c2ae5da001fabcebef45b72cb956659c5a62503cac7bbf35eb8
-  prompt_version: candidate-review-v1
+  input_hash: sha256:78b65076a81d4aec4e5dda3b4c69264c6e376ef6a58b136806428bd170534a5b
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: woTURG6ah3Y-concept-compact-spin-stroke-with-finger-lead-reviewed
     evidence_type: explanation
@@ -41,7 +38,7 @@ evidence:
     reason: The speaker says the forehand stroke is guided by the fingers, power is generated from the fingers, and the movement should be small with the fingers leading.
     confidence: 0.89
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: woTURG6ah3Y
       start_ms: 586320
@@ -57,7 +54,7 @@ evidence:
     reason: The speaker says quick and fluid racket-head rotation matters and that a small range of motion is enough, while larger rotation reduces concentration of force.
     confidence: 0.89
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: xo9M8v9k564
       start_ms: 315133
@@ -72,7 +69,7 @@ evidence:
     reason: The speaker describes an explosive compact motion with a sharp racket-tip snap and a finger burst at contact.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: xWE01GQepLE
       start_ms: 489833
@@ -87,7 +84,7 @@ evidence:
     reason: The speaker demonstrates spin increasing from upper arm to forearm to fingers and wrist, with fingers and wrist producing the most spin.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Ay4vk9XXAfM
       start_ms: 104000
@@ -99,3 +96,19 @@ evidence:
         - Ay4vk9XXAfM:00021
         - Ay4vk9XXAfM:00022
         - Ay4vk9XXAfM:00023
+  - id: 0E67TotjJFE-cand-finger-led-brush-arc-codex-reviewed
+    evidence_type: explanation
+    excerpt: For shakehand, the index finger leads; for penhold, the middle finger leads. The fingers should lead the wrist and arm to create a small arc.
+    reason: These contiguous segments directly describe finger leadership by grip and the fingers leading the wrist and arm through a small arc, matching the existing finger-lead stroke concept.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 0E67TotjJFE
+      start_ms: 121100
+      end_ms: 138200
+      url: https://www.youtube.com/watch?v=0E67TotjJFE&t=121s
+      segment_ids:
+        - 0E67TotjJFE:00028
+        - 0E67TotjJFE:00029
+        - 0E67TotjJFE:00030

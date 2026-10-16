@@ -7,16 +7,8 @@ aliases:
   - watch closely
 short_definition: Improving by recording and reviewing one's own play to identify mistakes and weaknesses.
 evidence_summary: >-
-  Self-review through recording brings together several connected ideas. You need to observe
-  closely to understand weaknesses and that seeing yourself play is crucial. Recording matches,
-  reviewing them personally, identifying mistakes, and analyzing causes such as tension,
-  positioning, weight transfer, rhythm, and spin recognition. They always review coaching
-  sessions, all are filmed, and then analyzed in detail. Recording yourself and using self-review
-  to verify the motion. Many players have never seen themselves play and that recording makes the
-  issue obvious. Recording yourself with your phone and analyzing your technique if you cannot
-  brush cleanly. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:34aa8b747c33d1ade9e17a6fe42b3f2af42cfd8e5b404a22e5b76a604ef6dbf8"
+  Improving by recording and reviewing one's own play to identify mistakes and weaknesses.
+evidence_summary_source_hash: "sha256:0ce74d345bfe06b9afc8def8c44a9a7352783ddb77dc50ca725613b02cf1277b"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -28,10 +20,13 @@ facets:
 difficulty: easy
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 329f00d7443d0e251094ca3be89b270119dac8946b70b20a8983bc17565522dd
-  prompt_version: candidate-review-v1
+  input_hash: sha256:c280ea87fb24f12fde8332c6dcee9d5cd32d60a4a4387de23fd2e0c7c4d031d4
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: WeSy68cdZ5U-candidate-2-reviewed
     evidence_type: explanation
@@ -39,7 +34,7 @@ evidence:
     reason: The speaker says you need to observe closely to understand weaknesses and that seeing yourself play is crucial.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: WeSy68cdZ5U
       start_ms: 587133
@@ -54,7 +49,7 @@ evidence:
     reason: The transcript recommends recording matches, reviewing them personally, identifying mistakes, and analyzing causes such as tension, positioning, weight transfer, rhythm, and spin recognition.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 9WPYbE6DoTo
       start_ms: 439200
@@ -71,7 +66,7 @@ evidence:
     reason: The speaker says they always review coaching sessions, all are filmed, and then analyzed in detail.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: xHCH_T6xjcc
       start_ms: 1089466
@@ -87,7 +82,7 @@ evidence:
     reason: The speaker explicitly recommends recording yourself and acting as your own coach to verify the motion.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8S2YprEr6XA
       start_ms: 143766
@@ -104,7 +99,7 @@ evidence:
     reason: The speaker says many players have never seen themselves play and that recording makes the issue obvious.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: NvQgMvevIPY
       start_ms: 444866
@@ -119,7 +114,7 @@ evidence:
     reason: The speaker explicitly recommends recording yourself with your phone and analyzing your technique if you cannot brush cleanly.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: DfQ_yBSS_bk
       start_ms: 962433
@@ -127,3 +122,39 @@ evidence:
       url: https://www.youtube.com/watch?v=DfQ_yBSS_bk&t=962s
       segment_ids:
         - DfQ_yBSS_bk:00197
+  - id: 8S2YprEr6XA-concept-self-review-through-recording-codex-reviewed
+    evidence_type: explanation
+    excerpt: 'Record a video of yourself and act as your own coach: if the hooking contact fails, observe the mistake clearly and assess the horizontal force and performance before addressing other issues.'
+    reason: The selected contiguous span directly recommends recording oneself, acting as one's own coach, and observing hooking contact and horizontal-force performance to identify mistakes. It matches the existing durable concept; unsupported spin, distance, and level facets are omitted.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8S2YprEr6XA
+      start_ms: 143766
+      end_ms: 162300
+      url: https://www.youtube.com/watch?v=8S2YprEr6XA&t=143s
+      segment_ids:
+        - 8S2YprEr6XA:00023
+        - 8S2YprEr6XA:00024
+        - 8S2YprEr6XA:00025
+        - 8S2YprEr6XA:00026
+        - 8S2YprEr6XA:00027
+  - id: 9WPYbE6DoTo-concept-self-review-through-recording-codex-reviewed
+    evidence_type: explanation
+    excerpt: Record your matches, review the footage yourself, identify your mistakes, and analyze how you lost those points.
+    reason: These contiguous segments directly recommend recording matches, reviewing the footage, identifying mistakes, and analyzing the causes of lost points.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 9WPYbE6DoTo
+      start_ms: 439200
+      end_ms: 459400
+      url: https://www.youtube.com/watch?v=9WPYbE6DoTo&t=439s
+      segment_ids:
+        - 9WPYbE6DoTo:00110
+        - 9WPYbE6DoTo:00111
+        - 9WPYbE6DoTo:00112
+        - 9WPYbE6DoTo:00113
+        - 9WPYbE6DoTo:00114

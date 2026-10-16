@@ -6,12 +6,9 @@ aliases:
   - step around
 short_definition: A post-serve footwork pattern where the player moves around the backhand corner to attack with the forehand.
 evidence_summary: >-
-  Step-around footwork after serve brings together several connected ideas. Defines purposeful
-  step-around footwork after serve and ties it to attack setup. Serving wide to the backhand can
-  open the forehand attack, and later says to use a crossover step only for balls to the wide
-  forehand. Together, these principles show how the topic is applied in practice while preserving
-  the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:7fcb43970512b918936eb4cd39a821c200b97648400d384376e529fe0c29f3a7"
+  A post-serve footwork pattern where the player moves around the backhand corner to attack with
+  the forehand.
+evidence_summary_source_hash: "sha256:906a80d60763219da954db152d0cdf4ee1cedb7f1d10fba24022604065aff386"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -23,10 +20,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 2ffda92172ab975fd566b0c4e47b0dd2ea8b20805431354d49b95bce3d6003aa
-  prompt_version: candidate-review-v1
+  input_hash: sha256:f329b1890f6a5660b6677a5a43bdedcd53d4975ebd465aa53d8508f330a11e9e
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: McwvbLZZQmA-concept-step-around-footwork-after-serve-reviewed
     evidence_type: definition
@@ -34,7 +34,7 @@ evidence:
     reason: Defines purposeful step-around footwork after serve and ties it to attack setup.
     confidence: 0.94
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: McwvbLZZQmA
       start_ms: 80633
@@ -48,7 +48,7 @@ evidence:
     reason: The speaker says serving wide to the backhand can open the forehand attack, and later says to use a crossover step only for balls to the wide forehand.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: t3iPasg0y_Y
       start_ms: 560500
@@ -57,3 +57,18 @@ evidence:
       segment_ids:
         - t3iPasg0y_Y:00105
         - t3iPasg0y_Y:00106
+  - id: McwvbLZZQmA-concept-step-around-footwork-after-serve-codex-reviewed
+    evidence_type: example
+    excerpt: This step-around is most effective when you serve short to the corner, they push it back, and you execute a powerful attack.
+    reason: The contiguous segments directly describe the post-serve step-around sequence and its attacking purpose.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: McwvbLZZQmA
+      start_ms: 152000
+      end_ms: 158800
+      url: https://www.youtube.com/watch?v=McwvbLZZQmA&t=152s
+      segment_ids:
+        - McwvbLZZQmA:00034
+        - McwvbLZZQmA:00035

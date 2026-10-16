@@ -7,19 +7,9 @@ aliases:
   - focus on the ball
 short_definition: Using visual tracking of the ball and opponent contact to start moving earlier, keep rally movement flowing, and avoid freezing in play.
 evidence_summary: >-
-  Ball tracking for footwork brings together several connected ideas. Tracking the ball and
-  watching the opponent's contact point lets you react immediately and move earlier. Students can
-  now track the ball, and later contrasts good early movement with amateurs who watch too late.
-  Players to focus on the ball with their eyes and to locate the ball with quick feet. To watch
-  the ball and track the ball's trajectory to guide movement and feet adjustment. The listener to
-  focus on the ball's trajectory, height, and path, not the opponent's paddle. The number one
-  reason for whiffing is not keeping your eye on the ball and later repeats that to avoid
-  whiffing, keep your eye on it. The receiver should lock attention onto the opponent's racket at
-  the moment of contact for accurate prediction and reaction. Players to track the ball in flight
-  and watch whether it is high, long, wide, or curving to improve footwork and reaction.
-  Additional points reinforce the same theme. Together, these principles show how the topic is
-  applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:311ba085fc56757f145b63ccde072b93ef85c897fe0a597b1523292c43f671fd"
+  Using visual tracking of the ball and opponent contact to start moving earlier, keep rally
+  movement flowing, and avoid freezing in play.
+evidence_summary_source_hash: "sha256:13af5594ded03a9e8c115f5a1a9aba3d7a74986bb12d11b48ef391b5cb4e83c8"
 evidence_summary_generator: "deterministic"
 concept_type: fundamental
 facets:
@@ -28,10 +18,13 @@ facets:
 difficulty: beginner
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 144985474229589b0c784413a2ea653c0887b628c4c1910ebee7eba17c3d6ea6
-  prompt_version: candidate-review-v1
+  input_hash: sha256:dc09784a266caca8b33da89d4343e3c67841e0382c285727918cedcfc6e9bdef
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: bbZD31OGau8-concept-ball-tracking-for-footwork-reviewed
     evidence_type: explanation
@@ -39,7 +32,7 @@ evidence:
     reason: The speaker explicitly says tracking the ball and watching the opponent's contact point lets you react immediately and move earlier.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: bbZD31OGau8
       start_ms: 13666
@@ -55,7 +48,7 @@ evidence:
     reason: The speaker says to find the rhythm of the ball and follow that rhythm so footwork adapts accordingly, and that the body should follow the rhythm of the ball.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: bzOU-EnMQbk
       start_ms: 354000
@@ -73,7 +66,7 @@ evidence:
     reason: The speaker says students can now track the ball, and later contrasts good early movement with amateurs who watch too late.
     confidence: 0.89
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: vbzVfx-HWE4
       start_ms: 357960
@@ -91,7 +84,7 @@ evidence:
     reason: The speaker repeatedly tells the listener to focus on the ball and locate its position while receiving.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8fxjEROShs4
       start_ms: 779333
@@ -106,7 +99,7 @@ evidence:
     reason: The speaker explicitly instructs the player to observe attentively and keep eyes on the ball.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: zmYIxjHtg9Q
       start_ms: 493400
@@ -120,7 +113,7 @@ evidence:
     reason: The speaker directly instructs players to focus on the ball with their eyes and to locate the ball with quick feet.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 4WWIQdr3R8g
       start_ms: 447400
@@ -134,7 +127,7 @@ evidence:
     reason: The speaker says to improve awareness to locate the ball and keep eyes on the target, emphasizing ball position awareness.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 9WPYbE6DoTo
       start_ms: 200000
@@ -149,7 +142,7 @@ evidence:
     reason: The speaker repeatedly instructs to watch the ball and track the ball's trajectory to guide movement and feet adjustment.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: HlTqPv-MpGI
       start_ms: 706866
@@ -167,7 +160,7 @@ evidence:
     reason: The speaker repeatedly instructs to watch the ball and track the ball's trajectory to guide movement and feet adjustment.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: HlTqPv-MpGI
       start_ms: 706866
@@ -185,7 +178,7 @@ evidence:
     reason: The speaker instructs the player to observe, locate, track, and adjust position once the ball is in play.
     confidence: 0.9
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: TYMU3wQ3-sw
       start_ms: 639933
@@ -201,7 +194,7 @@ evidence:
     reason: The speaker tells the listener to focus on the ball's trajectory, height, and path, not the opponent's paddle.
     confidence: 0.91
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: HVPF38PxXvI
       start_ms: 196100
@@ -218,7 +211,7 @@ evidence:
     reason: The speaker repeatedly tells players to read the ball, watch the opponent's serve, and keep attention on the ball to improve receive timing and footwork.
     confidence: 0.91
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: qTmwWFOeuBA
       start_ms: 214866
@@ -232,7 +225,7 @@ evidence:
     reason: The speaker says the number one reason for whiffing is not keeping your eye on the ball and later repeats that to avoid whiffing, keep your eye on it.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: phTj82vlVqs
       start_ms: 286000
@@ -246,7 +239,7 @@ evidence:
     reason: The speaker says to track the ball, eye the ball, and avoid over-backing the swing when the opportunity is not ideal.
     confidence: 0.92
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: OQ7fB6yS8Fk
       start_ms: 667833
@@ -262,7 +255,7 @@ evidence:
     reason: The speaker says to track the trajectory the entire way and keep your eyes locked on the path.
     confidence: 0.93
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: yIBhoQsBD9k
       start_ms: 446300
@@ -278,7 +271,7 @@ evidence:
     reason: The speaker says the receiver should lock attention onto the opponent's racket at the moment of contact for accurate prediction and reaction.
     confidence: 0.91
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: YS3IObI6Gaw
       start_ms: 400700
@@ -294,7 +287,7 @@ evidence:
     reason: The speaker says to track the ball and explicitly states that this is point two in learning to position properly.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: WuWV6MlZQ_Q
       start_ms: 236800
@@ -309,7 +302,7 @@ evidence:
     reason: The speaker instructs players to track the ball in flight and watch whether it is high, long, wide, or curving to improve footwork and reaction.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: M8fzQvShrx8
       start_ms: 554700
@@ -318,3 +311,66 @@ evidence:
       segment_ids:
         - M8fzQvShrx8:00103
         - M8fzQvShrx8:00105
+  - id: 8fxjEROShs4-concept-ball-tracking-for-footwork-codex-reviewed
+    evidence_type: explanation
+    excerpt: Focus on the ball’s position when receiving, identify its position, and shift after spotting it.
+    reason: These contiguous segments directly explain tracking the ball’s position during receiving and using that information to initiate movement.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8fxjEROShs4
+      start_ms: 779333
+      end_ms: 794700
+      url: https://www.youtube.com/watch?v=8fxjEROShs4&t=779s
+      segment_ids:
+        - 8fxjEROShs4:00107
+        - 8fxjEROShs4:00108
+  - id: 9WPYbE6DoTo-concept-ball-tracking-for-footwork-codex-reviewed
+    evidence_type: explanation
+    excerpt: During regular training, improve awareness to locate the ball and keep your eyes on the target.
+    reason: These contiguous segments directly explain maintaining awareness to locate the ball and visually focus on the target, supporting the existing ball-tracking concept.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 9WPYbE6DoTo
+      start_ms: 200000
+      end_ms: 206266
+      url: https://www.youtube.com/watch?v=9WPYbE6DoTo&t=200s
+      segment_ids:
+        - 9WPYbE6DoTo:00030
+        - 9WPYbE6DoTo:00031
+  - id: bbZD31OGau8-concept-ball-tracking-for-footwork-codex-reviewed
+    evidence_type: explanation
+    excerpt: To improve your footwork, one important thing is to learn to track the ball. Tracking the ball is a must-practice skill.
+    reason: These contiguous segments explicitly identify tracking the ball as an important skill for improving footwork and say it must be practiced.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: bbZD31OGau8
+      start_ms: 13666
+      end_ms: 20900
+      url: https://www.youtube.com/watch?v=bbZD31OGau8&t=13s
+      segment_ids:
+        - bbZD31OGau8:00007
+        - bbZD31OGau8:00008
+  - id: HlTqPv-MpGI-concept-ball-tracking-for-footwork-codex-reviewed
+    evidence_type: explanation
+    excerpt: Focus on the ball’s straight-line or diagonal direction, keep your eyes on it, and adjust your feet accordingly—staying or moving to the forehand.
+    reason: This contiguous span directly instructs the player to track the ball’s direction, keep watching it, and adjust footwork based on that direction.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: HlTqPv-MpGI
+      start_ms: 837266
+      end_ms: 848100
+      url: https://www.youtube.com/watch?v=HlTqPv-MpGI&t=837s
+      segment_ids:
+        - HlTqPv-MpGI:00410
+        - HlTqPv-MpGI:00411
+        - HlTqPv-MpGI:00412
+        - HlTqPv-MpGI:00413
+        - HlTqPv-MpGI:00414

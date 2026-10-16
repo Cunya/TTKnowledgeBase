@@ -8,16 +8,9 @@ aliases:
   - half-long serve to the forehand
 short_definition: A receive lesson centered on the short backhand corner and half-long serves to the middle and forehand.
 evidence_summary: >-
-  Serve receive for short and half-long balls brings together several connected ideas. The lesson
-  as serve receive and names the main serve locations covered. A short serve to the forehand is
-  hard to attack, should be kept low, and forces the opponent to step in. Short forehand or middle
-  serves create third-ball attack opportunities and that low serves are hard to return. Explicit
-  receive behavior for short balls and half-long balls, including stepping in or not retreating.
-  Not to drop the hand too low, start higher, and avoid getting jammed or hitting wide. The
-  vertical-then-flatter method works for half-spin balls and not pure heavy spin or pure no-spin.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:dc40c271574611247c75fdb858d101b5bf944de336bd2f7ff7e7787a7bd8068c"
+  A receive lesson centered on the short backhand corner and half-long serves to the middle and
+  forehand.
+evidence_summary_source_hash: "sha256:6b7c09a9dd9294b3acc68ef875d105a8cc38b5b6d24e428d3aa633bf4ef1b503"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -30,10 +23,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 6b7e4f1e64aacb8266438f20cbffd2037d9fbf5f5adcc77738d31b554fe95bd2
-  prompt_version: candidate-review-v1
+  input_hash: sha256:1e81b205bf25ca2ea47ea242a7941bf95b194b6b4b037ff6863a3a816060dc79
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: ihrv3kBFb-U-concept-half-long-vs-short-serve-receive-scope-reviewed
     evidence_type: definition
@@ -41,7 +37,7 @@ evidence:
     reason: The speaker explicitly frames the lesson as serve receive and names the main serve locations covered.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ihrv3kBFb-U
       start_ms: 5933
@@ -59,7 +55,7 @@ evidence:
     reason: The transcript states that a short serve to the forehand is hard to attack, should be kept low, and forces the opponent to step in.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: bmK4umFK2Gs
       start_ms: 371333
@@ -76,7 +72,7 @@ evidence:
     reason: The transcript says short forehand or middle serves create third-ball attack opportunities and that low serves are hard to return.
     confidence: 0.93
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 2Qv6Oa6mm1M
       start_ms: 482233
@@ -92,7 +88,7 @@ evidence:
     reason: Speaker gives explicit receive behavior for short balls and half-long balls, including stepping in or not retreating.
     confidence: 0.9
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: AJeZkjOEJkk
       start_ms: 490066
@@ -107,7 +103,7 @@ evidence:
     reason: The speaker says not to drop the hand too low, start higher, and avoid getting jammed or hitting wide.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: _U8F62ukqK4
       start_ms: 31833
@@ -124,7 +120,7 @@ evidence:
     reason: The speaker says the vertical-then-flatter method works for half-spin balls and not pure heavy spin or pure no-spin.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: AxcoalL81cA
       start_ms: 344919
@@ -136,3 +132,21 @@ evidence:
         - AxcoalL81cA:00126
         - AxcoalL81cA:00127
         - AxcoalL81cA:00128
+  - id: ihrv3kBFb-U-concept-half-long-vs-short-serve-receive-scope-codex-reviewed
+    evidence_type: definition
+    excerpt: "Today, we're going to teach serve receive, focusing on serves that trouble amateur players: the short backhand corner, the half-long middle, and the half-long forehand."
+    reason: The contiguous selected span explicitly frames the lesson as serve receive and names the short backhand corner plus half-long serves to the middle and forehand. It directly matches the supplied existing concept.
+    confidence: 1.0
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ihrv3kBFb-U
+      start_ms: 5933
+      end_ms: 22000
+      url: https://www.youtube.com/watch?v=ihrv3kBFb-U&t=5s
+      segment_ids:
+        - ihrv3kBFb-U:00001
+        - ihrv3kBFb-U:00002
+        - ihrv3kBFb-U:00003
+        - ihrv3kBFb-U:00004
+        - ihrv3kBFb-U:00005

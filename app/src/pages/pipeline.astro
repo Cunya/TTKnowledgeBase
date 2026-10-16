@@ -1,12 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import progressData from '../data/generated/table-tennis-progress.json';
+
+const totals = progressData.totals;
 
 const stages = [
   { id: 'select', number: '01', name: 'Discover and select', actor: 'Script + editor', input: 'Channel, playlist, or video URLs', output: 'A curated source list', copy: 'Discovery collects titles and identifiers. A maintainer selects lessons that fill a knowledge gap; discovery alone never publishes or downloads a video.' },
   { id: 'ingest', number: '02', name: 'Ingest timed captions', actor: 'Python processors', input: 'Selected public video URLs', output: 'Private normalized transcripts', copy: 'Metadata and available captions are normalized into stable segment IDs. Requests are cached, paced, capped, and stopped when YouTube reports an IP block.' },
   { id: 'extract', number: '03', name: 'Extract knowledge proposals', actor: 'Codex CLI', input: 'Transcript segments + taxonomy', output: 'Private candidate JSON', copy: 'The configured low-cost model proposes concepts, definitions, aliases, relations, and evidence. It may cite only segment IDs supplied in the transcript and cannot edit or publish the project.' },
-  { id: 'resolve', number: '04', name: 'Resolve the review queue', actor: 'Script + editor', input: 'Candidates + existing concepts', output: 'Accepted, pending, or rejected decisions', copy: 'Deterministic matching suggests possible canonical concepts. Similar wording is only a hint: an item is accepted only after its exact evidence is incorporated into reviewed content.' },
-  { id: 'curate', number: '05', name: 'Curate canonical concepts', actor: 'Human review', input: 'Candidate evidence + surrounding transcript', output: 'Version-controlled concept YAML', copy: 'The editor merges duplicates, splits durable subtopics, checks wording, keeps citations focused, and connects the concept to the topic tree. This YAML is the editorial source of truth.' },
+  { id: 'resolve', number: '04', name: 'Adjudicate candidates', actor: 'Codex CLI + validators', input: 'Bounded transcript context + existing concepts', output: 'Accepted, deferred, or rejected decisions', copy: 'A separate schema-constrained Codex call decides semantic support and topic identity. Deterministic code then requires exact supplied segment IDs, one supported span, controlled taxonomy values, complete timestamps, and model provenance.' },
+  { id: 'curate', number: '05', name: 'Assemble canonical concepts', actor: 'Python + Codex', input: 'Adjudicated evidence + canonical corpus', output: 'Version-controlled concept YAML', copy: 'Accepted evidence is merged into an existing concept or creates a durable new article. Human advice and explicit overrides are available as optional augmentation, not the normal decision queue.' },
   { id: 'visuals', number: '06', name: 'Separate speech from demonstration', actor: 'Human review', input: 'Spoken citation + nearby footage', output: 'Optional visual source window', copy: 'A timestamp where a coach explains an idea is not automatically where the movement is visible. Only a separately reviewed visual interval may become a repeatable demonstration loop.' },
   { id: 'validate', number: '07', name: 'Validate and sanitize', actor: 'Python processors', input: 'Reviewed concepts + private transcripts', output: 'Browser-safe corpus JSON', copy: 'Validation checks segment ownership, timestamp bounds, evidence duration, graph links, review state, navigation placement, and public-data safety. Unreviewed candidates and full transcripts remain private.' },
   { id: 'build', number: '08', name: 'Build and publish', actor: 'Astro + GitHub Actions', input: 'Sanitized public corpus', output: 'Static GitHub Pages website', copy: 'Astro generates the concept, video, progress, and documentation pages. GitHub builds committed public data only; it never scrapes YouTube or runs Codex.' },
@@ -28,7 +31,7 @@ python -m processors.cli discover CHANNEL_URL --kb table-tennis
 python -m processors.cli ingest --kb table-tennis VIDEO_URLS
 python -m processors.cli extract-concepts --kb table-tennis --engine codex
 python -m processors.cli build-review-queue --kb table-tennis
-# Review and edit canonical concept YAML
+python -m processors.cli process-pending --kb table-tennis --retry-deferred
 python -m processors.cli validate --kb table-tennis
 python -m processors.cli publish --kb table-tennis
 python -m processors.cli validate-published --kb table-tennis
@@ -39,9 +42,9 @@ npm run build`;
 <BaseLayout title="Processing pipeline" description="How MomentGraph turns timed video transcripts into reviewed, source-grounded knowledge.">
   <section class="page-intro pipeline-intro">
     <div class="eyebrow">System documentation · end to end</div>
-    <h1>From video transcript to reviewed knowledge</h1>
-    <p>MomentGraph is a local, operator-run publishing pipeline. Scripts collect and normalize timed captions, Codex proposes structure, a reviewer controls what becomes knowledge, and Astro publishes only a sanitized static corpus.</p>
-    <div class="pipeline-status"><span>Current table-tennis run</span><strong>107 videos · 73 concepts · 1,686 evidence moments</strong><small>955 accepted · 103 deferred · 1 rejected candidate</small></div>
+    <h1>From video transcript to adjudicated knowledge</h1>
+    <p>MomentGraph is a local, operator-run publishing pipeline. Scripts normalize timed captions, Codex extracts and independently adjudicates knowledge, deterministic validators fail closed, and Astro publishes only the sanitized approved corpus.</p>
+    <div class="pipeline-status"><span>Current safe table-tennis corpus</span><strong>{totals.published_videos} videos · {totals.concepts} concepts · {totals.evidence.toLocaleString()} evidence moments</strong><small>{totals.accepted.toLocaleString()} accepted · {totals.deferred.toLocaleString()} awaiting Codex · {totals.rejected.toLocaleString()} rejected</small></div>
   </section>
 
   <div class="pipeline-layout">
@@ -60,12 +63,12 @@ npm run build`;
       <section id="overview" class="pipeline-section">
         <div class="section-kicker">Overview</div><h2>One-way publication, traceable back to source</h2>
         <div class="flow-strip" aria-label="Pipeline overview">
-          <span>YouTube</span><i>→</i><span>Timed transcript</span><i>→</i><span>Codex proposals</span><i>→</i><span>Human review</span><i>→</i><span>Static knowledge base</span>
+          <span>YouTube</span><i>→</i><span>Timed transcript</span><i>→</i><span>Codex extraction</span><i>→</i><span>Codex adjudication</span><i>→</i><span>Static knowledge base</span>
         </div>
         <p>The public website does not scrape, store credentials, invoke an LLM, or serve downloaded media. All expensive and sensitive processing happens locally. The published corpus retains short evidence excerpts, canonical YouTube links, and exact time ranges so readers can inspect the original source.</p>
         <div class="boundary-pair">
-          <div><strong>Automated</strong><p>Discovery, transcript normalization, schema-constrained extraction, queue matching, validation, sanitization, and static building.</p></div>
-          <div><strong>Editorial</strong><p>Source selection, concept merging, claim wording, relationship approval, topic placement, and visual-demonstration verification.</p></div>
+          <div><strong>Automated</strong><p>Discovery, transcript normalization, schema-constrained extraction and adjudication, canonical assembly, validation, sanitization, and static building.</p></div>
+          <div><strong>Optional human augmentation</strong><p>Domain advice, explicit decision overrides, exceptional source-policy choices, and watched visual-demonstration verification.</p></div>
         </div>
       </section>
 
@@ -92,7 +95,7 @@ npm run build`;
       </section>
 
       <section id="review" class="pipeline-section">
-        <div class="section-kicker">Editorial control</div><h2>Nothing becomes knowledge merely because a model proposed it</h2>
+        <div class="section-kicker">Semantic control</div><h2>An extraction proposal needs independent adjudication</h2>
         <div class="review-rule"><span>01</span><div><h3>Exact evidence</h3><p>An accepted candidate must share at least one exact transcript segment with its canonical concept. Semantic similarity alone is insufficient.</p></div></div>
         <div class="review-rule"><span>02</span><div><h3>Focused moments</h3><p>Spoken citations are limited to short windows and split at topic changes. Sparse segments spread across minutes are never joined into one misleading clip.</p></div></div>
         <div class="review-rule"><span>03</span><div><h3>Durable concepts</h3><p>Aliases and duplicates are consolidated into wiki-style articles organized around mechanics, timing, spacing, selection, errors, drills, and strategy.</p></div></div>
@@ -101,11 +104,12 @@ npm run build`;
 
       <section id="review-pages" class="pipeline-section review-pages-section">
         <div class="section-kicker">Local operator tools</div><h2>Review pages now available</h2>
-        <p>Use the focused pages below to work through candidates and source-grounding tasks. Their actions remain local review records until the underlying queue is explicitly updated and reprocessed.</p>
+        <p>Use the focused pages below to inspect automated work or optionally add advice and overrides. Ordinary semantic decisions continue through Codex CLI.</p>
         <div class="review-page-links">
-          <a href={`${import.meta.env.BASE_URL}concept-review/`}><strong>Concept review diagnostics</strong><span>See why candidates were deferred, including low confidence, ambiguity, duplicates, and boundary issues.</span></a>
+          <a href={`${import.meta.env.BASE_URL}concept-review/`}><strong>Concept review diagnostics</strong><span>See why candidates are waiting, including low confidence, ambiguity, duplicates, and boundary issues.</span></a>
           <a href={`${import.meta.env.BASE_URL}boundary-review/`}><strong>Caption boundary review</strong><span>Review P1-14 windows with source playback and mark keep, expand, split, or defer.</span></a>
           <a href={`${import.meta.env.BASE_URL}review/`}><strong>General review queue</strong><span>Track local timestamp, visual, evidence, concept, and metadata follow-up tasks.</span></a>
+          <a href={`${import.meta.env.BASE_URL}human-review/`}><strong>Optional human advice</strong><span>Inspect exact transcript context and add an audited annotation or deliberate override.</span></a>
         </div>
       </section>
 
@@ -113,7 +117,7 @@ npm run build`;
         <div class="section-kicker">Operator workflow</div><h2>The repeatable command sequence</h2>
         <p>Commands are run from the repository root. The <code>--kb</code> option isolates every knowledge base, allowing the same processors to support unrelated topics.</p>
         <pre class="pipeline-code"><code>{command}</code></pre>
-        <p class="code-note">The comment marks the intentional human gate. There is no command that silently bulk-promotes model output into published knowledge.</p>
+        <p class="code-note">`process-pending` is the semantic gate: a separate Codex decision is followed by deterministic support and timestamp checks. Human input remains optional.</p>
       </section>
 
       <section id="safety" class="pipeline-section">

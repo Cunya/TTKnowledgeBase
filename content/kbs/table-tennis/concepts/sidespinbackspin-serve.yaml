@@ -6,18 +6,9 @@ aliases:
   - sidespin underspin
 short_definition: A serve that combines sidespin with backspin, using lower-right contact and a brushing motion followed by deceptive recovery.
 evidence_summary: >-
-  Sidespin–backspin serve brings together several connected ideas. Sidespin with underspin, names
-  the lower-right contact region, and the brushing and fake-lift motion used to produce it.
-  Sidespin-backspin, gives its clock-face motion, and labels it side-underspin. A
-  sidespin-backspin serve directly and it with sidespin-topspin and backhand serve errors. Side
-  spin, side under spin, back spin, and side spin with underspin. The spin as sidespin-backspin
-  and it as chopping down on the bottom-middle of the ball. Sidespin-backspin by racket contact
-  above the equator and the racket starts high and brushes down on the ball. The sidespin-backspin
-  serve and gives technical tips for it, including racket angle and lower-half contact. The left
-  sidespin serve and it as a sidespin-underspin serve. Additional points reinforce the same theme.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:f63a620ca99fb0d90331d8aa2ed22426655544d52a6f8a1b811550aa88bd1160"
+  A serve that combines sidespin with backspin, using lower-right contact and a brushing motion
+  followed by deceptive recovery.
+evidence_summary_source_hash: "sha256:f76bf3df478fcb1de225adb74b693c3a87ef8c34dc3ed69233d2d61a3f5fe854"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -33,10 +24,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 8ab80abf0e00fde8cc3857f81a52856f8424584595cdf8fcfa3a3ae15839121c
-  prompt_version: candidate-review-v1
+  input_hash: sha256:159573aae5e4a7f52a4e521f14ca93cab023d53497ea84640a33cc972be84c81
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: 9OxcCPWI-k8-concept-sidespin-backspin-serve-reviewed
     evidence_type: definition
@@ -44,7 +38,7 @@ evidence:
     reason: The speaker explicitly describes sidespin with underspin, names the lower-right contact region, and explains the brushing and fake-lift motion used to produce it.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 9OxcCPWI-k8
       start_ms: 8266
@@ -61,7 +55,7 @@ evidence:
     reason: The speaker repeatedly discusses serves combining side spin and back spin and contrasts brushing with cutting downward for this effect.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Fe4y6uzl5GU
       start_ms: 150040
@@ -79,7 +73,7 @@ evidence:
     reason: The speaker describes chopping the lower part and striking downward at a point as the mechanism for backspin.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: KuYNs8gAU_U
       start_ms: 316360
@@ -97,7 +91,7 @@ evidence:
     reason: The speaker explicitly teaches sidespin-backspin, gives its clock-face motion, and labels it side-underspin.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Ay0i8Sd78hM
       start_ms: 296066
@@ -112,7 +106,7 @@ evidence:
     reason: The speaker names sidespin-backspin and says pure backspin or sidespin-backspin is easier to short-push.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8iEro-p2Q9c
       start_ms: 601033
@@ -128,7 +122,7 @@ evidence:
     reason: The speaker names a sidespin-backspin serve directly and contrasts it with sidespin-topspin and backhand serve errors.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: GOAyEFoSibE
       start_ms: 688366
@@ -143,7 +137,7 @@ evidence:
     reason: The speaker explicitly describes side-underspin as a chopping motion and labels the motion side-underspin.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: VUCWueKYuE0
       start_ms: 249000
@@ -158,7 +152,7 @@ evidence:
     reason: The speaker explicitly identifies the ball as 'a sidespin with backspin' and says contact is on the lower side of the ball.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 9vowMQmr-pk
       start_ms: 10066
@@ -173,7 +167,7 @@ evidence:
     reason: The transcript explicitly mentions side spin, side under spin, back spin, and side spin with underspin.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: rPrv4iWdE4w
       start_ms: 223333
@@ -188,7 +182,7 @@ evidence:
     reason: The speaker explicitly names the sidespin-backspin serve and says to master it first.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 6teuLAHljCk
       start_ms: 455800
@@ -203,7 +197,7 @@ evidence:
     reason: The speaker names the sidespin-backspin serve directly and discusses it again as the target of the drill.
     confidence: 0.94
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Nq0Wek82V6k
       start_ms: 11000
@@ -217,7 +211,7 @@ evidence:
     reason: The speaker directly identifies the spin as sidespin-backspin and explains it as chopping down on the bottom-middle of the ball.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 1IeU5XUDCKA
       start_ms: 574466
@@ -232,7 +226,7 @@ evidence:
     reason: The speaker says side-under serves require the racket to be higher than the ball, then brushed downward from above to create strong backspin.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: dg0kTVGE8qQ
       start_ms: 442633
@@ -249,7 +243,7 @@ evidence:
     reason: The speaker describes the serve as a push-like motion brushing forward and downward, then sideways and down, to create sidespin-backspin.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: dm3dhRiTMZ4
       start_ms: 315233
@@ -265,7 +259,7 @@ evidence:
     reason: The speaker classifies sidespin-backspin by racket contact above the equator and says the racket starts high and brushes down on the ball.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: EMHCC5XbkvY
       start_ms: 298666
@@ -281,7 +275,7 @@ evidence:
     reason: The transcript repeatedly labels and discusses the side backspin version, including its effect on the ball and its aggressive rotation.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: xyw4eE67NI4
       start_ms: 400
@@ -297,7 +291,7 @@ evidence:
     reason: The speaker names the sidespin-backspin serve and gives technical tips for it, including racket angle and lower-half contact.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: jFuVRHkNWg4
       start_ms: 19966
@@ -313,7 +307,7 @@ evidence:
     reason: The speaker names sidespin backspin as the foundational serve and explains its progression from push-like contact to full brushing motion.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: xWE01GQepLE
       start_ms: 46266
@@ -328,7 +322,7 @@ evidence:
     reason: The speaker names the serve as side-backspin and describes it as a chopping motion with quick release and downward force.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: pQcxGOu4wEE
       start_ms: 278033
@@ -344,7 +338,7 @@ evidence:
     reason: The speaker explicitly names the left sidespin serve and describes it as a sidespin-underspin serve.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: mQPlGN-Wkuo
       start_ms: 109766
@@ -353,3 +347,86 @@ evidence:
       segment_ids:
         - mQPlGN-Wkuo:00020
         - mQPlGN-Wkuo:00022
+  - id: 9OxcCPWI-k8-concept-sidespin-backspin-serve-codex-reviewed
+    evidence_type: explanation
+    excerpt: For sidespin underspin, keep the racket angle more upright, brush through fully, then lift with a fake motion.
+    reason: This contiguous span directly describes the sidespin-backspin serve technique, including racket angle, brushing, and deceptive recovery.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 9OxcCPWI-k8
+      start_ms: 216600
+      end_ms: 227366
+      url: https://www.youtube.com/watch?v=9OxcCPWI-k8&t=216s
+      segment_ids:
+        - 9OxcCPWI-k8:00069
+        - 9OxcCPWI-k8:00070
+        - 9OxcCPWI-k8:00071
+  - id: 9vowMQmr-pk-concept-sidespinbackspin-serve-codex-reviewed
+    evidence_type: definition
+    excerpt: This is a sidespin with backspin. The point of contact is the lower side of the ball.
+    reason: The selected contiguous span explicitly identifies the serve as sidespin with backspin and specifies contact on the lower side of the ball.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 9vowMQmr-pk
+      start_ms: 10066
+      end_ms: 14500
+      url: https://www.youtube.com/watch?v=9vowMQmr-pk&t=10s
+      segment_ids:
+        - 9vowMQmr-pk:00000
+        - 9vowMQmr-pk:00001
+  - id: dm3dhRiTMZ4-concept-sidespin-backspin-serve-codex-reviewed
+    evidence_type: explanation
+    excerpt: For sidespin-backspin, brush the ball forward and downward, then apply sideways-and-downward force to generate both spins.
+    reason: The selected contiguous 27.4-second span directly explains the sidespin-backspin serve and its brushing mechanics. It matches the supplied existing concept; omitted contrast and deception claims are not included.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: dm3dhRiTMZ4
+      start_ms: 315233
+      end_ms: 342666
+      url: https://www.youtube.com/watch?v=dm3dhRiTMZ4&t=315s
+      segment_ids:
+        - dm3dhRiTMZ4:00069
+        - dm3dhRiTMZ4:00070
+        - dm3dhRiTMZ4:00071
+        - dm3dhRiTMZ4:00072
+        - dm3dhRiTMZ4:00073
+        - dm3dhRiTMZ4:00074
+  - id: IHQASHkdLYk-concept-backspin-serve-codex-reviewed
+    evidence_type: explanation
+    excerpt: A sidespin-backspin serve will probably be pushed back. A push off a long serve is tricky because the ball may float, the spin is unpredictable, and it is difficult to attack.
+    reason: The contiguous 17.2-second span directly identifies a sidespin-backspin serve and explains the likely push return and its difficulty, matching the existing sidespin–backspin serve topic.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: IHQASHkdLYk
+      start_ms: 133
+      end_ms: 17200
+      url: https://www.youtube.com/watch?v=IHQASHkdLYk&t=0s
+      segment_ids:
+        - IHQASHkdLYk:00000
+        - IHQASHkdLYk:00001
+        - IHQASHkdLYk:00002
+  - id: jFuVRHkNWg4-concept-sidespinbackspin-serve-codex-reviewed
+    evidence_type: definition
+    excerpt: The sidespin-backspin serve uses a slightly open or flat racket angle and lower-half contact to generate significantly more spin.
+    reason: This contiguous 19.8-second span names the sidespin-backspin serve and directly explains that lower-half contact generates more spin.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: jFuVRHkNWg4
+      start_ms: 19966
+      end_ms: 39433
+      url: https://www.youtube.com/watch?v=jFuVRHkNWg4&t=19s
+      segment_ids:
+        - jFuVRHkNWg4:00004
+        - jFuVRHkNWg4:00005
+        - jFuVRHkNWg4:00006
+        - jFuVRHkNWg4:00007

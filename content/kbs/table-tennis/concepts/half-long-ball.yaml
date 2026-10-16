@@ -4,21 +4,9 @@ label: Half-long ball
 aliases:
   - half long
   - half long ball
-short_definition: A serve or return that lands on the table first and then bounces off the table, creating a mid-depth receive problem.
+short_definition: A serve or return that just clears the end line after its first bounce on the receiver’s side, placing it near the boundary between short and long balls.
 evidence_summary: >-
-  Half-long ball brings together several connected ideas. Explicitly defines half long as a ball
-  whose first bounce lands off the table. A shot that looks like a short push but whose high point
-  is already deep, and the ball half-bounces out. Balls that go long after one bounce and names
-  them half-long balls. Connects mastery of half-long balls with taking initiative and notes that
-  falling-point contact reflects slower anticipation and footwork. The half-out ball and it as
-  between a non-out ball and an out ball, with an edge-of-table arc. The half-long ball as a
-  distinct scenario and pushing is difficult while looping is often preferable. Half-long balls
-  from short balls, says to flick them over the table, keep the elbow by the side, stay low and
-  forward, and brake earlier. The ball as mostly half long, sometimes short, with half long more
-  common. Additional points reinforce the same theme. Together, these principles show how the
-  topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:11f31191bcd2c1f896aad45d3d02831900262186083f9e39f2956f682d076a4e"
-evidence_summary_generator: "deterministic"
+  A half-long ball just clears the end line after bouncing on the receiver’s side. Recognizing this depth helps the receiver take the initiative rather than treating it as an ordinary long ball.
 concept_type: concept
 facets:
   category:
@@ -28,10 +16,13 @@ facets:
 difficulty: beginner
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: a0f4a96676203c6e4e76103bafe08a3a48bda30901b4bb2a56c216a98a5a8be6
-  prompt_version: candidate-review-v1
+  input_hash: sha256:179d3cd72321bba5aa8d53b94996cec74dd27f117e586348e90e87c01143baed
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: 1fHWnt8IlbI-new-half-long-ball-reviewed
     evidence_type: definition
@@ -39,7 +30,7 @@ evidence:
     reason: Explicitly defines half long as a ball whose first bounce lands off the table.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 1fHWnt8IlbI
       start_ms: 6800
@@ -55,7 +46,7 @@ evidence:
     reason: The speaker explicitly defines the halfway region and says balls landing inside halfway are half-long balls, while half-way balls will go long.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 1Z-HPOfS_f0
       start_ms: 303966
@@ -74,7 +65,7 @@ evidence:
     reason: The speaker describes a shot that looks like a short push but whose high point is already deep, and says the ball half-bounces out.
     confidence: 0.92
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 7LXrK-o5FmU
       start_ms: 103533
@@ -89,7 +80,7 @@ evidence:
     reason: The speaker names the situation as half-long, clarifies it is not full long, and labels it as a half-long (half-table) ball.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: b_F4I4x4dl0
       start_ms: 262600
@@ -106,7 +97,7 @@ evidence:
     reason: The speaker describes balls that go long after one bounce and names them half-long balls.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: lcp99UuLuus
       start_ms: 64366
@@ -123,7 +114,7 @@ evidence:
     reason: Directly defines the half-long ball.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: eIsYt1sCPRI
       start_ms: 15166
@@ -137,7 +128,7 @@ evidence:
     reason: Connects mastery of half-long balls with taking initiative and notes that falling-point contact reflects slower anticipation and footwork.
     confidence: 0.9
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: eIsYt1sCPRI
       start_ms: 52433
@@ -152,7 +143,7 @@ evidence:
     reason: The speaker defines half-long balls as landing once and sitting near the edge, then explains they are common in matches.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: vbzVfx-HWE4
       start_ms: 48440
@@ -174,7 +165,7 @@ evidence:
     reason: The speaker explicitly mentions trouble hitting half-long balls and the temptation to lift the ball.
     confidence: 0.88
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: idAN8cPDZ7w
       start_ms: 539166
@@ -189,7 +180,7 @@ evidence:
     reason: The speaker explicitly defines the half-out ball and describes it as between a non-out ball and an out ball, with an edge-of-table arc.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: imcV_xGDaJ4
       start_ms: 9666
@@ -209,7 +200,7 @@ evidence:
     reason: The speaker says a half-long ball has little spin, doesn't kick, and is easier to loop, and also notes the slick competition table surface makes the ball run off the end more easily.
     confidence: 0.92
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ihrv3kBFb-U
       start_ms: 897733
@@ -226,7 +217,7 @@ evidence:
     reason: The speaker names the half-long ball as a distinct scenario and explains that pushing is difficult while looping is often preferable.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: FOPBXdIaKFA
       start_ms: 675600
@@ -245,7 +236,7 @@ evidence:
     reason: The speaker explicitly compares short and half-long balls and describes half-long balls as more difficult and attackable if handled passively.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: _TIBQOXT3cw
       start_ms: 647033
@@ -261,7 +252,7 @@ evidence:
     reason: The speaker distinguishes half-long balls from short balls, says to flick them over the table, keep the elbow by the side, stay low and forward, and brake earlier.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: cSDOaQqEtTQ
       start_ms: 361966
@@ -276,7 +267,7 @@ evidence:
     reason: The speaker directly defines a ball just off the edge of the table as a half-long ball.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: _U8F62ukqK4
       start_ms: 0
@@ -290,7 +281,7 @@ evidence:
     reason: The speaker explicitly classifies the ball as mostly half long, sometimes short, with half long more common.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: TF56et74wQ8
       start_ms: 9120
@@ -300,3 +291,61 @@ evidence:
         - TF56et74wQ8:00000
         - TF56et74wQ8:00001
         - TF56et74wQ8:00002
+  - id: imcV_xGDaJ4-concept-half-long-ball-codex-reviewed
+    evidence_type: definition
+    excerpt: A half-out ball refers to a shot that bounces just outside the table after hitting the opponent's side; it is between a non-out ball and an out ball, with an arc just at the edge of the table.
+    reason: This contiguous 15-second span explicitly defines the half-out ball as an edge-of-table shot between a non-out ball and an out ball, directly supporting the same durable topic as the supplied half-long-ball concept.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: imcV_xGDaJ4
+      start_ms: 9666
+      end_ms: 24933
+      url: https://www.youtube.com/watch?v=imcV_xGDaJ4&t=9s
+      segment_ids:
+        - imcV_xGDaJ4:00002
+        - imcV_xGDaJ4:00003
+        - imcV_xGDaJ4:00004
+        - imcV_xGDaJ4:00005
+        - imcV_xGDaJ4:00006
+        - imcV_xGDaJ4:00007
+        - imcV_xGDaJ4:00008
+  - id: eIsYt1sCPRI-concept-half-long-ball-codex-reviewed
+    evidence_type: definition
+    excerpt: A half-long ball just clears the end line after its first bounce on the receiver’s side; mastering this depth helps take the initiative.
+    reason: The ball’s depth is near the end line after its first bounce, which distinguishes a half-long ball from an ordinary long ball.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: eIsYt1sCPRI
+      start_ms: 8166
+      end_ms: 19833
+      url: https://www.youtube.com/watch?v=eIsYt1sCPRI&t=8s
+      segment_ids:
+        - eIsYt1sCPRI:00001
+        - eIsYt1sCPRI:00002
+        - eIsYt1sCPRI:00003
+  - id: vbzVfx-HWE4-concept-half-long-ball-codex-reviewed
+    evidence_type: definition
+    excerpt: A half-long ball exits the table after one bounce and sits right at the edge, between a short ball and a true deep long ball.
+    reason: 'A half-long ball is an in-between length: it exits after one bounce but is not a true deep ball, making it a common awkward ball in matches.'
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: vbzVfx-HWE4
+      start_ms: 48440
+      end_ms: 70320
+      url: https://www.youtube.com/watch?v=vbzVfx-HWE4&t=48s
+      segment_ids:
+        - vbzVfx-HWE4:00021
+        - vbzVfx-HWE4:00022
+        - vbzVfx-HWE4:00023
+        - vbzVfx-HWE4:00024
+        - vbzVfx-HWE4:00025
+        - vbzVfx-HWE4:00026
+        - vbzVfx-HWE4:00027
+        - vbzVfx-HWE4:00028
+        - vbzVfx-HWE4:00029

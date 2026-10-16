@@ -7,11 +7,9 @@ aliases:
   - watching the point of contact
 short_definition: Using a low posture so the eyes naturally track the ball and the contact point stays in view, improving serve precision.
 evidence_summary: >-
-  Low stance and contact focus brings together several connected ideas. Low center of gravity with
-  being able to see and watch the contact point, and recommends keeping the eyes on the racket
-  through the motion. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:ba1e58e2b06f07a3c78d65857e354cd91899ae7c33a06feb0a24a209bf0aa73b"
+  Using a low posture so the eyes naturally track the ball and the contact point stays in view,
+  improving serve precision.
+evidence_summary_source_hash: "sha256:9fefda5606fd4e0dc7f68085007d57da0ac1bbf32b9fdaf70b14f7e1ec905240"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -25,16 +23,36 @@ facets:
 difficulty: beginner
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 5a849b62e6ebdbc8a299c4c59c263f963203d78ccefb29243f7e243d1d7bf155
-  prompt_version: candidate-review-v1
+  input_hash: sha256:449c96afd67a19502d58cc454668be8ba4aa2fd36c7a734705f97922ff76868a
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: OSfqukeeo_I-new-low-stance-and-contact-focus-reviewed
     evidence_type: explanation
     excerpt: Using a low posture so the eyes naturally track the ball and the contact point stays in view, improving serve precision.
     reason: The speaker links low center of gravity with being able to see and watch the contact point, and recommends keeping the eyes on the racket through the motion.
     confidence: 0.94
+    visual_status: not_visual
+    review_status: unreviewed
+    source:
+      video_id: OSfqukeeo_I
+      start_ms: 173266
+      end_ms: 200033
+      url: https://www.youtube.com/watch?v=OSfqukeeo_I&t=173s
+      segment_ids:
+        - OSfqukeeo_I:00031
+        - OSfqukeeo_I:00032
+        - OSfqukeeo_I:00033
+        - OSfqukeeo_I:00034
+  - id: OSfqukeeo_I-new-low-stance-and-contact-focus-codex-reviewed
+    evidence_type: explanation
+    excerpt: When serving, a low stance lowers the center of gravity so the eyes naturally fall on the ball; watching the contact makes the stroke more precise.
+    reason: These contiguous segments directly explain that an upright posture obscures the contact point, while a low stance brings the eyes to the ball and supports precise contact. The span is under 30 seconds.
+    confidence: 0.99
     visual_status: not_visual
     review_status: approved
     source:

@@ -5,12 +5,9 @@ aliases:
   - about an arm's length distance from the table
 short_definition: Keep enough distance from the table during movement so there is time to react and avoid being jammed on long balls.
 evidence_summary: >-
-  Maintain arm's-length distance from the table brings together several connected ideas. Gives a
-  concrete spacing rule tied to reaction time and avoiding jams. The backhand stance is too close
-  to the table, recommends leaving about an arm's length of space, and summarizes it as 'One arm's
-  length from the table.' Together, these principles show how the topic is applied in practice
-  while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:3398cf68bfd0bb1ba9f8437f8095ed7242a64193505504eac5ac79794debf6d4"
+  Keep enough distance from the table during movement so there is time to react and avoid being
+  jammed on long balls.
+evidence_summary_source_hash: "sha256:c11afc8f392529337a453133628f759274fb2425ab4b0c998cc46e05ea719a86"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -22,10 +19,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 01e3b0c48621b3d6f30686f6ed5909d59fc7f8a2967c5125f4c5967edbeb55be
-  prompt_version: candidate-review-v1
+  input_hash: sha256:5b59e7e2cce1fbdead29847e4a8c7d9376358a0270c8ddada789f7865cb10f66
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: McwvbLZZQmA-concept-maintain-arm-length-distance-from-table-reviewed
     evidence_type: explanation
@@ -33,7 +33,7 @@ evidence:
     reason: Gives a concrete spacing rule tied to reaction time and avoiding jams.
     confidence: 0.92
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: McwvbLZZQmA
       start_ms: 132966
@@ -49,7 +49,7 @@ evidence:
     reason: The speaker says the backhand stance is too close to the table, recommends leaving about an arm's length of space, and summarizes it as 'One arm's length from the table.'
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 6-ZAaH5-oR0
       start_ms: 25300
@@ -59,3 +59,19 @@ evidence:
         - 6-ZAaH5-oR0:00005
         - 6-ZAaH5-oR0:00006
         - 6-ZAaH5-oR0:00007
+  - id: McwvbLZZQmA-concept-maintain-arm-length-distance-from-table-codex-reviewed
+    evidence_type: explanation
+    excerpt: When moving in any direction, maintain about an arm's-length distance from the table to avoid being jammed on long balls and allow enough time to react.
+    reason: The selected contiguous span directly states the spacing rule, its purpose, and the risk of getting jammed on long balls.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: McwvbLZZQmA
+      start_ms: 132966
+      end_ms: 146800
+      url: https://www.youtube.com/watch?v=McwvbLZZQmA&t=132s
+      segment_ids:
+        - McwvbLZZQmA:00030
+        - McwvbLZZQmA:00031
+        - McwvbLZZQmA:00032

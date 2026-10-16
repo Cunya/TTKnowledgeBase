@@ -2,112 +2,128 @@ id: concept-footwork-patterns
 slug: footwork-patterns
 label: Footwork patterns
 aliases:
-  - common footwork patterns
+- common footwork patterns
 short_definition: The standard movement patterns used to reach and recover around the table, including side shuffle, single step, cross step, shuffle step, adjustment step, and hop step.
 evidence_summary: >-
-  Footwork patterns brings together several connected ideas. Introduces the topic as common
-  footwork patterns and then lists several named patterns. Repeated footwork adjustments,
-  including left foot forward on serve and right foot forward for backhand positioning. There are
-  three types of movements in this footwork and summarizes them as the rally options. The lunge
-  step and side-shuffle as footwork patterns to train. A useful contrast is between shuffle steps
-  for half-table movement and lunge steps for wider transitions such as backhand to forehand.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:90c2356af1f61e4c20c77ad8cf5352baa928965916fa32177184ff18982a3e8d"
+  These contiguous explicitly state the left-foot-forward serve pattern and right-foot-forward backhand positioning pattern, directly supporting the existing Footwork patterns concept.
+evidence_summary_source_hash: "sha256:8745aeffc42b5eb5acc5d84bce6212de6510f463eda2c5ec87a1c4e507a47fbc"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
   category:
-    - fundamentals
+  - fundamentals
   level:
-    - beginner
-    - intermediate
+  - beginner
+  - intermediate
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 61c2fa653467beb80e430e5e48a1605fd867744ed2616aca2a68d64bcb1072ec
-  prompt_version: candidate-review-v1
+  input_hash: sha256:ec26b5ab6482717027dd2c19d43ae0325c7134ad02d5600eb209bf0d069a091d
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: P9lUTLVEBPE-new-footwork-patterns-reviewed
-    evidence_type: explanation
-    excerpt: The standard movement patterns used to reach and recover around the table, including side shuffle, single step, cross step, shuffle step, adjustment step, and hop step.
-    reason: Introduces the topic as common footwork patterns and then lists several named patterns.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: P9lUTLVEBPE
-      start_ms: 9280
-      end_ms: 14400
-      url: https://www.youtube.com/watch?v=P9lUTLVEBPE&t=9s
-      segment_ids:
-        - P9lUTLVEBPE:00004
-        - P9lUTLVEBPE:00005
-  - id: 8fxjEROShs4-concept-footwork-patterns-reviewed
-    evidence_type: demonstration
-    excerpt: Using repeatable step patterns to enter the correct receiving position.
-    reason: The speaker demonstrates repeated footwork adjustments, including left foot forward on serve and right foot forward for backhand positioning.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 8fxjEROShs4
-      start_ms: 472500
-      end_ms: 499400
-      url: https://www.youtube.com/watch?v=8fxjEROShs4&t=472s
-      segment_ids:
-        - 8fxjEROShs4:00054
-        - 8fxjEROShs4:00055
-        - 8fxjEROShs4:00059
-        - 8fxjEROShs4:00060
-  - id: 7N1IChCbVjk-concept-footwork-patterns-reviewed
-    evidence_type: definition
-    excerpt: A set of movement options used to transition between backhand and forehand positions depending on the incoming angle and distance.
-    reason: The speaker explicitly says there are three types of movements in this footwork and summarizes them as the rally options.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 7N1IChCbVjk
-      start_ms: 112233
-      end_ms: 117400
-      url: https://www.youtube.com/watch?v=7N1IChCbVjk&t=112s
-      segment_ids:
-        - 7N1IChCbVjk:00038
-        - 7N1IChCbVjk:00039
-  - id: I-luBOL9IxI-concept-footwork-patterns-reviewed
-    evidence_type: definition
-    excerpt: Players should train footwork patterns such as the lunge step and side-shuffle to cover the table and recover into position.
-    reason: The speaker explicitly names the lunge step and side-shuffle as footwork patterns to train.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: I-luBOL9IxI
-      start_ms: 944533
-      end_ms: 961233
-      url: https://www.youtube.com/watch?v=I-luBOL9IxI&t=944s
-      segment_ids:
-        - I-luBOL9IxI:00217
-        - I-luBOL9IxI:00218
-        - I-luBOL9IxI:00219
-        - I-luBOL9IxI:00220
-  - id: fX0-3KtEzUY-concept-footwork-patterns-reviewed
-    evidence_type: explanation
-    excerpt: The choice of movement pattern, including small shuffle steps for smaller adjustments and lunge steps for wide movement.
-    reason: The transcript contrasts shuffle steps for half-table movement with lunge steps for wider transitions such as backhand to forehand.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: fX0-3KtEzUY
-      start_ms: 154933
-      end_ms: 184400
-      url: https://www.youtube.com/watch?v=fX0-3KtEzUY&t=154s
-      segment_ids:
-        - fX0-3KtEzUY:00031
-        - fX0-3KtEzUY:00032
-        - fX0-3KtEzUY:00034
-        - fX0-3KtEzUY:00037
+- id: P9lUTLVEBPE-new-footwork-patterns-reviewed
+  evidence_type: explanation
+  excerpt: The standard movement patterns used to reach and recover around the table, including side shuffle, single step, cross step, shuffle step, adjustment step, and hop step.
+  reason: Introduces the topic as common footwork patterns and then lists several named patterns.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: P9lUTLVEBPE
+    start_ms: 9280
+    end_ms: 14400
+    url: https://www.youtube.com/watch?v=P9lUTLVEBPE&t=9s
+    segment_ids:
+    - P9lUTLVEBPE:00004
+    - P9lUTLVEBPE:00005
+- id: 8fxjEROShs4-concept-footwork-patterns-reviewed
+  evidence_type: demonstration
+  excerpt: Using repeatable step patterns to enter the correct receiving position.
+  reason: The speaker demonstrates repeated footwork adjustments, including left foot forward on serve and right foot forward for backhand positioning.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 8fxjEROShs4
+    start_ms: 472500
+    end_ms: 499400
+    url: https://www.youtube.com/watch?v=8fxjEROShs4&t=472s
+    segment_ids:
+    - 8fxjEROShs4:00054
+    - 8fxjEROShs4:00055
+    - 8fxjEROShs4:00059
+    - 8fxjEROShs4:00060
+- id: 7N1IChCbVjk-concept-footwork-patterns-reviewed
+  evidence_type: definition
+  excerpt: A set of movement options used to transition between backhand and forehand positions depending on the incoming angle and distance.
+  reason: The speaker explicitly says there are three types of movements in this footwork and summarizes them as the rally options.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 7N1IChCbVjk
+    start_ms: 112233
+    end_ms: 117400
+    url: https://www.youtube.com/watch?v=7N1IChCbVjk&t=112s
+    segment_ids:
+    - 7N1IChCbVjk:00038
+    - 7N1IChCbVjk:00039
+- id: I-luBOL9IxI-concept-footwork-patterns-reviewed
+  evidence_type: definition
+  excerpt: Players should train footwork patterns such as the lunge step and side-shuffle to cover the table and recover into position.
+  reason: The speaker explicitly names the lunge step and side-shuffle as footwork patterns to train.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: I-luBOL9IxI
+    start_ms: 944533
+    end_ms: 961233
+    url: https://www.youtube.com/watch?v=I-luBOL9IxI&t=944s
+    segment_ids:
+    - I-luBOL9IxI:00217
+    - I-luBOL9IxI:00218
+    - I-luBOL9IxI:00219
+    - I-luBOL9IxI:00220
+- id: fX0-3KtEzUY-concept-footwork-patterns-reviewed
+  evidence_type: explanation
+  excerpt: The choice of movement pattern, including small shuffle steps for smaller adjustments and lunge steps for wide movement.
+  reason: The transcript contrasts shuffle steps for half-table movement with lunge steps for wider transitions such as backhand to forehand.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: fX0-3KtEzUY
+    start_ms: 154933
+    end_ms: 184400
+    url: https://www.youtube.com/watch?v=fX0-3KtEzUY&t=154s
+    segment_ids:
+    - fX0-3KtEzUY:00031
+    - fX0-3KtEzUY:00032
+    - fX0-3KtEzUY:00034
+    - fX0-3KtEzUY:00037
+- id: 8fxjEROShs4-concept-footwork-patterns-codex-reviewed
+  evidence_type: explanation
+  excerpt: During a serve, move the left foot forward. When preparing for a backhand position, move the right foot forward.
+  reason: These contiguous transcript segments explicitly state the left-foot-forward serve pattern and right-foot-forward backhand positioning pattern, directly supporting the existing Footwork patterns concept.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 8fxjEROShs4
+    start_ms: 472500
+    end_ms: 499400
+    url: https://www.youtube.com/watch?v=8fxjEROShs4&t=472s
+    segment_ids:
+    - 8fxjEROShs4:00054
+    - 8fxjEROShs4:00055
+    - 8fxjEROShs4:00056
+    - 8fxjEROShs4:00057
+    - 8fxjEROShs4:00058
+    - 8fxjEROShs4:00059
+    - 8fxjEROShs4:00060

@@ -7,14 +7,8 @@ aliases:
   - shuffle-step
 short_definition: A compact two-feet-together movement used for half-table play and general repositioning.
 evidence_summary: >-
-  Side-shuffle footwork brings together several connected ideas. The side-shuffle as the primary
-  half-table footwork and it with a single step in some drills. Small side-shuffle steps, two-foot
-  movement, and a low-glide pattern as the correct footwork approach. Small shuffle steps for
-  half-court movements and demonstrates shuffling to different positions. Small side-steps and
-  moving both feet together for forehand-side adjustments and out-of-reach balls. To avoid shuffle
-  steps and left-right shuffle makes the player a step too slow. Together, these principles show
-  how the topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:15bd8dbb894a85a08f614d72b5e909473306166e0c15eb0242e7178f993c6dda"
+  A compact two-feet-together movement used for half-table play and general repositioning.
+evidence_summary_source_hash: "sha256:0db3397ea00003eeebfbacc1bcf5661206539e6d8a4a8734c1a0fe80224c61b8"
 evidence_summary_generator: "deterministic"
 concept_type: practice
 facets:
@@ -27,10 +21,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 3e0a8bd15ff327a200110946f20ab0f14e2987110442624890c9178c8e70d4ff
-  prompt_version: candidate-review-v1
+  input_hash: sha256:446205f5d2d170d448483903a9406481908d8bbde5df2fe8a6944f41d16e9e01
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: 9bLlHR-vBAU-concept-side-shuffle-footwork-reviewed
     evidence_type: explanation
@@ -38,7 +35,7 @@ evidence:
     reason: The speaker explicitly names the side-shuffle as the primary half-table footwork and contrasts it with a single step in some drills.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 9bLlHR-vBAU
       start_ms: 278666
@@ -53,7 +50,7 @@ evidence:
     reason: The speaker names small side-shuffle steps, two-foot movement, and a low-glide pattern as the correct footwork approach.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Xt5RyN3qkSA
       start_ms: 146566
@@ -69,7 +66,7 @@ evidence:
     reason: The speaker explicitly instructs small shuffle steps for half-court movements and demonstrates shuffling to different positions.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: fX0-3KtEzUY
       start_ms: 161166
@@ -84,7 +81,7 @@ evidence:
     reason: The coach repeatedly prescribes small side-steps and moving both feet together for forehand-side adjustments and out-of-reach balls.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: TLXGDLGzZt8
       start_ms: 621866
@@ -100,7 +97,7 @@ evidence:
     reason: The speaker says to avoid shuffle steps and explains that left-right shuffle makes the player a step too slow.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: T6kwb4YehYA
       start_ms: 592433
@@ -110,3 +107,19 @@ evidence:
         - T6kwb4YehYA:00115
         - T6kwb4YehYA:00116
         - T6kwb4YehYA:00117
+  - id: 9bLlHR-vBAU-concept-side-shuffle-footwork-codex-reviewed
+    evidence_type: explanation
+    excerpt: 'The correct half-table movement is a small side-shuffle: both feet move together after the shot to create space, rather than using a single step.'
+    reason: These contiguous segments define the side-shuffle as a small movement with both feet moving together, apply it to half-table play, and contrast it with a single step.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 9bLlHR-vBAU
+      start_ms: 295233
+      end_ms: 317466
+      url: https://www.youtube.com/watch?v=9bLlHR-vBAU&t=295s
+      segment_ids:
+        - 9bLlHR-vBAU:00060
+        - 9bLlHR-vBAU:00061
+        - 9bLlHR-vBAU:00062

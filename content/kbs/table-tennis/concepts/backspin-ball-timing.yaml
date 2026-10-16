@@ -2,160 +2,168 @@ id: concept-backspin-ball-timing
 slug: backspin-ball-timing
 label: Backspin ball timing
 aliases:
-  - backspin timing
-short_definition: Timing a loop or attack against backspin based on the bounce phase, especially taking the ball earlier before it jams the player.
+- backspin timing
+short_definition: Timing a loop against backspin by meeting the ball as the stroke moves up and forward.
 evidence_summary: >-
-  Backspin ball timing brings together several connected ideas. From topspin timing to backspin
-  receive/loop timing and waiting too long causes jamming, especially on receive to the forehand.
-  Rising point, peak, and falling point timing and links each to different push choices. How low
-  to let the ball drop and answers to wait for it to drop more before contact. Incoming backspin
-  changes how you should time the loop, and that rushing against heavy spin leads to errors.
-  Proper timing means intercepting the ball during the stroke and meeting it in the middle of the
-  motion. Push rhythm must be mastered for topspin and backspin balls and recommends contacting
-  during the early descent instead of rushing. Heavy backspin drops quickly and that, in pushing
-  rallies, attacking in the early descending phase is more effective than waiting for the peak.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:ae688ebcd22945efc9bfdc339858819e8a8668c242c1b7365ee5421cbfd2d350"
-evidence_summary_generator: "deterministic"
+  To time a loop against backspin, intercept the ball during the stroke. As your backhand or forehand moves up and forward, meet the ball midway through that motion; this lets you time the shot and brush effectively.
 concept_type: concept
 facets:
   category:
-    - stroke
+  - stroke
   spin:
-    - backspin
-  level:
-    - intermediate
-difficulty: intermediate
+  - backspin
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 35b40a738d5caaef78c94749b6737cf399d9728df51bff175a70d634fa2d8b28
-  prompt_version: candidate-review-v1
+  input_hash: sha256:99d537eba6fceb64dc4f9824e547aaabf70fd09ccbd7ff10803e06ce0e3eb88e
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: PFPu_pKZ9TI-concept-backspin-timing-reviewed
-    evidence_type: explanation
-    excerpt: Timing a loop or attack against backspin based on the bounce phase, especially taking the ball earlier before it jams the player.
-    reason: The speaker shifts from topspin timing to backspin receive/loop timing and says waiting too long causes jamming, especially on receive to the forehand.
-    confidence: 0.86
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: PFPu_pKZ9TI
-      start_ms: 187959
-      end_ms: 216600
-      url: https://www.youtube.com/watch?v=PFPu_pKZ9TI&t=187s
-      segment_ids:
-        - PFPu_pKZ9TI:00061
-        - PFPu_pKZ9TI:00062
-        - PFPu_pKZ9TI:00063
-        - PFPu_pKZ9TI:00064
-        - PFPu_pKZ9TI:00065
-        - PFPu_pKZ9TI:00066
-        - PFPu_pKZ9TI:00067
-        - PFPu_pKZ9TI:00068
-        - PFPu_pKZ9TI:00069
-  - id: WcQLHn2Fafw-concept-backspin-ball-timing-reviewed
-    evidence_type: definition
-    excerpt: Selecting push timing based on the bounce phase and ball descent, including taking the ball on the rise, at the peak, or on the falling phase.
-    reason: The speaker distinguishes rising point, peak, and falling point timing and links each to different push choices.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: WcQLHn2Fafw
-      start_ms: 414966
-      end_ms: 440266
-      url: https://www.youtube.com/watch?v=WcQLHn2Fafw&t=414s
-      segment_ids:
-        - WcQLHn2Fafw:00093
-        - WcQLHn2Fafw:00094
-        - WcQLHn2Fafw:00095
-        - WcQLHn2Fafw:00097
-        - WcQLHn2Fafw:00098
-  - id: 60_qpMsHRvQ-concept-backspin-ball-timing-reviewed
-    evidence_type: definition
-    excerpt: Timing for backspin balls should be slowed down so contact happens later in the ball's descent rather than at the peak or early descent.
-    reason: The speaker directly asks how low to let the ball drop and answers to wait for it to drop more before contact.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 60_qpMsHRvQ
-      start_ms: 54133
-      end_ms: 63733
-      url: https://www.youtube.com/watch?v=60_qpMsHRvQ&t=54s
-      segment_ids:
-        - 60_qpMsHRvQ:00012
-        - 60_qpMsHRvQ:00013
-        - 60_qpMsHRvQ:00014
-  - id: 8143qxSjk5A-concept-backspin-ball-timing-reviewed
-    evidence_type: explanation
-    excerpt: Adapting loop timing to a backspin ball by waiting for the appropriate descending phase instead of rushing the ball.
-    reason: The speaker says incoming backspin changes how you should time the loop, and that rushing against heavy spin leads to errors.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 8143qxSjk5A
-      start_ms: 118800
-      end_ms: 140700
-      url: https://www.youtube.com/watch?v=8143qxSjk5A&t=118s
-      segment_ids:
-        - 8143qxSjk5A:00026
-        - 8143qxSjk5A:00027
-        - 8143qxSjk5A:00028
-        - 8143qxSjk5A:00029
-        - 8143qxSjk5A:00031
-  - id: EjtP5uCaULU-concept-backspin-ball-timing-reviewed
-    evidence_type: explanation
-    excerpt: Timing the loop against backspin by meeting the ball during the swing path rather than colliding from behind it.
-    reason: The speaker says proper timing means intercepting the ball during the stroke and meeting it in the middle of the motion.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: EjtP5uCaULU
-      start_ms: 262066
-      end_ms: 278566
-      url: https://www.youtube.com/watch?v=EjtP5uCaULU&t=262s
-      segment_ids:
-        - EjtP5uCaULU:00061
-        - EjtP5uCaULU:00063
-        - EjtP5uCaULU:00064
-  - id: Xho60DR74X0-concept-backspin-ball-timing-reviewed
-    evidence_type: explanation
-    excerpt: Timing the push on a backspin ball during the early descent rather than rushing contact too early.
-    reason: The speaker says push rhythm must be mastered for topspin and backspin balls and recommends contacting during the early descent instead of rushing.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: Xho60DR74X0
-      start_ms: 16400
-      end_ms: 44733
-      url: https://www.youtube.com/watch?v=Xho60DR74X0&t=16s
-      segment_ids:
-        - Xho60DR74X0:00004
-        - Xho60DR74X0:00006
-        - Xho60DR74X0:00007
-        - Xho60DR74X0:00008
-        - Xho60DR74X0:00009
-  - id: rOMRGvlgAAU-concept-backspin-ball-timing-reviewed
-    evidence_type: explanation
-    excerpt: Timing choices for dealing with a backspin ball, especially when it drops quickly and may need early descending contact.
-    reason: The speaker explains that heavy backspin drops quickly and that, in pushing rallies, attacking in the early descending phase is more effective than waiting for the peak.
-    confidence: 0.91
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: rOMRGvlgAAU
-      start_ms: 236566
-      end_ms: 258333
-      url: https://www.youtube.com/watch?v=rOMRGvlgAAU&t=236s
-      segment_ids:
-        - rOMRGvlgAAU:00048
-        - rOMRGvlgAAU:00049
-        - rOMRGvlgAAU:00050
-        - rOMRGvlgAAU:00052
+- id: PFPu_pKZ9TI-concept-backspin-timing-reviewed
+  evidence_type: explanation
+  excerpt: Timing a loop or attack against backspin based on the bounce phase, especially taking the ball earlier before it jams the player.
+  reason: The speaker shifts from topspin timing to backspin receive/loop timing and says waiting too long causes jamming, especially on receive to the forehand.
+  confidence: 0.86
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: PFPu_pKZ9TI
+    start_ms: 187959
+    end_ms: 216600
+    url: https://www.youtube.com/watch?v=PFPu_pKZ9TI&t=187s
+    segment_ids:
+    - PFPu_pKZ9TI:00061
+    - PFPu_pKZ9TI:00062
+    - PFPu_pKZ9TI:00063
+    - PFPu_pKZ9TI:00064
+    - PFPu_pKZ9TI:00065
+    - PFPu_pKZ9TI:00066
+    - PFPu_pKZ9TI:00067
+    - PFPu_pKZ9TI:00068
+    - PFPu_pKZ9TI:00069
+- id: WcQLHn2Fafw-concept-backspin-ball-timing-reviewed
+  evidence_type: definition
+  excerpt: Selecting push timing based on the bounce phase and ball descent, including taking the ball on the rise, at the peak, or on the falling phase.
+  reason: The speaker distinguishes rising point, peak, and falling point timing and links each to different push choices.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: WcQLHn2Fafw
+    start_ms: 414966
+    end_ms: 440266
+    url: https://www.youtube.com/watch?v=WcQLHn2Fafw&t=414s
+    segment_ids:
+    - WcQLHn2Fafw:00093
+    - WcQLHn2Fafw:00094
+    - WcQLHn2Fafw:00095
+    - WcQLHn2Fafw:00097
+    - WcQLHn2Fafw:00098
+- id: 60_qpMsHRvQ-concept-backspin-ball-timing-reviewed
+  evidence_type: definition
+  excerpt: Timing for backspin balls should be slowed down so contact happens later in the ball's descent rather than at the peak or early descent.
+  reason: The speaker directly asks how low to let the ball drop and answers to wait for it to drop more before contact.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 60_qpMsHRvQ
+    start_ms: 54133
+    end_ms: 63733
+    url: https://www.youtube.com/watch?v=60_qpMsHRvQ&t=54s
+    segment_ids:
+    - 60_qpMsHRvQ:00012
+    - 60_qpMsHRvQ:00013
+    - 60_qpMsHRvQ:00014
+- id: 8143qxSjk5A-concept-backspin-ball-timing-reviewed
+  evidence_type: explanation
+  excerpt: Adapting loop timing to a backspin ball by waiting for the appropriate descending phase instead of rushing the ball.
+  reason: The speaker says incoming backspin changes how you should time the loop, and that rushing against heavy spin leads to errors.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 8143qxSjk5A
+    start_ms: 118800
+    end_ms: 140700
+    url: https://www.youtube.com/watch?v=8143qxSjk5A&t=118s
+    segment_ids:
+    - 8143qxSjk5A:00026
+    - 8143qxSjk5A:00027
+    - 8143qxSjk5A:00028
+    - 8143qxSjk5A:00029
+    - 8143qxSjk5A:00031
+- id: EjtP5uCaULU-concept-backspin-ball-timing-reviewed
+  evidence_type: explanation
+  excerpt: Timing the loop against backspin by meeting the ball during the swing path rather than colliding from behind it.
+  reason: The speaker says proper timing means intercepting the ball during the stroke and meeting it in the middle of the motion.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: EjtP5uCaULU
+    start_ms: 262066
+    end_ms: 278566
+    url: https://www.youtube.com/watch?v=EjtP5uCaULU&t=262s
+    segment_ids:
+    - EjtP5uCaULU:00061
+    - EjtP5uCaULU:00063
+    - EjtP5uCaULU:00064
+- id: Xho60DR74X0-concept-backspin-ball-timing-reviewed
+  evidence_type: explanation
+  excerpt: Timing the push on a backspin ball during the early descent rather than rushing contact too early.
+  reason: The speaker says push rhythm must be mastered for topspin and backspin balls and recommends contacting during the early descent instead of rushing.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Xho60DR74X0
+    start_ms: 16400
+    end_ms: 44733
+    url: https://www.youtube.com/watch?v=Xho60DR74X0&t=16s
+    segment_ids:
+    - Xho60DR74X0:00004
+    - Xho60DR74X0:00006
+    - Xho60DR74X0:00007
+    - Xho60DR74X0:00008
+    - Xho60DR74X0:00009
+- id: rOMRGvlgAAU-concept-backspin-ball-timing-reviewed
+  evidence_type: explanation
+  excerpt: Timing choices for dealing with a backspin ball, especially when it drops quickly and may need early descending contact.
+  reason: The speaker explains that heavy backspin drops quickly and that, in pushing rallies, attacking in the early descending phase is more effective than waiting for the peak.
+  confidence: 0.91
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: rOMRGvlgAAU
+    start_ms: 236566
+    end_ms: 258333
+    url: https://www.youtube.com/watch?v=rOMRGvlgAAU&t=236s
+    segment_ids:
+    - rOMRGvlgAAU:00048
+    - rOMRGvlgAAU:00049
+    - rOMRGvlgAAU:00050
+    - rOMRGvlgAAU:00052
+- id: EjtP5uCaULU-concept-backspin-ball-timing-codex-reviewed
+  evidence_type: explanation
+  excerpt: To time a loop against backspin, meet the ball in the middle of the stroke as the racket moves up and forward.
+  reason: Meet the ball in the middle of the up-and-forward stroke to time and brush a loop against backspin.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: EjtP5uCaULU
+    start_ms: 255200
+    end_ms: 278566
+    url: https://www.youtube.com/watch?v=EjtP5uCaULU&t=255s
+    segment_ids:
+    - EjtP5uCaULU:00059
+    - EjtP5uCaULU:00060
+    - EjtP5uCaULU:00061
+    - EjtP5uCaULU:00062
+    - EjtP5uCaULU:00063
+    - EjtP5uCaULU:00064

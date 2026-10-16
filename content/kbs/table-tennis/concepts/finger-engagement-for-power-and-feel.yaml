@@ -2,66 +2,87 @@ id: concept-finger-engagement-for-power-and-feel
 slug: finger-engagement-for-power-and-feel
 label: Finger engagement for power and feel
 aliases:
-  - engage your fingers
-  - finger contact gives clear feel
-  - power from your fingers
-short_definition: Actively engaging the fingers on the racket to improve tactile feel, stability, and power generation instead of using only the arm.
+- engage your fingers
+- finger contact gives clear feel
+- power from your fingers
+short_definition: Engaging the fingers on the racket provides clear feel for control and power generation instead of using only the arm.
 evidence_summary: >-
-  Finger engagement for power and feel brings together several connected ideas. Feeling the
-  fingers working is what distinguishes proper control and power generation from merely using the
-  arm. From thumb to fingers, saying the shot is about the fingers and that light finger contact
-  prevents a firm grip and good looping. Together, these principles show how the topic is applied
-  in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:f5dc008ef03776888ed550a59251084cbbdd4ae318c1422be45d97404c4e312c"
-evidence_summary_generator: "deterministic"
+  Finger contact with the racket provides clear feel for control and power generation. Hand and wrist power drive the action's explosiveness; arm movement produces a stable shot, while fingers and wrist add quickness.
 concept_type: principle
 facets:
   category:
-    - fundamentals
-  side:
-    - neutral
-    - forehand
-    - backhand
-  level:
-    - beginner
-    - intermediate
-difficulty: intermediate
+  - fundamentals
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 57c3da752d04fa394dfc9693e9e96bd1e5dd8f52dab56a71e12d3d3a24e913e7
-  prompt_version: candidate-review-v1
+  input_hash: sha256:cee1b3d6f184b396ab0a78896520eee8008acdf743a3d0c19e87a40b44c4be7f
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: Cf-EPAWd_zQ-new-finger-engagement-for-power-and-feel-reviewed
-    evidence_type: explanation
-    excerpt: Actively engaging the fingers on the racket to improve tactile feel, stability, and power generation instead of using only the arm.
-    reason: The speaker explains that feeling the fingers working is what distinguishes proper control and power generation from merely using the arm.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: Cf-EPAWd_zQ
-      start_ms: 397733
-      end_ms: 419333
-      url: https://www.youtube.com/watch?v=Cf-EPAWd_zQ&t=397s
-      segment_ids:
-        - Cf-EPAWd_zQ:00057
-        - Cf-EPAWd_zQ:00058
-        - Cf-EPAWd_zQ:00059
-  - id: SBpcji5Ah_w-concept-finger-engagement-for-power-and-feel-reviewed
-    evidence_type: explanation
-    excerpt: Using the fingers actively rather than resting lightly, so the racket can be gripped firmly and power can be transferred effectively.
-    reason: The speaker shifts from thumb to fingers, saying the shot is about the fingers and that light finger contact prevents a firm grip and good looping.
-    confidence: 0.88
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: SBpcji5Ah_w
-      start_ms: 51100
-      end_ms: 72633
-      url: https://www.youtube.com/watch?v=SBpcji5Ah_w&t=51s
-      segment_ids:
-        - SBpcji5Ah_w:00005
-        - SBpcji5Ah_w:00006
-        - SBpcji5Ah_w:00007
+- id: Cf-EPAWd_zQ-new-finger-engagement-for-power-and-feel-reviewed
+  evidence_type: explanation
+  excerpt: Actively engaging the fingers on the racket to improve tactile feel, stability, and power generation instead of using only the arm.
+  reason: The speaker explains that feeling the fingers working is what distinguishes proper control and power generation from merely using the arm.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Cf-EPAWd_zQ
+    start_ms: 397733
+    end_ms: 419333
+    url: https://www.youtube.com/watch?v=Cf-EPAWd_zQ&t=397s
+    segment_ids:
+    - Cf-EPAWd_zQ:00057
+    - Cf-EPAWd_zQ:00058
+    - Cf-EPAWd_zQ:00059
+- id: SBpcji5Ah_w-concept-finger-engagement-for-power-and-feel-reviewed
+  evidence_type: explanation
+  excerpt: Using the fingers actively rather than resting lightly, so the racket can be gripped firmly and power can be transferred effectively.
+  reason: The speaker shifts from thumb to fingers, saying the shot is about the fingers and that light finger contact prevents a firm grip and good looping.
+  confidence: 0.88
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: SBpcji5Ah_w
+    start_ms: 51100
+    end_ms: 72633
+    url: https://www.youtube.com/watch?v=SBpcji5Ah_w&t=51s
+    segment_ids:
+    - SBpcji5Ah_w:00005
+    - SBpcji5Ah_w:00006
+    - SBpcji5Ah_w:00007
+- id: Cf-EPAWd_zQ-new-finger-engagement-for-power-and-feel-codex-reviewed
+  evidence_type: explanation
+  excerpt: Good players engage their fingers because direct finger contact with the racket provides clear feel for control and power generation.
+  reason: Engage your fingers so their direct contact with the racket gives you clear feel for control and power generation.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: Cf-EPAWd_zQ
+    start_ms: 283033
+    end_ms: 304133
+    url: https://www.youtube.com/watch?v=Cf-EPAWd_zQ&t=283s
+    segment_ids:
+    - Cf-EPAWd_zQ:00043
+    - Cf-EPAWd_zQ:00044
+    - Cf-EPAWd_zQ:00045
+- id: yF675Tey81g-concept-finger-and-wrist-driven-explosiveness-codex-reviewed
+  evidence_type: explanation
+  excerpt: Hand and wrist power drive the explosiveness of the action; arm movement produces a stable shot, while using the fingers and wrist adds quickness.
+  reason: Arm movement produces a stable shot, while using the fingers and wrist adds quickness and hand and wrist power drive the action's explosiveness.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: yF675Tey81g
+    start_ms: 319440
+    end_ms: 329100
+    url: https://www.youtube.com/watch?v=yF675Tey81g&t=319s
+    segment_ids:
+    - yF675Tey81g:00070
+    - yF675Tey81g:00071

@@ -7,17 +7,9 @@ aliases:
   - serve low
 short_definition: Keeping the ball and its trajectory low to force weaker, slower, or more error-prone opponent attacks.
 evidence_summary: >-
-  Keep the ball low brings together several connected ideas. A high ball invites smashes, a low
-  ball slows the loop, and the trajectory should always be kept low. The finish is repeatedly
-  constrained to net height, low position, and downward motion. The stroke height must be
-  controlled and that the resulting ball should be low and spinny. To lower the body, keep the
-  body low, and stay crouched during receive and looping. Popped-up pushes get attacked and
-  repeatedly instructs to keep the trajectory low and brush the very bottom to stay out of the
-  net. Low returns and low pushes to denying speed and easy attacks. The primary goal when pushing
-  is to keep the ball low, skimming the net. Low contact and low-to-high brushing as the basis of
-  the serve. Additional points reinforce the same theme. Together, these principles show how the
-  topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:9c15b8b2aa478ec41da07cae9523b5545af45eaefc84e22af6356e89c4907bae"
+  Keeping the ball and its trajectory low to force weaker, slower, or more error-prone opponent
+  attacks.
+evidence_summary_source_hash: "sha256:09940c168429bed1e52af9a17fe758d75b80daf38760b65de9f66c9a5cf0c42c"
 evidence_summary_generator: "deterministic"
 concept_type: concept
 facets:
@@ -39,10 +31,13 @@ facets:
 difficulty: beginner
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 0087c09636396bd9833f43db43ea4740de2c8219a1d60e87d05c8c0123ba4279
-  prompt_version: candidate-review-v1
+  input_hash: sha256:b5fb54d3c62f1d2b679d61ddafa503f2253bc1090d206d2f2f74ecd67580e921
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: wd_E9NZBVtU-new-keep-ball-low-reviewed
     evidence_type: explanation
@@ -50,7 +45,7 @@ evidence:
     reason: The speaker says a high ball invites smashes, a low ball slows the loop, and the trajectory should always be kept low.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: wd_E9NZBVtU
       start_ms: 9100
@@ -68,7 +63,7 @@ evidence:
     reason: The speaker repeatedly says to serve low and keep the arc low.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: rdMkkX_p7e0
       start_ms: 350700
@@ -85,7 +80,7 @@ evidence:
     reason: The transcript repeatedly states that the arc and contact point must be low and close to the body.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: JLGqLr-9-2w
       start_ms: 279366
@@ -100,7 +95,7 @@ evidence:
     reason: The finish is repeatedly constrained to net height, low position, and downward motion.
     confidence: 0.88
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: pRuBdX0ZLgg
       start_ms: 493500
@@ -117,7 +112,7 @@ evidence:
     reason: The speaker repeatedly states that low trajectory is the most important element of the serve and explains why it improves effectiveness.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: GOAyEFoSibE
       start_ms: 225133
@@ -134,7 +129,7 @@ evidence:
     reason: The speaker repeatedly frames low trajectory as a primary goal and explains how racket-tip and angle adjustments keep the return low.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: WcQLHn2Fafw
       start_ms: 644466
@@ -149,7 +144,7 @@ evidence:
     reason: The teacher directly says not to change the height and that the ball/action should stay small and below the white line.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: c1OUlMn9IFM
       start_ms: 475266
@@ -165,7 +160,7 @@ evidence:
     reason: The speaker says the stroke height must be controlled and that the resulting ball should be low and spinny.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: J6xE5nBqDeI
       start_ms: 243566
@@ -181,7 +176,7 @@ evidence:
     reason: The speaker explicitly says to keep the ball's arc low and contact around net height.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: tqoyTAIjdEM
       start_ms: 18033
@@ -196,7 +191,7 @@ evidence:
     reason: The speaker directly instructs to keep the upper trajectory low and says shorter is better when making heavy spin serves.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: rP-4JEt9D5Q
       start_ms: 138280
@@ -213,7 +208,7 @@ evidence:
     reason: The speaker explicitly instructs to lower the body, keep the body low, and stay crouched during receive and looping.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8fxjEROShs4
       start_ms: 925666
@@ -228,7 +223,7 @@ evidence:
     reason: The speaker says the ball need not be high, that quality drops if it is, and that dropping the ball first lowers the opponent's attacking quality.
     confidence: 0.92
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: QTI4evyXCLM
       start_ms: 195866
@@ -246,7 +241,7 @@ evidence:
     reason: The speaker tells the learner to aim lower and repeatedly emphasizes that the ball should stay low and stable.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: pxxgpWNbXSM
       start_ms: 282200
@@ -261,7 +256,7 @@ evidence:
     reason: The speaker states that a quality push should keep trajectory low and that the side-swipe keeps the ball very low.
     confidence: 0.88
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: DShIvrh0Yss
       start_ms: 520933
@@ -275,7 +270,7 @@ evidence:
     reason: The speaker says popped-up pushes get attacked and repeatedly instructs to keep the trajectory low and brush the very bottom to stay out of the net.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: R_MLRGrJlsM
       start_ms: 448766
@@ -292,7 +287,7 @@ evidence:
     reason: The speaker says to control arc height, make the arc shorter when long, higher when into the net, and specifically keep the ball low and long.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ZVPHX5Av9Cw
       start_ms: 168000
@@ -309,7 +304,7 @@ evidence:
     reason: The speaker says high, slow, or spinless pushes get attacked and that a low trajectory prevents direct attack.
     confidence: 0.92
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ihrv3kBFb-U
       start_ms: 124933
@@ -324,7 +319,7 @@ evidence:
     reason: The speaker directly ties low returns and low pushes to denying speed and easy attacks.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: q70a9LCojco
       start_ms: 215866
@@ -340,7 +335,7 @@ evidence:
     reason: The speaker says to use the white tape as a height reference, avoid popping the ball up, and notes that the described return stays very low and dead.
     confidence: 0.92
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: IgnpsIZW3tM
       start_ms: 234266
@@ -355,7 +350,7 @@ evidence:
     reason: The speaker repeatedly says a truly low ball is difficult to attack and that low short serves are safer to receive and attack from.
     confidence: 0.91
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: OQ7fB6yS8Fk
       start_ms: 59466
@@ -372,7 +367,7 @@ evidence:
     reason: The speaker repeatedly states the serve must go forward and downward together to stay low and spinny.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: evEaxXmwJ2E
       start_ms: 566966
@@ -389,7 +384,7 @@ evidence:
     reason: The speaker explicitly says the primary goal when pushing is to keep the ball low, skimming the net.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: qr632K778Cc
       start_ms: 212200
@@ -405,7 +400,7 @@ evidence:
     reason: The speaker says the second key element of short serve quality is keeping it low and skimming the net.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 4t2Y1_zWPdI
       start_ms: 234333
@@ -420,7 +415,7 @@ evidence:
     reason: The speaker contrasts a low-risk close-table loop with flat hitting and repeatedly warns against overly upward motion.
     confidence: 0.87
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: KYqNsz4vOmI
       start_ms: 21366
@@ -434,7 +429,7 @@ evidence:
     reason: The speaker repeatedly emphasizes low contact and low-to-high brushing as the basis of the serve.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: s6lj1otqR90
       start_ms: 339233
@@ -445,3 +440,22 @@ evidence:
         - s6lj1otqR90:00109
         - s6lj1otqR90:00112
         - s6lj1otqR90:00113
+  - id: b8ivXEfdO7c-concept-hook-serve-low-trajectory-codex-reviewed
+    evidence_type: explanation
+    excerpt: A short hook serve should stay low without an obvious pop-up, hiding its sidespin-topspin until contact and making an aggressive flick harder; the same principle applies to long serves.
+    reason: These contiguous segments explain that a short serve with an excessively high trajectory invites an aggressive flick, while a hidden-kick trajectory conceals the sidespin-topspin. This directly supports keeping the serve low and is redundant with the existing concept.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: b8ivXEfdO7c
+      start_ms: 551333
+      end_ms: 575600
+      url: https://www.youtube.com/watch?v=b8ivXEfdO7c&t=551s
+      segment_ids:
+        - b8ivXEfdO7c:00118
+        - b8ivXEfdO7c:00119
+        - b8ivXEfdO7c:00120
+        - b8ivXEfdO7c:00121
+        - b8ivXEfdO7c:00122
+        - b8ivXEfdO7c:00123

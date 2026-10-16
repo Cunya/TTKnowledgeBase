@@ -6,15 +6,9 @@ aliases:
   - keep the wrist firm
 short_definition: Keeping the wrist braced and hooked rather than floppy, so the grip remains stable when striking and can support forehand-to-backhand transitions.
 evidence_summary: >-
-  Wrist hook and stability brings together several connected ideas. The wrist can be held firm and
-  hooked, and that this stability supports forceful actions like twisting and ripping without
-  problems. Separation of wrist and forearm and the wrist extension sequence. Wrist position
-  dictates the stroke structure and that hooked or cocked wrists make the stroke unstable. Not to
-  let the wrist flop and the spin secret as compact, tight, sudden. A genuine hook, says not to
-  just push, and later repeats maintaining a deep wrist hook through the motion. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:4662ad82595b96989a24d69b2574edc45eea9190aaa9aeba9a719488c95e5ba8"
+  Keeping the wrist braced and hooked rather than floppy, so the grip remains stable when striking
+  and can support forehand-to-backhand transitions.
+evidence_summary_source_hash: "sha256:1e02c54f09cdb144ee54b201887922b84a8e40aeeaaf4db6dcf0fa5c8d5da900"
 evidence_summary_generator: "deterministic"
 concept_type: technique
 facets:
@@ -27,10 +21,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 1dc7720de73eef1098107308d9d48447aca9f3edd2bdcd140b3c505ff5fd29f9
-  prompt_version: candidate-review-v1
+  input_hash: sha256:3e0589168f8e0411c237e524601775e1539144a09fa606bee0a8688e0253a10e
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: ub4GfFm_bN4-concept-wrist-hook-and-stability-reviewed
     evidence_type: explanation
@@ -38,7 +35,7 @@ evidence:
     reason: The speaker says the wrist can be held firm and hooked, and that this stability supports forceful actions like twisting and ripping without problems.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ub4GfFm_bN4
       start_ms: 239166
@@ -59,7 +56,7 @@ evidence:
     reason: The speaker explicitly instructs separation of wrist and forearm and describes the wrist extension sequence.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: dMRsujoVIj4
       start_ms: 292200
@@ -76,7 +73,7 @@ evidence:
     reason: The speaker explains that wrist position dictates the stroke structure and that hooked or cocked wrists make the stroke unstable.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8TtaPJW3_94
       start_ms: 109500
@@ -91,7 +88,7 @@ evidence:
     reason: The transcript explicitly says not to let the wrist flop and describes the spin secret as compact, tight, sudden.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: xyw4eE67NI4
       start_ms: 463600
@@ -108,7 +105,7 @@ evidence:
     reason: The speaker emphasizes a genuine hook, says not to just push, and later repeats maintaining a deep wrist hook through the motion.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: BpKGpKwopDE
       start_ms: 60400
@@ -117,3 +114,18 @@ evidence:
       segment_ids:
         - BpKGpKwopDE:00012
         - BpKGpKwopDE:00016
+  - id: 2DXviJQOA5M-concept-wrist-hook-and-stability-codex-reviewed
+    evidence_type: correction
+    excerpt: Whether it's a forehand loop or a backhand loop, your wrist must stay fixed.
+    reason: These contiguous segments directly state that the wrist must stay fixed during both forehand and backhand loops, matching the existing concept.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 2DXviJQOA5M
+      start_ms: 651200
+      end_ms: 670320
+      url: https://www.youtube.com/watch?v=2DXviJQOA5M&t=651s
+      segment_ids:
+        - 2DXviJQOA5M:00083
+        - 2DXviJQOA5M:00084

@@ -1,0 +1,9 @@
+# Session notes — 2026-10-14 23:00 EEST
+
+- The middle-target plan needs a primary finding on the unsupported sidespin label, regardless of the model's supported verdict. Primary review must remain stronger than automatic approval.
+- Implemented cache/apply guards include needs-fix notes supplied in model input; content/source fingerprints alone do not capture later editorial findings. Twenty-three repair regressions and Ruff pass.
+- Five more complete article repairs applied; nine supported articles, 368 pending, one needs_fix. The complete original middle-target primary review is saved, overriding the unsupported model label. Worker67014 now replans the large article and confirmed middle-target findings; valid sources/budgets are unchanged, old jobs retained in history.
+- Schema now prevents duplicate field replacement values and quarantine combined with rewriting. Independently verify every resulting nonvisual unit against actual selected rows. Oversized proof, footage and semantic uncertainty remain exceptions.
+- Contract1.0.6 fixes contradictory verifier context: article heading/definition now mirror proposed unit values, with original_topic labeled as old editorial context. Twenty-four repair tests and Ruff pass. Worker24063 replays the large article and next pending plans under this contract; old results stay in history and cannot be applied as current verification.
+- Current contract1.0.7 also makes quarantine review_status match actual application. Wire responses require every named unit, normalized back to list checkpoints. Twenty-five repair tests/Ruff passed; worker10988 is the current live replay. Seven new article repairs applied so far, including the narrowed middle-target label; final release gate remains pending.
+- Final release gate, fresh coverage/backlog, rebuilt HTML and affected routes required before handing off this continuation.

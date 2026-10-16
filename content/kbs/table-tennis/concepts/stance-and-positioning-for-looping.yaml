@@ -7,21 +7,9 @@ aliases:
   - body position
 short_definition: Having the correct stance and body position before looping so the shot can be executed effectively.
 evidence_summary: >-
-  Stance and positioning for looping brings together several connected ideas. Poor position and
-  inconsistent positioning prevent effective execution and repeatedly points to stance/body
-  position as the explanation. Effective looping and rip execution to lowering the center of
-  gravity, leaning forward, and keeping the body compact and prepared to move continuously. A
-  traditional loop stance about one meter from the table, recommends a parallel stance, and notes
-  that distance affects the downward racket head. Correct looping mechanics to open stance, lower
-  body, lunge position, and stepping in for short balls. The issue as positioning relative to the
-  ball, not spin, and notes that reaching causes a miss. Successful looping to wider steps,
-  bringing the ball into the body's center, and later says short-ball play fails when the body
-  stays upright and not over the table. To body position and many errors come from not getting set
-  before the stroke. The left-foot-forward/right-foot-back stance and recommends a parallel or
-  right-foot-forward stance for forehand looping. Additional points reinforce the same theme.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:781da01e10af910339460b2d1f07570eb7a6c918f47e8ba8e56267f0da5900ea"
+  Having the correct stance and body position before looping so the shot can be executed
+  effectively.
+evidence_summary_source_hash: "sha256:463c4c56197b8df83fa3bf3a756de103edb9006665f4af8ae41d92e9cb9d71d3"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -33,10 +21,13 @@ facets:
 difficulty: beginner
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: cc44785c9899e8e46b903eb93778fe6ba9184271887e80d9159016b9344ab8a7
-  prompt_version: candidate-review-v1
+  input_hash: sha256:c13d0f7ea4b4cf502a8b0a862e78d99ee10ba3ced3ba340c49e1016f3afbf0ec
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: s2VuRO66usY-concept-stance-and-positioning-for-looping-reviewed
     evidence_type: explanation
@@ -44,7 +35,7 @@ evidence:
     reason: The speaker says poor position and inconsistent positioning prevent effective execution and repeatedly points to stance/body position as the explanation.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: s2VuRO66usY
       start_ms: 374566
@@ -60,7 +51,7 @@ evidence:
     reason: The speaker ties effective looping and rip execution to lowering the center of gravity, leaning forward, and keeping the body compact and prepared to move continuously.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: YR4GEvuI9Vc
       start_ms: 676833
@@ -77,7 +68,7 @@ evidence:
     reason: The speaker stresses giving yourself space, stepping in when short, moving back when jammed, and prioritizing the correct position before looping.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: NgfykAQZCpw
       start_ms: 537433
@@ -93,7 +84,7 @@ evidence:
     reason: The transcript gives a traditional loop stance about one meter from the table, recommends a parallel stance, and notes that distance affects the downward racket head.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 3EtitCzSYqY
       start_ms: 148200
@@ -109,7 +100,7 @@ evidence:
     reason: The speaker links correct looping mechanics to open stance, lower body, lunge position, and stepping in for short balls.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: DfQ_yBSS_bk
       start_ms: 384066
@@ -126,7 +117,7 @@ evidence:
     reason: The speaker frames the issue as positioning relative to the ball, not spin, and notes that reaching causes a miss.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: xAxrT5EE-mY
       start_ms: 20000
@@ -142,7 +133,7 @@ evidence:
     reason: The speaker links successful looping to wider steps, bringing the ball into the body's center, and later says short-ball play fails when the body stays upright and not over the table.
     confidence: 0.91
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 1XgvgkJ8EfM
       start_ms: 344320
@@ -157,7 +148,7 @@ evidence:
     reason: The speaker contrasts amateurs standing too close with pros standing farther back to avoid being jammed and to create the correct contact point.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 52Lq-QQGqpw
       start_ms: 646900
@@ -172,7 +163,7 @@ evidence:
     reason: The speaker transitions to body position and says many errors come from not getting set before the stroke.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: fAEn9wkWGd8
       start_ms: 408233
@@ -188,7 +179,7 @@ evidence:
     reason: The speaker explicitly rejects the left-foot-forward/right-foot-back stance and recommends a parallel or right-foot-forward stance for forehand looping.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: czp2jsURYQk
       start_ms: 14400
@@ -198,3 +189,37 @@ evidence:
         - czp2jsURYQk:00003
         - czp2jsURYQk:00004
         - czp2jsURYQk:00111
+  - id: czp2jsURYQk-concept-stance-and-positioning-for-looping-codex-reviewed
+    evidence_type: explanation
+    excerpt: The traditional left-foot-forward, right-foot-back stance is no longer optimal for the forehand; use a parallel stance or place the right foot slightly forward.
+    reason: This contiguous 16.5-second span introduces the stance topic, rejects the traditional foot arrangement, and directly recommends a parallel or right-foot-forward stance for forehand power transfer.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: czp2jsURYQk
+      start_ms: 12000
+      end_ms: 30866
+      url: https://www.youtube.com/watch?v=czp2jsURYQk&t=12s
+      segment_ids:
+        - czp2jsURYQk:00002
+        - czp2jsURYQk:00003
+        - czp2jsURYQk:00004
+        - czp2jsURYQk:00005
+  - id: mWehvleIbTk-concept-ready-position-codex-reviewed
+    evidence_type: explanation
+    excerpt: Many amateur players stand too close to the center, causing them to loop from the side of their body. Even we professional players don't dare to loop from the side of our body, so don't attempt the impossible. The backswing for this shot should always be kept within the frame of your body. I feel the racket should be near my left thigh, because if it's straight in front, it's very difficult to create a good arc.
+    reason: These contiguous segments directly explain the stance and body-relative backswing position for an effective backhand loop, matching the existing concept “Stance and positioning for looping.”
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: mWehvleIbTk
+      start_ms: 98466
+      end_ms: 126833
+      url: https://www.youtube.com/watch?v=mWehvleIbTk&t=98s
+      segment_ids:
+        - mWehvleIbTk:00022
+        - mWehvleIbTk:00023
+        - mWehvleIbTk:00024
+        - mWehvleIbTk:00025

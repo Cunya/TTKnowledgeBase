@@ -10,20 +10,9 @@ aliases:
   - pull it forward and upward
 short_definition: In forehand attack, the forearm should do the main acceleration and power generation after the upper arm is stabilized.
 evidence_summary: >-
-  Forehand attack forearm-driven motion brings together several connected ideas. Forehand attack
-  is dominated by the forearm, including acceleration and power generation, and that the forearm
-  completes the remaining movement. Forehand attack as opening the forearm to the side, then
-  pushing forward, and later describes pushing the forearm forward. The instructor emphasizes
-  forward force, avoiding sideways force, and hitting the ball forward in forehand topspin. The
-  forearm is used for long balls and power is transferred from the arm with fingers and wrist. The
-  forearm is the primary driver and the backward-then-forward sequence with a final snap. The
-  lesson states it is teaching how to generate power on backhand topspin and focuses on actively
-  generating power against topspin. The style as compact and late power generation, with a very
-  compact and explosive stroke and sudden forearm acceleration instead of a long backswing. The
-  upper arm drives forward first and the forearm completes the action. Additional points reinforce
-  the same theme. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:f51b2c25d47d82aa1b89b2b4e7e8abbc66e9a1993a6bdaeb378d567e8ccb21b9"
+  In forehand attack, the forearm should do the main acceleration and power generation after the
+  upper arm is stabilized.
+evidence_summary_source_hash: "sha256:eff8ef0faf09bba1e04a5bd689bf7bd83e6eddc572541f145e5f66d72fb21682"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -36,10 +25,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 4d59bca6d34978b1d6936e08746a987b10157317db5bc611b3f5f6a6d4e0372b
-  prompt_version: candidate-review-v1
+  input_hash: sha256:5a77d297856d1407a986fe0d711286ad1b8ae890d9e6c359a5b91b2a735c3e6c
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: kES7yDFMZTA-concept-forehand-attack-forearm-driven-motion-reviewed
     evidence_type: explanation
@@ -47,7 +39,7 @@ evidence:
     reason: The speaker explicitly says forehand attack is dominated by the forearm, including acceleration and power generation, and that the forearm completes the remaining movement.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: kES7yDFMZTA
       start_ms: 66960
@@ -67,7 +59,7 @@ evidence:
     reason: The speaker repeatedly says to push forward with the forearm and against the ball, and to fully extend the forearm after the arc is formed.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: lt6uVnA3mmg
       start_ms: 160
@@ -87,7 +79,7 @@ evidence:
     reason: The speaker explicitly says 'I'm essentially forehand attacking' and contrasts it with looping.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: TbJCmatwqG8
       start_ms: 899666
@@ -102,7 +94,7 @@ evidence:
     reason: The speaker explicitly says to engage the forearm, attack the ball, and generate power forward.
     confidence: 0.91
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: tQ9LEV9f2IU
       start_ms: 461040
@@ -116,7 +108,7 @@ evidence:
     reason: The speaker explicitly explains forehand attack as opening the forearm to the side, then pushing forward, and later describes pushing the forearm forward.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: pAEvvtlrSVY
       start_ms: 308800
@@ -133,7 +125,7 @@ evidence:
     reason: The speaker says the basic framework of the forehand attack requires retracting the arm and explains that without this, there will be no explosive power later.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: TY-0V45X1kE
       start_ms: 13866
@@ -150,7 +142,7 @@ evidence:
     reason: The speaker says the difference is about body rotation and forearm speed, and that the right side drives the arm to align the hitting angle.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ijU-Kk98Gto
       start_ms: 108100
@@ -165,7 +157,7 @@ evidence:
     reason: The speaker describes the sequence from fingers and wrist to forearm, then states that forward force is essential for forehand and backhand strokes and that forearm acceleration should be trained.
     confidence: 0.92
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: FweaNVt8gA0
       start_ms: 518066
@@ -180,7 +172,7 @@ evidence:
     reason: The instructor emphasizes forward force, avoiding sideways force, and hitting the ball forward in forehand topspin.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 4gMbiB6mrrY
       start_ms: 67800
@@ -195,7 +187,7 @@ evidence:
     reason: The speaker explicitly identifies a forehand attacking grip and says to push forward with the fingers, using minimal range to generate friction and spin.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: rPrv4iWdE4w
       start_ms: 523166
@@ -212,7 +204,7 @@ evidence:
     reason: The speaker contrasts forehand attacking with forehand looping and links the action to spin generation through the forearm.
     confidence: 0.89
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8S2YprEr6XA
       start_ms: 685833
@@ -227,7 +219,7 @@ evidence:
     reason: The speaker explains that force comes from gradual acceleration with the same movement, not by enlarging the swing.
     confidence: 0.94
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8W1dvuH8iOI
       start_ms: 535600
@@ -242,7 +234,7 @@ evidence:
     reason: The speaker directly says the forearm is used for long balls and power is transferred from the arm with fingers and wrist.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: zMrQvj_bji4
       start_ms: 462733
@@ -258,7 +250,7 @@ evidence:
     reason: The speaker contrasts forehand attacking with forehand looping and links the action to spin generation through the forearm.
     confidence: 0.89
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8S2YprEr6XA
       start_ms: 685833
@@ -273,7 +265,7 @@ evidence:
     reason: The speaker explains that force comes from gradual acceleration with the same movement, not by enlarging the swing.
     confidence: 0.94
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8W1dvuH8iOI
       start_ms: 535600
@@ -288,7 +280,7 @@ evidence:
     reason: The speaker directly says the forearm is used for long balls and power is transferred from the arm with fingers and wrist.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: zMrQvj_bji4
       start_ms: 462733
@@ -304,7 +296,7 @@ evidence:
     reason: The speaker describes forearm-driven acceleration, especially for close-to-table attacks and blocks.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: KG90HOykXCs
       start_ms: 461633
@@ -319,7 +311,7 @@ evidence:
     reason: The speaker describes the forehand drive as a forward motion followed by follow-through and added arm acceleration, using the opponent's power first and then adding more force.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 16tgKRqrb8A
       start_ms: 422733
@@ -337,7 +329,7 @@ evidence:
     reason: The speaker says the racket head is the key speed source and must accelerate after forearm contact.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ezGVESU0Rp0
       start_ms: 82133
@@ -354,7 +346,7 @@ evidence:
     reason: The transcript explicitly says the forearm is the primary driver and describes the backward-then-forward sequence with a final snap.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: HHyaeCbQ_ec
       start_ms: 402166
@@ -370,7 +362,7 @@ evidence:
     reason: The speaker explicitly instructs players to drive the forearm forward, with the hand/palm facing forward, rather than stopping at contact.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: phKJvL-8VbQ
       start_ms: 722200
@@ -387,7 +379,7 @@ evidence:
     reason: The speaker explicitly describes the push as two phases, with acceleration delayed until the end to preserve quality and control depth.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ae9urokFAJM
       start_ms: 507733
@@ -405,7 +397,7 @@ evidence:
     reason: The speaker contrasts uniform swing speed with a slow-to-fast pattern and calls that change of pace essential for power generation.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: xDwUKE-WjL0
       start_ms: 467366
@@ -420,7 +412,7 @@ evidence:
     reason: The lesson states it is teaching how to generate power on backhand topspin and focuses on actively generating power against topspin.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: xDwUKE-WjL0
       start_ms: 744966
@@ -435,7 +427,7 @@ evidence:
     reason: The speaker contrasts late acceleration with a full backswing and says to keep the racket near the ball, then execute quickly at contact.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: VR1gORHDMeQ
       start_ms: 717966
@@ -452,7 +444,7 @@ evidence:
     reason: The speaker explicitly states the wrist is the primary power source and that fingers only help transfer energy.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: nvQeXUtF2CM
       start_ms: 475866
@@ -469,7 +461,7 @@ evidence:
     reason: The speaker explicitly contrasts a simple forward stop with added whip for power on the forehand.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Yf_uKs6cZ38
       start_ms: 0
@@ -484,7 +476,7 @@ evidence:
     reason: The speaker explicitly defines the style as compact and late power generation, with a very compact and explosive stroke and sudden forearm acceleration instead of a long backswing.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hKQbi0Kk_Gs
       start_ms: 54000
@@ -500,7 +492,7 @@ evidence:
     reason: The speaker repeatedly states that the racket head is initiated first by the fingers, not the wrist or forearm, and that the forearm and follow-through come afterward.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 01-q1cswVVs
       start_ms: 282500
@@ -517,7 +509,7 @@ evidence:
     reason: The speaker explicitly says the upper arm and forearm action must be separable for speed.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: U3o7_ad82dk
       start_ms: 417233
@@ -531,7 +523,7 @@ evidence:
     reason: The speaker contrasts active power with borrowing power and says active power uses a slightly larger motion with deliberate force.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: tFRfcMo8Stw
       start_ms: 0
@@ -546,7 +538,7 @@ evidence:
     reason: The speaker directly states that the upper arm drives forward first and the forearm completes the action.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: PsZfazXZXEA
       start_ms: 427300
@@ -554,3 +546,93 @@ evidence:
       url: https://www.youtube.com/watch?v=PsZfazXZXEA&t=427s
       segment_ids:
         - PsZfazXZXEA:00092
+  - id: 01-q1cswVVs-concept-forehand-attack-forearm-driven-motion-codex-reviewed
+    evidence_type: explanation
+    excerpt: At contact, the motion should not be initiated by the wrist, elbow, or forearm. The racket head must move first, driven and rotated forward by the fingers; after that, the forearm accelerates and completes the follow-through.
+    reason: 'These contiguous segments directly explain the sequence of the forehand attack: the fingers initiate the racket-head motion, followed by forearm acceleration and completion of the follow-through.'
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 01-q1cswVVs
+      start_ms: 455733
+      end_ms: 481033
+      url: https://www.youtube.com/watch?v=01-q1cswVVs&t=455s
+      segment_ids:
+        - 01-q1cswVVs:00082
+        - 01-q1cswVVs:00083
+        - 01-q1cswVVs:00084
+        - 01-q1cswVVs:00085
+  - id: FweaNVt8gA0-concept-forehand-attack-forearm-driven-motion-codex-reviewed
+    evidence_type: explanation
+    excerpt: After the fingers and wrist contact the ball, the forearm moves continuously forward and then upward; forward force is essential for both forehand and backhand strokes.
+    reason: These contiguous segments directly describe the forearm’s forward-and-upward movement and explicitly state that forward force is essential for forehand and backhand strokes.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: FweaNVt8gA0
+      start_ms: 518066
+      end_ms: 526100
+      url: https://www.youtube.com/watch?v=FweaNVt8gA0&t=518s
+      segment_ids:
+        - FweaNVt8gA0:00125
+        - FweaNVt8gA0:00126
+  - id: GdS4nZDb6ug-concept-forearm-led-motion-in-backhand-codex-reviewed
+    evidence_type: explanation
+    excerpt: In a loop, the elbow and forearm provide a stable base at contact, allowing the forearm, fingers, and wrist to rotate; the upper arm leads the forearm into contact.
+    reason: These contiguous segments describe forearm-led rotation during a loop and directly match the supplied forehand forearm-driven-motion concept. The span is 24.3 seconds and stays within one topic moment.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: GdS4nZDb6ug
+      start_ms: 140366
+      end_ms: 164666
+      url: https://www.youtube.com/watch?v=GdS4nZDb6ug&t=140s
+      segment_ids:
+        - GdS4nZDb6ug:00031
+        - GdS4nZDb6ug:00032
+        - GdS4nZDb6ug:00033
+        - GdS4nZDb6ug:00034
+        - GdS4nZDb6ug:00035
+  - id: HHyaeCbQ_ec-concept-forehand-attack-forearm-driven-motion-codex-reviewed
+    evidence_type: explanation
+    excerpt: In the forehand drive, the forearm is the primary driver; to generate power, it pulls back and then drives forward.
+    reason: These contiguous segments explicitly identify the forearm as the primary driver of the forehand drive and describe its backward-then-forward power-generation sequence.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: HHyaeCbQ_ec
+      start_ms: 402166
+      end_ms: 423200
+      url: https://www.youtube.com/watch?v=HHyaeCbQ_ec&t=402s
+      segment_ids:
+        - HHyaeCbQ_ec:00095
+        - HHyaeCbQ_ec:00096
+        - HHyaeCbQ_ec:00097
+        - HHyaeCbQ_ec:00098
+        - HHyaeCbQ_ec:00099
+  - id: lRAoXPoYOBk-concept-forehand-attack-forearm-driven-motion-codex-reviewed
+    evidence_type: explanation
+    excerpt: The forehand pull uses outward extension and inward retraction for explosiveness. The upper arm and forearm should stay coordinated rather than pulling the ball with a disconnected motion.
+    reason: This contiguous 24.267-second span directly explains the forehand pull’s outward/inward action, its effect on explosiveness, and the need to coordinate the upper arm and forearm.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: lRAoXPoYOBk
+      start_ms: 234866
+      end_ms: 259133
+      url: https://www.youtube.com/watch?v=lRAoXPoYOBk&t=234s
+      segment_ids:
+        - lRAoXPoYOBk:00091
+        - lRAoXPoYOBk:00092
+        - lRAoXPoYOBk:00093
+        - lRAoXPoYOBk:00094
+        - lRAoXPoYOBk:00095
+        - lRAoXPoYOBk:00096
+        - lRAoXPoYOBk:00097
+        - lRAoXPoYOBk:00098
+        - lRAoXPoYOBk:00099

@@ -2,91 +2,104 @@ id: concept-forehand-stroke-position-envelope
 slug: forehand-stroke-position-envelope
 label: Forehand stroke position envelope
 aliases:
-  - forehand drive shouldn't be below the table
-  - shouldn't be above your chest
-  - shouldn't be behind you
-  - shouldn't be in front of you
-short_definition: 'The forehand drive should stay within a specific body-relative zone: not too low, not too high, not behind, and not too far forward.'
+- forehand drive shouldn't be below the table
+- shouldn't be above your chest
+- shouldn't be behind you
+- shouldn't be in front of you
+short_definition: 'The forehand drive shouldn''t be below the table, above your chest, behind you, or in front of you.'
 evidence_summary: >-
-  Forehand stroke position envelope brings together several connected ideas. The acceptable
-  forehand drive position by contrasting it with below-table, above-chest, behind-body, and
-  in-front-of-body extremes. Behind-the-body, side, and in-front striking zones and power belongs
-  in front. The hand must drop below the table and that keeping it high makes looping hard.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:a025d05c7744647c52fc1f44a88253d9268241ecbab616a6918159bdeeb49f19"
-evidence_summary_generator: "deterministic"
+  The forehand drive shouldn't be below the table, above your chest, behind you, or in front of you.
 concept_type: fundamentals
 facets:
   category:
-    - fundamentals
+  - fundamentals
   side:
-    - forehand
-difficulty: beginner
+  - forehand
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 5237444bb7659e87f0e38e1f2820f348d3fbf8a10ad599f13a0d24154aa4e3a5
-  prompt_version: candidate-review-v1
+  input_hash: sha256:6bf18169474d88ac8878467045097c247981eee2ac751396823996f97d80f63d
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: pAEvvtlrSVY-concept-forehand-stroke-position-envelope-reviewed
-    evidence_type: explanation
-    excerpt: 'The forehand drive should stay within a specific body-relative zone: not too low, not too high, not behind, and not too far forward.'
-    reason: The speaker repeatedly defines the acceptable forehand drive position by contrasting it with below-table, above-chest, behind-body, and in-front-of-body extremes.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: pAEvvtlrSVY
-      start_ms: 15133
-      end_ms: 44566
-      url: https://www.youtube.com/watch?v=pAEvvtlrSVY&t=15s
-      segment_ids:
-        - pAEvvtlrSVY:00004
-        - pAEvvtlrSVY:00005
-        - pAEvvtlrSVY:00006
-        - pAEvvtlrSVY:00007
-        - pAEvvtlrSVY:00015
-        - pAEvvtlrSVY:00016
-  - id: aStjJkTimhg-concept-forehand-stroke-position-envelope-reviewed
-    evidence_type: explanation
-    excerpt: The usable forehand striking window depends on where the ball is relative to the body; power is best in front, while side and behind-the-body contacts require caution or adjustment.
-    reason: The speaker distinguishes behind-the-body, side, and in-front striking zones and says power belongs in front.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: aStjJkTimhg
-      start_ms: 116400
-      end_ms: 141080
-      url: https://www.youtube.com/watch?v=aStjJkTimhg&t=116s
-      segment_ids:
-        - aStjJkTimhg:00054
-        - aStjJkTimhg:00055
-        - aStjJkTimhg:00056
-        - aStjJkTimhg:00057
-        - aStjJkTimhg:00058
-        - aStjJkTimhg:00059
-        - aStjJkTimhg:00060
-        - aStjJkTimhg:00061
-        - aStjJkTimhg:00062
-        - aStjJkTimhg:00063
-        - aStjJkTimhg:00064
-  - id: ySM92aDSRPo-concept-forehand-stroke-position-envelope-reviewed
-    evidence_type: explanation
-    excerpt: Keep the forehand attack setup within a workable height envelope, dropping the hand and forearm below the table when needed rather than staying high.
-    reason: The speaker repeatedly says the hand must drop below the table and that keeping it high makes looping hard.
-    confidence: 0.89
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: ySM92aDSRPo
-      start_ms: 211633
-      end_ms: 240133
-      url: https://www.youtube.com/watch?v=ySM92aDSRPo&t=211s
-      segment_ids:
-        - ySM92aDSRPo:00047
-        - ySM92aDSRPo:00048
-        - ySM92aDSRPo:00051
-        - ySM92aDSRPo:00053
+- id: pAEvvtlrSVY-concept-forehand-stroke-position-envelope-reviewed
+  evidence_type: explanation
+  excerpt: 'The forehand drive should stay within a specific body-relative zone: not too low, not too high, not behind, and not too far forward.'
+  reason: The speaker repeatedly defines the acceptable forehand drive position by contrasting it with below-table, above-chest, behind-body, and in-front-of-body extremes.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: pAEvvtlrSVY
+    start_ms: 15133
+    end_ms: 44566
+    url: https://www.youtube.com/watch?v=pAEvvtlrSVY&t=15s
+    segment_ids:
+    - pAEvvtlrSVY:00004
+    - pAEvvtlrSVY:00005
+    - pAEvvtlrSVY:00006
+    - pAEvvtlrSVY:00007
+    - pAEvvtlrSVY:00015
+    - pAEvvtlrSVY:00016
+- id: aStjJkTimhg-concept-forehand-stroke-position-envelope-reviewed
+  evidence_type: explanation
+  excerpt: The usable forehand striking window depends on where the ball is relative to the body; power is best in front, while side and behind-the-body contacts require caution or adjustment.
+  reason: The speaker distinguishes behind-the-body, side, and in-front striking zones and says power belongs in front.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: aStjJkTimhg
+    start_ms: 116400
+    end_ms: 141080
+    url: https://www.youtube.com/watch?v=aStjJkTimhg&t=116s
+    segment_ids:
+    - aStjJkTimhg:00054
+    - aStjJkTimhg:00055
+    - aStjJkTimhg:00056
+    - aStjJkTimhg:00057
+    - aStjJkTimhg:00058
+    - aStjJkTimhg:00059
+    - aStjJkTimhg:00060
+    - aStjJkTimhg:00061
+    - aStjJkTimhg:00062
+    - aStjJkTimhg:00063
+    - aStjJkTimhg:00064
+- id: ySM92aDSRPo-concept-forehand-stroke-position-envelope-reviewed
+  evidence_type: explanation
+  excerpt: Keep the forehand attack setup within a workable height envelope, dropping the hand and forearm below the table when needed rather than staying high.
+  reason: The speaker repeatedly says the hand must drop below the table and that keeping it high makes looping hard.
+  confidence: 0.89
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ySM92aDSRPo
+    start_ms: 211633
+    end_ms: 240133
+    url: https://www.youtube.com/watch?v=ySM92aDSRPo&t=211s
+    segment_ids:
+    - ySM92aDSRPo:00047
+    - ySM92aDSRPo:00048
+    - ySM92aDSRPo:00051
+    - ySM92aDSRPo:00053
+- id: pAEvvtlrSVY-concept-forehand-stroke-position-envelope-codex-reviewed
+  evidence_type: explanation
+  excerpt: Your forehand drive shouldn't be below the table, above your chest, behind you, or in front of you.
+  reason: Avoid a forehand drive below the table, above your chest, behind you, or in front of you.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: pAEvvtlrSVY
+    start_ms: 15133
+    end_ms: 26966
+    url: https://www.youtube.com/watch?v=pAEvvtlrSVY&t=15s
+    segment_ids:
+    - pAEvvtlrSVY:00004
+    - pAEvvtlrSVY:00005
+    - pAEvvtlrSVY:00006
+    - pAEvvtlrSVY:00007

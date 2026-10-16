@@ -6,11 +6,9 @@ aliases:
   - forehand tacky rubber
 short_definition: A tacky rubber is recommended on the forehand because it supports spin generation and better control of arc and power.
 evidence_summary: >-
-  Tacky rubber as the preferred forehand choice for spin brings together several connected ideas.
-  Tacky rubber on the forehand and it enables control of spin, arc, and power. Tacky rubber on the
-  forehand and non-tacky rubber hinders looping development. Together, these principles show how
-  the topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:a6da11c20f049ae16967f5ea567bde9ebbacd02bd8c9c044591509b6db1f0f7c"
+  A tacky rubber is recommended on the forehand because it supports spin generation and better
+  control of arc and power.
+evidence_summary_source_hash: "sha256:9a310804fd39be46c93530f989c3bb5b9db58a472e025299ca3b36c8af03de93"
 evidence_summary_generator: "deterministic"
 concept_type: equipment
 facets:
@@ -24,10 +22,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 567064c93129b3adf0c0ea512e2872529d970730d328af55630a8c1013f16afe
-  prompt_version: candidate-review-v1
+  input_hash: sha256:bb2aeff55895fbed20145d007d7124f72c5f2ed8f0b485c126a3e73843800d78
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: ae9urokFAJM-new-tacky-rubber-forehand-choice-for-spin-reviewed
     evidence_type: explanation
@@ -35,7 +36,7 @@ evidence:
     reason: The speaker explicitly recommends tacky rubber on the forehand and explains that it enables control of spin, arc, and power.
     confidence: 0.94
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ae9urokFAJM
       start_ms: 91233
@@ -53,7 +54,7 @@ evidence:
     reason: The speaker explicitly recommends tacky rubber on the forehand and says non-tacky rubber hinders looping development.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 7JSZZSSjCqo
       start_ms: 112500
@@ -63,3 +64,20 @@ evidence:
         - 7JSZZSSjCqo:00028
         - 7JSZZSSjCqo:00031
         - 7JSZZSSjCqo:00033
+  - id: ae9urokFAJM-new-tacky-rubber-forehand-choice-for-spin-codex-reviewed
+    evidence_type: explanation
+    excerpt: The speaker recommends using tacky rubber on the forehand, explaining that grippy rubber produces weaker spin on serves and loops.
+    reason: This contiguous span directly supports the existing concept by explicitly recommending tacky forehand rubber and contrasting it with grippy rubber's weaker spin.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: ae9urokFAJM
+      start_ms: 91233
+      end_ms: 110466
+      url: https://www.youtube.com/watch?v=ae9urokFAJM&t=91s
+      segment_ids:
+        - ae9urokFAJM:00020
+        - ae9urokFAJM:00021
+        - ae9urokFAJM:00022
+        - ae9urokFAJM:00023

@@ -2,48 +2,63 @@ id: concept-forearm-driven-push-on-the-forehand
 slug: forearm-driven-push-on-the-forehand
 label: Forearm-driven push on the forehand
 aliases:
-  - forearm-driven action
-  - forward drive
+- forearm-driven action
 short_definition: On the forehand push, the main driving force comes from the forearm rather than isolated wrist motion.
 evidence_summary: >-
-  Forearm-driven push on the forehand brings together several connected ideas. A useful contrast
-  is between wrist-only motion and a forearm-driven action and says the forearm supplies the main
-  force in the forehand push. Together, these principles show how the topic is applied in practice
-  while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:dcdbb1b33cc3517c0009534891aee2ca041b1c115e8c32cfb361c9bb13454738"
-evidence_summary_generator: "deterministic"
+  On the forehand push, the main driving force comes from the forearm rather than isolated wrist
+  motion.
 concept_type: stroke
 facets:
   category:
-    - stroke
+  - stroke
   side:
-    - forehand
-  level:
-    - intermediate
-difficulty: intermediate
+  - forehand
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 936569ad48965d7a5147026ea951e286978a1a4d788c406c01e513aca84a1a83
-  prompt_version: candidate-review-v1
+  input_hash: sha256:e001c9ad2d6f7f152a4d2933ccdc141b9987c2c6ef4936781c07624047579511
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: ae9urokFAJM-new-forearm-driven-push-on-the-forehand-reviewed
-    evidence_type: explanation
-    excerpt: On the forehand push, the main driving force comes from the forearm rather than isolated wrist motion.
-    reason: The speaker contrasts wrist-only motion with a forearm-driven action and says the forearm supplies the main force in the forehand push.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: ae9urokFAJM
-      start_ms: 689666
-      end_ms: 718466
-      url: https://www.youtube.com/watch?v=ae9urokFAJM&t=689s
-      segment_ids:
-        - ae9urokFAJM:00151
-        - ae9urokFAJM:00152
-        - ae9urokFAJM:00153
-        - ae9urokFAJM:00154
-        - ae9urokFAJM:00155
-        - ae9urokFAJM:00156
+- id: ae9urokFAJM-new-forearm-driven-push-on-the-forehand-reviewed
+  evidence_type: explanation
+  excerpt: On the forehand push, the main driving force comes from the forearm rather than isolated wrist motion.
+  reason: The speaker contrasts wrist-only motion with a forearm-driven action and says the forearm supplies the main force in the forehand push.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ae9urokFAJM
+    start_ms: 689666
+    end_ms: 718466
+    url: https://www.youtube.com/watch?v=ae9urokFAJM&t=689s
+    segment_ids:
+    - ae9urokFAJM:00151
+    - ae9urokFAJM:00152
+    - ae9urokFAJM:00153
+    - ae9urokFAJM:00154
+    - ae9urokFAJM:00155
+    - ae9urokFAJM:00156
+- id: ae9urokFAJM-new-forearm-driven-push-on-the-forehand-codex-reviewed
+  evidence_type: explanation
+  excerpt: For a proper forehand push, the wrist does not rotate independently; the main driving force comes from the forearm, with almost no independent wrist movement.
+  reason: The forearm moves downward and supplies the main driving force, while the wrist has almost no independent wobble or movement.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: ae9urokFAJM
+    start_ms: 685366
+    end_ms: 714533
+    url: https://www.youtube.com/watch?v=ae9urokFAJM&t=685s
+    segment_ids:
+    - ae9urokFAJM:00150
+    - ae9urokFAJM:00151
+    - ae9urokFAJM:00152
+    - ae9urokFAJM:00153
+    - ae9urokFAJM:00154
+    - ae9urokFAJM:00155

@@ -7,20 +7,9 @@ aliases:
   - small explosive burst
 short_definition: A short, explosive brushing action used when dealing with heavy backspin, instead of a large slow swing.
 evidence_summary: >-
-  Compact motion for heavy backspin brings together several connected ideas. Heavy backspin
-  requires a very small, compact movement and it as inch power rather than a large slow motion.
-  Compact motion as one of the three keys to maximum friction and the brushing action itself
-  should be very small. To eliminate a full backswing, use a high slow arc, and keep the motion
-  compact to improve spin. Better push quality to staying close to the ball and concentrating
-  acceleration late in a compact motion. The swing must be compact, smaller motions counteract
-  incoming spin better, and spinny balls require smaller movement. The serve should be compact,
-  with a small range of motion and abrupt stopping points. He contrasts a high backswing with a
-  low, compact motion and the compact version stays spinny even with relaxed motion. Extremely
-  spinny balls should be handled with minimal body rotation, a compact body movement, and a
-  smaller but fast stroke. Additional points reinforce the same theme. Together, these principles
-  show how the topic is applied in practice while preserving the relevant distinctions and
-  constraints.
-evidence_summary_source_hash: "sha256:3a131951fe9820211d009cc314f4cbcb3ed6a21aa44dc2de9bc99d0d532a2154"
+  A short, explosive brushing action used when dealing with heavy backspin, instead of a large
+  slow swing.
+evidence_summary_source_hash: "sha256:6d959cc6f6b777b87f60226f7c4de6e4ab17a2d437ad3c97aceea1b0c6439e1d"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -34,10 +23,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: dae22e0d4b9b7b1555904e3afc92c2a2053d3c584c00bd9e7796c6ac4cbdc8f0
-  prompt_version: candidate-review-v1
+  input_hash: sha256:7b3afa7a38f2b1c7dc6149197961147db4fcbb0f0c9574a3fe7dae986d694140
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: FNFUZTBq2yQ-concept-compact-motion-for-heavy-backspin-reviewed
     evidence_type: explanation
@@ -45,7 +37,7 @@ evidence:
     reason: The speaker says heavy backspin requires a very small, compact movement and describes it as inch power rather than a large slow motion.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: FNFUZTBq2yQ
       start_ms: 591633
@@ -61,7 +53,7 @@ evidence:
     reason: The speaker identifies compact motion as one of the three keys to maximum friction and says the brushing action itself should be very small.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: phTj82vlVqs
       start_ms: 177066
@@ -79,7 +71,7 @@ evidence:
     reason: The speaker says the brushing motion must be very fast, compact, and explosive to counter spin on fast serve returns.
     confidence: 0.91
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: yIBhoQsBD9k
       start_ms: 332133
@@ -96,7 +88,7 @@ evidence:
     reason: The speaker says to eliminate a full backswing, use a high slow arc, and keep the motion compact to improve spin.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: j4tQrFa7iSQ
       start_ms: 432333
@@ -112,7 +104,7 @@ evidence:
     reason: The speaker repeatedly ties better push quality to staying close to the ball and concentrating acceleration late in a compact motion.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: r75F4gsFaoQ
       start_ms: 105600
@@ -130,7 +122,7 @@ evidence:
     reason: The transcript says the swing must be compact, smaller motions counteract incoming spin better, and spinny balls require smaller movement.
     confidence: 0.94
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hRHJawAZzNc
       start_ms: 328333
@@ -148,7 +140,7 @@ evidence:
     reason: The speaker repeatedly says the serve should be compact, with a small range of motion and abrupt stopping points.
     confidence: 0.93
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: xsJ6JJAeTVc
       start_ms: 286233
@@ -165,7 +157,7 @@ evidence:
     reason: The speaker directly says to keep the motion very compact and warns that a large backswing will send the serve long.
     confidence: 0.88
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: _sHbPePmV9k
       start_ms: 132900
@@ -182,7 +174,7 @@ evidence:
     reason: He contrasts a high backswing with a low, compact motion and says the compact version stays spinny even with relaxed motion.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: jFuVRHkNWg4
       start_ms: 152233
@@ -197,7 +189,7 @@ evidence:
     reason: The speaker says extremely spinny balls should be handled with minimal body rotation, a compact body movement, and a smaller but fast stroke.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: D2hk2kkCdfI
       start_ms: 548633
@@ -205,3 +197,22 @@ evidence:
       url: https://www.youtube.com/watch?v=D2hk2kkCdfI&t=548s
       segment_ids:
         - D2hk2kkCdfI:00114
+  - id: jFuVRHkNWg4-concept-compact-motion-for-heavy-backspin-codex-reviewed
+    evidence_type: explanation
+    excerpt: A high backswing creates a long, smooth path that dissipates acceleration. Starting around the waist and accelerating toward the table shortens the motion and concentrates the explosive snap needed for heavy spin.
+    reason: These contiguous segments explain that a high backswing makes acceleration long and smooth, then prescribe starting around the waist to shorten the motion and concentrate acceleration. The supplied existing concept is the same durable topic.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: jFuVRHkNWg4
+      start_ms: 152233
+      end_ms: 177833
+      url: https://www.youtube.com/watch?v=jFuVRHkNWg4&t=152s
+      segment_ids:
+        - jFuVRHkNWg4:00031
+        - jFuVRHkNWg4:00032
+        - jFuVRHkNWg4:00033
+        - jFuVRHkNWg4:00034
+        - jFuVRHkNWg4:00035
+        - jFuVRHkNWg4:00036

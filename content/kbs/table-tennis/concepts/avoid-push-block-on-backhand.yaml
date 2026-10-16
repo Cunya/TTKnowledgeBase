@@ -2,44 +2,59 @@ id: concept-avoid-push-block-on-backhand
 slug: avoid-push-block-on-backhand
 label: Avoid push-block on backhand
 aliases:
-  - push-block
-  - push-block idea
+- push-block
+- push-block idea
 short_definition: Reject the idea that the backhand motion from backswing to contact is a push-block; the stroke should not be treated as a push.
 evidence_summary: >-
-  Avoid push-block on backhand brings together several connected ideas. The push-block framing and
-  why starting with a push creates bad motor memory. Together, these principles show how the topic
-  is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:54061b3cd1c716cebbab720a206ebd0190258a06b123bcdd6337b3702a93464a"
-evidence_summary_generator: "deterministic"
+  Reject the idea that the backhand motion from backswing to contact is a push-block; the stroke
+  should not be treated as a push.
 concept_type: fundamentals
 facets:
   category:
-    - fundamentals
+  - fundamentals
   side:
-    - backhand
-  level:
-    - beginner
-difficulty: beginner
+  - backhand
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: dd55edf07e6b3aa4112d4845f8f5466dbad7db3dbca95b10970f476df0b5d755
-  prompt_version: candidate-review-v1
+  input_hash: sha256:a26c589b48a233473c5c6119582555387c30c8241d09a8447d8aee234237b159
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: ATd38ewLMqs-c2-reviewed
-    evidence_type: correction
-    excerpt: Reject the idea that the backhand motion from backswing to contact is a push-block; the stroke should not be treated as a push.
-    reason: The speaker directly corrects the push-block framing and explains why starting with a push creates bad motor memory.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: ATd38ewLMqs
-      start_ms: 2100
-      end_ms: 26233
-      url: https://www.youtube.com/watch?v=ATd38ewLMqs&t=2s
-      segment_ids:
-        - ATd38ewLMqs:00001
-        - ATd38ewLMqs:00002
-        - ATd38ewLMqs:00004
+- id: ATd38ewLMqs-c2-reviewed
+  evidence_type: correction
+  excerpt: Reject the idea that the backhand motion from backswing to contact is a push-block; the stroke should not be treated as a push.
+  reason: The speaker directly corrects the push-block framing and explains why starting with a push creates bad motor memory.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ATd38ewLMqs
+    start_ms: 2100
+    end_ms: 26233
+    url: https://www.youtube.com/watch?v=ATd38ewLMqs&t=2s
+    segment_ids:
+    - ATd38ewLMqs:00001
+    - ATd38ewLMqs:00002
+    - ATd38ewLMqs:00004
+- id: ATd38ewLMqs-c2-codex-reviewed
+  evidence_type: correction
+  excerpt: The backhand drive is not a “push-block” or a straight push forward; it is a backhand drive.
+  reason: The instruction rejects the “push-block” label and distinguishes the backhand drive from a straight push forward.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: ATd38ewLMqs
+    start_ms: 2100
+    end_ms: 26233
+    url: https://www.youtube.com/watch?v=ATd38ewLMqs&t=2s
+    segment_ids:
+    - ATd38ewLMqs:00001
+    - ATd38ewLMqs:00002
+    - ATd38ewLMqs:00003
+    - ATd38ewLMqs:00004

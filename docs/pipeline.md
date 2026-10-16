@@ -1,16 +1,30 @@
 # How the knowledge-base pipeline works
 
+Source-correction release verified at 2026-10-16 22:44 EEST: 297 Python/nine Node tests, Ruff, all validators and zero-diagnostic Astro build (635 pages). Rotation source/text correction is applied and archived; current coverage147/377 supported,230pending. This implements the guarded application capability described below, not full-audit completion.
+
+Owned-source repairs (2026-10-16 22:41 EEST): `apply-published-repairs` supports the explicit `owned_source_correction` scope with a typed list of evidence IDs and replacement spoken `source` records. The application validates them against the fresh eligible corpus snapshot and actual captions: same original video, unique approved evidence/segment IDs, exact caption envelope, canonical URL, duration and gap limits. Its identity binds original freshness, the corrections, the complete corrected dossier and policy versions; a new complete primary review must match that identity/plan hash. All dependent units are checked against corrected owned proof. Canonical matching uses original records, post-application audit mapping uses the verified new source, and original full content plus source corrections are archived through the existing recoverable transaction. Visual metadata is preserved. Ordinary repairs remain compatible; this does not approve a source proposal or waive semantic review. The first guarded rotation repair moves coverage to147/377 supported,230pending; full release is running under P1-51.
+
+Repair policy update (2026-10-16 22:10 EEST): draft 1.1.1 / verification 1.1.2 distinguish the source-grounded subject from an erroneous heading. Supported corrections or narrowings may fix that heading; supported same-subject evidence must not be quarantined merely for contradicting it. Concept/evidence IDs and slugs are opaque references and may contain obsolete labels, so they cannot prove topic identity. Actual selected-caption ownership, missing-referent uncertainty, genuine different-topic quarantine and complete primary/independent review remain mandatory. Reducer assembly preserves proposed corrections without treating chunk proposals as proof. Policy versions invalidate affected pending plans; already-cleared unchanged audit decisions are not reset. Three real Luna/high heading/ID controls passed after fresh primary review and a flick-scope correction; an invented footwork instruction was independently rejected and removed. These bounded controls support the fix, not whole-corpus accuracy certification. Current full-audit checkpoint: 146/377 articles supported, 231 pending; P1-34/P1-51 remain open.
+
+Published repair checkpoint (2026-10-15 11:00 EEST): 377 eligible articles / 4,501 units; 23 supported / 354 pending articles; 176 supported / 4,325 pending units; two excluded originals retained. Ten additional articles repaired after primary review and real separate verification. Repair contract 1.0.8 omits old confidence/approval from independent evidence/relation verifier targets, preserving knowledge text, source/visual fields, owned IDs and quarantine dispositions; complete proposed objects remain available for deterministic application checks. The ordinary release gate passed at 10:58 EEST: reviewed/published validation, 203 Python tests, nine monitor tests, Ruff, zero Astro errors/warnings/hints and 635 built pages. The [workflow](full-published-audit-workflow-2026-10-14.md) and [continuation record](automated-published-repair-study-2026-10-14.md#full-audit-continuation--2026-10-15) retain strict completion requirements. The large-rhythm exception and frozen accuracy evaluation remain open; normal processing stays paused.
+
+Large-article reduction assembles untrusted chunk proposals rather than judging empty transcript input. Final verification receives actual selected captions, with no draft verdict/confidence. Bounded uncertain nonvisual proposals receive that check; oversized source proofs and unwatched visual claims remain unresolved. Repair contract 1.1.0 separates draft/verification policy versions and reuses only matching stage/unit results with provenance; legacy stage digests require one refresh. Failed-unit revisions retain unaffected proposals. Exact claim/source/topic/target/context/model/policy/primary-finding dependencies guard verifier reuse; changed article fields conservatively reopen checks. The compact wire shares source spans without removing owned IDs or selected text/timing. Unchanged exceptions stay parked. See [operations](operations.md#audit-efficiency-follow-up) for invalidation and model-accuracy limits. Verifier article fields mirror the proposed values; the old topic is separately labeled editorial context, never claim proof or the result to assess. Quarantined records are verified with their proposed unreviewed status, matching application.
+
+Confirmed primary needs-fix notes are also repair inputs: changing them invalidates the private plan/cache and blocks applying an older verified result. The constrained response enforces one edit per article field and mutually exclusive quarantine versus rewriting; runtime checks remain mandatory.
+
+The model wire response requires every unit as a named property, preventing array-length checks from admitting duplicate/missing keys. It is normalized to the existing typed list/checkpoint format; identity, coverage and source-ID validation remain mandatory.
+
 This project is a **local, operator-run publishing pipeline**, not a website that scrapes YouTube at request time. Python commands collect and transform source material on the maintainer's computer; Codex CLI proposes structured knowledge; reviewed YAML is the editorial source of truth; Astro builds a read-only static site for GitHub Pages.
 
 ## What is automated and what is manual
 
 | Stage | Automated by the repository | Operator or reviewer responsibility |
 |---|---|---|
-| Source discovery | `yt-dlp` lists channel or playlist videos. `run-cp.py` can continue automatically from unseen discovery entries after configured batch entries are exhausted. | Define enabled source policy and audit exclusions; `sources.yaml` video entries are configured batch history, not an exhaustive catalog or the live run workset. |
+| Source discovery | `yt-dlp` lists channel or playlist videos. `run-cp.py` can continue automatically from unseen discovery entries after configured batch entries are exhausted. | Define enabled source policy and audit exclusions; `sources.yaml` video entries are configured batch history, not an exhaustive catalog or the current run selection. |
 | Ingestion | Python fetches metadata and available timed captions and assigns stable segment IDs. | Supply video URLs, choose transcript languages, and investigate unavailable/member-only videos. |
 | Knowledge extraction | The processor invokes `codex exec` with the transcript, taxonomy, known concepts, and a strict output schema. | Authenticate Codex, choose the configured model, and rerun failed jobs. |
 | LLM budget | A private daily token ledger reserves an estimate before each extraction, rephrase, or benchmark call and records reported usage afterward. Exhausted daily or task caps defer work before subprocess execution. | Adjust `llm_budget` in `config/processors.yaml`, inspect `llm-budget --kb <id>`, and decide when deferred work should resume. |
-| Candidate resolution | The review-queue builder proposes matches using names, aliases, fuzzy matching, and shared evidence. | Accept, reject, merge, rename, and edit concepts. No candidate becomes public merely because an LLM proposed it. |
+| Candidate resolution | `process-pending` sends bounded transcript context, the candidate, and a short existing-concept list to schema-constrained Codex CLI. Deterministic validators then enforce segment, span, taxonomy, time, and provenance invariants before canonical writes. | Optionally add editorial advice or an explicit override. Human input is an augmentation, not the default queue. |
 | Spoken evidence | Validation checks every approved claim against real transcript segment IDs and canonical YouTube timestamps. | Check that the excerpt supports the editorial wording. |
 | Moment boundaries | `report-boundaries` derives caption-only sentence-like units, measures mid-sentence/short windows, and proposes snapped bounds without changing reviewed YAML. `process-pending` defers flagged new candidates. | Review merge, context, split, or defer actions; never treat a proposed playback boundary as new claim support without review. |
 | Excerpt safety | The deterministic overlap screen flags complete/high-ratio transcript matches; `rephrase-excerpts` or `publish --auto-rephrase-high-overlap` asks the configured low-cost Codex model for an editorial summary and verifies that the rewrite no longer has high overlap. | Review the rewrite when it changes a canonical excerpt; the source metadata and cited timestamps remain unchanged. |
@@ -19,11 +33,13 @@ This project is a **local, operator-run publishing pipeline**, not a website tha
 | Publishing | Python validates and sanitizes the reviewed corpus, then copies only allowlisted data into the Astro public folder. | Run the publish command after review. |
 | Site build | Astro generates static concept, video, search, and KB pages. | Preview locally and deploy the generated site through GitHub Pages. |
 
-The repeatable unattended path is `scripts/run-cp.py --kb <id>`. It rebuilds the private full-inventory ledger, records an exact workset, and drains missing extraction, bounded retryable adjudication, then due transcript acquisition. View count orders otherwise-equal acquisition work but cannot permanently exclude an eligible video. `sources.yaml` remains batch-history provenance; it is not the live boundary. The same entry point is used by the Windows 21:00 scheduled task and by the local monitor at `http://127.0.0.1:4322/`.
+The repeatable unattended path is `scripts/run-cp.py --kb <id>`. It rebuilds the private full-inventory ledger, records the exact videos selected for the run, and drains missing extraction, up to ten unclear candidates ready for another automatic check, then due transcript acquisition. It discovers enabled sources only when all three worksets are empty, so catalog expansion cannot outrank cached processing. View count orders otherwise-equal acquisition work but cannot permanently exclude an eligible video. `sources.yaml` remains batch-history provenance; it is not the live boundary. The same entry point is used by the Windows 21:00 scheduled task and by the local monitor at `http://127.0.0.1:4322/`.
 
-The ledger lives at `data/manifests/<kb>/inventory-ledger.json` and is gitignored. It contains no transcript text. A video is complete only after allowed source captions are normalized, current schema-valid candidates exist, every candidate is accepted/rejected/explicitly human-review, and accepted citations are incorporated into canonical YAML. Ordinary pending and deferred states remain automated work.
+The ledger lives at `data/manifests/<kb>/inventory-ledger.json` and is gitignored. It contains no transcript text. A video is complete only after allowed source captions are normalized, current schema-valid candidates exist, every candidate has a final accepted or rejected Codex decision, and accepted citations are incorporated into canonical YAML. Pending and deferred states remain automated work; optional human advice does not define completion.
 
-The orchestrator streams each child stage's output as it arrives and bounds stage execution after process-tree-safe cleanup: discovery stages have a 20-minute limit, while ingestion and other stages have a 45-minute limit. A timeout exits with code 124 and records `exit_class: timeout`; the monitor Stop control uses Windows process-tree termination so nested yt-dlp/Python workers do not survive a sleep/resume interruption.
+Every durable inventory write also records an observation in the private `bucket-history.json` beside the ledger. This includes unchanged counts so the monitor can draw flat observed periods without waiting for a bucket change. The writer follows the existing per-KB inventory mutation ownership and atomic replacement; history failures warn without blocking the processing result. The monitor only reads and reloads history, so browser polling and monitor uptime do not control scheduled-run coverage. Retention keeps seven days plus one older boundary observation, capped at 1,000 samples preserving time endpoints. Graphs use actual timestamps and label missing coverage; latest-manifest before/after observations can be recovered with their original times, but unrecorded days are never backfilled from present counts.
+
+The orchestrator streams each child stage's output as it arrives and bounds stage execution after process-tree-safe cleanup: the processor workload uses Windows idle CPU priority, discovery stages have a 20-minute limit, ingestion and other stages have a 45-minute limit, and each ten-candidate semantic-adjudication stage has a 60-minute limit. Each stage prints its `Stage x/y` position and purpose, emits a privacy-safe heartbeat every 15 seconds when no child output arrives, and records its elapsed duration when it finishes, so a quiet log means the stage is still active rather than invisible. The monitor service/UI remains normal priority so controls stay responsive. A timeout exits with code 124 and records `exit_class: timeout`; the monitor Stop control uses Windows process-tree termination so nested yt-dlp/Python workers do not survive a sleep/resume interruption. Within semantic adjudication, a single Codex call that reaches the five-minute per-call timeout is recorded as a private failure and deferred for retry; it does not abort the remaining candidates in that batch. Automatic adjudication stages select and process at most 10 candidates. Progress also reports the eligible candidates inside the selected video pool and the full adjudication backlog, including pending and deferred proposals admitted to the pass, so the ten-item pass is not confused with the larger backlog. The queue and changed concept documents are atomically checkpointed after every 10 completed candidates, limiting timeout loss to the current partial checkpoint.
 
 ## Study-to-backlog documentation contract
 
@@ -36,11 +52,13 @@ An analysis or study is not complete when its Markdown report is written. The re
 
 ### Navigation placement safety
 
-The atlas is editorial structure, not a keyword index. Automatic placement may place a generated concept only when its lexical match to one navigation node is strong and clearly better than the runner-up; weak or near-tied matches remain unplaced for explicit review. This prevents words such as “loop,” “push,” or “serve” in a definition from silently selecting the wrong deep branch. `validate` still requires every approved concept to be represented, so skipped placement becomes a visible review task.
+The atlas is editorial structure, not a keyword index. Automatic placement may place a generated concept only when its lexical match to one navigation node is strong and clearly better than the runner-up; weak or near-tied matches go to the configured `editorial-placement-review` holding node for explicit review. The match uses the label, aliases, definition, facets, evidence summary, and evidence excerpt/reason text, so a newly accepted concept does not depend on a later summary-refresh stage. This prevents words such as “loop,” “push,” or “serve” in a definition from silently selecting the wrong deep branch while keeping navigation validation complete. The intended contract is that `validate` requires every approved concept to have an editorial placement decision; the 2026-08-12 audit found an exemption for automatically generated concepts, which is tracked under P1-32.
 
-### Navigation placement safety
+## Codex-first semantic-accuracy gate — 2026-08-12
 
-The atlas is editorial structure, not a keyword index. Automatic placement may place a generated concept only when its lexical match to one navigation node is strong and clearly better than the runner-up; weak or near-tied matches remain unplaced for explicit review. This prevents words such as “loop,” “push,” or “serve” in a definition from silently selecting the wrong deep branch. `validate` still requires every approved concept to be represented, so skipped placement becomes a visible review task.
+The previous confidence/fuzzy-match promotion path is retired. Extraction now uses the configured 80-segment jobs with eight-segment overlap. `process-pending` uses Codex CLI to decide semantic support and rewrites the public reason/excerpt to one selected span; deterministic code refuses dispersed selections, inconsistent resolution states, out-of-vocabulary facets, incomplete source envelopes, and invented segment IDs.
+
+Legacy heuristic output is preserved as private canonical/queue history but is marked unreviewed: 4,775 evidence moments and 460 concepts are excluded from the public corpus until Codex re-adjudicates their proposals. Human input remains available as optional advice or an explicit override. See [the 2026-08-12 whole-project review](project-review-2026-08-12-11.md) and the completed mechanisms plus remaining drain work in the [prioritized backlog](prioritized-backlog-2026-07-15.md).
 
 The Markdown backlog remains the planning source of truth. The HTML backlog is a generated local operator view and is intentionally excluded from the public GitHub Pages build.
 
@@ -54,7 +72,9 @@ flowchart LR
     I --> N["local normalized metadata and timed transcripts"]
     N --> C["Codex CLI structured extraction"]
     C --> Q["local candidate files and review queue"]
-    Q --> R["reviewed concept YAML"]
+    Q --> C2["Codex semantic adjudication"]
+    C2 --> R["validated canonical YAML"]
+    H["optional human advice or override"] -.-> R
     R --> E["high-overlap excerpt guard"]
     E --> V["validate and publish"]
     V --> P["sanitized public corpus"]
@@ -63,6 +83,8 @@ flowchart LR
 ```
 
 The raw/normalized transcripts, Codex responses, review media, and offline archives are gitignored. The browser receives only the sanitized corpus under `app/public/data/`.
+
+Codex deferrals remain automated adjudication work; they are not assigned to a person after an arbitrary check count. Extraction, adjudication, and acquisition batches rotate fairly across sources while retaining view-count priority within each source. The local `/human-review/` workspace remains available for optional advice or an explicit audited override. Canonical writes are blocked while another processor child is active.
 
 ## Normal operating sequence
 
@@ -76,7 +98,7 @@ python -m processors.cli discover https://www.youtube.com/@GlobalTTStudio --kb t
 
 This writes a local discovery manifest. Discovery does not ingest transcripts or publish anything.
 
-### 2. Ingest videos manually or through the generated run workset
+### 2. Ingest videos manually or through the videos selected for a run
 
 For a deliberate one-off configured batch, record its provenance in `config/kbs/<kb>/sources.yaml` and pass the public URLs to ingestion. This is not required for discovery-continuation videos selected automatically by `run-cp.py`:
 
@@ -116,7 +138,7 @@ To process only one normalized video:
 python -m processors.cli extract-concepts --kb table-tennis --engine codex --video-id VIDEO_ID
 ```
 
-The Python processor is the caller. It starts `codex exec` as a subprocess using the settings in `config/processors.yaml`. The default profile uses `gpt-5.4-mini`, low reasoning, a strict Pydantic-generated JSON schema, a read-only sandbox, an ephemeral session, and a five-minute timeout. The stronger `gpt-5.4` profile is configured only for an explicit editorial retry; automatic escalation remains disabled. Codex receives transcript text and segment IDs, not downloaded video.
+The Python processor is the caller. It starts `codex exec` as a subprocess using the settings in `config/processors.yaml`. The default and explicit retry profiles both use `gpt-5.6-luna` with low reasoning, a strict Pydantic-generated JSON schema, a read-only sandbox, an ephemeral session, and a five-minute timeout. Automatic escalation remains disabled. Codex receives transcript text and segment IDs, not downloaded video.
 
 The response is validated before it is saved to `data/derived/<kb>/<video-id>.candidates.json`. The output records the Codex CLI version, model, reasoning setting, prompt/schema versions, and input hash. Invalid output or a failed command does not reach publishing.
 
@@ -128,11 +150,13 @@ All Codex-backed production tasks share a local per-knowledge-base ledger at `da
 llm_budget:
   enabled: true
   timezone: Europe/Helsinki
-  daily_token_limit: 30000000
+  daily_token_limit: 90000000
   task_token_limits:
-    extraction: 400000
-    rephrase: 100000
-    benchmark: 100000
+    extraction: 24000000
+    adjudication: 60000000
+    rephrase: 2000000
+    benchmark: 2000000
+    summary: 8000000
 ```
 
 The processor estimates prompt plus output tokens before starting Codex. It refuses the call when either the daily total or the task cap would be exceeded, records a deferred event, and lets the CLI continue without producing a partial candidate. Completed calls reconcile the reservation with Codex-reported `input_tokens` and `output_tokens`; when usage is unavailable, the estimate is charged conservatively. The ledger is private and ignored by Git.
@@ -143,7 +167,7 @@ Use the status command to see the current day, remaining allowance, per-task usa
 python -m processors.cli llm-budget --kb table-tennis
 ```
 
-To change the allowance, edit `config/processors.yaml` before the next run. Set `enabled: false` only for an explicit operator decision; the default is enabled. Deferred extraction videos are listed in the private `data/manifests/<kb>/llm-deferred.json` record. The budget is a guard against unplanned usage, not a billing estimate, and it does not alter the configured model or reasoning profile.
+To change the allowance, edit `config/processors.yaml` before the next call; the shared transport constructs a fresh budget manager for each call. The October 15 operator-authorized full-audit allowance is 60 million adjudication tokens within a 90 million overall daily cap; Luna/high and all other task caps remain unchanged. Set `enabled: false` only for an explicit operator decision; the default is enabled. Deferred extraction videos are listed in the private `data/manifests/<kb>/llm-deferred.json` record. The budget is a guard against unplanned usage, not a billing estimate, and it does not alter the configured model or reasoning profile.
 
 If the optional auto-rephrase stage reaches its cap, `publish` records the deferral and exits before rebuilding the public corpus. This prevents the budget guard from weakening the excerpt-safety gate.
 
@@ -155,11 +179,11 @@ The model benchmark is deliberately separate from production extraction. It runs
 python -m processors.cli benchmark-models --kb table-tennis --sample-size 3
 ```
 
-By default this compares the configured model with `gpt-5.4-nano`. To choose a different set or fixed videos:
+By default this compares the configured model with the configured escalation model. To choose a different set or fixed videos:
 
 ```powershell
 python -m processors.cli benchmark-models --kb table-tennis `
-  --models gpt-5.4-mini,gpt-5.4-nano `
+  --models gpt-5.6-luna `
   --video-ids VIDEO_ID_1,VIDEO_ID_2
 ```
 
@@ -173,7 +197,9 @@ python -m processors.cli build-review-queue --kb table-tennis
 
 The generated queue lives at `content/kbs/<kb>/annotations/review-queue.yaml`. It suggests whether a candidate resembles an already reviewed concept, but fuzzy similarity never performs an automatic merge by itself.
 
-An item may remain `accepted` only when at least one of its exact transcript segment IDs is present in evidence for the referenced canonical concept and video. A semantically similar candidate that was not incorporated stays `pending`; similarity alone is not evidence of editorial integration.
+An item may remain `accepted` only when at least one of its original or explicitly adjudicated transcript segment IDs is present in evidence for the referenced canonical concept and video. Queue regeneration preserves unchanged reviewed decisions but always leaves new or changed proposals pending, even when labels and citations resemble canonical material. Inventory and queue validation use the same citation-ID accounting.
+
+Publication validates approved relation citations with the same segment, video, URL, and timestamp contract as evidence. Unapproved relations remain canonical history and are excluded from the public graph. Sanitized video metadata includes sources referenced only by visuals or relations. Published-artifact validation rejects private transcripts and unapproved concepts, evidence, or relations. See the [September specification review](specification-gaps-and-issues-2026-09-19.md) for fixes and remaining gaps.
 
 Before accepting a new candidate, the processor runs the caption-only boundary assessment. It merges nearby non-terminal cues into bounded sentence-like units, proposes complete-unit start/end times, and flags `starts_mid_sentence`, `ends_mid_sentence`, `too_short`, and `needs_context`. Flagged candidates are deferred with a review note; the cited segment IDs and the 30-second maximum remain authoritative. Measure the existing reviewed corpus with:
 
@@ -235,7 +261,7 @@ For an automatic high-overlap rewrite pass before publishing, opt in explicitly:
 python -m processors.cli publish --kb table-tennis --auto-rephrase-high-overlap
 ```
 
-The same stage can be run independently with `rephrase-excerpts`. It calls the configured `gpt-5.4-mini`
+The same stage can be run independently with `rephrase-excerpts`. It calls the configured `gpt-5.6-luna`
 profile only for flagged excerpts, never escalates automatically, writes a private rewrite audit under
 `data/manifests/<kb>/`, and changes only the canonical `excerpt` field. If Codex is unavailable or a rewrite still
 has high overlap, the command fails rather than publishing an unverified result. Static builds and CI do not invoke
@@ -299,6 +325,71 @@ Codex extraction does not request a service tier. Omitting the override uses the
 
 ## Automation boundary
 
+The [October 14 automated repair study](automated-published-repair-study-2026-10-14.md), tracked under P1-51, now has a typed article repair path. `plan-published-repairs` chunks all original source rows, drafts all requested units, reduces large articles and separately verifies proposed values against source text without the draft verdict/confidence. One bounded feedback revision can repair rejected drafts; remaining uncertainty or oversized proof is explicit. Private per-call checkpoints resume without canonical mutation. Per-unit schema restrictions and runtime checks enforce complete keys, source ownership and edit permissions.
+
+`apply-published-repairs` accepts explicit separately verified, reviewed article IDs and reviewer provenance. It preserves identity/source/visual/provenance/unrelated records, archives originals, checks stale fingerprints/hashes and new collision/taxonomy violations, then replaces files atomically with a recoverable journal. Complete semantic application records fresh editorial coverage; mechanical duration exclusions and exact summary filler deletion receive no semantic credit. Canonical and archive serialization must parse through the same safe YAML reader without value changes. Rollback rejects unrelated editor changes.
+
+The normal Codex incorporation path uses the same separate support verifier. Duration conflicts remain visible in span assessment, envelope repair and validation instead of disappearing through clamping. Deterministic summaries now return direct content without the template, while already published filler is removed only through explicit reviewed mechanical plans. The saved pause blocks normal processing and suppresses publication-time prose regeneration until deliberately released. P1-50 remains the full-corpus gate; no unchanged-source re-ingestion, stronger model or inferred visual verification is introduced.
+
 GitHub Actions may safely run tests and build already reviewed public data. It should not initially scrape channels, download media, or invoke Codex on a schedule. Those operations are local/manual because YouTube access can be fragile, Codex has authentication and cost implications, and neither LLM proposals nor inferred visual timestamps should publish without review.
 
 Offline video download/transcoding remains a future, user-controlled feature. Any temporary review media or later offline archive stays outside Git and GitHub Pages.
+
+## Review queue identity and retry rotation — 2026-10-13
+
+Queue rebuilds preserve review decisions by video ID, extraction candidate ID, and candidate content hash. Distinct proposals can share an extraction ID; their decisions, attempt counters, provenance, and optional human history remain separate. Changed content returns to pending. Previously erased decisions are not inferred from logs or existing citations: those proposals receive fresh source-grounded adjudication.
+
+Within the selected video pool, bounded adjudication favors the fewest prior attempts, then the oldest attempt. Deferrals remain retryable and receive service as other proposals accumulate attempts. This changes selection order only; model, confidence, transcript, boundary, and publication gates remain unchanged. See P1-48 (identity correction) and P1-38 (remaining selection provenance/source evaluation).
+
+## Semantic corrections and exact-citation guard — 2026-10-14
+
+The [expanded post-collision audit](affected-content-spot-check-2026-10-14.md) repaired claim qualifiers, selected-citation completeness, equivalent evidence repetitions, and review-oriented summaries. Superseded editorial records are retained in `content/kbs/table-tennis/annotations/content-audit-2026-10-14.yaml`; two outgoing-shot records remain unreviewed and their proposal has an audited Codex rejection.
+
+Adjudication prompt 1.1.0 preserves role/condition qualifiers and requires every excerpt clause to be supported by selected rows. Existing editorial notes are supplied as advice, never evidence. The model and validation thresholds are unchanged. Approved citations are deduplicated by topic/video/segments; validation also accounts for separate visual windows. Distinct useful claims may require separate reviewed source spans. Deterministic summaries omit detected review rationale and use the reviewed definition when necessary, with definition-aware fallback invalidation; hand-authored and Codex summaries remain preserved.
+
+The caption-only screen still identifies broader review work under P1-14/P1-34; a flag is not automatically a factual error. Full source/semantic quality is not established by structural validation or a single model replay.
+
+The final neutral-definition wording instruction is recorded as adjudication prompt **1.1.1**; the earlier isolated mismatch replay retains its actual **1.1.0** provenance.
+
+The [second remediation batch](published-content-remediation-batch-2-2026-10-14.md) found ball/racket/spatial-object topic confusion and repeated broad claims on caption fragments. Prompt **1.1.2** distinguishes the object being described; the configured model/profile remain unchanged. Misclassified existing evidence is quarantined with its original editorial history rather than silently mapped to a new topic. A caption extending beyond cached video duration remains excluded pending source timing reconciliation (P1-14/P1-34).
+
+## Exhaustive public-content remediation (P1-50)
+
+The [complete audit workflow](full-published-audit-workflow-2026-10-14.md) inventories every publishable article field, citation, relation, and visual claim. CLI commands prepare-published-audit, next-published-audit, and record-published-audit provide stable-order coverage and private checkpoints without canonical promotion or publication. Every claim is compared with exact selected captions, with nearby context kept separate. Partial/stale reviews are rejected; changed content/source inputs reopen the article and preserve prior history. Zero unchecked/unresolved units and final release verification are required before declaring the campaign done. This supplements semantic adjudication with exhaustive review, rather than replacing extraction with fabricated candidates.
+
+The exhaustive audit now has an execution stage: run-published-audit checks every pending unit in source-bounded chunks using the configured Codex profile and shared read-only/schema/timeout/budget transport. Private machine proposals and editorial approval have separate counters; no model proposal edits or approves canonical content. Prompt 1.0.1 distinguishes article synthesis from citation-level support and marks prior proposals stale. Exact source IDs are constrained in the response schema and checked again. Shared label/source overlaps and source-metadata consistency are included. validate-published-audit and verify-release.ps1 -RequireFullAudit refuse full-campaign completion while work remains.
+
+For legacy youtube-transcript-api tracks with missing origin, TranscriptTrack now derives origin from the stored is_generated Boolean. This corrects 163 cached generated tracks without rewriting captions, timestamps, cache files, explicit origins, or other-provider metadata. Actual cross-field conflicts remain audit blockers. See P1-34/P1-50 and the full audit workflow.
+
+Current verifier policy is **1.1.1** (draft/application 1.1.0): ground claimed actors/objects/conditions in owned wording, abstain on unidentified referents in incomplete clauses, and preserve support for complete independent narrower instructions. Configured GPT-6 Luna effort is **high** following operator request and official reviewer guidance. Two revised-policy controls distinguished the known unsupported referent from its supported counterpart; high alone did not. Profile/policy changes invalidate stale verifier results; primary review remains required. See [the effort checkpoint](operations.md#luna-reviewer-effort-and-referent-check--2026-10-15-1244).
+
+Full-audit transport recovery (2026-10-15 18:28): per-unit draft wire schemas now force irrelevant edit value channels to null, so scalar clears cannot also carry empty string/facet arrays that runtime rejects. Runtime/schema meaning and valid cache outputs are unchanged. Three consecutive fresh Codex transport failures stop the campaign with `transport_failure_circuit`, preserving every failed/pending job; fresh success resets the counter. Inspect the cause, then resume with `--retry-failed`; failed attempts never receive source-review credit. Existing active processes retain imported code until their next invocation. See [recovery operations](operations.md#full-audit-failure-recovery--2026-10-15-1828).
+
+Processor children now explicitly opt out of Apps with `--config features.apps=false` on every extraction, shared adjudication/repair, summary/batch-summary and rephrasing invocation (2026-10-15 19:27). These jobs operate on supplied text, and the earlier 51 transient failures originated in unnecessary Apps MCP startup. Private provenance records the opt-out; global app settings/model/high/budgets and source policies remain unchanged. All 231 Python tests/Ruff pass, but original active processes keep imported old code until the next invocation. See [operations](operations.md#processor-apps-opt-out--2026-10-15-1927); no claim that other MCP/plugins are disabled or that savings have been measured.
+
+## Coverage-first audit implementation — 2026-10-15 23:18
+
+The default article path is now `plan-published-repairs --kb table-tennis --max-calls 20 --max-articles 10`: audit existing values first with complete citation proofs. Clean articles are not drafted again. Use `--repair-confirmed` for one targeted repair of confirmed failures and separate verification of changed claims; there is no automatic reducer/revision loop. Oversized proofs, unresolved semantics and footage stay explicit exceptions. The CLI refuses more than 20 calls per invocation and releases the KB lock after its article/call batch. Use `--concept-ids ID_1,ID_2` for controlled selection. Import staged exact plan/fingerprint-bound primary reviews with repeatable `--primary-review-file PATH --max-calls 0`; this makes zero model calls and grants no public approval. An imported rejection blocks application. Every new coverage-first plan requires an exact final primary-review artifact before application; changed plans need a fresh review. Unwatched visual claims stay needs_footage and cannot be approved by this source-only import. Existing valid terminal plans/call provenance are retained. Apply explicit reviewed IDs with the existing `apply-published-repairs` command; archives, transactions, freshness and full release gates remain mandatory.
+
+Repair schemas and preflight use the configured KB facet vocabulary. Structural/prose findings have no semantic clearance credit. Cache reuse keeps source/topic/target/context/model/policy dependencies; unrelated rating/alias changes no longer invalidate all citation support through an article-wide field hash. Batch application caches immutable transcript inputs under the KB lock while reloading canonical content and rechecking fresh fingerprints. The old long recovery was stopped at the budget reservation boundary; its last in-flight call finished and the authorized60M allowance was restored. No background replacement loop starts automatically. See the [measured redesign](audit-throughput-redesign-2026-10-15.md).
+
+## Account quota cutoff
+
+Before each uncached LLM call, the shared budget guard reads actual Codex account rate limits through the read-only app-server `account/rateLimits/read` method. This is independent of local per-KB token counters and makes no model request. Configure `llm_budget.account_quota` in `config/processors.yaml`:
+
+```yaml
+account_quota:
+  enabled: true
+  stop_at_used_percent: 80
+  five_hour_reset_grace_minutes: 10
+```
+
+At or above the cutoff, a 300-minute (five-hour) window blocks new calls only when **more than** the configured grace remains until its reset. Exactly 10 minutes remaining is exempt with the defaults. Window duration, not primary/secondary position, identifies the five-hour window. Weekly and other reported quota windows still block at the cutoff even near reset. The multi-bucket quota view takes precedence when available. Missing, malformed or expired quota information defers calls; it is never treated as zero usage. Local token budgets continue to apply, including during the grace period. Disabling the local token ledger does not disable an enabled account quota guard.
+
+The guard uses the existing budget-deferred checkpoint path, so completed work survives and callers can resume after capacity recovers. It prevents the next LLM call, does not kill an in-flight call, and cannot prevent other account activity from changing quota between checks. Existing long-running campaigns must restart/resume to load this code/configuration. No automatic quota reset or credit purchase is performed.
+
+Official protocol: https://learn.chatgpt.com/docs/app-server#6-rate-limits-chatgpt
+
+### Throughput safeguards (2026-10-16)
+
+Exact-current complete primary review can authorize typed optional-difficulty removal through `plan-reviewed-rating-removals`, without drafting/verifying the deletion with a model. All other proposed units and exceptions remain unchanged; application still requires the final plan and normal transaction/source guards. Audit claim freshness is separate from advisory topic overlap: overlap-only changes keep claim decisions but leave explicit pending overlap review and block full clearance. Batch application reuses checked post-application state under the KB lock and rechecks changed files. See [operations](operations.md#throughput-implementation--2026-10-16-1426-eest) and the [measured diagnosis](audit-throughput-diagnosis-2026-10-16.md). Release once per completed 20–30-article reviewed correction batch; no new completion estimate until representative semantic benchmarking.

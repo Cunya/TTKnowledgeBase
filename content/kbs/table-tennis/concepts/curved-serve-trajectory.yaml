@@ -2,183 +2,233 @@ id: concept-curved-serve-trajectory
 slug: curved-serve-trajectory
 label: Curved serve trajectory
 aliases:
-  - curved path
-  - serve trajectory curve
+- curved path
+- serve trajectory curve
 short_definition: A hook serve needs a curved arm and body path, not a simple forward-then-downward swing, so the force direction can wrap around the ball.
 evidence_summary: >-
-  Curved serve trajectory brings together several connected ideas. The serve's trajectory as a
-  curved motion driven by body rotation, explicitly rejecting a straight forward-then-downward
-  path. The ball as fast and curving, which directly supports the curved trajectory concept. A
-  distinct sideways curve and a heavy arc as part of the serve's effect and disguise. A curved
-  flick, a long arc, and a curved trajectory. The serve must curve and follow an arc, not a linear
-  forward-downward path. A useful contrast is between straight balls and balls that curve to the
-  side and become difficult to return. High arc, floating arc, and curved brushing/trajectory
-  descriptions as part of serve reading and spin generation. The pulling feel makes the ball curve
-  aggressively and it with a high, predictable bounce from more forceful chopping. Additional
-  points reinforce the same theme. Together, these principles show how the topic is applied in
-  practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:1f26cb3c61aaf0b17c5dc93924b6ae45743489597c9f68a454748eb421c3ece5"
+  A sideways-curving serve deviates from the opponent’s expected target, requiring adjustment and making the return more difficult.
+evidence_summary_source_hash: "sha256:75e4d28d75fe2265d60aee988bc773d2ecf68c5b0c6491069f726f5bb43afed3"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
   category:
-    - stroke
-    - fundamentals
+  - stroke
+  - fundamentals
   side:
-    - neutral
+  - neutral
   spin:
-    - sidespin
+  - sidespin
   level:
-    - advanced
+  - advanced
 difficulty: advanced
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: c32d637cbeeb4ed2736adcee40791882401aa32cfc0a9352b7794a5357deabc3
-  prompt_version: candidate-review-v1
+  input_hash: sha256:6ebe0da364ec2a8e21236056c99d4fd1ae508043daf43813eb6b0753b52ed7de
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: xBlnTfR0eOY-concept-serve-curve-body-path-reviewed
-    evidence_type: explanation
-    excerpt: A hook serve needs a curved arm and body path, not a simple forward-then-downward swing, so the force direction can wrap around the ball.
-    reason: The speaker defines the serve's trajectory as a curved motion driven by body rotation, explicitly rejecting a straight forward-then-downward path.
-    confidence: 0.89
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: xBlnTfR0eOY
-      start_ms: 278400
-      end_ms: 308033
-      url: https://www.youtube.com/watch?v=xBlnTfR0eOY&t=278s
-      segment_ids:
-        - xBlnTfR0eOY:00097
-        - xBlnTfR0eOY:00101
-        - xBlnTfR0eOY:00102
-        - xBlnTfR0eOY:00103
-        - xBlnTfR0eOY:00105
-  - id: UknMVwzNNr8-concept-curved-serve-trajectory-reviewed
-    evidence_type: example
-    excerpt: A serve or ball path that curves, typically as a result of spin and brushing action.
-    reason: The speaker describes the ball as fast and curving, which directly supports the curved trajectory concept.
-    confidence: 0.88
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: UknMVwzNNr8
-      start_ms: 172366
-      end_ms: 177566
-      url: https://www.youtube.com/watch?v=UknMVwzNNr8&t=172s
-      segment_ids:
-        - UknMVwzNNr8:00062
-        - UknMVwzNNr8:00063
-  - id: GOAyEFoSibE-concept-curved-serve-trajectory-reviewed
-    evidence_type: explanation
-    excerpt: A serve path that bends sideways or arcs, rather than traveling flat, helping disguise the spin and influence the return.
-    reason: The speaker describes a distinct sideways curve and a heavy arc as part of the serve's effect and disguise.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: GOAyEFoSibE
-      start_ms: 659266
-      end_ms: 677800
-      url: https://www.youtube.com/watch?v=GOAyEFoSibE&t=659s
-      segment_ids:
-        - GOAyEFoSibE:00153
-        - GOAyEFoSibE:00154
-        - GOAyEFoSibE:00155
-  - id: HmoqZLuY1Ik-concept-curved-serve-trajectory-reviewed
-    evidence_type: explanation
-    excerpt: A serve path that curves rather than traveling in a straight line, often used to disguise spin and trajectory.
-    reason: The speaker explicitly describes a curved flick, a long arc, and a curved trajectory.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: HmoqZLuY1Ik
-      start_ms: 184500
-      end_ms: 190800
-      url: https://www.youtube.com/watch?v=HmoqZLuY1Ik&t=184s
-      segment_ids:
-        - HmoqZLuY1Ik:00072
-        - HmoqZLuY1Ik:00073
-        - HmoqZLuY1Ik:00074
-  - id: x5cNiaE61qg-concept-curved-serve-trajectory-reviewed
-    evidence_type: definition
-    excerpt: Serving spin so the ball bends or curves rather than traveling straight.
-    reason: The speaker directly contrasts a straight ball with a curved sidespin ball and explains that correct friction placement produces the curve.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: x5cNiaE61qg
-      start_ms: 69800
-      end_ms: 82866
-      url: https://www.youtube.com/watch?v=x5cNiaE61qg&t=69s
-      segment_ids:
-        - x5cNiaE61qg:00029
-        - x5cNiaE61qg:00030
-        - x5cNiaE61qg:00033
-  - id: 7Zz_cVWrgng-concept-curved-serve-trajectory-reviewed
-    evidence_type: definition
-    excerpt: A serve path that follows a curved arc rather than a straight line, used to create sidespin and disguise the ball path.
-    reason: The speaker repeatedly emphasizes that the serve must curve and follow an arc, not a linear forward-downward path.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 7Zz_cVWrgng
-      start_ms: 524900
-      end_ms: 553300
-      url: https://www.youtube.com/watch?v=7Zz_cVWrgng&t=524s
-      segment_ids:
-        - 7Zz_cVWrgng:00107
-        - 7Zz_cVWrgng:00110
-        - 7Zz_cVWrgng:00114
-  - id: pxxgpWNbXSM-concept-curved-serve-trajectory-reviewed
-    evidence_type: explanation
-    excerpt: A serve path that bends to the side rather than traveling straight, making it harder for the opponent to return.
-    reason: The speaker explicitly contrasts straight balls with balls that curve to the side and become difficult to return.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: pxxgpWNbXSM
-      start_ms: 237200
-      end_ms: 247600
-      url: https://www.youtube.com/watch?v=pxxgpWNbXSM&t=237s
-      segment_ids:
-        - pxxgpWNbXSM:00044
-        - pxxgpWNbXSM:00045
-        - pxxgpWNbXSM:00047
-  - id: kF3mAZD3GHs-concept-curved-serve-trajectory-reviewed
-    evidence_type: explanation
-    excerpt: A serve trajectory that curves rather than traveling flat, often used as a sign of spin and disguise.
-    reason: The speaker contrasts high arc, floating arc, and curved brushing/trajectory descriptions as part of serve reading and spin generation.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: kF3mAZD3GHs
-      start_ms: 231333
-      end_ms: 239033
-      url: https://www.youtube.com/watch?v=kF3mAZD3GHs&t=231s
-      segment_ids:
-        - kF3mAZD3GHs:00044
-  - id: dg0kTVGE8qQ-concept-curved-serve-trajectory-reviewed
-    evidence_type: explanation
-    excerpt: Proper brushing and friction make the serve curve aggressively rather than travel forward in a flat, predictable way.
-    reason: The speaker says the pulling feel makes the ball curve aggressively and contrasts it with a high, predictable bounce from more forceful chopping.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: dg0kTVGE8qQ
-      start_ms: 597333
-      end_ms: 621500
-      url: https://www.youtube.com/watch?v=dg0kTVGE8qQ&t=597s
-      segment_ids:
-        - dg0kTVGE8qQ:00141
-        - dg0kTVGE8qQ:00142
-        - dg0kTVGE8qQ:00144
-        - dg0kTVGE8qQ:00145
+- id: xBlnTfR0eOY-concept-serve-curve-body-path-reviewed
+  evidence_type: explanation
+  excerpt: A hook serve needs a curved arm and body path, not a simple forward-then-downward swing, so the force direction can wrap around the ball.
+  reason: The speaker defines the serve's trajectory as a curved motion driven by body rotation, explicitly rejecting a straight forward-then-downward path.
+  confidence: 0.89
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: xBlnTfR0eOY
+    start_ms: 278400
+    end_ms: 308033
+    url: https://www.youtube.com/watch?v=xBlnTfR0eOY&t=278s
+    segment_ids:
+    - xBlnTfR0eOY:00097
+    - xBlnTfR0eOY:00101
+    - xBlnTfR0eOY:00102
+    - xBlnTfR0eOY:00103
+    - xBlnTfR0eOY:00105
+- id: UknMVwzNNr8-concept-curved-serve-trajectory-reviewed
+  evidence_type: example
+  excerpt: A serve or ball path that curves, typically as a result of spin and brushing action.
+  reason: The speaker describes the ball as fast and curving, which directly supports the curved trajectory concept.
+  confidence: 0.88
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: UknMVwzNNr8
+    start_ms: 172366
+    end_ms: 177566
+    url: https://www.youtube.com/watch?v=UknMVwzNNr8&t=172s
+    segment_ids:
+    - UknMVwzNNr8:00062
+    - UknMVwzNNr8:00063
+- id: GOAyEFoSibE-concept-curved-serve-trajectory-reviewed
+  evidence_type: explanation
+  excerpt: A serve path that bends sideways or arcs, rather than traveling flat, helping disguise the spin and influence the return.
+  reason: The speaker describes a distinct sideways curve and a heavy arc as part of the serve's effect and disguise.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: GOAyEFoSibE
+    start_ms: 659266
+    end_ms: 677800
+    url: https://www.youtube.com/watch?v=GOAyEFoSibE&t=659s
+    segment_ids:
+    - GOAyEFoSibE:00153
+    - GOAyEFoSibE:00154
+    - GOAyEFoSibE:00155
+- id: HmoqZLuY1Ik-concept-curved-serve-trajectory-reviewed
+  evidence_type: explanation
+  excerpt: A serve path that curves rather than traveling in a straight line, often used to disguise spin and trajectory.
+  reason: The speaker explicitly describes a curved flick, a long arc, and a curved trajectory.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: HmoqZLuY1Ik
+    start_ms: 184500
+    end_ms: 190800
+    url: https://www.youtube.com/watch?v=HmoqZLuY1Ik&t=184s
+    segment_ids:
+    - HmoqZLuY1Ik:00072
+    - HmoqZLuY1Ik:00073
+    - HmoqZLuY1Ik:00074
+- id: x5cNiaE61qg-concept-curved-serve-trajectory-reviewed
+  evidence_type: definition
+  excerpt: Serving spin so the ball bends or curves rather than traveling straight.
+  reason: The speaker directly contrasts a straight ball with a curved sidespin ball and explains that correct friction placement produces the curve.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: x5cNiaE61qg
+    start_ms: 69800
+    end_ms: 82866
+    url: https://www.youtube.com/watch?v=x5cNiaE61qg&t=69s
+    segment_ids:
+    - x5cNiaE61qg:00029
+    - x5cNiaE61qg:00030
+    - x5cNiaE61qg:00033
+- id: 7Zz_cVWrgng-concept-curved-serve-trajectory-reviewed
+  evidence_type: definition
+  excerpt: A serve path that follows a curved arc rather than a straight line, used to create sidespin and disguise the ball path.
+  reason: The speaker repeatedly emphasizes that the serve must curve and follow an arc, not a linear forward-downward path.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 7Zz_cVWrgng
+    start_ms: 524900
+    end_ms: 553300
+    url: https://www.youtube.com/watch?v=7Zz_cVWrgng&t=524s
+    segment_ids:
+    - 7Zz_cVWrgng:00107
+    - 7Zz_cVWrgng:00110
+    - 7Zz_cVWrgng:00114
+- id: pxxgpWNbXSM-concept-curved-serve-trajectory-reviewed
+  evidence_type: explanation
+  excerpt: A serve path that bends to the side rather than traveling straight, making it harder for the opponent to return.
+  reason: The speaker explicitly contrasts straight balls with balls that curve to the side and become difficult to return.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: pxxgpWNbXSM
+    start_ms: 237200
+    end_ms: 247600
+    url: https://www.youtube.com/watch?v=pxxgpWNbXSM&t=237s
+    segment_ids:
+    - pxxgpWNbXSM:00044
+    - pxxgpWNbXSM:00045
+    - pxxgpWNbXSM:00047
+- id: kF3mAZD3GHs-concept-curved-serve-trajectory-reviewed
+  evidence_type: explanation
+  excerpt: A serve trajectory that curves rather than traveling flat, often used as a sign of spin and disguise.
+  reason: The speaker contrasts high arc, floating arc, and curved brushing/trajectory descriptions as part of serve reading and spin generation.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: kF3mAZD3GHs
+    start_ms: 231333
+    end_ms: 239033
+    url: https://www.youtube.com/watch?v=kF3mAZD3GHs&t=231s
+    segment_ids:
+    - kF3mAZD3GHs:00044
+- id: dg0kTVGE8qQ-concept-curved-serve-trajectory-reviewed
+  evidence_type: explanation
+  excerpt: Proper brushing and friction make the serve curve aggressively rather than travel forward in a flat, predictable way.
+  reason: The speaker says the pulling feel makes the ball curve aggressively and contrasts it with a high, predictable bounce from more forceful chopping.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: dg0kTVGE8qQ
+    start_ms: 597333
+    end_ms: 621500
+    url: https://www.youtube.com/watch?v=dg0kTVGE8qQ&t=597s
+    segment_ids:
+    - dg0kTVGE8qQ:00141
+    - dg0kTVGE8qQ:00142
+    - dg0kTVGE8qQ:00144
+    - dg0kTVGE8qQ:00145
+- id: 7Zz_cVWrgng-concept-curved-serve-trajectory-codex-reviewed
+  evidence_type: explanation
+  excerpt: The hook-serve movement follows an arc, and its trajectory is neither straightforward nor linear.
+  reason: These contiguous segments describe the hook-serve movement as an arc and explicitly distinguish its trajectory from a straightforward or linear path.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 7Zz_cVWrgng
+    start_ms: 536966
+    end_ms: 563833
+    url: https://www.youtube.com/watch?v=7Zz_cVWrgng&t=536s
+    segment_ids:
+    - 7Zz_cVWrgng:00110
+    - 7Zz_cVWrgng:00111
+    - 7Zz_cVWrgng:00112
+    - 7Zz_cVWrgng:00113
+    - 7Zz_cVWrgng:00114
+    - 7Zz_cVWrgng:00115
+    - 7Zz_cVWrgng:00116
+- id: HmoqZLuY1Ik-concept-curved-serve-trajectory-codex-reviewed
+  evidence_type: explanation
+  excerpt: The serve uses a curved flick with a subtle, light force.
+  reason: This contiguous serving moment explicitly describes the required curved flick and how to apply it. The existing concept covers the same durable topic; the selected span does not directly support specific spin types or an intermediate difficulty level.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: HmoqZLuY1Ik
+    start_ms: 91133
+    end_ms: 100266
+    url: https://www.youtube.com/watch?v=HmoqZLuY1Ik&t=91s
+    segment_ids:
+    - HmoqZLuY1Ik:00032
+    - HmoqZLuY1Ik:00033
+    - HmoqZLuY1Ik:00034
+    - HmoqZLuY1Ik:00035
+    - HmoqZLuY1Ik:00036
+- id: pxxgpWNbXSM-concept-curved-serve-trajectory-codex-reviewed
+  evidence_type: explanation
+  excerpt: A straight serve is easy for the opponent to aim at, but a serve that curves to the side is less straightforward to hit and becomes difficult to return.
+  reason: A sideways-curving serve deviates from the opponent’s expected target, requiring adjustment and making the return more difficult.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: pxxgpWNbXSM
+    start_ms: 228533
+    end_ms: 247600
+    url: https://www.youtube.com/watch?v=pxxgpWNbXSM&t=228s
+    segment_ids:
+    - pxxgpWNbXSM:00042
+    - pxxgpWNbXSM:00043
+    - pxxgpWNbXSM:00044
+    - pxxgpWNbXSM:00045
+    - pxxgpWNbXSM:00046
+    - pxxgpWNbXSM:00047

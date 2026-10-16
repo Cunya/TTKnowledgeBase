@@ -6,11 +6,9 @@ aliases:
   - step in to loop balls in the middle
 short_definition: When the incoming ball is in the middle, the correct adjustment is to step forward diagonally rather than moving only sideways.
 evidence_summary: >-
-  Step forward diagonally for middle balls brings together several connected ideas. Sideways
-  movement for middle balls causes lack of power, and the correct method is to step forward
-  diagonally. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:3e86518db47271900a0f8bf248a8229c5eb0bb9ce135d957d7aedb3d917ee5db"
+  When the incoming ball is in the middle, the correct adjustment is to step forward diagonally
+  rather than moving only sideways.
+evidence_summary_source_hash: "sha256:66701fe9f79e714d55336102725e6235505d465a3e99ac10941188f73821dd86"
 evidence_summary_generator: "deterministic"
 concept_type: footwork
 facets:
@@ -28,10 +26,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 693211aca1ae13fcd7f8cae5ad69527533bf394cc157ac93f59a40d26a6ff094
-  prompt_version: candidate-review-v1
+  input_hash: sha256:0bc0f074aca503900c57c256b2833583c6caea791ee1fa8561829840ee341a53
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: F0HvzL1Wk3w-concept-step-in-for-middle-balls-reviewed
     evidence_type: explanation
@@ -39,7 +40,7 @@ evidence:
     reason: The speaker explains that sideways movement for middle balls causes lack of power, and the correct method is to step forward diagonally.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: F0HvzL1Wk3w
       start_ms: 197266
@@ -47,3 +48,21 @@ evidence:
       url: https://www.youtube.com/watch?v=F0HvzL1Wk3w&t=197s
       segment_ids:
         - F0HvzL1Wk3w:00037
+  - id: F0HvzL1Wk3w-concept-step-in-for-middle-balls-codex-reviewed
+    evidence_type: explanation
+    excerpt: For middle balls, do not move sideways; step in and move forward diagonally for the backhand loop to avoid being out of position and powerless.
+    reason: These contiguous segments explicitly warn against lateral movement and state that middle balls require stepping in and moving forward diagonally for the backhand loop.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: F0HvzL1Wk3w
+      start_ms: 221266
+      end_ms: 245000
+      url: https://www.youtube.com/watch?v=F0HvzL1Wk3w&t=221s
+      segment_ids:
+        - F0HvzL1Wk3w:00042
+        - F0HvzL1Wk3w:00043
+        - F0HvzL1Wk3w:00044
+        - F0HvzL1Wk3w:00045
+        - F0HvzL1Wk3w:00046

@@ -2,42 +2,55 @@ id: concept-clear-space-for-step-around
 slug: clear-space-for-step-around
 label: Clear space for step-around
 aliases:
-  - clear that space
-  - move out of the way
-short_definition: The player must move the right foot and body out of the way to create room for a step-around attack.
+- clear that space
+- move out of the way
+short_definition: After recovering, move your right foot clear of the way for the step-around; this creates an opportunity for a power loop.
 evidence_summary: >-
-  Clear space for step-around brings together several connected ideas. Explicitly says the right
-  foot must clear the way and create space for a power loop. Together, these principles show how
-  the topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:bf2e2f2e266313ba5b7b521a37cc526fd106fff0c8e8477fff37b1dcf7c8dd97"
-evidence_summary_generator: "deterministic"
+  After recovering, move your right foot clear of the way for the step-around; clearing that space creates an opportunity for a power loop.
 concept_type: fundamentals
 facets:
   category:
-    - fundamentals
-  side:
-    - neutral
-difficulty: intermediate
+  - fundamentals
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: e82750d5d50c47e59e54a79f7553cb3fd0a6704d341d604ab5b60bbbc75c2a6c
-  prompt_version: candidate-review-v1
+  input_hash: sha256:06c47925cfc86a142d242dcbefa22f88e75ff21aa29354c7bd32a39cce4f78f1
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: McwvbLZZQmA-concept-clear-space-for-step-around-reviewed
-    evidence_type: explanation
-    excerpt: The player must move the right foot and body out of the way to create room for a step-around attack.
-    reason: Explicitly says the right foot must clear the way and create space for a power loop.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: McwvbLZZQmA
-      start_ms: 86566
-      end_ms: 99900
-      url: https://www.youtube.com/watch?v=McwvbLZZQmA&t=86s
-      segment_ids:
-        - McwvbLZZQmA:00018
-        - McwvbLZZQmA:00019
-        - McwvbLZZQmA:00020
+- id: McwvbLZZQmA-concept-clear-space-for-step-around-reviewed
+  evidence_type: explanation
+  excerpt: The player must move the right foot and body out of the way to create room for a step-around attack.
+  reason: Explicitly says the right foot must clear the way and create space for a power loop.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: McwvbLZZQmA
+    start_ms: 86566
+    end_ms: 99900
+    url: https://www.youtube.com/watch?v=McwvbLZZQmA&t=86s
+    segment_ids:
+    - McwvbLZZQmA:00018
+    - McwvbLZZQmA:00019
+    - McwvbLZZQmA:00020
+- id: McwvbLZZQmA-concept-clear-space-for-step-around-codex-reviewed
+  evidence_type: explanation
+  excerpt: After recovering, move the right foot out of the way to clear space and create an opportunity for a power loop.
+  reason: After recovering, move your right foot out of the way for the step-around; clearing that space creates an opportunity for a power loop.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: McwvbLZZQmA
+    start_ms: 86566
+    end_ms: 99900
+    url: https://www.youtube.com/watch?v=McwvbLZZQmA&t=86s
+    segment_ids:
+    - McwvbLZZQmA:00018
+    - McwvbLZZQmA:00019
+    - McwvbLZZQmA:00020

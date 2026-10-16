@@ -6,12 +6,8 @@ aliases:
   - step in to hit
 short_definition: A short ball should be taken by stepping in rather than waiting in place.
 evidence_summary: >-
-  Step in for a short ball brings together several connected ideas. A short ball from a slow ball
-  and to step in for a short ball. You should not reach with your arm and should move your feet
-  forward for a short ball. For slow, short balls you must step in, with a three-count then the
-  step. Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:f25304c0c9781c67ac33d0e35da8dd56bc9b1deb4dcd7a378a2f31944a455ab6"
+  A short ball should be taken by stepping in rather than waiting in place.
+evidence_summary_source_hash: "sha256:8bc2cd85b1ac919f4fe93f25ffd3bde21ffa5c33c2ed8e0215c9d39ae12583ad"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -23,10 +19,13 @@ facets:
 difficulty: beginner
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: a0aebb5ab98c7ac0ef073194ca724c947507618271c41bb68113535248a61ed8
-  prompt_version: candidate-review-v1
+  input_hash: sha256:9906df310bf2c5b7474a47616529e1436c8cadb16d4c82f9023bf6f3ac91d174
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: ZnkxF-IkY6U-concept-step-in-for-short-ball-reviewed
     evidence_type: definition
@@ -34,7 +33,7 @@ evidence:
     reason: The speaker explicitly distinguishes a short ball from a slow ball and says to step in for a short ball.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ZnkxF-IkY6U
       start_ms: 109100
@@ -49,7 +48,7 @@ evidence:
     reason: The speaker says you should not reach with your arm and should move your feet forward for a short ball.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: pbILplLUhnI
       start_ms: 445100
@@ -64,7 +63,7 @@ evidence:
     reason: The speaker explicitly says that for slow, short balls you must step in, with a three-count then the step.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: -8Nnu9zUAP8
       start_ms: 607080
@@ -73,3 +72,35 @@ evidence:
       segment_ids:
         - -8Nnu9zUAP8:00271
         - -8Nnu9zUAP8:00275
+  - id: 7d1fUkOzCjM-concept-step-in-for-short-balls-codex-reviewed
+    evidence_type: explanation
+    excerpt: If it's short, step in. And when you take a step forward, it's easier to find the combined force.
+    reason: These contiguous segments directly state that a short ball should be met by stepping in and that stepping forward helps find combined force.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 7d1fUkOzCjM
+      start_ms: 449033
+      end_ms: 461866
+      url: https://www.youtube.com/watch?v=7d1fUkOzCjM&t=449s
+      segment_ids:
+        - 7d1fUkOzCjM:00142
+        - 7d1fUkOzCjM:00143
+  - id: pbILplLUhnI-concept-step-in-for-a-short-ball-codex-reviewed
+    evidence_type: definition
+    excerpt: For a short ball, move your feet forward rather than reaching with your arm, keeping the same arm-to-body distance.
+    reason: This contiguous 26-second span directly supports stepping forward for a short ball, avoiding arm reach, and maintaining arm-to-body spacing. It matches the supplied existing concept.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: pbILplLUhnI
+      start_ms: 445100
+      end_ms: 471166
+      url: https://www.youtube.com/watch?v=pbILplLUhnI&t=445s
+      segment_ids:
+        - pbILplLUhnI:00078
+        - pbILplLUhnI:00079
+        - pbILplLUhnI:00080
+        - pbILplLUhnI:00081

@@ -373,7 +373,7 @@ evidence:
     reason: The speaker contrasts long pushes with slower chopping style and fast short explosive touch pushes.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: SF0Sv2ZzrRI
       start_ms: 179040
@@ -388,7 +388,7 @@ evidence:
     reason: 'The speaker names the three variations directly: side push wide angle push, side push drive, and fast push.'
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: L-m_mjGB5X0
       start_ms: 24520
@@ -404,7 +404,7 @@ evidence:
     reason: The speaker contrasts push types by racket angle, spin, and speed, including half-spin and no-spin pushes that pop the ball up.
     confidence: 0.89
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: OMgoeirhpyc
       start_ms: 138400
@@ -421,7 +421,7 @@ evidence:
     reason: The transcript distinguishes slow pushes, drop-short pushes, long pushes, and a vertical-then-flattened push when spin is unclear.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: MV98YAD9lzs
       start_ms: 381800
@@ -441,7 +441,7 @@ evidence:
     reason: The speaker explicitly introduces varying pushes by placement, spin, and short-long changes.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: o6OyHBmkF2U
       start_ms: 439640
@@ -456,7 +456,7 @@ evidence:
     reason: The speaker varies the push by incoming spin, ball speed, and depth, including steady tempo on heavy spin, acceleration on slow balls, and different choices for fast/low balls.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: zR5tddUgfGQ
       start_ms: 277840
@@ -480,7 +480,7 @@ evidence:
     reason: The speaker repeatedly advises mixing push type, spin, placement, and rhythm and explicitly says the short game depends on variation.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: h5jUJL_P82w
       start_ms: 539166
@@ -499,7 +499,7 @@ evidence:
     reason: The lesson repeatedly contrasts slow controlled pushes, short pushes, guiding pushes, heavy long pushes, and quick long pushes as distinct variations.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hwT7cH6PbZQ
       start_ms: 555900
@@ -515,7 +515,7 @@ evidence:
     reason: The speaker explicitly distinguishes behavior for no/light spin versus heavier spin, recommending short compact motion for the former and more forward motion for the latter.
     confidence: 0.91
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: D1cBF0nsjKo
       start_ms: 352960
@@ -530,7 +530,7 @@ evidence:
     reason: The transcript gives a detailed racket-angle adjustment ladder for different incoming spins and serving styles.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: wSzmpXHp64Q
       start_ms: 414133
@@ -552,7 +552,7 @@ evidence:
     reason: The transcript distinguishes long push, short push, soft push, and side-swipe as different receive patterns with different tempos and effects.
     confidence: 0.9
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: DShIvrh0Yss
       start_ms: 171200
@@ -568,7 +568,7 @@ evidence:
     reason: The speaker frames the lesson around making pushes more threatening and varied, explicitly calling out push variations from serve receive.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: uAOIQu7TT0g
       start_ms: 12233
@@ -584,7 +584,7 @@ evidence:
     reason: The speaker contrasts a too-slow push with a fast, long push and says speed and placement matter more than spin.
     confidence: 0.94
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: T6kwb4YehYA
       start_ms: 135200
@@ -599,7 +599,7 @@ evidence:
     reason: "The speaker describes three push behaviors: absorb when spin is strong, attack when weak, and use smooth even-paced or accelerated motion depending on the serve's spin and quality."
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: PCRCB9FGBPg
       start_ms: 208633
@@ -610,6 +610,43 @@ evidence:
         - PCRCB9FGBPg:00043
         - PCRCB9FGBPg:00044
         - PCRCB9FGBPg:00045
+  - id: o6OyHBmkF2U-concept-push-variations-codex-reviewed
+    evidence_type: explanation
+    excerpt: If both players push well, you can mix one no-spin and one heavy-spin push, and add a short push during rallies. They'll struggle to adjust because the spins require completely different handling.
+    reason: The selected contiguous span explicitly explains varying push spin and adding a short push to disrupt the opponent's adjustment. The supplied existing concept has the same durable topic and exact matching ID.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: o6OyHBmkF2U
+      start_ms: 437200
+      end_ms: 461720
+      url: https://www.youtube.com/watch?v=o6OyHBmkF2U&t=437s
+      segment_ids:
+        - o6OyHBmkF2U:00160
+        - o6OyHBmkF2U:00161
+        - o6OyHBmkF2U:00162
+        - o6OyHBmkF2U:00163
+        - o6OyHBmkF2U:00164
+        - o6OyHBmkF2U:00165
+        - o6OyHBmkF2U:00166
+        - o6OyHBmkF2U:00167
+  - id: PCRCB9FGBPg-concept-push-variations-codex-reviewed
+    evidence_type: explanation
+    excerpt: When the opponent's serve is very spinny, use a smooth, even-paced push; when the spin is weak, accelerate through the ball to disrupt their rhythm and take the initiative.
+    reason: 'These contiguous segments directly explain two push variations selected according to incoming spin: smooth and even-paced for very spinny serves, and accelerated for weak spin.'
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: PCRCB9FGBPg
+      start_ms: 380733
+      end_ms: 395600
+      url: https://www.youtube.com/watch?v=PCRCB9FGBPg&t=380s
+      segment_ids:
+        - PCRCB9FGBPg:00079
+        - PCRCB9FGBPg:00080
+        - PCRCB9FGBPg:00081
 relations:
   - relation_type: variation_of
     target_concept_id: concept-push-technique

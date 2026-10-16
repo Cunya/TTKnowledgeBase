@@ -2,267 +2,270 @@ id: concept-ball-trajectory-classification
 slug: ball-trajectory-classification
 label: Ball trajectory classification
 aliases:
-  - three trajectories
-  - curve
-  - flat curve
-  - downward curve
-  - take-off curve
-short_definition: A simple classification of incoming ball paths into backspin, topspin, and half-high ball trajectories to help choose the correct stroke response.
+- three arcs
+short_definition: A classification of ball trajectories as pressing, flat, or looping arcs, with the swing path matched to the ball’s trajectory.
 evidence_summary: >-
-  Ball trajectory classification brings together several connected ideas. By explicitly
-  introducing three ball trajectories and naming them backspin, topspin, and half-high ball, each
-  with a curve description. A high arc to slow or out-of-bounds balls and it with a low arc that
-  is faster. Left or right spin changes the trajectory to straight or diagonal and the ball will
-  curve. Balls into near-net, on-table, mid-table, half-table, baseline, and explicitly names
-  short, half-long, and long balls. The curved brushing motion and arc creation to the fingers.
-  Table tennis is about three arcs and names them pressing, flat, and looping. Speed and
-  trajectory differ, and that trajectory is the most basic tell. There are fundamentally three
-  trajectories and names them through flick examples. Additional points reinforce the same theme.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:e6decf549bebfa3067bc483afe1ec9b3228b50a45ab7306a931b881ee24eaa32"
-evidence_summary_generator: "deterministic"
+  The three arcs are pressing, flat, and looping. Match the swing path to the ball’s trajectory.
 concept_type: fundamentals
 facets:
   category:
-    - fundamentals
-  level:
-    - beginner
-difficulty: beginner
+  - fundamentals
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: f7f12cd3d8f19b1201c89327d96f5c2c5ba354be6de5faddef6c41885e8c0789
-  prompt_version: candidate-review-v1
+  input_hash: sha256:132025239a2afac4382816e40ba03c2e0d32694b6be4c510765362092bc3b251
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: xXz9BRSdSsk-concept-ball-trajectories-reviewed
-    evidence_type: explanation
-    excerpt: A simple classification of incoming ball paths into backspin, topspin, and half-high ball trajectories to help choose the correct stroke response.
-    reason: The transcript opens by explicitly introducing three ball trajectories and naming them backspin, topspin, and half-high ball, each with a curve description.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: xXz9BRSdSsk
-      start_ms: 2500
-      end_ms: 28900
-      url: https://www.youtube.com/watch?v=xXz9BRSdSsk&t=2s
-      segment_ids:
-        - xXz9BRSdSsk:00000
-        - xXz9BRSdSsk:00003
-        - xXz9BRSdSsk:00004
-        - xXz9BRSdSsk:00006
-        - xXz9BRSdSsk:00007
-  - id: yF675Tey81g-concept-spin-creates-curve-and-trajectory-reviewed
-    evidence_type: explanation
-    excerpt: Using spin and friction to make the ball curve, change trajectory, and become harder to control or block.
-    reason: The speaker repeatedly notes curve, spin, and friction as mechanisms that affect trajectory and opponent control.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: yF675Tey81g
-      start_ms: 596230
-      end_ms: 610010
-      url: https://www.youtube.com/watch?v=yF675Tey81g&t=596s
-      segment_ids:
-        - yF675Tey81g:00120
-        - yF675Tey81g:00121
-  - id: 8uzW4bF4Oc8-concept-ball-trajectory-classification-reviewed
-    evidence_type: explanation
-    excerpt: Evaluating how trajectory shape affects serve speed and outcome, especially the relationship between high arc and slow, ineffective long balls.
-    reason: The speaker repeatedly links a high arc to slow or out-of-bounds balls and contrasts it with a low arc that is faster.
-    confidence: 0.88
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 8uzW4bF4Oc8
-      start_ms: 251366
-      end_ms: 272366
-      url: https://www.youtube.com/watch?v=8uzW4bF4Oc8&t=251s
-      segment_ids:
-        - 8uzW4bF4Oc8:00118
-        - 8uzW4bF4Oc8:00119
-        - 8uzW4bF4Oc8:00126
-        - 8uzW4bF4Oc8:00127
-  - id: x5cNiaE61qg-concept-ball-trajectory-classification-reviewed
-    evidence_type: definition
-    excerpt: Classifying serve trajectories into different shapes such as high, flat, and low balls to change the opponent's response.
-    reason: The transcript names different serve trajectories and says they lead to different reactions and defensive strategies.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: x5cNiaE61qg
-      start_ms: 42100
-      end_ms: 53666
-      url: https://www.youtube.com/watch?v=x5cNiaE61qg&t=42s
-      segment_ids:
-        - x5cNiaE61qg:00017
-        - x5cNiaE61qg:00018
-        - x5cNiaE61qg:00019
-        - x5cNiaE61qg:00020
-        - x5cNiaE61qg:00021
-  - id: 8fxjEROShs4-concept-ball-trajectory-classification-reviewed
-    evidence_type: explanation
-    excerpt: Recognizing how spin changes the ball's path, including straight, diagonal, and curving trajectories.
-    reason: The speaker explains that left or right spin changes the trajectory to straight or diagonal and says the ball will curve.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 8fxjEROShs4
-      start_ms: 590166
-      end_ms: 602366
-      url: https://www.youtube.com/watch?v=8fxjEROShs4&t=590s
-      segment_ids:
-        - 8fxjEROShs4:00081
-        - 8fxjEROShs4:00082
-  - id: zmYIxjHtg9Q-concept-ball-trajectory-classification-reviewed
-    evidence_type: explanation
-    excerpt: Classifying balls by trajectory or curve type, including the speaker's three-type breakdown used to decide the stroke height and direction.
-    reason: The speaker explicitly says there are three types and discusses curved, downward, and non-upward trajectories.
-    confidence: 0.88
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: zmYIxjHtg9Q
-      start_ms: 200933
-      end_ms: 211333
-      url: https://www.youtube.com/watch?v=zmYIxjHtg9Q&t=200s
-      segment_ids:
-        - zmYIxjHtg9Q:00042
-        - zmYIxjHtg9Q:00043
-        - zmYIxjHtg9Q:00044
-  - id: QTI4evyXCLM-concept-ball-length-classification-reviewed
-    evidence_type: definition
-    excerpt: Incoming balls are classified by depth and table section, including short, half-long, long, and four table zones.
-    reason: The transcript divides balls into near-net, on-table, mid-table, half-table, baseline, and explicitly names short, half-long, and long balls.
-    confidence: 0.91
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: QTI4evyXCLM
-      start_ms: 110366
-      end_ms: 121600
-      url: https://www.youtube.com/watch?v=QTI4evyXCLM&t=110s
-      segment_ids:
-        - QTI4evyXCLM:00022
-        - QTI4evyXCLM:00023
-        - QTI4evyXCLM:00024
-  - id: I-luBOL9IxI-concept-finger-led-loop-curve-reviewed
-    evidence_type: explanation
-    excerpt: The curve and arc in the loop are created primarily by the fingers rather than the upper arm, forearm, or wrist.
-    reason: The speaker directly attributes the curved brushing motion and arc creation to the fingers.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: I-luBOL9IxI
-      start_ms: 525500
-      end_ms: 554366
-      url: https://www.youtube.com/watch?v=I-luBOL9IxI&t=525s
-      segment_ids:
-        - I-luBOL9IxI:00119
-        - I-luBOL9IxI:00120
-        - I-luBOL9IxI:00121
-        - I-luBOL9IxI:00122
-        - I-luBOL9IxI:00123
-  - id: ywhpUTdXW7I-cand-4-reviewed
-    evidence_type: explanation
-    excerpt: Using the ball's flight path, skid, bounce height, and first bounce location as secondary cues for identifying spin.
-    reason: The speaker says to watch the arc, skid, bounce height, and first bounce location when the motion is hard to read.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: ywhpUTdXW7I
-      start_ms: 580766
-      end_ms: 606200
-      url: https://www.youtube.com/watch?v=ywhpUTdXW7I&t=580s
-      segment_ids:
-        - ywhpUTdXW7I:00130
-        - ywhpUTdXW7I:00133
-        - ywhpUTdXW7I:00134
-  - id: krlH8_UzRRM-concept-ball-trajectory-classification-reviewed
-    evidence_type: definition
-    excerpt: A simple model that classifies incoming balls by their post-bounce trajectory, including pressing, flat, and looping arcs, to guide the swing path.
-    reason: The speaker explicitly says table tennis is about three arcs and names them pressing, flat, and looping.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: krlH8_UzRRM
-      start_ms: 158566
-      end_ms: 183900
-      url: https://www.youtube.com/watch?v=krlH8_UzRRM&t=158s
-      segment_ids:
-        - krlH8_UzRRM:00038
-        - krlH8_UzRRM:00039
-        - krlH8_UzRRM:00040
-        - krlH8_UzRRM:00042
-  - id: VYMqgnrDAhk-candidate-2-reviewed
-    evidence_type: explanation
-    excerpt: Using the ball's flight path, speed, and curve as cues for judging serve spin and timing receive contact.
-    reason: The speaker says he started focusing on the ball's trajectory and mentions arc as one of the key cues.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: VYMqgnrDAhk
-      start_ms: 41166
-      end_ms: 66266
-      url: https://www.youtube.com/watch?v=VYMqgnrDAhk&t=41s
-      segment_ids:
-        - VYMqgnrDAhk:00009
-        - VYMqgnrDAhk:00013
-  - id: t41-_NFTUuo-concept-ball-trajectory-classification-reviewed
-    evidence_type: definition
-    excerpt: Classifying serves by their flight path, speed, and sink or lift behavior as an early but basic reading method.
-    reason: The speaker says speed and trajectory differ, and that trajectory is the most basic tell.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: t41-_NFTUuo
-      start_ms: 243766
-      end_ms: 263033
-      url: https://www.youtube.com/watch?v=t41-_NFTUuo&t=243s
-      segment_ids:
-        - t41-_NFTUuo:00054
-        - t41-_NFTUuo:00055
-        - t41-_NFTUuo:00058
-  - id: fX0-3KtEzUY-concept-ball-trajectory-classification-reviewed
-    evidence_type: definition
-    excerpt: Classifying the incoming ball by bounce phase and trajectory so the player can choose correct timing.
-    reason: The speaker directly distinguishes the rise, apex, and drop as different contact situations.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: fX0-3KtEzUY
-      start_ms: 19566
-      end_ms: 46266
-      url: https://www.youtube.com/watch?v=fX0-3KtEzUY&t=19s
-      segment_ids:
-        - fX0-3KtEzUY:00004
-        - fX0-3KtEzUY:00005
-        - fX0-3KtEzUY:00008
-        - fX0-3KtEzUY:00009
-  - id: vLLKF8m8J1U-concept-ball-trajectory-classification-reviewed
-    evidence_type: definition
-    excerpt: 'Incoming balls and returns can be handled with three basic trajectories: looping/high arc, pressing/downward arc, and flat/direct arc.'
-    reason: The speaker states there are fundamentally three trajectories and names them through flick examples.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: vLLKF8m8J1U
-      start_ms: 170733
-      end_ms: 192900
-      url: https://www.youtube.com/watch?v=vLLKF8m8J1U&t=170s
-      segment_ids:
-        - vLLKF8m8J1U:00029
-        - vLLKF8m8J1U:00030
-        - vLLKF8m8J1U:00031
+- id: xXz9BRSdSsk-concept-ball-trajectories-reviewed
+  evidence_type: explanation
+  excerpt: A simple classification of incoming ball paths into backspin, topspin, and half-high ball trajectories to help choose the correct stroke response.
+  reason: The transcript opens by explicitly introducing three ball trajectories and naming them backspin, topspin, and half-high ball, each with a curve description.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: xXz9BRSdSsk
+    start_ms: 2500
+    end_ms: 28900
+    url: https://www.youtube.com/watch?v=xXz9BRSdSsk&t=2s
+    segment_ids:
+    - xXz9BRSdSsk:00000
+    - xXz9BRSdSsk:00003
+    - xXz9BRSdSsk:00004
+    - xXz9BRSdSsk:00006
+    - xXz9BRSdSsk:00007
+- id: yF675Tey81g-concept-spin-creates-curve-and-trajectory-reviewed
+  evidence_type: explanation
+  excerpt: Using spin and friction to make the ball curve, change trajectory, and become harder to control or block.
+  reason: The speaker repeatedly notes curve, spin, and friction as mechanisms that affect trajectory and opponent control.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: yF675Tey81g
+    start_ms: 596230
+    end_ms: 610010
+    url: https://www.youtube.com/watch?v=yF675Tey81g&t=596s
+    segment_ids:
+    - yF675Tey81g:00120
+    - yF675Tey81g:00121
+- id: 8uzW4bF4Oc8-concept-ball-trajectory-classification-reviewed
+  evidence_type: explanation
+  excerpt: Evaluating how trajectory shape affects serve speed and outcome, especially the relationship between high arc and slow, ineffective long balls.
+  reason: The speaker repeatedly links a high arc to slow or out-of-bounds balls and contrasts it with a low arc that is faster.
+  confidence: 0.88
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 8uzW4bF4Oc8
+    start_ms: 251366
+    end_ms: 272366
+    url: https://www.youtube.com/watch?v=8uzW4bF4Oc8&t=251s
+    segment_ids:
+    - 8uzW4bF4Oc8:00118
+    - 8uzW4bF4Oc8:00119
+    - 8uzW4bF4Oc8:00126
+    - 8uzW4bF4Oc8:00127
+- id: x5cNiaE61qg-concept-ball-trajectory-classification-reviewed
+  evidence_type: definition
+  excerpt: Classifying serve trajectories into different shapes such as high, flat, and low balls to change the opponent's response.
+  reason: The transcript names different serve trajectories and says they lead to different reactions and defensive strategies.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: x5cNiaE61qg
+    start_ms: 42100
+    end_ms: 53666
+    url: https://www.youtube.com/watch?v=x5cNiaE61qg&t=42s
+    segment_ids:
+    - x5cNiaE61qg:00017
+    - x5cNiaE61qg:00018
+    - x5cNiaE61qg:00019
+    - x5cNiaE61qg:00020
+    - x5cNiaE61qg:00021
+- id: 8fxjEROShs4-concept-ball-trajectory-classification-reviewed
+  evidence_type: explanation
+  excerpt: Recognizing how spin changes the ball's path, including straight, diagonal, and curving trajectories.
+  reason: The speaker explains that left or right spin changes the trajectory to straight or diagonal and says the ball will curve.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 8fxjEROShs4
+    start_ms: 590166
+    end_ms: 602366
+    url: https://www.youtube.com/watch?v=8fxjEROShs4&t=590s
+    segment_ids:
+    - 8fxjEROShs4:00081
+    - 8fxjEROShs4:00082
+- id: zmYIxjHtg9Q-concept-ball-trajectory-classification-reviewed
+  evidence_type: explanation
+  excerpt: Classifying balls by trajectory or curve type, including the speaker's three-type breakdown used to decide the stroke height and direction.
+  reason: The speaker explicitly says there are three types and discusses curved, downward, and non-upward trajectories.
+  confidence: 0.88
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: zmYIxjHtg9Q
+    start_ms: 200933
+    end_ms: 211333
+    url: https://www.youtube.com/watch?v=zmYIxjHtg9Q&t=200s
+    segment_ids:
+    - zmYIxjHtg9Q:00042
+    - zmYIxjHtg9Q:00043
+    - zmYIxjHtg9Q:00044
+- id: QTI4evyXCLM-concept-ball-length-classification-reviewed
+  evidence_type: definition
+  excerpt: Incoming balls are classified by depth and table section, including short, half-long, long, and four table zones.
+  reason: The transcript divides balls into near-net, on-table, mid-table, half-table, baseline, and explicitly names short, half-long, and long balls.
+  confidence: 0.91
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: QTI4evyXCLM
+    start_ms: 110366
+    end_ms: 121600
+    url: https://www.youtube.com/watch?v=QTI4evyXCLM&t=110s
+    segment_ids:
+    - QTI4evyXCLM:00022
+    - QTI4evyXCLM:00023
+    - QTI4evyXCLM:00024
+- id: I-luBOL9IxI-concept-finger-led-loop-curve-reviewed
+  evidence_type: explanation
+  excerpt: The curve and arc in the loop are created primarily by the fingers rather than the upper arm, forearm, or wrist.
+  reason: The speaker directly attributes the curved brushing motion and arc creation to the fingers.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: I-luBOL9IxI
+    start_ms: 525500
+    end_ms: 554366
+    url: https://www.youtube.com/watch?v=I-luBOL9IxI&t=525s
+    segment_ids:
+    - I-luBOL9IxI:00119
+    - I-luBOL9IxI:00120
+    - I-luBOL9IxI:00121
+    - I-luBOL9IxI:00122
+    - I-luBOL9IxI:00123
+- id: ywhpUTdXW7I-cand-4-reviewed
+  evidence_type: explanation
+  excerpt: Using the ball's flight path, skid, bounce height, and first bounce location as secondary cues for identifying spin.
+  reason: The speaker says to watch the arc, skid, bounce height, and first bounce location when the motion is hard to read.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: ywhpUTdXW7I
+    start_ms: 580766
+    end_ms: 606200
+    url: https://www.youtube.com/watch?v=ywhpUTdXW7I&t=580s
+    segment_ids:
+    - ywhpUTdXW7I:00130
+    - ywhpUTdXW7I:00133
+    - ywhpUTdXW7I:00134
+- id: krlH8_UzRRM-concept-ball-trajectory-classification-reviewed
+  evidence_type: definition
+  excerpt: A simple model that classifies incoming balls by their post-bounce trajectory, including pressing, flat, and looping arcs, to guide the swing path.
+  reason: The speaker explicitly says table tennis is about three arcs and names them pressing, flat, and looping.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: krlH8_UzRRM
+    start_ms: 158566
+    end_ms: 183900
+    url: https://www.youtube.com/watch?v=krlH8_UzRRM&t=158s
+    segment_ids:
+    - krlH8_UzRRM:00038
+    - krlH8_UzRRM:00039
+    - krlH8_UzRRM:00040
+    - krlH8_UzRRM:00042
+- id: VYMqgnrDAhk-candidate-2-reviewed
+  evidence_type: explanation
+  excerpt: Using the ball's flight path, speed, and curve as cues for judging serve spin and timing receive contact.
+  reason: The speaker says he started focusing on the ball's trajectory and mentions arc as one of the key cues.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: VYMqgnrDAhk
+    start_ms: 41166
+    end_ms: 66266
+    url: https://www.youtube.com/watch?v=VYMqgnrDAhk&t=41s
+    segment_ids:
+    - VYMqgnrDAhk:00009
+    - VYMqgnrDAhk:00013
+- id: t41-_NFTUuo-concept-ball-trajectory-classification-reviewed
+  evidence_type: definition
+  excerpt: Classifying serves by their flight path, speed, and sink or lift behavior as an early but basic reading method.
+  reason: The speaker says speed and trajectory differ, and that trajectory is the most basic tell.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: t41-_NFTUuo
+    start_ms: 243766
+    end_ms: 263033
+    url: https://www.youtube.com/watch?v=t41-_NFTUuo&t=243s
+    segment_ids:
+    - t41-_NFTUuo:00054
+    - t41-_NFTUuo:00055
+    - t41-_NFTUuo:00058
+- id: fX0-3KtEzUY-concept-ball-trajectory-classification-reviewed
+  evidence_type: definition
+  excerpt: Classifying the incoming ball by bounce phase and trajectory so the player can choose correct timing.
+  reason: The speaker directly distinguishes the rise, apex, and drop as different contact situations.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: fX0-3KtEzUY
+    start_ms: 19566
+    end_ms: 46266
+    url: https://www.youtube.com/watch?v=fX0-3KtEzUY&t=19s
+    segment_ids:
+    - fX0-3KtEzUY:00004
+    - fX0-3KtEzUY:00005
+    - fX0-3KtEzUY:00008
+    - fX0-3KtEzUY:00009
+- id: vLLKF8m8J1U-concept-ball-trajectory-classification-reviewed
+  evidence_type: definition
+  excerpt: 'Incoming balls and returns can be handled with three basic trajectories: looping/high arc, pressing/downward arc, and flat/direct arc.'
+  reason: The speaker states there are fundamentally three trajectories and names them through flick examples.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: vLLKF8m8J1U
+    start_ms: 170733
+    end_ms: 192900
+    url: https://www.youtube.com/watch?v=vLLKF8m8J1U&t=170s
+    segment_ids:
+    - vLLKF8m8J1U:00029
+    - vLLKF8m8J1U:00030
+    - vLLKF8m8J1U:00031
+- id: krlH8_UzRRM-concept-ball-trajectory-classification-codex-reviewed
+  evidence_type: explanation
+  excerpt: 'Table tennis is about three arcs: a pressing arc, a flat arc, and a looping arc. When the ball’s trajectory is a certain way, your swing path must match that direction.'
+  reason: Table tennis play involves pressing, flat, and looping arcs; match your swing path to the ball’s trajectory.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: krlH8_UzRRM
+    start_ms: 158566
+    end_ms: 183900
+    url: https://www.youtube.com/watch?v=krlH8_UzRRM&t=158s
+    segment_ids:
+    - krlH8_UzRRM:00038
+    - krlH8_UzRRM:00039
+    - krlH8_UzRRM:00040
+    - krlH8_UzRRM:00041
+    - krlH8_UzRRM:00042

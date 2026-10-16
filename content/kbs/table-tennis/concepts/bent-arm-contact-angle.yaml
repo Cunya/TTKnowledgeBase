@@ -2,44 +2,52 @@ id: concept-bent-arm-contact-angle
 slug: bent-arm-contact-angle
 label: Bent arm contact angle
 aliases:
-  - bent angle at contact
-  - maintain a bent angle
-  - contact angle
+- bent angle at contact
+- maintain a bent angle
 short_definition: At contact, the upper arm and forearm should remain bent rather than fully straightened.
 evidence_summary: >-
-  Bent arm contact angle brings together several connected ideas. The upper arm and forearm must
-  maintain a bent angle at contact. Together, these principles show how the topic is applied in
-  practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:58bc66646c3cf1b9aa79d3cca7891c363504d1c25b365b913ddb36a10c402c5d"
-evidence_summary_generator: "deterministic"
+  At contact, the upper arm and forearm should remain bent rather than fully straightened.
 concept_type: fundamentals
 facets:
   category:
-    - fundamentals
-    - stroke
-  side:
-    - neutral
-  level:
-    - beginner
-difficulty: beginner
+  - fundamentals
+  - stroke
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 9d6ed7f4e25a75abb517638f2e66f31b4bb55d25f39368442bfc10739943af84
-  prompt_version: candidate-review-v1
+  input_hash: sha256:052b51ff0f27782b8513db59ec2f896602209b67cd867139a23a087c9afe5904
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: 9sU_T8b5UoQ-concept-bent-arm-contact-angle-reviewed
-    evidence_type: definition
-    excerpt: At contact, the upper arm and forearm should remain bent rather than fully straightened.
-    reason: The speaker directly states that the upper arm and forearm must maintain a bent angle at contact.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 9sU_T8b5UoQ
-      start_ms: 57066
-      end_ms: 68600
-      url: https://www.youtube.com/watch?v=9sU_T8b5UoQ&t=57s
-      segment_ids:
-        - 9sU_T8b5UoQ:00006
+- id: 9sU_T8b5UoQ-concept-bent-arm-contact-angle-reviewed
+  evidence_type: definition
+  excerpt: At contact, the upper arm and forearm should remain bent rather than fully straightened.
+  reason: The speaker directly states that the upper arm and forearm must maintain a bent angle at contact.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 9sU_T8b5UoQ
+    start_ms: 57066
+    end_ms: 68600
+    url: https://www.youtube.com/watch?v=9sU_T8b5UoQ&t=57s
+    segment_ids:
+    - 9sU_T8b5UoQ:00006
+- id: 9sU_T8b5UoQ-concept-bent-arm-contact-angle-codex-reviewed
+  evidence_type: definition
+  excerpt: At the point of contact, your upper arm and forearm must maintain a bent angle.
+  reason: Keep your upper arm and forearm bent at the point of contact.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: 9sU_T8b5UoQ
+    start_ms: 57066
+    end_ms: 68600
+    url: https://www.youtube.com/watch?v=9sU_T8b5UoQ&t=57s
+    segment_ids:
+    - 9sU_T8b5UoQ:00006

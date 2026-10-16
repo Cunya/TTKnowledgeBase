@@ -6,11 +6,9 @@ aliases:
   - stand inside this center line
 short_definition: For right-sidespin serves such as hook, reverse pendulum, and backhand serves, standing from the middle improves control and surprise.
 evidence_summary: >-
-  Right-sidespin serve footing and center-line positioning brings together several connected
-  ideas. Serving from the middle or center line for right-sidespin serves to improve control,
-  shorten the path, and reduce opponent reaction time. Together, these principles show how the
-  topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:873245e576dd556d32f153ee36241c757513b5b83ddf17f394c796311aafe3e0"
+  For right-sidespin serves such as hook, reverse pendulum, and backhand serves, standing from the
+  middle improves control and surprise.
+evidence_summary_source_hash: "sha256:226d91bf79133f571a308abb4a575df896e25612b6ac0d084569f34fc810a4ba"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -23,10 +21,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: fdc7e46f27f46ea8ef3fcc121db8ba638bb001cf4247297ad0ef078cca04549f
-  prompt_version: candidate-review-v1
+  input_hash: sha256:3c7d7ef67134d4aba38741b016509c5714867a8f84599f66c7a2e33b88ddf74f
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: xWE01GQepLE-concept-right-sidespin-serve-footing-reviewed
     evidence_type: explanation
@@ -34,7 +35,7 @@ evidence:
     reason: The speaker advises serving from the middle or center line for right-sidespin serves to improve control, shorten the path, and reduce opponent reaction time.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: xWE01GQepLE
       start_ms: 979066
@@ -44,3 +45,20 @@ evidence:
         - xWE01GQepLE:00208
         - xWE01GQepLE:00209
         - xWE01GQepLE:00212
+  - id: b8ivXEfdO7c-concept-hook-serve-middle-positioning-codex-reviewed
+    evidence_type: explanation
+    excerpt: Stand slightly to your backhand side with your hand at the centerline, and serve from the middle rather than the corner to generate lateral force.
+    reason: This contiguous 17.1-second span directly supports the hook-serve footing and centerline positioning tactic, which matches the existing concept.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: b8ivXEfdO7c
+      start_ms: 15033
+      end_ms: 35700
+      url: https://www.youtube.com/watch?v=b8ivXEfdO7c&t=15s
+      segment_ids:
+        - b8ivXEfdO7c:00003
+        - b8ivXEfdO7c:00004
+        - b8ivXEfdO7c:00005
+        - b8ivXEfdO7c:00006

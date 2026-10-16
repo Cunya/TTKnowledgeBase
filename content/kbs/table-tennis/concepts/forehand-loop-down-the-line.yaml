@@ -111,8 +111,8 @@ evidence:
         - p19HWlk7LGo:00049
   - id: p19HWlk7LGo-concept-compact-down-the-line-loop-stroke-2
     evidence_type: explanation
-    excerpt: The down-the-line forehand loop uses a shorter, more compact backswing than the crosscourt version.
-    reason: The three keys are restated later, confirming minimal backswing as a core teaching point.
+    excerpt: For a down-the-line loop, use a minimal backswing, a slightly faster rhythm, and an open racket face.
+    reason: For a down-the-line loop, use a minimal backswing, a slightly faster rhythm, and an open racket face.
     confidence: 0.88
     visual_status: not_visual
     review_status: approved
@@ -145,23 +145,6 @@ evidence:
         - p19HWlk7LGo:00054
         - p19HWlk7LGo:00055
         - p19HWlk7LGo:00056
-  - id: p19HWlk7LGo-concept-open-racket-face-down-the-line-loop-2
-    evidence_type: explanation
-    excerpt: For a down-the-line forehand loop, the racket face is opened slightly outward and the forearm drives forward, giving the shot an opening or flick-like feel.
-    reason: The shot keys are summarized again, including opening the racket face.
-    confidence: 0.88
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: p19HWlk7LGo
-      start_ms: 230280
-      end_ms: 241320
-      url: https://www.youtube.com/watch?v=p19HWlk7LGo&t=230s
-      segment_ids:
-        - p19HWlk7LGo:00080
-        - p19HWlk7LGo:00081
-        - p19HWlk7LGo:00082
-        - p19HWlk7LGo:00083
   - id: p19HWlk7LGo-concept-placement-before-power-in-looping-1
     evidence_type: definition
     excerpt: When an opponent blocks your loop, the first adjustment should be placement, then spin and speed, and only lastly extra power.
@@ -284,7 +267,7 @@ evidence:
     reason: The speaker explicitly instructs to open the arm more and loop down the line, and later contrasts this with looping toward the middle against side spin.
     confidence: 0.89
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: -1uBDv1Aq7A
       start_ms: 463040
@@ -300,7 +283,7 @@ evidence:
     reason: The speaker says looping requires both down-the-line and cross-court ability, then explicitly advises going down the line when the opponent anticipates cross-court.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: o6OyHBmkF2U
       start_ms: 546800
@@ -317,7 +300,7 @@ evidence:
     reason: The speaker directly ties racket face direction to landing direction and recommends placement variation.
     confidence: 0.92
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: uRu7I3Cvojk
       start_ms: 380966
@@ -336,7 +319,7 @@ evidence:
     reason: The speaker specifically contrasts forehand cross-court practice with consciously switching to forehand down-the-line to move the opponent.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: r-t1t12EUKw
       start_ms: 349200
@@ -346,6 +329,25 @@ evidence:
         - r-t1t12EUKw:00123
         - r-t1t12EUKw:00127
         - r-t1t12EUKw:00129
+  - id: o6OyHBmkF2U-concept-forehand-loop-down-the-line-codex-reviewed
+    evidence_type: explanation
+    excerpt: Once placement is controlled, loop cross-court when the opponent does not move; if they anticipate cross-court, go down the line.
+    reason: This contiguous 16.8-second span directly explains choosing down-the-line placement when the opponent anticipates a cross-court loop, matching the existing concept.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: o6OyHBmkF2U
+      start_ms: 546800
+      end_ms: 563600
+      url: https://www.youtube.com/watch?v=o6OyHBmkF2U&t=546s
+      segment_ids:
+        - o6OyHBmkF2U:00198
+        - o6OyHBmkF2U:00199
+        - o6OyHBmkF2U:00200
+        - o6OyHBmkF2U:00201
+        - o6OyHBmkF2U:00202
+        - o6OyHBmkF2U:00203
 relations:
   - relation_type: variation_of
     target_concept_id: concept-forehand-loop

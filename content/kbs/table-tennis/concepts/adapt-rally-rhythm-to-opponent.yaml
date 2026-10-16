@@ -235,7 +235,7 @@ evidence:
     reason: The speaker says to adjust initiation speed to the opponent's rhythm and states receive rhythm is critical.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: lO0H9Cs6JEo
       start_ms: 338880
@@ -250,7 +250,7 @@ evidence:
     reason: The speaker says players must adapt to different ball rhythms, practice with partners varying height and pace, and use rhythm variation against slower and faster styles.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: pE5PLAr9iaA
       start_ms: 138320
@@ -267,7 +267,7 @@ evidence:
     reason: The speaker defines rhythm variation with sequences like fast-fast-slow-fast and explains adjusting depth and timing based on where the opponent stands.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: o6OyHBmkF2U
       start_ms: 176560
@@ -287,7 +287,7 @@ evidence:
     reason: The speaker says rallies are about controlling rhythm and using the opponent's pace.
     confidence: 0.91
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: kv80YX__eJE
       start_ms: 133333
@@ -303,7 +303,7 @@ evidence:
     reason: The speaker uses the fruit-platter analogy to recommend trying different spins and rhythms until the opponent cannot handle them.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: h5jUJL_P82w
       start_ms: 741066
@@ -322,7 +322,7 @@ evidence:
     reason: The speaker says to keep the opponent moving and constantly shifting weight to create difficulty.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 0XhKjyXoCO4
       start_ms: 16100
@@ -339,7 +339,7 @@ evidence:
     reason: The transcript explicitly describes keeping an opponent moving and practicing changing the rhythm so match shots can be handled.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 9WPYbE6DoTo
       start_ms: 133966
@@ -355,7 +355,7 @@ evidence:
     reason: The speaker says to change rhythm when the opponent suddenly increases power or speed, and to match the opponent's pace appropriately.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: U4ufFJg5s4A
       start_ms: 236233
@@ -375,7 +375,7 @@ evidence:
     reason: The speaker repeatedly says to match the game's rhythm, quicken for fast balls, wait for slow balls, and adapt to changes in pace.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: fYJgxN1x7QM
       start_ms: 128433
@@ -393,7 +393,7 @@ evidence:
     reason: The speaker says different partners and opponents require different timing because their pace, defenses, techniques, systems, and rhythms vary.
     confidence: 0.91
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: qPpVIKNWMwY
       start_ms: 595900
@@ -410,7 +410,7 @@ evidence:
     reason: The speaker frames the serve rhythm as slow-stop-fast and explicitly says the goal is to break the opponent’s timing and control the rhythm.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: U1zg0xsCqMc
       start_ms: 514560
@@ -428,6 +428,42 @@ evidence:
         - U1zg0xsCqMc:00246
         - U1zg0xsCqMc:00247
         - U1zg0xsCqMc:00248
+  - id: 9WPYbE6DoTo-concept-adapt-rally-rhythm-to-opponent-codex-reviewed
+    evidence_type: explanation
+    excerpt: Practice changing the rhythm by keeping the opponent moving instead of letting them stand still, so you can handle these types of shots in matches.
+    reason: These contiguous segments explain keeping the opponent moving during practice, illustrate preventing a stationary backhand-topspin exchange, and explicitly connect rhythm changes to handling similar match shots.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 9WPYbE6DoTo
+      start_ms: 133966
+      end_ms: 153900
+      url: https://www.youtube.com/watch?v=9WPYbE6DoTo&t=133s
+      segment_ids:
+        - 9WPYbE6DoTo:00013
+        - 9WPYbE6DoTo:00014
+        - 9WPYbE6DoTo:00015
+        - 9WPYbE6DoTo:00016
+  - id: lO0H9Cs6JEo-concept-adapt-rally-rhythm-to-opponent-codex-reviewed
+    evidence_type: explanation
+    excerpt: "The speaker explains that rhythm should follow the opponent's pace: when the opponent is fast, play fast; when the opponent is slow, slow down as well. Receive rhythm is critical."
+    reason: This contiguous 21.4-second span directly supports adapting rhythm to the opponent and matches the durable topic of the supplied existing concept.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: lO0H9Cs6JEo
+      start_ms: 354800
+      end_ms: 376200
+      url: https://www.youtube.com/watch?v=lO0H9Cs6JEo&t=354s
+      segment_ids:
+        - lO0H9Cs6JEo:00101
+        - lO0H9Cs6JEo:00102
+        - lO0H9Cs6JEo:00103
+        - lO0H9Cs6JEo:00104
+        - lO0H9Cs6JEo:00105
+        - lO0H9Cs6JEo:00106
 relations:
   - relation_type: used_with
     target_concept_id: concept-ball-feel

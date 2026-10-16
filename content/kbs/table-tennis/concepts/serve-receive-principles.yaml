@@ -6,15 +6,7 @@ aliases:
   - mirror principle
 short_definition: Match the serve's rhythm and spin direction with a compact action, choosing timing that reduces the spin's effect.
 evidence_summary: >-
-  Good serve receive begins with judging the quality and speed of the incoming serve, then
-  matching tempo to it with small, rhythmic movements rather than large swings. Slower or softer
-  serves call for a slower rhythm, while quicker serves require a faster one, and the receiver
-  should borrow, add, or redirect power with the body leading instead of forcing the ball. When
-  the serve is uncertain, a neutral receive that starts more vertically and then flattens toward
-  the centerline is a safe default, and training should still include attacking receives even at
-  the cost of short-term errors.
-evidence_summary_source_hash: "sha256:19576f4dce0b4774af15b500df5e7e8e98d2308c37f044d08f192086084c43d1"
-evidence_summary_generator: "codex"
+  Adapt the receive to the spin and rhythm of the incoming serve. In the heavy-spin examples, concentrate the action at contact and finish decisively; a slow version of the same motion may still fail. This is contextual advice, not a single speed rule for every serve.
 concept_type: receive
 facets:
   category:
@@ -450,46 +442,66 @@ evidence:
         - bUCFpvTlaMU:00149
   - id: bUCFpvTlaMU-candidate-heavy-spin-requires-faster-stroke-frequency-1
     evidence_type: explanation
-    excerpt: When the incoming backspin is very heavy, correct mechanics alone are not enough; the stroke must be executed with higher concentration and faster timing so the upward brushing speed overcomes the ball's downward spin effect.
-    reason: The speaker explains that players may brush, drop, and finish correctly yet still miss because the stroke frequency is too slow for the incoming spin.
+    excerpt: Against heavy spin, concentrate the action of the forearm, upper arm, core, fingers, and wrist into the contact moment and complete the stroke.
+    reason: Against heavy spin, concentrate the action of the forearm, upper arm, core, fingers, and wrist into the contact moment and complete the stroke.
     confidence: 0.92
     visual_status: not_visual
     review_status: approved
     source:
       video_id: bUCFpvTlaMU
       start_ms: 529600
-      end_ms: 533480
+      end_ms: 546280
       url: https://www.youtube.com/watch?v=bUCFpvTlaMU&t=529s
       segment_ids:
         - bUCFpvTlaMU:00192
+        - bUCFpvTlaMU:00193
+        - bUCFpvTlaMU:00194
+        - bUCFpvTlaMU:00195
+        - bUCFpvTlaMU:00196
+        - bUCFpvTlaMU:00197
   - id: bUCFpvTlaMU-candidate-heavy-spin-requires-faster-stroke-frequency-2
     evidence_type: explanation
-    excerpt: When the incoming backspin is very heavy, correct mechanics alone are not enough; the stroke must be executed with higher concentration and faster timing so the upward brushing speed overcomes the ball's downward spin effect.
-    reason: The speaker explains that players may brush, drop, and finish correctly yet still miss because the stroke frequency is too slow for the incoming spin.
+    excerpt: Brushing, dropping, and finishing may still fail against heavy spin when the stroke is too slow; the same action performed faster is recommended.
+    reason: Brushing, dropping, and finishing may still fail against heavy spin when the stroke is too slow; the same action performed faster is recommended.
     confidence: 0.92
     visual_status: not_visual
     review_status: approved
     source:
       video_id: bUCFpvTlaMU
-      start_ms: 562360
+      start_ms: 543800
       end_ms: 565000
-      url: https://www.youtube.com/watch?v=bUCFpvTlaMU&t=562s
+      url: https://www.youtube.com/watch?v=bUCFpvTlaMU&t=543s
       segment_ids:
+        - bUCFpvTlaMU:00198
+        - bUCFpvTlaMU:00199
+        - bUCFpvTlaMU:00200
+        - bUCFpvTlaMU:00201
+        - bUCFpvTlaMU:00202
+        - bUCFpvTlaMU:00203
+        - bUCFpvTlaMU:00204
         - bUCFpvTlaMU:00205
   - id: bUCFpvTlaMU-candidate-heavy-spin-requires-faster-stroke-frequency-3
     evidence_type: definition
-    excerpt: When the incoming backspin is very heavy, correct mechanics alone are not enough; the stroke must be executed with higher concentration and faster timing so the upward brushing speed overcomes the ball's downward spin effect.
-    reason: 'The remedy is stated directly: heavier spin demands a more concentrated, decisive, faster-finishing loop.'
+    excerpt: Against heavier spin, finish faster and use a concentrated loop rather than a slower, softer stroke.
+    reason: 'Against heavier spin, finish faster and use a concentrated loop rather than a slower, softer stroke.'
     confidence: 0.91
     visual_status: not_visual
     review_status: approved
     source:
       video_id: bUCFpvTlaMU
-      start_ms: 576920
+      start_ms: 571280
       end_ms: 597320
-      url: https://www.youtube.com/watch?v=bUCFpvTlaMU&t=576s
+      url: https://www.youtube.com/watch?v=bUCFpvTlaMU&t=571s
       segment_ids:
+        - bUCFpvTlaMU:00208
+        - bUCFpvTlaMU:00209
         - bUCFpvTlaMU:00210
+        - bUCFpvTlaMU:00211
+        - bUCFpvTlaMU:00212
+        - bUCFpvTlaMU:00213
+        - bUCFpvTlaMU:00214
+        - bUCFpvTlaMU:00215
+        - bUCFpvTlaMU:00216
         - bUCFpvTlaMU:00217
   - id: tWJXY0cUPRQ-cand-attacking-serve-receive-development-1
     evidence_type: explanation
@@ -554,7 +566,7 @@ evidence:
     reason: The speaker says serves vary by spin, one technique cannot solve all cases, and fundamentals must be adapted to the incoming spin.
     confidence: 0.93
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 5JzSUTg_ojc
       start_ms: 106800
@@ -571,7 +583,7 @@ evidence:
     reason: The transcript frames receive as a compact, rhythmic process that depends on early reading and small movements rather than large swings.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: bKtA240EvTQ
       start_ms: 822920
@@ -586,7 +598,7 @@ evidence:
     reason: The speaker frames receive as difficult because of serve uncertainty and spin uncertainty.
     confidence: 0.88
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: mTnHV7k_Wes
       start_ms: 1120
@@ -607,7 +619,7 @@ evidence:
     reason: The receive principle is explicitly stated as lifting the arc against underspin and pressing the arc against topspin.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: PDFXww03DHM
       start_ms: 541240
@@ -624,7 +636,7 @@ evidence:
     reason: 'The speaker lays out a general rule for uncertain serves: use a neutral approach, flatten from a vertical start, and direct the ball toward the centerline.'
     confidence: 0.88
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hwT7cH6PbZQ
       start_ms: 485733
@@ -642,7 +654,7 @@ evidence:
     reason: 'The speaker gives a general receive rule: judge spin, match racket angle, and use technique to counter spin.'
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: wSzmpXHp64Q
       start_ms: 511166
@@ -659,7 +671,7 @@ evidence:
     reason: The speaker explicitly frames serve return around three principles and then names them.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: p-8pxqMG0kw
       start_ms: 14266
@@ -674,7 +686,7 @@ evidence:
     reason: The speaker states the mirror principle directly and gives left-sidespin/right-sidespin examples.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Ejc6KqZDRKs
       start_ms: 180400
@@ -691,7 +703,7 @@ evidence:
     reason: The speaker repeatedly frames receive contact as a block/cushion first, not a hard hit, followed by a second-stage stroke that adds quality.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hw8RsLGOARs
       start_ms: 235866
@@ -708,7 +720,7 @@ evidence:
     reason: The speaker repeatedly uses a serve-recover pattern and says not to hit yet, but to complete the recovery motion first and move to the middle.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: XaU6LtcP_n0
       start_ms: 333400
@@ -717,6 +729,42 @@ evidence:
       segment_ids:
         - XaU6LtcP_n0:00062
         - XaU6LtcP_n0:00066
+  - id: bKtA240EvTQ-concept-serve-receive-principles-codex-reviewed
+    evidence_type: explanation
+    excerpt: In serve receive, emphasize small, compact movements and adjust motion size, timing, racket angle, and force.
+    reason: This contiguous span directly explains that serve receive uses small, compact movements and differs in motion size, timing, racket angle, and force.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: bKtA240EvTQ
+      start_ms: 822920
+      end_ms: 839640
+      url: https://www.youtube.com/watch?v=bKtA240EvTQ&t=822s
+      segment_ids:
+        - bKtA240EvTQ:00306
+        - bKtA240EvTQ:00307
+        - bKtA240EvTQ:00308
+        - bKtA240EvTQ:00310
+        - bKtA240EvTQ:00311
+        - bKtA240EvTQ:00312
+  - id: hw8RsLGOARs-concept-serve-receive-principles-codex-reviewed
+    evidence_type: explanation
+    excerpt: On serve receive, first use a relaxed block to absorb the ball’s power and spin, then follow through to complete the stroke.
+    reason: This contiguous 25-second explanation directly states that serve contact should be relaxed, begins with a block that absorbs power and spin, and is followed by the rest of the stroke.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: hw8RsLGOARs
+      start_ms: 235866
+      end_ms: 261200
+      url: https://www.youtube.com/watch?v=hw8RsLGOARs&t=235s
+      segment_ids:
+        - hw8RsLGOARs:00043
+        - hw8RsLGOARs:00044
+        - hw8RsLGOARs:00045
+        - hw8RsLGOARs:00046
 relations:
   - relation_type: used_with
     target_concept_id: concept-short-vs-long-serve-receive

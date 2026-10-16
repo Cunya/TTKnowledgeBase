@@ -2,45 +2,59 @@ id: concept-diagonal-step-in-for-forehand
 slug: diagonal-step-in-for-forehand
 label: Diagonal step-in for forehand
 aliases:
-  - step in diagonally
-  - step in at an angle
-short_definition: For forehand balls, step in diagonally rather than straight to avoid getting jammed on deeper balls.
+- step in diagonally
+- step in at an angle
+short_definition: For forehand balls, step in diagonally. Stepping in straight can leave you jammed by a slightly deeper ball.
 evidence_summary: >-
-  Diagonal step-in for forehand brings together several connected ideas. Diagonal forehand entry
-  and straight stepping causes jamming on deeper balls. Together, these principles show how the
-  topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:a3a0b4a18bc27f871d80434c5a80e7dd475b8efd683963b0e5c81a21a3c6f058"
-evidence_summary_generator: "deterministic"
+  For the forehand, step in diagonally. Stepping in straight can let a slightly deeper ball jam you.
 concept_type: practice
 facets:
   category:
-    - practice
+  - practice
   side:
-    - forehand
-  level:
-    - beginner
-difficulty: beginner
+  - forehand
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: e657b8833f7a4a7096fb6e8e4b06569cd89e7f66d745316dad0323f9fba8178a
-  prompt_version: candidate-review-v1
+  input_hash: sha256:982ddcc8813521cea67991296b58d0e58eb0ff1ae409820a9cd3310516cfa095
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: 2LkVpDM69vo-concept-diagonal-step-in-for-forehand-reviewed
-    evidence_type: explanation
-    excerpt: For forehand balls, step in diagonally rather than straight to avoid getting jammed on deeper balls.
-    reason: The transcript directly instructs diagonal forehand entry and explains that straight stepping causes jamming on deeper balls.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 2LkVpDM69vo
-      start_ms: 312166
-      end_ms: 328233
-      url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=312s
-      segment_ids:
-        - 2LkVpDM69vo:00059
-        - 2LkVpDM69vo:00060
-        - 2LkVpDM69vo:00061
-        - 2LkVpDM69vo:00062
+- id: 2LkVpDM69vo-concept-diagonal-step-in-for-forehand-reviewed
+  evidence_type: explanation
+  excerpt: For forehand balls, step in diagonally rather than straight to avoid getting jammed on deeper balls.
+  reason: The transcript directly instructs diagonal forehand entry and explains that straight stepping causes jamming on deeper balls.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 2LkVpDM69vo
+    start_ms: 312166
+    end_ms: 328233
+    url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=312s
+    segment_ids:
+    - 2LkVpDM69vo:00059
+    - 2LkVpDM69vo:00060
+    - 2LkVpDM69vo:00061
+    - 2LkVpDM69vo:00062
+- id: 2LkVpDM69vo-concept-diagonal-step-in-for-forehand-codex-reviewed
+  evidence_type: explanation
+  excerpt: For the forehand, step in diagonally. If you step in straight, a slightly deeper ball will jam you.
+  reason: Step in diagonally for the forehand; stepping in straight can let a slightly deeper ball jam you.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: 2LkVpDM69vo
+    start_ms: 312166
+    end_ms: 328233
+    url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=312s
+    segment_ids:
+    - 2LkVpDM69vo:00059
+    - 2LkVpDM69vo:00060
+    - 2LkVpDM69vo:00061
+    - 2LkVpDM69vo:00062

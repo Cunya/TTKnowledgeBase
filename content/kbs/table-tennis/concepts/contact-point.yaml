@@ -5,13 +5,7 @@ aliases:
   - ball contact
 short_definition: The position and timing at which the racket meets the ball.
 evidence_summary: >-
-  Good shot quality depends on finding the correct contact point on the ball at the right phase of
-  its bounce cycle. Contact should be made on the intended part of the ball, not the side, and the
-  player must stay with the contact point by creating space for it instead of losing it through
-  poor movement. If the contact point is misread or the body moves away from it, the shot becomes
-  unstable and the ball is struck at the wrong moment or position.
-evidence_summary_source_hash: "sha256:739577c6cfdfcd954f7d281d6153b651cfff64373db55abe2e836578c0aac4d1"
-evidence_summary_generator: "codex"
+  Contact timing depends on the incoming ball. In the soft-ball example, slow down with the ball and allow it to come closer before pressing forward. Timing, balance, and positioning can cause misses that appear to be stroke-technique problems.
 detailed_definition: For this forehand-loop example, contact is in front of the body near the top of the bounce; late contact reduces space and consistency.
 concept_type: technique-dimension
 facets:
@@ -301,8 +295,8 @@ evidence:
         - "uag7n7hq3bM:00159"
   - id: uag7n7hq3bM-cand-soft-ball-timing-1
     evidence_type: explanation
-    excerpt: Against soft or slow incoming balls, delay the stroke slightly, let the ball come closer, and avoid rushing or taking it too early.
-    reason: Speaker identifies the common mistake as rushing and taking the ball too early against soft balls, then says to stay calm and slow down when the ball slows down.
+    excerpt: Stay calm against a soft ball and slow the action when the ball slows, instead of rushing to take it too early; the same timing principle is applied to topspin looping.
+    reason: Stay calm against a soft ball and slow the action when the ball slows, instead of rushing to take it too early; the same timing principle is applied to topspin looping.
     confidence: 0.97
     visual_status: not_visual
     review_status: approved
@@ -312,38 +306,56 @@ evidence:
       end_ms: 542160
       url: "https://www.youtube.com/watch?v=uag7n7hq3bM&t=519s"
       segment_ids:
-        - "uag7n7hq3bM:00207"
-        - "uag7n7hq3bM:00217"
+        - uag7n7hq3bM:00207
+        - uag7n7hq3bM:00208
+        - uag7n7hq3bM:00209
+        - uag7n7hq3bM:00210
+        - uag7n7hq3bM:00211
+        - uag7n7hq3bM:00212
+        - uag7n7hq3bM:00213
+        - uag7n7hq3bM:00214
+        - uag7n7hq3bM:00215
+        - uag7n7hq3bM:00216
+        - uag7n7hq3bM:00217
   - id: uag7n7hq3bM-cand-soft-ball-timing-2
     evidence_type: demonstration
-    excerpt: Against soft or slow incoming balls, delay the stroke slightly, let the ball come closer, and avoid rushing or taking it too early.
-    reason: Speaker demonstrates waiting an extra moment, letting the ball get closer to the body, then pressing forward, and contrasts fast-then-slow timing.
+    excerpt: Wait an extra moment for the ball to come closer to the body before pressing forward. Timing, balance, and positioning can cause mistakes that look like technique problems.
+    reason: Wait an extra moment for the ball to come closer to the body before pressing forward. Timing, balance, and positioning can cause mistakes that look like technique problems.
     confidence: 0.93
     visual_status: transcript_inferred
     review_status: approved
     source:
       video_id: uag7n7hq3bM
       start_ms: 543760
-      end_ms: 572360
+      end_ms: 569960
       url: "https://www.youtube.com/watch?v=uag7n7hq3bM&t=543s"
       segment_ids:
-        - "uag7n7hq3bM:00218"
-        - "uag7n7hq3bM:00220"
-        - "uag7n7hq3bM:00228"
+        - uag7n7hq3bM:00218
+        - uag7n7hq3bM:00219
+        - uag7n7hq3bM:00220
+        - uag7n7hq3bM:00221
+        - uag7n7hq3bM:00222
+        - uag7n7hq3bM:00223
+        - uag7n7hq3bM:00224
+        - uag7n7hq3bM:00225
+        - uag7n7hq3bM:00226
+        - uag7n7hq3bM:00227
   - id: uag7n7hq3bM-cand-soft-ball-timing-3
     evidence_type: demonstration
-    excerpt: Against soft or slow incoming balls, delay the stroke slightly, let the ball come closer, and avoid rushing or taking it too early.
-    reason: Speaker demonstrates waiting an extra moment, letting the ball get closer to the body, then pressing forward, and contrasts fast-then-slow timing.
+    excerpt: The practice example changes rhythm from fast to slow.
+    reason: The practice example changes rhythm from fast to slow.
     confidence: 0.93
     visual_status: transcript_inferred
     review_status: approved
     source:
       video_id: uag7n7hq3bM
-      start_ms: 572360
+      start_ms: 567440
       end_ms: 575160
-      url: "https://www.youtube.com/watch?v=uag7n7hq3bM&t=572s"
+      url: "https://www.youtube.com/watch?v=uag7n7hq3bM&t=567s"
       segment_ids:
-        - "uag7n7hq3bM:00230"
+        - uag7n7hq3bM:00228
+        - uag7n7hq3bM:00229
+        - uag7n7hq3bM:00230
   - id: XfWXrGTlW5M-concept-contact-point-1
     evidence_type: explanation
     excerpt: The moment and position where the racket meets the ball; in this lesson, mistimed backswing can force contact too far in front and hurt continuous looping.
@@ -536,7 +548,7 @@ evidence:
     reason: The speaker explains that for looping at the drop, the hand must be below the table to meet the ball in time.
     confidence: 0.9
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 1fHWnt8IlbI
       start_ms: 81240
@@ -555,7 +567,7 @@ evidence:
     reason: The speaker ties contact height and direction to spin outcome, stating downward contact creates backspin and low-to-high contact creates topspin.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 5JzSUTg_ojc
       start_ms: 26000
@@ -574,7 +586,7 @@ evidence:
     reason: Speaker explicitly contrasts different contact points and says the racket appears at contact.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: A4-lKRVwSFc
       start_ms: 273640
@@ -591,7 +603,7 @@ evidence:
     reason: The speaker repeatedly centers the lesson on how to contact the ball and how to meet it with the correct posture.
     confidence: 0.92
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Aaaxi0DOZzQ
       start_ms: 25240
@@ -606,7 +618,7 @@ evidence:
     reason: The coach tells the learner to use the bounce to find the contact point and repeatedly frames movement around locating contact on balls of different lengths.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: bKtA240EvTQ
       start_ms: 610680
@@ -624,7 +636,7 @@ evidence:
     reason: The coach says tight body position helps find the contact point while moving.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: fXOGFZD1MTY
       start_ms: 327200
@@ -639,7 +651,7 @@ evidence:
     reason: The speaker says the first thing to focus on is the racket contact point and that position comes before motion.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Jjd8Mu1s0S0
       start_ms: 67960
@@ -655,7 +667,7 @@ evidence:
     reason: The speaker distinguishes topspin and backspin by contact point and racket path during contact.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: lO0H9Cs6JEo
       start_ms: 412440
@@ -672,7 +684,7 @@ evidence:
     reason: The speaker specifies the rising phase as the desired contact timing for a better short push.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: mTnHV7k_Wes
       start_ms: 97840
@@ -690,7 +702,7 @@ evidence:
     reason: The speaker explicitly defines four contact points in the ball's bounce cycle and describes how each one is struck.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: PFPu_pKZ9TI
       start_ms: 5480
@@ -710,7 +722,7 @@ evidence:
     reason: 'The speaker gives explicit contact-location guidance: lower half for backspin, middle for heavier spin on flicks, upper half for lighter spin, and upper-middle for certain side-top cases.'
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: StQ86EhPFpo
       start_ms: 390480
@@ -727,7 +739,7 @@ evidence:
     reason: The speaker explicitly discusses where to contact the ball and stresses staying lower than the ball to add spin.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ti_YUZdHu3o
       start_ms: 39840
@@ -745,7 +757,7 @@ evidence:
     reason: The speaker repeatedly says power depends on where the racket meets the ball and emphasizes the 'optimal power point' and exact contact timing.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: UCyUdarqdJc
       start_ms: 243440
@@ -762,7 +774,7 @@ evidence:
     reason: The speaker describes a tiny explosive snap and warns against large motion at contact, which grounds the concept of controlled contact.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: WuN7bP8CIOs
       start_ms: 211920
@@ -777,7 +789,7 @@ evidence:
     reason: Says many players use the wrong timing for friction and cannot find the contact point when receiving a push.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8pUgdfqXPj4
       start_ms: 520520
@@ -796,7 +808,7 @@ evidence:
     reason: The speaker directly discusses the contact point and says body movement helps clear space for it.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8yuRXgTWOxc
       start_ms: 122960
@@ -813,7 +825,7 @@ evidence:
     reason: The speaker explicitly centers the discussion on the moment of contact and the contact surface.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ONXmZHozLTA
       start_ms: 387840
@@ -832,7 +844,7 @@ evidence:
     reason: The speaker tells the learner to find the contact point first.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: SF0Sv2ZzrRI
       start_ms: 284800
@@ -847,7 +859,7 @@ evidence:
     reason: The speaker explicitly names contact point as a key point and says many players fail because the contact point is too high.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: KpjJFdkUD54
       start_ms: 444160
@@ -861,7 +873,7 @@ evidence:
     reason: The coach repeatedly focuses on where the racket meets the ball, telling the player not to contact the side and instead contact the top of the ball.
     confidence: 0.93
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: OMgoeirhpyc
       start_ms: 588320
@@ -880,7 +892,7 @@ evidence:
     reason: The speaker says to find the contact point and explains that waiting for the ball instead of actively finding it is the main issue.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: TMrN47uIHiI
       start_ms: 132280
@@ -895,7 +907,7 @@ evidence:
     reason: The speaker repeatedly contrasts upper-half versus lower-half racket contact and asks how to move the contact point, showing that contact point is the core issue.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: wyna7UXctZQ
       start_ms: 58120
@@ -912,7 +924,7 @@ evidence:
     reason: The speaker repeatedly says not to contact just one point and to brush from multiple angles, especially for looping and for handling backspin and sidespin.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: xmQrJ5l5A9c
       start_ms: 496166
@@ -931,7 +943,7 @@ evidence:
     reason: The speaker directly examines the contact point and compares the racket height to the point where the ball goes long.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: yekYhw94rVI
       start_ms: 410800
@@ -946,7 +958,7 @@ evidence:
     reason: The speaker repeatedly emphasizes finding the contact point and placing it on the left side for a successful serve.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: byk-MQTWbBs
       start_ms: 181360
@@ -971,7 +983,7 @@ evidence:
     reason: Uses clock-face examples to specify contact location for hitting and looping, and shows that incorrect contact sends the ball into the net.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: deTFdwcfnrE
       start_ms: 257799
@@ -992,7 +1004,7 @@ evidence:
     reason: The speaker says many players have issues with the contact point and then explicitly names the contact point.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Dj-oOxwQn1s
       start_ms: 173880
@@ -1007,7 +1019,7 @@ evidence:
     reason: The speaker discusses hesitation at ball contact and says the moment of contact is the real beginning of the loop.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: DXL3ZnLNXqE
       start_ms: 398640
@@ -1029,7 +1041,7 @@ evidence:
     reason: The speaker explicitly says to actively find the contact point and not stay still after looping backspin, then repeats that the body must move to find timing, rhythm, and the contact point.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: vXZPX5wybTY
       start_ms: 582200
@@ -1044,7 +1056,7 @@ evidence:
     reason: Explains that contacting behind the ball prevents true sidespin-topspin and that the contact point must be chosen correctly.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: xwKSNLxVaBg
       start_ms: 521080
@@ -1061,7 +1073,7 @@ evidence:
     reason: The speaker repeatedly emphasizes finding the contact point and placing it on the left side for a successful serve.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: byk-MQTWbBs
       start_ms: 181360
@@ -1086,7 +1098,7 @@ evidence:
     reason: Uses clock-face examples to specify contact location for hitting and looping, and shows that incorrect contact sends the ball into the net.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: deTFdwcfnrE
       start_ms: 257799
@@ -1107,7 +1119,7 @@ evidence:
     reason: The speaker says many players have issues with the contact point and then explicitly names the contact point.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Dj-oOxwQn1s
       start_ms: 173880
@@ -1122,7 +1134,7 @@ evidence:
     reason: The speaker discusses hesitation at ball contact and says the moment of contact is the real beginning of the loop.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: DXL3ZnLNXqE
       start_ms: 398640
@@ -1144,7 +1156,7 @@ evidence:
     reason: The speaker explicitly says to actively find the contact point and not stay still after looping backspin, then repeats that the body must move to find timing, rhythm, and the contact point.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: vXZPX5wybTY
       start_ms: 582200
@@ -1159,7 +1171,7 @@ evidence:
     reason: Explains that contacting behind the ball prevents true sidespin-topspin and that the contact point must be chosen correctly.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: xwKSNLxVaBg
       start_ms: 521080
@@ -1176,7 +1188,7 @@ evidence:
     reason: The speaker directly mentions creating space for the contact point and staying with the contact point.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: HHVds_mLi3I
       start_ms: 664240
@@ -1193,7 +1205,7 @@ evidence:
     reason: The transcript explicitly asks where to contact in the push and answers that it should be at the peak, contrasting it with rising-phase and peak timing.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: MV98YAD9lzs
       start_ms: 12720
@@ -1210,7 +1222,7 @@ evidence:
     reason: The speaker says not to emphasize the contact moment and that proper preparation makes the contact land naturally on the table.
     confidence: 0.85
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: zMP_ptkdNHk
       start_ms: 161600
@@ -1227,7 +1239,7 @@ evidence:
     reason: The speaker ties racket angle at contact directly to whether the ball has strong spin or no spin.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 6NvlGVPIC6E
       start_ms: 4800
@@ -1244,7 +1256,7 @@ evidence:
     reason: The transcript explicitly discusses 'the moment of contact' and says contact is the real start of power generation.
     confidence: 0.94
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: N3GieiMNE7Y
       start_ms: 281120
@@ -1259,7 +1271,7 @@ evidence:
     reason: The speaker warns that pulling the arm back too early causes you not to match the contact point and repeatedly emphasizes watching contact on the return ball.
     confidence: 0.89
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: R9InWNDCJQM
       start_ms: 348440
@@ -1275,7 +1287,7 @@ evidence:
     reason: The speaker says grabbing contact is difficult and that to train brushing, the contact point should be lowered and made more specific.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: wpIxIvnuOac
       start_ms: 71720
@@ -1294,7 +1306,7 @@ evidence:
     reason: The speaker places backhand contact around the stomach and lowers forehand contact around the waist or stomach for different spin conditions.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: H0sbIUpUNLY
       start_ms: 448440
@@ -1309,7 +1321,7 @@ evidence:
     reason: The speaker explicitly centers the lesson on always looking for the contact point, says contact spacing matters, and calls it the most comfortable position.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hp9OZTBD5JE
       start_ms: 213040
@@ -1324,7 +1336,7 @@ evidence:
     reason: The speaker explicitly says the motion and racket angle are identical and that the difference is the contact point.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: oLxdGO8TY8s
       start_ms: 11560
@@ -1341,7 +1353,7 @@ evidence:
     reason: The speaker directly refers to contacting the ball and losing the contact point when moving improperly.
     confidence: 0.88
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: sosNHzR8A9U
       start_ms: 49800
@@ -1355,7 +1367,7 @@ evidence:
     reason: The speaker contrasts upper-half versus lower-half racket contact and explains that lower-half contact sends the loop into the net.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 2Wk2xe0I1s8
       start_ms: 14433
@@ -1372,7 +1384,7 @@ evidence:
     reason: The speaker explicitly talks about missing the ball's contact point and aiming for the center of the ball.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: kv80YX__eJE
       start_ms: 227633
@@ -1387,7 +1399,7 @@ evidence:
     reason: The speaker stresses optimal contact point, highest-bounce timing, and getting very close to the ball for consistency.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: h5jUJL_P82w
       start_ms: 193300
@@ -1404,7 +1416,7 @@ evidence:
     reason: The speaker explains that the racket face may need a slight downward press or late closing adjustment when the ball is bouncy, and that timing must be balanced to avoid going long or into the net.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: nNLLuV_wY24
       start_ms: 138466
@@ -1420,7 +1432,7 @@ evidence:
     reason: The speaker directly emphasizes meeting the ball at the correct contact point and explains that blocking should be done in front of the body.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: zAGc3h7gpxs
       start_ms: 143200
@@ -1435,7 +1447,7 @@ evidence:
     reason: The speaker explicitly says the contact point should not be behind the body, should be early, and should contact the upper half of the ball against spin.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 6Xx11I8CB9M
       start_ms: 659133
@@ -1449,7 +1461,7 @@ evidence:
     reason: The speaker explicitly says the exact moment of racket-ball contact is the only valid moment for reading serve spin.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: eIKLgVChAdA
       start_ms: 36800
@@ -1465,7 +1477,7 @@ evidence:
     reason: The speaker explicitly says the contact point should not be behind the body, should be early, and should contact the upper half of the ball against spin.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 6Xx11I8CB9M
       start_ms: 659133
@@ -1479,7 +1491,7 @@ evidence:
     reason: The speaker explicitly says the exact moment of racket-ball contact is the only valid moment for reading serve spin.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: eIKLgVChAdA
       start_ms: 36800
@@ -1495,7 +1507,7 @@ evidence:
     reason: The speaker explains that contacting the ball lower reduces the effective spin at contact.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 7jWqEsHtN3Y
       start_ms: 579200
@@ -1512,7 +1524,7 @@ evidence:
     reason: The speaker stresses contact at the peak of the bounce and says missing the contact point causes errors and net balls.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hwT7cH6PbZQ
       start_ms: 29933
@@ -1527,7 +1539,7 @@ evidence:
     reason: The speaker explains that contacting the ball lower reduces the effective spin at contact.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 7jWqEsHtN3Y
       start_ms: 579200
@@ -1544,7 +1556,7 @@ evidence:
     reason: The speaker stresses contact at the peak of the bounce and says missing the contact point causes errors and net balls.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hwT7cH6PbZQ
       start_ms: 29933
@@ -1559,7 +1571,7 @@ evidence:
     reason: He says contacting directly behind the ball causes errors and recommends contacting slightly left or right for control.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: D1cBF0nsjKo
       start_ms: 484160
@@ -1575,7 +1587,7 @@ evidence:
     reason: The speaker directly tells the player to locate the contact point early and says the receiver failed to find the correct contact point.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Kg4hLYnEbAs
       start_ms: 228280
@@ -1591,7 +1603,7 @@ evidence:
     reason: The speaker explicitly says you need to find this contact point and explains brushing through it.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: KuYNs8gAU_U
       start_ms: 437120
@@ -1608,7 +1620,7 @@ evidence:
     reason: The speaker explicitly says to aim at the contact point to find contact and keep up with tempo on fast balls.
     confidence: 0.86
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Qao0KS97Ysg
       start_ms: 483000
@@ -1625,7 +1637,7 @@ evidence:
     reason: Directly names the contact point for the forehand drive and contrasts it with under-ball lifting.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: QFncUSkAVKU
       start_ms: 72280
@@ -1641,7 +1653,7 @@ evidence:
     reason: Explicitly identifies contact on the middle or upper middle part of the ball to avoid net errors.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: UgroLfi1YGY
       start_ms: 29000
@@ -1658,7 +1670,7 @@ evidence:
     reason: The speaker notes that many players finish the swing too early and contact at the end of the motion, which makes neutralizing spin difficult.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Nmf0ZWP6dn0
       start_ms: 112560
@@ -1677,7 +1689,7 @@ evidence:
     reason: The speaker defines rising phase versus top of bounce and ties contact point to those timings.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Pm10kSVw_Ks
       start_ms: 15680
@@ -1695,7 +1707,7 @@ evidence:
     reason: Speaker discusses the moment of contact, racket angle, and the need to change the brushing contact.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: QgG46RFoIcA
       start_ms: 9680
@@ -1712,7 +1724,7 @@ evidence:
     reason: The speaker explicitly refers to the moment of contact and the feeling at contact.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: -QdTaX8ejCM
       start_ms: 51960
@@ -1728,7 +1740,7 @@ evidence:
     reason: The speaker identifies the first phase as the instant of gripping the ball and specifies a high contact position at front-right, at most chest height, before stopping there.
     confidence: 0.89
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 2wrSMd7QNww
       start_ms: 318833
@@ -1745,7 +1757,7 @@ evidence:
     reason: The speaker repeatedly identifies the correct right-front contact zone and contrasts it with side contact.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: aPf4rc3WJok
       start_ms: 474233
@@ -1761,7 +1773,7 @@ evidence:
     reason: The speaker explicitly centers the instruction on finding the moment of contact and says that focusing on contact solves many amateur problems.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: DaHEb394UtA
       start_ms: 242799
@@ -1779,7 +1791,7 @@ evidence:
     reason: The speaker says that lowering the stance helps you naturally find and meet the contact point.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: e0_OSr2lvU4
       start_ms: 463400
@@ -1794,7 +1806,7 @@ evidence:
     reason: The speaker says you cannot lock onto the contact point exactly on the first encounter and must learn it over repeated rallies.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: kCALIxY4m9U
       start_ms: 35733
@@ -1812,7 +1824,7 @@ evidence:
     reason: States that the backswing should be prepared early and the contact point should be anticipated in advance.
     confidence: 0.88
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: PYpTLzDBuME
       start_ms: 352333
@@ -1827,7 +1839,7 @@ evidence:
     reason: The speaker explains that the useful contact point lies between the side and back of the ball.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: sU4uTg-0qvM
       start_ms: 587920
@@ -1842,7 +1854,7 @@ evidence:
     reason: The speaker says the contact point is usually at the peak of the bounce and warns against waiting for the rising or falling phase; later they repeat finding the peak of the bounce.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: uRu7I3Cvojk
       start_ms: 207833
@@ -1859,7 +1871,7 @@ evidence:
     reason: The transcript directly instructs where to place the contact point and discusses its height as a technical constraint.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: VCsrR_8ULG4
       start_ms: 489566
@@ -1874,7 +1886,7 @@ evidence:
     reason: The speaker repeatedly identifies the moment of contact as the key point where the ball is brushed and driven through.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: vFmEXvFFGC0
       start_ms: 270320
@@ -1891,7 +1903,7 @@ evidence:
     reason: The speaker repeatedly emphasizes the exact contact moment and the racket position relative to the ball as the key determinant of spin.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: VOX-e4IR2xg
       start_ms: 122640
@@ -1909,7 +1921,7 @@ evidence:
     reason: The speaker directly states the contact point should be near the leg and not floating out in front.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: y3dW5VYVlsg
       start_ms: 285320
@@ -1926,7 +1938,7 @@ evidence:
     reason: The speaker emphasizes timing and speed specifically at the instant of ball contact and during the friction phase.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ZJzWTwe-Nng
       start_ms: 277933
@@ -1943,7 +1955,7 @@ evidence:
     reason: The speaker repeatedly refers to contacting the ball and consciously finding the hitting point.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 9BKPM_RMmtg
       start_ms: 28900
@@ -1957,7 +1969,7 @@ evidence:
     reason: The transcript repeatedly frames the mistake as what happens at the first contact and stresses the instant of touch.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 6iZaiabY2mw
       start_ms: 479033
@@ -1972,7 +1984,7 @@ evidence:
     reason: The speaker points to the contact point, says it can be seen and felt, and identifies its location even with a fixed backswing.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: wByj1pCM2L0
       start_ms: 407466
@@ -1989,7 +2001,7 @@ evidence:
     reason: The speaker explicitly focuses on the first contact point and asks which part of the ball should be brushed.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: rN337KbRJt0
       start_ms: 433
@@ -2004,7 +2016,7 @@ evidence:
     reason: The speaker directly says the contact point being too high causes a forward push and explains different contact height for backspin.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: NFfY66W2PGM
       start_ms: 254500
@@ -2019,7 +2031,7 @@ evidence:
     reason: The speaker directly tells the viewer to see which contact point suits them and to find the contact point.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 1yBxtuFfISg
       start_ms: 104200
@@ -2035,7 +2047,7 @@ evidence:
     reason: The speaker contrasts higher contact with lower-abdomen contact and explicitly recommends the lower-abdomen point for the serve.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: j90jCkrtITo
       start_ms: 551233
@@ -2050,7 +2062,7 @@ evidence:
     reason: The speaker says the key is whether the contact moment is fast enough, and later repeats that the contact moment and racket angle matter.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: EVmXfWis1NM
       start_ms: 542400
@@ -2065,7 +2077,7 @@ evidence:
     reason: The speaker says spin and speed are created at the moment of contact and mentions finding the force point.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ldoTdAje9n0
       start_ms: 407066
@@ -2080,7 +2092,7 @@ evidence:
     reason: The speaker explicitly says the second thing is understanding the contact point and maps the brushing path from 6 o'clock toward 3 o'clock.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: vxNq1b0J0bU
       start_ms: 382266
@@ -2098,7 +2110,7 @@ evidence:
     reason: The speaker explicitly frames the problem as finding the correct contact point and names the front-right area as the ideal contact point.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 3lTc51PYWSQ
       start_ms: 392066
@@ -2113,7 +2125,7 @@ evidence:
     reason: The speaker focuses on what happens at impact and says to impact first before brushing.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: PEpV_p4-Lx8
       start_ms: 135700
@@ -2128,7 +2140,7 @@ evidence:
     reason: The speaker says the key is finding the right contact point and the right first bounce, and notes the serve clipped the net because it was too close.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: GqZV-QrHYaE
       start_ms: 228640
@@ -2145,7 +2157,7 @@ evidence:
     reason: The transcript repeatedly identifies the high arc loop as dependent on finding a low contact point at the rising or falling phase, not the peak.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 5g8d38gLuq8
       start_ms: 399199
@@ -2162,7 +2174,7 @@ evidence:
     reason: The speaker explains that the ball should be in front of the body at the intended contact zone, not too close or too low.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8FDXnA8EO1M
       start_ms: 104900
@@ -2179,7 +2191,7 @@ evidence:
     reason: The speaker discusses difficulty finding the peak of the bounce or a proper contact point and then gives explicit guidance on where to contact the ball.
     confidence: 0.93
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: GOAyEFoSibE
       start_ms: 628133
@@ -2196,7 +2208,7 @@ evidence:
     reason: The speaker states that both players' contact timing must be synchronized and that they are hitting at the peak of the bounce.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: J7Lm5IL-ggs
       start_ms: 70933
@@ -2211,7 +2223,7 @@ evidence:
     reason: States that the contact point must be to the side of the body, not behind it.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: eIsYt1sCPRI
       start_ms: 75533
@@ -2225,7 +2237,7 @@ evidence:
     reason: The speaker explicitly says to focus on the contact point.
     confidence: 0.91
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: dJJtJQvuwOY
       start_ms: 479433
@@ -2239,7 +2251,7 @@ evidence:
     reason: The speaker repeatedly focuses on where and how to contact the ball, including holding the racket face upright at contact.
     confidence: 0.88
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: sklepyRctyI
       start_ms: 534800
@@ -2253,7 +2265,7 @@ evidence:
     reason: The speaker points to a specific contact point and states that incorrect contact point causes missed serves.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: dMRsujoVIj4
       start_ms: 80600
@@ -2270,7 +2282,7 @@ evidence:
     reason: The speaker directly identifies incorrect contact point as the reason a ball can be mishit and describes control at the moment of contact.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 4cbTW4pTCuM
       start_ms: 463100
@@ -2285,7 +2297,7 @@ evidence:
     reason: The speaker explicitly identifies the contact point as too high in one example, too low in another, and says it should be close to the body and near the table.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8uzW4bF4Oc8
       start_ms: 221266
@@ -2302,7 +2314,7 @@ evidence:
     reason: They emphasize concentrating on the point of contact instead of moving the racket too far back.
     confidence: 0.92
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: egRHNdxZbYo
       start_ms: 513360
@@ -2317,7 +2329,7 @@ evidence:
     reason: They emphasize concentrating on the point of contact instead of moving the racket too far back.
     confidence: 0.92
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: egRHNdxZbYo
       start_ms: 513360
@@ -2332,7 +2344,7 @@ evidence:
     reason: The transcript states that the incorrect friction point prevents spin and that the friction point determines spin direction.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: x5cNiaE61qg
       start_ms: 212800
@@ -2350,7 +2362,7 @@ evidence:
     reason: The speaker names contact point directly and says late contact guarantees errors.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: aStjJkTimhg
       start_ms: 13920
@@ -2366,7 +2378,7 @@ evidence:
     reason: The speaker explicitly says today's topic is contact and states the contact point is always on the lower part of the racket.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: NMa0xKa1kpo
       start_ms: 1088266
@@ -2381,7 +2393,7 @@ evidence:
     reason: The transcript discusses where to hit, the hitting point, and how stable contact matters, making contact point a central teachable concept.
     confidence: 0.9
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Vpzyb2te4MA
       start_ms: 395133
@@ -2397,7 +2409,7 @@ evidence:
     reason: The speaker directly says to find the ball's contact point quickly and to locate contact points on the left side.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8fxjEROShs4
       start_ms: 614533
@@ -2413,7 +2425,7 @@ evidence:
     reason: The speaker discusses the instant of contact with the ball and the sensations that follow it.
     confidence: 0.86
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: tpY3SRVdBK8
       start_ms: 353133
@@ -2428,7 +2440,7 @@ evidence:
     reason: The speaker says the more accurately you locate the contact point on the ball, the better the outcome, and identifies contact point as a key factor.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 7Zz_cVWrgng
       start_ms: 485400
@@ -2444,7 +2456,7 @@ evidence:
     reason: Calls attention to the point of contact and says you can tell the spin by it.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: P21-_dtUzE8
       start_ms: 355066
@@ -2460,7 +2472,7 @@ evidence:
     reason: The speaker explicitly discusses whether contact is on the rise or at the peak and says the optimal hitting point is the high/peak ball shot.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 44MN0MejyPI
       start_ms: 11800
@@ -2476,7 +2488,7 @@ evidence:
     reason: The speaker distinguishes the ready position from the point of contact and repeatedly references where the racket and ball meet.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8W1dvuH8iOI
       start_ms: 149000
@@ -2491,7 +2503,7 @@ evidence:
     reason: The speaker directly mentions missing the contact point and then explains the contact point in the stroke sequence.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: zMrQvj_bji4
       start_ms: 504766
@@ -2506,7 +2518,7 @@ evidence:
     reason: The speaker distinguishes the ready position from the point of contact and repeatedly references where the racket and ball meet.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8W1dvuH8iOI
       start_ms: 149000
@@ -2521,7 +2533,7 @@ evidence:
     reason: The speaker directly mentions missing the contact point and then explains the contact point in the stroke sequence.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: zMrQvj_bji4
       start_ms: 504766
@@ -2536,7 +2548,7 @@ evidence:
     reason: The speaker states that the contact point is too high and recommends lowering and controlling the contact point to keep the ball from flying high.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: jrGOn6gpIa8
       start_ms: 505266
@@ -2551,7 +2563,7 @@ evidence:
     reason: The speaker identifies the contact point as a primary key point and says it should be more toward the front.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Br3osmuNeIA
       start_ms: 45360
@@ -2567,7 +2579,7 @@ evidence:
     reason: The speaker explicitly centers the discussion on the moment of ball contact and says gripping should happen at contact.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: CkByQLPJMZs
       start_ms: 177680
@@ -2581,7 +2593,7 @@ evidence:
     reason: The speaker explicitly identifies ball contact as the key moment for the technique.
     confidence: 0.89
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: zNga_K6A7F0
       start_ms: 298160
@@ -2595,7 +2607,7 @@ evidence:
     reason: The speaker says players should let the contact point be a little lower to generate more friction.
     confidence: 0.93
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 60_qpMsHRvQ
       start_ms: 44133
@@ -2610,7 +2622,7 @@ evidence:
     reason: The speaker directly discusses where to contact the ball and says errors often come from an incorrect contact point.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: DShIvrh0Yss
       start_ms: 86300
@@ -2625,7 +2637,7 @@ evidence:
     reason: The speaker refers to shifting the contact point and to the exact right spot on the ball and racket contact area.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: kF3mAZD3GHs
       start_ms: 118500
@@ -2639,7 +2651,7 @@ evidence:
     reason: The speaker identifies contact location as a major factor in serve quality, noting that high or low contact changes spin and trajectory.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: lTnBxGKdH2g
       start_ms: 550466
@@ -2655,7 +2667,7 @@ evidence:
     reason: The speaker defines an ideal contact point, says the body and footwork must move to it, and explains that arm reach alone cannot substitute for correct contact distance.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: U4ItRZHe_-A
       start_ms: 630500
@@ -2673,7 +2685,7 @@ evidence:
     reason: The speaker explicitly discusses why amateurs struggle to find the right contact point and says they are waiting for the ball instead of executing in front of the body.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: YR4GEvuI9Vc
       start_ms: 583933
@@ -2688,7 +2700,7 @@ evidence:
     reason: The speaker repeatedly emphasizes contact at a single point versus around the ball and says to focus on ball contact.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 1IeU5XUDCKA
       start_ms: 255933
@@ -2703,7 +2715,7 @@ evidence:
     reason: The transcript repeatedly focuses on whether contact timing is the same, where contact occurs relative to the bounce, and how that affects spin.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8143qxSjk5A
       start_ms: 71566
@@ -2718,7 +2730,7 @@ evidence:
     reason: The speaker explicitly defines the optimal contact point for topspin as the peak of the bounce and clarifies that this is the moment the forward swing begins.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 1Issn-5noM4
       start_ms: 91066
@@ -2734,7 +2746,7 @@ evidence:
     reason: The speaker explicitly defines ideal contact timing as the peak of the bounce.
     confidence: 0.91
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: mPRFTyZICY4
       start_ms: 25666
@@ -2748,7 +2760,7 @@ evidence:
     reason: The speaker stresses contact below the ball's equator and warns that contacting too high neutralizes spin.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: T5hgo9D7c7A
       start_ms: 269466
@@ -2765,7 +2777,7 @@ evidence:
     reason: The transcript discusses the moment of contact repeatedly, including correct and incorrect contact timing and how finger action works at contact.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: x8OSRSRukeI
       start_ms: 536300
@@ -2779,7 +2791,7 @@ evidence:
     reason: The speaker says the contact point is off and that the ball should be contacted later on its descent.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: xo9M8v9k564
       start_ms: 39633
@@ -2794,7 +2806,7 @@ evidence:
     reason: The speaker explains why contacting the lower half of the racket keeps the ball low and why the top half causes pop-up errors.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ezGVESU0Rp0
       start_ms: 183266
@@ -2810,7 +2822,7 @@ evidence:
     reason: The speaker explicitly names the bounce peak as the prerequisite contact moment and ties late timing to strategy change.
     confidence: 0.92
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ezGVESU0Rp0
       start_ms: 305266
@@ -2827,7 +2839,7 @@ evidence:
     reason: 'The transcript repeatedly specifies where to contact the ball: slightly off-center, middle-to-lower part, bottom, and middle-lower part for different returns.'
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: IgnpsIZW3tM
       start_ms: 254133
@@ -2842,7 +2854,7 @@ evidence:
     reason: The speaker explicitly says to focus on finding the correct contact point first and links good preparation to finding it.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: OQ7fB6yS8Fk
       start_ms: 258033
@@ -2857,7 +2869,7 @@ evidence:
     reason: The speaker emphasizes aligning the racket center with the ball rather than the edge to improve accuracy.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: yIBhoQsBD9k
       start_ms: 525200
@@ -2873,7 +2885,7 @@ evidence:
     reason: The speaker contrasts pushing the back of the ball with proper Banana Flick contact on the lower-middle area, with spin-based adjustments.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: zZ_B1Xg7Pjs
       start_ms: 464833
@@ -2890,7 +2902,7 @@ evidence:
     reason: The speaker explicitly maps racket position above, level with, and below the equator to different spin outcomes.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: EMHCC5XbkvY
       start_ms: 249566
@@ -2906,7 +2918,7 @@ evidence:
     reason: Describes the need to find the correct contact point and compares lower, center, and upper contact on the racket face.
     confidence: 0.94
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: BnjNVl_gssU
       start_ms: 206633
@@ -2921,7 +2933,7 @@ evidence:
     reason: He explains contact height relative to the table and says the contact is level with the table.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: DBEaBAv16Y8
       start_ms: 64633
@@ -2937,7 +2949,7 @@ evidence:
     reason: The speaker states that the contact point for a loop and a drive are different and emphasizes the moment of contact in the loop stroke.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: GdS4nZDb6ug
       start_ms: 199633
@@ -2951,7 +2963,7 @@ evidence:
     reason: The speaker repeatedly states that the contact point is the third key point and specifically identifies the midpoint between side and back as 'point 2.'
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: phKJvL-8VbQ
       start_ms: 194166
@@ -2966,7 +2978,7 @@ evidence:
     reason: The speaker says the starting contact point must be on the right edge of the ball and slightly to the right, otherwise the ball goes forward or is missed.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: b8ivXEfdO7c
       start_ms: 373333
@@ -2983,7 +2995,7 @@ evidence:
     reason: The speaker repeatedly defines contact point as a key factor, including that it cannot be at the backswing position and that loop-drive contact should be above the table.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: krlH8_UzRRM
       start_ms: 422700
@@ -2998,7 +3010,7 @@ evidence:
     reason: The transcript repeatedly discusses where and when to contact the ball, including in front of the body and during the rising phase.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Mpfr1981UiQ
       start_ms: 18500
@@ -3013,7 +3025,7 @@ evidence:
     reason: The speaker explains that closing the racket changes the thinning contact point and causes mishits or edge balls.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: f7Bf-QRn-9Q
       start_ms: 209966
@@ -3028,7 +3040,7 @@ evidence:
     reason: The speaker defines the ball contact position for backspin and topspin and states the racket must be at ball height at contact.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: PVNp35T9kL4
       start_ms: 277433
@@ -3044,7 +3056,7 @@ evidence:
     reason: The speaker explicitly contrasts early versus late contact point depending on whether the serve is topspin or backspin.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: qoK510cwjes
       start_ms: 108900
@@ -3059,7 +3071,7 @@ evidence:
     reason: The speaker emphasizes finding the contact point, notes it cannot be judged well with peripheral vision, and labels Point B as contact.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: QqMAsM2mtk4
       start_ms: 629500
@@ -3075,7 +3087,7 @@ evidence:
     reason: The transcript directly mentions meeting the ball in front and solid contact as the key contact requirement.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8TtaPJW3_94
       start_ms: 707066
@@ -3089,7 +3101,7 @@ evidence:
     reason: The speaker emphasizes focusing on the contact point, getting above the ball, and avoiding low-point contact.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: rf-9lmjigbs
       start_ms: 37600
@@ -3104,7 +3116,7 @@ evidence:
     reason: The speaker says the key issue is the contact point and contrasts contact from behind versus from underneath the ball.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8QSCtikekto
       start_ms: 370466
@@ -3120,7 +3132,7 @@ evidence:
     reason: The speaker directly says the viewer is not watching the opponent's contact point and should recognize spin at the moment of contact.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: t41-_NFTUuo
       start_ms: 56300
@@ -3135,7 +3147,7 @@ evidence:
     reason: The transcript explicitly names contact point as an important constraint for compact modern technique and says the real action begins at contact.
     confidence: 0.87
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 0ZHQIcZARgE
       start_ms: 364433
@@ -3149,7 +3161,7 @@ evidence:
     reason: The speaker says placement control depends on where contact is made and names the 5 o'clock contact point.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: cSDOaQqEtTQ
       start_ms: 51666
@@ -3163,7 +3175,7 @@ evidence:
     reason: The speaker repeatedly discusses contact location on the ball and bounce-phase contact timing.
     confidence: 0.92
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: CGidweVwLYw
       start_ms: 699000
@@ -3178,7 +3190,7 @@ evidence:
     reason: The speaker says the wrong contact point ruins contact quality and directly states the peak of the bounce is the correct point for these balls.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: dCjFkTKTH7I
       start_ms: 420333
@@ -3193,7 +3205,7 @@ evidence:
     reason: The speaker explicitly defines the critical point as meeting the ball in front and says the stroke is wrong because of the moment of contact.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: DfQ_yBSS_bk
       start_ms: 58700
@@ -3208,7 +3220,7 @@ evidence:
     reason: The transcript explains that looping requires a later contact point, out in front but after a backswing behind the body.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: UhJHyel0ogQ
       start_ms: 404400
@@ -3223,7 +3235,7 @@ evidence:
     reason: The speaker explicitly discusses judging the contact point, making contact closer to the body, and says the real work begins at contact.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: VDmGm94Awm4
       start_ms: 498400
@@ -3238,7 +3250,7 @@ evidence:
     reason: The speaker repeatedly identifies the racket center as the sweet spot and contrasts it with the tip for consistency and margin for error.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: VR1gORHDMeQ
       start_ms: 77933
@@ -3253,7 +3265,7 @@ evidence:
     reason: The speaker explains that the racket and ball need to meet at the perfect distance to create power and find the impact point.
     confidence: 0.91
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: xAxrT5EE-mY
       start_ms: 205600
@@ -3268,7 +3280,7 @@ evidence:
     reason: The speaker directly discusses contact point height and how stance determines whether the contact is appropriate.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Xt5RyN3qkSA
       start_ms: 467833
@@ -3284,7 +3296,7 @@ evidence:
     reason: The speaker repeatedly ties spin intensity to what happens at contact, especially sharp acceleration through contact and sudden increases in velocity.
     confidence: 0.91
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 4IHxQUdSvio
       start_ms: 215366
@@ -3299,7 +3311,7 @@ evidence:
     reason: The speaker explicitly names the contact point and says to brush the upper-middle portion of the ball rather than the center.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 5-fClb3FOp8
       start_ms: 155466
@@ -3315,7 +3327,7 @@ evidence:
     reason: The speaker says that at any contact point, the ball must be brushed upward with speed.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: D2hk2kkCdfI
       start_ms: 702500
@@ -3329,7 +3341,7 @@ evidence:
     reason: The transcript emphasizes the optimal point of contact and maintaining the correct contact distance.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: fX0-3KtEzUY
       start_ms: 278900
@@ -3344,7 +3356,7 @@ evidence:
     reason: The speaker says to establish a consistent contact point first and keep the chosen height fixed.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 2Qv6Oa6mm1M
       start_ms: 495166
@@ -3361,7 +3373,7 @@ evidence:
     reason: The speaker emphasizes focusing on the opponent's contact point and positioning yourself correctly for the contact point.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: WuWV6MlZQ_Q
       start_ms: 220500
@@ -3376,7 +3388,7 @@ evidence:
     reason: The speaker stresses that the contact point is critical and repeatedly refers to finding the contact surface and making contact at a specific place on the body/shot path.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 4hnrmSJ_Ayg
       start_ms: 568666
@@ -3392,7 +3404,7 @@ evidence:
     reason: The speaker explicitly names the contact point and links it to the arm-body angle and solid impact at ball contact.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 7JSZZSSjCqo
       start_ms: 764366
@@ -3406,7 +3418,7 @@ evidence:
     reason: The speaker explicitly identifies the contact point and stresses grabbing the ball at the moment of contact.
     confidence: 0.88
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: HYdN-7CIYww
       start_ms: 486133
@@ -3421,7 +3433,7 @@ evidence:
     reason: The speaker repeatedly identifies the contact point and insists it stay in the same lower-half location for deception.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: BpKGpKwopDE
       start_ms: 297633
@@ -3436,7 +3448,7 @@ evidence:
     reason: The speaker explains that the contact point must be farther out and distinct from the backswing point.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: HLmkP4I2jqM
       start_ms: 509100
@@ -3451,7 +3463,7 @@ evidence:
     reason: The transcript explicitly mentions the contact point on the ball and the lower half of the racket face as the contact location.
     confidence: 0.89
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: pQcxGOu4wEE
       start_ms: 687800
@@ -3466,7 +3478,7 @@ evidence:
     reason: The speaker explains that top-half contact makes pushes rise, bottom-half contact keeps them low, and contact must match the stroke goal.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ku3pB8FPhtM
       start_ms: 320933
@@ -3483,7 +3495,7 @@ evidence:
     reason: The speaker emphasizes earlier contact, firm contact, and accelerating through the contact point to generate quality and avoid thin or weak contact.
     confidence: 0.92
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: mvVfwjdxe34
       start_ms: 83900
@@ -3499,7 +3511,7 @@ evidence:
     reason: The transcript repeatedly discusses lower-half versus upper-half contact and ties it to loop quality and power.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: O0jOeCzzcZA
       start_ms: 209133
@@ -3513,7 +3525,7 @@ evidence:
     reason: The speaker explains that contacting too early leads to using the bottom or edge of the racket, producing weak brushing rather than solid contact.
     confidence: 0.88
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 01-q1cswVVs
       start_ms: 100966
@@ -3529,7 +3541,7 @@ evidence:
     reason: The speaker says the contact point should not get too far back and should be in front of the body.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 82C2Zhfyq0s
       start_ms: 67600
@@ -3543,7 +3555,7 @@ evidence:
     reason: The transcript centers on contact quality, describing it as sharp, focused, solid, and correctly timed rather than soft, jammed, or late.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: I3_-LFqMWgA
       start_ms: 398666
@@ -3558,7 +3570,7 @@ evidence:
     reason: The speaker explicitly says the problem is the contact point on the racket face.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: IXRPhM4Pjzc
       start_ms: 14500
@@ -3572,7 +3584,7 @@ evidence:
     reason: The speaker repeatedly describes the goal as meeting the ball in front and driving through contact, which centers the stroke on the contact point.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: M8fzQvShrx8
       start_ms: 161266
@@ -3587,7 +3599,7 @@ evidence:
     reason: The speaker explicitly says the 2 o'clock cue refers to the contact point on the ball, not the racket angle, and defines the ball clock face for reference.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 1E475xXl9HA
       start_ms: 652400
@@ -3604,7 +3616,7 @@ evidence:
     reason: The speaker names contact point as critical and ties it to bounce phase and ideal height.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: fILPmFV3eyQ
       start_ms: 132000
@@ -3619,7 +3631,7 @@ evidence:
     reason: The transcript recommends watching the contact point, checking the racket mark, and adjusting racket angle when needed.
     confidence: 0.91
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Gd_NwMPeTJk
       start_ms: 449266
@@ -3635,7 +3647,7 @@ evidence:
     reason: The speaker repeatedly refers to contact and gripping the ball on the rubber as the key execution point.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 9EcoI6PnOzE
       start_ms: 322966
@@ -3650,7 +3662,7 @@ evidence:
     reason: The speaker specifies contacting the middle-to-upper part of the ball and emphasizes that poor contact can send the ball off in any direction.
     confidence: 0.89
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: kaeWe3HbD8I
       start_ms: 572033
@@ -3664,7 +3676,7 @@ evidence:
     reason: The speaker explicitly introduces 'the contact point' and discusses how it changes by shot type.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: fAEn9wkWGd8
       start_ms: 185933
@@ -3681,7 +3693,7 @@ evidence:
     reason: The speaker states that when body position is low, the contact point becomes correct, and specifically says contact should be at table height or slightly above for a power loop.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hL_nXrojZT0
       start_ms: 737333
@@ -3699,7 +3711,7 @@ evidence:
     reason: The speaker links the feeling of pushing forward to an early contact point and recommends waiting for the bounce and rise before swinging.
     confidence: 0.86
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 1UthOchBWWc
       start_ms: 499700
@@ -3714,7 +3726,7 @@ evidence:
     reason: The speaker specifies where contact should occur and contrasts it with an incorrect farther-out position.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: s6lj1otqR90
       start_ms: 34333
@@ -3730,7 +3742,7 @@ evidence:
     reason: The speaker contrasts center contact versus tip contact and ties contact timing to arc, friction, and shot quality.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: tFRfcMo8Stw
       start_ms: 111733
@@ -3745,7 +3757,7 @@ evidence:
     reason: The speaker says players misjudge the contact point on half-high balls and that the ideal hitting point can be missed if preparation is late.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: XBi28mLBv7Q
       start_ms: 196533
@@ -3760,7 +3772,7 @@ evidence:
     reason: The transcript directly discusses where contact should happen and why the height matters.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: OVkH-47SvqE
       start_ms: 547833
@@ -3775,7 +3787,7 @@ evidence:
     reason: The speaker names a 'golden contact point' and says it is the position that lets the player generate power continuously without the ball flying off.
     confidence: 0.94
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: qPpVIKNWMwY
       start_ms: 547166
@@ -3791,7 +3803,7 @@ evidence:
     reason: The speaker explicitly says to focus on the opponent's racket at the moment of contact and to focus on the contact point when judging sidespin.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: UqXqp8saFbU
       start_ms: 426700
@@ -3805,7 +3817,7 @@ evidence:
     reason: The speaker directly refers to finding the contact point and making contact in front of the body.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: _77LMM6s1cw
       start_ms: 50766
@@ -3819,7 +3831,7 @@ evidence:
     reason: The speaker repeatedly emphasizes that contact is the beginning of the brush and the most critical instant.
     confidence: 0.9
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: wytyHpyZr9A
       start_ms: 933266
@@ -3833,7 +3845,7 @@ evidence:
     reason: The speaker emphasizes the exact instant of contact and says the motion at contact tells you the spin.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 0KcRfTXRcsY
       start_ms: 544500
@@ -3842,4 +3854,604 @@ evidence:
       segment_ids:
         - 0KcRfTXRcsY:00106
         - 0KcRfTXRcsY:00108
+  - id: 01-q1cswVVs-concept-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: Contacting the ball too early causes the racket to meet it with the bottom part, leading to missed or powerless contact and ineffective friction.
+    reason: This contiguous span explains that mistiming contact causes the racket to meet the ball with the wrong part of the racket, resulting in missed or weak contact. It directly supports the existing Contact point concept.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 01-q1cswVVs
+      start_ms: 34766
+      end_ms: 59400
+      url: https://www.youtube.com/watch?v=01-q1cswVVs&t=34s
+      segment_ids:
+        - 01-q1cswVVs:00007
+        - 01-q1cswVVs:00008
+        - 01-q1cswVVs:00009
+        - 01-q1cswVVs:00010
+  - id: 1HdDP2jYQyE-concept-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: The coach explains that standing too close restricts the stroke and recommends moving the point of contact slightly farther from the body horizontally.
+    reason: This contiguous 20-second span directly discusses the ball’s point of contact and recommends adjusting it farther from the body. It matches the existing Contact point concept.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 1HdDP2jYQyE
+      start_ms: 182933
+      end_ms: 202700
+      url: https://www.youtube.com/watch?v=1HdDP2jYQyE&t=182s
+      segment_ids:
+        - 1HdDP2jYQyE:00031
+        - 1HdDP2jYQyE:00032
+        - 1HdDP2jYQyE:00033
+        - 1HdDP2jYQyE:00034
+        - 1HdDP2jYQyE:00035
+        - 1HdDP2jYQyE:00036
+  - id: 1Issn-5noM4-concept-contact-point-codex-reviewed
+    evidence_type: definition
+    excerpt: The optimal contact point for a topspin ball is always at the peak of the bounce; “peak of the bounce” means the moment you start your forward swing, not the moment of contact.
+    reason: These contiguous segments directly describe the topspin contact-point timing and clarify that the peak refers to the start of the forward swing, not racket-ball contact. The unsupported backspin claim was omitted.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 1Issn-5noM4
+      start_ms: 91066
+      end_ms: 102600
+      url: https://www.youtube.com/watch?v=1Issn-5noM4&t=91s
+      segment_ids:
+        - 1Issn-5noM4:00022
+        - 1Issn-5noM4:00023
+        - 1Issn-5noM4:00024
+  - id: 1UthOchBWWc-concept-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: If you feel you're pushing forward, your contact point is too early; pushing sideways indicates a broken wrist, while needing to lift the ball suggests you're being jammed.
+    reason: These contiguous segments directly explain how contact timing and related contact mechanics produce distinct error sensations, supporting the existing Contact point concept.
+    confidence: 0.96
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 1UthOchBWWc
+      start_ms: 499700
+      end_ms: 520700
+      url: https://www.youtube.com/watch?v=1UthOchBWWc&t=499s
+      segment_ids:
+        - 1UthOchBWWc:00070
+        - 1UthOchBWWc:00071
+        - 1UthOchBWWc:00072
+  - id: 2Wk2xe0I1s8-concept-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: In a forehand loop against backspin, contacting the ball on the upper half of the racket produces a normal trajectory, while lower-half contact can make the loop dive into the net.
+    reason: This contiguous 24.8-second span explains how the racket contact point affects the trajectory and directly supports the existing Contact point concept.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 2Wk2xe0I1s8
+      start_ms: 9733
+      end_ms: 37833
+      url: https://www.youtube.com/watch?v=2Wk2xe0I1s8&t=9s
+      segment_ids:
+        - 2Wk2xe0I1s8:00002
+        - 2Wk2xe0I1s8:00003
+        - 2Wk2xe0I1s8:00004
+        - 2Wk2xe0I1s8:00005
+        - 2Wk2xe0I1s8:00006
+        - 2Wk2xe0I1s8:00007
+        - 2Wk2xe0I1s8:00008
+  - id: 2wrSMd7QNww-concept-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: Bring the ball to the contact point in front-right at no more than chest height, stop it there, and leave space for the arm to accelerate afterward.
+    reason: This contiguous span identifies the contact point’s location and height, then explains that stopping there creates space for the subsequent forward acceleration.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 2wrSMd7QNww
+      start_ms: 318833
+      end_ms: 332133
+      url: https://www.youtube.com/watch?v=2wrSMd7QNww&t=318s
+      segment_ids:
+        - 2wrSMd7QNww:00083
+        - 2wrSMd7QNww:00084
+        - 2wrSMd7QNww:00085
+        - 2wrSMd7QNww:00086
+        - 2wrSMd7QNww:00087
+        - 2wrSMd7QNww:00088
+  - id: 44MN0MejyPI-concept-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: The contact point is compared between the rising phase and the peak; contacting the ball at its peak produces a more coordinated movement, while rising contact feels urgent.
+    reason: These contiguous segments directly discuss rising versus peak contact and state that peak contact is more coordinated. The selected span is approximately 14 seconds and supports the rewritten excerpt.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 44MN0MejyPI
+      start_ms: 11800
+      end_ms: 35500
+      url: https://www.youtube.com/watch?v=44MN0MejyPI&t=11s
+      segment_ids:
+        - 44MN0MejyPI:00001
+        - 44MN0MejyPI:00003
+        - 44MN0MejyPI:00004
+        - 44MN0MejyPI:00005
+        - 44MN0MejyPI:00007
+        - 44MN0MejyPI:00008
+        - 44MN0MejyPI:00009
+  - id: 6Lw_HobLgSY-concept-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: For a high topspin shot, the contact point should be more upward; brushing the ball at that point after lowering the center of gravity helps strengthen the spin.
+    reason: This contiguous 17.1-second span directly identifies the contact point and explains how its upward position relates to brushing and spin generation.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 6Lw_HobLgSY
+      start_ms: 171133
+      end_ms: 187600
+      url: https://www.youtube.com/watch?v=6Lw_HobLgSY&t=171s
+      segment_ids:
+        - 6Lw_HobLgSY:00070
+        - 6Lw_HobLgSY:00071
+        - 6Lw_HobLgSY:00072
+        - 6Lw_HobLgSY:00073
+        - 6Lw_HobLgSY:00074
+        - 6Lw_HobLgSY:00075
+  - id: 7Zz_cVWrgng-concept-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: In serving, accurately locating the contact point on the ball improves the outcome; positioning the ball too far from the body makes it difficult to find the correct side contact point.
+    reason: These contiguous segments directly explain that accurate contact-point location improves serve quality and that excessive distance makes the correct contact point difficult to locate. The supplied existing concept covers this durable topic.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 7Zz_cVWrgng
+      start_ms: 450866
+      end_ms: 472133
+      url: https://www.youtube.com/watch?v=7Zz_cVWrgng&t=450s
+      segment_ids:
+        - 7Zz_cVWrgng:00090
+        - 7Zz_cVWrgng:00091
+        - 7Zz_cVWrgng:00092
+  - id: 8fxjEROShs4-concept-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: The player must quickly find the ball’s contact point and locate the relevant contact point when sensing the ball on the left side.
+    reason: This contiguous span directly discusses finding and locating the ball’s contact point while receiving a curving serve, matching the existing Contact point concept.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8fxjEROShs4
+      start_ms: 614533
+      end_ms: 642466
+      url: https://www.youtube.com/watch?v=8fxjEROShs4&t=614s
+      segment_ids:
+        - 8fxjEROShs4:00085
+        - 8fxjEROShs4:00086
+        - 8fxjEROShs4:00087
+        - 8fxjEROShs4:00088
+  - id: 8uzW4bF4Oc8-concept-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: For a fast serve, the contact point should be close to the body and near the table, with a low center of gravity, to produce a high-quality long ball.
+    reason: These contiguous segments explicitly explain that the contact point should be close to the body and table when serving a fast ball. They directly support the existing Contact point concept.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8uzW4bF4Oc8
+      start_ms: 219066
+      end_ms: 232500
+      url: https://www.youtube.com/watch?v=8uzW4bF4Oc8&t=219s
+      segment_ids:
+        - 8uzW4bF4Oc8:00102
+        - 8uzW4bF4Oc8:00103
+        - 8uzW4bF4Oc8:00104
+        - 8uzW4bF4Oc8:00105
+        - 8uzW4bF4Oc8:00106
+        - 8uzW4bF4Oc8:00107
+        - 8uzW4bF4Oc8:00108
+  - id: 8W1dvuH8iOI-concept-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: The contact point is where the racket meets the ball, distinct from the ready position.
+    reason: These contiguous segments explicitly distinguish the ready position from the point of contact and describe the racket and ball meeting at that position. The existing concept is the same durable topic, so it should be accepted with its exact ID.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 8W1dvuH8iOI
+      start_ms: 149000
+      end_ms: 165266
+      url: https://www.youtube.com/watch?v=8W1dvuH8iOI&t=149s
+      segment_ids:
+        - 8W1dvuH8iOI:00030
+        - 8W1dvuH8iOI:00031
+        - 8W1dvuH8iOI:00032
+  - id: 8yuRXgTWOxc-concept-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: Forehand and backhand loops against backspin are more difficult because the distance between the ball and the racket has to be extremely precise.
+    reason: This contiguous 11.44-second span directly explains that precise ball-to-racket distance is required for looping against backspin, supporting the existing Contact point concept.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8yuRXgTWOxc
+      start_ms: 121000
+      end_ms: 134400
+      url: https://www.youtube.com/watch?v=8yuRXgTWOxc&t=121s
+      segment_ids:
+        - 8yuRXgTWOxc:00046
+        - 8yuRXgTWOxc:00047
+        - 8yuRXgTWOxc:00048
+        - 8yuRXgTWOxc:00049
+        - 8yuRXgTWOxc:00050
+  - id: Br3osmuNeIA-candidate-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: The primary key point for beginner forehand stances is achieving a contact point toward the front.
+    reason: These contiguous segments identify contact point as a primary key point for beginner forehand stances and state that standing this way achieves a better contact point toward the front.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Br3osmuNeIA
+      start_ms: 54000
+      end_ms: 67280
+      url: https://www.youtube.com/watch?v=Br3osmuNeIA&t=54s
+      segment_ids:
+        - Br3osmuNeIA:00006
+        - Br3osmuNeIA:00007
+  - id: deTFdwcfnrE-concept-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: For hitting, contact around 2:00; contacting at 1:00 sends the ball into the net and requires a more open racket.
+    reason: This contiguous 26-second span directly explains how contact location affects the outcome of a hit.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: deTFdwcfnrE
+      start_ms: 257799
+      end_ms: 283960
+      url: https://www.youtube.com/watch?v=deTFdwcfnrE&t=257s
+      segment_ids:
+        - deTFdwcfnrE:00091
+        - deTFdwcfnrE:00092
+        - deTFdwcfnrE:00093
+        - deTFdwcfnrE:00094
+        - deTFdwcfnrE:00095
+        - deTFdwcfnrE:00096
+        - deTFdwcfnrE:00097
+        - deTFdwcfnrE:00098
+  - id: dJJtJQvuwOY-concept-contact-point-codex-reviewed
+    evidence_type: definition
+    excerpt: Focus on the contact point.
+    reason: The speaker explicitly instructs the player to focus on the contact point.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: dJJtJQvuwOY
+      start_ms: 479433
+      end_ms: 484933
+      url: https://www.youtube.com/watch?v=dJJtJQvuwOY&t=479s
+      segment_ids:
+        - dJJtJQvuwOY:00066
+  - id: egRHNdxZbYo-concept-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: For blocking, contact should be in front and at the ball’s highest point.
+    reason: These contiguous segments directly describe where and when contact should occur during a block, matching the existing Contact point concept.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: egRHNdxZbYo
+      start_ms: 673760
+      end_ms: 687760
+      url: https://www.youtube.com/watch?v=egRHNdxZbYo&t=673s
+      segment_ids:
+        - egRHNdxZbYo:00094
+        - egRHNdxZbYo:00095
+  - id: fXOGFZD1MTY-concept-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: Keeping the loop tight to the body helps find the contact point when moving.
+    reason: These contiguous segments directly explain that a tight body position helps locate the contact point during movement.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: fXOGFZD1MTY
+      start_ms: 325520
+      end_ms: 332240
+      url: https://www.youtube.com/watch?v=fXOGFZD1MTY&t=325s
+      segment_ids:
+        - fXOGFZD1MTY:00120
+        - fXOGFZD1MTY:00121
+        - fXOGFZD1MTY:00122
+  - id: GdS4nZDb6ug-concept-contact-point-codex-reviewed
+    evidence_type: definition
+    excerpt: The contact point for a forehand topspin loop and a drive are different.
+    reason: This contiguous 13.9-second span introduces the forehand topspin loop and directly states that its contact point differs from the drive.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: GdS4nZDb6ug
+      start_ms: 0
+      end_ms: 13900
+      url: https://www.youtube.com/watch?v=GdS4nZDb6ug&t=0s
+      segment_ids:
+        - GdS4nZDb6ug:00000
+        - GdS4nZDb6ug:00001
+        - GdS4nZDb6ug:00002
+  - id: GuuYa4REyQw-concept-contact-point-codex-reviewed
+    evidence_type: definition
+    excerpt: When serving, contact the ball at the correct point without opening up the friction.
+    reason: This contiguous span directly identifies the ball contact point during a serve and explains that the contact should be made at a specific point while avoiding an open friction angle.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: GuuYa4REyQw
+      start_ms: 32333
+      end_ms: 41433
+      url: https://www.youtube.com/watch?v=GuuYa4REyQw&t=32s
+      segment_ids:
+        - GuuYa4REyQw:00002
+        - GuuYa4REyQw:00003
+        - GuuYa4REyQw:00004
+        - GuuYa4REyQw:00005
+  - id: BnjNVl_gssU-concept-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: 'Find the correct contact point: contacting the lower half of the racket face is likely to hit the net, the center relies on power to overcome spin, and the upper half allows you to brush the ball properly.'
+    reason: These contiguous segments directly explain how different racket-face contact locations affect the outcome of the stroke, matching the existing Contact point concept.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: BnjNVl_gssU
+      start_ms: 206633
+      end_ms: 224666
+      url: https://www.youtube.com/watch?v=BnjNVl_gssU&t=206s
+      segment_ids:
+        - BnjNVl_gssU:00045
+        - BnjNVl_gssU:00046
+        - BnjNVl_gssU:00047
+        - BnjNVl_gssU:00048
+  - id: dCjFkTKTH7I-concept-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: For these short half-high balls, you have to hit them at the peak of the bounce.
+    reason: The selected contiguous span asks which bounce phase is the correct contact point and directly answers that short half-high balls should be hit at the peak of the bounce.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: dCjFkTKTH7I
+      start_ms: 420333
+      end_ms: 430833
+      url: https://www.youtube.com/watch?v=dCjFkTKTH7I&t=420s
+      segment_ids:
+        - dCjFkTKTH7I:00086
+        - dCjFkTKTH7I:00087
+  - id: Jjd8Mu1s0S0-concept-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: Many players can't generate spin because their contact position is wrong. You always brush the ball on the upper portion of the racket. Add poor brushing technique and the ball instantly bounces off the blade.
+    reason: This contiguous span directly explains that racket contact position affects spin generation and identifies the upper portion of the racket as the contact area. The supplied concept is the same durable topic as the existing Contact point concept.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Jjd8Mu1s0S0
+      start_ms: 35920
+      end_ms: 51160
+      url: https://www.youtube.com/watch?v=Jjd8Mu1s0S0&t=35s
+      segment_ids:
+        - Jjd8Mu1s0S0:00012
+        - Jjd8Mu1s0S0:00013
+        - Jjd8Mu1s0S0:00014
+        - Jjd8Mu1s0S0:00015
+        - Jjd8Mu1s0S0:00016
+        - Jjd8Mu1s0S0:00017
+  - id: jrGOn6gpIa8-concept-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: The contact point is too high, causing the ball to rise excessively. Use the racket height as a reference and keep the contact point from exceeding it.
+    reason: These contiguous segments directly explain that an excessively high contact point makes the ball go higher and recommend using racket height as a reference to control it.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: jrGOn6gpIa8
+      start_ms: 476533
+      end_ms: 505200
+      url: https://www.youtube.com/watch?v=jrGOn6gpIa8&t=476s
+      segment_ids:
+        - jrGOn6gpIa8:00105
+        - jrGOn6gpIa8:00106
+        - jrGOn6gpIa8:00107
+        - jrGOn6gpIa8:00108
+        - jrGOn6gpIa8:00109
+        - jrGOn6gpIa8:00110
+        - jrGOn6gpIa8:00111
+  - id: lO0H9Cs6JEo-concept-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: The speaker explains that contacting below the ball while moving upward produces topspin, while contacting during a downward racket motion produces mostly backspin.
+    reason: The selected contiguous span directly explains contact point and racket travel direction as distinguishing factors between topspin and backspin, matching the existing Contact point concept.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: lO0H9Cs6JEo
+      start_ms: 412440
+      end_ms: 436160
+      url: https://www.youtube.com/watch?v=lO0H9Cs6JEo&t=412s
+      segment_ids:
+        - lO0H9Cs6JEo:00119
+        - lO0H9Cs6JEo:00120
+        - lO0H9Cs6JEo:00121
+        - lO0H9Cs6JEo:00122
+        - lO0H9Cs6JEo:00123
+        - lO0H9Cs6JEo:00124
+        - lO0H9Cs6JEo:00125
+        - lO0H9Cs6JEo:00126
+  - id: LopC3UNnOXM-concept-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: For a high topspin shot, the contact point should be more upward; with a lower center of gravity, brush the ball at that point to produce stronger spin.
+    reason: This contiguous span directly identifies the contact point and explains how its position and brushing action affect topspin strength. It matches the existing durable concept “Contact point.”
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: LopC3UNnOXM
+      start_ms: 169300
+      end_ms: 186933
+      url: https://www.youtube.com/watch?v=LopC3UNnOXM&t=169s
+      segment_ids:
+        - LopC3UNnOXM:00058
+        - LopC3UNnOXM:00059
+        - LopC3UNnOXM:00060
+        - LopC3UNnOXM:00061
+        - LopC3UNnOXM:00062
+        - LopC3UNnOXM:00063
+        - LopC3UNnOXM:00064
+  - id: lRAoXPoYOBk-concept-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: The racket is relaxed before striking, and the point of contact is where the ball and racket meet.
+    reason: This contiguous 17-second span directly identifies the point of contact between the ball and racket, supporting the existing Contact point concept.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: lRAoXPoYOBk
+      start_ms: 136100
+      end_ms: 153633
+      url: https://www.youtube.com/watch?v=lRAoXPoYOBk&t=136s
+      segment_ids:
+        - lRAoXPoYOBk:00053
+        - lRAoXPoYOBk:00054
+        - lRAoXPoYOBk:00055
+        - lRAoXPoYOBk:00056
+        - lRAoXPoYOBk:00057
+  - id: M8fzQvShrx8-concept-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: Meeting the ball in front is a fundamental principle across backspin, topspin, pushes, flicks, and defensive shots, requiring a forward direction of force.
+    reason: These contiguous segments explicitly identify meeting the ball in front and connect it to forward force across multiple stroke types.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: M8fzQvShrx8
+      start_ms: 161266
+      end_ms: 189133
+      url: https://www.youtube.com/watch?v=M8fzQvShrx8&t=161s
+      segment_ids:
+        - M8fzQvShrx8:00032
+        - M8fzQvShrx8:00033
+        - M8fzQvShrx8:00034
+        - M8fzQvShrx8:00035
+  - id: mpCV9-Cc1HE-concept-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: Many players apply force too late, causing the contact point to be too far back; when positioned to pull, you must be close to the ball when striking it.
+    reason: This contiguous span directly explains that contact occurring too far back is a problem and that the player must be close to the ball. It supports the existing Contact point concept, but not a specific timing phase or the proposed forehand-loop prerequisite.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: mpCV9-Cc1HE
+      start_ms: 213433
+      end_ms: 227600
+      url: https://www.youtube.com/watch?v=mpCV9-Cc1HE&t=213s
+      segment_ids:
+        - mpCV9-Cc1HE:00090
+        - mpCV9-Cc1HE:00091
+        - mpCV9-Cc1HE:00092
+        - mpCV9-Cc1HE:00093
+        - mpCV9-Cc1HE:00094
+        - mpCV9-Cc1HE:00095
+        - mpCV9-Cc1HE:00096
+  - id: N3GieiMNE7Y-concept-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: Contact is just the beginning of the stroke; the speaker treats contact as the real start rather than the endpoint.
+    reason: These contiguous segments directly discuss contact as the beginning and real start of the stroke, supporting the existing Contact point concept without adding unsupported claims about a specific location or power generation.
+    confidence: 0.97
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: N3GieiMNE7Y
+      start_ms: 303400
+      end_ms: 317920
+      url: https://www.youtube.com/watch?v=N3GieiMNE7Y&t=303s
+      segment_ids:
+        - N3GieiMNE7Y:00106
+        - N3GieiMNE7Y:00107
+        - N3GieiMNE7Y:00108
+        - N3GieiMNE7Y:00109
+  - id: NMa0xKa1kpo-concept-contact-point-codex-reviewed
+    evidence_type: definition
+    excerpt: The contact point is always on the lower part of the racket.
+    reason: This contiguous topic moment explicitly introduces contact as the lesson topic and states that the contact point is always on the lower part of the racket, directly matching the existing Contact point concept.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: NMa0xKa1kpo
+      start_ms: 1088266
+      end_ms: 1108633
+      url: https://www.youtube.com/watch?v=NMa0xKa1kpo&t=1088s
+      segment_ids:
+        - NMa0xKa1kpo:00226
+        - NMa0xKa1kpo:00227
+        - NMa0xKa1kpo:00228
+        - NMa0xKa1kpo:00230
+        - NMa0xKa1kpo:00231
+        - NMa0xKa1kpo:00232
+  - id: P21-_dtUzE8-concept-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: The contact point is where the racket meets the ball, and its location can reveal the spin.
+    reason: These contiguous segments identify the point of contact, specify that the racket contacts the ball at that point, and connect contact location with sidespin and brushing.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: P21-_dtUzE8
+      start_ms: 353166
+      end_ms: 366633
+      url: https://www.youtube.com/watch?v=P21-_dtUzE8&t=353s
+      segment_ids:
+        - P21-_dtUzE8:00162
+        - P21-_dtUzE8:00163
+        - P21-_dtUzE8:00164
+        - P21-_dtUzE8:00165
+        - P21-_dtUzE8:00167
+  - id: J7Lm5IL-ggs-concept-contact-point-codex-reviewed
+    evidence_type: definition
+    excerpt: For a stable rally, both players synchronize their contact timing and meet the ball at the high point, or peak, of the bounce.
+    reason: These contiguous segments directly describe contact timing and the contact point at the peak of the bounce as foundations for stable rallying.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: J7Lm5IL-ggs
+      start_ms: 64700
+      end_ms: 81033
+      url: https://www.youtube.com/watch?v=J7Lm5IL-ggs&t=64s
+      segment_ids:
+        - J7Lm5IL-ggs:00013
+        - J7Lm5IL-ggs:00014
+        - J7Lm5IL-ggs:00015
+  - id: eIsYt1sCPRI-concept-contact-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: When looping on the falling point, start the racket hand below table level and make contact beside the body, never behind it.
+    reason: The selected contiguous span explains contact timing and body-relative contact position, directly supporting the existing Contact point concept.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: eIsYt1sCPRI
+      start_ms: 63200
+      end_ms: 80633
+      url: https://www.youtube.com/watch?v=eIsYt1sCPRI&t=63s
+      segment_ids:
+        - eIsYt1sCPRI:00014
+        - eIsYt1sCPRI:00015
+        - eIsYt1sCPRI:00016
 relations: []

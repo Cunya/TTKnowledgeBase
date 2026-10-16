@@ -7,20 +7,9 @@ aliases:
   - brush the right side of the ball
 short_definition: A push receive that matches the incoming sidespin by adjusting racket angle and brushing the ball's side.
 evidence_summary: >-
-  Side-adjusted push against sidespin brings together several connected ideas. A useful contrast
-  is between a push that goes and the spin with one that hits the net, then specifies racket-angle
-  adjustment and brushing the right side against left sidespin. The short push to the forehand
-  wide angle uses a retraction and extension motion, brushes the side of the ball, and generates
-  friction by brushing sideways. To add sideways motion on pushes, match the server's racket
-  angle, and adjust the hand height and direction against sidespin and side-topspin. The mirror
-  principle and shows slight angle, off-center contact, and going with the spin. To always contact
-  the side of the ball and slightly off-center when pushing. A direct rule for unclear spin: push
-  sideways, slightly down, to kill upward trajectory and keep the ball low. The solution is to
-  push forward and sideways, aim toward the center line, and use sideways motion to lower the arc,
-  especially when spin is hard to read. To adjust the racket angle and contact the side of the
-  ball rather than the direct back. Together, these principles show how the topic is applied in
-  practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:ee401b8504adb70d8316a0a07fdd00c36866150c7e391f0781142f21c72493c1"
+  A push receive that matches the incoming sidespin by adjusting racket angle and brushing the
+  ball's side.
+evidence_summary_source_hash: "sha256:cf83254cf55595016681666d5423f61d3cd94ce8938c6f53702039fd2caef90e"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -37,10 +26,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 1c5f0bd32b9ed2814a8b24ea79dcac46a51f06caee510ebd3338488159ee8e10
-  prompt_version: candidate-review-v1
+  input_hash: sha256:3afe427ce3f9d6da444c6471f3552efcd4a288c61e837d3f826134805502fbbe
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: ihrv3kBFb-U-concept-side-adjusted-push-against-sidespin-reviewed
     evidence_type: definition
@@ -48,7 +40,7 @@ evidence:
     reason: The speaker contrasts a push that goes with the spin with one that hits the net, then specifies racket-angle adjustment and brushing the right side against left sidespin.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ihrv3kBFb-U
       start_ms: 34300
@@ -64,7 +56,7 @@ evidence:
     reason: The speaker says the short push to the forehand wide angle uses a retraction and extension motion, brushes the side of the ball, and generates friction by brushing sideways.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: IgnpsIZW3tM
       start_ms: 484166
@@ -80,7 +72,7 @@ evidence:
     reason: The speaker explicitly says to add sideways motion on pushes, match the server's racket angle, and adjust the hand height and direction against sidespin and side-topspin.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 2HMLpiaJLL0
       start_ms: 193100
@@ -97,7 +89,7 @@ evidence:
     reason: The speaker names the mirror principle and shows slight angle, off-center contact, and going with the spin.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: p-8pxqMG0kw
       start_ms: 143066
@@ -114,7 +106,7 @@ evidence:
     reason: The speaker explicitly says to always contact the side of the ball and slightly off-center when pushing.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: VYMqgnrDAhk
       start_ms: 279566
@@ -129,7 +121,7 @@ evidence:
     reason: 'The speaker gives a direct rule for unclear spin: push sideways, slightly down, to kill upward trajectory and keep the ball low.'
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ps9aOE0YKE8
       start_ms: 934300
@@ -148,7 +140,7 @@ evidence:
     reason: The speaker says the solution is to push forward and sideways, aim toward the center line, and use sideways motion to lower the arc, especially when spin is hard to read.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: QKc7uSJo9mM
       start_ms: 44000
@@ -164,7 +156,7 @@ evidence:
     reason: The speaker says to adjust the racket angle and contact the side of the ball rather than the direct back.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: KEOmLdUTC-g
       start_ms: 465400
@@ -176,3 +168,19 @@ evidence:
         - KEOmLdUTC-g:00106
         - KEOmLdUTC-g:00107
         - KEOmLdUTC-g:00109
+  - id: ihrv3kBFb-U-concept-side-adjusted-push-against-sidespin-codex-reviewed
+    evidence_type: explanation
+    excerpt: Against left sidespin, slightly adjust your racket angle and brush the right side of the ball; using the first technique makes you less affected by the spin.
+    reason: These contiguous segments explain that the first pushing technique goes with the spin and specifically instruct the player to adjust the racket angle and brush the right side of the ball against left sidespin.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ihrv3kBFb-U
+      start_ms: 34300
+      end_ms: 56600
+      url: https://www.youtube.com/watch?v=ihrv3kBFb-U&t=34s
+      segment_ids:
+        - ihrv3kBFb-U:00008
+        - ihrv3kBFb-U:00010
+        - ihrv3kBFb-U:00011

@@ -7,19 +7,7 @@ aliases:
   - actively changing the placement of your shots
 short_definition: Changing where you place the ball to disrupt the opponent and create tactical openings.
 evidence_summary: >-
-  Variation in placement brings together several connected ideas. Placement as the first key
-  variation and the player should actively control placement. Varying depth and width, pushing to
-  the middle, and varying placement within three shots before attacking decisively. The latter
-  part of non-predictable placement, target variation, and forcing opponent movement. States that
-  overusing one placement is ineffective and that serves should vary by target zone. Varying
-  placement, height, depth, and speed so drills resemble match conditions. To vary placement and
-  avoid repeatedly hitting the same spot. Opponents use your pace to change placement, then
-  recommends changing placement to attack angles and disturb the opponent's rhythm. Practice
-  should cover wide angles and then gives serve sequences that deliberately change placement.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:0b6bad4362f1fc5901eee36d784e3f628e44a6476379b53a41f1c4c738541246"
-evidence_summary_generator: "deterministic"
+  Predictable placement makes an attack easier to block. Vary shots among the wide forehand, wide backhand, and middle to make the opponent move and adjust.
 concept_type: tactic
 facets:
   category:
@@ -27,10 +15,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 315a32dc4a933f9d6e2af4c82e678247e423cb0587ebf8f445e17aa701e9a33c
-  prompt_version: candidate-review-v1
+  input_hash: sha256:f9b54e9425337479f573854626a3397c79d8675b03fdbef04588bdff265e4808
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: sBF131BmxwM-concept-variation-in-placement-reviewed
     evidence_type: definition
@@ -38,7 +29,7 @@ evidence:
     reason: The speaker explicitly identifies placement as the first key variation and says the player should actively control placement.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: sBF131BmxwM
       start_ms: 595900
@@ -52,7 +43,7 @@ evidence:
     reason: The speaker recommends varying depth and width, pushing to the middle, and varying placement within three shots before attacking decisively.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ySM92aDSRPo
       start_ms: 719933
@@ -68,7 +59,7 @@ evidence:
     reason: The latter part of the transcript repeatedly emphasizes non-predictable placement, target variation, and forcing opponent movement.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: PVNp35T9kL4
       start_ms: 750400
@@ -88,7 +79,7 @@ evidence:
     reason: States that overusing one placement is ineffective and that serves should vary by target zone.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Msruv1p5jp4
       start_ms: 20433
@@ -107,7 +98,7 @@ evidence:
     reason: The coach explicitly recommends varying placement, height, depth, and speed so drills resemble match conditions.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: -uuSx6fU8yY
       start_ms: 833266
@@ -123,7 +114,7 @@ evidence:
     reason: The speaker explicitly says to vary placement and avoid repeatedly hitting the same spot.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: YKuNt_fynhY
       start_ms: 15233
@@ -138,7 +129,7 @@ evidence:
     reason: The speaker says opponents use your pace to change placement, then recommends changing placement to attack angles and disturb the opponent's rhythm.
     confidence: 0.92
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: rR9HWla28Sc
       start_ms: 7733
@@ -152,7 +143,7 @@ evidence:
     reason: The speaker says practice should cover wide angles and then gives serve sequences that deliberately change placement.
     confidence: 0.9
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Pym9pNWaowA
       start_ms: 846433
@@ -163,3 +154,41 @@ evidence:
         - Pym9pNWaowA:00136
         - Pym9pNWaowA:00137
         - Pym9pNWaowA:00138
+  - id: cSDOaQqEtTQ-concept-placement-variation-in-backhand-flick-codex-reviewed
+    evidence_type: explanation
+    excerpt: Varying backhand flick placement across the table makes the opponent unstable and can exploit poor footwork by forcing them to move.
+    reason: These contiguous segments explain that repeatedly flicking to one location allows effective counter-attacks, while varying placement across the table destabilizes the opponent and forces movement. The span is under 30 seconds and directly supports the concept.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: cSDOaQqEtTQ
+      start_ms: 209833
+      end_ms: 236966
+      url: https://www.youtube.com/watch?v=cSDOaQqEtTQ&t=209s
+      segment_ids:
+        - cSDOaQqEtTQ:00046
+        - cSDOaQqEtTQ:00047
+        - cSDOaQqEtTQ:00048
+        - cSDOaQqEtTQ:00049
+        - cSDOaQqEtTQ:00050
+        - cSDOaQqEtTQ:00051
+  - id: PVNp35T9kL4-cand-placement-variation-to-break-predictability-codex-reviewed
+    evidence_type: explanation
+    excerpt: You cannot loop the ball to a predictable spot. Your opponent can easily block predictable forehand- or backhand-side placements, so in practice you should vary between the wide forehand, wide backhand, and middle.
+    reason: Varying wide forehand, wide backhand, and middle placement makes attacks less predictable and forces the opponent to adjust.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: PVNp35T9kL4
+      start_ms: 757400
+      end_ms: 785300
+      url: https://www.youtube.com/watch?v=PVNp35T9kL4&t=757s
+      segment_ids:
+        - PVNp35T9kL4:00159
+        - PVNp35T9kL4:00160
+        - PVNp35T9kL4:00161
+        - PVNp35T9kL4:00162
+        - PVNp35T9kL4:00163
+        - PVNp35T9kL4:00164

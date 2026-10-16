@@ -7,14 +7,9 @@ aliases:
   - borrow its momentum
 short_definition: A contact strategy that relies on the opponent's incoming pace or spin instead of generating everything from a large backswing.
 evidence_summary: >-
-  Use incoming ball energy brings together several connected ideas. To use the energy of the
-  incoming backspin and not rely on the backswing for power. To begin the swing as the ball falls
-  and to combine force with the ball's energy. The easiest way to return a long backhand serve is
-  to use the opponent's pace and incoming pace. Not to retreat from the table because that loses
-  the ability to use the opponent's pace, and repeatedly frames the tactic as borrowing the ball's
-  energy. Together, these principles show how the topic is applied in practice while preserving
-  the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:3f5b6a3fd61f5a4daf45de07ec89aefb7d13c2a02da72251000a7733f86e11dc"
+  A contact strategy that relies on the opponent's incoming pace or spin instead of generating
+  everything from a large backswing.
+evidence_summary_source_hash: "sha256:7e6bb64a7d863b67716ce861e70075dfeed07a6ced9722192e9887c491bc2142"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -38,10 +33,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: ffa75c4f70b140002644860aa640205020bafc84c08b32914ac6230cd0470c72
-  prompt_version: candidate-review-v1
+  input_hash: sha256:3d4d669a906ce8b84977497c8a78279ac1bd4b8670361494a77fe42d99b9cda4
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: mvVfwjdxe34-concept-use-incoming-ball-energy-reviewed
     evidence_type: explanation
@@ -49,7 +47,7 @@ evidence:
     reason: The speaker explicitly says to use the energy of the incoming backspin and not rely on the backswing for power.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: mvVfwjdxe34
       start_ms: 183666
@@ -64,7 +62,7 @@ evidence:
     reason: The speaker says to begin the swing as the ball falls and to combine force with the ball's energy.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: O0jOeCzzcZA
       start_ms: 248700
@@ -79,7 +77,7 @@ evidence:
     reason: The speaker says the easiest way to return a long backhand serve is to use the opponent's pace and incoming pace.
     confidence: 0.94
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 2LkVpDM69vo
       start_ms: 351633
@@ -93,7 +91,7 @@ evidence:
     reason: The speaker directly says not to retreat from the table because that loses the ability to use the opponent's pace, and repeatedly frames the tactic as borrowing the ball's energy.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: IHQASHkdLYk
       start_ms: 293933
@@ -103,3 +101,21 @@ evidence:
         - IHQASHkdLYk:00043
         - IHQASHkdLYk:00044
         - IHQASHkdLYk:00118
+  - id: 01-q1cswVVs-concept-borrowing-power-codex-reviewed
+    evidence_type: explanation
+    excerpt: Your loop is essentially absorbing the force of the spin. This, however, is combining forces. We have to go with the spin, meeting it head-on to create friction. As the ball comes, meet it and brush. We can't absorb the force. That might work against a fast ball, but against backspin, you won't be able to get the ball over the net.
+    reason: These contiguous segments directly explain combining with incoming spin, meeting it head-on, creating friction, and avoiding absorption against backspin. The span is under 30 seconds and matches the existing durable tactic of using incoming ball energy.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 01-q1cswVVs
+      start_ms: 771733
+      end_ms: 797166
+      url: https://www.youtube.com/watch?v=01-q1cswVVs&t=771s
+      segment_ids:
+        - 01-q1cswVVs:00141
+        - 01-q1cswVVs:00142
+        - 01-q1cswVVs:00143
+        - 01-q1cswVVs:00144
+        - 01-q1cswVVs:00145

@@ -6,18 +6,9 @@ aliases:
   - keep your elbow down
 short_definition: The backhand punch requires a vertical, slightly down elbow position to stabilize contact and avoid netted or mistimed shots.
 evidence_summary: >-
-  Backhand elbow position control brings together several connected ideas. The first key point is
-  elbow position and specifies keeping it vertical and slightly down. The elbow should stay down
-  and criticizes raising or pulling it back. The elbow must stay down and the motion should be
-  back-and-forward, not upward or sideways. A high elbow as the cause of tension and the elbow
-  must stay down, especially in the backswing and backhand drive/rip. To aim the elbow at the ball
-  and not the shoulder, making elbow orientation a key setup cue. The drive uses a lowered elbow
-  while the rip requires the elbow to be lifted up. The elbow should be used to execute the
-  backhand drive and not be static. The elbow should be away from the ribs and slightly propped
-  up, with the amount of flare adjusted by skill level. Additional points reinforce the same
-  theme. Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:045568f94548a008c436b373c907c66a85fc329d640dd00639ee659f1c3e6f31"
+  The backhand punch requires a vertical, slightly down elbow position to stabilize contact and
+  avoid netted or mistimed shots.
+evidence_summary_source_hash: "sha256:9438e480ed58ae800bd53ea36375cc79c0d2b3b1a910b351b9a408b6bffc4996"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -31,10 +22,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: f37858109dbd7e2ea00a17ae3d53b6392b540f7bdc02ff1f866798894e560aac
-  prompt_version: candidate-review-v1
+  input_hash: sha256:42438ac700f50ca6be6064cdfd5484f6de69a2ac882ead7ec2a21d1588f43dfe
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: xDwUKE-WjL0-concept-backhand-elbow-position-reviewed
     evidence_type: definition
@@ -42,7 +36,7 @@ evidence:
     reason: The speaker says the first key point is elbow position and specifies keeping it vertical and slightly down.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: xDwUKE-WjL0
       start_ms: 92833
@@ -57,7 +51,7 @@ evidence:
     reason: The speaker says the key to tucking the racket behind the body is the elbow, and the elbow must stay close.
     confidence: 0.91
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: DfQ_yBSS_bk
       start_ms: 490800
@@ -73,7 +67,7 @@ evidence:
     reason: The speaker repeatedly says the elbow should stay down and criticizes raising or pulling it back.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Xt5RyN3qkSA
       start_ms: 566700
@@ -90,7 +84,7 @@ evidence:
     reason: The speaker repeatedly says the elbow must stay down and the motion should be back-and-forward, not upward or sideways.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: nvQeXUtF2CM
       start_ms: 314100
@@ -105,7 +99,7 @@ evidence:
     reason: The speaker explicitly states to keep the elbow fixed and swing the forearm from below the elbow to above it.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: KEOmLdUTC-g
       start_ms: 949200
@@ -122,7 +116,7 @@ evidence:
     reason: The speaker repeatedly identifies a high elbow as the cause of tension and says the elbow must stay down, especially in the backswing and backhand drive/rip.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: D02EFJijJiU
       start_ms: 28033
@@ -138,7 +132,7 @@ evidence:
     reason: The speaker explicitly says to aim the elbow at the ball and not the shoulder, making elbow orientation a key setup cue.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: _GxKApOkTiw
       start_ms: 195733
@@ -154,7 +148,7 @@ evidence:
     reason: The transcript says the elbow must stay stable and supported, acts as the pivot point, and should neither drop nor lift.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hKQbi0Kk_Gs
       start_ms: 700200
@@ -172,7 +166,7 @@ evidence:
     reason: The speaker says the drive uses a lowered elbow while the rip requires the elbow to be lifted up.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: PaymojMhuzU
       start_ms: 32566
@@ -189,7 +183,7 @@ evidence:
     reason: The speaker says the elbow should be used to execute the backhand drive and not be static.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: mQdrXMukRSY
       start_ms: 310500
@@ -204,7 +198,7 @@ evidence:
     reason: The transcript instructs that the elbow tip should point downward and stay down so the arm can drive through the ball rather than rotate in place.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Vez-9xrqSTY
       start_ms: 354080
@@ -225,7 +219,7 @@ evidence:
     reason: The speaker explains the elbow should be away from the ribs and slightly propped up, with the amount of flare adjusted by skill level.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ATd38ewLMqs
       start_ms: 97666
@@ -235,3 +229,106 @@ evidence:
         - ATd38ewLMqs:00017
         - ATd38ewLMqs:00084
         - ATd38ewLMqs:00019
+  - id: hKQbi0Kk_Gs-concept-backhand-elbow-stability-codex-reviewed
+    evidence_type: definition
+    excerpt: Keep the elbow stable and supported as the pivot point; isolate it so the forearm can rotate without the upper arm taking over, and do not let it drop or lift.
+    reason: These contiguous segments directly describe a stable, supported elbow acting as the pivot, preventing upper-arm takeover and unwanted elbow movement.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: hKQbi0Kk_Gs
+      start_ms: 700200
+      end_ms: 724233
+      url: https://www.youtube.com/watch?v=hKQbi0Kk_Gs&t=700s
+      segment_ids:
+        - hKQbi0Kk_Gs:00146
+        - hKQbi0Kk_Gs:00147
+        - hKQbi0Kk_Gs:00148
+        - hKQbi0Kk_Gs:00149
+        - hKQbi0Kk_Gs:00150
+  - id: hQAxpSuplGM-concept-backhand-elbow-position-control-codex-reviewed
+    evidence_type: explanation
+    excerpt: As I move forward, the elbow tip still points down as the upper arm drives forward. Then, the elbow acts as a pivot point for the forearm snap. So, keep your elbow tip pointing down on the backswing, let the elbow move forward with the stroke, and then use it as a stable pivot. This will result in a very clean and technically sound motion.
+    reason: These contiguous segments directly explain that the elbow tip stays down, moves forward with the stroke, and serves as a stable pivot, matching the existing concept.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: hQAxpSuplGM
+      start_ms: 423233
+      end_ms: 447733
+      url: https://www.youtube.com/watch?v=hQAxpSuplGM&t=423s
+      segment_ids:
+        - hQAxpSuplGM:00073
+        - hQAxpSuplGM:00074
+        - hQAxpSuplGM:00075
+        - hQAxpSuplGM:00076
+  - id: ATd38ewLMqs-c3-codex-reviewed
+    evidence_type: explanation
+    excerpt: During the backswing, keep the backhand elbow propped up and away from the body, but avoid excessively flaring it.
+    reason: These contiguous segments directly explain the elbow position and distinguish the required position from exaggerated professional flaring.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: ATd38ewLMqs
+      start_ms: 97666
+      end_ms: 126300
+      url: https://www.youtube.com/watch?v=ATd38ewLMqs&t=97s
+      segment_ids:
+        - ATd38ewLMqs:00017
+        - ATd38ewLMqs:00084
+        - ATd38ewLMqs:00018
+        - ATd38ewLMqs:00019
+  - id: mQdrXMukRSY-concept-backhand-elbow-position-control-codex-reviewed
+    evidence_type: explanation
+    excerpt: 'The elbow is crucial for the backhand: it must move and drive the stroke, because a static elbow forces wrist flicking, which causes errors.'
+    reason: These contiguous segments state that the elbow cannot remain static, explain that this forces wrist flicking, identify the resulting errors, and reiterate driving with the elbow.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: mQdrXMukRSY
+      start_ms: 375633
+      end_ms: 398733
+      url: https://www.youtube.com/watch?v=mQdrXMukRSY&t=375s
+      segment_ids:
+        - mQdrXMukRSY:00060
+        - mQdrXMukRSY:00061
+        - mQdrXMukRSY:00062
+        - mQdrXMukRSY:00063
+  - id: nvQeXUtF2CM-concept-backhand-elbow-position-control-codex-reviewed
+    evidence_type: explanation
+    excerpt: Lifting the elbow prevents the forearm from opening properly; keeping the elbow down allows the forearm to open naturally.
+    reason: These contiguous segments directly explain that lifting the elbow restricts forearm opening and that keeping it down enables natural forearm opening.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: nvQeXUtF2CM
+      start_ms: 314100
+      end_ms: 333900
+      url: https://www.youtube.com/watch?v=nvQeXUtF2CM&t=314s
+      segment_ids:
+        - nvQeXUtF2CM:00067
+        - nvQeXUtF2CM:00068
+        - nvQeXUtF2CM:00069
+  - id: PaymojMhuzU-concept-backhand-elbow-position-control-codex-reviewed
+    evidence_type: explanation
+    excerpt: The backhand drive uses a lowered elbow, while the backhand rip requires lifting the elbow to enable proper forearm rotation.
+    reason: These contiguous segments directly explain the backhand elbow-position difference between the drive and rip and why lifting the elbow matters. They form one 21.2-second topic moment and match the existing concept.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: PaymojMhuzU
+      start_ms: 32566
+      end_ms: 53733
+      url: https://www.youtube.com/watch?v=PaymojMhuzU&t=32s
+      segment_ids:
+        - PaymojMhuzU:00006
+        - PaymojMhuzU:00007
+        - PaymojMhuzU:00008
+        - PaymojMhuzU:00009
+        - PaymojMhuzU:00010

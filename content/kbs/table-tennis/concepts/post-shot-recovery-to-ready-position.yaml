@@ -7,18 +7,9 @@ aliases:
   - backswing position reset
 short_definition: Returning the arm and body to a prepared backhand position after each shot so the next stroke has space and quality.
 evidence_summary: >-
-  Post-shot recovery to ready position brings together several connected ideas. To recover after
-  every shot and return to the backswing position for quality backhand play. To pull the right
-  foot back, create space after every push, and recover into position before the arm drops.
-  Returning to the starting posture after every stroke. They avoid full power because recovery
-  would be too slow for the opponent's block. Recovery is defined as immediate preparation after
-  the shot, and the stroke is not finished until recovery is complete. Quick recovery after serve
-  and after hitting down the line, including moving back to the middle. Active recovery, immediate
-  reset, and treating the stroke as one complete motion that flows into the next preparation. On
-  proactive, immediate recovery after looping instead of waiting reactively. Additional points
-  reinforce the same theme. Together, these principles show how the topic is applied in practice
-  while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:5f99c9b5fc6a2692c4f51b9fb2028d9cdc27018e43584e6d8b41fc3803e42741"
+  Returning the arm and body to a prepared backhand position after each shot so the next stroke
+  has space and quality.
+evidence_summary_source_hash: "sha256:ed534096a66f9e1c35f61fbaf9d6658bc1b8186cbc902ba23030e9354da1c819"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -33,10 +24,13 @@ facets:
 difficulty: beginner
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 3dc1b6e27a15dd2d7006f062c5f35468fbcbd08d6bcf3b3793c2c848927053ef
-  prompt_version: candidate-review-v1
+  input_hash: sha256:dd0e47ade88419bf8cbbb05cbab0201b5cc877c52c278ef6d8b7aa9762215ef3
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: HCkIFKn0-Ds-concept-backhand-recovery-and-ready-position-reviewed
     evidence_type: definition
@@ -44,7 +38,7 @@ evidence:
     reason: The speaker says to recover after every shot and return to the backswing position for quality backhand play.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: HCkIFKn0-Ds
       start_ms: 133560
@@ -59,7 +53,7 @@ evidence:
     reason: The speaker links a strong backswing/retraction to speed and recommends fast arm recovery after looping low.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ldoTdAje9n0
       start_ms: 373800
@@ -74,7 +68,7 @@ evidence:
     reason: The speaker repeatedly emphasizes recovering immediately after pushing or serving and being in a ready state before the opponent hits the next ball.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: z7E2DuhsJmQ
       start_ms: 260633
@@ -92,7 +86,7 @@ evidence:
     reason: The speaker emphasizes quick recovery, not rushing, staying low, and leaning forward.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: HWy3VGWHE5Q
       start_ms: 275766
@@ -110,7 +104,7 @@ evidence:
     reason: The speaker says rushing happens when recovery is incomplete and emphasizes full motion and full recovery after every shot.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 7d1fUkOzCjM
       start_ms: 283600
@@ -130,7 +124,7 @@ evidence:
     reason: The speaker says that after serving you should stay focused and balanced, and when receiving the body must stay firm and loaded with power.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: rZY_SUer7Aw
       start_ms: 28766
@@ -147,7 +141,7 @@ evidence:
     reason: The speaker says to pull the right foot back, create space after every push, and recover into position before the arm drops.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: K0eFBdIiBTQ
       start_ms: 32566
@@ -162,7 +156,7 @@ evidence:
     reason: The speaker demonstrates blocking during the toss and then recovering close to the body with wrist and finger brushing.
     confidence: 0.88
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: yF675Tey81g
       start_ms: 556290
@@ -177,7 +171,7 @@ evidence:
     reason: The teacher explicitly says the player still needs to recover, that a big motion means longer recovery time, and that the movement should be smaller and more focused.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: c1OUlMn9IFM
       start_ms: 12466
@@ -194,7 +188,7 @@ evidence:
     reason: The speaker says you should already be positioned and set before the bounce sound arrives, and then release or stroke at the sound.
     confidence: 0.91
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: vbzVfx-HWE4
       start_ms: 393520
@@ -218,7 +212,7 @@ evidence:
     reason: The speaker advises immediate stepping forward after hitting and mentions recovery after a hit, showing a recovery/reset pattern.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: FweaNVt8gA0
       start_ms: 306866
@@ -234,7 +228,7 @@ evidence:
     reason: The speaker explicitly instructs returning to the starting posture after every stroke.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: demoTT00001
       start_ms: 22000
@@ -248,7 +242,7 @@ evidence:
     reason: The speaker repeatedly describes recovering after every shot, keeping the racket up and out front, and not dropping the hands or eyes.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ucqkkVNB3J4
       start_ms: 94033
@@ -266,7 +260,7 @@ evidence:
     reason: The speaker emphasizes that a stroke is incomplete unless recovery happens and that recovery must be active, not passive.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: VEjSu1GhArI
       start_ms: 12900
@@ -282,7 +276,7 @@ evidence:
     reason: The speaker says you should be recovered before the opponent touches the ball and warns that being sideways is too late.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 00GaHkH4rfQ
       start_ms: 307500
@@ -297,7 +291,7 @@ evidence:
     reason: The speaker explicitly instructs recovery to ready position and reset to the initial backswing position after every shot.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: uyS2qSAPuYM
       start_ms: 64266
@@ -313,7 +307,7 @@ evidence:
     reason: The speaker says recovery is too slow, should start the moment the opponent strikes, and should be proactive rather than reactive.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ZVPHX5Av9Cw
       start_ms: 427100
@@ -330,7 +324,7 @@ evidence:
     reason: The speaker says they avoid full power because recovery would be too slow for the opponent's block.
     confidence: 0.86
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 0S6dPrixVa4
       start_ms: 630166
@@ -345,7 +339,7 @@ evidence:
     reason: The speaker directly identifies recovering to position, pulling the right foot back after each push, and returning to ready position as key to looping.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ySM92aDSRPo
       start_ms: 141766
@@ -361,7 +355,7 @@ evidence:
     reason: The speaker states that after every shot you must return to ready position and that the stroke is only complete after recovery.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: qLCA9OYSFl4
       start_ms: 450100
@@ -377,7 +371,7 @@ evidence:
     reason: The speaker says to recover immediately after hitting, not wait for the return, and not recover the arm first before moving the feet.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 9bLlHR-vBAU
       start_ms: 109000
@@ -394,7 +388,7 @@ evidence:
     reason: The speaker instructs players to actively recover position while the ball travels and to recover stance immediately after each stroke.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: A56gHfnvSCc
       start_ms: 206133
@@ -412,7 +406,7 @@ evidence:
     reason: Recovery is defined as immediate preparation after the shot, and the stroke is not finished until recovery is complete.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: iae3EAgyUXU
       start_ms: 971066
@@ -427,7 +421,7 @@ evidence:
     reason: The transcript opens with active recovery to neutral and closes by restating recovery to neutral and matching recovery to ball movement.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: kOWxzn4r5z4
       start_ms: 574266
@@ -442,7 +436,7 @@ evidence:
     reason: The speaker explicitly instructs immediate recovery after the push and explains it as preparation for the next attack.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: QD9mHcPrHSU
       start_ms: 477100
@@ -459,7 +453,7 @@ evidence:
     reason: The speaker says not to relax after a quality shot and to always prepare for the follow-up.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: JxbUnbUD_OY
       start_ms: 436700
@@ -476,7 +470,7 @@ evidence:
     reason: The transcript explains that holding the finish makes the game choppy and recommends finishing the stroke, then beginning relaxed recovery immediately after contact.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: HEQjcWoP87I
       start_ms: 898866
@@ -491,7 +485,7 @@ evidence:
     reason: The transcript explicitly instructs to recover to the center immediately after the placement shot and be ready for the return.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: YKuNt_fynhY
       start_ms: 726533
@@ -508,7 +502,7 @@ evidence:
     reason: The speaker repeatedly stresses quick recovery after serve and after hitting down the line, including moving back to the middle.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 0TzTsSHudF8
       start_ms: 325266
@@ -523,7 +517,7 @@ evidence:
     reason: The speaker repeatedly instructs immediate recovery after the push or flick, not after the return arrives.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: T6kwb4YehYA
       start_ms: 343300
@@ -538,7 +532,7 @@ evidence:
     reason: The speaker says rushing happens when players recover before the stroke is finished and defines proper recovery as part of the full sequence ending in the ready position.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: o_lngzbIPnA
       start_ms: 797500
@@ -555,7 +549,7 @@ evidence:
     reason: The transcript says the main issue is failing to recover after the serve, moving the feet quickly, and recovering instantly to have time for a full motion.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: QRHidBrS09M
       start_ms: 9900
@@ -570,7 +564,7 @@ evidence:
     reason: The speaker describes constant position adjustment, micro-motion, and a non-static center of gravity, which imply ongoing recovery to readiness after each ball.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: _77LMM6s1cw
       start_ms: 727633
@@ -585,7 +579,7 @@ evidence:
     reason: The speaker stresses active recovery, immediate reset, and treating the stroke as one complete motion that flows into the next preparation.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: czp2jsURYQk
       start_ms: 451166
@@ -602,7 +596,7 @@ evidence:
     reason: The speaker explicitly says to recover directly for the forehand and to recover immediately to your ready position.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hi0AJuu60eE
       start_ms: 4933
@@ -617,7 +611,7 @@ evidence:
     reason: The speaker repeatedly emphasizes quick recovery after serve and preparing early for the return while maintaining a low, balanced stance.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: IHQASHkdLYk
       start_ms: 53500
@@ -632,7 +626,7 @@ evidence:
     reason: The speaker explicitly says to recover after the serve and be back in ready position before the opponent touches the ball.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ec-XHw2Locs
       start_ms: 107080
@@ -649,7 +643,7 @@ evidence:
     reason: The speaker says to hit, recover to the same spot, and maintain that distance on every repetition.
     confidence: 0.94
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: pbILplLUhnI
       start_ms: 386633
@@ -663,7 +657,7 @@ evidence:
     reason: The speaker says that after handling wide-angle problems, you should recover back to the backhand ready position.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: -8Nnu9zUAP8
       start_ms: 754720
@@ -678,7 +672,7 @@ evidence:
     reason: The speaker insists on proactive, immediate recovery after looping instead of waiting reactively.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: dGUGcaM8EOc
       start_ms: 127320
@@ -691,3 +685,187 @@ evidence:
         - dGUGcaM8EOc:00056
         - dGUGcaM8EOc:00058
         - dGUGcaM8EOc:00059
+  - id: 15ElcVXEJVU-concept-post-shot-recovery-to-ready-position-codex-reviewed
+    evidence_type: explanation
+    excerpt: After hitting the ball, take a step back and leave an arm’s length of space.
+    reason: These contiguous segments directly explain moving back after a shot to create sufficient space for continued play.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 15ElcVXEJVU
+      start_ms: 135333
+      end_ms: 141733
+      url: https://www.youtube.com/watch?v=15ElcVXEJVU&t=135s
+      segment_ids:
+        - 15ElcVXEJVU:00018
+        - 15ElcVXEJVU:00019
+  - id: 44MN0MejyPI-concept-post-shot-recovery-to-ready-position-codex-reviewed
+    evidence_type: explanation
+    excerpt: Every time we finish one, let's go through our recovery. If the rhythm is too fast, it can lead to incomplete movements and a shot with no quality; there should be body rotation with hand movements for a complete recovery involving the body and hands.
+    reason: These contiguous segments directly explain that recovery follows each hit and that rushing prevents complete body-and-hand recovery, reducing shot quality. The selected span is under 30 seconds.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 44MN0MejyPI
+      start_ms: 93966
+      end_ms: 115866
+      url: https://www.youtube.com/watch?v=44MN0MejyPI&t=93s
+      segment_ids:
+        - 44MN0MejyPI:00029
+        - 44MN0MejyPI:00030
+        - 44MN0MejyPI:00031
+        - 44MN0MejyPI:00032
+        - 44MN0MejyPI:00033
+        - 44MN0MejyPI:00034
+        - 44MN0MejyPI:00035
+        - 44MN0MejyPI:00036
+        - 44MN0MejyPI:00037
+        - 44MN0MejyPI:00038
+  - id: bbZD31OGau8-concept-post-shot-recovery-to-ready-position-codex-reviewed
+    evidence_type: explanation
+    excerpt: For example, after a backhand topspin, don't freeze your hand. Recover. Return quickly. Always recover. Same with the forehand.
+    reason: This contiguous 25.3-second span directly instructs the player to recover quickly after a backhand topspin and confirms the same principle for forehand play.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: bbZD31OGau8
+      start_ms: 217866
+      end_ms: 241300
+      url: https://www.youtube.com/watch?v=bbZD31OGau8&t=217s
+      segment_ids:
+        - bbZD31OGau8:00063
+        - bbZD31OGau8:00064
+        - bbZD31OGau8:00065
+        - bbZD31OGau8:00066
+        - bbZD31OGau8:00067
+        - bbZD31OGau8:00068
+        - bbZD31OGau8:00069
+  - id: c1OUlMn9IFM-concept-post-shot-recovery-to-ready-position-codex-reviewed
+    evidence_type: explanation
+    excerpt: After pushing, keep the motion shorter and more focused so recovery is quicker and you are ready for the next ball.
+    reason: These selected segments state that recovery is still needed, advise keeping the motion shorter, explain that a big motion lengthens recovery time, and instruct the player to make the movement smaller and more focused.
+    confidence: 0.96
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: c1OUlMn9IFM
+      start_ms: 12466
+      end_ms: 33033
+      url: https://www.youtube.com/watch?v=c1OUlMn9IFM&t=12s
+      segment_ids:
+        - c1OUlMn9IFM:00002
+        - c1OUlMn9IFM:00005
+        - c1OUlMn9IFM:00008
+        - c1OUlMn9IFM:00009
+  - id: HCkIFKn0-Ds-concept-backhand-recovery-and-ready-position-codex-reviewed
+    evidence_type: explanation
+    excerpt: After every shot, you must recover to the ready position. Players who fail to recover lose space to generate power. Every shot must return to your backswing position; only then does your backhand have quality.
+    reason: The contiguous span directly explains recovering after every shot, returning to the backswing position, preserving space for power, and improving backhand quality.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: HCkIFKn0-Ds
+      start_ms: 133560
+      end_ms: 159240
+      url: https://www.youtube.com/watch?v=HCkIFKn0-Ds&t=133s
+      segment_ids:
+        - HCkIFKn0-Ds:00044
+        - HCkIFKn0-Ds:00045
+        - HCkIFKn0-Ds:00046
+        - HCkIFKn0-Ds:00047
+        - HCkIFKn0-Ds:00048
+        - HCkIFKn0-Ds:00049
+        - HCkIFKn0-Ds:00050
+        - HCkIFKn0-Ds:00051
+  - id: HWy3VGWHE5Q-concept-post-shot-recovery-to-ready-position-codex-reviewed
+    evidence_type: explanation
+    excerpt: Recover quickly without rushing; stay low and lean forward.
+    reason: 'These contiguous segments directly explain quick recovery and the key recovery posture: do not rush, stay low, and lean forward.'
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: HWy3VGWHE5Q
+      start_ms: 275766
+      end_ms: 291666
+      url: https://www.youtube.com/watch?v=HWy3VGWHE5Q&t=275s
+      segment_ids:
+        - HWy3VGWHE5Q:00126
+        - HWy3VGWHE5Q:00127
+        - HWy3VGWHE5Q:00128
+        - HWy3VGWHE5Q:00129
+        - HWy3VGWHE5Q:00130
+        - HWy3VGWHE5Q:00131
+        - HWy3VGWHE5Q:00132
+        - HWy3VGWHE5Q:00133
+  - id: 9bLlHR-vBAU-concept-post-shot-recovery-to-ready-position-codex-reviewed
+    evidence_type: explanation
+    excerpt: Recover to the ready position immediately after hitting; do not wait to see the return.
+    reason: These contiguous segments explicitly explain immediate recovery to the ready position and warn against waiting for the ball to come back.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 9bLlHR-vBAU
+      start_ms: 109000
+      end_ms: 136333
+      url: https://www.youtube.com/watch?v=9bLlHR-vBAU&t=109s
+      segment_ids:
+        - 9bLlHR-vBAU:00024
+        - 9bLlHR-vBAU:00025
+        - 9bLlHR-vBAU:00026
+        - 9bLlHR-vBAU:00027
+        - 9bLlHR-vBAU:00028
+  - id: czp2jsURYQk-concept-post-shot-recovery-to-ready-position-codex-reviewed
+    evidence_type: explanation
+    excerpt: To maintain a continuous loop, actively recover as soon as you finish the stroke, resetting immediately and treating the sequence as one complete motion.
+    reason: This contiguous span directly supports active recovery immediately after the stroke and frames the sequence as one continuous motion.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: czp2jsURYQk
+      start_ms: 451166
+      end_ms: 475733
+      url: https://www.youtube.com/watch?v=czp2jsURYQk&t=451s
+      segment_ids:
+        - czp2jsURYQk:00070
+        - czp2jsURYQk:00071
+        - czp2jsURYQk:00072
+        - czp2jsURYQk:00073
+  - id: hi0AJuu60eE-cand-1-codex-reviewed
+    evidence_type: definition
+    excerpt: After a backhand shot, recover immediately to your ready position; dropping your arm before resetting slows the transition.
+    reason: These contiguous segments directly state the recovery instruction and the specific mistake it prevents.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: hi0AJuu60eE
+      start_ms: 4933
+      end_ms: 19300
+      url: https://www.youtube.com/watch?v=hi0AJuu60eE&t=4s
+      segment_ids:
+        - hi0AJuu60eE:00001
+        - hi0AJuu60eE:00002
+  - id: J7Lm5IL-ggs-concept-post-shot-recovery-to-ready-position-codex-reviewed
+    evidence_type: explanation
+    excerpt: My loop recovery is straight back to the ready position, while other players use a circular motion; do whatever feels comfortable for you.
+    reason: These contiguous segments directly describe recovery to the ready position, contrast straight and circular recovery, and state that either approach may be chosen based on comfort.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: J7Lm5IL-ggs
+      start_ms: 219766
+      end_ms: 242033
+      url: https://www.youtube.com/watch?v=J7Lm5IL-ggs&t=219s
+      segment_ids:
+        - J7Lm5IL-ggs:00050
+        - J7Lm5IL-ggs:00051
+        - J7Lm5IL-ggs:00052
+        - J7Lm5IL-ggs:00053

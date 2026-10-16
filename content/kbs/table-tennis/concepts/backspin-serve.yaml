@@ -2,477 +2,533 @@ id: concept-backspin-serve
 slug: backspin-serve
 label: Backspin serve
 aliases:
-  - serving backspin
-  - backspin serve
-short_definition: A serve whose main objective is to generate spin, especially backspin, rather than simply to place the ball.
+- serving backspin
+- backspin serve
+short_definition: A serve that imparts backspin to the ball.
 evidence_summary: >-
-  Backspin serve brings together several connected ideas. The key goal of a backspin serve as
-  making the ball spin. The topic as serving a backspin ball and the basic execution. To prepare
-  like a backspin serve and to set up like a normal backspin serve before changing at the last
-  moment. Chopping or cutting through a single point creates heavy backspin. Out the full
-  serve-follow-up pattern and distinguishes the low, spinny loop from a high loop or power loop.
-  Backspin serves as examples in the receive strategy discussion. Slow wrist-and-finger motion or
-  a plain downward chop as still creating backspin, with varying spin levels. The serve as
-  backspin and bottom-brushing with a relaxed wrist. Additional points reinforce the same theme.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:916957bd75ffce086f32123e981a7217c92f4b3a46a6eec016841150d8e9b1f9"
-evidence_summary_generator: "deterministic"
+  A backspin serve can travel in a small arc. Slow wrist-and-finger motion can still produce a backspin serve; accelerating through contact produces the heaviest spin.
 concept_type: stroke
 facets:
   category:
-    - fundamentals
-    - stroke
+  - fundamentals
+  - stroke
   spin:
-    - backspin
-  level:
-    - beginner
-    - intermediate
-difficulty: beginner
+  - backspin
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 22365c75eeb89f291925963b971dc408a3784648ff85205d8eb144623fd73a8c
-  prompt_version: candidate-review-v1
+  input_hash: sha256:3ea5aee1a8a81eadd0a83fb073ab9ac91d05cd9a4975e6c60437deb6c67b2b99
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: bQTenTT3bz0-concept-backspin-serve-reviewed
-    evidence_type: definition
-    excerpt: A serve whose main objective is to generate spin, especially backspin, rather than simply to place the ball.
-    reason: The speaker explicitly frames the key goal of a backspin serve as making the ball spin.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: bQTenTT3bz0
-      start_ms: 33
-      end_ms: 6066
-      url: https://www.youtube.com/watch?v=bQTenTT3bz0&t=0s
-      segment_ids:
-        - bQTenTT3bz0:00000
-        - bQTenTT3bz0:00001
-        - bQTenTT3bz0:00002
-  - id: GOAyEFoSibE-concept-backspin-serve-reviewed
-    evidence_type: definition
-    excerpt: A serve that imparts backspin, often produced by contacting the lower half of the ball or using an incorrect forearm angle.
-    reason: The speaker directly names backspin serve and explains how certain contact positions and forearm positions create backspin.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: GOAyEFoSibE
-      start_ms: 602766
-      end_ms: 625466
-      url: https://www.youtube.com/watch?v=GOAyEFoSibE&t=602s
-      segment_ids:
-        - GOAyEFoSibE:00139
-        - GOAyEFoSibE:00144
-  - id: -iWLwSvOJ2U-concept-backspin-serve-reviewed
-    evidence_type: definition
-    excerpt: A serve that uses backspin or heavy underspin to force a weak or mistimed receive.
-    reason: The speaker explicitly discusses backspin and heavy backspin serves and their receive effects.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: -iWLwSvOJ2U
-      start_ms: 392600
-      end_ms: 408766
-      url: https://www.youtube.com/watch?v=-iWLwSvOJ2U&t=392s
-      segment_ids:
-        - -iWLwSvOJ2U:00088
-        - -iWLwSvOJ2U:00091
-  - id: yF675Tey81g-concept-sidespin-or-underspin-serve-preparation-reviewed
-    evidence_type: definition
-    excerpt: A serve setup where the player prepares for sidespin or underspin before contact and adjusts the racket angle at the toss.
-    reason: The speaker explains the preparation as side spin racket shape, then adjusting racket angle and applying downward pressure for sidespin or underspin.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: yF675Tey81g
-      start_ms: 170760
-      end_ms: 198440
-      url: https://www.youtube.com/watch?v=yF675Tey81g&t=170s
-      segment_ids:
-        - yF675Tey81g:00032
-        - yF675Tey81g:00033
-        - yF675Tey81g:00039
-        - yF675Tey81g:00040
-  - id: dMRsujoVIj4-concept-backspin-serve-reviewed
-    evidence_type: definition
-    excerpt: A serve that imparts backspin by brushing the bottom of the ball with a horizontal racket and coordinated wrist and forearm action.
-    reason: The speaker explicitly frames the topic as serving a backspin ball and explains the basic execution.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: dMRsujoVIj4
-      start_ms: 8466
-      end_ms: 32800
-      url: https://www.youtube.com/watch?v=dMRsujoVIj4&t=8s
-      segment_ids:
-        - dMRsujoVIj4:00000
-        - dMRsujoVIj4:00001
-        - dMRsujoVIj4:00009
-  - id: HmoqZLuY1Ik-concept-backspin-serve-reviewed
-    evidence_type: definition
-    excerpt: A serve that carries backspin and creates a downward-curving ball that is difficult to read and receive.
-    reason: The speaker directly labels a ball as backspin and discusses receiving it.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: HmoqZLuY1Ik
-      start_ms: 400133
-      end_ms: 408533
-      url: https://www.youtube.com/watch?v=HmoqZLuY1Ik&t=400s
-      segment_ids:
-        - HmoqZLuY1Ik:00162
-        - HmoqZLuY1Ik:00163
-        - HmoqZLuY1Ik:00164
-  - id: NMa0xKa1kpo-concept-backspin-serve-reviewed
-    evidence_type: explanation
-    excerpt: A serve with underspin/backspin, used here as the incoming ball type that affects contact and lifting mechanics.
-    reason: The transcript explicitly mentions serving underspin and facing a backspin ball from the opponent.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: NMa0xKa1kpo
-      start_ms: 530500
-      end_ms: 546200
-      url: https://www.youtube.com/watch?v=NMa0xKa1kpo&t=530s
-      segment_ids:
-        - NMa0xKa1kpo:00108
-        - NMa0xKa1kpo:00112
-  - id: rP-4JEt9D5Q-concept-backspin-serve-reviewed
-    evidence_type: explanation
-    excerpt: A serve prepared to look like backspin and used as the disguise baseline for other serves.
-    reason: The speaker repeatedly says to prepare like a backspin serve and to set up like a normal backspin serve before changing at the last moment.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: rP-4JEt9D5Q
-      start_ms: 7920
-      end_ms: 18160
-      url: https://www.youtube.com/watch?v=rP-4JEt9D5Q&t=7s
-      segment_ids:
-        - rP-4JEt9D5Q:00003
-        - rP-4JEt9D5Q:00004
-        - rP-4JEt9D5Q:00005
-        - rP-4JEt9D5Q:00006
-  - id: imcV_xGDaJ4-concept-backspin-serve-reviewed
-    evidence_type: definition
-    excerpt: A serve that imparts backspin, described here as a backspin serve in the half-long serve sequence.
-    reason: The speaker directly identifies the serve as a backspin serve.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: imcV_xGDaJ4
-      start_ms: 329366
-      end_ms: 338166
-      url: https://www.youtube.com/watch?v=imcV_xGDaJ4&t=329s
-      segment_ids:
-        - imcV_xGDaJ4:00140
-        - imcV_xGDaJ4:00141
-        - imcV_xGDaJ4:00142
-        - imcV_xGDaJ4:00143
-        - imcV_xGDaJ4:00144
-  - id: zMrQvj_bji4-concept-backspin-serve-reviewed
-    evidence_type: definition
-    excerpt: Serving with underspin by using friction, wrist action, and correct contact so the ball spins back after the bounce.
-    reason: The speaker explicitly identifies underspin serve technique and describes how the ball should behave with underspin.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: zMrQvj_bji4
-      start_ms: 104366
-      end_ms: 126933
-      url: https://www.youtube.com/watch?v=zMrQvj_bji4&t=104s
-      segment_ids:
-        - zMrQvj_bji4:00026
-        - zMrQvj_bji4:00028
-        - zMrQvj_bji4:00032
-  - id: zMrQvj_bji4-concept-backspin-serve-reviewed-fa3d7078
-    evidence_type: definition
-    excerpt: Serving with underspin by using friction, wrist action, and correct contact so the ball spins back after the bounce.
-    reason: The speaker explicitly identifies underspin serve technique and describes how the ball should behave with underspin.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: zMrQvj_bji4
-      start_ms: 104366
-      end_ms: 126933
-      url: https://www.youtube.com/watch?v=zMrQvj_bji4&t=104s
-      segment_ids:
-        - zMrQvj_bji4:00026
-        - zMrQvj_bji4:00028
-        - zMrQvj_bji4:00032
-  - id: kF3mAZD3GHs-concept-backspin-serve-reviewed
-    evidence_type: definition
-    excerpt: A serve that imparts backspin, including heavy or disguised backspin variants.
-    reason: Backspin is named explicitly, contrasted with topspin, and discussed as a serve type with characteristic appearance and force.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: kF3mAZD3GHs
-      start_ms: 195333
-      end_ms: 218700
-      url: https://www.youtube.com/watch?v=kF3mAZD3GHs&t=195s
-      segment_ids:
-        - kF3mAZD3GHs:00037
-        - kF3mAZD3GHs:00038
-        - kF3mAZD3GHs:00041
-  - id: 1IeU5XUDCKA-concept-backspin-serve-reviewed
-    evidence_type: definition
-    excerpt: A serve produced by chopping or cutting through a single point on the ball, creating heavy backspin.
-    reason: The speaker explicitly states that chopping or cutting through a single point creates heavy backspin.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 1IeU5XUDCKA
-      start_ms: 235366
-      end_ms: 262133
-      url: https://www.youtube.com/watch?v=1IeU5XUDCKA&t=235s
-      segment_ids:
-        - 1IeU5XUDCKA:00054
-        - 1IeU5XUDCKA:00059
-  - id: W8EqqK7wNKY-concept-backspin-serve-reviewed
-    evidence_type: definition
-    excerpt: A serve with heavy backspin, sometimes combined with sidespin, that is difficult to loop or return cleanly.
-    reason: The speaker explicitly references a fast, heavy backspin serve and says the lesson is about handling it.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: W8EqqK7wNKY
-      start_ms: 50100
-      end_ms: 59333
-      url: https://www.youtube.com/watch?v=W8EqqK7wNKY&t=50s
-      segment_ids:
-        - W8EqqK7wNKY:00010
-        - W8EqqK7wNKY:00011
-  - id: T5hgo9D7c7A-concept-backspin-serve-reviewed
-    evidence_type: definition
-    excerpt: A serve intended to create backspin or to disguise topspin as backspin.
-    reason: The speaker explicitly discusses serving sidespin-backspin and making a topspin serve look like a backspin serve.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: T5hgo9D7c7A
-      start_ms: 488433
-      end_ms: 499100
-      url: https://www.youtube.com/watch?v=T5hgo9D7c7A&t=488s
-      segment_ids:
-        - T5hgo9D7c7A:00113
-  - id: uL8In-_NToM-concept-backspin-serve-reviewed
-    evidence_type: example
-    excerpt: A serve that imparts underspin/backspin to the ball.
-    reason: The speaker contrasts a fast long serve with a backspin serve and discusses its follow-up use.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: uL8In-_NToM
-      start_ms: 26066
-      end_ms: 42800
-      url: https://www.youtube.com/watch?v=uL8In-_NToM&t=26s
-      segment_ids:
-        - uL8In-_NToM:00007
-        - uL8In-_NToM:00009
-        - uL8In-_NToM:00010
-  - id: 256zUqx30Zo-concept-heavy-backspin-short-serve-into-heavy-topspin-loop-reviewed
-    evidence_type: explanation
-    excerpt: A short heavy backspin serve can force a weak push that is then attacked with a heavy topspin loop.
-    reason: The speaker lays out the full serve-follow-up pattern and distinguishes the low, spinny loop from a high loop or power loop.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 256zUqx30Zo
-      start_ms: 473600
-      end_ms: 498866
-      url: https://www.youtube.com/watch?v=256zUqx30Zo&t=473s
-      segment_ids:
-        - 256zUqx30Zo:00107
-        - 256zUqx30Zo:00108
-        - 256zUqx30Zo:00109
-        - 256zUqx30Zo:00110
-        - 256zUqx30Zo:00111
-        - 256zUqx30Zo:00112
-  - id: dg0kTVGE8qQ-concept-backspin-serve-reviewed
-    evidence_type: definition
-    excerpt: A serve that uses downward brushing from above the ball to generate heavy backspin.
-    reason: The speaker explicitly shifts to backspin, says the racket must be higher than the ball, and describes brushing downward from above the ball to make it spin.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: dg0kTVGE8qQ
-      start_ms: 492233
-      end_ms: 513133
-      url: https://www.youtube.com/watch?v=dg0kTVGE8qQ&t=492s
-      segment_ids:
-        - dg0kTVGE8qQ:00113
-        - dg0kTVGE8qQ:00114
-        - dg0kTVGE8qQ:00117
-  - id: phTj82vlVqs-concept-backspin-serve-reviewed
-    evidence_type: definition
-    excerpt: A serve driven by under-ball brushing to create heavy underspin, often with a side component.
-    reason: The speaker explicitly discusses serving heavy side-underspin and says the most spin comes from brushing the bottom or just off the bottom of the ball.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: phTj82vlVqs
-      start_ms: 45633
-      end_ms: 58033
-      url: https://www.youtube.com/watch?v=phTj82vlVqs&t=45s
-      segment_ids:
-        - phTj82vlVqs:00012
-        - phTj82vlVqs:00013
-        - phTj82vlVqs:00014
-  - id: OQ7fB6yS8Fk-concept-backspin-serve-reviewed
-    evidence_type: definition
-    excerpt: A serve that produces backspin, which can be used to shape the opponent's return but may also make attacking harder if overdone.
-    reason: The transcript refers directly to heavy backspin, low-spin or no-spin serves, and half-spin/no-spin as setup choices in the serve-and-attack context.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: OQ7fB6yS8Fk
-      start_ms: 20600
-      end_ms: 29833
-      url: https://www.youtube.com/watch?v=OQ7fB6yS8Fk&t=20s
-      segment_ids:
-        - OQ7fB6yS8Fk:00004
-        - OQ7fB6yS8Fk:00005
-  - id: 8QSCtikekto-concept-backspin-serve-reviewed
-    evidence_type: definition
-    excerpt: A serve with significant backspin that changes the receiver's lift and timing needs.
-    reason: The speaker repeatedly uses backspin serves as examples in the receive strategy discussion.
-    confidence: 0.86
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 8QSCtikekto
-      start_ms: 24733
-      end_ms: 54333
-      url: https://www.youtube.com/watch?v=8QSCtikekto&t=24s
-      segment_ids:
-        - 8QSCtikekto:00005
-        - 8QSCtikekto:00010
-  - id: evEaxXmwJ2E-candidate-brush-bottom-of-the-ball-reviewed
-    evidence_type: definition
-    excerpt: For spin serves, contact should brush more of the bottom of the ball rather than mainly the side or back.
-    reason: The speaker explicitly says spin comes from brushing the bottom of the ball and warns that side or back brushing leads to weak spin.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: evEaxXmwJ2E
-      start_ms: 64766
-      end_ms: 88900
-      url: https://www.youtube.com/watch?v=evEaxXmwJ2E&t=64s
-      segment_ids:
-        - evEaxXmwJ2E:00014
-        - evEaxXmwJ2E:00017
-        - evEaxXmwJ2E:00018
-  - id: 4IHxQUdSvio-concept-backspin-serve-reviewed
-    evidence_type: definition
-    excerpt: A serve with backspin, including light, medium, and heavy variations, is a central receive problem in the transcript.
-    reason: The transcript explicitly discusses backspin serves and classifies them into heavy, medium, and light spin levels.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 4IHxQUdSvio
-      start_ms: 174033
-      end_ms: 180400
-      url: https://www.youtube.com/watch?v=4IHxQUdSvio&t=174s
-      segment_ids:
-        - 4IHxQUdSvio:00039
-  - id: hw8RsLGOARs-concept-backspin-serve-reviewed
-    evidence_type: definition
-    excerpt: A serve characterized by downward cutting or wrist-and-finger action that produces backspin, with heavier spin coming from faster wrist and finger acceleration through contact.
-    reason: The speaker identifies slow wrist-and-finger motion or a plain downward chop as still creating backspin, with varying spin levels.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: hw8RsLGOARs
-      start_ms: 13433
-      end_ms: 35100
-      url: https://www.youtube.com/watch?v=hw8RsLGOARs&t=13s
-      segment_ids:
-        - hw8RsLGOARs:00002
-        - hw8RsLGOARs:00003
-        - hw8RsLGOARs:00005
-  - id: 2_kzpEUImHk-concept-backspin-serve-reviewed
-    evidence_type: definition
-    excerpt: A serve whose bounce stays low or dies after the bounce, often with downward forearm motion and a low trajectory over the net.
-    reason: The transcript repeatedly defines backspin by a low first bounce, high arc over the net, and a downward brushing motion.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 2_kzpEUImHk
-      start_ms: 111100
-      end_ms: 139833
-      url: https://www.youtube.com/watch?v=2_kzpEUImHk&t=111s
-      segment_ids:
-        - 2_kzpEUImHk:00024
-        - 2_kzpEUImHk:00028
-  - id: OVkH-47SvqE-concept-backspin-serve-reviewed
-    evidence_type: explanation
-    excerpt: A serve that uses a downward brushing motion to produce backspin rather than topspin-sidespin.
-    reason: The speaker contrasts topspin-sidespin with a backspin serve that requires downward brushing.
-    confidence: 0.88
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: OVkH-47SvqE
-      start_ms: 144600
-      end_ms: 155233
-      url: https://www.youtube.com/watch?v=OVkH-47SvqE&t=144s
-      segment_ids:
-        - OVkH-47SvqE:00025
-        - OVkH-47SvqE:00026
-  - id: IHQASHkdLYk-concept-backspin-serve-reviewed
-    evidence_type: definition
-    excerpt: A serve with backspin, here used as a sidespin-backspin serve that often leads to a push return.
-    reason: The speaker explicitly discusses serving sidespin-backspin and says the opponent will probably push it back, with long-serve pushes being tricky.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: IHQASHkdLYk
-      start_ms: 133
-      end_ms: 17200
-      url: https://www.youtube.com/watch?v=IHQASHkdLYk&t=0s
-      segment_ids:
-        - IHQASHkdLYk:00000
-        - IHQASHkdLYk:00001
-        - IHQASHkdLYk:00002
-  - id: 0KcRfTXRcsY-concept-backspin-serve-reviewed
-    evidence_type: definition
-    excerpt: A serve where the racket brushes under the ball with a relaxed wrist and bottom contact, producing heavy backspin.
-    reason: The transcript identifies the serve as backspin and describes bottom-brushing with a relaxed wrist.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 0KcRfTXRcsY
-      start_ms: 72666
-      end_ms: 80466
-      url: https://www.youtube.com/watch?v=0KcRfTXRcsY&t=72s
-      segment_ids:
-        - 0KcRfTXRcsY:00015
+- id: bQTenTT3bz0-concept-backspin-serve-reviewed
+  evidence_type: definition
+  excerpt: A serve whose main objective is to generate spin, especially backspin, rather than simply to place the ball.
+  reason: The speaker explicitly frames the key goal of a backspin serve as making the ball spin.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: bQTenTT3bz0
+    start_ms: 33
+    end_ms: 6066
+    url: https://www.youtube.com/watch?v=bQTenTT3bz0&t=0s
+    segment_ids:
+    - bQTenTT3bz0:00000
+    - bQTenTT3bz0:00001
+    - bQTenTT3bz0:00002
+- id: GOAyEFoSibE-concept-backspin-serve-reviewed
+  evidence_type: definition
+  excerpt: A serve that imparts backspin, often produced by contacting the lower half of the ball or using an incorrect forearm angle.
+  reason: The speaker directly names backspin serve and explains how certain contact positions and forearm positions create backspin.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: GOAyEFoSibE
+    start_ms: 602766
+    end_ms: 625466
+    url: https://www.youtube.com/watch?v=GOAyEFoSibE&t=602s
+    segment_ids:
+    - GOAyEFoSibE:00139
+    - GOAyEFoSibE:00144
+- id: -iWLwSvOJ2U-concept-backspin-serve-reviewed
+  evidence_type: definition
+  excerpt: A serve that uses backspin or heavy underspin to force a weak or mistimed receive.
+  reason: The speaker explicitly discusses backspin and heavy backspin serves and their receive effects.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: -iWLwSvOJ2U
+    start_ms: 392600
+    end_ms: 408766
+    url: https://www.youtube.com/watch?v=-iWLwSvOJ2U&t=392s
+    segment_ids:
+    - -iWLwSvOJ2U:00088
+    - -iWLwSvOJ2U:00091
+- id: yF675Tey81g-concept-sidespin-or-underspin-serve-preparation-reviewed
+  evidence_type: definition
+  excerpt: A serve setup where the player prepares for sidespin or underspin before contact and adjusts the racket angle at the toss.
+  reason: The speaker explains the preparation as side spin racket shape, then adjusting racket angle and applying downward pressure for sidespin or underspin.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: yF675Tey81g
+    start_ms: 170760
+    end_ms: 198440
+    url: https://www.youtube.com/watch?v=yF675Tey81g&t=170s
+    segment_ids:
+    - yF675Tey81g:00032
+    - yF675Tey81g:00033
+    - yF675Tey81g:00039
+    - yF675Tey81g:00040
+- id: dMRsujoVIj4-concept-backspin-serve-reviewed
+  evidence_type: definition
+  excerpt: A serve that imparts backspin by brushing the bottom of the ball with a horizontal racket and coordinated wrist and forearm action.
+  reason: The speaker explicitly frames the topic as serving a backspin ball and explains the basic execution.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: dMRsujoVIj4
+    start_ms: 8466
+    end_ms: 32800
+    url: https://www.youtube.com/watch?v=dMRsujoVIj4&t=8s
+    segment_ids:
+    - dMRsujoVIj4:00000
+    - dMRsujoVIj4:00001
+    - dMRsujoVIj4:00009
+- id: HmoqZLuY1Ik-concept-backspin-serve-reviewed
+  evidence_type: definition
+  excerpt: A serve that carries backspin and creates a downward-curving ball that is difficult to read and receive.
+  reason: The speaker directly labels a ball as backspin and discusses receiving it.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: HmoqZLuY1Ik
+    start_ms: 400133
+    end_ms: 408533
+    url: https://www.youtube.com/watch?v=HmoqZLuY1Ik&t=400s
+    segment_ids:
+    - HmoqZLuY1Ik:00162
+    - HmoqZLuY1Ik:00163
+    - HmoqZLuY1Ik:00164
+- id: NMa0xKa1kpo-concept-backspin-serve-reviewed
+  evidence_type: explanation
+  excerpt: A serve with underspin/backspin, used here as the incoming ball type that affects contact and lifting mechanics.
+  reason: The transcript explicitly mentions serving underspin and facing a backspin ball from the opponent.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: NMa0xKa1kpo
+    start_ms: 530500
+    end_ms: 546200
+    url: https://www.youtube.com/watch?v=NMa0xKa1kpo&t=530s
+    segment_ids:
+    - NMa0xKa1kpo:00108
+    - NMa0xKa1kpo:00112
+- id: rP-4JEt9D5Q-concept-backspin-serve-reviewed
+  evidence_type: explanation
+  excerpt: A serve prepared to look like backspin and used as the disguise baseline for other serves.
+  reason: The speaker repeatedly says to prepare like a backspin serve and to set up like a normal backspin serve before changing at the last moment.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: rP-4JEt9D5Q
+    start_ms: 7920
+    end_ms: 18160
+    url: https://www.youtube.com/watch?v=rP-4JEt9D5Q&t=7s
+    segment_ids:
+    - rP-4JEt9D5Q:00003
+    - rP-4JEt9D5Q:00004
+    - rP-4JEt9D5Q:00005
+    - rP-4JEt9D5Q:00006
+- id: imcV_xGDaJ4-concept-backspin-serve-reviewed
+  evidence_type: definition
+  excerpt: A serve that imparts backspin, described here as a backspin serve in the half-long serve sequence.
+  reason: The speaker directly identifies the serve as a backspin serve.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: imcV_xGDaJ4
+    start_ms: 329366
+    end_ms: 338166
+    url: https://www.youtube.com/watch?v=imcV_xGDaJ4&t=329s
+    segment_ids:
+    - imcV_xGDaJ4:00140
+    - imcV_xGDaJ4:00141
+    - imcV_xGDaJ4:00142
+    - imcV_xGDaJ4:00143
+    - imcV_xGDaJ4:00144
+- id: zMrQvj_bji4-concept-backspin-serve-reviewed
+  evidence_type: definition
+  excerpt: Serving with underspin by using friction, wrist action, and correct contact so the ball spins back after the bounce.
+  reason: The speaker explicitly identifies underspin serve technique and describes how the ball should behave with underspin.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: zMrQvj_bji4
+    start_ms: 104366
+    end_ms: 126933
+    url: https://www.youtube.com/watch?v=zMrQvj_bji4&t=104s
+    segment_ids:
+    - zMrQvj_bji4:00026
+    - zMrQvj_bji4:00028
+    - zMrQvj_bji4:00032
+- id: zMrQvj_bji4-concept-backspin-serve-reviewed-fa3d7078
+  evidence_type: definition
+  excerpt: Serving with underspin by using friction, wrist action, and correct contact so the ball spins back after the bounce.
+  reason: The speaker explicitly identifies underspin serve technique and describes how the ball should behave with underspin.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: zMrQvj_bji4
+    start_ms: 104366
+    end_ms: 126933
+    url: https://www.youtube.com/watch?v=zMrQvj_bji4&t=104s
+    segment_ids:
+    - zMrQvj_bji4:00026
+    - zMrQvj_bji4:00028
+    - zMrQvj_bji4:00032
+- id: kF3mAZD3GHs-concept-backspin-serve-reviewed
+  evidence_type: definition
+  excerpt: A serve that imparts backspin, including heavy or disguised backspin variants.
+  reason: Backspin is named explicitly, contrasted with topspin, and discussed as a serve type with characteristic appearance and force.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: kF3mAZD3GHs
+    start_ms: 195333
+    end_ms: 218700
+    url: https://www.youtube.com/watch?v=kF3mAZD3GHs&t=195s
+    segment_ids:
+    - kF3mAZD3GHs:00037
+    - kF3mAZD3GHs:00038
+    - kF3mAZD3GHs:00041
+- id: 1IeU5XUDCKA-concept-backspin-serve-reviewed
+  evidence_type: definition
+  excerpt: A serve produced by chopping or cutting through a single point on the ball, creating heavy backspin.
+  reason: The speaker explicitly states that chopping or cutting through a single point creates heavy backspin.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 1IeU5XUDCKA
+    start_ms: 235366
+    end_ms: 262133
+    url: https://www.youtube.com/watch?v=1IeU5XUDCKA&t=235s
+    segment_ids:
+    - 1IeU5XUDCKA:00054
+    - 1IeU5XUDCKA:00059
+- id: W8EqqK7wNKY-concept-backspin-serve-reviewed
+  evidence_type: definition
+  excerpt: A serve with heavy backspin, sometimes combined with sidespin, that is difficult to loop or return cleanly.
+  reason: The speaker explicitly references a fast, heavy backspin serve and says the lesson is about handling it.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: W8EqqK7wNKY
+    start_ms: 50100
+    end_ms: 59333
+    url: https://www.youtube.com/watch?v=W8EqqK7wNKY&t=50s
+    segment_ids:
+    - W8EqqK7wNKY:00010
+    - W8EqqK7wNKY:00011
+- id: T5hgo9D7c7A-concept-backspin-serve-reviewed
+  evidence_type: definition
+  excerpt: A serve intended to create backspin or to disguise topspin as backspin.
+  reason: The speaker explicitly discusses serving sidespin-backspin and making a topspin serve look like a backspin serve.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: T5hgo9D7c7A
+    start_ms: 488433
+    end_ms: 499100
+    url: https://www.youtube.com/watch?v=T5hgo9D7c7A&t=488s
+    segment_ids:
+    - T5hgo9D7c7A:00113
+- id: uL8In-_NToM-concept-backspin-serve-reviewed
+  evidence_type: example
+  excerpt: A serve that imparts underspin/backspin to the ball.
+  reason: The speaker contrasts a fast long serve with a backspin serve and discusses its follow-up use.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: uL8In-_NToM
+    start_ms: 26066
+    end_ms: 42800
+    url: https://www.youtube.com/watch?v=uL8In-_NToM&t=26s
+    segment_ids:
+    - uL8In-_NToM:00007
+    - uL8In-_NToM:00009
+    - uL8In-_NToM:00010
+- id: 256zUqx30Zo-concept-heavy-backspin-short-serve-into-heavy-topspin-loop-reviewed
+  evidence_type: explanation
+  excerpt: A short heavy backspin serve can force a weak push that is then attacked with a heavy topspin loop.
+  reason: The speaker lays out the full serve-follow-up pattern and distinguishes the low, spinny loop from a high loop or power loop.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 256zUqx30Zo
+    start_ms: 473600
+    end_ms: 498866
+    url: https://www.youtube.com/watch?v=256zUqx30Zo&t=473s
+    segment_ids:
+    - 256zUqx30Zo:00107
+    - 256zUqx30Zo:00108
+    - 256zUqx30Zo:00109
+    - 256zUqx30Zo:00110
+    - 256zUqx30Zo:00111
+    - 256zUqx30Zo:00112
+- id: dg0kTVGE8qQ-concept-backspin-serve-reviewed
+  evidence_type: definition
+  excerpt: A serve that uses downward brushing from above the ball to generate heavy backspin.
+  reason: The speaker explicitly shifts to backspin, says the racket must be higher than the ball, and describes brushing downward from above the ball to make it spin.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: dg0kTVGE8qQ
+    start_ms: 492233
+    end_ms: 513133
+    url: https://www.youtube.com/watch?v=dg0kTVGE8qQ&t=492s
+    segment_ids:
+    - dg0kTVGE8qQ:00113
+    - dg0kTVGE8qQ:00114
+    - dg0kTVGE8qQ:00117
+- id: phTj82vlVqs-concept-backspin-serve-reviewed
+  evidence_type: definition
+  excerpt: A serve driven by under-ball brushing to create heavy underspin, often with a side component.
+  reason: The speaker explicitly discusses serving heavy side-underspin and says the most spin comes from brushing the bottom or just off the bottom of the ball.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: phTj82vlVqs
+    start_ms: 45633
+    end_ms: 58033
+    url: https://www.youtube.com/watch?v=phTj82vlVqs&t=45s
+    segment_ids:
+    - phTj82vlVqs:00012
+    - phTj82vlVqs:00013
+    - phTj82vlVqs:00014
+- id: OQ7fB6yS8Fk-concept-backspin-serve-reviewed
+  evidence_type: definition
+  excerpt: A serve that produces backspin, which can be used to shape the opponent's return but may also make attacking harder if overdone.
+  reason: The transcript refers directly to heavy backspin, low-spin or no-spin serves, and half-spin/no-spin as setup choices in the serve-and-attack context.
+  confidence: 0.93
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: OQ7fB6yS8Fk
+    start_ms: 20600
+    end_ms: 29833
+    url: https://www.youtube.com/watch?v=OQ7fB6yS8Fk&t=20s
+    segment_ids:
+    - OQ7fB6yS8Fk:00004
+    - OQ7fB6yS8Fk:00005
+- id: 8QSCtikekto-concept-backspin-serve-reviewed
+  evidence_type: definition
+  excerpt: A serve with significant backspin that changes the receiver's lift and timing needs.
+  reason: The speaker repeatedly uses backspin serves as examples in the receive strategy discussion.
+  confidence: 0.86
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 8QSCtikekto
+    start_ms: 24733
+    end_ms: 54333
+    url: https://www.youtube.com/watch?v=8QSCtikekto&t=24s
+    segment_ids:
+    - 8QSCtikekto:00005
+    - 8QSCtikekto:00010
+- id: evEaxXmwJ2E-candidate-brush-bottom-of-the-ball-reviewed
+  evidence_type: definition
+  excerpt: For spin serves, contact should brush more of the bottom of the ball rather than mainly the side or back.
+  reason: The speaker explicitly says spin comes from brushing the bottom of the ball and warns that side or back brushing leads to weak spin.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: evEaxXmwJ2E
+    start_ms: 64766
+    end_ms: 88900
+    url: https://www.youtube.com/watch?v=evEaxXmwJ2E&t=64s
+    segment_ids:
+    - evEaxXmwJ2E:00014
+    - evEaxXmwJ2E:00017
+    - evEaxXmwJ2E:00018
+- id: 4IHxQUdSvio-concept-backspin-serve-reviewed
+  evidence_type: definition
+  excerpt: A serve with backspin, including light, medium, and heavy variations, is a central receive problem in the transcript.
+  reason: The transcript explicitly discusses backspin serves and classifies them into heavy, medium, and light spin levels.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 4IHxQUdSvio
+    start_ms: 174033
+    end_ms: 180400
+    url: https://www.youtube.com/watch?v=4IHxQUdSvio&t=174s
+    segment_ids:
+    - 4IHxQUdSvio:00039
+- id: hw8RsLGOARs-concept-backspin-serve-reviewed
+  evidence_type: definition
+  excerpt: A serve characterized by downward cutting or wrist-and-finger action that produces backspin, with heavier spin coming from faster wrist and finger acceleration through contact.
+  reason: The speaker identifies slow wrist-and-finger motion or a plain downward chop as still creating backspin, with varying spin levels.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: hw8RsLGOARs
+    start_ms: 13433
+    end_ms: 35100
+    url: https://www.youtube.com/watch?v=hw8RsLGOARs&t=13s
+    segment_ids:
+    - hw8RsLGOARs:00002
+    - hw8RsLGOARs:00003
+    - hw8RsLGOARs:00005
+- id: 2_kzpEUImHk-concept-backspin-serve-reviewed
+  evidence_type: definition
+  excerpt: A serve whose bounce stays low or dies after the bounce, often with downward forearm motion and a low trajectory over the net.
+  reason: The transcript repeatedly defines backspin by a low first bounce, high arc over the net, and a downward brushing motion.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 2_kzpEUImHk
+    start_ms: 111100
+    end_ms: 139833
+    url: https://www.youtube.com/watch?v=2_kzpEUImHk&t=111s
+    segment_ids:
+    - 2_kzpEUImHk:00024
+    - 2_kzpEUImHk:00028
+- id: OVkH-47SvqE-concept-backspin-serve-reviewed
+  evidence_type: explanation
+  excerpt: A serve that uses a downward brushing motion to produce backspin rather than topspin-sidespin.
+  reason: The speaker contrasts topspin-sidespin with a backspin serve that requires downward brushing.
+  confidence: 0.88
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: OVkH-47SvqE
+    start_ms: 144600
+    end_ms: 155233
+    url: https://www.youtube.com/watch?v=OVkH-47SvqE&t=144s
+    segment_ids:
+    - OVkH-47SvqE:00025
+    - OVkH-47SvqE:00026
+- id: IHQASHkdLYk-concept-backspin-serve-reviewed
+  evidence_type: definition
+  excerpt: A serve with backspin, here used as a sidespin-backspin serve that often leads to a push return.
+  reason: The speaker explicitly discusses serving sidespin-backspin and says the opponent will probably push it back, with long-serve pushes being tricky.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: IHQASHkdLYk
+    start_ms: 133
+    end_ms: 17200
+    url: https://www.youtube.com/watch?v=IHQASHkdLYk&t=0s
+    segment_ids:
+    - IHQASHkdLYk:00000
+    - IHQASHkdLYk:00001
+    - IHQASHkdLYk:00002
+- id: 0KcRfTXRcsY-concept-backspin-serve-reviewed
+  evidence_type: definition
+  excerpt: A serve where the racket brushes under the ball with a relaxed wrist and bottom contact, producing heavy backspin.
+  reason: The transcript identifies the serve as backspin and describes bottom-brushing with a relaxed wrist.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 0KcRfTXRcsY
+    start_ms: 72666
+    end_ms: 80466
+    url: https://www.youtube.com/watch?v=0KcRfTXRcsY&t=72s
+    segment_ids:
+    - 0KcRfTXRcsY:00015
+- id: dMRsujoVIj4-concept-backspin-serve-codex-reviewed
+  evidence_type: definition
+  excerpt: A good backspin serve can be effective in matches; use a horizontal racket and brush the bottom of the ball.
+  reason: Hold the racket horizontally and brush the bottom of the ball when serving backspin.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: dMRsujoVIj4
+    start_ms: 33133
+    end_ms: 42566
+    url: https://www.youtube.com/watch?v=dMRsujoVIj4&t=33s
+    segment_ids:
+    - dMRsujoVIj4:00010
+    - dMRsujoVIj4:00011
+    - dMRsujoVIj4:00012
+    - dMRsujoVIj4:00013
+- id: HmoqZLuY1Ik-concept-backspin-serve-codex-reviewed
+  evidence_type: explanation
+  excerpt: It's a backspin serve, with backspin and a small arc.
+  reason: The serve carries backspin and follows a small arc.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: HmoqZLuY1Ik
+    start_ms: 679000
+    end_ms: 683033
+    url: https://www.youtube.com/watch?v=HmoqZLuY1Ik&t=679s
+    segment_ids:
+    - HmoqZLuY1Ik:00275
+    - HmoqZLuY1Ik:00276
+- id: imcV_xGDaJ4-concept-backspin-serve-codex-reviewed
+  evidence_type: definition
+  excerpt: This is a backspin serve.
+  reason: The speaker identifies the serve as a backspin serve.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: imcV_xGDaJ4
+    start_ms: 329366
+    end_ms: 338166
+    url: https://www.youtube.com/watch?v=imcV_xGDaJ4&t=329s
+    segment_ids:
+    - imcV_xGDaJ4:00140
+    - imcV_xGDaJ4:00141
+    - imcV_xGDaJ4:00142
+    - imcV_xGDaJ4:00143
+    - imcV_xGDaJ4:00144
+- id: hw8RsLGOARs-concept-backspin-serve-codex-reviewed
+  evidence_type: definition
+  excerpt: Slow wrist-and-finger motion still produces a backspin serve; the heaviest spin comes from accelerating the wrist and fingers through contact.
+  reason: Slow wrist-and-finger motion still produces a backspin serve, while accelerating the wrist and fingers through contact produces the heaviest spin.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: hw8RsLGOARs
+    start_ms: 13433
+    end_ms: 35100
+    url: https://www.youtube.com/watch?v=hw8RsLGOARs&t=13s
+    segment_ids:
+    - hw8RsLGOARs:00002
+    - hw8RsLGOARs:00003
+    - hw8RsLGOARs:00004
+    - hw8RsLGOARs:00005

@@ -7,11 +7,9 @@ aliases:
   - backhand surface
 short_definition: A backhand grip posture that keeps the index finger and tiger's mouth area open to permit the hook action and spin generation.
 evidence_summary: >-
-  Backhand grip openness brings together several connected ideas. The forefinger must be open,
-  references the tiger's mouth grip position, and ties this posture to producing the hook serve.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:e7f38678cf154f58ca633e6b90fb7035c83b6a061db4fdeb7035d6a8ce25bc97"
+  A backhand grip posture that keeps the index finger and tiger's mouth area open to permit the
+  hook action and spin generation.
+evidence_summary_source_hash: "sha256:575b967a554d1b49bd031c45b4d1b5773d7054904d5877638ca2868bad5cd7b4"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -25,10 +23,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: cc7e40af4a2ea081fbd6bd32534195239593893c1567c9a5ea2b59cdb0eb1c3f
-  prompt_version: candidate-review-v1
+  input_hash: sha256:da059d14fa4380edf91d3da61e4ca0c8596f67dc38ebd8825501dbfbb0b5043c
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: 7Zz_cVWrgng-concept-backhand-grip-and-tiger-mouth-open-reviewed
     evidence_type: explanation
@@ -36,7 +37,7 @@ evidence:
     reason: The speaker says the forefinger must be open, references the tiger's mouth grip position, and ties this posture to producing the hook serve.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 7Zz_cVWrgng
       start_ms: 124166
@@ -46,3 +47,22 @@ evidence:
         - 7Zz_cVWrgng:00016
         - 7Zz_cVWrgng:00021
         - 7Zz_cVWrgng:00023
+  - id: 7Zz_cVWrgng-concept-backhand-grip-and-tiger-mouth-open-codex-reviewed
+    evidence_type: explanation
+    excerpt: The forefinger must remain open, with the tiger’s-mouth position blocked and the backhand surface maintained; otherwise the hook serve will not be produced.
+    reason: These contiguous segments directly state that the forefinger must be open, identify the tiger’s-mouth and backhand-surface positions, and connect maintaining them to producing a hook serve.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 7Zz_cVWrgng
+      start_ms: 140300
+      end_ms: 167200
+      url: https://www.youtube.com/watch?v=7Zz_cVWrgng&t=140s
+      segment_ids:
+        - 7Zz_cVWrgng:00021
+        - 7Zz_cVWrgng:00022
+        - 7Zz_cVWrgng:00023
+        - 7Zz_cVWrgng:00024
+        - 7Zz_cVWrgng:00025
+        - 7Zz_cVWrgng:00026

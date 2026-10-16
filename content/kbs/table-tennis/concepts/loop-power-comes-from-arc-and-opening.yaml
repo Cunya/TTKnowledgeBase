@@ -7,13 +7,9 @@ aliases:
   - opening up also allows you to time the ball better and combine forces
 short_definition: Loop quality and power come from creating an arc through opening the arm, which improves timing and force transfer.
 evidence_summary: >-
-  Loop power comes from arc and opening brings together several connected ideas. Opening up to
-  better timing, force combination, and a distinct arc that helps the ball land on the table. The
-  loop should open up, wrap around the ball, and use whip-like explosive power to brush through
-  contact. Arc trajectory, controlled inward arc, and better consistency from slight off-center
-  contact. Together, these principles show how the topic is applied in practice while preserving
-  the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:e65ad6ed34a59a768364458e8209620d6a5c6b417453820a5c87e3ecd5952b1c"
+  Loop quality and power come from creating an arc through opening the arm, which improves timing
+  and force transfer.
+evidence_summary_source_hash: "sha256:e61b995b582dfaa34a6ce3833c4392efa8dace2370084fc401b0b7f2d38906e3"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
@@ -26,10 +22,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 2731ced7ded88e5e98caf897557661d899c0084ba4fe949d876402d2b8e2bcb5
-  prompt_version: candidate-review-v1
+  input_hash: sha256:5878c112725e6e13544066ccbde170f14272feae327f2239b3c40ac89c279cbf
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: hoLSxXKl2L0-concept-loop-power-comes-from-arc-and-opening-reviewed
     evidence_type: explanation
@@ -37,7 +36,7 @@ evidence:
     reason: The speaker links opening up to better timing, force combination, and a distinct arc that helps the ball land on the table.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hoLSxXKl2L0
       start_ms: 768433
@@ -53,7 +52,7 @@ evidence:
     reason: The transcript says the loop should open up, wrap around the ball, and use whip-like explosive power to brush through contact.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 3wQrxObpgxM
       start_ms: 537300
@@ -69,7 +68,7 @@ evidence:
     reason: The speaker emphasizes arc trajectory, controlled inward arc, and better consistency from slight off-center contact.
     confidence: 0.9
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: IYIjNtXE3CE
       start_ms: 334280
@@ -83,3 +82,19 @@ evidence:
         - IYIjNtXE3CE:00148
         - IYIjNtXE3CE:00149
         - IYIjNtXE3CE:00150
+  - id: hoLSxXKl2L0-concept-loop-power-comes-from-arc-and-opening-codex-reviewed
+    evidence_type: explanation
+    excerpt: You have to open your arms to embrace them. This creates a triangular arc and framework. And opening up also allows you to time the ball better and combine forces.
+    reason: These contiguous segments directly explain that opening the arms creates an arc and improves timing and force combination, supporting the existing concept.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: hoLSxXKl2L0
+      start_ms: 603833
+      end_ms: 616633
+      url: https://www.youtube.com/watch?v=hoLSxXKl2L0&t=603s
+      segment_ids:
+        - hoLSxXKl2L0:00101
+        - hoLSxXKl2L0:00102
+        - hoLSxXKl2L0:00103

@@ -7,19 +7,9 @@ aliases:
   - step in for short balls
 short_definition: Adjusting the body closer to the ball on short or in-table pushes so the contact can be made in time and with control.
 evidence_summary: >-
-  Close-distance control for pushes brings together several connected ideas. Short-ball success to
-  getting close, staying in position, and avoiding too much backswing or late contact. A useful
-  contrast is between long-ball pushes requiring space and short-ball pushes requiring staying
-  close. Receive requires getting close to the ball and maintaining the correct distance. Being
-  close to the ball and close to the point of contact stabilizes the push and improves quality.
-  Push quality depends on how close you are to the ball and that any space reduces control. Not to
-  stand too close after serve, but also explains that staying closer to the ball is better than
-  being too far away when attacking short balls. Stepping in close as soon as the ball pops up and
-  staying close to the ball for half-long high balls. To step in, get close to the ball, and
-  cushion it when cramped, especially on short returns and uncertain receives. Additional points
-  reinforce the same theme. Together, these principles show how the topic is applied in practice
-  while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:7079e94a2cae1cd0cb531641cf350fe2464b7d3f60d7c44ee5298a0fb346ad51"
+  Adjusting the body closer to the ball on short or in-table pushes so the contact can be made in
+  time and with control.
+evidence_summary_source_hash: "sha256:98db63ac014dbbe3cf34fec88f87ec4a42d5c1c10068caad3cd7da020cd7e89c"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -40,10 +30,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: be0f7bd81b552b4f9faee0a311b8d5a89a0428153c4cee16941656da40d15892
-  prompt_version: candidate-review-v1
+  input_hash: sha256:b9f8d40dc486527a943c89cf5f35ad8359a05989a4d0f66f4c8043017e1b62ec
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: uAOIQu7TT0g-concept-close-distance-control-for-pushes-reviewed
     evidence_type: explanation
@@ -51,7 +44,7 @@ evidence:
     reason: The speaker links short-ball success to getting close, staying in position, and avoiding too much backswing or late contact.
     confidence: 0.88
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: uAOIQu7TT0g
       start_ms: 52700
@@ -67,7 +60,7 @@ evidence:
     reason: The speaker says handling short balls requires getting extremely close to the point of contact, and that being too far away leads to hesitation and weak contact.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: IgnpsIZW3tM
       start_ms: 128966
@@ -82,7 +75,7 @@ evidence:
     reason: The transcript explicitly contrasts long-ball pushes requiring space with short-ball pushes requiring staying close.
     confidence: 0.93
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 2HMLpiaJLL0
       start_ms: 270600
@@ -100,7 +93,7 @@ evidence:
     reason: The speaker repeatedly emphasizes being very close to the ball for short-game techniques and staying glued to it.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 0D6FzvP33Xs
       start_ms: 408500
@@ -116,7 +109,7 @@ evidence:
     reason: The speaker says receive requires getting close to the ball and maintaining the correct distance.
     confidence: 0.91
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: VYMqgnrDAhk
       start_ms: 121600
@@ -131,7 +124,7 @@ evidence:
     reason: The speaker explicitly says to get close to the ball on service return, leave only arm's length of distance, and that creating distance loses control.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: FOPBXdIaKFA
       start_ms: 978833
@@ -147,7 +140,7 @@ evidence:
     reason: The speaker says being close to the ball and close to the point of contact stabilizes the push and improves quality.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: r75F4gsFaoQ
       start_ms: 84300
@@ -163,7 +156,7 @@ evidence:
     reason: The transcript states that push quality depends on how close you are to the ball and that any space reduces control.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: rf-9lmjigbs
       start_ms: 586533
@@ -178,7 +171,7 @@ evidence:
     reason: The speaker contrasts standing close for power with standing further back for safety and reaction time, including after serve and in pressure situations.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 0ZHQIcZARgE
       start_ms: 549733
@@ -196,7 +189,7 @@ evidence:
     reason: The speaker says not to stand too close after serve, but also explains that staying closer to the ball is better than being too far away when attacking short balls.
     confidence: 0.86
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: dCjFkTKTH7I
       start_ms: 63200
@@ -215,7 +208,7 @@ evidence:
     reason: The speaker repeatedly says the stance must allow a single step to short balls and not sacrifice short-game position.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: YS3IObI6Gaw
       start_ms: 419400
@@ -234,7 +227,7 @@ evidence:
     reason: The speaker stresses stepping in close as soon as the ball pops up and staying close to the ball for half-long high balls.
     confidence: 0.92
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: VR1gORHDMeQ
       start_ms: 683000
@@ -249,7 +242,7 @@ evidence:
     reason: The speaker says he always steps in on pushes, steps in to use body weight, and steps forward with the right foot to meet the ball.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: KEOmLdUTC-g
       start_ms: 551333
@@ -268,7 +261,7 @@ evidence:
     reason: The speaker repeatedly says to step in, get close to the ball, and cushion it when cramped, especially on short returns and uncertain receives.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: PCRCB9FGBPg
       start_ms: 551300
@@ -278,3 +271,19 @@ evidence:
         - PCRCB9FGBPg:00113
         - PCRCB9FGBPg:00114
         - PCRCB9FGBPg:00118
+  - id: PCRCB9FGBPg-concept-close-distance-control-for-pushes-codex-reviewed
+    evidence_type: explanation
+    excerpt: Get close to the ball so you have space for control; when cramped, cushion it through friction.
+    reason: This contiguous 10.3-second span directly explains close positioning and cushioning for controlled service-return contact, matching the supplied existing concept.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: PCRCB9FGBPg
+      start_ms: 551300
+      end_ms: 561866
+      url: https://www.youtube.com/watch?v=PCRCB9FGBPg&t=551s
+      segment_ids:
+        - PCRCB9FGBPg:00113
+        - PCRCB9FGBPg:00114
+        - PCRCB9FGBPg:00115

@@ -6,16 +6,8 @@ aliases:
   - serve and receive
 short_definition: Deliberate practice of serve and receive skills as a key training priority.
 evidence_summary: >-
-  Serve-receive practice brings together several connected ideas. Practicing serving and receiving
-  and then demonstrates a practice method. Practice against difficult sidespin balls and changing
-  methods when needed. Using a target on the table, being disciplined about the first bounce, and
-  practicing until the target is no longer needed. If practice does not translate to matches, the
-  player should focus more on serve and receive and master them for match play. How to practice
-  serve receive and recommends repeated identical serves/returns while not playing out the point.
-  Serve and serve receive as the main training priority and ties them to match success. Together,
-  these principles show how the topic is applied in practice while preserving the relevant
-  distinctions and constraints.
-evidence_summary_source_hash: "sha256:1b5228b98fd53808096790baa6f03a371581c4c33b4fa09d7793e8fbb91ac056"
+  Deliberate practice of serve and receive skills as a key training priority.
+evidence_summary_source_hash: "sha256:3cc006e5dcab21aa4e74846a647b34ebeb6f4cdf3f6231f0423746ec8ea4870d"
 evidence_summary_generator: "deterministic"
 concept_type: practice
 facets:
@@ -27,10 +19,13 @@ facets:
 difficulty: beginner
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 89a8ddc5cb9994d8a67a0992adf8ca5e2202789335697dd75a689396da861a92
-  prompt_version: candidate-review-v1
+  input_hash: sha256:bc70ff93389636cc027b80103bd752bb677c24b95a96bc19f3823234f0dedaaf
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: TtrTmkMdEzo-concept-serve-receive-practice-reviewed
     evidence_type: drill
@@ -38,7 +33,7 @@ evidence:
     reason: The speaker explicitly recommends practicing serving and receiving and then demonstrates a practice method.
     confidence: 0.92
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: TtrTmkMdEzo
       start_ms: 1013700
@@ -54,7 +49,7 @@ evidence:
     reason: The speaker explicitly suggests practice against difficult sidespin balls and changing methods when needed.
     confidence: 0.89
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: u2A5PNggIqg
       start_ms: 582066
@@ -70,7 +65,7 @@ evidence:
     reason: The speaker recommends using a target on the table, being disciplined about the first bounce, and practicing until the target is no longer needed.
     confidence: 0.86
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: phTj82vlVqs
       start_ms: 423733
@@ -87,7 +82,7 @@ evidence:
     reason: The speaker says that if practice does not translate to matches, the player should focus more on serve and receive and master them for match play.
     confidence: 0.9
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 16tgKRqrb8A
       start_ms: 53166
@@ -103,7 +98,7 @@ evidence:
     reason: The coach explicitly asks how to practice serve receive and recommends repeated identical serves/returns while not playing out the point.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: -uuSx6fU8yY
       start_ms: 931500
@@ -118,7 +113,7 @@ evidence:
     reason: The speaker explicitly elevates serve and serve receive as the main training priority and ties them to match success.
     confidence: 0.93
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: iUwrE230SAY
       start_ms: 155700
@@ -127,3 +122,21 @@ evidence:
       segment_ids:
         - iUwrE230SAY:00032
         - iUwrE230SAY:00033
+  - id: 16tgKRqrb8A-concept-serve-and-receive-practice-codex-reviewed
+    evidence_type: explanation
+    excerpt: To improve match play, players should master and improve their serve and receive rather than focusing only on basic fundamentals.
+    reason: This contiguous 24.166-second span directly states that players disconnected from match play should move beyond drilling fundamentals and master their serve and receive game.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 16tgKRqrb8A
+      start_ms: 53166
+      end_ms: 77966
+      url: https://www.youtube.com/watch?v=16tgKRqrb8A&t=53s
+      segment_ids:
+        - 16tgKRqrb8A:00010
+        - 16tgKRqrb8A:00011
+        - 16tgKRqrb8A:00012
+        - 16tgKRqrb8A:00013
+        - 16tgKRqrb8A:00014

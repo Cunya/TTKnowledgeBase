@@ -1,0 +1,31 @@
+# Session notes — 2026-09-10 13:00
+
+- Loop stopped by the operator; no concurrent processor edits expected.
+- Navigation mismatch is a shared placement-policy bug, not a checkpoint or model failure.
+- Keep validation fail-closed for approved concepts and avoid restarting the loop in this pass.
+- Final checks passed after the shared placement fix and six explicit navigation assignments; the loop remains stopped.
+- The wrapper release gate only checks process existence and was blocked by the idle monitor service; individual release stages passed.
+- Whole-process review found real entry-point issues in continuation discovery, adjudication timeout budgeting, crash-stale wrapper locks, monitor JSON/body handling, and invalid ingest URL handling; the processing loop remains stopped while fixing and testing them.
+- Fixed and verified the shared orchestrator, wrapper, CLI, monitor, and release-gate paths. The idle monitor service stayed up, but no processing loop or network/LLM batch was started.
+- Discovery is now blocked while any extraction, adjudication, or acquisition workset remains; this prevents a source scrape from outranking the existing ten-item adjudication backlog.
+- Next change lowers only the processing workload to Windows idle priority; the monitor UI remains normal priority.
+- The running cycle was confirmed at Idle priority live and completed successfully. Persistent priority code and 86-test/Ruff/Node verification passed without restarting the loop.
+- The active monitor still had `1/10`…`10/10` adjudication lines in `activeRun.output`, but its top progress model showed only the generic stage estimate. The next fix is a minimal parser in `runProgress` to expose the batch's remaining count without stopping the loop.
+- Added and self-checked the monitor parser: an active `3/10` event renders `Adjudication batch · 3/10` with `7 remaining`; later stage headers suppress stale batch counts. The current monitor process was intentionally not restarted while the loop is active.
+- Live status also showed the prior cycle failed at publish because `concept-distance-management-for-hitting-range` was accepted without a navigation placement; this is separate from the progress-display fix and remains for a later idle content/placement pass.
+- The requested monitor denominator is the larger retry candidate set, not the ten-item cap. The current 50-video fair-rotation set has 381 retryable candidates; the fix will carry that total and remaining count alongside the ten-item batch counter.
+- Implemented the queue-level counter: the live child now emits `4/392 (batch 4/10)`, and the patched monitor parser derives `388 candidates remaining`. Focused tests and syntax/lint checks passed; the existing monitor process remains untouched until an intentional restart.
+- Added a minimal monitor bucket-history section. The service keeps up to 120 change-only snapshots in memory and the UI renders timestamped inventory/decision totals; no runtime files or active loop state are touched. Restarting the monitor is intentionally deferred while the loop is active.
+- Corrected the toast scope: restore the global custom hook and suppress it only on this repository’s Codex `exec` subprocesses, because those calls run from temporary job directories. Keep built-in TUI and other project/app notifications intact.
+- Scope correction verified: global `notify` is present again, all five project Codex command builders include `notify=[]`, built-in TUI notifications remain enabled, and focused tests/Ruff/CLI parsing passed. The active loop was left running, so its already-loaded code was not restarted.
+- Restarted the monitor once it reported idle/no active child. New PID 37012 owns port 4322; the loop remains stopped and bucket history is visible in the served page.
+- Bucket history is currently memory-only and resets on service restart. Next change persists sanitized snapshots privately for at least seven days, with age pruning and a bounded safety cap; the loop is stopped for this change.
+- Durable bucket history is implemented and verified across a temporary monitor restart. The real monitor now loads the private seven-day history file and displays “Bucket history · last 7 days”; loop remains stopped.
+- Next UI change: add native SVG trend graphs for inventory and candidate buckets from the persisted history, keeping the exact snapshot list and avoiding a chart dependency. Loop remains stopped.
+- Added and live-verified native SVG history graphs for inventory stages and candidate decisions; the restarted monitor is idle and the loop remains stopped. The persisted history currently has one point and will grow only when bucket counts change.
+- Clarified graph scope: render one independent history chart for each of the six inventory and five candidate buckets. Verified the live monitor serves this layout after an idle restart; the loop remains stopped.
+- The monitor later had no listener on port 4322; restarted it and verified the page/API are reachable with the loop still stopped.
+- Browser inspection found the one-snapshot charts looked sparse and repeated `1` ticks for zero buckets. Patched and visually verified the correction in a temporary monitor; the real monitor is actively processing `9/391`, so it was not restarted and still serves the prior inline page until the run is safe to stop/restart.
+- The last-run publish failure was fixed by placing the approved distance-management concept under `fundamentals/footwork-and-spacing`; validate, publish, published validation, 87 tests, Ruff, and Astro build all pass. The now-idle monitor was restarted and the live charts were visually verified with three history snapshots.
+- A later run was orphaned: PID 38552 disappeared after one adjudication artifact, leaving `cp.latest.json` falsely running and the monitor unavailable. Added startup reconciliation, marked it interrupted with preserved evidence, and started the monitor detached; endpoint/liveness checks pass and the loop remains stopped.
+- Final verification at 23:46 passed: port 4322 returned HTTP 200; the loop was stopped with no active run; the stale manifest was `stopped`/`interrupted`; the stale PID was absent; 16 bucket-history entries and the graph renderer were present; published artifacts validated at 161 concepts and 92 videos.

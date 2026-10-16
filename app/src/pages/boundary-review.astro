@@ -12,11 +12,11 @@ const items = allItems.slice((currentPage - 1) * pageSize, currentPage * pageSiz
 const formatTimestamp = (milliseconds: number) => { const total = Math.floor(milliseconds / 1000); return String(Math.floor(total / 60)) + ':' + String(total % 60).padStart(2, '0'); };
 ---
 
-<BaseLayout title="Caption boundary review" description="Local-only manual review of deferred caption boundaries.">
+<BaseLayout title="Caption boundary review" description="Local-only manual review of caption boundaries that need a decision.">
   <section class="page-intro">
     <div class="eyebrow">Local manual review</div>
     <h1>Caption boundary review</h1>
-    <p>Review deferred candidate windows and record whether the cited caption span should be kept, expanded, split, or deferred. These marks are review notes only; they do not promote candidates automatically.</p>
+    <p>Review candidate windows that need a decision and record whether the cited caption span should be kept, expanded, split, or set aside. These marks are review notes only; they do not promote candidates automatically.</p>
     <p class="recent-disclaimer">Showing {items.length} of {allItems.length} boundary candidates · page {currentPage} of {pageCount} · generated {new Date(data.generated_at).toLocaleString()}</p>
   </section>
   <section class="recent-section">

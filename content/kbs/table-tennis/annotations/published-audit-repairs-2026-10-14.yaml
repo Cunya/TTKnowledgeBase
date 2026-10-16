@@ -1,0 +1,892 @@
+reviewed_at: '2026-10-14T09:51:04.024716+00:00'
+review_method: full_article_transcript_review
+report: docs/full-published-audit-workflow-2026-10-14.md
+changes:
+- concept_id: concept-acceleration-without-force
+  reason: 'Exhaustive first-article review: narrow to selected-row support, remove unsupported facets/difficulty,
+    quarantine long-pips power example, remove review-oriented reasons.'
+  previous_concept:
+    id: concept-acceleration-without-force
+    slug: acceleration-without-force
+    label: Acceleration without force
+    aliases:
+    - acceleration, not brute force
+    - accelerate, don't force it
+    - relaxed acceleration
+    short_definition: Generating serve spin by accelerating the motion while staying relaxed instead of
+      muscling the ball with stiffness or brute force.
+    evidence_summary: >-
+      Generating serve spin by accelerating the motion while staying relaxed instead of muscling the
+      ball with stiffness or brute force.
+    evidence_summary_source_hash: sha256:bded1322be9bb82a6f0129a1cb1986e464ae0f28fa4a86d639bd0923c1db9bcd
+    evidence_summary_generator: deterministic
+    concept_type: fundamentals
+    facets:
+      category:
+      - fundamentals
+      side:
+      - neutral
+      spin:
+      - sidespin
+      - backspin
+      distance:
+      - close
+      level:
+      - beginner
+      - intermediate
+    difficulty: beginner
+    review_status: approved
+    generated_by:
+      processor: codex_semantic_adjudication
+      version: 1.0.0
+      input_hash: sha256:1daafa8a83af8268c9c3f8ab0be7cf0821081d7563b7a578788736981ebd3835
+      model: gpt-5.6-luna
+      reasoning_effort: low
+      prompt_version: 1.0.0
+      schema_version: 1.0.0
+    evidence:
+    - id: evEaxXmwJ2E-candidate-acceleration-without-force-reviewed
+      evidence_type: definition
+      excerpt: Generating serve spin by accelerating the motion while staying relaxed instead of muscling the
+        ball with stiffness or brute force.
+      reason: The speaker directly contrasts acceleration with brute force and repeatedly says the serve
+        should be relaxed and accelerated, not forced.
+      confidence: 0.99
+      visual_status: not_visual
+      review_status: unreviewed
+      source:
+        video_id: evEaxXmwJ2E
+        start_ms: 175066
+        end_ms: 201266
+        url: https://www.youtube.com/watch?v=evEaxXmwJ2E&t=175s
+        segment_ids:
+        - evEaxXmwJ2E:00039
+        - evEaxXmwJ2E:00043
+    - id: itzB36f9_R0-concept-acceleration-without-force-reviewed
+      evidence_type: explanation
+      excerpt: Generate quality by accelerating through contact rather than relying on a large backswing or
+        passive touch.
+      reason: The speaker contrasts backswing power with late acceleration and repeatedly emphasizes
+        accelerating through contact instead of just touching the ball.
+      confidence: 0.96
+      visual_status: not_visual
+      review_status: unreviewed
+      source:
+        video_id: itzB36f9_R0
+        start_ms: 518033
+        end_ms: 542733
+        url: https://www.youtube.com/watch?v=itzB36f9_R0&t=518s
+        segment_ids:
+        - itzB36f9_R0:00098
+        - itzB36f9_R0:00100
+        - itzB36f9_R0:00102
+        - itzB36f9_R0:00103
+    - id: IXRPhM4Pjzc-concept-acceleration-without-force-reviewed
+      evidence_type: explanation
+      excerpt: Generate quality by staying relaxed, timing the stroke well, and accelerating through contact
+        rather than forcing early effort.
+      reason: The speaker says the loop should feel effortless, clean, and friction-based, with the remaining
+        swing becoming effective acceleration instead of wasted early effort.
+      confidence: 0.9
+      visual_status: transcript_inferred
+      review_status: unreviewed
+      source:
+        video_id: IXRPhM4Pjzc
+        start_ms: 342833
+        end_ms: 350533
+        url: https://www.youtube.com/watch?v=IXRPhM4Pjzc&t=342s
+        segment_ids:
+        - IXRPhM4Pjzc:00065
+        - IXRPhM4Pjzc:00066
+    - id: CD09LNI2fYk-concept-fingertip-frequency-over-force-codex-reviewed
+      evidence_type: explanation
+      excerpt: Maintain constant pressure, accelerate through the motion, and add frequency rather than force;
+        fast frequency produces more spin.
+      reason: 'The selected contiguous span directly explains the existing concept: the speaker contrasts increasing
+        force with accelerating at constant force and explicitly links fast frequency to greater spin.'
+      confidence: 0.99
+      visual_status: transcript_inferred
+      review_status: approved
+      source:
+        video_id: CD09LNI2fYk
+        start_ms: 387919
+        end_ms: 416680
+        url: https://www.youtube.com/watch?v=CD09LNI2fYk&t=387s
+        segment_ids:
+        - CD09LNI2fYk:00150
+        - CD09LNI2fYk:00151
+        - CD09LNI2fYk:00152
+        - CD09LNI2fYk:00153
+        - CD09LNI2fYk:00154
+        - CD09LNI2fYk:00155
+        - CD09LNI2fYk:00156
+        - CD09LNI2fYk:00157
+        - CD09LNI2fYk:00158
+        - CD09LNI2fYk:00159
+    - id: evEaxXmwJ2E-candidate-acceleration-without-force-codex-reviewed
+      evidence_type: explanation
+      excerpt: Stay relaxed and increase the motion’s speed to generate more spin; use a relaxed arm rather
+        than forcing the shot.
+      reason: This contiguous 17-second span directly explains relaxed acceleration, increasing motion speed,
+        and avoiding muscular force. The supplied concept is the same durable topic, so the existing concept
+        should be accepted.
+      confidence: 0.99
+      visual_status: not_visual
+      review_status: approved
+      source:
+        video_id: evEaxXmwJ2E
+        start_ms: 253966
+        end_ms: 274133
+        url: https://www.youtube.com/watch?v=evEaxXmwJ2E&t=253s
+        segment_ids:
+        - evEaxXmwJ2E:00053
+        - evEaxXmwJ2E:00054
+        - evEaxXmwJ2E:00055
+        - evEaxXmwJ2E:00056
+        - evEaxXmwJ2E:00057
+    - id: itzB36f9_R0-concept-acceleration-without-force-codex-reviewed
+      evidence_type: explanation
+      excerpt: Against long pips, accelerate through the ball and generate power through contact rather than
+        from the backswing.
+      reason: This contiguous 26.4-second span directly explains accelerating through contact, contrasting it
+        with generating power from a backswing.
+      confidence: 0.98
+      visual_status: not_visual
+      review_status: approved
+      source:
+        video_id: itzB36f9_R0
+        start_ms: 485666
+        end_ms: 512733
+        url: https://www.youtube.com/watch?v=itzB36f9_R0&t=485s
+        segment_ids:
+        - itzB36f9_R0:00091
+        - itzB36f9_R0:00092
+        - itzB36f9_R0:00093
+        - itzB36f9_R0:00094
+        - itzB36f9_R0:00095
+        - itzB36f9_R0:00096
+- concept_id: concept-accurate-foot-placement-and-balance
+  reviewed_at: '2026-10-14T15:00:42.967906+00:00'
+  reason: 'Full article audit: source-specific prose and unsupported classifications/relations/timing repaired;
+    every unit rechecked.'
+  previous_concept:
+    id: concept-accurate-foot-placement-and-balance
+    slug: accurate-foot-placement-and-balance
+    label: Accurate foot placement and balance
+    aliases:
+    - accurate foot placement
+    - accurate balance
+    short_definition: Placing the feet accurately to establish balance and enter the proper hitting position.
+    evidence_summary: >-
+      Placing the feet accurately to establish balance and enter the proper hitting position.
+    evidence_summary_source_hash: sha256:c0d724f0bd84df36c270c0324383e92ea9388bda862dbe7e9def23b55c9048fd
+    evidence_summary_generator: deterministic
+    concept_type: concept
+    facets:
+      category:
+      - fundamentals
+      - practice
+      level:
+      - beginner
+    difficulty: easy
+    review_status: approved
+    generated_by:
+      processor: codex_semantic_adjudication
+      version: 1.0.0
+      input_hash: sha256:68bf0fa32908f33c07c65331b747947ecd8cb9e9d9bcb8df270840d400976027
+      model: gpt-5.6-luna
+      reasoning_effort: low
+      prompt_version: 1.0.0
+      schema_version: 1.0.0
+    evidence:
+    - id: h05pKYwgRHo-concept-accurate-foot-placement-and-balance-reviewed
+      evidence_type: explanation
+      excerpt: Placing the feet accurately to establish balance and enter the proper hitting position.
+      reason: The speaker summarizes footwork as accurate foot placement and accurate balance for the proper
+        hitting position.
+      confidence: 0.9
+      visual_status: transcript_inferred
+      review_status: unreviewed
+      source:
+        video_id: h05pKYwgRHo
+        start_ms: 651466
+        end_ms: 663800
+        url: https://www.youtube.com/watch?v=h05pKYwgRHo&t=651s
+        segment_ids:
+        - h05pKYwgRHo:00223
+        - h05pKYwgRHo:00224
+        - h05pKYwgRHo:00225
+        - h05pKYwgRHo:00226
+    - id: 2DXviJQOA5M-concept-accurate-foot-placement-and-balance-reviewed
+      evidence_type: explanation
+      excerpt: Using a stable stance and correct foot width/alignment so the body stays balanced during the
+        shot.
+      reason: The speaker stresses stance as crucial, with feet shoulder-width apart for stability and leg
+        stabilization for better hip use.
+      confidence: 0.94
+      visual_status: transcript_inferred
+      review_status: unreviewed
+      source:
+        video_id: 2DXviJQOA5M
+        start_ms: 437440
+        end_ms: 465520
+        url: https://www.youtube.com/watch?v=2DXviJQOA5M&t=437s
+        segment_ids:
+        - 2DXviJQOA5M:00055
+        - 2DXviJQOA5M:00057
+        - 2DXviJQOA5M:00058
+    - id: rPrv4iWdE4w-concept-accurate-foot-placement-and-balance-reviewed
+      evidence_type: explanation
+      excerpt: Using the correct foot arrangement and balance, especially with left foot forward and right
+        foot back, to improve serve visibility and weight transfer.
+      reason: The speaker explicitly instructs left foot forward, right foot back, and says this front-back
+        relationship is needed for good serves and weight transfer.
+      confidence: 0.95
+      visual_status: transcript_inferred
+      review_status: unreviewed
+      source:
+        video_id: rPrv4iWdE4w
+        start_ms: 1204933
+        end_ms: 1231633
+        url: https://www.youtube.com/watch?v=rPrv4iWdE4w&t=1204s
+        segment_ids:
+        - rPrv4iWdE4w:00254
+        - rPrv4iWdE4w:00256
+        - rPrv4iWdE4w:00257
+    - id: CD09LNI2fYk-concept-foot-position-and-posture-for-friction-reviewed
+      evidence_type: explanation
+      excerpt: Foot placement and lower-body posture affect whether the player can generate friction at
+        contact.
+      reason: The speaker directly ties foot position and heel placement to the ability to generate friction.
+      confidence: 0.9
+      visual_status: transcript_inferred
+      review_status: unreviewed
+      source:
+        video_id: CD09LNI2fYk
+        start_ms: 156040
+        end_ms: 180800
+        url: https://www.youtube.com/watch?v=CD09LNI2fYk&t=156s
+        segment_ids:
+        - CD09LNI2fYk:00060
+        - CD09LNI2fYk:00061
+        - CD09LNI2fYk:00062
+        - CD09LNI2fYk:00063
+        - CD09LNI2fYk:00064
+        - CD09LNI2fYk:00065
+        - CD09LNI2fYk:00066
+        - CD09LNI2fYk:00067
+        - CD09LNI2fYk:00068
+    - id: mWehvleIbTk-concept-accurate-foot-placement-and-balance-reviewed
+      evidence_type: explanation
+      excerpt: Using the correct foot placement and stance balance to keep space for the backhand loop and
+        avoid blocking the swing.
+      reason: 'The speaker says the backhand loop against backspin depends on foot placement: right foot slightly
+        forward can help, stepping in can fix loss of position, and left-foot-forward positioning blocks the swing.'
+      confidence: 0.96
+      visual_status: transcript_inferred
+      review_status: unreviewed
+      source:
+        video_id: mWehvleIbTk
+        start_ms: 53533
+        end_ms: 71433
+        url: https://www.youtube.com/watch?v=mWehvleIbTk&t=53s
+        segment_ids:
+        - mWehvleIbTk:00012
+        - mWehvleIbTk:00015
+    - id: 1E475xXl9HA-concept-accurate-foot-placement-and-balance-reviewed
+      evidence_type: explanation
+      excerpt: Foot placement and stance width that improve stability and make it easier to cover the table
+        and transition into forehand movement.
+      reason: The speaker says a wide stance improves lower-body stability and table coverage, while a narrow
+        stance makes forehand movement harder.
+      confidence: 0.9
+      visual_status: transcript_inferred
+      review_status: unreviewed
+      source:
+        video_id: 1E475xXl9HA
+        start_ms: 43466
+        end_ms: 62600
+        url: https://www.youtube.com/watch?v=1E475xXl9HA&t=43s
+        segment_ids:
+        - 1E475xXl9HA:00007
+        - 1E475xXl9HA:00008
+        - 1E475xXl9HA:00009
+        - 1E475xXl9HA:00010
+    - id: fAEn9wkWGd8-concept-accurate-foot-placement-and-balance-reviewed
+      evidence_type: explanation
+      excerpt: Setting the feet firmly before hitting so the body can drive into the shot without instability.
+      reason: The speaker says the common problem is not planting feet firmly, and that the shot requires
+        planting before driving forward.
+      confidence: 0.95
+      visual_status: transcript_inferred
+      review_status: unreviewed
+      source:
+        video_id: fAEn9wkWGd8
+        start_ms: 408233
+        end_ms: 429866
+        url: https://www.youtube.com/watch?v=fAEn9wkWGd8&t=408s
+        segment_ids:
+        - fAEn9wkWGd8:00071
+        - fAEn9wkWGd8:00072
+        - fAEn9wkWGd8:00073
+    - id: PCRCB9FGBPg-concept-accurate-foot-placement-and-balance-reviewed
+      evidence_type: explanation
+      excerpt: Making the right small step and staying balanced so the body can reach and contact the ball
+        effectively.
+      reason: The transcript describes late contact and being off-balance when footwork is absent, and
+        recommends small steps in or toward the ball to stay balanced and reach the correct position.
+      confidence: 0.94
+      visual_status: transcript_inferred
+      review_status: unreviewed
+      source:
+        video_id: PCRCB9FGBPg
+        start_ms: 50800
+        end_ms: 63866
+        url: https://www.youtube.com/watch?v=PCRCB9FGBPg&t=50s
+        segment_ids:
+        - PCRCB9FGBPg:00010
+        - PCRCB9FGBPg:00012
+    - id: XBi28mLBv7Q-concept-accurate-foot-placement-and-balance-reviewed
+      evidence_type: explanation
+      excerpt: Matching foot placement and body balance to the ball's distance so the stroke can be made from
+        a stable, workable position.
+      reason: The speaker directly ties spacing problems to footwork and body positioning, and says correct
+        distance is required for comfortable, efficient shots.
+      confidence: 0.91
+      visual_status: transcript_inferred
+      review_status: unreviewed
+      source:
+        video_id: XBi28mLBv7Q
+        start_ms: 139133
+        end_ms: 157200
+        url: https://www.youtube.com/watch?v=XBi28mLBv7Q&t=139s
+        segment_ids:
+        - XBi28mLBv7Q:00021
+        - XBi28mLBv7Q:00023
+    - id: PsZfazXZXEA-concept-accurate-foot-placement-and-balance-reviewed
+      evidence_type: definition
+      excerpt: Use a balanced stance with feet not too wide and with the right foot brought forward to support
+        rotation and control.
+      reason: The speaker gives a specific foot-distance guideline and says too-wide stance harms rotation.
+      confidence: 0.93
+      visual_status: transcript_inferred
+      review_status: unreviewed
+      source:
+        video_id: PsZfazXZXEA
+        start_ms: 228300
+        end_ms: 244366
+        url: https://www.youtube.com/watch?v=PsZfazXZXEA&t=228s
+        segment_ids:
+        - PsZfazXZXEA:00046
+        - PsZfazXZXEA:00049
+    - id: ec-XHw2Locs-concept-accurate-foot-placement-and-balance-reviewed
+      evidence_type: explanation
+      excerpt: Place the feet precisely and keep the body balanced so the contact point and loop mechanics
+        work correctly.
+      reason: The right foot is described as measuring the exact position and locking in one racket length
+        from the peak of the ball.
+      confidence: 0.98
+      visual_status: not_visual
+      review_status: unreviewed
+      source:
+        video_id: ec-XHw2Locs
+        start_ms: 126400
+        end_ms: 153320
+        url: https://www.youtube.com/watch?v=ec-XHw2Locs&t=126s
+        segment_ids:
+        - ec-XHw2Locs:00054
+        - ec-XHw2Locs:00055
+        - ec-XHw2Locs:00060
+        - ec-XHw2Locs:00061
+        - ec-XHw2Locs:00062
+        - ec-XHw2Locs:00063
+        - ec-XHw2Locs:00064
+    - id: spoumRQdZHc-concept-accurate-foot-placement-and-balance-reviewed
+      evidence_type: explanation
+      excerpt: Keeping the left foot in front of the right for a right-handed player, with a balanced stagger
+        that avoids blocking rotation or losing transition ability.
+      reason: The speaker explains that the left foot should be in front, the right foot should stay behind,
+        and that excessive or insufficient stagger harms rotation and backhand transition.
+      confidence: 0.97
+      visual_status: transcript_inferred
+      review_status: unreviewed
+      source:
+        video_id: spoumRQdZHc
+        start_ms: 23866
+        end_ms: 48533
+        url: https://www.youtube.com/watch?v=spoumRQdZHc&t=23s
+        segment_ids:
+        - spoumRQdZHc:00004
+        - spoumRQdZHc:00006
+        - spoumRQdZHc:00007
+    - id: 2DXviJQOA5M-concept-accurate-foot-placement-and-balance-codex-reviewed
+      evidence_type: explanation
+      excerpt: If your stance sways, your hand movements will too. When playing, your feet should be shoulder
+        width apart. The width between your feet should align with your shoulders for stability. Stabilize
+        your legs for better utilization of the hips.
+      reason: This contiguous span directly explains that stance stability affects hand movement, feet should
+        be shoulder-width apart, and the legs should be stabilized.
+      confidence: 0.99
+      visual_status: transcript_inferred
+      review_status: approved
+      source:
+        video_id: 2DXviJQOA5M
+        start_ms: 459600
+        end_ms: 482080
+        url: https://www.youtube.com/watch?v=2DXviJQOA5M&t=459s
+        segment_ids:
+        - 2DXviJQOA5M:00058
+        - 2DXviJQOA5M:00059
+        - 2DXviJQOA5M:00060
+    - id: mWehvleIbTk-concept-accurate-foot-placement-and-balance-codex-reviewed
+      evidence_type: explanation
+      excerpt: For a backhand loop against backspin, stay low, avoid having the left foot forward and right
+        foot back, and consider placing the right foot slightly forward because it can help generate power and
+        create space on the backhand side.
+      reason: This contiguous 19.9-second span directly explains foot placement for the backhand loop against
+        backspin, including the prohibited left-foot-forward stance, the suggested right-foot-forward
+        position, and the need to create space. It matches the existing durable concept.
+      confidence: 0.97
+      visual_status: transcript_inferred
+      review_status: approved
+      source:
+        video_id: mWehvleIbTk
+        start_ms: 15766
+        end_ms: 39633
+        url: https://www.youtube.com/watch?v=mWehvleIbTk&t=15s
+        segment_ids:
+        - mWehvleIbTk:00003
+        - mWehvleIbTk:00004
+        - mWehvleIbTk:00005
+        - mWehvleIbTk:00006
+        - mWehvleIbTk:00007
+        - mWehvleIbTk:00008
+    - id: PCRCB9FGBPg-concept-accurate-foot-placement-and-balance-codex-reviewed
+      evidence_type: explanation
+      excerpt: Use small steps with either foot and adjust your feet to the serve's placement; if the ball is
+        short, step in.
+      reason: These contiguous segments directly explain using small, placement-based foot adjustments and
+        stepping in to reach a short ball, matching the existing concept of accurate foot placement for
+        effective positioning.
+      confidence: 0.98
+      visual_status: transcript_inferred
+      review_status: approved
+      source:
+        video_id: PCRCB9FGBPg
+        start_ms: 143100
+        end_ms: 159333
+        url: https://www.youtube.com/watch?v=PCRCB9FGBPg&t=143s
+        segment_ids:
+        - PCRCB9FGBPg:00029
+        - PCRCB9FGBPg:00030
+- concept_id: concept-active-block
+  reviewed_at: '2026-10-14T15:00:42.988854+00:00'
+  reason: 'Full article audit: source-specific prose and unsupported classifications/relations/timing repaired;
+    every unit rechecked.'
+  previous_concept:
+    id: concept-active-block
+    slug: active-block
+    label: Active block
+    aliases:
+    - punch block
+    - firm block
+    short_definition: Turn a passive block into a controlled counter by stabilizing the grip and adding
+      compact forearm movement.
+    evidence_summary: >-
+      An active block is a pressing defensive action that makes the return more threatening by sending
+      the forearm forward through the racket path instead of simply absorbing the ball. The same
+      motion applies on both forehand and backhand, with the key being forearm displacement over about
+      one racket length and a firm grip when facing heavy spin. A soft grip can leave the block long,
+      while a tighter, controlled contact can add quality and, when needed, turn the block into a
+      punch-block for an early, finishing return.
+    evidence_summary_source_hash: sha256:71e435df7fafd8a1ed78dc0c9c4cb3d1c64a7eefde91c022504a49690e617980
+    evidence_summary_generator: codex
+    concept_type: block-variation
+    facets:
+      category:
+      - stroke
+      side:
+      - neutral
+      level:
+      - intermediate
+    difficulty: intermediate
+    review_status: approved
+    evidence:
+    - id: etKOmktKw1k-candidate-active-block-with-forearm-displacement-1
+      evidence_type: explanation
+      excerpt: An active blocking action that improves return quality by moving the forearm forward through
+        the ball, with a slight downward-pressing feel, using about one racket length of displacement rather
+        than wrist flick or upper-arm swing.
+      reason: The speaker introduces a method to make defense more threatening by pressing with the forearm
+        and moving it forward through the racket path.
+      confidence: 0.95
+      visual_status: transcript_inferred
+      review_status: approved
+      source:
+        video_id: etKOmktKw1k
+        start_ms: 374000
+        end_ms: 403840
+        url: https://www.youtube.com/watch?v=etKOmktKw1k&t=374s
+        segment_ids: &id001
+        - etKOmktKw1k:00134
+        - etKOmktKw1k:00135
+        - etKOmktKw1k:00136
+        - etKOmktKw1k:00137
+        - etKOmktKw1k:00138
+        - etKOmktKw1k:00139
+        - etKOmktKw1k:00140
+        - etKOmktKw1k:00141
+        - etKOmktKw1k:00142
+        - etKOmktKw1k:00143
+        - etKOmktKw1k:00144
+    - id: etKOmktKw1k-candidate-active-block-with-forearm-displacement-2
+      evidence_type: explanation
+      excerpt: An active blocking action that improves return quality by moving the forearm forward through
+        the ball, with a slight downward-pressing feel, using about one racket length of displacement rather
+        than wrist flick or upper-arm swing.
+      reason: The speaker specifies that the motion is the same on forehand and backhand, covers roughly one
+        racket length, and must come from forearm displacement rather than wrist or upper arm.
+      confidence: 0.95
+      visual_status: transcript_inferred
+      review_status: approved
+      source:
+        video_id: etKOmktKw1k
+        start_ms: 407680
+        end_ms: 437680
+        url: https://www.youtube.com/watch?v=etKOmktKw1k&t=407s
+        segment_ids:
+        - etKOmktKw1k:00145
+        - etKOmktKw1k:00146
+        - etKOmktKw1k:00147
+        - etKOmktKw1k:00148
+        - etKOmktKw1k:00149
+        - etKOmktKw1k:00150
+        - etKOmktKw1k:00151
+        - etKOmktKw1k:00152
+        - etKOmktKw1k:00153
+        - etKOmktKw1k:00154
+        - etKOmktKw1k:00155
+    - id: etKOmktKw1k-candidate-active-block-with-forearm-displacement-3
+      evidence_type: explanation
+      excerpt: An active blocking action that improves return quality by moving the forearm forward through
+        the ball, with a slight downward-pressing feel, using about one racket length of displacement rather
+        than wrist flick or upper-arm swing.
+      reason: The speaker specifies that the motion is the same on forehand and backhand, covers roughly one
+        racket length, and must come from forearm displacement rather than wrist or upper arm.
+      confidence: 0.95
+      visual_status: transcript_inferred
+      review_status: approved
+      source:
+        video_id: etKOmktKw1k
+        start_ms: 435320
+        end_ms: 457240
+        url: https://www.youtube.com/watch?v=etKOmktKw1k&t=435s
+        segment_ids:
+        - etKOmktKw1k:00156
+        - etKOmktKw1k:00157
+        - etKOmktKw1k:00158
+        - etKOmktKw1k:00159
+        - etKOmktKw1k:00160
+        - etKOmktKw1k:00161
+        - etKOmktKw1k:00162
+    - id: etKOmktKw1k-candidate-firm-grip-for-blocking-heavy-spin-1
+      evidence_type: explanation
+      excerpt: When blocking heavy topspin, the racket must be held firmly so the player can resist and
+        control the incoming spin; a soft grip makes blocks float long.
+      reason: The speaker directly teaches firm grip as necessary for controlling heavy spin in blocking and
+        identifies a soft grip as the cause of long blocks.
+      confidence: 0.95
+      visual_status: transcript_inferred
+      review_status: approved
+      source:
+        video_id: etKOmktKw1k
+        start_ms: 455040
+        end_ms: 483120
+        url: https://www.youtube.com/watch?v=etKOmktKw1k&t=455s
+        segment_ids:
+        - etKOmktKw1k:00163
+        - etKOmktKw1k:00164
+        - etKOmktKw1k:00165
+        - etKOmktKw1k:00166
+        - etKOmktKw1k:00167
+        - etKOmktKw1k:00168
+        - etKOmktKw1k:00169
+        - etKOmktKw1k:00170
+        - etKOmktKw1k:00171
+    - id: etKOmktKw1k-candidate-firm-grip-for-blocking-heavy-spin-2
+      evidence_type: explanation
+      excerpt: When blocking heavy topspin, the racket must be held firmly so the player can resist and
+        control the incoming spin; a soft grip makes blocks float long.
+      reason: The speaker directly teaches firm grip as necessary for controlling heavy spin in blocking and
+        identifies a soft grip as the cause of long blocks.
+      confidence: 0.95
+      visual_status: transcript_inferred
+      review_status: approved
+      source:
+        video_id: etKOmktKw1k
+        start_ms: 481400
+        end_ms: 492000
+        url: https://www.youtube.com/watch?v=etKOmktKw1k&t=481s
+        segment_ids:
+        - etKOmktKw1k:00172
+        - etKOmktKw1k:00173
+        - etKOmktKw1k:00174
+        - etKOmktKw1k:00175
+    - id: oLxdGO8TY8s-cand-10-reviewed
+      evidence_type: definition
+      excerpt: A defensive blocking shot that goes forward and slightly downward without pulling the arm back,
+        using no backswing.
+      reason: The speaker names a pressing block, explains the forward-downward motion, and contrasts it with
+        other defensive shots.
+      confidence: 0.91
+      visual_status: transcript_inferred
+      review_status: unreviewed
+      source:
+        video_id: oLxdGO8TY8s
+        start_ms: 684520
+        end_ms: 706200
+        url: https://www.youtube.com/watch?v=oLxdGO8TY8s&t=684s
+        segment_ids:
+        - oLxdGO8TY8s:00268
+        - oLxdGO8TY8s:00269
+        - oLxdGO8TY8s:00271
+        - oLxdGO8TY8s:00272
+        - oLxdGO8TY8s:00273
+        - oLxdGO8TY8s:00274
+        - oLxdGO8TY8s:00275
+    - id: kv80YX__eJE-concept-active-block-reviewed
+      evidence_type: definition
+      excerpt: A compact offensive backhand block/punch used on flatter or softer balls to produce a direct,
+        stable shot with power.
+      reason: The speaker describes the punch as the basic response to a soft, flat ball and as an offensive
+        backhand.
+      confidence: 0.96
+      visual_status: transcript_inferred
+      review_status: unreviewed
+      source:
+        video_id: kv80YX__eJE
+        start_ms: 20966
+        end_ms: 41200
+        url: https://www.youtube.com/watch?v=kv80YX__eJE&t=20s
+        segment_ids:
+        - kv80YX__eJE:00005
+        - kv80YX__eJE:00009
+    - id: wd_E9NZBVtU-concept-active-block-reviewed
+      evidence_type: definition
+      excerpt: A proactive block that adds forward force or punch instead of merely absorbing the incoming
+        ball.
+      reason: The speaker contrasts passive blocking with keeping the hand in front and punch-blocking for a
+        winner, especially when taking the ball early.
+      confidence: 0.99
+      visual_status: transcript_inferred
+      review_status: unreviewed
+      source:
+        video_id: wd_E9NZBVtU
+        start_ms: 347533
+        end_ms: 374733
+        url: https://www.youtube.com/watch?v=wd_E9NZBVtU&t=347s
+        segment_ids:
+        - wd_E9NZBVtU:00078
+        - wd_E9NZBVtU:00080
+        - wd_E9NZBVtU:00081
+        - wd_E9NZBVtU:00083
+    - id: 6Xx11I8CB9M-concept-active-block-reviewed
+      evidence_type: explanation
+      excerpt: A defensive block that adds a small amount of forward engagement or forearm input instead of a
+        passive touch.
+      reason: The speaker describes adding quality with a controlled block and only a slight forearm
+        engagement when needed.
+      confidence: 0.89
+      visual_status: transcript_inferred
+      review_status: unreviewed
+      source:
+        video_id: 6Xx11I8CB9M
+        start_ms: 304733
+        end_ms: 312066
+        url: https://www.youtube.com/watch?v=6Xx11I8CB9M&t=304s
+        segment_ids:
+        - 6Xx11I8CB9M:00058
+    - id: 6Xx11I8CB9M-concept-active-block-reviewed-514e8997
+      evidence_type: explanation
+      excerpt: A defensive block that adds a small amount of forward engagement or forearm input instead of a
+        passive touch.
+      reason: The speaker describes adding quality with a controlled block and only a slight forearm
+        engagement when needed.
+      confidence: 0.89
+      visual_status: transcript_inferred
+      review_status: unreviewed
+      source:
+        video_id: 6Xx11I8CB9M
+        start_ms: 304733
+        end_ms: 312066
+        url: https://www.youtube.com/watch?v=6Xx11I8CB9M&t=304s
+        segment_ids:
+        - 6Xx11I8CB9M:00058
+    - id: sklepyRctyI-concept-active-block-reviewed
+      evidence_type: definition
+      excerpt: A proactive blocking action rather than a passive touch, using a controlled block to end or
+        redirect the ball.
+      reason: The speaker explicitly says to perform an active block and actively block during the
+        demonstration.
+      confidence: 0.99
+      visual_status: transcript_inferred
+      review_status: unreviewed
+      source:
+        video_id: sklepyRctyI
+        start_ms: 633440
+        end_ms: 648640
+        url: https://www.youtube.com/watch?v=sklepyRctyI&t=633s
+        segment_ids:
+        - sklepyRctyI:00089
+        - sklepyRctyI:00090
+    - id: q70a9LCojco-concept-blocking-is-interception-and-redirection-reviewed
+      evidence_type: definition
+      excerpt: Blocking is framed as intercepting and redirecting the ball rather than trying to counter-hit
+        it with a full offensive stroke.
+      reason: The speaker states this as the core definition of defense at the end of the explanation.
+      confidence: 0.94
+      visual_status: transcript_inferred
+      review_status: unreviewed
+      source:
+        video_id: q70a9LCojco
+        start_ms: 818966
+        end_ms: 824400
+        url: https://www.youtube.com/watch?v=q70a9LCojco&t=818s
+        segment_ids:
+        - q70a9LCojco:00178
+    - id: rR9HWla28Sc-concept-active-block-reviewed
+      evidence_type: definition
+      excerpt: A proactive blocking action that meets the ball early with firmness and a short, compact motion
+        rather than passive touch.
+      reason: The speaker defines the correct response to power and spinny loops as blocking or punching with
+        a compact motion, and contrasts it with slower, passive contact.
+      confidence: 0.93
+      visual_status: not_visual
+      review_status: unreviewed
+      source:
+        video_id: rR9HWla28Sc
+        start_ms: 340866
+        end_ms: 353500
+        url: https://www.youtube.com/watch?v=rR9HWla28Sc&t=340s
+        segment_ids:
+        - rR9HWla28Sc:00071
+        - rR9HWla28Sc:00072
+        - rR9HWla28Sc:00073
+    - id: qr632K778Cc-concept-punch-block-reviewed
+      evidence_type: definition
+      excerpt: A compact defensive shot against spinny loops that is hit with a firm wrist and racket angle,
+        but is less stable than a counter-drive.
+      reason: The speaker names punch-block repeatedly, explains it as one of the defensive types, and
+        describes its mechanics and stability.
+      confidence: 0.92
+      visual_status: transcript_inferred
+      review_status: unreviewed
+      source:
+        video_id: qr632K778Cc
+        start_ms: 591433
+        end_ms: 604466
+        url: https://www.youtube.com/watch?v=qr632K778Cc&t=591s
+        segment_ids:
+        - qr632K778Cc:00123
+        - qr632K778Cc:00124
+        - qr632K778Cc:00125
+        - qr632K778Cc:00126
+    - id: qr632K778Cc-concept-passive-block-reviewed
+      evidence_type: definition
+      excerpt: A defensive block that absorbs and redirects the opponent's pace without generating much own
+        power.
+      reason: The speaker directly defines passive block and explains that it absorbs and redirects energy
+        rather than generating power.
+      confidence: 0.91
+      visual_status: transcript_inferred
+      review_status: unreviewed
+      source:
+        video_id: qr632K778Cc
+        start_ms: 57733
+        end_ms: 78000
+        url: https://www.youtube.com/watch?v=qr632K778Cc&t=57s
+        segment_ids:
+        - qr632K778Cc:00013
+        - qr632K778Cc:00015
+        - qr632K778Cc:00016
+    - id: XWV_G9VPqL8-concept-active-block-reviewed
+      evidence_type: definition
+      excerpt: A proactive blocking response that presses forward and down rather than simply soft-blocking.
+      reason: The speaker recommends the press-down block as the most reliable option and explains it as
+        pressing forward and down with the forearm.
+      confidence: 0.95
+      visual_status: transcript_inferred
+      review_status: unreviewed
+      source:
+        video_id: XWV_G9VPqL8
+        start_ms: 255800
+        end_ms: 274633
+        url: https://www.youtube.com/watch?v=XWV_G9VPqL8&t=255s
+        segment_ids:
+        - XWV_G9VPqL8:00045
+        - XWV_G9VPqL8:00047
+    relations:
+    - relation_type: variation_of
+      target_concept_id: concept-block-trajectory-and-placement
+      sources:
+      - video_id: etKOmktKw1k
+        start_ms: 374000
+        end_ms: 403840
+        url: https://www.youtube.com/watch?v=etKOmktKw1k&t=374s
+        segment_ids: *id001
+      confidence: 0.9
+      review_status: approved
+- concept_id: concept-adapt-racket-angle-to-the-incoming-ball
+  reviewed_at: '2026-10-14T15:00:42.994856+00:00'
+  reason: 'Full article audit: source-specific prose and unsupported classifications/relations/timing repaired;
+    every unit rechecked.'
+  previous_concept:
+    id: concept-adapt-racket-angle-to-the-incoming-ball
+    slug: adapt-racket-angle-to-the-incoming-ball
+    label: Adapt racket angle to the incoming ball
+    aliases: []
+    short_definition: 'In looping, change the racket angle according to the incoming ball: point the racket head
+      sideways against topspin and down against backspin.'
+    evidence_summary: >-
+      Adapt racket angle to the incoming ball brings together several connected ideas. During loops,
+      the racket angle should adapt to the incoming spin: a topspin ball calls for a sideways-pointing
+      racket head, while a backspin ball calls for a downward-pointing racket head. Together, these
+      principles show how the topic is applied in practice while preserving the relevant distinctions
+      and constraints.
+    evidence_summary_source_hash: sha256:87b5a42b5d2a77e8a3b89de7abfdfb99ef58a63f35ff7f7b972b442fc4376cab
+    evidence_summary_generator: deterministic
+    concept_type: stroke
+    facets:
+      category:
+      - stroke
+      spin:
+      - topspin
+      - backspin
+    difficulty:
+    review_status: approved
+    generated_by:
+      processor: codex_semantic_adjudication
+      version: 1.0.0
+      input_hash: sha256:7a1e77a9ed7cfcecd07beb199aacc7fc9ef8ffe0417e94017d2adaf6cffcc1c7
+      model: gpt-5.6-luna
+      reasoning_effort: low
+      prompt_version: 1.1.0
+      schema_version: 1.0.0
+    evidence:
+    - id: tFXmtu4Egw8-concept-adapt-racket-angle-to-incoming-ball-codex-reviewed
+      evidence_type: explanation
+      excerpt: 'Change the racket angle according to the incoming ball: for a topspin loop, the racket head points
+        sideways; for a backspin loop, it points down.'
+      reason: 'During loops, the racket angle should adapt to the incoming spin: a topspin ball calls for a sideways-pointing
+        racket head, while a backspin ball calls for a downward-pointing racket head.'
+      confidence: 0.96
+      visual_status: not_visual
+      review_status: approved
+      source:
+        video_id: tFXmtu4Egw8
+        start_ms: 267566
+        end_ms: 284000
+        url: https://www.youtube.com/watch?v=tFXmtu4Egw8&t=267s
+        segment_ids:
+        - tFXmtu4Egw8:00048
+        - tFXmtu4Egw8:00049

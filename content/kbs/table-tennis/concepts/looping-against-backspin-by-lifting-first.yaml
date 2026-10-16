@@ -7,19 +7,9 @@ aliases:
   - combine force on backspin
 short_definition: Against a dropping backspin ball, intercept from underneath, use fingers to lift and counter the spin first, then add power to loop.
 evidence_summary: >-
-  Looping against backspin by lifting first brings together several connected ideas. A backspin
-  ball drops rapidly and must be countered with fingers before power looping. The sequence
-  directly: impact first to neutralize spin, then brush the ball. To wait for the ball to drop
-  from its highest point and the best hitting point is the initial descent. Heavy spin requires
-  waiting, brushing, crouching lower, and generating upward force to loop it up. Below-net balls
-  require the racket to start lower than the ball and gives lifting a low backspin push as the
-  example. Heavy backspin demands lifting while maintaining solid contact and not merely grazing
-  the ball. Against heavy backspin, the correct choice is to loop with heavy topspin using the
-  opponent's spin, not power looping. To meet the ball firmly, drive it forward, and then brush
-  upward to create the arc. Additional points reinforce the same theme. Together, these principles
-  show how the topic is applied in practice while preserving the relevant distinctions and
-  constraints.
-evidence_summary_source_hash: "sha256:4157ce9aadfb03bf314b370d1fe3d7e9e248ded5bf2861576ebfa0e821d79c1f"
+  Against a dropping backspin ball, intercept from underneath, use fingers to lift and counter the
+  spin first, then add power to loop.
+evidence_summary_source_hash: "sha256:95b4b49c5d98639951b5e5ba4170cc95194a2bf00a71b512f1b363609acc9f92"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -38,10 +28,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: b0ea361b3ca5bce32b35821a79e5b397b2c4a3c35c83a9681c090610940230a4
-  prompt_version: candidate-review-v1
+  input_hash: sha256:b6e21ef50650d6ef4afc88a7c905a26bb83e177e0e8e25a7f8ec8b2436b38fe2
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: EIlmaLc-eFw-concept-backspin-loop-lift-reviewed
     evidence_type: explanation
@@ -49,7 +42,7 @@ evidence:
     reason: The speaker says a backspin ball drops rapidly and must be countered with fingers before power looping.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: EIlmaLc-eFw
       start_ms: 457120
@@ -69,7 +62,7 @@ evidence:
     reason: Meeting the ball head-on with a flat loop goes into the net; the motion must go low to high.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: AGLSC40_5dw
       start_ms: 28600
@@ -85,7 +78,7 @@ evidence:
     reason: The correction is to lower the center of gravity and brush forward while staying above the table, which is the described lifting-into-topspin handling pattern.
     confidence: 0.91
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: HWy3VGWHE5Q
       start_ms: 474666
@@ -103,7 +96,7 @@ evidence:
     reason: 'The speaker states the sequence directly: impact first to neutralize spin, then brush the ball.'
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: PEpV_p4-Lx8
       start_ms: 173066
@@ -119,7 +112,7 @@ evidence:
     reason: The speaker explicitly says looping against backspin uses a take-off curve, describes backspin as a take-off curve, and says very low balls require fully using that curve.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: xXz9BRSdSsk
       start_ms: 33366
@@ -135,7 +128,7 @@ evidence:
     reason: The speaker explains that spin and loop power come from borrowing the ball's downward force and combining it with an upward swing.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 5g8d38gLuq8
       start_ms: 199840
@@ -155,7 +148,7 @@ evidence:
     reason: The speaker explicitly says to wait for the ball to drop from its highest point and states that the best hitting point is the initial descent.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 6Lw_HobLgSY
       start_ms: 73733
@@ -171,7 +164,7 @@ evidence:
     reason: The speaker explains that with a very spinny ball, the hand should be low to lift the trajectory and handle the ball appropriately.
     confidence: 0.87
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 15ElcVXEJVU
       start_ms: 911233
@@ -189,7 +182,7 @@ evidence:
     reason: The speaker says that for backspin the body's center of gravity must go down first and the stroke must create an outer arc.
     confidence: 0.91
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 00GaHkH4rfQ
       start_ms: 769500
@@ -203,7 +196,7 @@ evidence:
     reason: The transcript explicitly says heavy spin requires waiting, brushing, crouching lower, and generating upward force to loop it up.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 02wQgAIcHKY
       start_ms: 107066
@@ -220,7 +213,7 @@ evidence:
     reason: The speaker says the first solution is to get the racket below the ball and lift it up.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: NvQgMvevIPY
       start_ms: 40466
@@ -235,7 +228,7 @@ evidence:
     reason: The speaker explains that below-net balls require the racket to start lower than the ball and gives lifting a low backspin push as the example.
     confidence: 0.89
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: OQ7fB6yS8Fk
       start_ms: 498400
@@ -251,7 +244,7 @@ evidence:
     reason: The transcript says to attack on the rise, create the arc, and use the opponent's pace to loop fast backspin effectively.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: p-8pxqMG0kw
       start_ms: 641866
@@ -269,7 +262,7 @@ evidence:
     reason: Describes lifting a dropping backspin ball from below, combining brushing with forward drive, and sending it back with a matching arc.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: krlH8_UzRRM
       start_ms: 234066
@@ -287,7 +280,7 @@ evidence:
     reason: The speaker explains that heavy backspin demands lifting while maintaining solid contact and not merely grazing the ball.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: z8-8IXQ-GaU
       start_ms: 474300
@@ -306,7 +299,7 @@ evidence:
     reason: The correction is to keep the elbow and forearm up to create arc, then get under the ball and lift forward to clear the net.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: iae3EAgyUXU
       start_ms: 773000
@@ -322,7 +315,7 @@ evidence:
     reason: The speaker teaches that against heavy backspin you should not force power, but use a compact motion, wrist and fingers, and a quick lift/carry over the net.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: VR1gORHDMeQ
       start_ms: 441466
@@ -337,7 +330,7 @@ evidence:
     reason: The speaker explains that against heavy backspin, the correct choice is to loop with heavy topspin using the opponent's spin, not power looping.
     confidence: 0.94
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 4hnrmSJ_Ayg
       start_ms: 151000
@@ -356,7 +349,7 @@ evidence:
     reason: The speaker says that against heavy chop you should open the racket angle and push forward, because trying to lift upward sends the ball into the net.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: D02EFJijJiU
       start_ms: 494900
@@ -373,7 +366,7 @@ evidence:
     reason: The speaker explicitly says a powerful leg drive is appropriate for looping against backspin and that backspin requires more vertical lift.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: czp2jsURYQk
       start_ms: 392866
@@ -388,7 +381,7 @@ evidence:
     reason: The speaker says to meet the ball firmly, drive it forward, and then brush upward to create the arc.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: wytyHpyZr9A
       start_ms: 841800
@@ -397,3 +390,34 @@ evidence:
       segment_ids:
         - wytyHpyZr9A:00135
         - wytyHpyZr9A:00136
+  - id: czp2jsURYQk-concept-looping-against-backspin-by-lifting-first-codex-reviewed
+    evidence_type: explanation
+    excerpt: Against heavy backspin, you need more vertical lift, which comes from a powerful “ground-up” leg drive.
+    reason: This contiguous transcript segment directly explains that heavy backspin requires more vertical lift produced by a ground-up leg drive, matching the existing concept.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: czp2jsURYQk
+      start_ms: 405433
+      end_ms: 419466
+      url: https://www.youtube.com/watch?v=czp2jsURYQk&t=405s
+      segment_ids:
+        - czp2jsURYQk:00114
+  - id: krlH8_UzRRM-concept-looping-against-backspin-by-lifting-first-codex-reviewed
+    evidence_type: definition
+    excerpt: The ball is dropping, so I should swing forward and upward. If your brushing force doesn't overcome the backspin, you'll hit the net. As it drops, if I match my swing to its trajectory, I can sync up with the ball's power. I don't need much brushing; the ball will lift over the net.
+    reason: This contiguous span directly describes lifting a dropping backspin ball with a forward-and-upward swing and sufficient brushing force to clear the net.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: krlH8_UzRRM
+      start_ms: 199766
+      end_ms: 219166
+      url: https://www.youtube.com/watch?v=krlH8_UzRRM&t=199s
+      segment_ids:
+        - krlH8_UzRRM:00047
+        - krlH8_UzRRM:00048
+        - krlH8_UzRRM:00049
+        - krlH8_UzRRM:00050

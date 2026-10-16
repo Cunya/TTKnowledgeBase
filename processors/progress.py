@@ -7,7 +7,7 @@ from datetime import UTC, datetime
 
 from .inventory import build_inventory_ledger
 from .models import PublishCorpus
-from .pipeline import load_videos
+from .pipeline import load_reviewed_concepts, load_videos
 from .utils import read_json, read_yaml, write_json
 from .workspace import KnowledgeBasePaths
 
@@ -104,6 +104,15 @@ def build_progress_report(paths: KnowledgeBasePaths, corpus: PublishCorpus) -> d
     source_discovered = _discovery_counts(paths, sources)
 
     normalized_videos = load_videos(paths.data("normalized"))
+    canonical_concepts = load_reviewed_concepts(paths.content / "concepts")
+    quarantined_concepts = [
+        concept for concept in canonical_concepts if concept.review_status == "unreviewed"
+    ]
+    quarantined_evidence = sum(
+        evidence.review_status == "unreviewed"
+        for concept in canonical_concepts
+        for evidence in concept.evidence
+    )
     normalized_ids = {video.id for video in normalized_videos}
     derived_ids = {
         path.name.removesuffix(".candidates.json")
@@ -157,7 +166,7 @@ def build_progress_report(paths: KnowledgeBasePaths, corpus: PublishCorpus) -> d
             video_id
             for video_id in extracted_ids
             if queue_by_video[video_id] and all(
-                item.get("decision") in {"accepted", "rejected", "human_review"}
+                item.get("decision") in {"accepted", "rejected"}
                 for item in queue_by_video[video_id]
             )
         }
@@ -240,11 +249,24 @@ def build_progress_report(paths: KnowledgeBasePaths, corpus: PublishCorpus) -> d
     inventory = build_inventory_ledger(paths, corpus)
     latest_path = paths.data("manifests") / "cp.latest.json"
     latest = read_json(latest_path) if latest_path.exists() else {}
+    public_snapshot = {
+        "concepts": len(corpus.concepts),
+        "videos": len(corpus.videos),
+        "evidence_moments": sum(len(concept.evidence) for concept in corpus.concepts),
+        "generated_at": corpus.generated_at.isoformat(),
+    }
     return {
         "schema_version": 2,
         "knowledge_base": paths.id,
         "generated_at": corpus.generated_at.isoformat(),
         "totals": totals,
+        "public_snapshot": public_snapshot,
+        "quarantined_history": {
+            "concepts": len(quarantined_concepts),
+            "evidence_moments": quarantined_evidence,
+        },
+        "canonical_concept_files": len(canonical_concepts),
+        "last_successful_publish_at": corpus.generated_at.isoformat(),
         "sources": records,
         "members_only_ids": sorted(inaccessible_ids),
         "inventory": inventory["summary"],

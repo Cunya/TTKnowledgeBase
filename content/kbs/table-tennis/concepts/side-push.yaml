@@ -6,11 +6,9 @@ aliases:
   - side push to neutralize spin
 short_definition: A push receive that contacts the side of the ball and sends the force sideways, usually with a slightly open racket angle, to handle spin-heavy or awkward balls.
 evidence_summary: >-
-  Side push brings together several connected ideas. The side push, where to contact the ball, and
-  how it is directed using the wrist. Downward pushes from sideways pushes and equates the
-  sideways version with short sidespin serve-like action. Together, these principles show how the
-  topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:b9153f0a65ac5a869ab5ff0bcee1254229fb5c250c7995180b2eaf06adfb9ac0"
+  A push receive that contacts the side of the ball and sends the force sideways, usually with a
+  slightly open racket angle, to handle spin-heavy or awkward balls.
+evidence_summary_source_hash: "sha256:4d8f07c532dfa30cb749e7b9c9d6d8b2e4bc405b6b813a482fdbb0ec159a9ddb"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -26,10 +24,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 5cff4d1f7fb0a106d6a49189db7b7d7e208ef8d36bdcd17225b4274160b5d9a3
-  prompt_version: candidate-review-v1
+  input_hash: sha256:08d9a6e730a2d3681a71bc93e17c4726bd24c2268cd23e580aceefb06e19e940
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: ezGVESU0Rp0-concept-side-push-reviewed
     evidence_type: definition
@@ -37,7 +38,7 @@ evidence:
     reason: The speaker defines the side push, where to contact the ball, and how it is directed using the wrist.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ezGVESU0Rp0
       start_ms: 330833
@@ -53,7 +54,7 @@ evidence:
     reason: The speaker explicitly distinguishes downward pushes from sideways pushes and equates the sideways version with short sidespin serve-like action.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Xho60DR74X0
       start_ms: 307400
@@ -64,3 +65,22 @@ evidence:
         - Xho60DR74X0:00064
         - Xho60DR74X0:00065
         - Xho60DR74X0:00066
+  - id: ezGVESU0Rp0-concept-side-push-codex-reviewed
+    evidence_type: definition
+    excerpt: The side push is especially effective against left-sidespin. Contact the ball on its right side and brush it sideways.
+    reason: This contiguous 29.3-second span directly introduces the side push, identifies its sidespin use, specifies the contact area, and describes the sideways brushing action.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ezGVESU0Rp0
+      start_ms: 330833
+      end_ms: 360133
+      url: https://www.youtube.com/watch?v=ezGVESU0Rp0&t=330s
+      segment_ids:
+        - ezGVESU0Rp0:00070
+        - ezGVESU0Rp0:00071
+        - ezGVESU0Rp0:00072
+        - ezGVESU0Rp0:00073
+        - ezGVESU0Rp0:00074
+        - ezGVESU0Rp0:00075

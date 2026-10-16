@@ -6,11 +6,9 @@ aliases:
   - optimal stopping point
 short_definition: The exact endpoint where the stroke should stop based on distance from the table to maximize consistency and avoid errors.
 evidence_summary: >-
-  Swing stopping point brings together several connected ideas. Stopping the stroke as the most
-  critical point and the correct finish depends on distance from the table and ball type.
-  Together, these principles show how the topic is applied in practice while preserving the
-  relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:022da64fd9543f4bd172b615d071f9547631f7b19a1a48f3aa837902cc489f9a"
+  The exact endpoint where the stroke should stop based on distance from the table to maximize
+  consistency and avoid errors.
+evidence_summary_source_hash: "sha256:53c0b3825ca6d5f4b36bb7edd4a9d56001f53f2fe03e89d833426ea025066add"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -22,10 +20,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 789bff0484ff3302905b1cc566f2139e2893a0232a70ef16fd9057c4a95fef60
-  prompt_version: candidate-review-v1
+  input_hash: sha256:ea03e7b973ebc74b0fd571be2b623afae04cd058fde6b55a899b5d25184103fc
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: 1Issn-5noM4-concept-swing-stopping-point-reviewed
     evidence_type: explanation
@@ -33,7 +34,7 @@ evidence:
     reason: The speaker identifies stopping the stroke as the most critical point and says the correct finish depends on distance from the table and ball type.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 1Issn-5noM4
       start_ms: 665066
@@ -45,3 +46,23 @@ evidence:
         - 1Issn-5noM4:00157
         - 1Issn-5noM4:00158
         - 1Issn-5noM4:00159
+  - id: 1Issn-5noM4-concept-swing-stopping-point-codex-reviewed
+    evidence_type: explanation
+    excerpt: A clear stopping point is essential because failing to stop the swing at the exact point, based on distance from the table, can cause errors.
+    reason: These contiguous segments state that unclear swing endpoints cause errors and that the exact stopping point should be adjusted according to distance from the table.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 1Issn-5noM4
+      start_ms: 613166
+      end_ms: 640400
+      url: https://www.youtube.com/watch?v=1Issn-5noM4&t=613s
+      segment_ids:
+        - 1Issn-5noM4:00141
+        - 1Issn-5noM4:00142
+        - 1Issn-5noM4:00143
+        - 1Issn-5noM4:00144
+        - 1Issn-5noM4:00145
+        - 1Issn-5noM4:00146
+        - 1Issn-5noM4:00147

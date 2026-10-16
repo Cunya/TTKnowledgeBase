@@ -12,8 +12,13 @@ $LockPath = Join-Path $RunDir "daily-processing.lock"
 $ManifestPath = Join-Path $RunDir "daily-processing.latest.json"
 New-Item -ItemType Directory -Force -Path $RunDir | Out-Null
 
+$Lock = $null
 try {
-    $Lock = [System.IO.File]::Open($LockPath, [System.IO.FileMode]::CreateNew, [System.IO.FileAccess]::Write, [System.IO.FileShare]::None)
+    $Lock = [System.IO.File]::Open($LockPath, [System.IO.FileMode]::OpenOrCreate, [System.IO.FileAccess]::ReadWrite, [System.IO.FileShare]::None)
+    $Lock.SetLength(0)
+    $owner = [System.Text.Encoding]::UTF8.GetBytes("pid=$PID`nstarted=$([DateTimeOffset]::Now.ToString('o'))")
+    $Lock.Write($owner, 0, $owner.Length)
+    $Lock.Flush()
 } catch [System.IO.IOException] {
     Write-Output "Daily processing already running for $Kb; exiting."
     exit 10

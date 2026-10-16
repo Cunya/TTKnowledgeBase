@@ -48,10 +48,17 @@ class BoundaryAssessment:
     flags: tuple[str, ...]
     boundary_confidence: float
     reason: str
+    dropped_segment_ids: tuple[str, ...] = ()
+    raw_end_ms: int = 0
 
     @property
     def needs_context(self) -> bool:
         return "needs_context" in self.flags
+
+
+def caption_duration_conflicts(duration_ms: int, segments: list[Segment]) -> bool:
+    """A metadata/caption disagreement needs reconciliation, never a guessed trim."""
+    return bool(duration_ms and any(segment.end_ms > duration_ms for segment in segments))
 
 
 def _is_terminal(text: str) -> bool:
@@ -140,6 +147,7 @@ def assess_boundary(video: Video, segment_ids: list[str]) -> BoundaryAssessment 
         return None
     group = _largest_contiguous_group(selected)
     cited_ids = tuple(segment.id for segment in group)
+    dropped_ids = tuple(segment.id for segment in selected if segment.id not in cited_ids)
     start_ms = group[0].start_ms
     end_ms = min(
         group[-1].end_ms,
@@ -161,13 +169,26 @@ def assess_boundary(video: Video, segment_ids: list[str]) -> BoundaryAssessment 
         snapped_start_ms, snapped_end_ms = start_ms, end_ms
 
     flags: list[str] = []
+    if caption_duration_conflicts(video.duration_ms, selected):
+        flags.append("caption_exceeds_video_duration")
     if starts_mid_sentence:
         flags.append("starts_mid_sentence")
     if ends_mid_sentence:
         flags.append("ends_mid_sentence")
     if end_ms - start_ms < TOO_SHORT_MS:
         flags.append("too_short")
-    if any(flag in flags for flag in ("starts_mid_sentence", "ends_mid_sentence", "too_short")):
+    if dropped_ids:
+        flags.append("dispersed_citation")
+    if any(
+        flag in flags
+        for flag in (
+            "starts_mid_sentence",
+            "ends_mid_sentence",
+            "too_short",
+            "dispersed_citation",
+            "caption_exceeds_video_duration",
+        )
+    ):
         flags.append("needs_context")
 
     confidence = 1.0
@@ -175,8 +196,15 @@ def assess_boundary(video: Video, segment_ids: list[str]) -> BoundaryAssessment 
         confidence -= 0.2
     if "too_short" in flags:
         confidence -= 0.25
+    if dropped_ids:
+        confidence -= 0.35
     confidence = max(0.0, round(confidence, 2))
-    if flags:
+    if dropped_ids:
+        reason = (
+            "Caption-only review: the proposal cites multiple distant or overlong clusters; "
+            f"retaining one cluster would discard {len(dropped_ids)} cited segment(s)."
+        )
+    elif flags:
         reason = (
             f"Caption-only review: cited span is {(end_ms - start_ms) / 1000:.1f}s; "
             f"proposed complete-unit span is {(snapped_end_ms - snapped_start_ms) / 1000:.1f}s."
@@ -192,6 +220,8 @@ def assess_boundary(video: Video, segment_ids: list[str]) -> BoundaryAssessment 
         flags=tuple(flags),
         boundary_confidence=confidence,
         reason=reason,
+        dropped_segment_ids=dropped_ids,
+        raw_end_ms=max(segment.end_ms for segment in selected),
     )
 
 

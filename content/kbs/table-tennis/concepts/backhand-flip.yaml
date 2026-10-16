@@ -2,84 +2,94 @@ id: concept-backhand-flip
 slug: backhand-flip
 label: Backhand flip
 aliases:
-  - flip
-short_definition: A compact in-table backhand flick action that relies mainly on fingers and wrist, uses a small swing, and drives the ball mostly forward.
+- flip
+short_definition: A backhand flick used strategically alongside the push.
 evidence_summary: >-
-  Backhand flip brings together several connected ideas. The flip by straight forward stepping,
-  finger-and-wrist power, small swing size, and forward force direction. At the backhand baseline,
-  one can execute a thin flick return. Locked wrist, forearm-driven thrust, wrist pressed down,
-  and a downward pressing action to keep the return stable and low. Together, these principles
-  show how the topic is applied in practice while preserving the relevant distinctions and
-  constraints.
-evidence_summary_source_hash: "sha256:700955eb406a4d7489bfed493cfe28bf25800ef4e2afd1b381bc029df807b0fe"
-evidence_summary_generator: "deterministic"
+  A player questions the backhand flick’s effectiveness compared with a push; the instruction is to use the push and flick strategically together.
 concept_type: stroke
 facets:
   category:
-    - stroke
+  - stroke
   side:
-    - backhand
-  level:
-    - beginner
-difficulty: beginner
+  - backhand
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: c226acbcc15b08279b90ccdaf2028d867feb680cb1ac2edd5ce1c06d29f0d4a7
-  prompt_version: candidate-review-v1
+  input_hash: sha256:e026c1b7750166fe5573d83a04e6bf229941a2a3bcdac044ee384a9176286ab7
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: uRu7I3Cvojk-new-backhand-flip-reviewed
-    evidence_type: definition
-    excerpt: A compact in-table backhand flick action that relies mainly on fingers and wrist, uses a small swing, and drives the ball mostly forward.
-    reason: The speaker defines the flip by straight forward stepping, finger-and-wrist power, small swing size, and forward force direction.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: uRu7I3Cvojk
-      start_ms: 40966
-      end_ms: 61400
-      url: https://www.youtube.com/watch?v=uRu7I3Cvojk&t=40s
-      segment_ids:
-        - uRu7I3Cvojk:00013
-        - uRu7I3Cvojk:00018
-  - id: 2xGbue3FXIw-concept-backhand-flip-reviewed
-    evidence_type: example
-    excerpt: A quick close-table backhand receive used on serves, often with a compact flicking motion.
-    reason: The speaker explicitly says that at the backhand baseline, one can execute a thin flick return.
-    confidence: 0.86
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 2xGbue3FXIw
-      start_ms: 17875
-      end_ms: 26140
-      url: https://www.youtube.com/watch?v=2xGbue3FXIw&t=17s
-      segment_ids:
-        - 2xGbue3FXIw:00006
-        - 2xGbue3FXIw:00007
-  - id: TF56et74wQ8-candidate-push-flip-reviewed
-    evidence_type: explanation
-    excerpt: A stable flip variant that stays close, keeps the wrist locked or pressed down, and uses forearm thrust more than wrist rotation.
-    reason: The speaker repeatedly emphasizes locked wrist, forearm-driven thrust, wrist pressed down, and a downward pressing action to keep the return stable and low.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: TF56et74wQ8
-      start_ms: 695000
-      end_ms: 720880
-      url: https://www.youtube.com/watch?v=TF56et74wQ8&t=695s
-      segment_ids:
-        - TF56et74wQ8:00241
-        - TF56et74wQ8:00242
-        - TF56et74wQ8:00243
-        - TF56et74wQ8:00244
-        - TF56et74wQ8:00245
-        - TF56et74wQ8:00246
-        - TF56et74wQ8:00247
-        - TF56et74wQ8:00248
-        - TF56et74wQ8:00249
-        - TF56et74wQ8:00250
-        - TF56et74wQ8:00251
+- id: uRu7I3Cvojk-new-backhand-flip-reviewed
+  evidence_type: definition
+  excerpt: A compact in-table backhand flick action that relies mainly on fingers and wrist, uses a small swing, and drives the ball mostly forward.
+  reason: The speaker defines the flip by straight forward stepping, finger-and-wrist power, small swing size, and forward force direction.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: uRu7I3Cvojk
+    start_ms: 40966
+    end_ms: 61400
+    url: https://www.youtube.com/watch?v=uRu7I3Cvojk&t=40s
+    segment_ids:
+    - uRu7I3Cvojk:00013
+    - uRu7I3Cvojk:00018
+- id: 2xGbue3FXIw-concept-backhand-flip-reviewed
+  evidence_type: example
+  excerpt: A quick close-table backhand receive used on serves, often with a compact flicking motion.
+  reason: The speaker explicitly says that at the backhand baseline, one can execute a thin flick return.
+  confidence: 0.86
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 2xGbue3FXIw
+    start_ms: 17875
+    end_ms: 26140
+    url: https://www.youtube.com/watch?v=2xGbue3FXIw&t=17s
+    segment_ids:
+    - 2xGbue3FXIw:00006
+    - 2xGbue3FXIw:00007
+- id: TF56et74wQ8-candidate-push-flip-reviewed
+  evidence_type: explanation
+  excerpt: A stable flip variant that stays close, keeps the wrist locked or pressed down, and uses forearm thrust more than wrist rotation.
+  reason: The speaker repeatedly emphasizes locked wrist, forearm-driven thrust, wrist pressed down, and a downward pressing action to keep the return stable and low.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: TF56et74wQ8
+    start_ms: 695000
+    end_ms: 720880
+    url: https://www.youtube.com/watch?v=TF56et74wQ8&t=695s
+    segment_ids:
+    - TF56et74wQ8:00241
+    - TF56et74wQ8:00242
+    - TF56et74wQ8:00243
+    - TF56et74wQ8:00244
+    - TF56et74wQ8:00245
+    - TF56et74wQ8:00246
+    - TF56et74wQ8:00247
+    - TF56et74wQ8:00248
+    - TF56et74wQ8:00249
+    - TF56et74wQ8:00250
+    - TF56et74wQ8:00251
+- id: cSDOaQqEtTQ-concept-backhand-flick-codex-reviewed
+  evidence_type: definition
+  excerpt: The backhand flick is used strategically together with the push.
+  reason: Use the backhand flick and the push strategically together.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: cSDOaQqEtTQ
+    start_ms: 12833
+    end_ms: 25500
+    url: https://www.youtube.com/watch?v=cSDOaQqEtTQ&t=12s
+    segment_ids:
+    - cSDOaQqEtTQ:00003
+    - cSDOaQqEtTQ:00004
+    - cSDOaQqEtTQ:00005

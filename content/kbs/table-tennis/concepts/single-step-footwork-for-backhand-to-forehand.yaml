@@ -6,12 +6,9 @@ aliases:
   - single step to move from the backhand to the forehand side
 short_definition: A precise one-step movement recommended for adults when moving from backhand to forehand, especially around the table.
 evidence_summary: >-
-  Single-step footwork for backhand-to-forehand brings together several connected ideas. A single
-  step for adults to move from backhand to forehand because it is more precise and helps find the
-  contact point. A single step with the left foot or moving the right foot first, then stepping
-  forward to create space for the shot. Together, these principles show how the topic is applied
-  in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:117ce655d9cc16e74dd9f188fccdc62b5951d2f045a0cfe633e042cbfb114dc3"
+  A precise one-step movement recommended for adults when moving from backhand to forehand,
+  especially around the table.
+evidence_summary_source_hash: "sha256:46fbe32a3ca43552c63ebb2f5719d08675c7f7ee59ffe3dd2a61297e7d49cb94"
 evidence_summary_generator: "deterministic"
 concept_type: practice
 facets:
@@ -26,10 +23,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 3f132a1e2460caf7a470b4b0fb77be4ea7834fb54056076a3f77b81e8e6be5d3
-  prompt_version: candidate-review-v1
+  input_hash: sha256:ddff09a96957400861525b93817cf486ed4c52505e232c85bdf224fdd513fad6
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: 9bLlHR-vBAU-concept-single-step-footwork-for-backhand-to-forehand-reviewed
     evidence_type: explanation
@@ -37,7 +37,7 @@ evidence:
     reason: The speaker explicitly recommends a single step for adults to move from backhand to forehand because it is more precise and helps find the contact point.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 9bLlHR-vBAU
       start_ms: 573766
@@ -53,7 +53,7 @@ evidence:
     reason: The speaker recommends a single step with the left foot or moving the right foot first, then stepping forward to create space for the shot.
     confidence: 0.9
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: QD9mHcPrHSU
       start_ms: 698933
@@ -62,3 +62,18 @@ evidence:
       segment_ids:
         - QD9mHcPrHSU:00147
         - QD9mHcPrHSU:00152
+  - id: 9bLlHR-vBAU-concept-single-step-footwork-for-backhand-to-forehand-codex-reviewed
+    evidence_type: explanation
+    excerpt: The speaker recommends a single step for amateurs moving around the table, especially from backhand to forehand, because it helps them find the contact point better.
+    reason: These contiguous segments directly support the existing concept and fit within the 30-second publication-span limit.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 9bLlHR-vBAU
+      start_ms: 594366
+      end_ms: 603566
+      url: https://www.youtube.com/watch?v=9bLlHR-vBAU&t=594s
+      segment_ids:
+        - 9bLlHR-vBAU:00117
+        - 9bLlHR-vBAU:00118

@@ -5,14 +5,7 @@ aliases:
   - backhand rip drills
 short_definition: Build the backhand rip from controlled timing and friction work toward larger, faster attacks.
 evidence_summary: >-
-  Training for the backhand rip should start with relaxed brushing and trajectory creation, then
-  gradually add speed, forearm involvement, grip firmness, and power. A useful progression
-  isolates the upper arm and forearm so the player can feel racket-head speed coming mainly from
-  wrist action, then reuse that whip for different spins. Another step is to temporarily ignore
-  whether the ball lands and exaggerate loose acceleration so the feeling of power comes first,
-  with control added back afterward.
-evidence_summary_source_hash: "sha256:51ac66f16d8809861a76c1060b0bd98b7a6b58966793a8976317e937a5524d2a"
-evidence_summary_generator: "codex"
+  Build the backhand rip through controlled practice before adding speed. Establish brushing and trajectory first. Loose racket-head release and a separate wrist-isolation drill help explore the whip sensation; the backspin version redirects that drill downward.
 concept_type: drill
 facets:
   category:
@@ -26,8 +19,8 @@ review_status: approved
 evidence:
   - id: xWrDKGnqmBs-cand-backhand-rip-practice-progression-1
     evidence_type: drill
-    excerpt: The speaker provides a concrete drill structure and progression from light brushing to added speed and power, with a blocker partner.
-    reason: A training progression for the backhand rip that begins with relaxed brushing and trajectory creation, then gradually adds speed, forearm, grip firmness, and power.
+    excerpt: Begin practice with brushing rather than hard hitting; establish the trajectory, then gradually add speed.
+    reason: Begin practice with brushing rather than hard hitting; establish the trajectory, then gradually add speed.
     confidence: 0.96
     visual_status: not_visual
     review_status: approved
@@ -35,11 +28,15 @@ evidence:
       video_id: xWrDKGnqmBs
       start_ms: 459566
       end_ms: 484000
-      url: "https://www.youtube.com/watch?v=xWrDKGnqmBs&t=459s"
-      segment_ids: &id001
-        - "xWrDKGnqmBs:00131"
-        - "xWrDKGnqmBs:00135"
-        - "xWrDKGnqmBs:00137"
+      url: https://www.youtube.com/watch?v=xWrDKGnqmBs&t=459s
+      segment_ids:
+        - xWrDKGnqmBs:00131
+        - xWrDKGnqmBs:00132
+        - xWrDKGnqmBs:00133
+        - xWrDKGnqmBs:00134
+        - xWrDKGnqmBs:00135
+        - xWrDKGnqmBs:00136
+        - xWrDKGnqmBs:00137
   - id: xWrDKGnqmBs-cand-backhand-rip-practice-progression-2
     evidence_type: drill
     excerpt: The speaker provides a concrete drill structure and progression from light brushing to added speed and power, with a blocker partner.
@@ -77,20 +74,6 @@ evidence:
         - "xWrDKGnqmBs:00150"
         - "xWrDKGnqmBs:00152"
         - "xWrDKGnqmBs:00155"
-  - id: xWrDKGnqmBs-cand-backhand-rip-practice-progression-4
-    evidence_type: correction
-    excerpt: 'The speaker corrects common practice mistakes: hitting hard too early, over-snapping the wrist, and neglecting brushing.'
-    reason: 'A training progression for the backhand rip that begins with relaxed brushing and trajectory creation, then gradually adds speed, forearm, grip firmness, and power.'
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: xWrDKGnqmBs
-      start_ms: 465433
-      end_ms: 466833
-      url: "https://www.youtube.com/watch?v=xWrDKGnqmBs&t=465s"
-      segment_ids:
-        - "xWrDKGnqmBs:00133"
   - id: xWrDKGnqmBs-cand-backhand-rip-practice-progression-5
     evidence_type: correction
     excerpt: 'The speaker corrects common practice mistakes: hitting hard too early, over-snapping the wrist, and neglecting brushing.'
@@ -120,48 +103,43 @@ evidence:
       url: "https://www.youtube.com/watch?v=xWrDKGnqmBs&t=529s"
       segment_ids:
         - "xWrDKGnqmBs:00151"
-  - id: q9c2_hCwlhs-cand-10-1
-    evidence_type: demonstration
-    excerpt: 'The speaker gives a live demonstration: isolate the wrist, lock the arm segments, produce whip, then angle it differently for backspin.'
-    reason: A drill where the upper arm and forearm are stabilized so the player can feel racket-head speed generated mainly by wrist action and then redirect that same whip for different spins.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: q9c2_hCwlhs
-      start_ms: 444960
-      end_ms: 448520
-      url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=444s
-      segment_ids:
-        - q9c2_hCwlhs:00172
   - id: q9c2_hCwlhs-cand-10-2
     evidence_type: demonstration
-    excerpt: 'The speaker gives a live demonstration: isolate the wrist, lock the arm segments, produce whip, then angle it differently for backspin.'
-    reason: A drill where the upper arm and forearm are stabilized so the player can feel racket-head speed generated mainly by wrist action and then redirect that same whip for different spins.
+    excerpt: For the backspin version of this wrist-isolation drill, redirect the same whip motion downward.
+    reason: For the backspin version of this wrist-isolation drill, redirect the same whip motion downward.
     confidence: 0.9
     visual_status: transcript_inferred
     review_status: approved
     source:
       video_id: q9c2_hCwlhs
-      start_ms: 471320
+      start_ms: 465240
       end_ms: 475960
-      url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=471s
+      url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=465s
       segment_ids:
+        - q9c2_hCwlhs:00180
+        - q9c2_hCwlhs:00181
+        - q9c2_hCwlhs:00182
         - q9c2_hCwlhs:00183
   - id: q9c2_hCwlhs-cand-10-3
     evidence_type: drill
-    excerpt: The instructions are procedural and framed as something to try directly.
-    reason: A drill where the upper arm and forearm are stabilized so the player can feel racket-head speed generated mainly by wrist action and then redirect that same whip for different spins.
+    excerpt: In this isolation drill, stabilize the upper arm and forearm and let the wrist move independently so the racket head can whip.
+    reason: In this isolation drill, stabilize the upper arm and forearm and let the wrist move independently so the racket head can whip.
     confidence: 0.84
     visual_status: transcript_inferred
     review_status: approved
     source:
       video_id: q9c2_hCwlhs
-      start_ms: 453080
+      start_ms: 444960
       end_ms: 467240
-      url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=453s
+      url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=444s
       segment_ids:
+        - q9c2_hCwlhs:00172
+        - q9c2_hCwlhs:00173
+        - q9c2_hCwlhs:00174
         - q9c2_hCwlhs:00175
+        - q9c2_hCwlhs:00176
+        - q9c2_hCwlhs:00177
+        - q9c2_hCwlhs:00178
         - q9c2_hCwlhs:00179
   - id: q9c2_hCwlhs-cand-11-1
     evidence_type: drill
@@ -179,17 +157,19 @@ evidence:
         - q9c2_hCwlhs:00129
   - id: q9c2_hCwlhs-cand-11-2
     evidence_type: drill
-    excerpt: The speaker prescribes exaggerated loose swings without caring about landing to develop the sensation of release.
-    reason: A practice approach where the player temporarily ignores whether the ball lands and instead exaggerates loose acceleration to feel power release before reintroducing control.
+    excerpt: Let the racket head whip loosely during this practice exercise without fearing a miss.
+    reason: Let the racket head whip loosely during this practice exercise without fearing a miss.
     confidence: 0.89
     visual_status: not_visual
     review_status: approved
     source:
       video_id: q9c2_hCwlhs
-      start_ms: 354240
+      start_ms: 350600
       end_ms: 357760
-      url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=354s
+      url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=350s
       segment_ids:
+        - q9c2_hCwlhs:00139
+        - q9c2_hCwlhs:00140
         - q9c2_hCwlhs:00141
   - id: q9c2_hCwlhs-cand-11-3
     evidence_type: drill
@@ -212,7 +192,7 @@ evidence:
     reason: 'The speaker gives a concrete practice sequence: train the friction technique first, enlarge the stroke later, then use self-toss and self-hit drills with low toss and ball placement slightly in front.'
     confidence: 0.86
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: o-65pV_y0O0
       start_ms: 176480
@@ -233,7 +213,7 @@ evidence:
     reason: The speaker explicitly recommends shadow practice first, then ball training after the swing path and movement elements are established.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: uRu7I3Cvojk
       start_ms: 132233
@@ -253,7 +233,7 @@ evidence:
     reason: The speaker repeatedly instructs learners to focus on brushing, holding and wrapping the ball, isolating spin practice separately, then gradually adding speed, forearm power, and combining the two.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: g5LaTXWtgBw
       start_ms: 650500
@@ -272,7 +252,7 @@ evidence:
     reason: 'The speaker gives a clear drill: begin with light shots, then increase and reduce power, alternating during practice.'
     confidence: 0.93
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: b3bRD1hQpe8
       start_ms: 926466
@@ -292,7 +272,7 @@ evidence:
     reason: The speaker recommends practicing rip-to-rip rallies without full power to find the rhythm, and only taking a bigger backswing when the opponent's ball is weak.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: YR4GEvuI9Vc
       start_ms: 162966
@@ -309,6 +289,9 @@ relations:
         start_ms: 459566
         end_ms: 484000
         url: "https://www.youtube.com/watch?v=xWrDKGnqmBs&t=459s"
-        segment_ids: *id001
+        segment_ids:
+          - "xWrDKGnqmBs:00131"
+          - "xWrDKGnqmBs:00135"
+          - "xWrDKGnqmBs:00137"
     confidence: 0.9
     review_status: approved

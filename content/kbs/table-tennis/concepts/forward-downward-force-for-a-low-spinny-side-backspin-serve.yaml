@@ -1,0 +1,52 @@
+id: concept-forward-downward-force-for-a-low-spinny-side-backspin-serve
+slug: forward-downward-force-for-a-low-spinny-side-backspin-serve
+label: Forward-downward force for a low, spinny side-backspin serve
+aliases: []
+short_definition: A side-backspin serve uses forward and downward force together to keep the trajectory low while producing spin.
+evidence_summary: >-
+  A side-backspin serve uses forward and downward force together to keep the trajectory low while
+  producing spin.
+evidence_summary_source_hash: "sha256:2a88fdc7ecdc74f5b9f01d5412bc427a8eb587ecddf86d7b0bcd6e2259aff08a"
+evidence_summary_generator: "deterministic"
+concept_type: fundamentals
+facets:
+  category:
+    - fundamentals
+    - stroke
+  side:
+    - neutral
+  spin:
+    - backspin
+    - sidespin
+  distance:
+    - close
+  level:
+    - beginner
+    - intermediate
+difficulty:
+review_status: approved
+generated_by:
+  processor: codex_semantic_adjudication
+  version: 1.0.0
+  input_hash: sha256:7de6bb02600da31d868b7557454913fe5ff8c9a5e485c7514f6829e3cbc9f323
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
+evidence:
+  - id: evEaxXmwJ2E-candidate-forward-downward-force-for-low-spinny-serve-codex-reviewed
+    evidence_type: explanation
+    excerpt: A side-backspin serve needs forward and downward force together to make the serve low and spinny.
+    reason: These contiguous segments explain that the serve requires a forward-downward force angle, that neither component should be neglected, and that using both together makes the serve low and spinny. No supplied concept captures this combined force direction.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: evEaxXmwJ2E
+      start_ms: 566966
+      end_ms: 585600
+      url: https://www.youtube.com/watch?v=evEaxXmwJ2E&t=566s
+      segment_ids:
+        - evEaxXmwJ2E:00114
+        - evEaxXmwJ2E:00115
+        - evEaxXmwJ2E:00116

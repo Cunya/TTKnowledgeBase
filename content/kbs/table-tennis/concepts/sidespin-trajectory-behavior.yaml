@@ -1,0 +1,43 @@
+id: concept-sidespin-trajectory-behavior
+slug: sidespin-trajectory-behavior
+label: Sidespin trajectory behavior
+aliases: []
+short_definition: Left or right sidespin can make the ball travel on a straight or diagonal path, unlike a looped ball.
+evidence_summary: >-
+  Left or right sidespin can make the ball travel on a straight or diagonal path, unlike a looped
+  ball.
+evidence_summary_source_hash: "sha256:c1fa5212f9203f79ced6fe081b85d9b0e51368a28412e6c23c45345f7839e609"
+evidence_summary_generator: "deterministic"
+concept_type: fundamentals
+facets:
+  category:
+    - fundamentals
+  spin:
+    - sidespin
+  level:
+    - intermediate
+difficulty:
+review_status: approved
+generated_by:
+  processor: codex_semantic_adjudication
+  version: 1.0.0
+  input_hash: sha256:c2b4c612d9afc2c71e2622be404194a3792e926e7196291f7a3e666b79f0a20e
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
+evidence:
+  - id: 8fxjEROShs4-concept-ball-trajectory-classification-codex-reviewed
+    evidence_type: explanation
+    excerpt: Left or right sidespin can make the ball travel on a straight or diagonal path, unlike a looped ball.
+    reason: Segment 8fxjEROShs4:00081 directly explains that left or right spin changes the ball's trajectory to a straight or diagonal path. This is distinct from the existing concept, which classifies incoming paths as backspin, topspin, or half-high balls.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8fxjEROShs4
+      start_ms: 590166
+      end_ms: 596666
+      url: https://www.youtube.com/watch?v=8fxjEROShs4&t=590s
+      segment_ids:
+        - 8fxjEROShs4:00081

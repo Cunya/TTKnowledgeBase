@@ -7,13 +7,9 @@ aliases:
   - push the ball down
 short_definition: To keep pushes low, the player should contact the lower half of the racket and direct the motion downward rather than simply forward.
 evidence_summary: >-
-  Low contact and downward motion for pushes brings together several connected ideas. Low
-  trajectory to lower-half contact and a downward brushing path. The wrist should be flexed and
-  the racket head should move forward and down; contacting from behind keeps the push low. A
-  useful contrast is between incorrect bottom contact and scooping and the pro pattern of
-  lower-middle contact and downward pushing. Together, these principles show how the topic is
-  applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:cdef60dbea0742e8593601cbaaffe20e91dd267a1679513ca3fe02872831fba3"
+  To keep pushes low, the player should contact the lower half of the racket and direct the motion
+  downward rather than simply forward.
+evidence_summary_source_hash: "sha256:5f245c204d2fcdd9b99d51311a4846d5da54372b48fc6fc88d5cdcffe7bf22c4"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -28,10 +24,13 @@ facets:
 difficulty: beginner
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: e27c08ff12856ed094531f2a2da0376c5e21bd645aa8bd4fd99cbf1fad603d20
-  prompt_version: candidate-review-v1
+  input_hash: sha256:7dd9526d1c4f89a3d9d3ca51c1ab6d37644e825437e631529b673cd39aea83cc
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: ezGVESU0Rp0-concept-low-contact-and-downward-motion-for-pushes-reviewed
     evidence_type: definition
@@ -39,7 +38,7 @@ evidence:
     reason: The speaker repeatedly links low trajectory to lower-half contact and a downward brushing path.
     confidence: 0.91
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ezGVESU0Rp0
       start_ms: 246200
@@ -55,7 +54,7 @@ evidence:
     reason: The speaker directly explains that the wrist should be flexed and the racket head should move forward and down; contacting from behind keeps the push low.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Xho60DR74X0
       start_ms: 439366
@@ -71,7 +70,7 @@ evidence:
     reason: The speaker contrasts incorrect bottom contact and scooping with the pro pattern of lower-middle contact and downward pushing.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: r75F4gsFaoQ
       start_ms: 23966
@@ -82,3 +81,19 @@ evidence:
         - r75F4gsFaoQ:00006
         - r75F4gsFaoQ:00007
         - r75F4gsFaoQ:00009
+  - id: ezGVESU0Rp0-concept-low-contact-and-downward-motion-for-pushes-codex-reviewed
+    evidence_type: definition
+    excerpt: Using the same motion, raise the hand slightly so the ball contacts the lower half of the racket; this lets the player push the ball down and keep the trajectory low. A high push results from contacting the top half.
+    reason: These contiguous segments directly explain that lower-half racket contact produces a lower push and that upper-half contact causes the ball to pop up. The span is about 13.7 seconds and supports the proposed concept.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ezGVESU0Rp0
+      start_ms: 195133
+      end_ms: 212866
+      url: https://www.youtube.com/watch?v=ezGVESU0Rp0&t=195s
+      segment_ids:
+        - ezGVESU0Rp0:00042
+        - ezGVESU0Rp0:00043
+        - ezGVESU0Rp0:00044

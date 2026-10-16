@@ -1,28 +1,40 @@
 {
   "schema_version": 2,
   "knowledge_base": "table-tennis",
-  "generated_at": "2026-08-04T22:14:55.002209+00:00",
+  "generated_at": "2026-10-16T19:58:29.405247+00:00",
   "totals": {
     "discovered": 838,
     "configured": 148,
     "eligible": 140,
     "ingested": 140,
     "extracted": 140,
-    "concepts": 533,
-    "published_videos": 729,
-    "published_configured_videos": 140,
-    "evidence": 5892,
+    "concepts": 377,
+    "published_videos": 228,
+    "published_configured_videos": 84,
+    "evidence": 1846,
     "visual_proposed": 35,
     "visual_verified": 0,
-    "accepted": 5117,
-    "deferred": 1811,
-    "rejected": 5,
-    "pending": 1,
+    "accepted": 1325,
+    "deferred": 5491,
+    "rejected": 118,
+    "pending": 0,
     "human_review": 0,
-    "reviewed_videos": 81,
-    "published_with_review_backlog": 59,
-    "single_source_concepts": 156
+    "reviewed_videos": 44,
+    "published_with_review_backlog": 40,
+    "single_source_concepts": 234
   },
+  "public_snapshot": {
+    "concepts": 377,
+    "videos": 228,
+    "evidence_moments": 1846,
+    "generated_at": "2026-10-16T19:58:29.405247+00:00"
+  },
+  "quarantined_history": {
+    "concepts": 254,
+    "evidence_moments": 4826
+  },
+  "canonical_concept_files": 632,
+  "last_successful_publish_at": "2026-10-16T19:58:29.405247+00:00",
   "sources": [
     {
       "id": "free-coach-brad-han",
@@ -33,17 +45,17 @@
       "eligible": 101,
       "ingested": 101,
       "extracted": 101,
-      "reviewed": 63,
-      "published": 101,
-      "accepted": 900,
-      "deferred": 74,
-      "rejected": 0,
+      "reviewed": 34,
+      "published": 60,
+      "accepted": 430,
+      "deferred": 538,
+      "rejected": 6,
       "pending": 0,
-      "evidence": 1501,
-      "concepts": 527,
+      "evidence": 929,
+      "concepts": 362,
       "visual_proposed": 19,
       "visual_verified": 0,
-      "published_with_review_backlog": 38,
+      "published_with_review_backlog": 26,
       "members_only": 0,
       "unselected": 224
     },
@@ -56,17 +68,17 @@
       "eligible": 23,
       "ingested": 23,
       "extracted": 23,
-      "reviewed": 17,
-      "published": 23,
-      "accepted": 228,
-      "deferred": 15,
-      "rejected": 1,
+      "reviewed": 10,
+      "published": 15,
+      "accepted": 130,
+      "deferred": 106,
+      "rejected": 8,
       "pending": 0,
-      "evidence": 380,
-      "concepts": 79,
+      "evidence": 243,
+      "concepts": 46,
       "visual_proposed": 16,
       "visual_verified": 0,
-      "published_with_review_backlog": 6,
+      "published_with_review_backlog": 5,
       "members_only": 8,
       "unselected": 387
     },
@@ -79,17 +91,17 @@
       "eligible": 16,
       "ingested": 16,
       "extracted": 16,
-      "reviewed": 1,
-      "published": 16,
-      "accepted": 75,
-      "deferred": 56,
-      "rejected": 0,
+      "reviewed": 0,
+      "published": 9,
+      "accepted": 30,
+      "deferred": 93,
+      "rejected": 8,
       "pending": 0,
-      "evidence": 75,
-      "concepts": 50,
+      "evidence": 26,
+      "concepts": 25,
       "visual_proposed": 0,
       "visual_verified": 0,
-      "published_with_review_backlog": 15,
+      "published_with_review_backlog": 9,
       "members_only": 0,
       "unselected": 79
     },
@@ -152,15 +164,19 @@
   ],
   "inventory": {
     "inventory": 838,
-    "published": 729,
-    "eligible_complete": 175,
-    "automated_work_remaining": 577,
+    "published": 228,
+    "eligible_total": 752,
+    "eligible_complete": 52,
+    "fully_processed_percent": 6.9,
+    "automation_triaged": 52,
+    "automation_triaged_percent": 6.9,
+    "automated_work_remaining": 700,
     "human_review_videos": 0,
     "retry_wait": 0,
     "excluded": 86,
     "states": {
-      "needs_adjudication": 577,
-      "complete": 175,
+      "needs_adjudication": 700,
+      "complete": 52,
       "excluded": 86
     },
     "availability": {
@@ -174,30 +190,30 @@
     },
     "candidates": {
       "total": 6930,
-      "pending": 1,
-      "deferred": 1811,
-      "accepted": 5113,
-      "rejected": 5,
+      "pending": 0,
+      "deferred": 5490,
+      "accepted": 1322,
+      "rejected": 118,
       "human_review": 0,
-      "accepted_unincorporated": 0
+      "accepted_unincorporated": 102
     },
     "sources": {
       "free-coach-brad-han": {
         "inventory": 325,
-        "needs_adjudication": 251,
-        "complete": 73,
+        "needs_adjudication": 293,
+        "complete": 31,
         "excluded": 1
       },
       "global-tt-studio": {
         "inventory": 418,
-        "complete": 97,
+        "complete": 17,
         "excluded": 85,
-        "needs_adjudication": 236
+        "needs_adjudication": 316
       },
       "pingsunday-xiaohan-playlist": {
         "inventory": 95,
-        "needs_adjudication": 90,
-        "complete": 5
+        "needs_adjudication": 91,
+        "complete": 4
       }
     }
   },
@@ -205,203 +221,253 @@
     "extraction": [],
     "adjudication": [
       {
-        "id": "lii73aKvvkw",
+        "id": "V__nqiNHeKE",
+        "source_id": "free-coach-brad-han",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "xBlnTfR0eOY",
+        "id": "YS3IObI6Gaw",
+        "source_id": "global-tt-studio",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "JLGqLr-9-2w",
+        "id": "pxxgpWNbXSM",
+        "source_id": "pingsunday-xiaohan-playlist",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "pRuBdX0ZLgg",
+        "id": "bUCFpvTlaMU",
+        "source_id": "free-coach-brad-han",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "QkR3weNCn48",
+        "id": "zZ_B1Xg7Pjs",
+        "source_id": "global-tt-studio",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "iNTkZQ-ZenY",
+        "id": "yF675Tey81g",
+        "source_id": "pingsunday-xiaohan-playlist",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "CFfErzr4cEQ",
+        "id": "t3HX8AEujWw",
+        "source_id": "free-coach-brad-han",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "oWZx35U6iGI",
+        "id": "YpA2d0yrM1U",
+        "source_id": "global-tt-studio",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "PBYIXS9NP0s",
+        "id": "R_iezR5GGwY",
+        "source_id": "pingsunday-xiaohan-playlist",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "S7U1u6oU2zQ",
+        "id": "dWZw3A0X-4A",
+        "source_id": "free-coach-brad-han",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "fpNFvJkdLnw",
+        "id": "G7eiadOxN8E",
+        "source_id": "global-tt-studio",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "5JzSUTg_ojc",
+        "id": "r-OUh7aqJdQ",
+        "source_id": "pingsunday-xiaohan-playlist",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "bQTenTT3bz0",
+        "id": "JmOI0L7SiG8",
+        "source_id": "free-coach-brad-han",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "EIlmaLc-eFw",
+        "id": "Q-V95wNbaP0",
+        "source_id": "global-tt-studio",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "KuYNs8gAU_U",
+        "id": "rSfonAiwrHk",
+        "source_id": "pingsunday-xiaohan-playlist",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "OFOjjffyzms",
+        "id": "QFncUSkAVKU",
+        "source_id": "free-coach-brad-han",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "ZDsNRAsC9pY",
+        "id": "qoK510cwjes",
+        "source_id": "global-tt-studio",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "ggaBOPI4Nwc",
+        "id": "QYNr9YELOSs",
+        "source_id": "pingsunday-xiaohan-playlist",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "xGna6RBljCg",
+        "id": "rZY_SUer7Aw",
+        "source_id": "free-coach-brad-han",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "sU4uTg-0qvM",
+        "id": "r75F4gsFaoQ",
+        "source_id": "global-tt-studio",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "g5LaTXWtgBw",
+        "id": "QTI4evyXCLM",
+        "source_id": "pingsunday-xiaohan-playlist",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "Mnse-nAfdO8",
+        "id": "SE3btn_1X1s",
+        "source_id": "free-coach-brad-han",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "lcp99UuLuus",
+        "id": "rLrnvlDBmTs",
+        "source_id": "global-tt-studio",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "rN337KbRJt0",
+        "id": "rPrv4iWdE4w",
+        "source_id": "pingsunday-xiaohan-playlist",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "ubwy_VRFhPg",
+        "id": "SF0Sv2ZzrRI",
+        "source_id": "free-coach-brad-han",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "RxQ8PJFJKLs",
+        "id": "s6lj1otqR90",
+        "source_id": "global-tt-studio",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "j90jCkrtITo",
+        "id": "s2VuRO66usY",
+        "source_id": "pingsunday-xiaohan-playlist",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "4VtanUONrZc",
+        "id": "StQ86EhPFpo",
+        "source_id": "free-coach-brad-han",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "CpcAha7BZGA",
+        "id": "SBpcji5Ah_w",
+        "source_id": "global-tt-studio",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "j098z-YOm20",
+        "id": "T19jPlfHkVA",
+        "source_id": "pingsunday-xiaohan-playlist",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "13z0kO_hd0M",
+        "id": "ti_YUZdHu3o",
+        "source_id": "free-coach-brad-han",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "3SacINVWteM",
+        "id": "SmYaJcYqaqo",
+        "source_id": "global-tt-studio",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "A_hvhZM5dc4",
+        "id": "sklepyRctyI",
+        "source_id": "pingsunday-xiaohan-playlist",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "GKfKcAQ-guU",
+        "id": "VRnCe4k1tmU",
+        "source_id": "free-coach-brad-han",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "VOX-e4IR2xg",
+        "id": "sosNHzR8A9U",
+        "source_id": "global-tt-studio",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "vxNq1b0J0bU",
+        "id": "s57enR6ZT1w",
+        "source_id": "pingsunday-xiaohan-playlist",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "-1uBDv1Aq7A",
+        "id": "wpIxIvnuOac",
+        "source_id": "free-coach-brad-han",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "25Ohh2RJcWk",
+        "id": "spoumRQdZHc",
+        "source_id": "global-tt-studio",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "QsrAQCy3POU",
+        "id": "TbJCmatwqG8",
+        "source_id": "pingsunday-xiaohan-playlist",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "RIAorR-Xv_Q",
+        "id": "wyna7UXctZQ",
+        "source_id": "free-coach-brad-han",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "RwbDGQSqM8g",
+        "id": "t41-_NFTUuo",
+        "source_id": "global-tt-studio",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "SS2i7rmrjZI",
+        "id": "t3J4rb86wLU",
+        "source_id": "pingsunday-xiaohan-playlist",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "b_F4I4x4dl0",
+        "id": "XlGnK1z_7C0",
+        "source_id": "free-coach-brad-han",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "i-n17lWXlSo",
+        "id": "tQSnBjtseLI",
+        "source_id": "global-tt-studio",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "2WWpJEdhO9U",
+        "id": "tqoyTAIjdEM",
+        "source_id": "pingsunday-xiaohan-playlist",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "3lTc51PYWSQ",
+        "id": "xwKSNLxVaBg",
+        "source_id": "free-coach-brad-han",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "8YnliONxP4U",
+        "id": "U3o7_ad82dk",
+        "source_id": "global-tt-studio",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "K0ljmeUVK1Q",
+        "id": "tLYwYYyqsv4",
+        "source_id": "pingsunday-xiaohan-playlist",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "KM-gOmX2AeU",
+        "id": "y3dW5VYVlsg",
+        "source_id": "free-coach-brad-han",
         "reason": "extracted candidates still have retryable decisions"
       },
       {
-        "id": "Nj4ivxRAizs",
+        "id": "U4ItRZHe_-A",
+        "source_id": "global-tt-studio",
         "reason": "extracted candidates still have retryable decisions"
       }
     ],

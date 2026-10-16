@@ -6,14 +6,7 @@ aliases:
   - forehand loop drive
 short_definition: A forehand topspin stroke that brushes the ball with forward-and-upward acceleration.
 evidence_summary: >-
-  The forehand loop is an attacking stroke that uses a forward-upward swing with a brushing
-  contact to create topspin while still driving through the ball. Its power comes from late
-  acceleration and a contact point chosen to match the incoming spin and height, so a loop against
-  backspin requires more brushing and a loop against topspin needs a balanced mix of impact and
-  brush. For beginners, the key is to feel the ball cleanly at contact and to distinguish looping
-  from driving, since the loop depends on generating spin as well as speed.
-evidence_summary_source_hash: "sha256:4d7d6ddf1d9bd2898af033e639040e4c26fa14589b49cc97a7f0c6adb5420e9d"
-evidence_summary_generator: "codex"
+  A forehand loop combines brushing with forward-and-upward acceleration. The reviewed follow-through correction calls for a slight rise after contact and complete arm closure, rather than a purely straight-forward swing. Backswing preparation and follow-through are separate parts of the instruction.
 detailed_definition: The racket brushes the upper back of the ball while accelerating forward and upward, with contact in front of the body.
 concept_type: stroke
 facets:
@@ -278,18 +271,20 @@ evidence:
         - "I99BjizeWeE:00184"
   - id: I99BjizeWeE-cand-open-then-close-arm-4
     evidence_type: correction
-    excerpt: The transcript explicitly instructs the correct open-to-close sequence and complete arm closure.
-    reason: In the forehand loop, the arm structure should first open fully in the backswing to create space, then close through and after contact to generate acceleration and quality.
+    excerpt: After contact, let the swing rise slightly instead of driving only straight forward, and close the arm completely.
+    reason: After contact, let the swing rise slightly instead of driving only straight forward, and close the arm completely.
     confidence: 0.97
     visual_status: transcript_inferred
     review_status: approved
     source:
       video_id: I99BjizeWeE
-      start_ms: 634466
+      start_ms: 627266
       end_ms: 636800
-      url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=634s"
+      url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=627s"
       segment_ids:
-        - "I99BjizeWeE:00193"
+        - I99BjizeWeE:00191
+        - I99BjizeWeE:00192
+        - I99BjizeWeE:00193
   - id: XfWXrGTlW5M-concept-forehand-loop-1
     evidence_type: explanation
     excerpt: An attacking topspin stroke on the forehand side; here the coach teaches how to improve its power, structure, and continuity through forward force and stable rhythm.
@@ -324,7 +319,7 @@ evidence:
     reason: The speaker describes looping as turning backspin into topspin and emphasizes closing, brushing, and driving forward.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: A4-lKRVwSFc
       start_ms: 117480
@@ -339,7 +334,7 @@ evidence:
     reason: The speaker contrasts looping with driving and explains loop-specific contact and power generation.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: pE5PLAr9iaA
       start_ms: 289440
@@ -354,7 +349,7 @@ evidence:
     reason: The speaker explains that the loop requires the forearm to drop downward, unlike the drive.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: WuN7bP8CIOs
       start_ms: 112800
@@ -369,7 +364,7 @@ evidence:
     reason: The speaker explicitly contrasts looping with driving and says looping relies on brushing the ball and friction.
     confidence: 0.88
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: _biE-Dzy0aM
       start_ms: 115120
@@ -389,7 +384,7 @@ evidence:
     reason: Explains forearm-low-to-high mechanics and the transition from forward drive to a 3D low-to-high-then-forward loop motion.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: deTFdwcfnrE
       start_ms: 421720
@@ -406,7 +401,7 @@ evidence:
     reason: The speaker describes looping backspin, recreating the ball's trajectory, and sending it back on the same path.
     confidence: 0.91
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: DXL3ZnLNXqE
       start_ms: 67200
@@ -424,7 +419,7 @@ evidence:
     reason: The transcript directly discusses looping after pushes, looping with heavy topspin after long backspin serves, and the need to brush the ball properly against backspin.
     confidence: 0.94
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ODwFaYDY1co
       start_ms: 25200
@@ -440,7 +435,7 @@ evidence:
     reason: The speaker contrasts looping with driving, says looping starts under the ball, and describes brushing plus acceleration to keep the ball down.
     confidence: 0.92
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: vXZPX5wybTY
       start_ms: 213960
@@ -455,7 +450,7 @@ evidence:
     reason: Explains forearm-low-to-high mechanics and the transition from forward drive to a 3D low-to-high-then-forward loop motion.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: deTFdwcfnrE
       start_ms: 421720
@@ -472,7 +467,7 @@ evidence:
     reason: The speaker describes looping backspin, recreating the ball's trajectory, and sending it back on the same path.
     confidence: 0.91
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: DXL3ZnLNXqE
       start_ms: 67200
@@ -490,7 +485,7 @@ evidence:
     reason: The transcript directly discusses looping after pushes, looping with heavy topspin after long backspin serves, and the need to brush the ball properly against backspin.
     confidence: 0.94
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ODwFaYDY1co
       start_ms: 25200
@@ -506,7 +501,7 @@ evidence:
     reason: The speaker contrasts looping with driving, says looping starts under the ball, and describes brushing plus acceleration to keep the ball down.
     confidence: 0.92
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: vXZPX5wybTY
       start_ms: 213960
@@ -521,7 +516,7 @@ evidence:
     reason: The speaker explicitly refers to learning the forehand loop and explains that it is a stroke not usable on every ball without adjustment.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 13z0kO_hd0M
       start_ms: 623200
@@ -536,7 +531,7 @@ evidence:
     reason: The transcript explicitly discusses forehand topspin looping and how it should be done with structure and controlled force.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Ad8Ox7xSvSU
       start_ms: 251960
@@ -551,7 +546,7 @@ evidence:
     reason: The speaker explicitly frames the lesson as looping against topspin and says a proper loop needs a blend of impact and brush.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: nENxAvinCe8
       start_ms: 75033
@@ -567,7 +562,7 @@ evidence:
     reason: Contrasts looping with driving through racket-head orientation and opening.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: QFncUSkAVKU
       start_ms: 458960
@@ -587,7 +582,7 @@ evidence:
     reason: They explain that half-long balls need space less than long balls and that a big backswing mistimes the loop, while being closer makes looping easier.
     confidence: 0.91
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Nmf0ZWP6dn0
       start_ms: 528080
@@ -605,7 +600,7 @@ evidence:
     reason: The speaker distinguishes loop shots from a drive hit and describes the loop as a small arc followed by explosive drive at contact while maintaining brushing feeling.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: DaHEb394UtA
       start_ms: 72080
@@ -625,7 +620,7 @@ evidence:
     reason: The speaker says to initiate with an active forehand loop on the forehand half-long ball.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Z5OyMPqDVmc
       start_ms: 471520
@@ -641,7 +636,7 @@ evidence:
     reason: The speaker explicitly names the forehand loop and describes body posture for looping.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 2z594CL150c
       start_ms: 339433
@@ -655,7 +650,7 @@ evidence:
     reason: The speaker contrasts driving a high point ball with looping using extra spin and high arc.
     confidence: 0.87
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ldoTdAje9n0
       start_ms: 182433
@@ -670,7 +665,7 @@ evidence:
     reason: The speaker explicitly names looping and forehand loop practice as the core stroke being taught.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Ji9_Etw6nvo
       start_ms: 219400
@@ -685,7 +680,7 @@ evidence:
     reason: The speaker directly discusses forehand looping with smaller motion, more brush, and better control.
     confidence: 0.91
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Nj4ivxRAizs
       start_ms: 154833
@@ -700,7 +695,7 @@ evidence:
     reason: The speaker gives the example of serving no-spin, waiting for a push, then looping it up, and later says to get ready to rally topspin.
     confidence: 0.87
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: VPlWkjj9BjA
       start_ms: 107400
@@ -716,7 +711,7 @@ evidence:
     reason: The transcript explicitly discusses looping a topspin ball, forehand topspin, and the resulting arc created by the lowered forearm and racket head drop.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 3lTc51PYWSQ
       start_ms: 79066
@@ -732,7 +727,7 @@ evidence:
     reason: The speaker explicitly breaks looping into brushing, forward drive, and braking, which matches the forehand loop concept.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: oB03htaZU8A
       start_ms: 33
@@ -747,7 +742,7 @@ evidence:
     reason: The speaker names 'drive forward' as a key point in the forehand stroke and explains it as swinging the racket forward.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 7LXrK-o5FmU
       start_ms: 33
@@ -762,7 +757,7 @@ evidence:
     reason: The speaker explicitly contrasts looping with more impact for power and more brushing for safety.
     confidence: 0.89
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: C2CBt2468oI
       start_ms: 13766
@@ -780,7 +775,7 @@ evidence:
     reason: The speaker explicitly names the modern and advanced forehand loop.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8FDXnA8EO1M
       start_ms: 380466
@@ -795,7 +790,7 @@ evidence:
     reason: The speaker explicitly names the technique as a topspin forehand shot.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 2WWpJEdhO9U
       start_ms: 160
@@ -810,7 +805,7 @@ evidence:
     reason: 'The speaker lays out the core mechanics of the forehand loop against topspin: forearm drop, outside arc, and meeting the ball properly.'
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: vCa7A9gyOT8
       start_ms: 227400
@@ -825,7 +820,7 @@ evidence:
     reason: The speaker explicitly describes the loop as a stroke requiring relaxation, acceleration, and a complete swing path.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: J7Lm5IL-ggs
       start_ms: 347633
@@ -840,7 +835,7 @@ evidence:
     reason: The speaker describes creating room to execute a loop and specifically references the forehand loop multiple times.
     confidence: 0.93
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: K0eFBdIiBTQ
       start_ms: 43933
@@ -855,7 +850,7 @@ evidence:
     reason: The speaker directly contrasts forehand attacking with forehand looping and names the forehand loop.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: TbJCmatwqG8
       start_ms: 899666
@@ -870,7 +865,7 @@ evidence:
     reason: The transcript explicitly names a forehand loop as the stroke being demonstrated.
     confidence: 0.91
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 4cbTW4pTCuM
       start_ms: 503800
@@ -887,7 +882,7 @@ evidence:
     reason: The speaker explicitly names the forehand topspin/forehand loop as the shot being taught and practiced.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: LopC3UNnOXM
       start_ms: 27200
@@ -902,7 +897,7 @@ evidence:
     reason: The speaker identifies the forehand topspin/forehand loop as the relevant stroke and explains its execution with friction, forward force, and a controlled arc.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 6Lw_HobLgSY
       start_ms: 27866
@@ -918,7 +913,7 @@ evidence:
     reason: The speaker explicitly frames the lesson around forehand balls and topspin drives, emphasizing hitting through the ball.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: aStjJkTimhg
       start_ms: 2160
@@ -935,7 +930,7 @@ evidence:
     reason: The speaker explicitly discusses looping the ball, brushing forward, and treating looping as essential for amateur players.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: idAN8cPDZ7w
       start_ms: 196066
@@ -950,7 +945,7 @@ evidence:
     reason: The speaker refers to looping the ball and describes the looping action as descending, relaxing, and then accelerating with power.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: NMa0xKa1kpo
       start_ms: 1132966
@@ -965,7 +960,7 @@ evidence:
     reason: The speaker explicitly names the forehand loop and describes its timing, acceleration, and positioning.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: TtrTmkMdEzo
       start_ms: 465800
@@ -981,7 +976,7 @@ evidence:
     reason: The speaker states that forehand topspin and backhand topspin are based on the same principle and that attacking success is high here.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: u2A5PNggIqg
       start_ms: 463800
@@ -997,7 +992,7 @@ evidence:
     reason: They describe brushing forward with a closed racket angle, driving through the ball, and creating a true topspin loop.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 60_qpMsHRvQ
       start_ms: 526366
@@ -1012,7 +1007,7 @@ evidence:
     reason: The speaker says the forehand loop starts near the thigh and around hip level when looping against backspin.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: I-luBOL9IxI
       start_ms: 36700
@@ -1028,7 +1023,7 @@ evidence:
     reason: The speaker contrasts hitting with looping and defines looping as wrapping around the ball with curved friction.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: I-luBOL9IxI
       start_ms: 403233
@@ -1046,7 +1041,7 @@ evidence:
     reason: The speaker explicitly contrasts two topspin techniques and emphasizes accelerating through the ball for looping.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: KG90HOykXCs
       start_ms: 22500
@@ -1061,7 +1056,7 @@ evidence:
     reason: The transcript is centered on looping with heavy spin, power loops, and forehand examples of lifting and brushing the ball.
     confidence: 0.92
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8143qxSjk5A
       start_ms: 105533
@@ -1077,7 +1072,7 @@ evidence:
     reason: The speaker names looping with more topspin and demonstrates looping heavy backspin, then hitting through it after the initial loop.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: x8OSRSRukeI
       start_ms: 718466
@@ -1093,7 +1088,7 @@ evidence:
     reason: The speaker explicitly says they are teaching how to generate more spin and how to make the loop spinnier.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: xo9M8v9k564
       start_ms: 25400
@@ -1108,7 +1103,7 @@ evidence:
     reason: The speaker distinguishes loop from drive, says the forearm drops to create arc, and describes looping backspin with brush-then-drive power.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: HHyaeCbQ_ec
       start_ms: 459600
@@ -1125,7 +1120,7 @@ evidence:
     reason: The speaker explicitly says the topic is the forehand topspin loop and contrasts it with a half-loop, half-hit.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Myj_Ros1xV8
       start_ms: 10033
@@ -1141,7 +1136,7 @@ evidence:
     reason: The speaker directly answers that the backswing is downward and specifically diagonally down and back.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Myj_Ros1xV8
       start_ms: 17400
@@ -1157,7 +1152,7 @@ evidence:
     reason: The speaker explicitly refers to looping, power looping, and loop drive as the attacking follow-up after serve and recovery.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: OQ7fB6yS8Fk
       start_ms: 373600
@@ -1173,7 +1168,7 @@ evidence:
     reason: He describes contacting low, brushing up until above the net, and only then applying power.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: DBEaBAv16Y8
       start_ms: 466333
@@ -1189,7 +1184,7 @@ evidence:
     reason: The speaker explicitly says they are learning the forehand topspin loop and distinguishes it from a drive by its arcing, wrapping motion.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: GdS4nZDb6ug
       start_ms: 210866
@@ -1204,7 +1199,7 @@ evidence:
     reason: The speaker refers to looping high or early when the receive is not suited to push-flick, and to looping long balls.
     confidence: 0.88
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 0D6FzvP33Xs
       start_ms: 909700
@@ -1219,7 +1214,7 @@ evidence:
     reason: The speaker explicitly says the lesson is about the forehand topspin loop and frames spin handling as the main challenge.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: f7Bf-QRn-9Q
       start_ms: 0
@@ -1234,7 +1229,7 @@ evidence:
     reason: The speaker explicitly says the lesson covers looping backspin on both forehand and backhand sides and then transitions to the forehand.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: U3PEiARb5fk
       start_ms: 11933
@@ -1248,7 +1243,7 @@ evidence:
     reason: The transcript describes looping half-long balls with a parallel racket face, forearm snap timing, and arc control without changing power.
     confidence: 0.91
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: FOPBXdIaKFA
       start_ms: 420066
@@ -1263,7 +1258,7 @@ evidence:
     reason: The transcript explicitly introduces and contrasts the forehand topspin loop with a flat hit and explains its spin-focused purpose.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 3EtitCzSYqY
       start_ms: 0
@@ -1278,7 +1273,7 @@ evidence:
     reason: The speaker explicitly practices from the forehand position and describes the loop's wrap-around finish and body turn.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: j4tQrFa7iSQ
       start_ms: 462533
@@ -1295,7 +1290,7 @@ evidence:
     reason: The lesson starts with forehand before backhand, and the forearm is identified as the key hitting action for the close-table attack.
     confidence: 0.83
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Mo-eWN8_354
       start_ms: 106200
@@ -1310,7 +1305,7 @@ evidence:
     reason: The speaker explicitly says the lesson covers the forehand topspin loop and mentions looping against topspin and backspin.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: A56gHfnvSCc
       start_ms: 0
@@ -1325,7 +1320,7 @@ evidence:
     reason: The coach explicitly switches to looping, contrasts it with driving, and describes the needed patient rhythm for the forehand loop.
     confidence: 0.92
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: -uuSx6fU8yY
       start_ms: 471600
@@ -1340,7 +1335,7 @@ evidence:
     reason: The speaker is explicitly discussing looping backspin, comparing a spinny loop versus a power loop, and describing how to loop different incoming balls.
     confidence: 0.9
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hRHJawAZzNc
       start_ms: 65166
@@ -1356,7 +1351,7 @@ evidence:
     reason: The transcript is explicitly about generating spin for the loop and later names the forehand loop against backspin and power loop trajectory.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 0QxW3Un68gg
       start_ms: 862033
@@ -1372,7 +1367,7 @@ evidence:
     reason: The transcript contrasts looping and driving, then explains forehand loop behavior, trajectory, and brushing requirements across distances.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hDpdmRuaLMY
       start_ms: 885833
@@ -1389,7 +1384,7 @@ evidence:
     reason: The speaker explicitly frames the lesson as how to loop after serve and calls it a simplified loop for crucial moments.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Q-V95wNbaP0
       start_ms: 0
@@ -1405,7 +1400,7 @@ evidence:
     reason: The transcript discusses power loops, looping against backspin, and adjusting loop quality based on position and timing.
     confidence: 0.91
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 0ZHQIcZARgE
       start_ms: 610833
@@ -1422,7 +1417,7 @@ evidence:
     reason: The forehand topspin section explicitly describes looping with grounded legs and slightly larger body rotation than a drive.
     confidence: 0.94
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: iae3EAgyUXU
       start_ms: 274600
@@ -1437,7 +1432,7 @@ evidence:
     reason: The speaker explicitly defines the forehand loop and its larger arc and closed racket angle.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: CGidweVwLYw
       start_ms: 147633
@@ -1452,7 +1447,7 @@ evidence:
     reason: The speaker demonstrates a compact motion that becomes a full loop, describes the basic forehand trajectory, and explicitly refers to looping a topspin ball.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: DfQ_yBSS_bk
       start_ms: 358366
@@ -1467,7 +1462,7 @@ evidence:
     reason: The transcript refers to opening loops, looping against backspin, and looping long fast pushes, which are all forehand-loop use cases.
     confidence: 0.87
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hNnojmq7CqU
       start_ms: 129633
@@ -1483,7 +1478,7 @@ evidence:
     reason: The speaker explicitly says the topic is the forehand topspin loop and describes it as a fundamental skill to master.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: UhJHyel0ogQ
       start_ms: 12133
@@ -1498,7 +1493,7 @@ evidence:
     reason: The transcript references loop attempts, power loops, and adding power through relaxation and acceleration, matching the forehand loop concept broadly.
     confidence: 0.83
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: YS3IObI6Gaw
       start_ms: 843966
@@ -1514,7 +1509,7 @@ evidence:
     reason: The speaker directly contrasts loops with drives/blocks and says adding spin and power requires covering the ball and brushing over the top.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: a1vta4dOA2Q
       start_ms: 485066
@@ -1530,7 +1525,7 @@ evidence:
     reason: The speaker repeatedly frames the instruction as looping, including looping backspin, heavy topspin loop, and improving the loop against backspin.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 5-fClb3FOp8
       start_ms: 518233
@@ -1544,7 +1539,7 @@ evidence:
     reason: The transcript discusses looping in practice versus matches and then breaks down looping against backspin.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: D2hk2kkCdfI
       start_ms: 10033
@@ -1559,7 +1554,7 @@ evidence:
     reason: The speaker explicitly frames the lesson as topspin rhythm and describes looping on the rise, at the apex, and on the drop.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: fX0-3KtEzUY
       start_ms: 40200
@@ -1576,7 +1571,7 @@ evidence:
     reason: The transcript explicitly labels the topspin loop and contrasts its larger, behind-the-body backswing with the forehand drive.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: HEQjcWoP87I
       start_ms: 508066
@@ -1592,7 +1587,7 @@ evidence:
     reason: The speaker explicitly says players must learn to loop against topspin and describes the upward-forward brushing motion.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: swjcy483f2w
       start_ms: 319366
@@ -1607,7 +1602,7 @@ evidence:
     reason: The speaker discusses forehand attack against backspin and specifically mentions executing a direct forehand loop and learning to attack off a short serve.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: WuWV6MlZQ_Q
       start_ms: 158966
@@ -1621,7 +1616,7 @@ evidence:
     reason: The speaker explicitly frames the forehand mechanics and then explains how looping should be executed with forward driving, solid contact, and controlled arc.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 7JSZZSSjCqo
       start_ms: 788766
@@ -1636,7 +1631,7 @@ evidence:
     reason: The speaker explicitly names the modern forehand loop as a sweeping loop and describes the sweeping motion parallel to the table.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: D596gPtN634
       start_ms: 0
@@ -1651,7 +1646,7 @@ evidence:
     reason: The speaker explicitly frames the topic as improving forehand loop spin and stability, and says maximizing spin is the key goal.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: LWx10iPhjxU
       start_ms: 48966
@@ -1666,7 +1661,7 @@ evidence:
     reason: The speaker references looping a forehand backspin on the move and using a forehand for the middle two-thirds and wide forehand balls.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: fYJgxN1x7QM
       start_ms: 629200
@@ -1681,7 +1676,7 @@ evidence:
     reason: The speaker states the session is about body mechanics for the forehand loop against backspin.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: gV-iuz4JnXc
       start_ms: 12800
@@ -1695,7 +1690,7 @@ evidence:
     reason: The speaker contrasts the modern loop with an old-school high, slow ball and says amateurs should practice driving forward into the ball while adding brush.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: mvVfwjdxe34
       start_ms: 25900
@@ -1711,7 +1706,7 @@ evidence:
     reason: The transcript explicitly discusses looping backspin, power looping, and using upper-half contact with follow-through and friction.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: O0jOeCzzcZA
       start_ms: 272800
@@ -1727,7 +1722,7 @@ evidence:
     reason: The speaker explicitly says they are breaking down the forehand topspin loop and contrasts it with flat hitting.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: KYqNsz4vOmI
       start_ms: 12100
@@ -1742,7 +1737,7 @@ evidence:
     reason: The speaker explicitly says they are breaking down forehand stroke mechanics and identifies the technical term as loop drive.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: vLLKF8m8J1U
       start_ms: 0
@@ -1757,7 +1752,7 @@ evidence:
     reason: The transcript centers the discussion on the forehand and explicitly links the same body-led structure to looping and looping backspin.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: fILPmFV3eyQ
       start_ms: 546866
@@ -1771,7 +1766,7 @@ evidence:
     reason: The speaker explicitly describes the modern forehand loop against backspin as starting close to the body and extending through the second half of the stroke.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 52Lq-QQGqpw
       start_ms: 94166
@@ -1786,7 +1781,7 @@ evidence:
     reason: The speaker discusses looping backspin and topspin, including angle changes and the difference between passive and offensive loops.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ySisgDGZvDw
       start_ms: 238200
@@ -1802,7 +1797,7 @@ evidence:
     reason: The speaker explicitly discusses forehand loop direction choices and preparation differences between cross-court and down-the-line loops.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: fAEn9wkWGd8
       start_ms: 4866
@@ -1817,7 +1812,7 @@ evidence:
     reason: The speaker names the power loop, says slow loops without spin or speed are not threatening, and describes the correct outcome as a high-quality power loop.
     confidence: 0.94
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: tFXmtu4Egw8
       start_ms: 504100
@@ -1833,7 +1828,7 @@ evidence:
     reason: The speaker explicitly frames the drill as practice for looping the ball and says it is the same principle as the regular loop.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Xj55m2HY2YY
       start_ms: 45200
@@ -1848,7 +1843,7 @@ evidence:
     reason: The speaker gives a direct tactical instruction to loop deep balls to the forehand.
     confidence: 0.88
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: _U8F62ukqK4
       start_ms: 25800
@@ -1862,7 +1857,7 @@ evidence:
     reason: The speaker names the loop variants directly and explains that they are powerful when the ball stays on the racket through most of the stroke.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: lqla0_ORKNA
       start_ms: 137266
@@ -1877,7 +1872,7 @@ evidence:
     reason: The speaker explicitly mentions a forehand loop against backspin and says looping should be learned to improve topspin quality, with mid-distance as the loop range.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: XBi28mLBv7Q
       start_ms: 676066
@@ -1892,7 +1887,7 @@ evidence:
     reason: The speaker references the forehand, says to wait for the ball and add spin, and emphasizes forearm acceleration and relaxation before exploding.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: XaU6LtcP_n0
       start_ms: 266700
@@ -1908,7 +1903,7 @@ evidence:
     reason: The speaker explicitly introduces the topic as continuous forehand looping in single-ball practice.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: dGUGcaM8EOc
       start_ms: 880
@@ -1918,6 +1913,244 @@ evidence:
         - dGUGcaM8EOc:00000
         - dGUGcaM8EOc:00001
         - dGUGcaM8EOc:00002
+  - id: 0QxW3Un68gg-concept-forehand-loop-codex-reviewed
+    evidence_type: explanation
+    excerpt: For a forehand loop against backspin, start lower and swing from 6 o’clock to 12 o’clock in a semicircular arc; a power loop uses the same trajectory faster and more compactly.
+    reason: These contiguous segments directly explain the forehand loop trajectory and identify the faster, compact version as a power loop. The proposal matches the existing durable Forehand loop concept; no new concept is needed.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 0QxW3Un68gg
+      start_ms: 862033
+      end_ms: 885933
+      url: https://www.youtube.com/watch?v=0QxW3Un68gg&t=862s
+      segment_ids:
+        - 0QxW3Un68gg:00165
+        - 0QxW3Un68gg:00166
+        - 0QxW3Un68gg:00167
+        - 0QxW3Un68gg:00168
+  - id: 4cbTW4pTCuM-concept-forehand-loop-codex-reviewed
+    evidence_type: explanation
+    excerpt: This is a forehand loop, described as a high-level topspin loop.
+    reason: The selected contiguous transcript span explicitly identifies the stroke as a forehand loop and describes it as a topspin loop, directly matching the existing concept.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 4cbTW4pTCuM
+      start_ms: 509166
+      end_ms: 516233
+      url: https://www.youtube.com/watch?v=4cbTW4pTCuM&t=509s
+      segment_ids:
+        - 4cbTW4pTCuM:00241
+        - 4cbTW4pTCuM:00242
+  - id: 6Lw_HobLgSY-concept-forehand-loop-codex-reviewed
+    evidence_type: explanation
+    excerpt: For a high, slow incoming ball, use a forehand topspin and focus on generating friction while minimizing impact.
+    reason: The selected contiguous span identifies the forehand topspin, describes the high-and-slow incoming ball, and explains the friction-focused execution. It supports the existing Forehand loop concept; distance and skill level are not directly established.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 6Lw_HobLgSY
+      start_ms: 27866
+      end_ms: 42533
+      url: https://www.youtube.com/watch?v=6Lw_HobLgSY&t=27s
+      segment_ids:
+        - 6Lw_HobLgSY:00010
+        - 6Lw_HobLgSY:00011
+        - 6Lw_HobLgSY:00012
+        - 6Lw_HobLgSY:00013
+        - 6Lw_HobLgSY:00014
+        - 6Lw_HobLgSY:00015
+        - 6Lw_HobLgSY:00016
+        - 6Lw_HobLgSY:00017
+  - id: Ad8Ox7xSvSU-concept-forehand-loop-codex-reviewed
+    evidence_type: explanation
+    excerpt: Forehand topspin looping is difficult to repeat when the legs and center of gravity are unstable.
+    reason: This contiguous 16-second span explicitly identifies forehand topspin looping and explains that unstable legs and center of gravity make repeated loops difficult.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: Ad8Ox7xSvSU
+      start_ms: 139440
+      end_ms: 155160
+      url: https://www.youtube.com/watch?v=Ad8Ox7xSvSU&t=139s
+      segment_ids:
+        - Ad8Ox7xSvSU:00042
+        - Ad8Ox7xSvSU:00043
+        - Ad8Ox7xSvSU:00044
+        - Ad8Ox7xSvSU:00045
+        - Ad8Ox7xSvSU:00046
+  - id: deTFdwcfnrE-concept-forehand-loop-codex-reviewed
+    evidence_type: explanation
+    excerpt: For the forehand loop, the forearm is lower than the elbow, then rises above it.
+    reason: This contiguous 8.16-second explanation directly describes forehand-loop forearm mechanics and supports the existing Forehand loop concept.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: deTFdwcfnrE
+      start_ms: 152720
+      end_ms: 160880
+      url: https://www.youtube.com/watch?v=deTFdwcfnrE&t=152s
+      segment_ids:
+        - deTFdwcfnrE:00052
+        - deTFdwcfnrE:00053
+        - deTFdwcfnrE:00054
+  - id: GdS4nZDb6ug-concept-forehand-loop-codex-reviewed
+    evidence_type: definition
+    excerpt: A loop uses a fluid, rounded racket trajectory to wrap around the ball rather than a linear drive; a topspin loop applies this wrapping motion on the forehand.
+    reason: This contiguous 26.0-second span directly contrasts the loop's rounded, wrapping trajectory with the drive's linear motion and explicitly identifies the topspin loop as applying on the forehand.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: GdS4nZDb6ug
+      start_ms: 199633
+      end_ms: 225600
+      url: https://www.youtube.com/watch?v=GdS4nZDb6ug&t=199s
+      segment_ids:
+        - GdS4nZDb6ug:00044
+        - GdS4nZDb6ug:00045
+        - GdS4nZDb6ug:00046
+        - GdS4nZDb6ug:00047
+        - GdS4nZDb6ug:00048
+  - id: idAN8cPDZ7w-concept-forehand-loop-codex-reviewed
+    evidence_type: explanation
+    excerpt: Add forward movement when hitting, then strike forward and brush the ball to create spin.
+    reason: These contiguous segments directly explain the looping action as forward movement combined with brushing to produce spin, matching the existing Forehand loop concept. The selected span is under 30 seconds.
+    confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: idAN8cPDZ7w
+      start_ms: 169566
+      end_ms: 185900
+      url: https://www.youtube.com/watch?v=idAN8cPDZ7w&t=169s
+      segment_ids:
+        - idAN8cPDZ7w:00022
+        - idAN8cPDZ7w:00023
+  - id: D596gPtN634-concept-forehand-loop-codex-reviewed
+    evidence_type: definition
+    excerpt: 'Modern professional forehand loops are about the “sweeping loop”: staying low and sweeping across the ball parallel to the table.'
+    reason: These contiguous segments explicitly name the forehand loop and describe its low sweeping motion parallel to the table, directly supporting the existing concept.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: D596gPtN634
+      start_ms: 337866
+      end_ms: 345166
+      url: https://www.youtube.com/watch?v=D596gPtN634&t=337s
+      segment_ids:
+        - D596gPtN634:00071
+        - D596gPtN634:00072
+  - id: gV-iuz4JnXc-concept-forehand-loop-codex-reviewed
+    evidence_type: explanation
+    excerpt: For a forehand loop against backspin, keep the backswing compact so you can maintain consistency while moving.
+    reason: This contiguous 22.3-second span directly discusses the forehand loop against backspin and explains that a compact backswing supports consistency while moving. The supplied concept matches the durable topic and its exact existing ID is used.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: gV-iuz4JnXc
+      start_ms: 260066
+      end_ms: 282300
+      url: https://www.youtube.com/watch?v=gV-iuz4JnXc&t=260s
+      segment_ids:
+        - gV-iuz4JnXc:00052
+        - gV-iuz4JnXc:00053
+        - gV-iuz4JnXc:00054
+        - gV-iuz4JnXc:00055
+        - gV-iuz4JnXc:00056
+  - id: iae3EAgyUXU-concept-forehand-loop-codex-reviewed
+    evidence_type: explanation
+    excerpt: When playing a forehand topspin, keep your center of gravity stable and your legs grounded. Rotate from the hips and waist; compared with a drive, the loop uses a slightly larger range of rotation without vertical or lateral movement.
+    reason: This contiguous 26.5-second span directly explains the forehand loop as a topspin stroke with a stable base, grounded legs, and larger hip-and-waist rotation than a drive.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: iae3EAgyUXU
+      start_ms: 274600
+      end_ms: 301100
+      url: https://www.youtube.com/watch?v=iae3EAgyUXU&t=274s
+      segment_ids:
+        - iae3EAgyUXU:00057
+        - iae3EAgyUXU:00058
+        - iae3EAgyUXU:00059
+        - iae3EAgyUXU:00060
+        - iae3EAgyUXU:00061
+        - iae3EAgyUXU:00062
+  - id: LopC3UNnOXM-concept-forehand-loop-codex-reviewed
+    evidence_type: explanation
+    excerpt: The forehand topspin, including the high-toss topspin, generates friction and is used against a high, slow incoming ball.
+    reason: Segments 00008–00013 form one contiguous topic moment that explicitly names forehand topspin, explains generating friction, identifies the high-toss topspin, and states it is used against a high, slow ball.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: LopC3UNnOXM
+      start_ms: 27200
+      end_ms: 41866
+      url: https://www.youtube.com/watch?v=LopC3UNnOXM&t=27s
+      segment_ids:
+        - LopC3UNnOXM:00008
+        - LopC3UNnOXM:00009
+        - LopC3UNnOXM:00010
+        - LopC3UNnOXM:00011
+        - LopC3UNnOXM:00012
+        - LopC3UNnOXM:00013
+  - id: lpiuaVgCbK4-concept-forehand-loop-codex-reviewed
+    evidence_type: explanation
+    excerpt: The forehand loop is a topspin stroke involving forward motion and a compact stroke.
+    reason: These contiguous segments identify the forehand loop as a forehand topspin stroke and describe topspin as forward motion with a compact stroke. The selected span is under 30 seconds and directly supports the excerpt.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: lpiuaVgCbK4
+      start_ms: 114960
+      end_ms: 136840
+      url: https://www.youtube.com/watch?v=lpiuaVgCbK4&t=114s
+      segment_ids:
+        - lpiuaVgCbK4:00015
+        - lpiuaVgCbK4:00016
+        - lpiuaVgCbK4:00017
+  - id: mvVfwjdxe34-concept-forehand-loop-codex-reviewed
+    evidence_type: explanation
+    excerpt: The modern high-spin loop is not just lifting the ball upward; it adds more brush while moving forward into the shot.
+    reason: These contiguous segments directly explain the loop as forward movement combined with added brushing, distinguishing it from a purely upward lift.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: mvVfwjdxe34
+      start_ms: 37600
+      end_ms: 51400
+      url: https://www.youtube.com/watch?v=mvVfwjdxe34&t=37s
+      segment_ids:
+        - mvVfwjdxe34:00007
+        - mvVfwjdxe34:00008
+  - id: J7Lm5IL-ggs-concept-forehand-loop-codex-reviewed
+    evidence_type: explanation
+    excerpt: 'The loop requires relaxation and acceleration: stay relaxed through the backswing, then tighten at the instant of swinging upward.'
+    reason: These contiguous segments directly explain the loop's relaxed backswing and acceleration at the upward swing, supporting the existing Forehand loop concept.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: J7Lm5IL-ggs
+      start_ms: 293033
+      end_ms: 307533
+      url: https://www.youtube.com/watch?v=J7Lm5IL-ggs&t=293s
+      segment_ids:
+        - J7Lm5IL-ggs:00066
+        - J7Lm5IL-ggs:00067
+        - J7Lm5IL-ggs:00068
 relations:
   - relation_type: used_with
     target_concept_id: concept-contact-point

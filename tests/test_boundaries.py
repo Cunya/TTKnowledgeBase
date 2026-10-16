@@ -77,6 +77,48 @@ def test_complete_longer_citation_is_not_flagged() -> None:
     assert assessment.snapped_end_ms == assessment.end_ms == 5_000
 
 
+def test_caption_duration_conflict_is_visible_and_cannot_be_envelope_repaired(tmp_path):
+    from ruamel.yaml import YAML
+
+    from processors.pipeline import repair_source_envelopes, validate_corpus
+
+    segment = Segment(id="s1", video_id="boundary-video", text="Keep a stable stance.",
+                      normalized_text="Keep a stable stance.", start_ms=0, duration_ms=6033)
+    video = make_video([segment], duration_ms=6000)
+    assessment = assess_boundary(video, [segment.id])
+    assert assessment.raw_end_ms == 6033
+    assert "caption_exceeds_video_duration" in assessment.flags
+    assert assessment.needs_context
+    concept = Concept(id="c", slug="c", label="Stable stance", short_definition="Keep a stable stance.",
+                      concept_type="concept", evidence=[ConceptEvidence(id="e", evidence_type="explanation",
+                      excerpt="Keep a stable stance.", reason="Maintain balance.", confidence=0.9,
+                      visual_status="not_visual", source=SourceSpan(video_id=video.id, start_ms=0, end_ms=6000,
+                      url=video.canonical_url+"&t=0s", segment_ids=[segment.id]))])
+    assert any("selected caption ends" in error for error in validate_corpus([concept], [video]))
+    path = tmp_path / "c.yaml"
+    with path.open("w", encoding="utf-8") as stream:
+        YAML().dump(concept.model_dump(mode="json"), stream)
+    before = path.read_bytes()
+    assert repair_source_envelopes(tmp_path, [video])["blocked"] == 1
+    assert path.read_bytes() == before
+
+
+def test_dispersed_citation_reports_every_dropped_segment() -> None:
+    segments = [
+        Segment(
+            id="s1", video_id="boundary-video", text="First topic.", normalized_text="First topic.", start_ms=0, duration_ms=5_000
+        ),
+        Segment(
+            id="s2", video_id="boundary-video", text="Distant topic.", normalized_text="Distant topic.", start_ms=40_000, duration_ms=5_000
+        ),
+    ]
+    assessment = assess_boundary(make_video(segments), ["s1", "s2"])
+    assert assessment is not None
+    assert "dispersed_citation" in assessment.flags
+    assert assessment.dropped_segment_ids == ("s2",)
+    assert assessment.needs_context
+
+
 def test_report_counts_missing_transcripts_and_boundary_flags() -> None:
     segments = [
         Segment(

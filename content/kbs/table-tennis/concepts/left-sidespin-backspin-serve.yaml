@@ -209,7 +209,7 @@ evidence:
     reason: The speaker explicitly describes left side spin and creating left side spin over the table.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: SF0Sv2ZzrRI
       start_ms: 535000
@@ -224,7 +224,7 @@ evidence:
     reason: Directly names the serve as side spin back spin and repeats that label later.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: E6sGbY4sQH0
       start_ms: 125920
@@ -240,7 +240,7 @@ evidence:
     reason: The speaker explicitly says they will teach left side spin serves and describes them as producing side spin back spin.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: RjgITcuxl5I
       start_ms: 178160
@@ -256,7 +256,7 @@ evidence:
     reason: The serve is executed with forward-then-downward motion and is described as looking like heavy backspin before the opponent pushes it up.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: sUDQYcsXNDo
       start_ms: 25600
@@ -279,7 +279,7 @@ evidence:
     reason: The transcript explicitly names sidespin-under/backspin and explains the downward cutting motion used for this serve type.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: VCsrR_8ULG4
       start_ms: 567666
@@ -294,7 +294,7 @@ evidence:
     reason: The speaker explicitly introduces left side spin and explains how the visible motion corresponds to half spin with backspin emphasis.
     confidence: 0.92
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: VOX-e4IR2xg
       start_ms: 225959
@@ -316,7 +316,7 @@ evidence:
     reason: The speaker explicitly identifies the serve type as sidespin-underspin and tells listeners to practice left sidespin to find the feel.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: LfFnXX51qHw
       start_ms: 258166
@@ -331,7 +331,7 @@ evidence:
     reason: The speaker explicitly mentions left sidespin, half-spin, no-spin, and mixed backspin in the context of serve and push handling.
     confidence: 0.89
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 03R-8mhgUUU
       start_ms: 261666
@@ -347,7 +347,7 @@ evidence:
     reason: The speaker identifies side-under and side-top as contrasted serves, then later names hook side-topspin and hook side-backspin as training targets.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: tz4gFEoTOTc
       start_ms: 501133
@@ -362,7 +362,7 @@ evidence:
     reason: The speaker describes a left-sidespin-backspin serve to the deep middle/backhand side and explains the likely return pattern it creates.
     confidence: 0.92
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: bmK4umFK2Gs
       start_ms: 477200
@@ -371,6 +371,28 @@ evidence:
       segment_ids:
         - bmK4umFK2Gs:00097
         - bmK4umFK2Gs:00101
+  - id: E6sGbY4sQH0-concept-left-sidespin-backspin-serve-codex-reviewed
+    evidence_type: explanation
+    excerpt: The hook push uses a sideways hooking motion to create sidespin-backspin, with lowered center of gravity and added weight transfer.
+    reason: The contiguous 28.8-second span directly names the hook push, sideways hooking motion, sidespin-backspin result, lowered center of gravity, and weight transfer. The unsupported forehand and intermediate-level facets were omitted.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: E6sGbY4sQH0
+      start_ms: 121920
+      end_ms: 150720
+      url: https://www.youtube.com/watch?v=E6sGbY4sQH0&t=121s
+      segment_ids:
+        - E6sGbY4sQH0:00048
+        - E6sGbY4sQH0:00049
+        - E6sGbY4sQH0:00050
+        - E6sGbY4sQH0:00051
+        - E6sGbY4sQH0:00052
+        - E6sGbY4sQH0:00053
+        - E6sGbY4sQH0:00054
+        - E6sGbY4sQH0:00055
+        - E6sGbY4sQH0:00056
 relations:
   - relation_type: variation_of
     target_concept_id: concept-sidespin-topspin-serve

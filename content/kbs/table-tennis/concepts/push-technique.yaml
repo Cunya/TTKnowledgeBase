@@ -6,13 +6,7 @@ aliases:
   - short push action
 short_definition: Keep the push compact, close to the ball, and supported by an appropriate racket angle rather than a large backswing.
 evidence_summary: >-
-  A good push uses a slightly upright racket angle, compact forward-and-slightly-downward motion,
-  and firm contact under or behind the ball. The stroke should be placement-first and controlled,
-  with body weight and a concise action creating the main effect rather than a loose wrist or
-  overly flat face. Because the push is a high-frequency match shot, it must be treated seriously
-  and executed with consistency, spin, and enough compact force to be effective.
-evidence_summary_source_hash: "sha256:bfb0d9ade12ab92d4adfbc49a02f784bbea00e0f864f20d7c9c24ca9f00e1a6f"
-evidence_summary_generator: "codex"
+  Keep the push compact and adjust the racket angle to the incoming ball. In the regular-backspin example, an overly flat face is discouraged in favor of a slightly more upright, down-forward angle. The correction distinguishes this from the heavier-spin example rather than prescribing one angle for every return.
 concept_type: push-mechanic
 facets:
   category:
@@ -26,37 +20,45 @@ review_status: approved
 evidence:
   - id: p3hweUir1Mg-candidate-push-racket-angle-upright-1
     evidence_type: explanation
-    excerpt: In a push against regular backspin, the racket face should be slightly upright and facing down-forward rather than lying flat, which helps keep the ball low and on the table.
-    reason: The speaker contrasts an overly flat racket with a slightly upright racket angle for effective pushing against normal backspin.
+    excerpt: An overly flat racket angle is identified as a common pushing problem.
+    reason: An overly flat racket angle is identified as a common pushing problem.
     confidence: 0.92
     visual_status: transcript_inferred
     review_status: approved
     source:
       video_id: p3hweUir1Mg
-      start_ms: 5300
+      start_ms: 2500
       end_ms: 7166
-      url: "https://www.youtube.com/watch?v=p3hweUir1Mg&t=5s"
-      segment_ids: &id001
-        - "p3hweUir1Mg:00002"
+      url: "https://www.youtube.com/watch?v=p3hweUir1Mg&t=2s"
+      segment_ids:
+        - p3hweUir1Mg:00001
+        - p3hweUir1Mg:00002
   - id: p3hweUir1Mg-candidate-push-racket-angle-upright-2
     evidence_type: explanation
-    excerpt: In a push against regular backspin, the racket face should be slightly upright and facing down-forward rather than lying flat, which helps keep the ball low and on the table.
-    reason: The speaker contrasts an overly flat racket with a slightly upright racket angle for effective pushing against normal backspin.
+    excerpt: Against regular backspin, avoid hitting with an overly flat racket. Use a slightly more upright angle facing down and forward to lower the ball.
+    reason: Against regular backspin, avoid hitting with an overly flat racket. Use a slightly more upright angle facing down and forward to lower the ball.
     confidence: 0.92
     visual_status: transcript_inferred
     review_status: approved
     source:
       video_id: p3hweUir1Mg
       start_ms: 30866
-      end_ms: 47766
+      end_ms: 54200
       url: "https://www.youtube.com/watch?v=p3hweUir1Mg&t=30s"
       segment_ids:
-        - "p3hweUir1Mg:00009"
-        - "p3hweUir1Mg:00014"
+        - p3hweUir1Mg:00009
+        - p3hweUir1Mg:00010
+        - p3hweUir1Mg:00011
+        - p3hweUir1Mg:00012
+        - p3hweUir1Mg:00013
+        - p3hweUir1Mg:00014
+        - p3hweUir1Mg:00015
+        - p3hweUir1Mg:00016
+        - p3hweUir1Mg:00017
   - id: p3hweUir1Mg-candidate-push-racket-angle-upright-3
     evidence_type: explanation
-    excerpt: In a push against regular backspin, the racket face should be slightly upright and facing down-forward rather than lying flat, which helps keep the ball low and on the table.
-    reason: The speaker contrasts an overly flat racket with a slightly upright racket angle for effective pushing against normal backspin.
+    excerpt: Avoid keeping the racket too flat; the ball going into the net is not attributed simply to an overly upright racket angle.
+    reason: Avoid keeping the racket too flat; the ball going into the net is not attributed simply to an overly upright racket angle.
     confidence: 0.92
     visual_status: transcript_inferred
     review_status: approved
@@ -66,8 +68,8 @@ evidence:
       end_ms: 70400
       url: "https://www.youtube.com/watch?v=p3hweUir1Mg&t=62s"
       segment_ids:
-        - "p3hweUir1Mg:00019"
-        - "p3hweUir1Mg:00020"
+        - p3hweUir1Mg:00019
+        - p3hweUir1Mg:00020
   - id: p3hweUir1Mg-candidate-compact-push-no-backswing-1
     evidence_type: definition
     excerpt: On short balls, the push should be compact with little or no backswing; a larger backswing is reserved for longer balls and otherwise makes control harder.
@@ -259,7 +261,7 @@ evidence:
     reason: The speaker explains stepping in, avoiding a backswing, executing directly, and keeping the movement small.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: mTnHV7k_Wes
       start_ms: 56399
@@ -277,7 +279,7 @@ evidence:
     reason: The speaker explicitly defines the traditional push as spin-oriented, heavy backspin, and describes the forward-and-slightly-downward motion.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: StQ86EhPFpo
       start_ms: 70360
@@ -294,7 +296,7 @@ evidence:
     reason: The speaker explicitly says push is a control technique, not an attacking one.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: SF0Sv2ZzrRI
       start_ms: 288360
@@ -309,7 +311,7 @@ evidence:
     reason: The speaker contrasts pushing with flick and side push, and explicitly says they are not teaching the traditional push but pushing with a sideways force direction.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: L-m_mjGB5X0
       start_ms: 2560
@@ -324,7 +326,7 @@ evidence:
     reason: The coach states that the player is pushing too far forward and needs a brushing motion instead.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: OMgoeirhpyc
       start_ms: 553720
@@ -341,7 +343,7 @@ evidence:
     reason: The speaker directly says the drop shot is the same as short push and instructs keeping the racket vertical and taking it early.
     confidence: 0.92
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: TMrN47uIHiI
       start_ms: 537560
@@ -358,7 +360,7 @@ evidence:
     reason: The speaker describes slow push, short explosive force, and warns not to let the push go too high or too long.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: xmQrJ5l5A9c
       start_ms: 375300
@@ -376,7 +378,7 @@ evidence:
     reason: The speaker defines push timing and direction as peak contact with forward-downward force and emphasizes consistency over speed.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: MV98YAD9lzs
       start_ms: 45560
@@ -393,7 +395,7 @@ evidence:
     reason: The speaker describes common pushing errors and contrasts them with a more direct, compact forward contact on backspin balls.
     confidence: 0.89
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: R9InWNDCJQM
       start_ms: 299400
@@ -411,7 +413,7 @@ evidence:
     reason: The motion should stay constant-speed, low, and controlled, with trajectory prioritized over spin.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: H0sbIUpUNLY
       start_ms: 336600
@@ -426,7 +428,7 @@ evidence:
     reason: The speaker defines the push as placement-first, under-ball contact, chopping downward, and using body weight rather than wrist brushing.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: zR5tddUgfGQ
       start_ms: 225200
@@ -445,7 +447,7 @@ evidence:
     reason: 'The transcript details the mechanics of a standard push: stay close, accelerate through contact, keep a vertical racket face, lower starting height for more spin, and use a stable wrist with forearm guidance.'
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: h5jUJL_P82w
       start_ms: 296333
@@ -464,7 +466,7 @@ evidence:
     reason: 'The speaker gives two principles for a better push: keep the ball low and push it long.'
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 7jWqEsHtN3Y
       start_ms: 85800
@@ -480,7 +482,7 @@ evidence:
     reason: The speaker explicitly frames the push shot as a key, frequently used match shot that amateurs must take seriously.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: D1cBF0nsjKo
       start_ms: 480
@@ -496,7 +498,7 @@ evidence:
     reason: 'The speaker defines the requirements of a good push: low ball, speed, and a more vertical racket angle, with forehand and backhand differences.'
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: bxRRxlAJnmc
       start_ms: 90833
@@ -512,7 +514,7 @@ evidence:
     reason: The speaker repeatedly discusses pushing as the short-ball receive and describes how it should be performed.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: wSzmpXHp64Q
       start_ms: 42100
@@ -528,7 +530,7 @@ evidence:
     reason: 'The speaker explicitly describes how to execute the push: not back-to-front, use sideways brushing, and direct force forward and downward.'
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 03R-8mhgUUU
       start_ms: 136700
@@ -545,7 +547,7 @@ evidence:
     reason: The speaker explicitly says he learned a pushing technique, practiced it, and then adjusted how he pushed.
     confidence: 0.85
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 4dKlFXYLZhc
       start_ms: 124933
@@ -560,7 +562,7 @@ evidence:
     reason: The speaker explicitly instructs not to pull and to simply push forward or the ball floats.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8iEro-p2Q9c
       start_ms: 320266
@@ -578,7 +580,7 @@ evidence:
     reason: The speaker explains pushing diagonally forward, using the forearm forward, and keeping the result long, spinny, and low.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: tiRcYBbJh-k
       start_ms: 234800
@@ -593,7 +595,7 @@ evidence:
     reason: The speaker explicitly contrasts the correct push with hitting through the ball and says to stand the racket up.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: UknMVwzNNr8
       start_ms: 2900
@@ -610,7 +612,7 @@ evidence:
     reason: The speaker explains how to drive the racket bottom forward, toward the table, or toward the net depending on spin, and says the racket should not face the opponent.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: _P1j6GqbR7w
       start_ms: 25900
@@ -626,7 +628,7 @@ evidence:
     reason: The speaker contrasts a shorter brushing distance and smaller motion with staying closer to the ball, noting that this enables a direct chop.
     confidence: 0.86
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: j098z-YOm20
       start_ms: 264900
@@ -644,7 +646,7 @@ evidence:
     reason: 'The speaker gives core push mechanics: contact behind the ball, not under it, use brushing for spin, and complete the stroke against backspin.'
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: -iWLwSvOJ2U
       start_ms: 77566
@@ -661,7 +663,7 @@ evidence:
     reason: The transcript repeatedly instructs to push forward, go straight, avoid lifting, keep the action consistent, and not add extra arm pull.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: c1OUlMn9IFM
       start_ms: 127066
@@ -677,7 +679,7 @@ evidence:
     reason: The speaker describes a push as a signature shot with speed, spin, a low arc, and a finish directed toward the table rather than forward.
     confidence: 0.92
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: nnBPQr5t_ag
       start_ms: 468533
@@ -695,7 +697,7 @@ evidence:
     reason: The later section explicitly discusses forehand short stroke / forehand short push, poking, and pushing the ball low and spinning while hitting the side of the ball.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 9IzbAEYcS5A
       start_ms: 666333
@@ -712,7 +714,7 @@ evidence:
     reason: They describe the goal as a low, stable, compact, controlled push with good pace.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: mPRFTyZICY4
       start_ms: 47533
@@ -728,7 +730,7 @@ evidence:
     reason: The speaker frames push as a defensive transitional shot and describes the mechanics of a long push down the line, including contact point, downward motion, and using the lower half of the paddle face.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: IgnpsIZW3tM
       start_ms: 254133
@@ -742,7 +744,7 @@ evidence:
     reason: The speaker explicitly describes the push as a smaller chopper-like sideways cutting motion and calls it a neutral return.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ywhpUTdXW7I
       start_ms: 761633
@@ -758,7 +760,7 @@ evidence:
     reason: The speaker explicitly frames the lesson as the push and names the key spin-oriented 'point push' method.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Xho60DR74X0
       start_ms: 218866
@@ -773,7 +775,7 @@ evidence:
     reason: The transcript defines the push spin mechanics as downward brushing, bottom-half contact, and finishing under the ball.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: j4tQrFa7iSQ
       start_ms: 61433
@@ -790,7 +792,7 @@ evidence:
     reason: 'The transcript explains the mechanics of a long push: high-to-low contact, always above the ball, fixed racket angle, and cutting downward to generate spin.'
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: rf-9lmjigbs
       start_ms: 379466
@@ -806,7 +808,7 @@ evidence:
     reason: The speaker introduces pushing as a foundational short-game skill and explains its core brushing action.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: CGidweVwLYw
       start_ms: 557966
@@ -823,7 +825,7 @@ evidence:
     reason: The speaker repeatedly describes the standard push, its contact position, and how to execute it on backspin and half-spin balls.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: QKc7uSJo9mM
       start_ms: 283933
@@ -839,7 +841,7 @@ evidence:
     reason: The speaker defines the push as guiding the ball forward, using pace, following through, and aiming for a low, long return.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: KEOmLdUTC-g
       start_ms: 281666
@@ -850,6 +852,38 @@ evidence:
         - KEOmLdUTC-g:00069
         - KEOmLdUTC-g:00070
         - KEOmLdUTC-g:00071
+  - id: 9IzbAEYcS5A-concept-push-technique-codex-reviewed
+    evidence_type: explanation
+    excerpt: Poke it back, low and spinning, can even send his spin back to him.
+    reason: Segment 00142 directly describes a push-like return that sends the ball back low and spinning. The supplied concept matches the same durable push-technique topic, so the existing concept is retained.
+    confidence: 0.88
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 9IzbAEYcS5A
+      start_ms: 632600
+      end_ms: 638700
+      url: https://www.youtube.com/watch?v=9IzbAEYcS5A&t=632s
+      segment_ids:
+        - 9IzbAEYcS5A:00142
+  - id: D1cBF0nsjKo-concept-push-technique-codex-reviewed
+    evidence_type: explanation
+    excerpt: The key to producing quality on short balls while keeping them on the table is staying close to the ball.
+    reason: This contiguous transcript span directly explains that staying close to the ball is the key to quality pushes on short balls. The supplied concept is the same durable push-mechanics topic, so the existing concept should be accepted.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: D1cBF0nsjKo
+      start_ms: 220840
+      end_ms: 233160
+      url: https://www.youtube.com/watch?v=D1cBF0nsjKo&t=220s
+      segment_ids:
+        - D1cBF0nsjKo:00085
+        - D1cBF0nsjKo:00086
+        - D1cBF0nsjKo:00087
+        - D1cBF0nsjKo:00088
+        - D1cBF0nsjKo:00089
 relations:
   - relation_type: used_with
     target_concept_id: concept-push-contact-and-spin
@@ -858,6 +892,7 @@ relations:
         start_ms: 5300
         end_ms: 7166
         url: "https://www.youtube.com/watch?v=p3hweUir1Mg&t=5s"
-        segment_ids: *id001
+        segment_ids:
+          - "p3hweUir1Mg:00002"
     confidence: 0.9
     review_status: approved

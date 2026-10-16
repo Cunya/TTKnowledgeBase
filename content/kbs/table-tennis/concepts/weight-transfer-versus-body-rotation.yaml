@@ -2,81 +2,93 @@ id: concept-weight-transfer-versus-body-rotation
 slug: weight-transfer-versus-body-rotation
 label: Weight transfer versus body rotation
 aliases:
-  - weight shifted, but I didn't rotate
-  - this is not body rotation
-  - this is just weight transfer
+- weight shifted, but I didn't rotate
+- this is not body rotation
+- this is just weight transfer
 short_definition: Distinguishing linear weight shift from actual torso rotation during a loop or receive motion.
 evidence_summary: >-
-  Weight transfer versus body rotation brings together several connected ideas. A useful contrast
-  is between weight transfer and body rotation and says the example shown is weight transfer
-  rather than rotation. A useful contrast is between rotation and mere weight shift and says the
-  issue is weight transfer, not body rotation. A useful contrast is between tucking the hip and
-  rotating it and says rotation will jam the stroke. Together, these principles show how the topic
-  is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:a9d8969b0b17591251fcae9deac71aefeebc148465cc1df9ec88a4888be7e160"
+  Actual rotation from weight shifting during contact.
+evidence_summary_source_hash: "sha256:4735f5ac761a4da4ac0d0b919e0f45de637697bfc3cab82e69892aa7e4815c92"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
   category:
-    - fundamentals
-    - stroke
+  - fundamentals
+  - stroke
   level:
-    - intermediate
+  - intermediate
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 28e76c66a363f49b19b13f2c8450edf6ab4c5da20fdd6856e04d3a07b54637f9
-  prompt_version: candidate-review-v1
+  input_hash: sha256:1ef38d334de2e4db029d054d911cc9a04d51bb00a63317bf0dc6014d1f61bd60
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: Kg4hLYnEbAs-concept-weight-transfer-vs-rotation-reviewed
-    evidence_type: explanation
-    excerpt: Distinguishing linear weight shift from actual torso rotation during a loop or receive motion.
-    reason: The speaker explicitly contrasts weight transfer with body rotation and says the example shown is weight transfer rather than rotation.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: Kg4hLYnEbAs
-      start_ms: 360600
-      end_ms: 384400
-      url: https://www.youtube.com/watch?v=Kg4hLYnEbAs&t=360s
-      segment_ids:
-        - Kg4hLYnEbAs:00113
-        - Kg4hLYnEbAs:00114
-        - Kg4hLYnEbAs:00115
-        - Kg4hLYnEbAs:00116
-        - Kg4hLYnEbAs:00117
-        - Kg4hLYnEbAs:00118
-  - id: 8fxjEROShs4-concept-weight-transfer-versus-body-rotation-reviewed
-    evidence_type: explanation
-    excerpt: Distinguishing simple weight shift from actual torso rotation during stroke execution.
-    reason: The speaker contrasts rotation with mere weight shift and says the issue is weight transfer, not body rotation.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 8fxjEROShs4
-      start_ms: 830266
-      end_ms: 851000
-      url: https://www.youtube.com/watch?v=8fxjEROShs4&t=830s
-      segment_ids:
-        - 8fxjEROShs4:00113
-        - 8fxjEROShs4:00114
-  - id: jvt-6VNmBzs-cand-4-reviewed
-    evidence_type: explanation
-    excerpt: A distinction where the player should tuck the hip and transfer weight rather than rotate the hip, because rotation jams the stroke.
-    reason: The speaker repeatedly contrasts tucking the hip with rotating it and says rotation will jam the stroke.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: jvt-6VNmBzs
-      start_ms: 92266
-      end_ms: 121566
-      url: https://www.youtube.com/watch?v=jvt-6VNmBzs&t=92s
-      segment_ids:
-        - jvt-6VNmBzs:00017
-        - jvt-6VNmBzs:00020
-        - jvt-6VNmBzs:00023
+- id: Kg4hLYnEbAs-concept-weight-transfer-vs-rotation-reviewed
+  evidence_type: explanation
+  excerpt: Distinguishing linear weight shift from actual torso rotation during a loop or receive motion.
+  reason: The speaker explicitly contrasts weight transfer with body rotation and says the example shown is weight transfer rather than rotation.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Kg4hLYnEbAs
+    start_ms: 360600
+    end_ms: 384400
+    url: https://www.youtube.com/watch?v=Kg4hLYnEbAs&t=360s
+    segment_ids:
+    - Kg4hLYnEbAs:00113
+    - Kg4hLYnEbAs:00114
+    - Kg4hLYnEbAs:00115
+    - Kg4hLYnEbAs:00116
+    - Kg4hLYnEbAs:00117
+    - Kg4hLYnEbAs:00118
+- id: 8fxjEROShs4-concept-weight-transfer-versus-body-rotation-reviewed
+  evidence_type: explanation
+  excerpt: Distinguishing simple weight shift from actual torso rotation during stroke execution.
+  reason: The speaker contrasts rotation with mere weight shift and says the issue is weight transfer, not body rotation.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 8fxjEROShs4
+    start_ms: 830266
+    end_ms: 851000
+    url: https://www.youtube.com/watch?v=8fxjEROShs4&t=830s
+    segment_ids:
+    - 8fxjEROShs4:00113
+    - 8fxjEROShs4:00114
+- id: jvt-6VNmBzs-cand-4-reviewed
+  evidence_type: explanation
+  excerpt: A distinction where the player should tuck the hip and transfer weight rather than rotate the hip, because rotation jams the stroke.
+  reason: The speaker repeatedly contrasts tucking the hip with rotating it and says rotation will jam the stroke.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: jvt-6VNmBzs
+    start_ms: 92266
+    end_ms: 121566
+    url: https://www.youtube.com/watch?v=jvt-6VNmBzs&t=92s
+    segment_ids:
+    - jvt-6VNmBzs:00017
+    - jvt-6VNmBzs:00020
+    - jvt-6VNmBzs:00023
+- id: 8fxjEROShs4-concept-weight-transfer-versus-body-rotation-codex-reviewed
+  evidence_type: explanation
+  excerpt: This is called rotation. It's not there. It's just the weight shifting when contacting the ball.
+  reason: The speaker directly distinguishes actual rotation from weight shifting during contact.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 8fxjEROShs4
+    start_ms: 861600
+    end_ms: 871266
+    url: https://www.youtube.com/watch?v=8fxjEROShs4&t=861s
+    segment_ids:
+    - 8fxjEROShs4:00116

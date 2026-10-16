@@ -2,75 +2,82 @@ id: concept-consistency
 slug: consistency
 label: Consistency
 aliases:
-  - consistency
-  - stay consistent
-  - no shortcuts
-short_definition: A match-winning principle that emphasizes repeated, reliable execution over shortcuts or sporadic effort.
+- consistency
+- stay consistent
+short_definition: A table-tennis principle of maintaining rally continuity through compact, balanced play rather than brute force.
 evidence_summary: >-
-  Consistency brings together several connected ideas. Consistency as the most crucial principle
-  and there are no shortcuts. A fixed backswing position and repeated home base to consistency and
-  stable shot execution. A useful contrast is between table tennis and single-shot force and
-  explicitly says the game is about continuity and consistency, not brute force. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:d7e975dd856e099ef2598e01efbc5320a4a1782a43a4c976688db8656cbe4984"
-evidence_summary_generator: "deterministic"
+  Continue the rally with compact, balanced play, valuing consistency over brute force.
 concept_type: fundamental
 facets:
   category:
-    - fundamentals
-  level:
-    - intermediate
-difficulty: medium
+  - fundamentals
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 946d13ee09b781f2a509eca949ed17b182e1b4fa363d00a3136e757ddf624ab7
-  prompt_version: candidate-review-v1
+  input_hash: sha256:d16dcae1b05ff648d28701450185a259e27b9d1045b3f131bf143ee8f013ee1b
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: YS3IObI6Gaw-concept-consistency-reviewed
-    evidence_type: definition
-    excerpt: A match-winning principle that emphasizes repeated, reliable execution over shortcuts or sporadic effort.
-    reason: The speaker explicitly names consistency as the most crucial principle and says there are no shortcuts.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: YS3IObI6Gaw
-      start_ms: 9733
-      end_ms: 31033
-      url: https://www.youtube.com/watch?v=YS3IObI6Gaw&t=9s
-      segment_ids:
-        - YS3IObI6Gaw:00002
-        - YS3IObI6Gaw:00006
-  - id: 3wQrxObpgxM-concept-consistency-reviewed
-    evidence_type: definition
-    excerpt: A stroke is consistent when the preparatory position, body mechanics, and contact remain repeatable from ball to ball.
-    reason: The speaker explicitly ties a fixed backswing position and repeated home base to consistency and stable shot execution.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 3wQrxObpgxM
-      start_ms: 671233
-      end_ms: 699566
-      url: https://www.youtube.com/watch?v=3wQrxObpgxM&t=671s
-      segment_ids:
-        - 3wQrxObpgxM:00095
-        - 3wQrxObpgxM:00096
-        - 3wQrxObpgxM:00110
-  - id: hi0AJuu60eE-cand-4-reviewed
-    evidence_type: definition
-    excerpt: Winning play depends on sustaining rally continuity and consistent movement rather than relying on brute force or one-shot power.
-    reason: The speaker contrasts table tennis with single-shot force and explicitly says the game is about continuity and consistency, not brute force.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: hi0AJuu60eE
-      start_ms: 607333
-      end_ms: 632933
-      url: https://www.youtube.com/watch?v=hi0AJuu60eE&t=607s
-      segment_ids:
-        - hi0AJuu60eE:00062
+- id: YS3IObI6Gaw-concept-consistency-reviewed
+  evidence_type: definition
+  excerpt: A match-winning principle that emphasizes repeated, reliable execution over shortcuts or sporadic effort.
+  reason: The speaker explicitly names consistency as the most crucial principle and says there are no shortcuts.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: YS3IObI6Gaw
+    start_ms: 9733
+    end_ms: 31033
+    url: https://www.youtube.com/watch?v=YS3IObI6Gaw&t=9s
+    segment_ids:
+    - YS3IObI6Gaw:00002
+    - YS3IObI6Gaw:00006
+- id: 3wQrxObpgxM-concept-consistency-reviewed
+  evidence_type: definition
+  excerpt: A stroke is consistent when the preparatory position, body mechanics, and contact remain repeatable from ball to ball.
+  reason: The speaker explicitly ties a fixed backswing position and repeated home base to consistency and stable shot execution.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 3wQrxObpgxM
+    start_ms: 671233
+    end_ms: 699566
+    url: https://www.youtube.com/watch?v=3wQrxObpgxM&t=671s
+    segment_ids:
+    - 3wQrxObpgxM:00095
+    - 3wQrxObpgxM:00096
+    - 3wQrxObpgxM:00110
+- id: hi0AJuu60eE-cand-4-reviewed
+  evidence_type: definition
+  excerpt: Winning play depends on sustaining rally continuity and consistent movement rather than relying on brute force or one-shot power.
+  reason: The speaker contrasts table tennis with single-shot force and explicitly says the game is about continuity and consistency, not brute force.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: hi0AJuu60eE
+    start_ms: 607333
+    end_ms: 632933
+    url: https://www.youtube.com/watch?v=hi0AJuu60eE&t=607s
+    segment_ids:
+    - hi0AJuu60eE:00062
+- id: hi0AJuu60eE-cand-4-codex-reviewed
+  evidence_type: definition
+  excerpt: 'Table tennis is about continuity: continue the rally, keep your body compact, stay balanced, and prioritize consistency over brute force.'
+  reason: Consistency means continuing the rally with compact, balanced play instead of relying on brute force.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: hi0AJuu60eE
+    start_ms: 607333
+    end_ms: 632933
+    url: https://www.youtube.com/watch?v=hi0AJuu60eE&t=607s
+    segment_ids:
+    - hi0AJuu60eE:00062

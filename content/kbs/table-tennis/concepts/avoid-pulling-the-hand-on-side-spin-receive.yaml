@@ -2,62 +2,73 @@ id: concept-avoid-pulling-the-hand-on-side-spin-receive
 slug: avoid-pulling-the-hand-on-side-spin-receive
 label: Avoid pulling the hand on side-spin receive
 aliases:
-  - don't pull your hand
-  - no pulling
-short_definition: On side-spin receives, keep the hand from retracting or pulling back; instead keep the action forward and compact to avoid errors.
+- don't pull your hand
+- no pulling
+short_definition: On sidespin receives, avoid pulling the hand; press the racket and move forward.
 evidence_summary: >-
-  Avoid pulling the hand on side-spin receive brings together several connected ideas. Pulling the
-  hand back as a primary error on side-spin balls and repeatedly instructs not to retract the
-  hand. To keep the wrist firm, use the forearm, and not keep the racket static or take a
-  backswing on these fast serves. Together, these principles show how the topic is applied in
-  practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:64255461dcb26421fccd86f0184bc4ce88254626451bd514f811bf63fc4bd045"
-evidence_summary_generator: "deterministic"
+  When receiving sidespin, avoid pulling the hand; press the racket and move forward.
 concept_type: stroke
 facets:
   category:
-    - stroke
+  - stroke
   spin:
-    - sidespin
-  side:
-    - neutral
-difficulty: intermediate
+  - sidespin
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 874ac1ee252d7e3066ccc132465ae10eb9a127372f0fd8888ee4e9edddcb838b
-  prompt_version: candidate-review-v1
+  input_hash: sha256:a0a5250e2f7d42a4b6b91c8b9ed1025528b5a230298a96b88c1bafa9bd06ae58
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: cSxeCkiMFFI-concept-avoid-pulling-the-hand-on-side-spin-receive-reviewed
-    evidence_type: explanation
-    excerpt: On side-spin receives, keep the hand from retracting or pulling back; instead keep the action forward and compact to avoid errors.
-    reason: The speaker identifies pulling the hand back as a primary error on side-spin balls and repeatedly instructs not to retract the hand.
-    confidence: 0.88
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: cSxeCkiMFFI
-      start_ms: 183840
-      end_ms: 211520
-      url: https://www.youtube.com/watch?v=cSxeCkiMFFI&t=183s
-      segment_ids:
-        - cSxeCkiMFFI:00023
-        - cSxeCkiMFFI:00024
-        - cSxeCkiMFFI:00025
-        - cSxeCkiMFFI:00026
-  - id: FOPBXdIaKFA-concept-avoid-pulling-the-hand-on-side-spin-receive-reviewed
-    evidence_type: correction
-    excerpt: On side-spin receive, avoid pulling the hand backward or making a large backward motion; keep the stroke compact and forward-oriented.
-    reason: The speaker says to keep the wrist firm, use the forearm, and not keep the racket static or take a backswing on these fast serves.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: FOPBXdIaKFA
-      start_ms: 764533
-      end_ms: 788866
-      url: https://www.youtube.com/watch?v=FOPBXdIaKFA&t=764s
-      segment_ids:
-        - FOPBXdIaKFA:00155
-        - FOPBXdIaKFA:00158
+- id: cSxeCkiMFFI-concept-avoid-pulling-the-hand-on-side-spin-receive-reviewed
+  evidence_type: explanation
+  excerpt: On side-spin receives, keep the hand from retracting or pulling back; instead keep the action forward and compact to avoid errors.
+  reason: The speaker identifies pulling the hand back as a primary error on side-spin balls and repeatedly instructs not to retract the hand.
+  confidence: 0.88
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: cSxeCkiMFFI
+    start_ms: 183840
+    end_ms: 211520
+    url: https://www.youtube.com/watch?v=cSxeCkiMFFI&t=183s
+    segment_ids:
+    - cSxeCkiMFFI:00023
+    - cSxeCkiMFFI:00024
+    - cSxeCkiMFFI:00025
+    - cSxeCkiMFFI:00026
+- id: FOPBXdIaKFA-concept-avoid-pulling-the-hand-on-side-spin-receive-reviewed
+  evidence_type: correction
+  excerpt: On side-spin receive, avoid pulling the hand backward or making a large backward motion; keep the stroke compact and forward-oriented.
+  reason: The speaker says to keep the wrist firm, use the forearm, and not keep the racket static or take a backswing on these fast serves.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: FOPBXdIaKFA
+    start_ms: 764533
+    end_ms: 788866
+    url: https://www.youtube.com/watch?v=FOPBXdIaKFA&t=764s
+    segment_ids:
+    - FOPBXdIaKFA:00155
+    - FOPBXdIaKFA:00158
+- id: cSxeCkiMFFI-concept-avoid-pulling-the-hand-on-side-spin-receive-codex-reviewed
+  evidence_type: explanation
+  excerpt: When receiving sidespin, avoid pulling the hand; press the racket and move forward.
+  reason: To deal with sidespin, avoid pulling the hand, press the racket and move forward.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: cSxeCkiMFFI
+    start_ms: 96560
+    end_ms: 117200
+    url: https://www.youtube.com/watch?v=cSxeCkiMFFI&t=96s
+    segment_ids:
+    - cSxeCkiMFFI:00011
+    - cSxeCkiMFFI:00012
+    - cSxeCkiMFFI:00013

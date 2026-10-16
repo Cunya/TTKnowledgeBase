@@ -1,64 +1,74 @@
 id: concept-forearm-position-relative-to-the-elbow
 slug: forearm-position-relative-to-the-elbow
-label: Forearm position relative to the elbow
+label: Forearm height for drives and loops
 aliases:
-  - forearm higher than the elbow
-  - forearm parallel to the elbow
-  - forearm lower than the elbow
-short_definition: 'The correct forearm height changes by stroke: higher than the elbow for blocking, level for a forehand drive, and lower for a forehand loop.'
+- forearm height by stroke
+short_definition: 'For a drive, keep your forearm level. For a loop, lower it slightly; it should never be completely dropped.'
 evidence_summary: >-
-  Forearm position relative to the elbow brings together several connected ideas. Explicit height
-  rules for block, forehand drive, and forehand loop relative to the elbow. A common error as
-  standing too upright and letting the forearm drop too low, then advises keeping it slightly
-  higher. Together, these principles show how the topic is applied in practice while preserving
-  the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:20b611783bad472a095ca3a4bcae1ff6f5f86969730747b92cb13c7485d3551f"
-evidence_summary_generator: "deterministic"
+  For a drive, keep your forearm level; for a loop, lower it slightly, but never drop it completely.
 concept_type: fundamentals
 facets:
   category:
-    - fundamentals
-  side:
-    - forehand
-difficulty: beginner
+  - fundamentals
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 6ba081958e07cb7dbf5b6aa8376a841a322fae75a87d443533dd715e72e86f9c
-  prompt_version: candidate-review-v1
+  input_hash: sha256:772cc70a6176b4471d2c1577e0762ed25dca05b9a19ea87bd6bb84da4e8ba08a
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: I-luBOL9IxI-concept-forearm-position-relative-to-elbow-reviewed
-    evidence_type: definition
-    excerpt: 'The correct forearm height changes by stroke: higher than the elbow for blocking, level for a forehand drive, and lower for a forehand loop.'
-    reason: The speaker gives explicit height rules for block, forehand drive, and forehand loop relative to the elbow.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: I-luBOL9IxI
-      start_ms: 116766
-      end_ms: 142666
-      url: https://www.youtube.com/watch?v=I-luBOL9IxI&t=116s
-      segment_ids:
-        - I-luBOL9IxI:00024
-        - I-luBOL9IxI:00028
-        - I-luBOL9IxI:00029
-        - I-luBOL9IxI:00030
-  - id: geGebDni2TU-concept-forearm-height-management-in-topspin-rallies-reviewed
-    evidence_type: explanation
-    excerpt: In topspin rallies, the forearm should not drop too low; it should stay slightly higher, with different heights for drive and loop.
-    reason: The speaker identifies a common error as standing too upright and letting the forearm drop too low, then advises keeping it slightly higher.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: geGebDni2TU
-      start_ms: 65500
-      end_ms: 93733
-      url: https://www.youtube.com/watch?v=geGebDni2TU&t=65s
-      segment_ids:
-        - geGebDni2TU:00017
-        - geGebDni2TU:00018
-        - geGebDni2TU:00021
-        - geGebDni2TU:00023
+- id: I-luBOL9IxI-concept-forearm-position-relative-to-elbow-reviewed
+  evidence_type: definition
+  excerpt: 'The correct forearm height changes by stroke: higher than the elbow for blocking, level for a forehand drive, and lower for a forehand loop.'
+  reason: The speaker gives explicit height rules for block, forehand drive, and forehand loop relative to the elbow.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: I-luBOL9IxI
+    start_ms: 116766
+    end_ms: 142666
+    url: https://www.youtube.com/watch?v=I-luBOL9IxI&t=116s
+    segment_ids:
+    - I-luBOL9IxI:00024
+    - I-luBOL9IxI:00028
+    - I-luBOL9IxI:00029
+    - I-luBOL9IxI:00030
+- id: geGebDni2TU-concept-forearm-height-management-in-topspin-rallies-reviewed
+  evidence_type: explanation
+  excerpt: In topspin rallies, the forearm should not drop too low; it should stay slightly higher, with different heights for drive and loop.
+  reason: The speaker identifies a common error as standing too upright and letting the forearm drop too low, then advises keeping it slightly higher.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: geGebDni2TU
+    start_ms: 65500
+    end_ms: 93733
+    url: https://www.youtube.com/watch?v=geGebDni2TU&t=65s
+    segment_ids:
+    - geGebDni2TU:00017
+    - geGebDni2TU:00018
+    - geGebDni2TU:00021
+    - geGebDni2TU:00023
+- id: geGebDni2TU-concept-forearm-height-management-in-topspin-rallies-codex-reviewed
+  evidence_type: explanation
+  excerpt: For a drive, keep your forearm level; for a loop, keep it slightly lower, but never completely dropped.
+  reason: For a drive, keep the forearm level. For a loop, lower it slightly; it should never be completely dropped.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: geGebDni2TU
+    start_ms: 181100
+    end_ms: 204433
+    url: https://www.youtube.com/watch?v=geGebDni2TU&t=181s
+    segment_ids:
+    - geGebDni2TU:00044
+    - geGebDni2TU:00045
+    - geGebDni2TU:00048
+    - geGebDni2TU:00049

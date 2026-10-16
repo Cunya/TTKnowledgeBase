@@ -1,0 +1,49 @@
+id: concept-side-chop
+slug: side-chop
+label: Side chop
+aliases: []
+short_definition: A receive stroke that alternates an upright and flat racket orientation to cover pop-up and heavy-spin balls, adding sideways friction for a reliable return.
+evidence_summary: >-
+  A receive stroke that alternates an upright and flat racket orientation to cover pop-up and
+  heavy-spin balls, adding sideways friction for a reliable return.
+evidence_summary_source_hash: "sha256:aec2a5ffe3315583902c98ce4bcc245f88002bcaceced339e3703546cb37274a"
+evidence_summary_generator: "deterministic"
+concept_type: stroke
+facets:
+  category:
+    - stroke
+  side:
+    - neutral
+difficulty:
+review_status: approved
+generated_by:
+  processor: codex_semantic_adjudication
+  version: 1.0.0
+  input_hash: sha256:ae02f8d2d21b4ba6884ef4c2b1fd324f3991fc03c4620ad32e624d47e999b419
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
+evidence:
+  - id: TF56et74wQ8-candidate-side-chop-codex-reviewed
+    evidence_type: explanation
+    excerpt: If they're really deceptive or hiding the serve, upright and flat cover both. Flat handles heavy spin, upright handles the pop-up. The moment you add sideways friction, this ball becomes very hard to miss. In my matches, at critical moments, I always push like this.
+    reason: This contiguous 21-second span directly explains the side chop’s upright-to-flat adjustment and sideways-friction benefit. It is a distinct receive stroke, not the existing side cut concept.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: TF56et74wQ8
+      start_ms: 382480
+      end_ms: 403600
+      url: https://www.youtube.com/watch?v=TF56et74wQ8&t=382s
+      segment_ids:
+        - TF56et74wQ8:00134
+        - TF56et74wQ8:00135
+        - TF56et74wQ8:00136
+        - TF56et74wQ8:00137
+        - TF56et74wQ8:00138
+        - TF56et74wQ8:00139
+        - TF56et74wQ8:00140
+        - TF56et74wQ8:00141
+        - TF56et74wQ8:00142

@@ -2,144 +2,223 @@ id: concept-forward-drive-against-backspin
 slug: forward-drive-against-backspin
 label: Forward drive against backspin
 aliases:
-  - drive forward into it
-  - forward-driving component
-  - push forward
-  - drive through the ball
+- drive forward into it
+- forward-driving component
+- push forward
+- drive through the ball
 short_definition: A looping and attacking principle where the player meets backspin by driving forward through contact instead of only lifting vertically.
 evidence_summary: >-
-  Forward drive against backspin brings together several connected ideas. Forward drive is
-  required to connect with incoming spin and to make the stroke effective against both backspin
-  and topspin. To stop swinging upward and instead drive forward after lifting the backspin. To
-  move forward into the ball, not hit down, and to hit forward on the sinking return. Brushing
-  alone is not enough and that the ball must be driven forward, toward the baseline, so the spin
-  stays dangerous after the bounce. A useful contrast is between useless upward brushing and
-  brushing in place and the correct action of driving forward into the ball, engaging it firmly,
-  then brushing through contact. The stroke must have forward momentum, pushes should be guided
-  forward, and every shot must have a forward component. Together, these principles show how the
-  topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:f8426a3c3527519589d953c315c722af9a7b140dc81fb1622a4d89840bba8ca3"
+  When looping against heavy backspin, forward drive through solid contact and friction gives the ball enough trajectory to clear the net, whereas upward brushing alone is insufficient.
+evidence_summary_source_hash: "sha256:c09af52442dc1f0c9c3adeba7118cc9b8559ea22178f3f9597cfc51d6aa85c83"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
   category:
-    - tactic
-    - stroke
+  - tactic
+  - stroke
   side:
-    - neutral
-    - forehand
-    - backhand
+  - neutral
+  - forehand
+  - backhand
   spin:
-    - backspin
-    - topspin
+  - backspin
+  - topspin
   distance:
-    - close
-    - mid
+  - close
+  - mid
   level:
-    - beginner
-    - intermediate
+  - beginner
+  - intermediate
 difficulty: beginner
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 74175c2cf8bc8ffe2a27ae1f2bccb3d8a5a35df7af244c61e3db427f43a123ed
-  prompt_version: candidate-review-v1
+  input_hash: sha256:6f1c19249adf849b1cc346776ae5764232f6b1aae5e4e6277efa66dfcb5354f8
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: mvVfwjdxe34-concept-forward-drive-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: A looping and attacking principle where the player meets backspin by driving forward through contact instead of only lifting vertically.
-    reason: The speaker repeats that forward drive is required to connect with incoming spin and to make the stroke effective against both backspin and topspin.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: mvVfwjdxe34
-      start_ms: 104000
-      end_ms: 110266
-      url: https://www.youtube.com/watch?v=mvVfwjdxe34&t=104s
-      segment_ids:
-        - mvVfwjdxe34:00020
-  - id: fgtk9fxGTUw-concept-forward-drive-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: After lifting or brushing a backspin ball, the hitter must transition into a forward driving motion instead of continuing upward.
-    reason: The speaker says to stop swinging upward and instead drive forward after lifting the backspin.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: fgtk9fxGTUw
-      start_ms: 313400
-      end_ms: 341033
-      url: https://www.youtube.com/watch?v=fgtk9fxGTUw&t=313s
-      segment_ids:
-        - fgtk9fxGTUw:00061
-        - fgtk9fxGTUw:00062
-        - fgtk9fxGTUw:00063
-        - fgtk9fxGTUw:00065
-  - id: itzB36f9_R0-concept-forward-drive-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: Drive forward into a sinking or backspin-heavy ball instead of trying to lift it purely upward.
-    reason: The speaker says to move forward into the ball, not hit down, and to hit forward on the sinking return.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: itzB36f9_R0
-      start_ms: 95333
-      end_ms: 117333
-      url: https://www.youtube.com/watch?v=itzB36f9_R0&t=95s
-      segment_ids:
-        - itzB36f9_R0:00017
-        - itzB36f9_R0:00019
-        - itzB36f9_R0:00020
-  - id: I3_-LFqMWgA-concept-forward-drive-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: Add forward momentum through the ball while brushing so the spin carries deeper and is harder to block.
-    reason: The speaker repeatedly insists that brushing alone is not enough and that the ball must be driven forward, toward the baseline, so the spin stays dangerous after the bounce.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: I3_-LFqMWgA
-      start_ms: 532300
-      end_ms: 560033
-      url: https://www.youtube.com/watch?v=I3_-LFqMWgA&t=532s
-      segment_ids:
-        - I3_-LFqMWgA:00098
-        - I3_-LFqMWgA:00100
-        - I3_-LFqMWgA:00101
-        - I3_-LFqMWgA:00102
-  - id: tFXmtu4Egw8-concept-drive-forward-into-the-ball-when-brushing-reviewed
-    evidence_type: explanation
-    excerpt: Combine brushing with forward driving motion instead of brushing statically or only lifting upward.
-    reason: The speaker repeatedly contrasts useless upward brushing and brushing in place with the correct action of driving forward into the ball, engaging it firmly, then brushing through contact.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: tFXmtu4Egw8
-      start_ms: 346566
-      end_ms: 372100
-      url: https://www.youtube.com/watch?v=tFXmtu4Egw8&t=346s
-      segment_ids:
-        - tFXmtu4Egw8:00059
-        - tFXmtu4Egw8:00060
-        - tFXmtu4Egw8:00061
-        - tFXmtu4Egw8:00062
-  - id: 1UthOchBWWc-concept-forward-drive-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: Keep forward momentum through the ball instead of only brushing or touching it, even against spin.
-    reason: The speaker says the stroke must have forward momentum, pushes should be guided forward, and every shot must have a forward component.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 1UthOchBWWc
-      start_ms: 659366
-      end_ms: 676733
-      url: https://www.youtube.com/watch?v=1UthOchBWWc&t=659s
-      segment_ids:
-        - 1UthOchBWWc:00091
-        - 1UthOchBWWc:00092
-        - 1UthOchBWWc:00093
+- id: mvVfwjdxe34-concept-forward-drive-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: A looping and attacking principle where the player meets backspin by driving forward through contact instead of only lifting vertically.
+  reason: The speaker repeats that forward drive is required to connect with incoming spin and to make the stroke effective against both backspin and topspin.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: mvVfwjdxe34
+    start_ms: 104000
+    end_ms: 110266
+    url: https://www.youtube.com/watch?v=mvVfwjdxe34&t=104s
+    segment_ids:
+    - mvVfwjdxe34:00020
+- id: fgtk9fxGTUw-concept-forward-drive-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: After lifting or brushing a backspin ball, the hitter must transition into a forward driving motion instead of continuing upward.
+  reason: The speaker says to stop swinging upward and instead drive forward after lifting the backspin.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: fgtk9fxGTUw
+    start_ms: 313400
+    end_ms: 341033
+    url: https://www.youtube.com/watch?v=fgtk9fxGTUw&t=313s
+    segment_ids:
+    - fgtk9fxGTUw:00061
+    - fgtk9fxGTUw:00062
+    - fgtk9fxGTUw:00063
+    - fgtk9fxGTUw:00065
+- id: itzB36f9_R0-concept-forward-drive-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: Drive forward into a sinking or backspin-heavy ball instead of trying to lift it purely upward.
+  reason: The speaker says to move forward into the ball, not hit down, and to hit forward on the sinking return.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: itzB36f9_R0
+    start_ms: 95333
+    end_ms: 117333
+    url: https://www.youtube.com/watch?v=itzB36f9_R0&t=95s
+    segment_ids:
+    - itzB36f9_R0:00017
+    - itzB36f9_R0:00019
+    - itzB36f9_R0:00020
+- id: I3_-LFqMWgA-concept-forward-drive-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: Add forward momentum through the ball while brushing so the spin carries deeper and is harder to block.
+  reason: The speaker repeatedly insists that brushing alone is not enough and that the ball must be driven forward, toward the baseline, so the spin stays dangerous after the bounce.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: I3_-LFqMWgA
+    start_ms: 532300
+    end_ms: 560033
+    url: https://www.youtube.com/watch?v=I3_-LFqMWgA&t=532s
+    segment_ids:
+    - I3_-LFqMWgA:00098
+    - I3_-LFqMWgA:00100
+    - I3_-LFqMWgA:00101
+    - I3_-LFqMWgA:00102
+- id: tFXmtu4Egw8-concept-drive-forward-into-the-ball-when-brushing-reviewed
+  evidence_type: explanation
+  excerpt: Combine brushing with forward driving motion instead of brushing statically or only lifting upward.
+  reason: The speaker repeatedly contrasts useless upward brushing and brushing in place with the correct action of driving forward into the ball, engaging it firmly, then brushing through contact.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: tFXmtu4Egw8
+    start_ms: 346566
+    end_ms: 372100
+    url: https://www.youtube.com/watch?v=tFXmtu4Egw8&t=346s
+    segment_ids:
+    - tFXmtu4Egw8:00059
+    - tFXmtu4Egw8:00060
+    - tFXmtu4Egw8:00061
+    - tFXmtu4Egw8:00062
+- id: 1UthOchBWWc-concept-forward-drive-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: Keep forward momentum through the ball instead of only brushing or touching it, even against spin.
+  reason: The speaker says the stroke must have forward momentum, pushes should be guided forward, and every shot must have a forward component.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 1UthOchBWWc
+    start_ms: 659366
+    end_ms: 676733
+    url: https://www.youtube.com/watch?v=1UthOchBWWc&t=659s
+    segment_ids:
+    - 1UthOchBWWc:00091
+    - 1UthOchBWWc:00092
+    - 1UthOchBWWc:00093
+- id: 1UthOchBWWc-concept-forward-drive-against-backspin-codex-reviewed
+  evidence_type: explanation
+  excerpt: Regardless of how much spin is on the ball, the stroke must have forward momentum. Instead of merely touching it, guide the ball forward; flattening the racket angle and actively pushing forward helps keep it on the table.
+  reason: This contiguous 17-second span directly explains the durable principle of driving or guiding forward through contact against different spins. It matches the supplied existing concept, so no new concept is needed.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: 1UthOchBWWc
+    start_ms: 659366
+    end_ms: 676733
+    url: https://www.youtube.com/watch?v=1UthOchBWWc&t=659s
+    segment_ids:
+    - 1UthOchBWWc:00091
+    - 1UthOchBWWc:00092
+    - 1UthOchBWWc:00093
+- id: fgtk9fxGTUw-concept-forward-drive-against-backspin-codex-reviewed
+  evidence_type: explanation
+  excerpt: For a backspin ball, first lift the backspin, then drive it like a topspin. Once you've brushed it, drive forward.
+  reason: These contiguous segments directly explain combining an upward lift against backspin with a subsequent forward drive, matching the existing concept.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: fgtk9fxGTUw
+    start_ms: 313400
+    end_ms: 341033
+    url: https://www.youtube.com/watch?v=fgtk9fxGTUw&t=313s
+    segment_ids:
+    - fgtk9fxGTUw:00061
+    - fgtk9fxGTUw:00062
+    - fgtk9fxGTUw:00063
+    - fgtk9fxGTUw:00064
+    - fgtk9fxGTUw:00065
+- id: itzB36f9_R0-concept-forward-drive-against-backspin-codex-reviewed
+  evidence_type: explanation
+  excerpt: Against a short, sinking return, move in, avoid hitting down, and use an open racket face to hit forward.
+  reason: These contiguous segments directly explain moving forward on a short return, why hitting down sends the sinking ball into the net, and the required forward contact.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: itzB36f9_R0
+    start_ms: 739866
+    end_ms: 761033
+    url: https://www.youtube.com/watch?v=itzB36f9_R0&t=739s
+    segment_ids:
+    - itzB36f9_R0:00141
+    - itzB36f9_R0:00142
+    - itzB36f9_R0:00143
+    - itzB36f9_R0:00144
+- id: mvVfwjdxe34-concept-forward-drive-against-backspin-codex-reviewed
+  evidence_type: explanation
+  excerpt: Against heavy backspin, driving forward into the ball prevents weak, purely upward contact and helps lift the ball over the net.
+  reason: This contiguous 17.2-second span directly explains that brushing upward weakens contact and explicitly instructs the player to drive or push forward against heavy backspin.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: mvVfwjdxe34
+    start_ms: 67333
+    end_ms: 91100
+    url: https://www.youtube.com/watch?v=mvVfwjdxe34&t=67s
+    segment_ids:
+    - mvVfwjdxe34:00013
+    - mvVfwjdxe34:00014
+    - mvVfwjdxe34:00015
+    - mvVfwjdxe34:00016
+- id: y7Xd49MgdbQ-concept-forward-drive-is-required-for-looping-codex-reviewed
+  evidence_type: definition
+  excerpt: Against heavy backspin, drive through the ball with solid contact and friction; brushing upward alone produces a trajectory too short to clear the net.
+  reason: When looping against heavy backspin, forward drive through solid contact and friction gives the ball enough trajectory to clear the net, whereas upward brushing alone is insufficient.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: y7Xd49MgdbQ
+    start_ms: 419066
+    end_ms: 445366
+    url: https://www.youtube.com/watch?v=y7Xd49MgdbQ&t=419s
+    segment_ids:
+    - y7Xd49MgdbQ:00086
+    - y7Xd49MgdbQ:00087
+    - y7Xd49MgdbQ:00088
+    - y7Xd49MgdbQ:00089

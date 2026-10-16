@@ -31,7 +31,7 @@ const field = (block: string, label: string) => {
 };
 const statusFor = (block: string) => field(block, 'Status') || 'Open';
 const stateFor = (status: string): BacklogItem['state'] => {
-  const normalized = status.toLowerCase();
+  const normalized = status.toLowerCase().split(/[.;(—–]/, 1)[0];
   if (normalized.includes('planned')) return 'planned';
   if (normalized.includes('blocked')) return 'blocked';
   if (normalized.includes('complete')) return 'complete';
@@ -81,9 +81,9 @@ const featureAreaDefinitions = [
     label: 'Evidence and content quality',
     description: 'Make moments useful, complete, diverse, and meaningful instead of merely numerous.',
     features: [
-      { id: 'moment-quality', label: 'Moment quality', description: 'Select complete, meaningful windows and remove repetition from the evidence library.', ids: ['P1-01', 'P1-03', 'P1-13', 'P1-14'] },
-      { id: 'evidence-coverage', label: 'Evidence coverage', description: 'Strengthen cross-video support and make each concept’s evidence hierarchy explicit.', ids: ['P1-05', 'P1-06'] },
-      { id: 'knowledge-structure', label: 'Knowledge structure', description: 'Resolve taxonomy placeholders into durable concepts and relationships.', ids: ['P1-07', 'P1-21'] },
+      { id: 'moment-quality', label: 'Moment quality', description: 'Select complete, meaningful windows and remove repetition from the evidence library.', ids: ['P0-09', 'P0-10', 'P1-01', 'P1-03', 'P1-13', 'P1-14', 'P1-30', 'P1-34', 'P1-49', 'P1-50', 'P1-51', 'P1-53'] },
+      { id: 'evidence-coverage', label: 'Evidence coverage', description: 'Strengthen cross-video support and make each concept’s evidence hierarchy explicit.', ids: ['P1-05', 'P1-06', 'P1-33'] },
+      { id: 'knowledge-structure', label: 'Knowledge structure', description: 'Require human editorial approval and resolve taxonomy placeholders into durable concepts and relationships.', ids: ['P0-08', 'P1-07', 'P1-21', 'P1-32', 'P2-11'] },
     ],
   },
   {
@@ -91,7 +91,7 @@ const featureAreaDefinitions = [
     label: 'Publishing and navigation',
     description: 'Keep generated pages, links, encoding, and public artifacts reliable and calm to use.',
     features: [
-      { id: 'publish-integrity', label: 'Publish integrity', description: 'Keep canonical data fresh, allowlisted, deduplicated, and free of encoding regressions.', ids: ['P0-03', 'P1-11', 'P2-01', 'P2-02'] },
+      { id: 'publish-integrity', label: 'Publish integrity', description: 'Keep canonical data fresh, allowlisted, deduplicated, and free of encoding regressions.', ids: ['P0-03', 'P0-12', 'P1-42', 'P1-43', 'P1-11', 'P2-01', 'P2-02'] },
       { id: 'navigation-and-toc', label: 'Navigation and table of contents', description: 'Make deployment routes, anchors, and deterministic video TOCs dependable.', ids: ['P0-06', 'P1-10', 'P2-06'] },
       { id: 'viewer-experience', label: 'Viewer experience', description: 'Keep source attribution and embedded playback clear without over-emphasizing source titles.', ids: ['P1-12', 'P1-18', 'P2-04', 'P2-05'] },
     ],
@@ -101,8 +101,8 @@ const featureAreaDefinitions = [
     label: 'Operations and automation',
     description: 'Turn processing, budgets, provenance, source monitoring, and daily runs into observable routines.',
     features: [
-      { id: 'pipeline-orchestration', label: 'Pipeline orchestration', description: 'Drain pending work safely, budget model calls, and support unattended daily processing.', ids: ['P1-02', 'P1-15', 'P1-16', 'P1-19', 'P1-20', 'P1-23'] },
-      { id: 'observability-and-reporting', label: 'Observability and reporting', description: 'Expose progress, extraction cost, provenance, and knowledge-graph quality.', ids: ['P1-04', 'P1-24', 'P1-25', 'P1-26', 'P2-07', 'P2-09'] },
+      { id: 'pipeline-orchestration', label: 'Pipeline orchestration', description: 'Drain pending work safely, budget model calls, and support unattended daily processing.', ids: ['P0-11', 'P1-02', 'P1-15', 'P1-16', 'P1-19', 'P1-20', 'P1-23', 'P1-28', 'P1-29', 'P1-31', 'P1-37', 'P1-38', 'P1-39', 'P1-41', 'P1-44', 'P1-45', 'P1-46', 'P1-48', 'P1-52'] },
+      { id: 'observability-and-reporting', label: 'Observability and reporting', description: 'Expose progress, extraction cost, provenance, and knowledge-graph quality.', ids: ['P1-04', 'P1-24', 'P1-25', 'P1-26', 'P1-27', 'P1-35', 'P1-36', 'P1-40', 'P1-47', 'P2-07', 'P2-09'] },
       { id: 'maintenance-and-monitoring', label: 'Maintenance and source monitoring', description: 'Keep dependencies pinned and detect source availability changes before they surprise publishing.', ids: ['P2-03', 'P2-08', 'P1-22'] },
     ],
   },

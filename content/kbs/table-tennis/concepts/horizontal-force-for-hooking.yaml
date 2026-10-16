@@ -6,14 +6,9 @@ aliases:
   - lateral force
 short_definition: Applying force horizontally or laterally so the hooked motion produces usable spin and a successful shot.
 evidence_summary: >-
-  Horizontal force for hooking brings together several connected ideas. The main failure is
-  lacking longitudinal/lateral force, then emphasizes horizontal force as the key to the hook
-  shot. The file hook uses horizontal force and that hook serve force is lateral sideways, not
-  forward. A useful contrast is between sideways force and forward-backward motion and says
-  lateral force is fundamental. Right-sidespin is about horizontal force and sideways force in the
-  backhand serve. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:12e14d6c56fb3636584757a1fe641b91d959087188a0be4a0c7d7ed613ca47a5"
+  Applying force horizontally or laterally so the hooked motion produces usable spin and a
+  successful shot.
+evidence_summary_source_hash: "sha256:ab2c77168798ef25861c3058b385018de042c5eb93088c7cab1375fbe8abb8a5"
 evidence_summary_generator: "deterministic"
 concept_type: new
 facets:
@@ -30,10 +25,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 8dbe14c580046c53402798bf7cd0eb051670d660810b62e877cd862ca5da8ac7
-  prompt_version: candidate-review-v1
+  input_hash: sha256:f0d07934ce81326abbf4173fe4e20dced444f0af6b1c6c9afefb77fdbf3ce809
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: 8S2YprEr6XA-concept-horizontal-force-for-hooking-reviewed
     evidence_type: explanation
@@ -41,7 +39,7 @@ evidence:
     reason: The speaker says the main failure is lacking longitudinal/lateral force, then emphasizes horizontal force as the key to the hook shot.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8S2YprEr6XA
       start_ms: 107166
@@ -58,7 +56,7 @@ evidence:
     reason: The speaker states that the file hook uses horizontal force and that hook serve force is lateral sideways, not forward.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: xyw4eE67NI4
       start_ms: 36120
@@ -74,7 +72,7 @@ evidence:
     reason: The speaker explicitly contrasts sideways force with forward-backward motion and says lateral force is fundamental.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: WZnZIhZkkRo
       start_ms: 61033
@@ -91,7 +89,7 @@ evidence:
     reason: The speaker explicitly says right-sidespin is about horizontal force and emphasizes sideways force in the backhand serve.
     confidence: 0.88
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: GmC5XCY9aU4
       start_ms: 161300
@@ -101,3 +99,37 @@ evidence:
         - GmC5XCY9aU4:00034
         - GmC5XCY9aU4:00036
         - GmC5XCY9aU4:00037
+  - id: 8S2YprEr6XA-concept-horizontal-force-for-hooking-codex-reviewed
+    evidence_type: explanation
+    excerpt: The speaker emphasizes that horizontal force is essential for the hook shot and for generating lateral force.
+    reason: The selected contiguous span directly states that the force must be horizontal, that lacking horizontal force makes the action fail, and that horizontal force is the key to a hook shot.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 8S2YprEr6XA
+      start_ms: 125966
+      end_ms: 143233
+      url: https://www.youtube.com/watch?v=8S2YprEr6XA&t=125s
+      segment_ids:
+        - 8S2YprEr6XA:00019
+        - 8S2YprEr6XA:00020
+        - 8S2YprEr6XA:00021
+        - 8S2YprEr6XA:00022
+  - id: b8ivXEfdO7c-concept-hook-serve-lateral-force-codex-reviewed
+    evidence_type: explanation
+    excerpt: The hook serve should use lateral force first—power sideways, then go up or down—to create the friction and spin needed for a proper hook serve.
+    reason: This contiguous span directly explains that the hook serve requires lateral force before upward or downward movement to create friction and spin. The existing concept covers the same durable topic.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: b8ivXEfdO7c
+      start_ms: 145966
+      end_ms: 167766
+      url: https://www.youtube.com/watch?v=b8ivXEfdO7c&t=145s
+      segment_ids:
+        - b8ivXEfdO7c:00029
+        - b8ivXEfdO7c:00030
+        - b8ivXEfdO7c:00031
+        - b8ivXEfdO7c:00032

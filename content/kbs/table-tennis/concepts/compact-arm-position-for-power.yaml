@@ -6,11 +6,9 @@ aliases:
   - forearm near the torso
 short_definition: To generate self-produced power, the arm must start compact near the body and then rapidly extend to create space for acceleration.
 evidence_summary: >-
-  Compact arm position for power brings together several connected ideas. The boxing analogy and
-  explicit instruction to bring the fist in before punching out describe a compact start and rapid
-  extension. Together, these principles show how the topic is applied in practice while preserving
-  the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:7cd5154a32c076a448e0cc9b16d4533e7fb969d55aaf7727785eae66479cef43"
+  To generate self-produced power, the arm must start compact near the body and then rapidly
+  extend to create space for acceleration.
+evidence_summary_source_hash: "sha256:cd5a0f3e12d57b8cb7f479da7e3af161ac717ddb4c58adc57ddb6db63268a681"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -24,10 +22,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 2c662ff60117bbad01775ba156a98e71f48f22da4237f0e96740c08945520ee1
-  prompt_version: candidate-review-v1
+  input_hash: sha256:ee89264e1ab0d46f7eb8e9936057c0bd9f8c8b4e2ea85f15bef31d73eaf6568f
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: xDwUKE-WjL0-concept-compact-arm-position-for-power-reviewed
     evidence_type: definition
@@ -35,7 +36,7 @@ evidence:
     reason: The boxing analogy and explicit instruction to bring the fist in before punching out describe a compact start and rapid extension.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: xDwUKE-WjL0
       start_ms: 550966
@@ -44,3 +45,19 @@ evidence:
       segment_ids:
         - xDwUKE-WjL0:00116
         - xDwUKE-WjL0:00118
+  - id: hoLSxXKl2L0-concept-compact-swing-can-still-generate-power-codex-reviewed
+    evidence_type: explanation
+    excerpt: 'Power does not require a huge backswing: even with the arm tucked in and a compact swing, opening the forearm and racket face allows power generation.'
+    reason: These contiguous segments directly explain that a tucked-in arm and compact swing can still generate power when the forearm and racket face are open. The existing concept covers this durable technique, so no duplicate concept is needed.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: hoLSxXKl2L0
+      start_ms: 414400
+      end_ms: 441600
+      url: https://www.youtube.com/watch?v=hoLSxXKl2L0&t=414s
+      segment_ids:
+        - hoLSxXKl2L0:00069
+        - hoLSxXKl2L0:00070
+        - hoLSxXKl2L0:00071

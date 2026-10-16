@@ -7,21 +7,9 @@ aliases:
   - wrist locked
 short_definition: Keep the racket face stable through backswing, contact, and follow-through; wobbling at impact causes errors and inconsistency.
 evidence_summary: >-
-  Racket face stability brings together several connected ideas. The racket face should not wobble
-  and that stability is essential for consistency and landing hits on the table. A useful contrast
-  is between brushing and flat hitting and says the wrist and forearm must act as one fixed unit,
-  with the grip firm and the wrist locked. A useful contrast is between unstable snake-like
-  contact and a unified one-piece action and says the arm and racket face must be locked and
-  stable. Power errors to an unstable racket face and the wrist, fingers, and racket face must not
-  rotate at impact. The back of the hand must remain firm, the wrist should be locked, and in fast
-  rallies the wrist should stay stable. A flat thumb makes the racket unstable, the racket face
-  opens when the elbow flares, and the racket face must be controlled during backswing and
-  downward motion. Wobbling racket face causes unforced errors and instructs keeping the racket
-  face stable during forehand backswing and contact. The racket face angle must stay absolutely
-  stable from backswing to contact and that wrist flipping is wrong. Additional points reinforce
-  the same theme. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:6e764a60d985c988cb0740a064aab9a648a03f0929a4f6273084628225552e7e"
+  Keep the racket face stable through backswing, contact, and follow-through; wobbling at impact
+  causes errors and inconsistency.
+evidence_summary_source_hash: "sha256:3c2915a85a78948482e7923885812769fe931c5c64774ad4a1f3f9e9c829d0c4"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -32,10 +20,13 @@ facets:
 difficulty: beginner
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: ab0c3ad188a246544c45d999d6765f807ca06864a08b5c830e87d8eb4c5f31bf
-  prompt_version: candidate-review-v1
+  input_hash: sha256:7ff654f764319a22ce9dccd2742e34ff12c77381b1e87b46a2e193555d4f1f51
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: I-luBOL9IxI-concept-racket-face-stability-reviewed
     evidence_type: definition
@@ -43,7 +34,7 @@ evidence:
     reason: The speaker repeatedly says the racket face should not wobble and that stability is essential for consistency and landing hits on the table.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: I-luBOL9IxI
       start_ms: 204733
@@ -61,7 +52,7 @@ evidence:
     reason: The speaker contrasts brushing with flat hitting and says the wrist and forearm must act as one fixed unit, with the grip firm and the wrist locked.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 1Issn-5noM4
       start_ms: 523933
@@ -81,7 +72,7 @@ evidence:
     reason: The speaker contrasts unstable snake-like contact with a unified one-piece action and says the arm and racket face must be locked and stable.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: nukEclWHWn4
       start_ms: 524266
@@ -98,7 +89,7 @@ evidence:
     reason: The transcript directly links power errors to an unstable racket face and says the wrist, fingers, and racket face must not rotate at impact.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: qsY3S06fjgA
       start_ms: 428033
@@ -114,7 +105,7 @@ evidence:
     reason: The speaker states that the racket cannot wobble and must remain fixed through contact for power and control.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Xt5RyN3qkSA
       start_ms: 725533
@@ -132,7 +123,7 @@ evidence:
     reason: The speaker says the back of the hand must remain firm, the wrist should be locked, and in fast rallies the wrist should stay stable.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: yGWrxxrcvN4
       start_ms: 196766
@@ -147,7 +138,7 @@ evidence:
     reason: The speaker says a flat thumb makes the racket unstable, the racket face opens when the elbow flares, and the racket face must be controlled during backswing and downward motion.
     confidence: 0.91
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: OSfqukeeo_I
       start_ms: 34466
@@ -162,7 +153,7 @@ evidence:
     reason: The speaker says wobbling racket face causes unforced errors and instructs keeping the racket face stable during forehand backswing and contact.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: o_lngzbIPnA
       start_ms: 16733
@@ -176,7 +167,7 @@ evidence:
     reason: The transcript repeatedly emphasizes that the racket face angle must stay absolutely stable from backswing to contact and that wrist flipping is wrong.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ySisgDGZvDw
       start_ms: 336433
@@ -185,3 +176,55 @@ evidence:
       segment_ids:
         - ySisgDGZvDw:00061
         - ySisgDGZvDw:00063
+  - id: 1Issn-5noM4-concept-racket-face-and-wrist-stability-for-flat-hitting-codex-reviewed
+    evidence_type: explanation
+    excerpt: For flat hitting, the wrist and forearm move as a single fixed unit; the wrist does not flex independently, and the racket must not wobble on impact.
+    reason: The selected contiguous span directly explains racket-face stability for flat hitting and duplicates the supplied concept “Racket face stability.” It does not support the omitted grip and locked-wrist claims from later segments.
+    confidence: 0.97
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 1Issn-5noM4
+      start_ms: 526433
+      end_ms: 555800
+      url: https://www.youtube.com/watch?v=1Issn-5noM4&t=526s
+      segment_ids:
+        - 1Issn-5noM4:00123
+        - 1Issn-5noM4:00124
+        - 1Issn-5noM4:00125
+        - 1Issn-5noM4:00126
+        - 1Issn-5noM4:00127
+        - 1Issn-5noM4:00128
+        - 1Issn-5noM4:00129
+  - id: mQdrXMukRSY-concept-backhand-racket-face-stability-codex-reviewed
+    evidence_type: explanation
+    excerpt: My backhand is reliable because my racket angle is exceptionally stable; I adjust it for spin before the stroke, and my racket face never wobbles.
+    reason: These contiguous segments directly describe backhand racket-angle stability, controlled pre-stroke adjustment for spin, and no wobble during the stroke. The span is under 30 seconds and supports the existing durable concept.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: mQdrXMukRSY
+      start_ms: 589500
+      end_ms: 602733
+      url: https://www.youtube.com/watch?v=mQdrXMukRSY&t=589s
+      segment_ids:
+        - mQdrXMukRSY:00097
+        - mQdrXMukRSY:00098
+        - mQdrXMukRSY:00099
+        - mQdrXMukRSY:00100
+  - id: OSfqukeeo_I-concept-racket-face-stability-codex-reviewed
+    evidence_type: explanation
+    excerpt: Keep the thumb up on the rubber and pinch the handle firmly in your webspace to prevent racket instability.
+    reason: These contiguous segments explain that a flat thumb makes the racket unstable and prescribe keeping the thumb up and pinching the handle firmly.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: OSfqukeeo_I
+      start_ms: 34466
+      end_ms: 48966
+      url: https://www.youtube.com/watch?v=OSfqukeeo_I&t=34s
+      segment_ids:
+        - OSfqukeeo_I:00007
+        - OSfqukeeo_I:00008

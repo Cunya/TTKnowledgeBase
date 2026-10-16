@@ -21,1948 +21,2124 @@ facets:
 difficulty: intermediate
 review_status: approved
 evidence:
-  - id: backspin-closed-face-friction-global
-    evidence_type: explanation
-    excerpt: Close the racket angle to feel brushing contact instead of direct impact.
-    reason: Explains why a closed face supports friction when opening against backspin.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: 0E67TotjJFE, start_ms: 15366, end_ms: 39233, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=15s", segment_ids: ["0E67TotjJFE:00004", "0E67TotjJFE:00005", "0E67TotjJFE:00006", "0E67TotjJFE:00008"]}
-  - id: backspin-start-below-ball-global
-    evidence_type: explanation
-    excerpt: Against a falling backspin ball, begin with the racket lower than the ball.
-    reason: Gives a concrete vertical-position cue for clearing backspin.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: 0E67TotjJFE, start_ms: 317166, end_ms: 344000, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=317s", segment_ids: ["0E67TotjJFE:00071", "0E67TotjJFE:00075"]}
-  - id: backspin-outward-arc-global
-    evidence_type: explanation
-    excerpt: Draw the racket back, swing outward, then return inward in a small semicircle.
-    reason: Defines the outward arc and connects a larger arc with heavier incoming spin.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: OcPo7MgSNVM, start_ms: 474100, end_ms: 488266, url: "https://www.youtube.com/watch?v=OcPo7MgSNVM&t=474s", segment_ids: ["OcPo7MgSNVM:00111", "OcPo7MgSNVM:00112", "OcPo7MgSNVM:00113", "OcPo7MgSNVM:00114"]}
-  - id: backspin-forward-upward-drive-global
-    evidence_type: correction
-    excerpt: Brush forward and upward while driving into the ball, rather than lifting only vertically.
-    reason: Distinguishes a usable opening-loop direction from a purely upward action.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: OcPo7MgSNVM, start_ms: 98866, end_ms: 109266, url: "https://www.youtube.com/watch?v=OcPo7MgSNVM&t=98s", segment_ids: ["OcPo7MgSNVM:00021", "OcPo7MgSNVM:00022"]}
-  - id: backspin-three-downs-global
-    evidence_type: correction
-    excerpt: Prepare the opening loop by lowering the shoulder, legs, and wrist together.
-    reason: Summarizes preparation for a heavy-backspin opening loop.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    visual_source: {video_id: 0E67TotjJFE, start_ms: 365000, end_ms: 373000, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=365s", selection_method: nearby_visual_inference, note: Coach demonstrates the lowered stance and shoulder-racket preparation.}
-    review_status: approved
-    source: {video_id: 0E67TotjJFE, start_ms: 376666, end_ms: 381766, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=376s", segment_ids: ["0E67TotjJFE:00082"]}
-  - id: backspin-contact-height-spinmaster
-    evidence_type: explanation
-    excerpt: Keep contact roughly level with the table for more brush; raise it somewhat for a forward power loop.
-    reason: Connects the ball height to the safer or more forceful loop choice.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    visual_source: {video_id: JmOI0L7SiG8, start_ms: 44000, end_ms: 56000, url: "https://www.youtube.com/watch?v=JmOI0L7SiG8&t=44s", selection_method: nearby_visual_inference, note: Live-ball demonstrations compare contact heights for brushing and power looping.}
-    review_status: approved
-    source: {video_id: JmOI0L7SiG8, start_ms: 28133, end_ms: 37333, url: "https://www.youtube.com/watch?v=JmOI0L7SiG8&t=28s", segment_ids: ["JmOI0L7SiG8:00008", "JmOI0L7SiG8:00009", "JmOI0L7SiG8:00010", "JmOI0L7SiG8:00011"]}
-  - id: backspin-forward-action-spinmaster
-    evidence_type: correction
-    excerpt: Combine racket rotation with forward movement through contact; rotating in place will not clear the net.
-    reason: Prevents a brush-only action that lacks forward travel.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    visual_source: {video_id: V__nqiNHeKE, start_ms: 260000, end_ms: 274000, url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=260s", selection_method: nearby_visual_inference, note: Close live demonstration contrasts forward movement with wrist rotation in place.}
-    review_status: approved
-    source: {video_id: V__nqiNHeKE, start_ms: 267880, end_ms: 276360, url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=267s", segment_ids: ["V__nqiNHeKE:00100", "V__nqiNHeKE:00101", "V__nqiNHeKE:00102"]}
-  - id: m93pWt9MIZE-candidate-heavy-push-brush-first-1
-    evidence_type: explanation
-    excerpt: When the player serves heavy backspin and the opponent pushes that spin back, the opening loop should prioritize brushing over impact even if the return is half high.
-    reason: Speaker explains that the opponent borrows the heavy underspin and that hitting harder causes errors, while brushing makes the ball land.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: m93pWt9MIZE
-      start_ms: 208239
-      end_ms: 212879
-      url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=208s"
-      segment_ids:
-        - "m93pWt9MIZE:00082"
-  - id: m93pWt9MIZE-candidate-heavy-push-brush-first-2
-    evidence_type: explanation
-    excerpt: When the player serves heavy backspin and the opponent pushes that spin back, the opening loop should prioritize brushing over impact even if the return is half high.
-    reason: Speaker explains that the opponent borrows the heavy underspin and that hitting harder causes errors, while brushing makes the ball land.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: m93pWt9MIZE
-      start_ms: 233360
-      end_ms: 238319
-      url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=233s"
-      segment_ids:
-        - "m93pWt9MIZE:00092"
-  - id: m93pWt9MIZE-candidate-heavy-push-brush-first-3
-    evidence_type: correction
-    excerpt: When the player serves heavy backspin and the opponent pushes that spin back, the opening loop should prioritize brushing over impact even if the return is half high.
-    reason: Speaker explicitly instructs that after a heavy-spin serve and push return, the first reaction must be more brushing and impact cannot exceed brushing.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: m93pWt9MIZE
-      start_ms: 241200
-      end_ms: 268600
-      url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=241s"
-      segment_ids:
-        - "m93pWt9MIZE:00095"
-        - "m93pWt9MIZE:00104"
-  - id: OcPo7MgSNVM-cand-heavy-backspin-outward-looping-arc-1
-    evidence_type: explanation
-    excerpt: When looping heavy backspin, use a large outward semi-circular swing path from behind the body to the side and up, to create enough arc to lift the spin.
-    reason: The speaker repeatedly identifies swing arc as the first rule for looping heavy backspin and describes the full outward motion.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: OcPo7MgSNVM
-      start_ms: 25866
-      end_ms: 47966
-      url: "https://www.youtube.com/watch?v=OcPo7MgSNVM&t=25s"
-      segment_ids:
-        - "OcPo7MgSNVM:00006"
-        - "OcPo7MgSNVM:00007"
-        - "OcPo7MgSNVM:00009"
-  - id: OcPo7MgSNVM-cand-heavy-backspin-outward-looping-arc-2
-    evidence_type: explanation
-    excerpt: When looping heavy backspin, use a large outward semi-circular swing path from behind the body to the side and up, to create enough arc to lift the spin.
-    reason: The speaker repeatedly identifies swing arc as the first rule for looping heavy backspin and describes the full outward motion.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: OcPo7MgSNVM
-      start_ms: 63333
-      end_ms: 67966
-      url: "https://www.youtube.com/watch?v=OcPo7MgSNVM&t=63s"
-      segment_ids:
-        - "OcPo7MgSNVM:00013"
-  - id: OcPo7MgSNVM-cand-heavy-backspin-outward-looping-arc-3
-    evidence_type: definition
-    excerpt: When looping heavy backspin, use a large outward semi-circular swing path from behind the body to the side and up, to create enough arc to lift the spin.
-    reason: The transcript explicitly defines what an outward arc is and when it becomes more pronounced.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: OcPo7MgSNVM
-      start_ms: 474100
-      end_ms: 488266
-      url: "https://www.youtube.com/watch?v=OcPo7MgSNVM&t=474s"
-      segment_ids:
-        - "OcPo7MgSNVM:00111"
-        - "OcPo7MgSNVM:00112"
-        - "OcPo7MgSNVM:00113"
-        - "OcPo7MgSNVM:00114"
-  - id: OcPo7MgSNVM-cand-low-center-of-gravity-backspin-loop-1
-    evidence_type: explanation
-    excerpt: As backspin becomes heavier, the player should lower the stance and racket position to make lifting the ball easier.
-    reason: The speaker contrasts low versus upright posture and states that heavier backspin requires a lower center of gravity.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: OcPo7MgSNVM
-      start_ms: 76966
-      end_ms: 98866
-      url: "https://www.youtube.com/watch?v=OcPo7MgSNVM&t=76s"
-      segment_ids:
-        - "OcPo7MgSNVM:00016"
-        - "OcPo7MgSNVM:00018"
-        - "OcPo7MgSNVM:00020"
-  - id: OcPo7MgSNVM-cand-low-center-of-gravity-backspin-loop-2
-    evidence_type: explanation
-    excerpt: As backspin becomes heavier, the player should lower the stance and racket position to make lifting the ball easier.
-    reason: The low stance is summarized as one of the four key points, including low racket position.
-    confidence: 0.88
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: OcPo7MgSNVM
-      start_ms: 135066
-      end_ms: 141633
-      url: "https://www.youtube.com/watch?v=OcPo7MgSNVM&t=135s"
-      segment_ids:
-        - "OcPo7MgSNVM:00029"
-  - id: qLT0MvwitZc-cand-forward-drive-against-backspin-1
-    evidence_type: explanation
-    excerpt: A loop-against-backspin principle that emphasizes moving through the ball forward, not just lifting upward, so the player can create both arc and depth.
-    reason: The speaker says lack of power versus backspin comes from insufficient forward drive and explains that the stroke should move forward in a parabolic arc.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: qLT0MvwitZc
-      start_ms: 390466
-      end_ms: 418966
-      url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=390s"
-      segment_ids:
-        - "qLT0MvwitZc:00091"
-        - "qLT0MvwitZc:00092"
-        - "qLT0MvwitZc:00094"
-        - "qLT0MvwitZc:00097"
-  - id: qLT0MvwitZc-cand-forward-drive-against-backspin-2
-    evidence_type: explanation
-    excerpt: A loop-against-backspin principle that emphasizes moving through the ball forward, not just lifting upward, so the player can create both arc and depth.
-    reason: The speaker says lack of power versus backspin comes from insufficient forward drive and explains that the stroke should move forward in a parabolic arc.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: qLT0MvwitZc
-      start_ms: 418966
-      end_ms: 423766
-      url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=418s"
-      segment_ids:
-        - "qLT0MvwitZc:00098"
-  - id: qLT0MvwitZc-cand-forward-drive-against-backspin-3
-    evidence_type: explanation
-    excerpt: A loop-against-backspin principle that emphasizes moving through the ball forward, not just lifting upward, so the player can create both arc and depth.
-    reason: The transcript contrasts over-lifting with first driving through the ball and only then going upward.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: qLT0MvwitZc
-      start_ms: 431300
-      end_ms: 452766
-      url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=431s"
-      segment_ids:
-        - "qLT0MvwitZc:00101"
-        - "qLT0MvwitZc:00103"
-        - "qLT0MvwitZc:00104"
-  - id: V2YGbh829eU-cand-forearm-drop-backswing-against-backspin-1
-    evidence_type: explanation
-    excerpt: Speaker explicitly teaches dropping the forearm in the backswing to brush up against backspin on both forehand and backhand loops.
-    reason: Against backspin, the forearm should drop below ball height during the backswing so the stroke can brush upward and generate heavy spin instead of contacting too flatly from behind the ball.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: V2YGbh829eU
-      start_ms: 41233
-      end_ms: 50966
-      url: "https://www.youtube.com/watch?v=V2YGbh829eU&t=41s"
-      segment_ids:
-        - "V2YGbh829eU:00011"
-        - "V2YGbh829eU:00012"
-  - id: V2YGbh829eU-cand-forearm-drop-backswing-against-backspin-2
-    evidence_type: explanation
-    excerpt: Speaker explicitly teaches dropping the forearm in the backswing to brush up against backspin on both forehand and backhand loops.
-    reason: Against backspin, the forearm should drop below ball height during the backswing so the stroke can brush upward and generate heavy spin instead of contacting too flatly from behind the ball.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: V2YGbh829eU
-      start_ms: 65533
-      end_ms: 83366
-      url: "https://www.youtube.com/watch?v=V2YGbh829eU&t=65s"
-      segment_ids:
-        - "V2YGbh829eU:00016"
-        - "V2YGbh829eU:00017"
-        - "V2YGbh829eU:00018"
-  - id: V2YGbh829eU-cand-forearm-drop-backswing-against-backspin-3
-    evidence_type: explanation
-    excerpt: Speaker explicitly teaches dropping the forearm in the backswing to brush up against backspin on both forehand and backhand loops.
-    reason: Against backspin, the forearm should drop below ball height during the backswing so the stroke can brush upward and generate heavy spin instead of contacting too flatly from behind the ball.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: V2YGbh829eU
-      start_ms: 93266
-      end_ms: 99766
-      url: "https://www.youtube.com/watch?v=V2YGbh829eU&t=93s"
-      segment_ids:
-        - "V2YGbh829eU:00022"
-        - "V2YGbh829eU:00023"
-  - id: V2YGbh829eU-cand-forearm-drop-backswing-against-backspin-4
-    evidence_type: correction
-    excerpt: Contrasts flat or level backswing with a forearm drop and states the former produces little or no spin.
-    reason: Against backspin, the forearm should drop below ball height during the backswing so the stroke can brush upward and generate heavy spin instead of contacting too flatly from behind the ball.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: V2YGbh829eU
-      start_ms: 50966
-      end_ms: 57633
-      url: "https://www.youtube.com/watch?v=V2YGbh829eU&t=50s"
-      segment_ids:
-        - "V2YGbh829eU:00013"
-  - id: V2YGbh829eU-cand-forearm-drop-backswing-against-backspin-5
-    evidence_type: correction
-    excerpt: Contrasts flat or level backswing with a forearm drop and states the former produces little or no spin.
-    reason: Against backspin, the forearm should drop below ball height during the backswing so the stroke can brush upward and generate heavy spin instead of contacting too flatly from behind the ball.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: V2YGbh829eU
-      start_ms: 83366
-      end_ms: 91100
-      url: "https://www.youtube.com/watch?v=V2YGbh829eU&t=83s"
-      segment_ids:
-        - "V2YGbh829eU:00019"
-        - "V2YGbh829eU:00020"
-  - id: 1v7qPrGhvTU-candidate-forehand-loop-against-backspin-1
-    evidence_type: explanation
-    excerpt: 'The speaker identifies forward drive as the missing ingredient against backspin and gives the movement sequence: drop low, drive forward, then go upward.'
-    reason: 'When looping against backspin, the player must drive forward through the ball before rising and then close the stroke; forward drive solves depth and power while brushing solves net clearance.'
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 1v7qPrGhvTU
-      start_ms: 265600
-      end_ms: 281440
-      url: https://www.youtube.com/watch?v=1v7qPrGhvTU&t=265s
-      segment_ids:
-        - 1v7qPrGhvTU:00112
-        - 1v7qPrGhvTU:00117
-  - id: 1v7qPrGhvTU-candidate-forehand-loop-against-backspin-2
-    evidence_type: explanation
-    excerpt: 'The speaker identifies forward drive as the missing ingredient against backspin and gives the movement sequence: drop low, drive forward, then go upward.'
-    reason: 'When looping against backspin, the player must drive forward through the ball before rising and then close the stroke; forward drive solves depth and power while brushing solves net clearance.'
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 1v7qPrGhvTU
-      start_ms: 290800
-      end_ms: 310880
-      url: https://www.youtube.com/watch?v=1v7qPrGhvTU&t=290s
-      segment_ids:
-        - 1v7qPrGhvTU:00123
-        - 1v7qPrGhvTU:00124
-        - 1v7qPrGhvTU:00126
-        - 1v7qPrGhvTU:00127
-        - 1v7qPrGhvTU:00129
-  - id: 1v7qPrGhvTU-candidate-forehand-loop-against-backspin-3
-    evidence_type: correction
-    excerpt: The speaker corrects the fear of driving forward, separates arc length from arc height, and instructs players to drive through first and only then close.
-    reason: When looping against backspin, the player must drive forward through the ball before rising and then close the stroke; forward drive solves depth and power while brushing solves net clearance.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 1v7qPrGhvTU
-      start_ms: 310880
-      end_ms: 333759
-      url: https://www.youtube.com/watch?v=1v7qPrGhvTU&t=310s
-      segment_ids:
-        - 1v7qPrGhvTU:00131
-        - 1v7qPrGhvTU:00133
-        - 1v7qPrGhvTU:00136
-        - 1v7qPrGhvTU:00138
-        - 1v7qPrGhvTU:00140
-  - id: 1v7qPrGhvTU-candidate-forehand-loop-against-backspin-4
-    evidence_type: correction
-    excerpt: The speaker corrects the fear of driving forward, separates arc length from arc height, and instructs players to drive through first and only then close.
-    reason: When looping against backspin, the player must drive forward through the ball before rising and then close the stroke; forward drive solves depth and power while brushing solves net clearance.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 1v7qPrGhvTU
-      start_ms: 338000
-      end_ms: 352400
-      url: https://www.youtube.com/watch?v=1v7qPrGhvTU&t=338s
-      segment_ids:
-        - 1v7qPrGhvTU:00144
-        - 1v7qPrGhvTU:00148
-  - id: 1v7qPrGhvTU-candidate-forehand-loop-against-backspin-5
-    evidence_type: correction
-    excerpt: The speaker corrects the fear of driving forward, separates arc length from arc height, and instructs players to drive through first and only then close.
-    reason: When looping against backspin, the player must drive forward through the ball before rising and then close the stroke; forward drive solves depth and power while brushing solves net clearance.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 1v7qPrGhvTU
-      start_ms: 362000
-      end_ms: 370720
-      url: https://www.youtube.com/watch?v=1v7qPrGhvTU&t=362s
-      segment_ids:
-        - 1v7qPrGhvTU:00152
-        - 1v7qPrGhvTU:00153
-  - id: f7uZPRPIwpU-concept-forehand-loop-against-backspin-1
-    evidence_type: explanation
-    excerpt: Against heavy or medium backspin, loop by getting lower than the ball and accelerating the brushing action instead of trying to drive through it like a power loop.
-    reason: 'Speaker describes the response to heavy and medium spin pushes: get below the ball and accelerate the brush rather than treat it as a power-loop ball.'
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: f7uZPRPIwpU
-      start_ms: 267720
-      end_ms: 274480
-      url: https://www.youtube.com/watch?v=f7uZPRPIwpU&t=267s
-      segment_ids:
-        - f7uZPRPIwpU:00101
-        - f7uZPRPIwpU:00102
-        - f7uZPRPIwpU:00103
-  - id: f7uZPRPIwpU-concept-forehand-loop-against-backspin-2
-    evidence_type: explanation
-    excerpt: Against heavy or medium backspin, loop by getting lower than the ball and accelerating the brushing action instead of trying to drive through it like a power loop.
-    reason: 'Speaker describes the response to heavy and medium spin pushes: get below the ball and accelerate the brush rather than treat it as a power-loop ball.'
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: f7uZPRPIwpU
-      start_ms: 294160
-      end_ms: 317840
-      url: https://www.youtube.com/watch?v=f7uZPRPIwpU&t=294s
-      segment_ids:
-        - f7uZPRPIwpU:00111
-        - f7uZPRPIwpU:00112
-        - f7uZPRPIwpU:00115
-        - f7uZPRPIwpU:00117
-        - f7uZPRPIwpU:00118
-        - f7uZPRPIwpU:00119
-  - id: nUotsfFiQqY-cand-heavy-backspin-loop-friction-1
-    evidence_type: explanation
-    excerpt: When looping a heavily spun backspin ball, emphasize sustained brushing friction with a slower, deliberate swing rather than quick impact.
-    reason: Speaker explains that against heavy spin the stroke should prioritize friction and sustained brushing rather than acceleration and impact.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: nUotsfFiQqY
-      start_ms: 326800
-      end_ms: 354440
-      url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=326s
-      segment_ids:
-        - nUotsfFiQqY:00137
-        - nUotsfFiQqY:00138
-        - nUotsfFiQqY:00139
-        - nUotsfFiQqY:00140
-        - nUotsfFiQqY:00141
-        - nUotsfFiQqY:00142
-        - nUotsfFiQqY:00143
-        - nUotsfFiQqY:00144
-        - nUotsfFiQqY:00145
-        - nUotsfFiQqY:00146
-        - nUotsfFiQqY:00147
-  - id: nUotsfFiQqY-cand-upper-arm-arc-adjustment-vs-spin-1
-    evidence_type: explanation
-    excerpt: 'Speaker describes raising the arm to create arc and avoid the net against heavy spin.'
-    reason: 'Adjust the upper-arm path based on the incoming backspin: lift the upper arm more to create arc against heavy spin, but keep it level and drive more forward against weak or carried spin.'
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: nUotsfFiQqY
-      start_ms: 385400
-      end_ms: 414200
-      url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=385s
-      segment_ids:
-        - nUotsfFiQqY:00157
-        - nUotsfFiQqY:00158
-        - nUotsfFiQqY:00162
-        - nUotsfFiQqY:00163
-        - nUotsfFiQqY:00165
-  - id: nUotsfFiQqY-cand-upper-arm-arc-adjustment-vs-spin-2
-    evidence_type: explanation
-    excerpt: 'Speaker describes raising the arm to create arc and avoid the net against heavy spin.'
-    reason: 'Adjust the upper-arm path based on the incoming backspin: lift the upper arm more to create arc against heavy spin, but keep it level and drive more forward against weak or carried spin.'
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: nUotsfFiQqY
-      start_ms: 412000
-      end_ms: 441320
-      url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=412s
-      segment_ids:
-        - nUotsfFiQqY:00166
-        - nUotsfFiQqY:00169
-        - nUotsfFiQqY:00170
-        - nUotsfFiQqY:00171
-        - nUotsfFiQqY:00175
-        - nUotsfFiQqY:00176
-        - nUotsfFiQqY:00177
-  - id: nUotsfFiQqY-cand-upper-arm-arc-adjustment-vs-spin-3
-    evidence_type: explanation
-    excerpt: 'Speaker contrasts the weak-spin pattern, where the stroke should go more forward and the upper arm should not rise.'
-    reason: 'Adjust the upper-arm path based on the incoming backspin: lift the upper arm more to create arc against heavy spin, but keep it level and drive more forward against weak or carried spin.'
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: nUotsfFiQqY
-      start_ms: 446400
-      end_ms: 476080
-      url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=446s
-      segment_ids:
-        - nUotsfFiQqY:00181
-        - nUotsfFiQqY:00182
-        - nUotsfFiQqY:00183
-        - nUotsfFiQqY:00184
-        - nUotsfFiQqY:00185
-        - nUotsfFiQqY:00186
-        - nUotsfFiQqY:00187
-        - nUotsfFiQqY:00188
-        - nUotsfFiQqY:00189
-  - id: nUotsfFiQqY-cand-upper-arm-arc-adjustment-vs-spin-4
-    evidence_type: explanation
-    excerpt: 'Speaker contrasts the weak-spin pattern, where the stroke should go more forward and the upper arm should not rise.'
-    reason: 'Adjust the upper-arm path based on the incoming backspin: lift the upper arm more to create arc against heavy spin, but keep it level and drive more forward against weak or carried spin.'
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: nUotsfFiQqY
-      start_ms: 474080
-      end_ms: 486040
-      url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=474s
-      segment_ids:
-        - nUotsfFiQqY:00190
-        - nUotsfFiQqY:00191
-        - nUotsfFiQqY:00192
-        - nUotsfFiQqY:00193
-        - nUotsfFiQqY:00194
-  - id: t3HX8AEujWw-c7-1
-    evidence_type: definition
-    excerpt: States beginners should place the backspin loop at the early descending phase because it is stable and gives good friction.
-    reason: Against backspin, beginners should usually loop in the early descending phase for stability and friction; peak timing is a later progression for power, while rising-phase attacks are mainly for half-long returns.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: t3HX8AEujWw
-      start_ms: 267040
-      end_ms: 279880
-      url: https://www.youtube.com/watch?v=t3HX8AEujWw&t=267s
-      segment_ids:
-        - t3HX8AEujWw:00116
-        - t3HX8AEujWw:00117
-        - t3HX8AEujWw:00118
-        - t3HX8AEujWw:00119
-        - t3HX8AEujWw:00120
-  - id: t3HX8AEujWw-c7-2
-    evidence_type: explanation
-    excerpt: Describes progressing from safe loops to explosive power loops by shifting toward peak timing.
-    reason: Against backspin, beginners should usually loop in the early descending phase for stability and friction; peak timing is a later progression for power, while rising-phase attacks are mainly for half-long returns.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: t3HX8AEujWw
-      start_ms: 277840
-      end_ms: 289600
-      url: https://www.youtube.com/watch?v=t3HX8AEujWw&t=277s
-      segment_ids:
-        - t3HX8AEujWw:00121
-        - t3HX8AEujWw:00122
-        - t3HX8AEujWw:00123
-        - t3HX8AEujWw:00124
-        - t3HX8AEujWw:00125
-  - id: t3HX8AEujWw-c7-3
-    evidence_type: explanation
-    excerpt: Limits rising-phase looping to half-long return balls and warns that deep fast pushes make on-the-rise looping misread spin.
-    reason: Against backspin, beginners should usually loop in the early descending phase for stability and friction; peak timing is a later progression for power, while rising-phase attacks are mainly for half-long returns.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: t3HX8AEujWw
-      start_ms: 287040
-      end_ms: 303280
-      url: https://www.youtube.com/watch?v=t3HX8AEujWw&t=287s
-      segment_ids:
-        - t3HX8AEujWw:00126
-        - t3HX8AEujWw:00127
-        - t3HX8AEujWw:00128
-        - t3HX8AEujWw:00129
-        - t3HX8AEujWw:00130
-        - t3HX8AEujWw:00131
-        - t3HX8AEujWw:00132
-  - id: wF-YklKS7pI-cand-heavy-spin-long-return-brush-loop-1
-    evidence_type: explanation
-    excerpt: The speaker teaches a compact press-and-brush topspin response against heavy chopped long balls.
-    reason: Against a long, heavily chopped return, the player should use a compact brushing loop with forward pressure and reduced swing size as the incoming backspin increases.
-    confidence: 0.78
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: wF-YklKS7pI
-      start_ms: 562880
-      end_ms: 590840
-      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=562s
-      segment_ids:
-        - wF-YklKS7pI:00224
-        - wF-YklKS7pI:00227
-        - wF-YklKS7pI:00229
-        - wF-YklKS7pI:00230
-        - wF-YklKS7pI:00231
-        - wF-YklKS7pI:00234
-  - id: wF-YklKS7pI-cand-heavy-spin-long-return-brush-loop-2
-    evidence_type: explanation
-    excerpt: The speaker teaches a compact press-and-brush topspin response against heavy chopped long balls.
-    reason: Against a long, heavily chopped return, the player should use a compact brushing loop with forward pressure and reduced swing size as the incoming backspin increases.
-    confidence: 0.78
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: wF-YklKS7pI
-      start_ms: 588640
-      end_ms: 617800
-      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=588s
-      segment_ids:
-        - wF-YklKS7pI:00235
-        - wF-YklKS7pI:00236
-        - wF-YklKS7pI:00237
-        - wF-YklKS7pI:00239
-        - wF-YklKS7pI:00240
-        - wF-YklKS7pI:00241
-        - wF-YklKS7pI:00243
-  - id: wF-YklKS7pI-cand-heavy-spin-long-return-brush-loop-3
-    evidence_type: explanation
-    excerpt: The speaker teaches a compact press-and-brush topspin response against heavy chopped long balls.
-    reason: Against a long, heavily chopped return, the player should use a compact brushing loop with forward pressure and reduced swing size as the incoming backspin increases.
-    confidence: 0.78
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: wF-YklKS7pI
-      start_ms: 615120
-      end_ms: 619000
-      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=615s
-      segment_ids:
-        - wF-YklKS7pI:00244
-  - id: zd8tcVUWwK4-cand-forehand-loop-against-backspin-1
-    evidence_type: explanation
-    excerpt: 'Speaker gives explicit corrective mechanics for looping backspin: get low, come from under the ball, and combine brushing with upward power.'
-    reason: Against backspin, the forehand opening loop becomes easier and safer when the player gets low, approaches from under the ball, brushes first, and then adds power while rising into contact.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: zd8tcVUWwK4
-      start_ms: 460360
-      end_ms: 483280
-      url: https://www.youtube.com/watch?v=zd8tcVUWwK4&t=460s
-      segment_ids:
-        - zd8tcVUWwK4:00193
-        - zd8tcVUWwK4:00194
-        - zd8tcVUWwK4:00195
-        - zd8tcVUWwK4:00196
-        - zd8tcVUWwK4:00197
-        - zd8tcVUWwK4:00198
-        - zd8tcVUWwK4:00199
-        - zd8tcVUWwK4:00200
-        - zd8tcVUWwK4:00201
-        - zd8tcVUWwK4:00202
-        - zd8tcVUWwK4:00203
-  - id: zd8tcVUWwK4-cand-forehand-loop-against-backspin-2
-    evidence_type: explanation
-    excerpt: 'Speaker gives explicit corrective mechanics for looping backspin: get low, come from under the ball, and combine brushing with upward power.'
-    reason: Against backspin, the forehand opening loop becomes easier and safer when the player gets low, approaches from under the ball, brushes first, and then adds power while rising into contact.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: zd8tcVUWwK4
-      start_ms: 486360
-      end_ms: 507200
-      url: https://www.youtube.com/watch?v=zd8tcVUWwK4&t=486s
-      segment_ids:
-        - zd8tcVUWwK4:00204
-        - zd8tcVUWwK4:00205
-        - zd8tcVUWwK4:00206
-        - zd8tcVUWwK4:00207
-        - zd8tcVUWwK4:00208
-        - zd8tcVUWwK4:00209
-        - zd8tcVUWwK4:00210
-        - zd8tcVUWwK4:00211
-        - zd8tcVUWwK4:00212
-  - id: zd8tcVUWwK4-cand-forehand-loop-against-backspin-3
-    evidence_type: explanation
-    excerpt: 'Speaker gives explicit corrective mechanics for looping backspin: get low, come from under the ball, and combine brushing with upward power.'
-    reason: Against backspin, the forehand opening loop becomes easier and safer when the player gets low, approaches from under the ball, brushes first, and then adds power while rising into contact.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: zd8tcVUWwK4
-      start_ms: 518000
-      end_ms: 531000
-      url: https://www.youtube.com/watch?v=zd8tcVUWwK4&t=518s
-      segment_ids:
-        - zd8tcVUWwK4:00216
-        - zd8tcVUWwK4:00217
-        - zd8tcVUWwK4:00218
-        - zd8tcVUWwK4:00219
-        - zd8tcVUWwK4:00220
-  - id: 1fHWnt8IlbI-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: Using a forehand topspin loop to attack a backspin or push ball rather than pushing it back.
-    reason: The speaker says that on the forehand side, the correct choice against half-long is loop rather than push.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 1fHWnt8IlbI
-      start_ms: 33000
-      end_ms: 46000
-      url: https://www.youtube.com/watch?v=1fHWnt8IlbI&t=33s
-      segment_ids:
-        - 1fHWnt8IlbI:00014
-        - 1fHWnt8IlbI:00015
-        - 1fHWnt8IlbI:00016
-        - 1fHWnt8IlbI:00017
-        - 1fHWnt8IlbI:00018
-        - 1fHWnt8IlbI:00019
-  - id: 5JzSUTg_ojc-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: Opening against backspin by using a brushing, forward-carrying motion rather than a pure drive, especially when the incoming ball is spinny and slow.
-    reason: The speaker explains that against very spinny balls you must carry and brush the ball forward, using body and arm to generate forward force while staying close to the ball.
-    confidence: 0.91
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 5JzSUTg_ojc
-      start_ms: 135600
-      end_ms: 156360
-      url: https://www.youtube.com/watch?v=5JzSUTg_ojc&t=135s
-      segment_ids:
-        - 5JzSUTg_ojc:00054
-        - 5JzSUTg_ojc:00057
-        - 5JzSUTg_ojc:00060
-  - id: Aaaxi0DOZzQ-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: Opening or attacking with a forehand topspin loop against a backspin ball, emphasizing correct posture, timing, and contact mechanics.
-    reason: The speaker explicitly names the topic as the forehand loop against backspin and says they will break down the forehand backspin loop in detail.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: Aaaxi0DOZzQ
-      start_ms: 1400
-      end_ms: 15800
-      url: https://www.youtube.com/watch?v=Aaaxi0DOZzQ&t=1s
-      segment_ids:
-        - Aaaxi0DOZzQ:00000
-        - Aaaxi0DOZzQ:00001
-        - Aaaxi0DOZzQ:00004
-        - Aaaxi0DOZzQ:00005
-  - id: fXOGFZD1MTY-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: A forehand topspin loop used to open or attack backspin/backspin-like balls by getting the body low, driving forward, and creating quality contact.
-    reason: Speaker explicitly names the forehand backspin loop as the target skill.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: fXOGFZD1MTY
-      start_ms: 27920
-      end_ms: 35120
-      url: https://www.youtube.com/watch?v=fXOGFZD1MTY&t=27s
-      segment_ids:
-        - fXOGFZD1MTY:00007
-        - fXOGFZD1MTY:00008
-  - id: ti_YUZdHu3o-cand-4-reviewed
-    evidence_type: explanation
-    excerpt: A forehand looping action used to attack backspin or underspin by contacting below the ball and brushing up with spin.
-    reason: The speaker explicitly says this is about looping against backspin and recommends spacing for that situation.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: ti_YUZdHu3o
-      start_ms: 397400
-      end_ms: 415360
-      url: https://www.youtube.com/watch?v=ti_YUZdHu3o&t=397s
-      segment_ids:
-        - ti_YUZdHu3o:00133
-        - ti_YUZdHu3o:00135
-        - ti_YUZdHu3o:00137
-        - ti_YUZdHu3o:00138
-  - id: UCyUdarqdJc-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: A forehand topspin opening against backspin that waits for the ball to drop and contacts it near the knee rather than reaching early.
-    reason: The speaker explicitly discusses forehand backspin looping, waiting for the ball to come down, and avoiding looping right off the bounce.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: UCyUdarqdJc
-      start_ms: 365240
-      end_ms: 390800
-      url: https://www.youtube.com/watch?v=UCyUdarqdJc&t=365s
-      segment_ids:
-        - UCyUdarqdJc:00142
-        - UCyUdarqdJc:00143
-        - UCyUdarqdJc:00144
-        - UCyUdarqdJc:00145
-        - UCyUdarqdJc:00146
-        - UCyUdarqdJc:00147
-        - UCyUdarqdJc:00148
-        - UCyUdarqdJc:00149
-        - UCyUdarqdJc:00150
-        - UCyUdarqdJc:00151
-  - id: 8yuRXgTWOxc-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: Using a forehand topspin action to attack a backspin or pushed ball, especially when the ball sits up or is pushed short or long.
-    reason: The speaker explicitly names the topic as forehand loop against backspin and describes looping soft pushes, short pushes, and long pushes.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 8yuRXgTWOxc
-      start_ms: 45920
-      end_ms: 75720
-      url: https://www.youtube.com/watch?v=8yuRXgTWOxc&t=45s
-      segment_ids:
-        - 8yuRXgTWOxc:00018
-        - 8yuRXgTWOxc:00021
-        - 8yuRXgTWOxc:00028
-  - id: ONXmZHozLTA-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: Looping heavy backspin requires soft, controlled touch and finger-led acceleration rather than a hard hit.
-    reason: The speaker contrasts light and heavy backspin and says the touch must be soft and controlled before accelerating with the fingers.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: ONXmZHozLTA
-      start_ms: 231480
-      end_ms: 255480
-      url: https://www.youtube.com/watch?v=ONXmZHozLTA&t=231s
-      segment_ids:
-        - ONXmZHozLTA:00078
-        - ONXmZHozLTA:00079
-        - ONXmZHozLTA:00080
-        - ONXmZHozLTA:00081
-        - ONXmZHozLTA:00082
-        - ONXmZHozLTA:00083
-        - ONXmZHozLTA:00084
-  - id: TMrN47uIHiI-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: Looping a backspin or lifted ball by staying close, brushing downward, and driving through the ball from back to front.
-    reason: The speaker describes pressing and brushing forward, staying close to the ball, and hitting from high to low or driving it down into the body for balls with backspin/lift.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: TMrN47uIHiI
-      start_ms: 213840
-      end_ms: 226680
-      url: https://www.youtube.com/watch?v=TMrN47uIHiI&t=213s
-      segment_ids:
-        - TMrN47uIHiI:00064
-        - TMrN47uIHiI:00065
-        - TMrN47uIHiI:00067
-  - id: wyna7UXctZQ-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: A looping topspin attack used against backspin, requiring the stroke to match the incoming spin and trajectory.
-    reason: The transcript explicitly says to respect the trajectory of backspin while looping and shows a looping example.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: wyna7UXctZQ
-      start_ms: 218400
-      end_ms: 230640
-      url: https://www.youtube.com/watch?v=wyna7UXctZQ&t=218s
-      segment_ids:
-        - wyna7UXctZQ:00080
-        - wyna7UXctZQ:00081
-        - wyna7UXctZQ:00082
-  - id: vXZPX5wybTY-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: A forehand topspin opening against backspin that requires adjusted backswing, racket angle, and timing.
-    reason: The speaker directly discusses transitioning from backspin to topspin and says the next shot's backswing must be behind the ball, not underneath it.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: vXZPX5wybTY
-      start_ms: 12920
-      end_ms: 23000
-      url: https://www.youtube.com/watch?v=vXZPX5wybTY&t=12s
-      segment_ids:
-        - vXZPX5wybTY:00005
-        - vXZPX5wybTY:00007
-        - vXZPX5wybTY:00008
-  - id: vXZPX5wybTY-concept-forehand-loop-against-backspin-reviewed-2517cb01
-    evidence_type: definition
-    excerpt: A forehand topspin opening against backspin that requires adjusted backswing, racket angle, and timing.
-    reason: The speaker directly discusses transitioning from backspin to topspin and says the next shot's backswing must be behind the ball, not underneath it.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: vXZPX5wybTY
-      start_ms: 12920
-      end_ms: 23000
-      url: https://www.youtube.com/watch?v=vXZPX5wybTY&t=12s
-      segment_ids:
-        - vXZPX5wybTY:00005
-        - vXZPX5wybTY:00007
-        - vXZPX5wybTY:00008
-  - id: 13z0kO_hd0M-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: A forehand loop used to attack heavy backspin or chop by creating the needed arc and brushing action rather than driving straight through the ball.
-    reason: The speaker explicitly mentions looping against a heavy chop and says an outside arc makes it easier to loop.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 13z0kO_hd0M
-      start_ms: 192520
-      end_ms: 201840
-      url: https://www.youtube.com/watch?v=13z0kO_hd0M&t=192s
-      segment_ids:
-        - 13z0kO_hd0M:00070
-        - 13z0kO_hd0M:00072
-  - id: PDFXww03DHM-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: Against underspin, use a lifted arc and a forward-carrying loop motion to open up or attack the ball instead of striking flat.
-    reason: The speaker demonstrates looping spinny balls by pushing the upper arm forward, driving the forearm forward, and carrying the ball forward while finishing naturally.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: PDFXww03DHM
-      start_ms: 378320
-      end_ms: 407120
-      url: https://www.youtube.com/watch?v=PDFXww03DHM&t=378s
-      segment_ids:
-        - PDFXww03DHM:00117
-        - PDFXww03DHM:00118
-        - PDFXww03DHM:00119
-        - PDFXww03DHM:00120
-        - PDFXww03DHM:00121
-        - PDFXww03DHM:00122
-        - PDFXww03DHM:00123
-        - PDFXww03DHM:00124
-        - PDFXww03DHM:00125
-        - PDFXww03DHM:00126
-  - id: zMP_ptkdNHk-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: Looping attack used against heavy backspin or push balls.
-    reason: The speaker explicitly frames the topic as looping against different spins and starts with a very heavy backspin ball.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: zMP_ptkdNHk
-      start_ms: 0
-      end_ms: 18440
-      url: https://www.youtube.com/watch?v=zMP_ptkdNHk&t=0s
-      segment_ids:
-        - zMP_ptkdNHk:00000
-        - zMP_ptkdNHk:00001
-        - zMP_ptkdNHk:00002
-        - zMP_ptkdNHk:00005
-        - zMP_ptkdNHk:00006
-  - id: R9InWNDCJQM-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: Using a forehand topspin action to attack a ball carrying backspin or underspin, typically with forward and slightly downward contact direction.
-    reason: The speaker describes a backspin high ball and says to hit forward, slightly downward, or slightly upward depending on the spin; this is the core opening-loop against backspin pattern.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: R9InWNDCJQM
-      start_ms: 303600
-      end_ms: 318560
-      url: https://www.youtube.com/watch?v=R9InWNDCJQM&t=303s
-      segment_ids:
-        - R9InWNDCJQM:00105
-        - R9InWNDCJQM:00106
-        - R9InWNDCJQM:00107
-        - R9InWNDCJQM:00108
-        - R9InWNDCJQM:00109
-  - id: wpIxIvnuOac-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: A forehand topspin action used against backspin, emphasizing a high arc, short placement, and forward pressure so the ball lands on the table.
-    reason: The speaker explicitly frames the shot as looping with a high arc and short placement, which matches a forehand loop against backspin.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: wpIxIvnuOac
-      start_ms: 26160
-      end_ms: 50920
-      url: https://www.youtube.com/watch?v=wpIxIvnuOac&t=26s
-      segment_ids:
-        - wpIxIvnuOac:00009
-        - wpIxIvnuOac:00010
-        - wpIxIvnuOac:00011
-        - wpIxIvnuOac:00017
-        - wpIxIvnuOac:00018
-  - id: H0sbIUpUNLY-cand-10-reviewed
-    evidence_type: explanation
-    excerpt: A forehand loop against backspin that first brushes enough to clear the net, then transitions forward instead of continuing upward.
-    reason: The speaker explains that after enough brushing to clear the net, the arm should press forward rather than keep lifting upward.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: H0sbIUpUNLY
-      start_ms: 575240
-      end_ms: 601520
-      url: https://www.youtube.com/watch?v=H0sbIUpUNLY&t=575s
-      segment_ids:
-        - H0sbIUpUNLY:00197
-        - H0sbIUpUNLY:00203
-  - id: mYzbo93Nkps-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: Opening the forehand loop against push balls or heavy backspin by getting the racket below the table, adding brush, and adjusting the upward component for spinny balls.
-    reason: Describes that incoming balls in a push rally are backspin and the racket should go below the table for attack.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: mYzbo93Nkps
-      start_ms: 129240
-      end_ms: 140640
-      url: https://www.youtube.com/watch?v=mYzbo93Nkps&t=129s
-      segment_ids:
-        - mYzbo93Nkps:00045
-        - mYzbo93Nkps:00046
-        - mYzbo93Nkps:00047
-        - mYzbo93Nkps:00048
-        - mYzbo93Nkps:00049
-  - id: oLxdGO8TY8s-cand-4-reviewed
-    evidence_type: example
-    excerpt: Opening or continuing with a forehand loop against backspin or push balls, using more brushing when needed.
-    reason: The speaker contrasts pushing versus looping against backspin and says they still loop even on heavy topspin or backspin-like situations.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: oLxdGO8TY8s
-      start_ms: 44560
-      end_ms: 61880
-      url: https://www.youtube.com/watch?v=oLxdGO8TY8s&t=44s
-      segment_ids:
-        - oLxdGO8TY8s:00015
-        - oLxdGO8TY8s:00017
-        - oLxdGO8TY8s:00018
-        - oLxdGO8TY8s:00019
-  - id: sosNHzR8A9U-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: A forehand topspin loop used against backspin/underspin, with timing and mechanics adapted to the incoming spin.
-    reason: The speaker explicitly says the topic is the forehand loop against backspin and later refers to looping backspin.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: sosNHzR8A9U
-      start_ms: 5000
-      end_ms: 8433
-      url: https://www.youtube.com/watch?v=sosNHzR8A9U&t=5s
-      segment_ids:
-        - sosNHzR8A9U:00001
-  - id: 2Wk2xe0I1s8-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: A forehand loop used to lift a backspin ball by matching the ball's downward trajectory with a forward-up brushing swing.
-    reason: The transcript centers on why a loop against backspin hits the net and explains that the correct solution is to follow the backspin trajectory and lift it with speed.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 2Wk2xe0I1s8
-      start_ms: 266833
-      end_ms: 295766
-      url: https://www.youtube.com/watch?v=2Wk2xe0I1s8&t=266s
-      segment_ids:
-        - 2Wk2xe0I1s8:00057
-        - 2Wk2xe0I1s8:00058
-        - 2Wk2xe0I1s8:00061
-        - 2Wk2xe0I1s8:00062
-  - id: 7jWqEsHtN3Y-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: Using a forehand topspin loop to attack a pushed ball with underspin or backspin.
-    reason: The lesson is explicitly about looping a pushed ball, including how to attack normal underspin with a standard loop.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 7jWqEsHtN3Y
-      start_ms: 434700
-      end_ms: 440600
-      url: https://www.youtube.com/watch?v=7jWqEsHtN3Y&t=434s
-      segment_ids:
-        - 7jWqEsHtN3Y:00095
-  - id: 07gBJc2wQKY-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: Opening the rally against backspin with a forehand topspin loop, typically using a higher arc and less forward drive.
-    reason: The speaker explicitly says looping backspin needs a higher arc, stopping the forward drive, and later contrasts this with a valid high-arc forehand loop against heavy spin.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 07gBJc2wQKY
-      start_ms: 643400
-      end_ms: 656680
-      url: https://www.youtube.com/watch?v=07gBJc2wQKY&t=643s
-      segment_ids:
-        - 07gBJc2wQKY:00138
-        - 07gBJc2wQKY:00139
-        - 07gBJc2wQKY:00140
-        - 07gBJc2wQKY:00141
-  - id: QFncUSkAVKU-cand-forehand-loop-against-backspin-reviewed
-    evidence_type: example
-    excerpt: A forehand loop used to open against backspin, described as an advanced-level loop variant with the same forward-first principle but adapted for underspin.
-    reason: Explicitly labels looping against backspin and says it is advanced level.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: QFncUSkAVKU
-      start_ms: 530680
-      end_ms: 538800
-      url: https://www.youtube.com/watch?v=QFncUSkAVKU&t=530s
-      segment_ids:
-        - QFncUSkAVKU:00203
-        - QFncUSkAVKU:00204
-        - QFncUSkAVKU:00205
-  - id: 4C5EE15fTvw-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: A forehand topspin attack used against backspin/underspin, with a forward force direction, compact preparation when needed, and timing adapted to the incoming spin.
-    reason: The speaker explicitly says they are discussing looping backspin and recommends lifting the elbow slightly to create a higher arc for consistency.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 4C5EE15fTvw
-      start_ms: 122880
-      end_ms: 141320
-      url: https://www.youtube.com/watch?v=4C5EE15fTvw&t=122s
-      segment_ids:
-        - 4C5EE15fTvw:00048
-        - 4C5EE15fTvw:00049
-        - 4C5EE15fTvw:00052
-        - 4C5EE15fTvw:00053
-        - 4C5EE15fTvw:00054
-  - id: pIu3jfM0C6k-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: Looping a backspin or push ball on the forehand side using the proper timing and body action.
-    reason: Directly asks about looping backspin on the forehand and identifies the comfortable rhythm for it.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: pIu3jfM0C6k
-      start_ms: 121900
-      end_ms: 135200
-      url: https://www.youtube.com/watch?v=pIu3jfM0C6k&t=121s
-      segment_ids:
-        - pIu3jfM0C6k:00038
-        - pIu3jfM0C6k:00040
-  - id: QkR3weNCn48-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: A forehand topspin opening against backspin that relies on the right balance of impact and brushing to lift the ball safely over the net.
-    reason: The speaker explicitly discusses looping backspin, why amateurs miss, and the need for the correct ratio of impact and brushing.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: QkR3weNCn48
-      start_ms: 84400
-      end_ms: 109520
-      url: https://www.youtube.com/watch?v=QkR3weNCn48&t=84s
-      segment_ids:
-        - QkR3weNCn48:00030
-        - QkR3weNCn48:00033
-        - QkR3weNCn48:00036
-        - QkR3weNCn48:00037
-  - id: vFmEXvFFGC0-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: Looping a backspin or heavy backspin ball by brushing properly instead of lifting it with the arm.
-    reason: The speaker explicitly states that even heavy backspin can be looped with proper brushing and warns against active retracting into the net against backspin.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: vFmEXvFFGC0
-      start_ms: 259920
-      end_ms: 274600
-      url: https://www.youtube.com/watch?v=vFmEXvFFGC0&t=259s
-      segment_ids:
-        - vFmEXvFFGC0:00103
-        - vFmEXvFFGC0:00104
-        - vFmEXvFFGC0:00105
-        - vFmEXvFFGC0:00106
-        - vFmEXvFFGC0:00107
-  - id: y3dW5VYVlsg-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: A looping action against backspin that starts from below the ball and brushes upward to create topspin.
-    reason: The speaker contrasts looping contacts on a ball with backspin and explicitly frames the instruction as brushing against backspin.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: y3dW5VYVlsg
-      start_ms: 23680
-      end_ms: 33280
-      url: https://www.youtube.com/watch?v=y3dW5VYVlsg&t=23s
-      segment_ids:
-        - y3dW5VYVlsg:00007
-        - y3dW5VYVlsg:00008
-        - y3dW5VYVlsg:00009
-  - id: z6TpyCclpJg-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: Open against a backspin or push ball by choosing the right brushing and forward-upward action for the amount of spin present.
-    reason: The speaker directly discusses looping backspin, why it misses, and how to adjust the loop based on the opponent's push spin.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: z6TpyCclpJg
-      start_ms: 176533
-      end_ms: 196766
-      url: https://www.youtube.com/watch?v=z6TpyCclpJg&t=176s
-      segment_ids:
-        - z6TpyCclpJg:00061
-        - z6TpyCclpJg:00067
-  - id: dbT0DYG2Xac-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: A forehand looping action used to handle backspin balls by getting lower, brushing strongly, and contacting at the correct height.
-    reason: The speaker frames the whole section around why backspin is difficult and then says the contact height for topspin differs from backspin, requiring you to be lower than the ball.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: dbT0DYG2Xac
-      start_ms: 60400
-      end_ms: 83700
-      url: https://www.youtube.com/watch?v=dbT0DYG2Xac&t=60s
-      segment_ids:
-        - dbT0DYG2Xac:00018
-        - dbT0DYG2Xac:00022
-        - dbT0DYG2Xac:00025
-  - id: rN337KbRJt0-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: A forehand loop used to attack backspin by opening the racket slightly and brushing the upper-middle of the ball.
-    reason: The transcript explicitly addresses beginners dealing with backspin, opening the racket, brushing the upper-middle of the ball, and adjusting contact if looping is difficult.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: rN337KbRJt0
-      start_ms: 296366
-      end_ms: 323933
-      url: https://www.youtube.com/watch?v=rN337KbRJt0&t=296s
-      segment_ids:
-        - rN337KbRJt0:00087
-        - rN337KbRJt0:00088
-        - rN337KbRJt0:00095
-        - rN337KbRJt0:00096
-  - id: ldoTdAje9n0-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: An opening loop used against backspin or push balls, often lifted first and brushed upward with added spin.
-    reason: The speaker explicitly links push balls, heavy spin, and deciding between spin or drive.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: ldoTdAje9n0
-      start_ms: 239433
-      end_ms: 246033
-      url: https://www.youtube.com/watch?v=ldoTdAje9n0&t=239s
-      segment_ids:
-        - ldoTdAje9n0:00080
-        - ldoTdAje9n0:00081
-  - id: oB03htaZU8A-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: A forehand loop used against backspin balls, where the player must brush properly before driving forward.
-    reason: The speaker names backspin balls as the context and explains that proper brushing is required before driving forward.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: oB03htaZU8A
-      start_ms: 245066
-      end_ms: 254266
-      url: https://www.youtube.com/watch?v=oB03htaZU8A&t=245s
-      segment_ids:
-        - oB03htaZU8A:00090
-        - oB03htaZU8A:00093
-  - id: PEpV_p4-Lx8-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: A forehand topspin opening action used to attack backspin by first creating body-driven power and then making an angled contact that lifts and brushes the ball.
-    reason: The speaker explicitly frames the lesson as learning to loop backspin with the forehand and names it as the standard backspin loop motion.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: PEpV_p4-Lx8
-      start_ms: 66
-      end_ms: 22133
-      url: https://www.youtube.com/watch?v=PEpV_p4-Lx8&t=0s
-      segment_ids:
-        - PEpV_p4-Lx8:00000
-        - PEpV_p4-Lx8:00005
-  - id: ubwy_VRFhPg-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: Opening the forehand by looping a backspin ball after a push receive or push transition.
-    reason: The speaker explicitly describes pushing against a backspin ball, transitioning to the forehand side, and looping it up.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: ubwy_VRFhPg
-      start_ms: 166
-      end_ms: 10266
-      url: https://www.youtube.com/watch?v=ubwy_VRFhPg&t=0s
-      segment_ids:
-        - ubwy_VRFhPg:00000
-        - ubwy_VRFhPg:00004
-  - id: Y02oMCu7Ppc-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: Adjust the forehand loop for a backspin ball by lifting from low to forward-upward, closing the racket angle, emphasizing more forward force than upward force, and controlling power so the second shot stays on table.
-    reason: The technical correction is to lift from low forward-upward, close the racket angle slightly, and send more force forward with less upward force.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: Y02oMCu7Ppc
-      start_ms: 50700
-      end_ms: 70200
-      url: https://www.youtube.com/watch?v=Y02oMCu7Ppc&t=50s
-      segment_ids:
-        - Y02oMCu7Ppc:00020
-        - Y02oMCu7Ppc:00023
-        - Y02oMCu7Ppc:00024
-        - Y02oMCu7Ppc:00025
-        - Y02oMCu7Ppc:00026
-        - Y02oMCu7Ppc:00027
-  - id: ggaBOPI4Nwc-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: Using a forward-brushing forehand loop to lift and clear a backspin ball over the net.
-    reason: The speaker repeatedly explains that against backspin you must loop forward, not only up, or the ball will slip off or miss the net.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: ggaBOPI4Nwc
-      start_ms: 158000
-      end_ms: 184480
-      url: https://www.youtube.com/watch?v=ggaBOPI4Nwc&t=158s
-      segment_ids:
-        - ggaBOPI4Nwc:00042
-        - ggaBOPI4Nwc:00043
-        - ggaBOPI4Nwc:00044
-        - ggaBOPI4Nwc:00045
-        - ggaBOPI4Nwc:00046
-        - ggaBOPI4Nwc:00047
-        - ggaBOPI4Nwc:00048
-  - id: GOAyEFoSibE-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: Using a forehand topspin loop to attack a pushed or backspin ball.
-    reason: The speaker states that if the short serve is pushed back, you can loop it because the return will not have much spin.
-    confidence: 0.86
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: GOAyEFoSibE
-      start_ms: 89333
-      end_ms: 93733
-      url: https://www.youtube.com/watch?v=GOAyEFoSibE&t=89s
-      segment_ids:
-        - GOAyEFoSibE:00021
-  - id: vCa7A9gyOT8-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: A forehand loop used to open against backspin by lowering the body, creating friction, and transferring power through the body.
-    reason: The transcript gives dedicated mechanics for forehand looping against backspin, including body lowering, friction, and power transfer.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: vCa7A9gyOT8
-      start_ms: 598400
-      end_ms: 623433
-      url: https://www.youtube.com/watch?v=vCa7A9gyOT8&t=598s
-      segment_ids:
-        - vCa7A9gyOT8:00130
-        - vCa7A9gyOT8:00134
-  - id: K0eFBdIiBTQ-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: A forehand topspin used to lift and attack a pushed backspin ball.
-    reason: The speaker explicitly describes pushing balls loaded with backspin and says to lift them, drive forward on soft balls, and loop against the push.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: K0eFBdIiBTQ
-      start_ms: 104133
-      end_ms: 111833
-      url: https://www.youtube.com/watch?v=K0eFBdIiBTQ&t=104s
-      segment_ids:
-        - K0eFBdIiBTQ:00024
-        - K0eFBdIiBTQ:00025
-  - id: eIsYt1sCPRI-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: The preferred forehand response to a half-long ball when pushing or flicking is too passive or likely to get jammed.
-    reason: Says pushing is too passive, flicking can jam you, and looping is the best choice on the forehand side.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: eIsYt1sCPRI
-      start_ms: 33133
-      end_ms: 42733
-      url: https://www.youtube.com/watch?v=eIsYt1sCPRI&t=33s
-      segment_ids:
-        - eIsYt1sCPRI:00007
-        - eIsYt1sCPRI:00008
-  - id: dJJtJQvuwOY-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: An opening loop against backspin that lifts the ball with friction and forward motion so it clears the net and lands on the table.
-    reason: The speaker explicitly frames looping as the action being taught and demonstrates looping with spin.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: dJJtJQvuwOY
-      start_ms: 6366
-      end_ms: 22333
-      url: https://www.youtube.com/watch?v=dJJtJQvuwOY&t=6s
-      segment_ids:
-        - dJJtJQvuwOY:00000
-        - dJJtJQvuwOY:00001
-  - id: otQ5B7u8Q2I-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: A forehand topspin opening loop used against backspin or underspin, emphasizing brushing contact instead of lifting the ball.
-    reason: The speaker explicitly frames the drill as brush looping and looping backspin.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: otQ5B7u8Q2I
-      start_ms: 6320
-      end_ms: 26800
-      url: https://www.youtube.com/watch?v=otQ5B7u8Q2I&t=6s
-      segment_ids:
-        - otQ5B7u8Q2I:00000
-        - otQ5B7u8Q2I:00002
-  - id: cSxeCkiMFFI-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: Executing a forehand topspin loop against a backspin or underspin ball, usually by lifting first before accelerating through the ball.
-    reason: The speaker says looping 'won't be effective' on this served ball and discusses practicing the lower looping motion against it.
-    confidence: 0.84
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: cSxeCkiMFFI
-      start_ms: 6400
-      end_ms: 23920
-      url: https://www.youtube.com/watch?v=cSxeCkiMFFI&t=6s
-      segment_ids:
-        - cSxeCkiMFFI:00000
-        - cSxeCkiMFFI:00001
-  - id: s57enR6ZT1w-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: A forehand topspin opening action used to lift backspin by meeting the ball under and brushing it upward with the correct timing and arc.
-    reason: The speaker describes using the top of the racket, wrist and arm pull, upward motion from below, and creating topspin/arc against a descending backspin ball.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: s57enR6ZT1w
-      start_ms: 142400
-      end_ms: 168033
-      url: https://www.youtube.com/watch?v=s57enR6ZT1w&t=142s
-      segment_ids:
-        - s57enR6ZT1w:00066
-        - s57enR6ZT1w:00067
-        - s57enR6ZT1w:00068
-        - s57enR6ZT1w:00072
-        - s57enR6ZT1w:00073
-        - s57enR6ZT1w:00074
-  - id: TYMU3wQ3-sw-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: example
-    excerpt: Use a forehand loop to attack backspin or underspin balls, with emphasis on lifting and then accelerating through the contact.
-    reason: The speaker explicitly references looping against underspin/backspin and discusses stance and spacing for that action.
-    confidence: 0.91
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: TYMU3wQ3-sw
-      start_ms: 769466
-      end_ms: 794033
-      url: https://www.youtube.com/watch?v=TYMU3wQ3-sw&t=769s
-      segment_ids:
-        - TYMU3wQ3-sw:00181
-        - TYMU3wQ3-sw:00182
-        - TYMU3wQ3-sw:00185
-        - TYMU3wQ3-sw:00186
-  - id: FNFUZTBq2yQ-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: A forehand topspin action against backspin that starts with a dropped racket head and rises into the loop.
-    reason: The speaker explicitly names the forehand loop against backspin and describes the drop-then-rotate pattern.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: FNFUZTBq2yQ
-      start_ms: 375966
-      end_ms: 384166
-      url: https://www.youtube.com/watch?v=FNFUZTBq2yQ&t=375s
-      segment_ids:
-        - FNFUZTBq2yQ:00092
-        - FNFUZTBq2yQ:00093
-  - id: KG90HOykXCs-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: A forehand loop used to open against backspin by lifting, brushing, and driving forward with enough friction and body support.
-    reason: The backspin loop is described as driving forward through contact and then treating the ball as topspin after the brushing phase completes.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: KG90HOykXCs
-      start_ms: 489733
-      end_ms: 500166
-      url: https://www.youtube.com/watch?v=KG90HOykXCs&t=489s
-      segment_ids:
-        - KG90HOykXCs:00108
-        - KG90HOykXCs:00110
-  - id: R_MLRGrJlsM-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: Use a lifting, brushing loop to lift underspin or backspin safely over the net.
-    reason: The transcript explains how to loop heavy underspin by increasing friction, creating a higher arc, and lifting the ball upward.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: R_MLRGrJlsM
-      start_ms: 76233
-      end_ms: 103133
-      url: https://www.youtube.com/watch?v=R_MLRGrJlsM&t=76s
-      segment_ids:
-        - R_MLRGrJlsM:00017
-        - R_MLRGrJlsM:00018
-        - R_MLRGrJlsM:00023
-  - id: slH2CHDYasA-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: A forehand topspin loop used to lift and attack backspin balls with a low-to-high swing path.
-    reason: The speaker explicitly frames the discussion as a forehand loop against backspin and defines looping as a low-to-high stroke.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: slH2CHDYasA
-      start_ms: 113800
-      end_ms: 134466
-      url: https://www.youtube.com/watch?v=slH2CHDYasA&t=113s
-      segment_ids:
-        - slH2CHDYasA:00030
-        - slH2CHDYasA:00033
-  - id: VEjSu1GhArI-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: A forehand topspin loop used to lift backspin by swinging from underneath the ball and generating topspin on the upward path.
-    reason: The speaker explains that looping backspin requires starting below the ball and making contact on the upward path to create spin and arc.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: VEjSu1GhArI
-      start_ms: 528366
-      end_ms: 553600
-      url: https://www.youtube.com/watch?v=VEjSu1GhArI&t=528s
-      segment_ids:
-        - VEjSu1GhArI:00113
-        - VEjSu1GhArI:00116
-        - VEjSu1GhArI:00117
-        - VEjSu1GhArI:00118
-  - id: 00GaHkH4rfQ-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: A forehand looping action used to attack backspin, emphasizing arc, friction, and controlled acceleration rather than rushing through the ball.
-    reason: The speaker explicitly frames this as attacking backspin and says not to rush acceleration while completing the arc and friction.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 00GaHkH4rfQ
-      start_ms: 518533
-      end_ms: 524966
-      url: https://www.youtube.com/watch?v=00GaHkH4rfQ&t=518s
-      segment_ids:
-        - 00GaHkH4rfQ:00118
-  - id: NvQgMvevIPY-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: A forehand topspin loop used to attack backspin balls, especially when opening against underspin or a push.
-    reason: The speaker names the topic directly as forehand loop against backspin.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: NvQgMvevIPY
-      start_ms: 9466
-      end_ms: 15333
-      url: https://www.youtube.com/watch?v=NvQgMvevIPY&t=9s
-      segment_ids:
-        - NvQgMvevIPY:00002
-  - id: nukEclWHWn4-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: A forehand topspin stroke used against backspin that requires contacting the ball in the upper-middle area, then brushing and wrapping over the ball rather than driving straight through it.
-    reason: These lines explain the arched follow-through and wrapping motion required to generate spin against heavy backspin.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: nukEclWHWn4
-      start_ms: 33766
-      end_ms: 58000
-      url: https://www.youtube.com/watch?v=nukEclWHWn4&t=33s
-      segment_ids:
-        - nukEclWHWn4:00008
-        - nukEclWHWn4:00009
-        - nukEclWHWn4:00010
-        - nukEclWHWn4:00011
-  - id: ySM92aDSRPo-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: Use a forehand loop to lift heavy backspin, usually from below the table, with an outside arc and enough forward/upward drive to clear the net.
-    reason: The speaker explicitly lists the keys to looping a backspin ball, including a lower backswing, maximum friction, and an outside arc.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: ySM92aDSRPo
-      start_ms: 203533
-      end_ms: 211633
-      url: https://www.youtube.com/watch?v=ySM92aDSRPo&t=203s
-      segment_ids:
-        - ySM92aDSRPo:00045
-        - ySM92aDSRPo:00046
-  - id: Yw2l-2WitOs-concept-forehand-loop-against-backspin-high-consistency-backswing-reviewed
-    evidence_type: definition
-    excerpt: A forehand loop against backspin should use a lower, compact backswing so the ball can be lifted reliably under pressure.
-    reason: The speaker explicitly frames the lesson around looping a backspin ball with the forehand and says the backswing should stop near the knee.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: Yw2l-2WitOs
-      start_ms: 292266
-      end_ms: 305933
-      url: https://www.youtube.com/watch?v=Yw2l-2WitOs&t=292s
-      segment_ids:
-        - Yw2l-2WitOs:00067
-  - id: BnjNVl_gssU-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: A forehand topspin attack used to lift and loop a backspin ball before driving through it.
-    reason: Explicitly states the lesson is to power-loop a backspin ball with the forehand.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: BnjNVl_gssU
-      start_ms: 15200
-      end_ms: 20066
-      url: https://www.youtube.com/watch?v=BnjNVl_gssU&t=15s
-      segment_ids:
-        - BnjNVl_gssU:00003
-  - id: krlH8_UzRRM-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: A forehand attacking loop used to handle backspin, with the choice between a loop drive and a higher, spinny loop depending on ball height and arrival timing.
-    reason: The transcript contrasts loop drive versus high spinny loop and ties the forehand choice to contact height and available time.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: krlH8_UzRRM
-      start_ms: 356300
-      end_ms: 385200
-      url: https://www.youtube.com/watch?v=krlH8_UzRRM&t=356s
-      segment_ids:
-        - krlH8_UzRRM:00079
-        - krlH8_UzRRM:00080
-        - krlH8_UzRRM:00084
-  - id: PVNp35T9kL4-cand-forehand-loop-against-backspin-body-and-forearm-drop-reviewed
-    evidence_type: explanation
-    excerpt: To loop a backspin ball, lower the forearm below table height and use a downward-and-back body rotation so the ball can be lifted cleanly.
-    reason: The speaker describes the forearm dropping below the table and the body rotating down and back to lift backspin.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: PVNp35T9kL4
-      start_ms: 72900
-      end_ms: 97566
-      url: https://www.youtube.com/watch?v=PVNp35T9kL4&t=72s
-      segment_ids:
-        - PVNp35T9kL4:00014
-        - PVNp35T9kL4:00015
-        - PVNp35T9kL4:00016
-        - PVNp35T9kL4:00017
-  - id: QqMAsM2mtk4-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: Looping an incoming backspin ball with a forehand topspin stroke.
-    reason: The speaker explicitly introduces the lesson as forehand loop against backspin.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: QqMAsM2mtk4
-      start_ms: 13500
-      end_ms: 17533
-      url: https://www.youtube.com/watch?v=QqMAsM2mtk4&t=13s
-      segment_ids:
-        - QqMAsM2mtk4:00003
-  - id: cPooD0HRRAc-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: A looping technique for opening against backspin, requiring an arc, lift, and enough brush to counter the spin.
-    reason: The whole segment is framed as a breakdown of looping a backspin ball, with repeated references to the loop against backspin needing arc, brush, and body help.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: cPooD0HRRAc
-      start_ms: 457733
-      end_ms: 471866
-      url: https://www.youtube.com/watch?v=cPooD0HRRAc&t=457s
-      segment_ids:
-        - cPooD0HRRAc:00098
-        - cPooD0HRRAc:00100
-        - cPooD0HRRAc:00101
-  - id: bmK4umFK2Gs-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: A forehand topspin loop used to lift a backspin or push return, usually requiring added friction rather than a pure hit.
-    reason: The speaker explicitly says to use more friction to loop a heavy spin return up and later says to step in, add friction, and loop to either corner.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: bmK4umFK2Gs
-      start_ms: 32300
-      end_ms: 39100
-      url: https://www.youtube.com/watch?v=bmK4umFK2Gs&t=32s
-      segment_ids:
-        - bmK4umFK2Gs:00006
-  - id: dCjFkTKTH7I-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: On a forehand half-high ball with spin, the preferred action is to loop it rather than hit flat.
-    reason: The speaker asks whether to hit flat or loop and answers that looping is primary, especially when the ball has spin.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: dCjFkTKTH7I
-      start_ms: 18500
-      end_ms: 31633
-      url: https://www.youtube.com/watch?v=dCjFkTKTH7I&t=18s
-      segment_ids:
-        - dCjFkTKTH7I:00004
-        - dCjFkTKTH7I:00005
-  - id: DfQ_yBSS_bk-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: An opening forehand loop used to attack backspin or chopped balls, starting with a brushing phase and then transitioning to a topspin-like finish.
-    reason: The speaker discusses attacking heavy backspin, perfecting the brush, and then treating the remainder like a topspin loop.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: DfQ_yBSS_bk
-      start_ms: 610533
-      end_ms: 635866
-      url: https://www.youtube.com/watch?v=DfQ_yBSS_bk&t=610s
-      segment_ids:
-        - DfQ_yBSS_bk:00123
-        - DfQ_yBSS_bk:00124
-        - DfQ_yBSS_bk:00127
-  - id: eDDICo0Damw-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: A forehand loop used to open against backspin, requiring lowered body position, body rotation, and controlled timing.
-    reason: The speaker explicitly introduces the forehand loop against backspin and distinguishes it from topspin looping.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: eDDICo0Damw
-      start_ms: 291200
-      end_ms: 299133
-      url: https://www.youtube.com/watch?v=eDDICo0Damw&t=291s
-      segment_ids:
-        - eDDICo0Damw:00062
-        - eDDICo0Damw:00063
-  - id: xAxrT5EE-mY-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: A forehand topspin opening against underspin/backspin, where correct spacing and body position are critical to creating lifting arc and power.
-    reason: The speaker explicitly announces a breakdown of the forehand loop against underspin and frames it as a major challenge.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: xAxrT5EE-mY
-      start_ms: 12900
-      end_ms: 20000
-      url: https://www.youtube.com/watch?v=xAxrT5EE-mY&t=12s
-      segment_ids:
-        - xAxrT5EE-mY:00002
-        - xAxrT5EE-mY:00003
-  - id: D2hk2kkCdfI-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: A forehand looping response used to lift or attack backspin and under-spin balls, with adaptations for heavy spin versus light/no-spin.
-    reason: The speaker explicitly frames the topic as looping against backspin and distinguishes heavy backspin from light-spin or no-spin balls.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: D2hk2kkCdfI
-      start_ms: 18333
-      end_ms: 33800
-      url: https://www.youtube.com/watch?v=D2hk2kkCdfI&t=18s
-      segment_ids:
-        - D2hk2kkCdfI:00005
-        - D2hk2kkCdfI:00006
-        - D2hk2kkCdfI:00007
-  - id: pWQROAi8uWw-concept-8-reviewed
-    evidence_type: explanation
-    excerpt: Attacking a backspin ball on the forehand by going forward into the ball rather than only brushing upward or being too soft.
-    reason: The speaker names looping backspin as the same forward-momentum problem and says players often focus only on brushing upward while forgetting to go forward.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: pWQROAi8uWw
-      start_ms: 837966
-      end_ms: 854466
-      url: https://www.youtube.com/watch?v=pWQROAi8uWw&t=837s
-      segment_ids:
-        - pWQROAi8uWw:00183
-        - pWQROAi8uWw:00184
-        - pWQROAi8uWw:00185
-        - pWQROAi8uWw:00186
-        - pWQROAi8uWw:00187
-  - id: 01-q1cswVVs-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: A forehand topspin opening against backspin that requires low body position, correct timing, and forward-driving brush contact.
-    reason: The transcript centers on looping backspin and explains why the technique must combine waiting, low positioning, forward driving, and brushing to clear the net and generate arc.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 01-q1cswVVs
-      start_ms: 268733
-      end_ms: 287866
-      url: https://www.youtube.com/watch?v=01-q1cswVVs&t=268s
-      segment_ids:
-        - 01-q1cswVVs:00047
-        - 01-q1cswVVs:00049
-  - id: T6kwb4YehYA-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: example
-    excerpt: A forehand loop against backspin is used as the attacking follow-up after a push or lifted ball, especially when the incoming ball is high enough to attack.
-    reason: The speaker explains that heavy spin forces a lift, and once lifted the ball becomes easier to attack; they explicitly connect the setup to looping and attacking.
-    confidence: 0.86
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: T6kwb4YehYA
-      start_ms: 163166
-      end_ms: 179033
-      url: https://www.youtube.com/watch?v=T6kwb4YehYA&t=163s
-      segment_ids:
-        - T6kwb4YehYA:00032
-        - T6kwb4YehYA:00034
-  - id: IXRPhM4Pjzc-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: A topspin opening action used to attack backspin by meeting the ball with the correct timing, racket shape, and brushing contact.
-    reason: The speaker gives timing and contact guidance specifically against backspin, including waiting for the ball to start falling and keeping the contact point level with the table side or lower.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: IXRPhM4Pjzc
-      start_ms: 265500
-      end_ms: 281800
-      url: https://www.youtube.com/watch?v=IXRPhM4Pjzc&t=265s
-      segment_ids:
-        - IXRPhM4Pjzc:00050
-        - IXRPhM4Pjzc:00051
-  - id: yZKBUBBBSEw-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: definition
-    excerpt: A forehand topspin attack against backspin that uses an A-to-B lift phase to clear the net and a B-to-C acceleration phase to add quality and penetration.
-    reason: The transcript explicitly discusses looping against backspin, warning that trying to go directly B-to-C fails and that the motion must first lift/clear the net.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: yZKBUBBBSEw
-      start_ms: 562666
-      end_ms: 585100
-      url: https://www.youtube.com/watch?v=yZKBUBBBSEw&t=562s
-      segment_ids:
-        - yZKBUBBBSEw:00097
-        - yZKBUBBBSEw:00099
-        - yZKBUBBBSEw:00100
-  - id: hL_nXrojZT0-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: A forehand looping action used to attack backspin, requiring a lower starting position, proper timing, and a contact point that does not fall below the table.
-    reason: The transcript directly frames the discussion as a backspin loop and explains that looping it requires starting lower, waiting for the ball to drop, and avoiding contact below the table.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: hL_nXrojZT0
-      start_ms: 366166
-      end_ms: 395433
-      url: https://www.youtube.com/watch?v=hL_nXrojZT0&t=366s
-      segment_ids:
-        - hL_nXrojZT0:00069
-        - hL_nXrojZT0:00070
-        - hL_nXrojZT0:00073
-  - id: 3wQrxObpgxM-concept-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: A forehand topspin attack used against topspin or backspin balls, emphasizing a larger motion, body mechanics, and brushing contact rather than a compact drive.
-    reason: The speaker contrasts loop and drive, emphasizing body mechanics, stroke size, and brushing to create topspin.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 3wQrxObpgxM
-      start_ms: 116733
-      end_ms: 131466
-      url: https://www.youtube.com/watch?v=3wQrxObpgxM&t=116s
-      segment_ids:
-        - 3wQrxObpgxM:00019
-        - 3wQrxObpgxM:00020
-  - id: ec-XHw2Locs-concept-forehand-loop-against-backspin-reviewed
-    evidence_type: explanation
-    excerpt: A forehand opening loop against backspin that starts from a pressed, low position and rotates through contact.
-    reason: The speaker names the loop against backspin and gives the press-then-rotate sequence for it.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: ec-XHw2Locs
-      start_ms: 205160
-      end_ms: 222080
-      url: https://www.youtube.com/watch?v=ec-XHw2Locs&t=205s
-      segment_ids:
-        - ec-XHw2Locs:00082
-        - ec-XHw2Locs:00083
-        - ec-XHw2Locs:00084
-        - ec-XHw2Locs:00085
-        - ec-XHw2Locs:00086
-        - ec-XHw2Locs:00087
+- id: backspin-closed-face-friction-global
+  evidence_type: explanation
+  excerpt: Close the racket angle to feel brushing contact instead of direct impact.
+  reason: Explains why a closed face supports friction when opening against backspin.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: approved
+  source: {video_id: 0E67TotjJFE, start_ms: 15366, end_ms: 39233, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=15s", segment_ids: ["0E67TotjJFE:00004", "0E67TotjJFE:00005", "0E67TotjJFE:00006", "0E67TotjJFE:00008"]}
+- id: backspin-start-below-ball-global
+  evidence_type: explanation
+  excerpt: Against a falling backspin ball, begin with the racket lower than the ball.
+  reason: Gives a concrete vertical-position cue for clearing backspin.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: approved
+  source: {video_id: 0E67TotjJFE, start_ms: 317166, end_ms: 344000, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=317s", segment_ids: ["0E67TotjJFE:00071", "0E67TotjJFE:00075"]}
+- id: backspin-outward-arc-global
+  evidence_type: explanation
+  excerpt: Draw the racket back behind the body, swing outward, then bring it inward in a small semicircle; make this arc more pronounced as the incoming spin increases.
+  reason: Draw the racket back behind the body, swing outward, then bring it inward in a small semicircle; make this arc more pronounced as the incoming spin increases.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: approved
+  source: {video_id: OcPo7MgSNVM, start_ms: 474100, end_ms: 488266, url: "https://www.youtube.com/watch?v=OcPo7MgSNVM&t=474s", segment_ids: ["OcPo7MgSNVM:00111", "OcPo7MgSNVM:00112", "OcPo7MgSNVM:00113", "OcPo7MgSNVM:00114"]}
+- id: backspin-forward-upward-drive-global
+  evidence_type: correction
+  excerpt: Brush forward and upward while driving into the ball, rather than lifting only vertically.
+  reason: Distinguishes a usable opening-loop direction from a purely upward action.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: approved
+  source: {video_id: OcPo7MgSNVM, start_ms: 98866, end_ms: 109266, url: "https://www.youtube.com/watch?v=OcPo7MgSNVM&t=98s", segment_ids: ["OcPo7MgSNVM:00021", "OcPo7MgSNVM:00022"]}
+- id: backspin-three-downs-global
+  evidence_type: correction
+  excerpt: Prepare the opening loop by lowering the shoulder, legs, and wrist together.
+  reason: Summarizes preparation for a heavy-backspin opening loop.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  visual_source: {video_id: 0E67TotjJFE, start_ms: 365000, end_ms: 373000, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=365s", selection_method: nearby_visual_inference, note: Coach demonstrates the lowered stance and shoulder-racket preparation.}
+  review_status: approved
+  source: {video_id: 0E67TotjJFE, start_ms: 376666, end_ms: 381766, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=376s", segment_ids: ["0E67TotjJFE:00082"]}
+- id: backspin-contact-height-spinmaster
+  evidence_type: explanation
+  excerpt: Keep contact roughly level with the table for more brush; raise it somewhat for a forward power loop.
+  reason: Connects the ball height to the safer or more forceful loop choice.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  visual_source: {video_id: JmOI0L7SiG8, start_ms: 44000, end_ms: 56000, url: "https://www.youtube.com/watch?v=JmOI0L7SiG8&t=44s", selection_method: nearby_visual_inference, note: Live-ball demonstrations compare contact heights for brushing and power looping.}
+  review_status: approved
+  source: {video_id: JmOI0L7SiG8, start_ms: 28133, end_ms: 37333, url: "https://www.youtube.com/watch?v=JmOI0L7SiG8&t=28s", segment_ids: ["JmOI0L7SiG8:00008", "JmOI0L7SiG8:00009", "JmOI0L7SiG8:00010", "JmOI0L7SiG8:00011"]}
+- id: backspin-forward-action-spinmaster
+  evidence_type: correction
+  excerpt: Combine racket rotation with forward movement through contact; rotating in place will not clear the net.
+  reason: Prevents a brush-only action that lacks forward travel.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  visual_source: {video_id: V__nqiNHeKE, start_ms: 260000, end_ms: 274000, url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=260s", selection_method: nearby_visual_inference, note: Close live demonstration contrasts forward movement with wrist rotation in place.}
+  review_status: approved
+  source: {video_id: V__nqiNHeKE, start_ms: 267880, end_ms: 276360, url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=267s", segment_ids: ["V__nqiNHeKE:00100", "V__nqiNHeKE:00101", "V__nqiNHeKE:00102"]}
+- id: m93pWt9MIZE-candidate-heavy-push-brush-first-1
+  evidence_type: explanation
+  excerpt: When the player serves heavy backspin and the opponent pushes that spin back, the opening loop should prioritize brushing over impact even if the return is half high.
+  reason: Speaker explains that the opponent borrows the heavy underspin and that hitting harder causes errors, while brushing makes the ball land.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: m93pWt9MIZE
+    start_ms: 208239
+    end_ms: 212879
+    url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=208s"
+    segment_ids:
+    - "m93pWt9MIZE:00082"
+- id: m93pWt9MIZE-candidate-heavy-push-brush-first-2
+  evidence_type: explanation
+  excerpt: When the player serves heavy backspin and the opponent pushes that spin back, the opening loop should prioritize brushing over impact even if the return is half high.
+  reason: Speaker explains that the opponent borrows the heavy underspin and that hitting harder causes errors, while brushing makes the ball land.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: m93pWt9MIZE
+    start_ms: 233360
+    end_ms: 238319
+    url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=233s"
+    segment_ids:
+    - "m93pWt9MIZE:00092"
+- id: m93pWt9MIZE-candidate-heavy-push-brush-first-3
+  evidence_type: correction
+  excerpt: When the player serves heavy backspin and the opponent pushes that spin back, the opening loop should prioritize brushing over impact even if the return is half high.
+  reason: Speaker explicitly instructs that after a heavy-spin serve and push return, the first reaction must be more brushing and impact cannot exceed brushing.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: m93pWt9MIZE
+    start_ms: 241200
+    end_ms: 268600
+    url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=241s"
+    segment_ids:
+    - "m93pWt9MIZE:00095"
+    - "m93pWt9MIZE:00104"
+- id: OcPo7MgSNVM-cand-heavy-backspin-outward-looping-arc-1
+  evidence_type: explanation
+  excerpt: When looping heavy backspin, use a large outward semi-circular swing path from behind the body to the side and up, to create enough arc to lift the spin.
+  reason: The speaker repeatedly identifies swing arc as the first rule for looping heavy backspin and describes the full outward motion.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: OcPo7MgSNVM
+    start_ms: 25866
+    end_ms: 47966
+    url: "https://www.youtube.com/watch?v=OcPo7MgSNVM&t=25s"
+    segment_ids:
+    - "OcPo7MgSNVM:00006"
+    - "OcPo7MgSNVM:00007"
+    - "OcPo7MgSNVM:00009"
+- id: OcPo7MgSNVM-cand-heavy-backspin-outward-looping-arc-2
+  evidence_type: explanation
+  excerpt: When looping heavy backspin, use a large outward semi-circular swing path from behind the body to the side and up, to create enough arc to lift the spin.
+  reason: The speaker repeatedly identifies swing arc as the first rule for looping heavy backspin and describes the full outward motion.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: OcPo7MgSNVM
+    start_ms: 63333
+    end_ms: 67966
+    url: "https://www.youtube.com/watch?v=OcPo7MgSNVM&t=63s"
+    segment_ids:
+    - "OcPo7MgSNVM:00013"
+- id: OcPo7MgSNVM-cand-low-center-of-gravity-backspin-loop-1
+  evidence_type: explanation
+  excerpt: As backspin becomes heavier, the player should lower the stance and racket position to make lifting the ball easier.
+  reason: The speaker contrasts low versus upright posture and states that heavier backspin requires a lower center of gravity.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: OcPo7MgSNVM
+    start_ms: 76966
+    end_ms: 98866
+    url: "https://www.youtube.com/watch?v=OcPo7MgSNVM&t=76s"
+    segment_ids:
+    - "OcPo7MgSNVM:00016"
+    - "OcPo7MgSNVM:00018"
+    - "OcPo7MgSNVM:00020"
+- id: OcPo7MgSNVM-cand-low-center-of-gravity-backspin-loop-2
+  evidence_type: explanation
+  excerpt: As backspin becomes heavier, the player should lower the stance and racket position to make lifting the ball easier.
+  reason: The low stance is summarized as one of the four key points, including low racket position.
+  confidence: 0.88
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: OcPo7MgSNVM
+    start_ms: 135066
+    end_ms: 141633
+    url: "https://www.youtube.com/watch?v=OcPo7MgSNVM&t=135s"
+    segment_ids:
+    - "OcPo7MgSNVM:00029"
+- id: qLT0MvwitZc-cand-forward-drive-against-backspin-1
+  evidence_type: explanation
+  excerpt: A loop-against-backspin principle that emphasizes moving through the ball forward, not just lifting upward, so the player can create both arc and depth.
+  reason: The speaker says lack of power versus backspin comes from insufficient forward drive and explains that the stroke should move forward in a parabolic arc.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: qLT0MvwitZc
+    start_ms: 390466
+    end_ms: 418966
+    url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=390s"
+    segment_ids:
+    - "qLT0MvwitZc:00091"
+    - "qLT0MvwitZc:00092"
+    - "qLT0MvwitZc:00094"
+    - "qLT0MvwitZc:00097"
+- id: qLT0MvwitZc-cand-forward-drive-against-backspin-2
+  evidence_type: explanation
+  excerpt: A loop-against-backspin principle that emphasizes moving through the ball forward, not just lifting upward, so the player can create both arc and depth.
+  reason: The speaker says lack of power versus backspin comes from insufficient forward drive and explains that the stroke should move forward in a parabolic arc.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: qLT0MvwitZc
+    start_ms: 418966
+    end_ms: 423766
+    url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=418s"
+    segment_ids:
+    - "qLT0MvwitZc:00098"
+- id: qLT0MvwitZc-cand-forward-drive-against-backspin-3
+  evidence_type: explanation
+  excerpt: A loop-against-backspin principle that emphasizes moving through the ball forward, not just lifting upward, so the player can create both arc and depth.
+  reason: The transcript contrasts over-lifting with first driving through the ball and only then going upward.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: qLT0MvwitZc
+    start_ms: 431300
+    end_ms: 452766
+    url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=431s"
+    segment_ids:
+    - "qLT0MvwitZc:00101"
+    - "qLT0MvwitZc:00103"
+    - "qLT0MvwitZc:00104"
+- id: V2YGbh829eU-cand-forearm-drop-backswing-against-backspin-1
+  evidence_type: explanation
+  excerpt: Speaker explicitly teaches dropping the forearm in the backswing to brush up against backspin on both forehand and backhand loops.
+  reason: Against backspin, the forearm should drop below ball height during the backswing so the stroke can brush upward and generate heavy spin instead of contacting too flatly from behind the ball.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: V2YGbh829eU
+    start_ms: 41233
+    end_ms: 50966
+    url: "https://www.youtube.com/watch?v=V2YGbh829eU&t=41s"
+    segment_ids:
+    - "V2YGbh829eU:00011"
+    - "V2YGbh829eU:00012"
+- id: V2YGbh829eU-cand-forearm-drop-backswing-against-backspin-2
+  evidence_type: explanation
+  excerpt: Speaker explicitly teaches dropping the forearm in the backswing to brush up against backspin on both forehand and backhand loops.
+  reason: Against backspin, the forearm should drop below ball height during the backswing so the stroke can brush upward and generate heavy spin instead of contacting too flatly from behind the ball.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: V2YGbh829eU
+    start_ms: 65533
+    end_ms: 83366
+    url: "https://www.youtube.com/watch?v=V2YGbh829eU&t=65s"
+    segment_ids:
+    - "V2YGbh829eU:00016"
+    - "V2YGbh829eU:00017"
+    - "V2YGbh829eU:00018"
+- id: V2YGbh829eU-cand-forearm-drop-backswing-against-backspin-3
+  evidence_type: explanation
+  excerpt: Speaker explicitly teaches dropping the forearm in the backswing to brush up against backspin on both forehand and backhand loops.
+  reason: Against backspin, the forearm should drop below ball height during the backswing so the stroke can brush upward and generate heavy spin instead of contacting too flatly from behind the ball.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: V2YGbh829eU
+    start_ms: 93266
+    end_ms: 99766
+    url: "https://www.youtube.com/watch?v=V2YGbh829eU&t=93s"
+    segment_ids:
+    - "V2YGbh829eU:00022"
+    - "V2YGbh829eU:00023"
+- id: V2YGbh829eU-cand-forearm-drop-backswing-against-backspin-4
+  evidence_type: correction
+  excerpt: Contrasts flat or level backswing with a forearm drop and states the former produces little or no spin.
+  reason: Against backspin, the forearm should drop below ball height during the backswing so the stroke can brush upward and generate heavy spin instead of contacting too flatly from behind the ball.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: V2YGbh829eU
+    start_ms: 50966
+    end_ms: 57633
+    url: "https://www.youtube.com/watch?v=V2YGbh829eU&t=50s"
+    segment_ids:
+    - "V2YGbh829eU:00013"
+- id: V2YGbh829eU-cand-forearm-drop-backswing-against-backspin-5
+  evidence_type: correction
+  excerpt: Contrasts flat or level backswing with a forearm drop and states the former produces little or no spin.
+  reason: Against backspin, the forearm should drop below ball height during the backswing so the stroke can brush upward and generate heavy spin instead of contacting too flatly from behind the ball.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: V2YGbh829eU
+    start_ms: 83366
+    end_ms: 91100
+    url: "https://www.youtube.com/watch?v=V2YGbh829eU&t=83s"
+    segment_ids:
+    - "V2YGbh829eU:00019"
+    - "V2YGbh829eU:00020"
+- id: 1v7qPrGhvTU-candidate-forehand-loop-against-backspin-1
+  evidence_type: explanation
+  excerpt: 'The speaker identifies forward drive as the missing ingredient against backspin and gives the movement sequence: drop low, drive forward, then go upward.'
+  reason: 'When looping against backspin, the player must drive forward through the ball before rising and then close the stroke; forward drive solves depth and power while brushing solves net clearance.'
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 1v7qPrGhvTU
+    start_ms: 265600
+    end_ms: 281440
+    url: https://www.youtube.com/watch?v=1v7qPrGhvTU&t=265s
+    segment_ids:
+    - 1v7qPrGhvTU:00112
+    - 1v7qPrGhvTU:00117
+- id: 1v7qPrGhvTU-candidate-forehand-loop-against-backspin-2
+  evidence_type: explanation
+  excerpt: 'The speaker identifies forward drive as the missing ingredient against backspin and gives the movement sequence: drop low, drive forward, then go upward.'
+  reason: 'When looping against backspin, the player must drive forward through the ball before rising and then close the stroke; forward drive solves depth and power while brushing solves net clearance.'
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 1v7qPrGhvTU
+    start_ms: 290800
+    end_ms: 310880
+    url: https://www.youtube.com/watch?v=1v7qPrGhvTU&t=290s
+    segment_ids:
+    - 1v7qPrGhvTU:00123
+    - 1v7qPrGhvTU:00124
+    - 1v7qPrGhvTU:00126
+    - 1v7qPrGhvTU:00127
+    - 1v7qPrGhvTU:00129
+- id: 1v7qPrGhvTU-candidate-forehand-loop-against-backspin-3
+  evidence_type: correction
+  excerpt: The speaker corrects the fear of driving forward, separates arc length from arc height, and instructs players to drive through first and only then close.
+  reason: When looping against backspin, the player must drive forward through the ball before rising and then close the stroke; forward drive solves depth and power while brushing solves net clearance.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: 1v7qPrGhvTU
+    start_ms: 310880
+    end_ms: 333759
+    url: https://www.youtube.com/watch?v=1v7qPrGhvTU&t=310s
+    segment_ids:
+    - 1v7qPrGhvTU:00131
+    - 1v7qPrGhvTU:00133
+    - 1v7qPrGhvTU:00136
+    - 1v7qPrGhvTU:00138
+    - 1v7qPrGhvTU:00140
+- id: 1v7qPrGhvTU-candidate-forehand-loop-against-backspin-4
+  evidence_type: correction
+  excerpt: The speaker corrects the fear of driving forward, separates arc length from arc height, and instructs players to drive through first and only then close.
+  reason: When looping against backspin, the player must drive forward through the ball before rising and then close the stroke; forward drive solves depth and power while brushing solves net clearance.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: 1v7qPrGhvTU
+    start_ms: 338000
+    end_ms: 352400
+    url: https://www.youtube.com/watch?v=1v7qPrGhvTU&t=338s
+    segment_ids:
+    - 1v7qPrGhvTU:00144
+    - 1v7qPrGhvTU:00148
+- id: 1v7qPrGhvTU-candidate-forehand-loop-against-backspin-5
+  evidence_type: correction
+  excerpt: The speaker corrects the fear of driving forward, separates arc length from arc height, and instructs players to drive through first and only then close.
+  reason: When looping against backspin, the player must drive forward through the ball before rising and then close the stroke; forward drive solves depth and power while brushing solves net clearance.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: 1v7qPrGhvTU
+    start_ms: 362000
+    end_ms: 370720
+    url: https://www.youtube.com/watch?v=1v7qPrGhvTU&t=362s
+    segment_ids:
+    - 1v7qPrGhvTU:00152
+    - 1v7qPrGhvTU:00153
+- id: f7uZPRPIwpU-concept-forehand-loop-against-backspin-1
+  evidence_type: explanation
+  excerpt: Against heavy or medium backspin, loop by getting lower than the ball and accelerating the brushing action instead of trying to drive through it like a power loop.
+  reason: 'Speaker describes the response to heavy and medium spin pushes: get below the ball and accelerate the brush rather than treat it as a power-loop ball.'
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: f7uZPRPIwpU
+    start_ms: 267720
+    end_ms: 274480
+    url: https://www.youtube.com/watch?v=f7uZPRPIwpU&t=267s
+    segment_ids:
+    - f7uZPRPIwpU:00101
+    - f7uZPRPIwpU:00102
+    - f7uZPRPIwpU:00103
+- id: f7uZPRPIwpU-concept-forehand-loop-against-backspin-2
+  evidence_type: explanation
+  excerpt: Against heavy or medium backspin, loop by getting lower than the ball and accelerating the brushing action instead of trying to drive through it like a power loop.
+  reason: 'Speaker describes the response to heavy and medium spin pushes: get below the ball and accelerate the brush rather than treat it as a power-loop ball.'
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: f7uZPRPIwpU
+    start_ms: 294160
+    end_ms: 317840
+    url: https://www.youtube.com/watch?v=f7uZPRPIwpU&t=294s
+    segment_ids:
+    - f7uZPRPIwpU:00111
+    - f7uZPRPIwpU:00112
+    - f7uZPRPIwpU:00115
+    - f7uZPRPIwpU:00117
+    - f7uZPRPIwpU:00118
+    - f7uZPRPIwpU:00119
+- id: nUotsfFiQqY-cand-heavy-backspin-loop-friction-1
+  evidence_type: explanation
+  excerpt: When looping a heavily spun backspin ball, emphasize sustained brushing friction with a slower, deliberate swing rather than quick impact.
+  reason: Speaker explains that against heavy spin the stroke should prioritize friction and sustained brushing rather than acceleration and impact.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: nUotsfFiQqY
+    start_ms: 326800
+    end_ms: 354440
+    url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=326s
+    segment_ids:
+    - nUotsfFiQqY:00137
+    - nUotsfFiQqY:00138
+    - nUotsfFiQqY:00139
+    - nUotsfFiQqY:00140
+    - nUotsfFiQqY:00141
+    - nUotsfFiQqY:00142
+    - nUotsfFiQqY:00143
+    - nUotsfFiQqY:00144
+    - nUotsfFiQqY:00145
+    - nUotsfFiQqY:00146
+    - nUotsfFiQqY:00147
+- id: nUotsfFiQqY-cand-upper-arm-arc-adjustment-vs-spin-1
+  evidence_type: explanation
+  excerpt: 'Speaker describes raising the arm to create arc and avoid the net against heavy spin.'
+  reason: 'Adjust the upper-arm path based on the incoming backspin: lift the upper arm more to create arc against heavy spin, but keep it level and drive more forward against weak or carried spin.'
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: nUotsfFiQqY
+    start_ms: 385400
+    end_ms: 414200
+    url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=385s
+    segment_ids:
+    - nUotsfFiQqY:00157
+    - nUotsfFiQqY:00158
+    - nUotsfFiQqY:00162
+    - nUotsfFiQqY:00163
+    - nUotsfFiQqY:00165
+- id: nUotsfFiQqY-cand-upper-arm-arc-adjustment-vs-spin-2
+  evidence_type: explanation
+  excerpt: 'Speaker describes raising the arm to create arc and avoid the net against heavy spin.'
+  reason: 'Adjust the upper-arm path based on the incoming backspin: lift the upper arm more to create arc against heavy spin, but keep it level and drive more forward against weak or carried spin.'
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: nUotsfFiQqY
+    start_ms: 412000
+    end_ms: 441320
+    url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=412s
+    segment_ids:
+    - nUotsfFiQqY:00166
+    - nUotsfFiQqY:00169
+    - nUotsfFiQqY:00170
+    - nUotsfFiQqY:00171
+    - nUotsfFiQqY:00175
+    - nUotsfFiQqY:00176
+    - nUotsfFiQqY:00177
+- id: nUotsfFiQqY-cand-upper-arm-arc-adjustment-vs-spin-3
+  evidence_type: explanation
+  excerpt: 'Speaker contrasts the weak-spin pattern, where the stroke should go more forward and the upper arm should not rise.'
+  reason: 'Adjust the upper-arm path based on the incoming backspin: lift the upper arm more to create arc against heavy spin, but keep it level and drive more forward against weak or carried spin.'
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: nUotsfFiQqY
+    start_ms: 446400
+    end_ms: 476080
+    url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=446s
+    segment_ids:
+    - nUotsfFiQqY:00181
+    - nUotsfFiQqY:00182
+    - nUotsfFiQqY:00183
+    - nUotsfFiQqY:00184
+    - nUotsfFiQqY:00185
+    - nUotsfFiQqY:00186
+    - nUotsfFiQqY:00187
+    - nUotsfFiQqY:00188
+    - nUotsfFiQqY:00189
+- id: nUotsfFiQqY-cand-upper-arm-arc-adjustment-vs-spin-4
+  evidence_type: explanation
+  excerpt: 'Speaker contrasts the weak-spin pattern, where the stroke should go more forward and the upper arm should not rise.'
+  reason: 'Adjust the upper-arm path based on the incoming backspin: lift the upper arm more to create arc against heavy spin, but keep it level and drive more forward against weak or carried spin.'
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: nUotsfFiQqY
+    start_ms: 474080
+    end_ms: 486040
+    url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=474s
+    segment_ids:
+    - nUotsfFiQqY:00190
+    - nUotsfFiQqY:00191
+    - nUotsfFiQqY:00192
+    - nUotsfFiQqY:00193
+    - nUotsfFiQqY:00194
+- id: t3HX8AEujWw-c7-1
+  evidence_type: definition
+  excerpt: States beginners should place the backspin loop at the early descending phase because it is stable and gives good friction.
+  reason: Against backspin, beginners should usually loop in the early descending phase for stability and friction; peak timing is a later progression for power, while rising-phase attacks are mainly for half-long returns.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: t3HX8AEujWw
+    start_ms: 267040
+    end_ms: 279880
+    url: https://www.youtube.com/watch?v=t3HX8AEujWw&t=267s
+    segment_ids:
+    - t3HX8AEujWw:00116
+    - t3HX8AEujWw:00117
+    - t3HX8AEujWw:00118
+    - t3HX8AEujWw:00119
+    - t3HX8AEujWw:00120
+- id: t3HX8AEujWw-c7-2
+  evidence_type: explanation
+  excerpt: Describes progressing from safe loops to explosive power loops by shifting toward peak timing.
+  reason: Against backspin, beginners should usually loop in the early descending phase for stability and friction; peak timing is a later progression for power, while rising-phase attacks are mainly for half-long returns.
+  confidence: 0.93
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: t3HX8AEujWw
+    start_ms: 277840
+    end_ms: 289600
+    url: https://www.youtube.com/watch?v=t3HX8AEujWw&t=277s
+    segment_ids:
+    - t3HX8AEujWw:00121
+    - t3HX8AEujWw:00122
+    - t3HX8AEujWw:00123
+    - t3HX8AEujWw:00124
+    - t3HX8AEujWw:00125
+- id: t3HX8AEujWw-c7-3
+  evidence_type: explanation
+  excerpt: Limits rising-phase looping to half-long return balls and warns that deep fast pushes make on-the-rise looping misread spin.
+  reason: Against backspin, beginners should usually loop in the early descending phase for stability and friction; peak timing is a later progression for power, while rising-phase attacks are mainly for half-long returns.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: t3HX8AEujWw
+    start_ms: 287040
+    end_ms: 303280
+    url: https://www.youtube.com/watch?v=t3HX8AEujWw&t=287s
+    segment_ids:
+    - t3HX8AEujWw:00126
+    - t3HX8AEujWw:00127
+    - t3HX8AEujWw:00128
+    - t3HX8AEujWw:00129
+    - t3HX8AEujWw:00130
+    - t3HX8AEujWw:00131
+    - t3HX8AEujWw:00132
+- id: wF-YklKS7pI-cand-heavy-spin-long-return-brush-loop-1
+  evidence_type: explanation
+  excerpt: The speaker teaches a compact press-and-brush topspin response against heavy chopped long balls.
+  reason: Against a long, heavily chopped return, the player should use a compact brushing loop with forward pressure and reduced swing size as the incoming backspin increases.
+  confidence: 0.78
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: wF-YklKS7pI
+    start_ms: 562880
+    end_ms: 590840
+    url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=562s
+    segment_ids:
+    - wF-YklKS7pI:00224
+    - wF-YklKS7pI:00227
+    - wF-YklKS7pI:00229
+    - wF-YklKS7pI:00230
+    - wF-YklKS7pI:00231
+    - wF-YklKS7pI:00234
+- id: wF-YklKS7pI-cand-heavy-spin-long-return-brush-loop-2
+  evidence_type: explanation
+  excerpt: The speaker teaches a compact press-and-brush topspin response against heavy chopped long balls.
+  reason: Against a long, heavily chopped return, the player should use a compact brushing loop with forward pressure and reduced swing size as the incoming backspin increases.
+  confidence: 0.78
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: wF-YklKS7pI
+    start_ms: 588640
+    end_ms: 617800
+    url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=588s
+    segment_ids:
+    - wF-YklKS7pI:00235
+    - wF-YklKS7pI:00236
+    - wF-YklKS7pI:00237
+    - wF-YklKS7pI:00239
+    - wF-YklKS7pI:00240
+    - wF-YklKS7pI:00241
+    - wF-YklKS7pI:00243
+- id: wF-YklKS7pI-cand-heavy-spin-long-return-brush-loop-3
+  evidence_type: explanation
+  excerpt: The speaker teaches a compact press-and-brush topspin response against heavy chopped long balls.
+  reason: Against a long, heavily chopped return, the player should use a compact brushing loop with forward pressure and reduced swing size as the incoming backspin increases.
+  confidence: 0.78
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: wF-YklKS7pI
+    start_ms: 615120
+    end_ms: 619000
+    url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=615s
+    segment_ids:
+    - wF-YklKS7pI:00244
+- id: zd8tcVUWwK4-cand-forehand-loop-against-backspin-1
+  evidence_type: explanation
+  excerpt: 'Speaker gives explicit corrective mechanics for looping backspin: get low, come from under the ball, and combine brushing with upward power.'
+  reason: Against backspin, the forehand opening loop becomes easier and safer when the player gets low, approaches from under the ball, brushes first, and then adds power while rising into contact.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: zd8tcVUWwK4
+    start_ms: 460360
+    end_ms: 483280
+    url: https://www.youtube.com/watch?v=zd8tcVUWwK4&t=460s
+    segment_ids:
+    - zd8tcVUWwK4:00193
+    - zd8tcVUWwK4:00194
+    - zd8tcVUWwK4:00195
+    - zd8tcVUWwK4:00196
+    - zd8tcVUWwK4:00197
+    - zd8tcVUWwK4:00198
+    - zd8tcVUWwK4:00199
+    - zd8tcVUWwK4:00200
+    - zd8tcVUWwK4:00201
+    - zd8tcVUWwK4:00202
+    - zd8tcVUWwK4:00203
+- id: zd8tcVUWwK4-cand-forehand-loop-against-backspin-2
+  evidence_type: explanation
+  excerpt: 'Speaker gives explicit corrective mechanics for looping backspin: get low, come from under the ball, and combine brushing with upward power.'
+  reason: Against backspin, the forehand opening loop becomes easier and safer when the player gets low, approaches from under the ball, brushes first, and then adds power while rising into contact.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: zd8tcVUWwK4
+    start_ms: 486360
+    end_ms: 507200
+    url: https://www.youtube.com/watch?v=zd8tcVUWwK4&t=486s
+    segment_ids:
+    - zd8tcVUWwK4:00204
+    - zd8tcVUWwK4:00205
+    - zd8tcVUWwK4:00206
+    - zd8tcVUWwK4:00207
+    - zd8tcVUWwK4:00208
+    - zd8tcVUWwK4:00209
+    - zd8tcVUWwK4:00210
+    - zd8tcVUWwK4:00211
+    - zd8tcVUWwK4:00212
+- id: zd8tcVUWwK4-cand-forehand-loop-against-backspin-3
+  evidence_type: explanation
+  excerpt: 'Speaker gives explicit corrective mechanics for looping backspin: get low, come from under the ball, and combine brushing with upward power.'
+  reason: Against backspin, the forehand opening loop becomes easier and safer when the player gets low, approaches from under the ball, brushes first, and then adds power while rising into contact.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: zd8tcVUWwK4
+    start_ms: 518000
+    end_ms: 531000
+    url: https://www.youtube.com/watch?v=zd8tcVUWwK4&t=518s
+    segment_ids:
+    - zd8tcVUWwK4:00216
+    - zd8tcVUWwK4:00217
+    - zd8tcVUWwK4:00218
+    - zd8tcVUWwK4:00219
+    - zd8tcVUWwK4:00220
+- id: 1fHWnt8IlbI-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: Using a forehand topspin loop to attack a backspin or push ball rather than pushing it back.
+  reason: The speaker says that on the forehand side, the correct choice against half-long is loop rather than push.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 1fHWnt8IlbI
+    start_ms: 33000
+    end_ms: 46000
+    url: https://www.youtube.com/watch?v=1fHWnt8IlbI&t=33s
+    segment_ids:
+    - 1fHWnt8IlbI:00014
+    - 1fHWnt8IlbI:00015
+    - 1fHWnt8IlbI:00016
+    - 1fHWnt8IlbI:00017
+    - 1fHWnt8IlbI:00018
+    - 1fHWnt8IlbI:00019
+- id: 5JzSUTg_ojc-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: Opening against backspin by using a brushing, forward-carrying motion rather than a pure drive, especially when the incoming ball is spinny and slow.
+  reason: The speaker explains that against very spinny balls you must carry and brush the ball forward, using body and arm to generate forward force while staying close to the ball.
+  confidence: 0.91
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 5JzSUTg_ojc
+    start_ms: 135600
+    end_ms: 156360
+    url: https://www.youtube.com/watch?v=5JzSUTg_ojc&t=135s
+    segment_ids:
+    - 5JzSUTg_ojc:00054
+    - 5JzSUTg_ojc:00057
+    - 5JzSUTg_ojc:00060
+- id: Aaaxi0DOZzQ-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: Opening or attacking with a forehand topspin loop against a backspin ball, emphasizing correct posture, timing, and contact mechanics.
+  reason: The speaker explicitly names the topic as the forehand loop against backspin and says they will break down the forehand backspin loop in detail.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: Aaaxi0DOZzQ
+    start_ms: 1400
+    end_ms: 15800
+    url: https://www.youtube.com/watch?v=Aaaxi0DOZzQ&t=1s
+    segment_ids:
+    - Aaaxi0DOZzQ:00000
+    - Aaaxi0DOZzQ:00001
+    - Aaaxi0DOZzQ:00004
+    - Aaaxi0DOZzQ:00005
+- id: fXOGFZD1MTY-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: A forehand topspin loop used to open or attack backspin/backspin-like balls by getting the body low, driving forward, and creating quality contact.
+  reason: Speaker explicitly names the forehand backspin loop as the target skill.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: fXOGFZD1MTY
+    start_ms: 27920
+    end_ms: 35120
+    url: https://www.youtube.com/watch?v=fXOGFZD1MTY&t=27s
+    segment_ids:
+    - fXOGFZD1MTY:00007
+    - fXOGFZD1MTY:00008
+- id: ti_YUZdHu3o-cand-4-reviewed
+  evidence_type: explanation
+  excerpt: A forehand looping action used to attack backspin or underspin by contacting below the ball and brushing up with spin.
+  reason: The speaker explicitly says this is about looping against backspin and recommends spacing for that situation.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: ti_YUZdHu3o
+    start_ms: 397400
+    end_ms: 415360
+    url: https://www.youtube.com/watch?v=ti_YUZdHu3o&t=397s
+    segment_ids:
+    - ti_YUZdHu3o:00133
+    - ti_YUZdHu3o:00135
+    - ti_YUZdHu3o:00137
+    - ti_YUZdHu3o:00138
+- id: UCyUdarqdJc-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: A forehand topspin opening against backspin that waits for the ball to drop and contacts it near the knee rather than reaching early.
+  reason: The speaker explicitly discusses forehand backspin looping, waiting for the ball to come down, and avoiding looping right off the bounce.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: UCyUdarqdJc
+    start_ms: 365240
+    end_ms: 390800
+    url: https://www.youtube.com/watch?v=UCyUdarqdJc&t=365s
+    segment_ids:
+    - UCyUdarqdJc:00142
+    - UCyUdarqdJc:00143
+    - UCyUdarqdJc:00144
+    - UCyUdarqdJc:00145
+    - UCyUdarqdJc:00146
+    - UCyUdarqdJc:00147
+    - UCyUdarqdJc:00148
+    - UCyUdarqdJc:00149
+    - UCyUdarqdJc:00150
+    - UCyUdarqdJc:00151
+- id: 8yuRXgTWOxc-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: Using a forehand topspin action to attack a backspin or pushed ball, especially when the ball sits up or is pushed short or long.
+  reason: The speaker explicitly names the topic as forehand loop against backspin and describes looping soft pushes, short pushes, and long pushes.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 8yuRXgTWOxc
+    start_ms: 45920
+    end_ms: 75720
+    url: https://www.youtube.com/watch?v=8yuRXgTWOxc&t=45s
+    segment_ids:
+    - 8yuRXgTWOxc:00018
+    - 8yuRXgTWOxc:00021
+    - 8yuRXgTWOxc:00028
+- id: ONXmZHozLTA-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: Looping heavy backspin requires soft, controlled touch and finger-led acceleration rather than a hard hit.
+  reason: The speaker contrasts light and heavy backspin and says the touch must be soft and controlled before accelerating with the fingers.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: ONXmZHozLTA
+    start_ms: 231480
+    end_ms: 255480
+    url: https://www.youtube.com/watch?v=ONXmZHozLTA&t=231s
+    segment_ids:
+    - ONXmZHozLTA:00078
+    - ONXmZHozLTA:00079
+    - ONXmZHozLTA:00080
+    - ONXmZHozLTA:00081
+    - ONXmZHozLTA:00082
+    - ONXmZHozLTA:00083
+    - ONXmZHozLTA:00084
+- id: TMrN47uIHiI-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: Looping a backspin or lifted ball by staying close, brushing downward, and driving through the ball from back to front.
+  reason: The speaker describes pressing and brushing forward, staying close to the ball, and hitting from high to low or driving it down into the body for balls with backspin/lift.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: TMrN47uIHiI
+    start_ms: 213840
+    end_ms: 226680
+    url: https://www.youtube.com/watch?v=TMrN47uIHiI&t=213s
+    segment_ids:
+    - TMrN47uIHiI:00064
+    - TMrN47uIHiI:00065
+    - TMrN47uIHiI:00067
+- id: wyna7UXctZQ-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: A looping topspin attack used against backspin, requiring the stroke to match the incoming spin and trajectory.
+  reason: The transcript explicitly says to respect the trajectory of backspin while looping and shows a looping example.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: wyna7UXctZQ
+    start_ms: 218400
+    end_ms: 230640
+    url: https://www.youtube.com/watch?v=wyna7UXctZQ&t=218s
+    segment_ids:
+    - wyna7UXctZQ:00080
+    - wyna7UXctZQ:00081
+    - wyna7UXctZQ:00082
+- id: vXZPX5wybTY-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: A forehand topspin opening against backspin that requires adjusted backswing, racket angle, and timing.
+  reason: The speaker directly discusses transitioning from backspin to topspin and says the next shot's backswing must be behind the ball, not underneath it.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: vXZPX5wybTY
+    start_ms: 12920
+    end_ms: 23000
+    url: https://www.youtube.com/watch?v=vXZPX5wybTY&t=12s
+    segment_ids:
+    - vXZPX5wybTY:00005
+    - vXZPX5wybTY:00007
+    - vXZPX5wybTY:00008
+- id: vXZPX5wybTY-concept-forehand-loop-against-backspin-reviewed-2517cb01
+  evidence_type: definition
+  excerpt: A forehand topspin opening against backspin that requires adjusted backswing, racket angle, and timing.
+  reason: The speaker directly discusses transitioning from backspin to topspin and says the next shot's backswing must be behind the ball, not underneath it.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: vXZPX5wybTY
+    start_ms: 12920
+    end_ms: 23000
+    url: https://www.youtube.com/watch?v=vXZPX5wybTY&t=12s
+    segment_ids:
+    - vXZPX5wybTY:00005
+    - vXZPX5wybTY:00007
+    - vXZPX5wybTY:00008
+- id: 13z0kO_hd0M-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: A forehand loop used to attack heavy backspin or chop by creating the needed arc and brushing action rather than driving straight through the ball.
+  reason: The speaker explicitly mentions looping against a heavy chop and says an outside arc makes it easier to loop.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 13z0kO_hd0M
+    start_ms: 192520
+    end_ms: 201840
+    url: https://www.youtube.com/watch?v=13z0kO_hd0M&t=192s
+    segment_ids:
+    - 13z0kO_hd0M:00070
+    - 13z0kO_hd0M:00072
+- id: PDFXww03DHM-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: Against underspin, use a lifted arc and a forward-carrying loop motion to open up or attack the ball instead of striking flat.
+  reason: The speaker demonstrates looping spinny balls by pushing the upper arm forward, driving the forearm forward, and carrying the ball forward while finishing naturally.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: PDFXww03DHM
+    start_ms: 378320
+    end_ms: 407120
+    url: https://www.youtube.com/watch?v=PDFXww03DHM&t=378s
+    segment_ids:
+    - PDFXww03DHM:00117
+    - PDFXww03DHM:00118
+    - PDFXww03DHM:00119
+    - PDFXww03DHM:00120
+    - PDFXww03DHM:00121
+    - PDFXww03DHM:00122
+    - PDFXww03DHM:00123
+    - PDFXww03DHM:00124
+    - PDFXww03DHM:00125
+    - PDFXww03DHM:00126
+- id: zMP_ptkdNHk-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: Looping attack used against heavy backspin or push balls.
+  reason: The speaker explicitly frames the topic as looping against different spins and starts with a very heavy backspin ball.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: zMP_ptkdNHk
+    start_ms: 0
+    end_ms: 18440
+    url: https://www.youtube.com/watch?v=zMP_ptkdNHk&t=0s
+    segment_ids:
+    - zMP_ptkdNHk:00000
+    - zMP_ptkdNHk:00001
+    - zMP_ptkdNHk:00002
+    - zMP_ptkdNHk:00005
+    - zMP_ptkdNHk:00006
+- id: R9InWNDCJQM-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: Using a forehand topspin action to attack a ball carrying backspin or underspin, typically with forward and slightly downward contact direction.
+  reason: The speaker describes a backspin high ball and says to hit forward, slightly downward, or slightly upward depending on the spin; this is the core opening-loop against backspin pattern.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: R9InWNDCJQM
+    start_ms: 303600
+    end_ms: 318560
+    url: https://www.youtube.com/watch?v=R9InWNDCJQM&t=303s
+    segment_ids:
+    - R9InWNDCJQM:00105
+    - R9InWNDCJQM:00106
+    - R9InWNDCJQM:00107
+    - R9InWNDCJQM:00108
+    - R9InWNDCJQM:00109
+- id: wpIxIvnuOac-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: A forehand topspin action used against backspin, emphasizing a high arc, short placement, and forward pressure so the ball lands on the table.
+  reason: The speaker explicitly frames the shot as looping with a high arc and short placement, which matches a forehand loop against backspin.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: wpIxIvnuOac
+    start_ms: 26160
+    end_ms: 50920
+    url: https://www.youtube.com/watch?v=wpIxIvnuOac&t=26s
+    segment_ids:
+    - wpIxIvnuOac:00009
+    - wpIxIvnuOac:00010
+    - wpIxIvnuOac:00011
+    - wpIxIvnuOac:00017
+    - wpIxIvnuOac:00018
+- id: H0sbIUpUNLY-cand-10-reviewed
+  evidence_type: explanation
+  excerpt: A forehand loop against backspin that first brushes enough to clear the net, then transitions forward instead of continuing upward.
+  reason: The speaker explains that after enough brushing to clear the net, the arm should press forward rather than keep lifting upward.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: H0sbIUpUNLY
+    start_ms: 575240
+    end_ms: 601520
+    url: https://www.youtube.com/watch?v=H0sbIUpUNLY&t=575s
+    segment_ids:
+    - H0sbIUpUNLY:00197
+    - H0sbIUpUNLY:00203
+- id: mYzbo93Nkps-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: Opening the forehand loop against push balls or heavy backspin by getting the racket below the table, adding brush, and adjusting the upward component for spinny balls.
+  reason: Describes that incoming balls in a push rally are backspin and the racket should go below the table for attack.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: mYzbo93Nkps
+    start_ms: 129240
+    end_ms: 140640
+    url: https://www.youtube.com/watch?v=mYzbo93Nkps&t=129s
+    segment_ids:
+    - mYzbo93Nkps:00045
+    - mYzbo93Nkps:00046
+    - mYzbo93Nkps:00047
+    - mYzbo93Nkps:00048
+    - mYzbo93Nkps:00049
+- id: oLxdGO8TY8s-cand-4-reviewed
+  evidence_type: example
+  excerpt: Opening or continuing with a forehand loop against backspin or push balls, using more brushing when needed.
+  reason: The speaker contrasts pushing versus looping against backspin and says they still loop even on heavy topspin or backspin-like situations.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: oLxdGO8TY8s
+    start_ms: 44560
+    end_ms: 61880
+    url: https://www.youtube.com/watch?v=oLxdGO8TY8s&t=44s
+    segment_ids:
+    - oLxdGO8TY8s:00015
+    - oLxdGO8TY8s:00017
+    - oLxdGO8TY8s:00018
+    - oLxdGO8TY8s:00019
+- id: sosNHzR8A9U-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: A forehand topspin loop used against backspin/underspin, with timing and mechanics adapted to the incoming spin.
+  reason: The speaker explicitly says the topic is the forehand loop against backspin and later refers to looping backspin.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: sosNHzR8A9U
+    start_ms: 5000
+    end_ms: 8433
+    url: https://www.youtube.com/watch?v=sosNHzR8A9U&t=5s
+    segment_ids:
+    - sosNHzR8A9U:00001
+- id: 2Wk2xe0I1s8-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: A forehand loop used to lift a backspin ball by matching the ball's downward trajectory with a forward-up brushing swing.
+  reason: The transcript centers on why a loop against backspin hits the net and explains that the correct solution is to follow the backspin trajectory and lift it with speed.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 2Wk2xe0I1s8
+    start_ms: 266833
+    end_ms: 295766
+    url: https://www.youtube.com/watch?v=2Wk2xe0I1s8&t=266s
+    segment_ids:
+    - 2Wk2xe0I1s8:00057
+    - 2Wk2xe0I1s8:00058
+    - 2Wk2xe0I1s8:00061
+    - 2Wk2xe0I1s8:00062
+- id: 7jWqEsHtN3Y-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: Using a forehand topspin loop to attack a pushed ball with underspin or backspin.
+  reason: The lesson is explicitly about looping a pushed ball, including how to attack normal underspin with a standard loop.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 7jWqEsHtN3Y
+    start_ms: 434700
+    end_ms: 440600
+    url: https://www.youtube.com/watch?v=7jWqEsHtN3Y&t=434s
+    segment_ids:
+    - 7jWqEsHtN3Y:00095
+- id: 07gBJc2wQKY-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: Opening the rally against backspin with a forehand topspin loop, typically using a higher arc and less forward drive.
+  reason: The speaker explicitly says looping backspin needs a higher arc, stopping the forward drive, and later contrasts this with a valid high-arc forehand loop against heavy spin.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 07gBJc2wQKY
+    start_ms: 643400
+    end_ms: 656680
+    url: https://www.youtube.com/watch?v=07gBJc2wQKY&t=643s
+    segment_ids:
+    - 07gBJc2wQKY:00138
+    - 07gBJc2wQKY:00139
+    - 07gBJc2wQKY:00140
+    - 07gBJc2wQKY:00141
+- id: QFncUSkAVKU-cand-forehand-loop-against-backspin-reviewed
+  evidence_type: example
+  excerpt: A forehand loop used to open against backspin, described as an advanced-level loop variant with the same forward-first principle but adapted for underspin.
+  reason: Explicitly labels looping against backspin and says it is advanced level.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: QFncUSkAVKU
+    start_ms: 530680
+    end_ms: 538800
+    url: https://www.youtube.com/watch?v=QFncUSkAVKU&t=530s
+    segment_ids:
+    - QFncUSkAVKU:00203
+    - QFncUSkAVKU:00204
+    - QFncUSkAVKU:00205
+- id: 4C5EE15fTvw-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: A forehand topspin attack used against backspin/underspin, with a forward force direction, compact preparation when needed, and timing adapted to the incoming spin.
+  reason: The speaker explicitly says they are discussing looping backspin and recommends lifting the elbow slightly to create a higher arc for consistency.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 4C5EE15fTvw
+    start_ms: 122880
+    end_ms: 141320
+    url: https://www.youtube.com/watch?v=4C5EE15fTvw&t=122s
+    segment_ids:
+    - 4C5EE15fTvw:00048
+    - 4C5EE15fTvw:00049
+    - 4C5EE15fTvw:00052
+    - 4C5EE15fTvw:00053
+    - 4C5EE15fTvw:00054
+- id: pIu3jfM0C6k-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: Looping a backspin or push ball on the forehand side using the proper timing and body action.
+  reason: Directly asks about looping backspin on the forehand and identifies the comfortable rhythm for it.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: pIu3jfM0C6k
+    start_ms: 121900
+    end_ms: 135200
+    url: https://www.youtube.com/watch?v=pIu3jfM0C6k&t=121s
+    segment_ids:
+    - pIu3jfM0C6k:00038
+    - pIu3jfM0C6k:00040
+- id: QkR3weNCn48-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: A forehand topspin opening against backspin that relies on the right balance of impact and brushing to lift the ball safely over the net.
+  reason: The speaker explicitly discusses looping backspin, why amateurs miss, and the need for the correct ratio of impact and brushing.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: QkR3weNCn48
+    start_ms: 84400
+    end_ms: 109520
+    url: https://www.youtube.com/watch?v=QkR3weNCn48&t=84s
+    segment_ids:
+    - QkR3weNCn48:00030
+    - QkR3weNCn48:00033
+    - QkR3weNCn48:00036
+    - QkR3weNCn48:00037
+- id: vFmEXvFFGC0-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: Looping a backspin or heavy backspin ball by brushing properly instead of lifting it with the arm.
+  reason: The speaker explicitly states that even heavy backspin can be looped with proper brushing and warns against active retracting into the net against backspin.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: vFmEXvFFGC0
+    start_ms: 259920
+    end_ms: 274600
+    url: https://www.youtube.com/watch?v=vFmEXvFFGC0&t=259s
+    segment_ids:
+    - vFmEXvFFGC0:00103
+    - vFmEXvFFGC0:00104
+    - vFmEXvFFGC0:00105
+    - vFmEXvFFGC0:00106
+    - vFmEXvFFGC0:00107
+- id: y3dW5VYVlsg-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: A looping action against backspin that starts from below the ball and brushes upward to create topspin.
+  reason: The speaker contrasts looping contacts on a ball with backspin and explicitly frames the instruction as brushing against backspin.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: y3dW5VYVlsg
+    start_ms: 23680
+    end_ms: 33280
+    url: https://www.youtube.com/watch?v=y3dW5VYVlsg&t=23s
+    segment_ids:
+    - y3dW5VYVlsg:00007
+    - y3dW5VYVlsg:00008
+    - y3dW5VYVlsg:00009
+- id: z6TpyCclpJg-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: Open against a backspin or push ball by choosing the right brushing and forward-upward action for the amount of spin present.
+  reason: The speaker directly discusses looping backspin, why it misses, and how to adjust the loop based on the opponent's push spin.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: z6TpyCclpJg
+    start_ms: 176533
+    end_ms: 196766
+    url: https://www.youtube.com/watch?v=z6TpyCclpJg&t=176s
+    segment_ids:
+    - z6TpyCclpJg:00061
+    - z6TpyCclpJg:00067
+- id: dbT0DYG2Xac-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: A forehand looping action used to handle backspin balls by getting lower, brushing strongly, and contacting at the correct height.
+  reason: The speaker frames the whole section around why backspin is difficult and then says the contact height for topspin differs from backspin, requiring you to be lower than the ball.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: dbT0DYG2Xac
+    start_ms: 60400
+    end_ms: 83700
+    url: https://www.youtube.com/watch?v=dbT0DYG2Xac&t=60s
+    segment_ids:
+    - dbT0DYG2Xac:00018
+    - dbT0DYG2Xac:00022
+    - dbT0DYG2Xac:00025
+- id: rN337KbRJt0-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: A forehand loop used to attack backspin by opening the racket slightly and brushing the upper-middle of the ball.
+  reason: The transcript explicitly addresses beginners dealing with backspin, opening the racket, brushing the upper-middle of the ball, and adjusting contact if looping is difficult.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: rN337KbRJt0
+    start_ms: 296366
+    end_ms: 323933
+    url: https://www.youtube.com/watch?v=rN337KbRJt0&t=296s
+    segment_ids:
+    - rN337KbRJt0:00087
+    - rN337KbRJt0:00088
+    - rN337KbRJt0:00095
+    - rN337KbRJt0:00096
+- id: ldoTdAje9n0-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: An opening loop used against backspin or push balls, often lifted first and brushed upward with added spin.
+  reason: The speaker explicitly links push balls, heavy spin, and deciding between spin or drive.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ldoTdAje9n0
+    start_ms: 239433
+    end_ms: 246033
+    url: https://www.youtube.com/watch?v=ldoTdAje9n0&t=239s
+    segment_ids:
+    - ldoTdAje9n0:00080
+    - ldoTdAje9n0:00081
+- id: oB03htaZU8A-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: A forehand loop used against backspin balls, where the player must brush properly before driving forward.
+  reason: The speaker names backspin balls as the context and explains that proper brushing is required before driving forward.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: oB03htaZU8A
+    start_ms: 245066
+    end_ms: 254266
+    url: https://www.youtube.com/watch?v=oB03htaZU8A&t=245s
+    segment_ids:
+    - oB03htaZU8A:00090
+    - oB03htaZU8A:00093
+- id: PEpV_p4-Lx8-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: A forehand topspin opening action used to attack backspin by first creating body-driven power and then making an angled contact that lifts and brushes the ball.
+  reason: The speaker explicitly frames the lesson as learning to loop backspin with the forehand and names it as the standard backspin loop motion.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: PEpV_p4-Lx8
+    start_ms: 66
+    end_ms: 22133
+    url: https://www.youtube.com/watch?v=PEpV_p4-Lx8&t=0s
+    segment_ids:
+    - PEpV_p4-Lx8:00000
+    - PEpV_p4-Lx8:00005
+- id: ubwy_VRFhPg-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: Opening the forehand by looping a backspin ball after a push receive or push transition.
+  reason: The speaker explicitly describes pushing against a backspin ball, transitioning to the forehand side, and looping it up.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: ubwy_VRFhPg
+    start_ms: 166
+    end_ms: 10266
+    url: https://www.youtube.com/watch?v=ubwy_VRFhPg&t=0s
+    segment_ids:
+    - ubwy_VRFhPg:00000
+    - ubwy_VRFhPg:00004
+- id: Y02oMCu7Ppc-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: Adjust the forehand loop for a backspin ball by lifting from low to forward-upward, closing the racket angle, emphasizing more forward force than upward force, and controlling power so the second shot stays on table.
+  reason: The technical correction is to lift from low forward-upward, close the racket angle slightly, and send more force forward with less upward force.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: Y02oMCu7Ppc
+    start_ms: 50700
+    end_ms: 70200
+    url: https://www.youtube.com/watch?v=Y02oMCu7Ppc&t=50s
+    segment_ids:
+    - Y02oMCu7Ppc:00020
+    - Y02oMCu7Ppc:00023
+    - Y02oMCu7Ppc:00024
+    - Y02oMCu7Ppc:00025
+    - Y02oMCu7Ppc:00026
+    - Y02oMCu7Ppc:00027
+- id: ggaBOPI4Nwc-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: Using a forward-brushing forehand loop to lift and clear a backspin ball over the net.
+  reason: The speaker repeatedly explains that against backspin you must loop forward, not only up, or the ball will slip off or miss the net.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: ggaBOPI4Nwc
+    start_ms: 158000
+    end_ms: 184480
+    url: https://www.youtube.com/watch?v=ggaBOPI4Nwc&t=158s
+    segment_ids:
+    - ggaBOPI4Nwc:00042
+    - ggaBOPI4Nwc:00043
+    - ggaBOPI4Nwc:00044
+    - ggaBOPI4Nwc:00045
+    - ggaBOPI4Nwc:00046
+    - ggaBOPI4Nwc:00047
+    - ggaBOPI4Nwc:00048
+- id: GOAyEFoSibE-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: Using a forehand topspin loop to attack a pushed or backspin ball.
+  reason: The speaker states that if the short serve is pushed back, you can loop it because the return will not have much spin.
+  confidence: 0.86
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: GOAyEFoSibE
+    start_ms: 89333
+    end_ms: 93733
+    url: https://www.youtube.com/watch?v=GOAyEFoSibE&t=89s
+    segment_ids:
+    - GOAyEFoSibE:00021
+- id: vCa7A9gyOT8-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: A forehand loop used to open against backspin by lowering the body, creating friction, and transferring power through the body.
+  reason: The transcript gives dedicated mechanics for forehand looping against backspin, including body lowering, friction, and power transfer.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: vCa7A9gyOT8
+    start_ms: 598400
+    end_ms: 623433
+    url: https://www.youtube.com/watch?v=vCa7A9gyOT8&t=598s
+    segment_ids:
+    - vCa7A9gyOT8:00130
+    - vCa7A9gyOT8:00134
+- id: K0eFBdIiBTQ-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: A forehand topspin used to lift and attack a pushed backspin ball.
+  reason: The speaker explicitly describes pushing balls loaded with backspin and says to lift them, drive forward on soft balls, and loop against the push.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: K0eFBdIiBTQ
+    start_ms: 104133
+    end_ms: 111833
+    url: https://www.youtube.com/watch?v=K0eFBdIiBTQ&t=104s
+    segment_ids:
+    - K0eFBdIiBTQ:00024
+    - K0eFBdIiBTQ:00025
+- id: eIsYt1sCPRI-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: The preferred forehand response to a half-long ball when pushing or flicking is too passive or likely to get jammed.
+  reason: Says pushing is too passive, flicking can jam you, and looping is the best choice on the forehand side.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: eIsYt1sCPRI
+    start_ms: 33133
+    end_ms: 42733
+    url: https://www.youtube.com/watch?v=eIsYt1sCPRI&t=33s
+    segment_ids:
+    - eIsYt1sCPRI:00007
+    - eIsYt1sCPRI:00008
+- id: dJJtJQvuwOY-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: An opening loop against backspin that lifts the ball with friction and forward motion so it clears the net and lands on the table.
+  reason: The speaker explicitly frames looping as the action being taught and demonstrates looping with spin.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: dJJtJQvuwOY
+    start_ms: 6366
+    end_ms: 22333
+    url: https://www.youtube.com/watch?v=dJJtJQvuwOY&t=6s
+    segment_ids:
+    - dJJtJQvuwOY:00000
+    - dJJtJQvuwOY:00001
+- id: otQ5B7u8Q2I-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: A forehand topspin opening loop used against backspin or underspin, emphasizing brushing contact instead of lifting the ball.
+  reason: The speaker explicitly frames the drill as brush looping and looping backspin.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: otQ5B7u8Q2I
+    start_ms: 6320
+    end_ms: 26800
+    url: https://www.youtube.com/watch?v=otQ5B7u8Q2I&t=6s
+    segment_ids:
+    - otQ5B7u8Q2I:00000
+    - otQ5B7u8Q2I:00002
+- id: cSxeCkiMFFI-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: Executing a forehand topspin loop against a backspin or underspin ball, usually by lifting first before accelerating through the ball.
+  reason: The speaker says looping 'won't be effective' on this served ball and discusses practicing the lower looping motion against it.
+  confidence: 0.84
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: cSxeCkiMFFI
+    start_ms: 6400
+    end_ms: 23920
+    url: https://www.youtube.com/watch?v=cSxeCkiMFFI&t=6s
+    segment_ids:
+    - cSxeCkiMFFI:00000
+    - cSxeCkiMFFI:00001
+- id: s57enR6ZT1w-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: A forehand topspin opening action used to lift backspin by meeting the ball under and brushing it upward with the correct timing and arc.
+  reason: The speaker describes using the top of the racket, wrist and arm pull, upward motion from below, and creating topspin/arc against a descending backspin ball.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: s57enR6ZT1w
+    start_ms: 142400
+    end_ms: 168033
+    url: https://www.youtube.com/watch?v=s57enR6ZT1w&t=142s
+    segment_ids:
+    - s57enR6ZT1w:00066
+    - s57enR6ZT1w:00067
+    - s57enR6ZT1w:00068
+    - s57enR6ZT1w:00072
+    - s57enR6ZT1w:00073
+    - s57enR6ZT1w:00074
+- id: TYMU3wQ3-sw-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: example
+  excerpt: Use a forehand loop to attack backspin or underspin balls, with emphasis on lifting and then accelerating through the contact.
+  reason: The speaker explicitly references looping against underspin/backspin and discusses stance and spacing for that action.
+  confidence: 0.91
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: TYMU3wQ3-sw
+    start_ms: 769466
+    end_ms: 794033
+    url: https://www.youtube.com/watch?v=TYMU3wQ3-sw&t=769s
+    segment_ids:
+    - TYMU3wQ3-sw:00181
+    - TYMU3wQ3-sw:00182
+    - TYMU3wQ3-sw:00185
+    - TYMU3wQ3-sw:00186
+- id: FNFUZTBq2yQ-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: A forehand topspin action against backspin that starts with a dropped racket head and rises into the loop.
+  reason: The speaker explicitly names the forehand loop against backspin and describes the drop-then-rotate pattern.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: FNFUZTBq2yQ
+    start_ms: 375966
+    end_ms: 384166
+    url: https://www.youtube.com/watch?v=FNFUZTBq2yQ&t=375s
+    segment_ids:
+    - FNFUZTBq2yQ:00092
+    - FNFUZTBq2yQ:00093
+- id: KG90HOykXCs-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: A forehand loop used to open against backspin by lifting, brushing, and driving forward with enough friction and body support.
+  reason: The backspin loop is described as driving forward through contact and then treating the ball as topspin after the brushing phase completes.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: KG90HOykXCs
+    start_ms: 489733
+    end_ms: 500166
+    url: https://www.youtube.com/watch?v=KG90HOykXCs&t=489s
+    segment_ids:
+    - KG90HOykXCs:00108
+    - KG90HOykXCs:00110
+- id: R_MLRGrJlsM-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: Use a lifting, brushing loop to lift underspin or backspin safely over the net.
+  reason: The transcript explains how to loop heavy underspin by increasing friction, creating a higher arc, and lifting the ball upward.
+  confidence: 0.93
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: R_MLRGrJlsM
+    start_ms: 76233
+    end_ms: 103133
+    url: https://www.youtube.com/watch?v=R_MLRGrJlsM&t=76s
+    segment_ids:
+    - R_MLRGrJlsM:00017
+    - R_MLRGrJlsM:00018
+    - R_MLRGrJlsM:00023
+- id: slH2CHDYasA-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: A forehand topspin loop used to lift and attack backspin balls with a low-to-high swing path.
+  reason: The speaker explicitly frames the discussion as a forehand loop against backspin and defines looping as a low-to-high stroke.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: slH2CHDYasA
+    start_ms: 113800
+    end_ms: 134466
+    url: https://www.youtube.com/watch?v=slH2CHDYasA&t=113s
+    segment_ids:
+    - slH2CHDYasA:00030
+    - slH2CHDYasA:00033
+- id: VEjSu1GhArI-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: A forehand topspin loop used to lift backspin by swinging from underneath the ball and generating topspin on the upward path.
+  reason: The speaker explains that looping backspin requires starting below the ball and making contact on the upward path to create spin and arc.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: VEjSu1GhArI
+    start_ms: 528366
+    end_ms: 553600
+    url: https://www.youtube.com/watch?v=VEjSu1GhArI&t=528s
+    segment_ids:
+    - VEjSu1GhArI:00113
+    - VEjSu1GhArI:00116
+    - VEjSu1GhArI:00117
+    - VEjSu1GhArI:00118
+- id: 00GaHkH4rfQ-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: A forehand looping action used to attack backspin, emphasizing arc, friction, and controlled acceleration rather than rushing through the ball.
+  reason: The speaker explicitly frames this as attacking backspin and says not to rush acceleration while completing the arc and friction.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 00GaHkH4rfQ
+    start_ms: 518533
+    end_ms: 524966
+    url: https://www.youtube.com/watch?v=00GaHkH4rfQ&t=518s
+    segment_ids:
+    - 00GaHkH4rfQ:00118
+- id: NvQgMvevIPY-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: A forehand topspin loop used to attack backspin balls, especially when opening against underspin or a push.
+  reason: The speaker names the topic directly as forehand loop against backspin.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: NvQgMvevIPY
+    start_ms: 9466
+    end_ms: 15333
+    url: https://www.youtube.com/watch?v=NvQgMvevIPY&t=9s
+    segment_ids:
+    - NvQgMvevIPY:00002
+- id: nukEclWHWn4-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: A forehand topspin stroke used against backspin that requires contacting the ball in the upper-middle area, then brushing and wrapping over the ball rather than driving straight through it.
+  reason: These lines explain the arched follow-through and wrapping motion required to generate spin against heavy backspin.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: nukEclWHWn4
+    start_ms: 33766
+    end_ms: 58000
+    url: https://www.youtube.com/watch?v=nukEclWHWn4&t=33s
+    segment_ids:
+    - nukEclWHWn4:00008
+    - nukEclWHWn4:00009
+    - nukEclWHWn4:00010
+    - nukEclWHWn4:00011
+- id: ySM92aDSRPo-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: Use a forehand loop to lift heavy backspin, usually from below the table, with an outside arc and enough forward/upward drive to clear the net.
+  reason: The speaker explicitly lists the keys to looping a backspin ball, including a lower backswing, maximum friction, and an outside arc.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ySM92aDSRPo
+    start_ms: 203533
+    end_ms: 211633
+    url: https://www.youtube.com/watch?v=ySM92aDSRPo&t=203s
+    segment_ids:
+    - ySM92aDSRPo:00045
+    - ySM92aDSRPo:00046
+- id: Yw2l-2WitOs-concept-forehand-loop-against-backspin-high-consistency-backswing-reviewed
+  evidence_type: definition
+  excerpt: A forehand loop against backspin should use a lower, compact backswing so the ball can be lifted reliably under pressure.
+  reason: The speaker explicitly frames the lesson around looping a backspin ball with the forehand and says the backswing should stop near the knee.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Yw2l-2WitOs
+    start_ms: 292266
+    end_ms: 305933
+    url: https://www.youtube.com/watch?v=Yw2l-2WitOs&t=292s
+    segment_ids:
+    - Yw2l-2WitOs:00067
+- id: BnjNVl_gssU-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: A forehand topspin attack used to lift and loop a backspin ball before driving through it.
+  reason: Explicitly states the lesson is to power-loop a backspin ball with the forehand.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: BnjNVl_gssU
+    start_ms: 15200
+    end_ms: 20066
+    url: https://www.youtube.com/watch?v=BnjNVl_gssU&t=15s
+    segment_ids:
+    - BnjNVl_gssU:00003
+- id: krlH8_UzRRM-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: A forehand attacking loop used to handle backspin, with the choice between a loop drive and a higher, spinny loop depending on ball height and arrival timing.
+  reason: The transcript contrasts loop drive versus high spinny loop and ties the forehand choice to contact height and available time.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: krlH8_UzRRM
+    start_ms: 356300
+    end_ms: 385200
+    url: https://www.youtube.com/watch?v=krlH8_UzRRM&t=356s
+    segment_ids:
+    - krlH8_UzRRM:00079
+    - krlH8_UzRRM:00080
+    - krlH8_UzRRM:00084
+- id: PVNp35T9kL4-cand-forehand-loop-against-backspin-body-and-forearm-drop-reviewed
+  evidence_type: explanation
+  excerpt: To loop a backspin ball, lower the forearm below table height and use a downward-and-back body rotation so the ball can be lifted cleanly.
+  reason: The speaker describes the forearm dropping below the table and the body rotating down and back to lift backspin.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: PVNp35T9kL4
+    start_ms: 72900
+    end_ms: 97566
+    url: https://www.youtube.com/watch?v=PVNp35T9kL4&t=72s
+    segment_ids:
+    - PVNp35T9kL4:00014
+    - PVNp35T9kL4:00015
+    - PVNp35T9kL4:00016
+    - PVNp35T9kL4:00017
+- id: QqMAsM2mtk4-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: Looping an incoming backspin ball with a forehand topspin stroke.
+  reason: The speaker explicitly introduces the lesson as forehand loop against backspin.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: QqMAsM2mtk4
+    start_ms: 13500
+    end_ms: 17533
+    url: https://www.youtube.com/watch?v=QqMAsM2mtk4&t=13s
+    segment_ids:
+    - QqMAsM2mtk4:00003
+- id: cPooD0HRRAc-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: A looping technique for opening against backspin, requiring an arc, lift, and enough brush to counter the spin.
+  reason: The whole segment is framed as a breakdown of looping a backspin ball, with repeated references to the loop against backspin needing arc, brush, and body help.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: cPooD0HRRAc
+    start_ms: 457733
+    end_ms: 471866
+    url: https://www.youtube.com/watch?v=cPooD0HRRAc&t=457s
+    segment_ids:
+    - cPooD0HRRAc:00098
+    - cPooD0HRRAc:00100
+    - cPooD0HRRAc:00101
+- id: bmK4umFK2Gs-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: A forehand topspin loop used to lift a backspin or push return, usually requiring added friction rather than a pure hit.
+  reason: The speaker explicitly says to use more friction to loop a heavy spin return up and later says to step in, add friction, and loop to either corner.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: bmK4umFK2Gs
+    start_ms: 32300
+    end_ms: 39100
+    url: https://www.youtube.com/watch?v=bmK4umFK2Gs&t=32s
+    segment_ids:
+    - bmK4umFK2Gs:00006
+- id: dCjFkTKTH7I-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: On a forehand half-high ball with spin, the preferred action is to loop it rather than hit flat.
+  reason: The speaker asks whether to hit flat or loop and answers that looping is primary, especially when the ball has spin.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: dCjFkTKTH7I
+    start_ms: 18500
+    end_ms: 31633
+    url: https://www.youtube.com/watch?v=dCjFkTKTH7I&t=18s
+    segment_ids:
+    - dCjFkTKTH7I:00004
+    - dCjFkTKTH7I:00005
+- id: DfQ_yBSS_bk-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: An opening forehand loop used to attack backspin or chopped balls, starting with a brushing phase and then transitioning to a topspin-like finish.
+  reason: The speaker discusses attacking heavy backspin, perfecting the brush, and then treating the remainder like a topspin loop.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: DfQ_yBSS_bk
+    start_ms: 610533
+    end_ms: 635866
+    url: https://www.youtube.com/watch?v=DfQ_yBSS_bk&t=610s
+    segment_ids:
+    - DfQ_yBSS_bk:00123
+    - DfQ_yBSS_bk:00124
+    - DfQ_yBSS_bk:00127
+- id: eDDICo0Damw-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: A forehand loop used to open against backspin, requiring lowered body position, body rotation, and controlled timing.
+  reason: The speaker explicitly introduces the forehand loop against backspin and distinguishes it from topspin looping.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: eDDICo0Damw
+    start_ms: 291200
+    end_ms: 299133
+    url: https://www.youtube.com/watch?v=eDDICo0Damw&t=291s
+    segment_ids:
+    - eDDICo0Damw:00062
+    - eDDICo0Damw:00063
+- id: xAxrT5EE-mY-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: A forehand topspin opening against underspin/backspin, where correct spacing and body position are critical to creating lifting arc and power.
+  reason: The speaker explicitly announces a breakdown of the forehand loop against underspin and frames it as a major challenge.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: xAxrT5EE-mY
+    start_ms: 12900
+    end_ms: 20000
+    url: https://www.youtube.com/watch?v=xAxrT5EE-mY&t=12s
+    segment_ids:
+    - xAxrT5EE-mY:00002
+    - xAxrT5EE-mY:00003
+- id: D2hk2kkCdfI-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: A forehand looping response used to lift or attack backspin and under-spin balls, with adaptations for heavy spin versus light/no-spin.
+  reason: The speaker explicitly frames the topic as looping against backspin and distinguishes heavy backspin from light-spin or no-spin balls.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: D2hk2kkCdfI
+    start_ms: 18333
+    end_ms: 33800
+    url: https://www.youtube.com/watch?v=D2hk2kkCdfI&t=18s
+    segment_ids:
+    - D2hk2kkCdfI:00005
+    - D2hk2kkCdfI:00006
+    - D2hk2kkCdfI:00007
+- id: pWQROAi8uWw-concept-8-reviewed
+  evidence_type: explanation
+  excerpt: Attacking a backspin ball on the forehand by going forward into the ball rather than only brushing upward or being too soft.
+  reason: The speaker names looping backspin as the same forward-momentum problem and says players often focus only on brushing upward while forgetting to go forward.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: pWQROAi8uWw
+    start_ms: 837966
+    end_ms: 854466
+    url: https://www.youtube.com/watch?v=pWQROAi8uWw&t=837s
+    segment_ids:
+    - pWQROAi8uWw:00183
+    - pWQROAi8uWw:00184
+    - pWQROAi8uWw:00185
+    - pWQROAi8uWw:00186
+    - pWQROAi8uWw:00187
+- id: 01-q1cswVVs-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: A forehand topspin opening against backspin that requires low body position, correct timing, and forward-driving brush contact.
+  reason: The transcript centers on looping backspin and explains why the technique must combine waiting, low positioning, forward driving, and brushing to clear the net and generate arc.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 01-q1cswVVs
+    start_ms: 268733
+    end_ms: 287866
+    url: https://www.youtube.com/watch?v=01-q1cswVVs&t=268s
+    segment_ids:
+    - 01-q1cswVVs:00047
+    - 01-q1cswVVs:00049
+- id: T6kwb4YehYA-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: example
+  excerpt: A forehand loop against backspin is used as the attacking follow-up after a push or lifted ball, especially when the incoming ball is high enough to attack.
+  reason: The speaker explains that heavy spin forces a lift, and once lifted the ball becomes easier to attack; they explicitly connect the setup to looping and attacking.
+  confidence: 0.86
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: T6kwb4YehYA
+    start_ms: 163166
+    end_ms: 179033
+    url: https://www.youtube.com/watch?v=T6kwb4YehYA&t=163s
+    segment_ids:
+    - T6kwb4YehYA:00032
+    - T6kwb4YehYA:00034
+- id: IXRPhM4Pjzc-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: A topspin opening action used to attack backspin by meeting the ball with the correct timing, racket shape, and brushing contact.
+  reason: The speaker gives timing and contact guidance specifically against backspin, including waiting for the ball to start falling and keeping the contact point level with the table side or lower.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: IXRPhM4Pjzc
+    start_ms: 265500
+    end_ms: 281800
+    url: https://www.youtube.com/watch?v=IXRPhM4Pjzc&t=265s
+    segment_ids:
+    - IXRPhM4Pjzc:00050
+    - IXRPhM4Pjzc:00051
+- id: yZKBUBBBSEw-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: definition
+  excerpt: A forehand topspin attack against backspin that uses an A-to-B lift phase to clear the net and a B-to-C acceleration phase to add quality and penetration.
+  reason: The transcript explicitly discusses looping against backspin, warning that trying to go directly B-to-C fails and that the motion must first lift/clear the net.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: yZKBUBBBSEw
+    start_ms: 562666
+    end_ms: 585100
+    url: https://www.youtube.com/watch?v=yZKBUBBBSEw&t=562s
+    segment_ids:
+    - yZKBUBBBSEw:00097
+    - yZKBUBBBSEw:00099
+    - yZKBUBBBSEw:00100
+- id: hL_nXrojZT0-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: A forehand looping action used to attack backspin, requiring a lower starting position, proper timing, and a contact point that does not fall below the table.
+  reason: The transcript directly frames the discussion as a backspin loop and explains that looping it requires starting lower, waiting for the ball to drop, and avoiding contact below the table.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: hL_nXrojZT0
+    start_ms: 366166
+    end_ms: 395433
+    url: https://www.youtube.com/watch?v=hL_nXrojZT0&t=366s
+    segment_ids:
+    - hL_nXrojZT0:00069
+    - hL_nXrojZT0:00070
+    - hL_nXrojZT0:00073
+- id: 3wQrxObpgxM-concept-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: A forehand topspin attack used against topspin or backspin balls, emphasizing a larger motion, body mechanics, and brushing contact rather than a compact drive.
+  reason: The speaker contrasts loop and drive, emphasizing body mechanics, stroke size, and brushing to create topspin.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 3wQrxObpgxM
+    start_ms: 116733
+    end_ms: 131466
+    url: https://www.youtube.com/watch?v=3wQrxObpgxM&t=116s
+    segment_ids:
+    - 3wQrxObpgxM:00019
+    - 3wQrxObpgxM:00020
+- id: ec-XHw2Locs-concept-forehand-loop-against-backspin-reviewed
+  evidence_type: explanation
+  excerpt: A forehand opening loop against backspin that starts from a pressed, low position and rotates through contact.
+  reason: The speaker names the loop against backspin and gives the press-then-rotate sequence for it.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ec-XHw2Locs
+    start_ms: 205160
+    end_ms: 222080
+    url: https://www.youtube.com/watch?v=ec-XHw2Locs&t=205s
+    segment_ids:
+    - ec-XHw2Locs:00082
+    - ec-XHw2Locs:00083
+    - ec-XHw2Locs:00084
+    - ec-XHw2Locs:00085
+    - ec-XHw2Locs:00086
+    - ec-XHw2Locs:00087
+- id: 01-q1cswVVs-concept-forehand-loop-against-backspin-codex-reviewed
+  evidence_type: explanation
+  excerpt: When moving to the forehand to loop a backspin ball, establish a solid lunge stance to keep the body level low enough.
+  reason: This contiguous 23.7-second span directly explains a durable forehand-loop-against-backspin technique and matches the supplied existing concept.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 01-q1cswVVs
+    start_ms: 123033
+    end_ms: 146700
+    url: https://www.youtube.com/watch?v=01-q1cswVVs&t=123s
+    segment_ids:
+    - 01-q1cswVVs:00023
+    - 01-q1cswVVs:00024
+    - 01-q1cswVVs:00025
+    - 01-q1cswVVs:00026
+- id: 2Wk2xe0I1s8-concept-forehand-loop-against-backspin-codex-reviewed
+  evidence_type: explanation
+  excerpt: Against a dropping backspin ball, start below its trajectory and intercept from underneath. Follow the ball downward, then come up to lift it instead of fighting its path.
+  reason: This contiguous 29-second explanation directly describes how to lift a backspin ball by matching its downward trajectory and coming up through it.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 2Wk2xe0I1s8
+    start_ms: 266833
+    end_ms: 295766
+    url: https://www.youtube.com/watch?v=2Wk2xe0I1s8&t=266s
+    segment_ids:
+    - 2Wk2xe0I1s8:00057
+    - 2Wk2xe0I1s8:00058
+    - 2Wk2xe0I1s8:00059
+    - 2Wk2xe0I1s8:00060
+    - 2Wk2xe0I1s8:00061
+    - 2Wk2xe0I1s8:00062
+- id: 7jWqEsHtN3Y-concept-forehand-loop-against-backspin-codex-reviewed
+  evidence_type: explanation
+  excerpt: Against normal underspin, use a standard loop with added quality; the smooth incoming motion allows normal technique to attack.
+  reason: These contiguous segments directly explain using a standard loop to attack normal underspin. Forehand, distance, and difficulty are not asserted because this span does not state them.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 7jWqEsHtN3Y
+    start_ms: 451066
+    end_ms: 468900
+    url: https://www.youtube.com/watch?v=7jWqEsHtN3Y&t=451s
+    segment_ids:
+    - 7jWqEsHtN3Y:00099
+    - 7jWqEsHtN3Y:00100
+    - 7jWqEsHtN3Y:00101
+- id: Aaaxi0DOZzQ-concept-forehand-loop-against-backspin-codex-reviewed
+  evidence_type: explanation
+  excerpt: For the forehand backspin loop, contact the ball with the correct body shape; from this posture, leg drive, rotation, and arm snap complete the stroke.
+  reason: This contiguous 16.44-second span explicitly identifies the forehand backspin loop and explains the required body shape and contributing movements. It directly supports the existing concept.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: Aaaxi0DOZzQ
+    start_ms: 23440
+    end_ms: 39880
+    url: https://www.youtube.com/watch?v=Aaaxi0DOZzQ&t=23s
+    segment_ids:
+    - Aaaxi0DOZzQ:00009
+    - Aaaxi0DOZzQ:00010
+    - Aaaxi0DOZzQ:00011
+    - Aaaxi0DOZzQ:00013
+    - Aaaxi0DOZzQ:00014
+    - Aaaxi0DOZzQ:00015
+- id: fXOGFZD1MTY-concept-forehand-loop-against-backspin-codex-reviewed
+  evidence_type: explanation
+  excerpt: 'To learn the forehand backspin loop, you must get past this: squat down into the loop. Only then does the quality come.'
+  reason: These contiguous segments explicitly identify the forehand backspin loop and explain that squatting down into the loop is required for quality.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: fXOGFZD1MTY
+    start_ms: 27920
+    end_ms: 40160
+    url: https://www.youtube.com/watch?v=fXOGFZD1MTY&t=27s
+    segment_ids:
+    - fXOGFZD1MTY:00007
+    - fXOGFZD1MTY:00008
+    - fXOGFZD1MTY:00009
+    - fXOGFZD1MTY:00010
+- id: BnjNVl_gssU-concept-forehand-loop-against-backspin-codex-reviewed
+  evidence_type: explanation
+  excerpt: 'The lesson teaches a forehand power loop against backspin: lift with spin first, then drive through the ball.'
+  reason: This contiguous span explicitly identifies the topic as a forehand power loop against backspin and explains the lift-then-drive sequence.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: BnjNVl_gssU
+    start_ms: 15200
+    end_ms: 33100
+    url: https://www.youtube.com/watch?v=BnjNVl_gssU&t=15s
+    segment_ids:
+    - BnjNVl_gssU:00003
+    - BnjNVl_gssU:00004
+    - BnjNVl_gssU:00005
+    - BnjNVl_gssU:00006
+- id: cPooD0HRRAc-concept-forehand-loop-against-backspin-codex-reviewed
+  evidence_type: explanation
+  excerpt: Against backspin, if the technique is stiff and lacks sufficient brush, the body and shoulder must help lift the ball and create the arc during the loop.
+  reason: This contiguous 29-second span directly explains that backspin looping requires enough brush plus shoulder and body engagement to lift the ball and create the arc. It matches the supplied existing concept.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: cPooD0HRRAc
+    start_ms: 464966
+    end_ms: 494000
+    url: https://www.youtube.com/watch?v=cPooD0HRRAc&t=464s
+    segment_ids:
+    - cPooD0HRRAc:00100
+    - cPooD0HRRAc:00101
+    - cPooD0HRRAc:00102
+    - cPooD0HRRAc:00103
+    - cPooD0HRRAc:00104
+    - cPooD0HRRAc:00105
+    - cPooD0HRRAc:00106
+- id: krlH8_UzRRM-concept-forehand-loop-against-backspin-codex-reviewed
+  evidence_type: explanation
+  excerpt: When pulled wide by a heavy spin ball, loop with more brushing and less acceleration to prioritize spin. Use a loop drive only for a slightly high ball contacted above the table; at or below table height, do not force the drive.
+  reason: This contiguous span directly explains looping against a heavy-spin ball, prioritizing spin over speed, and choosing a loop drive only when the ball is slightly high and contacted above the table.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: krlH8_UzRRM
+    start_ms: 405633
+    end_ms: 435400
+    url: https://www.youtube.com/watch?v=krlH8_UzRRM&t=405s
+    segment_ids:
+    - krlH8_UzRRM:00090
+    - krlH8_UzRRM:00091
+    - krlH8_UzRRM:00092
+    - krlH8_UzRRM:00093
+    - krlH8_UzRRM:00094
+    - krlH8_UzRRM:00095
+- id: mYzbo93Nkps-concept-forehand-loop-against-backspin-codex-reviewed
+  evidence_type: explanation
+  excerpt: During a push rally, incoming balls are backspin; to attack, bring the racket below the table.
+  reason: This contiguous 11.4-second span directly supports recognizing push-rally balls as backspin and lowering the racket below the table when attacking, matching the existing backspin-loop topic.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: mYzbo93Nkps
+    start_ms: 129240
+    end_ms: 140640
+    url: https://www.youtube.com/watch?v=mYzbo93Nkps&t=129s
+    segment_ids:
+    - mYzbo93Nkps:00045
+    - mYzbo93Nkps:00046
+    - mYzbo93Nkps:00047
+    - mYzbo93Nkps:00048
+    - mYzbo93Nkps:00049
+- id: otQ5B7u8Q2I-concept-forehand-loop-against-backspin-codex-reviewed
+  evidence_type: explanation
+  excerpt: When starting to practice the brush loop, avoid lifting the ball. Players struggling with looping backspin can use this trick to enhance the stroke.
+  reason: This contiguous 20.48-second span explicitly identifies the brush loop, warns against lifting, and frames the technique as a solution for looping backspin. It supports the supplied existing concept, though it does not directly verify forehand, distance, or skill level.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: otQ5B7u8Q2I
+    start_ms: 6320
+    end_ms: 26800
+    url: https://www.youtube.com/watch?v=otQ5B7u8Q2I&t=6s
+    segment_ids:
+    - otQ5B7u8Q2I:00000
+    - otQ5B7u8Q2I:00001
+    - otQ5B7u8Q2I:00002
+- id: eIsYt1sCPRI-concept-forehand-loop-against-backspin-codex-reviewed
+  evidence_type: explanation
+  excerpt: On the forehand side, pushing is too passive and invites an attack; flicking can cause you to get jammed, so the best choice is to loop.
+  reason: These contiguous segments directly recommend looping as the forehand response because pushing is passive and flicking risks getting jammed.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: eIsYt1sCPRI
+    start_ms: 33133
+    end_ms: 42733
+    url: https://www.youtube.com/watch?v=eIsYt1sCPRI&t=33s
+    segment_ids:
+    - eIsYt1sCPRI:00007
+    - eIsYt1sCPRI:00008
 relations:
-  - relation_type: variation_of
-    target_concept_id: concept-forehand-loop
-    confidence: 0.99
-    review_status: approved
-    sources: [{video_id: 0E67TotjJFE, start_ms: 376666, end_ms: 381766, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=376s", segment_ids: ["0E67TotjJFE:00082"]}]
+- relation_type: variation_of
+  target_concept_id: concept-forehand-loop
+  confidence: 0.99
+  review_status: approved
+  sources: [{video_id: 0E67TotjJFE, start_ms: 376666, end_ms: 381766, url: "https://www.youtube.com/watch?v=0E67TotjJFE&t=376s", segment_ids: ["0E67TotjJFE:00082"]}]

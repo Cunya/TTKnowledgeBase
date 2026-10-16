@@ -1,47 +1,57 @@
 id: concept-deceptive-flick
 slug: deceptive-flick
 label: Deceptive flick
-aliases:
-  - deceptive flick
-  - trick shot
-short_definition: A flick used mainly against backspin that relies on deceptive push-to-close timing and can be effective even on a falling ball.
+aliases: []
+short_definition: A flick for balls with more spin that starts with a push; push forward before flipping the racket to press down. It can also be used on a falling ball.
 evidence_summary: >-
-  Deceptive flick brings together several connected ideas. The deceptive flick, says it is mainly
-  for backspin, and its push-then-close contact and use on a falling ball. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:2e128a6de2e1b759d72e2dd2d2b9f62c395a7f527576e8abff510e3c981976a0"
-evidence_summary_generator: "deterministic"
+  The shot starts with a push. Push forward before flipping the racket to press down, since flipping too early leaves the shot affected by backspin. The flick can also be used on a falling ball.
 concept_type: stroke
 facets:
   category:
-    - stroke
+  - stroke
   spin:
-    - backspin
-  distance:
-    - close
-  level:
-    - advanced
-difficulty: advanced
+  - backspin
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: e4be6c7e9caa24d0341765b9d2429507a7403356272d2f1b6e6b4c08dfbad2cf
-  prompt_version: candidate-review-v1
+  input_hash: sha256:f86e4564816670d3bf4a331d3c0fa2ed287ac45b6959d3ce33428f354652f476
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: nNLLuV_wY24-concept-deceptive-flick-reviewed
-    evidence_type: definition
-    excerpt: A flick used mainly against backspin that relies on deceptive push-to-close timing and can be effective even on a falling ball.
-    reason: The speaker names the deceptive flick, says it is mainly for backspin, and explains its push-then-close contact and use on a falling ball.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: nNLLuV_wY24
-      start_ms: 468600
-      end_ms: 498466
-      url: https://www.youtube.com/watch?v=nNLLuV_wY24&t=468s
-      segment_ids:
-        - nNLLuV_wY24:00110
-        - nNLLuV_wY24:00114
+- id: nNLLuV_wY24-concept-deceptive-flick-reviewed
+  evidence_type: definition
+  excerpt: A flick used mainly against backspin that relies on deceptive push-to-close timing and can be effective even on a falling ball.
+  reason: The speaker names the deceptive flick, says it is mainly for backspin, and explains its push-then-close contact and use on a falling ball.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: nNLLuV_wY24
+    start_ms: 468600
+    end_ms: 498466
+    url: https://www.youtube.com/watch?v=nNLLuV_wY24&t=468s
+    segment_ids:
+    - nNLLuV_wY24:00110
+    - nNLLuV_wY24:00114
+- id: nNLLuV_wY24-concept-deceptive-flick-codex-reviewed
+  evidence_type: explanation
+  excerpt: Start with a push, push forward through contact, then flip the racket to press down. This flick can also be used on a falling ball.
+  reason: Push forward first, then press down; flipping too early leaves the shot affected by backspin. The flick can also be used on a falling ball.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: nNLLuV_wY24
+    start_ms: 468600
+    end_ms: 498466
+    url: https://www.youtube.com/watch?v=nNLLuV_wY24&t=468s
+    segment_ids:
+    - nNLLuV_wY24:00110
+    - nNLLuV_wY24:00111
+    - nNLLuV_wY24:00112
+    - nNLLuV_wY24:00113
+    - nNLLuV_wY24:00114

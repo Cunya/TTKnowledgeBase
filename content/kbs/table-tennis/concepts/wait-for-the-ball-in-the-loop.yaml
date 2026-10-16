@@ -2,97 +2,109 @@ id: concept-wait-for-the-ball-in-the-loop
 slug: wait-for-the-ball-in-the-loop
 label: Wait for the ball in the loop
 aliases:
-  - wait for the ball
-  - don't rush
+- wait for the ball
+- don't rush
 short_definition: A good forehand loop requires waiting for the ball to descend into the correct contact window rather than rushing at it.
 evidence_summary: >-
-  Wait for the ball in the loop brings together several connected ideas. Failing to wait for the
-  ball is the biggest problem and that a good loop requires waiting. To slow the overall rhythm,
-  wait for the ball, and let speed come from acceleration at contact. Rushing causes immediate
-  errors and that pro timing is after the peak of the bounce. The issue is rushing and not waiting
-  for the ball, then explains that early timing makes the ball drop under the racket. Together,
-  these principles show how the topic is applied in practice while preserving the relevant
-  distinctions and constraints.
-evidence_summary_source_hash: "sha256:81db752ee1130b5d59dca742badcb7f71f24e4d2cd3d6f1dbe3846766fdec6b8"
+  A loop against backspin hitting the net with rushing and not waiting for the ball.
+evidence_summary_source_hash: "sha256:d059b35bfa5b15c6583cb30b561dc3d4274ce78f793ebae66b3f2312888703d0"
 evidence_summary_generator: "deterministic"
 concept_type: tactic
 facets:
   category:
-    - tactic
-    - fundamentals
+  - tactic
+  - fundamentals
   side:
-    - forehand
+  - forehand
   level:
-    - beginner
-    - intermediate
+  - beginner
+  - intermediate
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 4f594e87e8715c4db7ff752f7abfd4e62efb209aacc79b479aa694e999fbdb46
-  prompt_version: candidate-review-v1
+  input_hash: sha256:86cfe26d2a91d2e71197408451808fd96812a56a0b4f47c5bf02c98772788dff
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: Myj_Ros1xV8-concept-wait-for-the-ball-in-the-loop-reviewed
-    evidence_type: explanation
-    excerpt: A good forehand loop requires waiting for the ball to descend into the correct contact window rather than rushing at it.
-    reason: The speaker says failing to wait for the ball is the biggest problem and that a good loop requires waiting.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: Myj_Ros1xV8
-      start_ms: 572800
-      end_ms: 588566
-      url: https://www.youtube.com/watch?v=Myj_Ros1xV8&t=572s
-      segment_ids:
-        - Myj_Ros1xV8:00127
-        - Myj_Ros1xV8:00129
-  - id: a1vta4dOA2Q-concept-wait-for-the-ball-in-the-loop-reviewed
-    evidence_type: explanation
-    excerpt: Delay the swing until the ball is ready, then accelerate through contact instead of rushing early.
-    reason: The speaker repeatedly says to slow the overall rhythm, wait for the ball, and let speed come from acceleration at contact.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: a1vta4dOA2Q
-      start_ms: 570233
-      end_ms: 595600
-      url: https://www.youtube.com/watch?v=a1vta4dOA2Q&t=570s
-      segment_ids:
-        - a1vta4dOA2Q:00114
-        - a1vta4dOA2Q:00115
-        - a1vta4dOA2Q:00116
-        - a1vta4dOA2Q:00117
-        - a1vta4dOA2Q:00118
-  - id: swjcy483f2w-concept-wait-for-the-ball-in-the-loop-reviewed
-    evidence_type: explanation
-    excerpt: Do not rush the loop; let the ball come deeper before striking.
-    reason: The speaker says rushing causes immediate errors and that pro timing is after the peak of the bounce.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: swjcy483f2w
-      start_ms: 357566
-      end_ms: 371533
-      url: https://www.youtube.com/watch?v=swjcy483f2w&t=357s
-      segment_ids:
-        - swjcy483f2w:00072
-        - swjcy483f2w:00074
-  - id: 01-q1cswVVs-concept-wait-for-the-ball-in-the-loop-reviewed
-    evidence_type: explanation
-    excerpt: When looping backspin, the player must time contact after the ball has dropped enough instead of rushing in early.
-    reason: The speaker explicitly says the issue is rushing and not waiting for the ball, then explains that early timing makes the ball drop under the racket.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 01-q1cswVVs
-      start_ms: 22166
-      end_ms: 40966
-      url: https://www.youtube.com/watch?v=01-q1cswVVs&t=22s
-      segment_ids:
-        - 01-q1cswVVs:00004
-        - 01-q1cswVVs:00007
+- id: Myj_Ros1xV8-concept-wait-for-the-ball-in-the-loop-reviewed
+  evidence_type: explanation
+  excerpt: A good forehand loop requires waiting for the ball to descend into the correct contact window rather than rushing at it.
+  reason: The speaker says failing to wait for the ball is the biggest problem and that a good loop requires waiting.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Myj_Ros1xV8
+    start_ms: 572800
+    end_ms: 588566
+    url: https://www.youtube.com/watch?v=Myj_Ros1xV8&t=572s
+    segment_ids:
+    - Myj_Ros1xV8:00127
+    - Myj_Ros1xV8:00129
+- id: a1vta4dOA2Q-concept-wait-for-the-ball-in-the-loop-reviewed
+  evidence_type: explanation
+  excerpt: Delay the swing until the ball is ready, then accelerate through contact instead of rushing early.
+  reason: The speaker repeatedly says to slow the overall rhythm, wait for the ball, and let speed come from acceleration at contact.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: a1vta4dOA2Q
+    start_ms: 570233
+    end_ms: 595600
+    url: https://www.youtube.com/watch?v=a1vta4dOA2Q&t=570s
+    segment_ids:
+    - a1vta4dOA2Q:00114
+    - a1vta4dOA2Q:00115
+    - a1vta4dOA2Q:00116
+    - a1vta4dOA2Q:00117
+    - a1vta4dOA2Q:00118
+- id: swjcy483f2w-concept-wait-for-the-ball-in-the-loop-reviewed
+  evidence_type: explanation
+  excerpt: Do not rush the loop; let the ball come deeper before striking.
+  reason: The speaker says rushing causes immediate errors and that pro timing is after the peak of the bounce.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: swjcy483f2w
+    start_ms: 357566
+    end_ms: 371533
+    url: https://www.youtube.com/watch?v=swjcy483f2w&t=357s
+    segment_ids:
+    - swjcy483f2w:00072
+    - swjcy483f2w:00074
+- id: 01-q1cswVVs-concept-wait-for-the-ball-in-the-loop-reviewed
+  evidence_type: explanation
+  excerpt: When looping backspin, the player must time contact after the ball has dropped enough instead of rushing in early.
+  reason: The speaker explicitly says the issue is rushing and not waiting for the ball, then explains that early timing makes the ball drop under the racket.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 01-q1cswVVs
+    start_ms: 22166
+    end_ms: 40966
+    url: https://www.youtube.com/watch?v=01-q1cswVVs&t=22s
+    segment_ids:
+    - 01-q1cswVVs:00004
+    - 01-q1cswVVs:00007
+- id: 01-q1cswVVs-concept-wait-for-the-ball-in-the-loop-codex-reviewed
+  evidence_type: explanation
+  excerpt: A loop against backspin can hit the net because the player rushes instead of waiting for the ball.
+  reason: The speaker directly connects a loop against backspin hitting the net with rushing and not waiting for the ball.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 01-q1cswVVs
+    start_ms: 16133
+    end_ms: 25166
+    url: https://www.youtube.com/watch?v=01-q1cswVVs&t=16s
+    segment_ids:
+    - 01-q1cswVVs:00003
+    - 01-q1cswVVs:00004

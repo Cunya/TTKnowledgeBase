@@ -9,3 +9,10 @@
 - Implementation uses a strict 11-character YouTube ID filter and the largest matching retained catalog per enabled source; this prevents channel placeholders from entering acquisition.
 - The complete retry-backed inventory shows 85 members-only videos, while the earlier count of eight covered only configured batch history. The full 109 not-on-site split is 23 processed/no approved moments + 85 members-only + one subtitle-disabled.
 - Automated adjudication is bounded by an exact 50-video workset per cycle. A deferred item becomes explicit human review after two unchanged deterministic attempts.
+- The root `start.bat` previously started only Astro; the intended local launcher should also start the processor monitor while avoiding duplicate monitor instances.
+- Do not place a caret-escaped PowerShell pipeline inside a quoted batch `-Command`; direct batch invocation can pass the caret literally, and a separate readiness check can mask that failure when the target service already exists.
+- Monitor resource telemetry should be scoped by the repository process tree; machine-wide CPU/memory and unrelated Python/Node services obscure the load attributable to this project.
+- Frequently changing monitor cards need reserved line boxes and tabular time text; otherwise normal status-label wrapping produces distracting vertical layout shifts.
+- Human-review resolution must remain source-grounded: show exact cited segments and nearby context, require explicit source and concept confirmations, preserve an audit note, and permit canonical writes only while automated processing is paused.
+- The monitor's wide-screen main area should stay balanced: active output owns one half, while the other half uses a two-by-two operational grid and collapses to one column below the desktop breakpoint.
+- Full processing requires two honest measures: source-balanced automation triage and final editorial completion. Moving a candidate to `human_review` ends automatic retries but does not make its video fully processed.

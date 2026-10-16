@@ -8,15 +8,9 @@ aliases:
   - hook it, then press
 short_definition: Using a firm wrist that presses forward instead of bending upward, keeping the racket angle stable and helping generate spin and power on the backhand.
 evidence_summary: >-
-  Backhand wrist hook and forward press brings together several connected ideas. The essence of
-  backhand lies in the wrist hook, with the wrist pressed forward to keep the racket angle stable.
-  He states the key is to lock the wrist and use the forearm to drive forward. The wrist should
-  lead forward into the ball to create friction, not pull back. The wrist must be locked, firm,
-  and hooked to stabilize the backhand and rip the ball. Locking the wrist and securing the power
-  at the end of the stroke, especially for hard backhand shots. The correction is to keep the
-  wrist loose and hooked inward. Together, these principles show how the topic is applied in
-  practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:7fa334fe1f4efd43bd9994b6a63a71f73578571b58a0f9b806e7dd1ffdbbfcbf"
+  Using a firm wrist that presses forward instead of bending upward, keeping the racket angle
+  stable and helping generate spin and power on the backhand.
+evidence_summary_source_hash: "sha256:675528a9c1b5fb28e640648050bd80f5ae1defa9635e93f409c56ec0d86770f5"
 evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
@@ -27,10 +21,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 7e5e85356541c757aa7dc7d9482cb38cec150e917797c0fc80ee62ea056099d6
-  prompt_version: candidate-review-v1
+  input_hash: sha256:8fe9e73e3557485ef13a46267c81aa610e1b35eceab066d61b0766daa761fe9f
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: HCkIFKn0-Ds-concept-backhand-wrist-hook-pressure-reviewed
     evidence_type: definition
@@ -38,7 +35,7 @@ evidence:
     reason: The speaker says the essence of backhand lies in the wrist hook, with the wrist pressed forward to keep the racket angle stable.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: HCkIFKn0-Ds
       start_ms: 415920
@@ -53,7 +50,7 @@ evidence:
     reason: He states the key is to lock the wrist and use the forearm to drive forward.
     confidence: 0.94
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: suG8AopFBIc
       start_ms: 321666
@@ -68,7 +65,7 @@ evidence:
     reason: The speaker says the wrist should lead forward into the ball to create friction, not pull back.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: mchHxJnHUzE
       start_ms: 596333
@@ -83,7 +80,7 @@ evidence:
     reason: The transcript says the wrist must be locked, firm, and hooked to stabilize the backhand and rip the ball.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: CLBNvB5gemk
       start_ms: 518533
@@ -98,7 +95,7 @@ evidence:
     reason: The speaker emphasizes locking the wrist and securing the power at the end of the stroke, especially for hard backhand shots.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 3wbUKV585F8
       start_ms: 336266
@@ -118,7 +115,7 @@ evidence:
     reason: The correction is to keep the wrist loose and hooked inward.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: GmC5XCY9aU4
       start_ms: 69966
@@ -126,3 +123,35 @@ evidence:
       url: https://www.youtube.com/watch?v=GmC5XCY9aU4&t=69s
       segment_ids:
         - GmC5XCY9aU4:00016
+  - id: mchHxJnHUzE-concept-backhand-wrist-hook-and-forward-press-codex-reviewed
+    evidence_type: explanation
+    excerpt: For the backhand loop, lead with the wrist during the backswing, into the ball, and to rotate the racket head.
+    reason: These contiguous segments directly explain that leading with the wrist is required for the backhand loop's backswing, contact, and racket-head rotation.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: mchHxJnHUzE
+      start_ms: 720033
+      end_ms: 729133
+      url: https://www.youtube.com/watch?v=mchHxJnHUzE&t=720s
+      segment_ids:
+        - mchHxJnHUzE:00159
+        - mchHxJnHUzE:00160
+  - id: mxmDhD9M83c-concept-backhand-wrist-hook-and-forward-press-codex-reviewed
+    evidence_type: explanation
+    excerpt: The center of gravity is lowered, the abdomen contracts while pushing forward, and at contact the wrist accelerates with rotation and friction, involving the fingers.
+    reason: These contiguous segments directly explain the forward push and wrist rotation/friction at contact in the backhand topspin, with finger involvement.
+    confidence: 0.94
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: mxmDhD9M83c
+      start_ms: 159100
+      end_ms: 165300
+      url: https://www.youtube.com/watch?v=mxmDhD9M83c&t=159s
+      segment_ids:
+        - mxmDhD9M83c:00055
+        - mxmDhD9M83c:00056
+        - mxmDhD9M83c:00057
+        - mxmDhD9M83c:00058

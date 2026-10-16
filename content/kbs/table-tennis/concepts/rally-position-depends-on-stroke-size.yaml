@@ -7,11 +7,9 @@ aliases:
   - larger stroke mid-distance
 short_definition: In rally play, the player should stand closer to the table for compact strokes and farther back for larger, full-arm strokes.
 evidence_summary: >-
-  Rally position depends on stroke size brings together several connected ideas. Stroke mechanics
-  dictate position, then contrasts compact strokes close to the table with larger strokes from
-  mid-distance. Together, these principles show how the topic is applied in practice while
-  preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:8afa81ecd83ac784ff0bca809fb71630857aeddd3af7fdd0ad0d563339a193be"
+  In rally play, the player should stand closer to the table for compact strokes and farther back
+  for larger, full-arm strokes.
+evidence_summary_source_hash: "sha256:82e1619cb3aa8eeabe9959eb2d62f5bcbf450c81b15d90b62a0223222b4ad08a"
 evidence_summary_generator: "deterministic"
 concept_type: principle
 facets:
@@ -23,10 +21,13 @@ facets:
 difficulty: beginner
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 031bce91d5c36bad9b5b609d7fe57e10a9078a5fd9cda2db9704bc60802d242b
-  prompt_version: candidate-review-v1
+  input_hash: sha256:b58808af0e64c483ef998c6aea27640b874de4596fe46cf5ec2ae9bf7b50ddfe
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: ZnkxF-IkY6U-concept-rally-position-depends-on-stroke-size-reviewed
     evidence_type: definition
@@ -34,7 +35,7 @@ evidence:
     reason: The speaker explicitly states that stroke mechanics dictate position, then contrasts compact strokes close to the table with larger strokes from mid-distance.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ZnkxF-IkY6U
       start_ms: 6233
@@ -44,3 +45,20 @@ evidence:
         - ZnkxF-IkY6U:00002
         - ZnkxF-IkY6U:00003
         - ZnkxF-IkY6U:00004
+  - id: hKQbi0Kk_Gs-concept-close-to-the-table-compact-attacking-codex-reviewed
+    evidence_type: explanation
+    excerpt: Modern players stand very close to the table, stay forward, and use a very small motion rather than a big swing; this close-to-the-table counter-looping style is an advanced way to play.
+    reason: These contiguous segments directly explain the relationship between close table position and compact strokes, matching the existing concept. The selected span is 21.4 seconds and omits unrelated claims.
+    confidence: 0.95
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: hKQbi0Kk_Gs
+      start_ms: 270133
+      end_ms: 295566
+      url: https://www.youtube.com/watch?v=hKQbi0Kk_Gs&t=270s
+      segment_ids:
+        - hKQbi0Kk_Gs:00055
+        - hKQbi0Kk_Gs:00056
+        - hKQbi0Kk_Gs:00057
+        - hKQbi0Kk_Gs:00058

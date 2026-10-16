@@ -7,6 +7,7 @@ it never reads or republishes raw transcript text and never invents a claim.
 
 from __future__ import annotations
 
+import os
 import re
 from pathlib import Path
 
@@ -15,9 +16,9 @@ from .codex_engine import (
     summarize_evidence_batch_with_codex,
 )
 from .models import Concept
-from .utils import normalize_text, read_yaml, sha256_json
+from .utils import normalize_text, read_yaml, replace_with_retry, sha256_json
 
-SUMMARY_FORMAT_VERSION = "direct-synthesis-v10"
+SUMMARY_FORMAT_VERSION = "direct-synthesis-v11"
 
 _REPORTING_PREFIX = re.compile(
     r"^(?:(?:the)\s+)?(?:speaker|coach|source|evidence|transcript|moments?|examples?)\s+"
@@ -29,6 +30,16 @@ _REPORTING_PREFIX = re.compile(
 
 def _editorial_reason(reason: str) -> str:
     value = normalize_text(reason)
+    if re.search(
+        r"\b(?:selected (?:span|segments)|contiguous(?: \d+(?:\.\d+)?-second)? "
+        r"(?:selected )?(?:span|segments)|supplied (?:[\w-]+\s+){0,3}(?:concepts?|segments)|"
+        r"segment (?:ids?|\d+)|[\w-]+:\d{5}|"
+        r"durable topic|existing concept|unsupported claims|boundary checks|schema validation|"
+        r"adjudication)\b",
+        value,
+        re.IGNORECASE,
+    ):
+        return ""
     contrast_match = re.match(
         r"^(?:(?:the)\s+)?(?:speaker|coach|source|evidence|transcript|moments?|examples?)\s+"
         r"(?:(?:repeatedly|directly|explicitly|clearly|also)\s+)*contrasts?\s+(.+)$",
@@ -57,7 +68,7 @@ def _editorial_reason(reason: str) -> str:
     value = re.sub(
         r"(?i)\s+with\s+(?:the )?(?:speaker|coach)\s+"
         r"(?:noting|saying|stating|explaining|describing)\s+that\s+",
-        " because ",
+        "; ",
         value,
     )
     value = re.sub(
@@ -112,15 +123,18 @@ def _distinct_reasons(concept: Concept) -> list[str]:
         if evidence.review_status != "approved" or not evidence.reason.strip():
             continue
         reason = _editorial_reason(evidence.reason)
-        if reason not in reasons:
+        if reason and reason not in reasons:
             reasons.append(reason)
     return reasons
 
 
 def evidence_summary_source_hash(concept: Concept) -> str:
     """Fingerprint the approved evidence reasons that feed a generated summary."""
+    format_info = {"summary_format": SUMMARY_FORMAT_VERSION}
+    if not _distinct_reasons(concept):
+        format_info["fallback_definition"] = concept.short_definition
     return sha256_json(
-        [{"summary_format": SUMMARY_FORMAT_VERSION}]
+        [format_info]
         + [
             {
                 "id": evidence.id,
@@ -153,16 +167,12 @@ def build_evidence_summary(concept: Concept, *, max_points: int = 8) -> str | No
     """
     reasons = _distinct_reasons(concept)
     if not reasons:
-        return None
+        return concept.short_definition if any(
+            evidence.review_status == "approved" for evidence in concept.evidence
+        ) else None
     points = _sample_reasons(reasons, max_points)
     body = " ".join(points)
-    if len(reasons) > len(points):
-        body += " Additional points reinforce the same theme."
-    return (
-        f"{concept.label} brings together several connected ideas. {body} Together, "
-        "these principles show how the topic is applied in practice while preserving "
-        "the relevant distinctions and constraints."
-    )
+    return body
 
 
 def build_missing_summaries(concept_dir: Path, *, max_points: int = 8) -> list[tuple[Path, str]]:
@@ -233,8 +243,15 @@ def write_codex_summaries(
     max_points: int = 8,
     refresh_generated: bool = False,
     model_override: str | None = None,
+    videos: list | None = None,
 ) -> list[Path]:
     """Use the configured Codex model to write coherent generated essays."""
+    from .published_repair import verify_article_with_codex
+
+    if videos is None:
+        raise ValueError("Summary verification requires normalized source videos")
+    rows = {segment.id: segment.model_dump(mode="json") for video in videos
+            if video.transcript for segment in video.transcript.segments}
     targets = _codex_summary_targets(concept_dir, refresh_generated=refresh_generated)
     written: list[Path] = []
     for start in range(0, len(targets), 8):
@@ -266,6 +283,17 @@ def write_codex_summaries(
                 continue
             summary = summaries[concept.id]
             _validate_codex_summary(summary)
+            owned = sorted({sid for evidence in concept.evidence if evidence.review_status == "approved"
+                            for sid in evidence.source.segment_ids})
+            if not owned or any(sid not in rows for sid in owned):
+                raise CodexError("Summary source proof is incomplete")
+            verification, _ = verify_article_with_codex({
+                "article": {"id": concept.id, "label": concept.label},
+                "units": {"field:evidence_summary": {"value": summary, "allowed_segment_ids": owned}},
+                "selected_rows": [rows[sid] for sid in owned], "context_rows": [],
+            }, config_path, audit_dir, budget_path)
+            if any(unit["status"] != "supported" for unit in verification["units"]):
+                raise CodexError("Generated summary failed independent source verification")
             _write_summary_file(
                 path,
                 summary,
@@ -311,28 +339,28 @@ def _write_summary_file(
         text = text[: summary_match.start()] + replacement + text[summary_match.end() :]
     else:
         text = re.sub(
-            r"(?m)^evidence_summary_source_hash:.*(?:\r?\n|$)", "", text, count=1
+            r"(?m)^evidence_summary_(?:source_hash|generator):[^\r\n]*(?:\r?\n|$)"
+            r"(?:^[ \t]+[^\r\n]*(?:\r?\n|$))*", "", text,
         )
-        text = re.sub(
-            r"(?m)^evidence_summary_generator:.*(?:\r?\n|$)", "", text, count=1
+        definition = re.search(
+            r"(?m)^short_definition:[^\r\n]*(?:\r?\n|$)"
+            r"(?:^[ \t]+[^\r\n]*(?:\r?\n|$))*",
+            text,
         )
-        lines = text.splitlines(keepends=True)
-        insertion = next(
-            (index + 1 for index, line in enumerate(lines) if line.startswith("short_definition:")),
-            None,
-        )
-        if insertion is None:
+        if definition is None:
             return
-        lines[insertion:insertion] = [replacement]
-        text = "".join(lines)
-    path.write_text(text, encoding="utf-8", newline="")
+        text = text[:definition.end()] + replacement + text[definition.end():]
+    temporary = path.with_name(f".{path.name}.{os.getpid()}.tmp")
+    temporary.write_text(text, encoding="utf-8", newline="")
+    replace_with_retry(temporary, path)
 
 
 def _summary_block_pattern() -> re.Pattern[str]:
     return re.compile(
-        r"(?m)^evidence_summary: >-\r?\n(?:^  [^\r\n]*(?:\r?\n|$))+"
-        r"(?:^evidence_summary_source_hash:.*(?:\r?\n|$))?"
-        r"(?:^evidence_summary_generator:.*(?:\r?\n|$))?"
+        r"(?m)^evidence_summary:[^\r\n]*(?:\r?\n|$)"
+        r"(?:^(?:[ \t]+[^\r\n]*|)(?:\r?\n|$))*"
+        r"(?:^evidence_summary_(?:source_hash|generator):[^\r\n]*(?:\r?\n|$)"
+        r"(?:^[ \t]+[^\r\n]*(?:\r?\n|$))*)*"
     )
 
 

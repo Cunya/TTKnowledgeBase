@@ -8,19 +8,8 @@ aliases:
   - return to neutral
 short_definition: Using torso and body rotation to drive the stroke, then returning to neutral after the shot.
 evidence_summary: >-
-  Body rotation through the stroke brings together several connected ideas. Rotating the body and
-  explicitly says the motion is driven by the body. Small rotation for hitting from large rotation
-  for looping and the rotation chain from feet to shoulders, with the hips driving rotation.
-  Rotating the waist, turning the body, and against failing to twist the waist during the
-  transition to looping. The body must rotate and against only shifting weight and stopping
-  rotation. The stroke starting sideways, rotating forward, and keeping body rotation on a
-  horizontal plane. Body tilt engages power, and dropping the right shoulder forces body rotation
-  and initiates it. Hip rotation and shoulder rotation as the basis of body coordination. The
-  first step is to open the arm and the second is to use the body to lead the arm into the
-  backswing, with the hand staying in front. Additional points reinforce the same theme. Together,
-  these principles show how the topic is applied in practice while preserving the relevant
-  distinctions and constraints.
-evidence_summary_source_hash: "sha256:09e49a2cf97c58f5aef1d5cd8e08881a7a2a14842be6b2faae429a20872e7755"
+  Using torso and body rotation to drive the stroke, then returning to neutral after the shot.
+evidence_summary_source_hash: "sha256:0f920083a8c8b20e7c4b187fff89eea88c5848fe296b82a38e65f310f204e82f"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -34,10 +23,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: b3c119a46606e599625a49e97606b47cef8de12a51e7b74b44de8eb703eddb9c
-  prompt_version: candidate-review-v1
+  input_hash: sha256:dd48c1c943d3d3518b08ecdf632ef59217d3635f662f9ee843ccc8806cf30906
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: J_ra9qsXCxo-concept-body-rotation-through-stroke-reviewed
     evidence_type: demonstration
@@ -45,7 +37,7 @@ evidence:
     reason: The speaker demonstrates rotating the body and explicitly says the motion is driven by the body.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: J_ra9qsXCxo
       start_ms: 482160
@@ -60,7 +52,7 @@ evidence:
     reason: The speaker gives explicit foot and hip alignment cues so the hips open and the body rotates naturally through the stroke.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Ji9_Etw6nvo
       start_ms: 274800
@@ -81,7 +73,7 @@ evidence:
     reason: The speaker shows turning motion, says rotation is possible only after the left foot lifts, and later warns against over-rotating the body.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: wZoJj0nIsog
       start_ms: 70166
@@ -97,7 +89,7 @@ evidence:
     reason: The speaker explicitly says body power should go forward and frames the feeling as rotate, push, rotate, push.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: dOSO2ksI7uY
       start_ms: 288433
@@ -112,7 +104,7 @@ evidence:
     reason: The speaker explains when rotation is possible, when it causes jamming, and repeatedly says to rotate first and let the body drive the side movement.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 3lTc51PYWSQ
       start_ms: 411633
@@ -128,7 +120,7 @@ evidence:
     reason: The speaker says the motion is rotational and specifically discusses hip and shoulder rotation as part of the stroke.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: oB03htaZU8A
       start_ms: 125533
@@ -145,7 +137,7 @@ evidence:
     reason: The speaker repeatedly emphasizes full body rotation and explicitly contrasts torso use with arm-only motion.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: PEpV_p4-Lx8
       start_ms: 25800
@@ -160,7 +152,7 @@ evidence:
     reason: The speaker explicitly mentions adding body rotation, and warns that involving other body parts can make the contact point wrong and break the stroke.
     confidence: 0.89
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: b_F4I4x4dl0
       start_ms: 122600
@@ -176,7 +168,7 @@ evidence:
     reason: The speaker repeatedly instructs opening the body, rotating the shoulder/body, and turning around 45 degrees to generate the stroke.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Mnse-nAfdO8
       start_ms: 233333
@@ -192,7 +184,7 @@ evidence:
     reason: The speaker directly distinguishes small rotation for hitting from large rotation for looping and describes the rotation chain from feet to shoulders, with the hips driving rotation.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 4VtanUONrZc
       start_ms: 370639
@@ -213,7 +205,7 @@ evidence:
     reason: The speaker says not to face the table directly, but to turn sideways and rotate the waist to create room.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8FDXnA8EO1M
       start_ms: 104900
@@ -229,7 +221,7 @@ evidence:
     reason: Explains that body rotation is required for timing and that a preparatory turn syncs arm and foot movement.
     confidence: 0.98
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: eIsYt1sCPRI
       start_ms: 372233
@@ -245,7 +237,7 @@ evidence:
     reason: The transcript explicitly calls for fast waist and hip rotation, rotating toward the forehand, and shifting force forward and then releasing it after contact.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 2DXviJQOA5M
       start_ms: 352640
@@ -261,7 +253,7 @@ evidence:
     reason: The speaker contrasts looping with loop-driving and explains that loop driving uses a larger body rotation range, with stepping across and rotating while bowing.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: lpiuaVgCbK4
       start_ms: 369800
@@ -279,7 +271,7 @@ evidence:
     reason: The speaker directly instructs to avoid waist rotation and keep the body still during the serve.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: yF675Tey81g
       start_ms: 100520
@@ -294,7 +286,7 @@ evidence:
     reason: The speaker says the body won't move forward without pivoting, then instructs rotating the hips and shoulders.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: tQ9LEV9f2IU
       start_ms: 509360
@@ -310,7 +302,7 @@ evidence:
     reason: The speaker directly connects widening/turning the body with driving forward and then retracting, and also describes rotate-push-pull-in mechanics.
     confidence: 0.96
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: pAEvvtlrSVY
       start_ms: 716266
@@ -331,7 +323,7 @@ evidence:
     reason: The speaker mentions rotating the waist, turning the body, and warns against failing to twist the waist during the transition to looping.
     confidence: 0.91
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: s2VuRO66usY
       start_ms: 222833
@@ -346,7 +338,7 @@ evidence:
     reason: The speaker says the shoulder should be carried by body rotation, not swing independently.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: aStjJkTimhg
       start_ms: 208519
@@ -365,7 +357,7 @@ evidence:
     reason: Parallel shoulders mean no rotation and poor quality; rotating the right shoulder behind the left drives body rotation and increases the hitting angle.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ijU-Kk98Gto
       start_ms: 51500
@@ -386,7 +378,7 @@ evidence:
     reason: The transcript explicitly says there must be waist rotation, the waist should lead the forearm, and the body rotates along with the preparation.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: R_iezR5GGwY
       start_ms: 112266
@@ -403,7 +395,7 @@ evidence:
     reason: The speaker describes body twisting and explosive rotation, along with shifting the center of gravity onto the right leg and driving forward.
     confidence: 0.9
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: T19jPlfHkVA
       start_ms: 387766
@@ -419,7 +411,7 @@ evidence:
     reason: The speaker asks whether there is left-right rotation and then identifies what is and is not rotation.
     confidence: 0.85
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 8fxjEROShs4
       start_ms: 840766
@@ -433,7 +425,7 @@ evidence:
     reason: The speaker says body strength and right-side forward rotation are key to changing direction.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: too3B9ITqqU
       start_ms: 240666
@@ -450,7 +442,7 @@ evidence:
     reason: The speaker explicitly says to pivot, rotate the hips, and let the hip guide the shot, engaging upper arm and forearm.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: FweaNVt8gA0
       start_ms: 650733
@@ -467,7 +459,7 @@ evidence:
     reason: The speaker explicitly tells players to avoid rotating or moving vertically, keep the body low and still, and says body rotation is not needed in reasonable serving motions.
     confidence: 0.95
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: rPrv4iWdE4w
       start_ms: 702900
@@ -484,7 +476,7 @@ evidence:
     reason: The speaker explicitly says the body must rotate and warns against only shifting weight and stopping rotation.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 7N1IChCbVjk
       start_ms: 213033
@@ -500,7 +492,7 @@ evidence:
     reason: The transcript repeatedly emphasizes torso/hip rotation in sync with the arm and the need to coil before executing the shot.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: KG90HOykXCs
       start_ms: 257833
@@ -514,7 +506,7 @@ evidence:
     reason: The speaker identifies lack of body rotation as the biggest issue and says the non-playing hand helps initiate rotation and adjust body height.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: slH2CHDYasA
       start_ms: 27066
@@ -529,7 +521,7 @@ evidence:
     reason: The speaker says attacking a push needs slight body rotation, small range, and forward drive from the ground.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: T40bWiitfAU
       start_ms: 52633
@@ -546,7 +538,7 @@ evidence:
     reason: The transcript repeatedly explains rotating back to square, turning the torso sideways, moving the body to the ball, and using rotation to create correct position and power.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: U4ItRZHe_-A
       start_ms: 582366
@@ -564,7 +556,7 @@ evidence:
     reason: The speaker explains that the body must first turn sideways before rotating forward, and that this is required for offensive shots.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: VEjSu1GhArI
       start_ms: 301833
@@ -581,7 +573,7 @@ evidence:
     reason: The non-playing arm must follow the body, the torso closes and braces, and power is locked by body rotation stopping after the drive.
     confidence: 0.89
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: nukEclWHWn4
       start_ms: 441400
@@ -598,7 +590,7 @@ evidence:
     reason: The speaker states it is not about twisting the waist, and that body rotation must stop before the arm accelerates.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 16tgKRqrb8A
       start_ms: 179966
@@ -615,7 +607,7 @@ evidence:
     reason: The transcript describes the stroke starting sideways, rotating forward, and keeping body rotation on a horizontal plane.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: HHyaeCbQ_ec
       start_ms: 54100
@@ -631,7 +623,7 @@ evidence:
     reason: The speaker explains synchronization between arm and body and says the body must follow the same arc rather than just rotating sideways.
     confidence: 0.93
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: DBEaBAv16Y8
       start_ms: 320133
@@ -650,7 +642,7 @@ evidence:
     reason: The backhand section distinguishes coiling and forward drive from side-to-side rotation.
     confidence: 0.92
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: U3PEiARb5fk
       start_ms: 185766
@@ -665,7 +657,7 @@ evidence:
     reason: The transcript describes looping as a twisting motion where rotation and loading store energy, then pushing and driving release it.
     confidence: 0.93
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 3EtitCzSYqY
       start_ms: 372866
@@ -680,7 +672,7 @@ evidence:
     reason: The speaker explicitly says the forearm fails to open because of insufficient body rotation and that rotating the body creates the correct hitting window and quality forehand power.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: qsY3S06fjgA
       start_ms: 45866
@@ -696,7 +688,7 @@ evidence:
     reason: The transcript explains when rotation helps and when it should be minimized or omitted, emphasizing compactness and timing relative to incoming ball quality and distance.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hDpdmRuaLMY
       start_ms: 373633
@@ -713,7 +705,7 @@ evidence:
     reason: The transcript emphasizes compact hip rotation, a one-two action, and driving forward rather than large twisting motions.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 0ZHQIcZARgE
       start_ms: 275166
@@ -730,7 +722,7 @@ evidence:
     reason: The speaker directly states that you must rotate your body, turn sideways, then step in and swing.
     confidence: 0.97
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: dCjFkTKTH7I
       start_ms: 134733
@@ -748,7 +740,7 @@ evidence:
     reason: The speaker says only the body mechanics and body rotation were added, and that correct weight transfer and body use produce the loop.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: DfQ_yBSS_bk
       start_ms: 394433
@@ -764,7 +756,7 @@ evidence:
     reason: The speaker says body tilt engages power, and dropping the right shoulder forces body rotation and initiates it.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: UhJHyel0ogQ
       start_ms: 710166
@@ -781,7 +773,7 @@ evidence:
     reason: The speaker contrasts waist twisting with proper body rotation, says the backswing follows body rotation naturally, and emphasizes hip/core-driven power and a 45-degree body angle.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: VDmGm94Awm4
       start_ms: 65600
@@ -797,7 +789,7 @@ evidence:
     reason: The speaker explicitly describes the body guiding the arm on the backswing and driving the arm through the forward swing.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: xAxrT5EE-mY
       start_ms: 343066
@@ -813,7 +805,7 @@ evidence:
     reason: The speaker explains that the backswing begins with a small body turn and that power should rotate forward, not sideways.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Xt5RyN3qkSA
       start_ms: 242533
@@ -829,7 +821,7 @@ evidence:
     reason: The speaker explicitly refers to stopping body rotation and warns that a full body turn gets jammed by heavy spin.
     confidence: 0.91
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: D2hk2kkCdfI
       start_ms: 511500
@@ -844,7 +836,7 @@ evidence:
     reason: The speaker says the forehand requires opening the body, enough rotation space, and rotating the body before stepping in.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: fX0-3KtEzUY
       start_ms: 68466
@@ -860,7 +852,7 @@ evidence:
     reason: The speaker describes rotating, uncoiling, and coiling inward/outward as the movement pattern during the flick.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: qfB1tscK4xk
       start_ms: 43366
@@ -876,7 +868,7 @@ evidence:
     reason: The speaker instructs the player to rotate the hips first, then drive them forward, and later says to rotate backward to generate power.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: gV-iuz4JnXc
       start_ms: 332733
@@ -891,7 +883,7 @@ evidence:
     reason: The speaker explicitly instructs hip rotation and shoulder rotation as the basis of body coordination.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: U3o7_ad82dk
       start_ms: 43033
@@ -909,7 +901,7 @@ evidence:
     reason: The speaker contrasts cross-court serves, where the body can stay still or push forward, with down-the-line serves, which almost always involve a slight weight shift.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: Ejc6KqZDRKs
       start_ms: 46366
@@ -926,7 +918,7 @@ evidence:
     reason: The speaker defines the issue and solution in terms of letting the body lead the arm and rotating so the hand stays in front.
     confidence: 0.99
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: pFKneacfGiY
       start_ms: 58800
@@ -941,7 +933,7 @@ evidence:
     reason: The transcript instructs players to rotate the hip then shoulder and emphasizes a compact, explosive rotation rather than a large twist.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: fILPmFV3eyQ
       start_ms: 364933
@@ -956,7 +948,7 @@ evidence:
     reason: The speaker says to integrate the arm action with body power, specifically naming loading, waist rotation, and hip drive.
     confidence: 0.94
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: QRHidBrS09M
       start_ms: 524633
@@ -972,7 +964,7 @@ evidence:
     reason: The speaker says to open the hips, then move forward to create the combined force for the backspin loop, emphasizing forward motion instead of only lifting upward.
     confidence: 0.93
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: 52Lq-QQGqpw
       start_ms: 796100
@@ -988,7 +980,7 @@ evidence:
     reason: The speaker names the four body parts that should rotate together and specifies about 50% rotation, not a full turn.
     confidence: 0.99
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: _f9fVMm2_Gs
       start_ms: 132100
@@ -1004,7 +996,7 @@ evidence:
     reason: The speaker explains hip drive, rotating through to the cross-court angle, and not treating the front-facing position as the end of the motion.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: fAEn9wkWGd8
       start_ms: 351433
@@ -1023,7 +1015,7 @@ evidence:
     reason: The speaker says body rotation should initiate the movement and distinguishes proper driving motion from rotation performed in place.
     confidence: 0.85
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: lqla0_ORKNA
       start_ms: 526233
@@ -1039,7 +1031,7 @@ evidence:
     reason: The speaker says the first step is to open the arm and the second is to use the body to lead the arm into the backswing, with the hand staying in front.
     confidence: 0.91
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: hoLSxXKl2L0
       start_ms: 202433
@@ -1049,3 +1041,120 @@ evidence:
         - hoLSxXKl2L0:00032
         - hoLSxXKl2L0:00033
         - hoLSxXKl2L0:00034
+  - id: 16tgKRqrb8A-concept-body-rotation-through-the-stroke-codex-reviewed
+    evidence_type: explanation
+    excerpt: Body rotation is not about twisting the waist; the body must stop before the arm accelerates, because moving the body and arm together does not generate power.
+    reason: Segments 00038–00041 directly explain that the motion is not waist twisting, that body rotation stops before arm acceleration, and that separating the two creates power. This is the same durable topic as the supplied existing concept.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: 16tgKRqrb8A
+      start_ms: 179966
+      end_ms: 200400
+      url: https://www.youtube.com/watch?v=16tgKRqrb8A&t=179s
+      segment_ids:
+        - 16tgKRqrb8A:00038
+        - 16tgKRqrb8A:00039
+        - 16tgKRqrb8A:00040
+        - 16tgKRqrb8A:00041
+  - id: 1HdDP2jYQyE-concept-body-rotation-through-the-stroke-codex-reviewed
+    evidence_type: explanation
+    excerpt: Even if you hit towards my center, I pivot sideways. This body movement must be maintained; I can feel it when I pull the ball.
+    reason: These contiguous segments directly explain using a sideways body pivot and maintaining that movement during the pull.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: 1HdDP2jYQyE
+      start_ms: 871566
+      end_ms: 888333
+      url: https://www.youtube.com/watch?v=1HdDP2jYQyE&t=871s
+      segment_ids:
+        - 1HdDP2jYQyE:00194
+        - 1HdDP2jYQyE:00195
+  - id: _f9fVMm2_Gs-cand-2-codex-reviewed
+    evidence_type: explanation
+    excerpt: Don't rotate fully to the side; instead, turn halfway between your right side and the front—about 50% rotation is ideal.
+    reason: These contiguous segments directly explain the required partial rotation and warn against turning fully sideways. The selected span is under 30 seconds and supports the existing body-rotation concept.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: _f9fVMm2_Gs
+      start_ms: 124800
+      end_ms: 138100
+      url: https://www.youtube.com/watch?v=_f9fVMm2_Gs&t=124s
+      segment_ids:
+        - _f9fVMm2_Gs:00021
+        - _f9fVMm2_Gs:00022
+  - id: gV-iuz4JnXc-concept-body-rotation-through-the-stroke-codex-reviewed
+    evidence_type: explanation
+    excerpt: Proper shoulder rotation engages the upper body and back muscles, producing more power than swinging only with the arm.
+    reason: This contiguous 22-second span directly explains that correct shoulder rotation engages the upper body and back muscles, while arm-only swinging is weak. It supports the existing body-rotation concept, but not the proposal’s claims about hip-first sequencing, forward drive, or rally-dependent rotation size.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: gV-iuz4JnXc
+      start_ms: 468300
+      end_ms: 496833
+      url: https://www.youtube.com/watch?v=gV-iuz4JnXc&t=468s
+      segment_ids:
+        - gV-iuz4JnXc:00099
+        - gV-iuz4JnXc:00100
+        - gV-iuz4JnXc:00101
+        - gV-iuz4JnXc:00102
+        - gV-iuz4JnXc:00103
+  - id: HHyaeCbQ_ec-concept-body-rotation-through-the-stroke-codex-reviewed
+    evidence_type: explanation
+    excerpt: Start the stroke with your body turned sideways, then rotate forward as you swing to finish facing forward.
+    reason: These contiguous segments directly describe body rotation through the stroke, matching the existing concept.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: HHyaeCbQ_ec
+      start_ms: 54100
+      end_ms: 69700
+      url: https://www.youtube.com/watch?v=HHyaeCbQ_ec&t=54s
+      segment_ids:
+        - HHyaeCbQ_ec:00014
+        - HHyaeCbQ_ec:00015
+        - HHyaeCbQ_ec:00016
+  - id: lpiuaVgCbK4-concept-body-rotation-through-the-stroke-codex-reviewed
+    evidence_type: explanation
+    excerpt: Rotate your body while bowing, step across while bowing, then pull the ball with an emphasized rotation; the body's rotation range is substantial.
+    reason: This contiguous 24.52-second span directly explains coordinating body rotation with bowing, stepping across, pulling the ball, and using a substantial rotation range. It matches the supplied existing concept.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: lpiuaVgCbK4
+      start_ms: 384480
+      end_ms: 409000
+      url: https://www.youtube.com/watch?v=lpiuaVgCbK4&t=384s
+      segment_ids:
+        - lpiuaVgCbK4:00053
+        - lpiuaVgCbK4:00054
+        - lpiuaVgCbK4:00055
+        - lpiuaVgCbK4:00056
+        - lpiuaVgCbK4:00057
+  - id: eIsYt1sCPRI-concept-body-rotation-through-the-stroke-codex-reviewed
+    evidence_type: explanation
+    excerpt: You must rotate your body, step in with your left foot, and then follow with your body weight. Without this body rotation, you won't get the timing right. The lack of body turn makes moving in ineffective; a preparatory turn syncs the arm with the left foot's movement.
+    reason: These contiguous segments directly explain that body rotation initiates the step-in, supports timing, and synchronizes arm and foot movement.
+    confidence: 0.99
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: eIsYt1sCPRI
+      start_ms: 372233
+      end_ms: 396266
+      url: https://www.youtube.com/watch?v=eIsYt1sCPRI&t=372s
+      segment_ids:
+        - eIsYt1sCPRI:00078
+        - eIsYt1sCPRI:00079
+        - eIsYt1sCPRI:00080
+        - eIsYt1sCPRI:00081
+        - eIsYt1sCPRI:00082

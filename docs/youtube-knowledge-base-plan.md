@@ -335,7 +335,7 @@ Illustrative invocation (the processor should use subprocess arguments/stdin rat
 Get-Content -Raw "$jobDir\prompt.md" | codex exec - `
   --cd $jobDir `
   --skip-git-repo-check `
-  --model gpt-5.4-mini `
+  --model gpt-5.6-luna `
   --sandbox read-only `
   --ephemeral `
   --output-schema "$jobDir\response.schema.json" `
@@ -362,24 +362,24 @@ MVP requirements:
 
 ### Cost-aware model policy
 
-Use `gpt-5.4-mini` with low reasoning as the MVP default. OpenAI describes it as its strongest mini model for coding, computer use, and subagents, designed for faster, high-volume workloads. This is a better starting point than a frontier model for repeated transcript batches, while retaining more capability than a nano model for ambiguous concepts, aliases, and relationships ([official model page](https://developers.openai.com/api/docs/models/gpt-5.4-mini)).
+Use `gpt-5.6-luna` with low reasoning as the current CLI default and explicit retry profile. OpenAI lists it as optimized for cost-sensitive workloads at $0.20 per million input tokens and $1.20 per million output tokens. Do not fall back to a more expensive model for this pipeline.
 
 Make the policy explicit in `config/processors.yaml`, for example:
 
 ```yaml
 codex:
-  default_model: gpt-5.4-mini
+  default_model: gpt-5.6-luna
   reasoning_effort: low
-  escalation_model: gpt-5.4
+  escalation_model: gpt-5.6-luna
   escalation_reasoning_effort: low
   allow_automatic_escalation: false
 ```
 
 The processor passes the default model explicitly with `--model` rather than silently inheriting a changing personal default. Apply the reasoning setting through a tested Codex profile/config override, record it in the manifest, and fail clearly if the configured model is unavailable to the signed-in account.
 
-Do not automatically send every job to the stronger model. A job becomes an escalation candidate only when deterministic validation fails repeatedly, the model marks it ambiguous/low-confidence, competing candidates cannot be resolved, or the citation check disagrees with the extraction. For the MVP, place these jobs in the human review queue and require an explicit `--retry-escalated` command. This keeps cost predictable and prevents a model from escalating its own workload silently.
+Do not automatically retry every job. A job becomes a retry candidate only when deterministic validation fails repeatedly, the model marks it ambiguous/low-confidence, competing candidates cannot be resolved, or the citation check disagrees with the extraction. For the MVP, place these jobs in the human review queue and require an explicit `--retry-escalated` command. Retries remain on Luna at low reasoning so cost stays predictable.
 
-Treat `gpt-5.4-nano` as an evaluation candidate only for narrow operations such as evidence-type classification or ranking after concepts are already resolved. Do not use it for primary concept extraction until the golden corpus shows acceptable precision/recall and citation accuracy. Use `gpt-5.4` only for selected difficult jobs; a larger frontier model is unnecessary as the default.
+Use only model IDs present in the installed CLI catalog. Keep the lowest-cost supported model as the primary extraction default and reserve the stronger configured model for selected difficult jobs; a larger frontier model is unnecessary as the default.
 
 Before processing the pilot corpus, benchmark at least 20 representative chunks with the mini model and review:
 
@@ -414,7 +414,7 @@ Use several focused calls rather than one large “understand this channel” re
 
 1. Extract candidates and evidence from overlapping per-video chunks.
 2. Consolidate duplicate candidates within each video.
-3. Resolve candidates against the current concept catalog in bounded batches.
+3. Resolve candidates against the current concept catalog in small batches.
 4. Propose cross-video definitions, relationships, conflicts, and representative moments.
 5. Run a citation/entailment check with a separate prompt or model pass.
 
@@ -569,7 +569,7 @@ Exit: one command reproducibly creates valid normalized data for the seed set.
 
 - Implement the read-only `codex exec` runner and schema-constrained recipes for concept proposal, evidence classification, resolution, relationships, representative-moment ranking, and citation checking.
 - Add preflight, subprocess safety, response validation, caching, resumable jobs, failure reporting, and Codex provenance.
-- Benchmark `gpt-5.4-mini` at low reasoning on the golden pilot sample; keep escalation manual and verify the quality gates before running the full corpus.
+- Benchmark `gpt-5.6-luna` at low reasoning on the golden pilot sample; keep escalation manual and verify the quality gates before running the full corpus.
 - Add the file-based review queue, reviewed concept/annotation overlays, publish allowlist, provenance, and QA report.
 - Review a small pilot set, including manual adjustment of visual-demonstration windows.
 
@@ -633,11 +633,11 @@ Exit: the public Pages URL works from a clean build; approved concepts are brows
 
 1. Transcript visibility: full transcripts, short indexed excerpts, or local-only full text?
 2. Repository visibility: GitHub Pages is free for a public repository on GitHub Free; is public source/data acceptable?
-3. Escalation threshold: which validation/quality failures justify an explicit retry with `gpt-5.4`?
+3. Retry threshold: which validation/quality failures justify an explicit retry with the same `gpt-5.6-luna` low-reasoning profile?
 4. Languages: source-language only for MVP, or English translation as a first-class derived artifact?
 5. Editorial model: maintainer-reviewed publishing, or publish unreviewed output with prominent labels?
 
-Recommended defaults: public repository; no media files in Git or Pages; short excerpts on public pages; full raw transcripts retained locally until policy review; local/manual Codex CLI extraction using `gpt-5.4-mini` with low reasoning, read-only sandboxing, manual escalation, and a deterministic test engine; English UI with source-language evidence for the MVP and translation deferred; and maintainer review for concepts, relations, and claims while publishable transcript excerpts remain clearly labeled by source/type.
+Recommended defaults: public repository; no media files in Git or Pages; short excerpts on public pages; full raw transcripts retained locally until policy review; local/manual Codex CLI extraction using `gpt-5.6-luna` with low reasoning, read-only sandboxing, manual escalation, and a deterministic test engine; English UI with source-language evidence for the MVP and translation deferred; and maintainer review for concepts, relations, and claims while publishable transcript excerpts remain clearly labeled by source/type.
 
 Future offline-phase decisions (not blockers for version 1): archive retention policy, codec/compatibility target, storage location, backup strategy, rights/authorization rules, and whether the first offline release ships the CLI and Offline Manager together or stages the UI immediately afterward.
 
@@ -652,7 +652,7 @@ Future offline-phase decisions (not blockers for version 1): archive retention p
 - Summaries and structured knowledge expose exact source moments and generation/review status.
 - LLM extraction is schema-constrained, cached, reproducible, and unable to publish a concept or relation without valid supporting segment IDs.
 - The MVP extraction command preflights Codex, invokes `codex exec` in read-only mode, handles failures safely, and records CLI/model/prompt/schema provenance.
-- The default extraction model is the golden-set-approved low-cost model (`gpt-5.4-mini` initially); stronger-model retries are explicit, traceable, and limited to flagged jobs.
+- The default extraction model is the golden-set-approved low-cost model (`gpt-5.6-luna` currently); stronger-model retries are explicit, traceable, and limited to flagged jobs.
 - Failures, absent captions, uncertain identities, source languages, and machine-generated text are explicit.
 - Human annotations survive regeneration.
 - Policy, attribution, correction/removal, limitations, and data provenance are visible on the site.

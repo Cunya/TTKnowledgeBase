@@ -1,0 +1,46 @@
+id: concept-match-stroke-path-to-incoming-trajectory
+slug: match-stroke-path-to-incoming-trajectory
+label: Match stroke path to incoming trajectory
+aliases: []
+short_definition: Match the stroke path to the incoming ball’s trajectory, particularly when sidespin kicks the ball sideways, to make the loop easier to execute.
+evidence_summary: >-
+  Match the stroke path to the incoming ball’s trajectory, particularly when sidespin kicks the
+  ball sideways, to make the loop easier to execute.
+evidence_summary_source_hash: "sha256:418bba5854bc08130949ec369bead9c0e4a5ee022f647c040b134791ddb8d1a2"
+evidence_summary_generator: "deterministic"
+concept_type: fundamentals
+facets:
+  category:
+    - fundamentals
+    - stroke
+  spin:
+    - sidespin
+  level:
+    - beginner
+difficulty:
+review_status: approved
+generated_by:
+  processor: codex_semantic_adjudication
+  version: 1.0.0
+  input_hash: sha256:93adcb72fe7d2ea9630f6b393135f6c78f6be6d1bbe3a65d777d9700fadb6504
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
+evidence:
+  - id: ihrv3kBFb-U-concept-stroke-path-matches-incoming-trajectory-codex-reviewed
+    evidence_type: explanation
+    excerpt: Match your stroke path to the incoming trajectory; when left sidespin kicks sideways, following that same trajectory makes the shot easier.
+    reason: These contiguous segments explicitly introduce matching the stroke path to the incoming trajectory, explain the sideways effect of left sidespin, and state that following the same trajectory makes the shot easier. No supplied concept expresses this same durable technique.
+    confidence: 0.98
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: ihrv3kBFb-U
+      start_ms: 577100
+      end_ms: 592533
+      url: https://www.youtube.com/watch?v=ihrv3kBFb-U&t=577s
+      segment_ids:
+        - ihrv3kBFb-U:00121
+        - ihrv3kBFb-U:00122
+        - ihrv3kBFb-U:00123

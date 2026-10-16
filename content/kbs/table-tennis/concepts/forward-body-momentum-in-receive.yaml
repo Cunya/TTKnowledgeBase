@@ -2,62 +2,71 @@ id: concept-forward-body-momentum-in-receive
 slug: forward-body-momentum-in-receive
 label: Forward body momentum in receive
 aliases:
-  - body's momentum must be forward
-  - center of gravity is directed forward
-short_definition: In pushing or flicking, keep the body traveling forward rather than drifting backward or staying passive.
+- body's momentum must be forward
+- center of gravity is directed forward
+short_definition: When pushing or flicking, keep your body momentum and center of gravity directed forward as you step in.
 evidence_summary: >-
-  Forward body momentum in receive brings together several connected ideas. Momentum must be
-  forward and poor weight shift leaves the forehand open for attack. To lean forward, avoid
-  leaning back, and distribute weight dynamically forward during receive. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:d0a36d8c4d4e34855648fb86db3ef0113fa5cc6b0439b55f0a23b53b438b6f28"
-evidence_summary_generator: "deterministic"
+  When pushing or flicking, direct your body momentum forward as you step in. Shifting your weight incorrectly when pushing can leave your forehand open to attack.
 concept_type: fundamentals
 facets:
   category:
-    - fundamentals
-  side:
-    - neutral
-  level:
-    - beginner
-difficulty: beginner
+  - fundamentals
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: f919cda5b12c393c316973cb7d8ab5c103e781ce284becb6aa9414e83d417e88
-  prompt_version: candidate-review-v1
+  input_hash: sha256:1b91745f7f3836b26e1ea4a5330497f8cdc214e3c45fe61fa9eed27585bb0029
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: 2LkVpDM69vo-concept-forward-body-momentum-in-receive-reviewed
-    evidence_type: explanation
-    excerpt: In pushing or flicking, keep the body traveling forward rather than drifting backward or staying passive.
-    reason: The speaker says momentum must be forward and warns that poor weight shift leaves the forehand open for attack.
-    confidence: 0.92
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 2LkVpDM69vo
-      start_ms: 165866
-      end_ms: 184166
-      url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=165s
-      segment_ids:
-        - 2LkVpDM69vo:00032
-        - 2LkVpDM69vo:00033
-        - 2LkVpDM69vo:00034
-  - id: _77LMM6s1cw-concept-forward-body-momentum-in-receive-reviewed
-    evidence_type: explanation
-    excerpt: Keeping receiving momentum moving forward rather than leaning back or staying planted.
-    reason: The transcript repeatedly says to lean forward, avoid leaning back, and distribute weight dynamically forward during receive.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: _77LMM6s1cw
-      start_ms: 377433
-      end_ms: 406433
-      url: https://www.youtube.com/watch?v=_77LMM6s1cw&t=377s
-      segment_ids:
-        - _77LMM6s1cw:00042
-        - _77LMM6s1cw:00043
-        - _77LMM6s1cw:00044
+- id: 2LkVpDM69vo-concept-forward-body-momentum-in-receive-reviewed
+  evidence_type: explanation
+  excerpt: In pushing or flicking, keep the body traveling forward rather than drifting backward or staying passive.
+  reason: The speaker says momentum must be forward and warns that poor weight shift leaves the forehand open for attack.
+  confidence: 0.92
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 2LkVpDM69vo
+    start_ms: 165866
+    end_ms: 184166
+    url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=165s
+    segment_ids:
+    - 2LkVpDM69vo:00032
+    - 2LkVpDM69vo:00033
+    - 2LkVpDM69vo:00034
+- id: _77LMM6s1cw-concept-forward-body-momentum-in-receive-reviewed
+  evidence_type: explanation
+  excerpt: Keeping receiving momentum moving forward rather than leaning back or staying planted.
+  reason: The transcript repeatedly says to lean forward, avoid leaning back, and distribute weight dynamically forward during receive.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: _77LMM6s1cw
+    start_ms: 377433
+    end_ms: 406433
+    url: https://www.youtube.com/watch?v=_77LMM6s1cw&t=377s
+    segment_ids:
+    - _77LMM6s1cw:00042
+    - _77LMM6s1cw:00043
+    - _77LMM6s1cw:00044
+- id: 2LkVpDM69vo-concept-forward-body-momentum-in-receive-codex-reviewed
+  evidence_type: explanation
+  excerpt: When pushing or flicking, your body's momentum must be forward. Incorrect weight shifting can leave the forehand open for attack, so direct your center of gravity forward when stepping in.
+  reason: Direct your body momentum forward when pushing or flicking, and shift your weight forward as you step in. Incorrect weight shifting while pushing can leave your forehand open to attack.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: 2LkVpDM69vo
+    start_ms: 165866
+    end_ms: 184166
+    url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=165s
+    segment_ids:
+    - 2LkVpDM69vo:00032
+    - 2LkVpDM69vo:00033
+    - 2LkVpDM69vo:00034

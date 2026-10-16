@@ -7,13 +7,9 @@ aliases:
   - keep it lower than the forearm
 short_definition: In forehand looping, the wrist should be relaxed, slightly bent, and kept lower than the forearm rather than lifted or rigid.
 evidence_summary: >-
-  Wrist position for forehand loop brings together several connected ideas. Relaxing the wrist,
-  keeping it lower than the forearm, and avoiding a parallel or lifted wrist because that becomes
-  stiff or rigid. Out a relaxed wrist, racket position before preparation, and specifies the wrist
-  should be lower than the forearm. A relaxed wrist, slight adjustment, and the wrist being lower
-  than the forearm for better rotation and flexibility. Together, these principles show how the
-  topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:66f5a163ee6a62fc6ae71b7a0aeee65d103f84359f41ddcd31ceb82113a7c068"
+  In forehand looping, the wrist should be relaxed, slightly bent, and kept lower than the forearm
+  rather than lifted or rigid.
+evidence_summary_source_hash: "sha256:a791da3c7c1dc5ca11bb71cd267e4b0491c25d7d0a3b8ff331fd6479bef6968b"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -26,10 +22,13 @@ facets:
 difficulty: beginner
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 94185502d7279441ba216b5270c41247d6653f03e6b8c46a03a4644e97252b88
-  prompt_version: candidate-review-v1
+  input_hash: sha256:ed675c6f24399f1def8fd334e4421908ee0061a01e3dc1e4245fa1237fe09c7d
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: ezYtiHlBxeI-concept-wrist-position-for-forehand-loop-reviewed
     evidence_type: explanation
@@ -37,7 +36,7 @@ evidence:
     reason: The transcript recommends relaxing the wrist, keeping it lower than the forearm, and avoiding a parallel or lifted wrist because that becomes stiff or rigid.
     confidence: 0.91
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: ezYtiHlBxeI
       start_ms: 84400
@@ -54,7 +53,7 @@ evidence:
     reason: The speaker points out a relaxed wrist, racket position before preparation, and specifies the wrist should be lower than the forearm.
     confidence: 0.96
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: otQ5B7u8Q2I
       start_ms: 466800
@@ -68,6 +67,25 @@ evidence:
     excerpt: For the stroke, the wrist should remain relaxed and positioned below the forearm to preserve flexibility and allow rotation.
     reason: The speaker repeatedly emphasizes a relaxed wrist, slight adjustment, and the wrist being lower than the forearm for better rotation and flexibility.
     confidence: 0.93
+    visual_status: transcript_inferred
+    review_status: unreviewed
+    source:
+      video_id: MIpLW4erUk4
+      start_ms: 149333
+      end_ms: 163166
+      url: https://www.youtube.com/watch?v=MIpLW4erUk4&t=149s
+      segment_ids:
+        - MIpLW4erUk4:00067
+        - MIpLW4erUk4:00068
+        - MIpLW4erUk4:00069
+        - MIpLW4erUk4:00070
+        - MIpLW4erUk4:00071
+        - MIpLW4erUk4:00072
+  - id: MIpLW4erUk4-concept-wrist-position-for-forehand-loop-codex-reviewed
+    evidence_type: explanation
+    excerpt: The wrist must be relaxed and lower than the forearm; this allows better rotation and maintains flexibility.
+    reason: This contiguous 13.8-second span directly explains the required relaxed wrist position and its benefits. It matches the supplied existing concept.
+    confidence: 0.99
     visual_status: transcript_inferred
     review_status: approved
     source:

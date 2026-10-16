@@ -6,11 +6,9 @@ aliases:
   - move parallel to the table
 short_definition: Serve-receive footwork changes depending on whether the sidespin curves toward or away from the player and whether the serve is short or long.
 evidence_summary: >-
-  Footwork depends on sidespin direction brings together several connected ideas. Describes
-  different footwork for right-sidespin depending on length and curve direction. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:40195936faacfdd5542817870e06dc9eee08ce25a10b0045df9cad40bd271146"
+  Serve-receive footwork changes depending on whether the sidespin curves toward or away from the
+  player and whether the serve is short or long.
+evidence_summary_source_hash: "sha256:7b47a7f17dc749c69fb7f8d30743aac2f88638e806d1852b6e8ee5a8e6c4f119"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -21,10 +19,13 @@ facets:
 difficulty: intermediate
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 10f2b9c92bff6ebc894d427f26376aa8fbdea15bab1d2365874310ad963fdd32
-  prompt_version: candidate-review-v1
+  input_hash: sha256:335a5f46816ee3c54445b6adfedc5e284cca1d260664b98cb9c2330b0a3f236f
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: McwvbLZZQmA-concept-footwork-depends-on-sidespin-direction-reviewed
     evidence_type: explanation
@@ -32,7 +33,7 @@ evidence:
     reason: Describes different footwork for right-sidespin depending on length and curve direction.
     confidence: 0.93
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: McwvbLZZQmA
       start_ms: 310466
@@ -43,3 +44,22 @@ evidence:
         - McwvbLZZQmA:00075
         - McwvbLZZQmA:00076
         - McwvbLZZQmA:00077
+  - id: McwvbLZZQmA-concept-footwork-depends-on-sidespin-direction-codex-reviewed
+    evidence_type: explanation
+    excerpt: Your right foot must step in for a half-long or short right-sidespin serve; for a long serve, move laterally or parallel to the table rather than standing still and reaching.
+    reason: This contiguous 29.3-second span directly explains how receive footwork changes with the length of a right-sidespin serve.
+    confidence: 0.98
+    visual_status: not_visual
+    review_status: approved
+    source:
+      video_id: McwvbLZZQmA
+      start_ms: 322600
+      end_ms: 351866
+      url: https://www.youtube.com/watch?v=McwvbLZZQmA&t=322s
+      segment_ids:
+        - McwvbLZZQmA:00075
+        - McwvbLZZQmA:00076
+        - McwvbLZZQmA:00077
+        - McwvbLZZQmA:00078
+        - McwvbLZZQmA:00079
+        - McwvbLZZQmA:00080

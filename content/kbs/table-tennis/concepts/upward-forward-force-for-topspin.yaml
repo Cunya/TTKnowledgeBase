@@ -7,16 +7,9 @@ aliases:
   - moving forward and upward
 short_definition: Generating topspin by directing force upward while also moving the racket forward, rather than only forward or downward.
 evidence_summary: >-
-  Upward-forward force for topspin brings together several connected ideas. Topspin requires
-  upward force, warns that forward-only or downward force will not work, and the racket must move
-  forward and upward at contact. By saying to focus on rotating the racket head to lift spin, then
-  explains that the rotation creates the friction needed to lift heavy spin and that a fixed
-  racket angle fails. The shot as upward first, then forward, including the ramp analogy and the
-  70% upward / 30% forward guidance on heavy spin. Forward alone cannot lift heavy spin and that
-  the correct solution is forward and upward force. Players to press the foot down, lift the heel,
-  pivot, and rotate the foot tip so power can move forward. Together, these principles show how
-  the topic is applied in practice while preserving the relevant distinctions and constraints.
-evidence_summary_source_hash: "sha256:da88a4c82790c57172f618a1398e8235b52f8fd0e538c8c571415c3342014eb1"
+  Generating topspin by directing force upward while also moving the racket forward, rather than
+  only forward or downward.
+evidence_summary_source_hash: "sha256:1c2bd6842ab13fd40823b897821db1c658cb2d2f42ad58706335684ec3cdb299"
 evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
@@ -28,10 +21,13 @@ facets:
 difficulty: beginner
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 7a22471fb374a508b6116a3c8d7e881894842b4dbf97033c8fb2ebaac2edb7f6
-  prompt_version: candidate-review-v1
+  input_hash: sha256:94d64d7a7421ea44a422802f9c341ca1be35f270c08e03c98c9c3f675a0a4cb5
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
   - id: phKJvL-8VbQ-concept-upward-forward-force-for-topspin-reviewed
     evidence_type: definition
@@ -39,7 +35,7 @@ evidence:
     reason: The speaker says topspin requires upward force, warns that forward-only or downward force will not work, and states the racket must move forward and upward at contact.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: phKJvL-8VbQ
       start_ms: 93966
@@ -56,7 +52,7 @@ evidence:
     reason: The speaker opens by saying to focus on rotating the racket head to lift spin, then explains that the rotation creates the friction needed to lift heavy spin and that a fixed racket angle fails.
     confidence: 0.97
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: VGXheTB1akM
       start_ms: 526500
@@ -72,7 +68,7 @@ evidence:
     reason: The speaker repeatedly frames the shot as upward first, then forward, including the ramp analogy and the 70% upward / 30% forward guidance on heavy spin.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: _f9fVMm2_Gs
       start_ms: 531133
@@ -89,7 +85,7 @@ evidence:
     reason: The speaker explains that forward alone cannot lift heavy spin and that the correct solution is forward and upward force.
     confidence: 0.95
     visual_status: not_visual
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: CCb9qkkVxNQ
       start_ms: 193320
@@ -106,7 +102,7 @@ evidence:
     reason: The speaker instructs players to press the foot down, lift the heel, pivot, and rotate the foot tip so power can move forward.
     confidence: 0.98
     visual_status: transcript_inferred
-    review_status: approved
+    review_status: unreviewed
     source:
       video_id: SmYaJcYqaqo
       start_ms: 339433
@@ -115,3 +111,19 @@ evidence:
       segment_ids:
         - SmYaJcYqaqo:00037
         - SmYaJcYqaqo:00040
+  - id: _f9fVMm2_Gs-cand-7-codex-reviewed
+    evidence_type: definition
+    excerpt: For a difficult or heavily spinning ball, make the upward brush about 70% of the shot and the forward drive 30% to produce a safe, high-arc loop.
+    reason: These contiguous segments directly state that difficult or heavily spinning balls should be handled with predominantly upward brushing followed by forward drive, producing a safe high-arc loop. The span is under 30 seconds and matches the supplied existing concept.
+    confidence: 0.99
+    visual_status: transcript_inferred
+    review_status: approved
+    source:
+      video_id: _f9fVMm2_Gs
+      start_ms: 366233
+      end_ms: 386600
+      url: https://www.youtube.com/watch?v=_f9fVMm2_Gs&t=366s
+      segment_ids:
+        - _f9fVMm2_Gs:00058
+        - _f9fVMm2_Gs:00059
+        - _f9fVMm2_Gs:00060

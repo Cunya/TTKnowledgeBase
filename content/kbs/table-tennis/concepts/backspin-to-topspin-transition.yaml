@@ -2,42 +2,55 @@ id: concept-backspin-to-topspin-transition
 slug: backspin-to-topspin-transition
 label: Backspin-to-topspin transition
 aliases:
-  - backspin-to-topspin transition
-  - transition game
-short_definition: The shot sequence after looping a backspin ball, especially the next ball that comes back with topspin and requires adjusted backswing and racket angle.
+- backspin-to-topspin transition
+short_definition: After looping a backspin, the second ball commonly goes long. Pay attention to your backswing; the ball coming back will be topspin unless your opponent uses long pips.
 evidence_summary: >-
-  Backspin-to-topspin transition brings together several connected ideas. The lesson around the
-  backspin-to-topspin transition and the next shot after looping a backspin ball. Together, these
-  principles show how the topic is applied in practice while preserving the relevant distinctions
-  and constraints.
-evidence_summary_source_hash: "sha256:16ac811b3c2f0ce6abc13915fc7685402605d5aee3fed3e6ec6ca4d8db11df66"
-evidence_summary_generator: "deterministic"
+  After looping a backspin, pay attention to your backswing. The second ball commonly goes long, and the ball coming back will be topspin unless the opponent uses long pips.
 concept_type: stroke
 facets:
   category:
-    - stroke
-  level:
-    - intermediate
-difficulty: intermediate
+  - stroke
+difficulty:
 review_status: approved
 generated_by:
-  processor: automatic_candidate_review
+  processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: 35a8c20ce0de36d5aac01feb4d5b5220cb00121b9a4bf896dbd44ec93cb468ec
-  prompt_version: candidate-review-v1
+  input_hash: sha256:854025ccaf3aa83f841215eb14afec9ce7e927eeed37c41bbebaa9a977175d61
+  model: gpt-5.6-luna
+  reasoning_effort: low
+  prompt_version: 1.0.0
+  schema_version: 1.0.0
 evidence:
-  - id: geGebDni2TU-concept-backspin-to-topspin-transition-reviewed
-    evidence_type: definition
-    excerpt: The shot sequence after looping a backspin ball, especially the next ball that comes back with topspin and requires adjusted backswing and racket angle.
-    reason: The speaker explicitly frames the lesson around the backspin-to-topspin transition and the next shot after looping a backspin ball.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: geGebDni2TU
-      start_ms: 0
-      end_ms: 9433
-      url: https://www.youtube.com/watch?v=geGebDni2TU&t=0s
-      segment_ids:
-        - geGebDni2TU:00000
-        - geGebDni2TU:00001
+- id: geGebDni2TU-concept-backspin-to-topspin-transition-reviewed
+  evidence_type: definition
+  excerpt: The shot sequence after looping a backspin ball, especially the next ball that comes back with topspin and requires adjusted backswing and racket angle.
+  reason: The speaker explicitly frames the lesson around the backspin-to-topspin transition and the next shot after looping a backspin ball.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: geGebDni2TU
+    start_ms: 0
+    end_ms: 9433
+    url: https://www.youtube.com/watch?v=geGebDni2TU&t=0s
+    segment_ids:
+    - geGebDni2TU:00000
+    - geGebDni2TU:00001
+- id: geGebDni2TU-concept-backspin-to-topspin-transition-codex-reviewed
+  evidence_type: explanation
+  excerpt: After looping a backspin, it's very common for the second ball to go long. The ball coming back will be topspin unless your opponent is using long pips.
+  reason: After looping a backspin, pay attention to your backswing. It's very common for the second ball to go long, and the ball coming back will be topspin unless your opponent is using long pips.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: geGebDni2TU
+    start_ms: 0
+    end_ms: 23233
+    url: https://www.youtube.com/watch?v=geGebDni2TU&t=0s
+    segment_ids:
+    - geGebDni2TU:00000
+    - geGebDni2TU:00001
+    - geGebDni2TU:00002
+    - geGebDni2TU:00003
+    - geGebDni2TU:00004
