@@ -2,35 +2,11 @@
 
 ## Current progress and status
 
-Updated: 2026-10-21 19:45 EEST (Europe/Helsinki).
+Updated:2026-10-21 20h EEST. **In progress; full audit incomplete.**
 
-**Status: blocked by the five-hour quota guard; the full audit is not complete.** Normal video processing remains paused. No audit job is running.
+Current released checkpoint (2026-10-21 20h): **367/380 articles supported**; **13 remain** (10 pending,3 classified footage). Units:3582/4191 supported,600 pending,9 classified needs_footage. All35 actual proposed visual windows remain unverified. Zero structural/source-metadata findings;6overlap reviews remain. Control before power retained all33records,18actual citation completions and localconditions. Five full Luna/high calls plus two targeted calls passed40units,retaining36unchanged positive proofs. Source-primary review and guarded application passed. Fullrelease passed332tests(108.93s),Ruff,monitorchecks,validators and zero-diagnostic638pageAstrobuild. Exact40unit publicparity,1817article/1806TOCprose,380controls,67fresh toggles and25relationsbothdirections passed. Browser verification unavailable because local browser use is disabled in Work settings. Normal processing remains paused; nofootageapproval. See [control repair receipt](editorial-control-before-power-2026-10-21-20.md).
 
-| Measure | Current state |
-|---|---|
-| Articles supported | **365 / 380** (96.1%) |
-| Articles remaining | **15**: 12 pending, 3 classified as needing footage |
-| Review units supported | **3,505 / 4,193** |
-| Other review units | 679 pending; 9 classified `needs_footage` |
-| Unverified proposed visual windows | **35**: 9 classified, 26 in pending articles |
-| Structural / source-metadata findings | 0 / 0 |
-| Overlap reviews remaining | 5 |
-| Model and effort | GPT-6 Luna / high; finite CLI jobs |
-| Account usage | **88% five-hour / 42% weekly** |
-
-The quota guard stops new calls at 80% five-hour usage, except during the last ten minutes before reset; the weekly threshold is 95%. The current grace period begins **22:08:58 Helsinki**, and the five-hour window resets at **22:18:58 on 21 October**. Recheck live usage before resuming.
-
-### Latest completed work
-
-- **Short-ball receive decisions:** all 28 records retained; 23 bounded citation completions and record-specific wording fixes. All 35 current units passed independent Luna/high verification and primary source review. The full release gate passed 332 tests, Ruff, monitor tests, published validation and a zero-diagnostic Astro build (638 pages).
-- **Relation direction display:** parent pages now show “has part” for incoming child links. All 380 rendered related sections and all 25 current relations passed checks at both endpoints; the representative browser route passed.
-- **Ready position:** private proposal has **36 / 38 units supported**. Two placement findings remain; no Ready position repair has been applied. A whole-corpus preflight preserves all 31 instructions across proposed origin/destination records.
-
-### Next action
-
-When quota permits, run the **two prepared Luna/high destination checks** for the Ready position placement proposal, then complete exact primary/retention review and guarded installation. Preserve the valid instructions before changing their article associations. Continue every remaining article and complete actual footage review; no proposed visual window is approved by transcript review alone.
-
-Saved private continuation: `media/audit-source-completion-checkpoint-2026-10-17-12.json`. Prepared worker: `media/audit-ready-retention-verify-2026-10-21-18.py`. Release evidence: `media/audit-short-receive-release-2026-10-21-18.log`. See the [editorial receipt](editorial-short-receive-2026-10-21-18.md), [18h session](Session%20Logs/2026-10-21-18.md), and [consolidated backlog](prioritized-backlog-2026-07-15.md).
+Next: continue every article in the saved13-item queue with GPT-6 Luna/high finite CLI jobs. Recheck quota before calls; retain80%five-hour/95%weekly guards and the existing last-ten-minute five-hour grace. Actual complete visual inspection remains required for all35 windows.
 
 ## Earlier checkpoints — historical
 
@@ -442,3 +418,60 @@ Private machine-check progress (proposals, not approvals): {'machine_job_status'
 | concept-wrist-position-for-forehand-loop | 7/7 | 0 | False |
 
 Completion means recorded coverage of unchanged inputs, not an infallible accuracy guarantee.
+
+## Previous 19h status — historical
+
+## Current progress and status
+
+Updated: 2026-10-21 19:45 EEST (Europe/Helsinki).
+
+**Status: blocked by the five-hour quota guard; the full audit is not complete.** Normal video processing remains paused. No audit job is running.
+
+| Measure | Current state |
+|---|---|
+| Articles supported | **365 / 380** (96.1%) |
+| Articles remaining | **15**: 12 pending, 3 classified as needing footage |
+| Review units supported | **3,505 / 4,193** |
+| Other review units | 679 pending; 9 classified `needs_footage` |
+| Unverified proposed visual windows | **35**: 9 classified, 26 in pending articles |
+| Structural / source-metadata findings | 0 / 0 |
+| Overlap reviews remaining | 5 |
+| Model and effort | GPT-6 Luna / high; finite CLI jobs |
+| Account usage | **88% five-hour / 42% weekly** |
+
+The quota guard stops new calls at 80% five-hour usage, except during the last ten minutes before reset; the weekly threshold is 95%. The current grace period begins **22:08:58 Helsinki**, and the five-hour window resets at **22:18:58 on 21 October**. Recheck live usage before resuming.
+
+### Latest completed work
+
+- **Short-ball receive decisions:** all 28 records retained; 23 bounded citation completions and record-specific wording fixes. All 35 current units passed independent Luna/high verification and primary source review. The full release gate passed 332 tests, Ruff, monitor tests, published validation and a zero-diagnostic Astro build (638 pages).
+- **Relation direction display:** parent pages now show “has part” for incoming child links. All 380 rendered related sections and all 25 current relations passed checks at both endpoints; the representative browser route passed.
+- **Ready position:** private proposal has **36 / 38 units supported**. Two placement findings remain; no Ready position repair has been applied. A whole-corpus preflight preserves all 31 instructions across proposed origin/destination records.
+
+### Next action
+
+When quota permits, run the **two prepared Luna/high destination checks** for the Ready position placement proposal, then complete exact primary/retention review and guarded installation. Preserve the valid instructions before changing their article associations. Continue every remaining article and complete actual footage review; no proposed visual window is approved by transcript review alone.
+
+Saved private continuation: `media/audit-source-completion-checkpoint-2026-10-17-12.json`. Prepared worker: `media/audit-ready-retention-verify-2026-10-21-18.py`. Release evidence: `media/audit-short-receive-release-2026-10-21-18.log`. See the [editorial receipt](editorial-short-receive-2026-10-21-18.md), [18h session](Session%20Logs/2026-10-21-18.md), and [consolidated backlog](prioritized-backlog-2026-07-15.md).
+
+
+## Previous Ready release checkpoint — historical
+
+## Current progress and status
+
+Updated: 2026-10-21 20h EEST.
+
+**In progress; full audit incomplete.** Normal processing remains paused.
+
+| Measure | Current state |
+|---|---|
+| Articles supported | **366/380** |
+| Articles remaining | **14**:11pending,3classifiedfootage |
+| Units supported | **3542/4192** |
+| Other units |641pending,9classifiedneeds_footage |
+| Unverified visual windows |**35**:9classified+26pending |
+| Structural/source findings |0/0 |
+| Overlap reviews |5 |
+
+2026-10-21 20h released checkpoint:366/380articles supported;11pending+3classifiedfootage=14remaining.3542/4192units supported,641pending,9classifiedneeds_footage;all35actualvisualwindows unverified. Zero structural/source-metadatafindings,fiveoverlapreviews. Ready position source repair retained29approvedexamples and preserved both moved instructions in reviewed destinations; originalrecords remain archived in YAML,unrelatedunreviewed/demo records preserved. Whole15unitBodyrotation check plus36unchangedReadyproofs andexactprimary review passed. Fullrelease4328terminal0:332tests116.65s,Ruff,monitorchecks,validators,zeroAstro638pages. Exact77record public parity,1817article/1807TOCprose,380controls,67fresh toggles and25relationsbothdirections passed. Normalprocessingpaused,nofootageapproval. Evidence:[retention receipt](editorial-ready-retention-2026-10-21-20.md).
+
+Next: continue the saved14article queue using GPT-6 Luna/high finite CLI jobs and fresh80%five-hour/95%weekly quota guards. The earlier account-quota hold cleared externally; no reset credits or agent account change was used. The two Ready placement checks and guarded installation are completed. All footage still requires complete actual clip review.

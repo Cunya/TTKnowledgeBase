@@ -1,5 +1,9 @@
 # Source video progress
 
+Current released checkpoint (2026-10-21 20h): **367/380 articles supported**; **13 remain** (10 pending,3 classified footage). Units:3582/4191 supported,600 pending,9 classified needs_footage. All35 actual proposed visual windows remain unverified. Zero structural/source-metadata findings;6overlap reviews remain. Control before power retained all33records,18actual citation completions and localconditions. Five full Luna/high calls plus two targeted calls passed40units,retaining36unchanged positive proofs. Source-primary review and guarded application passed. Fullrelease passed332tests(108.93s),Ruff,monitorchecks,validators and zero-diagnostic638pageAstrobuild. Exact40unit publicparity,1817article/1806TOCprose,380controls,67fresh toggles and25relationsbothdirections passed. Browser verification unavailable because local browser use is disabled in Work settings. Normal processing remains paused; nofootageapproval. See [control repair receipt](editorial-control-before-power-2026-10-21-20.md).
+
+2026-10-21 20h released checkpoint:366/380articles supported;11pending+3classifiedfootage=14remaining.3542/4192units supported,641pending,9classifiedneeds_footage;all35actualvisualwindows unverified. Zero structural/source-metadatafindings,fiveoverlapreviews. Ready position source repair retained29approvedexamples and preserved both moved instructions in reviewed destinations; originalrecords remain archived in YAML,unrelatedunreviewed/demo records preserved. Whole15unitBodyrotation check plus36unchangedReadyproofs andexactprimary review passed. Fullrelease4328terminal0:332tests116.65s,Ruff,monitorchecks,validators,zeroAstro638pages. Exact77record public parity,1817article/1807TOCprose,380controls,67fresh toggles and25relationsbothdirections passed. Normalprocessingpaused,nofootageapproval. Evidence:[retention receipt](editorial-ready-retention-2026-10-21-20.md).
+
 Automatic batches rotate fairly across every source with eligible work instead of exhausting one source at a time. Operator reporting distinguishes fully processed videos from videos awaiting Codex adjudication; optional human advice is not a completion state.
 
 Last updated: 2026-10-21 19:45 EEST
@@ -9,7 +13,7 @@ not maintained here: run `python -m processors.cli publish --kb table-tennis` an
 `app/src/data/generated/table-tennis-progress.json` (or the local `/progress/` page). The processor regenerates that
 snapshot from local artifacts; neither the LLM nor a page edit should update totals by hand.
 
-## Current audit status
+## Earlier 19h audit status — historical
 
 As of 2026-10-21 19:45 EEST, the full published-corpus audit has **365/380 articles supported**, with **15 articles** and **35 proposed visual windows** still requiring work. New audit calls are held by the quota guard (88% five-hour / 42% weekly); normal processing remains paused. Ready position has 36/38 private units supported, with two destination checks prepared. See [current audit progress and next steps](full-published-audit-coverage-2026-10-14.md#current-progress-and-status).
 

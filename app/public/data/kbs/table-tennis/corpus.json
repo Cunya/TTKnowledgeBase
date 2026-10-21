@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T16:49:21.165153Z",
+  "generated_at": "2026-10-21T17:30:34.032281Z",
   "knowledge_base": {
     "id": "table-tennis",
     "name": "Table Tennis",
@@ -12747,6 +12747,29 @@
           "spoken_context_end_ms": null,
           "visual_source": null,
           "review_status": "approved"
+        },
+        {
+          "id": "_f9fVMm2_Gs-cand-1-codex-reviewed",
+          "evidence_type": "definition",
+          "excerpt": "When the ball comes, keep the hands in front and rotate the feet, knees facing forward, hips and shoulders together. The speaker says this applies to drives and loops.",
+          "reason": "Coordinate the four named body points while keeping the hands in front; the instruction covers drives and loops.",
+          "confidence": 0.98,
+          "visual_status": "transcript_inferred",
+          "source": {
+            "video_id": "_f9fVMm2_Gs",
+            "start_ms": 104600,
+            "end_ms": 124800,
+            "url": "https://www.youtube.com/watch?v=_f9fVMm2_Gs&t=104s",
+            "segment_ids": [
+              "_f9fVMm2_Gs:00018",
+              "_f9fVMm2_Gs:00019",
+              "_f9fVMm2_Gs:00020"
+            ]
+          },
+          "spoken_context_start_ms": null,
+          "spoken_context_end_ms": null,
+          "visual_source": null,
+          "review_status": "approved"
         }
       ],
       "relations": [],
@@ -17638,30 +17661,24 @@
         "controlled power",
         "settle the rhythm"
       ],
-      "short_definition": "Establish position, spacing, timing, and ball control before adding maximum acceleration or power.",
+      "short_definition": "Control the power level and match the incoming rhythm before trying to finish the point with force.",
       "detailed_definition": null,
-      "evidence_summary": "Control comes before power because consistency and timing have to be established before increasing swing speed. A player should match the incoming rhythm, reduce unnecessary force, and build a safe, reliable push or attack pattern that can later be expanded. The emphasis is on executing the movement correctly first and letting power grow from stable rhythm and spacing rather than forcing speed early.",
-      "evidence_summary_source_hash": "sha256:f247ab33190ae3f7e7f1fd6fe01770ec44ee5ab837a1886db0ed68e9d868cd57",
-      "evidence_summary_generator": "codex",
+      "evidence_summary": "One lesson matches the opponent’s push rhythm using 50% power; another says to synchronize first and then explode. A backhand-practice lesson uses about 50% strength while focusing on control and touch. Other examples prioritize putting the receive on the table and building consistency before developing a finishing power loop.",
+      "evidence_summary_source_hash": null,
+      "evidence_summary_generator": null,
       "concept_type": "principle",
       "facets": {
         "category": [
           "fundamentals"
-        ],
-        "side": [
-          "neutral"
-        ],
-        "level": [
-          "intermediate"
         ]
       },
-      "difficulty": "intermediate",
+      "difficulty": null,
       "evidence": [
         {
           "id": "QET6W3rjOxo-cand-match-opponent-rhythm-with-reduced-power-1",
           "evidence_type": "explanation",
-          "excerpt": "The speaker repeatedly emphasizes matching the opponent's rhythm and using reduced power instead of imposing one fixed speed.",
-          "reason": "Reduce power output and synchronize stroke tempo with the opponent's push or rally rhythm instead of forcing a fixed swing speed.",
+          "excerpt": "A fast push can be matched, while responding too fast to a slow push fails. The speaker attributes many misses to timing and rhythm rather than heavy spin, and warns against using one motion and speed regardless of the opponent’s rhythm.",
+          "reason": "Match the incoming push rhythm rather than imposing one speed; the speaker distinguishes timing errors from heavy-spin errors.",
           "confidence": 0.97,
           "visual_status": "not_visual",
           "source": {
@@ -17692,8 +17709,8 @@
         {
           "id": "QET6W3rjOxo-cand-match-opponent-rhythm-with-reduced-power-2",
           "evidence_type": "explanation",
-          "excerpt": "The speaker repeatedly emphasizes matching the opponent's rhythm and using reduced power instead of imposing one fixed speed.",
-          "reason": "Reduce power output and synchronize stroke tempo with the opponent's push or rally rhythm instead of forcing a fixed swing speed.",
+          "excerpt": "Mismatched tempo can leave a player reaching or jammed. The speaker then says to control the power level first and use 50% power.",
+          "reason": "Control power at the stated 50% level in this tempo-matching lesson.",
           "confidence": 0.97,
           "visual_status": "not_visual",
           "source": {
@@ -17722,8 +17739,8 @@
         {
           "id": "QET6W3rjOxo-cand-match-opponent-rhythm-with-reduced-power-3",
           "evidence_type": "explanation",
-          "excerpt": "The speaker repeatedly emphasizes matching the opponent's rhythm and using reduced power instead of imposing one fixed speed.",
-          "reason": "Reduce power output and synchronize stroke tempo with the opponent's push or rally rhythm instead of forcing a fixed swing speed.",
+          "excerpt": "Match the rhythm of the opponent’s push. For a slow push, push slowly and then loop with 50% power, staying with the opponent’s rhythm.",
+          "reason": "Use the stated push-rhythm and 50%-power loop cue rather than going fast against a slow push.",
           "confidence": 0.97,
           "visual_status": "not_visual",
           "source": {
@@ -17751,8 +17768,8 @@
         {
           "id": "QET6W3rjOxo-cand-match-opponent-rhythm-with-reduced-power-4",
           "evidence_type": "explanation",
-          "excerpt": "The speaker repeatedly emphasizes matching the opponent's rhythm and using reduced power instead of imposing one fixed speed.",
-          "reason": "Reduce power output and synchronize stroke tempo with the opponent's push or rally rhythm instead of forcing a fixed swing speed.",
+          "excerpt": "If the opponent pushes fast, follow that speed. Focus on the opponent’s rhythm rather than your own form, using the stated 50–60 power level.",
+          "reason": "Follow the fast-push rhythm using the speaker’s stated 50–60 power cue.",
           "confidence": 0.97,
           "visual_status": "not_visual",
           "source": {
@@ -17775,8 +17792,8 @@
         {
           "id": "QET6W3rjOxo-cand-match-opponent-rhythm-with-reduced-power-5",
           "evidence_type": "explanation",
-          "excerpt": "The speaker repeatedly emphasizes matching the opponent's rhythm and using reduced power instead of imposing one fixed speed.",
-          "reason": "Reduce power output and synchronize stroke tempo with the opponent's push or rally rhythm instead of forcing a fixed swing speed.",
+          "excerpt": "Put sensitivity on the opponent rather than your own swing: match a fast serve fast and slow play slowly.",
+          "reason": "Attend to the opponent’s tempo instead of concentrating only on your own swing.",
           "confidence": 0.97,
           "visual_status": "not_visual",
           "source": {
@@ -17799,18 +17816,21 @@
         {
           "id": "QET6W3rjOxo-cand-match-opponent-rhythm-with-reduced-power-6",
           "evidence_type": "drill",
-          "excerpt": "The speaker presents this as a practice method that should quickly improve timing and rhythm understanding.",
-          "reason": "Reduce power output and synchronize stroke tempo with the opponent's push or rally rhythm instead of forcing a fixed swing speed.",
+          "excerpt": "Follow the opponent’s fast-push speed and rhythm using the stated 50–60 power level. The passage also includes the speaker’s prediction of improvement and a clearer grasp of rhythm.",
+          "reason": "The passage gives the 50–60 power rhythm cue and separately includes the speaker’s prediction of improvement.",
           "confidence": 0.87,
           "visual_status": "not_visual",
           "source": {
             "video_id": "QET6W3rjOxo",
-            "start_ms": 476920,
+            "start_ms": 481080,
             "end_ms": 505640,
-            "url": "https://www.youtube.com/watch?v=QET6W3rjOxo&t=476s",
+            "url": "https://www.youtube.com/watch?v=QET6W3rjOxo&t=481s",
             "segment_ids": [
-              "QET6W3rjOxo:00191",
-              "QET6W3rjOxo:00192",
+              "QET6W3rjOxo:00193",
+              "QET6W3rjOxo:00194",
+              "QET6W3rjOxo:00195",
+              "QET6W3rjOxo:00196",
+              "QET6W3rjOxo:00197",
               "QET6W3rjOxo:00198",
               "QET6W3rjOxo:00199",
               "QET6W3rjOxo:00200",
@@ -17826,17 +17846,25 @@
         {
           "id": "uag7n7hq3bM-cand-ball-control-ability-1",
           "evidence_type": "definition",
-          "excerpt": "The ability to use balance, body weight, and footwork to adjust to each incoming ball and consistently locate the right striking position.",
-          "reason": "Speaker names this ability and defines it as using balance, body weight, and footwork to find the correct position for every ball.",
+          "excerpt": "The speaker calls it ball-control ability: using balance, body weight and footwork to find the correct position for every ball.",
+          "reason": "Use balance, weight and footwork to find the correct position for each ball, as described in the lesson.",
           "confidence": 0.9,
           "visual_status": "not_visual",
           "source": {
             "video_id": "uag7n7hq3bM",
-            "start_ms": 85320,
+            "start_ms": 70000,
             "end_ms": 96280,
-            "url": "https://www.youtube.com/watch?v=uag7n7hq3bM&t=85s",
+            "url": "https://www.youtube.com/watch?v=uag7n7hq3bM&t=70s",
             "segment_ids": [
+              "uag7n7hq3bM:00025",
+              "uag7n7hq3bM:00026",
+              "uag7n7hq3bM:00027",
+              "uag7n7hq3bM:00028",
+              "uag7n7hq3bM:00029",
+              "uag7n7hq3bM:00030",
               "uag7n7hq3bM:00031",
+              "uag7n7hq3bM:00032",
+              "uag7n7hq3bM:00033",
               "uag7n7hq3bM:00034"
             ]
           },
@@ -17848,8 +17876,8 @@
         {
           "id": "uag7n7hq3bM-cand-ball-control-ability-2",
           "evidence_type": "explanation",
-          "excerpt": "The ability to use balance, body weight, and footwork to adjust to each incoming ball and consistently locate the right striking position.",
-          "reason": "Reducing power and calming the tempo are presented as ways to improve consistency and develop real attacking ability, which supports the control concept.",
+          "excerpt": "Reducing power a little is described as raising consistency; slowing things down is linked to gaining real attacking ability.",
+          "reason": "The speaker links reduced power and a calmer pace to consistency and attacking ability.",
           "confidence": 0.77,
           "visual_status": "not_visual",
           "source": {
@@ -17859,6 +17887,9 @@
             "url": "https://www.youtube.com/watch?v=uag7n7hq3bM&t=360s",
             "segment_ids": [
               "uag7n7hq3bM:00139",
+              "uag7n7hq3bM:00140",
+              "uag7n7hq3bM:00141",
+              "uag7n7hq3bM:00142",
               "uag7n7hq3bM:00143"
             ]
           },
@@ -17870,8 +17901,8 @@
         {
           "id": "uag7n7hq3bM-cand-dont-force-power-1",
           "evidence_type": "explanation",
-          "excerpt": "Prioritize control, timing, spacing, and contact before trying to hit hard; excessive power too early creates tension and inconsistency.",
-          "reason": "Speaker tells players to control power, focus on getting the ball on the table, and keep heavy spin loops under about 50% power so tension does not return.",
+          "excerpt": "Control power and focus on putting the ball on the table. After serving, do not focus on generating power immediately; the speaker directs this advice to beginners with one to three years’ experience.",
+          "reason": "Keep the stated beginner and post-serve condition when prioritizing table contact over immediate power.",
           "confidence": 0.94,
           "visual_status": "not_visual",
           "source": {
@@ -17881,6 +17912,12 @@
             "url": "https://www.youtube.com/watch?v=uag7n7hq3bM&t=185s",
             "segment_ids": [
               "uag7n7hq3bM:00072",
+              "uag7n7hq3bM:00073",
+              "uag7n7hq3bM:00074",
+              "uag7n7hq3bM:00075",
+              "uag7n7hq3bM:00076",
+              "uag7n7hq3bM:00077",
+              "uag7n7hq3bM:00078",
               "uag7n7hq3bM:00079"
             ]
           },
@@ -17892,18 +17929,23 @@
         {
           "id": "uag7n7hq3bM-cand-dont-force-power-2",
           "evidence_type": "explanation",
-          "excerpt": "Prioritize control, timing, spacing, and contact before trying to hit hard; excessive power too early creates tension and inconsistency.",
-          "reason": "Speaker tells players to control power, focus on getting the ball on the table, and keep heavy spin loops under about 50% power so tension does not return.",
+          "excerpt": "For the speaker’s forehand heavy-spin loop, use no more than 50% power; going beyond that is said to bring tension back. Focus on finding the contact point. The backhand choice in this example is a push.",
+          "reason": "Preserve the forehand heavy-spin-loop example and its no-more-than-50% power limit.",
           "confidence": 0.94,
           "visual_status": "not_visual",
           "source": {
             "video_id": "uag7n7hq3bM",
-            "start_ms": 228040,
+            "start_ms": 223239,
             "end_ms": 241880,
-            "url": "https://www.youtube.com/watch?v=uag7n7hq3bM&t=228s",
+            "url": "https://www.youtube.com/watch?v=uag7n7hq3bM&t=223s",
             "segment_ids": [
+              "uag7n7hq3bM:00086",
+              "uag7n7hq3bM:00087",
               "uag7n7hq3bM:00088",
-              "uag7n7hq3bM:00091"
+              "uag7n7hq3bM:00089",
+              "uag7n7hq3bM:00090",
+              "uag7n7hq3bM:00091",
+              "uag7n7hq3bM:00092"
             ]
           },
           "spoken_context_start_ms": null,
@@ -17914,8 +17956,8 @@
         {
           "id": "uag7n7hq3bM-cand-dont-force-power-3",
           "evidence_type": "explanation",
-          "excerpt": "Prioritize control, timing, spacing, and contact before trying to hit hard; excessive power too early creates tension and inconsistency.",
-          "reason": "Speaker says to slow down first, match rhythm and spacing, and that slightly reducing power raises consistency and builds real attacking ability.",
+          "excerpt": "Slow down and match rhythm and spacing first rather than trying to smash every slightly high ball. Reducing power is described as improving consistency, with a calmer pace leading toward attacking ability.",
+          "reason": "Establish rhythm and spacing before forcing power in the stated example.",
           "confidence": 0.95,
           "visual_status": "not_visual",
           "source": {
@@ -17925,6 +17967,14 @@
             "url": "https://www.youtube.com/watch?v=uag7n7hq3bM&t=349s",
             "segment_ids": [
               "uag7n7hq3bM:00134",
+              "uag7n7hq3bM:00135",
+              "uag7n7hq3bM:00136",
+              "uag7n7hq3bM:00137",
+              "uag7n7hq3bM:00138",
+              "uag7n7hq3bM:00139",
+              "uag7n7hq3bM:00140",
+              "uag7n7hq3bM:00141",
+              "uag7n7hq3bM:00142",
               "uag7n7hq3bM:00143"
             ]
           },
@@ -17936,8 +17986,8 @@
         {
           "id": "uag7n7hq3bM-cand-rhythm-and-spacing-matching-1",
           "evidence_type": "explanation",
-          "excerpt": "Adjust stroke tempo, backswing speed, and body spacing to the speed, spin, and softness of the incoming ball rather than using one fixed pace.",
-          "reason": "Speaker says playing rhythm must change with different balls and gives the example of compact strokes against an aggressive pusher to keep up with pace.",
+          "excerpt": "Change playing rhythm for different balls and find a suitable receiving position. Against an opponent who pushes aggressively, use a compact stroke to keep up with the pace.",
+          "reason": "Match the stated aggressive-push pace with a compact stroke and suitable receiving position.",
           "confidence": 0.95,
           "visual_status": "not_visual",
           "source": {
@@ -17947,6 +17997,15 @@
             "url": "https://www.youtube.com/watch?v=uag7n7hq3bM&t=405s",
             "segment_ids": [
               "uag7n7hq3bM:00160",
+              "uag7n7hq3bM:00161",
+              "uag7n7hq3bM:00162",
+              "uag7n7hq3bM:00163",
+              "uag7n7hq3bM:00164",
+              "uag7n7hq3bM:00165",
+              "uag7n7hq3bM:00166",
+              "uag7n7hq3bM:00167",
+              "uag7n7hq3bM:00168",
+              "uag7n7hq3bM:00169",
               "uag7n7hq3bM:00170"
             ]
           },
@@ -17958,8 +18017,8 @@
         {
           "id": "uag7n7hq3bM-cand-rhythm-and-spacing-matching-2",
           "evidence_type": "explanation",
-          "excerpt": "Adjust stroke tempo, backswing speed, and body spacing to the speed, spin, and softness of the incoming ball rather than using one fixed pace.",
-          "reason": "Speaker directly states that if the opponent is slow you should be slow, if fast then fast, and calls this matching your backswing to the ball.",
+          "excerpt": "If the opponent pushes slowly, loop slowly too; the speaker calls this matching the backswing to the ball. Being fast against a slow opponent causes mistakes, while fast play calls for a fast response.",
+          "reason": "Match the backswing and stroke rhythm to the opponent’s slow or fast play.",
           "confidence": 0.97,
           "visual_status": "not_visual",
           "source": {
@@ -17969,6 +18028,12 @@
             "url": "https://www.youtube.com/watch?v=uag7n7hq3bM&t=444s",
             "segment_ids": [
               "uag7n7hq3bM:00176",
+              "uag7n7hq3bM:00177",
+              "uag7n7hq3bM:00178",
+              "uag7n7hq3bM:00179",
+              "uag7n7hq3bM:00180",
+              "uag7n7hq3bM:00181",
+              "uag7n7hq3bM:00182",
               "uag7n7hq3bM:00183"
             ]
           },
@@ -17980,17 +18045,24 @@
         {
           "id": "uag7n7hq3bM-cand-push-first-to-settle-rhythm-1",
           "evidence_type": "explanation",
-          "excerpt": "Use a push as the first safer option after the serve when immediate attack quality is not reliable, in order to calm the pace and establish control.",
-          "reason": "Speaker explicitly advises players who cannot attack well after serving to push first and slow the pace down.",
+          "excerpt": "For beginners with one to three years’ experience who cannot attack well after serving, push first, slow the pace and stay calm. Find the contact point first, then mix loops and pushes as the level improves.",
+          "reason": "Retain the beginner, post-serve and unreliable-attack conditions for pushing first and progressing later.",
           "confidence": 0.92,
           "visual_status": "not_visual",
           "source": {
             "video_id": "uag7n7hq3bM",
-            "start_ms": 205480,
+            "start_ms": 196200,
             "end_ms": 225360,
-            "url": "https://www.youtube.com/watch?v=uag7n7hq3bM&t=205s",
+            "url": "https://www.youtube.com/watch?v=uag7n7hq3bM&t=196s",
             "segment_ids": [
+              "uag7n7hq3bM:00077",
+              "uag7n7hq3bM:00078",
+              "uag7n7hq3bM:00079",
               "uag7n7hq3bM:00080",
+              "uag7n7hq3bM:00081",
+              "uag7n7hq3bM:00082",
+              "uag7n7hq3bM:00083",
+              "uag7n7hq3bM:00084",
               "uag7n7hq3bM:00085"
             ]
           },
@@ -18002,18 +18074,23 @@
         {
           "id": "uag7n7hq3bM-cand-push-first-to-settle-rhythm-2",
           "evidence_type": "drill",
-          "excerpt": "Use a push as the first safer option after the serve when immediate attack quality is not reliable, in order to calm the pace and establish control.",
-          "reason": "Speaker repeats that players should first defend and settle into rhythm, and later summarizes the sequence as 'First, push.'",
+          "excerpt": "If the opponent’s return is not very strong, find the contact point and defend first to settle into rhythm. Begin making a full stroke as the level improves.",
+          "reason": "For the stated weaker return, defend and settle into rhythm before progressing to a full stroke.",
           "confidence": 0.89,
           "visual_status": "not_visual",
           "source": {
             "video_id": "uag7n7hq3bM",
-            "start_ms": 306520,
-            "end_ms": 316080,
-            "url": "https://www.youtube.com/watch?v=uag7n7hq3bM&t=306s",
+            "start_ms": 301800,
+            "end_ms": 322200,
+            "url": "https://www.youtube.com/watch?v=uag7n7hq3bM&t=301s",
             "segment_ids": [
+              "uag7n7hq3bM:00118",
+              "uag7n7hq3bM:00119",
               "uag7n7hq3bM:00120",
-              "uag7n7hq3bM:00122"
+              "uag7n7hq3bM:00121",
+              "uag7n7hq3bM:00122",
+              "uag7n7hq3bM:00123",
+              "uag7n7hq3bM:00124"
             ]
           },
           "spoken_context_start_ms": null,
@@ -18024,17 +18101,21 @@
         {
           "id": "uag7n7hq3bM-cand-push-first-to-settle-rhythm-3",
           "evidence_type": "drill",
-          "excerpt": "Use a push as the first safer option after the serve when immediate attack quality is not reliable, in order to calm the pace and establish control.",
-          "reason": "Speaker repeats that players should first defend and settle into rhythm, and later summarizes the sequence as 'First, push.'",
+          "excerpt": "First push, then attack from one wing, then lightly loop from both wings. Find the contact point and add quality step by step.",
+          "reason": "Use the stated staged training sequence rather than forcing quality immediately.",
           "confidence": 0.89,
           "visual_status": "not_visual",
           "source": {
             "video_id": "uag7n7hq3bM",
             "start_ms": 392680,
-            "end_ms": 397600,
+            "end_ms": 407880,
             "url": "https://www.youtube.com/watch?v=uag7n7hq3bM&t=392s",
             "segment_ids": [
-              "uag7n7hq3bM:00155"
+              "uag7n7hq3bM:00155",
+              "uag7n7hq3bM:00156",
+              "uag7n7hq3bM:00157",
+              "uag7n7hq3bM:00158",
+              "uag7n7hq3bM:00159"
             ]
           },
           "spoken_context_start_ms": null,
@@ -18045,8 +18126,8 @@
         {
           "id": "0eMDTeOBR5A-cand-control-before-power-sync-first-1",
           "evidence_type": "explanation",
-          "excerpt": "Frames misses as caused by rushing rather than spin, reinforcing stability over forcing winners.",
-          "reason": "The speaker advises prioritizing stability and landing the ball before trying to finish the point with power, especially on the opening loop.",
+          "excerpt": "The speaker says slowing down can leave the opponent as the one rushing and making errors.",
+          "reason": "The lesson describes a consequence of slowing down; it does not promise a winning shot.",
           "confidence": 0.87,
           "visual_status": "not_visual",
           "source": {
@@ -18067,8 +18148,8 @@
         {
           "id": "0eMDTeOBR5A-cand-control-before-power-sync-first-2",
           "evidence_type": "explanation",
-          "excerpt": "Frames misses as caused by rushing rather than spin, reinforcing stability over forcing winners.",
-          "reason": "The speaker advises prioritizing stability and landing the ball before trying to finish the point with power, especially on the opening loop.",
+          "excerpt": "The speaker attributes almost all misses in this explanation to rushed rhythm rather than excessive spin.",
+          "reason": "The speaker’s stated diagnosis is rushing the rhythm, not heavy spin.",
           "confidence": 0.87,
           "visual_status": "not_visual",
           "source": {
@@ -18090,8 +18171,8 @@
         {
           "id": "0eMDTeOBR5A-cand-control-before-power-sync-first-3",
           "evidence_type": "explanation",
-          "excerpt": "Explicitly says to sync first before exploding and not to try to win with one loop.",
-          "reason": "The speaker advises prioritizing stability and landing the ball before trying to finish the point with power, especially on the opening loop.",
+          "excerpt": "Matching rhythm does not prevent power: synchronize first, then explode.",
+          "reason": "The speaker explicitly puts rhythm synchronization before the powerful release.",
           "confidence": 0.96,
           "visual_status": "not_visual",
           "source": {
@@ -18113,8 +18194,8 @@
         {
           "id": "0eMDTeOBR5A-cand-control-before-power-sync-first-4",
           "evidence_type": "explanation",
-          "excerpt": "Explicitly says to sync first before exploding and not to try to win with one loop.",
-          "reason": "The speaker advises prioritizing stability and landing the ball before trying to finish the point with power, especially on the opening loop.",
+          "excerpt": "Do not try to win with one loop; land it, then play the point.",
+          "reason": "Prioritize landing the loop and continuing the point rather than forcing an immediate winner.",
           "confidence": 0.96,
           "visual_status": "not_visual",
           "source": {
@@ -18135,8 +18216,8 @@
         {
           "id": "bUCFpvTlaMU-candidate-control-before-power-1",
           "evidence_type": "definition",
-          "excerpt": "On serve receive, especially against heavy or fast serves, prioritize safety and table contact over trying to produce a winning-quality push immediately.",
-          "reason": "The speaker says that against heavy fast serves the strategy should change from crushing the push to simply returning it.",
+          "excerpt": "Against a heavy, fast serve, adjust the strategy from trying to crush the push to simply getting it back. The opponent may push again rather than punish it.",
+          "reason": "For the stated heavy-fast serve, choose the described return-first strategy rather than trying to finish with one push.",
           "confidence": 0.95,
           "visual_status": "not_visual",
           "source": {
@@ -18146,6 +18227,12 @@
             "url": "https://www.youtube.com/watch?v=bUCFpvTlaMU&t=150s",
             "segment_ids": [
               "bUCFpvTlaMU:00061",
+              "bUCFpvTlaMU:00062",
+              "bUCFpvTlaMU:00063",
+              "bUCFpvTlaMU:00064",
+              "bUCFpvTlaMU:00065",
+              "bUCFpvTlaMU:00066",
+              "bUCFpvTlaMU:00067",
               "bUCFpvTlaMU:00068"
             ]
           },
@@ -18157,8 +18244,8 @@
         {
           "id": "bUCFpvTlaMU-candidate-control-before-power-2",
           "evidence_type": "definition",
-          "excerpt": "On serve receive, especially against heavy or fast serves, prioritize safety and table contact over trying to produce a winning-quality push immediately.",
-          "reason": "The core priority is stated directly: get the receive on the table first.",
+          "excerpt": "Serve receive is not meant for maximum quality; the first priority is getting the ball on the table.",
+          "reason": "Put table contact first in the speaker’s serve-receive priority.",
           "confidence": 0.98,
           "visual_status": "not_visual",
           "source": {
@@ -18168,6 +18255,7 @@
             "url": "https://www.youtube.com/watch?v=bUCFpvTlaMU&t=165s",
             "segment_ids": [
               "bUCFpvTlaMU:00069",
+              "bUCFpvTlaMU:00070",
               "bUCFpvTlaMU:00071"
             ]
           },
@@ -18179,8 +18267,8 @@
         {
           "id": "f7uZPRPIwpU-concept-control-before-power-1",
           "evidence_type": "explanation",
-          "excerpt": "On soft or tricky balls, prioritize settling your position, staying compact and alert, and controlling the contact before trying to attack hard.",
-          "reason": "Speaker emphasizes staying alert and compact, stopping movement before striking, and treating soft balls as difficult rather than easy put-aways.",
+          "excerpt": "For slow, soft, floating balls, stay alert, compact and ready. Wait until settled into position before hitting rather than swinging while still moving.",
+          "reason": "Keep the slow-soft-floating-ball condition for alert readiness and settling before the swing.",
           "confidence": 0.92,
           "visual_status": "transcript_inferred",
           "source": {
@@ -18192,8 +18280,12 @@
               "f7uZPRPIwpU:00185",
               "f7uZPRPIwpU:00186",
               "f7uZPRPIwpU:00187",
+              "f7uZPRPIwpU:00188",
+              "f7uZPRPIwpU:00189",
+              "f7uZPRPIwpU:00190",
               "f7uZPRPIwpU:00191",
-              "f7uZPRPIwpU:00192"
+              "f7uZPRPIwpU:00192",
+              "f7uZPRPIwpU:00193"
             ]
           },
           "spoken_context_start_ms": null,
@@ -18204,8 +18296,8 @@
         {
           "id": "f7uZPRPIwpU-concept-control-before-power-2",
           "evidence_type": "explanation",
-          "excerpt": "On soft or tricky balls, prioritize settling your position, staying compact and alert, and controlling the contact before trying to attack hard.",
-          "reason": "Speaker emphasizes staying alert and compact, stopping movement before striking, and treating soft balls as difficult rather than easy put-aways.",
+          "excerpt": "Stop moving before striking. Treat tricky soft balls as difficult rather than easy; if spinny, push back. Stay mentally alert, track the ball and stay close.",
+          "reason": "Preserve the spinny-ball push alternative and close tracking in this soft-ball lesson.",
           "confidence": 0.92,
           "visual_status": "transcript_inferred",
           "source": {
@@ -18218,6 +18310,8 @@
               "f7uZPRPIwpU:00195",
               "f7uZPRPIwpU:00196",
               "f7uZPRPIwpU:00197",
+              "f7uZPRPIwpU:00198",
+              "f7uZPRPIwpU:00199",
               "f7uZPRPIwpU:00200",
               "f7uZPRPIwpU:00201"
             ]
@@ -18230,8 +18324,8 @@
         {
           "id": "Ge6u_cFpfDU-candidate-out-of-10-principle-1",
           "evidence_type": "definition",
-          "excerpt": "Match your own power contribution to the incoming ball quality: add less to a fast ball and more to a slow ball.",
-          "reason": "Defines the numeric principle for sharing power with the incoming ball.",
+          "excerpt": "Use the speaker’s out-of-ten principle: if the opponent gives eight, give two; five, give five; two, give eight.",
+          "reason": "The speaker presents these complementary contributions as the out-of-ten principle.",
           "confidence": 0.94,
           "visual_status": "not_visual",
           "source": {
@@ -18253,18 +18347,21 @@
         {
           "id": "Ge6u_cFpfDU-candidate-out-of-10-principle-2",
           "evidence_type": "example",
-          "excerpt": "Match your own power contribution to the incoming ball quality: add less to a fast ball and more to a slow ball.",
-          "reason": "Applies the principle to redirecting a fast ball or generating power against a soft one.",
+          "excerpt": "After serving, leave a forearm’s distance. If the opponent blasts the ball, borrow the speed and redirect; if the ball is soft, generate your own power. Do not retreat first.",
+          "reason": "Preserve the fast-versus-soft distinction and the speaker’s stated post-serve spacing and no-retreat-first cues.",
           "confidence": 0.79,
           "visual_status": "not_visual",
           "source": {
             "video_id": "Ge6u_cFpfDU",
-            "start_ms": 500800,
-            "end_ms": 507040,
-            "url": "https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=500s",
+            "start_ms": 498360,
+            "end_ms": 513000,
+            "url": "https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=498s",
             "segment_ids": [
+              "Ge6u_cFpfDU:00209",
               "Ge6u_cFpfDU:00210",
-              "Ge6u_cFpfDU:00211"
+              "Ge6u_cFpfDU:00211",
+              "Ge6u_cFpfDU:00212",
+              "Ge6u_cFpfDU:00213"
             ]
           },
           "spoken_context_start_ms": null,
@@ -18275,8 +18372,8 @@
         {
           "id": "zd8tcVUWwK4-cand-control-before-power-1",
           "evidence_type": "explanation",
-          "excerpt": "Speaker argues for a clear ending direction and moderated response power based on incoming speed instead of mirroring the opponent.",
-          "reason": "Players should prioritize controllable power relative to the incoming ball rather than matching the opponent's force one-for-one.",
+          "excerpt": "Backhand strokes need a clear breaking direction and ending position. The speaker contrasts an opponent’s 70% with a 30% response against both players using 70%, which is called uncontrollable, and says to adjust to incoming ball speed rather than mirror power.",
+          "reason": "For this backhand example, adjust the contribution to incoming speed instead of matching force one-for-one.",
           "confidence": 0.79,
           "visual_status": "not_visual",
           "source": {
@@ -18287,6 +18384,7 @@
             "segment_ids": [
               "zd8tcVUWwK4:00142",
               "zd8tcVUWwK4:00143",
+              "zd8tcVUWwK4:00144",
               "zd8tcVUWwK4:00145",
               "zd8tcVUWwK4:00146",
               "zd8tcVUWwK4:00147",
@@ -18305,8 +18403,8 @@
         {
           "id": "b3bRD1hQpe8-new-control-before-power-in-matches-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "We only apply pressure when we are very confident. If he is just a bit faster, I wouldn't choose to apply force. It's all about being particularly stable. It's about finding the right moment.",
-          "reason": "This contiguous span directly explains that pressure or force should be used only with confidence, stability, and appropriate timing, which matches the existing concept \"Control before power.\"",
+          "excerpt": "The speaker applies pressure only when very confident. In a backhand example, the speaker says, “If he is just a bit faster,” they would not choose to apply force, emphasizing stability and finding the right moment.",
+          "reason": "In this backhand example, added force is conditional on confidence; the speaker declines it in the stated faster case and emphasizes stability and the right moment.",
           "confidence": 0.98,
           "visual_status": "not_visual",
           "source": {
@@ -18333,8 +18431,8 @@
         {
           "id": "g5LaTXWtgBw-concept-control-before-power-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "Use about 50% strength in backhand practice, never use brute force, focus on ball control and touch, and avoid inconsistent strength.",
-          "reason": "This contiguous 21.8-second span directly supports prioritizing control and touch over brute force or sudden increases in power during training.",
+          "excerpt": "In backhand practice, use about 50% strength, avoid brute force and focus on ball control and touch. Avoid inconsistent strength.",
+          "reason": "Keep the backhand-training condition for the stated 50% strength and control-and-touch emphasis.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
@@ -18360,19 +18458,21 @@
         {
           "id": "HWy3VGWHE5Q-concept-control-before-power-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "Don't rush your shot; wait until you see the opportunity, then go for power.",
-          "reason": "These contiguous segments directly support delaying the shot until a favorable opportunity before applying power, matching the existing durable concept.",
+          "excerpt": "Do not rush. Open the racket angle slightly and wait for an opportunity before applying power; the speaker defines the opportunity here as a half-high return from long pips.",
+          "reason": "Keep the long-pips half-high-return condition for the stated power opportunity.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
             "video_id": "HWy3VGWHE5Q",
             "start_ms": 33233,
-            "end_ms": 40566,
+            "end_ms": 44566,
             "url": "https://www.youtube.com/watch?v=HWy3VGWHE5Q&t=33s",
             "segment_ids": [
               "HWy3VGWHE5Q:00012",
               "HWy3VGWHE5Q:00013",
-              "HWy3VGWHE5Q:00014"
+              "HWy3VGWHE5Q:00014",
+              "HWy3VGWHE5Q:00015",
+              "HWy3VGWHE5Q:00016"
             ]
           },
           "spoken_context_start_ms": null,
@@ -18383,8 +18483,8 @@
         {
           "id": "hw8RsLGOARs-concept-control-before-power-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "Leave margin for error and prioritize getting the ball over the net and on the table first; only then add quality and spin.",
-          "reason": "This contiguous span explicitly prioritizes a safe, controlled return with margin for error before adding quality and spin, directly matching the existing concept.",
+          "excerpt": "Leave margin for error and first get the ball over the net and onto the table; then consider adding quality and spin.",
+          "reason": "The speaker prioritizes margin and table contact before additional quality or spin.",
           "confidence": 0.98,
           "visual_status": "not_visual",
           "source": {
@@ -18407,8 +18507,8 @@
         {
           "id": "mYzbo93Nkps-concept-control-before-power-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "Right now, you're focusing on consistency. Later, we'll talk about quality.",
-          "reason": "This contiguous span explicitly prioritizes consistency before quality, directly supporting the existing concept of control before power.",
+          "excerpt": "Focus on consistency now; address quality later.",
+          "reason": "The speaker separates the present consistency focus from later quality work.",
           "confidence": 0.98,
           "visual_status": "not_visual",
           "source": {
@@ -18430,8 +18530,8 @@
         {
           "id": "o6OyHBmkF2U-concept-control-before-power-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "For this type of loop, to ensure consistency, I barely open my forearm, stay close to the ball, and contact at the peak. With this method, I can land it on the table. You must understand yourself: which technique gives you consistency? Everyone should first build consistency, then develop a finishing power loop.",
-          "reason": "This contiguous span explains that a reliable technique and consistency should be established before developing a finishing power loop, directly supporting the existing concept.",
+          "excerpt": "For this loop example, the speaker barely opens the forearm, stays close and contacts at the peak to land the ball. Find the technique that gives you consistency, then develop a finishing power loop.",
+          "reason": "Build consistency first, preserving the speaker’s specific forearm, spacing and peak-contact example rather than a universal loop prescription.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
@@ -18465,22 +18565,14 @@
           "sources": [
             {
               "video_id": "QET6W3rjOxo",
-              "start_ms": 385280,
-              "end_ms": 414080,
-              "url": "https://www.youtube.com/watch?v=QET6W3rjOxo&t=385s",
+              "start_ms": 516280,
+              "end_ms": 527440,
+              "url": "https://www.youtube.com/watch?v=QET6W3rjOxo&t=516s",
               "segment_ids": [
-                "QET6W3rjOxo:00158",
-                "QET6W3rjOxo:00159",
-                "QET6W3rjOxo:00160",
-                "QET6W3rjOxo:00161",
-                "QET6W3rjOxo:00162",
-                "QET6W3rjOxo:00163",
-                "QET6W3rjOxo:00164",
-                "QET6W3rjOxo:00165",
-                "QET6W3rjOxo:00166",
-                "QET6W3rjOxo:00167",
-                "QET6W3rjOxo:00168",
-                "QET6W3rjOxo:00169"
+                "QET6W3rjOxo:00209",
+                "QET6W3rjOxo:00210",
+                "QET6W3rjOxo:00211",
+                "QET6W3rjOxo:00212"
               ]
             }
           ],
@@ -33035,6 +33127,30 @@
           "spoken_context_end_ms": null,
           "visual_source": null,
           "review_status": "approved"
+        },
+        {
+          "id": "ijU-Kk98Gto-concept-ready-position-codex-reviewed",
+          "evidence_type": "explanation",
+          "excerpt": "When we play a forehand, our original preparation position, whether it's an attack or a loop, is the same.",
+          "reason": "Use the same original forehand preparation position for an attack or a loop, as the speaker describes.",
+          "confidence": 0.9,
+          "visual_status": "transcript_inferred",
+          "source": {
+            "video_id": "ijU-Kk98Gto",
+            "start_ms": 221566,
+            "end_ms": 227266,
+            "url": "https://www.youtube.com/watch?v=ijU-Kk98Gto&t=221s",
+            "segment_ids": [
+              "ijU-Kk98Gto:00105",
+              "ijU-Kk98Gto:00106",
+              "ijU-Kk98Gto:00107",
+              "ijU-Kk98Gto:00108"
+            ]
+          },
+          "spoken_context_start_ms": null,
+          "spoken_context_end_ms": null,
+          "visual_source": null,
+          "review_status": "approved"
         }
       ],
       "relations": [
@@ -45496,30 +45612,24 @@
       "aliases": [
         "ready stance"
       ],
-      "short_definition": "A balanced neutral stance used to react and recover between strokes.",
-      "detailed_definition": "Keep the knees bent, weight toward the front of the feet, and return to the stance after each stroke.",
-      "evidence_summary": "The ready position is the neutral recovery stance that lets the player judge the next ball and move efficiently into the correct response. It should be low, compact, and relaxed, with the center of gravity forward and the racket held above the table so the player can move quickly. After serving or pushing, failing to return to this posture is a common error because active recovery is essential for the next shot.",
-      "evidence_summary_source_hash": "sha256:ec3805b5417abfaa88b6293ec9bb987c3287683c0ab144f721be60337ab909ec",
-      "evidence_summary_generator": "codex",
+      "short_definition": "A preparation and recovery position used to stay ready for the next ball.",
+      "detailed_definition": "In a receive lesson, keep the knees bent and weight forward. In fixed-point practice, return to ready position immediately after the hit; in a match after serving, recover to a neutral position, read the opponent and then loop.",
+      "evidence_summary": "Receiving examples use a low, compact stance with knees bent and weight forward. After serving, one lesson calls for shoulders facing forward before the opponent contacts the ball. A training lesson distinguishes proactive ready-position recovery in fixed-point drills from neutral recovery followed by reading the opponent in matches.",
+      "evidence_summary_source_hash": null,
+      "evidence_summary_generator": null,
       "concept_type": "fundamental",
       "facets": {
         "category": [
           "fundamentals"
-        ],
-        "side": [
-          "neutral"
-        ],
-        "level": [
-          "beginner"
         ]
       },
-      "difficulty": "beginner",
+      "difficulty": null,
       "evidence": [
         {
           "id": "ready-position-shoulder-alignment-2",
           "evidence_type": "explanation",
-          "excerpt": "Set the ready position with the left shoulder slightly forward.",
-          "reason": "Adds a real lesson cue for neutral shoulder alignment before the forehand backswing.",
+          "excerpt": "In the ready position, keep the left shoulder forward.",
+          "reason": "The speaker’s ready-position shoulder cue is left shoulder forward.",
           "confidence": 0.96,
           "visual_status": "transcript_inferred",
           "source": {
@@ -45538,9 +45648,9 @@
         },
         {
           "id": "QET6W3rjOxo-cand-ready-position-1",
-          "evidence_type": "demonstration",
-          "excerpt": "After serving, quickly recover with the hands positioned in front of the chest so the player can read and react before committing.",
-          "reason": "The speaker gives a concrete recovery posture after serve with hands in front, consistent with ready position.",
+          "evidence_type": "explanation",
+          "excerpt": "After serving, recover fast with the hands in front of the chest. Read the opponent’s action before committing; even when the ball goes to the forehand, do not draw back immediately, which the speaker says loses the force connection.",
+          "reason": "Recover with hands in front of the chest, then read before committing; avoid immediately drawing back for a forehand ball.",
           "confidence": 0.9,
           "visual_status": "transcript_inferred",
           "source": {
@@ -45552,6 +45662,13 @@
               "QET6W3rjOxo:00144",
               "QET6W3rjOxo:00145",
               "QET6W3rjOxo:00146",
+              "QET6W3rjOxo:00147",
+              "QET6W3rjOxo:00148",
+              "QET6W3rjOxo:00149",
+              "QET6W3rjOxo:00150",
+              "QET6W3rjOxo:00151",
+              "QET6W3rjOxo:00152",
+              "QET6W3rjOxo:00153",
               "QET6W3rjOxo:00154",
               "QET6W3rjOxo:00155"
             ]
@@ -45563,17 +45680,19 @@
         },
         {
           "id": "QET6W3rjOxo-cand-ready-position-2",
-          "evidence_type": "demonstration",
-          "excerpt": "After serving, quickly recover with the hands positioned in front of the chest so the player can read and react before committing.",
-          "reason": "The speaker gives a concrete recovery posture after serve with hands in front, consistent with ready position.",
+          "evidence_type": "explanation",
+          "excerpt": "After serving, recover fast with the hands in front, then read the opponent’s intent. The speaker says there is enough time.",
+          "reason": "Use the stated post-serve recovery-first, read-second sequence with hands in front.",
           "confidence": 0.9,
           "visual_status": "transcript_inferred",
           "source": {
             "video_id": "QET6W3rjOxo",
-            "start_ms": 379000,
+            "start_ms": 374040,
             "end_ms": 387760,
-            "url": "https://www.youtube.com/watch?v=QET6W3rjOxo&t=379s",
+            "url": "https://www.youtube.com/watch?v=QET6W3rjOxo&t=374s",
             "segment_ids": [
+              "QET6W3rjOxo:00154",
+              "QET6W3rjOxo:00155",
               "QET6W3rjOxo:00156",
               "QET6W3rjOxo:00157"
             ]
@@ -45586,19 +45705,26 @@
         {
           "id": "wF-YklKS7pI-cand-ready-position-1",
           "evidence_type": "definition",
-          "excerpt": "The transcript explicitly refers to recovering to a normal ready position after serve.",
-          "reason": "The neutral recovery stance after serving from which the player can judge the return and move into the correct next-ball position.",
+          "excerpt": "After every serve, recover to the normal ready position, described as the long-ball attack position. Do not rush straight forward after every serve.",
+          "reason": "Recover to the normal ready and long-ball attack position after serving rather than rushing forward.",
           "confidence": 0.84,
           "visual_status": "not_visual",
           "source": {
             "video_id": "wF-YklKS7pI",
             "start_ms": 457280,
-            "end_ms": 479920,
+            "end_ms": 483360,
             "url": "https://www.youtube.com/watch?v=wF-YklKS7pI&t=457s",
             "segment_ids": [
               "wF-YklKS7pI:00180",
+              "wF-YklKS7pI:00181",
+              "wF-YklKS7pI:00182",
+              "wF-YklKS7pI:00183",
+              "wF-YklKS7pI:00184",
+              "wF-YklKS7pI:00185",
+              "wF-YklKS7pI:00186",
               "wF-YklKS7pI:00187",
-              "wF-YklKS7pI:00188"
+              "wF-YklKS7pI:00188",
+              "wF-YklKS7pI:00189"
             ]
           },
           "spoken_context_start_ms": null,
@@ -45609,8 +45735,8 @@
         {
           "id": "YUEaL2HiPIE-concept-continuous-ready-body-state-1",
           "evidence_type": "definition",
-          "excerpt": "Speaker explicitly argues there is no time to relax during a point and defines the ready body state.",
-          "reason": "Between shots, the whole body should remain compact, engaged, and ready rather than going slack, so strokes can link continuously and reaction speed stays high.",
+          "excerpt": "This lesson calls for an engaged body throughout the point: legs rooted, hips loaded and shoulders slightly forward. The speaker warns against relaxing after serving, pushing or looping and says the body’s readiness should remain the same.",
+          "reason": "This lesson emphasizes keeping the body engaged through the point instead of relaxing after individual strokes.",
           "confidence": 0.93,
           "visual_status": "not_visual",
           "source": {
@@ -45635,8 +45761,8 @@
         {
           "id": "YUEaL2HiPIE-concept-continuous-ready-body-state-2",
           "evidence_type": "definition",
-          "excerpt": "Speaker explicitly argues there is no time to relax during a point and defines the ready body state.",
-          "reason": "Between shots, the whole body should remain compact, engaged, and ready rather than going slack, so strokes can link continuously and reaction speed stays high.",
+          "excerpt": "Keep the body compact and ready to link multiple shots and maintain consistency when generating power.",
+          "reason": "Compact readiness is linked to connecting shots and maintaining consistency during power generation.",
           "confidence": 0.93,
           "visual_status": "not_visual",
           "source": {
@@ -45656,8 +45782,8 @@
         {
           "id": "YUEaL2HiPIE-concept-continuous-ready-body-state-3",
           "evidence_type": "explanation",
-          "excerpt": "Speaker explains why multi-ball is used to build this activated state and contrasts it with amateur looseness.",
-          "reason": "Between shots, the whole body should remain compact, engaged, and ready rather than going slack, so strokes can link continuously and reaction speed stays high.",
+          "excerpt": "Fast multi-ball drills are described as activating the body, preventing looseness and building intensity for instant reaction in a match. The speaker contrasts this with a relaxed body and tense arm.",
+          "reason": "The speaker links fast multi-ball work to body activation and match reaction, contrasting active-body readiness with a tense arm.",
           "confidence": 0.88,
           "visual_status": "not_visual",
           "source": {
@@ -45680,16 +45806,18 @@
         {
           "id": "-1uBDv1Aq7A-concept-ready-position-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "You should be balanced and ready for the long serve, while slowing your response to the short ball.",
-          "reason": "These contiguous lines describe the receive stance as balanced and prepared, with attention on the long serve and a controlled response to the short ball.",
+          "excerpt": "Against left- and right-sidespin serves in this lesson, prepare for the long serve and slow the response to the short ball, using a slow push or slow flick while mainly watching for the long serve.",
+          "reason": "Prioritize readiness for the long serve while responding calmly and more slowly to the short ball in the stated sidespin receive example.",
           "confidence": 0.96,
           "visual_status": "transcript_inferred",
           "source": {
             "video_id": "-1uBDv1Aq7A",
-            "start_ms": 208480,
+            "start_ms": 204640,
             "end_ms": 223440,
-            "url": "https://www.youtube.com/watch?v=-1uBDv1Aq7A&t=208s",
+            "url": "https://www.youtube.com/watch?v=-1uBDv1Aq7A&t=204s",
             "segment_ids": [
+              "-1uBDv1Aq7A:00059",
+              "-1uBDv1Aq7A:00060",
               "-1uBDv1Aq7A:00061",
               "-1uBDv1Aq7A:00062",
               "-1uBDv1Aq7A:00063",
@@ -45706,7 +45834,7 @@
           "id": "1UthOchBWWc-concept-ready-position-codex-reviewed",
           "evidence_type": "definition",
           "excerpt": "Return to your ready position every time; leaving your racket in the finishing position without recovering is a common mistake.",
-          "reason": "These contiguous segments explicitly instruct returning to the ready position after every shot and identify failure to recover from the finishing position as a common mistake.",
+          "reason": "Return to ready position after every shot rather than leaving the racket at the stroke’s finishing position.",
           "confidence": 0.99,
           "visual_status": "not_visual",
           "source": {
@@ -45729,7 +45857,7 @@
           "id": "2Wk2xe0I1s8-concept-ready-position-codex-reviewed",
           "evidence_type": "explanation",
           "excerpt": "Start with a low body posture: lower your center of gravity, shoulder, and hand before contact to establish the conditions for brushing and generating heavy spin.",
-          "reason": "This contiguous 12.1-second span directly explains that an upright start causes poor contact and that lowering the body, shoulder, and hand beforehand enables effective brushing and spin.",
+          "reason": "Lower the body, shoulder and hand before this brushing action; the speaker links an upright start to poor racket contact and missing the brushing phase.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
@@ -45753,7 +45881,7 @@
           "id": "7jWqEsHtN3Y-concept-ready-position-codex-reviewed",
           "evidence_type": "explanation",
           "excerpt": "Failing to recover to your ready position after pushing leaves you rushed for the next shot, so you must actively recover after every push.",
-          "reason": "The selected contiguous span directly states that players should recover to ready position after each push and explains why active recovery is critical.",
+          "reason": "Actively recover to ready position after each push to avoid being rushed for the next shot.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
@@ -45774,16 +45902,17 @@
         {
           "id": "7Zz_cVWrgng-concept-ready-position-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "The speaker states that they are in the ready position while showing how standing there affects the curvature.",
-          "reason": "The selected contiguous transcript span explicitly identifies the speaker as being in the ready position and describes the resulting curvature changes. The transcript supports the stated position but does not independently verify the visual demonstration.",
+          "excerpt": "Use one, two or three water bottles to create a trajectory. In this explanation, the speaker identifies their stance as the ready position.",
+          "reason": "Use water bottles to create a trajectory in the exercise where the speaker identifies their stance as the ready position.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
             "video_id": "7Zz_cVWrgng",
-            "start_ms": 867400,
+            "start_ms": 860933,
             "end_ms": 875700,
-            "url": "https://www.youtube.com/watch?v=7Zz_cVWrgng&t=867s",
+            "url": "https://www.youtube.com/watch?v=7Zz_cVWrgng&t=860s",
             "segment_ids": [
+              "7Zz_cVWrgng:00172",
               "7Zz_cVWrgng:00173",
               "7Zz_cVWrgng:00174",
               "7Zz_cVWrgng:00175"
@@ -45797,8 +45926,8 @@
         {
           "id": "8fxjEROShs4-concept-ready-position-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "Stay still and prepare yourself before the serve; position your body correctly and avoid excessive movement so you can adjust effectively after receiving.",
-          "reason": "This contiguous 25-second span directly describes preparing a stable position before the serve, maintaining it, and making only limited adjustments after receiving.",
+          "excerpt": "Stay still and prepare before this serve, position the body correctly and avoid excessive movement. The speaker says to make only one adjustment after receiving.",
+          "reason": "Prepare and position the body before this serve, stay still and avoid excessive adjustments in the described correction.",
           "confidence": 0.95,
           "visual_status": "transcript_inferred",
           "source": {
@@ -45821,7 +45950,7 @@
           "id": "bKtA240EvTQ-seed-ready-position-codex-reviewed",
           "evidence_type": "explanation",
           "excerpt": "When receiving serve, stay compact, lower your stance, and keep a leg ready to initiate movement at any time.",
-          "reason": "These contiguous segments directly explain the ready position for serve receive: stay compact, lower the stance, and prepare a leg for movement.",
+          "reason": "For serve receive, stay compact, lower the stance and keep the leg ready to initiate movement.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
@@ -45846,7 +45975,7 @@
           "id": "dJJtJQvuwOY-concept-ready-position-codex-reviewed",
           "evidence_type": "definition",
           "excerpt": "Get into position and stand correctly; stand here and pull directly when the ball is near your knee.",
-          "reason": "These contiguous segments directly describe standing correctly and getting into position before pulling when the ball reaches knee height.",
+          "reason": "Get into position and stand correctly, then pull when the ball is near the knee as instructed in this example.",
           "confidence": 0.94,
           "visual_status": "transcript_inferred",
           "source": {
@@ -45867,8 +45996,8 @@
         {
           "id": "fi3p2TgKGHI-concept-ready-position-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "After serving, quickly get back into position, bring it back, and keep playing.",
-          "reason": "The speaker explicitly instructs the player to return to position after serving and continue the rally, directly supporting the existing ready-position concept.",
+          "excerpt": "After serving, quickly get back into position and keep playing.",
+          "reason": "Quickly return to position after serving and continue playing.",
           "confidence": 0.97,
           "visual_status": "transcript_inferred",
           "source": {
@@ -45890,8 +46019,8 @@
         {
           "id": "HlTqPv-MpGI-concept-ready-position-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "Keep the right foot in a ready position so it is not planted and can move, which is key to mobility.",
-          "reason": "These contiguous segments directly explain that keeping the right foot in a ready position prevents it from being planted and allows it to move for mobility.",
+          "excerpt": "If the right foot stays in a ready position, the speaker says it will not be planted and can move, which is key to mobility.",
+          "reason": "The speaker links the right foot’s ability to move to the condition that it remains in a ready position rather than planted.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
@@ -45901,6 +46030,7 @@
             "url": "https://www.youtube.com/watch?v=HlTqPv-MpGI&t=87s",
             "segment_ids": [
               "HlTqPv-MpGI:00026",
+              "HlTqPv-MpGI:00027",
               "HlTqPv-MpGI:00028",
               "HlTqPv-MpGI:00029",
               "HlTqPv-MpGI:00030",
@@ -45915,34 +46045,10 @@
           "review_status": "approved"
         },
         {
-          "id": "ijU-Kk98Gto-concept-ready-position-codex-reviewed",
-          "evidence_type": "explanation",
-          "excerpt": "When we play a forehand, our original preparation position, whether it's an attack or a loop, is the same.",
-          "reason": "These contiguous segments directly state that the forehand’s original preparation position is the same for an attack or a loop, supporting the existing Ready position concept.",
-          "confidence": 0.9,
-          "visual_status": "transcript_inferred",
-          "source": {
-            "video_id": "ijU-Kk98Gto",
-            "start_ms": 221566,
-            "end_ms": 227266,
-            "url": "https://www.youtube.com/watch?v=ijU-Kk98Gto&t=221s",
-            "segment_ids": [
-              "ijU-Kk98Gto:00105",
-              "ijU-Kk98Gto:00106",
-              "ijU-Kk98Gto:00107",
-              "ijU-Kk98Gto:00108"
-            ]
-          },
-          "spoken_context_start_ms": null,
-          "spoken_context_end_ms": null,
-          "visual_source": null,
-          "review_status": "approved"
-        },
-        {
           "id": "9bLlHR-vBAU-concept-ready-position-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "Before learning footwork, recover to the ready position by returning to it immediately after hitting the ball.",
-          "reason": "These contiguous segments explicitly state that players must recover to the ready position and return to it immediately after hitting the ball.",
+          "excerpt": "Before learning footwork, master recovery to the ready position. In a fixed-point drill, recover in place immediately after hitting the ball.",
+          "reason": "In fixed-point practice, return to ready position immediately after the hit; the lesson introduces this recovery before footwork.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
@@ -45962,31 +46068,10 @@
           "review_status": "approved"
         },
         {
-          "id": "_f9fVMm2_Gs-cand-1-codex-reviewed",
-          "evidence_type": "definition",
-          "excerpt": "Keep your hands in front of your body. When the ball comes, rotate.",
-          "reason": "The selected contiguous segment directly states the ready-position instruction to keep the hands in front of the body and rotate when the ball comes.",
-          "confidence": 0.98,
-          "visual_status": "transcript_inferred",
-          "source": {
-            "video_id": "_f9fVMm2_Gs",
-            "start_ms": 0,
-            "end_ms": 5666,
-            "url": "https://www.youtube.com/watch?v=_f9fVMm2_Gs&t=0s",
-            "segment_ids": [
-              "_f9fVMm2_Gs:00000"
-            ]
-          },
-          "spoken_context_start_ms": null,
-          "spoken_context_end_ms": null,
-          "visual_source": null,
-          "review_status": "approved"
-        },
-        {
           "id": "jG1G3H7Fo_k-concept-ready-position-codex-reviewed",
           "evidence_type": "definition",
           "excerpt": "Keep your knees and center of gravity forward, keep your hips lifted, lean your upper body forward, and match your eye level to the opponent’s racket contact height.",
-          "reason": "This contiguous 29-second span directly describes the balanced forward receiving posture and its knee, hip, upper-body, and eye-level requirements.",
+          "reason": "Keep the knees and center of gravity forward, avoid sitting the hips back, lean forward and align eye level with the opponent’s racket contact height.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
@@ -46016,7 +46101,7 @@
           "id": "eIKLgVChAdA-concept-ready-position-codex-reviewed",
           "evidence_type": "explanation",
           "excerpt": "On a short forehand serve, the body and stance should already be in position by the time the ball lands, leaving the player prepared to execute the shot.",
-          "reason": "This contiguous span directly explains that the player prepares the body and sets the stance before the ball arrives, enabling immediate execution.",
+          "reason": "For the short forehand serve example, move when the ball bounces on the opponent’s side and have the stance set by its arrival on your side.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
@@ -46040,16 +46125,17 @@
         {
           "id": "h5jUJL_P82w-concept-ready-position-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "Amateurs are slow to move in because their ready position is evenly weighted and flat-footed, while professionals lean forward with their heels slightly up and their center of gravity ready to launch.",
-          "reason": "The contiguous selected span directly contrasts flat-footed amateur posture with a forward, launch-ready professional stance.",
+          "excerpt": "For short-ball receive, the speaker attributes slow movement to an evenly weighted, flat-footed ready position, contrasting it with professionals leaning forward with heels slightly raised and the center of gravity ready to launch.",
+          "reason": "The short-ball receive lesson contrasts flat-footed amateur readiness with a forward, heels-raised launch-ready posture.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
             "video_id": "h5jUJL_P82w",
-            "start_ms": 25566,
+            "start_ms": 20500,
             "end_ms": 38733,
-            "url": "https://www.youtube.com/watch?v=h5jUJL_P82w&t=25s",
+            "url": "https://www.youtube.com/watch?v=h5jUJL_P82w&t=20s",
             "segment_ids": [
+              "h5jUJL_P82w:00005",
               "h5jUJL_P82w:00006",
               "h5jUJL_P82w:00007",
               "h5jUJL_P82w:00008"
@@ -46063,8 +46149,8 @@
         {
           "id": "hi0AJuu60eE-cand-2-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "After your backhand, keep your racket up. Read the opponent's shot and move directly if it goes to your forehand; if it comes to your backhand, stay ready.",
-          "reason": "This contiguous 18-second span directly explains keeping the racket up and remaining ready to respond to the opponent's next shot, matching the existing Ready position concept.",
+          "excerpt": "After a backhand, keep the racket up and read the opponent’s shot. If it goes to the forehand, move directly, adjust the racket angle, set the feet and execute; if it returns to the backhand, stay ready.",
+          "reason": "Keep the racket up after the backhand and choose the direct transition or continued backhand readiness from the opponent’s shot.",
           "confidence": 0.98,
           "visual_status": "not_visual",
           "source": {
@@ -46087,7 +46173,7 @@
           "id": "iae3EAgyUXU-concept-ready-position-codex-reviewed",
           "evidence_type": "explanation",
           "excerpt": "In fixed-point drills, proactively bring the racket back to the ready position rather than waiting for the ball. In a match, recover to a neutral position after serving, read where the ball goes, and then execute the loop.",
-          "reason": "These contiguous segments directly describe the ready position as an active recovery point during drills and a neutral position after serving in match play.",
+          "reason": "Distinguish proactive fixed-point recovery from match recovery: after serving in a match, recover neutrally, read the opponent and then loop.",
           "confidence": 0.99,
           "visual_status": "not_visual",
           "source": {
@@ -46111,8 +46197,8 @@
         {
           "id": "IHQASHkdLYk-concept-ready-position-codex-reviewed",
           "evidence_type": "definition",
-          "excerpt": "The ideal ready position: feet wide, center of gravity low, and weight balanced evenly. This allows you to explode in any direction without a wasteful \"un-weighting\" motion.",
-          "reason": "Segment IHQASHkdLYk:00119 directly defines the ready position and describes its balanced lower-body stance and movement benefit.",
+          "excerpt": "One lesson describes an ideal ready position with wide feet, a low center of gravity and evenly balanced weight, allowing movement in any direction without a wasteful un-weighting motion.",
+          "reason": "This lesson’s stance uses wide feet, low center of gravity and evenly balanced weight for movement without a separate un-weighting action.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
@@ -46133,7 +46219,7 @@
           "id": "ODwFaYDY1co-concept-ready-position-codex-reviewed",
           "evidence_type": "explanation",
           "excerpt": "After serving, return to the ready position before the opponent contacts the ball, with both shoulders facing forward and the eyes reading the opponent’s push motion; otherwise, you are too late.",
-          "reason": "This contiguous span explicitly describes returning to ready position after serving, facing forward, reading the opponent’s push, and controlling timing and position.",
+          "reason": "Recover before the opponent’s contact with shoulders forward and eyes reading the push; staying sideways until the push is too late.",
           "confidence": 0.99,
           "visual_status": "not_visual",
           "source": {
@@ -46163,7 +46249,7 @@
           "id": "J7Lm5IL-ggs-concept-ready-position-codex-reviewed",
           "evidence_type": "explanation",
           "excerpt": "The lesson contrasts returning straight to ready position with circular loop recovery and recommends choosing what feels comfortable.",
-          "reason": "Return to ready position after the loop; the recovery path may be straight or circular depending on what feels comfortable.",
+          "reason": "The speaker contrasts straight and circular loop recoveries and recommends the recovery that feels comfortable.",
           "confidence": 0.93,
           "visual_status": "transcript_inferred",
           "source": {
@@ -46187,16 +46273,17 @@
         {
           "id": "eIsYt1sCPRI-concept-ready-position-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "After the serve, recover to your ready position, then move your right hand and left foot forward together.",
-          "reason": "These contiguous segments directly name recovery to the ready position after serving and describe the immediate preparation that follows.",
+          "excerpt": "For a half-long return to the middle after serving, recover to the ready position and step around. Then move the right hand and left foot forward together and transfer weight.",
+          "reason": "Keep the half-long-to-middle condition for this post-serve step-around and coordinated right-hand/left-foot pattern.",
           "confidence": 0.99,
           "visual_status": "not_visual",
           "source": {
             "video_id": "eIsYt1sCPRI",
-            "start_ms": 330433,
+            "start_ms": 321933,
             "end_ms": 342733,
-            "url": "https://www.youtube.com/watch?v=eIsYt1sCPRI&t=330s",
+            "url": "https://www.youtube.com/watch?v=eIsYt1sCPRI&t=321s",
             "segment_ids": [
+              "eIsYt1sCPRI:00068",
               "eIsYt1sCPRI:00069",
               "eIsYt1sCPRI:00070"
             ]
@@ -46210,7 +46297,7 @@
           "id": "JLGqLr-9-2w-concept-ready-position-codex-reviewed",
           "evidence_type": "explanation",
           "excerpt": "After tossing the ball and opening up, return to ready position instead of stopping once the stroke is finished.",
-          "reason": "Recovery to ready position is the final step of the serve action and should not be neglected after finishing the stroke.",
+          "reason": "Complete the stated toss-and-open sequence by returning to ready position rather than stopping at the stroke finish.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
@@ -46235,8 +46322,8 @@
         {
           "id": "YS3IObI6Gaw-concept-ready-position-codex-reviewed",
           "evidence_type": "definition",
-          "excerpt": "In receive, avoid exposing weaknesses with your ready position: cover the backhand side, keep a low center of gravity with bent knees, and keep your weight forward.",
-          "reason": "A ready receive stance should cover the backhand side while staying low, bending the knees, and keeping weight forward to avoid exposing weaknesses against the opponent’s serve.",
+          "excerpt": "In receive, avoid leaving a large opening by standing too far to one side. Standing too close invites a long serve to jam you; too far back invites a short serve. Cover the backhand side with a low center of gravity, bent knees and weight forward.",
+          "reason": "Choose receive position to avoid side openings and depth traps, staying low with bent knees and weight forward.",
           "confidence": 0.98,
           "visual_status": "not_visual",
           "source": {
@@ -48953,36 +49040,30 @@
         "receive rhythm",
         "mirror principle"
       ],
-      "short_definition": "Match the serve's rhythm and spin direction with a compact action, choosing timing that reduces the spin's effect.",
+      "short_definition": "Adapt receive timing, racket angle and force to the incoming serve and the ability to read its spin.",
       "detailed_definition": null,
-      "evidence_summary": "Adapt the receive to the spin and rhythm of the incoming serve. In the heavy-spin examples, concentrate the action at contact and finish decisively; a slow version of the same motion may still fail. This is contextual advice, not a single speed rule for every serve.",
+      "evidence_summary": "One lesson matches receive rhythm to slow sidespin-backspin or fast serves. Another distinguishes constant speed when spin is unreadable from acceleration when it can be read. In separate heavy-spin examples, the speaker calls for concentrated, faster action rather than a slow stroke. Serve receive is also described as small and compact, with movement size, timing, angle and force differing from attack after one’s own serve.",
       "evidence_summary_source_hash": null,
       "evidence_summary_generator": null,
       "concept_type": "receive",
       "facets": {
         "category": [
           "receive"
-        ],
-        "side": [
-          "neutral"
-        ],
-        "level": [
-          "intermediate"
         ]
       },
-      "difficulty": "intermediate",
+      "difficulty": null,
       "evidence": [
         {
           "id": "3yx5OMDyM8c-candidate-match-opponent-serve-rhythm-1",
           "evidence_type": "explanation",
-          "excerpt": "The speaker names receive rhythm as the second principle and repeatedly says the receiver should use the same rhythm as the opponent's serve.",
-          "reason": "A serve-receive timing principle where the receiver synchronizes tempo with the server's speed and softness, using slow rhythm on soft or slower serves and faster rhythm on quick serves to reduce errors.",
+          "excerpt": "Match the opponent’s receive rhythm. For a soft short serve, do not rush; calmly step in and chop a slow, soft ball long.",
+          "reason": "For the stated soft-short serve, match the rhythm rather than rushing the timing.",
           "confidence": 0.97,
           "visual_status": "not_visual",
           "source": {
             "video_id": "3yx5OMDyM8c",
             "start_ms": 50680,
-            "end_ms": 79640,
+            "end_ms": 77520,
             "url": "https://www.youtube.com/watch?v=3yx5OMDyM8c&t=50s",
             "segment_ids": [
               "3yx5OMDyM8c:00023",
@@ -48990,12 +49071,12 @@
               "3yx5OMDyM8c:00025",
               "3yx5OMDyM8c:00026",
               "3yx5OMDyM8c:00027",
+              "3yx5OMDyM8c:00028",
               "3yx5OMDyM8c:00029",
               "3yx5OMDyM8c:00030",
               "3yx5OMDyM8c:00031",
               "3yx5OMDyM8c:00032",
-              "3yx5OMDyM8c:00033",
-              "3yx5OMDyM8c:00034"
+              "3yx5OMDyM8c:00033"
             ]
           },
           "spoken_context_start_ms": null,
@@ -49006,16 +49087,17 @@
         {
           "id": "3yx5OMDyM8c-candidate-match-opponent-serve-rhythm-2",
           "evidence_type": "explanation",
-          "excerpt": "The speaker names receive rhythm as the second principle and repeatedly says the receiver should use the same rhythm as the opponent's serve.",
-          "reason": "A serve-receive timing principle where the receiver synchronizes tempo with the server's speed and softness, using slow rhythm on soft or slower serves and faster rhythm on quick serves to reduce errors.",
+          "excerpt": "For a long sidespin-backspin serve, chop with a slower rhythm. Against a fast heavy-backspin serve, a slow touch can go into the net; match the fast rhythm when pushing. The speaker also contrasts slow and faster looping against a fast ball.",
+          "reason": "Preserve the long sidespin-backspin and fast-heavy-backspin examples rather than applying one speed to every serve.",
           "confidence": 0.97,
           "visual_status": "not_visual",
           "source": {
             "video_id": "3yx5OMDyM8c",
-            "start_ms": 77520,
+            "start_ms": 75800,
             "end_ms": 105600,
-            "url": "https://www.youtube.com/watch?v=3yx5OMDyM8c&t=77s",
+            "url": "https://www.youtube.com/watch?v=3yx5OMDyM8c&t=75s",
             "segment_ids": [
+              "3yx5OMDyM8c:00034",
               "3yx5OMDyM8c:00035",
               "3yx5OMDyM8c:00036",
               "3yx5OMDyM8c:00037",
@@ -49038,8 +49120,8 @@
         {
           "id": "3yx5OMDyM8c-candidate-match-opponent-serve-rhythm-3",
           "evidence_type": "example",
-          "excerpt": "Examples contrast amateur mistiming with matched rhythm and claim error rate drops once rhythm is matched.",
-          "reason": "A serve-receive timing principle where the receiver synchronizes tempo with the server's speed and softness, using slow rhythm on soft or slower serves and faster rhythm on quick serves to reduce errors.",
+          "excerpt": "The speaker describes the receiver rushing nervously when an opponent serves short to the forehand, and moving too slowly against a fast opponent’s long ball. For fast sidespin-topspin, the cue is to be fast too.",
+          "reason": "The receiver should avoid rushing a short forehand return or lagging behind a fast long ball; the speaker also gives the fast sidespin-topspin cue.",
           "confidence": 0.93,
           "visual_status": "not_visual",
           "source": {
@@ -49068,8 +49150,8 @@
         {
           "id": "3yx5OMDyM8c-candidate-match-opponent-serve-rhythm-4",
           "evidence_type": "example",
-          "excerpt": "Examples contrast amateur mistiming with matched rhythm and claim error rate drops once rhythm is matched.",
-          "reason": "A serve-receive timing principle where the receiver synchronizes tempo with the server's speed and softness, using slow rhythm on soft or slower serves and faster rhythm on quick serves to reduce errors.",
+          "excerpt": "The speaker says matching the opponent’s rhythm will reduce errors.",
+          "reason": "The lesson attributes a lower error rate to matching the opponent’s rhythm.",
           "confidence": 0.93,
           "visual_status": "not_visual",
           "source": {
@@ -49090,8 +49172,8 @@
         {
           "id": "3yx5OMDyM8c-candidate-serve-receive-mirror-principle-1",
           "evidence_type": "definition",
-          "excerpt": "The speaker explicitly names the mirror principle and explains the need for a slight, not exaggerated, racket tilt against sidespin serves.",
-          "reason": "A serve-receive principle for sidespin serves in which the racket angle is slightly tilted in the appropriate direction to mirror or offset the incoming sidespin, rather than keeping a neutral face or exaggerating the tilt.",
+          "excerpt": "The lesson names the mirror principle in serve receive. In a left-sidespin example, it prefers one of two racket angles and warns against exaggerating the angle.",
+          "reason": "Keep the left-sidespin example and the warning against an exaggerated racket angle; the numbered angle is not assigned an unseen direction.",
           "confidence": 0.97,
           "visual_status": "transcript_inferred",
           "source": {
@@ -49119,8 +49201,8 @@
         {
           "id": "3yx5OMDyM8c-candidate-serve-receive-mirror-principle-2",
           "evidence_type": "definition",
-          "excerpt": "The speaker explicitly names the mirror principle and explains the need for a slight, not exaggerated, racket tilt against sidespin serves.",
-          "reason": "A serve-receive principle for sidespin serves in which the racket angle is slightly tilted in the appropriate direction to mirror or offset the incoming sidespin, rather than keeping a neutral face or exaggerating the tilt.",
+          "excerpt": "Use a slight tilt in the stated sidespin-topspin receive example. The speaker says not to exaggerate the tilt or lean the whole body.",
+          "reason": "Keep the sidespin-topspin example’s small adjustment rather than exaggerating the tilt or body lean.",
           "confidence": 0.97,
           "visual_status": "transcript_inferred",
           "source": {
@@ -49149,8 +49231,8 @@
         {
           "id": "3yx5OMDyM8c-candidate-serve-receive-mirror-principle-3",
           "evidence_type": "definition",
-          "excerpt": "The speaker explicitly names the mirror principle and explains the need for a slight, not exaggerated, racket tilt against sidespin serves.",
-          "reason": "A serve-receive principle for sidespin serves in which the racket angle is slightly tilted in the appropriate direction to mirror or offset the incoming sidespin, rather than keeping a neutral face or exaggerating the tilt.",
+          "excerpt": "The speaker estimates that the mirror principle alone can solve 80% of serve-receive problems.",
+          "reason": "This 80% figure is the speaker’s estimate of the mirror principle’s usefulness.",
           "confidence": 0.97,
           "visual_status": "transcript_inferred",
           "source": {
@@ -49170,9 +49252,9 @@
         },
         {
           "id": "3yx5OMDyM8c-candidate-serve-receive-mirror-principle-4",
-          "evidence_type": "demonstration",
-          "excerpt": "The transcript describes a comparison where improper angle curves into the net, then a slight tilt fixes the trajectory.",
-          "reason": "A serve-receive principle for sidespin serves in which the racket angle is slightly tilted in the appropriate direction to mirror or offset the incoming sidespin, rather than keeping a neutral face or exaggerating the tilt.",
+          "evidence_type": "explanation",
+          "excerpt": "The speaker discusses a slight left tilt and describes a ball curving into the net rather than going straight into it, attributing that curve to sidespin.",
+          "reason": "The passage describes sidespin affecting the ball’s net-bound curve; it does not independently verify a demonstration or a successful correction.",
           "confidence": 0.92,
           "visual_status": "transcript_inferred",
           "source": {
@@ -49199,17 +49281,18 @@
         },
         {
           "id": "3yx5OMDyM8c-candidate-serve-receive-mirror-principle-5",
-          "evidence_type": "demonstration",
-          "excerpt": "The transcript describes a comparison where improper angle curves into the net, then a slight tilt fixes the trajectory.",
-          "reason": "A serve-receive principle for sidespin serves in which the racket angle is slightly tilted in the appropriate direction to mirror or offset the incoming sidespin, rather than keeping a neutral face or exaggerating the tilt.",
+          "evidence_type": "explanation",
+          "excerpt": "With the same brushing motion, the speaker calls for a slight hand tilt and a slight sidespin adjustment.",
+          "reason": "The stated adjustment changes the hand tilt slightly while retaining the brushing motion.",
           "confidence": 0.92,
           "visual_status": "transcript_inferred",
           "source": {
             "video_id": "3yx5OMDyM8c",
-            "start_ms": 241320,
+            "start_ms": 236680,
             "end_ms": 250840,
-            "url": "https://www.youtube.com/watch?v=3yx5OMDyM8c&t=241s",
+            "url": "https://www.youtube.com/watch?v=3yx5OMDyM8c&t=236s",
             "segment_ids": [
+              "3yx5OMDyM8c:00095",
               "3yx5OMDyM8c:00096",
               "3yx5OMDyM8c:00097"
             ]
@@ -49222,16 +49305,19 @@
         {
           "id": "3yx5OMDyM8c-candidate-serve-receive-mirror-principle-6",
           "evidence_type": "example",
-          "excerpt": "The speaker gives directional application: aim slightly right for left sidespin and slightly left for right sidespin, and extends it to push/chop receive.",
-          "reason": "A serve-receive principle for sidespin serves in which the racket angle is slightly tilted in the appropriate direction to mirror or offset the incoming sidespin, rather than keeping a neutral face or exaggerating the tilt.",
+          "excerpt": "The lesson identifies rising and early falling phases as the moments when spin is least, and calls for the position where spin has least effect. For left sidespin, aim slightly right; for right sidespin, slightly left. The push-chop follows the same principle.",
+          "reason": "Preserve the stated phase and directional cues, including the left-versus-right sidespin distinction.",
           "confidence": 0.88,
           "visual_status": "not_visual",
           "source": {
             "video_id": "3yx5OMDyM8c",
-            "start_ms": 371160,
+            "start_ms": 365560,
             "end_ms": 385640,
-            "url": "https://www.youtube.com/watch?v=3yx5OMDyM8c&t=371s",
+            "url": "https://www.youtube.com/watch?v=3yx5OMDyM8c&t=365s",
             "segment_ids": [
+              "3yx5OMDyM8c:00136",
+              "3yx5OMDyM8c:00137",
+              "3yx5OMDyM8c:00138",
               "3yx5OMDyM8c:00139",
               "3yx5OMDyM8c:00140",
               "3yx5OMDyM8c:00141",
@@ -49248,8 +49334,8 @@
         {
           "id": "3yx5OMDyM8c-candidate-weak-spin-timing-on-receive-1",
           "evidence_type": "definition",
-          "excerpt": "A receive-timing concept that the easiest time to control spin is during the ball's rising phase or early falling phase, while the peak bounce is the hardest because spin influence is strongest there.",
-          "reason": "The speaker says players should find the moment where spin is weakest and identifies the rising and early falling phases as that window.",
+          "excerpt": "The speaker recommends finding the moment and angle where spin is weakest and brushing there, identifying the rising and early falling phases as weakest and the peak as strongest.",
+          "reason": "These timing and spin-strength descriptions are the lesson’s stated explanation.",
           "confidence": 0.96,
           "visual_status": "not_visual",
           "source": {
@@ -49274,8 +49360,8 @@
         {
           "id": "3yx5OMDyM8c-candidate-weak-spin-timing-on-receive-2",
           "evidence_type": "example",
-          "excerpt": "A receive-timing concept that the easiest time to control spin is during the ball's rising phase or early falling phase, while the peak bounce is the hardest because spin influence is strongest there.",
-          "reason": "The speaker contrasts successful loops in the rising phase with a jammed contact at the peak.",
+          "excerpt": "The speaker says the earlier loops were in the rising phase and contrasts a peak-phase example that can jam the player even with the same stroke.",
+          "reason": "The passage contrasts rising-phase loops with peak-phase jamming in the speaker’s examples.",
           "confidence": 0.89,
           "visual_status": "transcript_inferred",
           "source": {
@@ -49298,20 +49384,21 @@
         {
           "id": "3yx5OMDyM8c-candidate-weak-spin-timing-on-receive-3",
           "evidence_type": "explanation",
-          "excerpt": "A receive-timing concept that the easiest time to control spin is during the ball's rising phase or early falling phase, while the peak bounce is the hardest because spin influence is strongest there.",
-          "reason": "The timing principle is restated as a general receive rule for finding when the ball spins least.",
+          "excerpt": "The speaker identifies the rising and early falling phases as when the ball spins least, and recommends finding the position where spin has least effect.",
+          "reason": "Use the lesson’s stated timing and position criteria rather than adding a universal claim about easiest contact.",
           "confidence": 0.91,
           "visual_status": "not_visual",
           "source": {
             "video_id": "3yx5OMDyM8c",
             "start_ms": 365560,
-            "end_ms": 375640,
+            "end_ms": 378240,
             "url": "https://www.youtube.com/watch?v=3yx5OMDyM8c&t=365s",
             "segment_ids": [
               "3yx5OMDyM8c:00136",
               "3yx5OMDyM8c:00137",
               "3yx5OMDyM8c:00138",
-              "3yx5OMDyM8c:00139"
+              "3yx5OMDyM8c:00139",
+              "3yx5OMDyM8c:00140"
             ]
           },
           "spoken_context_start_ms": null,
@@ -49322,8 +49409,8 @@
         {
           "id": "bUCFpvTlaMU-candidate-serve-receive-principles-1",
           "evidence_type": "definition",
-          "excerpt": "A general receive framework: prioritize getting the ball on the table, adjust response to the incoming serve quality and spin, and choose a stable versus accelerated action based on what you can read.",
-          "reason": "The speaker introduces a universal receive method and states the core serve-receive rule about constant speed versus acceleration.",
+          "excerpt": "For the short forehand, the lesson introduces what it calls a universal receive technique.",
+          "reason": "The speaker introduces short-forehand receive as the starting case for this technique.",
           "confidence": 0.95,
           "visual_status": "not_visual",
           "source": {
@@ -49344,8 +49431,8 @@
         {
           "id": "bUCFpvTlaMU-candidate-serve-receive-principles-2",
           "evidence_type": "definition",
-          "excerpt": "A general receive framework: prioritize getting the ball on the table, adjust response to the incoming serve quality and spin, and choose a stable versus accelerated action based on what you can read.",
-          "reason": "The speaker introduces a universal receive method and states the core serve-receive rule about constant speed versus acceleration.",
+          "excerpt": "The stated serve-receive rule is constant speed when spin cannot be read, and acceleration when spin can be read.",
+          "reason": "Choose between the stated constant-speed and accelerated actions according to the ability to read spin.",
           "confidence": 0.95,
           "visual_status": "not_visual",
           "source": {
@@ -49366,8 +49453,8 @@
         {
           "id": "bUCFpvTlaMU-candidate-serve-receive-principles-3",
           "evidence_type": "explanation",
-          "excerpt": "A general receive framework: prioritize getting the ball on the table, adjust response to the incoming serve quality and spin, and choose a stable versus accelerated action based on what you can read.",
-          "reason": "The speaker states the primary goal of receive is not maximum quality but simply landing the ball.",
+          "excerpt": "Serve receive is not meant for maximum quality; the first priority is getting the ball on the table.",
+          "reason": "The speaker’s first receive priority is landing the ball rather than maximum quality.",
           "confidence": 0.9,
           "visual_status": "not_visual",
           "source": {
@@ -49389,20 +49476,25 @@
         {
           "id": "bUCFpvTlaMU-candidate-constant-speed-receive-1",
           "evidence_type": "definition",
-          "excerpt": "The speaker explicitly says that when spin cannot be gauged, use constant speed and do not let the ball rush off the racket.",
-          "reason": "When the receiver cannot read the incoming spin well, use a uniform stroke speed and force from preparation through finish instead of adding a late snap.",
+          "excerpt": "When spin cannot be gauged, use constant speed, carry the ball and send it over. When spin can be read, use a snap. When unsure, wait late, slow the feet and control racket speed without letting the ball rush off; send it out with body weight stable.",
+          "reason": "Keep the unreadable-versus-readable-spin distinction and the late, constant-speed option when unsure.",
           "confidence": 0.95,
           "visual_status": "not_visual",
           "source": {
             "video_id": "bUCFpvTlaMU",
             "start_ms": 110640,
-            "end_ms": 129880,
+            "end_ms": 136840,
             "url": "https://www.youtube.com/watch?v=bUCFpvTlaMU&t=110s",
             "segment_ids": [
               "bUCFpvTlaMU:00046",
               "bUCFpvTlaMU:00047",
+              "bUCFpvTlaMU:00048",
               "bUCFpvTlaMU:00049",
-              "bUCFpvTlaMU:00052"
+              "bUCFpvTlaMU:00050",
+              "bUCFpvTlaMU:00051",
+              "bUCFpvTlaMU:00052",
+              "bUCFpvTlaMU:00053",
+              "bUCFpvTlaMU:00054"
             ]
           },
           "spoken_context_start_ms": null,
@@ -49413,17 +49505,19 @@
         {
           "id": "bUCFpvTlaMU-candidate-constant-speed-receive-2",
           "evidence_type": "explanation",
-          "excerpt": "The transcript defines constant speed versus acceleration and states this as the receive rule when spin reading is uncertain.",
-          "reason": "When the receiver cannot read the incoming spin well, use a uniform stroke speed and force from preparation through finish instead of adding a late snap.",
+          "excerpt": "When spin cannot be read, do not use a grip snap. Keep a unified feel and constant speed.",
+          "reason": "Preserve the unreadable-spin condition for avoiding a grip snap.",
           "confidence": 0.96,
           "visual_status": "not_visual",
           "source": {
             "video_id": "bUCFpvTlaMU",
             "start_ms": 226720,
-            "end_ms": 230880,
+            "end_ms": 236960,
             "url": "https://www.youtube.com/watch?v=bUCFpvTlaMU&t=226s",
             "segment_ids": [
-              "bUCFpvTlaMU:00092"
+              "bUCFpvTlaMU:00092",
+              "bUCFpvTlaMU:00093",
+              "bUCFpvTlaMU:00094"
             ]
           },
           "spoken_context_start_ms": null,
@@ -49434,16 +49528,18 @@
         {
           "id": "bUCFpvTlaMU-candidate-constant-speed-receive-3",
           "evidence_type": "explanation",
-          "excerpt": "The transcript defines constant speed versus acceleration and states this as the receive rule when spin reading is uncertain.",
-          "reason": "When the receiver cannot read the incoming spin well, use a uniform stroke speed and force from preparation through finish instead of adding a late snap.",
+          "excerpt": "Constant speed is described as the same feel from preparation through contact and finish, without variation in force or speed.",
+          "reason": "This passage defines the lesson’s constant-speed action across the stroke phases.",
           "confidence": 0.96,
           "visual_status": "not_visual",
           "source": {
             "video_id": "bUCFpvTlaMU",
-            "start_ms": 258280,
+            "start_ms": 253360,
             "end_ms": 262880,
-            "url": "https://www.youtube.com/watch?v=bUCFpvTlaMU&t=258s",
+            "url": "https://www.youtube.com/watch?v=bUCFpvTlaMU&t=253s",
             "segment_ids": [
+              "bUCFpvTlaMU:00098",
+              "bUCFpvTlaMU:00099",
               "bUCFpvTlaMU:00100"
             ]
           },
@@ -49455,8 +49551,8 @@
         {
           "id": "bUCFpvTlaMU-candidate-constant-speed-receive-4",
           "evidence_type": "explanation",
-          "excerpt": "The transcript defines constant speed versus acceleration and states this as the receive rule when spin reading is uncertain.",
-          "reason": "When the receiver cannot read the incoming spin well, use a uniform stroke speed and force from preparation through finish instead of adding a late snap.",
+          "excerpt": "The receive rule distinguishes constant speed for unreadable spin from acceleration for readable spin, then introduces a hook-serve bump comparison.",
+          "reason": "Keep the spin-reading condition attached to the constant-speed versus acceleration rule.",
           "confidence": 0.96,
           "visual_status": "not_visual",
           "source": {
@@ -49466,6 +49562,7 @@
             "url": "https://www.youtube.com/watch?v=bUCFpvTlaMU&t=294s",
             "segment_ids": [
               "bUCFpvTlaMU:00110",
+              "bUCFpvTlaMU:00111",
               "bUCFpvTlaMU:00112"
             ]
           },
@@ -49477,16 +49574,17 @@
         {
           "id": "bUCFpvTlaMU-candidate-constant-speed-receive-5",
           "evidence_type": "example",
-          "excerpt": "A hook-serve bump example contrasts constant-speed receive with an over-accelerated receive that flies long.",
-          "reason": "When the receiver cannot read the incoming spin well, use a uniform stroke speed and force from preparation through finish instead of adding a late snap.",
+          "excerpt": "In the hook-serve bump comparison, the speaker says constant speed lands the ball while acceleration sends it out.",
+          "reason": "This is the speaker’s stated outcome for the hook-serve bump example, not a universal acceleration rule.",
           "confidence": 0.86,
           "visual_status": "transcript_inferred",
           "source": {
             "video_id": "bUCFpvTlaMU",
-            "start_ms": 308800,
+            "start_ms": 299919,
             "end_ms": 319040,
-            "url": "https://www.youtube.com/watch?v=bUCFpvTlaMU&t=308s",
+            "url": "https://www.youtube.com/watch?v=bUCFpvTlaMU&t=299s",
             "segment_ids": [
+              "bUCFpvTlaMU:00112",
               "bUCFpvTlaMU:00113",
               "bUCFpvTlaMU:00114"
             ]
@@ -49499,8 +49597,8 @@
         {
           "id": "bUCFpvTlaMU-candidate-rate-incoming-ball-quality-1",
           "evidence_type": "definition",
-          "excerpt": "A receive and rally decision method where the player first evaluates the incoming ball's speed and quality, then chooses how much force to return rather than matching the incoming ball automatically.",
-          "reason": "The speaker introduces a numeric rating principle for sidespin-topspin receive and explains returning less than the incoming quality.",
+          "excerpt": "For sidespin-topspin receive, rate the incoming ball: if it is six, respond with four. The speaker says returning six against six sends it out.",
+          "reason": "Use the stated six-to-four response in this sidespin-topspin rating example.",
           "confidence": 0.95,
           "visual_status": "not_visual",
           "source": {
@@ -49510,6 +49608,9 @@
             "url": "https://www.youtube.com/watch?v=bUCFpvTlaMU&t=346s",
             "segment_ids": [
               "bUCFpvTlaMU:00125",
+              "bUCFpvTlaMU:00126",
+              "bUCFpvTlaMU:00127",
+              "bUCFpvTlaMU:00128",
               "bUCFpvTlaMU:00129"
             ]
           },
@@ -49521,8 +49622,8 @@
         {
           "id": "bUCFpvTlaMU-candidate-rate-incoming-ball-quality-2",
           "evidence_type": "example",
-          "excerpt": "A receive and rally decision method where the player first evaluates the incoming ball's speed and quality, then chooses how much force to return rather than matching the incoming ball automatically.",
-          "reason": "The rating system is extended to topspin balls and flicks as a general response rule.",
+          "excerpt": "The speaker extends the rating system to topspin flicks, forehand, middle and rallies. In a nine-quality incoming-ball example, the response is described as “five fours”; the ball goes out despite the receiver not feeling strong, because incoming quality is high.",
+          "reason": "Judge incoming topspin quality rather than only the effort felt by the receiver; the nine-quality example retains the source’s “five fours” wording.",
           "confidence": 0.91,
           "visual_status": "not_visual",
           "source": {
@@ -49532,6 +49633,10 @@
             "url": "https://www.youtube.com/watch?v=bUCFpvTlaMU&t=365s",
             "segment_ids": [
               "bUCFpvTlaMU:00130",
+              "bUCFpvTlaMU:00131",
+              "bUCFpvTlaMU:00132",
+              "bUCFpvTlaMU:00133",
+              "bUCFpvTlaMU:00134",
               "bUCFpvTlaMU:00135"
             ]
           },
@@ -49543,8 +49648,8 @@
         {
           "id": "bUCFpvTlaMU-candidate-rate-incoming-ball-quality-3",
           "evidence_type": "explanation",
-          "excerpt": "A receive and rally decision method where the player first evaluates the incoming ball's speed and quality, then chooses how much force to return rather than matching the incoming ball automatically.",
-          "reason": "The speaker attributes rally consistency to judging incoming quality first and then borrowing, adding, or redirecting power with the body leading.",
+          "excerpt": "Judge incoming quality before choosing to borrow power, add power or redirect. Lead with the feet and weight while keeping the hands soft to control sidespin-topspin.",
+          "reason": "Preserve the sidespin-topspin condition for the stated judgment, power choice and feet-and-weight lead.",
           "confidence": 0.93,
           "visual_status": "not_visual",
           "source": {
@@ -49554,6 +49659,10 @@
             "url": "https://www.youtube.com/watch?v=bUCFpvTlaMU&t=399s",
             "segment_ids": [
               "bUCFpvTlaMU:00144",
+              "bUCFpvTlaMU:00145",
+              "bUCFpvTlaMU:00146",
+              "bUCFpvTlaMU:00147",
+              "bUCFpvTlaMU:00148",
               "bUCFpvTlaMU:00149"
             ]
           },
@@ -49565,8 +49674,8 @@
         {
           "id": "bUCFpvTlaMU-candidate-heavy-spin-requires-faster-stroke-frequency-1",
           "evidence_type": "explanation",
-          "excerpt": "Against heavy spin, concentrate the action of the forearm, upper arm, core, fingers, and wrist into the contact moment and complete the stroke.",
-          "reason": "Against heavy spin, concentrate the action of the forearm, upper arm, core, fingers, and wrist into the contact moment and complete the stroke.",
+          "excerpt": "The speaker attributes eating spin to an unfinished stroke and insufficient arm strength, says heavy spin gives only 0.2 seconds, and calls for forearm, upper arm, core, fingers and wrist action concentrated into that instant.",
+          "reason": "The heavy-spin timing and 0.2-second figure are the speaker’s explanation; concentrate the named body parts in that stated example.",
           "confidence": 0.92,
           "visual_status": "not_visual",
           "source": {
@@ -49591,8 +49700,8 @@
         {
           "id": "bUCFpvTlaMU-candidate-heavy-spin-requires-faster-stroke-frequency-2",
           "evidence_type": "explanation",
-          "excerpt": "Brushing, dropping, and finishing may still fail against heavy spin when the stroke is too slow; the same action performed faster is recommended.",
-          "reason": "Brushing, dropping, and finishing may still fail against heavy spin when the stroke is too slow; the same action performed faster is recommended.",
+          "excerpt": "Brushing, dropping and finishing can still fail when spin makes the ball drop faster than it is lifted. The speaker contrasts the same motion performed slowly and quickly, attributing heavy-spin misses despite reading the spin to a stroke frequency that is too slow.",
+          "reason": "In the stated heavy-spin example, the speaker recommends a quicker version of the action rather than treating spin reading alone as sufficient.",
           "confidence": 0.92,
           "visual_status": "not_visual",
           "source": {
@@ -49619,8 +49728,8 @@
         {
           "id": "bUCFpvTlaMU-candidate-heavy-spin-requires-faster-stroke-frequency-3",
           "evidence_type": "definition",
-          "excerpt": "Against heavier spin, finish faster and use a concentrated loop rather than a slower, softer stroke.",
-          "reason": "Against heavier spin, finish faster and use a concentrated loop rather than a slower, softer stroke.",
+          "excerpt": "Against heavier spin, the speaker says to finish faster and use a concentrated loop rather than going slower, softer or weaker. The explanation contrasts the spin’s downward speed with the player’s upward speed and calls for decisiveness.",
+          "reason": "Keep the heavier-spin condition for the faster, concentrated-loop advice.",
           "confidence": 0.91,
           "visual_status": "not_visual",
           "source": {
@@ -49649,8 +49758,8 @@
         {
           "id": "tWJXY0cUPRQ-cand-attacking-serve-receive-development-1",
           "evidence_type": "explanation",
-          "excerpt": "Speaker explains players poke out of fear and lack of spin understanding.",
-          "reason": "A training approach that prioritizes attempting attacking receives, accepting short-term losses and errors so the player can break out of a passive poking ceiling.",
+          "excerpt": "The speaker links poking to fear and not knowing the spin: players hope a touch lands and the opponent misses, then default to poking in matches even though committing might develop their play.",
+          "reason": "The passage describes fear-driven poking and a possible development tradeoff rather than a completed attacking-receive training prescription.",
           "confidence": 0.91,
           "visual_status": "not_visual",
           "source": {
@@ -49677,8 +49786,8 @@
         {
           "id": "tWJXY0cUPRQ-cand-attacking-serve-receive-development-2",
           "evidence_type": "explanation",
-          "excerpt": "Speaker says improvement requires a period dedicated to losing, experimenting, and failing instead of staying with passive strokes.",
-          "reason": "A training approach that prioritizes attempting attacking receives, accepting short-term losses and errors so the player can break out of a passive poking ceiling.",
+          "excerpt": "The speaker recommends a period for experimenting, losing and failing, quoting a coach’s warning that winning by pushing, blocking and poking alone can become a ceiling without change.",
+          "reason": "This passage advocates experimentation and accepting setbacks to change the described playing ceiling.",
           "confidence": 0.95,
           "visual_status": "not_visual",
           "source": {
@@ -49704,8 +49813,8 @@
         {
           "id": "tWJXY0cUPRQ-cand-attacking-serve-receive-development-3",
           "evidence_type": "example",
-          "excerpt": "Speaker gives coaching example of making kids attack on serve receive before they can loop consistently.",
-          "reason": "A training approach that prioritizes attempting attacking receives, accepting short-term losses and errors so the player can break out of a passive poking ceiling.",
+          "excerpt": "The speaker makes the children they teach attack on serve receive, saying they cannot loop it now but may do so one day.",
+          "reason": "This is the speaker’s coaching example of attempting attacking receives before the students can loop them consistently.",
           "confidence": 0.89,
           "visual_status": "not_visual",
           "source": {
@@ -49727,8 +49836,8 @@
         {
           "id": "bKtA240EvTQ-concept-serve-receive-principles-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "In serve receive, emphasize small, compact movements and adjust motion size, timing, racket angle, and force.",
-          "reason": "This contiguous span directly explains that serve receive uses small, compact movements and differs in motion size, timing, racket angle, and force.",
+          "excerpt": "Serve receive emphasizes small, compact movements. The lesson contrasts it with attack after one’s own serve, naming movement size, timing, racket angle and force as differences.",
+          "reason": "Keep the distinction between receiving a serve and attacking after serving when describing compact receive actions.",
           "confidence": 0.97,
           "visual_status": "transcript_inferred",
           "source": {
@@ -49740,6 +49849,7 @@
               "bKtA240EvTQ:00306",
               "bKtA240EvTQ:00307",
               "bKtA240EvTQ:00308",
+              "bKtA240EvTQ:00309",
               "bKtA240EvTQ:00310",
               "bKtA240EvTQ:00311",
               "bKtA240EvTQ:00312"
@@ -49753,8 +49863,8 @@
         {
           "id": "hw8RsLGOARs-concept-serve-receive-principles-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "On serve receive, first use a relaxed block to absorb the ball’s power and spin, then follow through to complete the stroke.",
-          "reason": "This contiguous 25-second explanation directly states that serve contact should be relaxed, begins with a block that absorbs power and spin, and is followed by the rest of the stroke.",
+          "excerpt": "The speaker describes initial serve-receive contact as a block rather than a hit: absorb the ball’s power and spin first, then follow through and execute the rest of the stroke.",
+          "reason": "The speaker’s contact sequence is block and absorb first, followed by the rest of the stroke; this is more than a simple tap.",
           "confidence": 0.99,
           "visual_status": "not_visual",
           "source": {
@@ -49783,7 +49893,7 @@
             {
               "video_id": "3yx5OMDyM8c",
               "start_ms": 50680,
-              "end_ms": 79640,
+              "end_ms": 77520,
               "url": "https://www.youtube.com/watch?v=3yx5OMDyM8c&t=50s",
               "segment_ids": [
                 "3yx5OMDyM8c:00023",
@@ -49791,12 +49901,33 @@
                 "3yx5OMDyM8c:00025",
                 "3yx5OMDyM8c:00026",
                 "3yx5OMDyM8c:00027",
+                "3yx5OMDyM8c:00028",
                 "3yx5OMDyM8c:00029",
                 "3yx5OMDyM8c:00030",
                 "3yx5OMDyM8c:00031",
                 "3yx5OMDyM8c:00032",
-                "3yx5OMDyM8c:00033",
-                "3yx5OMDyM8c:00034"
+                "3yx5OMDyM8c:00033"
+              ]
+            },
+            {
+              "video_id": "3yx5OMDyM8c",
+              "start_ms": 75800,
+              "end_ms": 105600,
+              "url": "https://www.youtube.com/watch?v=3yx5OMDyM8c&t=75s",
+              "segment_ids": [
+                "3yx5OMDyM8c:00034",
+                "3yx5OMDyM8c:00035",
+                "3yx5OMDyM8c:00036",
+                "3yx5OMDyM8c:00037",
+                "3yx5OMDyM8c:00038",
+                "3yx5OMDyM8c:00039",
+                "3yx5OMDyM8c:00040",
+                "3yx5OMDyM8c:00041",
+                "3yx5OMDyM8c:00042",
+                "3yx5OMDyM8c:00043",
+                "3yx5OMDyM8c:00044",
+                "3yx5OMDyM8c:00045",
+                "3yx5OMDyM8c:00046"
               ]
             }
           ],
