@@ -33,6 +33,8 @@ def audit_dossier(concept: Concept, videos: dict[str, Video], concepts: dict[str
             index + offset for index in indices for offset in (-2, -1, 1, 2)
             if 0 <= index + offset < len(rows)
         } - indices
+        context.update(index for index, row in enumerate(rows)
+                       if span.start_ms <= row.start_ms and row.end_ms <= span.end_ms and index not in indices)
         sources.append({
             "source": span.model_dump(mode="json"),
             "video": {
@@ -141,6 +143,7 @@ def build_published_audit(
             "concept_id": concept.id, "slug": concept.slug, "fingerprint": fingerprint,
             "claim_fingerprint": claim_fingerprint, "overlap_fingerprint": overlap_fingerprint,
             "decisions": _units(concept), "reviewer": None, "reviewed_at": None,
+            "overlap_review_pending": bool(prior and prior.get("overlap_review_pending")),
         })
     history.extend({"reason": "no_longer_public", "item": deepcopy(item)} for item in old.values())
     source_metadata_findings = []

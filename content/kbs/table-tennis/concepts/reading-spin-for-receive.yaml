@@ -1,31 +1,22 @@
 id: concept-reading-spin-for-receive
 slug: reading-spin-for-receive
-label: Reading spin for receive
+label: Reading incoming spin
 aliases:
-- understanding spin for receive
 - spin judgment
-- distinguish heavy spin from light spin
-short_definition: Recognizing how much spin a received ball has so the receiver can choose an appropriate response.
+- distinguishing heavy and light spin
+short_definition: Recognizing incoming spin type and strength to choose or adjust a response.
 evidence_summary: >-
-  This contiguous moment directly describes difficulty reading incoming spin and distinguishes sidespin from backspin during receive. For short serves, identify the opponent’s spin promptly and minimize judgment errors so responses to spin shots become more stable and manageable.
-evidence_summary_source_hash: "sha256:f1e38fc08a1e14bf1b50e2b3d3206dfe5a89af780fb61382ff25b44939d168fd"
-evidence_summary_generator: "deterministic"
+  One speaker asks why a serve is still missed after being identified as sidespin. Another recommends friction with a relaxed wrist on the backhand when topspin versus backspin is unclear. Other cues change pushing or backswing racket angle with spin strength. In a pips-return discussion, a topspin return after a backspin serve is treated as topspin; a separate cue says to brush “a return from topspin” like backspin.
 concept_type: tactic
 facets:
   category:
   - fundamentals
-  - practice
-  side:
-  - neutral
   spin:
   - topspin
   - backspin
   - sidespin
   - no-spin
-  level:
-  - beginner
-  - intermediate
-difficulty: beginner
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -1179,8 +1170,8 @@ evidence:
     - TF56et74wQ8:00130
 - id: -J5iKei3MIQ-concept-reading-spin-for-receive-codex-reviewed
   evidence_type: explanation
-  excerpt: Receiving requires judging the serve’s spin; identifying a serve as sidespin alone does not guarantee a successful receive.
-  reason: This contiguous span explicitly states that the receiver must judge spin, then explains that even recognizing a sidespin serve does not by itself prevent a missed receive.
+  excerpt: The speaker says spin must be judged, then asks why a sidespin serve is still missed after being recognized as sidespin.
+  reason: The question concerns a receive problem after a sidespin serve has been recognized.
   confidence: 0.96
   visual_status: not_visual
   review_status: approved
@@ -1199,8 +1190,8 @@ evidence:
     - -J5iKei3MIQ:00124
 - id: 2xGbue3FXIw-concept-reading-spin-for-receive-codex-reviewed
   evidence_type: explanation
-  excerpt: Does everyone think it's topspin or backspin? ... For example, if I can't tell whether it's topspin or backspin. Then on your backhand side, remember to use friction first. The key point about friction is that your wrist must be relaxed.
-  reason: This contiguous span directly discusses identifying incoming serve spin and choosing a backhand receive response, matching the existing concept.
+  excerpt: If topspin versus backspin is unclear, the lesson recommends friction first on the backhand, with a relaxed wrist.
+  reason: The friction-first, relaxed-wrist cue is conditional on uncertainty between topspin and backspin on the backhand.
   confidence: 0.99
   visual_status: transcript_inferred
   review_status: approved
@@ -1220,8 +1211,8 @@ evidence:
     - 2xGbue3FXIw:00019
 - id: 4gMbiB6mrrY-concept-reading-spin-for-receive-codex-reviewed
   evidence_type: explanation
-  excerpt: Observe the opponent’s spin because your position must change as the spin changes; against half-spin or no-spin, angle the racket downward.
-  reason: This contiguous 23-second span directly explains watching the opponent’s spin and changing racket position and angle for different spin amounts.
+  excerpt: Observe the spin. For a spinning ball the lesson says to hit forward; for half-spin or no-spin it describes countering sideways as difficult and angles the racket downward.
+  reason: The instruction contrasts spinning balls with half-spin or no-spin and lowers the racket angle for the latter.
   confidence: 0.93
   visual_status: transcript_inferred
   review_status: approved
@@ -1242,7 +1233,7 @@ evidence:
   reason: This contiguous 11.9-second span directly explains evaluating incoming-ball quality and speed to select between topspin and counter-loop, matching the supplied existing concept.
   confidence: 0.95
   visual_status: transcript_inferred
-  review_status: approved
+  review_status: unreviewed
   source:
     video_id: 6Lw_HobLgSY
     start_ms: 47666
@@ -1256,8 +1247,8 @@ evidence:
     - 6Lw_HobLgSY:00024
 - id: 9IzbAEYcS5A-concept-reading-spin-for-receive-codex-reviewed
   evidence_type: explanation
-  excerpt: For a right-sided spin, watch the spin of the ball, then touch it with added friction.
-  reason: This contiguous 9-second span directly explains observing the incoming spin and responding with a controlled touch. It matches the supplied existing concept.
+  excerpt: For the right-sided-spin example, watch the spin and touch the ball with added friction.
+  reason: The cue pairs observing right-sided spin with a touch and added friction.
   confidence: 0.97
   visual_status: not_visual
   review_status: approved
@@ -1272,8 +1263,8 @@ evidence:
     - 9IzbAEYcS5A:00032
 - id: HmoqZLuY1Ik-concept-reading-spin-for-receive-codex-reviewed
   evidence_type: explanation
-  excerpt: The speaker struggles to identify the spin, then identifies one ball as sidespin and another as backspin while discussing receiving it.
-  reason: This contiguous transcript moment directly describes difficulty reading incoming spin and distinguishes sidespin from backspin during receive.
+  excerpt: The speaker labels one ball sidespin and another backspin, then asks for a receive.
+  reason: The passage identifies sidespin and backspin in a receive exchange.
   confidence: 0.97
   visual_status: transcript_inferred
   review_status: approved
@@ -1290,8 +1281,8 @@ evidence:
     - HmoqZLuY1Ik:00162
 - id: HWy3VGWHE5Q-concept-reading-spin-for-receive-codex-reviewed
   evidence_type: explanation
-  excerpt: When a backspin serve returns as topspin, treat it as topspin; when a topspin return comes back, brush it like backspin. You must know what kind of spin you are dealing with.
-  reason: This contiguous span directly explains that the receiver must identify the actual spin of the return and adjust the stroke accordingly.
+  excerpt: In this pips-return discussion, a topspin return after a backspin serve is treated as topspin. The lesson also says to brush “a return from topspin” like backspin and warns that backing off can lose the contact point.
+  reason: The lesson addresses the spin of the return after serving and warns about losing the contact point by backing off.
   confidence: 0.99
   visual_status: transcript_inferred
   review_status: approved
@@ -1306,6 +1297,7 @@ evidence:
     - HWy3VGWHE5Q:00234
     - HWy3VGWHE5Q:00235
     - HWy3VGWHE5Q:00236
+    - HWy3VGWHE5Q:00237
     - HWy3VGWHE5Q:00238
     - HWy3VGWHE5Q:00239
     - HWy3VGWHE5Q:00240
@@ -1313,8 +1305,8 @@ evidence:
     - HWy3VGWHE5Q:00242
 - id: D596gPtN634-concept-reading-spin-for-receive-codex-reviewed
   evidence_type: explanation
-  excerpt: Amateur players often cannot accurately read the spin on an incoming push. Treating a light-spin ball as heavy backspin and adding power sends the loop long, while treating heavy spin incorrectly sends it into the net, so the loop must be adapted to the opponent's spin.
-  reason: This contiguous 24.7-second span directly explains reading incoming spin and adapting the loop response. The proposed concept is the same durable topic as the supplied existing concept, so the existing ID is accepted.
+  excerpt: The lesson says misreading a light-spin push as heavy backspin and adding power sends the loop long, while power looping a heavy-spin push sends it into the net. Adapt the loop to the opponent’s spin.
+  reason: The warning distinguishes light-spin and heavy-spin pushes rather than using the same power response for both.
   confidence: 0.99
   visual_status: transcript_inferred
   review_status: approved
@@ -1331,8 +1323,8 @@ evidence:
     - D596gPtN634:00008
 - id: hw8RsLGOARs-concept-reading-spin-for-receive-codex-reviewed
   evidence_type: explanation
-  excerpt: Fast wrist and finger action usually produces heavy spin; slower wrist action or downward chopping produces lighter backspin.
-  reason: This contiguous 24.1-second span directly explains how to judge serve spin amount from the server’s motion and identifies the topic as serve receive.
+  excerpt: A fast wrist-and-finger snap usually produces heavy spin. Slower wrist-and-finger action still produces backspin; a downward chop without much wrist action is described as a lower-spin option.
+  reason: The serve-reading cue compares fast wrist-and-finger action with slower action or a chop using little wrist movement.
   confidence: 0.98
   visual_status: not_visual
   review_status: approved
@@ -1348,8 +1340,8 @@ evidence:
     - hw8RsLGOARs:00004
 - id: PCRCB9FGBPg-concept-reading-spin-for-receive-codex-reviewed
   evidence_type: explanation
-  excerpt: When the opponent's serve is very spinny, use a smooth, even-paced push; when the spin is weak, accelerate through the ball.
-  reason: This contiguous span directly explains reading serve-spin strength and matching the receive action to it.
+  excerpt: The lesson advises a smooth, even-paced push for a very spinny serve and accelerating through a weak-spin ball.
+  reason: The receive cue changes the pushing action between strong-spin and weak-spin serves.
   confidence: 0.99
   visual_status: transcript_inferred
   review_status: approved
@@ -1363,8 +1355,8 @@ evidence:
     - PCRCB9FGBPg:00080
 - id: J7Lm5IL-ggs-concept-reading-spin-for-receive-codex-reviewed
   evidence_type: explanation
-  excerpt: 'Adjust the backswing and racket angle according to the opponent’s spin: open the face more for heavier backspin or very spinny balls, close it slightly for less spin, and make the adjustment during the backswing rather than at contact.'
-  reason: These contiguous segments directly explain adjusting backswing and racket-face angle based on incoming spin, including heavier backspin and lower-spin balls, with the adjustment made during the backswing.
+  excerpt: 'Adjust the racket angle during the backswing rather than at contact. For heavier backspin the lesson opens the face slightly; for an amateur facing an extremely spinny ball it opens more, while for less spin it closes slightly.'
+  reason: The lesson adjusts racket openness to spin strength during the backswing, with extra opening advice for an amateur facing extreme spin.
   confidence: 0.99
   visual_status: transcript_inferred
   review_status: approved
@@ -1381,8 +1373,8 @@ evidence:
     - J7Lm5IL-ggs:00139
 - id: Whmhzk845aA-concept-reading-spin-for-receive-codex-reviewed
   evidence_type: explanation
-  excerpt: For short serves, promptly identify the type of spin in the opponent’s shot. Reducing judgment errors makes spin-shot technique more stable; poor judgment makes spin shots difficult to handle.
-  reason: For short serves, identify the opponent’s spin promptly and minimize judgment errors so responses to spin shots become more stable and manageable.
+  excerpt: For this opponent’s subtle short serves, recognize his movement patterns and playing habits to determine spin and reduce judgment errors. The speaker links fewer judgment errors with more stable technique.
+  reason: Recognizing this opponent’s movement patterns and habits is the stated way to improve spin judgment.
   confidence: 0.96
   visual_status: transcript_inferred
   review_status: approved

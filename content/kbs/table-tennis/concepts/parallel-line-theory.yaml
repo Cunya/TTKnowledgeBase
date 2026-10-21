@@ -1,26 +1,17 @@
 id: concept-parallel-line-theory
 slug: parallel-line-theory
-label: Parallel line theory
+label: Matching racket angles on serve receive
 aliases:
-  - parallel line theory
-  - match your racket angle
-  - parallel line
-short_definition: A receive principle that matches your racket angle to the server's racket angle so the return follows the incoming serve rather than flying off.
+- match your racket angle
+- mirror the opponent's racket angle
+short_definition: "When receiving serve, read the opponent's racket angle and match yours to it: flat against flat, or slightly open against slightly open."
 evidence_summary: >-
-  A receive principle that matches your racket angle to the server's racket angle so the return
-  follows the incoming serve rather than flying off.
-evidence_summary_source_hash: "sha256:78b4feff135fe786dab4b8f678ff7deed23ea96dd87eca172d10cf650dac1c44"
-evidence_summary_generator: "deterministic"
-concept_type: new
+  Read the opponent's racket angle when receiving serve and mirror it. Keep your racket flat when theirs is flat, or slightly open when theirs is slightly open.
+concept_type: fundamentals
 facets:
   category:
-    - fundamentals
-    - practice
-  side:
-    - neutral
-  level:
-    - beginner
-difficulty: easy
+  - fundamentals
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -31,51 +22,53 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: IQJagpLfWoE-concept-parallel-line-theory-reviewed
-    evidence_type: definition
-    excerpt: A receive principle that matches your racket angle to the server's racket angle so the return follows the incoming serve rather than flying off.
-    reason: The speaker names the method 'parallel line theory' and explains that the racket angle should be matched with the server's angle.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: IQJagpLfWoE
-      start_ms: 14766
-      end_ms: 34700
-      url: https://www.youtube.com/watch?v=IQJagpLfWoE&t=14s
-      segment_ids:
-        - IQJagpLfWoE:00004
-        - IQJagpLfWoE:00009
-  - id: 2LkVpDM69vo-concept-read-spin-from-racket-angle-codex-reviewed
-    evidence_type: explanation
-    excerpt: 'When receiving serve, read your opponent’s racket angle and mirror it: keep your racket flat when theirs is flat, and open yours slightly when theirs is slightly open.'
-    reason: The selected contiguous span directly explains matching the receiver’s racket angle to the opponent’s racket angle and gives flat and slightly open examples. It is the same durable receive principle as the existing concept “Parallel line theory.”
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 2LkVpDM69vo
-      start_ms: 2700
-      end_ms: 26400
-      url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=2s
-      segment_ids:
-        - 2LkVpDM69vo:00001
-        - 2LkVpDM69vo:00002
-        - 2LkVpDM69vo:00003
-        - 2LkVpDM69vo:00004
-  - id: 2LkVpDM69vo-concept-mirror-racket-angle-on-receive-codex-reviewed
-    evidence_type: explanation
-    excerpt: 'Whatever their racket angle is, mirror it: match your racket angle to theirs—flat against flat, or slightly open against slightly open.'
-    reason: This contiguous 18.4-second span directly explains matching the receiver's racket angle to the opponent's incoming racket angle and gives flat and slightly open examples.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 2LkVpDM69vo
-      start_ms: 8000
-      end_ms: 26400
-      url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=8s
-      segment_ids:
-        - 2LkVpDM69vo:00002
-        - 2LkVpDM69vo:00003
-        - 2LkVpDM69vo:00004
+- id: IQJagpLfWoE-concept-parallel-line-theory-reviewed
+  evidence_type: definition
+  excerpt: A receive principle that matches your racket angle to the server's racket angle so the return follows the incoming serve rather than flying off.
+  reason: The speaker names the method 'parallel line theory' and explains that the racket angle should be matched with the server's angle.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: IQJagpLfWoE
+    start_ms: 14766
+    end_ms: 34700
+    url: https://www.youtube.com/watch?v=IQJagpLfWoE&t=14s
+    segment_ids:
+    - IQJagpLfWoE:00004
+    - IQJagpLfWoE:00009
+- id: 2LkVpDM69vo-concept-read-spin-from-racket-angle-codex-reviewed
+  evidence_type: explanation
+  excerpt: 'When receiving serve, read your opponent’s racket angle and mirror it: keep your racket flat when theirs is flat, and open yours slightly when theirs is slightly open.'
+  reason: "On serve receive, read and match the opponent's racket angle: flat against flat, or slightly open against slightly open."
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: 2LkVpDM69vo
+    start_ms: 2700
+    end_ms: 26400
+    url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=2s
+    segment_ids:
+    - 2LkVpDM69vo:00001
+    - 2LkVpDM69vo:00002
+    - 2LkVpDM69vo:00003
+    - 2LkVpDM69vo:00004
+- id: 2LkVpDM69vo-concept-mirror-racket-angle-on-receive-codex-reviewed
+  evidence_type: explanation
+  excerpt: 'Whatever their racket angle is, mirror it: match your racket angle to theirs—flat against flat, or slightly open against slightly open.'
+  reason: "Match your racket angle to the opponent's: flat against flat, or slightly open against slightly open."
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: 2LkVpDM69vo
+    start_ms: 0
+    end_ms: 26400
+    url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=0s
+    segment_ids:
+    - 2LkVpDM69vo:00000
+    - 2LkVpDM69vo:00001
+    - 2LkVpDM69vo:00002
+    - 2LkVpDM69vo:00003
+    - 2LkVpDM69vo:00004

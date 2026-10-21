@@ -1,22 +1,16 @@
 id: concept-serve-from-the-middle
 slug: serve-from-the-middle
-label: Serve from the middle
+label: Right sidespin serves from the middle
 aliases:
-  - serve from the center line
-  - serve from the middle of the table
-short_definition: A serving position from the middle of the table that creates wider angles, shorter paths, better recovery, and more difficult returns.
+- right sidespin serves from the middle
+short_definition: For right sidespin serves from the middle, the speaker describes a short serve bouncing twice just past the table edge with a tricky trajectory, a wide sideline placement, and a long serve jamming the opponent at the baseline. Compared with serving from the corner, the shorter path gives the opponent less reaction time and disrupts anticipation.
 evidence_summary: >-
-  A serving position from the middle of the table that creates wider angles, shorter paths, better
-  recovery, and more difficult returns.
-evidence_summary_source_hash: "sha256:747e702aab03b4f82ee332078e37da3baef60a21d1f5c168e794605ce9c72070"
-evidence_summary_generator: "deterministic"
+  For right sidespin serves from the middle, the speaker describes a short serve bouncing twice just past the table edge with a tricky trajectory, a wide sideline placement, and a long serve jamming the opponent at the baseline. Compared with serving from the corner, the shorter path gives the opponent less reaction time and disrupts anticipation.
 concept_type: tactic
 facets:
   category:
-    - tactic
-  distance:
-    - close
-difficulty: intermediate
+  - tactic
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -27,72 +21,72 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: dm3dhRiTMZ4-concept-middle-serve-placement-reviewed
-    evidence_type: explanation
-    excerpt: A serving position from the middle of the table that creates wider angles, shorter paths, better recovery, and more difficult returns.
-    reason: The speaker recommends serving from the middle because it creates tricky short serves, wide angles, and long serves that jam the opponent.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: dm3dhRiTMZ4
-      start_ms: 201533
-      end_ms: 223600
-      url: https://www.youtube.com/watch?v=dm3dhRiTMZ4&t=201s
-      segment_ids:
-        - dm3dhRiTMZ4:00043
-        - dm3dhRiTMZ4:00045
-        - dm3dhRiTMZ4:00047
-  - id: iUwrE230SAY-concept-serve-from-the-middle-reviewed
-    evidence_type: explanation
-    excerpt: Serving from a position near the middle of the table rather than the backhand corner can create sharper angles and better tactical pressure.
-    reason: The speaker explicitly recommends serving from near the middle instead of the backhand corner and explains the tactical benefit.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: iUwrE230SAY
-      start_ms: 386900
-      end_ms: 410666
-      url: https://www.youtube.com/watch?v=iUwrE230SAY&t=386s
-      segment_ids:
-        - iUwrE230SAY:00078
-        - iUwrE230SAY:00079
-        - iUwrE230SAY:00080
-        - iUwrE230SAY:00081
-        - iUwrE230SAY:00082
-  - id: U1zg0xsCqMc-concept-serve-from-the-middle-reviewed
-    evidence_type: example
-    excerpt: Serving from a central starting position or switching stance toward the middle to create better coverage and disguise.
-    reason: Describes changing stance during critical points and moving to the middle when the opponent is not handling the serve well.
-    confidence: 0.89
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: U1zg0xsCqMc
-      start_ms: 390520
-      end_ms: 399280
-      url: https://www.youtube.com/watch?v=U1zg0xsCqMc&t=390s
-      segment_ids:
-        - U1zg0xsCqMc:00182
-        - U1zg0xsCqMc:00183
-        - U1zg0xsCqMc:00184
-  - id: dm3dhRiTMZ4-concept-middle-serve-placement-codex-reviewed
-    evidence_type: explanation
-    excerpt: Serving right sidespin from the middle enables tricky short serves, wide-angle placements, and long serves that jam the opponent; the shorter path gives the opponent less time to react.
-    reason: This contiguous 23.5-second span directly explains the tactical benefits of serving right sidespin from the middle, including tricky short serves, wide angles, jamming long serves, and reduced reaction time.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: dm3dhRiTMZ4
-      start_ms: 187900
-      end_ms: 216333
-      url: https://www.youtube.com/watch?v=dm3dhRiTMZ4&t=187s
-      segment_ids:
-        - dm3dhRiTMZ4:00040
-        - dm3dhRiTMZ4:00041
-        - dm3dhRiTMZ4:00042
-        - dm3dhRiTMZ4:00043
-        - dm3dhRiTMZ4:00044
-        - dm3dhRiTMZ4:00045
+- id: dm3dhRiTMZ4-concept-middle-serve-placement-reviewed
+  evidence_type: explanation
+  excerpt: A serving position from the middle of the table that creates wider angles, shorter paths, better recovery, and more difficult returns.
+  reason: The speaker recommends serving from the middle because it creates tricky short serves, wide angles, and long serves that jam the opponent.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: dm3dhRiTMZ4
+    start_ms: 201533
+    end_ms: 223600
+    url: https://www.youtube.com/watch?v=dm3dhRiTMZ4&t=201s
+    segment_ids:
+    - dm3dhRiTMZ4:00043
+    - dm3dhRiTMZ4:00045
+    - dm3dhRiTMZ4:00047
+- id: iUwrE230SAY-concept-serve-from-the-middle-reviewed
+  evidence_type: explanation
+  excerpt: Serving from a position near the middle of the table rather than the backhand corner can create sharper angles and better tactical pressure.
+  reason: The speaker explicitly recommends serving from near the middle instead of the backhand corner and explains the tactical benefit.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: iUwrE230SAY
+    start_ms: 386900
+    end_ms: 410666
+    url: https://www.youtube.com/watch?v=iUwrE230SAY&t=386s
+    segment_ids:
+    - iUwrE230SAY:00078
+    - iUwrE230SAY:00079
+    - iUwrE230SAY:00080
+    - iUwrE230SAY:00081
+    - iUwrE230SAY:00082
+- id: U1zg0xsCqMc-concept-serve-from-the-middle-reviewed
+  evidence_type: example
+  excerpt: Serving from a central starting position or switching stance toward the middle to create better coverage and disguise.
+  reason: Describes changing stance during critical points and moving to the middle when the opponent is not handling the serve well.
+  confidence: 0.89
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: U1zg0xsCqMc
+    start_ms: 390520
+    end_ms: 399280
+    url: https://www.youtube.com/watch?v=U1zg0xsCqMc&t=390s
+    segment_ids:
+    - U1zg0xsCqMc:00182
+    - U1zg0xsCqMc:00183
+    - U1zg0xsCqMc:00184
+- id: dm3dhRiTMZ4-concept-middle-serve-placement-codex-reviewed
+  evidence_type: explanation
+  excerpt: For right sidespin serves from the middle, the speaker describes a short serve bouncing twice just past the table edge with a tricky trajectory, a wide sideline placement, and a long serve jamming the opponent at the baseline. Compared with serving from the corner, the shorter path gives the opponent less reaction time and disrupts anticipation.
+  reason: The speaker describes short, wide, and long options specifically for right sidespin serves from the middle, and compares reaction time with serving from the corner.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: dm3dhRiTMZ4
+    start_ms: 187900
+    end_ms: 216333
+    url: https://www.youtube.com/watch?v=dm3dhRiTMZ4&t=187s
+    segment_ids:
+    - dm3dhRiTMZ4:00040
+    - dm3dhRiTMZ4:00041
+    - dm3dhRiTMZ4:00042
+    - dm3dhRiTMZ4:00043
+    - dm3dhRiTMZ4:00044
+    - dm3dhRiTMZ4:00045

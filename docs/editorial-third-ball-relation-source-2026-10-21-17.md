@@ -1,0 +1,3 @@
+# Third-ball relation citation correction
+
+The existing used_with relation to Serve and opening-attack patterns now cites the actual rTQcgBBWKWg:00091–00097 conditional short-forehand serve, push return and next-ball loop pattern (20.72 seconds). Relation type, target, confidence and all unrelated content remain unchanged. Finite GPT-6 Luna/high verification and complete selected-caption primary review passed. Current fingerprint/SHA, typed model, production YAML parsing and inverse semantic checks guarded installation; recoverable before-content and hashes are in the private editorial journal. This source-only correction does not approve the full Third-ball article. Whole-article review and release verification remain required.

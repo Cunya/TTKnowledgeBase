@@ -12,8 +12,10 @@ from processors.published_repair import (
     apply_reviewed_plan,
     article_payloads,
     reconcile_primary_reviews,
+    render_repair_plans,
     rollback_repair_transaction,
     run_repair_campaign,
+    source_coverage_corrections,
     summary_format_plan,
     timing_quarantine_plan,
     unit_inputs,
@@ -182,6 +184,25 @@ def source_plan_fixture(tmp_path):
     return paths, item, dossier, ([video], [concept])
 
 
+def test_source_completion_preserves_quarantined_original_source(tmp_path):
+    paths, item, dossier, context = source_plan_fixture(tmp_path)
+    target = paths.content / "concepts/stance.yaml"
+    before = target.read_bytes()
+    unit = next(unit for unit in item["draft"]["units"] if unit["key"].startswith("evidence:"))
+    unit.update(quarantine=True, edits=[], note="Complete source review supports omission of this citation.")
+    item["plan_hash"] = sha256_json({key: item[key] for key in ("identity", "draft", "verification")})
+    item["primary_review"] = primary_review(item)
+    apply_reviewed_plan(paths, item, dossier, "Source editor", source_context=context)
+    record = read_yaml(target)["evidence"][0]
+    assert record["review_status"] == "unreviewed"
+    assert record["source"] == dossier["concept"]["evidence"][0]["source"]
+    assert record["visual_source"] == dossier["concept"]["evidence"][0]["visual_source"]
+    archive = read_yaml(paths.content / "annotations/published-repair-history.yaml")["repairs"]
+    assert archive[0]["source_corrections"] == item["source_corrections"]
+    rollback_repair_transaction(paths)
+    assert target.read_bytes() == before
+
+
 def test_source_correction_archives_original_and_resumes_transaction(tmp_path):
     from processors.utils import replace_with_retry
 
@@ -251,19 +272,65 @@ def test_source_application_rejects_stale_or_incomplete_proof_without_writing(tm
     assert not (paths.content / "annotations/published-repair-history.yaml").exists()
 
 
-def test_cli_source_application_maps_decisions_to_corrected_source(tmp_path, monkeypatch):
+@pytest.mark.parametrize("stored_corrected_concept", [False, True])
+@pytest.mark.parametrize("stale_findings", [False, True])
+def test_cli_source_application_maps_decisions_to_corrected_source(
+        tmp_path, monkeypatch, stored_corrected_concept, stale_findings):
+    import typer
+
     import processors.cli as cli
     from processors.published_repair import review_findings
 
-    paths, item, _, _ = source_plan_fixture(tmp_path)
+    paths, item, dossier, context = source_plan_fixture(tmp_path)
+    if stored_corrected_concept:
+        from processors.published_repair import source_correction_dossier
+
+        item["concept"] = source_correction_dossier(dossier, item["source_corrections"], *context)["concept"]
     _, _, audit = cli._published_audit_inputs(paths)
-    item["review_findings"] = review_findings(audit["items"][0])
+    item["previous_source_findings"] = review_findings(audit["items"][0])
+    item["review_findings"] = {}
+    if stale_findings:
+        item["previous_source_findings"]["field:short_definition"] = "Different original finding."
     write_json(paths.data("manifests") / "published-repair-plans.json", {"items": {item["concept_id"]: item}})
     monkeypatch.setattr(cli, "kb_paths", lambda _kb: paths)
+    if stale_findings:
+        target = paths.content / "concepts/stance.yaml"
+        before = target.read_bytes()
+        with pytest.raises(typer.BadParameter, match="Review findings changed"):
+            cli.apply_published_repairs("concept-stance", "Source editor", kb="fixture")
+        assert target.read_bytes() == before
+        return
     cli.apply_published_repairs("concept-stance", "Source editor", kb="fixture")
     fresh = read_json(paths.data("manifests") / "published-audit.json")
     assert all(d and d["status"] == "supported" for d in fresh["items"][0]["decisions"].values())
     assert read_yaml(paths.content / "concepts/stance.yaml")["evidence"][0]["source"]["end_ms"] == 6000
+
+
+@pytest.mark.parametrize("original,replacement,allowed", [
+    ("demonstration", "explanation", True),
+    ("demonstration", "definition", False),
+    ("explanation", "demonstration", False),
+    ("definition", "explanation", False),
+])
+def test_reclassification_only_downgrades_demonstration_to_spoken_explanation(tmp_path, original, replacement, allowed):
+    from processors.published_repair import proposed_inputs
+
+    _, _, audit, dossiers = fixture_inputs(tmp_path)
+    dossier = dossiers["concept-stance"]
+    dossier["concept"]["evidence"][0]["evidence_type"] = original
+    units = unit_inputs(dossier, list(audit["items"][0]["decisions"]))
+    proposal, _ = draft({"units": units})
+    unit = next(u for u in proposal["units"] if u["key"].startswith("evidence:"))
+    unit.update(status="needs_fix", edits=[
+        {"field": "evidence_type", "text": replacement, "strings": None, "facets": None}])
+    if not allowed:
+        with pytest.raises(ValueError):
+            validate_units(proposal["units"], units, draft=True)
+        return
+    validate_units(proposal["units"], units, draft=True)
+    after = proposed_inputs(units, proposal)[unit["key"]]["value"]
+    before = units[unit["key"]]["value"]
+    assert after == {**before, "evidence_type": "explanation"}
 
 
 def test_article_draft_coverage_bounded_and_verification_has_no_draft_verdict(tmp_path):
@@ -280,6 +347,89 @@ def test_article_draft_coverage_bounded_and_verification_has_no_draft_verdict(tm
     assert any(u["key"].startswith("evidence:") and u["status"] == "uncertain" for u in exceptions)
     assert all("edits" not in u and "note" not in u and "status" not in u
                for payload in payloads for u in payload["units"].values())
+
+
+def select_field_proof(payload, *_args, **_kwargs):
+    first = {u["key"]: u for u in payload.get("chunk_proposals", [{}])[0].get("units", [])}
+    return {"units": [RepairUnit(key=key, status="uncertain", note="Select a citation proof; no approval.",
+        supporting_segment_ids=first[key]["supporting_segment_ids"] if key in first
+        else value["allowed_segment_ids"][:1]).model_dump()
+        for key, value in payload["units"].items()]}, {"method": "fixture_proof_selection"}
+
+
+@pytest.mark.parametrize("initial_limit", [3, 5, 20])
+def test_large_field_selects_whole_citation_without_rewriting_and_resumes(tmp_path, initial_limit):
+    paths, cfg, _, dossiers = fixture_inputs(tmp_path, rows=12)
+    cfg.write_text("codex:\n  default_model: fixture\n  max_segments_per_job: 10\n")
+    old = dossiers["concept-stance"]
+    concept = Concept.model_validate(old["concept"])
+    video = Video(id="video", title="Fixture", canonical_url="https://www.youtube.com/watch?v=video",
+        duration_ms=36000, transcript=TranscriptTrack(video_id="video", language="English", language_code="en",
+        is_generated=False, acquisition_method="fixture", segments=old["sources"][0]["selected_rows"]))
+    second = concept.evidence[0].model_copy(deep=True)
+    second.id = "second"
+    concept.evidence[0].source = SourceSpan(video_id="video", start_ms=0, end_ms=18000,
+        url=video.canonical_url+"&t=0s", segment_ids=[f"video:{i:05d}" for i in range(6)])
+    second.source = SourceSpan(video_id="video", start_ms=18000, end_ms=36000,
+        url=video.canonical_url+"&t=18s", segment_ids=[f"video:{i:05d}" for i in range(6, 12)])
+    concept.evidence.append(second)
+    dossier = audit_dossier(concept, {video.id: video}, {concept.id: concept})
+    audit = build_published_audit([concept], [video], paths.id)
+    checkpoint = tmp_path/"proofs.json"
+    canonical = paths.content/"concepts/stance.yaml"
+    before = canonical.read_bytes()
+    seen = []
+
+    def checked(payload, *args, **kwargs):
+        assert len(payload["selected_rows"])+len(payload["context_rows"]) <= 10
+        for key, value in payload["units"].items():
+            if key.startswith("field:"):
+                assert value["allowed_segment_ids"] == [f"video:{i:05d}" for i in range(6)]
+                seen.append(key)
+        return verify(payload, *args, **kwargs)
+
+    args = (audit, {concept.id: dossier}, cfg, tmp_path, tmp_path/"budget.json", checkpoint)
+    kwargs = {"repair_confirmed": True, "drafter": select_field_proof, "verifier": checked}
+    if initial_limit == 20:
+        run_repair_campaign(*args, max_calls=20, verifier=checked)
+        saved = read_json(checkpoint)
+        prior = saved["items"][concept.id]
+        prior["repair_attempted"] = True
+        definition = next(u for u in prior["draft"]["units"] if u["key"] == "field:short_definition")
+        definition.update(status="needs_fix", edits=[{
+            "field": "short_definition", "text": "Maintain a stable stance.", "strings": None, "facets": None}])
+        definition["supporting_segment_ids"] = ["video:00006"]
+        write_json(checkpoint, saved)
+    first = run_repair_campaign(*args, max_calls=initial_limit, **kwargs)
+    if initial_limit < 20:
+        assert first["stopped"] == "call_limit"
+        assert not read_json(checkpoint)["items"][concept.id].get("field_proof_attempted")
+        resumed = run_repair_campaign(*args, max_calls=20, **kwargs)
+        assert resumed["cached_jobs"] > 0
+    item = read_json(checkpoint)["items"][concept.id]
+    assert item["status"] == "verified" and item["field_proof_attempted"] and seen
+    assert all(not u["quarantine"] for u in item["draft"]["units"])
+    if initial_limit == 20:
+        definition = next(u for u in item["draft"]["units"] if u["key"] == "field:short_definition")
+        assert definition["edits"][0]["text"] == "Maintain a stable stance."
+    else:
+        assert all(not u["edits"] for u in item["draft"]["units"])
+    assert canonical.read_bytes() == before and not item.get("primary_review")
+    with pytest.raises(ValueError, match="primary"):
+        apply_reviewed_plan(paths, item, dossier, "Fixture reviewer")
+
+
+def test_field_selection_cannot_truncate_one_oversized_citation_and_parks(tmp_path):
+    paths, cfg, audit, dossiers = fixture_inputs(tmp_path, rows=9)
+    cfg.write_text("codex:\n  default_model: fixture\n  max_segments_per_job: 8\n")
+    checkpoint = tmp_path/"proofs.json"
+    args = (audit, dossiers, cfg, tmp_path, tmp_path/"budget.json", checkpoint)
+    kwargs = {"max_calls": 20, "repair_confirmed": True, "drafter": select_field_proof, "verifier": verify}
+    run_repair_campaign(*args, **kwargs)
+    item = read_json(checkpoint)["items"]["concept-stance"]
+    assert item["status"] == "exceptions" and item["field_proof_attempted"]
+    assert all(u["status"] == "uncertain" for u in item["verification"]["units"] if u["key"].startswith("field:"))
+    assert run_repair_campaign(*args, **kwargs)["calls"] == 0
 
 
 def test_campaign_resumes_separate_verification_without_approving_or_writing(tmp_path):
@@ -347,6 +497,7 @@ def test_reducer_assembles_untrusted_proposals_instead_of_adjudicating_empty_row
     payload = {"units": units, "selected_rows": [], "context_rows": [], "chunk_proposals": [proposal]}
 
     def assembled(prompt, schema, response_model, *_args, **_kwargs):
+        assert _args[2] == sha256_json({"prompt": prompt, "version": repair.DRAFT_VERSION, "schema": schema})
         assert "proposal assembly, not transcript adjudication" in prompt
         assert "separate verification with actual selected captions" in prompt
         assert "Use only exact selected_rows as claim support" not in prompt
@@ -360,6 +511,11 @@ def test_reducer_assembles_untrusted_proposals_instead_of_adjudicating_empty_row
             key = variant["properties"]["key"]["enum"][0]
             if key.startswith("field:"):
                 assert variant["properties"]["edits"]["maxItems"] <= 1
+            if key in {"field:aliases", "field:facets"}:
+                representation = "strings" if key == "field:aliases" else "facets"
+                active = variant["properties"]["edits"]["items"]["properties"][representation]
+                assert active["type"] == "array"
+                assert "anyOf" not in active
             if variant["properties"]["quarantine"]["enum"] == [True]:
                 assert key.startswith(("evidence:", "relation:"))
                 assert variant["properties"]["edits"]["maxItems"] == 0
@@ -592,6 +748,38 @@ def test_timing_plan_only_quarantines_measured_records_without_semantic_credit(t
     assert all(value is None for value in audit["items"][0]["decisions"].values())
 
 
+def test_concept_type_edit_reaches_schema_validation_and_guarded_application(tmp_path, monkeypatch):
+    import processors.published_repair as repair
+
+    paths, item, dossier = ready_plan(tmp_path)
+    unit = next(u for u in item["draft"]["units"] if u["key"] == "field:concept_type")
+    unit.update(status="needs_fix", edits=[repair.RepairEdit(field="concept_type", text="tactic").model_dump()])
+    units = unit_inputs(dossier, [u["key"] for u in item["draft"]["units"]])
+    payload = article_payloads(dossier, {unit["key"]: units[unit["key"]]}, cap=80)[0]
+
+    def transport(_prompt, schema, *_args, **_kwargs):
+        edit = schema["properties"]["units"]["properties"][unit["key"]]["properties"]["edits"]["items"]
+        assert edit["properties"]["field"]["enum"] == ["concept_type"]
+        return repair.ArticleRepairResponse(units=[unit]), {}
+
+    monkeypatch.setattr(repair, "_run_schema_constrained_codex", transport)
+    result, _ = repair.draft_article_with_codex(payload, tmp_path / "processors.yaml", tmp_path, tmp_path / "budget.json")
+    assert result["units"] == [unit]
+    validate_units(item["draft"]["units"], units, draft=True)
+    assert repair.proposed_inputs(units, item["draft"])[unit["key"]]["value"] == "tactic"
+    foreign = deepcopy(unit)
+    foreign["edits"][0]["field"] = "label"
+    with pytest.raises(ValueError, match="Unauthorized repair"):
+        validate_units([foreign], payload["units"], draft=True)
+
+    item["plan_hash"] = sha256_json({k: item[k] for k in ("identity", "draft", "verification")})
+    item["primary_review"] = primary_review(item)
+    apply_reviewed_plan(paths, item, dossier, "Editor")
+    assert read_yaml(paths.content / "concepts/stance.yaml")["concept_type"] == "tactic"
+    archived = read_yaml(paths.content / "annotations/published-repair-history.yaml")["repairs"]
+    assert archived[0]["previous_concept"]["concept_type"] == "concept"
+
+
 def test_model_transport_uses_profile_schema_and_rejects_foreign_support_ids(tmp_path, monkeypatch):
     import json
 
@@ -652,7 +840,13 @@ def test_source_verifier_receives_claims_without_prior_confidence_or_approval(tm
 
     def checked_transport(prompt, *_args, **_kwargs):
         sent = json.loads(prompt[prompt.index('{"units":'):])
-        value = dict(sent["units"][key]["value"])
+        if quarantined:
+            assert sent["units"][key]["value"] is None
+            assert "when omission is justified" in prompt
+            value = dict(sent["units"][key]["archived_original"])
+        else:
+            assert "archived_original" not in sent["units"][key]
+            value = dict(sent["units"][key]["value"])
         assert "confidence" not in value and "review_status" not in value
         if record_type == "evidence":
             spans = sent["source_span_sets"][sent["units"][key]["source_spans_ref"]]
@@ -671,6 +865,59 @@ def test_source_verifier_receives_claims_without_prior_confidence_or_approval(tm
     result, _ = repair.verify_article_with_codex(payload, cfg, tmp_path / "private", tmp_path / "budget.json")
     assert captured and payload == before
     assert result["units"][0]["status"] == "supported"
+
+
+@pytest.mark.parametrize(('outcome_text', 'condition_text'), [
+    ('The racket head never whips; it stays dead.', 'If you break immediately,'),
+    ('Up-down swings will kill your backhand.', 'A small elbow movement is okay, but big'),
+])
+def test_verification_keeps_relevant_late_condition_and_ignores_unrelated_context(
+        tmp_path, outcome_text, condition_text):
+    _, _, audit, dossiers = fixture_inputs(tmp_path, rows=1)
+    dossier = dossiers['concept-stance']
+    key = 'evidence:0:e'
+    dossier['sources'][0]['selected_rows'][0]['text'] = outcome_text
+    condition = {**dossier['sources'][0]['selected_rows'][0], 'id': 'video:condition',
+                 'text': condition_text, 'start_ms': -1000}
+    dossier['sources'][0]['context_rows'] = [condition]
+    unrelated = deepcopy(dossier['sources'][0])
+    unrelated['selected_rows'] = [{**condition, 'id': 'other:selected'}]
+    unrelated['context_rows'] = [{**condition, 'id': f'a:{i}', 'text': 'Unrelated.'} for i in range(12)]
+    dossier['sources'].append(unrelated)
+    units = unit_inputs(dossier, [key])
+    proposal, _ = draft({'units': units})
+    payloads, exceptions = verification_payloads(dossier, units, proposal, 80)
+    assert not exceptions
+    assert payloads[0]['context_rows'] == [condition]
+    assert condition['id'] not in payloads[0]['units'][key]['allowed_segment_ids']
+
+
+def test_verification_defers_instead_of_dropping_required_context(tmp_path):
+    _, _, _, dossiers = fixture_inputs(tmp_path, rows=1)
+    dossier = dossiers['concept-stance']
+    row = dossier['sources'][0]['selected_rows'][0]
+    dossier['sources'][0]['context_rows'] = [{**row, 'id': f'context:{i}'} for i in range(4)]
+    units = unit_inputs(dossier, ['evidence:0:e'])
+    proposal, _ = draft({'units': units})
+    payloads, exceptions = verification_payloads(dossier, units, proposal, 4)
+    assert not payloads
+    assert exceptions[0]['key'] == 'evidence:0:e'
+    assert exceptions[0]['status'] == 'uncertain'
+    assert 'context' in exceptions[0]['note']
+
+
+def test_direct_verifier_rejects_oversized_context_before_transport(tmp_path, monkeypatch):
+    import processors.published_repair as repair
+    _, cfg, _, dossiers = fixture_inputs(tmp_path, rows=1)
+    dossier = dossiers['concept-stance']
+    units = unit_inputs(dossier, ['evidence:0:e'])
+    row = dossier['sources'][0]['selected_rows'][0]
+    payload = {'units': units, 'selected_rows': [row],
+               'context_rows': [{**row, 'id': f'context:{i}'} for i in range(80)]}
+    monkeypatch.setattr(repair, '_run_schema_constrained_codex',
+                        lambda *a, **k: pytest.fail('Oversized proof reached transport'))
+    with pytest.raises(ValueError, match='no context may be truncated'):
+        repair.verify_article_with_codex(payload, cfg, tmp_path/'private', tmp_path/'budget.json')
 
 
 def test_quoted_flow_source_ids_remain_parseable_and_rollback_restores_exact_bytes(tmp_path):
@@ -1105,9 +1352,10 @@ def test_complete_proof_packing_shares_rows_without_cross_citation_ownership(tmp
     units["evidence:0:e"]["allowed_segment_ids"] = ["video:00000", "video:00001"]
     units["relation:0"] = {**deepcopy(units["evidence:0:e"]), "allowed_segment_ids": ["video:00001", "video:00002"]}
     proposal = {"units": [RepairUnit(key=key, status="uncertain", note="Pending.", supporting_segment_ids=[]).model_dump() for key in units]}
-    payloads, exceptions = verification_payloads(dossier, units, proposal, 4)
+    payloads, exceptions = verification_payloads(dossier, units, proposal, 12)
     assert not exceptions and len(payloads) == 1
     assert {r["id"] for r in payloads[0]["selected_rows"]} == {"video:00000", "video:00001", "video:00002"}
+    assert len(payloads[0]['selected_rows']) + len(payloads[0]['context_rows']) == 9
     assert payloads[0]["units"]["relation:0"]["allowed_segment_ids"] == ["video:00001", "video:00002"]
     bad = verify(payloads[0])[0]["units"]
     bad[0]["supporting_segment_ids"] = ["video:00002"]
@@ -1133,11 +1381,230 @@ def test_nullable_rating_change_reuses_independent_citation_cache(tmp_path):
     assert result["cached_verification_units"] == len(checks[0])
 
 
+def test_cached_sibling_rows_remain_negative_context_for_pending_citation(tmp_path):
+    _, cfg, audit, dossiers = fixture_inputs(tmp_path)
+    dossier = dossiers['concept-stance']
+    source = deepcopy(dossier['sources'][0])
+    source['selected_rows'] = source['selected_rows'][-1:]
+    source['context_rows'] = dossier['sources'][0]['selected_rows'][:-1]
+    source['source'].update(start_ms=6000, url='https://www.youtube.com/watch?v=video&t=6s',
+                            segment_ids=['video:00002'])
+    evidence = {**deepcopy(dossier['concept']['evidence'][0]), 'id': 'e2', 'source': source['source']}
+    dossier['concept']['evidence'].append(evidence)
+    dossier['sources'].append(source)
+    audit['items'][0]['decisions']['evidence:1:e2'] = None
+    audit['items'][0]['fingerprint'] = sha256_json(dossier)
+    seen = []
+    def tracked(payload, *_args, **_kwargs):
+        seen.append(deepcopy(payload))
+        return verify(payload)
+    checkpoint = tmp_path/'plans.json'
+    run_repair_campaign(audit, dossiers, cfg, tmp_path, tmp_path/'budget.json', checkpoint,
+                        max_calls=20, verifier=tracked)
+    evidence['excerpt'] = 'Keep a stable stance and balance.'
+    audit['items'][0]['fingerprint'] = sha256_json(dossier)
+    run_repair_campaign(audit, dossiers, cfg, tmp_path, tmp_path/'budget.json', checkpoint,
+                        max_calls=20, verifier=tracked)
+    assert set(seen[-1]['units']) == {'evidence:1:e2'}
+    assert [r['id'] for r in seen[-1]['selected_rows']] == ['video:00002']
+    assert {r['id'] for r in seen[-1]['context_rows']} == {'video:00000', 'video:00001'}
+
+
+def coverage_fixture(tmp_path):
+    paths, cfg, _, dossiers = fixture_inputs(tmp_path)
+    original = dossiers['concept-stance']
+    video = Video(id='video', title='Fixture', canonical_url='https://www.youtube.com/watch?v=video',
+                  duration_ms=9000, transcript=TranscriptTrack(video_id='video', language='English',
+                  language_code='en', is_generated=False, acquisition_method='fixture',
+                  segments=original['sources'][0]['selected_rows']))
+    concept = Concept.model_validate(original['concept'])
+    concept.evidence[0].source.segment_ids = ['video:00000', 'video:00002']
+    with (paths.content/'concepts/stance.yaml').open('w', encoding='utf-8') as handle:
+        YAML().dump(concept.model_dump(mode='json'), handle)
+    dossier = audit_dossier(concept, {video.id: video}, {concept.id: concept})
+    audit = build_published_audit([concept], [video], paths.id)
+    return paths, cfg, concept, video, dossier, audit
+
+
+@pytest.mark.parametrize('invalid', ['padding', 'missing_old_id', 'unreviewed'])
+def test_source_coverage_never_trims_bounds_drops_ids_or_restores_exclusions(tmp_path, invalid):
+    _, _, concept, video, _, _ = coverage_fixture(tmp_path)
+    if invalid == 'padding':
+        concept.evidence[0].source.end_ms = 9500
+        video.duration_ms = 12000
+    elif invalid == 'missing_old_id':
+        concept.evidence[0].source.segment_ids.append('video:missing')
+    else:
+        concept.evidence[0].review_status = 'unreviewed'
+    assert source_coverage_corrections(concept, {video.id: video}) == []
+
+
+def test_completed_source_planning_verifies_new_owned_proof_and_requires_primary(tmp_path):
+    paths, cfg, concept, video, dossier, audit = coverage_fixture(tmp_path)
+    checkpoint = tmp_path/'plans.json'
+    canonical = paths.content/'concepts/stance.yaml'
+    before = canonical.read_bytes()
+    for key in audit['items'][0]['decisions']:
+        audit['items'][0]['decisions'][key] = {'status': 'needs_fix', 'note': 'Old incomplete proof.'}
+    seen = []
+    def tracked(payload, *_args, **_kwargs):
+        seen.append(deepcopy(payload))
+        assert set(payload['units']['evidence:0:e']['allowed_segment_ids']) == {
+            'video:00000', 'video:00001', 'video:00002'}
+        return verify(payload)
+    result = run_repair_campaign(audit, {concept.id: dossier}, cfg, tmp_path, tmp_path/'budget.json',
+        checkpoint, max_calls=3, verifier=tracked, source_context=([video], [concept]))
+    assert result['calls'] == 1 and len(seen) == 1
+    saved = read_json(checkpoint)
+    item = saved['items'][concept.id]
+    assert item['scope'] == 'owned_source_correction' and item['status'] == 'verified'
+    assert 'Added caption IDs: video:00001; spoken bounds unchanged.' in render_repair_plans(saved)
+    assert item['review_findings'] == {} and item['previous_source_findings']
+    assert canonical.read_bytes() == before
+    assert concept.evidence[0].source.segment_ids == ['video:00000', 'video:00002']
+    with pytest.raises(ValueError, match='fresh complete primary'):
+        apply_reviewed_plan(paths, item, dossier, 'Reviewer', source_context=([video], [concept]))
+    review = primary_review(item)
+    saved = reconcile_primary_reviews(saved, audit, [review])
+    apply_reviewed_plan(paths, saved['items'][concept.id], dossier, 'Reviewer',
+                        source_context=([video], [concept]))
+    applied = read_yaml(canonical)
+    assert applied['evidence'][0]['source']['segment_ids'] == ['video:00000', 'video:00001', 'video:00002']
+    assert applied['evidence'][0]['source']['start_ms'] == 0
+    assert applied['evidence'][0]['source']['end_ms'] == 9000
+    assert applied['short_definition'] == concept.short_definition
+
+
+def test_completed_source_plan_resumes_and_refreshes_changed_profile(tmp_path):
+    _, cfg, concept, video, dossier, audit = coverage_fixture(tmp_path)
+    checkpoint = tmp_path/'plans.json'
+    kwargs = {'max_calls': 3, 'verifier': verify, 'source_context': ([video], [concept])}
+    args = (audit, {concept.id: dossier}, cfg, tmp_path, tmp_path/'budget.json', checkpoint)
+    assert run_repair_campaign(*args, **kwargs)['calls'] == 1
+    assert run_repair_campaign(*args, **kwargs)['calls'] == 0
+    cfg.write_text('codex:\n  default_model: fixture\n  reasoning_effort: high\n  max_segments_per_job: 80\n')
+    assert run_repair_campaign(*args, **kwargs)['calls'] == 1
+    assert read_json(checkpoint)['items'][concept.id]['planning_config']['reasoning_effort'] == 'high'
+
+
+def test_source_completion_keeps_exact_ready_plan_before_proposing_metadata_changes(tmp_path):
+    _, cfg, concept, video, dossier, audit = coverage_fixture(tmp_path)
+    checkpoint = tmp_path/'plans.json'
+    args = (audit, {concept.id: dossier}, cfg, tmp_path, tmp_path/'budget.json', checkpoint)
+    run_repair_campaign(*args, max_calls=3, verifier=verify)
+    saved = read_json(checkpoint)
+    saved = reconcile_primary_reviews(saved, audit, [primary_review(saved['items'][concept.id])])
+    write_json(checkpoint, saved)
+    result = run_repair_campaign(*args, max_calls=3, verifier=verify, source_context=([video], [concept]))
+    assert result['calls'] == 0
+    assert read_json(checkpoint)['items'][concept.id] == saved['items'][concept.id]
+
+
+def test_source_coverage_adds_only_actual_rows_fully_inside_original_window(tmp_path):
+    _, _, concept, video, _, _ = coverage_fixture(tmp_path)
+    outside = video.transcript.segments[-1].model_copy(update={'id': 'video:00003', 'start_ms': 9000})
+    video.transcript.segments.append(outside)
+    video.duration_ms = 12000
+    before = concept.model_dump(mode='json')
+    corrections = source_coverage_corrections(concept, {video.id: video})
+    assert corrections[0]['source'] == {**before['evidence'][0]['source'],
+                                       'segment_ids': ['video:00000', 'video:00001', 'video:00002']}
+    assert concept.model_dump(mode='json') == before
+
+
+def test_verification_uses_full_configured_budget_when_no_context_is_missing(tmp_path):
+    _, _, _, dossiers = fixture_inputs(tmp_path, rows=8)
+    dossier = dossiers['concept-stance']
+    units = unit_inputs(dossier, ['evidence:0:e'])
+    proposal, _ = draft({'units': units})
+    payloads, exceptions = verification_payloads(dossier, units, proposal, cap=8)
+    assert not exceptions and len(payloads) == 1
+    assert len(payloads[0]['selected_rows']) == 8 and payloads[0]['context_rows'] == []
+
+
+@pytest.mark.parametrize('other_citation', [False, True])
+def test_field_support_seed_keeps_whole_owned_citation_and_its_condition(tmp_path, other_citation):
+    _, _, _, dossiers = fixture_inputs(tmp_path)
+    dossier = dossiers['concept-stance']
+    dossier['sources'][0]['selected_rows'][0].update(
+        text='If you break immediately, the', normalized_text='If you break immediately, the')
+    dossier['sources'][0]['selected_rows'][1].update(
+        text='racket head stays dead.', normalized_text='racket head stays dead.')
+    if other_citation:
+        other = deepcopy(dossier['sources'][0])
+        other['source'] = {'video_id': 'other', 'start_ms': 0, 'end_ms': 3000,
+                          'url': 'https://www.youtube.com/watch?v=other&t=0s', 'segment_ids': ['other:0']}
+        other['selected_rows'] = [{**other['selected_rows'][0], 'id': 'other:0', 'video_id': 'other'}]
+        other['context_rows'] = []
+        other['video'] = {**other['video'], 'id': 'other'}
+        dossier['sources'].append(other)
+        dossier['concept']['evidence'].append({**deepcopy(dossier['concept']['evidence'][0]),
+                                               'id': 'e2', 'source': other['source']})
+    units = unit_inputs(dossier, ['field:short_definition'])
+    proposal, _ = draft({'units': units})
+    proposal['units'][0]['supporting_segment_ids'] = ['video:00001']
+    payloads, exceptions = verification_payloads(dossier, units, proposal, cap=80)
+    assert not exceptions and len(payloads) == 1
+    assert set(payloads[0]['units']['field:short_definition']['allowed_segment_ids']) == {
+        'video:00000', 'video:00001', 'video:00002'}
+    assert {row['id'] for row in payloads[0]['selected_rows']} == {
+        'video:00000', 'video:00001', 'video:00002'}
+
+
 def primary_review(item, ready=True):
     return {"concept_id": item["concept_id"], "plan_hash": item["plan_hash"], "fingerprint": item["fingerprint"],
             "reviewer": "Fixture primary reviewer", "ready_for_application": ready,
             "decisions": {u["key"]: {"status": "supported", "note": "Exact captions inspected."}
                           for u in item["draft"]["units"]}}
+
+
+def test_rejected_proposal_quarantine_requires_primary_before_reauthoring(tmp_path):
+    paths, cfg, audit, dossiers = fixture_inputs(tmp_path)
+    checkpoint = tmp_path/"plans.json"
+    before = (paths.content/"concepts/stance.yaml").read_bytes()
+
+    def initial_check(payload, *_args, **_kwargs):
+        result, provenance = verify(payload)
+        for unit in result["units"]:
+            if unit["key"].startswith("evidence:"):
+                unit.update(status="needs_fix", note="Use direct supported prose; omission is not justified.")
+        return result, provenance
+
+    def exclude(payload, *_args, **_kwargs):
+        return {"units": [RepairUnit(key=key, status="needs_fix", note="Proposed exclusion.",
+            supporting_segment_ids=value["allowed_segment_ids"], quarantine=True).model_dump()
+            for key, value in payload["units"].items()]}, {"method": "fixture_draft"}
+
+    args = (audit, dossiers, cfg, tmp_path, tmp_path/"budget.json", checkpoint)
+    run_repair_campaign(*args, max_calls=20, repair_confirmed=True, drafter=exclude, verifier=initial_check)
+    saved = read_json(checkpoint)
+    item = saved["items"]["concept-stance"]
+    evidence = next(u for u in item["draft"]["units"] if u["key"].startswith("evidence:"))
+    assert evidence["quarantine"] and item["status"] == "exceptions"
+    assert run_repair_campaign(*args, max_calls=20, repair_confirmed=True,
+                              drafter=exclude, verifier=initial_check)["calls"] == 0
+    review = primary_review(item, ready=False)
+    review["decisions"][evidence["key"]] = {"status": "needs_fix",
+        "note": "Retain the valid selected-caption instruction; replace its reason with direct prose."}
+    write_json(checkpoint, reconcile_primary_reviews(saved, audit, [review]))
+    seen = []
+
+    def retain(payload, *_args, **_kwargs):
+        seen.extend(payload["units"])
+        return {"units": [RepairUnit(key=key, status="needs_fix", note="Primary-requested retained instruction.",
+            supporting_segment_ids=value["allowed_segment_ids"], edits=[{
+                "field": "reason", "text": "Keep a stable stance.", "strings": None, "facets": None}]).model_dump()
+            for key, value in payload["units"].items()]}, {"method": "fixture_primary_repair"}
+
+    result = run_repair_campaign(*args, max_calls=20, repair_confirmed=True, drafter=retain, verifier=verify)
+    current = read_json(checkpoint)["items"]["concept-stance"]
+    restored = next(u for u in current["draft"]["units"] if u["key"] == evidence["key"])
+    assert result["calls"] >= 2 and seen == [evidence["key"]]
+    assert not restored["quarantine"] and current["status"] == "verified"
+    assert current["primary_review"]["plan_hash"] != current["plan_hash"]
+    with pytest.raises(ValueError, match="[Pp]rimary"):
+        apply_reviewed_plan(paths, current, dossiers["concept-stance"], "Fixture reviewer")
+    assert (paths.content/"concepts/stance.yaml").read_bytes() == before
 
 
 def test_primary_import_is_atomic_stale_safe_and_blocks_rejected_application(tmp_path):

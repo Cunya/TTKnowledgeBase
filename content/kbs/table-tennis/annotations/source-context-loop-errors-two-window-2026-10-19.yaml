@@ -1,0 +1,64 @@
+before_sha256: sha256:3fcba5cb9b3af6a9c52a8fb9db90e00107b4045a9b4ca725e025dcfe05ac2e14
+concept_id: concept-forehand-loop-common-errors
+kind: reviewed_two_window_source_context_completion
+previous_records:
+- confidence: 0.97
+  evidence_type: correction
+  excerpt: Brush over the top of the ball; the path should not simply travel upward.
+  id: error-brush-upward-global
+  reason: Corrects loops that fly long because the action is too vertical.
+  review_status: approved
+  source:
+    end_ms: 387700
+    segment_ids:
+    - Cq6MbP6TEdc:00094
+    - Cq6MbP6TEdc:00095
+    start_ms: 379266
+    url: https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=379s
+    video_id: Cq6MbP6TEdc
+  visual_source:
+    end_ms: 390000
+    note: Unverified nearby visual proposal; complete-clip inspection is required to confirm whether it illustrates this correction.
+    selection_method: nearby_visual_inference
+    start_ms: 378000
+    url: https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=378s
+    video_id: Cq6MbP6TEdc
+  visual_status: transcript_inferred
+- confidence: 0.97
+  evidence_type: explanation
+  excerpt: The lesson says a high arc is not itself the problem; the problem is trying to add power with the same high-arcing swing, after which the ball goes out.
+  id: error-brush-upward-global-power-high-arc-context
+  reason: The warning concerns adding power with the same high-arcing swing; the lesson explicitly says a high arc alone is not the problem.
+  review_status: approved
+  source:
+    end_ms: 364866
+    segment_ids:
+    - Cq6MbP6TEdc:00089
+    - Cq6MbP6TEdc:00090
+    start_ms: 355733
+    url: https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=355s
+    video_id: Cq6MbP6TEdc
+  visual_source: null
+  visual_status: not_visual
+review_scope: Actual89-94 28.867s owns highARC-alone-notproblem/POWER-withsame-higharc problem plus corrective top-brushing mindset; actual94-95 8.434s preserves far/near and not-UP path. All original caption IDs/records retained across two windows; no invented clipping, no 31.967s combined span, no visual window/status/selection changed. Final original-record excerpt repair still requires whole Luna/high and exact primary; three visual units remain needs_footage.
+reviewed_at: '2026-10-19T19:26:10.642007+00:00'
+reviewer: codex-primary-source-context-2026-10-19-22
+source_windows:
+- end_ms: 384600
+  segment_ids:
+  - Cq6MbP6TEdc:00089
+  - Cq6MbP6TEdc:00090
+  - Cq6MbP6TEdc:00091
+  - Cq6MbP6TEdc:00092
+  - Cq6MbP6TEdc:00093
+  - Cq6MbP6TEdc:00094
+  start_ms: 355733
+  url: https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=355s
+  video_id: Cq6MbP6TEdc
+- end_ms: 387700
+  segment_ids:
+  - Cq6MbP6TEdc:00094
+  - Cq6MbP6TEdc:00095
+  start_ms: 379266
+  url: https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=379s
+  video_id: Cq6MbP6TEdc

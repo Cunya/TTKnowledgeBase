@@ -1,28 +1,20 @@
 id: concept-forehand-attack-forearm-driven-motion
 slug: forehand-attack-forearm-driven-motion
-label: Forehand attack forearm-driven motion
+label: Forearm action and arm coordination
 aliases:
-  - forehand attack
-  - the forearm
-  - acceleration
-  - power generation
-  - use the forearm to hit the ball
-  - pull it forward and upward
-short_definition: In forehand attack, the forearm should do the main acceleration and power generation after the upper arm is stabilized.
+- forearm-driven forehand drive
+- forward-and-upward forearm action
+short_definition: 'Source-specific forearm actions: finger-led racket-head contact followed by forearm acceleration, a forearm-driven forehand stroke, and loop cues combining a stable elbow base with forearm rotation.'
 evidence_summary: >-
-  In forehand attack, the forearm should do the main acceleration and power generation after the
-  upper arm is stabilized.
-evidence_summary_source_hash: "sha256:eff8ef0faf09bba1e04a5bd689bf7bd83e6eddc572541f145e5f66d72fb21682"
-evidence_summary_generator: "deterministic"
+  One lesson starts contact with finger-driven racket-head motion, followed by forearm acceleration. Another describes finger-and-wrist contact, forearm movement forward, then upward. A loop lesson combines a stable elbow/forearm base with forearm rotation while the upper arm still leads; a forehand-drive lesson calls for the forearm to pull back then drive forward. A separate passage links outward extension and inward retraction with explosiveness, but its wording about arm separation is unclear.
 concept_type: stroke
 facets:
   category:
-    - stroke
+  - stroke
   side:
-    - forehand
-  level:
-    - intermediate
-difficulty: intermediate
+  - forehand
+  - backhand
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -33,606 +25,606 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: kES7yDFMZTA-concept-forehand-attack-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: In forehand attack, the forearm should do the main acceleration and power generation after the upper arm is stabilized.
-    reason: The speaker explicitly says forehand attack is dominated by the forearm, including acceleration and power generation, and that the forearm completes the remaining movement.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: kES7yDFMZTA
-      start_ms: 66960
-      end_ms: 90759
-      url: https://www.youtube.com/watch?v=kES7yDFMZTA&t=66s
-      segment_ids:
-        - kES7yDFMZTA:00022
-        - kES7yDFMZTA:00023
-        - kES7yDFMZTA:00024
-        - kES7yDFMZTA:00025
-        - kES7yDFMZTA:00027
-        - kES7yDFMZTA:00028
-        - kES7yDFMZTA:00029
-  - id: lt6uVnA3mmg-concept-forehand-attack-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: A forehand attacking action where the forearm drives the stroke forward and contributes directly to power generation.
-    reason: The speaker repeatedly says to push forward with the forearm and against the ball, and to fully extend the forearm after the arc is formed.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: lt6uVnA3mmg
-      start_ms: 160
-      end_ms: 28160
-      url: https://www.youtube.com/watch?v=lt6uVnA3mmg&t=0s
-      segment_ids:
-        - lt6uVnA3mmg:00000
-        - lt6uVnA3mmg:00001
-        - lt6uVnA3mmg:00002
-        - lt6uVnA3mmg:00003
-        - lt6uVnA3mmg:00004
-        - lt6uVnA3mmg:00005
-        - lt6uVnA3mmg:00006
-  - id: TbJCmatwqG8-concept-forehand-attack-forearm-driven-motion-reviewed
-    evidence_type: definition
-    excerpt: A forehand attacking action that relies on forearm-driven acceleration rather than a looping brushing motion.
-    reason: The speaker explicitly says 'I'm essentially forehand attacking' and contrasts it with looping.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: TbJCmatwqG8
-      start_ms: 899666
-      end_ms: 916766
-      url: https://www.youtube.com/watch?v=TbJCmatwqG8&t=899s
-      segment_ids:
-        - TbJCmatwqG8:00174
-        - TbJCmatwqG8:00175
-  - id: tQ9LEV9f2IU-concept-forehand-attack-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: A forehand attacking action in which the forearm actively drives acceleration and power.
-    reason: The speaker explicitly says to engage the forearm, attack the ball, and generate power forward.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: tQ9LEV9f2IU
-      start_ms: 461040
-      end_ms: 479120
-      url: https://www.youtube.com/watch?v=tQ9LEV9f2IU&t=461s
-      segment_ids:
-        - tQ9LEV9f2IU:00061
-  - id: pAEvvtlrSVY-concept-forehand-attack-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: A forehand attack driven primarily by forearm movement, with forward-and-upward force generation.
-    reason: The speaker explicitly explains forehand attack as opening the forearm to the side, then pushing forward, and later describes pushing the forearm forward.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: pAEvvtlrSVY
-      start_ms: 308800
-      end_ms: 328900
-      url: https://www.youtube.com/watch?v=pAEvvtlrSVY&t=308s
-      segment_ids:
-        - pAEvvtlrSVY:00118
-        - pAEvvtlrSVY:00121
-        - pAEvvtlrSVY:00124
-        - pAEvvtlrSVY:00125
-  - id: TY-0V45X1kE-concept-forehand-attack-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: A forehand attacking motion that emphasizes using the forearm to generate acceleration and power rather than relying on the upper arm alone.
-    reason: The speaker says the basic framework of the forehand attack requires retracting the arm and explains that without this, there will be no explosive power later.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: TY-0V45X1kE
-      start_ms: 13866
-      end_ms: 33900
-      url: https://www.youtube.com/watch?v=TY-0V45X1kE&t=13s
-      segment_ids:
-        - TY-0V45X1kE:00001
-        - TY-0V45X1kE:00003
-        - TY-0V45X1kE:00004
-        - TY-0V45X1kE:00005
-  - id: ijU-Kk98Gto-concept-forehand-attack-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: On forehand attacks, the forearm accelerates the final strike and helps align the impact direction after the body rotates.
-    reason: The speaker says the difference is about body rotation and forearm speed, and that the right side drives the arm to align the hitting angle.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: ijU-Kk98Gto
-      start_ms: 108100
-      end_ms: 115900
-      url: https://www.youtube.com/watch?v=ijU-Kk98Gto&t=108s
-      segment_ids:
-        - ijU-Kk98Gto:00048
-        - ijU-Kk98Gto:00049
-  - id: FweaNVt8gA0-concept-forehand-attack-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: A forehand attack pattern that emphasizes forearm acceleration and forward-upward driving force.
-    reason: The speaker describes the sequence from fingers and wrist to forearm, then states that forward force is essential for forehand and backhand strokes and that forearm acceleration should be trained.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: FweaNVt8gA0
-      start_ms: 518066
-      end_ms: 526100
-      url: https://www.youtube.com/watch?v=FweaNVt8gA0&t=518s
-      segment_ids:
-        - FweaNVt8gA0:00125
-        - FweaNVt8gA0:00126
-  - id: 4gMbiB6mrrY-concept-forehand-attack-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: Using the forearm to drive a forehand attack with forward and upward force rather than sideways force.
-    reason: The instructor emphasizes forward force, avoiding sideways force, and hitting the ball forward in forehand topspin.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 4gMbiB6mrrY
-      start_ms: 67800
-      end_ms: 85766
-      url: https://www.youtube.com/watch?v=4gMbiB6mrrY&t=67s
-      segment_ids:
-        - 4gMbiB6mrrY:00008
-        - 4gMbiB6mrrY:00009
-  - id: rPrv4iWdE4w-concept-forehand-attack-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: A forehand attacking action where speed and spin come primarily from forearm-driven acceleration rather than a large, forceful swing.
-    reason: The speaker explicitly identifies a forehand attacking grip and says to push forward with the fingers, using minimal range to generate friction and spin.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: rPrv4iWdE4w
-      start_ms: 523166
-      end_ms: 547600
-      url: https://www.youtube.com/watch?v=rPrv4iWdE4w&t=523s
-      segment_ids:
-        - rPrv4iWdE4w:00102
-        - rPrv4iWdE4w:00103
-        - rPrv4iWdE4w:00104
-        - rPrv4iWdE4w:00105
-  - id: 8S2YprEr6XA-concept-forehand-attack-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: A forehand attacking motion driven by the forearm rather than a looping brush action.
-    reason: The speaker contrasts forehand attacking with forehand looping and links the action to spin generation through the forearm.
-    confidence: 0.89
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 8S2YprEr6XA
-      start_ms: 685833
-      end_ms: 702933
-      url: https://www.youtube.com/watch?v=8S2YprEr6XA&t=685s
-      segment_ids:
-        - 8S2YprEr6XA:00137
-        - 8S2YprEr6XA:00138
-  - id: 8W1dvuH8iOI-concept-forehand-attack-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: Using the forearm with a forward, accelerating action to generate forehand power.
-    reason: The speaker explains that force comes from gradual acceleration with the same movement, not by enlarging the swing.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 8W1dvuH8iOI
-      start_ms: 535600
-      end_ms: 547100
-      url: https://www.youtube.com/watch?v=8W1dvuH8iOI&t=535s
-      segment_ids:
-        - 8W1dvuH8iOI:00118
-        - 8W1dvuH8iOI:00119
-  - id: zMrQvj_bji4-concept-forehand-attack-forearm-driven-motion-reviewed
-    evidence_type: definition
-    excerpt: On forehand attacks, the forearm contributes the main driving force and is combined with fingers and wrist to generate power and spin.
-    reason: The speaker directly says the forearm is used for long balls and power is transferred from the arm with fingers and wrist.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: zMrQvj_bji4
-      start_ms: 462733
-      end_ms: 483100
-      url: https://www.youtube.com/watch?v=zMrQvj_bji4&t=462s
-      segment_ids:
-        - zMrQvj_bji4:00106
-        - zMrQvj_bji4:00108
-        - zMrQvj_bji4:00109
-  - id: 8S2YprEr6XA-concept-forehand-attack-forearm-driven-motion-reviewed-5c95b9db
-    evidence_type: explanation
-    excerpt: A forehand attacking motion driven by the forearm rather than a looping brush action.
-    reason: The speaker contrasts forehand attacking with forehand looping and links the action to spin generation through the forearm.
-    confidence: 0.89
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 8S2YprEr6XA
-      start_ms: 685833
-      end_ms: 702933
-      url: https://www.youtube.com/watch?v=8S2YprEr6XA&t=685s
-      segment_ids:
-        - 8S2YprEr6XA:00137
-        - 8S2YprEr6XA:00138
-  - id: 8W1dvuH8iOI-concept-forehand-attack-forearm-driven-motion-reviewed-c28521b6
-    evidence_type: explanation
-    excerpt: Using the forearm with a forward, accelerating action to generate forehand power.
-    reason: The speaker explains that force comes from gradual acceleration with the same movement, not by enlarging the swing.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 8W1dvuH8iOI
-      start_ms: 535600
-      end_ms: 547100
-      url: https://www.youtube.com/watch?v=8W1dvuH8iOI&t=535s
-      segment_ids:
-        - 8W1dvuH8iOI:00118
-        - 8W1dvuH8iOI:00119
-  - id: zMrQvj_bji4-concept-forehand-attack-forearm-driven-motion-reviewed-c3a6c60b
-    evidence_type: definition
-    excerpt: On forehand attacks, the forearm contributes the main driving force and is combined with fingers and wrist to generate power and spin.
-    reason: The speaker directly says the forearm is used for long balls and power is transferred from the arm with fingers and wrist.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: zMrQvj_bji4
-      start_ms: 462733
-      end_ms: 483100
-      url: https://www.youtube.com/watch?v=zMrQvj_bji4&t=462s
-      segment_ids:
-        - zMrQvj_bji4:00106
-        - zMrQvj_bji4:00108
-        - zMrQvj_bji4:00109
-  - id: KG90HOykXCs-concept-forehand-attack-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: A forehand attacking motion where the forearm actively accelerates through the ball, especially in compact close-to-table play.
-    reason: The speaker describes forearm-driven acceleration, especially for close-to-table attacks and blocks.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: KG90HOykXCs
-      start_ms: 461633
-      end_ms: 476300
-      url: https://www.youtube.com/watch?v=KG90HOykXCs&t=461s
-      segment_ids:
-        - KG90HOykXCs:00102
-        - KG90HOykXCs:00104
-  - id: 16tgKRqrb8A-concept-forehand-attack-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: On the forehand, drive forward first and then use the forearm for the finishing acceleration and follow-through.
-    reason: The speaker describes the forehand drive as a forward motion followed by follow-through and added arm acceleration, using the opponent's power first and then adding more force.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 16tgKRqrb8A
-      start_ms: 422733
-      end_ms: 449666
-      url: https://www.youtube.com/watch?v=16tgKRqrb8A&t=422s
-      segment_ids:
-        - 16tgKRqrb8A:00089
-        - 16tgKRqrb8A:00090
-        - 16tgKRqrb8A:00091
-        - 16tgKRqrb8A:00092
-        - 16tgKRqrb8A:00093
-  - id: ezGVESU0Rp0-concept-racket-head-acceleration-in-pushes-reviewed
-    evidence_type: explanation
-    excerpt: The racket head should continue accelerating after forearm contact in push strokes to add speed and spin, rather than stopping short.
-    reason: The speaker says the racket head is the key speed source and must accelerate after forearm contact.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: ezGVESU0Rp0
-      start_ms: 82133
-      end_ms: 104566
-      url: https://www.youtube.com/watch?v=ezGVESU0Rp0&t=82s
-      segment_ids:
-        - ezGVESU0Rp0:00016
-        - ezGVESU0Rp0:00018
-        - ezGVESU0Rp0:00019
-        - ezGVESU0Rp0:00020
-  - id: HHyaeCbQ_ec-concept-forehand-attack-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: 'In the forehand drive, the forearm is the main driver: it draws back, drives forward, and snaps through the ball.'
-    reason: The transcript explicitly says the forearm is the primary driver and describes the backward-then-forward sequence with a final snap.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: HHyaeCbQ_ec
-      start_ms: 402166
-      end_ms: 423200
-      url: https://www.youtube.com/watch?v=HHyaeCbQ_ec&t=402s
-      segment_ids:
-        - HHyaeCbQ_ec:00095
-        - HHyaeCbQ_ec:00096
-        - HHyaeCbQ_ec:00099
-  - id: phKJvL-8VbQ-concept-forearm-forward-drive-reviewed
-    evidence_type: definition
-    excerpt: Using the forearm to push the hand and racket forward through the ball, especially on long serves, to increase speed and make the ball harder to push back.
-    reason: The speaker explicitly instructs players to drive the forearm forward, with the hand/palm facing forward, rather than stopping at contact.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: phKJvL-8VbQ
-      start_ms: 722200
-      end_ms: 748966
-      url: https://www.youtube.com/watch?v=phKJvL-8VbQ&t=722s
-      segment_ids:
-        - phKJvL-8VbQ:00168
-        - phKJvL-8VbQ:00170
-        - phKJvL-8VbQ:00171
-        - phKJvL-8VbQ:00172
-  - id: ae9urokFAJM-new-backhand-push-late-acceleration-two-phase-reviewed
-    evidence_type: explanation
-    excerpt: The backhand push can be split into a holding phase and a late acceleration phase so the ball stays low and does not go long.
-    reason: The speaker explicitly describes the push as two phases, with acceleration delayed until the end to preserve quality and control depth.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: ae9urokFAJM
-      start_ms: 507733
-      end_ms: 536800
-      url: https://www.youtube.com/watch?v=ae9urokFAJM&t=507s
-      segment_ids:
-        - ae9urokFAJM:00113
-        - ae9urokFAJM:00115
-        - ae9urokFAJM:00116
-        - ae9urokFAJM:00117
-        - ae9urokFAJM:00118
-  - id: xDwUKE-WjL0-concept-slow-to-fast-acceleration-reviewed
-    evidence_type: definition
-    excerpt: Effective power comes from a relaxed, slower backswing that accelerates explosively into contact.
-    reason: The speaker contrasts uniform swing speed with a slow-to-fast pattern and calls that change of pace essential for power generation.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: xDwUKE-WjL0
-      start_ms: 467366
-      end_ms: 481000
-      url: https://www.youtube.com/watch?v=xDwUKE-WjL0&t=467s
-      segment_ids:
-        - xDwUKE-WjL0:00099
-        - xDwUKE-WjL0:00100
-  - id: xDwUKE-WjL0-concept-backhand-topspin-power-generation-reviewed
-    evidence_type: definition
-    excerpt: Generating power on the backhand topspin is a compact, stable, timing-based action built from body structure, relaxed acceleration, and contact at the right bounce phase.
-    reason: The lesson states it is teaching how to generate power on backhand topspin and focuses on actively generating power against topspin.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: xDwUKE-WjL0
-      start_ms: 744966
-      end_ms: 756200
-      url: https://www.youtube.com/watch?v=xDwUKE-WjL0&t=744s
-      segment_ids:
-        - xDwUKE-WjL0:00151
-        - xDwUKE-WjL0:00153
-  - id: VR1gORHDMeQ-concept-late-acceleration-reviewed
-    evidence_type: explanation
-    excerpt: Delaying the main acceleration until the moment of contact instead of using a large pre-loaded swing.
-    reason: The speaker contrasts late acceleration with a full backswing and says to keep the racket near the ball, then execute quickly at contact.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: VR1gORHDMeQ
-      start_ms: 717966
-      end_ms: 741633
-      url: https://www.youtube.com/watch?v=VR1gORHDMeQ&t=717s
-      segment_ids:
-        - VR1gORHDMeQ:00148
-        - VR1gORHDMeQ:00149
-        - VR1gORHDMeQ:00150
-        - VR1gORHDMeQ:00151
-  - id: nvQeXUtF2CM-concept-strength-from-wrist-reviewed
-    evidence_type: explanation
-    excerpt: In the standard forehand flick, power comes primarily from the wrist opening on the backswing and snapping forward at contact, with fingers assisting energy transfer.
-    reason: The speaker explicitly states the wrist is the primary power source and that fingers only help transfer energy.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: nvQeXUtF2CM
-      start_ms: 475866
-      end_ms: 496833
-      url: https://www.youtube.com/watch?v=nvQeXUtF2CM&t=475s
-      segment_ids:
-        - nvQeXUtF2CM:00097
-        - nvQeXUtF2CM:00098
-        - nvQeXUtF2CM:00099
-        - nvQeXUtF2CM:00100
-  - id: Yf_uKs6cZ38-concept-forehand-attack-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: On the forehand, keep the stroke compact if you only need to land the ball, and add a forearm whip when you want more power.
-    reason: The speaker explicitly contrasts a simple forward stop with added whip for power on the forehand.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: Yf_uKs6cZ38
-      start_ms: 0
-      end_ms: 11866
-      url: https://www.youtube.com/watch?v=Yf_uKs6cZ38&t=0s
-      segment_ids:
-        - Yf_uKs6cZ38:00000
-        - Yf_uKs6cZ38:00001
-  - id: hKQbi0Kk_Gs-concept-compact-power-generation-reviewed
-    evidence_type: definition
-    excerpt: A modern attacking style that generates speed with a compact motion, early contact, and a short, explosive stroke instead of a large backswing.
-    reason: The speaker explicitly defines the style as compact and late power generation, with a very compact and explosive stroke and sudden forearm acceleration instead of a long backswing.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: hKQbi0Kk_Gs
-      start_ms: 54000
-      end_ms: 68733
-      url: https://www.youtube.com/watch?v=hKQbi0Kk_Gs&t=54s
-      segment_ids:
-        - hKQbi0Kk_Gs:00010
-        - hKQbi0Kk_Gs:00011
-        - hKQbi0Kk_Gs:00012
-  - id: 01-q1cswVVs-concept-forehand-attack-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: The forward motion in the loop starts with the racket head driven by the fingers, then the forearm engages, then the follow-through completes the shot.
-    reason: The speaker repeatedly states that the racket head is initiated first by the fingers, not the wrist or forearm, and that the forearm and follow-through come afterward.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 01-q1cswVVs
-      start_ms: 282500
-      end_ms: 307333
-      url: https://www.youtube.com/watch?v=01-q1cswVVs&t=282s
-      segment_ids:
-        - 01-q1cswVVs:00049
-        - 01-q1cswVVs:00050
-        - 01-q1cswVVs:00051
-        - 01-q1cswVVs:00052
-  - id: U3o7_ad82dk-concept-forehand-attack-forearm-driven-motion-reviewed
-    evidence_type: explanation
-    excerpt: On the forehand, separate upper-arm and forearm action so the forearm can accelerate and create speed in the attack.
-    reason: The speaker explicitly says the upper arm and forearm action must be separable for speed.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: U3o7_ad82dk
-      start_ms: 417233
-      end_ms: 421233
-      url: https://www.youtube.com/watch?v=U3o7_ad82dk&t=417s
-      segment_ids:
-        - U3o7_ad82dk:00076
-  - id: tFRfcMo8Stw-concept-active-power-generation-reviewed
-    evidence_type: definition
-    excerpt: A more forceful stroke mode where the player deliberately applies force and uses a larger motion than when borrowing power.
-    reason: The speaker contrasts active power with borrowing power and says active power uses a slightly larger motion with deliberate force.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: tFRfcMo8Stw
-      start_ms: 0
-      end_ms: 14833
-      url: https://www.youtube.com/watch?v=tFRfcMo8Stw&t=0s
-      segment_ids:
-        - tFRfcMo8Stw:00000
-        - tFRfcMo8Stw:00002
-  - id: PsZfazXZXEA-concept-forehand-attack-forearm-driven-motion-reviewed
-    evidence_type: definition
-    excerpt: On the forehand drive, the upper arm initiates forward movement, then the forearm provides the final acceleration and follow-through.
-    reason: The speaker directly states that the upper arm drives forward first and the forearm completes the action.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: PsZfazXZXEA
-      start_ms: 427300
-      end_ms: 438100
-      url: https://www.youtube.com/watch?v=PsZfazXZXEA&t=427s
-      segment_ids:
-        - PsZfazXZXEA:00092
-  - id: 01-q1cswVVs-concept-forehand-attack-forearm-driven-motion-codex-reviewed
-    evidence_type: explanation
-    excerpt: At contact, the motion should not be initiated by the wrist, elbow, or forearm. The racket head must move first, driven and rotated forward by the fingers; after that, the forearm accelerates and completes the follow-through.
-    reason: 'These contiguous segments directly explain the sequence of the forehand attack: the fingers initiate the racket-head motion, followed by forearm acceleration and completion of the follow-through.'
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 01-q1cswVVs
-      start_ms: 455733
-      end_ms: 481033
-      url: https://www.youtube.com/watch?v=01-q1cswVVs&t=455s
-      segment_ids:
-        - 01-q1cswVVs:00082
-        - 01-q1cswVVs:00083
-        - 01-q1cswVVs:00084
-        - 01-q1cswVVs:00085
-  - id: FweaNVt8gA0-concept-forehand-attack-forearm-driven-motion-codex-reviewed
-    evidence_type: explanation
-    excerpt: After the fingers and wrist contact the ball, the forearm moves continuously forward and then upward; forward force is essential for both forehand and backhand strokes.
-    reason: These contiguous segments directly describe the forearm’s forward-and-upward movement and explicitly state that forward force is essential for forehand and backhand strokes.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: FweaNVt8gA0
-      start_ms: 518066
-      end_ms: 526100
-      url: https://www.youtube.com/watch?v=FweaNVt8gA0&t=518s
-      segment_ids:
-        - FweaNVt8gA0:00125
-        - FweaNVt8gA0:00126
-  - id: GdS4nZDb6ug-concept-forearm-led-motion-in-backhand-codex-reviewed
-    evidence_type: explanation
-    excerpt: In a loop, the elbow and forearm provide a stable base at contact, allowing the forearm, fingers, and wrist to rotate; the upper arm leads the forearm into contact.
-    reason: These contiguous segments describe forearm-led rotation during a loop and directly match the supplied forehand forearm-driven-motion concept. The span is 24.3 seconds and stays within one topic moment.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: GdS4nZDb6ug
-      start_ms: 140366
-      end_ms: 164666
-      url: https://www.youtube.com/watch?v=GdS4nZDb6ug&t=140s
-      segment_ids:
-        - GdS4nZDb6ug:00031
-        - GdS4nZDb6ug:00032
-        - GdS4nZDb6ug:00033
-        - GdS4nZDb6ug:00034
-        - GdS4nZDb6ug:00035
-  - id: HHyaeCbQ_ec-concept-forehand-attack-forearm-driven-motion-codex-reviewed
-    evidence_type: explanation
-    excerpt: In the forehand drive, the forearm is the primary driver; to generate power, it pulls back and then drives forward.
-    reason: These contiguous segments explicitly identify the forearm as the primary driver of the forehand drive and describe its backward-then-forward power-generation sequence.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: HHyaeCbQ_ec
-      start_ms: 402166
-      end_ms: 423200
-      url: https://www.youtube.com/watch?v=HHyaeCbQ_ec&t=402s
-      segment_ids:
-        - HHyaeCbQ_ec:00095
-        - HHyaeCbQ_ec:00096
-        - HHyaeCbQ_ec:00097
-        - HHyaeCbQ_ec:00098
-        - HHyaeCbQ_ec:00099
-  - id: lRAoXPoYOBk-concept-forehand-attack-forearm-driven-motion-codex-reviewed
-    evidence_type: explanation
-    excerpt: The forehand pull uses outward extension and inward retraction for explosiveness. The upper arm and forearm should stay coordinated rather than pulling the ball with a disconnected motion.
-    reason: This contiguous 24.267-second span directly explains the forehand pull’s outward/inward action, its effect on explosiveness, and the need to coordinate the upper arm and forearm.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: lRAoXPoYOBk
-      start_ms: 234866
-      end_ms: 259133
-      url: https://www.youtube.com/watch?v=lRAoXPoYOBk&t=234s
-      segment_ids:
-        - lRAoXPoYOBk:00091
-        - lRAoXPoYOBk:00092
-        - lRAoXPoYOBk:00093
-        - lRAoXPoYOBk:00094
-        - lRAoXPoYOBk:00095
-        - lRAoXPoYOBk:00096
-        - lRAoXPoYOBk:00097
-        - lRAoXPoYOBk:00098
-        - lRAoXPoYOBk:00099
+- id: kES7yDFMZTA-concept-forehand-attack-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: In forehand attack, the forearm should do the main acceleration and power generation after the upper arm is stabilized.
+  reason: The speaker explicitly says forehand attack is dominated by the forearm, including acceleration and power generation, and that the forearm completes the remaining movement.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: kES7yDFMZTA
+    start_ms: 66960
+    end_ms: 90759
+    url: https://www.youtube.com/watch?v=kES7yDFMZTA&t=66s
+    segment_ids:
+    - kES7yDFMZTA:00022
+    - kES7yDFMZTA:00023
+    - kES7yDFMZTA:00024
+    - kES7yDFMZTA:00025
+    - kES7yDFMZTA:00027
+    - kES7yDFMZTA:00028
+    - kES7yDFMZTA:00029
+- id: lt6uVnA3mmg-concept-forehand-attack-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: A forehand attacking action where the forearm drives the stroke forward and contributes directly to power generation.
+  reason: The speaker repeatedly says to push forward with the forearm and against the ball, and to fully extend the forearm after the arc is formed.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: lt6uVnA3mmg
+    start_ms: 160
+    end_ms: 28160
+    url: https://www.youtube.com/watch?v=lt6uVnA3mmg&t=0s
+    segment_ids:
+    - lt6uVnA3mmg:00000
+    - lt6uVnA3mmg:00001
+    - lt6uVnA3mmg:00002
+    - lt6uVnA3mmg:00003
+    - lt6uVnA3mmg:00004
+    - lt6uVnA3mmg:00005
+    - lt6uVnA3mmg:00006
+- id: TbJCmatwqG8-concept-forehand-attack-forearm-driven-motion-reviewed
+  evidence_type: definition
+  excerpt: A forehand attacking action that relies on forearm-driven acceleration rather than a looping brushing motion.
+  reason: The speaker explicitly says 'I'm essentially forehand attacking' and contrasts it with looping.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: TbJCmatwqG8
+    start_ms: 899666
+    end_ms: 916766
+    url: https://www.youtube.com/watch?v=TbJCmatwqG8&t=899s
+    segment_ids:
+    - TbJCmatwqG8:00174
+    - TbJCmatwqG8:00175
+- id: tQ9LEV9f2IU-concept-forehand-attack-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: A forehand attacking action in which the forearm actively drives acceleration and power.
+  reason: The speaker explicitly says to engage the forearm, attack the ball, and generate power forward.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: tQ9LEV9f2IU
+    start_ms: 461040
+    end_ms: 479120
+    url: https://www.youtube.com/watch?v=tQ9LEV9f2IU&t=461s
+    segment_ids:
+    - tQ9LEV9f2IU:00061
+- id: pAEvvtlrSVY-concept-forehand-attack-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: A forehand attack driven primarily by forearm movement, with forward-and-upward force generation.
+  reason: The speaker explicitly explains forehand attack as opening the forearm to the side, then pushing forward, and later describes pushing the forearm forward.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: pAEvvtlrSVY
+    start_ms: 308800
+    end_ms: 328900
+    url: https://www.youtube.com/watch?v=pAEvvtlrSVY&t=308s
+    segment_ids:
+    - pAEvvtlrSVY:00118
+    - pAEvvtlrSVY:00121
+    - pAEvvtlrSVY:00124
+    - pAEvvtlrSVY:00125
+- id: TY-0V45X1kE-concept-forehand-attack-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: A forehand attacking motion that emphasizes using the forearm to generate acceleration and power rather than relying on the upper arm alone.
+  reason: The speaker says the basic framework of the forehand attack requires retracting the arm and explains that without this, there will be no explosive power later.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: TY-0V45X1kE
+    start_ms: 13866
+    end_ms: 33900
+    url: https://www.youtube.com/watch?v=TY-0V45X1kE&t=13s
+    segment_ids:
+    - TY-0V45X1kE:00001
+    - TY-0V45X1kE:00003
+    - TY-0V45X1kE:00004
+    - TY-0V45X1kE:00005
+- id: ijU-Kk98Gto-concept-forehand-attack-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: On forehand attacks, the forearm accelerates the final strike and helps align the impact direction after the body rotates.
+  reason: The speaker says the difference is about body rotation and forearm speed, and that the right side drives the arm to align the hitting angle.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: ijU-Kk98Gto
+    start_ms: 108100
+    end_ms: 115900
+    url: https://www.youtube.com/watch?v=ijU-Kk98Gto&t=108s
+    segment_ids:
+    - ijU-Kk98Gto:00048
+    - ijU-Kk98Gto:00049
+- id: FweaNVt8gA0-concept-forehand-attack-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: A forehand attack pattern that emphasizes forearm acceleration and forward-upward driving force.
+  reason: The speaker describes the sequence from fingers and wrist to forearm, then states that forward force is essential for forehand and backhand strokes and that forearm acceleration should be trained.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: FweaNVt8gA0
+    start_ms: 518066
+    end_ms: 526100
+    url: https://www.youtube.com/watch?v=FweaNVt8gA0&t=518s
+    segment_ids:
+    - FweaNVt8gA0:00125
+    - FweaNVt8gA0:00126
+- id: 4gMbiB6mrrY-concept-forehand-attack-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: Using the forearm to drive a forehand attack with forward and upward force rather than sideways force.
+  reason: The instructor emphasizes forward force, avoiding sideways force, and hitting the ball forward in forehand topspin.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 4gMbiB6mrrY
+    start_ms: 67800
+    end_ms: 85766
+    url: https://www.youtube.com/watch?v=4gMbiB6mrrY&t=67s
+    segment_ids:
+    - 4gMbiB6mrrY:00008
+    - 4gMbiB6mrrY:00009
+- id: rPrv4iWdE4w-concept-forehand-attack-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: A forehand attacking action where speed and spin come primarily from forearm-driven acceleration rather than a large, forceful swing.
+  reason: The speaker explicitly identifies a forehand attacking grip and says to push forward with the fingers, using minimal range to generate friction and spin.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: rPrv4iWdE4w
+    start_ms: 523166
+    end_ms: 547600
+    url: https://www.youtube.com/watch?v=rPrv4iWdE4w&t=523s
+    segment_ids:
+    - rPrv4iWdE4w:00102
+    - rPrv4iWdE4w:00103
+    - rPrv4iWdE4w:00104
+    - rPrv4iWdE4w:00105
+- id: 8S2YprEr6XA-concept-forehand-attack-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: A forehand attacking motion driven by the forearm rather than a looping brush action.
+  reason: The speaker contrasts forehand attacking with forehand looping and links the action to spin generation through the forearm.
+  confidence: 0.89
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 8S2YprEr6XA
+    start_ms: 685833
+    end_ms: 702933
+    url: https://www.youtube.com/watch?v=8S2YprEr6XA&t=685s
+    segment_ids:
+    - 8S2YprEr6XA:00137
+    - 8S2YprEr6XA:00138
+- id: 8W1dvuH8iOI-concept-forehand-attack-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: Using the forearm with a forward, accelerating action to generate forehand power.
+  reason: The speaker explains that force comes from gradual acceleration with the same movement, not by enlarging the swing.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 8W1dvuH8iOI
+    start_ms: 535600
+    end_ms: 547100
+    url: https://www.youtube.com/watch?v=8W1dvuH8iOI&t=535s
+    segment_ids:
+    - 8W1dvuH8iOI:00118
+    - 8W1dvuH8iOI:00119
+- id: zMrQvj_bji4-concept-forehand-attack-forearm-driven-motion-reviewed
+  evidence_type: definition
+  excerpt: On forehand attacks, the forearm contributes the main driving force and is combined with fingers and wrist to generate power and spin.
+  reason: The speaker directly says the forearm is used for long balls and power is transferred from the arm with fingers and wrist.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: zMrQvj_bji4
+    start_ms: 462733
+    end_ms: 483100
+    url: https://www.youtube.com/watch?v=zMrQvj_bji4&t=462s
+    segment_ids:
+    - zMrQvj_bji4:00106
+    - zMrQvj_bji4:00108
+    - zMrQvj_bji4:00109
+- id: 8S2YprEr6XA-concept-forehand-attack-forearm-driven-motion-reviewed-5c95b9db
+  evidence_type: explanation
+  excerpt: A forehand attacking motion driven by the forearm rather than a looping brush action.
+  reason: The speaker contrasts forehand attacking with forehand looping and links the action to spin generation through the forearm.
+  confidence: 0.89
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 8S2YprEr6XA
+    start_ms: 685833
+    end_ms: 702933
+    url: https://www.youtube.com/watch?v=8S2YprEr6XA&t=685s
+    segment_ids:
+    - 8S2YprEr6XA:00137
+    - 8S2YprEr6XA:00138
+- id: 8W1dvuH8iOI-concept-forehand-attack-forearm-driven-motion-reviewed-c28521b6
+  evidence_type: explanation
+  excerpt: Using the forearm with a forward, accelerating action to generate forehand power.
+  reason: The speaker explains that force comes from gradual acceleration with the same movement, not by enlarging the swing.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 8W1dvuH8iOI
+    start_ms: 535600
+    end_ms: 547100
+    url: https://www.youtube.com/watch?v=8W1dvuH8iOI&t=535s
+    segment_ids:
+    - 8W1dvuH8iOI:00118
+    - 8W1dvuH8iOI:00119
+- id: zMrQvj_bji4-concept-forehand-attack-forearm-driven-motion-reviewed-c3a6c60b
+  evidence_type: definition
+  excerpt: On forehand attacks, the forearm contributes the main driving force and is combined with fingers and wrist to generate power and spin.
+  reason: The speaker directly says the forearm is used for long balls and power is transferred from the arm with fingers and wrist.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: zMrQvj_bji4
+    start_ms: 462733
+    end_ms: 483100
+    url: https://www.youtube.com/watch?v=zMrQvj_bji4&t=462s
+    segment_ids:
+    - zMrQvj_bji4:00106
+    - zMrQvj_bji4:00108
+    - zMrQvj_bji4:00109
+- id: KG90HOykXCs-concept-forehand-attack-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: A forehand attacking motion where the forearm actively accelerates through the ball, especially in compact close-to-table play.
+  reason: The speaker describes forearm-driven acceleration, especially for close-to-table attacks and blocks.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: KG90HOykXCs
+    start_ms: 461633
+    end_ms: 476300
+    url: https://www.youtube.com/watch?v=KG90HOykXCs&t=461s
+    segment_ids:
+    - KG90HOykXCs:00102
+    - KG90HOykXCs:00104
+- id: 16tgKRqrb8A-concept-forehand-attack-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: On the forehand, drive forward first and then use the forearm for the finishing acceleration and follow-through.
+  reason: The speaker describes the forehand drive as a forward motion followed by follow-through and added arm acceleration, using the opponent's power first and then adding more force.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 16tgKRqrb8A
+    start_ms: 422733
+    end_ms: 449666
+    url: https://www.youtube.com/watch?v=16tgKRqrb8A&t=422s
+    segment_ids:
+    - 16tgKRqrb8A:00089
+    - 16tgKRqrb8A:00090
+    - 16tgKRqrb8A:00091
+    - 16tgKRqrb8A:00092
+    - 16tgKRqrb8A:00093
+- id: ezGVESU0Rp0-concept-racket-head-acceleration-in-pushes-reviewed
+  evidence_type: explanation
+  excerpt: The racket head should continue accelerating after forearm contact in push strokes to add speed and spin, rather than stopping short.
+  reason: The speaker says the racket head is the key speed source and must accelerate after forearm contact.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: ezGVESU0Rp0
+    start_ms: 82133
+    end_ms: 104566
+    url: https://www.youtube.com/watch?v=ezGVESU0Rp0&t=82s
+    segment_ids:
+    - ezGVESU0Rp0:00016
+    - ezGVESU0Rp0:00018
+    - ezGVESU0Rp0:00019
+    - ezGVESU0Rp0:00020
+- id: HHyaeCbQ_ec-concept-forehand-attack-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: 'In the forehand drive, the forearm is the main driver: it draws back, drives forward, and snaps through the ball.'
+  reason: The transcript explicitly says the forearm is the primary driver and describes the backward-then-forward sequence with a final snap.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: HHyaeCbQ_ec
+    start_ms: 402166
+    end_ms: 423200
+    url: https://www.youtube.com/watch?v=HHyaeCbQ_ec&t=402s
+    segment_ids:
+    - HHyaeCbQ_ec:00095
+    - HHyaeCbQ_ec:00096
+    - HHyaeCbQ_ec:00099
+- id: phKJvL-8VbQ-concept-forearm-forward-drive-reviewed
+  evidence_type: definition
+  excerpt: Using the forearm to push the hand and racket forward through the ball, especially on long serves, to increase speed and make the ball harder to push back.
+  reason: The speaker explicitly instructs players to drive the forearm forward, with the hand/palm facing forward, rather than stopping at contact.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: phKJvL-8VbQ
+    start_ms: 722200
+    end_ms: 748966
+    url: https://www.youtube.com/watch?v=phKJvL-8VbQ&t=722s
+    segment_ids:
+    - phKJvL-8VbQ:00168
+    - phKJvL-8VbQ:00170
+    - phKJvL-8VbQ:00171
+    - phKJvL-8VbQ:00172
+- id: ae9urokFAJM-new-backhand-push-late-acceleration-two-phase-reviewed
+  evidence_type: explanation
+  excerpt: The backhand push can be split into a holding phase and a late acceleration phase so the ball stays low and does not go long.
+  reason: The speaker explicitly describes the push as two phases, with acceleration delayed until the end to preserve quality and control depth.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ae9urokFAJM
+    start_ms: 507733
+    end_ms: 536800
+    url: https://www.youtube.com/watch?v=ae9urokFAJM&t=507s
+    segment_ids:
+    - ae9urokFAJM:00113
+    - ae9urokFAJM:00115
+    - ae9urokFAJM:00116
+    - ae9urokFAJM:00117
+    - ae9urokFAJM:00118
+- id: xDwUKE-WjL0-concept-slow-to-fast-acceleration-reviewed
+  evidence_type: definition
+  excerpt: Effective power comes from a relaxed, slower backswing that accelerates explosively into contact.
+  reason: The speaker contrasts uniform swing speed with a slow-to-fast pattern and calls that change of pace essential for power generation.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: xDwUKE-WjL0
+    start_ms: 467366
+    end_ms: 481000
+    url: https://www.youtube.com/watch?v=xDwUKE-WjL0&t=467s
+    segment_ids:
+    - xDwUKE-WjL0:00099
+    - xDwUKE-WjL0:00100
+- id: xDwUKE-WjL0-concept-backhand-topspin-power-generation-reviewed
+  evidence_type: definition
+  excerpt: Generating power on the backhand topspin is a compact, stable, timing-based action built from body structure, relaxed acceleration, and contact at the right bounce phase.
+  reason: The lesson states it is teaching how to generate power on backhand topspin and focuses on actively generating power against topspin.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: xDwUKE-WjL0
+    start_ms: 744966
+    end_ms: 756200
+    url: https://www.youtube.com/watch?v=xDwUKE-WjL0&t=744s
+    segment_ids:
+    - xDwUKE-WjL0:00151
+    - xDwUKE-WjL0:00153
+- id: VR1gORHDMeQ-concept-late-acceleration-reviewed
+  evidence_type: explanation
+  excerpt: Delaying the main acceleration until the moment of contact instead of using a large pre-loaded swing.
+  reason: The speaker contrasts late acceleration with a full backswing and says to keep the racket near the ball, then execute quickly at contact.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: VR1gORHDMeQ
+    start_ms: 717966
+    end_ms: 741633
+    url: https://www.youtube.com/watch?v=VR1gORHDMeQ&t=717s
+    segment_ids:
+    - VR1gORHDMeQ:00148
+    - VR1gORHDMeQ:00149
+    - VR1gORHDMeQ:00150
+    - VR1gORHDMeQ:00151
+- id: nvQeXUtF2CM-concept-strength-from-wrist-reviewed
+  evidence_type: explanation
+  excerpt: In the standard forehand flick, power comes primarily from the wrist opening on the backswing and snapping forward at contact, with fingers assisting energy transfer.
+  reason: The speaker explicitly states the wrist is the primary power source and that fingers only help transfer energy.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: nvQeXUtF2CM
+    start_ms: 475866
+    end_ms: 496833
+    url: https://www.youtube.com/watch?v=nvQeXUtF2CM&t=475s
+    segment_ids:
+    - nvQeXUtF2CM:00097
+    - nvQeXUtF2CM:00098
+    - nvQeXUtF2CM:00099
+    - nvQeXUtF2CM:00100
+- id: Yf_uKs6cZ38-concept-forehand-attack-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: On the forehand, keep the stroke compact if you only need to land the ball, and add a forearm whip when you want more power.
+  reason: The speaker explicitly contrasts a simple forward stop with added whip for power on the forehand.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Yf_uKs6cZ38
+    start_ms: 0
+    end_ms: 11866
+    url: https://www.youtube.com/watch?v=Yf_uKs6cZ38&t=0s
+    segment_ids:
+    - Yf_uKs6cZ38:00000
+    - Yf_uKs6cZ38:00001
+- id: hKQbi0Kk_Gs-concept-compact-power-generation-reviewed
+  evidence_type: definition
+  excerpt: A modern attacking style that generates speed with a compact motion, early contact, and a short, explosive stroke instead of a large backswing.
+  reason: The speaker explicitly defines the style as compact and late power generation, with a very compact and explosive stroke and sudden forearm acceleration instead of a long backswing.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: hKQbi0Kk_Gs
+    start_ms: 54000
+    end_ms: 68733
+    url: https://www.youtube.com/watch?v=hKQbi0Kk_Gs&t=54s
+    segment_ids:
+    - hKQbi0Kk_Gs:00010
+    - hKQbi0Kk_Gs:00011
+    - hKQbi0Kk_Gs:00012
+- id: 01-q1cswVVs-concept-forehand-attack-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: The forward motion in the loop starts with the racket head driven by the fingers, then the forearm engages, then the follow-through completes the shot.
+  reason: The speaker repeatedly states that the racket head is initiated first by the fingers, not the wrist or forearm, and that the forearm and follow-through come afterward.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 01-q1cswVVs
+    start_ms: 282500
+    end_ms: 307333
+    url: https://www.youtube.com/watch?v=01-q1cswVVs&t=282s
+    segment_ids:
+    - 01-q1cswVVs:00049
+    - 01-q1cswVVs:00050
+    - 01-q1cswVVs:00051
+    - 01-q1cswVVs:00052
+- id: U3o7_ad82dk-concept-forehand-attack-forearm-driven-motion-reviewed
+  evidence_type: explanation
+  excerpt: On the forehand, separate upper-arm and forearm action so the forearm can accelerate and create speed in the attack.
+  reason: The speaker explicitly says the upper arm and forearm action must be separable for speed.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: U3o7_ad82dk
+    start_ms: 417233
+    end_ms: 421233
+    url: https://www.youtube.com/watch?v=U3o7_ad82dk&t=417s
+    segment_ids:
+    - U3o7_ad82dk:00076
+- id: tFRfcMo8Stw-concept-active-power-generation-reviewed
+  evidence_type: definition
+  excerpt: A more forceful stroke mode where the player deliberately applies force and uses a larger motion than when borrowing power.
+  reason: The speaker contrasts active power with borrowing power and says active power uses a slightly larger motion with deliberate force.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: tFRfcMo8Stw
+    start_ms: 0
+    end_ms: 14833
+    url: https://www.youtube.com/watch?v=tFRfcMo8Stw&t=0s
+    segment_ids:
+    - tFRfcMo8Stw:00000
+    - tFRfcMo8Stw:00002
+- id: PsZfazXZXEA-concept-forehand-attack-forearm-driven-motion-reviewed
+  evidence_type: definition
+  excerpt: On the forehand drive, the upper arm initiates forward movement, then the forearm provides the final acceleration and follow-through.
+  reason: The speaker directly states that the upper arm drives forward first and the forearm completes the action.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: PsZfazXZXEA
+    start_ms: 427300
+    end_ms: 438100
+    url: https://www.youtube.com/watch?v=PsZfazXZXEA&t=427s
+    segment_ids:
+    - PsZfazXZXEA:00092
+- id: 01-q1cswVVs-concept-forehand-attack-forearm-driven-motion-codex-reviewed
+  evidence_type: explanation
+  excerpt: At contact, the motion should not be initiated by the wrist, elbow, or forearm. The racket head must move first, driven and rotated forward by the fingers; after that, the forearm accelerates and completes the follow-through.
+  reason: 'Start with the fingers driving and rotating the racket head forward; after that, drive forward, accelerate the forearm and finish the follow-through.'
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 01-q1cswVVs
+    start_ms: 455733
+    end_ms: 481033
+    url: https://www.youtube.com/watch?v=01-q1cswVVs&t=455s
+    segment_ids:
+    - 01-q1cswVVs:00082
+    - 01-q1cswVVs:00083
+    - 01-q1cswVVs:00084
+    - 01-q1cswVVs:00085
+- id: FweaNVt8gA0-concept-forehand-attack-forearm-driven-motion-codex-reviewed
+  evidence_type: explanation
+  excerpt: After the fingers and wrist contact the ball, the forearm moves continuously forward and then upward; forward force is essential for both forehand and backhand strokes.
+  reason: The lesson describes finger-and-wrist contact, the forearm moving continuously forward, then upward, and emphasizes forward force for both forehand and backhand strokes.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: FweaNVt8gA0
+    start_ms: 518066
+    end_ms: 526100
+    url: https://www.youtube.com/watch?v=FweaNVt8gA0&t=518s
+    segment_ids:
+    - FweaNVt8gA0:00125
+    - FweaNVt8gA0:00126
+- id: GdS4nZDb6ug-concept-forearm-led-motion-in-backhand-codex-reviewed
+  evidence_type: explanation
+  excerpt: In a loop, the elbow and forearm provide a stable base at contact, allowing the forearm, fingers, and wrist to rotate; the upper arm leads the forearm into contact.
+  reason: In the loop cue, provide a stable forearm-and-elbow base at contact for forearm, finger and wrist rotation; the upper arm still leads the forearm.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: GdS4nZDb6ug
+    start_ms: 140366
+    end_ms: 164666
+    url: https://www.youtube.com/watch?v=GdS4nZDb6ug&t=140s
+    segment_ids:
+    - GdS4nZDb6ug:00031
+    - GdS4nZDb6ug:00032
+    - GdS4nZDb6ug:00033
+    - GdS4nZDb6ug:00034
+    - GdS4nZDb6ug:00035
+- id: HHyaeCbQ_ec-concept-forehand-attack-forearm-driven-motion-codex-reviewed
+  evidence_type: explanation
+  excerpt: The lesson identifies the forearm as the forehand drive’s primary driver. It attributes missing impact sound and penetrating power to an arm that drops too low or lifts too high, then prescribes pulling the forearm back and driving forward.
+  reason: For this forehand-drive correction, pull the forearm back then drive forward; the lesson identifies the forearm as the primary driver.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: HHyaeCbQ_ec
+    start_ms: 402166
+    end_ms: 423200
+    url: https://www.youtube.com/watch?v=HHyaeCbQ_ec&t=402s
+    segment_ids:
+    - HHyaeCbQ_ec:00095
+    - HHyaeCbQ_ec:00096
+    - HHyaeCbQ_ec:00097
+    - HHyaeCbQ_ec:00098
+    - HHyaeCbQ_ec:00099
+- id: lRAoXPoYOBk-concept-forehand-attack-forearm-driven-motion-codex-reviewed
+  evidence_type: explanation
+  excerpt: The passage links outward extension and inward retraction to explosiveness. It says the upper arm and elbow “must not be separated,” then says the upper arm and forearm “are not separated” in a stroke lacking quality; the intended separation cue is unclear.
+  reason: The passage attributes explosiveness to outward extension and inward retraction, but its two statements about arm separation do not provide a clear movement instruction.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: lRAoXPoYOBk
+    start_ms: 234866
+    end_ms: 259133
+    url: https://www.youtube.com/watch?v=lRAoXPoYOBk&t=234s
+    segment_ids:
+    - lRAoXPoYOBk:00091
+    - lRAoXPoYOBk:00092
+    - lRAoXPoYOBk:00093
+    - lRAoXPoYOBk:00094
+    - lRAoXPoYOBk:00095
+    - lRAoXPoYOBk:00096
+    - lRAoXPoYOBk:00097
+    - lRAoXPoYOBk:00098
+    - lRAoXPoYOBk:00099

@@ -1,35 +1,36 @@
 id: concept-spin-loop-vs-power-loop
 slug: spin-loop-vs-power-loop
-label: Spin loop versus power loop
-aliases: [high-arc loop, safe loop, power loop selection]
-short_definition: Choose the balance of brush, impact, arc, and forward speed according to the incoming ball and acceptable risk.
+label: Loop choices and drive differences
+aliases:
+- spin loop versus power loop
+- high-arc loop
+- power loop selection
+- loop versus drive
+short_definition: Spin and power loops differ in safety, contact height and timing; a loop also follows a different path from a drive.
 evidence_summary: >-
-  Spin loops and power loops solve different problems, so the choice depends on ball quality and
-  risk tolerance. When the ball is heavy, low, or descending, a higher-arc spin loop is safer and
-  more reliable, while a power loop is better as a finishing shot when the ball is favorable and
-  the player can commit forward. The key tradeoff is that more power and directness can end the
-  point faster, but too much drive-like mechanics on a looping ball increases errors.
-evidence_summary_source_hash: "sha256:1b02b781aa92ac21056d9e61be59601d4dcc703f96e9d8ead221c715b5c23133"
-evidence_summary_generator: "codex"
-detailed_definition: "A high-arc spin loop adds clearance and consistency; a power loop uses a more favorable contact height and greater forward impact. These are points on a continuum: brushing manages arc and incoming spin, while forward drive manages depth and speed."
+  For a difficult ball or a poor opportunity, one lesson keeps the racket facing the ball near the outside of the right knee; a good opportunity allows pulling back behind the hip. A separate lesson uses body power on a lighter-spin ball and lists peak timing, pressing and closing, forward drive and a compact body for a power loop. Against heavy spin, another recommends looping with arc first, getting the ball on the table before deciding. The drive comparison describes a loop’s outer-arc path and rejects treating it as a drive with a bigger motion.
+detailed_definition: "One lesson calls a high-arc loop a power loop with added safety. Contact-height guidance keeps brush contact roughly level with the table and raises it for a forward power loop. Another lesson assigns brushing to arc height and forward drive to arc depth. Timing guidance places power loops and kill shots at the peak and spin loops in the early descending phase."
 concept_type: tactic
-facets: {category: [stroke-selection, consistency], side: [forehand], spin: [topspin], level: [intermediate]}
-difficulty: intermediate
+facets:
+  category:
+  - stroke-selection
+  - consistency
+difficulty:
 review_status: approved
 evidence:
 - id: selection-high-arc-safety-spinmaster
-  evidence_type: demonstration
-  excerpt: A high-arc loop is essentially a power loop with extra safety added.
-  reason: Frames spin and power loops as a safety-quality tradeoff.
+  evidence_type: explanation
+  excerpt: The speaker describes a high-arc loop as a power loop with extra safety added.
+  reason: The lesson introduces the high-arc loop by comparing it with a power loop.
   confidence: 0.95
   visual_status: transcript_inferred
   visual_source: {video_id: m93pWt9MIZE, start_ms: 13000, end_ms: 28000, url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=13s", selection_method: nearby_visual_inference, note: Alternating live-ball examples compare the power and high-arc loops.}
   review_status: approved
   source: {video_id: m93pWt9MIZE, start_ms: 23519, end_ms: 32079, url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=23s", segment_ids: ["m93pWt9MIZE:00010", "m93pWt9MIZE:00011"]}
 - id: selection-contact-height-spinmaster
-  evidence_type: demonstration
-  excerpt: Keep contact roughly level with the table for more brush; raise it for a forward power loop.
-  reason: Connects loop choice to the available contact height.
+  evidence_type: explanation
+  excerpt: For more brushing, the speaker usually keeps contact roughly level with the table; for a forward power loop, the contact point needs to be raised a little.
+  reason: The speaker links the available contact height with the intended brushing or forward power loop.
   confidence: 0.96
   visual_status: transcript_inferred
   visual_source: {video_id: JmOI0L7SiG8, start_ms: 44000, end_ms: 56000, url: "https://www.youtube.com/watch?v=JmOI0L7SiG8&t=44s", selection_method: nearby_visual_inference, note: Live feeds compare contact heights and resulting loop trajectories.}
@@ -37,8 +38,8 @@ evidence:
   source: {video_id: JmOI0L7SiG8, start_ms: 28133, end_ms: 37333, url: "https://www.youtube.com/watch?v=JmOI0L7SiG8&t=28s", segment_ids: ["JmOI0L7SiG8:00008", "JmOI0L7SiG8:00009", "JmOI0L7SiG8:00010", "JmOI0L7SiG8:00011"]}
 - id: selection-height-depth-global
   evidence_type: explanation
-  excerpt: Brushing controls the height of the arc, while driving forward controls its depth.
-  reason: Gives a usable rule for blending spin and forward impact.
+  excerpt: Brushing controls the height of the ball’s arc, while driving forward controls its depth.
+  reason: The speaker distinguishes the height and depth effects of these two actions.
   confidence: 0.97
   visual_status: transcript_inferred
   visual_source: {video_id: qLT0MvwitZc, start_ms: 549000, end_ms: 563000, url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=549s", selection_method: nearby_visual_inference, note: Racket-path demonstration separates brushing from forward drive.}
@@ -46,25 +47,34 @@ evidence:
   source: {video_id: qLT0MvwitZc, start_ms: 554300, end_ms: 560900, url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=554s", segment_ids: ["qLT0MvwitZc:00127"]}
 - id: I-_3TIjU4qI-candidate-spin-loop-vs-power-loop-1
   evidence_type: explanation
-  excerpt: When consistency or the incoming ball is difficult, choose a slower, heavier spin loop; when the opportunity is good and preparation is complete, use a fuller power loop.
-  reason: The coach's instruction is to avoid explosive loops at first and use only spin loops.
+  excerpt: In the described coaching progression, begin heavy spin looping with a lower contact after becoming comfortable pushing. Use slow spin loops without power or explosive loops; once push consistency and the contact point are solid, begin practicing explosive loops.
+  reason: The speaker recounts a step-by-step coaching progression, with consistency and a solid contact point before free power practice.
   confidence: 0.86
   visual_status: not_visual
   review_status: approved
   source:
     video_id: I-_3TIjU4qI
-    start_ms: 327000
-    end_ms: 336360
-    url: "https://www.youtube.com/watch?v=I-_3TIjU4qI&t=327s"
+    start_ms: 320840
+    end_ms: 349280
+    url: https://www.youtube.com/watch?v=I-_3TIjU4qI&t=320s
     segment_ids:
-    - "I-_3TIjU4qI:00143"
-    - "I-_3TIjU4qI:00144"
-    - "I-_3TIjU4qI:00145"
-    - "I-_3TIjU4qI:00146"
+    - I-_3TIjU4qI:00140
+    - I-_3TIjU4qI:00141
+    - I-_3TIjU4qI:00142
+    - I-_3TIjU4qI:00143
+    - I-_3TIjU4qI:00144
+    - I-_3TIjU4qI:00145
+    - I-_3TIjU4qI:00146
+    - I-_3TIjU4qI:00147
+    - I-_3TIjU4qI:00148
+    - I-_3TIjU4qI:00149
+    - I-_3TIjU4qI:00150
+    - I-_3TIjU4qI:00151
+    - I-_3TIjU4qI:00152
 - id: I-_3TIjU4qI-candidate-spin-loop-vs-power-loop-2
   evidence_type: explanation
-  excerpt: When consistency or the incoming ball is difficult, choose a slower, heavier spin loop; when the opportunity is good and preparation is complete, use a fuller power loop.
-  reason: The speaker contrasts a stable close loop for difficult balls with pulling back and crushing the ball when the chance is good.
+  excerpt: For a difficult ball or a poor opportunity, keep the racket facing the ball and loop near the outside of the right knee. If the opportunity is good, pull back behind the hip and strike hard.
+  reason: The speaker gives different racket positions for difficult balls and good opportunities.
   confidence: 0.95
   visual_status: transcript_inferred
   review_status: approved
@@ -99,8 +109,8 @@ evidence:
     - "I-_3TIjU4qI:00224"
 - id: i68OG8UzMyQ-cand-loop-vs-drive-not-bigger-motion-1
   evidence_type: definition
-  excerpt: The forehand loop should not be treated as a drive with larger amplitude; it uses a different swing path, contact behavior, and force application.
-  reason: Speaker explicitly states that drive and loop are not the same stroke with a bigger motion and follow different paths.
+  excerpt: 'A drive and a loop are not the same stroke with a bigger motion: the speaker describes looping as wrapping around the ball on an outer-arc trajectory.'
+  reason: The lesson distinguishes the paths of a drive and a loop.
   confidence: 0.97
   visual_status: not_visual
   review_status: approved
@@ -117,47 +127,57 @@ evidence:
     - "i68OG8UzMyQ:00101"
 - id: i68OG8UzMyQ-cand-loop-vs-drive-not-bigger-motion-2
   evidence_type: mistake
-  excerpt: The forehand loop should not be treated as a drive with larger amplitude; it uses a different swing path, contact behavior, and force application.
-  reason: He identifies a common mistake where players use the drive trajectory while trying to loop.
+  excerpt: When looping, the speaker says the elbow and forearm are not pushed forward and the stroke follows an outer arc, then contrasts a drive with a loop while introducing a common looping mistake.
+  reason: The spoken comparison focuses on the looping path and the forward-pushing action.
   confidence: 0.88
   visual_status: transcript_inferred
   review_status: approved
   source:
     video_id: i68OG8UzMyQ
-    start_ms: 245920
-    end_ms: 255480
-    url: "https://www.youtube.com/watch?v=i68OG8UzMyQ&t=245s"
+    start_ms: 233560
+    end_ms: 257880
+    url: https://www.youtube.com/watch?v=i68OG8UzMyQ&t=233s
     segment_ids:
-    - "i68OG8UzMyQ:00080"
-    - "i68OG8UzMyQ:00082"
+    - i68OG8UzMyQ:00076
+    - i68OG8UzMyQ:00077
+    - i68OG8UzMyQ:00078
+    - i68OG8UzMyQ:00079
+    - i68OG8UzMyQ:00080
+    - i68OG8UzMyQ:00081
+    - i68OG8UzMyQ:00082
+    - i68OG8UzMyQ:00083
 - id: i68OG8UzMyQ-cand-loop-vs-drive-not-bigger-motion-3
   evidence_type: mistake
-  excerpt: The forehand loop should not be treated as a drive with larger amplitude; it uses a different swing path, contact behavior, and force application.
-  reason: He identifies a common mistake where players use the drive trajectory while trying to loop.
+  excerpt: The speaker contrasts the loop’s arc with using a drive trajectory that pushes with the hand, forearm and upper arm.
+  reason: The lesson says a drive and a loop are not simply the same stroke performed with a bigger motion.
   confidence: 0.88
   visual_status: transcript_inferred
   review_status: approved
   source:
     video_id: i68OG8UzMyQ
-    start_ms: 277000
-    end_ms: 289080
-    url: "https://www.youtube.com/watch?v=i68OG8UzMyQ&t=277s"
+    start_ms: 270320
+    end_ms: 293200
+    url: https://www.youtube.com/watch?v=i68OG8UzMyQ&t=270s
     segment_ids:
-    - "i68OG8UzMyQ:00093"
-    - "i68OG8UzMyQ:00094"
-    - "i68OG8UzMyQ:00095"
-    - "i68OG8UzMyQ:00096"
+    - i68OG8UzMyQ:00091
+    - i68OG8UzMyQ:00092
+    - i68OG8UzMyQ:00093
+    - i68OG8UzMyQ:00094
+    - i68OG8UzMyQ:00095
+    - i68OG8UzMyQ:00096
+    - i68OG8UzMyQ:00097
+    - i68OG8UzMyQ:00098
 - id: f7uZPRPIwpU-concept-spin-loop-vs-power-loop-1
   evidence_type: explanation
-  excerpt: Choose a brushy spin loop for heavier spin and a flatter, forward power loop only on lighter-spin balls that are suitable for direct acceleration.
-  reason: Speaker separates lighter-spin kill balls from heavy-spin balls and explains flatter power-loop conditions and trajectory.
+  excerpt: For a lighter-spin ball, add body power and go for the kill. The lesson lists peak timing, pressing and closing, driving forward to meet the ball, and a compact body for the power loop.
+  reason: The speaker specifies the lighter-spin opportunity and the requirements for this power loop.
   confidence: 0.95
   visual_status: transcript_inferred
   review_status: approved
   source:
     video_id: f7uZPRPIwpU
     start_ms: 317840
-    end_ms: 339720
+    end_ms: 344360
     url: https://www.youtube.com/watch?v=f7uZPRPIwpU&t=317s
     segment_ids:
     - f7uZPRPIwpU:00121
@@ -166,27 +186,33 @@ evidence:
     - f7uZPRPIwpU:00124
     - f7uZPRPIwpU:00125
     - f7uZPRPIwpU:00126
+    - f7uZPRPIwpU:00127
+    - f7uZPRPIwpU:00128
 - id: f7uZPRPIwpU-concept-spin-loop-vs-power-loop-2
   evidence_type: explanation
-  excerpt: Choose a brushy spin loop for heavier spin and a flatter, forward power loop only on lighter-spin balls that are suitable for direct acceleration.
-  reason: Speaker separates lighter-spin kill balls from heavy-spin balls and explains flatter power-loop conditions and trajectory.
+  excerpt: When power looping, drive through the ball with a flatter arc rather than going too upward.
+  reason: The speaker contrasts this choice with a really spinny ball that would not be power looped.
   confidence: 0.95
   visual_status: transcript_inferred
   review_status: approved
   source:
     video_id: f7uZPRPIwpU
     start_ms: 347720
-    end_ms: 364960
+    end_ms: 368520
     url: https://www.youtube.com/watch?v=f7uZPRPIwpU&t=347s
     segment_ids:
     - f7uZPRPIwpU:00131
+    - f7uZPRPIwpU:00132
     - f7uZPRPIwpU:00133
+    - f7uZPRPIwpU:00134
     - f7uZPRPIwpU:00135
     - f7uZPRPIwpU:00136
+    - f7uZPRPIwpU:00137
+    - f7uZPRPIwpU:00138
 - id: nUotsfFiQqY-cand-high-arc-loop-against-heavy-push-1
   evidence_type: explanation
-  excerpt: Against a heavily spun push, use a high-arc friction-based opening loop instead of trying to force a power drive.
-  reason: Speaker directly recommends a high arc spin loop against heavy spin and rejects power-kill attempts.
+  excerpt: If attacking heavy spin, use a high-arc spin loop first, get it on the table, then decide.
+  reason: The speaker rejects trying to land power kills against heavy spin.
   confidence: 0.94
   visual_status: not_visual
   review_status: approved
@@ -203,8 +229,8 @@ evidence:
     - nUotsfFiQqY:00121
 - id: t3HX8AEujWw-c4-1
   evidence_type: definition
-  excerpt: Directly distinguishes peak timing for power loops and early descending timing for spin loops.
-  reason: 'Different loop intentions use different timing: spin loops favor the early descending phase, while power loops and kill shots use the peak of the bounce; against backspin, players may progress from safe descending-phase loops to peak-timed power loops.'
+  excerpt: The lesson places power loops and kill shots at the peak, and spin loops in the early descending phase.
+  reason: 'The speaker distinguishes the contact timing for these loop intentions.'
   confidence: 0.96
   visual_status: not_visual
   review_status: approved
@@ -219,17 +245,21 @@ evidence:
     - t3HX8AEujWw:00027
 - id: t3HX8AEujWw-c4-2
   evidence_type: explanation
-  excerpt: Explains progression on backspin from stable descending-phase loops to peak-timed explosive power loops.
-  reason: 'Different loop intentions use different timing: spin loops favor the early descending phase, while power loops and kill shots use the peak of the bounce; against backspin, players may progress from safe descending-phase loops to peak-timed power loops.'
+  excerpt: For beginners, place the backspin loop in the early descending phase for time and friction. Once consistency improves but quality is lacking, shift to the peak to progress from safe loops to explosive power loops.
+  reason: 'The progression changes timing after consistency improves, rather than asking beginners to start with peak-timed power.'
   confidence: 0.93
   visual_status: not_visual
   review_status: approved
   source:
     video_id: t3HX8AEujWw
-    start_ms: 275520
+    start_ms: 267040
     end_ms: 289600
-    url: https://www.youtube.com/watch?v=t3HX8AEujWw&t=275s
+    url: https://www.youtube.com/watch?v=t3HX8AEujWw&t=267s
     segment_ids:
+    - t3HX8AEujWw:00116
+    - t3HX8AEujWw:00117
+    - t3HX8AEujWw:00118
+    - t3HX8AEujWw:00119
     - t3HX8AEujWw:00120
     - t3HX8AEujWw:00121
     - t3HX8AEujWw:00122
@@ -238,35 +268,46 @@ evidence:
     - t3HX8AEujWw:00125
 - id: wF-YklKS7pI-cand-spin-loop-vs-power-loop-1
   evidence_type: explanation
-  excerpt: The speaker explicitly recommends heavy-spin looping on the drop and warns against power looping from that contact timing.
-  reason: On lower or descending half-long balls, the safer attack is a heavy-spin loop rather than a power loop, because power looping late increases errors.
+  excerpt: Step in and loop at the peak, or wait for the descending point and loop with heavy spin. The speaker warns against power looping at the descending point and also offers staying at the normal long-ball position to loop with heavy spin.
+  reason: The lesson presents alternative positions and timings, keeping the descending-point option a heavy-spin loop.
   confidence: 0.91
   visual_status: not_visual
   review_status: approved
   source:
     video_id: wF-YklKS7pI
-    start_ms: 347920
+    start_ms: 345919
     end_ms: 370880
-    url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=347s
+    url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=345s
     segment_ids:
+    - wF-YklKS7pI:00136
     - wF-YklKS7pI:00137
+    - wF-YklKS7pI:00138
     - wF-YklKS7pI:00139
     - wF-YklKS7pI:00140
+    - wF-YklKS7pI:00141
+    - wF-YklKS7pI:00142
+    - wF-YklKS7pI:00143
+    - wF-YklKS7pI:00144
     - wF-YklKS7pI:00145
 - id: wF-YklKS7pI-cand-spin-loop-vs-power-loop-2
   evidence_type: explanation
-  excerpt: The speaker explicitly recommends heavy-spin looping on the drop and warns against power looping from that contact timing.
-  reason: On lower or descending half-long balls, the safer attack is a heavy-spin loop rather than a power loop, because power looping late increases errors.
+  excerpt: For a half-long ball, wait and loop with heavy spin at the lower point. The lesson also offers stepping in to loop the peak, or waiting for the drop.
+  reason: The speaker distinguishes stepping in for peak contact from waiting for lower spin-loop contact.
   confidence: 0.91
   visual_status: not_visual
   review_status: approved
   source:
     video_id: wF-YklKS7pI
-    start_ms: 373080
+    start_ms: 369080
     end_ms: 391720
-    url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=373s
+    url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=369s
     segment_ids:
+    - wF-YklKS7pI:00146
+    - wF-YklKS7pI:00147
     - wF-YklKS7pI:00148
+    - wF-YklKS7pI:00149
+    - wF-YklKS7pI:00150
+    - wF-YklKS7pI:00151
     - wF-YklKS7pI:00152
 - id: 15KzTMIx65s-concept-spin-focused-loop-reviewed
   evidence_type: definition
@@ -415,5 +456,5 @@ relations:
 - relation_type: variation_of
   target_concept_id: concept-forehand-loop
   confidence: 0.99
-  review_status: approved
+  review_status: unreviewed
   sources: [{video_id: m93pWt9MIZE, start_ms: 23519, end_ms: 32079, url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=23s", segment_ids: ["m93pWt9MIZE:00010", "m93pWt9MIZE:00011"]}]

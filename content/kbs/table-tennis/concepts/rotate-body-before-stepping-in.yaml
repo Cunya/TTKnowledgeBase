@@ -2,22 +2,17 @@ id: concept-rotate-body-before-stepping-in
 slug: rotate-body-before-stepping-in
 label: Rotate body before stepping in
 aliases:
-  - rotate your body to prepare
-  - rotate, then step in
-  - body rotation should initiate the movement
-short_definition: For this shot, body rotation should happen before the step-in so the player creates space and avoids being jammed.
+- rotate your body to prepare
+- rotate, then step in
+- rotate before stepping in
+short_definition: Rotate your body to prepare for a half-high ball, then step in with your left foot to meet it.
 evidence_summary: >-
-  For this shot, body rotation should happen before the step-in so the player creates space and
-  avoids being jammed.
-evidence_summary_source_hash: "sha256:77cef5152d3abbd2fe7cc5f3b081da8f8c05b3236f718620527d9ff76fb2598e"
-evidence_summary_generator: "deterministic"
+  Rotate your body to prepare for a half-high ball. A square stance leads to an incorrect step; from a sideways position, step in with your left foot to meet the ball.
 concept_type: fundamentals
 facets:
   category:
-    - fundamentals
-  level:
-    - intermediate
-difficulty: medium
+  - fundamentals
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -28,38 +23,38 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: dCjFkTKTH7I-concept-rotate-body-before-stepping-in-reviewed
-    evidence_type: explanation
-    excerpt: For this shot, body rotation should happen before the step-in so the player creates space and avoids being jammed.
-    reason: The speaker repeatedly says the body must rotate first, then step in, and that the rotation initiates the movement.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: dCjFkTKTH7I
-      start_ms: 134733
-      end_ms: 158733
-      url: https://www.youtube.com/watch?v=dCjFkTKTH7I&t=134s
-      segment_ids:
-        - dCjFkTKTH7I:00027
-        - dCjFkTKTH7I:00028
-        - dCjFkTKTH7I:00030
-        - dCjFkTKTH7I:00031
-  - id: dCjFkTKTH7I-concept-rotate-body-before-stepping-in-codex-reviewed
-    evidence_type: explanation
-    excerpt: You must rotate your body to prepare for a half-high ball. If your body is square to the table, you'll step incorrectly. But if your body is turned sideways, you are already rotated. From this position, step in with your left foot to meet the ball.
-    reason: This contiguous 14.0-second span directly explains that body rotation prepares the shot and must precede the step-in; it matches the supplied existing concept.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: dCjFkTKTH7I
-      start_ms: 134733
-      end_ms: 158733
-      url: https://www.youtube.com/watch?v=dCjFkTKTH7I&t=134s
-      segment_ids:
-        - dCjFkTKTH7I:00027
-        - dCjFkTKTH7I:00028
-        - dCjFkTKTH7I:00029
-        - dCjFkTKTH7I:00030
-        - dCjFkTKTH7I:00031
+- id: dCjFkTKTH7I-concept-rotate-body-before-stepping-in-reviewed
+  evidence_type: explanation
+  excerpt: For this shot, body rotation should happen before the step-in so the player creates space and avoids being jammed.
+  reason: The speaker repeatedly says the body must rotate first, then step in, and that the rotation initiates the movement.
+  confidence: 0.93
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: dCjFkTKTH7I
+    start_ms: 134733
+    end_ms: 158733
+    url: https://www.youtube.com/watch?v=dCjFkTKTH7I&t=134s
+    segment_ids:
+    - dCjFkTKTH7I:00027
+    - dCjFkTKTH7I:00028
+    - dCjFkTKTH7I:00030
+    - dCjFkTKTH7I:00031
+- id: dCjFkTKTH7I-concept-rotate-body-before-stepping-in-codex-reviewed
+  evidence_type: explanation
+  excerpt: Rotate your body to prepare for a half-high ball. If your body is square to the table, you'll step incorrectly. Turn sideways to get rotated, then step in with your left foot to meet the ball.
+  reason: 'Rotate your body before stepping in: from a sideways position, step forward with your left foot to meet the ball.'
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: dCjFkTKTH7I
+    start_ms: 134733
+    end_ms: 158733
+    url: https://www.youtube.com/watch?v=dCjFkTKTH7I&t=134s
+    segment_ids:
+    - dCjFkTKTH7I:00027
+    - dCjFkTKTH7I:00028
+    - dCjFkTKTH7I:00029
+    - dCjFkTKTH7I:00030
+    - dCjFkTKTH7I:00031

@@ -1,27 +1,17 @@
 id: concept-compact-spin-stroke-with-finger-lead
 slug: compact-spin-stroke-with-finger-lead
-label: Compact spin stroke with finger lead
+label: Finger-led small-arc shot
 aliases:
-  - fingers lead the shot
-  - small range motion
-  - use your fingers to rotate your forehand stroke
-  - power is generated from the fingers
-short_definition: A compact stroke pattern where the fingers and wrist lead the action, the motion stays small, and spin comes from precise acceleration rather than a large swing.
+- fingers lead the shot
+- small-arc finger motion
+short_definition: A shot in which the fingers lead the wrist and arm through a small arc.
 evidence_summary: >-
-  A compact stroke pattern where the fingers and wrist lead the action, the motion stays small,
-  and spin comes from precise acceleration rather than a large swing.
-evidence_summary_source_hash: "sha256:2f04e68bc7cdd9c4829204562b766b5d1f035c6cbd6f8737f9e48073cd99de91"
-evidence_summary_generator: "deterministic"
+  The fingers lead the wrist and arm through a small arc; the leading finger differs between shakehand and penhold grips.
 concept_type: stroke
 facets:
   category:
-    - stroke
-  side:
-    - forehand
-  level:
-    - beginner
-    - intermediate
-difficulty: intermediate
+  - stroke
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -32,83 +22,83 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: woTURG6ah3Y-concept-compact-spin-stroke-with-finger-lead-reviewed
-    evidence_type: explanation
-    excerpt: A compact stroke pattern where the fingers and wrist lead the action, the motion stays small, and spin comes from precise acceleration rather than a large swing.
-    reason: The speaker says the forehand stroke is guided by the fingers, power is generated from the fingers, and the movement should be small with the fingers leading.
-    confidence: 0.89
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: woTURG6ah3Y
-      start_ms: 586320
-      end_ms: 608400
-      url: https://www.youtube.com/watch?v=woTURG6ah3Y&t=586s
-      segment_ids:
-        - woTURG6ah3Y:00086
-        - woTURG6ah3Y:00087
-        - woTURG6ah3Y:00088
-  - id: xo9M8v9k564-concept-compact-spin-stroke-with-finger-lead-reviewed
-    evidence_type: explanation
-    excerpt: A compact stroke in which the motion range stays small and the fingers lead racket-head rotation to create spin efficiently.
-    reason: The speaker says quick and fluid racket-head rotation matters and that a small range of motion is enough, while larger rotation reduces concentration of force.
-    confidence: 0.89
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: xo9M8v9k564
-      start_ms: 315133
-      end_ms: 338333
-      url: https://www.youtube.com/watch?v=xo9M8v9k564&t=315s
-      segment_ids:
-        - xo9M8v9k564:00071
-        - xo9M8v9k564:00075
-  - id: xWE01GQepLE-concept-compact-spin-stroke-with-finger-lead-reviewed
-    evidence_type: definition
-    excerpt: A compact serve action where fingers contribute a second burst of acceleration at contact to create spin.
-    reason: The speaker describes an explosive compact motion with a sharp racket-tip snap and a finger burst at contact.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: xWE01GQepLE
-      start_ms: 489833
-      end_ms: 509566
-      url: https://www.youtube.com/watch?v=xWE01GQepLE&t=489s
-      segment_ids:
-        - xWE01GQepLE:00106
-        - xWE01GQepLE:00109
-  - id: Ay4vk9XXAfM-concept-compact-spin-stroke-with-finger-lead-reviewed
-    evidence_type: demonstration
-    excerpt: For maximum serve spin, minimize the upper arm and forearm, and let the fingers and wrist produce the fastest compact brushing action.
-    reason: The speaker demonstrates spin increasing from upper arm to forearm to fingers and wrist, with fingers and wrist producing the most spin.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: Ay4vk9XXAfM
-      start_ms: 104000
-      end_ms: 131533
-      url: https://www.youtube.com/watch?v=Ay4vk9XXAfM&t=104s
-      segment_ids:
-        - Ay4vk9XXAfM:00019
-        - Ay4vk9XXAfM:00020
-        - Ay4vk9XXAfM:00021
-        - Ay4vk9XXAfM:00022
-        - Ay4vk9XXAfM:00023
-  - id: 0E67TotjJFE-cand-finger-led-brush-arc-codex-reviewed
-    evidence_type: explanation
-    excerpt: For shakehand, the index finger leads; for penhold, the middle finger leads. The fingers should lead the wrist and arm to create a small arc.
-    reason: These contiguous segments directly describe finger leadership by grip and the fingers leading the wrist and arm through a small arc, matching the existing finger-lead stroke concept.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 0E67TotjJFE
-      start_ms: 121100
-      end_ms: 138200
-      url: https://www.youtube.com/watch?v=0E67TotjJFE&t=121s
-      segment_ids:
-        - 0E67TotjJFE:00028
-        - 0E67TotjJFE:00029
-        - 0E67TotjJFE:00030
+- id: woTURG6ah3Y-concept-compact-spin-stroke-with-finger-lead-reviewed
+  evidence_type: explanation
+  excerpt: A compact stroke pattern where the fingers and wrist lead the action, the motion stays small, and spin comes from precise acceleration rather than a large swing.
+  reason: The speaker says the forehand stroke is guided by the fingers, power is generated from the fingers, and the movement should be small with the fingers leading.
+  confidence: 0.89
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: woTURG6ah3Y
+    start_ms: 586320
+    end_ms: 608400
+    url: https://www.youtube.com/watch?v=woTURG6ah3Y&t=586s
+    segment_ids:
+    - woTURG6ah3Y:00086
+    - woTURG6ah3Y:00087
+    - woTURG6ah3Y:00088
+- id: xo9M8v9k564-concept-compact-spin-stroke-with-finger-lead-reviewed
+  evidence_type: explanation
+  excerpt: A compact stroke in which the motion range stays small and the fingers lead racket-head rotation to create spin efficiently.
+  reason: The speaker says quick and fluid racket-head rotation matters and that a small range of motion is enough, while larger rotation reduces concentration of force.
+  confidence: 0.89
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: xo9M8v9k564
+    start_ms: 315133
+    end_ms: 338333
+    url: https://www.youtube.com/watch?v=xo9M8v9k564&t=315s
+    segment_ids:
+    - xo9M8v9k564:00071
+    - xo9M8v9k564:00075
+- id: xWE01GQepLE-concept-compact-spin-stroke-with-finger-lead-reviewed
+  evidence_type: definition
+  excerpt: A compact serve action where fingers contribute a second burst of acceleration at contact to create spin.
+  reason: The speaker describes an explosive compact motion with a sharp racket-tip snap and a finger burst at contact.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: xWE01GQepLE
+    start_ms: 489833
+    end_ms: 509566
+    url: https://www.youtube.com/watch?v=xWE01GQepLE&t=489s
+    segment_ids:
+    - xWE01GQepLE:00106
+    - xWE01GQepLE:00109
+- id: Ay4vk9XXAfM-concept-compact-spin-stroke-with-finger-lead-reviewed
+  evidence_type: demonstration
+  excerpt: For maximum serve spin, minimize the upper arm and forearm, and let the fingers and wrist produce the fastest compact brushing action.
+  reason: The speaker demonstrates spin increasing from upper arm to forearm to fingers and wrist, with fingers and wrist producing the most spin.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Ay4vk9XXAfM
+    start_ms: 104000
+    end_ms: 131533
+    url: https://www.youtube.com/watch?v=Ay4vk9XXAfM&t=104s
+    segment_ids:
+    - Ay4vk9XXAfM:00019
+    - Ay4vk9XXAfM:00020
+    - Ay4vk9XXAfM:00021
+    - Ay4vk9XXAfM:00022
+    - Ay4vk9XXAfM:00023
+- id: 0E67TotjJFE-cand-finger-led-brush-arc-codex-reviewed
+  evidence_type: explanation
+  excerpt: For shakehand, the index finger leads; for penhold, the middle finger leads. The fingers should lead the wrist and arm to create a small arc.
+  reason: For shakehand, lead with the index finger; for penhold, lead with the middle finger. Let the fingers lead the wrist and arm through a small arc.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: 0E67TotjJFE
+    start_ms: 121100
+    end_ms: 138200
+    url: https://www.youtube.com/watch?v=0E67TotjJFE&t=121s
+    segment_ids:
+    - 0E67TotjJFE:00028
+    - 0E67TotjJFE:00029
+    - 0E67TotjJFE:00030

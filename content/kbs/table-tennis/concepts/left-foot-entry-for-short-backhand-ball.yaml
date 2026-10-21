@@ -1,26 +1,16 @@
 id: concept-left-foot-entry-for-short-backhand-ball
 slug: left-foot-entry-for-short-backhand-ball
-label: Left-foot entry for short backhand ball
+label: Foot-entry cues for short backhand balls
 aliases:
-  - step in with your left foot
-  - moving around the corner of the table
-short_definition: For a short ball to the backhand corner, step in with the left foot to get around the table corner and meet the ball early.
+- backhand short-ball entry-foot cues
+short_definition: After naming a serve to the short backhand corner, the speaker instructs stepping in with the left foot around the table corner. The speaker subsequently says to step in with the right foot for a “standard short ball” to the backhand.
 evidence_summary: >-
-  For a short ball to the backhand corner, step in with the left foot to get around the table
-  corner and meet the ball early.
-evidence_summary_source_hash: "sha256:fc5c241833d4c9053d3c93cf255a8b5b292587ed1d7982b0ca545fac7fd12ef6"
-evidence_summary_generator: "deterministic"
-concept_type: practice
+  After naming a serve to the short backhand corner, the speaker instructs stepping in with the left foot around the table corner. The speaker subsequently says to step in with the right foot for a “standard short ball” to the backhand.
+concept_type: footwork
 facets:
   category:
-    - practice
-  side:
-    - backhand
-  distance:
-    - close
-  level:
-    - beginner
-difficulty: beginner
+  - fundamentals
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -31,33 +21,35 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: 2LkVpDM69vo-concept-left-foot-entry-for-short-backhand-ball-reviewed
-    evidence_type: demonstration
-    excerpt: For a short ball to the backhand corner, step in with the left foot to get around the table corner and meet the ball early.
-    reason: The speaker explicitly instructs stepping in with the left foot for the short backhand corner ball.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 2LkVpDM69vo
-      start_ms: 134766
-      end_ms: 147566
-      url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=134s
-      segment_ids:
-        - 2LkVpDM69vo:00027
-        - 2LkVpDM69vo:00028
-  - id: 2LkVpDM69vo-concept-left-foot-entry-for-short-backhand-ball-codex-reviewed
-    evidence_type: explanation
-    excerpt: Serves to the short backhand corner are common; to handle this ball, step in with your left foot and move around the corner of the table.
-    reason: The selected contiguous span explicitly identifies the short backhand-corner ball and instructs stepping in with the left foot to move around the table corner. It directly supports the supplied existing concept.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 2LkVpDM69vo
-      start_ms: 134766
-      end_ms: 147566
-      url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=134s
-      segment_ids:
-        - 2LkVpDM69vo:00027
-        - 2LkVpDM69vo:00028
+- id: 2LkVpDM69vo-concept-left-foot-entry-for-short-backhand-ball-reviewed
+  evidence_type: demonstration
+  excerpt: For a short ball to the backhand corner, step in with the left foot to get around the table corner and meet the ball early.
+  reason: The speaker explicitly instructs stepping in with the left foot for the short backhand corner ball.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 2LkVpDM69vo
+    start_ms: 134766
+    end_ms: 147566
+    url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=134s
+    segment_ids:
+    - 2LkVpDM69vo:00027
+    - 2LkVpDM69vo:00028
+- id: 2LkVpDM69vo-concept-left-foot-entry-for-short-backhand-ball-codex-reviewed
+  evidence_type: explanation
+  excerpt: After naming a serve to the short backhand corner, the speaker instructs stepping in with the left foot around the table corner. The speaker subsequently says to step in with the right foot for a “standard short ball” to the backhand.
+  reason: The speaker gives a left-foot entry cue after naming a short backhand-corner serve, then a right-foot entry cue for a standard short backhand ball.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 2LkVpDM69vo
+    start_ms: 134766
+    end_ms: 160533
+    url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=134s
+    segment_ids:
+    - 2LkVpDM69vo:00027
+    - 2LkVpDM69vo:00028
+    - 2LkVpDM69vo:00029
+    - 2LkVpDM69vo:00030

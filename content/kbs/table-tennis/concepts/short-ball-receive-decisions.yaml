@@ -2,790 +2,1043 @@ id: concept-short-ball-receive-decisions
 slug: short-ball-receive-decisions
 label: Short-ball receive decisions
 aliases:
-  - short and half-long receive choices
-  - short-ball attack selection
-short_definition: Classify the return as short, half-long, or long, arrive before the useful bounce phase, and choose a push, flick, brush loop, or deeper reset according to height, depth, and spin.
+- short-return stroke selection
+- short-ball receive options
+short_definition: Choose a push, flick or loop according to the ball’s length,
+  height and spin; read its position before stepping in.
 evidence_summary: >-
-  A short-ball receive depends on recognizing the bounce pattern and choosing the stroke while the
-  ball is still at a controllable height. The main options are to flick, touch, or push, and the
-  best moment is usually at the top of the bounce or just before it drops too low, because
-  arriving late reduces control and raises error risk. Good spacing matters as much as technique:
-  rotate first to read the ball and create room, then step in so the contact stays compact and
-  controlled.
-evidence_summary_source_hash: "sha256:d68b0c660ffa9f8c54c341c806727507ac229247869f3b78725cef628b3f5e94"
-evidence_summary_generator: "codex"
+  One lesson recommends a flick for a high ball with two bounces on the table. Another
+  contrasts banana-flick space on short and half-long balls with blocking or looping
+  in front against long serves. A spin-selection lesson favors flicking topspin serves
+  and long or heavy-spin pushes against backspin. Read the ball during the turn and
+  choose the foot adjustment for its length.
 concept_type: decision-framework
 facets:
   category:
-    - receive
-    - strategy
-  side:
-    - neutral
-  level:
-    - intermediate
-difficulty: intermediate
+  - receive
+  - strategy
+difficulty:
 review_status: approved
 evidence:
-  - id: wF-YklKS7pI-cand-short-half-long-long-ball-classification-1
-    evidence_type: definition
-    excerpt: The speaker explicitly defines short, half-long, and long returns by where and how often they bounce.
-    reason: 'A serve return can be classified by bounce pattern: a short ball bounces two or more times on the table, a half-long ball just clears the table after the first bounce, and a long ball reaches the baseline on the first bounce.'
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: wF-YklKS7pI
-      start_ms: 4960
-      end_ms: 34840
-      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=4s
-      segment_ids: &id001
-        - wF-YklKS7pI:00002
-        - wF-YklKS7pI:00003
-        - wF-YklKS7pI:00005
-        - wF-YklKS7pI:00007
-        - wF-YklKS7pI:00009
-        - wF-YklKS7pI:00011
-  - id: wF-YklKS7pI-cand-short-half-long-long-ball-classification-2
-    evidence_type: definition
-    excerpt: The speaker explicitly defines short, half-long, and long returns by where and how often they bounce.
-    reason: 'A serve return can be classified by bounce pattern: a short ball bounces two or more times on the table, a half-long ball just clears the table after the first bounce, and a long ball reaches the baseline on the first bounce.'
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: wF-YklKS7pI
-      start_ms: 32599
-      end_ms: 42600
-      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=32s
-      segment_ids:
-        - wF-YklKS7pI:00012
-        - wF-YklKS7pI:00013
-        - wF-YklKS7pI:00014
-  - id: wF-YklKS7pI-cand-push-vs-attack-on-short-backspin-return-1
-    evidence_type: explanation
-    excerpt: The speaker contrasts stable push/chop choices with more aggressive flick or slice responses to a short backspin return.
-    reason: Against a short pushed return with backspin, the player should choose a safe option like pushing short or chopping long when stability matters, and an attacking option like a flick or slice when the ball quality allows it.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: wF-YklKS7pI
-      start_ms: 42600
-      end_ms: 69760
-      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=42s
-      segment_ids:
-        - wF-YklKS7pI:00016
-        - wF-YklKS7pI:00020
-        - wF-YklKS7pI:00021
-        - wF-YklKS7pI:00023
-        - wF-YklKS7pI:00025
-  - id: wF-YklKS7pI-cand-push-vs-attack-on-short-backspin-return-2
-    evidence_type: explanation
-    excerpt: The speaker contrasts stable push/chop choices with more aggressive flick or slice responses to a short backspin return.
-    reason: Against a short pushed return with backspin, the player should choose a safe option like pushing short or chopping long when stability matters, and an attacking option like a flick or slice when the ball quality allows it.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: wF-YklKS7pI
-      start_ms: 69760
-      end_ms: 77360
-      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=69s
-      segment_ids:
-        - wF-YklKS7pI:00027
-        - wF-YklKS7pI:00028
-  - id: wF-YklKS7pI-cand-contact-timing-at-peak-on-short-ball-1
-    evidence_type: explanation
-    excerpt: The speaker states that short-ball rhythm should be taken at the peak and explains the consequences of being late.
-    reason: On short returns, attacking or touch options are most flexible at the peak of the bounce; arriving late after the ball drops reduces options and increases flick errors.
-    confidence: 0.92
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: wF-YklKS7pI
-      start_ms: 75120
-      end_ms: 96760
-      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=75s
-      segment_ids:
-        - wF-YklKS7pI:00029
-        - wF-YklKS7pI:00030
-        - wF-YklKS7pI:00032
-        - wF-YklKS7pI:00035
-        - wF-YklKS7pI:00037
-  - id: wF-YklKS7pI-cand-contact-timing-at-peak-on-short-ball-2
-    evidence_type: explanation
-    excerpt: The speaker states that short-ball rhythm should be taken at the peak and explains the consequences of being late.
-    reason: On short returns, attacking or touch options are most flexible at the peak of the bounce; arriving late after the ball drops reduces options and increases flick errors.
-    confidence: 0.92
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: wF-YklKS7pI
-      start_ms: 107200
-      end_ms: 117480
-      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=107s
-      segment_ids:
-        - wF-YklKS7pI:00042
-        - wF-YklKS7pI:00043
-        - wF-YklKS7pI:00044
-  - id: wF-YklKS7pI-cand-wrist-snap-flick-for-high-short-balls-1
-    evidence_type: definition
-    excerpt: When a short return sits up high inside the table, the recommended attack is a flick powered by a short wrist snap rather than a push flick, big arm swing, or forced loop.
-    reason: The speaker defines high short balls as flick balls and describes a compact wrist-driven action with a flat arc.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: wF-YklKS7pI
-      start_ms: 134520
-      end_ms: 147400
-      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=134s
-      segment_ids:
-        - wF-YklKS7pI:00053
-        - wF-YklKS7pI:00057
-  - id: wF-YklKS7pI-cand-wrist-snap-flick-for-high-short-balls-2
-    evidence_type: definition
-    excerpt: When a short return sits up high inside the table, the recommended attack is a flick powered by a short wrist snap rather than a push flick, big arm swing, or forced loop.
-    reason: The speaker defines high short balls as flick balls and describes a compact wrist-driven action with a flat arc.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: wF-YklKS7pI
-      start_ms: 160520
-      end_ms: 184480
-      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=160s
-      segment_ids:
-        - wF-YklKS7pI:00065
-        - wF-YklKS7pI:00066
-        - wF-YklKS7pI:00069
-        - wF-YklKS7pI:00071
-        - wF-YklKS7pI:00073
-  - id: wF-YklKS7pI-cand-wrist-snap-flick-for-high-short-balls-3
-    evidence_type: definition
-    excerpt: When a short return sits up high inside the table, the recommended attack is a flick powered by a short wrist snap rather than a push flick, big arm swing, or forced loop.
-    reason: The speaker defines high short balls as flick balls and describes a compact wrist-driven action with a flat arc.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: wF-YklKS7pI
-      start_ms: 188800
-      end_ms: 206880
-      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=188s
-      segment_ids:
-        - wF-YklKS7pI:00077
-        - wF-YklKS7pI:00079
-        - wF-YklKS7pI:00081
-  - id: wF-YklKS7pI-cand-wrist-snap-flick-for-high-short-balls-4
-    evidence_type: definition
-    excerpt: When a short return sits up high inside the table, the recommended attack is a flick powered by a short wrist snap rather than a push flick, big arm swing, or forced loop.
-    reason: The speaker defines high short balls as flick balls and describes a compact wrist-driven action with a flat arc.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: wF-YklKS7pI
-      start_ms: 215120
-      end_ms: 242800
-      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=215s
-      segment_ids:
-        - wF-YklKS7pI:00084
-        - wF-YklKS7pI:00089
-        - wF-YklKS7pI:00095
-  - id: wF-YklKS7pI-cand-wrist-snap-flick-for-high-short-balls-5
-    evidence_type: definition
-    excerpt: When a short return sits up high inside the table, the recommended attack is a flick powered by a short wrist snap rather than a push flick, big arm swing, or forced loop.
-    reason: The speaker defines high short balls as flick balls and describes a compact wrist-driven action with a flat arc.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: wF-YklKS7pI
-      start_ms: 251200
-      end_ms: 257480
-      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=251s
-      segment_ids:
-        - wF-YklKS7pI:00100
-        - wF-YklKS7pI:00101
-  - id: wF-YklKS7pI-cand-wrist-snap-flick-for-high-short-balls-6
-    evidence_type: mistake
-    excerpt: The speaker warns against forced inside-table loops, pulling back, using this technique on low balls, or simply hitting through the ball.
-    reason: When a short return sits up high inside the table, the recommended attack is a flick powered by a short wrist snap rather than a push flick, big arm swing, or forced loop.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: wF-YklKS7pI
-      start_ms: 147520
-      end_ms: 153640
-      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=147s
-      segment_ids:
-        - wF-YklKS7pI:00059
-        - wF-YklKS7pI:00060
-  - id: wF-YklKS7pI-cand-wrist-snap-flick-for-high-short-balls-7
-    evidence_type: mistake
-    excerpt: The speaker warns against forced inside-table loops, pulling back, using this technique on low balls, or simply hitting through the ball.
-    reason: When a short return sits up high inside the table, the recommended attack is a flick powered by a short wrist snap rather than a push flick, big arm swing, or forced loop.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: wF-YklKS7pI
-      start_ms: 223800
-      end_ms: 252760
-      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=223s
-      segment_ids:
-        - wF-YklKS7pI:00088
-        - wF-YklKS7pI:00092
-        - wF-YklKS7pI:00098
-        - wF-YklKS7pI:00099
-  - id: wF-YklKS7pI-cand-soft-half-long-ball-decision-1
-    evidence_type: explanation
-    excerpt: The speaker gives three concrete tactical options for soft half-long returns and when to use each.
-    reason: Against a soft half-long return after serving, the player can step in and loop at the peak, wait and play a heavy-spin loop at the descending point, or push deep and attack the next ball instead.
-    confidence: 0.92
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: wF-YklKS7pI
-      start_ms: 342680
-      end_ms: 369080
-      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=342s
-      segment_ids:
-        - wF-YklKS7pI:00134
-        - wF-YklKS7pI:00136
-        - wF-YklKS7pI:00137
-        - wF-YklKS7pI:00139
-        - wF-YklKS7pI:00143
-        - wF-YklKS7pI:00144
-  - id: wF-YklKS7pI-cand-soft-half-long-ball-decision-2
-    evidence_type: explanation
-    excerpt: The speaker gives three concrete tactical options for soft half-long returns and when to use each.
-    reason: Against a soft half-long return after serving, the player can step in and loop at the peak, wait and play a heavy-spin loop at the descending point, or push deep and attack the next ball instead.
-    confidence: 0.92
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: wF-YklKS7pI
-      start_ms: 373080
-      end_ms: 397440
-      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=373s
-      segment_ids:
-        - wF-YklKS7pI:00148
-        - wF-YklKS7pI:00150
-        - wF-YklKS7pI:00151
-        - wF-YklKS7pI:00152
-        - wF-YklKS7pI:00153
-        - wF-YklKS7pI:00154
-  - id: wF-YklKS7pI-cand-push-deep-to-backhand-baseline-1
-    evidence_type: explanation
-    excerpt: When the return is too spinny, unclear, or not ideal to attack, sending a long push deep to the opponent's backhand baseline is presented as a stable way to reduce their attack quality and set up the next ball.
-    reason: Multiple segments recommend a deep push to the opponent's backhand baseline as a high-margin response and setup shot.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: wF-YklKS7pI
-      start_ms: 277440
-      end_ms: 303080
-      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=277s
-      segment_ids:
-        - wF-YklKS7pI:00110
-        - wF-YklKS7pI:00111
-        - wF-YklKS7pI:00114
-        - wF-YklKS7pI:00116
-  - id: wF-YklKS7pI-cand-push-deep-to-backhand-baseline-2
-    evidence_type: explanation
-    excerpt: When the return is too spinny, unclear, or not ideal to attack, sending a long push deep to the opponent's backhand baseline is presented as a stable way to reduce their attack quality and set up the next ball.
-    reason: Multiple segments recommend a deep push to the opponent's backhand baseline as a high-margin response and setup shot.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: wF-YklKS7pI
-      start_ms: 303440
-      end_ms: 331680
-      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=303s
-      segment_ids:
-        - wF-YklKS7pI:00118
-        - wF-YklKS7pI:00121
-        - wF-YklKS7pI:00124
-        - wF-YklKS7pI:00126
-        - wF-YklKS7pI:00129
-  - id: wF-YklKS7pI-cand-push-deep-to-backhand-baseline-3
-    evidence_type: explanation
-    excerpt: When the return is too spinny, unclear, or not ideal to attack, sending a long push deep to the opponent's backhand baseline is presented as a stable way to reduce their attack quality and set up the next ball.
-    reason: Multiple segments recommend a deep push to the opponent's backhand baseline as a high-margin response and setup shot.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: wF-YklKS7pI
-      start_ms: 331680
-      end_ms: 336040
-      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=331s
-      segment_ids:
-        - wF-YklKS7pI:00131
-  - id: wF-YklKS7pI-cand-push-deep-to-backhand-baseline-4
-    evidence_type: explanation
-    excerpt: When the return is too spinny, unclear, or not ideal to attack, sending a long push deep to the opponent's backhand baseline is presented as a stable way to reduce their attack quality and set up the next ball.
-    reason: Multiple segments recommend a deep push to the opponent's backhand baseline as a high-margin response and setup shot.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: wF-YklKS7pI
-      start_ms: 391840
-      end_ms: 404000
-      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=391s
-      segment_ids:
-        - wF-YklKS7pI:00153
-        - wF-YklKS7pI:00154
-        - wF-YklKS7pI:00156
-        - wF-YklKS7pI:00157
-  - id: wF-YklKS7pI-cand-turn-then-step-in-1
-    evidence_type: explanation
-    excerpt: The speaker gives a clear movement sequence for handling short returns without crowding the ball.
-    reason: On a short return after serve, rotate first to read the ball and create space, then step in, instead of stepping straight forward and getting jammed.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: wF-YklKS7pI
-      start_ms: 477720
-      end_ms: 493840
-      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=477s
-      segment_ids:
-        - wF-YklKS7pI:00189
-        - wF-YklKS7pI:00190
-        - wF-YklKS7pI:00191
-        - wF-YklKS7pI:00193
-  - id: wF-YklKS7pI-cand-turn-then-step-in-2
-    evidence_type: explanation
-    excerpt: The speaker gives a clear movement sequence for handling short returns without crowding the ball.
-    reason: On a short return after serve, rotate first to read the ball and create space, then step in, instead of stepping straight forward and getting jammed.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: wF-YklKS7pI
-      start_ms: 508560
-      end_ms: 536440
-      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=508s
-      segment_ids:
-        - wF-YklKS7pI:00203
-        - wF-YklKS7pI:00204
-        - wF-YklKS7pI:00214
-  - id: wF-YklKS7pI-cand-turn-then-step-in-3
-    evidence_type: explanation
-    excerpt: The speaker gives a clear movement sequence for handling short returns without crowding the ball.
-    reason: On a short return after serve, rotate first to read the ball and create space, then step in, instead of stepping straight forward and getting jammed.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: wF-YklKS7pI
-      start_ms: 534320
-      end_ms: 539760
-      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=534s
-      segment_ids:
-        - wF-YklKS7pI:00215
-  - id: wF-YklKS7pI-cand-left-foot-first-on-uncertain-short-ball-1
-    evidence_type: explanation
-    excerpt: The speaker explicitly explains why left-foot-first entry is safer when the return may drift deeper than expected.
-    reason: When the return length is uncertain, stepping in with the left foot first preserves the ability to adjust to a deeper ball, whereas committing the right foot early can cause jamming on half-long balls.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: wF-YklKS7pI
-      start_ms: 487760
-      end_ms: 512760
-      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=487s
-      segment_ids:
-        - wF-YklKS7pI:00193
-        - wF-YklKS7pI:00194
-        - wF-YklKS7pI:00195
-        - wF-YklKS7pI:00196
-        - wF-YklKS7pI:00198
-        - wF-YklKS7pI:00200
-        - wF-YklKS7pI:00201
-        - wF-YklKS7pI:00203
-  - id: wF-YklKS7pI-cand-left-foot-first-on-uncertain-short-ball-2
-    evidence_type: explanation
-    excerpt: The speaker explicitly explains why left-foot-first entry is safer when the return may drift deeper than expected.
-    reason: When the return length is uncertain, stepping in with the left foot first preserves the ability to adjust to a deeper ball, whereas committing the right foot early can cause jamming on half-long balls.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: wF-YklKS7pI
-      start_ms: 512760
-      end_ms: 527400
-      url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=512s
-      segment_ids:
-        - wF-YklKS7pI:00205
-        - wF-YklKS7pI:00206
-        - wF-YklKS7pI:00207
-        - wF-YklKS7pI:00209
-  - id: mTnHV7k_Wes-three-short-receives
-    evidence_type: definition
-    excerpt: A short backspin or sidespin serve can be returned with a long push, short push, or flick.
-    reason: Names the three principal choices for receiving a short serve over the table.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source: {video_id: mTnHV7k_Wes, start_ms: 26560, end_ms: 42960, url: "https://www.youtube.com/watch?v=mTnHV7k_Wes&t=26s", segment_ids: ["mTnHV7k_Wes:00011", "mTnHV7k_Wes:00012", "mTnHV7k_Wes:00013", "mTnHV7k_Wes:00014", "mTnHV7k_Wes:00015", "mTnHV7k_Wes:00016"]}
-  - id: StQ86EhPFpo-short-ball-distance
-    evidence_type: explanation
-    excerpt: Stay close to a short ball; creating excess distance makes pushes and flicks run long.
-    reason: Connects receive selection to the spacing needed to keep short-table strokes controlled.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source: {video_id: StQ86EhPFpo, start_ms: 337960, end_ms: 363200, url: "https://www.youtube.com/watch?v=StQ86EhPFpo&t=337s", segment_ids: ["StQ86EhPFpo:00135", "StQ86EhPFpo:00136", "StQ86EhPFpo:00137", "StQ86EhPFpo:00138", "StQ86EhPFpo:00139", "StQ86EhPFpo:00140", "StQ86EhPFpo:00141"]}
-  - id: TMrN47uIHiI-concept-short-ball-receive-decisions-reviewed
-    evidence_type: explanation
-    excerpt: Choosing how to deal with short or half-long balls, including whether to drop short, push, or attack early.
-    reason: The speaker explains how to drop short from a half-high ball, says drop shot is the same as short push, and notes not to stand too far away.
-    confidence: 0.89
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: TMrN47uIHiI
-      start_ms: 533839
-      end_ms: 556360
-      url: https://www.youtube.com/watch?v=TMrN47uIHiI&t=533s
-      segment_ids:
-        - TMrN47uIHiI:00159
-        - TMrN47uIHiI:00161
-        - TMrN47uIHiI:00163
-        - TMrN47uIHiI:00166
-  - id: h5jUJL_P82w-concept-short-ball-receive-decisions-reviewed
-    evidence_type: explanation
-    excerpt: Selecting among push, drop shot, flick, chop-push, or sidespin push depending on serve type and bounce timing.
-    reason: The speaker distinguishes short forehand receive choices by serve type, including topspin flicks and backspin pushes.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: h5jUJL_P82w
-      start_ms: 115233
-      end_ms: 141133
-      url: https://www.youtube.com/watch?v=h5jUJL_P82w&t=115s
-      segment_ids:
-        - h5jUJL_P82w:00025
-        - h5jUJL_P82w:00026
-        - h5jUJL_P82w:00027
-        - h5jUJL_P82w:00028
-        - h5jUJL_P82w:00029
-  - id: Nmf0ZWP6dn0-cand-short-ball-receive-decisions-reviewed
-    evidence_type: example
-    excerpt: On short balls, stay compact and push; if the ball turns out half-long, switch to a loop instead of preparing to loop too early.
-    reason: If the ball is half-long, they loop; if they mistakenly prepare to loop first on a short ball, they cannot reach it.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: Nmf0ZWP6dn0
-      start_ms: 612920
-      end_ms: 635000
-      url: https://www.youtube.com/watch?v=Nmf0ZWP6dn0&t=612s
-      segment_ids:
-        - Nmf0ZWP6dn0:00218
-        - Nmf0ZWP6dn0:00219
-        - Nmf0ZWP6dn0:00220
-        - Nmf0ZWP6dn0:00221
-        - Nmf0ZWP6dn0:00222
-        - Nmf0ZWP6dn0:00223
-        - Nmf0ZWP6dn0:00224
-        - Nmf0ZWP6dn0:00225
-  - id: gxWSApJI9E8-concept-short-ball-receive-decisions-reviewed
-    evidence_type: explanation
-    excerpt: Choosing whether to drop short, push, or attack based on whether the incoming ball is truly short or half-long, with half-long balls being harder to keep short.
-    reason: The speaker contrasts truly short balls with half-long balls and states that half-long balls are harder to drop short, while short balls are easiest to drop short.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: gxWSApJI9E8
-      start_ms: 480
-      end_ms: 30480
-      url: https://www.youtube.com/watch?v=gxWSApJI9E8&t=0s
-      segment_ids:
-        - gxWSApJI9E8:00000
-        - gxWSApJI9E8:00003
-        - gxWSApJI9E8:00004
-        - gxWSApJI9E8:00005
-        - gxWSApJI9E8:00006
-        - gxWSApJI9E8:00010
-        - gxWSApJI9E8:00011
-  - id: lii73aKvvkw-concept-short-forehand-serve-batch-reviewed
-    evidence_type: example
-    excerpt: Short serves to the forehand that stay low, short, and floating to make the receive awkward and reduce clean contact.
-    reason: The speaker explains how to make the short forehand serve float aggressively and drift outward after the bounce.
-    confidence: 0.86
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: lii73aKvvkw
-      start_ms: 574720
-      end_ms: 595519
-      url: https://www.youtube.com/watch?v=lii73aKvvkw&t=574s
-      segment_ids:
-        - lii73aKvvkw:00204
-        - lii73aKvvkw:00205
-        - lii73aKvvkw:00206
-        - lii73aKvvkw:00207
-        - lii73aKvvkw:00208
-        - lii73aKvvkw:00209
-        - lii73aKvvkw:00210
-  - id: wSzmpXHp64Q-concept-short-ball-receive-decisions-reviewed
-    evidence_type: explanation
-    excerpt: Choosing among push, chop long, drop short, flick, loop, or attack when receiving short or half-long serves.
-    reason: The speaker explicitly groups the receive options for short and half-long balls.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: wSzmpXHp64Q
-      start_ms: 42100
-      end_ms: 65033
-      url: https://www.youtube.com/watch?v=wSzmpXHp64Q&t=42s
-      segment_ids:
-        - wSzmpXHp64Q:00010
-        - wSzmpXHp64Q:00011
-        - wSzmpXHp64Q:00014
-        - wSzmpXHp64Q:00015
-  - id: EtTzu7KvqNY-concept-short-ball-receive-decisions-reviewed
-    evidence_type: explanation
-    excerpt: Choosing between flicking and pushing on short or half-spin/no-spin balls based on the ball and opponent.
-    reason: The speaker explicitly discusses pushing or flicking short, half-spin, and no-spin balls as alternative receive choices.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: EtTzu7KvqNY
-      start_ms: 466466
-      end_ms: 487633
-      url: https://www.youtube.com/watch?v=EtTzu7KvqNY&t=466s
-      segment_ids:
-        - EtTzu7KvqNY:00156
-        - EtTzu7KvqNY:00162
-        - EtTzu7KvqNY:00163
-        - EtTzu7KvqNY:00165
-  - id: lcp99UuLuus-concept-short-ball-receive-decisions-reviewed
-    evidence_type: explanation
-    excerpt: Choose the receive action for short serves or short balls, typically push, flick, or flip, with flick emphasized as the best attack option.
-    reason: The speaker says the best way to handle short balls is the backhand flick because it can counter most types of spin.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: lcp99UuLuus
-      start_ms: 34066
-      end_ms: 43766
-      url: https://www.youtube.com/watch?v=lcp99UuLuus&t=34s
-      segment_ids:
-        - lcp99UuLuus:00013
-        - lcp99UuLuus:00014
-        - lcp99UuLuus:00015
-        - lcp99UuLuus:00016
-        - lcp99UuLuus:00017
-  - id: -iWLwSvOJ2U-concept-short-ball-receive-decisions-reviewed
-    evidence_type: definition
-    excerpt: Choosing how to handle a short serve or short forehand return by positioning, compactness, and controlled contact rather than forcing power.
-    reason: The transcript centers on in-table forehand short-ball receive, needing center-of-gravity over the table, a compact forearm, and avoiding late footwork and over-reaching.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: -iWLwSvOJ2U
-      start_ms: 39633
-      end_ms: 58300
-      url: https://www.youtube.com/watch?v=-iWLwSvOJ2U&t=39s
-      segment_ids:
-        - -iWLwSvOJ2U:00009
-        - -iWLwSvOJ2U:00010
-        - -iWLwSvOJ2U:00012
-        - -iWLwSvOJ2U:00013
-  - id: Zrw_aJYKfhA-concept-short-ball-receive-decisions-reviewed
-    evidence_type: explanation
-    excerpt: Choosing how to handle a short incoming ball, including whether to block, hit, or add spin depending on height and bounce.
-    reason: 'The transcript repeatedly discusses short-ball response options: make a short shot, block it, or step back and hit depending on ball length and bounce height.'
-    confidence: 0.86
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: Zrw_aJYKfhA
-      start_ms: 147866
-      end_ms: 172566
-      url: https://www.youtube.com/watch?v=Zrw_aJYKfhA&t=147s
-      segment_ids:
-        - Zrw_aJYKfhA:00031
-        - Zrw_aJYKfhA:00034
-  - id: U4ufFJg5s4A-concept-short-ball-receive-decisions-reviewed
-    evidence_type: explanation
-    excerpt: Deciding how to handle short or half-long balls, including stepping in and choosing a shorter response or initiative attack.
-    reason: The speaker discusses shorter balls, stepping in, and selecting initiative only when the ball is suitable and not too fast or too tight to the net.
-    confidence: 0.87
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: U4ufFJg5s4A
-      start_ms: 307000
-      end_ms: 314200
-      url: https://www.youtube.com/watch?v=U4ufFJg5s4A&t=307s
-      segment_ids:
-        - U4ufFJg5s4A:00151
-        - U4ufFJg5s4A:00152
-        - U4ufFJg5s4A:00153
-        - U4ufFJg5s4A:00154
-  - id: suG8AopFBIc-concept-short-ball-receive-decisions-reviewed
-    evidence_type: explanation
-    excerpt: Choose placement against short balls based on spin, length, and the opponent's weaknesses, with different targets for short, long, and sidespin balls.
-    reason: The speaker gives explicit placement choices for short pushes, long pushes, and sidespin pushes.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: suG8AopFBIc
-      start_ms: 588833
-      end_ms: 592866
-      url: https://www.youtube.com/watch?v=suG8AopFBIc&t=588s
-      segment_ids:
-        - suG8AopFBIc:00137
-  - id: 2HMLpiaJLL0-concept-short-ball-receive-decisions-reviewed
-    evidence_type: explanation
-    excerpt: Choosing different receive actions for short balls, including pushing, digging, side-brushing, flicking, or looping depending on height, timing, and confidence.
-    reason: The speaker contrasts short-ball responses with long-ball responses and says to take short balls early, avoid late digging, and choose push or flick based on match situation.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 2HMLpiaJLL0
-      start_ms: 54433
-      end_ms: 77300
-      url: https://www.youtube.com/watch?v=2HMLpiaJLL0&t=54s
-      segment_ids:
-        - 2HMLpiaJLL0:00010
-        - 2HMLpiaJLL0:00011
-        - 2HMLpiaJLL0:00013
-        - 2HMLpiaJLL0:00014
-  - id: rf-9lmjigbs-concept-short-ball-receive-decisions-reviewed
-    evidence_type: explanation
-    excerpt: Choosing different responses to short balls based on trajectory, bounce height, and arrival point, especially for short forehand serves.
-    reason: The speaker identifies the short forehand as the hardest return and discusses when to long push, flick, or avoid lifting into attackable half-high balls.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: rf-9lmjigbs
-      start_ms: 361666
-      end_ms: 379466
-      url: https://www.youtube.com/watch?v=rf-9lmjigbs&t=361s
-      segment_ids:
-        - rf-9lmjigbs:00073
-        - rf-9lmjigbs:00075
-        - rf-9lmjigbs:00076
-  - id: qfB1tscK4xk-concept-short-ball-receive-decisions-reviewed
-    evidence_type: explanation
-    excerpt: On receive, half-long balls are especially important because they are common and offer a chance to flick first to seize initiative.
-    reason: The speaker emphasizes half-long balls as the key receive target and recommends flicking them first to attack proactively.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: qfB1tscK4xk
-      start_ms: 711400
-      end_ms: 735400
-      url: https://www.youtube.com/watch?v=qfB1tscK4xk&t=711s
-      segment_ids:
-        - qfB1tscK4xk:00149
-        - qfB1tscK4xk:00150
-        - qfB1tscK4xk:00151
-        - qfB1tscK4xk:00152
-        - qfB1tscK4xk:00153
-        - qfB1tscK4xk:00154
-  - id: 1XgvgkJ8EfM-concept-short-ball-receive-decisions-reviewed
-    evidence_type: explanation
-    excerpt: Choosing the proper response to short and half-long balls based on distance, body position, and reliable shot selection.
-    reason: The transcript defines short and half-long balls, explains the distance constraints for each, and summarizes that short balls need compact finesse while deep balls use longer relaxed swings.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 1XgvgkJ8EfM
-      start_ms: 935040
-      end_ms: 963000
-      url: https://www.youtube.com/watch?v=1XgvgkJ8EfM&t=935s
-      segment_ids:
-        - 1XgvgkJ8EfM:00413
-        - 1XgvgkJ8EfM:00424
-  - id: 4NxMY3eb7U8-concept-short-ball-receive-decisions-reviewed
-    evidence_type: explanation
-    excerpt: Choosing among receive options based on serve length, spin, and target placement.
-    reason: The speaker compares down-the-line versus cross-court, and later flick versus chop depending on serve type and opponent strength.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 4NxMY3eb7U8
-      start_ms: 322466
-      end_ms: 350800
-      url: https://www.youtube.com/watch?v=4NxMY3eb7U8&t=322s
-      segment_ids:
-        - 4NxMY3eb7U8:00064
-        - 4NxMY3eb7U8:00068
-        - 4NxMY3eb7U8:00069
-  - id: 6vwxmC36InY-new-banana-flick-ball-selection-codex-reviewed
-    evidence_type: explanation
-    excerpt: The banana flick suits in-table short and half-long balls because they provide space to load up. Long serves rush the player and are better blocked or looped in front of the body.
-    reason: This contiguous span directly contrasts banana-flick suitability for short and half-long balls with the blocking or looping alternatives for long serves, matching the existing short-ball receive decision framework.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 6vwxmC36InY
-      start_ms: 403066
-      end_ms: 429433
-      url: https://www.youtube.com/watch?v=6vwxmC36InY&t=403s
-      segment_ids:
-        - 6vwxmC36InY:00093
-        - 6vwxmC36InY:00094
-        - 6vwxmC36InY:00095
-        - 6vwxmC36InY:00096
-        - 6vwxmC36InY:00097
-        - 6vwxmC36InY:00098
-        - 6vwxmC36InY:00099
-  - id: h5jUJL_P82w-concept-short-ball-receive-decisions-codex-reviewed
-    evidence_type: explanation
-    excerpt: Against spinny and no-spin balls, use pushing techniques; avoid pushing clear side-topspin serves and flick them instead; against backspin serves, use long or heavy-spin pushes.
-    reason: These contiguous segments form a single 24.7-second explanation of receive selection by serve spin and directly support the narrowed excerpt.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: h5jUJL_P82w
-      start_ms: 156666
-      end_ms: 185766
-      url: https://www.youtube.com/watch?v=h5jUJL_P82w&t=156s
-      segment_ids:
-        - h5jUJL_P82w:00033
-        - h5jUJL_P82w:00034
-        - h5jUJL_P82w:00035
-        - h5jUJL_P82w:00036
-        - h5jUJL_P82w:00037
-        - h5jUJL_P82w:00038
+- id: wF-YklKS7pI-cand-short-half-long-long-ball-classification-1
+  evidence_type: definition
+  excerpt: A short ball bounces two or more times on the table before leaving
+    the edge. A half-long ball just clears the table on the first bounce; a long
+    ball reaches the baseline on its first bounce.
+  reason: 'Classify the ball using the lesson’s short, half-long and long bounce descriptions.'
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "wF-YklKS7pI"
+    start_ms: 4960
+    end_ms: 34840
+    url: "https://www.youtube.com/watch?v=wF-YklKS7pI&t=4s"
+    segment_ids:
+    - "wF-YklKS7pI:00002"
+    - "wF-YklKS7pI:00003"
+    - "wF-YklKS7pI:00004"
+    - "wF-YklKS7pI:00005"
+    - "wF-YklKS7pI:00006"
+    - "wF-YklKS7pI:00007"
+    - "wF-YklKS7pI:00008"
+    - "wF-YklKS7pI:00009"
+    - "wF-YklKS7pI:00010"
+    - "wF-YklKS7pI:00011"
+- id: wF-YklKS7pI-cand-short-half-long-long-ball-classification-2
+  evidence_type: definition
+  excerpt: Two or more bounces on the table mean a short ball; a first bounce at
+    the baseline means a long ball.
+  reason: 'Distinguish short and long balls using the stated bounce patterns.'
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "wF-YklKS7pI"
+    start_ms: 30440
+    end_ms: 42600
+    url: "https://www.youtube.com/watch?v=wF-YklKS7pI&t=30s"
+    segment_ids:
+    - "wF-YklKS7pI:00011"
+    - "wF-YklKS7pI:00012"
+    - "wF-YklKS7pI:00013"
+    - "wF-YklKS7pI:00014"
+- id: wF-YklKS7pI-cand-push-vs-attack-on-short-backspin-return-1
+  evidence_type: explanation
+  excerpt: After serving, a short pushed return with a low arc and backspin can
+    be pushed short or chopped long for safety and stability. The lesson lists a
+    push flick or push slice as attacking options.
+  reason: For the stated low-arc short backspin return, choose between the
+    listed safe and attacking options.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "wF-YklKS7pI"
+    start_ms: 42600
+    end_ms: 71960
+    url: "https://www.youtube.com/watch?v=wF-YklKS7pI&t=42s"
+    segment_ids:
+    - "wF-YklKS7pI:00016"
+    - "wF-YklKS7pI:00017"
+    - "wF-YklKS7pI:00018"
+    - "wF-YklKS7pI:00019"
+    - "wF-YklKS7pI:00020"
+    - "wF-YklKS7pI:00021"
+    - "wF-YklKS7pI:00022"
+    - "wF-YklKS7pI:00023"
+    - "wF-YklKS7pI:00024"
+    - "wF-YklKS7pI:00025"
+    - "wF-YklKS7pI:00026"
+- id: wF-YklKS7pI-cand-push-vs-attack-on-short-backspin-return-2
+  evidence_type: explanation
+  excerpt: The lesson lists a push flick or push slice as attacking options and
+    says amateur pushes rarely have heavy spin, making attack viable.
+  reason: The speaker links the viability of these attacking options to amateur
+    pushes rarely carrying heavy spin.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "wF-YklKS7pI"
+    start_ms: 65040
+    end_ms: 77360
+    url: "https://www.youtube.com/watch?v=wF-YklKS7pI&t=65s"
+    segment_ids:
+    - "wF-YklKS7pI:00025"
+    - "wF-YklKS7pI:00026"
+    - "wF-YklKS7pI:00027"
+    - "wF-YklKS7pI:00028"
+- id: wF-YklKS7pI-cand-contact-timing-at-peak-on-short-ball-1
+  evidence_type: explanation
+  excerpt: Time a chop, flick or slice at the bounce’s peak. If late and the
+    ball is low, flicking causes errors; the speaker recommends a push slice as
+    the most stable option.
+  reason: Use the peak for the listed strokes; when late at a low point, use the
+    stated push-slice alternative.
+  confidence: 0.92
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "wF-YklKS7pI"
+    start_ms: 75120
+    end_ms: 96760
+    url: "https://www.youtube.com/watch?v=wF-YklKS7pI&t=75s"
+    segment_ids:
+    - "wF-YklKS7pI:00029"
+    - "wF-YklKS7pI:00030"
+    - "wF-YklKS7pI:00031"
+    - "wF-YklKS7pI:00032"
+    - "wF-YklKS7pI:00033"
+    - "wF-YklKS7pI:00034"
+    - "wF-YklKS7pI:00035"
+    - "wF-YklKS7pI:00036"
+    - "wF-YklKS7pI:00037"
+    - "wF-YklKS7pI:00038"
+- id: wF-YklKS7pI-cand-contact-timing-at-peak-on-short-ball-2
+  evidence_type: explanation
+  excerpt: 'Early rhythm gives more options: chop, flick or push.'
+  reason: The speaker says arriving early in the rhythm allows a wider choice of
+    strokes.
+  confidence: 0.92
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "wF-YklKS7pI"
+    start_ms: 107200
+    end_ms: 117480
+    url: "https://www.youtube.com/watch?v=wF-YklKS7pI&t=107s"
+    segment_ids:
+    - "wF-YklKS7pI:00042"
+    - "wF-YklKS7pI:00043"
+    - "wF-YklKS7pI:00044"
+- id: wF-YklKS7pI-cand-wrist-snap-flick-for-high-short-balls-1
+  evidence_type: definition
+  excerpt: For a high ball with two bounces on the table, the speaker recommends
+    a flick.
+  reason: The lesson distinguishes inside-table high balls from half-long high
+    balls and recommends flicking the former.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "wF-YklKS7pI"
+    start_ms: 134520
+    end_ms: 147400
+    url: "https://www.youtube.com/watch?v=wF-YklKS7pI&t=134s"
+    segment_ids:
+    - "wF-YklKS7pI:00053"
+    - "wF-YklKS7pI:00054"
+    - "wF-YklKS7pI:00055"
+    - "wF-YklKS7pI:00056"
+    - "wF-YklKS7pI:00057"
+    - "wF-YklKS7pI:00058"
+- id: wF-YklKS7pI-cand-wrist-snap-flick-for-high-short-balls-2
+  evidence_type: definition
+  excerpt: Inside-table technique is mainly flicking. For the high ball
+    discussed, the speaker rejects a push flick and recommends snapping the
+    wrist for quality, with penhold and shakehand grips working the same way.
+  reason: For this high-ball flick, use the wrist snap described for both
+    penhold and shakehand grips.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "wF-YklKS7pI"
+    start_ms: 160520
+    end_ms: 184480
+    url: "https://www.youtube.com/watch?v=wF-YklKS7pI&t=160s"
+    segment_ids:
+    - "wF-YklKS7pI:00065"
+    - "wF-YklKS7pI:00066"
+    - "wF-YklKS7pI:00067"
+    - "wF-YklKS7pI:00068"
+    - "wF-YklKS7pI:00069"
+    - "wF-YklKS7pI:00070"
+    - "wF-YklKS7pI:00071"
+    - "wF-YklKS7pI:00072"
+    - "wF-YklKS7pI:00073"
+    - "wF-YklKS7pI:00074"
+- id: wF-YklKS7pI-cand-wrist-snap-flick-for-high-short-balls-3
+  evidence_type: definition
+  excerpt: The power does not come from pulling backward. At contact, the wrist
+    snaps in a forward-backward motion and opens like a fishtail.
+  reason: The speaker describes the wrist motion and contrasts it with pulling
+    backward.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "wF-YklKS7pI"
+    start_ms: 185080
+    end_ms: 212720
+    url: "https://www.youtube.com/watch?v=wF-YklKS7pI&t=185s"
+    segment_ids:
+    - "wF-YklKS7pI:00075"
+    - "wF-YklKS7pI:00076"
+    - "wF-YklKS7pI:00077"
+    - "wF-YklKS7pI:00078"
+    - "wF-YklKS7pI:00079"
+    - "wF-YklKS7pI:00080"
+    - "wF-YklKS7pI:00081"
+    - "wF-YklKS7pI:00082"
+    - "wF-YklKS7pI:00083"
+- id: wF-YklKS7pI-cand-wrist-snap-flick-for-high-short-balls-4
+  evidence_type: definition
+  excerpt: Use very little forearm closing. Before contact, activate the wrist
+    so it opens and snaps like a fishtail. The speaker limits this technique to
+    high balls and says low balls need a push slice or other techniques.
+  reason: 'Keep the high-ball restriction: low balls cannot be flicked in the described
+    way.'
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "wF-YklKS7pI"
+    start_ms: 215120
+    end_ms: 242800
+    url: "https://www.youtube.com/watch?v=wF-YklKS7pI&t=215s"
+    segment_ids:
+    - "wF-YklKS7pI:00084"
+    - "wF-YklKS7pI:00085"
+    - "wF-YklKS7pI:00086"
+    - "wF-YklKS7pI:00087"
+    - "wF-YklKS7pI:00088"
+    - "wF-YklKS7pI:00089"
+    - "wF-YklKS7pI:00090"
+    - "wF-YklKS7pI:00091"
+    - "wF-YklKS7pI:00092"
+    - "wF-YklKS7pI:00093"
+    - "wF-YklKS7pI:00094"
+    - "wF-YklKS7pI:00095"
+- id: wF-YklKS7pI-cand-wrist-snap-flick-for-high-short-balls-5
+  evidence_type: definition
+  excerpt: Simply hitting can work but is easy to miss; the speaker favors a
+    wrist-snap flick with a flat arc.
+  reason: The speaker contrasts simply hitting with the wrist-snap flick and its
+    flat arc.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "wF-YklKS7pI"
+    start_ms: 245960
+    end_ms: 257480
+    url: "https://www.youtube.com/watch?v=wF-YklKS7pI&t=245s"
+    segment_ids:
+    - "wF-YklKS7pI:00098"
+    - "wF-YklKS7pI:00099"
+    - "wF-YklKS7pI:00100"
+    - "wF-YklKS7pI:00101"
+- id: wF-YklKS7pI-cand-wrist-snap-flick-for-high-short-balls-6
+  evidence_type: mistake
+  excerpt: For a high ball with two bounces on the table, use a flick. Trying a
+    fast inside-table loop is described as too forced and error-prone.
+  reason: The speaker favors inside-table technique for a two-bounce ball and
+    warns against forcing a fast loop.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "wF-YklKS7pI"
+    start_ms: 140720
+    end_ms: 162320
+    url: "https://www.youtube.com/watch?v=wF-YklKS7pI&t=140s"
+    segment_ids:
+    - "wF-YklKS7pI:00056"
+    - "wF-YklKS7pI:00057"
+    - "wF-YklKS7pI:00058"
+    - "wF-YklKS7pI:00059"
+    - "wF-YklKS7pI:00060"
+    - "wF-YklKS7pI:00061"
+    - "wF-YklKS7pI:00062"
+    - "wF-YklKS7pI:00063"
+    - "wF-YklKS7pI:00064"
+- id: wF-YklKS7pI-cand-wrist-snap-flick-for-high-short-balls-7
+  evidence_type: mistake
+  excerpt: Activate the wrist before contact for a short, precise snap rather
+    than a big loose arm swing. This technique is only for high balls; low balls
+    need a push slice or other techniques. Simply hitting is described as easy
+    to miss.
+  reason: Preserve the stated high-ball restriction and short wrist action
+    rather than a full arm swing.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "wF-YklKS7pI"
+    start_ms: 223800
+    end_ms: 252760
+    url: "https://www.youtube.com/watch?v=wF-YklKS7pI&t=223s"
+    segment_ids:
+    - "wF-YklKS7pI:00088"
+    - "wF-YklKS7pI:00089"
+    - "wF-YklKS7pI:00090"
+    - "wF-YklKS7pI:00091"
+    - "wF-YklKS7pI:00092"
+    - "wF-YklKS7pI:00093"
+    - "wF-YklKS7pI:00094"
+    - "wF-YklKS7pI:00095"
+    - "wF-YklKS7pI:00096"
+    - "wF-YklKS7pI:00097"
+    - "wF-YklKS7pI:00098"
+    - "wF-YklKS7pI:00099"
+- id: wF-YklKS7pI-cand-soft-half-long-ball-decision-1
+  evidence_type: explanation
+  excerpt: If a very spinny serve comes back as a low, soft push, step in and
+    loop at the peak, or wait for the descending point and loop with heavy spin.
+    The speaker warns against power-looping at the descending point.
+  reason: For the stated low soft-push return after a very spinny serve, choose
+    peak contact or a descending heavy-spin loop rather than forcing a power
+    loop.
+  confidence: 0.92
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "wF-YklKS7pI"
+    start_ms: 334080
+    end_ms: 362120
+    url: "https://www.youtube.com/watch?v=wF-YklKS7pI&t=334s"
+    segment_ids:
+    - "wF-YklKS7pI:00132"
+    - "wF-YklKS7pI:00133"
+    - "wF-YklKS7pI:00134"
+    - "wF-YklKS7pI:00135"
+    - "wF-YklKS7pI:00136"
+    - "wF-YklKS7pI:00137"
+    - "wF-YklKS7pI:00138"
+    - "wF-YklKS7pI:00139"
+    - "wF-YklKS7pI:00140"
+    - "wF-YklKS7pI:00141"
+    - "wF-YklKS7pI:00142"
+- id: wF-YklKS7pI-cand-soft-half-long-ball-decision-2
+  evidence_type: explanation
+  excerpt: The passage lists stepping in to loop at the peak, waiting to loop
+    with spin at a lower point, or pushing deep to the opponent’s backhand
+    baseline and attacking the next ball.
+  reason: The speaker presents these three alternatives in this passage.
+  confidence: 0.92
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "wF-YklKS7pI"
+    start_ms: 373080
+    end_ms: 399720
+    url: "https://www.youtube.com/watch?v=wF-YklKS7pI&t=373s"
+    segment_ids:
+    - "wF-YklKS7pI:00148"
+    - "wF-YklKS7pI:00149"
+    - "wF-YklKS7pI:00150"
+    - "wF-YklKS7pI:00151"
+    - "wF-YklKS7pI:00152"
+    - "wF-YklKS7pI:00153"
+    - "wF-YklKS7pI:00154"
+    - "wF-YklKS7pI:00155"
+- id: wF-YklKS7pI-cand-push-deep-to-backhand-baseline-1
+  evidence_type: explanation
+  excerpt: 'If a very spinny serve is pushed back soft with heavy spin, push it back
+    with backspin: the speaker calls looping risky and says the heavy-spin return
+    is hard for the opponent to attack.'
+  reason: For this heavy-spin return after a very spinny serve, the speaker
+    recommends pushing rather than forcing a risky loop.
+  confidence: 0.93
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "wF-YklKS7pI"
+    start_ms: 273800
+    end_ms: 303080
+    url: "https://www.youtube.com/watch?v=wF-YklKS7pI&t=273s"
+    segment_ids:
+    - "wF-YklKS7pI:00108"
+    - "wF-YklKS7pI:00109"
+    - "wF-YklKS7pI:00110"
+    - "wF-YklKS7pI:00111"
+    - "wF-YklKS7pI:00112"
+    - "wF-YklKS7pI:00113"
+    - "wF-YklKS7pI:00114"
+    - "wF-YklKS7pI:00115"
+    - "wF-YklKS7pI:00116"
+    - "wF-YklKS7pI:00117"
+- id: wF-YklKS7pI-cand-push-deep-to-backhand-baseline-2
+  evidence_type: explanation
+  excerpt: 'A return to the opponent’s backhand baseline is described as limiting
+    attack quality. If the spin is unclear and the opponent just touched the ball,
+    do not force a loop: send the forearm forward and push deep.'
+  reason: Use the stated deep-push option when the spin is unclear rather than
+    forcing a loop.
+  confidence: 0.93
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "wF-YklKS7pI"
+    start_ms: 303440
+    end_ms: 326919
+    url: "https://www.youtube.com/watch?v=wF-YklKS7pI&t=303s"
+    segment_ids:
+    - "wF-YklKS7pI:00118"
+    - "wF-YklKS7pI:00119"
+    - "wF-YklKS7pI:00120"
+    - "wF-YklKS7pI:00121"
+    - "wF-YklKS7pI:00122"
+    - "wF-YklKS7pI:00123"
+    - "wF-YklKS7pI:00124"
+    - "wF-YklKS7pI:00125"
+    - "wF-YklKS7pI:00126"
+    - "wF-YklKS7pI:00127"
+    - "wF-YklKS7pI:00128"
+- id: wF-YklKS7pI-cand-push-deep-to-backhand-baseline-3
+  evidence_type: explanation
+  excerpt: If the spin is unclear and the opponent just touched the ball, avoid
+    forcing a loop. Push deep to the backhand baseline; the ball need not have
+    heavy spin, but it needs to be long. Prepare for the next attack.
+  reason: For the stated unclear-spin touch, use length at the backhand baseline
+    and prepare for the next attack.
+  confidence: 0.93
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "wF-YklKS7pI"
+    start_ms: 311640
+    end_ms: 336040
+    url: "https://www.youtube.com/watch?v=wF-YklKS7pI&t=311s"
+    segment_ids:
+    - "wF-YklKS7pI:00121"
+    - "wF-YklKS7pI:00122"
+    - "wF-YklKS7pI:00123"
+    - "wF-YklKS7pI:00124"
+    - "wF-YklKS7pI:00125"
+    - "wF-YklKS7pI:00126"
+    - "wF-YklKS7pI:00127"
+    - "wF-YklKS7pI:00128"
+    - "wF-YklKS7pI:00129"
+    - "wF-YklKS7pI:00130"
+    - "wF-YklKS7pI:00131"
+- id: wF-YklKS7pI-cand-push-deep-to-backhand-baseline-4
+  evidence_type: explanation
+  excerpt: Push deep to the opponent’s backhand baseline and attack the next
+    ball. Do not let the hand go soft at contact; press forward into the ball
+    and push through.
+  reason: Combine the stated deep backhand-baseline target with a firm hand and
+    forward push through contact.
+  confidence: 0.93
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "wF-YklKS7pI"
+    start_ms: 391840
+    end_ms: 404000
+    url: "https://www.youtube.com/watch?v=wF-YklKS7pI&t=391s"
+    segment_ids:
+    - "wF-YklKS7pI:00153"
+    - "wF-YklKS7pI:00154"
+    - "wF-YklKS7pI:00155"
+    - "wF-YklKS7pI:00156"
+    - "wF-YklKS7pI:00157"
+    - "wF-YklKS7pI:00158"
+- id: wF-YklKS7pI-cand-turn-then-step-in-1
+  evidence_type: explanation
+  excerpt: After serving, recover to the normal ready and long-ball attack
+    position. When the return is short, turn first, then step in rather than
+    stepping straight forward. The speaker’s sequence is serve, recover, turn,
+    left foot in.
+  reason: Recover after serving, then use the stated turn-before-step sequence
+    when the return is short.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "wF-YklKS7pI"
+    start_ms: 474040
+    end_ms: 493840
+    url: "https://www.youtube.com/watch?v=wF-YklKS7pI&t=474s"
+    segment_ids:
+    - "wF-YklKS7pI:00187"
+    - "wF-YklKS7pI:00188"
+    - "wF-YklKS7pI:00189"
+    - "wF-YklKS7pI:00190"
+    - "wF-YklKS7pI:00191"
+    - "wF-YklKS7pI:00192"
+    - "wF-YklKS7pI:00193"
+- id: wF-YklKS7pI-cand-turn-then-step-in-2
+  evidence_type: explanation
+  excerpt: Read the ball’s position and decide during the turn. If short, step
+    in with the right foot; if long, adjust with the left. Stepping right on a
+    half-long ball can overshoot and jam you, although strong judgment can allow
+    right-foot entry. Meet the ball going forward, keeping the hand from ending
+    beside or behind the body.
+  reason: Choose the foot adjustment from the ball’s length during the turn,
+    preserving the half-long warning and strong-judgment exception.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "wF-YklKS7pI"
+    start_ms: 508560
+    end_ms: 536440
+    url: "https://www.youtube.com/watch?v=wF-YklKS7pI&t=508s"
+    segment_ids:
+    - "wF-YklKS7pI:00203"
+    - "wF-YklKS7pI:00204"
+    - "wF-YklKS7pI:00205"
+    - "wF-YklKS7pI:00206"
+    - "wF-YklKS7pI:00207"
+    - "wF-YklKS7pI:00208"
+    - "wF-YklKS7pI:00209"
+    - "wF-YklKS7pI:00210"
+    - "wF-YklKS7pI:00211"
+    - "wF-YklKS7pI:00212"
+    - "wF-YklKS7pI:00213"
+    - "wF-YklKS7pI:00214"
+- id: wF-YklKS7pI-cand-turn-then-step-in-3
+  evidence_type: explanation
+  excerpt: Meet the ball going forward rather than reaching backward.
+  reason: The speaker explicitly contrasts meeting the ball forward with
+    reaching backward.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "wF-YklKS7pI"
+    start_ms: 532320
+    end_ms: 539760
+    url: "https://www.youtube.com/watch?v=wF-YklKS7pI&t=532s"
+    segment_ids:
+    - "wF-YklKS7pI:00214"
+    - "wF-YklKS7pI:00215"
+- id: wF-YklKS7pI-cand-left-foot-first-on-uncertain-short-ball-1
+  evidence_type: explanation
+  excerpt: The sequence is serve, recover, turn and step in with the left foot.
+    A right-foot step can jam you if the ball is longer than expected; it is
+    fine for a clearly short ball. A hidden wrist snap can make a ball look
+    short but push deep, so read its position and decide during the turn.
+  reason: Preserve both the unexpected-depth warning and the clearly-short-ball
+    exception for right-foot entry.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "wF-YklKS7pI"
+    start_ms: 487760
+    end_ms: 515479
+    url: "https://www.youtube.com/watch?v=wF-YklKS7pI&t=487s"
+    segment_ids:
+    - "wF-YklKS7pI:00193"
+    - "wF-YklKS7pI:00194"
+    - "wF-YklKS7pI:00195"
+    - "wF-YklKS7pI:00196"
+    - "wF-YklKS7pI:00197"
+    - "wF-YklKS7pI:00198"
+    - "wF-YklKS7pI:00199"
+    - "wF-YklKS7pI:00200"
+    - "wF-YklKS7pI:00201"
+    - "wF-YklKS7pI:00202"
+    - "wF-YklKS7pI:00203"
+    - "wF-YklKS7pI:00204"
+- id: wF-YklKS7pI-cand-left-foot-first-on-uncertain-short-ball-2
+  evidence_type: explanation
+  excerpt: If short, step in with the right foot; if long, adjust with the left.
+    Stepping right on a half-long ball can overshoot and jam you. The speaker
+    allows right-foot entry when judgment is very strong.
+  reason: Adjust to the stated ball length and keep the strong-judgment
+    exception.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "wF-YklKS7pI"
+    start_ms: 512760
+    end_ms: 529360
+    url: "https://www.youtube.com/watch?v=wF-YklKS7pI&t=512s"
+    segment_ids:
+    - "wF-YklKS7pI:00205"
+    - "wF-YklKS7pI:00206"
+    - "wF-YklKS7pI:00207"
+    - "wF-YklKS7pI:00208"
+    - "wF-YklKS7pI:00209"
+    - "wF-YklKS7pI:00210"
+- id: mTnHV7k_Wes-three-short-receives
+  evidence_type: definition
+  excerpt: A short side-underspin or backspin serve can be returned with a long
+    push, controlled short push or flick.
+  reason: The speaker lists these three choices for short side-underspin or
+    backspin serves over the table.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "mTnHV7k_Wes"
+    start_ms: 26560
+    end_ms: 42960
+    url: "https://www.youtube.com/watch?v=mTnHV7k_Wes&t=26s"
+    segment_ids:
+    - "mTnHV7k_Wes:00011"
+    - "mTnHV7k_Wes:00012"
+    - "mTnHV7k_Wes:00013"
+    - "mTnHV7k_Wes:00014"
+    - "mTnHV7k_Wes:00015"
+    - "mTnHV7k_Wes:00016"
+- id: StQ86EhPFpo-short-ball-distance
+  evidence_type: explanation
+  excerpt: Stay close to a short ball; creating distance makes pushes and flicks
+    run long.
+  reason: Stay close for the short-table techniques described; distance can send
+    pushes and flicks long.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "StQ86EhPFpo"
+    start_ms: 337960
+    end_ms: 363200
+    url: "https://www.youtube.com/watch?v=StQ86EhPFpo&t=337s"
+    segment_ids:
+    - "StQ86EhPFpo:00135"
+    - "StQ86EhPFpo:00136"
+    - "StQ86EhPFpo:00137"
+    - "StQ86EhPFpo:00138"
+    - "StQ86EhPFpo:00139"
+    - "StQ86EhPFpo:00140"
+    - "StQ86EhPFpo:00141"
+- id: TMrN47uIHiI-concept-short-ball-receive-decisions-reviewed
+  evidence_type: explanation
+  excerpt: Choosing how to deal with short or half-long balls, including whether
+    to drop short, push, or attack early.
+  reason: The speaker explains how to drop short from a half-high ball, says
+    drop shot is the same as short push, and notes not to stand too far away.
+  confidence: 0.89
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: TMrN47uIHiI
+    start_ms: 533839
+    end_ms: 556360
+    url: https://www.youtube.com/watch?v=TMrN47uIHiI&t=533s
+    segment_ids:
+    - TMrN47uIHiI:00159
+    - TMrN47uIHiI:00161
+    - TMrN47uIHiI:00163
+    - TMrN47uIHiI:00166
+- id: h5jUJL_P82w-concept-short-ball-receive-decisions-reviewed
+  evidence_type: explanation
+  excerpt: Selecting among push, drop shot, flick, chop-push, or sidespin push
+    depending on serve type and bounce timing.
+  reason: The speaker distinguishes short forehand receive choices by serve
+    type, including topspin flicks and backspin pushes.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: h5jUJL_P82w
+    start_ms: 115233
+    end_ms: 141133
+    url: https://www.youtube.com/watch?v=h5jUJL_P82w&t=115s
+    segment_ids:
+    - h5jUJL_P82w:00025
+    - h5jUJL_P82w:00026
+    - h5jUJL_P82w:00027
+    - h5jUJL_P82w:00028
+    - h5jUJL_P82w:00029
+- id: Nmf0ZWP6dn0-cand-short-ball-receive-decisions-reviewed
+  evidence_type: example
+  excerpt: On short balls, stay compact and push; if the ball turns out
+    half-long, switch to a loop instead of preparing to loop too early.
+  reason: If the ball is half-long, they loop; if they mistakenly prepare to
+    loop first on a short ball, they cannot reach it.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: Nmf0ZWP6dn0
+    start_ms: 612920
+    end_ms: 635000
+    url: https://www.youtube.com/watch?v=Nmf0ZWP6dn0&t=612s
+    segment_ids:
+    - Nmf0ZWP6dn0:00218
+    - Nmf0ZWP6dn0:00219
+    - Nmf0ZWP6dn0:00220
+    - Nmf0ZWP6dn0:00221
+    - Nmf0ZWP6dn0:00222
+    - Nmf0ZWP6dn0:00223
+    - Nmf0ZWP6dn0:00224
+    - Nmf0ZWP6dn0:00225
+- id: gxWSApJI9E8-concept-short-ball-receive-decisions-reviewed
+  evidence_type: explanation
+  excerpt: Choosing whether to drop short, push, or attack based on whether the
+    incoming ball is truly short or half-long, with half-long balls being harder
+    to keep short.
+  reason: The speaker contrasts truly short balls with half-long balls and
+    states that half-long balls are harder to drop short, while short balls are
+    easiest to drop short.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: gxWSApJI9E8
+    start_ms: 480
+    end_ms: 30480
+    url: https://www.youtube.com/watch?v=gxWSApJI9E8&t=0s
+    segment_ids:
+    - gxWSApJI9E8:00000
+    - gxWSApJI9E8:00003
+    - gxWSApJI9E8:00004
+    - gxWSApJI9E8:00005
+    - gxWSApJI9E8:00006
+    - gxWSApJI9E8:00010
+    - gxWSApJI9E8:00011
+- id: lii73aKvvkw-concept-short-forehand-serve-batch-reviewed
+  evidence_type: example
+  excerpt: Short serves to the forehand that stay low, short, and floating to
+    make the receive awkward and reduce clean contact.
+  reason: The speaker explains how to make the short forehand serve float
+    aggressively and drift outward after the bounce.
+  confidence: 0.86
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: lii73aKvvkw
+    start_ms: 574720
+    end_ms: 595519
+    url: https://www.youtube.com/watch?v=lii73aKvvkw&t=574s
+    segment_ids:
+    - lii73aKvvkw:00204
+    - lii73aKvvkw:00205
+    - lii73aKvvkw:00206
+    - lii73aKvvkw:00207
+    - lii73aKvvkw:00208
+    - lii73aKvvkw:00209
+    - lii73aKvvkw:00210
+- id: wSzmpXHp64Q-concept-short-ball-receive-decisions-reviewed
+  evidence_type: explanation
+  excerpt: Choosing among push, chop long, drop short, flick, loop, or attack
+    when receiving short or half-long serves.
+  reason: The speaker explicitly groups the receive options for short and
+    half-long balls.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: wSzmpXHp64Q
+    start_ms: 42100
+    end_ms: 65033
+    url: https://www.youtube.com/watch?v=wSzmpXHp64Q&t=42s
+    segment_ids:
+    - wSzmpXHp64Q:00010
+    - wSzmpXHp64Q:00011
+    - wSzmpXHp64Q:00014
+    - wSzmpXHp64Q:00015
+- id: EtTzu7KvqNY-concept-short-ball-receive-decisions-reviewed
+  evidence_type: explanation
+  excerpt: Choosing between flicking and pushing on short or half-spin/no-spin
+    balls based on the ball and opponent.
+  reason: The speaker explicitly discusses pushing or flicking short, half-spin,
+    and no-spin balls as alternative receive choices.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: EtTzu7KvqNY
+    start_ms: 466466
+    end_ms: 487633
+    url: https://www.youtube.com/watch?v=EtTzu7KvqNY&t=466s
+    segment_ids:
+    - EtTzu7KvqNY:00156
+    - EtTzu7KvqNY:00162
+    - EtTzu7KvqNY:00163
+    - EtTzu7KvqNY:00165
+- id: lcp99UuLuus-concept-short-ball-receive-decisions-reviewed
+  evidence_type: explanation
+  excerpt: Choose the receive action for short serves or short balls, typically
+    push, flick, or flip, with flick emphasized as the best attack option.
+  reason: The speaker says the best way to handle short balls is the backhand
+    flick because it can counter most types of spin.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: lcp99UuLuus
+    start_ms: 34066
+    end_ms: 43766
+    url: https://www.youtube.com/watch?v=lcp99UuLuus&t=34s
+    segment_ids:
+    - lcp99UuLuus:00013
+    - lcp99UuLuus:00014
+    - lcp99UuLuus:00015
+    - lcp99UuLuus:00016
+    - lcp99UuLuus:00017
+- id: -iWLwSvOJ2U-concept-short-ball-receive-decisions-reviewed
+  evidence_type: definition
+  excerpt: Choosing how to handle a short serve or short forehand return by
+    positioning, compactness, and controlled contact rather than forcing power.
+  reason: The transcript centers on in-table forehand short-ball receive,
+    needing center-of-gravity over the table, a compact forearm, and avoiding
+    late footwork and over-reaching.
+  confidence: 0.93
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: -iWLwSvOJ2U
+    start_ms: 39633
+    end_ms: 58300
+    url: https://www.youtube.com/watch?v=-iWLwSvOJ2U&t=39s
+    segment_ids:
+    - -iWLwSvOJ2U:00009
+    - -iWLwSvOJ2U:00010
+    - -iWLwSvOJ2U:00012
+    - -iWLwSvOJ2U:00013
+- id: Zrw_aJYKfhA-concept-short-ball-receive-decisions-reviewed
+  evidence_type: explanation
+  excerpt: Choosing how to handle a short incoming ball, including whether to
+    block, hit, or add spin depending on height and bounce.
+  reason: 'The transcript repeatedly discusses short-ball response options: make a
+    short shot, block it, or step back and hit depending on ball length and bounce
+    height.'
+  confidence: 0.86
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: Zrw_aJYKfhA
+    start_ms: 147866
+    end_ms: 172566
+    url: https://www.youtube.com/watch?v=Zrw_aJYKfhA&t=147s
+    segment_ids:
+    - Zrw_aJYKfhA:00031
+    - Zrw_aJYKfhA:00034
+- id: U4ufFJg5s4A-concept-short-ball-receive-decisions-reviewed
+  evidence_type: explanation
+  excerpt: Deciding how to handle short or half-long balls, including stepping
+    in and choosing a shorter response or initiative attack.
+  reason: The speaker discusses shorter balls, stepping in, and selecting
+    initiative only when the ball is suitable and not too fast or too tight to
+    the net.
+  confidence: 0.87
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: U4ufFJg5s4A
+    start_ms: 307000
+    end_ms: 314200
+    url: https://www.youtube.com/watch?v=U4ufFJg5s4A&t=307s
+    segment_ids:
+    - U4ufFJg5s4A:00151
+    - U4ufFJg5s4A:00152
+    - U4ufFJg5s4A:00153
+    - U4ufFJg5s4A:00154
+- id: suG8AopFBIc-concept-short-ball-receive-decisions-reviewed
+  evidence_type: explanation
+  excerpt: Choose placement against short balls based on spin, length, and the
+    opponent's weaknesses, with different targets for short, long, and sidespin
+    balls.
+  reason: The speaker gives explicit placement choices for short pushes, long
+    pushes, and sidespin pushes.
+  confidence: 0.93
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: suG8AopFBIc
+    start_ms: 588833
+    end_ms: 592866
+    url: https://www.youtube.com/watch?v=suG8AopFBIc&t=588s
+    segment_ids:
+    - suG8AopFBIc:00137
+- id: 2HMLpiaJLL0-concept-short-ball-receive-decisions-reviewed
+  evidence_type: explanation
+  excerpt: Choosing different receive actions for short balls, including
+    pushing, digging, side-brushing, flicking, or looping depending on height,
+    timing, and confidence.
+  reason: The speaker contrasts short-ball responses with long-ball responses
+    and says to take short balls early, avoid late digging, and choose push or
+    flick based on match situation.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 2HMLpiaJLL0
+    start_ms: 54433
+    end_ms: 77300
+    url: https://www.youtube.com/watch?v=2HMLpiaJLL0&t=54s
+    segment_ids:
+    - 2HMLpiaJLL0:00010
+    - 2HMLpiaJLL0:00011
+    - 2HMLpiaJLL0:00013
+    - 2HMLpiaJLL0:00014
+- id: rf-9lmjigbs-concept-short-ball-receive-decisions-reviewed
+  evidence_type: explanation
+  excerpt: Choosing different responses to short balls based on trajectory,
+    bounce height, and arrival point, especially for short forehand serves.
+  reason: The speaker identifies the short forehand as the hardest return and
+    discusses when to long push, flick, or avoid lifting into attackable
+    half-high balls.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: rf-9lmjigbs
+    start_ms: 361666
+    end_ms: 379466
+    url: https://www.youtube.com/watch?v=rf-9lmjigbs&t=361s
+    segment_ids:
+    - rf-9lmjigbs:00073
+    - rf-9lmjigbs:00075
+    - rf-9lmjigbs:00076
+- id: qfB1tscK4xk-concept-short-ball-receive-decisions-reviewed
+  evidence_type: explanation
+  excerpt: On receive, half-long balls are especially important because they are
+    common and offer a chance to flick first to seize initiative.
+  reason: The speaker emphasizes half-long balls as the key receive target and
+    recommends flicking them first to attack proactively.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: qfB1tscK4xk
+    start_ms: 711400
+    end_ms: 735400
+    url: https://www.youtube.com/watch?v=qfB1tscK4xk&t=711s
+    segment_ids:
+    - qfB1tscK4xk:00149
+    - qfB1tscK4xk:00150
+    - qfB1tscK4xk:00151
+    - qfB1tscK4xk:00152
+    - qfB1tscK4xk:00153
+    - qfB1tscK4xk:00154
+- id: 1XgvgkJ8EfM-concept-short-ball-receive-decisions-reviewed
+  evidence_type: explanation
+  excerpt: Choosing the proper response to short and half-long balls based on
+    distance, body position, and reliable shot selection.
+  reason: The transcript defines short and half-long balls, explains the
+    distance constraints for each, and summarizes that short balls need compact
+    finesse while deep balls use longer relaxed swings.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 1XgvgkJ8EfM
+    start_ms: 935040
+    end_ms: 963000
+    url: https://www.youtube.com/watch?v=1XgvgkJ8EfM&t=935s
+    segment_ids:
+    - 1XgvgkJ8EfM:00413
+    - 1XgvgkJ8EfM:00424
+- id: 4NxMY3eb7U8-concept-short-ball-receive-decisions-reviewed
+  evidence_type: explanation
+  excerpt: Choosing among receive options based on serve length, spin, and
+    target placement.
+  reason: The speaker compares down-the-line versus cross-court, and later flick
+    versus chop depending on serve type and opponent strength.
+  confidence: 0.93
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 4NxMY3eb7U8
+    start_ms: 322466
+    end_ms: 350800
+    url: https://www.youtube.com/watch?v=4NxMY3eb7U8&t=322s
+    segment_ids:
+    - 4NxMY3eb7U8:00064
+    - 4NxMY3eb7U8:00068
+    - 4NxMY3eb7U8:00069
+- id: 6vwxmC36InY-new-banana-flick-ball-selection-codex-reviewed
+  evidence_type: explanation
+  excerpt: The banana flick suits in-table short and half-long balls because
+    they provide space to load weight on the right hip. A long serve rushes the
+    player and leaves no time for the sideways backswing; the speaker favors
+    blocking or looping in front instead.
+  reason: Choose the banana flick for the stated short and half-long space, and
+    a block or loop in front against the described long serve.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "6vwxmC36InY"
+    start_ms: 403066
+    end_ms: 429433
+    url: "https://www.youtube.com/watch?v=6vwxmC36InY&t=403s"
+    segment_ids:
+    - "6vwxmC36InY:00093"
+    - "6vwxmC36InY:00094"
+    - "6vwxmC36InY:00095"
+    - "6vwxmC36InY:00096"
+    - "6vwxmC36InY:00097"
+    - "6vwxmC36InY:00098"
+    - "6vwxmC36InY:00099"
+- id: h5jUJL_P82w-concept-short-ball-receive-decisions-codex-reviewed
+  evidence_type: explanation
+  excerpt: Pushing is available against spinny and no-spin balls. Do not push a
+    clear side-topspin serve; favor flicking with speed and placement. Against
+    backspin serves, use long or heavy-spin pushes and placement.
+  reason: Choose the receive from the stated spin conditions, preserving the
+    clear side-topspin exception to pushing.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "h5jUJL_P82w"
+    start_ms: 156666
+    end_ms: 185766
+    url: "https://www.youtube.com/watch?v=h5jUJL_P82w&t=156s"
+    segment_ids:
+    - "h5jUJL_P82w:00033"
+    - "h5jUJL_P82w:00034"
+    - "h5jUJL_P82w:00035"
+    - "h5jUJL_P82w:00036"
+    - "h5jUJL_P82w:00037"
+    - "h5jUJL_P82w:00038"
 relations:
-  - relation_type: part_of
-    target_concept_id: concept-short-vs-long-serve-receive
-    sources:
-      - video_id: wF-YklKS7pI
-        start_ms: 4960
-        end_ms: 34840
-        url: https://www.youtube.com/watch?v=wF-YklKS7pI&t=4s
-        segment_ids: *id001
-    confidence: 0.9
-    review_status: approved
+- relation_type: part_of
+  target_concept_id: concept-short-vs-long-serve-receive
+  sources:
+  - video_id: "6vwxmC36InY"
+    start_ms: 403066
+    end_ms: 429433
+    url: "https://www.youtube.com/watch?v=6vwxmC36InY&t=403s"
+    segment_ids:
+    - "6vwxmC36InY:00093"
+    - "6vwxmC36InY:00094"
+    - "6vwxmC36InY:00095"
+    - "6vwxmC36InY:00096"
+    - "6vwxmC36InY:00097"
+    - "6vwxmC36InY:00098"
+    - "6vwxmC36InY:00099"
+  confidence: 0.9
+  review_status: approved

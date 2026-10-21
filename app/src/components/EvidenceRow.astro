@@ -1,6 +1,5 @@
 ---
 import type { Evidence, Video } from '../types';
-import { editorialNarrative } from '../lib/videoToc';
 import ReviewControls from './ReviewControls.astro';
 
 interface Citation { item: Evidence; index: number }
@@ -22,8 +21,8 @@ const SPOKEN_TAIL_MS = 1200;
   <div class="evidence-row-content">
     <div class="evidence-row-meta"><span>{item.evidence_type.replaceAll('_', ' ')}</span>{relevanceScore !== undefined && <small>Relevance {relevanceScore}%</small>}<small>{citations.length} moment{citations.length === 1 ? '' : 's'}</small></div>
     <div class="evidence-row-main">
-      <blockquote>{editorialNarrative(item.excerpt)}</blockquote>
-      <p>{editorialNarrative(item.reason)}</p>
+      <blockquote>{item.excerpt}</blockquote>
+      <p>{item.reason}</p>
       <small>{item.visual_source ? `${item.visual_status === 'verified_visual_demo' ? 'Verified visual' : 'Proposed visual — not yet reviewed'} · ${item.visual_source.note}` : 'Spoken source; visual example not yet selected.'}</small>
       <p class="entry-source"><span>Source video</span>{video?.title ?? item.source.video_id}{video?.channel_name && <small>{video.channel_name}</small>}</p>
   <div class="evidence-row-actions">

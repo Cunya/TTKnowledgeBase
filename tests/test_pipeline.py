@@ -793,8 +793,11 @@ def test_editorial_corrections_preserve_scope_and_quarantine_wrong_topic() -> No
     forearm = read_yaml(folder / "forearm-forward-drive.yaml")
     assert "penhold" in forearm["short_definition"].lower()
     half_long = read_yaml(folder / "half-long-ball.yaml")
-    assert "just clears the end line" in half_long["short_definition"].lower()
-    assert "first bounce" in half_long["short_definition"].lower()
+    definition = half_long["short_definition"].lower()
+    assert any(phrase in definition for phrase in (
+        "just clears the end line", "just goes past the end line",
+    ))
+    assert "first bounce" in definition or "bounces once" in definition
     defensive = read_yaml(folder / "defensive-block-against-long-fast-serves.yaml")
     assert "distance" not in defensive["facets"]
     assert "level" not in defensive["facets"]

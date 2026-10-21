@@ -2,25 +2,19 @@ id: concept-sidespin-serve
 slug: sidespin-serve
 label: Sidespin serve
 aliases:
-  - serve with a curve
-  - sidespin serve
-  - curving during serving
-short_definition: A serve that produces left-right side spin by contacting the ball on the correct side and creating a curved trajectory.
+- serve with a curve
+- sidespin serve
+- curving during serving
+short_definition: A serve described in these lessons as producing left-right spin and a curving ball path.
 evidence_summary: >-
-  A serve that produces left-right side spin by contacting the ball on the correct side and
-  creating a curved trajectory.
-evidence_summary_source_hash: "sha256:bfc54debe560df15678184bdd6e469c31f65338d633e2ea598dc8d7cec21bb18"
-evidence_summary_generator: "deterministic"
+  A serve described in these lessons as producing left-right spin and a curving ball path.
 concept_type: stroke
 facets:
   category:
-    - fundamentals
-    - stroke
+  - stroke
   spin:
-    - sidespin
-  level:
-    - intermediate
-difficulty: intermediate
+  - sidespin
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -31,169 +25,169 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: 7Zz_cVWrgng-concept-sidespin-serve-reviewed
-    evidence_type: definition
-    excerpt: A serve that produces left-right side spin by contacting the ball on the correct side and creating a curved trajectory.
-    reason: The speaker explicitly says that to spin the ball left or right you need to curve it when serving, and that this state is what qualifies as a sidespin serve.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 7Zz_cVWrgng
-      start_ms: 58833
-      end_ms: 80400
-      url: https://www.youtube.com/watch?v=7Zz_cVWrgng&t=58s
-      segment_ids:
-        - 7Zz_cVWrgng:00002
-        - 7Zz_cVWrgng:00003
-        - 7Zz_cVWrgng:00006
-  - id: P21-_dtUzE8-concept-sidespin-serve-reviewed
-    evidence_type: definition
-    excerpt: A serve designed to create visible sideways rotation and curve through brushing and directional contact.
-    reason: Describes the spin path and labels it pure sidespin.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: P21-_dtUzE8
-      start_ms: 92133
-      end_ms: 113233
-      url: https://www.youtube.com/watch?v=P21-_dtUzE8&t=92s
-      segment_ids:
-        - P21-_dtUzE8:00035
-        - P21-_dtUzE8:00039
-        - P21-_dtUzE8:00044
-  - id: pxxgpWNbXSM-concept-sidespin-serve-reviewed
-    evidence_type: definition
-    excerpt: A serve that uses sideways friction to make the ball curve instead of traveling straight.
-    reason: The speaker explicitly describes the serve as generating side spin and producing a curve.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: pxxgpWNbXSM
-      start_ms: 736133
-      end_ms: 743433
-      url: https://www.youtube.com/watch?v=pxxgpWNbXSM&t=736s
-      segment_ids:
-        - pxxgpWNbXSM:00146
-  - id: q70a9LCojco-concept-left-sidespin-serve-reviewed
-    evidence_type: example
-    excerpt: A left sidespin serve is presented as a major weapon in professional play and a source of variation.
-    reason: The speaker explicitly names Lebrun's left sidespin as a major weapon.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: q70a9LCojco
-      start_ms: 27133
-      end_ms: 31633
-      url: https://www.youtube.com/watch?v=q70a9LCojco&t=27s
-      segment_ids:
-        - q70a9LCojco:00006
-  - id: evEaxXmwJ2E-candidate-left-sidespin-serve-reviewed
-    evidence_type: definition
-    excerpt: A serve pattern focused on generating left sidespin with a fixed racket angle, correct brushing angle, and a force direction that produces spin rather than a flat push.
-    reason: The speaker names the topic as the left sidespin serve and emphasizes fixed racket angle, brushing angle, and force direction as the key mechanics.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: evEaxXmwJ2E
-      start_ms: 0
-      end_ms: 22766
-      url: https://www.youtube.com/watch?v=evEaxXmwJ2E&t=0s
-      segment_ids:
-        - evEaxXmwJ2E:00000
-        - evEaxXmwJ2E:00003
-        - evEaxXmwJ2E:00004
-  - id: dIq6T-PMx0k-concept-high-kicking-topspin-sidespin-serve-reviewed
-    evidence_type: example
-    excerpt: A topspin-sidespin serve whose second bounce peaks well beyond the end line, making the return difficult to use aggressively.
-    reason: Defines the quality benchmark as the peak of the second bounce landing about one meter past the end of the table.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: dIq6T-PMx0k
-      start_ms: 608533
-      end_ms: 636866
-      url: https://www.youtube.com/watch?v=dIq6T-PMx0k&t=608s
-      segment_ids:
-        - dIq6T-PMx0k:00130
-        - dIq6T-PMx0k:00131
-        - dIq6T-PMx0k:00132
-        - dIq6T-PMx0k:00133
-        - dIq6T-PMx0k:00136
-        - dIq6T-PMx0k:00137
-        - dIq6T-PMx0k:00138
-  - id: KNhwuuZ6Vpo-concept-sidespin-serve-reviewed
-    evidence_type: explanation
-    excerpt: A serve that generates spin by brushing sideways across the ball, often with a curving motion.
-    reason: The speaker explicitly introduces sidespin friction and says the brushing technique makes the sidespin serve extremely spinny.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: KNhwuuZ6Vpo
-      start_ms: 383033
-      end_ms: 407900
-      url: https://www.youtube.com/watch?v=KNhwuuZ6Vpo&t=383s
-      segment_ids:
-        - KNhwuuZ6Vpo:00076
-        - KNhwuuZ6Vpo:00079
-  - id: 7Zz_cVWrgng-concept-sidespin-serve-codex-reviewed
-    evidence_type: definition
-    excerpt: To spin the ball to the left or right, you need to curve the ball when serving; reaching this state classifies it as a sidespin serve.
-    reason: The contiguous selected span directly states that left-right spin during a serve requires curving the ball and identifies that state as a sidespin serve. The excerpt and definition omit unsupported contact mechanics and level claims.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 7Zz_cVWrgng
-      start_ms: 58833
-      end_ms: 80400
-      url: https://www.youtube.com/watch?v=7Zz_cVWrgng&t=58s
-      segment_ids:
-        - 7Zz_cVWrgng:00002
-        - 7Zz_cVWrgng:00003
-        - 7Zz_cVWrgng:00004
-        - 7Zz_cVWrgng:00005
-        - 7Zz_cVWrgng:00006
-  - id: Da2vVwtco1w-concept-sidespin-serve-codex-reviewed
-    evidence_type: explanation
-    excerpt: Firstly, try serving with a side spin. When practicing serving with side spin, never hold the paddle too tightly.
-    reason: This contiguous 20-second span explicitly introduces serving with sidespin and explains that the paddle should not be held too tightly during practice.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: Da2vVwtco1w
-      start_ms: 334666
-      end_ms: 354533
-      url: https://www.youtube.com/watch?v=Da2vVwtco1w&t=334s
-      segment_ids:
-        - Da2vVwtco1w:00059
-        - Da2vVwtco1w:00060
-        - Da2vVwtco1w:00061
-        - Da2vVwtco1w:00062
-        - Da2vVwtco1w:00063
-        - Da2vVwtco1w:00064
-  - id: P21-_dtUzE8-concept-sidespin-serve-codex-reviewed
-    evidence_type: explanation
-    excerpt: Actually, the sidespin goes from 12 o'clock to 6 o'clock. I move from 6 o'clock to 12 o'clock, 1 o'clock, 2 o'clock, 3 o'clock, and brush towards 3 o'clock; that is a sidespin.
-    reason: This contiguous span directly explains the brushing path and explicitly identifies the result as sidespin, matching the existing Sidespin serve concept.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: P21-_dtUzE8
-      start_ms: 92133
-      end_ms: 103566
-      url: https://www.youtube.com/watch?v=P21-_dtUzE8&t=92s
-      segment_ids:
-        - P21-_dtUzE8:00035
-        - P21-_dtUzE8:00036
-        - P21-_dtUzE8:00037
-        - P21-_dtUzE8:00038
-        - P21-_dtUzE8:00039
+- id: 7Zz_cVWrgng-concept-sidespin-serve-reviewed
+  evidence_type: definition
+  excerpt: A serve that produces left-right side spin by contacting the ball on the correct side and creating a curved trajectory.
+  reason: The speaker explicitly says that to spin the ball left or right you need to curve it when serving, and that this state is what qualifies as a sidespin serve.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 7Zz_cVWrgng
+    start_ms: 58833
+    end_ms: 80400
+    url: https://www.youtube.com/watch?v=7Zz_cVWrgng&t=58s
+    segment_ids:
+    - 7Zz_cVWrgng:00002
+    - 7Zz_cVWrgng:00003
+    - 7Zz_cVWrgng:00006
+- id: P21-_dtUzE8-concept-sidespin-serve-reviewed
+  evidence_type: definition
+  excerpt: A serve designed to create visible sideways rotation and curve through brushing and directional contact.
+  reason: Describes the spin path and labels it pure sidespin.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: P21-_dtUzE8
+    start_ms: 92133
+    end_ms: 113233
+    url: https://www.youtube.com/watch?v=P21-_dtUzE8&t=92s
+    segment_ids:
+    - P21-_dtUzE8:00035
+    - P21-_dtUzE8:00039
+    - P21-_dtUzE8:00044
+- id: pxxgpWNbXSM-concept-sidespin-serve-reviewed
+  evidence_type: definition
+  excerpt: A serve that uses sideways friction to make the ball curve instead of traveling straight.
+  reason: The speaker explicitly describes the serve as generating side spin and producing a curve.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: pxxgpWNbXSM
+    start_ms: 736133
+    end_ms: 743433
+    url: https://www.youtube.com/watch?v=pxxgpWNbXSM&t=736s
+    segment_ids:
+    - pxxgpWNbXSM:00146
+- id: q70a9LCojco-concept-left-sidespin-serve-reviewed
+  evidence_type: example
+  excerpt: A left sidespin serve is presented as a major weapon in professional play and a source of variation.
+  reason: The speaker explicitly names Lebrun's left sidespin as a major weapon.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: q70a9LCojco
+    start_ms: 27133
+    end_ms: 31633
+    url: https://www.youtube.com/watch?v=q70a9LCojco&t=27s
+    segment_ids:
+    - q70a9LCojco:00006
+- id: evEaxXmwJ2E-candidate-left-sidespin-serve-reviewed
+  evidence_type: definition
+  excerpt: A serve pattern focused on generating left sidespin with a fixed racket angle, correct brushing angle, and a force direction that produces spin rather than a flat push.
+  reason: The speaker names the topic as the left sidespin serve and emphasizes fixed racket angle, brushing angle, and force direction as the key mechanics.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: evEaxXmwJ2E
+    start_ms: 0
+    end_ms: 22766
+    url: https://www.youtube.com/watch?v=evEaxXmwJ2E&t=0s
+    segment_ids:
+    - evEaxXmwJ2E:00000
+    - evEaxXmwJ2E:00003
+    - evEaxXmwJ2E:00004
+- id: dIq6T-PMx0k-concept-high-kicking-topspin-sidespin-serve-reviewed
+  evidence_type: example
+  excerpt: A topspin-sidespin serve whose second bounce peaks well beyond the end line, making the return difficult to use aggressively.
+  reason: Defines the quality benchmark as the peak of the second bounce landing about one meter past the end of the table.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: dIq6T-PMx0k
+    start_ms: 608533
+    end_ms: 636866
+    url: https://www.youtube.com/watch?v=dIq6T-PMx0k&t=608s
+    segment_ids:
+    - dIq6T-PMx0k:00130
+    - dIq6T-PMx0k:00131
+    - dIq6T-PMx0k:00132
+    - dIq6T-PMx0k:00133
+    - dIq6T-PMx0k:00136
+    - dIq6T-PMx0k:00137
+    - dIq6T-PMx0k:00138
+- id: KNhwuuZ6Vpo-concept-sidespin-serve-reviewed
+  evidence_type: explanation
+  excerpt: A serve that generates spin by brushing sideways across the ball, often with a curving motion.
+  reason: The speaker explicitly introduces sidespin friction and says the brushing technique makes the sidespin serve extremely spinny.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: KNhwuuZ6Vpo
+    start_ms: 383033
+    end_ms: 407900
+    url: https://www.youtube.com/watch?v=KNhwuuZ6Vpo&t=383s
+    segment_ids:
+    - KNhwuuZ6Vpo:00076
+    - KNhwuuZ6Vpo:00079
+- id: 7Zz_cVWrgng-concept-sidespin-serve-codex-reviewed
+  evidence_type: definition
+  excerpt: To spin the ball to the left or right, you need to curve the ball when serving; reaching this state classifies it as a sidespin serve.
+  reason: The lesson describes left-right spin and a curving served ball as the state it calls a sidespin serve.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 7Zz_cVWrgng
+    start_ms: 58833
+    end_ms: 80400
+    url: https://www.youtube.com/watch?v=7Zz_cVWrgng&t=58s
+    segment_ids:
+    - 7Zz_cVWrgng:00002
+    - 7Zz_cVWrgng:00003
+    - 7Zz_cVWrgng:00004
+    - 7Zz_cVWrgng:00005
+    - 7Zz_cVWrgng:00006
+- id: Da2vVwtco1w-concept-sidespin-serve-codex-reviewed
+  evidence_type: explanation
+  excerpt: Firstly, try serving with a side spin. When practicing serving with side spin, never hold the paddle too tightly.
+  reason: When starting to practice sidespin serves, avoid holding the paddle too tightly.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: Da2vVwtco1w
+    start_ms: 334666
+    end_ms: 354533
+    url: https://www.youtube.com/watch?v=Da2vVwtco1w&t=334s
+    segment_ids:
+    - Da2vVwtco1w:00059
+    - Da2vVwtco1w:00060
+    - Da2vVwtco1w:00061
+    - Da2vVwtco1w:00062
+    - Da2vVwtco1w:00063
+    - Da2vVwtco1w:00064
+- id: P21-_dtUzE8-concept-sidespin-serve-codex-reviewed
+  evidence_type: explanation
+  excerpt: Actually, the sidespin goes from 12 o'clock to 6 o'clock. I move from 6 o'clock to 12 o'clock, 1 o'clock, 2 o'clock, 3 o'clock, and brush towards 3 o'clock; that is a sidespin.
+  reason: The speaker describes moving from 6 toward 12, 1, 2 and 3 o’clock and brushing toward 3 o’clock, calling the result sidespin.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: P21-_dtUzE8
+    start_ms: 92133
+    end_ms: 103566
+    url: https://www.youtube.com/watch?v=P21-_dtUzE8&t=92s
+    segment_ids:
+    - P21-_dtUzE8:00035
+    - P21-_dtUzE8:00036
+    - P21-_dtUzE8:00037
+    - P21-_dtUzE8:00038
+    - P21-_dtUzE8:00039

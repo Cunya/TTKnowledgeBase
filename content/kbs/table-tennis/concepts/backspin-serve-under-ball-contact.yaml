@@ -2,615 +2,612 @@ id: concept-backspin-serve-under-ball-contact
 slug: backspin-serve-under-ball-contact
 label: Under-ball contact for backspin serve
 aliases: [bottom contact, heavy backspin contact]
-short_definition: Brush under the ball—rather than its back—to produce heavy backspin on the serve.
+short_definition: Get under the ball to create spin.
 evidence_summary: >-
-  A common error in backspin serve contact is striking too high on the ball, which pops it up
-  instead of letting the racket grip and drive the ball downward. Better contact is on the lower
-  half or lower middle of the ball, where the brush can create heavy backspin and more controlled
-  landing, while upper-half contact tends to add topspin instead. The key is not to hit directly
-  behind or underneath the ball in a flat way, but to shape the contact so the racket can work
-  under and around it with minimal extra motion.
-evidence_summary_source_hash: "sha256:04b855c2ae6431dcd7b104604292828f0323b0d0960c20b04a4cf8996b432eab"
-evidence_summary_generator: "codex"
+  The backspin-serving lesson describes back-of-ball contact as why players may fail to get spin, and instructs them to get under the ball to create spin. Its contact-zone map labels bottom contact as maximum spin and middle-lower contact as strong spin. A separate hook-serving lesson warns that bottom contact makes the ball pop up, reduces speed, and leaves the first bounce without forward penetration.
 concept_type: technique-cue
-facets: {category: [serve, spin, contact], side: [neutral], level: [beginner, intermediate]}
-difficulty: beginner
+facets:
+  category:
+  - fundamentals
+  spin:
+  - backspin
+difficulty:
 review_status: approved
 evidence:
-  - id: backspin-wrong-contact-1
-    evidence_type: mistake
-    excerpt: Contacting the ball from behind without getting underneath it is a common reason the backspin fails.
-    reason: Identifies the common contact-location error.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source: {video_id: csJgHR7Daog, start_ms: 523840, end_ms: 531400, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=523s", segment_ids: ["csJgHR7Daog:00226", "csJgHR7Daog:00227", "csJgHR7Daog:00228", "csJgHR7Daog:00229"]}
-  - id: backspin-under-ball-2
-    evidence_type: correction
-    excerpt: Move the racket under the ball so the contact can grip it and create spin.
-    reason: Corrects the contact location.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source: {video_id: csJgHR7Daog, start_ms: 533360, end_ms: 538600, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=533s", segment_ids: ["csJgHR7Daog:00230", "csJgHR7Daog:00231"]}
-  - id: backspin-contact-zones-3
-    evidence_type: demonstration
-    excerpt: The lowest contact zone gives the strongest backspin, while a middle-lower contact gives a slightly milder result.
-    reason: Compares two useful under-ball contact regions.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source: {video_id: csJgHR7Daog, start_ms: 541520, end_ms: 549520, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=541s", segment_ids: ["csJgHR7Daog:00232", "csJgHR7Daog:00233"]}
-  - id: Jjd8Mu1s0S0-concept-backspin-serve-under-ball-contact-reviewed
-    evidence_type: definition
-    excerpt: To create strong backspin, the ball must be contacted on the lower half of the racket face, with the racket positioned high enough to strike upward into the ball rather than underneath it too late.
-    reason: The speaker explicitly says the ball should be placed on the lower half of the racket when brushing.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: Jjd8Mu1s0S0
-      start_ms: 21640
-      end_ms: 28480
-      url: https://www.youtube.com/watch?v=Jjd8Mu1s0S0&t=21s
-      segment_ids:
-        - Jjd8Mu1s0S0:00007
-        - Jjd8Mu1s0S0:00008
-        - Jjd8Mu1s0S0:00009
-  - id: pE5PLAr9iaA-concept-backspin-serve-under-ball-contact-reviewed
-    evidence_type: explanation
-    excerpt: Contacting the lower part of the ball to produce backspin on serve and avoid popping the ball up.
-    reason: The speaker explains that upper-half contact pops the ball up while lower-half contact grips and lands, describing the mechanics of heavy backspin contact.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: pE5PLAr9iaA
-      start_ms: 490840
-      end_ms: 505960
-      url: https://www.youtube.com/watch?v=pE5PLAr9iaA&t=490s
-      segment_ids:
-        - pE5PLAr9iaA:00161
-        - pE5PLAr9iaA:00162
-        - pE5PLAr9iaA:00163
-        - pE5PLAr9iaA:00164
-        - pE5PLAr9iaA:00165
-  - id: StQ86EhPFpo-concept-backspin-serve-under-ball-contact-reviewed
-    evidence_type: definition
-    excerpt: Contacting the lower half of the ball to produce heavier backspin on a push or similar short-table stroke.
-    reason: The speaker says to brush under the ball to increase spin and contact the lower half of the ball.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: StQ86EhPFpo
-      start_ms: 60920
-      end_ms: 68480
-      url: https://www.youtube.com/watch?v=StQ86EhPFpo&t=60s
-      segment_ids:
-        - StQ86EhPFpo:00026
-        - StQ86EhPFpo:00027
-  - id: KpjJFdkUD54-concept-backspin-serve-under-ball-contact-reviewed
-    evidence_type: mistake
-    excerpt: Producing backspin requires contacting the lower half of the ball rather than brushing too high, since high contact naturally adds topspin.
-    reason: The speaker contrasts too-high contact with lower-half contact and notes that brushing the upper half still produces topspin.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: KpjJFdkUD54
-      start_ms: 424520
-      end_ms: 451360
-      url: https://www.youtube.com/watch?v=KpjJFdkUD54&t=424s
-      segment_ids:
-        - KpjJFdkUD54:00150
-        - KpjJFdkUD54:00151
-        - KpjJFdkUD54:00152
-        - KpjJFdkUD54:00157
-  - id: byk-MQTWbBs-concept-backspin-serve-under-ball-contact-reviewed
-    evidence_type: explanation
-    excerpt: Creating backspin by brushing the bottom or lower part of the ball rather than striking it flat.
-    reason: The speaker explains that more spin comes from brushing the back or bottom of the ball and securing bottom contact before adding the wrist arc.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: byk-MQTWbBs
-      start_ms: 331240
-      end_ms: 360120
-      url: https://www.youtube.com/watch?v=byk-MQTWbBs&t=331s
-      segment_ids:
-        - byk-MQTWbBs:00129
-        - byk-MQTWbBs:00130
-        - byk-MQTWbBs:00131
-        - byk-MQTWbBs:00132
-        - byk-MQTWbBs:00133
-        - byk-MQTWbBs:00134
-        - byk-MQTWbBs:00135
-        - byk-MQTWbBs:00136
-        - byk-MQTWbBs:00137
-        - byk-MQTWbBs:00138
-        - byk-MQTWbBs:00139
-  - id: Dj-oOxwQn1s-concept-backspin-serve-under-ball-contact-reviewed
-    evidence_type: definition
-    excerpt: To create strong backspin in a hook serve, contact should be made on the lower middle part of the ball rather than only the side or back.
-    reason: The speaker explicitly says to brush the lower middle part of the ball and that the actual contact must be there.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: Dj-oOxwQn1s
-      start_ms: 129479
-      end_ms: 138720
-      url: https://www.youtube.com/watch?v=Dj-oOxwQn1s&t=129s
-      segment_ids:
-        - Dj-oOxwQn1s:00046
-        - Dj-oOxwQn1s:00047
-        - Dj-oOxwQn1s:00048
-        - Dj-oOxwQn1s:00049
-  - id: xwKSNLxVaBg-concept-backspin-serve-under-ball-contact-reviewed
-    evidence_type: correction
-    excerpt: Contacting the underside or lower middle of the ball to create backspin; the speaker warns against this contact when trying to produce pure sidespin-topspin.
-    reason: States never to contact directly behind or underneath the ball when seeking the sidespin-topspin action.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: xwKSNLxVaBg
-      start_ms: 583760
-      end_ms: 593520
-      url: https://www.youtube.com/watch?v=xwKSNLxVaBg&t=583s
-      segment_ids:
-        - xwKSNLxVaBg:00202
-        - xwKSNLxVaBg:00203
-        - xwKSNLxVaBg:00204
-  - id: byk-MQTWbBs-concept-backspin-serve-under-ball-contact-reviewed-5d82a795
-    evidence_type: explanation
-    excerpt: Creating backspin by brushing the bottom or lower part of the ball rather than striking it flat.
-    reason: The speaker explains that more spin comes from brushing the back or bottom of the ball and securing bottom contact before adding the wrist arc.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: byk-MQTWbBs
-      start_ms: 331240
-      end_ms: 360120
-      url: https://www.youtube.com/watch?v=byk-MQTWbBs&t=331s
-      segment_ids:
-        - byk-MQTWbBs:00129
-        - byk-MQTWbBs:00130
-        - byk-MQTWbBs:00131
-        - byk-MQTWbBs:00132
-        - byk-MQTWbBs:00133
-        - byk-MQTWbBs:00134
-        - byk-MQTWbBs:00135
-        - byk-MQTWbBs:00136
-        - byk-MQTWbBs:00137
-        - byk-MQTWbBs:00138
-        - byk-MQTWbBs:00139
-  - id: Dj-oOxwQn1s-concept-backspin-serve-under-ball-contact-reviewed-2cf74f96
-    evidence_type: definition
-    excerpt: To create strong backspin in a hook serve, contact should be made on the lower middle part of the ball rather than only the side or back.
-    reason: The speaker explicitly says to brush the lower middle part of the ball and that the actual contact must be there.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: Dj-oOxwQn1s
-      start_ms: 129479
-      end_ms: 138720
-      url: https://www.youtube.com/watch?v=Dj-oOxwQn1s&t=129s
-      segment_ids:
-        - Dj-oOxwQn1s:00046
-        - Dj-oOxwQn1s:00047
-        - Dj-oOxwQn1s:00048
-        - Dj-oOxwQn1s:00049
-  - id: xwKSNLxVaBg-concept-backspin-serve-under-ball-contact-reviewed-a53ddcb9
-    evidence_type: correction
-    excerpt: Contacting the underside or lower middle of the ball to create backspin; the speaker warns against this contact when trying to produce pure sidespin-topspin.
-    reason: States never to contact directly behind or underneath the ball when seeking the sidespin-topspin action.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: xwKSNLxVaBg
-      start_ms: 583760
-      end_ms: 593520
-      url: https://www.youtube.com/watch?v=xwKSNLxVaBg&t=583s
-      segment_ids:
-        - xwKSNLxVaBg:00202
-        - xwKSNLxVaBg:00203
-        - xwKSNLxVaBg:00204
-  - id: E6sGbY4sQH0-concept-backspin-serve-under-ball-contact-reviewed
-    evidence_type: mistake
-    excerpt: Contacting the bottom of the ball on a hook serve is identified as a major mistake because it makes the ball pop up, kills speed, and removes forward penetration.
-    reason: States that bottom-of-ball contact is the biggest mistake and explains the resulting pop-up, speed loss, and lack of forward penetration.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: E6sGbY4sQH0
-      start_ms: 0
-      end_ms: 19960
-      url: https://www.youtube.com/watch?v=E6sGbY4sQH0&t=0s
-      segment_ids:
-        - E6sGbY4sQH0:00000
-        - E6sGbY4sQH0:00001
-        - E6sGbY4sQH0:00002
-        - E6sGbY4sQH0:00003
-        - E6sGbY4sQH0:00004
-        - E6sGbY4sQH0:00005
-        - E6sGbY4sQH0:00007
-  - id: PDFXww03DHM-concept-backspin-serve-under-ball-contact-reviewed
-    evidence_type: explanation
-    excerpt: For a backspin serve, contact the lower part of the ball so the racket face and brushing direction produce heavier backspin rather than forward roll.
-    reason: The speaker explains that for more spin the lower part of the racket should be higher at contact, and contrasts backward-moving vs forward-moving brush outcomes.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: PDFXww03DHM
-      start_ms: 1200
-      end_ms: 25600
-      url: https://www.youtube.com/watch?v=PDFXww03DHM&t=1s
-      segment_ids:
-        - PDFXww03DHM:00000
-        - PDFXww03DHM:00001
-        - PDFXww03DHM:00002
-        - PDFXww03DHM:00004
-        - PDFXww03DHM:00005
-        - PDFXww03DHM:00006
-        - PDFXww03DHM:00007
-  - id: 6NvlGVPIC6E-concept-backspin-serve-under-ball-contact-reviewed
-    evidence_type: definition
-    excerpt: Contacting the lower part of the ball with a chopping action to produce stronger backspin.
-    reason: The speaker contrasts chopping contact with brushing contact and says chopping produces more spin for the serve.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 6NvlGVPIC6E
-      start_ms: 38880
-      end_ms: 48120
-      url: https://www.youtube.com/watch?v=6NvlGVPIC6E&t=38s
-      segment_ids:
-        - 6NvlGVPIC6E:00016
-        - 6NvlGVPIC6E:00018
-  - id: Fe4y6uzl5GU-concept-backspin-serve-under-ball-contact-reviewed
-    evidence_type: definition
-    excerpt: To produce backspin, contact the lower middle or underside of the ball rather than the side, with a cutting motion.
-    reason: The speaker repeatedly instructs to aim for and brush the lower middle of the ball and contrasts this with side contact producing different spin.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: Fe4y6uzl5GU
-      start_ms: 81760
-      end_ms: 92000
-      url: https://www.youtube.com/watch?v=Fe4y6uzl5GU&t=81s
-      segment_ids:
-        - Fe4y6uzl5GU:00031
-        - Fe4y6uzl5GU:00032
-        - Fe4y6uzl5GU:00033
-  - id: zR5tddUgfGQ-concept-backspin-serve-under-ball-contact-reviewed
-    evidence_type: definition
-    excerpt: Creating backspin by contacting the lower half of the ball with a chopping action from top to bottom.
-    reason: The speaker says to contact the lower half of the ball and chop downward to generate fast backspin and speed.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: zR5tddUgfGQ
-      start_ms: 233960
-      end_ms: 263040
-      url: https://www.youtube.com/watch?v=zR5tddUgfGQ&t=233s
-      segment_ids:
-        - zR5tddUgfGQ:00097
-        - zR5tddUgfGQ:00098
-        - zR5tddUgfGQ:00099
-        - zR5tddUgfGQ:00100
-        - zR5tddUgfGQ:00101
-        - zR5tddUgfGQ:00106
-        - zR5tddUgfGQ:00107
-  - id: hwT7cH6PbZQ-concept-backspin-serve-under-ball-contact-reviewed
-    evidence_type: explanation
-    excerpt: Contacting underneath the ball and guiding downward to create or handle backspin while keeping the ball low.
-    reason: The speaker explicitly instructs a guiding push against heavy backspin and says to guide the ball downwards with minimal added action.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: hwT7cH6PbZQ
-      start_ms: 423200
-      end_ms: 446633
-      url: https://www.youtube.com/watch?v=hwT7cH6PbZQ&t=423s
-      segment_ids:
-        - hwT7cH6PbZQ:00100
-        - hwT7cH6PbZQ:00101
-        - hwT7cH6PbZQ:00102
-        - hwT7cH6PbZQ:00103
-        - hwT7cH6PbZQ:00104
-  - id: hwT7cH6PbZQ-concept-backspin-serve-under-ball-contact-reviewed-9a55a1b3
-    evidence_type: explanation
-    excerpt: Contacting underneath the ball and guiding downward to create or handle backspin while keeping the ball low.
-    reason: The speaker explicitly instructs a guiding push against heavy backspin and says to guide the ball downwards with minimal added action.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: hwT7cH6PbZQ
-      start_ms: 423200
-      end_ms: 446633
-      url: https://www.youtube.com/watch?v=hwT7cH6PbZQ&t=423s
-      segment_ids:
-        - hwT7cH6PbZQ:00100
-        - hwT7cH6PbZQ:00101
-        - hwT7cH6PbZQ:00102
-        - hwT7cH6PbZQ:00103
-        - hwT7cH6PbZQ:00104
-  - id: QgG46RFoIcA-concept-backspin-serve-under-ball-contact-reviewed
-    evidence_type: definition
-    excerpt: To maximize backspin on a serve, contact the bottom of the ball with a slightly flatter brushing action rather than striking the side or hitting straight down.
-    reason: Speaker explicitly says the serve has more backspin and that the key is brushing the bottom of the ball with a slight angle.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: QgG46RFoIcA
-      start_ms: 49920
-      end_ms: 60080
-      url: https://www.youtube.com/watch?v=QgG46RFoIcA&t=49s
-      segment_ids:
-        - QgG46RFoIcA:00019
-        - QgG46RFoIcA:00020
-        - QgG46RFoIcA:00021
-        - QgG46RFoIcA:00022
-  - id: VCsrR_8ULG4-concept-backspin-serve-under-ball-contact-reviewed
-    evidence_type: explanation
-    excerpt: Contacting lower on the ball and cutting downward or upward from a low setup to create backspin or underspin variants.
-    reason: The speaker says the shoulder and elbow must stay low, the contact point should be extremely low, and the ball should be contacted lower to brush upward or cut downward for spin.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: VCsrR_8ULG4
-      start_ms: 198200
-      end_ms: 217933
-      url: https://www.youtube.com/watch?v=VCsrR_8ULG4&t=198s
-      segment_ids:
-        - VCsrR_8ULG4:00057
-        - VCsrR_8ULG4:00058
-        - VCsrR_8ULG4:00059
-        - VCsrR_8ULG4:00063
-  - id: VOX-e4IR2xg-concept-backspin-serve-under-ball-contact-reviewed
-    evidence_type: definition
-    excerpt: Producing backspin by striking the ball from above or with a downward motion so the racket contacts the ball underneath the center line.
-    reason: The speaker says the racket contacts the ball while moving downward and identifies the result as backspin.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: VOX-e4IR2xg
-      start_ms: 195239
-      end_ms: 206880
-      url: https://www.youtube.com/watch?v=VOX-e4IR2xg&t=195s
-      segment_ids:
-        - VOX-e4IR2xg:00064
-        - VOX-e4IR2xg:00065
-        - VOX-e4IR2xg:00066
-        - VOX-e4IR2xg:00067
-  - id: xBlnTfR0eOY-concept-backspin-serve-under-ball-contact-reviewed
-    evidence_type: explanation
-    excerpt: To produce a real curve in a hook serve, the contact must start from underneath the ball rather than brushing the back of the ball.
-    reason: He repeatedly instructs to brush from the bottom, notes that upward brushing yields sidespin-top, and downward brushing yields sidespin-backspin.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: xBlnTfR0eOY
-      start_ms: 492300
-      end_ms: 512600
-      url: https://www.youtube.com/watch?v=xBlnTfR0eOY&t=492s
-      segment_ids:
-        - xBlnTfR0eOY:00152
-        - xBlnTfR0eOY:00157
-  - id: 25Ohh2RJcWk-concept-backspin-serve-under-ball-contact-reviewed
-    evidence_type: definition
-    excerpt: For a backspin or underspin serve, contact the lower part of the ball rather than the upper half so the serve can generate spin.
-    reason: The speaker explicitly says to contact the lower part of the ball for underspin and warns that upper-half contact will not spin.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 25Ohh2RJcWk
-      start_ms: 220066
-      end_ms: 229900
-      url: https://www.youtube.com/watch?v=25Ohh2RJcWk&t=220s
-      segment_ids:
-        - 25Ohh2RJcWk:00051
-        - 25Ohh2RJcWk:00053
-  - id: GOAyEFoSibE-concept-backspin-serve-under-ball-contact-reviewed
-    evidence_type: definition
-    excerpt: Contacting the lower half or bottom of the ball to produce backspin.
-    reason: The speaker explicitly says bottom or lower-middle contact imparts backspin.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: GOAyEFoSibE
-      start_ms: 632700
-      end_ms: 645900
-      url: https://www.youtube.com/watch?v=GOAyEFoSibE&t=632s
-      segment_ids:
-        - GOAyEFoSibE:00147
-        - GOAyEFoSibE:00149
-  - id: WcQLHn2Fafw-concept-backspin-serve-under-ball-contact-reviewed
-    evidence_type: definition
-    excerpt: Contacting the lower part of the ball to create heavy backspin on a push or serve-like motion.
-    reason: The transcript directly identifies bottom-half contact as the way to produce heavy backspin and links it to contacting the bottom of the ball at the end of the stroke.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: WcQLHn2Fafw
-      start_ms: 321033
-      end_ms: 346833
-      url: https://www.youtube.com/watch?v=WcQLHn2Fafw&t=321s
-      segment_ids:
-        - WcQLHn2Fafw:00074
-        - WcQLHn2Fafw:00075
-        - WcQLHn2Fafw:00078
-  - id: -iWLwSvOJ2U-concept-backspin-serve-under-ball-contact-reviewed
-    evidence_type: explanation
-    excerpt: Contacting under the ball to create or handle backspin, while recognizing that careless under-contact on receive makes the ball pop up.
-    reason: The speaker warns that contacting from below makes the ball pop up and later says for heavy backspin your hand must be lower than the ball.
-    confidence: 0.88
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: -iWLwSvOJ2U
-      start_ms: 70366
-      end_ms: 77566
-      url: https://www.youtube.com/watch?v=-iWLwSvOJ2U&t=70s
-      segment_ids:
-        - -iWLwSvOJ2U:00017
-        - -iWLwSvOJ2U:00018
-  - id: yF675Tey81g-concept-downward-pressure-and-friction-on-serve-reviewed
-    evidence_type: explanation
-    excerpt: Using downward pressure at contact to increase friction, curve the ball, and make the serve more dangerous.
-    reason: The speaker repeatedly states that more friction and downward pressure create curve, while lack of friction makes the ball flat and easy to block.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: yF675Tey81g
-      start_ms: 154220
-      end_ms: 181520
-      url: https://www.youtube.com/watch?v=yF675Tey81g&t=154s
-      segment_ids:
-        - yF675Tey81g:00027
-        - yF675Tey81g:00028
-        - yF675Tey81g:00029
-        - yF675Tey81g:00033
-  - id: kF3mAZD3GHs-concept-backspin-serve-under-ball-contact-reviewed
-    evidence_type: definition
-    excerpt: To produce heavy backspin, brush the side-bottom and pure bottom of the ball.
-    reason: The speaker gives the exact contact zones for side-backspin and backspin serves and links them to heavy spin generation.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: kF3mAZD3GHs
-      start_ms: 421800
-      end_ms: 438700
-      url: https://www.youtube.com/watch?v=kF3mAZD3GHs&t=421s
-      segment_ids:
-        - kF3mAZD3GHs:00089
-        - kF3mAZD3GHs:00090
-        - kF3mAZD3GHs:00091
-        - kF3mAZD3GHs:00092
-  - id: ihrv3kBFb-U-concept-forearm-led-lift-against-heavy-backspin-reviewed
-    evidence_type: demonstration
-    excerpt: A forearm-led lifting action is used to handle heavy backspin and land the ball on the table, converting backspin into topspin.
-    reason: The opening claim and later demonstration both say heavy backspin can be lifted with the forearm and landed on the table, with the result described as converted topspin.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: ihrv3kBFb-U
-      start_ms: 414600
-      end_ms: 433333
-      url: https://www.youtube.com/watch?v=ihrv3kBFb-U&t=414s
-      segment_ids:
-        - ihrv3kBFb-U:00084
-        - ihrv3kBFb-U:00085
-        - ihrv3kBFb-U:00087
-  - id: phTj82vlVqs-concept-backspin-serve-under-ball-contact-reviewed
-    evidence_type: definition
-    excerpt: Contacting and brushing the lower part of the ball to create backspin.
-    reason: The speaker says heavy spin comes from brushing the bottom of the ball more and brushing the bottom or just off the bottom of the ball.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: phTj82vlVqs
-      start_ms: 49466
-      end_ms: 54266
-      url: https://www.youtube.com/watch?v=phTj82vlVqs&t=49s
-      segment_ids:
-        - phTj82vlVqs:00013
-  - id: IgnpsIZW3tM-concept-backspin-serve-under-ball-contact-reviewed
-    evidence_type: explanation
-    excerpt: On heavy backspin or underspin receives, contact under the ball and use a brushing motion rather than chopping straight down.
-    reason: The speaker says a straight chop into heavy backspin goes into the net, while a slight arc in the racket path lets you push back even heavy spin.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: IgnpsIZW3tM
-      start_ms: 0
-      end_ms: 13866
-      url: https://www.youtube.com/watch?v=IgnpsIZW3tM&t=0s
-      segment_ids:
-        - IgnpsIZW3tM:00000
-        - IgnpsIZW3tM:00001
-  - id: y7Xd49MgdbQ-concept-downward-backswing-for-backspin-reviewed
-    evidence_type: definition
-    excerpt: Against backspin, the backswing should start downward rather than mainly backward so the player can generate friction and lift the ball effectively.
-    reason: The speaker directly states that heavier backspin needs a more downward backswing, that pulling back is wrong, and that most pushes require the racket to drop downward first.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: y7Xd49MgdbQ
-      start_ms: 348766
-      end_ms: 374133
-      url: https://www.youtube.com/watch?v=y7Xd49MgdbQ&t=348s
-      segment_ids:
-        - y7Xd49MgdbQ:00071
-        - y7Xd49MgdbQ:00073
-        - y7Xd49MgdbQ:00074
-        - y7Xd49MgdbQ:00075
-        - y7Xd49MgdbQ:00076
-  - id: 6NvlGVPIC6E-concept-backspin-serve-under-ball-contact-codex-reviewed
-    evidence_type: explanation
-    excerpt: Don't flip the wrist. Just chop down like this. Even with a flatter angle, you still need to brush slightly under the ball.
-    reason: These contiguous segments directly instruct the player to chop down without flipping the wrist and to brush slightly under the ball.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 6NvlGVPIC6E
-      start_ms: 332640
-      end_ms: 343320
-      url: https://www.youtube.com/watch?v=6NvlGVPIC6E&t=332s
-      segment_ids:
-        - 6NvlGVPIC6E:00108
-        - 6NvlGVPIC6E:00109
-        - 6NvlGVPIC6E:00110
-        - 6NvlGVPIC6E:00111
-  - id: E6sGbY4sQH0-concept-backspin-serve-under-ball-contact-codex-reviewed
-    evidence_type: mistake
-    excerpt: The biggest mistake in hook serving is contacting the bottom of the ball; it makes the ball pop up, kills speed, and removes forward penetration.
-    reason: This contiguous span directly identifies bottom-of-ball contact as the biggest hook-serving mistake and explains its effects. The later correction segments were omitted because they address a separate low-ball tactic.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: E6sGbY4sQH0
-      start_ms: 0
-      end_ms: 15080
-      url: https://www.youtube.com/watch?v=E6sGbY4sQH0&t=0s
-      segment_ids:
-        - E6sGbY4sQH0:00000
-        - E6sGbY4sQH0:00001
-        - E6sGbY4sQH0:00002
-        - E6sGbY4sQH0:00003
-        - E6sGbY4sQH0:00004
-        - E6sGbY4sQH0:00005
+- id: backspin-wrong-contact-1
+  evidence_type: mistake
+  excerpt: Many players want heavy backspin but contact the back of the ball and wonder why it doesn’t spin.
+  reason: The lesson says contacting the back of the ball can leave players wondering why their serve has no spin.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source: {video_id: csJgHR7Daog, start_ms: 523840, end_ms: 531400, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=523s", segment_ids: ["csJgHR7Daog:00226", "csJgHR7Daog:00227", "csJgHR7Daog:00228", "csJgHR7Daog:00229"]}
+- id: backspin-under-ball-2
+  evidence_type: correction
+  excerpt: Get under the ball to create spin.
+  reason: The cue links getting under the ball with creating spin.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source: {video_id: csJgHR7Daog, start_ms: 533360, end_ms: 538600, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=533s", segment_ids: ["csJgHR7Daog:00230", "csJgHR7Daog:00231"]}
+- id: backspin-contact-zones-3
+  evidence_type: explanation
+  excerpt: The lesson’s contact-zone map labels bottom contact as maximum spin and middle-lower contact as strong spin.
+  reason: The lesson’s contact-zone map distinguishes bottom contact for maximum spin from middle-lower contact for strong spin.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source: {video_id: csJgHR7Daog, start_ms: 541520, end_ms: 549520, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=541s", segment_ids: ["csJgHR7Daog:00232", "csJgHR7Daog:00233"]}
+- id: Jjd8Mu1s0S0-concept-backspin-serve-under-ball-contact-reviewed
+  evidence_type: definition
+  excerpt: To create strong backspin, the ball must be contacted on the lower half of the racket face, with the racket positioned high enough to strike upward into the ball rather than underneath it too late.
+  reason: The speaker explicitly says the ball should be placed on the lower half of the racket when brushing.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Jjd8Mu1s0S0
+    start_ms: 21640
+    end_ms: 28480
+    url: https://www.youtube.com/watch?v=Jjd8Mu1s0S0&t=21s
+    segment_ids:
+    - Jjd8Mu1s0S0:00007
+    - Jjd8Mu1s0S0:00008
+    - Jjd8Mu1s0S0:00009
+- id: pE5PLAr9iaA-concept-backspin-serve-under-ball-contact-reviewed
+  evidence_type: explanation
+  excerpt: Contacting the lower part of the ball to produce backspin on serve and avoid popping the ball up.
+  reason: The speaker explains that upper-half contact pops the ball up while lower-half contact grips and lands, describing the mechanics of heavy backspin contact.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: pE5PLAr9iaA
+    start_ms: 490840
+    end_ms: 505960
+    url: https://www.youtube.com/watch?v=pE5PLAr9iaA&t=490s
+    segment_ids:
+    - pE5PLAr9iaA:00161
+    - pE5PLAr9iaA:00162
+    - pE5PLAr9iaA:00163
+    - pE5PLAr9iaA:00164
+    - pE5PLAr9iaA:00165
+- id: StQ86EhPFpo-concept-backspin-serve-under-ball-contact-reviewed
+  evidence_type: definition
+  excerpt: Contacting the lower half of the ball to produce heavier backspin on a push or similar short-table stroke.
+  reason: The speaker says to brush under the ball to increase spin and contact the lower half of the ball.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: StQ86EhPFpo
+    start_ms: 60920
+    end_ms: 68480
+    url: https://www.youtube.com/watch?v=StQ86EhPFpo&t=60s
+    segment_ids:
+    - StQ86EhPFpo:00026
+    - StQ86EhPFpo:00027
+- id: KpjJFdkUD54-concept-backspin-serve-under-ball-contact-reviewed
+  evidence_type: mistake
+  excerpt: Producing backspin requires contacting the lower half of the ball rather than brushing too high, since high contact naturally adds topspin.
+  reason: The speaker contrasts too-high contact with lower-half contact and notes that brushing the upper half still produces topspin.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: KpjJFdkUD54
+    start_ms: 424520
+    end_ms: 451360
+    url: https://www.youtube.com/watch?v=KpjJFdkUD54&t=424s
+    segment_ids:
+    - KpjJFdkUD54:00150
+    - KpjJFdkUD54:00151
+    - KpjJFdkUD54:00152
+    - KpjJFdkUD54:00157
+- id: byk-MQTWbBs-concept-backspin-serve-under-ball-contact-reviewed
+  evidence_type: explanation
+  excerpt: Creating backspin by brushing the bottom or lower part of the ball rather than striking it flat.
+  reason: The speaker explains that more spin comes from brushing the back or bottom of the ball and securing bottom contact before adding the wrist arc.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: byk-MQTWbBs
+    start_ms: 331240
+    end_ms: 360120
+    url: https://www.youtube.com/watch?v=byk-MQTWbBs&t=331s
+    segment_ids:
+    - byk-MQTWbBs:00129
+    - byk-MQTWbBs:00130
+    - byk-MQTWbBs:00131
+    - byk-MQTWbBs:00132
+    - byk-MQTWbBs:00133
+    - byk-MQTWbBs:00134
+    - byk-MQTWbBs:00135
+    - byk-MQTWbBs:00136
+    - byk-MQTWbBs:00137
+    - byk-MQTWbBs:00138
+    - byk-MQTWbBs:00139
+- id: Dj-oOxwQn1s-concept-backspin-serve-under-ball-contact-reviewed
+  evidence_type: definition
+  excerpt: To create strong backspin in a hook serve, contact should be made on the lower middle part of the ball rather than only the side or back.
+  reason: The speaker explicitly says to brush the lower middle part of the ball and that the actual contact must be there.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Dj-oOxwQn1s
+    start_ms: 129479
+    end_ms: 138720
+    url: https://www.youtube.com/watch?v=Dj-oOxwQn1s&t=129s
+    segment_ids:
+    - Dj-oOxwQn1s:00046
+    - Dj-oOxwQn1s:00047
+    - Dj-oOxwQn1s:00048
+    - Dj-oOxwQn1s:00049
+- id: xwKSNLxVaBg-concept-backspin-serve-under-ball-contact-reviewed
+  evidence_type: correction
+  excerpt: Contacting the underside or lower middle of the ball to create backspin; the speaker warns against this contact when trying to produce pure sidespin-topspin.
+  reason: States never to contact directly behind or underneath the ball when seeking the sidespin-topspin action.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: xwKSNLxVaBg
+    start_ms: 583760
+    end_ms: 593520
+    url: https://www.youtube.com/watch?v=xwKSNLxVaBg&t=583s
+    segment_ids:
+    - xwKSNLxVaBg:00202
+    - xwKSNLxVaBg:00203
+    - xwKSNLxVaBg:00204
+- id: byk-MQTWbBs-concept-backspin-serve-under-ball-contact-reviewed-5d82a795
+  evidence_type: explanation
+  excerpt: Creating backspin by brushing the bottom or lower part of the ball rather than striking it flat.
+  reason: The speaker explains that more spin comes from brushing the back or bottom of the ball and securing bottom contact before adding the wrist arc.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: byk-MQTWbBs
+    start_ms: 331240
+    end_ms: 360120
+    url: https://www.youtube.com/watch?v=byk-MQTWbBs&t=331s
+    segment_ids:
+    - byk-MQTWbBs:00129
+    - byk-MQTWbBs:00130
+    - byk-MQTWbBs:00131
+    - byk-MQTWbBs:00132
+    - byk-MQTWbBs:00133
+    - byk-MQTWbBs:00134
+    - byk-MQTWbBs:00135
+    - byk-MQTWbBs:00136
+    - byk-MQTWbBs:00137
+    - byk-MQTWbBs:00138
+    - byk-MQTWbBs:00139
+- id: Dj-oOxwQn1s-concept-backspin-serve-under-ball-contact-reviewed-2cf74f96
+  evidence_type: definition
+  excerpt: To create strong backspin in a hook serve, contact should be made on the lower middle part of the ball rather than only the side or back.
+  reason: The speaker explicitly says to brush the lower middle part of the ball and that the actual contact must be there.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Dj-oOxwQn1s
+    start_ms: 129479
+    end_ms: 138720
+    url: https://www.youtube.com/watch?v=Dj-oOxwQn1s&t=129s
+    segment_ids:
+    - Dj-oOxwQn1s:00046
+    - Dj-oOxwQn1s:00047
+    - Dj-oOxwQn1s:00048
+    - Dj-oOxwQn1s:00049
+- id: xwKSNLxVaBg-concept-backspin-serve-under-ball-contact-reviewed-a53ddcb9
+  evidence_type: correction
+  excerpt: Contacting the underside or lower middle of the ball to create backspin; the speaker warns against this contact when trying to produce pure sidespin-topspin.
+  reason: States never to contact directly behind or underneath the ball when seeking the sidespin-topspin action.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: xwKSNLxVaBg
+    start_ms: 583760
+    end_ms: 593520
+    url: https://www.youtube.com/watch?v=xwKSNLxVaBg&t=583s
+    segment_ids:
+    - xwKSNLxVaBg:00202
+    - xwKSNLxVaBg:00203
+    - xwKSNLxVaBg:00204
+- id: E6sGbY4sQH0-concept-backspin-serve-under-ball-contact-reviewed
+  evidence_type: mistake
+  excerpt: Contacting the bottom of the ball on a hook serve is identified as a major mistake because it makes the ball pop up, kills speed, and removes forward penetration.
+  reason: States that bottom-of-ball contact is the biggest mistake and explains the resulting pop-up, speed loss, and lack of forward penetration.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: E6sGbY4sQH0
+    start_ms: 0
+    end_ms: 19960
+    url: https://www.youtube.com/watch?v=E6sGbY4sQH0&t=0s
+    segment_ids:
+    - E6sGbY4sQH0:00000
+    - E6sGbY4sQH0:00001
+    - E6sGbY4sQH0:00002
+    - E6sGbY4sQH0:00003
+    - E6sGbY4sQH0:00004
+    - E6sGbY4sQH0:00005
+    - E6sGbY4sQH0:00007
+- id: PDFXww03DHM-concept-backspin-serve-under-ball-contact-reviewed
+  evidence_type: explanation
+  excerpt: For a backspin serve, contact the lower part of the ball so the racket face and brushing direction produce heavier backspin rather than forward roll.
+  reason: The speaker explains that for more spin the lower part of the racket should be higher at contact, and contrasts backward-moving vs forward-moving brush outcomes.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: PDFXww03DHM
+    start_ms: 1200
+    end_ms: 25600
+    url: https://www.youtube.com/watch?v=PDFXww03DHM&t=1s
+    segment_ids:
+    - PDFXww03DHM:00000
+    - PDFXww03DHM:00001
+    - PDFXww03DHM:00002
+    - PDFXww03DHM:00004
+    - PDFXww03DHM:00005
+    - PDFXww03DHM:00006
+    - PDFXww03DHM:00007
+- id: 6NvlGVPIC6E-concept-backspin-serve-under-ball-contact-reviewed
+  evidence_type: definition
+  excerpt: Contacting the lower part of the ball with a chopping action to produce stronger backspin.
+  reason: The speaker contrasts chopping contact with brushing contact and says chopping produces more spin for the serve.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 6NvlGVPIC6E
+    start_ms: 38880
+    end_ms: 48120
+    url: https://www.youtube.com/watch?v=6NvlGVPIC6E&t=38s
+    segment_ids:
+    - 6NvlGVPIC6E:00016
+    - 6NvlGVPIC6E:00018
+- id: Fe4y6uzl5GU-concept-backspin-serve-under-ball-contact-reviewed
+  evidence_type: definition
+  excerpt: To produce backspin, contact the lower middle or underside of the ball rather than the side, with a cutting motion.
+  reason: The speaker repeatedly instructs to aim for and brush the lower middle of the ball and contrasts this with side contact producing different spin.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Fe4y6uzl5GU
+    start_ms: 81760
+    end_ms: 92000
+    url: https://www.youtube.com/watch?v=Fe4y6uzl5GU&t=81s
+    segment_ids:
+    - Fe4y6uzl5GU:00031
+    - Fe4y6uzl5GU:00032
+    - Fe4y6uzl5GU:00033
+- id: zR5tddUgfGQ-concept-backspin-serve-under-ball-contact-reviewed
+  evidence_type: definition
+  excerpt: Creating backspin by contacting the lower half of the ball with a chopping action from top to bottom.
+  reason: The speaker says to contact the lower half of the ball and chop downward to generate fast backspin and speed.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: zR5tddUgfGQ
+    start_ms: 233960
+    end_ms: 263040
+    url: https://www.youtube.com/watch?v=zR5tddUgfGQ&t=233s
+    segment_ids:
+    - zR5tddUgfGQ:00097
+    - zR5tddUgfGQ:00098
+    - zR5tddUgfGQ:00099
+    - zR5tddUgfGQ:00100
+    - zR5tddUgfGQ:00101
+    - zR5tddUgfGQ:00106
+    - zR5tddUgfGQ:00107
+- id: hwT7cH6PbZQ-concept-backspin-serve-under-ball-contact-reviewed
+  evidence_type: explanation
+  excerpt: Contacting underneath the ball and guiding downward to create or handle backspin while keeping the ball low.
+  reason: The speaker explicitly instructs a guiding push against heavy backspin and says to guide the ball downwards with minimal added action.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: hwT7cH6PbZQ
+    start_ms: 423200
+    end_ms: 446633
+    url: https://www.youtube.com/watch?v=hwT7cH6PbZQ&t=423s
+    segment_ids:
+    - hwT7cH6PbZQ:00100
+    - hwT7cH6PbZQ:00101
+    - hwT7cH6PbZQ:00102
+    - hwT7cH6PbZQ:00103
+    - hwT7cH6PbZQ:00104
+- id: hwT7cH6PbZQ-concept-backspin-serve-under-ball-contact-reviewed-9a55a1b3
+  evidence_type: explanation
+  excerpt: Contacting underneath the ball and guiding downward to create or handle backspin while keeping the ball low.
+  reason: The speaker explicitly instructs a guiding push against heavy backspin and says to guide the ball downwards with minimal added action.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: hwT7cH6PbZQ
+    start_ms: 423200
+    end_ms: 446633
+    url: https://www.youtube.com/watch?v=hwT7cH6PbZQ&t=423s
+    segment_ids:
+    - hwT7cH6PbZQ:00100
+    - hwT7cH6PbZQ:00101
+    - hwT7cH6PbZQ:00102
+    - hwT7cH6PbZQ:00103
+    - hwT7cH6PbZQ:00104
+- id: QgG46RFoIcA-concept-backspin-serve-under-ball-contact-reviewed
+  evidence_type: definition
+  excerpt: To maximize backspin on a serve, contact the bottom of the ball with a slightly flatter brushing action rather than striking the side or hitting straight down.
+  reason: Speaker explicitly says the serve has more backspin and that the key is brushing the bottom of the ball with a slight angle.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: QgG46RFoIcA
+    start_ms: 49920
+    end_ms: 60080
+    url: https://www.youtube.com/watch?v=QgG46RFoIcA&t=49s
+    segment_ids:
+    - QgG46RFoIcA:00019
+    - QgG46RFoIcA:00020
+    - QgG46RFoIcA:00021
+    - QgG46RFoIcA:00022
+- id: VCsrR_8ULG4-concept-backspin-serve-under-ball-contact-reviewed
+  evidence_type: explanation
+  excerpt: Contacting lower on the ball and cutting downward or upward from a low setup to create backspin or underspin variants.
+  reason: The speaker says the shoulder and elbow must stay low, the contact point should be extremely low, and the ball should be contacted lower to brush upward or cut downward for spin.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: VCsrR_8ULG4
+    start_ms: 198200
+    end_ms: 217933
+    url: https://www.youtube.com/watch?v=VCsrR_8ULG4&t=198s
+    segment_ids:
+    - VCsrR_8ULG4:00057
+    - VCsrR_8ULG4:00058
+    - VCsrR_8ULG4:00059
+    - VCsrR_8ULG4:00063
+- id: VOX-e4IR2xg-concept-backspin-serve-under-ball-contact-reviewed
+  evidence_type: definition
+  excerpt: Producing backspin by striking the ball from above or with a downward motion so the racket contacts the ball underneath the center line.
+  reason: The speaker says the racket contacts the ball while moving downward and identifies the result as backspin.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: VOX-e4IR2xg
+    start_ms: 195239
+    end_ms: 206880
+    url: https://www.youtube.com/watch?v=VOX-e4IR2xg&t=195s
+    segment_ids:
+    - VOX-e4IR2xg:00064
+    - VOX-e4IR2xg:00065
+    - VOX-e4IR2xg:00066
+    - VOX-e4IR2xg:00067
+- id: xBlnTfR0eOY-concept-backspin-serve-under-ball-contact-reviewed
+  evidence_type: explanation
+  excerpt: To produce a real curve in a hook serve, the contact must start from underneath the ball rather than brushing the back of the ball.
+  reason: He repeatedly instructs to brush from the bottom, notes that upward brushing yields sidespin-top, and downward brushing yields sidespin-backspin.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: xBlnTfR0eOY
+    start_ms: 492300
+    end_ms: 512600
+    url: https://www.youtube.com/watch?v=xBlnTfR0eOY&t=492s
+    segment_ids:
+    - xBlnTfR0eOY:00152
+    - xBlnTfR0eOY:00157
+- id: 25Ohh2RJcWk-concept-backspin-serve-under-ball-contact-reviewed
+  evidence_type: definition
+  excerpt: For a backspin or underspin serve, contact the lower part of the ball rather than the upper half so the serve can generate spin.
+  reason: The speaker explicitly says to contact the lower part of the ball for underspin and warns that upper-half contact will not spin.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 25Ohh2RJcWk
+    start_ms: 220066
+    end_ms: 229900
+    url: https://www.youtube.com/watch?v=25Ohh2RJcWk&t=220s
+    segment_ids:
+    - 25Ohh2RJcWk:00051
+    - 25Ohh2RJcWk:00053
+- id: GOAyEFoSibE-concept-backspin-serve-under-ball-contact-reviewed
+  evidence_type: definition
+  excerpt: Contacting the lower half or bottom of the ball to produce backspin.
+  reason: The speaker explicitly says bottom or lower-middle contact imparts backspin.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: GOAyEFoSibE
+    start_ms: 632700
+    end_ms: 645900
+    url: https://www.youtube.com/watch?v=GOAyEFoSibE&t=632s
+    segment_ids:
+    - GOAyEFoSibE:00147
+    - GOAyEFoSibE:00149
+- id: WcQLHn2Fafw-concept-backspin-serve-under-ball-contact-reviewed
+  evidence_type: definition
+  excerpt: Contacting the lower part of the ball to create heavy backspin on a push or serve-like motion.
+  reason: The transcript directly identifies bottom-half contact as the way to produce heavy backspin and links it to contacting the bottom of the ball at the end of the stroke.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: WcQLHn2Fafw
+    start_ms: 321033
+    end_ms: 346833
+    url: https://www.youtube.com/watch?v=WcQLHn2Fafw&t=321s
+    segment_ids:
+    - WcQLHn2Fafw:00074
+    - WcQLHn2Fafw:00075
+    - WcQLHn2Fafw:00078
+- id: -iWLwSvOJ2U-concept-backspin-serve-under-ball-contact-reviewed
+  evidence_type: explanation
+  excerpt: Contacting under the ball to create or handle backspin, while recognizing that careless under-contact on receive makes the ball pop up.
+  reason: The speaker warns that contacting from below makes the ball pop up and later says for heavy backspin your hand must be lower than the ball.
+  confidence: 0.88
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: -iWLwSvOJ2U
+    start_ms: 70366
+    end_ms: 77566
+    url: https://www.youtube.com/watch?v=-iWLwSvOJ2U&t=70s
+    segment_ids:
+    - -iWLwSvOJ2U:00017
+    - -iWLwSvOJ2U:00018
+- id: yF675Tey81g-concept-downward-pressure-and-friction-on-serve-reviewed
+  evidence_type: explanation
+  excerpt: Using downward pressure at contact to increase friction, curve the ball, and make the serve more dangerous.
+  reason: The speaker repeatedly states that more friction and downward pressure create curve, while lack of friction makes the ball flat and easy to block.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: yF675Tey81g
+    start_ms: 154220
+    end_ms: 181520
+    url: https://www.youtube.com/watch?v=yF675Tey81g&t=154s
+    segment_ids:
+    - yF675Tey81g:00027
+    - yF675Tey81g:00028
+    - yF675Tey81g:00029
+    - yF675Tey81g:00033
+- id: kF3mAZD3GHs-concept-backspin-serve-under-ball-contact-reviewed
+  evidence_type: definition
+  excerpt: To produce heavy backspin, brush the side-bottom and pure bottom of the ball.
+  reason: The speaker gives the exact contact zones for side-backspin and backspin serves and links them to heavy spin generation.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: kF3mAZD3GHs
+    start_ms: 421800
+    end_ms: 438700
+    url: https://www.youtube.com/watch?v=kF3mAZD3GHs&t=421s
+    segment_ids:
+    - kF3mAZD3GHs:00089
+    - kF3mAZD3GHs:00090
+    - kF3mAZD3GHs:00091
+    - kF3mAZD3GHs:00092
+- id: ihrv3kBFb-U-concept-forearm-led-lift-against-heavy-backspin-reviewed
+  evidence_type: demonstration
+  excerpt: A forearm-led lifting action is used to handle heavy backspin and land the ball on the table, converting backspin into topspin.
+  reason: The opening claim and later demonstration both say heavy backspin can be lifted with the forearm and landed on the table, with the result described as converted topspin.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: ihrv3kBFb-U
+    start_ms: 414600
+    end_ms: 433333
+    url: https://www.youtube.com/watch?v=ihrv3kBFb-U&t=414s
+    segment_ids:
+    - ihrv3kBFb-U:00084
+    - ihrv3kBFb-U:00085
+    - ihrv3kBFb-U:00087
+- id: phTj82vlVqs-concept-backspin-serve-under-ball-contact-reviewed
+  evidence_type: definition
+  excerpt: Contacting and brushing the lower part of the ball to create backspin.
+  reason: The speaker says heavy spin comes from brushing the bottom of the ball more and brushing the bottom or just off the bottom of the ball.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: phTj82vlVqs
+    start_ms: 49466
+    end_ms: 54266
+    url: https://www.youtube.com/watch?v=phTj82vlVqs&t=49s
+    segment_ids:
+    - phTj82vlVqs:00013
+- id: IgnpsIZW3tM-concept-backspin-serve-under-ball-contact-reviewed
+  evidence_type: explanation
+  excerpt: On heavy backspin or underspin receives, contact under the ball and use a brushing motion rather than chopping straight down.
+  reason: The speaker says a straight chop into heavy backspin goes into the net, while a slight arc in the racket path lets you push back even heavy spin.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: IgnpsIZW3tM
+    start_ms: 0
+    end_ms: 13866
+    url: https://www.youtube.com/watch?v=IgnpsIZW3tM&t=0s
+    segment_ids:
+    - IgnpsIZW3tM:00000
+    - IgnpsIZW3tM:00001
+- id: y7Xd49MgdbQ-concept-downward-backswing-for-backspin-reviewed
+  evidence_type: definition
+  excerpt: Against backspin, the backswing should start downward rather than mainly backward so the player can generate friction and lift the ball effectively.
+  reason: The speaker directly states that heavier backspin needs a more downward backswing, that pulling back is wrong, and that most pushes require the racket to drop downward first.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: y7Xd49MgdbQ
+    start_ms: 348766
+    end_ms: 374133
+    url: https://www.youtube.com/watch?v=y7Xd49MgdbQ&t=348s
+    segment_ids:
+    - y7Xd49MgdbQ:00071
+    - y7Xd49MgdbQ:00073
+    - y7Xd49MgdbQ:00074
+    - y7Xd49MgdbQ:00075
+    - y7Xd49MgdbQ:00076
+- id: 6NvlGVPIC6E-concept-backspin-serve-under-ball-contact-codex-reviewed
+  evidence_type: explanation
+  excerpt: Chop down without flipping the wrist, and brush slightly under the ball even with a flatter angle.
+  reason: Chop down without flipping the wrist and brush slightly under the ball, even with a flatter angle.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 6NvlGVPIC6E
+    start_ms: 332640
+    end_ms: 343320
+    url: https://www.youtube.com/watch?v=6NvlGVPIC6E&t=332s
+    segment_ids:
+    - 6NvlGVPIC6E:00108
+    - 6NvlGVPIC6E:00109
+    - 6NvlGVPIC6E:00110
+    - 6NvlGVPIC6E:00111
+- id: E6sGbY4sQH0-concept-backspin-serve-under-ball-contact-codex-reviewed
+  evidence_type: mistake
+  excerpt: In hook serving, contacting the bottom of the ball makes it pop up, kills its speed, and leaves the first bounce without forward penetration.
+  reason: Bottom contact on a hook serve makes the ball pop up and kills its speed; the first bounce lacks forward penetration.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: E6sGbY4sQH0
+    start_ms: 0
+    end_ms: 15080
+    url: https://www.youtube.com/watch?v=E6sGbY4sQH0&t=0s
+    segment_ids:
+    - E6sGbY4sQH0:00000
+    - E6sGbY4sQH0:00001
+    - E6sGbY4sQH0:00002
+    - E6sGbY4sQH0:00003
+    - E6sGbY4sQH0:00004
+    - E6sGbY4sQH0:00005
 relations:
-  - relation_type: used_with
-    target_concept_id: concept-loose-grip-backhand-friction
-    sources: [{video_id: csJgHR7Daog, start_ms: 533360, end_ms: 538600, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=533s", segment_ids: ["csJgHR7Daog:00230", "csJgHR7Daog:00231"]}]
-    confidence: 0.99
-    review_status: approved
+- relation_type: used_with
+  target_concept_id: concept-loose-grip-backhand-friction
+  sources: [{video_id: csJgHR7Daog, start_ms: 533360, end_ms: 538600, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=533s", segment_ids: ["csJgHR7Daog:00230", "csJgHR7Daog:00231"]}]
+  confidence: 0.99
+  review_status: unreviewed

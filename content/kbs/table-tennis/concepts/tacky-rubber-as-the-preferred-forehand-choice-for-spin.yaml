@@ -1,25 +1,19 @@
 id: concept-tacky-rubber-as-the-preferred-forehand-choice-for-spin
 slug: tacky-rubber-as-the-preferred-forehand-choice-for-spin
-label: Tacky rubber as the preferred forehand choice for spin
+label: A speaker's recommendation for tacky forehand rubber
 aliases:
-  - use a tacky rubber on your forehand
-  - forehand tacky rubber
-short_definition: A tacky rubber is recommended on the forehand because it supports spin generation and better control of arc and power.
+- use a tacky rubber on your forehand
+- forehand tacky rubber
+short_definition: The speaker recommends tacky forehand rubber and calls grippy forehand rubber a shortcut that hinders development. The speaker then describes shots that may feel good but have weak spin on serves and loops.
 evidence_summary: >-
-  A tacky rubber is recommended on the forehand because it supports spin generation and better
-  control of arc and power.
-evidence_summary_source_hash: "sha256:9a310804fd39be46c93530f989c3bb5b9db58a472e025299ca3b36c8af03de93"
-evidence_summary_generator: "deterministic"
+  The speaker recommends tacky forehand rubber and criticizes grippy forehand rubber as a shortcut that hinders development. The following criticism concerns shots that may feel good yet lack significant spin on serves and loops.
 concept_type: equipment
 facets:
   category:
-    - equipment
+  - equipment
   side:
-    - forehand
-  level:
-    - beginner
-    - intermediate
-difficulty: intermediate
+  - forehand
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -30,54 +24,54 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: ae9urokFAJM-new-tacky-rubber-forehand-choice-for-spin-reviewed
-    evidence_type: explanation
-    excerpt: A tacky rubber is recommended on the forehand because it supports spin generation and better control of arc and power.
-    reason: The speaker explicitly recommends tacky rubber on the forehand and explains that it enables control of spin, arc, and power.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: ae9urokFAJM
-      start_ms: 91233
-      end_ms: 117333
-      url: https://www.youtube.com/watch?v=ae9urokFAJM&t=91s
-      segment_ids:
-        - ae9urokFAJM:00020
-        - ae9urokFAJM:00021
-        - ae9urokFAJM:00022
-        - ae9urokFAJM:00023
-        - ae9urokFAJM:00024
-  - id: 7JSZZSSjCqo-concept-tacky-rubber-as-the-preferred-forehand-choice-for-spin-reviewed
-    evidence_type: explanation
-    excerpt: The speaker argues that tacky forehand rubber is preferable because it supports looping potential and avoids the limitations of non-tacky forehand play.
-    reason: The speaker explicitly recommends tacky rubber on the forehand and says non-tacky rubber hinders looping development.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 7JSZZSSjCqo
-      start_ms: 112500
-      end_ms: 137066
-      url: https://www.youtube.com/watch?v=7JSZZSSjCqo&t=112s
-      segment_ids:
-        - 7JSZZSSjCqo:00028
-        - 7JSZZSSjCqo:00031
-        - 7JSZZSSjCqo:00033
-  - id: ae9urokFAJM-new-tacky-rubber-forehand-choice-for-spin-codex-reviewed
-    evidence_type: explanation
-    excerpt: The speaker recommends using tacky rubber on the forehand, explaining that grippy rubber produces weaker spin on serves and loops.
-    reason: This contiguous span directly supports the existing concept by explicitly recommending tacky forehand rubber and contrasting it with grippy rubber's weaker spin.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: ae9urokFAJM
-      start_ms: 91233
-      end_ms: 110466
-      url: https://www.youtube.com/watch?v=ae9urokFAJM&t=91s
-      segment_ids:
-        - ae9urokFAJM:00020
-        - ae9urokFAJM:00021
-        - ae9urokFAJM:00022
-        - ae9urokFAJM:00023
+- id: ae9urokFAJM-new-tacky-rubber-forehand-choice-for-spin-reviewed
+  evidence_type: explanation
+  excerpt: A tacky rubber is recommended on the forehand because it supports spin generation and better control of arc and power.
+  reason: The speaker explicitly recommends tacky rubber on the forehand and explains that it enables control of spin, arc, and power.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ae9urokFAJM
+    start_ms: 91233
+    end_ms: 117333
+    url: https://www.youtube.com/watch?v=ae9urokFAJM&t=91s
+    segment_ids:
+    - ae9urokFAJM:00020
+    - ae9urokFAJM:00021
+    - ae9urokFAJM:00022
+    - ae9urokFAJM:00023
+    - ae9urokFAJM:00024
+- id: 7JSZZSSjCqo-concept-tacky-rubber-as-the-preferred-forehand-choice-for-spin-reviewed
+  evidence_type: explanation
+  excerpt: The speaker argues that tacky forehand rubber is preferable because it supports looping potential and avoids the limitations of non-tacky forehand play.
+  reason: The speaker explicitly recommends tacky rubber on the forehand and says non-tacky rubber hinders looping development.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 7JSZZSSjCqo
+    start_ms: 112500
+    end_ms: 137066
+    url: https://www.youtube.com/watch?v=7JSZZSSjCqo&t=112s
+    segment_ids:
+    - 7JSZZSSjCqo:00028
+    - 7JSZZSSjCqo:00031
+    - 7JSZZSSjCqo:00033
+- id: ae9urokFAJM-new-tacky-rubber-forehand-choice-for-spin-codex-reviewed
+  evidence_type: explanation
+  excerpt: The speaker recommends tacky forehand rubber and calls grippy forehand rubber a shortcut that hinders development. The speaker then describes shots that may feel good but lack significant spin on serves and loops.
+  reason: The speaker recommends tacky forehand rubber, criticizes grippy forehand rubber as hindering development, and then criticizes weak spin on serves and loops.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: ae9urokFAJM
+    start_ms: 91233
+    end_ms: 110466
+    url: https://www.youtube.com/watch?v=ae9urokFAJM&t=91s
+    segment_ids:
+    - ae9urokFAJM:00020
+    - ae9urokFAJM:00021
+    - ae9urokFAJM:00022
+    - ae9urokFAJM:00023

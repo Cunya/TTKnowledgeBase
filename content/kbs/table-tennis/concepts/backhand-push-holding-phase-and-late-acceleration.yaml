@@ -1,19 +1,14 @@
 id: concept-backhand-push-holding-phase-and-late-acceleration
 slug: backhand-push-holding-phase-and-late-acceleration
-label: Backhand push holding phase and late acceleration
+label: Push holding phase and late acceleration
 aliases: []
-short_definition: In the backhand push, hold the ball during the first phase, then add a small acceleration in the second phase; accelerating from the beginning can send the ball long.
+short_definition: In a push, hold the ball during the first phase, then add a small acceleration in the second; accelerating from the beginning can send the ball long.
 evidence_summary: >-
-  In the backhand push, hold the ball during the first phase, then add a small acceleration in the
-  second phase; accelerating from the beginning can send the ball long.
-evidence_summary_source_hash: "sha256:47cf4497593a873d1b06fe318398689bcc65c0f1b0ea452f9deab5b9fc2b306e"
-evidence_summary_generator: "deterministic"
+  In a push, hold the ball during the first phase, then add a small acceleration in the second; accelerating from the beginning can send the ball long.
 concept_type: stroke
 facets:
   category:
-    - stroke
-  side:
-    - backhand
+  - stroke
 difficulty:
 review_status: approved
 generated_by:
@@ -25,21 +20,21 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: ae9urokFAJM-new-backhand-push-late-acceleration-two-phase-codex-reviewed
-    evidence_type: explanation
-    excerpt: In the backhand push, focus on holding the ball in the first phase, then accelerate in the second; accelerating from the beginning can push the ball long.
-    reason: These contiguous segments describe a sharp late action, identify it as a small late acceleration, warn that early acceleration can send the ball long, and explicitly contrast holding in the first phase with accelerating in the second. The topic is distinct from the supplied generic racket-head-acceleration concept.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: ae9urokFAJM
-      start_ms: 560800
-      end_ms: 587566
-      url: https://www.youtube.com/watch?v=ae9urokFAJM&t=560s
-      segment_ids:
-        - ae9urokFAJM:00124
-        - ae9urokFAJM:00125
-        - ae9urokFAJM:00126
-        - ae9urokFAJM:00127
-        - ae9urokFAJM:00128
+- id: ae9urokFAJM-new-backhand-push-late-acceleration-two-phase-codex-reviewed
+  evidence_type: explanation
+  excerpt: When pushing, hold the ball in the first phase, then accelerate in the second; a sharp finger action at the end creates a small, late acceleration, while accelerating from the beginning of the backswing can send the ball long.
+  reason: Hold the ball during the first phase of the push, then accelerate in the second. A sharp finger action at the end creates a small, late acceleration; starting the acceleration at the beginning of the backswing can send the ball long.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: ae9urokFAJM
+    start_ms: 560800
+    end_ms: 587566
+    url: https://www.youtube.com/watch?v=ae9urokFAJM&t=560s
+    segment_ids:
+    - ae9urokFAJM:00124
+    - ae9urokFAJM:00125
+    - ae9urokFAJM:00126
+    - ae9urokFAJM:00127
+    - ae9urokFAJM:00128

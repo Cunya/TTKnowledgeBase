@@ -1,35 +1,20 @@
 id: concept-forward-drive-against-backspin
 slug: forward-drive-against-backspin
-label: Forward drive against backspin
+label: Forward drive against backspin and short returns
 aliases:
-- drive forward into it
+- drive forward through the ball
+- lift then drive forward
 - forward-driving component
-- push forward
-- drive through the ball
-short_definition: A looping and attacking principle where the player meets backspin by driving forward through contact instead of only lifting vertically.
+short_definition: 'Forward drive in source-specific stroke cues: lifting then driving against backspin, solid contact through heavy backspin, and additional pushing or short-return examples with their own conditions.'
 evidence_summary: >-
-  When looping against heavy backspin, forward drive through solid contact and friction gives the ball enough trajectory to clear the net, whereas upward brushing alone is insufficient.
-evidence_summary_source_hash: "sha256:c09af52442dc1f0c9c3adeba7118cc9b8559ea22178f3f9597cfc51d6aa85c83"
-evidence_summary_generator: "deterministic"
-concept_type: tactic
+  A backspin lesson connects lifting with a subsequent forward drive. Other heavy-backspin lessons emphasize forward drive and solid contact with friction rather than only brushing upward. A short, sinking blocked-return example calls for moving in, opening the face and hitting forward rather than down; a separate pushing cue calls for forward momentum regardless of spin amount.
+concept_type: stroke
 facets:
   category:
-  - tactic
   - stroke
-  side:
-  - neutral
-  - forehand
-  - backhand
   spin:
   - backspin
-  - topspin
-  distance:
-  - close
-  - mid
-  level:
-  - beginner
-  - intermediate
-difficulty: beginner
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -140,7 +125,7 @@ evidence:
 - id: 1UthOchBWWc-concept-forward-drive-against-backspin-codex-reviewed
   evidence_type: explanation
   excerpt: Regardless of how much spin is on the ball, the stroke must have forward momentum. Instead of merely touching it, guide the ball forward; flattening the racket angle and actively pushing forward helps keep it on the table.
-  reason: This contiguous 17-second span directly explains the durable principle of driving or guiding forward through contact against different spins. It matches the supplied existing concept, so no new concept is needed.
+  reason: The lesson says pushes can go into the net when the player merely touches the ball through fear of spin, and recommends flattening the angle and actively guiding it forward.
   confidence: 0.98
   visual_status: not_visual
   review_status: approved
@@ -156,7 +141,7 @@ evidence:
 - id: fgtk9fxGTUw-concept-forward-drive-against-backspin-codex-reviewed
   evidence_type: explanation
   excerpt: For a backspin ball, first lift the backspin, then drive it like a topspin. Once you've brushed it, drive forward.
-  reason: These contiguous segments directly explain combining an upward lift against backspin with a subsequent forward drive, matching the existing concept.
+  reason: For the backspin ball, connect lifting with driving forward like a topspin stroke; after brushing, go forward rather than continuing upward.
   confidence: 0.99
   visual_status: transcript_inferred
   review_status: approved
@@ -174,7 +159,7 @@ evidence:
 - id: itzB36f9_R0-concept-forward-drive-against-backspin-codex-reviewed
   evidence_type: explanation
   excerpt: Against a short, sinking return, move in, avoid hitting down, and use an open racket face to hit forward.
-  reason: These contiguous segments directly explain moving forward on a short return, why hitting down sends the sinking ball into the net, and the required forward contact.
+  reason: For this short, sinking blocked return, move in, open the face and hit forward; hitting down is described as likely to send it into the net.
   confidence: 0.99
   visual_status: not_visual
   review_status: approved
@@ -190,8 +175,8 @@ evidence:
     - itzB36f9_R0:00144
 - id: mvVfwjdxe34-concept-forward-drive-against-backspin-codex-reviewed
   evidence_type: explanation
-  excerpt: Against heavy backspin, driving forward into the ball prevents weak, purely upward contact and helps lift the ball over the net.
-  reason: This contiguous 17.2-second span directly explains that brushing upward weakens contact and explicitly instructs the player to drive or push forward against heavy backspin.
+  excerpt: For the heavy-backspin example, the speaker warns that hard upward brushing can weaken contact and increase the risk of going into the net. Drive forward; the speaker’s next-try cue is a little wrist snap, earlier contact and a forward push, with the stated expectation of avoiding the net.
+  reason: The heavy-backspin cue is to drive forward; the speaker also recommends a little wrist snap and earlier contact, rather than brushing only upward.
   confidence: 0.99
   visual_status: transcript_inferred
   review_status: approved
@@ -207,8 +192,8 @@ evidence:
     - mvVfwjdxe34:00016
 - id: y7Xd49MgdbQ-concept-forward-drive-is-required-for-looping-codex-reviewed
   evidence_type: definition
-  excerpt: Against heavy backspin, drive through the ball with solid contact and friction; brushing upward alone produces a trajectory too short to clear the net.
-  reason: When looping against heavy backspin, forward drive through solid contact and friction gives the ball enough trajectory to clear the net, whereas upward brushing alone is insufficient.
+  excerpt: Against heavy backspin, drive through the ball with solid contact and friction; the lesson says brushing that lacks forward drive produces a trajectory too short to clear the net.
+  reason: The lesson says brushing without forward drive gives too short a trajectory, and calls for solid contact with friction and a forward drive against heavy backspin.
   confidence: 0.98
   visual_status: transcript_inferred
   review_status: approved

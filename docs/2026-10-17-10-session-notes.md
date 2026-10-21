@@ -1,0 +1,5 @@
+# Session notes — 2026-10-17 10 EEST
+
+Both sessions terminal:69014 audit exited0 (10articles/11calls/323259tokens/355.36s);37566 full release exited0 (301Python,nineNode,Ruff,validators,zeroAstrodiagnostics/635pages). No application;149/377supported,228pending. Do not poll or restart either completed session. Review saved proposals before source-grounded application; wrist alias-corrected private proposal still requires independent verification. Final docs build follows.
+
+Clarified quota policy: five-hour 80% with ten-minute grace; weekly 95% without grace. Shared guard and caller updated with backward-compatible omitted weekly setting; 20 focused tests and Ruff passed. Finite saved-checkpoint audit started, session69014, log media/audit-resume-2026-10-17-10.log. Poll this session rather than restart. Normal processing remains paused. The saved alias-corrected wrist proposal still requires independent verification and fresh primary review; do not automatically apply the old cached alias.

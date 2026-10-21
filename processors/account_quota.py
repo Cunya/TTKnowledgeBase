@@ -70,7 +70,7 @@ def read_account_rate_limits(timeout: float = 15) -> dict:
 
 
 def quota_block_reason(snapshot: dict, threshold: float, grace_minutes: float,
-                       now: float | None = None) -> str | None:
+                       now: float | None = None, weekly_threshold: float | None = None) -> str | None:
     """Only the five-hour window gets a near-reset exception."""
     now = time.time() if now is None else now
     buckets = snapshot.get("rateLimitsByLimitId")
@@ -95,7 +95,8 @@ def quota_block_reason(snapshot: dict, threshold: float, grace_minutes: float,
             if not 0 <= used <= 100 or duration <= 0 or reset <= now:
                 raise ValueError("Account quota snapshot invalid or expired")
             found = True
-            if used >= threshold and not (duration == 300 and reset - now <= grace_minutes * 60):
+            cutoff = weekly_threshold if duration == 10080 and weekly_threshold is not None else threshold
+            if used >= cutoff and not (duration == 300 and reset - now <= grace_minutes * 60):
                 return f"account quota {bucket_id} {duration:g}-minute window {used:g}% used"
     if not found:
         raise ValueError("Account quota windows unavailable")

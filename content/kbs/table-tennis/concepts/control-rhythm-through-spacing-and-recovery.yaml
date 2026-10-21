@@ -2,22 +2,17 @@ id: concept-control-rhythm-through-spacing-and-recovery
 slug: control-rhythm-through-spacing-and-recovery
 label: Control rhythm through spacing and recovery
 aliases:
-- smooth rhythm
-- rhythm feels
-- control rhythm
-short_definition: Use proper spacing and complete recovery to keep strokes smooth and rhythmic across rallies.
+- rhythm control
+- spacing and stroke timing
+- rally rhythm
+short_definition: Coordinating spacing and stroke timing to maintain rally rhythm, including room for the backswing and avoiding recovery before the stroke is finished.
 evidence_summary: >-
-  This contiguous span directly explains spacing for the backswing, timing the body's movement, and the errors caused by rushing underspin balls. These contiguous segments directly state that understanding spacing improves rhythm, supporting the existing durable topic without relying on omitted recovery claims. This contiguous passage directly explains that stroke stability, rhythm, sense of space, push rhythm, footwork transitions, and space control can be trained together. This contiguous 24.967-second span directly explains that mismatched player rhythms cause poor timing and that rushing progressively faster ends the rally.
-evidence_summary_source_hash: "sha256:630e3228f25beafed8fb60293fd06e501c2f91ca01ea6eda2a65b6f74401611b"
-evidence_summary_generator: "deterministic"
+  Leave backswing room and avoid rushing underspin balls. One lesson links rushed timing to starting recovery before finishing the stroke; another describes mismatched rhythms and progressively faster hitting ending rallies. A pushing-and-looping practice passage links rhythm and stability with footwork transitions, space control and stroke form.
 concept_type: fundamentals
 facets:
   category:
   - fundamentals
-  level:
-  - beginner
-  - intermediate
-difficulty: intermediate
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -270,8 +265,8 @@ evidence:
     - U6iP2eWxCDA:00039
 - id: 15ElcVXEJVU-concept-rhythm-control-through-spacing-and-recovery-codex-reviewed
   evidence_type: explanation
-  excerpt: Create space after each shot, leave room for the backswing, and avoid rushing underspin balls so timing and rhythm remain effective.
-  reason: This contiguous span directly explains spacing for the backswing, timing the body's movement, and the errors caused by rushing underspin balls.
+  excerpt: Create space after each shot and leave room for the backswing. Time forehand and backhand backswings using the body’s movement time; rushing underspin balls will not give good results.
+  reason: Create space after each shot for the backswing, use the body’s movement time, and avoid rushing underspin balls.
   confidence: 0.96
   visual_status: transcript_inferred
   review_status: approved
@@ -287,23 +282,25 @@ evidence:
     - 15ElcVXEJVU:00025
 - id: 7d1fUkOzCjM-concept-control-rhythm-through-spacing-and-recovery-codex-reviewed
   evidence_type: explanation
-  excerpt: Once you understand this sense of spacing, your rhythm will improve dramatically.
-  reason: These contiguous segments directly state that understanding spacing improves rhythm, supporting the existing durable topic without relying on omitted recovery claims.
+  excerpt: Understanding spacing improves rhythm; the lesson explains rushed timing as starting recovery before finishing the stroke.
+  reason: Avoid starting recovery before the stroke is finished; the lesson links this premature recovery to rushed timing.
   confidence: 0.98
   visual_status: not_visual
   review_status: approved
   source:
     video_id: 7d1fUkOzCjM
     start_ms: 279166
-    end_ms: 283433
+    end_ms: 288333
     url: https://www.youtube.com/watch?v=7d1fUkOzCjM&t=279s
     segment_ids:
     - 7d1fUkOzCjM:00095
     - 7d1fUkOzCjM:00096
+    - 7d1fUkOzCjM:00097
+    - 7d1fUkOzCjM:00098
 - id: bbZD31OGau8-concept-control-rhythm-through-spacing-and-recovery-codex-reviewed
   evidence_type: explanation
-  excerpt: Ensure stroke-framework stability while training rhythm, sense of space, push rhythm, footwork transitions, and space control.
-  reason: This contiguous passage directly explains that stroke stability, rhythm, sense of space, push rhythm, footwork transitions, and space control can be trained together.
+  excerpt: First ensure stroke-framework stability, rhythm and a sense of space. The lesson recommends pushing mixed with looping to train push rhythm, stability, footwork transitions, space control and stroke form.
+  reason: Pushing mixed with looping is described as harder than serve-and-attack practice and useful for training rhythm, stability, transitions, space control and stroke form.
   confidence: 0.98
   visual_status: transcript_inferred
   review_status: approved
@@ -325,8 +322,8 @@ evidence:
     - bbZD31OGau8:00152
 - id: J7Lm5IL-ggs-concept-control-rhythm-through-spacing-and-recovery-codex-reviewed
   evidence_type: explanation
-  excerpt: Rally stability depends on matching the rhythm between two players; when one player is faster or slower, timing breaks down, and rushing faster destroys the rally rhythm.
-  reason: This contiguous 24.967-second span directly explains that mismatched player rhythms cause poor timing and that rushing progressively faster ends the rally.
+  excerpt: 'The lesson explains that mismatched rhythms can make two players uncomfortable: when one is fast and the other a beat slow, timing suffers. Rushing faster and faster destroys the rhythm and ends the rally after a few shots.'
+  reason: The lesson describes mismatched player rhythms causing timing problems, and progressively faster hitting disrupting rhythm and ending the rally after a few shots.
   confidence: 0.96
   visual_status: transcript_inferred
   review_status: approved

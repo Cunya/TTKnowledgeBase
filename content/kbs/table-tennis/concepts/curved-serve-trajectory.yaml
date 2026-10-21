@@ -1,26 +1,18 @@
 id: concept-curved-serve-trajectory
 slug: curved-serve-trajectory
-label: Curved serve trajectory
+label: Curved serving motion and ball path
 aliases:
-- curved path
-- serve trajectory curve
-short_definition: A hook serve needs a curved arm and body path, not a simple forward-then-downward swing, so the force direction can wrap around the ball.
+- curved serving motion
+- sideways-curving serve path
+short_definition: 'The serve explanations address both movement and ball flight: a forward-pivot cue, a curved flick with a light tap, and a sideways-curving ball that makes the receiver adjust.'
 evidence_summary: >-
-  A sideways-curving serve deviates from the opponent’s expected target, requiring adjustment and making the return more difficult.
-evidence_summary_source_hash: "sha256:75e4d28d75fe2265d60aee988bc773d2ecf68c5b0c6491069f726f5bb43afed3"
-evidence_summary_generator: "deterministic"
+  One explanation says 'The movement follows this arc' and calls for a forward pivot corresponding to the serve trajectory, rather than a straight forward or downward hit. Another calls for a curved flick, subtle force, and a light tap. A third explains that a sideways-curving serve makes the opponent adjust and is harder to return than a straight ball.
 concept_type: stroke
 facets:
   category:
   - stroke
   - fundamentals
-  side:
-  - neutral
-  spin:
-  - sidespin
-  level:
-  - advanced
-difficulty: advanced
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -177,8 +169,8 @@ evidence:
     - dg0kTVGE8qQ:00145
 - id: 7Zz_cVWrgng-concept-curved-serve-trajectory-codex-reviewed
   evidence_type: explanation
-  excerpt: The hook-serve movement follows an arc, and its trajectory is neither straightforward nor linear.
-  reason: These contiguous segments describe the hook-serve movement as an arc and explicitly distinguish its trajectory from a straightforward or linear path.
+  excerpt: The instruction is 'The movement follows this arc', contrasted with stepping forward or hitting forward or downward. A forward pivot is needed; the speaker says this pivot corresponds to the serve trajectory, which is neither straightforward nor linear.
+  reason: The instruction 'The movement follows this arc' is followed by a required forward pivot, which the speaker connects to a serve trajectory described as neither straightforward nor linear.
   confidence: 0.99
   visual_status: transcript_inferred
   review_status: approved
@@ -197,8 +189,8 @@ evidence:
     - 7Zz_cVWrgng:00116
 - id: HmoqZLuY1Ik-concept-curved-serve-trajectory-codex-reviewed
   evidence_type: explanation
-  excerpt: The serve uses a curved flick with a subtle, light force.
-  reason: This contiguous serving moment explicitly describes the required curved flick and how to apply it. The existing concept covers the same durable topic; the selected span does not directly support specific spin types or an intermediate difficulty level.
+  excerpt: The serving explanation calls for a curved flick, then subtle force and a light tap, with the cue to 'keep it in front of you'.
+  reason: Use a curved flick followed by subtle force and a light tap; the accompanying position cue is to 'keep it in front of you'.
   confidence: 0.96
   visual_status: transcript_inferred
   review_status: approved
@@ -216,7 +208,7 @@ evidence:
 - id: pxxgpWNbXSM-concept-curved-serve-trajectory-codex-reviewed
   evidence_type: explanation
   excerpt: A straight serve is easy for the opponent to aim at, but a serve that curves to the side is less straightforward to hit and becomes difficult to return.
-  reason: A sideways-curving serve deviates from the opponent’s expected target, requiring adjustment and making the return more difficult.
+  reason: A straight serve is easy to aim at. If the ball deviates or curves sideways, the opponent needs to adjust, making it harder to return.
   confidence: 0.97
   visual_status: transcript_inferred
   review_status: approved

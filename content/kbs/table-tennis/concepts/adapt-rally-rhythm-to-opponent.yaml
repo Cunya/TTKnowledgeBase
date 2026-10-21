@@ -1,477 +1,492 @@
 id: concept-adapt-rally-rhythm-to-opponent
 slug: adapt-rally-rhythm-to-opponent
 label: Adapt rally rhythm to the opponent
-aliases: [break the opponent's rhythm, opponent-specific pace variation]
-short_definition: Change depth, pace, spin, and stroke length according to the opponent's preferred rally pattern.
+aliases:
+- match the opponent’s rhythm
+short_definition: Match your rhythm to the opponent’s tempo, going faster with fast balls and slower with slow balls.
 evidence_summary: >-
-  Rally control depends on matching your tempo to the opponent’s incoming speed before trying to
-  impose extra power or variation. Your footwork, backswing, body rhythm, and release should sync
-  to the ball’s pace so you can use the opponent’s rhythm instead of fighting it. By changing
-  spin, timing, and rhythm in response to different styles, you can unsettle players who are
-  comfortable with predictable topspin exchanges.
-evidence_summary_source_hash: "sha256:6cb37ff48f1edf9300ed4f335318dc0664f0133a505fc6ce7a9ef3c19862bf70"
-evidence_summary_generator: "codex"
-detailed_definition: Repeating one comfortable rhythm helps specialists anticipate the next ball. Against fast attackers, alternate pace and depth. Against stable blockers, introduce awkward backspin and sudden compact attacks. Against pressure-oriented penhold play, shorten contact so the opponent cannot borrow a full stroke's spin and power.
+  Match stroke and backswing rhythm to the opponent’s, going fast when it is fast and slow when it is slow; avoid rushing the backswing. Against penhold pressure, use compact, short contact, since a full stroke can let the opponent borrow spin and return it heavier.
+detailed_definition: 'Match your stroke and backswing rhythm to the opponent’s: go fast when it is fast and slow when it is slow, without rushing the backswing. Against penhold pressure, use compact, short contact; a full stroke can let the opponent borrow your spin and return it heavier.'
 concept_type: strategy
-facets: {category: [tactic], side: [neutral], level: [intermediate, advanced]}
-difficulty: intermediate
+facets:
+  category:
+  - tactic
+  side:
+  - neutral
+difficulty:
 review_status: approved
 evidence:
-  - id: vary-rhythm-against-attacker-1-part-1-1
-    evidence_type: explanation
-    excerpt: Attackers who thrive on slow balls are vulnerable to changes of rhythm.
-    reason: Gives a concrete variation pattern against repeated acceleration.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: BToLYdKLIMM, start_ms: 595120, end_ms: 618079, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=595s", segment_ids: &id001 ["BToLYdKLIMM:00221", "BToLYdKLIMM:00222", "BToLYdKLIMM:00223", "BToLYdKLIMM:00224", "BToLYdKLIMM:00225", "BToLYdKLIMM:00226", "BToLYdKLIMM:00227"]}
-  - id: vary-rhythm-against-attacker-1-part-1-2
-    evidence_type: explanation
-    excerpt: Alternate heavy and light balls and change placement so the attacker cannot settle.
-    reason: Gives a concrete variation pattern against repeated acceleration.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: BToLYdKLIMM, start_ms: 615680, end_ms: 629839, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=615s", segment_ids: ["BToLYdKLIMM:00228", "BToLYdKLIMM:00229", "BToLYdKLIMM:00230", "BToLYdKLIMM:00231"]}
-  - id: vary-rhythm-against-attacker-1-part-2
-    evidence_type: explanation
-    excerpt: 'Apply the variation deliberately: mix flicks and punches instead of feeding one repeatable tempo.'
-    reason: Gives a concrete variation pattern against repeated acceleration.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: BToLYdKLIMM, start_ms: 626959, end_ms: 645600, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=626s", segment_ids: ["BToLYdKLIMM:00232", "BToLYdKLIMM:00233", "BToLYdKLIMM:00234", "BToLYdKLIMM:00235", "BToLYdKLIMM:00236"]}
-  - id: disrupt-stable-blocker-2-part-1-1
-    evidence_type: explanation
-    excerpt: Recognize the steady blocker who rarely attacks but absorbs repeated topspin reliably.
-    reason: Targets the opponent's comfort with predictable topspin pace.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: BToLYdKLIMM, start_ms: 643200, end_ms: 670079, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=643s", segment_ids: ["BToLYdKLIMM:00237", "BToLYdKLIMM:00238", "BToLYdKLIMM:00239", "BToLYdKLIMM:00240", "BToLYdKLIMM:00241", "BToLYdKLIMM:00242", "BToLYdKLIMM:00243"]}
-  - id: disrupt-stable-blocker-2-part-1-2
-    evidence_type: explanation
-    excerpt: Start the exchange with backspin and a push rally rather than feeding the preferred topspin pattern.
-    reason: Targets the opponent's comfort with predictable topspin pace.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: BToLYdKLIMM, start_ms: 667360, end_ms: 676720, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=667s", segment_ids: ["BToLYdKLIMM:00244", "BToLYdKLIMM:00245", "BToLYdKLIMM:00246"]}
-  - id: disrupt-stable-blocker-2-part-2
-    evidence_type: explanation
-    excerpt: Use awkward, spinny pushes to expose the weaker ball after their first block.
-    reason: Targets the opponent's comfort with predictable topspin pace.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: BToLYdKLIMM, start_ms: 674079, end_ms: 687760, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=674s", segment_ids: ["BToLYdKLIMM:00247", "BToLYdKLIMM:00248", "BToLYdKLIMM:00249", "BToLYdKLIMM:00250", "BToLYdKLIMM:00251"]}
-  - id: disrupt-stable-blocker-2-part-3-1
-    evidence_type: explanation
-    excerpt: Use a sudden compact punch instead of another predictable flick or long power stroke.
-    reason: Targets the opponent's comfort with predictable topspin pace.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: BToLYdKLIMM, start_ms: 685519, end_ms: 696920, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=685s", segment_ids: ["BToLYdKLIMM:00252", "BToLYdKLIMM:00253", "BToLYdKLIMM:00254", "BToLYdKLIMM:00255"]}
-  - id: disrupt-stable-blocker-2-part-3-2
-    evidence_type: explanation
-    excerpt: Steady power is familiar to the blocker; the effective disruption is the sudden change.
-    reason: Targets the opponent's comfort with predictable topspin pace.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: BToLYdKLIMM, start_ms: 701200, end_ms: 717360, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=701s", segment_ids: ["BToLYdKLIMM:00256", "BToLYdKLIMM:00257", "BToLYdKLIMM:00258", "BToLYdKLIMM:00259", "BToLYdKLIMM:00260"]}
-  - id: shorten-against-penhold-pressure-3-part-1
-    evidence_type: explanation
-    excerpt: Against a heavy penhold press, shorten the flick to roughly two-thirds of the full motion.
-    reason: Adapts stroke length to a sinking, pressure-oriented return pattern.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source: {video_id: BToLYdKLIMM, start_ms: 733279, end_ms: 754920, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=733s", segment_ids: ["BToLYdKLIMM:00267", "BToLYdKLIMM:00268", "BToLYdKLIMM:00269", "BToLYdKLIMM:00270", "BToLYdKLIMM:00271", "BToLYdKLIMM:00272", "BToLYdKLIMM:00273", "BToLYdKLIMM:00274", "BToLYdKLIMM:00275"]}
-  - id: shorten-against-penhold-pressure-3-part-2
-    evidence_type: explanation
-    excerpt: A compact contact denies the opponent the full stroke and spin they use to press back.
-    reason: Adapts stroke length to a sinking, pressure-oriented return pattern.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: BToLYdKLIMM, start_ms: 763600, end_ms: 790639, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=763s", segment_ids: ["BToLYdKLIMM:00277", "BToLYdKLIMM:00278", "BToLYdKLIMM:00279", "BToLYdKLIMM:00280", "BToLYdKLIMM:00281", "BToLYdKLIMM:00282", "BToLYdKLIMM:00283", "BToLYdKLIMM:00284"]}
-  - id: 0eMDTeOBR5A-cand-adapt-rally-rhythm-to-opponent-1
-    evidence_type: explanation
-    excerpt: Defines rhythm as matching the opponent's tempo and gives fast-versus-slow examples.
-    reason: The player should synchronize footwork, backswing, body tempo, and release with the opponent's incoming ball speed and rally tempo before trying to add power or variation.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 0eMDTeOBR5A
-      start_ms: 82360
-      end_ms: 112200
-      url: https://www.youtube.com/watch?v=0eMDTeOBR5A&t=82s
-      segment_ids:
-        - 0eMDTeOBR5A:00031
-        - 0eMDTeOBR5A:00032
-        - 0eMDTeOBR5A:00033
-        - 0eMDTeOBR5A:00034
-        - 0eMDTeOBR5A:00035
-        - 0eMDTeOBR5A:00036
-        - 0eMDTeOBR5A:00037
-        - 0eMDTeOBR5A:00038
-        - 0eMDTeOBR5A:00039
-        - 0eMDTeOBR5A:00040
-        - 0eMDTeOBR5A:00041
-  - id: 0eMDTeOBR5A-cand-adapt-rally-rhythm-to-opponent-2
-    evidence_type: explanation
-    excerpt: States that footwork, backswing, and release all need to sync with the opponent's return, and power comes after synchronization.
-    reason: The player should synchronize footwork, backswing, body tempo, and release with the opponent's incoming ball speed and rally tempo before trying to add power or variation.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 0eMDTeOBR5A
-      start_ms: 188200
-      end_ms: 205080
-      url: https://www.youtube.com/watch?v=0eMDTeOBR5A&t=188s
-      segment_ids:
-        - 0eMDTeOBR5A:00074
-        - 0eMDTeOBR5A:00075
-        - 0eMDTeOBR5A:00076
-        - 0eMDTeOBR5A:00077
-        - 0eMDTeOBR5A:00078
-        - 0eMDTeOBR5A:00079
-        - 0eMDTeOBR5A:00080
-  - id: 0eMDTeOBR5A-cand-adapt-rally-rhythm-to-opponent-3
-    evidence_type: explanation
-    excerpt: States that footwork, backswing, and release all need to sync with the opponent's return, and power comes after synchronization.
-    reason: The player should synchronize footwork, backswing, body tempo, and release with the opponent's incoming ball speed and rally tempo before trying to add power or variation.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 0eMDTeOBR5A
-      start_ms: 252080
-      end_ms: 278240
-      url: https://www.youtube.com/watch?v=0eMDTeOBR5A&t=252s
-      segment_ids:
-        - 0eMDTeOBR5A:00089
-        - 0eMDTeOBR5A:00090
-        - 0eMDTeOBR5A:00091
-        - 0eMDTeOBR5A:00093
-        - 0eMDTeOBR5A:00094
-        - 0eMDTeOBR5A:00095
-  - id: 0eMDTeOBR5A-cand-adapt-rally-rhythm-to-opponent-4
-    evidence_type: explanation
-    excerpt: States that footwork, backswing, and release all need to sync with the opponent's return, and power comes after synchronization.
-    reason: The player should synchronize footwork, backswing, body tempo, and release with the opponent's incoming ball speed and rally tempo before trying to add power or variation.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 0eMDTeOBR5A
-      start_ms: 285000
-      end_ms: 293440
-      url: https://www.youtube.com/watch?v=0eMDTeOBR5A&t=285s
-      segment_ids:
-        - 0eMDTeOBR5A:00096
-        - 0eMDTeOBR5A:00097
-        - 0eMDTeOBR5A:00098
-  - id: f7uZPRPIwpU-concept-adapt-rally-rhythm-to-opponent-1
-    evidence_type: definition
-    excerpt: Match the rhythm and frequency of your stroke preparation to the opponent's incoming ball speed and tempo instead of using one fixed backswing rhythm.
-    reason: The speaker explicitly teaches matching backswing rhythm and motion frequency to the opponent's rhythm and speed.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: f7uZPRPIwpU
-      start_ms: 89440
-      end_ms: 119400
-      url: https://www.youtube.com/watch?v=f7uZPRPIwpU&t=89s
-      segment_ids:
-        - f7uZPRPIwpU:00036
-        - f7uZPRPIwpU:00037
-        - f7uZPRPIwpU:00039
-        - f7uZPRPIwpU:00042
-        - f7uZPRPIwpU:00044
-        - f7uZPRPIwpU:00045
-  - id: f7uZPRPIwpU-concept-adapt-rally-rhythm-to-opponent-2
-    evidence_type: definition
-    excerpt: Match the rhythm and frequency of your stroke preparation to the opponent's incoming ball speed and tempo instead of using one fixed backswing rhythm.
-    reason: The speaker explicitly teaches matching backswing rhythm and motion frequency to the opponent's rhythm and speed.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: f7uZPRPIwpU
-      start_ms: 140640
-      end_ms: 159959
-      url: https://www.youtube.com/watch?v=f7uZPRPIwpU&t=140s
-      segment_ids:
-        - f7uZPRPIwpU:00055
-        - f7uZPRPIwpU:00056
-        - f7uZPRPIwpU:00062
-        - f7uZPRPIwpU:00063
-  - id: f7uZPRPIwpU-concept-adapt-rally-rhythm-to-opponent-3
-    evidence_type: definition
-    excerpt: Match the rhythm and frequency of your stroke preparation to the opponent's incoming ball speed and tempo instead of using one fixed backswing rhythm.
-    reason: The speaker explicitly teaches matching backswing rhythm and motion frequency to the opponent's rhythm and speed.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: f7uZPRPIwpU
-      start_ms: 231480
-      end_ms: 255360
-      url: https://www.youtube.com/watch?v=f7uZPRPIwpU&t=231s
-      segment_ids:
-        - f7uZPRPIwpU:00087
-        - f7uZPRPIwpU:00089
-        - f7uZPRPIwpU:00091
-        - f7uZPRPIwpU:00096
-  - id: lO0H9Cs6JEo-concept-adapt-rally-rhythm-to-opponent-reviewed
-    evidence_type: explanation
-    excerpt: Matching or changing tempo so your rhythm follows or disrupts the opponent's pace.
-    reason: The speaker says to adjust initiation speed to the opponent's rhythm and states receive rhythm is critical.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: lO0H9Cs6JEo
-      start_ms: 338880
-      end_ms: 360960
-      url: https://www.youtube.com/watch?v=lO0H9Cs6JEo&t=338s
-      segment_ids:
-        - lO0H9Cs6JEo:00094
-        - lO0H9Cs6JEo:00101
-  - id: pE5PLAr9iaA-concept-adapt-rally-rhythm-to-opponent-reviewed
-    evidence_type: explanation
-    excerpt: Changing pace, height, and rhythm so you can handle multiple ball rhythms and avoid being frozen by variation.
-    reason: The speaker says players must adapt to different ball rhythms, practice with partners varying height and pace, and use rhythm variation against slower and faster styles.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: pE5PLAr9iaA
-      start_ms: 138320
-      end_ms: 159600
-      url: https://www.youtube.com/watch?v=pE5PLAr9iaA&t=138s
-      segment_ids:
-        - pE5PLAr9iaA:00042
-        - pE5PLAr9iaA:00048
-        - pE5PLAr9iaA:00049
-        - pE5PLAr9iaA:00050
-  - id: o6OyHBmkF2U-concept-adapt-rally-rhythm-to-opponent-reviewed
-    evidence_type: explanation
-    excerpt: Changing pace, depth, and timing so the opponent cannot settle into a comfortable rhythm or position.
-    reason: The speaker defines rhythm variation with sequences like fast-fast-slow-fast and explains adjusting depth and timing based on where the opponent stands.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: o6OyHBmkF2U
-      start_ms: 176560
-      end_ms: 206120
-      url: https://www.youtube.com/watch?v=o6OyHBmkF2U&t=176s
-      segment_ids:
-        - o6OyHBmkF2U:00064
-        - o6OyHBmkF2U:00065
-        - o6OyHBmkF2U:00066
-        - o6OyHBmkF2U:00067
-        - o6OyHBmkF2U:00069
-        - o6OyHBmkF2U:00070
-        - o6OyHBmkF2U:00071
-  - id: kv80YX__eJE-concept-adapt-rally-rhythm-to-opponent-reviewed
-    evidence_type: explanation
-    excerpt: Using placement and pace choices to control rally rhythm and exploit the opponent's timing and position.
-    reason: The speaker says rallies are about controlling rhythm and using the opponent's pace.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: kv80YX__eJE
-      start_ms: 133333
-      end_ms: 149233
-      url: https://www.youtube.com/watch?v=kv80YX__eJE&t=133s
-      segment_ids:
-        - kv80YX__eJE:00030
-        - kv80YX__eJE:00032
-        - kv80YX__eJE:00033
-  - id: h5jUJL_P82w-concept-adapt-rally-rhythm-to-opponent-reviewed
-    evidence_type: explanation
-    excerpt: Changing pace, spin, and placement to see what the opponent cannot handle, instead of repeating one pattern.
-    reason: The speaker uses the fruit-platter analogy to recommend trying different spins and rhythms until the opponent cannot handle them.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: h5jUJL_P82w
-      start_ms: 741066
-      end_ms: 765400
-      url: https://www.youtube.com/watch?v=h5jUJL_P82w&t=741s
-      segment_ids:
-        - h5jUJL_P82w:00166
-        - h5jUJL_P82w:00167
-        - h5jUJL_P82w:00168
-        - h5jUJL_P82w:00169
-        - h5jUJL_P82w:00170
-        - h5jUJL_P82w:00171
-  - id: 0XhKjyXoCO4-concept-adapt-rally-rhythm-to-opponent-reviewed
-    evidence_type: explanation
-    excerpt: Use placement changes and pressure to disturb the opponent's balance and timing before changing direction or attacking.
-    reason: The speaker says to keep the opponent moving and constantly shifting weight to create difficulty.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 0XhKjyXoCO4
-      start_ms: 16100
-      end_ms: 25166
-      url: https://www.youtube.com/watch?v=0XhKjyXoCO4&t=16s
-      segment_ids:
-        - 0XhKjyXoCO4:00007
-        - 0XhKjyXoCO4:00008
-        - 0XhKjyXoCO4:00009
-        - 0XhKjyXoCO4:00010
-  - id: 9WPYbE6DoTo-concept-adapt-rally-rhythm-to-opponent-reviewed
-    evidence_type: explanation
-    excerpt: Vary pace and rhythm to make the opponent uncomfortable and prevent them from settling into one pattern.
-    reason: The transcript explicitly describes keeping an opponent moving and practicing changing the rhythm so match shots can be handled.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 9WPYbE6DoTo
-      start_ms: 133966
-      end_ms: 153900
-      url: https://www.youtube.com/watch?v=9WPYbE6DoTo&t=133s
-      segment_ids:
-        - 9WPYbE6DoTo:00013
-        - 9WPYbE6DoTo:00015
-        - 9WPYbE6DoTo:00016
-  - id: U4ufFJg5s4A-concept-adapt-rally-rhythm-to-opponent-reviewed
-    evidence_type: explanation
-    excerpt: Changing pace or timing in response to the opponent's rhythm or intensity.
-    reason: The speaker says to change rhythm when the opponent suddenly increases power or speed, and to match the opponent's pace appropriately.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: U4ufFJg5s4A
-      start_ms: 236233
-      end_ms: 258333
-      url: https://www.youtube.com/watch?v=U4ufFJg5s4A&t=236s
-      segment_ids:
-        - U4ufFJg5s4A:00109
-        - U4ufFJg5s4A:00110
-        - U4ufFJg5s4A:00111
-        - U4ufFJg5s4A:00115
-        - U4ufFJg5s4A:00116
-        - U4ufFJg5s4A:00117
-        - U4ufFJg5s4A:00118
-  - id: fYJgxN1x7QM-concept-adapt-rally-rhythm-to-opponent-reviewed
-    evidence_type: explanation
-    excerpt: Changing your timing and tempo to fit the ball speed and rhythm the opponent gives you.
-    reason: The speaker repeatedly says to match the game's rhythm, quicken for fast balls, wait for slow balls, and adapt to changes in pace.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: fYJgxN1x7QM
-      start_ms: 128433
-      end_ms: 157200
-      url: https://www.youtube.com/watch?v=fYJgxN1x7QM&t=128s
-      segment_ids:
-        - fYJgxN1x7QM:00028
-        - fYJgxN1x7QM:00029
-        - fYJgxN1x7QM:00030
-        - fYJgxN1x7QM:00031
-        - fYJgxN1x7QM:00033
-  - id: qPpVIKNWMwY-candidate-adapt-timing-to-opponent-rhythm-reviewed
-    evidence_type: explanation
-    excerpt: Players should adjust swing timing and rhythm to match different opponents and hitting partners instead of using one fixed tempo.
-    reason: The speaker says different partners and opponents require different timing because their pace, defenses, techniques, systems, and rhythms vary.
-    confidence: 0.91
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: qPpVIKNWMwY
-      start_ms: 595900
-      end_ms: 621500
-      url: https://www.youtube.com/watch?v=qPpVIKNWMwY&t=595s
-      segment_ids:
-        - qPpVIKNWMwY:00105
-        - qPpVIKNWMwY:00106
-        - qPpVIKNWMwY:00107
-        - qPpVIKNWMwY:00108
-  - id: U1zg0xsCqMc-concept-adapt-rally-rhythm-to-opponent-reviewed
-    evidence_type: explanation
-    excerpt: Varying serve or rally rhythm to disrupt the opponent’s timing and prevent them from syncing with you.
-    reason: The speaker frames the serve rhythm as slow-stop-fast and explicitly says the goal is to break the opponent’s timing and control the rhythm.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: U1zg0xsCqMc
-      start_ms: 514560
-      end_ms: 543000
-      url: https://www.youtube.com/watch?v=U1zg0xsCqMc&t=514s
-      segment_ids:
-        - U1zg0xsCqMc:00238
-        - U1zg0xsCqMc:00239
-        - U1zg0xsCqMc:00240
-        - U1zg0xsCqMc:00241
-        - U1zg0xsCqMc:00242
-        - U1zg0xsCqMc:00243
-        - U1zg0xsCqMc:00244
-        - U1zg0xsCqMc:00245
-        - U1zg0xsCqMc:00246
-        - U1zg0xsCqMc:00247
-        - U1zg0xsCqMc:00248
-  - id: 9WPYbE6DoTo-concept-adapt-rally-rhythm-to-opponent-codex-reviewed
-    evidence_type: explanation
-    excerpt: Practice changing the rhythm by keeping the opponent moving instead of letting them stand still, so you can handle these types of shots in matches.
-    reason: These contiguous segments explain keeping the opponent moving during practice, illustrate preventing a stationary backhand-topspin exchange, and explicitly connect rhythm changes to handling similar match shots.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 9WPYbE6DoTo
-      start_ms: 133966
-      end_ms: 153900
-      url: https://www.youtube.com/watch?v=9WPYbE6DoTo&t=133s
-      segment_ids:
-        - 9WPYbE6DoTo:00013
-        - 9WPYbE6DoTo:00014
-        - 9WPYbE6DoTo:00015
-        - 9WPYbE6DoTo:00016
-  - id: lO0H9Cs6JEo-concept-adapt-rally-rhythm-to-opponent-codex-reviewed
-    evidence_type: explanation
-    excerpt: "The speaker explains that rhythm should follow the opponent's pace: when the opponent is fast, play fast; when the opponent is slow, slow down as well. Receive rhythm is critical."
-    reason: This contiguous 21.4-second span directly supports adapting rhythm to the opponent and matches the durable topic of the supplied existing concept.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: lO0H9Cs6JEo
-      start_ms: 354800
-      end_ms: 376200
-      url: https://www.youtube.com/watch?v=lO0H9Cs6JEo&t=354s
-      segment_ids:
-        - lO0H9Cs6JEo:00101
-        - lO0H9Cs6JEo:00102
-        - lO0H9Cs6JEo:00103
-        - lO0H9Cs6JEo:00104
-        - lO0H9Cs6JEo:00105
-        - lO0H9Cs6JEo:00106
+- id: vary-rhythm-against-attacker-1-part-1-1
+  evidence_type: explanation
+  excerpt: The player presses harder when you slow down and fears changes of rhythm.
+  reason: Alternating deep drives and short balls changes the rhythm this player fears.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: approved
+  source: {video_id: BToLYdKLIMM, start_ms: 595120, end_ms: 618079, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=595s", segment_ids: &id001 ["BToLYdKLIMM:00221", "BToLYdKLIMM:00222", "BToLYdKLIMM:00223", "BToLYdKLIMM:00224", "BToLYdKLIMM:00225", "BToLYdKLIMM:00226", "BToLYdKLIMM:00227"]}
+- id: vary-rhythm-against-attacker-1-part-1-2
+  evidence_type: explanation
+  excerpt: Heavy then light, left then right. A player with one rhythm can't find the timing and wants to blast through shot after shot.
+  reason: Vary heavy and light, then left and right, to disrupt the timing of a player who relies on one rhythm and blasts through shots.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: approved
+  source: {video_id: BToLYdKLIMM, start_ms: 615680, end_ms: 629839, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=615s", segment_ids: ["BToLYdKLIMM:00228", "BToLYdKLIMM:00229", "BToLYdKLIMM:00230", "BToLYdKLIMM:00231"]}
+- id: vary-rhythm-against-attacker-1-part-2
+  evidence_type: explanation
+  excerpt: 'Apply the variation deliberately: mix flicks and punches instead of feeding one repeatable tempo.'
+  reason: Vary flicks and punches to change the pace and break the opponent's one rhythm.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: approved
+  source: {video_id: BToLYdKLIMM, start_ms: 626959, end_ms: 645600, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=626s", segment_ids: ["BToLYdKLIMM:00232", "BToLYdKLIMM:00233", "BToLYdKLIMM:00234", "BToLYdKLIMM:00235", "BToLYdKLIMM:00236"]}
+- id: disrupt-stable-blocker-2-part-1-1
+  evidence_type: explanation
+  excerpt: Recognize the steady player who rarely attacks and reliably blocks or scoops.
+  reason: They rarely miss, hang in rallies, and are hard for most people to beat.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: approved
+  source: {video_id: BToLYdKLIMM, start_ms: 643200, end_ms: 670079, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=643s", segment_ids: ["BToLYdKLIMM:00237", "BToLYdKLIMM:00238", "BToLYdKLIMM:00239", "BToLYdKLIMM:00240", "BToLYdKLIMM:00241", "BToLYdKLIMM:00242", "BToLYdKLIMM:00243"]}
+- id: disrupt-stable-blocker-2-part-1-2
+  evidence_type: explanation
+  excerpt: Play backspin against them because their topspin game is solid, and start with a push rally.
+  reason: Use backspin and start with a push rally against an opponent whose topspin game is solid.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: approved
+  source: {video_id: BToLYdKLIMM, start_ms: 667360, end_ms: 676720, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=667s", segment_ids: ["BToLYdKLIMM:00244", "BToLYdKLIMM:00245", "BToLYdKLIMM:00246"]}
+- id: disrupt-stable-blocker-2-part-2
+  evidence_type: explanation
+  excerpt: From the backspin, make it spinnier, nastier, and more awkward. If they block your backspin attack, the second ball is a weakness.
+  reason: The instruction is to make it spinnier and more awkward from the backspin; the speaker says the second ball is a weakness if the backspin attack is blocked.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: approved
+  source: {video_id: BToLYdKLIMM, start_ms: 674079, end_ms: 687760, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=674s", segment_ids: ["BToLYdKLIMM:00247", "BToLYdKLIMM:00248", "BToLYdKLIMM:00249", "BToLYdKLIMM:00250", "BToLYdKLIMM:00251"]}
+- id: disrupt-stable-blocker-2-part-3-1
+  evidence_type: explanation
+  excerpt: Use a sudden punch instead of flipping, without too much power.
+  reason: Against this stable opponent, use a sudden shot and avoid too much power.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: approved
+  source: {video_id: BToLYdKLIMM, start_ms: 685519, end_ms: 696920, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=685s", segment_ids: ["BToLYdKLIMM:00252", "BToLYdKLIMM:00253", "BToLYdKLIMM:00254", "BToLYdKLIMM:00255"]}
+- id: disrupt-stable-blocker-2-part-3-2
+  evidence_type: explanation
+  excerpt: 'They face steady power all day, so it is easy for them. The key is suddenness: hit the cold shot and do not use long, even strokes.'
+  reason: Use suddenness and a cold shot instead of long, even strokes; steady power is familiar to them.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: approved
+  source: {video_id: BToLYdKLIMM, start_ms: 701200, end_ms: 717360, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=701s", segment_ids: ["BToLYdKLIMM:00256", "BToLYdKLIMM:00257", "BToLYdKLIMM:00258", "BToLYdKLIMM:00259", "BToLYdKLIMM:00260"]}
+- id: shorten-against-penhold-pressure-3-part-1
+  evidence_type: explanation
+  excerpt: Against penhold players who press and make the ball sink, drag it with two-thirds of your flick motion; keep the contact compact, tight, and short.
+  reason: Use a compact, short flick contact when the ball sinks under penhold pressure.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: approved
+  source: {video_id: BToLYdKLIMM, start_ms: 733279, end_ms: 754920, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=733s", segment_ids: ["BToLYdKLIMM:00267", "BToLYdKLIMM:00268", "BToLYdKLIMM:00269", "BToLYdKLIMM:00270", "BToLYdKLIMM:00271", "BToLYdKLIMM:00272", "BToLYdKLIMM:00273", "BToLYdKLIMM:00274", "BToLYdKLIMM:00275"]}
+- id: shorten-against-penhold-pressure-3-part-2
+  evidence_type: explanation
+  excerpt: When you give them a full stroke, they borrow your spin and fire it back heavier. Don't give them the full stroke; shorten contact, pin the ball, and hold it.
+  reason: When you give them a full stroke, they borrow your spin and return it heavier, so shorten contact, pin the ball, and hold it.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: approved
+  source: {video_id: BToLYdKLIMM, start_ms: 763600, end_ms: 790639, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=763s", segment_ids: ["BToLYdKLIMM:00277", "BToLYdKLIMM:00278", "BToLYdKLIMM:00279", "BToLYdKLIMM:00280", "BToLYdKLIMM:00281", "BToLYdKLIMM:00282", "BToLYdKLIMM:00283", "BToLYdKLIMM:00284"]}
+- id: 0eMDTeOBR5A-cand-adapt-rally-rhythm-to-opponent-1
+  evidence_type: explanation
+  excerpt: "Match the opponent's tempo: go fast when they are fast and slow when they are slow."
+  reason: The speaker demonstrates matching the opponent's tempo and observes that the spin stayed the same while the rhythm changed.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 0eMDTeOBR5A
+    start_ms: 82360
+    end_ms: 112200
+    url: https://www.youtube.com/watch?v=0eMDTeOBR5A&t=82s
+    segment_ids:
+    - 0eMDTeOBR5A:00031
+    - 0eMDTeOBR5A:00032
+    - 0eMDTeOBR5A:00033
+    - 0eMDTeOBR5A:00034
+    - 0eMDTeOBR5A:00035
+    - 0eMDTeOBR5A:00036
+    - 0eMDTeOBR5A:00037
+    - 0eMDTeOBR5A:00038
+    - 0eMDTeOBR5A:00039
+    - 0eMDTeOBR5A:00040
+    - 0eMDTeOBR5A:00041
+- id: 0eMDTeOBR5A-cand-adapt-rally-rhythm-to-opponent-2
+  evidence_type: explanation
+  excerpt: Match footwork, backswing, and release timing to the opponent's return rhythm.
+  reason: If footwork, backswing, and release do not sync with the ball, you will miss; match their frequency.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 0eMDTeOBR5A
+    start_ms: 188200
+    end_ms: 205080
+    url: https://www.youtube.com/watch?v=0eMDTeOBR5A&t=188s
+    segment_ids:
+    - 0eMDTeOBR5A:00074
+    - 0eMDTeOBR5A:00075
+    - 0eMDTeOBR5A:00076
+    - 0eMDTeOBR5A:00077
+    - 0eMDTeOBR5A:00078
+    - 0eMDTeOBR5A:00079
+    - 0eMDTeOBR5A:00080
+- id: 0eMDTeOBR5A-cand-adapt-rally-rhythm-to-opponent-3
+  evidence_type: explanation
+  excerpt: On topspin rallies, match a fast player's pace and rhythm; if they touch the ball softly, go fast. Let your backswing and release follow their frequency.
+  reason: Go fast in fast topspin rallies and when they touch the ball softly; let your backswing and release follow their frequency.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 0eMDTeOBR5A
+    start_ms: 252080
+    end_ms: 278240
+    url: https://www.youtube.com/watch?v=0eMDTeOBR5A&t=252s
+    segment_ids:
+    - 0eMDTeOBR5A:00089
+    - 0eMDTeOBR5A:00090
+    - 0eMDTeOBR5A:00091
+    - 0eMDTeOBR5A:00092
+    - 0eMDTeOBR5A:00093
+    - 0eMDTeOBR5A:00094
+    - 0eMDTeOBR5A:00095
+- id: 0eMDTeOBR5A-cand-adapt-rally-rhythm-to-opponent-4
+  evidence_type: explanation
+  excerpt: Synchronize first; matching rhythm still leaves room to add power.
+  reason: Sync first, then you can still blast the ball.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 0eMDTeOBR5A
+    start_ms: 285000
+    end_ms: 293440
+    url: https://www.youtube.com/watch?v=0eMDTeOBR5A&t=285s
+    segment_ids:
+    - 0eMDTeOBR5A:00096
+    - 0eMDTeOBR5A:00097
+    - 0eMDTeOBR5A:00098
+- id: f7uZPRPIwpU-concept-adapt-rally-rhythm-to-opponent-1
+  evidence_type: definition
+  excerpt: If he spins up while you stay slow, you miss. Match his rhythm. Slow the stroke rhythm, not the force; match your backswing rhythm to his push rhythm. If his rhythm is fast, go fast; if slow, go slow.
+  reason: 'Match his rhythm: slow the stroke rhythm, not the force, and match your backswing rhythm to his push rhythm. Go fast or slow with his rhythm.'
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: f7uZPRPIwpU
+    start_ms: 89440
+    end_ms: 119400
+    url: https://www.youtube.com/watch?v=f7uZPRPIwpU&t=89s
+    segment_ids:
+    - f7uZPRPIwpU:00036
+    - f7uZPRPIwpU:00037
+    - f7uZPRPIwpU:00038
+    - f7uZPRPIwpU:00039
+    - f7uZPRPIwpU:00040
+    - f7uZPRPIwpU:00041
+    - f7uZPRPIwpU:00042
+    - f7uZPRPIwpU:00043
+    - f7uZPRPIwpU:00044
+    - f7uZPRPIwpU:00045
+- id: f7uZPRPIwpU-concept-adapt-rally-rhythm-to-opponent-2
+  evidence_type: definition
+  excerpt: Follow the opponent's rhythm and decide your backswing rhythm based on it; don't rush the backswing before seeing what the ball is doing.
+  reason: The speaker advises following the opponent’s rhythm, avoiding an early backswing, and basing backswing rhythm on the opponent’s rhythm.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: f7uZPRPIwpU
+    start_ms: 140640
+    end_ms: 159959
+    url: https://www.youtube.com/watch?v=f7uZPRPIwpU&t=140s
+    segment_ids:
+    - f7uZPRPIwpU:00055
+    - f7uZPRPIwpU:00056
+    - f7uZPRPIwpU:00057
+    - f7uZPRPIwpU:00058
+    - f7uZPRPIwpU:00059
+    - f7uZPRPIwpU:00060
+    - f7uZPRPIwpU:00061
+    - f7uZPRPIwpU:00062
+    - f7uZPRPIwpU:00063
+- id: f7uZPRPIwpU-concept-adapt-rally-rhythm-to-opponent-3
+  evidence_type: definition
+  excerpt: Against fast or jamming balls, don't instinctively back away. Speed up your motion to match the ball's frequency; if your loop matches the rhythm, you can land it. Being slow can leave you jammed and unable to finish the stroke.
+  reason: The speaker advises matching motion frequency and loop rhythm to fast or jamming balls, and says that being slow can leave the player jammed and unable to finish the stroke.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: f7uZPRPIwpU
+    start_ms: 231480
+    end_ms: 255360
+    url: https://www.youtube.com/watch?v=f7uZPRPIwpU&t=231s
+    segment_ids:
+    - f7uZPRPIwpU:00087
+    - f7uZPRPIwpU:00088
+    - f7uZPRPIwpU:00089
+    - f7uZPRPIwpU:00090
+    - f7uZPRPIwpU:00091
+    - f7uZPRPIwpU:00092
+    - f7uZPRPIwpU:00093
+    - f7uZPRPIwpU:00094
+    - f7uZPRPIwpU:00095
+    - f7uZPRPIwpU:00096
+- id: lO0H9Cs6JEo-concept-adapt-rally-rhythm-to-opponent-reviewed
+  evidence_type: explanation
+  excerpt: Matching or changing tempo so your rhythm follows or disrupts the opponent's pace.
+  reason: The speaker says to adjust initiation speed to the opponent's rhythm and states receive rhythm is critical.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: lO0H9Cs6JEo
+    start_ms: 338880
+    end_ms: 360960
+    url: https://www.youtube.com/watch?v=lO0H9Cs6JEo&t=338s
+    segment_ids:
+    - lO0H9Cs6JEo:00094
+    - lO0H9Cs6JEo:00101
+- id: pE5PLAr9iaA-concept-adapt-rally-rhythm-to-opponent-reviewed
+  evidence_type: explanation
+  excerpt: Changing pace, height, and rhythm so you can handle multiple ball rhythms and avoid being frozen by variation.
+  reason: The speaker says players must adapt to different ball rhythms, practice with partners varying height and pace, and use rhythm variation against slower and faster styles.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: pE5PLAr9iaA
+    start_ms: 138320
+    end_ms: 159600
+    url: https://www.youtube.com/watch?v=pE5PLAr9iaA&t=138s
+    segment_ids:
+    - pE5PLAr9iaA:00042
+    - pE5PLAr9iaA:00048
+    - pE5PLAr9iaA:00049
+    - pE5PLAr9iaA:00050
+- id: o6OyHBmkF2U-concept-adapt-rally-rhythm-to-opponent-reviewed
+  evidence_type: explanation
+  excerpt: Changing pace, depth, and timing so the opponent cannot settle into a comfortable rhythm or position.
+  reason: The speaker defines rhythm variation with sequences like fast-fast-slow-fast and explains adjusting depth and timing based on where the opponent stands.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: o6OyHBmkF2U
+    start_ms: 176560
+    end_ms: 206120
+    url: https://www.youtube.com/watch?v=o6OyHBmkF2U&t=176s
+    segment_ids:
+    - o6OyHBmkF2U:00064
+    - o6OyHBmkF2U:00065
+    - o6OyHBmkF2U:00066
+    - o6OyHBmkF2U:00067
+    - o6OyHBmkF2U:00069
+    - o6OyHBmkF2U:00070
+    - o6OyHBmkF2U:00071
+- id: kv80YX__eJE-concept-adapt-rally-rhythm-to-opponent-reviewed
+  evidence_type: explanation
+  excerpt: Using placement and pace choices to control rally rhythm and exploit the opponent's timing and position.
+  reason: The speaker says rallies are about controlling rhythm and using the opponent's pace.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: kv80YX__eJE
+    start_ms: 133333
+    end_ms: 149233
+    url: https://www.youtube.com/watch?v=kv80YX__eJE&t=133s
+    segment_ids:
+    - kv80YX__eJE:00030
+    - kv80YX__eJE:00032
+    - kv80YX__eJE:00033
+- id: h5jUJL_P82w-concept-adapt-rally-rhythm-to-opponent-reviewed
+  evidence_type: explanation
+  excerpt: Changing pace, spin, and placement to see what the opponent cannot handle, instead of repeating one pattern.
+  reason: The speaker uses the fruit-platter analogy to recommend trying different spins and rhythms until the opponent cannot handle them.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: h5jUJL_P82w
+    start_ms: 741066
+    end_ms: 765400
+    url: https://www.youtube.com/watch?v=h5jUJL_P82w&t=741s
+    segment_ids:
+    - h5jUJL_P82w:00166
+    - h5jUJL_P82w:00167
+    - h5jUJL_P82w:00168
+    - h5jUJL_P82w:00169
+    - h5jUJL_P82w:00170
+    - h5jUJL_P82w:00171
+- id: 0XhKjyXoCO4-concept-adapt-rally-rhythm-to-opponent-reviewed
+  evidence_type: explanation
+  excerpt: Use placement changes and pressure to disturb the opponent's balance and timing before changing direction or attacking.
+  reason: The speaker says to keep the opponent moving and constantly shifting weight to create difficulty.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 0XhKjyXoCO4
+    start_ms: 16100
+    end_ms: 25166
+    url: https://www.youtube.com/watch?v=0XhKjyXoCO4&t=16s
+    segment_ids:
+    - 0XhKjyXoCO4:00007
+    - 0XhKjyXoCO4:00008
+    - 0XhKjyXoCO4:00009
+    - 0XhKjyXoCO4:00010
+- id: 9WPYbE6DoTo-concept-adapt-rally-rhythm-to-opponent-reviewed
+  evidence_type: explanation
+  excerpt: Vary pace and rhythm to make the opponent uncomfortable and prevent them from settling into one pattern.
+  reason: The transcript explicitly describes keeping an opponent moving and practicing changing the rhythm so match shots can be handled.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 9WPYbE6DoTo
+    start_ms: 133966
+    end_ms: 153900
+    url: https://www.youtube.com/watch?v=9WPYbE6DoTo&t=133s
+    segment_ids:
+    - 9WPYbE6DoTo:00013
+    - 9WPYbE6DoTo:00015
+    - 9WPYbE6DoTo:00016
+- id: U4ufFJg5s4A-concept-adapt-rally-rhythm-to-opponent-reviewed
+  evidence_type: explanation
+  excerpt: Changing pace or timing in response to the opponent's rhythm or intensity.
+  reason: The speaker says to change rhythm when the opponent suddenly increases power or speed, and to match the opponent's pace appropriately.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: U4ufFJg5s4A
+    start_ms: 236233
+    end_ms: 258333
+    url: https://www.youtube.com/watch?v=U4ufFJg5s4A&t=236s
+    segment_ids:
+    - U4ufFJg5s4A:00109
+    - U4ufFJg5s4A:00110
+    - U4ufFJg5s4A:00111
+    - U4ufFJg5s4A:00115
+    - U4ufFJg5s4A:00116
+    - U4ufFJg5s4A:00117
+    - U4ufFJg5s4A:00118
+- id: fYJgxN1x7QM-concept-adapt-rally-rhythm-to-opponent-reviewed
+  evidence_type: explanation
+  excerpt: Changing your timing and tempo to fit the ball speed and rhythm the opponent gives you.
+  reason: The speaker repeatedly says to match the game's rhythm, quicken for fast balls, wait for slow balls, and adapt to changes in pace.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: fYJgxN1x7QM
+    start_ms: 128433
+    end_ms: 157200
+    url: https://www.youtube.com/watch?v=fYJgxN1x7QM&t=128s
+    segment_ids:
+    - fYJgxN1x7QM:00028
+    - fYJgxN1x7QM:00029
+    - fYJgxN1x7QM:00030
+    - fYJgxN1x7QM:00031
+    - fYJgxN1x7QM:00033
+- id: qPpVIKNWMwY-candidate-adapt-timing-to-opponent-rhythm-reviewed
+  evidence_type: explanation
+  excerpt: Players should adjust swing timing and rhythm to match different opponents and hitting partners instead of using one fixed tempo.
+  reason: The speaker says different partners and opponents require different timing because their pace, defenses, techniques, systems, and rhythms vary.
+  confidence: 0.91
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: qPpVIKNWMwY
+    start_ms: 595900
+    end_ms: 621500
+    url: https://www.youtube.com/watch?v=qPpVIKNWMwY&t=595s
+    segment_ids:
+    - qPpVIKNWMwY:00105
+    - qPpVIKNWMwY:00106
+    - qPpVIKNWMwY:00107
+    - qPpVIKNWMwY:00108
+- id: U1zg0xsCqMc-concept-adapt-rally-rhythm-to-opponent-reviewed
+  evidence_type: explanation
+  excerpt: Varying serve or rally rhythm to disrupt the opponent’s timing and prevent them from syncing with you.
+  reason: The speaker frames the serve rhythm as slow-stop-fast and explicitly says the goal is to break the opponent’s timing and control the rhythm.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: U1zg0xsCqMc
+    start_ms: 514560
+    end_ms: 543000
+    url: https://www.youtube.com/watch?v=U1zg0xsCqMc&t=514s
+    segment_ids:
+    - U1zg0xsCqMc:00238
+    - U1zg0xsCqMc:00239
+    - U1zg0xsCqMc:00240
+    - U1zg0xsCqMc:00241
+    - U1zg0xsCqMc:00242
+    - U1zg0xsCqMc:00243
+    - U1zg0xsCqMc:00244
+    - U1zg0xsCqMc:00245
+    - U1zg0xsCqMc:00246
+    - U1zg0xsCqMc:00247
+    - U1zg0xsCqMc:00248
+- id: 9WPYbE6DoTo-concept-adapt-rally-rhythm-to-opponent-codex-reviewed
+  evidence_type: explanation
+  excerpt: In practice, keep your partner moving during backhand topspin drills instead of letting them stand still. Practice changing the rhythm so you can handle similar shots in matches.
+  reason: Keep a practice partner moving during backhand topspin training, and practice changing the rhythm to prepare for similar shots in matches.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: 9WPYbE6DoTo
+    start_ms: 133966
+    end_ms: 153900
+    url: https://www.youtube.com/watch?v=9WPYbE6DoTo&t=133s
+    segment_ids:
+    - 9WPYbE6DoTo:00013
+    - 9WPYbE6DoTo:00014
+    - 9WPYbE6DoTo:00015
+    - 9WPYbE6DoTo:00016
+- id: lO0H9Cs6JEo-concept-adapt-rally-rhythm-to-opponent-codex-reviewed
+  evidence_type: explanation
+  excerpt: "Match his pace: when he's fast, I'm fast; when he's slow, I'm slow. Receive rhythm is critical."
+  reason: Match his pace by going fast when he's fast and slow when he's slow; receive rhythm is critical.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: lO0H9Cs6JEo
+    start_ms: 354800
+    end_ms: 376200
+    url: https://www.youtube.com/watch?v=lO0H9Cs6JEo&t=354s
+    segment_ids:
+    - lO0H9Cs6JEo:00101
+    - lO0H9Cs6JEo:00102
+    - lO0H9Cs6JEo:00103
+    - lO0H9Cs6JEo:00104
+    - lO0H9Cs6JEo:00105
+    - lO0H9Cs6JEo:00106
 relations:
-  - relation_type: used_with
-    target_concept_id: concept-ball-feel
-    sources:
-      - video_id: BToLYdKLIMM
-        start_ms: 595120
-        end_ms: 618079
-        url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=595s"
-        segment_ids: *id001
-    confidence: 0.9
-    review_status: approved
+- relation_type: used_with
+  target_concept_id: concept-ball-feel
+  sources:
+  - video_id: BToLYdKLIMM
+    start_ms: 595120
+    end_ms: 618079
+    url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=595s"
+    segment_ids: *id001
+  confidence: 0.9
+  review_status: unreviewed

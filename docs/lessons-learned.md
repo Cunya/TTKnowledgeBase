@@ -1,5 +1,11 @@
 # Lessons learned
 
+- When an editorial definition changes, recompute its owned supporting-ID selection before independent verification. A correct new clause cannot be proved from the old narrower selection. Keep full-field row caps honest.
+- A clipped outcome can reverse an instruction: “racket head never whips” followed “if you break immediately,” and an up-down warning applied to BIG movement. Read adjacent context to veto missing conditions; positive published support still needs owned IDs.
+- A quarantine review must distinguish the archived original from the proposed public absence. Explicitly represent omission without instructing the reviewer to approve it, and retain independently checked narrower supported instructions when possible.
+
+- Quota windows need independent operator thresholds: five-hour80% with ten-minute reset grace and weekly95% without grace. Do not infer the weekly policy from a five-hour request; preserve a configurable fallback for existing installations.
+
 - Spoken-source edits must bind both original freshness and the corrected owned proof. Match canonical records against the old source, then map approved audit decisions against the verified new source. Reuse the same eligible corpus snapshot as the audit; an unfiltered reload changes overlap/target context and invalidates otherwise matching proof.
 
 - Preserve a source-grounded subject rather than an erroneous heading. A correcting citation is not misplaced evidence, and legacy words inside stable IDs/slugs are not claims. Test both false quarantine and genuine topic mismatch; version changed policies before reusing pending approvals.
@@ -197,3 +203,96 @@
 - Final primary review must include unchanged inherited evidence when new source reading exposes an error. A generic topic qualifier cannot come from a separate unrelated citation; hook-serve backhand bat surface is not backhand-stroke identity. Preserve the actual long-ball condition when neighboring text says a fundamental technique also works short.
 
 - Exact-source verification should accept a clear question-and-answer together, even when the following caption is unfinished. Spelling normalization in paraphrases is different from claiming a corrected verbatim quotation. Keep actual over-rejection cases alongside false-acceptance controls;neither model verdict nor earlier primary review is infallible.
+
+- 2026-10-17: Sparse selected IDs can hide internal captions even from nearby context. Include every actual caption inside the owned time bounds as context, and verify an additive source correction with fresh verdicts. Field support seeds must retain the whole contributing citation so they cannot detach outcomes from owned conditions.
+
+- 2026-10-17: Exercise source-completion planning through the real CLI application path. The original fingerprint must use freshly loaded canonical content; a completed proof stored on a plan is a different identity. Quarantining a citation preserves its original source rather than applying an unnecessary source correction.
+
+- 2026-10-17: Preserve directly supported spoken instructions by reclassifying unverified demonstration records as explanations. Never turn a classification repair into visual verification, and independently check that no source/visual metadata changes.
+
+- 2026-10-17: Before final approval, compare every introduced label AND alias against approved canonical terms using application normalization. A distinct title does not prevent a new generic alias from colliding. Keep racket-head direction distinct from racket-face angle and never turn building on a motion into invented temporal sequencing.
+
+- 2026-10-17: Authoring and verification have different packing needs. An oversized multi-citation field may select a smaller real proof through untrusted chunk proposals; verification must still receive whole contributing citations and complete context. Recheck supporting-ID changes even when prose is unchanged, preserve prior corrections, and set attempt-complete markers only after all resumable verification stages finish.
+
+
+2026-10-17 18:26 EEST: A rejected private exclusion must remain correctable after an exact primary finding. Do not retry quarantines automatically or reuse prior primary approval after changing their text. Preserve valid conditional warnings rather than deleting apparent contradictions.
+
+2026-10-17 18 EEST: Final source review must preserve who gives the full stroke and distinguish demonstration observation from instruction. Matching words is insufficient. Whole-field proof retries also amplify small editorial changes;measure saved calls/tokens before changing selection logic,and retain alternative-citation access plus final independent review. Rhythm/balltracking continuation24calls675319tokens;see current session and P1-34/P1-51.
+
+2026-10-17 19:13 EEST: Match generation schema to validator: aliases/facets replacements require arrays,including empty lists,never null. Bind saved model input to emitted schema. For missing referents,review actual nearby captions and extend exact spoken ownership through existing validated source-correction gates when defensible;do not discard useful instructions merely to clear a verifier. Preserve separate visual metadata.
+
+2026-10-17 20:59 EEST: An author returning no additional edits to already-proposed text does not mean revert to canonical text. Reuse production merge by field name,including unchanged earlier corrections;replacing the unit loses edits. Primary source review and full verification remain necessary. Scan saved application history systematically for lost edits versus intentional reversals;never assume all flags are defects.
+
+2026-10-17 21:13 EEST: A source-corrected proposal deliberately clears old verifier findings but preserves previous_source_findings. Application must compare fresh original findings against that preserved original set;matching accepted,stale rejected. Reopening precise source defects mustlowerclearedcoverageuntilrepair;all16historicalflags reviewed,not assumed defective.
+
+2026-10-18: Before repeated LLM retries, inspect the generated per-unit edit schema. A field may be audited yet mechanically uneditable; here concept_type was absent from both typed edit enum and whitelist. Add the capability once, bind provenance and bump draft policy to invalidate incapable caches; retain primary/source/application gates.
+
+2026-10-18: Resolve repeated topic-fit disagreements with one consistent review of the whole article. Recover actual nearby relationship context when it exists, and rehome valid standalone posture instructions into a fitting reviewed topic. Sharing a body part or video is not a coordination claim; never rewrite a source to force a connection.
+
+- 2026-10-18: A source-preserving topic move needs the destination record and purpose in independent verification; quarantine alone can be mistaken for discarding valid knowledge. Verify actual destination wording, never treat another model verdict as evidence. Final primary read caught repeated incoming-spin and no-need/prohibition drift despite model passes. Preserve literal source conditions/modality in all summaries as well as examples.
+
+- 2026-10-18: A saved proposal with only a difficulty-rating model objection still needs a complete current source review. Seven short cases revealed additional lost conditions and coaching-feedback overstatements. Refresh stale verification policy and verify all final units; remove unsupported optional metadata without adding an invented replacement. Batch verified applications behind one release gate.
+
+- 2026-10-18: When the full lesson context exceeds a spoken-window limit, preserve valid qualifications with a separate bounded, source-owned citation using the existing evidence schema. Do not guess a timestamp, trim captions, borrow context-only rows, or strip a valid condition merely to fit one window. Receipt byte hashes must hash the original bytes; keep JSON identity hashes separately labeled.
+
+- 2026-10-18: Recheck actor roles even after model support: “during a serve” can conceal the owned continuation “as the opponent serves.” Preserve receiving versus serving and source-local stance; do not accept model-supported role drift.
+
+- 2026-10-19: Preserve unresolved source referents literally rather than silently choosing an object: “this ball” must not become “this return.” If a CLI exits with startup warnings and no model response, confirm its terminal state, preserve evidence, and allow one bounded same-profile retry; do not infer a quota block or restart a live job.
+
+- 2026-10-19: Direct article prose must preserve personal attribution when the source says “I.” Do not rewrite an observed personal effect as an effect on an inferred receiver merely to satisfy a style review. Keep the main technical instruction direct and attribute the personal comparison explicitly. For apparent source contradictions, retain both exact qualified cues in an owned citation rather than inventing one universal rule or silently discarding either cue.
+
+- 2026-10-19: Before completing a spoken citation with adjacent rows, compare its final window against every other evidence record in the same article. Semantically correct source completion can create forbidden identical citations. Use relevant actual setup only when justified, then rerun whole-article verification and the full release gate; never invent a boundary to avoid a duplicate.
+
+- 2026-10-19: Keep unresolved spoken references literal, including “as it lands” and “this arc,” rather than assigning a ball, arm or body part. “Demonstrated” can imply a watched visual; use “referenced” for an unwatched spoken pointer. Preserve outcome strength: “does not clear the net” does not mean “hits the net.” An alias removal can reopen a peer overlap review; retire that stale scope check explicitly after reviewing the current sources.
+
+- 2026-10-19: A needed exception can be cited in a separate actual-caption window instead of extending an existing citation beyond30seconds. Reuse the existing editorial source-context completion workflow with typed whole-article Luna/high verification, explicit primary approval, byte/source/hash guards, lock, archive and release. Preserve all original approved records and leave unreviewed records unpromoted. A bounded account can quote an ambiguous timing phrase and state its limitation without inventing a procedural sequence.
+
+- 2026-10-19: State restrictive conditions as explicit IF/THEN sentences when “only” could change their logical scope. Before treating source terms as synonyms, cite the actual continuation that connects them. Keep per-citation claims inside their selected rows even when neighboring article sources support a broader definition; preserve all valid records while repairing the boundaries.
+
+- 2026-10-19: A relation about contact region on the ball is not supported merely by a drill about contact region on the racket or a discussion of rubber friction. Preserve valid spoken evidence and archive only the specifically unsupported relation as unreviewed. Keep personal equipment judgments attributed and distinguish adjacent instructions from an asserted causal connection.
+
+- 2026-10-19: Before a paid whole-article verification, inspect every proposed field value, including evidence_summary and public evidence reasons. Apply all source corrections and remove editorial review scaffolding together; a definition-only edit can leave the same unsupported claim in the summary and cause avoidable repeat calls.
+
+- 2026-10-19: Compare proposed labels and aliases against the full current canonical corpus before paid verification. Keep preparation distinct from a long serve’s larger backswing, retain each source’s stroke sequence, and do not combine separate timing and consistency instructions into an inferred interval. Primary review still needs to catch these details after a model passes.
+
+- 2026-10-19: An article-level context citation does not repair an overbroad claim in another evidence record. Put the qualifier inside that claim’s actual owned span; when the caption envelope exceeds the limit, retain displaced valid captions in a separate spoken record. Keep spoken approval separate from visual needs_footage, using the existing production exception rule without approving unseen movement.
+
+- 2026-10-20: Preserve the distinction between general recovery-time advice, post-shot spacing and a named ready-position destination. Make the article scope explicit instead of forcing every valid citation into the narrowest label. Keep fixed-point in-place recovery conditional; retain all source records while correcting the definition.
+
+- 2026-10-20: Resolve a wrong-topic citation by preserving its valid instruction in a source-verified destination before archiving the origin association. Shared citation IDs alone do not make two movements the same concept. Keep source-local serving stages and personal improvement estimates separate, and recheck stale overlap metadata after relocation.
+
+2026-10-20 09h: For a source-preserving topic relocation, apply and stabilize the reviewed destination before independently verifying the origin. Adding the destination changes the complete overlap dossier, so an otherwise identical origin proof can correctly become stale. Refresh and reverify that full proof; never bypass the source-proof guard. This ordering avoids paying twice for the same origin proposal.
+
+2026-10-20 10h: A Luna/high ownership warning can be false even when both selected caption text and that field’s allowed IDs contain the claim. Reconstruct the exact prior payload and match its recorded digest before classifying a false negative; preserve it as calibration evidence. Never use model agreement or disagreement as a substitute for exact source review, and never override an unrelated guard.
+
+2026-10-20 10h: Source all substantive metadata values within that field before paid verification. A spin facet retaining top/back/side/no-spin needs its own complete relevant source assignments; a sidespin-only seed is insufficient even when other article citations contain the missing types. The category-only editorial exception does not cover extra spin/side/level tags.
+
+2026-10-20 10h: Read the current relation_targets label and definition before proposing a relation omission. The opaque loose-grip-backhand-friction ID now names Generating spin at contact; its press-and-brush source supports that relationship. The independent verifier correctly rejected omission. Preserve valid relations; IDs and slugs do not prove current semantics.
+
+2026-10-20 17h: An unfinished grip-style fragment does not establish a general instruction for both grips; retain the following complete force instruction literally. When a single unit changes, preserve only exact unchanged source/value/context/policy/profile proofs and request a focused independent check for the changed unit, retaining all earlier negative findings. Repeated full-batch voting is not verification.
+
+2026-10-20 17h: Astro named slots must be passed directly, including when their contents are conditional. A green build can still silently omit nested conditional slot children. Verify every sanitized citation against built HTML, not only public JSON. Keep one DOM copy/player and exercise both toggle directions; isolated DOM checks do not claim browser execution.
+
+2026-10-20 23h: A display-only title cleaner can still change approved knowledge when applied to full evidence text: Add power became Power, and speaker attribution can disappear. Evidence rows and full TOC prose must render canonical strings directly; verify escaped/whitespace-normalized text against the corpus after building. Source and loop-flag checks alone do not prove prose fidelity.
+
+2026-10-21 00h: Count the expanded verification payload, not nominal seed rows: an ID shared by adjacent owned citations selects their complete conditional spans too. A concise representative summary can stay within the80row cap while all detailed evidence units retain full scope; never truncate context or silently raise the cap.
+
+2026-10-21 00h: Unchanged unit values alone are insufficient to reuse a model result after article label/short-definition/detailed-definition changes: these fields enter the shared verification header. Reverify every affected full-context payload before primary approval. Private focused helpers now reject those context-field updates; production per-unit cache already fingerprints context.
+
+2026-10-21 00h: When extending a citation to establish topic ownership, include the explicit topic-bearing sentence in the reader-facing paraphrase and preserve its condition. Adjacent cues about a half-spin serve and soft push should be presented as separate statements, rather than silently assigning a return role. Review each changed sentence against its selected captions; never resolve a negative finding by unchanged retries.
+
+
+2026-10-21 00h: Assert nonempty test populations. A built HTML data attribute may serialize as ="true"; a bare-attribute regex produced zero overflow doubles, so every(empty) checks falsely passed. Regenerate actual cases, assert nonzero overflow and test both toggle directions.
+
+2026-10-21 10h: Before atomic editorial YAML replacement, parse the temporary file with processors.utils.read_yaml (the production safe/C parser) and validate Concept. A round-trip parser can accept an unquoted URL in a flow mapping that production rejects; quote URL and segment IDs and compare semantic hashes. Do not treat self-parser round-trip success as reader compatibility.
+
+
+2026-10-21 10h: Backlog HTML renders recognized fields such as Work, not arbitrary new bold headings. Put actionable findings inside Work and verify the rendered card body. Checkpoint fields named current must be reconciled after each batch; preserve superseded pointers as history instead of leaving active aliases stale. Use platform local datetime formatting for quota display on this Windows venv (no tzdata package); enforcement remains based on fresh Unix reset timestamps.
+
+2026-10-21 13h: A one-line repeated instruction may lack its condition even when nearby context makes it obvious. Complete the owned caption window (e.g. receive/fast-or-popping before no-backswing), never borrow the condition silently. Preserve a model's contradictory scope findings; resolve them through owned context and explicit editorial scope, not repeated unchanged voting. Group related records into one complete bounded request where possible. A summary need not repeat every supporting example; retain the full reviewed record when an optional summary clause would exceed the complete-source/context cap.
+
+2026-10-21 18h: Individually valid citation completions can create duplicate windows inside one article. Validate the whole proposed corpus before paid verification or canonical writes, not only each SourceSpan. Preserve distinct claim-owned windows (pattern91-95 versus adaptation91-97) or consolidate with provenance; never relax uniqueness to pass. Reasons must state their own caption's condition or outcome: do not infer causal intent, merge deep/fast conditions, or borrow a respect-spin imperative from a neighboring record.
+
+2026-10-21T18:12:37.452278+03:00: Audit status subtotals do not measure total unverified footage: enumerate every canonical visual_source, including units in pending articles. Full inventory found35 windows vs9 already classified; retain both counts explicitly.
+
+2026-10-21T18:47:46.265723+03:00: Related-article backlinks must use the inverse relation label: parent has part child, child part of parent. Validate both endpoints from the published graph, not merely link existence. Source-specific posture/drill/match conditions stay local; a supported instruction does not automatically prove a proposed article association. Preserve it in a reviewed destination before changing that association.

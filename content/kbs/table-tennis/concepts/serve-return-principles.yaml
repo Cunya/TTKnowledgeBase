@@ -2,25 +2,16 @@ id: concept-serve-return-principles
 slug: serve-return-principles
 label: Serve return principles
 aliases:
-  - serve return
-  - serve return framework
-short_definition: A receive framework that prioritizes getting the first ball over the net, then using the first few returns to judge spin and adjust quality and power.
+- serve return framework
+short_definition: The speaker first aims to return over the net with enough spin, without power and without going long, then observes the first few returns. In the examples, needing to brush hard just to lift the ball indicates extreme spin; if hard brushing sends it higher than expected, the speaker judges the spin lighter and hits more forward.
 evidence_summary: >-
-  A receive framework that prioritizes getting the first ball over the net, then using the first
-  few returns to judge spin and adjust quality and power.
-evidence_summary_source_hash: "sha256:5336ed68a254a6b2daeeb3de637b12dd20b88d66ad8da66943d4783b1aabc5c9"
-evidence_summary_generator: "deterministic"
+  The speaker first aims to return over the net with enough spin, without power and without going long, then observes the first few returns. In the examples, needing to brush hard just to lift the ball indicates extreme spin; if hard brushing sends it higher than expected, the speaker judges the spin lighter and hits more forward.
 concept_type: concept
 facets:
   category:
-    - fundamentals
-    - practice
-  side:
-    - neutral
-  level:
-    - beginner
-    - intermediate
-difficulty: intermediate
+  - fundamentals
+  - practice
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -31,34 +22,36 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: hw8RsLGOARs-concept-serve-return-principles-reviewed
-    evidence_type: explanation
-    excerpt: A receive framework that prioritizes getting the first ball over the net, then using the first few returns to judge spin and adjust quality and power.
-    reason: 'The transcript opens with serve return as the focus and later summarizes the receive principle: get the ball over the net first, then add quality after observing early returns.'
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: hw8RsLGOARs
-      start_ms: 962433
-      end_ms: 977133
-      url: https://www.youtube.com/watch?v=hw8RsLGOARs&t=962s
-      segment_ids:
-        - hw8RsLGOARs:00190
-        - hw8RsLGOARs:00192
-  - id: hw8RsLGOARs-concept-serve-return-principles-codex-reviewed
-    evidence_type: explanation
-    excerpt: The principle for returning serve is to first get the ball over the net with enough spin and avoid using power, then observe the first few returns.
-    reason: These contiguous segments explicitly introduce the serve-return principle, state the priority of a safe return without power, and describe observing the first few returns. The supplied concept is the same durable topic as the existing concept.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: hw8RsLGOARs
-      start_ms: 898333
-      end_ms: 909433
-      url: https://www.youtube.com/watch?v=hw8RsLGOARs&t=898s
-      segment_ids:
-        - hw8RsLGOARs:00177
-        - hw8RsLGOARs:00178
-        - hw8RsLGOARs:00179
+- id: hw8RsLGOARs-concept-serve-return-principles-reviewed
+  evidence_type: explanation
+  excerpt: A receive framework that prioritizes getting the first ball over the net, then using the first few returns to judge spin and adjust quality and power.
+  reason: 'The transcript opens with serve return as the focus and later summarizes the receive principle: get the ball over the net first, then add quality after observing early returns.'
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: hw8RsLGOARs
+    start_ms: 962433
+    end_ms: 977133
+    url: https://www.youtube.com/watch?v=hw8RsLGOARs&t=962s
+    segment_ids:
+    - hw8RsLGOARs:00190
+    - hw8RsLGOARs:00192
+- id: hw8RsLGOARs-concept-serve-return-principles-codex-reviewed
+  evidence_type: explanation
+  excerpt: The speaker first aims to return over the net with enough spin, without power and without going long, then observes the first few returns. In the examples, needing to brush hard just to lift the ball indicates extreme spin; if hard brushing sends it higher than expected, the speaker judges the spin lighter and hits more forward.
+  reason: The speaker first aims to return over the net with enough spin, without power and without going long, then observes the first few returns. In the examples, needing to brush hard just to lift the ball indicates extreme spin; if hard brushing sends it higher than expected, the speaker judges the spin lighter and hits more forward.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: hw8RsLGOARs
+    start_ms: 898333
+    end_ms: 922966
+    url: https://www.youtube.com/watch?v=hw8RsLGOARs&t=898s
+    segment_ids:
+    - hw8RsLGOARs:00177
+    - hw8RsLGOARs:00178
+    - hw8RsLGOARs:00179
+    - hw8RsLGOARs:00180
+    - hw8RsLGOARs:00181

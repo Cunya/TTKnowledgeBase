@@ -1,285 +1,285 @@
 id: concept-block-trajectory-and-placement
 slug: block-trajectory-and-placement
-label: Block trajectory and placement
+label: Trajectory choices against loops and blocks
 aliases:
-  - low block
-  - trajectory control
-short_definition: Control the height, depth, and pace of the return to make the opponent's next attack less comfortable.
+- trajectory control
+short_definition: To make the opponent's loop slower, keep the trajectory low; this kind of ball limits the opponent's power. At mid distance, a high-arcing loop with a shorter trajectory is harder to block because the contact point is over the table.
 evidence_summary: >-
-  Block quality is not only about contact but also about keeping the return low, controlled, and
-  well placed. A low trajectory makes it harder for the opponent to attack with power, while
-  precise placement to the middle, down the line, or into awkward zones can limit their options.
-  Speed and added pressure matter, but only after the player can first absorb pace and prevent the
-  ball from going long.
-evidence_summary_source_hash: "sha256:36cb07ae76980eb38b00a9d31181075310d18c74d1af7100da396037c4c4d8bb"
-evidence_summary_generator: "codex"
-concept_type: block-tactic
+  The speaker says that keeping the trajectory low makes the opponent's loop slower and that this kind of ball prevents the opponent from generating power. The speaker also says, “No matter how spinny the serve is, a high arc won't work. Keep it lower.” In a spoken example, the speaker says, “I'll give you a low arc ball. Try to power loop,” then says, “Into the net,” and adds that only high-arc balls make you consider attacking. At mid distance, the speaker recommends a high-arcing loop with a shorter trajectory because the contact point is over the table, making it hard for the opponent to block.
+concept_type: tactic
 facets:
   category:
-    - stroke
-  side:
-    - neutral
-  level:
-    - intermediate
-difficulty: intermediate
+  - tactic
+difficulty:
 review_status: approved
 evidence:
-  - id: etKOmktKw1k-candidate-low-trajectory-return-to-slow-opponent-loop-1
-    evidence_type: explanation
-    excerpt: Using a low, low-arc return to force the opponent to lift the ball instead of driving through it, which slows their loop and reduces their ability to generate power.
-    reason: The speaker explicitly teaches that keeping the ball trajectory low makes the opponent loop slower and prevents power generation.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: etKOmktKw1k
-      start_ms: 17280
-      end_ms: 43120
-      url: "https://www.youtube.com/watch?v=etKOmktKw1k&t=17s"
-      segment_ids: &id001
-        - "etKOmktKw1k:00007"
-        - "etKOmktKw1k:00008"
-        - "etKOmktKw1k:00009"
-        - "etKOmktKw1k:00010"
-        - "etKOmktKw1k:00014"
-        - "etKOmktKw1k:00015"
-        - "etKOmktKw1k:00016"
-        - "etKOmktKw1k:00017"
-  - id: etKOmktKw1k-candidate-low-trajectory-return-to-slow-opponent-loop-2
-    evidence_type: demonstration
-    excerpt: Using a low, low-arc return to force the opponent to lift the ball instead of driving through it, which slows their loop and reduces their ability to generate power.
-    reason: A demonstrated example shows a low-arc ball causing the opponent's power loop to go into the net.
-    confidence: 0.88
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: etKOmktKw1k
-      start_ms: 126400
-      end_ms: 140200
-      url: "https://www.youtube.com/watch?v=etKOmktKw1k&t=126s"
-      segment_ids:
-        - "etKOmktKw1k:00047"
-        - "etKOmktKw1k:00048"
-        - "etKOmktKw1k:00049"
-        - "etKOmktKw1k:00050"
-        - "etKOmktKw1k:00051"
-  - id: etKOmktKw1k-candidate-high-arc-short-trajectory-loop-vs-mid-distance-blocker-1
-    evidence_type: explanation
-    excerpt: Against a player blocking from mid distance, using a high-arcing loop with a short trajectory can make blocking difficult because the opponent's contact point ends up over the table.
-    reason: The speaker answers how to play against a mid-distance blocker by recommending a high-arcing loop with short trajectory and explains why it is hard to block.
-    confidence: 0.86
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: etKOmktKw1k
-      start_ms: 306680
-      end_ms: 323240
-      url: "https://www.youtube.com/watch?v=etKOmktKw1k&t=306s"
-      segment_ids:
-        - "etKOmktKw1k:00108"
-        - "etKOmktKw1k:00109"
-        - "etKOmktKw1k:00110"
-        - "etKOmktKw1k:00111"
-        - "etKOmktKw1k:00112"
-        - "etKOmktKw1k:00113"
-        - "etKOmktKw1k:00114"
-        - "etKOmktKw1k:00115"
-  - id: ylfChS7Da-k-concept-block-trajectory-and-placement-reviewed
-    evidence_type: explanation
-    excerpt: Controlling receive trajectory and placement so the ball stays low and does not give the opponent an easy attack.
-    reason: The speaker says low trajectory and placement control prevent easy attacks, and adding speed is only a later refinement.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: ylfChS7Da-k
-      start_ms: 106440
-      end_ms: 124280
-      url: https://www.youtube.com/watch?v=ylfChS7Da-k&t=106s
-      segment_ids:
-        - ylfChS7Da-k:00033
-        - ylfChS7Da-k:00034
-        - ylfChS7Da-k:00036
-        - ylfChS7Da-k:00037
-        - ylfChS7Da-k:00038
-  - id: wd_E9NZBVtU-concept-block-trajectory-and-placement-reviewed
-    evidence_type: explanation
-    excerpt: Blocking with a controlled, generally low trajectory and deliberate placement so the return stays difficult to attack.
-    reason: The speaker contrasts covering down on heavy topspin with pushing forward on drives to improve the quality of the block return.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: wd_E9NZBVtU
-      start_ms: 435600
-      end_ms: 454600
-      url: https://www.youtube.com/watch?v=wd_E9NZBVtU&t=435s
-      segment_ids:
-        - wd_E9NZBVtU:00095
-        - wd_E9NZBVtU:00097
-        - wd_E9NZBVtU:00098
-  - id: TWv2MUl_64Q-concept-block-trajectory-and-placement-reviewed
-    evidence_type: explanation
-    excerpt: Using the block or punch to direct the ball to a chosen location with a controlled, low trajectory rather than pure power.
-    reason: The speaker describes backhand punch/block choices as placement shots with low trajectory, often to the middle or down the line, and emphasizes pressing the racket face downward.
-    confidence: 0.89
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: TWv2MUl_64Q
-      start_ms: 244266
-      end_ms: 264200
-      url: https://www.youtube.com/watch?v=TWv2MUl_64Q&t=244s
-      segment_ids:
-        - TWv2MUl_64Q:00054
-        - TWv2MUl_64Q:00056
-        - TWv2MUl_64Q:00057
-  - id: zAGc3h7gpxs-concept-block-trajectory-and-placement-reviewed
-    evidence_type: explanation
-    excerpt: A defensive block should send the ball safely back on the table by controlling the return line and keeping the ball from flying long.
-    reason: The speaker explains that the block should be controlled, absorb pace, and avoid going long, with later progression to pressing and brushing.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: zAGc3h7gpxs
-      start_ms: 382166
-      end_ms: 401566
-      url: https://www.youtube.com/watch?v=zAGc3h7gpxs&t=382s
-      segment_ids:
-        - zAGc3h7gpxs:00057
-        - zAGc3h7gpxs:00058
-        - zAGc3h7gpxs:00059
-  - id: 6Xx11I8CB9M-concept-block-trajectory-and-placement-reviewed
-    evidence_type: explanation
-    excerpt: Using the block to control where the ball goes and how it arcs, rather than adding power.
-    reason: The speaker says placement can be varied and the forward acceleration is used to control the ball's position and quality.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 6Xx11I8CB9M
-      start_ms: 400300
-      end_ms: 413133
-      url: https://www.youtube.com/watch?v=6Xx11I8CB9M&t=400s
-      segment_ids:
-        - 6Xx11I8CB9M:00076
-        - 6Xx11I8CB9M:00078
-  - id: 6Xx11I8CB9M-concept-block-trajectory-and-placement-reviewed-a6c75a79
-    evidence_type: explanation
-    excerpt: Using the block to control where the ball goes and how it arcs, rather than adding power.
-    reason: The speaker says placement can be varied and the forward acceleration is used to control the ball's position and quality.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 6Xx11I8CB9M
-      start_ms: 400300
-      end_ms: 413133
-      url: https://www.youtube.com/watch?v=6Xx11I8CB9M&t=400s
-      segment_ids:
-        - 6Xx11I8CB9M:00076
-        - 6Xx11I8CB9M:00078
-  - id: Qao0KS97Ysg-concept-block-trajectory-placement-heavy-spin-reviewed
-    evidence_type: explanation
-    excerpt: Controlling the blocking path so the ball travels low and down rather than arcing long, especially under heavy spin.
-    reason: The speaker repeatedly says to press the trajectory down and move the forearm straight, not upward, while blocking heavy spin.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: Qao0KS97Ysg
-      start_ms: 30040
-      end_ms: 57760
-      url: https://www.youtube.com/watch?v=Qao0KS97Ysg&t=30s
-      segment_ids:
-        - Qao0KS97Ysg:00013
-        - Qao0KS97Ysg:00021
-        - Qao0KS97Ysg:00023
-  - id: UgroLfi1YGY-concept-block-trajectory-and-placement-reviewed
-    evidence_type: explanation
-    excerpt: Controlling block trajectory and placement by keeping the stroke compact and the racket stable so the ball lands on the table.
-    reason: Advises hitting half-long balls solidly with stable motion from backswing through contact to racket exit.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: UgroLfi1YGY
-      start_ms: 685440
-      end_ms: 707800
-      url: https://www.youtube.com/watch?v=UgroLfi1YGY&t=685s
-      segment_ids:
-        - UgroLfi1YGY:00245
-        - UgroLfi1YGY:00246
-        - UgroLfi1YGY:00247
-        - UgroLfi1YGY:00248
-        - UgroLfi1YGY:00249
-        - UgroLfi1YGY:00250
-        - UgroLfi1YGY:00251
-        - UgroLfi1YGY:00252
-  - id: PwbikZNn8Y0-concept-block-trajectory-and-placement-reviewed
-    evidence_type: explanation
-    excerpt: Using racket shape and stopping action to keep the return trajectory controlled and prevent long balls.
-    reason: The speaker explains that keeping the racket more vertical and stopping the swing helps control the arc and avoid long returns.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: PwbikZNn8Y0
-      start_ms: 638160
-      end_ms: 665320
-      url: https://www.youtube.com/watch?v=PwbikZNn8Y0&t=638s
-      segment_ids:
-        - PwbikZNn8Y0:00252
-        - PwbikZNn8Y0:00253
-        - PwbikZNn8Y0:00254
-        - PwbikZNn8Y0:00255
-        - PwbikZNn8Y0:00256
-        - PwbikZNn8Y0:00257
-        - PwbikZNn8Y0:00258
-        - PwbikZNn8Y0:00259
-        - PwbikZNn8Y0:00260
-        - PwbikZNn8Y0:00261
-        - PwbikZNn8Y0:00262
-  - id: Mpfr1981UiQ-concept-block-trajectory-and-placement-reviewed
-    evidence_type: explanation
-    excerpt: Control the block's trajectory and placement so the return stays low and difficult to attack.
-    reason: The transcript emphasizes low-arc returns and placement to awkward locations as defensive tools.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: Mpfr1981UiQ
-      start_ms: 105666
-      end_ms: 123000
-      url: https://www.youtube.com/watch?v=Mpfr1981UiQ&t=105s
-      segment_ids:
-        - Mpfr1981UiQ:00023
-        - Mpfr1981UiQ:00024
-        - Mpfr1981UiQ:00025
-  - id: rR9HWla28Sc-concept-block-trajectory-and-placement-reviewed
-    evidence_type: definition
-    excerpt: Blocking should prioritize matching speed and controlling the ball's trajectory rather than taking a swing or stepping in late.
-    reason: The speaker describes using body momentum, matching speed, intercepting the ball, and using a stop-block or simple block back to control the next shot.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: rR9HWla28Sc
-      start_ms: 379666
-      end_ms: 391066
-      url: https://www.youtube.com/watch?v=rR9HWla28Sc&t=379s
-      segment_ids:
-        - rR9HWla28Sc:00080
-        - rR9HWla28Sc:00081
+- id: etKOmktKw1k-candidate-low-trajectory-return-to-slow-opponent-loop-1
+  evidence_type: explanation
+  excerpt: To make his loop slower, keep the trajectory low. No matter how spinny the serve is, a high arc won't work; keep it lower. With this kind of ball, the opponent can't generate power.
+  reason: Keep the trajectory low to make the opponent's loop slower. The speaker says a high arc won't work, no matter how spinny the serve is, and says this kind of ball prevents the opponent from generating power.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: etKOmktKw1k
+    start_ms: 17280
+    end_ms: 43120
+    url: https://www.youtube.com/watch?v=etKOmktKw1k&t=17s
+    segment_ids:
+    - etKOmktKw1k:00007
+    - etKOmktKw1k:00008
+    - etKOmktKw1k:00009
+    - etKOmktKw1k:00010
+    - etKOmktKw1k:00011
+    - etKOmktKw1k:00012
+    - etKOmktKw1k:00013
+    - etKOmktKw1k:00014
+    - etKOmktKw1k:00015
+    - etKOmktKw1k:00016
+    - etKOmktKw1k:00017
+- id: etKOmktKw1k-candidate-low-trajectory-return-to-slow-opponent-loop-2
+  evidence_type: explanation
+  excerpt: The speaker says, “I’ll give you a low arc ball. Try to power loop,” then says, “Into the net.” The speaker adds that only high-arc balls make you consider attacking.
+  reason: The speaker describes giving a low-arc ball to power loop, says, “Into the net,” and adds that only high-arc balls make you consider attacking.
+  confidence: 0.88
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: etKOmktKw1k
+    start_ms: 126400
+    end_ms: 140200
+    url: "https://www.youtube.com/watch?v=etKOmktKw1k&t=126s"
+    segment_ids:
+    - "etKOmktKw1k:00047"
+    - "etKOmktKw1k:00048"
+    - "etKOmktKw1k:00049"
+    - "etKOmktKw1k:00050"
+    - "etKOmktKw1k:00051"
+- id: etKOmktKw1k-candidate-high-arc-short-trajectory-loop-vs-mid-distance-blocker-1
+  evidence_type: explanation
+  excerpt: In the mid-distance discussion, the speaker recommends a high-arcing loop with a shorter trajectory, which is hard for the opponent to block because the contact point is over the table.
+  reason: The speaker discusses how to deal with a player at mid distance, recommends a high-arcing loop with a shorter trajectory, and explains that it is hard to block because the contact point is over the table.
+  confidence: 0.86
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: etKOmktKw1k
+    start_ms: 306680
+    end_ms: 323240
+    url: "https://www.youtube.com/watch?v=etKOmktKw1k&t=306s"
+    segment_ids:
+    - "etKOmktKw1k:00108"
+    - "etKOmktKw1k:00109"
+    - "etKOmktKw1k:00110"
+    - "etKOmktKw1k:00111"
+    - "etKOmktKw1k:00112"
+    - "etKOmktKw1k:00113"
+    - "etKOmktKw1k:00114"
+    - "etKOmktKw1k:00115"
+- id: ylfChS7Da-k-concept-block-trajectory-and-placement-reviewed
+  evidence_type: explanation
+  excerpt: Controlling receive trajectory and placement so the ball stays low and does not give the opponent an easy attack.
+  reason: The speaker says low trajectory and placement control prevent easy attacks, and adding speed is only a later refinement.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: ylfChS7Da-k
+    start_ms: 106440
+    end_ms: 124280
+    url: https://www.youtube.com/watch?v=ylfChS7Da-k&t=106s
+    segment_ids:
+    - ylfChS7Da-k:00033
+    - ylfChS7Da-k:00034
+    - ylfChS7Da-k:00036
+    - ylfChS7Da-k:00037
+    - ylfChS7Da-k:00038
+- id: wd_E9NZBVtU-concept-block-trajectory-and-placement-reviewed
+  evidence_type: explanation
+  excerpt: Blocking with a controlled, generally low trajectory and deliberate placement so the return stays difficult to attack.
+  reason: The speaker contrasts covering down on heavy topspin with pushing forward on drives to improve the quality of the block return.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: wd_E9NZBVtU
+    start_ms: 435600
+    end_ms: 454600
+    url: https://www.youtube.com/watch?v=wd_E9NZBVtU&t=435s
+    segment_ids:
+    - wd_E9NZBVtU:00095
+    - wd_E9NZBVtU:00097
+    - wd_E9NZBVtU:00098
+- id: TWv2MUl_64Q-concept-block-trajectory-and-placement-reviewed
+  evidence_type: explanation
+  excerpt: Using the block or punch to direct the ball to a chosen location with a controlled, low trajectory rather than pure power.
+  reason: The speaker describes backhand punch/block choices as placement shots with low trajectory, often to the middle or down the line, and emphasizes pressing the racket face downward.
+  confidence: 0.89
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: TWv2MUl_64Q
+    start_ms: 244266
+    end_ms: 264200
+    url: https://www.youtube.com/watch?v=TWv2MUl_64Q&t=244s
+    segment_ids:
+    - TWv2MUl_64Q:00054
+    - TWv2MUl_64Q:00056
+    - TWv2MUl_64Q:00057
+- id: zAGc3h7gpxs-concept-block-trajectory-and-placement-reviewed
+  evidence_type: explanation
+  excerpt: A defensive block should send the ball safely back on the table by controlling the return line and keeping the ball from flying long.
+  reason: The speaker explains that the block should be controlled, absorb pace, and avoid going long, with later progression to pressing and brushing.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: zAGc3h7gpxs
+    start_ms: 382166
+    end_ms: 401566
+    url: https://www.youtube.com/watch?v=zAGc3h7gpxs&t=382s
+    segment_ids:
+    - zAGc3h7gpxs:00057
+    - zAGc3h7gpxs:00058
+    - zAGc3h7gpxs:00059
+- id: 6Xx11I8CB9M-concept-block-trajectory-and-placement-reviewed
+  evidence_type: explanation
+  excerpt: Using the block to control where the ball goes and how it arcs, rather than adding power.
+  reason: The speaker says placement can be varied and the forward acceleration is used to control the ball's position and quality.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 6Xx11I8CB9M
+    start_ms: 400300
+    end_ms: 413133
+    url: https://www.youtube.com/watch?v=6Xx11I8CB9M&t=400s
+    segment_ids:
+    - 6Xx11I8CB9M:00076
+    - 6Xx11I8CB9M:00078
+- id: 6Xx11I8CB9M-concept-block-trajectory-and-placement-reviewed-a6c75a79
+  evidence_type: explanation
+  excerpt: Using the block to control where the ball goes and how it arcs, rather than adding power.
+  reason: The speaker says placement can be varied and the forward acceleration is used to control the ball's position and quality.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 6Xx11I8CB9M
+    start_ms: 400300
+    end_ms: 413133
+    url: https://www.youtube.com/watch?v=6Xx11I8CB9M&t=400s
+    segment_ids:
+    - 6Xx11I8CB9M:00076
+    - 6Xx11I8CB9M:00078
+- id: Qao0KS97Ysg-concept-block-trajectory-placement-heavy-spin-reviewed
+  evidence_type: explanation
+  excerpt: Controlling the blocking path so the ball travels low and down rather than arcing long, especially under heavy spin.
+  reason: The speaker repeatedly says to press the trajectory down and move the forearm straight, not upward, while blocking heavy spin.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: Qao0KS97Ysg
+    start_ms: 30040
+    end_ms: 57760
+    url: https://www.youtube.com/watch?v=Qao0KS97Ysg&t=30s
+    segment_ids:
+    - Qao0KS97Ysg:00013
+    - Qao0KS97Ysg:00021
+    - Qao0KS97Ysg:00023
+- id: UgroLfi1YGY-concept-block-trajectory-and-placement-reviewed
+  evidence_type: explanation
+  excerpt: Controlling block trajectory and placement by keeping the stroke compact and the racket stable so the ball lands on the table.
+  reason: Advises hitting half-long balls solidly with stable motion from backswing through contact to racket exit.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: UgroLfi1YGY
+    start_ms: 685440
+    end_ms: 707800
+    url: https://www.youtube.com/watch?v=UgroLfi1YGY&t=685s
+    segment_ids:
+    - UgroLfi1YGY:00245
+    - UgroLfi1YGY:00246
+    - UgroLfi1YGY:00247
+    - UgroLfi1YGY:00248
+    - UgroLfi1YGY:00249
+    - UgroLfi1YGY:00250
+    - UgroLfi1YGY:00251
+    - UgroLfi1YGY:00252
+- id: PwbikZNn8Y0-concept-block-trajectory-and-placement-reviewed
+  evidence_type: explanation
+  excerpt: Using racket shape and stopping action to keep the return trajectory controlled and prevent long balls.
+  reason: The speaker explains that keeping the racket more vertical and stopping the swing helps control the arc and avoid long returns.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: PwbikZNn8Y0
+    start_ms: 638160
+    end_ms: 665320
+    url: https://www.youtube.com/watch?v=PwbikZNn8Y0&t=638s
+    segment_ids:
+    - PwbikZNn8Y0:00252
+    - PwbikZNn8Y0:00253
+    - PwbikZNn8Y0:00254
+    - PwbikZNn8Y0:00255
+    - PwbikZNn8Y0:00256
+    - PwbikZNn8Y0:00257
+    - PwbikZNn8Y0:00258
+    - PwbikZNn8Y0:00259
+    - PwbikZNn8Y0:00260
+    - PwbikZNn8Y0:00261
+    - PwbikZNn8Y0:00262
+- id: Mpfr1981UiQ-concept-block-trajectory-and-placement-reviewed
+  evidence_type: explanation
+  excerpt: Control the block's trajectory and placement so the return stays low and difficult to attack.
+  reason: The transcript emphasizes low-arc returns and placement to awkward locations as defensive tools.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Mpfr1981UiQ
+    start_ms: 105666
+    end_ms: 123000
+    url: https://www.youtube.com/watch?v=Mpfr1981UiQ&t=105s
+    segment_ids:
+    - Mpfr1981UiQ:00023
+    - Mpfr1981UiQ:00024
+    - Mpfr1981UiQ:00025
+- id: rR9HWla28Sc-concept-block-trajectory-and-placement-reviewed
+  evidence_type: definition
+  excerpt: Blocking should prioritize matching speed and controlling the ball's trajectory rather than taking a swing or stepping in late.
+  reason: The speaker describes using body momentum, matching speed, intercepting the ball, and using a stop-block or simple block back to control the next shot.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: rR9HWla28Sc
+    start_ms: 379666
+    end_ms: 391066
+    url: https://www.youtube.com/watch?v=rR9HWla28Sc&t=379s
+    segment_ids:
+    - rR9HWla28Sc:00080
+    - rR9HWla28Sc:00081
 relations:
-  - relation_type: used_with
-    target_concept_id: concept-direction-reading
-    sources:
-      - video_id: etKOmktKw1k
-        start_ms: 17280
-        end_ms: 43120
-        url: "https://www.youtube.com/watch?v=etKOmktKw1k&t=17s"
-        segment_ids: *id001
-    confidence: 0.9
-    review_status: approved
+- relation_type: used_with
+  target_concept_id: concept-direction-reading
+  sources:
+  - video_id: etKOmktKw1k
+    start_ms: 17280
+    end_ms: 43120
+    url: "https://www.youtube.com/watch?v=etKOmktKw1k&t=17s"
+    segment_ids:
+    - "etKOmktKw1k:00007"
+    - "etKOmktKw1k:00008"
+    - "etKOmktKw1k:00009"
+    - "etKOmktKw1k:00010"
+    - "etKOmktKw1k:00014"
+    - "etKOmktKw1k:00015"
+    - "etKOmktKw1k:00016"
+    - "etKOmktKw1k:00017"
+  confidence: 0.9
+  review_status: unreviewed

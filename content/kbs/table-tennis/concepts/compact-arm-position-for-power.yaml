@@ -2,24 +2,17 @@ id: concept-compact-arm-position-for-power
 slug: compact-arm-position-for-power
 label: Compact arm position for power
 aliases:
-  - bring the fist in
-  - forearm near the torso
-short_definition: To generate self-produced power, the arm must start compact near the body and then rapidly extend to create space for acceleration.
+- compact swing
+- arm tucked in
+short_definition: A compact swing can still generate power with the arm tucked in; the forearm and racket face are open.
 evidence_summary: >-
-  To generate self-produced power, the arm must start compact near the body and then rapidly
-  extend to create space for acceleration.
-evidence_summary_source_hash: "sha256:cd5a0f3e12d57b8cb7f479da7e3af161ac717ddb4c58adc57ddb6db63268a681"
-evidence_summary_generator: "deterministic"
+  The speaker says a compact swing can still generate power with the arm tucked in, while the forearm and racket face are open.
 concept_type: fundamentals
 facets:
   category:
-    - fundamentals
-    - stroke
-  side:
-    - neutral
-  level:
-    - intermediate
-difficulty: intermediate
+  - fundamentals
+  - stroke
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -30,34 +23,34 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: xDwUKE-WjL0-concept-compact-arm-position-for-power-reviewed
-    evidence_type: definition
-    excerpt: To generate self-produced power, the arm must start compact near the body and then rapidly extend to create space for acceleration.
-    reason: The boxing analogy and explicit instruction to bring the fist in before punching out describe a compact start and rapid extension.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: xDwUKE-WjL0
-      start_ms: 550966
-      end_ms: 574000
-      url: https://www.youtube.com/watch?v=xDwUKE-WjL0&t=550s
-      segment_ids:
-        - xDwUKE-WjL0:00116
-        - xDwUKE-WjL0:00118
-  - id: hoLSxXKl2L0-concept-compact-swing-can-still-generate-power-codex-reviewed
-    evidence_type: explanation
-    excerpt: 'Power does not require a huge backswing: even with the arm tucked in and a compact swing, opening the forearm and racket face allows power generation.'
-    reason: These contiguous segments directly explain that a tucked-in arm and compact swing can still generate power when the forearm and racket face are open. The existing concept covers this durable technique, so no duplicate concept is needed.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: hoLSxXKl2L0
-      start_ms: 414400
-      end_ms: 441600
-      url: https://www.youtube.com/watch?v=hoLSxXKl2L0&t=414s
-      segment_ids:
-        - hoLSxXKl2L0:00069
-        - hoLSxXKl2L0:00070
-        - hoLSxXKl2L0:00071
+- id: xDwUKE-WjL0-concept-compact-arm-position-for-power-reviewed
+  evidence_type: definition
+  excerpt: To generate self-produced power, the arm must start compact near the body and then rapidly extend to create space for acceleration.
+  reason: The boxing analogy and explicit instruction to bring the fist in before punching out describe a compact start and rapid extension.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: xDwUKE-WjL0
+    start_ms: 550966
+    end_ms: 574000
+    url: https://www.youtube.com/watch?v=xDwUKE-WjL0&t=550s
+    segment_ids:
+    - xDwUKE-WjL0:00116
+    - xDwUKE-WjL0:00118
+- id: hoLSxXKl2L0-concept-compact-swing-can-still-generate-power-codex-reviewed
+  evidence_type: explanation
+  excerpt: 'Even with the arm tucked in and a compact swing, the speaker says they can still generate power; the forearm and racket face are open.'
+  reason: A compact swing can still generate power with the arm tucked in; the forearm and racket face are open.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: hoLSxXKl2L0
+    start_ms: 414400
+    end_ms: 441600
+    url: https://www.youtube.com/watch?v=hoLSxXKl2L0&t=414s
+    segment_ids:
+    - hoLSxXKl2L0:00069
+    - hoLSxXKl2L0:00070
+    - hoLSxXKl2L0:00071

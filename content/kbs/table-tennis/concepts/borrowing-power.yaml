@@ -4,18 +4,14 @@ label: Borrowing power
 aliases:
 - borrowing power
 - use the opponent's pace
-short_definition: A power method where the player absorbs the opponent's pace and then applies force late in the stroke, especially useful on serve receive and against faster incoming balls.
+short_definition: Use a compact motion to redirect pace already on the incoming ball instead of generating speed with a large swing. Examples include using the opponent's pace on a long serve to the backhand and a speaker's instruction to use incoming force in loops.
 evidence_summary: >-
-  This segment directly supports using the opponent's pace on a long backhand serve receive, which is the same durable tactic as the existing concept “Borrowing power.” These contiguous segments explicitly define borrowing power as using the incoming ball's force in loops and identify borrowing force as a power method. Segment IHQASHkdLYk:00118 directly defines borrowing power as using a compact motion to redirect incoming pace rather than generating speed with a large swing. This contiguous segment directly explains borrowing the opponent's pace as part of a compact return motion.
-evidence_summary_source_hash: "sha256:722c7373f0d5b295f98a8f57a0739b645d83ca2febbde1e32c2db9e511a88bc5"
-evidence_summary_generator: "deterministic"
+  A long serve to the backhand is described as easiest to land by using the opponent's pace. Another speaker says all loops should use incoming force and calls borrowing force the highest form of power. A compact-motion definition describes redirecting existing pace as faster and more controlled than generating speed with a large swing. In a separate passage about a topspin return from long pips, the cue is compact motion with little added friction.
 concept_type: tactic
 facets:
   category:
   - tactic
-  level:
-  - advanced
-difficulty: advanced
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -386,7 +382,7 @@ evidence:
 - id: 2LkVpDM69vo-concept-use-opponent-pace-on-long-serve-receive-codex-reviewed
   evidence_type: explanation
   excerpt: To receive a long serve to your backhand, the easiest way to get it on the table is to use the opponent's pace.
-  reason: This segment directly supports using the opponent's pace on a long backhand serve receive, which is the same durable tactic as the existing concept “Borrowing power.”
+  reason: For a long serve to the backhand, the cue is to use the opponent's pace to get the ball onto the table.
   confidence: 0.98
   visual_status: not_visual
   review_status: approved
@@ -399,8 +395,8 @@ evidence:
     - 2LkVpDM69vo:00069
 - id: BnjNVl_gssU-concept-borrowing-power-codex-reviewed
   evidence_type: definition
-  excerpt: For all loops, you must use the incoming force of the ball. In table tennis, borrowing force is the highest form of power.
-  reason: These contiguous segments explicitly define borrowing power as using the incoming ball's force in loops and identify borrowing force as a power method.
+  excerpt: The speaker instructs using incoming force for all loops and calls borrowing force the highest form of power.
+  reason: The speaker's looping instruction is to use incoming force; the description of borrowing force as the highest form of power is the speaker's assessment.
   confidence: 0.99
   visual_status: not_visual
   review_status: approved
@@ -415,7 +411,7 @@ evidence:
 - id: IHQASHkdLYk-concept-borrowing-power-codex-reviewed
   evidence_type: definition
   excerpt: This is "borrowing power." Instead of taking a big swing to generate your own speed, you use a compact motion to redirect the pace that's already on the ball. It's faster and more controlled.
-  reason: Segment IHQASHkdLYk:00118 directly defines borrowing power as using a compact motion to redirect incoming pace rather than generating speed with a large swing.
+  reason: Redirect the pace already on the ball with a compact motion instead of a large swing. The explanation describes this as faster and more controlled.
   confidence: 0.99
   visual_status: transcript_inferred
   review_status: approved
@@ -428,15 +424,17 @@ evidence:
     - IHQASHkdLYk:00118
 - id: itzB36f9_R0-concept-borrowing-power-codex-reviewed
   evidence_type: explanation
-  excerpt: You don't need to add much friction; just use a compact motion and borrow their pace.
-  reason: This contiguous segment directly explains borrowing the opponent's pace as part of a compact return motion.
+  excerpt: "For the passage's long-pips push return described as topspin, the cue is not to add much friction: use a compact motion and borrow the opponent's pace."
+  reason: In this topspin-return example, use a compact motion with little additional friction and borrow the incoming pace.
   confidence: 0.98
   visual_status: not_visual
   review_status: approved
   source:
     video_id: itzB36f9_R0
-    start_ms: 376033
+    start_ms: 366400
     end_ms: 381266
-    url: https://www.youtube.com/watch?v=itzB36f9_R0&t=376s
+    url: https://www.youtube.com/watch?v=itzB36f9_R0&t=366s
     segment_ids:
+    - itzB36f9_R0:00070
+    - itzB36f9_R0:00071
     - itzB36f9_R0:00072

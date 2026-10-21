@@ -1,27 +1,17 @@
 id: concept-side-component-to-create-arc-and-friction
 slug: side-component-to-create-arc-and-friction
-label: Side component to create arc and friction
+label: Sideways and inward force cues
 aliases:
-- add a sideways component
-- no arc
-- increase friction
-- sideways motion
-short_definition: Add a sideways component to the stroke so the ball gains arc and friction instead of moving only forward.
+- slight sideways movement with forward movement
+- outside-to-inside force
+short_definition: "The examples give separate cues: combine slight sideways and forward movement for left spin in a passage describing lateral friction; apply force from outside the body inward; and use finger force, racket-face angle, and friction after hooking for the effect called 'arching'."
 evidence_summary: >-
-  Combine a slight sideways movement with forward movement so the stroke creates lateral friction and left spin.
-evidence_summary_source_hash: "sha256:5018199424709beabadf6119698acf93d5fe9ac2d3fc02c5a397794510e037a9"
-evidence_summary_generator: "deterministic"
+  One explanation identifies lateral friction, then combines a slight sideways movement with simultaneous forward movement to create left spin. Another directs force from outside the body inward and describes the ball as curving and floating. A third applies friction after hooking with the fingers and wrist, then calls for finger force, racket-face angle, and increased friction for effective 'arching'; its unsuccessful examples are referred to only as 'like this'.
 concept_type: stroke
 facets:
   category:
   - stroke
-  side:
-  - backhand
-  - forehand
-  level:
-  - intermediate
-  - advanced
-difficulty: intermediate
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -208,8 +198,8 @@ evidence:
     - hRHJawAZzNc:00052
 - id: 8S2YprEr6XA-concept-side-component-to-create-arc-and-friction-codex-reviewed
   evidence_type: explanation
-  excerpt: After hooking with the fingers and wrist, apply a friction action. The ball should be placed on the side. Without the right action, the arching won't be effective; apply finger force, angle the racket face, and increase friction.
-  reason: These contiguous segments directly explain side placement and the finger, racket-face, and friction actions needed for effective arching, matching the supplied existing concept.
+  excerpt: After hooking with the fingers and wrist, apply friction. The cue says the ball should be placed on the side; unsuccessful actions are referred to as 'like this'. Apply finger force, angle the racket face, and increase friction for effective 'arching'.
+  reason: After hooking with the fingers and wrist, apply friction. Use finger force, racket-face angle, and increased friction for effective 'arching'.
   confidence: 0.96
   visual_status: transcript_inferred
   review_status: approved
@@ -225,8 +215,8 @@ evidence:
     - 8S2YprEr6XA:00144
 - id: mujrVgy34sE-concept-side-component-to-create-arc-and-friction-codex-reviewed
   evidence_type: explanation
-  excerpt: The stroke moves from outside the body toward the body’s center, adding a sideways component to the motion.
-  reason: This contiguous 3.6-second span directly describes the outside-to-inside force path and associated curved ball trajectory, matching the existing concept’s sideways stroke component.
+  excerpt: Move toward the body's center and apply force from outside the body inward. The ball is described as curving and floating.
+  reason: The force cue runs from outside the body inward; the accompanying ball description is curving and floating.
   confidence: 0.9
   visual_status: transcript_inferred
   review_status: approved
@@ -244,8 +234,8 @@ evidence:
     - mujrVgy34sE:00046
 - id: pxxgpWNbXSM-concept-side-component-to-create-arc-and-friction-codex-reviewed
   evidence_type: explanation
-  excerpt: Use a slight sideways movement together with forward movement; the combined path creates lateral friction and left spin.
-  reason: Combine a slight sideways movement with forward movement so the stroke creates lateral friction and left spin.
+  excerpt: The explanation identifies lateral friction and calls for a slight sideways movement with simultaneous forward movement. It attributes left spin to these combined directions.
+  reason: Combine a slight sideways movement with simultaneous forward movement for the left spin described in this passage about lateral friction.
   confidence: 0.95
   visual_status: transcript_inferred
   review_status: approved

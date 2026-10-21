@@ -1,24 +1,18 @@
 id: concept-upward-forward-force-for-topspin
 slug: upward-forward-force-for-topspin
-label: Upward-forward force for topspin
+label: Upward brushing and forward drive for difficult loops
 aliases:
-  - upward direction
-  - lift
-  - moving forward and upward
-short_definition: Generating topspin by directing force upward while also moving the racket forward, rather than only forward or downward.
+- 70 percent upward brush and 30 percent forward drive
+- upward brushing for a difficult loop
+short_definition: If a ball feels difficult to loop or has heavy spin, the suggested safe-loop cue is to wait a little and use 70% upward brushing with 30% forward drive for a high arc.
 evidence_summary: >-
-  Generating topspin by directing force upward while also moving the racket forward, rather than
-  only forward or downward.
-evidence_summary_source_hash: "sha256:1c2bd6842ab13fd40823b897821db1c658cb2d2f42ad58706335684ec3cdb299"
-evidence_summary_generator: "deterministic"
+  For a ball that feels difficult to loop or has heavy spin, the speaker suggests waiting a little and using 70% upward brush with 30% forward drive to produce a safe, high-arc loop.
 concept_type: fundamentals
 facets:
   category:
-    - fundamentals
-    - stroke
-  spin:
-    - topspin
-difficulty: beginner
+  - fundamentals
+  - stroke
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -29,101 +23,101 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: phKJvL-8VbQ-concept-upward-forward-force-for-topspin-reviewed
-    evidence_type: definition
-    excerpt: Generating topspin by directing force upward while also moving the racket forward, rather than only forward or downward.
-    reason: The speaker says topspin requires upward force, warns that forward-only or downward force will not work, and states the racket must move forward and upward at contact.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: phKJvL-8VbQ
-      start_ms: 93966
-      end_ms: 118633
-      url: https://www.youtube.com/watch?v=phKJvL-8VbQ&t=93s
-      segment_ids:
-        - phKJvL-8VbQ:00022
-        - phKJvL-8VbQ:00023
-        - phKJvL-8VbQ:00024
-        - phKJvL-8VbQ:00028
-  - id: VGXheTB1akM-concept-rotate-racket-head-to-lift-spin-reviewed
-    evidence_type: explanation
-    excerpt: Using racket-head rotation rather than a fixed racket angle to generate friction and lift incoming spin safely over the table.
-    reason: The speaker opens by saying to focus on rotating the racket head to lift spin, then explains that the rotation creates the friction needed to lift heavy spin and that a fixed racket angle fails.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: VGXheTB1akM
-      start_ms: 526500
-      end_ms: 547300
-      url: https://www.youtube.com/watch?v=VGXheTB1akM&t=526s
-      segment_ids:
-        - VGXheTB1akM:00103
-        - VGXheTB1akM:00105
-        - VGXheTB1akM:00106
-  - id: _f9fVMm2_Gs-cand-7-reviewed
-    evidence_type: definition
-    excerpt: For looping and attacking difficult spin, first create enough upward lift to secure the arc, then drive forward.
-    reason: The speaker repeatedly frames the shot as upward first, then forward, including the ramp analogy and the 70% upward / 30% forward guidance on heavy spin.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: _f9fVMm2_Gs
-      start_ms: 531133
-      end_ms: 550566
-      url: https://www.youtube.com/watch?v=_f9fVMm2_Gs&t=531s
-      segment_ids:
-        - _f9fVMm2_Gs:00082
-        - _f9fVMm2_Gs:00083
-        - _f9fVMm2_Gs:00084
-        - _f9fVMm2_Gs:00085
-  - id: CCb9qkkVxNQ-concept-forward-and-upward-lift-reviewed
-    evidence_type: explanation
-    excerpt: 'The response needed against heavy spinny balls: do not drive forward only; add upward force while also moving forward to lift the ball.'
-    reason: The speaker explains that forward alone cannot lift heavy spin and that the correct solution is forward and upward force.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: CCb9qkkVxNQ
-      start_ms: 193320
-      end_ms: 217320
-      url: https://www.youtube.com/watch?v=CCb9qkkVxNQ&t=193s
-      segment_ids:
-        - CCb9qkkVxNQ:00077
-        - CCb9qkkVxNQ:00082
-        - CCb9qkkVxNQ:00083
-        - CCb9qkkVxNQ:00086
-  - id: SmYaJcYqaqo-new-foot-pivot-and-heel-lift-for-power-transfer-reviewed
-    evidence_type: definition
-    excerpt: A footwork action where the back heel lifts and the foot pivots to create an efficient axis for transferring force from the ground through the body.
-    reason: The speaker instructs players to press the foot down, lift the heel, pivot, and rotate the foot tip so power can move forward.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: SmYaJcYqaqo
-      start_ms: 339433
-      end_ms: 366533
-      url: https://www.youtube.com/watch?v=SmYaJcYqaqo&t=339s
-      segment_ids:
-        - SmYaJcYqaqo:00037
-        - SmYaJcYqaqo:00040
-  - id: _f9fVMm2_Gs-cand-7-codex-reviewed
-    evidence_type: definition
-    excerpt: For a difficult or heavily spinning ball, make the upward brush about 70% of the shot and the forward drive 30% to produce a safe, high-arc loop.
-    reason: These contiguous segments directly state that difficult or heavily spinning balls should be handled with predominantly upward brushing followed by forward drive, producing a safe high-arc loop. The span is under 30 seconds and matches the supplied existing concept.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: _f9fVMm2_Gs
-      start_ms: 366233
-      end_ms: 386600
-      url: https://www.youtube.com/watch?v=_f9fVMm2_Gs&t=366s
-      segment_ids:
-        - _f9fVMm2_Gs:00058
-        - _f9fVMm2_Gs:00059
-        - _f9fVMm2_Gs:00060
+- id: phKJvL-8VbQ-concept-upward-forward-force-for-topspin-reviewed
+  evidence_type: definition
+  excerpt: Generating topspin by directing force upward while also moving the racket forward, rather than only forward or downward.
+  reason: The speaker says topspin requires upward force, warns that forward-only or downward force will not work, and states the racket must move forward and upward at contact.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: phKJvL-8VbQ
+    start_ms: 93966
+    end_ms: 118633
+    url: https://www.youtube.com/watch?v=phKJvL-8VbQ&t=93s
+    segment_ids:
+    - phKJvL-8VbQ:00022
+    - phKJvL-8VbQ:00023
+    - phKJvL-8VbQ:00024
+    - phKJvL-8VbQ:00028
+- id: VGXheTB1akM-concept-rotate-racket-head-to-lift-spin-reviewed
+  evidence_type: explanation
+  excerpt: Using racket-head rotation rather than a fixed racket angle to generate friction and lift incoming spin safely over the table.
+  reason: The speaker opens by saying to focus on rotating the racket head to lift spin, then explains that the rotation creates the friction needed to lift heavy spin and that a fixed racket angle fails.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: VGXheTB1akM
+    start_ms: 526500
+    end_ms: 547300
+    url: https://www.youtube.com/watch?v=VGXheTB1akM&t=526s
+    segment_ids:
+    - VGXheTB1akM:00103
+    - VGXheTB1akM:00105
+    - VGXheTB1akM:00106
+- id: _f9fVMm2_Gs-cand-7-reviewed
+  evidence_type: definition
+  excerpt: For looping and attacking difficult spin, first create enough upward lift to secure the arc, then drive forward.
+  reason: The speaker repeatedly frames the shot as upward first, then forward, including the ramp analogy and the 70% upward / 30% forward guidance on heavy spin.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: _f9fVMm2_Gs
+    start_ms: 531133
+    end_ms: 550566
+    url: https://www.youtube.com/watch?v=_f9fVMm2_Gs&t=531s
+    segment_ids:
+    - _f9fVMm2_Gs:00082
+    - _f9fVMm2_Gs:00083
+    - _f9fVMm2_Gs:00084
+    - _f9fVMm2_Gs:00085
+- id: CCb9qkkVxNQ-concept-forward-and-upward-lift-reviewed
+  evidence_type: explanation
+  excerpt: 'The response needed against heavy spinny balls: do not drive forward only; add upward force while also moving forward to lift the ball.'
+  reason: The speaker explains that forward alone cannot lift heavy spin and that the correct solution is forward and upward force.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: CCb9qkkVxNQ
+    start_ms: 193320
+    end_ms: 217320
+    url: https://www.youtube.com/watch?v=CCb9qkkVxNQ&t=193s
+    segment_ids:
+    - CCb9qkkVxNQ:00077
+    - CCb9qkkVxNQ:00082
+    - CCb9qkkVxNQ:00083
+    - CCb9qkkVxNQ:00086
+- id: SmYaJcYqaqo-new-foot-pivot-and-heel-lift-for-power-transfer-reviewed
+  evidence_type: definition
+  excerpt: A footwork action where the back heel lifts and the foot pivots to create an efficient axis for transferring force from the ground through the body.
+  reason: The speaker instructs players to press the foot down, lift the heel, pivot, and rotate the foot tip so power can move forward.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: SmYaJcYqaqo
+    start_ms: 339433
+    end_ms: 366533
+    url: https://www.youtube.com/watch?v=SmYaJcYqaqo&t=339s
+    segment_ids:
+    - SmYaJcYqaqo:00037
+    - SmYaJcYqaqo:00040
+- id: _f9fVMm2_Gs-cand-7-codex-reviewed
+  evidence_type: definition
+  excerpt: If the ball feels difficult to loop or has heavy spin, you can wait a little and use 70% upward brush with 30% forward drive for a safe, high-arc loop.
+  reason: For a difficult or heavily spinning ball, the cue is to wait a little and emphasize upward brushing over forward drive, using a 70/30 ratio for a safe, high arc.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: _f9fVMm2_Gs
+    start_ms: 366233
+    end_ms: 386600
+    url: https://www.youtube.com/watch?v=_f9fVMm2_Gs&t=366s
+    segment_ids:
+    - _f9fVMm2_Gs:00058
+    - _f9fVMm2_Gs:00059
+    - _f9fVMm2_Gs:00060

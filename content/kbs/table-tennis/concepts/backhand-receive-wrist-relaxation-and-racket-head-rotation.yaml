@@ -1,17 +1,12 @@
 id: concept-backhand-receive-wrist-relaxation-and-racket-head-rotation
 slug: backhand-receive-wrist-relaxation-and-racket-head-rotation
-label: Backhand receive wrist relaxation and racket-head rotation
+label: Wrist relaxation and racket-head rotation
 aliases: []
-short_definition: When receiving uncertain spin on the backhand side, relax the wrist and rotate the racket head to create controlled friction.
+short_definition: When the ball comes, relax your wrist and rotate the racket head.
 evidence_summary: >-
-  When receiving uncertain spin on the backhand side, relax the wrist and rotate the racket head
-  to create controlled friction.
-evidence_summary_source_hash: "sha256:63cf0a94d85732a0f88f2b751109a5ad9e4b52a99316bb829b9732827acd6144"
-evidence_summary_generator: "deterministic"
+  When the ball comes, relax your wrist and rotate the racket head.
 concept_type: fundamentals
-facets:
-  side:
-    - backhand
+facets: {}
 difficulty:
 review_status: approved
 generated_by:
@@ -23,19 +18,19 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: 2xGbue3FXIw-concept-backhand-wrist-stability-and-hooking-codex-reviewed
-    evidence_type: explanation
-    excerpt: So after the ball comes, the first point is to relax your wrist and rotate the racket head. This is the first key point. Relax your wrist and rotate the racket head.
-    reason: This contiguous span directly explains relaxing the wrist and rotating the racket head as the first focus when receiving on the backhand side. It is distinct from the supplied concept about keeping the wrist locked or hooked.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 2xGbue3FXIw
-      start_ms: 77715
-      end_ms: 87673
-      url: https://www.youtube.com/watch?v=2xGbue3FXIw&t=77s
-      segment_ids:
-        - 2xGbue3FXIw:00025
-        - 2xGbue3FXIw:00026
-        - 2xGbue3FXIw:00027
+- id: 2xGbue3FXIw-concept-backhand-wrist-stability-and-hooking-codex-reviewed
+  evidence_type: explanation
+  excerpt: So after the ball comes, the first point is to relax your wrist and rotate the racket head. This is the first key point. Relax your wrist and rotate the racket head.
+  reason: When the ball comes, relax your wrist and rotate the racket head. The speaker identifies this as the first key point.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 2xGbue3FXIw
+    start_ms: 77715
+    end_ms: 87673
+    url: https://www.youtube.com/watch?v=2xGbue3FXIw&t=77s
+    segment_ids:
+    - 2xGbue3FXIw:00025
+    - 2xGbue3FXIw:00026
+    - 2xGbue3FXIw:00027

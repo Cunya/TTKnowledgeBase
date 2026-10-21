@@ -2,25 +2,15 @@ id: concept-single-step-footwork-for-backhand-to-forehand
 slug: single-step-footwork-for-backhand-to-forehand
 label: Single-step footwork for backhand-to-forehand
 aliases:
-  - single step
-  - single step to move from the backhand to the forehand side
-short_definition: A precise one-step movement recommended for adults when moving from backhand to forehand, especially around the table.
+- single step from backhand to forehand
+short_definition: For amateurs moving around the table, especially from backhand to forehand, a single step is the speaker's preference for finding the contact point. The speaker instead recommends the side-shuffle for children because of their height, comparing two children's steps with one adult single step.
 evidence_summary: >-
-  A precise one-step movement recommended for adults when moving from backhand to forehand,
-  especially around the table.
-evidence_summary_source_hash: "sha256:46fbe32a3ca43552c63ebb2f5719d08675c7f7ee59ffe3dd2a61297e7d49cb94"
-evidence_summary_generator: "deterministic"
-concept_type: practice
+  For amateurs moving around the table, especially from backhand to forehand, a single step is the speaker's preference for finding the contact point. The speaker instead recommends the side-shuffle for children because of their height, comparing two children's steps with one adult single step.
+concept_type: footwork
 facets:
   category:
-    - practice
-  distance:
-    - close
-    - mid
-  level:
-    - beginner
-    - intermediate
-difficulty: intermediate
+  - fundamentals
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -31,49 +21,51 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: 9bLlHR-vBAU-concept-single-step-footwork-for-backhand-to-forehand-reviewed
-    evidence_type: explanation
-    excerpt: A precise one-step movement recommended for adults when moving from backhand to forehand, especially around the table.
-    reason: The speaker explicitly recommends a single step for adults to move from backhand to forehand because it is more precise and helps find the contact point.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 9bLlHR-vBAU
-      start_ms: 573766
-      end_ms: 603566
-      url: https://www.youtube.com/watch?v=9bLlHR-vBAU&t=573s
-      segment_ids:
-        - 9bLlHR-vBAU:00113
-        - 9bLlHR-vBAU:00117
-        - 9bLlHR-vBAU:00118
-  - id: QD9mHcPrHSU-concept-single-step-footwork-for-backhand-to-forehand-reviewed
-    evidence_type: explanation
-    excerpt: Use a single step or an initial right-foot move to enter the middle ball and create room to attack from the backhand side toward the forehand side.
-    reason: The speaker recommends a single step with the left foot or moving the right foot first, then stepping forward to create space for the shot.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: QD9mHcPrHSU
-      start_ms: 698933
-      end_ms: 724333
-      url: https://www.youtube.com/watch?v=QD9mHcPrHSU&t=698s
-      segment_ids:
-        - QD9mHcPrHSU:00147
-        - QD9mHcPrHSU:00152
-  - id: 9bLlHR-vBAU-concept-single-step-footwork-for-backhand-to-forehand-codex-reviewed
-    evidence_type: explanation
-    excerpt: The speaker recommends a single step for amateurs moving around the table, especially from backhand to forehand, because it helps them find the contact point better.
-    reason: These contiguous segments directly support the existing concept and fit within the 30-second publication-span limit.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 9bLlHR-vBAU
-      start_ms: 594366
-      end_ms: 603566
-      url: https://www.youtube.com/watch?v=9bLlHR-vBAU&t=594s
-      segment_ids:
-        - 9bLlHR-vBAU:00117
-        - 9bLlHR-vBAU:00118
+- id: 9bLlHR-vBAU-concept-single-step-footwork-for-backhand-to-forehand-reviewed
+  evidence_type: explanation
+  excerpt: A precise one-step movement recommended for adults when moving from backhand to forehand, especially around the table.
+  reason: The speaker explicitly recommends a single step for adults to move from backhand to forehand because it is more precise and helps find the contact point.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 9bLlHR-vBAU
+    start_ms: 573766
+    end_ms: 603566
+    url: https://www.youtube.com/watch?v=9bLlHR-vBAU&t=573s
+    segment_ids:
+    - 9bLlHR-vBAU:00113
+    - 9bLlHR-vBAU:00117
+    - 9bLlHR-vBAU:00118
+- id: QD9mHcPrHSU-concept-single-step-footwork-for-backhand-to-forehand-reviewed
+  evidence_type: explanation
+  excerpt: Use a single step or an initial right-foot move to enter the middle ball and create room to attack from the backhand side toward the forehand side.
+  reason: The speaker recommends a single step with the left foot or moving the right foot first, then stepping forward to create space for the shot.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: QD9mHcPrHSU
+    start_ms: 698933
+    end_ms: 724333
+    url: https://www.youtube.com/watch?v=QD9mHcPrHSU&t=698s
+    segment_ids:
+    - QD9mHcPrHSU:00147
+    - QD9mHcPrHSU:00152
+- id: 9bLlHR-vBAU-concept-single-step-footwork-for-backhand-to-forehand-codex-reviewed
+  evidence_type: explanation
+  excerpt: For amateurs moving around the table, especially from backhand to forehand, a single step is the speaker's preference for finding the contact point. The speaker instead recommends the side-shuffle for children because of their height, comparing two children's steps with one adult single step.
+  reason: For amateurs moving around the table, especially from backhand to forehand, a single step is the speaker's preference for finding the contact point. The speaker instead recommends the side-shuffle for children because of their height, comparing two children's steps with one adult single step.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 9bLlHR-vBAU
+    start_ms: 585266
+    end_ms: 603566
+    url: https://www.youtube.com/watch?v=9bLlHR-vBAU&t=585s
+    segment_ids:
+    - 9bLlHR-vBAU:00115
+    - 9bLlHR-vBAU:00116
+    - 9bLlHR-vBAU:00117
+    - 9bLlHR-vBAU:00118

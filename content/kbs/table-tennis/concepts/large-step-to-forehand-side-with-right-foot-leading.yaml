@@ -2,18 +2,15 @@ id: concept-large-step-to-forehand-side-with-right-foot-leading
 slug: large-step-to-forehand-side-with-right-foot-leading
 label: Large step to forehand side with right foot leading
 aliases: []
-short_definition: After recovering from the serve, take a large step with the right foot, followed by the left, then generate power.
+short_definition: In the forehand-side step example, recover from the serve, take a large step with the right foot followed by the left, then generate power.
 evidence_summary: >-
-  After recovering from the serve, take a large step with the right foot, followed by the left,
-  then generate power.
-evidence_summary_source_hash: "sha256:85c4f0710c44b2fbf1aee036a0410b2010cd74b394b6bf031c54580cd4f46b7e"
-evidence_summary_generator: "deterministic"
+  The speaker introduces a large step to the forehand side, contrasts simultaneous foot movement with stepping before pushing off the ground, then gives a right-foot-first sequence after serve recovery: right, left, then power.
 concept_type: footwork
 facets:
   category:
-    - fundamentals
+  - fundamentals
   side:
-    - forehand
+  - forehand
 difficulty:
 review_status: approved
 generated_by:
@@ -25,20 +22,39 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: McwvbLZZQmA-concept-large-step-forehand-side-with-right-foot-leading-codex-reviewed
-    evidence_type: explanation
-    excerpt: After recovering from the serve, take a large step with the right foot, followed by the left; the right foot initiates the movement before power is generated.
-    reason: 'These contiguous segments describe a distinct large forehand-side footwork sequence: the right foot moves first, the left follows, and power is generated afterward. The span is under 30 seconds and is more specific than the existing broader concept about right-foot activity.'
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: McwvbLZZQmA
-      start_ms: 462933
-      end_ms: 482666
-      url: https://www.youtube.com/watch?v=McwvbLZZQmA&t=462s
-      segment_ids:
-        - McwvbLZZQmA:00102
-        - McwvbLZZQmA:00103
-        - McwvbLZZQmA:00104
-        - McwvbLZZQmA:00105
+- id: McwvbLZZQmA-concept-large-step-forehand-side-with-right-foot-leading-codex-reviewed
+  evidence_type: explanation
+  excerpt: After recovering from the serve, take a large step with the right foot followed by the left; the right foot initiates the movement before generating power.
+  reason: 'After serve recovery, the speaker gives a right-foot-first sequence, followed by the left foot and then power.'
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: McwvbLZZQmA
+    start_ms: 462933
+    end_ms: 482666
+    url: https://www.youtube.com/watch?v=McwvbLZZQmA&t=462s
+    segment_ids:
+    - McwvbLZZQmA:00102
+    - McwvbLZZQmA:00103
+    - McwvbLZZQmA:00104
+    - McwvbLZZQmA:00105
+- id: McwvbLZZQmA-concept-large-step-forehand-side-with-right-foot-leading-codex-reviewed-source-context
+  evidence_type: explanation
+  excerpt: For a large step to the forehand side, the speaker contrasts simultaneous right-and-left foot movement with stepping first and then pushing off the ground to generate power.
+  reason: In this forehand-side example, the speaker steps before pushing off the ground for power, contrasting this with simultaneous foot movement.
+  confidence: 0.98
+  visual_status: not_visual
+  source:
+    video_id: McwvbLZZQmA
+    start_ms: 433366
+    end_ms: 459200
+    url: https://www.youtube.com/watch?v=McwvbLZZQmA&t=433s
+    segment_ids:
+    - McwvbLZZQmA:00096
+    - McwvbLZZQmA:00097
+    - McwvbLZZQmA:00098
+    - McwvbLZZQmA:00099
+    - McwvbLZZQmA:00100
+  visual_source:
+  review_status: approved

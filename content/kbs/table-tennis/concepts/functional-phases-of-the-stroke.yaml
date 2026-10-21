@@ -2,23 +2,18 @@ id: concept-functional-phases-of-the-stroke
 slug: functional-phases-of-the-stroke
 label: Functional phases of the stroke
 aliases:
-  - functional phases
-  - A, B, C
-  - phase one
-  - phase two
-short_definition: Breaking a stroke into distinct phases such as backswing, contact, drive-forward, and follow-through.
+- Brush, Drive, Stop
+- brush phase
+- drive phase
+- stop phase
+short_definition: 'The speaker describes looping a backspin ball in three steps: Brush, Drive, and Stop. Brushing supports consistency and getting the ball on the table; driving provides power; stopping provides acceleration.'
 evidence_summary: >-
-  Breaking a stroke into distinct phases such as backswing, contact, drive-forward, and
-  follow-through.
-evidence_summary_source_hash: "sha256:95935822aa0bf82e877ff8f62cd9f663844023277fd5c8862f2801fcff19ac43"
-evidence_summary_generator: "deterministic"
+  The speaker describes looping a backspin ball in three steps: Brush, Drive, and Stop. Brushing supports consistency and getting the ball on the table; driving provides power; stopping provides acceleration.
 concept_type: fundamentals
 facets:
   category:
-    - fundamentals
-  side:
-    - neutral
-difficulty: intermediate
+  - fundamentals
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -29,70 +24,70 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: UwOmAhuqBTA-concept-functional-phases-of-the-stroke-reviewed
-    evidence_type: explanation
-    excerpt: Breaking a stroke into distinct phases such as backswing, contact, drive-forward, and follow-through.
-    reason: The speaker explicitly divides the stroke into phases and maps them to A, B, C with contact and follow-through.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: UwOmAhuqBTA
-      start_ms: 65133
-      end_ms: 91066
-      url: https://www.youtube.com/watch?v=UwOmAhuqBTA&t=65s
-      segment_ids:
-        - UwOmAhuqBTA:00011
-        - UwOmAhuqBTA:00012
-        - UwOmAhuqBTA:00013
-        - UwOmAhuqBTA:00014
-        - UwOmAhuqBTA:00015
-        - UwOmAhuqBTA:00016
-  - id: fgtk9fxGTUw-concept-functional-phases-of-the-stroke-reviewed
-    evidence_type: definition
-    excerpt: A stroke can be taught as distinct phases that separate spin creation, power generation, and stopping or braking.
-    reason: 'The speaker explicitly breaks looping a backspin ball into three steps: brush, drive, stop.'
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: fgtk9fxGTUw
-      start_ms: 133
-      end_ms: 13600
-      url: https://www.youtube.com/watch?v=fgtk9fxGTUw&t=0s
-      segment_ids:
-        - fgtk9fxGTUw:00000
-        - fgtk9fxGTUw:00001
-        - fgtk9fxGTUw:00002
-  - id: yZKBUBBBSEw-concept-point-a-b-c-stroke-phases-reviewed
-    evidence_type: definition
-    excerpt: A three-part stroke model where Point A is the tucked backswing, Point B is the outward contact zone, and Point C is the accelerated follow-through and finish.
-    reason: The speaker names the three phases and assigns Point A, B, and C specific roles in the swing.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: yZKBUBBBSEw
-      start_ms: 198333
-      end_ms: 222000
-      url: https://www.youtube.com/watch?v=yZKBUBBBSEw&t=198s
-      segment_ids:
-        - yZKBUBBBSEw:00034
-        - yZKBUBBBSEw:00035
-        - yZKBUBBBSEw:00036
-  - id: fgtk9fxGTUw-concept-functional-phases-of-the-stroke-codex-reviewed
-    evidence_type: definition
-    excerpt: 'Looping a backspin ball is organized into three steps: brush, drive, and stop. Brushing helps consistency and getting the ball on the table; driving provides power; stopping provides acceleration.'
-    reason: These contiguous segments explicitly define the stroke as three steps—brush, drive, and stop—and explain the function of each.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: fgtk9fxGTUw
-      start_ms: 133
-      end_ms: 13600
-      url: https://www.youtube.com/watch?v=fgtk9fxGTUw&t=0s
-      segment_ids:
-        - fgtk9fxGTUw:00000
-        - fgtk9fxGTUw:00001
-        - fgtk9fxGTUw:00002
+- id: UwOmAhuqBTA-concept-functional-phases-of-the-stroke-reviewed
+  evidence_type: explanation
+  excerpt: Breaking a stroke into distinct phases such as backswing, contact, drive-forward, and follow-through.
+  reason: The speaker explicitly divides the stroke into phases and maps them to A, B, C with contact and follow-through.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: UwOmAhuqBTA
+    start_ms: 65133
+    end_ms: 91066
+    url: https://www.youtube.com/watch?v=UwOmAhuqBTA&t=65s
+    segment_ids:
+    - UwOmAhuqBTA:00011
+    - UwOmAhuqBTA:00012
+    - UwOmAhuqBTA:00013
+    - UwOmAhuqBTA:00014
+    - UwOmAhuqBTA:00015
+    - UwOmAhuqBTA:00016
+- id: fgtk9fxGTUw-concept-functional-phases-of-the-stroke-reviewed
+  evidence_type: definition
+  excerpt: A stroke can be taught as distinct phases that separate spin creation, power generation, and stopping or braking.
+  reason: 'The speaker explicitly breaks looping a backspin ball into three steps: brush, drive, stop.'
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: fgtk9fxGTUw
+    start_ms: 133
+    end_ms: 13600
+    url: https://www.youtube.com/watch?v=fgtk9fxGTUw&t=0s
+    segment_ids:
+    - fgtk9fxGTUw:00000
+    - fgtk9fxGTUw:00001
+    - fgtk9fxGTUw:00002
+- id: yZKBUBBBSEw-concept-point-a-b-c-stroke-phases-reviewed
+  evidence_type: definition
+  excerpt: A three-part stroke model where Point A is the tucked backswing, Point B is the outward contact zone, and Point C is the accelerated follow-through and finish.
+  reason: The speaker names the three phases and assigns Point A, B, and C specific roles in the swing.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: yZKBUBBBSEw
+    start_ms: 198333
+    end_ms: 222000
+    url: https://www.youtube.com/watch?v=yZKBUBBBSEw&t=198s
+    segment_ids:
+    - yZKBUBBBSEw:00034
+    - yZKBUBBBSEw:00035
+    - yZKBUBBBSEw:00036
+- id: fgtk9fxGTUw-concept-functional-phases-of-the-stroke-codex-reviewed
+  evidence_type: definition
+  excerpt: 'The speaker describes looping a backspin ball in three steps: Brush, Drive, and Stop. Brushing supports consistency and getting the ball on the table; driving provides power; stopping provides acceleration.'
+  reason: The speaker names Brush, Drive, and Stop as the three steps for looping a backspin ball and assigns consistency and on-table success, power, and acceleration to them respectively.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: fgtk9fxGTUw
+    start_ms: 133
+    end_ms: 13600
+    url: https://www.youtube.com/watch?v=fgtk9fxGTUw&t=0s
+    segment_ids:
+    - fgtk9fxGTUw:00000
+    - fgtk9fxGTUw:00001
+    - fgtk9fxGTUw:00002

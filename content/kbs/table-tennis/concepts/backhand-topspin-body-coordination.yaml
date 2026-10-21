@@ -1,712 +1,842 @@
-id: concept-backhand-topspin-body-coordination
-slug: backhand-topspin-body-coordination
-label: Backhand topspin body coordination
-aliases: [backhand loop body mechanics, backhand coil and thrust, coordinated backhand topspin]
-short_definition: A coordinated backhand topspin uses a square, open stance and a core-led coil-and-thrust so the forearm can accelerate without becoming disconnected from the body.
-evidence_summary: >-
-  Effective backhand topspin starts from a stable base that supports repeated strokes and reduces
-  unnecessary foot movement, especially in rally situations. Power comes from a small leftward
-  coil, weight staying on the left leg, and then a forward release through the hips and torso,
-  while the upper arm and elbow remain stable so the forearm can create spin through rotation. The
-  best shape keeps the body leaning forward, the elbow in front, and the forearm extending toward
-  the ball so body strength and arm action work together.
-evidence_summary_source_hash: "sha256:6bfafe960ebe7422b634897fa991ed2d73c99f5a49ce070e02b0ccfbdd64d922"
-evidence_summary_generator: "codex"
-detailed_definition: Keep the feet nearly level, leave enough hip space for the backswing to remain inside the body line, and coil the abdomen inward with the preparation. Drive the core forward into contact while the forearm supplies the ordinary upward component. A static or permanently coiled body leaves the arm working alone and limits both power and consistency.
+aliases:
+- backhand stance and mechanics
+- backhand body mechanics
+- backhand coil and thrust
 concept_type: principle
-facets:
-  category: [mechanics, stroke]
-  side: [backhand]
-  spin: [topspin]
-  level: [intermediate]
-difficulty: intermediate
-review_status: approved
+detailed_definition: For a strong backhand, keep the right foot from falling too far behind the left and keep the feet nearly level; the speaker recommends standing square at minimum and says he usually places his right foot slightly forward in rallies. Open the hips and keep the backswing inside the body line. For a backhand attack, coil inward with the backswing and drive forward by thrusting the abdomen. The speaker describes abdominal contraction and expansion as central to his own stroke, says core engagement synchronizes arm and body movement, and summarizes a backhand drive as a “coil and thrust” of the core.
+difficulty: null
 evidence:
-  - id: backhand-square-stance-spinmaster
-    evidence_type: explanation
-    excerpt: Keep the feet nearly level, with the right foot at most slightly forward.
-    reason: Establishes a stable base for repeated backhand strokes.
-    confidence: 0.92
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: 3kC8KEl3iow, start_ms: 2280, end_ms: 16960, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=2s", segment_ids: ["3kC8KEl3iow:00000", "3kC8KEl3iow:00001", "3kC8KEl3iow:00002", "3kC8KEl3iow:00003", "3kC8KEl3iow:00004", "3kC8KEl3iow:00005"]}
-  - id: backhand-open-hips-spinmaster
-    evidence_type: correction
-    excerpt: Open the hips and keep the backswing inside the body line.
-    reason: Prevents the contact from drifting too far outside the body.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: 3kC8KEl3iow, start_ms: 30760, end_ms: 39240, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=30s", segment_ids: ["3kC8KEl3iow:00010", "3kC8KEl3iow:00011", "3kC8KEl3iow:00012"]}
-  - id: backhand-core-coil-global
-    evidence_type: explanation
-    excerpt: Coil the abdomen inward before driving forward into the active backhand.
-    reason: Identifies the core action that connects preparation to forward acceleration.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: YUEaL2HiPIE, start_ms: 125100, end_ms: 150833, url: "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=125s", segment_ids: ["YUEaL2HiPIE:00025", "YUEaL2HiPIE:00027", "YUEaL2HiPIE:00030"]}
-  - id: backhand-static-body-error-global
-    evidence_type: mistake
-    excerpt: A static body disconnects the backswing and limits power. Coil the body with the backswing and then drive forward rather than remaining upright or permanently coiled.
-    reason: A static body disconnects the backswing and limits power. Coil the body with the backswing and then drive forward rather than remaining upright or permanently coiled.
-    confidence: 0.91
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: YUEaL2HiPIE, start_ms: 150833, end_ms: 169266, url: "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=150s", segment_ids: ["YUEaL2HiPIE:00031", "YUEaL2HiPIE:00032", "YUEaL2HiPIE:00033", "YUEaL2HiPIE:00034"]}
-  - id: backhand-forearm-lift-global
-    evidence_type: correction
-    excerpt: For ordinary strokes, the forearm supplies lift after contact instead of the shoulder.
-    reason: Separates the forearm's upward role from the upper arm's forward drive.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: YUEaL2HiPIE, start_ms: 414200, end_ms: 427433, url: "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=414s", segment_ids: ["YUEaL2HiPIE:00087", "YUEaL2HiPIE:00088", "YUEaL2HiPIE:00089"]}
-  - id: backhand-wide-stance-center-6
-    evidence_type: explanation
-    excerpt: Widen the stance so the center of gravity can find balls across the backhand half.
-    reason: Explains how stance width reduces unnecessary foot movement during repeated backhands.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: 3kC8KEl3iow, start_ms: 36640, end_ms: 51040, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=36s", segment_ids: ["3kC8KEl3iow:00013", "3kC8KEl3iow:00014", "3kC8KEl3iow:00015", "3kC8KEl3iow:00016", "3kC8KEl3iow:00017", "3kC8KEl3iow:00018"]}
-  - id: backhand-shoulder-containment-7
-    evidence_type: correction
-    excerpt: Contain the shoulders inward on the backhand; opening them outward sends the ball wide.
-    reason: Connects upper-body organization to directional control.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source: {video_id: 3kC8KEl3iow, start_ms: 81360, end_ms: 102400, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=81s", segment_ids: ["3kC8KEl3iow:00032", "3kC8KEl3iow:00033", "3kC8KEl3iow:00034", "3kC8KEl3iow:00035", "3kC8KEl3iow:00036", "3kC8KEl3iow:00037", "3kC8KEl3iow:00038"]}
-  - id: backhand-spiral-rotation-8
-    evidence_type: drill
-    excerpt: Add a subtle left-side rotation—turn in, drive forward, and pull back as a small spiral.
-    reason: Extends the core-led backhand from a simple forward block into a spin-and-power action.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source: {video_id: 3kC8KEl3iow, start_ms: 147720, end_ms: 172360, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=147s", segment_ids: ["3kC8KEl3iow:00055", "3kC8KEl3iow:00056", "3kC8KEl3iow:00057", "3kC8KEl3iow:00058", "3kC8KEl3iow:00059", "3kC8KEl3iow:00060", "3kC8KEl3iow:00061", "3kC8KEl3iow:00062"]}
-  - id: JcH1Nudznvk-cand-backhand-loop-receive-weight-transfer-1
-    evidence_type: explanation
-    excerpt: Against fast, deep or heavy-spin balls on the backhand receive, keep the center of gravity low and stable instead of crouching and rising, because there is not enough time for a full body-driven loop.
-    reason: The speaker contrasts active upward body use with the special case of fast receive balls, where the player must stay low and rely more on hand acceleration.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: JcH1Nudznvk
-      start_ms: 172440
-      end_ms: 196680
-      url: "https://www.youtube.com/watch?v=JcH1Nudznvk&t=172s"
-      segment_ids:
-        - "JcH1Nudznvk:00065"
-        - "JcH1Nudznvk:00067"
-        - "JcH1Nudznvk:00070"
-        - "JcH1Nudznvk:00072"
-  - id: JcH1Nudznvk-cand-backhand-loop-receive-weight-transfer-2
-    evidence_type: explanation
-    excerpt: Against fast, deep or heavy-spin balls on the backhand receive, keep the center of gravity low and stable instead of crouching and rising, because there is not enough time for a full body-driven loop.
-    reason: The speaker contrasts active upward body use with the special case of fast receive balls, where the player must stay low and rely more on hand acceleration.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: JcH1Nudznvk
-      start_ms: 209400
-      end_ms: 224560
-      url: "https://www.youtube.com/watch?v=JcH1Nudznvk&t=209s"
-      segment_ids:
-        - "JcH1Nudznvk:00078"
-        - "JcH1Nudznvk:00082"
-  - id: JcH1Nudznvk-cand-backhand-loop-receive-weight-transfer-3
-    evidence_type: explanation
-    excerpt: Against fast, deep or heavy-spin balls on the backhand receive, keep the center of gravity low and stable instead of crouching and rising, because there is not enough time for a full body-driven loop.
-    reason: The speaker contrasts active upward body use with the special case of fast receive balls, where the player must stay low and rely more on hand acceleration.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: JcH1Nudznvk
-      start_ms: 243760
-      end_ms: 263280
-      url: "https://www.youtube.com/watch?v=JcH1Nudznvk&t=243s"
-      segment_ids:
-        - "JcH1Nudznvk:00088"
-        - "JcH1Nudznvk:00089"
-        - "JcH1Nudznvk:00091"
-        - "JcH1Nudznvk:00095"
-  - id: JcH1Nudznvk-cand-backhand-loop-left-side-weight-1
-    evidence_type: explanation
-    excerpt: For the backhand loop, especially against heavy spin, shifting weight slightly more to the left side helps lift the ball and makes the stroke smoother and stronger.
-    reason: The speaker explains that keeping too much weight on the right causes net errors, while placing slightly more weight on the left makes the backhand loop smoother.
-    confidence: 0.88
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: JcH1Nudznvk
-      start_ms: 279120
-      end_ms: 305160
-      url: "https://www.youtube.com/watch?v=JcH1Nudznvk&t=279s"
-      segment_ids:
-        - "JcH1Nudznvk:00103"
-        - "JcH1Nudznvk:00105"
-        - "JcH1Nudznvk:00107"
-        - "JcH1Nudznvk:00109"
-        - "JcH1Nudznvk:00112"
-        - "JcH1Nudznvk:00114"
-  - id: q9c2_hCwlhs-cand-3-1
-    evidence_type: explanation
-    excerpt: The speaker teaches spiral rotation, left-leg loading, and hip-belly drive as the source of backhand force.
-    reason: Backhand power comes from a small leftward coil, weight staying on the left leg, and then a forward release of hips and torso rather than only squatting and pushing.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: q9c2_hCwlhs
-      start_ms: 159320
-      end_ms: 164440
-      url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=159s
-      segment_ids:
-        - q9c2_hCwlhs:00062
-  - id: q9c2_hCwlhs-cand-3-2
-    evidence_type: explanation
-    excerpt: The speaker teaches spiral rotation, left-leg loading, and hip-belly drive as the source of backhand force.
-    reason: Backhand power comes from a small leftward coil, weight staying on the left leg, and then a forward release of hips and torso rather than only squatting and pushing.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: q9c2_hCwlhs
-      start_ms: 190360
-      end_ms: 192920
-      url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=190s
-      segment_ids:
-        - q9c2_hCwlhs:00077
-  - id: q9c2_hCwlhs-cand-3-3
-    evidence_type: explanation
-    excerpt: A slight leftward rotation before release is described as essential, with emphasis that only a small twist is needed.
-    reason: Backhand power comes from a small leftward coil, weight staying on the left leg, and then a forward release of hips and torso rather than only squatting and pushing.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: q9c2_hCwlhs
-      start_ms: 204840
-      end_ms: 208720
-      url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=204s
-      segment_ids:
-        - q9c2_hCwlhs:00082
-  - id: q9c2_hCwlhs-cand-3-4
-    evidence_type: explanation
-    excerpt: A slight leftward rotation before release is described as essential, with emphasis that only a small twist is needed.
-    reason: Backhand power comes from a small leftward coil, weight staying on the left leg, and then a forward release of hips and torso rather than only squatting and pushing.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: q9c2_hCwlhs
-      start_ms: 229480
-      end_ms: 233360
-      url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=229s
-      segment_ids:
-        - q9c2_hCwlhs:00093
-  - id: YUEaL2HiPIE-concept-backhand-core-coil-thrust-1
-    evidence_type: definition
-    excerpt: Speaker states his backhand is mainly driven by abdominal contraction-expansion and inward coil.
-    reason: The active backhand is powered by an inward abdominal coil during the backswing followed by a forward thrust, rather than by an arm-only swing.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: YUEaL2HiPIE
-      start_ms: 111200
-      end_ms: 140100
-      url: https://www.youtube.com/watch?v=YUEaL2HiPIE&t=111s
-      segment_ids:
-        - YUEaL2HiPIE:00022
-        - YUEaL2HiPIE:00023
-        - YUEaL2HiPIE:00024
-        - YUEaL2HiPIE:00025
-        - YUEaL2HiPIE:00027
-  - id: YUEaL2HiPIE-concept-backhand-core-coil-thrust-2
-    evidence_type: definition
-    excerpt: Speaker states his backhand is mainly driven by abdominal contraction-expansion and inward coil.
-    reason: The active backhand is powered by an inward abdominal coil during the backswing followed by a forward thrust, rather than by an arm-only swing.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: YUEaL2HiPIE
-      start_ms: 147866
-      end_ms: 150833
-      url: https://www.youtube.com/watch?v=YUEaL2HiPIE&t=147s
-      segment_ids:
-        - YUEaL2HiPIE:00030
-  - id: YUEaL2HiPIE-concept-backhand-core-coil-thrust-4
-    evidence_type: demonstration
-    excerpt: Speaker demonstrates the coil-in, drive-out pattern and links it to body-arm synchronization.
-    reason: The active backhand is powered by an inward abdominal coil during the backswing followed by a forward thrust, rather than by an arm-only swing.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: YUEaL2HiPIE
-      start_ms: 180200
-      end_ms: 199400
-      url: https://www.youtube.com/watch?v=YUEaL2HiPIE&t=180s
-      segment_ids:
-        - YUEaL2HiPIE:00038
-        - YUEaL2HiPIE:00039
-        - YUEaL2HiPIE:00040
-        - YUEaL2HiPIE:00041
-  - id: YUEaL2HiPIE-concept-backhand-core-coil-thrust-5
-    evidence_type: demonstration
-    excerpt: Speaker demonstrates the coil-in, drive-out pattern and links it to body-arm synchronization.
-    reason: The active backhand is powered by an inward abdominal coil during the backswing followed by a forward thrust, rather than by an arm-only swing.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: YUEaL2HiPIE
-      start_ms: 207466
-      end_ms: 212300
-      url: https://www.youtube.com/watch?v=YUEaL2HiPIE&t=207s
-      segment_ids:
-        - YUEaL2HiPIE:00044
-  - id: A4-lKRVwSFc-concept-backhand-topspin-body-coordination-reviewed
-    evidence_type: explanation
-    excerpt: Backhand topspin uses coordinated arm positions where elbow and forearm move in opposite directions, with the upper arm and elbow staying stable while the forearm rotates to create spin.
-    reason: Speaker explains elbow up/forearm down, says the upper arm and elbow must be stable, and that spin comes from forearm rotation after stabilization.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: A4-lKRVwSFc
-      start_ms: 350040
-      end_ms: 364880
-      url: https://www.youtube.com/watch?v=A4-lKRVwSFc&t=350s
-      segment_ids:
-        - A4-lKRVwSFc:00133
-        - A4-lKRVwSFc:00137
-  - id: bKtA240EvTQ-concept-backhand-topspin-body-coordination-reviewed
-    evidence_type: explanation
-    excerpt: Coordinating body movement, torso power, and hand action so the backhand topspin is driven by the body rather than the arm alone.
-    reason: The transcript explicitly links waist and core power with synchronized body-and-hand movement and contrasts that with an arm-dominant loop.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: bKtA240EvTQ
-      start_ms: 582320
-      end_ms: 610680
-      url: https://www.youtube.com/watch?v=bKtA240EvTQ&t=582s
-      segment_ids:
-        - bKtA240EvTQ:00214
-        - bKtA240EvTQ:00215
-        - bKtA240EvTQ:00216
-        - bKtA240EvTQ:00217
-        - bKtA240EvTQ:00218
-        - bKtA240EvTQ:00219
-        - bKtA240EvTQ:00220
-        - bKtA240EvTQ:00221
-        - bKtA240EvTQ:00222
-        - bKtA240EvTQ:00223
-        - bKtA240EvTQ:00224
-  - id: UCyUdarqdJc-concept-backhand-topspin-body-coordination-reviewed
-    evidence_type: explanation
-    excerpt: Backhand topspin power comes from coordinated upper-arm, elbow, forearm, and body movement that drives forward through the ball.
-    reason: The speaker explains that backhand power comes from pressing through the ball with coordinated arm segments and forward meeting, not vertical lifting.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: UCyUdarqdJc
-      start_ms: 452880
-      end_ms: 481520
-      url: https://www.youtube.com/watch?v=UCyUdarqdJc&t=452s
-      segment_ids:
-        - UCyUdarqdJc:00178
-        - UCyUdarqdJc:00179
-        - UCyUdarqdJc:00180
-        - UCyUdarqdJc:00181
-        - UCyUdarqdJc:00182
-        - UCyUdarqdJc:00183
-        - UCyUdarqdJc:00184
-        - UCyUdarqdJc:00185
-  - id: OMgoeirhpyc-concept-backhand-topspin-body-coordination-reviewed
-    evidence_type: explanation
-    excerpt: Coordinating body posture, elbow position, and forward drive to produce an effective backhand topspin or rally ball.
-    reason: The coach describes the proper backhand rally shape, leaning forward, keeping the elbow in front, and extending the forearm forward on fast balls.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: OMgoeirhpyc
-      start_ms: 389320
-      end_ms: 418600
-      url: https://www.youtube.com/watch?v=OMgoeirhpyc&t=389s
-      segment_ids:
-        - OMgoeirhpyc:00132
-        - OMgoeirhpyc:00133
-        - OMgoeirhpyc:00139
-        - OMgoeirhpyc:00140
-        - OMgoeirhpyc:00141
-        - OMgoeirhpyc:00142
-        - OMgoeirhpyc:00143
-        - OMgoeirhpyc:00144
-  - id: H0sbIUpUNLY-cand-9-reviewed
-    evidence_type: explanation
-    excerpt: Coordinating the backhand topspin with the body by lowering the center of gravity and using the body to support the stroke arc and power.
-    reason: The speaker explicitly instructs to lower the center of gravity, use more body, and increase brushing.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: H0sbIUpUNLY
-      start_ms: 509280
-      end_ms: 516960
-      url: https://www.youtube.com/watch?v=H0sbIUpUNLY&t=509s
-      segment_ids:
-        - H0sbIUpUNLY:00170
-        - H0sbIUpUNLY:00171
-        - H0sbIUpUNLY:00172
-  - id: hp9OZTBD5JE-concept-backhand-topspin-body-coordination-reviewed
-    evidence_type: explanation
-    excerpt: Coordinating torso, hips, body compression and extension with the arm to produce an effective backhand topspin stroke.
-    reason: The transcript repeatedly ties backhand quality to torso/hips, body-arm coordination, compression and extension, and using body strength together with the arm.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: hp9OZTBD5JE
-      start_ms: 63160
-      end_ms: 89680
-      url: https://www.youtube.com/watch?v=hp9OZTBD5JE&t=63s
-      segment_ids:
-        - hp9OZTBD5JE:00020
-        - hp9OZTBD5JE:00021
-        - hp9OZTBD5JE:00031
-  - id: A_hvhZM5dc4-concept-backhand-topspin-body-coordination-reviewed
-    evidence_type: explanation
-    excerpt: Backhand topspin requires coordinated loading from the body, down-low power generation, and controlled use of wrist and arm rather than an upright lifting motion.
-    reason: The speaker contrasts shoulder rotation with a compact arm-led stroke, and says power must be loaded down low and combined before release.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: A_hvhZM5dc4
-      start_ms: 361900
-      end_ms: 389866
-      url: https://www.youtube.com/watch?v=A_hvhZM5dc4&t=361s
-      segment_ids:
-        - A_hvhZM5dc4:00115
-        - A_hvhZM5dc4:00116
-        - A_hvhZM5dc4:00117
-        - A_hvhZM5dc4:00118
-        - A_hvhZM5dc4:00119
-        - A_hvhZM5dc4:00120
-        - A_hvhZM5dc4:00121
-        - A_hvhZM5dc4:00122
-  - id: b_kKpVRuU1Q-concept-backhand-topspin-body-coordination-reviewed
-    evidence_type: explanation
-    excerpt: A backhand topspin progression in which the wrist forms the base motion first and the forearm, upper arm, and body are added after the basic loop is stable.
-    reason: The speaker lays out the progression from a wrist arc to adding body, forearm, and upper arm once the motion is stable.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: b_kKpVRuU1Q
-      start_ms: 324633
-      end_ms: 341566
-      url: https://www.youtube.com/watch?v=b_kKpVRuU1Q&t=324s
-      segment_ids:
-        - b_kKpVRuU1Q:00088
-        - b_kKpVRuU1Q:00089
-        - b_kKpVRuU1Q:00090
-        - b_kKpVRuU1Q:00091
-  - id: uRu7I3Cvojk-new-banana-flick-arm-shape-reviewed
-    evidence_type: definition
-    excerpt: The banana flick uses a lifted elbow, dropped wrist, and an inwardly tucked arm to preserve the motion path and avoid collapsing into a flip.
-    reason: The speaker specifies elbow lift, wrist drop, and inward arm tuck as practice requirements for the banana flick.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: uRu7I3Cvojk
-      start_ms: 182566
-      end_ms: 198666
-      url: https://www.youtube.com/watch?v=uRu7I3Cvojk&t=182s
-      segment_ids:
-        - uRu7I3Cvojk:00057
-        - uRu7I3Cvojk:00058
-        - uRu7I3Cvojk:00059
-        - uRu7I3Cvojk:00062
-  - id: vCa7A9gyOT8-concept-backhand-topspin-body-coordination-reviewed
-    evidence_type: explanation
-    excerpt: Coordinating forearm rotation, wrist position, and body action to produce power on backhand topspin or rip shots.
-    reason: The speaker explains forearm isolation, external rotation, and the separation of upper and lower arm as the coordination required for strong backhand play.
-    confidence: 0.91
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: vCa7A9gyOT8
-      start_ms: 133366
-      end_ms: 149166
-      url: https://www.youtube.com/watch?v=vCa7A9gyOT8&t=133s
-      segment_ids:
-        - vCa7A9gyOT8:00032
-        - vCa7A9gyOT8:00035
-  - id: k7-gEsWTYFg-concept-backhand-topspin-body-coordination-reviewed
-    evidence_type: definition
-    excerpt: Coordinating the backhand topspin stroke with body position, knee bend, and contact so the stroke has combined force.
-    reason: The speaker explicitly describes a normal backhand topspin stroke with knee bend, contact, and combined force.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: k7-gEsWTYFg
-      start_ms: 8966
-      end_ms: 18066
-      url: https://www.youtube.com/watch?v=k7-gEsWTYFg&t=8s
-      segment_ids:
-        - k7-gEsWTYFg:00000
-        - k7-gEsWTYFg:00001
-        - k7-gEsWTYFg:00002
-        - k7-gEsWTYFg:00003
-  - id: tpY3SRVdBK8-concept-backhand-body-coordination-reviewed
-    evidence_type: explanation
-    excerpt: Coordinating lower body, upper body, and arm actions to produce an effective backhand topspin stroke.
-    reason: The speaker describes lower-body movement, upper-body response, stepping forward, and rotating as part of the stroke pattern.
-    confidence: 0.87
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: tpY3SRVdBK8
-      start_ms: 82800
-      end_ms: 93566
-      url: https://www.youtube.com/watch?v=tpY3SRVdBK8&t=82s
-      segment_ids:
-        - tpY3SRVdBK8:00005
-        - tpY3SRVdBK8:00006
-  - id: Whmhzk845aA-concept-backhand-topspin-body-coordination-reviewed
-    evidence_type: explanation
-    excerpt: Coordinating body motion and force direction to execute stable backhand topspin against spinny balls.
-    reason: The transcript says the brush loop is the most stable backhand topspin method and emphasizes controlling force direction rather than lifting upward.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: Whmhzk845aA
-      start_ms: 687000
-      end_ms: 712533
-      url: https://www.youtube.com/watch?v=Whmhzk845aA&t=687s
-      segment_ids:
-        - Whmhzk845aA:00197
-        - Whmhzk845aA:00198
-        - Whmhzk845aA:00204
-  - id: EjtP5uCaULU-concept-backhand-topspin-body-coordination-reviewed
-    evidence_type: explanation
-    excerpt: Generating a backhand topspin loop by coordinating body lowering, stable posture, elbow positioning, forearm rotation, and later arm power.
-    reason: He describes a two-action sequence in which lift/loop comes first and arm power follows after friction is established.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: EjtP5uCaULU
-      start_ms: 568966
-      end_ms: 598200
-      url: https://www.youtube.com/watch?v=EjtP5uCaULU&t=568s
-      segment_ids:
-        - EjtP5uCaULU:00133
-        - EjtP5uCaULU:00136
-        - EjtP5uCaULU:00139
-  - id: vzLW5MAX7gA-backhand-body-coordination-reviewed
-    evidence_type: explanation
-    excerpt: Backhand power and rhythm should be coordinated through the whole body, with the core coiling and releasing while the hips, legs, and waist work together.
-    reason: The speaker describes the backhand as a whole-body action built from the core, hips, legs, and waist, using coil/release and coil/thrust rhythm.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: vzLW5MAX7gA
-      start_ms: 205333
-      end_ms: 233300
-      url: https://www.youtube.com/watch?v=vzLW5MAX7gA&t=205s
-      segment_ids:
-        - vzLW5MAX7gA:00043
-        - vzLW5MAX7gA:00044
-        - vzLW5MAX7gA:00045
-        - vzLW5MAX7gA:00046
-        - vzLW5MAX7gA:00047
-        - vzLW5MAX7gA:00048
-  - id: rOMRGvlgAAU-concept-backhand-topspin-body-coordination-reviewed
-    evidence_type: explanation
-    excerpt: Coordinating the body and stroke during a backhand topspin action so power comes from the whole motion, not just the arm.
-    reason: The speaker describes a competitive backhand loop as bracing down and exploding forward, moving the body forward into the shot, and needing forward power rather than only upward power.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: rOMRGvlgAAU
-      start_ms: 393600
-      end_ms: 423000
-      url: https://www.youtube.com/watch?v=rOMRGvlgAAU&t=393s
-      segment_ids:
-        - rOMRGvlgAAU:00078
-        - rOMRGvlgAAU:00079
-        - rOMRGvlgAAU:00080
-        - rOMRGvlgAAU:00083
-  - id: eDDICo0Damw-concept-backhand-topspin-body-coordination-reviewed
-    evidence_type: explanation
-    excerpt: Coordinating body and arm together on the backhand so the body supports and moves with the swing instead of acting independently.
-    reason: The speaker says the body and arm are one unit and the body must support the arm.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: eDDICo0Damw
-      start_ms: 616366
-      end_ms: 632900
-      url: https://www.youtube.com/watch?v=eDDICo0Damw&t=616s
-      segment_ids:
-        - eDDICo0Damw:00122
-        - eDDICo0Damw:00124
-  - id: hNnojmq7CqU-concept-backhand-topspin-body-coordination-reviewed
-    evidence_type: demonstration
-    excerpt: Using coordinated down-up body action on the backhand to support the loop and generate power without disconnecting the arm.
-    reason: The speaker demonstrates and describes the backhand as a synchronized down-then-up motion, explicitly tying it to power generation with low effort.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: hNnojmq7CqU
-      start_ms: 284033
-      end_ms: 304033
-      url: https://www.youtube.com/watch?v=hNnojmq7CqU&t=284s
-      segment_ids:
-        - hNnojmq7CqU:00061
-        - hNnojmq7CqU:00062
-        - hNnojmq7CqU:00063
-        - hNnojmq7CqU:00064
-  - id: wj87pK5547g-concept-backhand-topspin-body-coordination-reviewed
-    evidence_type: explanation
-    excerpt: Generating backhand loop power by coordinating the core, back muscles, abdomen, and arm rather than relying only on the arm.
-    reason: The speaker explains that power comes from engaging the core and exploding forward, not from a disconnected arm movement.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: wj87pK5547g
-      start_ms: 243200
-      end_ms: 271066
-      url: https://www.youtube.com/watch?v=wj87pK5547g&t=243s
-      segment_ids:
-        - wj87pK5547g:00047
-        - wj87pK5547g:00048
-        - wj87pK5547g:00050
-        - wj87pK5547g:00051
-  - id: U3o7_ad82dk-concept-backhand-topspin-body-coordination-reviewed
-    evidence_type: explanation
-    excerpt: 'Coordinate the backhand with a compact in-and-out core motion: tuck in during preparation and drive out through contact for both looping and driving.'
-    reason: The speaker explicitly names the core action as tuck-and-drive, describing it as an in-and-out motion from the side view.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: U3o7_ad82dk
-      start_ms: 372233
-      end_ms: 395233
-      url: https://www.youtube.com/watch?v=U3o7_ad82dk&t=372s
-      segment_ids:
-        - U3o7_ad82dk:00068
-        - U3o7_ad82dk:00069
-        - U3o7_ad82dk:00070
-        - U3o7_ad82dk:00071
-  - id: urfOsNEfkYg-urfOsNEfkYg-concept-7-reviewed
-    evidence_type: explanation
-    excerpt: A backhand topspin stroke that relies on coordinated forearm and upper-arm structure rather than moving the whole arm as one rigid unit.
-    reason: The speaker says weak backhands fail to separate upper arm and forearm, and that high-quality topspin requires this coordination.
-    confidence: 0.86
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: urfOsNEfkYg
-      start_ms: 129440
-      end_ms: 154920
-      url: https://www.youtube.com/watch?v=urfOsNEfkYg&t=129s
-      segment_ids:
-        - urfOsNEfkYg:00054
-        - urfOsNEfkYg:00055
-        - urfOsNEfkYg:00056
-        - urfOsNEfkYg:00057
-        - urfOsNEfkYg:00058
-        - urfOsNEfkYg:00059
-        - urfOsNEfkYg:00060
-        - urfOsNEfkYg:00061
-        - urfOsNEfkYg:00062
-        - urfOsNEfkYg:00063
-        - urfOsNEfkYg:00064
-  - id: EjtP5uCaULU-concept-backhand-topspin-body-coordination-codex-reviewed
-    evidence_type: explanation
-    excerpt: 'Within a single stroke, complete two actions: lift or loop first, then drive through the ball. The drive or power part must come after the lift or loop part.'
-    reason: This contiguous 29.2-second explanation directly describes the two-part power-loop sequence and establishes that lifting precedes driving.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: EjtP5uCaULU
-      start_ms: 568966
-      end_ms: 598200
-      url: https://www.youtube.com/watch?v=EjtP5uCaULU&t=568s
-      segment_ids:
-        - EjtP5uCaULU:00133
-        - EjtP5uCaULU:00134
-        - EjtP5uCaULU:00135
-        - EjtP5uCaULU:00136
-        - EjtP5uCaULU:00137
-        - EjtP5uCaULU:00138
-        - EjtP5uCaULU:00139
-  - id: k7-gEsWTYFg-concept-backhand-topspin-body-coordination-codex-reviewed
-    evidence_type: definition
-    excerpt: A normal backhand topspin stroke involves bending your knees, positioning above your knees, making contact with the ball, and creating a combined force.
-    reason: These contiguous segments directly describe the normal backhand topspin stroke, knee bend and positioning, contact, and combined force. The supplied concept is the same durable topic.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: k7-gEsWTYFg
-      start_ms: 8966
-      end_ms: 18066
-      url: https://www.youtube.com/watch?v=k7-gEsWTYFg&t=8s
-      segment_ids:
-        - k7-gEsWTYFg:00000
-        - k7-gEsWTYFg:00001
-        - k7-gEsWTYFg:00002
-        - k7-gEsWTYFg:00003
-  - id: mxmDhD9M83c-concept-backhand-topspin-body-coordination-codex-reviewed
-    evidence_type: explanation
-    excerpt: Fan Zhendong's backhand topspin technique starts by lowering the center of gravity and engaging the core, with rapid wrist rotation at contact.
-    reason: 'These contiguous segments directly describe a backhand topspin sequence: lowering the center of gravity, engaging the core, and rapidly rotating the wrist at contact. The span is under 30 seconds.'
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: mxmDhD9M83c
-      start_ms: 20433
-      end_ms: 28466
-      url: https://www.youtube.com/watch?v=mxmDhD9M83c&t=20s
-      segment_ids:
-        - mxmDhD9M83c:00000
-        - mxmDhD9M83c:00001
-        - mxmDhD9M83c:00002
+- confidence: 0.92
+  evidence_type: explanation
+  excerpt: Keep the feet nearly level. In backhand rallies, I usually stand with my right foot slightly forward; at minimum, stand square.
+  id: backhand-square-stance-spinmaster
+  reason: The speaker usually stands with his right foot slightly forward in rallies and advises standing square at minimum.
+  review_status: approved
+  source:
+    end_ms: 16960
+    segment_ids:
+    - 3kC8KEl3iow:00000
+    - 3kC8KEl3iow:00001
+    - 3kC8KEl3iow:00002
+    - 3kC8KEl3iow:00003
+    - 3kC8KEl3iow:00004
+    - 3kC8KEl3iow:00005
+    start_ms: 2280
+    url: https://www.youtube.com/watch?v=3kC8KEl3iow&t=2s
+    video_id: 3kC8KEl3iow
+  visual_status: not_visual
+- confidence: 0.93
+  evidence_type: correction
+  excerpt: Open the hips and keep the backswing inside the body line.
+  id: backhand-open-hips-spinmaster
+  reason: Keep the backswing inside the body line rather than taking it out to the side.
+  review_status: approved
+  source:
+    end_ms: 39240
+    segment_ids:
+    - 3kC8KEl3iow:00010
+    - 3kC8KEl3iow:00011
+    - 3kC8KEl3iow:00012
+    start_ms: 30760
+    url: https://www.youtube.com/watch?v=3kC8KEl3iow&t=30s
+    video_id: 3kC8KEl3iow
+  visual_status: not_visual
+- confidence: 0.94
+  evidence_type: explanation
+  excerpt: Coil the abdomen inward before driving forward into the active backhand.
+  id: backhand-core-coil-global
+  reason: The speaker describes inward coiling as the source of power in his backhand.
+  review_status: approved
+  source:
+    end_ms: 150833
+    segment_ids:
+    - YUEaL2HiPIE:00025
+    - YUEaL2HiPIE:00026
+    - YUEaL2HiPIE:00027
+    - YUEaL2HiPIE:00028
+    - YUEaL2HiPIE:00029
+    - YUEaL2HiPIE:00030
+    start_ms: 125100
+    url: https://www.youtube.com/watch?v=YUEaL2HiPIE&t=125s
+    video_id: YUEaL2HiPIE
+  visual_status: not_visual
+- confidence: 0.91
+  evidence_type: mistake
+  excerpt: A static body disconnects the backswing and limits power. Coil the body with the backswing and then drive forward rather than remaining upright or permanently coiled.
+  id: backhand-static-body-error-global
+  reason: A static body disconnects the backswing and limits power. Coil the body with the backswing and then drive forward rather than remaining upright or permanently coiled.
+  review_status: approved
+  source:
+    end_ms: 169266
+    segment_ids:
+    - YUEaL2HiPIE:00031
+    - YUEaL2HiPIE:00032
+    - YUEaL2HiPIE:00033
+    - YUEaL2HiPIE:00034
+    start_ms: 150833
+    url: https://www.youtube.com/watch?v=YUEaL2HiPIE&t=150s
+    video_id: YUEaL2HiPIE
+  visual_status: not_visual
+- confidence: 0.93
+  evidence_type: correction
+  excerpt: For standard shots, lift comes from the forearm; after contact, the forearm brings the racket up.
+  id: backhand-forearm-lift-global
+  reason: The upper arm lifts only for specific shots; for standard shots, lift comes from the forearm.
+  review_status: approved
+  source:
+    end_ms: 427433
+    segment_ids:
+    - YUEaL2HiPIE:00087
+    - YUEaL2HiPIE:00088
+    - YUEaL2HiPIE:00089
+    start_ms: 414200
+    url: https://www.youtube.com/watch?v=YUEaL2HiPIE&t=414s
+    video_id: YUEaL2HiPIE
+  visual_status: not_visual
+- confidence: 0.98
+  evidence_type: explanation
+  excerpt: Widen the stance so the center of gravity can find balls across the backhand half.
+  id: backhand-wide-stance-center-6
+  reason: A wider stance lets you use your center of gravity to find balls across the backhand half; with a narrow stance, you must move your feet for every ball.
+  review_status: approved
+  source:
+    end_ms: 51040
+    segment_ids:
+    - 3kC8KEl3iow:00013
+    - 3kC8KEl3iow:00014
+    - 3kC8KEl3iow:00015
+    - 3kC8KEl3iow:00016
+    - 3kC8KEl3iow:00017
+    - 3kC8KEl3iow:00018
+    start_ms: 36640
+    url: https://www.youtube.com/watch?v=3kC8KEl3iow&t=36s
+    video_id: 3kC8KEl3iow
+  visual_status: not_visual
+- confidence: 0.98
+  evidence_type: correction
+  excerpt: Contain the shoulders inward on the backhand; opening them outward sends the ball wide.
+  id: backhand-shoulder-containment-7
+  reason: The speaker says outward shoulders send the ball wide, while inward containment keeps it controlled.
+  review_status: approved
+  source:
+    end_ms: 102400
+    segment_ids:
+    - 3kC8KEl3iow:00032
+    - 3kC8KEl3iow:00033
+    - 3kC8KEl3iow:00034
+    - 3kC8KEl3iow:00035
+    - 3kC8KEl3iow:00036
+    - 3kC8KEl3iow:00037
+    - 3kC8KEl3iow:00038
+    start_ms: 81360
+    url: https://www.youtube.com/watch?v=3kC8KEl3iow&t=81s
+    video_id: 3kC8KEl3iow
+  visual_status: transcript_inferred
+- confidence: 0.97
+  evidence_type: drill
+  excerpt: The speaker personally adds a slight left-side twist to his backhand, saying it adds spin and power; try a subtle left-side rotation—turn in slightly, drive forward, and pull back.
+  id: backhand-spiral-rotation-8
+  reason: The speaker describes the spin and power benefit as his own practice, then suggests trying a subtle rotation.
+  review_status: approved
+  source:
+    end_ms: 172360
+    segment_ids:
+    - 3kC8KEl3iow:00055
+    - 3kC8KEl3iow:00056
+    - 3kC8KEl3iow:00057
+    - 3kC8KEl3iow:00058
+    - 3kC8KEl3iow:00059
+    - 3kC8KEl3iow:00060
+    - 3kC8KEl3iow:00061
+    - 3kC8KEl3iow:00062
+    start_ms: 147720
+    url: https://www.youtube.com/watch?v=3kC8KEl3iow&t=147s
+    video_id: 3kC8KEl3iow
+  visual_status: transcript_inferred
+- confidence: 0.95
+  evidence_type: explanation
+  excerpt: Against an extremely heavy chop, stay low without rising. For a very fast, deep ball to the backhand side, stay low and stable.
+  id: JcH1Nudznvk-cand-backhand-loop-receive-weight-transfer-1
+  reason: The speaker warns that rising and falling will send the ball into the net.
+  review_status: approved
+  source:
+    end_ms: 196680
+    segment_ids:
+    - JcH1Nudznvk:00065
+    - JcH1Nudznvk:00066
+    - JcH1Nudznvk:00067
+    - JcH1Nudznvk:00068
+    - JcH1Nudznvk:00069
+    - JcH1Nudznvk:00070
+    - JcH1Nudznvk:00071
+    - JcH1Nudznvk:00072
+    start_ms: 172440
+    url: https://www.youtube.com/watch?v=JcH1Nudznvk&t=172s
+    video_id: JcH1Nudznvk
+  visual_status: transcript_inferred
+- confidence: 0.95
+  evidence_type: explanation
+  excerpt: The speaker says that if he crouches and rises on receive, the error rate becomes very high because the body motion takes too much time as the ball comes in at about 90% speed.
+  id: JcH1Nudznvk-cand-backhand-loop-receive-weight-transfer-2
+  reason: He attributes the high error rate to the time taken by crouching and rising while the ball is rushing in at about 90% speed.
+  review_status: approved
+  source:
+    end_ms: 224560
+    segment_ids:
+    - JcH1Nudznvk:00078
+    - JcH1Nudznvk:00079
+    - JcH1Nudznvk:00080
+    - JcH1Nudznvk:00081
+    - JcH1Nudznvk:00082
+    - JcH1Nudznvk:00083
+    start_ms: 209400
+    url: https://www.youtube.com/watch?v=JcH1Nudznvk&t=209s
+    video_id: JcH1Nudznvk
+  visual_status: transcript_inferred
+- confidence: 0.95
+  evidence_type: explanation
+  excerpt: On fast serves, keep the body from rising and falling, avoid crouching before looping, and use acceleration from the hand's brushing action.
+  id: JcH1Nudznvk-cand-backhand-loop-receive-weight-transfer-3
+  reason: First survive the receive phase; battle in the rally afterward.
+  review_status: approved
+  source:
+    end_ms: 263280
+    segment_ids:
+    - JcH1Nudznvk:00088
+    - JcH1Nudznvk:00089
+    - JcH1Nudznvk:00090
+    - JcH1Nudznvk:00091
+    - JcH1Nudznvk:00092
+    - JcH1Nudznvk:00093
+    - JcH1Nudznvk:00094
+    - JcH1Nudznvk:00095
+    start_ms: 243760
+    url: https://www.youtube.com/watch?v=JcH1Nudznvk&t=243s
+    video_id: JcH1Nudznvk
+  visual_status: transcript_inferred
+- confidence: 0.88
+  evidence_type: explanation
+  excerpt: When looping on the backhand, too much weight on the right side can lead to net errors, especially against heavy spin. The speaker says weight must go down to loop the ball up, and that placing slightly more weight on the left leg makes the loop feel smooth.
+  id: JcH1Nudznvk-cand-backhand-loop-left-side-weight-1
+  reason: The speaker describes the risks of keeping too much weight on the right side, says weight must go down to loop the ball up, and says a little more weight on the left leg makes the loop feel smooth.
+  review_status: approved
+  source:
+    end_ms: 305160
+    segment_ids:
+    - JcH1Nudznvk:00103
+    - JcH1Nudznvk:00104
+    - JcH1Nudznvk:00105
+    - JcH1Nudznvk:00106
+    - JcH1Nudznvk:00107
+    - JcH1Nudznvk:00108
+    - JcH1Nudznvk:00109
+    - JcH1Nudznvk:00110
+    - JcH1Nudznvk:00111
+    - JcH1Nudznvk:00112
+    - JcH1Nudznvk:00113
+    - JcH1Nudznvk:00114
+    start_ms: 279120
+    url: https://www.youtube.com/watch?v=JcH1Nudznvk&t=279s
+    video_id: JcH1Nudznvk
+  visual_status: transcript_inferred
+- confidence: 0.95
+  evidence_type: explanation
+  excerpt: Learn spiral body rotation.
+  id: q9c2_hCwlhs-cand-3-1
+  reason: The instruction is to learn spiral body rotation.
+  review_status: approved
+  source:
+    end_ms: 164440
+    segment_ids:
+    - q9c2_hCwlhs:00062
+    start_ms: 159320
+    url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=159s
+    video_id: q9c2_hCwlhs
+  visual_status: not_visual
+- confidence: 0.95
+  evidence_type: explanation
+  excerpt: The speaker teaches spiral rotation, left-leg loading, and hip-belly drive as the source of backhand force.
+  id: q9c2_hCwlhs-cand-3-2
+  reason: Backhand power comes from a small leftward coil, weight staying on the left leg, and then a forward release of hips and torso rather than only squatting and pushing.
+  review_status: unreviewed
+  source:
+    end_ms: 192920
+    segment_ids:
+    - q9c2_hCwlhs:00077
+    start_ms: 190360
+    url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=190s
+    video_id: q9c2_hCwlhs
+  visual_status: not_visual
+- confidence: 0.93
+  evidence_type: explanation
+  excerpt: 'When you want to truly attack, rotate first: rotate slightly left and let the shoulder and elbow turn inward a little before releasing.'
+  id: q9c2_hCwlhs-cand-3-3
+  reason: The speaker says to rotate first when attacking, then describes a slight left rotation and a small inward turn of the shoulder and elbow before release.
+  review_status: approved
+  source:
+    end_ms: 212080
+    segment_ids:
+    - q9c2_hCwlhs:00080
+    - q9c2_hCwlhs:00081
+    - q9c2_hCwlhs:00082
+    - q9c2_hCwlhs:00083
+    - q9c2_hCwlhs:00084
+    start_ms: 197959
+    url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=197s
+    video_id: q9c2_hCwlhs
+  visual_status: not_visual
+- confidence: 0.93
+  evidence_type: explanation
+  excerpt: Shift slightly left, then drive forward. The body rotation is a small movement, just a tiny twist.
+  id: q9c2_hCwlhs-cand-3-4
+  reason: The speaker cues a slight shift left followed by a forward drive, and separately describes body rotation as a small movement, just a tiny twist.
+  review_status: approved
+  source:
+    end_ms: 233360
+    segment_ids:
+    - q9c2_hCwlhs:00091
+    - q9c2_hCwlhs:00092
+    - q9c2_hCwlhs:00093
+    start_ms: 225080
+    url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=225s
+    video_id: q9c2_hCwlhs
+  visual_status: not_visual
+- confidence: 0.94
+  evidence_type: definition
+  excerpt: In the speaker’s opinion, the backhand is primarily driven by contracting and expanding the abdomen; for active strokes, he incorporates an inward coil before driving forward.
+  id: YUEaL2HiPIE-concept-backhand-core-coil-thrust-1
+  reason: The speaker describes abdominal contraction and expansion as the primary backhand drive, and says he coils inward before driving forward on active strokes.
+  review_status: approved
+  source:
+    end_ms: 140100
+    segment_ids:
+    - YUEaL2HiPIE:00022
+    - YUEaL2HiPIE:00023
+    - YUEaL2HiPIE:00024
+    - YUEaL2HiPIE:00025
+    - YUEaL2HiPIE:00026
+    - YUEaL2HiPIE:00027
+    start_ms: 111200
+    url: https://www.youtube.com/watch?v=YUEaL2HiPIE&t=111s
+    video_id: YUEaL2HiPIE
+  visual_status: not_visual
+- confidence: 0.94
+  evidence_type: definition
+  excerpt: The speaker says his backhand is primarily driven by contracting and expanding the abdomen, with active strokes coiling inward before driving forward.
+  id: YUEaL2HiPIE-concept-backhand-core-coil-thrust-2
+  reason: He describes inward coiling as the source of power in his backhand, followed by a forward drive. Against backspin, he says he drops the racket and drives it up and forward.
+  review_status: unreviewed
+  source:
+    end_ms: 150833
+    segment_ids:
+    - YUEaL2HiPIE:00025
+    - YUEaL2HiPIE:00026
+    - YUEaL2HiPIE:00027
+    - YUEaL2HiPIE:00028
+    - YUEaL2HiPIE:00029
+    - YUEaL2HiPIE:00030
+    start_ms: 125100
+    url: https://www.youtube.com/watch?v=YUEaL2HiPIE&t=125s
+    video_id: YUEaL2HiPIE
+  visual_status: not_visual
+- confidence: 0.9
+  evidence_type: explanation
+  excerpt: When you have the chance to initiate an attack, coil your body inward with the backswing, then drive out by thrusting your abdomen forward. The speaker says that core engagement synchronizes the arm and body, regardless of stroke size.
+  id: YUEaL2HiPIE-concept-backhand-core-coil-thrust-4
+  reason: The speaker gives this sequence for initiating an attack and says that core engagement synchronizes the arm and body across stroke sizes.
+  review_status: approved
+  source:
+    end_ms: 199400
+    segment_ids:
+    - YUEaL2HiPIE:00038
+    - YUEaL2HiPIE:00039
+    - YUEaL2HiPIE:00040
+    - YUEaL2HiPIE:00041
+    start_ms: 180200
+    url: https://www.youtube.com/watch?v=YUEaL2HiPIE&t=180s
+    video_id: YUEaL2HiPIE
+  visual_status: transcript_inferred
+- confidence: 0.9
+  evidence_type: explanation
+  excerpt: A backhand drive uses a simple coil-and-thrust motion of the core.
+  id: YUEaL2HiPIE-concept-backhand-core-coil-thrust-5
+  reason: Use a simple coil-and-thrust motion of the core for a backhand drive.
+  review_status: approved
+  source:
+    end_ms: 212300
+    segment_ids:
+    - YUEaL2HiPIE:00044
+    start_ms: 207466
+    url: https://www.youtube.com/watch?v=YUEaL2HiPIE&t=207s
+    video_id: YUEaL2HiPIE
+  visual_status: transcript_inferred
+- confidence: 0.98
+  evidence_type: explanation
+  excerpt: Backhand topspin uses coordinated arm positions where elbow and forearm move in opposite directions, with the upper arm and elbow staying stable while the forearm rotates to create spin.
+  id: A4-lKRVwSFc-concept-backhand-topspin-body-coordination-reviewed
+  reason: Speaker explains elbow up/forearm down, says the upper arm and elbow must be stable, and that spin comes from forearm rotation after stabilization.
+  review_status: unreviewed
+  source:
+    end_ms: 364880
+    segment_ids:
+    - A4-lKRVwSFc:00133
+    - A4-lKRVwSFc:00137
+    start_ms: 350040
+    url: https://www.youtube.com/watch?v=A4-lKRVwSFc&t=350s
+    video_id: A4-lKRVwSFc
+  visual_status: transcript_inferred
+- confidence: 0.95
+  evidence_type: explanation
+  excerpt: Coordinating body movement, torso power, and hand action so the backhand topspin is driven by the body rather than the arm alone.
+  id: bKtA240EvTQ-concept-backhand-topspin-body-coordination-reviewed
+  reason: The transcript explicitly links waist and core power with synchronized body-and-hand movement and contrasts that with an arm-dominant loop.
+  review_status: unreviewed
+  source:
+    end_ms: 610680
+    segment_ids:
+    - bKtA240EvTQ:00214
+    - bKtA240EvTQ:00215
+    - bKtA240EvTQ:00216
+    - bKtA240EvTQ:00217
+    - bKtA240EvTQ:00218
+    - bKtA240EvTQ:00219
+    - bKtA240EvTQ:00220
+    - bKtA240EvTQ:00221
+    - bKtA240EvTQ:00222
+    - bKtA240EvTQ:00223
+    - bKtA240EvTQ:00224
+    start_ms: 582320
+    url: https://www.youtube.com/watch?v=bKtA240EvTQ&t=582s
+    video_id: bKtA240EvTQ
+  visual_status: transcript_inferred
+- confidence: 0.94
+  evidence_type: explanation
+  excerpt: Backhand topspin power comes from coordinated upper-arm, elbow, forearm, and body movement that drives forward through the ball.
+  id: UCyUdarqdJc-concept-backhand-topspin-body-coordination-reviewed
+  reason: The speaker explains that backhand power comes from pressing through the ball with coordinated arm segments and forward meeting, not vertical lifting.
+  review_status: unreviewed
+  source:
+    end_ms: 481520
+    segment_ids:
+    - UCyUdarqdJc:00178
+    - UCyUdarqdJc:00179
+    - UCyUdarqdJc:00180
+    - UCyUdarqdJc:00181
+    - UCyUdarqdJc:00182
+    - UCyUdarqdJc:00183
+    - UCyUdarqdJc:00184
+    - UCyUdarqdJc:00185
+    start_ms: 452880
+    url: https://www.youtube.com/watch?v=UCyUdarqdJc&t=452s
+    video_id: UCyUdarqdJc
+  visual_status: transcript_inferred
+- confidence: 0.9
+  evidence_type: explanation
+  excerpt: Coordinating body posture, elbow position, and forward drive to produce an effective backhand topspin or rally ball.
+  id: OMgoeirhpyc-concept-backhand-topspin-body-coordination-reviewed
+  reason: The coach describes the proper backhand rally shape, leaning forward, keeping the elbow in front, and extending the forearm forward on fast balls.
+  review_status: unreviewed
+  source:
+    end_ms: 418600
+    segment_ids:
+    - OMgoeirhpyc:00132
+    - OMgoeirhpyc:00133
+    - OMgoeirhpyc:00139
+    - OMgoeirhpyc:00140
+    - OMgoeirhpyc:00141
+    - OMgoeirhpyc:00142
+    - OMgoeirhpyc:00143
+    - OMgoeirhpyc:00144
+    start_ms: 389320
+    url: https://www.youtube.com/watch?v=OMgoeirhpyc&t=389s
+    video_id: OMgoeirhpyc
+  visual_status: not_visual
+- confidence: 0.91
+  evidence_type: explanation
+  excerpt: Coordinating the backhand topspin with the body by lowering the center of gravity and using the body to support the stroke arc and power.
+  id: H0sbIUpUNLY-cand-9-reviewed
+  reason: The speaker explicitly instructs to lower the center of gravity, use more body, and increase brushing.
+  review_status: unreviewed
+  source:
+    end_ms: 516960
+    segment_ids:
+    - H0sbIUpUNLY:00170
+    - H0sbIUpUNLY:00171
+    - H0sbIUpUNLY:00172
+    start_ms: 509280
+    url: https://www.youtube.com/watch?v=H0sbIUpUNLY&t=509s
+    video_id: H0sbIUpUNLY
+  visual_status: transcript_inferred
+- confidence: 0.98
+  evidence_type: explanation
+  excerpt: Coordinating torso, hips, body compression and extension with the arm to produce an effective backhand topspin stroke.
+  id: hp9OZTBD5JE-concept-backhand-topspin-body-coordination-reviewed
+  reason: The transcript repeatedly ties backhand quality to torso/hips, body-arm coordination, compression and extension, and using body strength together with the arm.
+  review_status: unreviewed
+  source:
+    end_ms: 89680
+    segment_ids:
+    - hp9OZTBD5JE:00020
+    - hp9OZTBD5JE:00021
+    - hp9OZTBD5JE:00031
+    start_ms: 63160
+    url: https://www.youtube.com/watch?v=hp9OZTBD5JE&t=63s
+    video_id: hp9OZTBD5JE
+  visual_status: transcript_inferred
+- confidence: 0.95
+  evidence_type: explanation
+  excerpt: Backhand topspin requires coordinated loading from the body, down-low power generation, and controlled use of wrist and arm rather than an upright lifting motion.
+  id: A_hvhZM5dc4-concept-backhand-topspin-body-coordination-reviewed
+  reason: The speaker contrasts shoulder rotation with a compact arm-led stroke, and says power must be loaded down low and combined before release.
+  review_status: unreviewed
+  source:
+    end_ms: 389866
+    segment_ids:
+    - A_hvhZM5dc4:00115
+    - A_hvhZM5dc4:00116
+    - A_hvhZM5dc4:00117
+    - A_hvhZM5dc4:00118
+    - A_hvhZM5dc4:00119
+    - A_hvhZM5dc4:00120
+    - A_hvhZM5dc4:00121
+    - A_hvhZM5dc4:00122
+    start_ms: 361900
+    url: https://www.youtube.com/watch?v=A_hvhZM5dc4&t=361s
+    video_id: A_hvhZM5dc4
+  visual_status: transcript_inferred
+- confidence: 0.93
+  evidence_type: explanation
+  excerpt: A backhand topspin progression in which the wrist forms the base motion first and the forearm, upper arm, and body are added after the basic loop is stable.
+  id: b_kKpVRuU1Q-concept-backhand-topspin-body-coordination-reviewed
+  reason: The speaker lays out the progression from a wrist arc to adding body, forearm, and upper arm once the motion is stable.
+  review_status: unreviewed
+  source:
+    end_ms: 341566
+    segment_ids:
+    - b_kKpVRuU1Q:00088
+    - b_kKpVRuU1Q:00089
+    - b_kKpVRuU1Q:00090
+    - b_kKpVRuU1Q:00091
+    start_ms: 324633
+    url: https://www.youtube.com/watch?v=b_kKpVRuU1Q&t=324s
+    video_id: b_kKpVRuU1Q
+  visual_status: transcript_inferred
+- confidence: 0.9
+  evidence_type: definition
+  excerpt: The banana flick uses a lifted elbow, dropped wrist, and an inwardly tucked arm to preserve the motion path and avoid collapsing into a flip.
+  id: uRu7I3Cvojk-new-banana-flick-arm-shape-reviewed
+  reason: The speaker specifies elbow lift, wrist drop, and inward arm tuck as practice requirements for the banana flick.
+  review_status: unreviewed
+  source:
+    end_ms: 198666
+    segment_ids:
+    - uRu7I3Cvojk:00057
+    - uRu7I3Cvojk:00058
+    - uRu7I3Cvojk:00059
+    - uRu7I3Cvojk:00062
+    start_ms: 182566
+    url: https://www.youtube.com/watch?v=uRu7I3Cvojk&t=182s
+    video_id: uRu7I3Cvojk
+  visual_status: transcript_inferred
+- confidence: 0.91
+  evidence_type: explanation
+  excerpt: Coordinating forearm rotation, wrist position, and body action to produce power on backhand topspin or rip shots.
+  id: vCa7A9gyOT8-concept-backhand-topspin-body-coordination-reviewed
+  reason: The speaker explains forearm isolation, external rotation, and the separation of upper and lower arm as the coordination required for strong backhand play.
+  review_status: unreviewed
+  source:
+    end_ms: 149166
+    segment_ids:
+    - vCa7A9gyOT8:00032
+    - vCa7A9gyOT8:00035
+    start_ms: 133366
+    url: https://www.youtube.com/watch?v=vCa7A9gyOT8&t=133s
+    video_id: vCa7A9gyOT8
+  visual_status: not_visual
+- confidence: 0.92
+  evidence_type: definition
+  excerpt: Coordinating the backhand topspin stroke with body position, knee bend, and contact so the stroke has combined force.
+  id: k7-gEsWTYFg-concept-backhand-topspin-body-coordination-reviewed
+  reason: The speaker explicitly describes a normal backhand topspin stroke with knee bend, contact, and combined force.
+  review_status: unreviewed
+  source:
+    end_ms: 18066
+    segment_ids:
+    - k7-gEsWTYFg:00000
+    - k7-gEsWTYFg:00001
+    - k7-gEsWTYFg:00002
+    - k7-gEsWTYFg:00003
+    start_ms: 8966
+    url: https://www.youtube.com/watch?v=k7-gEsWTYFg&t=8s
+    video_id: k7-gEsWTYFg
+  visual_status: transcript_inferred
+- confidence: 0.87
+  evidence_type: explanation
+  excerpt: Coordinating lower body, upper body, and arm actions to produce an effective backhand topspin stroke.
+  id: tpY3SRVdBK8-concept-backhand-body-coordination-reviewed
+  reason: The speaker describes lower-body movement, upper-body response, stepping forward, and rotating as part of the stroke pattern.
+  review_status: unreviewed
+  source:
+    end_ms: 93566
+    segment_ids:
+    - tpY3SRVdBK8:00005
+    - tpY3SRVdBK8:00006
+    start_ms: 82800
+    url: https://www.youtube.com/watch?v=tpY3SRVdBK8&t=82s
+    video_id: tpY3SRVdBK8
+  visual_status: transcript_inferred
+- confidence: 0.92
+  evidence_type: explanation
+  excerpt: Coordinating body motion and force direction to execute stable backhand topspin against spinny balls.
+  id: Whmhzk845aA-concept-backhand-topspin-body-coordination-reviewed
+  reason: The transcript says the brush loop is the most stable backhand topspin method and emphasizes controlling force direction rather than lifting upward.
+  review_status: unreviewed
+  source:
+    end_ms: 712533
+    segment_ids:
+    - Whmhzk845aA:00197
+    - Whmhzk845aA:00198
+    - Whmhzk845aA:00204
+    start_ms: 687000
+    url: https://www.youtube.com/watch?v=Whmhzk845aA&t=687s
+    video_id: Whmhzk845aA
+  visual_status: transcript_inferred
+- confidence: 0.97
+  evidence_type: explanation
+  excerpt: Generating a backhand topspin loop by coordinating body lowering, stable posture, elbow positioning, forearm rotation, and later arm power.
+  id: EjtP5uCaULU-concept-backhand-topspin-body-coordination-reviewed
+  reason: He describes a two-action sequence in which lift/loop comes first and arm power follows after friction is established.
+  review_status: unreviewed
+  source:
+    end_ms: 598200
+    segment_ids:
+    - EjtP5uCaULU:00133
+    - EjtP5uCaULU:00136
+    - EjtP5uCaULU:00139
+    start_ms: 568966
+    url: https://www.youtube.com/watch?v=EjtP5uCaULU&t=568s
+    video_id: EjtP5uCaULU
+  visual_status: not_visual
+- confidence: 0.93
+  evidence_type: explanation
+  excerpt: Backhand power and rhythm should be coordinated through the whole body, with the core coiling and releasing while the hips, legs, and waist work together.
+  id: vzLW5MAX7gA-backhand-body-coordination-reviewed
+  reason: The speaker describes the backhand as a whole-body action built from the core, hips, legs, and waist, using coil/release and coil/thrust rhythm.
+  review_status: unreviewed
+  source:
+    end_ms: 233300
+    segment_ids:
+    - vzLW5MAX7gA:00043
+    - vzLW5MAX7gA:00044
+    - vzLW5MAX7gA:00045
+    - vzLW5MAX7gA:00046
+    - vzLW5MAX7gA:00047
+    - vzLW5MAX7gA:00048
+    start_ms: 205333
+    url: https://www.youtube.com/watch?v=vzLW5MAX7gA&t=205s
+    video_id: vzLW5MAX7gA
+  visual_status: transcript_inferred
+- confidence: 0.97
+  evidence_type: explanation
+  excerpt: Coordinating the body and stroke during a backhand topspin action so power comes from the whole motion, not just the arm.
+  id: rOMRGvlgAAU-concept-backhand-topspin-body-coordination-reviewed
+  reason: The speaker describes a competitive backhand loop as bracing down and exploding forward, moving the body forward into the shot, and needing forward power rather than only upward power.
+  review_status: unreviewed
+  source:
+    end_ms: 423000
+    segment_ids:
+    - rOMRGvlgAAU:00078
+    - rOMRGvlgAAU:00079
+    - rOMRGvlgAAU:00080
+    - rOMRGvlgAAU:00083
+    start_ms: 393600
+    url: https://www.youtube.com/watch?v=rOMRGvlgAAU&t=393s
+    video_id: rOMRGvlgAAU
+  visual_status: not_visual
+- confidence: 0.97
+  evidence_type: explanation
+  excerpt: Coordinating body and arm together on the backhand so the body supports and moves with the swing instead of acting independently.
+  id: eDDICo0Damw-concept-backhand-topspin-body-coordination-reviewed
+  reason: The speaker says the body and arm are one unit and the body must support the arm.
+  review_status: unreviewed
+  source:
+    end_ms: 632900
+    segment_ids:
+    - eDDICo0Damw:00122
+    - eDDICo0Damw:00124
+    start_ms: 616366
+    url: https://www.youtube.com/watch?v=eDDICo0Damw&t=616s
+    video_id: eDDICo0Damw
+  visual_status: not_visual
+- confidence: 0.99
+  evidence_type: demonstration
+  excerpt: Using coordinated down-up body action on the backhand to support the loop and generate power without disconnecting the arm.
+  id: hNnojmq7CqU-concept-backhand-topspin-body-coordination-reviewed
+  reason: The speaker demonstrates and describes the backhand as a synchronized down-then-up motion, explicitly tying it to power generation with low effort.
+  review_status: unreviewed
+  source:
+    end_ms: 304033
+    segment_ids:
+    - hNnojmq7CqU:00061
+    - hNnojmq7CqU:00062
+    - hNnojmq7CqU:00063
+    - hNnojmq7CqU:00064
+    start_ms: 284033
+    url: https://www.youtube.com/watch?v=hNnojmq7CqU&t=284s
+    video_id: hNnojmq7CqU
+  visual_status: transcript_inferred
+- confidence: 0.98
+  evidence_type: explanation
+  excerpt: Generating backhand loop power by coordinating the core, back muscles, abdomen, and arm rather than relying only on the arm.
+  id: wj87pK5547g-concept-backhand-topspin-body-coordination-reviewed
+  reason: The speaker explains that power comes from engaging the core and exploding forward, not from a disconnected arm movement.
+  review_status: unreviewed
+  source:
+    end_ms: 271066
+    segment_ids:
+    - wj87pK5547g:00047
+    - wj87pK5547g:00048
+    - wj87pK5547g:00050
+    - wj87pK5547g:00051
+    start_ms: 243200
+    url: https://www.youtube.com/watch?v=wj87pK5547g&t=243s
+    video_id: wj87pK5547g
+  visual_status: transcript_inferred
+- confidence: 0.94
+  evidence_type: explanation
+  excerpt: 'Coordinate the backhand with a compact in-and-out core motion: tuck in during preparation and drive out through contact for both looping and driving.'
+  id: U3o7_ad82dk-concept-backhand-topspin-body-coordination-reviewed
+  reason: The speaker explicitly names the core action as tuck-and-drive, describing it as an in-and-out motion from the side view.
+  review_status: unreviewed
+  source:
+    end_ms: 395233
+    segment_ids:
+    - U3o7_ad82dk:00068
+    - U3o7_ad82dk:00069
+    - U3o7_ad82dk:00070
+    - U3o7_ad82dk:00071
+    start_ms: 372233
+    url: https://www.youtube.com/watch?v=U3o7_ad82dk&t=372s
+    video_id: U3o7_ad82dk
+  visual_status: transcript_inferred
+- confidence: 0.86
+  evidence_type: explanation
+  excerpt: A backhand topspin stroke that relies on coordinated forearm and upper-arm structure rather than moving the whole arm as one rigid unit.
+  id: urfOsNEfkYg-urfOsNEfkYg-concept-7-reviewed
+  reason: The speaker says weak backhands fail to separate upper arm and forearm, and that high-quality topspin requires this coordination.
+  review_status: unreviewed
+  source:
+    end_ms: 154920
+    segment_ids:
+    - urfOsNEfkYg:00054
+    - urfOsNEfkYg:00055
+    - urfOsNEfkYg:00056
+    - urfOsNEfkYg:00057
+    - urfOsNEfkYg:00058
+    - urfOsNEfkYg:00059
+    - urfOsNEfkYg:00060
+    - urfOsNEfkYg:00061
+    - urfOsNEfkYg:00062
+    - urfOsNEfkYg:00063
+    - urfOsNEfkYg:00064
+    start_ms: 129440
+    url: https://www.youtube.com/watch?v=urfOsNEfkYg&t=129s
+    video_id: urfOsNEfkYg
+  visual_status: not_visual
+- confidence: 0.96
+  evidence_type: explanation
+  excerpt: For a very spinny ball, prioritize a full looping lift; for a less spinny ball, lift then immediately drive through it. The drive or power part follows the lift or loop.
+  id: EjtP5uCaULU-concept-backhand-topspin-body-coordination-codex-reviewed
+  reason: 'Choose the lift based on the ball''s spin: use a full looping motion for a very spinny ball, and lift then drive for a less spinny ball. Drive follows lift or loop.'
+  review_status: approved
+  source:
+    end_ms: 598200
+    segment_ids:
+    - EjtP5uCaULU:00133
+    - EjtP5uCaULU:00134
+    - EjtP5uCaULU:00135
+    - EjtP5uCaULU:00136
+    - EjtP5uCaULU:00137
+    - EjtP5uCaULU:00138
+    - EjtP5uCaULU:00139
+    start_ms: 568966
+    url: https://www.youtube.com/watch?v=EjtP5uCaULU&t=568s
+    video_id: EjtP5uCaULU
+  visual_status: not_visual
+- confidence: 0.98
+  evidence_type: definition
+  excerpt: A normal backhand topspin stroke should involve bending your knees, then making contact with the ball to create a combined force.
+  id: k7-gEsWTYFg-concept-backhand-topspin-body-coordination-codex-reviewed
+  reason: The speaker describes bending the knees and making contact with the ball to create a combined force in a normal backhand topspin stroke.
+  review_status: approved
+  source:
+    end_ms: 18066
+    segment_ids:
+    - k7-gEsWTYFg:00000
+    - k7-gEsWTYFg:00001
+    - k7-gEsWTYFg:00002
+    - k7-gEsWTYFg:00003
+    start_ms: 8966
+    url: https://www.youtube.com/watch?v=k7-gEsWTYFg&t=8s
+    video_id: k7-gEsWTYFg
+  visual_status: transcript_inferred
+- confidence: 0.98
+  evidence_type: explanation
+  excerpt: In Fan Zhendong’s backhand topspin technique, the center of gravity is lowered first, then the core is engaged. At contact, the wrist performs a rapid rotation.
+  id: mxmDhD9M83c-concept-backhand-topspin-body-coordination-codex-reviewed
+  reason: 'The lesson presents these as features of Fan Zhendong’s technique: first lowering the center of gravity, then engaging the core, with rapid wrist rotation at contact.'
+  review_status: approved
+  source:
+    end_ms: 28466
+    segment_ids:
+    - mxmDhD9M83c:00000
+    - mxmDhD9M83c:00001
+    - mxmDhD9M83c:00002
+    start_ms: 20433
+    url: https://www.youtube.com/watch?v=mxmDhD9M83c&t=20s
+    video_id: mxmDhD9M83c
+  visual_status: transcript_inferred
+evidence_summary: For a strong backhand, keep the feet nearly level and stand square at minimum; the speaker usually places his right foot slightly forward in rallies. Open the hips and keep the backswing inside the body line. The speaker describes his backhand as primarily driven by contracting and expanding the abdomen, with active strokes coiling inward before driving forward.
+facets:
+  category:
+  - stroke
+  side:
+  - backhand
+  spin:
+  - topspin
+id: concept-backhand-topspin-body-coordination
+label: Backhand body coordination
 relations:
-  - relation_type: used_with
-    target_concept_id: concept-body-hand-synchronization
-    confidence: 0.96
-    review_status: approved
-    sources: [{video_id: YUEaL2HiPIE, start_ms: 180200, end_ms: 199400, url: "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=180s", segment_ids: ["YUEaL2HiPIE:00038", "YUEaL2HiPIE:00039", "YUEaL2HiPIE:00040", "YUEaL2HiPIE:00041"]}]
-  - relation_type: used_with
-    target_concept_id: concept-loaded-legs
-    confidence: 0.91
-    review_status: approved
-    sources: [{video_id: 3kC8KEl3iow, start_ms: 2280, end_ms: 16960, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=2s", segment_ids: ["3kC8KEl3iow:00000", "3kC8KEl3iow:00001", "3kC8KEl3iow:00002", "3kC8KEl3iow:00003", "3kC8KEl3iow:00004", "3kC8KEl3iow:00005"]}]
+- confidence: 0.96
+  relation_type: used_with
+  review_status: approved
+  sources:
+  - end_ms: 199400
+    segment_ids:
+    - YUEaL2HiPIE:00038
+    - YUEaL2HiPIE:00039
+    - YUEaL2HiPIE:00040
+    - YUEaL2HiPIE:00041
+    start_ms: 180200
+    url: https://www.youtube.com/watch?v=YUEaL2HiPIE&t=180s
+    video_id: YUEaL2HiPIE
+  target_concept_id: concept-body-hand-synchronization
+- confidence: 0.91
+  relation_type: used_with
+  review_status: unreviewed
+  sources:
+  - end_ms: 16960
+    segment_ids:
+    - 3kC8KEl3iow:00000
+    - 3kC8KEl3iow:00001
+    - 3kC8KEl3iow:00002
+    - 3kC8KEl3iow:00003
+    - 3kC8KEl3iow:00004
+    - 3kC8KEl3iow:00005
+    start_ms: 2280
+    url: https://www.youtube.com/watch?v=3kC8KEl3iow&t=2s
+    video_id: 3kC8KEl3iow
+  target_concept_id: concept-loaded-legs
+review_status: approved
+short_definition: For a strong backhand, keep the feet nearly level and stand square at minimum. The speaker recommends coiling inward with the backswing and driving forward; he describes his own stroke as driven mainly by abdominal contraction and expansion.
+slug: backhand-topspin-body-coordination

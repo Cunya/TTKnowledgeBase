@@ -1,23 +1,17 @@
 id: concept-weight-transfer-versus-body-rotation
 slug: weight-transfer-versus-body-rotation
-label: Weight transfer versus body rotation
+label: Weight shifting and rotation at contact
 aliases:
-- weight shifted, but I didn't rotate
-- this is not body rotation
-- this is just weight transfer
-short_definition: Distinguishing linear weight shift from actual torso rotation during a loop or receive motion.
+- weight shifting at ball contact
+- rotation versus weight shifting
+short_definition: The explanation contrasts rotation with weight shifting at contact, pressing on the right side and directly pulling. It then says 'We don't need a weight transfer', followed by the cue to adjust weight by applying pressure when the ball is not ideal for looping.
 evidence_summary: >-
-  Actual rotation from weight shifting during contact.
-evidence_summary_source_hash: "sha256:4735f5ac761a4da4ac0d0b919e0f45de637697bfc3cab82e69892aa7e4815c92"
-evidence_summary_generator: "deterministic"
+  The contact explanation refers to rotation and 'just the weight shifting when contacting the ball', adding pressure on the right side and a direct pull. It then says 'We don't need a weight transfer'; when the ball is not ideal for looping, adjust weight by applying pressure.
 concept_type: fundamentals
 facets:
   category:
   - fundamentals
-  - stroke
-  level:
-  - intermediate
-difficulty: intermediate
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -80,15 +74,17 @@ evidence:
     - jvt-6VNmBzs:00023
 - id: 8fxjEROShs4-concept-weight-transfer-versus-body-rotation-codex-reviewed
   evidence_type: explanation
-  excerpt: This is called rotation. It's not there. It's just the weight shifting when contacting the ball.
-  reason: The speaker directly distinguishes actual rotation from weight shifting during contact.
+  excerpt: The explanation contrasts rotation with 'just the weight shifting when contacting the ball', adding pressure on the right side and directly pulling. It then says 'We don't need a weight transfer'. When the ball is not ideal for looping, adjust weight by applying pressure.
+  reason: The passage distinguishes rotation and contact-time weight shifting, then says 'We don't need a weight transfer' before advising pressure-based weight adjustment when the ball is not ideal for looping.
   confidence: 0.98
   visual_status: transcript_inferred
   review_status: approved
   source:
     video_id: 8fxjEROShs4
     start_ms: 861600
-    end_ms: 871266
+    end_ms: 885066
     url: https://www.youtube.com/watch?v=8fxjEROShs4&t=861s
     segment_ids:
     - 8fxjEROShs4:00116
+    - 8fxjEROShs4:00117
+    - 8fxjEROShs4:00118

@@ -1,0 +1,9 @@
+# Short-ball receive source repair
+
+All28 reviewed records remain. Twenty-three spoken citations were completed using actual caption IDs and their full original timing envelopes, all within30seconds. Excerpts and reasons now describe each record’s own instruction rather than a copied group summary. Low-ball, spin, late timing, uncertain depth and footwork exceptions remain. Unsupported difficulty and generated-summary provenance were removed. The hierarchy relation remains and now cites the actual short/half-long versus long-serve decision passage (6vwxmC36InY93–99), rather than classification fragments.
+
+Five full GPT-6 Luna/high calls reviewed35currentunits. A targeted three-unit follow-up corrected alias/support selection and the relation proof while preserving32identical positive results. Complete source-primary review, original SHA/fingerprint checks, whole proposed-corpus validation, production YAML parsing, semantic inverse assertions, exact dossier/value matching and a recoverable before-content journal guarded installation. No visual was approved and no record was quarantined.
+
+Full release passed332tests(292.82s),Ruff,nine monitor tests,reviewed/public validators and zero Astro diagnostics/638pages. Exact35unit public parity and all1817article/1807TOCprose,380control and67fresh toggle cases passed. Browser verified the article and relation target. The browser exposed incoming relation direction labels; P1-56 fixes that generic rendering bug and checks all25currentrelations at both endpoints.
+
+Private proof: media/audit-short-receive-final-proof-2026-10-21-18.json. Primary receipt: media/audit-short-receive-primary-2026-10-21-18.json. Release: media/audit-short-receive-release-2026-10-21-18.log. Ready position remains private with36/38units supported and two placement findings; all15remaining articles and35unverifiedvisualwindows remain in scope.

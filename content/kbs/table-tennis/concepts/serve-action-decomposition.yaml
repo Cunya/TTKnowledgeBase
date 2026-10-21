@@ -1,711 +1,718 @@
 id: concept-serve-action-decomposition
 slug: serve-action-decomposition
-label: Serve action decomposition
-aliases: [segmented serve acceleration, finger-wrist-arm sequence]
-short_definition: Sequence fingers, wrist, forearm, and upper arm instead of swinging the serve as one block.
+label: Separating movement components
+aliases:
+- separating power sources
+- action decomposition
+short_definition: Separating power sources or ordering movement and stopping phases, with different sequences described in the cited lessons.
 evidence_summary: >-
-  A good serve can be built by breaking the motion into separate action phases instead of trying
-  to swing the arm through everything at once. The sequence emphasizes opening the forearm,
-  pulling back in parallel, moving forward, and then adding upward motion, with finger-driven
-  acceleration and brushing phases helping produce more spin. The practical correction is to use a
-  slow backswing and a fast release rhythm, while adding extra wrist drive or a second brushing
-  action when a serve needs more spin.
-evidence_summary_source_hash: "sha256:9725169f34856e765c52761596df42bc26b2886d8f5adbb60dc6421fd239bd3b"
-evidence_summary_generator: "codex"
+  One speaker attributes spin to separating power sources and describes fingers first, then wrist, forearm and upper arm. Another gives elbow, arm, wrist and fingers as the order and compares the movement to a whip. A serving lesson describes upper-arm stopping, forearm swinging and finally finger-and-wrist stopping. A backhand-serve example drops the wrist and describes the racket head pointing back, then down at contact and up, with a wrist arc.
 concept_type: body-mechanics
-facets: {category: [serve, spin], side: [neutral], level: [intermediate]}
-difficulty: intermediate
+facets:
+  category:
+  - fundamentals
+difficulty:
 review_status: approved
 evidence:
-  - id: decomposition-principle-1
-    evidence_type: explanation
-    excerpt: Separating the power sources makes the spin-producing sequence easier to control.
-    reason: Introduces the principle.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source: {video_id: csJgHR7Daog, start_ms: 168000, end_ms: 175360, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=168s", segment_ids: ["csJgHR7Daog:00077", "csJgHR7Daog:00078", "csJgHR7Daog:00079"]}
-  - id: decomposition-sequence-2
-    evidence_type: demonstration
-    excerpt: Build acceleration as a sequence from the fingers through the wrist and forearm to the upper arm.
-    reason: Gives the explicit acceleration sequence.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source: {video_id: csJgHR7Daog, start_ms: 173000, end_ms: 182160, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=173s", segment_ids: ["csJgHR7Daog:00080", "csJgHR7Daog:00081", "csJgHR7Daog:00082"]}
-  - id: decomposition-finger-acceleration-3
-    evidence_type: correction
-    excerpt: Control your forearm and upper arm, then use your fingers to accelerate.
-    reason: Ends with a practical correction cue.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source: {video_id: csJgHR7Daog, start_ms: 189400, end_ms: 197040, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=189s", segment_ids: ["csJgHR7Daog:00087", "csJgHR7Daog:00088", "csJgHR7Daog:00089"]}
-  - id: leQBUn8-4tw-cand-serve-toss-height-selection-1
-    evidence_type: definition
-    excerpt: A timing concept for serves that rejects medium-height tosses as awkward and inconsistent, especially under match pressure, favoring clearly low or high tosses instead.
-    reason: The speaker explicitly contrasts low/high tosses with the problematic medium toss.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: leQBUn8-4tw
-      start_ms: 47633
-      end_ms: 67200
-      url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=47s"
-      segment_ids:
-        - "leQBUn8-4tw:00010"
-        - "leQBUn8-4tw:00013"
-  - id: leQBUn8-4tw-cand-serve-toss-height-selection-2
-    evidence_type: explanation
-    excerpt: A timing concept for serves that rejects medium-height tosses as awkward and inconsistent, especially under match pressure, favoring clearly low or high tosses instead.
-    reason: Medium tosses are described as inconsistent because contact timing breaks down under nerves and pressure.
-    confidence: 0.92
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: leQBUn8-4tw
-      start_ms: 52000
-      end_ms: 72166
-      url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=52s"
-      segment_ids:
-        - "leQBUn8-4tw:00011"
-        - "leQBUn8-4tw:00014"
-  - id: 9OxcCPWI-k8-concept-serve-action-decomposition-reviewed
-    evidence_type: explanation
-    excerpt: Breaking the serve into separate action phases such as backswing, contact, wrist drop, and follow-through to control spin and disguise intent.
-    reason: The speaker breaks the serve down into backswing-to-contact mechanics and highlights how the racket head and wrist change through the motion.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 9OxcCPWI-k8
-      start_ms: 126100
-      end_ms: 147933
-      url: https://www.youtube.com/watch?v=9OxcCPWI-k8&t=126s
-      segment_ids:
-        - 9OxcCPWI-k8:00041
-        - 9OxcCPWI-k8:00042
-        - 9OxcCPWI-k8:00045
-        - 9OxcCPWI-k8:00048
-        - 9OxcCPWI-k8:00049
-  - id: Jjd8Mu1s0S0-concept-serve-action-decomposition-reviewed
-    evidence_type: explanation
-    excerpt: Serve power and spin should be built in stages, with a relaxed backswing, a controlled contact, and a sharper release or acceleration afterward.
-    reason: They explicitly recommend a slow backswing and fast release rhythm for serve training.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: Jjd8Mu1s0S0
-      start_ms: 622520
-      end_ms: 650920
-      url: https://www.youtube.com/watch?v=Jjd8Mu1s0S0&t=622s
-      segment_ids:
-        - Jjd8Mu1s0S0:00263
-        - Jjd8Mu1s0S0:00264
-        - Jjd8Mu1s0S0:00265
-        - Jjd8Mu1s0S0:00266
-        - Jjd8Mu1s0S0:00267
-        - Jjd8Mu1s0S0:00268
-        - Jjd8Mu1s0S0:00269
-        - Jjd8Mu1s0S0:00270
-        - Jjd8Mu1s0S0:00271
-        - Jjd8Mu1s0S0:00272
-        - Jjd8Mu1s0S0:00273
-  - id: byk-MQTWbBs-concept-serve-action-decomposition-reviewed
-    evidence_type: explanation
-    excerpt: Breaking the serve into coordinated phases such as toss, backswing, waist/arm drive, and follow-through rather than one undifferentiated motion.
-    reason: The speaker segments the serve into waist snap, body-driven arm motion, backswing distance, and power generation.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: byk-MQTWbBs
-      start_ms: 63680
-      end_ms: 77600
-      url: https://www.youtube.com/watch?v=byk-MQTWbBs&t=63s
-      segment_ids:
-        - byk-MQTWbBs:00026
-        - byk-MQTWbBs:00027
-        - byk-MQTWbBs:00028
-        - byk-MQTWbBs:00030
-  - id: Dj-oOxwQn1s-concept-serve-action-decomposition-reviewed
-    evidence_type: explanation
-    excerpt: A serve action can be broken into finger-driven wrist control, forearm acceleration, and a brief brushing action followed by a controlled finish.
-    reason: The speaker says the wrist should be kept stable and controlled by the fingers.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: Dj-oOxwQn1s
-      start_ms: 281120
-      end_ms: 291160
-      url: https://www.youtube.com/watch?v=Dj-oOxwQn1s&t=281s
-      segment_ids:
-        - Dj-oOxwQn1s:00105
-        - Dj-oOxwQn1s:00106
-        - Dj-oOxwQn1s:00107
-        - Dj-oOxwQn1s:00108
-  - id: xwKSNLxVaBg-concept-serve-action-decomposition-reviewed
-    evidence_type: explanation
-    excerpt: Breaking the serve into ordered motion phases, especially driving forward first and then adding the upward or snapping finish.
-    reason: Explicitly instructs to open the forearm, pull back parallel, move forward, then move forward and upward as separate steps.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: xwKSNLxVaBg
-      start_ms: 295720
-      end_ms: 311280
-      url: https://www.youtube.com/watch?v=xwKSNLxVaBg&t=295s
-      segment_ids:
-        - xwKSNLxVaBg:00106
-        - xwKSNLxVaBg:00107
-        - xwKSNLxVaBg:00110
-        - xwKSNLxVaBg:00111
-  - id: byk-MQTWbBs-concept-serve-action-decomposition-reviewed-36c6a0a9
-    evidence_type: explanation
-    excerpt: Breaking the serve into coordinated phases such as toss, backswing, waist/arm drive, and follow-through rather than one undifferentiated motion.
-    reason: The speaker segments the serve into waist snap, body-driven arm motion, backswing distance, and power generation.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: byk-MQTWbBs
-      start_ms: 63680
-      end_ms: 77600
-      url: https://www.youtube.com/watch?v=byk-MQTWbBs&t=63s
-      segment_ids:
-        - byk-MQTWbBs:00026
-        - byk-MQTWbBs:00027
-        - byk-MQTWbBs:00028
-        - byk-MQTWbBs:00030
-  - id: Dj-oOxwQn1s-concept-serve-action-decomposition-reviewed-369d6cae
-    evidence_type: explanation
-    excerpt: A serve action can be broken into finger-driven wrist control, forearm acceleration, and a brief brushing action followed by a controlled finish.
-    reason: The speaker says the wrist should be kept stable and controlled by the fingers.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: Dj-oOxwQn1s
-      start_ms: 281120
-      end_ms: 291160
-      url: https://www.youtube.com/watch?v=Dj-oOxwQn1s&t=281s
-      segment_ids:
-        - Dj-oOxwQn1s:00105
-        - Dj-oOxwQn1s:00106
-        - Dj-oOxwQn1s:00107
-        - Dj-oOxwQn1s:00108
-  - id: xwKSNLxVaBg-concept-serve-action-decomposition-reviewed-0c95b589
-    evidence_type: explanation
-    excerpt: Breaking the serve into ordered motion phases, especially driving forward first and then adding the upward or snapping finish.
-    reason: Explicitly instructs to open the forearm, pull back parallel, move forward, then move forward and upward as separate steps.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: xwKSNLxVaBg
-      start_ms: 295720
-      end_ms: 311280
-      url: https://www.youtube.com/watch?v=xwKSNLxVaBg&t=295s
-      segment_ids:
-        - xwKSNLxVaBg:00106
-        - xwKSNLxVaBg:00107
-        - xwKSNLxVaBg:00110
-        - xwKSNLxVaBg:00111
-  - id: E6sGbY4sQH0-concept-serve-action-decomposition-reviewed
-    evidence_type: explanation
-    excerpt: 'The serve is taught as a step-by-step sequence: compacting the motion, then increasing speed with coordinated body and forearm action.'
-    reason: Adds the speed step through body and forearm use, with emphasis on relaxation and proper tension.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: E6sGbY4sQH0
-      start_ms: 259480
-      end_ms: 278000
-      url: https://www.youtube.com/watch?v=E6sGbY4sQH0&t=259s
-      segment_ids:
-        - E6sGbY4sQH0:00089
-        - E6sGbY4sQH0:00092
-        - E6sGbY4sQH0:00094
-  - id: RjgITcuxl5I-concept-serve-action-decomposition-reviewed
-    evidence_type: explanation
-    excerpt: Breaking the serve into controllable stages such as backswing, wrist rotation, and racket-tip acceleration so the spin happens at contact.
-    reason: The speaker identifies the backswing, contact path, and tip acceleration as key to producing spin.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: RjgITcuxl5I
-      start_ms: 453680
-      end_ms: 481000
-      url: https://www.youtube.com/watch?v=RjgITcuxl5I&t=453s
-      segment_ids:
-        - RjgITcuxl5I:00168
-        - RjgITcuxl5I:00169
-        - RjgITcuxl5I:00170
-        - RjgITcuxl5I:00171
-        - RjgITcuxl5I:00172
-        - RjgITcuxl5I:00173
-        - RjgITcuxl5I:00174
-        - RjgITcuxl5I:00175
-        - RjgITcuxl5I:00176
-  - id: 6NvlGVPIC6E-concept-serve-action-decomposition-reviewed
-    evidence_type: explanation
-    excerpt: Generating serve power and spin through separated, sequential movement of body parts rather than one continuous stiff motion.
-    reason: 'The motion is described as force generated in sequence: elbow, arm, wrist, fingers, like a whip.'
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 6NvlGVPIC6E
-      start_ms: 129440
-      end_ms: 143120
-      url: https://www.youtube.com/watch?v=6NvlGVPIC6E&t=129s
-      segment_ids:
-        - 6NvlGVPIC6E:00047
-        - 6NvlGVPIC6E:00050
-        - 6NvlGVPIC6E:00051
-  - id: Fe4y6uzl5GU-concept-serve-action-decomposition-reviewed
-    evidence_type: explanation
-    excerpt: The serve motion is broken into parts, emphasizing fingers first, then wrist or forearm, rather than one rigid arm action.
-    reason: The speaker explicitly describes a finger-driven serve, rejects arm-driven execution, and later decomposes the action into finger then forearm acceleration.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: Fe4y6uzl5GU
-      start_ms: 310920
-      end_ms: 324560
-      url: https://www.youtube.com/watch?v=Fe4y6uzl5GU&t=310s
-      segment_ids:
-        - Fe4y6uzl5GU:00098
-        - Fe4y6uzl5GU:00099
-        - Fe4y6uzl5GU:00100
-        - Fe4y6uzl5GU:00101
-        - Fe4y6uzl5GU:00102
-  - id: hwT7cH6PbZQ-concept-serve-action-decomposition-reviewed
-    evidence_type: explanation
-    excerpt: Breaking the stroke into controllable parts, especially initiating motion with the fingers and limiting arm dominance.
-    reason: The speaker explains that flicks, pushes, and loops are initiated by the fingers rather than a loose wrist, and warns against letting the wrist move as a single unit.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: hwT7cH6PbZQ
-      start_ms: 388666
-      end_ms: 413066
-      url: https://www.youtube.com/watch?v=hwT7cH6PbZQ&t=388s
-      segment_ids:
-        - hwT7cH6PbZQ:00091
-        - hwT7cH6PbZQ:00093
-        - hwT7cH6PbZQ:00094
-        - hwT7cH6PbZQ:00095
-        - hwT7cH6PbZQ:00096
-        - hwT7cH6PbZQ:00097
-  - id: Kg4hLYnEbAs-concept-serve-action-decomposition-reviewed
-    evidence_type: explanation
-    excerpt: Breaking the serve into distinct acceleration and brushing phases to increase spin and control.
-    reason: The speaker explicitly describes a standard serve being stopped early, then adding another brushing phase and more wrist drive to produce more spin.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: Kg4hLYnEbAs
-      start_ms: 30280
-      end_ms: 50680
-      url: https://www.youtube.com/watch?v=Kg4hLYnEbAs&t=30s
-      segment_ids:
-        - Kg4hLYnEbAs:00013
-        - Kg4hLYnEbAs:00014
-        - Kg4hLYnEbAs:00015
-        - Kg4hLYnEbAs:00016
-        - Kg4hLYnEbAs:00019
-  - id: QgG46RFoIcA-concept-serve-action-decomposition-reviewed
-    evidence_type: definition
-    excerpt: A high-quality serve uses a decomposed sequence of fingers, wrist, forearm, and upper arm rather than a single unified motion.
-    reason: The speaker directly lists fingers, wrist, forearm, and upper arm as separate parts that must be separated.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: QgG46RFoIcA
-      start_ms: 233560
-      end_ms: 248200
-      url: https://www.youtube.com/watch?v=QgG46RFoIcA&t=233s
-      segment_ids:
-        - QgG46RFoIcA:00080
-        - QgG46RFoIcA:00081
-        - QgG46RFoIcA:00082
-        - QgG46RFoIcA:00083
-        - QgG46RFoIcA:00084
-  - id: -QdTaX8ejCM-concept-serve-action-decomposition-reviewed
-    evidence_type: explanation
-    excerpt: Breaking the serve into distinct finger, wrist, and racket-head actions instead of treating it as one continuous arm swing.
-    reason: The speaker introduces the hand, wrist, fingers, and racket head as separate elements of the motion.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: -QdTaX8ejCM
-      start_ms: 0
-      end_ms: 16480
-      url: https://www.youtube.com/watch?v=-QdTaX8ejCM&t=0s
-      segment_ids:
-        - -QdTaX8ejCM:00000
-        - -QdTaX8ejCM:00001
-        - -QdTaX8ejCM:00002
-        - -QdTaX8ejCM:00003
-        - -QdTaX8ejCM:00004
-  - id: NFfY66W2PGM-concept-serve-action-decomposition-reviewed
-    evidence_type: explanation
-    excerpt: Breaking the serve into distinct motion segments such as wrist setup, contact, and follow-through rather than one continuous forceful arm swing.
-    reason: The speaker describes relaxing the wrist, dipping the racket head, whipping upward, then snapping the wrist instead of using the arm.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: NFfY66W2PGM
-      start_ms: 167633
-      end_ms: 190500
-      url: https://www.youtube.com/watch?v=NFfY66W2PGM&t=167s
-      segment_ids:
-        - NFfY66W2PGM:00041
-        - NFfY66W2PGM:00042
-        - NFfY66W2PGM:00047
-  - id: tz4gFEoTOTc-concept-serve-action-decomposition-reviewed
-    evidence_type: explanation
-    excerpt: Breaking the serve motion into separate stages, such as backswing, forearm extension, wrist use, and follow-through, rather than using one undifferentiated swing.
-    reason: The speaker describes the backswing, keeping it tight to the body, extending only the forearm, then using the wrist when needed, which is a decomposed action sequence.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: tz4gFEoTOTc
-      start_ms: 193833
-      end_ms: 220566
-      url: https://www.youtube.com/watch?v=tz4gFEoTOTc&t=193s
-      segment_ids:
-        - tz4gFEoTOTc:00069
-        - tz4gFEoTOTc:00071
-        - tz4gFEoTOTc:00076
-        - tz4gFEoTOTc:00077
-  - id: j90jCkrtITo-concept-serve-action-decomposition-reviewed
-    evidence_type: explanation
-    excerpt: Breaking the serve into staged motion segments rather than trying to execute the whole action as one undifferentiated swing.
-    reason: The speaker explicitly distinguishes stage one and stage two, then refines the brushing timing as a later stage.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: j90jCkrtITo
-      start_ms: 727233
-      end_ms: 737500
-      url: https://www.youtube.com/watch?v=j90jCkrtITo&t=727s
-      segment_ids:
-        - j90jCkrtITo:00231
-        - j90jCkrtITo:00235
-  - id: 25Ohh2RJcWk-concept-serve-action-decomposition-reviewed
-    evidence_type: explanation
-    excerpt: Breaking the serve into separate parts of the body so each part contributes its own role rather than moving everything together.
-    reason: The transcript contrasts together versus separated motion and says the upper arm, forearm, fingers, and wrist should each play distinct roles in the serve.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 25Ohh2RJcWk
-      start_ms: 483266
-      end_ms: 507766
-      url: https://www.youtube.com/watch?v=25Ohh2RJcWk&t=483s
-      segment_ids:
-        - 25Ohh2RJcWk:00124
-        - 25Ohh2RJcWk:00125
-        - 25Ohh2RJcWk:00126
-        - 25Ohh2RJcWk:00127
-        - 25Ohh2RJcWk:00128
-        - 25Ohh2RJcWk:00129
-        - 25Ohh2RJcWk:00130
-        - 25Ohh2RJcWk:00131
-  - id: UknMVwzNNr8-concept-serve-action-decomposition-reviewed
-    evidence_type: explanation
-    excerpt: Training a serve by separating impact, brushing, and related components before combining them.
-    reason: The speaker repeatedly says to train hitting and brushing separately, then combine them, and extends the same progression to serves.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: UknMVwzNNr8
-      start_ms: 14600
-      end_ms: 37866
-      url: https://www.youtube.com/watch?v=UknMVwzNNr8&t=14s
-      segment_ids:
-        - UknMVwzNNr8:00006
-        - UknMVwzNNr8:00007
-        - UknMVwzNNr8:00008
-        - UknMVwzNNr8:00010
-        - UknMVwzNNr8:00011
-        - UknMVwzNNr8:00012
-  - id: bQTenTT3bz0-concept-serve-action-decomposition-reviewed
-    evidence_type: definition
-    excerpt: A serve method that breaks the motion into coordinated joint segments instead of moving the whole arm together.
-    reason: The speaker compares moving the upper arm, elbow, and forearm together versus fixing the upper arm and elbow and using the forearm to brush forward, then confirms the second approach.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: bQTenTT3bz0
-      start_ms: 21200
-      end_ms: 34800
-      url: https://www.youtube.com/watch?v=bQTenTT3bz0&t=21s
-      segment_ids:
-        - bQTenTT3bz0:00005
-        - bQTenTT3bz0:00006
-        - bQTenTT3bz0:00007
-        - bQTenTT3bz0:00008
-        - bQTenTT3bz0:00009
-  - id: GOAyEFoSibE-concept-serve-action-decomposition-reviewed
-    evidence_type: definition
-    excerpt: Breaking the serve into sequential contributions from fingers, wrist, forearm, and upper arm rather than swinging as one uniform motion.
-    reason: The speaker explicitly explains a finger-to-wrist-to-forearm-to-upper-arm sequence and contrasts it with a uniform swing.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: GOAyEFoSibE
-      start_ms: 307233
-      end_ms: 326233
-      url: https://www.youtube.com/watch?v=GOAyEFoSibE&t=307s
-      segment_ids:
-        - GOAyEFoSibE:00071
-        - GOAyEFoSibE:00072
-        - GOAyEFoSibE:00073
-        - GOAyEFoSibE:00074
-  - id: dMRsujoVIj4-concept-serve-action-decomposition-reviewed
-    evidence_type: definition
-    excerpt: Breaking the serve into separate coordinated phases instead of moving the arm, wrist, and forearm as one rigid action.
-    reason: The speaker explicitly says the wrist and forearm must not move together and describes a staged motion.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: dMRsujoVIj4
-      start_ms: 292200
-      end_ms: 309633
-      url: https://www.youtube.com/watch?v=dMRsujoVIj4&t=292s
-      segment_ids:
-        - dMRsujoVIj4:00118
-        - dMRsujoVIj4:00120
-        - dMRsujoVIj4:00121
-  - id: 8uzW4bF4Oc8-concept-serve-action-decomposition-reviewed
-    evidence_type: explanation
-    excerpt: Breaking the serve into sequential parts rather than moving everything together, with the upper arm stopping first, then the forearm swinging, and finally the fingers and wrist finishing the action.
-    reason: The coach explicitly describes the serve as a sequence, not simultaneous motion, and details the order of upper arm, forearm, fingers, and wrist.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 8uzW4bF4Oc8
-      start_ms: 416033
-      end_ms: 436400
-      url: https://www.youtube.com/watch?v=8uzW4bF4Oc8&t=416s
-      segment_ids:
-        - 8uzW4bF4Oc8:00195
-        - 8uzW4bF4Oc8:00196
-        - 8uzW4bF4Oc8:00197
-        - 8uzW4bF4Oc8:00198
-        - 8uzW4bF4Oc8:00199
-        - 8uzW4bF4Oc8:00202
-        - 8uzW4bF4Oc8:00203
-        - 8uzW4bF4Oc8:00204
-        - 8uzW4bF4Oc8:00205
-  - id: P21-_dtUzE8-concept-serve-action-decomposition-reviewed
-    evidence_type: explanation
-    excerpt: Breaking the serve into smaller linked actions, especially finger, wrist, forearm, and elbow contributions.
-    reason: Describes the long ball as relying on forearm strength, fast swing speed, and forearm-driven impact force.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: P21-_dtUzE8
-      start_ms: 633966
-      end_ms: 653200
-      url: https://www.youtube.com/watch?v=P21-_dtUzE8&t=633s
-      segment_ids:
-        - P21-_dtUzE8:00296
-        - P21-_dtUzE8:00307
-  - id: 6teuLAHljCk-concept-serve-action-decomposition-reviewed
-    evidence_type: explanation
-    excerpt: Breaking the serve into distinct phases so spin, speed, and follow-through can be trained separately and then combined.
-    reason: The speaker repeatedly divides the motion into phases/segments and maps contact, brushing, speed, and follow-through onto those segments.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 6teuLAHljCk
-      start_ms: 223466
-      end_ms: 251666
-      url: https://www.youtube.com/watch?v=6teuLAHljCk&t=223s
-      segment_ids:
-        - 6teuLAHljCk:00050
-        - 6teuLAHljCk:00054
-        - 6teuLAHljCk:00057
-  - id: WZnZIhZkkRo-concept-serve-action-decomposition-reviewed
-    evidence_type: definition
-    excerpt: A serve can be trained as a sequence of distinct action phases rather than one blended motion.
-    reason: The speaker summarizes the serve into four named actions and repeats them for both shakehand and penhold.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: WZnZIhZkkRo
-      start_ms: 442700
-      end_ms: 462800
-      url: https://www.youtube.com/watch?v=WZnZIhZkkRo&t=442s
-      segment_ids:
-        - WZnZIhZkkRo:00100
-        - WZnZIhZkkRo:00103
-        - WZnZIhZkkRo:00104
-        - WZnZIhZkkRo:00105
-  - id: Pym9pNWaowA-concept-serve-action-decomposition-reviewed
-    evidence_type: definition
-    excerpt: Breaking the serve into separate joint actions rather than moving the whole arm as one rigid unit.
-    reason: The speaker explicitly says the joints must move separately and sequentially, not all at once or as one rigid unit.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: Pym9pNWaowA
-      start_ms: 519566
-      end_ms: 548766
-      url: https://www.youtube.com/watch?v=Pym9pNWaowA&t=519s
-      segment_ids:
-        - Pym9pNWaowA:00084
-        - Pym9pNWaowA:00085
-        - Pym9pNWaowA:00086
-  - id: 6NvlGVPIC6E-concept-serve-action-decomposition-codex-reviewed
-    evidence_type: explanation
-    excerpt: 'Let the motion generate force in sequence: elbow first, then arm, then wrist, then fingers. It should feel like a whip, not a stick.'
-    reason: The contiguous 22.84-second span directly explains the sequential elbow-arm-wrist-finger action and contrasts it with a stiff motion, matching the existing concept.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 6NvlGVPIC6E
-      start_ms: 129440
-      end_ms: 152280
-      url: https://www.youtube.com/watch?v=6NvlGVPIC6E&t=129s
-      segment_ids:
-        - 6NvlGVPIC6E:00047
-        - 6NvlGVPIC6E:00048
-        - 6NvlGVPIC6E:00049
-        - 6NvlGVPIC6E:00050
-        - 6NvlGVPIC6E:00051
-        - 6NvlGVPIC6E:00052
-        - 6NvlGVPIC6E:00053
-  - id: 8uzW4bF4Oc8-concept-serve-action-decomposition-codex-reviewed
-    evidence_type: explanation
-    excerpt: 'The serve uses a sequential stopping order: the upper arm stops first, then the forearm swings, and finally the fingers and wrist complete the braking action.'
-    reason: These contiguous segments explicitly describe the serve as sequential rather than simultaneous and specify the order of upper-arm stopping, forearm swinging, and finger-and-wrist braking.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 8uzW4bF4Oc8
-      start_ms: 416033
-      end_ms: 436400
-      url: https://www.youtube.com/watch?v=8uzW4bF4Oc8&t=416s
-      segment_ids:
-        - 8uzW4bF4Oc8:00195
-        - 8uzW4bF4Oc8:00196
-        - 8uzW4bF4Oc8:00197
-        - 8uzW4bF4Oc8:00198
-        - 8uzW4bF4Oc8:00199
-        - 8uzW4bF4Oc8:00200
-        - 8uzW4bF4Oc8:00201
-        - 8uzW4bF4Oc8:00202
-        - 8uzW4bF4Oc8:00203
-        - 8uzW4bF4Oc8:00204
-        - 8uzW4bF4Oc8:00205
-  - id: 9OxcCPWI-k8-concept-serve-action-decomposition-codex-reviewed
-    evidence_type: explanation
-    excerpt: 'For backhand serves, drop the wrist and observe the action from backswing to contact: the racket head points back, goes down at contact, then comes up, while the wrist forms an arc.'
-    reason: This contiguous 28.5-second span directly explains the backhand serve sequence from wrist drop through backswing and contact, including the racket-head changes and wrist arc. It supports the existing durable topic, but not the omitted claims about fingers, forearm, upper arm, follow-through, or disguise.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 9OxcCPWI-k8
-      start_ms: 119433
-      end_ms: 147933
-      url: https://www.youtube.com/watch?v=9OxcCPWI-k8&t=119s
-      segment_ids:
-        - 9OxcCPWI-k8:00040
-        - 9OxcCPWI-k8:00041
-        - 9OxcCPWI-k8:00042
-        - 9OxcCPWI-k8:00043
-        - 9OxcCPWI-k8:00044
-        - 9OxcCPWI-k8:00045
-        - 9OxcCPWI-k8:00046
-        - 9OxcCPWI-k8:00047
-        - 9OxcCPWI-k8:00048
-        - 9OxcCPWI-k8:00049
-  - id: dMRsujoVIj4-concept-serve-action-decomposition-codex-reviewed
-    evidence_type: explanation
-    excerpt: Separate your wrist from your forearm. Your wrist should extend backward first, then move forward to contact the ball, extending the wrist.
-    reason: The speaker directly explains that the wrist and forearm should be separated and describes the wrist's staged backward-then-forward movement.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: dMRsujoVIj4
-      start_ms: 292200
-      end_ms: 309633
-      url: https://www.youtube.com/watch?v=dMRsujoVIj4&t=292s
-      segment_ids:
-        - dMRsujoVIj4:00118
-        - dMRsujoVIj4:00119
-        - dMRsujoVIj4:00120
-        - dMRsujoVIj4:00121
-  - id: E6sGbY4sQH0-concept-serve-action-decomposition-codex-reviewed
-    evidence_type: explanation
-    excerpt: 'The serve is developed step by step: first compact the motion, then increase speed using the body and forearm with a snapping action.'
-    reason: This contiguous 27-second span explicitly describes compacting the movement step by step, followed by increasing speed through body and forearm use with a snapping sensation. It matches the existing serve action decomposition concept.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: E6sGbY4sQH0
-      start_ms: 250960
-      end_ms: 278000
-      url: https://www.youtube.com/watch?v=E6sGbY4sQH0&t=250s
-      segment_ids:
-        - E6sGbY4sQH0:00087
-        - E6sGbY4sQH0:00088
-        - E6sGbY4sQH0:00089
-        - E6sGbY4sQH0:00090
-        - E6sGbY4sQH0:00091
-        - E6sGbY4sQH0:00092
-        - E6sGbY4sQH0:00093
-        - E6sGbY4sQH0:00094
-  - id: P21-_dtUzE8-concept-serve-action-decomposition-codex-reviewed
-    evidence_type: explanation
-    excerpt: Use your finger and wrist with a rotation to produce a short side spin or a downward side spin.
-    reason: This contiguous 10.8-second span directly explains the finger-and-wrist components and their rotational contribution to serve spin.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: P21-_dtUzE8
-      start_ms: 618300
-      end_ms: 629100
-      url: https://www.youtube.com/watch?v=P21-_dtUzE8&t=618s
-      segment_ids:
-        - P21-_dtUzE8:00289
-        - P21-_dtUzE8:00290
-        - P21-_dtUzE8:00291
-        - P21-_dtUzE8:00292
-        - P21-_dtUzE8:00293
+- id: decomposition-principle-1
+  evidence_type: explanation
+  excerpt: The speaker attributes spin to “decomposition,” meaning separating the power sources.
+  reason: The stated principle is to separate power sources rather than treat the motion as one undivided action.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source: {video_id: csJgHR7Daog, start_ms: 168000, end_ms: 175360, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=168s", segment_ids: ["csJgHR7Daog:00077", "csJgHR7Daog:00078", "csJgHR7Daog:00079"]}
+- id: decomposition-sequence-2
+  evidence_type: explanation
+  excerpt: The speaker describes fingers moving first to drive the wrist, then forearm and upper arm. This is contrasted with amateurs swinging through as one block, which the speaker says does not produce spin.
+  reason: This speaker’s stated order is fingers, wrist, forearm and upper arm, contrasted with a one-block swing.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: csJgHR7Daog
+    start_ms: 173000
+    end_ms: 187640
+    url: https://www.youtube.com/watch?v=csJgHR7Daog&t=173s
+    segment_ids:
+    - csJgHR7Daog:00080
+    - csJgHR7Daog:00081
+    - csJgHR7Daog:00082
+    - csJgHR7Daog:00083
+    - csJgHR7Daog:00084
+- id: decomposition-finger-acceleration-3
+  evidence_type: correction
+  excerpt: Control your forearm and upper arm, then use your fingers to accelerate.
+  reason: Control the forearm and upper arm, then use the fingers to accelerate in this cue.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source: {video_id: csJgHR7Daog, start_ms: 189400, end_ms: 197040, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=189s", segment_ids: ["csJgHR7Daog:00087", "csJgHR7Daog:00088", "csJgHR7Daog:00089"]}
+- id: leQBUn8-4tw-cand-serve-toss-height-selection-1
+  evidence_type: definition
+  excerpt: A timing concept for serves that rejects medium-height tosses as awkward and inconsistent, especially under match pressure, favoring clearly low or high tosses instead.
+  reason: The speaker explicitly contrasts low/high tosses with the problematic medium toss.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: leQBUn8-4tw
+    start_ms: 47633
+    end_ms: 67200
+    url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=47s"
+    segment_ids:
+    - "leQBUn8-4tw:00010"
+    - "leQBUn8-4tw:00013"
+- id: leQBUn8-4tw-cand-serve-toss-height-selection-2
+  evidence_type: explanation
+  excerpt: A timing concept for serves that rejects medium-height tosses as awkward and inconsistent, especially under match pressure, favoring clearly low or high tosses instead.
+  reason: Medium tosses are described as inconsistent because contact timing breaks down under nerves and pressure.
+  confidence: 0.92
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: leQBUn8-4tw
+    start_ms: 52000
+    end_ms: 72166
+    url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=52s"
+    segment_ids:
+    - "leQBUn8-4tw:00011"
+    - "leQBUn8-4tw:00014"
+- id: 9OxcCPWI-k8-concept-serve-action-decomposition-reviewed
+  evidence_type: explanation
+  excerpt: Breaking the serve into separate action phases such as backswing, contact, wrist drop, and follow-through to control spin and disguise intent.
+  reason: The speaker breaks the serve down into backswing-to-contact mechanics and highlights how the racket head and wrist change through the motion.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 9OxcCPWI-k8
+    start_ms: 126100
+    end_ms: 147933
+    url: https://www.youtube.com/watch?v=9OxcCPWI-k8&t=126s
+    segment_ids:
+    - 9OxcCPWI-k8:00041
+    - 9OxcCPWI-k8:00042
+    - 9OxcCPWI-k8:00045
+    - 9OxcCPWI-k8:00048
+    - 9OxcCPWI-k8:00049
+- id: Jjd8Mu1s0S0-concept-serve-action-decomposition-reviewed
+  evidence_type: explanation
+  excerpt: Serve power and spin should be built in stages, with a relaxed backswing, a controlled contact, and a sharper release or acceleration afterward.
+  reason: They explicitly recommend a slow backswing and fast release rhythm for serve training.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Jjd8Mu1s0S0
+    start_ms: 622520
+    end_ms: 650920
+    url: https://www.youtube.com/watch?v=Jjd8Mu1s0S0&t=622s
+    segment_ids:
+    - Jjd8Mu1s0S0:00263
+    - Jjd8Mu1s0S0:00264
+    - Jjd8Mu1s0S0:00265
+    - Jjd8Mu1s0S0:00266
+    - Jjd8Mu1s0S0:00267
+    - Jjd8Mu1s0S0:00268
+    - Jjd8Mu1s0S0:00269
+    - Jjd8Mu1s0S0:00270
+    - Jjd8Mu1s0S0:00271
+    - Jjd8Mu1s0S0:00272
+    - Jjd8Mu1s0S0:00273
+- id: byk-MQTWbBs-concept-serve-action-decomposition-reviewed
+  evidence_type: explanation
+  excerpt: Breaking the serve into coordinated phases such as toss, backswing, waist/arm drive, and follow-through rather than one undifferentiated motion.
+  reason: The speaker segments the serve into waist snap, body-driven arm motion, backswing distance, and power generation.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: byk-MQTWbBs
+    start_ms: 63680
+    end_ms: 77600
+    url: https://www.youtube.com/watch?v=byk-MQTWbBs&t=63s
+    segment_ids:
+    - byk-MQTWbBs:00026
+    - byk-MQTWbBs:00027
+    - byk-MQTWbBs:00028
+    - byk-MQTWbBs:00030
+- id: Dj-oOxwQn1s-concept-serve-action-decomposition-reviewed
+  evidence_type: explanation
+  excerpt: A serve action can be broken into finger-driven wrist control, forearm acceleration, and a brief brushing action followed by a controlled finish.
+  reason: The speaker says the wrist should be kept stable and controlled by the fingers.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Dj-oOxwQn1s
+    start_ms: 281120
+    end_ms: 291160
+    url: https://www.youtube.com/watch?v=Dj-oOxwQn1s&t=281s
+    segment_ids:
+    - Dj-oOxwQn1s:00105
+    - Dj-oOxwQn1s:00106
+    - Dj-oOxwQn1s:00107
+    - Dj-oOxwQn1s:00108
+- id: xwKSNLxVaBg-concept-serve-action-decomposition-reviewed
+  evidence_type: explanation
+  excerpt: Breaking the serve into ordered motion phases, especially driving forward first and then adding the upward or snapping finish.
+  reason: Explicitly instructs to open the forearm, pull back parallel, move forward, then move forward and upward as separate steps.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: xwKSNLxVaBg
+    start_ms: 295720
+    end_ms: 311280
+    url: https://www.youtube.com/watch?v=xwKSNLxVaBg&t=295s
+    segment_ids:
+    - xwKSNLxVaBg:00106
+    - xwKSNLxVaBg:00107
+    - xwKSNLxVaBg:00110
+    - xwKSNLxVaBg:00111
+- id: byk-MQTWbBs-concept-serve-action-decomposition-reviewed-36c6a0a9
+  evidence_type: explanation
+  excerpt: Breaking the serve into coordinated phases such as toss, backswing, waist/arm drive, and follow-through rather than one undifferentiated motion.
+  reason: The speaker segments the serve into waist snap, body-driven arm motion, backswing distance, and power generation.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: byk-MQTWbBs
+    start_ms: 63680
+    end_ms: 77600
+    url: https://www.youtube.com/watch?v=byk-MQTWbBs&t=63s
+    segment_ids:
+    - byk-MQTWbBs:00026
+    - byk-MQTWbBs:00027
+    - byk-MQTWbBs:00028
+    - byk-MQTWbBs:00030
+- id: Dj-oOxwQn1s-concept-serve-action-decomposition-reviewed-369d6cae
+  evidence_type: explanation
+  excerpt: A serve action can be broken into finger-driven wrist control, forearm acceleration, and a brief brushing action followed by a controlled finish.
+  reason: The speaker says the wrist should be kept stable and controlled by the fingers.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Dj-oOxwQn1s
+    start_ms: 281120
+    end_ms: 291160
+    url: https://www.youtube.com/watch?v=Dj-oOxwQn1s&t=281s
+    segment_ids:
+    - Dj-oOxwQn1s:00105
+    - Dj-oOxwQn1s:00106
+    - Dj-oOxwQn1s:00107
+    - Dj-oOxwQn1s:00108
+- id: xwKSNLxVaBg-concept-serve-action-decomposition-reviewed-0c95b589
+  evidence_type: explanation
+  excerpt: Breaking the serve into ordered motion phases, especially driving forward first and then adding the upward or snapping finish.
+  reason: Explicitly instructs to open the forearm, pull back parallel, move forward, then move forward and upward as separate steps.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: xwKSNLxVaBg
+    start_ms: 295720
+    end_ms: 311280
+    url: https://www.youtube.com/watch?v=xwKSNLxVaBg&t=295s
+    segment_ids:
+    - xwKSNLxVaBg:00106
+    - xwKSNLxVaBg:00107
+    - xwKSNLxVaBg:00110
+    - xwKSNLxVaBg:00111
+- id: E6sGbY4sQH0-concept-serve-action-decomposition-reviewed
+  evidence_type: explanation
+  excerpt: 'The serve is taught as a step-by-step sequence: compacting the motion, then increasing speed with coordinated body and forearm action.'
+  reason: Adds the speed step through body and forearm use, with emphasis on relaxation and proper tension.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: E6sGbY4sQH0
+    start_ms: 259480
+    end_ms: 278000
+    url: https://www.youtube.com/watch?v=E6sGbY4sQH0&t=259s
+    segment_ids:
+    - E6sGbY4sQH0:00089
+    - E6sGbY4sQH0:00092
+    - E6sGbY4sQH0:00094
+- id: RjgITcuxl5I-concept-serve-action-decomposition-reviewed
+  evidence_type: explanation
+  excerpt: Breaking the serve into controllable stages such as backswing, wrist rotation, and racket-tip acceleration so the spin happens at contact.
+  reason: The speaker identifies the backswing, contact path, and tip acceleration as key to producing spin.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: RjgITcuxl5I
+    start_ms: 453680
+    end_ms: 481000
+    url: https://www.youtube.com/watch?v=RjgITcuxl5I&t=453s
+    segment_ids:
+    - RjgITcuxl5I:00168
+    - RjgITcuxl5I:00169
+    - RjgITcuxl5I:00170
+    - RjgITcuxl5I:00171
+    - RjgITcuxl5I:00172
+    - RjgITcuxl5I:00173
+    - RjgITcuxl5I:00174
+    - RjgITcuxl5I:00175
+    - RjgITcuxl5I:00176
+- id: 6NvlGVPIC6E-concept-serve-action-decomposition-reviewed
+  evidence_type: explanation
+  excerpt: Generating serve power and spin through separated, sequential movement of body parts rather than one continuous stiff motion.
+  reason: 'The motion is described as force generated in sequence: elbow, arm, wrist, fingers, like a whip.'
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 6NvlGVPIC6E
+    start_ms: 129440
+    end_ms: 143120
+    url: https://www.youtube.com/watch?v=6NvlGVPIC6E&t=129s
+    segment_ids:
+    - 6NvlGVPIC6E:00047
+    - 6NvlGVPIC6E:00050
+    - 6NvlGVPIC6E:00051
+- id: Fe4y6uzl5GU-concept-serve-action-decomposition-reviewed
+  evidence_type: explanation
+  excerpt: The serve motion is broken into parts, emphasizing fingers first, then wrist or forearm, rather than one rigid arm action.
+  reason: The speaker explicitly describes a finger-driven serve, rejects arm-driven execution, and later decomposes the action into finger then forearm acceleration.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Fe4y6uzl5GU
+    start_ms: 310920
+    end_ms: 324560
+    url: https://www.youtube.com/watch?v=Fe4y6uzl5GU&t=310s
+    segment_ids:
+    - Fe4y6uzl5GU:00098
+    - Fe4y6uzl5GU:00099
+    - Fe4y6uzl5GU:00100
+    - Fe4y6uzl5GU:00101
+    - Fe4y6uzl5GU:00102
+- id: hwT7cH6PbZQ-concept-serve-action-decomposition-reviewed
+  evidence_type: explanation
+  excerpt: Breaking the stroke into controllable parts, especially initiating motion with the fingers and limiting arm dominance.
+  reason: The speaker explains that flicks, pushes, and loops are initiated by the fingers rather than a loose wrist, and warns against letting the wrist move as a single unit.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: hwT7cH6PbZQ
+    start_ms: 388666
+    end_ms: 413066
+    url: https://www.youtube.com/watch?v=hwT7cH6PbZQ&t=388s
+    segment_ids:
+    - hwT7cH6PbZQ:00091
+    - hwT7cH6PbZQ:00093
+    - hwT7cH6PbZQ:00094
+    - hwT7cH6PbZQ:00095
+    - hwT7cH6PbZQ:00096
+    - hwT7cH6PbZQ:00097
+- id: Kg4hLYnEbAs-concept-serve-action-decomposition-reviewed
+  evidence_type: explanation
+  excerpt: Breaking the serve into distinct acceleration and brushing phases to increase spin and control.
+  reason: The speaker explicitly describes a standard serve being stopped early, then adding another brushing phase and more wrist drive to produce more spin.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Kg4hLYnEbAs
+    start_ms: 30280
+    end_ms: 50680
+    url: https://www.youtube.com/watch?v=Kg4hLYnEbAs&t=30s
+    segment_ids:
+    - Kg4hLYnEbAs:00013
+    - Kg4hLYnEbAs:00014
+    - Kg4hLYnEbAs:00015
+    - Kg4hLYnEbAs:00016
+    - Kg4hLYnEbAs:00019
+- id: QgG46RFoIcA-concept-serve-action-decomposition-reviewed
+  evidence_type: definition
+  excerpt: A high-quality serve uses a decomposed sequence of fingers, wrist, forearm, and upper arm rather than a single unified motion.
+  reason: The speaker directly lists fingers, wrist, forearm, and upper arm as separate parts that must be separated.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: QgG46RFoIcA
+    start_ms: 233560
+    end_ms: 248200
+    url: https://www.youtube.com/watch?v=QgG46RFoIcA&t=233s
+    segment_ids:
+    - QgG46RFoIcA:00080
+    - QgG46RFoIcA:00081
+    - QgG46RFoIcA:00082
+    - QgG46RFoIcA:00083
+    - QgG46RFoIcA:00084
+- id: -QdTaX8ejCM-concept-serve-action-decomposition-reviewed
+  evidence_type: explanation
+  excerpt: Breaking the serve into distinct finger, wrist, and racket-head actions instead of treating it as one continuous arm swing.
+  reason: The speaker introduces the hand, wrist, fingers, and racket head as separate elements of the motion.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: -QdTaX8ejCM
+    start_ms: 0
+    end_ms: 16480
+    url: https://www.youtube.com/watch?v=-QdTaX8ejCM&t=0s
+    segment_ids:
+    - -QdTaX8ejCM:00000
+    - -QdTaX8ejCM:00001
+    - -QdTaX8ejCM:00002
+    - -QdTaX8ejCM:00003
+    - -QdTaX8ejCM:00004
+- id: NFfY66W2PGM-concept-serve-action-decomposition-reviewed
+  evidence_type: explanation
+  excerpt: Breaking the serve into distinct motion segments such as wrist setup, contact, and follow-through rather than one continuous forceful arm swing.
+  reason: The speaker describes relaxing the wrist, dipping the racket head, whipping upward, then snapping the wrist instead of using the arm.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: NFfY66W2PGM
+    start_ms: 167633
+    end_ms: 190500
+    url: https://www.youtube.com/watch?v=NFfY66W2PGM&t=167s
+    segment_ids:
+    - NFfY66W2PGM:00041
+    - NFfY66W2PGM:00042
+    - NFfY66W2PGM:00047
+- id: tz4gFEoTOTc-concept-serve-action-decomposition-reviewed
+  evidence_type: explanation
+  excerpt: Breaking the serve motion into separate stages, such as backswing, forearm extension, wrist use, and follow-through, rather than using one undifferentiated swing.
+  reason: The speaker describes the backswing, keeping it tight to the body, extending only the forearm, then using the wrist when needed, which is a decomposed action sequence.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: tz4gFEoTOTc
+    start_ms: 193833
+    end_ms: 220566
+    url: https://www.youtube.com/watch?v=tz4gFEoTOTc&t=193s
+    segment_ids:
+    - tz4gFEoTOTc:00069
+    - tz4gFEoTOTc:00071
+    - tz4gFEoTOTc:00076
+    - tz4gFEoTOTc:00077
+- id: j90jCkrtITo-concept-serve-action-decomposition-reviewed
+  evidence_type: explanation
+  excerpt: Breaking the serve into staged motion segments rather than trying to execute the whole action as one undifferentiated swing.
+  reason: The speaker explicitly distinguishes stage one and stage two, then refines the brushing timing as a later stage.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: j90jCkrtITo
+    start_ms: 727233
+    end_ms: 737500
+    url: https://www.youtube.com/watch?v=j90jCkrtITo&t=727s
+    segment_ids:
+    - j90jCkrtITo:00231
+    - j90jCkrtITo:00235
+- id: 25Ohh2RJcWk-concept-serve-action-decomposition-reviewed
+  evidence_type: explanation
+  excerpt: Breaking the serve into separate parts of the body so each part contributes its own role rather than moving everything together.
+  reason: The transcript contrasts together versus separated motion and says the upper arm, forearm, fingers, and wrist should each play distinct roles in the serve.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 25Ohh2RJcWk
+    start_ms: 483266
+    end_ms: 507766
+    url: https://www.youtube.com/watch?v=25Ohh2RJcWk&t=483s
+    segment_ids:
+    - 25Ohh2RJcWk:00124
+    - 25Ohh2RJcWk:00125
+    - 25Ohh2RJcWk:00126
+    - 25Ohh2RJcWk:00127
+    - 25Ohh2RJcWk:00128
+    - 25Ohh2RJcWk:00129
+    - 25Ohh2RJcWk:00130
+    - 25Ohh2RJcWk:00131
+- id: UknMVwzNNr8-concept-serve-action-decomposition-reviewed
+  evidence_type: explanation
+  excerpt: Training a serve by separating impact, brushing, and related components before combining them.
+  reason: The speaker repeatedly says to train hitting and brushing separately, then combine them, and extends the same progression to serves.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: UknMVwzNNr8
+    start_ms: 14600
+    end_ms: 37866
+    url: https://www.youtube.com/watch?v=UknMVwzNNr8&t=14s
+    segment_ids:
+    - UknMVwzNNr8:00006
+    - UknMVwzNNr8:00007
+    - UknMVwzNNr8:00008
+    - UknMVwzNNr8:00010
+    - UknMVwzNNr8:00011
+    - UknMVwzNNr8:00012
+- id: bQTenTT3bz0-concept-serve-action-decomposition-reviewed
+  evidence_type: definition
+  excerpt: A serve method that breaks the motion into coordinated joint segments instead of moving the whole arm together.
+  reason: The speaker compares moving the upper arm, elbow, and forearm together versus fixing the upper arm and elbow and using the forearm to brush forward, then confirms the second approach.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: bQTenTT3bz0
+    start_ms: 21200
+    end_ms: 34800
+    url: https://www.youtube.com/watch?v=bQTenTT3bz0&t=21s
+    segment_ids:
+    - bQTenTT3bz0:00005
+    - bQTenTT3bz0:00006
+    - bQTenTT3bz0:00007
+    - bQTenTT3bz0:00008
+    - bQTenTT3bz0:00009
+- id: GOAyEFoSibE-concept-serve-action-decomposition-reviewed
+  evidence_type: definition
+  excerpt: Breaking the serve into sequential contributions from fingers, wrist, forearm, and upper arm rather than swinging as one uniform motion.
+  reason: The speaker explicitly explains a finger-to-wrist-to-forearm-to-upper-arm sequence and contrasts it with a uniform swing.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: GOAyEFoSibE
+    start_ms: 307233
+    end_ms: 326233
+    url: https://www.youtube.com/watch?v=GOAyEFoSibE&t=307s
+    segment_ids:
+    - GOAyEFoSibE:00071
+    - GOAyEFoSibE:00072
+    - GOAyEFoSibE:00073
+    - GOAyEFoSibE:00074
+- id: dMRsujoVIj4-concept-serve-action-decomposition-reviewed
+  evidence_type: definition
+  excerpt: Breaking the serve into separate coordinated phases instead of moving the arm, wrist, and forearm as one rigid action.
+  reason: The speaker explicitly says the wrist and forearm must not move together and describes a staged motion.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: dMRsujoVIj4
+    start_ms: 292200
+    end_ms: 309633
+    url: https://www.youtube.com/watch?v=dMRsujoVIj4&t=292s
+    segment_ids:
+    - dMRsujoVIj4:00118
+    - dMRsujoVIj4:00120
+    - dMRsujoVIj4:00121
+- id: 8uzW4bF4Oc8-concept-serve-action-decomposition-reviewed
+  evidence_type: explanation
+  excerpt: Breaking the serve into sequential parts rather than moving everything together, with the upper arm stopping first, then the forearm swinging, and finally the fingers and wrist finishing the action.
+  reason: The coach explicitly describes the serve as a sequence, not simultaneous motion, and details the order of upper arm, forearm, fingers, and wrist.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 8uzW4bF4Oc8
+    start_ms: 416033
+    end_ms: 436400
+    url: https://www.youtube.com/watch?v=8uzW4bF4Oc8&t=416s
+    segment_ids:
+    - 8uzW4bF4Oc8:00195
+    - 8uzW4bF4Oc8:00196
+    - 8uzW4bF4Oc8:00197
+    - 8uzW4bF4Oc8:00198
+    - 8uzW4bF4Oc8:00199
+    - 8uzW4bF4Oc8:00202
+    - 8uzW4bF4Oc8:00203
+    - 8uzW4bF4Oc8:00204
+    - 8uzW4bF4Oc8:00205
+- id: P21-_dtUzE8-concept-serve-action-decomposition-reviewed
+  evidence_type: explanation
+  excerpt: Breaking the serve into smaller linked actions, especially finger, wrist, forearm, and elbow contributions.
+  reason: Describes the long ball as relying on forearm strength, fast swing speed, and forearm-driven impact force.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: P21-_dtUzE8
+    start_ms: 633966
+    end_ms: 653200
+    url: https://www.youtube.com/watch?v=P21-_dtUzE8&t=633s
+    segment_ids:
+    - P21-_dtUzE8:00296
+    - P21-_dtUzE8:00307
+- id: 6teuLAHljCk-concept-serve-action-decomposition-reviewed
+  evidence_type: explanation
+  excerpt: Breaking the serve into distinct phases so spin, speed, and follow-through can be trained separately and then combined.
+  reason: The speaker repeatedly divides the motion into phases/segments and maps contact, brushing, speed, and follow-through onto those segments.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 6teuLAHljCk
+    start_ms: 223466
+    end_ms: 251666
+    url: https://www.youtube.com/watch?v=6teuLAHljCk&t=223s
+    segment_ids:
+    - 6teuLAHljCk:00050
+    - 6teuLAHljCk:00054
+    - 6teuLAHljCk:00057
+- id: WZnZIhZkkRo-concept-serve-action-decomposition-reviewed
+  evidence_type: definition
+  excerpt: A serve can be trained as a sequence of distinct action phases rather than one blended motion.
+  reason: The speaker summarizes the serve into four named actions and repeats them for both shakehand and penhold.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: WZnZIhZkkRo
+    start_ms: 442700
+    end_ms: 462800
+    url: https://www.youtube.com/watch?v=WZnZIhZkkRo&t=442s
+    segment_ids:
+    - WZnZIhZkkRo:00100
+    - WZnZIhZkkRo:00103
+    - WZnZIhZkkRo:00104
+    - WZnZIhZkkRo:00105
+- id: Pym9pNWaowA-concept-serve-action-decomposition-reviewed
+  evidence_type: definition
+  excerpt: Breaking the serve into separate joint actions rather than moving the whole arm as one rigid unit.
+  reason: The speaker explicitly says the joints must move separately and sequentially, not all at once or as one rigid unit.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: Pym9pNWaowA
+    start_ms: 519566
+    end_ms: 548766
+    url: https://www.youtube.com/watch?v=Pym9pNWaowA&t=519s
+    segment_ids:
+    - Pym9pNWaowA:00084
+    - Pym9pNWaowA:00085
+    - Pym9pNWaowA:00086
+- id: 6NvlGVPIC6E-concept-serve-action-decomposition-codex-reviewed
+  evidence_type: explanation
+  excerpt: 'The lesson says to generate force in sequence: elbow first, then arm, wrist and fingers. The movement should feel like a whip rather than a stick.'
+  reason: This cue specifies an elbow–arm–wrist–fingers order and a whip-like feeling.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 6NvlGVPIC6E
+    start_ms: 129440
+    end_ms: 152280
+    url: https://www.youtube.com/watch?v=6NvlGVPIC6E&t=129s
+    segment_ids:
+    - 6NvlGVPIC6E:00047
+    - 6NvlGVPIC6E:00048
+    - 6NvlGVPIC6E:00049
+    - 6NvlGVPIC6E:00050
+    - 6NvlGVPIC6E:00051
+    - 6NvlGVPIC6E:00052
+    - 6NvlGVPIC6E:00053
+- id: 8uzW4bF4Oc8-concept-serve-action-decomposition-codex-reviewed
+  evidence_type: explanation
+  excerpt: 'In the serving preparation sequence, the upper arm stops first, then the forearm swings and drives fingers and wrist; finally the fingers and wrist stop moving.'
+  reason: The serving cue describes upper-arm stopping before forearm swing, followed by finger-and-wrist stopping.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 8uzW4bF4Oc8
+    start_ms: 416033
+    end_ms: 436400
+    url: https://www.youtube.com/watch?v=8uzW4bF4Oc8&t=416s
+    segment_ids:
+    - 8uzW4bF4Oc8:00195
+    - 8uzW4bF4Oc8:00196
+    - 8uzW4bF4Oc8:00197
+    - 8uzW4bF4Oc8:00198
+    - 8uzW4bF4Oc8:00199
+    - 8uzW4bF4Oc8:00200
+    - 8uzW4bF4Oc8:00201
+    - 8uzW4bF4Oc8:00202
+    - 8uzW4bF4Oc8:00203
+    - 8uzW4bF4Oc8:00204
+    - 8uzW4bF4Oc8:00205
+- id: 9OxcCPWI-k8-concept-serve-action-decomposition-codex-reviewed
+  evidence_type: explanation
+  excerpt: 'For backhand serves, drop the wrist and observe the action from backswing to contact: the racket head points back, goes down at contact, then comes up, while the wrist forms an arc.'
+  reason: For backhand serving, the lesson drops the wrist and describes the racket head pointing back in the backswing, down at contact and then up, with a wrist arc.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 9OxcCPWI-k8
+    start_ms: 119433
+    end_ms: 147933
+    url: https://www.youtube.com/watch?v=9OxcCPWI-k8&t=119s
+    segment_ids:
+    - 9OxcCPWI-k8:00040
+    - 9OxcCPWI-k8:00041
+    - 9OxcCPWI-k8:00042
+    - 9OxcCPWI-k8:00043
+    - 9OxcCPWI-k8:00044
+    - 9OxcCPWI-k8:00045
+    - 9OxcCPWI-k8:00046
+    - 9OxcCPWI-k8:00047
+    - 9OxcCPWI-k8:00048
+    - 9OxcCPWI-k8:00049
+- id: dMRsujoVIj4-concept-serve-action-decomposition-codex-reviewed
+  evidence_type: explanation
+  excerpt: Separate your wrist from your forearm. Your wrist should extend backward first, then move forward to contact the ball, extending the wrist.
+  reason: Separate the wrist from the forearm in this cue, extending the wrist backward first and then moving forward to contact.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: dMRsujoVIj4
+    start_ms: 292200
+    end_ms: 309633
+    url: https://www.youtube.com/watch?v=dMRsujoVIj4&t=292s
+    segment_ids:
+    - dMRsujoVIj4:00118
+    - dMRsujoVIj4:00119
+    - dMRsujoVIj4:00120
+    - dMRsujoVIj4:00121
+- id: E6sGbY4sQH0-concept-serve-action-decomposition-codex-reviewed
+  evidence_type: explanation
+  excerpt: 'The movement is described as compact. The lesson proceeds step by step to increasing speed with the body and forearm, using a snapping or punching feeling.'
+  reason: The movement drill develops speed with the body and forearm and a snapping or punching feeling.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: E6sGbY4sQH0
+    start_ms: 250960
+    end_ms: 278000
+    url: https://www.youtube.com/watch?v=E6sGbY4sQH0&t=250s
+    segment_ids:
+    - E6sGbY4sQH0:00087
+    - E6sGbY4sQH0:00088
+    - E6sGbY4sQH0:00089
+    - E6sGbY4sQH0:00090
+    - E6sGbY4sQH0:00091
+    - E6sGbY4sQH0:00092
+    - E6sGbY4sQH0:00093
+    - E6sGbY4sQH0:00094
+- id: P21-_dtUzE8-concept-serve-action-decomposition-codex-reviewed
+  evidence_type: explanation
+  excerpt: The speaker describes finger and wrist rotation producing short sidespin or downward sidespin.
+  reason: Finger and wrist rotation is the stated cue for short or downward sidespin.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: P21-_dtUzE8
+    start_ms: 618300
+    end_ms: 629100
+    url: https://www.youtube.com/watch?v=P21-_dtUzE8&t=618s
+    segment_ids:
+    - P21-_dtUzE8:00289
+    - P21-_dtUzE8:00290
+    - P21-_dtUzE8:00291
+    - P21-_dtUzE8:00292
+    - P21-_dtUzE8:00293
 relations: []

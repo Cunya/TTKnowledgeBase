@@ -3,11 +3,9 @@ slug: outside-in-swing-path
 label: Outside-in swing path
 aliases:
 - outside-in swing path for both forehand and backhand
-short_definition: A stroke structure where the racket travels on an outside-in path rather than relying on a generic or rigid racket angle.
+short_definition: A stroke structure that uses a proper outside-in swing path for both forehand and backhand.
 evidence_summary: >-
-  Segments 00019–00022 directly identify the correct stroke structure as an outside-in swing path for both forehand and backhand and distinguish it from relying on a standard movement or specific racket angle.
-evidence_summary_source_hash: "sha256:24a6130e8e3160589e9d2a4988f82b9d2f21bae10252bc6fbd3636c633b30ae4"
-evidence_summary_generator: "deterministic"
+  The instruction is to develop a correct stroke structure by focusing on a proper outside-in swing path for both forehand and backhand, and to commit that path to memory. It says the instruction is not about how standard the movement is or a specific racket angle.
 concept_type: stroke
 facets:
   category:
@@ -15,7 +13,7 @@ facets:
   side:
   - forehand
   - backhand
-difficulty: intermediate
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -62,8 +60,8 @@ evidence:
     - ps9aOE0YKE8:00120
 - id: lXTZ5lpaWXE-concept-outside-in-swing-path-codex-reviewed
   evidence_type: definition
-  excerpt: Third, develop a correct stroke structure, focusing on a proper outside-in swing path for both your forehand and backhand. It isn't about how standard the movement is or a specific racket angle, but you must commit that outside-in swing path to memory.
-  reason: Segments 00019–00022 directly identify the correct stroke structure as an outside-in swing path for both forehand and backhand and distinguish it from relying on a standard movement or specific racket angle.
+  excerpt: Develop a correct stroke structure by focusing on a proper outside-in swing path for both your forehand and backhand, and commit that path to memory.
+  reason: For both forehand and backhand, focus on a proper outside-in swing path and commit it to memory. The instruction says the path is not about how standard the movement is or a specific racket angle.
   confidence: 0.99
   visual_status: not_visual
   review_status: approved

@@ -1,0 +1,5 @@
+# Session notes — 2026-10-21 19h
+
+2026-10-21 19.47.35 Europe/Helsinki: Documentation-only request; do not resumeblockedfullaudit. CurrentstatusmustleadMarkdown, older407linecoveragecheckpointsremainhistory; sourcevideoJulytotalsstayhistorical,notmanuallyrecomputed. BacklogHTMLmustreflectP1-51quota-blockedstatus.
+
+2026-10-21 19h: ExistingauditcoverageMDnowleadscurrentstatuswithtable,nextstepandquota;allolderentriespreservedashistory. Source-progressJulysummaryexplicitlyhistorical. Operations/P1-51blockedstatus/backlogrefreshtimestampsynced. Astrobuild83420terminal0/638pages,backlogHTMLasserted88/42quota,365/380andcurrentstatuslink. Documentationonly;noauditresumption,canonicalchangeormodelcalls.

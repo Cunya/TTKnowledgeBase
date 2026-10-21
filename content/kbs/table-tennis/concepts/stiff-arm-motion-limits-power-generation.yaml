@@ -2,15 +2,13 @@ id: concept-stiff-arm-motion-limits-power-generation
 slug: stiff-arm-motion-limits-power-generation
 label: Stiff-arm motion limits power generation
 aliases: []
-short_definition: A stroke error in which the whole arm moves as one stiff unit, limiting power generation.
+short_definition: The speaker diagnoses moving the whole arm as one stiff unit as preventing power generation.
 evidence_summary: >-
-  A stroke error in which the whole arm moves as one stiff unit, limiting power generation.
-evidence_summary_source_hash: "sha256:b458ed06e24ea112f989cfbb1e4972d5357feb5231a1055555e1a716463f424e"
-evidence_summary_generator: "deterministic"
+  The speaker diagnoses moving the whole arm as one stiff unit as preventing power generation.
 concept_type: stroke
 facets:
   category:
-    - stroke
+  - stroke
 difficulty:
 review_status: approved
 generated_by:
@@ -22,18 +20,18 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: hoLSxXKl2L0-concept-improper-arm-follow-through-codex-reviewed
-    evidence_type: explanation
-    excerpt: Moving your whole arm as one stiff unit prevents power generation.
-    reason: These contiguous segments directly explain the stroke-mechanics error and its consequence. The supplied existing concepts address related but different topics, not this specific error.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: hoLSxXKl2L0
-      start_ms: 106433
-      end_ms: 119166
-      url: https://www.youtube.com/watch?v=hoLSxXKl2L0&t=106s
-      segment_ids:
-        - hoLSxXKl2L0:00017
-        - hoLSxXKl2L0:00018
+- id: hoLSxXKl2L0-concept-improper-arm-follow-through-codex-reviewed
+  evidence_type: explanation
+  excerpt: The speaker diagnoses moving the whole arm as one stiff unit as preventing power generation.
+  reason: The speaker diagnoses moving the whole arm as one stiff unit as preventing power generation.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: hoLSxXKl2L0
+    start_ms: 106433
+    end_ms: 119166
+    url: https://www.youtube.com/watch?v=hoLSxXKl2L0&t=106s
+    segment_ids:
+    - hoLSxXKl2L0:00017
+    - hoLSxXKl2L0:00018

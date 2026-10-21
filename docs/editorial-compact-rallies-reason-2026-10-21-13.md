@@ -1,0 +1,3 @@
+# Compact-rally reason correction
+
+One reason now states only the unambiguous smaller-stroke instruction for the shorter distance. The original literal sidespin excerpt and all source metadata remain unchanged. Full current-context Luna/high and source-primary reviews passed; one exact unchanged batch was reused. The private journal retains before-content and hashes. Full rally, body and speed/distance/footwork article reviews were recorded against their exact current fingerprints. The pending 127-record swing-path article and original Compact-response dispositions are not approved by this receipt. Release verification remains required.

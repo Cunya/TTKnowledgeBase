@@ -1,21 +1,16 @@
 id: concept-sidespin-trajectory-behavior
 slug: sidespin-trajectory-behavior
-label: Sidespin trajectory behavior
+label: Straight or diagonal trajectory in a sidespin example
 aliases: []
-short_definition: Left or right sidespin can make the ball travel on a straight or diagonal path, unlike a looped ball.
+short_definition: The speaker describes the ball in this example as moving straight or diagonally because of its left or right spin, contrasting its trajectory with a looped ball.
 evidence_summary: >-
-  Left or right sidespin can make the ball travel on a straight or diagonal path, unlike a looped
-  ball.
-evidence_summary_source_hash: "sha256:c1fa5212f9203f79ced6fe081b85d9b0e51368a28412e6c23c45345f7839e609"
-evidence_summary_generator: "deterministic"
+  The speaker describes the ball in this example as moving straight or diagonally because of its left or right spin, contrasting its trajectory with a looped ball.
 concept_type: fundamentals
 facets:
   category:
-    - fundamentals
+  - fundamentals
   spin:
-    - sidespin
-  level:
-    - intermediate
+  - sidespin
 difficulty:
 review_status: approved
 generated_by:
@@ -27,17 +22,17 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: 8fxjEROShs4-concept-ball-trajectory-classification-codex-reviewed
-    evidence_type: explanation
-    excerpt: Left or right sidespin can make the ball travel on a straight or diagonal path, unlike a looped ball.
-    reason: Segment 8fxjEROShs4:00081 directly explains that left or right spin changes the ball's trajectory to a straight or diagonal path. This is distinct from the existing concept, which classifies incoming paths as backspin, topspin, or half-high balls.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 8fxjEROShs4
-      start_ms: 590166
-      end_ms: 596666
-      url: https://www.youtube.com/watch?v=8fxjEROShs4&t=590s
-      segment_ids:
-        - 8fxjEROShs4:00081
+- id: 8fxjEROShs4-concept-ball-trajectory-classification-codex-reviewed
+  evidence_type: explanation
+  excerpt: The speaker describes the ball in this example as moving straight or diagonally because of its left or right spin, contrasting its trajectory with a looped ball.
+  reason: The speaker describes the ball in this example as moving straight or diagonally because of its left or right spin, contrasting its trajectory with a looped ball.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 8fxjEROShs4
+    start_ms: 590166
+    end_ms: 596666
+    url: https://www.youtube.com/watch?v=8fxjEROShs4&t=590s
+    segment_ids:
+    - 8fxjEROShs4:00081

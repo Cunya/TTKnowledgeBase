@@ -1,23 +1,17 @@
 id: concept-loop-up-then-recover
 slug: loop-up-then-recover
-label: Loop up then recover
+label: Recovery after looping up
 aliases: []
-short_definition: After the first loop, recover immediately to maintain rhythm for the next stroke.
+short_definition: For the underspin-then-topspin loop sequence, if you loop up, then recover.
 evidence_summary: >-
-  After the first loop, recover immediately to maintain rhythm for the next stroke.
-evidence_summary_source_hash: "sha256:44af5b3dd494dd6872648e39f1df089e71123515f141d2aed6eca388b2531ae5"
-evidence_summary_generator: "deterministic"
-concept_type: stroke
+  For the underspin-then-topspin sequence, the speaker suggests recovery may have been missed after the first loop, then gives the conditional cue: if you loop up, then recover.
+concept_type: movement
 facets:
   category:
-    - stroke
-  side:
-    - forehand
+  - stroke
   spin:
-    - topspin
-    - backspin
-  level:
-    - intermediate
+  - backspin
+  - topspin
 difficulty:
 review_status: approved
 generated_by:
@@ -29,22 +23,22 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: 7d1fUkOzCjM-concept-loop-up-then-recover-codex-reviewed
-    evidence_type: explanation
-    excerpt: When looping underspin and then topspin, recover after the first loop to maintain the rhythm.
-    reason: This contiguous 10.8-second span directly describes looping underspin and then topspin, failing to recover, and recovering after the loop to maintain rhythm.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 7d1fUkOzCjM
-      start_ms: 418900
-      end_ms: 429700
-      url: https://www.youtube.com/watch?v=7d1fUkOzCjM&t=418s
-      segment_ids:
-        - 7d1fUkOzCjM:00128
-        - 7d1fUkOzCjM:00129
-        - 7d1fUkOzCjM:00130
-        - 7d1fUkOzCjM:00131
-        - 7d1fUkOzCjM:00132
-        - 7d1fUkOzCjM:00133
+- id: 7d1fUkOzCjM-concept-loop-up-then-recover-codex-reviewed
+  evidence_type: explanation
+  excerpt: 'For the underspin-then-topspin sequence, the speaker suggests recovery may have been missed after the first loop, then says: if you loop up, then recover.'
+  reason: For this loop sequence, the speaker specifies recovery if you loop up.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: 7d1fUkOzCjM
+    start_ms: 418900
+    end_ms: 429700
+    url: https://www.youtube.com/watch?v=7d1fUkOzCjM&t=418s
+    segment_ids:
+    - 7d1fUkOzCjM:00128
+    - 7d1fUkOzCjM:00129
+    - 7d1fUkOzCjM:00130
+    - 7d1fUkOzCjM:00131
+    - 7d1fUkOzCjM:00132
+    - 7d1fUkOzCjM:00133

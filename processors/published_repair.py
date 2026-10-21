@@ -23,14 +23,17 @@ from .llm_budget import LLMBudgetExceeded, usage_token_total
 from .models import Concept, FacetCandidate, SourceSpan, StrictModel, Video
 from .utils import normalize_text, read_json, read_yaml, replace_with_retry, sha256_json, write_json
 
-REPAIR_VERSION = "1.1.0"
-DRAFT_VERSION = "1.1.1"
-VERIFICATION_VERSION = "1.1.2"
+REPAIR_VERSION = "1.1.1"
+DRAFT_VERSION = "1.1.3"
+VERIFICATION_VERSION = "1.1.3"
+PROOF_LIMIT_NOTE = "Complete verification source/context proof exceeds row cap; no IDs or context were truncated."
 EDITABLE_FIELDS = {
-    "label", "aliases", "short_definition", "detailed_definition", "evidence_summary", "facets", "difficulty",
+    "label", "aliases", "short_definition", "detailed_definition", "evidence_summary", "concept_type", "facets", "difficulty",
 }
 REVIEW_RULES = """Use only exact selected_rows as claim support; context_rows are not support.
 Check every clause, the topic/object, incoming/outgoing role and necessary conditions.
+Use context to detect missing conditions, magnitude or a consequence misread as an instruction.
+Context cannot supply positive support: missing owned qualifiers require correction or uncertainty.
 Preserve the source-grounded subject, not an erroneous heading. Correct an unsupported or
 contradicted label/definition minimally when the owned selected wording establishes the correction.
 Do not quarantine supported same-subject evidence merely because it contradicts an erroneous heading.
@@ -61,7 +64,7 @@ Uncertain/partial support stays uncertain. Return EVERY requested unit exactly o
 class RepairEdit(StrictModel):
     field: Literal[
         "label", "aliases", "short_definition", "detailed_definition", "evidence_summary",
-        "facets", "difficulty", "excerpt", "reason",
+        "concept_type", "facets", "difficulty", "excerpt", "reason", "evidence_type",
     ]
     text: str | None = None
     strings: list[str] | None = None
@@ -177,6 +180,8 @@ def validate_units(units: list[dict], expected: dict, *, draft: bool) -> None:
         allowed = {name} & EDITABLE_FIELDS if kind == "field" else (
             {"excerpt", "reason"} if kind == "evidence" else set()
         )
+        if kind == "evidence" and expected[key]["value"].get("evidence_type") == "demonstration":
+            allowed.add("evidence_type")
         if set(fields) - allowed or (unit["quarantine"] and kind not in {"evidence", "relation"}):
             raise ValueError(f"Unauthorized repair for {key}")
         if unit["quarantine"] and edits:
@@ -185,6 +190,8 @@ def validate_units(units: list[dict], expected: dict, *, draft: bool) -> None:
             raise ValueError("Changed units must identify their original finding")
         for edit in edits:
             field = edit["field"]
+            if field == "evidence_type" and edit["text"] != "explanation":
+                raise ValueError("A demonstration may only be reclassified as a spoken explanation")
             if field == "aliases":
                 valid = edit["strings"] is not None and edit["text"] is None and edit["facets"] is None
             elif field == "facets":
@@ -240,12 +247,13 @@ def compact_model_payload(payload: dict) -> dict:
         if digest not in spans:
             spans[digest] = (f"s{len(spans)}", owned)
         unit["source_spans_ref"] = spans[digest][0]
-        value = unit.get("value")
-        if isinstance(value, dict):
-            if len(owned) == 1 and value.get("source") == owned[0]:
-                del value["source"]
-            if value.get("sources") == owned:
-                del value["sources"]
+        for name in ("value", "archived_original"):
+            value = unit.get(name)
+            if isinstance(value, dict):
+                if len(owned) == 1 and value.get("source") == owned[0]:
+                    del value["source"]
+                if value.get("sources") == owned:
+                    del value["sources"]
     if spans:
         result["source_span_sets"] = {key: value for key, value in spans.values()}
     for name in ("selected_rows", "context_rows"):
@@ -260,6 +268,8 @@ def _model_call(payload: dict, config_path: Path, audit_dir: Path, budget_path: 
     cap = int(read_yaml(config_path)["codex"].get("max_segments_per_job", 80))
     if len(payload["selected_rows"]) > cap:
         raise ValueError("Selected-source verification exceeds row cap; no support may be truncated")
+    if verify and len(payload["selected_rows"]) + len(payload.get("context_rows", [])) > cap:
+        raise ValueError("Complete source/context verification exceeds row cap; no context may be truncated")
     payload = {**payload, "context_rows": payload.get("context_rows", [])[:cap-len(payload["selected_rows"])]}
     model = ArticleVerificationResponse if verify else ArticleRepairResponse
     purpose = (
@@ -278,10 +288,20 @@ def _model_call(payload: dict, config_path: Path, audit_dir: Path, budget_path: 
                 # Prior processing confidence/approval must not bias source verification.
                 unit["value"] = {name: value for name, value in unit["value"].items()
                                  if name not in {"confidence", "review_status"}}
+                if unit.get("quarantine"):
+                    unit["archived_original"] = unit["value"]
+                    unit["value"] = None
         purpose += (
             "Each unit.value is the authoritative PROPOSED result to assess. Article heading/definition "
             "mirror those proposed values. original_topic is only previous editorial context for topic fit, "
             "NOT a claim to verify or source proof. Do not flag an old clause already removed from unit.value.\n"
+            "For quarantine=true, value=null means the record is omitted from publication. "
+            "archived_original is retained only to assess whether omission is justified. Return supported "
+            "when omission is justified, not only when the archived claim is accurate. Preserve supported "
+            "narrower same-topic instruction rather than approving unnecessary exclusion.\n"
+            "Context can veto an instruction: a described failure is not a goal, and a missing "
+            "conditional prefix or magnitude cannot be ignored because the result appears in owned "
+            "rows. Explain such a veto in note; positive correction still needs owned condition IDs.\n"
             "Check each claimed actor/object, action and condition against the owned selected wording. "
             "In note, identify the wording establishing any disputed referent. The proposal's nouns are "
             "NOT source evidence. An unfinished or elliptical clause with an unidentified subject/object "
@@ -307,6 +327,10 @@ def _model_call(payload: dict, config_path: Path, audit_dir: Path, budget_path: 
         rules = ""
     else:
         rules = REVIEW_RULES
+    if not verify:
+        purpose += ("If a demonstration record has a supported spoken claim but no inspected visual proof, "
+                    "you may change evidence_type only from demonstration to explanation. Preserve all "
+                    "source and visual metadata; this never verifies footage. Prefer retaining supported speech.\n")
     purpose += (
         "Identifiers are opaque references, not topic proof. Concept/evidence IDs and slugs may contain "
         "obsolete labels; assess the current proposed wording and owned captions instead.\n"
@@ -315,7 +339,6 @@ def _model_call(payload: dict, config_path: Path, audit_dir: Path, budget_path: 
     )
     prompt = purpose + rules + json.dumps(compact_model_payload(payload), ensure_ascii=False, separators=(",", ":"))
     version = VERIFICATION_VERSION if verify else DRAFT_VERSION
-    input_hash = sha256_json({"prompt": prompt, "version": version})
     schema = model.model_json_schema()
     schema["$defs"]["VerifiedUnit" if verify else "RepairUnit"]["properties"]["key"]["enum"] = list(payload["units"])
     allowed_ids = sorted({sid for unit in payload["units"].values() for sid in unit["allowed_segment_ids"]})
@@ -347,6 +370,8 @@ def _model_call(payload: dict, config_path: Path, audit_dir: Path, budget_path: 
             allowed_fields = sorted({name} & EDITABLE_FIELDS if kind == "field" else (
                 {"excerpt", "reason"} if kind == "evidence" else set()
             ))
+            if kind == "evidence" and value["value"].get("evidence_type") == "demonstration":
+                allowed_fields = sorted([*allowed_fields, "evidence_type"])
             if allowed_fields:
                 edit = deepcopy(schema["$defs"]["RepairEdit"])
                 edit["required"] = list(edit["properties"])
@@ -356,6 +381,11 @@ def _model_call(payload: dict, config_path: Path, audit_dir: Path, budget_path: 
                 )
                 for unused in {"text", "strings", "facets"} - {representation}:
                     edit["properties"][unused] = {"type": "null"}
+                if representation in {"strings", "facets"}:
+                    edit["properties"][representation] = next(
+                        option for option in edit["properties"][representation]["anyOf"]
+                        if option.get("type") == "array"
+                    )
                 vocabulary = payload.get("facet_vocabulary", {})
                 if representation == "facets" and vocabulary:
                     edit["properties"]["facets"]["items"] = {"anyOf": [
@@ -380,6 +410,7 @@ def _model_call(payload: dict, config_path: Path, audit_dir: Path, budget_path: 
     schema["properties"]["units"] = {"type": "object", "properties": variants,
                                        "required": list(payload["units"]), "additionalProperties": False}
     del schema["$defs"]["VerifiedUnit" if verify else "RepairUnit"]
+    input_hash = sha256_json({"prompt": prompt, "version": version, "schema": schema})
     response, provenance = _run_schema_constrained_codex(
         prompt, schema, model, config_path, audit_dir, input_hash, version,
         operation="published-repair-verify" if verify else "published-repair-draft",
@@ -449,11 +480,16 @@ def article_payloads(dossier: dict, units: dict, cap: int) -> list[dict]:
 def verification_payloads(dossier: dict, units: dict, draft: dict, cap: int,
                           *, article_draft: dict | None = None) -> tuple[list[dict], list[dict]]:
     rows = {r["id"]: r for s in dossier["sources"] for r in s["selected_rows"]}
-    cap = max(1, cap - min(8, cap // 4))
+    context_by_id = {}
+    for source in dossier["sources"]:
+        surrounding = {r["id"]: r for r in source["selected_rows"] + source["context_rows"]}
+        for row in source["selected_rows"]:
+            context_by_id.setdefault(row["id"], {}).update(surrounding)
     groups = []
     exceptions = []
     pending = {}
     selected = set()
+    context = {}
     for unit in sorted(draft["units"], key=lambda u: u["key"].startswith("field:")):
         key = unit["key"]
         if key.startswith("visual:") or unit["status"] == "needs_footage":
@@ -463,30 +499,40 @@ def verification_payloads(dossier: dict, units: dict, draft: dict, cap: int,
         ids = set(unit["supporting_segment_ids"])
         if not key.startswith("field:") or not ids:
             ids = set(original["allowed_segment_ids"])
-        if len(ids) > cap:
-            exceptions.append({"key": key, "status": "uncertain", "note": "Complete verification proof exceeds row cap; no IDs were truncated.", "supporting_segment_ids": []})
+        if key.startswith("field:") and ids:
+            contributing = [source for source in dossier["sources"]
+                            if source["source"] in original.get("source_spans", [])
+                            and ids & {row["id"] for row in source["selected_rows"]}]
+            if contributing:
+                # A support seed selects citations, not an outcome stripped of its owned condition.
+                ids = {row["id"] for source in contributing for row in source["selected_rows"]}
+                ids &= set(original["allowed_segment_ids"])
+        required_context = {rid: row for sid in ids for rid, row in context_by_id.get(sid, {}).items()
+                            if rid not in ids}
+        if len(ids | required_context.keys()) > cap:
+            exceptions.append({"key": key, "status": "uncertain", "note": PROOF_LIMIT_NOTE, "supporting_segment_ids": []})
             continue
-        if pending and len(selected | ids) > cap:
-            groups.append((pending, selected))
-            pending, selected = {}, set()
+        if pending and len(selected | ids | context.keys() | required_context.keys()) > cap:
+            groups.append((pending, selected, context))
+            pending, selected, context = {}, set(), {}
         pending[key] = {"source_spans": original.get("source_spans", []), "value": proposed_value(original["value"], unit),
                         "allowed_segment_ids": sorted(ids), "quarantine": unit["quarantine"]}
         selected |= ids
+        context.update(required_context)
     if pending:
-        groups.append((pending, selected))
+        groups.append((pending, selected, context))
     article_units = {u["key"]: u for u in (article_draft or draft)["units"]}
     original_topic = {key: dossier["concept"].get(key) for key in ("id", "label", "short_definition", "detailed_definition")}
     article = {key: proposed_value(value, article_units[f"field:{key}"]) if f"field:{key}" in article_units else value
                for key, value in original_topic.items()}
-    context = {r["id"]: r for s in dossier["sources"] for r in s["context_rows"] if r["id"] not in rows}
     return [{
         "units": group, "selected_rows": [rows[key] for key in sorted(ids)],
-        "context_rows": [context[key] for key in sorted(context)][:8],
+        "context_rows": [context[key] for key in sorted(context) if key not in ids],
         "article": article, "original_topic": original_topic,
         "source_metadata": {s["source"]["video_id"]: s["video"] for s in dossier["sources"]},
         "boundary_flags": dossier["boundary_flags"], "relation_targets": dossier["relation_targets"],
         "topic_overlap_candidates": dossier.get("topic_overlap_candidates", []),
-    } for group, ids in groups], exceptions
+    } for group, ids, context in groups], exceptions
 
 
 def review_findings(article: dict) -> dict:
@@ -554,8 +600,10 @@ def run_repair_campaign(audit: dict, dossiers: dict, config_path: Path, audit_di
                         retry_failed: bool = False, drafter: Callable = draft_article_with_codex,
                         verifier: Callable = verify_article_with_codex, progress: Callable | None = None,
                         repair_confirmed: bool = False, max_articles: int = 10,
-                        facet_vocabulary: dict | None = None) -> dict:
+                        facet_vocabulary: dict | None = None,
+                        source_context: tuple[list[Video], list[Concept]] | None = None) -> dict:
     """Bound each invocation; checkpoint every stage; never write canonical content or approvals."""
+    from .published_audit import AUDIT_VERSION
     if not 0 <= max_calls <= 20 or not 1 <= max_articles <= 20:
         raise ValueError("Audit batches allow 0–20 model calls and 1–20 articles")
     config = read_yaml(config_path)["codex"]
@@ -568,6 +616,7 @@ def run_repair_campaign(audit: dict, dossiers: dict, config_path: Path, audit_di
     started = time.monotonic()
     recorded_tokens = visited = 0
     facet_vocabulary = facet_vocabulary or {}
+    source_videos = {video.id: video for video in source_context[0]} if source_context else {}
     consecutive_transport_failures = 0
     cached_jobs = cached_units = parked_articles = 0
     stopped = "no_pending_jobs"
@@ -599,7 +648,10 @@ def run_repair_campaign(audit: dict, dossiers: dict, config_path: Path, audit_di
                        if key not in {"units", "selected_rows", "article_fields_hash"}}
             for key, value in payload["units"].items():
                 fingerprint = sha256_json({
-                    "unit": {key: value}, "context": context, "profile": profile, "version": policy,
+                    "unit": {key: value}, "context": {**context,
+                        "context_rows": payload.get("context_rows", []) + [r for r in payload["selected_rows"]
+                            if r["id"] not in value["allowed_segment_ids"]]},
+                    "profile": profile, "version": policy,
                     "review_findings": {key: item["review_findings"].get(key)},
                     "primary_findings": {key: item.get("primary_findings", {}).get(key)},
                     "primary_ready_review": sha256_json(item["primary_review"])
@@ -614,7 +666,9 @@ def run_repair_campaign(audit: dict, dossiers: dict, config_path: Path, audit_di
             pending = {key: value for key, value in payload["units"].items() if key not in reused}
             selected = {sid for unit in pending.values() for sid in unit["allowed_segment_ids"]}
             request = {**payload, "units": pending,
-                       "selected_rows": [r for r in payload["selected_rows"] if r["id"] in selected]}
+                       "selected_rows": [r for r in payload["selected_rows"] if r["id"] in selected],
+                       "context_rows": payload.get("context_rows", []) + [r for r in payload["selected_rows"]
+                           if r["id"] not in selected]}
         if request["units"] and calls >= max_calls:
             raise StopIteration("call_limit")
         message = f"{item['concept_id']} / {name}"
@@ -664,26 +718,50 @@ def run_repair_campaign(audit: dict, dossiers: dict, config_path: Path, audit_di
                for key, value in article["decisions"].items()):
             continue
         cid = article["concept_id"]
-        findings = review_findings(article)
-        identity = sha256_json({"fingerprint": article["fingerprint"], "config": config,
-                                "version": REPAIR_VERSION, "stage_versions": versions, "review_findings": findings})
         item = saved["items"].get(cid)
-        if not item or item["identity"] != identity:
+        primary = item.get("primary_review", {}) if item else {}
+        if (item and item.get("status") == "verified" and item["fingerprint"] == article["fingerprint"]
+                and item.get("review_version") == REPAIR_VERSION
+                and item.get("stage_versions") == versions and primary.get("ready_for_application")
+                and primary.get("plan_hash") == item.get("plan_hash")):
+            parked_articles += 1
+            continue
+        dossier = dossiers[cid]
+        corrections = source_coverage_corrections(Concept.model_validate(dossier["concept"]), source_videos)
+        if corrections:
+            original_source_ids = {e["id"]: set(e["source"]["segment_ids"]) for e in dossier["concept"]["evidence"]}
+            dossier = source_correction_dossier(dossier, corrections, *source_context)
+        findings = {} if corrections else review_findings(article)
+        identity = (source_correction_identity(article["fingerprint"], corrections, dossier) if corrections else
+                    sha256_json({"fingerprint": article["fingerprint"], "config": config,
+                                 "version": REPAIR_VERSION, "stage_versions": versions, "review_findings": findings}))
+        if (not item or item["identity"] != identity or item.get("review_version") != REPAIR_VERSION
+                or (corrections and item.get("planning_config") != config)):
             previous_jobs = deepcopy(item.get("jobs", {})) if item else {}
             if item:
                 saved["history"].append(item)
             item = {"concept_id": cid, "fingerprint": article["fingerprint"], "identity": identity,
-                    "jobs": previous_jobs, "status": "pending", "concept": dossiers[cid]["concept"],
+                    "jobs": previous_jobs, "status": "pending", "concept": dossier["concept"],
                     "review_version": REPAIR_VERSION, "stage_versions": versions, "review_findings": findings}
+            if corrections:
+                item.update(scope="owned_source_correction", source_corrections=corrections,
+                            source_proof_fingerprint=sha256_json({"version": AUDIT_VERSION, "dossier": dossier}),
+                            planning_config=deepcopy(config), previous_source_findings=review_findings(article),
+                            source_coverage_added_ids={c["evidence_id"]: sorted(set(c["source"]["segment_ids"])
+                                - original_source_ids[c["evidence_id"]]) for c in corrections})
             saved["items"][cid] = item
         primary = item.get("primary_review", {})
         primary_hash = sha256_json(primary)
         new_primary = bool(primary) and item.get("processed_primary_hash") != primary_hash
+        proof_pending = not item.get("field_proof_attempted") and any(
+            u["key"].startswith("field:") and u["status"] == "uncertain" and u["note"] == PROOF_LIMIT_NOTE
+            for u in (item.get("verification") or {}).get("units", []))
         if primary and not repair_confirmed:
             parked_articles += 1
             continue
         if item["status"] in {"verified", "exceptions"} and not new_primary:
-            if not (repair_confirmed and item.get("workflow") == "coverage-first" and not item.get("repair_attempted")):
+            if not (repair_confirmed and item.get("workflow") == "coverage-first"
+                    and (not item.get("repair_attempted") or proof_pending)):
                 parked_articles += 1
                 continue
         if primary.get("ready_for_application") and item["status"] == "verified":
@@ -693,11 +771,13 @@ def run_repair_campaign(audit: dict, dossiers: dict, config_path: Path, audit_di
             stopped = "article_limit"
             break
         visited += 1
-        dossier = dossiers[cid]
         units = unit_inputs(dossier, list(article["decisions"]))
         conflicts = duration_conflict_units(dossier, units)
         try:
             cap = int(config.get("max_segments_per_job", 80))
+            if proof_pending and item.get("draft") and item.get("verification"):
+                item.update(baseline_draft=deepcopy(item["draft"]),
+                            baseline_verification=deepcopy(item["verification"]))
             if item.get("workflow") != "coverage-first" or new_primary:
                 baseline = deepcopy(item.get("draft", _unchanged_draft(units)))
                 validate_units(baseline["units"], units, draft=True)
@@ -706,6 +786,7 @@ def run_repair_campaign(audit: dict, dossiers: dict, config_path: Path, audit_di
                 # Existing complete source verdicts remain usable; proposals alone never become proof.
                 item["baseline_verification"] = deepcopy(item.get("verification"))
                 if new_primary:
+                    item["field_proof_attempted"] = False
                     item["primary_findings"] = {key: d["note"] for key, d in primary["decisions"].items()
                                                 if d["status"] == "needs_fix"}
                 write_json(checkpoint_path, saved)
@@ -717,7 +798,8 @@ def run_repair_campaign(audit: dict, dossiers: dict, config_path: Path, audit_di
             else:
                 mechanical = {}
                 for key, value in proposed.items():
-                    decision = article["decisions"][key]
+                    # Old verdicts cannot approve or reject a newly completed source proof.
+                    decision = None if corrections else article["decisions"][key]
                     original = next(u for u in draft["units"] if u["key"] == key)
                     if decision and not original["edits"] and not original["quarantine"]:
                         mechanical[key] = VerifiedUnit(key=key, status=decision["status"], note=decision["note"],
@@ -748,17 +830,36 @@ def run_repair_campaign(audit: dict, dossiers: dict, config_path: Path, audit_di
                 failures = {key: {**value, "verifier_feedback": checks[key]["note"]}
                             for key, value in proposed.items()
                             if checks[key]["status"] == "needs_fix" and not key.startswith("visual:")
-                            and not value.get("quarantine") and key not in conflicts and not _missing_source_ids(value)
+                            and (not value.get("quarantine") or key in item.get("primary_findings", {}))
+                            and key not in conflicts and not _missing_source_ids(value)
                             and not primary.get("ready_for_application")}
+                if not item.get("field_proof_attempted"):
+                    failures.update({key: {**proposed[key], "verifier_feedback": check["note"]}
+                                     for key, check in checks.items()
+                                     if key.startswith("field:") and check["status"] == "uncertain"
+                                     and check["note"] == PROOF_LIMIT_NOTE
+                                     and not _missing_source_ids(proposed[key])})
                 # Pack whole proofs; an oversized unit is an exception, never split or adjudicated by vote.
-                batches, _ = verification_payloads(dossier, failures, _unchanged_draft(failures), cap, article_draft=draft)
+                # Authoring can select alternative citations; final verification owns its whole chosen proof.
+                batches, exceptions = verification_payloads(dossier, failures, _unchanged_draft(failures), cap,
+                                                            article_draft=draft)
                 replacements = {}
                 for index, payload in enumerate(batches):
                     for key, value in payload["units"].items():
                         value["verifier_feedback"] = failures[key]["verifier_feedback"]
                     replacements.update({u["key"]: u for u in call(item, f"draft:targeted:{index}", payload, drafter)["units"]})
+                proof_fields = {u["key"]: failures[u["key"]] for u in exceptions
+                                if u["key"].startswith("field:") and u["note"] == PROOF_LIMIT_NOTE}
+                if proof_fields:
+                    proposals = [call(item, f"draft:field-proof:{index}", payload, drafter)
+                                 for index, payload in enumerate(article_payloads(dossier, proof_fields, cap))]
+                    reduced = call(item, "draft:field-proof:reduce", {
+                        "units": proof_fields, "selected_rows": [], "context_rows": [],
+                        "chunk_proposals": proposals}, drafter)
+                    replacements.update({u["key"]: u for u in reduced["units"]})
                 final_units = []
                 changed = set()
+                proof_changed = set()
                 for old in draft["units"]:
                     key = old["key"]
                     new = replacements.get(key)
@@ -770,13 +871,15 @@ def run_repair_campaign(audit: dict, dossiers: dict, config_path: Path, audit_di
                             merged["status"] = "needs_fix"
                         if proposed_value(units[key]["value"], merged) != proposed[key]["value"]:
                             changed.add(key)
+                        if set(merged["supporting_segment_ids"]) != set(old["supporting_segment_ids"]):
+                            proof_changed.add(key)
                         final_units.append(merged)
                     else:
                         final_units.append(old)
                 draft = {"units": final_units}
                 validate_units(draft["units"], units, draft=True)
                 topic_changed = bool(changed & {"field:label", "field:short_definition", "field:detailed_definition"})
-                recheck = set(units) if topic_changed else changed
+                recheck = set(units) if topic_changed else changed | proof_changed
                 if primary.get("ready_for_application"):
                     recheck |= {key for key, check in checks.items() if check["status"] != "supported"}
                 if any(key.startswith("evidence:") for key in changed):
@@ -786,6 +889,8 @@ def run_repair_campaign(audit: dict, dossiers: dict, config_path: Path, audit_di
                 for unit in exceptions + [u for index, payload in enumerate(batches)
                     for u in call(item, f"verify:targeted:{index}", payload, verifier)["units"]]:
                     checks[unit["key"]] = unit
+                if proof_fields or proof_pending:
+                    item["field_proof_attempted"] = True
                 item["repair_attempted"] = True
             verification = [checks[key] for key in units]
             validate_units(verification, proposed_inputs(units, draft), draft=False)
@@ -826,6 +931,13 @@ def render_repair_plans(saved: dict) -> str:
     lines.append("")
     for item in saved["items"].values():
         lines.extend([f"## {item['concept_id']} — {item['status']}", ""])
+        for correction in item.get("source_corrections", []):
+            span = correction["source"]
+            lines.append(f"- Spoken source proposal for {correction['evidence_id']}: {span['url']} "
+                         f"({span['start_ms']}–{span['end_ms']} ms).")
+            added = item.get("source_coverage_added_ids", {}).get(correction["evidence_id"])
+            if added is not None:
+                lines.append(f"  Added caption IDs: {', '.join(added)}; spoken bounds unchanged.")
         verification = {u["key"]: u for u in item.get("verification", {}).get("units", [])}
         for unit in item.get("draft", {}).get("units", []):
             state = verification.get(unit["key"], {}).get("status", "pending")
@@ -962,6 +1074,27 @@ def write_repair_archive(path: Path, archive: dict, writer: Callable = replace_w
     temporary = path.with_name(f".{path.name}.{os.getpid()}.tmp")
     temporary.write_text(rendered, encoding="utf-8", newline="")
     writer(temporary, path)
+
+
+def source_coverage_corrections(concept: Concept, videos: dict[str, Video]) -> list[dict]:
+    """Propose strictly additive actual IDs inside unchanged exact spoken bounds."""
+    corrections = []
+    for evidence in concept.evidence:
+        source = evidence.source
+        video = videos.get(source.video_id)
+        if evidence.review_status != "approved" or not video or not video.duration_ms or not video.transcript:
+            continue
+        rows = sorted((row for row in video.transcript.segments
+                       if row.start_ms >= source.start_ms and row.end_ms <= source.end_ms),
+                      key=lambda row: (row.start_ms, row.id))
+        if (not set(source.segment_ids) < {row.id for row in rows}
+                or min(row.start_ms for row in rows) != source.start_ms
+                or max(row.end_ms for row in rows) != source.end_ms):
+            continue
+        corrected = source.model_dump(mode="json")
+        corrected["segment_ids"] = [row.id for row in rows]
+        corrections.append({"evidence_id": evidence.id, "source": corrected})
+    return corrections
 
 
 def source_correction_dossier(dossier: dict, corrections: list[dict], videos: list[Video], concepts: list[Concept]) -> dict:
@@ -1114,7 +1247,8 @@ def apply_reviewed_plan(paths, item: dict, dossier: dict, reviewer: str, *, writ
         for correction in corrections or []:
             record = next(record for record in document["evidence"] if record["id"] == correction["evidence_id"])
             if record.get("review_status", "approved") != "approved":
-                raise ValueError("A corrected source cannot also be quarantined")
+                # Keep an excluded original intact; completed proof does not need publication.
+                continue
             record["source"] = correction["source"]
         if not mechanical:
             # The complete summary was independently reviewed; publication must not regenerate it.

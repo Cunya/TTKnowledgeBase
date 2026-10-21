@@ -1,17 +1,14 @@
 id: concept-practice-pure-friction-before-adding-speed
 slug: practice-pure-friction-before-adding-speed
-label: Practice pure friction before adding speed
+label: Pure-friction serving practice
 aliases: []
-short_definition: Practice brushing contact with pure friction first so the serve produces strong spin before refining other aspects.
+short_definition: If you feel the opponent is not bothered by your spin, the speaker recommends practicing pure friction first.
 evidence_summary: >-
-  Practice brushing contact with pure friction first so the serve produces strong spin before
-  refining other aspects.
-evidence_summary_source_hash: "sha256:64fa9f89df41c20ce9cd70201f19f483b6fb0e526467d21b4f8b9fb69fd973a2"
-evidence_summary_generator: "deterministic"
+  If you feel the opponent is not bothered by your spin, the speaker recommends pure-friction practice first. The speaker describes a pure-friction serve as very spinny and says it will go into the net if the opponent just touches it.
 concept_type: practice
 facets:
   category:
-    - practice
+  - practice
 difficulty:
 review_status: approved
 generated_by:
@@ -23,18 +20,18 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: evEaxXmwJ2E-candidate-pure-friction-training-codex-reviewed
-    evidence_type: drill
-    excerpt: If you feel your opponent isn't bothered by your spin, practice generating pure friction first. A serve with pure friction is very spinny.
-    reason: These contiguous segments directly recommend practicing pure friction first and explain its effect on serve spin. The topic is a distinct training instruction, not the general concept of friction producing spin.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: evEaxXmwJ2E
-      start_ms: 41133
-      end_ms: 52133
-      url: https://www.youtube.com/watch?v=evEaxXmwJ2E&t=41s
-      segment_ids:
-        - evEaxXmwJ2E:00009
-        - evEaxXmwJ2E:00010
+- id: evEaxXmwJ2E-candidate-pure-friction-training-codex-reviewed
+  evidence_type: drill
+  excerpt: If you feel the opponent is not bothered by your spin, practice generating pure friction first. The speaker describes a pure-friction serve as very spinny and says it will go into the net if the opponent just touches it.
+  reason: The speaker recommends pure-friction practice when you feel the opponent is not bothered by the serve's spin.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: evEaxXmwJ2E
+    start_ms: 41133
+    end_ms: 52133
+    url: https://www.youtube.com/watch?v=evEaxXmwJ2E&t=41s
+    segment_ids:
+    - evEaxXmwJ2E:00009
+    - evEaxXmwJ2E:00010

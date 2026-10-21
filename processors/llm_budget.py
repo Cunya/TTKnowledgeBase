@@ -93,8 +93,10 @@ class LLMTokenBudget:
         quota = raw.get("account_quota", {}) or {}
         self.quota_enabled = bool(quota.get("enabled", False))
         self.quota_threshold = float(quota.get("stop_at_used_percent", 80))
+        self.weekly_quota_threshold = float(quota.get("weekly_stop_at_used_percent", self.quota_threshold))
         self.quota_grace = float(quota.get("five_hour_reset_grace_minutes", 10))
-        if not 0 < self.quota_threshold <= 100 or not 0 <= self.quota_grace <= 300:
+        if (not 0 < self.quota_threshold <= 100 or not 0 < self.weekly_quota_threshold <= 100
+                or not 0 <= self.quota_grace <= 300):
             raise ValueError("Invalid account quota threshold or reset grace")
         self.timezone_name = str(raw.get("timezone", "local"))
         self.daily_limit = int(raw.get("daily_token_limit", DEFAULT_DAILY_TOKEN_LIMIT))
@@ -212,7 +214,8 @@ class LLMTokenBudget:
     ) -> BudgetReservation:
         if self.quota_enabled:
             try:
-                reason = quota_block_reason(read_account_rate_limits(), self.quota_threshold, self.quota_grace)
+                reason = quota_block_reason(read_account_rate_limits(), self.quota_threshold,
+                                            self.quota_grace, weekly_threshold=self.weekly_quota_threshold)
             except (OSError, ValueError, TimeoutError, SubprocessError) as error:
                 reason = f"account quota unavailable: {error}"
             if reason:

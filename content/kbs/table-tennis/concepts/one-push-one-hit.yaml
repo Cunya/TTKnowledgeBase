@@ -2,20 +2,15 @@ id: concept-one-push-one-hit
 slug: one-push-one-hit
 label: One push, one hit
 aliases:
-  - push one, then hit one
-short_definition: Alternate a safe push with an attack when the opportunity becomes favorable, rather than forcing the first attack every time.
+- push one, then hit one
+short_definition: The speaker advises looping directly if your topspin serve gives you a good chance; if the chance is not good, push once, then hit to an open spot.
 evidence_summary: >-
-  Alternate a safe push with an attack when the opportunity becomes favorable, rather than forcing
-  the first attack every time.
-evidence_summary_source_hash: "sha256:423cdcc5ee7d5865f803da09bbe0e17120618b11090ebf5f7d3175b8cdb1969d"
-evidence_summary_generator: "deterministic"
+  The speaker advises looping directly if your topspin serve gives you a good chance; if the chance is not good, push once, then hit to an open spot.
 concept_type: tactic
 facets:
   category:
-    - tactic
-  level:
-    - intermediate
-difficulty: intermediate
+  - tactic
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -26,37 +21,37 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: itzB36f9_R0-concept-one-push-one-hit-reviewed
-    evidence_type: explanation
-    excerpt: Alternate a safe push with an attack when the opportunity becomes favorable, rather than forcing the first attack every time.
-    reason: 'The speaker names this tactic directly and explains the pattern: push first when the attack is not available, then hit the next attackable ball.'
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: itzB36f9_R0
-      start_ms: 646666
-      end_ms: 674900
-      url: https://www.youtube.com/watch?v=itzB36f9_R0&t=646s
-      segment_ids:
-        - itzB36f9_R0:00123
-        - itzB36f9_R0:00125
-        - itzB36f9_R0:00126
-        - itzB36f9_R0:00127
-  - id: itzB36f9_R0-concept-one-push-one-hit-codex-reviewed
-    evidence_type: explanation
-    excerpt: If the topspin serve does not give a good chance to loop directly, push one, then hit one to an open spot.
-    reason: 'These contiguous segments name and explain the one-push, one-hit tactic: attack directly when the chance is good; otherwise push once and attack the next ball to an open spot.'
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: itzB36f9_R0
-      start_ms: 682800
-      end_ms: 701033
-      url: https://www.youtube.com/watch?v=itzB36f9_R0&t=682s
-      segment_ids:
-        - itzB36f9_R0:00129
-        - itzB36f9_R0:00130
-        - itzB36f9_R0:00131
-        - itzB36f9_R0:00132
+- id: itzB36f9_R0-concept-one-push-one-hit-reviewed
+  evidence_type: explanation
+  excerpt: Alternate a safe push with an attack when the opportunity becomes favorable, rather than forcing the first attack every time.
+  reason: 'The speaker names this tactic directly and explains the pattern: push first when the attack is not available, then hit the next attackable ball.'
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: itzB36f9_R0
+    start_ms: 646666
+    end_ms: 674900
+    url: https://www.youtube.com/watch?v=itzB36f9_R0&t=646s
+    segment_ids:
+    - itzB36f9_R0:00123
+    - itzB36f9_R0:00125
+    - itzB36f9_R0:00126
+    - itzB36f9_R0:00127
+- id: itzB36f9_R0-concept-one-push-one-hit-codex-reviewed
+  evidence_type: explanation
+  excerpt: The speaker advises looping directly if your topspin serve gives you a good chance; if the chance is not good, push once, then hit to an open spot.
+  reason: 'The speaker contrasts a good chance after your topspin serve with the alternative of pushing once and then hitting to an open spot.'
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: itzB36f9_R0
+    start_ms: 682800
+    end_ms: 701033
+    url: https://www.youtube.com/watch?v=itzB36f9_R0&t=682s
+    segment_ids:
+    - itzB36f9_R0:00129
+    - itzB36f9_R0:00130
+    - itzB36f9_R0:00131
+    - itzB36f9_R0:00132

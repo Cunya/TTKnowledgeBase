@@ -4,11 +4,9 @@ label: Side cut
 aliases:
 - side cut
 - side cut method
-short_definition: A cut-based receive that handles right-sidespin or left-sidespin by contacting and brushing the ball with a sideways-forward or sideways-upward motion, often producing topspin or side-backspin depending on path.
+short_definition: Once the shoulder and elbow are down, brush the side of the ball rather than its bottom, mainly with a retract-and-extend forearm motion. The method applies to forehand and backhand serves; if you can brush the ball, you can cut it wide. A separate explanation describes topspin, backspin, and side-backspin variations in pushes.
 evidence_summary: >-
-  This contiguous span directly explains how side-cut motion determines the resulting spin. These contiguous segments explicitly name the side-cut, describe brushing the side of the ball and the forearm motion, and it works against forehand and backhand serves.
-evidence_summary_source_hash: "sha256:7f89164056ed89adf3fe0edd630b9e84e059e57253ac7edbe7ff8987f2abe973"
-evidence_summary_generator: "deterministic"
+  With the shoulder and elbow down, the side cut brushes the side rather than the bottom using a retract-and-extend forearm motion. It works against forehand and backhand serves, with a wide angle possible if the ball can be brushed. Another explanation associates sideways-upward motion with topspin, downward cutting with backspin, and a downward forearm cut in pushes with side-backspin.
 concept_type: stroke
 facets:
   category:
@@ -17,9 +15,7 @@ facets:
   - sidespin
   - topspin
   - backspin
-  distance:
-  - close
-difficulty: advanced
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -81,24 +77,25 @@ evidence:
     - YpA2d0yrM1U:00148
 - id: ezGVESU0Rp0-concept-side-cut-codex-reviewed
   evidence_type: explanation
-  excerpt: When you side cut, a sideways-and-upward motion produces topspin, cutting down produces backspin, and a sideways downward motion produces side-backspin.
-  reason: This contiguous transcript span directly explains how side-cut motion determines the resulting spin.
+  excerpt: A sideways-and-upward side cut produces topspin; cutting down produces backspin. The speaker describes mixing this into pushes to produce side-backspin, explaining that the forearm cuts down.
+  reason: The explanation distinguishes sideways-upward topspin from downward-cut backspin, then describes side-backspin in pushes with a downward forearm cut.
   confidence: 0.98
   visual_status: transcript_inferred
   review_status: approved
   source:
     video_id: ezGVESU0Rp0
     start_ms: 549333
-    end_ms: 564200
+    end_ms: 566966
     url: https://www.youtube.com/watch?v=ezGVESU0Rp0&t=549s
     segment_ids:
     - ezGVESU0Rp0:00118
     - ezGVESU0Rp0:00119
     - ezGVESU0Rp0:00120
+    - ezGVESU0Rp0:00121
 - id: _TIBQOXT3cw-concept-side-cut-codex-reviewed
   evidence_type: definition
-  excerpt: The side-cut involves brushing the side of the ball, not the bottom, primarily using a retract-and-extend forearm motion to create friction. It works against both forehand and backhand serves and can send the ball to a wide angle.
-  reason: These contiguous segments explicitly name the side-cut, describe brushing the side of the ball and the forearm motion, and state that it works against forehand and backhand serves.
+  excerpt: Once the shoulder and elbow are down, brush the side of the ball rather than the bottom, mainly using a retract-and-extend forearm motion to create friction. It works against forehand and backhand serves; if you can brush the ball, you can cut it wide.
+  reason: Lowering the shoulder and elbow precedes brushing the side of the ball with the forearm. A wide angle is possible if you can brush the ball; the method applies against both forehand and backhand serves.
   confidence: 0.99
   visual_status: transcript_inferred
   review_status: approved

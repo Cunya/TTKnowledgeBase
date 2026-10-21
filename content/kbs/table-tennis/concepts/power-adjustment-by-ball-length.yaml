@@ -1,28 +1,16 @@
 id: concept-power-adjustment-by-ball-length
 slug: power-adjustment-by-ball-length
-label: Power adjustment by ball length
+label: Power control against long serves
 aliases:
-  - 70% power
-  - 50% power
-  - 30-40% power
-short_definition: Adjust receive power according to whether the serve is short, half-long, or long.
+- 30–40% power
+short_definition: For a long serve, the speaker recommends at most 30–40% power and warns that excessive force sends the ball flying. Each player’s feel for power differs, so players need to find their own control.
 evidence_summary: >-
-  Adjust receive power according to whether the serve is short, half-long, or long.
-evidence_summary_source_hash: "sha256:dd033b87fc290bc23beab073a1f4e41ebd1e29ea44bc5b586f63c5f409c73966"
-evidence_summary_generator: "deterministic"
+  For a long serve, the speaker recommends at most 30–40% power and warns that excessive force sends the ball flying. Each player’s feel for power differs, so players need to find their own control.
 concept_type: tactic
 facets:
   category:
-    - tactic
-  side:
-    - neutral
-  distance:
-    - close
-    - mid
-    - far
-  level:
-    - beginner
-difficulty: beginner
+  - tactic
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -33,35 +21,36 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: 2LkVpDM69vo-concept-power-adjustment-by-ball-length-reviewed
-    evidence_type: explanation
-    excerpt: Adjust receive power according to whether the serve is short, half-long, or long.
-    reason: The speaker gives explicit power ranges for short, half-long, and long serves and says excessive force sends the ball long.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 2LkVpDM69vo
-      start_ms: 64933
-      end_ms: 81400
-      url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=64s
-      segment_ids:
-        - 2LkVpDM69vo:00013
-        - 2LkVpDM69vo:00014
-        - 2LkVpDM69vo:00015
-  - id: 2LkVpDM69vo-concept-power-adjustment-by-ball-length-codex-reviewed
-    evidence_type: explanation
-    excerpt: Against a long serve, use at most 30–40% power; too much force sends the ball flying, while controlled power makes the return stable and consistent.
-    reason: These contiguous segments explicitly explain the power adjustment for long serves, the risk of using too much force, and the resulting stability and consistency.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 2LkVpDM69vo
-      start_ms: 64933
-      end_ms: 81400
-      url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=64s
-      segment_ids:
-        - 2LkVpDM69vo:00013
-        - 2LkVpDM69vo:00014
-        - 2LkVpDM69vo:00015
+- id: 2LkVpDM69vo-concept-power-adjustment-by-ball-length-reviewed
+  evidence_type: explanation
+  excerpt: Adjust receive power according to whether the serve is short, half-long, or long.
+  reason: The speaker gives explicit power ranges for short, half-long, and long serves and says excessive force sends the ball long.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 2LkVpDM69vo
+    start_ms: 64933
+    end_ms: 81400
+    url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=64s
+    segment_ids:
+    - 2LkVpDM69vo:00013
+    - 2LkVpDM69vo:00014
+    - 2LkVpDM69vo:00015
+- id: 2LkVpDM69vo-concept-power-adjustment-by-ball-length-codex-reviewed
+  evidence_type: explanation
+  excerpt: For a long serve, the speaker recommends at most 30–40% power and warns that excessive force sends the ball flying. Each player’s feel for power differs, so players need to find their own control.
+  reason: The speaker qualifies the long-serve power guideline by noting individual differences in feel, and links controlled power with a stable, consistent return.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: 2LkVpDM69vo
+    start_ms: 60033
+    end_ms: 81400
+    url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=60s
+    segment_ids:
+    - 2LkVpDM69vo:00012
+    - 2LkVpDM69vo:00013
+    - 2LkVpDM69vo:00014
+    - 2LkVpDM69vo:00015

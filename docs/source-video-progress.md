@@ -2,12 +2,16 @@
 
 Automatic batches rotate fairly across every source with eligible work instead of exhausting one source at a time. Operator reporting distinguishes fully processed videos from videos awaiting Codex adjudication; optional human advice is not a completion state.
 
-Last updated: 2026-07-16 16:22 EEST
+Last updated: 2026-10-21 19:45 EEST
 
 This document explains the source-progress metrics and preserves an editorial snapshot for reference. The live counts are
 not maintained here: run `python -m processors.cli publish --kb table-tennis` and read
 `app/src/data/generated/table-tennis-progress.json` (or the local `/progress/` page). The processor regenerates that
 snapshot from local artifacts; neither the LLM nor a page edit should update totals by hand.
+
+## Current audit status
+
+As of 2026-10-21 19:45 EEST, the full published-corpus audit has **365/380 articles supported**, with **15 articles** and **35 proposed visual windows** still requiring work. New audit calls are held by the quota guard (88% five-hour / 42% weekly); normal processing remains paused. Ready position has 36/38 private units supported, with two destination checks prepared. See [current audit progress and next steps](full-published-audit-coverage-2026-10-14.md#current-progress-and-status).
 
 ## Progress-state definitions
 
@@ -29,7 +33,9 @@ For the live page, interpret these as two separate views:
 
 The `/progress/` page leads with content status and keeps configured-batch provenance, pipeline completion, candidate review, and visual review as explicitly labeled operator detail. The exhaustive completion target is documented in `docs/exhaustive-source-completion-plan-2026-08-05.md`.
 
-## Source summary
+## Historical source summary — 2026-07-16
+
+The table below is the retained July snapshot, not current processing totals.
 
 | Source | Trustworthy discovered total | Configured | Eligible | Ingested | Extracted | Fully reviewed | Published | Accepted candidates | Rejected | Evidence moments | Concepts supported | Proposed visuals | Verified visuals |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|

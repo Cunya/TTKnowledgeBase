@@ -2,64 +2,55 @@ id: concept-racket-contact-constraint-drill
 slug: racket-contact-constraint-drill
 label: Racket-contact constraint drill
 aliases:
-  - racket-half drill
-short_definition: Constrain the usable racket area during practice to develop awareness of contact location, spin, and directional control.
+- racket-half drill
+short_definition: Restrict half of the racket during practice to expose contact-height errors. For pushing, block the top half and use the bottom; for looping, cover the bottom half and use contact feedback to adjust.
 evidence_summary: >-
-  This drill isolates contact height by restricting part of the racket face during practice. For
-  pushing, blocking the top half forces the player to use the lower half of the blade, and for
-  looping, covering the bottom half helps reveal mistakes in contact height. The constraint makes
-  poor contact easier to notice and correct.
-evidence_summary_source_hash: "sha256:7199f598c0083d67d2bca7fe7c8e965cb688ae12e707baa16cabd10a5d3dcb0a"
-evidence_summary_generator: "codex"
+  For push practice, block the top half of the racket and use the bottom half. If the top half is struck by mistake, adjust the hand position higher next time. For looping, cover the bottom half; hitting the hand indicates contact was too low and needs adjustment.
 concept_type: drill
 facets:
   category:
-    - drill
-  side:
-    - neutral
-  level:
-    - intermediate
-difficulty: intermediate
+  - drill
+difficulty:
 review_status: approved
 evidence:
-  - id: G7eiadOxN8E-cand-racket-half-constraint-drill-1
-    evidence_type: drill
-    excerpt: A practice drill that physically blocks one half of the racket so the player learns the intended contact zone for pushes or loops.
-    reason: For push practice, the speaker tells players to block the top half of the racket and use only the bottom half.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: G7eiadOxN8E
-      start_ms: 839733
-      end_ms: 851066
-      url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=839s"
-      segment_ids: &id001
-        - "G7eiadOxN8E:00192"
-        - "G7eiadOxN8E:00193"
-  - id: G7eiadOxN8E-cand-racket-half-constraint-drill-2
-    evidence_type: drill
-    excerpt: A practice drill that physically blocks one half of the racket so the player learns the intended contact zone for pushes or loops.
-    reason: For looping, the speaker recommends covering the bottom half and using mistakes as feedback on contact height.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: G7eiadOxN8E
-      start_ms: 851066
-      end_ms: 858633
-      url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=851s"
-      segment_ids:
-        - "G7eiadOxN8E:00194"
-        - "G7eiadOxN8E:00195"
+- id: G7eiadOxN8E-cand-racket-half-constraint-drill-1
+  evidence_type: drill
+  excerpt: For push practice, block the top half of the racket and use only the bottom half. If you strike the top half by mistake, adjust the hand position higher next time.
+  reason: The push drill restricts the racket to its bottom half; striking the top half signals that the hand position should be higher next time.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: G7eiadOxN8E
+    start_ms: 839733
+    end_ms: 851066
+    url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=839s"
+    segment_ids: &id001
+    - "G7eiadOxN8E:00192"
+    - "G7eiadOxN8E:00193"
+- id: G7eiadOxN8E-cand-racket-half-constraint-drill-2
+  evidence_type: drill
+  excerpt: For looping, cover the bottom half of the racket. If you hit your hand, contact was too low and needs adjustment.
+  reason: The looping drill covers the bottom half of the racket; hitting the hand indicates contact was too low and needs correction.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: G7eiadOxN8E
+    start_ms: 851066
+    end_ms: 858633
+    url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=851s"
+    segment_ids:
+    - "G7eiadOxN8E:00194"
+    - "G7eiadOxN8E:00195"
 relations:
-  - relation_type: used_with
-    target_concept_id: concept-contact-zone-on-ball
-    sources:
-      - video_id: G7eiadOxN8E
-        start_ms: 839733
-        end_ms: 851066
-        url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=839s"
-        segment_ids: *id001
-    confidence: 0.9
-    review_status: approved
+- relation_type: used_with
+  target_concept_id: concept-contact-zone-on-ball
+  sources:
+  - video_id: G7eiadOxN8E
+    start_ms: 839733
+    end_ms: 851066
+    url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=839s"
+    segment_ids: *id001
+  confidence: 0.9
+  review_status: unreviewed

@@ -2,338 +2,361 @@ id: concept-match-play-framework
 slug: match-play-framework
 label: Match-play framework
 aliases:
-  - match phases
-  - match mindset
-short_definition: Organize match decisions by phase, score context, and the information learned from earlier points.
+- match phases
+- match mindset
+short_definition: Source-specific ways to organize match mindset, phases of play, score-dependent choices and responses to incoming spin.
 evidence_summary: >-
-  Match play requires a mindset that turns nervous energy into readiness and avoids assuming
-  defeat before the point is played. The player should identify the weakest phase of play and
-  build a simple plan around it, often by emphasizing serve, receive, and the third ball while
-  adjusting aggression to the score and the stage of the rally. Incoming spin and pace should be
-  judged first, then answered with the right amount of brush, impact, blocking, or attacking so
-  that consistency and tactical control are preserved.
-evidence_summary_source_hash: "sha256:991bada6117e7d63e0251907938e8d14fd970bf31d7b34816778aba04e7e830b"
-evidence_summary_generator: "codex"
+  One lesson promotes a mindset aimed at winning and divides play into serve plus third-ball attack, receive and its transition, and rallies. It calls for identifying a weak area and focusing on one aspect. Another lesson avoids going all out at the start, seeks touch and rhythm, and varies impact versus brushing with confidence and critical points. A separate lesson categorizes incoming spin, giving its own brush/impact proportions and different responses for heavy, normal and light topspin.
 concept_type: strategy
 facets:
   category:
-    - strategy
-  side:
-    - neutral
-  level:
-    - intermediate
-difficulty: intermediate
+  - strategy
+difficulty:
 review_status: approved
 evidence:
-  - id: rTQcgBBWKWg-cand-match-play-mindset-1
-    evidence_type: definition
-    excerpt: A competitive mental approach in which the player tries to win, treats excitement positively, and avoids defeatist thinking so matches become useful for learning.
-    reason: The speaker defines nervousness vs excitement and says players need a mindset to win and a proper match mindset.
-    confidence: 0.91
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: rTQcgBBWKWg
-      start_ms: 6040
-      end_ms: 28840
-      url: "https://www.youtube.com/watch?v=rTQcgBBWKWg&t=6s"
-      segment_ids: &id001
-        - "rTQcgBBWKWg:00002"
-        - "rTQcgBBWKWg:00005"
-        - "rTQcgBBWKWg:00009"
-        - "rTQcgBBWKWg:00011"
-  - id: rTQcgBBWKWg-cand-match-play-mindset-2
-    evidence_type: explanation
-    excerpt: A competitive mental approach in which the player tries to win, treats excitement positively, and avoids defeatist thinking so matches become useful for learning.
-    reason: The speaker explains that assuming defeat harms performance and learning, and suggests building match mindset progressively from doubles into singles.
-    confidence: 0.88
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: rTQcgBBWKWg
-      start_ms: 18520
-      end_ms: 36480
-      url: "https://www.youtube.com/watch?v=rTQcgBBWKWg&t=18s"
-      segment_ids:
-        - "rTQcgBBWKWg:00008"
-        - "rTQcgBBWKWg:00010"
-        - "rTQcgBBWKWg:00012"
-        - "rTQcgBBWKWg:00013"
-        - "rTQcgBBWKWg:00014"
-  - id: rTQcgBBWKWg-cand-match-phase-framework-1
-    evidence_type: definition
-    excerpt: A framework that divides a table tennis match into serve and third-ball attack, receive and transition, and rally play, so the player can identify and train the weakest phase.
-    reason: The speaker explicitly divides the match into three phases and names each one.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: rTQcgBBWKWg
-      start_ms: 34880
-      end_ms: 51480
-      url: "https://www.youtube.com/watch?v=rTQcgBBWKWg&t=34s"
-      segment_ids:
-        - "rTQcgBBWKWg:00015"
-        - "rTQcgBBWKWg:00016"
-        - "rTQcgBBWKWg:00017"
-        - "rTQcgBBWKWg:00018"
-        - "rTQcgBBWKWg:00020"
-  - id: rTQcgBBWKWg-cand-match-phase-framework-2
-    evidence_type: drill
-    excerpt: A framework that divides a table tennis match into serve and third-ball attack, receive and transition, and rally play, so the player can identify and train the weakest phase.
-    reason: The player is told to identify the weakest phase and focus training on one key aspect, often receive or serve plus third ball.
-    confidence: 0.88
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: rTQcgBBWKWg
-      start_ms: 48520
-      end_ms: 59320
-      url: "https://www.youtube.com/watch?v=rTQcgBBWKWg&t=48s"
-      segment_ids:
-        - "rTQcgBBWKWg:00021"
-        - "rTQcgBBWKWg:00022"
-        - "rTQcgBBWKWg:00023"
-        - "rTQcgBBWKWg:00024"
-  - id: m93pWt9MIZE-candidate-match-state-adjustment-1
-    evidence_type: explanation
-    excerpt: Speaker advises not to go all out at the start of a match and to use brushing to stabilize touch and rhythm.
-    reason: Managing aggression and stroke quality based on match phase and score, using more brushing and safety early or at critical points to preserve rhythm and consistency.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: m93pWt9MIZE
-      start_ms: 269280
-      end_ms: 274160
-      url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=269s"
-      segment_ids:
-        - "m93pWt9MIZE:00105"
-  - id: m93pWt9MIZE-candidate-match-state-adjustment-2
-    evidence_type: explanation
-    excerpt: Speaker advises not to go all out at the start of a match and to use brushing to stabilize touch and rhythm.
-    reason: Managing aggression and stroke quality based on match phase and score, using more brushing and safety early or at critical points to preserve rhythm and consistency.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: m93pWt9MIZE
-      start_ms: 298960
-      end_ms: 303919
-      url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=298s"
-      segment_ids:
-        - "m93pWt9MIZE:00116"
-  - id: m93pWt9MIZE-candidate-match-state-adjustment-3
-    evidence_type: explanation
-    excerpt: Speaker explains that at critical points players should increase brushing and accuracy rather than hit harder.
-    reason: Managing aggression and stroke quality based on match phase and score, using more brushing and safety early or at critical points to preserve rhythm and consistency.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: m93pWt9MIZE
-      start_ms: 332720
-      end_ms: 337440
-      url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=332s"
-      segment_ids:
-        - "m93pWt9MIZE:00127"
-  - id: m93pWt9MIZE-candidate-match-state-adjustment-4
-    evidence_type: explanation
-    excerpt: Speaker explains that at critical points players should increase brushing and accuracy rather than hit harder.
-    reason: Managing aggression and stroke quality based on match phase and score, using more brushing and safety early or at critical points to preserve rhythm and consistency.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: m93pWt9MIZE
-      start_ms: 363280
-      end_ms: 368400
-      url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=363s"
-      segment_ids:
-        - "m93pWt9MIZE:00140"
-  - id: p19HWlk7LGo-concept-three-level-spin-reading-1
-    evidence_type: definition
-    excerpt: A spin-reading framework that classifies incoming balls into heavy spin, normal spin, and half spin, with matching brush-versus-impact contact proportions for each level.
-    reason: The coach defines three spin levels using the opponent's racket acceleration and assigns brush/impact ratios to each level.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: p19HWlk7LGo
-      start_ms: 354040
-      end_ms: 377040
-      url: https://www.youtube.com/watch?v=p19HWlk7LGo&t=354s
-      segment_ids:
-        - p19HWlk7LGo:00130
-        - p19HWlk7LGo:00131
-        - p19HWlk7LGo:00132
-        - p19HWlk7LGo:00133
-        - p19HWlk7LGo:00134
-  - id: p19HWlk7LGo-concept-three-level-spin-reading-2
-    evidence_type: drill
-    excerpt: A spin-reading framework that classifies incoming balls into heavy spin, normal spin, and half spin, with matching brush-versus-impact contact proportions for each level.
-    reason: The player is told to serve and attack while calling out the spin first, using correct judgment as the success criterion.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: p19HWlk7LGo
-      start_ms: 374600
-      end_ms: 382080
-      url: https://www.youtube.com/watch?v=p19HWlk7LGo&t=374s
-      segment_ids:
-        - p19HWlk7LGo:00135
-        - p19HWlk7LGo:00136
-        - p19HWlk7LGo:00137
-  - id: p19HWlk7LGo-concept-three-level-spin-reading-3
-    evidence_type: correction
-    excerpt: A spin-reading framework that classifies incoming balls into heavy spin, normal spin, and half spin, with matching brush-versus-impact contact proportions for each level.
-    reason: 'The same classification logic is restated later as a handling rule: heavy spin needs more brush, light spin more impact.'
-    confidence: 0.91
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: p19HWlk7LGo
-      start_ms: 469720
-      end_ms: 485880
-      url: https://www.youtube.com/watch?v=p19HWlk7LGo&t=469s
-      segment_ids:
-        - p19HWlk7LGo:00157
-        - p19HWlk7LGo:00158
-        - p19HWlk7LGo:00159
-        - p19HWlk7LGo:00160
-  - id: p19HWlk7LGo-concept-match-spin-response-framework-1
-    evidence_type: definition
-    excerpt: The coach presents a three-level framework for handling different incoming balls in match play.
-    reason: A match-play decision framework that sorts incoming topspin or backspin into force or spin levels and assigns a corresponding response such as heavy block, normal play, punch, or more brushing contact.
-    confidence: 0.84
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: p19HWlk7LGo
-      start_ms: 455520
-      end_ms: 474120
-      url: https://www.youtube.com/watch?v=p19HWlk7LGo&t=455s
-      segment_ids:
-        - p19HWlk7LGo:00153
-        - p19HWlk7LGo:00154
-        - p19HWlk7LGo:00155
-        - p19HWlk7LGo:00156
-        - p19HWlk7LGo:00157
-  - id: p19HWlk7LGo-concept-match-spin-response-framework-2
-    evidence_type: explanation
-    excerpt: The framework is explained as categorization leading to the right handling choice, with anticipation making the ball manageable.
-    reason: A match-play decision framework that sorts incoming topspin or backspin into force or spin levels and assigns a corresponding response such as heavy block, normal play, punch, or more brushing contact.
-    confidence: 0.83
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: p19HWlk7LGo
-      start_ms: 477800
-      end_ms: 494840
-      url: https://www.youtube.com/watch?v=p19HWlk7LGo&t=477s
-      segment_ids:
-        - p19HWlk7LGo:00158
-        - p19HWlk7LGo:00159
-        - p19HWlk7LGo:00160
-        - p19HWlk7LGo:00161
-        - p19HWlk7LGo:00162
-        - p19HWlk7LGo:00163
-  - id: OMgoeirhpyc-concept-match-play-framework-reviewed
-    evidence_type: explanation
-    excerpt: A coaching frame that treats point construction, serve choices, and rally intent as part of a larger match plan rather than isolated shots.
-    reason: The speaker explicitly frames play as attack-oriented and discusses what to do after serving as part of match planning.
-    confidence: 0.88
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: OMgoeirhpyc
-      start_ms: 147440
-      end_ms: 161440
-      url: https://www.youtube.com/watch?v=OMgoeirhpyc&t=147s
-      segment_ids:
-        - OMgoeirhpyc:00041
-        - OMgoeirhpyc:00042
-        - OMgoeirhpyc:00043
-        - OMgoeirhpyc:00044
-        - OMgoeirhpyc:00045
-  - id: PwbikZNn8Y0-concept-match-play-framework-reviewed
-    evidence_type: explanation
-    excerpt: Improving serve receive depends on accumulating match experience rather than only isolated practice.
-    reason: The speaker explicitly says receive technique can only be developed through matches and that you need more experience.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: PwbikZNn8Y0
-      start_ms: 2720
-      end_ms: 16760
-      url: https://www.youtube.com/watch?v=PwbikZNn8Y0&t=2s
-      segment_ids:
-        - PwbikZNn8Y0:00000
-        - PwbikZNn8Y0:00001
-        - PwbikZNn8Y0:00002
-        - PwbikZNn8Y0:00003
-  - id: 9BKPM_RMmtg-concept-match-play-framework-reviewed
-    evidence_type: explanation
-    excerpt: Treat practice as match-like, then transfer trained techniques into competition without hesitating to use them.
-    reason: The speaker says techniques practiced daily must be used boldly in matches and intentionally tested after practice.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 9BKPM_RMmtg
-      start_ms: 538933
-      end_ms: 564633
-      url: https://www.youtube.com/watch?v=9BKPM_RMmtg&t=538s
-      segment_ids:
-        - 9BKPM_RMmtg:00183
-        - 9BKPM_RMmtg:00191
-  - id: dbT0DYG2Xac-concept-match-play-framework-reviewed
-    evidence_type: explanation
-    excerpt: A practical training philosophy that prioritizes adaptability and adjustment over chasing a fixed ideal stroke.
-    reason: The speaker says there is no absolutely correct stroke, and that amateurs should focus on strengthening adjustment ability and handling different balls reasonably.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: dbT0DYG2Xac
-      start_ms: 15666
-      end_ms: 38333
-      url: https://www.youtube.com/watch?v=dbT0DYG2Xac&t=15s
-      segment_ids:
-        - dbT0DYG2Xac:00005
-        - dbT0DYG2Xac:00007
-        - dbT0DYG2Xac:00008
-        - dbT0DYG2Xac:00010
-        - dbT0DYG2Xac:00011
-  - id: 0hmF0UB_Oqc-concept-match-play-framework-reviewed
-    evidence_type: explanation
-    excerpt: Organizing strategy by match phase, score state, and critical points rather than using a single fixed plan.
-    reason: The speaker explicitly divides play into critical-score situations, opening tactics, behind-game tactics, crucial-point tactics, and receive tactics.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 0hmF0UB_Oqc
-      start_ms: 390000
-      end_ms: 405633
-      url: https://www.youtube.com/watch?v=0hmF0UB_Oqc&t=390s
-      segment_ids:
-        - 0hmF0UB_Oqc:00136
-        - 0hmF0UB_Oqc:00137
-        - 0hmF0UB_Oqc:00138
-        - 0hmF0UB_Oqc:00139
-        - 0hmF0UB_Oqc:00140
-        - 0hmF0UB_Oqc:00141
+- id: rTQcgBBWKWg-cand-match-play-mindset-1
+  evidence_type: definition
+  excerpt: The speaker links nervousness with fear of losing, excitement with wanting to win, and calls for a mindset aimed at winning rather than assuming defeat.
+  reason: The lesson contrasts fear of losing with an intention to win.
+  confidence: 0.91
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: rTQcgBBWKWg
+    start_ms: 6040
+    end_ms: 31480
+    url: https://www.youtube.com/watch?v=rTQcgBBWKWg&t=6s
+    segment_ids:
+    - rTQcgBBWKWg:00002
+    - rTQcgBBWKWg:00003
+    - rTQcgBBWKWg:00004
+    - rTQcgBBWKWg:00005
+    - rTQcgBBWKWg:00006
+    - rTQcgBBWKWg:00007
+    - rTQcgBBWKWg:00008
+    - rTQcgBBWKWg:00009
+    - rTQcgBBWKWg:00010
+    - rTQcgBBWKWg:00011
+    - rTQcgBBWKWg:00012
+- id: rTQcgBBWKWg-cand-match-play-mindset-2
+  evidence_type: explanation
+  excerpt: The speaker warns that assuming defeat harms the match and learning, then suggests building match mindset from doubles before moving into singles.
+  reason: The mindset advice includes a doubles-to-singles progression.
+  confidence: 0.88
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: rTQcgBBWKWg
+    start_ms: 18520
+    end_ms: 36480
+    url: https://www.youtube.com/watch?v=rTQcgBBWKWg&t=18s
+    segment_ids:
+    - rTQcgBBWKWg:00008
+    - rTQcgBBWKWg:00009
+    - rTQcgBBWKWg:00010
+    - rTQcgBBWKWg:00011
+    - rTQcgBBWKWg:00012
+    - rTQcgBBWKWg:00013
+    - rTQcgBBWKWg:00014
+- id: rTQcgBBWKWg-cand-match-phase-framework-1
+  evidence_type: definition
+  excerpt: The lesson divides a match into serve plus third-ball attack, receive and the transition after the return, and rally play.
+  reason: The three named phases are serve/third ball, receive/transition and rallies.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: rTQcgBBWKWg
+    start_ms: 34880
+    end_ms: 51480
+    url: https://www.youtube.com/watch?v=rTQcgBBWKWg&t=34s
+    segment_ids:
+    - rTQcgBBWKWg:00015
+    - rTQcgBBWKWg:00016
+    - rTQcgBBWKWg:00017
+    - rTQcgBBWKWg:00018
+    - rTQcgBBWKWg:00019
+    - rTQcgBBWKWg:00020
+- id: rTQcgBBWKWg-cand-match-phase-framework-2
+  evidence_type: drill
+  excerpt: Identify the weakest area and focus on one key aspect. The speaker says most players choose receive and serve plus third ball.
+  reason: The practice cue is to identify a weak area and focus on one key aspect.
+  confidence: 0.88
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: rTQcgBBWKWg
+    start_ms: 48520
+    end_ms: 59320
+    url: "https://www.youtube.com/watch?v=rTQcgBBWKWg&t=48s"
+    segment_ids:
+    - "rTQcgBBWKWg:00021"
+    - "rTQcgBBWKWg:00022"
+    - "rTQcgBBWKWg:00023"
+    - "rTQcgBBWKWg:00024"
+- id: m93pWt9MIZE-candidate-match-state-adjustment-1
+  evidence_type: explanation
+  excerpt: At the start of a match, do not go all out; use brushing for consistency and first find touch and rhythm.
+  reason: The early-match cue prioritizes touch, rhythm and consistency over immediate full power.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: m93pWt9MIZE
+    start_ms: 269280
+    end_ms: 288080
+    url: https://www.youtube.com/watch?v=m93pWt9MIZE&t=269s
+    segment_ids:
+    - m93pWt9MIZE:00105
+    - m93pWt9MIZE:00106
+    - m93pWt9MIZE:00107
+    - m93pWt9MIZE:00108
+    - m93pWt9MIZE:00109
+    - m93pWt9MIZE:00110
+- id: m93pWt9MIZE-candidate-match-state-adjustment-2
+  evidence_type: explanation
+  excerpt: Learn to adjust your state.
+  reason: The stated instruction is to adjust the player’s state.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: m93pWt9MIZE
+    start_ms: 298960
+    end_ms: 303919
+    url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=298s"
+    segment_ids:
+    - "m93pWt9MIZE:00116"
+- id: m93pWt9MIZE-candidate-match-state-adjustment-3
+  evidence_type: explanation
+  excerpt: In a no-spin-serve and pushed-return example, the speaker uses more impact when leading or confident, but recommends more brushing and accuracy at critical points.
+  reason: The impact-versus-brushing choice is tied to confidence or the score situation in this example.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: m93pWt9MIZE
+    start_ms: 327280
+    end_ms: 354160
+    url: https://www.youtube.com/watch?v=m93pWt9MIZE&t=327s
+    segment_ids:
+    - m93pWt9MIZE:00125
+    - m93pWt9MIZE:00126
+    - m93pWt9MIZE:00127
+    - m93pWt9MIZE:00128
+    - m93pWt9MIZE:00129
+    - m93pWt9MIZE:00130
+    - m93pWt9MIZE:00131
+    - m93pWt9MIZE:00132
+    - m93pWt9MIZE:00133
+    - m93pWt9MIZE:00134
+- id: m93pWt9MIZE-candidate-match-state-adjustment-4
+  evidence_type: explanation
+  excerpt: The speaker criticizes harder hitting at critical moments and calls for more careful, reasonable shots instead.
+  reason: The warning concerns excessive aggression at critical points.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: m93pWt9MIZE
+    start_ms: 352400
+    end_ms: 370800
+    url: https://www.youtube.com/watch?v=m93pWt9MIZE&t=352s
+    segment_ids:
+    - m93pWt9MIZE:00135
+    - m93pWt9MIZE:00136
+    - m93pWt9MIZE:00137
+    - m93pWt9MIZE:00138
+    - m93pWt9MIZE:00139
+    - m93pWt9MIZE:00140
+    - m93pWt9MIZE:00141
+- id: p19HWlk7LGo-concept-three-level-spin-reading-1
+  evidence_type: definition
+  excerpt: A fast, forceful racket-head whip is treated as heavy spin. This lesson assigns heavy spin 70% brush/30% impact, normal spin 50% each, and half spin 70% impact/30% brush.
+  reason: These brush/impact proportions are the lesson’s three-level spin framework.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: p19HWlk7LGo
+    start_ms: 354040
+    end_ms: 377040
+    url: https://www.youtube.com/watch?v=p19HWlk7LGo&t=354s
+    segment_ids:
+    - p19HWlk7LGo:00130
+    - p19HWlk7LGo:00131
+    - p19HWlk7LGo:00132
+    - p19HWlk7LGo:00133
+    - p19HWlk7LGo:00134
+- id: p19HWlk7LGo-concept-three-level-spin-reading-2
+  evidence_type: drill
+  excerpt: Serve and attack while calling out the spin first. The lesson links a correct judgment with landing the shot.
+  reason: The drill calls for identifying spin aloud before the attack.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: p19HWlk7LGo
+    start_ms: 374600
+    end_ms: 382080
+    url: https://www.youtube.com/watch?v=p19HWlk7LGo&t=374s
+    segment_ids:
+    - p19HWlk7LGo:00135
+    - p19HWlk7LGo:00136
+    - p19HWlk7LGo:00137
+- id: p19HWlk7LGo-concept-three-level-spin-reading-3
+  evidence_type: correction
+  excerpt: For very heavy backspin, add brush; the lesson contrasts heavier spin with more brushing and lighter spin with more impact.
+  reason: 'The handling cue changes the brush/impact emphasis with spin strength.'
+  confidence: 0.91
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: p19HWlk7LGo
+    start_ms: 469720
+    end_ms: 485880
+    url: https://www.youtube.com/watch?v=p19HWlk7LGo&t=469s
+    segment_ids:
+    - p19HWlk7LGo:00157
+    - p19HWlk7LGo:00158
+    - p19HWlk7LGo:00159
+    - p19HWlk7LGo:00160
+- id: p19HWlk7LGo-concept-match-spin-response-framework-1
+  evidence_type: definition
+  excerpt: This three-level framework blocks heavy topspin, plays normally against normal topspin and punches light topspin; very heavy backspin calls for more brushing.
+  reason: The lesson gives different responses to topspin levels and heavy backspin.
+  confidence: 0.84
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: p19HWlk7LGo
+    start_ms: 455520
+    end_ms: 474120
+    url: https://www.youtube.com/watch?v=p19HWlk7LGo&t=455s
+    segment_ids:
+    - p19HWlk7LGo:00153
+    - p19HWlk7LGo:00154
+    - p19HWlk7LGo:00155
+    - p19HWlk7LGo:00156
+    - p19HWlk7LGo:00157
+- id: p19HWlk7LGo-concept-match-spin-response-framework-2
+  evidence_type: explanation
+  excerpt: 'Categorizing the ball is described as guiding how to handle it: add brush for heavier spin and impact for lighter spin. Anticipation makes the ball more manageable.'
+  reason: Categorization is described as guiding how to handle each ball; anticipation is said to make the ball manageable.
+  confidence: 0.83
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: p19HWlk7LGo
+    start_ms: 477800
+    end_ms: 494840
+    url: https://www.youtube.com/watch?v=p19HWlk7LGo&t=477s
+    segment_ids:
+    - p19HWlk7LGo:00158
+    - p19HWlk7LGo:00159
+    - p19HWlk7LGo:00160
+    - p19HWlk7LGo:00161
+    - p19HWlk7LGo:00162
+    - p19HWlk7LGo:00163
+- id: OMgoeirhpyc-concept-match-play-framework-reviewed
+  evidence_type: explanation
+  excerpt: A coaching frame that treats point construction, serve choices, and rally intent as part of a larger match plan rather than isolated shots.
+  reason: The speaker explicitly frames play as attack-oriented and discusses what to do after serving as part of match planning.
+  confidence: 0.88
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: OMgoeirhpyc
+    start_ms: 147440
+    end_ms: 161440
+    url: https://www.youtube.com/watch?v=OMgoeirhpyc&t=147s
+    segment_ids:
+    - OMgoeirhpyc:00041
+    - OMgoeirhpyc:00042
+    - OMgoeirhpyc:00043
+    - OMgoeirhpyc:00044
+    - OMgoeirhpyc:00045
+- id: PwbikZNn8Y0-concept-match-play-framework-reviewed
+  evidence_type: explanation
+  excerpt: Improving serve receive depends on accumulating match experience rather than only isolated practice.
+  reason: The speaker explicitly says receive technique can only be developed through matches and that you need more experience.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: PwbikZNn8Y0
+    start_ms: 2720
+    end_ms: 16760
+    url: https://www.youtube.com/watch?v=PwbikZNn8Y0&t=2s
+    segment_ids:
+    - PwbikZNn8Y0:00000
+    - PwbikZNn8Y0:00001
+    - PwbikZNn8Y0:00002
+    - PwbikZNn8Y0:00003
+- id: 9BKPM_RMmtg-concept-match-play-framework-reviewed
+  evidence_type: explanation
+  excerpt: Treat practice as match-like, then transfer trained techniques into competition without hesitating to use them.
+  reason: The speaker says techniques practiced daily must be used boldly in matches and intentionally tested after practice.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 9BKPM_RMmtg
+    start_ms: 538933
+    end_ms: 564633
+    url: https://www.youtube.com/watch?v=9BKPM_RMmtg&t=538s
+    segment_ids:
+    - 9BKPM_RMmtg:00183
+    - 9BKPM_RMmtg:00191
+- id: dbT0DYG2Xac-concept-match-play-framework-reviewed
+  evidence_type: explanation
+  excerpt: A practical training philosophy that prioritizes adaptability and adjustment over chasing a fixed ideal stroke.
+  reason: The speaker says there is no absolutely correct stroke, and that amateurs should focus on strengthening adjustment ability and handling different balls reasonably.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: dbT0DYG2Xac
+    start_ms: 15666
+    end_ms: 38333
+    url: https://www.youtube.com/watch?v=dbT0DYG2Xac&t=15s
+    segment_ids:
+    - dbT0DYG2Xac:00005
+    - dbT0DYG2Xac:00007
+    - dbT0DYG2Xac:00008
+    - dbT0DYG2Xac:00010
+    - dbT0DYG2Xac:00011
+- id: 0hmF0UB_Oqc-concept-match-play-framework-reviewed
+  evidence_type: explanation
+  excerpt: Organizing strategy by match phase, score state, and critical points rather than using a single fixed plan.
+  reason: The speaker explicitly divides play into critical-score situations, opening tactics, behind-game tactics, crucial-point tactics, and receive tactics.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 0hmF0UB_Oqc
+    start_ms: 390000
+    end_ms: 405633
+    url: https://www.youtube.com/watch?v=0hmF0UB_Oqc&t=390s
+    segment_ids:
+    - 0hmF0UB_Oqc:00136
+    - 0hmF0UB_Oqc:00137
+    - 0hmF0UB_Oqc:00138
+    - 0hmF0UB_Oqc:00139
+    - 0hmF0UB_Oqc:00140
+    - 0hmF0UB_Oqc:00141
 relations:
-  - relation_type: used_with
-    target_concept_id: concept-opponent-targeting
-    sources:
-      - video_id: rTQcgBBWKWg
-        start_ms: 6040
-        end_ms: 28840
-        url: "https://www.youtube.com/watch?v=rTQcgBBWKWg&t=6s"
-        segment_ids: *id001
-    confidence: 0.9
-    review_status: approved
+- relation_type: used_with
+  target_concept_id: concept-opponent-targeting
+  sources:
+  - video_id: rTQcgBBWKWg
+    start_ms: 6040
+    end_ms: 28840
+    url: "https://www.youtube.com/watch?v=rTQcgBBWKWg&t=6s"
+    segment_ids:
+    - "rTQcgBBWKWg:00002"
+    - "rTQcgBBWKWg:00005"
+    - "rTQcgBBWKWg:00009"
+    - "rTQcgBBWKWg:00011"
+  confidence: 0.9
+  review_status: unreviewed

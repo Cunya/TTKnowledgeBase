@@ -34,6 +34,23 @@ def test_configurable_cutoff_and_multi_bucket_precedence():
     assert "other" in quota_block_reason(value, 70, 10, now=1000)
 
 
+@pytest.mark.parametrize(("used", "blocked"), [(83, False), (94, False), (95, True)])
+def test_separate_weekly_cutoff_has_no_reset_grace(used, blocked):
+    assert bool(quota_block_reason(snapshot(used, 1, duration=10080), 80, 10,
+                                   now=1000, weekly_threshold=95)) == blocked
+
+
+def test_budget_passes_configured_weekly_cutoff(tmp_path, monkeypatch):
+    config = tmp_path / "config.yaml"
+    config.write_text("llm_budget:\n  enabled: false\n  account_quota:\n"
+                      "    enabled: true\n    stop_at_used_percent: 80\n"
+                      "    weekly_stop_at_used_percent: 95\n")
+    monkeypatch.setattr("processors.llm_budget.read_account_rate_limits",
+                        lambda: snapshot(83, 900, duration=10080))
+    monkeypatch.setattr("processors.account_quota.time.time", lambda: 1000)
+    assert LLMTokenBudget(config, tmp_path / "budget.json").reserve("extraction", "test")
+
+
 @pytest.mark.parametrize("value", [{}, {"rateLimits": {}}, snapshot(80, 0),
                                     snapshot(None), snapshot(float("nan")),
                                     {"rateLimits": {"primary": []}}])

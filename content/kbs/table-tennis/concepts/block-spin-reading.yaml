@@ -2,177 +2,179 @@ id: concept-block-spin-reading
 slug: block-spin-reading
 label: Reading spin for the block
 aliases:
-  - read the loop
-  - fake loop recognition
-short_definition: Distinguish a heavy loop from a lighter fake action before choosing the block angle and force.
+- read spin for the block
+- recognize a fake loop while blocking
+short_definition: When blocking, read the opponent's motion to recognize a lifted fake loop with little spin before treating it as heavy spin.
 evidence_summary: >-
-  Effective blocking starts with correctly reading how much spin the incoming ball actually has.
-  Deceptive loops can look similar while carrying very different spin, and mistaking a lighter
-  ball for a heavy one often leads to a netted block or an overcontrolled return. The player must
-  judge the opponent’s motion and ball behavior first, then choose the blocking response.
-evidence_summary_source_hash: "sha256:c4455b1cd2c1d59e60fd2371fadb29fa87a07413dd35d47d591802dc88244e92"
-evidence_summary_generator: "codex"
+  A player may hit the net after treating a fake loop with lift and little added spin as heavy spin. Read the opponent's motion to recognize the fake loop.
 concept_type: perception
 facets:
   category:
-    - stroke
-  side:
-    - neutral
-  level:
-    - intermediate
-difficulty: intermediate
+  - stroke
+difficulty:
 review_status: approved
 evidence:
-  - id: etKOmktKw1k-candidate-read-fake-loop-vs-real-heavy-loop-1
-    evidence_type: explanation
-    excerpt: Distinguishing a lifted, fake loop from a true brushed topspin loop by reading the opponent's motion, so the blocker does not misjudge the amount of incoming spin.
-    reason: The speaker explains that netting blocks can come from mistaking a fake lifted loop for heavy spin and failing to read the opponent's motion.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: etKOmktKw1k
-      start_ms: 159040
-      end_ms: 177720
-      url: "https://www.youtube.com/watch?v=etKOmktKw1k&t=159s"
-      segment_ids: &id001
-        - "etKOmktKw1k:00059"
-        - "etKOmktKw1k:00060"
-        - "etKOmktKw1k:00061"
-        - "etKOmktKw1k:00062"
-        - "etKOmktKw1k:00063"
-        - "etKOmktKw1k:00064"
-        - "etKOmktKw1k:00065"
-  - id: etKOmktKw1k-candidate-read-fake-loop-vs-real-heavy-loop-2
-    evidence_type: demonstration
-    excerpt: Distinguishing a lifted, fake loop from a true brushed topspin loop by reading the opponent's motion, so the blocker does not misjudge the amount of incoming spin.
-    reason: The transcript shows a comparison drill identifying which loop is fake versus a true brushed loop.
-    confidence: 0.89
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: etKOmktKw1k
-      start_ms: 173800
-      end_ms: 200360
-      url: "https://www.youtube.com/watch?v=etKOmktKw1k&t=173s"
-      segment_ids:
-        - "etKOmktKw1k:00066"
-        - "etKOmktKw1k:00067"
-        - "etKOmktKw1k:00068"
-        - "etKOmktKw1k:00071"
-        - "etKOmktKw1k:00072"
-        - "etKOmktKw1k:00073"
-  - id: 3SvgpoJSW3o-concept-block-spin-reading-reviewed
-    evidence_type: explanation
-    excerpt: Assess the spin by observing racket angle, backswing, contact acceleration, and follow-through before choosing a block or return.
-    reason: States that reading spin is necessary before handling it and before choosing the return.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 3SvgpoJSW3o
-      start_ms: 33600
-      end_ms: 42360
-      url: https://www.youtube.com/watch?v=3SvgpoJSW3o&t=33s
-      segment_ids:
-        - 3SvgpoJSW3o:00013
-        - 3SvgpoJSW3o:00014
-        - 3SvgpoJSW3o:00015
-  - id: wd_E9NZBVtU-concept-block-spin-reading-reviewed
-    evidence_type: explanation
-    excerpt: Judging whether an incoming topspin ball truly has heavy spin before choosing the blocking response.
-    reason: The speaker demonstrates that a fake loop with less spin should not be treated like a heavy-spin ball and says netted blocks often mean the attacker did not actually impart much spin.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: wd_E9NZBVtU
-      start_ms: 156433
-      end_ms: 184033
-      url: https://www.youtube.com/watch?v=wd_E9NZBVtU&t=156s
-      segment_ids:
-        - wd_E9NZBVtU:00035
-        - wd_E9NZBVtU:00036
-        - wd_E9NZBVtU:00037
-        - wd_E9NZBVtU:00038
-        - wd_E9NZBVtU:00039
-        - wd_E9NZBVtU:00040
-  - id: 6Xx11I8CB9M-concept-block-spin-reading-reviewed
-    evidence_type: explanation
-    excerpt: Judging whether the incoming ball is fast, spinny, or deceptive so the block technique and racket angle can be adjusted correctly.
-    reason: The speaker teaches that faster balls usually carry less spin, while deceptive loops can look similar but differ in spin.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 6Xx11I8CB9M
-      start_ms: 773366
-      end_ms: 785033
-      url: https://www.youtube.com/watch?v=6Xx11I8CB9M&t=773s
-      segment_ids:
-        - 6Xx11I8CB9M:00146
-        - 6Xx11I8CB9M:00147
-  - id: 6Xx11I8CB9M-concept-block-spin-reading-reviewed-125dbaac
-    evidence_type: explanation
-    excerpt: Judging whether the incoming ball is fast, spinny, or deceptive so the block technique and racket angle can be adjusted correctly.
-    reason: The speaker teaches that faster balls usually carry less spin, while deceptive loops can look similar but differ in spin.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 6Xx11I8CB9M
-      start_ms: 773366
-      end_ms: 785033
-      url: https://www.youtube.com/watch?v=6Xx11I8CB9M&t=773s
-      segment_ids:
-        - 6Xx11I8CB9M:00146
-        - 6Xx11I8CB9M:00147
-  - id: 6iZaiabY2mw-concept-spin-reading-reviewed
-    evidence_type: definition
-    excerpt: Identify whether the incoming ball carries topspin or backspin before committing the receive stroke.
-    reason: The speaker tells the listener to make a firm decision about whether the ball is topspin or backspin and warns against hesitation and misreading spin.
-    confidence: 0.85
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 6iZaiabY2mw
-      start_ms: 449100
-      end_ms: 468366
-      url: https://www.youtube.com/watch?v=6iZaiabY2mw&t=449s
-      segment_ids:
-        - 6iZaiabY2mw:00032
-        - 6iZaiabY2mw:00033
-        - 6iZaiabY2mw:00034
-        - 6iZaiabY2mw:00035
-        - 6iZaiabY2mw:00038
-  - id: 02wQgAIcHKY-concept-block-spin-reading-reviewed
-    evidence_type: explanation
-    excerpt: When blocking topspin or looped balls, read the incoming spin and adjust the block angle and direction accordingly.
-    reason: The speaker describes how to judge a loop's spin from backswing, racket angle, contact point, and follow-through, then adjust the block response.
-    confidence: 0.92
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 02wQgAIcHKY
-      start_ms: 183500
-      end_ms: 212866
-      url: https://www.youtube.com/watch?v=02wQgAIcHKY&t=183s
-      segment_ids:
-        - 02wQgAIcHKY:00042
-        - 02wQgAIcHKY:00043
-        - 02wQgAIcHKY:00044
-        - 02wQgAIcHKY:00045
-        - 02wQgAIcHKY:00046
-        - 02wQgAIcHKY:00047
-        - 02wQgAIcHKY:00048
+- id: etKOmktKw1k-candidate-read-fake-loop-vs-real-heavy-loop-1
+  evidence_type: explanation
+  excerpt: A fake loop with lift may add little spin; treating it as heavy spin means the opponent's motion was not read properly.
+  reason: A fake loop with lift may add little spin, but treating it as heavy spin can lead to hitting the net. Read the opponent's motion.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: etKOmktKw1k
+    start_ms: 154959
+    end_ms: 177720
+    segment_ids:
+    - etKOmktKw1k:00057
+    - etKOmktKw1k:00058
+    - etKOmktKw1k:00059
+    - etKOmktKw1k:00060
+    - etKOmktKw1k:00061
+    - etKOmktKw1k:00062
+    - etKOmktKw1k:00063
+    - etKOmktKw1k:00064
+    - etKOmktKw1k:00065
+    url: https://www.youtube.com/watch?v=etKOmktKw1k&t=154s
+- id: etKOmktKw1k-candidate-read-fake-loop-vs-real-heavy-loop-2
+  evidence_type: explanation
+  excerpt: In one exchange, the speaker identifies the first loop as fake. Later, the first is described as a true loop with real brushing.
+  reason: The speaker asks which loop is fake, identifies the first, and later describes the first as a true loop with real brushing.
+  confidence: 0.89
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: etKOmktKw1k
+    start_ms: 173800
+    end_ms: 200360
+    url: https://www.youtube.com/watch?v=etKOmktKw1k&t=173s
+    segment_ids:
+    - etKOmktKw1k:00066
+    - etKOmktKw1k:00067
+    - etKOmktKw1k:00068
+    - etKOmktKw1k:00069
+    - etKOmktKw1k:00070
+    - etKOmktKw1k:00071
+    - etKOmktKw1k:00072
+    - etKOmktKw1k:00073
+- id: 3SvgpoJSW3o-concept-block-spin-reading-reviewed
+  evidence_type: explanation
+  excerpt: Assess the spin by observing racket angle, backswing, contact acceleration, and follow-through before choosing a block or return.
+  reason: States that reading spin is necessary before handling it and before choosing the return.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 3SvgpoJSW3o
+    start_ms: 33600
+    end_ms: 42360
+    url: https://www.youtube.com/watch?v=3SvgpoJSW3o&t=33s
+    segment_ids:
+    - 3SvgpoJSW3o:00013
+    - 3SvgpoJSW3o:00014
+    - 3SvgpoJSW3o:00015
+- id: wd_E9NZBVtU-concept-block-spin-reading-reviewed
+  evidence_type: explanation
+  excerpt: Judging whether an incoming topspin ball truly has heavy spin before choosing the blocking response.
+  reason: The speaker demonstrates that a fake loop with less spin should not be treated like a heavy-spin ball and says netted blocks often mean the attacker did not actually impart much spin.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: wd_E9NZBVtU
+    start_ms: 156433
+    end_ms: 184033
+    url: https://www.youtube.com/watch?v=wd_E9NZBVtU&t=156s
+    segment_ids:
+    - wd_E9NZBVtU:00035
+    - wd_E9NZBVtU:00036
+    - wd_E9NZBVtU:00037
+    - wd_E9NZBVtU:00038
+    - wd_E9NZBVtU:00039
+    - wd_E9NZBVtU:00040
+- id: 6Xx11I8CB9M-concept-block-spin-reading-reviewed
+  evidence_type: explanation
+  excerpt: Judging whether the incoming ball is fast, spinny, or deceptive so the block technique and racket angle can be adjusted correctly.
+  reason: The speaker teaches that faster balls usually carry less spin, while deceptive loops can look similar but differ in spin.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 6Xx11I8CB9M
+    start_ms: 773366
+    end_ms: 785033
+    url: https://www.youtube.com/watch?v=6Xx11I8CB9M&t=773s
+    segment_ids:
+    - 6Xx11I8CB9M:00146
+    - 6Xx11I8CB9M:00147
+- id: 6Xx11I8CB9M-concept-block-spin-reading-reviewed-125dbaac
+  evidence_type: explanation
+  excerpt: Judging whether the incoming ball is fast, spinny, or deceptive so the block technique and racket angle can be adjusted correctly.
+  reason: The speaker teaches that faster balls usually carry less spin, while deceptive loops can look similar but differ in spin.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 6Xx11I8CB9M
+    start_ms: 773366
+    end_ms: 785033
+    url: https://www.youtube.com/watch?v=6Xx11I8CB9M&t=773s
+    segment_ids:
+    - 6Xx11I8CB9M:00146
+    - 6Xx11I8CB9M:00147
+- id: 6iZaiabY2mw-concept-spin-reading-reviewed
+  evidence_type: definition
+  excerpt: Identify whether the incoming ball carries topspin or backspin before committing the receive stroke.
+  reason: The speaker tells the listener to make a firm decision about whether the ball is topspin or backspin and warns against hesitation and misreading spin.
+  confidence: 0.85
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 6iZaiabY2mw
+    start_ms: 449100
+    end_ms: 468366
+    url: https://www.youtube.com/watch?v=6iZaiabY2mw&t=449s
+    segment_ids:
+    - 6iZaiabY2mw:00032
+    - 6iZaiabY2mw:00033
+    - 6iZaiabY2mw:00034
+    - 6iZaiabY2mw:00035
+    - 6iZaiabY2mw:00038
+- id: 02wQgAIcHKY-concept-block-spin-reading-reviewed
+  evidence_type: explanation
+  excerpt: When blocking topspin or looped balls, read the incoming spin and adjust the block angle and direction accordingly.
+  reason: The speaker describes how to judge a loop's spin from backswing, racket angle, contact point, and follow-through, then adjust the block response.
+  confidence: 0.92
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 02wQgAIcHKY
+    start_ms: 183500
+    end_ms: 212866
+    url: https://www.youtube.com/watch?v=02wQgAIcHKY&t=183s
+    segment_ids:
+    - 02wQgAIcHKY:00042
+    - 02wQgAIcHKY:00043
+    - 02wQgAIcHKY:00044
+    - 02wQgAIcHKY:00045
+    - 02wQgAIcHKY:00046
+    - 02wQgAIcHKY:00047
+    - 02wQgAIcHKY:00048
 relations:
-  - relation_type: used_with
-    target_concept_id: concept-block-trajectory-and-placement
-    sources:
-      - video_id: etKOmktKw1k
-        start_ms: 159040
-        end_ms: 177720
-        url: "https://www.youtube.com/watch?v=etKOmktKw1k&t=159s"
-        segment_ids: *id001
-    confidence: 0.9
-    review_status: approved
+- relation_type: used_with
+  target_concept_id: concept-block-trajectory-and-placement
+  sources:
+  - video_id: etKOmktKw1k
+    start_ms: 159040
+    end_ms: 177720
+    url: "https://www.youtube.com/watch?v=etKOmktKw1k&t=159s"
+    segment_ids:
+    - "etKOmktKw1k:00059"
+    - "etKOmktKw1k:00060"
+    - "etKOmktKw1k:00061"
+    - "etKOmktKw1k:00062"
+    - "etKOmktKw1k:00063"
+    - "etKOmktKw1k:00064"
+    - "etKOmktKw1k:00065"
+  confidence: 0.9
+  review_status: unreviewed

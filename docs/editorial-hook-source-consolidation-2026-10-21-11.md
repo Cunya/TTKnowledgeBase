@@ -1,0 +1,3 @@
+# Complete Hook-lesson spoken citation
+
+The actual q7kEYGprLYo:00086–00097 caption envelope is29.28seconds and completes the loose arm-flow, small contact-acceleration and muscling/spin/liveliness explanation. The preceding00085 serving analogy remains context and does not support extra claims in the excerpt. The normal30-second spoken-source limit remains enforced. No visual_source is attached and looping remains disabled. The00097-only duplicate retains its original provenance in the guarded archive; its meaningful content is consolidated into this complete passage. Independent and primary review and the full release gate remain required.

@@ -1,17 +1,14 @@
 id: concept-high-quality-attacks-use-explosive-power-and-a-low-arc
 slug: high-quality-attacks-use-explosive-power-and-a-low-arc
-label: High-quality attacks use explosive power and a low arc
+label: Attack quality and choosing defense
 aliases: []
-short_definition: An effective attack engages the whole body, travels with a low arc, and gives the opponent little time to react; attacks without quality may be safer to avoid.
+short_definition: The speaker describes a low-arc shot and suggests defending rather than making an attack without quality.
 evidence_summary: >-
-  An effective attack engages the whole body, travels with a low arc, and gives the opponent
-  little time to react; attacks without quality may be safer to avoid.
-evidence_summary_source_hash: "sha256:dd6025ed14d34a0fae6600ca5bf0ed7c0f01ecfb1fa5d3b820ec0219f4fd1792"
-evidence_summary_generator: "deterministic"
+  The speaker describes one shot's very low arc and the opponent's limited reaction time, says it does not bounce high, and suggests defense if an attack has no quality.
 concept_type: tactic
 facets:
   category:
-    - tactic
+  - tactic
 difficulty:
 review_status: approved
 generated_by:
@@ -23,19 +20,19 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: hoLSxXKl2L0-concept-attack-quality-needs-power-and-arc-codex-reviewed
-    evidence_type: explanation
-    excerpt: A shot like this is truly explosive, uses the whole body, travels with a very low arc like a bullet, and gives the opponent little time to react. If the attack has no quality, you might as well defend.
-    reason: These contiguous segments directly explain that an explosive, whole-body attack with a low arc reduces the opponent's reaction time, while a low-quality attack is not worth attempting. The existing concepts concern loop power generation through arc and opening, not this broader attack-quality tactic.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: hoLSxXKl2L0
-      start_ms: 816600
-      end_ms: 840266
-      url: https://www.youtube.com/watch?v=hoLSxXKl2L0&t=816s
-      segment_ids:
-        - hoLSxXKl2L0:00140
-        - hoLSxXKl2L0:00141
-        - hoLSxXKl2L0:00142
+- id: hoLSxXKl2L0-concept-attack-quality-needs-power-and-arc-codex-reviewed
+  evidence_type: explanation
+  excerpt: The speaker describes one shot's very low arc and the opponent's limited reaction time, says it does not bounce high, and says that if an attack has no quality, one might as well defend.
+  reason: The speaker describes one low-arc attacking example and recommends considering defense when an attack has no quality.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: hoLSxXKl2L0
+    start_ms: 816600
+    end_ms: 840266
+    url: https://www.youtube.com/watch?v=hoLSxXKl2L0&t=816s
+    segment_ids:
+    - hoLSxXKl2L0:00140
+    - hoLSxXKl2L0:00141
+    - hoLSxXKl2L0:00142

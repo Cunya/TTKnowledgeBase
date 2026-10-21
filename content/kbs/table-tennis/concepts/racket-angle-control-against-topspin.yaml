@@ -1,27 +1,21 @@
 id: concept-racket-angle-control-against-topspin
 slug: racket-angle-control-against-topspin
-label: Racket angle control against topspin
+label: Racket-face closing and backswing-angle cues
 aliases:
-- close the racket angle
-- racket angle
-short_definition: Adjusting and stabilizing the racket face angle, especially closing it against topspin, to keep the ball on the table and avoid sending it long.
+- closing the racket face
+- backswing racket-face adjustment
+short_definition: Source-specific racket-face cues for closing during forehand power strokes or against topspin, together with separate backspin and backswing-angle adjustments.
 evidence_summary: >-
-  These contiguous segments directly explain that an open racket face sends the ball upward and that increasing forehand power requires progressively closing the racket face to prevent the ball from going long. This contiguous 10.6-second span directly explains that topspin makes an exposed racket face ineffective and that angling the face down helps control the ball. The contiguous opening explains that closing the racket angle improves power and control, while failing to close it makes control difficult. The supplied span does not directly support claims about topspin, ball type, or skill level. These contiguous segments directly explain that closing the racket angle against backspin enables forward drive and brushing, while an open face causes the ball to go long. The selected contiguous span directly explains spin-dependent racket-angle adjustments and specifies that they are made during the backswing rather than at contact.
-evidence_summary_source_hash: "sha256:452f763f4eb90ed353620cf46d583654edd9a78dbf413793abb747f0d723335a"
-evidence_summary_generator: "deterministic"
+  One lesson closes the face more as forehand power increases; another angles it down against an opponent’s forehand topspin. A further lesson recommends closing for power and control. The backspin cues differ: one lesson prescribes a closed face and brushing, while another opens slightly for heavier backspin and makes spin-dependent adjustments during the backswing, not at contact.
 concept_type: fundamentals
 facets:
   category:
   - fundamentals
   - stroke
-  side:
-  - neutral
   spin:
   - topspin
-  level:
-  - beginner
-  - intermediate
-difficulty: intermediate
+  - backspin
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -581,7 +575,7 @@ evidence:
 - id: 1Issn-5noM4-concept-racket-angle-control-against-topspin-codex-reviewed
   evidence_type: explanation
   excerpt: An overly open racket face sends the ball’s trajectory upward and causes it to go long when force is added; on the forehand, use a more closed face as power increases.
-  reason: These contiguous segments directly explain that an open racket face sends the ball upward and that increasing forehand power requires progressively closing the racket face to prevent the ball from going long.
+  reason: The lesson says an open face can land the ball with little power but sends it long when force is added; its forehand cue is to close the face more as power increases.
   confidence: 0.98
   visual_status: transcript_inferred
   review_status: approved
@@ -599,7 +593,7 @@ evidence:
 - id: 4cbTW4pTCuM-concept-racket-angle-control-against-topspin-codex-reviewed
   evidence_type: explanation
   excerpt: Against an opponent’s forehand topspin, angle the racket face down slightly; leaving it too exposed can send the fast, spinning ball out of bounds.
-  reason: This contiguous 10.6-second span directly explains that topspin makes an exposed racket face ineffective and that angling the face down helps control the ball.
+  reason: Against the opponent’s forehand topspin, the lesson says to angle the face down slightly and warns that an exposed face sends the incoming fast, spinning ball out.
   confidence: 0.99
   visual_status: not_visual
   review_status: approved
@@ -617,8 +611,8 @@ evidence:
     - 4cbTW4pTCuM:00191
 - id: FweaNVt8gA0-concept-racket-angle-control-against-topspin-codex-reviewed
   evidence_type: explanation
-  excerpt: Closing the racket angle will generate more power, making it easier to control the ball; failing to close it makes control difficult.
-  reason: The contiguous opening explains that closing the racket angle improves power and control, while failing to close it makes control difficult. The supplied span does not directly support claims about topspin, ball type, or skill level.
+  excerpt: Closing the racket angle generates more power and makes the ball easier to control; failing to close it makes control difficult.
+  reason: This passage recommends closing the racket angle for more power and easier ball control.
   confidence: 0.98
   visual_status: transcript_inferred
   review_status: approved
@@ -632,8 +626,8 @@ evidence:
     - FweaNVt8gA0:00001
 - id: D596gPtN634-concept-racket-angle-control-against-topspin-codex-reviewed
   evidence_type: explanation
-  excerpt: Even against backspin, keep the racket angle closed and brush the ball; an open racket face prevents driving forward and causes the ball to go long.
-  reason: These contiguous segments directly explain that closing the racket angle against backspin enables forward drive and brushing, while an open face causes the ball to go long.
+  excerpt: Even against backspin, this lesson calls for a closed face and brushing. It says an open face permits only lifting or scooping rather than driving forward, and that players loop long when they hit through the ball with an open face.
+  reason: The lesson recommends closing the face and brushing to follow the ball’s path and “wrap” it, and warns about looping long when hitting through the ball with an open face.
   confidence: 0.99
   visual_status: transcript_inferred
   review_status: approved
@@ -650,8 +644,8 @@ evidence:
     - D596gPtN634:00064
 - id: J7Lm5IL-ggs-concept-racket-angle-control-against-topspin-codex-reviewed
   evidence_type: explanation
-  excerpt: 'Adjust the racket face during the backswing: open it more for heavier backspin and close it slightly when the ball is less spinny.'
-  reason: The selected contiguous span directly explains spin-dependent racket-angle adjustments and specifies that they are made during the backswing rather than at contact.
+  excerpt: 'For heavier backspin, the speaker opens the face slightly to about 2:00 or 2:30. If it is extremely spinny, the speaker would open it more for an amateur; if less spinny, the speaker uses about 1:30, slightly more closed. These adjustments are made during the backswing, not as a last-second change at contact.'
+  reason: The speaker describes spin-dependent backswing angles, including opening more for extremely spinny balls for an amateur, and explicitly separates that preparation from last-second changes at contact.
   confidence: 0.97
   visual_status: transcript_inferred
   review_status: approved

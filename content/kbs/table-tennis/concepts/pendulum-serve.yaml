@@ -1,26 +1,19 @@
 id: concept-pendulum-serve
 slug: pendulum-serve
-label: Pendulum serve
+label: Left sidespin serve
 aliases:
-  - Pendulum Serve
-  - left-side spin serve
+- left-side spin serve
 short_definition: A serve motion used here as the lesson topic, identified as the left-side spin serve.
 evidence_summary: >-
   A serve motion used here as the lesson topic, identified as the left-side spin serve.
-evidence_summary_source_hash: "sha256:581894de302c8e13f9b401d353a73eaa242c56c3808c3a87b856f44a8a8926ed"
-evidence_summary_generator: "deterministic"
 concept_type: stroke
 facets:
   category:
-    - fundamentals
-    - stroke
-  side:
-    - forehand
+  - fundamentals
+  - stroke
   spin:
-    - sidespin
-  level:
-    - intermediate
-difficulty: intermediate
+  - sidespin
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -31,34 +24,34 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: QrbeXVhiLKg-concept-pendulum-serve-reviewed
-    evidence_type: definition
-    excerpt: A serve motion used here as the lesson topic, identified as the left-side spin serve.
-    reason: The speaker names the technique being taught as the Pendulum Serve and equates it with left-side spin serve.
-    confidence: 0.92
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: QrbeXVhiLKg
-      start_ms: 8500
-      end_ms: 13333
-      url: https://www.youtube.com/watch?v=QrbeXVhiLKg&t=8s
-      segment_ids:
-        - QrbeXVhiLKg:00002
-  - id: evEaxXmwJ2E-candidate-left-sidespin-serve-codex-reviewed
-    evidence_type: definition
-    excerpt: Today, we're focusing on the left sidespin serve. The key is acceleration, not brute force; keep the racket angle fixed at contact, find the right brushing angle, and control the direction of force.
-    reason: The transcript explicitly names the left sidespin serve and directly supports its acceleration, racket-angle, brushing-angle, and force-direction mechanics. The supplied existing concept has the exact matching alias “left-side spin serve.”
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: evEaxXmwJ2E
-      start_ms: 0
-      end_ms: 22766
-      url: https://www.youtube.com/watch?v=evEaxXmwJ2E&t=0s
-      segment_ids:
-        - evEaxXmwJ2E:00000
-        - evEaxXmwJ2E:00002
-        - evEaxXmwJ2E:00003
-        - evEaxXmwJ2E:00004
+- id: QrbeXVhiLKg-concept-pendulum-serve-reviewed
+  evidence_type: definition
+  excerpt: A serve motion used here as the lesson topic, identified as the left-side spin serve.
+  reason: The speaker names the technique being taught as the Pendulum Serve and equates it with left-side spin serve.
+  confidence: 0.92
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: QrbeXVhiLKg
+    start_ms: 8500
+    end_ms: 13333
+    url: https://www.youtube.com/watch?v=QrbeXVhiLKg&t=8s
+    segment_ids:
+    - QrbeXVhiLKg:00002
+- id: evEaxXmwJ2E-candidate-left-sidespin-serve-codex-reviewed
+  evidence_type: definition
+  excerpt: The speaker introduces the left sidespin serve, emphasizes acceleration rather than brute force, recommends keeping the racket angle fixed at contact and finding the right brushing angle, and says the direction of force is critical.
+  reason: For the left sidespin serve, the speaker emphasizes acceleration rather than brute force, a fixed racket angle at contact, and finding the right brushing angle. The direction of force is described as critical.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: evEaxXmwJ2E
+    start_ms: 0
+    end_ms: 22766
+    url: https://www.youtube.com/watch?v=evEaxXmwJ2E&t=0s
+    segment_ids:
+    - evEaxXmwJ2E:00000
+    - evEaxXmwJ2E:00002
+    - evEaxXmwJ2E:00003
+    - evEaxXmwJ2E:00004

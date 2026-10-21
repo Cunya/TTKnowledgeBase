@@ -1,360 +1,350 @@
 id: concept-backhand-loop-contact
 slug: backhand-loop-contact
-label: Backhand loop contact
-aliases:
-  - backhand brushing height
-short_definition: Brush the ball at a usable height and distance so the backhand loop can combine friction with forward control.
+label: Looping height and backhand brushing
+aliases: []
+short_definition: Looping advice includes adjusting hand height to spin; backhand-brushing advice warns that lifting can make friction easier to lose.
 evidence_summary: >-
-  Backhand loop contact works best when the ball is met around table height or slightly lower,
-  rather than late and high where it tends to drift into the net or lose quality. Starting too
-  early or brushing above the table are common errors, especially against side-spin or backspin,
-  because they reduce the chance to contact the ball in a strong, workable zone. The spacing from
-  the chest and the racket opening must also match the spin so the loop can produce spin without
-  becoming soft or mistimed.
-evidence_summary_source_hash: "sha256:a6cfafc011ed835188aa164852125f61beb87c08478f8541e7e4471e37a82b69"
-evidence_summary_generator: "codex"
+  When looping, stay above the table for light spin and drop below for heavy spin; the heavy side-spin/backspin instruction is to lower the hand below the table. During brushing contact, the backhand tends to lift more easily, making friction easier to lose. In a separate contact example, impact is too low and insufficient friction makes the ball easy to miss.
 concept_type: contact
 facets:
   category:
-    - stroke
-  side:
-    - backhand
-  level:
-    - intermediate
-difficulty: intermediate
+  - stroke
+difficulty:
 review_status: approved
 evidence:
-  - id: JcH1Nudznvk-cand-backhand-loop-contact-at-table-height-1
-    evidence_type: explanation
-    excerpt: For backhand looping, the brushing contact should occur around table height or slightly lower; contacting too high or too late causes the ball to go into the net.
-    reason: The speaker identifies late, high brushing contact as the cause of net errors and states the correct timing is around table height, slightly lower.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: JcH1Nudznvk
-      start_ms: 581400
-      end_ms: 606640
-      url: "https://www.youtube.com/watch?v=JcH1Nudznvk&t=581s"
-      segment_ids: &id001
-        - "JcH1Nudznvk:00223"
-        - "JcH1Nudznvk:00226"
-        - "JcH1Nudznvk:00227"
-        - "JcH1Nudznvk:00231"
-  - id: JcH1Nudznvk-cand-backhand-loop-contact-at-table-height-2
-    evidence_type: explanation
-    excerpt: For backhand looping, the brushing contact should occur around table height or slightly lower; contacting too high or too late causes the ball to go into the net.
-    reason: The speaker identifies late, high brushing contact as the cause of net errors and states the correct timing is around table height, slightly lower.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: JcH1Nudznvk
-      start_ms: 611720
-      end_ms: 637200
-      url: "https://www.youtube.com/watch?v=JcH1Nudznvk&t=611s"
-      segment_ids:
-        - "JcH1Nudznvk:00235"
-        - "JcH1Nudznvk:00238"
-        - "JcH1Nudznvk:00241"
-        - "JcH1Nudznvk:00243"
-  - id: JcH1Nudznvk-cand-backhand-loop-contact-at-table-height-3
-    evidence_type: correction
-    excerpt: For backhand looping, the brushing contact should occur around table height or slightly lower; contacting too high or too late causes the ball to go into the net.
-    reason: 'Common timing mistakes are named explicitly: starting too early or brushing above table height.'
-    confidence: 0.86
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: JcH1Nudznvk
-      start_ms: 624640
-      end_ms: 632960
-      url: "https://www.youtube.com/watch?v=JcH1Nudznvk&t=624s"
-      segment_ids:
-        - "JcH1Nudznvk:00240"
-        - "JcH1Nudznvk:00242"
-  - id: q9c2_hCwlhs-cand-5-1
-    evidence_type: explanation
-    excerpt: The speaker says to start when the ball is already near and not so early that the stroke is half spent at contact.
-    reason: For a powerful backhand, contact should happen after the ball has come close and begun descending, rather than too early when the stroke is already spent.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: q9c2_hCwlhs
-      start_ms: 248560
-      end_ms: 270760
-      url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=248s
-      segment_ids:
-        - q9c2_hCwlhs:00100
-        - q9c2_hCwlhs:00108
-  - id: q9c2_hCwlhs-cand-5-2
-    evidence_type: explanation
-    excerpt: He identifies the descending phase as the moment to connect for instant power.
-    reason: For a powerful backhand, contact should happen after the ball has come close and begun descending, rather than too early when the stroke is already spent.
-    confidence: 0.91
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: q9c2_hCwlhs
-      start_ms: 510160
-      end_ms: 520280
-      url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=510s
-      segment_ids:
-        - q9c2_hCwlhs:00198
-        - q9c2_hCwlhs:00202
-  - id: 5JzSUTg_ojc-adjust-contact-to-spin
-    evidence_type: explanation
-    excerpt: Stay above table height for lighter spin, but lower the hand below the table against heavy backspin.
-    reason: Adjusts backhand-loop contact height to the strength of the incoming spin.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: 5JzSUTg_ojc, start_ms: 546760, end_ms: 565640, url: "https://www.youtube.com/watch?v=5JzSUTg_ojc&t=546s", segment_ids: ["5JzSUTg_ojc:00206", "5JzSUTg_ojc:00207", "5JzSUTg_ojc:00208", "5JzSUTg_ojc:00209", "5JzSUTg_ojc:00210", "5JzSUTg_ojc:00211"]}
-  - id: bKtA240EvTQ-concept-backhand-loop-contact-reviewed
-    evidence_type: explanation
-    excerpt: The contact height, racket angle, and contact quality needed to brush the ball effectively on the backhand loop.
-    reason: The speaker details where to contact the ball on the backhand loop, how open the racket should be, and how to avoid soft contact on side-spin/backspin balls.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: bKtA240EvTQ
-      start_ms: 353240
-      end_ms: 374080
-      url: https://www.youtube.com/watch?v=bKtA240EvTQ&t=353s
-      segment_ids:
-        - bKtA240EvTQ:00123
-        - bKtA240EvTQ:00124
-        - bKtA240EvTQ:00126
-        - bKtA240EvTQ:00128
-        - bKtA240EvTQ:00130
-        - bKtA240EvTQ:00131
-  - id: UCyUdarqdJc-concept-backhand-loop-contact-reviewed
-    evidence_type: explanation
-    excerpt: The backhand loop should meet the ball at a specific forward space rather than snatching it close to the racket or body.
-    reason: The transcript specifies one racket length from the chest for optimal backhand loop contact, and closer spacing for backspin loop.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: UCyUdarqdJc
-      start_ms: 286080
-      end_ms: 310240
-      url: https://www.youtube.com/watch?v=UCyUdarqdJc&t=286s
-      segment_ids:
-        - UCyUdarqdJc:00111
-        - UCyUdarqdJc:00112
-        - UCyUdarqdJc:00113
-        - UCyUdarqdJc:00114
-        - UCyUdarqdJc:00117
-        - UCyUdarqdJc:00118
-        - UCyUdarqdJc:00119
-  - id: A_hvhZM5dc4-concept-backhand-loop-contact-reviewed
-    evidence_type: definition
-    excerpt: For the backhand loop, contact should be made low and around the 7 o'clock area, below table level, with brushing and extension rather than lifting the ball.
-    reason: The speaker gives a detailed backhand contact map, saying to contact at 7 o'clock, below table level, brush, extend, and stop lower rather than lifting the ball.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: A_hvhZM5dc4
-      start_ms: 475400
-      end_ms: 495766
-      url: https://www.youtube.com/watch?v=A_hvhZM5dc4&t=475s
-      segment_ids:
-        - A_hvhZM5dc4:00148
-        - A_hvhZM5dc4:00149
-        - A_hvhZM5dc4:00150
-        - A_hvhZM5dc4:00151
-        - A_hvhZM5dc4:00152
-        - A_hvhZM5dc4:00153
-        - A_hvhZM5dc4:00154
-  - id: b_kKpVRuU1Q-concept-backhand-loop-contact-reviewed
-    evidence_type: definition
-    excerpt: The contact quality in a backhand loop depends on brushing the ball and maintaining friction rather than merely lifting the arm upward.
-    reason: The speaker emphasizes brushing contact, friction, and that backhand requires more brushing and precision.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: b_kKpVRuU1Q
-      start_ms: 74533
-      end_ms: 86300
-      url: https://www.youtube.com/watch?v=b_kKpVRuU1Q&t=74s
-      segment_ids:
-        - b_kKpVRuU1Q:00020
-        - b_kKpVRuU1Q:00022
-  - id: 3h7yvxJrCtM-concept-backhand-loop-contact-reviewed
-    evidence_type: explanation
-    excerpt: Making backhand loop contact on the upper-middle part of the ball with forward motion and brushing action.
-    reason: The speaker specifies the upper-middle part of the ball and says to move forward first, then brush with the wrist, which is a contact-location instruction.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 3h7yvxJrCtM
-      start_ms: 77600
-      end_ms: 98400
-      url: https://www.youtube.com/watch?v=3h7yvxJrCtM&t=77s
-      segment_ids:
-        - 3h7yvxJrCtM:00026
-        - 3h7yvxJrCtM:00027
-        - 3h7yvxJrCtM:00028
-        - 3h7yvxJrCtM:00029
-        - 3h7yvxJrCtM:00030
-        - 3h7yvxJrCtM:00031
-  - id: mxmDhD9M83c-concept-backhand-loop-contact-reviewed
-    evidence_type: explanation
-    excerpt: Contact on a backhand topspin should be made from a suitably low position with enough friction to avoid missing the ball and to create arc.
-    reason: The speaker says the first contact position is wrong because the impact is too low and insufficient friction makes it easy to miss the ball.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: mxmDhD9M83c
-      start_ms: 48866
-      end_ms: 58033
-      url: https://www.youtube.com/watch?v=mxmDhD9M83c&t=48s
-      segment_ids:
-        - mxmDhD9M83c:00007
-        - mxmDhD9M83c:00008
-        - mxmDhD9M83c:00010
-        - mxmDhD9M83c:00011
-  - id: mchHxJnHUzE-concept-backhand-loop-contact-reviewed
-    evidence_type: explanation
-    excerpt: The point on the ball where the backhand loop contacts it, including the recommended 2 o'clock and thinner 1 o'clock contacts for different spins.
-    reason: The speaker specifies 2 o'clock as the minimum contact point and contrasts it with 3 o'clock contact.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: mchHxJnHUzE
-      start_ms: 454166
-      end_ms: 477300
-      url: https://www.youtube.com/watch?v=mchHxJnHUzE&t=454s
-      segment_ids:
-        - mchHxJnHUzE:00102
-        - mchHxJnHUzE:00107
-  - id: mWehvleIbTk-concept-backhand-loop-contact-reviewed
-    evidence_type: definition
-    excerpt: The contact and brushing phase of the backhand loop, including the racket-head path from 7 o'clock to 10 o'clock and the need to brush the ball properly.
-    reason: The speaker explains the racket-head angle at backswing and contact and says only the 7 o'clock position allows proper brushing.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: mWehvleIbTk
-      start_ms: 583266
-      end_ms: 613000
-      url: https://www.youtube.com/watch?v=mWehvleIbTk&t=583s
-      segment_ids:
-        - mWehvleIbTk:00114
-        - mWehvleIbTk:00120
-  - id: wj87pK5547g-concept-backhand-loop-contact-reviewed
-    evidence_type: explanation
-    excerpt: Backhand loop contact should be positioned so the player can brush and lift the ball, with the forearm lowered appropriately against heavier spin.
-    reason: The speaker refers to contact positions, says more spin requires a lower forearm, and stresses a lowered forearm for a good brushing angle.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: wj87pK5547g
-      start_ms: 552366
-      end_ms: 578433
-      url: https://www.youtube.com/watch?v=wj87pK5547g&t=552s
-      segment_ids:
-        - wj87pK5547g:00105
-        - wj87pK5547g:00106
-        - wj87pK5547g:00107
-        - wj87pK5547g:00108
-  - id: rLVOt37bQfk-concept-backhand-loop-contact-reviewed
-    evidence_type: definition
-    excerpt: The contact window and brushing action for the backhand loop, described as a compact brush from 7 to 10 o'clock before the forearm releases through.
-    reason: The speaker explains the beginner-friendly brushing motion as going from 7 o'clock past 8 and 9 and stopping at 10 o'clock.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: rLVOt37bQfk
-      start_ms: 502066
-      end_ms: 521833
-      url: https://www.youtube.com/watch?v=rLVOt37bQfk&t=502s
-      segment_ids:
-        - rLVOt37bQfk:00088
-        - rLVOt37bQfk:00089
-        - rLVOt37bQfk:00090
-  - id: wytyHpyZr9A-concept-backhand-loop-contact-reviewed
-    evidence_type: explanation
-    excerpt: The brushing action at the moment of contact that starts the loop and determines whether the ball is lifted and spun correctly.
-    reason: The speaker says contact is the start of the brush and emphasizes the instant of contact as critical.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: wytyHpyZr9A
-      start_ms: 976833
-      end_ms: 998000
-      url: https://www.youtube.com/watch?v=wytyHpyZr9A&t=976s
-      segment_ids:
-        - wytyHpyZr9A:00153
-        - wytyHpyZr9A:00156
-  - id: yqSECRch8WM-concept-backhand-loop-contact-reviewed
-    evidence_type: definition
-    excerpt: Backhand loop contact should be made on the upper half or back of the ball with solid contact, not a light tap or sideways pry.
-    reason: The speaker specifies upper-half contact, solid contact, and says weak contact becomes a light tap or fails to lift the ball.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: yqSECRch8WM
-      start_ms: 99400
-      end_ms: 122933
-      url: https://www.youtube.com/watch?v=yqSECRch8WM&t=99s
-      segment_ids:
-        - yqSECRch8WM:00012
-        - yqSECRch8WM:00013
-  - id: b_kKpVRuU1Q-concept-backhand-loop-contact-codex-reviewed
-    evidence_type: explanation
-    excerpt: The backhand tends to lift during brushing contact, making it easier to lose friction.
-    reason: These contiguous segments directly describe backhand brushing contact and the resulting loss of friction, matching the existing durable concept.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: b_kKpVRuU1Q
-      start_ms: 74533
-      end_ms: 86300
-      url: https://www.youtube.com/watch?v=b_kKpVRuU1Q&t=74s
-      segment_ids:
-        - b_kKpVRuU1Q:00020
-        - b_kKpVRuU1Q:00021
-        - b_kKpVRuU1Q:00022
-  - id: mxmDhD9M83c-concept-backhand-loop-contact-codex-reviewed
-    evidence_type: explanation
-    excerpt: The first contact position is incorrect because the impact occurs too low; insufficient friction makes it easy to miss the ball.
-    reason: This contiguous span directly explains that the first backhand topspin contact position is too low and lacks sufficient friction, matching the existing Backhand loop contact concept.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: mxmDhD9M83c
-      start_ms: 48866
-      end_ms: 58033
-      url: https://www.youtube.com/watch?v=mxmDhD9M83c&t=48s
-      segment_ids:
-        - mxmDhD9M83c:00007
-        - mxmDhD9M83c:00008
-        - mxmDhD9M83c:00010
-        - mxmDhD9M83c:00011
+- id: JcH1Nudznvk-cand-backhand-loop-contact-at-table-height-1
+  evidence_type: explanation
+  excerpt: For backhand looping, the brushing contact should occur around table height or slightly lower; contacting too high or too late causes the ball to go into the net.
+  reason: The speaker identifies late, high brushing contact as the cause of net errors and states the correct timing is around table height, slightly lower.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: JcH1Nudznvk
+    start_ms: 581400
+    end_ms: 606640
+    url: "https://www.youtube.com/watch?v=JcH1Nudznvk&t=581s"
+    segment_ids: &id001
+    - "JcH1Nudznvk:00223"
+    - "JcH1Nudznvk:00226"
+    - "JcH1Nudznvk:00227"
+    - "JcH1Nudznvk:00231"
+- id: JcH1Nudznvk-cand-backhand-loop-contact-at-table-height-2
+  evidence_type: explanation
+  excerpt: Lower the contact point when brushing.
+  reason: The speaker recommends a lower contact point for brushing.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: JcH1Nudznvk
+    start_ms: 611720
+    end_ms: 637200
+    url: "https://www.youtube.com/watch?v=JcH1Nudznvk&t=611s"
+    segment_ids:
+    - "JcH1Nudznvk:00235"
+    - "JcH1Nudznvk:00238"
+    - "JcH1Nudznvk:00241"
+    - "JcH1Nudznvk:00243"
+- id: JcH1Nudznvk-cand-backhand-loop-contact-at-table-height-3
+  evidence_type: correction
+  excerpt: Some players start the motion too early.
+  reason: 'The timing issue described is starting the motion too early.'
+  confidence: 0.86
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: JcH1Nudznvk
+    start_ms: 624640
+    end_ms: 632960
+    url: "https://www.youtube.com/watch?v=JcH1Nudznvk&t=624s"
+    segment_ids:
+    - "JcH1Nudznvk:00240"
+    - "JcH1Nudznvk:00242"
+- id: q9c2_hCwlhs-cand-5-1
+  evidence_type: explanation
+  excerpt: The speaker says to start when the ball is already near and not so early that the stroke is half spent at contact.
+  reason: For a powerful backhand, contact should happen after the ball has come close and begun descending, rather than too early when the stroke is already spent.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: q9c2_hCwlhs
+    start_ms: 248560
+    end_ms: 270760
+    url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=248s
+    segment_ids:
+    - q9c2_hCwlhs:00100
+    - q9c2_hCwlhs:00108
+- id: q9c2_hCwlhs-cand-5-2
+  evidence_type: explanation
+  excerpt: Wait until the ball starts descending.
+  reason: The speaker recommends waiting until the ball starts descending.
+  confidence: 0.91
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: q9c2_hCwlhs
+    start_ms: 510160
+    end_ms: 520280
+    url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=510s
+    segment_ids:
+    - q9c2_hCwlhs:00198
+    - q9c2_hCwlhs:00202
+- id: 5JzSUTg_ojc-adjust-contact-to-spin
+  evidence_type: explanation
+  excerpt: For light spin, stay above the table; for heavy spin, drop below. For heavy side-spin/backspin, lower the hand below the table.
+  reason: When looping, adjust the height with spin strength; heavy side-spin/backspin calls for lowering the hand below the table.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: approved
+  source: {video_id: 5JzSUTg_ojc, start_ms: 546760, end_ms: 565640, url: "https://www.youtube.com/watch?v=5JzSUTg_ojc&t=546s", segment_ids: ["5JzSUTg_ojc:00206", "5JzSUTg_ojc:00207", "5JzSUTg_ojc:00208", "5JzSUTg_ojc:00209", "5JzSUTg_ojc:00210", "5JzSUTg_ojc:00211"]}
+- id: bKtA240EvTQ-concept-backhand-loop-contact-reviewed
+  evidence_type: explanation
+  excerpt: The contact height, racket angle, and contact quality needed to brush the ball effectively on the backhand loop.
+  reason: The speaker details where to contact the ball on the backhand loop, how open the racket should be, and how to avoid soft contact on side-spin/backspin balls.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: bKtA240EvTQ
+    start_ms: 353240
+    end_ms: 374080
+    url: https://www.youtube.com/watch?v=bKtA240EvTQ&t=353s
+    segment_ids:
+    - bKtA240EvTQ:00123
+    - bKtA240EvTQ:00124
+    - bKtA240EvTQ:00126
+    - bKtA240EvTQ:00128
+    - bKtA240EvTQ:00130
+    - bKtA240EvTQ:00131
+- id: UCyUdarqdJc-concept-backhand-loop-contact-reviewed
+  evidence_type: explanation
+  excerpt: The backhand loop should meet the ball at a specific forward space rather than snatching it close to the racket or body.
+  reason: The transcript specifies one racket length from the chest for optimal backhand loop contact, and closer spacing for backspin loop.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: UCyUdarqdJc
+    start_ms: 286080
+    end_ms: 310240
+    url: https://www.youtube.com/watch?v=UCyUdarqdJc&t=286s
+    segment_ids:
+    - UCyUdarqdJc:00111
+    - UCyUdarqdJc:00112
+    - UCyUdarqdJc:00113
+    - UCyUdarqdJc:00114
+    - UCyUdarqdJc:00117
+    - UCyUdarqdJc:00118
+    - UCyUdarqdJc:00119
+- id: A_hvhZM5dc4-concept-backhand-loop-contact-reviewed
+  evidence_type: definition
+  excerpt: For the backhand loop, contact should be made low and around the 7 o'clock area, below table level, with brushing and extension rather than lifting the ball.
+  reason: The speaker gives a detailed backhand contact map, saying to contact at 7 o'clock, below table level, brush, extend, and stop lower rather than lifting the ball.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: A_hvhZM5dc4
+    start_ms: 475400
+    end_ms: 495766
+    url: https://www.youtube.com/watch?v=A_hvhZM5dc4&t=475s
+    segment_ids:
+    - A_hvhZM5dc4:00148
+    - A_hvhZM5dc4:00149
+    - A_hvhZM5dc4:00150
+    - A_hvhZM5dc4:00151
+    - A_hvhZM5dc4:00152
+    - A_hvhZM5dc4:00153
+    - A_hvhZM5dc4:00154
+- id: b_kKpVRuU1Q-concept-backhand-loop-contact-reviewed
+  evidence_type: definition
+  excerpt: The contact quality in a backhand loop depends on brushing the ball and maintaining friction rather than merely lifting the arm upward.
+  reason: The speaker emphasizes brushing contact, friction, and that backhand requires more brushing and precision.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: b_kKpVRuU1Q
+    start_ms: 74533
+    end_ms: 86300
+    url: https://www.youtube.com/watch?v=b_kKpVRuU1Q&t=74s
+    segment_ids:
+    - b_kKpVRuU1Q:00020
+    - b_kKpVRuU1Q:00022
+- id: 3h7yvxJrCtM-concept-backhand-loop-contact-reviewed
+  evidence_type: explanation
+  excerpt: Making backhand loop contact on the upper-middle part of the ball with forward motion and brushing action.
+  reason: The speaker specifies the upper-middle part of the ball and says to move forward first, then brush with the wrist, which is a contact-location instruction.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 3h7yvxJrCtM
+    start_ms: 77600
+    end_ms: 98400
+    url: https://www.youtube.com/watch?v=3h7yvxJrCtM&t=77s
+    segment_ids:
+    - 3h7yvxJrCtM:00026
+    - 3h7yvxJrCtM:00027
+    - 3h7yvxJrCtM:00028
+    - 3h7yvxJrCtM:00029
+    - 3h7yvxJrCtM:00030
+    - 3h7yvxJrCtM:00031
+- id: mxmDhD9M83c-concept-backhand-loop-contact-reviewed
+  evidence_type: explanation
+  excerpt: Contact on a backhand topspin should be made from a suitably low position with enough friction to avoid missing the ball and to create arc.
+  reason: The speaker says the first contact position is wrong because the impact is too low and insufficient friction makes it easy to miss the ball.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: mxmDhD9M83c
+    start_ms: 48866
+    end_ms: 58033
+    url: https://www.youtube.com/watch?v=mxmDhD9M83c&t=48s
+    segment_ids:
+    - mxmDhD9M83c:00007
+    - mxmDhD9M83c:00008
+    - mxmDhD9M83c:00010
+    - mxmDhD9M83c:00011
+- id: mchHxJnHUzE-concept-backhand-loop-contact-reviewed
+  evidence_type: explanation
+  excerpt: The point on the ball where the backhand loop contacts it, including the recommended 2 o'clock and thinner 1 o'clock contacts for different spins.
+  reason: The speaker specifies 2 o'clock as the minimum contact point and contrasts it with 3 o'clock contact.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: mchHxJnHUzE
+    start_ms: 454166
+    end_ms: 477300
+    url: https://www.youtube.com/watch?v=mchHxJnHUzE&t=454s
+    segment_ids:
+    - mchHxJnHUzE:00102
+    - mchHxJnHUzE:00107
+- id: mWehvleIbTk-concept-backhand-loop-contact-reviewed
+  evidence_type: definition
+  excerpt: The contact and brushing phase of the backhand loop, including the racket-head path from 7 o'clock to 10 o'clock and the need to brush the ball properly.
+  reason: The speaker explains the racket-head angle at backswing and contact and says only the 7 o'clock position allows proper brushing.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: mWehvleIbTk
+    start_ms: 583266
+    end_ms: 613000
+    url: https://www.youtube.com/watch?v=mWehvleIbTk&t=583s
+    segment_ids:
+    - mWehvleIbTk:00114
+    - mWehvleIbTk:00120
+- id: wj87pK5547g-concept-backhand-loop-contact-reviewed
+  evidence_type: explanation
+  excerpt: Backhand loop contact should be positioned so the player can brush and lift the ball, with the forearm lowered appropriately against heavier spin.
+  reason: The speaker refers to contact positions, says more spin requires a lower forearm, and stresses a lowered forearm for a good brushing angle.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: wj87pK5547g
+    start_ms: 552366
+    end_ms: 578433
+    url: https://www.youtube.com/watch?v=wj87pK5547g&t=552s
+    segment_ids:
+    - wj87pK5547g:00105
+    - wj87pK5547g:00106
+    - wj87pK5547g:00107
+    - wj87pK5547g:00108
+- id: rLVOt37bQfk-concept-backhand-loop-contact-reviewed
+  evidence_type: definition
+  excerpt: The contact window and brushing action for the backhand loop, described as a compact brush from 7 to 10 o'clock before the forearm releases through.
+  reason: The speaker explains the beginner-friendly brushing motion as going from 7 o'clock past 8 and 9 and stopping at 10 o'clock.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: rLVOt37bQfk
+    start_ms: 502066
+    end_ms: 521833
+    url: https://www.youtube.com/watch?v=rLVOt37bQfk&t=502s
+    segment_ids:
+    - rLVOt37bQfk:00088
+    - rLVOt37bQfk:00089
+    - rLVOt37bQfk:00090
+- id: wytyHpyZr9A-concept-backhand-loop-contact-reviewed
+  evidence_type: explanation
+  excerpt: The brushing action at the moment of contact that starts the loop and determines whether the ball is lifted and spun correctly.
+  reason: The speaker says contact is the start of the brush and emphasizes the instant of contact as critical.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: wytyHpyZr9A
+    start_ms: 976833
+    end_ms: 998000
+    url: https://www.youtube.com/watch?v=wytyHpyZr9A&t=976s
+    segment_ids:
+    - wytyHpyZr9A:00153
+    - wytyHpyZr9A:00156
+- id: yqSECRch8WM-concept-backhand-loop-contact-reviewed
+  evidence_type: definition
+  excerpt: Backhand loop contact should be made on the upper half or back of the ball with solid contact, not a light tap or sideways pry.
+  reason: The speaker specifies upper-half contact, solid contact, and says weak contact becomes a light tap or fails to lift the ball.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: yqSECRch8WM
+    start_ms: 99400
+    end_ms: 122933
+    url: https://www.youtube.com/watch?v=yqSECRch8WM&t=99s
+    segment_ids:
+    - yqSECRch8WM:00012
+    - yqSECRch8WM:00013
+- id: b_kKpVRuU1Q-concept-backhand-loop-contact-codex-reviewed
+  evidence_type: explanation
+  excerpt: The backhand tends to lift during brushing contact, making it easier to lose friction.
+  reason: During brushing contact, the backhand tends to lift more easily, making it easier to lose friction.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: b_kKpVRuU1Q
+    start_ms: 74533
+    end_ms: 86300
+    url: https://www.youtube.com/watch?v=b_kKpVRuU1Q&t=74s
+    segment_ids:
+    - b_kKpVRuU1Q:00020
+    - b_kKpVRuU1Q:00021
+    - b_kKpVRuU1Q:00022
+- id: mxmDhD9M83c-concept-backhand-loop-contact-codex-reviewed
+  evidence_type: explanation
+  excerpt: In the first contact example, impact is too low; insufficient friction makes it easy to miss the ball.
+  reason: The first contact position is described as incorrect because impact is too low. Insufficient friction is also identified as the cause of easily missing the ball.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: mxmDhD9M83c
+    start_ms: 46566
+    end_ms: 58033
+    url: https://www.youtube.com/watch?v=mxmDhD9M83c&t=46s
+    segment_ids:
+    - mxmDhD9M83c:00006
+    - mxmDhD9M83c:00007
+    - mxmDhD9M83c:00008
+    - mxmDhD9M83c:00009
+    - mxmDhD9M83c:00010
+    - mxmDhD9M83c:00011
 relations:
-  - relation_type: part_of
-    target_concept_id: concept-backhand-loop
-    sources:
-      - video_id: JcH1Nudznvk
-        start_ms: 581400
-        end_ms: 606640
-        url: "https://www.youtube.com/watch?v=JcH1Nudznvk&t=581s"
-        segment_ids: *id001
-    confidence: 0.9
-    review_status: approved
+- relation_type: part_of
+  target_concept_id: concept-backhand-loop
+  sources:
+  - video_id: JcH1Nudznvk
+    start_ms: 581400
+    end_ms: 606640
+    url: "https://www.youtube.com/watch?v=JcH1Nudznvk&t=581s"
+    segment_ids: *id001
+  confidence: 0.9
+  review_status: unreviewed

@@ -1,970 +1,1028 @@
 id: concept-loose-grip-backhand-friction
 slug: loose-grip-backhand-friction
 label: Generating spin at contact
-aliases: [loose grip friction, racket-head acceleration, brushing contact]
-short_definition: Create spin by allowing the racket head to accelerate and brush the correct part of the ball instead of squeezing or pushing rigidly.
+aliases:
+- loose grip friction
+- racket-head acceleration
+- brushing contact
+short_definition: Lessons on spin at contact give separate cues for grip timing, friction and racket-head motion in looping, flicking and serving.
 evidence_summary: >-
-  Spin at contact comes from a relaxed grip that allows the racket head to accelerate quickly,
-  especially on short backhand exchanges. The wrist and fingers provide the sharpest snap, while
-  the forearm mainly supports the forward motion rather than generating the spin itself. Faster
-  racket-head rotation increases both spin and arc, and the brushing contact on the upper part of
-  the ball is what creates the friction needed for a ripping shot.
-evidence_summary_source_hash: "sha256:7e1cd7e6cc2fff1321c705aa39dd57271bf02911dee8249179ed99ad8d690d8f"
-evidence_summary_generator: "codex"
-detailed_definition: "Spin emerges from both freedom and precision: a relaxed grip permits last-moment racket-head speed, rotation adds brushing force, and the contact region determines the resulting spin."
+  One passage links looser holding with more friction. A looping lesson orders finger friction before tightening the grip to “80%” and following through; a flicking lesson places firm gripping at the instant of brushing. Another passage assigns forward motion to the forearm and racket-head drive to the wrist. Serve examples describe racket-face rotation and racket-head acceleration, while a heavy-backspin serve passage specifies under-ball contact.
+detailed_definition: "A looping lesson uses finger-created friction before tightening the grip and following through. A flicking lesson calls for firm gripping at the instant of brushing. A serving lesson links faster racket-head acceleration and face rotation with spin. These cues are presented in their separate stroke contexts."
 concept_type: technique-principle
-facets: {category: [spin, contact, acceleration], side: [neutral], level: [intermediate]}
-difficulty: intermediate
+facets:
+  category:
+  - spin
+  - contact
+  - acceleration
+difficulty:
 review_status: approved
 evidence:
-  - id: loose-web-grip-1
-    evidence_type: demonstration
-    excerpt: Keep a small opening between thumb and index so the racket can whip through contact.
-    reason: Shows how localized grip relaxation permits racket acceleration.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source: {video_id: BToLYdKLIMM, start_ms: 275440, end_ms: 286320, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=275s", segment_ids: ["BToLYdKLIMM:00098", "BToLYdKLIMM:00099", "BToLYdKLIMM:00100"]}
-  - id: tight-grip-less-friction-2
-    evidence_type: explanation
-    excerpt: Excess grip tension reduces the friction available at contact; a relaxed grip allows more brushing.
-    reason: States the grip-tension relationship directly.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source: {video_id: BToLYdKLIMM, start_ms: 307199, end_ms: 318360, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=307s", segment_ids: ["BToLYdKLIMM:00112", "BToLYdKLIMM:00113", "BToLYdKLIMM:00114"]}
-  - id: rotational-spin-3
-    evidence_type: demonstration
-    excerpt: I add a slight rotational twist to my left side in the backhand. This adds spin and power.
-    reason: A second video illustrates rotation as another source of brushing speed.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source: {video_id: 3kC8KEl3iow, start_ms: 147720, end_ms: 156760, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=147s", segment_ids: ["3kC8KEl3iow:00055", "3kC8KEl3iow:00056", "3kC8KEl3iow:00057", "3kC8KEl3iow:00058"]}
-  - id: racket-head-spin-4
-    evidence_type: explanation
-    excerpt: More racket-head rotation generally produces a spinnier contact.
-    reason: A third video isolates racket-head rotational speed as the spin generator.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source: {video_id: csJgHR7Daog, start_ms: 261799, end_ms: 275240, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=261s", segment_ids: ["csJgHR7Daog:00122", "csJgHR7Daog:00123", "csJgHR7Daog:00124", "csJgHR7Daog:00125", "csJgHR7Daog:00126"]}
-  - id: under-ball-backspin-5
-    evidence_type: example
-    excerpt: Get underneath the ball at contact so the racket can grip it and increase spin.
-    reason: Shows that racket speed must be paired with the correct contact region.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source: {video_id: csJgHR7Daog, start_ms: 533360, end_ms: 547040, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=533s", segment_ids: ["csJgHR7Daog:00230", "csJgHR7Daog:00231", "csJgHR7Daog:00232"]}
-  - id: global-friction-first-6
-    evidence_type: explanation
-    excerpt: First, use your fingers to create friction. After friction is applied, tighten the grip and follow through.
-    reason: Global TT Studio separates brushing friction from the later grip-and-follow-through phase.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source: {video_id: YUEaL2HiPIE, start_ms: 0, end_ms: 12900, url: "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=0s", segment_ids: ["YUEaL2HiPIE:00000", "YUEaL2HiPIE:00001"]}
-  - id: global-loop-friction-7
-    evidence_type: demonstration
-    excerpt: Use your fingers to create friction, then tighten your grip to 80%.
-    reason: Repeats the sequence specifically for looping.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source: {video_id: YUEaL2HiPIE, start_ms: 777966, end_ms: 790566, url: "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=777s", segment_ids: ["YUEaL2HiPIE:00160", "YUEaL2HiPIE:00161"]}
-  - id: xWrDKGnqmBs-cand-loose-grip-friction-match-1
-    evidence_type: definition
-    excerpt: Spin and control come from frictional brushing at contact, created by a relaxed-to-fast action led by the racket head rather than a flat hit.
-    reason: The speaker repeatedly states that friction is the key and ties it to racket-head-led action.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: xWrDKGnqmBs
-      start_ms: 92633
-      end_ms: 98633
-      url: "https://www.youtube.com/watch?v=xWrDKGnqmBs&t=92s"
-      segment_ids:
-        - "xWrDKGnqmBs:00029"
-        - "xWrDKGnqmBs:00031"
-  - id: xWrDKGnqmBs-cand-loose-grip-friction-match-2
-    evidence_type: definition
-    excerpt: Spin and control come from frictional brushing at contact, created by a relaxed-to-fast action led by the racket head rather than a flat hit.
-    reason: The speaker repeatedly states that friction is the key and ties it to racket-head-led action.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: xWrDKGnqmBs
-      start_ms: 293233
-      end_ms: 309000
-      url: "https://www.youtube.com/watch?v=xWrDKGnqmBs&t=293s"
-      segment_ids:
-        - "xWrDKGnqmBs:00086"
-        - "xWrDKGnqmBs:00088"
-  - id: xWrDKGnqmBs-cand-loose-grip-friction-match-3
-    evidence_type: drill
-    excerpt: Spin and control come from frictional brushing at contact, created by a relaxed-to-fast action led by the racket head rather than a flat hit.
-    reason: The speaker instructs learners to brush first, create trajectory, and only later add speed.
-    confidence: 0.91
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: xWrDKGnqmBs
-      start_ms: 465433
-      end_ms: 484000
-      url: "https://www.youtube.com/watch?v=xWrDKGnqmBs&t=465s"
-      segment_ids:
-        - "xWrDKGnqmBs:00133"
-        - "xWrDKGnqmBs:00135"
-        - "xWrDKGnqmBs:00137"
-  - id: xWrDKGnqmBs-cand-backhand-finger-wrist-friction-1
-    evidence_type: explanation
-    excerpt: The speaker explains that the wrist and fingers create friction while the forearm mainly drives forward.
-    reason: On quick backhand contacts, effective friction is generated primarily by the wrist and fingers driving the racket head, with the forearm assisting forward motion rather than producing spin itself.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: xWrDKGnqmBs
-      start_ms: 305933
-      end_ms: 331633
-      url: "https://www.youtube.com/watch?v=xWrDKGnqmBs&t=305s"
-      segment_ids:
-        - "xWrDKGnqmBs:00088"
-        - "xWrDKGnqmBs:00091"
-        - "xWrDKGnqmBs:00092"
-        - "xWrDKGnqmBs:00093"
-  - id: xWrDKGnqmBs-cand-backhand-finger-wrist-friction-2
-    evidence_type: explanation
-    excerpt: The speaker explains that the wrist and fingers create friction while the forearm mainly drives forward.
-    reason: On quick backhand contacts, effective friction is generated primarily by the wrist and fingers driving the racket head, with the forearm assisting forward motion rather than producing spin itself.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: xWrDKGnqmBs
-      start_ms: 391033
-      end_ms: 411466
-      url: "https://www.youtube.com/watch?v=xWrDKGnqmBs&t=391s"
-      segment_ids:
-        - "xWrDKGnqmBs:00116"
-        - "xWrDKGnqmBs:00120"
-  - id: xWrDKGnqmBs-cand-backhand-finger-wrist-friction-3
-    evidence_type: explanation
-    excerpt: The speaker explains that the wrist and fingers create friction while the forearm mainly drives forward.
-    reason: On quick backhand contacts, effective friction is generated primarily by the wrist and fingers driving the racket head, with the forearm assisting forward motion rather than producing spin itself.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: xWrDKGnqmBs
-      start_ms: 438400
-      end_ms: 458966
-      url: "https://www.youtube.com/watch?v=xWrDKGnqmBs&t=438s"
-      segment_ids:
-        - "xWrDKGnqmBs:00126"
-        - "xWrDKGnqmBs:00130"
-  - id: xWrDKGnqmBs-cand-backhand-finger-wrist-friction-4
-    evidence_type: demonstration
-    excerpt: The speaker appears to demonstrate the rotational action and relaxed rotation leading to friction.
-    reason: On quick backhand contacts, effective friction is generated primarily by the wrist and fingers driving the racket head, with the forearm assisting forward motion rather than producing spin itself.
-    confidence: 0.8
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: xWrDKGnqmBs
-      start_ms: 332333
-      end_ms: 342166
-      url: "https://www.youtube.com/watch?v=xWrDKGnqmBs&t=332s"
-      segment_ids:
-        - "xWrDKGnqmBs:00094"
-        - "xWrDKGnqmBs:00097"
-  - id: xWrDKGnqmBs-cand-backhand-finger-wrist-friction-5
-    evidence_type: demonstration
-    excerpt: The speaker appears to demonstrate the rotational action and relaxed rotation leading to friction.
-    reason: On quick backhand contacts, effective friction is generated primarily by the wrist and fingers driving the racket head, with the forearm assisting forward motion rather than producing spin itself.
-    confidence: 0.8
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: xWrDKGnqmBs
-      start_ms: 415133
-      end_ms: 429800
-      url: "https://www.youtube.com/watch?v=xWrDKGnqmBs&t=415s"
-      segment_ids:
-        - "xWrDKGnqmBs:00121"
-        - "xWrDKGnqmBs:00122"
-  - id: q9c2_hCwlhs-cand-6-1
-    evidence_type: explanation
-    excerpt: The speaker uses soft-touch imagery to teach relaxed, flowing friction at contact.
-    reason: Spin quality improves when the hand stays soft and the player brushes with light, flowing friction instead of a hard, rigid hit.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: q9c2_hCwlhs
-      start_ms: 38960
-      end_ms: 55960
-      url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=38s
-      segment_ids:
-        - q9c2_hCwlhs:00014
-        - q9c2_hCwlhs:00020
-  - id: q9c2_hCwlhs-cand-6-2
-    evidence_type: explanation
-    excerpt: Finger firing is described as the source of wrist movement and crisp contact sound.
-    reason: Spin quality improves when the hand stays soft and the player brushes with light, flowing friction instead of a hard, rigid hit.
-    confidence: 0.84
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: q9c2_hCwlhs
-      start_ms: 534040
-      end_ms: 542280
-      url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=534s
-      segment_ids:
-        - q9c2_hCwlhs:00206
-        - q9c2_hCwlhs:00208
-  - id: D9ZAPb_65Hk-concept-loose-grip-backhand-friction-reviewed
-    evidence_type: explanation
-    excerpt: Creating spin by a quick racket-head snap and brushing contact rather than sweeping the whole arm.
-    reason: The speaker says spin comes from one snap and not from using the whole arm for up-and-down friction.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: D9ZAPb_65Hk
-      start_ms: 576320
-      end_ms: 590160
-      url: https://www.youtube.com/watch?v=D9ZAPb_65Hk&t=576s
-      segment_ids:
-        - D9ZAPb_65Hk:00197
-        - D9ZAPb_65Hk:00198
-        - D9ZAPb_65Hk:00199
-        - D9ZAPb_65Hk:00200
-        - D9ZAPb_65Hk:00201
-  - id: lO0H9Cs6JEo-concept-loose-grip-backhand-friction-reviewed
-    evidence_type: definition
-    excerpt: Producing spin by brushing the ball with friction and proper racket-head rotation rather than colliding with the ball.
-    reason: The speaker emphasizes compact motion with friction, warns against colliding with the ball, and defines acceleration as faster brushing with solid contact.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: lO0H9Cs6JEo
-      start_ms: 637960
-      end_ms: 666760
-      url: https://www.youtube.com/watch?v=lO0H9Cs6JEo&t=637s
-      segment_ids:
-        - lO0H9Cs6JEo:00206
-        - lO0H9Cs6JEo:00209
-        - lO0H9Cs6JEo:00212
-        - lO0H9Cs6JEo:00216
-  - id: ONXmZHozLTA-concept-loose-grip-backhand-friction-reviewed
-    evidence_type: explanation
-    excerpt: Create spin by keeping the hand relaxed, using finger-driven racket-head acceleration, and making effective brushing contact at the ball.
-    reason: The speaker repeatedly states that spin comes from finger activation, not gripping hard or using the wrist, and that soft touch plus quick acceleration creates spin.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: ONXmZHozLTA
-      start_ms: 146000
-      end_ms: 175240
-      url: https://www.youtube.com/watch?v=ONXmZHozLTA&t=146s
-      segment_ids:
-        - ONXmZHozLTA:00051
-        - ONXmZHozLTA:00052
-        - ONXmZHozLTA:00053
-        - ONXmZHozLTA:00054
-        - ONXmZHozLTA:00055
-        - ONXmZHozLTA:00056
-        - ONXmZHozLTA:00057
-        - ONXmZHozLTA:00058
-        - ONXmZHozLTA:00059
-        - ONXmZHozLTA:00060
-        - ONXmZHozLTA:00061
-        - ONXmZHozLTA:00062
-  - id: 3SvgpoJSW3o-concept-loose-grip-backhand-friction-reviewed
-    evidence_type: explanation
-    excerpt: Create spin by brushing the ball with accelerating racket contact rather than merely driving through it.
-    reason: Describes acceleration at contact, brushing action, and explosive contact as indicators of spin production.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 3SvgpoJSW3o
-      start_ms: 471280
-      end_ms: 498240
-      url: https://www.youtube.com/watch?v=3SvgpoJSW3o&t=471s
-      segment_ids:
-        - 3SvgpoJSW3o:00164
-        - 3SvgpoJSW3o:00166
-        - 3SvgpoJSW3o:00172
-        - 3SvgpoJSW3o:00176
-  - id: hp9OZTBD5JE-concept-loose-grip-backhand-friction-reviewed
-    evidence_type: explanation
-    excerpt: Creating spin and quality by brushing the ball with controlled friction before adding force with the arm.
-    reason: The speaker says to create friction on the ball, brush first, then accelerate, and explicitly states that enough friction must come before the arm applies force.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: hp9OZTBD5JE
-      start_ms: 310120
-      end_ms: 330280
-      url: https://www.youtube.com/watch?v=hp9OZTBD5JE&t=310s
-      segment_ids:
-        - hp9OZTBD5JE:00116
-        - hp9OZTBD5JE:00119
-        - hp9OZTBD5JE:00120
-        - hp9OZTBD5JE:00122
-        - hp9OZTBD5JE:00123
-  - id: SE3btn_1X1s-concept-loose-grip-backhand-friction-reviewed
-    evidence_type: definition
-    excerpt: Create spin by accelerating the racket through brushing contact rather than by hitting the ball away with force.
-    reason: The speaker defines brushing as acceleration without adding force, says the racket should rotate, and describes contact as carrying the ball to generate friction.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: SE3btn_1X1s
-      start_ms: 266760
-      end_ms: 286360
-      url: https://www.youtube.com/watch?v=SE3btn_1X1s&t=266s
-      segment_ids:
-        - SE3btn_1X1s:00110
-        - SE3btn_1X1s:00111
-        - SE3btn_1X1s:00112
-        - SE3btn_1X1s:00113
-        - SE3btn_1X1s:00114
-        - SE3btn_1X1s:00116
-        - SE3btn_1X1s:00117
-  - id: kv80YX__eJE-concept-loose-grip-backhand-friction-reviewed
-    evidence_type: explanation
-    excerpt: Creating spin by brushing the ball with controlled racket-head acceleration and grip on the ball.
-    reason: The speaker explains that brushing the upper part of the ball is how friction and grip are created for a rip.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: kv80YX__eJE
-      start_ms: 254233
-      end_ms: 277433
-      url: https://www.youtube.com/watch?v=kv80YX__eJE&t=254s
-      segment_ids:
-        - kv80YX__eJE:00056
-        - kv80YX__eJE:00057
-        - kv80YX__eJE:00059
-        - kv80YX__eJE:00060
-  - id: eIKLgVChAdA-concept-loose-grip-backhand-friction-reviewed
-    evidence_type: explanation
-    excerpt: Spin comes from wrist, finger, and racket-head acceleration at the instant of contact rather than from slow arm motion alone.
-    reason: The speaker ties spin amount to wrist/finger action and racket-head acceleration at contact, and says finger use adds hidden power and touch.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: eIKLgVChAdA
-      start_ms: 184100
-      end_ms: 206500
-      url: https://www.youtube.com/watch?v=eIKLgVChAdA&t=184s
-      segment_ids:
-        - eIKLgVChAdA:00038
-        - eIKLgVChAdA:00040
-        - eIKLgVChAdA:00041
-        - eIKLgVChAdA:00043
-  - id: eIKLgVChAdA-concept-loose-grip-backhand-friction-reviewed-c717ff4f
-    evidence_type: explanation
-    excerpt: Spin comes from wrist, finger, and racket-head acceleration at the instant of contact rather than from slow arm motion alone.
-    reason: The speaker ties spin amount to wrist/finger action and racket-head acceleration at contact, and says finger use adds hidden power and touch.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: eIKLgVChAdA
-      start_ms: 184100
-      end_ms: 206500
-      url: https://www.youtube.com/watch?v=eIKLgVChAdA&t=184s
-      segment_ids:
-        - eIKLgVChAdA:00038
-        - eIKLgVChAdA:00040
-        - eIKLgVChAdA:00041
-        - eIKLgVChAdA:00043
-  - id: 7jWqEsHtN3Y-concept-loose-grip-backhand-friction-reviewed
-    evidence_type: explanation
-    excerpt: Creating spin by brushing the ball with enough friction and controlled acceleration.
-    reason: The speaker says slowing down lets you grip the ball with the rubber and mentions racket-head acceleration as an identifier of heavy underspin.
-    confidence: 0.86
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 7jWqEsHtN3Y
-      start_ms: 425866
-      end_ms: 430666
-      url: https://www.youtube.com/watch?v=7jWqEsHtN3Y&t=425s
-      segment_ids:
-        - 7jWqEsHtN3Y:00093
-  - id: Kg4hLYnEbAs-concept-backhand-loop-racket-head-acceleration-reviewed
-    evidence_type: explanation
-    excerpt: Generating spin and arc in the backhand loop by accelerating the racket head through and after contact.
-    reason: The speaker says racket-head acceleration is the fastest way, that the faster the racket head rotates the more spin and arc you get, and that rotation continues after contact.
-    confidence: 0.86
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: Kg4hLYnEbAs
-      start_ms: 557280
-      end_ms: 585800
-      url: https://www.youtube.com/watch?v=Kg4hLYnEbAs&t=557s
-      segment_ids:
-        - Kg4hLYnEbAs:00166
-        - Kg4hLYnEbAs:00167
-        - Kg4hLYnEbAs:00168
-        - Kg4hLYnEbAs:00169
-        - Kg4hLYnEbAs:00170
-        - Kg4hLYnEbAs:00171
-        - Kg4hLYnEbAs:00172
-        - Kg4hLYnEbAs:00174
-        - Kg4hLYnEbAs:00175
-  - id: UgroLfi1YGY-concept-loose-grip-backhand-friction-reviewed
-    evidence_type: explanation
-    excerpt: Creating spin by brushing the ball with a fast, whip-like motion rather than a solid hitting contact.
-    reason: Explicitly distinguishes solid hitting force from whip-like brushing power.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: UgroLfi1YGY
-      start_ms: 668200
-      end_ms: 687520
-      url: https://www.youtube.com/watch?v=UgroLfi1YGY&t=668s
-      segment_ids:
-        - UgroLfi1YGY:00239
-        - UgroLfi1YGY:00240
-        - UgroLfi1YGY:00241
-        - UgroLfi1YGY:00242
-        - UgroLfi1YGY:00243
-        - UgroLfi1YGY:00244
-  - id: TnKP4aH3ft8-concept-loose-grip-backhand-friction-reviewed
-    evidence_type: explanation
-    excerpt: Spin is created by localized finger action and brushing friction at contact rather than by a fully tense grip or large arm movement.
-    reason: The speaker says real brushing is concentrated at the racket tip, finger force generates friction, and gripping too early weakens spin.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: TnKP4aH3ft8
-      start_ms: 420880
-      end_ms: 442240
-      url: https://www.youtube.com/watch?v=TnKP4aH3ft8&t=420s
-      segment_ids:
-        - TnKP4aH3ft8:00160
-        - TnKP4aH3ft8:00161
-        - TnKP4aH3ft8:00164
-        - TnKP4aH3ft8:00165
-        - TnKP4aH3ft8:00166
-        - TnKP4aH3ft8:00167
-  - id: DaHEb394UtA-concept-loose-grip-backhand-friction-reviewed
-    evidence_type: definition
-    excerpt: Generating spin by concentrating force at contact through finger-driven acceleration and brushing rather than actively swinging the wrist.
-    reason: The speaker states that spin is generated by the fingers, that force is concentrated at the fingers, and that the brushing action should create an arc rather than be driven by the wrist.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: DaHEb394UtA
-      start_ms: 35200
-      end_ms: 51480
-      url: https://www.youtube.com/watch?v=DaHEb394UtA&t=35s
-      segment_ids:
-        - DaHEb394UtA:00011
-        - DaHEb394UtA:00012
-        - DaHEb394UtA:00013
-        - DaHEb394UtA:00014
-        - DaHEb394UtA:00015
-        - DaHEb394UtA:00016
-  - id: uRu7I3Cvojk-new-friction-dominant-flick-contact-reviewed
-    evidence_type: definition
-    excerpt: A flick contact style that depends on brushing friction rather than pure forward drive, especially in the banana flick.
-    reason: The speaker says the banana flick relies mainly on accelerated brushing and requires high friction.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: uRu7I3Cvojk
-      start_ms: 47133
-      end_ms: 69266
-      url: https://www.youtube.com/watch?v=uRu7I3Cvojk&t=47s
-      segment_ids:
-        - uRu7I3Cvojk:00015
-        - uRu7I3Cvojk:00017
-        - uRu7I3Cvojk:00019
-        - uRu7I3Cvojk:00020
-  - id: z6TpyCclpJg-concept-loose-grip-backhand-friction-reviewed
-    evidence_type: explanation
-    excerpt: Create spin by staying relaxed until contact, then accelerating and brushing so the racket can grip the ball.
-    reason: The speaker says pushing the elbow in cannot generate friction and that proper brushing and grip on the ball come from accelerating at contact.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: z6TpyCclpJg
-      start_ms: 76566
-      end_ms: 91300
-      url: https://www.youtube.com/watch?v=z6TpyCclpJg&t=76s
-      segment_ids:
-        - z6TpyCclpJg:00025
-        - z6TpyCclpJg:00026
-        - z6TpyCclpJg:00027
-        - z6TpyCclpJg:00028
-  - id: _Z6BYzV60NI-concept-loose-grip-backhand-friction-reviewed
-    evidence_type: explanation
-    excerpt: Using brushing and friction rather than pure impact to manage spinny serves and make the ball land safely.
-    reason: The speaker explicitly prioritizes friction over impact and says to grab and brush the ball properly.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: _Z6BYzV60NI
-      start_ms: 142766
-      end_ms: 166433
-      url: https://www.youtube.com/watch?v=_Z6BYzV60NI&t=142s
-      segment_ids:
-        - _Z6BYzV60NI:00048
-        - _Z6BYzV60NI:00050
-        - _Z6BYzV60NI:00051
-        - _Z6BYzV60NI:00052
-  - id: dbT0DYG2Xac-concept-loose-grip-backhand-friction-reviewed
-    evidence_type: definition
-    excerpt: Producing spin by brushing actively and quickly at contact rather than merely touching the ball, with emphasis on wrist and fingers over arm force.
-    reason: The speaker contrasts merely touching the ball with brushing with force, says spin generation and spin handling both require brushing with force, and emphasizes wrist and fingers at contact.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: dbT0DYG2Xac
-      start_ms: 345200
-      end_ms: 369033
-      url: https://www.youtube.com/watch?v=dbT0DYG2Xac&t=345s
-      segment_ids:
-        - dbT0DYG2Xac:00107
-        - dbT0DYG2Xac:00110
-        - dbT0DYG2Xac:00111
-        - dbT0DYG2Xac:00112
-        - dbT0DYG2Xac:00113
-  - id: 1yBxtuFfISg-concept-loose-grip-backhand-friction-reviewed
-    evidence_type: explanation
-    excerpt: Creating spin and lift by increasing brushing speed and using friction at the moment of contact rather than relying on pure hitting power.
-    reason: The speaker explains that heavier spin requires faster brushing and says to apply force through friction.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 1yBxtuFfISg
-      start_ms: 221400
-      end_ms: 238666
-      url: https://www.youtube.com/watch?v=1yBxtuFfISg&t=221s
-      segment_ids:
-        - 1yBxtuFfISg:00080
-        - 1yBxtuFfISg:00086
-  - id: 25Ohh2RJcWk-concept-loose-grip-backhand-friction-reviewed
-    evidence_type: explanation
-    excerpt: Spin is created by a brief brushing contact with racket-head acceleration and enough looseness to let the racket head move freely.
-    reason: The transcript links free racket-head rotation and brief brushing contact to increased friction, spin, and speed.
-    confidence: 0.87
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 25Ohh2RJcWk
-      start_ms: 115100
-      end_ms: 128266
-      url: https://www.youtube.com/watch?v=25Ohh2RJcWk&t=115s
-      segment_ids:
-        - 25Ohh2RJcWk:00025
-        - 25Ohh2RJcWk:00026
-        - 25Ohh2RJcWk:00028
-        - 25Ohh2RJcWk:00029
-  - id: k7-gEsWTYFg-concept-loose-grip-backhand-friction-reviewed
-    evidence_type: explanation
-    excerpt: Creating spin by staying relaxed and using racket-head motion and brushing friction at contact rather than forcing the ball flat.
-    reason: The speaker says the wrist should remain relaxed, the racket head should create friction, and acceleration should happen at contact then stop immediately after, with a curved brushing path rather than pushing straight forward.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: k7-gEsWTYFg
-      start_ms: 89433
-      end_ms: 118200
-      url: https://www.youtube.com/watch?v=k7-gEsWTYFg&t=89s
-      segment_ids:
-        - k7-gEsWTYFg:00029
-        - k7-gEsWTYFg:00030
-        - k7-gEsWTYFg:00031
-        - k7-gEsWTYFg:00032
-        - k7-gEsWTYFg:00035
-        - k7-gEsWTYFg:00036
-        - k7-gEsWTYFg:00037
-        - k7-gEsWTYFg:00040
-  - id: lRAoXPoYOBk-concept-loose-grip-backhand-friction-reviewed
-    evidence_type: explanation
-    excerpt: Generating spin by allowing the hand, fingers, and racket to accelerate through the ball with enough friction at contact.
-    reason: The speaker says fingers and wrist create friction during the spin process and links contact to spin generation.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: lRAoXPoYOBk
-      start_ms: 57600
-      end_ms: 67433
-      url: https://www.youtube.com/watch?v=lRAoXPoYOBk&t=57s
-      segment_ids:
-        - lRAoXPoYOBk:00019
-        - lRAoXPoYOBk:00020
-        - lRAoXPoYOBk:00021
-        - lRAoXPoYOBk:00022
-  - id: idAN8cPDZ7w-concept-generating-spin-at-contact-reviewed
-    evidence_type: definition
-    excerpt: Creating spin through friction and brushing at the moment of contact rather than through large, loose motions.
-    reason: The transcript repeatedly attributes spin to friction, brushing, and contact behavior, and says it is not just wrist friction.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: idAN8cPDZ7w
-      start_ms: 297833
-      end_ms: 316333
-      url: https://www.youtube.com/watch?v=idAN8cPDZ7w&t=297s
-      segment_ids:
-        - idAN8cPDZ7w:00047
-        - idAN8cPDZ7w:00048
-        - idAN8cPDZ7w:00051
-  - id: tpY3SRVdBK8-concept-loose-grip-backhand-friction-reviewed
-    evidence_type: definition
-    excerpt: Creating spin through brushing friction and racket-head rotation at contact rather than a pure push.
-    reason: The speaker introduces friction and explains that tapping/rotating increases spin generation.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: tpY3SRVdBK8
-      start_ms: 296166
-      end_ms: 313400
-      url: https://www.youtube.com/watch?v=tpY3SRVdBK8&t=296s
-      segment_ids:
-        - tpY3SRVdBK8:00043
-        - tpY3SRVdBK8:00044
-  - id: woTURG6ah3Y-concept-generating-spin-at-contact-reviewed
-    evidence_type: explanation
-    excerpt: Creating spin by making effective rubbing contact and using friction at the moment of contact rather than relying on a big swing.
-    reason: The speaker explains that fingers, wrists, racket-head acceleration, and friction create spin, while a large motion or lowering the forearm is not the key.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: woTURG6ah3Y
-      start_ms: 672160
-      end_ms: 690000
-      url: https://www.youtube.com/watch?v=woTURG6ah3Y&t=672s
-      segment_ids:
-        - woTURG6ah3Y:00098
-        - woTURG6ah3Y:00099
-  - id: u2A5PNggIqg-concept-loose-grip-backhand-friction-reviewed
-    evidence_type: definition
-    excerpt: Using brushing contact and acceleration at the moment of contact to generate spin and control the ball.
-    reason: The speaker repeatedly states that friction is the key factor for lifting the ball and achieving good ball quality.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: u2A5PNggIqg
-      start_ms: 66466
-      end_ms: 84433
-      url: https://www.youtube.com/watch?v=u2A5PNggIqg&t=66s
-      segment_ids:
-        - u2A5PNggIqg:00000
-        - u2A5PNggIqg:00004
-  - id: x8OSRSRukeI-concept-loose-grip-backhand-friction-reviewed
-    evidence_type: definition
-    excerpt: Create spin by making the racket face move quickly and brush the ball at contact, rather than muscling through with the arm.
-    reason: The speaker defines friction as racket-face rotation and concentrated speed at the moment of friction, not whole-stroke brute force.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: x8OSRSRukeI
-      start_ms: 311100
-      end_ms: 338766
-      url: https://www.youtube.com/watch?v=x8OSRSRukeI&t=311s
-      segment_ids:
-        - x8OSRSRukeI:00079
-        - x8OSRSRukeI:00080
-        - x8OSRSRukeI:00083
-  - id: phTj82vlVqs-concept-generating-spin-at-contact-reviewed
-    evidence_type: explanation
-    excerpt: Creating spin through compact brushing, fast acceleration, and an abrupt stop at impact.
-    reason: 'The speaker gives three secrets for maximum friction: compact motion, fast acceleration, and a sharp stop, then says fingers generate friction and the motion should be whip-like.'
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: phTj82vlVqs
-      start_ms: 177066
-      end_ms: 204366
-      url: https://www.youtube.com/watch?v=phTj82vlVqs&t=177s
-      segment_ids:
-        - phTj82vlVqs:00042
-        - phTj82vlVqs:00043
-        - phTj82vlVqs:00044
-        - phTj82vlVqs:00046
-  - id: EjtP5uCaULU-concept-loose-grip-backhand-friction-reviewed
-    evidence_type: explanation
-    excerpt: Using relaxed fingers and a controlled brushing contact at the instant of contact to create friction and spin before arm power takes over.
-    reason: The speaker repeatedly says the arm must stay relaxed so the fingers can grip the ball first, then the arm accelerates afterward.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: EjtP5uCaULU
-      start_ms: 616066
-      end_ms: 635033
-      url: https://www.youtube.com/watch?v=EjtP5uCaULU&t=616s
-      segment_ids:
-        - EjtP5uCaULU:00145
-        - EjtP5uCaULU:00148
-  - id: VYMqgnrDAhk-candidate-5-reviewed
-    evidence_type: explanation
-    excerpt: Applying friction through brushing contact rather than relying on passive touch or hard impact.
-    reason: He states that errors come from not enough friction and that the solution is to master brushing the ball.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: VYMqgnrDAhk
-      start_ms: 416666
-      end_ms: 438866
-      url: https://www.youtube.com/watch?v=VYMqgnrDAhk&t=416s
-      segment_ids:
-        - VYMqgnrDAhk:00086
-        - VYMqgnrDAhk:00090
-  - id: hRHJawAZzNc-concept-generating-spin-at-contact-reviewed
-    evidence_type: definition
-    excerpt: Creating spin through high-quality friction at the exact contact moment, so the ball feels gripped rather than slipping off the racket.
-    reason: The speaker repeatedly frames spin generation as a friction problem at contact and describes the desired sensation as gripping the ball instead of letting it slip.
-    confidence: 0.89
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: hRHJawAZzNc
-      start_ms: 476200
-      end_ms: 486466
-      url: https://www.youtube.com/watch?v=hRHJawAZzNc&t=476s
-      segment_ids:
-        - hRHJawAZzNc:00094
-        - hRHJawAZzNc:00095
-  - id: cSDOaQqEtTQ-concept-generating-spin-at-contact-reviewed
-    evidence_type: explanation
-    excerpt: Spin is created by firm, well-timed contact that produces friction; gripping too late or too softly prevents the ball from lifting spin.
-    reason: The speaker explicitly ties contact location and friction to spin generation and says the flick is a friction-based shot that fails when gripping happens too late.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: cSDOaQqEtTQ
-      start_ms: 694133
-      end_ms: 712900
-      url: https://www.youtube.com/watch?v=cSDOaQqEtTQ&t=694s
-      segment_ids:
-        - cSDOaQqEtTQ:00147
-        - cSDOaQqEtTQ:00148
-        - cSDOaQqEtTQ:00149
-  - id: yGWrxxrcvN4-concept-loose-grip-backhand-friction-reviewed
-    evidence_type: explanation
-    excerpt: Spin is produced by short, concentrated brushing contact driven by the fingers and wrist, not by a large wrist rotation.
-    reason: The speaker defines friction as a short sequential movement from fingers to wrist to paddle face, with concentrated brushing contact and no need for active wrist rotation.
-    confidence: 0.92
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: yGWrxxrcvN4
-      start_ms: 525333
-      end_ms: 554933
-      url: https://www.youtube.com/watch?v=yGWrxxrcvN4&t=525s
-      segment_ids:
-        - yGWrxxrcvN4:00106
-        - yGWrxxrcvN4:00107
-        - yGWrxxrcvN4:00108
-        - yGWrxxrcvN4:00111
-  - id: Pym9pNWaowA-concept-loose-grip-backhand-friction-reviewed
-    evidence_type: definition
-    excerpt: Using a relaxed, loose grip to let the racket brush the ball and create spin at contact.
-    reason: The speaker says the hand and wrist must not be stiff, recommends about 30% grip pressure, and describes the brushing feeling as the way to create friction.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: Pym9pNWaowA
-      start_ms: 211000
-      end_ms: 229166
-      url: https://www.youtube.com/watch?v=Pym9pNWaowA&t=211s
-      segment_ids:
-        - Pym9pNWaowA:00035
-        - Pym9pNWaowA:00036
-  - id: 6K2G7nKr6nU-concept-loose-grip-backhand-friction-reviewed
-    evidence_type: definition
-    excerpt: Creating spin and control at contact through friction rather than relying on a large, forceful motion.
-    reason: The speaker states that enough friction lets you make the loop and that friction creates the arc.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 6K2G7nKr6nU
-      start_ms: 618200
-      end_ms: 637800
-      url: https://www.youtube.com/watch?v=6K2G7nKr6nU&t=618s
-      segment_ids:
-        - 6K2G7nKr6nU:00101
-        - 6K2G7nKr6nU:00102
-        - 6K2G7nKr6nU:00103
-        - 6K2G7nKr6nU:00104
-  - id: urfOsNEfkYg-urfOsNEfkYg-concept-5-reviewed
-    evidence_type: explanation
-    excerpt: Generating spin with a short, finger-driven brushing action at contact rather than a large wrist motion.
-    reason: The speaker states that fingers drive the wrist and brushing action, with a small, crisp burst of friction at contact.
-    confidence: 0.91
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: urfOsNEfkYg
-      start_ms: 360440
-      end_ms: 386080
-      url: https://www.youtube.com/watch?v=urfOsNEfkYg&t=360s
-      segment_ids:
-        - urfOsNEfkYg:00153
-        - urfOsNEfkYg:00154
-        - urfOsNEfkYg:00155
-        - urfOsNEfkYg:00156
-        - urfOsNEfkYg:00157
-        - urfOsNEfkYg:00158
-        - urfOsNEfkYg:00159
-        - urfOsNEfkYg:00160
-        - urfOsNEfkYg:00161
-        - urfOsNEfkYg:00162
-  - id: 7jWqEsHtN3Y-concept-loose-grip-backhand-friction-codex-reviewed
-    evidence_type: explanation
-    excerpt: Against heavy underspin, start lower than the ball and make 80–90% of the stroke a slow brushing motion for friction.
-    reason: This contiguous span directly explains using a predominantly brushing stroke to create friction against heavy underspin, while emphasizing controlled rather than fast motion.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 7jWqEsHtN3Y
-      start_ms: 520800
-      end_ms: 531866
-      url: https://www.youtube.com/watch?v=7jWqEsHtN3Y&t=520s
-      segment_ids:
-        - 7jWqEsHtN3Y:00111
-        - 7jWqEsHtN3Y:00112
-        - 7jWqEsHtN3Y:00113
-  - id: cSDOaQqEtTQ-concept-generating-spin-at-contact-codex-reviewed
-    evidence_type: explanation
-    excerpt: The gripping action generates friction during the flick, so it must happen at the instant the racket brushes the ball; gripping at the end is too late and sends the ball into the net.
-    reason: These contiguous segments form a single 26.7-second explanation that directly supports friction-based spin generation and the need to grip at contact rather than afterward. The supplied concept is the same durable topic as the existing concept, so the existing ID is retained.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: cSDOaQqEtTQ
-      start_ms: 803566
-      end_ms: 830266
-      url: https://www.youtube.com/watch?v=cSDOaQqEtTQ&t=803s
-      segment_ids:
-        - cSDOaQqEtTQ:00166
-        - cSDOaQqEtTQ:00167
-        - cSDOaQqEtTQ:00168
-        - cSDOaQqEtTQ:00169
-        - cSDOaQqEtTQ:00170
-  - id: eIKLgVChAdA-concept-loose-grip-backhand-friction-codex-reviewed
-    evidence_type: explanation
-    excerpt: 'The racket face’s rotation and racket-head acceleration at contact determine spin: faster acceleration creates more spin, while fast arm motion without rotation or slow rotation produces little spin.'
-    reason: This contiguous 27.8-second span directly explains how racket-face rotation and racket-head acceleration at contact determine spin, matching the supplied existing concept.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: eIKLgVChAdA
-      start_ms: 188066
-      end_ms: 215866
-      url: https://www.youtube.com/watch?v=eIKLgVChAdA&t=188s
-      segment_ids:
-        - eIKLgVChAdA:00040
-        - eIKLgVChAdA:00041
-        - eIKLgVChAdA:00042
-        - eIKLgVChAdA:00043
-        - eIKLgVChAdA:00044
-        - eIKLgVChAdA:00045
-  - id: EjtP5uCaULU-concept-loose-grip-backhand-friction-codex-reviewed
-    evidence_type: explanation
-    excerpt: If your arm is tense at contact, your fingers can't do their job to create friction. As I swing forward and meet the ball, my arm must stay relaxed. This is the moment to give your fingers time. The fingers make contact and grip the ball, then the arm accelerates.
-    reason: These contiguous segments directly explain that arm relaxation allows the fingers to create friction first, followed by arm acceleration, matching the existing concept.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: EjtP5uCaULU
-      start_ms: 625566
-      end_ms: 646733
-      url: https://www.youtube.com/watch?v=EjtP5uCaULU&t=625s
-      segment_ids:
-        - EjtP5uCaULU:00147
-        - EjtP5uCaULU:00148
-        - EjtP5uCaULU:00149
-        - EjtP5uCaULU:00150
-  - id: lO0H9Cs6JEo-concept-loose-grip-backhand-friction-codex-reviewed
-    evidence_type: explanation
-    excerpt: Acceleration means faster brushing with solid contact, not just moving faster. Racket-head rotation makes it easier to create friction, while speed without proper brushing contact will not work.
-    reason: This contiguous 28.8-second span directly explains faster brushing, solid contact, racket-head rotation, and friction; it supports the existing durable concept without relying on omitted transcript locations.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: lO0H9Cs6JEo
-      start_ms: 637960
-      end_ms: 666760
-      url: https://www.youtube.com/watch?v=lO0H9Cs6JEo&t=637s
-      segment_ids:
-        - lO0H9Cs6JEo:00206
-        - lO0H9Cs6JEo:00207
-        - lO0H9Cs6JEo:00208
-        - lO0H9Cs6JEo:00209
-        - lO0H9Cs6JEo:00210
-        - lO0H9Cs6JEo:00211
-        - lO0H9Cs6JEo:00212
-        - lO0H9Cs6JEo:00213
-        - lO0H9Cs6JEo:00214
-        - lO0H9Cs6JEo:00215
-        - lO0H9Cs6JEo:00216
-  - id: lRAoXPoYOBk-concept-loose-grip-backhand-friction-codex-reviewed
-    evidence_type: explanation
-    excerpt: When the fingers and wrist strike the ball during the spinning process, they must create friction.
-    reason: This contiguous span directly explains that finger and wrist action creates friction during contact to generate spin.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: lRAoXPoYOBk
-      start_ms: 57600
-      end_ms: 67433
-      url: https://www.youtube.com/watch?v=lRAoXPoYOBk&t=57s
-      segment_ids:
-        - lRAoXPoYOBk:00019
-        - lRAoXPoYOBk:00020
-        - lRAoXPoYOBk:00021
-        - lRAoXPoYOBk:00022
+- id: loose-web-grip-1
+  evidence_type: explanation
+  excerpt: The speaker describes the thumb–index space as practically open before whipping through, then contrasts this with a tight flick that cannot generate friction.
+  reason: The passage contrasts loose and tight holding in the stated flick example.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: BToLYdKLIMM
+    start_ms: 275440
+    end_ms: 290800
+    url: https://www.youtube.com/watch?v=BToLYdKLIMM&t=275s
+    segment_ids:
+    - BToLYdKLIMM:00098
+    - BToLYdKLIMM:00099
+    - BToLYdKLIMM:00100
+    - BToLYdKLIMM:00101
+    - BToLYdKLIMM:00102
+- id: tight-grip-less-friction-2
+  evidence_type: explanation
+  excerpt: The speaker says tighter holding allows less friction and looser holding allows more friction.
+  reason: This is the speaker’s stated grip-tension comparison.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: BToLYdKLIMM
+    start_ms: 307199
+    end_ms: 318360
+    url: https://www.youtube.com/watch?v=BToLYdKLIMM&t=307s
+    segment_ids:
+    - BToLYdKLIMM:00112
+    - BToLYdKLIMM:00113
+    - BToLYdKLIMM:00114
+    - BToLYdKLIMM:00115
+- id: rotational-spin-3
+  evidence_type: explanation
+  excerpt: The speaker personally adds a slight left-side rotational twist in the backhand rather than moving purely front–back, saying it adds spin and power.
+  reason: The rotation and its claimed effect are presented as a personal backhand cue.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: approved
+  source: {video_id: 3kC8KEl3iow, start_ms: 147720, end_ms: 156760, url: "https://www.youtube.com/watch?v=3kC8KEl3iow&t=147s", segment_ids: ["3kC8KEl3iow:00055", "3kC8KEl3iow:00056", "3kC8KEl3iow:00057", "3kC8KEl3iow:00058"]}
+- id: racket-head-spin-4
+  evidence_type: explanation
+  excerpt: 'The speaker calls the racket head the spin generator: faster head rotation gives a spinnier ball and slower rotation a deader ball.'
+  reason: The explanation emphasizes racket-head rotational speed.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source: {video_id: csJgHR7Daog, start_ms: 261799, end_ms: 275240, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=261s", segment_ids: ["csJgHR7Daog:00122", "csJgHR7Daog:00123", "csJgHR7Daog:00124", "csJgHR7Daog:00125", "csJgHR7Daog:00126"]}
+- id: under-ball-backspin-5
+  evidence_type: example
+  excerpt: In a heavy-backspin serving discussion, the speaker calls for contact under the ball. Bottom contact is described as maximum spin, middle-lower as strong spin, and middle or middle-upper as minimum spin.
+  reason: These contact-region comparisons belong to the stated backspin-serve example.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: csJgHR7Daog
+    start_ms: 523840
+    end_ms: 553120
+    url: https://www.youtube.com/watch?v=csJgHR7Daog&t=523s
+    segment_ids:
+    - csJgHR7Daog:00226
+    - csJgHR7Daog:00227
+    - csJgHR7Daog:00228
+    - csJgHR7Daog:00229
+    - csJgHR7Daog:00230
+    - csJgHR7Daog:00231
+    - csJgHR7Daog:00232
+    - csJgHR7Daog:00233
+    - csJgHR7Daog:00234
+    - csJgHR7Daog:00235
+- id: global-friction-first-6
+  evidence_type: explanation
+  excerpt: When looping, use the fingers to create friction first, then tighten the grip to “80%” and execute the follow-through.
+  reason: The speaker gives an ordered looping cue rather than a single all-stroke grip rule.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source: {video_id: YUEaL2HiPIE, start_ms: 0, end_ms: 12900, url: "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=0s", segment_ids: ["YUEaL2HiPIE:00000", "YUEaL2HiPIE:00001"]}
+- id: global-loop-friction-7
+  evidence_type: explanation
+  excerpt: The looping instruction again places finger-created friction before tightening to “80%” and following through.
+  reason: This selected passage repeats the looping sequence.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source: {video_id: YUEaL2HiPIE, start_ms: 777966, end_ms: 790566, url: "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=777s", segment_ids: ["YUEaL2HiPIE:00160", "YUEaL2HiPIE:00161"]}
+- id: xWrDKGnqmBs-cand-loose-grip-friction-match-1
+  evidence_type: definition
+  excerpt: The speaker calls friction the key and says that exaggerating the motion can increase spin.
+  reason: The passage links the stated motion cue with spin.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: xWrDKGnqmBs
+    start_ms: 92633
+    end_ms: 98633
+    url: https://www.youtube.com/watch?v=xWrDKGnqmBs&t=92s
+    segment_ids:
+    - xWrDKGnqmBs:00029
+    - xWrDKGnqmBs:00030
+    - xWrDKGnqmBs:00031
+- id: xWrDKGnqmBs-cand-loose-grip-friction-match-2
+  evidence_type: definition
+  excerpt: The speaker calls friction crucial and says the racket head takes the lead with friction.
+  reason: The selected wording emphasizes friction and a leading racket head.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: xWrDKGnqmBs
+    start_ms: 293233
+    end_ms: 309000
+    url: https://www.youtube.com/watch?v=xWrDKGnqmBs&t=293s
+    segment_ids:
+    - xWrDKGnqmBs:00086
+    - xWrDKGnqmBs:00087
+    - xWrDKGnqmBs:00088
+- id: xWrDKGnqmBs-cand-loose-grip-friction-match-3
+  evidence_type: drill
+  excerpt: Brush first, create the trajectory, then gradually add speed.
+  reason: The practice cue orders brushing and trajectory before added speed.
+  confidence: 0.91
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: xWrDKGnqmBs
+    start_ms: 465433
+    end_ms: 484000
+    url: https://www.youtube.com/watch?v=xWrDKGnqmBs&t=465s
+    segment_ids:
+    - xWrDKGnqmBs:00133
+    - xWrDKGnqmBs:00134
+    - xWrDKGnqmBs:00135
+    - xWrDKGnqmBs:00136
+    - xWrDKGnqmBs:00137
+- id: xWrDKGnqmBs-cand-backhand-finger-wrist-friction-1
+  evidence_type: explanation
+  excerpt: The speaker says the racket head leads with friction, asks why wrist rotation and friction are not focused, and answers that the upper arm or forearm is being used. Wrist and fingers are then named.
+  reason: The passage contrasts arm use with the named wrist-and-finger cues.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: xWrDKGnqmBs
+    start_ms: 305933
+    end_ms: 331633
+    url: https://www.youtube.com/watch?v=xWrDKGnqmBs&t=305s
+    segment_ids:
+    - xWrDKGnqmBs:00088
+    - xWrDKGnqmBs:00089
+    - xWrDKGnqmBs:00090
+    - xWrDKGnqmBs:00091
+    - xWrDKGnqmBs:00092
+    - xWrDKGnqmBs:00093
+- id: xWrDKGnqmBs-cand-backhand-finger-wrist-friction-2
+  evidence_type: explanation
+  excerpt: 'The speaker says spin is not created by the upper arm or forearm: the forearm drives forward without generating friction, while the wrist drives the racket head.'
+  reason: These are the stated arm and wrist roles in this passage.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: xWrDKGnqmBs
+    start_ms: 391033
+    end_ms: 411466
+    url: https://www.youtube.com/watch?v=xWrDKGnqmBs&t=391s
+    segment_ids:
+    - xWrDKGnqmBs:00116
+    - xWrDKGnqmBs:00117
+    - xWrDKGnqmBs:00118
+    - xWrDKGnqmBs:00119
+    - xWrDKGnqmBs:00120
+- id: xWrDKGnqmBs-cand-backhand-finger-wrist-friction-3
+  evidence_type: explanation
+  excerpt: For the backhand rip, the speaker adds a little forearm and describes focused friction. Because backhand rallies are faster and contact comes earlier, minimal movements are recommended, with fingers and wrist called most effective.
+  reason: The small-motion cue is tied to the stated faster-rally and earlier-contact conditions.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: xWrDKGnqmBs
+    start_ms: 432366
+    end_ms: 458966
+    url: https://www.youtube.com/watch?v=xWrDKGnqmBs&t=432s
+    segment_ids:
+    - xWrDKGnqmBs:00124
+    - xWrDKGnqmBs:00125
+    - xWrDKGnqmBs:00126
+    - xWrDKGnqmBs:00127
+    - xWrDKGnqmBs:00128
+    - xWrDKGnqmBs:00129
+    - xWrDKGnqmBs:00130
+- id: xWrDKGnqmBs-cand-backhand-finger-wrist-friction-4
+  evidence_type: explanation
+  excerpt: The speaker introduces a simplified backhand flick and says, “Make it longer.” The captions do not identify what should be longer.
+  reason: The spoken cue is retained with its missing referent stated explicitly; no movement is visually confirmed.
+  confidence: 0.8
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: xWrDKGnqmBs
+    start_ms: 332333
+    end_ms: 342166
+    url: https://www.youtube.com/watch?v=xWrDKGnqmBs&t=332s
+    segment_ids:
+    - xWrDKGnqmBs:00094
+    - xWrDKGnqmBs:00095
+    - xWrDKGnqmBs:00096
+    - xWrDKGnqmBs:00097
+- id: xWrDKGnqmBs-cand-backhand-finger-wrist-friction-5
+  evidence_type: explanation
+  excerpt: The wrist drives the racket head; the speaker then says to relax and rotate, followed by friction.
+  reason: These are spoken racket-head and rotation cues, without visual confirmation.
+  confidence: 0.8
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: xWrDKGnqmBs
+    start_ms: 410166
+    end_ms: 429800
+    url: https://www.youtube.com/watch?v=xWrDKGnqmBs&t=410s
+    segment_ids:
+    - xWrDKGnqmBs:00120
+    - xWrDKGnqmBs:00121
+    - xWrDKGnqmBs:00122
+- id: q9c2_hCwlhs-cand-6-1
+  evidence_type: explanation
+  excerpt: The speaker describes fan-shaped friction as smooth and curving like flowing water, warns that the hand is too hard, and uses barely-touching, soft-water imagery.
+  reason: The passage uses soft, flowing imagery for the desired feel.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: q9c2_hCwlhs
+    start_ms: 38960
+    end_ms: 55960
+    url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=38s
+    segment_ids:
+    - q9c2_hCwlhs:00014
+    - q9c2_hCwlhs:00015
+    - q9c2_hCwlhs:00016
+    - q9c2_hCwlhs:00017
+    - q9c2_hCwlhs:00018
+    - q9c2_hCwlhs:00019
+    - q9c2_hCwlhs:00020
+- id: q9c2_hCwlhs-cand-6-2
+  evidence_type: explanation
+  excerpt: The speaker says the wrist moves because the fingers fire and connects this with the crisp contact sound.
+  reason: This passage gives the speaker’s finger-to-wrist and contact-sound explanation.
+  confidence: 0.84
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: q9c2_hCwlhs
+    start_ms: 534040
+    end_ms: 542280
+    url: https://www.youtube.com/watch?v=q9c2_hCwlhs&t=534s
+    segment_ids:
+    - q9c2_hCwlhs:00206
+    - q9c2_hCwlhs:00207
+    - q9c2_hCwlhs:00208
+- id: D9ZAPb_65Hk-concept-loose-grip-backhand-friction-reviewed
+  evidence_type: explanation
+  excerpt: Creating spin by a quick racket-head snap and brushing contact rather than sweeping the whole arm.
+  reason: The speaker says spin comes from one snap and not from using the whole arm for up-and-down friction.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: D9ZAPb_65Hk
+    start_ms: 576320
+    end_ms: 590160
+    url: https://www.youtube.com/watch?v=D9ZAPb_65Hk&t=576s
+    segment_ids:
+    - D9ZAPb_65Hk:00197
+    - D9ZAPb_65Hk:00198
+    - D9ZAPb_65Hk:00199
+    - D9ZAPb_65Hk:00200
+    - D9ZAPb_65Hk:00201
+- id: lO0H9Cs6JEo-concept-loose-grip-backhand-friction-reviewed
+  evidence_type: definition
+  excerpt: Producing spin by brushing the ball with friction and proper racket-head rotation rather than colliding with the ball.
+  reason: The speaker emphasizes compact motion with friction, warns against colliding with the ball, and defines acceleration as faster brushing with solid contact.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: lO0H9Cs6JEo
+    start_ms: 637960
+    end_ms: 666760
+    url: https://www.youtube.com/watch?v=lO0H9Cs6JEo&t=637s
+    segment_ids:
+    - lO0H9Cs6JEo:00206
+    - lO0H9Cs6JEo:00209
+    - lO0H9Cs6JEo:00212
+    - lO0H9Cs6JEo:00216
+- id: ONXmZHozLTA-concept-loose-grip-backhand-friction-reviewed
+  evidence_type: explanation
+  excerpt: Create spin by keeping the hand relaxed, using finger-driven racket-head acceleration, and making effective brushing contact at the ball.
+  reason: The speaker repeatedly states that spin comes from finger activation, not gripping hard or using the wrist, and that soft touch plus quick acceleration creates spin.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: ONXmZHozLTA
+    start_ms: 146000
+    end_ms: 175240
+    url: https://www.youtube.com/watch?v=ONXmZHozLTA&t=146s
+    segment_ids:
+    - ONXmZHozLTA:00051
+    - ONXmZHozLTA:00052
+    - ONXmZHozLTA:00053
+    - ONXmZHozLTA:00054
+    - ONXmZHozLTA:00055
+    - ONXmZHozLTA:00056
+    - ONXmZHozLTA:00057
+    - ONXmZHozLTA:00058
+    - ONXmZHozLTA:00059
+    - ONXmZHozLTA:00060
+    - ONXmZHozLTA:00061
+    - ONXmZHozLTA:00062
+- id: 3SvgpoJSW3o-concept-loose-grip-backhand-friction-reviewed
+  evidence_type: explanation
+  excerpt: Create spin by brushing the ball with accelerating racket contact rather than merely driving through it.
+  reason: Describes acceleration at contact, brushing action, and explosive contact as indicators of spin production.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 3SvgpoJSW3o
+    start_ms: 471280
+    end_ms: 498240
+    url: https://www.youtube.com/watch?v=3SvgpoJSW3o&t=471s
+    segment_ids:
+    - 3SvgpoJSW3o:00164
+    - 3SvgpoJSW3o:00166
+    - 3SvgpoJSW3o:00172
+    - 3SvgpoJSW3o:00176
+- id: hp9OZTBD5JE-concept-loose-grip-backhand-friction-reviewed
+  evidence_type: explanation
+  excerpt: Creating spin and quality by brushing the ball with controlled friction before adding force with the arm.
+  reason: The speaker says to create friction on the ball, brush first, then accelerate, and explicitly states that enough friction must come before the arm applies force.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: hp9OZTBD5JE
+    start_ms: 310120
+    end_ms: 330280
+    url: https://www.youtube.com/watch?v=hp9OZTBD5JE&t=310s
+    segment_ids:
+    - hp9OZTBD5JE:00116
+    - hp9OZTBD5JE:00119
+    - hp9OZTBD5JE:00120
+    - hp9OZTBD5JE:00122
+    - hp9OZTBD5JE:00123
+- id: SE3btn_1X1s-concept-loose-grip-backhand-friction-reviewed
+  evidence_type: definition
+  excerpt: Create spin by accelerating the racket through brushing contact rather than by hitting the ball away with force.
+  reason: The speaker defines brushing as acceleration without adding force, says the racket should rotate, and describes contact as carrying the ball to generate friction.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: SE3btn_1X1s
+    start_ms: 266760
+    end_ms: 286360
+    url: https://www.youtube.com/watch?v=SE3btn_1X1s&t=266s
+    segment_ids:
+    - SE3btn_1X1s:00110
+    - SE3btn_1X1s:00111
+    - SE3btn_1X1s:00112
+    - SE3btn_1X1s:00113
+    - SE3btn_1X1s:00114
+    - SE3btn_1X1s:00116
+    - SE3btn_1X1s:00117
+- id: kv80YX__eJE-concept-loose-grip-backhand-friction-reviewed
+  evidence_type: explanation
+  excerpt: Creating spin by brushing the ball with controlled racket-head acceleration and grip on the ball.
+  reason: The speaker explains that brushing the upper part of the ball is how friction and grip are created for a rip.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: kv80YX__eJE
+    start_ms: 254233
+    end_ms: 277433
+    url: https://www.youtube.com/watch?v=kv80YX__eJE&t=254s
+    segment_ids:
+    - kv80YX__eJE:00056
+    - kv80YX__eJE:00057
+    - kv80YX__eJE:00059
+    - kv80YX__eJE:00060
+- id: eIKLgVChAdA-concept-loose-grip-backhand-friction-reviewed
+  evidence_type: explanation
+  excerpt: Spin comes from wrist, finger, and racket-head acceleration at the instant of contact rather than from slow arm motion alone.
+  reason: The speaker ties spin amount to wrist/finger action and racket-head acceleration at contact, and says finger use adds hidden power and touch.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: eIKLgVChAdA
+    start_ms: 184100
+    end_ms: 206500
+    url: https://www.youtube.com/watch?v=eIKLgVChAdA&t=184s
+    segment_ids:
+    - eIKLgVChAdA:00038
+    - eIKLgVChAdA:00040
+    - eIKLgVChAdA:00041
+    - eIKLgVChAdA:00043
+- id: eIKLgVChAdA-concept-loose-grip-backhand-friction-reviewed-c717ff4f
+  evidence_type: explanation
+  excerpt: Spin comes from wrist, finger, and racket-head acceleration at the instant of contact rather than from slow arm motion alone.
+  reason: The speaker ties spin amount to wrist/finger action and racket-head acceleration at contact, and says finger use adds hidden power and touch.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: eIKLgVChAdA
+    start_ms: 184100
+    end_ms: 206500
+    url: https://www.youtube.com/watch?v=eIKLgVChAdA&t=184s
+    segment_ids:
+    - eIKLgVChAdA:00038
+    - eIKLgVChAdA:00040
+    - eIKLgVChAdA:00041
+    - eIKLgVChAdA:00043
+- id: 7jWqEsHtN3Y-concept-loose-grip-backhand-friction-reviewed
+  evidence_type: explanation
+  excerpt: Creating spin by brushing the ball with enough friction and controlled acceleration.
+  reason: The speaker says slowing down lets you grip the ball with the rubber and mentions racket-head acceleration as an identifier of heavy underspin.
+  confidence: 0.86
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 7jWqEsHtN3Y
+    start_ms: 425866
+    end_ms: 430666
+    url: https://www.youtube.com/watch?v=7jWqEsHtN3Y&t=425s
+    segment_ids:
+    - 7jWqEsHtN3Y:00093
+- id: Kg4hLYnEbAs-concept-backhand-loop-racket-head-acceleration-reviewed
+  evidence_type: explanation
+  excerpt: Generating spin and arc in the backhand loop by accelerating the racket head through and after contact.
+  reason: The speaker says racket-head acceleration is the fastest way, that the faster the racket head rotates the more spin and arc you get, and that rotation continues after contact.
+  confidence: 0.86
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Kg4hLYnEbAs
+    start_ms: 557280
+    end_ms: 585800
+    url: https://www.youtube.com/watch?v=Kg4hLYnEbAs&t=557s
+    segment_ids:
+    - Kg4hLYnEbAs:00166
+    - Kg4hLYnEbAs:00167
+    - Kg4hLYnEbAs:00168
+    - Kg4hLYnEbAs:00169
+    - Kg4hLYnEbAs:00170
+    - Kg4hLYnEbAs:00171
+    - Kg4hLYnEbAs:00172
+    - Kg4hLYnEbAs:00174
+    - Kg4hLYnEbAs:00175
+- id: UgroLfi1YGY-concept-loose-grip-backhand-friction-reviewed
+  evidence_type: explanation
+  excerpt: Creating spin by brushing the ball with a fast, whip-like motion rather than a solid hitting contact.
+  reason: Explicitly distinguishes solid hitting force from whip-like brushing power.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: UgroLfi1YGY
+    start_ms: 668200
+    end_ms: 687520
+    url: https://www.youtube.com/watch?v=UgroLfi1YGY&t=668s
+    segment_ids:
+    - UgroLfi1YGY:00239
+    - UgroLfi1YGY:00240
+    - UgroLfi1YGY:00241
+    - UgroLfi1YGY:00242
+    - UgroLfi1YGY:00243
+    - UgroLfi1YGY:00244
+- id: TnKP4aH3ft8-concept-loose-grip-backhand-friction-reviewed
+  evidence_type: explanation
+  excerpt: Spin is created by localized finger action and brushing friction at contact rather than by a fully tense grip or large arm movement.
+  reason: The speaker says real brushing is concentrated at the racket tip, finger force generates friction, and gripping too early weakens spin.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: TnKP4aH3ft8
+    start_ms: 420880
+    end_ms: 442240
+    url: https://www.youtube.com/watch?v=TnKP4aH3ft8&t=420s
+    segment_ids:
+    - TnKP4aH3ft8:00160
+    - TnKP4aH3ft8:00161
+    - TnKP4aH3ft8:00164
+    - TnKP4aH3ft8:00165
+    - TnKP4aH3ft8:00166
+    - TnKP4aH3ft8:00167
+- id: DaHEb394UtA-concept-loose-grip-backhand-friction-reviewed
+  evidence_type: definition
+  excerpt: Generating spin by concentrating force at contact through finger-driven acceleration and brushing rather than actively swinging the wrist.
+  reason: The speaker states that spin is generated by the fingers, that force is concentrated at the fingers, and that the brushing action should create an arc rather than be driven by the wrist.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: DaHEb394UtA
+    start_ms: 35200
+    end_ms: 51480
+    url: https://www.youtube.com/watch?v=DaHEb394UtA&t=35s
+    segment_ids:
+    - DaHEb394UtA:00011
+    - DaHEb394UtA:00012
+    - DaHEb394UtA:00013
+    - DaHEb394UtA:00014
+    - DaHEb394UtA:00015
+    - DaHEb394UtA:00016
+- id: uRu7I3Cvojk-new-friction-dominant-flick-contact-reviewed
+  evidence_type: definition
+  excerpt: A flick contact style that depends on brushing friction rather than pure forward drive, especially in the banana flick.
+  reason: The speaker says the banana flick relies mainly on accelerated brushing and requires high friction.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: uRu7I3Cvojk
+    start_ms: 47133
+    end_ms: 69266
+    url: https://www.youtube.com/watch?v=uRu7I3Cvojk&t=47s
+    segment_ids:
+    - uRu7I3Cvojk:00015
+    - uRu7I3Cvojk:00017
+    - uRu7I3Cvojk:00019
+    - uRu7I3Cvojk:00020
+- id: z6TpyCclpJg-concept-loose-grip-backhand-friction-reviewed
+  evidence_type: explanation
+  excerpt: Create spin by staying relaxed until contact, then accelerating and brushing so the racket can grip the ball.
+  reason: The speaker says pushing the elbow in cannot generate friction and that proper brushing and grip on the ball come from accelerating at contact.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: z6TpyCclpJg
+    start_ms: 76566
+    end_ms: 91300
+    url: https://www.youtube.com/watch?v=z6TpyCclpJg&t=76s
+    segment_ids:
+    - z6TpyCclpJg:00025
+    - z6TpyCclpJg:00026
+    - z6TpyCclpJg:00027
+    - z6TpyCclpJg:00028
+- id: _Z6BYzV60NI-concept-loose-grip-backhand-friction-reviewed
+  evidence_type: explanation
+  excerpt: Using brushing and friction rather than pure impact to manage spinny serves and make the ball land safely.
+  reason: The speaker explicitly prioritizes friction over impact and says to grab and brush the ball properly.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: _Z6BYzV60NI
+    start_ms: 142766
+    end_ms: 166433
+    url: https://www.youtube.com/watch?v=_Z6BYzV60NI&t=142s
+    segment_ids:
+    - _Z6BYzV60NI:00048
+    - _Z6BYzV60NI:00050
+    - _Z6BYzV60NI:00051
+    - _Z6BYzV60NI:00052
+- id: dbT0DYG2Xac-concept-loose-grip-backhand-friction-reviewed
+  evidence_type: definition
+  excerpt: Producing spin by brushing actively and quickly at contact rather than merely touching the ball, with emphasis on wrist and fingers over arm force.
+  reason: The speaker contrasts merely touching the ball with brushing with force, says spin generation and spin handling both require brushing with force, and emphasizes wrist and fingers at contact.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: dbT0DYG2Xac
+    start_ms: 345200
+    end_ms: 369033
+    url: https://www.youtube.com/watch?v=dbT0DYG2Xac&t=345s
+    segment_ids:
+    - dbT0DYG2Xac:00107
+    - dbT0DYG2Xac:00110
+    - dbT0DYG2Xac:00111
+    - dbT0DYG2Xac:00112
+    - dbT0DYG2Xac:00113
+- id: 1yBxtuFfISg-concept-loose-grip-backhand-friction-reviewed
+  evidence_type: explanation
+  excerpt: Creating spin and lift by increasing brushing speed and using friction at the moment of contact rather than relying on pure hitting power.
+  reason: The speaker explains that heavier spin requires faster brushing and says to apply force through friction.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 1yBxtuFfISg
+    start_ms: 221400
+    end_ms: 238666
+    url: https://www.youtube.com/watch?v=1yBxtuFfISg&t=221s
+    segment_ids:
+    - 1yBxtuFfISg:00080
+    - 1yBxtuFfISg:00086
+- id: 25Ohh2RJcWk-concept-loose-grip-backhand-friction-reviewed
+  evidence_type: explanation
+  excerpt: Spin is created by a brief brushing contact with racket-head acceleration and enough looseness to let the racket head move freely.
+  reason: The transcript links free racket-head rotation and brief brushing contact to increased friction, spin, and speed.
+  confidence: 0.87
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 25Ohh2RJcWk
+    start_ms: 115100
+    end_ms: 128266
+    url: https://www.youtube.com/watch?v=25Ohh2RJcWk&t=115s
+    segment_ids:
+    - 25Ohh2RJcWk:00025
+    - 25Ohh2RJcWk:00026
+    - 25Ohh2RJcWk:00028
+    - 25Ohh2RJcWk:00029
+- id: k7-gEsWTYFg-concept-loose-grip-backhand-friction-reviewed
+  evidence_type: explanation
+  excerpt: Creating spin by staying relaxed and using racket-head motion and brushing friction at contact rather than forcing the ball flat.
+  reason: The speaker says the wrist should remain relaxed, the racket head should create friction, and acceleration should happen at contact then stop immediately after, with a curved brushing path rather than pushing straight forward.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: k7-gEsWTYFg
+    start_ms: 89433
+    end_ms: 118200
+    url: https://www.youtube.com/watch?v=k7-gEsWTYFg&t=89s
+    segment_ids:
+    - k7-gEsWTYFg:00029
+    - k7-gEsWTYFg:00030
+    - k7-gEsWTYFg:00031
+    - k7-gEsWTYFg:00032
+    - k7-gEsWTYFg:00035
+    - k7-gEsWTYFg:00036
+    - k7-gEsWTYFg:00037
+    - k7-gEsWTYFg:00040
+- id: lRAoXPoYOBk-concept-loose-grip-backhand-friction-reviewed
+  evidence_type: explanation
+  excerpt: Generating spin by allowing the hand, fingers, and racket to accelerate through the ball with enough friction at contact.
+  reason: The speaker says fingers and wrist create friction during the spin process and links contact to spin generation.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: lRAoXPoYOBk
+    start_ms: 57600
+    end_ms: 67433
+    url: https://www.youtube.com/watch?v=lRAoXPoYOBk&t=57s
+    segment_ids:
+    - lRAoXPoYOBk:00019
+    - lRAoXPoYOBk:00020
+    - lRAoXPoYOBk:00021
+    - lRAoXPoYOBk:00022
+- id: idAN8cPDZ7w-concept-generating-spin-at-contact-reviewed
+  evidence_type: definition
+  excerpt: Creating spin through friction and brushing at the moment of contact rather than through large, loose motions.
+  reason: The transcript repeatedly attributes spin to friction, brushing, and contact behavior, and says it is not just wrist friction.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: idAN8cPDZ7w
+    start_ms: 297833
+    end_ms: 316333
+    url: https://www.youtube.com/watch?v=idAN8cPDZ7w&t=297s
+    segment_ids:
+    - idAN8cPDZ7w:00047
+    - idAN8cPDZ7w:00048
+    - idAN8cPDZ7w:00051
+- id: tpY3SRVdBK8-concept-loose-grip-backhand-friction-reviewed
+  evidence_type: definition
+  excerpt: Creating spin through brushing friction and racket-head rotation at contact rather than a pure push.
+  reason: The speaker introduces friction and explains that tapping/rotating increases spin generation.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: tpY3SRVdBK8
+    start_ms: 296166
+    end_ms: 313400
+    url: https://www.youtube.com/watch?v=tpY3SRVdBK8&t=296s
+    segment_ids:
+    - tpY3SRVdBK8:00043
+    - tpY3SRVdBK8:00044
+- id: woTURG6ah3Y-concept-generating-spin-at-contact-reviewed
+  evidence_type: explanation
+  excerpt: Creating spin by making effective rubbing contact and using friction at the moment of contact rather than relying on a big swing.
+  reason: The speaker explains that fingers, wrists, racket-head acceleration, and friction create spin, while a large motion or lowering the forearm is not the key.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: woTURG6ah3Y
+    start_ms: 672160
+    end_ms: 690000
+    url: https://www.youtube.com/watch?v=woTURG6ah3Y&t=672s
+    segment_ids:
+    - woTURG6ah3Y:00098
+    - woTURG6ah3Y:00099
+- id: u2A5PNggIqg-concept-loose-grip-backhand-friction-reviewed
+  evidence_type: definition
+  excerpt: Using brushing contact and acceleration at the moment of contact to generate spin and control the ball.
+  reason: The speaker repeatedly states that friction is the key factor for lifting the ball and achieving good ball quality.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: u2A5PNggIqg
+    start_ms: 66466
+    end_ms: 84433
+    url: https://www.youtube.com/watch?v=u2A5PNggIqg&t=66s
+    segment_ids:
+    - u2A5PNggIqg:00000
+    - u2A5PNggIqg:00004
+- id: x8OSRSRukeI-concept-loose-grip-backhand-friction-reviewed
+  evidence_type: definition
+  excerpt: Create spin by making the racket face move quickly and brush the ball at contact, rather than muscling through with the arm.
+  reason: The speaker defines friction as racket-face rotation and concentrated speed at the moment of friction, not whole-stroke brute force.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: x8OSRSRukeI
+    start_ms: 311100
+    end_ms: 338766
+    url: https://www.youtube.com/watch?v=x8OSRSRukeI&t=311s
+    segment_ids:
+    - x8OSRSRukeI:00079
+    - x8OSRSRukeI:00080
+    - x8OSRSRukeI:00083
+- id: phTj82vlVqs-concept-generating-spin-at-contact-reviewed
+  evidence_type: explanation
+  excerpt: Creating spin through compact brushing, fast acceleration, and an abrupt stop at impact.
+  reason: 'The speaker gives three secrets for maximum friction: compact motion, fast acceleration, and a sharp stop, then says fingers generate friction and the motion should be whip-like.'
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: phTj82vlVqs
+    start_ms: 177066
+    end_ms: 204366
+    url: https://www.youtube.com/watch?v=phTj82vlVqs&t=177s
+    segment_ids:
+    - phTj82vlVqs:00042
+    - phTj82vlVqs:00043
+    - phTj82vlVqs:00044
+    - phTj82vlVqs:00046
+- id: EjtP5uCaULU-concept-loose-grip-backhand-friction-reviewed
+  evidence_type: explanation
+  excerpt: Using relaxed fingers and a controlled brushing contact at the instant of contact to create friction and spin before arm power takes over.
+  reason: The speaker repeatedly says the arm must stay relaxed so the fingers can grip the ball first, then the arm accelerates afterward.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: EjtP5uCaULU
+    start_ms: 616066
+    end_ms: 635033
+    url: https://www.youtube.com/watch?v=EjtP5uCaULU&t=616s
+    segment_ids:
+    - EjtP5uCaULU:00145
+    - EjtP5uCaULU:00148
+- id: VYMqgnrDAhk-candidate-5-reviewed
+  evidence_type: explanation
+  excerpt: Applying friction through brushing contact rather than relying on passive touch or hard impact.
+  reason: He states that errors come from not enough friction and that the solution is to master brushing the ball.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: VYMqgnrDAhk
+    start_ms: 416666
+    end_ms: 438866
+    url: https://www.youtube.com/watch?v=VYMqgnrDAhk&t=416s
+    segment_ids:
+    - VYMqgnrDAhk:00086
+    - VYMqgnrDAhk:00090
+- id: hRHJawAZzNc-concept-generating-spin-at-contact-reviewed
+  evidence_type: definition
+  excerpt: Creating spin through high-quality friction at the exact contact moment, so the ball feels gripped rather than slipping off the racket.
+  reason: The speaker repeatedly frames spin generation as a friction problem at contact and describes the desired sensation as gripping the ball instead of letting it slip.
+  confidence: 0.89
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: hRHJawAZzNc
+    start_ms: 476200
+    end_ms: 486466
+    url: https://www.youtube.com/watch?v=hRHJawAZzNc&t=476s
+    segment_ids:
+    - hRHJawAZzNc:00094
+    - hRHJawAZzNc:00095
+- id: cSDOaQqEtTQ-concept-generating-spin-at-contact-reviewed
+  evidence_type: explanation
+  excerpt: Spin is created by firm, well-timed contact that produces friction; gripping too late or too softly prevents the ball from lifting spin.
+  reason: The speaker explicitly ties contact location and friction to spin generation and says the flick is a friction-based shot that fails when gripping happens too late.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: cSDOaQqEtTQ
+    start_ms: 694133
+    end_ms: 712900
+    url: https://www.youtube.com/watch?v=cSDOaQqEtTQ&t=694s
+    segment_ids:
+    - cSDOaQqEtTQ:00147
+    - cSDOaQqEtTQ:00148
+    - cSDOaQqEtTQ:00149
+- id: yGWrxxrcvN4-concept-loose-grip-backhand-friction-reviewed
+  evidence_type: explanation
+  excerpt: Spin is produced by short, concentrated brushing contact driven by the fingers and wrist, not by a large wrist rotation.
+  reason: The speaker defines friction as a short sequential movement from fingers to wrist to paddle face, with concentrated brushing contact and no need for active wrist rotation.
+  confidence: 0.92
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: yGWrxxrcvN4
+    start_ms: 525333
+    end_ms: 554933
+    url: https://www.youtube.com/watch?v=yGWrxxrcvN4&t=525s
+    segment_ids:
+    - yGWrxxrcvN4:00106
+    - yGWrxxrcvN4:00107
+    - yGWrxxrcvN4:00108
+    - yGWrxxrcvN4:00111
+- id: Pym9pNWaowA-concept-loose-grip-backhand-friction-reviewed
+  evidence_type: definition
+  excerpt: Using a relaxed, loose grip to let the racket brush the ball and create spin at contact.
+  reason: The speaker says the hand and wrist must not be stiff, recommends about 30% grip pressure, and describes the brushing feeling as the way to create friction.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: Pym9pNWaowA
+    start_ms: 211000
+    end_ms: 229166
+    url: https://www.youtube.com/watch?v=Pym9pNWaowA&t=211s
+    segment_ids:
+    - Pym9pNWaowA:00035
+    - Pym9pNWaowA:00036
+- id: 6K2G7nKr6nU-concept-loose-grip-backhand-friction-reviewed
+  evidence_type: definition
+  excerpt: Creating spin and control at contact through friction rather than relying on a large, forceful motion.
+  reason: The speaker states that enough friction lets you make the loop and that friction creates the arc.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 6K2G7nKr6nU
+    start_ms: 618200
+    end_ms: 637800
+    url: https://www.youtube.com/watch?v=6K2G7nKr6nU&t=618s
+    segment_ids:
+    - 6K2G7nKr6nU:00101
+    - 6K2G7nKr6nU:00102
+    - 6K2G7nKr6nU:00103
+    - 6K2G7nKr6nU:00104
+- id: urfOsNEfkYg-urfOsNEfkYg-concept-5-reviewed
+  evidence_type: explanation
+  excerpt: Generating spin with a short, finger-driven brushing action at contact rather than a large wrist motion.
+  reason: The speaker states that fingers drive the wrist and brushing action, with a small, crisp burst of friction at contact.
+  confidence: 0.91
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: urfOsNEfkYg
+    start_ms: 360440
+    end_ms: 386080
+    url: https://www.youtube.com/watch?v=urfOsNEfkYg&t=360s
+    segment_ids:
+    - urfOsNEfkYg:00153
+    - urfOsNEfkYg:00154
+    - urfOsNEfkYg:00155
+    - urfOsNEfkYg:00156
+    - urfOsNEfkYg:00157
+    - urfOsNEfkYg:00158
+    - urfOsNEfkYg:00159
+    - urfOsNEfkYg:00160
+    - urfOsNEfkYg:00161
+    - urfOsNEfkYg:00162
+- id: 7jWqEsHtN3Y-concept-loose-grip-backhand-friction-codex-reviewed
+  evidence_type: explanation
+  excerpt: Against heavy underspin, start the arm lower than the ball and use “80–90%” of the stroke for brushing friction. The speaker emphasizes that the motion is slow.
+  reason: The predominantly brushing, slow-motion cue is specific to heavy underspin.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 7jWqEsHtN3Y
+    start_ms: 520800
+    end_ms: 531866
+    url: https://www.youtube.com/watch?v=7jWqEsHtN3Y&t=520s
+    segment_ids:
+    - 7jWqEsHtN3Y:00111
+    - 7jWqEsHtN3Y:00112
+    - 7jWqEsHtN3Y:00113
+- id: cSDOaQqEtTQ-concept-generating-spin-at-contact-codex-reviewed
+  evidence_type: explanation
+  excerpt: For the flick, the speaker calls gripping the essence of friction and says to grip firmly at the instant of brushing, rather than squeezing at the end of the swing; late gripping is said to send the ball into the net.
+  reason: The flick instruction places firm gripping at the instant of brushing.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: cSDOaQqEtTQ
+    start_ms: 803566
+    end_ms: 830266
+    url: https://www.youtube.com/watch?v=cSDOaQqEtTQ&t=803s
+    segment_ids:
+    - cSDOaQqEtTQ:00166
+    - cSDOaQqEtTQ:00167
+    - cSDOaQqEtTQ:00168
+    - cSDOaQqEtTQ:00169
+    - cSDOaQqEtTQ:00170
+- id: eIKLgVChAdA-concept-loose-grip-backhand-friction-codex-reviewed
+  evidence_type: explanation
+  excerpt: 'In serving, the speaker links racket-face rotation or snap and faster racket-head acceleration at contact with spin. Fast arm motion without face rotation is said to be likely half-spin or no-spin; slow face rotation also gives low spin.'
+  reason: The comparisons concern serve spin and preserve the speaker’s likelihood qualifier.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: eIKLgVChAdA
+    start_ms: 188066
+    end_ms: 215866
+    url: https://www.youtube.com/watch?v=eIKLgVChAdA&t=188s
+    segment_ids:
+    - eIKLgVChAdA:00040
+    - eIKLgVChAdA:00041
+    - eIKLgVChAdA:00042
+    - eIKLgVChAdA:00043
+    - eIKLgVChAdA:00044
+    - eIKLgVChAdA:00045
+- id: EjtP5uCaULU-concept-loose-grip-backhand-friction-codex-reviewed
+  evidence_type: explanation
+  excerpt: The speaker says arm tension at contact prevents the fingers from creating friction. Keep the arm relaxed while meeting the ball, let the fingers contact and grip it, then accelerate the arm.
+  reason: The passage places finger action before arm acceleration.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: EjtP5uCaULU
+    start_ms: 625566
+    end_ms: 646733
+    url: https://www.youtube.com/watch?v=EjtP5uCaULU&t=625s
+    segment_ids:
+    - EjtP5uCaULU:00147
+    - EjtP5uCaULU:00148
+    - EjtP5uCaULU:00149
+    - EjtP5uCaULU:00150
+- id: lO0H9Cs6JEo-concept-loose-grip-backhand-friction-codex-reviewed
+  evidence_type: explanation
+  excerpt: Acceleration is described as faster brushing with solid contact, rather than speed alone. Racket-head rotation makes friction easier, while a fast swing without proper brushing contact does not work.
+  reason: The speaker distinguishes fast brushing contact from swing speed alone.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: lO0H9Cs6JEo
+    start_ms: 637960
+    end_ms: 666760
+    url: https://www.youtube.com/watch?v=lO0H9Cs6JEo&t=637s
+    segment_ids:
+    - lO0H9Cs6JEo:00206
+    - lO0H9Cs6JEo:00207
+    - lO0H9Cs6JEo:00208
+    - lO0H9Cs6JEo:00209
+    - lO0H9Cs6JEo:00210
+    - lO0H9Cs6JEo:00211
+    - lO0H9Cs6JEo:00212
+    - lO0H9Cs6JEo:00213
+    - lO0H9Cs6JEo:00214
+    - lO0H9Cs6JEo:00215
+    - lO0H9Cs6JEo:00216
+- id: lRAoXPoYOBk-concept-loose-grip-backhand-friction-codex-reviewed
+  evidence_type: explanation
+  excerpt: 'The spinning cue is: “When the fingers and wrist strike the ball, it must create friction.” The subject of “it” is unspecified.'
+  reason: The friction cue is retained while its pronoun remains unresolved.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: lRAoXPoYOBk
+    start_ms: 57600
+    end_ms: 67433
+    url: https://www.youtube.com/watch?v=lRAoXPoYOBk&t=57s
+    segment_ids:
+    - lRAoXPoYOBk:00019
+    - lRAoXPoYOBk:00020
+    - lRAoXPoYOBk:00021
+    - lRAoXPoYOBk:00022
 relations:
-  - relation_type: used_with
-    target_concept_id: concept-backspin-serve-under-ball-contact
-    sources: [{video_id: csJgHR7Daog, start_ms: 533360, end_ms: 547040, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=533s", segment_ids: ["csJgHR7Daog:00230", "csJgHR7Daog:00231", "csJgHR7Daog:00232"]}]
-    confidence: 0.99
-    review_status: approved
+- relation_type: used_with
+  target_concept_id: concept-backspin-serve-under-ball-contact
+  sources: [{video_id: "csJgHR7Daog", start_ms: 523840, end_ms: 553120, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=523s", segment_ids: ["csJgHR7Daog:00226", "csJgHR7Daog:00227", "csJgHR7Daog:00228", "csJgHR7Daog:00229", "csJgHR7Daog:00230", "csJgHR7Daog:00231", "csJgHR7Daog:00232", "csJgHR7Daog:00233", "csJgHR7Daog:00234", "csJgHR7Daog:00235"]}]
+  confidence: 0.99
+  review_status: approved

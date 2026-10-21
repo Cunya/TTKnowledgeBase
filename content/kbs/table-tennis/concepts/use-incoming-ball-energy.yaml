@@ -1,36 +1,20 @@
 id: concept-use-incoming-ball-energy
 slug: use-incoming-ball-energy
-label: Use incoming ball energy
+label: Combining force with incoming spin
 aliases:
-  - use the energy of the incoming ball
-  - use the incoming spin
-  - borrow its momentum
-short_definition: A contact strategy that relies on the opponent's incoming pace or spin instead of generating everything from a large backswing.
+- combine forces with the spin
+- meet and brush the incoming ball
+short_definition: Go with the incoming spin, meeting the ball head-on and brushing to create friction. The explanation contrasts this with absorbing force, which may work against a fast ball but fails to get a backspin ball over the net.
 evidence_summary: >-
-  A contact strategy that relies on the opponent's incoming pace or spin instead of generating
-  everything from a large backswing.
-evidence_summary_source_hash: "sha256:7e6bb64a7d863b67716ce861e70075dfeed07a6ced9722192e9887c491bc2142"
-evidence_summary_generator: "deterministic"
+  The explanation contrasts absorbing spin force with combining forces: go with the spin, meet the incoming ball head-on, and brush to create friction. Absorption may work against a fast ball, but against backspin it fails to lift the ball over the net.
 concept_type: tactic
 facets:
   category:
-    - tactic
-    - fundamentals
-  side:
-    - neutral
-    - forehand
-    - backhand
+  - tactic
+  - fundamentals
   spin:
-    - backspin
-    - topspin
-    - no-spin
-  distance:
-    - close
-    - mid
-  level:
-    - beginner
-    - intermediate
-difficulty: intermediate
+  - backspin
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -41,81 +25,81 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: mvVfwjdxe34-concept-use-incoming-ball-energy-reviewed
-    evidence_type: explanation
-    excerpt: A contact strategy that relies on the opponent's incoming pace or spin instead of generating everything from a large backswing.
-    reason: The speaker explicitly says to use the energy of the incoming backspin and not rely on the backswing for power.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: mvVfwjdxe34
-      start_ms: 183666
-      end_ms: 194933
-      url: https://www.youtube.com/watch?v=mvVfwjdxe34&t=183s
-      segment_ids:
-        - mvVfwjdxe34:00036
-        - mvVfwjdxe34:00037
-  - id: O0jOeCzzcZA-concept-use-incoming-ball-energy-reviewed
-    evidence_type: explanation
-    excerpt: A striking principle where the player times contact to exploit the ball's downward motion and momentum instead of forcing the shot independently.
-    reason: The speaker says to begin the swing as the ball falls and to combine force with the ball's energy.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: O0jOeCzzcZA
-      start_ms: 248700
-      end_ms: 263133
-      url: https://www.youtube.com/watch?v=O0jOeCzzcZA&t=248s
-      segment_ids:
-        - O0jOeCzzcZA:00052
-        - O0jOeCzzcZA:00053
-  - id: 2LkVpDM69vo-concept-use-opponent-pace-on-long-serve-receive-reviewed
-    evidence_type: explanation
-    excerpt: On long serves, use the incoming pace to help keep the return on the table instead of forcing the ball.
-    reason: The speaker says the easiest way to return a long backhand serve is to use the opponent's pace and incoming pace.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 2LkVpDM69vo
-      start_ms: 351633
-      end_ms: 360500
-      url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=351s
-      segment_ids:
-        - 2LkVpDM69vo:00069
-  - id: IHQASHkdLYk-concept-use-incoming-ball-energy-reviewed
-    evidence_type: definition
-    excerpt: Redirecting the incoming ball's pace or energy instead of producing the stroke with a large self-generated swing.
-    reason: The speaker directly says not to retreat from the table because that loses the ability to use the opponent's pace, and repeatedly frames the tactic as borrowing the ball's energy.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: IHQASHkdLYk
-      start_ms: 293933
-      end_ms: 318566
-      url: https://www.youtube.com/watch?v=IHQASHkdLYk&t=293s
-      segment_ids:
-        - IHQASHkdLYk:00043
-        - IHQASHkdLYk:00044
-        - IHQASHkdLYk:00118
-  - id: 01-q1cswVVs-concept-borrowing-power-codex-reviewed
-    evidence_type: explanation
-    excerpt: Your loop is essentially absorbing the force of the spin. This, however, is combining forces. We have to go with the spin, meeting it head-on to create friction. As the ball comes, meet it and brush. We can't absorb the force. That might work against a fast ball, but against backspin, you won't be able to get the ball over the net.
-    reason: These contiguous segments directly explain combining with incoming spin, meeting it head-on, creating friction, and avoiding absorption against backspin. The span is under 30 seconds and matches the existing durable tactic of using incoming ball energy.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 01-q1cswVVs
-      start_ms: 771733
-      end_ms: 797166
-      url: https://www.youtube.com/watch?v=01-q1cswVVs&t=771s
-      segment_ids:
-        - 01-q1cswVVs:00141
-        - 01-q1cswVVs:00142
-        - 01-q1cswVVs:00143
-        - 01-q1cswVVs:00144
-        - 01-q1cswVVs:00145
+- id: mvVfwjdxe34-concept-use-incoming-ball-energy-reviewed
+  evidence_type: explanation
+  excerpt: A contact strategy that relies on the opponent's incoming pace or spin instead of generating everything from a large backswing.
+  reason: The speaker explicitly says to use the energy of the incoming backspin and not rely on the backswing for power.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: mvVfwjdxe34
+    start_ms: 183666
+    end_ms: 194933
+    url: https://www.youtube.com/watch?v=mvVfwjdxe34&t=183s
+    segment_ids:
+    - mvVfwjdxe34:00036
+    - mvVfwjdxe34:00037
+- id: O0jOeCzzcZA-concept-use-incoming-ball-energy-reviewed
+  evidence_type: explanation
+  excerpt: A striking principle where the player times contact to exploit the ball's downward motion and momentum instead of forcing the shot independently.
+  reason: The speaker says to begin the swing as the ball falls and to combine force with the ball's energy.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: O0jOeCzzcZA
+    start_ms: 248700
+    end_ms: 263133
+    url: https://www.youtube.com/watch?v=O0jOeCzzcZA&t=248s
+    segment_ids:
+    - O0jOeCzzcZA:00052
+    - O0jOeCzzcZA:00053
+- id: 2LkVpDM69vo-concept-use-opponent-pace-on-long-serve-receive-reviewed
+  evidence_type: explanation
+  excerpt: On long serves, use the incoming pace to help keep the return on the table instead of forcing the ball.
+  reason: The speaker says the easiest way to return a long backhand serve is to use the opponent's pace and incoming pace.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 2LkVpDM69vo
+    start_ms: 351633
+    end_ms: 360500
+    url: https://www.youtube.com/watch?v=2LkVpDM69vo&t=351s
+    segment_ids:
+    - 2LkVpDM69vo:00069
+- id: IHQASHkdLYk-concept-use-incoming-ball-energy-reviewed
+  evidence_type: definition
+  excerpt: Redirecting the incoming ball's pace or energy instead of producing the stroke with a large self-generated swing.
+  reason: The speaker directly says not to retreat from the table because that loses the ability to use the opponent's pace, and repeatedly frames the tactic as borrowing the ball's energy.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: IHQASHkdLYk
+    start_ms: 293933
+    end_ms: 318566
+    url: https://www.youtube.com/watch?v=IHQASHkdLYk&t=293s
+    segment_ids:
+    - IHQASHkdLYk:00043
+    - IHQASHkdLYk:00044
+    - IHQASHkdLYk:00118
+- id: 01-q1cswVVs-concept-borrowing-power-codex-reviewed
+  evidence_type: explanation
+  excerpt: Your loop is essentially absorbing the force of the spin. This, however, is combining forces. We have to go with the spin, meeting it head-on to create friction. As the ball comes, meet it and brush. We can't absorb the force. That might work against a fast ball, but against backspin, you won't be able to get the ball over the net.
+  reason: Go with the spin and meet the incoming ball head-on while brushing to create friction. Absorbing force may work against a fast ball, but against backspin the ball will not clear the net.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 01-q1cswVVs
+    start_ms: 771733
+    end_ms: 797166
+    url: https://www.youtube.com/watch?v=01-q1cswVVs&t=771s
+    segment_ids:
+    - 01-q1cswVVs:00141
+    - 01-q1cswVVs:00142
+    - 01-q1cswVVs:00143
+    - 01-q1cswVVs:00144
+    - 01-q1cswVVs:00145

@@ -1,541 +1,542 @@
 id: concept-backhand-flick-mechanics
 slug: backhand-flick-mechanics
-label: Backhand flick mechanics
-aliases: [finger-powered backhand flick, racket-head drop flick]
-short_definition: Drop the racket head and use coordinated thumb and middle-finger pressure to create a compact, spin-capable backhand flick.
+label: Flick mechanics and wrist brushing
+aliases:
+- racket-head drop flick
+short_definition: Drop the racket head and use the thumb and middle finger to generate power; rotating through gives the flick options for spin or speed.
 evidence_summary: >-
-  A backhand flick is built on a sharp, controlled finger-driven action rather than a loose,
-  drive-only swing. The wrist should stay braced through the stroke, with the racket accelerating
-  in a brief, concentrated brush at contact, and the preparation can differ from the more open
-  setup used for a banana flick. Good mechanics also depend on adjusting the racket angle and hand
-  position to the incoming spin while keeping the forearm stable enough to accelerate cleanly.
-evidence_summary_source_hash: "sha256:2ffa666b6ec868c9a6cc2228eda464ecc6ac7b92ecdde8a8fe1d4112890b033f"
-evidence_summary_generator: "codex"
-detailed_definition: "Starting with the racket head already raised limits the stroke to a drive-like push. Lowering the head gives the middle finger room to lift while the thumb and index finger guide forward pressure. Contact timing still depends on space: close to the table favors the rise, while backing away restores the option to contact near the peak."
+  Dropping the racket head and rotating through gives the flick options for spin or speed. The thumb and middle finger generate power. Keep the wrist braced through a backhand punch; on the flick, do not rotate the wrist through the whole motion. Keep any wrist brush brief, concentrated, and small in range, then brace and finish.
+detailed_definition: "Starting with the racket head already tilted up forces a forehand-drive style. Dropping the head and rotating through gives options for spin or speed."
 concept_type: stroke-mechanic
-facets: {category: [stroke], side: [backhand], level: [intermediate]}
-difficulty: intermediate
+facets:
+  category:
+  - stroke
+difficulty:
 review_status: approved
 evidence:
-  - id: flick-thumb-middle-finger-1
-    evidence_type: explanation
-    excerpt: Backhand flick power comes from the thumb and middle finger rather than the index finger.
-    reason: Identifies the primary finger-force mechanism for the stroke.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: BToLYdKLIMM, start_ms: 54800, end_ms: 69920, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=54s", segment_ids: ["BToLYdKLIMM:00019", "BToLYdKLIMM:00020", "BToLYdKLIMM:00021", "BToLYdKLIMM:00022", "BToLYdKLIMM:00023"]}
-  - id: flick-racket-head-drop-2
-    evidence_type: correction
-    excerpt: Drop the racket head before rotating through to gain spin, speed, and variation.
-    reason: Contrasts a flexible flick preparation with a raised-head, drive-only action.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source: {video_id: BToLYdKLIMM, start_ms: 24480, end_ms: 47120, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=24s", segment_ids: ["BToLYdKLIMM:00007", "BToLYdKLIMM:00008", "BToLYdKLIMM:00009", "BToLYdKLIMM:00010", "BToLYdKLIMM:00011", "BToLYdKLIMM:00012", "BToLYdKLIMM:00013", "BToLYdKLIMM:00014"]}
-  - id: flick-space-restores-peak-3
-    evidence_type: explanation
-    excerpt: Backing away about an arm's length restores the choice between taking the flick on the rise or at the peak.
-    reason: Connects stroke timing options to available working room.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source: {video_id: BToLYdKLIMM, start_ms: 478479, end_ms: 496440, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=478s", segment_ids: ["BToLYdKLIMM:00178", "BToLYdKLIMM:00179", "BToLYdKLIMM:00180", "BToLYdKLIMM:00181", "BToLYdKLIMM:00182", "BToLYdKLIMM:00183"]}
-  - id: uag7n7hq3bM-cand-backhand-flick-opening-1
-    evidence_type: example
-    excerpt: A later-stage attacking receive or opening option that is introduced after the player can already control rhythm, spacing, and moderate-power attacks.
-    reason: Speaker says that at a higher level, players can start opening with a backhand flick and a forehand loop, still without forcing power.
-    confidence: 0.8
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: uag7n7hq3bM
-      start_ms: 333680
-      end_ms: 351680
-      url: "https://www.youtube.com/watch?v=uag7n7hq3bM&t=333s"
-      segment_ids:
-        - "uag7n7hq3bM:00128"
-        - "uag7n7hq3bM:00133"
-  - id: zd8tcVUWwK4-cand-backhand-flick-mechanics-1
-    evidence_type: explanation
-    excerpt: Speaker describes wrist stability for punch/flick and limits wrist brushing to a short snap at contact.
-    reason: On backhand punch and flick actions, the wrist should be braced through the stroke, with only a very brief, concentrated brush at contact rather than a large wrist rotation.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: zd8tcVUWwK4
-      start_ms: 238800
-      end_ms: 264160
-      url: https://www.youtube.com/watch?v=zd8tcVUWwK4&t=238s
-      segment_ids:
-        - zd8tcVUWwK4:00103
-        - zd8tcVUWwK4:00104
-        - zd8tcVUWwK4:00108
-        - zd8tcVUWwK4:00109
-        - zd8tcVUWwK4:00111
-        - zd8tcVUWwK4:00112
-        - zd8tcVUWwK4:00113
-  - id: zd8tcVUWwK4-cand-backhand-flick-mechanics-2
-    evidence_type: explanation
-    excerpt: Speaker describes wrist stability for punch/flick and limits wrist brushing to a short snap at contact.
-    reason: On backhand punch and flick actions, the wrist should be braced through the stroke, with only a very brief, concentrated brush at contact rather than a large wrist rotation.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: zd8tcVUWwK4
-      start_ms: 265280
-      end_ms: 281840
-      url: https://www.youtube.com/watch?v=zd8tcVUWwK4&t=265s
-      segment_ids:
-        - zd8tcVUWwK4:00114
-        - zd8tcVUWwK4:00115
-        - zd8tcVUWwK4:00116
-        - zd8tcVUWwK4:00117
-        - zd8tcVUWwK4:00118
-        - zd8tcVUWwK4:00119
-  - id: zd8tcVUWwK4-cand-backhand-flick-mechanics-3
-    evidence_type: explanation
-    excerpt: Speaker describes wrist stability for punch/flick and limits wrist brushing to a short snap at contact.
-    reason: On backhand punch and flick actions, the wrist should be braced through the stroke, with only a very brief, concentrated brush at contact rather than a large wrist rotation.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: zd8tcVUWwK4
-      start_ms: 306480
-      end_ms: 333440
-      url: https://www.youtube.com/watch?v=zd8tcVUWwK4&t=306s
-      segment_ids:
-        - zd8tcVUWwK4:00131
-        - zd8tcVUWwK4:00132
-        - zd8tcVUWwK4:00133
-        - zd8tcVUWwK4:00134
-        - zd8tcVUWwK4:00135
-        - zd8tcVUWwK4:00136
-        - zd8tcVUWwK4:00137
-        - zd8tcVUWwK4:00138
-        - zd8tcVUWwK4:00139
-        - zd8tcVUWwK4:00140
-        - zd8tcVUWwK4:00141
-  - id: 5JzSUTg_ojc-concept-backhand-flick-mechanics-reviewed
-    evidence_type: explanation
-    excerpt: A backhand flick that starts from a lower racket-tip position and rotates from about 7:00, with a stable wrist and adjusted height for spinny short balls.
-    reason: The speaker explicitly distinguishes backhand flick from backhand drive, saying the racket tip should point to 7:00, rotate from that position, and adjust to the opponent's spin.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 5JzSUTg_ojc
-      start_ms: 501400
-      end_ms: 528320
-      url: https://www.youtube.com/watch?v=5JzSUTg_ojc&t=501s
-      segment_ids:
-        - 5JzSUTg_ojc:00190
-        - 5JzSUTg_ojc:00191
-        - 5JzSUTg_ojc:00192
-        - 5JzSUTg_ojc:00194
-        - 5JzSUTg_ojc:00197
-        - 5JzSUTg_ojc:00199
-  - id: A4-lKRVwSFc-concept-backhand-flick-mechanics-reviewed
-    evidence_type: explanation
-    excerpt: A banana-flick-like backhand action that starts from a stable hand position, then slightly enlarges the motion and accelerates the forearm to create brushing.
-    reason: Speaker explicitly references the backhand banana flick, describes the hand position, and says to stabilize it before accelerating the forearm.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: A4-lKRVwSFc
-      start_ms: 402160
-      end_ms: 424240
-      url: https://www.youtube.com/watch?v=A4-lKRVwSFc&t=402s
-      segment_ids:
-        - A4-lKRVwSFc:00154
-        - A4-lKRVwSFc:00160
-  - id: vo26XE2LIjI-concept-backhand-flick-mechanics-reviewed
-    evidence_type: definition
-    excerpt: A compact backhand flick built from a stable elbow base, wrist preload, finger action at contact, brushing, and forearm acceleration.
-    reason: The speaker explains the mechanics of a backhand flick through elbow support, wrist preload, finger action, compact brushing, and forearm acceleration.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: vo26XE2LIjI
-      start_ms: 294000
-      end_ms: 319320
-      url: https://www.youtube.com/watch?v=vo26XE2LIjI&t=294s
-      segment_ids:
-        - vo26XE2LIjI:00108
-        - vo26XE2LIjI:00109
-        - vo26XE2LIjI:00111
-        - vo26XE2LIjI:00112
-        - vo26XE2LIjI:00115
-  - id: H0sbIUpUNLY-cand-7-reviewed
-    evidence_type: definition
-    excerpt: A backhand flick that uses a compact action and a suitable contact point, often around the stomach or waist, to avoid being jammed.
-    reason: The speaker explicitly transitions to the backhand and says the flick is from around the stomach, with a slightly lower contact point.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: H0sbIUpUNLY
-      start_ms: 420480
-      end_ms: 443840
-      url: https://www.youtube.com/watch?v=H0sbIUpUNLY&t=420s
-      segment_ids:
-        - H0sbIUpUNLY:00135
-        - H0sbIUpUNLY:00140
-  - id: hwT7cH6PbZQ-concept-backhand-flick-mechanics-reviewed
-    evidence_type: explanation
-    excerpt: Using the fingers and a compact motion to flick the ball, with control coming from the racket head rather than a loose wrist.
-    reason: The speaker says flicking is the best option for certain topspin balls, describes a quick chopping motion, and ties the alternative to a difficult flick scenario.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: hwT7cH6PbZQ
-      start_ms: 662200
-      end_ms: 691866
-      url: https://www.youtube.com/watch?v=hwT7cH6PbZQ&t=662s
-      segment_ids:
-        - hwT7cH6PbZQ:00153
-        - hwT7cH6PbZQ:00154
-        - hwT7cH6PbZQ:00155
-        - hwT7cH6PbZQ:00156
-        - hwT7cH6PbZQ:00157
-        - hwT7cH6PbZQ:00158
-        - hwT7cH6PbZQ:00159
-        - hwT7cH6PbZQ:00160
-  - id: hwT7cH6PbZQ-concept-backhand-flick-mechanics-reviewed-3d69047a
-    evidence_type: explanation
-    excerpt: Using the fingers and a compact motion to flick the ball, with control coming from the racket head rather than a loose wrist.
-    reason: The speaker says flicking is the best option for certain topspin balls, describes a quick chopping motion, and ties the alternative to a difficult flick scenario.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: hwT7cH6PbZQ
-      start_ms: 662200
-      end_ms: 691866
-      url: https://www.youtube.com/watch?v=hwT7cH6PbZQ&t=662s
-      segment_ids:
-        - hwT7cH6PbZQ:00153
-        - hwT7cH6PbZQ:00154
-        - hwT7cH6PbZQ:00155
-        - hwT7cH6PbZQ:00156
-        - hwT7cH6PbZQ:00157
-        - hwT7cH6PbZQ:00158
-        - hwT7cH6PbZQ:00159
-        - hwT7cH6PbZQ:00160
-  - id: QFncUSkAVKU-cand-backhand-flick-mechanics-reviewed
-    evidence_type: explanation
-    excerpt: The mechanics of a backhand flick, discussed as sharing the same hooked-wrist feeling and stable wrist position as other strong backhand strokes.
-    reason: Defines the required wrist orientation and forbids outward bending, inward collapse, or wiping motion.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: QFncUSkAVKU
-      start_ms: 684000
-      end_ms: 702480
-      url: https://www.youtube.com/watch?v=QFncUSkAVKU&t=684s
-      segment_ids:
-        - QFncUSkAVKU:00259
-        - QFncUSkAVKU:00260
-        - QFncUSkAVKU:00261
-        - QFncUSkAVKU:00262
-        - QFncUSkAVKU:00263
-        - QFncUSkAVKU:00264
-        - QFncUSkAVKU:00265
-  - id: b_kKpVRuU1Q-concept-backhand-flick-mechanics-reviewed
-    evidence_type: definition
-    excerpt: The wrist-led backhand flick action in which the racket head drops, the wrist is hooked, and the racket rotates through contact to create a solid forward-facing strike.
-    reason: The speaker describes the wrist hook, racket-face orientation, rotation at contact, and identifies the banana flick motion by name.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: b_kKpVRuU1Q
-      start_ms: 33966
-      end_ms: 53666
-      url: https://www.youtube.com/watch?v=b_kKpVRuU1Q&t=33s
-      segment_ids:
-        - b_kKpVRuU1Q:00008
-        - b_kKpVRuU1Q:00011
-        - b_kKpVRuU1Q:00012
-  - id: wSzmpXHp64Q-concept-backhand-flick-mechanics-reviewed
-    evidence_type: explanation
-    excerpt: Using a compact flick action on short balls, contrasted with pushing; the speaker warns against the banana flick here because the footwork distance is too long.
-    reason: Mentions flicking as a receive category and specifically references the backhand banana flick.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: wSzmpXHp64Q
-      start_ms: 47966
-      end_ms: 58166
-      url: https://www.youtube.com/watch?v=wSzmpXHp64Q&t=47s
-      segment_ids:
-        - wSzmpXHp64Q:00011
-        - wSzmpXHp64Q:00012
-        - wSzmpXHp64Q:00013
-  - id: ozEBjwyt674-concept-backhand-flick-mechanics-reviewed
-    evidence_type: definition
-    excerpt: A short-table backhand flick uses a compact wrist-and-finger action, with the forearm kept minimal and the joints separated so the stroke stays quick and controlled.
-    reason: Defines the flick as an in-the-table attacking stroke driven mainly by wrist and fingers, with minimal forearm movement.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: ozEBjwyt674
-      start_ms: 166233
-      end_ms: 189400
-      url: https://www.youtube.com/watch?v=ozEBjwyt674&t=166s
-      segment_ids:
-        - ozEBjwyt674:00058
-        - ozEBjwyt674:00065
-        - ozEBjwyt674:00066
-  - id: hwUcyGY2ApQ-concept-backhand-flick-mechanics-reviewed
-    evidence_type: explanation
-    excerpt: Backhand flick execution depends on racket rotation around the wrist axis and a controlled, compact motion rather than a loose or unstable wrist flip.
-    reason: The speaker defines the backhand flick training path as short flicks with racket turn and wrist-axis rotation, ending with the racket face sideways then up.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: hwUcyGY2ApQ
-      start_ms: 199933
-      end_ms: 223666
-      url: https://www.youtube.com/watch?v=hwUcyGY2ApQ&t=199s
-      segment_ids:
-        - hwUcyGY2ApQ:00054
-        - hwUcyGY2ApQ:00055
-        - hwUcyGY2ApQ:00056
-        - hwUcyGY2ApQ:00057
-  - id: 9vowMQmr-pk-concept-backhand-flick-mechanics-reviewed
-    evidence_type: demonstration
-    excerpt: Executing a backhand flick with quick wrist and finger action to generate friction and lift the ball.
-    reason: The speaker attributes the lift to quick wrist action, matching the described mechanics of a flick that generates friction and lifts the ball.
-    confidence: 0.89
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 9vowMQmr-pk
-      start_ms: 349900
-      end_ms: 360466
-      url: https://www.youtube.com/watch?v=9vowMQmr-pk&t=349s
-      segment_ids:
-        - 9vowMQmr-pk:00144
-        - 9vowMQmr-pk:00145
-        - 9vowMQmr-pk:00146
-  - id: idAN8cPDZ7w-concept-backhand-flick-mechanics-reviewed
-    evidence_type: definition
-    excerpt: Backhand flick execution driven by finger action and controlled wrist mechanics to create spin with a compact motion.
-    reason: The speaker says flicking generates spin and emphasizes fingertip use, limited motion, and avoiding excessive wrist activity.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: idAN8cPDZ7w
-      start_ms: 547666
-      end_ms: 574700
-      url: https://www.youtube.com/watch?v=idAN8cPDZ7w&t=547s
-      segment_ids:
-        - idAN8cPDZ7w:00121
-        - idAN8cPDZ7w:00122
-        - idAN8cPDZ7w:00123
-        - idAN8cPDZ7w:00127
-  - id: Zrw_aJYKfhA-concept-backhand-flick-mechanics-reviewed
-    evidence_type: explanation
-    excerpt: A backhand flick driven by finger and wrist action, using a compact pivot-like motion to create speed and spin.
-    reason: The speaker explicitly ties backhand execution to thumb/finger pivoting, finger pressure, and finger-led acceleration.
-    confidence: 0.88
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: Zrw_aJYKfhA
-      start_ms: 557666
-      end_ms: 563066
-      url: https://www.youtube.com/watch?v=Zrw_aJYKfhA&t=557s
-      segment_ids:
-        - Zrw_aJYKfhA:00132
-  - id: igaH-B1hrmY-concept-backhand-flick-mechanics-reviewed
-    evidence_type: definition
-    excerpt: Backhand flick execution emphasizing hand positioning and pressure control.
-    reason: The speaker explicitly says the backhand flick primarily involves hand positioning and downward pressure.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: igaH-B1hrmY
-      start_ms: 20560
-      end_ms: 29120
-      url: https://www.youtube.com/watch?v=igaH-B1hrmY&t=20s
-      segment_ids:
-        - igaH-B1hrmY:00000
-        - igaH-B1hrmY:00001
-  - id: uyS2qSAPuYM-concept-backhand-flick-mechanics-reviewed
-    evidence_type: definition
-    excerpt: The mechanics of a backhand flick or banana flick, where the cocked wrist helps generate more spin and control.
-    reason: The speaker says the cocked wrist makes it easier to generate spin, especially with the banana flick.
-    confidence: 0.88
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: uyS2qSAPuYM
-      start_ms: 494066
-      end_ms: 504000
-      url: https://www.youtube.com/watch?v=uyS2qSAPuYM&t=494s
-      segment_ids:
-        - uyS2qSAPuYM:00105
-        - uyS2qSAPuYM:00106
-  - id: RXl1tDl8BRw-new-backhand-flick-forward-first-mechanics-reviewed
-    evidence_type: explanation
-    excerpt: A backhand flick should begin with forward motion before any upward lift; going straight upward reduces forward force and sends the ball long.
-    reason: The speaker explicitly says flicks must go forward first, then upward, and warns against going directly upward.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: RXl1tDl8BRw
-      start_ms: 139300
-      end_ms: 160066
-      url: https://www.youtube.com/watch?v=RXl1tDl8BRw&t=139s
-      segment_ids:
-        - RXl1tDl8BRw:00030
-        - RXl1tDl8BRw:00031
-        - RXl1tDl8BRw:00032
-        - RXl1tDl8BRw:00033
-  - id: eDDICo0Damw-concept-backhand-flick-mechanics-reviewed
-    evidence_type: definition
-    excerpt: The mechanics of the standard backhand flick, emphasizing racket-face rotation, wrist use, and forward force generation.
-    reason: Describes the backhand flick as mostly racket-face rotation with little upper-arm or forearm use.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: eDDICo0Damw
-      start_ms: 65500
-      end_ms: 91666
-      url: https://www.youtube.com/watch?v=eDDICo0Damw&t=65s
-      segment_ids:
-        - eDDICo0Damw:00016
-        - eDDICo0Damw:00018
-        - eDDICo0Damw:00019
-  - id: QKc7uSJo9mM-concept-backhand-flick-mechanics-reviewed
-    evidence_type: explanation
-    excerpt: The mechanics of flicking short balls on the backhand side, emphasizing racket angle, forward contact, forearm speed, and wrist stability.
-    reason: 'The speaker gives detailed instructions for flicking half-spin balls: contact the back of the ball, use the forearm for speed, flick forward through the ball, and keep the motion consistent.'
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: QKc7uSJo9mM
-      start_ms: 461200
-      end_ms: 484866
-      url: https://www.youtube.com/watch?v=QKc7uSJo9mM&t=461s
-      segment_ids:
-        - QKc7uSJo9mM:00085
-        - QKc7uSJo9mM:00087
-        - QKc7uSJo9mM:00088
-  - id: qfB1tscK4xk-concept-backhand-flick-mechanics-reviewed
-    evidence_type: explanation
-    excerpt: A backhand flick is generated through coordinated body and arm action, using a compact coil-and-drive motion rather than arm-only motion.
-    reason: The speaker explicitly frames the topic as the backhand flick and explains its mechanics as body-assisted rather than arm-only.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: qfB1tscK4xk
-      start_ms: 0
-      end_ms: 27666
-      url: https://www.youtube.com/watch?v=qfB1tscK4xk&t=0s
-      segment_ids:
-        - qfB1tscK4xk:00000
-        - qfB1tscK4xk:00003
-        - qfB1tscK4xk:00005
-  - id: ku3pB8FPhtM-concept-backhand-flick-mechanics-reviewed
-    evidence_type: definition
-    excerpt: The backhand flick should be powered mainly by the wrist in a back-to-front snap, not by the forearm or fingers alone.
-    reason: The speaker says fingers alone are limited, the forearm loses control, and the real power source is the wrist with a sharp snap forward.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: ku3pB8FPhtM
-      start_ms: 875133
-      end_ms: 900466
-      url: https://www.youtube.com/watch?v=ku3pB8FPhtM&t=875s
-      segment_ids:
-        - ku3pB8FPhtM:00172
-        - ku3pB8FPhtM:00175
-        - ku3pB8FPhtM:00176
-  - id: 82C2Zhfyq0s-concept-backhand-flick-mechanics-reviewed
-    evidence_type: definition
-    excerpt: A backhand flick is taught as a small arcing motion that begins with the racket head turned sideways and finishes upward, with the wrist and forearm coordinating the rotation.
-    reason: The speaker introduces backhand flicks on short balls and describes the racket-head rotation from sideways to upward.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 82C2Zhfyq0s
-      start_ms: 573566
-      end_ms: 593500
-      url: https://www.youtube.com/watch?v=82C2Zhfyq0s&t=573s
-      segment_ids:
-        - 82C2Zhfyq0s:00106
-        - 82C2Zhfyq0s:00108
-  - id: 9EcoI6PnOzE-concept-backhand-flick-mechanics-reviewed
-    evidence_type: explanation
-    excerpt: Mechanics of the backhand flick emphasizing starting position, brushing phase, stable elbow, and acceleration phase.
-    reason: The speaker specifies where Point A should start, what A-to-B and B-to-C do, and how the elbow/wrist/forearm should behave.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 9EcoI6PnOzE
-      start_ms: 92033
-      end_ms: 113033
-      url: https://www.youtube.com/watch?v=9EcoI6PnOzE&t=92s
-      segment_ids:
-        - 9EcoI6PnOzE:00020
-        - 9EcoI6PnOzE:00023
-        - 9EcoI6PnOzE:00024
-  - id: yqSECRch8WM-concept-backhand-flick-mechanics-reviewed
-    evidence_type: definition
-    excerpt: A backhand flick requires rotational execution rather than simply pushing or using a flat counter-drive.
-    reason: The speaker says the backhand flick works the same way and must be rotated to execute, not merely pushed or counter-driven.
-    confidence: 0.91
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: yqSECRch8WM
-      start_ms: 207433
-      end_ms: 216033
-      url: https://www.youtube.com/watch?v=yqSECRch8WM&t=207s
-      segment_ids:
-        - yqSECRch8WM:00023
-  - id: igaH-B1hrmY-concept-backhand-flick-mechanics-codex-reviewed
-    evidence_type: explanation
-    excerpt: Backhand flick primarily involves hand positioning and applying downward pressure; once pressure is applied, no need to press harder.
-    reason: The selected contiguous transcript span directly states that the backhand flick involves hand positioning and downward pressure, then clarifies that additional pressure is unnecessary.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: igaH-B1hrmY
-      start_ms: 20560
-      end_ms: 44960
-      url: https://www.youtube.com/watch?v=igaH-B1hrmY&t=20s
-      segment_ids:
-        - igaH-B1hrmY:00000
-        - igaH-B1hrmY:00001
-        - igaH-B1hrmY:00002
+- id: flick-thumb-middle-finger-1
+  evidence_type: explanation
+  excerpt: Thumb and middle finger generate power for the flick.
+  reason: The speaker identifies the thumb and middle finger, rather than the index finger, as generating power.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source: {video_id: BToLYdKLIMM, start_ms: 54800, end_ms: 69920, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=54s", segment_ids: ["BToLYdKLIMM:00019", "BToLYdKLIMM:00020", "BToLYdKLIMM:00021", "BToLYdKLIMM:00022", "BToLYdKLIMM:00023"]}
+- id: flick-racket-head-drop-2
+  evidence_type: correction
+  excerpt: Drop the racket head and rotate through for spin or speed options.
+  reason: A raised racket head leads to a forehand-drive style; dropping and rotating the head provides spin and speed options.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source: {video_id: BToLYdKLIMM, start_ms: 24480, end_ms: 47120, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=24s", segment_ids: ["BToLYdKLIMM:00007", "BToLYdKLIMM:00008", "BToLYdKLIMM:00009", "BToLYdKLIMM:00010", "BToLYdKLIMM:00011", "BToLYdKLIMM:00012", "BToLYdKLIMM:00013", "BToLYdKLIMM:00014"]}
+- id: flick-space-restores-peak-3
+  evidence_type: explanation
+  excerpt: Give yourself about an arm’s length of space to choose peak or rising contact; close to the table, use rising contact.
+  reason: Standing back allows peak or rising contact; the close-table instruction is to take the ball on the rise.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source: {video_id: BToLYdKLIMM, start_ms: 478479, end_ms: 496440, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=478s", segment_ids: ["BToLYdKLIMM:00178", "BToLYdKLIMM:00179", "BToLYdKLIMM:00180", "BToLYdKLIMM:00181", "BToLYdKLIMM:00182", "BToLYdKLIMM:00183"]}
+- id: uag7n7hq3bM-cand-backhand-flick-opening-1
+  evidence_type: example
+  excerpt: A later-stage attacking receive or opening option that is introduced after the player can already control rhythm, spacing, and moderate-power attacks.
+  reason: Speaker says that at a higher level, players can start opening with a backhand flick and a forehand loop, still without forcing power.
+  confidence: 0.8
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: uag7n7hq3bM
+    start_ms: 333680
+    end_ms: 351680
+    url: "https://www.youtube.com/watch?v=uag7n7hq3bM&t=333s"
+    segment_ids:
+    - "uag7n7hq3bM:00128"
+    - "uag7n7hq3bM:00133"
+- id: zd8tcVUWwK4-cand-backhand-flick-mechanics-1
+  evidence_type: explanation
+  excerpt: Brace the wrist through a backhand punch; on the flick, do not rotate the wrist through the whole motion.
+  reason: Keep the wrist braced through the punch and avoid rotating it through the whole flick motion.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: zd8tcVUWwK4
+    start_ms: 238800
+    end_ms: 264160
+    url: https://www.youtube.com/watch?v=zd8tcVUWwK4&t=238s
+    segment_ids:
+    - zd8tcVUWwK4:00103
+    - zd8tcVUWwK4:00104
+    - zd8tcVUWwK4:00105
+    - zd8tcVUWwK4:00106
+    - zd8tcVUWwK4:00107
+    - zd8tcVUWwK4:00108
+    - zd8tcVUWwK4:00109
+    - zd8tcVUWwK4:00110
+    - zd8tcVUWwK4:00111
+    - zd8tcVUWwK4:00112
+    - zd8tcVUWwK4:00113
+- id: zd8tcVUWwK4-cand-backhand-flick-mechanics-2
+  evidence_type: explanation
+  excerpt: The brushing action is tiny and brief, rather than a large rotation.
+  reason: The brushing is described as a tiny moment, not a big rotation from seven o’clock through twelve o’clock.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: zd8tcVUWwK4
+    start_ms: 265280
+    end_ms: 281840
+    url: https://www.youtube.com/watch?v=zd8tcVUWwK4&t=265s
+    segment_ids:
+    - zd8tcVUWwK4:00114
+    - zd8tcVUWwK4:00115
+    - zd8tcVUWwK4:00116
+    - zd8tcVUWwK4:00117
+    - zd8tcVUWwK4:00118
+    - zd8tcVUWwK4:00119
+- id: zd8tcVUWwK4-cand-backhand-flick-mechanics-3
+  evidence_type: explanation
+  excerpt: Keep wrist brushing brief, concentrated and small in range. After the brush, brace and finish.
+  reason: The wrist brush is a short snap at contact, followed by bracing and finishing; it is not applied throughout the stroke.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: zd8tcVUWwK4
+    start_ms: 306480
+    end_ms: 333440
+    url: https://www.youtube.com/watch?v=zd8tcVUWwK4&t=306s
+    segment_ids:
+    - zd8tcVUWwK4:00131
+    - zd8tcVUWwK4:00132
+    - zd8tcVUWwK4:00133
+    - zd8tcVUWwK4:00134
+    - zd8tcVUWwK4:00135
+    - zd8tcVUWwK4:00136
+    - zd8tcVUWwK4:00137
+    - zd8tcVUWwK4:00138
+    - zd8tcVUWwK4:00139
+    - zd8tcVUWwK4:00140
+    - zd8tcVUWwK4:00141
+- id: 5JzSUTg_ojc-concept-backhand-flick-mechanics-reviewed
+  evidence_type: explanation
+  excerpt: A backhand flick that starts from a lower racket-tip position and rotates from about 7:00, with a stable wrist and adjusted height for spinny short balls.
+  reason: The speaker explicitly distinguishes backhand flick from backhand drive, saying the racket tip should point to 7:00, rotate from that position, and adjust to the opponent's spin.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 5JzSUTg_ojc
+    start_ms: 501400
+    end_ms: 528320
+    url: https://www.youtube.com/watch?v=5JzSUTg_ojc&t=501s
+    segment_ids:
+    - 5JzSUTg_ojc:00190
+    - 5JzSUTg_ojc:00191
+    - 5JzSUTg_ojc:00192
+    - 5JzSUTg_ojc:00194
+    - 5JzSUTg_ojc:00197
+    - 5JzSUTg_ojc:00199
+- id: A4-lKRVwSFc-concept-backhand-flick-mechanics-reviewed
+  evidence_type: explanation
+  excerpt: A banana-flick-like backhand action that starts from a stable hand position, then slightly enlarges the motion and accelerates the forearm to create brushing.
+  reason: Speaker explicitly references the backhand banana flick, describes the hand position, and says to stabilize it before accelerating the forearm.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: A4-lKRVwSFc
+    start_ms: 402160
+    end_ms: 424240
+    url: https://www.youtube.com/watch?v=A4-lKRVwSFc&t=402s
+    segment_ids:
+    - A4-lKRVwSFc:00154
+    - A4-lKRVwSFc:00160
+- id: vo26XE2LIjI-concept-backhand-flick-mechanics-reviewed
+  evidence_type: definition
+  excerpt: A compact backhand flick built from a stable elbow base, wrist preload, finger action at contact, brushing, and forearm acceleration.
+  reason: The speaker explains the mechanics of a backhand flick through elbow support, wrist preload, finger action, compact brushing, and forearm acceleration.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: vo26XE2LIjI
+    start_ms: 294000
+    end_ms: 319320
+    url: https://www.youtube.com/watch?v=vo26XE2LIjI&t=294s
+    segment_ids:
+    - vo26XE2LIjI:00108
+    - vo26XE2LIjI:00109
+    - vo26XE2LIjI:00111
+    - vo26XE2LIjI:00112
+    - vo26XE2LIjI:00115
+- id: H0sbIUpUNLY-cand-7-reviewed
+  evidence_type: definition
+  excerpt: A backhand flick that uses a compact action and a suitable contact point, often around the stomach or waist, to avoid being jammed.
+  reason: The speaker explicitly transitions to the backhand and says the flick is from around the stomach, with a slightly lower contact point.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: H0sbIUpUNLY
+    start_ms: 420480
+    end_ms: 443840
+    url: https://www.youtube.com/watch?v=H0sbIUpUNLY&t=420s
+    segment_ids:
+    - H0sbIUpUNLY:00135
+    - H0sbIUpUNLY:00140
+- id: hwT7cH6PbZQ-concept-backhand-flick-mechanics-reviewed
+  evidence_type: explanation
+  excerpt: Using the fingers and a compact motion to flick the ball, with control coming from the racket head rather than a loose wrist.
+  reason: The speaker says flicking is the best option for certain topspin balls, describes a quick chopping motion, and ties the alternative to a difficult flick scenario.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: hwT7cH6PbZQ
+    start_ms: 662200
+    end_ms: 691866
+    url: https://www.youtube.com/watch?v=hwT7cH6PbZQ&t=662s
+    segment_ids:
+    - hwT7cH6PbZQ:00153
+    - hwT7cH6PbZQ:00154
+    - hwT7cH6PbZQ:00155
+    - hwT7cH6PbZQ:00156
+    - hwT7cH6PbZQ:00157
+    - hwT7cH6PbZQ:00158
+    - hwT7cH6PbZQ:00159
+    - hwT7cH6PbZQ:00160
+- id: hwT7cH6PbZQ-concept-backhand-flick-mechanics-reviewed-3d69047a
+  evidence_type: explanation
+  excerpt: Using the fingers and a compact motion to flick the ball, with control coming from the racket head rather than a loose wrist.
+  reason: The speaker says flicking is the best option for certain topspin balls, describes a quick chopping motion, and ties the alternative to a difficult flick scenario.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: hwT7cH6PbZQ
+    start_ms: 662200
+    end_ms: 691866
+    url: https://www.youtube.com/watch?v=hwT7cH6PbZQ&t=662s
+    segment_ids:
+    - hwT7cH6PbZQ:00153
+    - hwT7cH6PbZQ:00154
+    - hwT7cH6PbZQ:00155
+    - hwT7cH6PbZQ:00156
+    - hwT7cH6PbZQ:00157
+    - hwT7cH6PbZQ:00158
+    - hwT7cH6PbZQ:00159
+    - hwT7cH6PbZQ:00160
+- id: QFncUSkAVKU-cand-backhand-flick-mechanics-reviewed
+  evidence_type: explanation
+  excerpt: The mechanics of a backhand flick, discussed as sharing the same hooked-wrist feeling and stable wrist position as other strong backhand strokes.
+  reason: Defines the required wrist orientation and forbids outward bending, inward collapse, or wiping motion.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: QFncUSkAVKU
+    start_ms: 684000
+    end_ms: 702480
+    url: https://www.youtube.com/watch?v=QFncUSkAVKU&t=684s
+    segment_ids:
+    - QFncUSkAVKU:00259
+    - QFncUSkAVKU:00260
+    - QFncUSkAVKU:00261
+    - QFncUSkAVKU:00262
+    - QFncUSkAVKU:00263
+    - QFncUSkAVKU:00264
+    - QFncUSkAVKU:00265
+- id: b_kKpVRuU1Q-concept-backhand-flick-mechanics-reviewed
+  evidence_type: definition
+  excerpt: The wrist-led backhand flick action in which the racket head drops, the wrist is hooked, and the racket rotates through contact to create a solid forward-facing strike.
+  reason: The speaker describes the wrist hook, racket-face orientation, rotation at contact, and identifies the banana flick motion by name.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: b_kKpVRuU1Q
+    start_ms: 33966
+    end_ms: 53666
+    url: https://www.youtube.com/watch?v=b_kKpVRuU1Q&t=33s
+    segment_ids:
+    - b_kKpVRuU1Q:00008
+    - b_kKpVRuU1Q:00011
+    - b_kKpVRuU1Q:00012
+- id: wSzmpXHp64Q-concept-backhand-flick-mechanics-reviewed
+  evidence_type: explanation
+  excerpt: Using a compact flick action on short balls, contrasted with pushing; the speaker warns against the banana flick here because the footwork distance is too long.
+  reason: Mentions flicking as a receive category and specifically references the backhand banana flick.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: wSzmpXHp64Q
+    start_ms: 47966
+    end_ms: 58166
+    url: https://www.youtube.com/watch?v=wSzmpXHp64Q&t=47s
+    segment_ids:
+    - wSzmpXHp64Q:00011
+    - wSzmpXHp64Q:00012
+    - wSzmpXHp64Q:00013
+- id: ozEBjwyt674-concept-backhand-flick-mechanics-reviewed
+  evidence_type: definition
+  excerpt: A short-table backhand flick uses a compact wrist-and-finger action, with the forearm kept minimal and the joints separated so the stroke stays quick and controlled.
+  reason: Defines the flick as an in-the-table attacking stroke driven mainly by wrist and fingers, with minimal forearm movement.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: ozEBjwyt674
+    start_ms: 166233
+    end_ms: 189400
+    url: https://www.youtube.com/watch?v=ozEBjwyt674&t=166s
+    segment_ids:
+    - ozEBjwyt674:00058
+    - ozEBjwyt674:00065
+    - ozEBjwyt674:00066
+- id: hwUcyGY2ApQ-concept-backhand-flick-mechanics-reviewed
+  evidence_type: explanation
+  excerpt: Backhand flick execution depends on racket rotation around the wrist axis and a controlled, compact motion rather than a loose or unstable wrist flip.
+  reason: The speaker defines the backhand flick training path as short flicks with racket turn and wrist-axis rotation, ending with the racket face sideways then up.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: hwUcyGY2ApQ
+    start_ms: 199933
+    end_ms: 223666
+    url: https://www.youtube.com/watch?v=hwUcyGY2ApQ&t=199s
+    segment_ids:
+    - hwUcyGY2ApQ:00054
+    - hwUcyGY2ApQ:00055
+    - hwUcyGY2ApQ:00056
+    - hwUcyGY2ApQ:00057
+- id: 9vowMQmr-pk-concept-backhand-flick-mechanics-reviewed
+  evidence_type: demonstration
+  excerpt: Executing a backhand flick with quick wrist and finger action to generate friction and lift the ball.
+  reason: The speaker attributes the lift to quick wrist action, matching the described mechanics of a flick that generates friction and lifts the ball.
+  confidence: 0.89
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 9vowMQmr-pk
+    start_ms: 349900
+    end_ms: 360466
+    url: https://www.youtube.com/watch?v=9vowMQmr-pk&t=349s
+    segment_ids:
+    - 9vowMQmr-pk:00144
+    - 9vowMQmr-pk:00145
+    - 9vowMQmr-pk:00146
+- id: idAN8cPDZ7w-concept-backhand-flick-mechanics-reviewed
+  evidence_type: definition
+  excerpt: Backhand flick execution driven by finger action and controlled wrist mechanics to create spin with a compact motion.
+  reason: The speaker says flicking generates spin and emphasizes fingertip use, limited motion, and avoiding excessive wrist activity.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: idAN8cPDZ7w
+    start_ms: 547666
+    end_ms: 574700
+    url: https://www.youtube.com/watch?v=idAN8cPDZ7w&t=547s
+    segment_ids:
+    - idAN8cPDZ7w:00121
+    - idAN8cPDZ7w:00122
+    - idAN8cPDZ7w:00123
+    - idAN8cPDZ7w:00127
+- id: Zrw_aJYKfhA-concept-backhand-flick-mechanics-reviewed
+  evidence_type: explanation
+  excerpt: A backhand flick driven by finger and wrist action, using a compact pivot-like motion to create speed and spin.
+  reason: The speaker explicitly ties backhand execution to thumb/finger pivoting, finger pressure, and finger-led acceleration.
+  confidence: 0.88
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: Zrw_aJYKfhA
+    start_ms: 557666
+    end_ms: 563066
+    url: https://www.youtube.com/watch?v=Zrw_aJYKfhA&t=557s
+    segment_ids:
+    - Zrw_aJYKfhA:00132
+- id: igaH-B1hrmY-concept-backhand-flick-mechanics-reviewed
+  evidence_type: definition
+  excerpt: Backhand flick execution emphasizing hand positioning and pressure control.
+  reason: The speaker explicitly says the backhand flick primarily involves hand positioning and downward pressure.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: igaH-B1hrmY
+    start_ms: 20560
+    end_ms: 29120
+    url: https://www.youtube.com/watch?v=igaH-B1hrmY&t=20s
+    segment_ids:
+    - igaH-B1hrmY:00000
+    - igaH-B1hrmY:00001
+- id: uyS2qSAPuYM-concept-backhand-flick-mechanics-reviewed
+  evidence_type: definition
+  excerpt: The mechanics of a backhand flick or banana flick, where the cocked wrist helps generate more spin and control.
+  reason: The speaker says the cocked wrist makes it easier to generate spin, especially with the banana flick.
+  confidence: 0.88
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: uyS2qSAPuYM
+    start_ms: 494066
+    end_ms: 504000
+    url: https://www.youtube.com/watch?v=uyS2qSAPuYM&t=494s
+    segment_ids:
+    - uyS2qSAPuYM:00105
+    - uyS2qSAPuYM:00106
+- id: RXl1tDl8BRw-new-backhand-flick-forward-first-mechanics-reviewed
+  evidence_type: explanation
+  excerpt: A backhand flick should begin with forward motion before any upward lift; going straight upward reduces forward force and sends the ball long.
+  reason: The speaker explicitly says flicks must go forward first, then upward, and warns against going directly upward.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: RXl1tDl8BRw
+    start_ms: 139300
+    end_ms: 160066
+    url: https://www.youtube.com/watch?v=RXl1tDl8BRw&t=139s
+    segment_ids:
+    - RXl1tDl8BRw:00030
+    - RXl1tDl8BRw:00031
+    - RXl1tDl8BRw:00032
+    - RXl1tDl8BRw:00033
+- id: eDDICo0Damw-concept-backhand-flick-mechanics-reviewed
+  evidence_type: definition
+  excerpt: The mechanics of the standard backhand flick, emphasizing racket-face rotation, wrist use, and forward force generation.
+  reason: Describes the backhand flick as mostly racket-face rotation with little upper-arm or forearm use.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: eDDICo0Damw
+    start_ms: 65500
+    end_ms: 91666
+    url: https://www.youtube.com/watch?v=eDDICo0Damw&t=65s
+    segment_ids:
+    - eDDICo0Damw:00016
+    - eDDICo0Damw:00018
+    - eDDICo0Damw:00019
+- id: QKc7uSJo9mM-concept-backhand-flick-mechanics-reviewed
+  evidence_type: explanation
+  excerpt: The mechanics of flicking short balls on the backhand side, emphasizing racket angle, forward contact, forearm speed, and wrist stability.
+  reason: 'The speaker gives detailed instructions for flicking half-spin balls: contact the back of the ball, use the forearm for speed, flick forward through the ball, and keep the motion consistent.'
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: QKc7uSJo9mM
+    start_ms: 461200
+    end_ms: 484866
+    url: https://www.youtube.com/watch?v=QKc7uSJo9mM&t=461s
+    segment_ids:
+    - QKc7uSJo9mM:00085
+    - QKc7uSJo9mM:00087
+    - QKc7uSJo9mM:00088
+- id: qfB1tscK4xk-concept-backhand-flick-mechanics-reviewed
+  evidence_type: explanation
+  excerpt: A backhand flick is generated through coordinated body and arm action, using a compact coil-and-drive motion rather than arm-only motion.
+  reason: The speaker explicitly frames the topic as the backhand flick and explains its mechanics as body-assisted rather than arm-only.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: qfB1tscK4xk
+    start_ms: 0
+    end_ms: 27666
+    url: https://www.youtube.com/watch?v=qfB1tscK4xk&t=0s
+    segment_ids:
+    - qfB1tscK4xk:00000
+    - qfB1tscK4xk:00003
+    - qfB1tscK4xk:00005
+- id: ku3pB8FPhtM-concept-backhand-flick-mechanics-reviewed
+  evidence_type: definition
+  excerpt: The backhand flick should be powered mainly by the wrist in a back-to-front snap, not by the forearm or fingers alone.
+  reason: The speaker says fingers alone are limited, the forearm loses control, and the real power source is the wrist with a sharp snap forward.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: ku3pB8FPhtM
+    start_ms: 875133
+    end_ms: 900466
+    url: https://www.youtube.com/watch?v=ku3pB8FPhtM&t=875s
+    segment_ids:
+    - ku3pB8FPhtM:00172
+    - ku3pB8FPhtM:00175
+    - ku3pB8FPhtM:00176
+- id: 82C2Zhfyq0s-concept-backhand-flick-mechanics-reviewed
+  evidence_type: definition
+  excerpt: A backhand flick is taught as a small arcing motion that begins with the racket head turned sideways and finishes upward, with the wrist and forearm coordinating the rotation.
+  reason: The speaker introduces backhand flicks on short balls and describes the racket-head rotation from sideways to upward.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 82C2Zhfyq0s
+    start_ms: 573566
+    end_ms: 593500
+    url: https://www.youtube.com/watch?v=82C2Zhfyq0s&t=573s
+    segment_ids:
+    - 82C2Zhfyq0s:00106
+    - 82C2Zhfyq0s:00108
+- id: 9EcoI6PnOzE-concept-backhand-flick-mechanics-reviewed
+  evidence_type: explanation
+  excerpt: Mechanics of the backhand flick emphasizing starting position, brushing phase, stable elbow, and acceleration phase.
+  reason: The speaker specifies where Point A should start, what A-to-B and B-to-C do, and how the elbow/wrist/forearm should behave.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 9EcoI6PnOzE
+    start_ms: 92033
+    end_ms: 113033
+    url: https://www.youtube.com/watch?v=9EcoI6PnOzE&t=92s
+    segment_ids:
+    - 9EcoI6PnOzE:00020
+    - 9EcoI6PnOzE:00023
+    - 9EcoI6PnOzE:00024
+- id: yqSECRch8WM-concept-backhand-flick-mechanics-reviewed
+  evidence_type: definition
+  excerpt: A backhand flick requires rotational execution rather than simply pushing or using a flat counter-drive.
+  reason: The speaker says the backhand flick works the same way and must be rotated to execute, not merely pushed or counter-driven.
+  confidence: 0.91
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: yqSECRch8WM
+    start_ms: 207433
+    end_ms: 216033
+    url: https://www.youtube.com/watch?v=yqSECRch8WM&t=207s
+    segment_ids:
+    - yqSECRch8WM:00023
+- id: igaH-B1hrmY-concept-backhand-flick-mechanics-codex-reviewed
+  evidence_type: explanation
+  excerpt: Backhand flick primarily involves hand positioning. In this example, the speaker applies downward pressure, then says the pressure is already enough and not to press harder.
+  reason: Focus on hand positioning. The downward pressure is part of this example; once enough pressure is applied, do not press harder.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: igaH-B1hrmY
+    start_ms: 20560
+    end_ms: 44960
+    url: https://www.youtube.com/watch?v=igaH-B1hrmY&t=20s
+    segment_ids:
+    - igaH-B1hrmY:00000
+    - igaH-B1hrmY:00001
+    - igaH-B1hrmY:00002
 relations:
-  - relation_type: used_with
-    target_concept_id: concept-backhand-flick-on-rise
-    confidence: 0.98
-    review_status: approved
-    sources:
-      - {video_id: BToLYdKLIMM, start_ms: 478479, end_ms: 496440, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=478s", segment_ids: ["BToLYdKLIMM:00178", "BToLYdKLIMM:00179", "BToLYdKLIMM:00180", "BToLYdKLIMM:00181", "BToLYdKLIMM:00182", "BToLYdKLIMM:00183"]}
+- relation_type: used_with
+  target_concept_id: concept-backhand-flick-on-rise
+  confidence: 0.98
+  review_status: unreviewed
+  sources:
+  - {video_id: BToLYdKLIMM, start_ms: 478479, end_ms: 496440, url: "https://www.youtube.com/watch?v=BToLYdKLIMM&t=478s", segment_ids: ["BToLYdKLIMM:00178", "BToLYdKLIMM:00179", "BToLYdKLIMM:00180", "BToLYdKLIMM:00181", "BToLYdKLIMM:00182", "BToLYdKLIMM:00183"]}

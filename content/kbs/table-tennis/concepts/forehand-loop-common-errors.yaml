@@ -2,274 +2,355 @@ id: concept-forehand-loop-common-errors
 slug: forehand-loop-common-errors
 label: Forehand loop common errors
 aliases: [loop corrections, push-brush error, vertical brushing error]
-short_definition: Common loop failures include pushing before brushing, lifting only upward, rotating the wrist in place, reaching, and using maximum power before the stroke is stable.
+short_definition: Source-described loop errors include pushing before brushing, rotating the wrist without forward movement, unstable racket-face contact, an oversized swing, and excessive upward forearm force.
 evidence_summary: >-
-  Common forehand loop mistakes usually come from too much vertical lift and not enough forward
-  drive, which sends the ball long or leaves the stroke spinless. An unstable racket face,
-  isolated wrist action, excessive upper-arm use, or an oversized swing can all reduce control and
-  make the contact wobble, so the fix is to keep the motion compact, stable, and forward-directed.
-evidence_summary_source_hash: "sha256:21d5004ca4fd443f0ffbe7812de38f64b19659869aadabbf6bdaf00f2a74ce0b"
-evidence_summary_generator: "codex"
-detailed_definition: These errors break the intended sequence or contact geometry. Useful corrections preserve a curved racket path, cover the ball, move forward through contact, maintain spacing, and develop the stroke below maximum effort before adding speed.
+  The examples describe a push-first action leaving no time to brush, wrist rotation in place failing to send the ball over, and going long with excessive upper-arm use, unstable contact, an oversized swing or too much upward forearm force. Corrections include brushing over the ball and forward-and-upward forearm movement. A high arc alone is not called the problem in one lesson; adding power with that same high-arcing swing is.
+detailed_definition: The cited corrections describe wrapping and brushing rather than pushing first, brushing over the ball, and combining spin generation with forward movement. They also address unstable wrist or racket-face contact and an overly large or upward swing. One lesson explicitly distinguishes a high arc alone from the problem of adding power with that same high-arcing swing.
 concept_type: troubleshooting
-facets: {category: [error-correction, mechanics], side: [forehand], spin: [topspin], level: [beginner, intermediate]}
-difficulty: beginner
+facets:
+  category:
+  - error-correction
+  - stroke
+  side:
+  - forehand
+  spin:
+  - topspin
+difficulty:
 review_status: approved
 evidence:
-  - id: error-push-before-brush-global
-    evidence_type: mistake
-    excerpt: If the arm pushes first, the ball leaves the racket before the later brushing action can affect it.
-    reason: Explains why a push-then-wrist sequence does not create useful spin.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    visual_source: {video_id: V2YGbh829eU, start_ms: 135000, end_ms: 150000, url: "https://www.youtube.com/watch?v=V2YGbh829eU&t=135s", selection_method: nearby_visual_inference, note: Ball-on-racket demonstration contrasts pushing first with wrapping and brushing.}
-    review_status: approved
-    source: {video_id: V2YGbh829eU, start_ms: 145533, end_ms: 154800, url: "https://www.youtube.com/watch?v=V2YGbh829eU&t=145s", segment_ids: ["V2YGbh829eU:00034", "V2YGbh829eU:00035"]}
-  - id: error-brush-upward-global
-    evidence_type: correction
-    excerpt: Brush over the top of the ball; the path should not simply travel upward.
-    reason: Corrects loops that fly long because the action is too vertical.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    visual_source: {video_id: Cq6MbP6TEdc, start_ms: 378000, end_ms: 390000, url: "https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=378s", selection_method: nearby_visual_inference, note: Live loops demonstrate covering the ball from different table distances.}
-    review_status: approved
-    source: {video_id: Cq6MbP6TEdc, start_ms: 379266, end_ms: 387700, url: "https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=379s", segment_ids: ["Cq6MbP6TEdc:00094", "Cq6MbP6TEdc:00095"]}
-  - id: error-wrist-in-place-spinmaster
-    evidence_type: correction
-    excerpt: Racket rotation must combine with forward movement; rotating the wrist in place will not send the ball over.
-    reason: Corrects an isolated wrist action without forward travel.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    visual_source: {video_id: V__nqiNHeKE, start_ms: 260000, end_ms: 274000, url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=260s", selection_method: nearby_visual_inference, note: Close demonstration contrasts forward action with rotation in place.}
-    review_status: approved
-    source: {video_id: V__nqiNHeKE, start_ms: 267880, end_ms: 276360, url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=267s", segment_ids: ["V__nqiNHeKE:00100", "V__nqiNHeKE:00101", "V__nqiNHeKE:00102"]}
-  - id: zd8tcVUWwK4-cand-forehand-loop-common-errors-1
-    evidence_type: explanation
-    excerpt: Speaker enumerates reasons forehand topspin goes long, centering on unstable contact and oversized or misdirected motion.
-    reason: Common causes of forehand topspin going long include excessive upper-arm use, unstable racket face or wrist at contact, an overly upward forearm path, and an oversized swing.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: zd8tcVUWwK4
-      start_ms: 4160
-      end_ms: 30480
-      url: https://www.youtube.com/watch?v=zd8tcVUWwK4&t=4s
-      segment_ids:
-        - zd8tcVUWwK4:00002
-        - zd8tcVUWwK4:00003
-        - zd8tcVUWwK4:00004
-        - zd8tcVUWwK4:00005
-        - zd8tcVUWwK4:00006
-        - zd8tcVUWwK4:00007
-        - zd8tcVUWwK4:00008
-        - zd8tcVUWwK4:00009
-  - id: zd8tcVUWwK4-cand-forehand-loop-common-errors-2
-    evidence_type: explanation
-    excerpt: Speaker enumerates reasons forehand topspin goes long, centering on unstable contact and oversized or misdirected motion.
-    reason: Common causes of forehand topspin going long include excessive upper-arm use, unstable racket face or wrist at contact, an overly upward forearm path, and an oversized swing.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: zd8tcVUWwK4
-      start_ms: 38640
-      end_ms: 61080
-      url: https://www.youtube.com/watch?v=zd8tcVUWwK4&t=38s
-      segment_ids:
-        - zd8tcVUWwK4:00014
-        - zd8tcVUWwK4:00015
-        - zd8tcVUWwK4:00022
-        - zd8tcVUWwK4:00023
-  - id: _biE-Dzy0aM-concept-forehand-loop-common-errors-reviewed
-    evidence_type: mistake
-    excerpt: Common mistakes in forehand looping, especially overusing upward force, staying below the ball, or using too much swing size, which send the ball long.
-    reason: The speaker explains that too much upward force or a wobbling racket face makes the ball go long.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: _biE-Dzy0aM
-      start_ms: 354840
-      end_ms: 374920
-      url: https://www.youtube.com/watch?v=_biE-Dzy0aM&t=354s
-      segment_ids:
-        - _biE-Dzy0aM:00142
-        - _biE-Dzy0aM:00143
-        - _biE-Dzy0aM:00144
-        - _biE-Dzy0aM:00145
-        - _biE-Dzy0aM:00146
-        - _biE-Dzy0aM:00147
-        - _biE-Dzy0aM:00148
-        - _biE-Dzy0aM:00149
-  - id: zMP_ptkdNHk-concept-forehand-loop-common-errors-reviewed
-    evidence_type: mistake
-    excerpt: Typical mistakes when looping heavy or ambiguous spin, including over-upward motion, being too close, or failing to drive forward.
-    reason: The speaker diagnoses a miss as being too upward with no forward drive.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: zMP_ptkdNHk
-      start_ms: 193520
-      end_ms: 203960
-      url: https://www.youtube.com/watch?v=zMP_ptkdNHk&t=193s
-      segment_ids:
-        - zMP_ptkdNHk:00071
-        - zMP_ptkdNHk:00072
-        - zMP_ptkdNHk:00073
-        - zMP_ptkdNHk:00074
-  - id: DaHEb394UtA-concept-forehand-loop-common-errors-reviewed
-    evidence_type: mistake
-    excerpt: Common looping mistakes include hitting through the ball instead of brushing, using a too-open racket angle, and trying to loop with straight up or straight forward motions.
-    reason: The speaker identifies overhitting, failing to brush, an overly open racket angle, and looping with a straight path as causes of balls going long or lacking spin.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: DaHEb394UtA
-      start_ms: 147280
-      end_ms: 163519
-      url: https://www.youtube.com/watch?v=DaHEb394UtA&t=147s
-      segment_ids:
-        - DaHEb394UtA:00048
-        - DaHEb394UtA:00049
-        - DaHEb394UtA:00050
-        - DaHEb394UtA:00051
-        - DaHEb394UtA:00052
-  - id: PYpTLzDBuME-concept-forehand-loop-common-errors-reviewed
-    evidence_type: mistake
-    excerpt: Common loop mistakes including a swing that is too large, too small, too close to the body, or started too late.
-    reason: Explains that an oversized backswing often comes from no body movement or rotation and too much arm motion.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: PYpTLzDBuME
-      start_ms: 370033
-      end_ms: 397466
-      url: https://www.youtube.com/watch?v=PYpTLzDBuME&t=370s
-      segment_ids:
-        - PYpTLzDBuME:00103
-        - PYpTLzDBuME:00104
-        - PYpTLzDBuME:00105
-        - PYpTLzDBuME:00106
-        - PYpTLzDBuME:00107
-        - PYpTLzDBuME:00108
-        - PYpTLzDBuME:00109
-        - PYpTLzDBuME:00110
-        - PYpTLzDBuME:00111
-  - id: oB03htaZU8A-concept-forehand-loop-common-errors-reviewed
-    evidence_type: mistake
-    excerpt: 'The main mistakes in forehand looping: improper brushing, insufficient forward drive, and failing to brake the forearm.'
-    reason: The speaker explicitly lists the three common mistakes and their consequences.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: oB03htaZU8A
-      start_ms: 242100
-      end_ms: 260933
-      url: https://www.youtube.com/watch?v=oB03htaZU8A&t=242s
-      segment_ids:
-        - oB03htaZU8A:00089
-        - oB03htaZU8A:00090
-        - oB03htaZU8A:00091
-        - oB03htaZU8A:00092
-        - oB03htaZU8A:00093
-        - oB03htaZU8A:00094
-        - oB03htaZU8A:00095
-        - oB03htaZU8A:00096
-  - id: 5x1wVIb3Hog-concept-forehand-loop-common-errors-reviewed
-    evidence_type: mistake
-    excerpt: Typical looping mistakes such as over-constraining the stroke, keeping it too small, or withholding power.
-    reason: The speaker identifies a common mistake as being afraid to release power, making the loop too small and too tight, which reduces control.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 5x1wVIb3Hog
-      start_ms: 291666
-      end_ms: 317766
-      url: https://www.youtube.com/watch?v=5x1wVIb3Hog&t=291s
-      segment_ids:
-        - 5x1wVIb3Hog:00092
-        - 5x1wVIb3Hog:00093
-        - 5x1wVIb3Hog:00094
-        - 5x1wVIb3Hog:00096
-        - 5x1wVIb3Hog:00097
-  - id: dJJtJQvuwOY-concept-forehand-loop-common-errors-reviewed
-    evidence_type: mistake
-    excerpt: Common faults in looping include a vertical-only stroke, insufficient forward drive, and trying to force power too early.
-    reason: The speaker names vertical hitting and tension as reasons the player cannot generate spin or power.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: dJJtJQvuwOY
-      start_ms: 640800
-      end_ms: 668700
-      url: https://www.youtube.com/watch?v=dJJtJQvuwOY&t=640s
-      segment_ids:
-        - dJJtJQvuwOY:00086
-        - dJJtJQvuwOY:00087
-  - id: 8143qxSjk5A-concept-forehand-loop-common-errors-reviewed
-    evidence_type: mistake
-    excerpt: Common looping mistakes such as pushing forward, brushing from directly behind, or using the wrong contact path that reduces spin.
-    reason: The speaker calls out fake brushing, pushing forward, and contacting straight from behind as incorrect loop mechanics.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 8143qxSjk5A
-      start_ms: 160733
-      end_ms: 182833
-      url: https://www.youtube.com/watch?v=8143qxSjk5A&t=160s
-      segment_ids:
-        - 8143qxSjk5A:00036
-        - 8143qxSjk5A:00037
-        - 8143qxSjk5A:00038
-        - 8143qxSjk5A:00039
-        - 8143qxSjk5A:00040
-  - id: UhJHyel0ogQ-concept-forehand-loop-common-errors-reviewed
-    evidence_type: mistake
-    excerpt: Common loop mistakes include using a pushing motion, using too little backswing, contacting too early, or carrying drive habits into the loop.
-    reason: The transcript describes the pushing tendency as a common amateur problem and says it produces neither speed nor spin and fails to create the arcing motion needed for topspin.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: UhJHyel0ogQ
-      start_ms: 788000
-      end_ms: 802266
-      url: https://www.youtube.com/watch?v=UhJHyel0ogQ&t=788s
-      segment_ids:
-        - UhJHyel0ogQ:00152
-        - UhJHyel0ogQ:00153
-  - id: _biE-Dzy0aM-concept-forehand-loop-common-errors-codex-reviewed
-    evidence_type: mistake
-    excerpt: Excessive upward forearm force can make the ball go long, even when the racket face is closed.
-    reason: The selected contiguous 20-second span directly explains that too much upward force makes the ball go long despite closing the racket face.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: _biE-Dzy0aM
-      start_ms: 354840
-      end_ms: 374920
-      url: https://www.youtube.com/watch?v=_biE-Dzy0aM&t=354s
-      segment_ids:
-        - _biE-Dzy0aM:00142
-        - _biE-Dzy0aM:00143
-        - _biE-Dzy0aM:00144
-        - _biE-Dzy0aM:00145
-        - _biE-Dzy0aM:00146
-        - _biE-Dzy0aM:00147
-        - _biE-Dzy0aM:00148
-        - _biE-Dzy0aM:00149
+- id: error-push-before-brush-global
+  evidence_type: mistake
+  excerpt: The lesson contrasts wrapping the ball with amateurs pushing forward first using elbow and forearm, then flicking the wrist. It says the initial push makes the ball leave the racket before a later brush can affect it.
+  reason: Wrap and brush rather than pushing first and flicking the wrist later; the lesson says the ball has already left after that initial push.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  visual_source: {video_id: V2YGbh829eU, start_ms: 135000, end_ms: 150000, url: "https://www.youtube.com/watch?v=V2YGbh829eU&t=135s", selection_method: nearby_visual_inference, note: Unverified nearby visual proposal; complete-clip inspection is required to confirm whether it illustrates this correction.}
+  review_status: approved
+  source:
+    video_id: V2YGbh829eU
+    start_ms: 130900
+    end_ms: 154800
+    url: https://www.youtube.com/watch?v=V2YGbh829eU&t=130s
+    segment_ids:
+    - V2YGbh829eU:00032
+    - V2YGbh829eU:00033
+    - V2YGbh829eU:00034
+    - V2YGbh829eU:00035
+- id: error-brush-upward-global
+  evidence_type: correction
+  excerpt: The lesson says a high arc alone is not the problem; the problem is adding power with the same high-arcing swing, after which the ball goes out. It recommends the mindset of brushing over the top of the ball, and describes brushing over the ball far from and close to the table.
+  reason: For the stated problem of adding power with the same high-arcing swing, use the lesson’s brushing-over-the-top mindset.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  visual_source: {video_id: Cq6MbP6TEdc, start_ms: 378000, end_ms: 390000, url: "https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=378s", selection_method: nearby_visual_inference, note: Unverified nearby visual proposal; complete-clip inspection is required to confirm whether it illustrates this correction.}
+  review_status: approved
+  source:
+    video_id: Cq6MbP6TEdc
+    start_ms: 355733
+    end_ms: 384600
+    url: https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=355s
+    segment_ids:
+    - Cq6MbP6TEdc:00089
+    - Cq6MbP6TEdc:00090
+    - Cq6MbP6TEdc:00091
+    - Cq6MbP6TEdc:00092
+    - Cq6MbP6TEdc:00093
+    - Cq6MbP6TEdc:00094
+- id: error-wrist-in-place-spinmaster
+  evidence_type: correction
+  excerpt: The lesson says spin generation must combine with forward movement; rotating the wrist in place will not send the ball over.
+  reason: Combine spin generation with forward movement rather than rotating the wrist in place.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  visual_source: {video_id: V__nqiNHeKE, start_ms: 260000, end_ms: 274000, url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=260s", selection_method: nearby_visual_inference, note: Unverified nearby visual proposal; complete-clip inspection is required to confirm whether it illustrates this correction.}
+  review_status: approved
+  source:
+    video_id: V__nqiNHeKE
+    start_ms: 265480
+    end_ms: 276360
+    url: https://www.youtube.com/watch?v=V__nqiNHeKE&t=265s
+    segment_ids:
+    - V__nqiNHeKE:00099
+    - V__nqiNHeKE:00100
+    - V__nqiNHeKE:00101
+    - V__nqiNHeKE:00102
+- id: zd8tcVUWwK4-cand-forehand-loop-common-errors-1
+  evidence_type: explanation
+  excerpt: The speaker lists too much upper-arm use while swinging forward and “breaking too late,” then identifies racket-face shaking at contact and an unstable wrist as a main cause of errors.
+  reason: The stated long-ball problems include excessive upper-arm use, “breaking too late,” and unstable racket-face or wrist contact.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: zd8tcVUWwK4
+    start_ms: 4160
+    end_ms: 30480
+    url: https://www.youtube.com/watch?v=zd8tcVUWwK4&t=4s
+    segment_ids:
+    - zd8tcVUWwK4:00002
+    - zd8tcVUWwK4:00003
+    - zd8tcVUWwK4:00004
+    - zd8tcVUWwK4:00005
+    - zd8tcVUWwK4:00006
+    - zd8tcVUWwK4:00007
+    - zd8tcVUWwK4:00008
+    - zd8tcVUWwK4:00009
+- id: zd8tcVUWwK4-cand-forehand-loop-common-errors-2
+  evidence_type: explanation
+  excerpt: Trying to finish at eyebrow height is described as giving the ball too much arc. The lesson recommends driving the forearm forward and up at contact, warns that excessive height makes the launch angle and arc hard to control, and identifies an overly large swing as another problem.
+  reason: Use forward-and-upward forearm contact rather than an excessively high path, and avoid an oversized swing in this long-ball correction.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: zd8tcVUWwK4
+    start_ms: 38640
+    end_ms: 61080
+    url: https://www.youtube.com/watch?v=zd8tcVUWwK4&t=38s
+    segment_ids:
+    - zd8tcVUWwK4:00014
+    - zd8tcVUWwK4:00015
+    - zd8tcVUWwK4:00016
+    - zd8tcVUWwK4:00017
+    - zd8tcVUWwK4:00018
+    - zd8tcVUWwK4:00019
+    - zd8tcVUWwK4:00020
+    - zd8tcVUWwK4:00021
+    - zd8tcVUWwK4:00022
+    - zd8tcVUWwK4:00023
+- id: _biE-Dzy0aM-concept-forehand-loop-common-errors-reviewed
+  evidence_type: mistake
+  excerpt: Common mistakes in forehand looping, especially overusing upward force, staying below the ball, or using too much swing size, which send the ball long.
+  reason: The speaker explains that too much upward force or a wobbling racket face makes the ball go long.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: _biE-Dzy0aM
+    start_ms: 354840
+    end_ms: 374920
+    url: https://www.youtube.com/watch?v=_biE-Dzy0aM&t=354s
+    segment_ids:
+    - _biE-Dzy0aM:00142
+    - _biE-Dzy0aM:00143
+    - _biE-Dzy0aM:00144
+    - _biE-Dzy0aM:00145
+    - _biE-Dzy0aM:00146
+    - _biE-Dzy0aM:00147
+    - _biE-Dzy0aM:00148
+    - _biE-Dzy0aM:00149
+- id: zMP_ptkdNHk-concept-forehand-loop-common-errors-reviewed
+  evidence_type: mistake
+  excerpt: Typical mistakes when looping heavy or ambiguous spin, including over-upward motion, being too close, or failing to drive forward.
+  reason: The speaker diagnoses a miss as being too upward with no forward drive.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: zMP_ptkdNHk
+    start_ms: 193520
+    end_ms: 203960
+    url: https://www.youtube.com/watch?v=zMP_ptkdNHk&t=193s
+    segment_ids:
+    - zMP_ptkdNHk:00071
+    - zMP_ptkdNHk:00072
+    - zMP_ptkdNHk:00073
+    - zMP_ptkdNHk:00074
+- id: DaHEb394UtA-concept-forehand-loop-common-errors-reviewed
+  evidence_type: mistake
+  excerpt: Common looping mistakes include hitting through the ball instead of brushing, using a too-open racket angle, and trying to loop with straight up or straight forward motions.
+  reason: The speaker identifies overhitting, failing to brush, an overly open racket angle, and looping with a straight path as causes of balls going long or lacking spin.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: DaHEb394UtA
+    start_ms: 147280
+    end_ms: 163519
+    url: https://www.youtube.com/watch?v=DaHEb394UtA&t=147s
+    segment_ids:
+    - DaHEb394UtA:00048
+    - DaHEb394UtA:00049
+    - DaHEb394UtA:00050
+    - DaHEb394UtA:00051
+    - DaHEb394UtA:00052
+- id: PYpTLzDBuME-concept-forehand-loop-common-errors-reviewed
+  evidence_type: mistake
+  excerpt: Common loop mistakes including a swing that is too large, too small, too close to the body, or started too late.
+  reason: Explains that an oversized backswing often comes from no body movement or rotation and too much arm motion.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: PYpTLzDBuME
+    start_ms: 370033
+    end_ms: 397466
+    url: https://www.youtube.com/watch?v=PYpTLzDBuME&t=370s
+    segment_ids:
+    - PYpTLzDBuME:00103
+    - PYpTLzDBuME:00104
+    - PYpTLzDBuME:00105
+    - PYpTLzDBuME:00106
+    - PYpTLzDBuME:00107
+    - PYpTLzDBuME:00108
+    - PYpTLzDBuME:00109
+    - PYpTLzDBuME:00110
+    - PYpTLzDBuME:00111
+- id: oB03htaZU8A-concept-forehand-loop-common-errors-reviewed
+  evidence_type: mistake
+  excerpt: 'The main mistakes in forehand looping: improper brushing, insufficient forward drive, and failing to brake the forearm.'
+  reason: The speaker explicitly lists the three common mistakes and their consequences.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: oB03htaZU8A
+    start_ms: 242100
+    end_ms: 260933
+    url: https://www.youtube.com/watch?v=oB03htaZU8A&t=242s
+    segment_ids:
+    - oB03htaZU8A:00089
+    - oB03htaZU8A:00090
+    - oB03htaZU8A:00091
+    - oB03htaZU8A:00092
+    - oB03htaZU8A:00093
+    - oB03htaZU8A:00094
+    - oB03htaZU8A:00095
+    - oB03htaZU8A:00096
+- id: 5x1wVIb3Hog-concept-forehand-loop-common-errors-reviewed
+  evidence_type: mistake
+  excerpt: Typical looping mistakes such as over-constraining the stroke, keeping it too small, or withholding power.
+  reason: The speaker identifies a common mistake as being afraid to release power, making the loop too small and too tight, which reduces control.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 5x1wVIb3Hog
+    start_ms: 291666
+    end_ms: 317766
+    url: https://www.youtube.com/watch?v=5x1wVIb3Hog&t=291s
+    segment_ids:
+    - 5x1wVIb3Hog:00092
+    - 5x1wVIb3Hog:00093
+    - 5x1wVIb3Hog:00094
+    - 5x1wVIb3Hog:00096
+    - 5x1wVIb3Hog:00097
+- id: dJJtJQvuwOY-concept-forehand-loop-common-errors-reviewed
+  evidence_type: mistake
+  excerpt: Common faults in looping include a vertical-only stroke, insufficient forward drive, and trying to force power too early.
+  reason: The speaker names vertical hitting and tension as reasons the player cannot generate spin or power.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: dJJtJQvuwOY
+    start_ms: 640800
+    end_ms: 668700
+    url: https://www.youtube.com/watch?v=dJJtJQvuwOY&t=640s
+    segment_ids:
+    - dJJtJQvuwOY:00086
+    - dJJtJQvuwOY:00087
+- id: 8143qxSjk5A-concept-forehand-loop-common-errors-reviewed
+  evidence_type: mistake
+  excerpt: Common looping mistakes such as pushing forward, brushing from directly behind, or using the wrong contact path that reduces spin.
+  reason: The speaker calls out fake brushing, pushing forward, and contacting straight from behind as incorrect loop mechanics.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 8143qxSjk5A
+    start_ms: 160733
+    end_ms: 182833
+    url: https://www.youtube.com/watch?v=8143qxSjk5A&t=160s
+    segment_ids:
+    - 8143qxSjk5A:00036
+    - 8143qxSjk5A:00037
+    - 8143qxSjk5A:00038
+    - 8143qxSjk5A:00039
+    - 8143qxSjk5A:00040
+- id: UhJHyel0ogQ-concept-forehand-loop-common-errors-reviewed
+  evidence_type: mistake
+  excerpt: Common loop mistakes include using a pushing motion, using too little backswing, contacting too early, or carrying drive habits into the loop.
+  reason: The transcript describes the pushing tendency as a common amateur problem and says it produces neither speed nor spin and fails to create the arcing motion needed for topspin.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: UhJHyel0ogQ
+    start_ms: 788000
+    end_ms: 802266
+    url: https://www.youtube.com/watch?v=UhJHyel0ogQ&t=788s
+    segment_ids:
+    - UhJHyel0ogQ:00152
+    - UhJHyel0ogQ:00153
+- id: _biE-Dzy0aM-concept-forehand-loop-common-errors-codex-reviewed
+  evidence_type: mistake
+  excerpt: Excessive upward forearm force can make the ball go long, even when the racket face is closed.
+  reason: The lesson links excessive upward forearm force with racket-face wobble and a trajectory that goes long even if the face is closed.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: _biE-Dzy0aM
+    start_ms: 354840
+    end_ms: 374920
+    url: https://www.youtube.com/watch?v=_biE-Dzy0aM&t=354s
+    segment_ids:
+    - _biE-Dzy0aM:00142
+    - _biE-Dzy0aM:00143
+    - _biE-Dzy0aM:00144
+    - _biE-Dzy0aM:00145
+    - _biE-Dzy0aM:00146
+    - _biE-Dzy0aM:00147
+    - _biE-Dzy0aM:00148
+    - _biE-Dzy0aM:00149
+- id: zd8tcVUWwK4-cand-forehand-loop-common-errors-1-forehand-context
+  evidence_type: explanation
+  excerpt: The speaker asks whether applying power on forehand topspin mostly sends the ball long or into the net, then says most players hit long.
+  reason: For forehand topspin played with power, the speaker says most players hit long rather than into the net.
+  confidence: 0.96
+  visual_status: not_visual
+  source:
+    video_id: zd8tcVUWwK4
+    start_ms: 0
+    end_ms: 10000
+    url: https://www.youtube.com/watch?v=zd8tcVUWwK4&t=0s
+    segment_ids:
+    - zd8tcVUWwK4:00000
+    - zd8tcVUWwK4:00001
+    - zd8tcVUWwK4:00002
+  visual_source:
+  review_status: approved
+- id: error-brush-upward-global-power-high-arc-context
+  evidence_type: explanation
+  excerpt: The speaker describes brushing over the ball both far from and close to the table, and says the path is not going upwards.
+  reason: The speaker describes an over-the-ball path at both distances rather than an upward path.
+  confidence: 0.97
+  visual_status: not_visual
+  source:
+    video_id: Cq6MbP6TEdc
+    start_ms: 379266
+    end_ms: 387700
+    url: https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=379s
+    segment_ids:
+    - Cq6MbP6TEdc:00094
+    - Cq6MbP6TEdc:00095
+  visual_source:
+  review_status: approved
 relations:
-  - relation_type: corrects
-    target_concept_id: concept-forehand-loop
-    confidence: 0.96
-    review_status: approved
-    sources: [{video_id: Cq6MbP6TEdc, start_ms: 379266, end_ms: 387700, url: "https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=379s", segment_ids: ["Cq6MbP6TEdc:00094", "Cq6MbP6TEdc:00095"]}]
+- relation_type: corrects
+  target_concept_id: concept-forehand-loop
+  confidence: 0.96
+  review_status: unreviewed
+  sources:
+  - video_id: Cq6MbP6TEdc
+    start_ms: 361266
+    end_ms: 387700
+    url: https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=361s
+    segment_ids:
+    - Cq6MbP6TEdc:00090
+    - Cq6MbP6TEdc:00091
+    - Cq6MbP6TEdc:00092
+    - Cq6MbP6TEdc:00093
+    - Cq6MbP6TEdc:00094
+    - Cq6MbP6TEdc:00095

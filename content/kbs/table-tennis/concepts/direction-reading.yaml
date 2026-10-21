@@ -1,800 +1,817 @@
 id: concept-direction-reading
 slug: direction-reading
-label: Direction reading
+label: Reading the opponent and ball
 aliases:
-  - delayed commitment
-  - read before moving
-short_definition: Delay commitment long enough to read the opponent's direction, then move decisively into the selected position.
+- direction reading
+- ball tracking
+- read before committing
+short_definition: Reading the opponent’s action and the incoming ball before committing to a response.
 evidence_summary: >-
-  Direction reading must happen before the stroke is committed, because early movement without
-  clear information leads to rushed errors. The player should watch the opponent and the ball
-  first, then move and swing only after the direction and spin are understood. When spin is
-  uncertain, the safest response is to stay forward in intent and adjust the movement based on
-  what has been read.
-evidence_summary_source_hash: "sha256:ef9bc8dfd4133b2ce4119e54404ab9c553f480ba9fb91d7e1ad1b4e631d47622"
-evidence_summary_generator: "codex"
+  The lessons connect observation with stroke choice and preparation. One warns against drawing back before reading the opponent’s action. Another starts movement when the opponent commits to a stroke direction, with adjustments for wide and narrow angles. Ball-tracking instruction follows the trajectory from racket to racket. Serve-return examples compare the spin expected after spin and no-spin serves and call for a corresponding looping method. A separate cue reads the landing point and trajectory before the body rises.
 concept_type: perception
 facets:
   category:
-    - fundamentals
-  side:
-    - neutral
-  level:
-    - intermediate
-difficulty: intermediate
+  - fundamentals
+difficulty:
 review_status: approved
 evidence:
-  - id: QET6W3rjOxo-cand-delayed-commit-after-read-1
-    evidence_type: explanation
-    excerpt: Keep the hands neutral and avoid starting the stroke too early; first read the opponent's ball length and intent, then choose the stroke to preserve rhythm and force connection.
-    reason: The speaker explains that early stroke commitment causes indecision and recommends reading first before drawing back.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: QET6W3rjOxo
-      start_ms: 321480
-      end_ms: 350640
-      url: "https://www.youtube.com/watch?v=QET6W3rjOxo&t=321s"
-      segment_ids: &id001
-        - "QET6W3rjOxo:00129"
-        - "QET6W3rjOxo:00130"
-        - "QET6W3rjOxo:00131"
-        - "QET6W3rjOxo:00132"
-        - "QET6W3rjOxo:00133"
-        - "QET6W3rjOxo:00134"
-        - "QET6W3rjOxo:00135"
-        - "QET6W3rjOxo:00136"
-        - "QET6W3rjOxo:00137"
-        - "QET6W3rjOxo:00138"
-        - "QET6W3rjOxo:00139"
-        - "QET6W3rjOxo:00140"
-  - id: QET6W3rjOxo-cand-delayed-commit-after-read-2
-    evidence_type: explanation
-    excerpt: Keep the hands neutral and avoid starting the stroke too early; first read the opponent's ball length and intent, then choose the stroke to preserve rhythm and force connection.
-    reason: The speaker explains that early stroke commitment causes indecision and recommends reading first before drawing back.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: QET6W3rjOxo
-      start_ms: 348480
-      end_ms: 373680
-      url: "https://www.youtube.com/watch?v=QET6W3rjOxo&t=348s"
-      segment_ids:
-        - "QET6W3rjOxo:00141"
-        - "QET6W3rjOxo:00142"
-        - "QET6W3rjOxo:00143"
-        - "QET6W3rjOxo:00147"
-        - "QET6W3rjOxo:00148"
-        - "QET6W3rjOxo:00149"
-        - "QET6W3rjOxo:00150"
-        - "QET6W3rjOxo:00151"
-        - "QET6W3rjOxo:00152"
-        - "QET6W3rjOxo:00153"
-  - id: I-_3TIjU4qI-candidate-early-direction-reading-1
-    evidence_type: explanation
-    excerpt: Reading the opponent's stroke direction and intent early allows the player to start moving before the ball crosses the net, improving setup time and shot quality.
-    reason: The speaker says players move too late and explains starting movement as soon as the opponent commits to a direction.
-    confidence: 0.91
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: I-_3TIjU4qI
-      start_ms: 254560
-      end_ms: 276880
-      url: "https://www.youtube.com/watch?v=I-_3TIjU4qI&t=254s"
-      segment_ids:
-        - "I-_3TIjU4qI:00112"
-        - "I-_3TIjU4qI:00113"
-        - "I-_3TIjU4qI:00114"
-        - "I-_3TIjU4qI:00115"
-        - "I-_3TIjU4qI:00116"
-        - "I-_3TIjU4qI:00117"
-        - "I-_3TIjU4qI:00118"
-        - "I-_3TIjU4qI:00119"
-        - "I-_3TIjU4qI:00120"
-  - id: I-_3TIjU4qI-candidate-early-direction-reading-2
-    evidence_type: explanation
-    excerpt: Reading the opponent's stroke direction and intent early allows the player to start moving before the ball crosses the net, improving setup time and shot quality.
-    reason: The speaker ties early observation of the opponent's backswing to having enough time to prepare a power loop.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: I-_3TIjU4qI
-      start_ms: 373040
-      end_ms: 399120
-      url: "https://www.youtube.com/watch?v=I-_3TIjU4qI&t=373s"
-      segment_ids:
-        - "I-_3TIjU4qI:00163"
-        - "I-_3TIjU4qI:00164"
-        - "I-_3TIjU4qI:00165"
-        - "I-_3TIjU4qI:00166"
-        - "I-_3TIjU4qI:00167"
-        - "I-_3TIjU4qI:00168"
-        - "I-_3TIjU4qI:00169"
-        - "I-_3TIjU4qI:00170"
-        - "I-_3TIjU4qI:00171"
-        - "I-_3TIjU4qI:00172"
-        - "I-_3TIjU4qI:00173"
-  - id: G7eiadOxN8E-cand-ball-tracking-1
-    evidence_type: definition
-    excerpt: Watching the ball continuously from the opponent's racket into your contact zone and out again to improve contact accuracy and anticipation.
-    reason: The speaker states that players must track the ball with their eyes and get properly positioned before striking.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: G7eiadOxN8E
-      start_ms: 448466
-      end_ms: 470133
-      url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=448s"
-      segment_ids:
-        - "G7eiadOxN8E:00102"
-        - "G7eiadOxN8E:00103"
-        - "G7eiadOxN8E:00106"
-  - id: G7eiadOxN8E-cand-ball-tracking-2
-    evidence_type: demonstration
-    excerpt: Watching the ball continuously from the opponent's racket into your contact zone and out again to improve contact accuracy and anticipation.
-    reason: A demonstration is described where the player tracks the ball in and then back out through the stroke.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: G7eiadOxN8E
-      start_ms: 502466
-      end_ms: 530700
-      url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=502s"
-      segment_ids:
-        - "G7eiadOxN8E:00114"
-        - "G7eiadOxN8E:00117"
-        - "G7eiadOxN8E:00119"
-  - id: m93pWt9MIZE-candidate-spin-borrowed-return-reading-1
-    evidence_type: explanation
-    excerpt: Inferring the likely spin on the next ball from the serve's spin because passive push returns usually borrow the server's spin rather than add much of their own.
-    reason: Speaker explains that spin returns are relatively strong after spin serves and weak after no-spin serves, including the same logic for sidespin.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: m93pWt9MIZE
-      start_ms: 365120
-      end_ms: 370800
-      url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=365s"
-      segment_ids:
-        - "m93pWt9MIZE:00141"
-  - id: m93pWt9MIZE-candidate-spin-borrowed-return-reading-2
-    evidence_type: explanation
-    excerpt: Inferring the likely spin on the next ball from the serve's spin because passive push returns usually borrow the server's spin rather than add much of their own.
-    reason: Speaker explains that spin returns are relatively strong after spin serves and weak after no-spin serves, including the same logic for sidespin.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: m93pWt9MIZE
-      start_ms: 407280
-      end_ms: 412479
-      url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=407s"
-      segment_ids:
-        - "m93pWt9MIZE:00158"
-  - id: m93pWt9MIZE-candidate-spin-borrowed-return-reading-3
-    evidence_type: example
-    excerpt: Inferring the likely spin on the next ball from the serve's spin because passive push returns usually borrow the server's spin rather than add much of their own.
-    reason: Speaker gives the explicit case of the opponent borrowing the server's heavy underspin on the push return.
-    confidence: 0.87
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: m93pWt9MIZE
-      start_ms: 215040
-      end_ms: 226560
-      url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=215s"
-      segment_ids:
-        - "m93pWt9MIZE:00085"
-        - "m93pWt9MIZE:00087"
-  - id: 0eMDTeOBR5A-cand-direction-reading-and-stable-movement-1
-    evidence_type: explanation
-    excerpt: The speaker emphasizes reading the ball clearly before initiating movement, with the feet setting first so the stroke is made from a stable base rather than from rushed hand action.
-    reason: Instructs the player to see the ball first, move only after reading it, and avoid the hand moving before the feet.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 0eMDTeOBR5A
-      start_ms: 58840
-      end_ms: 78960
-      url: https://www.youtube.com/watch?v=0eMDTeOBR5A&t=58s
-      segment_ids:
-        - 0eMDTeOBR5A:00021
-        - 0eMDTeOBR5A:00022
-        - 0eMDTeOBR5A:00023
-        - 0eMDTeOBR5A:00024
-        - 0eMDTeOBR5A:00025
-        - 0eMDTeOBR5A:00026
-        - 0eMDTeOBR5A:00027
-        - 0eMDTeOBR5A:00028
-  - id: bKtA240EvTQ-concept-direction-reading-reviewed
-    evidence_type: explanation
-    excerpt: Judging serve direction or length early enough to commit movement correctly before the ball arrives.
-    reason: The speaker tells the learner to judge long versus short from the opponent's first motion, using bounce and trajectory reading when the racket is unclear.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: bKtA240EvTQ
-      start_ms: 99720
-      end_ms: 111360
-      url: https://www.youtube.com/watch?v=bKtA240EvTQ&t=99s
-      segment_ids:
-        - bKtA240EvTQ:00033
-        - bKtA240EvTQ:00034
-        - bKtA240EvTQ:00035
-        - bKtA240EvTQ:00036
-  - id: D9ZAPb_65Hk-concept-direction-reading-reviewed
-    evidence_type: explanation
-    excerpt: Reading the opponent's motion early to predict direction before the ball is struck.
-    reason: The speaker says the first thing in rallies is to read the opponent's intention and spot direction changes before the shot is released.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: D9ZAPb_65Hk
-      start_ms: 52080
-      end_ms: 62880
-      url: https://www.youtube.com/watch?v=D9ZAPb_65Hk&t=52s
-      segment_ids:
-        - D9ZAPb_65Hk:00015
-        - D9ZAPb_65Hk:00016
-        - D9ZAPb_65Hk:00017
-        - D9ZAPb_65Hk:00018
-        - D9ZAPb_65Hk:00019
-  - id: lO0H9Cs6JEo-concept-direction-reading-reviewed
-    evidence_type: explanation
-    excerpt: Reading the ball's spin and intended response early enough to choose the right movement direction.
-    reason: The speaker advises that when spin is unclear, move more forward and adjust toward forward motion.
-    confidence: 0.89
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: lO0H9Cs6JEo
-      start_ms: 471720
-      end_ms: 482880
-      url: https://www.youtube.com/watch?v=lO0H9Cs6JEo&t=471s
-      segment_ids:
-        - lO0H9Cs6JEo:00140
-        - lO0H9Cs6JEo:00142
-        - lO0H9Cs6JEo:00143
-        - lO0H9Cs6JEo:00144
-  - id: pE5PLAr9iaA-concept-direction-reading-reviewed
-    evidence_type: explanation
-    excerpt: Reading the incoming ball and opponent cues early enough to choose the correct movement and stroke direction.
-    reason: The speaker says improved ball tracking helps with serve-receive and reading opponent direction changes and intentions.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: pE5PLAr9iaA
-      start_ms: 376360
-      end_ms: 386560
-      url: https://www.youtube.com/watch?v=pE5PLAr9iaA&t=376s
-      segment_ids:
-        - pE5PLAr9iaA:00123
-        - pE5PLAr9iaA:00124
-        - pE5PLAr9iaA:00125
-        - pE5PLAr9iaA:00126
-  - id: PFPu_pKZ9TI-concept-direction-reading-reviewed
-    evidence_type: explanation
-    excerpt: Reading the opponent's push direction after recovering, then moving the feet within the short anticipation window.
-    reason: The speaker says to read the push direction after recovery and notes the anticipation window is extremely short, requiring foot movement before the ball crosses the net.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: PFPu_pKZ9TI
-      start_ms: 233200
-      end_ms: 247440
-      url: https://www.youtube.com/watch?v=PFPu_pKZ9TI&t=233s
-      segment_ids:
-        - PFPu_pKZ9TI:00078
-        - PFPu_pKZ9TI:00079
-        - PFPu_pKZ9TI:00080
-        - PFPu_pKZ9TI:00081
-        - PFPu_pKZ9TI:00082
-        - PFPu_pKZ9TI:00083
-        - PFPu_pKZ9TI:00084
-  - id: deTFdwcfnrE-concept-direction-reading-reviewed
-    evidence_type: explanation
-    excerpt: Reading the ball and the opponent early enough to decide movement and avoid moving the hand before the feet or committing too soon.
-    reason: Explains that players often move hands too early and that fixing the habit improves handling of unfamiliar opponents.
-    confidence: 0.88
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: deTFdwcfnrE
-      start_ms: 543800
-      end_ms: 572960
-      url: https://www.youtube.com/watch?v=deTFdwcfnrE&t=543s
-      segment_ids:
-        - deTFdwcfnrE:00186
-        - deTFdwcfnrE:00187
-        - deTFdwcfnrE:00188
-        - deTFdwcfnrE:00189
-        - deTFdwcfnrE:00190
-        - deTFdwcfnrE:00191
-        - deTFdwcfnrE:00196
-  - id: deTFdwcfnrE-concept-direction-reading-reviewed-a1e9f04c
-    evidence_type: explanation
-    excerpt: Reading the ball and the opponent early enough to decide movement and avoid moving the hand before the feet or committing too soon.
-    reason: Explains that players often move hands too early and that fixing the habit improves handling of unfamiliar opponents.
-    confidence: 0.88
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: deTFdwcfnrE
-      start_ms: 543800
-      end_ms: 572960
-      url: https://www.youtube.com/watch?v=deTFdwcfnrE&t=543s
-      segment_ids:
-        - deTFdwcfnrE:00186
-        - deTFdwcfnrE:00187
-        - deTFdwcfnrE:00188
-        - deTFdwcfnrE:00189
-        - deTFdwcfnrE:00190
-        - deTFdwcfnrE:00191
-        - deTFdwcfnrE:00196
-  - id: MV98YAD9lzs-concept-direction-reading-reviewed
-    evidence_type: explanation
-    excerpt: Judging the incoming spin and trajectory before committing to the stroke, so the player can adjust the push shape and placement correctly.
-    reason: The speaker says the difficulty of pushing lies in reading spin and adjusting accordingly, and explicitly lists ambiguous spin cases.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: MV98YAD9lzs
-      start_ms: 368280
-      end_ms: 387160
-      url: https://www.youtube.com/watch?v=MV98YAD9lzs&t=368s
-      segment_ids:
-        - MV98YAD9lzs:00113
-        - MV98YAD9lzs:00114
-        - MV98YAD9lzs:00115
-        - MV98YAD9lzs:00116
-        - MV98YAD9lzs:00117
-        - MV98YAD9lzs:00118
-  - id: N3GieiMNE7Y-concept-direction-reading-reviewed
-    evidence_type: explanation
-    excerpt: Reading the opponent's position or the ball situation before committing to the next movement or swing.
-    reason: The speaker explicitly says to read the position, then move and swing.
-    confidence: 0.88
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: N3GieiMNE7Y
-      start_ms: 472040
-      end_ms: 476440
-      url: https://www.youtube.com/watch?v=N3GieiMNE7Y&t=472s
-      segment_ids:
-        - N3GieiMNE7Y:00171
-        - N3GieiMNE7Y:00172
-  - id: R9InWNDCJQM-concept-direction-reading-reviewed
-    evidence_type: explanation
-    excerpt: Reading the incoming ball's curve and stroke direction before committing footwork or stroke preparation.
-    reason: The speaker explains that the ball curves based on the opponent's hook and that you should move based on that stroke.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: R9InWNDCJQM
-      start_ms: 9480
-      end_ms: 24840
-      url: https://www.youtube.com/watch?v=R9InWNDCJQM&t=9s
-      segment_ids:
-        - R9InWNDCJQM:00004
-        - R9InWNDCJQM:00005
-        - R9InWNDCJQM:00006
-        - R9InWNDCJQM:00008
-        - R9InWNDCJQM:00009
-  - id: Kg4hLYnEbAs-concept-direction-reading-reviewed
-    evidence_type: explanation
-    excerpt: Waiting to confirm the ball's path and spin before moving, so the stroke is not rushed or misaligned.
-    reason: The speaker warns that if the body moves before the ball is properly read, the shot becomes rushed, and says to move only after reading the ball clearly.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: Kg4hLYnEbAs
-      start_ms: 265640
-      end_ms: 283240
-      url: https://www.youtube.com/watch?v=Kg4hLYnEbAs&t=265s
-      segment_ids:
-        - Kg4hLYnEbAs:00084
-        - Kg4hLYnEbAs:00085
-        - Kg4hLYnEbAs:00086
-        - Kg4hLYnEbAs:00087
-        - Kg4hLYnEbAs:00088
-        - Kg4hLYnEbAs:00089
-  - id: jG1G3H7Fo_k-concept-direction-reading-reviewed
-    evidence_type: explanation
-    excerpt: Reading the landing point, trajectory, and motion before rising or committing to movement.
-    reason: The speaker instructs the player to read landing point, motion, and trajectory before rising and moving.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: jG1G3H7Fo_k
-      start_ms: 271360
-      end_ms: 289240
-      url: https://www.youtube.com/watch?v=jG1G3H7Fo_k&t=271s
-      segment_ids:
-        - jG1G3H7Fo_k:00088
-        - jG1G3H7Fo_k:00089
-        - jG1G3H7Fo_k:00090
-        - jG1G3H7Fo_k:00091
-        - jG1G3H7Fo_k:00092
-        - jG1G3H7Fo_k:00093
-        - jG1G3H7Fo_k:00094
-  - id: VOX-e4IR2xg-concept-direction-reading-reviewed
-    evidence_type: explanation
-    excerpt: Inferring serve direction from the forearm and shoulder rotation rather than from the racket face, which is too fast to read reliably.
-    reason: The speaker explains how to read serve placement by watching forearm direction and rotation angle instead of the racket face.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: VOX-e4IR2xg
-      start_ms: 393840
-      end_ms: 421919
-      url: https://www.youtube.com/watch?v=VOX-e4IR2xg&t=393s
-      segment_ids:
-        - VOX-e4IR2xg:00142
-        - VOX-e4IR2xg:00143
-        - VOX-e4IR2xg:00144
-        - VOX-e4IR2xg:00145
-        - VOX-e4IR2xg:00146
-        - VOX-e4IR2xg:00147
-        - VOX-e4IR2xg:00148
-        - VOX-e4IR2xg:00149
-        - VOX-e4IR2xg:00150
-        - VOX-e4IR2xg:00151
-  - id: 9BKPM_RMmtg-concept-direction-reading-reviewed
-    evidence_type: definition
-    excerpt: Reading the opponent's motion and the ball's spin early so you can predict the post-bounce direction before moving.
-    reason: The speaker explicitly says to read the opponent's motion clearly and train reading ability when judgment is weak.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 9BKPM_RMmtg
-      start_ms: 51400
-      end_ms: 75833
-      url: https://www.youtube.com/watch?v=9BKPM_RMmtg&t=51s
-      segment_ids:
-        - 9BKPM_RMmtg:00018
-        - 9BKPM_RMmtg:00025
-  - id: NFfY66W2PGM-concept-direction-reading-reviewed
-    evidence_type: explanation
-    excerpt: Reading the intended direction or spin of a serve or shot before committing to the return decision.
-    reason: The discussion centers on guessing the spin and making it hard to tell from the serve motion.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: NFfY66W2PGM
-      start_ms: 33800
-      end_ms: 56033
-      url: https://www.youtube.com/watch?v=NFfY66W2PGM&t=33s
-      segment_ids:
-        - NFfY66W2PGM:00001
-        - NFfY66W2PGM:00004
-        - NFfY66W2PGM:00006
-  - id: -jaC--EWjFw-concept-direction-reading-reviewed
-    evidence_type: definition
-    excerpt: Using the opponent's contact, body position, and recovery to decide where to move and where to play next.
-    reason: The speaker says the opponent's contact determines positioning, footwork, timing, backswing, and power direction.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: -jaC--EWjFw
-      start_ms: 93866
-      end_ms: 102300
-      url: https://www.youtube.com/watch?v=-jaC--EWjFw&t=93s
-      segment_ids:
-        - -jaC--EWjFw:00028
-        - -jaC--EWjFw:00029
-        - -jaC--EWjFw:00030
-        - -jaC--EWjFw:00031
-        - -jaC--EWjFw:00032
-  - id: DSMYWiOahFU-concept-direction-reading-reviewed
-    evidence_type: definition
-    excerpt: Using the opponent's racket or paddle angle at the moment of contact to infer ball direction before the ball crosses the net, rather than guessing after the bounce.
-    reason: The speaker explicitly says tracking the ball means watching the opponent's racket, judging direction at contact, and reading left/right or forward/backward.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: DSMYWiOahFU
-      start_ms: 304600
-      end_ms: 308866
-      url: https://www.youtube.com/watch?v=DSMYWiOahFU&t=304s
-      segment_ids:
-        - DSMYWiOahFU:00096
-  - id: Ji9_Etw6nvo-concept-direction-reading-reviewed
-    evidence_type: explanation
-    excerpt: Reading the opponent's shot direction and placement early enough to move and prepare correctly.
-    reason: The speaker explicitly says to have a clear prediction of placement and always anticipate the placement.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: Ji9_Etw6nvo
-      start_ms: 464300
-      end_ms: 471733
-      url: https://www.youtube.com/watch?v=Ji9_Etw6nvo&t=464s
-      segment_ids:
-        - Ji9_Etw6nvo:00163
-        - Ji9_Etw6nvo:00164
-        - Ji9_Etw6nvo:00165
-  - id: wpaKC8pALyQ-concept-direction-reading-reviewed
-    evidence_type: explanation
-    excerpt: Judging where the ball is going before committing to movement so the defender is not late.
-    reason: The speaker tells the listener to judge where the ball is going and not to assume forehand or backhand too early.
-    confidence: 0.88
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: wpaKC8pALyQ
-      start_ms: 255200
-      end_ms: 282033
-      url: https://www.youtube.com/watch?v=wpaKC8pALyQ&t=255s
-      segment_ids:
-        - wpaKC8pALyQ:00071
-        - wpaKC8pALyQ:00072
-        - wpaKC8pALyQ:00079
-        - wpaKC8pALyQ:00080
-        - wpaKC8pALyQ:00081
-        - wpaKC8pALyQ:00082
-        - wpaKC8pALyQ:00083
-  - id: x3zw0baFM-I-concept-direction-reading-reviewed
-    evidence_type: explanation
-    excerpt: Read the ball's direction before moving so you can get into the correct position first and avoid being caught standing still.
-    reason: The transcript repeatedly says to figure out the direction first, move to the right spot, and then strike after observing the opponent's stroke.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: x3zw0baFM-I
-      start_ms: 202466
-      end_ms: 217133
-      url: https://www.youtube.com/watch?v=x3zw0baFM-I&t=202s
-      segment_ids:
-        - x3zw0baFM-I:00054
-        - x3zw0baFM-I:00055
-        - x3zw0baFM-I:00056
-        - x3zw0baFM-I:00057
-        - x3zw0baFM-I:00058
-  - id: 9IzbAEYcS5A-concept-direction-reading-reviewed
-    evidence_type: explanation
-    excerpt: Reading the intended or actual ball direction before committing to movement or racket choice.
-    reason: The speaker says receive becomes harder when direction is wrong and repeatedly instructs moving left or right based on the spin/direction read.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 9IzbAEYcS5A
-      start_ms: 220600
-      end_ms: 236766
-      url: https://www.youtube.com/watch?v=9IzbAEYcS5A&t=220s
-      segment_ids:
-        - 9IzbAEYcS5A:00049
-        - 9IzbAEYcS5A:00051
-        - 9IzbAEYcS5A:00053
-  - id: HlTqPv-MpGI-concept-direction-reading-reviewed
-    evidence_type: explanation
-    excerpt: Inferring the incoming ball direction before committing footwork or stroke choice.
-    reason: The speaker frames the key issue as judging whether the ball is far or close and deciding accordingly.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: HlTqPv-MpGI
-      start_ms: 649500
-      end_ms: 667133
-      url: https://www.youtube.com/watch?v=HlTqPv-MpGI&t=649s
-      segment_ids:
-        - HlTqPv-MpGI:00316
-        - HlTqPv-MpGI:00317
-        - HlTqPv-MpGI:00318
-        - HlTqPv-MpGI:00319
-        - HlTqPv-MpGI:00320
-        - HlTqPv-MpGI:00321
-        - HlTqPv-MpGI:00322
-        - HlTqPv-MpGI:00323
-        - HlTqPv-MpGI:00324
-  - id: HlTqPv-MpGI-concept-direction-reading-reviewed-0e38789c
-    evidence_type: explanation
-    excerpt: Inferring the incoming ball direction before committing footwork or stroke choice.
-    reason: The speaker frames the key issue as judging whether the ball is far or close and deciding accordingly.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: HlTqPv-MpGI
-      start_ms: 649500
-      end_ms: 667133
-      url: https://www.youtube.com/watch?v=HlTqPv-MpGI&t=649s
-      segment_ids:
-        - HlTqPv-MpGI:00316
-        - HlTqPv-MpGI:00317
-        - HlTqPv-MpGI:00318
-        - HlTqPv-MpGI:00319
-        - HlTqPv-MpGI:00320
-        - HlTqPv-MpGI:00321
-        - HlTqPv-MpGI:00322
-        - HlTqPv-MpGI:00323
-        - HlTqPv-MpGI:00324
-  - id: HVPF38PxXvI-concept-direction-reading-reviewed
-    evidence_type: definition
-    excerpt: Reading the ball's direction early enough to choose the correct movement and shot direction.
-    reason: The speaker says to watch the ball's trajectory immediately after contact and after the bounce, and summarizes this as a three-watch rule for reading the play.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: HVPF38PxXvI
-      start_ms: 178000
-      end_ms: 204900
-      url: https://www.youtube.com/watch?v=HVPF38PxXvI&t=178s
-      segment_ids:
-        - HVPF38PxXvI:00043
-        - HVPF38PxXvI:00044
-        - HVPF38PxXvI:00045
-        - HVPF38PxXvI:00048
-        - HVPF38PxXvI:00049
-  - id: q70a9LCojco-concept-read-opponent-patterns-and-technical-flaws-reviewed
-    evidence_type: explanation
-    excerpt: Players should study opponents' technical flaws and patterns to predict where balls will go and adjust positioning accordingly.
-    reason: The transcript explains concrete prediction rules based on common technical flaws and explicitly says to observe the opponent.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: q70a9LCojco
-      start_ms: 899766
-      end_ms: 922866
-      url: https://www.youtube.com/watch?v=q70a9LCojco&t=899s
-      segment_ids:
-        - q70a9LCojco:00198
-        - q70a9LCojco:00199
-        - q70a9LCojco:00200
-        - q70a9LCojco:00201
-        - q70a9LCojco:00202
-        - q70a9LCojco:00203
-  - id: JxbUnbUD_OY-concept-direction-reading-reviewed
-    evidence_type: explanation
-    excerpt: Reading the ball's placement first and delaying the swing until the target direction is known.
-    reason: He explains that identifying placement before swinging improves consistency and prevents locking the body in place.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: JxbUnbUD_OY
-      start_ms: 308133
-      end_ms: 327833
-      url: https://www.youtube.com/watch?v=JxbUnbUD_OY&t=308s
-      segment_ids:
-        - JxbUnbUD_OY:00064
-        - JxbUnbUD_OY:00066
-        - JxbUnbUD_OY:00067
-  - id: 84TN41FD3cQ-concept-direction-reading-reviewed
-    evidence_type: explanation
-    excerpt: Use early recognition of the opponent's stroke to predict the likely return line and position before the ball arrives.
-    reason: The speaker explicitly says to quickly predict the most likely return position and return line.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 84TN41FD3cQ
-      start_ms: 37120
-      end_ms: 45000
-      url: https://www.youtube.com/watch?v=84TN41FD3cQ&t=37s
-      segment_ids:
-        - 84TN41FD3cQ:00018
-        - 84TN41FD3cQ:00019
-        - 84TN41FD3cQ:00020
-  - id: 8fxjEROShs4-concept-direction-reading-codex-reviewed
-    evidence_type: explanation
-    excerpt: Focus on the ball’s position when receiving, keep the body stable, and shift only after spotting the position.
-    reason: These contiguous segments directly instruct the receiver to identify the ball’s position before shifting.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 8fxjEROShs4
-      start_ms: 779333
-      end_ms: 794700
-      url: https://www.youtube.com/watch?v=8fxjEROShs4&t=779s
-      segment_ids:
-        - 8fxjEROShs4:00107
-        - 8fxjEROShs4:00108
-  - id: 9IzbAEYcS5A-concept-direction-reading-codex-reviewed
-    evidence_type: explanation
-    excerpt: 'When receiving, identify the spin direction and move the racket to the matching side: right for right spin and left for left spin.'
-    reason: These contiguous segments directly explain adjusting receive direction based on the incoming spin, including rightward and leftward movement.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 9IzbAEYcS5A
-      start_ms: 571366
-      end_ms: 584733
-      url: https://www.youtube.com/watch?v=9IzbAEYcS5A&t=571s
-      segment_ids:
-        - 9IzbAEYcS5A:00125
-        - 9IzbAEYcS5A:00126
-        - 9IzbAEYcS5A:00127
-  - id: D9ZAPb_65Hk-concept-direction-reading-codex-reviewed
-    evidence_type: explanation
-    excerpt: In rallies, first read the opponent’s intention and spot the moment they are about to change direction as they release the shot.
-    reason: This contiguous span directly explains reading the opponent’s intention and detecting direction changes before or at shot release.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: D9ZAPb_65Hk
-      start_ms: 52080
-      end_ms: 62880
-      url: https://www.youtube.com/watch?v=D9ZAPb_65Hk&t=52s
-      segment_ids:
-        - D9ZAPb_65Hk:00015
-        - D9ZAPb_65Hk:00016
-        - D9ZAPb_65Hk:00017
-        - D9ZAPb_65Hk:00018
-        - D9ZAPb_65Hk:00019
-  - id: HlTqPv-MpGI-concept-direction-reading-codex-reviewed
-    evidence_type: explanation
-    excerpt: Judge whether the ball is far or close before deciding when to move.
-    reason: The speaker directly frames movement timing around judging whether the ball is far or close, which supports the existing direction-reading concept.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: HlTqPv-MpGI
-      start_ms: 649500
-      end_ms: 654366
-      url: https://www.youtube.com/watch?v=HlTqPv-MpGI&t=649s
-      segment_ids:
-        - HlTqPv-MpGI:00316
-        - HlTqPv-MpGI:00317
-  - id: jG1G3H7Fo_k-concept-direction-reading-codex-reviewed
-    evidence_type: explanation
-    excerpt: Focus on reading the landing point. After reading the trajectory and motion, your body rises; you can't move effectively while crouched.
-    reason: This contiguous segment explains delaying the rise until the landing point, trajectory, and motion have been read so movement is effective.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: jG1G3H7Fo_k
-      start_ms: 271360
-      end_ms: 289240
-      url: https://www.youtube.com/watch?v=jG1G3H7Fo_k&t=271s
-      segment_ids:
-        - jG1G3H7Fo_k:00088
-        - jG1G3H7Fo_k:00089
-        - jG1G3H7Fo_k:00090
-        - jG1G3H7Fo_k:00091
-        - jG1G3H7Fo_k:00092
-        - jG1G3H7Fo_k:00093
-        - jG1G3H7Fo_k:00094
+- id: QET6W3rjOxo-cand-delayed-commit-after-read-1
+  evidence_type: explanation
+  excerpt: Committing before judging the incoming ball can leave the player between a push and a loop when a half-long ball proves longer than expected.
+  reason: The lesson describes drawing the hand back before judging the ball, then changing between two decisions.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: QET6W3rjOxo
+    start_ms: 321480
+    end_ms: 350640
+    url: "https://www.youtube.com/watch?v=QET6W3rjOxo&t=321s"
+    segment_ids: &id001
+    - "QET6W3rjOxo:00129"
+    - "QET6W3rjOxo:00130"
+    - "QET6W3rjOxo:00131"
+    - "QET6W3rjOxo:00132"
+    - "QET6W3rjOxo:00133"
+    - "QET6W3rjOxo:00134"
+    - "QET6W3rjOxo:00135"
+    - "QET6W3rjOxo:00136"
+    - "QET6W3rjOxo:00137"
+    - "QET6W3rjOxo:00138"
+    - "QET6W3rjOxo:00139"
+    - "QET6W3rjOxo:00140"
+- id: QET6W3rjOxo-cand-delayed-commit-after-read-2
+  evidence_type: explanation
+  excerpt: After serving, recover quickly with the hands in front of the chest, then read the opponent’s action before committing. Even for a forehand ball, avoid drawing back immediately.
+  reason: The speaker says drawing back early loses the force connection.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: QET6W3rjOxo
+    start_ms: 348480
+    end_ms: 373680
+    url: https://www.youtube.com/watch?v=QET6W3rjOxo&t=348s
+    segment_ids:
+    - QET6W3rjOxo:00141
+    - QET6W3rjOxo:00142
+    - QET6W3rjOxo:00143
+    - QET6W3rjOxo:00144
+    - QET6W3rjOxo:00145
+    - QET6W3rjOxo:00146
+    - QET6W3rjOxo:00147
+    - QET6W3rjOxo:00148
+    - QET6W3rjOxo:00149
+    - QET6W3rjOxo:00150
+    - QET6W3rjOxo:00151
+    - QET6W3rjOxo:00152
+    - QET6W3rjOxo:00153
+- id: I-_3TIjU4qI-candidate-early-direction-reading-1
+  evidence_type: explanation
+  excerpt: Start moving when the opponent commits to a stroke direction. Extend for a wide angle and adjust by yielding for a narrower angle toward the middle.
+  reason: The speaker contrasts this with waiting until the ball is already on the player’s side.
+  confidence: 0.91
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: I-_3TIjU4qI
+    start_ms: 254560
+    end_ms: 276880
+    url: "https://www.youtube.com/watch?v=I-_3TIjU4qI&t=254s"
+    segment_ids:
+    - "I-_3TIjU4qI:00112"
+    - "I-_3TIjU4qI:00113"
+    - "I-_3TIjU4qI:00114"
+    - "I-_3TIjU4qI:00115"
+    - "I-_3TIjU4qI:00116"
+    - "I-_3TIjU4qI:00117"
+    - "I-_3TIjU4qI:00118"
+    - "I-_3TIjU4qI:00119"
+    - "I-_3TIjU4qI:00120"
+- id: I-_3TIjU4qI-candidate-early-direction-reading-2
+  evidence_type: explanation
+  excerpt: Observe the opponent’s take-back to distinguish winding up for power from preparing to bump the ball. Earlier reading gives more time to prepare the player’s own shot.
+  reason: The speaker contrasts a rushed loop after slow observation with time to prepare a power loop after quick observation.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: I-_3TIjU4qI
+    start_ms: 373040
+    end_ms: 402200
+    url: https://www.youtube.com/watch?v=I-_3TIjU4qI&t=373s
+    segment_ids:
+    - I-_3TIjU4qI:00163
+    - I-_3TIjU4qI:00164
+    - I-_3TIjU4qI:00165
+    - I-_3TIjU4qI:00166
+    - I-_3TIjU4qI:00167
+    - I-_3TIjU4qI:00168
+    - I-_3TIjU4qI:00169
+    - I-_3TIjU4qI:00170
+    - I-_3TIjU4qI:00171
+    - I-_3TIjU4qI:00172
+    - I-_3TIjU4qI:00173
+    - I-_3TIjU4qI:00174
+- id: G7eiadOxN8E-cand-ball-tracking-1
+  evidence_type: definition
+  excerpt: Track the ball with the eyes and get into position with the body turned sideways to create the proper angle.
+  reason: The lesson also distinguishes contacting a power loop out in front from letting a high, spinny loop drop closer to the body.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: G7eiadOxN8E
+    start_ms: 448466
+    end_ms: 470133
+    url: https://www.youtube.com/watch?v=G7eiadOxN8E&t=448s
+    segment_ids:
+    - G7eiadOxN8E:00102
+    - G7eiadOxN8E:00103
+    - G7eiadOxN8E:00104
+    - G7eiadOxN8E:00105
+    - G7eiadOxN8E:00106
+- id: G7eiadOxN8E-cand-ball-tracking-2
+  evidence_type: explanation
+  excerpt: The speaker describes turning sideways, tracking the ball into the hitting zone and following it back out through the stroke, from the opponent’s racket to the player’s and back.
+  reason: The narration connects eye tracking with accurate contact and encourages following the entire trajectory.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: G7eiadOxN8E
+    start_ms: 502466
+    end_ms: 530700
+    url: https://www.youtube.com/watch?v=G7eiadOxN8E&t=502s
+    segment_ids:
+    - G7eiadOxN8E:00114
+    - G7eiadOxN8E:00115
+    - G7eiadOxN8E:00116
+    - G7eiadOxN8E:00117
+    - G7eiadOxN8E:00118
+    - G7eiadOxN8E:00119
+- id: m93pWt9MIZE-candidate-spin-borrowed-return-reading-1
+  evidence_type: explanation
+  excerpt: The lesson says a push returned after a spin serve has relatively strong spin, while the return after a no-spin serve has relatively weak spin; sidespin is described as following the same principle.
+  reason: The speaker uses the server’s spin choice to explain the spin expected on a push return.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: m93pWt9MIZE
+    start_ms: 365120
+    end_ms: 385759
+    url: https://www.youtube.com/watch?v=m93pWt9MIZE&t=365s
+    segment_ids:
+    - m93pWt9MIZE:00141
+    - m93pWt9MIZE:00142
+    - m93pWt9MIZE:00143
+    - m93pWt9MIZE:00144
+    - m93pWt9MIZE:00145
+    - m93pWt9MIZE:00146
+    - m93pWt9MIZE:00147
+- id: m93pWt9MIZE-candidate-spin-borrowed-return-reading-2
+  evidence_type: explanation
+  excerpt: After a half-spin or no-spin serve, the lesson says little spin remains after the bounce and the pushing opponent mostly borrows the server’s spin rather than adding it actively. Use a corresponding method to loop the returned spin.
+  reason: The speaker asks the player to understand how the serve affects the return before choosing the looping method.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: m93pWt9MIZE
+    start_ms: 388080
+    end_ms: 412479
+    url: https://www.youtube.com/watch?v=m93pWt9MIZE&t=388s
+    segment_ids:
+    - m93pWt9MIZE:00150
+    - m93pWt9MIZE:00151
+    - m93pWt9MIZE:00152
+    - m93pWt9MIZE:00153
+    - m93pWt9MIZE:00154
+    - m93pWt9MIZE:00155
+    - m93pWt9MIZE:00156
+    - m93pWt9MIZE:00157
+    - m93pWt9MIZE:00158
+- id: m93pWt9MIZE-candidate-spin-borrowed-return-reading-3
+  evidence_type: example
+  excerpt: After a heavy-underspin serve, the opponent’s push borrows that spin; the speaker warns that the server’s own spin can cause mistakes.
+  reason: This example attributes the spin on the pushed return to the heavy-underspin serve.
+  confidence: 0.87
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: m93pWt9MIZE
+    start_ms: 210159
+    end_ms: 226560
+    url: https://www.youtube.com/watch?v=m93pWt9MIZE&t=210s
+    segment_ids:
+    - m93pWt9MIZE:00083
+    - m93pWt9MIZE:00084
+    - m93pWt9MIZE:00085
+    - m93pWt9MIZE:00086
+    - m93pWt9MIZE:00087
+- id: 0eMDTeOBR5A-cand-direction-reading-and-stable-movement-1
+  evidence_type: explanation
+  excerpt: See the ball clearly before moving, set the feet before the hand acts, and be stable before striking.
+  reason: The instruction asks the player to control the impulse to rush and move only after reading the ball.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: 0eMDTeOBR5A
+    start_ms: 58840
+    end_ms: 78960
+    url: https://www.youtube.com/watch?v=0eMDTeOBR5A&t=58s
+    segment_ids:
+    - 0eMDTeOBR5A:00021
+    - 0eMDTeOBR5A:00022
+    - 0eMDTeOBR5A:00023
+    - 0eMDTeOBR5A:00024
+    - 0eMDTeOBR5A:00025
+    - 0eMDTeOBR5A:00026
+    - 0eMDTeOBR5A:00027
+    - 0eMDTeOBR5A:00028
+- id: bKtA240EvTQ-concept-direction-reading-reviewed
+  evidence_type: explanation
+  excerpt: Judging serve direction or length early enough to commit movement correctly before the ball arrives.
+  reason: The speaker tells the learner to judge long versus short from the opponent's first motion, using bounce and trajectory reading when the racket is unclear.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: bKtA240EvTQ
+    start_ms: 99720
+    end_ms: 111360
+    url: https://www.youtube.com/watch?v=bKtA240EvTQ&t=99s
+    segment_ids:
+    - bKtA240EvTQ:00033
+    - bKtA240EvTQ:00034
+    - bKtA240EvTQ:00035
+    - bKtA240EvTQ:00036
+- id: D9ZAPb_65Hk-concept-direction-reading-reviewed
+  evidence_type: explanation
+  excerpt: Reading the opponent's motion early to predict direction before the ball is struck.
+  reason: The speaker says the first thing in rallies is to read the opponent's intention and spot direction changes before the shot is released.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: D9ZAPb_65Hk
+    start_ms: 52080
+    end_ms: 62880
+    url: https://www.youtube.com/watch?v=D9ZAPb_65Hk&t=52s
+    segment_ids:
+    - D9ZAPb_65Hk:00015
+    - D9ZAPb_65Hk:00016
+    - D9ZAPb_65Hk:00017
+    - D9ZAPb_65Hk:00018
+    - D9ZAPb_65Hk:00019
+- id: lO0H9Cs6JEo-concept-direction-reading-reviewed
+  evidence_type: explanation
+  excerpt: Reading the ball's spin and intended response early enough to choose the right movement direction.
+  reason: The speaker advises that when spin is unclear, move more forward and adjust toward forward motion.
+  confidence: 0.89
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: lO0H9Cs6JEo
+    start_ms: 471720
+    end_ms: 482880
+    url: https://www.youtube.com/watch?v=lO0H9Cs6JEo&t=471s
+    segment_ids:
+    - lO0H9Cs6JEo:00140
+    - lO0H9Cs6JEo:00142
+    - lO0H9Cs6JEo:00143
+    - lO0H9Cs6JEo:00144
+- id: pE5PLAr9iaA-concept-direction-reading-reviewed
+  evidence_type: explanation
+  excerpt: Reading the incoming ball and opponent cues early enough to choose the correct movement and stroke direction.
+  reason: The speaker says improved ball tracking helps with serve-receive and reading opponent direction changes and intentions.
+  confidence: 0.93
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: pE5PLAr9iaA
+    start_ms: 376360
+    end_ms: 386560
+    url: https://www.youtube.com/watch?v=pE5PLAr9iaA&t=376s
+    segment_ids:
+    - pE5PLAr9iaA:00123
+    - pE5PLAr9iaA:00124
+    - pE5PLAr9iaA:00125
+    - pE5PLAr9iaA:00126
+- id: PFPu_pKZ9TI-concept-direction-reading-reviewed
+  evidence_type: explanation
+  excerpt: Reading the opponent's push direction after recovering, then moving the feet within the short anticipation window.
+  reason: The speaker says to read the push direction after recovery and notes the anticipation window is extremely short, requiring foot movement before the ball crosses the net.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: PFPu_pKZ9TI
+    start_ms: 233200
+    end_ms: 247440
+    url: https://www.youtube.com/watch?v=PFPu_pKZ9TI&t=233s
+    segment_ids:
+    - PFPu_pKZ9TI:00078
+    - PFPu_pKZ9TI:00079
+    - PFPu_pKZ9TI:00080
+    - PFPu_pKZ9TI:00081
+    - PFPu_pKZ9TI:00082
+    - PFPu_pKZ9TI:00083
+    - PFPu_pKZ9TI:00084
+- id: deTFdwcfnrE-concept-direction-reading-reviewed
+  evidence_type: explanation
+  excerpt: Reading the ball and the opponent early enough to decide movement and avoid moving the hand before the feet or committing too soon.
+  reason: Explains that players often move hands too early and that fixing the habit improves handling of unfamiliar opponents.
+  confidence: 0.88
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: deTFdwcfnrE
+    start_ms: 543800
+    end_ms: 572960
+    url: https://www.youtube.com/watch?v=deTFdwcfnrE&t=543s
+    segment_ids:
+    - deTFdwcfnrE:00186
+    - deTFdwcfnrE:00187
+    - deTFdwcfnrE:00188
+    - deTFdwcfnrE:00189
+    - deTFdwcfnrE:00190
+    - deTFdwcfnrE:00191
+    - deTFdwcfnrE:00196
+- id: deTFdwcfnrE-concept-direction-reading-reviewed-a1e9f04c
+  evidence_type: explanation
+  excerpt: Reading the ball and the opponent early enough to decide movement and avoid moving the hand before the feet or committing too soon.
+  reason: Explains that players often move hands too early and that fixing the habit improves handling of unfamiliar opponents.
+  confidence: 0.88
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: deTFdwcfnrE
+    start_ms: 543800
+    end_ms: 572960
+    url: https://www.youtube.com/watch?v=deTFdwcfnrE&t=543s
+    segment_ids:
+    - deTFdwcfnrE:00186
+    - deTFdwcfnrE:00187
+    - deTFdwcfnrE:00188
+    - deTFdwcfnrE:00189
+    - deTFdwcfnrE:00190
+    - deTFdwcfnrE:00191
+    - deTFdwcfnrE:00196
+- id: MV98YAD9lzs-concept-direction-reading-reviewed
+  evidence_type: explanation
+  excerpt: Judging the incoming spin and trajectory before committing to the stroke, so the player can adjust the push shape and placement correctly.
+  reason: The speaker says the difficulty of pushing lies in reading spin and adjusting accordingly, and explicitly lists ambiguous spin cases.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: MV98YAD9lzs
+    start_ms: 368280
+    end_ms: 387160
+    url: https://www.youtube.com/watch?v=MV98YAD9lzs&t=368s
+    segment_ids:
+    - MV98YAD9lzs:00113
+    - MV98YAD9lzs:00114
+    - MV98YAD9lzs:00115
+    - MV98YAD9lzs:00116
+    - MV98YAD9lzs:00117
+    - MV98YAD9lzs:00118
+- id: N3GieiMNE7Y-concept-direction-reading-reviewed
+  evidence_type: explanation
+  excerpt: Reading the opponent's position or the ball situation before committing to the next movement or swing.
+  reason: The speaker explicitly says to read the position, then move and swing.
+  confidence: 0.88
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: N3GieiMNE7Y
+    start_ms: 472040
+    end_ms: 476440
+    url: https://www.youtube.com/watch?v=N3GieiMNE7Y&t=472s
+    segment_ids:
+    - N3GieiMNE7Y:00171
+    - N3GieiMNE7Y:00172
+- id: R9InWNDCJQM-concept-direction-reading-reviewed
+  evidence_type: explanation
+  excerpt: Reading the incoming ball's curve and stroke direction before committing footwork or stroke preparation.
+  reason: The speaker explains that the ball curves based on the opponent's hook and that you should move based on that stroke.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: R9InWNDCJQM
+    start_ms: 9480
+    end_ms: 24840
+    url: https://www.youtube.com/watch?v=R9InWNDCJQM&t=9s
+    segment_ids:
+    - R9InWNDCJQM:00004
+    - R9InWNDCJQM:00005
+    - R9InWNDCJQM:00006
+    - R9InWNDCJQM:00008
+    - R9InWNDCJQM:00009
+- id: Kg4hLYnEbAs-concept-direction-reading-reviewed
+  evidence_type: explanation
+  excerpt: Waiting to confirm the ball's path and spin before moving, so the stroke is not rushed or misaligned.
+  reason: The speaker warns that if the body moves before the ball is properly read, the shot becomes rushed, and says to move only after reading the ball clearly.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Kg4hLYnEbAs
+    start_ms: 265640
+    end_ms: 283240
+    url: https://www.youtube.com/watch?v=Kg4hLYnEbAs&t=265s
+    segment_ids:
+    - Kg4hLYnEbAs:00084
+    - Kg4hLYnEbAs:00085
+    - Kg4hLYnEbAs:00086
+    - Kg4hLYnEbAs:00087
+    - Kg4hLYnEbAs:00088
+    - Kg4hLYnEbAs:00089
+- id: jG1G3H7Fo_k-concept-direction-reading-reviewed
+  evidence_type: explanation
+  excerpt: Reading the landing point, trajectory, and motion before rising or committing to movement.
+  reason: The speaker instructs the player to read landing point, motion, and trajectory before rising and moving.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: jG1G3H7Fo_k
+    start_ms: 271360
+    end_ms: 289240
+    url: https://www.youtube.com/watch?v=jG1G3H7Fo_k&t=271s
+    segment_ids:
+    - jG1G3H7Fo_k:00088
+    - jG1G3H7Fo_k:00089
+    - jG1G3H7Fo_k:00090
+    - jG1G3H7Fo_k:00091
+    - jG1G3H7Fo_k:00092
+    - jG1G3H7Fo_k:00093
+    - jG1G3H7Fo_k:00094
+- id: VOX-e4IR2xg-concept-direction-reading-reviewed
+  evidence_type: explanation
+  excerpt: Inferring serve direction from the forearm and shoulder rotation rather than from the racket face, which is too fast to read reliably.
+  reason: The speaker explains how to read serve placement by watching forearm direction and rotation angle instead of the racket face.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: VOX-e4IR2xg
+    start_ms: 393840
+    end_ms: 421919
+    url: https://www.youtube.com/watch?v=VOX-e4IR2xg&t=393s
+    segment_ids:
+    - VOX-e4IR2xg:00142
+    - VOX-e4IR2xg:00143
+    - VOX-e4IR2xg:00144
+    - VOX-e4IR2xg:00145
+    - VOX-e4IR2xg:00146
+    - VOX-e4IR2xg:00147
+    - VOX-e4IR2xg:00148
+    - VOX-e4IR2xg:00149
+    - VOX-e4IR2xg:00150
+    - VOX-e4IR2xg:00151
+- id: 9BKPM_RMmtg-concept-direction-reading-reviewed
+  evidence_type: definition
+  excerpt: Reading the opponent's motion and the ball's spin early so you can predict the post-bounce direction before moving.
+  reason: The speaker explicitly says to read the opponent's motion clearly and train reading ability when judgment is weak.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 9BKPM_RMmtg
+    start_ms: 51400
+    end_ms: 75833
+    url: https://www.youtube.com/watch?v=9BKPM_RMmtg&t=51s
+    segment_ids:
+    - 9BKPM_RMmtg:00018
+    - 9BKPM_RMmtg:00025
+- id: NFfY66W2PGM-concept-direction-reading-reviewed
+  evidence_type: explanation
+  excerpt: Reading the intended direction or spin of a serve or shot before committing to the return decision.
+  reason: The discussion centers on guessing the spin and making it hard to tell from the serve motion.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: NFfY66W2PGM
+    start_ms: 33800
+    end_ms: 56033
+    url: https://www.youtube.com/watch?v=NFfY66W2PGM&t=33s
+    segment_ids:
+    - NFfY66W2PGM:00001
+    - NFfY66W2PGM:00004
+    - NFfY66W2PGM:00006
+- id: -jaC--EWjFw-concept-direction-reading-reviewed
+  evidence_type: definition
+  excerpt: Using the opponent's contact, body position, and recovery to decide where to move and where to play next.
+  reason: The speaker says the opponent's contact determines positioning, footwork, timing, backswing, and power direction.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: -jaC--EWjFw
+    start_ms: 93866
+    end_ms: 102300
+    url: https://www.youtube.com/watch?v=-jaC--EWjFw&t=93s
+    segment_ids:
+    - -jaC--EWjFw:00028
+    - -jaC--EWjFw:00029
+    - -jaC--EWjFw:00030
+    - -jaC--EWjFw:00031
+    - -jaC--EWjFw:00032
+- id: DSMYWiOahFU-concept-direction-reading-reviewed
+  evidence_type: definition
+  excerpt: Using the opponent's racket or paddle angle at the moment of contact to infer ball direction before the ball crosses the net, rather than guessing after the bounce.
+  reason: The speaker explicitly says tracking the ball means watching the opponent's racket, judging direction at contact, and reading left/right or forward/backward.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: DSMYWiOahFU
+    start_ms: 304600
+    end_ms: 308866
+    url: https://www.youtube.com/watch?v=DSMYWiOahFU&t=304s
+    segment_ids:
+    - DSMYWiOahFU:00096
+- id: Ji9_Etw6nvo-concept-direction-reading-reviewed
+  evidence_type: explanation
+  excerpt: Reading the opponent's shot direction and placement early enough to move and prepare correctly.
+  reason: The speaker explicitly says to have a clear prediction of placement and always anticipate the placement.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Ji9_Etw6nvo
+    start_ms: 464300
+    end_ms: 471733
+    url: https://www.youtube.com/watch?v=Ji9_Etw6nvo&t=464s
+    segment_ids:
+    - Ji9_Etw6nvo:00163
+    - Ji9_Etw6nvo:00164
+    - Ji9_Etw6nvo:00165
+- id: wpaKC8pALyQ-concept-direction-reading-reviewed
+  evidence_type: explanation
+  excerpt: Judging where the ball is going before committing to movement so the defender is not late.
+  reason: The speaker tells the listener to judge where the ball is going and not to assume forehand or backhand too early.
+  confidence: 0.88
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: wpaKC8pALyQ
+    start_ms: 255200
+    end_ms: 282033
+    url: https://www.youtube.com/watch?v=wpaKC8pALyQ&t=255s
+    segment_ids:
+    - wpaKC8pALyQ:00071
+    - wpaKC8pALyQ:00072
+    - wpaKC8pALyQ:00079
+    - wpaKC8pALyQ:00080
+    - wpaKC8pALyQ:00081
+    - wpaKC8pALyQ:00082
+    - wpaKC8pALyQ:00083
+- id: x3zw0baFM-I-concept-direction-reading-reviewed
+  evidence_type: explanation
+  excerpt: Read the ball's direction before moving so you can get into the correct position first and avoid being caught standing still.
+  reason: The transcript repeatedly says to figure out the direction first, move to the right spot, and then strike after observing the opponent's stroke.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: x3zw0baFM-I
+    start_ms: 202466
+    end_ms: 217133
+    url: https://www.youtube.com/watch?v=x3zw0baFM-I&t=202s
+    segment_ids:
+    - x3zw0baFM-I:00054
+    - x3zw0baFM-I:00055
+    - x3zw0baFM-I:00056
+    - x3zw0baFM-I:00057
+    - x3zw0baFM-I:00058
+- id: 9IzbAEYcS5A-concept-direction-reading-reviewed
+  evidence_type: explanation
+  excerpt: Reading the intended or actual ball direction before committing to movement or racket choice.
+  reason: The speaker says receive becomes harder when direction is wrong and repeatedly instructs moving left or right based on the spin/direction read.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 9IzbAEYcS5A
+    start_ms: 220600
+    end_ms: 236766
+    url: https://www.youtube.com/watch?v=9IzbAEYcS5A&t=220s
+    segment_ids:
+    - 9IzbAEYcS5A:00049
+    - 9IzbAEYcS5A:00051
+    - 9IzbAEYcS5A:00053
+- id: HlTqPv-MpGI-concept-direction-reading-reviewed
+  evidence_type: explanation
+  excerpt: Inferring the incoming ball direction before committing footwork or stroke choice.
+  reason: The speaker frames the key issue as judging whether the ball is far or close and deciding accordingly.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: HlTqPv-MpGI
+    start_ms: 649500
+    end_ms: 667133
+    url: https://www.youtube.com/watch?v=HlTqPv-MpGI&t=649s
+    segment_ids:
+    - HlTqPv-MpGI:00316
+    - HlTqPv-MpGI:00317
+    - HlTqPv-MpGI:00318
+    - HlTqPv-MpGI:00319
+    - HlTqPv-MpGI:00320
+    - HlTqPv-MpGI:00321
+    - HlTqPv-MpGI:00322
+    - HlTqPv-MpGI:00323
+    - HlTqPv-MpGI:00324
+- id: HlTqPv-MpGI-concept-direction-reading-reviewed-0e38789c
+  evidence_type: explanation
+  excerpt: Inferring the incoming ball direction before committing footwork or stroke choice.
+  reason: The speaker frames the key issue as judging whether the ball is far or close and deciding accordingly.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: HlTqPv-MpGI
+    start_ms: 649500
+    end_ms: 667133
+    url: https://www.youtube.com/watch?v=HlTqPv-MpGI&t=649s
+    segment_ids:
+    - HlTqPv-MpGI:00316
+    - HlTqPv-MpGI:00317
+    - HlTqPv-MpGI:00318
+    - HlTqPv-MpGI:00319
+    - HlTqPv-MpGI:00320
+    - HlTqPv-MpGI:00321
+    - HlTqPv-MpGI:00322
+    - HlTqPv-MpGI:00323
+    - HlTqPv-MpGI:00324
+- id: HVPF38PxXvI-concept-direction-reading-reviewed
+  evidence_type: definition
+  excerpt: Reading the ball's direction early enough to choose the correct movement and shot direction.
+  reason: The speaker says to watch the ball's trajectory immediately after contact and after the bounce, and summarizes this as a three-watch rule for reading the play.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: HVPF38PxXvI
+    start_ms: 178000
+    end_ms: 204900
+    url: https://www.youtube.com/watch?v=HVPF38PxXvI&t=178s
+    segment_ids:
+    - HVPF38PxXvI:00043
+    - HVPF38PxXvI:00044
+    - HVPF38PxXvI:00045
+    - HVPF38PxXvI:00048
+    - HVPF38PxXvI:00049
+- id: q70a9LCojco-concept-read-opponent-patterns-and-technical-flaws-reviewed
+  evidence_type: explanation
+  excerpt: Players should study opponents' technical flaws and patterns to predict where balls will go and adjust positioning accordingly.
+  reason: The transcript explains concrete prediction rules based on common technical flaws and explicitly says to observe the opponent.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: q70a9LCojco
+    start_ms: 899766
+    end_ms: 922866
+    url: https://www.youtube.com/watch?v=q70a9LCojco&t=899s
+    segment_ids:
+    - q70a9LCojco:00198
+    - q70a9LCojco:00199
+    - q70a9LCojco:00200
+    - q70a9LCojco:00201
+    - q70a9LCojco:00202
+    - q70a9LCojco:00203
+- id: JxbUnbUD_OY-concept-direction-reading-reviewed
+  evidence_type: explanation
+  excerpt: Reading the ball's placement first and delaying the swing until the target direction is known.
+  reason: He explains that identifying placement before swinging improves consistency and prevents locking the body in place.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: JxbUnbUD_OY
+    start_ms: 308133
+    end_ms: 327833
+    url: https://www.youtube.com/watch?v=JxbUnbUD_OY&t=308s
+    segment_ids:
+    - JxbUnbUD_OY:00064
+    - JxbUnbUD_OY:00066
+    - JxbUnbUD_OY:00067
+- id: 84TN41FD3cQ-concept-direction-reading-reviewed
+  evidence_type: explanation
+  excerpt: Use early recognition of the opponent's stroke to predict the likely return line and position before the ball arrives.
+  reason: The speaker explicitly says to quickly predict the most likely return position and return line.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 84TN41FD3cQ
+    start_ms: 37120
+    end_ms: 45000
+    url: https://www.youtube.com/watch?v=84TN41FD3cQ&t=37s
+    segment_ids:
+    - 84TN41FD3cQ:00018
+    - 84TN41FD3cQ:00019
+    - 84TN41FD3cQ:00020
+- id: 8fxjEROShs4-concept-direction-reading-codex-reviewed
+  evidence_type: explanation
+  excerpt: When receiving, focus on the ball’s position, keep the body stable, and shift after spotting the position.
+  reason: The speaker asks the receiver to identify the position before shifting.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 8fxjEROShs4
+    start_ms: 779333
+    end_ms: 794700
+    url: https://www.youtube.com/watch?v=8fxjEROShs4&t=779s
+    segment_ids:
+    - 8fxjEROShs4:00107
+    - 8fxjEROShs4:00108
+- id: 9IzbAEYcS5A-concept-direction-reading-codex-reviewed
+  evidence_type: explanation
+  excerpt: 'In this receiving exercise, the speaker directs the red side forward and to the right for right spin, then asks for a slight adjustment to the left against left spin.'
+  reason: The leftward adjustment is explicitly kept small rather than exaggerated.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: 9IzbAEYcS5A
+    start_ms: 571366
+    end_ms: 584733
+    url: https://www.youtube.com/watch?v=9IzbAEYcS5A&t=571s
+    segment_ids:
+    - 9IzbAEYcS5A:00125
+    - 9IzbAEYcS5A:00126
+    - 9IzbAEYcS5A:00127
+- id: D9ZAPb_65Hk-concept-direction-reading-codex-reviewed
+  evidence_type: explanation
+  excerpt: In rallies, read the opponent’s intention. The speaker asks whether the player can spot an impending direction change as the opponent releases the shot.
+  reason: The question focuses attention on the opponent’s action at shot release.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: D9ZAPb_65Hk
+    start_ms: 52080
+    end_ms: 62880
+    url: https://www.youtube.com/watch?v=D9ZAPb_65Hk&t=52s
+    segment_ids:
+    - D9ZAPb_65Hk:00015
+    - D9ZAPb_65Hk:00016
+    - D9ZAPb_65Hk:00017
+    - D9ZAPb_65Hk:00018
+    - D9ZAPb_65Hk:00019
+- id: HlTqPv-MpGI-concept-direction-reading-codex-reviewed
+  evidence_type: explanation
+  excerpt: The speaker asks whether the player can judge when the speaker makes a move and whether the ball is far away or close.
+  reason: The speaker asks the player to judge movement and the ball’s distance.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: HlTqPv-MpGI
+    start_ms: 649500
+    end_ms: 654366
+    url: https://www.youtube.com/watch?v=HlTqPv-MpGI&t=649s
+    segment_ids:
+    - HlTqPv-MpGI:00316
+    - HlTqPv-MpGI:00317
+- id: jG1G3H7Fo_k-concept-direction-reading-codex-reviewed
+  evidence_type: explanation
+  excerpt: Read the landing point, trajectory and motion before the body rises.
+  reason: The speaker says movement is ineffective while crouched and places the rise after reading the ball.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: jG1G3H7Fo_k
+    start_ms: 271360
+    end_ms: 289240
+    url: https://www.youtube.com/watch?v=jG1G3H7Fo_k&t=271s
+    segment_ids:
+    - jG1G3H7Fo_k:00088
+    - jG1G3H7Fo_k:00089
+    - jG1G3H7Fo_k:00090
+    - jG1G3H7Fo_k:00091
+    - jG1G3H7Fo_k:00092
+    - jG1G3H7Fo_k:00093
+    - jG1G3H7Fo_k:00094
 relations:
-  - relation_type: used_with
-    target_concept_id: concept-ready-position
-    sources:
-      - video_id: QET6W3rjOxo
-        start_ms: 321480
-        end_ms: 350640
-        url: "https://www.youtube.com/watch?v=QET6W3rjOxo&t=321s"
-        segment_ids: *id001
-    confidence: 0.9
-    review_status: approved
+- relation_type: used_with
+  target_concept_id: concept-ready-position
+  sources:
+  - video_id: QET6W3rjOxo
+    start_ms: 321480
+    end_ms: 350640
+    url: "https://www.youtube.com/watch?v=QET6W3rjOxo&t=321s"
+    segment_ids: *id001
+  confidence: 0.9
+  review_status: unreviewed

@@ -5,14 +5,10 @@ aliases: []
 short_definition: A serve motion that starts relaxed and transitions into explosive acceleration.
 evidence_summary: >-
   A serve motion that starts relaxed and transitions into explosive acceleration.
-evidence_summary_source_hash: "sha256:7453e422cdc308036f483c569dbc709a3928068d469fe6f1d9ef3d651868105a"
-evidence_summary_generator: "deterministic"
 concept_type: fundamentals
 facets:
   category:
-    - fundamentals
-  level:
-    - intermediate
+  - fundamentals
 difficulty:
 review_status: approved
 generated_by:
@@ -24,18 +20,19 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: QrbeXVhiLKg-concept-relax-then-explode-in-serve-motion-codex-reviewed
-    evidence_type: explanation
-    excerpt: You need to start relaxed, then transition into an explosive acceleration.
-    reason: The speaker explicitly summarizes a serve-motion principle of beginning relaxed and transitioning into explosive acceleration. No supplied concept covers this same topic.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: QrbeXVhiLKg
-      start_ms: 157900
-      end_ms: 168466
-      url: https://www.youtube.com/watch?v=QrbeXVhiLKg&t=157s
-      segment_ids:
-        - QrbeXVhiLKg:00037
-        - QrbeXVhiLKg:00038
+- id: QrbeXVhiLKg-concept-relax-then-explode-in-serve-motion-codex-reviewed
+  evidence_type: explanation
+  excerpt: You need to start relaxed, then transition into an explosive acceleration.
+  reason: Begin the serve relaxed, then transition into explosive acceleration.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: QrbeXVhiLKg
+    start_ms: 154933
+    end_ms: 168466
+    url: https://www.youtube.com/watch?v=QrbeXVhiLKg&t=154s
+    segment_ids:
+    - QrbeXVhiLKg:00036
+    - QrbeXVhiLKg:00037
+    - QrbeXVhiLKg:00038

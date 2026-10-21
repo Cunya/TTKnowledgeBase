@@ -1,93 +1,84 @@
 id: concept-defensive-rhythm-variation
 slug: defensive-rhythm-variation
-label: Defensive rhythm variation
+label: Changing rhythm against blocking and stepped-back defense
 aliases:
-  - pause then hit
-  - soft spin variation
-short_definition: Change pace, arc, and timing from defense so a distant attacker cannot repeat one comfortable rhythm.
+- short loop then direct hit
+- soft spin against stepped-back defense
+short_definition: After a short loop, use a direct hit on the next ball rather than looping repeatedly. A separate example says that if the opponent steps back to defend, a soft ball with spin can hinder the counterloop; close-table blocking is a different case.
 evidence_summary: >-
-  Defensive play can become more effective when the rhythm is varied instead of repeated in a
-  predictable way. A pause followed by a hit can disrupt the opponent's timing and make blocks
-  harder to read. Choosing between close-table blocking and stepping back to defend also changes
-  the kind of ball the player must handle, especially against soft but spinny returns.
-evidence_summary_source_hash: "sha256:ea499b85268375d5712cb466119db530e2e554c88f964ef2a8e5299a71e2ead2"
-evidence_summary_generator: "codex"
-concept_type: strategy
+  One cue says to pause then loop; another follows a short first loop with a direct hit rather than another loop, warning that repeated looping can become passive. After a heavy-spin loop is blocked, the next hit makes the rhythm hard to follow. Against an opponent who steps back to defend, soft balls are troublesome if they carry spin; the passage distinguishes this from close-table blocking.
+concept_type: tactic
 facets:
   category:
-    - stroke
-  side:
-    - neutral
-  level:
-    - intermediate
-difficulty: intermediate
+  - tactic
+difficulty:
 review_status: approved
 evidence:
-  - id: etKOmktKw1k-candidate-pause-then-hit-rhythm-change-1
-    evidence_type: explanation
-    excerpt: A rally pattern that breaks the opponent's blocking rhythm by using a slower or shorter spinny first loop, then a direct hit on the next ball instead of looping repeatedly.
-    reason: The speaker explicitly teaches changing the rally rhythm with a pause and a hit after the first loop to make blocking harder to follow.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: etKOmktKw1k
-      start_ms: 321440
-      end_ms: 351000
-      url: "https://www.youtube.com/watch?v=etKOmktKw1k&t=321s"
-      segment_ids: &id001
-        - "etKOmktKw1k:00116"
-        - "etKOmktKw1k:00117"
-        - "etKOmktKw1k:00118"
-        - "etKOmktKw1k:00119"
-        - "etKOmktKw1k:00120"
-        - "etKOmktKw1k:00121"
-        - "etKOmktKw1k:00122"
-        - "etKOmktKw1k:00123"
-  - id: etKOmktKw1k-candidate-pause-then-hit-rhythm-change-2
-    evidence_type: explanation
-    excerpt: A rally pattern that breaks the opponent's blocking rhythm by using a slower or shorter spinny first loop, then a direct hit on the next ball instead of looping repeatedly.
-    reason: The speaker explicitly teaches changing the rally rhythm with a pause and a hit after the first loop to make blocking harder to follow.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: etKOmktKw1k
-      start_ms: 349080
-      end_ms: 360800
-      url: "https://www.youtube.com/watch?v=etKOmktKw1k&t=349s"
-      segment_ids:
-        - "etKOmktKw1k:00124"
-        - "etKOmktKw1k:00125"
-        - "etKOmktKw1k:00126"
-        - "etKOmktKw1k:00127"
-        - "etKOmktKw1k:00128"
-  - id: etKOmktKw1k-candidate-soft-spin-ball-to-mid-distance-defender-1
-    evidence_type: explanation
-    excerpt: Against a defender who has stepped back from the table, a softer ball that still carries spin can be more troublesome than a harder ball because it discourages an easy counterloop.
-    reason: The speaker contrasts close-table blocking with stepping back to defend and says the latter fears soft but spinny balls.
-    confidence: 0.84
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: etKOmktKw1k
-      start_ms: 360880
-      end_ms: 376000
-      url: "https://www.youtube.com/watch?v=etKOmktKw1k&t=360s"
-      segment_ids:
-        - "etKOmktKw1k:00129"
-        - "etKOmktKw1k:00130"
-        - "etKOmktKw1k:00131"
-        - "etKOmktKw1k:00132"
-        - "etKOmktKw1k:00133"
+- id: etKOmktKw1k-candidate-pause-then-hit-rhythm-change-1
+  evidence_type: explanation
+  excerpt: The cues are to pause then loop, and after a short first loop to make the second ball a direct hit. Do not loop again after the first loop, or it is easy to become passive.
+  reason: After a short first loop, make the second ball a direct hit rather than another loop. The passage also gives a pause-then-loop cue.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: etKOmktKw1k
+    start_ms: 321440
+    end_ms: 351000
+    url: "https://www.youtube.com/watch?v=etKOmktKw1k&t=321s"
+    segment_ids: &id001
+    - "etKOmktKw1k:00116"
+    - "etKOmktKw1k:00117"
+    - "etKOmktKw1k:00118"
+    - "etKOmktKw1k:00119"
+    - "etKOmktKw1k:00120"
+    - "etKOmktKw1k:00121"
+    - "etKOmktKw1k:00122"
+    - "etKOmktKw1k:00123"
+- id: etKOmktKw1k-candidate-pause-then-hit-rhythm-change-2
+  evidence_type: explanation
+  excerpt: After a heavy-spin loop is blocked, hit the next ball so the rhythm becomes hard to follow.
+  reason: Follow the blocked heavy-spin loop with a hit to make the rhythm hard to follow.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: etKOmktKw1k
+    start_ms: 349080
+    end_ms: 360800
+    url: "https://www.youtube.com/watch?v=etKOmktKw1k&t=349s"
+    segment_ids:
+    - "etKOmktKw1k:00124"
+    - "etKOmktKw1k:00125"
+    - "etKOmktKw1k:00126"
+    - "etKOmktKw1k:00127"
+    - "etKOmktKw1k:00128"
+- id: etKOmktKw1k-candidate-soft-spin-ball-to-mid-distance-defender-1
+  evidence_type: explanation
+  excerpt: Close-table blocking is a different case. If the opponent steps back to defend, soft balls are troublesome; as long as the ball has spin, the opponent will not easily counterloop.
+  reason: Against stepped-back defense, use the source's soft-ball condition with spin; close-table blocking is explicitly a different case.
+  confidence: 0.84
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: etKOmktKw1k
+    start_ms: 360880
+    end_ms: 376000
+    url: "https://www.youtube.com/watch?v=etKOmktKw1k&t=360s"
+    segment_ids:
+    - "etKOmktKw1k:00129"
+    - "etKOmktKw1k:00130"
+    - "etKOmktKw1k:00131"
+    - "etKOmktKw1k:00132"
+    - "etKOmktKw1k:00133"
 relations:
-  - relation_type: variation_of
-    target_concept_id: concept-block-trajectory-and-placement
-    sources:
-      - video_id: etKOmktKw1k
-        start_ms: 321440
-        end_ms: 351000
-        url: "https://www.youtube.com/watch?v=etKOmktKw1k&t=321s"
-        segment_ids: *id001
-    confidence: 0.9
-    review_status: approved
+- relation_type: variation_of
+  target_concept_id: concept-block-trajectory-and-placement
+  sources:
+  - video_id: etKOmktKw1k
+    start_ms: 321440
+    end_ms: 351000
+    url: "https://www.youtube.com/watch?v=etKOmktKw1k&t=321s"
+    segment_ids: *id001
+  confidence: 0.9
+  review_status: unreviewed

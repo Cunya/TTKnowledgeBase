@@ -2,22 +2,16 @@ id: concept-self-review-through-recording
 slug: self-review-through-recording
 label: Self-review through recording
 aliases:
-  - observe your own performance
-  - record your own movements
-  - watch closely
-short_definition: Improving by recording and reviewing one's own play to identify mistakes and weaknesses.
+- record and review your own play
+- act as your own coach
+short_definition: Recording and reviewing one's play to identify mistakes and analyze lost points.
 evidence_summary: >-
-  Improving by recording and reviewing one's own play to identify mistakes and weaknesses.
-evidence_summary_source_hash: "sha256:0ce74d345bfe06b9afc8def8c44a9a7352783ddb77dc50ca725613b02cf1277b"
-evidence_summary_generator: "deterministic"
+  Use recordings to observe yourself clearly and identify mistakes. Match self-review includes compiling mistakes and analyzing how points were lost.
 concept_type: concept
 facets:
   category:
-    - practice
-  level:
-    - intermediate
-    - beginner
-difficulty: easy
+  - practice
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -28,133 +22,133 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: WeSy68cdZ5U-candidate-2-reviewed
-    evidence_type: explanation
-    excerpt: Improving by recording and reviewing one's own play to identify mistakes and weaknesses.
-    reason: The speaker says you need to observe closely to understand weaknesses and that seeing yourself play is crucial.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: WeSy68cdZ5U
-      start_ms: 587133
-      end_ms: 597066
-      url: https://www.youtube.com/watch?v=WeSy68cdZ5U&t=587s
-      segment_ids:
-        - WeSy68cdZ5U:00095
-        - WeSy68cdZ5U:00096
-  - id: 9WPYbE6DoTo-concept-self-review-through-recording-reviewed
-    evidence_type: explanation
-    excerpt: Record play, review the footage, and use self-analysis to identify mistakes and adjustment points.
-    reason: The transcript recommends recording matches, reviewing them personally, identifying mistakes, and analyzing causes such as tension, positioning, weight transfer, rhythm, and spin recognition.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 9WPYbE6DoTo
-      start_ms: 439200
-      end_ms: 459400
-      url: https://www.youtube.com/watch?v=9WPYbE6DoTo&t=439s
-      segment_ids:
-        - 9WPYbE6DoTo:00110
-        - 9WPYbE6DoTo:00112
-        - 9WPYbE6DoTo:00113
-        - 9WPYbE6DoTo:00114
-  - id: xHCH_T6xjcc-concept-self-review-through-recording-reviewed
-    evidence_type: explanation
-    excerpt: Use video or recorded review to analyze your own technique and compare timing or stroke completion.
-    reason: The speaker says they always review coaching sessions, all are filmed, and then analyzed in detail.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: xHCH_T6xjcc
-      start_ms: 1089466
-      end_ms: 1098166
-      url: https://www.youtube.com/watch?v=xHCH_T6xjcc&t=1089s
-      segment_ids:
-        - xHCH_T6xjcc:00285
-        - xHCH_T6xjcc:00286
-        - xHCH_T6xjcc:00287
-  - id: 8S2YprEr6XA-concept-self-review-through-recording-reviewed
-    evidence_type: example
-    excerpt: Using video review to inspect whether the hooking and force direction are correct.
-    reason: The speaker explicitly recommends recording yourself and acting as your own coach to verify the motion.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 8S2YprEr6XA
-      start_ms: 143766
-      end_ms: 156300
-      url: https://www.youtube.com/watch?v=8S2YprEr6XA&t=143s
-      segment_ids:
-        - 8S2YprEr6XA:00023
-        - 8S2YprEr6XA:00024
-        - 8S2YprEr6XA:00025
-        - 8S2YprEr6XA:00026
-  - id: NvQgMvevIPY-concept-self-review-through-recording-reviewed
-    evidence_type: explanation
-    excerpt: Recording and reviewing one's own strokes to identify problems that are hard to notice in real time.
-    reason: The speaker says many players have never seen themselves play and that recording makes the issue obvious.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: NvQgMvevIPY
-      start_ms: 444866
-      end_ms: 456433
-      url: https://www.youtube.com/watch?v=NvQgMvevIPY&t=444s
-      segment_ids:
-        - NvQgMvevIPY:00101
-        - NvQgMvevIPY:00103
-  - id: DfQ_yBSS_bk-concept-self-review-through-recording-reviewed
-    evidence_type: demonstration
-    excerpt: Using phone recording to inspect the stroke and diagnose why brushing contact is failing.
-    reason: The speaker explicitly recommends recording yourself with your phone and analyzing your technique if you cannot brush cleanly.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: DfQ_yBSS_bk
-      start_ms: 962433
-      end_ms: 968366
-      url: https://www.youtube.com/watch?v=DfQ_yBSS_bk&t=962s
-      segment_ids:
-        - DfQ_yBSS_bk:00197
-  - id: 8S2YprEr6XA-concept-self-review-through-recording-codex-reviewed
-    evidence_type: explanation
-    excerpt: 'Record a video of yourself and act as your own coach: if the hooking contact fails, observe the mistake clearly and assess the horizontal force and performance before addressing other issues.'
-    reason: The selected contiguous span directly recommends recording oneself, acting as one's own coach, and observing hooking contact and horizontal-force performance to identify mistakes. It matches the existing durable concept; unsupported spin, distance, and level facets are omitted.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 8S2YprEr6XA
-      start_ms: 143766
-      end_ms: 162300
-      url: https://www.youtube.com/watch?v=8S2YprEr6XA&t=143s
-      segment_ids:
-        - 8S2YprEr6XA:00023
-        - 8S2YprEr6XA:00024
-        - 8S2YprEr6XA:00025
-        - 8S2YprEr6XA:00026
-        - 8S2YprEr6XA:00027
-  - id: 9WPYbE6DoTo-concept-self-review-through-recording-codex-reviewed
-    evidence_type: explanation
-    excerpt: Record your matches, review the footage yourself, identify your mistakes, and analyze how you lost those points.
-    reason: These contiguous segments directly recommend recording matches, reviewing the footage, identifying mistakes, and analyzing the causes of lost points.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 9WPYbE6DoTo
-      start_ms: 439200
-      end_ms: 459400
-      url: https://www.youtube.com/watch?v=9WPYbE6DoTo&t=439s
-      segment_ids:
-        - 9WPYbE6DoTo:00110
-        - 9WPYbE6DoTo:00111
-        - 9WPYbE6DoTo:00112
-        - 9WPYbE6DoTo:00113
-        - 9WPYbE6DoTo:00114
+- id: WeSy68cdZ5U-candidate-2-reviewed
+  evidence_type: explanation
+  excerpt: Improving by recording and reviewing one's own play to identify mistakes and weaknesses.
+  reason: The speaker says you need to observe closely to understand weaknesses and that seeing yourself play is crucial.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: WeSy68cdZ5U
+    start_ms: 587133
+    end_ms: 597066
+    url: https://www.youtube.com/watch?v=WeSy68cdZ5U&t=587s
+    segment_ids:
+    - WeSy68cdZ5U:00095
+    - WeSy68cdZ5U:00096
+- id: 9WPYbE6DoTo-concept-self-review-through-recording-reviewed
+  evidence_type: explanation
+  excerpt: Record play, review the footage, and use self-analysis to identify mistakes and adjustment points.
+  reason: The transcript recommends recording matches, reviewing them personally, identifying mistakes, and analyzing causes such as tension, positioning, weight transfer, rhythm, and spin recognition.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 9WPYbE6DoTo
+    start_ms: 439200
+    end_ms: 459400
+    url: https://www.youtube.com/watch?v=9WPYbE6DoTo&t=439s
+    segment_ids:
+    - 9WPYbE6DoTo:00110
+    - 9WPYbE6DoTo:00112
+    - 9WPYbE6DoTo:00113
+    - 9WPYbE6DoTo:00114
+- id: xHCH_T6xjcc-concept-self-review-through-recording-reviewed
+  evidence_type: explanation
+  excerpt: Use video or recorded review to analyze your own technique and compare timing or stroke completion.
+  reason: The speaker says they always review coaching sessions, all are filmed, and then analyzed in detail.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: xHCH_T6xjcc
+    start_ms: 1089466
+    end_ms: 1098166
+    url: https://www.youtube.com/watch?v=xHCH_T6xjcc&t=1089s
+    segment_ids:
+    - xHCH_T6xjcc:00285
+    - xHCH_T6xjcc:00286
+    - xHCH_T6xjcc:00287
+- id: 8S2YprEr6XA-concept-self-review-through-recording-reviewed
+  evidence_type: example
+  excerpt: Using video review to inspect whether the hooking and force direction are correct.
+  reason: The speaker explicitly recommends recording yourself and acting as your own coach to verify the motion.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 8S2YprEr6XA
+    start_ms: 143766
+    end_ms: 156300
+    url: https://www.youtube.com/watch?v=8S2YprEr6XA&t=143s
+    segment_ids:
+    - 8S2YprEr6XA:00023
+    - 8S2YprEr6XA:00024
+    - 8S2YprEr6XA:00025
+    - 8S2YprEr6XA:00026
+- id: NvQgMvevIPY-concept-self-review-through-recording-reviewed
+  evidence_type: explanation
+  excerpt: Recording and reviewing one's own strokes to identify problems that are hard to notice in real time.
+  reason: The speaker says many players have never seen themselves play and that recording makes the issue obvious.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: NvQgMvevIPY
+    start_ms: 444866
+    end_ms: 456433
+    url: https://www.youtube.com/watch?v=NvQgMvevIPY&t=444s
+    segment_ids:
+    - NvQgMvevIPY:00101
+    - NvQgMvevIPY:00103
+- id: DfQ_yBSS_bk-concept-self-review-through-recording-reviewed
+  evidence_type: demonstration
+  excerpt: Using phone recording to inspect the stroke and diagnose why brushing contact is failing.
+  reason: The speaker explicitly recommends recording yourself with your phone and analyzing your technique if you cannot brush cleanly.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: DfQ_yBSS_bk
+    start_ms: 962433
+    end_ms: 968366
+    url: https://www.youtube.com/watch?v=DfQ_yBSS_bk&t=962s
+    segment_ids:
+    - DfQ_yBSS_bk:00197
+- id: 8S2YprEr6XA-concept-self-review-through-recording-codex-reviewed
+  evidence_type: explanation
+  excerpt: 'Record yourself and act as your own coach. If you fail to make contact after hooking, observe yourself clearly. The speaker checks horizontal force and performance on these points before addressing other issues.'
+  reason: Use a recording to observe failed contact after hooking clearly. The speaker checks horizontal force and performance on these points before moving to other issues.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 8S2YprEr6XA
+    start_ms: 143766
+    end_ms: 162300
+    url: https://www.youtube.com/watch?v=8S2YprEr6XA&t=143s
+    segment_ids:
+    - 8S2YprEr6XA:00023
+    - 8S2YprEr6XA:00024
+    - 8S2YprEr6XA:00025
+    - 8S2YprEr6XA:00026
+    - 8S2YprEr6XA:00027
+- id: 9WPYbE6DoTo-concept-self-review-through-recording-codex-reviewed
+  evidence_type: explanation
+  excerpt: Do you record your matches and review the footage yourself? Identify your mistakes, compile them, and analyze how you lost those points.
+  reason: Self-review focuses on identifying and compiling mistakes and analyzing lost points.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: 9WPYbE6DoTo
+    start_ms: 439200
+    end_ms: 459400
+    url: https://www.youtube.com/watch?v=9WPYbE6DoTo&t=439s
+    segment_ids:
+    - 9WPYbE6DoTo:00110
+    - 9WPYbE6DoTo:00111
+    - 9WPYbE6DoTo:00112
+    - 9WPYbE6DoTo:00113
+    - 9WPYbE6DoTo:00114

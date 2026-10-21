@@ -1,29 +1,18 @@
 id: concept-close-table-defensive-positioning
 slug: close-table-defensive-positioning
-label: Close-table defensive positioning
+label: Moving in and limiting retreat
 aliases:
-- inside the table
-- don't back off
-- lift your racket up immediately
-short_definition: Staying close enough to the table, with the racket held up and inside the table, to take the ball early instead of retreating under pressure.
+- move in to receive
+- limit retreat in the backhand defensive position
+short_definition: "A receiving cue says 'Lower your body as it lands' and 'Move in to receive'. After serving, watch the depth: the explanation warns that stepping back when the ball sinks prevents power generation. In the backhand defensive example, retreat reduces the reachable angle and forward movement increases it; stepping back to track the ball is also allowed."
 evidence_summary: >-
-  This contiguous segment directly supports moving in to receive while lowering the body as the ball lands, which matches the existing close-table positioning topic. This contiguous 21.5-second span directly explains that retreating from the table against a long, sinking ball reduces power and causes the ball to sink. These contiguous segments directly explain the defensive positioning principle and explicitly conclude, “don't step back.”
-evidence_summary_source_hash: "sha256:672a078bddf81ea5f9c3716f9467799d014c8849b918908f4d7aaa328843a05d"
-evidence_summary_generator: "deterministic"
+  One receiving cue says 'Lower your body as it lands' and 'Move in to receive'. Another says to watch depth after serving: stepping back when the ball sinks prevents power generation. In a backhand defensive example, moving backward reduces the reachable angle and moving forward increases it, while stepping back to track the ball remains an option.
 concept_type: tactic
 facets:
   category:
   - fundamentals
   - tactic
-  side:
-  - neutral
-  spin:
-  - topspin
-  distance:
-  - close
-  level:
-  - intermediate
-difficulty: intermediate
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -310,7 +299,7 @@ evidence:
 - id: 8fxjEROShs4-concept-close-table-defensive-positioning-codex-reviewed
   evidence_type: explanation
   excerpt: Lower your body as it lands. Move in to receive.
-  reason: This contiguous segment directly supports moving in to receive while lowering the body as the ball lands, which matches the existing close-table positioning topic.
+  reason: The receiving cues are 'Lower your body as it lands' and 'Move in to receive'.
   confidence: 0.91
   visual_status: transcript_inferred
   review_status: approved
@@ -323,8 +312,8 @@ evidence:
     - 8fxjEROShs4:00005
 - id: fi3p2TgKGHI-concept-close-table-defensive-positioning-codex-reviewed
   evidence_type: explanation
-  excerpt: 'Against a long, sinking ball, do not step back from the table: retreating prevents you from generating power and makes the ball sink.'
-  reason: This contiguous 21.5-second span directly explains that retreating from the table against a long, sinking ball reduces power and causes the ball to sink.
+  excerpt: 'After serving, watch the depth. If the ball is sinking and you step back from the table, you cannot generate power. The explanation says not to step back and warns that the ball will sink if you do.'
+  reason: After serving, watch the depth and avoid stepping back from the table when the ball sinks; the explanation warns that retreat prevents power generation and leaves the ball sinking.
   confidence: 0.99
   visual_status: transcript_inferred
   review_status: approved
@@ -346,17 +335,18 @@ evidence:
     - fi3p2TgKGHI:00085
 - id: HlTqPv-MpGI-concept-close-table-defensive-positioning-codex-reviewed
   evidence_type: explanation
-  excerpt: The speaker explains that retreating with the backhand limits the reachable point and angle, while moving forward increases the reachable angle; therefore, players should avoid stepping back.
-  reason: These contiguous segments directly explain the defensive positioning principle and explicitly conclude, “don't step back.”
+  excerpt: In this backhand defensive position, moving back reduces the angle you can reach, while moving forward increases it. The advice is not to step back, though stepping back to track the ball is also allowed.
+  reason: In the backhand defensive example, retreat limits the reachable angle and forward movement increases it. The following qualification allows stepping back to track the ball.
   confidence: 0.98
   visual_status: transcript_inferred
   review_status: approved
   source:
     video_id: HlTqPv-MpGI
-    start_ms: 425633
-    end_ms: 441700
-    url: https://www.youtube.com/watch?v=HlTqPv-MpGI&t=425s
+    start_ms: 422166
+    end_ms: 445300
+    url: https://www.youtube.com/watch?v=HlTqPv-MpGI&t=422s
     segment_ids:
+    - HlTqPv-MpGI:00212
     - HlTqPv-MpGI:00213
     - HlTqPv-MpGI:00214
     - HlTqPv-MpGI:00215
@@ -364,3 +354,5 @@ evidence:
     - HlTqPv-MpGI:00217
     - HlTqPv-MpGI:00218
     - HlTqPv-MpGI:00219
+    - HlTqPv-MpGI:00220
+    - HlTqPv-MpGI:00221

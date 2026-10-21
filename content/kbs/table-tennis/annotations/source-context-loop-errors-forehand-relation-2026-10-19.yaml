@@ -1,0 +1,44 @@
+added_record:
+  confidence: 0.96
+  evidence_type: explanation
+  excerpt: The speaker asks whether applying power on forehand topspin mostly sends the ball long or into the net, then says most players hit long.
+  id: zd8tcVUWwK4-cand-forehand-loop-common-errors-1-forehand-context
+  reason: This opening identifies the later long-ball discussion as forehand topspin played with power.
+  review_status: approved
+  source:
+    end_ms: 10000
+    segment_ids:
+    - zd8tcVUWwK4:00000
+    - zd8tcVUWwK4:00001
+    - zd8tcVUWwK4:00002
+    start_ms: 0
+    url: https://www.youtube.com/watch?v=zd8tcVUWwK4&t=0s
+    video_id: zd8tcVUWwK4
+  visual_source: null
+  visual_status: not_visual
+before_sha256: sha256:5b1163941a0b5c4da2d51ae1285541aec1c5aa8036249f87229202789b37c611
+concept_id: concept-forehand-loop-common-errors
+kind: reviewed_source_context_completion
+previous_relation_sources:
+- end_ms: 387700
+  segment_ids:
+  - Cq6MbP6TEdc:00094
+  - Cq6MbP6TEdc:00095
+  start_ms: 379266
+  url: https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=379s
+  video_id: Cq6MbP6TEdc
+relation_source:
+  end_ms: 387700
+  segment_ids:
+  - Cq6MbP6TEdc:00090
+  - Cq6MbP6TEdc:00091
+  - Cq6MbP6TEdc:00092
+  - Cq6MbP6TEdc:00093
+  - Cq6MbP6TEdc:00094
+  - Cq6MbP6TEdc:00095
+  start_ms: 361266
+  url: https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=361s
+  video_id: Cq6MbP6TEdc
+review_scope: Actualzd0-2 owns forehand-topspin-with-power identity in10s while preserving original2-9 (0-9 would30.480s). Corrects relation now owns Cq90-95 high-arc/lift problem, brushing-over-top solution and referenced loop in26.434s. Allother existing records including three inferred visual windows remain untouched at this step. Wholearticle text/metadata verification and final primary/release required; allthree visual units remain needs_footage, no watched assertion.
+reviewed_at: '2026-10-19T19:16:44.989089+00:00'
+reviewer: codex-primary-source-context-2026-10-19-22

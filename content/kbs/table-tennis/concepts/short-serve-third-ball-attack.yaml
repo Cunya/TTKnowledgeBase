@@ -1,686 +1,685 @@
 id: concept-short-serve-third-ball-attack
 slug: short-serve-third-ball-attack
-label: Short-serve third-ball attack
+label: Third-ball attack after serving
 aliases: [third-ball attack, serve-and-attack pattern]
-short_definition: Serve short to invite a slow push, then attack the first available return.
+short_definition: Planning the attack after the opponent returns a serve, with short-serve setups and tempo matched to the returned ball.
 evidence_summary: >-
-  A short serve is often the strongest setup for a third-ball attack because it invites a slower
-  push return and creates a predictable rhythm change. The highest-percentage pattern is to serve
-  short, expect a push, and attack at the peak with a loop or other prepared follow-up, especially
-  when the serve carries light backspin. The value of the serve comes from the pressure it creates
-  on the next ball rather than from trying to win immediately with an ace.
-evidence_summary_source_hash: "sha256:44a207c4ad207830cb01dee8fc5492b640437b2285a389c6bc296dc6310da5b6"
-evidence_summary_generator: "codex"
+  Short, light-spin serves are described as producing slow, low-spin push returns that can be looped or driven. A rhythm example recommends serving short rather than long for a slow-push-to-fast-attack contrast; another targets the peak and open court. Separate timing cues wait on a slow push and use a quick rhythm against a fast return. One low-spin setup also allows a half-long serve and warns against a popped-up sidespin-topspin serve when the opponent can attack deep to the forehand. The serve is judged by the follow-up it creates, with aces treated as a bonus.
 concept_type: tactical-pattern
-facets: {category: [serve, tactics], side: [neutral], level: [intermediate]}
-difficulty: intermediate
+facets:
+  category:
+  - serve
+difficulty:
 review_status: approved
 evidence:
-  - id: third-ball-pattern-1
-    evidence_type: explanation
-    excerpt: The first ball is easiest to attack, especially after a short serve and push return.
-    reason: Introduces the third-ball opportunity.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source: {video_id: csJgHR7Daog, start_ms: 320, end_ms: 8960, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=0s", segment_ids: ["csJgHR7Daog:00000", "csJgHR7Daog:00001", "csJgHR7Daog:00002"]}
-  - id: third-ball-setup-2
-    evidence_type: example
-    excerpt: Serve short and light spin; the push comes back slow, perfect to loop or power drive.
-    reason: States the serve, expected return, and intended attack.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source: {video_id: csJgHR7Daog, start_ms: 7240, end_ms: 15600, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=7s", segment_ids: ["csJgHR7Daog:00003", "csJgHR7Daog:00004", "csJgHR7Daog:00005"]}
-  - id: global-serve-follow-up-3
-    evidence_type: explanation
-    excerpt: Evaluate the serve by whether it creates the strongest available follow-up attack.
-    reason: Global TT Studio reframes serve quality around the follow-up rather than the ace.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source: {video_id: leQBUn8-4tw, start_ms: 278600, end_ms: 292900, url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=278s", segment_ids: ["leQBUn8-4tw:00060", "leQBUn8-4tw:00061", "leQBUn8-4tw:00062"]}
-  - id: global-follow-up-pressure-4
-    evidence_type: explanation
-    excerpt: The main threat is the attack that follows the serve.
-    reason: Explains the tactical pressure created by a planned next ball.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source: {video_id: leQBUn8-4tw, start_ms: 292900, end_ms: 301266, url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=292s", segment_ids: ["leQBUn8-4tw:00063", "leQBUn8-4tw:00064"]}
-  - id: global-third-ball-example-5
-    evidence_type: example
-    excerpt: Use a weak return after the serve as the opening for the third-ball attack.
-    reason: A second Global TT Studio video states the complete pattern in one clip.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source: {video_id: G7eiadOxN8E, start_ms: 22566, end_ms: 27533, url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=22s", segment_ids: ["G7eiadOxN8E:00006"]}
-  - id: p19HWlk7LGo-concept-short-serve-third-ball-rhythm-contrast-1
-    evidence_type: definition
-    excerpt: For third-ball attack, a short serve invites a slower push return that creates a timing contrast, letting the attacker accelerate suddenly on the next ball.
-    reason: The coach recommends short rather than long serves for third-ball attack because the push return arrives slower and creates rhythm contrast.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: p19HWlk7LGo
-      start_ms: 173720
-      end_ms: 186840
-      url: https://www.youtube.com/watch?v=p19HWlk7LGo&t=173s
-      segment_ids:
-        - p19HWlk7LGo:00057
-        - p19HWlk7LGo:00058
-        - p19HWlk7LGo:00059
-        - p19HWlk7LGo:00060
-        - p19HWlk7LGo:00061
-        - p19HWlk7LGo:00062
-  - id: p19HWlk7LGo-concept-short-serve-third-ball-rhythm-contrast-2
-    evidence_type: example
-    excerpt: For third-ball attack, a short serve invites a slower push return that creates a timing contrast, letting the attacker accelerate suddenly on the next ball.
-    reason: A concrete serve-short, get-push, attack-at-the-peak sequence is given as the high-percentage pattern.
-    confidence: 0.92
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: p19HWlk7LGo
-      start_ms: 222080
-      end_ms: 234920
-      url: https://www.youtube.com/watch?v=p19HWlk7LGo&t=222s
-      segment_ids:
-        - p19HWlk7LGo:00076
-        - p19HWlk7LGo:00077
-        - p19HWlk7LGo:00078
-        - p19HWlk7LGo:00079
-        - p19HWlk7LGo:00080
-  - id: XfWXrGTlW5M-concept-short-serve-third-ball-attack-1
-    evidence_type: explanation
-    excerpt: The coach introduces attacking the underspin ball after serve and explains different rhythm demands for slow versus fast returns.
-    reason: A serve-plus-first-attack pattern in which the player adjusts loop rhythm to the speed of the opponent's pushed return instead of using one fixed tempo.
-    confidence: 0.91
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: XfWXrGTlW5M
-      start_ms: 290200
-      end_ms: 294266
-      url: https://www.youtube.com/watch?v=XfWXrGTlW5M&t=290s
-      segment_ids:
-        - XfWXrGTlW5M:00070
-  - id: XfWXrGTlW5M-concept-short-serve-third-ball-attack-2
-    evidence_type: explanation
-    excerpt: The coach introduces attacking the underspin ball after serve and explains different rhythm demands for slow versus fast returns.
-    reason: A serve-plus-first-attack pattern in which the player adjusts loop rhythm to the speed of the opponent's pushed return instead of using one fixed tempo.
-    confidence: 0.91
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: XfWXrGTlW5M
-      start_ms: 361133
-      end_ms: 366033
-      url: https://www.youtube.com/watch?v=XfWXrGTlW5M&t=361s
-      segment_ids:
-        - XfWXrGTlW5M:00086
-  - id: XfWXrGTlW5M-concept-short-serve-third-ball-attack-3
-    evidence_type: correction
-    excerpt: He contrasts the wrong slow-tempo serve-and-loop against fast returns with the correct quick matching rhythm.
-    reason: A serve-plus-first-attack pattern in which the player adjusts loop rhythm to the speed of the opponent's pushed return instead of using one fixed tempo.
-    confidence: 0.89
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: XfWXrGTlW5M
-      start_ms: 351400
-      end_ms: 356200
-      url: https://www.youtube.com/watch?v=XfWXrGTlW5M&t=351s
-      segment_ids:
-        - XfWXrGTlW5M:00084
-  - id: XfWXrGTlW5M-concept-short-serve-third-ball-attack-4
-    evidence_type: correction
-    excerpt: He contrasts the wrong slow-tempo serve-and-loop against fast returns with the correct quick matching rhythm.
-    reason: A serve-plus-first-attack pattern in which the player adjusts loop rhythm to the speed of the opponent's pushed return instead of using one fixed tempo.
-    confidence: 0.89
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: XfWXrGTlW5M
-      start_ms: 393700
-      end_ms: 399900
-      url: https://www.youtube.com/watch?v=XfWXrGTlW5M&t=393s
-      segment_ids:
-        - XfWXrGTlW5M:00091
-  - id: XlGnK1z_7C0-concept-short-serve-third-ball-attack-reviewed
-    evidence_type: explanation
-    excerpt: Serving short, usually with backspin or deception, to provoke a predictable return that can be attacked on the third ball.
-    reason: The speaker gives a concrete example of a short backspin serve that most opponents push back, creating a ready-made third-ball loop or attack.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: XlGnK1z_7C0
-      start_ms: 69960
-      end_ms: 90320
-      url: https://www.youtube.com/watch?v=XlGnK1z_7C0&t=69s
-      segment_ids:
-        - XlGnK1z_7C0:00030
-        - XlGnK1z_7C0:00031
-        - XlGnK1z_7C0:00032
-        - XlGnK1z_7C0:00033
-        - XlGnK1z_7C0:00034
-        - XlGnK1z_7C0:00035
-        - XlGnK1z_7C0:00036
-        - XlGnK1z_7C0:00037
-  - id: ODwFaYDY1co-concept-short-serve-third-ball-attack-reviewed
-    evidence_type: definition
-    excerpt: Using a short serve, especially light backspin, to create an easier opening for the third-ball attack after the receive.
-    reason: The speaker explicitly says the best serve for setting up an attack is a short serve and that the best spin for third-ball attack is light backspin.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: ODwFaYDY1co
-      start_ms: 4920
-      end_ms: 25200
-      url: https://www.youtube.com/watch?v=ODwFaYDY1co&t=4s
-      segment_ids:
-        - ODwFaYDY1co:00002
-        - ODwFaYDY1co:00003
-        - ODwFaYDY1co:00008
-        - ODwFaYDY1co:00009
-  - id: ODwFaYDY1co-concept-short-serve-third-ball-attack-reviewed-b97e7643
-    evidence_type: definition
-    excerpt: Using a short serve, especially light backspin, to create an easier opening for the third-ball attack after the receive.
-    reason: The speaker explicitly says the best serve for setting up an attack is a short serve and that the best spin for third-ball attack is light backspin.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: ODwFaYDY1co
-      start_ms: 4920
-      end_ms: 25200
-      url: https://www.youtube.com/watch?v=ODwFaYDY1co&t=4s
-      segment_ids:
-        - ODwFaYDY1co:00002
-        - ODwFaYDY1co:00003
-        - ODwFaYDY1co:00008
-        - ODwFaYDY1co:00009
-  - id: PDFXww03DHM-concept-short-serve-third-ball-attack-reviewed
-    evidence_type: explanation
-    excerpt: Use a short serve, recover inside the table, and prepare to attack the third ball with improved speed and spin.
-    reason: The speaker says to finish inside the table after contact and links that to improved speed, spin, and quality, which fits a third-ball follow-up attack structure.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: PDFXww03DHM
-      start_ms: 203760
-      end_ms: 233040
-      url: https://www.youtube.com/watch?v=PDFXww03DHM&t=203s
-      segment_ids:
-        - PDFXww03DHM:00061
-        - PDFXww03DHM:00062
-        - PDFXww03DHM:00063
-        - PDFXww03DHM:00064
-        - PDFXww03DHM:00065
-        - PDFXww03DHM:00066
-        - PDFXww03DHM:00067
-        - PDFXww03DHM:00068
-        - PDFXww03DHM:00069
-  - id: oLxdGO8TY8s-cand-8-reviewed
-    evidence_type: explanation
-    excerpt: Using a short serve to set up a planned attack on the third ball, often with spin or power depending on context.
-    reason: The speaker discusses serving short to the forehand and then choosing between spin loop, power loop, or a no-spin wide serve followed by a power loop.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: oLxdGO8TY8s
-      start_ms: 450760
-      end_ms: 473520
-      url: https://www.youtube.com/watch?v=oLxdGO8TY8s&t=450s
-      segment_ids:
-        - oLxdGO8TY8s:00179
-        - oLxdGO8TY8s:00180
-        - oLxdGO8TY8s:00181
-        - oLxdGO8TY8s:00182
-        - oLxdGO8TY8s:00186
-        - oLxdGO8TY8s:00187
-  - id: lii73aKvvkw-concept-short-serve-third-ball-attack-batch-reviewed
-    evidence_type: explanation
-    excerpt: A serve pattern designed to force a weak receive so the server can attack on the third ball.
-    reason: The speaker says many amateurs will push, giving an attacking opportunity, and even a flick can be followed by a top-spin rally.
-    confidence: 0.88
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: lii73aKvvkw
-      start_ms: 42000
-      end_ms: 57280
-      url: https://www.youtube.com/watch?v=lii73aKvvkw&t=42s
-      segment_ids:
-        - lii73aKvvkw:00016
-        - lii73aKvvkw:00017
-        - lii73aKvvkw:00018
-        - lii73aKvvkw:00019
-        - lii73aKvvkw:00020
-        - lii73aKvvkw:00021
-  - id: sUDQYcsXNDo-concept-short-serve-third-ball-attack-reviewed
-    evidence_type: explanation
-    excerpt: A pattern where a short serve is used to provoke a predictable return, then the server attacks the next ball.
-    reason: The speaker says to prepare to attack the half-long return and not to rush, which is a serve-plus-one attack pattern.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: sUDQYcsXNDo
-      start_ms: 83240
-      end_ms: 100520
-      url: https://www.youtube.com/watch?v=sUDQYcsXNDo&t=83s
-      segment_ids:
-        - sUDQYcsXNDo:00030
-        - sUDQYcsXNDo:00031
-        - sUDQYcsXNDo:00032
-        - sUDQYcsXNDo:00033
-        - sUDQYcsXNDo:00034
-        - sUDQYcsXNDo:00035
-        - sUDQYcsXNDo:00036
-  - id: U-z4PamhiUE-concept-short-serve-third-ball-attack-reviewed
-    evidence_type: explanation
-    excerpt: Using a short serve to create a predictable return and attack on the third ball.
-    reason: The speaker says rallies should start with short to the forehand because it sets up a long ball, and earlier explains serve plus third-ball coordination.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: U-z4PamhiUE
-      start_ms: 264200
-      end_ms: 281000
-      url: https://www.youtube.com/watch?v=U-z4PamhiUE&t=264s
-      segment_ids:
-        - U-z4PamhiUE:00120
-        - U-z4PamhiUE:00121
-        - U-z4PamhiUE:00122
-        - U-z4PamhiUE:00123
-        - U-z4PamhiUE:00124
-        - U-z4PamhiUE:00125
-  - id: NFfY66W2PGM-concept-short-serve-third-ball-attack-reviewed
-    evidence_type: example
-    excerpt: A pattern where a short serve is used to induce a weak return, creating a chance to attack on the third ball.
-    reason: The serve is designed so the opponent pushes half-high and then the server attacks.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: NFfY66W2PGM
-      start_ms: 116133
-      end_ms: 120133
-      url: https://www.youtube.com/watch?v=NFfY66W2PGM&t=116s
-      segment_ids:
-        - NFfY66W2PGM:00026
-        - NFfY66W2PGM:00027
-  - id: -jaC--EWjFw-concept-short-serve-third-ball-attack-reviewed
-    evidence_type: definition
-    excerpt: Using a short serve to provoke a predictable return and create an attacking opening on the next ball.
-    reason: The speaker says he tests with a short serve and then loops after the push return, which is a classic third-ball sequence.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: -jaC--EWjFw
-      start_ms: 2266
-      end_ms: 13500
-      url: https://www.youtube.com/watch?v=-jaC--EWjFw&t=2s
-      segment_ids:
-        - -jaC--EWjFw:00001
-        - -jaC--EWjFw:00002
-  - id: Ay0i8Sd78hM-concept-short-serve-third-ball-attack-reviewed
-    evidence_type: explanation
-    excerpt: A serve pattern where the server follows a short serve with an immediate attacking third ball opportunity.
-    reason: The speaker explicitly mentions a third-ball attack after a serve causing mistakes.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: Ay0i8Sd78hM
-      start_ms: 18066
-      end_ms: 23600
-      url: https://www.youtube.com/watch?v=Ay0i8Sd78hM&t=18s
-      segment_ids:
-        - Ay0i8Sd78hM:00003
-        - Ay0i8Sd78hM:00004
-  - id: rdMkkX_p7e0-concept-short-serve-third-ball-attack-reviewed
-    evidence_type: explanation
-    excerpt: Using a short or backspin serve to create a weak push or return, then attacking the next ball.
-    reason: The serve-backspin-push-loop sequence is described as a setup for attack on the next ball.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: rdMkkX_p7e0
-      start_ms: 23166
-      end_ms: 29566
-      url: https://www.youtube.com/watch?v=rdMkkX_p7e0&t=23s
-      segment_ids:
-        - rdMkkX_p7e0:00007
-        - rdMkkX_p7e0:00008
-        - rdMkkX_p7e0:00009
-  - id: rZY_SUer7Aw-concept-short-serve-third-ball-attack-reviewed
-    evidence_type: explanation
-    excerpt: Use a short serve to force a push return and then attack the predictable next ball.
-    reason: The speaker says a heavy underspin serve that stays short will force a push, and that ball should be practiced as an attack ball.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: rZY_SUer7Aw
-      start_ms: 375533
-      end_ms: 384000
-      url: https://www.youtube.com/watch?v=rZY_SUer7Aw&t=375s
-      segment_ids:
-        - rZY_SUer7Aw:00153
-        - rZY_SUer7Aw:00154
-        - rZY_SUer7Aw:00155
-        - rZY_SUer7Aw:00156
-  - id: bbZD31OGau8-concept-third-ball-attack-reviewed
-    evidence_type: example
-    excerpt: An attack pattern where the player prepares to loop on the third ball after the serve-receive exchange.
-    reason: The transcript explicitly mentions wanting to loop on the third ball and labels it as third ball loop.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: bbZD31OGau8
-      start_ms: 512800
-      end_ms: 526200
-      url: https://www.youtube.com/watch?v=bbZD31OGau8&t=512s
-      segment_ids:
-        - bbZD31OGau8:00161
-        - bbZD31OGau8:00162
-        - bbZD31OGau8:00163
-        - bbZD31OGau8:00164
-        - bbZD31OGau8:00165
-  - id: GOAyEFoSibE-concept-short-serve-third-ball-attack-reviewed
-    evidence_type: definition
-    excerpt: Using a short serve to force a weak return and create the best opening for an immediate attack on the third ball.
-    reason: The speaker explicitly says the best serve for setting up an attack is the short serve and calls it the advantage for a third-ball attack.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: GOAyEFoSibE
-      start_ms: 81766
-      end_ms: 89333
-      url: https://www.youtube.com/watch?v=GOAyEFoSibE&t=81s
-      segment_ids:
-        - GOAyEFoSibE:00019
-        - GOAyEFoSibE:00020
-  - id: VUCWueKYuE0-concept-short-serve-third-ball-attack-reviewed
-    evidence_type: explanation
-    excerpt: A serving pattern that uses deceptive short serves to create a favorable next-ball attack opportunity, often by forcing weak returns.
-    reason: The speaker explains that the serve creates tricky short balls and sets up the next ball, which is the core serve-and-attack pattern.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: VUCWueKYuE0
-      start_ms: 100333
-      end_ms: 127333
-      url: https://www.youtube.com/watch?v=VUCWueKYuE0&t=100s
-      segment_ids:
-        - VUCWueKYuE0:00023
-        - VUCWueKYuE0:00027
-        - VUCWueKYuE0:00028
-  - id: kF3mAZD3GHs-concept-short-serve-third-ball-attack-reviewed
-    evidence_type: example
-    excerpt: A short or baiting serve used to induce a predictable receive so the server can attack the third ball.
-    reason: The speaker explicitly says the serve is designed to make the opponent push so the server can get ready to attack.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: kF3mAZD3GHs
-      start_ms: 263233
-      end_ms: 281066
-      url: https://www.youtube.com/watch?v=kF3mAZD3GHs&t=263s
-      segment_ids:
-        - kF3mAZD3GHs:00051
-        - kF3mAZD3GHs:00052
-        - kF3mAZD3GHs:00053
-        - kF3mAZD3GHs:00054
-        - kF3mAZD3GHs:00055
-  - id: 00GaHkH4rfQ-concept-short-serve-third-ball-attack-reviewed
-    evidence_type: explanation
-    excerpt: A serve pattern where a short serve is used to provoke a weak return, followed by a strong attacking ball.
-    reason: The speaker says the easiest attack setup is a short serve with weak spin and that after the opponent steps in, you attack with a long ball.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 00GaHkH4rfQ
-      start_ms: 32733
-      end_ms: 55533
-      url: https://www.youtube.com/watch?v=00GaHkH4rfQ&t=32s
-      segment_ids:
-        - 00GaHkH4rfQ:00007
-        - 00GaHkH4rfQ:00012
-  - id: NgfykAQZCpw-concept-short-serve-third-ball-attack-reviewed
-    evidence_type: definition
-    excerpt: A tactic that uses a short serve to force a weak return, then attacks the next ball.
-    reason: The speaker frames the whole discussion as serve-and-attack and says the serve should be short to create a normal looping opportunity or weak return to attack.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: NgfykAQZCpw
-      start_ms: 0
-      end_ms: 6600
-      url: https://www.youtube.com/watch?v=NgfykAQZCpw&t=0s
-      segment_ids:
-        - NgfykAQZCpw:00000
-  - id: 2HMLpiaJLL0-concept-short-serve-third-ball-attack-reviewed
-    evidence_type: explanation
-    excerpt: A tactical pattern where a short serve is used to draw a weak return, then attack the third ball immediately.
-    reason: The transcript says top players serve short to force a weak push and then attack, and that passive pushing allows the opponent to kill the third ball immediately.
-    confidence: 0.92
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 2HMLpiaJLL0
-      start_ms: 112200
-      end_ms: 123600
-      url: https://www.youtube.com/watch?v=2HMLpiaJLL0&t=112s
-      segment_ids:
-        - 2HMLpiaJLL0:00023
-        - 2HMLpiaJLL0:00024
-  - id: -uuSx6fU8yY-concept-third-ball-attack-reviewed
-    evidence_type: definition
-    excerpt: A drill focus where the attacker practices the shot after the serve return, with the sequence stopped there to isolate the first attack.
-    reason: The coach directly names third-ball attack practice and explains that the goal is to execute the first attack after the serve return.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: -uuSx6fU8yY
-      start_ms: 855300
-      end_ms: 868466
-      url: https://www.youtube.com/watch?v=-uuSx6fU8yY&t=855s
-      segment_ids:
-        - -uuSx6fU8yY:00172
-        - -uuSx6fU8yY:00173
-  - id: a9wtW1BV-6M-concept-short-serve-third-ball-attack-reviewed
-    evidence_type: explanation
-    excerpt: Using an initial short serve to set up a later attack or to force a predictable opponent response before attacking on the third ball.
-    reason: The speaker explicitly describes using short serves to set up a long serve or attack, and mentions a third-ball sequence after short serves.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: a9wtW1BV-6M
-      start_ms: 276433
-      end_ms: 287100
-      url: https://www.youtube.com/watch?v=a9wtW1BV-6M&t=276s
-      segment_ids:
-        - a9wtW1BV-6M:00056
-        - a9wtW1BV-6M:00057
-  - id: WuWV6MlZQ_Q-concept-short-serve-third-ball-attack-reviewed
-    evidence_type: definition
-    excerpt: Using a short serve to create a slower, more predictable return that can be attacked as the third ball.
-    reason: The speaker says that if the opponent handles long serves well, attacks should begin from a short serve, and that learning to attack off the short serve is much easier.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: WuWV6MlZQ_Q
-      start_ms: 449133
-      end_ms: 459900
-      url: https://www.youtube.com/watch?v=WuWV6MlZQ_Q&t=449s
-      segment_ids:
-        - WuWV6MlZQ_Q:00094
-        - WuWV6MlZQ_Q:00095
-  - id: zvQxT-Dkrkg-concept-short-serve-third-ball-attack-reviewed
-    evidence_type: explanation
-    excerpt: Serving short with the intent to create a weak return that can be attacked on the next ball.
-    reason: The serves are described as popping up and creating an opportunity to attack, and the speaker explicitly instructs preparing to attack the return.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: zvQxT-Dkrkg
-      start_ms: 617200
-      end_ms: 631900
-      url: https://www.youtube.com/watch?v=zvQxT-Dkrkg&t=617s
-      segment_ids:
-        - zvQxT-Dkrkg:00128
-        - zvQxT-Dkrkg:00131
-  - id: dIq6T-PMx0k-concept-short-serve-third-ball-attack-reviewed
-    evidence_type: definition
-    excerpt: Serving to force a weak return so the server can attack the third ball immediately.
-    reason: States that the goal of the serve is not an immediate ace but creating a third-ball attack opportunity.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: dIq6T-PMx0k
-      start_ms: 388033
-      end_ms: 401900
-      url: https://www.youtube.com/watch?v=dIq6T-PMx0k&t=388s
-      segment_ids:
-        - dIq6T-PMx0k:00084
-        - dIq6T-PMx0k:00085
-        - dIq6T-PMx0k:00086
-  - id: McwvbLZZQmA-concept-low-spin-serve-for-third-ball-attack-reviewed
-    evidence_type: definition
-    excerpt: A short or half-long, low-trajectory, low-spin serve used to create a usable third-ball attack opportunity.
-    reason: Directly describes the serve characteristics and third-ball purpose.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: McwvbLZZQmA
-      start_ms: 17033
-      end_ms: 33366
-      url: https://www.youtube.com/watch?v=McwvbLZZQmA&t=17s
-      segment_ids:
-        - McwvbLZZQmA:00003
-        - McwvbLZZQmA:00006
-  - id: 0TzTsSHudF8-concept-serve-and-third-ball-attack-tactics-reviewed
-    evidence_type: definition
-    excerpt: A serve-plus-third-ball pattern that uses the serve to set up an attack on the next ball.
-    reason: The speaker explicitly introduces the topic as serve and third-ball attack tactics.
-    confidence: 0.91
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 0TzTsSHudF8
-      start_ms: 8033
-      end_ms: 12900
-      url: https://www.youtube.com/watch?v=0TzTsSHudF8&t=8s
-      segment_ids:
-        - 0TzTsSHudF8:00002
-  - id: 4t2Y1_zWPdI-concept-short-serve-third-ball-attack-reviewed
-    evidence_type: explanation
-    excerpt: A short serve is used to produce a predictable return that can be attacked on the third ball.
-    reason: The speaker repeatedly frames short serves as setup balls for attack, especially when serving no-spin or light backspin to get an easy return.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 4t2Y1_zWPdI
-      start_ms: 420800
-      end_ms: 442666
-      url: https://www.youtube.com/watch?v=4t2Y1_zWPdI&t=420s
-      segment_ids:
-        - 4t2Y1_zWPdI:00092
-        - 4t2Y1_zWPdI:00095
-        - 4t2Y1_zWPdI:00096
-  - id: OVkH-47SvqE-concept-short-serve-third-ball-attack-reviewed
-    evidence_type: explanation
-    excerpt: A tactical sequence where a deceptive or low-quality receive response creates an opportunity to attack on the third ball.
-    reason: The transcript ends by linking deception on serve to a poor return and a strong third-ball attack opportunity.
-    confidence: 0.86
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: OVkH-47SvqE
-      start_ms: 794100
-      end_ms: 811000
-      url: https://www.youtube.com/watch?v=OVkH-47SvqE&t=794s
-      segment_ids:
-        - OVkH-47SvqE:00137
-        - OVkH-47SvqE:00138
-        - OVkH-47SvqE:00139
-  - id: IHQASHkdLYk-concept-third-ball-attack-reviewed
-    evidence_type: definition
-    excerpt: A sequence where the server uses the serve, anticipates the return, and attacks on the third ball.
-    reason: The speaker explicitly defines the first, second, and third ball roles and frames it as controlling the point from the first shot onward.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: IHQASHkdLYk
-      start_ms: 40533
-      end_ms: 53200
-      url: https://www.youtube.com/watch?v=IHQASHkdLYk&t=40s
-      segment_ids:
-        - IHQASHkdLYk:00115
-  - id: U1zg0xsCqMc-concept-short-serve-third-ball-attack-reviewed
-    evidence_type: explanation
-    excerpt: A pattern where a short serve is used to provoke a push so the server can attack the third ball.
-    reason: Explains that short serves, especially to the middle or backhand, induce pushes that can be stepped around and attacked.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: U1zg0xsCqMc
-      start_ms: 118920
-      end_ms: 139920
-      url: https://www.youtube.com/watch?v=U1zg0xsCqMc&t=118s
-      segment_ids:
-        - U1zg0xsCqMc:00052
-        - U1zg0xsCqMc:00053
-        - U1zg0xsCqMc:00054
-        - U1zg0xsCqMc:00055
-        - U1zg0xsCqMc:00056
-        - U1zg0xsCqMc:00057
-        - U1zg0xsCqMc:00058
-        - U1zg0xsCqMc:00059
-        - U1zg0xsCqMc:00060
-        - U1zg0xsCqMc:00061
-  - id: McwvbLZZQmA-concept-low-spin-serve-for-third-ball-attack-codex-reviewed
-    evidence_type: definition
-    excerpt: Serve short or half-long with a low trajectory and minimal spin; use a deceptive, low-spin sidespin ball rather than pure sidespin to set up your third-ball attack.
-    reason: These contiguous segments directly describe the short or half-long low-spin serve and its purpose of setting up a third-ball attack.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: McwvbLZZQmA
-      start_ms: 17033
-      end_ms: 33366
-      url: https://www.youtube.com/watch?v=McwvbLZZQmA&t=17s
-      segment_ids:
-        - McwvbLZZQmA:00003
-        - McwvbLZZQmA:00004
-        - McwvbLZZQmA:00005
-        - McwvbLZZQmA:00006
+- id: third-ball-pattern-1
+  evidence_type: explanation
+  excerpt: The speaker calls the first ball easiest to attack, especially after a short serve followed by a push return.
+  reason: The example identifies an attacking opportunity after a short serve and push return.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source: {video_id: csJgHR7Daog, start_ms: 320, end_ms: 8960, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=0s", segment_ids: ["csJgHR7Daog:00000", "csJgHR7Daog:00001", "csJgHR7Daog:00002"]}
+- id: third-ball-setup-2
+  evidence_type: example
+  excerpt: Serve short with light spin; the lesson describes a slow, low-spin push return that is suited to looping or a power drive.
+  reason: The setup links a short, light-spin serve with a slow push return for the server to attack.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source: {video_id: csJgHR7Daog, start_ms: 7240, end_ms: 15600, url: "https://www.youtube.com/watch?v=csJgHR7Daog&t=7s", segment_ids: ["csJgHR7Daog:00003", "csJgHR7Daog:00004", "csJgHR7Daog:00005"]}
+- id: global-serve-follow-up-3
+  evidence_type: explanation
+  excerpt: The lesson treats an ace as a bonus and judges a serve by whether it sets up the server’s strongest attack.
+  reason: The serve is evaluated through its follow-up attack rather than an ace every time.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source: {video_id: leQBUn8-4tw, start_ms: 278600, end_ms: 292900, url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=278s", segment_ids: ["leQBUn8-4tw:00060", "leQBUn8-4tw:00061", "leQBUn8-4tw:00062"]}
+- id: global-follow-up-pressure-4
+  evidence_type: explanation
+  excerpt: The lesson says opponents fear the follow-up attack and may make mistakes while trying to add too much quality to their return.
+  reason: The follow-up threat is presented as pressure on the opponent’s return.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source: {video_id: leQBUn8-4tw, start_ms: 292900, end_ms: 301266, url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=292s", segment_ids: ["leQBUn8-4tw:00063", "leQBUn8-4tw:00064"]}
+- id: global-third-ball-example-5
+  evidence_type: example
+  excerpt: After serving, look for a weak return to set up a powerful third-ball attack.
+  reason: The cue is to attack a weak return after the serve.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source: {video_id: G7eiadOxN8E, start_ms: 22566, end_ms: 27533, url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=22s", segment_ids: ["G7eiadOxN8E:00006"]}
+- id: p19HWlk7LGo-concept-short-serve-third-ball-rhythm-contrast-1
+  evidence_type: definition
+  excerpt: For this third-ball plan, the speaker advises against serving long because pushed returns arrive too fast. A short serve makes the opponent step in and push, creating a slow-to-fast rhythm contrast for the attack.
+  reason: The short-serve example contrasts a slow push return with the server’s fast attack.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: p19HWlk7LGo
+    start_ms: 173720
+    end_ms: 186840
+    url: https://www.youtube.com/watch?v=p19HWlk7LGo&t=173s
+    segment_ids:
+    - p19HWlk7LGo:00057
+    - p19HWlk7LGo:00058
+    - p19HWlk7LGo:00059
+    - p19HWlk7LGo:00060
+    - p19HWlk7LGo:00061
+    - p19HWlk7LGo:00062
+- id: p19HWlk7LGo-concept-short-serve-third-ball-rhythm-contrast-2
+  evidence_type: example
+  excerpt: Serve short, receive a slow push, catch it at the peak and attack the open court. The speaker calls this a high-percentage third-ball pattern.
+  reason: The stated pattern is a short serve, slow push return and peak-timed attack to open court.
+  confidence: 0.92
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: p19HWlk7LGo
+    start_ms: 222080
+    end_ms: 237000
+    url: https://www.youtube.com/watch?v=p19HWlk7LGo&t=222s
+    segment_ids:
+    - p19HWlk7LGo:00076
+    - p19HWlk7LGo:00077
+    - p19HWlk7LGo:00078
+    - p19HWlk7LGo:00079
+    - p19HWlk7LGo:00080
+    - p19HWlk7LGo:00081
+- id: XfWXrGTlW5M-concept-short-serve-third-ball-attack-1
+  evidence_type: explanation
+  excerpt: The speaker introduces attacking an underspin ball after serving.
+  reason: The passage introduces the post-serve attack on underspin.
+  confidence: 0.91
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: XfWXrGTlW5M
+    start_ms: 290200
+    end_ms: 294266
+    url: https://www.youtube.com/watch?v=XfWXrGTlW5M&t=290s
+    segment_ids:
+    - XfWXrGTlW5M:00070
+- id: XfWXrGTlW5M-concept-short-serve-third-ball-attack-2
+  evidence_type: explanation
+  excerpt: Against a slow push, the lesson uses “wait, loop.” Waiting that way against a fast return leaves the player jammed, so the fast-return example uses a quick “da-da” rhythm.
+  reason: The cue contrasts waiting on a slow push with a quick rhythm against a fast return.
+  confidence: 0.91
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: XfWXrGTlW5M
+    start_ms: 351400
+    end_ms: 366033
+    url: https://www.youtube.com/watch?v=XfWXrGTlW5M&t=351s
+    segment_ids:
+    - XfWXrGTlW5M:00084
+    - XfWXrGTlW5M:00085
+    - XfWXrGTlW5M:00086
+- id: XfWXrGTlW5M-concept-short-serve-third-ball-attack-3
+  evidence_type: correction
+  excerpt: Against a slow push, serve and then use a “wait, loop” rhythm.
+  reason: The waiting cue is specifically for a slow push return.
+  confidence: 0.89
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: XfWXrGTlW5M
+    start_ms: 351400
+    end_ms: 356200
+    url: https://www.youtube.com/watch?v=XfWXrGTlW5M&t=351s
+    segment_ids:
+    - XfWXrGTlW5M:00084
+- id: XfWXrGTlW5M-concept-short-serve-third-ball-attack-4
+  evidence_type: correction
+  excerpt: For a fast return, the speaker uses a quick “da-da” rhythm to match its pace.
+  reason: The quick rhythm is conditional on a fast return.
+  confidence: 0.89
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: XfWXrGTlW5M
+    start_ms: 393700
+    end_ms: 399900
+    url: https://www.youtube.com/watch?v=XfWXrGTlW5M&t=393s
+    segment_ids:
+    - XfWXrGTlW5M:00091
+- id: XlGnK1z_7C0-concept-short-serve-third-ball-attack-reviewed
+  evidence_type: explanation
+  excerpt: Serving short, usually with backspin or deception, to provoke a predictable return that can be attacked on the third ball.
+  reason: The speaker gives a concrete example of a short backspin serve that most opponents push back, creating a ready-made third-ball loop or attack.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: XlGnK1z_7C0
+    start_ms: 69960
+    end_ms: 90320
+    url: https://www.youtube.com/watch?v=XlGnK1z_7C0&t=69s
+    segment_ids:
+    - XlGnK1z_7C0:00030
+    - XlGnK1z_7C0:00031
+    - XlGnK1z_7C0:00032
+    - XlGnK1z_7C0:00033
+    - XlGnK1z_7C0:00034
+    - XlGnK1z_7C0:00035
+    - XlGnK1z_7C0:00036
+    - XlGnK1z_7C0:00037
+- id: ODwFaYDY1co-concept-short-serve-third-ball-attack-reviewed
+  evidence_type: definition
+  excerpt: Using a short serve, especially light backspin, to create an easier opening for the third-ball attack after the receive.
+  reason: The speaker explicitly says the best serve for setting up an attack is a short serve and that the best spin for third-ball attack is light backspin.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ODwFaYDY1co
+    start_ms: 4920
+    end_ms: 25200
+    url: https://www.youtube.com/watch?v=ODwFaYDY1co&t=4s
+    segment_ids:
+    - ODwFaYDY1co:00002
+    - ODwFaYDY1co:00003
+    - ODwFaYDY1co:00008
+    - ODwFaYDY1co:00009
+- id: ODwFaYDY1co-concept-short-serve-third-ball-attack-reviewed-b97e7643
+  evidence_type: definition
+  excerpt: Using a short serve, especially light backspin, to create an easier opening for the third-ball attack after the receive.
+  reason: The speaker explicitly says the best serve for setting up an attack is a short serve and that the best spin for third-ball attack is light backspin.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ODwFaYDY1co
+    start_ms: 4920
+    end_ms: 25200
+    url: https://www.youtube.com/watch?v=ODwFaYDY1co&t=4s
+    segment_ids:
+    - ODwFaYDY1co:00002
+    - ODwFaYDY1co:00003
+    - ODwFaYDY1co:00008
+    - ODwFaYDY1co:00009
+- id: PDFXww03DHM-concept-short-serve-third-ball-attack-reviewed
+  evidence_type: explanation
+  excerpt: Use a short serve, recover inside the table, and prepare to attack the third ball with improved speed and spin.
+  reason: The speaker says to finish inside the table after contact and links that to improved speed, spin, and quality, which fits a third-ball follow-up attack structure.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: PDFXww03DHM
+    start_ms: 203760
+    end_ms: 233040
+    url: https://www.youtube.com/watch?v=PDFXww03DHM&t=203s
+    segment_ids:
+    - PDFXww03DHM:00061
+    - PDFXww03DHM:00062
+    - PDFXww03DHM:00063
+    - PDFXww03DHM:00064
+    - PDFXww03DHM:00065
+    - PDFXww03DHM:00066
+    - PDFXww03DHM:00067
+    - PDFXww03DHM:00068
+    - PDFXww03DHM:00069
+- id: oLxdGO8TY8s-cand-8-reviewed
+  evidence_type: explanation
+  excerpt: Using a short serve to set up a planned attack on the third ball, often with spin or power depending on context.
+  reason: The speaker discusses serving short to the forehand and then choosing between spin loop, power loop, or a no-spin wide serve followed by a power loop.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: oLxdGO8TY8s
+    start_ms: 450760
+    end_ms: 473520
+    url: https://www.youtube.com/watch?v=oLxdGO8TY8s&t=450s
+    segment_ids:
+    - oLxdGO8TY8s:00179
+    - oLxdGO8TY8s:00180
+    - oLxdGO8TY8s:00181
+    - oLxdGO8TY8s:00182
+    - oLxdGO8TY8s:00186
+    - oLxdGO8TY8s:00187
+- id: lii73aKvvkw-concept-short-serve-third-ball-attack-batch-reviewed
+  evidence_type: explanation
+  excerpt: A serve pattern designed to force a weak receive so the server can attack on the third ball.
+  reason: The speaker says many amateurs will push, giving an attacking opportunity, and even a flick can be followed by a top-spin rally.
+  confidence: 0.88
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: lii73aKvvkw
+    start_ms: 42000
+    end_ms: 57280
+    url: https://www.youtube.com/watch?v=lii73aKvvkw&t=42s
+    segment_ids:
+    - lii73aKvvkw:00016
+    - lii73aKvvkw:00017
+    - lii73aKvvkw:00018
+    - lii73aKvvkw:00019
+    - lii73aKvvkw:00020
+    - lii73aKvvkw:00021
+- id: sUDQYcsXNDo-concept-short-serve-third-ball-attack-reviewed
+  evidence_type: explanation
+  excerpt: A pattern where a short serve is used to provoke a predictable return, then the server attacks the next ball.
+  reason: The speaker says to prepare to attack the half-long return and not to rush, which is a serve-plus-one attack pattern.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: sUDQYcsXNDo
+    start_ms: 83240
+    end_ms: 100520
+    url: https://www.youtube.com/watch?v=sUDQYcsXNDo&t=83s
+    segment_ids:
+    - sUDQYcsXNDo:00030
+    - sUDQYcsXNDo:00031
+    - sUDQYcsXNDo:00032
+    - sUDQYcsXNDo:00033
+    - sUDQYcsXNDo:00034
+    - sUDQYcsXNDo:00035
+    - sUDQYcsXNDo:00036
+- id: U-z4PamhiUE-concept-short-serve-third-ball-attack-reviewed
+  evidence_type: explanation
+  excerpt: Using a short serve to create a predictable return and attack on the third ball.
+  reason: The speaker says rallies should start with short to the forehand because it sets up a long ball, and earlier explains serve plus third-ball coordination.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: U-z4PamhiUE
+    start_ms: 264200
+    end_ms: 281000
+    url: https://www.youtube.com/watch?v=U-z4PamhiUE&t=264s
+    segment_ids:
+    - U-z4PamhiUE:00120
+    - U-z4PamhiUE:00121
+    - U-z4PamhiUE:00122
+    - U-z4PamhiUE:00123
+    - U-z4PamhiUE:00124
+    - U-z4PamhiUE:00125
+- id: NFfY66W2PGM-concept-short-serve-third-ball-attack-reviewed
+  evidence_type: example
+  excerpt: A pattern where a short serve is used to induce a weak return, creating a chance to attack on the third ball.
+  reason: The serve is designed so the opponent pushes half-high and then the server attacks.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: NFfY66W2PGM
+    start_ms: 116133
+    end_ms: 120133
+    url: https://www.youtube.com/watch?v=NFfY66W2PGM&t=116s
+    segment_ids:
+    - NFfY66W2PGM:00026
+    - NFfY66W2PGM:00027
+- id: -jaC--EWjFw-concept-short-serve-third-ball-attack-reviewed
+  evidence_type: definition
+  excerpt: Using a short serve to provoke a predictable return and create an attacking opening on the next ball.
+  reason: The speaker says he tests with a short serve and then loops after the push return, which is a classic third-ball sequence.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: -jaC--EWjFw
+    start_ms: 2266
+    end_ms: 13500
+    url: https://www.youtube.com/watch?v=-jaC--EWjFw&t=2s
+    segment_ids:
+    - -jaC--EWjFw:00001
+    - -jaC--EWjFw:00002
+- id: Ay0i8Sd78hM-concept-short-serve-third-ball-attack-reviewed
+  evidence_type: explanation
+  excerpt: A serve pattern where the server follows a short serve with an immediate attacking third ball opportunity.
+  reason: The speaker explicitly mentions a third-ball attack after a serve causing mistakes.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Ay0i8Sd78hM
+    start_ms: 18066
+    end_ms: 23600
+    url: https://www.youtube.com/watch?v=Ay0i8Sd78hM&t=18s
+    segment_ids:
+    - Ay0i8Sd78hM:00003
+    - Ay0i8Sd78hM:00004
+- id: rdMkkX_p7e0-concept-short-serve-third-ball-attack-reviewed
+  evidence_type: explanation
+  excerpt: Using a short or backspin serve to create a weak push or return, then attacking the next ball.
+  reason: The serve-backspin-push-loop sequence is described as a setup for attack on the next ball.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: rdMkkX_p7e0
+    start_ms: 23166
+    end_ms: 29566
+    url: https://www.youtube.com/watch?v=rdMkkX_p7e0&t=23s
+    segment_ids:
+    - rdMkkX_p7e0:00007
+    - rdMkkX_p7e0:00008
+    - rdMkkX_p7e0:00009
+- id: rZY_SUer7Aw-concept-short-serve-third-ball-attack-reviewed
+  evidence_type: explanation
+  excerpt: Use a short serve to force a push return and then attack the predictable next ball.
+  reason: The speaker says a heavy underspin serve that stays short will force a push, and that ball should be practiced as an attack ball.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: rZY_SUer7Aw
+    start_ms: 375533
+    end_ms: 384000
+    url: https://www.youtube.com/watch?v=rZY_SUer7Aw&t=375s
+    segment_ids:
+    - rZY_SUer7Aw:00153
+    - rZY_SUer7Aw:00154
+    - rZY_SUer7Aw:00155
+    - rZY_SUer7Aw:00156
+- id: bbZD31OGau8-concept-third-ball-attack-reviewed
+  evidence_type: example
+  excerpt: An attack pattern where the player prepares to loop on the third ball after the serve-receive exchange.
+  reason: The transcript explicitly mentions wanting to loop on the third ball and labels it as third ball loop.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: bbZD31OGau8
+    start_ms: 512800
+    end_ms: 526200
+    url: https://www.youtube.com/watch?v=bbZD31OGau8&t=512s
+    segment_ids:
+    - bbZD31OGau8:00161
+    - bbZD31OGau8:00162
+    - bbZD31OGau8:00163
+    - bbZD31OGau8:00164
+    - bbZD31OGau8:00165
+- id: GOAyEFoSibE-concept-short-serve-third-ball-attack-reviewed
+  evidence_type: definition
+  excerpt: Using a short serve to force a weak return and create the best opening for an immediate attack on the third ball.
+  reason: The speaker explicitly says the best serve for setting up an attack is the short serve and calls it the advantage for a third-ball attack.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: GOAyEFoSibE
+    start_ms: 81766
+    end_ms: 89333
+    url: https://www.youtube.com/watch?v=GOAyEFoSibE&t=81s
+    segment_ids:
+    - GOAyEFoSibE:00019
+    - GOAyEFoSibE:00020
+- id: VUCWueKYuE0-concept-short-serve-third-ball-attack-reviewed
+  evidence_type: explanation
+  excerpt: A serving pattern that uses deceptive short serves to create a favorable next-ball attack opportunity, often by forcing weak returns.
+  reason: The speaker explains that the serve creates tricky short balls and sets up the next ball, which is the core serve-and-attack pattern.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: VUCWueKYuE0
+    start_ms: 100333
+    end_ms: 127333
+    url: https://www.youtube.com/watch?v=VUCWueKYuE0&t=100s
+    segment_ids:
+    - VUCWueKYuE0:00023
+    - VUCWueKYuE0:00027
+    - VUCWueKYuE0:00028
+- id: kF3mAZD3GHs-concept-short-serve-third-ball-attack-reviewed
+  evidence_type: example
+  excerpt: A short or baiting serve used to induce a predictable receive so the server can attack the third ball.
+  reason: The speaker explicitly says the serve is designed to make the opponent push so the server can get ready to attack.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: kF3mAZD3GHs
+    start_ms: 263233
+    end_ms: 281066
+    url: https://www.youtube.com/watch?v=kF3mAZD3GHs&t=263s
+    segment_ids:
+    - kF3mAZD3GHs:00051
+    - kF3mAZD3GHs:00052
+    - kF3mAZD3GHs:00053
+    - kF3mAZD3GHs:00054
+    - kF3mAZD3GHs:00055
+- id: 00GaHkH4rfQ-concept-short-serve-third-ball-attack-reviewed
+  evidence_type: explanation
+  excerpt: A serve pattern where a short serve is used to provoke a weak return, followed by a strong attacking ball.
+  reason: The speaker says the easiest attack setup is a short serve with weak spin and that after the opponent steps in, you attack with a long ball.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 00GaHkH4rfQ
+    start_ms: 32733
+    end_ms: 55533
+    url: https://www.youtube.com/watch?v=00GaHkH4rfQ&t=32s
+    segment_ids:
+    - 00GaHkH4rfQ:00007
+    - 00GaHkH4rfQ:00012
+- id: NgfykAQZCpw-concept-short-serve-third-ball-attack-reviewed
+  evidence_type: definition
+  excerpt: A tactic that uses a short serve to force a weak return, then attacks the next ball.
+  reason: The speaker frames the whole discussion as serve-and-attack and says the serve should be short to create a normal looping opportunity or weak return to attack.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: NgfykAQZCpw
+    start_ms: 0
+    end_ms: 6600
+    url: https://www.youtube.com/watch?v=NgfykAQZCpw&t=0s
+    segment_ids:
+    - NgfykAQZCpw:00000
+- id: 2HMLpiaJLL0-concept-short-serve-third-ball-attack-reviewed
+  evidence_type: explanation
+  excerpt: A tactical pattern where a short serve is used to draw a weak return, then attack the third ball immediately.
+  reason: The transcript says top players serve short to force a weak push and then attack, and that passive pushing allows the opponent to kill the third ball immediately.
+  confidence: 0.92
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 2HMLpiaJLL0
+    start_ms: 112200
+    end_ms: 123600
+    url: https://www.youtube.com/watch?v=2HMLpiaJLL0&t=112s
+    segment_ids:
+    - 2HMLpiaJLL0:00023
+    - 2HMLpiaJLL0:00024
+- id: -uuSx6fU8yY-concept-third-ball-attack-reviewed
+  evidence_type: definition
+  excerpt: A drill focus where the attacker practices the shot after the serve return, with the sequence stopped there to isolate the first attack.
+  reason: The coach directly names third-ball attack practice and explains that the goal is to execute the first attack after the serve return.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: -uuSx6fU8yY
+    start_ms: 855300
+    end_ms: 868466
+    url: https://www.youtube.com/watch?v=-uuSx6fU8yY&t=855s
+    segment_ids:
+    - -uuSx6fU8yY:00172
+    - -uuSx6fU8yY:00173
+- id: a9wtW1BV-6M-concept-short-serve-third-ball-attack-reviewed
+  evidence_type: explanation
+  excerpt: Using an initial short serve to set up a later attack or to force a predictable opponent response before attacking on the third ball.
+  reason: The speaker explicitly describes using short serves to set up a long serve or attack, and mentions a third-ball sequence after short serves.
+  confidence: 0.93
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: a9wtW1BV-6M
+    start_ms: 276433
+    end_ms: 287100
+    url: https://www.youtube.com/watch?v=a9wtW1BV-6M&t=276s
+    segment_ids:
+    - a9wtW1BV-6M:00056
+    - a9wtW1BV-6M:00057
+- id: WuWV6MlZQ_Q-concept-short-serve-third-ball-attack-reviewed
+  evidence_type: definition
+  excerpt: Using a short serve to create a slower, more predictable return that can be attacked as the third ball.
+  reason: The speaker says that if the opponent handles long serves well, attacks should begin from a short serve, and that learning to attack off the short serve is much easier.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: WuWV6MlZQ_Q
+    start_ms: 449133
+    end_ms: 459900
+    url: https://www.youtube.com/watch?v=WuWV6MlZQ_Q&t=449s
+    segment_ids:
+    - WuWV6MlZQ_Q:00094
+    - WuWV6MlZQ_Q:00095
+- id: zvQxT-Dkrkg-concept-short-serve-third-ball-attack-reviewed
+  evidence_type: explanation
+  excerpt: Serving short with the intent to create a weak return that can be attacked on the next ball.
+  reason: The serves are described as popping up and creating an opportunity to attack, and the speaker explicitly instructs preparing to attack the return.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: zvQxT-Dkrkg
+    start_ms: 617200
+    end_ms: 631900
+    url: https://www.youtube.com/watch?v=zvQxT-Dkrkg&t=617s
+    segment_ids:
+    - zvQxT-Dkrkg:00128
+    - zvQxT-Dkrkg:00131
+- id: dIq6T-PMx0k-concept-short-serve-third-ball-attack-reviewed
+  evidence_type: definition
+  excerpt: Serving to force a weak return so the server can attack the third ball immediately.
+  reason: States that the goal of the serve is not an immediate ace but creating a third-ball attack opportunity.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: dIq6T-PMx0k
+    start_ms: 388033
+    end_ms: 401900
+    url: https://www.youtube.com/watch?v=dIq6T-PMx0k&t=388s
+    segment_ids:
+    - dIq6T-PMx0k:00084
+    - dIq6T-PMx0k:00085
+    - dIq6T-PMx0k:00086
+- id: McwvbLZZQmA-concept-low-spin-serve-for-third-ball-attack-reviewed
+  evidence_type: definition
+  excerpt: A short or half-long, low-trajectory, low-spin serve used to create a usable third-ball attack opportunity.
+  reason: Directly describes the serve characteristics and third-ball purpose.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: McwvbLZZQmA
+    start_ms: 17033
+    end_ms: 33366
+    url: https://www.youtube.com/watch?v=McwvbLZZQmA&t=17s
+    segment_ids:
+    - McwvbLZZQmA:00003
+    - McwvbLZZQmA:00006
+- id: 0TzTsSHudF8-concept-serve-and-third-ball-attack-tactics-reviewed
+  evidence_type: definition
+  excerpt: A serve-plus-third-ball pattern that uses the serve to set up an attack on the next ball.
+  reason: The speaker explicitly introduces the topic as serve and third-ball attack tactics.
+  confidence: 0.91
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 0TzTsSHudF8
+    start_ms: 8033
+    end_ms: 12900
+    url: https://www.youtube.com/watch?v=0TzTsSHudF8&t=8s
+    segment_ids:
+    - 0TzTsSHudF8:00002
+- id: 4t2Y1_zWPdI-concept-short-serve-third-ball-attack-reviewed
+  evidence_type: explanation
+  excerpt: A short serve is used to produce a predictable return that can be attacked on the third ball.
+  reason: The speaker repeatedly frames short serves as setup balls for attack, especially when serving no-spin or light backspin to get an easy return.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 4t2Y1_zWPdI
+    start_ms: 420800
+    end_ms: 442666
+    url: https://www.youtube.com/watch?v=4t2Y1_zWPdI&t=420s
+    segment_ids:
+    - 4t2Y1_zWPdI:00092
+    - 4t2Y1_zWPdI:00095
+    - 4t2Y1_zWPdI:00096
+- id: OVkH-47SvqE-concept-short-serve-third-ball-attack-reviewed
+  evidence_type: explanation
+  excerpt: A tactical sequence where a deceptive or low-quality receive response creates an opportunity to attack on the third ball.
+  reason: The transcript ends by linking deception on serve to a poor return and a strong third-ball attack opportunity.
+  confidence: 0.86
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: OVkH-47SvqE
+    start_ms: 794100
+    end_ms: 811000
+    url: https://www.youtube.com/watch?v=OVkH-47SvqE&t=794s
+    segment_ids:
+    - OVkH-47SvqE:00137
+    - OVkH-47SvqE:00138
+    - OVkH-47SvqE:00139
+- id: IHQASHkdLYk-concept-third-ball-attack-reviewed
+  evidence_type: definition
+  excerpt: A sequence where the server uses the serve, anticipates the return, and attacks on the third ball.
+  reason: The speaker explicitly defines the first, second, and third ball roles and frames it as controlling the point from the first shot onward.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: IHQASHkdLYk
+    start_ms: 40533
+    end_ms: 53200
+    url: https://www.youtube.com/watch?v=IHQASHkdLYk&t=40s
+    segment_ids:
+    - IHQASHkdLYk:00115
+- id: U1zg0xsCqMc-concept-short-serve-third-ball-attack-reviewed
+  evidence_type: explanation
+  excerpt: A pattern where a short serve is used to provoke a push so the server can attack the third ball.
+  reason: Explains that short serves, especially to the middle or backhand, induce pushes that can be stepped around and attacked.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: U1zg0xsCqMc
+    start_ms: 118920
+    end_ms: 139920
+    url: https://www.youtube.com/watch?v=U1zg0xsCqMc&t=118s
+    segment_ids:
+    - U1zg0xsCqMc:00052
+    - U1zg0xsCqMc:00053
+    - U1zg0xsCqMc:00054
+    - U1zg0xsCqMc:00055
+    - U1zg0xsCqMc:00056
+    - U1zg0xsCqMc:00057
+    - U1zg0xsCqMc:00058
+    - U1zg0xsCqMc:00059
+    - U1zg0xsCqMc:00060
+    - U1zg0xsCqMc:00061
+- id: McwvbLZZQmA-concept-low-spin-serve-for-third-ball-attack-codex-reviewed
+  evidence_type: definition
+  excerpt: The lesson recommends a low, short or half-long serve with minimal spin. It warns against a popped-up sidespin-topspin serve when a deep forehand attack would be too fast to handle, favoring deceptive low-spin sidespin rather than pure sidespin for this third-ball plan.
+  reason: This setup uses low trajectory and low spin, with a warning about the opponent’s deep forehand attack.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: McwvbLZZQmA
+    start_ms: 17033
+    end_ms: 33366
+    url: https://www.youtube.com/watch?v=McwvbLZZQmA&t=17s
+    segment_ids:
+    - McwvbLZZQmA:00003
+    - McwvbLZZQmA:00004
+    - McwvbLZZQmA:00005
+    - McwvbLZZQmA:00006
 relations: []

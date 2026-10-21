@@ -2,29 +2,20 @@ id: concept-side-topspin-versus-side-backspin-classification
 slug: side-topspin-versus-side-backspin-classification
 label: Side-topspin versus side-backspin classification
 aliases:
-- side-top or side-back
-- side-topspin
-- side-backspin
-- left sidespin
-short_definition: Classifying a serve's spin as side-topspin or side-backspin by observing whether the forearm moves forward and upward, or downward, at contact.
+- upward and downward sidespin distinction
+- side-topspin versus side-backspin contact points
+short_definition: The explanations distinguish upward and downward sidespin through motion sequences, and side-topspin from side-backspin through contact points. They do not give spoken locations for the referenced contact points.
 evidence_summary: >-
-  The contiguous selected span explicitly classifies the serve types as downward sidespin and upward sidespin, directly matching the existing concept. The selected contiguous topic moment explicitly contrasts side topspin and side backspin contact points and contact point identifies the action.
-evidence_summary_source_hash: "sha256:1805d632ed09593a392b9c0fa0b513bc5a8eeaa8c093c4723e9136dc443d4a56"
-evidence_summary_generator: "deterministic"
+  One speaker labels a cut then upward motion, or a little down then sideways motion, as downward sidespin; directly upward, or upward then downward, is labeled upward sidespin. A second explanation distinguishes side-topspin and side-backspin by contact point, referring to each location only as 'here'.
 concept_type: fundamentals
 facets:
   category:
   - fundamentals
-  side:
-  - neutral
   spin:
   - sidespin
   - topspin
   - backspin
-  level:
-  - beginner
-  - intermediate
-difficulty: beginner
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -450,8 +441,8 @@ evidence:
     - 0KcRfTXRcsY:00098
 - id: HmoqZLuY1Ik-concept-side-topspin-versus-side-backspin-classification-codex-reviewed
   evidence_type: definition
-  excerpt: The speaker distinguishes downward sidespin from upward sidespin, describing one motion as moving down and to the side and the other as moving up.
-  reason: The contiguous selected span explicitly classifies the serve types as downward sidespin and upward sidespin, directly matching the existing concept.
+  excerpt: The speaker labels a cut then upward motion, or a little down then sideways motion, as downward sidespin. Directly upward, or upward then downward, is labeled upward sidespin.
+  reason: The described downward-sidespin cues are cut then upward, or a little down then sideways. The upward-sidespin cues are directly upward, or upward then downward.
   confidence: 0.98
   visual_status: transcript_inferred
   review_status: approved
@@ -474,8 +465,8 @@ evidence:
     - HmoqZLuY1Ik:00196
 - id: P21-_dtUzE8-concept-side-topspin-versus-side-backspin-classification-codex-reviewed
   evidence_type: explanation
-  excerpt: Side topspin and side backspin use different contact points, and the contact point can distinguish between them.
-  reason: The selected contiguous topic moment explicitly contrasts side topspin and side backspin contact points and states that contact point identifies the action.
+  excerpt: The explanation contrasts the contact points for side-topspin and side-backspin, referring to each as 'here', and says the contact point distinguishes them.
+  reason: Contact point is offered as the distinction between side-topspin and side-backspin; the spoken wording does not specify the locations referred to.
   confidence: 0.96
   visual_status: transcript_inferred
   review_status: approved

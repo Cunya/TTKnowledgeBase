@@ -1,22 +1,17 @@
 id: concept-footwork-depends-on-sidespin-direction
 slug: footwork-depends-on-sidespin-direction
-label: Footwork depends on sidespin direction
+label: Footwork for right-sidespin serves varies by serve length
 aliases:
-  - right foot must step in
-  - move parallel to the table
-short_definition: Serve-receive footwork changes depending on whether the sidespin curves toward or away from the player and whether the serve is short or long.
+- step forward for a half-long or short right-sidespin serve
+- move parallel to the table for long right-sidespin
+short_definition: For right-sidespin serves, step forward to receive a half-long or short serve and move laterally or parallel to the table for a long serve.
 evidence_summary: >-
-  Serve-receive footwork changes depending on whether the sidespin curves toward or away from the
-  player and whether the serve is short or long.
-evidence_summary_source_hash: "sha256:7b47a7f17dc749c69fb7f8d30743aac2f88638e806d1852b6e8ee5a8e6c4f119"
-evidence_summary_generator: "deterministic"
+  The speaker advises stepping forward for half-long or short right-sidespin serves and moving laterally or parallel to the table for long serves. A small step helps put the body in position; standing still and reaching risks missing the ball.
 concept_type: fundamentals
 facets:
   category:
-    - fundamentals
-  side:
-    - neutral
-difficulty: intermediate
+  - fundamentals
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -27,39 +22,39 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: McwvbLZZQmA-concept-footwork-depends-on-sidespin-direction-reviewed
-    evidence_type: explanation
-    excerpt: Serve-receive footwork changes depending on whether the sidespin curves toward or away from the player and whether the serve is short or long.
-    reason: Describes different footwork for right-sidespin depending on length and curve direction.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: McwvbLZZQmA
-      start_ms: 310466
-      end_ms: 336166
-      url: https://www.youtube.com/watch?v=McwvbLZZQmA&t=310s
-      segment_ids:
-        - McwvbLZZQmA:00072
-        - McwvbLZZQmA:00075
-        - McwvbLZZQmA:00076
-        - McwvbLZZQmA:00077
-  - id: McwvbLZZQmA-concept-footwork-depends-on-sidespin-direction-codex-reviewed
-    evidence_type: explanation
-    excerpt: Your right foot must step in for a half-long or short right-sidespin serve; for a long serve, move laterally or parallel to the table rather than standing still and reaching.
-    reason: This contiguous 29.3-second span directly explains how receive footwork changes with the length of a right-sidespin serve.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: McwvbLZZQmA
-      start_ms: 322600
-      end_ms: 351866
-      url: https://www.youtube.com/watch?v=McwvbLZZQmA&t=322s
-      segment_ids:
-        - McwvbLZZQmA:00075
-        - McwvbLZZQmA:00076
-        - McwvbLZZQmA:00077
-        - McwvbLZZQmA:00078
-        - McwvbLZZQmA:00079
-        - McwvbLZZQmA:00080
+- id: McwvbLZZQmA-concept-footwork-depends-on-sidespin-direction-reviewed
+  evidence_type: explanation
+  excerpt: Serve-receive footwork changes depending on whether the sidespin curves toward or away from the player and whether the serve is short or long.
+  reason: Describes different footwork for right-sidespin depending on length and curve direction.
+  confidence: 0.93
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: McwvbLZZQmA
+    start_ms: 310466
+    end_ms: 336166
+    url: https://www.youtube.com/watch?v=McwvbLZZQmA&t=310s
+    segment_ids:
+    - McwvbLZZQmA:00072
+    - McwvbLZZQmA:00075
+    - McwvbLZZQmA:00076
+    - McwvbLZZQmA:00077
+- id: McwvbLZZQmA-concept-footwork-depends-on-sidespin-direction-codex-reviewed
+  evidence_type: explanation
+  excerpt: Your right foot must step in for a half-long or short right-sidespin serve; for a long serve, move laterally or parallel to the table rather than standing still and reaching.
+  reason: For a half-long or short right-sidespin serve, step forward with your right foot. For a long serve, move laterally or parallel to the table; do not stand still and reach with your arm.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: McwvbLZZQmA
+    start_ms: 322600
+    end_ms: 351866
+    url: https://www.youtube.com/watch?v=McwvbLZZQmA&t=322s
+    segment_ids:
+    - McwvbLZZQmA:00075
+    - McwvbLZZQmA:00076
+    - McwvbLZZQmA:00077
+    - McwvbLZZQmA:00078
+    - McwvbLZZQmA:00079
+    - McwvbLZZQmA:00080

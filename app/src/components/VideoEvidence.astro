@@ -13,10 +13,10 @@ const initialVideo = initial ? videoMap[initial.source.video_id] : undefined;
 const initialClip = initial?.visual_source ?? (initial ? { ...initial.source, start_ms: initial.spoken_context_start_ms ?? initial.source.start_ms, end_ms: initial.spoken_context_end_ms ?? Math.min(initial.source.end_ms + spokenTailMs, initialVideo?.duration_ms ?? initial.source.end_ms + spokenTailMs) } : null);
 const initialIndex = Math.max(0, evidence.indexOf(initial));
 const initialLoopable = Boolean(initial && isVerifiedVisual(initial));
-const groupRepeatedEvidence = (items: Array<{ item: Evidence; index: number }>) => {
+const groupRepeatedEvidence = (items: Array<{ item: Evidence; index: number }>, visibleIndices: Set<number>) => {
   const groups = new Map<string, Array<{ item: Evidence; index: number }>>();
   items.forEach((entry) => {
-    const key = [entry.item.evidence_type, entry.item.excerpt.trim(), entry.item.reason.trim()].join('\u0000');
+    const key = [entry.item.evidence_type, entry.item.excerpt.trim(), entry.item.reason.trim(), String(visibleIndices.has(entry.index))].join('\u0000');
     groups.set(key, [...(groups.get(key) ?? []), entry]);
   });
   return [...groups.values()];
@@ -27,17 +27,18 @@ const chapters = [
   { id: 'practice', label: 'Practice and apply', description: 'Drills and examples for acquiring or using the concept.', types: ['drill', 'example'] },
   { id: 'diagnose', label: 'Diagnose problems', description: 'Mistakes and failure patterns that clarify what to avoid.', types: ['mistake'] },
 ].map((chapter) => {
-  const chapterItems = evidence.map((item, index) => ({ item, index })).filter(({ item }) => chapter.types.includes(item.evidence_type));
-  const items = maxPerChapter > 0 ? chapterItems.slice(0, maxPerChapter) : chapterItems;
+  const items = evidence.map((item, index) => ({ item, index })).filter(({ item }) => chapter.types.includes(item.evidence_type));
+  const visibleIndices = new Set((maxPerChapter > 0 ? items.slice(0, maxPerChapter) : items).map(({ index }) => index));
   const sources = [...new Set(items.map(({ item }) => item.source.video_id))].map((videoId) => ({
     videoId,
     video: videoMap[videoId],
     items: items.filter(({ item }) => item.source.video_id === videoId),
-    groups: groupRepeatedEvidence(items.filter(({ item }) => item.source.video_id === videoId)),
+    overflow: !items.some(({ item, index }) => item.source.video_id === videoId && visibleIndices.has(index)),
+    groups: groupRepeatedEvidence(items.filter(({ item }) => item.source.video_id === videoId), visibleIndices).map((citations) => ({ citations, overflow: !citations.some(({ index }) => visibleIndices.has(index)) })),
   }));
-  return { ...chapter, items, sources };
+  return { ...chapter, items, sources, visibleCount: visibleIndices.size };
 }).filter((chapter) => chapter.items.length > 0);
-const displayedEvidenceCount = chapters.reduce((total, chapter) => total + chapter.items.length, 0);
+const displayedEvidenceCount = chapters.reduce((total, chapter) => total + chapter.visibleCount, 0);
 const sourceCount = new Set(evidence.map((item) => item.source.video_id)).size;
 const formatTime = (milliseconds: number) => {
   const total = Math.floor(milliseconds / 1000);
@@ -47,7 +48,7 @@ const formatTime = (milliseconds: number) => {
 
 <section data-evidence-root data-initial-video={initialClip?.video_id} data-initial-start={initialClip?.start_ms ?? 0} data-initial-end={initialClip?.end_ms ?? 0} data-initial-loopable={String(initialLoopable)}>
   <nav class="evidence-outline" aria-label="Evidence sections">
-    <div><strong>{displayedEvidenceCount} evidence item{displayedEvidenceCount === 1 ? '' : 's'}</strong><span>from {sourceCount} supporting video{sourceCount === 1 ? '' : 's'}</span></div>
+    <div><strong data-evidence-count data-top-count={displayedEvidenceCount} data-all-count={evidence.length}>{displayedEvidenceCount} evidence item{displayedEvidenceCount === 1 ? '' : 's'}</strong><span>from {sourceCount} supporting video{sourceCount === 1 ? '' : 's'}</span></div>
     <ol>{chapters.map((chapter, index) => <li><a href={`#evidence-${chapter.id}`}><span>{String(index + 1).padStart(2, '0')}</span><strong>{chapter.label}</strong><small>{chapter.items.length} evidence item{chapter.items.length === 1 ? '' : 's'} · {chapter.sources.length} video{chapter.sources.length === 1 ? '' : 's'}</small></a></li>)}</ol>
   </nav>
   <slot name="evidence-toggle" />
@@ -64,12 +65,12 @@ const formatTime = (milliseconds: number) => {
     <div class="evidence-manuscript">
       {chapters.map((chapter, chapterIndex) => <section class="evidence-chapter" id={`evidence-${chapter.id}`}>
         <header><span>{String(chapterIndex + 1).padStart(2, '0')}</span><div><h3>{chapter.label}</h3><p>{chapter.description}</p></div></header>
-        {chapter.sources.map((source) => <section class="evidence-source">
+        {chapter.sources.map((source) => <section class="evidence-source" hidden={source.overflow} data-evidence-overflow={source.overflow || undefined}>
           <div class="evidence-rows">
-            {source.groups.slice(0, 3).map((citations) => <EvidenceRow citations={citations} video={source.video} initialIndex={initialIndex} relevanceScore={showRelevance ? evidenceRelevance(citations[0].item, conceptLabel) : undefined} />)}
+            {source.groups.slice(0, 3).map(({ citations, overflow }) => <div hidden={overflow} data-evidence-overflow={overflow || undefined}><EvidenceRow citations={citations} video={source.video} initialIndex={initialIndex} relevanceScore={showRelevance ? evidenceRelevance(citations[0].item, conceptLabel) : undefined} /></div>)}
             {source.groups.length > 3 && <details class="more-evidence">
               <summary>More supporting ideas <span>{source.groups.length - 3}</span></summary>
-              <div>{source.groups.slice(3).map((citations) => <EvidenceRow citations={citations} video={source.video} initialIndex={initialIndex} relevanceScore={showRelevance ? evidenceRelevance(citations[0].item, conceptLabel) : undefined} />)}</div>
+              <div>{source.groups.slice(3).map(({ citations, overflow }) => <div hidden={overflow} data-evidence-overflow={overflow || undefined}><EvidenceRow citations={citations} video={source.video} initialIndex={initialIndex} relevanceScore={showRelevance ? evidenceRelevance(citations[0].item, conceptLabel) : undefined} /></div>)}</div>
             </details>}
           </div>
         </section>)}

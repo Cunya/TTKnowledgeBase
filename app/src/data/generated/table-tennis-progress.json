@@ -1,17 +1,17 @@
 {
   "schema_version": 2,
   "knowledge_base": "table-tennis",
-  "generated_at": "2026-10-16T19:58:29.405247+00:00",
+  "generated_at": "2026-10-21T16:49:21.165153+00:00",
   "totals": {
     "discovered": 838,
     "configured": 148,
     "eligible": 140,
     "ingested": 140,
     "extracted": 140,
-    "concepts": 377,
+    "concepts": 380,
     "published_videos": 228,
     "published_configured_videos": 84,
-    "evidence": 1846,
+    "evidence": 1817,
     "visual_proposed": 35,
     "visual_verified": 0,
     "accepted": 1325,
@@ -21,20 +21,20 @@
     "human_review": 0,
     "reviewed_videos": 44,
     "published_with_review_backlog": 40,
-    "single_source_concepts": 234
+    "single_source_concepts": 235
   },
   "public_snapshot": {
-    "concepts": 377,
+    "concepts": 380,
     "videos": 228,
-    "evidence_moments": 1846,
-    "generated_at": "2026-10-16T19:58:29.405247+00:00"
+    "evidence_moments": 1817,
+    "generated_at": "2026-10-21T16:49:21.165153+00:00"
   },
   "quarantined_history": {
     "concepts": 254,
-    "evidence_moments": 4826
+    "evidence_moments": 4893
   },
-  "canonical_concept_files": 632,
-  "last_successful_publish_at": "2026-10-16T19:58:29.405247+00:00",
+  "canonical_concept_files": 635,
+  "last_successful_publish_at": "2026-10-21T16:49:21.165153+00:00",
   "sources": [
     {
       "id": "free-coach-brad-han",
@@ -51,8 +51,8 @@
       "deferred": 538,
       "rejected": 6,
       "pending": 0,
-      "evidence": 929,
-      "concepts": 362,
+      "evidence": 902,
+      "concepts": 364,
       "visual_proposed": 19,
       "visual_verified": 0,
       "published_with_review_backlog": 26,
@@ -74,8 +74,8 @@
       "deferred": 106,
       "rejected": 8,
       "pending": 0,
-      "evidence": 243,
-      "concepts": 46,
+      "evidence": 238,
+      "concepts": 49,
       "visual_proposed": 16,
       "visual_verified": 0,
       "published_with_review_backlog": 5,
@@ -97,7 +97,7 @@
       "deferred": 93,
       "rejected": 8,
       "pending": 0,
-      "evidence": 26,
+      "evidence": 27,
       "concepts": 25,
       "visual_proposed": 0,
       "visual_verified": 0,
@@ -166,17 +166,17 @@
     "inventory": 838,
     "published": 228,
     "eligible_total": 752,
-    "eligible_complete": 52,
-    "fully_processed_percent": 6.9,
-    "automation_triaged": 52,
-    "automation_triaged_percent": 6.9,
-    "automated_work_remaining": 700,
+    "eligible_complete": 46,
+    "fully_processed_percent": 6.1,
+    "automation_triaged": 46,
+    "automation_triaged_percent": 6.1,
+    "automated_work_remaining": 706,
     "human_review_videos": 0,
     "retry_wait": 0,
     "excluded": 86,
     "states": {
-      "needs_adjudication": 700,
-      "complete": 52,
+      "needs_adjudication": 706,
+      "complete": 46,
       "excluded": 86
     },
     "availability": {
@@ -195,20 +195,20 @@
       "accepted": 1322,
       "rejected": 118,
       "human_review": 0,
-      "accepted_unincorporated": 102
+      "accepted_unincorporated": 124
     },
     "sources": {
       "free-coach-brad-han": {
         "inventory": 325,
-        "needs_adjudication": 293,
-        "complete": 31,
+        "needs_adjudication": 296,
+        "complete": 28,
         "excluded": 1
       },
       "global-tt-studio": {
         "inventory": 418,
-        "complete": 17,
+        "complete": 14,
         "excluded": 85,
-        "needs_adjudication": 316
+        "needs_adjudication": 319
       },
       "pingsunday-xiaohan-playlist": {
         "inventory": 95,

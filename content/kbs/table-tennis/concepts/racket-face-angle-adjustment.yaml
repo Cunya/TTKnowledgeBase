@@ -4,24 +4,15 @@ label: Racket face angle adjustment
 aliases:
 - angle the racket face
 - racket face orientation
-- maintaining the serve's curve
-short_definition: Adjusting the racket face angle so the contact can occur on the correct side of the ball and preserve the desired curve.
+short_definition: Adjusting racket-face orientation, with source-specific cues for stroke practice, serving, and receiving a sinking or spinny ball.
 evidence_summary: >-
-  The racket-face angle should respond to the intensity of the opponent's incoming spin: open it against very spinny serves and close it more against less spinny serves.
-evidence_summary_source_hash: "sha256:5571ed27b1c45502e4f8f5b92b35537f434f73f14f8d1f78ad132a6e1964b82c"
-evidence_summary_generator: "deterministic"
+  One stroke-practice cue changes the racket face while keeping the movement the same. A serving lesson calls correct angling essential and incorrect angling an initial challenge in maintaining the serve’s curve. Another lesson recommends an open face for a sinking ball, describes meeting a chop-block with an open face, and says to loop the spinny ball with an open face. A separate speaker opens the angle for a very spinny serve and closes it more for a less spinny serve.
 concept_type: fundamentals
 facets:
   category:
   - fundamentals
   - stroke
-  side:
-  - backhand
-  - forehand
-  - neutral
-  level:
-  - intermediate
-difficulty: intermediate
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -390,7 +381,7 @@ evidence:
 - id: 4gMbiB6mrrY-concept-racket-face-angle-adjustment-codex-reviewed
   evidence_type: explanation
   excerpt: Adjust the racket face slightly while keeping the movement the same.
-  reason: These contiguous segments explicitly explain that proper racket-face adjustment does not change the movement and then reinforce tilting the racket face slightly.
+  reason: Adjust or tilt the racket face slightly while keeping the movement the same.
   confidence: 0.98
   visual_status: transcript_inferred
   review_status: approved
@@ -405,8 +396,8 @@ evidence:
     - 4gMbiB6mrrY:00025
 - id: 7Zz_cVWrgng-concept-racket-face-angle-adjustment-codex-reviewed
   evidence_type: explanation
-  excerpt: The racket face must be angled correctly for a successful serve; incorrect angling is a primary cause of difficulty maintaining the serve's curve.
-  reason: This contiguous 19.5-second span directly explains that correct racket-face angling is essential for the serve and that incorrect angling disrupts the serve's curve. The supplied concept is the same durable topic as the existing concept.
+  excerpt: The lesson says to angle the racket face correctly for a successful serve and calls incorrect angling a primary issue and initial challenge in maintaining the serve’s curve.
+  reason: The serving lesson emphasizes correct racket angling and identifies incorrect angling as an initial difficulty in maintaining the serve’s curve.
   confidence: 0.99
   visual_status: transcript_inferred
   review_status: approved
@@ -423,8 +414,8 @@ evidence:
     - 7Zz_cVWrgng:00049
 - id: itzB36f9_R0-concept-backhand-racket-face-angle-adjustment-codex-reviewed
   evidence_type: explanation
-  excerpt: Against a sinking, spinny backspin ball, open the racket face to receive it and make looping easier.
-  reason: These contiguous segments repeatedly explain that opening the racket face helps receive the sinking or spinny ball and apply power or loop it. The transcript does not specify a backhand context, so the general racket-face angle concept is the defensible match.
+  excerpt: The lesson recommends opening the racket face for this sinking ball, describes meeting a chop-block with an open face, and says to loop the spinny ball with an open face.
+  reason: The lesson recommends an open face for a sinking ball, describes meeting a chop-block with an open face, and associates the open face with confidence to apply power and with looping the spinny ball.
   confidence: 0.98
   visual_status: not_visual
   review_status: approved
@@ -441,8 +432,8 @@ evidence:
     - itzB36f9_R0:00015
 - id: zZ_B1Xg7Pjs-concept-spin-dependent-racket-face-adjustment-codex-reviewed
   evidence_type: explanation
-  excerpt: If the opponent's serve is very spinny, open the racket angle; if it's not very spinny, close it more. Adjust the racket angle based on the intensity of the opponent's spin.
-  reason: "The racket-face angle should respond to the intensity of the opponent's incoming spin: open it against very spinny serves and close it more against less spinny serves."
+  excerpt: 'The speaker says: if the opponent’s serve is very spinny, I open my racket angle; if it is not very spinny, I close it more. Adjust the angle to the intensity of the opponent’s spin.'
+  reason: "The speaker describes opening more for a very spinny serve and closing more for a less spinny serve, adjusting the angle to the intensity of the opponent’s spin."
   confidence: 0.96
   visual_status: transcript_inferred
   review_status: approved

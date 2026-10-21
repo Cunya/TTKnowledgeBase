@@ -2,21 +2,17 @@ id: concept-step-in-for-a-short-ball
 slug: step-in-for-a-short-ball
 label: Step in for a short ball
 aliases:
-  - for a short ball, you step in to hit
-  - step in to hit
-short_definition: A short ball should be taken by stepping in rather than waiting in place.
+- for a short ball, you step in to hit
+- step in to hit
+short_definition: Step in for a short ball. If it is out of reach, move the feet forward while maintaining arm-to-body spacing instead of reaching with the arm alone.
 evidence_summary: >-
-  A short ball should be taken by stepping in rather than waiting in place.
-evidence_summary_source_hash: "sha256:8bc2cd85b1ac919f4fe93f25ffd3bde21ffa5c33c2ed8e0215c9d39ae12583ad"
-evidence_summary_generator: "deterministic"
+  One cue says to step in for a short ball, adding that a forward step makes combined force easier to find. Another says to move the feet forward when a short ball is out of reach, preserving arm-to-body spacing; arm-only reaching lacks power, while footwork helps find a comfortable, precise stroke position.
 concept_type: tactic
 facets:
   category:
-    - fundamentals
-    - tactic
-  distance:
-    - close
-difficulty: beginner
+  - fundamentals
+  - tactic
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -27,80 +23,80 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: ZnkxF-IkY6U-concept-step-in-for-short-ball-reviewed
-    evidence_type: definition
-    excerpt: A short ball should be taken by stepping in rather than waiting in place.
-    reason: The speaker explicitly distinguishes a short ball from a slow ball and says to step in for a short ball.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: ZnkxF-IkY6U
-      start_ms: 109100
-      end_ms: 122300
-      url: https://www.youtube.com/watch?v=ZnkxF-IkY6U&t=109s
-      segment_ids:
-        - ZnkxF-IkY6U:00017
-        - ZnkxF-IkY6U:00018
-  - id: pbILplLUhnI-concept-step-in-for-a-short-ball-reviewed
-    evidence_type: definition
-    excerpt: When a ball is short, the correct response is to step in with the feet rather than reaching with the arm, while keeping the same arm-to-body spacing.
-    reason: The speaker says you should not reach with your arm and should move your feet forward for a short ball.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: pbILplLUhnI
-      start_ms: 445100
-      end_ms: 460733
-      url: https://www.youtube.com/watch?v=pbILplLUhnI&t=445s
-      segment_ids:
-        - pbILplLUhnI:00078
-        - pbILplLUhnI:00079
-  - id: -8Nnu9zUAP8-concept-step-in-for-a-short-ball-reviewed
-    evidence_type: explanation
-    excerpt: Move into the table for short balls rather than reaching from place, especially on short balls to the forehand.
-    reason: The speaker explicitly says that for slow, short balls you must step in, with a three-count then the step.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: -8Nnu9zUAP8
-      start_ms: 607080
-      end_ms: 618560
-      url: https://www.youtube.com/watch?v=-8Nnu9zUAP8&t=607s
-      segment_ids:
-        - -8Nnu9zUAP8:00271
-        - -8Nnu9zUAP8:00275
-  - id: 7d1fUkOzCjM-concept-step-in-for-short-balls-codex-reviewed
-    evidence_type: explanation
-    excerpt: If it's short, step in. And when you take a step forward, it's easier to find the combined force.
-    reason: These contiguous segments directly state that a short ball should be met by stepping in and that stepping forward helps find combined force.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 7d1fUkOzCjM
-      start_ms: 449033
-      end_ms: 461866
-      url: https://www.youtube.com/watch?v=7d1fUkOzCjM&t=449s
-      segment_ids:
-        - 7d1fUkOzCjM:00142
-        - 7d1fUkOzCjM:00143
-  - id: pbILplLUhnI-concept-step-in-for-a-short-ball-codex-reviewed
-    evidence_type: definition
-    excerpt: For a short ball, move your feet forward rather than reaching with your arm, keeping the same arm-to-body distance.
-    reason: This contiguous 26-second span directly supports stepping forward for a short ball, avoiding arm reach, and maintaining arm-to-body spacing. It matches the supplied existing concept.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: pbILplLUhnI
-      start_ms: 445100
-      end_ms: 471166
-      url: https://www.youtube.com/watch?v=pbILplLUhnI&t=445s
-      segment_ids:
-        - pbILplLUhnI:00078
-        - pbILplLUhnI:00079
-        - pbILplLUhnI:00080
-        - pbILplLUhnI:00081
+- id: ZnkxF-IkY6U-concept-step-in-for-short-ball-reviewed
+  evidence_type: definition
+  excerpt: A short ball should be taken by stepping in rather than waiting in place.
+  reason: The speaker explicitly distinguishes a short ball from a slow ball and says to step in for a short ball.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ZnkxF-IkY6U
+    start_ms: 109100
+    end_ms: 122300
+    url: https://www.youtube.com/watch?v=ZnkxF-IkY6U&t=109s
+    segment_ids:
+    - ZnkxF-IkY6U:00017
+    - ZnkxF-IkY6U:00018
+- id: pbILplLUhnI-concept-step-in-for-a-short-ball-reviewed
+  evidence_type: definition
+  excerpt: When a ball is short, the correct response is to step in with the feet rather than reaching with the arm, while keeping the same arm-to-body spacing.
+  reason: The speaker says you should not reach with your arm and should move your feet forward for a short ball.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: pbILplLUhnI
+    start_ms: 445100
+    end_ms: 460733
+    url: https://www.youtube.com/watch?v=pbILplLUhnI&t=445s
+    segment_ids:
+    - pbILplLUhnI:00078
+    - pbILplLUhnI:00079
+- id: -8Nnu9zUAP8-concept-step-in-for-a-short-ball-reviewed
+  evidence_type: explanation
+  excerpt: Move into the table for short balls rather than reaching from place, especially on short balls to the forehand.
+  reason: The speaker explicitly says that for slow, short balls you must step in, with a three-count then the step.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: -8Nnu9zUAP8
+    start_ms: 607080
+    end_ms: 618560
+    url: https://www.youtube.com/watch?v=-8Nnu9zUAP8&t=607s
+    segment_ids:
+    - -8Nnu9zUAP8:00271
+    - -8Nnu9zUAP8:00275
+- id: 7d1fUkOzCjM-concept-step-in-for-short-balls-codex-reviewed
+  evidence_type: explanation
+  excerpt: If it's short, step in. And when you take a step forward, it's easier to find the combined force.
+  reason: Step in if the ball is short; a step forward makes combined force easier to find.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: 7d1fUkOzCjM
+    start_ms: 449033
+    end_ms: 461866
+    url: https://www.youtube.com/watch?v=7d1fUkOzCjM&t=449s
+    segment_ids:
+    - 7d1fUkOzCjM:00142
+    - 7d1fUkOzCjM:00143
+- id: pbILplLUhnI-concept-step-in-for-a-short-ball-codex-reviewed
+  evidence_type: definition
+  excerpt: For a short ball, move your feet forward rather than reaching with your arm, keeping the same arm-to-body distance.
+  reason: If a short ball is out of reach, move the feet forward and keep the arm-to-body distance unchanged. Footwork finds a comfortable, precise stroke position; arm-only reaching lacks power.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: pbILplLUhnI
+    start_ms: 445100
+    end_ms: 471166
+    url: https://www.youtube.com/watch?v=pbILplLUhnI&t=445s
+    segment_ids:
+    - pbILplLUhnI:00078
+    - pbILplLUhnI:00079
+    - pbILplLUhnI:00080
+    - pbILplLUhnI:00081

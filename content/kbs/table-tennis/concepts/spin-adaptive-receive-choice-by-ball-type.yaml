@@ -1,24 +1,16 @@
 id: concept-spin-adaptive-receive-choice-by-ball-type
 slug: spin-adaptive-receive-choice-by-ball-type
-label: Spin-adaptive receive choice by ball type
+label: Spin-dependent push choices in serve receive
 aliases:
-  - flick almost any short or half-long ball
-  - adjust based on incoming ball
-short_definition: Technique choice and brush ratio should change according to the incoming ball's spin and speed.
+- spin-dependent push selection
+short_definition: For a heavily spinning serve, try contacting the side of the ball; a direct fast push can lead you to misread the spin. With little or no spin, push the back of the ball. Against a short serve with weak spin, this can be a fast long push. With more spin, use a side push or side cut to avoid the strongest part of the spin.
 evidence_summary: >-
-  Technique choice and brush ratio should change according to the incoming ball's spin and speed.
-evidence_summary_source_hash: "sha256:68c6dc82b7433d12060e0347410c91ffc9344efac4aa4fe12bc6cb6333ae1236"
-evidence_summary_generator: "deterministic"
+  For a heavily spinning serve, try contacting the side of the ball; a direct fast push can lead you to misread the spin. With little or no spin, push the back of the ball. Against a short serve with weak spin, this can be a fast long push. With more spin, use a side push or side cut to avoid the strongest part of the spin.
 concept_type: tactic
 facets:
   category:
-    - tactic
-    - practice
-  side:
-    - neutral
-  level:
-    - intermediate
-difficulty: intermediate
+  - tactic
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -29,37 +21,37 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: 9EcoI6PnOzE-concept-forehand-or-backhand-neutral-targeting-reviewed
-    evidence_type: explanation
-    excerpt: Technique choice and brush ratio should change according to the incoming ball's spin and speed.
-    reason: The speaker says to vary the brushing-versus-acceleration ratio depending on the incoming ball and to flick along with natural rotation on certain serves.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 9EcoI6PnOzE
-      start_ms: 148766
-      end_ms: 176533
-      url: https://www.youtube.com/watch?v=9EcoI6PnOzE&t=148s
-      segment_ids:
-        - 9EcoI6PnOzE:00030
-        - 9EcoI6PnOzE:00033
-        - 9EcoI6PnOzE:00034
-  - id: ezGVESU0Rp0-concept-spin-adaptive-receive-codex-reviewed
-    evidence_type: explanation
-    excerpt: 'Adjust the receive contact point and push direction to the incoming spin: contact the side against heavy spin, push the back against little or no spin, and use a side push or side cut against greater spin.'
-    reason: The contiguous 28.5-second span explicitly explains how receive contact and push choice change with incoming spin. It directly supports the existing spin-adaptive receive-choice concept.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: ezGVESU0Rp0
-      start_ms: 37866
-      end_ms: 66400
-      url: https://www.youtube.com/watch?v=ezGVESU0Rp0&t=37s
-      segment_ids:
-        - ezGVESU0Rp0:00008
-        - ezGVESU0Rp0:00009
-        - ezGVESU0Rp0:00010
-        - ezGVESU0Rp0:00011
-        - ezGVESU0Rp0:00012
+- id: 9EcoI6PnOzE-concept-forehand-or-backhand-neutral-targeting-reviewed
+  evidence_type: explanation
+  excerpt: Technique choice and brush ratio should change according to the incoming ball's spin and speed.
+  reason: The speaker says to vary the brushing-versus-acceleration ratio depending on the incoming ball and to flick along with natural rotation on certain serves.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 9EcoI6PnOzE
+    start_ms: 148766
+    end_ms: 176533
+    url: https://www.youtube.com/watch?v=9EcoI6PnOzE&t=148s
+    segment_ids:
+    - 9EcoI6PnOzE:00030
+    - 9EcoI6PnOzE:00033
+    - 9EcoI6PnOzE:00034
+- id: ezGVESU0Rp0-concept-spin-adaptive-receive-codex-reviewed
+  evidence_type: explanation
+  excerpt: 'For a heavily spinning serve, try contacting the side of the ball; a direct fast push can lead you to misread the spin. With little or no spin, push the back of the ball. Against a short serve with weak spin, this can be a fast long push. With more spin, use a side push or side cut to avoid the strongest part of the spin.'
+  reason: For a heavily spinning serve, try contacting the side of the ball; a direct fast push can lead you to misread the spin. With little or no spin, push the back of the ball. Against a short serve with weak spin, this can be a fast long push. With more spin, use a side push or side cut to avoid the strongest part of the spin.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: ezGVESU0Rp0
+    start_ms: 37866
+    end_ms: 66400
+    url: https://www.youtube.com/watch?v=ezGVESU0Rp0&t=37s
+    segment_ids:
+    - ezGVESU0Rp0:00008
+    - ezGVESU0Rp0:00009
+    - ezGVESU0Rp0:00010
+    - ezGVESU0Rp0:00011
+    - ezGVESU0Rp0:00012

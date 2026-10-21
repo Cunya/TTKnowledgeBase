@@ -1,25 +1,19 @@
 id: concept-wait-for-the-ball-in-the-loop
 slug: wait-for-the-ball-in-the-loop
-label: Wait for the ball in the loop
+label: Waiting for the ball when looping against backspin
 aliases:
-- wait for the ball
-- don't rush
-short_definition: A good forehand loop requires waiting for the ball to descend into the correct contact window rather than rushing at it.
+- avoid rushing a loop against backspin
+short_definition: In the backspin-loop example, the player is in position but hits the net; the diagnosis is rushing instead of waiting for the ball.
 evidence_summary: >-
-  A loop against backspin hitting the net with rushing and not waiting for the ball.
-evidence_summary_source_hash: "sha256:d059b35bfa5b15c6583cb30b561dc3d4274ce78f793ebae66b3f2312888703d0"
-evidence_summary_generator: "deterministic"
+  The player asks why a loop against backspin hits the net despite being in position. The answer identifies rushing and not waiting for the ball as the cause.
 concept_type: tactic
 facets:
   category:
   - tactic
   - fundamentals
-  side:
-  - forehand
-  level:
-  - beginner
-  - intermediate
-difficulty: intermediate
+  spin:
+  - backspin
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -95,8 +89,8 @@ evidence:
     - 01-q1cswVVs:00007
 - id: 01-q1cswVVs-concept-wait-for-the-ball-in-the-loop-codex-reviewed
   evidence_type: explanation
-  excerpt: A loop against backspin can hit the net because the player rushes instead of waiting for the ball.
-  reason: The speaker directly connects a loop against backspin hitting the net with rushing and not waiting for the ball.
+  excerpt: The player asks why the loop against backspin hits the net despite being in position. The answer is that the player is rushing instead of waiting for the ball.
+  reason: 'Being in position does not resolve the error in this example: the diagnosis is rushing instead of waiting for the ball when looping against backspin.'
   confidence: 0.99
   visual_status: transcript_inferred
   review_status: approved

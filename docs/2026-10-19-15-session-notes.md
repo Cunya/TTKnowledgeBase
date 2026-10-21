@@ -1,0 +1,13 @@
+# Session notes
+
+Continue all97 originalremaining scope; sixapplied awaitingrelease. No fullauditcompletionclaim. Luna/high only, quota last9%fivehour/59%weekly. Current privateapprovals media/audit-six-final-primary-approved-2026-10-19-14.json. Normalprocessingpaused.
+
+2026-10-19T15:13:13.679924+03:00: Six source-reviewed repairs released:287/378 supported articles,91 pending;2349/4283 units supported,1934 pending;zero structural/source-metadata errors,five overlap advisories. Allnine spokenrecords retained; anglecitation uses actual0-4 setup26.4s after release caught duplicatewindows. Three generic navigation placements corrected; no quarantines or visualattestation. Fullrelease passed; receipt media/audit-six-final-release-2026-10-19-15.log. Normalprocessingpaused; all91remaining scope retained. Fullaudit incomplete.
+
+Live finite CLI session45803, log media/audit-next-full-queue-2026-10-19-15.log, cap20calls/20articles. Full91queue retained. Nextsource findings media/audit-side-source-findings-2026-10-19-14.json; serve-timing modelpositive stillunapproved because literalambiguous wording is not a resolved proceduralinstruction. Priorbatch fullyverified287/378.
+
+2026-10-19T15:44:11.170572+03:00: Seven source-reviewed repairs released:294/378 supported articles,84 pending;2404/4276 units supported,1872 pending;zero structural/source-metadata errors,five overlap advisories. All13spokenrecords retained; actual sidecut118-12117.633s and defensive212-22123.134s completions preserve mechanics/exception. Literal ITlands/THISARC and referenced-contact wording avoid guessed objects/unwatchedvisual claims. Three navigation scopes corrected; stale anticipation/wait overlap retired after complete current scope/source review. Fullrelease passed; receipt media/audit-seven-release-2026-10-19-15.log. No quarantines or footageattestation; normalprocessingpaused. All84remaining scope retained. Resume existing savedplans with finite Luna/high wholearticle verification instead of repeating completed audit/draft stages; every remaining item has a savedplan. Fullaudit incomplete.
+
+Finalstate294/378supported84pending,2404/4276units1872pending,fiveoverlapadvisories,zero structural/sourceerrors. All13recordsretained,2actualsourcecompletions,3navigationcorrections; noquarantine/footageclaim. Nextusefull84queue/current savedplans directly withsource-primary repairs and finiteLuna/highwholeverification. Fullauditremainsopen.
+
+2026-10-19T15:55:46.4357213+03:00: Continue prior15h log. Sixweight/wrist/serve-timing proposals verified, current7thstance requires actualseparateexceptioncitation. Fullaudit294/37884pendinglastreleased, normalprocessingpaused. Preserve allsource/primary/locking/publicgates.

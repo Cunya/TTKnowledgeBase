@@ -1,26 +1,17 @@
 id: concept-backhand-push-finger-pinch-at-contact
 slug: backhand-push-finger-pinch-at-contact
-label: Backhand push finger pinch at contact
+label: Thumb-index pressure and racket pinch
 aliases:
-  - pinch the racket
-  - thumb and index finger
-  - sharp tap
-short_definition: The push is powered by a brief pinch or squeeze at the moment of contact, especially with the thumb and index finger, rather than by a long brushing motion.
+- pinch the racket
+- two-finger racket pinch
+short_definition: 'For penhold and shakehand grips, the thumb and index finger provide the power cue and apply downward pressure at contact. Build on that brief downward motion with a distinct racket pinch: two fingers press together, unlike all fingers tightening in a grip.'
 evidence_summary: >-
-  The push is powered by a brief pinch or squeeze at the moment of contact, especially with the
-  thumb and index finger, rather than by a long brushing motion.
-evidence_summary_source_hash: "sha256:41f9bb32ca0fc547634f230124a8d5dc3899958021b2ca38ee59e4606e937967"
-evidence_summary_generator: "deterministic"
+  For penhold and shakehand grips, use the thumb and index finger for downward pressure at contact. Build on that brief downward motion with a distinct racket pinch, pressing two fingers together rather than tightening all fingers.
 concept_type: stroke
 facets:
   category:
-    - stroke
-  side:
-    - backhand
-    - neutral
-  level:
-    - intermediate
-difficulty: intermediate
+  - fundamentals
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -31,72 +22,72 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: ae9urokFAJM-new-backhand-push-finger-pinch-at-contact-reviewed
-    evidence_type: explanation
-    excerpt: The push is powered by a brief pinch or squeeze at the moment of contact, especially with the thumb and index finger, rather than by a long brushing motion.
-    reason: The speaker repeatedly emphasizes compact friction, finger pressure at the tip, and two-finger pinching exactly at contact.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: ae9urokFAJM
-      start_ms: 289000
-      end_ms: 318433
-      url: https://www.youtube.com/watch?v=ae9urokFAJM&t=289s
-      segment_ids:
-        - ae9urokFAJM:00063
-        - ae9urokFAJM:00064
-        - ae9urokFAJM:00065
-        - ae9urokFAJM:00066
-        - ae9urokFAJM:00067
-        - ae9urokFAJM:00068
-        - ae9urokFAJM:00069
-  - id: _TIBQOXT3cw-concept-backhand-push-reviewed
-    evidence_type: definition
-    excerpt: A backhand receive used for short and half-long balls, with stable racket angle, controlled contact, and follow-through to create spin and a flat trajectory.
-    reason: The transcript gives a full explanation of the backhand push, including its use on short and long balls, its two-part motion, and its spin-producing finish.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: _TIBQOXT3cw
-      start_ms: 644766
-      end_ms: 673766
-      url: https://www.youtube.com/watch?v=_TIBQOXT3cw&t=644s
-      segment_ids:
-        - _TIBQOXT3cw:00124
-        - _TIBQOXT3cw:00129
-        - _TIBQOXT3cw:00130
-  - id: CGidweVwLYw-concept-backhand-push-reviewed
-    evidence_type: definition
-    excerpt: A backhand push should be brushed softly and controlled rather than forced, with relaxed contact and friction development.
-    reason: The speaker gives explicit backhand-push mechanics and practice advice.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: CGidweVwLYw
-      start_ms: 567400
-      end_ms: 586633
-      url: https://www.youtube.com/watch?v=CGidweVwLYw&t=567s
-      segment_ids:
-        - CGidweVwLYw:00125
-        - CGidweVwLYw:00128
-  - id: ae9urokFAJM-new-backhand-push-finger-pinch-at-contact-codex-reviewed
-    evidence_type: explanation
-    excerpt: For the push, power comes from the thumb and index finger. At the exact moment of contact, they apply downward pressure and distinctly pinch the racket; pinching means the two fingers press together.
-    reason: This contiguous 24.9-second span directly explains thumb-and-index-finger pressure at contact and distinguishes the required two-finger pinch.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: ae9urokFAJM
-      start_ms: 277900
-      end_ms: 302833
-      url: https://www.youtube.com/watch?v=ae9urokFAJM&t=277s
-      segment_ids:
-        - ae9urokFAJM:00061
-        - ae9urokFAJM:00062
-        - ae9urokFAJM:00063
-        - ae9urokFAJM:00064
-        - ae9urokFAJM:00065
+- id: ae9urokFAJM-new-backhand-push-finger-pinch-at-contact-reviewed
+  evidence_type: explanation
+  excerpt: The push is powered by a brief pinch or squeeze at the moment of contact, especially with the thumb and index finger, rather than by a long brushing motion.
+  reason: The speaker repeatedly emphasizes compact friction, finger pressure at the tip, and two-finger pinching exactly at contact.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ae9urokFAJM
+    start_ms: 289000
+    end_ms: 318433
+    url: https://www.youtube.com/watch?v=ae9urokFAJM&t=289s
+    segment_ids:
+    - ae9urokFAJM:00063
+    - ae9urokFAJM:00064
+    - ae9urokFAJM:00065
+    - ae9urokFAJM:00066
+    - ae9urokFAJM:00067
+    - ae9urokFAJM:00068
+    - ae9urokFAJM:00069
+- id: _TIBQOXT3cw-concept-backhand-push-reviewed
+  evidence_type: definition
+  excerpt: A backhand receive used for short and half-long balls, with stable racket angle, controlled contact, and follow-through to create spin and a flat trajectory.
+  reason: The transcript gives a full explanation of the backhand push, including its use on short and long balls, its two-part motion, and its spin-producing finish.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: _TIBQOXT3cw
+    start_ms: 644766
+    end_ms: 673766
+    url: https://www.youtube.com/watch?v=_TIBQOXT3cw&t=644s
+    segment_ids:
+    - _TIBQOXT3cw:00124
+    - _TIBQOXT3cw:00129
+    - _TIBQOXT3cw:00130
+- id: CGidweVwLYw-concept-backhand-push-reviewed
+  evidence_type: definition
+  excerpt: A backhand push should be brushed softly and controlled rather than forced, with relaxed contact and friction development.
+  reason: The speaker gives explicit backhand-push mechanics and practice advice.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: CGidweVwLYw
+    start_ms: 567400
+    end_ms: 586633
+    url: https://www.youtube.com/watch?v=CGidweVwLYw&t=567s
+    segment_ids:
+    - CGidweVwLYw:00125
+    - CGidweVwLYw:00128
+- id: ae9urokFAJM-new-backhand-push-finger-pinch-at-contact-codex-reviewed
+  evidence_type: explanation
+  excerpt: 'For penhold and shakehand grips, the thumb and index finger provide the power cue and apply downward pressure at contact. Build on that brief downward motion with a distinct racket pinch: two fingers press together, unlike all fingers tightening in a grip.'
+  reason: At contact, the thumb and index fingers apply downward pressure. The distinct racket pinch is two fingers pressing together, unlike all fingers tightening in a grip.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: ae9urokFAJM
+    start_ms: 277900
+    end_ms: 302833
+    url: https://www.youtube.com/watch?v=ae9urokFAJM&t=277s
+    segment_ids:
+    - ae9urokFAJM:00061
+    - ae9urokFAJM:00062
+    - ae9urokFAJM:00063
+    - ae9urokFAJM:00064
+    - ae9urokFAJM:00065

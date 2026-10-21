@@ -2,22 +2,17 @@ id: concept-swing-stopping-point
 slug: swing-stopping-point
 label: Swing stopping point
 aliases:
-  - clear end point to the swing
-  - optimal stopping point
-short_definition: The exact endpoint where the stroke should stop based on distance from the table to maximize consistency and avoid errors.
+- clear end point to the swing
+- optimal stopping point
+short_definition: 'Find a clear stopping point for the swing based on distance from the table. The speaker identifies an unclear endpoint as a common cause of unforced errors and applies the advice to looping: if a backspin-loop arc has already been created, an extra downward motion sends the ball into the net.'
 evidence_summary: >-
-  The exact endpoint where the stroke should stop based on distance from the table to maximize
-  consistency and avoid errors.
-evidence_summary_source_hash: "sha256:53c0b3825ca6d5f4b36bb7edd4a9d56001f53f2fe03e89d833426ea025066add"
-evidence_summary_generator: "deterministic"
+  Find a clear stopping point for the swing based on distance from the table. The speaker identifies an unclear endpoint as a common cause of unforced errors and applies the advice to looping: if a backspin-loop arc has already been created, an extra downward motion sends the ball into the net.
 concept_type: fundamentals
 facets:
   category:
-    - fundamentals
-    - practice
-  level:
-    - intermediate
-difficulty: intermediate
+  - fundamentals
+  - practice
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -28,41 +23,41 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: 1Issn-5noM4-concept-swing-stopping-point-reviewed
-    evidence_type: explanation
-    excerpt: The exact endpoint where the stroke should stop based on distance from the table to maximize consistency and avoid errors.
-    reason: The speaker identifies stopping the stroke as the most critical point and says the correct finish depends on distance from the table and ball type.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 1Issn-5noM4
-      start_ms: 665066
-      end_ms: 689933
-      url: https://www.youtube.com/watch?v=1Issn-5noM4&t=665s
-      segment_ids:
-        - 1Issn-5noM4:00154
-        - 1Issn-5noM4:00155
-        - 1Issn-5noM4:00157
-        - 1Issn-5noM4:00158
-        - 1Issn-5noM4:00159
-  - id: 1Issn-5noM4-concept-swing-stopping-point-codex-reviewed
-    evidence_type: explanation
-    excerpt: A clear stopping point is essential because failing to stop the swing at the exact point, based on distance from the table, can cause errors.
-    reason: These contiguous segments state that unclear swing endpoints cause errors and that the exact stopping point should be adjusted according to distance from the table.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 1Issn-5noM4
-      start_ms: 613166
-      end_ms: 640400
-      url: https://www.youtube.com/watch?v=1Issn-5noM4&t=613s
-      segment_ids:
-        - 1Issn-5noM4:00141
-        - 1Issn-5noM4:00142
-        - 1Issn-5noM4:00143
-        - 1Issn-5noM4:00144
-        - 1Issn-5noM4:00145
-        - 1Issn-5noM4:00146
-        - 1Issn-5noM4:00147
+- id: 1Issn-5noM4-concept-swing-stopping-point-reviewed
+  evidence_type: explanation
+  excerpt: The exact endpoint where the stroke should stop based on distance from the table to maximize consistency and avoid errors.
+  reason: The speaker identifies stopping the stroke as the most critical point and says the correct finish depends on distance from the table and ball type.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 1Issn-5noM4
+    start_ms: 665066
+    end_ms: 689933
+    url: https://www.youtube.com/watch?v=1Issn-5noM4&t=665s
+    segment_ids:
+    - 1Issn-5noM4:00154
+    - 1Issn-5noM4:00155
+    - 1Issn-5noM4:00157
+    - 1Issn-5noM4:00158
+    - 1Issn-5noM4:00159
+- id: 1Issn-5noM4-concept-swing-stopping-point-codex-reviewed
+  evidence_type: explanation
+  excerpt: 'Find a clear stopping point for the swing based on distance from the table. The speaker identifies an unclear endpoint as a common cause of unforced errors and applies the advice to looping: if a backspin-loop arc has already been created, an extra downward motion sends the ball into the net.'
+  reason: 'Find a clear stopping point for the swing based on distance from the table. The speaker identifies an unclear endpoint as a common cause of unforced errors and applies the advice to looping: if a backspin-loop arc has already been created, an extra downward motion sends the ball into the net.'
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 1Issn-5noM4
+    start_ms: 613166
+    end_ms: 640400
+    url: https://www.youtube.com/watch?v=1Issn-5noM4&t=613s
+    segment_ids:
+    - 1Issn-5noM4:00141
+    - 1Issn-5noM4:00142
+    - 1Issn-5noM4:00143
+    - 1Issn-5noM4:00144
+    - 1Issn-5noM4:00145
+    - 1Issn-5noM4:00146
+    - 1Issn-5noM4:00147

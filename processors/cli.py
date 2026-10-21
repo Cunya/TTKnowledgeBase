@@ -42,7 +42,7 @@ from .ingest import (
 )
 from .inventory import build_inventory_ledger
 from .llm_budget import LLMBudgetExceeded, LLMTokenBudget
-from .models import Concept, KnowledgeNavigation, PublishCorpus, SourceSpan
+from .models import KnowledgeNavigation, PublishCorpus, SourceSpan
 from .pipeline import (
     auto_place_generated_concepts,
     build_quality_report,
@@ -1363,6 +1363,7 @@ def plan_published_repairs(
             retry_failed=retry_failed, progress=lambda message: console.print(message, markup=False),
             repair_confirmed=repair_confirmed, max_articles=max_articles,
             facet_vocabulary=(read_yaml(paths.config / "taxonomy.yaml") or {}).get("facets", {}),
+            source_context=(videos, concepts),
         ) if max_calls else {"calls": 0, "stopped": "review_import_only"}
         plans = read_json(checkpoint)
         preview = paths.data("manifests") / "published-repair-plans.md"
@@ -1452,12 +1453,14 @@ def apply_published_repairs(
             recovering = recovery.get("state") in {"prepared", "applied"} and recovery.get("plan_hash") == item.get("plan_hash")
             if not recovering and (current or {}).get("fingerprint") != item["fingerprint"]:
                 raise typer.BadParameter(f"Stale repair plan: {cid}")
+            original_findings = item.get("previous_source_findings", item.get("review_findings", {})) if (
+                item.get("scope") == "owned_source_correction"
+            ) else item.get("review_findings", {})
             if (not recovering and item.get("scope") not in {"duration_conflicts", "summary_format"}
-                    and review_findings(current) != item.get("review_findings", {})):
+                    and review_findings(current) != original_findings):
                 raise typer.BadParameter(f"Review findings changed; refresh the repair plan: {cid}")
-            original = Concept.model_validate(item["concept"])
             concept_map = {concept.id: concept for concept in concepts}
-            concept_map[cid] = original
+            original = concept_map[cid]
             dossier = audit_dossier(original, {v.id: v for v in videos}, concept_map)
             from .published_audit import AUDIT_VERSION
 

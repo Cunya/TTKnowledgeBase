@@ -1,131 +1,194 @@
 id: concept-wrist-hook-and-stability
 slug: wrist-hook-and-stability
-label: Wrist hook and stability
+label: Fixed wrist during forehand and backhand loops
 aliases:
-  - 绷住回勾
-  - keep the wrist firm
-short_definition: Keeping the wrist braced and hooked rather than floppy, so the grip remains stable when striking and can support forehand-to-backhand transitions.
+- keep the wrist fixed in looping
+short_definition: Keep the wrist fixed during both forehand and backhand loops.
 evidence_summary: >-
-  Keeping the wrist braced and hooked rather than floppy, so the grip remains stable when striking
-  and can support forehand-to-backhand transitions.
-evidence_summary_source_hash: "sha256:1e02c54f09cdb144ee54b201887922b84a8e40aeeaaf4db6dcf0fa5c8d5da900"
-evidence_summary_generator: "deterministic"
+  For both forehand and backhand loops, the instruction is to keep the wrist fixed.
 concept_type: technique
 facets:
   category:
-    - fundamentals
+  - fundamentals
   side:
-    - neutral
-  level:
-    - intermediate
-difficulty: intermediate
+  - forehand
+  - backhand
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: sha256:3e0589168f8e0411c237e524601775e1539144a09fa606bee0a8688e0253a10e
+  input_hash:
+    sha256:3e0589168f8e0411c237e524601775e1539144a09fa606bee0a8688e0253a10e
   model: gpt-5.6-luna
   reasoning_effort: low
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: ub4GfFm_bN4-concept-wrist-hook-and-stability-reviewed
-    evidence_type: explanation
-    excerpt: Keeping the wrist braced and hooked rather than floppy, so the grip remains stable when striking and can support forehand-to-backhand transitions.
-    reason: The speaker says the wrist can be held firm and hooked, and that this stability supports forceful actions like twisting and ripping without problems.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: ub4GfFm_bN4
-      start_ms: 239166
-      end_ms: 257066
-      url: https://www.youtube.com/watch?v=ub4GfFm_bN4&t=239s
-      segment_ids:
-        - ub4GfFm_bN4:00066
-        - ub4GfFm_bN4:00067
-        - ub4GfFm_bN4:00068
-        - ub4GfFm_bN4:00069
-        - ub4GfFm_bN4:00071
-        - ub4GfFm_bN4:00072
-        - ub4GfFm_bN4:00073
-        - ub4GfFm_bN4:00074
-  - id: dMRsujoVIj4-concept-wrist-hook-and-stability-reviewed
-    evidence_type: definition
-    excerpt: Keeping the wrist relaxed and separate from the forearm so it can extend, rotate, and create friction at contact.
-    reason: The speaker explicitly instructs separation of wrist and forearm and describes the wrist extension sequence.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: dMRsujoVIj4
-      start_ms: 292200
-      end_ms: 316433
-      url: https://www.youtube.com/watch?v=dMRsujoVIj4&t=292s
-      segment_ids:
-        - dMRsujoVIj4:00118
-        - dMRsujoVIj4:00120
-        - dMRsujoVIj4:00121
-        - dMRsujoVIj4:00124
-  - id: 8TtaPJW3_94-concept-wrist-stability-and-hooking-reviewed
-    evidence_type: definition
-    excerpt: The wrist should not hook, deviate, or wobble; it should be positioned correctly and kept stable for drives and loops.
-    reason: The speaker explains that wrist position dictates the stroke structure and that hooked or cocked wrists make the stroke unstable.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 8TtaPJW3_94
-      start_ms: 109500
-      end_ms: 127300
-      url: https://www.youtube.com/watch?v=8TtaPJW3_94&t=109s
-      segment_ids:
-        - 8TtaPJW3_94:00024
-        - 8TtaPJW3_94:00028
-  - id: xyw4eE67NI4-concept-wrist-hook-and-stability-reviewed
-    evidence_type: definition
-    excerpt: The wrist should remain tight and stable rather than flopping during the serve motion.
-    reason: The transcript explicitly says not to let the wrist flop and describes the spin secret as compact, tight, sudden.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: xyw4eE67NI4
-      start_ms: 463600
-      end_ms: 473160
-      url: https://www.youtube.com/watch?v=xyw4eE67NI4&t=463s
-      segment_ids:
-        - xyw4eE67NI4:00178
-        - xyw4eE67NI4:00179
-        - xyw4eE67NI4:00180
-        - xyw4eE67NI4:00181
-  - id: BpKGpKwopDE-concept-wrist-hook-and-stability-reviewed
-    evidence_type: definition
-    excerpt: A serve requirement where the wrist is genuinely hooked rather than simply pushed, and the hook is maintained through the motion.
-    reason: The speaker emphasizes a genuine hook, says not to just push, and later repeats maintaining a deep wrist hook through the motion.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: BpKGpKwopDE
-      start_ms: 60400
-      end_ms: 88300
-      url: https://www.youtube.com/watch?v=BpKGpKwopDE&t=60s
-      segment_ids:
-        - BpKGpKwopDE:00012
-        - BpKGpKwopDE:00016
-  - id: 2DXviJQOA5M-concept-wrist-hook-and-stability-codex-reviewed
-    evidence_type: correction
-    excerpt: Whether it's a forehand loop or a backhand loop, your wrist must stay fixed.
-    reason: These contiguous segments directly state that the wrist must stay fixed during both forehand and backhand loops, matching the existing concept.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 2DXviJQOA5M
-      start_ms: 651200
-      end_ms: 670320
-      url: https://www.youtube.com/watch?v=2DXviJQOA5M&t=651s
-      segment_ids:
-        - 2DXviJQOA5M:00083
-        - 2DXviJQOA5M:00084
+- id: ub4GfFm_bN4-concept-wrist-hook-and-stability-reviewed
+  evidence_type: explanation
+  excerpt: Keeping the wrist braced and hooked rather than floppy, so the grip
+    remains stable when striking and can support forehand-to-backhand
+    transitions.
+  reason: The speaker says the wrist can be held firm and hooked, and that this
+    stability supports forceful actions like twisting and ripping without
+    problems.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: ub4GfFm_bN4
+    start_ms: 239166
+    end_ms: 257066
+    url: https://www.youtube.com/watch?v=ub4GfFm_bN4&t=239s
+    segment_ids:
+    - ub4GfFm_bN4:00066
+    - ub4GfFm_bN4:00067
+    - ub4GfFm_bN4:00068
+    - ub4GfFm_bN4:00069
+    - ub4GfFm_bN4:00071
+    - ub4GfFm_bN4:00072
+    - ub4GfFm_bN4:00073
+    - ub4GfFm_bN4:00074
+- id: dMRsujoVIj4-concept-wrist-hook-and-stability-reviewed
+  evidence_type: definition
+  excerpt: Keeping the wrist relaxed and separate from the forearm so it can
+    extend, rotate, and create friction at contact.
+  reason: The speaker explicitly instructs separation of wrist and forearm and
+    describes the wrist extension sequence.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: dMRsujoVIj4
+    start_ms: 292200
+    end_ms: 316433
+    url: https://www.youtube.com/watch?v=dMRsujoVIj4&t=292s
+    segment_ids:
+    - dMRsujoVIj4:00118
+    - dMRsujoVIj4:00120
+    - dMRsujoVIj4:00121
+    - dMRsujoVIj4:00124
+- id: 8TtaPJW3_94-concept-wrist-stability-and-hooking-reviewed
+  evidence_type: definition
+  excerpt: The wrist should not hook, deviate, or wobble; it should be
+    positioned correctly and kept stable for drives and loops.
+  reason: The speaker explains that wrist position dictates the stroke structure
+    and that hooked or cocked wrists make the stroke unstable.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 8TtaPJW3_94
+    start_ms: 109500
+    end_ms: 127300
+    url: https://www.youtube.com/watch?v=8TtaPJW3_94&t=109s
+    segment_ids:
+    - 8TtaPJW3_94:00024
+    - 8TtaPJW3_94:00028
+- id: xyw4eE67NI4-concept-wrist-hook-and-stability-reviewed
+  evidence_type: definition
+  excerpt: The wrist should remain tight and stable rather than flopping during
+    the serve motion.
+  reason: The transcript explicitly says not to let the wrist flop and describes
+    the spin secret as compact, tight, sudden.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: xyw4eE67NI4
+    start_ms: 463600
+    end_ms: 473160
+    url: https://www.youtube.com/watch?v=xyw4eE67NI4&t=463s
+    segment_ids:
+    - xyw4eE67NI4:00178
+    - xyw4eE67NI4:00179
+    - xyw4eE67NI4:00180
+    - xyw4eE67NI4:00181
+- id: BpKGpKwopDE-concept-wrist-hook-and-stability-reviewed
+  evidence_type: definition
+  excerpt: A serve requirement where the wrist is genuinely hooked rather than
+    simply pushed, and the hook is maintained through the motion.
+  reason: The speaker emphasizes a genuine hook, says not to just push, and
+    later repeats maintaining a deep wrist hook through the motion.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: BpKGpKwopDE
+    start_ms: 60400
+    end_ms: 88300
+    url: https://www.youtube.com/watch?v=BpKGpKwopDE&t=60s
+    segment_ids:
+    - BpKGpKwopDE:00012
+    - BpKGpKwopDE:00016
+- id: 2DXviJQOA5M-concept-wrist-hook-and-stability-codex-reviewed
+  evidence_type: correction
+  excerpt: Whether it's a forehand loop or a backhand loop, your wrist must stay
+    fixed.
+  reason: Keep the wrist fixed when playing either a forehand loop or a backhand
+    loop.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 2DXviJQOA5M
+    start_ms: 651200
+    end_ms: 670320
+    url: https://www.youtube.com/watch?v=2DXviJQOA5M&t=651s
+    segment_ids:
+    - 2DXviJQOA5M:00083
+    - 2DXviJQOA5M:00084
+- id: "OcPo7MgSNVM-soft-half-high-firm-wrist-reviewed"
+  evidence_type: "explanation"
+  excerpt: "For softer, half-high balls, the speaker says to lock the wrist and prevent
+    wobbling. In a spoken description of a slow example, the wrist stays still and
+    unified with the forearm, allowing effective power; the final instruction is to
+    lock the wrist and drive straight through the ball."
+  reason: "Keep the wrist firm on softer, half-high balls and drive straight through
+    the ball."
+  confidence: 0.95
+  visual_status: "transcript_inferred"
+  source:
+    video_id: "OcPo7MgSNVM"
+    start_ms: 412066
+    end_ms: 431466
+    url: "https://www.youtube.com/watch?v=OcPo7MgSNVM&t=412s"
+    segment_ids:
+    - "OcPo7MgSNVM:00094"
+    - "OcPo7MgSNVM:00095"
+    - "OcPo7MgSNVM:00096"
+    - "OcPo7MgSNVM:00097"
+    - "OcPo7MgSNVM:00098"
+    - "OcPo7MgSNVM:00099"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
+  review_status: "approved"
+- id: "OcPo7MgSNVM-no-spin-firm-wrist-reviewed"
+  evidence_type: "explanation"
+  excerpt: "The speaker tells the learner to lock the fingers and wrist firmly for
+    more precise power. For no-spin balls and many topspin balls, the speaker says
+    there is no extra finger action. Separately, the speaker says the wrist is generally
+    locked as one unit with the forearm. Too much finger movement loses control; too
+    little leaves power unfocused."
+  reason: "Lock the wrist with the forearm, and avoid extra finger action for no-spin
+    and many topspin balls."
+  confidence: 0.98
+  visual_status: "transcript_inferred"
+  source:
+    video_id: "OcPo7MgSNVM"
+    start_ms: 367000
+    end_ms: 396600
+    url: "https://www.youtube.com/watch?v=OcPo7MgSNVM&t=367s"
+    segment_ids:
+    - "OcPo7MgSNVM:00084"
+    - "OcPo7MgSNVM:00085"
+    - "OcPo7MgSNVM:00086"
+    - "OcPo7MgSNVM:00087"
+    - "OcPo7MgSNVM:00088"
+    - "OcPo7MgSNVM:00089"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
+  review_status: "approved"

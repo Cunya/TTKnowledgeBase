@@ -1,28 +1,19 @@
 id: concept-elbow-stabilization-through-support-points
 slug: elbow-stabilization-through-support-points
-label: Elbow stabilization through support points
+label: Elbow support and positioning cues
 aliases:
-- keep the elbow fixed
-- elbow needs to stay fixed
-- press down the elbow so it doesn't wobble
-- point the elbow to the lower right
-- left hand works as a stabilizer
-short_definition: Stabilize the elbow by fixing its position, keeping the shoulder firm, and using temporary left-hand support so the stroke does not wobble.
+- stable upper arm and elbow
+- supported elbow
+- elbow-led backswing
+short_definition: Source-specific elbow cues for keeping it down during contact or the backswing, making space for an outer loop arc, and supporting it rather than collapsing the whole arm when looping against backspin.
 evidence_summary: >-
-  These segments directly explain elbow control and the related forearm and paddle positioning for stable contact and topspin generation. This contiguous span directly explains that a stable, outward elbow creates the outer arc, while a tucked elbow produces a straight-line push. This contiguous 25.5-second span directly supports keeping the elbow low, downward, and near waist height, while identifying a raised elbow as incorrect. This contiguous 11.5-second span directly explains that the elbow must stay propped up, warns against elbow collapse, and dropping the entire arm as the common mistake.
-evidence_summary_source_hash: "sha256:6b51b8aec7362f696f2653e54ee7ff7dd4f79d310c0445cbf5d9a4c8fae73658"
-evidence_summary_generator: "deterministic"
+  The lessons give distinct elbow cues: down rather than placing the paddle and forearm “on top”; stable and out to make an outer loop arc; and led down in the backswing with a lowered right shoulder and the elbow point at waist height. For forehand or backhand looping against backspin, another lesson calls for a slightly lower right shoulder and a supported elbow rather than dropping the whole arm.
 concept_type: stroke
 facets:
   category:
   - fundamentals
   - stroke
-  side:
-  - neutral
-  level:
-  - beginner
-  - intermediate
-difficulty: intermediate
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -427,7 +418,7 @@ evidence:
 - id: 8S2YprEr6XA-concept-elbow-stabilization-through-support-points-codex-reviewed
   evidence_type: explanation
   excerpt: The elbow is a key point in making contact with the ball. Keep it down, and avoid placing the paddle and forearm on top, as you cannot generate topspin that way.
-  reason: These segments directly explain elbow control and the related forearm and paddle positioning for stable contact and topspin generation.
+  reason: The lesson emphasizes keeping the elbow down and warns that placing the paddle and forearm “on top” prevents topspin.
   confidence: 0.96
   visual_status: transcript_inferred
   review_status: approved
@@ -442,8 +433,8 @@ evidence:
     - 8S2YprEr6XA:00123
 - id: cPooD0HRRAc-concept-elbow-stabilization-through-support-points-codex-reviewed
   evidence_type: explanation
-  excerpt: Keep the upper arm and elbow stable and out to create space for the outer loop arc; tucking the elbow causes a straight-line push instead.
-  reason: This contiguous span directly explains that a stable, outward elbow creates the outer arc, while a tucked elbow produces a straight-line push.
+  excerpt: Keep the upper arm and elbow stable and out to create an outer loop arc. Stay close to the body, create space with the elbow, then contract the arm; the learner’s tucked-elbow forward push instead follows a straight line.
+  reason: Create space with the elbow before contracting the arm for the outer arc; the learner’s tucked-elbow push is contrasted with this arc.
   confidence: 0.99
   visual_status: transcript_inferred
   review_status: approved
@@ -462,8 +453,8 @@ evidence:
     - cPooD0HRRAc:00054
 - id: HHyaeCbQ_ec-concept-elbow-stabilization-through-support-points-codex-reviewed
   evidence_type: explanation
-  excerpt: Let your elbow guide the backswing downwards. Do not let it lift upwards; the point of your elbow should be at the same height as your waist.
-  reason: This contiguous 25.5-second span directly supports keeping the elbow low, downward, and near waist height, while identifying a raised elbow as incorrect.
+  excerpt: Let the elbow guide the backswing downwards rather than lifting it. Lead with a lowered right shoulder and keep the elbow point at waist height; the lesson rejects a chest-level elbow as a raised-shoulder or chicken-wing error.
+  reason: In this backswing cue, lower the right shoulder and elbow rather than lifting the elbow toward chest height.
   confidence: 0.99
   visual_status: transcript_inferred
   review_status: approved
@@ -481,17 +472,19 @@ evidence:
     - HHyaeCbQ_ec:00042
 - id: mchHxJnHUzE-concept-elbow-stabilization-through-support-points-codex-reviewed
   evidence_type: correction
-  excerpt: Keep the elbow propped up and avoid collapsing the entire arm; let the forearm move while the elbow remains supported.
-  reason: This contiguous 11.5-second span directly explains that the elbow must stay propped up, warns against elbow collapse, and identifies dropping the entire arm as the common mistake.
+  excerpt: For forehand or backhand looping against backspin, keep the right shoulder slightly lower and the elbow propped up. A collapsing elbow prevents lifting the ball; dropping the entire arm instead of just the forearm is the stated mistake.
+  reason: When looping against backspin, support the elbow rather than letting the whole arm collapse, while keeping the right shoulder slightly lower.
   confidence: 0.99
   visual_status: transcript_inferred
   review_status: approved
   source:
     video_id: mchHxJnHUzE
-    start_ms: 77966
+    start_ms: 67300
     end_ms: 89433
-    url: https://www.youtube.com/watch?v=mchHxJnHUzE&t=77s
+    url: https://www.youtube.com/watch?v=mchHxJnHUzE&t=67s
     segment_ids:
+    - mchHxJnHUzE:00016
+    - mchHxJnHUzE:00017
     - mchHxJnHUzE:00018
     - mchHxJnHUzE:00019
     - mchHxJnHUzE:00020

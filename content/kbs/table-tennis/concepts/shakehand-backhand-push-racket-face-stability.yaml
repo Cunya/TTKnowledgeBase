@@ -2,25 +2,17 @@ id: concept-shakehand-backhand-push-racket-face-stability
 slug: shakehand-backhand-push-racket-face-stability
 label: Shakehand backhand push racket-face stability
 aliases:
-  - wobble in the racket face
-  - lock the racket into the web of my hand
-  - stable racket face
-short_definition: For a shakehand backhand push, the racket face must stay stable and the grip should not wobble, or the ball will go out.
+- shakehand backhand push grip stability
+short_definition: For a shakehand backhand push, the speaker warns against holding the racket too loosely because racket-face wobble sends the ball out. For this backhand push, the speaker locks the racket into the web of the hand.
 evidence_summary: >-
-  For a shakehand backhand push, the racket face must stay stable and the grip should not wobble,
-  or the ball will go out.
-evidence_summary_source_hash: "sha256:3191813dee5f4bffa8602a87852fdafd265a21e185d650b088c1648e53776fa8"
-evidence_summary_generator: "deterministic"
+  For a shakehand backhand push, the speaker warns against holding the racket too loosely because racket-face wobble sends the ball out. For this backhand push, the speaker locks the racket into the web of the hand.
 concept_type: stroke
 facets:
   category:
-    - stroke
+  - stroke
   side:
-    - backhand
-  level:
-    - beginner
-    - intermediate
-difficulty: intermediate
+  - backhand
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -31,68 +23,68 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: ae9urokFAJM-new-shakehand-backhand-push-racket-face-stability-reviewed
-    evidence_type: definition
-    excerpt: For a shakehand backhand push, the racket face must stay stable and the grip should not wobble, or the ball will go out.
-    reason: The speaker says the racket cannot be held too loosely and that any wobble in the racket face sends the ball out.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: ae9urokFAJM
-      start_ms: 387600
-      end_ms: 410866
-      url: https://www.youtube.com/watch?v=ae9urokFAJM&t=387s
-      segment_ids:
-        - ae9urokFAJM:00086
-        - ae9urokFAJM:00087
-        - ae9urokFAJM:00088
-        - ae9urokFAJM:00089
-        - ae9urokFAJM:00091
-  - id: Xho60DR74X0-concept-shakehand-backhand-push-racket-face-stability-reviewed
-    evidence_type: explanation
-    excerpt: Keeping the racket face stable and supported, especially for shakehand players, so the push does not wobble or lose spin.
-    reason: The speaker warns against a flat, wobbling wrist and says the web of the hand should support the racket firmly, including for shakehand players.
-    confidence: 0.87
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: Xho60DR74X0
-      start_ms: 62200
-      end_ms: 76533
-      url: https://www.youtube.com/watch?v=Xho60DR74X0&t=62s
-      segment_ids:
-        - Xho60DR74X0:00014
-        - Xho60DR74X0:00015
-        - Xho60DR74X0:00016
-  - id: mQdrXMukRSY-concept-backhand-racket-face-stability-reviewed
-    evidence_type: definition
-    excerpt: The backhand racket face should stay stable from start to finish, with no mid-swing wobble or secondary angle adjustment.
-    reason: The speaker explicitly says the backhand racket face must remain stable and that secondary adjustment causes errors.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: mQdrXMukRSY
-      start_ms: 549500
-      end_ms: 573266
-      url: https://www.youtube.com/watch?v=mQdrXMukRSY&t=549s
-      segment_ids:
-        - mQdrXMukRSY:00090
-        - mQdrXMukRSY:00092
-  - id: ae9urokFAJM-new-shakehand-backhand-push-racket-face-stability-codex-reviewed
-    evidence_type: explanation
-    excerpt: For a shakehand backhand push, you can't hold the racket too loosely. Any wobble in the racket face will send the ball out. So, for my backhand push, I lock the racket into the web of my hand.
-    reason: Segments 00087–00089 directly explain that a loose grip causes racket-face wobble and errors, and that locking the racket into the web of the hand provides stability. This is the same durable topic as the supplied existing concept.
-    confidence: 1.0
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: ae9urokFAJM
-      start_ms: 390300
-      end_ms: 401466
-      url: https://www.youtube.com/watch?v=ae9urokFAJM&t=390s
-      segment_ids:
-        - ae9urokFAJM:00087
-        - ae9urokFAJM:00088
-        - ae9urokFAJM:00089
+- id: ae9urokFAJM-new-shakehand-backhand-push-racket-face-stability-reviewed
+  evidence_type: definition
+  excerpt: For a shakehand backhand push, the racket face must stay stable and the grip should not wobble, or the ball will go out.
+  reason: The speaker says the racket cannot be held too loosely and that any wobble in the racket face sends the ball out.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ae9urokFAJM
+    start_ms: 387600
+    end_ms: 410866
+    url: https://www.youtube.com/watch?v=ae9urokFAJM&t=387s
+    segment_ids:
+    - ae9urokFAJM:00086
+    - ae9urokFAJM:00087
+    - ae9urokFAJM:00088
+    - ae9urokFAJM:00089
+    - ae9urokFAJM:00091
+- id: Xho60DR74X0-concept-shakehand-backhand-push-racket-face-stability-reviewed
+  evidence_type: explanation
+  excerpt: Keeping the racket face stable and supported, especially for shakehand players, so the push does not wobble or lose spin.
+  reason: The speaker warns against a flat, wobbling wrist and says the web of the hand should support the racket firmly, including for shakehand players.
+  confidence: 0.87
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Xho60DR74X0
+    start_ms: 62200
+    end_ms: 76533
+    url: https://www.youtube.com/watch?v=Xho60DR74X0&t=62s
+    segment_ids:
+    - Xho60DR74X0:00014
+    - Xho60DR74X0:00015
+    - Xho60DR74X0:00016
+- id: mQdrXMukRSY-concept-backhand-racket-face-stability-reviewed
+  evidence_type: definition
+  excerpt: The backhand racket face should stay stable from start to finish, with no mid-swing wobble or secondary angle adjustment.
+  reason: The speaker explicitly says the backhand racket face must remain stable and that secondary adjustment causes errors.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: mQdrXMukRSY
+    start_ms: 549500
+    end_ms: 573266
+    url: https://www.youtube.com/watch?v=mQdrXMukRSY&t=549s
+    segment_ids:
+    - mQdrXMukRSY:00090
+    - mQdrXMukRSY:00092
+- id: ae9urokFAJM-new-shakehand-backhand-push-racket-face-stability-codex-reviewed
+  evidence_type: explanation
+  excerpt: For a shakehand backhand push, the speaker warns against holding the racket too loosely because racket-face wobble sends the ball out. For this backhand push, the speaker locks the racket into the web of the hand.
+  reason: For a shakehand backhand push, the speaker warns against holding the racket too loosely because racket-face wobble sends the ball out. For this backhand push, the speaker locks the racket into the web of the hand.
+  confidence: 1.0
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: ae9urokFAJM
+    start_ms: 390300
+    end_ms: 401466
+    url: https://www.youtube.com/watch?v=ae9urokFAJM&t=390s
+    segment_ids:
+    - ae9urokFAJM:00087
+    - ae9urokFAJM:00088
+    - ae9urokFAJM:00089

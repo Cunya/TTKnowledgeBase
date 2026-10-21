@@ -2,563 +2,586 @@ id: concept-serve-selection-and-follow-up
 slug: serve-selection-and-follow-up
 label: Serve selection and follow-up
 aliases: [opponent-specific serving, serve-plus-one planning]
-short_definition: Choose serve spin, depth, speed, and angle for the opponent's preferred return, then plan the next attack.
+short_definition: Choosing a serve with the opponent’s likely return and the server’s intended next shot in mind.
 evidence_summary: >-
-  Serve selection should be based on the opponent’s likely return, but it also has to fit the
-  server’s own strengths and the intended follow-up. Some serves, such as side-topspin patterns,
-  are useful because they rise and travel long enough to invite an attack, while other patterns
-  are chosen to maximize spin against weak readers or deception against strong readers. The key is
-  to choose placement, speed, and spin with the next shot in mind, and to switch plans when the
-  likely follow-up becomes disadvantageous.
-evidence_summary_source_hash: "sha256:423f07a27999874907a989451b16550854ea7e61033ceacbeba29def12a551d1"
-evidence_summary_generator: "codex"
+  Serve choice follows the opponent’s return and the server’s strengths. One lesson uses a flatter, spin-focused serve against loopers and a more vertical version against pushers, then chooses sidespin-backspin or topspin serves to fit the server’s follow-up skills. For a plan built around attacking backspin on the third ball, another lesson prefers half-spin or no-spin and describes sidespin-topspin as easy to attack. A separate short-serve example favors light backspin.
 concept_type: strategy
-facets: {category: [tactic], side: [neutral], level: [intermediate, advanced]}
-difficulty: intermediate
+facets:
+  category:
+  - tactic
+difficulty:
 review_status: approved
 evidence:
-  - id: adapt-to-return-preference-1-part-1
-    evidence_type: explanation
-    excerpt: Adapt the serve to the opponent's preferred backhand return.
-    reason: Defines opponent-specific serve selection.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: leQBUn8-4tw, start_ms: 91566, end_ms: 94866, url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=91s", segment_ids: ["leQBUn8-4tw:00019"]}
-  - id: adapt-to-return-preference-1-part-2
-    evidence_type: explanation
-    excerpt: Choose serves strategically for the specific opponent rather than by habit.
-    reason: Defines opponent-specific serve selection.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: leQBUn8-4tw, start_ms: 200466, end_ms: 203366, url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=200s", segment_ids: ["leQBUn8-4tw:00041"]}
-  - id: flatter-against-loopers-2
-    evidence_type: example
-    excerpt: Against loopers, use a flatter angle, heavier backspin, and less pace to deny an easy attack.
-    reason: Provides one concrete opponent-specific adjustment.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: leQBUn8-4tw, start_ms: 94866, end_ms: 117000, url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=94s", segment_ids: ["leQBUn8-4tw:00020", "leQBUn8-4tw:00023"]}
-  - id: vertical-against-pushers-3-part-1
-    evidence_type: example
-    excerpt: Against an opponent who prefers pushing, use the more vertical racket option to change the return.
-    reason: Contrasts the prescription for a different return preference.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: leQBUn8-4tw, start_ms: 167366, end_ms: 191833, url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=167s", segment_ids: ["leQBUn8-4tw:00035", "leQBUn8-4tw:00036", "leQBUn8-4tw:00037", "leQBUn8-4tw:00038"]}
-  - id: vertical-against-pushers-3-part-2
-    evidence_type: example
-    excerpt: A softer touch can produce a higher, less spinny return that is easier to attack.
-    reason: Contrasts the prescription for a different return preference.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: leQBUn8-4tw, start_ms: 191833, end_ms: 200466, url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=191s", segment_ids: ["leQBUn8-4tw:00039", "leQBUn8-4tw:00040"]}
-  - id: plan-the-next-attack-4
-    evidence_type: explanation
-    excerpt: Judge a serve by the attack it sets up, not by whether it wins directly as an ace.
-    reason: Connects serve selection to the intended third-ball pattern.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: leQBUn8-4tw, start_ms: 278600, end_ms: 301266, url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=278s", segment_ids: ["leQBUn8-4tw:00060", "leQBUn8-4tw:00064"]}
-  - id: choose-for-player-strengths-5
-    evidence_type: explanation
-    excerpt: Prioritize serve families that lead into the player's strongest rally and footwork patterns.
-    reason: Extends selection from opponent weakness to the server's own strengths.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: leQBUn8-4tw, start_ms: 365833, end_ms: 380066, url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=365s", segment_ids: ["leQBUn8-4tw:00080", "leQBUn8-4tw:00083"]}
-  - id: I-_3TIjU4qI-candidate-side-topspin-serve-too-attackable-1
-    evidence_type: explanation
-    excerpt: A side-topspin serve tends to bounce up and travel long enough for the opponent to attack, making it a weaker choice when trying to create a safe third-ball attack opportunity.
-    reason: The speaker contrasts low short no-spin serves with side-topspin, saying the former prevents the opponent from generating power.
-    confidence: 0.76
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: I-_3TIjU4qI
-      start_ms: 62200
-      end_ms: 79240
-      url: "https://www.youtube.com/watch?v=I-_3TIjU4qI&t=62s"
-      segment_ids:
-        - "I-_3TIjU4qI:00030"
-        - "I-_3TIjU4qI:00031"
-        - "I-_3TIjU4qI:00032"
-        - "I-_3TIjU4qI:00033"
-        - "I-_3TIjU4qI:00034"
-        - "I-_3TIjU4qI:00035"
-  - id: I-_3TIjU4qI-candidate-side-topspin-serve-too-attackable-2
-    evidence_type: explanation
-    excerpt: A side-topspin serve tends to bounce up and travel long enough for the opponent to attack, making it a weaker choice when trying to create a safe third-ball attack opportunity.
-    reason: The speaker says side-topspin serves bounce up and long, allowing the opponent to find the peak and attack.
-    confidence: 0.89
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: I-_3TIjU4qI
-      start_ms: 77640
-      end_ms: 93880
-      url: "https://www.youtube.com/watch?v=I-_3TIjU4qI&t=77s"
-      segment_ids:
-        - "I-_3TIjU4qI:00036"
-        - "I-_3TIjU4qI:00037"
-        - "I-_3TIjU4qI:00038"
-        - "I-_3TIjU4qI:00039"
-        - "I-_3TIjU4qI:00040"
-        - "I-_3TIjU4qI:00041"
-        - "I-_3TIjU4qI:00042"
-  - id: XlGnK1z_7C0-concept-serve-selection-and-follow-up-reviewed
-    evidence_type: explanation
-    excerpt: Choosing a serve based on the opponent and deciding the next action if the return is controlled or dangerous.
-    reason: The speaker describes choosing serve targets and patterns based on the opponent's likely response, and switching plans when the follow-up is disadvantageous.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: XlGnK1z_7C0
-      start_ms: 210560
-      end_ms: 232280
-      url: https://www.youtube.com/watch?v=XlGnK1z_7C0&t=210s
-      segment_ids:
-        - XlGnK1z_7C0:00090
-        - XlGnK1z_7C0:00091
-        - XlGnK1z_7C0:00092
-        - XlGnK1z_7C0:00093
-        - XlGnK1z_7C0:00094
-        - XlGnK1z_7C0:00095
-        - XlGnK1z_7C0:00096
-        - XlGnK1z_7C0:00097
-        - XlGnK1z_7C0:00098
-  - id: OMgoeirhpyc-concept-serve-selection-and-follow-up-reviewed
-    evidence_type: explanation
-    excerpt: Choosing a serve based on the opponent and planning the next ball immediately after serve contact.
-    reason: The speaker tells the player not to serve too spinny, to serve half-spin or no-spin against a flat push, and repeatedly criticizes passive serve follow-up, emphasizing what comes after the serve.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: OMgoeirhpyc
-      start_ms: 331080
-      end_ms: 351400
-      url: https://www.youtube.com/watch?v=OMgoeirhpyc&t=331s
-      segment_ids:
-        - OMgoeirhpyc:00110
-        - OMgoeirhpyc:00111
-        - OMgoeirhpyc:00112
-        - OMgoeirhpyc:00113
-        - OMgoeirhpyc:00114
-        - OMgoeirhpyc:00115
-        - OMgoeirhpyc:00116
-        - OMgoeirhpyc:00117
-  - id: Dj-oOxwQn1s-concept-serve-selection-and-follow-up-reviewed
-    evidence_type: explanation
-    excerpt: Serve choices should be adjusted for deception, spin level, and the opponent's reading ability, including choosing when to trade off spin for disguise.
-    reason: The speaker explicitly recommends maximizing spin against poor readers, but sacrificing spin or speed for deception against strong readers.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: Dj-oOxwQn1s
-      start_ms: 548000
-      end_ms: 561920
-      url: https://www.youtube.com/watch?v=Dj-oOxwQn1s&t=548s
-      segment_ids:
-        - Dj-oOxwQn1s:00204
-        - Dj-oOxwQn1s:00205
-        - Dj-oOxwQn1s:00206
-        - Dj-oOxwQn1s:00207
-        - Dj-oOxwQn1s:00208
-  - id: ODwFaYDY1co-concept-serve-selection-and-follow-up-reviewed
-    evidence_type: explanation
-    excerpt: Choosing serve length and spin with the next ball in mind, including how the serve should set up the follow-up attack or recovery position.
-    reason: The speaker contrasts short and long serves, describes the intended next ball, and says you need to know what your next intention is after serving short or long.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: ODwFaYDY1co
-      start_ms: 280080
-      end_ms: 289320
-      url: https://www.youtube.com/watch?v=ODwFaYDY1co&t=280s
-      segment_ids:
-        - ODwFaYDY1co:00115
-        - ODwFaYDY1co:00117
-  - id: Dj-oOxwQn1s-concept-serve-selection-and-follow-up-reviewed-7f45eae6
-    evidence_type: explanation
-    excerpt: Serve choices should be adjusted for deception, spin level, and the opponent's reading ability, including choosing when to trade off spin for disguise.
-    reason: The speaker explicitly recommends maximizing spin against poor readers, but sacrificing spin or speed for deception against strong readers.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: Dj-oOxwQn1s
-      start_ms: 548000
-      end_ms: 561920
-      url: https://www.youtube.com/watch?v=Dj-oOxwQn1s&t=548s
-      segment_ids:
-        - Dj-oOxwQn1s:00204
-        - Dj-oOxwQn1s:00205
-        - Dj-oOxwQn1s:00206
-        - Dj-oOxwQn1s:00207
-        - Dj-oOxwQn1s:00208
-  - id: ODwFaYDY1co-concept-serve-selection-and-follow-up-reviewed-4e9be61e
-    evidence_type: explanation
-    excerpt: Choosing serve length and spin with the next ball in mind, including how the serve should set up the follow-up attack or recovery position.
-    reason: The speaker contrasts short and long serves, describes the intended next ball, and says you need to know what your next intention is after serving short or long.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: ODwFaYDY1co
-      start_ms: 280080
-      end_ms: 289320
-      url: https://www.youtube.com/watch?v=ODwFaYDY1co&t=280s
-      segment_ids:
-        - ODwFaYDY1co:00115
-        - ODwFaYDY1co:00117
-  - id: PDFXww03DHM-concept-serve-selection-and-follow-up-reviewed
-    evidence_type: explanation
-    excerpt: Choose a serve with the intended spin and recovery pattern so the follow-up ball can be attacked or controlled more effectively.
-    reason: Hook serve and left sidespin serve are both discussed as patterns finished inside the table, indicating planned serve choice with follow-up intent.
-    confidence: 0.86
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: PDFXww03DHM
-      start_ms: 241600
-      end_ms: 251640
-      url: https://www.youtube.com/watch?v=PDFXww03DHM&t=241s
-      segment_ids:
-        - PDFXww03DHM:00070
-        - PDFXww03DHM:00071
-        - PDFXww03DHM:00072
-  - id: oLxdGO8TY8s-cand-7-reviewed
-    evidence_type: explanation
-    excerpt: Choosing a serve to shape the next ball and planning the immediate follow-up shot accordingly.
-    reason: The speaker describes planning before serving and anticipating whether the next ball will go to the backhand or forehand, then choosing the follow-up shot.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: oLxdGO8TY8s
-      start_ms: 386720
-      end_ms: 413240
-      url: https://www.youtube.com/watch?v=oLxdGO8TY8s&t=386s
-      segment_ids:
-        - oLxdGO8TY8s:00150
-        - oLxdGO8TY8s:00151
-        - oLxdGO8TY8s:00152
-        - oLxdGO8TY8s:00153
-        - oLxdGO8TY8s:00154
-        - oLxdGO8TY8s:00155
-        - oLxdGO8TY8s:00156
-        - oLxdGO8TY8s:00157
-        - oLxdGO8TY8s:00158
-        - oLxdGO8TY8s:00159
-        - oLxdGO8TY8s:00160
-  - id: TWv2MUl_64Q-concept-serve-selection-and-follow-up-reviewed
-    evidence_type: explanation
-    excerpt: Planning a serve around where the return is likely to go and preparing the next attack immediately after the serve.
-    reason: The speaker frames the lesson as attacking the serve return, choosing placement/speed, and coordinating the serve with the follow-up attack.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: TWv2MUl_64Q
-      start_ms: 104900
-      end_ms: 127166
-      url: https://www.youtube.com/watch?v=TWv2MUl_64Q&t=104s
-      segment_ids:
-        - TWv2MUl_64Q:00023
-        - TWv2MUl_64Q:00024
-        - TWv2MUl_64Q:00025
-        - TWv2MUl_64Q:00027
-        - TWv2MUl_64Q:00028
-  - id: 4C5EE15fTvw-concept-serve-selection-and-follow-up-reviewed
-    evidence_type: explanation
-    excerpt: Choosing serve quality and placement to shape the opponent's return, then preparing the next stroke based on that return quality.
-    reason: The speaker says the pause point depends on the opponent's return quality and that improving serve spin and placement can force passive handling.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 4C5EE15fTvw
-      start_ms: 527920
-      end_ms: 541480
-      url: https://www.youtube.com/watch?v=4C5EE15fTvw&t=527s
-      segment_ids:
-        - 4C5EE15fTvw:00218
-        - 4C5EE15fTvw:00219
-        - 4C5EE15fTvw:00220
-        - 4C5EE15fTvw:00221
-        - 4C5EE15fTvw:00222
-  - id: U-z4PamhiUE-concept-serve-selection-and-follow-up-reviewed
-    evidence_type: explanation
-    excerpt: Selecting a serve with a planned next ball so the serve and follow-up attack work together.
-    reason: The speaker says a good serve must be paired with a third-ball attack and gives examples of serving to specific locations with an intended next ball.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: U-z4PamhiUE
-      start_ms: 258519
-      end_ms: 281000
-      url: https://www.youtube.com/watch?v=U-z4PamhiUE&t=258s
-      segment_ids:
-        - U-z4PamhiUE:00117
-        - U-z4PamhiUE:00118
-        - U-z4PamhiUE:00119
-        - U-z4PamhiUE:00120
-        - U-z4PamhiUE:00121
-        - U-z4PamhiUE:00122
-        - U-z4PamhiUE:00123
-        - U-z4PamhiUE:00124
-        - U-z4PamhiUE:00125
-  - id: q5sJuWPXRgo-concept-serve-selection-and-follow-up-reviewed
-    evidence_type: explanation
-    excerpt: Choose a serve based on your own reliability and the expected follow-up ball, especially in key points.
-    reason: The speaker compares serve options by reliability and the ability to handle the return, then chooses a serve that creates a manageable next ball.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: q5sJuWPXRgo
-      start_ms: 111033
-      end_ms: 122333
-      url: https://www.youtube.com/watch?v=q5sJuWPXRgo&t=111s
-      segment_ids:
-        - q5sJuWPXRgo:00057
-        - q5sJuWPXRgo:00058
-        - q5sJuWPXRgo:00059
-        - q5sJuWPXRgo:00060
-        - q5sJuWPXRgo:00061
-  - id: rdMkkX_p7e0-concept-serve-selection-and-follow-up-reviewed
-    evidence_type: explanation
-    excerpt: Choosing serves intentionally based on the intended follow-up and the opponent's likely return.
-    reason: The speaker emphasizes deciding what return to create and then looking for the opportunity to attack.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: rdMkkX_p7e0
-      start_ms: 409466
-      end_ms: 414866
-      url: https://www.youtube.com/watch?v=rdMkkX_p7e0&t=409s
-      segment_ids:
-        - rdMkkX_p7e0:00144
-        - rdMkkX_p7e0:00146
-  - id: rZY_SUer7Aw-concept-serve-selection-and-follow-up-reviewed
-    evidence_type: explanation
-    excerpt: Choose a serve with a planned follow-up based on the serve type and the expected next ball.
-    reason: 'The speaker links serve type to the next action: topspin serve leads to attack, backspin leads to loop or push.'
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: rZY_SUer7Aw
-      start_ms: 177700
-      end_ms: 193466
-      url: https://www.youtube.com/watch?v=rZY_SUer7Aw&t=177s
-      segment_ids:
-        - rZY_SUer7Aw:00066
-        - rZY_SUer7Aw:00067
-        - rZY_SUer7Aw:00068
-        - rZY_SUer7Aw:00069
-        - rZY_SUer7Aw:00070
-        - rZY_SUer7Aw:00071
-        - rZY_SUer7Aw:00072
-        - rZY_SUer7Aw:00073
-        - rZY_SUer7Aw:00074
-  - id: XOwwV9tTiQ8-concept-serve-selection-and-follow-up-reviewed
-    evidence_type: explanation
-    excerpt: 'Planning serves as a sequence: choose a serve to create a specific response, then prepare the next attack immediately after the serve.'
-    reason: The speaker explicitly says every serve must prepare for the next shot and to combine serve patterns with previous ones.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: XOwwV9tTiQ8
-      start_ms: 474500
-      end_ms: 479000
-      url: https://www.youtube.com/watch?v=XOwwV9tTiQ8&t=474s
-      segment_ids:
-        - XOwwV9tTiQ8:00161
-        - XOwwV9tTiQ8:00162
-  - id: GOAyEFoSibE-concept-serve-selection-and-follow-up-reviewed
-    evidence_type: definition
-    excerpt: Choosing serves based on your own attacking style and the follow-up options they create.
-    reason: The speaker says serves should be chosen according to attacking capability and style, with follow-up effects on flicks, pushes, and attacks.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: GOAyEFoSibE
-      start_ms: 190000
-      end_ms: 213066
-      url: https://www.youtube.com/watch?v=GOAyEFoSibE&t=190s
-      segment_ids:
-        - GOAyEFoSibE:00042
-        - GOAyEFoSibE:00043
-        - GOAyEFoSibE:00044
-        - GOAyEFoSibE:00045
-        - GOAyEFoSibE:00046
-  - id: zMrQvj_bji4-concept-serve-selection-and-follow-up-reviewed
-    evidence_type: explanation
-    excerpt: Choosing serve type and intensity based on court position, target length, and follow-up control after the serve.
-    reason: The speaker ties serve choice to baseline, near-table, and mid-table positions and emphasizes serve quality, follow-up, and control over simply getting the ball over the net.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: zMrQvj_bji4
-      start_ms: 187000
-      end_ms: 214266
-      url: https://www.youtube.com/watch?v=zMrQvj_bji4&t=187s
-      segment_ids:
-        - zMrQvj_bji4:00046
-        - zMrQvj_bji4:00047
-        - zMrQvj_bji4:00048
-        - zMrQvj_bji4:00052
-  - id: EMHCC5XbkvY-c8-reviewed
-    evidence_type: explanation
-    excerpt: Choosing the serve based on the intended follow-up, then reacting differently depending on whether the return is a flick or a push.
-    reason: The speaker states that at pro level the serve is used to force a weak push and then attack, and that follow-up changes based on the return type.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: EMHCC5XbkvY
-      start_ms: 586233
-      end_ms: 607166
-      url: https://www.youtube.com/watch?v=EMHCC5XbkvY&t=586s
-      segment_ids:
-        - EMHCC5XbkvY:00126
-        - EMHCC5XbkvY:00129
-  - id: a9wtW1BV-6M-concept-serve-selection-and-follow-up-reviewed
-    evidence_type: explanation
-    excerpt: Choosing serve types based on the game plan, then sequencing follow-up serves to shape the opponent's response and open later attacks.
-    reason: 'The speaker lays out serve sequencing: start with backspin to set up topspin, use short or long serves first depending on the intended attack, and use opening serves to control focus rather than as the main strategy.'
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: a9wtW1BV-6M
-      start_ms: 427100
-      end_ms: 454066
-      url: https://www.youtube.com/watch?v=a9wtW1BV-6M&t=427s
-      segment_ids:
-        - a9wtW1BV-6M:00085
-        - a9wtW1BV-6M:00088
-        - a9wtW1BV-6M:00089
-        - a9wtW1BV-6M:00090
-        - a9wtW1BV-6M:00091
-  - id: VQlnNbgMmR8-concept-serve-selection-and-follow-up-reviewed
-    evidence_type: explanation
-    excerpt: The idea that serve choice and the serve itself are central because the server controls the shot and can use the next ball to attack.
-    reason: The speaker explicitly says the serve and receive are the two crucial skills, then states the serve is the most important and that it sets up the attack.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: VQlnNbgMmR8
-      start_ms: 8333
-      end_ms: 25066
-      url: https://www.youtube.com/watch?v=VQlnNbgMmR8&t=8s
-      segment_ids:
-        - VQlnNbgMmR8:00002
-        - VQlnNbgMmR8:00004
-  - id: pQcxGOu4wEE-concept-serve-selection-and-follow-up-reviewed
-    evidence_type: explanation
-    excerpt: 'Serve choices should be staged across the match: use conventional backspin early, then introduce the deceptive topspin version at key points after setting it up.'
-    reason: The speaker recommends using the deceptive serve only at crucial points after establishing the backspin motion first, which is serve sequencing and follow-up planning.
-    confidence: 0.88
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: pQcxGOu4wEE
-      start_ms: 753700
-      end_ms: 778966
-      url: https://www.youtube.com/watch?v=pQcxGOu4wEE&t=753s
-      segment_ids:
-        - pQcxGOu4wEE:00158
-        - pQcxGOu4wEE:00159
-        - pQcxGOu4wEE:00160
-        - pQcxGOu4wEE:00161
-        - pQcxGOu4wEE:00162
-  - id: Pym9pNWaowA-concept-serve-selection-and-follow-up-reviewed
-    evidence_type: example
-    excerpt: Planning serve placements and sequences to create a tactical advantage on the next ball.
-    reason: The speaker frames placement as the final element and gives explicit serve sequences that set up the next ball tactically.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: Pym9pNWaowA
-      start_ms: 846433
-      end_ms: 873666
-      url: https://www.youtube.com/watch?v=Pym9pNWaowA&t=846s
-      segment_ids:
-        - Pym9pNWaowA:00135
-        - Pym9pNWaowA:00136
-        - Pym9pNWaowA:00137
-        - Pym9pNWaowA:00138
-  - id: IHQASHkdLYk-concept-serve-selection-and-follow-up-reviewed
-    evidence_type: explanation
-    excerpt: Planning the serve to shape the likely return and prepare the next attack.
-    reason: The speaker explains serving with a purpose, deciding the likely return location, and then already planning the attack as a three-ball sequence.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: IHQASHkdLYk
-      start_ms: 17200
-      end_ms: 40533
-      url: https://www.youtube.com/watch?v=IHQASHkdLYk&t=17s
-      segment_ids:
-        - IHQASHkdLYk:00003
-        - IHQASHkdLYk:00005
-  - id: IHQASHkdLYk-concept-serve-selection-and-follow-up-codex-reviewed
-    evidence_type: explanation
-    excerpt: The third-ball attack setup links your serve, the opponent’s return, and your attack to control the point from the first shot.
-    reason: This contiguous segment directly explains the durable serve-to-follow-up sequence and matches the supplied existing concept.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: IHQASHkdLYk
-      start_ms: 40533
-      end_ms: 53200
-      url: https://www.youtube.com/watch?v=IHQASHkdLYk&t=40s
-      segment_ids:
-        - IHQASHkdLYk:00115
-  - id: ODwFaYDY1co-concept-serve-selection-and-follow-up-codex-reviewed
-    evidence_type: explanation
-    excerpt: 'Use light backspin on a short serve to set up the third-ball attack: the opponent must step forward before the loop.'
-    reason: This contiguous transcript moment directly contrasts topspin and light backspin serves and explains how a short serve makes the opponent step forward before the follow-up loop.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: ODwFaYDY1co
-      start_ms: 12800
-      end_ms: 31800
-      url: https://www.youtube.com/watch?v=ODwFaYDY1co&t=12s
-      segment_ids:
-        - ODwFaYDY1co:00006
-        - ODwFaYDY1co:00007
-        - ODwFaYDY1co:00008
-        - ODwFaYDY1co:00009
-        - ODwFaYDY1co:00010
-        - ODwFaYDY1co:00011
-        - ODwFaYDY1co:00012
+- id: adapt-to-return-preference-1-part-1
+  evidence_type: explanation
+  excerpt: Adapt the serve to the opponent’s backhand return.
+  reason: The serve choice is adjusted to the opponent’s backhand return.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source: {video_id: leQBUn8-4tw, start_ms: 91566, end_ms: 94866, url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=91s", segment_ids: ["leQBUn8-4tw:00019"]}
+- id: adapt-to-return-preference-1-part-2
+  evidence_type: explanation
+  excerpt: Serve strategically based on the opponent.
+  reason: The stated principle is opponent-specific serving.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source: {video_id: leQBUn8-4tw, start_ms: 200466, end_ms: 203366, url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=200s", segment_ids: ["leQBUn8-4tw:00041"]}
+- id: flatter-against-loopers-2
+  evidence_type: example
+  excerpt: For an opponent who prefers to loop, the lesson uses a flatter racket angle and prioritizes spin over speed. The speaker describes more backspin as harder to borrow power from and the flatter serve as slower, not shooting forward and dropping after the bounce.
+  reason: The looping-preference example uses a flatter, slower serve that prioritizes spin over speed.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: leQBUn8-4tw
+    start_ms: 94866
+    end_ms: 117000
+    url: https://www.youtube.com/watch?v=leQBUn8-4tw&t=94s
+    segment_ids:
+    - leQBUn8-4tw:00020
+    - leQBUn8-4tw:00021
+    - leQBUn8-4tw:00022
+    - leQBUn8-4tw:00023
+- id: vertical-against-pushers-3-part-1
+  evidence_type: example
+  excerpt: Against an opponent who prefers pushing, the lesson changes from a flat to a more vertical racket angle with the same brushing motion. It describes more sideways kick and warns that a hard push will go off the table.
+  reason: The pushing-preference example changes the serving racket angle from flat to more vertical.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: approved
+  source: {video_id: leQBUn8-4tw, start_ms: 167366, end_ms: 191833, url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=167s", segment_ids: ["leQBUn8-4tw:00035", "leQBUn8-4tw:00036", "leQBUn8-4tw:00037", "leQBUn8-4tw:00038"]}
+- id: vertical-against-pushers-3-part-2
+  evidence_type: example
+  excerpt: In this example, a soft touch returns a half-high ball with less spin, which the speaker presents as an attacking opportunity.
+  reason: The described soft-touch return creates the attacking opportunity in this example.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: approved
+  source: {video_id: leQBUn8-4tw, start_ms: 191833, end_ms: 200466, url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=191s", segment_ids: ["leQBUn8-4tw:00039", "leQBUn8-4tw:00040"]}
+- id: plan-the-next-attack-4
+  evidence_type: explanation
+  excerpt: The speaker treats aces as a bonus and calls the best serve one that sets up the server’s strongest attack.
+  reason: The serve is judged by the follow-up attack it sets up.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: leQBUn8-4tw
+    start_ms: 278600
+    end_ms: 301266
+    url: https://www.youtube.com/watch?v=leQBUn8-4tw&t=278s
+    segment_ids:
+    - leQBUn8-4tw:00060
+    - leQBUn8-4tw:00061
+    - leQBUn8-4tw:00062
+    - leQBUn8-4tw:00063
+    - leQBUn8-4tw:00064
+- id: choose-for-player-strengths-5
+  evidence_type: explanation
+  excerpt: With natural brushing feel and a consistent backspin loop, the lesson recommends practicing sidespin-backspin serves. With stronger topspin rallies and good footwork, it recommends focusing on topspin serves.
+  reason: 'The two serve choices depend on different server strengths: brushing and backspin looping versus topspin rallies and footwork.'
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: leQBUn8-4tw
+    start_ms: 365833
+    end_ms: 380066
+    url: https://www.youtube.com/watch?v=leQBUn8-4tw&t=365s
+    segment_ids:
+    - leQBUn8-4tw:00080
+    - leQBUn8-4tw:00081
+    - leQBUn8-4tw:00082
+    - leQBUn8-4tw:00083
+- id: I-_3TIjU4qI-candidate-side-topspin-serve-too-attackable-1
+  evidence_type: explanation
+  excerpt: The speaker calls sidespin-topspin serves easy to attack and prefers half-spin or no-spin, describing a low, short no-spin serve as difficult to generate power from.
+  reason: The lesson favors a low, short no-spin option over an easily attacked sidespin-topspin serve in this comparison.
+  confidence: 0.76
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: I-_3TIjU4qI
+    start_ms: 62200
+    end_ms: 79240
+    url: "https://www.youtube.com/watch?v=I-_3TIjU4qI&t=62s"
+    segment_ids:
+    - "I-_3TIjU4qI:00030"
+    - "I-_3TIjU4qI:00031"
+    - "I-_3TIjU4qI:00032"
+    - "I-_3TIjU4qI:00033"
+    - "I-_3TIjU4qI:00034"
+    - "I-_3TIjU4qI:00035"
+- id: I-_3TIjU4qI-candidate-side-topspin-serve-too-attackable-2
+  evidence_type: explanation
+  excerpt: The lesson says sidespin-topspin bounces up and long, letting the opponent find the peak and attack. It calls this spin a poor choice for a third-ball attack against backspin.
+  reason: The warning is tied to the stated plan of attacking backspin on the third ball.
+  confidence: 0.89
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: I-_3TIjU4qI
+    start_ms: 77640
+    end_ms: 93880
+    url: "https://www.youtube.com/watch?v=I-_3TIjU4qI&t=77s"
+    segment_ids:
+    - "I-_3TIjU4qI:00036"
+    - "I-_3TIjU4qI:00037"
+    - "I-_3TIjU4qI:00038"
+    - "I-_3TIjU4qI:00039"
+    - "I-_3TIjU4qI:00040"
+    - "I-_3TIjU4qI:00041"
+    - "I-_3TIjU4qI:00042"
+- id: XlGnK1z_7C0-concept-serve-selection-and-follow-up-reviewed
+  evidence_type: explanation
+  excerpt: Choosing a serve based on the opponent and deciding the next action if the return is controlled or dangerous.
+  reason: The speaker describes choosing serve targets and patterns based on the opponent's likely response, and switching plans when the follow-up is disadvantageous.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: XlGnK1z_7C0
+    start_ms: 210560
+    end_ms: 232280
+    url: https://www.youtube.com/watch?v=XlGnK1z_7C0&t=210s
+    segment_ids:
+    - XlGnK1z_7C0:00090
+    - XlGnK1z_7C0:00091
+    - XlGnK1z_7C0:00092
+    - XlGnK1z_7C0:00093
+    - XlGnK1z_7C0:00094
+    - XlGnK1z_7C0:00095
+    - XlGnK1z_7C0:00096
+    - XlGnK1z_7C0:00097
+    - XlGnK1z_7C0:00098
+- id: OMgoeirhpyc-concept-serve-selection-and-follow-up-reviewed
+  evidence_type: explanation
+  excerpt: Choosing a serve based on the opponent and planning the next ball immediately after serve contact.
+  reason: The speaker tells the player not to serve too spinny, to serve half-spin or no-spin against a flat push, and repeatedly criticizes passive serve follow-up, emphasizing what comes after the serve.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: OMgoeirhpyc
+    start_ms: 331080
+    end_ms: 351400
+    url: https://www.youtube.com/watch?v=OMgoeirhpyc&t=331s
+    segment_ids:
+    - OMgoeirhpyc:00110
+    - OMgoeirhpyc:00111
+    - OMgoeirhpyc:00112
+    - OMgoeirhpyc:00113
+    - OMgoeirhpyc:00114
+    - OMgoeirhpyc:00115
+    - OMgoeirhpyc:00116
+    - OMgoeirhpyc:00117
+- id: Dj-oOxwQn1s-concept-serve-selection-and-follow-up-reviewed
+  evidence_type: explanation
+  excerpt: Serve choices should be adjusted for deception, spin level, and the opponent's reading ability, including choosing when to trade off spin for disguise.
+  reason: The speaker explicitly recommends maximizing spin against poor readers, but sacrificing spin or speed for deception against strong readers.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Dj-oOxwQn1s
+    start_ms: 548000
+    end_ms: 561920
+    url: https://www.youtube.com/watch?v=Dj-oOxwQn1s&t=548s
+    segment_ids:
+    - Dj-oOxwQn1s:00204
+    - Dj-oOxwQn1s:00205
+    - Dj-oOxwQn1s:00206
+    - Dj-oOxwQn1s:00207
+    - Dj-oOxwQn1s:00208
+- id: ODwFaYDY1co-concept-serve-selection-and-follow-up-reviewed
+  evidence_type: explanation
+  excerpt: Choosing serve length and spin with the next ball in mind, including how the serve should set up the follow-up attack or recovery position.
+  reason: The speaker contrasts short and long serves, describes the intended next ball, and says you need to know what your next intention is after serving short or long.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ODwFaYDY1co
+    start_ms: 280080
+    end_ms: 289320
+    url: https://www.youtube.com/watch?v=ODwFaYDY1co&t=280s
+    segment_ids:
+    - ODwFaYDY1co:00115
+    - ODwFaYDY1co:00117
+- id: Dj-oOxwQn1s-concept-serve-selection-and-follow-up-reviewed-7f45eae6
+  evidence_type: explanation
+  excerpt: Serve choices should be adjusted for deception, spin level, and the opponent's reading ability, including choosing when to trade off spin for disguise.
+  reason: The speaker explicitly recommends maximizing spin against poor readers, but sacrificing spin or speed for deception against strong readers.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Dj-oOxwQn1s
+    start_ms: 548000
+    end_ms: 561920
+    url: https://www.youtube.com/watch?v=Dj-oOxwQn1s&t=548s
+    segment_ids:
+    - Dj-oOxwQn1s:00204
+    - Dj-oOxwQn1s:00205
+    - Dj-oOxwQn1s:00206
+    - Dj-oOxwQn1s:00207
+    - Dj-oOxwQn1s:00208
+- id: ODwFaYDY1co-concept-serve-selection-and-follow-up-reviewed-4e9be61e
+  evidence_type: explanation
+  excerpt: Choosing serve length and spin with the next ball in mind, including how the serve should set up the follow-up attack or recovery position.
+  reason: The speaker contrasts short and long serves, describes the intended next ball, and says you need to know what your next intention is after serving short or long.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ODwFaYDY1co
+    start_ms: 280080
+    end_ms: 289320
+    url: https://www.youtube.com/watch?v=ODwFaYDY1co&t=280s
+    segment_ids:
+    - ODwFaYDY1co:00115
+    - ODwFaYDY1co:00117
+- id: PDFXww03DHM-concept-serve-selection-and-follow-up-reviewed
+  evidence_type: explanation
+  excerpt: Choose a serve with the intended spin and recovery pattern so the follow-up ball can be attacked or controlled more effectively.
+  reason: Hook serve and left sidespin serve are both discussed as patterns finished inside the table, indicating planned serve choice with follow-up intent.
+  confidence: 0.86
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: PDFXww03DHM
+    start_ms: 241600
+    end_ms: 251640
+    url: https://www.youtube.com/watch?v=PDFXww03DHM&t=241s
+    segment_ids:
+    - PDFXww03DHM:00070
+    - PDFXww03DHM:00071
+    - PDFXww03DHM:00072
+- id: oLxdGO8TY8s-cand-7-reviewed
+  evidence_type: explanation
+  excerpt: Choosing a serve to shape the next ball and planning the immediate follow-up shot accordingly.
+  reason: The speaker describes planning before serving and anticipating whether the next ball will go to the backhand or forehand, then choosing the follow-up shot.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: oLxdGO8TY8s
+    start_ms: 386720
+    end_ms: 413240
+    url: https://www.youtube.com/watch?v=oLxdGO8TY8s&t=386s
+    segment_ids:
+    - oLxdGO8TY8s:00150
+    - oLxdGO8TY8s:00151
+    - oLxdGO8TY8s:00152
+    - oLxdGO8TY8s:00153
+    - oLxdGO8TY8s:00154
+    - oLxdGO8TY8s:00155
+    - oLxdGO8TY8s:00156
+    - oLxdGO8TY8s:00157
+    - oLxdGO8TY8s:00158
+    - oLxdGO8TY8s:00159
+    - oLxdGO8TY8s:00160
+- id: TWv2MUl_64Q-concept-serve-selection-and-follow-up-reviewed
+  evidence_type: explanation
+  excerpt: Planning a serve around where the return is likely to go and preparing the next attack immediately after the serve.
+  reason: The speaker frames the lesson as attacking the serve return, choosing placement/speed, and coordinating the serve with the follow-up attack.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: TWv2MUl_64Q
+    start_ms: 104900
+    end_ms: 127166
+    url: https://www.youtube.com/watch?v=TWv2MUl_64Q&t=104s
+    segment_ids:
+    - TWv2MUl_64Q:00023
+    - TWv2MUl_64Q:00024
+    - TWv2MUl_64Q:00025
+    - TWv2MUl_64Q:00027
+    - TWv2MUl_64Q:00028
+- id: 4C5EE15fTvw-concept-serve-selection-and-follow-up-reviewed
+  evidence_type: explanation
+  excerpt: Choosing serve quality and placement to shape the opponent's return, then preparing the next stroke based on that return quality.
+  reason: The speaker says the pause point depends on the opponent's return quality and that improving serve spin and placement can force passive handling.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 4C5EE15fTvw
+    start_ms: 527920
+    end_ms: 541480
+    url: https://www.youtube.com/watch?v=4C5EE15fTvw&t=527s
+    segment_ids:
+    - 4C5EE15fTvw:00218
+    - 4C5EE15fTvw:00219
+    - 4C5EE15fTvw:00220
+    - 4C5EE15fTvw:00221
+    - 4C5EE15fTvw:00222
+- id: U-z4PamhiUE-concept-serve-selection-and-follow-up-reviewed
+  evidence_type: explanation
+  excerpt: Selecting a serve with a planned next ball so the serve and follow-up attack work together.
+  reason: The speaker says a good serve must be paired with a third-ball attack and gives examples of serving to specific locations with an intended next ball.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: U-z4PamhiUE
+    start_ms: 258519
+    end_ms: 281000
+    url: https://www.youtube.com/watch?v=U-z4PamhiUE&t=258s
+    segment_ids:
+    - U-z4PamhiUE:00117
+    - U-z4PamhiUE:00118
+    - U-z4PamhiUE:00119
+    - U-z4PamhiUE:00120
+    - U-z4PamhiUE:00121
+    - U-z4PamhiUE:00122
+    - U-z4PamhiUE:00123
+    - U-z4PamhiUE:00124
+    - U-z4PamhiUE:00125
+- id: q5sJuWPXRgo-concept-serve-selection-and-follow-up-reviewed
+  evidence_type: explanation
+  excerpt: Choose a serve based on your own reliability and the expected follow-up ball, especially in key points.
+  reason: The speaker compares serve options by reliability and the ability to handle the return, then chooses a serve that creates a manageable next ball.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: q5sJuWPXRgo
+    start_ms: 111033
+    end_ms: 122333
+    url: https://www.youtube.com/watch?v=q5sJuWPXRgo&t=111s
+    segment_ids:
+    - q5sJuWPXRgo:00057
+    - q5sJuWPXRgo:00058
+    - q5sJuWPXRgo:00059
+    - q5sJuWPXRgo:00060
+    - q5sJuWPXRgo:00061
+- id: rdMkkX_p7e0-concept-serve-selection-and-follow-up-reviewed
+  evidence_type: explanation
+  excerpt: Choosing serves intentionally based on the intended follow-up and the opponent's likely return.
+  reason: The speaker emphasizes deciding what return to create and then looking for the opportunity to attack.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: rdMkkX_p7e0
+    start_ms: 409466
+    end_ms: 414866
+    url: https://www.youtube.com/watch?v=rdMkkX_p7e0&t=409s
+    segment_ids:
+    - rdMkkX_p7e0:00144
+    - rdMkkX_p7e0:00146
+- id: rZY_SUer7Aw-concept-serve-selection-and-follow-up-reviewed
+  evidence_type: explanation
+  excerpt: Choose a serve with a planned follow-up based on the serve type and the expected next ball.
+  reason: 'The speaker links serve type to the next action: topspin serve leads to attack, backspin leads to loop or push.'
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: rZY_SUer7Aw
+    start_ms: 177700
+    end_ms: 193466
+    url: https://www.youtube.com/watch?v=rZY_SUer7Aw&t=177s
+    segment_ids:
+    - rZY_SUer7Aw:00066
+    - rZY_SUer7Aw:00067
+    - rZY_SUer7Aw:00068
+    - rZY_SUer7Aw:00069
+    - rZY_SUer7Aw:00070
+    - rZY_SUer7Aw:00071
+    - rZY_SUer7Aw:00072
+    - rZY_SUer7Aw:00073
+    - rZY_SUer7Aw:00074
+- id: XOwwV9tTiQ8-concept-serve-selection-and-follow-up-reviewed
+  evidence_type: explanation
+  excerpt: 'Planning serves as a sequence: choose a serve to create a specific response, then prepare the next attack immediately after the serve.'
+  reason: The speaker explicitly says every serve must prepare for the next shot and to combine serve patterns with previous ones.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: XOwwV9tTiQ8
+    start_ms: 474500
+    end_ms: 479000
+    url: https://www.youtube.com/watch?v=XOwwV9tTiQ8&t=474s
+    segment_ids:
+    - XOwwV9tTiQ8:00161
+    - XOwwV9tTiQ8:00162
+- id: GOAyEFoSibE-concept-serve-selection-and-follow-up-reviewed
+  evidence_type: definition
+  excerpt: Choosing serves based on your own attacking style and the follow-up options they create.
+  reason: The speaker says serves should be chosen according to attacking capability and style, with follow-up effects on flicks, pushes, and attacks.
+  confidence: 0.93
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: GOAyEFoSibE
+    start_ms: 190000
+    end_ms: 213066
+    url: https://www.youtube.com/watch?v=GOAyEFoSibE&t=190s
+    segment_ids:
+    - GOAyEFoSibE:00042
+    - GOAyEFoSibE:00043
+    - GOAyEFoSibE:00044
+    - GOAyEFoSibE:00045
+    - GOAyEFoSibE:00046
+- id: zMrQvj_bji4-concept-serve-selection-and-follow-up-reviewed
+  evidence_type: explanation
+  excerpt: Choosing serve type and intensity based on court position, target length, and follow-up control after the serve.
+  reason: The speaker ties serve choice to baseline, near-table, and mid-table positions and emphasizes serve quality, follow-up, and control over simply getting the ball over the net.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: zMrQvj_bji4
+    start_ms: 187000
+    end_ms: 214266
+    url: https://www.youtube.com/watch?v=zMrQvj_bji4&t=187s
+    segment_ids:
+    - zMrQvj_bji4:00046
+    - zMrQvj_bji4:00047
+    - zMrQvj_bji4:00048
+    - zMrQvj_bji4:00052
+- id: EMHCC5XbkvY-c8-reviewed
+  evidence_type: explanation
+  excerpt: Choosing the serve based on the intended follow-up, then reacting differently depending on whether the return is a flick or a push.
+  reason: The speaker states that at pro level the serve is used to force a weak push and then attack, and that follow-up changes based on the return type.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: EMHCC5XbkvY
+    start_ms: 586233
+    end_ms: 607166
+    url: https://www.youtube.com/watch?v=EMHCC5XbkvY&t=586s
+    segment_ids:
+    - EMHCC5XbkvY:00126
+    - EMHCC5XbkvY:00129
+- id: a9wtW1BV-6M-concept-serve-selection-and-follow-up-reviewed
+  evidence_type: explanation
+  excerpt: Choosing serve types based on the game plan, then sequencing follow-up serves to shape the opponent's response and open later attacks.
+  reason: 'The speaker lays out serve sequencing: start with backspin to set up topspin, use short or long serves first depending on the intended attack, and use opening serves to control focus rather than as the main strategy.'
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: a9wtW1BV-6M
+    start_ms: 427100
+    end_ms: 454066
+    url: https://www.youtube.com/watch?v=a9wtW1BV-6M&t=427s
+    segment_ids:
+    - a9wtW1BV-6M:00085
+    - a9wtW1BV-6M:00088
+    - a9wtW1BV-6M:00089
+    - a9wtW1BV-6M:00090
+    - a9wtW1BV-6M:00091
+- id: VQlnNbgMmR8-concept-serve-selection-and-follow-up-reviewed
+  evidence_type: explanation
+  excerpt: The idea that serve choice and the serve itself are central because the server controls the shot and can use the next ball to attack.
+  reason: The speaker explicitly says the serve and receive are the two crucial skills, then states the serve is the most important and that it sets up the attack.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: VQlnNbgMmR8
+    start_ms: 8333
+    end_ms: 25066
+    url: https://www.youtube.com/watch?v=VQlnNbgMmR8&t=8s
+    segment_ids:
+    - VQlnNbgMmR8:00002
+    - VQlnNbgMmR8:00004
+- id: pQcxGOu4wEE-concept-serve-selection-and-follow-up-reviewed
+  evidence_type: explanation
+  excerpt: 'Serve choices should be staged across the match: use conventional backspin early, then introduce the deceptive topspin version at key points after setting it up.'
+  reason: The speaker recommends using the deceptive serve only at crucial points after establishing the backspin motion first, which is serve sequencing and follow-up planning.
+  confidence: 0.88
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: pQcxGOu4wEE
+    start_ms: 753700
+    end_ms: 778966
+    url: https://www.youtube.com/watch?v=pQcxGOu4wEE&t=753s
+    segment_ids:
+    - pQcxGOu4wEE:00158
+    - pQcxGOu4wEE:00159
+    - pQcxGOu4wEE:00160
+    - pQcxGOu4wEE:00161
+    - pQcxGOu4wEE:00162
+- id: Pym9pNWaowA-concept-serve-selection-and-follow-up-reviewed
+  evidence_type: example
+  excerpt: Planning serve placements and sequences to create a tactical advantage on the next ball.
+  reason: The speaker frames placement as the final element and gives explicit serve sequences that set up the next ball tactically.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: Pym9pNWaowA
+    start_ms: 846433
+    end_ms: 873666
+    url: https://www.youtube.com/watch?v=Pym9pNWaowA&t=846s
+    segment_ids:
+    - Pym9pNWaowA:00135
+    - Pym9pNWaowA:00136
+    - Pym9pNWaowA:00137
+    - Pym9pNWaowA:00138
+- id: IHQASHkdLYk-concept-serve-selection-and-follow-up-reviewed
+  evidence_type: explanation
+  excerpt: Planning the serve to shape the likely return and prepare the next attack.
+  reason: The speaker explains serving with a purpose, deciding the likely return location, and then already planning the attack as a three-ball sequence.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: IHQASHkdLYk
+    start_ms: 17200
+    end_ms: 40533
+    url: https://www.youtube.com/watch?v=IHQASHkdLYk&t=17s
+    segment_ids:
+    - IHQASHkdLYk:00003
+    - IHQASHkdLYk:00005
+- id: IHQASHkdLYk-concept-serve-selection-and-follow-up-codex-reviewed
+  evidence_type: explanation
+  excerpt: The third-ball sequence is the server’s serve, the opponent’s return and the server’s attack, with the goal of controlling the point from the first shot.
+  reason: The plan connects the serve, the opponent’s return and the server’s next attack.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: IHQASHkdLYk
+    start_ms: 40533
+    end_ms: 53200
+    url: https://www.youtube.com/watch?v=IHQASHkdLYk&t=40s
+    segment_ids:
+    - IHQASHkdLYk:00115
+- id: ODwFaYDY1co-concept-serve-selection-and-follow-up-codex-reviewed
+  evidence_type: explanation
+  excerpt: 'The lesson favors light backspin for third-ball attack because a topspin serve can be flicked. It describes serving short, the opponent stepping forward and the server looping.'
+  reason: This short-serve plan favors light backspin and describes the server’s follow-up loop.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: ODwFaYDY1co
+    start_ms: 12800
+    end_ms: 31800
+    url: https://www.youtube.com/watch?v=ODwFaYDY1co&t=12s
+    segment_ids:
+    - ODwFaYDY1co:00006
+    - ODwFaYDY1co:00007
+    - ODwFaYDY1co:00008
+    - ODwFaYDY1co:00009
+    - ODwFaYDY1co:00010
+    - ODwFaYDY1co:00011
+    - ODwFaYDY1co:00012
 relations:
-  - relation_type: related_to
-    target_concept_id: concept-short-serve-third-ball-attack
-    confidence: 0.98
-    review_status: approved
-    sources: [{video_id: leQBUn8-4tw, start_ms: 278600, end_ms: 301266, url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=278s", segment_ids: ["leQBUn8-4tw:00060", "leQBUn8-4tw:00064"]}]
+- relation_type: related_to
+  target_concept_id: concept-short-serve-third-ball-attack
+  confidence: 0.98
+  review_status: unreviewed
+  sources: [{video_id: leQBUn8-4tw, start_ms: 278600, end_ms: 301266, url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=278s", segment_ids: ["leQBUn8-4tw:00060", "leQBUn8-4tw:00064"]}]

@@ -1,585 +1,576 @@
 id: concept-serve-and-attack-patterns
 slug: serve-and-attack-patterns
-label: Serve-and-attack patterns
+label: Serve and opening-attack patterns
 aliases:
-  - serve and attack sequence
-  - spin-spin-kill pattern
-short_definition: Plan the serve, expected return, opening attack, and finishing ball as one connected point pattern.
+- serve and attack sequence
+- spin-spin-kill pattern
+short_definition: Connecting serves or push placements with the following attack, using source-specific point patterns.
 evidence_summary: >-
-  Serve and attack should be treated as one connected sequence, where the first ball is designed
-  to set up the next two balls rather than end the exchange by itself. A classic pattern is a
-  heavy-spin serve, a heavy-spin third-ball attack, and a power fifth-ball finish, and this
-  sequence is important enough to memorize. The serve must be spinny enough to force a weak
-  return, and the first attack should be decisive and aimed at winning the point rather than
-  merely continuing the rally.
-evidence_summary_source_hash: "sha256:4154a340bd080e87a0051492ab004d2978ed54eb753468418e1ce665f578642b"
-evidence_summary_generator: "codex"
+  One lesson connects serve and attack as a continuous sequence. Its heavy-spin branch uses a heavy-spin serve, heavy-spin third ball and power fifth ball, with enough serve spin to force a push. Its dead- or light-spin branch finishes immediately if the pushed return rises. After a dead serve and high push, the lesson adds footwork and focus to move in. A separate placement example pushes short to the forehand then loops deep to the backhand, or pushes to the backhand then soft-loops to the forehand without maximum power.
 concept_type: tactical-pattern
 facets:
   category:
-    - strategy
-    - serve
-  side:
-    - neutral
-  level:
-    - intermediate
-difficulty: intermediate
+  - strategy
+  - serve
+difficulty:
 review_status: approved
 evidence:
-  - id: Ge6u_cFpfDU-candidate-serve-attack-sequence-1
-    evidence_type: definition
-    excerpt: Treat the serve and the next attacking balls as a planned continuous pattern rather than isolated shots.
-    reason: Introduces serve and attack as one connected sequence and frames the lesson around preserving that connection.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: Ge6u_cFpfDU
-      start_ms: 720
-      end_ms: 9360
-      url: https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=0s
-      segment_ids: &id001
-        - Ge6u_cFpfDU:00000
-        - Ge6u_cFpfDU:00001
-        - Ge6u_cFpfDU:00002
-        - Ge6u_cFpfDU:00003
-  - id: Ge6u_cFpfDU-candidate-serve-attack-sequence-2
-    evidence_type: explanation
-    excerpt: Treat the serve and the next attacking balls as a planned continuous pattern rather than isolated shots.
-    reason: Emphasizes always having a plan for the full sequence after the serve.
-    confidence: 0.89
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: Ge6u_cFpfDU
-      start_ms: 34840
-      end_ms: 40080
-      url: https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=34s
-      segment_ids:
-        - Ge6u_cFpfDU:00013
-        - Ge6u_cFpfDU:00014
-  - id: Ge6u_cFpfDU-candidate-board-sequence-model-1
-    evidence_type: definition
-    excerpt: A counting framework that labels successive balls in the point to organize serve, return, and attack patterns.
-    reason: Defines the numbering model for the first three balls in the sequence.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: Ge6u_cFpfDU
-      start_ms: 9640
-      end_ms: 17760
-      url: https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=9s
-      segment_ids:
-        - Ge6u_cFpfDU:00004
-        - Ge6u_cFpfDU:00005
-        - Ge6u_cFpfDU:00006
-  - id: Ge6u_cFpfDU-candidate-board-sequence-model-2
-    evidence_type: example
-    excerpt: A counting framework that labels successive balls in the point to organize serve, return, and attack patterns.
-    reason: Applies the board count to the 1-3-5 tactical pattern.
-    confidence: 0.78
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: Ge6u_cFpfDU
-      start_ms: 22920
-      end_ms: 30840
-      url: https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=22s
-      segment_ids:
-        - Ge6u_cFpfDU:00009
-        - Ge6u_cFpfDU:00010
-  - id: Ge6u_cFpfDU-candidate-spin-spin-kill-pattern-1
-    evidence_type: definition
-    excerpt: 'A third-ball attack pattern: use heavy spin on the serve, heavy spin on the third ball, then finish with a power attack on the fifth ball.'
-    reason: States the classic pattern of heavy-spin serve, heavy-spin third ball, and power fifth ball.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: Ge6u_cFpfDU
-      start_ms: 18440
-      end_ms: 30840
-      url: https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=18s
-      segment_ids:
-        - Ge6u_cFpfDU:00007
-        - Ge6u_cFpfDU:00008
-        - Ge6u_cFpfDU:00009
-        - Ge6u_cFpfDU:00010
-  - id: Ge6u_cFpfDU-candidate-spin-spin-kill-pattern-2
-    evidence_type: explanation
-    excerpt: 'A third-ball attack pattern: use heavy spin on the serve, heavy spin on the third ball, then finish with a power attack on the fifth ball.'
-    reason: Names this as a reliable tactical formula.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: Ge6u_cFpfDU
-      start_ms: 51440
-      end_ms: 63000
-      url: https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=51s
-      segment_ids:
-        - Ge6u_cFpfDU:00020
-        - Ge6u_cFpfDU:00021
-        - Ge6u_cFpfDU:00022
-        - Ge6u_cFpfDU:00023
-  - id: Ge6u_cFpfDU-candidate-spin-spin-kill-pattern-3
-    evidence_type: explanation
-    excerpt: 'A third-ball attack pattern: use heavy spin on the serve, heavy spin on the third ball, then finish with a power attack on the fifth ball.'
-    reason: Calls the pattern foundational and worth memorizing.
-    confidence: 0.91
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: Ge6u_cFpfDU
-      start_ms: 72680
-      end_ms: 82600
-      url: https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=72s
-      segment_ids:
-        - Ge6u_cFpfDU:00028
-        - Ge6u_cFpfDU:00029
-        - Ge6u_cFpfDU:00030
-  - id: Ge6u_cFpfDU-candidate-force-push-with-spin-serve-1
-    evidence_type: definition
-    excerpt: Use enough spin on the serve to prevent an easy attack and funnel the receiver into a push that sets up your third ball.
-    reason: Explicitly says the first ball should be spinny enough to force a push and create the desired pattern.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: Ge6u_cFpfDU
-      start_ms: 40920
-      end_ms: 50800
-      url: https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=40s
-      segment_ids:
-        - Ge6u_cFpfDU:00015
-        - Ge6u_cFpfDU:00016
-        - Ge6u_cFpfDU:00017
-        - Ge6u_cFpfDU:00018
-        - Ge6u_cFpfDU:00019
-  - id: Ge6u_cFpfDU-candidate-dead-serve-high-push-kill-1
-    evidence_type: definition
-    excerpt: When a low-spin or dead serve draws a high push, attack immediately and decisively on the third ball instead of looping softly.
-    reason: Introduces the dead-serve pathway and says the high push must be killed instantly on the third ball.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: Ge6u_cFpfDU
-      start_ms: 79760
-      end_ms: 91240
-      url: https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=79s
-      segment_ids:
-        - Ge6u_cFpfDU:00031
-        - Ge6u_cFpfDU:00032
-        - Ge6u_cFpfDU:00033
-        - Ge6u_cFpfDU:00034
-  - id: Ge6u_cFpfDU-candidate-dead-serve-high-push-kill-2
-    evidence_type: explanation
-    excerpt: When a low-spin or dead serve draws a high push, attack immediately and decisively on the third ball instead of looping softly.
-    reason: Contrasts decisive finishing with brushing gently and stresses the attacking mindset.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: Ge6u_cFpfDU
-      start_ms: 89000
-      end_ms: 106080
-      url: https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=89s
-      segment_ids:
-        - Ge6u_cFpfDU:00035
-        - Ge6u_cFpfDU:00036
-        - Ge6u_cFpfDU:00037
-        - Ge6u_cFpfDU:00038
-        - Ge6u_cFpfDU:00039
-        - Ge6u_cFpfDU:00040
-  - id: Ge6u_cFpfDU-candidate-dead-serve-high-push-kill-3
-    evidence_type: explanation
-    excerpt: When a low-spin or dead serve draws a high push, attack immediately and decisively on the third ball instead of looping softly.
-    reason: Adds footwork and focus requirements to move in and finish.
-    confidence: 0.89
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: Ge6u_cFpfDU
-      start_ms: 104200
-      end_ms: 116320
-      url: https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=104s
-      segment_ids:
-        - Ge6u_cFpfDU:00041
-        - Ge6u_cFpfDU:00042
-        - Ge6u_cFpfDU:00043
-        - Ge6u_cFpfDU:00044
-        - Ge6u_cFpfDU:00045
-  - id: PFPu_pKZ9TI-concept-serve-and-attack-patterns-reviewed
-    evidence_type: explanation
-    excerpt: Serving with enough spin to create an easier third ball attack, where the serve phase sets up the attack phase.
-    reason: The speaker explains that a spinny serve can force weak returns and that the real problem in failed attacks starts in the serve phase.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: PFPu_pKZ9TI
-      start_ms: 336360
-      end_ms: 365920
-      url: https://www.youtube.com/watch?v=PFPu_pKZ9TI&t=336s
-      segment_ids:
-        - PFPu_pKZ9TI:00123
-        - PFPu_pKZ9TI:00124
-        - PFPu_pKZ9TI:00125
-        - PFPu_pKZ9TI:00126
-        - PFPu_pKZ9TI:00127
-        - PFPu_pKZ9TI:00128
-        - PFPu_pKZ9TI:00129
-        - PFPu_pKZ9TI:00130
-        - PFPu_pKZ9TI:00131
-        - PFPu_pKZ9TI:00132
-        - PFPu_pKZ9TI:00133
-        - PFPu_pKZ9TI:00134
-  - id: XlGnK1z_7C0-concept-serve-and-attack-patterns-reviewed
-    evidence_type: explanation
-    excerpt: Structuring the serve so the next ball can be attacked or transitioned into a planned rally.
-    reason: The transcript explicitly describes the serve, recovery, and movement phases as an attack sequence and discusses using the serve to set up a third-ball attack or rally.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: XlGnK1z_7C0
-      start_ms: 113000
-      end_ms: 138840
-      url: https://www.youtube.com/watch?v=XlGnK1z_7C0&t=113s
-      segment_ids:
-        - XlGnK1z_7C0:00049
-        - XlGnK1z_7C0:00050
-        - XlGnK1z_7C0:00051
-        - XlGnK1z_7C0:00058
-  - id: 7jWqEsHtN3Y-concept-serve-and-attack-patterns-reviewed
-    evidence_type: explanation
-    excerpt: Using a planned sequence of placement and follow-up attacks to gain the initiative after a push or serve.
-    reason: The speaker says placement and tempo variations make the follow-up attack effective and that the first attack should aim to win the point, not just start a rally.
-    confidence: 0.85
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 7jWqEsHtN3Y
-      start_ms: 235200
-      end_ms: 246966
-      url: https://www.youtube.com/watch?v=7jWqEsHtN3Y&t=235s
-      segment_ids:
-        - 7jWqEsHtN3Y:00050
-        - 7jWqEsHtN3Y:00051
-        - 7jWqEsHtN3Y:00052
-  - id: Nj4ivxRAizs-concept-serve-and-attack-patterns-reviewed
-    evidence_type: explanation
-    excerpt: Using the serve to set up a predictable or advantageous next-ball attack.
-    reason: The speaker describes immediate post-serve movement and anticipation as part of the serve sequence.
-    confidence: 0.86
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: Nj4ivxRAizs
-      start_ms: 78533
-      end_ms: 101066
-      url: https://www.youtube.com/watch?v=Nj4ivxRAizs&t=78s
-      segment_ids:
-        - Nj4ivxRAizs:00024
-        - Nj4ivxRAizs:00031
-  - id: q5sJuWPXRgo-concept-serve-and-attack-patterns-reviewed
-    evidence_type: explanation
-    excerpt: Build a point plan from the serve into a favorable third-ball opportunity or a planned follow-up attack.
-    reason: The speaker describes the first two shots in a serve sequence as disruptive and mentions sudden attacks after the serve as turning points.
-    confidence: 0.89
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: q5sJuWPXRgo
-      start_ms: 445033
-      end_ms: 465200
-      url: https://www.youtube.com/watch?v=q5sJuWPXRgo&t=445s
-      segment_ids:
-        - q5sJuWPXRgo:00176
-        - q5sJuWPXRgo:00183
-        - q5sJuWPXRgo:00184
-  - id: xHCH_T6xjcc-concept-serve-and-attack-patterns-reviewed
-    evidence_type: explanation
-    excerpt: Build offense around the serve and plan to attack immediately after the serve or after forcing a weak reply.
-    reason: The speaker describes serving with spin to make the return hard, countering the push, not giving the opponent opportunities, and attacking at the end.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: xHCH_T6xjcc
-      start_ms: 260200
-      end_ms: 277466
-      url: https://www.youtube.com/watch?v=xHCH_T6xjcc&t=260s
-      segment_ids:
-        - xHCH_T6xjcc:00061
-        - xHCH_T6xjcc:00062
-        - xHCH_T6xjcc:00063
-        - xHCH_T6xjcc:00064
-        - xHCH_T6xjcc:00065
-  - id: u2A5PNggIqg-concept-serve-and-attack-patterns-reviewed
-    evidence_type: example
-    excerpt: A tactical sequence in which the player serves or creates spin and then attacks on the next ball or shortly after.
-    reason: The speaker describes looping first, switching to flick if looping fails, and then continuing continuous attacks.
-    confidence: 0.88
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: u2A5PNggIqg
-      start_ms: 859366
-      end_ms: 865133
-      url: https://www.youtube.com/watch?v=u2A5PNggIqg&t=859s
-      segment_ids:
-        - u2A5PNggIqg:00231
-        - u2A5PNggIqg:00232
-        - u2A5PNggIqg:00233
-  - id: T5hgo9D7c7A-concept-serve-and-attack-patterns-reviewed
-    evidence_type: explanation
-    excerpt: Using a strong serve to force a weak return that can be attacked immediately afterward.
-    reason: The speaker says weak returns off the hook serve can be attacked directly.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: T5hgo9D7c7A
-      start_ms: 616766
-      end_ms: 623600
-      url: https://www.youtube.com/watch?v=T5hgo9D7c7A&t=616s
-      segment_ids:
-        - T5hgo9D7c7A:00137
-        - T5hgo9D7c7A:00138
-  - id: uL8In-_NToM-concept-serve-and-attack-patterns-reviewed
-    evidence_type: definition
-    excerpt: A sequence where the serve is designed to create a strong next-ball attack opportunity.
-    reason: The speaker explicitly frames the lesson as 'serve and attack' and says the goal is to win the point on the next shot.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: uL8In-_NToM
-      start_ms: 11333
-      end_ms: 18733
-      url: https://www.youtube.com/watch?v=uL8In-_NToM&t=11s
-      segment_ids:
-        - uL8In-_NToM:00003
-        - uL8In-_NToM:00004
-  - id: q70a9LCojco-concept-serve-and-attack-pattern-reviewed
-    evidence_type: example
-    excerpt: A scoring pattern where serve quality leads into an immediate attack and can produce many points.
-    reason: The speaker cites a match where serve-and-attack won six points versus two, showing it as an effective pattern.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: q70a9LCojco
-      start_ms: 68366
-      end_ms: 77133
-      url: https://www.youtube.com/watch?v=q70a9LCojco&t=68s
-      segment_ids:
-        - q70a9LCojco:00017
-        - q70a9LCojco:00018
-  - id: OQ7fB6yS8Fk-concept-serve-and-attack-patterns-reviewed
-    evidence_type: definition
-    excerpt: A strategy where the player uses the serve to create a favorable return and then attacks the next ball.
-    reason: The speaker explicitly introduces serve and attack, explains setting up an attack with the serve, and names the serve-and-attack offense.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: OQ7fB6yS8Fk
-      start_ms: 445600
-      end_ms: 451433
-      url: https://www.youtube.com/watch?v=OQ7fB6yS8Fk&t=445s
-      segment_ids:
-        - OQ7fB6yS8Fk:00100
-  - id: 2HMLpiaJLL0-concept-serve-and-attack-patterns-reviewed
-    evidence_type: explanation
-    excerpt: A tactical sequence in which serve quality and placement are used to create an advantage for the immediate follow-up attack.
-    reason: The speaker directly discusses serve-to-third-ball attacking behavior and warns that a weak receive can be punished immediately on the third ball.
-    confidence: 0.89
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 2HMLpiaJLL0
-      start_ms: 435933
-      end_ms: 442466
-      url: https://www.youtube.com/watch?v=2HMLpiaJLL0&t=435s
-      segment_ids:
-        - 2HMLpiaJLL0:00091
-  - id: lXTZ5lpaWXE-concept-serve-as-setup-for-attack-reviewed
-    evidence_type: definition
-    excerpt: A serve should be designed to prepare the next attack rather than aim only for an outright point.
-    reason: The speaker says an effective serve sets up the next attack and should complement follow-up patterns.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: lXTZ5lpaWXE
-      start_ms: 331366
-      end_ms: 361000
-      url: https://www.youtube.com/watch?v=lXTZ5lpaWXE&t=331s
-      segment_ids:
-        - lXTZ5lpaWXE:00072
-        - lXTZ5lpaWXE:00073
-        - lXTZ5lpaWXE:00074
-        - lXTZ5lpaWXE:00075
-        - lXTZ5lpaWXE:00076
-        - lXTZ5lpaWXE:00077
-        - lXTZ5lpaWXE:00078
-  - id: z8-8IXQ-GaU-concept-serve-and-attack-patterns-reviewed
-    evidence_type: explanation
-    excerpt: Building an opening serve to transition directly into an attack or topspin rally instead of staying in a passive push exchange.
-    reason: The speaker recommends a sidespin-topspin serve because it creates an immediate topspin rally and supports a proactive serve-and-attack game.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: z8-8IXQ-GaU
-      start_ms: 21500
-      end_ms: 49000
-      url: https://www.youtube.com/watch?v=z8-8IXQ-GaU&t=21s
-      segment_ids:
-        - z8-8IXQ-GaU:00004
-        - z8-8IXQ-GaU:00005
-        - z8-8IXQ-GaU:00006
-        - z8-8IXQ-GaU:00007
-        - z8-8IXQ-GaU:00008
-        - z8-8IXQ-GaU:00009
-  - id: bmK4umFK2Gs-concept-serve-and-attack-patterns-reviewed
-    evidence_type: definition
-    excerpt: A planned sequence after serve that links the serve to an intended follow-up attack.
-    reason: The speaker explicitly frames the lesson as serve-and-attack tactics and stresses having a clear post-serve plan with a defined third-ball attack.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: bmK4umFK2Gs
-      start_ms: 15000
-      end_ms: 23566
-      url: https://www.youtube.com/watch?v=bmK4umFK2Gs&t=15s
-      segment_ids:
-        - bmK4umFK2Gs:00002
-        - bmK4umFK2Gs:00003
-  - id: rOMRGvlgAAU-concept-serve-and-attack-patterns-reviewed
-    evidence_type: definition
-    excerpt: A pattern where the server immediately prepares to attack the next ball after serving.
-    reason: The speaker explicitly says to practice the serve and attack sequence and asks where the issue is in that sequence.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: rOMRGvlgAAU
-      start_ms: 0
-      end_ms: 8866
-      url: https://www.youtube.com/watch?v=rOMRGvlgAAU&t=0s
-      segment_ids:
-        - rOMRGvlgAAU:00000
-        - rOMRGvlgAAU:00001
-  - id: xWE01GQepLE-concept-serve-and-attack-patterns-reviewed
-    evidence_type: explanation
-    excerpt: Serve placement and disguise are used to create a follow-up attack, especially on critical points.
-    reason: The speaker says the deceptive serve wins easy points and explicitly links short backhand corner placement to serve-and-attack play.
-    confidence: 0.91
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: xWE01GQepLE
-      start_ms: 741166
-      end_ms: 754700
-      url: https://www.youtube.com/watch?v=xWE01GQepLE&t=741s
-      segment_ids:
-        - xWE01GQepLE:00154
-        - xWE01GQepLE:00156
-  - id: YKuNt_fynhY-concept-serve-and-attack-patterns-reviewed
-    evidence_type: explanation
-    excerpt: Link serve, placement change, and an immediate attacking follow-up into a tactical sequence.
-    reason: The transcript frames serve follow-up as a tactical sequence and warns that isolated techniques fail without combination patterns.
-    confidence: 0.87
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: YKuNt_fynhY
-      start_ms: 843933
-      end_ms: 866900
-      url: https://www.youtube.com/watch?v=YKuNt_fynhY&t=843s
-      segment_ids:
-        - YKuNt_fynhY:00182
-        - YKuNt_fynhY:00183
-        - YKuNt_fynhY:00184
-        - YKuNt_fynhY:00185
-  - id: WuWV6MlZQ_Q-concept-serve-and-attack-patterns-reviewed
-    evidence_type: explanation
-    excerpt: A tactical sequence where serve quality and immediate follow-up attack are linked as a scoring pattern.
-    reason: The speaker frames forehand attack against backspin within the serve-and-attack phase and repeatedly recommends serving short and attacking the return.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: WuWV6MlZQ_Q
-      start_ms: 66366
-      end_ms: 72233
-      url: https://www.youtube.com/watch?v=WuWV6MlZQ_Q&t=66s
-      segment_ids:
-        - WuWV6MlZQ_Q:00014
-  - id: U1zg0xsCqMc-concept-serve-and-attack-patterns-reviewed
-    evidence_type: explanation
-    excerpt: A tactical structure where the serve is chosen together with a planned third-ball response.
-    reason: Explicitly states that serve and third ball must be linked, with a plan for the next ball, which distinguishes match tactics from random hitting.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: U1zg0xsCqMc
-      start_ms: 108840
-      end_ms: 121240
-      url: https://www.youtube.com/watch?v=U1zg0xsCqMc&t=108s
-      segment_ids:
-        - U1zg0xsCqMc:00047
-        - U1zg0xsCqMc:00048
-        - U1zg0xsCqMc:00049
-        - U1zg0xsCqMc:00050
-        - U1zg0xsCqMc:00051
-  - id: 7jWqEsHtN3Y-concept-serve-and-attack-patterns-codex-reviewed
-    evidence_type: explanation
-    excerpt: Your first attack should be to win the point, not just to start a topspin rally. You must force movement—for example, push short to their forehand, then loop deep to their backhand, or push to their backhand and follow up with a soft loop to their forehand.
-    reason: These contiguous segments directly explain using planned placement and follow-up attacks after a push to force movement and make the first attack decisive. The supplied concept is the same durable serve-and-attack pattern topic.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 7jWqEsHtN3Y
-      start_ms: 295033
-      end_ms: 315566
-      url: https://www.youtube.com/watch?v=7jWqEsHtN3Y&t=295s
-      segment_ids:
-        - 7jWqEsHtN3Y:00065
-        - 7jWqEsHtN3Y:00066
-        - 7jWqEsHtN3Y:00067
-        - 7jWqEsHtN3Y:00068
-        - 7jWqEsHtN3Y:00069
-  - id: IHQASHkdLYk-concept-third-ball-attack-codex-reviewed
-    evidence_type: definition
-    excerpt: 'The third-ball attack sequence is: your serve, their return, then your attack, with the goal of controlling the point from the first shot.'
-    reason: Segment IHQASHkdLYk:00115 explicitly defines the serve-and-attack sequence and its tactical goal, matching the existing serve-and-attack patterns concept.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: IHQASHkdLYk
-      start_ms: 40533
-      end_ms: 53200
-      url: https://www.youtube.com/watch?v=IHQASHkdLYk&t=40s
-      segment_ids:
-        - IHQASHkdLYk:00115
+- id: Ge6u_cFpfDU-candidate-serve-attack-sequence-1
+  evidence_type: definition
+  excerpt: The speaker treats serve and attack as one continuous sequence and asks why players lose the connection between the serve and next shot.
+  reason: The stated principle connects the serve with the next shot.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: Ge6u_cFpfDU
+    start_ms: 720
+    end_ms: 9360
+    url: https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=0s
+    segment_ids: &id001
+    - Ge6u_cFpfDU:00000
+    - Ge6u_cFpfDU:00001
+    - Ge6u_cFpfDU:00002
+    - Ge6u_cFpfDU:00003
+- id: Ge6u_cFpfDU-candidate-serve-attack-sequence-2
+  evidence_type: explanation
+  excerpt: After a dead serve, attack a push and respond to a flick; the speaker says always to have a plan for the sequence.
+  reason: The post-serve plan distinguishes a pushed return from a flicked return.
+  confidence: 0.89
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: Ge6u_cFpfDU
+    start_ms: 31440
+    end_ms: 40080
+    url: https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=31s
+    segment_ids:
+    - Ge6u_cFpfDU:00011
+    - Ge6u_cFpfDU:00012
+    - Ge6u_cFpfDU:00013
+    - Ge6u_cFpfDU:00014
+- id: Ge6u_cFpfDU-candidate-board-sequence-model-1
+  evidence_type: definition
+  excerpt: In the lesson’s count, the serve is board one, the opponent’s return board two and the server’s loop board three.
+  reason: The board count labels the serve, return and next loop.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: Ge6u_cFpfDU
+    start_ms: 9640
+    end_ms: 17760
+    url: https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=9s
+    segment_ids:
+    - Ge6u_cFpfDU:00004
+    - Ge6u_cFpfDU:00005
+    - Ge6u_cFpfDU:00006
+- id: Ge6u_cFpfDU-candidate-board-sequence-model-2
+  evidence_type: example
+  excerpt: 'The speaker names the sequence “1, 3, 5: spin, spin, kill,” ending with a power drive on board five.'
+  reason: The stated sequence ends with a fifth-ball power drive.
+  confidence: 0.78
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: Ge6u_cFpfDU
+    start_ms: 22920
+    end_ms: 30840
+    url: https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=22s
+    segment_ids:
+    - Ge6u_cFpfDU:00009
+    - Ge6u_cFpfDU:00010
+- id: Ge6u_cFpfDU-candidate-spin-spin-kill-pattern-1
+  evidence_type: definition
+  excerpt: 'The lesson’s classic pattern is a heavy-spin serve, the opponent’s push, a heavy-spin third-ball loop and a fifth-ball power drive.'
+  reason: This pattern assigns heavy spin to serve and third ball, then power to the fifth.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: Ge6u_cFpfDU
+    start_ms: 18440
+    end_ms: 30840
+    url: https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=18s
+    segment_ids:
+    - Ge6u_cFpfDU:00007
+    - Ge6u_cFpfDU:00008
+    - Ge6u_cFpfDU:00009
+    - Ge6u_cFpfDU:00010
+- id: Ge6u_cFpfDU-candidate-spin-spin-kill-pattern-2
+  evidence_type: explanation
+  excerpt: 'The speaker calls heavy spin on the first and third balls followed by a fifth-ball finish a reliable “spin, spin, explode” pattern.'
+  reason: The reliability claim belongs to this lesson’s heavy-spin pattern.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: Ge6u_cFpfDU
+    start_ms: 51440
+    end_ms: 63000
+    url: https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=51s
+    segment_ids:
+    - Ge6u_cFpfDU:00020
+    - Ge6u_cFpfDU:00021
+    - Ge6u_cFpfDU:00022
+    - Ge6u_cFpfDU:00023
+- id: Ge6u_cFpfDU-candidate-spin-spin-kill-pattern-3
+  evidence_type: explanation
+  excerpt: 'The speaker calls “spin, spin, kill” a foundational tactical formula and says to memorize it.'
+  reason: The lesson recommends remembering its spin-spin-kill sequence.
+  confidence: 0.91
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: Ge6u_cFpfDU
+    start_ms: 72680
+    end_ms: 82600
+    url: https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=72s
+    segment_ids:
+    - Ge6u_cFpfDU:00028
+    - Ge6u_cFpfDU:00029
+    - Ge6u_cFpfDU:00030
+- id: Ge6u_cFpfDU-candidate-force-push-with-spin-serve-1
+  evidence_type: definition
+  excerpt: For this branch, the serve must be spinny enough to force a push; the speaker warns that an opponent attack on the serve breaks the transition.
+  reason: This serve-spin requirement belongs to the push-forcing branch of the pattern.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: Ge6u_cFpfDU
+    start_ms: 40920
+    end_ms: 50800
+    url: https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=40s
+    segment_ids:
+    - Ge6u_cFpfDU:00015
+    - Ge6u_cFpfDU:00016
+    - Ge6u_cFpfDU:00017
+    - Ge6u_cFpfDU:00018
+    - Ge6u_cFpfDU:00019
+- id: Ge6u_cFpfDU-candidate-dead-serve-high-push-kill-1
+  evidence_type: definition
+  excerpt: After a dead or light-spin serve, if the opponent pushes and the ball rises, the lesson calls for an immediate third-ball finish without hesitation.
+  reason: The immediate finish is conditional on a pushed return rising after a dead or light-spin serve.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: Ge6u_cFpfDU
+    start_ms: 79760
+    end_ms: 91240
+    url: https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=79s
+    segment_ids:
+    - Ge6u_cFpfDU:00031
+    - Ge6u_cFpfDU:00032
+    - Ge6u_cFpfDU:00033
+    - Ge6u_cFpfDU:00034
+- id: Ge6u_cFpfDU-candidate-dead-serve-high-push-kill-2
+  evidence_type: explanation
+  excerpt: For a high push after a dead serve, the speaker calls for a decisive attack rather than a soft loop or gentle brush.
+  reason: The attacking cue is tied to a high push after a dead serve.
+  confidence: 0.93
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: Ge6u_cFpfDU
+    start_ms: 89000
+    end_ms: 106080
+    url: https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=89s
+    segment_ids:
+    - Ge6u_cFpfDU:00035
+    - Ge6u_cFpfDU:00036
+    - Ge6u_cFpfDU:00037
+    - Ge6u_cFpfDU:00038
+    - Ge6u_cFpfDU:00039
+    - Ge6u_cFpfDU:00040
+- id: Ge6u_cFpfDU-candidate-dead-serve-high-push-kill-3
+  evidence_type: explanation
+  excerpt: If a dead serve draws a high push, use footwork and focus to move in and finish rather than freeze after serving.
+  reason: The movement and finishing instruction is conditional on the high push return.
+  confidence: 0.89
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: Ge6u_cFpfDU
+    start_ms: 104200
+    end_ms: 116320
+    url: https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=104s
+    segment_ids:
+    - Ge6u_cFpfDU:00041
+    - Ge6u_cFpfDU:00042
+    - Ge6u_cFpfDU:00043
+    - Ge6u_cFpfDU:00044
+    - Ge6u_cFpfDU:00045
+- id: PFPu_pKZ9TI-concept-serve-and-attack-patterns-reviewed
+  evidence_type: explanation
+  excerpt: Serving with enough spin to create an easier third ball attack, where the serve phase sets up the attack phase.
+  reason: The speaker explains that a spinny serve can force weak returns and that the real problem in failed attacks starts in the serve phase.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: PFPu_pKZ9TI
+    start_ms: 336360
+    end_ms: 365920
+    url: https://www.youtube.com/watch?v=PFPu_pKZ9TI&t=336s
+    segment_ids:
+    - PFPu_pKZ9TI:00123
+    - PFPu_pKZ9TI:00124
+    - PFPu_pKZ9TI:00125
+    - PFPu_pKZ9TI:00126
+    - PFPu_pKZ9TI:00127
+    - PFPu_pKZ9TI:00128
+    - PFPu_pKZ9TI:00129
+    - PFPu_pKZ9TI:00130
+    - PFPu_pKZ9TI:00131
+    - PFPu_pKZ9TI:00132
+    - PFPu_pKZ9TI:00133
+    - PFPu_pKZ9TI:00134
+- id: XlGnK1z_7C0-concept-serve-and-attack-patterns-reviewed
+  evidence_type: explanation
+  excerpt: Structuring the serve so the next ball can be attacked or transitioned into a planned rally.
+  reason: The transcript explicitly describes the serve, recovery, and movement phases as an attack sequence and discusses using the serve to set up a third-ball attack or rally.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: XlGnK1z_7C0
+    start_ms: 113000
+    end_ms: 138840
+    url: https://www.youtube.com/watch?v=XlGnK1z_7C0&t=113s
+    segment_ids:
+    - XlGnK1z_7C0:00049
+    - XlGnK1z_7C0:00050
+    - XlGnK1z_7C0:00051
+    - XlGnK1z_7C0:00058
+- id: 7jWqEsHtN3Y-concept-serve-and-attack-patterns-reviewed
+  evidence_type: explanation
+  excerpt: Using a planned sequence of placement and follow-up attacks to gain the initiative after a push or serve.
+  reason: The speaker says placement and tempo variations make the follow-up attack effective and that the first attack should aim to win the point, not just start a rally.
+  confidence: 0.85
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 7jWqEsHtN3Y
+    start_ms: 235200
+    end_ms: 246966
+    url: https://www.youtube.com/watch?v=7jWqEsHtN3Y&t=235s
+    segment_ids:
+    - 7jWqEsHtN3Y:00050
+    - 7jWqEsHtN3Y:00051
+    - 7jWqEsHtN3Y:00052
+- id: Nj4ivxRAizs-concept-serve-and-attack-patterns-reviewed
+  evidence_type: explanation
+  excerpt: Using the serve to set up a predictable or advantageous next-ball attack.
+  reason: The speaker describes immediate post-serve movement and anticipation as part of the serve sequence.
+  confidence: 0.86
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Nj4ivxRAizs
+    start_ms: 78533
+    end_ms: 101066
+    url: https://www.youtube.com/watch?v=Nj4ivxRAizs&t=78s
+    segment_ids:
+    - Nj4ivxRAizs:00024
+    - Nj4ivxRAizs:00031
+- id: q5sJuWPXRgo-concept-serve-and-attack-patterns-reviewed
+  evidence_type: explanation
+  excerpt: Build a point plan from the serve into a favorable third-ball opportunity or a planned follow-up attack.
+  reason: The speaker describes the first two shots in a serve sequence as disruptive and mentions sudden attacks after the serve as turning points.
+  confidence: 0.89
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: q5sJuWPXRgo
+    start_ms: 445033
+    end_ms: 465200
+    url: https://www.youtube.com/watch?v=q5sJuWPXRgo&t=445s
+    segment_ids:
+    - q5sJuWPXRgo:00176
+    - q5sJuWPXRgo:00183
+    - q5sJuWPXRgo:00184
+- id: xHCH_T6xjcc-concept-serve-and-attack-patterns-reviewed
+  evidence_type: explanation
+  excerpt: Build offense around the serve and plan to attack immediately after the serve or after forcing a weak reply.
+  reason: The speaker describes serving with spin to make the return hard, countering the push, not giving the opponent opportunities, and attacking at the end.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: xHCH_T6xjcc
+    start_ms: 260200
+    end_ms: 277466
+    url: https://www.youtube.com/watch?v=xHCH_T6xjcc&t=260s
+    segment_ids:
+    - xHCH_T6xjcc:00061
+    - xHCH_T6xjcc:00062
+    - xHCH_T6xjcc:00063
+    - xHCH_T6xjcc:00064
+    - xHCH_T6xjcc:00065
+- id: u2A5PNggIqg-concept-serve-and-attack-patterns-reviewed
+  evidence_type: example
+  excerpt: A tactical sequence in which the player serves or creates spin and then attacks on the next ball or shortly after.
+  reason: The speaker describes looping first, switching to flick if looping fails, and then continuing continuous attacks.
+  confidence: 0.88
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: u2A5PNggIqg
+    start_ms: 859366
+    end_ms: 865133
+    url: https://www.youtube.com/watch?v=u2A5PNggIqg&t=859s
+    segment_ids:
+    - u2A5PNggIqg:00231
+    - u2A5PNggIqg:00232
+    - u2A5PNggIqg:00233
+- id: T5hgo9D7c7A-concept-serve-and-attack-patterns-reviewed
+  evidence_type: explanation
+  excerpt: Using a strong serve to force a weak return that can be attacked immediately afterward.
+  reason: The speaker says weak returns off the hook serve can be attacked directly.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: T5hgo9D7c7A
+    start_ms: 616766
+    end_ms: 623600
+    url: https://www.youtube.com/watch?v=T5hgo9D7c7A&t=616s
+    segment_ids:
+    - T5hgo9D7c7A:00137
+    - T5hgo9D7c7A:00138
+- id: uL8In-_NToM-concept-serve-and-attack-patterns-reviewed
+  evidence_type: definition
+  excerpt: A sequence where the serve is designed to create a strong next-ball attack opportunity.
+  reason: The speaker explicitly frames the lesson as 'serve and attack' and says the goal is to win the point on the next shot.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: uL8In-_NToM
+    start_ms: 11333
+    end_ms: 18733
+    url: https://www.youtube.com/watch?v=uL8In-_NToM&t=11s
+    segment_ids:
+    - uL8In-_NToM:00003
+    - uL8In-_NToM:00004
+- id: q70a9LCojco-concept-serve-and-attack-pattern-reviewed
+  evidence_type: example
+  excerpt: A scoring pattern where serve quality leads into an immediate attack and can produce many points.
+  reason: The speaker cites a match where serve-and-attack won six points versus two, showing it as an effective pattern.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: q70a9LCojco
+    start_ms: 68366
+    end_ms: 77133
+    url: https://www.youtube.com/watch?v=q70a9LCojco&t=68s
+    segment_ids:
+    - q70a9LCojco:00017
+    - q70a9LCojco:00018
+- id: OQ7fB6yS8Fk-concept-serve-and-attack-patterns-reviewed
+  evidence_type: definition
+  excerpt: A strategy where the player uses the serve to create a favorable return and then attacks the next ball.
+  reason: The speaker explicitly introduces serve and attack, explains setting up an attack with the serve, and names the serve-and-attack offense.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: OQ7fB6yS8Fk
+    start_ms: 445600
+    end_ms: 451433
+    url: https://www.youtube.com/watch?v=OQ7fB6yS8Fk&t=445s
+    segment_ids:
+    - OQ7fB6yS8Fk:00100
+- id: 2HMLpiaJLL0-concept-serve-and-attack-patterns-reviewed
+  evidence_type: explanation
+  excerpt: A tactical sequence in which serve quality and placement are used to create an advantage for the immediate follow-up attack.
+  reason: The speaker directly discusses serve-to-third-ball attacking behavior and warns that a weak receive can be punished immediately on the third ball.
+  confidence: 0.89
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 2HMLpiaJLL0
+    start_ms: 435933
+    end_ms: 442466
+    url: https://www.youtube.com/watch?v=2HMLpiaJLL0&t=435s
+    segment_ids:
+    - 2HMLpiaJLL0:00091
+- id: lXTZ5lpaWXE-concept-serve-as-setup-for-attack-reviewed
+  evidence_type: definition
+  excerpt: A serve should be designed to prepare the next attack rather than aim only for an outright point.
+  reason: The speaker says an effective serve sets up the next attack and should complement follow-up patterns.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: lXTZ5lpaWXE
+    start_ms: 331366
+    end_ms: 361000
+    url: https://www.youtube.com/watch?v=lXTZ5lpaWXE&t=331s
+    segment_ids:
+    - lXTZ5lpaWXE:00072
+    - lXTZ5lpaWXE:00073
+    - lXTZ5lpaWXE:00074
+    - lXTZ5lpaWXE:00075
+    - lXTZ5lpaWXE:00076
+    - lXTZ5lpaWXE:00077
+    - lXTZ5lpaWXE:00078
+- id: z8-8IXQ-GaU-concept-serve-and-attack-patterns-reviewed
+  evidence_type: explanation
+  excerpt: Building an opening serve to transition directly into an attack or topspin rally instead of staying in a passive push exchange.
+  reason: The speaker recommends a sidespin-topspin serve because it creates an immediate topspin rally and supports a proactive serve-and-attack game.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: z8-8IXQ-GaU
+    start_ms: 21500
+    end_ms: 49000
+    url: https://www.youtube.com/watch?v=z8-8IXQ-GaU&t=21s
+    segment_ids:
+    - z8-8IXQ-GaU:00004
+    - z8-8IXQ-GaU:00005
+    - z8-8IXQ-GaU:00006
+    - z8-8IXQ-GaU:00007
+    - z8-8IXQ-GaU:00008
+    - z8-8IXQ-GaU:00009
+- id: bmK4umFK2Gs-concept-serve-and-attack-patterns-reviewed
+  evidence_type: definition
+  excerpt: A planned sequence after serve that links the serve to an intended follow-up attack.
+  reason: The speaker explicitly frames the lesson as serve-and-attack tactics and stresses having a clear post-serve plan with a defined third-ball attack.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: bmK4umFK2Gs
+    start_ms: 15000
+    end_ms: 23566
+    url: https://www.youtube.com/watch?v=bmK4umFK2Gs&t=15s
+    segment_ids:
+    - bmK4umFK2Gs:00002
+    - bmK4umFK2Gs:00003
+- id: rOMRGvlgAAU-concept-serve-and-attack-patterns-reviewed
+  evidence_type: definition
+  excerpt: A pattern where the server immediately prepares to attack the next ball after serving.
+  reason: The speaker explicitly says to practice the serve and attack sequence and asks where the issue is in that sequence.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: rOMRGvlgAAU
+    start_ms: 0
+    end_ms: 8866
+    url: https://www.youtube.com/watch?v=rOMRGvlgAAU&t=0s
+    segment_ids:
+    - rOMRGvlgAAU:00000
+    - rOMRGvlgAAU:00001
+- id: xWE01GQepLE-concept-serve-and-attack-patterns-reviewed
+  evidence_type: explanation
+  excerpt: Serve placement and disguise are used to create a follow-up attack, especially on critical points.
+  reason: The speaker says the deceptive serve wins easy points and explicitly links short backhand corner placement to serve-and-attack play.
+  confidence: 0.91
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: xWE01GQepLE
+    start_ms: 741166
+    end_ms: 754700
+    url: https://www.youtube.com/watch?v=xWE01GQepLE&t=741s
+    segment_ids:
+    - xWE01GQepLE:00154
+    - xWE01GQepLE:00156
+- id: YKuNt_fynhY-concept-serve-and-attack-patterns-reviewed
+  evidence_type: explanation
+  excerpt: Link serve, placement change, and an immediate attacking follow-up into a tactical sequence.
+  reason: The transcript frames serve follow-up as a tactical sequence and warns that isolated techniques fail without combination patterns.
+  confidence: 0.87
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: YKuNt_fynhY
+    start_ms: 843933
+    end_ms: 866900
+    url: https://www.youtube.com/watch?v=YKuNt_fynhY&t=843s
+    segment_ids:
+    - YKuNt_fynhY:00182
+    - YKuNt_fynhY:00183
+    - YKuNt_fynhY:00184
+    - YKuNt_fynhY:00185
+- id: WuWV6MlZQ_Q-concept-serve-and-attack-patterns-reviewed
+  evidence_type: explanation
+  excerpt: A tactical sequence where serve quality and immediate follow-up attack are linked as a scoring pattern.
+  reason: The speaker frames forehand attack against backspin within the serve-and-attack phase and repeatedly recommends serving short and attacking the return.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: WuWV6MlZQ_Q
+    start_ms: 66366
+    end_ms: 72233
+    url: https://www.youtube.com/watch?v=WuWV6MlZQ_Q&t=66s
+    segment_ids:
+    - WuWV6MlZQ_Q:00014
+- id: U1zg0xsCqMc-concept-serve-and-attack-patterns-reviewed
+  evidence_type: explanation
+  excerpt: A tactical structure where the serve is chosen together with a planned third-ball response.
+  reason: Explicitly states that serve and third ball must be linked, with a plan for the next ball, which distinguishes match tactics from random hitting.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: U1zg0xsCqMc
+    start_ms: 108840
+    end_ms: 121240
+    url: https://www.youtube.com/watch?v=U1zg0xsCqMc&t=108s
+    segment_ids:
+    - U1zg0xsCqMc:00047
+    - U1zg0xsCqMc:00048
+    - U1zg0xsCqMc:00049
+    - U1zg0xsCqMc:00050
+    - U1zg0xsCqMc:00051
+- id: 7jWqEsHtN3Y-concept-serve-and-attack-patterns-codex-reviewed
+  evidence_type: explanation
+  excerpt: 'In this placement example, force movement: push short to the forehand then loop deep to the backhand, or push to the backhand then soft-loop to the forehand. The lesson says maximum power is unnecessary and aims the first attack at winning the point.'
+  reason: The placement patterns start from pushes and use movement rather than maximum power.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 7jWqEsHtN3Y
+    start_ms: 295033
+    end_ms: 315566
+    url: https://www.youtube.com/watch?v=7jWqEsHtN3Y&t=295s
+    segment_ids:
+    - 7jWqEsHtN3Y:00065
+    - 7jWqEsHtN3Y:00066
+    - 7jWqEsHtN3Y:00067
+    - 7jWqEsHtN3Y:00068
+    - 7jWqEsHtN3Y:00069
+- id: IHQASHkdLYk-concept-third-ball-attack-codex-reviewed
+  evidence_type: definition
+  excerpt: 'The third-ball sequence is the player’s serve, the opponent’s return and the player’s attack, aiming to control the point from the first shot.'
+  reason: The stated sequence connects serve, return and attack.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: IHQASHkdLYk
+    start_ms: 40533
+    end_ms: 53200
+    url: https://www.youtube.com/watch?v=IHQASHkdLYk&t=40s
+    segment_ids:
+    - IHQASHkdLYk:00115
 relations:
-  - relation_type: used_with
-    target_concept_id: concept-short-serve-third-ball-attack
-    sources:
-      - video_id: Ge6u_cFpfDU
-        start_ms: 720
-        end_ms: 9360
-        url: https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=0s
-        segment_ids: *id001
-    confidence: 0.9
-    review_status: approved
+- relation_type: used_with
+  target_concept_id: concept-short-serve-third-ball-attack
+  sources:
+  - video_id: Ge6u_cFpfDU
+    start_ms: 720
+    end_ms: 9360
+    url: https://www.youtube.com/watch?v=Ge6u_cFpfDU&t=0s
+    segment_ids: *id001
+  confidence: 0.9
+  review_status: unreviewed

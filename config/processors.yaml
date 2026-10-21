@@ -16,6 +16,7 @@ llm_budget:
   account_quota:
     enabled: true
     stop_at_used_percent: 80
+    weekly_stop_at_used_percent: 95
     five_hour_reset_grace_minutes: 10
   timezone: Europe/Helsinki
   daily_token_limit: 90000000

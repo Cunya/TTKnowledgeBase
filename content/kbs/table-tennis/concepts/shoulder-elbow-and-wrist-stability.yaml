@@ -1,26 +1,16 @@
 id: concept-shoulder-elbow-and-wrist-stability
 slug: shoulder-elbow-and-wrist-stability
-label: Shoulder, elbow, and wrist stability
+label: Shoulder, elbow and wrist instability
 aliases:
-  - stable shoulder
-  - stable elbow
-  - stable wrist
-short_definition: Keep the shoulder, elbow, and wrist stable during the stroke to prevent inconsistency and unforced errors.
+- shoulder elbow and wrist instability
+short_definition: In the technique being discussed, instability in the shoulder, elbow and wrist leads to unforced errors.
 evidence_summary: >-
-  Keep the shoulder, elbow, and wrist stable during the stroke to prevent inconsistency and
-  unforced errors.
-evidence_summary_source_hash: "sha256:d6dd31865417855ca41e44e627e9b44c0bdecad0829af65e16832bf0a3f202fa"
-evidence_summary_generator: "deterministic"
+  In the technique being discussed, instability in the shoulder, elbow and wrist leads to unforced errors.
 concept_type: fundamentals
 facets:
   category:
-    - fundamentals
-  side:
-    - neutral
-  level:
-    - beginner
-    - intermediate
-difficulty: intermediate
+  - fundamentals
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -31,31 +21,31 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: 9sU_T8b5UoQ-concept-shoulder-elbow-wrist-stability-reviewed
-    evidence_type: definition
-    excerpt: Keep the shoulder, elbow, and wrist stable during the stroke to prevent inconsistency and unforced errors.
-    reason: The speaker repeatedly instructs the player to keep all three joints stable throughout the drive.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 9sU_T8b5UoQ
-      start_ms: 821666
-      end_ms: 851666
-      url: https://www.youtube.com/watch?v=9sU_T8b5UoQ&t=821s
-      segment_ids:
-        - 9sU_T8b5UoQ:00058
-  - id: 9sU_T8b5UoQ-concept-shoulder-elbow-wrist-stability-codex-reviewed
-    evidence_type: correction
-    excerpt: Shoulder, elbow, and wrist instability leads to unforced errors during the forehand drive.
-    reason: This segment directly identifies instability in all three joints as the cause of unforced errors, supporting the existing concept.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 9sU_T8b5UoQ
-      start_ms: 605800
-      end_ms: 623433
-      url: https://www.youtube.com/watch?v=9sU_T8b5UoQ&t=605s
-      segment_ids:
-        - 9sU_T8b5UoQ:00045
+- id: 9sU_T8b5UoQ-concept-shoulder-elbow-wrist-stability-reviewed
+  evidence_type: definition
+  excerpt: Keep the shoulder, elbow, and wrist stable during the stroke to prevent inconsistency and unforced errors.
+  reason: The speaker repeatedly instructs the player to keep all three joints stable throughout the drive.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 9sU_T8b5UoQ
+    start_ms: 821666
+    end_ms: 851666
+    url: https://www.youtube.com/watch?v=9sU_T8b5UoQ&t=821s
+    segment_ids:
+    - 9sU_T8b5UoQ:00058
+- id: 9sU_T8b5UoQ-concept-shoulder-elbow-wrist-stability-codex-reviewed
+  evidence_type: correction
+  excerpt: In the technique being discussed, instability in the shoulder, elbow and wrist leads to unforced errors.
+  reason: In the technique being discussed, instability in the shoulder, elbow and wrist leads to unforced errors.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: 9sU_T8b5UoQ
+    start_ms: 605800
+    end_ms: 623433
+    url: https://www.youtube.com/watch?v=9sU_T8b5UoQ&t=605s
+    segment_ids:
+    - 9sU_T8b5UoQ:00045

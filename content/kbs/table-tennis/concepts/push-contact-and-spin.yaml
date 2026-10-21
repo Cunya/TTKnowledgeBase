@@ -2,610 +2,633 @@ id: concept-push-contact-and-spin
 slug: push-contact-and-spin
 label: Push contact and spin
 aliases:
-  - spinny push
-  - push racket contact
-short_definition: Generate and control backspin in the push through the selected racket region, contact point, and short acceleration.
+- spinny push
+- push racket contact
+short_definition: Push-contact cues include bottom-half racket contact and pushing behind the ball; a heavy-spin push cue calls for fast racket-head rotation at contact.
 evidence_summary: >-
-  Effective pushing depends on making contact with the lower half of the racket face and using
-  friction at the moment of contact. The wrist and fingers create most of the spin and control,
-  while the forearm mainly helps guide direction, so the ball should be contacted from behind or
-  slightly from below-behind rather than directly underneath. Adding brush and racket-head speed
-  increases spin and makes the return harder to attack, whereas reducing force and focusing on
-  brushing is safer against aggressive incoming balls.
-evidence_summary_source_hash: "sha256:dcbb2fb3fdbbfcd942c2e6540be19f7eabb7d542ce360b42ba319e5fd1768019"
-evidence_summary_generator: "codex"
+  One lesson uses bottom-half racket contact and a small wrist-and-finger action, then adds a little forearm power for speed. A second emphasizes finger control rather than using the arm to feel the ball. Another lesson uses behind-ball contact and a slightly-lower adjustment when repeated netting is attributed to heavier-than-expected spin. The heavy-spin push lesson emphasizes fast racket-head rotation and snap at contact.
 concept_type: push-mechanic
 facets:
   category:
-    - stroke
-  side:
-    - neutral
-  level:
-    - intermediate
-difficulty: intermediate
+  - stroke
+difficulty:
 review_status: approved
 evidence:
-  - id: p3hweUir1Mg-candidate-bottom-half-of-racket-contact-in-push-1
-    evidence_type: definition
-    excerpt: In the push, the ball should contact the lower half of the racket face; contacting the upper half tends to send the ball too high or long.
-    reason: The speaker marks bottom-half racket contact as the key point and explains the consequences of using the top versus bottom half of the racket face.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: p3hweUir1Mg
-      start_ms: 213433
-      end_ms: 231366
-      url: "https://www.youtube.com/watch?v=p3hweUir1Mg&t=213s"
-      segment_ids: &id001
-        - "p3hweUir1Mg:00054"
-        - "p3hweUir1Mg:00055"
-        - "p3hweUir1Mg:00056"
-        - "p3hweUir1Mg:00057"
-        - "p3hweUir1Mg:00058"
-  - id: p3hweUir1Mg-candidate-bottom-half-of-racket-contact-in-push-2
-    evidence_type: definition
-    excerpt: In the push, the ball should contact the lower half of the racket face; contacting the upper half tends to send the ball too high or long.
-    reason: The speaker marks bottom-half racket contact as the key point and explains the consequences of using the top versus bottom half of the racket face.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: p3hweUir1Mg
-      start_ms: 243033
-      end_ms: 265933
-      url: "https://www.youtube.com/watch?v=p3hweUir1Mg&t=243s"
-      segment_ids:
-        - "p3hweUir1Mg:00063"
-        - "p3hweUir1Mg:00064"
-        - "p3hweUir1Mg:00065"
-        - "p3hweUir1Mg:00066"
-  - id: p3hweUir1Mg-candidate-bottom-half-of-racket-contact-in-push-3
-    evidence_type: demonstration
-    excerpt: In the push, the ball should contact the lower half of the racket face; contacting the upper half tends to send the ball too high or long.
-    reason: The transcript describes positioning the racket relative to ball height to create bottom-half contact.
-    confidence: 0.84
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: p3hweUir1Mg
-      start_ms: 233400
-      end_ms: 242766
-      url: "https://www.youtube.com/watch?v=p3hweUir1Mg&t=233s"
-      segment_ids:
-        - "p3hweUir1Mg:00060"
-        - "p3hweUir1Mg:00061"
-        - "p3hweUir1Mg:00062"
-  - id: p3hweUir1Mg-candidate-generating-spin-at-contact-1
-    evidence_type: definition
-    excerpt: The speaker explicitly says the main force and friction come from the wrist and fingers, while the forearm mainly controls direction.
-    reason: High-quality pushing depends on producing friction at contact mainly through the wrist and fingers, with only a small assisting role from the forearm for direction.
-    confidence: 0.84
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: p3hweUir1Mg
-      start_ms: 293033
-      end_ms: 318633
-      url: "https://www.youtube.com/watch?v=p3hweUir1Mg&t=293s"
-      segment_ids:
-        - "p3hweUir1Mg:00075"
-        - "p3hweUir1Mg:00077"
-        - "p3hweUir1Mg:00078"
-        - "p3hweUir1Mg:00079"
-        - "p3hweUir1Mg:00082"
-  - id: p3hweUir1Mg-candidate-generating-spin-at-contact-2
-    evidence_type: definition
-    excerpt: The speaker explicitly says the main force and friction come from the wrist and fingers, while the forearm mainly controls direction.
-    reason: High-quality pushing depends on producing friction at contact mainly through the wrist and fingers, with only a small assisting role from the forearm for direction.
-    confidence: 0.84
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: p3hweUir1Mg
-      start_ms: 329700
-      end_ms: 355466
-      url: "https://www.youtube.com/watch?v=p3hweUir1Mg&t=329s"
-      segment_ids:
-        - "p3hweUir1Mg:00083"
-        - "p3hweUir1Mg:00087"
-        - "p3hweUir1Mg:00088"
-  - id: p3hweUir1Mg-candidate-generating-spin-at-contact-3
-    evidence_type: definition
-    excerpt: The speaker explicitly says the main force and friction come from the wrist and fingers, while the forearm mainly controls direction.
-    reason: High-quality pushing depends on producing friction at contact mainly through the wrist and fingers, with only a small assisting role from the forearm for direction.
-    confidence: 0.84
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: p3hweUir1Mg
-      start_ms: 367766
-      end_ms: 379966
-      url: "https://www.youtube.com/watch?v=p3hweUir1Mg&t=367s"
-      segment_ids:
-        - "p3hweUir1Mg:00091"
-        - "p3hweUir1Mg:00092"
-        - "p3hweUir1Mg:00093"
-  - id: p3hweUir1Mg-candidate-generating-spin-at-contact-4
-    evidence_type: correction
-    excerpt: The speaker corrects the common mistake of using the forearm or upper arm too much, which reduces friction quality and produces floaty, weak balls.
-    reason: High-quality pushing depends on producing friction at contact mainly through the wrist and fingers, with only a small assisting role from the forearm for direction.
-    confidence: 0.87
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: p3hweUir1Mg
-      start_ms: 334500
-      end_ms: 348333
-      url: "https://www.youtube.com/watch?v=p3hweUir1Mg&t=334s"
-      segment_ids:
-        - "p3hweUir1Mg:00084"
-        - "p3hweUir1Mg:00085"
-        - "p3hweUir1Mg:00086"
-  - id: p3hweUir1Mg-candidate-generating-spin-at-contact-5
-    evidence_type: correction
-    excerpt: The speaker corrects the common mistake of using the forearm or upper arm too much, which reduces friction quality and produces floaty, weak balls.
-    reason: High-quality pushing depends on producing friction at contact mainly through the wrist and fingers, with only a small assisting role from the forearm for direction.
-    confidence: 0.87
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: p3hweUir1Mg
-      start_ms: 380600
-      end_ms: 406433
-      url: "https://www.youtube.com/watch?v=p3hweUir1Mg&t=380s"
-      segment_ids:
-        - "p3hweUir1Mg:00094"
-        - "p3hweUir1Mg:00095"
-        - "p3hweUir1Mg:00102"
-        - "p3hweUir1Mg:00103"
-        - "p3hweUir1Mg:00104"
-  - id: 3yx5OMDyM8c-candidate-push-friction-neutralizes-sidespin-1
-    evidence_type: explanation
-    excerpt: The speaker explains that amateurs get affected by spin because they only touch the ball and use the arm instead of finger-controlled friction.
-    reason: A push-receive concept that spin is controlled by actively brushing with friction and finger adjustment rather than merely touching the ball with the arm, which otherwise reproduces the opponent's sidespin.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 3yx5OMDyM8c
-      start_ms: 597960
-      end_ms: 627520
-      url: "https://www.youtube.com/watch?v=3yx5OMDyM8c&t=597s"
-      segment_ids:
-        - "3yx5OMDyM8c:00222"
-        - "3yx5OMDyM8c:00223"
-        - "3yx5OMDyM8c:00224"
-        - "3yx5OMDyM8c:00225"
-        - "3yx5OMDyM8c:00226"
-        - "3yx5OMDyM8c:00227"
-        - "3yx5OMDyM8c:00228"
-        - "3yx5OMDyM8c:00229"
-        - "3yx5OMDyM8c:00230"
-        - "3yx5OMDyM8c:00231"
-        - "3yx5OMDyM8c:00232"
-        - "3yx5OMDyM8c:00233"
-  - id: 3yx5OMDyM8c-candidate-push-friction-neutralizes-sidespin-2
-    evidence_type: explanation
-    excerpt: The speaker explains that amateurs get affected by spin because they only touch the ball and use the arm instead of finger-controlled friction.
-    reason: A push-receive concept that spin is controlled by actively brushing with friction and finger adjustment rather than merely touching the ball with the arm, which otherwise reproduces the opponent's sidespin.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 3yx5OMDyM8c
-      start_ms: 625720
-      end_ms: 652040
-      url: "https://www.youtube.com/watch?v=3yx5OMDyM8c&t=625s"
-      segment_ids:
-        - "3yx5OMDyM8c:00234"
-        - "3yx5OMDyM8c:00235"
-        - "3yx5OMDyM8c:00236"
-        - "3yx5OMDyM8c:00237"
-        - "3yx5OMDyM8c:00238"
-        - "3yx5OMDyM8c:00239"
-        - "3yx5OMDyM8c:00240"
-        - "3yx5OMDyM8c:00241"
-        - "3yx5OMDyM8c:00242"
-        - "3yx5OMDyM8c:00243"
-  - id: 3yx5OMDyM8c-candidate-push-friction-neutralizes-sidespin-3
-    evidence_type: demonstration
-    excerpt: 'The transcript gives a concrete push example: adjust racket head, brush more under the ball, extend the motion, and create fuller friction.'
-    reason: 'A push-receive concept that spin is controlled by actively brushing with friction and finger adjustment rather than merely touching the ball with the arm, which otherwise reproduces the opponent''s sidespin.'
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 3yx5OMDyM8c
-      start_ms: 650440
-      end_ms: 679920
-      url: "https://www.youtube.com/watch?v=3yx5OMDyM8c&t=650s"
-      segment_ids:
-        - "3yx5OMDyM8c:00244"
-        - "3yx5OMDyM8c:00245"
-        - "3yx5OMDyM8c:00246"
-        - "3yx5OMDyM8c:00247"
-        - "3yx5OMDyM8c:00248"
-        - "3yx5OMDyM8c:00249"
-        - "3yx5OMDyM8c:00250"
-        - "3yx5OMDyM8c:00251"
-        - "3yx5OMDyM8c:00252"
-        - "3yx5OMDyM8c:00253"
-  - id: 3yx5OMDyM8c-candidate-push-friction-neutralizes-sidespin-4
-    evidence_type: demonstration
-    excerpt: 'The transcript gives a concrete push example: adjust racket head, brush more under the ball, extend the motion, and create fuller friction.'
-    reason: 'A push-receive concept that spin is controlled by actively brushing with friction and finger adjustment rather than merely touching the ball with the arm, which otherwise reproduces the opponent''s sidespin.'
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 3yx5OMDyM8c
-      start_ms: 678360
-      end_ms: 706840
-      url: "https://www.youtube.com/watch?v=3yx5OMDyM8c&t=678s"
-      segment_ids:
-        - "3yx5OMDyM8c:00254"
-        - "3yx5OMDyM8c:00255"
-        - "3yx5OMDyM8c:00256"
-        - "3yx5OMDyM8c:00257"
-        - "3yx5OMDyM8c:00258"
-        - "3yx5OMDyM8c:00259"
-        - "3yx5OMDyM8c:00260"
-        - "3yx5OMDyM8c:00261"
-        - "3yx5OMDyM8c:00262"
-        - "3yx5OMDyM8c:00263"
-        - "3yx5OMDyM8c:00264"
-  - id: 3yx5OMDyM8c-candidate-push-friction-neutralizes-sidespin-5
-    evidence_type: demonstration
-    excerpt: 'The transcript gives a concrete push example: adjust racket head, brush more under the ball, extend the motion, and create fuller friction.'
-    reason: 'A push-receive concept that spin is controlled by actively brushing with friction and finger adjustment rather than merely touching the ball with the arm, which otherwise reproduces the opponent''s sidespin.'
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 3yx5OMDyM8c
-      start_ms: 703920
-      end_ms: 711880
-      url: "https://www.youtube.com/watch?v=3yx5OMDyM8c&t=703s"
-      segment_ids:
-        - "3yx5OMDyM8c:00265"
-        - "3yx5OMDyM8c:00266"
-  - id: 3yx5OMDyM8c-candidate-push-friction-neutralizes-sidespin-6
-    evidence_type: drill
-    excerpt: 'The speaker turns it into a practice emphasis: develop feel and use fingers to control how the spinning ball crosses the net.'
-    reason: 'A push-receive concept that spin is controlled by actively brushing with friction and finger adjustment rather than merely touching the ball with the arm, which otherwise reproduces the opponent''s sidespin.'
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: 3yx5OMDyM8c
-      start_ms: 709520
-      end_ms: 723880
-      url: "https://www.youtube.com/watch?v=3yx5OMDyM8c&t=709s"
-      segment_ids:
-        - "3yx5OMDyM8c:00267"
-        - "3yx5OMDyM8c:00268"
-        - "3yx5OMDyM8c:00269"
-        - "3yx5OMDyM8c:00270"
-        - "3yx5OMDyM8c:00271"
-        - "3yx5OMDyM8c:00272"
-  - id: bUCFpvTlaMU-candidate-contact-behind-ball-on-push-1
-    evidence_type: definition
-    excerpt: The speaker explicitly contrasts contacting behind the ball with contacting underneath and explains the consequence of popping the ball up.
-    reason: On short receives and pushes, contact should be made from behind or slightly below-behind the ball rather than directly underneath, which helps control arc and avoid popping the ball up.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: bUCFpvTlaMU
-      start_ms: 63840
-      end_ms: 78480
-      url: https://www.youtube.com/watch?v=bUCFpvTlaMU&t=63s
-      segment_ids:
-        - bUCFpvTlaMU:00028
-        - bUCFpvTlaMU:00029
-        - bUCFpvTlaMU:00030
-        - bUCFpvTlaMU:00033
-  - id: bUCFpvTlaMU-candidate-contact-behind-ball-on-push-2
-    evidence_type: explanation
-    excerpt: The same principle is restated as the way to control the arc and avoid floating the return, even against heavy spin.
-    reason: On short receives and pushes, contact should be made from behind or slightly below-behind the ball rather than directly underneath, which helps control arc and avoid popping the ball up.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: bUCFpvTlaMU
-      start_ms: 173160
-      end_ms: 188080
-      url: https://www.youtube.com/watch?v=bUCFpvTlaMU&t=173s
-      segment_ids:
-        - bUCFpvTlaMU:00072
-        - bUCFpvTlaMU:00073
-        - bUCFpvTlaMU:00075
-        - bUCFpvTlaMU:00077
-  - id: bUCFpvTlaMU-candidate-contact-behind-ball-on-push-3
-    evidence_type: explanation
-    excerpt: The same principle is restated as the way to control the arc and avoid floating the return, even against heavy spin.
-    reason: On short receives and pushes, contact should be made from behind or slightly below-behind the ball rather than directly underneath, which helps control arc and avoid popping the ball up.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: bUCFpvTlaMU
-      start_ms: 222000
-      end_ms: 228360
-      url: https://www.youtube.com/watch?v=bUCFpvTlaMU&t=222s
-      segment_ids:
-        - bUCFpvTlaMU:00090
-        - bUCFpvTlaMU:00091
-  - id: bUCFpvTlaMU-candidate-contact-behind-ball-on-push-4
-    evidence_type: demonstration
-    excerpt: The speaker uses a visibility cue in the racket-ball relationship to illustrate proper behind-the-ball contact.
-    reason: On short receives and pushes, contact should be made from behind or slightly below-behind the ball rather than directly underneath, which helps control arc and avoid popping the ball up.
-    confidence: 0.84
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: bUCFpvTlaMU
-      start_ms: 198840
-      end_ms: 205720
-      url: https://www.youtube.com/watch?v=bUCFpvTlaMU&t=198s
-      segment_ids:
-        - bUCFpvTlaMU:00081
-        - bUCFpvTlaMU:00082
-        - bUCFpvTlaMU:00083
-  - id: hZmEfLkbNI8-cand-heavy-spin-push-mechanics-1
-    evidence_type: definition
-    excerpt: Producing a very spinny push by accelerating racket-head rotation at contact rather than using a larger arm swing or raw arm force.
-    reason: The speaker states the spin secret is racket-head rotation and snap at contact, not the arm or wrist alone.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: hZmEfLkbNI8
-      start_ms: 299120
-      end_ms: 322440
-      url: https://www.youtube.com/watch?v=hZmEfLkbNI8&t=299s
-      segment_ids:
-        - hZmEfLkbNI8:00121
-        - hZmEfLkbNI8:00122
-        - hZmEfLkbNI8:00123
-        - hZmEfLkbNI8:00124
-        - hZmEfLkbNI8:00125
-        - hZmEfLkbNI8:00126
-        - hZmEfLkbNI8:00127
-  - id: hZmEfLkbNI8-cand-heavy-spin-push-mechanics-2
-    evidence_type: explanation
-    excerpt: Producing a very spinny push by accelerating racket-head rotation at contact rather than using a larger arm swing or raw arm force.
-    reason: The transcript reinforces that added brush and racket-head speed make even a high return harder to attack.
-    confidence: 0.88
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: hZmEfLkbNI8
-      start_ms: 347280
-      end_ms: 364720
-      url: https://www.youtube.com/watch?v=hZmEfLkbNI8&t=347s
-      segment_ids:
-        - hZmEfLkbNI8:00135
-        - hZmEfLkbNI8:00136
-        - hZmEfLkbNI8:00137
-        - hZmEfLkbNI8:00138
-        - hZmEfLkbNI8:00139
-        - hZmEfLkbNI8:00140
-        - hZmEfLkbNI8:00141
-  - id: 5JzSUTg_ojc-concept-push-contact-and-spin-reviewed
-    evidence_type: explanation
-    excerpt: Using brushing contact and controlled force on push or receive balls so the ball does not go long or into the net.
-    reason: The speaker says that for aggressive incoming balls you should reduce force, focus on brushing, and not fight the ball with power.
-    confidence: 0.87
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 5JzSUTg_ojc
-      start_ms: 300720
-      end_ms: 329720
-      url: https://www.youtube.com/watch?v=5JzSUTg_ojc&t=300s
-      segment_ids:
-        - 5JzSUTg_ojc:00116
-        - 5JzSUTg_ojc:00119
-        - 5JzSUTg_ojc:00120
-        - 5JzSUTg_ojc:00127
-  - id: SF0Sv2ZzrRI-concept-push-contact-and-spin-reviewed
-    evidence_type: explanation
-    excerpt: Using specific racket contact and touch to add spin in a push without overusing arm force.
-    reason: The speaker contrasts forearm force with a point push to add spin and a short explosive touch.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: SF0Sv2ZzrRI
-      start_ms: 133360
-      end_ms: 160680
-      url: https://www.youtube.com/watch?v=SF0Sv2ZzrRI&t=133s
-      segment_ids:
-        - SF0Sv2ZzrRI:00038
-        - SF0Sv2ZzrRI:00046
-  - id: TMrN47uIHiI-concept-push-contact-and-spin-reviewed
-    evidence_type: explanation
-    excerpt: Using downward pressure and contact control to make the push or drop shot spinny and effective.
-    reason: The speaker links finding the contact point with pressing downward, and then says to drive the ball down into the body from above.
-    confidence: 0.88
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: TMrN47uIHiI
-      start_ms: 498680
-      end_ms: 521760
-      url: https://www.youtube.com/watch?v=TMrN47uIHiI&t=498s
-      segment_ids:
-        - TMrN47uIHiI:00150
-        - TMrN47uIHiI:00156
-        - TMrN47uIHiI:00157
-  - id: H0sbIUpUNLY-cand-3-reviewed
-    evidence_type: explanation
-    excerpt: Contact choices in the push that adapt racket angle and brush to the incoming spin while keeping the ball low.
-    reason: The speaker says to open more against no-spin and keep the racket flatter against heavy spin, while still aiming to the base of the net.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: H0sbIUpUNLY
-      start_ms: 383840
-      end_ms: 408600
-      url: https://www.youtube.com/watch?v=H0sbIUpUNLY&t=383s
-      segment_ids:
-        - H0sbIUpUNLY:00118
-        - H0sbIUpUNLY:00123
-        - H0sbIUpUNLY:00128
-  - id: o6OyHBmkF2U-concept-push-contact-and-spin-reviewed
-    evidence_type: explanation
-    excerpt: Creating different push spin by changing contact quality and racket action, including adding friction or removing it for no-spin.
-    reason: The speaker explains that pulling the racket backward at contact increases spin, and that no-spin is created by sending the ball without adding friction.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: o6OyHBmkF2U
-      start_ms: 15240
-      end_ms: 29280
-      url: https://www.youtube.com/watch?v=o6OyHBmkF2U&t=15s
-      segment_ids:
-        - o6OyHBmkF2U:00006
-        - o6OyHBmkF2U:00008
-        - o6OyHBmkF2U:00009
-        - o6OyHBmkF2U:00010
-  - id: h5jUJL_P82w-concept-push-contact-and-spin-reviewed
-    evidence_type: explanation
-    excerpt: Using the bottom half of the racket to brush the ball, matching racket starting height to bounce height, and adjusting for spin so the ball clears the net with controlled trajectory.
-    reason: The speaker explains contact-zone selection, bounce-height matching, and how under-ball brushing creates heavy, sinking backspin.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: h5jUJL_P82w
-      start_ms: 496200
-      end_ms: 522500
-      url: https://www.youtube.com/watch?v=h5jUJL_P82w&t=496s
-      segment_ids:
-        - h5jUJL_P82w:00109
-        - h5jUJL_P82w:00110
-        - h5jUJL_P82w:00111
-        - h5jUJL_P82w:00112
-        - h5jUJL_P82w:00113
-        - h5jUJL_P82w:00114
-        - h5jUJL_P82w:00115
-  - id: D1cBF0nsjKo-concept-push-contact-and-spin-reviewed
-    evidence_type: explanation
-    excerpt: Using the racket path and contact zone to manage incoming spin, create friction, and keep the push low and controllable.
-    reason: The transcript contrasts direct-behind contact with slight side contact, then describes level-first-then-downward motion and brushing that generates friction to handle spin.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: D1cBF0nsjKo
-      start_ms: 636960
-      end_ms: 642120
-      url: https://www.youtube.com/watch?v=D1cBF0nsjKo&t=636s
-      segment_ids:
-        - D1cBF0nsjKo:00239
-  - id: Nmf0ZWP6dn0-cand-push-contact-and-spin-reviewed
-    evidence_type: explanation
-    excerpt: A push should brush with the incoming spin instead of hitting flat, so the ball carries enough spin and arc to avoid going into the net.
-    reason: They recommend brushing slightly on the right side of the ball for left side spin and note that this keeps the push from going into the net.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: Nmf0ZWP6dn0
-      start_ms: 33760
-      end_ms: 49040
-      url: https://www.youtube.com/watch?v=Nmf0ZWP6dn0&t=33s
-      segment_ids:
-        - Nmf0ZWP6dn0:00012
-        - Nmf0ZWP6dn0:00013
-        - Nmf0ZWP6dn0:00014
-        - Nmf0ZWP6dn0:00015
-        - Nmf0ZWP6dn0:00016
-        - Nmf0ZWP6dn0:00017
-  - id: wSzmpXHp64Q-concept-push-contact-and-spin-reviewed
-    evidence_type: explanation
-    excerpt: Generating the right amount of friction and trajectory in a push by using the opponent's spin rather than trying to neutralize spin completely.
-    reason: The speaker explains that a pushed ball may have little new spin, and that spinny balls require friction-based lifting while no-spin balls need a closing action.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: wSzmpXHp64Q
-      start_ms: 427033
-      end_ms: 443766
-      url: https://www.youtube.com/watch?v=wSzmpXHp64Q&t=427s
-      segment_ids:
-        - wSzmpXHp64Q:00128
-        - wSzmpXHp64Q:00129
-        - wSzmpXHp64Q:00130
-        - wSzmpXHp64Q:00131
-        - wSzmpXHp64Q:00132
-        - wSzmpXHp64Q:00133
-        - wSzmpXHp64Q:00134
-  - id: 4dKlFXYLZhc-concept-push-contact-and-spin-reviewed
-    evidence_type: definition
-    excerpt: A pushing technique that emphasizes friction and brushing contact, with no pulling back during the contact phase, to handle spin better and improve placement.
-    reason: The speaker lists friction, peak-of-bounce timing, no pullback, and placement variations as the core of the modified push.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 4dKlFXYLZhc
-      start_ms: 160733
-      end_ms: 177766
-      url: https://www.youtube.com/watch?v=4dKlFXYLZhc&t=160s
-      segment_ids:
-        - 4dKlFXYLZhc:00051
-        - 4dKlFXYLZhc:00053
-        - 4dKlFXYLZhc:00054
-        - 4dKlFXYLZhc:00055
-  - id: -iWLwSvOJ2U-concept-push-contact-and-spin-reviewed
-    evidence_type: definition
-    excerpt: Creating a stable push by contacting behind the ball and generating enough friction to handle incoming spin.
-    reason: The speaker says to contact behind the ball and to prioritize brushing/friction so spin is neutralized.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: -iWLwSvOJ2U
-      start_ms: 66300
-      end_ms: 89900
-      url: https://www.youtube.com/watch?v=-iWLwSvOJ2U&t=66s
-      segment_ids:
-        - -iWLwSvOJ2U:00016
-        - -iWLwSvOJ2U:00018
-        - -iWLwSvOJ2U:00021
-  - id: h5jUJL_P82w-concept-push-contact-and-spin-codex-reviewed
-    evidence_type: explanation
-    excerpt: Control push trajectory by contacting with the bottom half of the racket and brushing the ball to create effective friction.
-    reason: This contiguous 18.4-second span directly explains how racket contact location controls push trajectory and why brushing with the bottom half creates friction. The broader evidence claims about bounce height, forehand serves, and chopping are excluded because they fall outside the selected publication span.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: h5jUJL_P82w
-      start_ms: 436900
-      end_ms: 455300
-      url: https://www.youtube.com/watch?v=h5jUJL_P82w&t=436s
-      segment_ids:
-        - h5jUJL_P82w:00096
-        - h5jUJL_P82w:00097
-        - h5jUJL_P82w:00098
-        - h5jUJL_P82w:00099
+- id: p3hweUir1Mg-candidate-bottom-half-of-racket-contact-in-push-1
+  evidence_type: definition
+  excerpt: The speaker asks for contact on the bottom half of the racket and warns that top-half contact sends the ball out.
+  reason: The bottom-half contact point is presented as the key correction.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: p3hweUir1Mg
+    start_ms: 213433
+    end_ms: 231366
+    url: "https://www.youtube.com/watch?v=p3hweUir1Mg&t=213s"
+    segment_ids:
+    - "p3hweUir1Mg:00054"
+    - "p3hweUir1Mg:00055"
+    - "p3hweUir1Mg:00056"
+    - "p3hweUir1Mg:00057"
+    - "p3hweUir1Mg:00058"
+- id: p3hweUir1Mg-candidate-bottom-half-of-racket-contact-in-push-2
+  evidence_type: definition
+  excerpt: The lesson contrasts top-half contact, which sends the ball higher, with bottom-half contact that keeps it low.
+  reason: The speaker uses this contrast to explain the preferred racket contact region.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: p3hweUir1Mg
+    start_ms: 243033
+    end_ms: 265933
+    url: "https://www.youtube.com/watch?v=p3hweUir1Mg&t=243s"
+    segment_ids:
+    - "p3hweUir1Mg:00063"
+    - "p3hweUir1Mg:00064"
+    - "p3hweUir1Mg:00065"
+    - "p3hweUir1Mg:00066"
+- id: p3hweUir1Mg-candidate-bottom-half-of-racket-contact-in-push-3
+  evidence_type: explanation
+  excerpt: The speaker positions the racket above the ball and raises it for a higher ball, then calls for bottom-half racket contact.
+  reason: The speaker gives cues for racket height and bottom-half contact.
+  confidence: 0.84
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: p3hweUir1Mg
+    start_ms: 233400
+    end_ms: 246100
+    url: https://www.youtube.com/watch?v=p3hweUir1Mg&t=233s
+    segment_ids:
+    - p3hweUir1Mg:00060
+    - p3hweUir1Mg:00061
+    - p3hweUir1Mg:00062
+    - p3hweUir1Mg:00063
+- id: p3hweUir1Mg-candidate-generating-spin-at-contact-1
+  evidence_type: definition
+  excerpt: In pushing, the speaker warns against neglecting fingers and wrists and describes locking the forearm and upper arm while using the wrist and fingers.
+  reason: The lesson emphasizes wrist-and-finger use in this part of the instruction.
+  confidence: 0.84
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: p3hweUir1Mg
+    start_ms: 290800
+    end_ms: 304000
+    url: https://www.youtube.com/watch?v=p3hweUir1Mg&t=290s
+    segment_ids:
+    - p3hweUir1Mg:00074
+    - p3hweUir1Mg:00075
+    - p3hweUir1Mg:00076
+    - p3hweUir1Mg:00077
+    - p3hweUir1Mg:00078
+    - p3hweUir1Mg:00079
+- id: p3hweUir1Mg-candidate-generating-spin-at-contact-2
+  evidence_type: definition
+  excerpt: Apply friction at the moment of contact. The speaker assigns “70%” to wrist and fingers and “30%” to the forearm for controlling direction.
+  reason: The lesson gives a wrist/finger versus forearm-direction allocation cue alongside contact friction.
+  confidence: 0.84
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: p3hweUir1Mg
+    start_ms: 329700
+    end_ms: 355466
+    url: https://www.youtube.com/watch?v=p3hweUir1Mg&t=329s
+    segment_ids:
+    - p3hweUir1Mg:00083
+    - p3hweUir1Mg:00084
+    - p3hweUir1Mg:00085
+    - p3hweUir1Mg:00086
+    - p3hweUir1Mg:00087
+    - p3hweUir1Mg:00088
+- id: p3hweUir1Mg-candidate-generating-spin-at-contact-3
+  evidence_type: definition
+  excerpt: The speaker says the main force should come from the wrist and fingers rather than the forearm or upper arm.
+  reason: The instruction emphasizes using wrist and fingers to apply force.
+  confidence: 0.84
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: p3hweUir1Mg
+    start_ms: 367766
+    end_ms: 379966
+    url: "https://www.youtube.com/watch?v=p3hweUir1Mg&t=367s"
+    segment_ids:
+    - "p3hweUir1Mg:00091"
+    - "p3hweUir1Mg:00092"
+    - "p3hweUir1Mg:00093"
+- id: p3hweUir1Mg-candidate-generating-spin-at-contact-4
+  evidence_type: correction
+  excerpt: The speaker warns that relying on the forearm brings the upper arm into the action; without proper friction, the action does not work.
+  reason: The caution concerns forearm and upper-arm involvement and insufficient friction.
+  confidence: 0.87
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: p3hweUir1Mg
+    start_ms: 334500
+    end_ms: 355466
+    url: https://www.youtube.com/watch?v=p3hweUir1Mg&t=334s
+    segment_ids:
+    - p3hweUir1Mg:00084
+    - p3hweUir1Mg:00085
+    - p3hweUir1Mg:00086
+    - p3hweUir1Mg:00087
+    - p3hweUir1Mg:00088
+- id: p3hweUir1Mg-candidate-generating-spin-at-contact-5
+  evidence_type: correction
+  excerpt: The speaker first warns against forearm and upper-arm use, keeps the motion small with wrist and fingers, then adds a little forearm power to push faster. Upper-arm use is said to impair wrist/finger use and leave a half-high, no-spin ball.
+  reason: The lesson distinguishes a small wrist/finger action and a limited forearm speed assist from the upper-arm warning.
+  confidence: 0.87
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: p3hweUir1Mg
+    start_ms: 380600
+    end_ms: 406433
+    url: https://www.youtube.com/watch?v=p3hweUir1Mg&t=380s
+    segment_ids:
+    - p3hweUir1Mg:00094
+    - p3hweUir1Mg:00095
+    - p3hweUir1Mg:00096
+    - p3hweUir1Mg:00097
+    - p3hweUir1Mg:00098
+    - p3hweUir1Mg:00099
+    - p3hweUir1Mg:00100
+    - p3hweUir1Mg:00101
+    - p3hweUir1Mg:00102
+    - p3hweUir1Mg:00103
+    - p3hweUir1Mg:00104
+- id: 3yx5OMDyM8c-candidate-push-friction-neutralizes-sidespin-1
+  evidence_type: explanation
+  excerpt: The speaker compares a racket that merely touches the ball with a machine that reproduces sidespin, and calls for friction rather than a light touch when pushing.
+  reason: The lesson contrasts creating friction with merely touching the ball.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: 3yx5OMDyM8c
+    start_ms: 597960
+    end_ms: 627520
+    url: "https://www.youtube.com/watch?v=3yx5OMDyM8c&t=597s"
+    segment_ids:
+    - "3yx5OMDyM8c:00222"
+    - "3yx5OMDyM8c:00223"
+    - "3yx5OMDyM8c:00224"
+    - "3yx5OMDyM8c:00225"
+    - "3yx5OMDyM8c:00226"
+    - "3yx5OMDyM8c:00227"
+    - "3yx5OMDyM8c:00228"
+    - "3yx5OMDyM8c:00229"
+    - "3yx5OMDyM8c:00230"
+    - "3yx5OMDyM8c:00231"
+    - "3yx5OMDyM8c:00232"
+    - "3yx5OMDyM8c:00233"
+- id: 3yx5OMDyM8c-candidate-push-friction-neutralizes-sidespin-2
+  evidence_type: explanation
+  excerpt: The speaker attributes insufficient friction to pushing with the arm instead of controlling the ball with the fingers, and criticizes a rough movement framework.
+  reason: The instruction asks for finger control and a more subtle touch.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: 3yx5OMDyM8c
+    start_ms: 625720
+    end_ms: 652040
+    url: "https://www.youtube.com/watch?v=3yx5OMDyM8c&t=625s"
+    segment_ids:
+    - "3yx5OMDyM8c:00234"
+    - "3yx5OMDyM8c:00235"
+    - "3yx5OMDyM8c:00236"
+    - "3yx5OMDyM8c:00237"
+    - "3yx5OMDyM8c:00238"
+    - "3yx5OMDyM8c:00239"
+    - "3yx5OMDyM8c:00240"
+    - "3yx5OMDyM8c:00241"
+    - "3yx5OMDyM8c:00242"
+    - "3yx5OMDyM8c:00243"
+- id: 3yx5OMDyM8c-candidate-push-friction-neutralizes-sidespin-3
+  evidence_type: explanation
+  excerpt: 'The speaker says finger adjustments depend on the incoming ball, then introduces a sidespin-backspin example in which an initial push is prone to netting.'
+  reason: 'The speaker introduces a sidespin-backspin example and reports that the illustrated push is prone to netting.'
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 3yx5OMDyM8c
+    start_ms: 650440
+    end_ms: 679920
+    url: "https://www.youtube.com/watch?v=3yx5OMDyM8c&t=650s"
+    segment_ids:
+    - "3yx5OMDyM8c:00244"
+    - "3yx5OMDyM8c:00245"
+    - "3yx5OMDyM8c:00246"
+    - "3yx5OMDyM8c:00247"
+    - "3yx5OMDyM8c:00248"
+    - "3yx5OMDyM8c:00249"
+    - "3yx5OMDyM8c:00250"
+    - "3yx5OMDyM8c:00251"
+    - "3yx5OMDyM8c:00252"
+    - "3yx5OMDyM8c:00253"
+- id: 3yx5OMDyM8c-candidate-push-friction-neutralizes-sidespin-4
+  evidence_type: explanation
+  excerpt: 'In the sidespin-backspin example, the speaker says an initial push is prone to netting, then adjusts the racket head, sends forward and brushes more under the ball to get it on the table. A long chop is also said to go into the net.'
+  reason: 'The example contrasts a net-prone push with the described forward-and-under brushing adjustment.'
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 3yx5OMDyM8c
+    start_ms: 671480
+    end_ms: 696280
+    url: https://www.youtube.com/watch?v=3yx5OMDyM8c&t=671s
+    segment_ids:
+    - 3yx5OMDyM8c:00251
+    - 3yx5OMDyM8c:00252
+    - 3yx5OMDyM8c:00253
+    - 3yx5OMDyM8c:00254
+    - 3yx5OMDyM8c:00255
+    - 3yx5OMDyM8c:00256
+    - 3yx5OMDyM8c:00257
+    - 3yx5OMDyM8c:00258
+    - 3yx5OMDyM8c:00259
+    - 3yx5OMDyM8c:00260
+- id: 3yx5OMDyM8c-candidate-push-friction-neutralizes-sidespin-5
+  evidence_type: explanation
+  excerpt: 'After warning that a long chop would go into the net, the speaker keeps the same racket angle, brushes more under the ball with the racket’s “tail,” and extends the motion a little for more complete friction.'
+  reason: 'The cues are a retained racket angle, more under-brushing and an extended motion for friction.'
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 3yx5OMDyM8c
+    start_ms: 688000
+    end_ms: 711880
+    url: https://www.youtube.com/watch?v=3yx5OMDyM8c&t=688s
+    segment_ids:
+    - 3yx5OMDyM8c:00259
+    - 3yx5OMDyM8c:00260
+    - 3yx5OMDyM8c:00261
+    - 3yx5OMDyM8c:00262
+    - 3yx5OMDyM8c:00263
+    - 3yx5OMDyM8c:00264
+    - 3yx5OMDyM8c:00265
+    - 3yx5OMDyM8c:00266
+- id: 3yx5OMDyM8c-candidate-push-friction-neutralizes-sidespin-6
+  evidence_type: drill
+  excerpt: 'Practice feeling the push and use the fingers to control how the spinning ball crosses the net.'
+  reason: 'The speaker emphasizes developing feel rather than only repeating movement.'
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: 3yx5OMDyM8c
+    start_ms: 709520
+    end_ms: 723880
+    url: "https://www.youtube.com/watch?v=3yx5OMDyM8c&t=709s"
+    segment_ids:
+    - "3yx5OMDyM8c:00267"
+    - "3yx5OMDyM8c:00268"
+    - "3yx5OMDyM8c:00269"
+    - "3yx5OMDyM8c:00270"
+    - "3yx5OMDyM8c:00271"
+    - "3yx5OMDyM8c:00272"
+- id: bUCFpvTlaMU-candidate-contact-behind-ball-on-push-1
+  evidence_type: definition
+  excerpt: The lesson instructs contact behind the ball rather than underneath and says underneath contact pops up a weak, half-high return.
+  reason: The instruction concerns ball-contact direction and the risk of an underneath contact.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: bUCFpvTlaMU
+    start_ms: 63840
+    end_ms: 82720
+    url: https://www.youtube.com/watch?v=bUCFpvTlaMU&t=63s
+    segment_ids:
+    - bUCFpvTlaMU:00028
+    - bUCFpvTlaMU:00029
+    - bUCFpvTlaMU:00030
+    - bUCFpvTlaMU:00031
+    - bUCFpvTlaMU:00032
+    - bUCFpvTlaMU:00033
+    - bUCFpvTlaMU:00034
+    - bUCFpvTlaMU:00035
+- id: bUCFpvTlaMU-candidate-contact-behind-ball-on-push-2
+  evidence_type: explanation
+  excerpt: The speaker says pushing behind the ball controls the arc. For repeated netting, the spin is described as heavier than expected; shift contact slightly lower from behind, never purely underneath.
+  reason: The slightly-lower adjustment is tied to the repeated-netting, heavier-than-expected-spin case.
+  confidence: 0.93
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: bUCFpvTlaMU
+    start_ms: 173160
+    end_ms: 188080
+    url: https://www.youtube.com/watch?v=bUCFpvTlaMU&t=173s
+    segment_ids:
+    - bUCFpvTlaMU:00072
+    - bUCFpvTlaMU:00073
+    - bUCFpvTlaMU:00074
+    - bUCFpvTlaMU:00075
+    - bUCFpvTlaMU:00076
+    - bUCFpvTlaMU:00077
+- id: bUCFpvTlaMU-candidate-contact-behind-ball-on-push-3
+  evidence_type: explanation
+  excerpt: Even for heavy spin, the speaker warns against pushing underneath because the ball floats.
+  reason: The instruction keeps the warning about underneath contact in the heavy-spin case.
+  confidence: 0.93
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: bUCFpvTlaMU
+    start_ms: 222000
+    end_ms: 228360
+    url: https://www.youtube.com/watch?v=bUCFpvTlaMU&t=222s
+    segment_ids:
+    - bUCFpvTlaMU:00090
+    - bUCFpvTlaMU:00091
+- id: bUCFpvTlaMU-candidate-contact-behind-ball-on-push-4
+  evidence_type: explanation
+  excerpt: In the behind-ball example, the speaker says the racket blocks the ball and asks whether the ball is visible, accepting “no.”
+  reason: The spoken cue pairs behind-ball contact with the racket obscuring the ball.
+  confidence: 0.84
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: bUCFpvTlaMU
+    start_ms: 198840
+    end_ms: 205720
+    url: https://www.youtube.com/watch?v=bUCFpvTlaMU&t=198s
+    segment_ids:
+    - bUCFpvTlaMU:00081
+    - bUCFpvTlaMU:00082
+    - bUCFpvTlaMU:00083
+- id: hZmEfLkbNI8-cand-heavy-spin-push-mechanics-1
+  evidence_type: definition
+  excerpt: For a heavy-spin push, this lesson emphasizes fast racket-head rotation at contact and snap rather than arm or wrist effort.
+  reason: The speaker connects faster head rotation with a spinnier ball and compares it with serving.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: hZmEfLkbNI8
+    start_ms: 299120
+    end_ms: 322440
+    url: https://www.youtube.com/watch?v=hZmEfLkbNI8&t=299s
+    segment_ids:
+    - hZmEfLkbNI8:00121
+    - hZmEfLkbNI8:00122
+    - hZmEfLkbNI8:00123
+    - hZmEfLkbNI8:00124
+    - hZmEfLkbNI8:00125
+    - hZmEfLkbNI8:00126
+    - hZmEfLkbNI8:00127
+- id: hZmEfLkbNI8-cand-heavy-spin-push-mechanics-2
+  evidence_type: explanation
+  excerpt: For a low-arc, slow ball produced with wrist snap, the speaker says to push back softly. The following half-spin-serve cue recommends adding brush and contrasts spinny high balls with flat high balls that can be crushed. Spin is attributed to racket-head speed and snap rather than arm force or swing size.
+  reason: The passage gives a soft-push cue, then a half-spin-serve brushing cue and an explanation of spin production.
+  confidence: 0.88
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: hZmEfLkbNI8
+    start_ms: 341200
+    end_ms: 364720
+    url: https://www.youtube.com/watch?v=hZmEfLkbNI8&t=341s
+    segment_ids:
+    - hZmEfLkbNI8:00132
+    - hZmEfLkbNI8:00133
+    - hZmEfLkbNI8:00134
+    - hZmEfLkbNI8:00135
+    - hZmEfLkbNI8:00136
+    - hZmEfLkbNI8:00137
+    - hZmEfLkbNI8:00138
+    - hZmEfLkbNI8:00139
+    - hZmEfLkbNI8:00140
+    - hZmEfLkbNI8:00141
+- id: 5JzSUTg_ojc-concept-push-contact-and-spin-reviewed
+  evidence_type: explanation
+  excerpt: Using brushing contact and controlled force on push or receive balls so the ball does not go long or into the net.
+  reason: The speaker says that for aggressive incoming balls you should reduce force, focus on brushing, and not fight the ball with power.
+  confidence: 0.87
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 5JzSUTg_ojc
+    start_ms: 300720
+    end_ms: 329720
+    url: https://www.youtube.com/watch?v=5JzSUTg_ojc&t=300s
+    segment_ids:
+    - 5JzSUTg_ojc:00116
+    - 5JzSUTg_ojc:00119
+    - 5JzSUTg_ojc:00120
+    - 5JzSUTg_ojc:00127
+- id: SF0Sv2ZzrRI-concept-push-contact-and-spin-reviewed
+  evidence_type: explanation
+  excerpt: Using specific racket contact and touch to add spin in a push without overusing arm force.
+  reason: The speaker contrasts forearm force with a point push to add spin and a short explosive touch.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: SF0Sv2ZzrRI
+    start_ms: 133360
+    end_ms: 160680
+    url: https://www.youtube.com/watch?v=SF0Sv2ZzrRI&t=133s
+    segment_ids:
+    - SF0Sv2ZzrRI:00038
+    - SF0Sv2ZzrRI:00046
+- id: TMrN47uIHiI-concept-push-contact-and-spin-reviewed
+  evidence_type: explanation
+  excerpt: Using downward pressure and contact control to make the push or drop shot spinny and effective.
+  reason: The speaker links finding the contact point with pressing downward, and then says to drive the ball down into the body from above.
+  confidence: 0.88
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: TMrN47uIHiI
+    start_ms: 498680
+    end_ms: 521760
+    url: https://www.youtube.com/watch?v=TMrN47uIHiI&t=498s
+    segment_ids:
+    - TMrN47uIHiI:00150
+    - TMrN47uIHiI:00156
+    - TMrN47uIHiI:00157
+- id: H0sbIUpUNLY-cand-3-reviewed
+  evidence_type: explanation
+  excerpt: Contact choices in the push that adapt racket angle and brush to the incoming spin while keeping the ball low.
+  reason: The speaker says to open more against no-spin and keep the racket flatter against heavy spin, while still aiming to the base of the net.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: H0sbIUpUNLY
+    start_ms: 383840
+    end_ms: 408600
+    url: https://www.youtube.com/watch?v=H0sbIUpUNLY&t=383s
+    segment_ids:
+    - H0sbIUpUNLY:00118
+    - H0sbIUpUNLY:00123
+    - H0sbIUpUNLY:00128
+- id: o6OyHBmkF2U-concept-push-contact-and-spin-reviewed
+  evidence_type: explanation
+  excerpt: Creating different push spin by changing contact quality and racket action, including adding friction or removing it for no-spin.
+  reason: The speaker explains that pulling the racket backward at contact increases spin, and that no-spin is created by sending the ball without adding friction.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: o6OyHBmkF2U
+    start_ms: 15240
+    end_ms: 29280
+    url: https://www.youtube.com/watch?v=o6OyHBmkF2U&t=15s
+    segment_ids:
+    - o6OyHBmkF2U:00006
+    - o6OyHBmkF2U:00008
+    - o6OyHBmkF2U:00009
+    - o6OyHBmkF2U:00010
+- id: h5jUJL_P82w-concept-push-contact-and-spin-reviewed
+  evidence_type: explanation
+  excerpt: Using the bottom half of the racket to brush the ball, matching racket starting height to bounce height, and adjusting for spin so the ball clears the net with controlled trajectory.
+  reason: The speaker explains contact-zone selection, bounce-height matching, and how under-ball brushing creates heavy, sinking backspin.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: h5jUJL_P82w
+    start_ms: 496200
+    end_ms: 522500
+    url: https://www.youtube.com/watch?v=h5jUJL_P82w&t=496s
+    segment_ids:
+    - h5jUJL_P82w:00109
+    - h5jUJL_P82w:00110
+    - h5jUJL_P82w:00111
+    - h5jUJL_P82w:00112
+    - h5jUJL_P82w:00113
+    - h5jUJL_P82w:00114
+    - h5jUJL_P82w:00115
+- id: D1cBF0nsjKo-concept-push-contact-and-spin-reviewed
+  evidence_type: explanation
+  excerpt: Using the racket path and contact zone to manage incoming spin, create friction, and keep the push low and controllable.
+  reason: The transcript contrasts direct-behind contact with slight side contact, then describes level-first-then-downward motion and brushing that generates friction to handle spin.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: D1cBF0nsjKo
+    start_ms: 636960
+    end_ms: 642120
+    url: https://www.youtube.com/watch?v=D1cBF0nsjKo&t=636s
+    segment_ids:
+    - D1cBF0nsjKo:00239
+- id: Nmf0ZWP6dn0-cand-push-contact-and-spin-reviewed
+  evidence_type: explanation
+  excerpt: A push should brush with the incoming spin instead of hitting flat, so the ball carries enough spin and arc to avoid going into the net.
+  reason: They recommend brushing slightly on the right side of the ball for left side spin and note that this keeps the push from going into the net.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: Nmf0ZWP6dn0
+    start_ms: 33760
+    end_ms: 49040
+    url: https://www.youtube.com/watch?v=Nmf0ZWP6dn0&t=33s
+    segment_ids:
+    - Nmf0ZWP6dn0:00012
+    - Nmf0ZWP6dn0:00013
+    - Nmf0ZWP6dn0:00014
+    - Nmf0ZWP6dn0:00015
+    - Nmf0ZWP6dn0:00016
+    - Nmf0ZWP6dn0:00017
+- id: wSzmpXHp64Q-concept-push-contact-and-spin-reviewed
+  evidence_type: explanation
+  excerpt: Generating the right amount of friction and trajectory in a push by using the opponent's spin rather than trying to neutralize spin completely.
+  reason: The speaker explains that a pushed ball may have little new spin, and that spinny balls require friction-based lifting while no-spin balls need a closing action.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: wSzmpXHp64Q
+    start_ms: 427033
+    end_ms: 443766
+    url: https://www.youtube.com/watch?v=wSzmpXHp64Q&t=427s
+    segment_ids:
+    - wSzmpXHp64Q:00128
+    - wSzmpXHp64Q:00129
+    - wSzmpXHp64Q:00130
+    - wSzmpXHp64Q:00131
+    - wSzmpXHp64Q:00132
+    - wSzmpXHp64Q:00133
+    - wSzmpXHp64Q:00134
+- id: 4dKlFXYLZhc-concept-push-contact-and-spin-reviewed
+  evidence_type: definition
+  excerpt: A pushing technique that emphasizes friction and brushing contact, with no pulling back during the contact phase, to handle spin better and improve placement.
+  reason: The speaker lists friction, peak-of-bounce timing, no pullback, and placement variations as the core of the modified push.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 4dKlFXYLZhc
+    start_ms: 160733
+    end_ms: 177766
+    url: https://www.youtube.com/watch?v=4dKlFXYLZhc&t=160s
+    segment_ids:
+    - 4dKlFXYLZhc:00051
+    - 4dKlFXYLZhc:00053
+    - 4dKlFXYLZhc:00054
+    - 4dKlFXYLZhc:00055
+- id: -iWLwSvOJ2U-concept-push-contact-and-spin-reviewed
+  evidence_type: definition
+  excerpt: Creating a stable push by contacting behind the ball and generating enough friction to handle incoming spin.
+  reason: The speaker says to contact behind the ball and to prioritize brushing/friction so spin is neutralized.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: -iWLwSvOJ2U
+    start_ms: 66300
+    end_ms: 89900
+    url: https://www.youtube.com/watch?v=-iWLwSvOJ2U&t=66s
+    segment_ids:
+    - -iWLwSvOJ2U:00016
+    - -iWLwSvOJ2U:00018
+    - -iWLwSvOJ2U:00021
+- id: h5jUJL_P82w-concept-push-contact-and-spin-codex-reviewed
+  evidence_type: explanation
+  excerpt: 'The speaker links push trajectory to racket contact: top-half contact while pushing down pops the ball high; use the bottom half to brush it and create friction.'
+  reason: The lesson contrasts top-half contact during a downward push with bottom-half brushing.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: h5jUJL_P82w
+    start_ms: 436900
+    end_ms: 455300
+    url: https://www.youtube.com/watch?v=h5jUJL_P82w&t=436s
+    segment_ids:
+    - h5jUJL_P82w:00096
+    - h5jUJL_P82w:00097
+    - h5jUJL_P82w:00098
+    - h5jUJL_P82w:00099
 relations:
-  - relation_type: part_of
-    target_concept_id: concept-push-technique
-    sources:
-      - video_id: p3hweUir1Mg
-        start_ms: 213433
-        end_ms: 231366
-        url: "https://www.youtube.com/watch?v=p3hweUir1Mg&t=213s"
-        segment_ids: *id001
-    confidence: 0.9
-    review_status: approved
+- relation_type: part_of
+  target_concept_id: concept-push-technique
+  sources:
+  - video_id: p3hweUir1Mg
+    start_ms: 206400
+    end_ms: 231366
+    url: https://www.youtube.com/watch?v=p3hweUir1Mg&t=206s
+    segment_ids:
+    - p3hweUir1Mg:00052
+    - p3hweUir1Mg:00053
+    - p3hweUir1Mg:00054
+    - p3hweUir1Mg:00055
+    - p3hweUir1Mg:00056
+    - p3hweUir1Mg:00057
+    - p3hweUir1Mg:00058
+  confidence: 0.9
+  review_status: approved

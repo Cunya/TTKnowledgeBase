@@ -1,6 +1,6 @@
 ---
 import type { VideoTocEntry } from '../lib/videoToc';
-import { editorialNarrative, formatTime, momentAnchor } from '../lib/videoToc';
+import { formatTime, momentAnchor } from '../lib/videoToc';
 import ReviewControls from './ReviewControls.astro';
 
 interface Props {
@@ -59,8 +59,8 @@ const conceptHref = (slug: string) => `${root}/concepts/${slug}/`;
           <a class="video-toc-youtube" href={item.source.url} target="_blank" rel="noreferrer">YouTube ↗</a>
         </div>
       </div>
-      <p class="video-toc-moment-title">{editorialNarrative(item.excerpt)}</p>
-      <small>{editorialNarrative(item.reason)}</small>
+      <p class="video-toc-moment-title">{item.excerpt}</p>
+      <small>{item.reason}</small>
       <ReviewControls videoId={item.source.video_id} conceptId={concept.id} startMs={item.source.start_ms} endMs={item.source.end_ms} compact />
     </li>)}
     </ol>

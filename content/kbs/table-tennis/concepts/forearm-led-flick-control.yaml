@@ -1,22 +1,17 @@
 id: concept-forearm-led-flick-control
 slug: forearm-led-flick-control
-label: Forearm-led flick control
+label: Wrist action with forearm movement and arm support
 aliases:
-- move your forearm straight forward
-- forearm to adjust direction and trajectory
-short_definition: Using the forearm, not the wrist, to drive the flick and to adjust direction and trajectory.
+- wrist action and arm support
+short_definition: In the first explanation, shake the wrist and then pull the forearm forward; when the ball comes, push the wrist forward. After generating enough friction, push the forearm forward rather than upward. That speaker describes the ball as less likely to spin. A separate explanation adds inward rubbing and arm support rather than relying on the wrist alone, describing a ball that spins, curves, moves horizontally and stays in.
 evidence_summary: >-
-  This contiguous 18-second span directly explains using friction followed by a forward forearm action, explicitly contrasting forward movement with upward movement. This contiguous correction explains that the arm must support the flick instead of the wrist working alone, and the resulting ball behavior. It supports the existing forearm-led flick-control concept without relying on 's unverified demonstration.
-evidence_summary_source_hash: "sha256:faf761622d5f5e166262b64dd34e8c0251385d91c770bc0a6d0ee013781716d6"
-evidence_summary_generator: "deterministic"
+  In the first explanation, shake the wrist and then pull the forearm forward; when the ball comes, push the wrist forward. After generating enough friction, push the forearm forward rather than upward. That speaker describes the ball as less likely to spin. A separate explanation adds inward rubbing and arm support rather than relying on the wrist alone, describing a ball that spins, curves, moves horizontally and stays in.
 concept_type: fundamentals
 facets:
   category:
   - fundamentals
   - stroke
-  level:
-  - intermediate
-difficulty: intermediate
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -163,8 +158,8 @@ evidence:
     - kaeWe3HbD8I:00075
 - id: 2xGbue3FXIw-concept-forearm-led-flick-control-codex-reviewed
   evidence_type: explanation
-  excerpt: After shaking my wrist, pull the forearm forward. After generating enough friction, push forward with the forearm. The direction of the forearm should be forward, not upward. This way, the ball is less likely to spin.
-  reason: This contiguous 18-second span directly explains using friction followed by a forward forearm action, explicitly contrasting forward movement with upward movement.
+  excerpt: After shaking the wrist, pull the forearm forward. When the ball comes, push the wrist forward. After generating enough friction, push the forearm forward, not upward. The speaker describes the ball as less likely to spin.
+  reason: After shaking the wrist, pull the forearm forward. When the ball comes, push the wrist forward. After generating enough friction, push the forearm forward, not upward. The speaker describes the ball as less likely to spin.
   confidence: 0.98
   visual_status: transcript_inferred
   review_status: approved
@@ -181,8 +176,8 @@ evidence:
     - 2xGbue3FXIw:00058
 - id: mujrVgy34sE-concept-forearm-led-flick-control-codex-reviewed
   evidence_type: correction
-  excerpt: You can't just rely on your wrist; your arm also needs to provide support. Then the ball will spin and curve, move horizontally, and stay in.
-  reason: This contiguous correction explains that the arm must support the flick instead of the wrist working alone, and describes the resulting ball behavior. It supports the existing forearm-led flick-control concept without relying on the transcript's unverified demonstration.
+  excerpt: Rub inward and add arm support rather than relying on the wrist alone. The speaker describes the ball as spinning, curving, moving horizontally and staying in.
+  reason: Rub inward and add arm support rather than relying on the wrist alone. The speaker describes the ball as spinning, curving, moving horizontally and staying in.
   confidence: 0.94
   visual_status: transcript_inferred
   review_status: approved

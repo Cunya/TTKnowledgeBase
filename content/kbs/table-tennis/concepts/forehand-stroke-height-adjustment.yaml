@@ -1,24 +1,17 @@
 id: concept-forehand-stroke-height-adjustment
 slug: forehand-stroke-height-adjustment
-label: Forehand stroke height adjustment
+label: Racquet height adjustment to avoid net errors
 aliases:
-  - adjust your racquet height according to the ball's height
-  - lower your racquet on the backswing
-short_definition: Changing racket height and backswing height to match the incoming ball height and prevent net errors.
+- adjust your racquet height according to the ball's height
+- lower your racquet on the backswing
+short_definition: Adjust racket height to ball height; if a low-trajectory ball causes a net error, lower the racket on the backswing.
 evidence_summary: >-
-  Changing racket height and backswing height to match the incoming ball height and prevent net
-  errors.
-evidence_summary_source_hash: "sha256:9160d687be7b7fe208e0d799275d008cc80dd141f898052dd26b78503d2daa4c"
-evidence_summary_generator: "deterministic"
+  The speaker recommends adjusting racket height to ball height and lowering the backswing if a low-trajectory ball causes a net error. Contacting the ball on the middle or upper-middle part of the racket is recommended to reduce the chance of hitting the net.
 concept_type: stroke
 facets:
   category:
-    - stroke
-  side:
-    - forehand
-  level:
-    - intermediate
-difficulty: intermediate
+  - stroke
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -29,73 +22,73 @@ generated_by:
   prompt_version: 1.0.0
   schema_version: 1.0.0
 evidence:
-  - id: 1Issn-5noM4-concept-forehand-stroke-height-adjustment-reviewed
-    evidence_type: explanation
-    excerpt: Changing racket height and backswing height to match the incoming ball height and prevent net errors.
-    reason: The speaker explains that racket height should be adjusted to the ball's height and that lowering the backswing helps get low balls over the net.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 1Issn-5noM4
-      start_ms: 26633
-      end_ms: 43233
-      url: https://www.youtube.com/watch?v=1Issn-5noM4&t=26s
-      segment_ids:
-        - 1Issn-5noM4:00007
-        - 1Issn-5noM4:00008
-        - 1Issn-5noM4:00009
-        - 1Issn-5noM4:00010
-  - id: VR1gORHDMeQ-concept-forehand-stroke-height-adjustment-reviewed
-    evidence_type: explanation
-    excerpt: Changing racket height and backswing height to match the incoming ball height.
-    reason: The speaker explains that higher balls need a higher backswing and low balls require lowering the racket, with adjustment based on incoming ball height.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: VR1gORHDMeQ
-      start_ms: 22200
-      end_ms: 51233
-      url: https://www.youtube.com/watch?v=VR1gORHDMeQ&t=22s
-      segment_ids:
-        - VR1gORHDMeQ:00005
-        - VR1gORHDMeQ:00006
-        - VR1gORHDMeQ:00009
-        - VR1gORHDMeQ:00011
-  - id: fX0-3KtEzUY-concept-forehand-stroke-height-adjustment-reviewed
-    evidence_type: explanation
-    excerpt: Changing racket height and stroke shape according to the incoming ball height and distance, especially for short balls and high balls.
-    reason: The speaker explains that closer or shorter balls require more compact control and that farther balls require more space.
-    confidence: 0.85
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: fX0-3KtEzUY
-      start_ms: 645300
-      end_ms: 674333
-      url: https://www.youtube.com/watch?v=fX0-3KtEzUY&t=645s
-      segment_ids:
-        - fX0-3KtEzUY:00130
-        - fX0-3KtEzUY:00131
-        - fX0-3KtEzUY:00132
-        - fX0-3KtEzUY:00133
-        - fX0-3KtEzUY:00134
-        - fX0-3KtEzUY:00135
-  - id: 1Issn-5noM4-concept-forehand-stroke-height-adjustment-codex-reviewed
-    evidence_type: explanation
-    excerpt: Adjust your racquet height according to the ball's height. If a low-trajectory ball causes you to hit the net, lower your racquet on the backswing to get the ball over. Aim to contact the ball on the middle or upper-middle part of your racquet to reduce the chance of hitting the net.
-    reason: These contiguous segments directly explain adjusting racquet height and backswing height for low-trajectory balls, along with a contact-area recommendation to reduce net errors.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 1Issn-5noM4
-      start_ms: 26633
-      end_ms: 43233
-      url: https://www.youtube.com/watch?v=1Issn-5noM4&t=26s
-      segment_ids:
-        - 1Issn-5noM4:00007
-        - 1Issn-5noM4:00008
-        - 1Issn-5noM4:00009
-        - 1Issn-5noM4:00010
+- id: 1Issn-5noM4-concept-forehand-stroke-height-adjustment-reviewed
+  evidence_type: explanation
+  excerpt: Changing racket height and backswing height to match the incoming ball height and prevent net errors.
+  reason: The speaker explains that racket height should be adjusted to the ball's height and that lowering the backswing helps get low balls over the net.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 1Issn-5noM4
+    start_ms: 26633
+    end_ms: 43233
+    url: https://www.youtube.com/watch?v=1Issn-5noM4&t=26s
+    segment_ids:
+    - 1Issn-5noM4:00007
+    - 1Issn-5noM4:00008
+    - 1Issn-5noM4:00009
+    - 1Issn-5noM4:00010
+- id: VR1gORHDMeQ-concept-forehand-stroke-height-adjustment-reviewed
+  evidence_type: explanation
+  excerpt: Changing racket height and backswing height to match the incoming ball height.
+  reason: The speaker explains that higher balls need a higher backswing and low balls require lowering the racket, with adjustment based on incoming ball height.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: VR1gORHDMeQ
+    start_ms: 22200
+    end_ms: 51233
+    url: https://www.youtube.com/watch?v=VR1gORHDMeQ&t=22s
+    segment_ids:
+    - VR1gORHDMeQ:00005
+    - VR1gORHDMeQ:00006
+    - VR1gORHDMeQ:00009
+    - VR1gORHDMeQ:00011
+- id: fX0-3KtEzUY-concept-forehand-stroke-height-adjustment-reviewed
+  evidence_type: explanation
+  excerpt: Changing racket height and stroke shape according to the incoming ball height and distance, especially for short balls and high balls.
+  reason: The speaker explains that closer or shorter balls require more compact control and that farther balls require more space.
+  confidence: 0.85
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: fX0-3KtEzUY
+    start_ms: 645300
+    end_ms: 674333
+    url: https://www.youtube.com/watch?v=fX0-3KtEzUY&t=645s
+    segment_ids:
+    - fX0-3KtEzUY:00130
+    - fX0-3KtEzUY:00131
+    - fX0-3KtEzUY:00132
+    - fX0-3KtEzUY:00133
+    - fX0-3KtEzUY:00134
+    - fX0-3KtEzUY:00135
+- id: 1Issn-5noM4-concept-forehand-stroke-height-adjustment-codex-reviewed
+  evidence_type: explanation
+  excerpt: Adjust your racquet height according to the ball's height. If a low-trajectory ball causes you to hit the net, lower your racquet on the backswing to get the ball over. Aim to contact the ball on the middle or upper-middle part of your racquet to reduce the chance of hitting the net.
+  reason: For a low-trajectory ball that would otherwise hit the net, lower the racquet on the backswing. Contact the ball on the middle or upper-middle part of the racquet to reduce net errors.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: 1Issn-5noM4
+    start_ms: 26633
+    end_ms: 43233
+    url: https://www.youtube.com/watch?v=1Issn-5noM4&t=26s
+    segment_ids:
+    - 1Issn-5noM4:00007
+    - 1Issn-5noM4:00008
+    - 1Issn-5noM4:00009
+    - 1Issn-5noM4:00010

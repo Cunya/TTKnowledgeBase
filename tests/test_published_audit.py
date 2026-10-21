@@ -86,6 +86,43 @@ def test_actual_target_and_caption_changes_reopen_claims():
     assert all(v is None for v in result["items"][0]["decisions"].values())
 
 
+def test_context_refresh_does_not_discard_pending_advisory_overlap():
+    concepts, videos = fixture()
+    concepts[0].relations = []
+    concepts[1].aliases = [concepts[0].label]
+    reviewed = record_audit_reviews(build_published_audit(concepts, videos, 'test'),
+        reviews_for(build_published_audit(concepts, videos, 'test')))
+    concepts[1].short_definition = 'Changed related wording.'
+    advisory = build_published_audit(concepts, videos, 'test', reviewed)
+    assert advisory['items'][0]['overlap_review_pending']
+    videos[0].transcript.segments[0].text = 'New actual surrounding condition.'
+    refreshed = build_published_audit(concepts, videos, 'test', advisory)
+    assert refreshed['items'][0]['overlap_review_pending']
+    assert all(value is None for value in refreshed['items'][0]['decisions'].values())
+
+
+def test_sparse_citation_keeps_complete_clip_context_without_expanding_owned_ids():
+    concepts, videos = fixture()
+    concept, video = concepts[0], videos[0]
+    video.duration_ms = 20000
+    video.transcript.segments = [Segment(id=f'audit-video:{i:05d}', video_id=video.id,
+        text='Keep the motion compact.' if i in {0, 9} else 'Intervening context.',
+        normalized_text='Context.', start_ms=i*2000, duration_ms=2000) for i in range(10)]
+    concept.relations = []
+    concept.evidence[0].source = SourceSpan(video_id=video.id, start_ms=0, end_ms=20000,
+        url=video.canonical_url+'&t=0s', segment_ids=['audit-video:00000', 'audit-video:00009'])
+    dossier = audit_dossier(concept, {video.id: video}, {concept.id: concept})
+    assert [r['id'] for r in dossier['sources'][0]['selected_rows']] == concept.evidence[0].source.segment_ids
+    assert {r['id'] for r in dossier['sources'][0]['context_rows']} == {
+        f'audit-video:{i:05d}' for i in range(1, 9)}
+    reviewed = record_audit_reviews(build_published_audit([concept], [video], 'test'),
+        reviews_for(build_published_audit([concept], [video], 'test')))
+    video.transcript.segments[4].text = 'Unless the ball is high.'
+    current = build_published_audit([concept], [video], 'test', reviewed)
+    assert current['items'][0]['fingerprint'] != reviewed['items'][0]['fingerprint']
+    assert all(value is None for value in current['items'][0]['decisions'].values())
+
+
 def test_legacy_claim_cache_bootstraps_only_identical_inputs():
     concepts, videos = fixture()
     audit = build_published_audit(concepts, videos, "test")

@@ -1,267 +1,326 @@
 id: concept-forehand-loop-practice-progression
 slug: forehand-loop-practice-progression
-label: Forehand loop practice progression
-aliases: [loop drills, low-power loop practice, loop shadow practice]
-short_definition: Build the loop from coordinated shadow movement to stable fixed-point strokes at moderate effort before adding speed, variation, and match pressure.
+label: Practice intensity, timing and coordination
+aliases:
+- reduced-power practice
+- timing and coordination drills
+short_definition: Exercises for reduced-power practice, arm-and-body coordination, contact timing and variable feeds. Some examples specifically concern loops; others use shadow practice or varied topspin-rally feeds.
 evidence_summary: >-
-  Forehand loop practice should begin at low intensity so the motion becomes stable and repeatable
-  before power is added. A useful progression is to build feel and timing with controlled loops,
-  then add footwork and variability, and only later increase to full power once the player can
-  adjust the arc and contact reliably against different ball qualities.
-evidence_summary_source_hash: "sha256:5139cf5d17529bdec162e759798e192d4cfc999f2e4c56b40c781e20190603e1"
-evidence_summary_generator: "codex"
-detailed_definition: Early practice should reduce difficulty so the player can stabilize timing, contact, and body-arm structure. Shadow practice develops coordination without ball pressure; fixed-point feeding at roughly 30–50 percent effort makes the movement repeatable. After that base is stable, practice different contact timings and introduce variations in pace, height, depth, and placement before adding match pressure.
+  The rally-practice advice uses 30–40% power before an amateur’s technique and structure are stable. Another cue coordinates arm and body, then uses shadow practice without hitting before ball training. A timing drill alternates the rise and start of descent; a topspin rally drill asks partners or robots to vary speed, height and tempo and partners to provide awkward placements rather than perfect feeds.
+detailed_definition: In one fixed-point drill, a partner blocks with either forehand or backhand and the learner uses about 40–50% strength without standing too close. Another lesson recommends 30–40% power for amateurs before technique and structure are stable. A shadow-practice cue first coordinates arm and body, then uses racket swings without hitting before ball training. Separate drills alternate rising and early-descending contact or vary feed speed, height, pace and placement.
 concept_type: drill
-facets: {category: [practice, progression], side: [forehand], spin: [topspin], level: [beginner]}
-difficulty: beginner
+facets:
+  category:
+  - practice
+  spin:
+  - topspin
+difficulty:
 review_status: approved
 evidence:
-  - id: practice-moderate-power-spinmaster
-    evidence_type: drill
-    excerpt: Practice at roughly 40 to 50 percent effort instead of using full power.
-    reason: Establishes a controllable intensity for fixed-point learning.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    visual_source: {video_id: I99BjizeWeE, start_ms: 205000, end_ms: 220000, url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=205s", selection_method: nearby_visual_inference, note: Fixed-point feeding demonstrates stable moderate-power loops.}
-    review_status: approved
-    source: {video_id: I99BjizeWeE, start_ms: 208633, end_ms: 213900, url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=208s", segment_ids: ["I99BjizeWeE:00068", "I99BjizeWeE:00069"]}
-  - id: practice-thirty-forty-global
-    evidence_type: drill
-    excerpt: Use 30–40 percent power to establish a solid fundamental swing.
-    reason: A second coach independently recommends reduced effort for technique stability.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    visual_source: {video_id: Cq6MbP6TEdc, start_ms: 298000, end_ms: 312000, url: "https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=298s", selection_method: nearby_visual_inference, note: Controlled live loops demonstrate the recommended practice intensity.}
-    review_status: approved
-    source: {video_id: Cq6MbP6TEdc, start_ms: 309033, end_ms: 313666, url: "https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=309s", segment_ids: ["Cq6MbP6TEdc:00076"]}
-  - id: practice-shadow-coordination-spinmaster
-    evidence_type: drill
-    excerpt: Shadow swings with the racket, without contacting the ball, build coordination.
-    reason: Places unloaded coordination work before ball drills.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    visual_source: {video_id: I99BjizeWeE, start_ms: 500000, end_ms: 514000, url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=500s", selection_method: nearby_visual_inference, note: Segmented shadow swings demonstrate the coordination exercise.}
-    review_status: approved
-    source: {video_id: I99BjizeWeE, start_ms: 503666, end_ms: 508400, url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=503s", segment_ids: ["I99BjizeWeE:00154"]}
-  - id: practice-multiple-contact-timings-global
-    evidence_type: drill
-    excerpt: Alternate between contacting the ball on the rise and just after the peak.
-    reason: Progresses a stable loop into deliberate timing adjustment.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: G7eiadOxN8E, start_ms: 99666, end_ms: 117733, url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=99s", segment_ids: ["G7eiadOxN8E:00024", "G7eiadOxN8E:00025", "G7eiadOxN8E:00027"]}
-    spoken_context_end_ms: 117733
-  - id: practice-variable-feed-rhythm-global
-    evidence_type: drill
-    excerpt: Ask for slower, higher, faster, and awkwardly placed balls instead of perfect feeds.
-    reason: Adds controlled variability so timing adapts to changing ball quality.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source: {video_id: G7eiadOxN8E, start_ms: 169666, end_ms: 195100, url: "https://www.youtube.com/watch?v=G7eiadOxN8E&t=169s", segment_ids: ["G7eiadOxN8E:00039", "G7eiadOxN8E:00040", "G7eiadOxN8E:00042", "G7eiadOxN8E:00043"]}
-    spoken_context_end_ms: 207433
-  - id: I99BjizeWeE-cand-mid-far-brushing-drill-1
-    evidence_type: drill
-    excerpt: A drill where the player moves farther from the table, slows the rally, and uses wrist-driven brushing to build touch and feel for the loop.
-    reason: The speaker explicitly prescribes moving back and brushing without power to train feel.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: I99BjizeWeE
-      start_ms: 271000
-      end_ms: 296133
-      url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=271s"
-      segment_ids:
-        - "I99BjizeWeE:00085"
-        - "I99BjizeWeE:00086"
-        - "I99BjizeWeE:00087"
-        - "I99BjizeWeE:00089"
-        - "I99BjizeWeE:00090"
-  - id: I99BjizeWeE-cand-mid-far-brushing-drill-2
-    evidence_type: explanation
-    excerpt: A drill where the player moves farther from the table, slows the rally, and uses wrist-driven brushing to build touch and feel for the loop.
-    reason: The rationale is that slower ball speed at greater distance improves brushing awareness and basic touch before returning to normal position.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: I99BjizeWeE
-      start_ms: 296600
-      end_ms: 308933
-      url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=296s"
-      segment_ids:
-        - "I99BjizeWeE:00091"
-        - "I99BjizeWeE:00093"
-        - "I99BjizeWeE:00094"
-  - id: I99BjizeWeE-cand-mid-far-brushing-drill-3
-    evidence_type: explanation
-    excerpt: A drill where the player moves farther from the table, slows the rally, and uses wrist-driven brushing to build touch and feel for the loop.
-    reason: The rationale is that slower ball speed at greater distance improves brushing awareness and basic touch before returning to normal position.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: I99BjizeWeE
-      start_ms: 332033
-      end_ms: 338500
-      url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=332s"
-      segment_ids:
-        - "I99BjizeWeE:00103"
-        - "I99BjizeWeE:00104"
-  - id: I99BjizeWeE-cand-loop-acceleration-band-drill-1
-    evidence_type: drill
-    excerpt: A resistance-band drill used to improve arm-closing speed and acceleration for better forehand loop quality.
-    reason: The speaker offers a concrete equipment-based drill to fix slow arm closure.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: I99BjizeWeE
-      start_ms: 652233
-      end_ms: 666866
-      url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=652s"
-      segment_ids:
-        - "I99BjizeWeE:00199"
-        - "I99BjizeWeE:00200"
-        - "I99BjizeWeE:00201"
-        - "I99BjizeWeE:00202"
-  - id: PDFXww03DHM-concept-forehand-loop-practice-progression-reviewed
-    evidence_type: explanation
-    excerpt: Train loop mechanics deliberately by focusing on arc control, lifting or pressing the arc for different spins, and avoiding rushed power application.
-    reason: 'The instruction gives a practice rule for underspin and topspin: lift the arc against underspin and press the arc against topspin, regardless of ball position.'
-    confidence: 0.88
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: PDFXww03DHM
-      start_ms: 541240
-      end_ms: 559431
-      url: https://www.youtube.com/watch?v=PDFXww03DHM&t=541s
-      segment_ids:
-        - PDFXww03DHM:00180
-        - PDFXww03DHM:00181
-        - PDFXww03DHM:00182
-        - PDFXww03DHM:00183
-        - PDFXww03DHM:00184
-  - id: nENxAvinCe8-concept-forehand-loop-practice-progression-reviewed
-    evidence_type: drill
-    excerpt: A training sequence that starts with controlled looping, then adds footwork, then alternates controlled and power loops before full-power looping.
-    reason: 'The speaker gives an explicit progression: 20-30% power for consistency, add footwork, then alternate controlled and power loops, and only then move to full power.'
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: nENxAvinCe8
-      start_ms: 599566
-      end_ms: 627266
-      url: https://www.youtube.com/watch?v=nENxAvinCe8&t=599s
-      segment_ids:
-        - nENxAvinCe8:00129
-        - nENxAvinCe8:00130
-        - nENxAvinCe8:00131
-        - nENxAvinCe8:00133
-  - id: DaHEb394UtA-concept-forehand-loop-practice-progression-reviewed
-    evidence_type: drill
-    excerpt: Practice brushing first with a compact, stopped motion, then add other arm movements later after the brushing pattern is established.
-    reason: 'The speaker recommends a teaching progression: stop at chest height, concentrate force, practice brushing this way first, and only later add forearm and upper arm extension.'
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: DaHEb394UtA
-      start_ms: 500639
-      end_ms: 523039
-      url: https://www.youtube.com/watch?v=DaHEb394UtA&t=500s
-      segment_ids:
-        - DaHEb394UtA:00158
-        - DaHEb394UtA:00159
-        - DaHEb394UtA:00160
-        - DaHEb394UtA:00161
-        - DaHEb394UtA:00162
-        - DaHEb394UtA:00163
-        - DaHEb394UtA:00164
-        - DaHEb394UtA:00165
-        - DaHEb394UtA:00166
-  - id: i-n17lWXlSo-concept-forehand-loop-practice-progression-reviewed
-    evidence_type: drill
-    excerpt: Build the loop in stages, starting with shadow swings, then racket swings, then adding hip drive, before emphasizing ball contact.
-    reason: 'The speaker recommends a staged progression: shadow swing first, then swing with the racket, then add hip drive, and only later work with the ball.'
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: i-n17lWXlSo
-      start_ms: 762720
-      end_ms: 782000
-      url: https://www.youtube.com/watch?v=i-n17lWXlSo&t=762s
-      segment_ids:
-        - i-n17lWXlSo:00249
-        - i-n17lWXlSo:00250
-        - i-n17lWXlSo:00251
-        - i-n17lWXlSo:00252
-        - i-n17lWXlSo:00253
-        - i-n17lWXlSo:00254
-        - i-n17lWXlSo:00255
-        - i-n17lWXlSo:00256
-        - i-n17lWXlSo:00257
-  - id: Z4d7dw-cgfI-concept-forehand-flick-practice-progression-reviewed
-    evidence_type: drill
-    excerpt: A staged practice method for forehand flicks that starts with isolated wrist work and shadow practice, then self-tossing or partner/ball-machine drills, before using the stroke in matches.
-    reason: The transcript recommends repeated training of the receive point, wrist isolation, shadow practice, self-tossing, partner short serves, and ball-machine practice before match use.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: Z4d7dw-cgfI
-      start_ms: 163200
-      end_ms: 192100
-      url: https://www.youtube.com/watch?v=Z4d7dw-cgfI&t=163s
-      segment_ids:
-        - Z4d7dw-cgfI:00049
-        - Z4d7dw-cgfI:00050
-        - Z4d7dw-cgfI:00051
-        - Z4d7dw-cgfI:00052
-        - Z4d7dw-cgfI:00053
-        - Z4d7dw-cgfI:00054
-        - Z4d7dw-cgfI:00055
-        - Z4d7dw-cgfI:00056
-  - id: LopC3UNnOXM-concept-forehand-loop-practice-progression-reviewed
-    evidence_type: drill
-    excerpt: A practice progression that trains forehand topspin by using high balls, adjusting rhythm, and comparing it with counter-looping.
-    reason: The speaker frames the segment as practice for topspin and counter-loop, including lifting balls and practicing high topspin shots.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: LopC3UNnOXM
-      start_ms: 108866
-      end_ms: 113366
-      url: https://www.youtube.com/watch?v=LopC3UNnOXM&t=108s
-      segment_ids:
-        - LopC3UNnOXM:00038
-  - id: 7JSZZSSjCqo-concept-forehand-loop-practice-progression-reviewed
-    evidence_type: drill
-    excerpt: A progression for building forehand looping that starts with controlled feeding and stable form before adding movement and match play.
-    reason: The speaker prescribes feeder, robot, and one-by-one drills to stabilize the form before increasing complexity.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 7JSZZSSjCqo
-      start_ms: 94033
-      end_ms: 112500
-      url: https://www.youtube.com/watch?v=7JSZZSSjCqo&t=94s
-      segment_ids:
-        - 7JSZZSSjCqo:00023
-        - 7JSZZSSjCqo:00024
-        - 7JSZZSSjCqo:00025
-        - 7JSZZSSjCqo:00026
-        - 7JSZZSSjCqo:00027
+- id: practice-moderate-power-spinmaster
+  evidence_type: drill
+  excerpt: For two-player fixed-point practice, a partner can block with forehand or backhand. Do not stand too close or use full power; use about 40–50% strength. The lesson warns that hard hitting increases speed too much and unnecessarily increases learning difficulty.
+  reason: Use the stated 40–50% strength in this partner-block fixed-point drill rather than full power or unnecessary difficulty.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  visual_source: {video_id: I99BjizeWeE, start_ms: 205000, end_ms: 220000, url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=205s", selection_method: nearby_visual_inference, note: Unverified nearby visual proposal; full-clip inspection is required to confirm whether it illustrates this practice cue.}
+  review_status: approved
+  source:
+    video_id: I99BjizeWeE
+    start_ms: 198166
+    end_ms: 227000
+    url: https://www.youtube.com/watch?v=I99BjizeWeE&t=198s
+    segment_ids:
+    - I99BjizeWeE:00064
+    - I99BjizeWeE:00065
+    - I99BjizeWeE:00066
+    - I99BjizeWeE:00067
+    - I99BjizeWeE:00068
+    - I99BjizeWeE:00069
+    - I99BjizeWeE:00070
+    - I99BjizeWeE:00071
+    - I99BjizeWeE:00072
+    - I99BjizeWeE:00073
+- id: practice-thirty-forty-global
+  evidence_type: drill
+  excerpt: When practicing loops in a rally, do not use full power. For amateurs before technique and structure are stable, the lesson recommends 30–40% power to establish a fundamental swing, find rhythm and contact, and keep form from breaking down.
+  reason: For an amateur whose technique and structure are not yet stable, the recommendation is 30–40% power in rally-loop practice.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  visual_source: {video_id: Cq6MbP6TEdc, start_ms: 298000, end_ms: 312000, url: "https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=298s", selection_method: nearby_visual_inference, note: Unverified nearby visual proposal; full-clip inspection is required to confirm whether it illustrates this practice cue.}
+  review_status: approved
+  source:
+    video_id: Cq6MbP6TEdc
+    start_ms: 298433
+    end_ms: 320933
+    url: https://www.youtube.com/watch?v=Cq6MbP6TEdc&t=298s
+    segment_ids:
+    - Cq6MbP6TEdc:00073
+    - Cq6MbP6TEdc:00074
+    - Cq6MbP6TEdc:00075
+    - Cq6MbP6TEdc:00076
+    - Cq6MbP6TEdc:00077
+    - Cq6MbP6TEdc:00078
+- id: practice-shadow-coordination-spinmaster
+  evidence_type: drill
+  excerpt: First coordinate the arm with the body. Once the movement is familiar, hold the racket and shadow-practice without hitting the ball; the lesson says ball training will then feel more coordinated.
+  reason: The cue links arm-and-body coordination and racket shadow practice without ball contact with more coordinated ball training afterward.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  visual_source: {video_id: I99BjizeWeE, start_ms: 500000, end_ms: 514000, url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=500s", selection_method: nearby_visual_inference, note: Unverified nearby visual proposal; full-clip inspection is required to confirm whether it illustrates this practice cue.}
+  review_status: approved
+  source:
+    video_id: I99BjizeWeE
+    start_ms: 498533
+    end_ms: 512800
+    url: https://www.youtube.com/watch?v=I99BjizeWeE&t=498s
+    segment_ids:
+    - I99BjizeWeE:00152
+    - I99BjizeWeE:00153
+    - I99BjizeWeE:00154
+    - I99BjizeWeE:00155
+    - I99BjizeWeE:00156
+- id: practice-multiple-contact-timings-global
+  evidence_type: drill
+  excerpt: The speaker describes 15-minute looping drills requiring contact on the rise and at the start of descent, starting on the rise and then switching to just after the bounce peak.
+  reason: Practice the two stated contact timings within the described looping drill.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: G7eiadOxN8E
+    start_ms: 99666
+    end_ms: 117733
+    url: https://www.youtube.com/watch?v=G7eiadOxN8E&t=99s
+    segment_ids:
+    - G7eiadOxN8E:00024
+    - G7eiadOxN8E:00025
+    - G7eiadOxN8E:00026
+    - G7eiadOxN8E:00027
+  spoken_context_end_ms: 117733
+- id: practice-variable-feed-rhythm-global
+  evidence_type: drill
+  excerpt: In a topspin rally drill, have a partner mix slower, higher and faster balls or alternate pace to practice timing adjustment. A robot can vary fast, high and slow feeds; ask a partner for awkward wider, higher or shorter placements rather than perfect feeds.
+  reason: Vary tempo and placement in the stated topspin rally drill to practice adjusting timing.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: G7eiadOxN8E
+    start_ms: 169666
+    end_ms: 195100
+    url: https://www.youtube.com/watch?v=G7eiadOxN8E&t=169s
+    segment_ids:
+    - G7eiadOxN8E:00039
+    - G7eiadOxN8E:00040
+    - G7eiadOxN8E:00041
+    - G7eiadOxN8E:00042
+    - G7eiadOxN8E:00043
+  spoken_context_end_ms: 207433
+- id: I99BjizeWeE-cand-mid-far-brushing-drill-1
+  evidence_type: drill
+  excerpt: To train brushing feel, move to mid-to-far distance, fully rotate the wrist and let the wrist drive forearm rotation. Really brush the ball and do not use power.
+  reason: For this brushing-feel exercise, move back and use wrist-driven rotation and brushing without power.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: I99BjizeWeE
+    start_ms: 271000
+    end_ms: 296133
+    url: https://www.youtube.com/watch?v=I99BjizeWeE&t=271s
+    segment_ids:
+    - I99BjizeWeE:00085
+    - I99BjizeWeE:00086
+    - I99BjizeWeE:00087
+    - I99BjizeWeE:00088
+    - I99BjizeWeE:00089
+    - I99BjizeWeE:00090
+- id: I99BjizeWeE-cand-mid-far-brushing-drill-2
+  evidence_type: explanation
+  excerpt: The speaker says the ball becomes slower farther from the table, allowing the brushing action to be felt fully and basic touch to develop.
+  reason: In this explanation, slower ball speed farther from the table helps the speaker feel brushing and develop touch.
+  confidence: 0.93
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: I99BjizeWeE
+    start_ms: 296600
+    end_ms: 308933
+    url: https://www.youtube.com/watch?v=I99BjizeWeE&t=296s
+    segment_ids:
+    - I99BjizeWeE:00091
+    - I99BjizeWeE:00092
+    - I99BjizeWeE:00093
+    - I99BjizeWeE:00094
+- id: I99BjizeWeE-cand-mid-far-brushing-drill-3
+  evidence_type: explanation
+  excerpt: Once brushing touch is well developed, the lesson returns to a normal position, with both brushing feel and ball control.
+  reason: Return to normal position once the stated brushing touch is developed.
+  confidence: 0.93
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: I99BjizeWeE
+    start_ms: 329233
+    end_ms: 338500
+    url: https://www.youtube.com/watch?v=I99BjizeWeE&t=329s
+    segment_ids:
+    - I99BjizeWeE:00102
+    - I99BjizeWeE:00103
+    - I99BjizeWeE:00104
+- id: I99BjizeWeE-cand-loop-acceleration-band-drill-1
+  evidence_type: drill
+  excerpt: If arm closure feels slow, the speaker suggests resistance-band practice and acceleration drills for arm recovery to increase arm speed.
+  reason: The resistance-band drill is offered for the stated problem of slow arm closure.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: I99BjizeWeE
+    start_ms: 652233
+    end_ms: 666866
+    url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=652s"
+    segment_ids:
+    - "I99BjizeWeE:00199"
+    - "I99BjizeWeE:00200"
+    - "I99BjizeWeE:00201"
+    - "I99BjizeWeE:00202"
+- id: PDFXww03DHM-concept-forehand-loop-practice-progression-reviewed
+  evidence_type: explanation
+  excerpt: Train loop mechanics deliberately by focusing on arc control, lifting or pressing the arc for different spins, and avoiding rushed power application.
+  reason: 'The instruction gives a practice rule for underspin and topspin: lift the arc against underspin and press the arc against topspin, regardless of ball position.'
+  confidence: 0.88
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: PDFXww03DHM
+    start_ms: 541240
+    end_ms: 559431
+    url: https://www.youtube.com/watch?v=PDFXww03DHM&t=541s
+    segment_ids:
+    - PDFXww03DHM:00180
+    - PDFXww03DHM:00181
+    - PDFXww03DHM:00182
+    - PDFXww03DHM:00183
+    - PDFXww03DHM:00184
+- id: nENxAvinCe8-concept-forehand-loop-practice-progression-reviewed
+  evidence_type: drill
+  excerpt: A training sequence that starts with controlled looping, then adds footwork, then alternates controlled and power loops before full-power looping.
+  reason: 'The speaker gives an explicit progression: 20-30% power for consistency, add footwork, then alternate controlled and power loops, and only then move to full power.'
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: nENxAvinCe8
+    start_ms: 599566
+    end_ms: 627266
+    url: https://www.youtube.com/watch?v=nENxAvinCe8&t=599s
+    segment_ids:
+    - nENxAvinCe8:00129
+    - nENxAvinCe8:00130
+    - nENxAvinCe8:00131
+    - nENxAvinCe8:00133
+- id: DaHEb394UtA-concept-forehand-loop-practice-progression-reviewed
+  evidence_type: drill
+  excerpt: Practice brushing first with a compact, stopped motion, then add other arm movements later after the brushing pattern is established.
+  reason: 'The speaker recommends a teaching progression: stop at chest height, concentrate force, practice brushing this way first, and only later add forearm and upper arm extension.'
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: DaHEb394UtA
+    start_ms: 500639
+    end_ms: 523039
+    url: https://www.youtube.com/watch?v=DaHEb394UtA&t=500s
+    segment_ids:
+    - DaHEb394UtA:00158
+    - DaHEb394UtA:00159
+    - DaHEb394UtA:00160
+    - DaHEb394UtA:00161
+    - DaHEb394UtA:00162
+    - DaHEb394UtA:00163
+    - DaHEb394UtA:00164
+    - DaHEb394UtA:00165
+    - DaHEb394UtA:00166
+- id: i-n17lWXlSo-concept-forehand-loop-practice-progression-reviewed
+  evidence_type: drill
+  excerpt: Build the loop in stages, starting with shadow swings, then racket swings, then adding hip drive, before emphasizing ball contact.
+  reason: 'The speaker recommends a staged progression: shadow swing first, then swing with the racket, then add hip drive, and only later work with the ball.'
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: i-n17lWXlSo
+    start_ms: 762720
+    end_ms: 782000
+    url: https://www.youtube.com/watch?v=i-n17lWXlSo&t=762s
+    segment_ids:
+    - i-n17lWXlSo:00249
+    - i-n17lWXlSo:00250
+    - i-n17lWXlSo:00251
+    - i-n17lWXlSo:00252
+    - i-n17lWXlSo:00253
+    - i-n17lWXlSo:00254
+    - i-n17lWXlSo:00255
+    - i-n17lWXlSo:00256
+    - i-n17lWXlSo:00257
+- id: Z4d7dw-cgfI-concept-forehand-flick-practice-progression-reviewed
+  evidence_type: drill
+  excerpt: A staged practice method for forehand flicks that starts with isolated wrist work and shadow practice, then self-tossing or partner/ball-machine drills, before using the stroke in matches.
+  reason: The transcript recommends repeated training of the receive point, wrist isolation, shadow practice, self-tossing, partner short serves, and ball-machine practice before match use.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Z4d7dw-cgfI
+    start_ms: 163200
+    end_ms: 192100
+    url: https://www.youtube.com/watch?v=Z4d7dw-cgfI&t=163s
+    segment_ids:
+    - Z4d7dw-cgfI:00049
+    - Z4d7dw-cgfI:00050
+    - Z4d7dw-cgfI:00051
+    - Z4d7dw-cgfI:00052
+    - Z4d7dw-cgfI:00053
+    - Z4d7dw-cgfI:00054
+    - Z4d7dw-cgfI:00055
+    - Z4d7dw-cgfI:00056
+- id: LopC3UNnOXM-concept-forehand-loop-practice-progression-reviewed
+  evidence_type: drill
+  excerpt: A practice progression that trains forehand topspin by using high balls, adjusting rhythm, and comparing it with counter-looping.
+  reason: The speaker frames the segment as practice for topspin and counter-loop, including lifting balls and practicing high topspin shots.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: LopC3UNnOXM
+    start_ms: 108866
+    end_ms: 113366
+    url: https://www.youtube.com/watch?v=LopC3UNnOXM&t=108s
+    segment_ids:
+    - LopC3UNnOXM:00038
+- id: 7JSZZSSjCqo-concept-forehand-loop-practice-progression-reviewed
+  evidence_type: drill
+  excerpt: A progression for building forehand looping that starts with controlled feeding and stable form before adding movement and match play.
+  reason: The speaker prescribes feeder, robot, and one-by-one drills to stabilize the form before increasing complexity.
+  confidence: 0.93
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 7JSZZSSjCqo
+    start_ms: 94033
+    end_ms: 112500
+    url: https://www.youtube.com/watch?v=7JSZZSSjCqo&t=94s
+    segment_ids:
+    - 7JSZZSSjCqo:00023
+    - 7JSZZSSjCqo:00024
+    - 7JSZZSSjCqo:00025
+    - 7JSZZSSjCqo:00026
+    - 7JSZZSSjCqo:00027
 relations:
-  - relation_type: used_with
-    target_concept_id: concept-forehand-loop
-    confidence: 0.99
-    review_status: approved
-    sources: [{video_id: I99BjizeWeE, start_ms: 208633, end_ms: 213900, url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=208s", segment_ids: ["I99BjizeWeE:00068", "I99BjizeWeE:00069"]}]
+- relation_type: used_with
+  target_concept_id: concept-forehand-loop
+  confidence: 0.99
+  review_status: unreviewed
+  sources: [{video_id: I99BjizeWeE, start_ms: 208633, end_ms: 213900, url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=208s", segment_ids: ["I99BjizeWeE:00068", "I99BjizeWeE:00069"]}]

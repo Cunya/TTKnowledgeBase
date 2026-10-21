@@ -2,421 +2,442 @@ id: concept-push-rally-strategy
 slug: push-rally-strategy
 label: Push-rally strategy
 aliases:
-  - push-to-attack strategy
-  - push rally planning
-short_definition: Use recovery, depth, placement, spin reading, and a clear attack decision to make the push rally create an easier opening ball.
+- push-to-attack strategy
+- push rally planning
+short_definition: Push-rally planning coordinates recovery, push quality, placement and rhythm, reading the return, and deciding whether to attack or defend.
 evidence_summary: >-
-  In a push rally, each push must be followed by immediate recovery so the player is not caught
-  off guard by the next ball. Good strategy centers on pushing low, deep, and with enough pressure
-  to jam the opponent, while avoiding half-long balls that invite attack. The player also needs to
-  vary placement, recognize deceptive weak-spin or carry balls, and commit fully when choosing to
-  attack rather than hesitating.
-evidence_summary_source_hash: "sha256:465d28cf42778fc059b7328a5f760605cc0c3221a4ec2bafc0095abdb88b65f4"
-evidence_summary_generator: "codex"
+  One lesson combines recovery after every push with a low, deep push that is not too spinny. It varies placement and rhythm so the attack differs from the push, and distinguishes a clear attack decision from pushing steadily to set up defense. Its deceptive-return example asks the player to read spin versus carry from the opponent’s stroke. Another lesson varies depth, including drop-short and one- or two-bounce options, to bring the opponent in before looping the next ball.
 concept_type: tactical-pattern
 facets:
   category:
-    - strategy
-    - stroke
-  side:
-    - neutral
-  spin:
-    - backspin
-  level:
-    - intermediate
-difficulty: intermediate
+  - strategy
+  - stroke
+difficulty:
 review_status: approved
 evidence:
-  - id: nUotsfFiQqY-cand-push-recovery-1
-    evidence_type: explanation
-    excerpt: After each push in a push rally, the player should actively recover their position instead of staying stuck forward or watching the result.
-    reason: Speaker states recovery after every push is mandatory to avoid being caught off guard.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: nUotsfFiQqY
-      start_ms: 5160
-      end_ms: 16600
-      url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=5s
-      segment_ids: &id001
-        - nUotsfFiQqY:00002
-        - nUotsfFiQqY:00004
-        - nUotsfFiQqY:00005
-  - id: nUotsfFiQqY-cand-push-recovery-2
-    evidence_type: mistake
-    excerpt: After each push in a push rally, the player should actively recover their position instead of staying stuck forward or watching the result.
-    reason: Speaker identifies staying forward and watching the result as the common recovery mistake.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: nUotsfFiQqY
-      start_ms: 89400
-      end_ms: 95040
-      url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=89s
-      segment_ids:
-        - nUotsfFiQqY:00035
-        - nUotsfFiQqY:00036
-  - id: nUotsfFiQqY-cand-push-recovery-3
-    evidence_type: mistake
-    excerpt: After each push in a push rally, the player should actively recover their position instead of staying stuck forward or watching the result.
-    reason: Speaker identifies staying forward and watching the result as the common recovery mistake.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: nUotsfFiQqY
-      start_ms: 231120
-      end_ms: 237720
-      url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=231s
-      segment_ids:
-        - nUotsfFiQqY:00098
-        - nUotsfFiQqY:00099
-  - id: nUotsfFiQqY-cand-push-depth-and-height-quality-1
-    evidence_type: explanation
-    excerpt: In push rallies, prioritizing a low, deep push creates simpler attackable returns and reduces the opponent's ability to attack first.
-    reason: Speaker says a deep pressing push jams the opponent and explicitly recommends pushing lower and deeper to make the next loop easy.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: nUotsfFiQqY
-      start_ms: 60880
-      end_ms: 88880
-      url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=60s
-      segment_ids:
-        - nUotsfFiQqY:00024
-        - nUotsfFiQqY:00025
-        - nUotsfFiQqY:00030
-        - nUotsfFiQqY:00031
-        - nUotsfFiQqY:00032
-        - nUotsfFiQqY:00033
-        - nUotsfFiQqY:00034
-  - id: nUotsfFiQqY-cand-push-depth-and-height-quality-2
-    evidence_type: explanation
-    excerpt: In push rallies, prioritizing a low, deep push creates simpler attackable returns and reduces the opponent's ability to attack first.
-    reason: Speaker repeats the low-and-deep target and links deep pushes to simpler returns.
-    confidence: 0.91
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: nUotsfFiQqY
-      start_ms: 110800
-      end_ms: 126479
-      url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=110s
-      segment_ids:
-        - nUotsfFiQqY:00044
-        - nUotsfFiQqY:00045
-        - nUotsfFiQqY:00049
-  - id: nUotsfFiQqY-cand-avoid-overly-spinny-first-push-1
-    evidence_type: explanation
-    excerpt: If the first push is made too spinny, the opponent can return even heavier backspin, making the following attack much harder.
-    reason: Speaker explains the contradiction of pushing heavy when trying to create an attacking chance.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: nUotsfFiQqY
-      start_ms: 30520
-      end_ms: 48240
-      url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=30s
-      segment_ids:
-        - nUotsfFiQqY:00010
-        - nUotsfFiQqY:00011
-        - nUotsfFiQqY:00012
-        - nUotsfFiQqY:00013
-        - nUotsfFiQqY:00014
-        - nUotsfFiQqY:00015
-        - nUotsfFiQqY:00016
-  - id: nUotsfFiQqY-cand-avoid-overly-spinny-first-push-2
-    evidence_type: correction
-    excerpt: If the first push is made too spinny, the opponent can return even heavier backspin, making the following attack much harder.
-    reason: Speaker summarizes the correction as keeping the push low and deep but not too spinny.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: nUotsfFiQqY
-      start_ms: 95120
-      end_ms: 115800
-      url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=95s
-      segment_ids:
-        - nUotsfFiQqY:00037
-        - nUotsfFiQqY:00038
-        - nUotsfFiQqY:00039
-        - nUotsfFiQqY:00044
-        - nUotsfFiQqY:00045
-  - id: nUotsfFiQqY-cand-avoid-half-long-push-1
-    evidence_type: mistake
-    excerpt: A half-long push gives the opponent an easy chance to cut down on the ball and produce a difficult, sinking return that jams the next attack.
-    reason: Speaker identifies half-long pushing as a major mistake that lets the opponent attack.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: nUotsfFiQqY
-      start_ms: 45840
-      end_ms: 54280
-      url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=45s
-      segment_ids:
-        - nUotsfFiQqY:00017
-        - nUotsfFiQqY:00018
-        - nUotsfFiQqY:00019
-  - id: nUotsfFiQqY-cand-avoid-half-long-push-2
-    evidence_type: explanation
-    excerpt: A half-long push gives the opponent an easy chance to cut down on the ball and produce a difficult, sinking return that jams the next attack.
-    reason: Speaker details how the opponent's downward cut on a half-long push creates a sinking, hard-to-loop ball.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: nUotsfFiQqY
-      start_ms: 101280
-      end_ms: 110800
-      url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=101s
-      segment_ids:
-        - nUotsfFiQqY:00040
-        - nUotsfFiQqY:00041
-        - nUotsfFiQqY:00042
-  - id: nUotsfFiQqY-cand-push-rally-placement-variation-1
-    evidence_type: explanation
-    excerpt: During push rallies, vary placement and rhythm so the eventual attack goes to a different location and forces movement instead of attacking into the opponent's ready position.
-    reason: Speaker says variation in placement and rhythm is necessary for the attack to have meaning.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: nUotsfFiQqY
-      start_ms: 173760
-      end_ms: 188600
-      url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=173s
-      segment_ids:
-        - nUotsfFiQqY:00070
-        - nUotsfFiQqY:00071
-        - nUotsfFiQqY:00072
-        - nUotsfFiQqY:00073
-        - nUotsfFiQqY:00074
-        - nUotsfFiQqY:00075
-  - id: nUotsfFiQqY-cand-push-rally-placement-variation-2
-    evidence_type: example
-    excerpt: During push rallies, vary placement and rhythm so the eventual attack goes to a different location and forces movement instead of attacking into the opponent's ready position.
-    reason: Speaker gives specific push-then-loop placement patterns to force opponent movement.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: nUotsfFiQqY
-      start_ms: 186519
-      end_ms: 215519
-      url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=186s
-      segment_ids:
-        - nUotsfFiQqY:00076
-        - nUotsfFiQqY:00077
-        - nUotsfFiQqY:00079
-        - nUotsfFiQqY:00080
-        - nUotsfFiQqY:00081
-        - nUotsfFiQqY:00082
-        - nUotsfFiQqY:00086
-        - nUotsfFiQqY:00087
-        - nUotsfFiQqY:00088
-  - id: nUotsfFiQqY-cand-attack-intention-after-push-1
-    evidence_type: explanation
-    excerpt: After pushing, decide clearly whether to attack or to continue defending; hesitation between the two leads to poor execution.
-    reason: Speaker frames push-rally decision making around a clear attack-versus-defense intention.
-    confidence: 0.91
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: nUotsfFiQqY
-      start_ms: 239600
-      end_ms: 250040
-      url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=239s
-      segment_ids:
-        - nUotsfFiQqY:00102
-        - nUotsfFiQqY:00103
-        - nUotsfFiQqY:00104
-        - nUotsfFiQqY:00105
-  - id: nUotsfFiQqY-cand-attack-intention-after-push-2
-    evidence_type: correction
-    excerpt: After pushing, decide clearly whether to attack or to continue defending; hesitation between the two leads to poor execution.
-    reason: Speaker warns against hesitation and tells players to commit fully if they choose to attack.
-    confidence: 0.92
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: nUotsfFiQqY
-      start_ms: 251320
-      end_ms: 266120
-      url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=251s
-      segment_ids:
-        - nUotsfFiQqY:00106
-        - nUotsfFiQqY:00107
-        - nUotsfFiQqY:00108
-        - nUotsfFiQqY:00109
-        - nUotsfFiQqY:00110
-        - nUotsfFiQqY:00111
-  - id: nUotsfFiQqY-cand-read-push-spin-type-1
-    evidence_type: explanation
-    excerpt: Before attacking a pushed ball, classify whether the return carries heavy spin, normal spin, or weak/deceptive spin based on the opponent's stroke and racket acceleration.
-    reason: Speaker lays out heavy-spin and normal-spin categories and how to recognize them.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: nUotsfFiQqY
-      start_ms: 263760
-      end_ms: 278240
-      url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=263s
-      segment_ids:
-        - nUotsfFiQqY:00112
-        - nUotsfFiQqY:00113
-        - nUotsfFiQqY:00114
-        - nUotsfFiQqY:00115
-  - id: nUotsfFiQqY-cand-read-push-spin-type-2
-    evidence_type: explanation
-    excerpt: Before attacking a pushed ball, classify whether the return carries heavy spin, normal spin, or weak/deceptive spin based on the opponent's stroke and racket acceleration.
-    reason: Speaker lays out heavy-spin and normal-spin categories and how to recognize them.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: nUotsfFiQqY
-      start_ms: 290680
-      end_ms: 303880
-      url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=290s
-      segment_ids:
-        - nUotsfFiQqY:00122
-        - nUotsfFiQqY:00123
-        - nUotsfFiQqY:00124
-        - nUotsfFiQqY:00125
-        - nUotsfFiQqY:00126
-  - id: nUotsfFiQqY-cand-read-push-spin-type-3
-    evidence_type: explanation
-    excerpt: Before attacking a pushed ball, classify whether the return carries heavy spin, normal spin, or weak/deceptive spin based on the opponent's stroke and racket acceleration.
-    reason: Speaker adds deceptive weak-spin or carry balls and emphasizes reading the stroke to distinguish them.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: nUotsfFiQqY
-      start_ms: 304240
-      end_ms: 322240
-      url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=304s
-      segment_ids:
-        - nUotsfFiQqY:00127
-        - nUotsfFiQqY:00128
-        - nUotsfFiQqY:00129
-        - nUotsfFiQqY:00131
-        - nUotsfFiQqY:00132
-        - nUotsfFiQqY:00133
-  - id: mYzbo93Nkps-concept-push-rally-strategy-reviewed
-    evidence_type: explanation
-    excerpt: Using push rallies to create attack opportunities by adding spin, varying depth, and moving the opponent to uncomfortable zones before looping or attacking.
-    reason: Says the push should add spin so the opponent's reply becomes an attack opportunity.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: mYzbo93Nkps
-      start_ms: 387320
-      end_ms: 416000
-      url: https://www.youtube.com/watch?v=mYzbo93Nkps&t=387s
-      segment_ids:
-        - mYzbo93Nkps:00145
-        - mYzbo93Nkps:00146
-        - mYzbo93Nkps:00147
-        - mYzbo93Nkps:00148
-        - mYzbo93Nkps:00149
-        - mYzbo93Nkps:00150
-        - mYzbo93Nkps:00151
-        - mYzbo93Nkps:00152
-        - mYzbo93Nkps:00153
-        - mYzbo93Nkps:00154
-        - mYzbo93Nkps:00155
-  - id: hwT7cH6PbZQ-concept-push-rally-strategy-reviewed
-    evidence_type: definition
-    excerpt: A rally pattern centered on pushing, with emphasis on consistent control, variation, and adapting the push to incoming spin.
-    reason: The speaker explicitly names the push rally and frames the lesson around improving push quality, variation, and adaptation to spin.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: hwT7cH6PbZQ
-      start_ms: 9666
-      end_ms: 20433
-      url: https://www.youtube.com/watch?v=hwT7cH6PbZQ&t=9s
-      segment_ids:
-        - hwT7cH6PbZQ:00002
-        - hwT7cH6PbZQ:00003
-        - hwT7cH6PbZQ:00004
-  - id: U-z4PamhiUE-concept-push-rally-strategy-reviewed
-    evidence_type: explanation
-    excerpt: Choosing how to continue a rally after a push, including whether to loop, block, or redirect based on the opponent's response.
-    reason: The speaker describes a push-to-loop sequence after a backspin push, with fallback to a controlled middle ball, then block or loop again depending on the opponent's next ball.
-    confidence: 0.92
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: U-z4PamhiUE
-      start_ms: 473160
-      end_ms: 494600
-      url: https://www.youtube.com/watch?v=U-z4PamhiUE&t=473s
-      segment_ids:
-        - U-z4PamhiUE:00212
-        - U-z4PamhiUE:00213
-        - U-z4PamhiUE:00214
-        - U-z4PamhiUE:00215
-        - U-z4PamhiUE:00216
-        - U-z4PamhiUE:00217
-        - U-z4PamhiUE:00218
-        - U-z4PamhiUE:00219
-        - U-z4PamhiUE:00220
-  - id: WcQLHn2Fafw-concept-push-rally-strategy-reviewed
-    evidence_type: explanation
-    excerpt: Choosing push length, speed, and spin based on the opponent's stroke style and position to control the rally before a loop is initiated.
-    reason: The transcript frames push choice as a strategic response to different looper types and explicitly says pushes need variation.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: WcQLHn2Fafw
-      start_ms: 14100
-      end_ms: 36133
-      url: https://www.youtube.com/watch?v=WcQLHn2Fafw&t=14s
-      segment_ids:
-        - WcQLHn2Fafw:00004
-        - WcQLHn2Fafw:00005
-        - WcQLHn2Fafw:00007
-  - id: mYzbo93Nkps-concept-push-rally-strategy-codex-reviewed
-    evidence_type: explanation
-    excerpt: Vary push depth, including drop-short and one- or two-bounce pushes, to make the opponent step in and create a chance to loop the next ball.
-    reason: This contiguous 24.88-second span explains adjusting push depth to bring the opponent in and set up the next-ball loop, directly supporting the existing push-rally strategy concept.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: mYzbo93Nkps
-      start_ms: 420200
-      end_ms: 445080
-      url: https://www.youtube.com/watch?v=mYzbo93Nkps&t=420s
-      segment_ids:
-        - mYzbo93Nkps:00157
-        - mYzbo93Nkps:00158
-        - mYzbo93Nkps:00159
-        - mYzbo93Nkps:00160
-        - mYzbo93Nkps:00161
-        - mYzbo93Nkps:00162
-        - mYzbo93Nkps:00163
-        - mYzbo93Nkps:00164
+- id: nUotsfFiQqY-cand-push-recovery-1
+  evidence_type: explanation
+  excerpt: During push rallies, actively recover after every push; without recovery, the speaker says every ball catches the player off guard.
+  reason: The first mistake in the lesson is failing to recover after pushing.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: nUotsfFiQqY
+    start_ms: 720
+    end_ms: 16600
+    url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=0s
+    segment_ids:
+    - nUotsfFiQqY:00000
+    - nUotsfFiQqY:00001
+    - nUotsfFiQqY:00002
+    - nUotsfFiQqY:00003
+    - nUotsfFiQqY:00004
+    - nUotsfFiQqY:00005
+- id: nUotsfFiQqY-cand-push-recovery-2
+  evidence_type: mistake
+  excerpt: The speaker identifies not recovering, with the feet staying stuck forward, as a mistake.
+  reason: The recovery warning concerns feet that remain forward after the push.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: nUotsfFiQqY
+    start_ms: 89400
+    end_ms: 95040
+    url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=89s
+    segment_ids:
+    - nUotsfFiQqY:00035
+    - nUotsfFiQqY:00036
+- id: nUotsfFiQqY-cand-push-recovery-3
+  evidence_type: mistake
+  excerpt: 'If the player feels jammed, the speaker blames slow recovery: pushing and watching the result instead of recovering. Proper recovery prevents the jam and allows a clean loop.'
+  reason: The lesson connects recovery after the push with avoiding the jam on the next shot.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: nUotsfFiQqY
+    start_ms: 229200
+    end_ms: 241760
+    url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=229s
+    segment_ids:
+    - nUotsfFiQqY:00097
+    - nUotsfFiQqY:00098
+    - nUotsfFiQqY:00099
+    - nUotsfFiQqY:00100
+    - nUotsfFiQqY:00101
+- id: nUotsfFiQqY-cand-push-depth-and-height-quality-1
+  evidence_type: explanation
+  excerpt: A deep pressing push jams the opponent. To create attacking chances, the lesson recommends pushing lower and deeper, even without spin, to make the opponent’s attack harder and the next loop easier.
+  reason: The speaker contrasts a deep pressing push with a soft short push that invites an attack.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: nUotsfFiQqY
+    start_ms: 60880
+    end_ms: 88880
+    url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=60s
+    segment_ids:
+    - nUotsfFiQqY:00024
+    - nUotsfFiQqY:00025
+    - nUotsfFiQqY:00026
+    - nUotsfFiQqY:00027
+    - nUotsfFiQqY:00028
+    - nUotsfFiQqY:00029
+    - nUotsfFiQqY:00030
+    - nUotsfFiQqY:00031
+    - nUotsfFiQqY:00032
+    - nUotsfFiQqY:00033
+    - nUotsfFiQqY:00034
+- id: nUotsfFiQqY-cand-push-depth-and-height-quality-2
+  evidence_type: explanation
+  excerpt: Recover after each push and keep the ball low and deep without making it too spinny. Deep pushes give a simpler return.
+  reason: The speaker calls for recovery and separately says deep pushes give a simpler return.
+  confidence: 0.91
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: nUotsfFiQqY
+    start_ms: 108520
+    end_ms: 126479
+    url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=108s
+    segment_ids:
+    - nUotsfFiQqY:00043
+    - nUotsfFiQqY:00044
+    - nUotsfFiQqY:00045
+    - nUotsfFiQqY:00046
+    - nUotsfFiQqY:00047
+    - nUotsfFiQqY:00048
+    - nUotsfFiQqY:00049
+- id: nUotsfFiQqY-cand-avoid-overly-spinny-first-push-1
+  evidence_type: explanation
+  excerpt: A player trying to add maximum spin before looping can receive a spinnier return and become trapped by their own heavy first push.
+  reason: The speaker warns that adding heavy spin can make the returned ball too spinny for the intended attack.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: nUotsfFiQqY
+    start_ms: 30520
+    end_ms: 48240
+    url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=30s
+    segment_ids:
+    - nUotsfFiQqY:00010
+    - nUotsfFiQqY:00011
+    - nUotsfFiQqY:00012
+    - nUotsfFiQqY:00013
+    - nUotsfFiQqY:00014
+    - nUotsfFiQqY:00015
+    - nUotsfFiQqY:00016
+- id: nUotsfFiQqY-cand-avoid-overly-spinny-first-push-2
+  evidence_type: correction
+  excerpt: Before attacking, a heavy push can produce a spinnier return. The lesson recommends recovery after each push and keeping the ball low and deep but not too spinny.
+  reason: The speaker warns against creating an excessively spinny return before the planned attack.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: nUotsfFiQqY
+    start_ms: 95120
+    end_ms: 115800
+    url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=95s
+    segment_ids:
+    - nUotsfFiQqY:00037
+    - nUotsfFiQqY:00038
+    - nUotsfFiQqY:00039
+    - nUotsfFiQqY:00040
+    - nUotsfFiQqY:00041
+    - nUotsfFiQqY:00042
+    - nUotsfFiQqY:00043
+    - nUotsfFiQqY:00044
+    - nUotsfFiQqY:00045
+- id: nUotsfFiQqY-cand-avoid-half-long-push-1
+  evidence_type: mistake
+  excerpt: The lesson identifies a half-long push as a mistake because the opponent can cut it hard and attack.
+  reason: The speaker warns against giving the opponent this half-long attacking opportunity.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: nUotsfFiQqY
+    start_ms: 45840
+    end_ms: 54280
+    url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=45s
+    segment_ids:
+    - nUotsfFiQqY:00017
+    - nUotsfFiQqY:00018
+    - nUotsfFiQqY:00019
+- id: nUotsfFiQqY-cand-avoid-half-long-push-2
+  evidence_type: explanation
+  excerpt: A half-long push lets the opponent cut downward; the speaker describes a ball that arches, jams the player and is extremely hard to loop.
+  reason: The described problem is the opponent’s downward cut on the half-long push.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: nUotsfFiQqY
+    start_ms: 101280
+    end_ms: 110800
+    url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=101s
+    segment_ids:
+    - nUotsfFiQqY:00040
+    - nUotsfFiQqY:00041
+    - nUotsfFiQqY:00042
+- id: nUotsfFiQqY-cand-push-rally-placement-variation-1
+  evidence_type: explanation
+  excerpt: Vary placement and rhythm in push rallies. The speaker says an attack gains nothing if its placement does not differ from the push, and offers looping down the line from the backhand or aiming toward the middle to make the opponent move.
+  reason: The lesson connects different attacking placement with making the opponent move.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: nUotsfFiQqY
+    start_ms: 173760
+    end_ms: 192720
+    url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=173s
+    segment_ids:
+    - nUotsfFiQqY:00070
+    - nUotsfFiQqY:00071
+    - nUotsfFiQqY:00072
+    - nUotsfFiQqY:00073
+    - nUotsfFiQqY:00074
+    - nUotsfFiQqY:00075
+    - nUotsfFiQqY:00076
+    - nUotsfFiQqY:00077
+    - nUotsfFiQqY:00078
+- id: nUotsfFiQqY-cand-push-rally-placement-variation-2
+  evidence_type: example
+  excerpt: The speaker pushes to the backhand and then loops toward the middle. Other examples dink short to the forehand then loop backhand, or dink to the backhand then lightly loop forehand.
+  reason: These placement changes are contrasted with attacking where the opponent already stands, allowing a block and control.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: nUotsfFiQqY
+    start_ms: 193040
+    end_ms: 217959
+    url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=193s
+    segment_ids:
+    - nUotsfFiQqY:00079
+    - nUotsfFiQqY:00080
+    - nUotsfFiQqY:00081
+    - nUotsfFiQqY:00082
+    - nUotsfFiQqY:00083
+    - nUotsfFiQqY:00084
+    - nUotsfFiQqY:00085
+    - nUotsfFiQqY:00086
+    - nUotsfFiQqY:00087
+    - nUotsfFiQqY:00088
+    - nUotsfFiQqY:00089
+- id: nUotsfFiQqY-cand-attack-intention-after-push-1
+  evidence_type: explanation
+  excerpt: Have a clear intention about whether to attack. If not attacking, push steadily, set up defense and bait the opponent into attacking.
+  reason: The speaker gives a defensive plan for the choice not to attack.
+  confidence: 0.91
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: nUotsfFiQqY
+    start_ms: 239600
+    end_ms: 250040
+    url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=239s
+    segment_ids:
+    - nUotsfFiQqY:00102
+    - nUotsfFiQqY:00103
+    - nUotsfFiQqY:00104
+    - nUotsfFiQqY:00105
+- id: nUotsfFiQqY-cand-attack-intention-after-push-2
+  evidence_type: correction
+  excerpt: If choosing to attack, commit fully instead of pushing, attacking and hesitating at once. Accept early misses; the speaker says more attacking practice improves it.
+  reason: The instruction contrasts full commitment with hesitation.
+  confidence: 0.92
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: nUotsfFiQqY
+    start_ms: 251320
+    end_ms: 266120
+    url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=251s
+    segment_ids:
+    - nUotsfFiQqY:00106
+    - nUotsfFiQqY:00107
+    - nUotsfFiQqY:00108
+    - nUotsfFiQqY:00109
+    - nUotsfFiQqY:00110
+    - nUotsfFiQqY:00111
+- id: nUotsfFiQqY-cand-read-push-spin-type-1
+  evidence_type: explanation
+  excerpt: After pushing, identify extremely heavy spin by racket-head acceleration. The lesson says amateurs should not force a drive against it; if attacking, use a high-arc spin loop, get it on the table and then decide.
+  reason: The speaker distinguishes this heavy-spin attack from a power-kill attempt.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: nUotsfFiQqY
+    start_ms: 263760
+    end_ms: 293280
+    url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=263s
+    segment_ids:
+    - nUotsfFiQqY:00112
+    - nUotsfFiQqY:00113
+    - nUotsfFiQqY:00114
+    - nUotsfFiQqY:00115
+    - nUotsfFiQqY:00116
+    - nUotsfFiQqY:00117
+    - nUotsfFiQqY:00118
+    - nUotsfFiQqY:00119
+    - nUotsfFiQqY:00120
+    - nUotsfFiQqY:00121
+- id: nUotsfFiQqY-cand-read-push-spin-type-2
+  evidence_type: explanation
+  excerpt: For a normal, moderate push, attack with normal quality. The lesson identifies no downward cut or snap, just a consistent push.
+  reason: The speaker describes the normal-spin category and its stroke cues.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: nUotsfFiQqY
+    start_ms: 290680
+    end_ms: 303880
+    url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=290s
+    segment_ids:
+    - nUotsfFiQqY:00122
+    - nUotsfFiQqY:00123
+    - nUotsfFiQqY:00124
+    - nUotsfFiQqY:00125
+    - nUotsfFiQqY:00126
+- id: nUotsfFiQqY-cand-read-push-spin-type-3
+  evidence_type: explanation
+  excerpt: Experienced players may carry a deceptive push over rather than push it; the speaker warns that children loop these balls long. Watch the opponent’s stroke to identify spin versus carry.
+  reason: Watch the opponent’s stroke to identify spin versus carry.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: nUotsfFiQqY
+    start_ms: 304240
+    end_ms: 322240
+    url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=304s
+    segment_ids:
+    - nUotsfFiQqY:00127
+    - nUotsfFiQqY:00128
+    - nUotsfFiQqY:00129
+    - nUotsfFiQqY:00130
+    - nUotsfFiQqY:00131
+    - nUotsfFiQqY:00132
+    - nUotsfFiQqY:00133
+- id: mYzbo93Nkps-concept-push-rally-strategy-reviewed
+  evidence_type: explanation
+  excerpt: Using push rallies to create attack opportunities by adding spin, varying depth, and moving the opponent to uncomfortable zones before looping or attacking.
+  reason: Says the push should add spin so the opponent's reply becomes an attack opportunity.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: mYzbo93Nkps
+    start_ms: 387320
+    end_ms: 416000
+    url: https://www.youtube.com/watch?v=mYzbo93Nkps&t=387s
+    segment_ids:
+    - mYzbo93Nkps:00145
+    - mYzbo93Nkps:00146
+    - mYzbo93Nkps:00147
+    - mYzbo93Nkps:00148
+    - mYzbo93Nkps:00149
+    - mYzbo93Nkps:00150
+    - mYzbo93Nkps:00151
+    - mYzbo93Nkps:00152
+    - mYzbo93Nkps:00153
+    - mYzbo93Nkps:00154
+    - mYzbo93Nkps:00155
+- id: hwT7cH6PbZQ-concept-push-rally-strategy-reviewed
+  evidence_type: definition
+  excerpt: A rally pattern centered on pushing, with emphasis on consistent control, variation, and adapting the push to incoming spin.
+  reason: The speaker explicitly names the push rally and frames the lesson around improving push quality, variation, and adaptation to spin.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: hwT7cH6PbZQ
+    start_ms: 9666
+    end_ms: 20433
+    url: https://www.youtube.com/watch?v=hwT7cH6PbZQ&t=9s
+    segment_ids:
+    - hwT7cH6PbZQ:00002
+    - hwT7cH6PbZQ:00003
+    - hwT7cH6PbZQ:00004
+- id: U-z4PamhiUE-concept-push-rally-strategy-reviewed
+  evidence_type: explanation
+  excerpt: Choosing how to continue a rally after a push, including whether to loop, block, or redirect based on the opponent's response.
+  reason: The speaker describes a push-to-loop sequence after a backspin push, with fallback to a controlled middle ball, then block or loop again depending on the opponent's next ball.
+  confidence: 0.92
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: U-z4PamhiUE
+    start_ms: 473160
+    end_ms: 494600
+    url: https://www.youtube.com/watch?v=U-z4PamhiUE&t=473s
+    segment_ids:
+    - U-z4PamhiUE:00212
+    - U-z4PamhiUE:00213
+    - U-z4PamhiUE:00214
+    - U-z4PamhiUE:00215
+    - U-z4PamhiUE:00216
+    - U-z4PamhiUE:00217
+    - U-z4PamhiUE:00218
+    - U-z4PamhiUE:00219
+    - U-z4PamhiUE:00220
+- id: WcQLHn2Fafw-concept-push-rally-strategy-reviewed
+  evidence_type: explanation
+  excerpt: Choosing push length, speed, and spin based on the opponent's stroke style and position to control the rally before a loop is initiated.
+  reason: The transcript frames push choice as a strategic response to different looper types and explicitly says pushes need variation.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: WcQLHn2Fafw
+    start_ms: 14100
+    end_ms: 36133
+    url: https://www.youtube.com/watch?v=WcQLHn2Fafw&t=14s
+    segment_ids:
+    - WcQLHn2Fafw:00004
+    - WcQLHn2Fafw:00005
+    - WcQLHn2Fafw:00007
+- id: mYzbo93Nkps-concept-push-rally-strategy-codex-reviewed
+  evidence_type: explanation
+  excerpt: Vary push depth, including drop-short and one- or two-bounce options, to make the opponent step in and create a chance to loop the next ball.
+  reason: The speaker says this can still create chances even without high quality.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: mYzbo93Nkps
+    start_ms: 420200
+    end_ms: 445080
+    url: https://www.youtube.com/watch?v=mYzbo93Nkps&t=420s
+    segment_ids:
+    - mYzbo93Nkps:00157
+    - mYzbo93Nkps:00158
+    - mYzbo93Nkps:00159
+    - mYzbo93Nkps:00160
+    - mYzbo93Nkps:00161
+    - mYzbo93Nkps:00162
+    - mYzbo93Nkps:00163
+    - mYzbo93Nkps:00164
 relations:
-  - relation_type: used_with
-    target_concept_id: concept-push-variations
-    sources:
-      - video_id: nUotsfFiQqY
-        start_ms: 5160
-        end_ms: 16600
-        url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=5s
-        segment_ids: *id001
-    confidence: 0.9
-    review_status: approved
+- relation_type: used_with
+  target_concept_id: concept-push-variations
+  sources:
+  - video_id: nUotsfFiQqY
+    start_ms: 5160
+    end_ms: 16600
+    url: https://www.youtube.com/watch?v=nUotsfFiQqY&t=5s
+    segment_ids:
+    - nUotsfFiQqY:00002
+    - nUotsfFiQqY:00004
+    - nUotsfFiQqY:00005
+  confidence: 0.9
+  review_status: unreviewed

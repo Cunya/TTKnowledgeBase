@@ -1,15 +1,10 @@
 id: concept-backspin-receive-timing
 slug: backspin-receive-timing
-label: Backspin receive timing
-aliases:
-- early descending phase
-- don't rush
-- wait for the ball to finish curving
-short_definition: On backspin or push receives, wait for the early descending phase instead of contacting too early at the peak.
+label: Backspin timing cues
+aliases: []
+short_definition: For a backspin ball, wait until it starts dropping before initiating the swing. The coach describes peak contact as essentially hitting on the rise.
 evidence_summary: >-
-  The selected contiguous moment explicitly teaches waiting before spinning and avoiding rushing, directly supporting the existing backspin receive-timing concept. This contiguous span directly explains when to contact a backspin serve and why later contact reduces the spin's effect. It matches the supplied existing concept. These contiguous segments directly explain the backspin timing rule and identify peak contact as rushing into the shot.
-evidence_summary_source_hash: "sha256:060420112a139dbb0115a9a7981847fad46d8f73947842e0bb362132192bdb6c"
-evidence_summary_generator: "deterministic"
+  One lesson advises waiting before adding spin. For a heavy-spin serve, contact at the start of its descent. For a backspin serve, earlier contact means the spin affects you more and later contact means it affects you less. For a backspin ball, another coach advises waiting until it starts dropping before initiating the swing; the coach describes falling contact as following an earlier swing and peak contact as essentially hitting on the rise.
 concept_type: tactic
 facets:
   category:
@@ -17,10 +12,7 @@ facets:
   - tactic
   spin:
   - backspin
-  level:
-  - beginner
-  - intermediate
-difficulty: beginner
+difficulty:
 review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
@@ -702,8 +694,8 @@ evidence:
     - AxcoalL81cA:00029
 - id: -J5iKei3MIQ-concept-backspin-receive-timing-codex-reviewed
   evidence_type: explanation
-  excerpt: "This spinning technique is more subtle: first we must wait, then spin. After you lift it, make sure to wait for him. Don't rush, just wait for him."
-  reason: The selected contiguous transcript moment explicitly teaches waiting before spinning and avoiding rushing, directly supporting the existing backspin receive-timing concept.
+  excerpt: "For this spinning technique, wait first, then add spin."
+  reason: Wait before adding spin to this technique.
   confidence: 0.94
   visual_status: not_visual
   review_status: approved
@@ -716,14 +708,17 @@ evidence:
     - -J5iKei3MIQ:00455
     - -J5iKei3MIQ:00456
     - -J5iKei3MIQ:00457
+    - -J5iKei3MIQ:00458
+    - -J5iKei3MIQ:00459
+    - -J5iKei3MIQ:00460
     - -J5iKei3MIQ:00461
     - -J5iKei3MIQ:00462
     - -J5iKei3MIQ:00463
     - -J5iKei3MIQ:00464
 - id: hw8RsLGOARs-concept-backspin-receive-timing-codex-reviewed
   evidence_type: explanation
-  excerpt: For a heavy-spin backspin serve, contact the ball at the start of its descent; contacting later reduces the effect of the spin.
-  reason: This contiguous span directly explains when to contact a backspin serve and why later contact reduces the spin's effect. It matches the supplied existing concept.
+  excerpt: For a heavy-spin serve, contact the ball at the start of its descent. For a backspin serve, earlier contact means the spin affects you more; later contact means it affects you less.
+  reason: Contact a heavy-spin serve at the start of its descent. On a backspin serve, later contact reduces the effect of the spin.
   confidence: 0.99
   visual_status: not_visual
   review_status: approved
@@ -739,8 +734,8 @@ evidence:
     - hw8RsLGOARs:00032
 - id: krlH8_UzRRM-concept-backspin-receive-timing-codex-reviewed
   evidence_type: explanation
-  excerpt: For a backspin ball, wait for it to start dropping before initiating the swing; contacting at the peak is rushing and hitting on the rise.
-  reason: These contiguous segments directly explain the backspin timing rule and identify peak contact as rushing into the shot.
+  excerpt: For a backspin ball, wait for it to start dropping before initiating the swing. The coach says that contact while falling means the swing started earlier, while contact at the peak is essentially hitting on the rise.
+  reason: For a backspin ball, wait for it to start dropping before beginning the swing; the coach describes peak contact as essentially hitting on the rise.
   confidence: 0.99
   visual_status: transcript_inferred
   review_status: approved

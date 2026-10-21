@@ -2,104 +2,94 @@ id: concept-rubber-friction-differences
 slug: rubber-friction-differences
 label: Rubber friction differences
 aliases:
-  - tacky versus grippy rubber
-short_definition: Adjust brushing pressure and acceleration to how the rubber grips the ball rather than assuming every surface produces friction identically.
+- tacky versus grippy rubber
+short_definition: The speakers compare tacky and non-tacky grippy rubbers' resistance and friction, and recommend tacky rubber for friction-based strokes. One speaker's brushing cue is to apply force at the moment of contact, especially against heavy spin or when intending a power loop.
 evidence_summary: >-
-  Different rubbers produce different amounts of usable friction, with tacky and grippy surfaces
-  making it easier to brush the ball effectively and generate stronger looping power. The quality
-  of contact also depends on where the ball meets the rubber, because contact on the upper half
-  creates more real friction and more useful spin and arc than lower-half contact. In practice,
-  the rubber type and the exact contact point together shape how much spin can be created.
-evidence_summary_source_hash: "sha256:b19a4eb46662ec8db46dc5f9d3a07b771502685adcdd5905abd51bf83450dbfd"
-evidence_summary_generator: "codex"
+  One speaker describes tacky and non-tacky grippy rubbers as differing in resistance and friction. For effective brushing, especially against heavy incoming spin or for a power loop, that speaker's cue is force at the very moment of contact. Another recommends tacky rubber as ideal for friction-based strokes, naming lifting backspin, banana flicks, serves, and pushes.
 concept_type: equipment
 facets:
   category:
-    - equipment
-  side:
-    - neutral
-  level:
-    - intermediate
-difficulty: intermediate
+  - equipment
+difficulty:
 review_status: approved
 evidence:
-  - id: qLT0MvwitZc-cand-tacky-vs-grippy-rubber-friction-1
-    evidence_type: explanation
-    excerpt: An equipment concept that different rubbers provide different resistance and friction, affecting how a player brushes and powers the loop.
-    reason: The speaker explicitly compares tacky and grippy rubbers and ties friction differences to effective brushing and power looping.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: qLT0MvwitZc
-      start_ms: 124800
-      end_ms: 145166
-      url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=124s"
-      segment_ids: &id001
-        - "qLT0MvwitZc:00029"
-        - "qLT0MvwitZc:00030"
-        - "qLT0MvwitZc:00031"
-        - "qLT0MvwitZc:00032"
-        - "qLT0MvwitZc:00033"
-  - id: pE5PLAr9iaA-concept-rubber-friction-differences-reviewed
-    evidence_type: explanation
-    excerpt: Differences in how much the rubber grips the ball and where on the rubber friction is most effective.
-    reason: The speaker attributes spin and arc to where the ball contacts the rubber, distinguishing real friction on the upper half from less effective lower-half contact.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: pE5PLAr9iaA
-      start_ms: 520719
-      end_ms: 548800
-      url: https://www.youtube.com/watch?v=pE5PLAr9iaA&t=520s
-      segment_ids:
-        - pE5PLAr9iaA:00168
-        - pE5PLAr9iaA:00169
-        - pE5PLAr9iaA:00176
-        - pE5PLAr9iaA:00177
-  - id: ae9urokFAJM-concept-rubber-friction-differences-reviewed
-    evidence_type: definition
-    excerpt: The distinction between grippy and tacky rubbers matters because tacky rubbers provide more friction for spin-based strokes, while grippy rubbers favor blocking and flat hitting.
-    reason: The speaker directly contrasts grippy and tacky rubber properties and says tacky rubber is ideal for friction-based strokes while grippy rubber suits blocking and flat hits.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: ae9urokFAJM
-      start_ms: 6000
-      end_ms: 32266
-      url: https://www.youtube.com/watch?v=ae9urokFAJM&t=6s
-      segment_ids:
-        - ae9urokFAJM:00001
-        - ae9urokFAJM:00002
-        - ae9urokFAJM:00003
-        - ae9urokFAJM:00004
-        - ae9urokFAJM:00005
-  - id: ae9urokFAJM-concept-rubber-friction-differences-codex-reviewed
-    evidence_type: explanation
-    excerpt: Tacky rubbers are ideal for friction-based strokes, including lifting backspin, banana flicks, serves, and pushes.
-    reason: These contiguous segments directly state that tacky rubbers are suited to friction-based strokes and identify the relevant stroke examples.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: ae9urokFAJM
-      start_ms: 48566
-      end_ms: 61266
-      url: https://www.youtube.com/watch?v=ae9urokFAJM&t=48s
-      segment_ids:
-        - ae9urokFAJM:00010
-        - ae9urokFAJM:00011
-        - ae9urokFAJM:00012
+- id: qLT0MvwitZc-cand-tacky-vs-grippy-rubber-friction-1
+  evidence_type: explanation
+  excerpt: The speaker says tacky and non-tacky grippy rubbers have different resistance and friction. To brush effectively, especially against heavy spin or for a power loop, the speaker's feeling is to apply force at the very moment of contact.
+  reason: The speaker compares rubber resistance and friction, then gives a personal force-at-contact cue for brushing, especially against heavy spin or for a power loop.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: qLT0MvwitZc
+    start_ms: 124800
+    end_ms: 145166
+    url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=124s"
+    segment_ids: &id001
+    - "qLT0MvwitZc:00029"
+    - "qLT0MvwitZc:00030"
+    - "qLT0MvwitZc:00031"
+    - "qLT0MvwitZc:00032"
+    - "qLT0MvwitZc:00033"
+- id: pE5PLAr9iaA-concept-rubber-friction-differences-reviewed
+  evidence_type: explanation
+  excerpt: Differences in how much the rubber grips the ball and where on the rubber friction is most effective.
+  reason: The speaker attributes spin and arc to where the ball contacts the rubber, distinguishing real friction on the upper half from less effective lower-half contact.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: pE5PLAr9iaA
+    start_ms: 520719
+    end_ms: 548800
+    url: https://www.youtube.com/watch?v=pE5PLAr9iaA&t=520s
+    segment_ids:
+    - pE5PLAr9iaA:00168
+    - pE5PLAr9iaA:00169
+    - pE5PLAr9iaA:00176
+    - pE5PLAr9iaA:00177
+- id: ae9urokFAJM-concept-rubber-friction-differences-reviewed
+  evidence_type: definition
+  excerpt: The distinction between grippy and tacky rubbers matters because tacky rubbers provide more friction for spin-based strokes, while grippy rubbers favor blocking and flat hitting.
+  reason: The speaker directly contrasts grippy and tacky rubber properties and says tacky rubber is ideal for friction-based strokes while grippy rubber suits blocking and flat hits.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ae9urokFAJM
+    start_ms: 6000
+    end_ms: 32266
+    url: https://www.youtube.com/watch?v=ae9urokFAJM&t=6s
+    segment_ids:
+    - ae9urokFAJM:00001
+    - ae9urokFAJM:00002
+    - ae9urokFAJM:00003
+    - ae9urokFAJM:00004
+    - ae9urokFAJM:00005
+- id: ae9urokFAJM-concept-rubber-friction-differences-codex-reviewed
+  evidence_type: explanation
+  excerpt: The speaker recommends tacky rubber as ideal for friction-based strokes, including lifting backspin, banana flicks, serves, and pushes.
+  reason: The speaker's tacky-rubber recommendation names lifting backspin, banana flicks, serves, and pushes as friction-based strokes.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: ae9urokFAJM
+    start_ms: 48566
+    end_ms: 61266
+    url: https://www.youtube.com/watch?v=ae9urokFAJM&t=48s
+    segment_ids:
+    - ae9urokFAJM:00010
+    - ae9urokFAJM:00011
+    - ae9urokFAJM:00012
 relations:
-  - relation_type: used_with
-    target_concept_id: concept-contact-zone-on-ball
-    sources:
-      - video_id: qLT0MvwitZc
-        start_ms: 124800
-        end_ms: 145166
-        url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=124s"
-        segment_ids: *id001
-    confidence: 0.9
-    review_status: approved
+- relation_type: used_with
+  target_concept_id: concept-contact-zone-on-ball
+  sources:
+  - video_id: qLT0MvwitZc
+    start_ms: 124800
+    end_ms: 145166
+    url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=124s"
+    segment_ids: *id001
+  confidence: 0.9
+  review_status: unreviewed

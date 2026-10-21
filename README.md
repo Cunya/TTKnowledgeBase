@@ -1,5 +1,9 @@
 # MomentGraph
 
+Visual inventory correction (2026-10-21 18h): all 35 current proposed visual windows remain unverified: nine already classified needs_footage plus 26 visual units in pending articles. Nine is a ledger-status subtotal, not the complete footage scope. Preserve every window; complete actual clip viewing is required before visual approval. Evidence: private media/audit-full-visual-inventory-2026-10-21-18.json. Current released article/unit counts remain unchanged.
+
+Current full-audit checkpoint (2026-10-21 18h): 365/380 articles supported; 12 pending articles and three classified footage articles remain (15 total). Units: 3505/4193 supported, 679 pending, nine classified needs_footage; the complete visual inventory is 35 unverified windows, including 26 in pending articles. Zero structural/source-metadata findings; five overlap reviews remain. Short-ball receive decisions retained all28records with23bounded citation completions, local wording, an actual length-based relation source and removal of unsupported difficulty. Five full Luna/high calls plus one targeted three-unit check passed all35units with32unchanged positives retained. Full release passed332tests(292.82s),Ruff,nine monitor tests,validators and zero-diagnostic638pageAstro build; exact public35units,1817article/1807TOC prose,380controls and67fresh toggles passed. Browser confirmed28moments,oneplayer,disabledloop and valid parent route. Ready position has36/38 private units supported after4full calls plus one targeted wording check; two placement findings remain, with all31records preserved. P1-56 corrects reversed incoming relation labels; all380rendered sections/25relations pass both graph directions and the actual parent route says has part. Normalprocessing stayspaused; nofootageapproval. Evidence: [18h session](docs/Session%20Logs/2026-10-21-18.md), [receive receipt](docs/editorial-short-receive-2026-10-21-18.md). Older checkpoints below are historical.
+
 MomentGraph is a source-grounded knowledge extraction engine for video. It turns timestamped YouTube transcripts into browsable, wiki-style knowledge bases: concepts are organized into hierarchies, related ideas are linked, and every claim points back to a precise source moment.
 
 The repository is currently named `TTKnowledgeBase`, but the product name is **MomentGraph**. Table tennis is the first knowledge base; the processors and site are designed to support additional domains without hard-coded table-tennis assumptions.
@@ -292,6 +296,8 @@ For the complete data lineage, scripted-versus-LLM responsibilities, review gate
 
 Published-content repairs now use the [complete audit workflow](docs/full-published-audit-workflow-2026-10-14.md) and [coverage report](docs/full-published-audit-coverage-2026-10-14.md), tracked under P1-50. Every article/citation/relation/visual claim is inventoried; changed inputs reopen reviews. Processing is paused for the full audit at the operator's request.
 
+The latest reviewed audit checkpoint is **361/380 supported articles, 16 pending, 3 need footage**. The latest two-article batch and dependency reviews passed the full release gate and exact public/prose/control checks; actual-browser show-all verification also passed. All19remaining articles and9footage clips remain in scope; normal processing stays paused. See the [current coverage report](docs/full-published-audit-coverage-2026-10-14.md) and consolidated backlog.
+
 Checkpoint at 2026-10-15 11:00 EEST: 23 supported / 354 pending articles among 377 eligible articles (176 supported / 4,325 pending units); two excluded originals retained in history. Ten additional articles were repaired and reviewed in this continuation. Repair contract 1.0.8 removes prior confidence/approval from independent verifier targets. The ordinary release gate passed at 10:58 EEST: reviewed/published validation, 203 Python tests, nine monitor tests, Ruff, zero Astro errors/warnings/hints and 635 built pages. Full semantic/visual audit completion remains blocked; processing stays paused. See the [continuation record](docs/automated-published-repair-study-2026-10-14.md#full-audit-continuation--2026-10-15).
 
 The full-audit runner executes private semantic checks with resumable per-call checkpoints: run-published-audit --kb table-tennis --max-calls 10. Final campaign verification uses verify-release.ps1 -Kb table-tennis -RequireFullAudit; pending/fix/footage/metadata/stale work blocks it. Machine findings require independent editorial review before canonical changes or approval.
@@ -315,3 +321,27 @@ Reviewed difficulty-only removal can now generate private plans with zero model 
 Current audit ledger:135/377 articles supported;242 remain pending. The latest two-article batch corrected drive-boundary wording and loop-specific weight loading. One spacing/jamming overlap remains unresolved. See the [current session checkpoint](docs/Session%20Logs/2026-10-16-19.md), [operations](docs/operations.md) and [original benchmark evidence](docs/audit-benchmark20-2026-10-16.md). Full corpus/footage clearance remains open;normal processing stays paused.
 
 
+
+
+The [field-proof selection checkpoint](docs/audit-field-proof-selection-2026-10-17-14.md) records the bounded large-article repair path and its real Luna/high pilot. Final verification and primary review remain mandatory.
+
+
+Audit checkpoint 2026-10-17 18:26 EEST: Resumed saved GPT-6 Luna/high finite jobs; applied complete source/primary-reviewed backspin timing and under-ball contact corrections. Coverage170/377 supported,207 pending;1331/4377 units supported,3046 pending,one overlap advisory. Retained valid conditional hook-serving warning; unsupported loose-grip relation archived. Broader timing topic moved to fundamentals. Source/visual guards retained; no footage approval. Small planner fix permits rejected private quarantine reauthoring only with exact primary findings; regression confirms no automatic retry or stale approval. Focused126 repair/CLI tests and Ruff passed; full release pending. Quota16%five-hour/16%weekly permits work; normal processing paused. Evidence: media/audit-under-ball-bounce-repair-2026-10-17-18.log and current session.
+
+
+Latest audit checkpoint:172/377articles cleared,205remaining,1367/4374units supported. Balltracking/rhythm complete primary-reviewed corrections applied;normal processingpaused. See docs/Session Logs/2026-10-17-18.md.
+
+
+Latest audit checkpoint:174/377articles cleared,203remaining;1410/4362units supported. Reviewed backswing/serve repairs applied with two actual spoken-source extensions;normal processingpaused. See docs/Session Logs/2026-10-17-19.md.
+
+
+Latest audit checkpoint:175/377articles cleared,202remaining;1437/4360units supported. Full reviewed spacing correction applied;normal processingpaused. See docs/Session Logs/2026-10-17-20.md.
+
+
+Latest audit checkpoint:176/377articles cleared,201remaining;1466/4356units supported. Backhand body coordination reviewed;normalprocessingpaused. See docs/Session Logs/2026-10-17-20.md.
+
+
+Latest audit checkpoint:177/377articles cleared,200remaining;1480/4354units supported. Ballfeel reviewed;normalprocessingpaused. See docs/Session Logs/2026-10-17-20.md.
+
+
+Retention recheck:all16historicalflags resolved (11supportedcurrent,5corrected). Fullaudit remains177/377cleared,200pending;normalprocessingpaused. See docs/Session Logs/2026-10-17-21.md.
