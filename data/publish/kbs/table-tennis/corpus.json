@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T17:30:34.032281Z",
+  "generated_at": "2026-10-22T08:35:21.368290Z",
   "knowledge_base": {
     "id": "table-tennis",
     "name": "Table Tennis",
@@ -15709,30 +15709,23 @@
         "ball contact"
       ],
       "short_definition": "The position and timing at which the racket meets the ball.",
-      "detailed_definition": "For this forehand-loop example, contact is in front of the body near the top of the bounce; late contact reduces space and consistency.",
-      "evidence_summary": "Contact timing depends on the incoming ball. In the soft-ball example, slow down with the ball and allow it to come closer before pressing forward. Timing, balance, and positioning can cause misses that appear to be stroke-technique problems.",
+      "detailed_definition": "Contact-point examples cover both bounce-phase timing and spacing. Robot practice varies contact on the rise, at the peak and on the fall. A backhand lesson keeps contact in front without becoming jammed or reaching too far, while a fast-serve example places contact close to the body and table.",
+      "evidence_summary": "Contact timing depends on the incoming ball. In the soft-ball example, slow down with the ball and allow it to come closer before pressing forward. Timing, balance, and positioning can cause mistakes that appear to be stroke-technique problems.",
       "evidence_summary_source_hash": null,
       "evidence_summary_generator": null,
       "concept_type": "technique-dimension",
       "facets": {
         "category": [
           "fundamentals"
-        ],
-        "side": [
-          "neutral"
-        ],
-        "level": [
-          "beginner",
-          "intermediate"
         ]
       },
-      "difficulty": "beginner",
+      "difficulty": null,
       "evidence": [
         {
           "id": "contact-point-three-timings-2",
           "evidence_type": "drill",
-          "excerpt": "Practice contacts on the rise, at the apex, and during the falling phase.",
-          "reason": "Global TT Studio turns contact timing into a deliberate practice variable.",
+          "excerpt": "With only a robot, deliberately practice different contact points: on the rise, at the peak and on the fall.",
+          "reason": "Vary bounce-phase contact timing in the stated robot practice.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
@@ -15753,8 +15746,8 @@
         {
           "id": "heavy-backspin-contact-3",
           "evidence_type": "explanation",
-          "excerpt": "The optimal contact point for heavy backspin is at the very beginning of its descent.",
-          "reason": "Adds a spin-specific timing example from another Global TT Studio lesson.",
+          "excerpt": "The speaker identifies the very beginning of descent as the optimal contact point for a heavy-backspin ball.",
+          "reason": "Use the early-descent timing cue in this heavy-backspin lesson.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
@@ -15774,8 +15767,8 @@
         {
           "id": "heavy-backspin-summary-4",
           "evidence_type": "example",
-          "excerpt": "Against heavy backspin, connect just after the ball begins its descent.",
-          "reason": "A concise repeatable summary of the same timing cue.",
+          "excerpt": "The summary pairs an outward looping arc with contact in the early descending phase.",
+          "reason": "Keep the early-descending contact cue in this summary.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
@@ -15796,8 +15789,8 @@
         {
           "id": "stable-body-at-contact-5",
           "evidence_type": "explanation",
-          "excerpt": "Find the optimal contact point because a proper stroke requires a stable body.",
-          "reason": "Connects usable contact position with arriving early enough to remain stable through the stroke.",
+          "excerpt": "With every step, strive to find the optimal contact point because a proper stroke requires a stable body.",
+          "reason": "Find a contact point that permits a stable body through the stroke.",
           "confidence": 0.97,
           "visual_status": "not_visual",
           "source": {
@@ -15818,8 +15811,8 @@
         {
           "id": "backspin-after-peak-6",
           "evidence_type": "explanation",
-          "excerpt": "For amateurs against backspin, let the ball start to drop after its peak.",
-          "reason": "Gives a clear bounce-phase contact cue for looping backspin.",
+          "excerpt": "Brush the falling ball to synchronize forces. The speaker warns that hitting or brushing backspin at the peak goes into the net, and recommends amateurs let it start dropping after the peak.",
+          "reason": "Use the descending-ball contact cue in this backspin example.",
           "confidence": 0.99,
           "visual_status": "not_visual",
           "source": {
@@ -15829,6 +15822,8 @@
             "url": "https://www.youtube.com/watch?v=0E67TotjJFE&t=298s",
             "segment_ids": [
               "0E67TotjJFE:00067",
+              "0E67TotjJFE:00068",
+              "0E67TotjJFE:00069",
               "0E67TotjJFE:00070"
             ]
           },
@@ -15865,8 +15860,8 @@
         {
           "id": "close-table-rise-contact-8-part-1",
           "evidence_type": "explanation",
-          "excerpt": "Close to the table, the practical contact choices are on the rise or at the peak.",
-          "reason": "Explains how table distance constrains backhand contact timing.",
+          "excerpt": "Close to the table, the speaker gives two choices: take the ball on the rise or at the peak.",
+          "reason": "Use the two bounce-phase choices stated for close-table play.",
           "confidence": 0.97,
           "visual_status": "transcript_inferred",
           "source": {
@@ -15888,16 +15883,17 @@
         {
           "id": "close-table-rise-contact-8-part-2",
           "evidence_type": "explanation",
-          "excerpt": "At very close range, favor the earlier on-the-rise contact.",
-          "reason": "Explains how table distance constrains backhand contact timing.",
+          "excerpt": "When close to the table, the speaker calls flicking on the rise the only real choice.",
+          "reason": "Use the close-table, on-the-rise flick cue in this example.",
           "confidence": 0.97,
           "visual_status": "not_visual",
           "source": {
             "video_id": "BToLYdKLIMM",
-            "start_ms": 448720,
+            "start_ms": 446080,
             "end_ms": 454520,
-            "url": "https://www.youtube.com/watch?v=BToLYdKLIMM&t=448s",
+            "url": "https://www.youtube.com/watch?v=BToLYdKLIMM&t=446s",
             "segment_ids": [
+              "BToLYdKLIMM:00165",
               "BToLYdKLIMM:00166",
               "BToLYdKLIMM:00167"
             ]
@@ -15910,8 +15906,8 @@
         {
           "id": "forehand-contact-near-thigh-9",
           "evidence_type": "explanation",
-          "excerpt": "Let the ball come close to the front of your leg before striking so the body can transfer power.",
-          "reason": "Adds a forehand-loop spatial reference that applies independently of bounce phase.",
+          "excerpt": "Let the ball come close to the front of the leg before striking. The speaker identifies that area as the contact point for transferring power.",
+          "reason": "Use the front-of-leg contact reference described here.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
@@ -15932,19 +15928,20 @@
         {
           "id": "p3hweUir1Mg-candidate-contact-point-1",
           "evidence_type": "explanation",
-          "excerpt": "The position of racket and ball at impact must be adjusted to the incoming ball height so the intended part of the racket contacts the ball.",
-          "reason": "The speaker explains adjusting racket position to different ball heights so contact occurs correctly.",
+          "excerpt": "Adjust racket height to the ball, keeping the racket higher than the ball and contacting with the bottom half.",
+          "reason": "Use the stated racket-height and bottom-half contact cues in this example.",
           "confidence": 0.8,
           "visual_status": "transcript_inferred",
           "source": {
             "video_id": "p3hweUir1Mg",
             "start_ms": 233400,
-            "end_ms": 242766,
+            "end_ms": 246100,
             "url": "https://www.youtube.com/watch?v=p3hweUir1Mg&t=233s",
             "segment_ids": [
               "p3hweUir1Mg:00060",
               "p3hweUir1Mg:00061",
-              "p3hweUir1Mg:00062"
+              "p3hweUir1Mg:00062",
+              "p3hweUir1Mg:00063"
             ]
           },
           "spoken_context_start_ms": null,
@@ -15955,16 +15952,17 @@
         {
           "id": "p3hweUir1Mg-candidate-contact-point-2",
           "evidence_type": "explanation",
-          "excerpt": "The position of racket and ball at impact must be adjusted to the incoming ball height so the intended part of the racket contacts the ball.",
-          "reason": "The speaker explains adjusting racket position to different ball heights so contact occurs correctly.",
+          "excerpt": "The speaker says bottom-half contact keeps the ball low. Adjust racket position to each ball height, with the hand slightly higher than the ball rather than the racket lower.",
+          "reason": "Adjust racket height to preserve the contact arrangement described in this lesson.",
           "confidence": 0.8,
           "visual_status": "transcript_inferred",
           "source": {
             "video_id": "p3hweUir1Mg",
-            "start_ms": 269900,
+            "start_ms": 263166,
             "end_ms": 280566,
-            "url": "https://www.youtube.com/watch?v=p3hweUir1Mg&t=269s",
+            "url": "https://www.youtube.com/watch?v=p3hweUir1Mg&t=263s",
             "segment_ids": [
+              "p3hweUir1Mg:00066",
               "p3hweUir1Mg:00067",
               "p3hweUir1Mg:00068",
               "p3hweUir1Mg:00069",
@@ -15979,18 +15977,21 @@
         {
           "id": "JcH1Nudznvk-cand-forehand-loop-contact-at-table-height-1",
           "evidence_type": "explanation",
-          "excerpt": "The same contact-height principle applies on the forehand loop: brushing around table height or slightly lower produces a smoother loop, while brushing too high tends to send the ball into the net.",
-          "reason": "The speaker extends the same low contact-height rule to the forehand side and contrasts smooth low brushing with netting from high brushing.",
+          "excerpt": "Lower the brushing contact point. The speaker applies this to the forehand side, describing a smoother loop from the lower point and easy net errors when brushing higher.",
+          "reason": "Use the lower brushing-contact cue without assigning an unseen exact height.",
           "confidence": 0.87,
           "visual_status": "transcript_inferred",
           "source": {
             "video_id": "JcH1Nudznvk",
-            "start_ms": 637200,
+            "start_ms": 633400,
             "end_ms": 648960,
-            "url": "https://www.youtube.com/watch?v=JcH1Nudznvk&t=637s",
+            "url": "https://www.youtube.com/watch?v=JcH1Nudznvk&t=633s",
             "segment_ids": [
+              "JcH1Nudznvk:00243",
+              "JcH1Nudznvk:00244",
               "JcH1Nudznvk:00245",
               "JcH1Nudznvk:00246",
+              "JcH1Nudznvk:00247",
               "JcH1Nudznvk:00248",
               "JcH1Nudznvk:00249"
             ]
@@ -16003,19 +16004,20 @@
         {
           "id": "QET6W3rjOxo-cand-contact-point-1",
           "evidence_type": "definition",
-          "excerpt": "The precise position and height at which the player meets the ball, especially after adjusting footwork and body height.",
-          "reason": "The speaker frames the lesson around finding the precise hitting position and later asks why players cannot lock onto the hitting point.",
+          "excerpt": "The speaker introduces why players cannot find their precise hitting position when moving their feet, especially during matches.",
+          "reason": "The lesson identifies finding the hitting position while moving as its topic.",
           "confidence": 0.9,
           "visual_status": "not_visual",
           "source": {
             "video_id": "QET6W3rjOxo",
             "start_ms": 6080,
-            "end_ms": 13800,
+            "end_ms": 15480,
             "url": "https://www.youtube.com/watch?v=QET6W3rjOxo&t=6s",
             "segment_ids": [
               "QET6W3rjOxo:00003",
               "QET6W3rjOxo:00004",
-              "QET6W3rjOxo:00005"
+              "QET6W3rjOxo:00005",
+              "QET6W3rjOxo:00006"
             ]
           },
           "spoken_context_start_ms": null,
@@ -16026,8 +16028,8 @@
         {
           "id": "QET6W3rjOxo-cand-contact-point-2",
           "evidence_type": "definition",
-          "excerpt": "The precise position and height at which the player meets the ball, especially after adjusting footwork and body height.",
-          "reason": "The speaker frames the lesson around finding the precise hitting position and later asks why players cannot lock onto the hitting point.",
+          "excerpt": "The speaker says players cannot lock onto the hitting point because they commit before judging what the opponent gives them.",
+          "reason": "Judge the incoming ball before committing in this diagnosis.",
           "confidence": 0.9,
           "visual_status": "not_visual",
           "source": {
@@ -16049,8 +16051,8 @@
         {
           "id": "I-_3TIjU4qI-candidate-contact-point-locking-1",
           "evidence_type": "explanation",
-          "excerpt": "Consistently fixing the timing and exact contact location is presented as essential for usable match play and reliable attack progression.",
-          "reason": "The speaker identifies poor spatial sensitivity and inability to lock onto the point as a key problem.",
+          "excerpt": "The speaker identifies poor sensitivity to spatial adjustments and difficulty locking onto the point, even after finding the position.",
+          "reason": "Recognize the spatial-adjustment problem described here.",
           "confidence": 0.91,
           "visual_status": "not_visual",
           "source": {
@@ -16073,20 +16075,19 @@
         {
           "id": "I-_3TIjU4qI-candidate-contact-point-locking-2",
           "evidence_type": "explanation",
-          "excerpt": "Consistently fixing the timing and exact contact location is presented as essential for usable match play and reliable attack progression.",
-          "reason": "The speaker says match ability will not improve unless timing and point are locked in.",
+          "excerpt": "The speaker says match ability will not improve without locking in timing and point.",
+          "reason": "Lock in timing and point as required in this match-ability diagnosis.",
           "confidence": 0.94,
           "visual_status": "not_visual",
           "source": {
             "video_id": "I-_3TIjU4qI",
             "start_ms": 300760,
-            "end_ms": 311360,
+            "end_ms": 308960,
             "url": "https://www.youtube.com/watch?v=I-_3TIjU4qI&t=300s",
             "segment_ids": [
               "I-_3TIjU4qI:00131",
               "I-_3TIjU4qI:00132",
-              "I-_3TIjU4qI:00133",
-              "I-_3TIjU4qI:00134"
+              "I-_3TIjU4qI:00133"
             ]
           },
           "spoken_context_start_ms": null,
@@ -16097,20 +16098,22 @@
         {
           "id": "I-_3TIjU4qI-candidate-contact-point-locking-3",
           "evidence_type": "explanation",
-          "excerpt": "Consistently fixing the timing and exact contact location is presented as essential for usable match play and reliable attack progression.",
-          "reason": "The progression to stronger looping is gated by solid push consistency and a solid contact point.",
+          "excerpt": "In the described progression, once pushes are error-free and the contact point is solid, the coach permits explosive loops with power.",
+          "reason": "Keep both push-consistency and solid-contact-point conditions for this progression.",
           "confidence": 0.87,
           "visual_status": "not_visual",
           "source": {
             "video_id": "I-_3TIjU4qI",
             "start_ms": 336640,
-            "end_ms": 346680,
+            "end_ms": 349280,
             "url": "https://www.youtube.com/watch?v=I-_3TIjU4qI&t=336s",
             "segment_ids": [
               "I-_3TIjU4qI:00147",
               "I-_3TIjU4qI:00148",
               "I-_3TIjU4qI:00149",
-              "I-_3TIjU4qI:00150"
+              "I-_3TIjU4qI:00150",
+              "I-_3TIjU4qI:00151",
+              "I-_3TIjU4qI:00152"
             ]
           },
           "spoken_context_start_ms": null,
@@ -16121,18 +16124,23 @@
         {
           "id": "uag7n7hq3bM-cand-contact-point-1",
           "evidence_type": "explanation",
-          "excerpt": "Speaker explicitly says players fail because they do not accurately find the correct contact point and recommends finding it before forcing power.",
-          "reason": "The precise height, distance, and ball position where the racket should meet the ball for a controlled return or attack.",
+          "excerpt": "The speaker calls this an anticipation problem: the player has not adjusted to the ball trajectory and found the correct contact point, ending up too high or too low.",
+          "reason": "Adjust to the trajectory and locate the return contact point in this diagnosis.",
           "confidence": 0.98,
           "visual_status": "not_visual",
           "source": {
             "video_id": "uag7n7hq3bM",
-            "start_ms": 47040,
-            "end_ms": 53920,
-            "url": "https://www.youtube.com/watch?v=uag7n7hq3bM&t=47s",
+            "start_ms": 41480,
+            "end_ms": 58600,
+            "url": "https://www.youtube.com/watch?v=uag7n7hq3bM&t=41s",
             "segment_ids": [
+              "uag7n7hq3bM:00012",
+              "uag7n7hq3bM:00013",
+              "uag7n7hq3bM:00014",
               "uag7n7hq3bM:00015",
-              "uag7n7hq3bM:00016"
+              "uag7n7hq3bM:00016",
+              "uag7n7hq3bM:00017",
+              "uag7n7hq3bM:00018"
             ]
           },
           "spoken_context_start_ms": null,
@@ -16143,18 +16151,20 @@
         {
           "id": "uag7n7hq3bM-cand-contact-point-2",
           "evidence_type": "explanation",
-          "excerpt": "Speaker explicitly says players fail because they do not accurately find the correct contact point and recommends finding it before forcing power.",
-          "reason": "The precise height, distance, and ball position where the racket should meet the ball for a controlled return or attack.",
+          "excerpt": "After serving, the speaker starts lightly and first finds the contact point instead of forcing power from a bad position.",
+          "reason": "Find the contact point before forcing power in this after-serve example.",
           "confidence": 0.98,
           "visual_status": "not_visual",
           "source": {
             "video_id": "uag7n7hq3bM",
-            "start_ms": 77680,
+            "start_ms": 74800,
             "end_ms": 84600,
-            "url": "https://www.youtube.com/watch?v=uag7n7hq3bM&t=77s",
+            "url": "https://www.youtube.com/watch?v=uag7n7hq3bM&t=74s",
             "segment_ids": [
+              "uag7n7hq3bM:00027",
               "uag7n7hq3bM:00028",
-              "uag7n7hq3bM:00029"
+              "uag7n7hq3bM:00029",
+              "uag7n7hq3bM:00030"
             ]
           },
           "spoken_context_start_ms": null,
@@ -16165,8 +16175,8 @@
         {
           "id": "uag7n7hq3bM-cand-contact-point-3",
           "evidence_type": "drill",
-          "excerpt": "Training progression repeatedly centers on first finding the correct contact point, then adding attack and quality.",
-          "reason": "The precise height, distance, and ball position where the racket should meet the ball for a controlled return or attack.",
+          "excerpt": "Find the contact point first. As the level improves, mix loops and pushes; the forehand-loop example stays at no more than 50% power to avoid renewed tension and keeps focus on the contact point.",
+          "reason": "Keep the contact-point focus and stated power limit when adding the forehand loop in this progression.",
           "confidence": 0.94,
           "visual_status": "not_visual",
           "source": {
@@ -16176,6 +16186,13 @@
             "url": "https://www.youtube.com/watch?v=uag7n7hq3bM&t=215s",
             "segment_ids": [
               "uag7n7hq3bM:00083",
+              "uag7n7hq3bM:00084",
+              "uag7n7hq3bM:00085",
+              "uag7n7hq3bM:00086",
+              "uag7n7hq3bM:00087",
+              "uag7n7hq3bM:00088",
+              "uag7n7hq3bM:00089",
+              "uag7n7hq3bM:00090",
               "uag7n7hq3bM:00091"
             ]
           },
@@ -16187,17 +16204,20 @@
         {
           "id": "uag7n7hq3bM-cand-contact-point-4",
           "evidence_type": "drill",
-          "excerpt": "Training progression repeatedly centers on first finding the correct contact point, then adding attack and quality.",
-          "reason": "The precise height, distance, and ball position where the racket should meet the ball for a controlled return or attack.",
+          "excerpt": "The progression is push, attack from one wing, lightly loop from both wings, then focus on finding the contact point and adding quality step by step.",
+          "reason": "Add contact-point focus and quality within the stated training progression.",
           "confidence": 0.94,
           "visual_status": "not_visual",
           "source": {
             "video_id": "uag7n7hq3bM",
-            "start_ms": 397600,
+            "start_ms": 392680,
             "end_ms": 407880,
-            "url": "https://www.youtube.com/watch?v=uag7n7hq3bM&t=397s",
+            "url": "https://www.youtube.com/watch?v=uag7n7hq3bM&t=392s",
             "segment_ids": [
+              "uag7n7hq3bM:00155",
+              "uag7n7hq3bM:00156",
               "uag7n7hq3bM:00157",
+              "uag7n7hq3bM:00158",
               "uag7n7hq3bM:00159"
             ]
           },
@@ -16293,17 +16313,20 @@
         {
           "id": "XfWXrGTlW5M-concept-contact-point-1",
           "evidence_type": "explanation",
-          "excerpt": "The moment and position where the racket meets the ball; in this lesson, mistimed backswing can force contact too far in front and hurt continuous looping.",
-          "reason": "The coach locates contact during the stroke and explains that an overly fast backswing pushes the contact point too far in front.",
+          "excerpt": "After the backswing, the motion and combined force go forward. The speaker locates backswing and contact, then diagnoses deliberately lifting the arm too much after contact.",
+          "reason": "Distinguish the contact location from the diagnosed excessive upward motion after it.",
           "confidence": 0.93,
           "visual_status": "not_visual",
           "source": {
             "video_id": "XfWXrGTlW5M",
-            "start_ms": 43166,
-            "end_ms": 49100,
-            "url": "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=43s",
+            "start_ms": 32000,
+            "end_ms": 52266,
+            "url": "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=32s",
             "segment_ids": [
-              "XfWXrGTlW5M:00010"
+              "XfWXrGTlW5M:00008",
+              "XfWXrGTlW5M:00009",
+              "XfWXrGTlW5M:00010",
+              "XfWXrGTlW5M:00011"
             ]
           },
           "spoken_context_start_ms": null,
@@ -16314,17 +16337,18 @@
         {
           "id": "XfWXrGTlW5M-concept-contact-point-2",
           "evidence_type": "explanation",
-          "excerpt": "The moment and position where the racket meets the ball; in this lesson, mistimed backswing can force contact too far in front and hurt continuous looping.",
-          "reason": "The coach locates contact during the stroke and explains that an overly fast backswing pushes the contact point too far in front.",
+          "excerpt": "An overly fast backswing puts the contact point too far in front, making continuous shots difficult.",
+          "reason": "Avoid the too-fast backswing and far-forward contact combination described here.",
           "confidence": 0.93,
           "visual_status": "not_visual",
           "source": {
             "video_id": "XfWXrGTlW5M",
             "start_ms": 224233,
-            "end_ms": 229266,
+            "end_ms": 232233,
             "url": "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=224s",
             "segment_ids": [
-              "XfWXrGTlW5M:00055"
+              "XfWXrGTlW5M:00055",
+              "XfWXrGTlW5M:00056"
             ]
           },
           "spoken_context_start_ms": null,
@@ -16335,8 +16359,8 @@
         {
           "id": "nUotsfFiQqY-cand-drop-contact-vs-spin-1",
           "evidence_type": "explanation",
-          "excerpt": "The heavier the backspin, the more the player should let the ball drop before looping; knee-height contact reduces the effective spin compared with waist-height contact.",
-          "reason": "Speaker explicitly links spin level to preferred contact height and timing, recommending knee-height contact for control.",
+          "excerpt": "The spinnier the ball, the lower the speaker lets it drop. The lesson contrasts knee-height control with waist-height power looping and recommends knee-height contact rather than waist height.",
+          "reason": "Keep the lesson-specific contrast between lower contact for control and waist-height power looping.",
           "confidence": 0.96,
           "visual_status": "transcript_inferred",
           "source": {
@@ -16362,16 +16386,17 @@
         {
           "id": "nUotsfFiQqY-cand-drop-contact-vs-spin-2",
           "evidence_type": "explanation",
-          "excerpt": "The heavier the backspin, the more the player should let the ball drop before looping; knee-height contact reduces the effective spin compared with waist-height contact.",
-          "reason": "Speaker explicitly links spin level to preferred contact height and timing, recommending knee-height contact for control.",
+          "excerpt": "Wait for the ball to drop to the indicated area before swinging, with a natural, calm and controlled rhythm.",
+          "reason": "Wait for the ball to drop before swinging, with a calm and controlled rhythm.",
           "confidence": 0.96,
           "visual_status": "transcript_inferred",
           "source": {
             "video_id": "nUotsfFiQqY",
-            "start_ms": 378680,
+            "start_ms": 376840,
             "end_ms": 383800,
-            "url": "https://www.youtube.com/watch?v=nUotsfFiQqY&t=378s",
+            "url": "https://www.youtube.com/watch?v=nUotsfFiQqY&t=376s",
             "segment_ids": [
+              "nUotsfFiQqY:00154",
               "nUotsfFiQqY:00155",
               "nUotsfFiQqY:00156"
             ]
@@ -16384,8 +16409,8 @@
         {
           "id": "t3HX8AEujWw-c1-1",
           "evidence_type": "explanation",
-          "excerpt": "States that a shorter space from backswing to contact makes the contact point easier to find.",
-          "reason": "The ball should be met at a specific bounce phase and with a compact hand-to-ball relationship so the player can find clean contact consistently.",
+          "excerpt": "A shorter space between backswing and contact makes the contact point easier to find.",
+          "reason": "Keep the backswing-to-contact space short in this example.",
           "confidence": 0.95,
           "visual_status": "not_visual",
           "source": {
@@ -16407,8 +16432,8 @@
         {
           "id": "t3HX8AEujWw-c1-2",
           "evidence_type": "explanation",
-          "excerpt": "Connects forehand-drive compactness with a stable takeback-to-contact distance.",
-          "reason": "The ball should be met at a specific bounce phase and with a compact hand-to-ball relationship so the player can find clean contact consistently.",
+          "excerpt": "The forehand-drive space from takeback to contact stays compact regardless of standing position, and the speaker says to use the peak of the bounce.",
+          "reason": "Use the compact takeback-to-contact space and peak timing stated for the forehand drive.",
           "confidence": 0.88,
           "visual_status": "not_visual",
           "source": {
@@ -16419,7 +16444,8 @@
             "segment_ids": [
               "t3HX8AEujWw:00013",
               "t3HX8AEujWw:00014",
-              "t3HX8AEujWw:00015"
+              "t3HX8AEujWw:00015",
+              "t3HX8AEujWw:00016"
             ]
           },
           "spoken_context_start_ms": null,
@@ -16430,17 +16456,19 @@
         {
           "id": "wF-YklKS7pI-cand-contact-point-1",
           "evidence_type": "definition",
-          "excerpt": "The segment repeatedly ties tactical choice to whether contact is made at the peak, descending point, or lower point.",
-          "reason": "Ball quality and shot selection depend on contacting the ball at the appropriate phase of its trajectory, such as the peak, descending point, or lower point.",
+          "excerpt": "The speaker says the rhythm for chopping, flicking or slicing in this example is at the peak of the bounce.",
+          "reason": "Keep the peak timing attached to the actions named in this example.",
           "confidence": 0.84,
           "visual_status": "not_visual",
           "source": {
             "video_id": "wF-YklKS7pI",
-            "start_ms": 77360,
-            "end_ms": 80560,
-            "url": "https://www.youtube.com/watch?v=wF-YklKS7pI&t=77s",
+            "start_ms": 75120,
+            "end_ms": 82600,
+            "url": "https://www.youtube.com/watch?v=wF-YklKS7pI&t=75s",
             "segment_ids": [
-              "wF-YklKS7pI:00030"
+              "wF-YklKS7pI:00029",
+              "wF-YklKS7pI:00030",
+              "wF-YklKS7pI:00031"
             ]
           },
           "spoken_context_start_ms": null,
@@ -16451,18 +16479,25 @@
         {
           "id": "wF-YklKS7pI-cand-contact-point-2",
           "evidence_type": "definition",
-          "excerpt": "The segment repeatedly ties tactical choice to whether contact is made at the peak, descending point, or lower point.",
-          "reason": "Ball quality and shot selection depend on contacting the ball at the appropriate phase of its trajectory, such as the peak, descending point, or lower point.",
+          "excerpt": "After a very spinny serve brings back a low soft push, the speaker gives two options: step in and loop at the peak, or wait for descent and loop with heavy spin. The lesson warns against power looping at descent.",
+          "reason": "Keep the low soft-push condition and distinguish peak contact from descending heavy-spin contact.",
           "confidence": 0.84,
           "visual_status": "not_visual",
           "source": {
             "video_id": "wF-YklKS7pI",
-            "start_ms": 345919,
-            "end_ms": 352400,
-            "url": "https://www.youtube.com/watch?v=wF-YklKS7pI&t=345s",
+            "start_ms": 334080,
+            "end_ms": 358120,
+            "url": "https://www.youtube.com/watch?v=wF-YklKS7pI&t=334s",
             "segment_ids": [
+              "wF-YklKS7pI:00132",
+              "wF-YklKS7pI:00133",
+              "wF-YklKS7pI:00134",
+              "wF-YklKS7pI:00135",
               "wF-YklKS7pI:00136",
-              "wF-YklKS7pI:00137"
+              "wF-YklKS7pI:00137",
+              "wF-YklKS7pI:00138",
+              "wF-YklKS7pI:00139",
+              "wF-YklKS7pI:00140"
             ]
           },
           "spoken_context_start_ms": null,
@@ -16473,40 +16508,23 @@
         {
           "id": "wF-YklKS7pI-cand-contact-point-3",
           "evidence_type": "definition",
-          "excerpt": "The segment repeatedly ties tactical choice to whether contact is made at the peak, descending point, or lower point.",
-          "reason": "Ball quality and shot selection depend on contacting the ball at the appropriate phase of its trajectory, such as the peak, descending point, or lower point.",
+          "excerpt": "For a half-long ball coming past the table, the speaker offers stepping in to loop at the peak or waiting for the drop and looping with spin at a lower point.",
+          "reason": "Choose between the two stated half-long-ball timing options.",
           "confidence": 0.84,
           "visual_status": "not_visual",
           "source": {
             "video_id": "wF-YklKS7pI",
-            "start_ms": 373080,
+            "start_ms": 369080,
             "end_ms": 391720,
-            "url": "https://www.youtube.com/watch?v=wF-YklKS7pI&t=373s",
+            "url": "https://www.youtube.com/watch?v=wF-YklKS7pI&t=369s",
             "segment_ids": [
+              "wF-YklKS7pI:00146",
+              "wF-YklKS7pI:00147",
               "wF-YklKS7pI:00148",
+              "wF-YklKS7pI:00149",
+              "wF-YklKS7pI:00150",
+              "wF-YklKS7pI:00151",
               "wF-YklKS7pI:00152"
-            ]
-          },
-          "spoken_context_start_ms": null,
-          "spoken_context_end_ms": null,
-          "visual_source": null,
-          "review_status": "approved"
-        },
-        {
-          "id": "YUEaL2HiPIE-concept-balanced-contact-stability-1",
-          "evidence_type": "definition",
-          "excerpt": "Speaker states the player should be stable on every shot and still at contact.",
-          "reason": "At impact, the body, shoulders, and center of gravity should be stable so the player does not lurch or move excessively while hitting.",
-          "confidence": 0.94,
-          "visual_status": "not_visual",
-          "source": {
-            "video_id": "YUEaL2HiPIE",
-            "start_ms": 317533,
-            "end_ms": 341000,
-            "url": "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=317s",
-            "segment_ids": [
-              "YUEaL2HiPIE:00067",
-              "YUEaL2HiPIE:00071"
             ]
           },
           "spoken_context_start_ms": null,
@@ -16517,8 +16535,8 @@
         {
           "id": "YUEaL2HiPIE-concept-balanced-contact-stability-2",
           "evidence_type": "definition",
-          "excerpt": "Speaker states the player should be stable on every shot and still at contact.",
-          "reason": "At impact, the body, shoulders, and center of gravity should be stable so the player does not lurch or move excessively while hitting.",
+          "excerpt": "Complete the stroke, then move the feet to the forehand position for the next shot. The speaker says the body should be still at contact for every stroke.",
+          "reason": "Separate completing the stroke from the next foot movement in the stated drill.",
           "confidence": 0.94,
           "visual_status": "not_visual",
           "source": {
@@ -16537,34 +16555,10 @@
           "review_status": "approved"
         },
         {
-          "id": "YUEaL2HiPIE-concept-balanced-contact-stability-3",
-          "evidence_type": "explanation",
-          "excerpt": "Speaker explains that balancing the body and shoulders improves shot stability and reduces errors.",
-          "reason": "At impact, the body, shoulders, and center of gravity should be stable so the player does not lurch or move excessively while hitting.",
-          "confidence": 0.92,
-          "visual_status": "not_visual",
-          "source": {
-            "video_id": "YUEaL2HiPIE",
-            "start_ms": 385800,
-            "end_ms": 406366,
-            "url": "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=385s",
-            "segment_ids": [
-              "YUEaL2HiPIE:00081",
-              "YUEaL2HiPIE:00082",
-              "YUEaL2HiPIE:00083",
-              "YUEaL2HiPIE:00085"
-            ]
-          },
-          "spoken_context_start_ms": null,
-          "spoken_context_end_ms": null,
-          "visual_source": null,
-          "review_status": "approved"
-        },
-        {
           "id": "01-q1cswVVs-concept-contact-point-codex-reviewed",
           "evidence_type": "explanation",
           "excerpt": "Contacting the ball too early causes the racket to meet it with the bottom part, leading to missed or powerless contact and ineffective friction.",
-          "reason": "This contiguous span explains that mistiming contact causes the racket to meet the ball with the wrong part of the racket, resulting in missed or weak contact. It directly supports the existing Contact point concept.",
+          "reason": "Wait for the drop rather than contacting too early with the bottom of the racket and losing effective friction.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
@@ -16588,7 +16582,7 @@
           "id": "1HdDP2jYQyE-concept-contact-point-codex-reviewed",
           "evidence_type": "explanation",
           "excerpt": "The coach explains that standing too close restricts the stroke and recommends moving the point of contact slightly farther from the body horizontally.",
-          "reason": "This contiguous 20-second span directly discusses the ball’s point of contact and recommends adjusting it farther from the body. It matches the existing Contact point concept.",
+          "reason": "Move the contact point slightly farther from the body horizontally to avoid a restricted stroke.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
@@ -16613,8 +16607,8 @@
         {
           "id": "1Issn-5noM4-concept-contact-point-codex-reviewed",
           "evidence_type": "definition",
-          "excerpt": "The optimal contact point for a topspin ball is always at the peak of the bounce; “peak of the bounce” means the moment you start your forward swing, not the moment of contact.",
-          "reason": "These contiguous segments directly describe the topspin contact-point timing and clarify that the peak refers to the start of the forward swing, not racket-ball contact. The unsupported backspin claim was omitted.",
+          "excerpt": "The speaker calls the peak the optimal topspin contact point, then clarifies that peak refers to starting the forward swing, rather than actual ball contact.",
+          "reason": "Start the forward swing at the peak; the speaker distinguishes that from actual ball contact.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
@@ -16637,7 +16631,7 @@
           "id": "1UthOchBWWc-concept-contact-point-codex-reviewed",
           "evidence_type": "explanation",
           "excerpt": "If you feel you're pushing forward, your contact point is too early; pushing sideways indicates a broken wrist, while needing to lift the ball suggests you're being jammed.",
-          "reason": "These contiguous segments directly explain how contact timing and related contact mechanics produce distinct error sensations, supporting the existing Contact point concept.",
+          "reason": "Pushing forward indicates early contact, sideways pushing indicates a broken wrist, and needing to lift indicates being jammed.",
           "confidence": 0.96,
           "visual_status": "not_visual",
           "source": {
@@ -16659,8 +16653,8 @@
         {
           "id": "2Wk2xe0I1s8-concept-contact-point-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "In a forehand loop against backspin, contacting the ball on the upper half of the racket produces a normal trajectory, while lower-half contact can make the loop dive into the net.",
-          "reason": "This contiguous 24.8-second span explains how the racket contact point affects the trajectory and directly supports the existing Contact point concept.",
+          "excerpt": "The lesson asks why loops against backspin hit the net, then compares upper-half racket contact in a forehand drive, with a normal trajectory, against lower-half contact that dives down. The speaker says lower contact can send the loop into the net.",
+          "reason": "In this comparison, upper-half contact gives the drive a normal trajectory, while lower-half contact sends the ball down and can put the loop into the net.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
@@ -16686,8 +16680,8 @@
         {
           "id": "2wrSMd7QNww-concept-contact-point-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "Bring the ball to the contact point in front-right at no more than chest height, stop it there, and leave space for the arm to accelerate afterward.",
-          "reason": "This contiguous span identifies the contact point’s location and height, then explains that stopping there creates space for the subsequent forward acceleration.",
+          "excerpt": "Bring the ball to the front-right, at most chest height, and stop there to leave room for the arm to accelerate afterward.",
+          "reason": "Stop at the front-right point, no higher than the chest, leaving room for the arm to accelerate afterward.",
           "confidence": 0.94,
           "visual_status": "transcript_inferred",
           "source": {
@@ -16712,8 +16706,8 @@
         {
           "id": "44MN0MejyPI-concept-contact-point-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "The contact point is compared between the rising phase and the peak; contacting the ball at its peak produces a more coordinated movement, while rising contact feels urgent.",
-          "reason": "These contiguous segments directly discuss rising versus peak contact and state that peak contact is more coordinated. The selected span is approximately 14 seconds and supports the rewritten excerpt.",
+          "excerpt": "The speaker compares a rising contact that feels urgent and poorly coordinated with a peak contact described as more coordinated.",
+          "reason": "The peak-contact example feels more coordinated than the urgent rising-contact example.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
@@ -16723,9 +16717,11 @@
             "url": "https://www.youtube.com/watch?v=44MN0MejyPI&t=11s",
             "segment_ids": [
               "44MN0MejyPI:00001",
+              "44MN0MejyPI:00002",
               "44MN0MejyPI:00003",
               "44MN0MejyPI:00004",
               "44MN0MejyPI:00005",
+              "44MN0MejyPI:00006",
               "44MN0MejyPI:00007",
               "44MN0MejyPI:00008",
               "44MN0MejyPI:00009"
@@ -16739,8 +16735,8 @@
         {
           "id": "6Lw_HobLgSY-concept-contact-point-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "For a high topspin shot, the contact point should be more upward; brushing the ball at that point after lowering the center of gravity helps strengthen the spin.",
-          "reason": "This contiguous 17.1-second span directly identifies the contact point and explains how its upward position relates to brushing and spin generation.",
+          "excerpt": "For a high topspin shot, the speaker places contact more upward. When the center of gravity is lower, brush at that point; after lifting it, the spin is stronger.",
+          "reason": "When the center of gravity is lower, brush at the more upward point and lift for stronger spin in this high-topspin example.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
@@ -16766,7 +16762,7 @@
           "id": "7Zz_cVWrgng-concept-contact-point-codex-reviewed",
           "evidence_type": "explanation",
           "excerpt": "In serving, accurately locating the contact point on the ball improves the outcome; positioning the ball too far from the body makes it difficult to find the correct side contact point.",
-          "reason": "These contiguous segments directly explain that accurate contact-point location improves serve quality and that excessive distance makes the correct contact point difficult to locate. The supplied existing concept covers this durable topic.",
+          "reason": "Position the serve ball close enough to find its side contact point accurately.",
           "confidence": 0.97,
           "visual_status": "transcript_inferred",
           "source": {
@@ -16788,8 +16784,8 @@
         {
           "id": "8fxjEROShs4-concept-contact-point-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "The player must quickly find the ball’s contact point and locate the relevant contact point when sensing the ball on the left side.",
-          "reason": "This contiguous span directly discusses finding and locating the ball’s contact point while receiving a curving serve, matching the existing Contact point concept.",
+          "excerpt": "When receiving the curving serve, find the ball contact point quickly and stay focused. The speaker locates the points on the left side and refers to the indicated point.",
+          "reason": "Track the curving serve and locate its contact point in this receive example.",
           "confidence": 0.97,
           "visual_status": "transcript_inferred",
           "source": {
@@ -16813,7 +16809,7 @@
           "id": "8uzW4bF4Oc8-concept-contact-point-codex-reviewed",
           "evidence_type": "explanation",
           "excerpt": "For a fast serve, the contact point should be close to the body and near the table, with a low center of gravity, to produce a high-quality long ball.",
-          "reason": "These contiguous segments explicitly explain that the contact point should be close to the body and table when serving a fast ball. They directly support the existing Contact point concept.",
+          "reason": "For the fast serve, use contact close to the body and table with a low center of gravity.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
@@ -16839,8 +16835,8 @@
         {
           "id": "8W1dvuH8iOI-concept-contact-point-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "The contact point is where the racket meets the ball, distinct from the ready position.",
-          "reason": "These contiguous segments explicitly distinguish the ready position from the point of contact and describe the racket and ball meeting at that position. The existing concept is the same durable topic, so it should be accepted with its exact ID.",
+          "excerpt": "The speaker distinguishes the ready position from the point where racket and ball meet.",
+          "reason": "Distinguish ready position from racket-ball contact.",
           "confidence": 0.98,
           "visual_status": "not_visual",
           "source": {
@@ -16863,7 +16859,7 @@
           "id": "8yuRXgTWOxc-concept-contact-point-codex-reviewed",
           "evidence_type": "explanation",
           "excerpt": "Forehand and backhand loops against backspin are more difficult because the distance between the ball and the racket has to be extremely precise.",
-          "reason": "This contiguous 11.44-second span directly explains that precise ball-to-racket distance is required for looping against backspin, supporting the existing Contact point concept.",
+          "reason": "Loops against backspin require extremely precise distance between the ball and racket.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
@@ -16888,7 +16884,7 @@
           "id": "Br3osmuNeIA-candidate-contact-point-codex-reviewed",
           "evidence_type": "explanation",
           "excerpt": "The primary key point for beginner forehand stances is achieving a contact point toward the front.",
-          "reason": "These contiguous segments identify contact point as a primary key point for beginner forehand stances and state that standing this way achieves a better contact point toward the front.",
+          "reason": "Choose a beginner forehand stance that permits contact toward the front.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
@@ -16910,7 +16906,7 @@
           "id": "deTFdwcfnrE-concept-contact-point-codex-reviewed",
           "evidence_type": "explanation",
           "excerpt": "For hitting, contact around 2:00; contacting at 1:00 sends the ball into the net and requires a more open racket.",
-          "reason": "This contiguous 26-second span directly explains how contact location affects the outcome of a hit.",
+          "reason": "For hitting, contact around 2:00; open the racket more if 1:00 contact sends the ball into the net.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
@@ -16958,18 +16954,20 @@
         {
           "id": "egRHNdxZbYo-concept-contact-point-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "For blocking, contact should be in front and at the ball’s highest point.",
-          "reason": "These contiguous segments directly describe where and when contact should occur during a block, matching the existing Contact point concept.",
+          "excerpt": "The speaker says a defensive block is performed on the rise and places block contact in front. Against sidespin-topspin, the lesson says to hit at the highest point with an upright elbow and vertical racket.",
+          "reason": "Preserve the separately stated defensive-block and sidespin-topspin timing cues.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
             "video_id": "egRHNdxZbYo",
-            "start_ms": 673760,
-            "end_ms": 687760,
-            "url": "https://www.youtube.com/watch?v=egRHNdxZbYo&t=673s",
+            "start_ms": 668400,
+            "end_ms": 695760,
+            "url": "https://www.youtube.com/watch?v=egRHNdxZbYo&t=668s",
             "segment_ids": [
+              "egRHNdxZbYo:00093",
               "egRHNdxZbYo:00094",
-              "egRHNdxZbYo:00095"
+              "egRHNdxZbYo:00095",
+              "egRHNdxZbYo:00096"
             ]
           },
           "spoken_context_start_ms": null,
@@ -16981,7 +16979,7 @@
           "id": "fXOGFZD1MTY-concept-contact-point-codex-reviewed",
           "evidence_type": "explanation",
           "excerpt": "Keeping the loop tight to the body helps find the contact point when moving.",
-          "reason": "These contiguous segments directly explain that a tight body position helps locate the contact point during movement.",
+          "reason": "Keep the loop tight to the body to find the contact point when moving.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
@@ -17004,7 +17002,7 @@
           "id": "GdS4nZDb6ug-concept-contact-point-codex-reviewed",
           "evidence_type": "definition",
           "excerpt": "The contact point for a forehand topspin loop and a drive are different.",
-          "reason": "This contiguous 13.9-second span introduces the forehand topspin loop and directly states that its contact point differs from the drive.",
+          "reason": "The forehand topspin loop and drive use different contact points.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
@@ -17026,8 +17024,8 @@
         {
           "id": "GuuYa4REyQw-concept-contact-point-codex-reviewed",
           "evidence_type": "definition",
-          "excerpt": "When serving, contact the ball at the correct point without opening up the friction.",
-          "reason": "This contiguous span directly identifies the ball contact point during a serve and explains that the contact should be made at a specific point while avoiding an open friction angle.",
+          "excerpt": "For serving, the speaker refers to the demonstrated contact point and says not to “open up the friction.”",
+          "reason": "The captions name contact and an instruction about friction but do not specify an exact contact location or racket angle.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
@@ -17050,8 +17048,8 @@
         {
           "id": "BnjNVl_gssU-concept-contact-point-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "Find the correct contact point: contacting the lower half of the racket face is likely to hit the net, the center relies on power to overcome spin, and the upper half allows you to brush the ball properly.",
-          "reason": "These contiguous segments directly explain how different racket-face contact locations affect the outcome of the stroke, matching the existing Contact point concept.",
+          "excerpt": "The speaker contrasts lower-half racket contact, likely to hit the net, with center contact using power to overcome spin and upper-half contact for brushing.",
+          "reason": "Keep these racket-face contact outcomes as the lesson’s stated contrast.",
           "confidence": 0.99,
           "visual_status": "not_visual",
           "source": {
@@ -17075,7 +17073,7 @@
           "id": "dCjFkTKTH7I-concept-contact-point-codex-reviewed",
           "evidence_type": "explanation",
           "excerpt": "For these short half-high balls, you have to hit them at the peak of the bounce.",
-          "reason": "The selected contiguous span asks which bounce phase is the correct contact point and directly answers that short half-high balls should be hit at the peak of the bounce.",
+          "reason": "Hit these short half-high balls at the peak of the bounce.",
           "confidence": 0.99,
           "visual_status": "not_visual",
           "source": {
@@ -17096,8 +17094,8 @@
         {
           "id": "Jjd8Mu1s0S0-concept-contact-point-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "Many players can't generate spin because their contact position is wrong. You always brush the ball on the upper portion of the racket. Add poor brushing technique and the ball instantly bounces off the blade.",
-          "reason": "This contiguous span directly explains that racket contact position affects spin generation and identifies the upper portion of the racket as the contact area. The supplied concept is the same durable topic as the existing Contact point concept.",
+          "excerpt": "The speaker diagnoses poor spin from an incorrect contact position: brushing on the upper portion of the racket, combined with poor brushing technique, makes the ball bounce off the blade.",
+          "reason": "The speaker diagnoses upper-racket contact and poor brushing technique together as making the ball bounce off the blade.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
@@ -17122,8 +17120,8 @@
         {
           "id": "jrGOn6gpIa8-concept-contact-point-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "The contact point is too high, causing the ball to rise excessively. Use the racket height as a reference and keep the contact point from exceeding it.",
-          "reason": "These contiguous segments directly explain that an excessively high contact point makes the ball go higher and recommend using racket height as a reference to control it.",
+          "excerpt": "The speaker says contact is too high and the ball rises further when hit from top to bottom. After serving, use a held racket as a height reference and do not exceed it.",
+          "reason": "Use the height of the held racket as a reference after serving so the contact point stays low enough.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
@@ -17150,7 +17148,7 @@
           "id": "lO0H9Cs6JEo-concept-contact-point-codex-reviewed",
           "evidence_type": "explanation",
           "excerpt": "The speaker explains that contacting below the ball while moving upward produces topspin, while contacting during a downward racket motion produces mostly backspin.",
-          "reason": "The selected contiguous span directly explains contact point and racket travel direction as distinguishing factors between topspin and backspin, matching the existing Contact point concept.",
+          "reason": "Upward racket travel from below the ball produces topspin; downward travel at contact produces mostly backspin.",
           "confidence": 0.99,
           "visual_status": "not_visual",
           "source": {
@@ -17177,8 +17175,8 @@
         {
           "id": "LopC3UNnOXM-concept-contact-point-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "For a high topspin shot, the contact point should be more upward; with a lower center of gravity, brush the ball at that point to produce stronger spin.",
-          "reason": "This contiguous span directly identifies the contact point and explains how its position and brushing action affect topspin strength. It matches the existing durable concept “Contact point.”",
+          "excerpt": "For a high topspin shot, the speaker places contact more upward. When the center of gravity is lower, brush at that point; after lifting it, the spin is stronger.",
+          "reason": "With a lower center of gravity, brush at the more upward point and lift the ball for stronger spin in this example.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
@@ -17205,7 +17203,7 @@
           "id": "lRAoXPoYOBk-concept-contact-point-codex-reviewed",
           "evidence_type": "explanation",
           "excerpt": "The racket is relaxed before striking, and the point of contact is where the ball and racket meet.",
-          "reason": "This contiguous 17-second span directly identifies the point of contact between the ball and racket, supporting the existing Contact point concept.",
+          "reason": "Keep the racket relaxed before striking and meet the ball at the racket-ball contact point.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
@@ -17229,8 +17227,8 @@
         {
           "id": "M8fzQvShrx8-concept-contact-point-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "Meeting the ball in front is a fundamental principle across backspin, topspin, pushes, flicks, and defensive shots, requiring a forward direction of force.",
-          "reason": "These contiguous segments explicitly identify meeting the ball in front and connect it to forward force across multiple stroke types.",
+          "excerpt": "Meet the ball in front for backspin, topspin, pushes, flicks and defense. In the backhand-backspin explanation, lifting alone can net the ball and the speaker calls for forward force.",
+          "reason": "Meet the ball in front across the named strokes; the backspin explanation also calls for forward force.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
@@ -17253,8 +17251,8 @@
         {
           "id": "mpCV9-Cc1HE-concept-contact-point-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "Many players apply force too late, causing the contact point to be too far back; when positioned to pull, you must be close to the ball when striking it.",
-          "reason": "This contiguous span directly explains that contact occurring too far back is a problem and that the player must be close to the ball. It supports the existing Contact point concept, but not a specific timing phase or the proposed forehand-loop prerequisite.",
+          "excerpt": "The speaker diagnoses force applied from the second half of the swing, contact too far back and insufficient forward force, then calls for being close to the ball and applying friction when striking.",
+          "reason": "Avoid contact too far back with insufficient forward force; stay close to the ball and apply friction when striking.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
@@ -17281,7 +17279,7 @@
           "id": "N3GieiMNE7Y-concept-contact-point-codex-reviewed",
           "evidence_type": "explanation",
           "excerpt": "Contact is just the beginning of the stroke; the speaker treats contact as the real start rather than the endpoint.",
-          "reason": "These contiguous segments directly discuss contact as the beginning and real start of the stroke, supporting the existing Contact point concept without adding unsupported claims about a specific location or power generation.",
+          "reason": "Treat contact as the start of the stroke rather than hesitating there after forcing the early motion.",
           "confidence": 0.97,
           "visual_status": "not_visual",
           "source": {
@@ -17304,8 +17302,8 @@
         {
           "id": "NMa0xKa1kpo-concept-contact-point-codex-reviewed",
           "evidence_type": "definition",
-          "excerpt": "The contact point is always on the lower part of the racket.",
-          "reason": "This contiguous topic moment explicitly introduces contact as the lesson topic and states that the contact point is always on the lower part of the racket, directly matching the existing Contact point concept.",
+          "excerpt": "The lesson names contact as its topic, refers to the demonstrated hand shape, and says the contact point is on the lower part of the racket.",
+          "reason": "Use the lower part of the racket as the contact point in this lesson.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
@@ -17317,6 +17315,7 @@
               "NMa0xKa1kpo:00226",
               "NMa0xKa1kpo:00227",
               "NMa0xKa1kpo:00228",
+              "NMa0xKa1kpo:00229",
               "NMa0xKa1kpo:00230",
               "NMa0xKa1kpo:00231",
               "NMa0xKa1kpo:00232"
@@ -17330,8 +17329,8 @@
         {
           "id": "P21-_dtUzE8-concept-contact-point-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "The contact point is where the racket meets the ball, and its location can reveal the spin.",
-          "reason": "These contiguous segments identify the point of contact, specify that the racket contacts the ball at that point, and connect contact location with sidespin and brushing.",
+          "excerpt": "In a sidespin example, the speaker draws attention to the visible contact point, refers to contact “here,” and then calls for a brushing motion.",
+          "reason": "Attend to the contact point and then apply brushing in this sidespin example.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
@@ -17344,6 +17343,7 @@
               "P21-_dtUzE8:00163",
               "P21-_dtUzE8:00164",
               "P21-_dtUzE8:00165",
+              "P21-_dtUzE8:00166",
               "P21-_dtUzE8:00167"
             ]
           },
@@ -17355,8 +17355,8 @@
         {
           "id": "J7Lm5IL-ggs-concept-contact-point-codex-reviewed",
           "evidence_type": "definition",
-          "excerpt": "For a stable rally, both players synchronize their contact timing and meet the ball at the high point, or peak, of the bounce.",
-          "reason": "These contiguous segments directly describe contact timing and the contact point at the peak of the bounce as foundations for stable rallying.",
+          "excerpt": "In this stable rally, both players synchronize timing and hit at the peak. The speaker explicitly says it is not an attack-versus-defense drill.",
+          "reason": "Synchronize both players at peak contact in this stable rally, which is not an attack-versus-defense drill.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
@@ -17378,16 +17378,17 @@
         {
           "id": "eIsYt1sCPRI-concept-contact-point-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "When looping on the falling point, start the racket hand below table level and make contact beside the body, never behind it.",
-          "reason": "The selected contiguous span explains contact timing and body-relative contact position, directly supporting the existing Contact point concept.",
+          "excerpt": "For looping on the falling point, start the racket hand below table level and make contact to the side of the body, never behind it.",
+          "reason": "For falling-point looping, start the hand below table level and contact beside the body rather than behind it.",
           "confidence": 0.98,
           "visual_status": "not_visual",
           "source": {
             "video_id": "eIsYt1sCPRI",
-            "start_ms": 63200,
+            "start_ms": 57733,
             "end_ms": 80633,
-            "url": "https://www.youtube.com/watch?v=eIsYt1sCPRI&t=63s",
+            "url": "https://www.youtube.com/watch?v=eIsYt1sCPRI&t=57s",
             "segment_ids": [
+              "eIsYt1sCPRI:00013",
               "eIsYt1sCPRI:00014",
               "eIsYt1sCPRI:00015",
               "eIsYt1sCPRI:00016"
@@ -26596,34 +26597,30 @@
         "body-led loop",
         "drive-snap rhythm"
       ],
-      "short_definition": "Generate forehand-loop power with a relaxed body-led backswing, forward drive through contact, late acceleration, and a compact braking action.",
-      "detailed_definition": "Power is transferred through a coordinated sequence rather than by pulling the arm back or tensing early. The torso carries a relaxed arm into position; the racket drives into the ball, accelerates late, and the forearm's braking action helps turn linear speed into a fast, compact finish.",
-      "evidence_summary": "Forehand loop power comes from a relaxed, body-led action in which the legs, hips, waist, and arm work together to meet the ball actively. The racket head should accelerate forward through a full but controlled movement, with weight transfer and body position creating the force instead of snatching power from the hand alone.",
-      "evidence_summary_source_hash": "sha256:abab4f19b25621bec5f59ec10ee44fee71010843bd85bbba34bb147fd52e961a",
-      "evidence_summary_generator": "codex",
+      "short_definition": "Generate forehand-loop power through racket-head motion, with loop lessons also describing body-led preparation and acceleration.",
+      "detailed_definition": "One lesson explicitly calls the body-led action a loop: open the arm, let body rotation lead the backswing while the hand stays in front, then accelerate. Another lesson drops down, drives forward and brakes the arm, calling forward drive essential when looping. A separate loop-power example uses friction followed by forward force while standing still without using the body.",
+      "evidence_summary": "Examples include body-led preparation, a drop-drive-brake sequence, acceleration paired with braking, and forehand-loop racket-head motion. After a no-spin serve returns half-long and slightly high, one lesson permits a power loop; its high-ball example uses mainly impact with brushing as a supplement. Another loop-power example uses friction followed by forward force while standing still without body power.",
+      "evidence_summary_source_hash": null,
+      "evidence_summary_generator": null,
       "concept_type": "principle",
       "facets": {
         "category": [
-          "mechanics",
-          "power"
+          "stroke"
         ],
         "side": [
           "forehand"
         ],
         "spin": [
           "topspin"
-        ],
-        "level": [
-          "intermediate"
         ]
       },
-      "difficulty": "intermediate",
+      "difficulty": null,
       "evidence": [
         {
           "id": "power-body-led-backswing-global",
           "evidence_type": "demonstration",
           "excerpt": "Use body rotation to bring the arm back rather than deliberately pulling the arm backward.",
-          "reason": "Establishes a relaxed body-led preparation.",
+          "reason": "Let the body lead the arm into the backswing.",
           "confidence": 0.96,
           "visual_status": "transcript_inferred",
           "source": {
@@ -26644,24 +26641,27 @@
             "end_ms": 69000,
             "url": "https://www.youtube.com/watch?v=qLT0MvwitZc&t=57s",
             "selection_method": "nearby_visual_inference",
-            "note": "Shadow-stroke comparison shows body rotation carrying the arm."
+            "note": "Proposed body-led backswing window; complete footage inspection is pending."
           },
           "review_status": "approved"
         },
         {
           "id": "power-drive-snap-global",
           "evidence_type": "demonstration",
-          "excerpt": "Drop down, drive forward into the ball, and then brake the arm quickly.",
-          "reason": "Defines the drive-snap sequence used to transfer power through contact.",
+          "excerpt": "Drop down, drive forward into the ball, and quickly brake the arm. Forward drive remains essential when looping; the upper and lower arm must learn to drive, then snap.",
+          "reason": "Drop, drive forward and brake the arm; forward drive remains essential when looping.",
           "confidence": 0.97,
           "visual_status": "transcript_inferred",
           "source": {
             "video_id": "qLT0MvwitZc",
             "start_ms": 470333,
-            "end_ms": 478433,
+            "end_ms": 494700,
             "url": "https://www.youtube.com/watch?v=qLT0MvwitZc&t=470s",
             "segment_ids": [
-              "qLT0MvwitZc:00109"
+              "qLT0MvwitZc:00109",
+              "qLT0MvwitZc:00110",
+              "qLT0MvwitZc:00111",
+              "qLT0MvwitZc:00112"
             ]
           },
           "spoken_context_start_ms": null,
@@ -26672,15 +26672,15 @@
             "end_ms": 483000,
             "url": "https://www.youtube.com/watch?v=qLT0MvwitZc&t=468s",
             "selection_method": "nearby_visual_inference",
-            "note": "Repeated shadow strokes show the forward drive and compact snap."
+            "note": "Proposed drop-drive-brake action window; complete footage inspection is pending."
           },
           "review_status": "approved"
         },
         {
           "id": "power-acceleration-braking-spinmaster",
           "evidence_type": "explanation",
-          "excerpt": "Pair the forward acceleration with a firm braking action.",
-          "reason": "Explains why acceleration without a controlled finish is insufficient.",
+          "excerpt": "Combine acceleration with forceful braking.",
+          "reason": "Combine acceleration with forceful braking.",
           "confidence": 0.96,
           "visual_status": "transcript_inferred",
           "source": {
@@ -26701,15 +26701,15 @@
             "end_ms": 354000,
             "url": "https://www.youtube.com/watch?v=V__nqiNHeKE&t=340s",
             "selection_method": "nearby_visual_inference",
-            "note": "Live-ball and shadow comparisons show loose versus forceful finishing."
+            "note": "Proposed acceleration and braking window; complete footage inspection is pending."
           },
           "review_status": "approved"
         },
         {
           "id": "i68OG8UzMyQ-cand-loop-own-power-vs-drive-borrowed-power-1",
           "evidence_type": "definition",
-          "excerpt": "Unlike a drive that mainly borrows incoming pace, a loop requires the player to generate power through coordinated forward movement and force combination from waist, hips, and arm.",
-          "reason": "Speaker explicitly defines the difference in power source between drive and loop.",
+          "excerpt": "The speaker contrasts driving, which borrows the opponent’s power, with looping, which generates one’s own power and actively creates combined force.",
+          "reason": "Driving borrows incoming power, while looping actively generates combined force in this comparison.",
           "confidence": 0.95,
           "visual_status": "not_visual",
           "source": {
@@ -26720,6 +26720,7 @@
             "segment_ids": [
               "i68OG8UzMyQ:00027",
               "i68OG8UzMyQ:00028",
+              "i68OG8UzMyQ:00029",
               "i68OG8UzMyQ:00030",
               "i68OG8UzMyQ:00031",
               "i68OG8UzMyQ:00032"
@@ -26733,18 +26734,21 @@
         {
           "id": "i68OG8UzMyQ-cand-loop-own-power-vs-drive-borrowed-power-2",
           "evidence_type": "explanation",
-          "excerpt": "Unlike a drive that mainly borrows incoming pace, a loop requires the player to generate power through coordinated forward movement and force combination from waist, hips, and arm.",
-          "reason": "He explains that proper timing allows waist, hips, and arm to combine and meet the ball actively.",
+          "excerpt": "Taking the ball slightly early on the forehand side is said to prevent the waist and hips from generating power properly. Wait for the rhythm to allow waist rotation, hip drive and finishing the arm to combine forces.",
+          "reason": "Wait for the rhythm so the waist, hips and arm can combine forces.",
           "confidence": 0.87,
           "visual_status": "transcript_inferred",
           "source": {
             "video_id": "i68OG8UzMyQ",
-            "start_ms": 69040,
+            "start_ms": 63360,
             "end_ms": 87760,
-            "url": "https://www.youtube.com/watch?v=i68OG8UzMyQ&t=69s",
+            "url": "https://www.youtube.com/watch?v=i68OG8UzMyQ&t=63s",
             "segment_ids": [
+              "i68OG8UzMyQ:00019",
+              "i68OG8UzMyQ:00020",
               "i68OG8UzMyQ:00021",
               "i68OG8UzMyQ:00022",
+              "i68OG8UzMyQ:00023",
               "i68OG8UzMyQ:00024",
               "i68OG8UzMyQ:00025",
               "i68OG8UzMyQ:00026"
@@ -26758,8 +26762,8 @@
         {
           "id": "i68OG8UzMyQ-cand-loop-own-power-vs-drive-borrowed-power-3",
           "evidence_type": "explanation",
-          "excerpt": "Unlike a drive that mainly borrows incoming pace, a loop requires the player to generate power through coordinated forward movement and force combination from waist, hips, and arm.",
-          "reason": "He explains that proper timing allows waist, hips, and arm to combine and meet the ball actively.",
+          "excerpt": "Actively move forward to meet the ball.",
+          "reason": "Move forward actively to meet the ball.",
           "confidence": 0.87,
           "visual_status": "transcript_inferred",
           "source": {
@@ -26780,19 +26784,26 @@
         {
           "id": "m93pWt9MIZE-candidate-power-loop-1",
           "evidence_type": "definition",
-          "excerpt": "An attacking forehand loop emphasizing speed and concentrated impact, used when the returned ball is half-long and slightly high with relatively little spin.",
-          "reason": "Speaker explains the ball conditions and defines the power loop as mainly impact-based with brushing as support.",
+          "excerpt": "After a no-spin serve is returned half-long and slightly high, the speaker warns against lifting upward and says a power loop can be used wherever the opponent pushes. Its stated advantages are high speed and concentrated power.",
+          "reason": "Use the power-loop option for this half-long, slightly-high return after a no-spin serve.",
           "confidence": 0.96,
           "visual_status": "not_visual",
           "source": {
             "video_id": "m93pWt9MIZE",
-            "start_ms": 128080,
-            "end_ms": 155760,
-            "url": "https://www.youtube.com/watch?v=m93pWt9MIZE&t=128s",
+            "start_ms": 130399,
+            "end_ms": 158319,
+            "url": "https://www.youtube.com/watch?v=m93pWt9MIZE&t=130s",
             "segment_ids": [
-              "m93pWt9MIZE:00051",
+              "m93pWt9MIZE:00052",
+              "m93pWt9MIZE:00053",
+              "m93pWt9MIZE:00054",
+              "m93pWt9MIZE:00055",
+              "m93pWt9MIZE:00056",
+              "m93pWt9MIZE:00057",
+              "m93pWt9MIZE:00058",
               "m93pWt9MIZE:00059",
-              "m93pWt9MIZE:00060"
+              "m93pWt9MIZE:00060",
+              "m93pWt9MIZE:00061"
             ]
           },
           "spoken_context_start_ms": null,
@@ -26803,17 +26814,23 @@
         {
           "id": "m93pWt9MIZE-candidate-power-loop-2",
           "evidence_type": "definition",
-          "excerpt": "An attacking forehand loop emphasizing speed and concentrated impact, used when the returned ball is half-long and slightly high with relatively little spin.",
-          "reason": "Speaker explains the ball conditions and defines the power loop as mainly impact-based with brushing as support.",
+          "excerpt": "With the ball high, the hand naturally comes up for a stroke that is mainly impact with brushing as a supplement. The speaker adds that a half-high incoming ball allows more impact.",
+          "reason": "A high or half-high ball allows more impact in this example.",
           "confidence": 0.96,
           "visual_status": "not_visual",
           "source": {
             "video_id": "m93pWt9MIZE",
-            "start_ms": 162640,
-            "end_ms": 166800,
-            "url": "https://www.youtube.com/watch?v=m93pWt9MIZE&t=162s",
+            "start_ms": 155760,
+            "end_ms": 175840,
+            "url": "https://www.youtube.com/watch?v=m93pWt9MIZE&t=155s",
             "segment_ids": [
-              "m93pWt9MIZE:00065"
+              "m93pWt9MIZE:00062",
+              "m93pWt9MIZE:00063",
+              "m93pWt9MIZE:00064",
+              "m93pWt9MIZE:00065",
+              "m93pWt9MIZE:00066",
+              "m93pWt9MIZE:00067",
+              "m93pWt9MIZE:00068"
             ]
           },
           "spoken_context_start_ms": null,
@@ -26824,8 +26841,8 @@
         {
           "id": "m93pWt9MIZE-candidate-power-loop-3",
           "evidence_type": "example",
-          "excerpt": "An attacking forehand loop emphasizing speed and concentrated impact, used when the returned ball is half-long and slightly high with relatively little spin.",
-          "reason": "Speaker contrasts ideal practice-style full power attacks with real match conditions.",
+          "excerpt": "The speaker describes going for a full-power drive in the example, then says such perfect opportunities are rare in real matches.",
+          "reason": "Perfect full-power opportunities are less common in real matches than in this example.",
           "confidence": 0.82,
           "visual_status": "transcript_inferred",
           "source": {
@@ -26847,8 +26864,8 @@
         {
           "id": "m93pWt9MIZE-candidate-impact-brushing-balance-1",
           "evidence_type": "explanation",
-          "excerpt": "Choosing the right mix of forward impact and brushing spin in a loop according to incoming spin, height, and match situation.",
-          "reason": "Speaker states many players cannot choose the right balance and explains one stroke is more upward while another is more forward.",
+          "excerpt": "Players struggle to balance impact and brushing and choose a stroke for each ball. The speaker says the overall framework is similar, while one stroke is more upward, another more forward, and the amount of brushing differs.",
+          "reason": "Choose direction and brushing amount for the incoming ball.",
           "confidence": 0.92,
           "visual_status": "not_visual",
           "source": {
@@ -26858,51 +26875,13 @@
             "url": "https://www.youtube.com/watch?v=m93pWt9MIZE&t=174s",
             "segment_ids": [
               "m93pWt9MIZE:00069",
+              "m93pWt9MIZE:00070",
+              "m93pWt9MIZE:00071",
+              "m93pWt9MIZE:00072",
+              "m93pWt9MIZE:00073",
+              "m93pWt9MIZE:00074",
+              "m93pWt9MIZE:00075",
               "m93pWt9MIZE:00076"
-            ]
-          },
-          "spoken_context_start_ms": null,
-          "spoken_context_end_ms": null,
-          "visual_source": null,
-          "review_status": "approved"
-        },
-        {
-          "id": "m93pWt9MIZE-candidate-impact-brushing-balance-2",
-          "evidence_type": "correction",
-          "excerpt": "Choosing the right mix of forward impact and brushing spin in a loop according to incoming spin, height, and match situation.",
-          "reason": "Speaker corrects overhitting against heavy spin by saying brushing must dominate.",
-          "confidence": 0.96,
-          "visual_status": "not_visual",
-          "source": {
-            "video_id": "m93pWt9MIZE",
-            "start_ms": 248239,
-            "end_ms": 262199,
-            "url": "https://www.youtube.com/watch?v=m93pWt9MIZE&t=248s",
-            "segment_ids": [
-              "m93pWt9MIZE:00098",
-              "m93pWt9MIZE:00102"
-            ]
-          },
-          "spoken_context_start_ms": null,
-          "spoken_context_end_ms": null,
-          "visual_source": null,
-          "review_status": "approved"
-        },
-        {
-          "id": "m93pWt9MIZE-candidate-impact-brushing-balance-3",
-          "evidence_type": "example",
-          "excerpt": "Choosing the right mix of forward impact and brushing spin in a loop according to incoming spin, height, and match situation.",
-          "reason": "Speaker shows how the balance changes for no-spin serves and critical points.",
-          "confidence": 0.88,
-          "visual_status": "not_visual",
-          "source": {
-            "video_id": "m93pWt9MIZE",
-            "start_ms": 327280,
-            "end_ms": 352400,
-            "url": "https://www.youtube.com/watch?v=m93pWt9MIZE&t=327s",
-            "segment_ids": [
-              "m93pWt9MIZE:00125",
-              "m93pWt9MIZE:00133"
             ]
           },
           "spoken_context_start_ms": null,
@@ -26913,8 +26892,8 @@
         {
           "id": "V2YGbh829eU-cand-spin-before-power-principle-1",
           "evidence_type": "definition",
-          "excerpt": "A teaching principle that beginner and amateur players should prioritize learning to create spin through brushing before emphasizing raw power generation.",
-          "reason": "Speaker explicitly states spin is most important for amateurs and that brushing for spin is learnable regardless of level, while power generation is harder without foundation.",
+          "excerpt": "For amateurs, the speaker prioritizes spin and hesitates to teach power generation without a foundation, while saying players of any skill level can learn to brush for spin.",
+          "reason": "The speaker prioritizes spin for amateurs, hesitates to teach power without a foundation, and says anyone can learn brushing.",
           "confidence": 0.97,
           "visual_status": "not_visual",
           "source": {
@@ -26938,8 +26917,8 @@
         {
           "id": "V__nqiNHeKE-cand-heavy-topspin-loop-1",
           "evidence_type": "definition",
-          "excerpt": "The speaker names a heavy topspin loop, contrasts it with a high-arc loop, and defines it as low arc with strong spin produced by a down-and-forward brushing direction.",
-          "reason": "A forehand looping variation that produces strong topspin with a lower arc by brushing down-and-forward instead of lifting the ball in a high arc.",
+          "excerpt": "The speaker introduces a heavy topspin loop.",
+          "reason": "The stroke introduced here is a heavy topspin loop.",
           "confidence": 0.95,
           "visual_status": "transcript_inferred",
           "source": {
@@ -26959,8 +26938,8 @@
         {
           "id": "V__nqiNHeKE-cand-heavy-topspin-loop-2",
           "evidence_type": "definition",
-          "excerpt": "The speaker names a heavy topspin loop, contrasts it with a high-arc loop, and defines it as low arc with strong spin produced by a down-and-forward brushing direction.",
-          "reason": "A forehand looping variation that produces strong topspin with a lower arc by brushing down-and-forward instead of lifting the ball in a high arc.",
+          "excerpt": "The speaker describes a heavy topspin loop as low arc with strong spin, contrasting its down-and-forward brushing direction with the high-arc loop’s force direction.",
+          "reason": "The speaker contrasts low-arc heavy topspin with the high-arc loop’s direction.",
           "confidence": 0.95,
           "visual_status": "transcript_inferred",
           "source": {
@@ -26970,7 +26949,10 @@
             "url": "https://www.youtube.com/watch?v=V__nqiNHeKE&t=129s",
             "segment_ids": [
               "V__nqiNHeKE:00049",
-              "V__nqiNHeKE:00052"
+              "V__nqiNHeKE:00050",
+              "V__nqiNHeKE:00051",
+              "V__nqiNHeKE:00052",
+              "V__nqiNHeKE:00053"
             ]
           },
           "spoken_context_start_ms": null,
@@ -26981,17 +26963,19 @@
         {
           "id": "V__nqiNHeKE-cand-heavy-topspin-loop-3",
           "evidence_type": "definition",
-          "excerpt": "The speaker names a heavy topspin loop, contrasts it with a high-arc loop, and defines it as low arc with strong spin produced by a down-and-forward brushing direction.",
-          "reason": "A forehand looping variation that produces strong topspin with a lower arc by brushing down-and-forward instead of lifting the ball in a high arc.",
+          "excerpt": "The speaker describes heavy topspin as low and spinning and calls it the most practical option for amateurs.",
+          "reason": "The speaker describes heavy topspin as low and spinning and recommends it for amateurs.",
           "confidence": 0.95,
           "visual_status": "transcript_inferred",
           "source": {
             "video_id": "V__nqiNHeKE",
             "start_ms": 164640,
-            "end_ms": 169080,
+            "end_ms": 174720,
             "url": "https://www.youtube.com/watch?v=V__nqiNHeKE&t=164s",
             "segment_ids": [
-              "V__nqiNHeKE:00062"
+              "V__nqiNHeKE:00062",
+              "V__nqiNHeKE:00063",
+              "V__nqiNHeKE:00064"
             ]
           },
           "spoken_context_start_ms": null,
@@ -27002,18 +26986,20 @@
         {
           "id": "V__nqiNHeKE-cand-heavy-topspin-loop-4",
           "evidence_type": "demonstration",
-          "excerpt": "The speaker says 'Let me show you a heavy topspin loop' and later cues how to loop under the ball, indicating a demonstrated stroke pattern.",
-          "reason": "A forehand looping variation that produces strong topspin with a lower arc by brushing down-and-forward instead of lifting the ball in a high arc.",
+          "excerpt": "The speaker introduces a heavy topspin loop and says that looping like this is enough.",
+          "reason": "The speaker introduces the heavy topspin loop and says looping like this is enough.",
           "confidence": 0.83,
           "visual_status": "transcript_inferred",
           "source": {
             "video_id": "V__nqiNHeKE",
             "start_ms": 38640,
-            "end_ms": 46600,
+            "end_ms": 50120,
             "url": "https://www.youtube.com/watch?v=V__nqiNHeKE&t=38s",
             "segment_ids": [
               "V__nqiNHeKE:00012",
-              "V__nqiNHeKE:00013"
+              "V__nqiNHeKE:00013",
+              "V__nqiNHeKE:00014",
+              "V__nqiNHeKE:00015"
             ]
           },
           "spoken_context_start_ms": null,
@@ -27024,8 +27010,8 @@
         {
           "id": "V__nqiNHeKE-cand-heavy-topspin-loop-5",
           "evidence_type": "demonstration",
-          "excerpt": "The speaker says 'Let me show you a heavy topspin loop' and later cues how to loop under the ball, indicating a demonstrated stroke pattern.",
-          "reason": "A forehand looping variation that produces strong topspin with a lower arc by brushing down-and-forward instead of lifting the ball in a high arc.",
+          "excerpt": "Press under the ball to loop, as the speaker cues.",
+          "reason": "Press under the ball to loop.",
           "confidence": 0.83,
           "visual_status": "transcript_inferred",
           "source": {
@@ -27045,8 +27031,8 @@
         {
           "id": "V__nqiNHeKE-cand-high-arc-loop-1",
           "evidence_type": "definition",
-          "excerpt": "A topspin loop played with a more upward low-to-high force direction, creating a slower, higher trajectory that is easier to block.",
-          "reason": "The speaker explicitly labels the high arc loop, describes its upward force direction, and explains that it produces a slow, high ball that is easy to block.",
+          "excerpt": "The speaker identifies the low-to-high action as a high-arc loop.",
+          "reason": "The speaker identifies the low-to-high action as a high-arc loop.",
           "confidence": 0.94,
           "visual_status": "transcript_inferred",
           "source": {
@@ -27056,6 +27042,8 @@
             "url": "https://www.youtube.com/watch?v=V__nqiNHeKE&t=122s",
             "segment_ids": [
               "V__nqiNHeKE:00048",
+              "V__nqiNHeKE:00049",
+              "V__nqiNHeKE:00050",
               "V__nqiNHeKE:00051"
             ]
           },
@@ -27067,18 +27055,21 @@
         {
           "id": "V__nqiNHeKE-cand-high-arc-loop-2",
           "evidence_type": "definition",
-          "excerpt": "A topspin loop played with a more upward low-to-high force direction, creating a slower, higher trajectory that is easier to block.",
-          "reason": "The speaker explicitly labels the high arc loop, describes its upward force direction, and explains that it produces a slow, high ball that is easy to block.",
+          "excerpt": "For heavy backspin pushes, the speaker says high-arc loops were used before but describes their slow, high ball as easy to block.",
+          "reason": "The speaker describes the high-arc reply to heavy backspin as slow, high and easy to block.",
           "confidence": 0.94,
           "visual_status": "transcript_inferred",
           "source": {
             "video_id": "V__nqiNHeKE",
-            "start_ms": 154440,
+            "start_ms": 151880,
             "end_ms": 164400,
-            "url": "https://www.youtube.com/watch?v=V__nqiNHeKE&t=154s",
+            "url": "https://www.youtube.com/watch?v=V__nqiNHeKE&t=151s",
             "segment_ids": [
+              "V__nqiNHeKE:00057",
               "V__nqiNHeKE:00058",
-              "V__nqiNHeKE:00060"
+              "V__nqiNHeKE:00059",
+              "V__nqiNHeKE:00060",
+              "V__nqiNHeKE:00061"
             ]
           },
           "spoken_context_start_ms": null,
@@ -27089,8 +27080,8 @@
         {
           "id": "V__nqiNHeKE-cand-fast-loop-drive-1",
           "evidence_type": "definition",
-          "excerpt": "A loop-drive variant using racket-head-forward acceleration followed by rotation, with finger-led release rather than large wrist rotation.",
-          "reason": "The speaker describes the movement pattern and then names it 'fast loop drive.'",
+          "excerpt": "The racket head goes forward first and then rotates, including on the forehand. The speaker says to keep the thumb web facing forward and use the fingers to rotate.",
+          "reason": "Move the racket head forward before rotating, keeping the thumb web forward and rotating with the fingers.",
           "confidence": 0.9,
           "visual_status": "transcript_inferred",
           "source": {
@@ -27100,7 +27091,13 @@
             "url": "https://www.youtube.com/watch?v=V__nqiNHeKE&t=47s",
             "segment_ids": [
               "V__nqiNHeKE:00016",
+              "V__nqiNHeKE:00017",
               "V__nqiNHeKE:00018",
+              "V__nqiNHeKE:00019",
+              "V__nqiNHeKE:00020",
+              "V__nqiNHeKE:00021",
+              "V__nqiNHeKE:00022",
+              "V__nqiNHeKE:00023",
               "V__nqiNHeKE:00024"
             ]
           },
@@ -27112,8 +27109,8 @@
         {
           "id": "V__nqiNHeKE-cand-fast-loop-drive-2",
           "evidence_type": "definition",
-          "excerpt": "A loop-drive variant using racket-head-forward acceleration followed by rotation, with finger-led release rather than large wrist rotation.",
-          "reason": "The speaker describes the movement pattern and then names it 'fast loop drive.'",
+          "excerpt": "The speaker names the stroke fast loop drive.",
+          "reason": "The stroke named here is fast loop drive.",
           "confidence": 0.9,
           "visual_status": "transcript_inferred",
           "source": {
@@ -27133,8 +27130,8 @@
         {
           "id": "f7uZPRPIwpU-concept-forehand-loop-power-generation-1",
           "evidence_type": "definition",
-          "excerpt": "A power loop requires taking the ball around its peak, pressing and closing the racket, driving forward into the ball, and keeping the body compact so power is concentrated forward rather than upward.",
-          "reason": "Speaker explicitly lists the three requirements for a power loop and its flatter forward trajectory.",
+          "excerpt": "The speaker lists three power-loop requirements: the ball at its peak, pressing and closing while driving forward to meet it, and a compact body. Twisting instead of driving forward is said to disperse power; keep the arc flatter rather than going upward.",
+          "reason": "Contact at the peak, press and close, drive forward and keep the body compact for this power-loop example.",
           "confidence": 0.94,
           "visual_status": "transcript_inferred",
           "source": {
@@ -27147,9 +27144,12 @@
               "f7uZPRPIwpU:00124",
               "f7uZPRPIwpU:00125",
               "f7uZPRPIwpU:00126",
+              "f7uZPRPIwpU:00127",
               "f7uZPRPIwpU:00128",
               "f7uZPRPIwpU:00129",
               "f7uZPRPIwpU:00130",
+              "f7uZPRPIwpU:00131",
+              "f7uZPRPIwpU:00132",
               "f7uZPRPIwpU:00133",
               "f7uZPRPIwpU:00134"
             ]
@@ -27162,8 +27162,8 @@
         {
           "id": "ti_YUZdHu3o-brush-then-body-power",
           "evidence_type": "explanation",
-          "excerpt": "Establish the brush first, then extend forward and drive the hip and body into the ball.",
-          "reason": "Places body-led power after the player has established friction instead of substituting force for brushing.",
+          "excerpt": "After establishing brushing, extend the arm forward and drive the hip forward. Do not use body power too early; drive the body and hip at the instant of gripping the ball with friction.",
+          "reason": "Establish brushing before adding forward body and hip drive.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
@@ -27173,10 +27173,13 @@
             "url": "https://www.youtube.com/watch?v=ti_YUZdHu3o&t=308s",
             "segment_ids": [
               "ti_YUZdHu3o:00098",
+              "ti_YUZdHu3o:00099",
               "ti_YUZdHu3o:00100",
               "ti_YUZdHu3o:00101",
               "ti_YUZdHu3o:00102",
+              "ti_YUZdHu3o:00103",
               "ti_YUZdHu3o:00104",
+              "ti_YUZdHu3o:00105",
               "ti_YUZdHu3o:00106",
               "ti_YUZdHu3o:00107"
             ]
@@ -27189,8 +27192,8 @@
         {
           "id": "2wrSMd7QNww-concept-forehand-loop-power-generation-codex-reviewed",
           "evidence_type": "definition",
-          "excerpt": "This ball is high quality because I use two phases of acceleration. The first phase is acceleration through friction. After friction, the force goes from back to forward. Yet I can still generate power on the loop.",
-          "reason": "These contiguous transcript segments explicitly describe two acceleration phases, the transition from friction to forward force, and generating power on the loop.",
+          "excerpt": "The speaker attributes the ball’s quality to two acceleration phases: friction first, then force from back to forward. They say they can generate loop power while standing still without using the body.",
+          "reason": "Use friction followed by forward force; this loop-power example explicitly works while standing still without body power.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
@@ -27216,8 +27219,8 @@
         {
           "id": "CpcAha7BZGA-concept-forehand-loop-power-generation-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "For looping, use a relaxed backswing that follows the ball’s rhythm, then accelerate through the swing to generate power, with upper-arm and forearm separation contributing to power.",
-          "reason": "This contiguous 15-second span directly explains loop power generation through relaxation, timing, acceleration, and arm-forearm sequencing. It supports the supplied durable concept, but does not explicitly establish forehand or advanced level.",
+          "excerpt": "For looping, use a relaxed backswing following the ball’s rhythm, then accelerate to generate power. The speaker says power also relies on separation of upper arm and forearm.",
+          "reason": "Relax the backswing, follow the ball’s rhythm and then accelerate; upper arm and forearm must work together.",
           "confidence": 0.97,
           "visual_status": "transcript_inferred",
           "source": {
@@ -27233,7 +27236,8 @@
               "CpcAha7BZGA:00163",
               "CpcAha7BZGA:00164",
               "CpcAha7BZGA:00165",
-              "CpcAha7BZGA:00166"
+              "CpcAha7BZGA:00166",
+              "CpcAha7BZGA:00167"
             ]
           },
           "spoken_context_start_ms": null,
@@ -27244,8 +27248,8 @@
         {
           "id": "D9ZAPb_65Hk-concept-forehand-loop-power-generation-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "Rally quality does not come from the arm; it comes from the racket head. The same applies to the forehand loop, though it is less visible after the brush.",
-          "reason": "These contiguous segments directly state that power comes from racket-head motion rather than arm force and explicitly apply the principle to the forehand loop.",
+          "excerpt": "The speaker says rally quality and power come from the racket head rather than the arm, comparing the feeling to a slap. They apply the point to the forehand loop, where it is less visible after brushing.",
+          "reason": "Emphasize racket-head motion in the forehand loop, as the speaker advises.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
@@ -27274,8 +27278,8 @@
         {
           "id": "hoLSxXKl2L0-concept-body-led-backswing-for-loop-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "For a loop, open the arm and let body rotation lead the hand into the backswing while keeping the hand in front, then accelerate into the ball.",
-          "reason": "This contiguous 14-second span directly explains the body-led loop backswing and the resulting acceleration. The proposed topic is already covered by the existing concept through its body-led loop alias and backswing power-generation definition.",
+          "excerpt": "Open the arm, then let body rotation lead it into the loop backswing while the hand stays in front, followed by acceleration into the ball.",
+          "reason": "Open the arm and let body rotation lead the backswing with the hand in front, then accelerate.",
           "confidence": 0.95,
           "visual_status": "transcript_inferred",
           "source": {
@@ -27301,12 +27305,21 @@
           "target_concept_id": "concept-forehand-loop",
           "sources": [
             {
-              "video_id": "qLT0MvwitZc",
-              "start_ms": 470333,
-              "end_ms": 478433,
-              "url": "https://www.youtube.com/watch?v=qLT0MvwitZc&t=470s",
+              "video_id": "D9ZAPb_65Hk",
+              "start_ms": 489760,
+              "end_ms": 512800,
+              "url": "https://www.youtube.com/watch?v=D9ZAPb_65Hk&t=489s",
               "segment_ids": [
-                "qLT0MvwitZc:00109"
+                "D9ZAPb_65Hk:00161",
+                "D9ZAPb_65Hk:00162",
+                "D9ZAPb_65Hk:00163",
+                "D9ZAPb_65Hk:00164",
+                "D9ZAPb_65Hk:00165",
+                "D9ZAPb_65Hk:00166",
+                "D9ZAPb_65Hk:00167",
+                "D9ZAPb_65Hk:00168",
+                "D9ZAPb_65Hk:00169",
+                "D9ZAPb_65Hk:00170"
               ]
             }
           ],
@@ -31390,46 +31403,42 @@
       "label": "Forehand loop timing and rhythm",
       "aliases": [
         "loop timing",
-        "wait-loop rhythm",
-        "late acceleration"
+        "wait-loop rhythm"
       ],
-      "short_definition": "Time the forehand loop by waiting for the ball, staying loose through preparation, and accelerating at contact.",
-      "detailed_definition": "Incoming pace changes the tempo, but the player still avoids rushing the backswing. The body and racket prepare with the ball, remain relaxed, and release speed late at the chosen contact point.",
-      "evidence_summary": "Forehand loop timing is built around matching the stroke to the incoming ball while preserving a consistent rhythm across rallies and repeated loops. Preparation should begin only after the opponent's contact and the ball's curve are clear, with the ball contacted later for easier looping and with the swing shape adjusted according to speed, spin, and whether the ball is rising or falling.",
-      "evidence_summary_source_hash": "sha256:ee470eb23870311fc526f6dbec86d7063fc7ebe59392e5cc1b94318e4dbc6a86",
-      "evidence_summary_generator": "codex",
+      "short_definition": "Time the forehand loop with source-specific cues for waiting, incoming pace and bounce phase.",
+      "detailed_definition": "Timing cues vary by the ball and practice setting. One continuous forehand topspin lesson uses early descent; another topspin example uses peak or rising contact. One push example allows peak or rising contact only for a slow push when already positioned. A rhythm lesson uses wait, loop for a slow ball and wait, quick for a fast ball.",
+      "evidence_summary": "Continuous forehand topspin practice uses early descent, while another topspin example describes contact at the peak or on the rise. A backspin lesson permits peak-or-rise contact only for a slow push when already in position. Other examples adjust backswing speed to incoming pace, delay pulling back until the ball is understood, or use relaxed preparation before late acceleration.",
+      "evidence_summary_source_hash": null,
+      "evidence_summary_generator": null,
       "concept_type": "principle",
       "facets": {
         "category": [
-          "timing",
           "stroke"
         ],
         "side": [
           "forehand"
-        ],
-        "spin": [
-          "topspin"
-        ],
-        "level": [
-          "intermediate"
         ]
       },
-      "difficulty": "intermediate",
+      "difficulty": null,
       "evidence": [
         {
           "id": "timing-late-acceleration-global",
           "evidence_type": "explanation",
-          "excerpt": "Your swing should be relaxed until just before the contact point, not forceful from the beginning.",
-          "reason": "Defines late-stage acceleration.",
+          "excerpt": "Keep the swing relaxed until just before contact rather than forceful from the beginning; starting force just before contact is called late-stage acceleration.",
+          "reason": "Stay relaxed while approaching the ball, then apply force just before contact.",
           "confidence": 0.97,
           "visual_status": "transcript_inferred",
           "source": {
             "video_id": "qLT0MvwitZc",
-            "start_ms": 88866,
-            "end_ms": 94066,
-            "url": "https://www.youtube.com/watch?v=qLT0MvwitZc&t=88s",
+            "start_ms": 83533,
+            "end_ms": 106766,
+            "url": "https://www.youtube.com/watch?v=qLT0MvwitZc&t=83s",
             "segment_ids": [
-              "qLT0MvwitZc:00021"
+              "qLT0MvwitZc:00020",
+              "qLT0MvwitZc:00021",
+              "qLT0MvwitZc:00022",
+              "qLT0MvwitZc:00023",
+              "qLT0MvwitZc:00024"
             ]
           },
           "spoken_context_start_ms": null,
@@ -31440,15 +31449,15 @@
             "end_ms": 106000,
             "url": "https://www.youtube.com/watch?v=qLT0MvwitZc&t=96s",
             "selection_method": "nearby_visual_inference",
-            "note": "Coach demonstrates the relaxed approach and late racket acceleration."
+            "note": "Proposed timing example; complete footage inspection remains pending."
           },
           "review_status": "approved"
         },
         {
           "id": "timing-wait-rhythm-global",
           "evidence_type": "demonstration",
-          "excerpt": "For a slow ball, wait before looping; for a faster ball, retain the wait but move through the stroke more quickly.",
-          "reason": "For a slow ball, wait before looping; for a faster ball, retain the wait but move through the stroke more quickly.",
+          "excerpt": "For a slow ball, use the rhythm “wait, loop”; for a fast ball, still wait, then go quick.",
+          "reason": "Retain the wait while changing the stroke speed for the incoming pace.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
@@ -31468,26 +31477,29 @@
             "end_ms": 306000,
             "url": "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=294s",
             "selection_method": "nearby_visual_inference",
-            "note": "Consecutive fed balls demonstrate waiting and changing the swing tempo."
+            "note": "Proposed timing example; complete footage inspection remains pending."
           },
           "review_status": "approved"
         },
         {
           "id": "timing-relax-contact-spinmaster",
           "evidence_type": "correction",
-          "excerpt": "Stay relaxed before the ball; accelerate and apply force only at contact.",
-          "reason": "Corrects premature tension and rushed acceleration.",
+          "excerpt": "Before the hand touches the ball, stay relaxed; accelerate and apply force at contact rather than from the beginning of the forward swing.",
+          "reason": "Keep the lead-in relaxed and apply force at contact.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
             "video_id": "dWZw3A0X-4A",
-            "start_ms": 539120,
-            "end_ms": 548040,
-            "url": "https://www.youtube.com/watch?v=dWZw3A0X-4A&t=539s",
+            "start_ms": 536880,
+            "end_ms": 551920,
+            "url": "https://www.youtube.com/watch?v=dWZw3A0X-4A&t=536s",
             "segment_ids": [
+              "dWZw3A0X-4A:00178",
               "dWZw3A0X-4A:00179",
               "dWZw3A0X-4A:00180",
-              "dWZw3A0X-4A:00181"
+              "dWZw3A0X-4A:00181",
+              "dWZw3A0X-4A:00182",
+              "dWZw3A0X-4A:00183"
             ]
           },
           "spoken_context_start_ms": null,
@@ -31498,15 +31510,15 @@
             "end_ms": 533000,
             "url": "https://www.youtube.com/watch?v=dWZw3A0X-4A&t=521s",
             "selection_method": "nearby_visual_inference",
-            "note": "Live-ball strokes illustrate tension before contact and the late release."
+            "note": "Proposed timing example; complete footage inspection remains pending."
           },
           "review_status": "approved"
         },
         {
           "id": "I99BjizeWeE-cand-early-falling-phase-timing-1",
           "evidence_type": "drill",
-          "excerpt": "In rally practice for the forehand loop, contact timing should be set in the early falling phase to support controlled brushing mechanics.",
-          "reason": "The speaker gives a specific rally-practice timing cue tied to no-power brushing work.",
+          "excerpt": "In rally practice, take the early falling phase without using power and let the wrist drive the forearm.",
+          "reason": "Use the early-falling timing and no-power wrist-led cue in this rally practice.",
           "confidence": 0.8,
           "visual_status": "not_visual",
           "source": {
@@ -31529,16 +31541,18 @@
         {
           "id": "XfWXrGTlW5M-concept-rhythm-synchronization-looping-2",
           "evidence_type": "explanation",
-          "excerpt": "The coach explains that slow and fast balls keep the same rhythm pattern, but the motion frequency scales with ball pace.",
-          "reason": "Matching the tempo of the stroke to the pace of the incoming ball while preserving the same underlying beat, especially in consecutive loops and second-ball situations.",
+          "excerpt": "The rhythm is unchanged while swing and contact speed increase. Adjust the stroke to the pace of the incoming ball rather than looping every shot at one speed.",
+          "reason": "Adjust stroke speed to the incoming ball rather than looping every ball at one speed.",
           "confidence": 0.97,
           "visual_status": "not_visual",
           "source": {
             "video_id": "XfWXrGTlW5M",
-            "start_ms": 345300,
+            "start_ms": 336133,
             "end_ms": 351400,
-            "url": "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=345s",
+            "url": "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=336s",
             "segment_ids": [
+              "XfWXrGTlW5M:00081",
+              "XfWXrGTlW5M:00082",
               "XfWXrGTlW5M:00083"
             ]
           },
@@ -31550,8 +31564,8 @@
         {
           "id": "XfWXrGTlW5M-concept-rhythm-synchronization-looping-3",
           "evidence_type": "mistake",
-          "excerpt": "He identifies rushed second-ball errors as rhythm problems rather than technique problems.",
-          "reason": "Matching the tempo of the stroke to the pace of the incoming ball while preserving the same underlying beat, especially in consecutive loops and second-ball situations.",
+          "excerpt": "In consecutive-loop practice, the speaker identifies a rushed second shot against a slow ball and says many second-ball errors come from rhythm rather than technique.",
+          "reason": "Avoid rushing the second loop when the next ball is slow.",
           "confidence": 0.94,
           "visual_status": "not_visual",
           "source": {
@@ -31561,6 +31575,8 @@
             "url": "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=423s",
             "segment_ids": [
               "XfWXrGTlW5M:00097",
+              "XfWXrGTlW5M:00098",
+              "XfWXrGTlW5M:00099",
               "XfWXrGTlW5M:00100"
             ]
           },
@@ -31572,8 +31588,8 @@
         {
           "id": "XfWXrGTlW5M-concept-rhythm-synchronization-looping-4",
           "evidence_type": "correction",
-          "excerpt": "Adding a moment of waiting fixes the error without changing stroke mechanics.",
-          "reason": "Matching the tempo of the stroke to the pace of the incoming ball while preserving the same underlying beat, especially in consecutive loops and second-ball situations.",
+          "excerpt": "The speaker says the player did not change technique, but added the “wait.”",
+          "reason": "Add the waiting beat in this coaching example rather than changing the technique.",
           "confidence": 0.9,
           "visual_status": "not_visual",
           "source": {
@@ -31594,8 +31610,8 @@
         {
           "id": "0eMDTeOBR5A-cand-forehand-loop-timing-early-descent-1",
           "evidence_type": "explanation",
-          "excerpt": "Explains preferred contact timing progression from early descent to peak to rise.",
-          "reason": "The speaker teaches that against backspin, the most reliable forehand loop timing for most amateurs is at early descent just after the peak, with earlier timing at the peak or on the rise reserved for better anticipation and positioning.",
+          "excerpt": "For a normal-quality return, the speaker recommends looping at early descent as the ball starts dropping. As footwork and anticipation improve, try earlier contact at the peak and eventually on the rise.",
+          "reason": "Begin with early descent for this normal-quality return, then progress earlier as footwork and anticipation improve.",
           "confidence": 0.97,
           "visual_status": "transcript_inferred",
           "source": {
@@ -31622,8 +31638,8 @@
         {
           "id": "0eMDTeOBR5A-cand-forehand-loop-timing-early-descent-2",
           "evidence_type": "demonstration",
-          "excerpt": "Repeats and demonstrates early-descent timing and when peak/rise timing is acceptable.",
-          "reason": "The speaker teaches that against backspin, the most reliable forehand loop timing for most amateurs is at early descent just after the peak, with earlier timing at the peak or on the rise reserved for better anticipation and positioning.",
+          "excerpt": "The speaker recommends amateurs loop at early descent just after the peak. For a normal-quality return, the start of the drop is described as the most reliable point.",
+          "reason": "Use the early-descent cue for the normal-quality return described here.",
           "confidence": 0.96,
           "visual_status": "transcript_inferred",
           "source": {
@@ -31650,8 +31666,8 @@
         {
           "id": "0eMDTeOBR5A-cand-forehand-loop-timing-early-descent-3",
           "evidence_type": "demonstration",
-          "excerpt": "Repeats and demonstrates early-descent timing and when peak/rise timing is acceptable.",
-          "reason": "The speaker teaches that against backspin, the most reliable forehand loop timing for most amateurs is at early descent just after the peak, with earlier timing at the peak or on the rise reserved for better anticipation and positioning.",
+          "excerpt": "Start at early descent, then move earlier to the peak as footwork and anticipation improve, eventually taking the rise like professionals.",
+          "reason": "Progress from early descent toward earlier contact as anticipation and footwork improve.",
           "confidence": 0.96,
           "visual_status": "transcript_inferred",
           "source": {
@@ -31674,8 +31690,8 @@
         {
           "id": "0eMDTeOBR5A-cand-forehand-loop-timing-early-descent-4",
           "evidence_type": "demonstration",
-          "excerpt": "Repeats and demonstrates early-descent timing and when peak/rise timing is acceptable.",
-          "reason": "The speaker teaches that against backspin, the most reliable forehand loop timing for most amateurs is at early descent just after the peak, with earlier timing at the peak or on the rise reserved for better anticipation and positioning.",
+          "excerpt": "Loop at the peak or on the rise only when the opponent’s push is slow and you are already in position; otherwise use early descent.",
+          "reason": "Keep the slow-push and already-in-position conditions for the earlier-contact option.",
           "confidence": 0.96,
           "visual_status": "transcript_inferred",
           "source": {
@@ -31698,14 +31714,14 @@
         {
           "id": "0eMDTeOBR5A-cand-opening-loop-backswing-speed-matching-1",
           "evidence_type": "explanation",
-          "excerpt": "Against backspin, the opening loop preparation should stay compact and in front, with backswing speed adjusted to the incoming push speed and initiated as the ball crosses the net.",
-          "reason": "Provides a detailed timing model for when to start the backswing and how quickly to prepare versus release based on ball speed.",
+          "excerpt": "On backspin, choose release timing from the opponent’s push quality. Keep the hand in front and backswing as the ball crosses the net, matching backswing speed to the incoming ball.",
+          "reason": "Match backswing timing and speed to the incoming push in this backspin lesson.",
           "confidence": 0.82,
           "visual_status": "transcript_inferred",
           "source": {
             "video_id": "0eMDTeOBR5A",
             "start_ms": 344160,
-            "end_ms": 373800,
+            "end_ms": 365800,
             "url": "https://www.youtube.com/watch?v=0eMDTeOBR5A&t=344s",
             "segment_ids": [
               "0eMDTeOBR5A:00114",
@@ -31715,8 +31731,7 @@
               "0eMDTeOBR5A:00118",
               "0eMDTeOBR5A:00119",
               "0eMDTeOBR5A:00120",
-              "0eMDTeOBR5A:00121",
-              "0eMDTeOBR5A:00122"
+              "0eMDTeOBR5A:00121"
             ]
           },
           "spoken_context_start_ms": null,
@@ -31727,16 +31742,17 @@
         {
           "id": "0eMDTeOBR5A-cand-opening-loop-backswing-speed-matching-2",
           "evidence_type": "explanation",
-          "excerpt": "Against backspin, the opening loop preparation should stay compact and in front, with backswing speed adjusted to the incoming push speed and initiated as the ball crosses the net.",
-          "reason": "Provides a detailed timing model for when to start the backswing and how quickly to prepare versus release based on ball speed.",
+          "excerpt": "A fast ball calls for quick backswing and release; a slow ball uses a slow backswing and fast release. Do not pause and wait; adjust backswing speed to the ball.",
+          "reason": "Adjust backswing speed while preserving the fast-release cue in this example.",
           "confidence": 0.82,
           "visual_status": "transcript_inferred",
           "source": {
             "video_id": "0eMDTeOBR5A",
-            "start_ms": 370840,
+            "start_ms": 368360,
             "end_ms": 385120,
-            "url": "https://www.youtube.com/watch?v=0eMDTeOBR5A&t=370s",
+            "url": "https://www.youtube.com/watch?v=0eMDTeOBR5A&t=368s",
             "segment_ids": [
+              "0eMDTeOBR5A:00122",
               "0eMDTeOBR5A:00123",
               "0eMDTeOBR5A:00124",
               "0eMDTeOBR5A:00125",
@@ -31753,8 +31769,8 @@
         {
           "id": "f7uZPRPIwpU-concept-forehand-loop-timing-1",
           "evidence_type": "explanation",
-          "excerpt": "Time the loop by watching the ball first, moving into position, and starting the backswing only when you are about to swing so the stroke becomes one continuous motion.",
-          "reason": "Speaker repeatedly teaches delaying the backswing until the swing is imminent and making the stroke one fluid motion after observing and moving.",
+          "excerpt": "The speaker says there is plenty of time: watch the ball first and stop rushing the point.",
+          "reason": "Watch the ball first rather than rushing.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
@@ -31777,8 +31793,8 @@
         {
           "id": "f7uZPRPIwpU-concept-forehand-loop-timing-2",
           "evidence_type": "explanation",
-          "excerpt": "Time the loop by watching the ball first, moving into position, and starting the backswing only when you are about to swing so the stroke becomes one continuous motion.",
-          "reason": "Speaker repeatedly teaches delaying the backswing until the swing is imminent and making the stroke one fluid motion after observing and moving.",
+          "excerpt": "The speaker criticizes backswinging before looking at the ball and says to base backswing rhythm on the opponent’s rhythm. For a semi-high ball, move first, find the ball, then pull back.",
+          "reason": "For the semi-high-ball example, move and find the ball before pulling back.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
@@ -31789,7 +31805,15 @@
             "segment_ids": [
               "f7uZPRPIwpU:00057",
               "f7uZPRPIwpU:00058",
+              "f7uZPRPIwpU:00059",
+              "f7uZPRPIwpU:00060",
+              "f7uZPRPIwpU:00061",
               "f7uZPRPIwpU:00062",
+              "f7uZPRPIwpU:00063",
+              "f7uZPRPIwpU:00064",
+              "f7uZPRPIwpU:00065",
+              "f7uZPRPIwpU:00066",
+              "f7uZPRPIwpU:00067",
               "f7uZPRPIwpU:00068",
               "f7uZPRPIwpU:00069"
             ]
@@ -31802,8 +31826,8 @@
         {
           "id": "f7uZPRPIwpU-concept-forehand-loop-timing-3",
           "evidence_type": "explanation",
-          "excerpt": "Time the loop by watching the ball first, moving into position, and starting the backswing only when you are about to swing so the stroke becomes one continuous motion.",
-          "reason": "Speaker repeatedly teaches delaying the backswing until the swing is imminent and making the stroke one fluid motion after observing and moving.",
+          "excerpt": "As the ball bounces up and the swing approaches, backswing in one continuous motion rather than pulling back and waiting. The speaker also says to recognize a short ball before pulling, and that delaying the backswing can still land a very short ball.",
+          "reason": "Decide to hit before backswinging, keeping the selected action fluid rather than pulling early and waiting.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
@@ -31816,8 +31840,12 @@
               "f7uZPRPIwpU:00075",
               "f7uZPRPIwpU:00076",
               "f7uZPRPIwpU:00077",
+              "f7uZPRPIwpU:00078",
+              "f7uZPRPIwpU:00079",
+              "f7uZPRPIwpU:00080",
               "f7uZPRPIwpU:00081",
               "f7uZPRPIwpU:00082",
+              "f7uZPRPIwpU:00083",
               "f7uZPRPIwpU:00084"
             ]
           },
@@ -31829,8 +31857,8 @@
         {
           "id": "t3HX8AEujWw-c3-1",
           "evidence_type": "definition",
-          "excerpt": "Answers directly that continuous forehand topspin looping should use the early descending phase.",
-          "reason": "For continuous forehand looping, especially for beginners and spin-oriented loops, contact is taken in the early descending phase rather than at the peak.",
+          "excerpt": "For continuous forehand topspin looping, the speaker identifies early descent as the contact phase.",
+          "reason": "Use early-descending contact for the stated continuous forehand topspin loop.",
           "confidence": 0.98,
           "visual_status": "not_visual",
           "source": {
@@ -31853,8 +31881,8 @@
         {
           "id": "t3HX8AEujWw-c3-2",
           "evidence_type": "explanation",
-          "excerpt": "Explains beginners use the early descending phase because the peak leaves too little time.",
-          "reason": "For continuous forehand looping, especially for beginners and spin-oriented loops, contact is taken in the early descending phase rather than at the peak.",
+          "excerpt": "Beginners are directed to loop at early descent because the peak does not leave enough time.",
+          "reason": "Use the early-descent beginner cue instead of rushing to the peak.",
           "confidence": 0.95,
           "visual_status": "not_visual",
           "source": {
@@ -31876,8 +31904,8 @@
         {
           "id": "t3HX8AEujWw-c3-3",
           "evidence_type": "drill",
-          "excerpt": "Gives a timing cue: let the ball peak and start to drop, then swing.",
-          "reason": "For continuous forehand looping, especially for beginners and spin-oriented loops, contact is taken in the early descending phase rather than at the peak.",
+          "excerpt": "Let the ball reach its peak and begin dropping, then swing: one drop, one swing.",
+          "reason": "Wait for the peak and beginning of the drop before swinging in this example.",
           "confidence": 0.88,
           "visual_status": "not_visual",
           "source": {
@@ -31899,17 +31927,20 @@
         {
           "id": "XfWXrGTlW5M-concept-backswing-with-the-ball-1",
           "evidence_type": "explanation",
-          "excerpt": "The coach defines the problem of swinging too early and explains that the backswing should follow the opponent's contact and the ball's path.",
-          "reason": "Timing the backswing in response to the opponent's contact, placement, and trajectory so the stroke preparation stays synchronized with the incoming ball instead of starting too early.",
+          "excerpt": "In this forehand-structure correction, start the forward swing when the ball hits the table rather than too early. The speaker diagnoses the racket already being too far out by the bounce, leaving the player reaching.",
+          "reason": "Time the forward swing to the bounce in this correction instead of reaching out early.",
           "confidence": 0.95,
           "visual_status": "not_visual",
           "source": {
             "video_id": "XfWXrGTlW5M",
-            "start_ms": 170433,
-            "end_ms": 176233,
-            "url": "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=170s",
+            "start_ms": 167633,
+            "end_ms": 183966,
+            "url": "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=167s",
             "segment_ids": [
-              "XfWXrGTlW5M:00041"
+              "XfWXrGTlW5M:00040",
+              "XfWXrGTlW5M:00041",
+              "XfWXrGTlW5M:00042",
+              "XfWXrGTlW5M:00043"
             ]
           },
           "spoken_context_start_ms": null,
@@ -31920,17 +31951,19 @@
         {
           "id": "XfWXrGTlW5M-concept-backswing-with-the-ball-2",
           "evidence_type": "explanation",
-          "excerpt": "The coach defines the problem of swinging too early and explains that the backswing should follow the opponent's contact and the ball's path.",
-          "reason": "Timing the backswing in response to the opponent's contact, placement, and trajectory so the stroke preparation stays synchronized with the incoming ball instead of starting too early.",
+          "excerpt": "Time the backswing with the ball: when the opponent contacts it, judge placement and trajectory, then follow that path with the backswing instead of pulling back first.",
+          "reason": "Judge the incoming placement and path before following it with the backswing.",
           "confidence": 0.95,
           "visual_status": "not_visual",
           "source": {
             "video_id": "XfWXrGTlW5M",
-            "start_ms": 204366,
-            "end_ms": 208766,
-            "url": "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=204s",
+            "start_ms": 199666,
+            "end_ms": 211433,
+            "url": "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=199s",
             "segment_ids": [
-              "XfWXrGTlW5M:00050"
+              "XfWXrGTlW5M:00049",
+              "XfWXrGTlW5M:00050",
+              "XfWXrGTlW5M:00051"
             ]
           },
           "spoken_context_start_ms": null,
@@ -31941,8 +31974,8 @@
         {
           "id": "XfWXrGTlW5M-concept-backswing-with-the-ball-3",
           "evidence_type": "mistake",
-          "excerpt": "Starting the backswing before the opponent serves is identified as the reason power cannot sync up.",
-          "reason": "Timing the backswing in response to the opponent's contact, placement, and trajectory so the stroke preparation stays synchronized with the incoming ball instead of starting too early.",
+          "excerpt": "Starting the backswing before the opponent has even served is identified as preventing the player from synchronizing power.",
+          "reason": "Avoid starting the backswing before the opponent serves in this example.",
           "confidence": 0.9,
           "visual_status": "not_visual",
           "source": {
@@ -31963,16 +31996,18 @@
         {
           "id": "2Wk2xe0I1s8-concept-forehand-loop-timing-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "If I wait, the ball will eventually come to me. I'll hit it at its latest point, when it's closer to me, and I won't need to adjust my feet.",
-          "reason": "This contiguous 19.3-second span directly explains delaying contact so the ball comes closer, avoiding reaching and foot adjustment. It supports the existing forehand-loop timing concept, but not the proposal's claims about forward-up swing, half-long balls, backspin, or intermediate level.",
+          "excerpt": "If a half-long ball is anticipated, the speaker recommends stepping in with the right foot. If caught without that step, let the ball drop and come closer before contact rather than reaching at the peak; the speaker then does not need to adjust the feet.",
+          "reason": "Use waiting for closer contact as the fallback when the described half-long ball was not anticipated.",
           "confidence": 0.96,
           "visual_status": "transcript_inferred",
           "source": {
             "video_id": "2Wk2xe0I1s8",
-            "start_ms": 445433,
+            "start_ms": 435333,
             "end_ms": 464733,
-            "url": "https://www.youtube.com/watch?v=2Wk2xe0I1s8&t=445s",
+            "url": "https://www.youtube.com/watch?v=2Wk2xe0I1s8&t=435s",
             "segment_ids": [
+              "2Wk2xe0I1s8:00093",
+              "2Wk2xe0I1s8:00094",
               "2Wk2xe0I1s8:00095",
               "2Wk2xe0I1s8:00096",
               "2Wk2xe0I1s8:00097",
@@ -31987,8 +32022,8 @@
         {
           "id": "6Lw_HobLgSY-concept-forehand-loop-timing-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "In topspin, maintain a controlled rhythm: slow down and wait for the ball to drop from its highest point before brushing it.",
-          "reason": "This contiguous 17-second span directly explains rhythm as a core element of topspin, recommends slowing down, and specifies waiting for the ball to drop before brushing.",
+          "excerpt": "For the topspin example, lift a high-arc ball, slow the rhythm and wait for the ball to drop from its highest point before brushing from lower right to upper left.",
+          "reason": "Use the slower rhythm and descending-ball cue in this topspin example.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
@@ -32015,8 +32050,8 @@
         {
           "id": "GdS4nZDb6ug-concept-forehand-loop-timing-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "Loop a topspin ball at the top of the bounce or on the rise, rather than fishing a low ball from a distance.",
-          "reason": "This segment directly explains the loop's timing relative to the bounce and contrasts it with taking a low ball from a distance, supporting the existing forehand loop timing concept.",
+          "excerpt": "The speaker describes looping a topspin ball at the top of the bounce or on the rise, rather than fishing a low ball from a distance.",
+          "reason": "Use the stated peak-or-rise timing in this topspin example.",
           "confidence": 0.96,
           "visual_status": "transcript_inferred",
           "source": {
@@ -32036,8 +32071,8 @@
         {
           "id": "krlH8_UzRRM-concept-forehand-loop-timing-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "When you move to your forehand, by the time the ball is at table height, it's already too late to hit a loop drive. At this high point, you can drive it. At this lower point, you can't. And if it drops even more, you certainly can't. But for most players, by the time they arrive, the ball is already at this low point, and the chance to drive it is gone. This is why our loops fail.",
-          "reason": "These contiguous segments explain that arriving late causes the ball to drop below the effective loop-drive timing window, directly supporting the concept of forehand loop timing.",
+          "excerpt": "When moving to the forehand, the speaker says a ball already at table height is too late for a loop drive. A higher point permits driving; arriving after the ball has dropped loses that opportunity.",
+          "reason": "Recognize the lost loop-drive opportunity when movement leaves contact too low in this example.",
           "confidence": 0.94,
           "visual_status": "transcript_inferred",
           "source": {
@@ -32062,8 +32097,8 @@
         {
           "id": "LopC3UNnOXM-concept-forehand-loop-timing-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "When the rhythm is disrupted, slightly lower the tempo and intentionally wait for the right moment to generate more spin and better combine the elements of a high-throw topspin.",
-          "reason": "This contiguous span directly explains slowing the tempo and waiting intentionally to generate more spin for high-throw topspin. The supplied concept is the same durable forehand loop timing topic, so the existing concept should be used.",
+          "excerpt": "When rhythm is disrupted, the speaker lowers the tempo and intentionally waits for the moment, saying this produces more spin and helps combine the high-throw topspin action.",
+          "reason": "Slow the disrupted rhythm and wait in the stated high-throw topspin example.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
@@ -32088,8 +32123,8 @@
         {
           "id": "mYzbo93Nkps-concept-forehand-loop-timing-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "I wait for the ball to enter the falling phase. It's much easier to loop. During a push rally, if you want to loop first, you must wait for the falling phase.",
-          "reason": "This contiguous 13.24-second span directly explains waiting for the ball’s falling phase before looping and links that timing to easier coordination.",
+          "excerpt": "The speaker waits for the falling phase and says looping becomes easier. In a push rally, the instruction is to wait for the falling phase before looping first.",
+          "reason": "Wait for the falling phase when opening with a loop in the described push rally.",
           "confidence": 0.97,
           "visual_status": "not_visual",
           "source": {
@@ -32114,8 +32149,8 @@
         {
           "id": "J7Lm5IL-ggs-concept-loop-timing-and-rhythm-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "The loop requires relaxation through the backswing, followed by acceleration at the instant of the upward swing.",
-          "reason": "These contiguous segments directly explain the loop's relaxed preparation and late acceleration, matching the existing forehand loop timing concept.",
+          "excerpt": "Both recovery methods require relaxation in the hand. The whole backswing stays relaxed, with tightening at the instant of the upward swing; the speaker calls relaxation and acceleration crucial to the loop.",
+          "reason": "Keep the hand relaxed through the backswing, then tighten at the upward swing in this loop lesson.",
           "confidence": 0.96,
           "visual_status": "transcript_inferred",
           "source": {
@@ -32140,6 +32175,18 @@
           "relation_type": "part_of",
           "target_concept_id": "concept-forehand-loop",
           "sources": [
+            {
+              "video_id": "XfWXrGTlW5M",
+              "start_ms": 167633,
+              "end_ms": 183966,
+              "url": "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=167s",
+              "segment_ids": [
+                "XfWXrGTlW5M:00040",
+                "XfWXrGTlW5M:00041",
+                "XfWXrGTlW5M:00042",
+                "XfWXrGTlW5M:00043"
+              ]
+            },
             {
               "video_id": "XfWXrGTlW5M",
               "start_ms": 303966,
@@ -37227,7 +37274,7 @@
     {
       "id": "concept-loop-impact-to-friction-ratio",
       "slug": "loop-impact-to-friction-ratio",
-      "label": "Loop impact-to-friction ratio",
+      "label": "Impact-to-friction ratio",
       "aliases": [
         "ratio",
         "impact-to-friction ratio"
@@ -37261,6 +37308,34 @@
               "_f9fVMm2_Gs:00069",
               "_f9fVMm2_Gs:00070",
               "_f9fVMm2_Gs:00071"
+            ]
+          },
+          "spoken_context_start_ms": null,
+          "spoken_context_end_ms": null,
+          "visual_source": null,
+          "review_status": "approved"
+        },
+        {
+          "id": "m93pWt9MIZE-candidate-impact-brushing-balance-2-retained-ratio",
+          "evidence_type": "correction",
+          "excerpt": "Against a return of a heavy-spin serve, even a half-high push can retain strong spin. The speaker says to add more brushing first and not let impact exceed brushing.",
+          "reason": "Add brushing first against the heavy-spin serve return; impact must not exceed brushing.",
+          "confidence": 0.96,
+          "visual_status": "not_visual",
+          "source": {
+            "video_id": "m93pWt9MIZE",
+            "start_ms": 241200,
+            "end_ms": 262199,
+            "url": "https://www.youtube.com/watch?v=m93pWt9MIZE&t=241s",
+            "segment_ids": [
+              "m93pWt9MIZE:00095",
+              "m93pWt9MIZE:00096",
+              "m93pWt9MIZE:00097",
+              "m93pWt9MIZE:00098",
+              "m93pWt9MIZE:00099",
+              "m93pWt9MIZE:00100",
+              "m93pWt9MIZE:00101",
+              "m93pWt9MIZE:00102"
             ]
           },
           "spoken_context_start_ms": null,
@@ -46358,25 +46433,19 @@
         "relaxed lead-in",
         "soft-to-fast release"
       ],
-      "short_definition": "Stay loose during preparation and the early forward swing, then accelerate briefly as the racket reaches the ball.",
-      "detailed_definition": "Late acceleration preserves freedom in the arm and racket head while concentrating force near contact. Starting tense or applying force from the beginning can stiffen the stroke and disturb timing. The principle appears across both forehand and backhand technique.",
-      "evidence_summary": "The stroke should stay loose through the lead-in so speed can be released cleanly, then accelerate through contact with a brief force-producing phase rather than braking early. The idea is to relax first and only tighten at the moment of impact, which helps maintain the proper racket angle and solid contact. That quick acceleration through the ball is what creates the heavy, hidden spin, especially when contrasted with a slower ball where finger and wrist snap can be used more deliberately.",
-      "evidence_summary_source_hash": "sha256:0016204ee46d045689284481fd29c6ff6012d8fd56276ab9e78906b69639c400",
-      "evidence_summary_generator": "codex",
-      "concept_type": "timing-cue",
+      "short_definition": "Relax during preparation, then accelerate near contact, with lesson-specific cues for gripping and releasing power.",
+      "detailed_definition": "Several lessons contrast relaxed preparation with a burst at or just before contact. Practice examples isolate the contact-zone burst before adding a relaxed backswing. Other examples give their own conditions: snap when spin is readable, keep constant speed when unsure, or release power before adding control in an exaggerated drill.",
+      "evidence_summary": "One lesson calls for relaxed preparation and acceleration at contact; another calls applying force just before contact late-stage acceleration. A progression begins at the contact zone without a backswing, then adds a relaxed backswing. Other examples contrast readable-spin snapping with constant speed when unsure, or practice releasing power before adding control. These are source-specific cues, not one universal gripping or braking sequence.",
+      "evidence_summary_source_hash": null,
+      "evidence_summary_generator": null,
+      "concept_type": "concept",
       "facets": {
         "category": [
           "stroke",
           "fundamentals"
-        ],
-        "side": [
-          "neutral"
-        ],
-        "level": [
-          "intermediate"
         ]
       },
-      "difficulty": "intermediate",
+      "difficulty": null,
       "evidence": [
         {
           "id": "relaxed-until-contact-1",
@@ -46387,15 +46456,18 @@
           "visual_status": "transcript_inferred",
           "source": {
             "video_id": "dWZw3A0X-4A",
-            "start_ms": 539120,
+            "start_ms": 536880,
             "end_ms": 565000,
-            "url": "https://www.youtube.com/watch?v=dWZw3A0X-4A&t=539s",
+            "url": "https://www.youtube.com/watch?v=dWZw3A0X-4A&t=536s",
             "segment_ids": [
+              "dWZw3A0X-4A:00178",
               "dWZw3A0X-4A:00179",
               "dWZw3A0X-4A:00180",
               "dWZw3A0X-4A:00181",
               "dWZw3A0X-4A:00182",
               "dWZw3A0X-4A:00183",
+              "dWZw3A0X-4A:00184",
+              "dWZw3A0X-4A:00185",
               "dWZw3A0X-4A:00186",
               "dWZw3A0X-4A:00187",
               "dWZw3A0X-4A:00188",
@@ -46421,6 +46493,9 @@
             "url": "https://www.youtube.com/watch?v=qLT0MvwitZc&t=83s",
             "segment_ids": [
               "qLT0MvwitZc:00020",
+              "qLT0MvwitZc:00021",
+              "qLT0MvwitZc:00022",
+              "qLT0MvwitZc:00023",
               "qLT0MvwitZc:00024"
             ]
           },
@@ -46432,8 +46507,8 @@
         {
           "id": "relaxed-loop-progression-3",
           "evidence_type": "drill",
-          "excerpt": "First get the feeling of a relaxed loop, then gradually add speed.",
-          "reason": "Turns the timing principle into a progressive practice method.",
+          "excerpt": "First get the feeling of a relaxed loop. If you can't relax, start by looping softly, then gradually add speed.",
+          "reason": "Practice the relaxed loop first; if relaxation is difficult, begin softly and add speed gradually.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
@@ -46443,6 +46518,10 @@
             "url": "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=264s",
             "segment_ids": [
               "XfWXrGTlW5M:00063",
+              "XfWXrGTlW5M:00064",
+              "XfWXrGTlW5M:00065",
+              "XfWXrGTlW5M:00066",
+              "XfWXrGTlW5M:00067",
               "XfWXrGTlW5M:00068"
             ]
           },
@@ -46455,7 +46534,7 @@
           "id": "slow-fast-friction-rhythm-4-part-1",
           "evidence_type": "explanation",
           "excerpt": "Use a relaxed backswing followed by explosive acceleration at contact.",
-          "reason": "Connects late acceleration to both pace change and effective friction against backspin.",
+          "reason": "Use a relaxed backswing followed by explosive acceleration at contact.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
@@ -46475,8 +46554,8 @@
         {
           "id": "slow-fast-friction-rhythm-4-part-2",
           "evidence_type": "explanation",
-          "excerpt": "The racket must be moving explosively at the moment of contact.",
-          "reason": "Connects late acceleration to both pace change and effective friction against backspin.",
+          "excerpt": "The motion must be explosive at the moment of contact.",
+          "reason": "Make the motion explosive when contacting the ball.",
           "confidence": 0.99,
           "visual_status": "not_visual",
           "source": {
@@ -46496,8 +46575,8 @@
         {
           "id": "slow-fast-friction-rhythm-4-part-3",
           "evidence_type": "explanation",
-          "excerpt": "Do not accelerate too early, because it prevents the racket from gripping the ball.",
-          "reason": "Connects late acceleration to both pace change and effective friction against backspin.",
+          "excerpt": "Accelerating too early prevents you from gripping the ball.",
+          "reason": "Avoid accelerating too early, since it can prevent you from gripping the ball.",
           "confidence": 0.99,
           "visual_status": "not_visual",
           "source": {
@@ -46545,20 +46624,26 @@
         {
           "id": "1v7qPrGhvTU-candidate-relax-then-accelerate-at-contact-1",
           "evidence_type": "explanation",
-          "excerpt": "Power should be applied only at or just before contact; the stroke stays relaxed through the approach and then accelerates in a short burst near the ball for better quality and consistency.",
-          "reason": "The speaker explicitly teaches staying relaxed until near contact and bursting only at contact as the key power principle.",
+          "excerpt": "Apply power near contact: stay relaxed through the approach, then burst near the ball.",
+          "reason": "The instruction is to stay relaxed through the approach and apply power near contact.",
           "confidence": 0.98,
           "visual_status": "not_visual",
           "source": {
             "video_id": "1v7qPrGhvTU",
             "start_ms": 56079,
-            "end_ms": 80320,
+            "end_ms": 82720,
             "url": "https://www.youtube.com/watch?v=1v7qPrGhvTU&t=56s",
             "segment_ids": [
               "1v7qPrGhvTU:00024",
               "1v7qPrGhvTU:00025",
+              "1v7qPrGhvTU:00026",
+              "1v7qPrGhvTU:00027",
+              "1v7qPrGhvTU:00028",
+              "1v7qPrGhvTU:00029",
+              "1v7qPrGhvTU:00030",
               "1v7qPrGhvTU:00031",
-              "1v7qPrGhvTU:00032"
+              "1v7qPrGhvTU:00032",
+              "1v7qPrGhvTU:00033"
             ]
           },
           "spoken_context_start_ms": null,
@@ -46569,21 +46654,24 @@
         {
           "id": "1v7qPrGhvTU-candidate-relax-then-accelerate-at-contact-2",
           "evidence_type": "explanation",
-          "excerpt": "Power should be applied only at or just before contact; the stroke stays relaxed through the approach and then accelerates in a short burst near the ball for better quality and consistency.",
-          "reason": "The speaker explicitly teaches staying relaxed until near contact and bursting only at contact as the key power principle.",
+          "excerpt": "The new approach stays relaxed until near the ball, then bursts. The speaker attributes higher quality and better consistency to that burst near contact.",
+          "reason": "Stay relaxed until near the ball, then burst near contact, as described in this comparison.",
           "confidence": 0.98,
           "visual_status": "not_visual",
           "source": {
             "video_id": "1v7qPrGhvTU",
-            "start_ms": 93520,
-            "end_ms": 100880,
-            "url": "https://www.youtube.com/watch?v=1v7qPrGhvTU&t=93s",
+            "start_ms": 82720,
+            "end_ms": 98960,
+            "url": "https://www.youtube.com/watch?v=1v7qPrGhvTU&t=82s",
             "segment_ids": [
-              "1v7qPrGhvTU:00039",
-              "1v7qPrGhvTU:00040"
+              "1v7qPrGhvTU:00035",
+              "1v7qPrGhvTU:00036",
+              "1v7qPrGhvTU:00037",
+              "1v7qPrGhvTU:00038",
+              "1v7qPrGhvTU:00039"
             ]
           },
-          "spoken_context_start_ms": 91119,
+          "spoken_context_start_ms": 82720,
           "spoken_context_end_ms": 105200,
           "visual_source": null,
           "review_status": "approved"
@@ -46591,8 +46679,8 @@
         {
           "id": "1v7qPrGhvTU-candidate-relax-then-accelerate-at-contact-3",
           "evidence_type": "drill",
-          "excerpt": "Power should be applied only at or just before contact; the stroke stays relaxed through the approach and then accelerates in a short burst near the ball for better quality and consistency.",
-          "reason": "A training progression is given: begin in the contact zone with no backswing, feel the burst there, then add a relaxed backswing.",
+          "excerpt": "Start with the hand already at the contact zone and no backswing; feel the burst there. Then add a relaxed backswing, swing loosely to the contact zone and burst. Train the stroke parts separately.",
+          "reason": "Practice the contact-zone burst first, then add the relaxed backswing.",
           "confidence": 0.95,
           "visual_status": "transcript_inferred",
           "source": {
@@ -46618,7 +46706,7 @@
           "id": "bUCFpvTlaMU-candidate-relax-then-accelerate-at-contact-1",
           "evidence_type": "definition",
           "excerpt": "The speaker ties readable spin to using a snap and distinguishes confident racket-head use from uncertain passive control.",
-          "reason": "If the player can read the incoming spin and quality, the receive or opening stroke can use a relaxed lead-in followed by concentrated acceleration through contact and finish.",
+          "reason": "When you can read the spin, use a snap; when unsure, keep the racket head still.",
           "confidence": 0.84,
           "visual_status": "not_visual",
           "source": {
@@ -46628,9 +46716,15 @@
             "url": "https://www.youtube.com/watch?v=bUCFpvTlaMU&t=118s",
             "segment_ids": [
               "bUCFpvTlaMU:00048",
-              "bUCFpvTlaMU:00048",
+              "bUCFpvTlaMU:00049",
+              "bUCFpvTlaMU:00050",
+              "bUCFpvTlaMU:00051",
+              "bUCFpvTlaMU:00052",
+              "bUCFpvTlaMU:00053",
+              "bUCFpvTlaMU:00054",
               "bUCFpvTlaMU:00055",
-              "bUCFpvTlaMU:00056"
+              "bUCFpvTlaMU:00056",
+              "bUCFpvTlaMU:00057"
             ]
           },
           "spoken_context_start_ms": null,
@@ -46641,8 +46735,8 @@
         {
           "id": "bUCFpvTlaMU-candidate-relax-then-accelerate-at-contact-2",
           "evidence_type": "explanation",
-          "excerpt": "The transcript explicitly defines acceleration as a slow-soft backswing followed by a fast release.",
-          "reason": "If the player can read the incoming spin and quality, the receive or opening stroke can use a relaxed lead-in followed by concentrated acceleration through contact and finish.",
+          "excerpt": "Start the snap at 20% force and release at 80%.",
+          "reason": "The speaker gives a 20% start and an 80% release for the snap.",
           "confidence": 0.95,
           "visual_status": "not_visual",
           "source": {
@@ -46651,7 +46745,8 @@
             "end_ms": 239840,
             "url": "https://www.youtube.com/watch?v=bUCFpvTlaMU&t=233s",
             "segment_ids": [
-              "bUCFpvTlaMU:00095"
+              "bUCFpvTlaMU:00095",
+              "bUCFpvTlaMU:00096"
             ]
           },
           "spoken_context_start_ms": null,
@@ -46662,16 +46757,18 @@
         {
           "id": "bUCFpvTlaMU-candidate-relax-then-accelerate-at-contact-3",
           "evidence_type": "explanation",
-          "excerpt": "The transcript explicitly defines acceleration as a slow-soft backswing followed by a fast release.",
-          "reason": "If the player can read the incoming spin and quality, the receive or opening stroke can use a relaxed lead-in followed by concentrated acceleration through contact and finish.",
+          "excerpt": "In the drive analogy, use a slow, soft backswing at 20% and a fast release at 80%; the speaker calls this acceleration.",
+          "reason": "Contrast the slow, soft backswing with the fast release in this drive analogy.",
           "confidence": 0.95,
           "visual_status": "not_visual",
           "source": {
             "video_id": "bUCFpvTlaMU",
-            "start_ms": 268280,
+            "start_ms": 262880,
             "end_ms": 271280,
-            "url": "https://www.youtube.com/watch?v=bUCFpvTlaMU&t=268s",
+            "url": "https://www.youtube.com/watch?v=bUCFpvTlaMU&t=262s",
             "segment_ids": [
+              "bUCFpvTlaMU:00102",
+              "bUCFpvTlaMU:00103",
               "bUCFpvTlaMU:00104"
             ]
           },
@@ -46683,8 +46780,8 @@
         {
           "id": "bUCFpvTlaMU-candidate-relax-then-accelerate-at-contact-4",
           "evidence_type": "definition",
-          "excerpt": "The speaker gives focal points against heavy backspin: finger pressure, relax then accelerate, and racket-head rotation.",
-          "reason": "If the player can read the incoming spin and quality, the receive or opening stroke can use a relaxed lead-in followed by concentrated acceleration through contact and finish.",
+          "excerpt": "At contact, focus on the brush, finger pressure, relaxing then accelerating, and racket-head rotation.",
+          "reason": "At contact, focus on brushing, finger pressure, relaxing, accelerating and racket-head rotation, as listed in the lesson.",
           "confidence": 0.92,
           "visual_status": "not_visual",
           "source": {
@@ -46694,6 +46791,8 @@
             "url": "https://www.youtube.com/watch?v=bUCFpvTlaMU&t=518s",
             "segment_ids": [
               "bUCFpvTlaMU:00188",
+              "bUCFpvTlaMU:00189",
+              "bUCFpvTlaMU:00190",
               "bUCFpvTlaMU:00191"
             ]
           },
@@ -46705,8 +46804,8 @@
         {
           "id": "q7kEYGprLYo-candidate-serve-speed-with-late-brush-1",
           "evidence_type": "definition",
-          "excerpt": "A serve principle that preserves high ball speed through the motion and adds only a tiny late brush at contact, producing heavy spin through acceleration rather than brute force.",
-          "reason": "The speaker explains that serves should keep bullet speed and use a tiny final flick for spin, emphasizing acceleration over added force.",
+          "excerpt": "Keep speed on backspin and topspin serves. For backspin, add a tiny brush at the last instant; use acceleration rather than added force to generate spin.",
+          "reason": "The speaker says serves with either backspin or topspin should carry speed, then describes a tiny late brush for backspin and says acceleration, not added force, is the key.",
           "confidence": 0.93,
           "visual_status": "not_visual",
           "source": {
@@ -46737,8 +46836,8 @@
         {
           "id": "q7kEYGprLYo-candidate-serve-speed-with-late-brush-2",
           "evidence_type": "definition",
-          "excerpt": "A serve principle that preserves high ball speed through the motion and adds only a tiny late brush at contact, producing heavy spin through acceleration rather than brute force.",
-          "reason": "The speaker explains that serves should keep bullet speed and use a tiny final flick for spin, emphasizing acceleration over added force.",
+          "excerpt": "Acceleration is a crisp, quick burst rather than brute power.",
+          "reason": "The speaker describes acceleration as a crisp, quick burst and distinguishes it from brute power.",
           "confidence": 0.93,
           "visual_status": "not_visual",
           "source": {
@@ -46759,17 +46858,22 @@
         {
           "id": "q9c2_hCwlhs-cand-12-1",
           "evidence_type": "correction",
-          "excerpt": "The speaker diagnoses early tension and gripping as the reason power is lost, then states the remedy directly.",
-          "reason": "The player should stay loose through the lead-in and avoid early tension so the stroke can release speed before any braking or control is added.",
+          "excerpt": "The speaker diagnoses an arm tensing too early and gripping at contact as killing the stroke. The correction is to flick first with a wrist snap, then add the loop motion.",
+          "reason": "Try the wrist snap first, then add the loop motion to address the early-tension example.",
           "confidence": 0.93,
           "visual_status": "not_visual",
           "source": {
             "video_id": "q9c2_hCwlhs",
             "start_ms": 298800,
-            "end_ms": 302680,
+            "end_ms": 312520,
             "url": "https://www.youtube.com/watch?v=q9c2_hCwlhs&t=298s",
             "segment_ids": [
-              "q9c2_hCwlhs:00118"
+              "q9c2_hCwlhs:00118",
+              "q9c2_hCwlhs:00119",
+              "q9c2_hCwlhs:00120",
+              "q9c2_hCwlhs:00121",
+              "q9c2_hCwlhs:00122",
+              "q9c2_hCwlhs:00123"
             ]
           },
           "spoken_context_start_ms": null,
@@ -46780,17 +46884,23 @@
         {
           "id": "q9c2_hCwlhs-cand-12-2",
           "evidence_type": "correction",
-          "excerpt": "The speaker diagnoses early tension and gripping as the reason power is lost, then states the remedy directly.",
-          "reason": "The player should stay loose through the lead-in and avoid early tension so the stroke can release speed before any braking or control is added.",
+          "excerpt": "Let power release first, then add control. In the exaggerated drill, throw the arm out loosely without worrying about landing, feel the power release, then tighten slightly at the end.",
+          "reason": "Release power before adding control in this exaggerated practice drill; tighten slightly at the end.",
           "confidence": 0.93,
           "visual_status": "not_visual",
           "source": {
             "video_id": "q9c2_hCwlhs",
-            "start_ms": 325000,
-            "end_ms": 328720,
-            "url": "https://www.youtube.com/watch?v=q9c2_hCwlhs&t=325s",
+            "start_ms": 320720,
+            "end_ms": 336560,
+            "url": "https://www.youtube.com/watch?v=q9c2_hCwlhs&t=320s",
             "segment_ids": [
-              "q9c2_hCwlhs:00128"
+              "q9c2_hCwlhs:00126",
+              "q9c2_hCwlhs:00127",
+              "q9c2_hCwlhs:00128",
+              "q9c2_hCwlhs:00129",
+              "q9c2_hCwlhs:00130",
+              "q9c2_hCwlhs:00131",
+              "q9c2_hCwlhs:00132"
             ]
           },
           "spoken_context_start_ms": null,
@@ -46802,7 +46912,7 @@
           "id": "q9c2_hCwlhs-cand-12-3",
           "evidence_type": "explanation",
           "excerpt": "Breaking the stroke too early is said to kill the racket-head whip before release completes.",
-          "reason": "The player should stay loose through the lead-in and avoid early tension so the stroke can release speed before any braking or control is added.",
+          "reason": "Let the power fully release before braking; breaking the stroke too early prevents the racket head from whipping.",
           "confidence": 0.86,
           "visual_status": "not_visual",
           "source": {
@@ -46812,6 +46922,8 @@
             "url": "https://www.youtube.com/watch?v=q9c2_hCwlhs&t=425s",
             "segment_ids": [
               "q9c2_hCwlhs:00165",
+              "q9c2_hCwlhs:00166",
+              "q9c2_hCwlhs:00167",
               "q9c2_hCwlhs:00168"
             ]
           },
@@ -46823,8 +46935,8 @@
         {
           "id": "t3HX8AEujWw-c9-1",
           "evidence_type": "explanation",
-          "excerpt": "Says the same motion performed faster produces speed and power, and that big motions hurt quality.",
-          "reason": "Shot quality comes more from accelerating the same compact motion than from adding force or enlarging the swing; the player should execute the stroke smoothly, then faster through completion.",
+          "excerpt": "The same motion produces speed and power when performed faster. A big motion hurts shot quality; accelerate through the completion of the stroke.",
+          "reason": "Perform the same motion faster and accelerate through the stroke’s completion; the speaker says a big motion hurts shot quality.",
           "confidence": 0.9,
           "visual_status": "not_visual",
           "source": {
@@ -46849,16 +46961,18 @@
         {
           "id": "t3HX8AEujWw-c9-2",
           "evidence_type": "explanation",
-          "excerpt": "Repeatedly demonstrates the slow-to-fast principle and links faster execution to higher quality.",
-          "reason": "Shot quality comes more from accelerating the same compact motion than from adding force or enlarging the swing; the player should execute the stroke smoothly, then faster through completion.",
+          "excerpt": "Repeat the same motion at different speeds. The speaker says it produces speed and power without added force, and that quality rises as execution gets faster.",
+          "reason": "The speaker describes repeating the same motion from slow to fast without adding force, and says shot quality rises as execution gets faster.",
           "confidence": 0.93,
           "visual_status": "transcript_inferred",
           "source": {
             "video_id": "t3HX8AEujWw",
-            "start_ms": 488400,
+            "start_ms": 478080,
             "end_ms": 506960,
-            "url": "https://www.youtube.com/watch?v=t3HX8AEujWw&t=488s",
+            "url": "https://www.youtube.com/watch?v=t3HX8AEujWw&t=478s",
             "segment_ids": [
+              "t3HX8AEujWw:00200",
+              "t3HX8AEujWw:00201",
               "t3HX8AEujWw:00202",
               "t3HX8AEujWw:00203",
               "t3HX8AEujWw:00204",
@@ -46876,8 +46990,8 @@
         {
           "id": "t3HX8AEujWw-c9-3",
           "evidence_type": "correction",
-          "excerpt": "Corrects the common mistake of swinging harder and bigger instead of accelerating the motion.",
-          "reason": "Shot quality comes more from accelerating the same compact motion than from adding force or enlarging the swing; the player should execute the stroke smoothly, then faster through completion.",
+          "excerpt": "More force does not always improve shot quality; acceleration matters. Do the motion faster instead of enlarging the swing and swinging harder.",
+          "reason": "The speaker says acceleration matters more than adding force or enlarging the swing, and advises doing the motion faster.",
           "confidence": 0.9,
           "visual_status": "not_visual",
           "source": {
@@ -46904,8 +47018,8 @@
         {
           "id": "0QxW3Un68gg-concept-relax-then-accelerate-at-contact-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "Keep the backswing relaxed, then accelerate through the ball at contact; add a burst of speed rather than using brute force.",
-          "reason": "These contiguous segments explicitly state that the backswing is relaxed, acceleration occurs through the ball at contact, and the added speed should come from acceleration rather than brute force.",
+          "excerpt": "Keep the backswing relaxed, then accelerate through the ball at contact. Add a burst of speed rather than brute force.",
+          "reason": "Relax during the backswing, then accelerate through the ball at contact; speed comes from acceleration rather than brute force.",
           "confidence": 0.99,
           "visual_status": "not_visual",
           "source": {
@@ -46928,7 +47042,7 @@
           "id": "16tgKRqrb8A-concept-relax-then-accelerate-at-contact-codex-reviewed",
           "evidence_type": "definition",
           "excerpt": "A professional's rhythm is relaxed on the backswing, then explosive tension at contact. Only by being relaxed can you create acceleration without deforming your stroke; at impact, the hand becomes completely solid and braced.",
-          "reason": "These contiguous segments directly support relaxing during the backswing and becoming explosive, solid, and braced at impact. The selected span is under 30 seconds.",
+          "reason": "Stay relaxed on the backswing so you can accelerate without deforming the stroke; at impact, brace the hand.",
           "confidence": 0.99,
           "visual_status": "not_visual",
           "source": {
@@ -46953,7 +47067,7 @@
           "id": "1HdDP2jYQyE-concept-relax-then-accelerate-at-contact-codex-reviewed",
           "evidence_type": "explanation",
           "excerpt": "Ground firmly for a moment to create relaxation, then grip firmly at the striking moment and apply force upward.",
-          "reason": "This contiguous span describes relaxation immediately followed by force application at the moment of striking, directly supporting the existing timing cue.",
+          "reason": "Ground firmly for a moment to create relaxation, then grip firmly when striking and push upward.",
           "confidence": 0.88,
           "visual_status": "transcript_inferred",
           "source": {
@@ -46976,7 +47090,7 @@
           "id": "6NvlGVPIC6E-concept-relax-then-accelerate-at-contact-codex-reviewed",
           "evidence_type": "definition",
           "excerpt": "At the backswing stage, stay relaxed; at the swing moment, pursue acceleration, then stop and break immediately afterward.",
-          "reason": "These contiguous segments directly state the sequence of relaxation during the backswing, acceleration at the swing moment, and an immediate stop or break, with left sidespin given as an example.",
+          "reason": "Stay relaxed during the backswing, accelerate at the swing, then stop and break immediately afterward.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
@@ -47001,8 +47115,8 @@
         {
           "id": "2KQFI9yewD0-concept-relax-then-accelerate-at-contact-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "At the moment of contact, stay relaxed, then push with the fingers and rotate the wrist to create friction.",
-          "reason": "This contiguous 10.8-second span directly describes relaxing at contact followed by finger-driven wrist rotation to create friction.",
+          "excerpt": "At contact, stay relaxed; as you hit the ball, push with the fingers and rotate the wrist.",
+          "reason": "At contact, stay relaxed; when hitting the ball, push with the fingers and rotate the wrist.",
           "confidence": 0.96,
           "visual_status": "transcript_inferred",
           "source": {
@@ -47027,7 +47141,7 @@
           "id": "C2CBt2468oI-concept-relax-then-accelerate-at-contact-codex-reviewed",
           "evidence_type": "explanation",
           "excerpt": "In all preparation movements, relax your muscles. Then, at the moment of contact, you can accelerate and tighten the muscles; for every stroke, relax first, then tighten.",
-          "reason": "This contiguous span directly explains the existing concept: relax during preparation, then accelerate and tighten at contact.",
+          "reason": "Relax during preparation, then accelerate and tighten the muscles at contact. For every stroke, relax first, then tighten.",
           "confidence": 0.99,
           "visual_status": "not_visual",
           "source": {
@@ -47054,7 +47168,7 @@
           "id": "CpcAha7BZGA-concept-relax-then-accelerate-at-contact-codex-reviewed",
           "evidence_type": "explanation",
           "excerpt": "The key is accelerating at the moment of contact.",
-          "reason": "These contiguous transcript segments explicitly state that acceleration should occur at contact, directly supporting the contact-timing aspect of the existing concept.",
+          "reason": "Accelerate at the moment of contact.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
@@ -47075,14 +47189,14 @@
         {
           "id": "fXOGFZD1MTY-concept-relax-then-accelerate-at-contact-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "A loop needs body involvement in a match, but during practice the hand should stay extremely relaxed near the knee before accelerating.",
-          "reason": "This contiguous loop-practice passage directly explains relaxing the hand before accelerating; it does not establish acceleration specifically through contact.",
+          "excerpt": "The speaker says a loop without body involvement floats in matches. In practice, place the hand very relaxed near the knee, then accelerate; for now, omit the body to focus on hand power.",
+          "reason": "Isolate the relaxed hand and acceleration in practice before the match-level body-involvement requirement.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
             "video_id": "fXOGFZD1MTY",
             "start_ms": 456120,
-            "end_ms": 471840,
+            "end_ms": 475840,
             "url": "https://www.youtube.com/watch?v=fXOGFZD1MTY&t=456s",
             "segment_ids": [
               "fXOGFZD1MTY:00159",
@@ -47090,7 +47204,9 @@
               "fXOGFZD1MTY:00161",
               "fXOGFZD1MTY:00162",
               "fXOGFZD1MTY:00163",
-              "fXOGFZD1MTY:00164"
+              "fXOGFZD1MTY:00164",
+              "fXOGFZD1MTY:00165",
+              "fXOGFZD1MTY:00166"
             ]
           },
           "spoken_context_start_ms": null,
@@ -47102,7 +47218,7 @@
           "id": "Ay4vk9XXAfM-concept-relax-then-accelerate-at-contact-codex-reviewed",
           "evidence_type": "definition",
           "excerpt": "The principle is to go from soft to hard: keep the motion gentle and relaxed before contact, accelerate sharply at impact, and follow through with that power.",
-          "reason": "This contiguous 23-second span directly explains the proposed timing cue. It matches the supplied existing concept and supports relaxation before contact, sharp acceleration at impact, and follow-through.",
+          "reason": "Keep the motion gentle and relaxed before impact, accelerate sharply at impact, then follow through with that power.",
           "confidence": 0.99,
           "visual_status": "not_visual",
           "source": {
@@ -47126,8 +47242,8 @@
         {
           "id": "cPooD0HRRAc-concept-relax-then-accelerate-at-contact-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "A graceful backswing should be followed by an explosive loop, with relaxation during the backswing and tension at impact to create the greatest possible difference in speed.",
-          "reason": "These contiguous segments directly explain the durable timing principle of a relaxed backswing followed by explosive acceleration at contact, within a single 23-second topic moment.",
+          "excerpt": "Use a graceful backswing followed by an explosive loop. The speaker gives the sequence of relaxing on the backswing and tensing at impact, then calls for the biggest possible speed difference at contact.",
+          "reason": "Relax on the backswing and tense at impact; the speaker also calls for a large speed difference at contact.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
@@ -47137,6 +47253,7 @@
             "url": "https://www.youtube.com/watch?v=cPooD0HRRAc&t=697s",
             "segment_ids": [
               "cPooD0HRRAc:00150",
+              "cPooD0HRRAc:00151",
               "cPooD0HRRAc:00152",
               "cPooD0HRRAc:00153",
               "cPooD0HRRAc:00154"
@@ -47150,16 +47267,17 @@
         {
           "id": "lRAoXPoYOBk-concept-relax-then-accelerate-at-contact-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "At contact, the wrist is fully relaxed; at the moment of impact, it must suddenly rotate, with the fingers and wrist providing the motion.",
-          "reason": "These contiguous segments explicitly state that the wrist is relaxed at contact and then suddenly rotates, with the fingers and wrist supplying the motion.",
+          "excerpt": "Make contact with the wrist relaxed, then rotate it suddenly at impact and apply quick finger force. The fingers and wrist provide the motion.",
+          "reason": "Keep the wrist relaxed as you make contact, then rotate it suddenly at impact and use the fingers and wrist to provide the motion.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
             "video_id": "lRAoXPoYOBk",
-            "start_ms": 119300,
+            "start_ms": 116466,
             "end_ms": 135833,
-            "url": "https://www.youtube.com/watch?v=lRAoXPoYOBk&t=119s",
+            "url": "https://www.youtube.com/watch?v=lRAoXPoYOBk&t=116s",
             "segment_ids": [
+              "lRAoXPoYOBk:00045",
               "lRAoXPoYOBk:00046",
               "lRAoXPoYOBk:00047",
               "lRAoXPoYOBk:00048",
@@ -47177,8 +47295,8 @@
         {
           "id": "J7Lm5IL-ggs-concept-relax-then-accelerate-at-contact-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "If the racket head points up, your grip is tight. If the racket head points down, it's relaxed. So, when the ball comes, your backswing must be relaxed so you can tighten up instantly at contact.",
-          "reason": "These contiguous segments directly state that a relaxed backswing should tighten instantly at contact, matching the existing concept.",
+          "excerpt": "A racket head pointing up indicates a tight grip; pointing down indicates a relaxed grip. Keep the backswing relaxed so you can tighten instantly at contact.",
+          "reason": "Use the racket-head direction as a grip cue: up indicates a tight grip and down a relaxed grip. Keep the backswing relaxed, then tighten at contact.",
           "confidence": 0.99,
           "visual_status": "transcript_inferred",
           "source": {
@@ -47204,11 +47322,28 @@
           "sources": [
             {
               "video_id": "qLT0MvwitZc",
+              "start_ms": 10533,
+              "end_ms": 35800,
+              "url": "https://www.youtube.com/watch?v=qLT0MvwitZc&t=10s",
+              "segment_ids": [
+                "qLT0MvwitZc:00002",
+                "qLT0MvwitZc:00003",
+                "qLT0MvwitZc:00004",
+                "qLT0MvwitZc:00005",
+                "qLT0MvwitZc:00006",
+                "qLT0MvwitZc:00007"
+              ]
+            },
+            {
+              "video_id": "qLT0MvwitZc",
               "start_ms": 83533,
               "end_ms": 106766,
               "url": "https://www.youtube.com/watch?v=qLT0MvwitZc&t=83s",
               "segment_ids": [
                 "qLT0MvwitZc:00020",
+                "qLT0MvwitZc:00021",
+                "qLT0MvwitZc:00022",
+                "qLT0MvwitZc:00023",
                 "qLT0MvwitZc:00024"
               ]
             }
@@ -47227,6 +47362,10 @@
               "url": "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=264s",
               "segment_ids": [
                 "XfWXrGTlW5M:00063",
+                "XfWXrGTlW5M:00064",
+                "XfWXrGTlW5M:00065",
+                "XfWXrGTlW5M:00066",
+                "XfWXrGTlW5M:00067",
                 "XfWXrGTlW5M:00068"
               ]
             }
@@ -56285,6 +56424,57 @@
               "Cq6MbP6TEdc:00028",
               "Cq6MbP6TEdc:00029",
               "Cq6MbP6TEdc:00030"
+            ]
+          },
+          "spoken_context_start_ms": null,
+          "spoken_context_end_ms": null,
+          "visual_source": null,
+          "review_status": "approved"
+        },
+        {
+          "id": "YUEaL2HiPIE-concept-balanced-contact-stability-1",
+          "evidence_type": "definition",
+          "excerpt": "During the backhand stroke, keep the body and center of gravity stable. The speaker connects being off-balance with needing to reset after the shot and being slower, and calls for balance on every shot.",
+          "reason": "Keep the body balanced in this backhand-stroke and movement example.",
+          "confidence": 0.94,
+          "visual_status": "not_visual",
+          "source": {
+            "video_id": "YUEaL2HiPIE",
+            "start_ms": 317533,
+            "end_ms": 341000,
+            "url": "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=317s",
+            "segment_ids": [
+              "YUEaL2HiPIE:00067",
+              "YUEaL2HiPIE:00068",
+              "YUEaL2HiPIE:00069",
+              "YUEaL2HiPIE:00070",
+              "YUEaL2HiPIE:00071"
+            ]
+          },
+          "spoken_context_start_ms": null,
+          "spoken_context_end_ms": null,
+          "visual_source": null,
+          "review_status": "approved"
+        },
+        {
+          "id": "YUEaL2HiPIE-concept-balanced-contact-stability-3",
+          "evidence_type": "explanation",
+          "excerpt": "Asked how to make shots more stable, the speaker answers by keeping the body, shoulders and center of gravity balanced. Movement while hitting, especially shoulders moving up and down, is linked to errors and inconsistency.",
+          "reason": "Balance the body and shoulders for stable shots, avoiding excessive shoulder movement while hitting.",
+          "confidence": 0.92,
+          "visual_status": "not_visual",
+          "source": {
+            "video_id": "YUEaL2HiPIE",
+            "start_ms": 383633,
+            "end_ms": 406366,
+            "url": "https://www.youtube.com/watch?v=YUEaL2HiPIE&t=383s",
+            "segment_ids": [
+              "YUEaL2HiPIE:00080",
+              "YUEaL2HiPIE:00081",
+              "YUEaL2HiPIE:00082",
+              "YUEaL2HiPIE:00083",
+              "YUEaL2HiPIE:00084",
+              "YUEaL2HiPIE:00085"
             ]
           },
           "spoken_context_start_ms": null,

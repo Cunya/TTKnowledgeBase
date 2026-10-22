@@ -296,3 +296,7 @@
 2026-10-21T18:12:37.452278+03:00: Audit status subtotals do not measure total unverified footage: enumerate every canonical visual_source, including units in pending articles. Full inventory found35 windows vs9 already classified; retain both counts explicitly.
 
 2026-10-21T18:47:46.265723+03:00: Related-article backlinks must use the inverse relation label: parent has part child, child part of parent. Validate both endpoints from the published graph, not merely link existence. Source-specific posture/drill/match conditions stay local; a supported instruction does not automatically prove a proposed article association. Preserve it in a reviewed destination before changing that association.
+
+2026-10-21T20:58:51.361152+03:00: Private installation must derive every changed canonical field from the reviewed proposal. Exact dossier checks caught omitted evidence-type/relation-source writes before publication. Keep whole-dossier/public parity gates; never waive mismatches. Unchanged values do not imply unchanged proof when allowed sources/context change. Public reasons must address the reader rather than instruct an editor.
+
+- 2026-10-22: Before paid article verification, replace every public reason containing review scaffolding (span duration, existing concept, caption limits, or editorial instructions) with an actual source-grounded reader instruction. Scan the whole proposal, including unchanged reasons; checking only the rewritten excerpts wastes repeated model calls. Keep deictic source limits in private review notes.

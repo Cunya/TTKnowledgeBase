@@ -1,1101 +1,1357 @@
 id: concept-forehand-loop-power-generation
 slug: forehand-loop-power-generation
 label: Forehand loop power generation
-aliases: [loop power, body-led loop, drive-snap rhythm]
-short_definition: Generate forehand-loop power with a relaxed body-led backswing, forward drive through contact, late acceleration, and a compact braking action.
+aliases:
+- loop power
+- body-led loop
+- drive-snap rhythm
+short_definition: Generate forehand-loop power through racket-head motion, with
+  loop lessons also describing body-led preparation and acceleration.
 evidence_summary: >-
-  Forehand loop power comes from a relaxed, body-led action in which the legs, hips, waist, and
-  arm work together to meet the ball actively. The racket head should accelerate forward through a
-  full but controlled movement, with weight transfer and body position creating the force instead
-  of snatching power from the hand alone.
-evidence_summary_source_hash: "sha256:abab4f19b25621bec5f59ec10ee44fee71010843bd85bbba34bb147fd52e961a"
-evidence_summary_generator: "codex"
-detailed_definition: Power is transferred through a coordinated sequence rather than by pulling the arm back or tensing early. The torso carries a relaxed arm into position; the racket drives into the ball, accelerates late, and the forearm's braking action helps turn linear speed into a fast, compact finish.
+  Examples include body-led preparation, a drop-drive-brake sequence, acceleration
+  paired with braking, and forehand-loop racket-head motion. After a no-spin serve
+  returns half-long and slightly high, one lesson permits a power loop; its high-ball
+  example uses mainly impact with brushing as a supplement. Another loop-power example
+  uses friction followed by forward force while standing still without body power.
+detailed_definition: 'One lesson explicitly calls the body-led action a loop: open
+  the arm, let body rotation lead the backswing while the hand stays in front, then
+  accelerate. Another lesson drops down, drives forward and brakes the arm, calling
+  forward drive essential when looping. A separate loop-power example uses friction
+  followed by forward force while standing still without using the body.'
 concept_type: principle
-facets: {category: [mechanics, power], side: [forehand], spin: [topspin], level: [intermediate]}
-difficulty: intermediate
+facets:
+  category:
+  - stroke
+  side:
+  - forehand
+  spin:
+  - topspin
+difficulty:
 review_status: approved
 evidence:
-  - id: power-body-led-backswing-global
-    evidence_type: demonstration
-    excerpt: Use body rotation to bring the arm back rather than deliberately pulling the arm backward.
-    reason: Establishes a relaxed body-led preparation.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    visual_source: {video_id: qLT0MvwitZc, start_ms: 57000, end_ms: 69000, url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=57s", selection_method: nearby_visual_inference, note: Shadow-stroke comparison shows body rotation carrying the arm.}
-    review_status: approved
-    source: {video_id: qLT0MvwitZc, start_ms: 57700, end_ms: 64733, url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=57s", segment_ids: ["qLT0MvwitZc:00013", "qLT0MvwitZc:00014"]}
-  - id: power-drive-snap-global
-    evidence_type: demonstration
-    excerpt: Drop down, drive forward into the ball, and then brake the arm quickly.
-    reason: Defines the drive-snap sequence used to transfer power through contact.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    visual_source: {video_id: qLT0MvwitZc, start_ms: 468000, end_ms: 483000, url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=468s", selection_method: nearby_visual_inference, note: Repeated shadow strokes show the forward drive and compact snap.}
-    review_status: approved
-    source: {video_id: qLT0MvwitZc, start_ms: 470333, end_ms: 478433, url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=470s", segment_ids: ["qLT0MvwitZc:00109"]}
-  - id: power-acceleration-braking-spinmaster
-    evidence_type: explanation
-    excerpt: Pair the forward acceleration with a firm braking action.
-    reason: Explains why acceleration without a controlled finish is insufficient.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    visual_source: {video_id: V__nqiNHeKE, start_ms: 340000, end_ms: 354000, url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=340s", selection_method: nearby_visual_inference, note: Live-ball and shadow comparisons show loose versus forceful finishing.}
-    review_status: approved
-    source: {video_id: V__nqiNHeKE, start_ms: 343200, end_ms: 351760, url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=343s", segment_ids: ["V__nqiNHeKE:00130", "V__nqiNHeKE:00131"]}
-  - id: i68OG8UzMyQ-cand-loop-own-power-vs-drive-borrowed-power-1
-    evidence_type: definition
-    excerpt: Unlike a drive that mainly borrows incoming pace, a loop requires the player to generate power through coordinated forward movement and force combination from waist, hips, and arm.
-    reason: Speaker explicitly defines the difference in power source between drive and loop.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: i68OG8UzMyQ
-      start_ms: 85920
-      end_ms: 101720
-      url: "https://www.youtube.com/watch?v=i68OG8UzMyQ&t=85s"
-      segment_ids:
-        - "i68OG8UzMyQ:00027"
-        - "i68OG8UzMyQ:00028"
-        - "i68OG8UzMyQ:00030"
-        - "i68OG8UzMyQ:00031"
-        - "i68OG8UzMyQ:00032"
-  - id: i68OG8UzMyQ-cand-loop-own-power-vs-drive-borrowed-power-2
-    evidence_type: explanation
-    excerpt: Unlike a drive that mainly borrows incoming pace, a loop requires the player to generate power through coordinated forward movement and force combination from waist, hips, and arm.
-    reason: He explains that proper timing allows waist, hips, and arm to combine and meet the ball actively.
-    confidence: 0.87
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: i68OG8UzMyQ
-      start_ms: 69040
-      end_ms: 87760
-      url: "https://www.youtube.com/watch?v=i68OG8UzMyQ&t=69s"
-      segment_ids:
-        - "i68OG8UzMyQ:00021"
-        - "i68OG8UzMyQ:00022"
-        - "i68OG8UzMyQ:00024"
-        - "i68OG8UzMyQ:00025"
-        - "i68OG8UzMyQ:00026"
-  - id: i68OG8UzMyQ-cand-loop-own-power-vs-drive-borrowed-power-3
-    evidence_type: explanation
-    excerpt: Unlike a drive that mainly borrows incoming pace, a loop requires the player to generate power through coordinated forward movement and force combination from waist, hips, and arm.
-    reason: He explains that proper timing allows waist, hips, and arm to combine and meet the ball actively.
-    confidence: 0.87
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: i68OG8UzMyQ
-      start_ms: 113280
-      end_ms: 118640
-      url: "https://www.youtube.com/watch?v=i68OG8UzMyQ&t=113s"
-      segment_ids:
-        - "i68OG8UzMyQ:00036"
-        - "i68OG8UzMyQ:00037"
-  - id: m93pWt9MIZE-candidate-power-loop-1
-    evidence_type: definition
-    excerpt: An attacking forehand loop emphasizing speed and concentrated impact, used when the returned ball is half-long and slightly high with relatively little spin.
-    reason: Speaker explains the ball conditions and defines the power loop as mainly impact-based with brushing as support.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: m93pWt9MIZE
-      start_ms: 128080
-      end_ms: 155760
-      url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=128s"
-      segment_ids:
-        - "m93pWt9MIZE:00051"
-        - "m93pWt9MIZE:00059"
-        - "m93pWt9MIZE:00060"
-  - id: m93pWt9MIZE-candidate-power-loop-2
-    evidence_type: definition
-    excerpt: An attacking forehand loop emphasizing speed and concentrated impact, used when the returned ball is half-long and slightly high with relatively little spin.
-    reason: Speaker explains the ball conditions and defines the power loop as mainly impact-based with brushing as support.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: m93pWt9MIZE
-      start_ms: 162640
-      end_ms: 166800
-      url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=162s"
-      segment_ids:
-        - "m93pWt9MIZE:00065"
-  - id: m93pWt9MIZE-candidate-power-loop-3
-    evidence_type: example
-    excerpt: An attacking forehand loop emphasizing speed and concentrated impact, used when the returned ball is half-long and slightly high with relatively little spin.
-    reason: Speaker contrasts ideal practice-style full power attacks with real match conditions.
-    confidence: 0.82
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: m93pWt9MIZE
-      start_ms: 57039
-      end_ms: 65960
-      url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=57s"
-      segment_ids:
-        - "m93pWt9MIZE:00022"
-        - "m93pWt9MIZE:00023"
-        - "m93pWt9MIZE:00024"
-  - id: m93pWt9MIZE-candidate-impact-brushing-balance-1
-    evidence_type: explanation
-    excerpt: Choosing the right mix of forward impact and brushing spin in a loop according to incoming spin, height, and match situation.
-    reason: Speaker states many players cannot choose the right balance and explains one stroke is more upward while another is more forward.
-    confidence: 0.92
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: m93pWt9MIZE
-      start_ms: 174000
-      end_ms: 193599
-      url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=174s"
-      segment_ids:
-        - "m93pWt9MIZE:00069"
-        - "m93pWt9MIZE:00076"
-  - id: m93pWt9MIZE-candidate-impact-brushing-balance-2
-    evidence_type: correction
-    excerpt: Choosing the right mix of forward impact and brushing spin in a loop according to incoming spin, height, and match situation.
-    reason: Speaker corrects overhitting against heavy spin by saying brushing must dominate.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: m93pWt9MIZE
-      start_ms: 248239
-      end_ms: 262199
-      url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=248s"
-      segment_ids:
-        - "m93pWt9MIZE:00098"
-        - "m93pWt9MIZE:00102"
-  - id: m93pWt9MIZE-candidate-impact-brushing-balance-3
-    evidence_type: example
-    excerpt: Choosing the right mix of forward impact and brushing spin in a loop according to incoming spin, height, and match situation.
-    reason: Speaker shows how the balance changes for no-spin serves and critical points.
-    confidence: 0.88
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: m93pWt9MIZE
-      start_ms: 327280
-      end_ms: 352400
-      url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=327s"
-      segment_ids:
-        - "m93pWt9MIZE:00125"
-        - "m93pWt9MIZE:00133"
-  - id: V2YGbh829eU-cand-spin-before-power-principle-1
-    evidence_type: definition
-    excerpt: A teaching principle that beginner and amateur players should prioritize learning to create spin through brushing before emphasizing raw power generation.
-    reason: Speaker explicitly states spin is most important for amateurs and that brushing for spin is learnable regardless of level, while power generation is harder without foundation.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: V2YGbh829eU
-      start_ms: 8766
-      end_ms: 27866
-      url: "https://www.youtube.com/watch?v=V2YGbh829eU&t=8s"
-      segment_ids:
-        - "V2YGbh829eU:00001"
-        - "V2YGbh829eU:00002"
-        - "V2YGbh829eU:00003"
-        - "V2YGbh829eU:00004"
-        - "V2YGbh829eU:00005"
-  - id: V__nqiNHeKE-cand-heavy-topspin-loop-1
-    evidence_type: definition
-    excerpt: The speaker names a heavy topspin loop, contrasts it with a high-arc loop, and defines it as low arc with strong spin produced by a down-and-forward brushing direction.
-    reason: A forehand looping variation that produces strong topspin with a lower arc by brushing down-and-forward instead of lifting the ball in a high arc.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: V__nqiNHeKE
-      start_ms: 38640
-      end_ms: 44360
-      url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=38s"
-      segment_ids:
-        - "V__nqiNHeKE:00012"
-  - id: V__nqiNHeKE-cand-heavy-topspin-loop-2
-    evidence_type: definition
-    excerpt: The speaker names a heavy topspin loop, contrasts it with a high-arc loop, and defines it as low arc with strong spin produced by a down-and-forward brushing direction.
-    reason: A forehand looping variation that produces strong topspin with a lower arc by brushing down-and-forward instead of lifting the ball in a high arc.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: V__nqiNHeKE
-      start_ms: 129240
-      end_ms: 145760
-      url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=129s"
-      segment_ids:
-        - "V__nqiNHeKE:00049"
-        - "V__nqiNHeKE:00052"
-  - id: V__nqiNHeKE-cand-heavy-topspin-loop-3
-    evidence_type: definition
-    excerpt: The speaker names a heavy topspin loop, contrasts it with a high-arc loop, and defines it as low arc with strong spin produced by a down-and-forward brushing direction.
-    reason: A forehand looping variation that produces strong topspin with a lower arc by brushing down-and-forward instead of lifting the ball in a high arc.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: V__nqiNHeKE
-      start_ms: 164640
-      end_ms: 169080
-      url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=164s"
-      segment_ids:
-        - "V__nqiNHeKE:00062"
-  - id: V__nqiNHeKE-cand-heavy-topspin-loop-4
-    evidence_type: demonstration
-    excerpt: The speaker says 'Let me show you a heavy topspin loop' and later cues how to loop under the ball, indicating a demonstrated stroke pattern.
-    reason: A forehand looping variation that produces strong topspin with a lower arc by brushing down-and-forward instead of lifting the ball in a high arc.
-    confidence: 0.83
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: V__nqiNHeKE
-      start_ms: 38640
-      end_ms: 46600
-      url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=38s"
-      segment_ids:
-        - "V__nqiNHeKE:00012"
-        - "V__nqiNHeKE:00013"
-  - id: V__nqiNHeKE-cand-heavy-topspin-loop-5
-    evidence_type: demonstration
-    excerpt: The speaker says 'Let me show you a heavy topspin loop' and later cues how to loop under the ball, indicating a demonstrated stroke pattern.
-    reason: A forehand looping variation that produces strong topspin with a lower arc by brushing down-and-forward instead of lifting the ball in a high arc.
-    confidence: 0.83
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: V__nqiNHeKE
-      start_ms: 418200
-      end_ms: 424280
-      url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=418s"
-      segment_ids:
-        - "V__nqiNHeKE:00152"
-  - id: V__nqiNHeKE-cand-high-arc-loop-1
-    evidence_type: definition
-    excerpt: A topspin loop played with a more upward low-to-high force direction, creating a slower, higher trajectory that is easier to block.
-    reason: The speaker explicitly labels the high arc loop, describes its upward force direction, and explains that it produces a slow, high ball that is easy to block.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: V__nqiNHeKE
-      start_ms: 122560
-      end_ms: 143040
-      url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=122s"
-      segment_ids:
-        - "V__nqiNHeKE:00048"
-        - "V__nqiNHeKE:00051"
-  - id: V__nqiNHeKE-cand-high-arc-loop-2
-    evidence_type: definition
-    excerpt: A topspin loop played with a more upward low-to-high force direction, creating a slower, higher trajectory that is easier to block.
-    reason: The speaker explicitly labels the high arc loop, describes its upward force direction, and explains that it produces a slow, high ball that is easy to block.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: V__nqiNHeKE
-      start_ms: 154440
-      end_ms: 164400
-      url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=154s"
-      segment_ids:
-        - "V__nqiNHeKE:00058"
-        - "V__nqiNHeKE:00060"
-  - id: V__nqiNHeKE-cand-fast-loop-drive-1
-    evidence_type: definition
-    excerpt: A loop-drive variant using racket-head-forward acceleration followed by rotation, with finger-led release rather than large wrist rotation.
-    reason: The speaker describes the movement pattern and then names it 'fast loop drive.'
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: V__nqiNHeKE
-      start_ms: 47920
-      end_ms: 71880
-      url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=47s"
-      segment_ids:
-        - "V__nqiNHeKE:00016"
-        - "V__nqiNHeKE:00018"
-        - "V__nqiNHeKE:00024"
-  - id: V__nqiNHeKE-cand-fast-loop-drive-2
-    evidence_type: definition
-    excerpt: A loop-drive variant using racket-head-forward acceleration followed by rotation, with finger-led release rather than large wrist rotation.
-    reason: The speaker describes the movement pattern and then names it 'fast loop drive.'
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: V__nqiNHeKE
-      start_ms: 118240
-      end_ms: 122080
-      url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=118s"
-      segment_ids:
-        - "V__nqiNHeKE:00047"
-  - id: f7uZPRPIwpU-concept-forehand-loop-power-generation-1
-    evidence_type: definition
-    excerpt: A power loop requires taking the ball around its peak, pressing and closing the racket, driving forward into the ball, and keeping the body compact so power is concentrated forward rather than upward.
-    reason: Speaker explicitly lists the three requirements for a power loop and its flatter forward trajectory.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: f7uZPRPIwpU
-      start_ms: 325919
-      end_ms: 355600
-      url: https://www.youtube.com/watch?v=f7uZPRPIwpU&t=325s
-      segment_ids:
-        - f7uZPRPIwpU:00123
-        - f7uZPRPIwpU:00124
-        - f7uZPRPIwpU:00125
-        - f7uZPRPIwpU:00126
-        - f7uZPRPIwpU:00128
-        - f7uZPRPIwpU:00129
-        - f7uZPRPIwpU:00130
-        - f7uZPRPIwpU:00133
-        - f7uZPRPIwpU:00134
-  - id: ti_YUZdHu3o-brush-then-body-power
-    evidence_type: explanation
-    excerpt: Establish the brush first, then extend forward and drive the hip and body into the ball.
-    reason: Places body-led power after the player has established friction instead of substituting force for brushing.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source: {video_id: ti_YUZdHu3o, start_ms: 308919, end_ms: 333280, url: "https://www.youtube.com/watch?v=ti_YUZdHu3o&t=308s", segment_ids: ["ti_YUZdHu3o:00098", "ti_YUZdHu3o:00100", "ti_YUZdHu3o:00101", "ti_YUZdHu3o:00102", "ti_YUZdHu3o:00104", "ti_YUZdHu3o:00106", "ti_YUZdHu3o:00107"]}
-  - id: 1fHWnt8IlbI-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Generating loop power primarily with the forearm and body control rather than a large backswing or overusing the upper arm.
-    reason: The speaker states the forearm is the primary driver and that excessive upper-arm use causes loss of control and balls flying long.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 1fHWnt8IlbI
-      start_ms: 153800
-      end_ms: 180519
-      url: https://www.youtube.com/watch?v=1fHWnt8IlbI&t=153s
-      segment_ids:
-        - 1fHWnt8IlbI:00060
-        - 1fHWnt8IlbI:00061
-        - 1fHWnt8IlbI:00062
-        - 1fHWnt8IlbI:00063
-        - 1fHWnt8IlbI:00064
-        - 1fHWnt8IlbI:00065
-        - 1fHWnt8IlbI:00066
-        - 1fHWnt8IlbI:00067
-        - 1fHWnt8IlbI:00068
-        - 1fHWnt8IlbI:00069
-        - 1fHWnt8IlbI:00070
-  - id: D9ZAPb_65Hk-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Generating loop power primarily through the racket head and whip-like release rather than arm force.
-    reason: The speaker says rally quality does not come from the arm but from the racket head, including for forehand loop.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: D9ZAPb_65Hk
-      start_ms: 489760
-      end_ms: 512800
-      url: https://www.youtube.com/watch?v=D9ZAPb_65Hk&t=489s
-      segment_ids:
-        - D9ZAPb_65Hk:00161
-        - D9ZAPb_65Hk:00162
-        - D9ZAPb_65Hk:00163
-        - D9ZAPb_65Hk:00164
-        - D9ZAPb_65Hk:00165
-        - D9ZAPb_65Hk:00166
-        - D9ZAPb_65Hk:00167
-        - D9ZAPb_65Hk:00168
-        - D9ZAPb_65Hk:00169
-        - D9ZAPb_65Hk:00170
-  - id: lO0H9Cs6JEo-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Generating forehand loop power through coordinated rotation, finger use, and arm-driven acceleration.
-    reason: The speaker describes using fingers to generate power, rotating the racket face, accelerating rotation, and turning arm drive into a power loop.
-    confidence: 0.91
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: lO0H9Cs6JEo
-      start_ms: 672800
-      end_ms: 690000
-      url: https://www.youtube.com/watch?v=lO0H9Cs6JEo&t=672s
-      segment_ids:
-        - lO0H9Cs6JEo:00220
-        - lO0H9Cs6JEo:00221
-        - lO0H9Cs6JEo:00222
-        - lO0H9Cs6JEo:00223
-        - lO0H9Cs6JEo:00224
-        - lO0H9Cs6JEo:00225
-        - lO0H9Cs6JEo:00226
-        - lO0H9Cs6JEo:00227
-  - id: P9lUTLVEBPE-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Generating a powerful forehand loop by creating space, opening the body sideways, rotating, and stepping in with coordinated weight transfer.
-    reason: The speaker contrasts static drilling with moving play and explains that power loop execution requires opening, rotating, and stepping in while dropping the center of gravity.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: P9lUTLVEBPE
-      start_ms: 385320
-      end_ms: 412360
-      url: https://www.youtube.com/watch?v=P9lUTLVEBPE&t=385s
-      segment_ids:
-        - P9lUTLVEBPE:00132
-        - P9lUTLVEBPE:00137
-        - P9lUTLVEBPE:00138
-        - P9lUTLVEBPE:00139
-        - P9lUTLVEBPE:00140
-        - P9lUTLVEBPE:00141
-  - id: pE5PLAr9iaA-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Producing loop speed primarily through body rotation and racket-head acceleration rather than arm effort alone.
-    reason: The speaker explicitly says loop power comes from the racket head, not the arm, and that rotation drives power forward.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: pE5PLAr9iaA
-      start_ms: 320240
-      end_ms: 329000
-      url: https://www.youtube.com/watch?v=pE5PLAr9iaA&t=320s
-      segment_ids:
-        - pE5PLAr9iaA:00104
-        - pE5PLAr9iaA:00105
-        - pE5PLAr9iaA:00106
-        - pE5PLAr9iaA:00107
-  - id: UCyUdarqdJc-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Forehand power depends on moving the whole arm and body forward through the ball rather than only lifting the elbow or swinging vertically.
-    reason: The transcript emphasizes forward drive, full-arm movement, and a loop that meets the ball in front rather than merely going up and down.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: UCyUdarqdJc
-      start_ms: 512320
-      end_ms: 541720
-      url: https://www.youtube.com/watch?v=UCyUdarqdJc&t=512s
-      segment_ids:
-        - UCyUdarqdJc:00200
-        - UCyUdarqdJc:00201
-        - UCyUdarqdJc:00202
-        - UCyUdarqdJc:00203
-        - UCyUdarqdJc:00204
-        - UCyUdarqdJc:00205
-        - UCyUdarqdJc:00206
-        - UCyUdarqdJc:00207
-        - UCyUdarqdJc:00208
-        - UCyUdarqdJc:00209
-        - UCyUdarqdJc:00210
-        - UCyUdarqdJc:00211
-  - id: 8pUgdfqXPj4-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Generating forehand loop power through body rotation, leg drive, and coordinated arm action rather than a small arm-only swing.
-    reason: States that involving the body makes power generation easy and that the body is the most important part.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 8pUgdfqXPj4
-      start_ms: 277480
-      end_ms: 289000
-      url: https://www.youtube.com/watch?v=8pUgdfqXPj4&t=277s
-      segment_ids:
-        - 8pUgdfqXPj4:00117
-        - 8pUgdfqXPj4:00118
-        - 8pUgdfqXPj4:00119
-        - 8pUgdfqXPj4:00120
-  - id: 8yuRXgTWOxc-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Generating power in the forehand loop through body rotation, correct stance, and coordinated forward drive rather than arm-only swinging.
-    reason: The speaker frames the discussion around producing more power with a lunge stance, body rotation, and coordinated body-driven action.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 8yuRXgTWOxc
-      start_ms: 335840
-      end_ms: 362440
-      url: https://www.youtube.com/watch?v=8yuRXgTWOxc&t=335s
-      segment_ids:
-        - 8yuRXgTWOxc:00137
-        - 8yuRXgTWOxc:00138
-        - 8yuRXgTWOxc:00139
-        - 8yuRXgTWOxc:00142
-        - 8yuRXgTWOxc:00143
-        - 8yuRXgTWOxc:00146
-        - 8yuRXgTWOxc:00147
-  - id: wyna7UXctZQ-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Generating loop power through coordinated force, solid contact, and follow-through rather than a slow or loose motion.
-    reason: The speaker emphasizes solid force, acceleration in the follow-through, and making the stroke solid rather than merely fast-looking.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: wyna7UXctZQ
-      start_ms: 407760
-      end_ms: 432680
-      url: https://www.youtube.com/watch?v=wyna7UXctZQ&t=407s
-      segment_ids:
-        - wyna7UXctZQ:00145
-        - wyna7UXctZQ:00150
-        - wyna7UXctZQ:00151
-        - wyna7UXctZQ:00152
-        - wyna7UXctZQ:00153
-  - id: J_ra9qsXCxo-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Generating power in the forehand loop by combining body movement with hand action, rather than using only the arm.
-    reason: The speaker says to adjust with the body and hand to combine power.
-    confidence: 0.89
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: J_ra9qsXCxo
-      start_ms: 540600
-      end_ms: 549560
-      url: https://www.youtube.com/watch?v=J_ra9qsXCxo&t=540s
-      segment_ids:
-        - J_ra9qsXCxo:00186
-        - J_ra9qsXCxo:00188
-  - id: ODwFaYDY1co-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Generating forehand loop power through the body rather than only the arm, including loading the legs, hips, and weight transfer.
-    reason: The speaker links power generation to body position, legs sinking, hip rotation, and weight transfer, not just the hand.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: ODwFaYDY1co
-      start_ms: 382280
-      end_ms: 392000
-      url: https://www.youtube.com/watch?v=ODwFaYDY1co&t=382s
-      segment_ids:
-        - ODwFaYDY1co:00160
-        - ODwFaYDY1co:00161
-        - ODwFaYDY1co:00162
-  - id: J_ra9qsXCxo-concept-forehand-loop-power-generation-reviewed-d9e16fd4
-    evidence_type: explanation
-    excerpt: Generating power in the forehand loop by combining body movement with hand action, rather than using only the arm.
-    reason: The speaker says to adjust with the body and hand to combine power.
-    confidence: 0.89
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: J_ra9qsXCxo
-      start_ms: 540600
-      end_ms: 549560
-      url: https://www.youtube.com/watch?v=J_ra9qsXCxo&t=540s
-      segment_ids:
-        - J_ra9qsXCxo:00186
-        - J_ra9qsXCxo:00188
-  - id: ODwFaYDY1co-concept-forehand-loop-power-generation-reviewed-94d95228
-    evidence_type: explanation
-    excerpt: Generating forehand loop power through the body rather than only the arm, including loading the legs, hips, and weight transfer.
-    reason: The speaker links power generation to body position, legs sinking, hip rotation, and weight transfer, not just the hand.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: ODwFaYDY1co
-      start_ms: 382280
-      end_ms: 392000
-      url: https://www.youtube.com/watch?v=ODwFaYDY1co&t=382s
-      segment_ids:
-        - ODwFaYDY1co:00160
-        - ODwFaYDY1co:00161
-        - ODwFaYDY1co:00162
-  - id: PDFXww03DHM-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Generate loop power by carrying the ball forward with coordinated arm action and a supported arc, rather than exploding at the moment of contact.
-    reason: The speaker recommends pushing the upper arm and forearm forward and supporting the ball through the arc, which is a coordinated power-generation pattern.
-    confidence: 0.89
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: PDFXww03DHM
-      start_ms: 386480
-      end_ms: 407120
-      url: https://www.youtube.com/watch?v=PDFXww03DHM&t=386s
-      segment_ids:
-        - PDFXww03DHM:00120
-        - PDFXww03DHM:00121
-        - PDFXww03DHM:00122
-        - PDFXww03DHM:00123
-        - PDFXww03DHM:00124
-        - PDFXww03DHM:00125
-        - PDFXww03DHM:00126
-  - id: wpIxIvnuOac-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Generating a forehand loop with coordinated forward pressure, body action, and racket-head acceleration rather than arm-only power.
-    reason: The speaker says the racket head should drive the arm acceleration, the shoulder should not lead, and power should not come from the arm alone.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: wpIxIvnuOac
-      start_ms: 203960
-      end_ms: 227560
-      url: https://www.youtube.com/watch?v=wpIxIvnuOac&t=203s
-      segment_ids:
-        - wpIxIvnuOac:00068
-        - wpIxIvnuOac:00069
-        - wpIxIvnuOac:00070
-        - wpIxIvnuOac:00071
-        - wpIxIvnuOac:00072
-        - wpIxIvnuOac:00073
-        - wpIxIvnuOac:00074
-        - wpIxIvnuOac:00075
-  - id: sosNHzR8A9U-concept-forehand-loop-power-generation-reviewed
-    evidence_type: demonstration
-    excerpt: Generating power in the forehand loop through fixed racket angle, body rotation, leg drive, and coordinated follow-through.
-    reason: The speaker ties power to leg drive, body rotation, and follow-through after contact.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: sosNHzR8A9U
-      start_ms: 61333
-      end_ms: 69000
-      url: https://www.youtube.com/watch?v=sosNHzR8A9U&t=61s
-      segment_ids:
-        - sosNHzR8A9U:00013
-        - sosNHzR8A9U:00014
-  - id: nENxAvinCe8-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Power in the forehand loop comes from coordinated body use, a proper hand shape, and controlled acceleration rather than a rushed backswing.
-    reason: The speaker links power to the V of the hand pointing forward and to controlled acceleration rather than snatching the racket back for power.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: nENxAvinCe8
-      start_ms: 278633
-      end_ms: 292666
-      url: https://www.youtube.com/watch?v=nENxAvinCe8&t=278s
-      segment_ids:
-        - nENxAvinCe8:00059
-        - nENxAvinCe8:00060
-        - nENxAvinCe8:00062
-  - id: UgroLfi1YGY-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Generating power in forehand strokes through coordinated forward and downward force rather than isolated arm motion.
-    reason: Describes the forearm direction as crucial and specifies forward first, then upward force direction.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: UgroLfi1YGY
-      start_ms: 230800
-      end_ms: 257800
-      url: https://www.youtube.com/watch?v=UgroLfi1YGY&t=230s
-      segment_ids:
-        - UgroLfi1YGY:00083
-        - UgroLfi1YGY:00084
-        - UgroLfi1YGY:00085
-        - UgroLfi1YGY:00086
-        - UgroLfi1YGY:00087
-        - UgroLfi1YGY:00088
-        - UgroLfi1YGY:00089
-        - UgroLfi1YGY:00090
-        - UgroLfi1YGY:00091
-  - id: 2wrSMd7QNww-concept-forehand-loop-power-generation-reviewed
-    evidence_type: definition
-    excerpt: Generating loop power by separating the stroke into a friction/braking phase and a later forward-drive acceleration phase.
-    reason: The speaker explicitly names the stroke as using two phases of acceleration and describes the transition from friction to forward force.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 2wrSMd7QNww
-      start_ms: 210366
-      end_ms: 227333
-      url: https://www.youtube.com/watch?v=2wrSMd7QNww&t=210s
-      segment_ids:
-        - 2wrSMd7QNww:00060
-        - 2wrSMd7QNww:00061
-        - 2wrSMd7QNww:00062
-        - 2wrSMd7QNww:00063
-        - 2wrSMd7QNww:00064
-  - id: DaHEb394UtA-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Increase power after the brushing foundation by adding more arm extension while keeping the spinny contact intact.
-    reason: The speaker contrasts a small, fast, spinny stroke with a bigger, slower one, and says that after brushing well you can add forearm and upper arm extension to make the ball powerful and spinny.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: DaHEb394UtA
-      start_ms: 528720
-      end_ms: 537000
-      url: https://www.youtube.com/watch?v=DaHEb394UtA&t=528s
-      segment_ids:
-        - DaHEb394UtA:00168
-        - DaHEb394UtA:00169
-        - DaHEb394UtA:00170
-        - DaHEb394UtA:00171
-  - id: EIlmaLc-eFw-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Generate loop power by first creating friction and brushing contact, then adding drive or power only after the ball is engaged and lifted.
-    reason: The speaker explicitly says to use friction first, then drive, and frames friction and power as contradictory at contact.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: EIlmaLc-eFw
-      start_ms: 239840
-      end_ms: 256280
-      url: https://www.youtube.com/watch?v=EIlmaLc-eFw&t=239s
-      segment_ids:
-        - EIlmaLc-eFw:00086
-        - EIlmaLc-eFw:00087
-        - EIlmaLc-eFw:00089
-        - EIlmaLc-eFw:00090
-        - EIlmaLc-eFw:00091
-  - id: i-n17lWXlSo-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Generate loop power from the body and hip drive, then transfer it through a whip-like separation of upper arm and forearm.
-    reason: The speaker says acceleration starts in the forward swing, the body and hip drive the arm, and the arm should feel like a whip with upper arm and forearm separated.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: i-n17lWXlSo
-      start_ms: 649360
-      end_ms: 676560
-      url: https://www.youtube.com/watch?v=i-n17lWXlSo&t=649s
-      segment_ids:
-        - i-n17lWXlSo:00207
-        - i-n17lWXlSo:00208
-        - i-n17lWXlSo:00209
-        - i-n17lWXlSo:00210
-        - i-n17lWXlSo:00211
-        - i-n17lWXlSo:00212
-        - i-n17lWXlSo:00213
-        - i-n17lWXlSo:00214
-        - i-n17lWXlSo:00215
-        - i-n17lWXlSo:00216
-  - id: vFmEXvFFGC0-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Generating loop power by coordinating the body, legs, hips, and arm so acceleration happens late and through the ball rather than from a large backswing or lifted arm action.
-    reason: The speaker contrasts big backswing with compact, late acceleration and says body force, leg drive, hip rotation, and follow-through create power.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: vFmEXvFFGC0
-      start_ms: 87920
-      end_ms: 107120
-      url: https://www.youtube.com/watch?v=vFmEXvFFGC0&t=87s
-      segment_ids:
-        - vFmEXvFFGC0:00035
-        - vFmEXvFFGC0:00036
-        - vFmEXvFFGC0:00037
-        - vFmEXvFFGC0:00039
-        - vFmEXvFFGC0:00040
-        - vFmEXvFFGC0:00041
-  - id: PNhGSy_Dbg0-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Using opening, body rotation, arm release, and leg drive to create power in the forehand loop instead of relying on a short slap-like hit.
-    reason: The speaker repeatedly explains that forehand power comes from opening up, body rotation, leg drive, and arm acceleration.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: PNhGSy_Dbg0
-      start_ms: 379266
-      end_ms: 400666
-      url: https://www.youtube.com/watch?v=PNhGSy_Dbg0&t=379s
-      segment_ids:
-        - PNhGSy_Dbg0:00117
-        - PNhGSy_Dbg0:00120
-        - PNhGSy_Dbg0:00121
-        - PNhGSy_Dbg0:00122
-  - id: dJJtJQvuwOY-concept-forehand-loop-power-generation-reviewed
-    evidence_type: definition
-    excerpt: Generate powerful forehand loop speed through body engagement, acceleration, and follow-through rather than arm force alone.
-    reason: The speaker discusses where loop power originates and emphasizes speed and acceleration.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: dJJtJQvuwOY
-      start_ms: 382100
-      end_ms: 411066
-      url: https://www.youtube.com/watch?v=dJJtJQvuwOY&t=382s
-      segment_ids:
-        - dJJtJQvuwOY:00054
-        - dJJtJQvuwOY:00056
-  - id: 6Lw_HobLgSY-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Generating forehand loop power by balancing friction with impact, using quick arm retraction, and finishing with forward force.
-    reason: The speaker explains that a forehand loop needs a balance of friction and impact, quick retraction, forward arm motion, and a follow-up pressing motion to keep spin and curve.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 6Lw_HobLgSY
-      start_ms: 343166
-      end_ms: 369600
-      url: https://www.youtube.com/watch?v=6Lw_HobLgSY&t=343s
-      segment_ids:
-        - 6Lw_HobLgSY:00143
-        - 6Lw_HobLgSY:00144
-        - 6Lw_HobLgSY:00145
-        - 6Lw_HobLgSY:00149
-        - 6Lw_HobLgSY:00151
-  - id: FweaNVt8gA0-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Generating power in the forehand loop through coordinated forward motion, body drive, and release rather than pure arm force.
-    reason: The speaker links forward touch, release, and the generation of power, and later contrasts this with exaggerated big-arm looping and slow shots.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: FweaNVt8gA0
-      start_ms: 461466
-      end_ms: 471566
-      url: https://www.youtube.com/watch?v=FweaNVt8gA0&t=461s
-      segment_ids:
-        - FweaNVt8gA0:00112
-        - FweaNVt8gA0:00113
-        - FweaNVt8gA0:00114
-  - id: KG90HOykXCs-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Generating forehand loop power through coordinated body drive, late acceleration, and controlled follow-through rather than relying on the backswing alone.
-    reason: Power comes from compact backswing, body use, and phased acceleration through contact.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: KG90HOykXCs
-      start_ms: 89900
-      end_ms: 114133
-      url: https://www.youtube.com/watch?v=KG90HOykXCs&t=89s
-      segment_ids:
-        - KG90HOykXCs:00019
-        - KG90HOykXCs:00024
-  - id: qFwE0n-bspQ-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Generate forehand loop power primarily through body turn and rotation rather than arm-only effort.
-    reason: The speaker says simply turning the body away and back is enough power and that body turn leads the arm swing.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: qFwE0n-bspQ
-      start_ms: 250166
-      end_ms: 261500
-      url: https://www.youtube.com/watch?v=qFwE0n-bspQ&t=250s
-      segment_ids:
-        - qFwE0n-bspQ:00058
-        - qFwE0n-bspQ:00060
-  - id: 8143qxSjk5A-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Add the power phase of the forehand loop after initiating spin so the shot has both spin and forward drive.
-    reason: 'The speaker explains a two-step loop: first brush with fingers, then drive through with the arm to add power and forward drive.'
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 8143qxSjk5A
-      start_ms: 299033
-      end_ms: 328233
-      url: https://www.youtube.com/watch?v=8143qxSjk5A&t=299s
-      segment_ids:
-        - 8143qxSjk5A:00066
-        - 8143qxSjk5A:00067
-        - 8143qxSjk5A:00068
-        - 8143qxSjk5A:00069
-        - 8143qxSjk5A:00070
-        - 8143qxSjk5A:00071
-  - id: 87-UYdrPEEc-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Forehand loop power comes from coordinated body and arm sequencing, with a brief delay that creates explosive acceleration at contact.
-    reason: Explains that the body initiates the movement first and the arm follows, with hips and legs starting before the arm.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 87-UYdrPEEc
-      start_ms: 174033
-      end_ms: 196633
-      url: https://www.youtube.com/watch?v=87-UYdrPEEc&t=174s
-      segment_ids:
-        - 87-UYdrPEEc:00040
-        - 87-UYdrPEEc:00041
-        - 87-UYdrPEEc:00044
-  - id: nukEclWHWn4-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: How a forehand loop generates power through a slow-to-fast rhythm, relaxed acceleration, and forward drive rather than a hard backswing or pure upward lift.
-    reason: The speaker defines power loop structure as brushing first and then adding power, with a slow relaxed backswing and explosive second speed.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: nukEclWHWn4
-      start_ms: 304666
-      end_ms: 333633
-      url: https://www.youtube.com/watch?v=nukEclWHWn4&t=304s
-      segment_ids:
-        - nukEclWHWn4:00064
-        - nukEclWHWn4:00065
-        - nukEclWHWn4:00067
-        - nukEclWHWn4:00068
-        - nukEclWHWn4:00069
-  - id: q70a9LCojco-concept-intercept-fast-power-loop-reviewed
-    evidence_type: definition
-    excerpt: On a fast power loop, the defender should react like an interception system and make the only goal to meet the ball rather than take a full stroke.
-    reason: Directly states the core defensive objective against a fast power loop is interception, not a full stroke.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: q70a9LCojco
-      start_ms: 0
-      end_ms: 9900
-      url: https://www.youtube.com/watch?v=q70a9LCojco&t=0s
-      segment_ids:
-        - q70a9LCojco:00000
-        - q70a9LCojco:00001
-  - id: HHyaeCbQ_ec-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Forehand loop power comes from solid impact, forward drive, and a final explosive burst after the brushing phase.
-    reason: The speaker explains that weak loops lack solid impact, then defines the two-step concept as brush first, then drive, with a final burst of power.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: HHyaeCbQ_ec
-      start_ms: 509800
-      end_ms: 536000
-      url: https://www.youtube.com/watch?v=HHyaeCbQ_ec&t=509s
-      segment_ids:
-        - HHyaeCbQ_ec:00121
-        - HHyaeCbQ_ec:00122
-        - HHyaeCbQ_ec:00123
-        - HHyaeCbQ_ec:00124
-        - HHyaeCbQ_ec:00125
-  - id: 3EtitCzSYqY-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Generating loop power through coordinated legs, hips, waist, shoulders, and arm release rather than arm-only swinging.
-    reason: The speaker repeatedly states that looping requires coordinated body power from the legs, hips, waist, and shoulders, with only partial arm strength.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 3EtitCzSYqY
-      start_ms: 391133
-      end_ms: 410900
-      url: https://www.youtube.com/watch?v=3EtitCzSYqY&t=391s
-      segment_ids:
-        - 3EtitCzSYqY:00082
-        - 3EtitCzSYqY:00084
-        - 3EtitCzSYqY:00085
-  - id: pFKneacfGiY-concept-forehand-loop-power-generation-reviewed
-    evidence_type: explanation
-    excerpt: Generating forehand loop power through coordinated body rotation, rather than arm-only swinging.
-    reason: The speaker explicitly frames the video around a powerful forehand and says the power comes from body-led swing plus core and hip rotation.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: pFKneacfGiY
-      start_ms: 9066
-      end_ms: 21766
-      url: https://www.youtube.com/watch?v=pFKneacfGiY&t=9s
-      segment_ids:
-        - pFKneacfGiY:00001
-        - pFKneacfGiY:00002
-  - id: 2wrSMd7QNww-concept-forehand-loop-power-generation-codex-reviewed
-    evidence_type: definition
-    excerpt: This ball is high quality because I use two phases of acceleration. The first phase is acceleration through friction. After friction, the force goes from back to forward. Yet I can still generate power on the loop.
-    reason: These contiguous transcript segments explicitly describe two acceleration phases, the transition from friction to forward force, and generating power on the loop.
-    confidence: 0.99
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 2wrSMd7QNww
-      start_ms: 210366
-      end_ms: 235133
-      url: https://www.youtube.com/watch?v=2wrSMd7QNww&t=210s
-      segment_ids:
-        - 2wrSMd7QNww:00060
-        - 2wrSMd7QNww:00061
-        - 2wrSMd7QNww:00062
-        - 2wrSMd7QNww:00063
-        - 2wrSMd7QNww:00064
-        - 2wrSMd7QNww:00065
-        - 2wrSMd7QNww:00066
-  - id: CpcAha7BZGA-concept-forehand-loop-power-generation-codex-reviewed
-    evidence_type: explanation
-    excerpt: For looping, use a relaxed backswing that follows the ball’s rhythm, then accelerate through the swing to generate power, with upper-arm and forearm separation contributing to power.
-    reason: This contiguous 15-second span directly explains loop power generation through relaxation, timing, acceleration, and arm-forearm sequencing. It supports the supplied durable concept, but does not explicitly establish forehand or advanced level.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: CpcAha7BZGA
-      start_ms: 491920
-      end_ms: 521280
-      url: https://www.youtube.com/watch?v=CpcAha7BZGA&t=491s
-      segment_ids:
-        - CpcAha7BZGA:00159
-        - CpcAha7BZGA:00160
-        - CpcAha7BZGA:00161
-        - CpcAha7BZGA:00162
-        - CpcAha7BZGA:00163
-        - CpcAha7BZGA:00164
-        - CpcAha7BZGA:00165
-        - CpcAha7BZGA:00166
-  - id: D9ZAPb_65Hk-concept-forehand-loop-power-generation-codex-reviewed
-    evidence_type: explanation
-    excerpt: Rally quality does not come from the arm; it comes from the racket head. The same applies to the forehand loop, though it is less visible after the brush.
-    reason: These contiguous segments directly state that power comes from racket-head motion rather than arm force and explicitly apply the principle to the forehand loop.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: D9ZAPb_65Hk
-      start_ms: 489760
-      end_ms: 512800
-      url: https://www.youtube.com/watch?v=D9ZAPb_65Hk&t=489s
-      segment_ids:
-        - D9ZAPb_65Hk:00161
-        - D9ZAPb_65Hk:00162
-        - D9ZAPb_65Hk:00163
-        - D9ZAPb_65Hk:00164
-        - D9ZAPb_65Hk:00165
-        - D9ZAPb_65Hk:00166
-        - D9ZAPb_65Hk:00167
-        - D9ZAPb_65Hk:00168
-        - D9ZAPb_65Hk:00169
-        - D9ZAPb_65Hk:00170
-  - id: hoLSxXKl2L0-concept-body-led-backswing-for-loop-codex-reviewed
-    evidence_type: explanation
-    excerpt: For a loop, open the arm and let body rotation lead the hand into the backswing while keeping the hand in front, then accelerate into the ball.
-    reason: This contiguous 14-second span directly explains the body-led loop backswing and the resulting acceleration. The proposed topic is already covered by the existing concept through its body-led loop alias and backswing power-generation definition.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: hoLSxXKl2L0
-      start_ms: 202433
-      end_ms: 223366
-      url: https://www.youtube.com/watch?v=hoLSxXKl2L0&t=202s
-      segment_ids:
-        - hoLSxXKl2L0:00032
-        - hoLSxXKl2L0:00033
-        - hoLSxXKl2L0:00034
+- id: power-body-led-backswing-global
+  evidence_type: demonstration
+  excerpt: Use body rotation to bring the arm back rather than deliberately
+    pulling the arm backward.
+  reason: Let the body lead the arm into the backswing.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  visual_source: {video_id: qLT0MvwitZc, start_ms: 57000, end_ms: 69000, url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=57s",
+    selection_method: nearby_visual_inference, note: Proposed body-led backswing
+      window; complete footage inspection is pending.}
+  review_status: approved
+  source:
+    video_id: "qLT0MvwitZc"
+    start_ms: 57700
+    end_ms: 64733
+    url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=57s"
+    segment_ids:
+    - "qLT0MvwitZc:00013"
+    - "qLT0MvwitZc:00014"
+- id: power-drive-snap-global
+  evidence_type: demonstration
+  excerpt: Drop down, drive forward into the ball, and quickly brake the arm.
+    Forward drive remains essential when looping; the upper and lower arm must
+    learn to drive, then snap.
+  reason: Drop, drive forward and brake the arm; forward drive remains essential
+    when looping.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  visual_source: {video_id: qLT0MvwitZc, start_ms: 468000, end_ms: 483000, url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=468s",
+    selection_method: nearby_visual_inference, note: Proposed drop-drive-brake
+      action window; complete footage inspection is pending.}
+  review_status: approved
+  source:
+    video_id: "qLT0MvwitZc"
+    start_ms: 470333
+    end_ms: 494700
+    url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=470s"
+    segment_ids:
+    - "qLT0MvwitZc:00109"
+    - "qLT0MvwitZc:00110"
+    - "qLT0MvwitZc:00111"
+    - "qLT0MvwitZc:00112"
+- id: power-acceleration-braking-spinmaster
+  evidence_type: explanation
+  excerpt: Combine acceleration with forceful braking.
+  reason: Combine acceleration with forceful braking.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  visual_source: {video_id: V__nqiNHeKE, start_ms: 340000, end_ms: 354000, url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=340s",
+    selection_method: nearby_visual_inference, note: Proposed acceleration and
+      braking window; complete footage inspection is pending.}
+  review_status: approved
+  source:
+    video_id: "V__nqiNHeKE"
+    start_ms: 343200
+    end_ms: 351760
+    url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=343s"
+    segment_ids:
+    - "V__nqiNHeKE:00130"
+    - "V__nqiNHeKE:00131"
+- id: i68OG8UzMyQ-cand-loop-own-power-vs-drive-borrowed-power-1
+  evidence_type: definition
+  excerpt: The speaker contrasts driving, which borrows the opponent’s power,
+    with looping, which generates one’s own power and actively creates combined
+    force.
+  reason: Driving borrows incoming power, while looping actively generates
+    combined force in this comparison.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "i68OG8UzMyQ"
+    start_ms: 85920
+    end_ms: 101720
+    url: "https://www.youtube.com/watch?v=i68OG8UzMyQ&t=85s"
+    segment_ids:
+    - "i68OG8UzMyQ:00027"
+    - "i68OG8UzMyQ:00028"
+    - "i68OG8UzMyQ:00029"
+    - "i68OG8UzMyQ:00030"
+    - "i68OG8UzMyQ:00031"
+    - "i68OG8UzMyQ:00032"
+- id: i68OG8UzMyQ-cand-loop-own-power-vs-drive-borrowed-power-2
+  evidence_type: explanation
+  excerpt: Taking the ball slightly early on the forehand side is said to
+    prevent the waist and hips from generating power properly. Wait for the
+    rhythm to allow waist rotation, hip drive and finishing the arm to combine
+    forces.
+  reason: Wait for the rhythm so the waist, hips and arm can combine forces.
+  confidence: 0.87
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "i68OG8UzMyQ"
+    start_ms: 63360
+    end_ms: 87760
+    url: "https://www.youtube.com/watch?v=i68OG8UzMyQ&t=63s"
+    segment_ids:
+    - "i68OG8UzMyQ:00019"
+    - "i68OG8UzMyQ:00020"
+    - "i68OG8UzMyQ:00021"
+    - "i68OG8UzMyQ:00022"
+    - "i68OG8UzMyQ:00023"
+    - "i68OG8UzMyQ:00024"
+    - "i68OG8UzMyQ:00025"
+    - "i68OG8UzMyQ:00026"
+- id: i68OG8UzMyQ-cand-loop-own-power-vs-drive-borrowed-power-3
+  evidence_type: explanation
+  excerpt: Actively move forward to meet the ball.
+  reason: Move forward actively to meet the ball.
+  confidence: 0.87
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "i68OG8UzMyQ"
+    start_ms: 113280
+    end_ms: 118640
+    url: "https://www.youtube.com/watch?v=i68OG8UzMyQ&t=113s"
+    segment_ids:
+    - "i68OG8UzMyQ:00036"
+    - "i68OG8UzMyQ:00037"
+- id: m93pWt9MIZE-candidate-power-loop-1
+  evidence_type: definition
+  excerpt: After a no-spin serve is returned half-long and slightly high, the
+    speaker warns against lifting upward and says a power loop can be used
+    wherever the opponent pushes. Its stated advantages are high speed and
+    concentrated power.
+  reason: Use the power-loop option for this half-long, slightly-high return
+    after a no-spin serve.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "m93pWt9MIZE"
+    start_ms: 130399
+    end_ms: 158319
+    url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=130s"
+    segment_ids:
+    - "m93pWt9MIZE:00052"
+    - "m93pWt9MIZE:00053"
+    - "m93pWt9MIZE:00054"
+    - "m93pWt9MIZE:00055"
+    - "m93pWt9MIZE:00056"
+    - "m93pWt9MIZE:00057"
+    - "m93pWt9MIZE:00058"
+    - "m93pWt9MIZE:00059"
+    - "m93pWt9MIZE:00060"
+    - "m93pWt9MIZE:00061"
+- id: m93pWt9MIZE-candidate-power-loop-2
+  evidence_type: definition
+  excerpt: With the ball high, the hand naturally comes up for a stroke that is
+    mainly impact with brushing as a supplement. The speaker adds that a
+    half-high incoming ball allows more impact.
+  reason: A high or half-high ball allows more impact in this example.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "m93pWt9MIZE"
+    start_ms: 155760
+    end_ms: 175840
+    url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=155s"
+    segment_ids:
+    - "m93pWt9MIZE:00062"
+    - "m93pWt9MIZE:00063"
+    - "m93pWt9MIZE:00064"
+    - "m93pWt9MIZE:00065"
+    - "m93pWt9MIZE:00066"
+    - "m93pWt9MIZE:00067"
+    - "m93pWt9MIZE:00068"
+- id: m93pWt9MIZE-candidate-power-loop-3
+  evidence_type: example
+  excerpt: The speaker describes going for a full-power drive in the example,
+    then says such perfect opportunities are rare in real matches.
+  reason: Perfect full-power opportunities are less common in real matches than
+    in this example.
+  confidence: 0.82
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "m93pWt9MIZE"
+    start_ms: 57039
+    end_ms: 65960
+    url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=57s"
+    segment_ids:
+    - "m93pWt9MIZE:00022"
+    - "m93pWt9MIZE:00023"
+    - "m93pWt9MIZE:00024"
+- id: m93pWt9MIZE-candidate-impact-brushing-balance-1
+  evidence_type: explanation
+  excerpt: Players struggle to balance impact and brushing and choose a stroke
+    for each ball. The speaker says the overall framework is similar, while one
+    stroke is more upward, another more forward, and the amount of brushing
+    differs.
+  reason: Choose direction and brushing amount for the incoming ball.
+  confidence: 0.92
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "m93pWt9MIZE"
+    start_ms: 174000
+    end_ms: 193599
+    url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=174s"
+    segment_ids:
+    - "m93pWt9MIZE:00069"
+    - "m93pWt9MIZE:00070"
+    - "m93pWt9MIZE:00071"
+    - "m93pWt9MIZE:00072"
+    - "m93pWt9MIZE:00073"
+    - "m93pWt9MIZE:00074"
+    - "m93pWt9MIZE:00075"
+    - "m93pWt9MIZE:00076"
+- id: m93pWt9MIZE-candidate-impact-brushing-balance-2
+  evidence_type: correction
+  excerpt: Choosing the right mix of forward impact and brushing spin in a loop
+    according to incoming spin, height, and match situation.
+  reason: Speaker corrects overhitting against heavy spin by saying brushing
+    must dominate.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: m93pWt9MIZE
+    start_ms: 248239
+    end_ms: 262199
+    url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=248s"
+    segment_ids:
+    - "m93pWt9MIZE:00098"
+    - "m93pWt9MIZE:00102"
+- id: m93pWt9MIZE-candidate-impact-brushing-balance-3
+  evidence_type: example
+  excerpt: Choosing the right mix of forward impact and brushing spin in a loop
+    according to incoming spin, height, and match situation.
+  reason: Speaker shows how the balance changes for no-spin serves and critical
+    points.
+  confidence: 0.88
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: m93pWt9MIZE
+    start_ms: 327280
+    end_ms: 352400
+    url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=327s"
+    segment_ids:
+    - "m93pWt9MIZE:00125"
+    - "m93pWt9MIZE:00133"
+- id: V2YGbh829eU-cand-spin-before-power-principle-1
+  evidence_type: definition
+  excerpt: For amateurs, the speaker prioritizes spin and hesitates to teach
+    power generation without a foundation, while saying players of any skill
+    level can learn to brush for spin.
+  reason: The speaker prioritizes spin for amateurs, hesitates to teach power
+    without a foundation, and says anyone can learn brushing.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "V2YGbh829eU"
+    start_ms: 8766
+    end_ms: 27866
+    url: "https://www.youtube.com/watch?v=V2YGbh829eU&t=8s"
+    segment_ids:
+    - "V2YGbh829eU:00001"
+    - "V2YGbh829eU:00002"
+    - "V2YGbh829eU:00003"
+    - "V2YGbh829eU:00004"
+    - "V2YGbh829eU:00005"
+- id: V__nqiNHeKE-cand-heavy-topspin-loop-1
+  evidence_type: definition
+  excerpt: The speaker introduces a heavy topspin loop.
+  reason: The stroke introduced here is a heavy topspin loop.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "V__nqiNHeKE"
+    start_ms: 38640
+    end_ms: 44360
+    url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=38s"
+    segment_ids:
+    - "V__nqiNHeKE:00012"
+- id: V__nqiNHeKE-cand-heavy-topspin-loop-2
+  evidence_type: definition
+  excerpt: The speaker describes a heavy topspin loop as low arc with strong
+    spin, contrasting its down-and-forward brushing direction with the high-arc
+    loop’s force direction.
+  reason: The speaker contrasts low-arc heavy topspin with the high-arc loop’s
+    direction.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "V__nqiNHeKE"
+    start_ms: 129240
+    end_ms: 145760
+    url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=129s"
+    segment_ids:
+    - "V__nqiNHeKE:00049"
+    - "V__nqiNHeKE:00050"
+    - "V__nqiNHeKE:00051"
+    - "V__nqiNHeKE:00052"
+    - "V__nqiNHeKE:00053"
+- id: V__nqiNHeKE-cand-heavy-topspin-loop-3
+  evidence_type: definition
+  excerpt: The speaker describes heavy topspin as low and spinning and calls it
+    the most practical option for amateurs.
+  reason: The speaker describes heavy topspin as low and spinning and recommends
+    it for amateurs.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "V__nqiNHeKE"
+    start_ms: 164640
+    end_ms: 174720
+    url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=164s"
+    segment_ids:
+    - "V__nqiNHeKE:00062"
+    - "V__nqiNHeKE:00063"
+    - "V__nqiNHeKE:00064"
+- id: V__nqiNHeKE-cand-heavy-topspin-loop-4
+  evidence_type: demonstration
+  excerpt: The speaker introduces a heavy topspin loop and says that looping
+    like this is enough.
+  reason: The speaker introduces the heavy topspin loop and says looping like
+    this is enough.
+  confidence: 0.83
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "V__nqiNHeKE"
+    start_ms: 38640
+    end_ms: 50120
+    url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=38s"
+    segment_ids:
+    - "V__nqiNHeKE:00012"
+    - "V__nqiNHeKE:00013"
+    - "V__nqiNHeKE:00014"
+    - "V__nqiNHeKE:00015"
+- id: V__nqiNHeKE-cand-heavy-topspin-loop-5
+  evidence_type: demonstration
+  excerpt: Press under the ball to loop, as the speaker cues.
+  reason: Press under the ball to loop.
+  confidence: 0.83
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "V__nqiNHeKE"
+    start_ms: 418200
+    end_ms: 424280
+    url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=418s"
+    segment_ids:
+    - "V__nqiNHeKE:00152"
+- id: V__nqiNHeKE-cand-high-arc-loop-1
+  evidence_type: definition
+  excerpt: The speaker identifies the low-to-high action as a high-arc loop.
+  reason: The speaker identifies the low-to-high action as a high-arc loop.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "V__nqiNHeKE"
+    start_ms: 122560
+    end_ms: 143040
+    url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=122s"
+    segment_ids:
+    - "V__nqiNHeKE:00048"
+    - "V__nqiNHeKE:00049"
+    - "V__nqiNHeKE:00050"
+    - "V__nqiNHeKE:00051"
+- id: V__nqiNHeKE-cand-high-arc-loop-2
+  evidence_type: definition
+  excerpt: For heavy backspin pushes, the speaker says high-arc loops were used
+    before but describes their slow, high ball as easy to block.
+  reason: The speaker describes the high-arc reply to heavy backspin as slow,
+    high and easy to block.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "V__nqiNHeKE"
+    start_ms: 151880
+    end_ms: 164400
+    url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=151s"
+    segment_ids:
+    - "V__nqiNHeKE:00057"
+    - "V__nqiNHeKE:00058"
+    - "V__nqiNHeKE:00059"
+    - "V__nqiNHeKE:00060"
+    - "V__nqiNHeKE:00061"
+- id: V__nqiNHeKE-cand-fast-loop-drive-1
+  evidence_type: definition
+  excerpt: The racket head goes forward first and then rotates, including on the
+    forehand. The speaker says to keep the thumb web facing forward and use the
+    fingers to rotate.
+  reason: Move the racket head forward before rotating, keeping the thumb web
+    forward and rotating with the fingers.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "V__nqiNHeKE"
+    start_ms: 47920
+    end_ms: 71880
+    url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=47s"
+    segment_ids:
+    - "V__nqiNHeKE:00016"
+    - "V__nqiNHeKE:00017"
+    - "V__nqiNHeKE:00018"
+    - "V__nqiNHeKE:00019"
+    - "V__nqiNHeKE:00020"
+    - "V__nqiNHeKE:00021"
+    - "V__nqiNHeKE:00022"
+    - "V__nqiNHeKE:00023"
+    - "V__nqiNHeKE:00024"
+- id: V__nqiNHeKE-cand-fast-loop-drive-2
+  evidence_type: definition
+  excerpt: The speaker names the stroke fast loop drive.
+  reason: The stroke named here is fast loop drive.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "V__nqiNHeKE"
+    start_ms: 118240
+    end_ms: 122080
+    url: "https://www.youtube.com/watch?v=V__nqiNHeKE&t=118s"
+    segment_ids:
+    - "V__nqiNHeKE:00047"
+- id: f7uZPRPIwpU-concept-forehand-loop-power-generation-1
+  evidence_type: definition
+  excerpt: 'The speaker lists three power-loop requirements: the ball at its peak,
+    pressing and closing while driving forward to meet it, and a compact body. Twisting
+    instead of driving forward is said to disperse power; keep the arc flatter rather
+    than going upward.'
+  reason: Contact at the peak, press and close, drive forward and keep the body
+    compact for this power-loop example.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "f7uZPRPIwpU"
+    start_ms: 325919
+    end_ms: 355600
+    url: "https://www.youtube.com/watch?v=f7uZPRPIwpU&t=325s"
+    segment_ids:
+    - "f7uZPRPIwpU:00123"
+    - "f7uZPRPIwpU:00124"
+    - "f7uZPRPIwpU:00125"
+    - "f7uZPRPIwpU:00126"
+    - "f7uZPRPIwpU:00127"
+    - "f7uZPRPIwpU:00128"
+    - "f7uZPRPIwpU:00129"
+    - "f7uZPRPIwpU:00130"
+    - "f7uZPRPIwpU:00131"
+    - "f7uZPRPIwpU:00132"
+    - "f7uZPRPIwpU:00133"
+    - "f7uZPRPIwpU:00134"
+- id: ti_YUZdHu3o-brush-then-body-power
+  evidence_type: explanation
+  excerpt: After establishing brushing, extend the arm forward and drive the hip
+    forward. Do not use body power too early; drive the body and hip at the
+    instant of gripping the ball with friction.
+  reason: Establish brushing before adding forward body and hip drive.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "ti_YUZdHu3o"
+    start_ms: 308919
+    end_ms: 333280
+    url: "https://www.youtube.com/watch?v=ti_YUZdHu3o&t=308s"
+    segment_ids:
+    - "ti_YUZdHu3o:00098"
+    - "ti_YUZdHu3o:00099"
+    - "ti_YUZdHu3o:00100"
+    - "ti_YUZdHu3o:00101"
+    - "ti_YUZdHu3o:00102"
+    - "ti_YUZdHu3o:00103"
+    - "ti_YUZdHu3o:00104"
+    - "ti_YUZdHu3o:00105"
+    - "ti_YUZdHu3o:00106"
+    - "ti_YUZdHu3o:00107"
+- id: 1fHWnt8IlbI-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Generating loop power primarily with the forearm and body control
+    rather than a large backswing or overusing the upper arm.
+  reason: The speaker states the forearm is the primary driver and that
+    excessive upper-arm use causes loss of control and balls flying long.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 1fHWnt8IlbI
+    start_ms: 153800
+    end_ms: 180519
+    url: https://www.youtube.com/watch?v=1fHWnt8IlbI&t=153s
+    segment_ids:
+    - 1fHWnt8IlbI:00060
+    - 1fHWnt8IlbI:00061
+    - 1fHWnt8IlbI:00062
+    - 1fHWnt8IlbI:00063
+    - 1fHWnt8IlbI:00064
+    - 1fHWnt8IlbI:00065
+    - 1fHWnt8IlbI:00066
+    - 1fHWnt8IlbI:00067
+    - 1fHWnt8IlbI:00068
+    - 1fHWnt8IlbI:00069
+    - 1fHWnt8IlbI:00070
+- id: D9ZAPb_65Hk-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Generating loop power primarily through the racket head and whip-like
+    release rather than arm force.
+  reason: The speaker says rally quality does not come from the arm but from the
+    racket head, including for forehand loop.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: D9ZAPb_65Hk
+    start_ms: 489760
+    end_ms: 512800
+    url: https://www.youtube.com/watch?v=D9ZAPb_65Hk&t=489s
+    segment_ids:
+    - D9ZAPb_65Hk:00161
+    - D9ZAPb_65Hk:00162
+    - D9ZAPb_65Hk:00163
+    - D9ZAPb_65Hk:00164
+    - D9ZAPb_65Hk:00165
+    - D9ZAPb_65Hk:00166
+    - D9ZAPb_65Hk:00167
+    - D9ZAPb_65Hk:00168
+    - D9ZAPb_65Hk:00169
+    - D9ZAPb_65Hk:00170
+- id: lO0H9Cs6JEo-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Generating forehand loop power through coordinated rotation, finger
+    use, and arm-driven acceleration.
+  reason: The speaker describes using fingers to generate power, rotating the
+    racket face, accelerating rotation, and turning arm drive into a power loop.
+  confidence: 0.91
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: lO0H9Cs6JEo
+    start_ms: 672800
+    end_ms: 690000
+    url: https://www.youtube.com/watch?v=lO0H9Cs6JEo&t=672s
+    segment_ids:
+    - lO0H9Cs6JEo:00220
+    - lO0H9Cs6JEo:00221
+    - lO0H9Cs6JEo:00222
+    - lO0H9Cs6JEo:00223
+    - lO0H9Cs6JEo:00224
+    - lO0H9Cs6JEo:00225
+    - lO0H9Cs6JEo:00226
+    - lO0H9Cs6JEo:00227
+- id: P9lUTLVEBPE-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Generating a powerful forehand loop by creating space, opening the
+    body sideways, rotating, and stepping in with coordinated weight transfer.
+  reason: The speaker contrasts static drilling with moving play and explains
+    that power loop execution requires opening, rotating, and stepping in while
+    dropping the center of gravity.
+  confidence: 0.93
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: P9lUTLVEBPE
+    start_ms: 385320
+    end_ms: 412360
+    url: https://www.youtube.com/watch?v=P9lUTLVEBPE&t=385s
+    segment_ids:
+    - P9lUTLVEBPE:00132
+    - P9lUTLVEBPE:00137
+    - P9lUTLVEBPE:00138
+    - P9lUTLVEBPE:00139
+    - P9lUTLVEBPE:00140
+    - P9lUTLVEBPE:00141
+- id: pE5PLAr9iaA-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Producing loop speed primarily through body rotation and racket-head
+    acceleration rather than arm effort alone.
+  reason: The speaker explicitly says loop power comes from the racket head, not
+    the arm, and that rotation drives power forward.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: pE5PLAr9iaA
+    start_ms: 320240
+    end_ms: 329000
+    url: https://www.youtube.com/watch?v=pE5PLAr9iaA&t=320s
+    segment_ids:
+    - pE5PLAr9iaA:00104
+    - pE5PLAr9iaA:00105
+    - pE5PLAr9iaA:00106
+    - pE5PLAr9iaA:00107
+- id: UCyUdarqdJc-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Forehand power depends on moving the whole arm and body forward
+    through the ball rather than only lifting the elbow or swinging vertically.
+  reason: The transcript emphasizes forward drive, full-arm movement, and a loop
+    that meets the ball in front rather than merely going up and down.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: UCyUdarqdJc
+    start_ms: 512320
+    end_ms: 541720
+    url: https://www.youtube.com/watch?v=UCyUdarqdJc&t=512s
+    segment_ids:
+    - UCyUdarqdJc:00200
+    - UCyUdarqdJc:00201
+    - UCyUdarqdJc:00202
+    - UCyUdarqdJc:00203
+    - UCyUdarqdJc:00204
+    - UCyUdarqdJc:00205
+    - UCyUdarqdJc:00206
+    - UCyUdarqdJc:00207
+    - UCyUdarqdJc:00208
+    - UCyUdarqdJc:00209
+    - UCyUdarqdJc:00210
+    - UCyUdarqdJc:00211
+- id: 8pUgdfqXPj4-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Generating forehand loop power through body rotation, leg drive, and
+    coordinated arm action rather than a small arm-only swing.
+  reason: States that involving the body makes power generation easy and that
+    the body is the most important part.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 8pUgdfqXPj4
+    start_ms: 277480
+    end_ms: 289000
+    url: https://www.youtube.com/watch?v=8pUgdfqXPj4&t=277s
+    segment_ids:
+    - 8pUgdfqXPj4:00117
+    - 8pUgdfqXPj4:00118
+    - 8pUgdfqXPj4:00119
+    - 8pUgdfqXPj4:00120
+- id: 8yuRXgTWOxc-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Generating power in the forehand loop through body rotation, correct
+    stance, and coordinated forward drive rather than arm-only swinging.
+  reason: The speaker frames the discussion around producing more power with a
+    lunge stance, body rotation, and coordinated body-driven action.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 8yuRXgTWOxc
+    start_ms: 335840
+    end_ms: 362440
+    url: https://www.youtube.com/watch?v=8yuRXgTWOxc&t=335s
+    segment_ids:
+    - 8yuRXgTWOxc:00137
+    - 8yuRXgTWOxc:00138
+    - 8yuRXgTWOxc:00139
+    - 8yuRXgTWOxc:00142
+    - 8yuRXgTWOxc:00143
+    - 8yuRXgTWOxc:00146
+    - 8yuRXgTWOxc:00147
+- id: wyna7UXctZQ-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Generating loop power through coordinated force, solid contact, and
+    follow-through rather than a slow or loose motion.
+  reason: The speaker emphasizes solid force, acceleration in the
+    follow-through, and making the stroke solid rather than merely fast-looking.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: wyna7UXctZQ
+    start_ms: 407760
+    end_ms: 432680
+    url: https://www.youtube.com/watch?v=wyna7UXctZQ&t=407s
+    segment_ids:
+    - wyna7UXctZQ:00145
+    - wyna7UXctZQ:00150
+    - wyna7UXctZQ:00151
+    - wyna7UXctZQ:00152
+    - wyna7UXctZQ:00153
+- id: J_ra9qsXCxo-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Generating power in the forehand loop by combining body movement with
+    hand action, rather than using only the arm.
+  reason: The speaker says to adjust with the body and hand to combine power.
+  confidence: 0.89
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: J_ra9qsXCxo
+    start_ms: 540600
+    end_ms: 549560
+    url: https://www.youtube.com/watch?v=J_ra9qsXCxo&t=540s
+    segment_ids:
+    - J_ra9qsXCxo:00186
+    - J_ra9qsXCxo:00188
+- id: ODwFaYDY1co-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Generating forehand loop power through the body rather than only the
+    arm, including loading the legs, hips, and weight transfer.
+  reason: The speaker links power generation to body position, legs sinking, hip
+    rotation, and weight transfer, not just the hand.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ODwFaYDY1co
+    start_ms: 382280
+    end_ms: 392000
+    url: https://www.youtube.com/watch?v=ODwFaYDY1co&t=382s
+    segment_ids:
+    - ODwFaYDY1co:00160
+    - ODwFaYDY1co:00161
+    - ODwFaYDY1co:00162
+- id: J_ra9qsXCxo-concept-forehand-loop-power-generation-reviewed-d9e16fd4
+  evidence_type: explanation
+  excerpt: Generating power in the forehand loop by combining body movement with
+    hand action, rather than using only the arm.
+  reason: The speaker says to adjust with the body and hand to combine power.
+  confidence: 0.89
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: J_ra9qsXCxo
+    start_ms: 540600
+    end_ms: 549560
+    url: https://www.youtube.com/watch?v=J_ra9qsXCxo&t=540s
+    segment_ids:
+    - J_ra9qsXCxo:00186
+    - J_ra9qsXCxo:00188
+- id: ODwFaYDY1co-concept-forehand-loop-power-generation-reviewed-94d95228
+  evidence_type: explanation
+  excerpt: Generating forehand loop power through the body rather than only the
+    arm, including loading the legs, hips, and weight transfer.
+  reason: The speaker links power generation to body position, legs sinking, hip
+    rotation, and weight transfer, not just the hand.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ODwFaYDY1co
+    start_ms: 382280
+    end_ms: 392000
+    url: https://www.youtube.com/watch?v=ODwFaYDY1co&t=382s
+    segment_ids:
+    - ODwFaYDY1co:00160
+    - ODwFaYDY1co:00161
+    - ODwFaYDY1co:00162
+- id: PDFXww03DHM-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Generate loop power by carrying the ball forward with coordinated arm
+    action and a supported arc, rather than exploding at the moment of contact.
+  reason: The speaker recommends pushing the upper arm and forearm forward and
+    supporting the ball through the arc, which is a coordinated power-generation
+    pattern.
+  confidence: 0.89
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: PDFXww03DHM
+    start_ms: 386480
+    end_ms: 407120
+    url: https://www.youtube.com/watch?v=PDFXww03DHM&t=386s
+    segment_ids:
+    - PDFXww03DHM:00120
+    - PDFXww03DHM:00121
+    - PDFXww03DHM:00122
+    - PDFXww03DHM:00123
+    - PDFXww03DHM:00124
+    - PDFXww03DHM:00125
+    - PDFXww03DHM:00126
+- id: wpIxIvnuOac-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Generating a forehand loop with coordinated forward pressure, body
+    action, and racket-head acceleration rather than arm-only power.
+  reason: The speaker says the racket head should drive the arm acceleration,
+    the shoulder should not lead, and power should not come from the arm alone.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: wpIxIvnuOac
+    start_ms: 203960
+    end_ms: 227560
+    url: https://www.youtube.com/watch?v=wpIxIvnuOac&t=203s
+    segment_ids:
+    - wpIxIvnuOac:00068
+    - wpIxIvnuOac:00069
+    - wpIxIvnuOac:00070
+    - wpIxIvnuOac:00071
+    - wpIxIvnuOac:00072
+    - wpIxIvnuOac:00073
+    - wpIxIvnuOac:00074
+    - wpIxIvnuOac:00075
+- id: sosNHzR8A9U-concept-forehand-loop-power-generation-reviewed
+  evidence_type: demonstration
+  excerpt: Generating power in the forehand loop through fixed racket angle,
+    body rotation, leg drive, and coordinated follow-through.
+  reason: The speaker ties power to leg drive, body rotation, and follow-through
+    after contact.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: sosNHzR8A9U
+    start_ms: 61333
+    end_ms: 69000
+    url: https://www.youtube.com/watch?v=sosNHzR8A9U&t=61s
+    segment_ids:
+    - sosNHzR8A9U:00013
+    - sosNHzR8A9U:00014
+- id: nENxAvinCe8-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Power in the forehand loop comes from coordinated body use, a proper
+    hand shape, and controlled acceleration rather than a rushed backswing.
+  reason: The speaker links power to the V of the hand pointing forward and to
+    controlled acceleration rather than snatching the racket back for power.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: nENxAvinCe8
+    start_ms: 278633
+    end_ms: 292666
+    url: https://www.youtube.com/watch?v=nENxAvinCe8&t=278s
+    segment_ids:
+    - nENxAvinCe8:00059
+    - nENxAvinCe8:00060
+    - nENxAvinCe8:00062
+- id: UgroLfi1YGY-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Generating power in forehand strokes through coordinated forward and
+    downward force rather than isolated arm motion.
+  reason: Describes the forearm direction as crucial and specifies forward
+    first, then upward force direction.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: UgroLfi1YGY
+    start_ms: 230800
+    end_ms: 257800
+    url: https://www.youtube.com/watch?v=UgroLfi1YGY&t=230s
+    segment_ids:
+    - UgroLfi1YGY:00083
+    - UgroLfi1YGY:00084
+    - UgroLfi1YGY:00085
+    - UgroLfi1YGY:00086
+    - UgroLfi1YGY:00087
+    - UgroLfi1YGY:00088
+    - UgroLfi1YGY:00089
+    - UgroLfi1YGY:00090
+    - UgroLfi1YGY:00091
+- id: 2wrSMd7QNww-concept-forehand-loop-power-generation-reviewed
+  evidence_type: definition
+  excerpt: Generating loop power by separating the stroke into a
+    friction/braking phase and a later forward-drive acceleration phase.
+  reason: The speaker explicitly names the stroke as using two phases of
+    acceleration and describes the transition from friction to forward force.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 2wrSMd7QNww
+    start_ms: 210366
+    end_ms: 227333
+    url: https://www.youtube.com/watch?v=2wrSMd7QNww&t=210s
+    segment_ids:
+    - 2wrSMd7QNww:00060
+    - 2wrSMd7QNww:00061
+    - 2wrSMd7QNww:00062
+    - 2wrSMd7QNww:00063
+    - 2wrSMd7QNww:00064
+- id: DaHEb394UtA-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Increase power after the brushing foundation by adding more arm
+    extension while keeping the spinny contact intact.
+  reason: The speaker contrasts a small, fast, spinny stroke with a bigger,
+    slower one, and says that after brushing well you can add forearm and upper
+    arm extension to make the ball powerful and spinny.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: DaHEb394UtA
+    start_ms: 528720
+    end_ms: 537000
+    url: https://www.youtube.com/watch?v=DaHEb394UtA&t=528s
+    segment_ids:
+    - DaHEb394UtA:00168
+    - DaHEb394UtA:00169
+    - DaHEb394UtA:00170
+    - DaHEb394UtA:00171
+- id: EIlmaLc-eFw-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Generate loop power by first creating friction and brushing contact,
+    then adding drive or power only after the ball is engaged and lifted.
+  reason: The speaker explicitly says to use friction first, then drive, and
+    frames friction and power as contradictory at contact.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: EIlmaLc-eFw
+    start_ms: 239840
+    end_ms: 256280
+    url: https://www.youtube.com/watch?v=EIlmaLc-eFw&t=239s
+    segment_ids:
+    - EIlmaLc-eFw:00086
+    - EIlmaLc-eFw:00087
+    - EIlmaLc-eFw:00089
+    - EIlmaLc-eFw:00090
+    - EIlmaLc-eFw:00091
+- id: i-n17lWXlSo-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Generate loop power from the body and hip drive, then transfer it
+    through a whip-like separation of upper arm and forearm.
+  reason: The speaker says acceleration starts in the forward swing, the body
+    and hip drive the arm, and the arm should feel like a whip with upper arm
+    and forearm separated.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: i-n17lWXlSo
+    start_ms: 649360
+    end_ms: 676560
+    url: https://www.youtube.com/watch?v=i-n17lWXlSo&t=649s
+    segment_ids:
+    - i-n17lWXlSo:00207
+    - i-n17lWXlSo:00208
+    - i-n17lWXlSo:00209
+    - i-n17lWXlSo:00210
+    - i-n17lWXlSo:00211
+    - i-n17lWXlSo:00212
+    - i-n17lWXlSo:00213
+    - i-n17lWXlSo:00214
+    - i-n17lWXlSo:00215
+    - i-n17lWXlSo:00216
+- id: vFmEXvFFGC0-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Generating loop power by coordinating the body, legs, hips, and arm
+    so acceleration happens late and through the ball rather than from a large
+    backswing or lifted arm action.
+  reason: The speaker contrasts big backswing with compact, late acceleration
+    and says body force, leg drive, hip rotation, and follow-through create
+    power.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: vFmEXvFFGC0
+    start_ms: 87920
+    end_ms: 107120
+    url: https://www.youtube.com/watch?v=vFmEXvFFGC0&t=87s
+    segment_ids:
+    - vFmEXvFFGC0:00035
+    - vFmEXvFFGC0:00036
+    - vFmEXvFFGC0:00037
+    - vFmEXvFFGC0:00039
+    - vFmEXvFFGC0:00040
+    - vFmEXvFFGC0:00041
+- id: PNhGSy_Dbg0-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Using opening, body rotation, arm release, and leg drive to create
+    power in the forehand loop instead of relying on a short slap-like hit.
+  reason: The speaker repeatedly explains that forehand power comes from opening
+    up, body rotation, leg drive, and arm acceleration.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: PNhGSy_Dbg0
+    start_ms: 379266
+    end_ms: 400666
+    url: https://www.youtube.com/watch?v=PNhGSy_Dbg0&t=379s
+    segment_ids:
+    - PNhGSy_Dbg0:00117
+    - PNhGSy_Dbg0:00120
+    - PNhGSy_Dbg0:00121
+    - PNhGSy_Dbg0:00122
+- id: dJJtJQvuwOY-concept-forehand-loop-power-generation-reviewed
+  evidence_type: definition
+  excerpt: Generate powerful forehand loop speed through body engagement,
+    acceleration, and follow-through rather than arm force alone.
+  reason: The speaker discusses where loop power originates and emphasizes speed
+    and acceleration.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: dJJtJQvuwOY
+    start_ms: 382100
+    end_ms: 411066
+    url: https://www.youtube.com/watch?v=dJJtJQvuwOY&t=382s
+    segment_ids:
+    - dJJtJQvuwOY:00054
+    - dJJtJQvuwOY:00056
+- id: 6Lw_HobLgSY-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Generating forehand loop power by balancing friction with impact,
+    using quick arm retraction, and finishing with forward force.
+  reason: The speaker explains that a forehand loop needs a balance of friction
+    and impact, quick retraction, forward arm motion, and a follow-up pressing
+    motion to keep spin and curve.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 6Lw_HobLgSY
+    start_ms: 343166
+    end_ms: 369600
+    url: https://www.youtube.com/watch?v=6Lw_HobLgSY&t=343s
+    segment_ids:
+    - 6Lw_HobLgSY:00143
+    - 6Lw_HobLgSY:00144
+    - 6Lw_HobLgSY:00145
+    - 6Lw_HobLgSY:00149
+    - 6Lw_HobLgSY:00151
+- id: FweaNVt8gA0-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Generating power in the forehand loop through coordinated forward
+    motion, body drive, and release rather than pure arm force.
+  reason: The speaker links forward touch, release, and the generation of power,
+    and later contrasts this with exaggerated big-arm looping and slow shots.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: FweaNVt8gA0
+    start_ms: 461466
+    end_ms: 471566
+    url: https://www.youtube.com/watch?v=FweaNVt8gA0&t=461s
+    segment_ids:
+    - FweaNVt8gA0:00112
+    - FweaNVt8gA0:00113
+    - FweaNVt8gA0:00114
+- id: KG90HOykXCs-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Generating forehand loop power through coordinated body drive, late
+    acceleration, and controlled follow-through rather than relying on the
+    backswing alone.
+  reason: Power comes from compact backswing, body use, and phased acceleration
+    through contact.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: KG90HOykXCs
+    start_ms: 89900
+    end_ms: 114133
+    url: https://www.youtube.com/watch?v=KG90HOykXCs&t=89s
+    segment_ids:
+    - KG90HOykXCs:00019
+    - KG90HOykXCs:00024
+- id: qFwE0n-bspQ-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Generate forehand loop power primarily through body turn and rotation
+    rather than arm-only effort.
+  reason: The speaker says simply turning the body away and back is enough power
+    and that body turn leads the arm swing.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: qFwE0n-bspQ
+    start_ms: 250166
+    end_ms: 261500
+    url: https://www.youtube.com/watch?v=qFwE0n-bspQ&t=250s
+    segment_ids:
+    - qFwE0n-bspQ:00058
+    - qFwE0n-bspQ:00060
+- id: 8143qxSjk5A-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Add the power phase of the forehand loop after initiating spin so the
+    shot has both spin and forward drive.
+  reason: 'The speaker explains a two-step loop: first brush with fingers, then drive
+    through with the arm to add power and forward drive.'
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 8143qxSjk5A
+    start_ms: 299033
+    end_ms: 328233
+    url: https://www.youtube.com/watch?v=8143qxSjk5A&t=299s
+    segment_ids:
+    - 8143qxSjk5A:00066
+    - 8143qxSjk5A:00067
+    - 8143qxSjk5A:00068
+    - 8143qxSjk5A:00069
+    - 8143qxSjk5A:00070
+    - 8143qxSjk5A:00071
+- id: 87-UYdrPEEc-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Forehand loop power comes from coordinated body and arm sequencing,
+    with a brief delay that creates explosive acceleration at contact.
+  reason: Explains that the body initiates the movement first and the arm
+    follows, with hips and legs starting before the arm.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 87-UYdrPEEc
+    start_ms: 174033
+    end_ms: 196633
+    url: https://www.youtube.com/watch?v=87-UYdrPEEc&t=174s
+    segment_ids:
+    - 87-UYdrPEEc:00040
+    - 87-UYdrPEEc:00041
+    - 87-UYdrPEEc:00044
+- id: nukEclWHWn4-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: How a forehand loop generates power through a slow-to-fast rhythm,
+    relaxed acceleration, and forward drive rather than a hard backswing or pure
+    upward lift.
+  reason: The speaker defines power loop structure as brushing first and then
+    adding power, with a slow relaxed backswing and explosive second speed.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: nukEclWHWn4
+    start_ms: 304666
+    end_ms: 333633
+    url: https://www.youtube.com/watch?v=nukEclWHWn4&t=304s
+    segment_ids:
+    - nukEclWHWn4:00064
+    - nukEclWHWn4:00065
+    - nukEclWHWn4:00067
+    - nukEclWHWn4:00068
+    - nukEclWHWn4:00069
+- id: q70a9LCojco-concept-intercept-fast-power-loop-reviewed
+  evidence_type: definition
+  excerpt: On a fast power loop, the defender should react like an interception
+    system and make the only goal to meet the ball rather than take a full
+    stroke.
+  reason: Directly states the core defensive objective against a fast power loop
+    is interception, not a full stroke.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: q70a9LCojco
+    start_ms: 0
+    end_ms: 9900
+    url: https://www.youtube.com/watch?v=q70a9LCojco&t=0s
+    segment_ids:
+    - q70a9LCojco:00000
+    - q70a9LCojco:00001
+- id: HHyaeCbQ_ec-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Forehand loop power comes from solid impact, forward drive, and a
+    final explosive burst after the brushing phase.
+  reason: The speaker explains that weak loops lack solid impact, then defines
+    the two-step concept as brush first, then drive, with a final burst of
+    power.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: HHyaeCbQ_ec
+    start_ms: 509800
+    end_ms: 536000
+    url: https://www.youtube.com/watch?v=HHyaeCbQ_ec&t=509s
+    segment_ids:
+    - HHyaeCbQ_ec:00121
+    - HHyaeCbQ_ec:00122
+    - HHyaeCbQ_ec:00123
+    - HHyaeCbQ_ec:00124
+    - HHyaeCbQ_ec:00125
+- id: 3EtitCzSYqY-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Generating loop power through coordinated legs, hips, waist,
+    shoulders, and arm release rather than arm-only swinging.
+  reason: The speaker repeatedly states that looping requires coordinated body
+    power from the legs, hips, waist, and shoulders, with only partial arm
+    strength.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 3EtitCzSYqY
+    start_ms: 391133
+    end_ms: 410900
+    url: https://www.youtube.com/watch?v=3EtitCzSYqY&t=391s
+    segment_ids:
+    - 3EtitCzSYqY:00082
+    - 3EtitCzSYqY:00084
+    - 3EtitCzSYqY:00085
+- id: pFKneacfGiY-concept-forehand-loop-power-generation-reviewed
+  evidence_type: explanation
+  excerpt: Generating forehand loop power through coordinated body rotation,
+    rather than arm-only swinging.
+  reason: The speaker explicitly frames the video around a powerful forehand and
+    says the power comes from body-led swing plus core and hip rotation.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: pFKneacfGiY
+    start_ms: 9066
+    end_ms: 21766
+    url: https://www.youtube.com/watch?v=pFKneacfGiY&t=9s
+    segment_ids:
+    - pFKneacfGiY:00001
+    - pFKneacfGiY:00002
+- id: 2wrSMd7QNww-concept-forehand-loop-power-generation-codex-reviewed
+  evidence_type: definition
+  excerpt: 'The speaker attributes the ball’s quality to two acceleration phases:
+    friction first, then force from back to forward. They say they can generate loop
+    power while standing still without using the body.'
+  reason: Use friction followed by forward force; this loop-power example
+    explicitly works while standing still without body power.
+  confidence: 0.99
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "2wrSMd7QNww"
+    start_ms: 210366
+    end_ms: 235133
+    url: "https://www.youtube.com/watch?v=2wrSMd7QNww&t=210s"
+    segment_ids:
+    - "2wrSMd7QNww:00060"
+    - "2wrSMd7QNww:00061"
+    - "2wrSMd7QNww:00062"
+    - "2wrSMd7QNww:00063"
+    - "2wrSMd7QNww:00064"
+    - "2wrSMd7QNww:00065"
+    - "2wrSMd7QNww:00066"
+- id: CpcAha7BZGA-concept-forehand-loop-power-generation-codex-reviewed
+  evidence_type: explanation
+  excerpt: For looping, use a relaxed backswing following the ball’s rhythm,
+    then accelerate to generate power. The speaker says power also relies on
+    separation of upper arm and forearm.
+  reason: Relax the backswing, follow the ball’s rhythm and then accelerate;
+    upper arm and forearm must work together.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "CpcAha7BZGA"
+    start_ms: 491920
+    end_ms: 521280
+    url: "https://www.youtube.com/watch?v=CpcAha7BZGA&t=491s"
+    segment_ids:
+    - "CpcAha7BZGA:00159"
+    - "CpcAha7BZGA:00160"
+    - "CpcAha7BZGA:00161"
+    - "CpcAha7BZGA:00162"
+    - "CpcAha7BZGA:00163"
+    - "CpcAha7BZGA:00164"
+    - "CpcAha7BZGA:00165"
+    - "CpcAha7BZGA:00166"
+    - "CpcAha7BZGA:00167"
+- id: D9ZAPb_65Hk-concept-forehand-loop-power-generation-codex-reviewed
+  evidence_type: explanation
+  excerpt: The speaker says rally quality and power come from the racket head
+    rather than the arm, comparing the feeling to a slap. They apply the point
+    to the forehand loop, where it is less visible after brushing.
+  reason: Emphasize racket-head motion in the forehand loop, as the speaker
+    advises.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "D9ZAPb_65Hk"
+    start_ms: 489760
+    end_ms: 512800
+    url: "https://www.youtube.com/watch?v=D9ZAPb_65Hk&t=489s"
+    segment_ids:
+    - "D9ZAPb_65Hk:00161"
+    - "D9ZAPb_65Hk:00162"
+    - "D9ZAPb_65Hk:00163"
+    - "D9ZAPb_65Hk:00164"
+    - "D9ZAPb_65Hk:00165"
+    - "D9ZAPb_65Hk:00166"
+    - "D9ZAPb_65Hk:00167"
+    - "D9ZAPb_65Hk:00168"
+    - "D9ZAPb_65Hk:00169"
+    - "D9ZAPb_65Hk:00170"
+- id: hoLSxXKl2L0-concept-body-led-backswing-for-loop-codex-reviewed
+  evidence_type: explanation
+  excerpt: Open the arm, then let body rotation lead it into the loop backswing
+    while the hand stays in front, followed by acceleration into the ball.
+  reason: Open the arm and let body rotation lead the backswing with the hand in
+    front, then accelerate.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "hoLSxXKl2L0"
+    start_ms: 202433
+    end_ms: 223366
+    url: "https://www.youtube.com/watch?v=hoLSxXKl2L0&t=202s"
+    segment_ids:
+    - "hoLSxXKl2L0:00032"
+    - "hoLSxXKl2L0:00033"
+    - "hoLSxXKl2L0:00034"
 relations:
-  - relation_type: part_of
-    target_concept_id: concept-forehand-loop
-    confidence: 0.99
-    review_status: approved
-    sources: [{video_id: qLT0MvwitZc, start_ms: 470333, end_ms: 478433, url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=470s", segment_ids: ["qLT0MvwitZc:00109"]}]
+- relation_type: part_of
+  target_concept_id: concept-forehand-loop
+  confidence: 0.99
+  review_status: approved
+  sources:
+  - video_id: "D9ZAPb_65Hk"
+    start_ms: 489760
+    end_ms: 512800
+    url: "https://www.youtube.com/watch?v=D9ZAPb_65Hk&t=489s"
+    segment_ids:
+    - "D9ZAPb_65Hk:00161"
+    - "D9ZAPb_65Hk:00162"
+    - "D9ZAPb_65Hk:00163"
+    - "D9ZAPb_65Hk:00164"
+    - "D9ZAPb_65Hk:00165"
+    - "D9ZAPb_65Hk:00166"
+    - "D9ZAPb_65Hk:00167"
+    - "D9ZAPb_65Hk:00168"
+    - "D9ZAPb_65Hk:00169"
+    - "D9ZAPb_65Hk:00170"

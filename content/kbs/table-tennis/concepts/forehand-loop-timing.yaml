@@ -1,1601 +1,1996 @@
 id: concept-forehand-loop-timing
 slug: forehand-loop-timing
 label: Forehand loop timing and rhythm
-aliases: [loop timing, wait-loop rhythm, late acceleration]
-short_definition: Time the forehand loop by waiting for the ball, staying loose through preparation, and accelerating at contact.
+aliases:
+- loop timing
+- wait-loop rhythm
+short_definition: Time the forehand loop with source-specific cues for waiting,
+  incoming pace and bounce phase.
 evidence_summary: >-
-  Forehand loop timing is built around matching the stroke to the incoming ball while preserving a
-  consistent rhythm across rallies and repeated loops. Preparation should begin only after the
-  opponent's contact and the ball's curve are clear, with the ball contacted later for easier
-  looping and with the swing shape adjusted according to speed, spin, and whether the ball is
-  rising or falling.
-evidence_summary_source_hash: "sha256:ee470eb23870311fc526f6dbec86d7063fc7ebe59392e5cc1b94318e4dbc6a86"
-evidence_summary_generator: "codex"
-detailed_definition: Incoming pace changes the tempo, but the player still avoids rushing the backswing. The body and racket prepare with the ball, remain relaxed, and release speed late at the chosen contact point.
+  Continuous forehand topspin practice uses early descent, while another topspin example
+  describes contact at the peak or on the rise. A backspin lesson permits peak-or-rise
+  contact only for a slow push when already in position. Other examples adjust backswing
+  speed to incoming pace, delay pulling back until the ball is understood, or use
+  relaxed preparation before late acceleration.
+detailed_definition: Timing cues vary by the ball and practice setting. One
+  continuous forehand topspin lesson uses early descent; another topspin example
+  uses peak or rising contact. One push example allows peak or rising contact
+  only for a slow push when already positioned. A rhythm lesson uses wait, loop
+  for a slow ball and wait, quick for a fast ball.
 concept_type: principle
 facets:
-  category: [timing, stroke]
-  side: [forehand]
-  spin: [topspin]
-  level: [intermediate]
-difficulty: intermediate
+  category:
+  - stroke
+  side:
+  - forehand
+difficulty:
 review_status: approved
 evidence:
-  - id: timing-late-acceleration-global
-    evidence_type: explanation
-    excerpt: Your swing should be relaxed until just before the contact point, not forceful from the beginning.
-    reason: Defines late-stage acceleration.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    visual_source: {video_id: qLT0MvwitZc, start_ms: 96000, end_ms: 106000, url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=96s", selection_method: nearby_visual_inference, note: Coach demonstrates the relaxed approach and late racket acceleration.}
-    review_status: approved
-    source: {video_id: qLT0MvwitZc, start_ms: 88866, end_ms: 94066, url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=88s", segment_ids: ["qLT0MvwitZc:00021"]}
-  - id: timing-wait-rhythm-global
-    evidence_type: demonstration
-    excerpt: "For a slow ball, wait before looping; for a faster ball, retain the wait but move through the stroke more quickly."
-    reason: For a slow ball, wait before looping; for a faster ball, retain the wait but move through the stroke more quickly.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    visual_source: {video_id: XfWXrGTlW5M, start_ms: 294000, end_ms: 306000, url: "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=294s", selection_method: nearby_visual_inference, note: Consecutive fed balls demonstrate waiting and changing the swing tempo.}
-    review_status: approved
-    source: {video_id: XfWXrGTlW5M, start_ms: 303966, end_ms: 309300, url: "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=303s", segment_ids: ["XfWXrGTlW5M:00074"]}
-  - id: timing-relax-contact-spinmaster
-    evidence_type: correction
-    excerpt: Stay relaxed before the ball; accelerate and apply force only at contact.
-    reason: Corrects premature tension and rushed acceleration.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    visual_source: {video_id: dWZw3A0X-4A, start_ms: 521000, end_ms: 533000, url: "https://www.youtube.com/watch?v=dWZw3A0X-4A&t=521s", selection_method: nearby_visual_inference, note: Live-ball strokes illustrate tension before contact and the late release.}
-    review_status: approved
-    source: {video_id: dWZw3A0X-4A, start_ms: 539120, end_ms: 548040, url: "https://www.youtube.com/watch?v=dWZw3A0X-4A&t=539s", segment_ids: ["dWZw3A0X-4A:00179", "dWZw3A0X-4A:00180", "dWZw3A0X-4A:00181"]}
-  - id: I99BjizeWeE-cand-early-falling-phase-timing-1
-    evidence_type: drill
-    excerpt: In rally practice for the forehand loop, contact timing should be set in the early falling phase to support controlled brushing mechanics.
-    reason: The speaker gives a specific rally-practice timing cue tied to no-power brushing work.
-    confidence: 0.8
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: I99BjizeWeE
-      start_ms: 308933
-      end_ms: 319066
-      url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=308s"
-      segment_ids:
-        - "I99BjizeWeE:00095"
-        - "I99BjizeWeE:00096"
-        - "I99BjizeWeE:00097"
-        - "I99BjizeWeE:00098"
-  - id: XfWXrGTlW5M-concept-rhythm-synchronization-looping-2
-    evidence_type: explanation
-    excerpt: The coach explains that slow and fast balls keep the same rhythm pattern, but the motion frequency scales with ball pace.
-    reason: Matching the tempo of the stroke to the pace of the incoming ball while preserving the same underlying beat, especially in consecutive loops and second-ball situations.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: XfWXrGTlW5M
-      start_ms: 345300
-      end_ms: 351400
-      url: "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=345s"
-      segment_ids:
-        - "XfWXrGTlW5M:00083"
-  - id: XfWXrGTlW5M-concept-rhythm-synchronization-looping-3
-    evidence_type: mistake
-    excerpt: He identifies rushed second-ball errors as rhythm problems rather than technique problems.
-    reason: Matching the tempo of the stroke to the pace of the incoming ball while preserving the same underlying beat, especially in consecutive loops and second-ball situations.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: XfWXrGTlW5M
-      start_ms: 423933
-      end_ms: 443633
-      url: "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=423s"
-      segment_ids:
-        - "XfWXrGTlW5M:00097"
-        - "XfWXrGTlW5M:00100"
-  - id: XfWXrGTlW5M-concept-rhythm-synchronization-looping-4
-    evidence_type: correction
-    excerpt: Adding a moment of waiting fixes the error without changing stroke mechanics.
-    reason: Matching the tempo of the stroke to the pace of the incoming ball while preserving the same underlying beat, especially in consecutive loops and second-ball situations.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: XfWXrGTlW5M
-      start_ms: 443633
-      end_ms: 449833
-      url: "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=443s"
-      segment_ids:
-        - "XfWXrGTlW5M:00101"
-        - "XfWXrGTlW5M:00102"
-  - id: 0eMDTeOBR5A-cand-forehand-loop-timing-early-descent-1
-    evidence_type: explanation
-    excerpt: Explains preferred contact timing progression from early descent to peak to rise.
-    reason: The speaker teaches that against backspin, the most reliable forehand loop timing for most amateurs is at early descent just after the peak, with earlier timing at the peak or on the rise reserved for better anticipation and positioning.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 0eMDTeOBR5A
-      start_ms: 9560
-      end_ms: 31840
-      url: https://www.youtube.com/watch?v=0eMDTeOBR5A&t=9s
-      segment_ids:
-        - 0eMDTeOBR5A:00002
-        - 0eMDTeOBR5A:00003
-        - 0eMDTeOBR5A:00004
-        - 0eMDTeOBR5A:00005
-        - 0eMDTeOBR5A:00006
-        - 0eMDTeOBR5A:00007
-        - 0eMDTeOBR5A:00008
-        - 0eMDTeOBR5A:00009
-  - id: 0eMDTeOBR5A-cand-forehand-loop-timing-early-descent-2
-    evidence_type: demonstration
-    excerpt: Repeats and demonstrates early-descent timing and when peak/rise timing is acceptable.
-    reason: The speaker teaches that against backspin, the most reliable forehand loop timing for most amateurs is at early descent just after the peak, with earlier timing at the peak or on the rise reserved for better anticipation and positioning.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 0eMDTeOBR5A
-      start_ms: 303040
-      end_ms: 330160
-      url: https://www.youtube.com/watch?v=0eMDTeOBR5A&t=303s
-      segment_ids:
-        - 0eMDTeOBR5A:00102
-        - 0eMDTeOBR5A:00103
-        - 0eMDTeOBR5A:00104
-        - 0eMDTeOBR5A:00105
-        - 0eMDTeOBR5A:00106
-        - 0eMDTeOBR5A:00107
-        - 0eMDTeOBR5A:00108
-        - 0eMDTeOBR5A:00109
-  - id: 0eMDTeOBR5A-cand-forehand-loop-timing-early-descent-3
-    evidence_type: demonstration
-    excerpt: Repeats and demonstrates early-descent timing and when peak/rise timing is acceptable.
-    reason: The speaker teaches that against backspin, the most reliable forehand loop timing for most amateurs is at early descent just after the peak, with earlier timing at the peak or on the rise reserved for better anticipation and positioning.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 0eMDTeOBR5A
-      start_ms: 333120
-      end_ms: 343040
-      url: https://www.youtube.com/watch?v=0eMDTeOBR5A&t=333s
-      segment_ids:
-        - 0eMDTeOBR5A:00110
-        - 0eMDTeOBR5A:00111
-        - 0eMDTeOBR5A:00112
-        - 0eMDTeOBR5A:00113
-  - id: 0eMDTeOBR5A-cand-forehand-loop-timing-early-descent-4
-    evidence_type: demonstration
-    excerpt: Repeats and demonstrates early-descent timing and when peak/rise timing is acceptable.
-    reason: The speaker teaches that against backspin, the most reliable forehand loop timing for most amateurs is at early descent just after the peak, with earlier timing at the peak or on the rise reserved for better anticipation and positioning.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 0eMDTeOBR5A
-      start_ms: 394160
-      end_ms: 403880
-      url: https://www.youtube.com/watch?v=0eMDTeOBR5A&t=394s
-      segment_ids:
-        - 0eMDTeOBR5A:00133
-        - 0eMDTeOBR5A:00134
-        - 0eMDTeOBR5A:00135
-        - 0eMDTeOBR5A:00136
-  - id: 0eMDTeOBR5A-cand-opening-loop-backswing-speed-matching-1
-    evidence_type: explanation
-    excerpt: Against backspin, the opening loop preparation should stay compact and in front, with backswing speed adjusted to the incoming push speed and initiated as the ball crosses the net.
-    reason: Provides a detailed timing model for when to start the backswing and how quickly to prepare versus release based on ball speed.
-    confidence: 0.82
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 0eMDTeOBR5A
-      start_ms: 344160
-      end_ms: 373800
-      url: https://www.youtube.com/watch?v=0eMDTeOBR5A&t=344s
-      segment_ids:
-        - 0eMDTeOBR5A:00114
-        - 0eMDTeOBR5A:00115
-        - 0eMDTeOBR5A:00116
-        - 0eMDTeOBR5A:00117
-        - 0eMDTeOBR5A:00118
-        - 0eMDTeOBR5A:00119
-        - 0eMDTeOBR5A:00120
-        - 0eMDTeOBR5A:00121
-        - 0eMDTeOBR5A:00122
-  - id: 0eMDTeOBR5A-cand-opening-loop-backswing-speed-matching-2
-    evidence_type: explanation
-    excerpt: Against backspin, the opening loop preparation should stay compact and in front, with backswing speed adjusted to the incoming push speed and initiated as the ball crosses the net.
-    reason: Provides a detailed timing model for when to start the backswing and how quickly to prepare versus release based on ball speed.
-    confidence: 0.82
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 0eMDTeOBR5A
-      start_ms: 370840
-      end_ms: 385120
-      url: https://www.youtube.com/watch?v=0eMDTeOBR5A&t=370s
-      segment_ids:
-        - 0eMDTeOBR5A:00123
-        - 0eMDTeOBR5A:00124
-        - 0eMDTeOBR5A:00125
-        - 0eMDTeOBR5A:00126
-        - 0eMDTeOBR5A:00127
-        - 0eMDTeOBR5A:00128
-    spoken_context_start_ms: 368360
-  - id: f7uZPRPIwpU-concept-forehand-loop-timing-1
-    evidence_type: explanation
-    excerpt: Time the loop by watching the ball first, moving into position, and starting the backswing only when you are about to swing so the stroke becomes one continuous motion.
-    reason: Speaker repeatedly teaches delaying the backswing until the swing is imminent and making the stroke one fluid motion after observing and moving.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: f7uZPRPIwpU
-      start_ms: 31120
-      end_ms: 39160
-      url: https://www.youtube.com/watch?v=f7uZPRPIwpU&t=31s
-      segment_ids:
-        - f7uZPRPIwpU:00011
-        - f7uZPRPIwpU:00012
-        - f7uZPRPIwpU:00013
-        - f7uZPRPIwpU:00014
-  - id: f7uZPRPIwpU-concept-forehand-loop-timing-2
-    evidence_type: explanation
-    excerpt: Time the loop by watching the ball first, moving into position, and starting the backswing only when you are about to swing so the stroke becomes one continuous motion.
-    reason: Speaker repeatedly teaches delaying the backswing until the swing is imminent and making the stroke one fluid motion after observing and moving.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: f7uZPRPIwpU
-      start_ms: 144200
-      end_ms: 173880
-      url: https://www.youtube.com/watch?v=f7uZPRPIwpU&t=144s
-      segment_ids:
-        - f7uZPRPIwpU:00057
-        - f7uZPRPIwpU:00058
-        - f7uZPRPIwpU:00062
-        - f7uZPRPIwpU:00068
-        - f7uZPRPIwpU:00069
-  - id: f7uZPRPIwpU-concept-forehand-loop-timing-3
-    evidence_type: explanation
-    excerpt: Time the loop by watching the ball first, moving into position, and starting the backswing only when you are about to swing so the stroke becomes one continuous motion.
-    reason: Speaker repeatedly teaches delaying the backswing until the swing is imminent and making the stroke one fluid motion after observing and moving.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: f7uZPRPIwpU
-      start_ms: 183040
-      end_ms: 210160
-      url: https://www.youtube.com/watch?v=f7uZPRPIwpU&t=183s
-      segment_ids:
-        - f7uZPRPIwpU:00074
-        - f7uZPRPIwpU:00075
-        - f7uZPRPIwpU:00076
-        - f7uZPRPIwpU:00077
-        - f7uZPRPIwpU:00081
-        - f7uZPRPIwpU:00082
-        - f7uZPRPIwpU:00084
-  - id: t3HX8AEujWw-c3-1
-    evidence_type: definition
-    excerpt: Answers directly that continuous forehand topspin looping should use the early descending phase.
-    reason: For continuous forehand looping, especially for beginners and spin-oriented loops, contact is taken in the early descending phase rather than at the peak.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: t3HX8AEujWw
-      start_ms: 42960
-      end_ms: 53120
-      url: https://www.youtube.com/watch?v=t3HX8AEujWw&t=42s
-      segment_ids:
-        - t3HX8AEujWw:00018
-        - t3HX8AEujWw:00019
-        - t3HX8AEujWw:00020
-        - t3HX8AEujWw:00021
-  - id: t3HX8AEujWw-c3-2
-    evidence_type: explanation
-    excerpt: Explains beginners use the early descending phase because the peak leaves too little time.
-    reason: For continuous forehand looping, especially for beginners and spin-oriented loops, contact is taken in the early descending phase rather than at the peak.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: t3HX8AEujWw
-      start_ms: 51800
-      end_ms: 59120
-      url: https://www.youtube.com/watch?v=t3HX8AEujWw&t=51s
-      segment_ids:
-        - t3HX8AEujWw:00022
-        - t3HX8AEujWw:00023
-        - t3HX8AEujWw:00024
-  - id: t3HX8AEujWw-c3-3
-    evidence_type: drill
-    excerpt: 'Gives a timing cue: let the ball peak and start to drop, then swing.'
-    reason: For continuous forehand looping, especially for beginners and spin-oriented loops, contact is taken in the early descending phase rather than at the peak.
-    confidence: 0.88
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: t3HX8AEujWw
-      start_ms: 154560
-      end_ms: 161680
-      url: https://www.youtube.com/watch?v=t3HX8AEujWw&t=154s
-      segment_ids:
-        - t3HX8AEujWw:00067
-        - t3HX8AEujWw:00068
-        - t3HX8AEujWw:00069
-  - id: XfWXrGTlW5M-concept-backswing-with-the-ball-1
-    evidence_type: explanation
-    excerpt: The coach defines the problem of swinging too early and explains that the backswing should follow the opponent's contact and the ball's path.
-    reason: Timing the backswing in response to the opponent's contact, placement, and trajectory so the stroke preparation stays synchronized with the incoming ball instead of starting too early.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: XfWXrGTlW5M
-      start_ms: 170433
-      end_ms: 176233
-      url: https://www.youtube.com/watch?v=XfWXrGTlW5M&t=170s
-      segment_ids:
-        - XfWXrGTlW5M:00041
-  - id: XfWXrGTlW5M-concept-backswing-with-the-ball-2
-    evidence_type: explanation
-    excerpt: The coach defines the problem of swinging too early and explains that the backswing should follow the opponent's contact and the ball's path.
-    reason: Timing the backswing in response to the opponent's contact, placement, and trajectory so the stroke preparation stays synchronized with the incoming ball instead of starting too early.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: XfWXrGTlW5M
-      start_ms: 204366
-      end_ms: 208766
-      url: https://www.youtube.com/watch?v=XfWXrGTlW5M&t=204s
-      segment_ids:
-        - XfWXrGTlW5M:00050
-  - id: XfWXrGTlW5M-concept-backswing-with-the-ball-3
-    evidence_type: mistake
-    excerpt: Starting the backswing before the opponent serves is identified as the reason power cannot sync up.
-    reason: Timing the backswing in response to the opponent's contact, placement, and trajectory so the stroke preparation stays synchronized with the incoming ball instead of starting too early.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: XfWXrGTlW5M
-      start_ms: 186466
-      end_ms: 193466
-      url: https://www.youtube.com/watch?v=XfWXrGTlW5M&t=186s
-      segment_ids:
-        - XfWXrGTlW5M:00045
-        - XfWXrGTlW5M:00046
-  - id: 1fHWnt8IlbI-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Timing the loop at the rising point, peak, or early drop and waiting so the ball can be contacted at the right moment.
-    reason: 'The speaker gives three timing options for looping half-long balls: rising point, peak, and early drop.'
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 1fHWnt8IlbI
-      start_ms: 44160
-      end_ms: 55480
-      url: https://www.youtube.com/watch?v=1fHWnt8IlbI&t=44s
-      segment_ids:
-        - 1fHWnt8IlbI:00020
-        - 1fHWnt8IlbI:00021
-        - 1fHWnt8IlbI:00022
-        - 1fHWnt8IlbI:00023
-        - 1fHWnt8IlbI:00024
-  - id: Aaaxi0DOZzQ-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Time the backswing, contact, and forward swing so the stroke begins before or at the bounce depending on the ball trajectory, not after the bounce.
-    reason: The speaker says to slow the loading rhythm, contact first, then drive upward, and distinguishes peak timing from drop timing.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: Aaaxi0DOZzQ
-      start_ms: 531440
-      end_ms: 545520
-      url: https://www.youtube.com/watch?v=Aaaxi0DOZzQ&t=531s
-      segment_ids:
-        - Aaaxi0DOZzQ:00197
-        - Aaaxi0DOZzQ:00202
-  - id: D9ZAPb_65Hk-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Timing the forehand loop so the stroke stays fluid, with a relaxed backswing and timely release.
-    reason: The speaker specifically mentions the forehand loop and says to relax the backswing to stay fluid.
-    confidence: 0.86
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: D9ZAPb_65Hk
-      start_ms: 366720
-      end_ms: 374560
-      url: https://www.youtube.com/watch?v=D9ZAPb_65Hk&t=366s
-      segment_ids:
-        - D9ZAPb_65Hk:00119
-        - D9ZAPb_65Hk:00120
-        - D9ZAPb_65Hk:00121
-  - id: pE5PLAr9iaA-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Adjusting a forehand loop to the ball's rise, peak, or drop while maintaining a usable rhythm.
-    reason: The speaker explicitly frames rhythm control around looping on the rising ball, peak, and drop, and says rhythm must be mastered in practice first.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: pE5PLAr9iaA
-      start_ms: 37560
-      end_ms: 64080
-      url: https://www.youtube.com/watch?v=pE5PLAr9iaA&t=37s
-      segment_ids:
-        - pE5PLAr9iaA:00015
-        - pE5PLAr9iaA:00016
-        - pE5PLAr9iaA:00017
-        - pE5PLAr9iaA:00019
-  - id: PFPu_pKZ9TI-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Timing the loop so the body and hand are set before contact, avoiding early backswing and snatching, and meeting the ball at the right bounce phase.
-    reason: The speaker contrasts peak timing with rising-point and late-contact mistakes, repeatedly emphasizing meeting the peak and not waiting for it.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: PFPu_pKZ9TI
-      start_ms: 172680
-      end_ms: 198120
-      url: https://www.youtube.com/watch?v=PFPu_pKZ9TI&t=172s
-      segment_ids:
-        - PFPu_pKZ9TI:00054
-        - PFPu_pKZ9TI:00055
-        - PFPu_pKZ9TI:00056
-        - PFPu_pKZ9TI:00057
-        - PFPu_pKZ9TI:00058
-        - PFPu_pKZ9TI:00061
-        - PFPu_pKZ9TI:00062
-        - PFPu_pKZ9TI:00063
-  - id: -1uBDv1Aq7A-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Timing the loop to meet the ball on the rising phase instead of at the lowest point, so the incoming spin can be used rather than fought.
-    reason: The summary says not to loop at the lowest point and to use the rising phase to borrow the spin.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: -1uBDv1Aq7A
-      start_ms: 679040
-      end_ms: 690000
-      url: https://www.youtube.com/watch?v=-1uBDv1Aq7A&t=679s
-      segment_ids:
-        - -1uBDv1Aq7A:00189
-        - -1uBDv1Aq7A:00190
-        - -1uBDv1Aq7A:00191
-        - -1uBDv1Aq7A:00192
-    spoken_context_start_ms: 677040
-  - id: ONXmZHozLTA-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: For heavy spin, contact should be made in the falling phase rather than the rising or peak phase, with acceleration timed to the ball's descent.
-    reason: The speaker explicitly says heavy spin should be generated in the early to late falling phase and not at the peak or rising phase.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: ONXmZHozLTA
-      start_ms: 400
-      end_ms: 26200
-      url: https://www.youtube.com/watch?v=ONXmZHozLTA&t=0s
-      segment_ids:
-        - ONXmZHozLTA:00000
-        - ONXmZHozLTA:00001
-        - ONXmZHozLTA:00002
-        - ONXmZHozLTA:00003
-        - ONXmZHozLTA:00004
-        - ONXmZHozLTA:00005
-        - ONXmZHozLTA:00006
-        - ONXmZHozLTA:00007
-        - ONXmZHozLTA:00008
-        - ONXmZHozLTA:00009
-        - ONXmZHozLTA:00010
-  - id: TMrN47uIHiI-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Waiting for the right moment, often on the rise, before committing to the swing so the ball can be contacted cleanly.
-    reason: The speaker says timing is most important, warns against starting the backswing early, and instructs the player to wait until the curve finishes before bringing the racket back.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: TMrN47uIHiI
-      start_ms: 273400
-      end_ms: 298080
-      url: https://www.youtube.com/watch?v=TMrN47uIHiI&t=273s
-      segment_ids:
-        - TMrN47uIHiI:00086
-        - TMrN47uIHiI:00088
-        - TMrN47uIHiI:00091
-  - id: DXL3ZnLNXqE-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Starting the loop swing at the right phase of the ball's flight, specifically the peak-to-early-falling window rather than the exact highest point.
-    reason: The speaker distinguishes peak timing from early falling phase timing and says not to rush looping.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: DXL3ZnLNXqE
-      start_ms: 165560
-      end_ms: 194320
-      url: https://www.youtube.com/watch?v=DXL3ZnLNXqE&t=165s
-      segment_ids:
-        - DXL3ZnLNXqE:00053
-        - DXL3ZnLNXqE:00054
-        - DXL3ZnLNXqE:00055
-        - DXL3ZnLNXqE:00056
-        - DXL3ZnLNXqE:00057
-        - DXL3ZnLNXqE:00058
-        - DXL3ZnLNXqE:00059
-        - DXL3ZnLNXqE:00060
-        - DXL3ZnLNXqE:00061
-        - DXL3ZnLNXqE:00062
-        - DXL3ZnLNXqE:00065
-  - id: ODwFaYDY1co-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Delaying the attack so the player loads preparation first, avoids rushing, and matches the timing demanded by backspin balls.
-    reason: The speaker emphasizes controlling rhythm against backspin, not rushing the timing, and completing preparation movements before swinging.
-    confidence: 0.91
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: ODwFaYDY1co
-      start_ms: 346760
-      end_ms: 370200
-      url: https://www.youtube.com/watch?v=ODwFaYDY1co&t=346s
-      segment_ids:
-        - ODwFaYDY1co:00144
-        - ODwFaYDY1co:00150
-        - ODwFaYDY1co:00152
-  - id: vXZPX5wybTY-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Choosing the right moment to loop, especially avoiding rushed contact and preferring contact at the peak when appropriate.
-    reason: The speaker warns not to rush the timing, recommends hitting at the peak, and says placement can matter more than forcing power in that situation.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: vXZPX5wybTY
-      start_ms: 367720
-      end_ms: 385760
-      url: https://www.youtube.com/watch?v=vXZPX5wybTY&t=367s
-      segment_ids:
-        - vXZPX5wybTY:00135
-        - vXZPX5wybTY:00137
-        - vXZPX5wybTY:00138
-        - vXZPX5wybTY:00139
-        - vXZPX5wybTY:00140
-  - id: DXL3ZnLNXqE-concept-forehand-loop-timing-reviewed-c78a5b8a
-    evidence_type: explanation
-    excerpt: Starting the loop swing at the right phase of the ball's flight, specifically the peak-to-early-falling window rather than the exact highest point.
-    reason: The speaker distinguishes peak timing from early falling phase timing and says not to rush looping.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: DXL3ZnLNXqE
-      start_ms: 165560
-      end_ms: 194320
-      url: https://www.youtube.com/watch?v=DXL3ZnLNXqE&t=165s
-      segment_ids:
-        - DXL3ZnLNXqE:00053
-        - DXL3ZnLNXqE:00054
-        - DXL3ZnLNXqE:00055
-        - DXL3ZnLNXqE:00056
-        - DXL3ZnLNXqE:00057
-        - DXL3ZnLNXqE:00058
-        - DXL3ZnLNXqE:00059
-        - DXL3ZnLNXqE:00060
-        - DXL3ZnLNXqE:00061
-        - DXL3ZnLNXqE:00062
-        - DXL3ZnLNXqE:00065
-  - id: ODwFaYDY1co-concept-forehand-loop-timing-reviewed-e52ae43c
-    evidence_type: explanation
-    excerpt: Delaying the attack so the player loads preparation first, avoids rushing, and matches the timing demanded by backspin balls.
-    reason: The speaker emphasizes controlling rhythm against backspin, not rushing the timing, and completing preparation movements before swinging.
-    confidence: 0.91
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: ODwFaYDY1co
-      start_ms: 346760
-      end_ms: 370200
-      url: https://www.youtube.com/watch?v=ODwFaYDY1co&t=346s
-      segment_ids:
-        - ODwFaYDY1co:00144
-        - ODwFaYDY1co:00150
-        - ODwFaYDY1co:00152
-  - id: vXZPX5wybTY-concept-forehand-loop-timing-reviewed-27312443
-    evidence_type: explanation
-    excerpt: Choosing the right moment to loop, especially avoiding rushed contact and preferring contact at the peak when appropriate.
-    reason: The speaker warns not to rush the timing, recommends hitting at the peak, and says placement can matter more than forcing power in that situation.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: vXZPX5wybTY
-      start_ms: 367720
-      end_ms: 385760
-      url: https://www.youtube.com/watch?v=vXZPX5wybTY&t=367s
-      segment_ids:
-        - vXZPX5wybTY:00135
-        - vXZPX5wybTY:00137
-        - vXZPX5wybTY:00138
-        - vXZPX5wybTY:00139
-        - vXZPX5wybTY:00140
-  - id: 13z0kO_hd0M-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Adjusting when and how the forehand loop is released so the player can prioritize arc, then drive forward or brush more depending on the incoming ball.
-    reason: 'The speaker gives timing guidance: faster balls require prioritizing arc first, while softer balls allow driving forward through the ball.'
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 13z0kO_hd0M
-      start_ms: 97360
-      end_ms: 101480
-      url: https://www.youtube.com/watch?v=13z0kO_hd0M&t=97s
-      segment_ids:
-        - 13z0kO_hd0M:00033
-    spoken_context_end_ms: 111640
-  - id: PDFXww03DHM-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Time the loop by controlling the arc first and avoiding a late, rushed reaction when the ball is already too close.
-    reason: The speaker warns against waiting until the ball is too close and trying to generate power only at contact; instead, arc control must come first.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: PDFXww03DHM
-      start_ms: 468400
-      end_ms: 496320
-      url: https://www.youtube.com/watch?v=PDFXww03DHM&t=468s
-      segment_ids:
-        - PDFXww03DHM:00150
-        - PDFXww03DHM:00151
-        - PDFXww03DHM:00152
-        - PDFXww03DHM:00153
-        - PDFXww03DHM:00154
-        - PDFXww03DHM:00155
-        - PDFXww03DHM:00157
-        - PDFXww03DHM:00158
-        - PDFXww03DHM:00159
-        - PDFXww03DHM:00160
-  - id: zMP_ptkdNHk-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Choosing the right phase of the ball to initiate the loop, especially early in the descending phase.
-    reason: The speaker explicitly states that the best timing for heavy backspin is early in the descending phase.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: zMP_ptkdNHk
-      start_ms: 136960
-      end_ms: 145840
-      url: https://www.youtube.com/watch?v=zMP_ptkdNHk&t=136s
-      segment_ids:
-        - zMP_ptkdNHk:00051
-        - zMP_ptkdNHk:00052
-        - zMP_ptkdNHk:00053
-  - id: R9InWNDCJQM-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Timing a forehand looping stroke by waiting for the right bounce or rise and then accelerating at the last moment.
-    reason: The speaker repeatedly says to wait for the bounce, then adjust, and not to rush hitting until the curve finishes.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: R9InWNDCJQM
-      start_ms: 89360
-      end_ms: 100600
-      url: https://www.youtube.com/watch?v=R9InWNDCJQM&t=89s
-      segment_ids:
-        - R9InWNDCJQM:00038
-        - R9InWNDCJQM:00039
-        - R9InWNDCJQM:00040
-  - id: wpIxIvnuOac-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: The timing and rhythm of a forehand loop, including slowing the rhythm, avoiding peak-contact brushing, and releasing acceleration at the right moment.
-    reason: The speaker instructs the learner to slow down the rhythm, use the ball's falling force, and avoid brushing at the peak.
-    confidence: 0.93
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: wpIxIvnuOac
-      start_ms: 95160
-      end_ms: 110520
-      url: https://www.youtube.com/watch?v=wpIxIvnuOac&t=95s
-      segment_ids:
-        - wpIxIvnuOac:00031
-        - wpIxIvnuOac:00032
-        - wpIxIvnuOac:00033
-        - wpIxIvnuOac:00034
-        - wpIxIvnuOac:00035
-        - wpIxIvnuOac:00036
-  - id: mYzbo93Nkps-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Timing the loop for the ball's falling phase rather than taking it at the peak, so the stroke is easier to coordinate and attack quality improves.
-    reason: Explains that waiting for the ball to enter the falling phase makes looping easier.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: mYzbo93Nkps
-      start_ms: 400
-      end_ms: 8520
-      url: https://www.youtube.com/watch?v=mYzbo93Nkps&t=0s
-      segment_ids:
-        - mYzbo93Nkps:00000
-        - mYzbo93Nkps:00001
-        - mYzbo93Nkps:00002
-  - id: sosNHzR8A9U-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Timing the forehand loop so the backswing and forward swing happen at the right phase relative to the ball bounce and the player's movement.
-    reason: The speaker explains starting the swing on the bounce or on the drop and says the explosive loop depends on being in motion as the ball lands.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: sosNHzR8A9U
-      start_ms: 378900
-      end_ms: 394933
-      url: https://www.youtube.com/watch?v=sosNHzR8A9U&t=378s
-      segment_ids:
-        - sosNHzR8A9U:00083
-        - sosNHzR8A9U:00086
-  - id: 2Wk2xe0I1s8-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Wait longer before initiating the forward-up swing so the ball comes into the right contact window, especially when you are out of position or dealing with a half-long ball.
-    reason: The speaker says the body should wait a moment longer and that delaying the contact point can solve reach problems without moving the feet.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 2Wk2xe0I1s8
-      start_ms: 121200
-      end_ms: 141933
-      url: https://www.youtube.com/watch?v=2Wk2xe0I1s8&t=121s
-      segment_ids:
-        - 2Wk2xe0I1s8:00026
-        - 2Wk2xe0I1s8:00027
-        - 2Wk2xe0I1s8:00028
-  - id: nENxAvinCe8-concept-forehand-loop-timing-reviewed
-    evidence_type: definition
-    excerpt: Loop timing requires a slower backswing, a wait phase, and then acceleration through the ball, rather than a rushed drive-like tempo.
-    reason: The speaker repeatedly defines correct loop rhythm as slow-then-fast, with a relaxed preparation and a wait phase before impact.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: nENxAvinCe8
-      start_ms: 491966
-      end_ms: 518433
-      url: https://www.youtube.com/watch?v=nENxAvinCe8&t=491s
-      segment_ids:
-        - nENxAvinCe8:00107
-        - nENxAvinCe8:00111
-  - id: 7jWqEsHtN3Y-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Timing the loop by letting the ball drop to a better height before starting the swing.
-    reason: The speaker says spinnier balls should be contacted lower because the spin decreases as the ball drops.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 7jWqEsHtN3Y
-      start_ms: 574000
-      end_ms: 593933
-      url: https://www.youtube.com/watch?v=7jWqEsHtN3Y&t=574s
-      segment_ids:
-        - 7jWqEsHtN3Y:00122
-        - 7jWqEsHtN3Y:00123
-        - 7jWqEsHtN3Y:00124
-        - 7jWqEsHtN3Y:00125
-        - 7jWqEsHtN3Y:00126
-  - id: Nmf0ZWP6dn0-cand-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: On slower incoming balls, wait and let the ball come closer before looping; on very fast balls, use the opponent's speed with a smaller motion instead of rushing.
-    reason: The speaker emphasizes precise timing, letting the ball come toward the body, and not rushing the stroke.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: Nmf0ZWP6dn0
-      start_ms: 123240
-      end_ms: 145520
-      url: https://www.youtube.com/watch?v=Nmf0ZWP6dn0&t=123s
-      segment_ids:
-        - Nmf0ZWP6dn0:00041
-        - Nmf0ZWP6dn0:00042
-        - Nmf0ZWP6dn0:00043
-        - Nmf0ZWP6dn0:00044
-        - Nmf0ZWP6dn0:00045
-        - Nmf0ZWP6dn0:00046
-        - Nmf0ZWP6dn0:00047
-        - Nmf0ZWP6dn0:00048
-  - id: TnKP4aH3ft8-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: The spin and power outcome of a loop depends on when the ball is contacted in its flight, with more spin in the early falling phase, more speed in the rising phase, and more power near the peak.
-    reason: The speaker explicitly contrasts speed, power, and spin by phase and says to wait for the early falling phase for spin.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: TnKP4aH3ft8
-      start_ms: 108360
-      end_ms: 133920
-      url: https://www.youtube.com/watch?v=TnKP4aH3ft8&t=108s
-      segment_ids:
-        - TnKP4aH3ft8:00037
-        - TnKP4aH3ft8:00042
-        - TnKP4aH3ft8:00043
-        - TnKP4aH3ft8:00044
-  - id: -QdTaX8ejCM-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: The forehand loop should accelerate late and stay quick rather than slow and oversized.
-    reason: The speaker says the motion can be small but must be quick, not big and slow.
-    confidence: 0.88
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: -QdTaX8ejCM
-      start_ms: 405680
-      end_ms: 417600
-      url: https://www.youtube.com/watch?v=-QdTaX8ejCM&t=405s
-      segment_ids:
-        - -QdTaX8ejCM:00153
-        - -QdTaX8ejCM:00156
-  - id: aPf4rc3WJok-concept-forehand-loop-timing-reviewed
-    evidence_type: definition
-    excerpt: 'The timing structure of the forehand loop: start compact, delay the full release, then whip and recover while controlling rhythm.'
-    reason: The speaker repeatedly describes the timing as small first, then big, and says the full action is released later.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: aPf4rc3WJok
-      start_ms: 39866
-      end_ms: 64433
-      url: https://www.youtube.com/watch?v=aPf4rc3WJok&t=39s
-      segment_ids:
-        - aPf4rc3WJok:00010
-        - aPf4rc3WJok:00011
-        - aPf4rc3WJok:00016
-  - id: DaHEb394UtA-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Keep the brushing phase compact and only add forward acceleration at the correct moment of contact.
-    reason: The speaker emphasizes finding the moment of contact, not actively swinging the wrist, and the rhythm of relaxing, accelerating, then braking/stopping.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: DaHEb394UtA
-      start_ms: 17359
-      end_ms: 30760
-      url: https://www.youtube.com/watch?v=DaHEb394UtA&t=17s
-      segment_ids:
-        - DaHEb394UtA:00005
-        - DaHEb394UtA:00006
-        - DaHEb394UtA:00007
-        - DaHEb394UtA:00008
-        - DaHEb394UtA:00009
-        - DaHEb394UtA:00010
-  - id: i-n17lWXlSo-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Keep the loop compact and close to the body, with acceleration concentrated late in the forward swing for control and consistency.
-    reason: The speaker recommends staying close to the ball, keeping the motion around knee height, limiting backswing, and accelerating in the later phase for stability and consistency.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: i-n17lWXlSo
-      start_ms: 340080
-      end_ms: 369720
-      url: https://www.youtube.com/watch?v=i-n17lWXlSo&t=340s
-      segment_ids:
-        - i-n17lWXlSo:00108
-        - i-n17lWXlSo:00109
-        - i-n17lWXlSo:00110
-        - i-n17lWXlSo:00111
-        - i-n17lWXlSo:00112
-        - i-n17lWXlSo:00113
-        - i-n17lWXlSo:00114
-        - i-n17lWXlSo:00115
-        - i-n17lWXlSo:00116
-        - i-n17lWXlSo:00117
-  - id: pIu3jfM0C6k-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Timing the forehand loop to the early falling phase and avoiding rushing the contact point.
-    reason: Compares the rising phase, peak, and early falling phase, then says most players should use the early falling phase.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: pIu3jfM0C6k
-      start_ms: 127566
-      end_ms: 135200
-      url: https://www.youtube.com/watch?v=pIu3jfM0C6k&t=127s
-      segment_ids:
-        - pIu3jfM0C6k:00039
-        - pIu3jfM0C6k:00040
-  - id: PYpTLzDBuME-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Starting preparation early enough that the loop can be hit without being jammed or rushed.
-    reason: Says not to wait until the ball is right in front of the eyes and to prepare the backswing the moment the opponent makes contact.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: PYpTLzDBuME
-      start_ms: 324533
-      end_ms: 352333
-      url: https://www.youtube.com/watch?v=PYpTLzDBuME&t=324s
-      segment_ids:
-        - PYpTLzDBuME:00091
-        - PYpTLzDBuME:00092
-        - PYpTLzDBuME:00093
-        - PYpTLzDBuME:00094
-        - PYpTLzDBuME:00095
-        - PYpTLzDBuME:00096
-        - PYpTLzDBuME:00097
-        - PYpTLzDBuME:00098
-        - PYpTLzDBuME:00099
-  - id: 63bd4-iEh6Y-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Creating a small arc, then accelerating forward after the brushing phase instead of rushing the ball straight ahead.
-    reason: The speaker describes a small arc during ball finding, then driving forward afterward, and contrasts that with pushing straight forward too early.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 63bd4-iEh6Y
-      start_ms: 355966
-      end_ms: 383600
-      url: https://www.youtube.com/watch?v=63bd4-iEh6Y&t=355s
-      segment_ids:
-        - 63bd4-iEh6Y:00101
-        - 63bd4-iEh6Y:00103
-        - 63bd4-iEh6Y:00104
-        - 63bd4-iEh6Y:00105
-  - id: ldoTdAje9n0-concept-forehand-loop-timing-reviewed
-    evidence_type: definition
-    excerpt: Timing for looping that favors waiting for the ball to descend or settle rather than rushing early.
-    reason: The speaker recommends waiting for the ball to drop before looping.
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: ldoTdAje9n0
-      start_ms: 94266
-      end_ms: 105166
-      url: https://www.youtube.com/watch?v=ldoTdAje9n0&t=94s
-      segment_ids:
-        - ldoTdAje9n0:00031
-        - ldoTdAje9n0:00033
-        - ldoTdAje9n0:00034
-  - id: Ji9_Etw6nvo-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Timing the forehand loop by preparing early, staying fluid, and initiating the swing at the right phase of the incoming ball.
-    reason: The speaker emphasizes early judgment, fluid movement, and getting weight, rotation, and stroke ready before the ball arrives.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: Ji9_Etw6nvo
-      start_ms: 398566
-      end_ms: 411700
-      url: https://www.youtube.com/watch?v=Ji9_Etw6nvo&t=398s
-      segment_ids:
-        - Ji9_Etw6nvo:00145
-        - Ji9_Etw6nvo:00146
-        - Ji9_Etw6nvo:00147
-        - Ji9_Etw6nvo:00148
-        - Ji9_Etw6nvo:00149
-        - Ji9_Etw6nvo:00150
-        - Ji9_Etw6nvo:00151
-  - id: Nj4ivxRAizs-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Timing the forehand loop so the motion is compact, well-timed, and coordinated with the incoming ball.
-    reason: The speaker recommends smaller motion and more brushing for better control on forehand loops.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: Nj4ivxRAizs
-      start_ms: 166933
-      end_ms: 174900
-      url: https://www.youtube.com/watch?v=Nj4ivxRAizs&t=166s
-      segment_ids:
-        - Nj4ivxRAizs:00056
-        - Nj4ivxRAizs:00059
-  - id: 7d1fUkOzCjM-concept-loop-up-then-recover-reviewed
-    evidence_type: explanation
-    excerpt: After looping, continue into recovery instead of pausing, so the next attack can follow smoothly.
-    reason: The transcript describes looping, then recovering, and warns against pausing after the loop.
-    confidence: 0.9
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 7d1fUkOzCjM
-      start_ms: 418900
-      end_ms: 447000
-      url: https://www.youtube.com/watch?v=7d1fUkOzCjM&t=418s
-      segment_ids:
-        - 7d1fUkOzCjM:00128
-        - 7d1fUkOzCjM:00129
-        - 7d1fUkOzCjM:00130
-        - 7d1fUkOzCjM:00131
-        - 7d1fUkOzCjM:00132
-        - 7d1fUkOzCjM:00133
-        - 7d1fUkOzCjM:00137
-        - 7d1fUkOzCjM:00138
-        - 7d1fUkOzCjM:00139
-        - 7d1fUkOzCjM:00140
-  - id: Mnse-nAfdO8-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Timing the forehand loop so the player makes space first, then releases the stroke forward.
-    reason: The speaker names the key phrase 'Wait, Space, then Attack forward' and pairs it with accelerating to store energy.
-    confidence: 0.89
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: Mnse-nAfdO8
-      start_ms: 220833
-      end_ms: 227200
-      url: https://www.youtube.com/watch?v=Mnse-nAfdO8&t=220s
-      segment_ids:
-        - Mnse-nAfdO8:00054
-        - Mnse-nAfdO8:00055
-        - Mnse-nAfdO8:00056
-  - id: 5g8d38gLuq8-concept-forehand-loop-timing-reviewed
-    evidence_type: definition
-    excerpt: The decision of whether to contact early on the rise or later on the fall, depending on ball speed, depth, and spin.
-    reason: 'The speaker gives an explicit timing framework: very early for fast balls, later for slower dropping balls, and not at the peak.'
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 5g8d38gLuq8
-      start_ms: 487120
-      end_ms: 515919
-      url: https://www.youtube.com/watch?v=5g8d38gLuq8&t=487s
-      segment_ids:
-        - 5g8d38gLuq8:00154
-        - 5g8d38gLuq8:00155
-        - 5g8d38gLuq8:00156
-        - 5g8d38gLuq8:00157
-        - 5g8d38gLuq8:00158
-        - 5g8d38gLuq8:00159
-        - 5g8d38gLuq8:00160
-        - 5g8d38gLuq8:00161
-        - 5g8d38gLuq8:00162
-  - id: vCa7A9gyOT8-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Forehand loop timing that emphasizes meeting the ball correctly and finishing after contact rather than rushing the swing.
-    reason: The speaker emphasizes contact timing and forward drive instead of immediate or sideways finish.
-    confidence: 0.89
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: vCa7A9gyOT8
-      start_ms: 334833
-      end_ms: 357933
-      url: https://www.youtube.com/watch?v=vCa7A9gyOT8&t=334s
-      segment_ids:
-        - vCa7A9gyOT8:00076
-        - vCa7A9gyOT8:00077
-        - vCa7A9gyOT8:00079
-        - vCa7A9gyOT8:00080
-  - id: LopC3UNnOXM-concept-forehand-loop-timing-reviewed
-    evidence_type: definition
-    excerpt: The timing and tempo adjustments used for forehand topspin, including slowing the rhythm and contacting during the ball's descent to increase spin.
-    reason: The speaker says rhythm is core to spin balls and ties it to waiting for the descending phase.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: LopC3UNnOXM
-      start_ms: 62833
-      end_ms: 89033
-      url: https://www.youtube.com/watch?v=LopC3UNnOXM&t=62s
-      segment_ids:
-        - LopC3UNnOXM:00021
-        - LopC3UNnOXM:00025
-        - LopC3UNnOXM:00026
-        - LopC3UNnOXM:00027
-        - LopC3UNnOXM:00031
-  - id: 6Lw_HobLgSY-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Timing for topspin that delays acceleration until the ball has begun to drop, using a controlled rhythm to improve spin generation.
-    reason: The speaker says the first core element of a spin ball is rhythm and recommends slowing the rhythm and waiting intentionally to generate more spin.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 6Lw_HobLgSY
-      start_ms: 63500
-      end_ms: 76666
-      url: https://www.youtube.com/watch?v=6Lw_HobLgSY&t=63s
-      segment_ids:
-        - 6Lw_HobLgSY:00027
-        - 6Lw_HobLgSY:00030
-        - 6Lw_HobLgSY:00032
-  - id: TtrTmkMdEzo-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Timing a forehand loop by waiting appropriately and matching the movement rhythm to the ball and distance.
-    reason: The speaker emphasizes waiting, rhythm, and adjusting the loop depending on distance from the table.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: TtrTmkMdEzo
-      start_ms: 441466
-      end_ms: 460466
-      url: https://www.youtube.com/watch?v=TtrTmkMdEzo&t=441s
-      segment_ids:
-        - TtrTmkMdEzo:00124
-        - TtrTmkMdEzo:00125
-        - TtrTmkMdEzo:00126
-        - TtrTmkMdEzo:00127
-  - id: igaH-B1hrmY-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Timing the forehand loop to match the incoming ball and avoid rushed execution.
-    reason: Timing is called out as crucial when forehand loops go out of play, especially from the half-pace position.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: igaH-B1hrmY
-      start_ms: 286480
-      end_ms: 307680
-      url: https://www.youtube.com/watch?v=igaH-B1hrmY&t=286s
-      segment_ids:
-        - igaH-B1hrmY:00038
-        - igaH-B1hrmY:00039
-  - id: VEjSu1GhArI-concept-forehand-loop-timing-and-rhythm-reviewed
-    evidence_type: explanation
-    excerpt: Loop timing depends on whether the ball has time to drop and whether the player must use a fast or standard loop rhythm.
-    reason: The speaker contrasts fast and standard loop timing, notes that distance to the table changes the timing, and says the ball must be met on the upward swing path.
-    confidence: 0.88
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: VEjSu1GhArI
-      start_ms: 559333
-      end_ms: 584266
-      url: https://www.youtube.com/watch?v=VEjSu1GhArI&t=559s
-      segment_ids:
-        - VEjSu1GhArI:00120
-        - VEjSu1GhArI:00121
-        - VEjSu1GhArI:00122
-        - VEjSu1GhArI:00123
-        - VEjSu1GhArI:00124
-        - VEjSu1GhArI:00125
-  - id: 87-UYdrPEEc-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: For forehand looping, the backswing should stay relaxed and match the incoming ball’s rhythm before a late acceleration at contact.
-    reason: Explicitly states that looping needs a relaxed backswing, then acceleration, and that the backswing rhythm should match the incoming ball.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: 87-UYdrPEEc
-      start_ms: 585466
-      end_ms: 604366
-      url: https://www.youtube.com/watch?v=87-UYdrPEEc&t=585s
-      segment_ids:
-        - 87-UYdrPEEc:00129
-        - 87-UYdrPEEc:00130
-        - 87-UYdrPEEc:00131
-  - id: uL8In-_NToM-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Timing and rhythm choices for a forehand loop, including taking the ball on the rise or backing up depending on the situation.
-    reason: The speaker contrasts backing up to loop with quick looping on the rise and says timing must change with incoming ball and position.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: uL8In-_NToM
-      start_ms: 638100
-      end_ms: 661366
-      url: https://www.youtube.com/watch?v=uL8In-_NToM&t=638s
-      segment_ids:
-        - uL8In-_NToM:00143
-        - uL8In-_NToM:00147
-  - id: ySM92aDSRPo-concept-forehand-loop-timing-and-rhythm-reviewed
-    evidence_type: explanation
-    excerpt: For backspin-loop attacks, match the ball's rhythm and delay the attack until the descending phase rather than striking too early.
-    reason: The speaker compares rhythms across pushes and service returns and says the optimal looping time is the early descending phase.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: ySM92aDSRPo
-      start_ms: 41933
-      end_ms: 59400
-      url: https://www.youtube.com/watch?v=ySM92aDSRPo&t=41s
-      segment_ids:
-        - ySM92aDSRPo:00009
-        - ySM92aDSRPo:00012
-  - id: GdS4nZDb6ug-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Timing the loop at the top of the bounce or on the rise rather than from a low, distant ball.
-    reason: The speaker says the topspin ball is looped at the top of the bounce or on the rise, which is a direct timing instruction for the loop.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: GdS4nZDb6ug
-      start_ms: 300133
-      end_ms: 306033
-      url: https://www.youtube.com/watch?v=GdS4nZDb6ug&t=300s
-      segment_ids:
-        - GdS4nZDb6ug:00065
-  - id: krlH8_UzRRM-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Forehand looping requires timing the swing to the ball's descent or bounce phase so the player can accelerate at the correct moment without rushing.
-    reason: The speaker links footwork delay to missing the loop window and explains that timing changes with whether the ball is dropping or still high.
-    confidence: 0.91
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: krlH8_UzRRM
-      start_ms: 396233
-      end_ms: 415833
-      url: https://www.youtube.com/watch?v=krlH8_UzRRM&t=396s
-      segment_ids:
-        - krlH8_UzRRM:00087
-        - krlH8_UzRRM:00088
-        - krlH8_UzRRM:00089
-        - krlH8_UzRRM:00090
-        - krlH8_UzRRM:00091
-  - id: f7Bf-QRn-9Q-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: The timing pattern of a forehand loop, especially a slow-relaxed preparation followed by a fast snap at contact.
-    reason: The speaker describes a clear 'relax... SNAP' rhythm and a slow-fast tempo pattern as the loop rhythm.
-    confidence: 0.93
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: f7Bf-QRn-9Q
-      start_ms: 891300
-      end_ms: 901833
-      url: https://www.youtube.com/watch?v=f7Bf-QRn-9Q&t=891s
-      segment_ids:
-        - f7Bf-QRn-9Q:00188
-  - id: QqMAsM2mtk4-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Waiting for the ball to reach the right phase and maintaining a calm rhythm before accelerating into the loop.
-    reason: The speaker says to slow the rhythm against backspin, wait for the ball to start dropping, and only then begin the forearm closure and finish the stroke.
-    confidence: 0.97
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: QqMAsM2mtk4
-      start_ms: 268966
-      end_ms: 290800
-      url: https://www.youtube.com/watch?v=QqMAsM2mtk4&t=268s
-      segment_ids:
-        - QqMAsM2mtk4:00056
-        - QqMAsM2mtk4:00058
-  - id: -uuSx6fU8yY-concept-forehand-loop-timing-reviewed
-    evidence_type: definition
-    excerpt: A forehand looping rhythm that includes a brief pause and waits for the ball instead of rushing the swing.
-    reason: The coach says looping requires timing, should be done from farther back, and should include waiting and pausing for the ball.
-    confidence: 0.99
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: -uuSx6fU8yY
-      start_ms: 499866
-      end_ms: 527066
-      url: https://www.youtube.com/watch?v=-uuSx6fU8yY&t=499s
-      segment_ids:
-        - -uuSx6fU8yY:00094
-        - -uuSx6fU8yY:00097
-        - -uuSx6fU8yY:00098
-        - -uuSx6fU8yY:00099
-  - id: hRHJawAZzNc-concept-forehand-loop-timing-reviewed
-    evidence_type: definition
-    excerpt: Timing and sequencing the loop so the stroke drives forward first and then lifts upward, instead of going straight up.
-    reason: The transcript explains when to use more forward drive versus more upward lift, and explicitly states the sequence should be 'forward, then up.'
-    confidence: 0.95
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: hRHJawAZzNc
-      start_ms: 371500
-      end_ms: 392100
-      url: https://www.youtube.com/watch?v=hRHJawAZzNc&t=371s
-      segment_ids:
-        - hRHJawAZzNc:00073
-        - hRHJawAZzNc:00074
-        - hRHJawAZzNc:00075
-  - id: CGidweVwLYw-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Timing guidance for the forehand loop that places contact just after the bounce peak or on the rise for the faster countering variant.
-    reason: The speaker gives explicit contact timing for the forehand topspin loop and quick counter.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: CGidweVwLYw
-      start_ms: 530800
-      end_ms: 538300
-      url: https://www.youtube.com/watch?v=CGidweVwLYw&t=530s
-      segment_ids:
-        - CGidweVwLYw:00116
-  - id: eDDICo0Damw-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: 'The timing rule for looping backspin: do not contact at the peak; use the early falling phase so power and contact synchronize more easily.'
-    reason: The speaker explicitly recommends the early falling phase over peak contact for amateur players.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: eDDICo0Damw
-      start_ms: 364000
-      end_ms: 390066
-      url: https://www.youtube.com/watch?v=eDDICo0Damw&t=364s
-      segment_ids:
-        - eDDICo0Damw:00078
-        - eDDICo0Damw:00079
-        - eDDICo0Damw:00080
-        - eDDICo0Damw:00081
-  - id: WuWV6MlZQ_Q-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Timing the forehand loop so the preparation, footwork, and racket drop happen after the feet land rather than too early.
-    reason: The speaker repeatedly ties the serve-and-attack rhythm to feet landing before the racket drops for backswing, which is timing and rhythm control for the attack stroke.
-    confidence: 0.92
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: WuWV6MlZQ_Q
-      start_ms: 646800
-      end_ms: 660233
-      url: https://www.youtube.com/watch?v=WuWV6MlZQ_Q&t=646s
-      segment_ids:
-        - WuWV6MlZQ_Q:00132
-        - WuWV6MlZQ_Q:00133
-  - id: 7JSZZSSjCqo-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Forehand topspin timing should match the ball's drop phase and the opponent's pace, adjusting frequency rather than forcing a different rhythm.
-    reason: The speaker describes a drop-then-swing rhythm and explicitly instructs matching the opponent's rhythm rather than rushing or lagging behind.
-    confidence: 0.94
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 7JSZZSSjCqo
-      start_ms: 615300
-      end_ms: 636000
-      url: https://www.youtube.com/watch?v=7JSZZSSjCqo&t=615s
-      segment_ids:
-        - 7JSZZSSjCqo:00129
-        - 7JSZZSSjCqo:00130
-        - 7JSZZSSjCqo:00131
-        - 7JSZZSSjCqo:00132
-        - 7JSZZSSjCqo:00133
-  - id: HLmkP4I2jqM-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: The rhythm and timing pattern needed to execute a forehand loop consistently against different ball types.
-    reason: The speaker emphasizes correct rhythm for each ball type and identifies separate rhythms for driving, looping topspin, and looping backspin.
-    confidence: 0.98
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: HLmkP4I2jqM
-      start_ms: 61633
-      end_ms: 90433
-      url: https://www.youtube.com/watch?v=HLmkP4I2jqM&t=61s
-      segment_ids:
-        - HLmkP4I2jqM:00012
-        - HLmkP4I2jqM:00016
-        - HLmkP4I2jqM:00017
-  - id: iDtbFPNdNBc-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Using a controlled wait-and-swing rhythm for looping, especially starting the motion as the ball reaches peak or begins to descend.
-    reason: The speaker says you can wait, then power loop, and that the timing should support a powerful forward stroke and rhythm in rally play.
-    confidence: 0.95
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: iDtbFPNdNBc
-      start_ms: 78966
-      end_ms: 94566
-      url: https://www.youtube.com/watch?v=iDtbFPNdNBc&t=78s
-      segment_ids:
-        - iDtbFPNdNBc:00018
-        - iDtbFPNdNBc:00019
-        - iDtbFPNdNBc:00020
-        - iDtbFPNdNBc:00021
-  - id: 52Lq-QQGqpw-concept-forehand-loop-timing-and-rhythm-reviewed
-    evidence_type: explanation
-    excerpt: Timing for the forehand loop that uses a phased A-B-C motion, brushes first, then accelerates into the finish, and preserves rhythm through a longer backswing.
-    reason: The speaker explicitly describes three points in the loop, a whipping phase, and acceleration after brushing the ball to finish the stroke.
-    confidence: 0.96
-    visual_status: not_visual
-    review_status: unreviewed
-    source:
-      video_id: 52Lq-QQGqpw
-      start_ms: 539933
-      end_ms: 549300
-      url: https://www.youtube.com/watch?v=52Lq-QQGqpw&t=539s
-      segment_ids:
-        - 52Lq-QQGqpw:00087
-        - 52Lq-QQGqpw:00088
-  - id: XaU6LtcP_n0-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: Forehand looping should be timed by waiting for the ball, then accelerating with correct rhythm instead of rushing.
-    reason: The speaker tells the player to wait for the ball, not rush, and to find the ball before starting the stroke.
-    confidence: 0.9
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: XaU6LtcP_n0
-      start_ms: 235700
-      end_ms: 248233
-      url: https://www.youtube.com/watch?v=XaU6LtcP_n0&t=235s
-      segment_ids:
-        - XaU6LtcP_n0:00047
-  - id: dGUGcaM8EOc-concept-forehand-loop-timing-reviewed
-    evidence_type: explanation
-    excerpt: The pace and timing pattern needed to sustain repeated forehand loops.
-    reason: The speaker says continuous looping is about finding rhythm and contact point and instructs the student to slow the rhythm first.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: unreviewed
-    source:
-      video_id: dGUGcaM8EOc
-      start_ms: 10880
-      end_ms: 30480
-      url: https://www.youtube.com/watch?v=dGUGcaM8EOc&t=10s
-      segment_ids:
-        - dGUGcaM8EOc:00005
-        - dGUGcaM8EOc:00006
-        - dGUGcaM8EOc:00008
-        - dGUGcaM8EOc:00009
-        - dGUGcaM8EOc:00012
-        - dGUGcaM8EOc:00013
-  - id: 2Wk2xe0I1s8-concept-forehand-loop-timing-codex-reviewed
-    evidence_type: explanation
-    excerpt: If I wait, the ball will eventually come to me. I'll hit it at its latest point, when it's closer to me, and I won't need to adjust my feet.
-    reason: This contiguous 19.3-second span directly explains delaying contact so the ball comes closer, avoiding reaching and foot adjustment. It supports the existing forehand-loop timing concept, but not the proposal's claims about forward-up swing, half-long balls, backspin, or intermediate level.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 2Wk2xe0I1s8
-      start_ms: 445433
-      end_ms: 464733
-      url: https://www.youtube.com/watch?v=2Wk2xe0I1s8&t=445s
-      segment_ids:
-        - 2Wk2xe0I1s8:00095
-        - 2Wk2xe0I1s8:00096
-        - 2Wk2xe0I1s8:00097
-        - 2Wk2xe0I1s8:00098
-  - id: 6Lw_HobLgSY-concept-forehand-loop-timing-codex-reviewed
-    evidence_type: explanation
-    excerpt: 'In topspin, maintain a controlled rhythm: slow down and wait for the ball to drop from its highest point before brushing it.'
-    reason: This contiguous 17-second span directly explains rhythm as a core element of topspin, recommends slowing down, and specifies waiting for the ball to drop before brushing.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: 6Lw_HobLgSY
-      start_ms: 63500
-      end_ms: 80766
-      url: https://www.youtube.com/watch?v=6Lw_HobLgSY&t=63s
-      segment_ids:
-        - 6Lw_HobLgSY:00027
-        - 6Lw_HobLgSY:00028
-        - 6Lw_HobLgSY:00029
-        - 6Lw_HobLgSY:00030
-        - 6Lw_HobLgSY:00031
-        - 6Lw_HobLgSY:00032
-        - 6Lw_HobLgSY:00033
-        - 6Lw_HobLgSY:00034
-  - id: GdS4nZDb6ug-concept-forehand-loop-timing-codex-reviewed
-    evidence_type: explanation
-    excerpt: Loop a topspin ball at the top of the bounce or on the rise, rather than fishing a low ball from a distance.
-    reason: This segment directly explains the loop's timing relative to the bounce and contrasts it with taking a low ball from a distance, supporting the existing forehand loop timing concept.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: GdS4nZDb6ug
-      start_ms: 300133
-      end_ms: 306033
-      url: https://www.youtube.com/watch?v=GdS4nZDb6ug&t=300s
-      segment_ids:
-        - GdS4nZDb6ug:00065
-  - id: krlH8_UzRRM-concept-forehand-loop-timing-codex-reviewed
-    evidence_type: explanation
-    excerpt: When you move to your forehand, by the time the ball is at table height, it's already too late to hit a loop drive. At this high point, you can drive it. At this lower point, you can't. And if it drops even more, you certainly can't. But for most players, by the time they arrive, the ball is already at this low point, and the chance to drive it is gone. This is why our loops fail.
-    reason: These contiguous segments explain that arriving late causes the ball to drop below the effective loop-drive timing window, directly supporting the concept of forehand loop timing.
-    confidence: 0.94
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: krlH8_UzRRM
-      start_ms: 378700
-      end_ms: 405633
-      url: https://www.youtube.com/watch?v=krlH8_UzRRM&t=378s
-      segment_ids:
-        - krlH8_UzRRM:00084
-        - krlH8_UzRRM:00085
-        - krlH8_UzRRM:00086
-        - krlH8_UzRRM:00087
-        - krlH8_UzRRM:00088
-        - krlH8_UzRRM:00089
-  - id: LopC3UNnOXM-concept-forehand-loop-timing-codex-reviewed
-    evidence_type: explanation
-    excerpt: When the rhythm is disrupted, slightly lower the tempo and intentionally wait for the right moment to generate more spin and better combine the elements of a high-throw topspin.
-    reason: This contiguous span directly explains slowing the tempo and waiting intentionally to generate more spin for high-throw topspin. The supplied concept is the same durable forehand loop timing topic, so the existing concept should be used.
-    confidence: 0.98
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: LopC3UNnOXM
-      start_ms: 116300
-      end_ms: 133100
-      url: https://www.youtube.com/watch?v=LopC3UNnOXM&t=116s
-      segment_ids:
-        - LopC3UNnOXM:00040
-        - LopC3UNnOXM:00041
-        - LopC3UNnOXM:00042
-        - LopC3UNnOXM:00043
-        - LopC3UNnOXM:00044
-        - LopC3UNnOXM:00045
-  - id: mYzbo93Nkps-concept-forehand-loop-timing-codex-reviewed
-    evidence_type: explanation
-    excerpt: I wait for the ball to enter the falling phase. It's much easier to loop. During a push rally, if you want to loop first, you must wait for the falling phase.
-    reason: This contiguous 13.24-second span directly explains waiting for the ball’s falling phase before looping and links that timing to easier coordination.
-    confidence: 0.97
-    visual_status: not_visual
-    review_status: approved
-    source:
-      video_id: mYzbo93Nkps
-      start_ms: 400
-      end_ms: 13640
-      url: https://www.youtube.com/watch?v=mYzbo93Nkps&t=0s
-      segment_ids:
-        - mYzbo93Nkps:00000
-        - mYzbo93Nkps:00001
-        - mYzbo93Nkps:00002
-        - mYzbo93Nkps:00003
-        - mYzbo93Nkps:00004
-        - mYzbo93Nkps:00005
-  - id: J7Lm5IL-ggs-concept-loop-timing-and-rhythm-codex-reviewed
-    evidence_type: explanation
-    excerpt: The loop requires relaxation through the backswing, followed by acceleration at the instant of the upward swing.
-    reason: These contiguous segments directly explain the loop's relaxed preparation and late acceleration, matching the existing forehand loop timing concept.
-    confidence: 0.96
-    visual_status: transcript_inferred
-    review_status: approved
-    source:
-      video_id: J7Lm5IL-ggs
-      start_ms: 293033
-      end_ms: 307533
-      url: https://www.youtube.com/watch?v=J7Lm5IL-ggs&t=293s
-      segment_ids:
-        - J7Lm5IL-ggs:00066
-        - J7Lm5IL-ggs:00067
-        - J7Lm5IL-ggs:00068
+- id: timing-late-acceleration-global
+  evidence_type: explanation
+  excerpt: Keep the swing relaxed until just before contact rather than forceful
+    from the beginning; starting force just before contact is called late-stage
+    acceleration.
+  reason: Stay relaxed while approaching the ball, then apply force just before
+    contact.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  visual_source:
+    video_id: qLT0MvwitZc
+    start_ms: 96000
+    end_ms: 106000
+    url: https://www.youtube.com/watch?v=qLT0MvwitZc&t=96s
+    selection_method: nearby_visual_inference
+    note: Proposed timing example; complete footage inspection remains pending.
+  review_status: approved
+  source:
+    video_id: "qLT0MvwitZc"
+    start_ms: 83533
+    end_ms: 106766
+    url: "https://www.youtube.com/watch?v=qLT0MvwitZc&t=83s"
+    segment_ids:
+    - "qLT0MvwitZc:00020"
+    - "qLT0MvwitZc:00021"
+    - "qLT0MvwitZc:00022"
+    - "qLT0MvwitZc:00023"
+    - "qLT0MvwitZc:00024"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+- id: timing-wait-rhythm-global
+  evidence_type: demonstration
+  excerpt: "For a slow ball, use the rhythm “wait, loop”; for a fast ball, still wait,
+    then go quick."
+  reason: Retain the wait while changing the stroke speed for the incoming pace.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  visual_source:
+    video_id: XfWXrGTlW5M
+    start_ms: 294000
+    end_ms: 306000
+    url: https://www.youtube.com/watch?v=XfWXrGTlW5M&t=294s
+    selection_method: nearby_visual_inference
+    note: Proposed timing example; complete footage inspection remains pending.
+  review_status: approved
+  source:
+    video_id: "XfWXrGTlW5M"
+    start_ms: 303966
+    end_ms: 309300
+    url: "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=303s"
+    segment_ids:
+    - "XfWXrGTlW5M:00074"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+- id: timing-relax-contact-spinmaster
+  evidence_type: correction
+  excerpt: Before the hand touches the ball, stay relaxed; accelerate and apply
+    force at contact rather than from the beginning of the forward swing.
+  reason: Keep the lead-in relaxed and apply force at contact.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  visual_source:
+    video_id: dWZw3A0X-4A
+    start_ms: 521000
+    end_ms: 533000
+    url: https://www.youtube.com/watch?v=dWZw3A0X-4A&t=521s
+    selection_method: nearby_visual_inference
+    note: Proposed timing example; complete footage inspection remains pending.
+  review_status: approved
+  source:
+    video_id: "dWZw3A0X-4A"
+    start_ms: 536880
+    end_ms: 551920
+    url: "https://www.youtube.com/watch?v=dWZw3A0X-4A&t=536s"
+    segment_ids:
+    - "dWZw3A0X-4A:00178"
+    - "dWZw3A0X-4A:00179"
+    - "dWZw3A0X-4A:00180"
+    - "dWZw3A0X-4A:00181"
+    - "dWZw3A0X-4A:00182"
+    - "dWZw3A0X-4A:00183"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+- id: I99BjizeWeE-cand-early-falling-phase-timing-1
+  evidence_type: drill
+  excerpt: In rally practice, take the early falling phase without using power
+    and let the wrist drive the forearm.
+  reason: Use the early-falling timing and no-power wrist-led cue in this rally
+    practice.
+  confidence: 0.8
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "I99BjizeWeE"
+    start_ms: 308933
+    end_ms: 319066
+    url: "https://www.youtube.com/watch?v=I99BjizeWeE&t=308s"
+    segment_ids:
+    - "I99BjizeWeE:00095"
+    - "I99BjizeWeE:00096"
+    - "I99BjizeWeE:00097"
+    - "I99BjizeWeE:00098"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
+- id: XfWXrGTlW5M-concept-rhythm-synchronization-looping-2
+  evidence_type: explanation
+  excerpt: The rhythm is unchanged while swing and contact speed increase.
+    Adjust the stroke to the pace of the incoming ball rather than looping every
+    shot at one speed.
+  reason: Adjust stroke speed to the incoming ball rather than looping every
+    ball at one speed.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "XfWXrGTlW5M"
+    start_ms: 336133
+    end_ms: 351400
+    url: "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=336s"
+    segment_ids:
+    - "XfWXrGTlW5M:00081"
+    - "XfWXrGTlW5M:00082"
+    - "XfWXrGTlW5M:00083"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
+- id: XfWXrGTlW5M-concept-rhythm-synchronization-looping-3
+  evidence_type: mistake
+  excerpt: In consecutive-loop practice, the speaker identifies a rushed second
+    shot against a slow ball and says many second-ball errors come from rhythm
+    rather than technique.
+  reason: Avoid rushing the second loop when the next ball is slow.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "XfWXrGTlW5M"
+    start_ms: 423933
+    end_ms: 443633
+    url: "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=423s"
+    segment_ids:
+    - "XfWXrGTlW5M:00097"
+    - "XfWXrGTlW5M:00098"
+    - "XfWXrGTlW5M:00099"
+    - "XfWXrGTlW5M:00100"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
+- id: XfWXrGTlW5M-concept-rhythm-synchronization-looping-4
+  evidence_type: correction
+  excerpt: The speaker says the player did not change technique, but added the
+    “wait.”
+  reason: Add the waiting beat in this coaching example rather than changing the
+    technique.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "XfWXrGTlW5M"
+    start_ms: 443633
+    end_ms: 449833
+    url: "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=443s"
+    segment_ids:
+    - "XfWXrGTlW5M:00101"
+    - "XfWXrGTlW5M:00102"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
+- id: 0eMDTeOBR5A-cand-forehand-loop-timing-early-descent-1
+  evidence_type: explanation
+  excerpt: For a normal-quality return, the speaker recommends looping at early
+    descent as the ball starts dropping. As footwork and anticipation improve,
+    try earlier contact at the peak and eventually on the rise.
+  reason: Begin with early descent for this normal-quality return, then progress
+    earlier as footwork and anticipation improve.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "0eMDTeOBR5A"
+    start_ms: 9560
+    end_ms: 31840
+    url: "https://www.youtube.com/watch?v=0eMDTeOBR5A&t=9s"
+    segment_ids:
+    - "0eMDTeOBR5A:00002"
+    - "0eMDTeOBR5A:00003"
+    - "0eMDTeOBR5A:00004"
+    - "0eMDTeOBR5A:00005"
+    - "0eMDTeOBR5A:00006"
+    - "0eMDTeOBR5A:00007"
+    - "0eMDTeOBR5A:00008"
+    - "0eMDTeOBR5A:00009"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
+- id: 0eMDTeOBR5A-cand-forehand-loop-timing-early-descent-2
+  evidence_type: demonstration
+  excerpt: The speaker recommends amateurs loop at early descent just after the
+    peak. For a normal-quality return, the start of the drop is described as the
+    most reliable point.
+  reason: Use the early-descent cue for the normal-quality return described
+    here.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "0eMDTeOBR5A"
+    start_ms: 303040
+    end_ms: 330160
+    url: "https://www.youtube.com/watch?v=0eMDTeOBR5A&t=303s"
+    segment_ids:
+    - "0eMDTeOBR5A:00102"
+    - "0eMDTeOBR5A:00103"
+    - "0eMDTeOBR5A:00104"
+    - "0eMDTeOBR5A:00105"
+    - "0eMDTeOBR5A:00106"
+    - "0eMDTeOBR5A:00107"
+    - "0eMDTeOBR5A:00108"
+    - "0eMDTeOBR5A:00109"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
+- id: 0eMDTeOBR5A-cand-forehand-loop-timing-early-descent-3
+  evidence_type: demonstration
+  excerpt: Start at early descent, then move earlier to the peak as footwork and
+    anticipation improve, eventually taking the rise like professionals.
+  reason: Progress from early descent toward earlier contact as anticipation and
+    footwork improve.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "0eMDTeOBR5A"
+    start_ms: 333120
+    end_ms: 343040
+    url: "https://www.youtube.com/watch?v=0eMDTeOBR5A&t=333s"
+    segment_ids:
+    - "0eMDTeOBR5A:00110"
+    - "0eMDTeOBR5A:00111"
+    - "0eMDTeOBR5A:00112"
+    - "0eMDTeOBR5A:00113"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
+- id: 0eMDTeOBR5A-cand-forehand-loop-timing-early-descent-4
+  evidence_type: demonstration
+  excerpt: Loop at the peak or on the rise only when the opponent’s push is slow
+    and you are already in position; otherwise use early descent.
+  reason: Keep the slow-push and already-in-position conditions for the
+    earlier-contact option.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "0eMDTeOBR5A"
+    start_ms: 394160
+    end_ms: 403880
+    url: "https://www.youtube.com/watch?v=0eMDTeOBR5A&t=394s"
+    segment_ids:
+    - "0eMDTeOBR5A:00133"
+    - "0eMDTeOBR5A:00134"
+    - "0eMDTeOBR5A:00135"
+    - "0eMDTeOBR5A:00136"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
+- id: 0eMDTeOBR5A-cand-opening-loop-backswing-speed-matching-1
+  evidence_type: explanation
+  excerpt: On backspin, choose release timing from the opponent’s push quality.
+    Keep the hand in front and backswing as the ball crosses the net, matching
+    backswing speed to the incoming ball.
+  reason: Match backswing timing and speed to the incoming push in this backspin
+    lesson.
+  confidence: 0.82
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "0eMDTeOBR5A"
+    start_ms: 344160
+    end_ms: 365800
+    url: "https://www.youtube.com/watch?v=0eMDTeOBR5A&t=344s"
+    segment_ids:
+    - "0eMDTeOBR5A:00114"
+    - "0eMDTeOBR5A:00115"
+    - "0eMDTeOBR5A:00116"
+    - "0eMDTeOBR5A:00117"
+    - "0eMDTeOBR5A:00118"
+    - "0eMDTeOBR5A:00119"
+    - "0eMDTeOBR5A:00120"
+    - "0eMDTeOBR5A:00121"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
+- id: 0eMDTeOBR5A-cand-opening-loop-backswing-speed-matching-2
+  evidence_type: explanation
+  excerpt: A fast ball calls for quick backswing and release; a slow ball uses a
+    slow backswing and fast release. Do not pause and wait; adjust backswing
+    speed to the ball.
+  reason: Adjust backswing speed while preserving the fast-release cue in this
+    example.
+  confidence: 0.82
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "0eMDTeOBR5A"
+    start_ms: 368360
+    end_ms: 385120
+    url: "https://www.youtube.com/watch?v=0eMDTeOBR5A&t=368s"
+    segment_ids:
+    - "0eMDTeOBR5A:00122"
+    - "0eMDTeOBR5A:00123"
+    - "0eMDTeOBR5A:00124"
+    - "0eMDTeOBR5A:00125"
+    - "0eMDTeOBR5A:00126"
+    - "0eMDTeOBR5A:00127"
+    - "0eMDTeOBR5A:00128"
+  spoken_context_start_ms: 368360
+  spoken_context_end_ms:
+  visual_source:
+- id: f7uZPRPIwpU-concept-forehand-loop-timing-1
+  evidence_type: explanation
+  excerpt: 'The speaker says there is plenty of time: watch the ball first and stop
+    rushing the point.'
+  reason: Watch the ball first rather than rushing.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "f7uZPRPIwpU"
+    start_ms: 31120
+    end_ms: 39160
+    url: "https://www.youtube.com/watch?v=f7uZPRPIwpU&t=31s"
+    segment_ids:
+    - "f7uZPRPIwpU:00011"
+    - "f7uZPRPIwpU:00012"
+    - "f7uZPRPIwpU:00013"
+    - "f7uZPRPIwpU:00014"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
+- id: f7uZPRPIwpU-concept-forehand-loop-timing-2
+  evidence_type: explanation
+  excerpt: The speaker criticizes backswinging before looking at the ball and
+    says to base backswing rhythm on the opponent’s rhythm. For a semi-high
+    ball, move first, find the ball, then pull back.
+  reason: For the semi-high-ball example, move and find the ball before pulling
+    back.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "f7uZPRPIwpU"
+    start_ms: 144200
+    end_ms: 173880
+    url: "https://www.youtube.com/watch?v=f7uZPRPIwpU&t=144s"
+    segment_ids:
+    - "f7uZPRPIwpU:00057"
+    - "f7uZPRPIwpU:00058"
+    - "f7uZPRPIwpU:00059"
+    - "f7uZPRPIwpU:00060"
+    - "f7uZPRPIwpU:00061"
+    - "f7uZPRPIwpU:00062"
+    - "f7uZPRPIwpU:00063"
+    - "f7uZPRPIwpU:00064"
+    - "f7uZPRPIwpU:00065"
+    - "f7uZPRPIwpU:00066"
+    - "f7uZPRPIwpU:00067"
+    - "f7uZPRPIwpU:00068"
+    - "f7uZPRPIwpU:00069"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
+- id: f7uZPRPIwpU-concept-forehand-loop-timing-3
+  evidence_type: explanation
+  excerpt: As the ball bounces up and the swing approaches, backswing in one
+    continuous motion rather than pulling back and waiting. The speaker also
+    says to recognize a short ball before pulling, and that delaying the
+    backswing can still land a very short ball.
+  reason: Decide to hit before backswinging, keeping the selected action fluid
+    rather than pulling early and waiting.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "f7uZPRPIwpU"
+    start_ms: 183040
+    end_ms: 210160
+    url: "https://www.youtube.com/watch?v=f7uZPRPIwpU&t=183s"
+    segment_ids:
+    - "f7uZPRPIwpU:00074"
+    - "f7uZPRPIwpU:00075"
+    - "f7uZPRPIwpU:00076"
+    - "f7uZPRPIwpU:00077"
+    - "f7uZPRPIwpU:00078"
+    - "f7uZPRPIwpU:00079"
+    - "f7uZPRPIwpU:00080"
+    - "f7uZPRPIwpU:00081"
+    - "f7uZPRPIwpU:00082"
+    - "f7uZPRPIwpU:00083"
+    - "f7uZPRPIwpU:00084"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
+- id: t3HX8AEujWw-c3-1
+  evidence_type: definition
+  excerpt: For continuous forehand topspin looping, the speaker identifies early
+    descent as the contact phase.
+  reason: Use early-descending contact for the stated continuous forehand
+    topspin loop.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "t3HX8AEujWw"
+    start_ms: 42960
+    end_ms: 53120
+    url: "https://www.youtube.com/watch?v=t3HX8AEujWw&t=42s"
+    segment_ids:
+    - "t3HX8AEujWw:00018"
+    - "t3HX8AEujWw:00019"
+    - "t3HX8AEujWw:00020"
+    - "t3HX8AEujWw:00021"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
+- id: t3HX8AEujWw-c3-2
+  evidence_type: explanation
+  excerpt: Beginners are directed to loop at early descent because the peak does
+    not leave enough time.
+  reason: Use the early-descent beginner cue instead of rushing to the peak.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "t3HX8AEujWw"
+    start_ms: 51800
+    end_ms: 59120
+    url: "https://www.youtube.com/watch?v=t3HX8AEujWw&t=51s"
+    segment_ids:
+    - "t3HX8AEujWw:00022"
+    - "t3HX8AEujWw:00023"
+    - "t3HX8AEujWw:00024"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
+- id: t3HX8AEujWw-c3-3
+  evidence_type: drill
+  excerpt: 'Let the ball reach its peak and begin dropping, then swing: one drop,
+    one swing.'
+  reason: Wait for the peak and beginning of the drop before swinging in this
+    example.
+  confidence: 0.88
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "t3HX8AEujWw"
+    start_ms: 154560
+    end_ms: 161680
+    url: "https://www.youtube.com/watch?v=t3HX8AEujWw&t=154s"
+    segment_ids:
+    - "t3HX8AEujWw:00067"
+    - "t3HX8AEujWw:00068"
+    - "t3HX8AEujWw:00069"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
+- id: XfWXrGTlW5M-concept-backswing-with-the-ball-1
+  evidence_type: explanation
+  excerpt: In this forehand-structure correction, start the forward swing when
+    the ball hits the table rather than too early. The speaker diagnoses the
+    racket already being too far out by the bounce, leaving the player reaching.
+  reason: Time the forward swing to the bounce in this correction instead of
+    reaching out early.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "XfWXrGTlW5M"
+    start_ms: 167633
+    end_ms: 183966
+    url: "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=167s"
+    segment_ids:
+    - "XfWXrGTlW5M:00040"
+    - "XfWXrGTlW5M:00041"
+    - "XfWXrGTlW5M:00042"
+    - "XfWXrGTlW5M:00043"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
+- id: XfWXrGTlW5M-concept-backswing-with-the-ball-2
+  evidence_type: explanation
+  excerpt: 'Time the backswing with the ball: when the opponent contacts it, judge
+    placement and trajectory, then follow that path with the backswing instead of
+    pulling back first.'
+  reason: Judge the incoming placement and path before following it with the
+    backswing.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "XfWXrGTlW5M"
+    start_ms: 199666
+    end_ms: 211433
+    url: "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=199s"
+    segment_ids:
+    - "XfWXrGTlW5M:00049"
+    - "XfWXrGTlW5M:00050"
+    - "XfWXrGTlW5M:00051"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
+- id: XfWXrGTlW5M-concept-backswing-with-the-ball-3
+  evidence_type: mistake
+  excerpt: Starting the backswing before the opponent has even served is
+    identified as preventing the player from synchronizing power.
+  reason: Avoid starting the backswing before the opponent serves in this
+    example.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "XfWXrGTlW5M"
+    start_ms: 186466
+    end_ms: 193466
+    url: "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=186s"
+    segment_ids:
+    - "XfWXrGTlW5M:00045"
+    - "XfWXrGTlW5M:00046"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
+- id: 1fHWnt8IlbI-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Timing the loop at the rising point, peak, or early drop and waiting
+    so the ball can be contacted at the right moment.
+  reason: 'The speaker gives three timing options for looping half-long balls: rising
+    point, peak, and early drop.'
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 1fHWnt8IlbI
+    start_ms: 44160
+    end_ms: 55480
+    url: https://www.youtube.com/watch?v=1fHWnt8IlbI&t=44s
+    segment_ids:
+    - 1fHWnt8IlbI:00020
+    - 1fHWnt8IlbI:00021
+    - 1fHWnt8IlbI:00022
+    - 1fHWnt8IlbI:00023
+    - 1fHWnt8IlbI:00024
+- id: Aaaxi0DOZzQ-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Time the backswing, contact, and forward swing so the stroke begins
+    before or at the bounce depending on the ball trajectory, not after the
+    bounce.
+  reason: The speaker says to slow the loading rhythm, contact first, then drive
+    upward, and distinguishes peak timing from drop timing.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Aaaxi0DOZzQ
+    start_ms: 531440
+    end_ms: 545520
+    url: https://www.youtube.com/watch?v=Aaaxi0DOZzQ&t=531s
+    segment_ids:
+    - Aaaxi0DOZzQ:00197
+    - Aaaxi0DOZzQ:00202
+- id: D9ZAPb_65Hk-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Timing the forehand loop so the stroke stays fluid, with a relaxed
+    backswing and timely release.
+  reason: The speaker specifically mentions the forehand loop and says to relax
+    the backswing to stay fluid.
+  confidence: 0.86
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: D9ZAPb_65Hk
+    start_ms: 366720
+    end_ms: 374560
+    url: https://www.youtube.com/watch?v=D9ZAPb_65Hk&t=366s
+    segment_ids:
+    - D9ZAPb_65Hk:00119
+    - D9ZAPb_65Hk:00120
+    - D9ZAPb_65Hk:00121
+- id: pE5PLAr9iaA-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Adjusting a forehand loop to the ball's rise, peak, or drop while
+    maintaining a usable rhythm.
+  reason: The speaker explicitly frames rhythm control around looping on the
+    rising ball, peak, and drop, and says rhythm must be mastered in practice
+    first.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: pE5PLAr9iaA
+    start_ms: 37560
+    end_ms: 64080
+    url: https://www.youtube.com/watch?v=pE5PLAr9iaA&t=37s
+    segment_ids:
+    - pE5PLAr9iaA:00015
+    - pE5PLAr9iaA:00016
+    - pE5PLAr9iaA:00017
+    - pE5PLAr9iaA:00019
+- id: PFPu_pKZ9TI-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Timing the loop so the body and hand are set before contact, avoiding
+    early backswing and snatching, and meeting the ball at the right bounce
+    phase.
+  reason: The speaker contrasts peak timing with rising-point and late-contact
+    mistakes, repeatedly emphasizing meeting the peak and not waiting for it.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: PFPu_pKZ9TI
+    start_ms: 172680
+    end_ms: 198120
+    url: https://www.youtube.com/watch?v=PFPu_pKZ9TI&t=172s
+    segment_ids:
+    - PFPu_pKZ9TI:00054
+    - PFPu_pKZ9TI:00055
+    - PFPu_pKZ9TI:00056
+    - PFPu_pKZ9TI:00057
+    - PFPu_pKZ9TI:00058
+    - PFPu_pKZ9TI:00061
+    - PFPu_pKZ9TI:00062
+    - PFPu_pKZ9TI:00063
+- id: -1uBDv1Aq7A-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Timing the loop to meet the ball on the rising phase instead of at
+    the lowest point, so the incoming spin can be used rather than fought.
+  reason: The summary says not to loop at the lowest point and to use the rising
+    phase to borrow the spin.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: -1uBDv1Aq7A
+    start_ms: 679040
+    end_ms: 690000
+    url: https://www.youtube.com/watch?v=-1uBDv1Aq7A&t=679s
+    segment_ids:
+    - -1uBDv1Aq7A:00189
+    - -1uBDv1Aq7A:00190
+    - -1uBDv1Aq7A:00191
+    - -1uBDv1Aq7A:00192
+  spoken_context_start_ms: 677040
+- id: ONXmZHozLTA-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: For heavy spin, contact should be made in the falling phase rather
+    than the rising or peak phase, with acceleration timed to the ball's
+    descent.
+  reason: The speaker explicitly says heavy spin should be generated in the
+    early to late falling phase and not at the peak or rising phase.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: ONXmZHozLTA
+    start_ms: 400
+    end_ms: 26200
+    url: https://www.youtube.com/watch?v=ONXmZHozLTA&t=0s
+    segment_ids:
+    - ONXmZHozLTA:00000
+    - ONXmZHozLTA:00001
+    - ONXmZHozLTA:00002
+    - ONXmZHozLTA:00003
+    - ONXmZHozLTA:00004
+    - ONXmZHozLTA:00005
+    - ONXmZHozLTA:00006
+    - ONXmZHozLTA:00007
+    - ONXmZHozLTA:00008
+    - ONXmZHozLTA:00009
+    - ONXmZHozLTA:00010
+- id: TMrN47uIHiI-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Waiting for the right moment, often on the rise, before committing to
+    the swing so the ball can be contacted cleanly.
+  reason: The speaker says timing is most important, warns against starting the
+    backswing early, and instructs the player to wait until the curve finishes
+    before bringing the racket back.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: TMrN47uIHiI
+    start_ms: 273400
+    end_ms: 298080
+    url: https://www.youtube.com/watch?v=TMrN47uIHiI&t=273s
+    segment_ids:
+    - TMrN47uIHiI:00086
+    - TMrN47uIHiI:00088
+    - TMrN47uIHiI:00091
+- id: DXL3ZnLNXqE-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Starting the loop swing at the right phase of the ball's flight,
+    specifically the peak-to-early-falling window rather than the exact highest
+    point.
+  reason: The speaker distinguishes peak timing from early falling phase timing
+    and says not to rush looping.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: DXL3ZnLNXqE
+    start_ms: 165560
+    end_ms: 194320
+    url: https://www.youtube.com/watch?v=DXL3ZnLNXqE&t=165s
+    segment_ids:
+    - DXL3ZnLNXqE:00053
+    - DXL3ZnLNXqE:00054
+    - DXL3ZnLNXqE:00055
+    - DXL3ZnLNXqE:00056
+    - DXL3ZnLNXqE:00057
+    - DXL3ZnLNXqE:00058
+    - DXL3ZnLNXqE:00059
+    - DXL3ZnLNXqE:00060
+    - DXL3ZnLNXqE:00061
+    - DXL3ZnLNXqE:00062
+    - DXL3ZnLNXqE:00065
+- id: ODwFaYDY1co-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Delaying the attack so the player loads preparation first, avoids
+    rushing, and matches the timing demanded by backspin balls.
+  reason: The speaker emphasizes controlling rhythm against backspin, not
+    rushing the timing, and completing preparation movements before swinging.
+  confidence: 0.91
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ODwFaYDY1co
+    start_ms: 346760
+    end_ms: 370200
+    url: https://www.youtube.com/watch?v=ODwFaYDY1co&t=346s
+    segment_ids:
+    - ODwFaYDY1co:00144
+    - ODwFaYDY1co:00150
+    - ODwFaYDY1co:00152
+- id: vXZPX5wybTY-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Choosing the right moment to loop, especially avoiding rushed contact
+    and preferring contact at the peak when appropriate.
+  reason: The speaker warns not to rush the timing, recommends hitting at the
+    peak, and says placement can matter more than forcing power in that
+    situation.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: vXZPX5wybTY
+    start_ms: 367720
+    end_ms: 385760
+    url: https://www.youtube.com/watch?v=vXZPX5wybTY&t=367s
+    segment_ids:
+    - vXZPX5wybTY:00135
+    - vXZPX5wybTY:00137
+    - vXZPX5wybTY:00138
+    - vXZPX5wybTY:00139
+    - vXZPX5wybTY:00140
+- id: DXL3ZnLNXqE-concept-forehand-loop-timing-reviewed-c78a5b8a
+  evidence_type: explanation
+  excerpt: Starting the loop swing at the right phase of the ball's flight,
+    specifically the peak-to-early-falling window rather than the exact highest
+    point.
+  reason: The speaker distinguishes peak timing from early falling phase timing
+    and says not to rush looping.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: DXL3ZnLNXqE
+    start_ms: 165560
+    end_ms: 194320
+    url: https://www.youtube.com/watch?v=DXL3ZnLNXqE&t=165s
+    segment_ids:
+    - DXL3ZnLNXqE:00053
+    - DXL3ZnLNXqE:00054
+    - DXL3ZnLNXqE:00055
+    - DXL3ZnLNXqE:00056
+    - DXL3ZnLNXqE:00057
+    - DXL3ZnLNXqE:00058
+    - DXL3ZnLNXqE:00059
+    - DXL3ZnLNXqE:00060
+    - DXL3ZnLNXqE:00061
+    - DXL3ZnLNXqE:00062
+    - DXL3ZnLNXqE:00065
+- id: ODwFaYDY1co-concept-forehand-loop-timing-reviewed-e52ae43c
+  evidence_type: explanation
+  excerpt: Delaying the attack so the player loads preparation first, avoids
+    rushing, and matches the timing demanded by backspin balls.
+  reason: The speaker emphasizes controlling rhythm against backspin, not
+    rushing the timing, and completing preparation movements before swinging.
+  confidence: 0.91
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ODwFaYDY1co
+    start_ms: 346760
+    end_ms: 370200
+    url: https://www.youtube.com/watch?v=ODwFaYDY1co&t=346s
+    segment_ids:
+    - ODwFaYDY1co:00144
+    - ODwFaYDY1co:00150
+    - ODwFaYDY1co:00152
+- id: vXZPX5wybTY-concept-forehand-loop-timing-reviewed-27312443
+  evidence_type: explanation
+  excerpt: Choosing the right moment to loop, especially avoiding rushed contact
+    and preferring contact at the peak when appropriate.
+  reason: The speaker warns not to rush the timing, recommends hitting at the
+    peak, and says placement can matter more than forcing power in that
+    situation.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: vXZPX5wybTY
+    start_ms: 367720
+    end_ms: 385760
+    url: https://www.youtube.com/watch?v=vXZPX5wybTY&t=367s
+    segment_ids:
+    - vXZPX5wybTY:00135
+    - vXZPX5wybTY:00137
+    - vXZPX5wybTY:00138
+    - vXZPX5wybTY:00139
+    - vXZPX5wybTY:00140
+- id: 13z0kO_hd0M-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Adjusting when and how the forehand loop is released so the player
+    can prioritize arc, then drive forward or brush more depending on the
+    incoming ball.
+  reason: 'The speaker gives timing guidance: faster balls require prioritizing arc
+    first, while softer balls allow driving forward through the ball.'
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 13z0kO_hd0M
+    start_ms: 97360
+    end_ms: 101480
+    url: https://www.youtube.com/watch?v=13z0kO_hd0M&t=97s
+    segment_ids:
+    - 13z0kO_hd0M:00033
+  spoken_context_end_ms: 111640
+- id: PDFXww03DHM-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Time the loop by controlling the arc first and avoiding a late,
+    rushed reaction when the ball is already too close.
+  reason: The speaker warns against waiting until the ball is too close and
+    trying to generate power only at contact; instead, arc control must come
+    first.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: PDFXww03DHM
+    start_ms: 468400
+    end_ms: 496320
+    url: https://www.youtube.com/watch?v=PDFXww03DHM&t=468s
+    segment_ids:
+    - PDFXww03DHM:00150
+    - PDFXww03DHM:00151
+    - PDFXww03DHM:00152
+    - PDFXww03DHM:00153
+    - PDFXww03DHM:00154
+    - PDFXww03DHM:00155
+    - PDFXww03DHM:00157
+    - PDFXww03DHM:00158
+    - PDFXww03DHM:00159
+    - PDFXww03DHM:00160
+- id: zMP_ptkdNHk-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Choosing the right phase of the ball to initiate the loop, especially
+    early in the descending phase.
+  reason: The speaker explicitly states that the best timing for heavy backspin
+    is early in the descending phase.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: zMP_ptkdNHk
+    start_ms: 136960
+    end_ms: 145840
+    url: https://www.youtube.com/watch?v=zMP_ptkdNHk&t=136s
+    segment_ids:
+    - zMP_ptkdNHk:00051
+    - zMP_ptkdNHk:00052
+    - zMP_ptkdNHk:00053
+- id: R9InWNDCJQM-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Timing a forehand looping stroke by waiting for the right bounce or
+    rise and then accelerating at the last moment.
+  reason: The speaker repeatedly says to wait for the bounce, then adjust, and
+    not to rush hitting until the curve finishes.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: R9InWNDCJQM
+    start_ms: 89360
+    end_ms: 100600
+    url: https://www.youtube.com/watch?v=R9InWNDCJQM&t=89s
+    segment_ids:
+    - R9InWNDCJQM:00038
+    - R9InWNDCJQM:00039
+    - R9InWNDCJQM:00040
+- id: wpIxIvnuOac-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: The timing and rhythm of a forehand loop, including slowing the
+    rhythm, avoiding peak-contact brushing, and releasing acceleration at the
+    right moment.
+  reason: The speaker instructs the learner to slow down the rhythm, use the
+    ball's falling force, and avoid brushing at the peak.
+  confidence: 0.93
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: wpIxIvnuOac
+    start_ms: 95160
+    end_ms: 110520
+    url: https://www.youtube.com/watch?v=wpIxIvnuOac&t=95s
+    segment_ids:
+    - wpIxIvnuOac:00031
+    - wpIxIvnuOac:00032
+    - wpIxIvnuOac:00033
+    - wpIxIvnuOac:00034
+    - wpIxIvnuOac:00035
+    - wpIxIvnuOac:00036
+- id: mYzbo93Nkps-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Timing the loop for the ball's falling phase rather than taking it at
+    the peak, so the stroke is easier to coordinate and attack quality improves.
+  reason: Explains that waiting for the ball to enter the falling phase makes
+    looping easier.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: mYzbo93Nkps
+    start_ms: 400
+    end_ms: 8520
+    url: https://www.youtube.com/watch?v=mYzbo93Nkps&t=0s
+    segment_ids:
+    - mYzbo93Nkps:00000
+    - mYzbo93Nkps:00001
+    - mYzbo93Nkps:00002
+- id: sosNHzR8A9U-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Timing the forehand loop so the backswing and forward swing happen at
+    the right phase relative to the ball bounce and the player's movement.
+  reason: The speaker explains starting the swing on the bounce or on the drop
+    and says the explosive loop depends on being in motion as the ball lands.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: sosNHzR8A9U
+    start_ms: 378900
+    end_ms: 394933
+    url: https://www.youtube.com/watch?v=sosNHzR8A9U&t=378s
+    segment_ids:
+    - sosNHzR8A9U:00083
+    - sosNHzR8A9U:00086
+- id: 2Wk2xe0I1s8-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Wait longer before initiating the forward-up swing so the ball comes
+    into the right contact window, especially when you are out of position or
+    dealing with a half-long ball.
+  reason: The speaker says the body should wait a moment longer and that
+    delaying the contact point can solve reach problems without moving the feet.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 2Wk2xe0I1s8
+    start_ms: 121200
+    end_ms: 141933
+    url: https://www.youtube.com/watch?v=2Wk2xe0I1s8&t=121s
+    segment_ids:
+    - 2Wk2xe0I1s8:00026
+    - 2Wk2xe0I1s8:00027
+    - 2Wk2xe0I1s8:00028
+- id: nENxAvinCe8-concept-forehand-loop-timing-reviewed
+  evidence_type: definition
+  excerpt: Loop timing requires a slower backswing, a wait phase, and then
+    acceleration through the ball, rather than a rushed drive-like tempo.
+  reason: The speaker repeatedly defines correct loop rhythm as slow-then-fast,
+    with a relaxed preparation and a wait phase before impact.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: nENxAvinCe8
+    start_ms: 491966
+    end_ms: 518433
+    url: https://www.youtube.com/watch?v=nENxAvinCe8&t=491s
+    segment_ids:
+    - nENxAvinCe8:00107
+    - nENxAvinCe8:00111
+- id: 7jWqEsHtN3Y-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Timing the loop by letting the ball drop to a better height before
+    starting the swing.
+  reason: The speaker says spinnier balls should be contacted lower because the
+    spin decreases as the ball drops.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 7jWqEsHtN3Y
+    start_ms: 574000
+    end_ms: 593933
+    url: https://www.youtube.com/watch?v=7jWqEsHtN3Y&t=574s
+    segment_ids:
+    - 7jWqEsHtN3Y:00122
+    - 7jWqEsHtN3Y:00123
+    - 7jWqEsHtN3Y:00124
+    - 7jWqEsHtN3Y:00125
+    - 7jWqEsHtN3Y:00126
+- id: Nmf0ZWP6dn0-cand-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: On slower incoming balls, wait and let the ball come closer before
+    looping; on very fast balls, use the opponent's speed with a smaller motion
+    instead of rushing.
+  reason: The speaker emphasizes precise timing, letting the ball come toward
+    the body, and not rushing the stroke.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: Nmf0ZWP6dn0
+    start_ms: 123240
+    end_ms: 145520
+    url: https://www.youtube.com/watch?v=Nmf0ZWP6dn0&t=123s
+    segment_ids:
+    - Nmf0ZWP6dn0:00041
+    - Nmf0ZWP6dn0:00042
+    - Nmf0ZWP6dn0:00043
+    - Nmf0ZWP6dn0:00044
+    - Nmf0ZWP6dn0:00045
+    - Nmf0ZWP6dn0:00046
+    - Nmf0ZWP6dn0:00047
+    - Nmf0ZWP6dn0:00048
+- id: TnKP4aH3ft8-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: The spin and power outcome of a loop depends on when the ball is
+    contacted in its flight, with more spin in the early falling phase, more
+    speed in the rising phase, and more power near the peak.
+  reason: The speaker explicitly contrasts speed, power, and spin by phase and
+    says to wait for the early falling phase for spin.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: TnKP4aH3ft8
+    start_ms: 108360
+    end_ms: 133920
+    url: https://www.youtube.com/watch?v=TnKP4aH3ft8&t=108s
+    segment_ids:
+    - TnKP4aH3ft8:00037
+    - TnKP4aH3ft8:00042
+    - TnKP4aH3ft8:00043
+    - TnKP4aH3ft8:00044
+- id: -QdTaX8ejCM-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: The forehand loop should accelerate late and stay quick rather than
+    slow and oversized.
+  reason: The speaker says the motion can be small but must be quick, not big
+    and slow.
+  confidence: 0.88
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: -QdTaX8ejCM
+    start_ms: 405680
+    end_ms: 417600
+    url: https://www.youtube.com/watch?v=-QdTaX8ejCM&t=405s
+    segment_ids:
+    - -QdTaX8ejCM:00153
+    - -QdTaX8ejCM:00156
+- id: aPf4rc3WJok-concept-forehand-loop-timing-reviewed
+  evidence_type: definition
+  excerpt: 'The timing structure of the forehand loop: start compact, delay the full
+    release, then whip and recover while controlling rhythm.'
+  reason: The speaker repeatedly describes the timing as small first, then big,
+    and says the full action is released later.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: aPf4rc3WJok
+    start_ms: 39866
+    end_ms: 64433
+    url: https://www.youtube.com/watch?v=aPf4rc3WJok&t=39s
+    segment_ids:
+    - aPf4rc3WJok:00010
+    - aPf4rc3WJok:00011
+    - aPf4rc3WJok:00016
+- id: DaHEb394UtA-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Keep the brushing phase compact and only add forward acceleration at
+    the correct moment of contact.
+  reason: The speaker emphasizes finding the moment of contact, not actively
+    swinging the wrist, and the rhythm of relaxing, accelerating, then
+    braking/stopping.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: DaHEb394UtA
+    start_ms: 17359
+    end_ms: 30760
+    url: https://www.youtube.com/watch?v=DaHEb394UtA&t=17s
+    segment_ids:
+    - DaHEb394UtA:00005
+    - DaHEb394UtA:00006
+    - DaHEb394UtA:00007
+    - DaHEb394UtA:00008
+    - DaHEb394UtA:00009
+    - DaHEb394UtA:00010
+- id: i-n17lWXlSo-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Keep the loop compact and close to the body, with acceleration
+    concentrated late in the forward swing for control and consistency.
+  reason: The speaker recommends staying close to the ball, keeping the motion
+    around knee height, limiting backswing, and accelerating in the later phase
+    for stability and consistency.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: i-n17lWXlSo
+    start_ms: 340080
+    end_ms: 369720
+    url: https://www.youtube.com/watch?v=i-n17lWXlSo&t=340s
+    segment_ids:
+    - i-n17lWXlSo:00108
+    - i-n17lWXlSo:00109
+    - i-n17lWXlSo:00110
+    - i-n17lWXlSo:00111
+    - i-n17lWXlSo:00112
+    - i-n17lWXlSo:00113
+    - i-n17lWXlSo:00114
+    - i-n17lWXlSo:00115
+    - i-n17lWXlSo:00116
+    - i-n17lWXlSo:00117
+- id: pIu3jfM0C6k-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Timing the forehand loop to the early falling phase and avoiding
+    rushing the contact point.
+  reason: Compares the rising phase, peak, and early falling phase, then says
+    most players should use the early falling phase.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: pIu3jfM0C6k
+    start_ms: 127566
+    end_ms: 135200
+    url: https://www.youtube.com/watch?v=pIu3jfM0C6k&t=127s
+    segment_ids:
+    - pIu3jfM0C6k:00039
+    - pIu3jfM0C6k:00040
+- id: PYpTLzDBuME-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Starting preparation early enough that the loop can be hit without
+    being jammed or rushed.
+  reason: Says not to wait until the ball is right in front of the eyes and to
+    prepare the backswing the moment the opponent makes contact.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: PYpTLzDBuME
+    start_ms: 324533
+    end_ms: 352333
+    url: https://www.youtube.com/watch?v=PYpTLzDBuME&t=324s
+    segment_ids:
+    - PYpTLzDBuME:00091
+    - PYpTLzDBuME:00092
+    - PYpTLzDBuME:00093
+    - PYpTLzDBuME:00094
+    - PYpTLzDBuME:00095
+    - PYpTLzDBuME:00096
+    - PYpTLzDBuME:00097
+    - PYpTLzDBuME:00098
+    - PYpTLzDBuME:00099
+- id: 63bd4-iEh6Y-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Creating a small arc, then accelerating forward after the brushing
+    phase instead of rushing the ball straight ahead.
+  reason: The speaker describes a small arc during ball finding, then driving
+    forward afterward, and contrasts that with pushing straight forward too
+    early.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 63bd4-iEh6Y
+    start_ms: 355966
+    end_ms: 383600
+    url: https://www.youtube.com/watch?v=63bd4-iEh6Y&t=355s
+    segment_ids:
+    - 63bd4-iEh6Y:00101
+    - 63bd4-iEh6Y:00103
+    - 63bd4-iEh6Y:00104
+    - 63bd4-iEh6Y:00105
+- id: ldoTdAje9n0-concept-forehand-loop-timing-reviewed
+  evidence_type: definition
+  excerpt: Timing for looping that favors waiting for the ball to descend or
+    settle rather than rushing early.
+  reason: The speaker recommends waiting for the ball to drop before looping.
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ldoTdAje9n0
+    start_ms: 94266
+    end_ms: 105166
+    url: https://www.youtube.com/watch?v=ldoTdAje9n0&t=94s
+    segment_ids:
+    - ldoTdAje9n0:00031
+    - ldoTdAje9n0:00033
+    - ldoTdAje9n0:00034
+- id: Ji9_Etw6nvo-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Timing the forehand loop by preparing early, staying fluid, and
+    initiating the swing at the right phase of the incoming ball.
+  reason: The speaker emphasizes early judgment, fluid movement, and getting
+    weight, rotation, and stroke ready before the ball arrives.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Ji9_Etw6nvo
+    start_ms: 398566
+    end_ms: 411700
+    url: https://www.youtube.com/watch?v=Ji9_Etw6nvo&t=398s
+    segment_ids:
+    - Ji9_Etw6nvo:00145
+    - Ji9_Etw6nvo:00146
+    - Ji9_Etw6nvo:00147
+    - Ji9_Etw6nvo:00148
+    - Ji9_Etw6nvo:00149
+    - Ji9_Etw6nvo:00150
+    - Ji9_Etw6nvo:00151
+- id: Nj4ivxRAizs-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Timing the forehand loop so the motion is compact, well-timed, and
+    coordinated with the incoming ball.
+  reason: The speaker recommends smaller motion and more brushing for better
+    control on forehand loops.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Nj4ivxRAizs
+    start_ms: 166933
+    end_ms: 174900
+    url: https://www.youtube.com/watch?v=Nj4ivxRAizs&t=166s
+    segment_ids:
+    - Nj4ivxRAizs:00056
+    - Nj4ivxRAizs:00059
+- id: 7d1fUkOzCjM-concept-loop-up-then-recover-reviewed
+  evidence_type: explanation
+  excerpt: After looping, continue into recovery instead of pausing, so the next
+    attack can follow smoothly.
+  reason: The transcript describes looping, then recovering, and warns against
+    pausing after the loop.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 7d1fUkOzCjM
+    start_ms: 418900
+    end_ms: 447000
+    url: https://www.youtube.com/watch?v=7d1fUkOzCjM&t=418s
+    segment_ids:
+    - 7d1fUkOzCjM:00128
+    - 7d1fUkOzCjM:00129
+    - 7d1fUkOzCjM:00130
+    - 7d1fUkOzCjM:00131
+    - 7d1fUkOzCjM:00132
+    - 7d1fUkOzCjM:00133
+    - 7d1fUkOzCjM:00137
+    - 7d1fUkOzCjM:00138
+    - 7d1fUkOzCjM:00139
+    - 7d1fUkOzCjM:00140
+- id: Mnse-nAfdO8-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Timing the forehand loop so the player makes space first, then
+    releases the stroke forward.
+  reason: The speaker names the key phrase 'Wait, Space, then Attack forward'
+    and pairs it with accelerating to store energy.
+  confidence: 0.89
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: Mnse-nAfdO8
+    start_ms: 220833
+    end_ms: 227200
+    url: https://www.youtube.com/watch?v=Mnse-nAfdO8&t=220s
+    segment_ids:
+    - Mnse-nAfdO8:00054
+    - Mnse-nAfdO8:00055
+    - Mnse-nAfdO8:00056
+- id: 5g8d38gLuq8-concept-forehand-loop-timing-reviewed
+  evidence_type: definition
+  excerpt: The decision of whether to contact early on the rise or later on the
+    fall, depending on ball speed, depth, and spin.
+  reason: 'The speaker gives an explicit timing framework: very early for fast balls,
+    later for slower dropping balls, and not at the peak.'
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 5g8d38gLuq8
+    start_ms: 487120
+    end_ms: 515919
+    url: https://www.youtube.com/watch?v=5g8d38gLuq8&t=487s
+    segment_ids:
+    - 5g8d38gLuq8:00154
+    - 5g8d38gLuq8:00155
+    - 5g8d38gLuq8:00156
+    - 5g8d38gLuq8:00157
+    - 5g8d38gLuq8:00158
+    - 5g8d38gLuq8:00159
+    - 5g8d38gLuq8:00160
+    - 5g8d38gLuq8:00161
+    - 5g8d38gLuq8:00162
+- id: vCa7A9gyOT8-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Forehand loop timing that emphasizes meeting the ball correctly and
+    finishing after contact rather than rushing the swing.
+  reason: The speaker emphasizes contact timing and forward drive instead of
+    immediate or sideways finish.
+  confidence: 0.89
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: vCa7A9gyOT8
+    start_ms: 334833
+    end_ms: 357933
+    url: https://www.youtube.com/watch?v=vCa7A9gyOT8&t=334s
+    segment_ids:
+    - vCa7A9gyOT8:00076
+    - vCa7A9gyOT8:00077
+    - vCa7A9gyOT8:00079
+    - vCa7A9gyOT8:00080
+- id: LopC3UNnOXM-concept-forehand-loop-timing-reviewed
+  evidence_type: definition
+  excerpt: The timing and tempo adjustments used for forehand topspin, including
+    slowing the rhythm and contacting during the ball's descent to increase
+    spin.
+  reason: The speaker says rhythm is core to spin balls and ties it to waiting
+    for the descending phase.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: LopC3UNnOXM
+    start_ms: 62833
+    end_ms: 89033
+    url: https://www.youtube.com/watch?v=LopC3UNnOXM&t=62s
+    segment_ids:
+    - LopC3UNnOXM:00021
+    - LopC3UNnOXM:00025
+    - LopC3UNnOXM:00026
+    - LopC3UNnOXM:00027
+    - LopC3UNnOXM:00031
+- id: 6Lw_HobLgSY-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Timing for topspin that delays acceleration until the ball has begun
+    to drop, using a controlled rhythm to improve spin generation.
+  reason: The speaker says the first core element of a spin ball is rhythm and
+    recommends slowing the rhythm and waiting intentionally to generate more
+    spin.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 6Lw_HobLgSY
+    start_ms: 63500
+    end_ms: 76666
+    url: https://www.youtube.com/watch?v=6Lw_HobLgSY&t=63s
+    segment_ids:
+    - 6Lw_HobLgSY:00027
+    - 6Lw_HobLgSY:00030
+    - 6Lw_HobLgSY:00032
+- id: TtrTmkMdEzo-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Timing a forehand loop by waiting appropriately and matching the
+    movement rhythm to the ball and distance.
+  reason: The speaker emphasizes waiting, rhythm, and adjusting the loop
+    depending on distance from the table.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: TtrTmkMdEzo
+    start_ms: 441466
+    end_ms: 460466
+    url: https://www.youtube.com/watch?v=TtrTmkMdEzo&t=441s
+    segment_ids:
+    - TtrTmkMdEzo:00124
+    - TtrTmkMdEzo:00125
+    - TtrTmkMdEzo:00126
+    - TtrTmkMdEzo:00127
+- id: igaH-B1hrmY-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Timing the forehand loop to match the incoming ball and avoid rushed
+    execution.
+  reason: Timing is called out as crucial when forehand loops go out of play,
+    especially from the half-pace position.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: igaH-B1hrmY
+    start_ms: 286480
+    end_ms: 307680
+    url: https://www.youtube.com/watch?v=igaH-B1hrmY&t=286s
+    segment_ids:
+    - igaH-B1hrmY:00038
+    - igaH-B1hrmY:00039
+- id: VEjSu1GhArI-concept-forehand-loop-timing-and-rhythm-reviewed
+  evidence_type: explanation
+  excerpt: Loop timing depends on whether the ball has time to drop and whether
+    the player must use a fast or standard loop rhythm.
+  reason: The speaker contrasts fast and standard loop timing, notes that
+    distance to the table changes the timing, and says the ball must be met on
+    the upward swing path.
+  confidence: 0.88
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: VEjSu1GhArI
+    start_ms: 559333
+    end_ms: 584266
+    url: https://www.youtube.com/watch?v=VEjSu1GhArI&t=559s
+    segment_ids:
+    - VEjSu1GhArI:00120
+    - VEjSu1GhArI:00121
+    - VEjSu1GhArI:00122
+    - VEjSu1GhArI:00123
+    - VEjSu1GhArI:00124
+    - VEjSu1GhArI:00125
+- id: 87-UYdrPEEc-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: For forehand looping, the backswing should stay relaxed and match the
+    incoming ball’s rhythm before a late acceleration at contact.
+  reason: Explicitly states that looping needs a relaxed backswing, then
+    acceleration, and that the backswing rhythm should match the incoming ball.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: 87-UYdrPEEc
+    start_ms: 585466
+    end_ms: 604366
+    url: https://www.youtube.com/watch?v=87-UYdrPEEc&t=585s
+    segment_ids:
+    - 87-UYdrPEEc:00129
+    - 87-UYdrPEEc:00130
+    - 87-UYdrPEEc:00131
+- id: uL8In-_NToM-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Timing and rhythm choices for a forehand loop, including taking the
+    ball on the rise or backing up depending on the situation.
+  reason: The speaker contrasts backing up to loop with quick looping on the
+    rise and says timing must change with incoming ball and position.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: uL8In-_NToM
+    start_ms: 638100
+    end_ms: 661366
+    url: https://www.youtube.com/watch?v=uL8In-_NToM&t=638s
+    segment_ids:
+    - uL8In-_NToM:00143
+    - uL8In-_NToM:00147
+- id: ySM92aDSRPo-concept-forehand-loop-timing-and-rhythm-reviewed
+  evidence_type: explanation
+  excerpt: For backspin-loop attacks, match the ball's rhythm and delay the
+    attack until the descending phase rather than striking too early.
+  reason: The speaker compares rhythms across pushes and service returns and
+    says the optimal looping time is the early descending phase.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: ySM92aDSRPo
+    start_ms: 41933
+    end_ms: 59400
+    url: https://www.youtube.com/watch?v=ySM92aDSRPo&t=41s
+    segment_ids:
+    - ySM92aDSRPo:00009
+    - ySM92aDSRPo:00012
+- id: GdS4nZDb6ug-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Timing the loop at the top of the bounce or on the rise rather than
+    from a low, distant ball.
+  reason: The speaker says the topspin ball is looped at the top of the bounce
+    or on the rise, which is a direct timing instruction for the loop.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: GdS4nZDb6ug
+    start_ms: 300133
+    end_ms: 306033
+    url: https://www.youtube.com/watch?v=GdS4nZDb6ug&t=300s
+    segment_ids:
+    - GdS4nZDb6ug:00065
+- id: krlH8_UzRRM-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Forehand looping requires timing the swing to the ball's descent or
+    bounce phase so the player can accelerate at the correct moment without
+    rushing.
+  reason: The speaker links footwork delay to missing the loop window and
+    explains that timing changes with whether the ball is dropping or still
+    high.
+  confidence: 0.91
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: krlH8_UzRRM
+    start_ms: 396233
+    end_ms: 415833
+    url: https://www.youtube.com/watch?v=krlH8_UzRRM&t=396s
+    segment_ids:
+    - krlH8_UzRRM:00087
+    - krlH8_UzRRM:00088
+    - krlH8_UzRRM:00089
+    - krlH8_UzRRM:00090
+    - krlH8_UzRRM:00091
+- id: f7Bf-QRn-9Q-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: The timing pattern of a forehand loop, especially a slow-relaxed
+    preparation followed by a fast snap at contact.
+  reason: The speaker describes a clear 'relax... SNAP' rhythm and a slow-fast
+    tempo pattern as the loop rhythm.
+  confidence: 0.93
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: f7Bf-QRn-9Q
+    start_ms: 891300
+    end_ms: 901833
+    url: https://www.youtube.com/watch?v=f7Bf-QRn-9Q&t=891s
+    segment_ids:
+    - f7Bf-QRn-9Q:00188
+- id: QqMAsM2mtk4-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Waiting for the ball to reach the right phase and maintaining a calm
+    rhythm before accelerating into the loop.
+  reason: The speaker says to slow the rhythm against backspin, wait for the
+    ball to start dropping, and only then begin the forearm closure and finish
+    the stroke.
+  confidence: 0.97
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: QqMAsM2mtk4
+    start_ms: 268966
+    end_ms: 290800
+    url: https://www.youtube.com/watch?v=QqMAsM2mtk4&t=268s
+    segment_ids:
+    - QqMAsM2mtk4:00056
+    - QqMAsM2mtk4:00058
+- id: -uuSx6fU8yY-concept-forehand-loop-timing-reviewed
+  evidence_type: definition
+  excerpt: A forehand looping rhythm that includes a brief pause and waits for
+    the ball instead of rushing the swing.
+  reason: The coach says looping requires timing, should be done from farther
+    back, and should include waiting and pausing for the ball.
+  confidence: 0.99
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: -uuSx6fU8yY
+    start_ms: 499866
+    end_ms: 527066
+    url: https://www.youtube.com/watch?v=-uuSx6fU8yY&t=499s
+    segment_ids:
+    - -uuSx6fU8yY:00094
+    - -uuSx6fU8yY:00097
+    - -uuSx6fU8yY:00098
+    - -uuSx6fU8yY:00099
+- id: hRHJawAZzNc-concept-forehand-loop-timing-reviewed
+  evidence_type: definition
+  excerpt: Timing and sequencing the loop so the stroke drives forward first and
+    then lifts upward, instead of going straight up.
+  reason: The transcript explains when to use more forward drive versus more
+    upward lift, and explicitly states the sequence should be 'forward, then
+    up.'
+  confidence: 0.95
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: hRHJawAZzNc
+    start_ms: 371500
+    end_ms: 392100
+    url: https://www.youtube.com/watch?v=hRHJawAZzNc&t=371s
+    segment_ids:
+    - hRHJawAZzNc:00073
+    - hRHJawAZzNc:00074
+    - hRHJawAZzNc:00075
+- id: CGidweVwLYw-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Timing guidance for the forehand loop that places contact just after
+    the bounce peak or on the rise for the faster countering variant.
+  reason: The speaker gives explicit contact timing for the forehand topspin
+    loop and quick counter.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: CGidweVwLYw
+    start_ms: 530800
+    end_ms: 538300
+    url: https://www.youtube.com/watch?v=CGidweVwLYw&t=530s
+    segment_ids:
+    - CGidweVwLYw:00116
+- id: eDDICo0Damw-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: 'The timing rule for looping backspin: do not contact at the peak; use
+    the early falling phase so power and contact synchronize more easily.'
+  reason: The speaker explicitly recommends the early falling phase over peak
+    contact for amateur players.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: eDDICo0Damw
+    start_ms: 364000
+    end_ms: 390066
+    url: https://www.youtube.com/watch?v=eDDICo0Damw&t=364s
+    segment_ids:
+    - eDDICo0Damw:00078
+    - eDDICo0Damw:00079
+    - eDDICo0Damw:00080
+    - eDDICo0Damw:00081
+- id: WuWV6MlZQ_Q-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Timing the forehand loop so the preparation, footwork, and racket
+    drop happen after the feet land rather than too early.
+  reason: The speaker repeatedly ties the serve-and-attack rhythm to feet
+    landing before the racket drops for backswing, which is timing and rhythm
+    control for the attack stroke.
+  confidence: 0.92
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: WuWV6MlZQ_Q
+    start_ms: 646800
+    end_ms: 660233
+    url: https://www.youtube.com/watch?v=WuWV6MlZQ_Q&t=646s
+    segment_ids:
+    - WuWV6MlZQ_Q:00132
+    - WuWV6MlZQ_Q:00133
+- id: 7JSZZSSjCqo-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Forehand topspin timing should match the ball's drop phase and the
+    opponent's pace, adjusting frequency rather than forcing a different rhythm.
+  reason: The speaker describes a drop-then-swing rhythm and explicitly
+    instructs matching the opponent's rhythm rather than rushing or lagging
+    behind.
+  confidence: 0.94
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 7JSZZSSjCqo
+    start_ms: 615300
+    end_ms: 636000
+    url: https://www.youtube.com/watch?v=7JSZZSSjCqo&t=615s
+    segment_ids:
+    - 7JSZZSSjCqo:00129
+    - 7JSZZSSjCqo:00130
+    - 7JSZZSSjCqo:00131
+    - 7JSZZSSjCqo:00132
+    - 7JSZZSSjCqo:00133
+- id: HLmkP4I2jqM-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: The rhythm and timing pattern needed to execute a forehand loop
+    consistently against different ball types.
+  reason: The speaker emphasizes correct rhythm for each ball type and
+    identifies separate rhythms for driving, looping topspin, and looping
+    backspin.
+  confidence: 0.98
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: HLmkP4I2jqM
+    start_ms: 61633
+    end_ms: 90433
+    url: https://www.youtube.com/watch?v=HLmkP4I2jqM&t=61s
+    segment_ids:
+    - HLmkP4I2jqM:00012
+    - HLmkP4I2jqM:00016
+    - HLmkP4I2jqM:00017
+- id: iDtbFPNdNBc-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Using a controlled wait-and-swing rhythm for looping, especially
+    starting the motion as the ball reaches peak or begins to descend.
+  reason: The speaker says you can wait, then power loop, and that the timing
+    should support a powerful forward stroke and rhythm in rally play.
+  confidence: 0.95
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: iDtbFPNdNBc
+    start_ms: 78966
+    end_ms: 94566
+    url: https://www.youtube.com/watch?v=iDtbFPNdNBc&t=78s
+    segment_ids:
+    - iDtbFPNdNBc:00018
+    - iDtbFPNdNBc:00019
+    - iDtbFPNdNBc:00020
+    - iDtbFPNdNBc:00021
+- id: 52Lq-QQGqpw-concept-forehand-loop-timing-and-rhythm-reviewed
+  evidence_type: explanation
+  excerpt: Timing for the forehand loop that uses a phased A-B-C motion, brushes
+    first, then accelerates into the finish, and preserves rhythm through a
+    longer backswing.
+  reason: The speaker explicitly describes three points in the loop, a whipping
+    phase, and acceleration after brushing the ball to finish the stroke.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: unreviewed
+  source:
+    video_id: 52Lq-QQGqpw
+    start_ms: 539933
+    end_ms: 549300
+    url: https://www.youtube.com/watch?v=52Lq-QQGqpw&t=539s
+    segment_ids:
+    - 52Lq-QQGqpw:00087
+    - 52Lq-QQGqpw:00088
+- id: XaU6LtcP_n0-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: Forehand looping should be timed by waiting for the ball, then
+    accelerating with correct rhythm instead of rushing.
+  reason: The speaker tells the player to wait for the ball, not rush, and to
+    find the ball before starting the stroke.
+  confidence: 0.9
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: XaU6LtcP_n0
+    start_ms: 235700
+    end_ms: 248233
+    url: https://www.youtube.com/watch?v=XaU6LtcP_n0&t=235s
+    segment_ids:
+    - XaU6LtcP_n0:00047
+- id: dGUGcaM8EOc-concept-forehand-loop-timing-reviewed
+  evidence_type: explanation
+  excerpt: The pace and timing pattern needed to sustain repeated forehand
+    loops.
+  reason: The speaker says continuous looping is about finding rhythm and
+    contact point and instructs the student to slow the rhythm first.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: unreviewed
+  source:
+    video_id: dGUGcaM8EOc
+    start_ms: 10880
+    end_ms: 30480
+    url: https://www.youtube.com/watch?v=dGUGcaM8EOc&t=10s
+    segment_ids:
+    - dGUGcaM8EOc:00005
+    - dGUGcaM8EOc:00006
+    - dGUGcaM8EOc:00008
+    - dGUGcaM8EOc:00009
+    - dGUGcaM8EOc:00012
+    - dGUGcaM8EOc:00013
+- id: 2Wk2xe0I1s8-concept-forehand-loop-timing-codex-reviewed
+  evidence_type: explanation
+  excerpt: If a half-long ball is anticipated, the speaker recommends stepping
+    in with the right foot. If caught without that step, let the ball drop and
+    come closer before contact rather than reaching at the peak; the speaker
+    then does not need to adjust the feet.
+  reason: Use waiting for closer contact as the fallback when the described
+    half-long ball was not anticipated.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "2Wk2xe0I1s8"
+    start_ms: 435333
+    end_ms: 464733
+    url: "https://www.youtube.com/watch?v=2Wk2xe0I1s8&t=435s"
+    segment_ids:
+    - "2Wk2xe0I1s8:00093"
+    - "2Wk2xe0I1s8:00094"
+    - "2Wk2xe0I1s8:00095"
+    - "2Wk2xe0I1s8:00096"
+    - "2Wk2xe0I1s8:00097"
+    - "2Wk2xe0I1s8:00098"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
+- id: 6Lw_HobLgSY-concept-forehand-loop-timing-codex-reviewed
+  evidence_type: explanation
+  excerpt: 'For the topspin example, lift a high-arc ball, slow the rhythm and wait
+    for the ball to drop from its highest point before brushing from lower right to
+    upper left.'
+  reason: Use the slower rhythm and descending-ball cue in this topspin example.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "6Lw_HobLgSY"
+    start_ms: 63500
+    end_ms: 80766
+    url: "https://www.youtube.com/watch?v=6Lw_HobLgSY&t=63s"
+    segment_ids:
+    - "6Lw_HobLgSY:00027"
+    - "6Lw_HobLgSY:00028"
+    - "6Lw_HobLgSY:00029"
+    - "6Lw_HobLgSY:00030"
+    - "6Lw_HobLgSY:00031"
+    - "6Lw_HobLgSY:00032"
+    - "6Lw_HobLgSY:00033"
+    - "6Lw_HobLgSY:00034"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
+- id: GdS4nZDb6ug-concept-forehand-loop-timing-codex-reviewed
+  evidence_type: explanation
+  excerpt: The speaker describes looping a topspin ball at the top of the bounce
+    or on the rise, rather than fishing a low ball from a distance.
+  reason: Use the stated peak-or-rise timing in this topspin example.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "GdS4nZDb6ug"
+    start_ms: 300133
+    end_ms: 306033
+    url: "https://www.youtube.com/watch?v=GdS4nZDb6ug&t=300s"
+    segment_ids:
+    - "GdS4nZDb6ug:00065"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
+- id: krlH8_UzRRM-concept-forehand-loop-timing-codex-reviewed
+  evidence_type: explanation
+  excerpt: When moving to the forehand, the speaker says a ball already at table
+    height is too late for a loop drive. A higher point permits driving;
+    arriving after the ball has dropped loses that opportunity.
+  reason: Recognize the lost loop-drive opportunity when movement leaves contact
+    too low in this example.
+  confidence: 0.94
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "krlH8_UzRRM"
+    start_ms: 378700
+    end_ms: 405633
+    url: "https://www.youtube.com/watch?v=krlH8_UzRRM&t=378s"
+    segment_ids:
+    - "krlH8_UzRRM:00084"
+    - "krlH8_UzRRM:00085"
+    - "krlH8_UzRRM:00086"
+    - "krlH8_UzRRM:00087"
+    - "krlH8_UzRRM:00088"
+    - "krlH8_UzRRM:00089"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
+- id: LopC3UNnOXM-concept-forehand-loop-timing-codex-reviewed
+  evidence_type: explanation
+  excerpt: When rhythm is disrupted, the speaker lowers the tempo and
+    intentionally waits for the moment, saying this produces more spin and helps
+    combine the high-throw topspin action.
+  reason: Slow the disrupted rhythm and wait in the stated high-throw topspin
+    example.
+  confidence: 0.98
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "LopC3UNnOXM"
+    start_ms: 116300
+    end_ms: 133100
+    url: "https://www.youtube.com/watch?v=LopC3UNnOXM&t=116s"
+    segment_ids:
+    - "LopC3UNnOXM:00040"
+    - "LopC3UNnOXM:00041"
+    - "LopC3UNnOXM:00042"
+    - "LopC3UNnOXM:00043"
+    - "LopC3UNnOXM:00044"
+    - "LopC3UNnOXM:00045"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
+- id: mYzbo93Nkps-concept-forehand-loop-timing-codex-reviewed
+  evidence_type: explanation
+  excerpt: The speaker waits for the falling phase and says looping becomes
+    easier. In a push rally, the instruction is to wait for the falling phase
+    before looping first.
+  reason: Wait for the falling phase when opening with a loop in the described
+    push rally.
+  confidence: 0.97
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: "mYzbo93Nkps"
+    start_ms: 400
+    end_ms: 13640
+    url: "https://www.youtube.com/watch?v=mYzbo93Nkps&t=0s"
+    segment_ids:
+    - "mYzbo93Nkps:00000"
+    - "mYzbo93Nkps:00001"
+    - "mYzbo93Nkps:00002"
+    - "mYzbo93Nkps:00003"
+    - "mYzbo93Nkps:00004"
+    - "mYzbo93Nkps:00005"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
+- id: J7Lm5IL-ggs-concept-loop-timing-and-rhythm-codex-reviewed
+  evidence_type: explanation
+  excerpt: Both recovery methods require relaxation in the hand. The whole
+    backswing stays relaxed, with tightening at the instant of the upward swing;
+    the speaker calls relaxation and acceleration crucial to the loop.
+  reason: Keep the hand relaxed through the backswing, then tighten at the
+    upward swing in this loop lesson.
+  confidence: 0.96
+  visual_status: transcript_inferred
+  review_status: approved
+  source:
+    video_id: "J7Lm5IL-ggs"
+    start_ms: 293033
+    end_ms: 307533
+    url: "https://www.youtube.com/watch?v=J7Lm5IL-ggs&t=293s"
+    segment_ids:
+    - "J7Lm5IL-ggs:00066"
+    - "J7Lm5IL-ggs:00067"
+    - "J7Lm5IL-ggs:00068"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
 relations:
-  - relation_type: part_of
-    target_concept_id: concept-forehand-loop
-    confidence: 0.99
-    review_status: approved
-    sources: [{video_id: XfWXrGTlW5M, start_ms: 303966, end_ms: 309300, url: "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=303s", segment_ids: ["XfWXrGTlW5M:00074"]}]
+- relation_type: part_of
+  target_concept_id: concept-forehand-loop
+  confidence: 0.99
+  review_status: approved
+  sources:
+  - video_id: "XfWXrGTlW5M"
+    start_ms: 167633
+    end_ms: 183966
+    url: "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=167s"
+    segment_ids:
+    - "XfWXrGTlW5M:00040"
+    - "XfWXrGTlW5M:00041"
+    - "XfWXrGTlW5M:00042"
+    - "XfWXrGTlW5M:00043"
+  - video_id: "XfWXrGTlW5M"
+    start_ms: 303966
+    end_ms: 309300
+    url: "https://www.youtube.com/watch?v=XfWXrGTlW5M&t=303s"
+    segment_ids:
+    - "XfWXrGTlW5M:00074"

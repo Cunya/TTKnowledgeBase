@@ -1,12 +1,14 @@
 id: concept-loop-impact-to-friction-ratio
 slug: loop-impact-to-friction-ratio
-label: Loop impact-to-friction ratio
+label: Impact-to-friction ratio
 aliases:
 - ratio
 - impact-to-friction ratio
-short_definition: The balance between hitting and brushing; beginners can practice the ratio of upward to forward force.
+short_definition: The balance between hitting and brushing; beginners can
+  practice the ratio of upward to forward force.
 evidence_summary: >-
-  Players should adjust the ratio between hitting and brushing. Beginners can practice the ratio of upward versus forward force.
+  Players should adjust the ratio between hitting and brushing. Beginners can practice
+  the ratio of upward versus forward force.
 concept_type: fundamentals
 facets:
   category:
@@ -16,7 +18,8 @@ review_status: approved
 generated_by:
   processor: codex_semantic_adjudication
   version: 1.0.0
-  input_hash: sha256:31680ed58ad5e71aaa9981643dd91fcc9bbc22f6a4e31449a12b1172f246b850
+  input_hash:
+    sha256:31680ed58ad5e71aaa9981643dd91fcc9bbc22f6a4e31449a12b1172f246b850
   model: gpt-5.6-luna
   reasoning_effort: low
   prompt_version: 1.0.0
@@ -24,8 +27,11 @@ generated_by:
 evidence:
 - id: y7Xd49MgdbQ-concept-loop-impact-to-friction-ratio-reviewed
   evidence_type: definition
-  excerpt: The balance between solid impact and brushing friction that determines loop quality and consistency.
-  reason: The speaker repeatedly frames loop quality as a ratio between impact and friction, and links good ratio control to fewer unforced errors and better consistency.
+  excerpt: The balance between solid impact and brushing friction that
+    determines loop quality and consistency.
+  reason: The speaker repeatedly frames loop quality as a ratio between impact
+    and friction, and links good ratio control to fewer unforced errors and
+    better consistency.
   confidence: 0.98
   visual_status: transcript_inferred
   review_status: unreviewed
@@ -39,8 +45,10 @@ evidence:
     - y7Xd49MgdbQ:00148
 - id: iXzVADGsLLU-cand-2-reviewed
   evidence_type: explanation
-  excerpt: The balance between brushing friction and forward impact used to make a loop both spinny and powerful.
-  reason: The speaker contrasts power and friction and says the mistake is generating power before properly gripping the ball with friction.
+  excerpt: The balance between brushing friction and forward impact used to make
+    a loop both spinny and powerful.
+  reason: The speaker contrasts power and friction and says the mistake is
+    generating power before properly gripping the ball with friction.
   confidence: 0.94
   visual_status: transcript_inferred
   review_status: unreviewed
@@ -55,8 +63,11 @@ evidence:
     - iXzVADGsLLU:00040
 - id: _f9fVMm2_Gs-cand-6-reviewed
   evidence_type: definition
-  excerpt: Tune the stroke by balancing brushing and hitting, especially changing the upward-versus-forward ratio based on spin and situation.
-  reason: The speaker explicitly describes adjusting the ratio between impact and brush, with examples like 70% upward / 30% forward and more brushing for heavy spin balls.
+  excerpt: Tune the stroke by balancing brushing and hitting, especially
+    changing the upward-versus-forward ratio based on spin and situation.
+  reason: The speaker explicitly describes adjusting the ratio between impact
+    and brush, with examples like 70% upward / 30% forward and more brushing for
+    heavy spin balls.
   confidence: 0.98
   visual_status: transcript_inferred
   review_status: unreviewed
@@ -73,7 +84,8 @@ evidence:
 - id: _f9fVMm2_Gs-cand-6-codex-reviewed
   evidence_type: explanation
   excerpt: This is all about the ratio of impact versus brush.
-  reason: Players should adjust the ratio between hitting and brushing. Beginners can practice the ratio of upward versus forward force.
+  reason: Players should adjust the ratio between hitting and brushing.
+    Beginners can practice the ratio of upward versus forward force.
   confidence: 0.99
   visual_status: transcript_inferred
   review_status: approved
@@ -86,3 +98,30 @@ evidence:
     - _f9fVMm2_Gs:00069
     - _f9fVMm2_Gs:00070
     - _f9fVMm2_Gs:00071
+- id: m93pWt9MIZE-candidate-impact-brushing-balance-2-retained-ratio
+  evidence_type: correction
+  excerpt: Against a return of a heavy-spin serve, even a half-high push can
+    retain strong spin. The speaker says to add more brushing first and not let
+    impact exceed brushing.
+  reason: Add brushing first against the heavy-spin serve return; impact must
+    not exceed brushing.
+  confidence: 0.96
+  visual_status: not_visual
+  source:
+    video_id: "m93pWt9MIZE"
+    start_ms: 241200
+    end_ms: 262199
+    url: "https://www.youtube.com/watch?v=m93pWt9MIZE&t=241s"
+    segment_ids:
+    - "m93pWt9MIZE:00095"
+    - "m93pWt9MIZE:00096"
+    - "m93pWt9MIZE:00097"
+    - "m93pWt9MIZE:00098"
+    - "m93pWt9MIZE:00099"
+    - "m93pWt9MIZE:00100"
+    - "m93pWt9MIZE:00101"
+    - "m93pWt9MIZE:00102"
+  spoken_context_start_ms:
+  spoken_context_end_ms:
+  visual_source:
+  review_status: approved

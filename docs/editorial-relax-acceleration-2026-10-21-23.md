@@ -1,0 +1,11 @@
+# Relaxation and contact acceleration repair
+
+All 34 public examples and 117 raw evidence records remain. Actual caption completions restore the contact-zone progression, readable-spin snap versus uncertain-spin constant speed, the 20%-to-80% drive analogy, early-tension correction and exaggerated release-before-control drill. Match body involvement remains distinct from hand-only practice. No instruction was quarantined merely because its earlier selected caption was incomplete.
+
+The original relaxation/acceleration topic remains. Source-specific gripping, releasing and braking alternatives are not asserted as one universal sequence. Unsupported difficulty, intermediate-level and neutral-side metadata and obsolete summary provenance were removed. Public reasons now express local instructions rather than private review scaffolding.
+
+Both relations retain their identities. The forehand-loop timing relation owns separate bounded qLT2–7 forehand/topspin-loop power-phase and20–24 late-acceleration passages. The preparation/release relation owns complete XfWX63–68 relaxed-loop and sudden-burst practice captions. A proposed2KQFI extension through130 exceeded the recorded video duration; its valid original citation was retained and wording narrowed without changing metadata.
+
+Six finite GPT-6 Luna/high verification calls passed39/43 units. Four changed wording units passed one targeted call; all39 unchanged positive decisions retain exact source/context proof. Primary complete actual-source review, whole proposed-corpus validation, production YAML parsing, semantic inverse assertions, exact dossier/value checks and a recoverable before/after journal guarded installation. No footage was approved.
+
+The complete release gate passed332tests(105.66s),Ruff,monitor checks,validators and the zero-diagnostic638-pageAstro build. Exact34publicrecords/header/two relations matched43unitproof in both sanitizedcorpora. Whole-site1816article/1804TOCprose,380control layouts,67fresh toggles and25relationsbothdirections passed. Actual browser playback/footage was not inspected in this pass. Current claim-review coverage is369/380, with seven pending text articles and four footage articles. All35 actual proposed visual windows remain unverified. Normal processing remains paused.
