@@ -65,6 +65,7 @@ data/manifests/**/boundary-report.json
 data/manifests/**/boundary-review.json
 data/manifests/**/published-audit*.json
 data/manifests/**/published-audit-model/
+data/manifests/**/published-audit-primary-model/
 data/manifests/**/*.rephrase.json
 data/manifests/**/*.rephrase.failure.json
 data/manifests/**/llm-budget.json
@@ -80,6 +81,7 @@ data/manifests/**/media-asr/
 
 # Future offline media archive
 data/manifests/**/published-repair*
+data/manifests/**/repair-bundle-history/
 media/
 *.part
 *.ytdl
@@ -93,3 +95,8 @@ Thumbs.db
 .idea/
 .vscode/
 *.swp
+data/manifests/**/topic-identity-scan.json
+
+# Private audit diagnostics and runtime status
+data/manifests/**/cost-triage-*.json
+data/manifests/**/published-audit-status.md

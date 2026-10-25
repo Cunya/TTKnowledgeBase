@@ -290,3 +290,65 @@ def test_cli_private_inventory_excludes_quarantine_and_resumes(tmp_path, monkeyp
     with pytest.raises(cli.typer.BadParameter, match="Stale"):
         cli.record_published_audit(output, "test")
     assert (paths.data("manifests") / "published-audit.json").read_bytes() == checkpoint
+
+@pytest.mark.parametrize('returned', [['a', 'b'], ['a'], ['a', 'a']])
+def test_overlap_proposals_one_call_exact_coverage_and_no_claim_approval(tmp_path, monkeypatch, returned):
+    from processors.published_audit import propose_overlap_reviews
+    concepts, videos = fixture()
+    audit = build_published_audit(concepts, videos, 'fixture')
+    for item in audit['items']:
+        item['overlap_review_pending'] = True
+    original = deepcopy(audit)
+    calls = []
+    def model(prompt, schema, response_model, *_args, **_kwargs):
+        calls.append(prompt)
+        assert 'Review ONLY advisory topic overlap' in prompt
+        assert 'selected_rows' not in prompt and 'decisions' not in prompt
+        return response_model.model_validate({'reviews': [
+            {'concept_id': cid, 'status': 'supported', 'note': 'Distinct scope.'} for cid in returned]}), {}
+    monkeypatch.setattr('processors.codex_engine._run_schema_constrained_codex', model)
+    if returned != ['a', 'b']:
+        with pytest.raises(ValueError, match='exactly once'):
+            propose_overlap_reviews(audit, concepts, videos, tmp_path/'config.yaml', tmp_path, tmp_path/'budget.json')
+    else:
+        proposal = propose_overlap_reviews(audit, concepts, videos, tmp_path/'config.yaml', tmp_path, tmp_path/'budget.json')
+        assert proposal['calls'] == 1
+        assert all(r['reviewer'] == '' and r['overlap_only'] and 'decisions' not in r for r in proposal['reviews'])
+        with pytest.raises(ValueError, match='reviewer'):
+            record_audit_reviews(audit, proposal['reviews'])
+    assert len(calls) == 1 and audit == original
+
+
+def test_overlap_proposals_no_pending_work_costs_no_calls(tmp_path, monkeypatch):
+    from processors.published_audit import propose_overlap_reviews
+    concepts, videos = fixture()
+    audit = build_published_audit(concepts, videos, 'fixture')
+    def forbidden(*args, **kwargs):
+        pytest.fail('No pending overlaps must not invoke model')
+    monkeypatch.setattr('processors.codex_engine._run_schema_constrained_codex', forbidden)
+    result = propose_overlap_reviews(audit, concepts, videos, tmp_path/'config.yaml', tmp_path, tmp_path/'budget.json')
+    assert result['calls'] == 0 and result['reviews'] == []
+
+def test_overlap_cli_reuses_identical_scope_proposals(tmp_path, monkeypatch):
+    from test_published_repair import fixture_inputs
+    from typer.testing import CliRunner
+
+    import processors.cli as cli
+
+    paths, _, _, _ = fixture_inputs(tmp_path)
+    concepts, videos = fixture()
+    audit = build_published_audit(concepts, videos, 'fixture')
+    for item in audit['items']:
+        item['overlap_review_pending'] = True
+    monkeypatch.setattr(cli, 'kb_paths', lambda kb: paths)
+    monkeypatch.setattr(cli, '_published_audit_inputs', lambda p: (concepts, videos, audit))
+    calls = []
+    def proposer(*args, **kwargs):
+        calls.append(True)
+        return {'knowledge_base': 'fixture', 'reviews': [], 'calls': 1}
+    monkeypatch.setattr('processors.published_audit.propose_overlap_reviews', proposer)
+    runner = CliRunner()
+    first = runner.invoke(cli.app, ['propose-published-overlaps', '--kb', 'fixture'])
+    second = runner.invoke(cli.app, ['propose-published-overlaps', '--kb', 'fixture'])
+    assert first.exit_code == second.exit_code == 0
+    assert 'cached_overlap_proposals' in second.output and len(calls) == 1

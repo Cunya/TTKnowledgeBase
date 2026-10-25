@@ -1,0 +1,2 @@
+
+2026-10-22T12:17:07.643338+03:00: Shared workflow implemented: drafter relocation choices restricted to supplied existing approved topics; bundle uses existing finite planner and exact proof caches, rechecks changed relation/overlap dependants, bounded stable-snapshot passes, full primary review, destination-first recoverable multi-file application/rollback, and generated exhaustive status.17newbundle regressions pass, existing128repair tests pass; no paid model calls or canonical content edits. Docs/markers and full release gate follow.

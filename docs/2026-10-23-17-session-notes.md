@@ -1,0 +1,5 @@
+# Session notes — 2026-10-23 17h
+
+P1-57code release418tests passed. Backspin private58/61source checks supported; remainingthree are one spin/backspin qualifier and two missing action identities. Normalprocessingpaused; allfootageunverified. Finite job69518live on Power generation,do not restart.
+
+Final checkpoint17:35: all modeljobs terminal. Release422tests passed. Current config96rows/Luna high; maxspoken180seconds/extraction30/visual15 unchanged. Backspin61/61privateverified,threevisualholds; parentactualsourcecontexts resolvedremainingthree. Powerlastcomplete30/34written with3actualsource/wording findings+1proof-overflow; complete summary86rows nowfits96 butfresh summaryverificationstillneeded. Cold-cache capcompatibilityfix reuses25oldchecks. Nextimplement bounded semantic source-ID proposals before morepaidloops; source/proof selection must not rewrite public definitions just to fitcap. Preserve allspending: BS41calls1446927tokens,Power15calls454741tokens. Fullpublicauditunchanged369/380,3804/4183,35unverifiedwindows; noinstall/commit.

@@ -1,10 +1,28 @@
 # Full published audit — table-tennis
 
-## Current progress and status
+## Full audit readiness
+
+Updated: 2026-10-25 10:40 FLE Standard Time. **Full audit remains incomplete.**
+
+| Measure | Ready |
+|---|---:|
+| Review checks passed | **90.9%** (3,804/4,183) |
+| Articles fully cleared | **97.1%** (369/380) |
+| Visual windows reviewed | **0%** (0/35) |
+
+**What blocks 100%:**
+
+- **Text/source — six released articles pending:** five private bundle articles have passed their text checks (Forehand loop, Backspin, Power generation, Spacing and Timing). Remaining related articles, final review and guarded installation are unfinished. Citation gaps and unsupported wording are being repaired with the shared Luna workflow; private verification is not released approval.
+- **Current private work:** Swing path has 131 supported checks and no remaining text fixes or uncertainties; six footage decisions still hold it. Three proposed association quarantines need final retention review. Timing is verified with 37 supported checks and three visual holds. Five private bundle articles are verified; no new public approvals.
+- **Footage — 35 windows:** viewing was deferred at your request, so these remain unverified; five articles are classified as footage-held. Two demonstration claims also await viewing. The text audit can finish separately, but full completion requires this review.
+
+**Technical gate passes:** 447 tests, validators and site build; zero structural/source-metadata errors or overlap blockers. Normal processing remains paused. See [cost/evaluator investigation](cost-hold-evaluator-investigation-2026-10-23.md).
+
+## Previous detailed checkpoint (historical)
 
 Updated:2026-10-21 20h EEST. **In progress; full audit incomplete.**
 
-Current checkpoint (2026-10-22 11h EEST): **370/380 articles supported**; **10 remain** (5 pending text, 5 awaiting footage). Units: **3811/4185 supported**, 357 pending, 17 needs_footage. All **35 actual visual windows remain unverified**. Zero structural/source-metadata findings; four overlap reviews remain. Contact point retains 68 examples and preserves two balance instructions in Stroke posture, with original associations archived intact. Nine full Luna high calls, four targeted wording calls and two bounded destination checks support the final retained instructions. Full release passed 332 tests (107.25s), Ruff, nine monitor tests, validators and the zero-diagnostic 638-page Astro build. Both public corpora preserve all68+2 instructions exactly; full-site prose, controls, toggles and relations passed. Actual Contact point and Stroke posture routes render the repair with looping disabled. Normal processing remains paused. See [contact repair receipt](editorial-contact-retention-2026-10-22-11.md).
+<!-- audit-status:table-tennis:start -->**369/380 articles supported**; **11 remain**. Units: **3804/4183 supported**. **35/35 actual visual windows unverified**. Structural errors: 0; source-metadata findings: 0; pending overlap reviews: 0. Model proposals do not approve content; release verification is tracked separately.<!-- audit-status:table-tennis:end --> Last released content repair: Contact point retains 68 examples and preserves two balance instructions in Stroke posture, with original associations archived intact. Nine full Luna high calls, four targeted wording calls and two bounded destination checks support the final retained instructions. Full release passed 332 tests (107.25s), Ruff, nine monitor tests, validators and the zero-diagnostic 638-page Astro build. Both public corpora preserve all68+2 instructions exactly; full-site prose, controls, toggles and relations passed. Actual Contact point and Stroke posture routes render the repair with looping disabled. Normal processing remains paused. See [contact repair receipt](editorial-contact-retention-2026-10-22-11.md).
 
 Next: continue every article in the saved11-item queue with GPT-6 Luna/high finite CLI jobs. Recheck quota before calls; retain80%five-hour/95%weekly guards and the existing last-ten-minute five-hour grace. Actual complete visual inspection remains required for all35 windows.
 
@@ -475,3 +493,8 @@ Updated: 2026-10-21 20h EEST.
 2026-10-21 20h released checkpoint:366/380articles supported;11pending+3classifiedfootage=14remaining.3542/4192units supported,641pending,9classifiedneeds_footage;all35actualvisualwindows unverified. Zero structural/source-metadatafindings,fiveoverlapreviews. Ready position source repair retained29approvedexamples and preserved both moved instructions in reviewed destinations; originalrecords remain archived in YAML,unrelatedunreviewed/demo records preserved. Whole15unitBodyrotation check plus36unchangedReadyproofs andexactprimary review passed. Fullrelease4328terminal0:332tests116.65s,Ruff,monitorchecks,validators,zeroAstro638pages. Exact77record public parity,1817article/1807TOCprose,380controls,67fresh toggles and25relationsbothdirections passed. Normalprocessingpaused,nofootageapproval. Evidence:[retention receipt](editorial-ready-retention-2026-10-21-20.md).
 
 Next: continue the saved14article queue using GPT-6 Luna/high finite CLI jobs and fresh80%five-hour/95%weekly quota guards. The earlier account-quota hold cleared externally; no reset credits or agent account change was used. The two Ready placement checks and guarded installation are completed. All footage still requires complete actual clip review.
+
+2026-10-22 live shared-workflow checkpoint: all357 remaining review units across the five pending written articles have private baseline results.22 finite GPT-6 Luna/high invocations used138 calls/5,003,915 processor tokens; source/repair proposals remain unresolved and no canonical article was changed or newly approved. New model calls stopped at80% five-hour usage (weekly87%). All35 actual visual windows remain unverified. Processing stays paused. See [live benchmark and saved continuation](luna-shared-workflow-live-benchmark-2026-10-22.md); source coverage is separate from public approval/release verification.
+
+
+2026-10-22 18h continuation:1 Luna/high call/23554tokens across6 finite coordinator invocations;zero new approvals. Corrected Hook-serve action identity needs footage;Backspin/Spacing/Post-serve recovery cost-held,Swing path topic-held,Forehand loop exhausted.369/380supported,11remaining;written queue no eligible work. All35visualwindows unverified. Preserve checkpoints/limits;no blind retry.

@@ -17,3 +17,22 @@ seed_concepts:
   - label: Contact point
     aliases: [ball contact]
 
+
+# Source titles flag conflicts; they never prove a replacement classification.
+topic_identity_rules:
+  - id: push-in-serve-lesson
+    source_title_exclude_pattern: '\b(?:receiv\w*|return\w*|push\w*|against|beat|respond\w*|flick\w*)\b'
+    article_pattern: '\bpush(?:es|ing)?\b'
+    source_title_pattern: '\bserv(?:e|es|ing|ice)\b'
+    bridge_pattern: '\b(?:receiv\w*|return\w*|against|opponent|respond\w*)\b'
+  - id: serve-in-receive-lesson
+    article_exclude_pattern: '\b(?:receiv\w*|return\w*)\b'
+    article_pattern: '\bserv(?:e|es|ing|ice)\b'
+    source_title_pattern: '\b(?:receiv\w*|return(?:ing)?\s+(?:a\s+)?serv\w*)\b'
+    bridge_pattern: '\b(?:serv\w*\s+(?:motion|action)|like|similar|analogy|imagine|server)\b'
+  - id: rally-stroke-in-serve-lesson
+    caption_identity_patterns: ['\bloop(?:s|ing)?\b', '\bflick(?:s|ing)?\b', '\bblock(?:s|ing)?\b', '\bchop(?:s|ping)?\b']
+    article_pattern: '\b(?:loop|flick|block|chop)(?:s|ing)?\b'
+    source_title_pattern: '\bserv(?:e|es|ing|ice)\b'
+    source_title_exclude_pattern: '\b(?:receiv\w*|return\w*|loop\w*|flick\w*|block\w*|chop\w*|against|beat)\b'
+    bridge_pattern: '\b(?:receiv\w*|return\w*|opponent|against|respond\w*|like|similar|imagine|analogy)\b'

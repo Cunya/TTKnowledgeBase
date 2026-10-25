@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T08:35:21.368290Z",
+  "generated_at": "2026-10-25T08:35:33.859734Z",
   "knowledge_base": {
     "id": "table-tennis",
     "name": "Table Tennis",
@@ -24698,14 +24698,18 @@
           "visual_status": "not_visual",
           "source": {
             "video_id": "OcPo7MgSNVM",
-            "start_ms": 474100,
-            "end_ms": 488266,
-            "url": "https://www.youtube.com/watch?v=OcPo7MgSNVM&t=474s",
+            "start_ms": 461200,
+            "end_ms": 490600,
+            "url": "https://www.youtube.com/watch?v=OcPo7MgSNVM&t=461s",
             "segment_ids": [
+              "OcPo7MgSNVM:00108",
+              "OcPo7MgSNVM:00109",
+              "OcPo7MgSNVM:00110",
               "OcPo7MgSNVM:00111",
               "OcPo7MgSNVM:00112",
               "OcPo7MgSNVM:00113",
-              "OcPo7MgSNVM:00114"
+              "OcPo7MgSNVM:00114",
+              "OcPo7MgSNVM:00115"
             ]
           },
           "spoken_context_start_ms": null,
@@ -29498,51 +29502,6 @@
               "JmOI0L7SiG8:00128",
               "JmOI0L7SiG8:00129",
               "JmOI0L7SiG8:00130"
-            ]
-          },
-          "spoken_context_start_ms": null,
-          "spoken_context_end_ms": null,
-          "visual_source": null,
-          "review_status": "approved"
-        },
-        {
-          "id": "leQBUn8-4tw-cand-horizontal-backswing-minimal-drop-1",
-          "evidence_type": "definition",
-          "excerpt": "A serve-path control concept where the racket is taken back mostly horizontally to avoid chopping down and unintentionally altering spin or height.",
-          "reason": "The speaker warns against a high backswing and teaches a horizontal takeback with little vertical movement.",
-          "confidence": 0.96,
-          "visual_status": "not_visual",
-          "source": {
-            "video_id": "leQBUn8-4tw",
-            "start_ms": 17700,
-            "end_ms": 36100,
-            "url": "https://www.youtube.com/watch?v=leQBUn8-4tw&t=17s",
-            "segment_ids": [
-              "leQBUn8-4tw:00004",
-              "leQBUn8-4tw:00005",
-              "leQBUn8-4tw:00007"
-            ]
-          },
-          "spoken_context_start_ms": null,
-          "spoken_context_end_ms": null,
-          "visual_source": null,
-          "review_status": "approved"
-        },
-        {
-          "id": "leQBUn8-4tw-cand-horizontal-backswing-minimal-drop-2",
-          "evidence_type": "explanation",
-          "excerpt": "A serve-path control concept where the racket is taken back mostly horizontally to avoid chopping down and unintentionally altering spin or height.",
-          "reason": "Large vertical motion is tied to undesired spin changes and high, slow serves.",
-          "confidence": 0.9,
-          "visual_status": "not_visual",
-          "source": {
-            "video_id": "leQBUn8-4tw",
-            "start_ms": 36100,
-            "end_ms": 47633,
-            "url": "https://www.youtube.com/watch?v=leQBUn8-4tw&t=36s",
-            "segment_ids": [
-              "leQBUn8-4tw:00008",
-              "leQBUn8-4tw:00009"
             ]
           },
           "spoken_context_start_ms": null,
@@ -35051,14 +35010,14 @@
     {
       "id": "concept-hook-push",
       "slug": "hook-push",
-      "label": "Hook push",
+      "label": "Hook serve brushing and weight transfer",
       "aliases": [],
-      "short_definition": "A sideways hooking push described as producing sidespin-backspin.",
+      "short_definition": "A hook-serve progression using sideways hooking to produce sidespin-backspin, followed by a lower center of gravity and added weight transfer.",
       "detailed_definition": null,
-      "evidence_summary": "The lesson uses sideways brushing with a hooking motion, lowers the center of gravity, and adds weight transfer in what it calls a hook push.",
+      "evidence_summary": "In the hook-serve lesson, the speaker progresses from sideways hooking and sidespin-backspin to lowering the center of gravity and adding weight transfer.",
       "evidence_summary_source_hash": null,
       "evidence_summary_generator": null,
-      "concept_type": "stroke",
+      "concept_type": "serve-mechanic",
       "facets": {
         "category": [
           "stroke"
@@ -35073,8 +35032,8 @@
         {
           "id": "E6sGbY4sQH0-concept-left-sidespin-backspin-serve-codex-reviewed",
           "evidence_type": "explanation",
-          "excerpt": "Brush sideways with a hooking motion to make sidespin-backspin. The lesson lowers the center of gravity, names the hook push and adds weight transfer.",
-          "reason": "The lesson describes sideways hooking, lowering the center of gravity and adding weight transfer in a hook push that produces sidespin-backspin.",
+          "excerpt": "Brush sideways with a hooking motion to make sidespin-backspin. Lower the center of gravity, then add weight transfer.",
+          "reason": "This passage supplies the sideways brushing, lower-center-of-gravity and weight-transfer steps in the hook-serve lesson.",
           "confidence": 0.98,
           "visual_status": "transcript_inferred",
           "source": {
@@ -62039,7 +61998,6 @@
             "label": "Push",
             "description": "Backspin control strokes used to keep the ball low, receive serves, and prevent an easy attack.",
             "concept_ids": [
-              "concept-hook-push",
               "concept-side-push",
               "concept-side-adjusted-push-against-sidespin",
               "concept-racket-head-acceleration-in-pushes",
@@ -62347,6 +62305,7 @@
             "label": "Serve",
             "description": "Starting strokes organized by spin, placement, and intended third-ball pattern.",
             "concept_ids": [
+              "concept-hook-push",
               "concept-forearm-led-serve-acceleration",
               "concept-low-stance-and-contact-focus",
               "concept-keep-the-ball-low",

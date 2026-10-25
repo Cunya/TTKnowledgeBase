@@ -69,9 +69,11 @@ from .published_audit import (
     next_audit_items,
     record_audit_reviews,
     render_audit_report,
+    write_audit_status,
 )
 from .published_audit_runner import run_audit_jobs
 from .published_repair import (
+    DRAFT_VERSION,
     REPAIR_VERSION,
     apply_reviewed_plan,
     reconcile_primary_reviews,
@@ -82,6 +84,13 @@ from .published_repair import (
     run_repair_campaign,
     summary_format_plan,
     timing_quarantine_plan,
+)
+from .published_repair_bundle import (
+    apply_repair_bundle,
+    prepare_repair_bundle,
+    record_bundle_reviews,
+    review_repair_bundle,
+    rollback_repair_bundle,
 )
 from .review_diagnostics import build_review_diagnostics
 from .run_lock import KnowledgeBaseRunLock
@@ -1224,10 +1233,35 @@ def prepare_published_audit(
     with KnowledgeBaseRunLock(paths.data("manifests") / "cp.lock"):
         _, _, audit = _published_audit_inputs(paths)
         write_json(paths.data("manifests") / "published-audit.json", audit)
+        write_audit_status(paths, audit)
         if markdown_output:
             markdown_output.parent.mkdir(parents=True, exist_ok=True)
             markdown_output.write_text(render_audit_report(audit), encoding="utf-8")
     console.print(audit_summary(audit))
+
+
+@app.command("scan-topic-identity")
+def scan_topic_identity(kb: KbOption = None) -> None:
+    """Scan all published source associations locally; no model calls or approval changes."""
+    from .topic_identity import topic_identity_findings
+
+    paths = kb_paths(kb)
+    with KnowledgeBaseRunLock(paths.data("manifests") / "cp.lock"):
+        concepts, videos, audit = _published_audit_inputs(paths)
+        cm, vm = {c.id: c for c in concepts}, {v.id: v for v in videos}
+        rules = read_yaml(paths.config / "taxonomy.yaml").get("topic_identity_rules", [])
+        rows = []
+        for concept in concepts:
+            dossier = audit_dossier(concept, vm, cm)
+            findings = topic_identity_findings(dossier["concept"], dossier["sources"], rules)
+            if findings:
+                rows.append({"concept_id": concept.id, "label": concept.label, "findings": findings})
+        report = {"articles_scanned": len(concepts), "evidence_scanned": sum(len(c.evidence) for c in concepts),
+                  "flagged_articles": len(rows), "model_calls": 0, "rules": rules, "items": rows,
+                  "remaining_articles": [a["concept_id"] for a in audit["items"]
+                      if any(v is None or v["status"] != "supported" for v in a["decisions"].values())]}
+        write_json(paths.data("manifests") / "topic-identity-scan.json", report)
+    console.print({key: value for key, value in report.items() if key not in {"items", "rules"}})
 
 
 @app.command("next-published-audit")
@@ -1256,6 +1290,7 @@ def next_published_audit(
             } for item in selected],
         })
         write_json(paths.data("manifests") / "published-audit.json", audit)
+        write_audit_status(paths, audit)
     console.print(audit_summary(audit))
     console.print(f"Private dossiers: {output}")
     console.print([item["concept_id"] for item in selected])
@@ -1278,7 +1313,34 @@ def record_published_audit(
         except (KeyError, TypeError, ValueError) as error:
             raise typer.BadParameter(str(error)) from error
         write_json(paths.data("manifests") / "published-audit.json", audit)
+        write_audit_status(paths, audit)
     console.print(audit_summary(audit))
+
+
+@app.command("propose-published-overlaps")
+def propose_published_overlaps(
+    kb: KbOption = None,
+    limit: Annotated[int, typer.Option(min=1, max=20)] = 4,
+) -> None:
+    """One scope-only model call; save unapproved overlap proposals without rechecking claims."""
+    from .published_audit import propose_overlap_reviews
+
+    paths = kb_paths(kb)
+    with KnowledgeBaseRunLock(paths.data("manifests") / "cp.lock"):
+        concepts, videos, audit = _published_audit_inputs(paths)
+        output = paths.data("manifests") / "published-audit-overlap-proposals.json"
+        identity = sha256_json({"policy": "overlap-only-1.0.0", "profile": read_yaml(ROOT / "config/processors.yaml")["codex"],
+            "articles": [(a["concept_id"], a["fingerprint"]) for a in audit["items"]
+                         if a.get("overlap_review_pending")][:limit]})
+        if output.exists() and read_json(output).get("input_identity") == identity:
+            console.print({"calls": 0, "stopped": "cached_overlap_proposals", "output": str(output)})
+            return
+        proposal = propose_overlap_reviews(audit, concepts, videos, ROOT / "config/processors.yaml",
+            paths.data("manifests") / "published-audit-model", paths.data("manifests") / "llm-budget.json",
+            limit=limit)
+        proposal["input_identity"] = identity
+        write_json(output, proposal)
+    console.print({"calls": proposal["calls"], "proposals": len(proposal["reviews"]), "output": str(output)})
 
 
 @app.command("run-published-audit")
@@ -1351,6 +1413,7 @@ def plan_published_repairs(
                 raise typer.BadParameter(f"Invalid primary reviews: {error}") from error
             write_json(checkpoint, plans)
             console.print(f"Reconciled {len(reviews)} private primary reviews; no public approval.")
+        complete_audit = audit
         if concept_ids:
             ids = [value.strip() for value in concept_ids.split(",") if value.strip()]
             known = {item["concept_id"] for item in audit["items"]}
@@ -1363,11 +1426,13 @@ def plan_published_repairs(
             retry_failed=retry_failed, progress=lambda message: console.print(message, markup=False),
             repair_confirmed=repair_confirmed, max_articles=max_articles,
             facet_vocabulary=(read_yaml(paths.config / "taxonomy.yaml") or {}).get("facets", {}),
+            topic_identity_rules=read_yaml(paths.config / "taxonomy.yaml").get("topic_identity_rules", []),
             source_context=(videos, concepts),
         ) if max_calls else {"calls": 0, "stopped": "review_import_only"}
         plans = read_json(checkpoint)
         preview = paths.data("manifests") / "published-repair-plans.md"
         preview.write_text(render_repair_plans(plans), encoding="utf-8")
+        write_audit_status(paths, complete_audit)
     console.print(report)
     console.print(f"Private reviewable plans: {preview}")
     if report.get("stopped") == "transport_failure_circuit":
@@ -1505,11 +1570,187 @@ def apply_published_repairs(
                 fresh = record_audit_reviews(fresh, [{"concept_id": cid, "fingerprint": new_item["fingerprint"],
                                                      "reviewer": reviewer, "decisions": decisions}])
             write_json(paths.data("manifests") / "published-audit.json", fresh)
+            write_audit_status(paths, fresh)
             item.update(status="applied", applied_fingerprint=(new_item or {}).get("fingerprint"))
             write_json(checkpoint, plans)
             snapshot = (concepts, videos, fresh)
             signature = _audit_file_signature(paths)
             console.print(f"Applied reviewed plan: {cid}")
+
+
+@app.command("plan-published-repair-bundle")
+def plan_published_repair_bundle(
+    concept_ids: Annotated[str, typer.Option(help="Comma-separated verified origin plans, including retention proposals")],
+    kb: KbOption = None,
+    max_calls: Annotated[int, typer.Option(min=0, max=20, help="Finite shared verification budget; rerun to resume")] = 10,
+) -> None:
+    """Prepare and independently verify all affected articles together; never approve or publish."""
+    paths = kb_paths(kb)
+    with KnowledgeBaseRunLock(paths.data("manifests") / "cp.lock"):
+        concepts, videos, audit = _published_audit_inputs(paths)
+        try:
+            bundle, report = prepare_repair_bundle(paths,
+                read_json(paths.data("manifests") / "published-repair-plans.json"), concepts, videos,
+                [cid.strip() for cid in concept_ids.split(",") if cid.strip()], ROOT / "config/processors.yaml",
+                max_calls=max_calls, progress=lambda text: console.print(text, markup=False))
+        except (ValueError, KeyError) as error:
+            raise typer.BadParameter(str(error)) from error
+        write_json(paths.data("manifests") / "published-repair-bundle-review-template.json", bundle["review_template"])
+        write_audit_status(paths, audit)
+    console.print({"bundle_status": bundle["status"], **report})
+    console.print(f"Private bundle and review template: {paths.data('manifests')}")
+
+
+@app.command("continue-published-repairs")
+def continue_published_repairs(
+    kb: KbOption = None,
+    max_calls: Annotated[int, typer.Option(min=0, max=20, help="Total finite calls across all stages")] = 4,
+    concept_ids: Annotated[str, typer.Option(help="Optional origins; otherwise resume or select remaining written work")] = "",
+) -> None:
+    """Luna/high plans, retains, verifies, independently reviews and installs a finite content batch."""
+    paths = kb_paths(kb)
+    config_path = ROOT / "config/processors.yaml"
+    config = read_yaml(config_path)["codex"]
+    if config.get("default_model") != "gpt-6-luna" or config.get("reasoning_effort") != "high":
+        raise typer.BadParameter("This workflow requires configured GPT-6 Luna/high; no automatic model switch")
+    with KnowledgeBaseRunLock(paths.data("manifests") / "cp.lock"):
+        concepts, videos, audit = _published_audit_inputs(paths)
+        manifest = paths.data("manifests")
+        bundle_path = manifest / "published-repair-bundle.json"
+        journal_path = manifest / "published-repair-bundle-transaction.json"
+        bundle = read_json(bundle_path) if bundle_path.exists() else {}
+        journal = read_json(journal_path) if journal_path.exists() else {}
+        workflow_path = manifest / "published-repair-workflow.json"
+        workflow = read_json(workflow_path) if workflow_path.exists() else {"parked": {}}
+        fingerprints = {a["concept_id"]: a["fingerprint"] for a in audit["items"]}
+        workflow["parked"] = {cid: value for cid, value in workflow["parked"].items()
+                              if value["fingerprint"] == fingerprints.get(cid)
+                              and (value["reason"] != "no_pending_jobs" or value.get("exhausted") is True)}
+        try:
+            if journal.get("state") == "prepared":
+                review = read_json(manifest / "published-repair-bundle-review.json")
+                apply_repair_bundle(paths, bundle, review, concepts, videos)
+                report = {"calls": 0, "stopped": "recovered_application"}
+            else:
+                ids = [cid.strip() for cid in concept_ids.split(",") if cid.strip()]
+                if (not ids and bundle and journal.get("bundle_hash") != bundle.get("bundle_hash")
+                        and not set(bundle["origins"]) & workflow["parked"].keys()):
+                    ids = list(bundle["origins"])
+                if not ids:
+                    eligible = [item["concept_id"] for item in audit["items"] if item["concept_id"] not in workflow["parked"] and (item.get("overlap_review_pending") or any(
+                        not key.startswith("visual:") and (d is None or d["status"] in {"needs_fix", "uncertain"})
+                        for key, d in item["decisions"].items()))]
+                    plans_path = manifest / "published-repair-plans.json"
+                    prior_plans = read_json(plans_path).get("items", {}) if plans_path.exists() else {}
+                    visits = workflow.setdefault("visits", {})
+                    for cid in eligible:
+                        if visits.get(cid, {}).get("fingerprint") != fingerprints[cid]:
+                            previous = prior_plans.get(cid, {})
+                            visits[cid] = {"fingerprint": fingerprints[cid], "count": int(
+                                previous.get("fingerprint") == fingerprints[cid]
+                                and previous.get("stage_versions", {}).get("draft") == DRAFT_VERSION)}
+                    covered = set()
+                    for article in audit["items"]:
+                        previous = prior_plans.get(article["concept_id"], {})
+                        baseline = previous.get("baseline_verification") or {}
+                        if (previous.get("fingerprint") == article["fingerprint"]
+                                and previous.get("stage_versions", {}).get("draft") == DRAFT_VERSION
+                                and {u["key"] for u in baseline.get("units", [])} == set(article["decisions"])):
+                            covered.add(article["concept_id"])
+                    ids = sorted(eligible, key=lambda cid: (cid in covered, visits[cid]["count"]))[:1]
+                if not ids:
+                    write_audit_status(paths, audit)
+                    write_json(workflow_path, workflow)
+                    console.print({"calls": 0, "stopped": "no_eligible_written_work", "parked": list(workflow["parked"]),
+                                   "complete": audit_summary(audit)["complete"]})
+                    return
+                if len(ids) != len(set(ids)) or set(ids) - {c.id for c in concepts}:
+                    raise ValueError("Select unique currently published article IDs")
+                for cid in ids:
+                    prior = workflow.setdefault("visits", {}).get(cid, {})
+                    workflow["visits"][cid] = {"fingerprint": fingerprints[cid], "count":
+                        (prior.get("count", 0) if prior.get("fingerprint") == fingerprints[cid] else 0) + 1}
+                write_json(workflow_path, workflow)
+                cm, vm = {c.id: c for c in concepts}, {v.id: v for v in videos}
+                dossiers = {cid: audit_dossier(cm[cid], vm, cm) for cid in ids}
+                selected = {**audit, "items": [a for a in audit["items"] if a["concept_id"] in ids]}
+                selected = {**selected, "items": [{**a, "decisions": {key: None for key in a["decisions"]}}
+                    if a.get("overlap_review_pending") else a for a in selected["items"]]}
+                report = run_repair_campaign(selected, dossiers, config_path, manifest / "published-audit-model",
+                    manifest / "llm-budget.json", manifest / "published-repair-plans.json",
+                    max_calls=max_calls, max_articles=min(20, len(ids)), repair_confirmed=True,
+                    facet_vocabulary=read_yaml(paths.config / "taxonomy.yaml").get("facets", {}),
+                    topic_identity_rules=read_yaml(paths.config / "taxonomy.yaml").get("topic_identity_rules", []),
+                    source_context=(videos, concepts), progress=lambda text: console.print(text, markup=False))
+                plans = read_json(manifest / "published-repair-plans.json")
+                if all(plans["items"].get(cid, {}).get("status") == "verified" for cid in ids):
+                    bundle, stage = prepare_repair_bundle(paths, plans, concepts, videos, ids, config_path,
+                        max_calls=max(0, max_calls - report["calls"]), progress=lambda text: console.print(text, markup=False))
+                    report = {**stage, "calls": report["calls"] + stage["calls"]}
+                    if bundle["status"] == "verified":
+                        review, stage = review_repair_bundle(paths, bundle, config_path,
+                            max_calls=max(0, max_calls - report["calls"]), progress=lambda text: console.print(text, markup=False))
+                        report = {**stage, "calls": report["calls"] + stage["calls"]}
+                        if review["ready_for_application"]:
+                            apply_repair_bundle(paths, bundle, review, concepts, videos)
+                            report["stopped"] = "applied_reviewed_bundle"
+                if report["stopped"] != "applied_reviewed_bundle":
+                    if (report["stopped"] in {"bundle_revision_limit", "failed_job", "proof_limit", "article_cost_limit"}
+                            or (report["stopped"] == "no_pending_jobs" and report.get("parked_articles", 0) > 0)):
+                        for cid in ids:
+                            workflow["parked"][cid] = {"fingerprint": fingerprints[cid], "reason": report["stopped"], "exhausted": True}
+                    workflow["last_run"] = report
+                    write_json(workflow_path, workflow)
+                    write_audit_status(paths, audit)
+                    console.print(report)
+                    return
+            concepts, videos, audit = _published_audit_inputs(paths)
+            audit = record_bundle_reviews(bundle, review, concepts, videos, audit)
+            write_json(manifest / "published-audit.json", audit)
+            workflow["last_run"] = report
+            write_json(workflow_path, workflow)
+            write_audit_status(paths, audit)
+            console.print(report)
+            console.print("Canonical reviewed YAML and status updated; run the release gate before publication.")
+        except (ValueError, KeyError) as error:
+            write_audit_status(paths, audit)
+            raise typer.BadParameter(str(error)) from error
+
+
+@app.command("apply-published-repair-bundle")
+def apply_published_repair_bundle(
+    review_file: Annotated[Path, typer.Option(help="Complete source-primary review bound to the final bundle hash")],
+    kb: KbOption = None,
+) -> None:
+    """Apply a completely reviewed multi-file transaction, retaining relocated instructions."""
+    paths = kb_paths(kb)
+    with KnowledgeBaseRunLock(paths.data("manifests") / "cp.lock"):
+        concepts, videos, _ = _published_audit_inputs(paths)
+        bundle = read_json(paths.data("manifests") / "published-repair-bundle.json")
+        review = read_json(review_file)
+        try:
+            apply_repair_bundle(paths, bundle, review, concepts, videos)
+            concepts, videos, audit = _published_audit_inputs(paths)
+            audit = record_bundle_reviews(bundle, review, concepts, videos, audit)
+        except ValueError as error:
+            raise typer.BadParameter(str(error)) from error
+        write_json(paths.data("manifests") / "published-audit.json", audit)
+        write_audit_status(paths, audit)
+    console.print("Reviewed bundle applied; publication and release verification are separate gates.")
+
+
+@app.command("rollback-published-repair-bundle")
+def rollback_published_repair_bundle(kb: KbOption = None) -> None:
+    paths = kb_paths(kb)
+    with KnowledgeBaseRunLock(paths.data("manifests") / "cp.lock"):
+        try:
+            rollback_repair_bundle(paths)
+        except ValueError as error:
+            raise typer.BadParameter(str(error)) from error
+        _, _, audit = _published_audit_inputs(paths)
+        write_json(paths.data("manifests") / "published-audit.json", audit)
+        write_audit_status(paths, audit)
+    console.print("Bundle original files restored; affected audit decisions require fresh coverage.")
 
 
 @app.command("plan-duration-quarantines")

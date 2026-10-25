@@ -15,7 +15,6 @@ from ruamel.yaml import YAML
 
 from .boundaries import (
     MAX_CITED_SEGMENT_GAP_MS,
-    MAX_SOURCE_DURATION_MS,
     BoundaryAssessment,
     assess_boundary,
     caption_duration_conflicts,
@@ -51,7 +50,8 @@ from .utils import (
 )
 from .workspace import processing_is_paused
 
-MAX_SPOKEN_SOURCE_MS = MAX_SOURCE_DURATION_MS
+# Reviewed speech may need a complete explanation; inferred extraction windows stay short.
+MAX_SPOKEN_SOURCE_MS = 180_000
 ADJUDICATION_CHECKPOINT_SIZE = 10
 DEFAULT_REPHRASE_MIN_WORDS = 8
 DEFAULT_REPHRASE_MIN_RATIO = 0.75

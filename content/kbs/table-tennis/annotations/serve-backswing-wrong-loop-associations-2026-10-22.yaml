@@ -1,0 +1,70 @@
+kind: editorial_wrong_topic_exclusion
+reviewed_at: '2026-10-22T18:13:14.4915845+03:00'
+concept_id: concept-forehand-loop-swing-path
+reviewer: codex-source-context-review
+before_hash:
+  sha256:9fe4b21be3a83251deba333a8a9662789a038daa2d2302cf2dfa6a010c028c9f
+after_hash:
+  sha256:4a67f8628ad2334899137582b2746ba96598ccc7542addd2e2232ded8b0154bf
+finding: Two associations teach serving backswing, not loop backswing. Local
+  selected and neighboring captions explicitly identify short/long serves and
+  high slow serves. Existing prose identifies serve-path control. Exclude only
+  wrong-topic associations; preserve every instruction and source record.
+review_scope: Both records and supplied complete selected/neighbor captions
+  inspected; not whole-article approval or footage review.
+source_context_segment_ids:
+- leQBUn8-4tw:00002
+- leQBUn8-4tw:00003
+- leQBUn8-4tw:00004
+- leQBUn8-4tw:00005
+- leQBUn8-4tw:00006
+- leQBUn8-4tw:00007
+- leQBUn8-4tw:00008
+- leQBUn8-4tw:00009
+- leQBUn8-4tw:00010
+- leQBUn8-4tw:00011
+original_records:
+- id: leQBUn8-4tw-cand-horizontal-backswing-minimal-drop-1
+  evidence_type: definition
+  excerpt: A serve-path control concept where the racket is taken back mostly
+    horizontally to avoid chopping down and unintentionally altering spin or
+    height.
+  reason: The speaker warns against a high backswing and teaches a horizontal
+    takeback with little vertical movement.
+  confidence: 0.96
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: leQBUn8-4tw
+    start_ms: 17700
+    end_ms: 36100
+    url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=17s"
+    segment_ids:
+    - "leQBUn8-4tw:00004"
+    - "leQBUn8-4tw:00005"
+    - "leQBUn8-4tw:00007"
+- id: leQBUn8-4tw-cand-horizontal-backswing-minimal-drop-2
+  evidence_type: explanation
+  excerpt: A serve-path control concept where the racket is taken back mostly
+    horizontally to avoid chopping down and unintentionally altering spin or
+    height.
+  reason: Large vertical motion is tied to undesired spin changes and high, slow
+    serves.
+  confidence: 0.9
+  visual_status: not_visual
+  review_status: approved
+  source:
+    video_id: leQBUn8-4tw
+    start_ms: 36100
+    end_ms: 47633
+    url: "https://www.youtube.com/watch?v=leQBUn8-4tw&t=36s"
+    segment_ids:
+    - "leQBUn8-4tw:00008"
+    - "leQBUn8-4tw:00009"
+destination_review:
+  status: pending
+  candidate_concept_id:
+    concept-serve-spin-depends-on-backswing-contact-angle-and-contact-point
+  note: Candidate topic is unreviewed. No automatic promotion or approved
+    destination copy. Independent source/destination review remains required.
+visual_review: None; original visual metadata unchanged.

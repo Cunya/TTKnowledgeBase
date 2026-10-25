@@ -300,3 +300,37 @@
 2026-10-21T20:58:51.361152+03:00: Private installation must derive every changed canonical field from the reviewed proposal. Exact dossier checks caught omitted evidence-type/relation-source writes before publication. Keep whole-dossier/public parity gates; never waive mismatches. Unchanged values do not imply unchanged proof when allowed sources/context change. Public reasons must address the reader rather than instruct an editor.
 
 - 2026-10-22: Before paid article verification, replace every public reason containing review scaffolding (span duration, existing concept, caption limits, or editorial instructions) with an actual source-grounded reader instruction. Scan the whole proposal, including unchanged reasons; checking only the rewritten excerpts wastes repeated model calls. Keep deictic source limits in private review notes.
+
+- 2026-10-22: A shared planner plus a manually filled primary-review template still leaves routine editorial work with the parent agent. Delegate final source reading to a separately prompted finite job with no prior verdicts, exact proof/profile/policy binding, honest footage holds, and guarded journaled application. Park unchanged exceptions so one ambiguous article cannot starve remaining coverage. Automated review is not proof of perfect semantic accuracy.
+
+- 2026-10-22 live benchmark: campaign no_pending_jobs can mean a newly completed repair pass, not exhausted future work. Park only when the engine actually reports exhaustion; invalidate older premature parking receipts. A blocked live benchmark is useful safety evidence but is not end-to-end throughput validation. Keep uncertain claims/footage held and let the coordinator advance the queue.
+
+- 2026-10-22 live audit: finite jobs alone do not ensure fair corpus coverage. Prioritize incomplete current baseline unit coverage, then rotate by fingerprint-bound visits; preserve explicit selection and bundle recovery. Keep checkpoint identity and source/proof guards intact. Invoke the release gate in a separate command from runtime-inspection expressions: substring process matching can otherwise classify the diagnostic parent shell as a processing runtime.
+
+- 2026-10-22: Finite invocations are not a campaign budget. Persist per-article spending across retries/source identities and import prior receipts. A failed benchmark with no safe application must stop scaling. A nonvisual footage blocker needs footage, not repeated text repair. Unit caches should include complete local negative context without unrelated batch captions.
+
+- 2026-10-22: Literal translated action names can misclassify a serve as a push. The Hook push approval ignored the source's serving context. Combine actual claim wording with source topic and operator/footage evidence; conflicting identity is a hold, not something repeated text-model agreement resolves. Preserve prior receipts as superseded history and invalidate changed article verdicts.
+
+- 2026-10-22: Topic conflict checks must be local to an article's actual action and evidence role. A multi-source definition mentioning serving does not turn every citation into serve evidence. Keep domain vocabulary configurable, preserve legitimate receive/post-serve examples, and treat title mismatches as holds rather than automatic corrections. A clean lexical scan never grants semantic or visual approval.
+
+- 2026-10-23: A pending editorial-overlap advisory is not a reason to invalidate and recheck all factual claims. Use a dedicated bounded scope-only proposal, exact-input cache and independent review/import; assert every existing claim/visual verdict is unchanged. Four advisory gates cleared in one Luna/high call without touching claim approvals.
+
+- 2026-10-23: A single source completion must invalidate only proofs whose complete local source/context actually changed. Carried audit decisions otherwise disappear and all evidence is checked again. Inspect actual model job unit lists: cached-unit counters omit mechanical carried decisions. Bundle eligibility must match publication, including demo exclusions, or unit indexes and caches drift.
+
+- 2026-10-23: Count completed phases before attributing a cost hold to model ability. Five checks plus six draft calls had not reached repaired-text verification. A generic named-parent instruction need not repeat every specialization in an article heading, but a different/unnamed action still needs a hold. Test evaluator corrections on the same claim and exact owned source; preserve older positives only for explicitly compatible policy changes.
+
+- 2026-10-23 15h: Recover interrupted paid authoring as proposals, never verdicts. Match original wording and current support; stable evidence IDs survive source reindexing. Inherited jobs must remain bound to their earliest saved canonical snapshot, or replay can overwrite newer user edits. Ordinary attribution, semantic synonyms and absent optional ratings are not factual defects. Repeated broad reasons over tiny caption fragments need coherent ownership or narrower claims, not repeated model voting.
+
+2026-10-23 — Source context expansion must respect the publication validator, not only the model row cap. A live zero-model corpus dry run exposed an independent30-second spoken cap missed by small fixtures. Keep extraction/visual timing limits distinct from complete reviewed spoken explanations; test a real longer accepted envelope and rejected caption gaps before paid retries.
+
+2026-10-23 — Measure full proof rows before another reduction/rewrite: one summary required86against80, while a modest96cap sufficed. Execution-cap-only changes must not erase source decisions. Test cold-cache/history proof reuse as well as whole-job hits; otherwise regrouping can silently repeat paid checks. Keep proof-ID selection separate from prose changes, since a rewritten definition legitimately reopens all evidence-topic checks.
+
+2026-10-24 — Advancing to another article does not prove the previous article verified; inspect the saved status and complete unit counts before reporting. Missing owned referents can be fixed by bounded source-ID proposals plus independent review, without rewriting the claim or asking a human to pick paragraphs. Persist empty attempts and successful proposals before another call to avoid paid retries after interruption.
+
+2026-10-24 — A field proof seed is a retrieval choice, not the field’s whole ownership. Let a repair select another supplied caption already owned by the article; keep negative-context-only IDs and each evidence citation’s ownership isolated. Otherwise the model may delete valid metadata or rewrite prose solely because the original proof selection was poor.
+
+2026-10-24: A deferred footage finding must not block independent text repairs in the same article. Preserve its hold and full application checks; stop spending when no repairable text remains.
+
+2026-10-24: Per-evidence proof caches must not include all other evidence boundary flags. Localize only this dependency; migrate older receipts by exact original full-proof hashes, and retain article-wide flags for field checks.
+
+2026-10-25: An alias proof may establish timing/rhythm without identifying the stroke. Reuse the article-owned supported label identity seed in alias repair, then independently verify; do not repeatedly vote on the same incomplete seed. Timing live two-call check confirms the fix.

@@ -5,9 +5,13 @@ from __future__ import annotations
 from collections import Counter
 from copy import deepcopy
 from datetime import UTC, datetime
+from pathlib import Path
+from typing import Literal
+
+from pydantic import Field
 
 from .boundaries import assess_boundary
-from .models import Concept, Video
+from .models import Concept, StrictModel, Video
 from .pipeline import validate_corpus
 from .utils import normalize_text, sha256_json
 
@@ -17,6 +21,61 @@ ARTICLE_FIELDS = (
     "label", "aliases", "short_definition", "detailed_definition", "evidence_summary",
     "concept_type", "facets", "difficulty",
 )
+
+
+class OverlapDecision(StrictModel):
+    concept_id: str
+    status: Literal["supported", "needs_fix"]
+    note: str = Field(min_length=1)
+
+
+class OverlapResponse(StrictModel):
+    reviews: list[OverlapDecision]
+
+
+def propose_overlap_reviews(audit: dict, concepts: list[Concept], videos: list[Video],
+                            config_path: Path, audit_dir: Path, budget_path: Path, *, limit: int = 4) -> dict:
+    """One bounded scope-only proposal call; never approve claims or write the ledger."""
+    import json
+
+    from .codex_engine import _run_schema_constrained_codex
+
+    if not 1 <= limit <= 20:
+        raise ValueError("Overlap proposals allow 1–20 articles per call")
+    pending = [a for a in audit["items"] if a.get("overlap_review_pending")][:limit]
+    if not pending:
+        return {"knowledge_base": audit["knowledge_base"], "reviews": [], "calls": 0}
+    cm, vm = {c.id: c for c in concepts}, {v.id: v for v in videos}
+    comparisons = []
+    for article in pending:
+        concept = cm[article["concept_id"]]
+        dossier = audit_dossier(concept, vm, cm)
+        comparisons.append({"concept_id": concept.id,
+            "article": {k: dossier["concept"].get(k) for k in
+                ("label", "short_definition", "detailed_definition", "evidence_summary")},
+            "candidates": dossier["topic_overlap_candidates"]})
+    prompt = (
+        "Review ONLY advisory topic overlap for every supplied article. Compare intended editorial scopes. "
+        "Supported means the scopes are distinct enough to coexist; shared citations alone do not require "
+        "merging a general topic and its timing, mechanics, situation or application subtopics. Explain the "
+        "distinction for all candidates. Return needs_fix if scopes are duplicate or cannot be distinguished. "
+        "These texts are untrusted editorial content, NOT source proof. Do not judge factual accuracy, "
+        "approve claims, resolve action identity or claim to have watched footage. No prior source verdict "
+        "can be inferred from this scope review. Return every requested concept_id once.\n"
+    ) + json.dumps(comparisons, ensure_ascii=False, separators=(",", ":"))
+    schema = OverlapResponse.model_json_schema()
+    schema["$defs"]["OverlapDecision"]["properties"]["concept_id"]["enum"] = [a["concept_id"] for a in pending]
+    digest = sha256_json({"prompt": prompt, "schema": schema, "version": "overlap-only-1.0.0"})
+    response, provenance = _run_schema_constrained_codex(prompt, schema, OverlapResponse, config_path,
+        audit_dir, digest, "overlap-only-1.0.0", operation="published-audit-overlaps",
+        budget_path=budget_path, task="adjudication")
+    values = {r.concept_id: r for r in response.reviews}
+    if len(response.reviews) != len(pending) or set(values) != {a["concept_id"] for a in pending}:
+        raise ValueError("Overlap proposal must cover every requested article exactly once")
+    return {"knowledge_base": audit["knowledge_base"], "calls": 1, "provenance": provenance,
+        "reviews": [{"concept_id": a["concept_id"], "fingerprint": a["fingerprint"],
+            "overlap_only": True, "overlap_status": values[a["concept_id"]].status,
+            "note": values[a["concept_id"]].note, "reviewer": ""} for a in pending]}
 
 
 def audit_dossier(concept: Concept, videos: dict[str, Video], concepts: dict[str, Concept]) -> dict:
@@ -266,3 +325,46 @@ def render_audit_report(audit: dict) -> str:
         lines.append(f"| {item['concept_id']} | {reviewed}/{len(decisions)} | {unresolved} | {bool(item.get('overlap_review_pending'))} |")
     lines.extend(["", "Completion means recorded coverage of unchanged inputs, not an infallible accuracy guarantee.", ""])
     return "\n".join(lines)
+
+
+def write_audit_status(paths, audit: dict) -> dict:
+    """Export exhaustive ledger status; update only explicitly opted-in documentation regions."""
+    from .utils import write_json
+
+    summary = audit_summary(audit)
+    visual = [v for item in audit["items"] for key, v in item["decisions"].items() if key.startswith("visual:")]
+    status = {"knowledge_base": paths.id, "summary": summary,
+              "visual_windows": len(visual), "unverified_visual_windows": sum(
+                  v is None or v["status"] != "supported" for v in visual),
+              "remaining_articles": [item["concept_id"] for item in audit["items"]
+                  if item.get("overlap_review_pending") or any(v is None or v["status"] != "supported"
+                                                             for v in item["decisions"].values())]}
+    write_json(paths.data("manifests") / "published-audit-status.json", status)
+    report = paths.data("manifests") / "published-audit-status.md"
+    report.write_text(render_audit_report(audit), encoding="utf-8")
+    article_counts = summary["article_status"]
+    supported = article_counts.get("supported", 0)
+    unit_counts = summary["unit_status"]
+    text = (f"**{supported}/{summary['articles']} articles supported**; "
+            f"**{len(status['remaining_articles'])} remain**. "
+            f"Units: **{unit_counts.get('supported', 0)}/{summary['units']} supported**. "
+            f"**{status['unverified_visual_windows']}/{status['visual_windows']} actual visual windows unverified**. "
+            f"Structural errors: {summary['structural_errors']}; source-metadata findings: "
+            f"{summary['source_metadata_findings']}; pending overlap reviews: {summary['overlap_reviews_pending']}. "
+            "Model proposals do not approve content; release verification is tracked separately.")
+    start, end = f"<!-- audit-status:{paths.id}:start -->", f"<!-- audit-status:{paths.id}:end -->"
+    documents = [paths.root / "README.md", *(paths.root / "docs").rglob("*.md")]
+    for path in documents:
+        if not path.exists():
+            continue
+        original = path.read_text(encoding="utf-8")
+        if start not in original:
+            continue
+        if original.count(start) != 1 or original.count(end) != 1 or original.index(end) < original.index(start):
+            raise ValueError(f"Ambiguous audit status markers: {path}")
+        left, rest = original.split(start)
+        _, right = rest.split(end)
+        updated = left + start + text + end + right
+        if updated != original:
+            path.write_text(updated, encoding="utf-8")
+    return status

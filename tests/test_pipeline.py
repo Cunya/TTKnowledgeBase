@@ -1231,15 +1231,15 @@ def test_navigation_keeps_audited_concepts_under_semantic_parents() -> None:
         assert any(parent in path for path in paths[concept_id]), concept_id
 
 
-def test_spoken_source_cannot_exceed_thirty_seconds(tmp_path: Path) -> None:
+def test_spoken_source_cannot_exceed_three_minutes(tmp_path: Path) -> None:
     normalized = tmp_path / "normalized"
     video = write_demo_video(normalized)
     concept = demo_concepts()[0]
     evidence = concept.evidence[0]
     long_source = evidence.source.model_copy(
-        update={"end_ms": evidence.source.start_ms + 30_001}
+        update={"end_ms": evidence.source.start_ms + 180_001}
     )
     long_concept = concept.model_copy(
         update={"evidence": [evidence.model_copy(update={"source": long_source})]}
     )
-    assert any("spoken source exceeds 30 seconds" in error for error in validate_corpus([long_concept], [video]))
+    assert any("spoken source exceeds 180 seconds" in error for error in validate_corpus([long_concept], [video]))
